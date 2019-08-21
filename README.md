@@ -75,3 +75,12 @@ adb uninstall com.panasonic.avc.cng.imageapp
 adb install -r panasonic-image-app_1.10.14/dist/panasonic-image-app_1.10.14_signed.apk
 ```
 
+### Debug
+Import project into Intellij or Android Studio.
+Install plugin [smalidea](https://github.com/JesusFreke/smali/wiki/smalidea) to
+be able to set breakpoints in .smali files.
+[Enable debugging on device](https://developer.android.com/studio/debug/dev-options.html#enable).
+In `Developer options -> Select debug app` choose `Image App` and enable
+`Wait for debugger`.
+Start the app on your device.
+In Intellij or Android Studio `Run -> Attach Debugger to Android Process`.
