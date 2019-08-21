@@ -44,7 +44,35 @@ Reverse engineered source code of [Panasonic Image App][app-link]
 ### Decode APK
 
 ```bash
-java -jar apktool_2.4.0.jar d -o panasonic-image-app_1.10.14 panasonic-image-app_1.10.14.apk
+java -jar apktool_2.4.0.jar decode -o panasonic-image-app_1.10.14 panasonic-image-app_1.10.14.apk
 jadx --output-dir-src panasonic-image-app_1.10.14/source \
      --no-res --deobf panasonic-image-app_1.10.14.apk
 ```
+
+### Rebuild APK
+
+```bash
+java -jar apktool_2.4.0.jar build panasonic-image-app_1.10.14
+keytool -genkey -v -keystore panasonic-image-app.jks \
+    -keyalg RSA -keysize 2048 -validity 10000
+~/Android/Sdk/build-tools/29.0.2/zipalign -v -f -p 4 \
+    panasonic-image-app_1.10.14/dist/panasonic-image-app_1.10.14.apk \
+    panasonic-image-app_1.10.14/dist/panasonic-image-app_1.10.14_aligned.apk
+~/Android/Sdk/build-tools/29.0.2/apksigner sign --ks panasonic-image-app.jks \
+    --out panasonic-image-app_1.10.14/dist/panasonic-image-app_1.10.14_signed.apk \
+    panasonic-image-app_1.10.14/dist/panasonic-image-app_1.10.14_aligned.apk
+```
+
+### Install
+Ensure original app has been uninstalled:
+
+```bash
+adb uninstall com.panasonic.avc.cng.imageapp
+```
+
+(Re-) Install rebuilt APK:
+
+```bash
+adb install -r panasonic-image-app_1.10.14/dist/panasonic-image-app_1.10.14_signed.apk
+```
+
