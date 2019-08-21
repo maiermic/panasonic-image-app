@@ -3,6 +3,7 @@ Reverse engineered source code of [Panasonic Image App][app-link]
 
 [app-link]: https://play.google.com/store/apps/details?id=com.panasonic.avc.cng.imageapp
 [apktool_2.4.0.jar]: https://github.com/iBotPeaches/Apktool/releases/download/v2.4.0/apktool_2.4.0.jar
+[jadx]: https://github.com/skylot/jadx
 
 ## How to reverse engineer
 
@@ -36,11 +37,14 @@ Reverse engineered source code of [Panasonic Image App][app-link]
     $ mv base.apk panasonic-image-app_1.10.14.apk
     ```
 
-### Download Tools
-Download [Apktool][apktool_2.4.0.jar]
+### Tools
+- [Apktool][apktool_2.4.0.jar]
+- [jadx][jadx]
 
 ### Decode APK
 
 ```bash
 java -jar apktool_2.4.0.jar d -o panasonic-image-app_1.10.14 panasonic-image-app_1.10.14.apk
+jadx --output-dir-src panasonic-image-app_1.10.14/source \
+     --no-res --deobf panasonic-image-app_1.10.14.apk
 ```
