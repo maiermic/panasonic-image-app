@@ -1,0 +1,3 @@
+[submodule "SignApk"]
+	path = SignApk
+	url = https://github.com/techexpertize/SignApk
