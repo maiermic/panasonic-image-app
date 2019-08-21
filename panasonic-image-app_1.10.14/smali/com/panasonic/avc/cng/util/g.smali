@@ -21,7 +21,7 @@
     const/4 v2, 0x0
 
     .line 26
-    const-string v0, "release"
+    const-string v0, "debug"
 
     const-string v1, "debug"
 

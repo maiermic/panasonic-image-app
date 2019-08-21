@@ -15,7 +15,7 @@ import org.json.JSONObject;
 public class C2261g {
 
     /* renamed from: a */
-    private static boolean f6991a = "release".equalsIgnoreCase("debug");
+    private static boolean f6991a = "debug".equalsIgnoreCase("debug");
 
     /* renamed from: b */
     private static boolean f6992b = false;

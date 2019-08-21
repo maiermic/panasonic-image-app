@@ -156,7 +156,7 @@
     .prologue
     .line 223
     :try_start_0
-    const-string v0, "release"
+    const-string v0, "debug"
 
     const-string v1, "debug"
 

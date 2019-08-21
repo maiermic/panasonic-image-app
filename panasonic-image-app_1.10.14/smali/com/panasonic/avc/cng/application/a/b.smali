@@ -173,7 +173,7 @@
     :cond_1
     iget-object v0, p0, Lcom/panasonic/avc/cng/application/a/b;->b:Lcom/google/android/gms/e/d;
 
-    const-string v1, "release"
+    const-string v1, "debug"
 
     const-string v2, "debug"
 

@@ -141,7 +141,7 @@ public abstract class C1413a<T> {
     /* renamed from: a */
     public void mo3420a(HttpURLConnection httpURLConnection) {
         try {
-            if ("release".equalsIgnoreCase("debug")) {
+            if ("debug".equalsIgnoreCase("debug")) {
                 C2261g.m9763a(getClass().getSimpleName(), "HTTP Method = " + httpURLConnection.getRequestMethod());
                 Map requestProperties = httpURLConnection.getRequestProperties();
                 for (String str : requestProperties.keySet()) {

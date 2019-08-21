@@ -125,7 +125,7 @@ public class C1351b {
     /* renamed from: a */
     private void m5320a(final Map<String, Object> map) {
         if (this.f3725b != null && this.f3730g < 3 && this.f3726c == null) {
-            this.f3725b.mo2951a("release".equalsIgnoreCase("debug"));
+            this.f3725b.mo2951a("debug".equalsIgnoreCase("debug"));
             this.f3725b.mo2949a(this.f3728e, (int) R.raw.gtm_default_container).mo1593a(new C0594i<C1124b>() {
                 /* renamed from: a */
                 public void mo1596a(C1124b bVar) {

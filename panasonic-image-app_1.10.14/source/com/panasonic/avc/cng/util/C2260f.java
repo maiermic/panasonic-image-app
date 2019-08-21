@@ -6,7 +6,7 @@ import android.util.Log;
 public class C2260f {
 
     /* renamed from: a */
-    private static boolean f6989a = "release".equalsIgnoreCase("debug");
+    private static boolean f6989a = "debug".equalsIgnoreCase("debug");
 
     /* renamed from: b */
     private static boolean f6990b = false;
