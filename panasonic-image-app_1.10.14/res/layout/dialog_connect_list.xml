@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/linearLayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/explainTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cmn_msg_wifi_multi" />
+    <LinearLayout android:id="@id/linearLayout1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center" android:id="@id/nfcImageView" android:layout_width="43.0dip" android:layout_height="52.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/cmn_nfc_icon" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/explainNfcTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/msg_nfc_explain" />
+    </LinearLayout>
+    <ListView android:id="@id/ListView1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:choiceMode="singleChoice" android:layout_weight="1.0" />
+    <Button android:layout_gravity="center" android:id="@id/connectListQrStartbutton" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/qrcode_read" />
+    <Button android:layout_gravity="center" android:id="@id/listCancelbutton" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/cmn_btn_cancel" />
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:id="@id/selectPictureActivityName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ply_highlight_slct_bgm" android:singleLine="true" android:layout_centerInParent="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <Button android:textSize="@dimen/live_view_lumix_font_size" android:textColor="@android:color/white" android:id="@id/complete_button" android:background="@drawable/smartoperation_black_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitCenter" android:text="@string/setup_btn_complete" android:layout_alignParentRight="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:onClick="OnClickSelectPictureExecute" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="#00000000" android:padding="@dimen/padding_medium" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="8.0">
+        <ListView android:id="@id/bgmListView" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:choiceMode="singleChoice" />
+    </LinearLayout>
+</LinearLayout>

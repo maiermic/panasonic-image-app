@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/thumbnail_layout" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.panasonic.avc.cng.view.parts.CheckBoxThumbnailView android:id="@id/thumbnail_view" android:layout_width="fill_parent" android:layout_height="90.0dip" />
+    <com.panasonic.avc.cng.view.parts.SelectIndexCheckBox android:layout_gravity="bottom|center|right" android:id="@id/thumbnail_check" android:visibility="invisible" android:layout_width="30.0dip" android:layout_height="30.0dip" />
+    <ImageButton android:layout_gravity="bottom|center|left" android:id="@id/thumbnail_play" android:background="@color/clear_bg" android:visibility="invisible" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/file_play" android:scaleType="fitCenter" />
+</FrameLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:gravity="center" android:id="@id/geotag_title" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/geotag_title" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="5.0" android:layout_above="@id/primary_menu" android:layout_below="@id/geotag_title" android:layout_centerInParent="true">
+        <include android:id="@id/geotag_show_layout" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="@dimen/geotag_action_margin" android:layout_weight="3.0" layout="@layout/geotag_main_layout" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/geotag_action_layout" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="2.0">
+            <LinearLayout android:orientation="horizontal" android:id="@id/time_sync_base" android:background="@drawable/geotag_sync_time_base" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="5.0dip" android:layout_weight="1.0" android:onClick="OnClickSynchroTime">
+                <ImageView android:id="@id/time_sync_image" android:duplicateParentState="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_margin="5.0dip" android:src="@drawable/geotag_sync_time" android:scaleType="fitCenter" android:layout_weight="1.0" />
+                <TextView android:textSize="36.0sp" android:textColor="@android:color/white" android:ellipsize="end" android:gravity="center" android:id="@id/time_sync_text" android:duplicateParentState="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/geotag_button_sync_time" android:singleLine="false" android:layout_weight="6.0" />
+                <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/geotag_logging_base" android:background="@drawable/geotag_start_log_base" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="5.0dip" android:layout_weight="1.0" android:onClick="OnClickGeoTagRecord">
+                <ImageView android:id="@id/geotag_logging_image" android:duplicateParentState="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_margin="5.0dip" android:src="@drawable/geotag_start_log" android:scaleType="fitCenter" android:layout_weight="1.0" />
+                <TextView android:textSize="36.0sp" android:textColor="@android:color/white" android:ellipsize="end" android:gravity="center" android:id="@id/geotag_logging_text" android:duplicateParentState="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/geotag_btn_gps_logging_on" android:singleLine="false" android:layout_weight="6.0" />
+                <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="5.0dip" android:layout_weight="1.0">
+                <LinearLayout android:orientation="horizontal" android:id="@id/geotag_send_base" android:background="@drawable/geotag_send_log_base" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:onClick="OnClickSendGeotag">
+                    <ImageView android:id="@id/geotag_send_image" android:duplicateParentState="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_margin="5.0dip" android:src="@drawable/geotag_send_log" android:scaleType="fitCenter" android:layout_weight="1.0" />
+                    <TextView android:textSize="36.0sp" android:textColor="@android:color/white" android:ellipsize="end" android:gravity="center" android:id="@id/geotag_send_text" android:duplicateParentState="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/geotag_button_gps_send_all" android:singleLine="false" android:layout_weight="6.0" />
+                    <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/geotag_nfc_view" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_weight="1.0">
+                    <ImageView android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/cmn_nfc_icon" android:layout_weight="1.0" />
+                    <TextView android:textSize="36.0sp" android:textColor="@android:color/white" android:ellipsize="end" android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/geotag_label_gps_nfc_touch" android:singleLine="false" android:layout_weight="2.0" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <include android:layout_gravity="bottom" android:id="@id/primary_menu" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/primary_menu" />
+</RelativeLayout>

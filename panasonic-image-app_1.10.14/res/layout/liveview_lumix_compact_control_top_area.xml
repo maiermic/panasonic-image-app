@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_margin="@dimen/margin_small" android:layout_weight="1.0">
+        <RelativeLayout android:layout_gravity="center" android:layout_width="@dimen/live_view_lumix_button_medium" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageButton android:id="@id/TouchCancelButton" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/btn_no_label" android:scaleType="fitCenter" android:layout_centerInParent="true" android:onClick="onClickOffButton" />
+            <TextView android:textSize="@dimen/live_view_lumix_font_size" android:gravity="center" android:id="@id/TouchCancelText" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <ImageButton android:layout_gravity="center" android:id="@id/OneShotAFButton" android:background="#00000000" android:visibility="invisible" android:layout_width="@dimen/live_view_lumix_button_medium" android:layout_height="fill_parent" android:src="@drawable/oneshot_af_btn" android:scaleType="fitCenter" android:onClick="onClickOneShotAfButton" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="4.0">
+        <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/liveview_lumix_mirrorless_zoom_area_new" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_margin="@dimen/margin_small" android:layout_weight="1.0">
+        <ImageButton android:layout_gravity="center" android:id="@id/MfZoomInButton" android:background="#00000000" android:visibility="invisible" android:layout_width="@dimen/live_view_lumix_button_medium" android:layout_height="fill_parent" android:src="@drawable/mf_zoom_in" android:scaleType="fitCenter" android:onClick="onClickMfZoomInButton" />
+    </FrameLayout>
+</LinearLayout>

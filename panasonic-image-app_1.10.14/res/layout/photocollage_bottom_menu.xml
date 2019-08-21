@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/upperButtonGroup" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:id="@id/pictureChangeButton" android:background="#00000000" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/multi_photo_frame_main_image_button" android:scaleType="fitCenter" android:layout_weight="1.0" android:onClick="OnPictureChangeClick" />
+    <ImageButton android:id="@id/frameChangeButton" android:background="#00000000" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/multi_photo_frame_main_frame_button" android:scaleType="fitCenter" android:layout_weight="1.0" android:onClick="OnFrameChangeClick" />
+    <ImageButton android:id="@id/save_button" android:background="#00000000" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/browse_action_copy" android:scaleType="fitCenter" android:layout_weight="1.0" android:onClick="OnSaveClick" />
+</LinearLayout>

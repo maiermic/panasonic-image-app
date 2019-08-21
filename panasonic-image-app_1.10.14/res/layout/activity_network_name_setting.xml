@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center" android:id="@id/networkNameTitle" android:background="@drawable/title_base_bg" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/setup_network_name_setting" />
+    <TextView android:id="@id/networkNameText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setup_network_name_setting" />
+    <EditText android:id="@id/editNetworkName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:ems="10" android:maxLength="20" android:inputType="text" />
+    <TextView android:id="@id/networkNameExplainText" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setup_network_name_explain" />
+    <TextView android:id="@id/networkNameLengthText" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setup_name_over_length" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/networkNameOKButton" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/cmn_btn_ok" android:layout_weight="1.0" android:onClick="OnClickOK" />
+        <Button android:id="@id/networkNameCancelButton" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/cmn_btn_cancel" android:layout_weight="1.0" android:onClick="OnClickCancel" />
+    </LinearLayout>
+</LinearLayout>

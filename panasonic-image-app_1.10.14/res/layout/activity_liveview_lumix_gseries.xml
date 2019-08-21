@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="6.0">
+        <include android:layout_gravity="top" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" layout="@layout/liveview_surface_lumix" />
+        <include android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="@dimen/iconview_status_bar_height" layout="@layout/liveview_status_bar_lumix" />
+    </LinearLayout>
+    <FrameLayout android:background="@drawable/bg" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="4.0">
+        <LinearLayout android:orientation="vertical" android:id="@id/LiveviewLumixControl" android:background="@drawable/bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include android:id="@id/liveview_lumix_mirrorless_control_topleft" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" layout="@layout/liveview_lumix_gseries_control_top_area" />
+            <include android:id="@id/liveview_lumix_mirrorless_control_center" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" layout="@layout/liveview_lumix_gseries_control_center_area" />
+            <include android:id="@id/liveview_lumix_mirrorless_control_bottomright" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" layout="@layout/liveview_lumix_mirrorless_control_bottom_area" />
+        </LinearLayout>
+        <include android:id="@id/liveview_lumix_mirrorless_control_sliemenu_area" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/liveview_lumix_mirrorless_control_slidemenu_area" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:layout_gravity="bottom" android:id="@id/primary_menu" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/primary_menu" />
+        <LinearLayout android:gravity="right" android:id="@id/StopmotionExitButtonViewGroup" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0px">
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="5.0" />
+            <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:scaleType="fitCenter" android:layout_weight="1.0">
+                <Button android:textSize="@dimen/live_view_lumix_font_size" android:textColor="#ffffffff" android:id="@id/StopmotionExitButton" android:background="@drawable/no_label_button" android:layout_width="@dimen/live_view_lumix_button_medium" android:layout_height="fill_parent" android:scaleType="fitCenter" android:text="@string/setup_btn_complete" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

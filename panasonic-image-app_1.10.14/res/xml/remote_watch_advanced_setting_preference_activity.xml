@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference android:entries="@array/setup_remote_watch_advanced_mtu_string" android:title="@string/setup_start_remote_mtu" android:key="RemoteWatchSettingMTU" android:defaultValue="1280" android:dialogTitle="@string/setup_start_remote_mtu" android:entryValues="@array/setup_remote_watch_advanced_mtu_values" />
+    <ListPreference android:entries="@array/setup_remote_watch_advanced_fps_string" android:title="@string/setup_video_frame_rate" android:key="RemoteWatchSettingFps" android:defaultValue="5" android:dialogTitle="@string/setup_video_frame_rate" android:entryValues="@array/setup_remote_watch_advanced_fps_values" />
+</PreferenceScreen>

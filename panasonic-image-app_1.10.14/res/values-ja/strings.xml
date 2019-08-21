@@ -1,0 +1,1640 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_google_play_services_enable_button">有効にする</string>
+    <string name="common_google_play_services_enable_text">%1$sの実行には、Google Play開発者サービスの有効化が必要です。</string>
+    <string name="common_google_play_services_enable_title">Google Play開発者サービスの有効化</string>
+    <string name="common_google_play_services_install_button">インストール</string>
+    <string name="common_google_play_services_install_text">「%1$s」の実行には Google Play 開発者サービスが必要ですが、お使いの端末にはインストールされていません。</string>
+    <string name="common_google_play_services_install_title">Google Play開発者サービスの入手</string>
+    <string name="common_google_play_services_notification_ticker">Google Play開発者サービスのエラー</string>
+    <string name="common_google_play_services_unknown_issue">「%1$s」で Google Play 開発者サービスに問題が発生しています。もう一度お試しください。</string>
+    <string name="common_google_play_services_unsupported_text">「%1$s」の実行には Google Play 開発者サービスが必要ですが、お使いの端末ではサポートされていません。</string>
+    <string name="common_google_play_services_update_button">更新</string>
+    <string name="common_google_play_services_update_text">%1$sの実行にはGoogle Play開発者サービスの更新が必要です。</string>
+    <string name="common_google_play_services_update_title">Google Play開発者サービスの更新</string>
+    <string name="common_google_play_services_updating_text">%1$sの実行にはGoogle Play開発者サービスが必要ですが、このサービスは現在更新中です。</string>
+    <string name="common_google_play_services_wear_update_text">Google Play開発者サービスの新しいバージョンが必要です。まもなく自動更新されます。</string>
+    <string name="common_open_on_phone">スマートフォンで開く</string>
+    <string name="common_signin_button_text">ログイン</string>
+    <string name="common_signin_button_text_long">Googleにログイン</string>
+    <string name="app_name">Image App</string>
+    <string name="app_name_leica">Image Shuttle</string>
+    <string name="av_no_name">AV機器</string>
+    <string name="baby_monitor">ベビーモニター</string>
+    <string name="babymon_cannot_operation">ベビーモニター中のため、この機能は利用できません。</string>
+    <string name="babymon_cant_regstid">"サーバーに接続できませんでした。
+通知機能はご利用できません。"</string>
+    <string name="babymon_mic_resttime">残り%02d秒</string>
+    <string name="bracket_shooted_suspended">ブラケット撮影を終了しました。</string>
+    <string name="bracket_shooted_suspended_unable_recharge">フラッシュの充電が完了しない為ブラケット撮影を終了しました。</string>
+    <string name="btn_ask_idsync_no">コピーしない</string>
+    <string name="btn_ask_idsync_yes">コピーする</string>
+    <string name="btn_geotag_not_takeover">引き継がない</string>
+    <string name="btn_geotag_takeover">引き継ぐ</string>
+    <string name="btn_geotag_takeover_delete">消去する</string>
+    <string name="btn_phcol_change_frame">フレーム変更</string>
+    <string name="btn_phcol_change_photo">写真変更</string>
+    <string name="cam_command_msg_check_camera">カメラ本体を確認してください。</string>
+    <string name="cam_command_msg_sending">カメラと通信中...</string>
+    <string name="cam_command_msg_sending_error">カメラとの通信中にエラーが発生しました。</string>
+    <string name="camera_ap_password">パスワード:</string>
+    <string name="camera_ap_ssid">SSID:</string>
+    <string name="cinelike_dolly_zoom">ドリーズーム</string>
+    <string name="cinelike_slow_quick">スロー/クイック</string>
+    <string name="cloud_msg_cancel">キャンセルしますか？</string>
+    <string name="cloud_msg_canceled">キャンセルしました。</string>
+    <string name="cloud_msg_no_update">更新不要です。</string>
+    <string name="cloud_msg_update">更新しますか？</string>
+    <string name="cloud_msg_update_error">更新できませんでした。</string>
+    <string name="cloud_msg_updated">更新しました。</string>
+    <string name="cloud_msg_updating">更新中です...</string>
+    <string name="cm_msg_error_cloud_save_local">エラーが発生したため、一部の画像は保存されませんでした。</string>
+    <string name="cm_msg_remain">残り</string>
+    <string name="cmn_auto_cloud_backup">自動バックアップ</string>
+    <string name="cmn_bluetooth">Bluetooth</string>
+    <string name="cmn_bluetooth_setting">Bluetooth設定</string>
+    <string name="cmn_bluetooth_setting_short">Bluetooth設定</string>
+    <string name="cmn_bt_remote_controller">シャッターリモコン</string>
+    <string name="cmn_bt_remote_controller_title">"シャッター
+リモコン"</string>
+    <string name="cmn_btn_cancel">キャンセル</string>
+    <string name="cmn_btn_close">閉じる</string>
+    <string name="cmn_btn_detail">詳細</string>
+    <string name="cmn_btn_dicision">決定</string>
+    <string name="cmn_btn_end">終了</string>
+    <string name="cmn_btn_execute">実行</string>
+    <string name="cmn_btn_execute_short">実行</string>
+    <string name="cmn_btn_ok">OK</string>
+    <string name="cmn_btn_reset">リセット</string>
+    <string name="cmn_btn_save">保存</string>
+    <string name="cmn_btn_update">更新する</string>
+    <string name="cmn_build_number">ビルド番号</string>
+    <string name="cmn_camera_setting">カメラ設定</string>
+    <string name="cmn_camera_setting_copy">カメラ設定コピー</string>
+    <string name="cmn_camera_setting_copy2">"カメラ設定
+コピー"</string>
+    <string name="cmn_camera_setting_copy3">"カメラ設定
+コピー"</string>
+    <string name="cmn_camera_setting_delete">消去</string>
+    <string name="cmn_camera_setting_rename">名前の変更</string>
+    <string name="cmn_camera_setting_save">設定を保存する</string>
+    <string name="cmn_camera_setting_saved_settings">保存済みのカメラ設定</string>
+    <string name="cmn_camera_setting_send_camera">カメラに送信</string>
+    <string name="cmn_card_protected">"カードがロックされています。
+ロックを解除してください。"</string>
+    <string name="cmn_cloud_backup">クラウドへのバックアップ</string>
+    <string name="cmn_cloud_backup1">クラウドバックアップ</string>
+    <string name="cmn_cloud_backup_ap_ssid">無線APの接続情報(SSID)</string>
+    <string name="cmn_cloud_backup_connect_ap">接続する無線AP</string>
+    <string name="cmn_cloud_backup_connection_test">接続テスト</string>
+    <string name="cmn_cloud_backup_picmate_settings">クラウド設定</string>
+    <string name="cmn_cloud_backup_remove_location_data">位置情報データ消去</string>
+    <string name="cmn_cloud_backup_send_size">送信サイズ</string>
+    <string name="cmn_cloud_backup_send_size_l">L</string>
+    <string name="cmn_cloud_backup_send_size_m">M</string>
+    <string name="cmn_cloud_backup_send_size_org">元画像</string>
+    <string name="cmn_cloud_backup_send_size_s">S</string>
+    <string name="cmn_cloud_backup_send_size_vga">VGA</string>
+    <string name="cmn_cloud_backup_start">開始する</string>
+    <string name="cmn_cloud_backup_start_backup">バックアップ開始</string>
+    <string name="cmn_cloud_backup_terminate">中止する</string>
+    <string name="cmn_cloud_backup_terminate_condition_battery">停止条件(カメラバッテリー残量)</string>
+    <string name="cmn_connect">接続</string>
+    <string name="cmn_connect_mode_qr_code">QRコード</string>
+    <string name="cmn_connect_mode_wifi">Wi-Fi</string>
+    <string name="cmn_connection_dsc_direct">直接接続</string>
+    <string name="cmn_connection_dsc_network">ネットワーク経由</string>
+    <string name="cmn_connection_dsc_wifi_direct">Wi-Fi Direct</string>
+    <string name="cmn_connection_movie_direct">直接接続</string>
+    <string name="cmn_connection_movie_network">無線アクセスポイント接続</string>
+    <string name="cmn_connection_tethering">テザリング</string>
+    <string name="cmn_contorl_camera">カメラで操作</string>
+    <string name="cmn_digital_still_camera">デジタルカメラ</string>
+    <string name="cmn_digital_video_camera">デジタルビデオカメラ</string>
+    <string name="cmn_digital_video_camera_wearable">ウェアラブルカメラ</string>
+    <string name="cmn_error_title">エラー</string>
+    <string name="cmn_function_dsc_connect_sp">スマートフォンとつないで使う</string>
+    <string name="cmn_function_dsc_send_image_camera">カメラ内の画像を送る</string>
+    <string name="cmn_function_dsc_send_image_recording">撮影中に画像を送る</string>
+    <string name="cmn_function_movie_remote_control">リモート操作</string>
+    <string name="cmn_help_url">http://panasonic.jp/support/spn/dsc/help/l_link2.1/</string>
+    <string name="cmn_help_url_test">http://panasonic.jp/support/spn/dsc/help/YN_19102012_l_link2.1/</string>
+    <string name="cmn_imageapp_help_url">http://panasonic.jp/support/spn/dsc/help/image_app/</string>
+    <string name="cmn_imageapp_help_url_test">http://panasonic.jp/support/spn/dsc/help/test_1120_image_app/</string>
+    <string name="cmn_imageshuttle_help_url">http://www.leica-image-shuttle.help.leica-camera.com/</string>
+    <string name="cmn_imageshuttle_license_html_android">license_android_en</string>
+    <string name="cmn_label_title_nextskipview">次回からこの画面を表示しない</string>
+    <string name="cmn_llink_dummy">ダミー</string>
+    <string name="cmn_msg_3box_no_contents_found">再生可能なコンテンツが見つかりませんでした。</string>
+    <string name="cmn_msg_3box_skip_play_mp4_a500">"以下の動画のみTVで再生されます。
+「848x480/30p(25p)」
+「848x480/240fps(200fps)」
+「1280x720/30p(25p)」
+「1280x720/120fps(100fps)」
+再生できない動画は自動的にスキップします。"</string>
+    <string name="cmn_msg_3box_skip_play_mp4_vertical">"以下の動画のみTVで再生されます。
+「640x480/30p」"</string>
+    <string name="cmn_msg_3box_skip_play_mp4_wearable">"以下の動画のみTVで再生されます。
+「848x480/30p(25p)」
+「848x480/240fps(200fps)」
+再生できない動画は自動的にスキップします。"</string>
+    <string name="cmn_msg_already_regist">登録済みです。</string>
+    <string name="cmn_msg_ask_camera_change_rec_mode">カメラ側の操作により撮影モードに移行します。</string>
+    <string name="cmn_msg_camera_changed_rec_mode">カメラ側の操作により撮影モードに移行しました。</string>
+    <string name="cmn_msg_cannot_play_3box">選択されたシーンはTVで再生できません。</string>
+    <string name="cmn_msg_cannot_play_3box_mp4_60p">MP4 1920x1080/60p(50p)はTVで再生できません。</string>
+    <string name="cmn_msg_cannot_play_mp4">本機器のMP4コンテンツはTVで再生できません。</string>
+    <string name="cmn_msg_check_receive_image">受信した画像を確認しますか？</string>
+    <string name="cmn_msg_confirm_app_finish_on_back_pressed">もう一度押すとアプリケーションを終了します</string>
+    <string name="cmn_msg_connect_camera">機器[%s]と接続中です。</string>
+    <string name="cmn_msg_connect_error">接続に失敗しました。</string>
+    <string name="cmn_msg_connect_local_mode">"接続に失敗しました。
+ローカルモードを起動します。"</string>
+    <string name="cmn_msg_delete_all_data">データを消去しますか？</string>
+    <string name="cmn_msg_delete_data">データを消去しました。</string>
+    <string name="cmn_msg_disconnected">カメラとの接続が切れました。カメラのWi-Fiを再設定してください。</string>
+    <string name="cmn_msg_disconnected2">カメラとの接続が切れました。</string>
+    <string name="cmn_msg_disconnected_and_retry_connect">カメラからの応答がありません。カメラのWi-Fiを再設定するか、電波環境の良い場所で、「OK」ボタンをタップしてください。</string>
+    <string name="cmn_msg_disconnected_and_wait_for_recieve">"カメラとの接続が切れました。
+カメラのWi-Fiを再設定するか、画像を送信してください。"</string>
+    <string name="cmn_msg_disconnected_and_wait_for_recieve_short">"カメラとの接続が切れました。
+画像の受信が可能です。"</string>
+    <string name="cmn_msg_disconnected_dmr">再生機器との接続が切れました。</string>
+    <string name="cmn_msg_error_not_internet">"インターネットに接続されていません。
+インターネットに接続してください。"</string>
+    <string name="cmn_msg_error_rec">"撮影に失敗しました。
+カメラ本体もしくはメモリーカードを確認してください。"</string>
+    <string name="cmn_msg_help_error_not_internet">インターネットに接続されていないためヘルプを読み込むことができません。インターネットに接続してください。</string>
+    <string name="cmn_msg_jump_snap_warning">ジャンプスナップ撮影の場合は、カメラの設定を「単写」にしてください。</string>
+    <string name="cmn_msg_just_a_moment">しばらくお待ちください...</string>
+    <string name="cmn_msg_movie_rec_disable">現在動画撮影はできません。</string>
+    <string name="cmn_msg_need_lumix_link">選択したカメラと接続するには、スマートフォン/タブレットに[LUMIX LINK]をインストールしてください。</string>
+    <string name="cmn_msg_not_change_mode_in_cam_writing">カメラで記録中のため、現在モードの切り替えはできません。</string>
+    <string name="cmn_msg_not_connect_in_com_recording">カメラが動画撮影中のため、接続できません。</string>
+    <string name="cmn_msg_not_func_now_camera_recording">カメラ側の操作により、動画撮影中です。</string>
+    <string name="cmn_msg_not_func_now_camera_use">カメラ側で操作中のため、現在この機能は使用できません。</string>
+    <string name="cmn_msg_not_func_now_common">この機能は現在使用できません。</string>
+    <string name="cmn_msg_not_func_now_movie_recording">動画記録中のため、この機能は利用できません。</string>
+    <string name="cmn_msg_not_func_now_photo_recording">写真記録中のため、この機能は利用できません。</string>
+    <string name="cmn_msg_not_func_now_receive_image">カメラから画像受信中のため、この機能は現在利用できません。</string>
+    <string name="cmn_msg_not_func_now_regist_image">画像登録中のため、この機能は利用できません</string>
+    <string name="cmn_msg_not_func_now_selftimer_waitting">セルフタイマー動作中のため、この機能は利用できません。</string>
+    <string name="cmn_msg_not_func_now_shooting">しばらくお待ちください...</string>
+    <string name="cmn_msg_not_func_now_speaking">声かけ中のため、この機能は利用できません。</string>
+    <string name="cmn_msg_not_movie_rec_in_cam_writing">カメラで記録中のため、現在動画撮影はできません。</string>
+    <string name="cmn_msg_now_camera_use">カメラ側で操作中です。</string>
+    <string name="cmn_msg_now_camera_use_snapmovie">カメラがスナップムービーONのため操作できません。本アプリを操作する場合はカメラのスナップムービーをOFFにして下さい。</string>
+    <string name="cmn_msg_now_recieve_images_from_camera">カメラから画像を受信しています…</string>
+    <string name="cmn_msg_now_regist_image">受信した画像を登録しています…</string>
+    <string name="cmn_msg_only_movie">MP4動画のみ対応</string>
+    <string name="cmn_msg_only_picture">写真のみ対応</string>
+    <string name="cmn_msg_picmate_cloud_warning">クラウドフォルダに画像をアップロードするには、他にPCやスマートフォン等のダウンロードできる機器をクラウド同期設定する必要があります。</string>
+    <string name="cmn_msg_picmate_cloud_warning2">クラウドフォルダに送信された画像は30日間（最大1000枚まで）保存されます。送信後30日を超えた画像は、自動的に消去されます。</string>
+    <string name="cmn_msg_picmate_cloud_warning3">クラウドフォルダに送信された画像が指定した機器すべてにダウンロードされると、送信後30日以内の画像でもクラウドフォルダから消去される場合があります。</string>
+    <string name="cmn_msg_picture_shutter_disable">現在写真撮影はできません。</string>
+    <string name="cmn_msg_qr_error">QRコードが読み取れませんでした。</string>
+    <string name="cmn_msg_read_qr_code">QRコードを枠の中に写してください。</string>
+    <string name="cmn_msg_remain_60min_or_less">カード残量不足です。このモードで記録するには残量60分以上必要です</string>
+    <string name="cmn_msg_remain_zero">"メモリ残量がありません。
+カメラ本体を確認してください。"</string>
+    <string name="cmn_msg_sd_unset">"メモリーカードがありません。
+カメラ本体を確認してください。"</string>
+    <string name="cmn_msg_server_multi">接続先のカメラを選択してください。</string>
+    <string name="cmn_msg_server_zero">"カメラと接続できません。
+Wi-Fi設定で接続先のカメラが
+選択されているか
+確認してください。"</string>
+    <string name="cmn_msg_server_zero_2">この機能は現在利用できません。</string>
+    <string name="cmn_msg_server_zero_2_old">"この機能は現在利用できません。
+カメラと本機器のWi-Fi設定を確認してから、
+接続先設定でカメラを選択してください。"</string>
+    <string name="cmn_msg_server_zero_old">"接続先のカメラが見つかりません。
+メニューから接続先の
+カメラを選択してください。"</string>
+    <string name="cmn_msg_server_zero_os_wifi">"機器のWi-Fi設定で接続先のカメラが
+選択されているか確認してください。"</string>
+    <string name="cmn_msg_wifi_connect_longtime">接続には数分かかる場合があります。</string>
+    <string name="cmn_msg_wifi_multi">接続先のアクセスポイントを選択してください。</string>
+    <string name="cmn_network">ネットワーク</string>
+    <string name="cmn_network_ap_camera_id">SSID</string>
+    <string name="cmn_network_camera_ssid">SSID</string>
+    <string name="cmn_network_live_camera_id">SSID</string>
+    <string name="cmn_network_wps">WPS</string>
+    <string name="cmn_next">次へ</string>
+    <string name="cmn_no">いいえ</string>
+    <string name="cmn_notification_title">Image Appからの通知です</string>
+    <string name="cmn_notification_title_leica">Image Shuttleからの通知です</string>
+    <string name="cmn_now_wait_camera_response">カメラからの応答を待っています。</string>
+    <string name="cmn_off">OFF</string>
+    <string name="cmn_on">ON</string>
+    <string name="cmn_particle_high">強</string>
+    <string name="cmn_particle_low">弱</string>
+    <string name="cmn_particle_mid">中</string>
+    <string name="cmn_particle_off">OFF</string>
+    <string name="cmn_pict_saved">写真を保存しました。</string>
+    <string name="cmn_registered_camera">登録済みの機器</string>
+    <string name="cmn_registerring_camera">登録可能な機器</string>
+    <string name="cmn_remain_battery_1">残量１メモリ</string>
+    <string name="cmn_remain_battery_2">残量２メモリ</string>
+    <string name="cmn_remote_watch">見守り</string>
+    <string name="cmn_search">検索</string>
+    <string name="cmn_settings">設定</string>
+    <string name="cmn_single_shoot">単写</string>
+    <string name="cmn_skip">スキップ</string>
+    <string name="cmn_slepp">スリープ</string>
+    <string name="cmn_smart_app_url">http://panasonic.jp/pss/</string>
+    <string name="cmn_standby">スタンバイ</string>
+    <string name="cmn_stop_reason_value">[%d]</string>
+    <string name="cmn_unregist_camera">登録解除</string>
+    <string name="cmn_waiting_transfer">画像の転送待ち</string>
+    <string name="cmn_wifi">Wi-Fi</string>
+    <string name="cmn_wifi_setting_short">Wi-Fi設定</string>
+    <string name="cmn_yes">はい</string>
+    <string name="cnm_msg_please_talk">お話しください</string>
+    <string name="connect_msg_nfc_reset_history">機器と接続するには、最初からやり直してください。</string>
+    <string name="content_type_avchd">AVCHD</string>
+    <string name="content_type_avchd_3d">AVCHD-3D</string>
+    <string name="content_type_avchd_50i">1080/50i</string>
+    <string name="content_type_avchd_50p">1080/50p</string>
+    <string name="content_type_avchd_60i">1080/60i</string>
+    <string name="content_type_avchd_60p">1080/60p</string>
+    <string name="content_type_avchd_sbs">SbS</string>
+    <string name="content_type_jpeg">JPEG</string>
+    <string name="content_type_mp4">MP4/iFrame</string>
+    <string name="content_type_mp4_only">MP4</string>
+    <string name="demo_msg_nfc_explain">機器側のNFCマークにタッチしてください。</string>
+    <string name="easy_setting_confirm_at_camera">[カメラで動作を確認]</string>
+    <string name="easy_setting_connection_test_on_camera">(3)カメラの \"接続テスト \"機能を実施</string>
+    <string name="easy_setting_current_time_camera">現在のカメラの時計</string>
+    <string name="easy_setting_current_time_sp">スマートフォンの時計</string>
+    <string name="easy_setting_id_camera">カメラに現在登録されているPicMateのログインID</string>
+    <string name="easy_setting_live_cast">ライブ配信</string>
+    <string name="easy_setting_msg_already_regist_id">このカメラには既にPicMateのログインIDが登録されています。</string>
+    <string name="easy_setting_msg_finish_setting">スマホからのカメラへのWi-Fi機能の初期設定は終了しました。</string>
+    <string name="easy_setting_msg_need_operation">ライブ配信をご利用いただくためには、別途、下記の操作が必要です。</string>
+    <string name="easy_setting_msg_need_regist">※ライブ配信・ベビーモニター・DLNA機能をご利用の場合は必ず登録が必要です。</string>
+    <string name="easy_setting_msg_need_regist_id_for_use">※PicMateのログインIDとパスワードをお持ちでない場合は、パソコンなどでPicMateのログインIDとパスワードを取得してから実施ください。</string>
+    <string name="easy_setting_msg_regist_access_point">アクセスポイントをカメラに登録します。</string>
+    <string name="easy_setting_msg_regist_id_to_camera">PicMateのログインIDとパスワードをカメラに登録します。</string>
+    <string name="easy_setting_msg_skip_or_next_syncronize">"既に同期がとれている場合はスキップしてください。
+同期を取り直す場合は次へをタッチしてください。"</string>
+    <string name="easy_setting_msg_skip_or_next_use">このままご利用される場合はスキップ、変更される場合は次へをタッチしてください。</string>
+    <string name="easy_setting_msg_ssid_exist">既に同じSSIDが登録されています。</string>
+    <string name="easy_setting_msg_syncronize_time">スマートフォンの時計とカメラの時計の同期をとります。</string>
+    <string name="easy_setting_regist_access_point">アクセスポイントの登録</string>
+    <string name="easy_setting_regist_access_point_for_use">アクセスポイントを利用する場合は、登録してください。</string>
+    <string name="easy_setting_regist_ustream_id">(1)USTREAM IDの取得</string>
+    <string name="easy_setting_select_item">設定したい項目を選択してください。</string>
+    <string name="easy_setting_setting_at_pc">[パソコンなどで設定]</string>
+    <string name="easy_setting_syncronize_time">時計同期</string>
+    <string name="easy_setting_ustream_setting_at_picmate">PicMateにログインし、拡張機能　->　Webサービス連携　->　Webサービス連携設定　でUstreamの登録</string>
+    <string name="easy_setting_web_setting_at_picmate">(2)PICMATEでWEB連携サービス（USTREAM）を設定</string>
+    <string name="easy_wifi_setting_ap_msg">"接続するアクセスポイントを選択してください。
+アクセスポイントがまだ登録されていない場合、数字のところを押して、アクセスポイントを登録してください。"</string>
+    <string name="easywifi_clock_camtime_known">時刻不明</string>
+    <string name="easywifi_mimamori_invalidatedata">カメラから取得した情報が正しくありません。</string>
+    <string name="easywifi_picmate_overwrite">"ログインIDがカメラに登録されています。
+上書きしますか？"</string>
+    <string name="easywifi_picmate_setting">PicMate ID設定中</string>
+    <string name="easywifi_setting_ap_comment">"アクセスポイントをカメラに登録します。
+
+アクセスポイントを利用する場合は、登録してください。
+
+※ライブ配信•ベビーモニター•DLNA機能をご利用の場合は必ず登録が必要です。"</string>
+    <string name="easywifi_setting_ap_comment_for_wearable">"アクセスポイントをカメラに登録します。
+
+アクセスポイントを利用する場合は、登録してください。
+
+※ライブ配信•DLNA機能をご利用の場合は必ず登録が必要です。"</string>
+    <string name="easywifi_setting_ap_comment_for_wearable_no_livecast">"アクセスポイントをカメラに登録します。
+
+アクセスポイントを利用する場合は、登録してください。
+
+※DLNA機能をご利用の場合は必ず登録が必要です。"</string>
+    <string name="easywifi_setting_clock_comment">"スマートフォンの時計とカメラの時計の同期をとります。
+
+現在のカメラの時計
+%1$s
+
+スマートフォンの時計
+%2$s
+
+既に同期がとれている場合はスキップしてください。同期を取り直す場合は次へをタッチしてください。"</string>
+    <string name="easywifi_setting_mimamori_title">見守り設定</string>
+    <string name="easywifi_setting_nodata">カメラからの情報取得に失敗しました。</string>
+    <string name="easywifi_setting_picmate_comment">"PicMateのログインIDとパスワードをカメラに登録します。
+
+※PicMateのログインIDとパスワードをお持ちでない場合は、パソコンなどでPicMateのログインIDとパスワードを取得してから実施ください。
+
+%s
+
+このままご利用される場合はスキップ、変更される場合は次へをタッチしてください。"</string>
+    <string name="easywifi_setting_picmate_login_invalidate">ログインIDとパスワードを入力してください。</string>
+    <string name="easywifi_setting_ustream_comment">"スマートフォンからのカメラへの設定は終了しました。
+
+ライブ配信をご利用いただくためには、別途、以下の操作が必要です。
+
+[パソコンなどで設定]
+(1)USTREAM IDの取得
+
+(2)PicMateでWeb連携サービス
+
+(USTREAM)を設定
+PicMateにログインし、拡張機能→Webサービス連携→Webサービス連携設定でUSTREAMの登録
+
+[カメラで動作を確認]
+(3)カメラの'接続テスト'機能を実施"</string>
+    <string name="easywifi_setting_ustream_comment2">"スマートフォンからのカメラへの設定は終了しました。
+
+ライブ配信をご利用いただくためには、別途、以下の操作が必要です。
+
+[パソコンなどで設定]
+(1)USTREAM IDの取得
+
+(2)PicMateでWeb連携サービス
+
+(USTREAM)を設定
+PicMateにログインし、拡張機能→Webサービス連携→Webサービス連携設定でUSTREAMの登録
+"</string>
+    <string name="easywifi_setting_ustream_title">USTREAM設定</string>
+    <string name="explain_menu_privacy_notice">「メニュー」 -> 「アプリ機能」 -> 「使用状況」 -> 「自動送信する」</string>
+    <string name="exposure_compensation">露出補正</string>
+    <string name="folder_type_dsc">LUMIX</string>
+    <string name="folder_type_dsc_sd1">LUMIX(SD1)</string>
+    <string name="folder_type_dsc_sd2">LUMIX(SD2)</string>
+    <string name="folder_type_leica_dsc">Leica</string>
+    <string name="folder_type_movie">ビデオカメラ</string>
+    <string name="folder_type_movie_mem">ビデオカメラ(MEM)</string>
+    <string name="folder_type_movie_sd">ビデオカメラ(SD)</string>
+    <string name="func_app_boot_android">[%s]の起動には、インターネットへのアクセスが必要です。</string>
+    <string name="func_app_btn_boot">アプリ起動</string>
+    <string name="func_app_btn_google_play">GooglePlayへ</string>
+    <string name="func_app_install_android">[%s]のインストールには、インターネットへのアクセスが必要です。</string>
+    <string name="func_app_need_reboot">本機がカメラとダイレクトに接続されている場合は、接続を切り替えて、本アプリを起動し直してください。</string>
+    <string name="func_auto_phcol_detail">撮影したシーンからビデオカメラが自動でベストショットを選んで写真を作成します</string>
+    <string name="func_geotag_detail">スマートフォン/タブレットの位置情報を画像に追加します</string>
+    <string name="func_guidance_picture_send">画像転送</string>
+    <string name="func_guidance_remote_controll">リモート操作</string>
+    <string name="func_highlight_detail">複数のシーンから映像を抜き出し、短時間で再生・保存できます</string>
+    <string name="func_homemonitor_detail">宅内の映像を、外出先から確認することができます</string>
+    <string name="func_item_auto_phcol">おまかせフォトコラージュ</string>
+    <string name="func_item_auto_phcol_2">"おまかせフォト
+コラージュ"</string>
+    <string name="func_item_geotag">ジオタギング</string>
+    <string name="func_item_highlight">ムービースライドショー</string>
+    <string name="func_item_highlight_2">"ムービー
+スライドショー"</string>
+    <string name="func_item_phcol">フォトコラージュ</string>
+    <string name="func_item_phcol_2">"フォト
+コラージュ"</string>
+    <string name="func_item_picmate">LUMIX CLUB PicMate</string>
+    <string name="func_item_smartapp">ﾊﾟﾅｿﾆｯｸｽﾏｰﾄｱﾌﾟﾘ</string>
+    <string name="func_item_smartapp_2">"ﾊﾟﾅｿﾆｯｸ
+ｽﾏｰﾄｱﾌﾟﾘ"</string>
+    <string name="func_item_snap_movie">スナップムービー</string>
+    <string name="func_item_snap_movie_2">"スナップ
+ムービー"</string>
+    <string name="func_item_stopmotion">かんたんコマ撮り</string>
+    <string name="func_phcol_detail">好みの写真を自分で組み合わせて一枚の画像に仕上げます</string>
+    <string name="func_picmate_detail">デジタルカメラで撮った写真・動画を「整理・共有・公開」して楽しむ写真・動画共有サイト</string>
+    <string name="func_smartapp_detail">パナソニックの「スマート家電」とスマートフォンが連携するためのアプリです</string>
+    <string name="func_snapmovie_detail">カメラのスナップムービーモードで撮影した動画を結合することができます</string>
+    <string name="func_stopmotion_detail">撮影した写真を背景にして、背景を見ながら次の写真を撮影できます</string>
+    <string name="func_tab_btn">機能</string>
+    <string name="func_transfer_all">全て</string>
+    <string name="func_transfer_auto">まとめて転送</string>
+    <string name="func_transfer_auto_days">%d日以内に撮影</string>
+    <string name="func_transfer_auto_today">今日撮影</string>
+    <string name="func_transfer_only_movie">動画のみ</string>
+    <string name="func_transfer_only_picture">写真のみ</string>
+    <string name="func_transfer_picture_movie">写真と動画</string>
+    <string name="func_transfer_select">選んで転送</string>
+    <string name="geotag_btn_allow_send_gps_data_to_camera">送信する</string>
+    <string name="geotag_btn_allow_synctime_with_camera">同期する</string>
+    <string name="geotag_btn_allow_writting_to_picture">書き込む</string>
+    <string name="geotag_btn_gps_logging_off">記録停止</string>
+    <string name="geotag_btn_gps_logging_on">記録開始</string>
+    <string name="geotag_button_delete_gps">消去する</string>
+    <string name="geotag_button_gps_send_all">一括送信</string>
+    <string name="geotag_button_send_geotag">位置情報データ送信</string>
+    <string name="geotag_button_sync_time">時刻同期</string>
+    <string name="geotag_cell_gps_worklog">動作ログ</string>
+    <string name="geotag_cell_interval">記録間隔</string>
+    <string name="geotag_cell_interval_15sec">15秒</string>
+    <string name="geotag_cell_interval_1sec">1秒</string>
+    <string name="geotag_cell_interval_30sec">30秒</string>
+    <string name="geotag_cell_interval_5sec">5秒</string>
+    <string name="geotag_cell_interval_60sec">60秒</string>
+    <string name="geotag_cell_save_gps">位置情報の記録</string>
+    <string name="geotag_label_gps_logging_disable">位置情報データを取得できません</string>
+    <string name="geotag_label_gps_logging_enable">位置情報データを取得しています</string>
+    <string name="geotag_label_gps_logging_off">記録停止</string>
+    <string name="geotag_label_gps_logging_on">記録中</string>
+    <string name="geotag_label_gps_nfc_touch">NFC送信</string>
+    <string name="geotag_label_lastsynctime">最終同期時刻：</string>
+    <string name="geotag_msg_ask_write_to_picture">今から位置情報を画像に書き込みますか？</string>
+    <string name="geotag_msg_camera_error">位置情報記録に対応したカメラが接続されていません。</string>
+    <string name="geotag_msg_cancel_write_to_picture">"処理を中止しました。
+カメラ本体に位置情報データを転送済みです。"</string>
+    <string name="geotag_msg_cant_send_gpsdata">位置情報データを送信できません。</string>
+    <string name="geotag_msg_error_write_to_picture">位置情報データを書き込みできません。</string>
+    <string name="geotag_msg_gps_setting">"位置情報記録をONにするには、GPS機能を有効にする必要があります。
+ GPS機能を有効にしますか？"</string>
+    <string name="geotag_msg_gps_setting_off">"位置情報記録をOFFにします。
+ GPS機能の設定も変更しますか？"</string>
+    <string name="geotag_msg_if_you_start_send_gps_data">接続しているカメラが位置情報記録に対応している必要があります。位置情報データを送信しますか？</string>
+    <string name="geotag_msg_if_you_start_synctime">接続しているカメラが位置情報記録に対応している必要があります。時刻同期しますか？</string>
+    <string name="geotag_msg_now_write_to_picture">位置情報データ書き込み中…</string>
+    <string name="geotag_msg_sdcard_is_protected_gps">SDカードがプロテクトされています。プロテクトを解除してください。</string>
+    <string name="geotag_msg_sync_cancel">時刻同期を中止しました。</string>
+    <string name="geotag_msg_sync_error">時刻同期できませんでした。</string>
+    <string name="geotag_title">ジオタギング</string>
+    <string name="geotag_title_label_delete_gps_select">"位置情報データの送信が完了しました。
+位置情報データを消去しますか？"</string>
+    <string name="geotag_title_label_send_gps_now">位置情報データ送信中…</string>
+    <string name="geotag_title_label_sync_time_now">時刻同期中…</string>
+    <string name="geotag_worklog_savepointnum">位置情報の数：</string>
+    <string name="geotag_worklog_status_delege_gps_data">位置情報データを消去しました。</string>
+    <string name="geotag_worklog_status_error_gps">位置情報記録が異常終了しました。</string>
+    <string name="geotag_worklog_status_error_send_gps_data">位置情報データの送信に失敗しました。</string>
+    <string name="geotag_worklog_status_error_synctime">時刻同期が失敗しました。</string>
+    <string name="geotag_worklog_status_error_write_to_camera">位置情報データの書き込みに失敗しました。</string>
+    <string name="geotag_worklog_status_off">位置情報の記録をOFFにしました。</string>
+    <string name="geotag_worklog_status_on">位置情報の記録をONにしました。</string>
+    <string name="geotag_worklog_status_send_gps_data">位置情報データをカメラに送付しました。</string>
+    <string name="geotag_worklog_status_synctime">時刻同期を行いました。</string>
+    <string name="geotag_worklog_status_write_to_camera">位置情報データを書き込みました。</string>
+    <string name="giotag_msg_no_gps_function">この端末ではGPS機能を使用できません。</string>
+    <string name="highlight_duration_180sec">180秒</string>
+    <string name="highlight_duration_90sec">90秒</string>
+    <string name="highlight_duration_none">おまかせ</string>
+    <string name="highlight_effect_clasical">クラシカル</string>
+    <string name="highlight_effect_dynamic">ダイナミック</string>
+    <string name="highlight_effect_natural">ナチュラル</string>
+    <string name="highlight_effect_off">OFF</string>
+    <string name="highlight_effect_pop">ポップ</string>
+    <string name="highlight_option_effect">効果</string>
+    <string name="highlight_option_playtime">再生時間</string>
+    <string name="highlight_option_priority">顔認識優先</string>
+    <string name="highlight_priority_off">OFF</string>
+    <string name="highlight_priority_on">ON</string>
+    <string name="mgs_vrec_stop_write">書き込みエラーのため、撮影を停止しました。</string>
+    <string name="mic_level_setting_title">マイクレベル</string>
+    <string name="movieslideshow_error_bgmcheck">このファイルを利用して、ムービースライドショーを作成することはできません。</string>
+    <string name="movieslideshow_error_bgmcheck_copy_protected">著作権保護コンテンツのため、このファイルを利用して、ムービースライドショーを作成することはできません。</string>
+    <string name="movieslideshow_option_bgm">BGM</string>
+    <string name="movieslideshow_option_bgm_original">原音</string>
+    <string name="movieslideshow_option_bgm_preset">プリセット</string>
+    <string name="movieslideshow_option_bgm_setting">音設定</string>
+    <string name="movieslideshow_save_format">保存フォーマット</string>
+    <string name="movieslideshow_save_format_mp4high">MP4/高画質</string>
+    <string name="movieslideshow_save_format_mp4low">MP4/低画質</string>
+    <string name="movieslideshow_setting_bgm">有効にすると実行時にBGMを指定できます。</string>
+    <string name="movieslideshow_setting_title">有効にすると実行時にタイトル画像を指定できます。</string>
+    <string name="movieslideshow_title_picture">タイトル画像</string>
+    <string name="movieslideshow_title_settings">タイトル設定</string>
+    <string name="movieslideshow_warning_bgm">音楽ファイルが選択されていません。音楽ファイルを選択せずに、そのままムービースライドショーを作成しますか？</string>
+    <string name="movieslideshow_warning_picture">画像が選択されていません。タイトル画像の設定をおこなわずに、ムービースライドショーを作成しますか？</string>
+    <string name="msg_4k_photo_marking_limit_over">マーカーは最大40個までなので、これ以上設定できません。</string>
+    <string name="msg_4kprebrst_to_4kbrst">"温度上昇のため、動作を停止し、4K連写に設定しました。
+
+カメラの温度が下がるまでお待ちください。"</string>
+    <string name="msg_6kprebrst_to_6kbrst">"温度上昇のため、動作を停止し、6K連写に設定しました。
+
+カメラの温度が下がるまでお待ちください。"</string>
+    <string name="msg_access_number_incomplete">アクセス番号は4桁の数字を入力してください。</string>
+    <string name="msg_address_number_incomplete">アドレス番号は16桁の数字を入力してください。</string>
+    <string name="msg_ask_copy_picmate_id_to_app">"カメラにログインIDが設定されています。
+カメラのログインIDを本アプリに設定しますか？"</string>
+    <string name="msg_ask_copy_picmate_id_to_camera">"カメラにログインIDが設定されていません。
+本アプリのログインIDをカメラに設定しますか？"</string>
+    <string name="msg_ask_copy_snapmovie_previous">%d日前にスナップムービーモードで撮影したショート動画をコピーしますか？</string>
+    <string name="msg_ask_copy_snapmovie_today">本日スナップムービーモードで撮影したショート動画をコピーしますか？</string>
+    <string name="msg_ask_create_stopmotion_video_now">今すぐに動画を作成しますか？</string>
+    <string name="msg_ask_create_stopmotion_video_withtime">"動画を作成しますか？
+約%d分時間がかかります。"</string>
+    <string name="msg_ask_delete_all_contents">現在表示されているカメラのファイルを消去しますか？</string>
+    <string name="msg_ask_delete_all_contents_with_protect">現在表示されているカメラのファイルを消去しますか？ (プロテクトされているファイルは消去されません)</string>
+    <string name="msg_ask_delete_setting">設定を消去しますか？</string>
+    <string name="msg_ask_idsync_from_camera">カメラにPicMateログインIDが登録されています。カメラのPicMateログインIDを本機にコピーしますか?</string>
+    <string name="msg_ask_idsync_to_camera">本機にPicMateログインIDが登録されています。接続されたカメラに本機のPicMateログインIDをコピーしますか?</string>
+    <string name="msg_ask_idsync_to_camera2">カメラにPicMateログインIDが登録されています。カメラに本機のPicMateログインIDをコピーしますか?</string>
+    <string name="msg_ask_picjump_setting">"ピクチャジャンプ設定が行われていません。
+今すぐ行いますか?"</string>
+    <string name="msg_ask_picjump_setting_yes">今すぐ設定</string>
+    <string name="msg_ask_picmate_id_overwrite">ログインIDをカメラ側に登録してもよろしいですか?</string>
+    <string name="msg_ask_quit_stopmotion">コマ撮り撮影を終了してよろしいですか？</string>
+    <string name="msg_ask_snapmovie_save_file">動画を結合して保存しますか？</string>
+    <string name="msg_ask_stopmotion_use_prev_setting">画像縦横比とクオリティを最後に撮影した画像に合わせますか？</string>
+    <string name="msg_assert_temperature_warning">カメラ内部の温度が上がっているため、数分後にWi-Fiを切断します。</string>
+    <string name="msg_auto_transfer_connect_wifi">カメラから画像を受信する(自動画像転送)ために、カメラとWi-Fi接続しますか？</string>
+    <string name="msg_bt_remote_controller_cannot_use_for_autosend">カメラが自動画像転送中は、シャッターリモコンが利用できません。</string>
+    <string name="msg_bt_remote_controller_sw_on">カメラの電源スイッチをONにしてください。</string>
+    <string name="msg_bt_remote_controller_wifi_confirm">"カメラがWi-Fi接続中は、シャッターリモコンが利用できません。
+カメラのWi-Fi接続を終了しますか？"</string>
+    <string name="msg_bt_smart_phone_name">スマホ名称</string>
+    <string name="msg_bt_smart_phone_name_explain">カメラで表示されるスマホの名称を変更できます。</string>
+    <string name="msg_bt_smart_phone_name_too_long">入力したスマホ名称が長すぎます。</string>
+    <string name="msg_camera_connecting_to_other">カメラは他のスマホ/タブレットからの接続受付中です。</string>
+    <string name="msg_camera_initialize_finished">接続機器の設定を初期化しました。</string>
+    <string name="msg_camera_no_battery">カメラのバッテリー残量がありません。カメラの電源がオフになります。</string>
+    <string name="msg_camera_not_registered_for_no_connected_wifi">"アクセスポイントに接続できませんでした。
+登録が完了していません。"</string>
+    <string name="msg_camera_not_registered_for_user_refused">"カメラから接続を拒否されました。
+登録が完了していません。"</string>
+    <string name="msg_camera_numreset_finished">番号のリセットが完了しました。</string>
+    <string name="msg_camera_registered">登録が完了しました。</string>
+    <string name="msg_camera_setting_communcation_error">"機器と通信できません。
+再度、やり直してください。"</string>
+    <string name="msg_camera_setting_limit_over">"これ以上保存できません。
+保存済みカメラ設定を消去してください。"</string>
+    <string name="msg_cancel_all">すべて取消しますか？</string>
+    <string name="msg_cannnot_delete_sd_protected">"SDカードがプロテクト
+されています。
+プロテクトを解除してください。"</string>
+    <string name="msg_cannnot_execute_because_content_protected">画像がプロテクトされているため実行できません。プロテクトを解除してください。</string>
+    <string name="msg_cannnot_execute_because_content_short">画像が3秒未満のため実行できません。</string>
+    <string name="msg_cannnot_execute_no_account">"PicMateログインIDが
+登録されていないため、
+この機能は使用できません。"</string>
+    <string name="msg_cannnot_execute_no_internet">インターネットに接続されていないため、この機能は利用できません。</string>
+    <string name="msg_cannnot_execute_no_internet2">カメラと直接接続中やインターネット接続できない場合、この機能は利用できません。</string>
+    <string name="msg_cannnot_picture_jump">この機能は現在使用できません。</string>
+    <string name="msg_cannnot_picture_jump_no_data">ピクチャジャンプ設定が登録されていません。</string>
+    <string name="msg_cannnot_regist_picture_jump_sns">認証が完了していないため、登録できません。</string>
+    <string name="msg_cannnot_split_delete_cur_position">この位置では分割消去できません。</string>
+    <string name="msg_cannnot_up_down_because_wps">WPSで設定された接続先の優先度を変更することはできません。</string>
+    <string name="msg_cannot_action_camera_preparation">カメラがカードのメンテナンスのため、現在本機能は使用できません。</string>
+    <string name="msg_cannot_communcation_camera_with_pairing">"カメラと通信できません。
+カメラ側でペアリング済みの場合は、ペアリングを解除してから、再度、やり直してください。"</string>
+    <string name="msg_cannot_communcation_camera_without_pairing">カメラと通信できません。カメラ側でペアリング解除されていないか、確認してください。</string>
+    <string name="msg_cannot_communicate_camera">"機器と通信できません。
+再度、選択してください。"</string>
+    <string name="msg_cannot_connect_ap_with_bt_tethering">Bluetoothテザリング中は、アクセスポイントに接続できません。</string>
+    <string name="msg_cannot_connect_camera_for_clear_pairing">機器側でペアリングが解除されているため、機器に接続できません。再度、機器を登録してください。</string>
+    <string name="msg_cannot_create_video_rec_two_sd">スロットを跨いで記録したため、続けて動画を作成できません。</string>
+    <string name="msg_cannot_execute_sd_card_error">SDカードに問題があるため、この機能は利用できません。</string>
+    <string name="msg_cannot_execute_sd_card_under_restoration">SDカード修復中のため、この機能は利用できません。</string>
+    <string name="msg_cannot_format_no_card_inserted">カメラにカードが挿入されていません。</string>
+    <string name="msg_cannot_format_sd_card_error">SDカードに問題があるため、フォーマットできません。</string>
+    <string name="msg_cannot_format_sd_card_protected">SDカードがプロテクトされています。プロテクトを解除してください。</string>
+    <string name="msg_cannot_format_sd_card_under_restoration">SDカード修復中のため、フォーマットできません。</string>
+    <string name="msg_cannot_picture_jump_not_support_content">サポートされていない形式のため、この機能は使用できません。</string>
+    <string name="msg_cannot_read_camera_preparation">カメラがカードのメンテナンス中のため、読み込めませんでした。</string>
+    <string name="msg_cannot_record_video_sdhc_sdxc">カードの規格が異なるため、バックアップ記録はできません。</string>
+    <string name="msg_cannot_regist_camera_for_limit_over">"これ以上機器を登録できません。
+登録済みの機器を解除してください。"</string>
+    <string name="msg_cannot_restart_remote_wakeup">"カメラ側の状態により、この機能は利用できません。
+カメラ側で操作中でないか確認してください。
+カメラとWi-Fi接続していた場合は、Wi-Fi設定で接続しているアクセスポイントを確認してください。"</string>
+    <string name="msg_cannot_switch_current_sd">切り換えられません。</string>
+    <string name="msg_changed_target_content_highlight">「ムービースライドショー」機能が利用できる動画に切り替えました。</string>
+    <string name="msg_changed_target_content_phcol">「おまかせフォトコラージュ」機能が利用できる動画に切り替えました。</string>
+    <string name="msg_cloud_backup_ble_disconnect">カメラとのBluetooth接続が切れました。</string>
+    <string name="msg_cloud_backup_camera_busy">カメラ側で操作中のため、現在この機能は使用できません。</string>
+    <string name="msg_cloud_backup_camera_busy_remote">カメラのWi-Fi接続を終了してください。</string>
+    <string name="msg_cloud_backup_cannot_start">バックアップを開始できません</string>
+    <string name="msg_cloud_backup_communicate_fail">機器と通信できません。</string>
+    <string name="msg_cloud_backup_communication_error">"機器と通信できません。
+再度、選択してください。"</string>
+    <string name="msg_cloud_backup_conection_test_cancel">接続テストを中止しました。</string>
+    <string name="msg_cloud_backup_conection_test_fail">接続テストが失敗しました。</string>
+    <string name="msg_cloud_backup_conection_test_success">接続テストが成功しました。</string>
+    <string name="msg_cloud_backup_conection_test_testing_android">接続テスト中...(%1$d/%2$d)</string>
+    <string name="msg_cloud_backup_doing">カメラでクラウドバックアップ中...</string>
+    <string name="msg_cloud_backup_finish">カメラがクラウドバックアップを完了しました。</string>
+    <string name="msg_cloud_backup_finish_images">[%d枚]</string>
+    <string name="msg_cloud_backup_no_ap">機器にアクセスポイントが登録されていません。アクセスポイントを登録してください。</string>
+    <string name="msg_cloud_backup_not_support">バックアップをサポートしていません</string>
+    <string name="msg_cloud_backup_not_working">バックアップ停止中...</string>
+    <string name="msg_cloud_backup_setting">"アクセスポイントを経由して、カメラの画像をクラウドへバックアップします。
+クラウドへのバックアップの設定を行うには、機器の電源をONにしてBluetooth接続してください。"</string>
+    <string name="msg_cloud_backup_setting_old">"アクセスポイントを経由して、カメラの画像をクラウドへバックアップします。
+クラウドへのバックアップの設定を行うには、機器の電源をONにしてください。"</string>
+    <string name="msg_cloud_backup_start">カメラがクラウドバックアップを開始しました。</string>
+    <string name="msg_cloud_backup_start_fail">バックアップを開始できません。</string>
+    <string name="msg_cloud_backup_terminate">カメラがクラウドバックアップを中止しました。</string>
+    <string name="msg_cloud_backup_to_finish">%sへのバックアップが完了しました</string>
+    <string name="msg_cloud_backup_to_target">%sへバックアップ中です...</string>
+    <string name="msg_cloud_backup_to_terminate">%sへのバックアップを中止しました</string>
+    <string name="msg_cloud_backup_upload_target">アップロード先</string>
+    <string name="msg_cloud_no_connecting">接続していません</string>
+    <string name="msg_cmn_attention">注意</string>
+    <string name="msg_communication_error_occurred">カメラとの通信中にエラーが発生しています。</string>
+    <string name="msg_complete_id_sync">カメラと本機のPicMateログインIDを合せました。</string>
+    <string name="msg_confirm_auto_transfer_receive">別のスマートフォンと接続して、別のスマートフォンで画像を受信しますか？</string>
+    <string name="msg_confirm_communication_env">通信環境に問題がないか確認してください。</string>
+    <string name="msg_confirm_network_connection">接続を確認してください。</string>
+    <string name="msg_confirm_selected_function">機能を確認してください。</string>
+    <string name="msg_connect_ap_on_wifi_setting">Wi-Fi設定で以下のアクセスポイントに接続してください。</string>
+    <string name="msg_connected">接続済</string>
+    <string name="msg_connected_to_camera">カメラに接続しました。</string>
+    <string name="msg_connecting">接続中</string>
+    <string name="msg_connecting_camera">機器[%s]と接続中です。</string>
+    <string name="msg_connecting_camera_is_lumix_sync">接続しようとしているカメラには、[LUMIX Sync]を使用してください。</string>
+    <string name="msg_connecting_to_camera">カメラに接続中です。</string>
+    <string name="msg_connecting_to_camera1">カメラと接続中です</string>
+    <string name="msg_connection_duplicated">"カメラは既に使用中です。
+別のカメラを選択してください。"</string>
+    <string name="msg_connection_duplicated_dsc">"カメラは既に使用中です。
+別のカメラを選択するか、カメラのWi-Fi接続を一度終了してから再度接続してください。"</string>
+    <string name="msg_connection_failed">"カメラと接続できません。
+Wi-Fi設定を確認してください。"</string>
+    <string name="msg_connection_nosupport_camera">対象外の機器です。</string>
+    <string name="msg_connection_test_phase_four">通信中にエラーが発生しました。</string>
+    <string name="msg_connection_test_phase_one">アクセスポイントに接続できませんでした。</string>
+    <string name="msg_connection_test_phase_three">通信中にエラーが発生しました。</string>
+    <string name="msg_connection_test_phase_two">サーバーに接続できませんでした。</string>
+    <string name="msg_connection_test_phase_zero">アクセスポイントが見つかりませんでした。</string>
+    <string name="msg_connectl_next_ap">以下のアクセスポイントと接続します。</string>
+    <string name="msg_cookie_policy_agreement">アプリの使用状況 を自動でサーバに送信します。本設定は、後から変更することも可能です。</string>
+    <string name="msg_create_folder_error">フォルダーを作成できません</string>
+    <string name="msg_delete_camera_registration">登録を解除しますか?</string>
+    <string name="msg_delete_camera_registration_with_pairing">"登録を解除しました。
+カメラ側のペアリングも解除してください。"</string>
+    <string name="msg_disable_shoot">写真を撮影できません</string>
+    <string name="msg_disconnect_camera">機器との接続が切れました。</string>
+    <string name="msg_disconnectd_ssid">%sとの接続が切れました。</string>
+    <string name="msg_dlna_play_explain">"
+[DLNA機器と接続される方へのご注意]
+DLNA対応テレビで再生する場合は、動画の撮影モードを「848x480/30p(25p)」で ご利用ください。
+
+設定方法：
+「メニュー」→「撮影設定」→「通常撮影モード」設定後、「撮影モード選択」→ 「848x480/30p(25p)」を選択"</string>
+    <string name="msg_do_connect_wifi_for_regstering_camera">登録を完了するには、%sとWi-Fi接続する必要があります。</string>
+    <string name="msg_enable_location_service">位置情報の設定をONにしてください。</string>
+    <string name="msg_enable_wifi_direct">Wi-Fi Directを有効にしてください</string>
+    <string name="msg_enable_wifi_setting_for_connection">"機器とWi-Fi接続する必要があります。
+Wi-Fiを有効にしますか?"</string>
+    <string name="msg_err_save_file_not_supported">本機では未サポートの形式の画像のため、本機能は使用できません。</string>
+    <string name="msg_err_save_file_not_supported_or_lack_space">本機では未サポートの形式の画像、あるいは空き容量が不足しているため、本機能は使用できません。</string>
+    <string name="msg_err_sync_id">PicMateログインIDのコピーに失敗しました。カメラとの接続で問題がないか確認してください。</string>
+    <string name="msg_error_af_lock">ピントが合わないため、AF+MFの機能が使用できません。</string>
+    <string name="msg_error_connect_app_need_update">カメラと接続できません。本アプリのバージョンアップを行ってください。</string>
+    <string name="msg_error_connect_check_camera">カメラと接続できません。接続先のカメラを確認してください。</string>
+    <string name="msg_error_connect_check_input_param">カメラと接続できません。機器IDもしくはパスワードを確認してください。</string>
+    <string name="msg_error_fail_to_copy_movieslideshow">作成したムービースライドショーのコピーに失敗しました。保存フォーマットを低画質にしてスライドショーの作成をお試しください。</string>
+    <string name="msg_error_homemon_disconnected">カメラとの接続が切れました。しばらく待ってから再度お試しください。</string>
+    <string name="msg_error_login">ログインに失敗しました。</string>
+    <string name="msg_error_matanity_autoreview_reconnect">"撮影した写真の確認中にカメラとの接続が切れました。
+撮影された写真は自動的に保存されています。"</string>
+    <string name="msg_error_matanity_capture_full">シーン数がいっぱいで記録できません。コマ撮り写真新規作成を行い、新しいコマ撮り写真を作成してください。</string>
+    <string name="msg_error_matanity_create_project_full">日付別フォルダおよびコマ撮り写真撮影グループがいっぱいでコマ撮り写真が作成できません。</string>
+    <string name="msg_error_pantilter_playmode">リモートパンチルター接続中は利用できません。</string>
+    <string name="msg_error_picmate">PicMateとの通信中にエラーが発生しました。</string>
+    <string name="msg_error_picmate_agreement">利用規約の取得ができないため、この機能は利用できません。</string>
+    <string name="msg_error_picture_jump">アップロード中にエラーが発生しました。インターネットに接続できる事を確認してください。</string>
+    <string name="msg_error_picture_jump_invalid_data">データの読み込みに失敗したため、指定された画像のアップロードはできません。</string>
+    <string name="msg_error_picture_jump_need_check_application">"画像の転送に失敗しました。
+転送先のアプリがインストールされているか確認ください。"</string>
+    <string name="msg_error_picture_jump_need_check_picmateserver_av">画像のアップロードに失敗しました。PicMateのAV機器登録が完了しているか確認ください。</string>
+    <string name="msg_error_regist">"新規登録に失敗しました。
+英数字混在で8～16文字を
+設定してください。"</string>
+    <string name="msg_error_regist_password_length">"英数字混在で8～16文字を
+設定してください。"</string>
+    <string name="msg_error_setting_av">"AV機器の登録に失敗しました。
+入力したアドレス番号/アクセス番号がPicMateに登録されているかご確認ください。
+詳しくはご利用のAV機器の取扱説明書をご確認ください。"</string>
+    <string name="msg_error_setting_cloud">"クラウド同期の設定に
+失敗しました。"</string>
+    <string name="msg_error_upload_not_internet">インターネットに接続されていないため、アップロードできません。</string>
+    <string name="msg_eula_agreement_new">"本アプリを使用するには、利用規約に同意いただく必要があります。
+同意いただける場合は、「同意する」ボタンをタップしてください。"</string>
+    <string name="msg_eula_agreement_update">"本アプリの利用規約が更新されました。
+引き続き本アプリを使用するには、利用規約に同意いただく必要があります。
+同意いただける場合は、「同意する」ボタンをタップしてください。"</string>
+    <string name="msg_file_copy_error_occurred">画像のコピー中にエラーが発生しました。</string>
+    <string name="msg_file_copying">ファイルコピー中…</string>
+    <string name="msg_file_uploading">ファイル転送中…</string>
+    <string name="msg_focus_select_change_focus_mode">フォーカスセレクトを使うにはレンズをAF設定に変更してください。</string>
+    <string name="msg_focus_select_change_pint_position">ピント位置が変わる操作が行われたため、撮影を停止しました。</string>
+    <string name="msg_focus_select_shooting">フォーカスセレクト撮影中</string>
+    <string name="msg_func_not_supported">本機能は、この端末では対応していません。</string>
+    <string name="msg_geotag_takeover_data1">以前のバージョンで記録した位置情報データが存在します。</string>
+    <string name="msg_geotag_takeover_data2">本バージョンでも使用するには、位置情報データの引き継ぎが必要です。</string>
+    <string name="msg_geotag_takeover_data3">位置情報データを引き継ぎますか？</string>
+    <string name="msg_geotag_takeover_delete">以前のバージョンで記録した位置情報データを消去しますか？</string>
+    <string name="msg_geotag_takeover_executing">位置情報データの引き継ぎ中です...</string>
+    <string name="msg_geotag_takeover_not_delete">消去しない</string>
+    <string name="msg_high_temperature_warning">本体が高温のため動作できません。本体の電源が切れます。</string>
+    <string name="msg_howto_end_exposure">撮影ボタンのタップで露光が解除されます。</string>
+    <string name="msg_howto_picjump_setting">ピクチャジャンプの設定は以下より行えます。</string>
+    <string name="msg_hrs_image_creating">ハイレゾ画像を作成中です</string>
+    <string name="msg_input_all_to_complete">すべての項目を入力してから完了を押してください。</string>
+    <string name="msg_input_all_to_login">すべての項目を入力してからログインを押してください。</string>
+    <string name="msg_input_all_to_regist">すべての項目を入力してから登録を押してください。</string>
+    <string name="msg_input_all_to_register">すべての項目を入力してから登録するを押してください。</string>
+    <string name="msg_input_all_to_setting">すべての項目を入力してから設定を押してください。</string>
+    <string name="msg_invalid_camera_nfc_setting">カメラ本体のNFC設定が無効です。設定を見直してください。</string>
+    <string name="msg_lc_ready">"シャッターボタンを押すと、
+ノイズリダクション用の
+画像を取得します。"</string>
+    <string name="msg_lc_start">"シャッターボタンを押すと、
+ライブビューコンポジット撮影を
+開始します。"</string>
+    <string name="msg_lc_waiting">"ノイズリダクション用の画像を
+取得中です。
+しばらくお待ちください。"</string>
+    <string name="msg_lc_waiting_nr">処理中</string>
+    <string name="msg_lc_waiting_nr_old">"ノイズリダクション処理中です。
+しばらくお待ちください。"</string>
+    <string name="msg_liveview_lens_warning">"撮影モードに変更しますか？
+(レンズが飛び出る恐れがあります)"</string>
+    <string name="msg_location_service_warning">"位置情報が取得できません。
+[位置情報サービス]を有効にしてください。"</string>
+    <string name="msg_location_service_warning_notify">位置情報が取得できません。</string>
+    <string name="msg_login_password_diff">入力された文字列が一致しません。</string>
+    <string name="msg_loop_lack_of_remain">カード残量不足です。このモードで記録するには残量60分以上必要です。</string>
+    <string name="msg_loop_rec_stop">記録開始後、24時間経過したので、自動で記録を停止しました。</string>
+    <string name="msg_matanity_cannot_use">撮影写真確認中のため、この機能は利用できません。</string>
+    <string name="msg_matanity_change_confirm">"現在のプロジェクトを終了して、新しいプロジェクトで撮影を行います。
+よろしいですか？"</string>
+    <string name="msg_media_format_error_need_reformat">フォーマット失敗しました。このカードは再フォーマットが必要です。</string>
+    <string name="msg_media_format_finished">フォーマットが終了しました。</string>
+    <string name="msg_movie_wifi_connecting">接続中</string>
+    <string name="msg_movieslideshow_settings">"撮影したシーンの中から自動でハイライトシーンを検出し、効果をつけて保存することができます。
+設定を変更することで、効果を変更することができます。"</string>
+    <string name="msg_movieslideshow_settings_title">ムービースライドショーを作ろう</string>
+    <string name="msg_need_camera_time_setting">カメラ側の時計を設定して下さい。</string>
+    <string name="msg_need_picmate_id">本機では、WEBサービスへアップロードする際、PicMateサービスを利用する事でサービス連携をしており、PicMateサービスの利用規約に同意頂いた上で、Webサービスへのアップロードができるようになります。</string>
+    <string name="msg_need_picmate_id_input">取得済みログインIDの入力</string>
+    <string name="msg_need_picmate_id_regist">ログインIDの新規取得</string>
+    <string name="msg_need_power_on_for_sd_card_restoration">"SDカードのエラーを検出しましたが、バッテリー残量が不足しているため管理情報を修復することができません。バッテリーを充電してください。
+OKを押すとカメラの電源が切れます。"</string>
+    <string name="msg_network_invalid_ap_ssid">SSIDは半角英数字と記号のみ設定可能です。(1～32文字)</string>
+    <string name="msg_network_invalid_ap_ssid_pw">パスワードは半角英数字と記号のみ設定可能です。(0, 5, 8～64文字)</string>
+    <string name="msg_network_invalid_camera_ssid">SSIDは半角英数字と記号のみ設定可能です。(1～32文字)</string>
+    <string name="msg_network_invalid_camera_ssid_pw">パスワードは半角英数字と記号のみ設定可能です。(8～64文字)</string>
+    <string name="msg_network_invalid_ssid_or_pass">SSIDまたはパスワードに誤りがあります。</string>
+    <string name="msg_nfc__movie_display">このスマートフォンとWi-Fi接続しますか?</string>
+    <string name="msg_nfc__movie_display_v2">このスマートフォンとWi-Fi接続をおこないますか?</string>
+    <string name="msg_nfc_after_movie_work">再度スマートフォン/タブレットを接続する機器のNFCマークにタッチしてください。</string>
+    <string name="msg_nfc_cancel_camera_state_confirm">カメラに「%s」と表示されていますか？</string>
+    <string name="msg_nfc_complete">NFCの処理が正常に終了しました。</string>
+    <string name="msg_nfc_de_touch">NFCでタッチ</string>
+    <string name="msg_nfc_explain">接続する機器がNFC対応の場合は、機器側のNFCマークにタッチしてください。</string>
+    <string name="msg_nfc_explain_tmp">NFC対応機種をお持ちの場合は、本体にタッチしてください。</string>
+    <string name="msg_nfc_failed_touch">"タッチに失敗しました。
+本体の動作状態によっては、NFCで接続できないことがあります。
+リストから接続したい機器を選んでください。"</string>
+    <string name="msg_nfc_failed_touch_camera_reject">接続を拒否されました。</string>
+    <string name="msg_nfc_failed_touch_invalid_camera">対象外の機器です。</string>
+    <string name="msg_nfc_failed_touch_invalid_content">"タッチに失敗しました。
+本体の動作状態によっては、NFC機能が使えないことがあります。"</string>
+    <string name="msg_nfc_failed_touch_invalid_data">"タッチに失敗しました。
+必要な情報が取得できませんでした。"</string>
+    <string name="msg_nfc_failed_touch_invalid_io_exception">"タッチに失敗しました。
+NFC処理中にタッチが中断された可能性があります。タッチ時間を長くしてみてください。"</string>
+    <string name="msg_nfc_failed_touch_other_error">タッチに失敗しました。</string>
+    <string name="msg_nfc_failed_touch_power_off_setting">カメラ本体の電源をONにしてから、タッチしてください。</string>
+    <string name="msg_nfc_failed_touch_setting_off">カメラ本体のNFC機能を有効にしてから、タッチしてください。</string>
+    <string name="msg_nfc_failed_touch_share_invalid_content">"タッチに失敗しました。
+対象外の画像の可能性があります。画像を選択し直してから、タッチしてください。"</string>
+    <string name="msg_nfc_movie_work">"※接続する機器の液晶に「%s」と表示されている場合は、「はい」を選択してからスマートフォン/タブレットをタッチしてください。
+
+"</string>
+    <string name="msg_nfc_movie_work_v2">"※接続する機器の液晶に「%s」と表示されている場合は、「はい」を選択してから再度タッチしてください。
+
+"</string>
+    <string name="msg_nfc_not_work_explain">非対応の場合は、そのままお待ちください。</string>
+    <string name="msg_nfc_touch_failed">カメラと接続できません。もう一度タッチしてください。</string>
+    <string name="msg_nfc_touch_same_camera">同じ機器にタッチしてください。</string>
+    <string name="msg_no_access_point_found">アクセスポイントが見つかりませんでした</string>
+    <string name="msg_no_card_inserted">カメラにカードが挿入されていません。</string>
+    <string name="msg_no_connecting">接続していません</string>
+    <string name="msg_no_contents_found">再生可能なコンテンツが見つかりませんでした。</string>
+    <string name="msg_no_contents_found_for_select">選択可能なコンテンツが見つかりませんでした。</string>
+    <string name="msg_no_network_connection">ネットワーク(%s)に接続していません。</string>
+    <string name="msg_non_sync_diff_id">カメラと本機で異なるPicMateログインIDが既に設定されています。</string>
+    <string name="msg_non_sync_not_exist_id">カメラと本機でPicMateログインIDが設定されていません。</string>
+    <string name="msg_not_connected">未接続</string>
+    <string name="msg_not_found_copy_target">コピー対象となる画像がありません。</string>
+    <string name="msg_not_input_password">パスワードが入力されていませんが、このまま設定してもよろしいですか?</string>
+    <string name="msg_not_supported_by_os_version">本機のOSのバージョンでは、この機能は使用できません。</string>
+    <string name="msg_now_camera_geotag_write_to_picture">カメラが位置情報付与中のため、接続できません。</string>
+    <string name="msg_now_cloud_downloading">更新画像取得中</string>
+    <string name="msg_now_connecting">接続しています…</string>
+    <string name="msg_now_connecting_to_camera">カメラに接続しています…</string>
+    <string name="msg_now_connecting_to_camera_and_waiting_image">"カメラに接続しています。
+または、カメラからの画像の送信を待っています。"</string>
+    <string name="msg_now_connecting_to_network">ネットワークに接続しています…</string>
+    <string name="msg_now_id_syncing">PicMateログインID のコピー中…</string>
+    <string name="msg_now_reate_stopmotion_video">動画を作成中です</string>
+    <string name="msg_now_saving_image">画像取り込み中</string>
+    <string name="msg_now_saving_movie">動画取り込み中</string>
+    <string name="msg_now_searching">検索しています…</string>
+    <string name="msg_now_searching_camera_and_select_wifi">"カメラを検索しています。
+カメラとの直接接続は、画面をキャンセルしてWi-Fi一覧でカメラのSSIDを選択ください。"</string>
+    <string name="msg_now_searching_camera_and_select_wifi_and_stable_wifi_off">"カメラを検索しています。
+カメラとの直接接続は、画面をキャンセルしてWi-Fi一覧でカメラのSSIDを選択ください。
+
+カメラが見つからない場合は、Wi-Fi設定メニューの[詳細設定]で、[接続不良のとき無効にする] または[Wi-Fi安定制御機能] の設定がある場合はオフにして試してください。"</string>
+    <string name="msg_now_searching_camera_and_waiting_image">"カメラを検索しています。
+または、カメラからの画像の送信を待っています。"</string>
+    <string name="msg_now_searching_camera_and_waiting_image_and_select_wifi">"カメラ検索中、またはカメラから画像送信を待っています。
+カメラとの直接接続は、画面をキャンセルしてWi-Fi一覧でカメラのSSIDを選択ください。"</string>
+    <string name="msg_now_searching_camera_and_waiting_image_and_select_wifi_and_stable_wifi_off">"カメラ検索中、またはカメラから画像送信を待っています。
+カメラとの直接接続は、画面をキャンセルしてWi-Fi一覧でカメラのSSIDを選択ください。
+
+カメラが見つからない場合は、Wi-Fi設定メニューの[詳細設定]で、[接続不良のとき無効にする] または[Wi-Fi安定制御機能] の設定がある場合はオフにして試してください。"</string>
+    <string name="msg_now_searching_for_camera">カメラを検索しています…</string>
+    <string name="msg_now_searching_for_network">ネットワークを検索しています…</string>
+    <string name="msg_now_snapmovie_creating">スナップムービー作成中</string>
+    <string name="msg_now_webservice_loading">PicMateと連携している他社Webサービスの情報を取得中</string>
+    <string name="msg_occurred_communication_error">通信エラーが発生しました。</string>
+    <string name="msg_operate_camera_to_wait_pairing">機器を操作して、ペアリング待機にしてください。</string>
+    <string name="msg_pantilter_check_range">カメラが撮影範囲確認中のため、接続できません。</string>
+    <string name="msg_pantilter_play_confirm">オート動作を一時停止しますか？</string>
+    <string name="msg_phcol_able_mk_phcol">切り出した写真を使って、フォトコラージュを作成できます。</string>
+    <string name="msg_phcol_confirm_exit">現在の写真を保存せずに終了しますか？</string>
+    <string name="msg_phcol_folder_create_error">"フォルダの作成に失敗しました。
+他のフォルダ名を指定して再度お試しください。"</string>
+    <string name="msg_phcol_folder_exist_warn">指定したフォルダ名はすでに存在します。写真を追加してもよろしいですか？</string>
+    <string name="msg_phcol_folder_input_warn">フォルダ名は、半角英数字%d文字以内で設定してください。</string>
+    <string name="msg_phcol_warning_select_folder">選択した画像の情報がクリアされますが、よろしいですか？</string>
+    <string name="msg_picmate_size_over">選択された画像のファイルサイズが大きいため、アップロードできません。</string>
+    <string name="msg_please_off_auto_transfer">カメラの[自動画像転送]をOFFにしてください。</string>
+    <string name="msg_pre_copy_content_to_local">"お使いのスマートフォン/タブレットによっては、再生できない機器があります。
+コピーしますか？"</string>
+    <string name="msg_pre_copy_exclude_content">本機で未サポートの形式の画像は除外されます。よろしいですか？</string>
+    <string name="msg_pre_shoot1">"SH1 PRE(超高速プリ連写)はカメラの本体シャッターで撮影してください。
+本アプリからはSH1(超高速連写)で撮影できます。"</string>
+    <string name="msg_pre_shoot2">"SH2 PRE(超高速プリ連写)はカメラの本体シャッターで撮影してください。
+本アプリからはSH2(超高速連写)で撮影できます。"</string>
+    <string name="msg_prerec_to_disable">"温度上昇のためプリ記録機能を無効にしました。
+
+カメラの温度が下がるまでお待ちください。"</string>
+    <string name="msg_privacy_notice_agreement">アプリの使用状況 を自動でサーバに送信します。本設定は、後から変更することも可能です。</string>
+    <string name="msg_pwless_authentification_deny">"カメラ(%s)から接続を拒否されました。
+"</string>
+    <string name="msg_pwless_authentification_fail">"カメラ(%s)と接続できませんでした。
+"</string>
+    <string name="msg_pwless_other_sp_authentification">"カメラ(%s)は他のスマホと接続中です。
+"</string>
+    <string name="msg_pwless_wait_authentification1">カメラ(%s)の認証中…</string>
+    <string name="msg_pwless_wait_authentification2">"カメラを操作して、接続を許可してください。
+"</string>
+    <string name="msg_qr_confirm">接続する機器がQRコード読み取り機能に対応している必要がありますが、このまま進めますか？</string>
+    <string name="msg_qr_explain">QR読み込み対応の機器をお持ちの場合は、以下のボタンをタップしてください。</string>
+    <string name="msg_qrcode_warning_do_not_scan_remoteqr1">見守り機能用のQRコードをスキャンするには、メニューのアプリ機能→見守り→接続先設定を選択し、QRコードボタンを押してください。</string>
+    <string name="msg_rating_avchd_restriction">"★5のみ設定できる画像には★5を設定します。
+よろしいですか？"</string>
+    <string name="msg_rating_clear_multi_protect">プロテクトされた画像は解除されませんでした。</string>
+    <string name="msg_rating_clear_multi_protect_unsupport">%d枚設定できませんでした。</string>
+    <string name="msg_rating_set_multi_protect_unsupport">%d枚設定できませんでした。</string>
+    <string name="msg_rating_set_single_protect">この画像はプロテクトされています。</string>
+    <string name="msg_rating_set_single_unsupport">この画像には設定できません。</string>
+    <string name="msg_raw_image_warning">スマートフォンのOSによっては、RAWファイルが正しく表示されない場合があります。</string>
+    <string name="msg_recording_slowmotion_mode">スローモーション動画を録画中のため映像および音声は出力されません。</string>
+    <string name="msg_regist_unsent_upload_with_internet">選択した画像を未送信リストに登録しました。インターネットに接続後、未送信リストからアップロードを行ってください。</string>
+    <string name="msg_regstering_camera">%sを登録しています...</string>
+    <string name="msg_rejected_to_camera">カメラに接続拒否されました。</string>
+    <string name="msg_release_internet_connection">Bluetooth設定でインターネット接続を解除してから、Wi-Fi設定で以下のアクセスポイントに接続してください。</string>
+    <string name="msg_remote_nfc_failed_touch">"タッチに失敗しました。
+本体の動作状態によっては、NFCで接続できないことがあります。"</string>
+    <string name="msg_remoteaccess_confirm_finish">見守りを終了してもよろしいですか?</string>
+    <string name="msg_remoteaccess_error_check_input_param">接続先のカメラのIDとパスワードを確認してください。</string>
+    <string name="msg_remoteaccess_error_check_internet">接続先のカメラがつながっている無線LANアクセスポイントが、インターネットに接続されている事を確認してください。</string>
+    <string name="msg_remoteaccess_error_problem_on_network">現在カメラとの通信が正常にできない状態にあるか、もしくは、お使いのネットワーク環境では見守り機能が利用できない可能性があります。</string>
+    <string name="msg_remoteaccess_error_trafficy_line">回線が混雑しています。しばらく待ってから再度お試しください。</string>
+    <string name="msg_remoteview_quality_qvga">"リモートビュー画質が[QVGA]です。
+[メニュー] -> [リモートビュー設定] の [リモートビュー画質] で設定が変更できます。"</string>
+    <string name="msg_request_check_wifi_setting">接続先のカメラが見つかりません。Wi-Fi設定を確認してください。</string>
+    <string name="msg_retry">やり直してください。</string>
+    <string name="msg_savecomplete_ask_playmode_android">ギャラリーへ保存しました。編集を終了して、確認しますか？</string>
+    <string name="msg_scene_select">シーン選択</string>
+    <string name="msg_sd_card_under_restoration">管理情報にエラーを検出しました。管理情報を修復中です。</string>
+    <string name="msg_searching_camera_on_ssid">%sに接続しているカメラを検索しています...</string>
+    <string name="msg_select_camera">カメラを選択してください</string>
+    <string name="msg_select_camera_to_control">接続するカメラを選択してください。</string>
+    <string name="msg_select_connection">接続方法を選択してください</string>
+    <string name="msg_select_content_over_time">結合可能な時間を超えるためこの画像は選択できません。</string>
+    <string name="msg_select_control_camera">カメラを操作して、%sを選択した場合は、「カメラで操作」を選択してください。</string>
+    <string name="msg_select_function">機能を選択してください</string>
+    <string name="msg_selected_function_invalid">指定された機能がカメラで選択されていません。</string>
+    <string name="msg_send_all">すべて送信しますか？</string>
+    <string name="msg_send_ugase_failed">使用状況を送信できませんでした。</string>
+    <string name="msg_setup_easy_wifi_overwrite">見守り機器IDがスマートフォンに登録されています。上書きしますか？</string>
+    <string name="msg_setup_easy_wifi_registered">見守り機器IDをスマートフォンに登録しました。</string>
+    <string name="msg_snapmovie_confirm_exit">現在の動画を保存せずに終了しますか？</string>
+    <string name="msg_split_delete_back">うしろ</string>
+    <string name="msg_split_delete_front">まえ</string>
+    <string name="msg_split_delete_return">戻る</string>
+    <string name="msg_split_delete_which">どちらを消去しますか？</string>
+    <string name="msg_ssid_init_need_change">"他のスマホ等と接続されるおそれがありますので、SSIDとWi-Fiパスワードを変更してください。
+変更は「カメラのWi-Fi設定」→「カメラ名称(SSID)設定」から設定できます。"</string>
+    <string name="msg_ssid_label">カメラSSID:</string>
+    <string name="msg_ssid_pw_valid_after_power_on">設定したSSID/パスワードは、カメラの電源またはWi-Fiを入れなおすと反映されます。</string>
+    <string name="msg_stop_motion_animation_finished">コマ撮り撮影を終了しました。</string>
+    <string name="msg_stop_reason_eight">バックアップする画像がありません。</string>
+    <string name="msg_stop_reason_five">ログインできません。ログインIDとパスワードを確認してください。</string>
+    <string name="msg_stop_reason_four">通信中にエラーが発生しました。再度、やり直してください。</string>
+    <string name="msg_stop_reason_nine">カメラがスリープモードのため、バックアップを開始できません。</string>
+    <string name="msg_stop_reason_seven">カメラを確認してください。</string>
+    <string name="msg_stop_reason_six">アップロード先に接続できません。アップロード先の設定を確認してください。</string>
+    <string name="msg_stop_reason_ten">カメラが充電中のため、バックアップを開始できません。</string>
+    <string name="msg_stop_reason_two">バッテリー残量を確認してください。</string>
+    <string name="msg_stopmotion_disable_func">撮影写真確認中のため、この機能は利用できません。</string>
+    <string name="msg_stopmotion_new_proj_warn">新規にコマ撮り写真を作成します。新規作成すると今までの撮影グループに追加しての撮影はできなくなります。よろしいですか?</string>
+    <string name="msg_stopmotion_system_freq_error">"システム周波数が異なる為、AVCHDを撮影できません。
+SDカードを交換するか、システム周波数を変更してください。"</string>
+    <string name="msg_tc_backup_not_recorded">"撮影モードが切り換わりました。
+本撮影モード中はワイプ無し映像同時記録はされません。"</string>
+    <string name="msg_tc_backup_off">ワイプ無し映像同時記録を解除します。</string>
+    <string name="msg_touch_de_geotag_disable">カメラのNFC機能が無効です。</string>
+    <string name="msg_touch_de_geotag_exist_geotag">すでに位置情報データが付与されている画像です。</string>
+    <string name="msg_touch_de_geotag_fail">位置情報データをカメラに送信できませんでした。</string>
+    <string name="msg_touch_de_geotag_invalid_screen">カメラが位置情報データ付与できる状態ではありません。</string>
+    <string name="msg_touch_de_geotag_no_data">該当する位置情報データがスマホに記録されていません。</string>
+    <string name="msg_touch_de_geotag_others">位置情報データが付与できない画像です。</string>
+    <string name="msg_touch_de_geotag_protect_content">プロテクトされている画像です。</string>
+    <string name="msg_touch_de_geotag_success">位置情報データをカメラに送信しました。</string>
+    <string name="msg_touch_de_geotag_unsupport">カメラがNFCでの位置情報データ付与に対応していません。</string>
+    <string name="msg_touch_de_geotag_unsupport_content">位置情報データが付与できない画像です。</string>
+    <string name="msg_touch_de_geotag_write_protect">SDカードがライトプロテクトされています。</string>
+    <string name="msg_transfer_attention">「まとめて転送」すると、すでに転送した画像を重複して転送する場合があります。</string>
+    <string name="msg_volume_down_in_howling">ハウリングが起こる場合は、スマートフォン/タブレットの音量を下げてください。</string>
+    <string name="msg_vrec_stop_avchd_track_over">AVCHD規格上の上限に達したため、撮影を停止しました。</string>
+    <string name="msg_vrec_stop_create_folder_error">フォルダ作成失敗のため、撮影を開始できません。</string>
+    <string name="msg_vrec_stop_internal_memory_full">メモリ残量がないため撮影を停止しました。</string>
+    <string name="msg_vrec_stop_speed_insufficient">カード書き込みの速度が間に合わないため、撮影を停止しました。</string>
+    <string name="msg_vrec_stop_temperature_over">カメラ内の温度上昇により、撮影を停止しました。</string>
+    <string name="msg_vrec_stop_uplimit">記録可能なデータサイズを超えたため、撮影を停止しました。</string>
+    <string name="msg_warning_limit_contents">カメラ内のSDカードに大量の画像が記録されているため、動作が不安定になる場合があります。</string>
+    <string name="msg_warning_loop_rec_auto_delete">連続記録時、1時間以上の前のシーンは自動で消去されます。</string>
+    <string name="msg_warning_loop_rec_stop_soon">まもなく自動で記録を停止します。</string>
+    <string name="msg_warning_rec_high_temperature">"動画記録中のため映像および音声は出力されません。
+画面をタッチすると表示は戻ります。"</string>
+    <string name="msg_warning_remote_access_change_mode">見守り中は利用できません</string>
+    <string name="msg_white_balance_set_error">ホワイトバランスの設定に失敗しました。</string>
+    <string name="msg_white_balance_set_success">ホワイトバランスを設定しました。</string>
+    <string name="msg_wifi_disconnect_remote_watch_warning">"見守り機能をお使いになる場合は、3G等の携帯電話回線が必要ですので「いいえ」を選択してください。
+"</string>
+    <string name="msg_wtc_no_camera_response">カメラからの応答がありません。カメラ側を確認してください。</string>
+    <string name="msg_wtc_no_image_sending">"映像配信を停止しています。
+カメラを操作することで、映像配信を開始できます。"</string>
+    <string name="multiphoto_create">おまかせフォトコラージュ作成へ</string>
+    <string name="paly_title_warning">警告</string>
+    <string name="pantilter_cancel">キャンセル</string>
+    <string name="pantilter_check_range">撮影範囲確認中</string>
+    <string name="pantilter_error">"リモートパンチルターに問題が発生しました。
+リモートパンチルターを確認してください。"</string>
+    <string name="pantilter_manual">マニュアル動作中</string>
+    <string name="pantilter_moving_obj">追っかけモード中</string>
+    <string name="pantilter_moving_obj_pause">追っかけモード一時停止中</string>
+    <string name="pantilter_noconnected">リモートパンチルターとの接続が切れました。</string>
+    <string name="pantilter_party_auto">パーティオート中</string>
+    <string name="pantilter_party_auto_pause">パーティオート一時停止中</string>
+    <string name="pantilter_pause">一時停止</string>
+    <string name="pantilter_preset_btn_cancel">中止</string>
+    <string name="pantilter_preset_btn_pause">一時停止</string>
+    <string name="pantilter_preset_btn_restart">再開</string>
+    <string name="pantilter_preset_btn_stop">停止</string>
+    <string name="pantilter_preset_home">HOME</string>
+    <string name="pantilter_preset_mode">お気に入りアングルモード</string>
+    <string name="pantilter_preset_moving">移動中</string>
+    <string name="pantilter_preset_noset">未設定</string>
+    <string name="pantilter_preset_pause">プリセット</string>
+    <string name="pantilter_preset_pos1">POS1</string>
+    <string name="pantilter_preset_pos2">POS2</string>
+    <string name="pantilter_preset_pos3">POS3</string>
+    <string name="pantilter_preset_pos4">POS4</string>
+    <string name="pantilter_preset_pos5">POS5</string>
+    <string name="pantilter_preset_regist">プリセット登録</string>
+    <string name="pantilter_preset_round_moving">巡回中</string>
+    <string name="pantilter_preset_round_pause">巡回一時停止</string>
+    <string name="pantilter_preset_round_setting">巡回設定</string>
+    <string name="pantilter_preset_skip">スキップ</string>
+    <string name="pantilter_resetting">原点リセット動作中</string>
+    <string name="pantilter_searching">サーチ中</string>
+    <string name="pantilter_set_home_position">"しばらくお待ちください。
+Homeポジションを設定しています。"</string>
+    <string name="pantilter_start">開始</string>
+    <string name="picmate_ask_delete_content">PicMateサーバー上の選択した画像を消去しますか?</string>
+    <string name="picmate_cloud_folder_name">LUMIX CLUBフォルダ</string>
+    <string name="picmate_cloud_service_name">クラウド同期</string>
+    <string name="picmate_command_msg_regist_error">登録できませんでした。</string>
+    <string name="picmate_command_msg_sending">サーバーと通信中...</string>
+    <string name="picmate_command_msg_sending_error">サーバーとの通信中にエラーが発生しました。</string>
+    <string name="picmate_lumix_club">PicMate</string>
+    <string name="picmate_msg_network">インターネットに接続されていません。接続方法を選択してください。</string>
+    <string name="picmate_msg_network_3g">3G</string>
+    <string name="picmate_msg_network_wifi">Wi-Fi</string>
+    <string name="picmate_regist">登録済み</string>
+    <string name="picmate_regist2">(登録済み)</string>
+    <string name="picmate_service_top">http://lumixclub.panasonic.net/fronts</string>
+    <string name="picmate_sync_service_fail">サービス一覧を同期できませんでした。</string>
+    <string name="picmate_sync_service_success">サービス一覧を同期しました。</string>
+    <string name="picmate_url_lang_code">jpn</string>
+    <string name="picmate_wifi_direct_send_error">カメラとWi-Fi Directで接続されているため、送信できません。</string>
+    <string name="picturejump_copy">スマホに保存</string>
+    <string name="picturejump_delete">ごみ箱(消去)</string>
+    <string name="picturejump_location_gallery">ギャラリー</string>
+    <string name="picturejump_new_av">新規AV機器登録</string>
+    <string name="play_3box_no_dmr_found">再生機器が見つかりません</string>
+    <string name="play_3box_select_dmr">再生機器を選択してください</string>
+    <string name="play_btn_close">閉じる</string>
+    <string name="play_btn_continue">続行</string>
+    <string name="play_btn_no">いいえ</string>
+    <string name="play_btn_untransmit_detail">詳細</string>
+    <string name="play_btn_yes">はい</string>
+    <string name="play_camera_function">カメラ機能</string>
+    <string name="play_delete_all_content">全消去</string>
+    <string name="play_delete_confirm_for_protect">選択しているファイルを消去しますか?(プロテクトされているファイルは消去されません)</string>
+    <string name="play_delete_with_jpeg_confirm">選択したファイルを消去しますか?(同時記録のファイルも消去されます)</string>
+    <string name="play_delete_with_jpeg_confirm_for_protect">選択しているファイルを消去しますか?(同時記録のファイルも消去されます)ただしプロテクトされているファイルは消去されません。</string>
+    <string name="play_highlight_format">フォーマット</string>
+    <string name="play_highlight_media">メディア</string>
+    <string name="play_msg_canceling_copy">"コピーを中止しています。
+電源を切らないでください。"</string>
+    <string name="play_msg_canceling_delete">消去を中止しています。</string>
+    <string name="play_msg_complete_delete">消去が終了しました。</string>
+    <string name="play_msg_delete_data">未送信リストから消去しますか？</string>
+    <string name="play_msg_delete_from_list">未送信画像リストから削除しました。</string>
+    <string name="play_msg_location_service_request_enable">カメラロール内の画像が表示できません。[位置情報サービス]を有効にしてください。</string>
+    <string name="play_msg_movie_play_error">本機では再生を継続できないため停止しました。</string>
+    <string name="play_msg_movie_play_start">高画質または撮影時間が長い動画の場合、再生が途中で止まったり、再生できない場合があります。</string>
+    <string name="play_msg_movie_play_start2">スマートフォン/タブレットの機種によっては、正常に再生されない場合があります。</string>
+    <string name="play_msg_reading_data">読み込み中</string>
+    <string name="play_msg_send_all">すべての写真/動画の送信を開始します</string>
+    <string name="play_msg_send_cancell">送信をキャンセルしています</string>
+    <string name="play_msg_send_comp">ファイル送信が完了しました</string>
+    <string name="play_msg_send_err">送信エラーです</string>
+    <string name="play_msg_send_one">送信を開始します</string>
+    <string name="play_msg_setting_step">ピクチャジャンプ設定が完了していません。ピクチャジャンプ機能を利用する際には、設定メニューから設定してください。</string>
+    <string name="play_select_format">フォーマットを選択してください</string>
+    <string name="play_tab_btn">再生</string>
+    <string name="play_unsentimageinfo_button_canceltosend">送信の取消し</string>
+    <string name="play_unsentimageinfo_button_sendallimage">他の全ての画像も再送</string>
+    <string name="play_unsentimageinfo_button_sendcrntimage">この画像を再送</string>
+    <string name="play_unsentimageinfo_cell_destsite">送信先</string>
+    <string name="play_unsentimageinfo_cell_sendtime">送信開始日時</string>
+    <string name="play_unsentimageinfo_title">情報</string>
+    <string name="play_unsentimagelist_title">未送信の画像</string>
+    <string name="ply_3box_dlna_error">TVで再生が実行できません。TVでエラーが発生しました。</string>
+    <string name="ply_3box_mode_change_error">TVで再生が実行できません。カメラでエラーが発生しました。</string>
+    <string name="ply_action_camera_power_off">電源OFF</string>
+    <string name="ply_action_create_highlight">ムービースライドショー作成</string>
+    <string name="ply_action_edit_protect">シーンプロテクト</string>
+    <string name="ply_action_edit_split_delete">分割消去</string>
+    <string name="ply_action_multiframephoto">おまかせフォトコラージュ</string>
+    <string name="ply_action_tv_play">TVで再生</string>
+    <string name="ply_btn_cancel">キャンセル</string>
+    <string name="ply_btn_select">選択</string>
+    <string name="ply_highlight_coping">作成したムービースライドショーのシーンのコピー中</string>
+    <string name="ply_highlight_copy_error">作成したムービースライドショーのシーンのコピー中にエラーが発生しました。</string>
+    <string name="ply_highlight_copy_start_error">作成したムービースライドショーのシーンのコピーに失敗しました。</string>
+    <string name="ply_highlight_create_error">ムービースライドショー作成中にエラーが発生しました。</string>
+    <string name="ply_highlight_create_error_confirm_cam">ムービースライドショー作成ができません。ビデオカメラ本体を確認してください。</string>
+    <string name="ply_highlight_create_error_invalid_bgm">ムービースライドショー作成に失敗しました。選択されたBGMデータが対応していないか破損しています。</string>
+    <string name="ply_highlight_create_error_invalid_title_picture">ムービースライドショー作成に失敗しました。選択されたタイトル画像データが対応していないか破損しています。</string>
+    <string name="ply_highlight_create_error_no_highlight">ムービースライドショー作成ができません。抽出できるシーンがありません。</string>
+    <string name="ply_highlight_create_error_no_remain">ムービースライドショー作成ができません。メディア残量がありません。</string>
+    <string name="ply_highlight_create_start_error">ムービースライドショー作成の開始に失敗しました。</string>
+    <string name="ply_highlight_creating">ムービースライドショー作成中</string>
+    <string name="ply_highlight_delete_error">作成したムービースライドショーのシーンの消去に失敗しました。</string>
+    <string name="ply_highlight_get_sceane_info_error">シーン情報の取得に失敗しました。</string>
+    <string name="ply_highlight_low_memory_error">"メモリの空き容量が不足しています。
+起動している他のアプリを終了してメモリ容量を確保してください。"</string>
+    <string name="ply_highlight_not_select_sceane">シーンが選択されていません。</string>
+    <string name="ply_highlight_send_param_error">ムービースライドショー作成のパラメータ送信中にエラーが発生しました。</string>
+    <string name="ply_highlight_sending_bgm">BGM転送中</string>
+    <string name="ply_highlight_sending_title_picture">タイトル画像転送中</string>
+    <string name="ply_highlight_slct_bgm">BGM選択</string>
+    <string name="ply_msg_ask_cloud_upload_max_num">クラウド同期サービスへのアップロードの上限数を超えるため、選択された画像をアップロードすると、サーバの古い画像は消去されます。</string>
+    <string name="ply_msg_ask_cloud_upload_max_num_no">アップロードしない</string>
+    <string name="ply_msg_ask_cloud_upload_max_num_yes">アップロードする</string>
+    <string name="ply_msg_cannnot_upload_max_num">"アップロード先が上限に達した
+ため、これ以上アップロード
+できません。"</string>
+    <string name="ply_msg_cannot_upload_cloud_size_over">クラウド同期サービスのサーバの容量が上限に達したため、アップロードできません。</string>
+    <string name="ply_msg_cannot_upload_file_size_over">"選択された画像のファイルサイズが大きいため、アップロード
+できません。"</string>
+    <string name="ply_msg_cannot_upload_no_other">登録機器がないためアップロードできません。</string>
+    <string name="ply_msg_changed_folder">表示画像を切り替えました。</string>
+    <string name="ply_msg_err_confirmation_sd">"画像のコピー中にエラーが発生しました。
+スマホ／タブレットのSDカードを確認してください。"</string>
+    <string name="ply_msg_err_copy_file">画像のコピー中にエラーが発生しました。</string>
+    <string name="ply_msg_err_copy_file_lack_of_remain">空き容量が不足しています。</string>
+    <string name="ply_msg_err_copy_file_maybe">画像のコピーに失敗した可能性があります。</string>
+    <string name="ply_msg_err_copy_file_not_supported">本機で未サポートの形式の画像のため、コピーできませんでした。</string>
+    <string name="ply_msg_err_copy_file_not_supported_included">本機で未サポートの形式の画像のため、コピーできなかったファイルがあります。</string>
+    <string name="ply_msg_err_copy_file_not_supported_or_lack_space">本機で未サポートの形式の画像、あるいは空き容量が不足しているためコピーできませんでした。</string>
+    <string name="ply_msg_err_copy_file_not_supported_or_lack_space_included">本機で未サポートの形式の画像、あるいは空き容量が不足しているためコピーできなかったファイルがあります。</string>
+    <string name="ply_msg_err_copy_file_type_avchd">AVCHDで記録したシーンは保存できません。ビデオカメラ本体で、MP4変換してから保存してください。</string>
+    <string name="ply_msg_err_delete_file">"画像の消去中に
+エラーが発生しました。"</string>
+    <string name="ply_msg_select_max_num">これ以上は選択できません。</string>
+    <string name="ply_multiphoto_create_error">おまかせフォトコラージュに失敗しました。</string>
+    <string name="ply_multiphoto_create_error_no_highlight">おまかせフォトコラージュ作成ができません。抽出できるシーンがありません。</string>
+    <string name="ply_multiphoto_creating">おまかせフォトコラージュ作成中</string>
+    <string name="ply_multiphoto_foldername_error">フォルダ名は、半角英数字8文字以内で設定してください。</string>
+    <string name="ply_multiphoto_save">写真保存中</string>
+    <string name="ply_multiphoto_save_complete">写真を保存しました。</string>
+    <string name="ply_phcol_change_folder">写真の保存先フォルダ名を設定する</string>
+    <string name="ply_phcol_save_photo">%d枚の写真をスマホに保存します。</string>
+    <string name="ply_phcol_title">おまかせフォトコラージュ</string>
+    <string name="ply_phcol_title_slct_frame_title">フレーム選択</string>
+    <string name="ply_phcol_title_slct_picture">画像選択</string>
+    <string name="ply_select_action_delete">消去</string>
+    <string name="ply_select_action_save">保存</string>
+    <string name="ply_select_action_share">共有</string>
+    <string name="psh_ntfy_babymon_dtct_ado">"お知らせ
+ビデオカメラが音を
+検知しました。"</string>
+    <string name="psh_ntfy_babymon_start">"お知らせ
+ベビーモニターを
+開始しました。"</string>
+    <string name="pstyle_color_filter_green">緑</string>
+    <string name="pstyle_color_filter_off">OFF</string>
+    <string name="pstyle_color_filter_orange">オレンジ</string>
+    <string name="pstyle_color_filter_red">赤</string>
+    <string name="pstyle_color_filter_yellow">黄</string>
+    <string name="qrcode_read">QRコード</string>
+    <string name="rec_angle_standard">STANDARD</string>
+    <string name="rec_angle_wide">WIDE</string>
+    <string name="rec_autoreview_finish">終了</string>
+    <string name="rec_autoreview_now">オートレビュー</string>
+    <string name="rec_btn_icon_display">Info.</string>
+    <string name="rec_btn_icon_display_new">DISP.</string>
+    <string name="rec_btn_quick_menu">設定</string>
+    <string name="rec_delay">Delay</string>
+    <string name="rec_during_burst">連写中</string>
+    <string name="rec_during_exposure">露光中</string>
+    <string name="rec_just_a_moment">しばらくお待ちください...</string>
+    <string name="rec_label_f">F</string>
+    <string name="rec_label_mf">MF</string>
+    <string name="rec_label_ss">SS</string>
+    <string name="rec_liveview_second">秒</string>
+    <string name="rec_msg_4kmovie_rec_error">Wi-Fi接続中は4K動画記録できません。</string>
+    <string name="rec_msg_4kphoto_error">Wi-Fi接続中は4Kフォトの撮影はできません。</string>
+    <string name="rec_msg_4kphoto_rec_error">Wi-Fi接続中は動画記録できません。</string>
+    <string name="rec_msg_capture_failed">撮影に失敗しました。</string>
+    <string name="rec_msg_cinelike_enable">%sがONのため、本アプリからの撮影はできません。</string>
+    <string name="rec_msg_first_action">撮影モードでの起動となるため、レンズが飛び出る恐れがあります。ご注意ください。</string>
+    <string name="rec_msg_focusselect_error">Wi-Fi接続中はフォーカスセレクトの撮影はできません。</string>
+    <string name="rec_msg_interval_shot_mode">インターバル撮影モードのため、本アプリからの撮影はできません。</string>
+    <string name="rec_msg_lack_of_memory">メモリ残量が不足しています。</string>
+    <string name="rec_msg_lack_of_memory_for_movie">メモリ残量不足のため以下の時間を設定しています。</string>
+    <string name="rec_msg_lens_error">"撮影に失敗しました。
+カメラ本体を確認してください。"</string>
+    <string name="rec_msg_max_rec_time">最大撮影可能時間</string>
+    <string name="rec_msg_modechange_error">モードの切り替えに失敗しました。</string>
+    <string name="rec_msg_movie_recording">動画撮影中です。途中で停止する場合は、カメラを操作してください。</string>
+    <string name="rec_msg_need_to_extend_lens">"ズームリングを回し、
+繰り出してください。"</string>
+    <string name="rec_msg_not_recmovie_this_mode">現在のモードでは、動画撮影できません。</string>
+    <string name="rec_msg_not_supported_mode">リモート撮影できない撮影モードのため、通常撮影モードに切り換えました。</string>
+    <string name="rec_msg_only_sdi_rec">"メモリーカードがないため、SDI
+リモート撮影動作のみ行います。"</string>
+    <string name="rec_msg_recstart_err_reject">動画撮影を開始できません</string>
+    <string name="rec_msg_recstart_error">動画撮影の開始に失敗しました。</string>
+    <string name="rec_msg_recstop_error">動画撮影の停止に失敗しました。</string>
+    <string name="rec_msg_sd_lock">"カメラのメモリーカードの書込み禁止スイッチが「禁止」になっています。
+撮影するには「禁止」を解除してください。"</string>
+    <string name="rec_msg_ss_bulb">シャッタースピードがバルブの為、撮影できません。</string>
+    <string name="rec_msg_stop_live_stream">"映像配信が停止されています。
+カメラから画像を受信中か、カメラとの接続が切れていないか確認してください。"</string>
+    <string name="rec_msg_stop_recording">カメラ側からの応答により、撮影を停止しました。</string>
+    <string name="rec_msg_stop_recording_lack_memory">メモリ残量がないため撮影を停止しました。</string>
+    <string name="rec_msg_video_rectime_crnt">設定した撮影時間</string>
+    <string name="rec_msg_wait_for_camera_temperature_down">"しばらく使用できません。
+カメラの温度が下がるまで
+お待ちください。"</string>
+    <string name="rec_msg_zoom_error">"ズームに失敗しました。
+カメラ本体を確認してください。"</string>
+    <string name="rec_now_long_shutter_noise_reduction">長秒ノイズ除去中</string>
+    <string name="rec_remain">残</string>
+    <string name="rec_remain_hour">時間</string>
+    <string name="rec_remain_minute">分</string>
+    <string name="rec_remain_time_label">残</string>
+    <string name="rec_remote_voice_remain_a">残り %d 秒</string>
+    <string name="rec_selftimer_cancel">中止</string>
+    <string name="rec_sensitivity_gain">ゲイン</string>
+    <string name="rec_sensitivity_gain_semipro">GAIN</string>
+    <string name="rec_stopmotion_auto">自動撮影</string>
+    <string name="rec_stopmotion_create_error">動画の作成中にエラーが発生しました。</string>
+    <string name="rec_stopmotion_create_error_confirm_cam">動画が作成ができません。カメラ本体を確認してください。</string>
+    <string name="rec_stopmotion_create_error_no_remain">動画の作成ができません。メディア残量がありません。</string>
+    <string name="rec_stopmotion_create_start_error">動画の作成開始に失敗しました。</string>
+    <string name="rec_stopmotion_create_video">コマ撮りアニメ作成</string>
+    <string name="rec_stopmotion_creating">動画の作成中</string>
+    <string name="rec_stopmotion_discontinuation">コマ撮りアニメを継続できなかったため中断しました。</string>
+    <string name="rec_stopmotion_framerate">フレームレート</string>
+    <string name="rec_stopmotion_interval">撮影間隔</string>
+    <string name="rec_stopmotion_iterval_time">%d秒</string>
+    <string name="rec_stopmotion_not_contents">撮影済のコマ撮りアニメがありません。新しく撮影しますか？</string>
+    <string name="rec_stopmotion_order_normal">撮影順</string>
+    <string name="rec_stopmotion_order_reverse">逆順</string>
+    <string name="rec_stopmotion_order_setting">動画化順番</string>
+    <string name="rec_stopmotion_over_contents">これ以上、コマ撮りアニメを新しく撮ることができません。</string>
+    <string name="rec_stopmotion_select_continue">続きから撮る</string>
+    <string name="rec_stopmotion_select_recorded_animation">撮影済コマ撮りアニメの選択</string>
+    <string name="rec_stopmotion_select_start">新しく撮る</string>
+    <string name="rec_stopmotion_send_param_error">動画作成のパラメータ送信中にエラーが発生しました。</string>
+    <string name="rec_stopmotion_start">開始</string>
+    <string name="rec_stopmotion_title">コマ撮りアニメ</string>
+    <string name="rec_stopmotion_video_quality_setting">画質設定</string>
+    <string name="rec_stopmotion_warning_automode">撮影ボタンをタップして撮影を開始してください。</string>
+    <string name="rec_tab_btn">リモートビュー</string>
+    <string name="remain_marking_number">残 %d</string>
+    <string name="scn_gid_backlight_portrait">逆光のときに、画面全体を明るめにすることで、光があふれて、ふんわりとした雰囲気で人物を撮影できます。</string>
+    <string name="scn_gid_backlight_portrait_onepoint">被写体の後ろに太陽が隠れるようにして撮影してみよう</string>
+    <string name="scn_gid_backlight_portrait_recom_lens">明るいレンズ</string>
+    <string name="scn_gid_backlight_portrait_step_up">露出補正を使えば、ふんわり感を変えられます</string>
+    <string name="scn_gid_backlight_strobe">昼間の屋外で、フラッシュを使うことで、しっかりと人物の顔を撮影できます。</string>
+    <string name="scn_gid_backlight_strobe_onepoint">フラッシュを開いて撮影してみよう</string>
+    <string name="scn_gid_backlight_strobe_recom_lens">標準ズームレンズ</string>
+    <string name="scn_gid_backlight_strobe_step_up">露出補正を使えば、顔の明るさを変えられます</string>
+    <string name="scn_gid_blue_sky">晴れた日に、画面全体を明るめにすることで、さわやかに青空を撮影できます。</string>
+    <string name="scn_gid_blue_sky_onepoint">青空と雲のバランスを考えて撮影してみよう</string>
+    <string name="scn_gid_blue_sky_recom_lens">"広角レンズ
+望遠レンズ"</string>
+    <string name="scn_gid_blue_sky_step_up">露出補正を使えば、雰囲気を変えられます</string>
+    <string name="scn_gid_clear_skin">顔を少し明るめにして、肌色をなめらかにすることで、人物の肌をきれいに撮影できます。</string>
+    <string name="scn_gid_clear_skin_onepoint">上半身を画面いっぱいに撮影してみよう</string>
+    <string name="scn_gid_clear_skin_recom_lens">"明るいレンズ
+望遠レンズ"</string>
+    <string name="scn_gid_clear_skin_step_up">露出補正を使えば、全体の明るさを変えられます</string>
+    <string name="scn_gid_cooking">画面全体を明るくすることで、おいしそうに料理を撮影できます。</string>
+    <string name="scn_gid_cooking_onepoint">一部分にピントを合わせて、背景をぼかして撮影してみよう</string>
+    <string name="scn_gid_cooking_recom_lens">"マクロレンズ
+明るいレンズ"</string>
+    <string name="scn_gid_cooking_step_up">絞りを変えれば、ボケ味を変えられます</string>
+    <string name="scn_gid_cool_night">日没後に、青みがかった色調にすることで、都会的でクールに夜空を撮影できます。</string>
+    <string name="scn_gid_cool_night_onepoint">晴れた日の日没後、完全に空が暗くなる前に、空と建物を入れて撮影してみよう</string>
+    <string name="scn_gid_cool_night_recom_lens">広角レンズ</string>
+    <string name="scn_gid_cool_night_step_up">ホワイトバランス調整を使うと、空の青さを変えられます</string>
+    <string name="scn_gid_fixflush_backlight_strobe">昼間の屋外で、フラッシュを使うことで、しっかりと人物の顔を撮影できます。</string>
+    <string name="scn_gid_fixflush_backlight_strobe_onepoint">フラッシュを使用して撮影してみよう</string>
+    <string name="scn_gid_fixflush_backlight_strobe_recom_lens">標準ズームレンズ</string>
+    <string name="scn_gid_fixflush_backlight_strobe_step_up">露出補正を使えば、顔の明るさを変えられます</string>
+    <string name="scn_gid_fixflush_night_portrait">フラッシュを発光し、長秒撮影することで、夜景と人物の両方をきれいに撮影できます。</string>
+    <string name="scn_gid_fixflush_night_portrait_onepoint">フラッシュを使用して撮影してみよう</string>
+    <string name="scn_gid_fixflush_night_portrait_recom_lens">広角レンズ</string>
+    <string name="scn_gid_fixflush_night_portrait_step_up">露出補正を使えば、全体の明るさを変えられます</string>
+    <string name="scn_gid_fixlens_portrait">顔の明るさを適正にして、背景をぼかすことで、人物をきれいに撮影できます。</string>
+    <string name="scn_gid_fixlens_portrait_onepoint">ズームして望遠側で撮影してみよう</string>
+    <string name="scn_gid_fixlens_portrait_step_up">露出補正を使えば、全体の明るさを変えられます</string>
+    <string name="scn_gid_flower">ソフトフォーカスを使うことで、ふんわりとやわらかな雰囲気で花を撮影できます。</string>
+    <string name="scn_gid_flower_onepoint">カーテン越しなど、やわらかな光を花に当てて撮影してみよう</string>
+    <string name="scn_gid_flower_recom_lens">マクロレンズ</string>
+    <string name="scn_gid_flower_step_up">露出補正を使えば、全体の明るさを変えられます</string>
+    <string name="scn_gid_handheld_night">連写した写真を合成することで、手持ちでも、手ブレとノイズを抑えて夜景を撮影できます。</string>
+    <string name="scn_gid_handheld_night_onepoint">カメラをしっかり持ち、カメラが揺れないように撮影してみよう</string>
+    <string name="scn_gid_handheld_night_recom_lens">広角レンズ</string>
+    <string name="scn_gid_handheld_night_step_up">露出補正を使えば、全体の明るさを変えられます</string>
+    <string name="scn_gid_illumination">クロスフィルターを使うことで、光の輝きがキラキラと強調されたイルミネーションやライトアップを撮影できます。</string>
+    <string name="scn_gid_illumination_onepoint">イルミネーションをアップにして撮影してみよう</string>
+    <string name="scn_gid_illumination_recom_lens">"広角レンズ
+望遠レンズ"</string>
+    <string name="scn_gid_illumination_step_up">露出補正を使えば、キラキラ感を変えられます</string>
+    <string name="scn_gid_kids">顔にピントを合わせて背景をぼかすことで、子どもの表情を引き立てて、かわいく撮影できます。</string>
+    <string name="scn_gid_kids_onepoint">画面をタッチして、子どもにピントを合わせて撮影してみよう</string>
+    <string name="scn_gid_kids_recom_lens">明るいレンズ</string>
+    <string name="scn_gid_kids_step_up">露出補正を使えば、雰囲気を変えられます</string>
+    <string name="scn_gid_landscape">青空や緑を鮮やかにすることで、風景をきれいに撮影できます。</string>
+    <string name="scn_gid_landscape_onepoint">構図を意識して、撮影してみよう</string>
+    <string name="scn_gid_landscape_recom_lens">広角レンズ</string>
+    <string name="scn_gid_landscape_step_up">ガイドライン表示を使えば、水平を保ちやすくなります</string>
+    <string name="scn_gid_longexpo_night">シャッタースピードを遅くすることで、光の軌跡が美しい、アーティスティックな夜景を撮影できます。</string>
+    <string name="scn_gid_longexpo_night_onepoint">三脚を立てるなどカメラが揺れないように撮影してみよう</string>
+    <string name="scn_gid_longexpo_night_recom_lens">標準ズームレンズ</string>
+    <string name="scn_gid_longexpo_night_step_up">シャッタースピードを変えれば、光の軌跡が変えられます</string>
+    <string name="scn_gid_magic_hour">日没直後に、紫がかった色調にすることで、幻想的な空を撮影できます。</string>
+    <string name="scn_gid_magic_hour_onepoint">晴れた日の日没直後に空を広く撮影してみよう</string>
+    <string name="scn_gid_magic_hour_recom_lens">広角レンズ</string>
+    <string name="scn_gid_magic_hour_step_up">露出補正を使えば、色の深みを変えられます</string>
+    <string name="scn_gid_monochrome">モノクロで撮影することで、いつもと違った雰囲気で撮影できます。</string>
+    <string name="scn_gid_monochrome_onepoint">光と影に注目して撮影してみよう</string>
+    <string name="scn_gid_monochrome_recom_lens">標準ズームレンズ</string>
+    <string name="scn_gid_monochrome_step_up">彩度設定を使えば、色味が変わって雰囲気を変えられます</string>
+    <string name="scn_gid_night">光の色を鮮やかにすることで、夜景をきれいに撮影できます。</string>
+    <string name="scn_gid_night_onepoint">三脚を立てるなどカメラが揺れないように撮影してみよう</string>
+    <string name="scn_gid_night_portrait">フラッシュを発光し、長秒撮影することで、夜景と人物の両方をきれいに撮影できます。</string>
+    <string name="scn_gid_night_portrait_onepoint">フラッシュを上げて撮影してみよう</string>
+    <string name="scn_gid_night_portrait_recom_lens">広角レンズ</string>
+    <string name="scn_gid_night_portrait_step_up">露出補正を使えば、全体の明るさを変えられます</string>
+    <string name="scn_gid_night_recom_lens">"広角レンズ
+望遠レンズ"</string>
+    <string name="scn_gid_night_step_up">露出補正を使えば、全体の明るさを変えられます</string>
+    <string name="scn_gid_onepoint">■ワンポイント</string>
+    <string name="scn_gid_pet">シャッタースピードを速くすることで、ブレずに動きの速いペットを撮影できます。</string>
+    <string name="scn_gid_pet_onepoint">ペットの目線に合わせて撮影してみよう</string>
+    <string name="scn_gid_pet_recom_lens">明るいレンズ</string>
+    <string name="scn_gid_pet_step_up">連写機能を使えば、連続した動きを写真に残せます</string>
+    <string name="scn_gid_portrait">顔の明るさを適正にして、背景をぼかすことで、人物をきれいに撮影できます。</string>
+    <string name="scn_gid_portrait_onepoint">ズームレンズの時は、望遠側で撮影してみよう</string>
+    <string name="scn_gid_portrait_recom_lens">"明るいレンズ
+望遠レンズ"</string>
+    <string name="scn_gid_portrait_step_up">露出補正を使えば、全体の明るさを変えられます</string>
+    <string name="scn_gid_recommended_lens">■おすすめレンズ</string>
+    <string name="scn_gid_shimmering_water">水面に映る光を、明るく青く、キラキラと強調させて撮影できます。</string>
+    <string name="scn_gid_shimmering_water_onepoint">光が当たっている水面を撮影してみよう</string>
+    <string name="scn_gid_shimmering_water_recom_lens">望遠レンズ</string>
+    <string name="scn_gid_shimmering_water_step_up">露出補正を使えば、キラキラ感が変わります</string>
+    <string name="scn_gid_sports">シャッタースピードを速くすることで、スポーツシーンなど、動きの速い場面をブレずに撮影できます。</string>
+    <string name="scn_gid_sports_onepoint">被写体の動きを見て、フレーミングしてみよう</string>
+    <string name="scn_gid_sports_recom_lens">望遠レンズ</string>
+    <string name="scn_gid_sports_step_up">露出補正を使えば、全体の明るさを変えられます</string>
+    <string name="scn_gid_step_up">■ステップアップ</string>
+    <string name="scn_gid_sunset">赤色を強調することで、印象的な夕焼けを撮影できます。</string>
+    <string name="scn_gid_sunset_onepoint">夕焼け時に空を広く撮影してみよう</string>
+    <string name="scn_gid_sunset_recom_lens">広角レンズ</string>
+    <string name="scn_gid_sunset_step_up">彩度設定を使えば、夕日の赤みを変えられます</string>
+    <string name="scn_gid_sweets">画面全体を明るくすることで、かわいくスイーツを撮影できます。</string>
+    <string name="scn_gid_sweets_onepoint">画面いっぱいにスイーツを入れて撮影してみよう</string>
+    <string name="scn_gid_sweets_recom_lens">"マクロレンズ
+明るいレンズ"</string>
+    <string name="scn_gid_sweets_step_up">彩度設定を使えば、雰囲気を変えられます</string>
+    <string name="scn_gid_warm_night">暖色の色調にすることで、暖かみのある夜景を撮影できます。</string>
+    <string name="scn_gid_warm_night_onepoint">ライトアップやビルの灯りなどを画面の中にたくさん入れて撮影してみよう</string>
+    <string name="scn_gid_warm_night_recom_lens">"広角レンズ
+望遠レンズ"</string>
+    <string name="scn_gid_warm_night_step_up">ホワイトバランス調整を使うと、雰囲気を変えられます</string>
+    <string name="scn_gid_warm_portrait">暖色の色調にすることで、ほのぼのとした雰囲気で人物を撮影できます。</string>
+    <string name="scn_gid_warm_portrait_onepoint">強い日ざしを避けて、やわらかい光の下で撮影してみよう</string>
+    <string name="scn_gid_warm_portrait_recom_lens">標準ズームレンズ</string>
+    <string name="scn_gid_warm_portrait_step_up">ホワイトバランス調整を使えば、雰囲気を変えられます</string>
+    <string name="setup_ap_setting">接続先設定</string>
+    <string name="setup_app_setting">アプリ機能</string>
+    <string name="setup_ask_app_init">アプリの設定を初期状態に戻します。よろしいですか？</string>
+    <string name="setup_ask_camera_format">フォーマットを行うと、接続機器のカードの内容が全て消去されます。フォーマットを実行してもよろしいですか？</string>
+    <string name="setup_ask_camera_init">接続機器の設定を初期状態に戻します。よろしいですか？</string>
+    <string name="setup_ask_camera_number_reset">接続機器のMP4、写真のファイル番号をリセットします。よろしいですか？</string>
+    <string name="setup_ask_camera_power_off">接続機器の電源を切りますか？</string>
+    <string name="setup_avchd_quality">AVCHD再生画質</string>
+    <string name="setup_avchd_quality_high">高画質</string>
+    <string name="setup_avchd_quality_normal">標準画質</string>
+    <string name="setup_btn_complete">完了</string>
+    <string name="setup_btn_delete">消去</string>
+    <string name="setup_btn_edit">編集</string>
+    <string name="setup_btn_finish">完了</string>
+    <string name="setup_btn_format">フォーマット</string>
+    <string name="setup_btn_init">初期設定</string>
+    <string name="setup_btn_power_off">電源を切る</string>
+    <string name="setup_btn_priority_down">優先度を下げる</string>
+    <string name="setup_btn_priority_up">優先度を上げる</string>
+    <string name="setup_btn_regist">登録</string>
+    <string name="setup_btn_reset">番号リセット</string>
+    <string name="setup_btn_return">戻る</string>
+    <string name="setup_byte">byte</string>
+    <string name="setup_cam_ssid_setting">SSID/Wi-Fiパスワード設定</string>
+    <string name="setup_cam_ssid_setting_message">"カメラのSSIDとWi-Fiパスワードが初期状態です。
+SSIDとWi-Fiパスワードを変更してください。"</string>
+    <string name="setup_cam_ssid_setting_message_recomend">カメラのSSIDとWi-Fiパスワードが初期状態です。SSIDとWi-Fiパスワードを変更することをお勧めします。変更は「カメラのWi-Fi設定」->「カメラ名称(SSID)設定」から設定できます。</string>
+    <string name="setup_cmn_wifi_address">Wi-Fiアドレス</string>
+    <string name="setup_common_connect_type">Wi-Fi と Wi-Fi Directの両方が有効です。接続方法を選択してください。</string>
+    <string name="setup_connect">接続先設定</string>
+    <string name="setup_connect_no_camera">"カメラが見つかりませんでした。
+検索を終了します。"</string>
+    <string name="setup_easy_wifi_hmmon_cam_id">カメラの見守り機器ID</string>
+    <string name="setup_easy_wifi_hmmon_exp">見守りを開始するのに必要な見守り機器IDをカメラから取得することができます。</string>
+    <string name="setup_easy_wifi_hmmon_sp_id">スマートフォンの見守り機器ID</string>
+    <string name="setup_easy_wifi_input">自分で入力する</string>
+    <string name="setup_easy_wifi_not_registerd">登録されていません</string>
+    <string name="setup_easy_wifi_setup_title">Wi-Fi機能の初期設定</string>
+    <string name="setup_easy_wifi_use_sp_login_id">スマートフォンのログインIDを使用する</string>
+    <string name="setup_fps_value1">5</string>
+    <string name="setup_fps_value2">1</string>
+    <string name="setup_geo_tagging">位置情報記録設定</string>
+    <string name="setup_help">ヘルプ</string>
+    <string name="setup_imageshuttle_network_name_explain">"他の機器で表示される名称を変更できます。
+接続先の機器によっては、入力した文字が正しく表示されない場合があります。
+名称の変更は本アプリを終了後、次回アプリ起動時に反映されます。"</string>
+    <string name="setup_iso">ISO</string>
+    <string name="setup_iso_color_temp">色温度</string>
+    <string name="setup_jump_rec_1">1(感度：弱)</string>
+    <string name="setup_jump_rec_2">2</string>
+    <string name="setup_jump_rec_3">3</string>
+    <string name="setup_jump_rec_4">4</string>
+    <string name="setup_jump_rec_5">5(感度：強)</string>
+    <string name="setup_jump_rec_high">強</string>
+    <string name="setup_jump_rec_low">弱</string>
+    <string name="setup_jump_rec_mid">中</string>
+    <string name="setup_jump_rec_off">OFF</string>
+    <string name="setup_language_code">ja</string>
+    <string name="setup_liveview">リモートビュー設定</string>
+    <string name="setup_liveview_lens_warning">レンズ飛び出し警告</string>
+    <string name="setup_liveview_quality">リモートビュー画質</string>
+    <string name="setup_liveview_selfshot">自分撮りモード</string>
+    <string name="setup_menu">メニュー</string>
+    <string name="setup_msg_ask_cloud_setup">接続するカメラが「PicMateのクラウド同期」に対応している必要があります。このまま設定を進めますか？</string>
+    <string name="setup_msg_ask_geotag_setup">接続するカメラが「位置情報記録」に対応している必要があります。このまま設定を進めますか？</string>
+    <string name="setup_msg_ask_remote_access_setup">接続するカメラが「見守り機能」に対応している必要があります。このまま設定を進めますか？</string>
+    <string name="setup_msg_camera_disconnected">"接続が切断されました。
+ローカル再生モードを起動します。"</string>
+    <string name="setup_msg_camera_lens_error">レンズの装着状態が変更されました。</string>
+    <string name="setup_msg_camera_memu_update">メニューが更新されました。</string>
+    <string name="setup_msg_gps_logging_1st">位置情報記録に対応した機器でのみ利用できます</string>
+    <string name="setup_msg_remote_access_1st">見守りに対応した機器でのみ利用できます</string>
+    <string name="setup_msg_remote_access_3g_necessary_a">見守りを開始するには3G等の携帯電話回線で接続する必要があります。接続を切替えますか？</string>
+    <string name="setup_msg_remote_access_id_necessary">接続先を設定してください</string>
+    <string name="setup_msg_start_remote_watch">見守りを開始しますか？</string>
+    <string name="setup_mtu_value1">1280byte</string>
+    <string name="setup_mtu_value2">576byte</string>
+    <string name="setup_name_invalid_char_code">"接続先によっては、入力した文字が正しく表示されない可能性があります。
+このまま登録しますか？"</string>
+    <string name="setup_name_over_length">登録可能な文字数は最大20です。</string>
+    <string name="setup_network_name">名前</string>
+    <string name="setup_network_name_explain">"他の機器で表示される名称(DLNA)を変更できます。
+接続先の機器によっては、入力した文字が正しく表示されない場合があります。
+名称の変更は本アプリを終了後、次回アプリ起動時に反映されます。"</string>
+    <string name="setup_network_name_setting">ネットワーク名称</string>
+    <string name="setup_now_format">フォーマット中です。</string>
+    <string name="setup_now_init">しばらくお待ちください...</string>
+    <string name="setup_now_reset">しばらくお待ちください...</string>
+    <string name="setup_off">OFF</string>
+    <string name="setup_on">ON</string>
+    <string name="setup_picmate_activate">PicMate機能利用開始</string>
+    <string name="setup_picmate_add_equip">追加</string>
+    <string name="setup_picmate_already_have_id">"ログインIDをお持ちの場合
+(CLUB Panasonic / PicMate)"</string>
+    <string name="setup_picmate_btn_agree">同意する</string>
+    <string name="setup_picmate_btn_longin">ログイン</string>
+    <string name="setup_picmate_btn_new_regist">新規登録</string>
+    <string name="setup_picmate_btn_not_agree">同意しない</string>
+    <string name="setup_picmate_btn_regist">登録する</string>
+    <string name="setup_picmate_btn_sync_login_id">PicMateログインＩＤをカメラとあわせる</string>
+    <string name="setup_picmate_btn_sync_need_check_login">ログインIDまたはパスワードが変更されています。本IDでPicMateにログイン可能であることを確認してください。</string>
+    <string name="setup_picmate_btn_unregist">登録しない</string>
+    <string name="setup_picmate_cam_or_app_have_id">本アプリとカメラのログインIDを合わせる場合</string>
+    <string name="setup_picmate_cloud">クラウド同期設定</string>
+    <string name="setup_picmate_cloud_action_capacity_over">容量超過時の動作</string>
+    <string name="setup_picmate_cloud_action_confirm_update">更新確認</string>
+    <string name="setup_picmate_cloud_auto_sync">自動で同期</string>
+    <string name="setup_picmate_cloud_confirm">常に確認</string>
+    <string name="setup_picmate_cloud_overwrite">常に上書き</string>
+    <string name="setup_picmate_cloud_picsize_recieving">受信時の画像サイズ</string>
+    <string name="setup_picmate_cloud_picsize_sending">送信時の画像サイズ</string>
+    <string name="setup_picmate_cloud_using">クラウド同期利用</string>
+    <string name="setup_picmate_label_access_number">アクセス番号</string>
+    <string name="setup_picmate_label_address_number">アドレス番号</string>
+    <string name="setup_picmate_label_comment_input">画像に付与するコメントを入力してください。</string>
+    <string name="setup_picmate_label_login_id">ログインＩＤ</string>
+    <string name="setup_picmate_label_login_password">パスワード</string>
+    <string name="setup_picmate_label_login_password_check">確認</string>
+    <string name="setup_picmate_label_login_regist">登録するパスワードを入力してください。</string>
+    <string name="setup_picmate_label_login_regist2">登録するパスワード(半角英字・数字混在で8～16文字)を入力してください。</string>
+    <string name="setup_picmate_label_name">名前</string>
+    <string name="setup_picmate_manage_id">ログインID管理</string>
+    <string name="setup_picmate_not_have_id">ログインIDをお持ちでない場合</string>
+    <string name="setup_picmate_regist_equip">送信先AV機器登録</string>
+    <string name="setup_picmate_regist_service">送信先Webサービス登録</string>
+    <string name="setup_picmate_service_sync">サービス一覧同期</string>
+    <string name="setup_picmate_title_av_list">送信先AV機器</string>
+    <string name="setup_picmate_title_av_regist">AV機器情報の入力</string>
+    <string name="setup_picmate_title_comment_input">コメント入力</string>
+    <string name="setup_picmate_title_login_info">ログイン情報の入力</string>
+    <string name="setup_picmate_title_login_regist">登録用パスワードの入力</string>
+    <string name="setup_picmate_title_web">PicMate認証</string>
+    <string name="setup_picmate_upload_image">アップロード画像</string>
+    <string name="setup_picsize_fullhd">フルHD(1920x1080)</string>
+    <string name="setup_picsize_large">大(オリジナル)</string>
+    <string name="setup_picsize_middle">中</string>
+    <string name="setup_picsize_original">制限なし(フル画素)</string>
+    <string name="setup_picsize_recommend">おすすめ</string>
+    <string name="setup_picsize_small">小</string>
+    <string name="setup_picsize_vga">VGA(640x480)</string>
+    <string name="setup_ply_picture_sort">画像表示順</string>
+    <string name="setup_ply_picture_sort_name">ファイル名</string>
+    <string name="setup_ply_picture_sort_rectime">撮影日時</string>
+    <string name="setup_rec">撮影設定</string>
+    <string name="setup_rec_time">撮影時間</string>
+    <string name="setup_rectime_explain">動画撮影開始時のカメラの状態によっては、実際の撮影時間は設定した時間よりも短くなる場合があります。</string>
+    <string name="setup_remote_access_equip_id">機器ID</string>
+    <string name="setup_remote_access_equip_pw">パスワード</string>
+    <string name="setup_remote_access_qr_button">QRコード</string>
+    <string name="setup_scn_gid_btn_title_finish_setting">設定する</string>
+    <string name="setup_scn_gid_btn_title_photoshot">撮影する</string>
+    <string name="setup_scn_gid_navigation_title">シーンガイド</string>
+    <string name="setup_set_picmate_id_to_camera">ログインIDをカメラに設定</string>
+    <string name="setup_smaope_camera_picsize">カメラ受信時の画像サイズ</string>
+    <string name="setup_smaope_delete_gps">送信時の位置情報消去</string>
+    <string name="setup_smaope_download_file_format">RAW+JPEG画像の保存形式</string>
+    <string name="setup_smaope_picamate">PicMate設定</string>
+    <string name="setup_smaope_picjmp">ピクチャジャンプ設定</string>
+    <string name="setup_smaope_player_select">動画プレイヤーの選択</string>
+    <string name="setup_smaope_player_select_summary_off">Image Appのプレイヤーで再生</string>
+    <string name="setup_smaope_player_select_summary_off_leica">Image Shuttleのプレイヤーで再生</string>
+    <string name="setup_smaope_player_select_summary_on">プレイヤーを選択して再生</string>
+    <string name="setup_smaope_web_picsize">Web送信時の画像サイズ</string>
+    <string name="setup_smaope_work_charging">充電中のみ送受信</string>
+    <string name="setup_smaope_work_wifi_connecting">Wi-Fi接続時のみ送受信</string>
+    <string name="setup_smart_app">Smart App</string>
+    <string name="setup_smart_operation">再生設定</string>
+    <string name="setup_ssid_ap_title">アクセスポイント設定</string>
+    <string name="setup_ssid_live_title">ライブ配信設定</string>
+    <string name="setup_ssid_search">検索</string>
+    <string name="setup_start_remote_ext_setting">高度な設定</string>
+    <string name="setup_start_remote_mtu">MTU</string>
+    <string name="setup_start_remote_watch">見守り開始</string>
+    <string name="setup_terms">利用規約</string>
+    <string name="setup_time_not_setting">未設定</string>
+    <string name="setup_time_sync">時計設定</string>
+    <string name="setup_time_sync_message">"カメラの時計が未設定状態です。
+スマートフォン/タブレットの時刻をカメラに同期します。"</string>
+    <string name="setup_use_remote_watch">見守りを利用する</string>
+    <string name="setup_version">バージョン</string>
+    <string name="setup_version_info">バージョン情報</string>
+    <string name="setup_video_frame_rate">フレーム/秒</string>
+    <string name="setup_video_frame_rate_simple">フレーム/秒</string>
+    <string name="setup_white_balance">ホワイトバランス</string>
+    <string name="setup_white_balance_detail_a">A</string>
+    <string name="setup_white_balance_detail_b">B</string>
+    <string name="setup_white_balance_detail_g">G</string>
+    <string name="setup_white_balance_detail_m">M</string>
+    <string name="setup_white_balance_label">WB</string>
+    <string name="setup_white_balance_set_button">設定</string>
+    <string name="setup_white_balance_set_explain">以下のボタンのタップにより、ホワイトバランスの設定が可能です。</string>
+    <string name="setup_wifi_encryption">暗号方式</string>
+    <string name="setup_wifi_encryption_aes">AES</string>
+    <string name="setup_wifi_encryption_none">なし</string>
+    <string name="setup_wifi_encryption_tkip">TKIP</string>
+    <string name="setup_wifi_encryption_wep">WEP</string>
+    <string name="setup_wifi_security">セキュリティ</string>
+    <string name="setup_wifi_security_open">なし</string>
+    <string name="setup_wifi_security_shared">Shared</string>
+    <string name="setup_wifi_security_wpa">WPA</string>
+    <string name="setup_wifi_security_wpa2">WPA2</string>
+    <string name="setup_wifi_setting">Wi-Fi設定</string>
+    <string name="setup_wifi_setting_message">ライブ配信やアクセスポイント経由で周辺機器へ接続する際の設定を行います。</string>
+    <string name="slow_zoom_speed_fast">速い</string>
+    <string name="slow_zoom_speed_setting">ズーム速度調整</string>
+    <string name="slow_zoom_speed_slow">遅い</string>
+    <string name="slow_zoom_speed_standard">標準</string>
+    <string name="smartop_albumlist_title">参照したいアルバムまたはフォルダを選択してください</string>
+    <string name="smartop_confirm_delete">選択したファイルを消去しますか?</string>
+    <string name="smartop_copy_err">ダウンロードに失敗しました</string>
+    <string name="smartop_copy_error_title">エラー</string>
+    <string name="smartop_msg_comp_copying">コピーが完了しました</string>
+    <string name="smartop_no_send_error_title">注意</string>
+    <string name="smartop_re_conect_title">"接続が切断されました。
+参照先を選択してください。"</string>
+    <string name="snap_movie_bgm_title_1">No.1</string>
+    <string name="snap_movie_bgm_title_2">No.2</string>
+    <string name="snap_movie_bgm_title_3">No.3</string>
+    <string name="snap_movie_bgm_title_4">No.4</string>
+    <string name="snap_movie_bgm_title_5">No.5</string>
+    <string name="snap_movie_bgm_title_6">No.6</string>
+    <string name="snap_movie_bgm_title_7">No.7</string>
+    <string name="snap_movie_bgm_title_8">No.8</string>
+    <string name="snap_movie_content_time">秒</string>
+    <string name="tab_home_button">ホーム</string>
+    <string name="text_4k_crop_end_frame">終了</string>
+    <string name="text_4k_crop_frame_setting2">枠移動</string>
+    <string name="text_4k_crop_start_frame">開始</string>
+    <string name="title_connection_error">接続エラー</string>
+    <string name="title_use_functab">機能タブを有効にする</string>
+    <string name="title_usegeo">位置情報記録を利用する</string>
+    <string name="touchshare_copied_picture">コピーが完了した画像</string>
+    <string name="touchshare_copying">画像をコピー中です。</string>
+    <string name="touchshare_exit_action">終了する場合は、以下のボタンをタップしてください。</string>
+    <string name="touchshare_msg_not_connecting">カメラとの接続が切れています。</string>
+    <string name="touchshare_next_touch_action">続けて画像をコピーする場合は、カメラ側で画像を選択してから、再度カメラにタッチしてください。</string>
+    <string name="ugase_agreement_support">"Google Analyticsの利用規約・プライバシーポリシーについてはGoogle Analyticsのホームページでご確認ください。
+Google アナリティクス サービス利用規約
+http://www.google.com/intl/ja/analytics/tos.html
+Google ポリシーと原則
+http://www.google.com/intl/ja/policies/privacy/
+
+お問い合わせのある場合は、利用規約に記載の連絡先までご連絡ください。"</string>
+    <string name="ugase_agreement_support_old">お問い合わせのある場合は、本アプリの利用規約に記載の連絡先までご連絡ください。</string>
+    <string name="ugase_agreement_text_1">"（１）本アプリには、お客様ご利用の端末に本アプリの利用履歴のログを残し、パナソニック株式会社（以下「当社」といいます）所定のサーバにアップロードするための機能が塔載されています。当社は、本アプリに関連するソフトウェアのアップデート、本アプリの改善、機能並びにお客様の利便性向上、お客様に対するサポート、サービス、技術の円滑な提供のため本アプリの利用時に自動で生成、保存されるお客様の機器、デバイス、システム、およびアプリケーションソフトウェア、ならびに周辺機器に関わる技術情報（撮影、再生、送信などの使用情報を含む）、本アプリの利用履歴に関する情報、技術および関連情報を当社の所定のサーバに収集、蓄積およびお客様を個人的に識別しない方法で、使用することができるものとします。
+お問い合わせのある場合は、利用規約に記載の連絡先までご連絡ください。"</string>
+    <string name="ugase_agreement_text_2">"（２）パナソニック株式会社（以下「当社」といいます）の本アプリには、本アプリに関連するソフトウェアのアップデート、本アプリの改善、機能並びにお客様の利便性向上、お客様に対するサポート、サービス、技術の円滑な提供、マーケティング（販促）のために、Google Inc. （以下「Google社」）のサービスであるGoogle Analyticsを利用しています。
+本アプリでGoogle Analyticsを利用しますと、当社が発行するクッキーをもとにして、Google 社が本アプリの利用時に自動で生成、保存されるお客様の機器、デバイス、システム、およびアプリケーションソフトウェア、ならびに周辺機器および接続機器に関わる技術情報（画面viewの表示状態、撮影、再生、送信などの操作・使用情報を含む）、本アプリの利用履歴に関する情報、技術および関連情報、お客様の所在国又は使用言語（以下これらの情報を「お客様情報」といいます）を自動収集、記録、分析します。当社は、Google社からその分析結果を受け取り、お客様情報を把握します。Google Analyticsにより収集、記録、分析されたお客様情報には、お客様を個人的に識別する情報は含まれません。
+また、それらの情報は、Google社により同社のプライバシーポリシーに基づいて管理されます。"</string>
+    <string name="ugase_agreement_text_old">本アプリには、お客様ご利用の端末に本アプリの使用状況 を残し、パナソニック株式会社（以下「当社」といいます）所定のサーバにアップロードするための機能が搭載されています。当社は、本アプリに関連するソフトウェアのアップデート、本アプリの改善、機能並びにお客様の利便性向上、お客様に対するサポート、サービス、技術の円滑な提供のため、本アプリの利用時に自動で生成、保存されるお客様の機器、デバイス、システム、およびアプリケーションソフトウェア、ならびに周辺機器に関わる技術情報（撮影、再生、送信などの使用情報を含む）、本アプリの利用履歴に関する情報、技術および関連情報を当社の所定のサーバに収集、蓄積、およびお客様を個人的に識別しない方法で使用することができるものとします。</string>
+    <string name="ugase_agreement_title">データ取得、使用等に対する同意</string>
+    <string name="ugase_agreement_title_old">データ使用に対する同意</string>
+    <string name="ugase_conditions">使用状況</string>
+    <string name="ugase_explain">アプリの使用状況 を自動でサーバに送信します。本設定は、後から変更することも可能です。</string>
+    <string name="ugase_explain_menu">「メニュー」 -> 「アプリ機能」 -> 「使用状況」 -> 「自動送信する」</string>
+    <string name="ugase_explain_menu_cookie_policy">「メニュー」 -> 「アプリ機能」 -> 「使用状況」 -> 「自動送信する」</string>
+    <string name="ugase_send_automatically">自動送信する</string>
+    <string name="ugase_send_usage_conditions">使用状況を送信する</string>
+    <string name="wf_msg_confirm_regain">"本アプリで以前に取得したIDは無効になります。
+再度新規登録しますか？"</string>
+    <string name="wifi_connect_no">いいえ</string>
+    <string name="wifi_connect_yes">はい</string>
+    <string name="wifi_disconnect">"カメラを接続するには、
+Wi-Fiを有効にする必要があります。
+Wi-Fiを有効にしますか？
+
+カメラと接続すると、他のアプリケーションでのアップロードが中断されますので、アップロードが完了している事を確認してください。"</string>
+    <string name="wifi_password_input">パスワードを入力してください。</string>
+    <string name="wifi_password_input2">"パスワードが間違っています。
+再入力してください。"</string>
+    <string name="wifi_password_visible">パスワードを表示</string>
+    <string name="wifi_st_unknown">"Wi-Fiを有効にできません。
+Wi-Fiの設定を確認してください。"</string>
+    <string name="wifi_wifi_setting">Wi-Fi設定</string>
+    <string name="wipe_frame_color_gray">グレー</string>
+    <string name="wipe_frame_color_green">グリーン</string>
+    <string name="wipe_frame_color_orange">オレンジ</string>
+    <string name="wipe_frame_color_pink">ピンク</string>
+    <string name="wipe_frame_color_shadow">シャドウ</string>
+    <string name="wipe_frame_less">フレームレス</string>
+</resources>

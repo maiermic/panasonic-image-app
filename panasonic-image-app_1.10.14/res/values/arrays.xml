@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="list_audio">
+        <item>@string/movieslideshow_option_bgm_preset</item>
+        <item>@string/movieslideshow_option_bgm_original</item>
+        <item>@string/movieslideshow_option_bgm</item>
+    </string-array>
+    <string-array name="list_audio_a500_effect_off">
+        <item>@string/movieslideshow_option_bgm_original</item>
+        <item>@string/movieslideshow_option_bgm</item>
+    </string-array>
+    <string-array name="list_audio_a500_effect_off_value">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="list_audio_a500off">
+        <item>@string/movieslideshow_option_bgm_preset</item>
+        <item>@string/movieslideshow_option_bgm</item>
+    </string-array>
+    <string-array name="list_audio_a500off_value">
+        <item>0</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="list_audio_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="list_cameraconnect_camera">
+        <item>@string/cmn_digital_still_camera</item>
+        <item>@string/cmn_digital_video_camera</item>
+        <item>@string/cmn_digital_video_camera_wearable</item>
+    </string-array>
+    <string-array name="list_cameraconnect_connect">
+        <item>@string/cmn_connection_dsc_direct</item>
+        <item>@string/cmn_connection_dsc_network</item>
+        <item>@string/cmn_connection_dsc_wifi_direct</item>
+        <item>@string/cmn_connection_tethering</item>
+    </string-array>
+    <string-array name="list_cameraconnect_connect_movie">
+        <item>@string/cmn_connection_movie_direct</item>
+        <item>@string/cmn_connection_movie_network</item>
+        <item>@string/cmn_connection_tethering</item>
+    </string-array>
+    <string-array name="list_cameraconnect_dsc">
+        <item>@string/cmn_function_dsc_connect_sp</item>
+        <item>@string/cmn_function_dsc_send_image_recording</item>
+        <item>@string/cmn_function_dsc_send_image_camera</item>
+    </string-array>
+    <string-array name="list_cameraconnect_movie">
+        <item>@string/cmn_function_movie_remote_control</item>
+    </string-array>
+    <string-array name="list_category">
+        <item>@string/highlight_priority_off</item>
+        <item>@string/highlight_priority_on</item>
+    </string-array>
+    <string-array name="list_category_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="list_effect">
+        <item>@string/highlight_effect_pop</item>
+        <item>@string/highlight_effect_natural</item>
+        <item>@string/highlight_effect_clasical</item>
+        <item>@string/highlight_effect_dynamic</item>
+        <item>@string/highlight_effect_off</item>
+    </string-array>
+    <string-array name="list_effect_values">
+        <item>1</item>
+        <item>2</item>
+        <item>4</item>
+        <item>3</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="list_effect_wearable">
+        <item>@string/highlight_effect_natural</item>
+        <item>@string/highlight_effect_dynamic</item>
+        <item>@string/highlight_effect_off</item>
+    </string-array>
+    <string-array name="list_effect_wearable_values">
+        <item>2</item>
+        <item>3</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="list_playbacktime">
+        <item>@string/highlight_duration_90sec</item>
+        <item>@string/highlight_duration_180sec</item>
+        <item>@string/highlight_duration_none</item>
+    </string-array>
+    <string-array name="list_playbacktime_values">
+        <item>90</item>
+        <item>180</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="list_save_format">
+        <item>@string/movieslideshow_save_format_mp4low</item>
+        <item>@string/movieslideshow_save_format_mp4high</item>
+    </string-array>
+    <string-array name="list_save_format_15spr_avchd_low_value">
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="list_save_format_15spr_high_ntsc">
+        <item>MP4 1920×1080/30p</item>
+        <item>MP4 1280×720/30p</item>
+        <item>MP4 640×360/30p</item>
+    </string-array>
+    <string-array name="list_save_format_15spr_high_pal">
+        <item>MP4 1920×1080/25p</item>
+        <item>MP4 1280×720/25p</item>
+        <item>MP4 640×360/25p</item>
+    </string-array>
+    <string-array name="list_save_format_15spr_high_value">
+        <item>3</item>
+        <item>2</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="list_save_format_15spr_low_ntsc">
+        <item>MP4 1280×720/30p</item>
+        <item>MP4 640×360/30p</item>
+    </string-array>
+    <string-array name="list_save_format_15spr_low_pal">
+        <item>MP4 1280×720/25p</item>
+        <item>MP4 640×360/25p</item>
+    </string-array>
+    <string-array name="list_save_format_15spr_low_value">
+        <item>2</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="list_save_format_value">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="list_setup_encryption_type_values">
+        <item>@string/setup_wifi_encryption_none</item>
+        <item>@string/setup_wifi_encryption_aes</item>
+        <item>@string/setup_wifi_encryption_tkip</item>
+        <item>@string/setup_wifi_encryption_wep</item>
+    </string-array>
+    <string-array name="list_setup_security_type_values">
+        <item>@string/setup_wifi_security_open</item>
+        <item>@string/setup_wifi_security_wpa</item>
+        <item>@string/setup_wifi_security_wpa2</item>
+        <item>@string/setup_wifi_security_shared</item>
+    </string-array>
+    <string-array name="setup_cloudsync_capacity_over_string">
+        <item>@string/setup_picmate_cloud_confirm</item>
+        <item>@string/setup_picmate_cloud_overwrite</item>
+    </string-array>
+    <string-array name="setup_cloudsync_capacity_over_value">
+        <item>CloudActionConfirm</item>
+        <item>CloudActionOverwrite</item>
+    </string-array>
+    <string-array name="setup_cloudsync_receive_picsize_string">
+        <item>@string/setup_picsize_large</item>
+        <item>@string/setup_picsize_middle</item>
+        <item>@string/setup_picsize_small</item>
+    </string-array>
+    <string-array name="setup_cloudsync_send_picsize_string">
+        <item>@string/setup_picsize_large</item>
+        <item>@string/setup_picsize_middle</item>
+        <item>@string/setup_picsize_small</item>
+    </string-array>
+    <string-array name="setup_cloudsync_transe_picsize_value">
+        <item>PlayPicsizeLarge</item>
+        <item>PlayPicsizeMiddle</item>
+        <item>PlayPicsizeSmall</item>
+    </string-array>
+    <string-array name="setup_ply_picture_sort_string">
+        <item>@string/setup_ply_picture_sort_name</item>
+        <item>@string/setup_ply_picture_sort_rectime</item>
+    </string-array>
+    <string-array name="setup_ply_picture_sort_string_value">
+        <item>PlaySortName</item>
+        <item>PlaySortRecTime</item>
+    </string-array>
+    <string-array name="setup_ply_rawjpeg_string">
+        <item>JPEG</item>
+        <item>RAW+JPEG</item>
+        <item>RAW</item>
+    </string-array>
+    <string-array name="setup_ply_rawjpeg_string_value">
+        <item>PlayPickindJPEG</item>
+        <item>PlayPickindRAWJPEG</item>
+        <item>PlayPickindRAW</item>
+    </string-array>
+    <string-array name="setup_remote_watch_advanced_fps_string">
+        <item>@string/setup_fps_value1</item>
+        <item>@string/setup_fps_value2</item>
+    </string-array>
+    <string-array name="setup_remote_watch_advanced_fps_values">
+        <item>5</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="setup_remote_watch_advanced_mtu_string">
+        <item>@string/setup_mtu_value1</item>
+        <item>@string/setup_mtu_value2</item>
+    </string-array>
+    <string-array name="setup_remote_watch_advanced_mtu_values">
+        <item>1280</item>
+        <item>576</item>
+    </string-array>
+    <string-array name="setup_smaope_avchd_quality_string">
+        <item>@string/setup_avchd_quality_high</item>
+        <item>@string/setup_avchd_quality_normal</item>
+    </string-array>
+    <string-array name="setup_smaope_avchd_quality_value">
+        <item>PlayAvchdQualityHigh</item>
+        <item>PlayAvchdQualityNormal</item>
+    </string-array>
+    <string-array name="setup_smaope_camera_picsize_string">
+        <item>@string/setup_picsize_large</item>
+        <item>@string/setup_picsize_middle</item>
+        <item>@string/setup_picsize_small</item>
+    </string-array>
+    <string-array name="setup_smaope_camera_picsize_string_for_movie">
+        <item>@string/setup_picsize_large</item>
+        <item>@string/setup_picsize_middle</item>
+    </string-array>
+    <string-array name="setup_smaope_camera_picsize_string_for_sz8">
+        <item>@string/setup_picsize_large</item>
+    </string-array>
+    <string-array name="setup_smaope_camera_picsize_value">
+        <item>PlayPicsizeLarge</item>
+        <item>PlayPicsizeMiddle</item>
+        <item>PlayPicsizeSmall</item>
+    </string-array>
+    <string-array name="setup_smaope_camera_picsize_value_for_movie">
+        <item>PlayPicsizeLarge</item>
+        <item>PlayPicsizeMiddle</item>
+    </string-array>
+    <string-array name="setup_smaope_camera_picsize_value_for_sz8">
+        <item>PlayPicsizeLarge</item>
+    </string-array>
+    <string-array name="setup_smaope_web_picsize_string">
+        <item>@string/setup_picsize_large</item>
+        <item>@string/setup_picsize_middle</item>
+        <item>@string/setup_picsize_small</item>
+        <item>@string/setup_picsize_recommend</item>
+    </string-array>
+    <string-array name="setup_smaope_web_picsize_value">
+        <item>PlayPicsizeLarge</item>
+        <item>PlayPicsizeMiddle</item>
+        <item>PlayPicsizeSmall</item>
+        <item>PlayPicsizeRMD</item>
+    </string-array>
+    <array name="transfer_check_menu_list">
+        <item>@array/transfer_select_check_menu_list</item>
+        <item></item>
+    </array>
+    <array name="transfer_menu_list">
+        <item>@array/transfer_select_menu_list1</item>
+        <item>@array/transfer_select_menu_list2</item>
+        <item></item>
+    </array>
+    <array name="transfer_select_check_menu_list">
+        <item>@array/transfer_select_check_menu_name1</item>
+    </array>
+    <string-array name="transfer_select_check_menu_name1">
+        <item>@string/func_transfer_only_picture</item>
+        <item>@string/func_transfer_only_movie</item>
+        <item>@string/func_transfer_picture_movie</item>
+    </string-array>
+    <array name="transfer_select_menu_list1">
+        <item>@array/transfer_select_menu_name1_1</item>
+    </array>
+    <array name="transfer_select_menu_list2">
+        <item>@array/transfer_select_menu_name2_1</item>
+        <item>@array/transfer_select_menu_name2_2</item>
+    </array>
+    <string-array name="transfer_select_menu_name1_1">
+        <item>@string/func_transfer_select</item>
+        <item>@string/func_transfer_auto</item>
+    </string-array>
+    <array name="transfer_select_menu_name2_1" />
+    <array name="transfer_select_menu_name2_2" />
+</resources>

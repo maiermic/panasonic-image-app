@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:background="@drawable/title_base_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:ellipsize="end" android:gravity="center" android:id="@id/unsent_title" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/play_unsentimagelist_title" android:scrollHorizontally="true" android:layout_weight="2.0" android:layout_toLeftOf="@id/imageview_button" />
+        <RelativeLayout android:id="@id/imageview_button" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="8.0dip" android:layout_weight="1.0">
+            <ImageView android:id="@id/imageview_cancel_all" android:focusable="true" android:clickable="true" android:layout_width="@dimen/picmate_unsent_list_icon_size" android:layout_height="@dimen/picmate_unsent_list_icon_size" android:src="@drawable/browse_action_delete" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/imageview_resend_all" android:focusable="true" android:clickable="true" android:layout_width="@dimen/picmate_unsent_list_icon_size" android:layout_height="@dimen/picmate_unsent_list_icon_size" android:layout_marginRight="8.0dip" android:src="@drawable/browse_action_share" android:scaleType="centerInside" android:layout_toLeftOf="@id/imageview_cancel_all" />
+        </RelativeLayout>
+    </LinearLayout>
+    <ListView android:id="@id/unsentImageList" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <include android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/primary_menu" />
+</LinearLayout>

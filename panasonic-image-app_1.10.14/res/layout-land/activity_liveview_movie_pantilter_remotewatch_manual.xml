@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:baselineAligned="false" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="7.0">
+            <include android:layout_gravity="top" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" layout="@layout/liveview_surface_movie_pantilter" />
+            <include android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="@dimen/iconview_status_bar_height" layout="@layout/liveview_status_bar_movie" />
+        </LinearLayout>
+        <FrameLayout android:background="@drawable/bg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="3.0">
+            <LinearLayout android:orientation="vertical" android:id="@id/remote_watch_layout" android:background="@drawable/bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                    <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <ImageButton android:id="@id/panChilterChangeButton" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/liveview_pantilter_button" android:scaleType="fitCenter" android:onClick="OnClickPanChilterChange" />
+                        <ImageButton android:id="@id/panChilterOffButton" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/liveview_pantilter_off_button" android:scaleType="fitCenter" android:onClick="OnClickPanChilterOff" />
+                    </FrameLayout>
+                    <ImageButton android:layout_gravity="center" android:id="@id/recButtonMPan" android:background="#00000000" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/rec_movie_rec_start_button" android:scaleType="fitCenter" android:layout_weight="1.0" android:onClick="OnClickRecMPan" />
+                    <ImageButton android:layout_gravity="center" android:id="@id/shutterButton" android:background="#00000000" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/liveview_movie_shutter_button" android:scaleType="fitCenter" android:layout_weight="1.0" android:onClick="OnClickShutterMPan" />
+                </LinearLayout>
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="4.0">
+                    <include android:layout_gravity="left" android:id="@id/zoomBar" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" layout="@layout/liveview_zoom_babymon_bar" />
+                    <FrameLayout android:layout_gravity="center" android:id="@id/centerGroup" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_margin="@dimen/margin_small" android:layout_weight="2.0">
+                        <include android:orientation="horizontal" android:id="@id/pantilterControl" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/pantilter_control" />
+                        <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                            <ImageButton android:background="#00000000" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="fill_parent" android:scaleType="fitCenter" android:layout_weight="1.0" />
+                            <ImageButton android:background="#00000000" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="fill_parent" android:scaleType="fitCenter" android:layout_weight="1.0" />
+                            <RelativeLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.0">
+                                <ImageButton android:id="@id/recButton" android:background="#00000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/liveview_movie_rec_button" android:scaleType="fitCenter" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:onClick="OnClickRec" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </FrameLayout>
+                </LinearLayout>
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                    <ImageButton android:id="@id/set_mic_vol" android:background="#00000000" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/mic_setting_button" android:scaleType="fitCenter" android:layout_weight="1.0" android:onClick="onClickMicVol" />
+                    <ImageButton android:background="#00000000" android:layout_width="0.0dip" android:layout_height="fill_parent" android:scaleType="fitCenter" android:layout_weight="1.0" />
+                    <ImageButton android:id="@id/remoteVoiceButton" android:background="#00000000" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/liveview_movie_remotevoice_button" android:scaleType="fitCenter" android:layout_weight="1.0" android:onClick="OnClickRemoteVoice" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/mic_vol_layout" android:background="@drawable/bg" android:padding="@dimen/padding_medium" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                    <TextView android:textSize="@dimen/live_view_icon_font_size_xxlarge" android:gravity="center|right" android:id="@id/sliderValueTextView" android:paddingRight="@dimen/padding_medium" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="Value" android:layout_weight="1.0" />
+                    <LinearLayout android:gravity="right" android:orientation="vertical" android:paddingTop="@dimen/sliderbarV_paddingTop" android:paddingBottom="@dimen/sliderbarV_paddingBottom" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                        <TextView android:textAppearance="?android:textAppearanceSmall" android:gravity="center|right|top" android:id="@id/sliderMaxValueTextView" android:layout_width="wrap_content" android:layout_height="0.0dip" android:text="10" android:layout_weight="1.0" />
+                        <TextView android:textAppearance="?android:textAppearanceSmall" android:gravity="bottom|center|right" android:id="@id/sliderMinValueTextView" android:layout_width="wrap_content" android:layout_height="0.0dip" android:text="1" android:layout_weight="1.0" />
+                    </LinearLayout>
+                    <com.panasonic.avc.cng.view.parts.VerticalSeekBar android:id="@id/sliderSeekBarV" android:paddingLeft="@dimen/sliderbarV_paddingLeft" android:paddingTop="@dimen/sliderbarV_paddingTop" android:paddingRight="@dimen/sliderbarV_paddingRight" android:paddingBottom="@dimen/sliderbarV_paddingBottom" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/sliderbarV_marginLeft" android:layout_marginRight="@dimen/sliderbarV_marginRight" style="@style/SliderBarV" />
+                    <RelativeLayout android:paddingTop="@dimen/sliderbarV_paddingTop" android:paddingBottom="@dimen/sliderbarV_paddingBottom" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <ImageButton android:id="@id/valueUpButton" android:background="#00000000" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_up_button" android:scaleType="fitCenter" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:onClick="OnClickValueUp" android:contentDescription="+" />
+                        <ImageButton android:id="@id/valueDownButton" android:background="#00000000" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_down_button" android:scaleType="fitCenter" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" android:onClick="OnClickValueDown" android:contentDescription="-" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+    <include android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/primary_menu" />
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="#00000000" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="right" android:layout_gravity="right" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <LinearLayout android:gravity="bottom|center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="2.0">
+            <FrameLayout android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="@dimen/live_view_lumix_button_medium" android:layout_margin="@dimen/padding_small">
+                <com.panasonic.avc.cng.view.parts.ImageButtonEx android:layout_gravity="center" android:id="@id/MfZoomInButton" android:background="#00000000" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/mf_zoom_in" android:scaleType="fitCenter" android:onClick="onClickMfZoomInButton" />
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="3.0" />
+        <LinearLayout android:gravity="center|top" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="2.0">
+            <FrameLayout android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="@dimen/live_view_lumix_button_medium" android:layout_margin="@dimen/padding_small">
+                <ImageButton android:layout_gravity="center" android:id="@id/OneShotAFButton" android:background="#00000000" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/oneshot_af_btn" android:scaleType="fitCenter" android:onClick="onClickOneShotAfButton" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="left" android:layout_gravity="left" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <LinearLayout android:gravity="bottom|center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="2.0">
+            <FrameLayout android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="@dimen/live_view_lumix_button_medium" android:layout_margin="@dimen/padding_small">
+                <com.panasonic.avc.cng.view.parts.ImageButtonEx android:layout_gravity="center" android:id="@id/MfZoomOutButton" android:background="#00000000" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/mf_zoom_out" android:scaleType="fitCenter" android:onClick="onClickMfZoomOutButton" />
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="3.0" />
+        <LinearLayout android:gravity="center|top" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="2.0">
+            <FrameLayout android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="@dimen/live_view_lumix_button_medium" android:layout_margin="@dimen/padding_small">
+                <com.panasonic.avc.cng.view.parts.TwoStateImageButton android:layout_gravity="center" android:id="@id/AssistScaleModeButton" android:background="#00000000" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/mf_pinp_btn" android:scaleType="fitCenter" android:onClick="onClickAssistScaleModeButton" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

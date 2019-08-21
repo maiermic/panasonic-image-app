@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/selectpicture_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+        <RelativeLayout android:id="@id/selectPictureFolderButtonGroup" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <ImageButton android:id="@id/playSelectFolderButton" android:background="#00000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/browse_smartphone_button" android:scaleType="fitCenter" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:onClick="OnClickSelectFolder" />
+        </RelativeLayout>
+        <TextView android:id="@id/selectPictureActivityName" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ply_phcol_title_slct_picture" android:singleLine="true" android:layout_centerInParent="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        <TextView android:id="@id/playSelectFolderFileTotal" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_centerInParent="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        <RelativeLayout android:id="@id/selectPictureExecuteButtonGroup" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <Button android:textColor="@android:color/white" android:id="@id/selectPictureExecuteButton" android:background="@drawable/smartoperation_black_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitCenter" android:text="@string/cmn_btn_execute_short" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:onClick="OnClickSelectPictureExecute" />
+        </RelativeLayout>
+        <ImageButton android:id="@id/MultiFramePhotoMultiSelectCancelButton" android:background="#00000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/smartoperation_allcancel_button" android:scaleType="fitCenter" android:layout_toLeftOf="@id/selectPictureExecuteButtonGroup" android:layout_alignParentTop="true" android:onClick="OnClickAllCancel" />
+    </RelativeLayout>
+    <com.panasonic.avc.cng.view.parts.ChapterProgressBar android:id="@id/photo_chapterProgressBar" android:layout_width="fill_parent" android:layout_height="8.0dip" android:progressDrawable="@drawable/progress_snap_movie" android:layout_below="@id/selectpicture_name" />
+    <RelativeLayout android:id="@id/pictureFolderName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/photo_chapterProgressBar">
+        <TextView android:ellipsize="marquee" android:id="@id/playSelectFolderName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/selectPicture_gridViewGrope" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/picture_info" android:layout_below="@id/pictureFolderName" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+        <GridView android:gravity="center" android:id="@id/selectPicture_gridView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:horizontalSpacing="@dimen/padding_medium" android:verticalSpacing="@dimen/padding_medium" android:stretchMode="columnWidth" android:columnWidth="96.0dip" android:numColumns="auto_fit" />
+        <TextView android:textColor="@android:color/white" android:gravity="center" android:id="@id/selectPicture_gridViewOverlayMessage" android:background="#ff000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <RelativeLayout android:id="@id/picture_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+        <TextView android:ellipsize="marquee" android:id="@id/playConnectedDLNAName" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:id="@id/playSelectFolderFileTotalBottom" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

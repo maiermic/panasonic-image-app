@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:gravity="center_vertical" android:id="@id/textView" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="@string/setup_ap_setting" android:layout_weight="1.0" />
+        <View android:id="@id/divider3" android:background="@android:color/white" android:layout_width="wrap_content" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="vertical" android:id="@id/connectInfo" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="5.0">
+            <TextView android:gravity="center_vertical" android:id="@id/textView4" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="@string/msg_select_camera" android:layout_weight="1.0" />
+            <Spinner android:entries="@array/list_cameraconnect_camera" android:id="@id/spinnerDevice" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_weight="1.0" />
+            <TextView android:gravity="center_vertical" android:id="@id/textView5" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="@string/msg_select_function" android:layout_weight="1.0" />
+            <FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_weight="1.0">
+                <Spinner android:entries="@array/list_cameraconnect_movie" android:id="@id/spinnerFuncMovie" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <Spinner android:entries="@array/list_cameraconnect_dsc" android:id="@id/spinnerFunc" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </FrameLayout>
+            <TextView android:gravity="center_vertical" android:id="@id/textView6" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="@string/msg_select_connection" android:layout_weight="1.0" />
+            <FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_weight="1.0">
+                <Spinner android:entries="@array/list_cameraconnect_connect" android:id="@id/spinnerConnect" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <Spinner android:entries="@array/list_cameraconnect_connect_movie" android:id="@id/spinnerConnectMovie" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </FrameLayout>
+        </LinearLayout>
+        <View android:id="@id/divider2" android:background="@android:color/white" android:layout_width="wrap_content" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/wifiInfo" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="4.0">
+            <ImageView android:layout_gravity="center" android:id="@id/imageWifi" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/conect_type_wifi_ap" android:layout_weight="1.0" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:gravity="bottom|center" android:id="@id/textApName" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="" android:layout_weight="1.0" />
+                <TextView android:gravity="center|top" android:id="@id/textApIpAdr" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="" android:layout_weight="1.0" />
+            </LinearLayout>
+            <Button android:layout_gravity="center" android:id="@id/wifiButton" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/cmn_wifi" android:layout_weight="1.0" android:onClick="onClickWifi" />
+        </LinearLayout>
+        <View android:id="@id/divider1" android:background="@android:color/white" android:layout_width="wrap_content" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/layoutLow" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="6.0">
+            <LinearLayout android:orientation="horizontal" android:id="@id/cameraInfo" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:id="@id/imageDevice" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <TextView android:gravity="bottom|center" android:id="@id/textCamera" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="カメラの名前" android:layout_weight="1.0" />
+                    <TextView android:gravity="center|top" android:id="@id/textCameraIPAdr" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="-.-.-.-" android:layout_weight="1.0" />
+                </LinearLayout>
+                <Button android:layout_gravity="center" android:id="@id/serachButton" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/cmn_search" android:layout_weight="1.0" android:onClick="onClickSearch" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

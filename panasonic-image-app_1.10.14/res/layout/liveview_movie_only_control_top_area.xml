@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_margin="@dimen/margin_small" android:layout_weight="1.0">
+        <ImageButton android:layout_gravity="center" android:id="@id/GainButton" android:background="#00000000" android:padding="@dimen/margin_small" android:visibility="visible" android:layout_width="@dimen/live_view_lumix_button_medium" android:layout_height="fill_parent" android:src="@drawable/slide_m_gain" android:scaleType="fitCenter" android:onClick="onClickGainButton" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="4.0">
+        <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/liveview_movie_only_zoom_bar" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_margin="@dimen/margin_small" android:layout_weight="1.0">
+        <ImageButton android:layout_gravity="center" android:id="@id/FocusAssistButton" android:background="#00000000" android:padding="@dimen/margin_small" android:visibility="invisible" android:layout_width="@dimen/live_view_lumix_button_medium" android:layout_height="fill_parent" android:src="@drawable/liveview_movie_fa_button" android:scaleType="fitCenter" android:onClick="onClickFocusAssistButton" />
+    </FrameLayout>
+</LinearLayout>

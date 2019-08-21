@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/linearLayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/linearLayout1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ProgressBar android:id="@id/loading" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyle" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/explainTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/msg_searching_camera_on_ssid" />
+    </LinearLayout>
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/explainTextView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/msg_select_camera_to_control" />
+    <View android:id="@id/divider1" android:background="@android:color/white" android:layout_width="wrap_content" android:layout_height="1.0dip" />
+    <View android:id="@id/dummyView" android:layout_width="wrap_content" android:layout_height="10.0dip" />
+    <ListView android:id="@id/ListView1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:choiceMode="singleChoice" android:layout_weight="1.0" />
+    <View android:id="@id/dummyView2" android:layout_width="wrap_content" android:layout_height="10.0dip" />
+    <Button android:layout_gravity="center" android:id="@id/listCancelbutton" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/cmn_btn_cancel" />
+</LinearLayout>

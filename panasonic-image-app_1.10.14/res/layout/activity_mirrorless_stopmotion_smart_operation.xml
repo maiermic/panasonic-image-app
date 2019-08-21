@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/smart_operation_menu" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <TextView android:gravity="@id/playPicmateGroup" android:id="@id/mainPlaySelectFolderFileTotal" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_centerInParent="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        <FrameLayout android:id="@id/playMultiSelectButtonFrame" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+            <Button android:textSize="@dimen/live_view_lumix_select_font_size" android:textColor="#ffffffff" android:id="@id/playMultiSelectButtonString" android:background="@drawable/smartoperation_black_button" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" android:text="@string/ply_btn_select" />
+        </FrameLayout>
+        <ImageButton android:id="@id/StopMotionMultiSelectCancelButton" android:background="#00000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/smartoperation_allcancel_button" android:scaleType="fitCenter" android:layout_toLeftOf="@id/playMultiSelectButtonFrame" android:layout_alignParentTop="true" android:onClick="OnClickAllCancel" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/playSelectLumix" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/smart_operation_menu">
+        <TextView android:ellipsize="marquee" android:id="@id/playSelectFolderName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/smart_operation_main_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/smart_operation_info" android:layout_below="@id/playSelectLumix" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+        <GridView android:gravity="center" android:id="@id/smart_operation_gridView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:horizontalSpacing="@dimen/padding_medium" android:verticalSpacing="@dimen/padding_medium" android:stretchMode="columnWidth" android:columnWidth="96.0dip" android:numColumns="auto_fit" />
+        <TextView android:textColor="@android:color/white" android:gravity="center" android:id="@id/smart_operation_gridViewOverlayMessage" android:background="#ff000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <include android:id="@id/smart_operation_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/smart_operation_bottom_menu" android:layout_centerHorizontal="true" layout="@layout/smart_operation_info" />
+    <FrameLayout android:id="@id/smart_operation_bottom_menu" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <include android:id="@id/browse_action_menu" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/browse_action_menu" />
+    </FrameLayout>
+</RelativeLayout>

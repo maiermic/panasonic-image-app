@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:gravity="center" android:background="@drawable/title_base_bg" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/play_unsentimageinfo_title" android:scrollHorizontally="false" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:fastScrollEnabled="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:id="@id/Separator1" android:background="#ff444444" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="2.0dip" android:layout_marginBottom="2.0dip" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="2.0">
+                <ImageView android:id="@id/unTransmitThumbnail" android:background="#00000000" android:layout_width="160.0dip" android:layout_height="120.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:scaleType="fitCenter" android:layout_alignParentLeft="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="14.0sp" android:textStyle="bold" android:id="@id/unTransmitFileName" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/unTransmitThumbnail" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View android:id="@id/Separator2" android:background="#ff444444" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="2.0dip" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="2.0">
+                <TextView android:textSize="14.0sp" android:textStyle="bold" android:id="@id/unTransmitDestSiteHeading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="@string/play_unsentimageinfo_cell_destsite" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="12.0sp" android:ellipsize="marquee" android:id="@id/unTransmitDestSite" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_toRightOf="@id/unTransmitDestSiteHeading" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View android:id="@id/Separator3" android:background="#ff444444" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="2.0dip" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="2.0">
+                <TextView android:textSize="14.0sp" android:textStyle="bold" android:id="@id/unTransmitSendTimeHeading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="@string/play_unsentimageinfo_cell_sendtime" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="12.0sp" android:ellipsize="marquee" android:id="@id/unTransmitSendTime" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_toRightOf="@id/unTransmitSendTimeHeading" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View android:id="@id/Separator4" android:background="#ff444444" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="2.0dip" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <Button android:textSize="12.0sp" android:textStyle="bold" android:textColor="#ffff0000" android:gravity="center" android:id="@id/untransmitCancelButton" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:scaleType="fitCenter" android:text="@string/play_unsentimageinfo_button_canceltosend" />
+                <Button android:textSize="12.0sp" android:textStyle="bold" android:textColor="@android:color/black" android:gravity="center" android:id="@id/untransmitResentButton" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:scaleType="fitCenter" android:text="@string/play_unsentimageinfo_button_sendcrntimage" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <include android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/primary_menu" />
+</LinearLayout>

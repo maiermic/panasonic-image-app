@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/NowConnectingTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/msg_now_connecting_to_camera" android:scrollHorizontally="false" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/progressBar1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:layout_gravity="center" android:id="@id/ConnectProgressImageView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/cmn_camera_search" android:layout_weight="1.0" />
+    <TextView android:id="@id/qrTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/msg_qr_explain" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center" android:id="@id/nfcImageView" android:layout_width="43.0dip" android:layout_height="52.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/cmn_nfc_icon" />
+        <TextView android:id="@id/nfcTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/msg_nfc_explain" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/qrStartButton" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/qrcode_read" />
+    </LinearLayout>
+    <Button android:id="@id/CancelButton" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minWidth="200.0dip" android:text="@string/cmn_btn_cancel" />
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/smart_operation_menu" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true" layout="@layout/smart_operation_menu" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/smart_operation_info" android:layout_below="@id/smart_operation_menu" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+        <GridView android:gravity="center" android:id="@id/smart_operation_gridView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:horizontalSpacing="@dimen/padding_medium" android:verticalSpacing="@dimen/padding_medium" android:stretchMode="columnWidth" android:columnWidth="96.0dip" android:numColumns="auto_fit" />
+        <TextView android:textColor="@android:color/white" android:gravity="center" android:id="@id/smart_operation_gridViewOverlayMessage" android:background="#ff000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <include android:id="@id/smart_operation_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/primary_menu" android:layout_centerHorizontal="true" android:layout_centerVertical="true" layout="@layout/smart_operation_info" />
+    <include android:id="@id/primary_menu" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true" layout="@layout/primary_menu" />
+</RelativeLayout>

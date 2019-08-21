@@ -1,0 +1,2916 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<liveview>
+    <panelset model="MirrorLess" version="1.0" date="20180320">
+        
+        <panellist>
+            <!--最上段-->
+            <panel id="panel_id_top" pos="top">
+            </panel>
+
+            <!--最上段より１つ下-->
+            <panel id="panel_id_top_down1" pos="top_down1">
+            </panel>
+
+            <!--最上段より２つ下-->
+            <panel id="panel_id_top_down2" pos="top_down2">
+            </panel>
+
+            <!--最下段より１つ上-->
+            <panel id="panel_id_bottom_up1" pos="bottom_up1">
+            </panel>
+
+            <!--最下段-->
+            <panel id="panel_id_bottom" pos="bottom">
+            </panel>
+            
+        </panellist>
+        
+            <!--最上段パネル-->
+            <panel id="panel_id_top" x_width="12">
+                <!--撮影モード-->
+                <area id="area_id_a" x_pos="0" x_size="1" folder="A">
+                    <!--ICFO_END-->
+                    <item id="item_01_0" type="hide" x_size="1">
+                    </item>
+                    <!--IC_LVF_MODE_TOUCH_P-->
+                    <item id="item_01_1" type="image" x_size="1" value1="lvf_mode_touch_p.png">
+                    </item>
+                    <!--IC_LVF_MODE_TOUCH_A-->
+                    <item id="item_01_2" type="image" x_size="1" value1="lvf_mode_touch_a.png">
+                    </item>
+                    <!--IC_LVF_MODE_TOUCH_S-->
+                    <item id="item_01_3" type="image" x_size="1" value1="lvf_mode_touch_s.png">
+                    </item>
+                    <!--IC_LVF_MODE_TOUCH_M-->
+                    <item id="item_01_4" type="image" x_size="1" value1="lvf_mode_touch_m.png">
+                    </item>
+                    <!--IC_LVF_MODE_TOUCH_AVCHD-->
+                    <item id="item_01_5" type="image" x_size="1" value1="lvf_mode_touch_avchd.png">
+                    </item>
+                    <!--IC_LVF_MODE_TOUCH_LOW_LIGHT-->
+                    <item id="item_01_6" type="image" x_size="1" value1="scn_cdl_1_mono_32.png">
+                    </item>
+                    <!--IC_LVF_MODE_TOUCH_PORT_NORMAL-->
+                    <item id="item_01_7" type="image" x_size="1" value1="pmode_play_port.png">
+                    </item>
+                    <!--IC_LVF_MODE_TOUCH_IA-->
+                    <item id="item_01_8" type="image" x_size="1" value1="lvf_mode_touch_ia.png">
+                    </item>
+                    <!--IC_LVF_MODE_TOUCH_IA_PLUS-->
+                    <item id="item_01_9" type="image" x_size="1" value1="lvf_mode_touch_ia_plus.png">
+                    </item>
+                    <!--IC_LVF_MODE_TOUCH_IA_PORTRAIT-->
+                    <item id="item_01_10" type="image" x_size="1" value1="lvf_mode_touch_ia_portrait.png">
+                    </item>
+                    <!--IC_LVF_MODE_TOUCH_IA_PORTRAIT_R-->
+                    <item id="item_01_11" type="image" x_size="1" value1="lvf_mode_touch_ia_portrait_r.png">
+                    </item>
+                    <!--IC_LVF_MODE_TOUCH_IA_NIGHT_PORT-->
+                    <item id="item_01_12" type="image" x_size="1" value1="lvf_mode_touch_ia_night_port.png">
+                    </item>
+                    <!--IC_LVF_MODE_TOUCH_IA_NIGHT_PORT_R-->
+                    <item id="item_01_13" type="image" x_size="1" value1="lvf_mode_touch_ia_night_port_r.png">
+                    </item>
+                    <!--IC_LVF_MODE_TOUCH_IA_NIGHT-->
+                    <item id="item_01_14" type="image" x_size="1" value1="lvf_mode_touch_ia_night.png">
+                    </item>
+                    <!--IC_LVF_MODE_TOUCH_IA_FUKEI-->
+                    <item id="item_01_15" type="image" x_size="1" value1="lvf_mode_touch_ia_fukei.png">
+                    </item>
+                    <!--IC_LVF_MODE_TOUCH_IA_MACRO-->
+                    <item id="item_01_16" type="image" x_size="1" value1="lvf_mode_touch_ia_macro.png">
+                    </item>
+                    <!--IC_LVF_MODE_TOUCH_IA_BABY-->
+                    <item id="item_01_17" type="image" x_size="1" value1="lvf_mode_touch_ia_baby.png">
+                    </item>
+                    <!--IC_LVF_MODE_TOUCH_IA_BABY_R-->
+                    <item id="item_01_18" type="image" x_size="1" value1="lvf_mode_touch_ia_baby_r.png">
+                    </item>
+                    <!--IC_LVF_MODE_TOUCH_IA_LOW_LIGHT-->
+                    <item id="item_01_19" type="image" x_size="1" value1="lvf_mode_touch_ia_low_light.png">
+                    </item>
+                    <!--IC_LVF_MODE_TOUCH_IA_SUNSET-->
+                    <item id="item_01_20" type="image" x_size="1" value1="lvf_mode_touch_ia_sunset.png">
+                    </item>
+                    <!--IC_LVF_MODE_TOUCH_MC_POP-->
+                    <item id="item_01_21" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="lvf_mode_touch_mc_pop.png">
+                        </subitem>
+                        <subitem lang="ja" value1="lvf_mode_touch_mc_pop_j.png">
+                        </subitem>
+                        <subitem lang="fr" value1="lvf_mode_touch_mc_pop_f.png">
+                        </subitem>
+                        <subitem lang="fr_CA" value1="lvf_mode_touch_mc_pop_f.png">
+                        </subitem>
+                        <subitem lang="fr-CA" value1="lvf_mode_touch_mc_pop_f.png">
+                        </subitem>
+                    </item>
+                    <!--IC_LVF_MODE_TOUCH_MC_RETRO-->
+                    <item id="item_01_22" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="lvf_mode_touch_mc_retro.png">
+                        </subitem>
+                        <subitem lang="fr" value1="lvf_mode_touch_mc_retro_f.png">
+                        </subitem>
+                        <subitem lang="fr_CA" value1="lvf_mode_touch_mc_retro_f.png">
+                        </subitem>
+                        <subitem lang="fr-CA" value1="lvf_mode_touch_mc_retro_f.png">
+                        </subitem>
+                    </item>
+                    <!--IC_LVF_MODE_TOUCH_MC_HIGH_KEY-->
+                    <item id="item_01_23" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="lvf_mode_touch_mc_high_key.png">
+                        </subitem>
+                        <subitem lang="fr" value1="lvf_mode_touch_mc_high_key_f.png">
+                        </subitem>
+                        <subitem lang="fr_CA" value1="lvf_mode_touch_mc_high_key_f.png">
+                        </subitem>
+                        <subitem lang="fr-CA" value1="lvf_mode_touch_mc_high_key_f.png">
+                        </subitem>
+                    </item>
+                    <!--IC_LVF_MODE_TOUCH_MC_LOW_KEY-->
+                    <item id="item_01_24" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="lvf_mode_touch_mc_low_key.png">
+                        </subitem>
+                        <subitem lang="fr" value1="lvf_mode_touch_mc_low_key_f.png">
+                        </subitem>
+                        <subitem lang="fr_CA" value1="lvf_mode_touch_mc_low_key_f.png">
+                        </subitem>
+                        <subitem lang="fr-CA" value1="lvf_mode_touch_mc_low_key_f.png">
+                        </subitem>
+                    </item>
+                    <!--IC_LVF_MODE_TOUCH_MC_SEPIA-->
+                    <item id="item_01_25" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="lvf_mode_touch_mc_sepia.png">
+                        </subitem>
+                        <subitem lang="fr" value1="lvf_mode_touch_mc_sepia_f.png">
+                        </subitem>
+                        <subitem lang="fr_CA" value1="lvf_mode_touch_mc_sepia_f.png">
+                        </subitem>
+                        <subitem lang="fr-CA" value1="lvf_mode_touch_mc_sepia_f.png">
+                        </subitem>
+                    </item>
+                    <!--IC_LVF_MODE_TOUCH_MC_HIGH_DYNAMIC-->
+                    <item id="item_01_26" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="lvf_mode_touch_mc_high_dynamic.png">
+                        </subitem>
+                        <subitem lang="fr" value1="lvf_mode_touch_mc_high_dynamic_f.png">
+                        </subitem>
+                        <subitem lang="fr_CA" value1="lvf_mode_touch_mc_high_dynamic_f.png">
+                        </subitem>
+                        <subitem lang="fr-CA" value1="lvf_mode_touch_mc_high_dynamic_f.png">
+                        </subitem>
+                    </item>
+                    <!--IC_LVF_MODE_TOUCH_MC_DIORAMA-->
+                    <item id="item_01_27" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="lvf_mode_touch_mc_diorama.png">
+                        </subitem>
+                        <subitem lang="ja" value1="lvf_mode_touch_mc_diorama_j.png">
+                        </subitem>
+                    </item>
+                    <!--IC_LVF_MODE_TOUCH_MC_TOY_PHOTO-->
+                    <item id="item_01_28" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="lvf_mode_touch_mc_toy_photo.png">
+                        </subitem>
+                        <subitem lang="fr" value1="lvf_mode_touch_mc_toy_photo_f.png">
+                        </subitem>
+                        <subitem lang="fr_CA" value1="lvf_mode_touch_mc_toy_photo_f.png">
+                        </subitem>
+                        <subitem lang="fr-CA" value1="lvf_mode_touch_mc_toy_photo_f.png">
+                        </subitem>
+                    </item>
+                    <!--IC_LVF_MODE_TOUCH_MC_SOFT_FCS-->
+                    <item id="item_01_29" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="lvf_mode_touch_mc_soft_focus.png">
+                        </subitem>
+                        <subitem lang="fr" value1="lvf_mode_touch_mc_soft_focus_f.png">
+                        </subitem>
+                        <subitem lang="fr_CA" value1="lvf_mode_touch_mc_soft_focus_f.png">
+                        </subitem>
+                        <subitem lang="fr-CA" value1="lvf_mode_touch_mc_soft_focus_f.png">
+                        </subitem>
+                    </item>
+                    <!--IC_LVF_MODE_TOUCH_MC_DYNAMIC_M-->
+                    <item id="item_01_30" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="lvf_mode_touch_mc_dynamic_mono_gx7.png">
+                        </subitem>
+                        <subitem lang="fr" value1="lvf_mode_touch_mc_dynamic_mono_cf.png">
+                        </subitem>
+                        <subitem lang="fr_CA" value1="lvf_mode_touch_mc_dynamic_mono_cf.png">
+                        </subitem>
+                        <subitem lang="fr-CA" value1="lvf_mode_touch_mc_dynamic_mono_cf.png">
+                        </subitem>
+                    </item>
+                    <!--IC_LVF_MODE_TOUCH_MC_DRAMATIC_T-->
+                    <item id="item_01_31" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="lvf_mode_touch_mc_dramatic_tone.png">
+                        </subitem>
+                        <subitem lang="fr" value1="lvf_mode_touch_mc_dramatic_tone_f.png">
+                        </subitem>
+                        <subitem lang="fr_CA" value1="lvf_mode_touch_mc_dramatic_tone_f.png">
+                        </subitem>
+                        <subitem lang="fr-CA" value1="lvf_mode_touch_mc_dramatic_tone_f.png">
+                        </subitem>
+                    </item>
+                    <!--IC_LVF_MODE_TOUCH_MC_CRS_PRS-->
+                    <item id="item_01_32" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="lvf_mode_touch_mc_cross_process.png">
+                        </subitem>
+                        <subitem lang="fr" value1="lvf_mode_touch_mc_cross_process_f.png">
+                        </subitem>
+                        <subitem lang="fr_CA" value1="lvf_mode_touch_mc_cross_process_f.png">
+                        </subitem>
+                        <subitem lang="fr-CA" value1="lvf_mode_touch_mc_cross_process_f.png">
+                        </subitem>
+                    </item>
+                    <!--IC_LVF_MODE_TOUCH_MC_POINT_COL-->
+                    <item id="item_01_33" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="lvf_mode_touch_mc_onepoint_color.png">
+                        </subitem>
+                        <subitem lang="fr" value1="lvf_mode_touch_mc_onepoint_color_f.png">
+                        </subitem>
+                        <subitem lang="fr_CA" value1="lvf_mode_touch_mc_onepoint_color_f.png">
+                        </subitem>
+                        <subitem lang="fr-CA" value1="lvf_mode_touch_mc_onepoint_color_f.png">
+                        </subitem>
+                    </item>
+                    <!--IC_LVF_MODE_TOUCH_MC_CROSS_FILTER-->
+                    <item id="item_01_34" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="lvf_mode_touch_mc_cross_filter.png">
+                        </subitem>
+                        <subitem lang="fr" value1="lvf_mode_touch_mc_cross_filter_f.png">
+                        </subitem>
+                        <subitem lang="fr_CA" value1="lvf_mode_touch_mc_cross_filter_f.png">
+                        </subitem>
+                        <subitem lang="fr-CA" value1="lvf_mode_touch_mc_cross_filter_f.png">
+                        </subitem>
+                    </item>
+                    <!--IC_LVF_MODE_TOUCH_SG_01-->
+                    <item id="item_01_35" type="image" x_size="1" value1="lvf_mode_touch_sg_01.png">
+                    </item>
+                    <!--IC_LVF_MODE_TOUCH_SG_02-->
+                    <item id="item_01_36" type="image" x_size="1" value1="lvf_mode_touch_sg_02.png">
+                    </item>
+                    <!--IC_LVF_MODE_TOUCH_SG_03-->
+                    <item id="item_01_37" type="image" x_size="1" value1="lvf_mode_touch_sg_03.png">
+                    </item>
+                    <!--IC_LVF_MODE_TOUCH_SG_04-->
+                    <item id="item_01_38" type="image" x_size="1" value1="lvf_mode_touch_sg_04.png">
+                    </item>
+                    <!--IC_LVF_MODE_TOUCH_SG_05-->
+                    <item id="item_01_39" type="image" x_size="1" value1="lvf_mode_touch_sg_05.png">
+                    </item>
+                    <!--IC_LVF_MODE_TOUCH_SG_06-->
+                    <item id="item_01_40" type="image" x_size="1" value1="lvf_mode_touch_sg_06.png">
+                    </item>
+                    <!--IC_LVF_MODE_TOUCH_SG_07-->
+                    <item id="item_01_41" type="image" x_size="1" value1="lvf_mode_touch_sg_07.png">
+                    </item>
+                    <!--IC_LVF_MODE_TOUCH_SG_08-->
+                    <item id="item_01_42" type="image" x_size="1" value1="lvf_mode_touch_sg_08.png">
+                    </item>
+                    <!--IC_LVF_MODE_TOUCH_SG_09-->
+                    <item id="item_01_43" type="image" x_size="1" value1="lvf_mode_touch_sg_09.png">
+                    </item>
+                    <!--IC_LVF_MODE_TOUCH_SG_10-->
+                    <item id="item_01_44" type="image" x_size="1" value1="lvf_mode_touch_sg_10.png">
+                    </item>
+                    <!--IC_LVF_MODE_TOUCH_SG_11-->
+                    <item id="item_01_45" type="image" x_size="1" value1="lvf_mode_touch_sg_11.png">
+                    </item>
+                    <!--IC_LVF_MODE_TOUCH_SG_12-->
+                    <item id="item_01_46" type="image" x_size="1" value1="lvf_mode_touch_sg_12.png">
+                    </item>
+                    <!--IC_LVF_MODE_TOUCH_SG_13-->
+                    <item id="item_01_47" type="image" x_size="1" value1="lvf_mode_touch_sg_13.png">
+                    </item>
+                    <!--IC_LVF_MODE_TOUCH_SG_14-->
+                    <item id="item_01_48" type="image" x_size="1" value1="lvf_mode_touch_sg_14.png">
+                    </item>
+                    <!--IC_LVF_MODE_TOUCH_SG_15-->
+                    <item id="item_01_49" type="image" x_size="1" value1="lvf_mode_touch_sg_15.png">
+                    </item>
+                    <!--IC_LVF_MODE_TOUCH_SG_16-->
+                    <item id="item_01_50" type="image" x_size="1" value1="lvf_mode_touch_sg_16.png">
+                    </item>
+                    <!--IC_LVF_MODE_TOUCH_SG_17-->
+                    <item id="item_01_51" type="image" x_size="1" value1="lvf_mode_touch_sg_17.png">
+                    </item>
+                    <!--IC_LVF_MODE_TOUCH_SG_18-->
+                    <item id="item_01_52" type="image" x_size="1" value1="lvf_mode_touch_sg_18.png">
+                    </item>
+                    <!--IC_LVF_MODE_TOUCH_SG_19-->
+                    <item id="item_01_53" type="image" x_size="1" value1="lvf_mode_touch_sg_19.png">
+                    </item>
+                    <!--IC_LVF_MODE_TOUCH_SG_20-->
+                    <item id="item_01_54" type="image" x_size="1" value1="lvf_mode_touch_sg_20.png">
+                    </item>
+                    <!--IC_LVF_MODE_TOUCH_SG_21-->
+                    <item id="item_01_55" type="image" x_size="1" value1="lvf_mode_touch_sg_21.png">
+                    </item>
+                    <!--IC_LVF_MODE_TOUCH_SG_22-->
+                    <item id="item_01_56" type="image" x_size="1" value1="lvf_mode_touch_sg_22.png">
+                    </item>
+                    <!--IC_LVF_MODE_TOUCH_SG_23-->
+                    <item id="item_01_57" type="image" x_size="1" value1="lvf_mode_touch_sg_23.png">
+                    </item>
+                    <!--IC_LVF_MODE_TOUCH_NIGHT_PORT-->
+                    <item id="item_01_58" type="image" x_size="1" value1="lvf_mode_touch_night_port.png">
+                    </item>
+                    <!--IC_LVF_MODE_TOUCH_NIGHT-->
+                    <item id="item_01_59" type="image" x_size="1" value1="lvf_mode_touch_night.png">
+                    </item>
+                    <!--IC_REC_CMODE_P-->
+                    <item id="item_01_60" type="image" x_size="1" value1="rec_cmode_p.png">
+                    </item>
+                    <!--IC_REC_CMODE_A-->
+                    <item id="item_01_61" type="image" x_size="1" value1="rec_cmode_a.png">
+                    </item>
+                    <!--IC_REC_CMODE_S-->
+                    <item id="item_01_62" type="image" x_size="1" value1="rec_cmode_s.png">
+                    </item>
+                    <!--IC_REC_CMODE_M-->
+                    <item id="item_01_63" type="image" x_size="1" value1="rec_cmode_m.png">
+                    </item>
+                    <!--REC_MODE_AUTO-->
+                    <item id="item_01_64" type="image" x_size="1" value1="rec_rmd_normal.png">
+                    </item>
+                    <!--REC_MODE_PORT-->
+                    <item id="item_01_65" type="image" x_size="1" value1="scn_hmn_k_mono_32.png">
+                    </item>
+                    <!--REC_MODE_WHITE-->
+                    <item id="item_01_66" type="image" x_size="1" value1="scn_wht_k_mono_32.png">
+                    </item>
+                    <!--REC_MODE_LAND-->
+                    <item id="item_01_67" type="image" x_size="1" value1="scn_lds_k_mono_32.png">
+                    </item>
+                    <!--REC_MODE_SPORTS-->
+                    <item id="item_01_68" type="image" x_size="1" value1="scn_sps_k_mono_32.png">
+                    </item>
+                    <!--REC_MODE_NIGHTPORT-->
+                    <item id="item_01_69" type="image" x_size="1" value1="scn_npt_k_mono_32.png">
+                    </item>
+                    <!--REC_MODE_NIGHT-->
+                    <item id="item_01_70" type="image" x_size="1" value1="scn_ngt_k_mono_32.png">
+                    </item>
+                    <!--REC_MODE_HOLD_NIGHT-->
+                    <item id="item_01_71" type="image" x_size="1" value1="scn_hns_k_mono_32.png">
+                    </item>
+                    <!--REC_MODE_BACKLIGHT_HDR-->
+                    <item id="item_01_72" type="image" x_size="1" value1="scn_ihd_common.png">
+                    </item>
+                    <!--REC_MODE_FOOD-->
+                    <item id="item_01_73" type="image" x_size="1" value1="scn_cok_k_mono_32.png">
+                    </item>
+                    <!--REC_MODE_BABY1-->
+                    <item id="item_01_74" type="image" x_size="1" value1="scn_bby_k_1mono_32.png">
+                    </item>
+                    <!--REC_MODE_BABY2-->
+                    <item id="item_01_75" type="image" x_size="1" value1="scn_bby_k_2mono_32.png">
+                    </item>
+                    <!--REC_MODE_PET-->
+                    <item id="item_01_76" type="image" x_size="1" value1="scn_pet_k_mono_32.png">
+                    </item>
+                    <!--REC_MODE_SUNSET-->
+                    <item id="item_01_77" type="image" x_size="1" value1="scn_sst_k_mono_32.png">
+                    </item>
+                    <!--REC_MODE_HIGHSENSE-->
+                    <item id="item_01_78" type="image" x_size="1" value1="scn_hsn_k_mono_32.png">
+                    </item>
+                    <!--REC_MODE_STAR-->
+                    <item id="item_01_79" type="image" x_size="1" value1="scn_str_k_mono_32.png">
+                    </item>
+                    <!--REC_MODE_THROUGH_WINDOW-->
+                    <item id="item_01_80" type="image" x_size="1" value1="scn_gls_mono_28.png">
+                    </item>
+                    <!--REC_MODE_MARINE-->
+                    <item id="item_01_81" type="image" x_size="1" value1="scn_mrn_mono32.png">
+                    </item>
+                    <!--REC_MODE_HSMOVIE-->
+                    <item id="item_01_82" type="image" x_size="1" value1="scn_hsp_32.png">
+                    </item>
+                    <!--REC_MODE_SNOW-->
+                    <item id="item_01_83" type="image" x_size="1" value1="scn_sno_k_mono_32.png">
+                    </item>
+                    <!--REC_MODE_BEACH_SNORKELING-->
+                    <item id="item_01_84" type="image" x_size="1" value1="scn_bcs_28.png">
+                    </item>
+                    <!--REC_MODE_ADVANCED_MARINE-->
+                    <item id="item_01_85" type="image" x_size="1" value1="ply_art_wat_retch_sp1.png">
+                    </item>
+                    <!--REC_MODE_SWING_PANORAMA-->
+                    <item id="item_01_86" type="image" x_size="1" value1="scn_prm_mono_28.png">
+                    </item>
+                    <!--REC_MODE_PANORAMA_POP-->
+                    <item id="item_01_87" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="scn_prm_mono_flt_pop.png">
+                        </subitem>
+                        <subitem lang="ja" value1="scn_prm_mono_flt_pop_j.png">
+                        </subitem>
+                    </item>
+                    <!--REC_MODE_PANORAMA_RETRO-->
+                    <item id="item_01_88" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="scn_prm_mono_flt_retro.png">
+                        </subitem>
+                        <subitem lang="fr" value1="scn_prm_mono_flt_retro_f.png">
+                        </subitem>
+                        <subitem lang="fr_CA" value1="scn_prm_mono_flt_retro_f.png">
+                        </subitem>
+                        <subitem lang="fr-CA" value1="scn_prm_mono_flt_retro_f.png">
+                        </subitem>
+                    </item>
+                    <!--REC_MODE_PANORAMA_SEPIA-->
+                    <item id="item_01_89" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="scn_prm_mono_flt_sepia.png">
+                        </subitem>
+                        <subitem lang="fr" value1="scn_prm_mono_flt_sepia_f.png">
+                        </subitem>
+                        <subitem lang="fr_CA" value1="scn_prm_mono_flt_sepia_f.png">
+                        </subitem>
+                        <subitem lang="fr-CA" value1="scn_prm_mono_flt_sepia_f.png">
+                        </subitem>
+                    </item>
+                    <!--REC_MODE_PANORAMA_HIDYNAMIC-->
+                    <item id="item_01_90" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="scn_prm_mono_flt_hydyna.png">
+                        </subitem>
+                        <subitem lang="fr" value1="scn_prm_mono_flt_hydyna_f.png">
+                        </subitem>
+                        <subitem lang="fr_CA" value1="scn_prm_mono_flt_hydyna_f.png">
+                        </subitem>
+                        <subitem lang="fr-CA" value1="scn_prm_mono_flt_hydyna_f.png">
+                        </subitem>
+                    </item>
+                    <!--REC_MODE_PANORAMA_HYK-->
+                    <item id="item_01_91" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="scn_prm_mono_flt_hyk.png">
+                        </subitem>
+                        <subitem lang="fr" value1="scn_prm_mono_flt_hyk_f.png">
+                        </subitem>
+                        <subitem lang="fr_CA" value1="scn_prm_mono_flt_hyk_f.png">
+                        </subitem>
+                        <subitem lang="fr-CA" value1="scn_prm_mono_flt_hyk_f.png">
+                        </subitem>
+                    </item>
+                    <!--REC_MODE_PANORAMA_LWK-->
+                    <item id="item_01_92" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="scn_prm_mono_flt_lwk.png">
+                        </subitem>
+                        <subitem lang="fr" value1="scn_prm_mono_flt_lwk_f.png">
+                        </subitem>
+                        <subitem lang="fr_CA" value1="scn_prm_mono_flt_lwk_f.png">
+                        </subitem>
+                        <subitem lang="fr-CA" value1="scn_prm_mono_flt_lwk_f.png">
+                        </subitem>
+                    </item>
+                    <!--REC_MODE_PANORAMA_MONO-->
+                    <item id="item_01_93" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="scn_prm_mono_flt_dymono_gx7.png">
+                        </subitem>
+                        <subitem lang="fr" value1="scn_prm_mono_flt_dymono_cf.png">
+                        </subitem>
+                        <subitem lang="fr_CA" value1="scn_prm_mono_flt_dymono_cf.png">
+                        </subitem>
+                        <subitem lang="fr-CA" value1="scn_prm_mono_flt_dymono_cf.png">
+                        </subitem>
+                    </item>
+                    <!--REC_MODE_PANORAMA_SFOCUS-->
+                    <item id="item_01_94" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="scn_prm_mono_flt_s_focus.png">
+                        </subitem>
+                        <subitem lang="fr" value1="scn_prm_mono_flt_s_focus_f.png">
+                        </subitem>
+                        <subitem lang="fr_CA" value1="scn_prm_mono_flt_s_focus_f.png">
+                        </subitem>
+                        <subitem lang="fr-CA" value1="scn_prm_mono_flt_s_focus_f.png">
+                        </subitem>
+                    </item>
+                    <!--REC_MODE_PANORAMA_IMP_ART-->
+                    <item id="item_01_95" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="scn_prm_mono_flt_imp_art.png">
+                        </subitem>
+                        <subitem lang="fr" value1="scn_prm_mono_flt_imp_art_f.png">
+                        </subitem>
+                        <subitem lang="fr_CA" value1="scn_prm_mono_flt_imp_art_f.png">
+                        </subitem>
+                        <subitem lang="fr-CA" value1="scn_prm_mono_flt_imp_art_f.png">
+                        </subitem>
+                    </item>
+                    <!--REC_MODE_PANORAMA_XPRO-->
+                    <item id="item_01_96" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="scn_prm_mono_flt_x_prs.png">
+                        </subitem>
+                        <subitem lang="fr" value1="scn_prm_mono_flt_x_prs_f.png">
+                        </subitem>
+                        <subitem lang="fr_CA" value1="scn_prm_mono_flt_x_prs_f.png">
+                        </subitem>
+                        <subitem lang="fr-CA" value1="scn_prm_mono_flt_x_prs_f.png">
+                        </subitem>
+                    </item>
+                    <!--REC_MODE_PANORAMA_XFILTER-->
+                    <item id="item_01_97" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="scn_prm_mono_flt_x_filter.png">
+                        </subitem>
+                        <subitem lang="fr" value1="scn_prm_mono_flt_x_filter_f.png">
+                        </subitem>
+                        <subitem lang="fr_CA" value1="scn_prm_mono_flt_x_filter_f.png">
+                        </subitem>
+                        <subitem lang="fr-CA" value1="scn_prm_mono_flt_x_filter_f.png">
+                        </subitem>
+                    </item>
+                    <!--REC_MODE_PANORAMA_1PNT_COL-->
+                    <item id="item_01_98" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="scn_prm_mono_flt_1p_col.png">
+                        </subitem>
+                        <subitem lang="fr" value1="scn_prm_mono_flt_1p_col_f.png">
+                        </subitem>
+                        <subitem lang="fr_CA" value1="scn_prm_mono_flt_1p_col_f.png">
+                        </subitem>
+                        <subitem lang="fr-CA" value1="scn_prm_mono_flt_1p_col_f.png">
+                        </subitem>
+                    </item>
+                    <!--REC_MODE_I_SCHNORCHEL-->
+                    <item id="item_01_99" type="image" x_size="1" value1="scn_bcs_i_28.png">
+                    </item>
+                    <!--REC_MODE_I_HANDHELDNIGHT-->
+                    <item id="item_01_100" type="image" x_size="1" value1="scn_hns_mono.png">
+                    </item>
+                    <!--IC_LVF_MODE_TOUCH_MC_OLD_DAYS-->
+                    <item id="item_01_101" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="lvf_mode_touch_mc_old_days.png">
+                        </subitem>
+                        <subitem lang="fr" value1="lvf_mode_touch_mc_old_days_cf.png">
+                        </subitem>
+                        <subitem lang="fr_CA" value1="lvf_mode_touch_mc_old_days_cf.png">
+                        </subitem>
+                        <subitem lang="fr-CA" value1="lvf_mode_touch_mc_old_days_cf.png">
+                        </subitem>
+                    </item>
+                    <!--IC_LVF_MODE_TOUCH_MC_SUNSHINE-->
+                    <item id="item_01_102" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="lvf_mode_touch_mc_sunshine.png">
+                        </subitem>
+                        <subitem lang="fr" value1="lvf_mode_touch_mc_sunshine_cf.png">
+                        </subitem>
+                        <subitem lang="fr_CA" value1="lvf_mode_touch_mc_sunshine_cf.png">
+                        </subitem>
+                        <subitem lang="fr-CA" value1="lvf_mode_touch_mc_sunshine_cf.png">
+                        </subitem>
+                    </item>
+                    <!--IC_LVF_MODE_TOUCH_MC_BLEACH_BYPASS-->
+                    <item id="item_01_103" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="lvf_mode_touch_mc_bleach_bypass.png">
+                        </subitem>
+                        <subitem lang="fr" value1="lvf_mode_touch_mc_bleach_bypass_cf.png">
+                        </subitem>
+                        <subitem lang="fr_CA" value1="lvf_mode_touch_mc_bleach_bypass_cf.png">
+                        </subitem>
+                        <subitem lang="fr-CA" value1="lvf_mode_touch_mc_bleach_bypass_cf.png">
+                        </subitem>
+                    </item>
+                    <!--IC_LVF_MODE_TOUCH_MC_TOY_POP-->
+                    <item id="item_01_104" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="lvf_mode_touch_mc_toy_pop.png">
+                        </subitem>
+                        <subitem lang="fr" value1="lvf_mode_touch_mc_toy_pop_cf.png">
+                        </subitem>
+                        <subitem lang="fr_CA" value1="lvf_mode_touch_mc_toy_pop_cf.png">
+                        </subitem>
+                        <subitem lang="fr-CA" value1="lvf_mode_touch_mc_toy_pop_cf.png">
+                        </subitem>
+                    </item>
+                    <!--IC_LVF_MODE_TOUCH_MC_FANTASY-->
+                    <item id="item_01_105" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="lvf_mode_touch_mc_fantasy.png">
+                        </subitem>
+                        <subitem lang="fr" value1="lvf_mode_touch_mc_fantasy_cf.png">
+                        </subitem>
+                        <subitem lang="fr_CA" value1="lvf_mode_touch_mc_fantasy_cf.png">
+                        </subitem>
+                        <subitem lang="fr-CA" value1="lvf_mode_touch_mc_fantasy_cf.png">
+                        </subitem>
+                    </item>
+                    <!--IC_LVF_MODE_TOUCH_PANORAMA_OLD_DAYS-->
+                    <item id="item_01_106" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="scn_prm_mono_flt_old_days.png">
+                        </subitem>
+                        <subitem lang="fr" value1="scn_prm_mono_flt_old_days_cf.png">
+                        </subitem>
+                        <subitem lang="fr_CA" value1="scn_prm_mono_flt_old_days_cf.png">
+                        </subitem>
+                        <subitem lang="fr-CA" value1="scn_prm_mono_flt_old_days_cf.png">
+                        </subitem>
+                    </item>
+                    <!--IC_LVF_MODE_TOUCH_PANORAMA_BLEACH_BYPASS-->
+                    <item id="item_01_107" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="scn_prm_mono_flt_bleach_bypass.png">
+                        </subitem>
+                        <subitem lang="fr" value1="scn_prm_mono_flt_bleach_bypass_cf.png">
+                        </subitem>
+                        <subitem lang="fr_CA" value1="scn_prm_mono_flt_bleach_bypass_cf.png">
+                        </subitem>
+                        <subitem lang="fr-CA" value1="scn_prm_mono_flt_bleach_bypass_cf.png">
+                        </subitem>
+                    </item>
+                    <!--IC_LVF_MODE_TOUCH_PANORAMA_FANTASY-->
+                    <item id="item_01_108" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="scn_prm_mono_flt_fantasy.png">
+                        </subitem>
+                        <subitem lang="fr" value1="scn_prm_mono_flt_fantasy_cf.png">
+                        </subitem>
+                        <subitem lang="fr_CA" value1="scn_prm_mono_flt_fantasy_cf.png">
+                        </subitem>
+                        <subitem lang="fr-CA" value1="scn_prm_mono_flt_fantasy_cf.png">
+                        </subitem>
+                    </item>
+                    <!--IC_LVF_MODE_TOUCH_IA_COOKING-->
+                    <item id="item_01_109" type="image" x_size="1" value1="lvf_mode_touch_ia_cooking.png">
+                    </item>
+                    <!--IC_LVF_MODE_TOUCH_MC_SILKY_MONOCHROME-->
+                    <item id="item_01_110" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="lvf_mode_touch_mc_sm.png">
+                        </subitem>
+                        <subitem lang="fr" value1="lvf_mode_touch_mc_sm_cf.png">
+                        </subitem>
+                        <subitem lang="fr_CA" value1="lvf_mode_touch_mc_sm_cf.png">
+                        </subitem>
+                        <subitem lang="fr-CA" value1="lvf_mode_touch_mc_sm_cf.png">
+                        </subitem>
+                    </item>
+                    <!--IC_LVF_MODE_TOUCH_MC_ROUGH_MONOCHROME-->
+                    <item id="item_01_111" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="lvf_mode_touch_mc_rm.png">
+                        </subitem>
+                        <subitem lang="fr" value1="lvf_mode_touch_mc_rm_cf.png">
+                        </subitem>
+                        <subitem lang="fr_CA" value1="lvf_mode_touch_mc_rm_cf.png">
+                        </subitem>
+                        <subitem lang="fr-CA" value1="lvf_mode_touch_mc_rm_cf.png">
+                        </subitem>
+                    </item>
+                    <!--IC_LVF_MODE_TOUCH_PANORAMA_SILKY_MONOCHROME-->
+                    <item id="item_01_112" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="scn_prm_mono_flt_silky_mono.png">
+                        </subitem>
+                        <subitem lang="fr" value1="scn_prm_mono_flt_silky_mono_cf.png">
+                        </subitem>
+                        <subitem lang="fr_CA" value1="scn_prm_mono_flt_silky_mono_cf.png">
+                        </subitem>
+                        <subitem lang="fr-CA" value1="scn_prm_mono_flt_silky_mono_cf.png">
+                        </subitem>
+                    </item>
+                    <!--IC_LVF_MODE_TOUCH_PANORAMA_ROUGH_MONOCHROME-->
+                    <item id="item_01_113" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="scn_prm_mono_flt_rough_mono.png">
+                        </subitem>
+                        <subitem lang="fr" value1="scn_prm_mono_flt_rough_mono_cf.png">
+                        </subitem>
+                        <subitem lang="fr_CA" value1="scn_prm_mono_flt_rough_mono_cf.png">
+                        </subitem>
+                        <subitem lang="fr-CA" value1="scn_prm_mono_flt_rough_mono_cf.png">
+                        </subitem>
+                    </item>
+                    <!--IC_LVF_MODE_TOUCH_MC_MONOCHROME-->
+                    <item id="item_01_114" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="lvf_mode_touch_mc_dynamic_mono.png">
+                        </subitem>
+                        <subitem lang="fr" value1="lvf_mode_touch_mc_dynamic_mono.png">
+                        </subitem>
+                        <subitem lang="fr_CA" value1="lvf_mode_touch_mc_dynamic_mono.png">
+                        </subitem>
+                        <subitem lang="fr-CA" value1="lvf_mode_touch_mc_dynamic_mono.png">
+                        </subitem>
+                    </item>
+                    <!--IC_LVF_MODE_TOUCH_PANORAMA_MONOCHROME-->
+                    <item id="item_01_115" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="scn_prm_mono_flt_mono.png">
+                        </subitem>
+                        <subitem lang="fr" value1="scn_prm_mono_flt_dymono.png">
+                        </subitem>
+                        <subitem lang="fr_CA" value1="scn_prm_mono_flt_dymono.png">
+                        </subitem>
+                        <subitem lang="fr-CA" value1="scn_prm_mono_flt_dymono.png">
+                        </subitem>
+                    </item>
+                    <!--IC_LVF_MODE_TOUCH_SG_24-->
+                    <item id="item_01_116" type="image" x_size="1" value1="lvf_mode_touch_sg_24.png">
+                    </item>
+                    <!--IC_REC_CMODE_HS-->
+                    <item id="item_01_117" type="image" x_size="1" value1="rec_cmode_hs.png">
+                    </item>
+                    <!--IC_LVF_MODE_TOUCH_SG_25-->
+                    <item id="item_01_118" type="image" x_size="1" value1="lvf_mode_touch_sg_25.png">
+                    </item>
+                    <!--IC_LVF_4KPHOTO-->
+                    <item id="item_01_119" type="image" x_size="1" value1="lvf_mode_4k_photo.png">
+                    </item>
+                    <!--IC_LVF_4KPHOTO_P-->
+                    <item id="item_01_120" type="image" x_size="1" value1="lvf_4kphoto_p.png">
+                    </item>
+                    <!--IC_LVF_4KPHOTO_A-->
+                    <item id="item_01_121" type="image" x_size="1" value1="lvf_4kphoto_a.png">
+                    </item>
+                    <!--IC_LVF_4KPHOTO_S-->
+                    <item id="item_01_122" type="image" x_size="1" value1="lvf_4kphoto_s.png">
+                    </item>
+                    <!--IC_LVF_4KPHOTO_M-->
+                    <item id="item_01_123" type="image" x_size="1" value1="lvf_4kphoto_m.png">
+                    </item>
+                    <!--IC_LVF_MODE_PORTRAIT-->
+                    <item id="item_01_124" type="image" x_size="1" value1="scn_hmn_k_mono_32.png">
+                    </item>
+                    <!--IC_LVF_MODE_KIDS-->
+                    <item id="item_01_125" type="image" x_size="1" value1="lvf_mode_kids.png">
+                    </item>
+                    <!--IC_LVF_MODE_LANDSCAPE-->
+                    <item id="item_01_126" type="image" x_size="1" value1="scn_lds_k_mono_32.png">
+                    </item>
+                    <!--IC_LVF_MODE_SPORTS-->
+                    <item id="item_01_127" type="image" x_size="1" value1="scn_sps_k_mono_32.png">
+                    </item>
+                    <!--IC_LVF_MODE_MARINE-->
+                    <item id="item_01_128" type="image" x_size="1" value1="scn_mrn_mono32.png">
+                    </item>
+                    <!--IC_LVF_MODE_BEACH_SNORKELING-->
+                    <item id="item_01_129" type="image" x_size="1" value1="scn_bcs_28.png">
+                    </item>
+                    <!--IC_LVF_MODE_SNOW-->
+                    <item id="item_01_130" type="image" x_size="1" value1="scn_sno_k_mono_32.png">
+                    </item>
+                    <!--IC_LVF_MODE_BSF-->
+                    <item id="item_01_131" type="image" x_size="1" value1="scn_bsf_32_sp1.png">
+                    </item>
+                    <!--ICFO_END-->
+                    <item id="item_02_0" type="hide" x_size="1">
+                    </item>
+                    <!--IC_CUSTOM_SET1_LVF-->
+                    <item id="item_02_1" type="image" x_size="1" value1="custom_set1_lvf_sp1.png">
+                    </item>
+                    <!--IC_CUSTOM_SET2_LVF-->
+                    <item id="item_02_2" type="image" x_size="1" value1="custom_set2_lvf_sp1.png">
+                    </item>
+                    <!--IC_CUSTOM_SET3_1_LVF-->
+                    <item id="item_02_3" type="image" x_size="1" value1="custom_set3_1_lvf.png">
+                    </item>
+                    <!--IC_CUSTOM_SET3_2_LVF-->
+                    <item id="item_02_4" type="image" x_size="1" value1="custom_set3_2_lvf.png">
+                    </item>
+                    <!--IC_CUSTOM_SET3_3_LVF-->
+                    <item id="item_02_5" type="image" x_size="1" value1="custom_set3_3_lvf.png">
+                    </item>
+                    <!--TMPIMG_CST_CHA_C1_SP1-->
+                    <item id="item_02_6" type="image" x_size="1" value1="cst_cha_c1_sp1.png">
+                    </item>
+                    <!--TMPIMG_CST_CHA_C2_1_SP1-->
+                    <item id="item_02_7" type="image" x_size="1" value1="cst_cha_c2_1.png">
+                    </item>
+                    <!--TMPIMG_CST_CHA_C2_2_SP1-->
+                    <item id="item_02_8" type="image" x_size="1" value1="cst_cha_c2_2.png">
+                    </item>
+                    <!--TMPIMG_CST_CHA_C2_3_SP1-->
+                    <item id="item_02_9" type="image" x_size="1" value1="cst_cha_c2_3.png">
+                    </item>
+                    <!--IC_CUSTOM_SET2_1_LVF-->
+                    <item id="item_02_10" type="image" x_size="1" value1="custom_set2_1_lvf_sp1.png">
+                    </item>
+                    <!--IC_CUSTOM_SET2_2_LVF-->
+                    <item id="item_02_11" type="image" x_size="1" value1="custom_set2_2_lvf_sp1.png">
+                    </item>
+                    <!--IC_CUSTOM_SET2_3_LVF-->
+                    <item id="item_02_12" type="image" x_size="1" value1="custom_set2_3_lvf_sp1.png">
+                    </item>
+                    <!--IC_CUSTOM_SET3_LVF-->
+                    <item id="item_02_13" type="image" x_size="1" value1="custom_set3_lvf_sp1.png">
+                    </item>
+                </area>
+                <!--フォトスタイル or クリエイティブコントロール-->
+                <area id="area_id_b" x_pos="1" x_size="1" folder="B">
+                    <!--ICFO_END-->
+                    <item id="item_04_0" type="hide" x_size="1">
+                    </item>
+                    <!--IC_LVF_IMAGE_CTRL_STANDARD_SP-->
+                    <item id="item_04_1" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="lvf_image_ctrl_standard_sp1.png">
+                        </subitem>
+                        <subitem lang="fr" value1="lvf_image_ctrl_standard_cf.png">
+                        </subitem>
+                        <subitem lang="fr_CA" value1="lvf_image_ctrl_standard_cf.png">
+                        </subitem>
+                        <subitem lang="fr-CA" value1="lvf_image_ctrl_standard_cf.png">
+                        </subitem>
+                    </item>
+                    <!--IC_LVF_IMAGE_CTRL_VIVID_SP-->
+                    <item id="item_04_2" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="lvf_image_ctrl_vivid_sp1.png">
+                        </subitem>
+                        <subitem lang="fr" value1="lvf_image_ctrl_vivid_f_sp1.png">
+                        </subitem>
+                        <subitem lang="fr_CA" value1="lvf_image_ctrl_vivid_f_sp1.png">
+                        </subitem>
+                        <subitem lang="fr-CA" value1="lvf_image_ctrl_vivid_f_sp1.png">
+                        </subitem>
+                    </item>
+                    <!--IC_LVF_IMAGE_CTRL_NATURAL_SP-->
+                    <item id="item_04_3" type="image" x_size="1" value1="lvf_image_ctrl_natural_sp1.png">
+                    </item>
+                    <!--IC_LVF_IMAGE_CTRL_MONOCHROME_SP-->
+                    <item id="item_04_4" type="image" x_size="1" value1="lvf_image_ctrl_monochrome_sp1.png">
+                    </item>
+                    <!--IC_LVF_IMAGE_CTRL_LAND_SP-->
+                    <item id="item_04_5" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="lvf_image_ctrl_land_sp1.png">
+                        </subitem>
+                        <subitem lang="fr" value1="lvf_image_ctrl_land_f_sp1.png">
+                        </subitem>
+                        <subitem lang="fr_CA" value1="lvf_image_ctrl_land_f_sp1.png">
+                        </subitem>
+                        <subitem lang="fr-CA" value1="lvf_image_ctrl_land_f_sp1.png">
+                        </subitem>
+                    </item>
+                    <!--IC_LVF_IMAGE_CTRL_PORTRAIT_SP-->
+                    <item id="item_04_6" type="image" x_size="1" value1="lvf_image_ctrl_portrait_sp1.png">
+                    </item>
+                    <!--IC_LVF_IMAGE_CTRL_CUSTOM_SP-->
+                    <item id="item_04_7" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="lvf_image_ctrl_custom_sp1.png">
+                        </subitem>
+                        <subitem lang="fr" value1="lvf_image_ctrl_custom_f_sp1.png">
+                        </subitem>
+                        <subitem lang="fr_CA" value1="lvf_image_ctrl_custom_f_sp1.png">
+                        </subitem>
+                        <subitem lang="fr-CA" value1="lvf_image_ctrl_custom_f_sp1.png">
+                        </subitem>
+                    </item>
+                    <!--IC_MYCOLOR_AJUSTED_SP-->
+                    <item id="item_04_8" type="image" x_size="1" value1="mycolor_ajusted_sp1.png">
+                    </item>
+                    <!--IC_LVF_IMAGE_CTRL_CINELIKE_D_SP-->
+                    <item id="item_04_9" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="lvf_image_ctrl_cinelike_d.png">
+                        </subitem>
+                        <subitem lang="fr" value1="lvf_image_ctrl_cinelike_d_cf.png">
+                        </subitem>
+                        <subitem lang="fr_CA" value1="lvf_image_ctrl_cinelike_d_cf.png">
+                        </subitem>
+                        <subitem lang="fr-CA" value1="lvf_image_ctrl_cinelike_d_cf.png">
+                        </subitem>
+                    </item>
+                    <!--IC_LVF_IMAGE_CTRL_CINELIKE_V_SP-->
+                    <item id="item_04_10" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="lvf_image_ctrl_cinelike_v.png">
+                        </subitem>
+                        <subitem lang="fr" value1="lvf_image_ctrl_cinelike_v_cf.png">
+                        </subitem>
+                        <subitem lang="fr_CA" value1="lvf_image_ctrl_cinelike_v_cf.png">
+                        </subitem>
+                        <subitem lang="fr-CA" value1="lvf_image_ctrl_cinelike_v_cf.png">
+                        </subitem>
+                    </item>
+                    <!--IC_LVF_IMAGE_CTRL_VARICAM_LOG_SP-->
+                    <item id="item_04_11" type="image" x_size="1" value1="lvf_image_ctrl_vlog_g.png">
+                    </item>
+                    <!--IC_LVF_IMAGE_CTRL_L_MONOCHROME_SP-->
+                    <item id="item_04_12" type="image" x_size="1" value1="lvf_image_ctrl_l_mono_sp1.png">
+                    </item>
+                    <!--ICFO_END-->
+                    <item id="item_05_0" type="hide" x_size="1">
+                    </item>
+                    <!--IC_LVF_FLASH_HOSEI_PLUS-->
+                    <item id="item_05_1" type="image" x_size="1" value1="lvf_flash_hosei_plus1.png">
+                    </item>
+                </area>
+                <!--フラッシュ-->
+                <area id="area_id_c" x_pos="2" x_size="1" folder="C">
+                    <!--ICFO_END-->
+                    <item id="item_06_0" type="hide" x_size="1">
+                    </item>
+                    <!--IC_LVF_FLASH_OFF-->
+                    <item id="item_06_1" type="image" x_size="1" value1="lvf_flash_off_sp1.png">
+                    </item>
+                    <!--IC_LVF_FLASH_WL_SP-->
+                    <item id="item_06_2" type="image" x_size="1" value1="lvf_flash_wl_sp1.png">
+                    </item>
+                    <!--IC_LVF_FLASH_WL_SLOW_SP-->
+                    <item id="item_06_3" type="image" x_size="1" value1="lvf_flash_wl_slow_sp1.png">
+                    </item>
+                    <!--IC_LVF_FLASH_KYOSEI-->
+                    <item id="item_06_4" type="image" x_size="1" value1="lvf_flash_kyosei_sp1.png">
+                    </item>
+                    <!--IC_LVF_FLASH_M_SLOW_SP-->
+                    <item id="item_06_5" type="image" x_size="1" value1="lvf_flash_m_slow_sp1.png">
+                    </item>
+                    <!--IC_LVF_FLASH_KYOSEI_2ND-->
+                    <item id="item_06_6" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="lvf_flash_kyosei_2nd_sp1.png">
+                        </subitem>
+                        <subitem lang="fr" value1="lvf_flash_kyosei_2nd_fra_sp1.png">
+                        </subitem>
+                        <subitem lang="fr_CA" value1="lvf_flash_kyosei_2nd_fra_sp1.png">
+                        </subitem>
+                        <subitem lang="fr-CA" value1="lvf_flash_kyosei_2nd_fra_sp1.png">
+                        </subitem>
+                    </item>
+                    <!--IC_LVF_FLASH_M_SLOW_2ND_SP-->
+                    <item id="item_06_7" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="lvf_flash_m_slow_2nd_sp1.png">
+                        </subitem>
+                        <subitem lang="fr" value1="lvf_flash_m_slow_2nd_f_sp1.png">
+                        </subitem>
+                        <subitem lang="fr_CA" value1="lvf_flash_m_slow_2nd_f_sp1.png">
+                        </subitem>
+                        <subitem lang="fr-CA" value1="lvf_flash_m_slow_2nd_f_sp1.png">
+                        </subitem>
+                    </item>
+                    <!--IC_LVF_FLUSH_AUTO_IA-->
+                    <item id="item_06_8" type="image" x_size="1" value1="lvf_flush_auto_ia_sp1.png">
+                    </item>
+                    <!--IC_LVF_FLUSH_AUTO_RED_PEN_RED_IA-->
+                    <item id="item_06_9" type="image" x_size="1" value1="lvf_flush_auto_red_pen_red_ia.png">
+                    </item>
+                    <!--IC_LVF_FLUSH_SLOW_RED_PEN_RED_IA -->
+                    <item id="item_06_10" type="image" x_size="1" value1="lvf_flush_slow_red_pen_red_ia.png">
+                    </item>
+                    <!--IC_LVF_FLUSH_SLOW_IA-->
+                    <item id="item_06_11" type="image" x_size="1" value1="lvf_flush_slow_ia_sp1.png">
+                    </item>
+                    <!--IC_EVF_FLUSH_AUTO_RED_PEN_RED_IA-->
+                    <item id="item_06_12" type="image" x_size="1" value1="evf_flush_auto_red_pen_red_ia_sp1.png">
+                    </item>
+                    <!--IC_EVF_FLUSH_SLOW_RED_PEN_RED_IA-->
+                    <item id="item_06_13" type="image" x_size="1" value1="evf_flush_slow_red_pen_red_ia_sp1.png">
+                    </item>
+                    <!--IC_LVF_FLUSH_AUTO_RED_PEN_IA-->
+                    <item id="item_06_14" type="image" x_size="1" value1="lvf_flush_auto_red_pen_ia.png">
+                    </item>
+                    <!--IC_LVF_FLUSH_SLOW_RED_PEN_IA-->
+                    <item id="item_06_15" type="image" x_size="1" value1="lvf_flush_slow_red_pen_ia.png">
+                    </item>
+                    <!--IC_LVF_FLUSH_AUTO_RED_PEN_RED-->
+                    <item id="item_06_16" type="image" x_size="1" value1="lvf_flush_auto_red_pen_red.png">
+                    </item>
+                    <!--IC_LVF_FLUSH_SLOW_RED_PEN_RED -->
+                    <item id="item_06_17" type="image" x_size="1" value1="lvf_flush_slow_red_pen_red.png">
+                    </item>
+                    <!--IC_LVF_KYOSEI_RED_PEN_RED-->
+                    <item id="item_06_18" type="image" x_size="1" value1="lvf_kyosei_red_pen_red.png">
+                    </item>
+                    <!--IC_EVF_FLUSH_AUTO_RED_PEN_RED-->
+                    <item id="item_06_22" type="image" x_size="1" value1="evf_flush_auto_red_pen_red_sp1.png">
+                    </item>
+                    <!--IC_EVF_FLUSH_SLOW_RED_PEN_RED-->
+                    <item id="item_06_23" type="image" x_size="1" value1="evf_flush_slow_red_pen_red_sp1.png">
+                    </item>
+                    <!--IC_EVF_KYOSEI_RED_PEN_RED-->
+                    <item id="item_06_24" type="image" x_size="1" value1="evf_kyosei_red_pen_red_sp1.png">
+                    </item>
+                    <!--IC_EVF_FLUSH_AUTO_RED_PEN_RED_2ND-->
+                    <item id="item_06_25" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="evf_flush_auto_red_pen_red_2nd_sp1.png">
+                        </subitem>
+                        <subitem lang="fr" value1="evf_flush_auto_red_pen_red_2nd_fra_sp1.png">
+                        </subitem>
+                        <subitem lang="fr_CA" value1="evf_flush_auto_red_pen_red_2nd_fra_sp1.png">
+                        </subitem>
+                        <subitem lang="fr-CA" value1="evf_flush_auto_red_pen_red_2nd_fra_sp1.png">
+                        </subitem>
+                    </item>
+                    <!--IC_EVF_FLUSH_SLOW_RED_PEN_RED_2ND-->
+                    <item id="item_06_26" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="evf_flush_slow_red_pen_red_2nd_sp1.png">
+                        </subitem>
+                        <subitem lang="fr" value1="evf_flush_slow_red_pen_red_2nd_fra_sp1.png">
+                        </subitem>
+                        <subitem lang="fr_CA" value1="evf_flush_slow_red_pen_red_2nd_fra_sp1.png">
+                        </subitem>
+                        <subitem lang="fr-CA" value1="evf_flush_slow_red_pen_red_2nd_fra_sp1.png">
+                        </subitem>
+                    </item>
+                    <!--IC_EVF_KYOSEI_RED_PEN_RED_2ND-->
+                    <item id="item_06_27" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="evf_kyosei_red_pen_red_2nd_sp1.png">
+                        </subitem>
+                        <subitem lang="fr" value1="evf_kyosei_red_pen_red_2nd_fra_sp1.png">
+                        </subitem>
+                        <subitem lang="fr_CA" value1="evf_kyosei_red_pen_red_2nd_fra_sp1.png">
+                        </subitem>
+                        <subitem lang="fr-CA" value1="evf_kyosei_red_pen_red_2nd_fra_sp1.png">
+                        </subitem>
+                    </item>
+                    <!--IC_LVF_FLASH_AUTO-->
+                    <item id="item_06_28" type="image" x_size="1" value1="lvf_flash_auto_sp1.png">
+                    </item>
+                    <!--IC_LVF_FLASH_RED_AUTO-->
+                    <item id="item_06_29" type="image" x_size="1" value1="lvf_flash_red_auto_sp1.png">
+                    </item>
+                    <!--IC_LVF_FLASH_RED_KYOSEI-->
+                    <item id="item_06_30" type="image" x_size="1" value1="lvf_flash_red_kyosei_sp1.png">
+                    </item>
+                    <!--IC_LVF_FLASH_SLOW-->
+                    <item id="item_06_31" type="image" x_size="1" value1="lvf_flash_slow_sp1.png">
+                    </item>
+                    <!--IC_LVF_FLASH_RED_SLOW -->
+                    <item id="item_06_32" type="image" x_size="1" value1="lvf_flash_red_slow_sp1.png">
+                    </item>
+                    <!--IC_LVF_FLASH_AUTO_2ND-->
+                    <item id="item_06_33" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="lvf_flash_auto_2nd_sp1.png">
+                        </subitem>
+                        <subitem lang="fr" value1="lvf_flash_auto_2nd_fra_sp1.png">
+                        </subitem>
+                        <subitem lang="fr_CA" value1="lvf_flash_auto_2nd_fra_sp1.png">
+                        </subitem>
+                        <subitem lang="fr-CA" value1="lvf_flash_auto_2nd_fra_sp1.png">
+                        </subitem>
+                    </item>
+                    <!--IC_LVF_FLASH_RED_KYOSEI_2ND-->
+                    <item id="item_06_34" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="lvf_flash_red_kyosei_2nd_sp1.png">
+                        </subitem>
+                        <subitem lang="fr" value1="lvf_flash_red_kyosei_2nd_fra_sp1.png">
+                        </subitem>
+                        <subitem lang="fr_CA" value1="lvf_flash_red_kyosei_2nd_fra_sp1.png">
+                        </subitem>
+                        <subitem lang="fr-CA" value1="lvf_flash_red_kyosei_2nd_fra_sp1.png">
+                        </subitem>
+                    </item>
+                    <!--IC_LVF_FLASH_SLOW_2ND-->
+                    <item id="item_06_35" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="lvf_flash_slow_2nd_sp1.png">
+                        </subitem>
+                        <subitem lang="fr" value1="lvf_flash_slow_2nd_fra_sp1.png">
+                        </subitem>
+                        <subitem lang="fr_CA" value1="lvf_flash_slow_2nd_fra_sp1.png">
+                        </subitem>
+                        <subitem lang="fr-CA" value1="lvf_flash_slow_2nd_fra_sp1.png">
+                        </subitem>
+                    </item>
+                    <!--IC_LVF_FLASH_RED_SLOW_2ND-->
+                    <item id="item_06_36" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="lvf_flash_red_slow_2nd_sp1.png">
+                        </subitem>
+                        <subitem lang="fr" value1="lvf_flash_red_slow_2nd_fra_sp1.png">
+                        </subitem>
+                        <subitem lang="fr_CA" value1="lvf_flash_red_slow_2nd_fra_sp1.png">
+                        </subitem>
+                        <subitem lang="fr-CA" value1="lvf_flash_red_slow_2nd_fra_sp1.png">
+                        </subitem>
+                    </item>
+                    <!--IC_LVF_FLUSH_AUTO_RED_PEN-->
+                    <item id="item_06_37" type="image" x_size="1" value1="lvf_flush_auto_red_pen.png">
+                    </item>
+                    <!--IC_LVF_FLUSH_SLOW_RED_PEN-->
+                    <item id="item_06_38" type="image" x_size="1" value1="lvf_flush_slow_red_pen.png">
+                    </item>
+                    <!--IC_LVF_KYOSEI_RED_PEN-->
+                    <item id="item_06_39" type="image" x_size="1" value1="lvf_kyosei_red_pen.png">
+                    </item>
+                    <!--IC_LVF_FLASH_WL_SLOW_M-->
+                    <item id="item_06_40" type="image" x_size="1" value1="lvf_flash_wl_slow_sp1.png">
+                    </item>
+                    <!--ICFO_END-->
+                    <item id="item_07_0" type="hide" x_size="1">
+                    </item>
+                    <!--IC_LVF_FLASH_HOSEI_MIN-->
+                    <item id="item_07_1" type="image" x_size="1" value1="lvf_flash_hosei_min1.png">
+                    </item>
+                    <!--IC_LVF_FLASH_HOSEI_PLUS-->
+                    <item id="item_07_2" type="image" x_size="1" value1="lvf_flash_hosei_plus1.png">
+                    </item>
+                    <!--IC_LVF_FLASH_M_LEVEL_FULL-->
+                    <item id="item_07_3" type="image" x_size="1" value1="lvf_flash_m_level_full.png">
+                    </item>
+                    <!--IC_LVF_FLASH_M_LEVEL_1_3-->
+                    <item id="item_07_4" type="image" x_size="1" value1="lvf_flash_m_level_1_3.png">
+                    </item>
+                    <!--IC_LVF_FLASH_M_LEVEL_1_7-->
+                    <item id="item_07_5" type="image" x_size="1" value1="lvf_flash_m_level_1_7.png">
+                    </item>
+                    <!--IC_LVF_FLASH_M_LEVEL_2-->
+                    <item id="item_07_6" type="image" x_size="1" value1="lvf_flash_m_level_2.png">
+                    </item>
+                    <!--IC_LVF_FLASH_M_LEVEL_2_5-->
+                    <item id="item_07_7" type="image" x_size="1" value1="lvf_flash_m_level_2_5.png">
+                    </item>
+                    <!--IC_LVF_FLASH_M_LEVEL_3_2-->
+                    <item id="item_07_8" type="image" x_size="1" value1="lvf_flash_m_level_3_2.png">
+                    </item>
+                    <!--IC_LVF_FLASH_M_LEVEL_4-->
+                    <item id="item_07_9" type="image" x_size="1" value1="lvf_flash_m_level_4.png">
+                    </item>
+                    <!--IC_LVF_FLASH_M_LEVEL_5-->
+                    <item id="item_07_10" type="image" x_size="1" value1="lvf_flash_m_level_5.png">
+                    </item>
+                    <!--IC_LVF_FLASH_M_LEVEL_6_4-->
+                    <item id="item_07_11" type="image" x_size="1" value1="lvf_flash_m_level_6_4.png">
+                    </item>
+                    <!--IC_LVF_FLASH_M_LEVEL_8-->
+                    <item id="item_07_12" type="image" x_size="1" value1="lvf_flash_m_level_8.png">
+                    </item>
+                    <!--IC_LVF_FLASH_M_LEVEL_10-->
+                    <item id="item_07_13" type="image" x_size="1" value1="lvf_flash_m_level_10.png">
+                    </item>
+                    <!--IC_LVF_FLASH_M_LEVEL_13-->
+                    <item id="item_07_14" type="image" x_size="1" value1="lvf_flash_m_level_13.png">
+                    </item>
+                    <!--IC_LVF_FLASH_M_LEVEL_16-->
+                    <item id="item_07_15" type="image" x_size="1" value1="lvf_flash_m_level_16.png">
+                    </item>
+                    <!--IC_LVF_FLASH_M_LEVEL_20-->
+                    <item id="item_07_16" type="image" x_size="1" value1="lvf_flash_m_level_20.png">
+                    </item>
+                    <!--IC_LVF_FLASH_M_LEVEL_25-->
+                    <item id="item_07_17" type="image" x_size="1" value1="lvf_flash_m_level_25.png">
+                    </item>
+                    <!--IC_LVF_FLASH_M_LEVEL_32-->
+                    <item id="item_07_18" type="image" x_size="1" value1="lvf_flash_m_level_32.png">
+                    </item>
+                    <!--IC_LVF_FLASH_M_LEVEL_40-->
+                    <item id="item_07_19" type="image" x_size="1" value1="lvf_flash_m_level_40.png">
+                    </item>
+                    <!--IC_LVF_FLASH_M_LEVEL_50-->
+                    <item id="item_07_20" type="image" x_size="1" value1="lvf_flash_m_level_50.png">
+                    </item>
+                    <!--IC_LVF_FLASH_M_LEVEL_64-->
+                    <item id="item_07_21" type="image" x_size="1" value1="lvf_flash_m_level_64.png">
+                    </item>
+                    <!--IC_LVF_FLASH_M_LEVEL_80-->
+                    <item id="item_07_22" type="image" x_size="1" value1="lvf_flash_m_level_80.png">
+                    </item>
+                    <!--IC_LVF_FLASH_M_LEVEL_100-->
+                    <item id="item_07_23" type="image" x_size="1" value1="lvf_flash_m_level_100.png">
+                    </item>
+                    <!--IC_LVF_FLASH_M_LEVEL_128-->
+                    <item id="item_07_24" type="image" x_size="1" value1="lvf_flash_m_level_128.png">
+                    </item>
+                </area>
+                <!--動画-->
+                <area id="area_id_d" x_pos="3.5" x_size="1" folder="D">
+                    <!--ICFO_END-->
+                    <item id="item_10_0" type="hide" x_size="1">
+                    </item>
+                    <!--IC_LVF_AVCHD_FHD_60P_SP-->
+                    <item id="item_10_1" type="image" x_size="1" value1="lvf_avchd_fhd_60p_sp2.png" value2="lvf_avchd_common_sp3.png">
+                    </item>
+                    <!--IC_LVF_AVCHD_FHD_60I_SP-->
+                    <item id="item_10_2" type="image" x_size="1" value1="lvf_avchd_fhd_60i_sp2.png" value2="lvf_avchd_common_sp3.png">
+                    </item>
+                    <!--IC_LVF_AVCHD_FHD_30P_SP-->
+                    <item id="item_10_3" type="image" x_size="1" value1="lvf_avchd_fhd_30p_sp2.png" value2="lvf_avchd_common_sp3.png">
+                    </item>
+                    <!--IC_LVF_AVCHD_SH-->
+                    <item id="item_10_5" type="image" x_size="1" value1="lvf_avchd_sh_sp2.png" value2="lvf_avchd_common_sp3.png">
+                    </item>
+                    <!--IC_LVF_AVCHD_FHD_24P_SP-->
+                    <item id="item_10_8" type="image" x_size="1" value1="lvf_avchd_fhd_24p_sp2.png" value2="lvf_avchd_common_sp3.png">
+                    </item>
+                    <!--IC_LVF_MP4_FHD_30P_SP-->
+                    <item id="item_10_14" type="image" x_size="1" value1="lvf_mp4_fhd_30p_sp2.png" value2="lvf_mp4_common_sp3.png">
+                    </item>
+                    <!--IC_LVF_MP4_HD_30P_SP-->
+                    <item id="item_10_15" type="image" x_size="1" value1="lvf_mp4_hd_30p_sp2.png" value2="lvf_mp4_common_sp3.png">
+                    </item>
+                    <!--IC_LVF_MP4_VGA_30P_SP-->
+                    <item id="item_10_16" type="image" x_size="1" value1="lvf_mp4_vga_30p_sp2.png" value2="lvf_mp4_common_sp3.png">
+                    </item>
+                    <!--IC_LVF_MP4_FHD_24P_SP-->
+                    <item id="item_10_17" type="image" x_size="1" value1="lvf_mp4_fhd_24p_sp2.png" value2="lvf_mp4_common_sp3.png">
+                    </item>
+                    <!--IC_LVF_MOV_FHD_60P_SP-->
+                    <item id="item_10_18" type="image" x_size="1" value1="lvf_mov_fhd_60p_sp2.png" value2="lvf_mov_common_sp3.png">
+                    </item>
+                    <!--IC_LVF_MOV_FHD_30P_I_SP-->
+                    <item id="item_10_19" type="image" x_size="1" value1="lvf_mov_fhd_30p_i_sp2.png" value2="lvf_mov_common_i_sp3.png">
+                    </item>
+                    <!--IC_LVF_MOV_FHD_30P_SP-->
+                    <item id="item_10_20" type="image" x_size="1" value1="lvf_mov_fhd_30p_sp2.png" value2="lvf_mov_common_sp3.png">
+                    </item>
+                    <!--IC_LVF_MOV_FHD_24P_I_SP-->
+                    <item id="item_10_21" type="image" x_size="1" value1="lvf_mov_fhd_24p_i_sp2.png" value2="lvf_mov_common_i_sp3.png">
+                    </item>
+                    <!--IC_LVF_MOV_FHD_24P_SP-->
+                    <item id="item_10_22" type="image" x_size="1" value1="lvf_mov_fhd_24p_sp2.png" value2="lvf_mov_common_sp3.png">
+                    </item>
+                    <!--IC_LVF_MOV_HD_60P_I_SP-->
+                    <item id="item_10_23" type="image" x_size="1" value1="lvf_mov_hd_60p_i_sp2.png" value2="lvf_mov_common_i_sp3.png">
+                    </item>
+                    <!--IC_LVF_AVCHD_FHD_50P_SP-->
+                    <item id="item_10_24" type="image" x_size="1" value1="lvf_avchd_fhd_50p_sp2.png" value2="lvf_avchd_common_sp3.png">
+                    </item>
+                    <!--IC_LVF_AVCHD_FHD_50I_SP-->
+                    <item id="item_10_25" type="image" x_size="1" value1="lvf_avchd_fhd_50i_sp2.png" value2="lvf_avchd_common_sp3.png">
+                    </item>
+                    <!--IC_LVF_AVCHD_FHD_25P_SP-->
+                    <item id="item_10_26" type="image" x_size="1" value1="lvf_avchd_fhd_25p_sp2.png" value2="lvf_avchd_common_sp3.png">
+                    </item>
+                    <!--C_LVF_MP4_FHD_25P_SP-->
+                    <item id="item_10_27" type="image" x_size="1" value1="lvf_mp4_fhd_25p_sp2.png" value2="lvf_mp4_common_sp3.png">
+                    </item>
+                    <!--C_LVF_MP4_HD_25P_SP-->
+                    <item id="item_10_28" type="image" x_size="1" value1="lvf_mp4_hd_25p_sp2.png" value2="lvf_mp4_common_sp3.png">
+                    </item>
+                    <!--C_LVF_MP4_VGA_25P_SP-->
+                    <item id="item_10_29" type="image" x_size="1" value1="lvf_mp4_vga_25p_sp2.png" value2="lvf_mp4_common_sp3.png">
+                    </item>
+                    <!--IC_LVF_MOV_FHD_50P_SP-->
+                    <item id="item_10_30" type="image" x_size="1" value1="lvf_mov_fhd_50p_sp2.png" value2="lvf_mov_common_sp3.png">
+                    </item>
+                    <!--IC_LVF_MOV_FHD_25P_I_SP-->
+                    <item id="item_10_31" type="image" x_size="1" value1="lvf_mov_fhd_25p_i_sp2.png" value2="lvf_mov_common_i_sp3.png">
+                    </item>
+                    <!--IC_LVF_MOV_FHD_25P_SP-->
+                    <item id="item_10_32" type="image" x_size="1" value1="lvf_mov_fhd_25p_sp2.png" value2="lvf_mov_common_sp3.png">
+                    </item>
+                    <!--IC_LVF_MOV_HD_50P_I_SP-->
+                    <item id="item_10_33" type="image" x_size="1" value1="lvf_mov_hd_50p_i_sp2.png" value2="lvf_mov_common_i_sp3.png">
+                    </item>
+                    <!--TMPIMG_MOV_QLY_AVCHD_SH_SP1-->
+                    <item id="item_10_34" type="image" x_size="1" value1="mov_avchd_hd_60p_sp2.png">
+                    </item>
+                    <!--TMPIMG_MOV_QLY_AVCHD_SH_PAL_SP1-->
+                    <item id="item_10_35" type="image" x_size="1" value1="mov_avchd_hd_50p_sp2.png">
+                    </item>
+                    <!--TMPIMG_MOV_QLY_AVCHD_GS_SP1-->
+                    <item id="item_10_36" type="image" x_size="1" value1="mov_avchd_hd_60p_g_sp2.png">
+                    </item>
+                    <!--TMPIMG_MOV_QLY_AVCHD_GS_PAL_SP1-->
+                    <item id="item_10_37" type="image" x_size="1" value1="mov_avchd_hd_50p_g_sp2.png">
+                    </item>
+                    <!--TMPIMG_MOV_QLY_AVCHD_GFS_SP1-->
+                    <item id="item_10_38" type="image" x_size="1" value1="mov_avchd_fhd_60i_g_sp2.png">
+                    </item>
+                    <!--TMPIMG_MOV_QLY_AVCHD_GFS_PAL_SP1-->
+                    <item id="item_10_39" type="image" x_size="1" value1="mov_avchd_fhd_50i_g_sp2.png">
+                    </item>
+                    <!--TMPIMG_MOV_QLY_AVCHD_GPH_SP1-->
+                    <item id="item_10_40" type="image" x_size="1" value1="mov_avchd_fhd_60p_g_sp2.png">
+                    </item>
+                    <!--TMPIMG_MOV_QLY_AVCHD_GPH_PAL_SP1-->
+                    <item id="item_10_41" type="image" x_size="1" value1="mov_avchd_fhd_50p_g_sp2.png">
+                    </item>
+                    <!--IC_LVF_AVCHD_HD_60P_SP-->
+                    <item id="item_10_42" type="image" x_size="1" value1="lvf_avchd_hd_60p_sp2.png">
+                    </item>
+                    <!--IC_LVF_AVCHD_HD_50P_SP-->
+                    <item id="item_10_43" type="image" x_size="1" value1="lvf_avchd_hd_50p_sp2.png">
+                    </item>
+                    <!--IC_LVF_MP4_FHD_60P_SP-->
+                    <item id="item_10_44" type="image" x_size="1" value1="lvf_mp4_fhd_60p_sp2.png">
+                    </item>
+                    <!--IC_LVF_MP4_FHD_50P_SP-->
+                    <item id="item_10_45" type="image" x_size="1" value1="lvf_mp4_fhd_50p_sp2.png">
+                    </item>
+                    <!--IC_LVF_MP4_QFHD_30P_SP-->
+                    <item id="item_10_46" type="image" x_size="1" value1="lvf_mp4_4k_30p.png">
+                    </item>
+                    <!--IC_LVF_MP4_QFHD_25P_SP-->
+                    <item id="item_10_47" type="image" x_size="1" value1="lvf_mp4_4k_25p.png">
+                    </item>
+                    <!--IC_LVF_MP4ED_C4K_24P_SP-->
+                    <item id="item_10_48" type="image" x_size="1" value1="lvf_mp4_c4k_24p.png">
+                    </item>
+                    <!--IC_LVF_MP4ED_QFHD_30P_SP-->
+                    <item id="item_10_49" type="image" x_size="1" value1="lvf_mp4_4k_30p.png">
+                    </item>
+                    <!--IC_LVF_MP4ED_QFHD_25P_SP-->
+                    <item id="item_10_50" type="image" x_size="1" value1="lvf_mp4_4k_25p.png">
+                    </item>
+                    <!--IC_LVF_MP4ED_QFHD_24P_SP-->
+                    <item id="item_10_51" type="image" x_size="1" value1="lvf_mp4_4k_24p.png">
+                    </item>
+                    <!--IC_LVF_MP4ED_FHD_60P_I_SP-->
+                    <item id="item_10_52" type="image" x_size="1" value1="lvf_mp4_fhd_60p_i.png">
+                    </item>
+                    <!--IC_LVF_MP4ED_FHD_50P_I_SP-->
+                    <item id="item_10_53" type="image" x_size="1" value1="lvf_mp4_fhd_50p_i.png">
+                    </item>
+                    <!--IC_LVF_MP4ED_FHD_60P_SP-->
+                    <item id="item_10_54" type="image" x_size="1" value1="lvf_mp4_fhd_60p_sp2.png">
+                    </item>
+                    <!--IC_LVF_MP4ED_FHD_50P_SP-->
+                    <item id="item_10_55" type="image" x_size="1" value1="lvf_mp4_fhd_50p_sp2.png">
+                    </item>
+                    <!--IC_LVF_MP4ED_FHD_30P_I_SP-->
+                    <item id="item_10_56" type="image" x_size="1" value1="lvf_mp4_fhd_30p_i.png">
+                    </item>
+                    <!--IC_LVF_MP4ED_FHD_25P_I_SP-->
+                    <item id="item_10_57" type="image" x_size="1" value1="lvf_mp4_fhd_25p_i.png">
+                    </item>
+                    <!--IC_LVF_MP4ED_FHD_30P_SP-->
+                    <item id="item_10_58" type="image" x_size="1" value1="lvf_mp4_fhd_30p_sp2.png">
+                    </item>
+                    <!--IC_LVF_MP4ED_FHD_25P_SP-->
+                    <item id="item_10_59" type="image" x_size="1" value1="lvf_mp4_fhd_25p_sp2.png">
+                    </item>
+                    <!--IC_LVF_MP4ED_FHD_24P_I_SP-->
+                    <item id="item_10_60" type="image" x_size="1" value1="lvf_mp4_fhd_24p_i.png">
+                    </item>
+                    <!--IC_LVF_MP4ED_FHD_24P_SP-->
+                    <item id="item_10_61" type="image" x_size="1" value1="lvf_mp4_fhd_24p_sp2.png">
+                    </item>
+                    <!--IC_LVF_MOV_C4K_24P_SP-->
+                    <item id="item_10_62" type="image" x_size="1" value1="lvf_mov_c4k_24p.png">
+                    </item>
+                    <!--IC_LVF_MOV_QFHD_30P_SP-->
+                    <item id="item_10_63" type="image" x_size="1" value1="lvf_mov_4k_30p.png">
+                    </item>
+                    <!--IC_LVF_MOV_QFHD_25P_SP-->
+                    <item id="item_10_64" type="image" x_size="1" value1="lvf_mov_4k_25p.png">
+                    </item>
+                    <!--IC_LVF_MOV_QFHD_24P_SP-->
+                    <item id="item_10_65" type="image" x_size="1" value1="lvf_mov_4k_24p.png">
+                    </item>
+                    <!--IC_LVF_MOV_FHD_60P_I_SP-->
+                    <item id="item_10_66" type="image" x_size="1" value1="lvf_mov_fhd_60p_i.png">
+                    </item>
+                    <!--IC_LVF_MOV_FHD_50P_I_SP-->
+                    <item id="item_10_67" type="image" x_size="1" value1="lvf_mov_fhd_50p_i.png">
+                    </item>
+                    <!--IC_LVF_MP4_QFHD_24P_SP-->
+                    <item id="item_10_68" type="image" x_size="1" value1="lvf_mp4_4k_24p.png">
+                    </item>
+                    <!--IC_LVF_SNAP_MOVIE_2S-->
+                    <item id="item_10_69" type="image" x_size="1" value1="lvf_snap_movie_2s_sp2.png">
+                    </item>
+                    <!--IC_LVF_SNAP_MOVIE_4S-->
+                    <item id="item_10_70" type="image" x_size="1" value1="lvf_snap_movie_4s_sp2.png">
+                    </item>
+                    <!--IC_LVF_SNAP_MOVIE_6S-->
+                    <item id="item_10_71" type="image" x_size="1" value1="lvf_snap_movie_6s_sp2.png">
+                    </item>
+                    <!--IC_LVF_SNAP_MOVIE_8S-->
+                    <item id="item_10_72" type="image" x_size="1" value1="lvf_snap_movie_8s_sp2.png">
+                    </item>
+                    <!--ICFO_END-->
+                    <item id="item_11_0" type="hide" x_size="1">
+                    </item>
+                    <!--IC_LVF_COMMON_EX_SP-->
+                    <item id="item_11_1" type="image" x_size="1" value1="lvf_common_ex_sp1.png" value2="lvf_common_ex_sp2.png">
+                    </item>
+                </area>
+                <!--写真-->
+                <area id="area_id_e" x_pos="5" x_size="1" folder="E">
+                    <!--ICFO_END-->
+                    <item id="item_12_0" type="hide" x_size="1">
+                    </item>
+                    <!--IC_LVF_SIZE_BACK_NORMAL-->
+                    <item id="item_12_1" type="image" x_size="1" value1="lvf_size_back_normal.png">
+                    </item>
+                    <!--IC_LVF_SIZE_BACK_NORMAL-->
+                    <item id="item_12_2" type="image" x_size="1" value1="lvf_size_back_film.png">
+                    </item>
+                    <!--IC_LVF_SIZE_BACK_NORMAL-->
+                    <item id="item_12_3" type="image" x_size="1" value1="lvf_size_back_hdtv.png">
+                    </item>
+                    <!--IC_LVF_SIZE_BACK_NORMAL-->
+                    <item id="item_12_4" type="image" x_size="1" value1="lvf_size_back_square_sp1.png">
+                    </item>
+                    <item id="item_12_5" type="image" x_size="1" value1="lvf_size_back.png" value2="lvf_size_4_3.png">
+                    </item>
+                    <item id="item_12_6" type="image" x_size="1" value1="lvf_size_back.png" value2="lvf_size_3_2.png">
+                    </item>
+                    <item id="item_12_7" type="image" x_size="1" value1="lvf_size_back.png" value2="lvf_size_16_9.png">
+                    </item>
+                    <item id="item_12_8" type="image" x_size="1" value1="lvf_size_back.png" value2="lvf_size_1_1.png">
+                    </item>
+                    <!--ICFO_END-->
+                    <item id="item_13_0" type="hide" x_size="1">
+                    </item>
+                    <!--IC_LVF_SIZE_BACK_HDTV_L-->
+                    <item id="item_12_3_13_1" type="image" x_size="1" value1="lvf_size_back_hdtv_l.png">
+                    </item>
+                    <!--IC_LVF_SIZE_BACK_HDTV_M-->
+                    <item id="item_12_3_13_2" type="image" x_size="1" value1="lvf_size_back_hdtv_m.png">
+                    </item>
+                    <!--IC_LVF_SIZE_BACK_HDTV_S-->
+                    <item id="item_12_3_13_3" type="image" x_size="1" value1="lvf_size_back_hdtv_s.png">
+                    </item>
+                    <!--IC_LVF_SIZE_BACK_HDTV_M_EX-->
+                    <item id="item_12_3_13_4" type="image" x_size="1" value1="lvf_size_back_hdtv_m_ex.png">
+                    </item>
+                    <!--IC_LVF_SIZE_BACK_HDTV_S_EX-->
+                    <item id="item_12_3_13_5" type="image" x_size="1" value1="lvf_size_back_hdtv_s_ex.png">
+                    </item>
+                    <!--IC_LVF_SIZE_BACK_SQUARE_L-->
+                    <item id="item_12_4_13_1" type="image" x_size="1" value1="lvf_size_back_square_sp1_l.png">
+                    </item>
+                    <!--IC_LVF_SIZE_BACK_SQUARE_M-->
+                    <item id="item_12_4_13_2" type="image" x_size="1" value1="lvf_size_back_square_m.png">
+                    </item>
+                    <!--IC_LVF_SIZE_BACK_SQUARE_S-->
+                    <item id="item_12_4_13_3" type="image" x_size="1" value1="lvf_size_back_square_sp1_s.png">
+                    </item>
+                    <!--IC_LVF_SIZE_BACK_SQUARE_M_EX-->
+                    <item id="item_12_4_13_4" type="image" x_size="1" value1="lvf_size_back_square_sp1_m_ex.png">
+                    </item>
+                    <!--IC_LVF_SIZE_BACK_SQUARE_S_EX-->
+                    <item id="item_12_4_13_5" type="image" x_size="1" value1="lvf_size_back_square_sp1_s_ex.png">
+                    </item>
+                    <!--IC_LVF_SIZE_4_3-->
+                    <item id="item_12_5_13_0" type="image" x_size="1" value1="lvf_size_4_3.png">
+                    </item>
+                    <!--IC_LVF_SIZE_4_3 & IC_LVF_SIZE_L-->
+                    <item id="item_12_5_13_1" type="image" x_size="1" value1="lvf_size_4_3_l.png">
+                    </item>
+                    <!--IC_LVF_SIZE_4_3 & IC_LVF_SIZE_M-->
+                    <item id="item_12_5_13_2" type="image" x_size="1" value1="lvf_size_4_3_m.png">
+                    </item>
+                    <!--IC_LVF_SIZE_4_3 & IC_LVF_SIZE_S-->
+                    <item id="item_12_5_13_3" type="image" x_size="1" value1="lvf_size_4_3_s.png">
+                    </item>
+                    <!--IC_LVF_SIZE_4_3 & IC_LVF_SIZE_M_EX-->
+                    <item id="item_12_5_13_4" type="image" x_size="1" value1="lvf_size_4_3_m_ex.png">
+                    </item>
+                    <!--IC_LVF_SIZE_4_3 & IC_LVF_SIZE_S_EX-->
+                    <item id="item_12_5_13_5" type="image" x_size="1" value1="lvf_size_4_3_s_ex.png">
+                    </item>
+                    <!--IC_LVF_SIZE_4_3 & IC_LVF_SIZE_4K-->
+                    <item id="item_12_5_13_6" type="image" x_size="1" value1="lvf_size_4_3_4k.png">
+                    </item>
+                    <!--IC_LVF_SIZE_3_2-->
+                    <item id="item_12_6_13_0" type="image" x_size="1" value1="lvf_size_3_2.png">
+                    </item>
+                    <!--IC_LVF_SIZE_3_2 & IC_LVF_SIZE_L-->
+                    <item id="item_12_6_13_1" type="image" x_size="1" value1="lvf_size_3_2_l.png">
+                    </item>
+                    <!--IC_LVF_SIZE_3_2 & IC_LVF_SIZE_M-->
+                    <item id="item_12_6_13_2" type="image" x_size="1" value1="lvf_size_3_2_m.png">
+                    </item>
+                    <!--IC_LVF_SIZE_3_2 & IC_LVF_SIZE_S-->
+                    <item id="item_12_6_13_3" type="image" x_size="1" value1="lvf_size_3_2_s.png">
+                    </item>
+                    <!--IC_LVF_SIZE_3_2 & IC_LVF_SIZE_M_EX-->
+                    <item id="item_12_6_13_4" type="image" x_size="1" value1="lvf_size_3_2_m_ex.png">
+                    </item>
+                    <!--IC_LVF_SIZE_3_2 & IC_LVF_SIZE_S_EX-->
+                    <item id="item_12_6_13_5" type="image" x_size="1" value1="lvf_size_3_2_s_ex.png">
+                    </item>
+                    <!--IC_LVF_SIZE_3_2 & IC_LVF_SIZE_4K-->
+                    <item id="item_12_6_13_6" type="image" x_size="1" value1="lvf_size_3_2_4k.png">
+                    </item>
+                    <!--IC_LVF_SIZE_16_9-->
+                    <item id="item_12_7_13_0" type="image" x_size="1" value1="lvf_size_16_9.png">
+                    </item>
+                    <!--IC_LVF_SIZE_16_9 & IC_LVF_SIZE_L-->
+                    <item id="item_12_7_13_1" type="image" x_size="1" value1="lvf_size_16_9_l.png">
+                    </item>
+                    <!--IC_LVF_SIZE_16_9 & IC_LVF_SIZE_M-->
+                    <item id="item_12_7_13_2" type="image" x_size="1" value1="lvf_size_16_9_m.png">
+                    </item>
+                    <!--IC_LVF_SIZE_16_9 & IC_LVF_SIZE_S-->
+                    <item id="item_12_7_13_3" type="image" x_size="1" value1="lvf_size_16_9_s.png">
+                    </item>
+                    <!--IC_LVF_SIZE_16_9 & IC_LVF_SIZE_M_EX-->
+                    <item id="item_12_7_13_4" type="image" x_size="1" value1="lvf_size_16_9_m_ex.png">
+                    </item>
+                    <!--IC_LVF_SIZE_16_9 & IC_LVF_SIZE_S_EX-->
+                    <item id="item_12_7_13_5" type="image" x_size="1" value1="lvf_size_16_9_s_ex.png">
+                    </item>
+                    <!--IC_LVF_SIZE_16_9 & IC_LVF_SIZE_4K-->
+                    <item id="item_12_7_13_6" type="image" x_size="1" value1="lvf_size_16_9_4k.png">
+                    </item>
+                    <!--IC_LVF_SIZE_1_1-->
+                    <item id="item_12_8_13_0" type="image" x_size="1" value1="lvf_size_1_1.png">
+                    </item>
+                    <!--IC_LVF_SIZE_1_1 & IC_LVF_SIZE_L-->
+                    <item id="item_12_8_13_1" type="image" x_size="1" value1="lvf_size_1_1_l.png">
+                    </item>
+                    <!--IC_LVF_SIZE_1_1 & IC_LVF_SIZE_M-->
+                    <item id="item_12_8_13_2" type="image" x_size="1" value1="lvf_size_1_1_m.png">
+                    </item>
+                    <!--IC_LVF_SIZE_1_1 & IC_LVF_SIZE_S-->
+                    <item id="item_12_8_13_3" type="image" x_size="1" value1="lvf_size_1_1_s.png">
+                    </item>
+                    <!--IC_LVF_SIZE_1_1 & IC_LVF_SIZE_M_EX-->
+                    <item id="item_12_8_13_4" type="image" x_size="1" value1="lvf_size_1_1_m_ex.png">
+                    </item>
+                    <!--IC_LVF_SIZE_1_1 & IC_LVF_SIZE_S_EX-->
+                    <item id="item_12_8_13_5" type="image" x_size="1" value1="lvf_size_1_1_s_ex.png">
+                    </item>
+                    <!--IC_LVF_SIZE_1_1 & IC_LVF_SIZE_4K-->
+                    <item id="item_12_8_13_6" type="image" x_size="1" value1="lvf_size_1_1_4k.png">
+                    </item>
+                </area>
+                <!--クオリティ-->
+                <area id="area_id_f" x_pos="6" x_size="1" folder="F">
+                    <!--ICFO_END-->
+                    <item id="item_15_0" type="hide" x_size="1">
+                    </item>
+                    <!--IC_LVF_QLY_FINE_S_SP-->
+                    <item id="item_15_1" type="image" x_size="1" value1="lvf_qly_fine_s_sp1.png">
+                    </item>
+                    <!--IC_LVF_QLY_STD_S_SP-->
+                    <item id="item_15_2" type="image" x_size="1" value1="lvf_qly_std_s_sp1.png">
+                    </item>
+                    <!--IC_LVF_QLY_RAW_STD_S_SP-->
+                    <item id="item_15_3" type="image" x_size="1" value1="lvf_qly_raw_std_s_sp1.png">
+                    </item>
+                    <!--IC_LVF_QLY_RAW_FINE_S_SP-->
+                    <item id="item_15_4" type="image" x_size="1" value1="lvf_qly_raw_fine_s_sp1.png">
+                    </item>
+                    <!--IC_LVF_QLY_RAW_S_SP-->
+                    <item id="item_15_5" type="image" x_size="1" value1="lvf_qly_raw_s_sp1.png">
+                    </item>
+                    <!--IC_LVF_QLY_3D_FINE_S_SP-->
+                    <item id="item_15_6" type="image" x_size="1" value1="lvf_qly_3d_fine_s_sp1.png">
+                    </item>
+                    <!--IC_LVF_QLY_3D_STD_S_SP-->
+                    <item id="item_15_7" type="image" x_size="1" value1="lvf_qly_3d_std_s_sp1.png">
+                    </item>
+                </area>
+                <!--ハイスピード動画フレームレート-->
+                <area id="area_id_ff" x_pos="5.5" x_size="1.5" folder="FF">
+                    <!--ICFO_END-->
+                    <item id="item_61_0" type="hide" x_size="1.5">
+                    </item>
+                    <!--IC_MOD_100FPS-->
+                    <item id="item_61_1" type="image" x_size="1.5" value1="mod_100fps.png">
+                    </item>
+                    <!--IC_MOD_120FPS-->
+                    <item id="item_61_2" type="image" x_size="1.5" value1="mod_120fps.png">
+                    </item>
+                    <!--IC_MOD_200FPS-->
+                    <item id="item_61_3" type="image" x_size="1.5" value1="mod_200fps.png">
+                    </item>
+                    <!--IC_MOD_240FPS-->
+                    <item id="item_61_4" type="image" x_size="1.5" value1="mod_240fps.png">
+                    </item>
+                    <!--IC_MOD_300FPS-->
+                    <item id="item_61_5" type="image" x_size="1.5" value1="mod_300fps.png">
+                    </item>
+                    <!--IC_MOD_360FPS-->
+                    <item id="item_61_6" type="image" x_size="1.5" value1="mod_360fps.png">
+                    </item>
+                </area>
+                <!--オートフォーカスモード-->
+                <area id="area_id_g" x_pos="7" x_size="1" folder="G">
+                    <!--ICFO_END-->
+                    <item id="item_16_0" type="hide" x_size="1">
+                    </item>
+                    <!--IC_LVF_AFMODE_AFS_SP-->
+                    <item id="item_16_1" type="image" x_size="1" value1="lvf_afmode_afs_sp1.png">
+                    </item>
+                    <!--IC_LVF_AFMODE_AFF_SP-->
+                    <item id="item_16_2" type="image" x_size="1" value1="lvf_afmode_aff_sp1.png">
+                    </item>
+                    <!--IC_LVF_AFMODE_AFC_SP-->
+                    <item id="item_16_3" type="image" x_size="1" value1="lvf_afmode_afc_sp1.png">
+                    </item>
+                    <!--IC_LVF_AF_LOCK-->
+                    <item id="item_16_4" type="image" x_size="1" value1="lvf_af_lock_sp1.png">
+                    </item>
+                    <!--IC_LVF_MFMODE-->
+                    <item id="item_16_5" type="image" x_size="1" value1="lvf_mfmode_sp1.png">
+                    </item>
+                    <!--IC_LVF_FOCUS_SELECT-->
+                    <item id="item_71_1" type="image" x_size="1" value1="lvf_mode_4k_focus_select.png">
+                    </item>
+                    <!--IC_LVF_WB_BKT_ON-->
+                    <item id="item_72_1" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="lvf_wb_bkt_on_sp1_2.png">
+                        </subitem>
+                        <subitem lang="fr" value1="lvf_wb_bkt_on_sp1_2_f.png">
+                        </subitem>
+                        <subitem lang="fr_CA" value1="lvf_wb_bkt_on_sp1_2_f.png">
+                        </subitem>
+                        <subitem lang="fr-CA" value1="lvf_wb_bkt_on_sp1_2_f.png">
+                        </subitem>
+                    </item>
+                    <!--IC_LVF_WB_BKT_ON_FORBID-->
+                    <item id="item_72_2" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="lvf_wb_bkt_on_x.png">
+                        </subitem>
+                        <subitem lang="fr" value1="lvf_wb_bkt_on_x_cf.png">
+                        </subitem>
+                        <subitem lang="fr_CA" value1="lvf_wb_bkt_on_x_cf.png">
+                        </subitem>
+                        <subitem lang="fr-CA" value1="lvf_wb_bkt_on_x_cf.png">
+                        </subitem>
+                    </item>
+                </area>
+                <!--フォーカスモード-->
+                <area id="area_id_h" x_pos="8" x_size="1" folder="H">
+                    <!--ICFO_END-->
+                    <item id="item_18_0" type="hide" x_size="1">
+                    </item>
+                    <!--IC_LVF_AF_MODE_1-->
+                    <item id="item_18_1" type="image" x_size="1" value1="lvf_af_mode_1_sp1.png">
+                    </item>
+                    <!--IC_LVF_AF_MODE_SPOT-->
+                    <item id="item_18_2" type="image" x_size="1" value1="lvf_af_mode_spot_sp1.png">
+                    </item>
+                    <!--IC_LVF_AF_MODE_FACE-->
+                    <item id="item_18_3" type="image" x_size="1" value1="lvf_af_mode_face_sp1.png">
+                    </item>
+                    <!--IC_LVF_AF_MODE_FACE_R-->
+                    <item id="item_18_4" type="image" x_size="1" value1="lvf_af_mode_face_r_sp1.png">
+                    </item>
+                    <!--IC_LVF_AF_MODE_TRACKING-->
+                    <item id="item_18_5" type="image" x_size="1" value1="lvf_af_mode_tracking_sp1.png">
+                    </item>
+                    <!--IC_LVF_AF_MODE_23-->
+                    <item id="item_18_6" type="image" x_size="1" value1="lvf_af_mode_23_sp1.png">
+                    </item>
+                    <!--IC_LVF_AF_MODE_PIN_SP-->
+                    <item id="item_18_7" type="image" x_size="1" value1="lvf_af_mode_pin_sp1.png">
+                    </item>
+                    <!--lvf_af_mode_49_sp1-->
+                    <item id="item_18_8" type="image" x_size="1" value1="lvf_af_mode_49_sp1.png">
+                    </item>
+                    <!--lvf_afc_49_point_horizontal-->
+                    <item id="item_18_9" type="image" x_size="1" value1="lvf_afc_49_point_horizontal.png">
+                    </item>
+                    <!--lvf_afc_49_point_vertical-->
+                    <item id="item_18_10" type="image" x_size="1" value1="lvf_afc_49_point_vertical.png">
+                    </item>
+                    <!--lvf_af_mode_custum_free-->
+                    <item id="item_18_11" type="image" x_size="1" value1="lvf_af_mode_custum_free.png">
+                    </item>
+                    <!--lvf_af_mode_custum_c1-->
+                    <item id="item_18_12" type="image" x_size="1" value1="lvf_af_mode_custum_c1.png">
+                    </item>
+                    <!--lvf_af_mode_custum_c2-->
+                    <item id="item_18_13" type="image" x_size="1" value1="lvf_af_mode_custum_c2.png">
+                    </item>
+                    <!--lvf_af_mode_custum_c3-->
+                    <item id="item_18_14" type="image" x_size="1" value1="lvf_af_mode_custum_c3.png">
+                    </item>
+                    <!--IC_LVF_AF_MODE_PINTSHIFT-->
+                    <item id="item_18_15" type="image" x_size="1" value1="lvf_snap_focus.png">
+                    </item>
+                    <!--IC_LVF_AF_MODE_CUSTOM_CENTER-->
+                    <item id="item_18_16" type="image" x_size="1" value1="lvf_afc_49_point_center.png">
+                    </item>
+                    <!--IC_LVF_AF_MODE_SPOT_FT-->
+                    <item id="item_18_17" type="image" x_size="1" value1="lvf_af_mode_spot_ft_sp1.png">
+                    </item>
+                </area>
+                <!--連写、オートブラケット、セルフタイマー-->
+                <area id="area_id_i" x_pos="9" x_size="1" folder="I">
+                    <!--ICFO_END-->
+                    <item id="item_19_0" type="hide" x_size="1">
+                    </item>
+                    <!--IC_LVF_BURST_FORBID_SH_SP-->
+                    <item id="item_19_1" type="image" x_size="1" value1="lvf_burst_forbid_sh_sp1.png">
+                    </item>
+                    <!--IC_LVF_BURST_FORBID_H-->
+                    <item id="item_19_2" type="image" x_size="1" value1="lvf_burst_forbid_h_sp1.png">
+                    </item>
+                    <!--IC_LVF_BURST_FORBID_LV_M-->
+                    <item id="item_19_3" type="image" x_size="1" value1="lvf_burst_forbid_lv_m_sp1.png">
+                    </item>
+                    <!--IC_LVF_BURST_FORBID_LV_L-->
+                    <item id="item_19_4" type="image" x_size="1" value1="lvf_burst_forbid_lv_l_sp1.png">
+                    </item>
+                    <!--IC_LVF_BURST_SH_SP-->
+                    <item id="item_19_5" type="image" x_size="1" value1="lvf_burst_sh_sp1.png">
+                    </item>
+                    <!--IC_LVF_BURST_H-->
+                    <item id="item_19_6" type="image" x_size="1" value1="lvf_burst_h_sp1.png">
+                    </item>
+                    <!--IC_LVF_BURST_LV_M-->
+                    <item id="item_19_7" type="image" x_size="1" value1="lvf_burst_lv_m_sp1.png">
+                    </item>
+                    <!--IC_LVF_BURST_LV_L-->
+                    <item id="item_19_8" type="image" x_size="1" value1="lvf_burst_lv_l_sp1.png">
+                    </item>
+                    <!--IC_LVF_AEB_SINGLE_FORBID_SP-->
+                    <item id="item_19_9" type="image" x_size="1" value1="lvf_aeb_single_forbid_sp1.png">
+                    </item>
+                    <!--IC_LVF_AB_FORBID-->
+                    <item id="item_19_10" type="image" x_size="1" value1="autobracket_forbid_1.png">
+                    </item>
+                    <!--IC_LVF_AEB_SINGLE_SP-->
+                    <item id="item_19_11" type="image" x_size="1" value1="lvf_aeb_single_sp1.png">
+                    </item>
+                    <!--IC_AB_LVF-->
+                    <item id="item_19_12" type="image" x_size="1" value1="autobracket_1.png">
+                    </item>
+                    <!--IC_LVF_S_TIMER_10S-->
+                    <item id="item_19_13" type="image" x_size="1" value1="lvf_s_timer_10s_sp1.png">
+                    </item>
+                    <!--IC_LVF_S_TIMER_10S_3-->
+                    <item id="item_19_14" type="image" x_size="1" value1="lvf_s_timer_10s_3_sp1.png">
+                    </item>
+                    <!--IC_LVF_S_TIMER_2S-->
+                    <item id="item_19_15" type="image" x_size="1" value1="lvf_s_timer_2s_sp1.png">
+                    </item>
+                    <!--REC_BURST_BURST_2FPS-->
+                    <item id="item_19_16" type="image" x_size="1" value1="rec_bst_2_sp1.png">
+                    </item>
+                    <!--REC_BURST_BURST_5FPS-->
+                    <item id="item_19_17" type="image" x_size="1" value1="rec_bst_5_sp1.png">
+                    </item>
+                    <!--REC_BURST_BURST_10FPS-->
+                    <item id="item_19_18" type="image" x_size="1" value1="rec_bst_speed_10.png">
+                    </item>
+                    <!--REC_BURST_BURST_40FPS-->
+                    <item id="item_19_19" type="image" x_size="1" value1="rec_bst_speed_40.png">
+                    </item>
+                    <!--REC_BURST_BURST_60FPS-->
+                    <item id="item_19_20" type="image" x_size="1" value1="rec_bst_speed_60.png">
+                    </item>
+                    <!--REC_BURST_BURST_AUTO-->
+                    <item id="item_19_21" type="image" x_size="1" value1="rec_bst_iauto_sp1.png">
+                    </item>
+                    <!--REC_BURST_BRACKET-->
+                    <item id="item_19_22" type="image" x_size="1" value1="rec_brk_p_m_sp1.png">
+                    </item>
+                    <!--REC_BURST_BURST_DISABLE-->
+                    <item id="item_19_23" type="image" x_size="1" value1="rec_bst_off_sp1.png">
+                    </item>
+                    <!--REC_BURST_BRACKET_DISABLE-->
+                    <item id="item_19_24" type="image" x_size="1" value1="rec_brk_no_set_sp1.png">
+                    </item>
+                    <!--REC_BURST_BURST_FLASH-->
+                    <item id="item_19_25" type="image" x_size="1" value1="rec_fls_bst_flash.png">
+                    </item>
+                    <!--REC_BURST_BURST_AF2FPS-->
+                    <item id="item_19_26" type="image" x_size="1" value1="rec_bst_speed_2_af.png">
+                    </item>
+                    <!--REC_BURST_BURST_AF5FPS-->
+                    <item id="item_19_27" type="image" x_size="1" value1="rec_bst_speed_5_af.png">
+                    </item>
+                    <!--REC_BURST_BURST_AF4FPS-->
+                    <item id="item_19_28" type="image" x_size="1" value1="rec_bst_af4fps_sp1_20.png">
+                    </item>
+                    <!--IC_INTERVAL_PLAY_80P_SP-->
+                    <item id="item_19_29" type="image" x_size="1" value1="ply_int_play_one_sp1_24.png">
+                    </item>
+                    <!--IC_KOMA_ANM_PLAY_80P_SP-->
+                    <item id="item_19_30" type="image" x_size="1" value1="normal_to_k_anima_play_80p.png">
+                    </item>
+                    <!--IC_LVF_PRM_R-->
+                    <item id="item_19_31" type="image" x_size="1" value1="lvf_rec_prm_r.png">
+                    </item>
+                    <!--IC_LVF_PRM_L-->
+                    <item id="item_19_32" type="image" x_size="1" value1="lvf_rec_prm_l.png">
+                    </item>
+                    <!--IC_LVF_PRM_U-->
+                    <item id="item_19_33" type="image" x_size="1" value1="lvf_rec_prm_u.png">
+                    </item>
+                    <!--IC_LVF_PRM_D-->
+                    <item id="item_19_34" type="image" x_size="1" value1="lvf_rec_prm_d.png">
+                    </item>
+                    <!--IC_LVF_MULTI_BKT_FORBID_SP-->
+                    <item id="item_19_35" type="image" x_size="1" value1="lvf_multi_bkt_x.png">
+                    </item>
+                    <!--IC_MULTIASPECT_REC_SP-->
+                    <item id="item_19_36" type="image" x_size="1" value1="lvf_multi_bkt_sp1.png">
+                    </item>
+                    <!--IC_LVF_4KPHOTO_PRE_BURST-->
+                    <item id="item_19_41" type="image" x_size="1" value1="lvf_mode_4k_pre_burst.png">
+                    </item>
+                    <!--IC_LVF_4KPHOTO_BURST-->
+                    <item id="item_19_42" type="image" x_size="1" value1="lvf_mode_4k_burst.png">
+                    </item>
+                    <!--IC_LVF_4KPHOTO_PHOTO-->
+                    <item id="item_19_43" type="image" x_size="1" value1="lvf_mode_4k_photo2.png">
+                    </item>
+                    <!--IC_LVF_4KPHOTO_PRE_BURST_FORBID-->
+                    <item id="item_19_44" type="image" x_size="1" value1="lvf_4k_pre_bst_forbit.png">
+                    </item>
+                    <!--IC_LVF_4KPHOTO_BURST_FORBID-->
+                    <item id="item_19_45" type="image" x_size="1" value1="lvf_4k_burst_forbit.png">
+                    </item>
+                    <!--IC_LVF_4KPHOTO_PHOTO_FORBID-->
+                    <item id="item_19_46" type="image" x_size="1" value1="lvf_4k_photo_s_s_forbid.png">
+                    </item>
+                    <!--IC_LVF_BURST_M-->
+                    <item id="item_19_47" type="image" x_size="1" value1="lvf_burst_m_sp1.png">
+                    </item>
+                    <!--IC_LVF_BURST_L-->
+                    <item id="item_19_48" type="image" x_size="1" value1="lvf_burst_l_sp1.png">
+                    </item>
+                    <!--IC_LVF_FOCUS_SELECT_SP-->
+                    <item id="item_19_49" type="image" x_size="1" value1="lvf_mode_4k_focus_select.png">
+                    </item>
+                    <!--IC_LVF_BURST_AF_L-->
+                    <item id="item_19_62" type="image" x_size="1" value1="lvf_burst_af_l_sp1.png">
+                    </item>
+                    <!--IC_LVF_BURST_AF_M-->
+                    <item id="item_19_63" type="image" x_size="1" value1="lvf_burst_af_m_sp1.png">
+                    </item>
+                    <!--IC_LVF_BURST_H-->
+                    <item id="item_19_64" type="image" x_size="1" value1="lvf_burst_h_sp1_2.png">
+                    </item>
+                    <!--IC_LVF_BURST_FORBID_AF_L-->
+                    <item id="item_19_65" type="image" x_size="1" value1="lvf_burst_forbid_af_l_sp1.png">
+                    </item>
+                    <!--IC_LVF_BURST_FORBID_AF_M-->
+                    <item id="item_19_66" type="image" x_size="1" value1="lvf_burst_forbid_af_m_sp1.png">
+                    </item>
+                    <!--IC_LVF_BURST_FORBID_H-->
+                    <item id="item_19_67" type="image" x_size="1" value1="lvf_burst_forbid_h_sp1_2.png">
+                    </item>
+                </area>
+                <!--カラーモード-->
+                <area id="area_id_j" x_pos="10" x_size="1" folder="J">
+                    <!--ICFO_END-->
+                    <item id="item_42_0" type="hide" x_size="1">
+                    </item>
+                    <!--TMPIMG_OTR_CHA_NAT_SP1-->
+                    <item id="item_42_1" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="rec_clr_nat_sp1.png">
+                        </subitem>
+                        <subitem lang="ja" value1="otr_cha_natural_sp1_jpn.png">
+                        </subitem>
+                        <subitem lang="fr" value1="otr_cha_nat_sp1.png">
+                        </subitem>
+                        <subitem lang="fr_CA" value1="otr_cha_nat_sp1.png">
+                        </subitem>
+                        <subitem lang="fr-CA" value1="otr_cha_nat_sp1.png">
+                        </subitem>
+                    </item>
+                    <!--TMPIMG_OTR_CHA_VIVID_SP1-->
+                    <item id="item_42_2" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="otr_cha_vivid_sp1.png">
+                        </subitem>
+                        <subitem lang="ja" value1="otr_cha_vivid_sp1_jpn.png">
+                        </subitem>
+                        <subitem lang="fr" value1="otr_cha_vivid_sp1_cfr_20.png">
+                        </subitem>
+                        <subitem lang="fr_CA" value1="otr_cha_vivid_sp1_cfr_20.png">
+                        </subitem>
+                        <subitem lang="fr-CA" value1="otr_cha_vivid_sp1_cfr_20.png">
+                        </subitem>
+                    </item>
+                    <!--TMPIMG_OTR_CHA_B_W_36_SP1-->
+                    <item id="item_42_3" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="otr_cha_b_w.png">
+                        </subitem>
+                        <subitem lang="ja" value1="otr_cha_b_w_jpn.png">
+                        </subitem>
+                        <subitem lang="fr" value1="otr_cha_b_w_cfr.png">
+                        </subitem>
+                        <subitem lang="fr_CA" value1="otr_cha_b_w_cfr.png">
+                        </subitem>
+                        <subitem lang="fr-CA" value1="otr_cha_b_w_cfr.png">
+                        </subitem>
+                    </item>
+                    <!--TMPIMG_OTR_CHA_SEPIA_SP1-->
+                    <item id="item_42_4" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="otr_cha_sepia.png">
+                        </subitem>
+                        <subitem lang="ja" value1="otr_cha_sepia_sp1_jpn.png">
+                        </subitem>
+                        <subitem lang="fr" value1="otr_cha_sepia_sp1_cfr.png">
+                        </subitem>
+                        <subitem lang="fr_CA" value1="otr_cha_sepia_sp1_cfr.png">
+                        </subitem>
+                        <subitem lang="fr-CA" value1="otr_cha_sepia_sp1_cfr.png">
+                        </subitem>
+                    </item>
+                    <!--TMPIMG_OTR_CHA_COOL_SP1-->
+                    <item id="item_42_5" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="otr_cha_cool_sp1.png">
+                        </subitem>
+                        <subitem lang="ja" value1="otr_cha_cool_sp1_jpn.png">
+                        </subitem>
+                        <subitem lang="fr" value1="otr_cha_cool_sp1_cfr.png">
+                        </subitem>
+                        <subitem lang="fr_CA" value1="otr_cha_cool_sp1_cfr.png">
+                        </subitem>
+                        <subitem lang="fr-CA" value1="otr_cha_cool_sp1_cfr.png">
+                        </subitem>
+                    </item>
+                    <!--TMPIMG_OTR_CHA_WARM_SP1-->
+                    <item id="item_42_6" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="otr_cha_warm_sp1.png">
+                        </subitem>
+                        <subitem lang="ja" value1="otr_cha_warm_sp1_jpn.png">
+                        </subitem>
+                        <subitem lang="fr" value1="otr_cha_chaud_sp1.png">
+                        </subitem>
+                        <subitem lang="fr_CA" value1="otr_cha_chaud_sp1.png">
+                        </subitem>
+                        <subitem lang="fr-CA" value1="otr_cha_chaud_sp1.png">
+                        </subitem>
+                    </item>
+                    <!--TMPIMG_OTR_CHA_HAPPY_SP1-->
+                    <item id="item_42_7" type="image" x_size="1" value1="otr_cha_happy_sp1.png">
+                    </item>
+                    <!--TMPIMG_REC_CLR_HAPPY_SP1-->
+                    <item id="item_42_8" type="image" x_size="1" value1="rec_clr_happy.png">
+                    </item>
+                </area>
+                <!--マクロ-->
+                <area id="area_id_l" x_pos="11" x_size="1" folder="L">
+                    <!--ICFO_END-->
+                    <item id="item_41_0" type="hide" x_size="1">
+                    </item>
+                    <!--TMPIMG_REC_AFC_MACRO_SP1-->
+                    <item id="item_41_1" type="image" x_size="1" value1="rec_afc_macro_sp1.png">
+                    </item>
+                    <!--TMPIMG_REC_ZOM_ZOOMMACRO_SP1-->
+                    <item id="item_41_2" type="image" x_size="1" value1="rec_afc_macro_zoom.png">
+                    </item>
+                    <!--TMPIMG_REC_ZOM_TELE_MACRO_SP1-->
+                    <item id="item_41_3" type="image" x_size="1" value1="rec_zom_tele_macro_sp1.png">
+                    </item>
+                    <!--TMPIMG_REC_MF_SP1-->
+                    <item id="item_41_4" type="image" x_size="1" value1="otr_cha_mf.png">
+                    </item>
+                </area>
+
+                <!--動画優先モード(アイコン)-->
+                <area id="area_id_c_d" x_pos="2" x_size="3.3" folder="C_D">
+                    <!--ICFO_END-->
+                    <item id="item_52_0" type="hide" x_size="3.3">
+                    </item>
+                    <!--IC_LVF_MOV_TYPE_AVCHD-->
+                    <item id="item_52_1" type="image" x_size="3.3" value1="lvf_mov_type_avchd.png">
+                    </item>
+                    <!--IC_LVF_MOV_TYPE_MP4-->
+                    <item id="item_52_2" type="image" x_size="3.3" value1="lvf_mov_type_mp4.png">
+                    </item>
+                    <!--IC_LVF_MOV_TYPE_MP4_LPCM-->
+                    <item id="item_52_3" type="image" x_size="3.3" value1="lvf_mov_type_mp4_lpcm.png">
+                    </item>
+                    <!--IC_LVF_MOV_TYPE_MOV-->
+                    <item id="item_52_4" type="image" x_size="3.3" value1="lvf_mov_type_mov.png">
+                    </item>
+                    <!--IC_LVF_MOV_TYPE_MP4_SNAP-->
+                    <item id="item_52_5" type="image" x_size="3.3" value1="lvf_mov_type_mp4_snap.png">
+                    </item>
+                    <!--ICFO_END-->
+                    <item id="item_53_0" type="hide" x_size="3.3">
+                    </item>
+                    <!--IC_LVF_MOV_MODE_C4K-->
+                    <item id="item_53_1" type="image" x_size="3.3" value1="lvf_mov_mode_c4k.png">
+                    </item>
+                    <!--IC_LVF_MOV_MODE_4K-->
+                    <item id="item_53_2" type="image" x_size="3.3" value1="lvf_mov_mode_4k.png">
+                    </item>
+                    <!--IC_LVF_MOV_MODE_FHD-->
+                    <item id="item_53_3" type="image" x_size="3.3" value1="lvf_mov_mode_fhd.png">
+                    </item>
+                    <!--IC_LVF_MOV_MODE_HD-->
+                    <item id="item_53_4" type="image" x_size="3.3" value1="lvf_mov_mode_hd.png">
+                    </item>
+                    <!--IC_LVF_MOV_MODE_VGA-->
+                    <item id="item_53_5" type="image" x_size="3.3" value1="lvf_mov_mode_vga.png">
+                    </item>
+                    <!--ICFO_END-->
+                    <item id="item_54_0" type="hide" x_size="3.3">
+                    </item>
+                    <!--IC_LVF_MOV_MODE_200M-->
+                    <item id="item_54_1" type="image" x_size="3.3" value1="lvf_mov_mode_200mbps.png">
+                    </item>
+                    <!--IC_LVF_MOV_MODE_100M-->
+                    <item id="item_54_2" type="image" x_size="3.3" value1="lvf_mov_mode_100mbps.png">
+                    </item>
+                    <!--IC_LVF_MOV_MODE__72M-->
+                    <item id="item_54_3" type="image" x_size="3.3" value1="lvf_mov_mode_72mbps.png">
+                    </item>
+                    <!--IC_LVF_MOV_MODE__50M-->
+                    <item id="item_54_4" type="image" x_size="3.3" value1="lvf_mov_mode_50mbps.png">
+                    </item>
+                    <!--IC_LVF_MOV_MODE__28M-->
+                    <item id="item_54_5" type="image" x_size="3.3" value1="lvf_mov_mode_28mbps.png">
+                    </item>
+                    <!--IC_LVF_MOV_MODE__24M-->
+                    <item id="item_54_6" type="image" x_size="3.3" value1="lvf_mov_mode_24mbps.png">
+                    </item>
+                    <!--IC_LVF_MOV_MODE__20M-->
+                    <item id="item_54_7" type="image" x_size="3.3" value1="lvf_mov_mode_20mbps.png">
+                    </item>
+                    <!--IC_LVF_MOV_MODE__17M-->
+                    <item id="item_54_8" type="image" x_size="3.3" value1="lvf_mov_mode_17mbps.png">
+                    </item>
+                    <!--IC_LVF_MOV_MODE__10M-->
+                    <item id="item_54_9" type="image" x_size="3.3" value1="lvf_mov_mode_10mbps.png">
+                    </item>
+                    <!--IC_LVF_MOV_MODE___4M-->
+                    <item id="item_54_10" type="image" x_size="3.3" value1="lvf_mov_mode_4mbps.png">
+                    </item>
+                    <!--ICFO_END-->
+                    <item id="item_55_0" type="hide" x_size="3.3">
+                    </item>
+                    <!--IC_LVF_MOV_MODE_ALL_I-->
+                    <item id="item_55_1" type="image" x_size="3.3" value1="lvf_mov_mode_all_intra.png">
+                    </item>
+                    <!--IC_LVF_MOV_MODE_IPB-->
+                    <item id="item_55_2" type="image" x_size="3.3" value1="lvf_mov_mode_ipb.png">
+                    </item>
+                    <!--ICFO_END-->
+                    <item id="item_56_0" type="hide" x_size="3.3">
+                    </item>
+                    <!--Ex-->
+                    <item id="item_56_1" type="image" x_size="3.3" value1="lvf_mov_mode_ex.png">
+                    </item>
+                </area>
+                <!--VFRフレームレート(テキスト)-->
+                <area id="area_id_e_f" x_pos="5.5" x_size="1.7">
+                    <!--ICFO_END-->
+                    <item id="item_57_0" type="hide" x_size="1.7">
+                    </item>
+                    <!--frame_rate(1～96)-->
+                    <item id="item_57_1" type="embeded" x_size="1.7" value1="frame_rate">
+                    </item>
+                    <!--eOSD_MOV_FRAMERATE_NON-->
+                    <item id="item_58_0" type="hide" x_size="1.7">
+                    </item>
+                    <!--eOSD_MOV_FRAMERATE_60P-->
+                    <item id="item_58_1" type="embeded" x_size="1.7" value1="59.94p">
+                    </item>
+                    <!--eOSD_MOV_FRAMERATE_50P-->
+                    <item id="item_58_2" type="embeded" x_size="1.7" value1="50.00p">
+                    </item>
+                    <!--eOSD_MOV_FRAMERATE_60i-->
+                    <item id="item_58_3" type="embeded" x_size="1.7" value1="59.94i">
+                    </item>
+                    <!--eOSD_MOV_FRAMERATE_50i-->
+                    <item id="item_58_4" type="embeded" x_size="1.7" value1="50.00i">
+                    </item>
+                    <!--eOSD_MOV_FRAMERATE_30P-->
+                    <item id="item_58_5" type="embeded" x_size="1.7" value1="29.97p">
+                    </item>
+                    <!--eOSD_MOV_FRAMERATE_25P-->
+                    <item id="item_58_6" type="embeded" x_size="1.7" value1="25.00p">
+                    </item>
+                    <!--eOSD_MOV_FRAMERATE_24_00P-->
+                    <item id="item_58_7" type="embeded" x_size="1.7" value1="24.00p">
+                    </item>
+                    <!--eOSD_MOV_FRAMERATE_24p-->
+                    <item id="item_58_8" type="embeded" x_size="1.7" value1="23.98p">
+                    </item>
+                </area>
+           </panel>
+
+            <!--最下段パネル-->
+            <panel id="panel_id_bottom" x_width="12">
+                <!--動画記録関連-->
+                <area id="area_id_m" x_pos="0" x_size="1" folder="M">
+                    <!--ICFO_END-->
+                    <item id="item_43_0" type="hide" x_size="1">
+                    </item>
+                    <!--動画記録停止警告-->
+                    <item id="item_43_1" type="image" x_size="1" value1="mov_overheat.png">
+                    </item>
+                    <!--動画記録中の静止画撮影通知/TMPIMG_REC_RMD_PHOTO_SP1-->
+                    <item id="item_44_1" type="image" x_size="1" value1="rec_rmd_photo.png">
+                    </item>
+                </area>
+                <!--測光モード-->
+                <area id="area_id_n" x_pos="1" x_size="1" folder="N">
+                    <!--ICFO_END-->
+                    <item id="item_25_0" type="hide" x_size="1">
+                    </item>
+                    <!--IC_LVF_SOKKOSPOT-->
+                    <item id="item_25_1" type="image" x_size="1" value1="rec_meter_spot_sp1.png">
+                    </item>
+                    <!--IC_LVF_SOKKOHYOKA-->
+                    <item id="item_25_2" type="image" x_size="1" value1="rec_meter_multi_sp1.png">
+                    </item>
+                    <!--IC_LVF_SOKKOCHUO-->
+                    <item id="item_25_3" type="image" x_size="1" value1="rec_meter_center_sp1.png">
+                    </item>
+                    <!--IC_FN_TOUCH_AE_ON-->
+                    <item id="item_25_4" type="image" x_size="1" value1="lvf_touch_ae__af_shutter.png">
+                    </item>
+                    <!--IC_LVF_AE_LOCK-->
+                    <item id="item_26_1" type="image" x_size="1" value1="lvf_ae_lock_sp1.png">
+                    </item>
+                </area>
+                <!--プログラムシフト/ボケコン-->
+                <area id="area_id_o" x_pos="2" x_size="1" folder="O">
+                    <!--ICFO_END-->
+                    <item id="item_27_0" type="hide" x_size="1">
+                    </item>
+                    <!--IC_LVF_P_SHIFT_SP-->
+                    <item id="item_27_1" type="image" x_size="1" value1="lvf_p_shift_sp1.png">
+                    </item>
+                    <!--IC_LVF_BOKE-->
+                    <item id="item_62_1" type="image" x_size="1" value1="rec_lvf_boke.png">
+                    </item>
+                </area>
+                <!--絞り(テキスト)-->
+                <area id="area_id_p" x_pos="3" x_size="1" folder="P">
+                    <!--ICFO_END-->
+                    <item id="item_28_0" type="hide" x_size="1">
+                    </item>
+                    <item id="item_29_0" type="embeded" x_size="1" value1="focus">
+                    </item>
+                    <item id="item_29_1" type="embeded" x_size="1" value1="lvf_20_f_auto_1.png">
+                    </item>
+                    <!--IC_LVF_WB_BKT_ON-->
+                    <item id="item_73_1" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="lvf_wb_bkt_on_sp1_2.png">
+                        </subitem>
+                        <subitem lang="fr" value1="lvf_wb_bkt_on_sp1_2_f.png">
+                        </subitem>
+                        <subitem lang="fr_CA" value1="lvf_wb_bkt_on_sp1_2_f.png">
+                        </subitem>
+                        <subitem lang="fr-CA" value1="lvf_wb_bkt_on_sp1_2_f.png">
+                        </subitem>
+                    </item>
+                    <!--IC_LVF_WB_BKT_ON_FORBID-->
+                    <item id="item_73_2" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="lvf_wb_bkt_on_x.png">
+                        </subitem>
+                        <subitem lang="fr" value1="lvf_wb_bkt_on_x_cf.png">
+                        </subitem>
+                        <subitem lang="fr_CA" value1="lvf_wb_bkt_on_x_cf.png">
+                        </subitem>
+                        <subitem lang="fr-CA" value1="lvf_wb_bkt_on_x_cf.png">
+                        </subitem>
+                    </item>
+                </area>
+                <!--シャッタースピード(テキスト)-->
+                <area id="area_id_q" x_pos="4" x_size="2">
+                    <!--ICFO_END-->
+                    <item id="item_30_0" type="hide" x_size="2">
+                    </item>
+                    <item id="item_31_1" type="embeded" x_size="2" value1="shatterspeed">
+                    </item>
+                </area>
+                <!--露出(サイズ２倍）-->
+                <area id="area_id_r" x_pos="6" x_size="2" folder="R">
+                    <!--ICFO_END-->
+                    <item id="item_32_0" type="hide" x_size="2">
+                    </item>
+                    <!--IC_ROSHUTU_PM0_SP-->
+                    <item id="item_32_1" type="image" x_size="2" value1="roshutu_pm0_sp1.png">
+                    </item>
+                    <!--IC_P3EV_ROSHUTU_BAR_SP-->
+                    <item id="item_32_2" type="image" x_size="2" value1="p3ev_roshutu_bar_sp1.png">
+                    </item>
+                    <!--IC_M3EV_ROSHUTU_BAR_SP-->
+                    <item id="item_32_3" type="image" x_size="2" value1="m3ev_roshutu_bar_sp1.png">
+                    </item>
+                    <!--IC_P5EV_ROSHUTU_BAR_SP-->
+                    <item id="item_32_4" type="image" x_size="2" value1="p5ev_roshutu_bar_sp1.png">
+                    </item>
+                    <!--IC_M5EV_ROSHUTU_BAR_SP-->
+                    <item id="item_32_5" type="image" x_size="2" value1="m5ev_roshutu_bar_sp1.png">
+                    </item>
+                    <!--補正値から抽出-->
+                    <item id="item_32_6" type="image" x_size="1" value1="rec_exp_adjust.png">
+                    </item>
+                    <!--IC_ROSHUTU_BAR-->
+                    <item id="item_32_7" type="image" x_size="1" value1="roshutu_bar_sp1.png">
+                    </item>
+                    <!--IC_ROSHUTU_BAR_H_0-->
+                    <item id="item_32_8" type="image" x_size="1" value1="roshutu_bar_h_0_sp1.png">
+                    </item>
+                    <!--TMPIMG_OTR_NUM_M_2_SP1-->
+                    <item id="item_33_9" type="image" x_size="1" value1="otr_num_m_2_sp1.png">
+                    </item>
+                    <!--TMPIMG_OTR_NUM_M_1_2_D_3_SP1-->
+                    <item id="item_33_10" type="image" x_size="1" value1="otr_num_m_1_2_d_3_sp1.png">
+                    </item>
+                    <!--TMPIMG_OTR_NUM_M_1_1_D_3_SP1-->
+                    <item id="item_33_11" type="image" x_size="1" value1="otr_num_m_1_1_d_3_sp1.png">
+                    </item>
+                    <!--TMPIMG_OTR_NUM_M_1_SP1-->
+                    <item id="item_33_12" type="image" x_size="1" value1="otr_num_m_1_sp1.png">
+                    </item>
+                    <!--TMPIMG_OTR_NUM_M_2_D_3_SP1-->
+                    <item id="item_33_13" type="image" x_size="1" value1="otr_num_m_2_d_3_sp1.png">
+                    </item>
+                    <!--TMPIMG_OTR_NUM_M_1_D_3_SP1-->
+                    <item id="item_33_14" type="image" x_size="1" value1="otr_num_m_1_d_3_sp1.png">
+                    </item>
+                    <!--TMPIMG_OTR_NUM_P_1_D_3_SP1-->
+                    <item id="item_33_16" type="image" x_size="1" value1="otr_num_p_1_d_3_sp1.png">
+                    </item>
+                    <!--TMPIMG_OTR_NUM_P_2_D_3_SP1-->
+                    <item id="item_33_17" type="image" x_size="1" value1="otr_num_p_2_d_3_sp1.png">
+                    </item>
+                    <!--TMPIMG_OTR_NUM_P_1_SP1-->
+                    <item id="item_33_18" type="image" x_size="1" value1="otr_num_p_1_sp1.png">
+                    </item>
+                    <!--TMPIMG_OTR_NUM_P_1_1_D_3_SP1-->
+                    <item id="item_33_19" type="image" x_size="1" value1="otr_num_p_1_1_d_3_sp1.png">
+                    </item>
+                    <!--TMPIMG_OTR_NUM_P_1_2_D_3_SP1-->
+                    <item id="item_33_20" type="image" x_size="1" value1="otr_num_p_1_2_d_3_sp1.png">
+                    </item>
+                    <!--TMPIMG_OTR_NUM_P_2_SP1-->
+                    <item id="item_33_21" type="image" x_size="1" value1="otr_num_p_2_sp1.png">
+                    </item>
+                    <!--IC_ROSHUTU_BAR_H_1-->
+                    <item id="item_33_99" type="embeded" x_size="2" value1="roshutu_bar_h_1_sp1.png">
+                    </item>
+                    <!--IC_LVF_WB_BKT_ON-->
+                    <item id="item_74_1" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="lvf_wb_bkt_on_sp1_2.png">
+                        </subitem>
+                        <subitem lang="fr" value1="lvf_wb_bkt_on_sp1_2_f.png">
+                        </subitem>
+                        <subitem lang="fr_CA" value1="lvf_wb_bkt_on_sp1_2_f.png">
+                        </subitem>
+                        <subitem lang="fr-CA" value1="lvf_wb_bkt_on_sp1_2_f.png">
+                        </subitem>
+                    </item>
+                    <!--IC_LVF_WB_BKT_ON_FORBID-->
+                    <item id="item_74_2" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="lvf_wb_bkt_on_x.png">
+                        </subitem>
+                        <subitem lang="fr" value1="lvf_wb_bkt_on_x_cf.png">
+                        </subitem>
+                        <subitem lang="fr_CA" value1="lvf_wb_bkt_on_x_cf.png">
+                        </subitem>
+                        <subitem lang="fr-CA" value1="lvf_wb_bkt_on_x_cf.png">
+                        </subitem>
+                    </item>
+                </area>
+                <!--ISO(サイズ２倍）-->
+                <area id="area_id_s" x_pos="8" x_size="2" folder="S">
+                    <!--ICFO_END-->
+                    <item id="item_36_0" type="hide" x_size="2">
+                    </item>
+                    <!--IC_LVF_ISO_100-->
+                    <item id="item_36_1" type="image" x_size="2" value1="lvf_iso_100_sp1.png">
+                    </item>
+                    <!--IC_LVF_ISO_L125-->
+                    <item id="item_36_2" type="image" x_size="2" value1="lvf_iso_l125.png">
+                    </item>
+                    <!--IC_LVF_ISO_L160-->
+                    <item id="item_36_3" type="image" x_size="2" value1="lvf_iso_l160.png">
+                    </item>
+                    <!--IC_LVF_ISO_200-->
+                    <item id="item_36_4" type="image" x_size="2" value1="lvf_iso_200_sp1.png">
+                    </item>
+                    <!--IC_LVF_ISO_250-->
+                    <item id="item_36_5" type="image" x_size="2" value1="lvf_iso_250_sp1.png">
+                    </item>
+                    <!--IC_LVF_ISO_320-->
+                    <item id="item_36_6" type="image" x_size="2" value1="lvf_iso_320_sp1.png">
+                    </item>
+                    <!--IC_LVF_ISO_400-->
+                    <item id="item_36_7" type="image" x_size="2" value1="lvf_iso_400_sp1.png">
+                    </item>
+                    <!--IC_LVF_ISO_500-->
+                    <item id="item_36_8" type="image" x_size="2" value1="lvf_iso_500_sp1.png">
+                    </item>
+                    <!--IC_LVF_ISO_640-->
+                    <item id="item_36_9" type="image" x_size="2" value1="lvf_iso_640_sp1.png">
+                    </item>
+                    <!--IC_LVF_ISO_800-->
+                    <item id="item_36_10" type="image" x_size="2" value1="lvf_iso_800_sp1.png">
+                    </item>
+                    <!--IC_LVF_ISO_1000-->
+                    <item id="item_36_11" type="image" x_size="2" value1="lvf_iso_1000_sp1.png">
+                    </item>
+                    <!--IC_LVF_ISO_1250-->
+                    <item id="item_36_12" type="image" x_size="2" value1="lvf_iso_1250_sp1.png">
+                    </item>
+                    <!--IC_LVFISO_1600-->
+                    <item id="item_36_13" type="image" x_size="2" value1="lvf_iso_1600_sp1.png">
+                    </item>
+                    <!--IC_LVF_ISO_2000-->
+                    <item id="item_36_14" type="image" x_size="2" value1="lvf_iso_2000_sp1.png">
+                    </item>
+                    <!--IC_LVF_ISO_2500-->
+                    <item id="item_36_15" type="image" x_size="2" value1="lvf_iso_2500_sp1.png">
+                    </item>
+                    <!--IC_LVF_ISO_3200-->
+                    <item id="item_36_16" type="image" x_size="2" value1="lvf_iso_3200_sp1.png">
+                    </item>
+                    <!--IC_LVF_ISO_4000-->
+                    <item id="item_36_17" type="image" x_size="2" value1="lvf_iso_4000_sp1.png">
+                    </item>
+                    <!--IC_LVF_ISO_5000-->
+                    <item id="item_36_18" type="image" x_size="2" value1="lvf_iso_5000_sp1.png">
+                    </item>
+                    <!--IC_LVF_ISO_6400-->
+                    <item id="item_36_19" type="image" x_size="2" value1="lvf_iso_6400_sp1.png">
+                    </item>
+                    <!--IC_LVF_ISO_8000_SP-->
+                    <item id="item_36_20" type="image" x_size="2" value1="lvf_iso_8000_sp1.png">
+                    </item>
+                    <!--IC_LVF_ISO_8500_SP-->
+                    <item id="item_36_21" type="image" x_size="2" value1="lvf_iso_8500_sp1.png">
+                    </item>
+                    <!--IC_LVF_ISO_10000_SP-->
+                    <item id="item_36_22" type="image" x_size="2" value1="lvf_iso_10000_sp1.png">
+                    </item>
+                    <!--IC_LVF_ISO_12500_SP-->
+                    <item id="item_36_23" type="image" x_size="2" value1="lvf_iso_12500_sp1.png">
+                    </item>
+                    <!--IC_LVF_ISO_12800_SP-->
+                    <item id="item_36_24" type="image" x_size="2" value1="lvf_iso_12800_sp1.png">
+                    </item>
+                    <!--IC_LVF_ISO_H16000-->
+                    <item id="item_36_25" type="image" x_size="2" value1="lvf_iso_h16000_sp1.png">
+                    </item>
+                    <!--IC_LVF_ISO_H20000-->
+                    <item id="item_36_26" type="image" x_size="2" value1="lvf_iso_h20000_sp1.png">
+                    </item>
+                    <!--IC_LVF_ISO_H25600-->
+                    <item id="item_36_27" type="image" x_size="2" value1="lvf_iso_h25600_sp1.png">
+                    </item>
+                    <!--IC_LVF_ISO_AUTO-->
+                    <item id="item_36_28" type="image" x_size="2" value1="lvf_iso_auto_sp1.png">
+                    </item>
+                    <!--IC_LVF_ISO_IAUTO-->
+                    <item id="item_36_29" type="image" x_size="2" value1="lvf_iso_iauto_sp1.png">
+                    </item>
+                    <!--IC_LVF_ISO125-->
+                    <item id="item_36_30" type="image" x_size="2" value1="lvf_iso_125_sp1.png">
+                    </item>
+                    <!--IC_LVF_ISO_160-->
+                    <item id="item_36_31" type="image" x_size="2" value1="lvf_iso_160_sp1.png">
+                    </item>
+                    <!--IC_LVF_ISO_16000_SP-->
+                    <item id="item_36_32" type="image" x_size="2" value1="lvf_iso_16000_sp1.png">
+                    </item>
+                    <!--IC_LVF_ISO_20000_SP-->
+                    <item id="item_36_33" type="image" x_size="2" value1="lvf_iso_20000_sp1.png">
+                    </item>
+                    <!--IC_LVF_ISO_25600_SP-->
+                    <item id="item_36_34" type="image" x_size="2" value1="lvf_iso_25600_sp1.png">
+                    </item>
+                    <!--IC_LVF_ISO_L100-->
+                    <item id="item_36_35" type="image" x_size="2" value1="lvf_iso_l100.png">
+                    </item>
+                    <!--IC_LVF_ISO_L80-->
+                    <item id="item_36_36" type="image" x_size="2" value1="lvf_iso_l80.png">
+                    </item>
+                    <!--IC_LVF_ISO_25000_SP-->
+                    <item id="item_36_37" type="image" x_size="2" value1="lvf_iso_25000_sp1.png">
+                    </item>
+                    <!--IC_LVF_ISO_H25000-->
+                    <item id="item_36_38" type="image" x_size="2" value1="lvf_iso_h25000_sp1.png">
+                    </item>
+                    <!--IC_LVF_ISO_80-->
+                    <item id="item_36_39" type="image" x_size="2" value1="lvf_iso_80_sp1.png">
+                    </item>
+                    <!--IC_LVF_ISO_H6400-->
+                    <item id="item_36_40" type="image" x_size="2" value1="lvf_iso_h6400_sp1.png">
+                    </item>
+                    <!--IC_LVF_ISO_H4000-->
+                    <item id="item_36_41" type="image" x_size="2" value1="lvf_iso_h4000_sp1.png">
+                    </item>
+                    <!--IC_LVF_ISO_H5000-->
+                    <item id="item_36_42" type="image" x_size="2" value1="lvf_iso_h5000_sp1.png">
+                    </item>
+                </area>
+                <!--感度dB(テキスト）-->
+                <area id="area_id_s2" x_pos="8.5" x_size="1.5" folder="S2">
+                    <!--ICFO_END-->
+                    <item id="item_59_0" type="hide" x_size="1.5">
+                    </item>
+                    <!--AUTO-->
+                    <item id="item_59_1" type="image" x_size="1.5" value1="lvf_gain_auto_sp1.png">
+                    </item>
+                    <!--(-30dB)-->
+                    <item id="item_59_2" type="embeded" x_size="1.5" value1="-30dB">
+                    </item>
+                    <!--(-27dB)-->
+                    <item id="item_59_3" type="embeded" x_size="1.5" value1="-27dB">
+                    </item>
+                    <!--(-24dB)-->
+                    <item id="item_59_4" type="embeded" x_size="1.5" value1="-24dB">
+                    </item>
+                    <!--(-21dB)-->
+                    <item id="item_59_5" type="embeded" x_size="1.5" value1="-21dB">
+                    </item>
+                    <!--(-18dB)-->
+                    <item id="item_59_6" type="embeded" x_size="1.5" value1="-18dB">
+                    </item>
+                    <!--(-15dB)-->
+                    <item id="item_59_7" type="embeded" x_size="1.5" value1="-15dB">
+                    </item>
+                    <!--(-12dB)-->
+                    <item id="item_59_8" type="embeded" x_size="1.5" value1="-12dB">
+                    </item>
+                    <!--(-9dB)-->
+                    <item id="item_59_9" type="embeded" x_size="1.5" value1="-9dB">
+                    </item>
+                    <!--(-6dB)-->
+                    <item id="item_59_10" type="embeded" x_size="1.5" value1="-6dB">
+                    </item>
+                    <!--(-3dB)-->
+                    <item id="item_59_11" type="embeded" x_size="1.5" value1="-3dB">
+                    </item>
+                    <!--(0dB)-->
+                    <item id="item_59_12" type="embeded" x_size="1.5" value1="0dB">
+                    </item>
+                    <!--(3dB)-->
+                    <item id="item_59_13" type="embeded" x_size="1.5" value1="3dB">
+                    </item>
+                    <!--(6dB)-->
+                    <item id="item_59_14" type="embeded" x_size="1.5" value1="6dB">
+                    </item>
+                    <!--(9dB)-->
+                    <item id="item_59_15" type="embeded" x_size="1.5" value1="9dB">
+                    </item>
+                    <!--(12dB)-->
+                    <item id="item_59_16" type="embeded" x_size="1.5" value1="12dB">
+                    </item>
+                    <!--(15dB)-->
+                    <item id="item_59_17" type="embeded" x_size="1.5" value1="15dB">
+                    </item>
+                    <!--(18dB)-->
+                    <item id="item_59_18" type="embeded" x_size="1.5" value1="18dB">
+                    </item>
+                    <!--(21dB)-->
+                    <item id="item_59_19" type="embeded" x_size="1.5" value1="21dB">
+                    </item>
+                    <!--(24dB)-->
+                    <item id="item_59_20" type="embeded" x_size="1.5" value1="24dB">
+                    </item>
+                    <!--(27dB)-->
+                    <item id="item_59_21" type="embeded" x_size="1.5" value1="27dB">
+                    </item>
+                    <!--(30dB)-->
+                    <item id="item_59_22" type="embeded" x_size="1.5" value1="30dB">
+                    </item>
+                    <!--(-10dB)-->
+                    <item id="item_59_23" type="embeded" x_size="1.5" value1="-10dB">
+                    </item>
+                </area>
+                <!--WB-->
+                <area id="area_id_t" x_pos="10" x_size="1" folder="T">
+                    <!--ICFO_END-->
+                    <item id="item_37_0" type="hide" x_size="1">
+                    </item>
+                    <!--IC_LVF_WB_AWB-->
+                    <item id="item_37_1" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="lvf_wb_awb_sp1.png">
+                        </subitem>
+                        <subitem lang="fr" value1="lvf_wb_awb_fra_sp1.png">
+                        </subitem>
+                        <subitem lang="fr_CA" value1="lvf_wb_awb_fra_sp1.png">
+                        </subitem>
+                        <subitem lang="fr-CA" value1="lvf_wb_awb_fra_sp1.png">
+                        </subitem>
+                    </item>
+                    <!--IC_LVF_WB_DAYLIGHT-->
+                    <item id="item_37_2" type="image" x_size="1" value1="lvf_wb_daylight_sp1.png">
+                    </item>
+                    <!--IC_LVF_WB_CLOUD-->
+                    <item id="item_37_3" type="image" x_size="1" value1="lvf_wb_cloud_sp1.png">
+                    </item>
+                    <!--IC_LVF_WB_SHADE-->
+                    <item id="item_37_4" type="image" x_size="1" value1="lvf_wb_shade_sp1.png">
+                    </item>
+                    <!--IC_LVF_WB_WHITE-->
+                    <item id="item_37_5" type="image" x_size="1" value1="lvf_wb_white_sp1.png">
+                    </item>
+                    <!--IC_LVF_WB_FLASH-->
+                    <item id="item_37_6" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="lvf_wb_flash_sp1.png">
+                        </subitem>
+                        <subitem lang="fr" value1="lvf_wb_flash_sp1_f.png">
+                        </subitem>
+                        <subitem lang="fr_CA" value1="lvf_wb_flash_sp1_f.png">
+                        </subitem>
+                        <subitem lang="fr-CA" value1="lvf_wb_flash_sp1_f.png">
+                        </subitem>
+                    </item>
+                    <!--IC_LVF_WB_SET1-->
+                    <item id="item_37_7" type="image" x_size="1" value1="lvf_wb_set1_sp1.png">
+                    </item>
+                    <!--IC_LVF_WB_SET2-->
+                    <item id="item_37_8" type="image" x_size="1" value1="lvf_wb_set2_sp1.png">
+                    </item>
+                    <!--IC_LVF_WB_SET3-->
+                    <item id="item_37_9" type="image" x_size="1" value1="lvf_wb_set3_sp1.png">
+                    </item>
+                    <!--IC_LVF_WB_SET4-->
+                    <item id="item_37_10" type="image" x_size="1" value1="lvf_wb_set4_sp1.png">
+                    </item>
+                    <!--IC_LVF_WB_COLTEMP-->
+                    <item id="item_37_11" type="image" x_size="1" value1="lvf_wb_k_set_sp1.png">
+                    </item>
+                    <!--IC_IA_PLUS_LVF_WB_SET_BLUE-->
+                    <item id="item_37_12" type="image" x_size="1" value1="ia_plus_lvf_wb_set_blue.png">
+                    </item>
+                    <!--IC_IA_PLUS_LVF_WB_SET_RED-->
+                    <item id="item_37_13" type="image" x_size="1" value1="ia_plus_lvf_wb_set_red.png">
+                    </item>
+                    <!--IC_LVF_WB_COLTEMP1-->
+                    <item id="item_37_14" type="image" x_size="1" value1="lvf_wb_k_set_1.png">
+                    </item>
+                    <!--IC_LVF_WB_COLTEMP2-->
+                    <item id="item_37_15" type="image" x_size="1" value1="lvf_wb_k_set_2.png">
+                    </item>
+                    <!--IC_LVF_WB_COLTEMP3-->
+                    <item id="item_37_16" type="image" x_size="1" value1="lvf_wb_k_set_3.png">
+                    </item>
+                    <!--IC_LVF_WB_COLTEMP4-->
+                    <item id="item_37_17" type="image" x_size="1" value1="lvf_wb_k_set_4.png">
+                    </item>
+                    <!--IC_LVF_WB_AWB_COOL-->
+                    <item id="item_37_18" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="lvf_wb_awbc_sp1.png">
+                        </subitem>
+                        <subitem lang="fr" value1="lvf_wb_awbc_f_sp1.png">
+                        </subitem>
+                        <subitem lang="fr_CA" value1="lvf_wb_awbc_f_sp1.png">
+                        </subitem>
+                        <subitem lang="fr-CA" value1="lvf_wb_awbc_f_sp1.png">
+                        </subitem>
+                    </item>
+                    <!--IC_LVF_WB_SET_SP1-->
+                    <item id="item_37_19" type="image" x_size="1" value1="lvf_wb_set_sp1.png">
+                    </item>
+                    <!--IC_LVF_WB_BKT_ON-->
+                    <item id="item_38_1" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="lvf_wb_bkt_on_sp1.png">
+                        </subitem>
+                        <subitem lang="fr" value1="lvf_wb_bkt_on_sp1_f.png">
+                        </subitem>
+                        <subitem lang="fr_CA" value1="lvf_wb_bkt_on_sp1_f.png">
+                        </subitem>
+                        <subitem lang="fr-CA" value1="lvf_wb_bkt_on_sp1_f.png">
+                        </subitem>
+                    </item>
+                    <!--IC_LVF_WB_BKT_ON_FORBID-->
+                    <item id="item_38_2" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="lvf_wb_bkt_on_x.png">
+                        </subitem>
+                        <subitem lang="fr" value1="lvf_wb_bkt_on_x_cf.png">
+                        </subitem>
+                        <subitem lang="fr_CA" value1="lvf_wb_bkt_on_x_cf.png">
+                        </subitem>
+                        <subitem lang="fr-CA" value1="lvf_wb_bkt_on_x_cf.png">
+                        </subitem>
+                    </item>
+                    <!--IC_LVF_WB_MINUS-->
+                    <item id="item_40_1" type="image" x_size="1" value1="lvf_wb_minus_sp1.png">
+                    </item>
+                    <!--IC_LVF_WB_PLUS-->
+                    <item id="item_40_2" type="image" x_size="1" value1="lvf_wb_plus_sp1.png">
+                    </item>
+                </area>
+            </panel>
+
+            <!--最下段より１つ上のパネル-->
+            <panel id="panel_id_bottom_up1" x_width="12">
+                <!--動画記録中-->
+                <area id="area_id_v" x_pos="0" x_size="1" folder="V">
+                    <!--ICFO_END-->
+                    <item id="item_45_0" type="hide" x_size="1">
+                    </item>
+                    <!--動画記録中-->
+                    <item id="item_45_1" type="image" x_size="1" value1="rec_record.png">
+                    </item>
+                </area>
+                <!--動画記録時間(テキスト)-->
+                <area id="area_id_w" x_pos="1" x_size="3">
+                    <!--ICFO_END-->
+                    <item id="item_45_0" type="hide" x_size="3">
+                    </item>
+                    <item id="item_45_1" type="embeded" x_size="3" value1="rectime">
+                    </item>
+                </area>
+                <!--動画記録中静止画撮影可能枚数(テキスト)-->
+                <area id="area_id_z" x_pos="10" x_size="1">
+                    <!--ICFO_END-->
+                    <item id="item_46_255" type="hide" x_size="1">
+                    </item>
+                    <item id="item_46_1" type="embeded" x_size="1" value1="photo_remain">
+                    </item>
+                </area>
+            </panel>
+
+            <!--最上段より１つ下のパネル-->
+            <panel id="panel_id_top_down1" x_width="12">
+                <!--SD書き込み中-->
+                <area id="area_id_k" x_pos="0" x_size="1" folder="K">
+                    <!--SD_NotWrite-->
+                    <item id="item_49_0" type="hide" x_size="1">
+                    </item>
+                    <!--SD_Write-->
+                    <item id="item_49_1" type="image" x_size="1" value1="otr_crd_write_sp1.png">
+                    </item>
+                    <!--内蔵メモリ使用中-->
+                    <item id="item_49_2" type="image" x_size="1" value1="rec_mmr_in_sp1.png">
+                    </item>
+                    <!--内蔵メモリ記録中-->
+                    <item id="item_49_3" type="image" x_size="1" value1="rec_mmr_arw_in_sp1.png">
+                    </item>
+                </area>
+                <!--SDI接続-->
+                <area id="area_id_b2" x_pos="1" x_size="1" folder="B2">
+                    <!--ICFO_END-->
+                    <item id="item_60_0" type="hide" x_size="1">
+                    </item>
+                    <!--IC_R_REC_ON-->
+                    <item id="item_60_1" type="image" x_size="1" value1="lvf_otr_cha_sdi.png">
+                    </item>
+                    <!--IC_LVF_PAUSE-->
+                    <item id="item_60_2" type="image" x_size="1" value1="lvf_otr_cha_sdi.png">
+                    </item>
+                </area>
+                <!--SDI記録状態-->
+                <area id="area_id_c2" x_pos="2" x_size="0.5" folder="C2">
+                    <!--ICFO_END-->
+                    <item id="item_60_0" type="hide" x_size="0.5">
+                    </item>
+                    <!--IC_R_REC_ON-->
+                    <item id="item_60_1" type="image" x_size="0.5" value1="recordig.png">
+                    </item>
+                    <!--IC_LVF_PAUSE-->
+                    <item id="item_60_2" type="image" x_size="0.5" value1="lvf_pause.png">
+                    </item>
+                </area>
+                <!--カメラ温度警告-->
+                <area id="area_id_f2" x_pos="5" x_size="1" folder="F2">
+                    <!--OverHeat_None-->
+                    <item id="item_50_0" type="hide" x_size="1">
+                    </item>
+                    <!--OverHeat Warn-->
+                    <item id="item_50_1" type="image" x_size="1" value1="overheat_warn.png">
+                    </item>
+                </area>
+                <!--コマ撮りモード-->
+                <area id="area_id_x" x_pos="9" x_size="1" folder="X">
+                    <!--ICFO_END-->
+                    <item id="item_47_0" type="hide" x_size="1">
+                    </item>
+                    <!--動画記録中-->
+                    <item id="item_47_1" type="image" x_size="1" value1="normal_to_k_anima_play_80p.png">
+                    </item>
+                </area>
+                <!--コマ撮り枚数(テキスト)-->
+                <area id="area_id_y" x_pos="10" x_size="1.5">
+                    <!--ICFO_END-->
+                    <item id="item_47_0" type="hide" x_size="1">
+                    </item>
+                    <item id="item_47_1" type="embeded" x_size="1" value1="stopmotion">
+                    </item>
+                </area>
+            </panel>
+
+            <!--最上段より２つ下のパネル-->
+            <panel id="panel_id_top_down2" x_width="12">
+                <!--フィルタ種別-->
+                <area id="area_id_a3" x_pos="0" x_size="1" folder="A3">
+                    <!--OSDCHGREC_ERR-->
+                    <item id="item_63_0" type="hide" x_size="1">
+                    </item>
+                    <!--IC_MENU_CREATIVE_POP-->
+                    <item id="item_63_1" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="menu_creative_pop.png">
+                        </subitem>
+                        <subitem lang="ja" value1="menu_creative_pop_j.png">
+                        </subitem>
+                        <subitem lang="fr" value1="menu_creative_pop_f.png">
+                        </subitem>
+                        <subitem lang="fr_CA" value1="menu_creative_pop_f.png">
+                        </subitem>
+                        <subitem lang="fr-CA" value1="menu_creative_pop_f.png">
+                        </subitem>
+                    </item>
+                    <!--IC_MENU_CREATIVE_RETRO-->
+                    <item id="item_63_2" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="menu_creative_retro.png">
+                        </subitem>
+                        <subitem lang="fr" value1="menu_creative_retro_f.png">
+                        </subitem>
+                        <subitem lang="fr_CA" value1="menu_creative_retro_f.png">
+                        </subitem>
+                        <subitem lang="fr-CA" value1="menu_creative_retro_f.png">
+                        </subitem>
+                    </item>
+                    <!--IC_MENU_CREATIVE_HIGH_KEY-->
+                    <item id="item_63_3" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="menu_creative_high_key.png">
+                        </subitem>
+                        <subitem lang="fr" value1="menu_creative_high_key_f.png">
+                        </subitem>
+                        <subitem lang="fr_CA" value1="menu_creative_high_key_f.png">
+                        </subitem>
+                        <subitem lang="fr-CA" value1="menu_creative_high_key_f.png">
+                        </subitem>
+                    </item>
+                    <!--IC_MENU_CREATIVE_LOW_KEY-->
+                    <item id="item_63_4" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="menu_creative_low_key.png">
+                        </subitem>
+                        <subitem lang="fr" value1="menu_creative_low_key_f.png">
+                        </subitem>
+                        <subitem lang="fr_CA" value1="menu_creative_low_key_f.png">
+                        </subitem>
+                        <subitem lang="fr-CA" value1="menu_creative_low_key_f.png">
+                        </subitem>
+                    </item>
+                    <!--IC_MENU_CREATIVE_SEPIA-->
+                    <item id="item_63_5" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="menu_creative_sepia.png">
+                        </subitem>
+                        <subitem lang="fr" value1="menu_creative_sepia_f.png">
+                        </subitem>
+                        <subitem lang="fr_CA" value1="menu_creative_sepia_f.png">
+                        </subitem>
+                        <subitem lang="fr-CA" value1="menu_creative_sepia_f.png">
+                        </subitem>
+                    </item>
+                    <!--IC_MENU_CREATIVE_HIGH_DYNAMIC-->
+                    <item id="item_63_6" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="menu_creative_high_dynamic.png">
+                        </subitem>
+                        <subitem lang="fr" value1="menu_creative_high_dynamic_f.png">
+                        </subitem>
+                        <subitem lang="fr_CA" value1="menu_creative_high_dynamic_f.png">
+                        </subitem>
+                        <subitem lang="fr-CA" value1="menu_creative_high_dynamic_f.png">
+                        </subitem>
+                    </item>
+                    <!--IC_MENU_CREATIVE_DIORAMA-->
+                    <item id="item_63_7" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="menu_creative_diorama.png">
+                        </subitem>
+                        <subitem lang="ja" value1="menu_creative_diorama_j.png">
+                        </subitem>
+                    </item>
+                    <!--IC_MENU_CREATIVE_TOY_PHOTO-->
+                    <item id="item_63_8" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="menu_creative_toy_photo.png">
+                        </subitem>
+                        <subitem lang="fr" value1="menu_creative_toy_photo_f.png">
+                        </subitem>
+                        <subitem lang="fr_CA" value1="menu_creative_toy_photo_f.png">
+                        </subitem>
+                        <subitem lang="fr-CA" value1="menu_creative_toy_photo_f.png">
+                        </subitem>
+                    </item>
+                    <!--IC_MENU_CREATIVE_SOFT_FOCUS-->
+                    <item id="item_63_9" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="menu_creative_soft_focus.png">
+                        </subitem>
+                        <subitem lang="fr" value1="menu_creative_soft_focus_f.png">
+                        </subitem>
+                        <subitem lang="fr_CA" value1="menu_creative_soft_focus_f.png">
+                        </subitem>
+                        <subitem lang="fr-CA" value1="menu_creative_soft_focus_f.png">
+                        </subitem>
+                    </item>
+                    <!--IC_MENU_CREATIVE_DYNAMIC_MONO-->
+                    <item id="item_63_10" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="menu_creative_dynamic_mono_gx7.png">
+                        </subitem>
+                        <subitem lang="fr" value1="menu_creative_dynamic_mono_cf.png">
+                        </subitem>
+                        <subitem lang="fr_CA" value1="menu_creative_dynamic_mono_cf.png">
+                        </subitem>
+                        <subitem lang="fr-CA" value1="menu_creative_dynamic_mono_cf.png">
+                        </subitem>
+                    </item>
+                    <!--IC_MENU_CREATIVE_DRAMATIC_TONE-->
+                    <item id="item_63_11" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="menu_creative_dramatic_tone.png">
+                        </subitem>
+                        <subitem lang="fr" value1="menu_creative_dramatic_tone_f.png">
+                        </subitem>
+                        <subitem lang="fr_CA" value1="menu_creative_dramatic_tone_f.png">
+                        </subitem>
+                        <subitem lang="fr-CA" value1="menu_creative_dramatic_tone_f.png">
+                        </subitem>
+                    </item>
+                    <!--IC_MENU_CREATIVE_CROSS_PROCESS-->
+                    <item id="item_63_12" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="menu_creative_cross_process.png">
+                        </subitem>
+                        <subitem lang="fr" value1="menu_creative_cross_process_f.png">
+                        </subitem>
+                        <subitem lang="fr_CA" value1="menu_creative_cross_process_f.png">
+                        </subitem>
+                        <subitem lang="fr-CA" value1="menu_creative_cross_process_f.png">
+                        </subitem>
+                    </item>
+                    <!--IC_MENU_CREATIVE_ONEPOINT_COLOR-->
+                    <item id="item_63_13" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="menu_creative_onepoint_color.png">
+                        </subitem>
+                        <subitem lang="fr" value1="menu_creative_onepoint_color_f.png">
+                        </subitem>
+                        <subitem lang="fr_CA" value1="menu_creative_onepoint_color_f.png">
+                        </subitem>
+                        <subitem lang="fr-CA" value1="menu_creative_onepoint_color_f.png">
+                        </subitem>
+                    </item>
+                    <!--IC_MENU_CREATIVE_CROSS_FILTER-->
+                    <item id="item_63_14" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="menu_creative_cross_filter.png">
+                        </subitem>
+                        <subitem lang="fr" value1="menu_creative_cross_filter_f.png">
+                        </subitem>
+                        <subitem lang="fr_CA" value1="menu_creative_cross_filter_f.png">
+                        </subitem>
+                        <subitem lang="fr-CA" value1="menu_creative_cross_filter_f.png">
+                        </subitem>
+                    </item>
+                    <!--IC_MENU_CREATIVE_OLD_DAYS-->
+                    <item id="item_63_15" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="menu_creative_old_days.png">
+                        </subitem>
+                        <subitem lang="fr" value1="menu_creative_old_days_cf.png">
+                        </subitem>
+                        <subitem lang="fr_CA" value1="menu_creative_old_days_cf.png">
+                        </subitem>
+                        <subitem lang="fr-CA" value1="menu_creative_old_days_cf.png">
+                        </subitem>
+                    </item>
+                    <!--IC_MENU_CREATIVE_SUNSHINE-->
+                    <item id="item_63_16" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="menu_creative_sunshine.png">
+                        </subitem>
+                        <subitem lang="fr" value1="menu_creative_sunshine_cf.png">
+                        </subitem>
+                        <subitem lang="fr_CA" value1="menu_creative_sunshine_cf.png">
+                        </subitem>
+                        <subitem lang="fr-CA" value1="menu_creative_sunshine_cf.png">
+                        </subitem>
+                    </item>
+                    <!--IC_MENU_CREATIVE_BLEACH_BYPASS-->
+                    <item id="item_63_17" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="menu_creative_bleach_bypass.png">
+                        </subitem>
+                        <subitem lang="fr" value1="menu_creative_bleach_bypass_cf.png">
+                        </subitem>
+                        <subitem lang="fr_CA" value1="menu_creative_bleach_bypass_cf.png">
+                        </subitem>
+                        <subitem lang="fr-CA" value1="menu_creative_bleach_bypass_cf.png">
+                        </subitem>
+                    </item>
+                    <!--IC_MENU_CREATIVE_TOY_POP-->
+                    <item id="item_63_18" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="menu_creative_toy_pop.png">
+                        </subitem>
+                        <subitem lang="fr" value1="menu_creative_toy_pop_cf.png">
+                        </subitem>
+                        <subitem lang="fr_CA" value1="menu_creative_toy_pop_cf.png">
+                        </subitem>
+                        <subitem lang="fr-CA" value1="menu_creative_toy_pop_cf.png">
+                        </subitem>
+                    </item>
+                    <!--IC_MENU_CREATIVE_FANTASY-->
+                    <item id="item_63_19" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="menu_creative_fantasy.png">
+                        </subitem>
+                        <subitem lang="fr" value1="menu_creative_fantasy_cf.png">
+                        </subitem>
+                        <subitem lang="fr_CA" value1="menu_creative_fantasy_cf.png">
+                        </subitem>
+                        <subitem lang="fr-CA" value1="menu_creative_fantasy_cf.png">
+                        </subitem>
+                    </item>
+                    <!--IC_MENU_CREATIVE_SILKY_MONOCHROME-->
+                    <item id="item_63_20" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="menu_creative_silky_mono.png">
+                        </subitem>
+                        <subitem lang="fr" value1="menu_creative_silky_mono_cf.png">
+                        </subitem>
+                        <subitem lang="fr_CA" value1="menu_creative_silky_mono_cf.png">
+                        </subitem>
+                        <subitem lang="fr-CA" value1="menu_creative_silky_mono_cf.png">
+                        </subitem>
+                    </item>
+                    <!--IC_MENU_CREATIVE_ROUGH_MONOCHROME-->
+                    <item id="item_63_21" type="image" x_size="1" multilang="YES">
+                        <subitem lang="default" value1="menu_creative_rough_mono.png">
+                        </subitem>
+                        <subitem lang="fr" value1="menu_creative_rough_mono_cf.png">
+                        </subitem>
+                        <subitem lang="fr_CA" value1="menu_creative_rough_mono_cf.png">
+                        </subitem>
+                        <subitem lang="fr-CA" value1="menu_creative_rough_mono_cf.png">
+                        </subitem>
+                    </item>
+                    <!--IC_MENU_CREATIVE_MONOCHROME-->
+                    <item id="item_63_22" type="image" x_size="1" value1="menu_creative_dynamic_mono.png">
+                    </item>
+                </area>
+                <!--フィルタ微調整-->
+                <area id="area_id_b3" x_pos="1" x_size="1" folder="A3">
+                    <!--OSDCHGREC_ERR-->
+                    <item id="item_64_0" type="hide" x_size="1">
+                    </item>
+                    <!--IC_MYCOLOR_AJUSTED_SP-->
+                    <item id="item_64_1" type="image" x_size="1" value1="mycolor_ajusted_sp1.png">
+                    </item>
+                </area>
+                <!--HDMI接続-->
+                <area id="area_id_b3a" x_pos="1" x_size="1" folder="B2">
+                    <!--ICFO_END-->
+                    <item id="item_66_0" type="hide" x_size="1">
+                    </item>
+                    <!--IC_R_REC_ON-->
+                    <item id="item_66_1" type="image" x_size="1" value1="lvf_otr_cha_hdmi.png">
+                    </item>
+                    <!--IC_LVF_PAUSE-->
+                    <item id="item_66_2" type="image" x_size="1" value1="lvf_otr_cha_hdmi.png">
+                    </item>
+                </area>
+                <!--HDMI記録状態-->
+                <area id="area_id_c3a" x_pos="2" x_size="0.5" folder="C2">
+                    <!--ICFO_END-->
+                    <item id="item_66_0" type="hide" x_size="0.5">
+                    </item>
+                    <!--IC_R_REC_ON-->
+                    <item id="item_66_1" type="image" x_size="0.5" value1="recordig.png">
+                    </item>
+                    <!--IC_LVF_PAUSE-->
+                    <item id="item_66_2" type="image" x_size="0.5" value1="lvf_pause.png">
+                    </item>
+                </area>
+            </panel>
+
+    </panelset>
+</liveview>

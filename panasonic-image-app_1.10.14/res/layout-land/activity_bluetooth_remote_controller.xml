@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/live_view_icon_font_size_xxlarge" android:gravity="center" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_medium" android:layout_marginBottom="@dimen/padding_medium" android:text="@string/cmn_bt_remote_controller" android:layout_alignParentTop="true" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/middleLayout" android:paddingTop="@dimen/padding_small" android:paddingBottom="@dimen/padding_small" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/title">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <include android:paddingTop="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_medium" layout="@layout/views_bluetooth_remote_controller_top" />
+            <ImageButton android:id="@id/recButton" android:background="#00000000" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/bt_remote_rec" android:scaleType="fitCenter" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageButton android:background="#00000000" android:layout_width="0.0dip" android:layout_height="fill_parent" android:scaleType="fitCenter" android:layout_weight="1.0" />
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.0">
+                <ImageView android:background="#00000000" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="0.0dip" android:src="@drawable/bt_remote_rec" android:scaleType="fitCenter" android:layout_weight="0.1" />
+                <com.panasonic.avc.cng.view.parts.BTShutterButton android:id="@id/shutterButton" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="0.0dip" android:scaleType="fitCenter" android:layout_weight="1.0" android:layout_centerHorizontal="true" android:layout_centerVertical="true" app:frameImage="@drawable/bt_remote_base" app:buttonImage="@drawable/bt_remote_shutter" />
+                <ImageView android:background="#00000000" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="0.0dip" android:src="@drawable/bt_remote_rec" android:scaleType="fitCenter" android:layout_weight="0.1" />
+            </LinearLayout>
+            <ImageButton android:background="#00000000" android:layout_width="0.0dip" android:layout_height="fill_parent" android:scaleType="fitCenter" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

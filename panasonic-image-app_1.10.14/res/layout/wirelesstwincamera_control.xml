@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:layout_centerInParent="true">
+        <ImageButton android:id="@id/toggle_camera_button" android:background="@android:color/transparent" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/wtc_cam_front_btn" android:layout_weight="1.0" android:onClick="onChangeCamera" />
+        <ImageButton android:id="@id/white_balance_button" android:background="@android:color/transparent" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/wtc_wb_btn" android:layout_weight="1.0" android:onClick="onSelectWB" />
+        <ImageButton android:id="@id/exposure_button" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/wtc_exp_btn" android:layout_weight="1.0" android:onClick="onSelectExposure" />
+        <ImageButton android:id="@id/zoomout_button" android:background="@android:color/transparent" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/wtc_zoom_wide_btn" android:layout_weight="1.0" />
+        <ImageButton android:id="@id/zoomin_button" android:background="@android:color/transparent" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/wtc_zoom_tele_btn" android:layout_weight="1.0" />
+        <ImageButton android:id="@id/fps_button" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/preset_setting_normal" android:layout_weight="1.0" android:onClick="onSelectFps" />
+    </LinearLayout>
+</RelativeLayout>

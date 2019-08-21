@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="right" android:id="@id/liveview_touch_area" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.panasonic.avc.cng.view.parts.LiveViewSurface android:id="@id/liveViewSurface" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include android:id="@id/liveview_surface_picture_fullscreen" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/liveview_surface_picture_full" />
+    <include android:id="@id/liveview_status_bar_picture_fullscreen" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/iconview_status_bar_height" android:layout_alignParentBottom="true" layout="@layout/liveview_status_bar_picture" />
+    <FrameLayout android:id="@id/liveview_shutter_picture_fullscreen_area" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+        <include android:id="@id/liveview_shutter_picture_fullscreen" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/liveview_shutter_picture" />
+        <ImageView android:id="@id/no_connect_liveview_shutter_picture_fullscreen_area" android:background="#ff444444" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+</RelativeLayout>

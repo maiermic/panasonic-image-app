@@ -1,0 +1,57 @@
+﻿@charset "utf-8";
+body{font-size:100%;line-height:130%;font-family:Helvetica, sans-serif;margin:0px 10px 30px 10px;-webkit-text-size-adjust:none;word-wrap:break-word;line-height:}
+h1.title-1{font-size:14px;line-height:130%;margin:1.2em 0.5em 1em 0;}
+div#bL1{margin-bottom:1em;}
+div#bL1 p{font-size:12px;font-weight:normal;}
+div#toC p{font-size:12px;font-weight:normal;}
+p{padding:0; margin:0;font-weight:normal;}
+ol{font-size:12px;list-style:decimal;}
+div#lFT{margin-bottom:2em;}
+div#lFT ol{
+  /*counter-reset: item;*/
+ /* list-style-type: none;*/
+  padding-left:15px;
+  line-height:1.5em;
+}
+div#lFT ol li{margin-bottom:10px;}
+div#lFT ol li.fwb{font-weight:bold;}
+ol ul.uRI{font-size:12px;list-style:upper-roman;padding-left:35px;font-weight:normal;font-style:normal;}
+ol.uRI{font-size:12px;list-style:upper-roman;padding-left:20px;font-weight:normal;margin-top:0;font-style:normal;}
+
+ol ul.uR{font-size:12px;list-style:upper-roman;padding-left:35px;font-weight:normal;}
+ol.uR{font-size:12px;list-style:upper-roman;padding-left:20px;font-weight:normal;margin-top:0;font-style:normal;}
+.ML50{margin-left:20px;}
+
+ol ul.uA{font-size:12px;list-style:upper-alpha;padding-left:20px;font-weight:normal;line-height:1.2em;}
+ol ul.uA li{margin-bottom:0;padding-bottom:0;}
+ol ul.uA li.mT0{margin-top:0;padding-top:0;line-height:1em}
+
+ol ul.uAS{font-size:12px;list-style:upper-alpha;padding-left:20px;font-weight:bold;line-height:1.2em;}
+ol ul.uAS li{margin-top:1em;}
+ol ul.uAS li p{font-style:normal;}
+ol ul.uAS li.mT0{margin-top:0;padding-top:0;line-height:1em}
+
+p{margin-bottom:0;padding-bottom:0;line-height:1.5em;}
+p.mLM{margin-left:-1.2em;}
+
+.fWB{font-weight:bold;}
+.fWN{font-weight:normal;}
+.fSI{font-style:italic;}
+.mRT{margin-top:1em;}
+.mRB{margin-bottom:1em;}
+
+div#lFB {margin-left:-25px;}
+div#lFB ol{line-height:1.5em;}
+div#lFB ul{line-height:1.5em;}
+div#lFB ol li.lfb{font-weight:bold;padding-left:0;margin-left:0;margin-top:2.5em;}
+div#lFB ul li.lfb{font-weight:bold;}
+
+li.mT0{margin-top:0;padding-top:0;}
+li.mT05{margin-top:5px;}
+li.pT3{padding-top:3px;}
+ol.uR li.mT05{margin-top:0;padding-top:0;}
+
+div#fTR{margin-top:2em;font-size:12px;}
+
+.mt5{margin-top:5px;}
+.pt3{padding-top:3px;}

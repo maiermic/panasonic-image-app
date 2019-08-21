@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/ManualFocusArea" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/ManualFocusTextFar" android:background="#00000000" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/rec_mf_icon_left" android:scaleType="fitCenter" android:layout_weight="2.0" />
+    <FrameLayout android:layout_gravity="center" android:id="@id/ManualFocusSlider" android:layout_width="0.0dip" android:layout_height="fill_parent" android:scaleType="fitCenter" android:layout_weight="9.0">
+        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageButton android:layout_gravity="center" android:id="@id/ManualFocusFarSlowButton" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/zoombar_padding" android:layout_marginRight="@dimen/zoombar_padding" android:src="@drawable/liveview_zoom_out_slow_button" android:scaleType="fitCenter" android:layout_weight="1.0" />
+            <ImageButton android:layout_gravity="center" android:id="@id/ManualFocusNearSlowButton" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/zoombar_padding" android:layout_marginRight="@dimen/zoombar_padding" android:src="@drawable/liveview_zoom_in_slow_button" android:scaleType="fitCenter" android:layout_weight="1.0" />
+        </LinearLayout>
+    </FrameLayout>
+    <ImageView android:layout_gravity="center" android:id="@id/ManualFocusTextNear" android:background="#00000000" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/rec_mf_icon_right" android:scaleType="fitCenter" android:layout_weight="2.0" />
+</LinearLayout>

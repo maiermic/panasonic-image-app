@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="10.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_gravity="top" android:id="@id/three_box_content_menu" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/three_box_content_menu" />
+    <LinearLayout android:orientation="vertical" android:id="@id/three_box_layout_dummy" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="4.0" />
+    <include android:id="@id/ThreeBoxSeekController" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/three_box_play_status_menu" />
+    <LinearLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="5.0">
+        <ImageButton android:id="@id/threebox_prev" android:background="#00000000" android:padding="2.0dip" android:layout_width="67.0dip" android:layout_height="64.0dip" android:src="@drawable/threebox_prev_button" android:scaleType="fitCenter" android:maxWidth="134.0dip" android:maxHeight="128.0dip" android:onClick="OnClick3boxPreview" />
+        <ImageButton android:id="@id/threebox_play_pause_button" android:background="#00000000" android:padding="2.0dip" android:layout_width="67.0dip" android:layout_height="64.0dip" android:src="@drawable/threebox_play_button" android:scaleType="fitCenter" android:maxWidth="134.0dip" android:maxHeight="128.0dip" android:onClick="OnClick3boxPlayPause" />
+        <ImageButton android:id="@id/threebox_stop" android:background="#00000000" android:padding="2.0dip" android:layout_width="67.0dip" android:layout_height="64.0dip" android:src="@drawable/threebox_stop_button" android:scaleType="fitCenter" android:maxWidth="134.0dip" android:maxHeight="128.0dip" android:onClick="OnClick3boxStop" />
+        <ImageButton android:id="@id/threebox_next" android:background="#00000000" android:padding="2.0dip" android:layout_width="67.0dip" android:layout_height="64.0dip" android:src="@drawable/threebox_next_button" android:scaleType="fitCenter" android:maxWidth="134.0dip" android:maxHeight="128.0dip" android:onClick="OnClick3boxNext" />
+    </LinearLayout>
+    <include android:id="@id/three_box_bottom_menu" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/three_box_bottom_menu" />
+    <include android:layout_gravity="bottom" android:id="@id/primary_menu" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/primary_menu" />
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.panasonic.avc.cng.view.parts.LiveViewSurface android:layout_gravity="center" android:id="@id/liveViewSurface" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <RelativeLayout android:layout_gravity="right" android:id="@id/liveview_touch_area" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include android:id="@id/liveview_icon_wearable_fullscreen" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toLeftOf="@id/liveview_shutter_wearable_fullscreen" android:layout_above="@id/liveview_status_wearable_fullscreen" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" layout="@layout/liveview_icon_wearable_fullscreen" />
+            <include android:layout_gravity="bottom" android:id="@id/liveview_status_wearable_fullscreen" android:layout_width="fill_parent" android:layout_height="@dimen/iconview_status_bar_height" android:layout_toLeftOf="@id/liveview_shutter_wearable_fullscreen" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" layout="@layout/liveview_status_bar_wearable" />
+            <include android:layout_gravity="center" android:id="@id/liveview_shutter_wearable_fullscreen" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true" layout="@layout/liveview_shutter_wearable_picture" />
+        </RelativeLayout>
+        <TextView android:textColor="@android:color/white" android:gravity="center" android:id="@id/liveViewOverlayMessage" android:background="#ff444444" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/cmn_msg_server_zero_2" />
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceScreen android:title="@string/cmn_remote_watch" android:key="remoteWatch" />
+    <PreferenceScreen android:title="@string/setup_network_name_setting" android:key="ImageApp.Network.Name" android:summary="" />
+    <PreferenceScreen android:title="@string/ugase_conditions" android:key="Usages" />
+    <PreferenceScreen android:title="@string/cmn_build_number" android:key="ImageApp.Build.Version" android:summary="" />
+</PreferenceScreen>

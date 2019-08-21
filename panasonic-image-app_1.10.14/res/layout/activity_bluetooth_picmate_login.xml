@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="@dimen/live_view_icon_font_size_xxlarge" android:gravity="center|left" android:id="@id/title" android:background="@drawable/title_base_bg" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="@string/cmn_cloud_backup_picmate_settings" />
+            <TextView android:textSize="@dimen/live_view_icon_font_size_xxlarge" android:gravity="left" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/setup_picmate_title_login_info" android:scrollHorizontally="false" />
+            <ScrollView android:id="@id/scrollViewLogin" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/live_view_icon_font_size_xxlarge" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/setup_picmate_already_have_id" />
+                    <TextView android:textSize="@dimen/live_view_icon_font_size_xxlarge" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/setup_picmate_label_login_id" android:scrollHorizontally="false" />
+                    <EditText android:id="@id/PicMateIdInput" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/setup_picmate_label_login_id" android:inputType="textVisiblePassword" />
+                    <TextView android:textSize="@dimen/live_view_icon_font_size_xxlarge" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/setup_picmate_label_login_password" android:scrollHorizontally="false" />
+                    <EditText android:id="@id/PicMatePassword" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/setup_picmate_label_login_password" android:inputType="textPassword" />
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <Button android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                        <Button android:gravity="center" android:id="@id/loginButton" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/rec_btn_quick_menu" android:layout_weight="2.0" android:onClick="onClickLoginButton" />
+                        <Button android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                    </LinearLayout>
+                    <TextView android:textSize="@dimen/live_view_icon_font_size_xxlarge" android:id="@id/textViewSynchronize" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setup_picmate_cam_or_app_have_id" />
+                    <Button android:gravity="center" android:id="@id/SynchronizeButton" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setup_picmate_btn_sync_login_id" android:onClick="onClickSynchronizeButton" />
+                    <TextView android:textSize="@dimen/live_view_icon_font_size_xxlarge" android:id="@id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setup_picmate_not_have_id" />
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <Button android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                        <Button android:gravity="center" android:id="@id/NewRegisterButton" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/setup_picmate_btn_new_regist" android:layout_weight="2.0" android:onClick="onClickNewRegisterButton" />
+                        <Button android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+            <View android:id="@id/divider1" android:background="@android:color/white" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="1.0dip" />
+            <RelativeLayout android:gravity="center" android:id="@id/uploadGroupView" android:background="@drawable/listselector" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:onClick="OnClickUpload">
+                <TextView android:textSize="@dimen/live_view_icon_font_size_xxlarge" android:id="@id/uploadTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/msg_cloud_backup_upload_target" android:layout_alignParentLeft="true" />
+                <TextView android:textSize="@dimen/live_view_icon_font_size_xxlarge" android:id="@id/upload" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_below="@id/uploadTitle" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <View android:id="@id/divider2" android:background="@android:color/white" android:layout_width="wrap_content" android:layout_height="1.0dip" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="vertical" android:id="@id/HideLayout1" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceScreen android:title="@string/setup_smaope_picjmp" android:key="PictureJumpSetup" />
+    <ListPreference android:entries="@array/setup_smaope_camera_picsize_string_for_movie" android:title="@string/setup_smaope_camera_picsize" android:key="PlayCameraRecievePicsize" android:summary="" android:defaultValue="PlayPicsizeLarge" android:dialogTitle="@string/setup_smaope_camera_picsize" android:entryValues="@array/setup_smaope_camera_picsize_value_for_movie" />
+    <ListPreference android:entries="@array/setup_smaope_web_picsize_string" android:title="@string/setup_smaope_web_picsize" android:key="PlayWebSendPicsize" android:summary="" android:defaultValue="PlayPicsizeRMD" android:dialogTitle="@string/setup_smaope_web_picsize" android:entryValues="@array/setup_smaope_web_picsize_value" />
+    <CheckBoxPreference android:title="@string/setup_smaope_delete_gps" android:key="PlaySendingDeletGps" android:defaultValue="true" android:summaryOn="@string/setup_on" android:summaryOff="@string/setup_off" />
+    <PreferenceScreen android:title="@string/setup_smaope_picamate" android:key="PicmateSetting" />
+    <CheckBoxPreference android:title="@string/setup_smaope_player_select" android:key="LocalMoviePlayerSelection" android:defaultValue="false" android:summaryOn="@string/setup_smaope_player_select_summary_on" android:summaryOff="@string/setup_smaope_player_select_summary_off" />
+</PreferenceScreen>

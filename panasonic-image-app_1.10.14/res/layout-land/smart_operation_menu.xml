@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:id="@id/playSelectFolderButton" android:background="#00000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/browse_smartphone_button" android:scaleType="fitCenter" android:layout_alignParentLeft="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:onClick="OnClickSelectFolder" />
+    <TextView android:ellipsize="marquee" android:id="@id/playSelectFolderName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_toRightOf="@id/playSelectFolderButton" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    <ImageButton android:id="@id/playSelectFormatButton" android:background="#00000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitCenter" android:layout_toRightOf="@id/playSelectFolderName" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:onClick="OnClickSelectFormat" />
+    <FrameLayout android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+        <TextView android:gravity="center" android:id="@id/mainPlaySelectFolderTitle" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" />
+        <TextView android:id="@id/mainPlaySelectFolderFileTotal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/playPicmateGroup" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/playOption" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+        <ImageButton android:id="@id/playPicmateSendButton" android:background="#00000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/smartoperation_picmatesend_button" android:scaleType="fitCenter" android:onClick="OnClickPicmateUnsentImageList" />
+        <TextView android:textSize="10.0sp" android:textColor="@android:color/white" android:gravity="right" android:layout_gravity="center_vertical" android:id="@id/playPicmateOverlayNum" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="8.0dip" />
+    </FrameLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/playOption" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/playMultiSelectButtonFrame" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+        <ImageButton android:id="@id/playOptionListButton" android:background="#00000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/smartoperation_optionlist_button" android:scaleType="fitCenter" android:onClick="OnClickOptionList" />
+        <ImageButton android:id="@id/playMultiSelectCancelButton" android:background="#00000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/smartoperation_allcancel_button" android:scaleType="fitCenter" android:onClick="OnClickAllCancel" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/playMultiSelectButtonFrame" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+        <Button android:textSize="@dimen/live_view_lumix_select_font_size" android:textColor="#ffffffff" android:id="@id/playMultiSelectButtonString" android:background="@drawable/smartoperation_black_button" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" android:text="@string/ply_btn_select" />
+    </FrameLayout>
+</RelativeLayout>

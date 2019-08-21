@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.panasonic.avc.cng.view.parts.ThumbnailView android:layout_width="90.0dip" android:layout_height="90.0dip" android:minWidth="90.0dip" android:minHeight="90.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

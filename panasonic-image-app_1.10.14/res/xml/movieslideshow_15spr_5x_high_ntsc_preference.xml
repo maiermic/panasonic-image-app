@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <intent android:targetPackage="com.panasonic.avc.cng.imageapp" android:action="android.intent.action.MAIN" android:targetClass="com.panasonic.avc.cng.view.play.movieslideshow.MovieSlideshowActivity" />
+    <ListPreference android:entries="@array/list_effect" android:title="@string/highlight_option_effect" android:key="MovieSlideshow_effect" android:summary="" android:defaultValue="1" android:dialogTitle="@string/highlight_option_effect" android:entryValues="@array/list_effect_values" />
+    <ListPreference android:entries="@array/list_category" android:title="@string/highlight_option_priority" android:key="MovieSlideshow_category" android:summary="" android:defaultValue="0" android:dialogTitle="@string/highlight_option_priority" android:entryValues="@array/list_category_values" />
+    <ListPreference android:entries="@array/list_playbacktime" android:title="@string/highlight_option_playtime" android:key="MovieSlideshow_playbacktime" android:summary="" android:defaultValue="0" android:dialogTitle="@string/highlight_option_playtime" android:entryValues="@array/list_playbacktime_values" />
+    <CheckBoxPreference android:title="@string/movieslideshow_option_bgm" android:key="MovieSlideshowBGMCheck" android:summary="@string/movieslideshow_setting_bgm" android:defaultValue="false" />
+    <CheckBoxPreference android:title="@string/movieslideshow_title_settings" android:key="MovieSlideshowTitleCheck" android:summary="@string/movieslideshow_setting_title" android:defaultValue="false" />
+    <ListPreference android:entries="@array/list_save_format_15spr_high_ntsc" android:title="@string/movieslideshow_save_format" android:key="MovieSlideshow_save_format_15spr" android:summary="" android:defaultValue="0" android:dialogTitle="@string/movieslideshow_save_format" android:entryValues="@array/list_save_format_15spr_high_value" />
+</PreferenceScreen>

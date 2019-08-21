@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.panasonic.avc.cng.view.cameraconnect.GuidanceMenuListItem android:id="@id/smartAppButton" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerInParent="true" android:onClick="onClickPsa" app:menuImage="@drawable/item_smart_app_button" app:menuTitle="@string/func_item_smartapp_2" />
+        <com.panasonic.avc.cng.view.cameraconnect.GuidanceMenuListItem android:id="@id/picmateButton" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toLeftOf="@id/smartAppButton" android:onClick="onClickPicmate" app:menuImage="@drawable/item_picmate_button" app:menuTitle="@string/func_item_picmate" />
+    </RelativeLayout>
+    <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+</LinearLayout>

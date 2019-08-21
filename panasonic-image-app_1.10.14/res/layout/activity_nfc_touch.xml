@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/imageView1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/cmn_nfc_back" android:scaleType="fitXY" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:layout_gravity="bottom|center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="bottom|center" android:id="@id/nfcIcon" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="50.0dip" android:layout_marginBottom="10.0dip" android:src="@drawable/cmn_nfc_icon" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ScrollView android:id="@id/scrollView1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="0.82">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <TextView android:textAppearance="?android:textAppearanceMedium" android:gravity="center|left" android:layout_gravity="center" android:id="@id/firstTouchExplain" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:maxWidth="400.0dip" android:layout_weight="1.0" />
+                </LinearLayout>
+            </ScrollView>
+            <Button android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/nfcCancelButton" android:background="@drawable/nfc_cancel_button" android:layout_width="wrap_content" android:layout_height="50.0dip" android:layout_marginBottom="10.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

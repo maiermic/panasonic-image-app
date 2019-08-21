@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/execute_menu" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <Button android:textColor="@android:color/white" android:id="@id/multiphotoExecuteButton" android:background="@drawable/smartoperation_black_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitCenter" android:text="@string/cmn_btn_execute_short" android:layout_alignParentRight="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:onClick="OnClickPictureCopyExecuteExecute" />
+                <TextView android:id="@id/multiphotoActivityName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ply_action_multiframephoto" android:singleLine="true" android:layout_toLeftOf="@id/multiphotoExecuteButton" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/movieslideshow_info" android:layout_below="@id/execute_menu" android:layout_centerVertical="true">
+        <TextView android:textColor="@android:color/white" android:gravity="center" android:id="@id/movieslideshow_gridViewOverlayMessage" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ply_phcol_save_photo" />
+        <TextView android:textColor="@android:color/white" android:id="@id/dummyText" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" />
+        <CheckBox android:id="@id/multiphotoCheckBox" android:layout_width="fill_parent" android:layout_height="wrap_content" android:checked="false" android:text="@string/ply_phcol_change_folder" android:onClick="onCheckBoxClick" />
+        <EditText android:id="@id/multiphotoEditText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:ems="10" android:maxLength="32" android:inputType="text" />
+    </LinearLayout>
+    <include android:id="@id/movieslideshow_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true" layout="@layout/highlight_info" />
+</RelativeLayout>

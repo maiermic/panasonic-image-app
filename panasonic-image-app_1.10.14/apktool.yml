@@ -1,0 +1,68 @@
+!!brut.androlib.meta.MetaInfo
+apkFileName: panasonic-image-app_1.10.14.apk
+compressionType: false
+doNotCompress:
+- arsc
+- png
+- res/drawable-hdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png
+- res/drawable-hdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png
+- res/drawable-hdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png
+- res/drawable-hdpi-v4/common_google_signin_btn_text_light_normal_background.9.png
+- res/drawable-hdpi-v4/geotag_send_log_base_d.9.png
+- res/drawable-hdpi-v4/geotag_send_log_base_f.9.png
+- res/drawable-hdpi-v4/geotag_send_log_base_n.9.png
+- res/drawable-hdpi-v4/geotag_start_log_base_d.9.png
+- res/drawable-hdpi-v4/geotag_start_log_base_f.9.png
+- res/drawable-hdpi-v4/geotag_start_log_base_n.9.png
+- res/drawable-hdpi-v4/geotag_stop_log_base_d.9.png
+- res/drawable-hdpi-v4/geotag_stop_log_base_f.9.png
+- res/drawable-hdpi-v4/geotag_stop_log_base_n.9.png
+- res/drawable-hdpi-v4/geotag_sync_time_base_d.9.png
+- res/drawable-hdpi-v4/geotag_sync_time_base_f.9.png
+- res/drawable-hdpi-v4/geotag_sync_time_base_n.9.png
+- res/drawable-hdpi-v4/guidance_h_separator.9.png
+- res/drawable-hdpi-v4/play_base_d.9.png
+- res/drawable-hdpi-v4/play_base_f.9.png
+- res/drawable-hdpi-v4/play_base_n.9.png
+- res/drawable-hdpi-v4/remote_control_base_d.9.png
+- res/drawable-hdpi-v4/remote_control_base_f.9.png
+- res/drawable-hdpi-v4/remote_control_base_n.9.png
+- jpg
+- res/drawable-mdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png
+- res/drawable-mdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png
+- res/drawable-mdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png
+- res/drawable-mdpi-v4/common_google_signin_btn_text_light_normal_background.9.png
+- res/drawable-xhdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png
+- res/drawable-xhdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png
+- res/drawable-xhdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png
+- res/drawable-xhdpi-v4/common_google_signin_btn_text_light_normal_background.9.png
+- res/drawable-xxhdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png
+- res/drawable-xxhdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png
+- res/drawable-xxhdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png
+- res/drawable-xxhdpi-v4/common_google_signin_btn_text_light_normal_background.9.png
+- res/drawable/action_item_selected.9.png
+- res/drawable/action_popup.9.png
+- m4a
+- wav
+isFrameworkApk: false
+packageInfo:
+  forcedPackageId: '127'
+  renameManifestPackage: null
+sdkInfo:
+  minSdkVersion: '19'
+  targetSdkVersion: '26'
+sharedLibrary: false
+sparseResources: false
+unknownFiles:
+  build-data.properties: '8'
+  com/panasonic/avc/cng/view/common/gemini/Doxyfile: '8'
+  jsr305_annotations/Jsr305_annotations.gwt.xml: '8'
+  org/apache/http/entity/mime/version.properties: '8'
+usesFramework:
+  ids:
+  - 1
+  tag: null
+version: 2.4.0
+versionInfo:
+  versionCode: '11014000'
+  versionName: 1.10.14

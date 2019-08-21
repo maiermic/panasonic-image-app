@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <com.panasonic.avc.cng.view.cameraconnect.GuidanceMenuListItem android:id="@id/dummyMenuItem1" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerInParent="true" app:menuImage="@drawable/item_picmate_button" />
+        <com.panasonic.avc.cng.view.cameraconnect.GuidanceMenuListItem android:id="@id/picmateButton" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_above="@id/dummyMenuItem1" android:onClick="onClickPicmate" app:menuImage="@drawable/item_picmate_button" app:menuTitle="@string/func_item_picmate" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <com.panasonic.avc.cng.view.cameraconnect.GuidanceMenuListItem android:id="@id/dummyMenuItem2" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerInParent="true" app:menuImage="@drawable/item_picmate_button" />
+        <com.panasonic.avc.cng.view.cameraconnect.GuidanceMenuListItem android:id="@id/smartAppButton" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_above="@id/dummyMenuItem2" android:onClick="onClickPsa" app:menuImage="@drawable/item_smart_app_button" app:menuTitle="@string/func_item_smartapp_2" />
+    </RelativeLayout>
+    <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+</LinearLayout>

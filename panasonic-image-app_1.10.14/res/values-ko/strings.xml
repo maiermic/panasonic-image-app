@@ -1,0 +1,1765 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_google_play_services_enable_button">사용 설정</string>
+    <string name="common_google_play_services_enable_text">Google Play 서비스를 사용하도록 설정해야 %1$s이(가) 작동합니다.</string>
+    <string name="common_google_play_services_enable_title">Google Play 서비스 사용</string>
+    <string name="common_google_play_services_install_button">설치</string>
+    <string name="common_google_play_services_install_text">기기에 Google Play 서비스가 설치되어 있어야 %1$s이(가) 실행됩니다.</string>
+    <string name="common_google_play_services_install_title">Google Play 서비스 설치</string>
+    <string name="common_google_play_services_notification_ticker">Google Play 서비스 오류</string>
+    <string name="common_google_play_services_unknown_issue">%1$s에서 Google Play 서비스를 사용하는 데 문제가 있습니다. 다시 시도하세요.</string>
+    <string name="common_google_play_services_unsupported_text">%1$s은(는) Google Play 서비스 없이는 실행되지 않으나, 기기에서 Google Play 서비스를 지원하지 않습니다.</string>
+    <string name="common_google_play_services_update_button">업데이트</string>
+    <string name="common_google_play_services_update_text">Google Play 서비스를 업데이트해야 %1$s이(가) 실행됩니다.</string>
+    <string name="common_google_play_services_update_title">Google Play 서비스 업데이트</string>
+    <string name="common_google_play_services_updating_text">현재 업데이트 중인 Google Play 서비스가 있어야 %1$s이(가) 실행됩니다.</string>
+    <string name="common_google_play_services_wear_update_text">새 버전의 Google Play 서비스가 필요합니다. 곧 자동으로 업데이트됩니다.</string>
+    <string name="common_open_on_phone">스마트폰에서 열기</string>
+    <string name="common_signin_button_text">로그인</string>
+    <string name="common_signin_button_text_long">Google 계정으로 로그인</string>
+    <string name="app_name">Image App</string>
+    <string name="app_name_leica">Image Shuttle</string>
+    <string name="av_no_name">AV 장치</string>
+    <string name="baby_monitor">베이비 모니터</string>
+    <string name="babymon_cannot_operation">베이비 모니터 기능을 사용할 때는 이 기능을 사용할 수 없습니다.</string>
+    <string name="babymon_cant_regstid">"서버에 연결할 수 없습니다.
+알림 기능을 사용할 수 없습니다."</string>
+    <string name="babymon_mic_resttime">%02d초 남음</string>
+    <string name="bracket_shooted_suspended">촬영된 브래킷이 중지되었습니다.</string>
+    <string name="bracket_shooted_suspended_unable_recharge">플래시를 재충전할 수 없어서 촬영된 브래킷이 중지되었습니다.</string>
+    <string name="btn_ask_idsync_no">복사하지 않음</string>
+    <string name="btn_ask_idsync_yes">복사</string>
+    <string name="btn_geotag_not_takeover">업데이트하지 않음</string>
+    <string name="btn_geotag_takeover">업데이트</string>
+    <string name="btn_geotag_takeover_delete">지우기</string>
+    <string name="btn_phcol_change_frame">프레임 변경</string>
+    <string name="btn_phcol_change_photo">사진 변경</string>
+    <string name="cam_command_msg_check_camera">카메라 장치를 확인하십시오.</string>
+    <string name="cam_command_msg_sending">카메라와 통신 중...</string>
+    <string name="cam_command_msg_sending_error">카메라와 통신하는 중 오류가 발생했습니다.</string>
+    <string name="camera_ap_password">암호:</string>
+    <string name="camera_ap_ssid">SSID:</string>
+    <string name="cinelike_dolly_zoom">돌리 줌</string>
+    <string name="cinelike_slow_quick">느림/빠름</string>
+    <string name="cloud_msg_cancel">취소하시겠습니까?</string>
+    <string name="cloud_msg_canceled">취소되었습니다.</string>
+    <string name="cloud_msg_no_update">업데이트가 필요 없습니다.</string>
+    <string name="cloud_msg_update">업데이트하시겠습니까?</string>
+    <string name="cloud_msg_update_error">업데이트에 실패했습니다.</string>
+    <string name="cloud_msg_updated">업데이트가 완료되었습니다.</string>
+    <string name="cloud_msg_updating">업데이트 중...</string>
+    <string name="cm_msg_error_cloud_save_local">오류로 인해 일부 이미지가 저장되지 않았습니다.</string>
+    <string name="cm_msg_remain">남은 시간:</string>
+    <string name="cmn_auto_cloud_backup">자동 백업</string>
+    <string name="cmn_bluetooth">Bluetooth</string>
+    <string name="cmn_bluetooth_setting">블루투스 설정</string>
+    <string name="cmn_bluetooth_setting_short">블루투스 설정</string>
+    <string name="cmn_bt_remote_controller">셔터 리모콘</string>
+    <string name="cmn_bt_remote_controller_title">셔터 리모콘</string>
+    <string name="cmn_btn_cancel">취소</string>
+    <string name="cmn_btn_close">닫기</string>
+    <string name="cmn_btn_detail">세부 사항</string>
+    <string name="cmn_btn_dicision">적용</string>
+    <string name="cmn_btn_end">종료</string>
+    <string name="cmn_btn_execute">실행</string>
+    <string name="cmn_btn_execute_short">실행</string>
+    <string name="cmn_btn_ok">확인</string>
+    <string name="cmn_btn_reset">리셋</string>
+    <string name="cmn_btn_save">저장</string>
+    <string name="cmn_btn_update">업데이트</string>
+    <string name="cmn_build_number">빌드 번호</string>
+    <string name="cmn_camera_setting">카메라 설정</string>
+    <string name="cmn_camera_setting_copy">카메라 설정복사</string>
+    <string name="cmn_camera_setting_copy2">"카메라 설정
+복사"</string>
+    <string name="cmn_camera_setting_copy3">카메라 설정복사</string>
+    <string name="cmn_camera_setting_delete">삭제</string>
+    <string name="cmn_camera_setting_rename">이름 변경</string>
+    <string name="cmn_camera_setting_save">설정 저장</string>
+    <string name="cmn_camera_setting_saved_settings">저장된 카메라 설정</string>
+    <string name="cmn_camera_setting_send_camera">카메라에 보내기</string>
+    <string name="cmn_card_protected">카드가 잠겨 있습니다. 잠금을 해제하십시오.</string>
+    <string name="cmn_cloud_backup">클라우드에 백업</string>
+    <string name="cmn_cloud_backup1">클라우드 백업</string>
+    <string name="cmn_cloud_backup_ap_ssid">무선 액세스 포인트의 연결 정보(SSID)</string>
+    <string name="cmn_cloud_backup_connect_ap">연결할 무선 액세스 포인트</string>
+    <string name="cmn_cloud_backup_connection_test">연결 테스트</string>
+    <string name="cmn_cloud_backup_picmate_settings">클라우드 설정</string>
+    <string name="cmn_cloud_backup_remove_location_data">위치 데이터 삭제</string>
+    <string name="cmn_cloud_backup_send_size">크기</string>
+    <string name="cmn_cloud_backup_send_size_l">L</string>
+    <string name="cmn_cloud_backup_send_size_m">M</string>
+    <string name="cmn_cloud_backup_send_size_org">원본</string>
+    <string name="cmn_cloud_backup_send_size_s">S</string>
+    <string name="cmn_cloud_backup_send_size_vga">VGA</string>
+    <string name="cmn_cloud_backup_start">시작</string>
+    <string name="cmn_cloud_backup_start_backup">백업 시작</string>
+    <string name="cmn_cloud_backup_terminate">취소</string>
+    <string name="cmn_cloud_backup_terminate_condition_battery">정지 조건(카메라 배터리 잔량)</string>
+    <string name="cmn_connect">연결</string>
+    <string name="cmn_connect_mode_qr_code">QR 코드</string>
+    <string name="cmn_connect_mode_wifi">Wi-Fi</string>
+    <string name="cmn_connection_dsc_direct">직접</string>
+    <string name="cmn_connection_dsc_network">네트워크</string>
+    <string name="cmn_connection_dsc_wifi_direct">Wi-Fi Direct</string>
+    <string name="cmn_connection_movie_direct">직접 연결</string>
+    <string name="cmn_connection_movie_network">무선 AP 연결</string>
+    <string name="cmn_connection_tethering">모바일 핫스팟</string>
+    <string name="cmn_contorl_camera">카메라로 조작</string>
+    <string name="cmn_digital_still_camera">디지털 카메라</string>
+    <string name="cmn_digital_video_camera">디지털 비디오 카메라</string>
+    <string name="cmn_digital_video_camera_wearable">웨어러블 카메라</string>
+    <string name="cmn_error_title">오류</string>
+    <string name="cmn_function_dsc_connect_sp">원격 촬영 &amp; 시청</string>
+    <string name="cmn_function_dsc_send_image_camera">카메라에 저장된 이미지 전송</string>
+    <string name="cmn_function_dsc_send_image_recording">녹화 중 이미지 전송</string>
+    <string name="cmn_function_movie_remote_control">리모콘</string>
+    <string name="cmn_help_url">http://panasonic.jp/support/spn/global/dsc/help/l_link2.1/kr/</string>
+    <string name="cmn_help_url_test">http://panasonic.jp/support/spn/global/dsc/help/YN_19102012_l_link2.1/kr/</string>
+    <string name="cmn_imageapp_help_url">http://panasonic.jp/support/spn/global/dsc/help/image_app/kr/</string>
+    <string name="cmn_imageapp_help_url_test">http://panasonic.jp/support/spn/global/dsc/help/test_1120_image_app/kr/</string>
+    <string name="cmn_imageshuttle_help_url">http://www.leica-image-shuttle.help.leica-camera.com/</string>
+    <string name="cmn_imageshuttle_license_html_android">license_android_en</string>
+    <string name="cmn_label_title_nextskipview">이 화면을 다시 표시하지 않습니다.</string>
+    <string name="cmn_llink_dummy" />
+    <string name="cmn_msg_3box_no_contents_found">재생 콘텐츠를 찾을 수 없습니다.</string>
+    <string name="cmn_msg_3box_skip_play_mp4_a500">"다음 형식의 비디오만 TV에서 재생할 수 있습니다.
+ \"848x480/30p(25p) \" \"848x480/240fps(200fps) \"
+ \"1280x720/30p(25p) \"
+ \"1280x720/120fps(100fps) \""</string>
+    <string name="cmn_msg_3box_skip_play_mp4_vertical">"다음 형식의 비디오만 TV에서 재생할 수 있습니다.
+ \"640x480/30p \""</string>
+    <string name="cmn_msg_3box_skip_play_mp4_wearable">"다음 형식의 비디오만 TV에서 재생할 수 있습니다.
+ \"848x480/30p(25p) \" 및 \"848x480/240fps(200fps) \"."</string>
+    <string name="cmn_msg_already_regist">등록됨</string>
+    <string name="cmn_msg_ask_camera_change_rec_mode">카메라를 사용하여 촬영 모드로 전환되었습니다.</string>
+    <string name="cmn_msg_camera_changed_rec_mode">카메라에서 촬영 모드로 전환되었습니다.</string>
+    <string name="cmn_msg_cannot_play_3box">선택한 장면을 TV에서 재생할 수 없습니다.</string>
+    <string name="cmn_msg_cannot_play_3box_mp4_60p">MP4 1920x1080/60p(50p) 형식의 비디오는 TV에서 재생할 수 없습니다.</string>
+    <string name="cmn_msg_cannot_play_mp4">이 카메라의 MP4 콘텐츠를 TV에서 재생할 수 없습니다.</string>
+    <string name="cmn_msg_check_receive_image">다운로드한 이미지를 확인하시겠습니까?</string>
+    <string name="cmn_msg_confirm_app_finish_on_back_pressed">응용 프로그램을 종료하려면 버튼을 다시 누릅니다.</string>
+    <string name="cmn_msg_connect_camera">카메라 [%s]이(가) 연결되었습니다.</string>
+    <string name="cmn_msg_connect_error">연결에 실패했습니다.</string>
+    <string name="cmn_msg_connect_local_mode">"연결에 실패했습니다.
+로컬 모드를 시작합니다."</string>
+    <string name="cmn_msg_delete_all_data">데이터를 지우시겠습니까?</string>
+    <string name="cmn_msg_delete_data">데이터가 삭제되었습니다.</string>
+    <string name="cmn_msg_disconnected">"카메라 연결이 끊겼습니다.
+카메라의 Wi-Fi 연결을 다시 설정하십시오."</string>
+    <string name="cmn_msg_disconnected2">카메라 연결이 끊겼습니다.</string>
+    <string name="cmn_msg_disconnected_and_retry_connect">카메라가 응답하지 않습니다. 카메라에서 Wi-Fi를 다시 설정하거나, 무선 전파 환경이 더 좋은 위치로 이동하고 \"확인 \" 버튼을 누르십시오.</string>
+    <string name="cmn_msg_disconnected_and_wait_for_recieve">"카메라와의 연결이 끊겼거나 촬영 모드가 종료되었습니다.
+카메라와의 Wi-Fi 연결을 다시 설정하거나 이미지를 복사하십시오."</string>
+    <string name="cmn_msg_disconnected_and_wait_for_recieve_short">"카메라와의 연결이 끊겼거나 촬영 모드가 종료되었습니다.
+이미지를 복사할 수 있습니다."</string>
+    <string name="cmn_msg_disconnected_dmr">재생 장치 연결이 중단되었습니다.</string>
+    <string name="cmn_msg_error_not_internet">"인터넷에 연결되지 않았습니다.
+인터넷에 연결하십시오."</string>
+    <string name="cmn_msg_error_rec">"촬영에 실패했습니다.
+카메라 또는 메모리 카드를 확인하십시오."</string>
+    <string name="cmn_msg_help_error_not_internet">"스마트폰이 인터넷에 연결되어 있지 않기 때문에 \"도움말 \"을 로드할 수 없습니다.
+인터넷에 연결하십시오."</string>
+    <string name="cmn_msg_jump_snap_warning">점프 스냅을 사용하여 촬영하려면 카메라를 “1매”로 설정하십시오.</string>
+    <string name="cmn_msg_just_a_moment">잠시만 기다리십시오...</string>
+    <string name="cmn_msg_movie_rec_disable">현재 비디오를 촬영할 수 없습니다.</string>
+    <string name="cmn_msg_need_lumix_link">선택된 카메라에 연결하려면 스마트폰/태블릿에 [LUMIX LINK]를 설치하십시오.</string>
+    <string name="cmn_msg_not_change_mode_in_cam_writing">카메라에서 촬영이 진행 중이므로 현재 모드를 변경할 수 없습니다.</string>
+    <string name="cmn_msg_not_connect_in_com_recording">카메라에서 비디오촬영이 진행 중이므로 연결을 할 수 없습니다.</string>
+    <string name="cmn_msg_not_func_now_camera_recording">카메라를 사용하여 비디오 촬영 중...</string>
+    <string name="cmn_msg_not_func_now_camera_use">카메라가 작동 중이므로 현재 이 기능을 사용할 수 없습니다.</string>
+    <string name="cmn_msg_not_func_now_common">이 기능은 현재 사용할 수 없습니다.</string>
+    <string name="cmn_msg_not_func_now_movie_recording">비디오 촬영 중에는 이 기능을 사용할 수 없습니다.</string>
+    <string name="cmn_msg_not_func_now_photo_recording">정지 이미지 촬영 중에는 이 기능을 사용할 수 없습니다.</string>
+    <string name="cmn_msg_not_func_now_receive_image">지금 카메라에서 이미지를 다운로드 중이므로 현재 이 기능을 사용할 수 없습니다.</string>
+    <string name="cmn_msg_not_func_now_regist_image">이미지 등록이 진행 중이므로 현재 이 기능을 사용할 수 없습니다.</string>
+    <string name="cmn_msg_not_func_now_selftimer_waitting">셀프 타이머를 사용할 때는 이 기능을 사용할 수 없습니다.</string>
+    <string name="cmn_msg_not_func_now_shooting">잠시만 기다리십시오...</string>
+    <string name="cmn_msg_not_func_now_speaking">원격 보이스 기능을 사용할 때는 이 기능을 사용할 수 없습니다.</string>
+    <string name="cmn_msg_not_movie_rec_in_cam_writing">카메라에서 촬영이 진행 중이므로 현재 비디오 촬영을 할 수 없습니다.</string>
+    <string name="cmn_msg_now_camera_use">카메라에서 작업이 진행 중입니다.</string>
+    <string name="cmn_msg_now_camera_use_snapmovie">디지털 카메라의 스냅 동영상 기능이 ON으로 설정된 경우에는 이 작업을 실행할 수 없습니다. 이 앱을 사용하려면 스냅 동영상을 OFF로 설정하십시오.</string>
+    <string name="cmn_msg_now_recieve_images_from_camera">카메라에서 이미지 다운로드 중...</string>
+    <string name="cmn_msg_now_regist_image">수신된 이미지 등록 중...</string>
+    <string name="cmn_msg_only_movie">MP4 비디오만</string>
+    <string name="cmn_msg_only_picture">정지 사진만</string>
+    <string name="cmn_msg_picmate_cloud_warning">PC 또는 스마트폰과 같은 다운로드 가능한 장치에서 클라우드 싱크 설정을 완료한 후, 클라우드 폴더에 업로드할 수 있습니다.</string>
+    <string name="cmn_msg_picmate_cloud_warning2">전송된 이미지는 클라우드 폴더에 30일 동안 저장됩니다(최대 1,000매의 이미지). 전송된 이미지는 전송 후 30일이 지나면 자동으로 삭제됩니다.</string>
+    <string name="cmn_msg_picmate_cloud_warning3">클라우드 폴더에서 지정된 모든 장치로의 이미지 다운로드가 완료되면, 전송 후 30일 이내인 경우라도 클라우드 폴더에서 이미지가 삭제될 수 있습니다.</string>
+    <string name="cmn_msg_picture_shutter_disable">현재 정지 사진을 촬영할 수 없습니다.</string>
+    <string name="cmn_msg_qr_error">QR 코드를 읽을 수 없습니다.</string>
+    <string name="cmn_msg_read_qr_code">QR 코드를 프레임 내에 배치하고 캡처합니다.</string>
+    <string name="cmn_msg_remain_60min_or_less">카드의 용량이 부족합니다. 이 모드에서 촬영하려면 최소 60분 이상이 남아 있어야 합니다.</string>
+    <string name="cmn_msg_remain_zero">"메모리가 부족합니다.
+카메라를 확인하십시오."</string>
+    <string name="cmn_msg_sd_unset">"메모리 카드가 없습니다.
+카메라를 확인하십시오."</string>
+    <string name="cmn_msg_server_multi">연결할 카메라를 선택하십시오.</string>
+    <string name="cmn_msg_server_zero">"카메라에 연결할 수 없습니다.
+Wi-Fi 설정에서, 연결할 카메라가 선택되었는지 확인하십시오."</string>
+    <string name="cmn_msg_server_zero_2">현재 이 기능을 사용할 수 없습니다.</string>
+    <string name="cmn_msg_server_zero_2_old">현재 이 기능을 사용할 수 없습니다. 카메라와 스마트폰의 Wi-Fi 설정을 확인한 다음 \"연결 대상 설정 \"에서 카메라를 선택하십시오.</string>
+    <string name="cmn_msg_server_zero_old">"연결할 카메라를 찾을 수 없습니다.
+연결할 카메라를 메뉴에서 선택하십시오."</string>
+    <string name="cmn_msg_server_zero_os_wifi">장치의 Wi-Fi 설정에서 연결할 카메라를 선택했는지 확인하십시오.</string>
+    <string name="cmn_msg_wifi_connect_longtime">연결에 몇 분이 걸릴 수 있습니다.</string>
+    <string name="cmn_msg_wifi_multi">연결할 액세스 포인트를 선택하십시오.</string>
+    <string name="cmn_network">네트워크</string>
+    <string name="cmn_network_ap_camera_id">SSID</string>
+    <string name="cmn_network_camera_ssid">SSID</string>
+    <string name="cmn_network_live_camera_id">SSID</string>
+    <string name="cmn_network_wps">WPS</string>
+    <string name="cmn_next">다음</string>
+    <string name="cmn_no">아니요</string>
+    <string name="cmn_notification_title">Image App의 알림 메시지입니다.</string>
+    <string name="cmn_notification_title_leica">Image Shuttle의 알림 메시지입니다.</string>
+    <string name="cmn_now_wait_camera_response">카메라 응답을 기다리는 중...</string>
+    <string name="cmn_off">끄기</string>
+    <string name="cmn_on">켜기</string>
+    <string name="cmn_particle_high">강</string>
+    <string name="cmn_particle_low">약</string>
+    <string name="cmn_particle_mid">중</string>
+    <string name="cmn_particle_off">꺼짐</string>
+    <string name="cmn_pict_saved">사진이 저장되었습니다.</string>
+    <string name="cmn_registered_camera">등록된 카메라</string>
+    <string name="cmn_registerring_camera">등록 가능한 카메라</string>
+    <string name="cmn_remain_battery_1">1용량 배터리 잔량</string>
+    <string name="cmn_remain_battery_2">2용량 배터리 잔량</string>
+    <string name="cmn_remote_watch">홈 모니터</string>
+    <string name="cmn_search">검색</string>
+    <string name="cmn_settings">설정</string>
+    <string name="cmn_single_shoot">1매</string>
+    <string name="cmn_skip">건너뛰기</string>
+    <string name="cmn_slepp">절전 모드</string>
+    <string name="cmn_smart_app_url">http://panasonic.jp/pss/</string>
+    <string name="cmn_standby">대기</string>
+    <string name="cmn_stop_reason_value">[%d]</string>
+    <string name="cmn_unregist_camera">등록 취소</string>
+    <string name="cmn_waiting_transfer">이미지 전송 대기 중</string>
+    <string name="cmn_wifi">Wi-Fi</string>
+    <string name="cmn_wifi_setting_short">Wi-Fi 설정</string>
+    <string name="cmn_yes">예</string>
+    <string name="cnm_msg_please_talk">토크</string>
+    <string name="connect_msg_nfc_reset_history">카메라에 연결하려면 처음부터 시작하십시오.</string>
+    <string name="content_type_avchd">AVCHD</string>
+    <string name="content_type_avchd_3d">AVCHD-3D</string>
+    <string name="content_type_avchd_50i">1080/50i</string>
+    <string name="content_type_avchd_50p">1080/50p</string>
+    <string name="content_type_avchd_60i">1080/60i</string>
+    <string name="content_type_avchd_60p">1080/60p</string>
+    <string name="content_type_avchd_sbs">SbS</string>
+    <string name="content_type_jpeg">JPEG</string>
+    <string name="content_type_mp4">MP4/iFrame</string>
+    <string name="content_type_mp4_only">MP4</string>
+    <string name="demo_msg_nfc_explain">Touch the NFC mark on the camera with your smartphone.</string>
+    <string name="easy_setting_confirm_at_camera">[카메라로 확인]</string>
+    <string name="easy_setting_connection_test_on_camera">(3) 카메라에서 \"연결 테스트 \" 기능을 실행합니다.</string>
+    <string name="easy_setting_current_time_camera">카메라의 현재 시간</string>
+    <string name="easy_setting_current_time_sp">스마트폰의 현재 시간</string>
+    <string name="easy_setting_id_camera">이미 카메라에 등록되어 있는 LUMIX CLUB 로그인 ID</string>
+    <string name="easy_setting_live_cast">라이브 캐스트</string>
+    <string name="easy_setting_msg_already_regist_id">LUMIX CLUB 로그인 ID가 이미 이 카메라에 등록되어 있습니다.</string>
+    <string name="easy_setting_msg_finish_setting">스마트폰-카메라 Wi-Fi 기능이 초기화되었습니다.</string>
+    <string name="easy_setting_msg_need_operation">라이브 캐스트 기능을 사용하려면 다음의 추가 작업도 수행해야 합니다.</string>
+    <string name="easy_setting_msg_need_regist">* 라이브 캐스트, 베이비 모니터 및 DLNA 기능을 사용하려면 먼저 등록해야 합니다.</string>
+    <string name="easy_setting_msg_need_regist_id_for_use">* LUMIX CLUB 로그인 ID와 암호가 아직 없는 경우 PC 또는 다른 장치를 사용하여 미리 LUMIX CLUB 로그인 ID와 암호를 만드십시오.</string>
+    <string name="easy_setting_msg_regist_access_point">카메라에 액세스 지점을 등록합니다.</string>
+    <string name="easy_setting_msg_regist_id_to_camera">LUMIX CLUB 로그인 ID와 암호를 카메라에 등록합니다.</string>
+    <string name="easy_setting_msg_skip_or_next_syncronize">장치가 이미 동기화된 경우에는 이 단계를 건너뛸 수 있습니다. 장치를 다시 동기화하려면 다음을 누르십시오.</string>
+    <string name="easy_setting_msg_skip_or_next_use">이 ID를 계속 사용하려면 건너뛰기를 누르십시오. 변경하려면 다음을 누르십시오.</string>
+    <string name="easy_setting_msg_ssid_exist">동일한 SSID가 이전에 등록되었습니다.</string>
+    <string name="easy_setting_msg_syncronize_time">스마트폰의 시계와 카메라의 시계를 동기화합니다.</string>
+    <string name="easy_setting_regist_access_point">액세스 지점 등록</string>
+    <string name="easy_setting_regist_access_point_for_use">액세스 지점을 사용하는 경우 미리 등록하십시오.</string>
+    <string name="easy_setting_regist_ustream_id">(1) USTREAM ID 만들기</string>
+    <string name="easy_setting_select_item">설정할 항목을 선택합니다.</string>
+    <string name="easy_setting_setting_at_pc">[PC 또는 다른 장치를 통해 수행된 설정]</string>
+    <string name="easy_setting_syncronize_time">시계 동기화</string>
+    <string name="easy_setting_ustream_setting_at_picmate">LUMIX CLUB에 로그인하고 웹서비스 연계 설정을 선택한 다음 USTREAM을 설정합니다.</string>
+    <string name="easy_setting_web_setting_at_picmate">(2) LUMIX CLUB에서 웹서비스 연계(USTREAM)를 설정합니다</string>
+    <string name="easy_wifi_setting_ap_msg">"연결할 액세스 포인트를 선택하십시오.
+액세스 포인트를 아직 등록하지 않은 경우, 사용 가능한 첫 번째 빈 행(위에서)을 선택하고 무선 액세스 포인트를 등록하십시오."</string>
+    <string name="easywifi_clock_camtime_known">시간 알 수 없음</string>
+    <string name="easywifi_mimamori_invalidatedata">카메라에서 가져온 정보가 올바르지 않습니다.</string>
+    <string name="easywifi_picmate_overwrite">"로그인 ID가 카메라에 등록되어 있습니다.
+덮어쓰시겠습니까?"</string>
+    <string name="easywifi_picmate_setting">LUMIX CLUB ID 설정 중...</string>
+    <string name="easywifi_setting_ap_comment">"카메라에 액세스 지점을 등록합니다.
+
+액세스 지점을 사용하는 경우 미리 등록하십시오.
+
+* 라이브 캐스트, 베이비 모니터 및 DLNA 기능을 사용하려면 먼저 등록해야 합니다."</string>
+    <string name="easywifi_setting_ap_comment_for_wearable">"카메라에 액세스 지점을 등록합니다.
+
+액세스 지점을 사용하는 경우 미리 등록하십시오.
+
+* 라이브 캐스트 및 DLNA 기능을 사용하려면 먼저 등록해야 합니다."</string>
+    <string name="easywifi_setting_ap_comment_for_wearable_no_livecast">"카메라에 액세스 지점을 등록합니다.
+
+액세스 지점을 사용하는 경우 미리 등록하십시오.
+
+* DLNA 기능을 사용하려면 먼저 등록해야 합니다."</string>
+    <string name="easywifi_setting_clock_comment">"스마트폰의 시계와 카메라의 시계를 동기화합니다.
+
+카메라의 현재 시간
+%1$s
+
+스마트폰의 현재 시간
+%2$s
+
+장치가 이미 동기화된 경우에는 이 단계를 건너뛸 수 있습니다. 장치를 다시 동기화하려면 다음을 누르십시오."</string>
+    <string name="easywifi_setting_mimamori_title">홈 모니터 설정</string>
+    <string name="easywifi_setting_nodata">카메라에서 정보를 가져오지 못했습니다.</string>
+    <string name="easywifi_setting_picmate_comment">"LUMIX CLUB 로그인 ID와 암호를 카메라에 등록합니다.
+
+* LUMIX CLUB 로그인 ID와 암호가 아직 없는 경우 PC 또는 다른 장치를 사용하여 미리 LUMIX CLUB 로그인 ID와 암호를 만드십시오.
+
+%s
+
+이 ID를 계속 사용하려면 건너뛰기를 누르십시오. 변경하려면 다음을 누르십시오."</string>
+    <string name="easywifi_setting_picmate_login_invalidate">로그인 ID와 암호를 입력합니다.</string>
+    <string name="easywifi_setting_ustream_comment">"스마트폰-카메라 Wi-Fi 기능이 초기화되었습니다.
+
+라이브 캐스트 기능을 사용하려면 다음의 추가 작업도 수행해야 합니다.
+
+[PC 또는 다른 장치를 통해 수행된 설정]
+(1) USTREAM ID 만들기
+
+(2) LUMIX CLUB에서 웹서비스 연계(USTREAM)를 설정합니다
+LUMIX CLUB에 로그인하고 웹서비스 연계 설정을 선택한 다음 USTREAM을 설정합니다.
+
+[카메라로 확인]
+(3) 카메라에서 \"연결 테스트 \" 기능을 실행합니다."</string>
+    <string name="easywifi_setting_ustream_comment2">"스마트폰-카메라 Wi-Fi 기능이 초기화되었습니다.
+
+라이브 캐스트 기능을 사용하려면 다음의 추가 작업도 수행해야 합니다.
+
+[PC 또는 다른 장치를 통해 수행된 설정]
+(1) USTREAM ID 만들기
+
+(2) LUMIX CLUB에서 웹서비스 연계(USTREAM)를 설정합니다
+LUMIX CLUB에 로그인하고 웹서비스 연계 설정을 선택한 다음 USTREAM을 설정합니다.
+"</string>
+    <string name="easywifi_setting_ustream_title">USTREAM 설정</string>
+    <string name="explain_menu_privacy_notice">\"메뉴 \" -> \"응용 프로그램 기능 \" -> \"사용 조건 \" -> \"자동으로 보내기 \"</string>
+    <string name="exposure_compensation">노출보정</string>
+    <string name="folder_type_dsc">LUMIX</string>
+    <string name="folder_type_dsc_sd1">LUMIX(SD1)</string>
+    <string name="folder_type_dsc_sd2">LUMIX(SD2)</string>
+    <string name="folder_type_leica_dsc">Leica</string>
+    <string name="folder_type_movie">비디오 카메라</string>
+    <string name="folder_type_movie_mem">비디오 카메라(내장 메모리)</string>
+    <string name="folder_type_movie_sd">비디오 카메라(SD)</string>
+    <string name="func_app_boot_android">[%s]을(를) 시작하려면 인터넷에 액세스할 수 있어야 합니다.</string>
+    <string name="func_app_btn_boot">앱 시작</string>
+    <string name="func_app_btn_google_play">Google Play로 이동</string>
+    <string name="func_app_install_android">[%s]을(를) 설치하려면 인터넷에 액세스할 수 있어야 합니다.</string>
+    <string name="func_app_need_reboot">스마트폰을 카메라에 직접 연결한 경우에는, 인터넷에 액세스할 수 있는 다른 연결 방법으로 전환한 다음 앱을 다시 시작하십시오.</string>
+    <string name="func_auto_phcol_detail">촬영된 장면 중 비디오 카메라가 자동으로 선택한 가장 좋은 촬영물을 조합하여 사진이 생성됩니다.</string>
+    <string name="func_geotag_detail">스마트폰/태블릿 위치 정보가 이미지에 추가됩니다.</string>
+    <string name="func_guidance_picture_send">이미지 전송</string>
+    <string name="func_guidance_remote_controll">원격 조작</string>
+    <string name="func_highlight_detail">여러 장면에서 하일라이트를 추출하고, 이를 재생하고, 짧은 비디오로 저장할 수 있습니다.</string>
+    <string name="func_homemonitor_detail">외부에 있을 때 집안 상태를 감시할 수 있습니다.</string>
+    <string name="func_item_auto_phcol">하일라이트 사진 콜라주</string>
+    <string name="func_item_auto_phcol_2">하일라이트 사진 콜라주</string>
+    <string name="func_item_geotag">지오태깅</string>
+    <string name="func_item_highlight">하이라이트 재생</string>
+    <string name="func_item_highlight_2">하이라이트 재생</string>
+    <string name="func_item_phcol">사진 콜라주</string>
+    <string name="func_item_phcol_2">사진 콜라주</string>
+    <string name="func_item_picmate">LUMIX CLUB PicMate</string>
+    <string name="func_item_smartapp">Panasonic SmartApp</string>
+    <string name="func_item_smartapp_2">Panasonic SmartApp</string>
+    <string name="func_item_snap_movie">스냅 동영상</string>
+    <string name="func_item_snap_movie_2">스냅 동영상</string>
+    <string name="func_item_stopmotion">스톱 모션 애니메이션 도우미</string>
+    <string name="func_phcol_detail">좋아하는 사진 여러 장을 조합하여 한 장의 이미지를 만들 수 있습니다.</string>
+    <string name="func_picmate_detail">디지털 카메라를 사용하여 촬영한 사진과 비디오를 \"구성, 공유 및 표시 \"할 수 있는 사진 및 비디오 공유 사이트</string>
+    <string name="func_smartapp_detail" />
+    <string name="func_snapmovie_detail">카메라로 스냅 동영상 모드에서 촬영한 비디오를 결합할 수 있습니다</string>
+    <string name="func_stopmotion_detail">이전에 촬영한 사진을 다음 사진의 배경으로 사용하고, 배경을 보면서 사진을 촬영할 수 있습니다</string>
+    <string name="func_tab_btn">기능</string>
+    <string name="func_transfer_all">모두</string>
+    <string name="func_transfer_auto">일괄 전송</string>
+    <string name="func_transfer_auto_days">지난 %d일</string>
+    <string name="func_transfer_auto_today">오늘</string>
+    <string name="func_transfer_only_movie">비디오만</string>
+    <string name="func_transfer_only_picture">사진만</string>
+    <string name="func_transfer_picture_movie">사진 및 비디오</string>
+    <string name="func_transfer_select">선택 항목 전송</string>
+    <string name="geotag_btn_allow_send_gps_data_to_camera">데이터 보내기</string>
+    <string name="geotag_btn_allow_synctime_with_camera">동기화</string>
+    <string name="geotag_btn_allow_writting_to_picture">쓰기</string>
+    <string name="geotag_btn_gps_logging_off">지오태깅 중지</string>
+    <string name="geotag_btn_gps_logging_on">지오태깅 시작</string>
+    <string name="geotag_button_delete_gps">지우기</string>
+    <string name="geotag_button_gps_send_all">일괄 보내기</string>
+    <string name="geotag_button_send_geotag">위치 데이터 보내기</string>
+    <string name="geotag_button_sync_time">시간 싱크</string>
+    <string name="geotag_cell_gps_worklog">조작 로그</string>
+    <string name="geotag_cell_interval">촬영 간격</string>
+    <string name="geotag_cell_interval_15sec">15초</string>
+    <string name="geotag_cell_interval_1sec">1초</string>
+    <string name="geotag_cell_interval_30sec">30초</string>
+    <string name="geotag_cell_interval_5sec">5초</string>
+    <string name="geotag_cell_interval_60sec">60초</string>
+    <string name="geotag_cell_save_gps">촬영 위치 정보</string>
+    <string name="geotag_label_gps_logging_disable">위치 데이터를 가져올 수 없습니다</string>
+    <string name="geotag_label_gps_logging_enable">위치 데이터를 가져오는 중...</string>
+    <string name="geotag_label_gps_logging_off">지오태킹 끄기</string>
+    <string name="geotag_label_gps_logging_on">지오태킹 켜기...</string>
+    <string name="geotag_label_gps_nfc_touch">NFC를 통해 보내기</string>
+    <string name="geotag_label_lastsynctime">마지막 싱크 시간:</string>
+    <string name="geotag_msg_ask_write_to_picture">현재 위치 정보를 이미지 파일에 쓰시겠습니까?</string>
+    <string name="geotag_msg_camera_error">연결된 카메라가 위치 로깅을 지원하지 않습니다.</string>
+    <string name="geotag_msg_cancel_write_to_picture">"쓰기가 취소되었습니다.
+위치 데이터가 카메라로 전송되었습니다."</string>
+    <string name="geotag_msg_cant_send_gpsdata">위치 데이터를 전송할 수 없습니다.</string>
+    <string name="geotag_msg_error_write_to_picture">위치 데이터 쓰기에 실패했습니다.</string>
+    <string name="geotag_msg_gps_setting">"위치 로깅을 켜려면 GPS 기능을 켜야 합니다.
+GPS 기능을 켜시겠습니까?"</string>
+    <string name="geotag_msg_gps_setting_off">"위치 로깅을 끕니다.
+GPS 기능 설정도 변경하시겠습니까?"</string>
+    <string name="geotag_msg_if_you_start_send_gps_data">연결된 카메라는 위치 로깅을 지원해야 합니다. 위치 데이터를 전송하시겠습니까?</string>
+    <string name="geotag_msg_if_you_start_synctime">연결된 카메라는 위치 로깅을 지원해야 합니다. 시간 싱크를 수행하시겠습니까?</string>
+    <string name="geotag_msg_now_write_to_picture">위치 데이터 쓰는 중...</string>
+    <string name="geotag_msg_sdcard_is_protected_gps">SD 카드가 보호되어 있습니다. 보호를 해제하십시오.</string>
+    <string name="geotag_msg_sync_cancel">시간 싱크가 취소되었습니다.</string>
+    <string name="geotag_msg_sync_error">시간 싱크에 실패했습니다.</string>
+    <string name="geotag_title">지오태깅</string>
+    <string name="geotag_title_label_delete_gps_select">"위치 데이터를 전송했습니다.
+위치 데이터를 지우시겠습니까?"</string>
+    <string name="geotag_title_label_send_gps_now">위치 데이터 전송 중...</string>
+    <string name="geotag_title_label_sync_time_now">시간 싱크...</string>
+    <string name="geotag_worklog_savepointnum">위치 로그 수:</string>
+    <string name="geotag_worklog_status_delege_gps_data">위치 데이터가 삭제되었습니다.</string>
+    <string name="geotag_worklog_status_error_gps">위치 로깅이 비정상적으로 종료되었습니다.</string>
+    <string name="geotag_worklog_status_error_send_gps_data">위치 데이터 전송에 실패했습니다.</string>
+    <string name="geotag_worklog_status_error_synctime">시간 싱크에 실패했습니다.</string>
+    <string name="geotag_worklog_status_error_write_to_camera">위치 데이터 읽기에 실패했습니다.</string>
+    <string name="geotag_worklog_status_off">\"촬영 위치 정보 \" 꺼짐.</string>
+    <string name="geotag_worklog_status_on">\"촬영 위치 정보 \" 켜짐.</string>
+    <string name="geotag_worklog_status_send_gps_data">위치 데이터가 카메라로 전송되었습니다.</string>
+    <string name="geotag_worklog_status_synctime">시간 싱크가 완료되었습니다.</string>
+    <string name="geotag_worklog_status_write_to_camera">위치 데이터 읽기가 완료되었습니다.</string>
+    <string name="giotag_msg_no_gps_function">이 장치에는 GPS 기능을 사용할 수 없습니다.</string>
+    <string name="highlight_duration_180sec">약 3분</string>
+    <string name="highlight_duration_90sec">약 90초</string>
+    <string name="highlight_duration_none">AUTO</string>
+    <string name="highlight_effect_clasical">CLASSICAL</string>
+    <string name="highlight_effect_dynamic">DYNAMIC</string>
+    <string name="highlight_effect_natural">NATURAL</string>
+    <string name="highlight_effect_off">OFF</string>
+    <string name="highlight_effect_pop">POP</string>
+    <string name="highlight_option_effect">효과</string>
+    <string name="highlight_option_playtime">재생 시간</string>
+    <string name="highlight_option_priority">얼굴 인식 우선</string>
+    <string name="highlight_priority_off">OFF</string>
+    <string name="highlight_priority_on">ON</string>
+    <string name="mgs_vrec_stop_write">쓰기 오류 때문에 촬영이 중지되었습니다.</string>
+    <string name="mic_level_setting_title">MIC LEVEL</string>
+    <string name="movieslideshow_error_bgmcheck">이 파일은 하이라이트 만들기에 사용할 수 없습니다.</string>
+    <string name="movieslideshow_error_bgmcheck_copy_protected">이 파일은 해당 내용이 저작권 보호되기 때문에 하이라이트 만들기에 사용할 수 없습니다.</string>
+    <string name="movieslideshow_option_bgm">배경 음악</string>
+    <string name="movieslideshow_option_bgm_original">사운드 소스</string>
+    <string name="movieslideshow_option_bgm_preset">사전 설정</string>
+    <string name="movieslideshow_option_bgm_setting">오디오 설정</string>
+    <string name="movieslideshow_save_format">저장 형식</string>
+    <string name="movieslideshow_save_format_mp4high">MP4/높은 화질</string>
+    <string name="movieslideshow_save_format_mp4low">MP4/낮은 화질</string>
+    <string name="movieslideshow_setting_bgm">활성화할 경우, 실행 시 배경 음악을 지정할 수 있습니다.</string>
+    <string name="movieslideshow_setting_title">활성화할 경우, 실행 시 타이틀 이미지를 지정할 수 있습니다.</string>
+    <string name="movieslideshow_title_picture">타이틀 이미지</string>
+    <string name="movieslideshow_title_settings">제목 설정</string>
+    <string name="movieslideshow_warning_bgm">선택된 음악 파일이 없습니다. 음악 파일을 선택하지 않고 하이라이트 만들기를 시작하시겠습니까?</string>
+    <string name="movieslideshow_warning_picture">선택한 이미지가 없습니다. 타이틀 이미지를 설정하지 않고 하이라이트를 만드시겠습니까?</string>
+    <string name="msg_4k_photo_marking_limit_over">북마크가 최대 40이므로,더 이상 설정할 수 없습니다.</string>
+    <string name="msg_4kprebrst_to_4kbrst">"모션 정지 - 카메라가4K 연사 모드로변환됩니다.
+
+카메라 온도가내려갈 때까지기다리십시오."</string>
+    <string name="msg_6kprebrst_to_6kbrst">"모션 정지 - 카메라가6K 연사 모드로변환됩니다.
+
+카메라 온도가내려갈 때까지기다리십시오."</string>
+    <string name="msg_access_number_incomplete">액세스 번호로 4자리 숫자를 사용하십시오.</string>
+    <string name="msg_address_number_incomplete">주소 번호로 16자리 숫자를 사용하십시오.</string>
+    <string name="msg_ask_copy_picmate_id_to_app">"카메라의 로그인 ID가 설정되었습니다. 
+카메라의 로그인 ID를 이 앱에도 사용하시겠습니까?
+"</string>
+    <string name="msg_ask_copy_picmate_id_to_camera">"카메라의 로그인 ID가 설정되지 않았습니다. 
+이 앱과 동일한 로그인 ID를 사용하시겠습니까?"</string>
+    <string name="msg_ask_copy_snapmovie_previous">%d일 전에 스냅 동영상 모드에서 촬영한 짧은 비디오를 복사하시겠습니까?</string>
+    <string name="msg_ask_copy_snapmovie_today">오늘 스냅 동영상 모드에서 촬영한 짧은 비디오를 복사하시겠습니까?</string>
+    <string name="msg_ask_create_stopmotion_video_now">"동영상을
+제작하시겠습니까?"</string>
+    <string name="msg_ask_create_stopmotion_video_withtime">"비디오를 만드시겠습니까?
+약 %d분이 걸립니다."</string>
+    <string name="msg_ask_delete_all_contents">현재 표시된 카메라 파일을 삭제하시겠습니까?</string>
+    <string name="msg_ask_delete_all_contents_with_protect">현재 표시된 카메라 파일을 삭제하시겠습니까? (보호된 파일은 삭제되지 않음)</string>
+    <string name="msg_ask_delete_setting">설정을 삭제하시겠습니까?</string>
+    <string name="msg_ask_idsync_from_camera">LUMIX CLUB 로그인 ID가 이 카메라에 등록되어 있습니다. LUMIX CLUB 로그인 ID를 카메라에서 이 애플리케이션으로 복사하시겠습니까?</string>
+    <string name="msg_ask_idsync_to_camera">LUMIX CLUB 로그인 ID가 이 애플리케이션에 등록되었습니다. LUMIX CLUB 로그인 ID를 이 애플리케이션에서 연결된 카메라로 복사하시겠습니까?</string>
+    <string name="msg_ask_idsync_to_camera2">LUMIX CLUB 로그인 ID가 이 카메라에 등록되어 있습니다. LUMIX CLUB 로그인 ID를 이 애플리케이션에서 연결된 카메라로 복사하시겠습니까?</string>
+    <string name="msg_ask_picjump_setting">"\"이미지 공유 \" 설정이 수행되지 않았습니다.
+지금 수행하시겠습니까?"</string>
+    <string name="msg_ask_picjump_setting_yes">지금 설정 수행</string>
+    <string name="msg_ask_picmate_id_overwrite">로그인 ID를 카메라에 등록하시겠습니까?</string>
+    <string name="msg_ask_quit_stopmotion">"스톱 모션 촬영을
+끝내시겠습니까?"</string>
+    <string name="msg_ask_snapmovie_save_file">비디오를 결합하고 저장하시겠습니까?</string>
+    <string name="msg_ask_stopmotion_use_prev_setting">마지막 촬영의 이미지 화면 비율과 화질을 그대로 사용하시겠습니까?</string>
+    <string name="msg_assert_temperature_warning">카메라 내부 과열로 인해 Wi-Fi 연결이 몇 분 내에 중지됩니다.</string>
+    <string name="msg_auto_transfer_connect_wifi">카메라로부터 이미지를 수신하기 위해 Wi-Fi로 카메라와 연결하시겠습니까(자동 이미지 전송)?</string>
+    <string name="msg_bt_remote_controller_cannot_use_for_autosend">카메라가 자동 이미지 전송 중일 때는 셔터 리모콘을 사용할 수 없습니다.</string>
+    <string name="msg_bt_remote_controller_sw_on">카메라의 전원 스위치를 켭니다.</string>
+    <string name="msg_bt_remote_controller_wifi_confirm">"카메라가 Wi-Fi에 연결된 경우에는 셔터 리모콘을 사용할 수 없습니다. 
+카메라의 Wi-Fi 연결을 종료하시겠습니까?"</string>
+    <string name="msg_bt_smart_phone_name">스마트폰 명칭</string>
+    <string name="msg_bt_smart_phone_name_explain">카메라에 표시되는 스마트폰 명칭을 변경할 수 있습니다.</string>
+    <string name="msg_bt_smart_phone_name_too_long">입력한 스마트폰 명칭이 너무 깁니다.</string>
+    <string name="msg_camera_connecting_to_other">카메라가 다른 스마트폰 또는 태블릿과 연결하고 있습니다.</string>
+    <string name="msg_camera_initialize_finished">연결된 카메라의 설정이 초기화되었습니다.</string>
+    <string name="msg_camera_no_battery">카메라 배터리 용량이 낮습니다. 카메라의 전원을 끕니다.</string>
+    <string name="msg_camera_not_registered_for_no_connected_wifi">"액세스 포인트에 연결되지 않았습니다. 
+등록이 완료되지 않았습니다."</string>
+    <string name="msg_camera_not_registered_for_user_refused">"카메라에서 연결이 거부되었습니다. 
+등록이 완료되지 않았습니다."</string>
+    <string name="msg_camera_numreset_finished">번호가 재설정되었습니다.</string>
+    <string name="msg_camera_registered">등록이 완료되었습니다.</string>
+    <string name="msg_camera_setting_communcation_error">"카메라와 통신할 수 없습니다. 
+모두 다시 시작해 주십시오."</string>
+    <string name="msg_camera_setting_limit_over">"더 이상 데이터를 저장할 수 없습니다. 
+저장된 카메라 설정을 삭제합니다."</string>
+    <string name="msg_cancel_all">모두 취소합니까?</string>
+    <string name="msg_cannnot_delete_sd_protected">SD 카드가 보호되어 있습니다. 보호를 해제하십시오.</string>
+    <string name="msg_cannnot_execute_because_content_protected">이미지가 보호되어 있기 때문에 이 작업을 수행할 수 없습니다. 먼저 보호를 해제하십시오.</string>
+    <string name="msg_cannnot_execute_because_content_short">이 기능은 3초보다 짧은 이미지에는 사용할 수 없습니다.</string>
+    <string name="msg_cannnot_execute_no_account">등록된 LUMIX CLUB 로그인 ID가 없기 때문에 이 기능을 사용할 수 없습니다.</string>
+    <string name="msg_cannnot_execute_no_internet">인터넷에 연결되어 있지 않으므로 이 기능을 사용할 수 없습니다.</string>
+    <string name="msg_cannnot_execute_no_internet2">카메라에 직접 연결한 경우 또는 인터넷에 연결되어 있지 않은 경우에는 이 기능을 사용할 수 없습니다.</string>
+    <string name="msg_cannnot_picture_jump">이 기능은 현재 사용할 수 없습니다.</string>
+    <string name="msg_cannnot_picture_jump_no_data">\"이미지 공유 \" 설정이 등록되지 않았습니다.</string>
+    <string name="msg_cannnot_regist_picture_jump_sns">인증이 완료되지 않았기 때문에 등록할 수 없습니다.</string>
+    <string name="msg_cannnot_split_delete_cur_position">이 위치에서는 부분 삭제할 수 없습니다.</string>
+    <string name="msg_cannnot_up_down_because_wps">WPS를 사용하여 설정한 연결 대상 우선 순위를 변경할 수 없습니다.</string>
+    <string name="msg_cannot_action_camera_preparation">카메라 카드에서 유지 관리가 진행 중이므로 지금 이 기능을 사용할 수 없습니다.</string>
+    <string name="msg_cannot_communcation_camera_with_pairing">"카메라와 통신할 수 없습니다.
+카메라에서 페어링이 완료된 경우, 페어링을 해제한 다음 다시 시작해 주십시오."</string>
+    <string name="msg_cannot_communcation_camera_without_pairing">카메라와 통신할 수 없습니다. 카메라 측에서 페어링이 해제되었는지 확인하십시오.</string>
+    <string name="msg_cannot_communicate_camera">"카메라와 통신할 수 없습니다.
+다시 선택해 주십시오."</string>
+    <string name="msg_cannot_connect_ap_with_bt_tethering">블루투스 테더링 중에는 액세스 포인트에 연결할 수 없습니다.</string>
+    <string name="msg_cannot_connect_camera_for_clear_pairing">카메라에 \"페어링 \"이 설정되어 있지 않아 카메라에 연결할 수 없습니다. 카메라를 다시 등록해 주십시오.</string>
+    <string name="msg_cannot_create_video_rec_two_sd">촬영 시 두개의 SD 카드가사용됨으로동영상을 생성할 수 없습니다.</string>
+    <string name="msg_cannot_execute_sd_card_error">SD 카드의 문제 때문에 이 기능을 사용할 수 없습니다.</string>
+    <string name="msg_cannot_execute_sd_card_under_restoration">SD 카드를 복구 중이므로 이 기능을 사용할 수 없습니다.</string>
+    <string name="msg_cannot_format_no_card_inserted">카메라에 삽입된 SD 카드가 없습니다.</string>
+    <string name="msg_cannot_format_sd_card_error">SD 카드의 문제 때문에 포맷할 수 없습니다.</string>
+    <string name="msg_cannot_format_sd_card_protected">SD 카드가 보호되어 있습니다. 보호를 해제하십시오.</string>
+    <string name="msg_cannot_format_sd_card_under_restoration">SD 카드를 복구 중이므로 포맷할 수 없습니다.</string>
+    <string name="msg_cannot_picture_jump_not_support_content">지원되지 않는 형식이므로 이 기능을 사용할 수 없습니다.</string>
+    <string name="msg_cannot_read_camera_preparation">카메라 카드에서 유지 관리가 진행 중이므로 콘텐츠를 읽을 수 없습니다.</string>
+    <string name="msg_cannot_record_video_sdhc_sdxc">백업 기록으로동영상을 촬영하려면두개의 동일한 SD 카드를사용해야 합니다.</string>
+    <string name="msg_cannot_regist_camera_for_limit_over">"더 이상 카메라를 등록할 수 없습니다. 
+등록된 카메라를 취소해 주십시오."</string>
+    <string name="msg_cannot_restart_remote_wakeup">"카메라 상태로 인해 이 기능을 사용할 수 없습니다.
+카메라가 작동하지 않는지 확인하십시오.
+Wi-Fi로 카메라에 연결한 경우, Wi-Fi 설정에서 액세스 포인트를 확인하십시오."</string>
+    <string name="msg_cannot_switch_current_sd">전환할 수 없습니다.</string>
+    <string name="msg_changed_target_content_highlight">하이라이트 재생 기능에 사용할 수 있는 비디오로 전환합니다.</string>
+    <string name="msg_changed_target_content_phcol">하일라이트 사진 콜라주 기능에 사용할 수 있는 비디오로 전환합니다.</string>
+    <string name="msg_cloud_backup_ble_disconnect">카메라와 블루투스 연결이 끊겼습니다.</string>
+    <string name="msg_cloud_backup_camera_busy">카메라가 조작 중이어서 지금 이 기능은 사용할 수 없습니다.</string>
+    <string name="msg_cloud_backup_camera_busy_remote">카메라의 Wi-Fi 연결을 종료하십시오.</string>
+    <string name="msg_cloud_backup_cannot_start">백업을 시작할 수 없습니다</string>
+    <string name="msg_cloud_backup_communicate_fail">카메라와 통신할 수 없습니다.</string>
+    <string name="msg_cloud_backup_communication_error">"카메라와 통신할 수 없습니다. 
+다시 선택해 주십시오."</string>
+    <string name="msg_cloud_backup_conection_test_cancel">연결 테스트 취소됨.</string>
+    <string name="msg_cloud_backup_conection_test_fail">연결 테스트가 실패했습니다.</string>
+    <string name="msg_cloud_backup_conection_test_success">연결 테스트 완료됨.</string>
+    <string name="msg_cloud_backup_conection_test_testing_android">연결 테스트 중...(%1$d/%2$d)</string>
+    <string name="msg_cloud_backup_doing">카메라가 클라우드 백업을 진행 중...</string>
+    <string name="msg_cloud_backup_finish">카메라가 클라우드 백업을 완료했습니다.</string>
+    <string name="msg_cloud_backup_finish_images">[%d장]</string>
+    <string name="msg_cloud_backup_no_ap">액세스 포인트가 카메라에 등록되어 있지 않습니다. 액세스 포인트를 등록해 주십시오.</string>
+    <string name="msg_cloud_backup_not_support">백업을 지원하지 않습니다</string>
+    <string name="msg_cloud_backup_not_working">백업 중지 중...</string>
+    <string name="msg_cloud_backup_setting">"액세스 포인트를 통해 클라우드에 카메라 영상을 백업합니다. 
+클라우드 백업을 설정하려면 카메라의 전원을 켜고 블루투스를 통해 연결하십시오."</string>
+    <string name="msg_cloud_backup_setting_old">"액세스 포인트를 통해 클라우드에 카메라 영상을 백업합니다. 
+클라우드 백업을 설정하려면 카메라의 전원을 켭니다."</string>
+    <string name="msg_cloud_backup_start">카메라가 클라우드 백업을 시작했습니다.</string>
+    <string name="msg_cloud_backup_start_fail">백업을 시작할 수 없습니다.</string>
+    <string name="msg_cloud_backup_terminate">카메라가 클라우드 백업을 중지했습니다.</string>
+    <string name="msg_cloud_backup_to_finish">%s에 백업을 완료했습니다</string>
+    <string name="msg_cloud_backup_to_target">%s에 백업 중입니다...</string>
+    <string name="msg_cloud_backup_to_terminate">%s에 백업을 중지했습니다</string>
+    <string name="msg_cloud_backup_upload_target">업로드 대상</string>
+    <string name="msg_cloud_no_connecting">카메라가 연결되어 있지 않습니다</string>
+    <string name="msg_cmn_attention">주의</string>
+    <string name="msg_communication_error_occurred">카메라와 통신하는 중 오류가 발생했습니다.</string>
+    <string name="msg_complete_id_sync">카메라와 동일한 LUMIX CLUB 로그인 ID가 등록되어 있습니다.</string>
+    <string name="msg_confirm_auto_transfer_receive">다른 스마트폰에 연결하여 그 스마트폰에서 이미지를 수신하시겠습니까?</string>
+    <string name="msg_confirm_communication_env">통신 환경에 문제가 없는지 확인하십시오.</string>
+    <string name="msg_confirm_network_connection">연결을 확인하십시오.</string>
+    <string name="msg_confirm_selected_function">기능을 확인하십시오.</string>
+    <string name="msg_connect_ap_on_wifi_setting">Wi-Fi 설정으로 아래의 액세스 포인트에 연결합니다.</string>
+    <string name="msg_connected">연결됨</string>
+    <string name="msg_connected_to_camera">카메라에 연결했습니다.</string>
+    <string name="msg_connecting">연결중…</string>
+    <string name="msg_connecting_camera">카메라 [%s]이(가) 연결되었습니다.</string>
+    <string name="msg_connecting_camera_is_lumix_sync">연결할 카메라에 [LUMIX Sync]을 사용하십시오.</string>
+    <string name="msg_connecting_to_camera">카메라에 연결 중.</string>
+    <string name="msg_connecting_to_camera1">카메라에 연결 중.</string>
+    <string name="msg_connection_duplicated">"카메라가 이미 사용 중입니다.
+다른 카메라를 선택하십시오."</string>
+    <string name="msg_connection_duplicated_dsc">카메라가 이미 사용 중입니다. 다른 카메라를 선택하거나 카메라의 Wi-Fi 연결을 껐다 다시 켜십시오.</string>
+    <string name="msg_connection_failed">"카메라에 연결할 수 없습니다.
+Wi-Fi 설정을 확인하십시오."</string>
+    <string name="msg_connection_nosupport_camera">지원되지 않는 장치입니다.</string>
+    <string name="msg_connection_test_phase_four">통신 오류가 발생했습니다.</string>
+    <string name="msg_connection_test_phase_one">액세스 포인트에 연결되지 않았습니다.</string>
+    <string name="msg_connection_test_phase_three">통신 오류가 발생했습니다.</string>
+    <string name="msg_connection_test_phase_two">서버에 연결할 수 없습니다.</string>
+    <string name="msg_connection_test_phase_zero">무선 AP가 없습니다.</string>
+    <string name="msg_connectl_next_ap">아래의 액세스 포인트에 연결합니다.</string>
+    <string name="msg_cookie_policy_agreement">앱 사용 조건이 자동으로 서버로 전송됩니다. 이 설정은 나중에 변경할 수 있습니다.</string>
+    <string name="msg_create_folder_error">폴더를 생성할 수 없습니다.</string>
+    <string name="msg_delete_camera_registration">등록을 취소하시겠습니까?</string>
+    <string name="msg_delete_camera_registration_with_pairing">"등록이 취소되었습니다. 
+카메라의 페어링도 해제하여 주시기 바랍니다."</string>
+    <string name="msg_disable_shoot">사진 촬영 불가</string>
+    <string name="msg_disconnect_camera">카메라와 연결이 끊어졌습니다.</string>
+    <string name="msg_disconnectd_ssid">%s와 연결이 끊어졌습니다.</string>
+    <string name="msg_dlna_play_explain">"
+[카메라를 DLNA 장치에 연결할 때 참고 사항]
+DLNA 호환 TV에서 재생할 비디오의 경우, 촬영 모드를 \"848x480/30p(25p) \"로 설정하십시오.
+
+설정 방법:
+ \"메뉴 \" -> \"촬영 설정 \" -> \"일반 촬영 모드 \"를 선택한 다음 \"촬영 모드 \" -> \"848x480/30p(25p) \"를 선택합니다."</string>
+    <string name="msg_do_connect_wifi_for_regstering_camera">등록을 완료하기 위해 %s와(과) Wi-Fi를 연결해야 합니다.</string>
+    <string name="msg_enable_location_service">\"위치 \" 설정을 켜짐으로 설정해 주십시오.</string>
+    <string name="msg_enable_wifi_direct">Wi-Fi Direct를 켜십시오</string>
+    <string name="msg_enable_wifi_setting_for_connection">"카메라에 연결하려면 Wi-Fi가 켜져 있어야 합니다.
+Wi-Fi를 켜시겠습니까?"</string>
+    <string name="msg_err_save_file_not_supported">현재 스마트폰 또는 태블릿에서 지원되지 않는 이미지 형식이므로 이 기능을 사용할 수 없습니다.</string>
+    <string name="msg_err_save_file_not_supported_or_lack_space">현재 스마트폰 또는 태블릿에서 지원되지 않는 이미지 형식이거나 사용 가능한 저장 공간이 부족하므로 이 기능을 사용할 수 없습니다.</string>
+    <string name="msg_err_sync_id">LUMIX CLUB 로그인 ID 복사에 실패했습니다. 카메라 연결을 확인하십시오.</string>
+    <string name="msg_error_af_lock">이미지에 초점이 맞지 않으므로 AF+MF 기능을 사용할 수 없습니다.</string>
+    <string name="msg_error_connect_app_need_update">카메라에 연결할 수 없습니다. 이 응용 프로그램을 업데이트하십시오.</string>
+    <string name="msg_error_connect_check_camera">카메라에 연결할 수 없습니다. 연결할 카메라를 확인하십시오.</string>
+    <string name="msg_error_connect_check_input_param">카메라에 연결할 수 없습니다. 장치 ID와 암호를 확인하십시오.</string>
+    <string name="msg_error_fail_to_copy_movieslideshow">생성된 하이라이트 파일의 복사에 실패했습니다. 하이라이트를 더 낮은 이미지 품질 형식로 저장하여 하이라이트 생성을 다시 시도하십시오.</string>
+    <string name="msg_error_homemon_disconnected">카메라 연결이 끊겼습니다. 잠시 후 다시 시도하십시오.</string>
+    <string name="msg_error_login">로그인에 실패했습니다.</string>
+    <string name="msg_error_matanity_autoreview_reconnect">"촬영한 사진을 검사하는 중 카메라 연결이 끊어졌습니다. 
+촬영한 사진이 자동으로 저장되었습니다."</string>
+    <string name="msg_error_matanity_capture_full">최대 장면 수를 이미 촬영했기 때문에 촬영할 수 없습니다. 새 스톱 모션 프로젝트를 만드십시오.</string>
+    <string name="msg_error_matanity_create_project_full">날짜 폴더 및 스톱 모션 촬영 그룹이 이미 가득 찼기 때문에 새 스톱 모션 사진을 만들 수 없습니다.</string>
+    <string name="msg_error_pantilter_playmode">원격 패닝 틸트 크래들이 연결된 경우에는 이 기능을 사용할 수 없습니다.</string>
+    <string name="msg_error_picmate">LUMIX CLUB과 통신하는 중 오류가 발생했습니다.</string>
+    <string name="msg_error_picmate_agreement">이용 약관을 확인할 수 없으므로 이 기능을 사용할 수 없습니다.</string>
+    <string name="msg_error_picture_jump">업로드 중 오류가 발생했습니다. 인터넷에 접속할 수 있는지 확인하십시오.</string>
+    <string name="msg_error_picture_jump_invalid_data">데이터를 읽을 수 없으므로 지정된 이미지를 업로드할 수 없습니다.</string>
+    <string name="msg_error_picture_jump_need_check_application">"이미지 전송에 실패했습니다. 
+전송 대상 응용 프로그램이 설치되어 있는지 확인하십시오."</string>
+    <string name="msg_error_picture_jump_need_check_picmateserver_av">이미지 업로드에 실패했습니다. AV 장치를 LUMIX CLUB에 등록했는지 확인하십시오.</string>
+    <string name="msg_error_regist">"새 등록이 실패했습니다.
+문자와 숫자가 혼합된 
+8~16자의 문자열을 입력하십시오."</string>
+    <string name="msg_error_regist_password_length">"문자와 숫자가 혼합된 8~16자의 
+문자열을 입력하십시오."</string>
+    <string name="msg_error_setting_av">"AV 장치 등록에 실패했습니다.
+입력한 주소 번호/액세스 번호가 LUMIX CLUB에 등록되었는지 확인하십시오.
+자세한 내용은 AV 장치의 사용 설명서를 참조하십시오."</string>
+    <string name="msg_error_setting_cloud">클라우드 싱크 설정이 실패했습니다.</string>
+    <string name="msg_error_upload_not_internet">인터넷 연결이 설정되지 않았으므로 파일을 업로드할 수 없습니다.</string>
+    <string name="msg_eula_agreement_new">"이 애플리케이션을 사용하려면 사용 조건에 동의해야 합니다.
+동의한다면, \"동의 \" 버튼을 탭하십시오."</string>
+    <string name="msg_eula_agreement_update">"이 애플리케이션의 사용 조건이 업데이트되었습니다.
+ 이 애플리케이션을 계속 사용하려면 사용 조건에 동의해야 합니다.
+동의한다면, \"동의 \" 버튼을 탭하십시오."</string>
+    <string name="msg_file_copy_error_occurred">이미지를 복사하는 동안 오류가 발생했습니다.</string>
+    <string name="msg_file_copying">파일 복사 중...</string>
+    <string name="msg_file_uploading">파일 전송 중...</string>
+    <string name="msg_focus_select_change_focus_mode">포스트 포커스를 위해AF모드로 변경하십시오.</string>
+    <string name="msg_focus_select_change_pint_position">작동에 의해초점 위치가 변경되었습니다.녹화가 중단되었습니다.</string>
+    <string name="msg_focus_select_shooting">포스트포커스 촬영중</string>
+    <string name="msg_func_not_supported">현재 장치에서는 이 기능이 지원되지 않습니다.</string>
+    <string name="msg_geotag_takeover_data1">이전 버전의 위치 데이터가 이미 있습니다.</string>
+    <string name="msg_geotag_takeover_data2">이 버전에서 사용하려면 위치 데이터를 업데이트해야 합니다.</string>
+    <string name="msg_geotag_takeover_data3">위치 데이터를 업데이트하시겠습니까?</string>
+    <string name="msg_geotag_takeover_delete">이전 버전에서 기록된 위치 데이터를 삭제하시겠습니까?</string>
+    <string name="msg_geotag_takeover_executing">위치 데이터 업데이트 중...</string>
+    <string name="msg_geotag_takeover_not_delete">삭제하지 않음</string>
+    <string name="msg_high_temperature_warning">과열 때문에 카메라가 계속 작동할 수 없습니다. 카메라의 전원을 끕니다.</string>
+    <string name="msg_howto_end_exposure">촬영을 취소하려면 촬영 버튼을 누릅니다.</string>
+    <string name="msg_howto_picjump_setting">다음 절차를 사용하여 \"이미지 공유 \" 설정을 수행할 수 있습니다.</string>
+    <string name="msg_hrs_image_creating">고해상도 이미지 생성</string>
+    <string name="msg_input_all_to_complete">모든 항목 완료 후 \"완료 \"를 누르십시오.</string>
+    <string name="msg_input_all_to_login">모든 필드를 입력한 후 \"로그인 \"을 누르십시오.</string>
+    <string name="msg_input_all_to_regist">모든 필드를 입력한 후 \"등록 \"을 누르십시오.</string>
+    <string name="msg_input_all_to_register">모든 필드를 입력한 후 \"등록 \"을 누르십시오.</string>
+    <string name="msg_input_all_to_setting">모든 필드를 입력한 후 \"SET \"을 누르십시오.</string>
+    <string name="msg_invalid_camera_nfc_setting">카메라의 NFC 설정이 유효하지 않습니다. 설정을 수정하십시오.</string>
+    <string name="msg_lc_ready">"카메라의 셔터 버튼을 누른 후에
+노이즈 제거를 위한
+블랙 프레임 이미지를
+시작할 수 있습니다."</string>
+    <string name="msg_lc_start">"셔터 버튼을 누른 후에
+라이브 뷰 합성을 시작하세요."</string>
+    <string name="msg_lc_waiting">"노이즈 제거를 위한
+블랙 프레임 이미지를 생성 중입니다.
+기다려주세요."</string>
+    <string name="msg_lc_waiting_nr">처리 중</string>
+    <string name="msg_lc_waiting_nr_old">"노이즈 제거 처리 중입니다.
+기다려주세요."</string>
+    <string name="msg_liveview_lens_warning">"촬영 모드로 변경할까요?
+(렌즈가 돌출될 수 있음)"</string>
+    <string name="msg_location_service_warning">"위치 정보를 얻을 수 없습니다.
+[위치 서비스]를 활성화시켜 주십시오."</string>
+    <string name="msg_location_service_warning_notify">위치 정보를 얻을 수 없습니다.</string>
+    <string name="msg_login_password_diff">암호가 일치하지 않습니다.</string>
+    <string name="msg_loop_lack_of_remain">카드의 용량이 부족합니다. 이 모드에서 촬영하려면 최소 60분 이상이 남아 있어야 합니다.</string>
+    <string name="msg_loop_rec_stop">촬영 시작 후 24시간이 지났기 때문에 촬영이 자동으로 중지되었습니다.</string>
+    <string name="msg_matanity_cannot_use">촬영한 사진을 확인할 때는 이 기능을 사용할 수 없습니다.</string>
+    <string name="msg_matanity_change_confirm">"현재 프로젝트가 끝나고, 촬영이 새 프로젝트로 수행됩니다.
+계속하시겠습니까?"</string>
+    <string name="msg_media_format_error_need_reformat">포맷에 실패했습니다. 이 SD 카드를 다시 포맷해야 합니다.</string>
+    <string name="msg_media_format_finished">포맷이 완료되었습니다.</string>
+    <string name="msg_movie_wifi_connecting">연결중…</string>
+    <string name="msg_movieslideshow_settings">"앱은 사용자가 촬영한 장면에서 자동으로 하일라이트를 선택하고, 이를 추가된 효과와 함께 저장할 수 있습니다.
+설정을 변경하여 효과를 변경할 수 있습니다."</string>
+    <string name="msg_movieslideshow_settings_title">하이라이트 만들기</string>
+    <string name="msg_need_camera_time_setting">카메라에서 시간을 설정합니다.</string>
+    <string name="msg_need_picmate_id">이 애플리케이션은 LUMIX CLUB과 연결된 서비스를 이용하여 웹 서비스에 업로드하기 때문에, 웹 서비스로 파일을 업로드하려면 LUMIX CLUB 서비스의 이용 약관에 동의해야 합니다.</string>
+    <string name="msg_need_picmate_id_input">등록된 로그인 ID 입력</string>
+    <string name="msg_need_picmate_id_regist">새 로그인 ID 만들기</string>
+    <string name="msg_need_power_on_for_sd_card_restoration">"SD 카드 오류가 감지되었지만 카메라 배터리 전원이 부족하여 데이터 관리 정보를 복원할 수 없습니다. 배터리를 충전하십시오. 
+카메라를 끄려면 확인을 누르십시오."</string>
+    <string name="msg_network_invalid_ap_ssid">SSID에는 1바이트 영숫자 문자와 기호(1-32자)만 포함될 수 있습니다.</string>
+    <string name="msg_network_invalid_ap_ssid_pw">암호에는 1바이트 영숫자 문자와 기호(0, 5 또는 8-64자)만 포함될 수 있습니다.</string>
+    <string name="msg_network_invalid_camera_ssid">SSID에는 1바이트 영숫자 문자와 기호(1-32자)만 포함될 수 있습니다.</string>
+    <string name="msg_network_invalid_camera_ssid_pw">암호에는 1바이트 영숫자 문자와 기호(8-64자)만 포함될 수 있습니다.</string>
+    <string name="msg_network_invalid_ssid_or_pass">SSID 또는 암호가 올바르지 않습니다.</string>
+    <string name="msg_nfc__movie_display">Establish a Wi-Fi connection with this smartphone?</string>
+    <string name="msg_nfc__movie_display_v2">Wi-Fi를 통해 이 스마트폰에 연결하시겠습니까?</string>
+    <string name="msg_nfc_after_movie_work">그런 다음 장치의 NFC 표시를 터치하여 스마트폰과 다시 연결하십시오.</string>
+    <string name="msg_nfc_cancel_camera_state_confirm">카메라에 \"%s \"가 표시되었습니까?</string>
+    <string name="msg_nfc_complete">NFC 처리가 성공적으로 완료되었습니다.</string>
+    <string name="msg_nfc_de_touch">NFC 터치</string>
+    <string name="msg_nfc_explain">연결할 장치가 NFC와 호환될 경우 장치 측면의 NFC 표시에 스마트폰을 갖다 대십시오.</string>
+    <string name="msg_nfc_explain_tmp">NFC 호환 모델을 사용 중인 경우 장치를 카메라에 대십시오.</string>
+    <string name="msg_nfc_failed_touch">터치에 실패했습니다. 카메라의 작동 상태에 따라 NFC 터치가 불가능할 수 있습니다. 목록에서 연결할 장치를 선택하십시오.</string>
+    <string name="msg_nfc_failed_touch_camera_reject">연결이 거부되었습니다.</string>
+    <string name="msg_nfc_failed_touch_invalid_camera">지원되지 않는 장치입니다.</string>
+    <string name="msg_nfc_failed_touch_invalid_content">"터치에 실패했습니다.
+카메라의 작동 조건에 따라 NFC 기능이 작동하지 않을 수 있습니다."</string>
+    <string name="msg_nfc_failed_touch_invalid_data">"터치에 실패했습니다.
+필요한 정보를 가져오지 못했습니다."</string>
+    <string name="msg_nfc_failed_touch_invalid_io_exception">"터치에 실패했습니다.
+NFC 처리 중 터치가 중단되었을 수 있습니다. 조금 더 길게 터치해 보십시오."</string>
+    <string name="msg_nfc_failed_touch_other_error">터치에 실패했습니다.</string>
+    <string name="msg_nfc_failed_touch_power_off_setting">카메라 전원을 켠 다음 다시 터치하십시오.</string>
+    <string name="msg_nfc_failed_touch_setting_off">카메라에서 NFC 기능을 켠 다음 다시 터치하십시오.</string>
+    <string name="msg_nfc_failed_touch_share_invalid_content">"터치에 실패했습니다.
+지원되지 않는 이미지일 수 있습니다. 다른 이미지를 선택하고 다시 터치를 시도하십시오.
+"</string>
+    <string name="msg_nfc_movie_work">* 연결된 카메라의 LCD에 \"%s \"가 표시될 경우 \"예 \"를 선택한 다음 스마트폰에서 카메라를 터치합니다.</string>
+    <string name="msg_nfc_movie_work_v2">* 연결할 카메라의 LCD에 \"%s \"가 표시될 경우 \"예 \"를 선택한 다음 카메라에 스마트폰을 다시 갖다 대십시오.</string>
+    <string name="msg_nfc_not_work_explain">NFC와 호환되지 않을 경우 잠시 기다리십시오.</string>
+    <string name="msg_nfc_touch_failed">카메라에 연결되지 않았습니다. 다시 터치하십시오.</string>
+    <string name="msg_nfc_touch_same_camera">같은 카메라를 다시 터치하십시오.</string>
+    <string name="msg_no_access_point_found">무선 AP가 없습니다</string>
+    <string name="msg_no_card_inserted">카메라에 삽입된 SD 카드가 없습니다.</string>
+    <string name="msg_no_connecting">연결되지 않음</string>
+    <string name="msg_no_contents_found">재생 콘텐츠를 찾을 수 없습니다.</string>
+    <string name="msg_no_contents_found_for_select">선택 가능한 콘텐츠를 찾을 수 없습니다.</string>
+    <string name="msg_no_network_connection">네트워크(%s)에 연결되지 않았습니다.</string>
+    <string name="msg_non_sync_diff_id">카메라와 이 애플리케이션에 다른 LUMIX CLUB 로그인 ID가 이미 설정되어있습니다.</string>
+    <string name="msg_non_sync_not_exist_id">카메라와 이 애플리케이션에 설정된 LUMIX CLUB 로그인 ID가 없습니다.</string>
+    <string name="msg_not_connected">연결되지 않음</string>
+    <string name="msg_not_found_copy_target">복사할 수 있는 이미지가 없습니다.</string>
+    <string name="msg_not_input_password">암호를 입력하지 않았습니다. 그래도 설정을 적용하시겠습니까?</string>
+    <string name="msg_not_supported_by_os_version">장치의 현재 OS 버전에서는 이 기능이 지원되지 않습니다.</string>
+    <string name="msg_now_camera_geotag_write_to_picture">카메라가 위치 정보를 전송 중이므로 연결할 수 없습니다.</string>
+    <string name="msg_now_cloud_downloading">새로 발견된 이미지 다운로드 중...</string>
+    <string name="msg_now_connecting">연결 중...</string>
+    <string name="msg_now_connecting_to_camera">카메라에 연결 중...</string>
+    <string name="msg_now_connecting_to_camera_and_waiting_image">카메라에 연결 중이거나 카메라의 이미지 전송을 기다리는 중입니다.</string>
+    <string name="msg_now_connecting_to_network">네트워크에 연결 중...</string>
+    <string name="msg_now_id_syncing">LUMIX CLUB 로그인 ID 복사 중...</string>
+    <string name="msg_now_reate_stopmotion_video">비디오 작성중...</string>
+    <string name="msg_now_saving_image">이미지 가져오는 중...</string>
+    <string name="msg_now_saving_movie">비디오 가져오는 중...</string>
+    <string name="msg_now_searching">검색 중...</string>
+    <string name="msg_now_searching_camera_and_select_wifi">"카메라 검색 중…
+Wi-Fi 목록에서 직접 연결하려면 이 대화 상자/앱을 닫고 카메라의 SSID를 선택하십시오."</string>
+    <string name="msg_now_searching_camera_and_select_wifi_and_stable_wifi_off">"카메라 검색 중…
+Wi-Fi 목록에서 직접 연결하려면 이 대화 상자/앱을 닫고 카메라의 SSID를 선택하십시오."</string>
+    <string name="msg_now_searching_camera_and_waiting_image">"카메라를 검색 중이거나
+카메라의 이미지 전송을 기다리는 중입니다."</string>
+    <string name="msg_now_searching_camera_and_waiting_image_and_select_wifi">"카메라를 검색 중이거나 카메라의 이미지 전송을 기다리는 중입니다. 
+Wi-Fi 목록에서 직접 연결하려면 이 대화 상자/앱을 닫고 카메라의 SSID를 선택하십시오."</string>
+    <string name="msg_now_searching_camera_and_waiting_image_and_select_wifi_and_stable_wifi_off">"카메라를 검색 중이거나 카메라의 이미지 전송을 기다리는 중입니다. 
+Wi-Fi 목록에서 직접 연결하려면 이 대화 상자/앱을 닫고 카메라의 SSID를 선택하십시오."</string>
+    <string name="msg_now_searching_for_camera">카메라 검색 중...</string>
+    <string name="msg_now_searching_for_network">네트워크 검색 중...</string>
+    <string name="msg_now_snapmovie_creating">스냅 동영상 생성 중...</string>
+    <string name="msg_now_webservice_loading">LUMIX CLUB과 연결된 다른 웹 서비스에 대한 정보 가져오는 중...</string>
+    <string name="msg_occurred_communication_error">통신 오류가 발생했습니다.</string>
+    <string name="msg_operate_camera_to_wait_pairing">카메라를 조작하여 \"페어링” 대기 상태로 설정해 주십시오.</string>
+    <string name="msg_pantilter_check_range">카메라가 촬영 범위 확인을 수행 중이므로 연결할 수 없습니다.</string>
+    <string name="msg_pantilter_play_confirm">자동 작업을 일시 정지하시겠습니까?</string>
+    <string name="msg_phcol_able_mk_phcol">잘라낸 이미지를 사용하여 사진 콜라주를 만들 수 있습니다.</string>
+    <string name="msg_phcol_confirm_exit">현재 사진을 저장하지 않고 종료하시겠습니까?</string>
+    <string name="msg_phcol_folder_create_error">"폴더 만들기에 실패했습니다.
+다른 폴더 이름을 입력하고 다시 시도하십시오."</string>
+    <string name="msg_phcol_folder_exist_warn">지정된 폴더 이름이 이미 있습니다. 이 폴더에 사진을 추가하시겠습니까?</string>
+    <string name="msg_phcol_folder_input_warn">최대 %d개의 1바이트 문자를 사용하여 폴더 이름을 입력하십시오.</string>
+    <string name="msg_phcol_warning_select_folder">선택한 이미지에 대한 정보가 지워집니다. 계속하시겠습니까?</string>
+    <string name="msg_picmate_size_over">선택한 이미지가 너무 커서 업로드할 수 없습니다.</string>
+    <string name="msg_please_off_auto_transfer">카메라의 [자동 전송] 설정을 꺼짐으로 설정하십시오.</string>
+    <string name="msg_pre_copy_content_to_local">"모델에 따라 스마트폰에서 재생하지 못할 수 있습니다. 
+복사하시겠습니까?"</string>
+    <string name="msg_pre_copy_exclude_content">스마트폰에서 지원되지 않는 형식의 이미지는 제외됩니다. 계속하시겠습니까?</string>
+    <string name="msg_pre_shoot1">"카메라 셔터로 SH1 PRE(초고속 사전 연사)을 촬영하십시오.
+SH1(초고속 연사)은 이 앱에서 촬영할 수 있습니다."</string>
+    <string name="msg_pre_shoot2">"카메라 셔터로 SH2 PRE(초고속 사전 연사)을 촬영하십시오.
+SH2(초고속 연사)은 이 앱에서 촬영할 수 있습니다."</string>
+    <string name="msg_prerec_to_disable">"사전 연사가 중단되었습니다.
+
+카메라 온도를 내려갈 때까지기다려 주시기 바랍니다."</string>
+    <string name="msg_privacy_notice_agreement">앱 사용 조건이 자동으로 서버로 전송됩니다. 이 설정은 나중에 변경할 수 있습니다.</string>
+    <string name="msg_pwless_authentification_deny">카메라(%s)가 연결을 거부했습니다.</string>
+    <string name="msg_pwless_authentification_fail">카메라(%s)에 연결할 수 없습니다.</string>
+    <string name="msg_pwless_other_sp_authentification">카메라(%s)가 다른 스마트폰에 연결되었습니다.</string>
+    <string name="msg_pwless_wait_authentification1">카메라(%s) 확인 중...</string>
+    <string name="msg_pwless_wait_authentification2">연결하려면 카메라를 조작하십시오.</string>
+    <string name="msg_qr_confirm">연결할 장치가 QR 코드 읽기 기능과 호환되어야 합니다. 계속하시겠습니까?</string>
+    <string name="msg_qr_explain">QR 스캐너가있는 경우 다음 버튼을 누르십시오.</string>
+    <string name="msg_qrcode_warning_do_not_scan_remoteqr1">홈 모니터 기능을 위해 QR 코드를 스캔하려면, 메뉴를 열고 응용 프로그램 기능 > 홈 캠 > 연결 대상 설정을 선택한 다음 QR 코드 버튼을 누르십시오.</string>
+    <string name="msg_rating_avchd_restriction">"★5만 설정할 수있는 이미지는 ★5를 설정합니다. 
+계속하시겠습니까?"</string>
+    <string name="msg_rating_clear_multi_protect">보호 설정된 이미지는해제되지 않았습니다.</string>
+    <string name="msg_rating_clear_multi_protect_unsupport">%d장의 사진을설정하지 못했습니다.</string>
+    <string name="msg_rating_set_multi_protect_unsupport">%d장의 사진을설정하지 못했습니다.</string>
+    <string name="msg_rating_set_single_protect">이 사진은 보호 설정되어있습니다.</string>
+    <string name="msg_rating_set_single_unsupport">이 사진에는 설정할수 없습니다.</string>
+    <string name="msg_raw_image_warning">스마트폰의 OS에 따라 RAW 파일이 올바르게 표시되지 않을 수 있습니다.</string>
+    <string name="msg_recording_slowmotion_mode">슬로우 모션 비디오를 촬영 중일 때는 이미지와 사운드를 출력할 수 없습니다.</string>
+    <string name="msg_regist_unsent_upload_with_internet">선택한 이미지가 미전송 이미지 목록으로 저장되었습니다. 인터넷에 연결한 후 미전송 이미지 목록에서 파일을 업로드하십시오.</string>
+    <string name="msg_regstering_camera">등록 중 %s...</string>
+    <string name="msg_rejected_to_camera">카메라 연결이 거부되었습니다.</string>
+    <string name="msg_release_internet_connection">블루투스 설정에서 인터넷 연결을 끊은 다음 Wi-Fi 설정에서 아래의 액세스 포인트에 연결합니다.</string>
+    <string name="msg_remote_nfc_failed_touch">터치에 실패했습니다. 카메라의 작동 상태에 따라 NFC 터치가 불가능할 수 있습니다.</string>
+    <string name="msg_remoteaccess_confirm_finish">홈 모니터를 종료하시겠습니까?</string>
+    <string name="msg_remoteaccess_error_check_input_param">연결할 카메라의 ID와 암호를 확인하십시오.</string>
+    <string name="msg_remoteaccess_error_check_internet">카메라가 연결된 무선 LAN 액세스 포인트가 인터넷에 연결되어 있는지 확인하십시오.</string>
+    <string name="msg_remoteaccess_error_problem_on_network">현재 정상적인 카메라 통신이 불가능하거나, 네트워크 환경에서 홈 모니터 기능의 사용이 허용되지 않을 수 있습니다.</string>
+    <string name="msg_remoteaccess_error_trafficy_line">회선 사용 중입니다. 나중에 다시 시도하십시오.</string>
+    <string name="msg_remoteview_quality_qvga">"라이브 컨트롤 품질은 [QVGA]입니다. 
+[메뉴]의 [라이브 컨트롤 설정]에서 [라이브 컨트롤 품질] 설정을 변경할 수 있습니다."</string>
+    <string name="msg_request_check_wifi_setting">연결할 카메라를 찾을 수 없습니다. Wi-Fi 설정을 확인하십시오.</string>
+    <string name="msg_retry">다시 시도해 주십시오.</string>
+    <string name="msg_savecomplete_ask_playmode_android">컨텐츠가 갤러리에 저장되었습니다. 편집을 종료하고 확인하시겠습니까?</string>
+    <string name="msg_scene_select">장면 선택</string>
+    <string name="msg_sd_card_under_restoration">데이터 관리 정보 오류입니다. 데이터 관리 정보를 복원하고 있습니다.</string>
+    <string name="msg_searching_camera_on_ssid">%s에 연결된 카메라를 검색 중...</string>
+    <string name="msg_select_camera">카메라를 선택합니다</string>
+    <string name="msg_select_camera_to_control">연결할 카메라를 선택하십시오.</string>
+    <string name="msg_select_connection">연결 방법 선택</string>
+    <string name="msg_select_content_over_time">결합 가능한 최대 시간을 초과했으므로 이 이미지를 선택할 수 없습니다.</string>
+    <string name="msg_select_control_camera">카메라를 조작하여 %s이 선택된 경우, \"카메라로 조작 \"을 선택하십시오.</string>
+    <string name="msg_select_function">기능 선택</string>
+    <string name="msg_selected_function_invalid">지정된 기능이 카메라에서 선택되지 않았습니다.</string>
+    <string name="msg_send_all">모두 업로드합니까?</string>
+    <string name="msg_send_ugase_failed">사용 조건을 전송할 수 없습니다.</string>
+    <string name="msg_setup_easy_wifi_overwrite">홈 모니터 장치 ID가 스마트폰에 등록되어 있습니다. 덮어쓰시겠습니까?</string>
+    <string name="msg_setup_easy_wifi_registered">홈 모니터 장치 ID가 스마트폰에 등록되어 있습니다.</string>
+    <string name="msg_snapmovie_confirm_exit">현재 비디오를 저장하지 않고 종료하시겠습니까?</string>
+    <string name="msg_split_delete_back">뒤</string>
+    <string name="msg_split_delete_front">앞</string>
+    <string name="msg_split_delete_return">돌아가기</string>
+    <string name="msg_split_delete_which">삭제할 부분을 선택하십시오.</string>
+    <string name="msg_ssid_init_need_change">카메라의 SSID 및 Wi-Fi 암호가 기본값으로 설정되었습니다. SSID와 Wi-Fi 암호를 변경할 것을 권장합니다. 이 설정을 변경하려면 “카메라 Wi-Fi 설정” → “카메라 SSID 설정”을 선택하십시오.</string>
+    <string name="msg_ssid_label">카메라 SSID:</string>
+    <string name="msg_ssid_pw_valid_after_power_on">설정된 SSID/암호는 카메라를 껐다 다시 켜거나, 카메라와의 Wi-Fi 연결을 다시 설정할 때 적용됩니다.</string>
+    <string name="msg_stop_motion_animation_finished">스톱 모션 촬영이 종료됩니다.</string>
+    <string name="msg_stop_reason_eight">백업할 이미지가 없습니다.</string>
+    <string name="msg_stop_reason_five">로그인할 수 없습니다. 로그인 ID와 비밀번호를 확인해 주십시오.</string>
+    <string name="msg_stop_reason_four">통신 오류가 발생했습니다. 다시 시도해 주십시오.</string>
+    <string name="msg_stop_reason_nine">카메라가 절전 모드이기 때문에 백업을 시작할 수 없습니다.</string>
+    <string name="msg_stop_reason_seven">카메라를 확인해 주십시오.</string>
+    <string name="msg_stop_reason_six">업로드 대상에 연결할 수 없습니다. 업로드 대상의 설정을 확인해 주십시오.</string>
+    <string name="msg_stop_reason_ten">카메라가 충전 중이므로 백업을 시작할 수 없습니다.</string>
+    <string name="msg_stop_reason_two">배터리 잔량을 확인하십시오.</string>
+    <string name="msg_stopmotion_disable_func">촬영한 사진을 확인할 때는 이 기능을 사용할 수 없습니다.</string>
+    <string name="msg_stopmotion_new_proj_warn">새 스톱 모션 사진이 생성됩니다. 새 프로젝트를 만드는 경우 현재 촬영 그룹에 더 이상의 촬영물을 추가할 수 없습니다. 계속하시겠습니까?</string>
+    <string name="msg_stopmotion_system_freq_error" />
+    <string name="msg_tc_backup_not_recorded">"촬영 모드가 변경되었습니다.
+이 촬영 모드에서는 트윈 카메라의 백업을 수행할 수 없습니다."</string>
+    <string name="msg_tc_backup_off">트윈 카메라의 백업이 취소됩니다.</string>
+    <string name="msg_touch_de_geotag_disable">카메라의 NFC 기능이 해제되어 있습니다.</string>
+    <string name="msg_touch_de_geotag_exist_geotag">이 이미지에 위치 데이터가 이미 할당되어 있습니다.</string>
+    <string name="msg_touch_de_geotag_fail">위치 데이터를 카메라로 보낼 수 없습니다.</string>
+    <string name="msg_touch_de_geotag_invalid_screen">카메라가 이 상태에서 위치 데이터를 할당할 수 없습니다.</string>
+    <string name="msg_touch_de_geotag_no_data">스마트폰에 등록된 관련 위치 데이터가 없습니다.</string>
+    <string name="msg_touch_de_geotag_others">이 이미지에 위치 데이터를 할당할 수 없습니다.</string>
+    <string name="msg_touch_de_geotag_protect_content">이미지가 보호되어 있습니다.</string>
+    <string name="msg_touch_de_geotag_success">위치 데이터가 카메라로 전송되었습니다.</string>
+    <string name="msg_touch_de_geotag_unsupport">카메라가 NFC에 의한 위치 데이터 할당을 지원하지 않습니다.</string>
+    <string name="msg_touch_de_geotag_unsupport_content">이 이미지에 위치 데이터를 할당할 수 없습니다.</string>
+    <string name="msg_touch_de_geotag_write_protect">SD 카드가 쓰기 방지되어 있습니다.</string>
+    <string name="msg_transfer_attention">일괄 전송을 사용하면 이전에 전송한 이미지의 복제본이 생길 수 있습니다.</string>
+    <string name="msg_volume_down_in_howling">하울링 현상이 발생할 경우 스마트폰/태블릿에서 볼륨을 낮추십시오.</string>
+    <string name="msg_vrec_stop_avchd_track_over">AVCHD 표준의 한계에 도달했기 때문에 촬영이 중지되었습니다.</string>
+    <string name="msg_vrec_stop_create_folder_error">폴더 만들기가 실패했습니다. 촬영을 시작할 수 없습니다.</string>
+    <string name="msg_vrec_stop_internal_memory_full">메모리가 가득 찼기 때문에 촬영이 중지되었습니다.</string>
+    <string name="msg_vrec_stop_speed_insufficient">카드의 쓰기 속도가 느리기 때문에 촬영이 중지되었습니다.</string>
+    <string name="msg_vrec_stop_temperature_over">카메라 내부의 과열 때문에 촬영이 중지되었습니다.</string>
+    <string name="msg_vrec_stop_uplimit">기록 가능한 데이터 크기를 초과했기 때문에 촬영이 중지되었습니다.</string>
+    <string name="msg_warning_limit_contents">카메라에 삽입된 SD 카드에 이미 많은 이미지가 저장되어 있습니다. 이로 인해 작동이 불안정할 수 있습니다.</string>
+    <string name="msg_warning_loop_rec_auto_delete">연속 촬영을 사용할 때는, 이전에 1시간 넘게 촬영된 장면이 자동으로 지워집니다.</string>
+    <string name="msg_warning_loop_rec_stop_soon">촬영이 곧 자동 중지됩니다.</string>
+    <string name="msg_warning_rec_high_temperature">"비디오 녹화 중이므로 비디오 및 오디오 출력이 중지되었습니다.
+이 메시지를 닫고 촬영으로 돌아가려면 화면을 터치하십시오."</string>
+    <string name="msg_warning_remote_access_change_mode">홈 모니터 기능을 사용 중일 때는 사용할 수 없습니다.</string>
+    <string name="msg_white_balance_set_error">화이트 밸런스를 설정할 수 없습니다.</string>
+    <string name="msg_white_balance_set_success">화이트 밸런스가 설정되었습니다.</string>
+    <string name="msg_wifi_disconnect_remote_watch_warning">홈 캠 기능을 사용할 때는 이 기능에 3G 또는 다른 휴대전화 회선이 필요하므로 \"아니요 \"를 선택하십시오.</string>
+    <string name="msg_wtc_no_camera_response">카메라의 응답이 없습니다. 카메라를 확인하십시오.</string>
+    <string name="msg_wtc_no_image_sending">"무선 트윈 카메라라이브 보기가 중지됩니다.
+라이브 보기를 시작하려면 카메라를 작동하십시오."</string>
+    <string name="multiphoto_create">하일라이트 사진 콜라주 만들기</string>
+    <string name="paly_title_warning">경고</string>
+    <string name="pantilter_cancel">취소</string>
+    <string name="pantilter_check_range">촬영 범위 확인 중...</string>
+    <string name="pantilter_error">"원격 패닝 틸트 크래들에서 문제가 발생했습니다.
+원격 패닝 틸트 크래들을 확인하십시오."</string>
+    <string name="pantilter_manual">수동 작업 수행 중...</string>
+    <string name="pantilter_moving_obj">움직이는 피사체 활성화</string>
+    <string name="pantilter_moving_obj_pause">움직이는 피사체 일시 중지</string>
+    <string name="pantilter_noconnected">원격 패닝 틸트 크래들 연결이 끊겼습니다.</string>
+    <string name="pantilter_party_auto">파티 장면 활성화</string>
+    <string name="pantilter_party_auto_pause">파티 장면 일시 중지</string>
+    <string name="pantilter_pause">일시 정지</string>
+    <string name="pantilter_preset_btn_cancel">취소</string>
+    <string name="pantilter_preset_btn_pause">일시 정지</string>
+    <string name="pantilter_preset_btn_restart">다시 시작</string>
+    <string name="pantilter_preset_btn_stop">정지</string>
+    <string name="pantilter_preset_home">홈</string>
+    <string name="pantilter_preset_mode">사전 설정 위치</string>
+    <string name="pantilter_preset_moving">위치 재설정 중...</string>
+    <string name="pantilter_preset_noset">설정 해제</string>
+    <string name="pantilter_preset_pause">사전 설정</string>
+    <string name="pantilter_preset_pos1">위치1</string>
+    <string name="pantilter_preset_pos2">위치2</string>
+    <string name="pantilter_preset_pos3">위치3</string>
+    <string name="pantilter_preset_pos4">위치4</string>
+    <string name="pantilter_preset_pos5">위치5</string>
+    <string name="pantilter_preset_regist">사전 설정 등록</string>
+    <string name="pantilter_preset_round_moving">순환 중...</string>
+    <string name="pantilter_preset_round_pause">순환 일시 중지됨</string>
+    <string name="pantilter_preset_round_setting">순환 설정</string>
+    <string name="pantilter_preset_skip">건너뛰기</string>
+    <string name="pantilter_resetting">원점 재설정 중...</string>
+    <string name="pantilter_searching">검색 중...</string>
+    <string name="pantilter_set_home_position">"잠시만 기다리십시오. 
+홈 위치를 설정하고 있습니다."</string>
+    <string name="pantilter_start">시작</string>
+    <string name="picmate_ask_delete_content">선택된 이미지를 LUMIX CLUB 서버에서 삭제하시겠습니까?</string>
+    <string name="picmate_cloud_folder_name">LUMIX CLUB 폴더</string>
+    <string name="picmate_cloud_service_name">클라우드 싱크</string>
+    <string name="picmate_command_msg_regist_error">등록에 실패했습니다.</string>
+    <string name="picmate_command_msg_sending">서버와 통신 중...</string>
+    <string name="picmate_command_msg_sending_error">서버와 통신하는 중 오류가 발생했습니다.</string>
+    <string name="picmate_lumix_club">LUMIX CLUB</string>
+    <string name="picmate_msg_network">인터넷에 연결되어 있지 않습니다. 연결 방법을 선택하십시오.</string>
+    <string name="picmate_msg_network_3g">3G</string>
+    <string name="picmate_msg_network_wifi">Wi-Fi</string>
+    <string name="picmate_regist">등록됨</string>
+    <string name="picmate_regist2">(등록됨)</string>
+    <string name="picmate_service_top" />
+    <string name="picmate_sync_service_fail">서비스 목록 싱크에 실패했습니다.</string>
+    <string name="picmate_sync_service_success">서비스 목록이 싱크되었습니다.</string>
+    <string name="picmate_url_lang_code">kor</string>
+    <string name="picmate_wifi_direct_send_error">카메라가 Wi-Fi Direct를 통해 연결되었기 때문에 전송할 수 없습니다.</string>
+    <string name="picturejump_copy">스마트폰으로 저장</string>
+    <string name="picturejump_delete">휴지통(삭제)</string>
+    <string name="picturejump_location_gallery">갤러리</string>
+    <string name="picturejump_new_av">새 AV 장치 등록</string>
+    <string name="play_3box_no_dmr_found">재생 장치가 없습니다.</string>
+    <string name="play_3box_select_dmr">재생 장치를 선택합니다.</string>
+    <string name="play_btn_close">닫기</string>
+    <string name="play_btn_continue">계속</string>
+    <string name="play_btn_no">아니요</string>
+    <string name="play_btn_untransmit_detail">세부 사항</string>
+    <string name="play_btn_yes">예</string>
+    <string name="play_camera_function">카메라 기능</string>
+    <string name="play_delete_all_content">모두 삭제</string>
+    <string name="play_delete_confirm_for_protect">선택한 파일을 삭제할까요?(보호된 파일은 삭제되지 않음)</string>
+    <string name="play_delete_with_jpeg_confirm">선택한 파일을 삭제하시겠습니까?(동시에 촬영된 다른 파일도 삭제됩니다.)</string>
+    <string name="play_delete_with_jpeg_confirm_for_protect">선택한 파일을 삭제하시겠습니까?(동시에 촬영된 다른 파일도 삭제됩니다.) 하지만 보호된 파일은 삭제되지 않습니다.</string>
+    <string name="play_highlight_format">형식</string>
+    <string name="play_highlight_media">미디어</string>
+    <string name="play_msg_canceling_copy">"복사가 취소되었습니다.
+전원을 끄지 마십시오."</string>
+    <string name="play_msg_canceling_delete">삭제가 취소되었습니다.</string>
+    <string name="play_msg_complete_delete">삭제가 완료되었습니다.</string>
+    <string name="play_msg_delete_data">미전송 이미지 목록에서 삭제하시겠습니까?</string>
+    <string name="play_msg_delete_from_list">파일이 미전송 이미지 목록에서 삭제되었습니다.</string>
+    <string name="play_msg_location_service_request_enable">카메라 롤의 이미지를 재생할 수 없습니다. [위치 서비스]를 켜십시오.</string>
+    <string name="play_msg_movie_play_error">이 애플리케이션에서 비디오 재생을 계속할 수 없습니다. 재생이 중지되었습니다.</string>
+    <string name="play_msg_movie_play_start">고해상도 또는 길이가 긴 비디오의 경우, 재생이 중단되거나 불가능할 수 있습니다.</string>
+    <string name="play_msg_movie_play_start2">스마트폰 또는 태블릿 모델에 따라 정상 재생이 불가능할 수 있습니다.</string>
+    <string name="play_msg_reading_data">로딩 중...</string>
+    <string name="play_msg_send_all">모든 정지 사진/비디오의 업로드를 시작합니다.</string>
+    <string name="play_msg_send_cancell">전송 취소 중...</string>
+    <string name="play_msg_send_comp">파일 전송이 완료되었습니다.</string>
+    <string name="play_msg_send_err">전송 오류</string>
+    <string name="play_msg_send_one">업로드를 시작합니다.</string>
+    <string name="play_msg_setting_step">\"이미지 공유 \" 설정이 완료되지 않았습니다. 설정 메뉴에서 이 설정을 수행하십시오.</string>
+    <string name="play_select_format">형식 선택</string>
+    <string name="play_tab_btn">재생</string>
+    <string name="play_unsentimageinfo_button_canceltosend">업로드 취소</string>
+    <string name="play_unsentimageinfo_button_sendallimage">나머지 모든 이미지/비디오를 다시 업로드</string>
+    <string name="play_unsentimageinfo_button_sendcrntimage">이 이미지/비디오를 다시 업로드</string>
+    <string name="play_unsentimageinfo_cell_destsite">대상</string>
+    <string name="play_unsentimageinfo_cell_sendtime">시작 시간</string>
+    <string name="play_unsentimageinfo_title">정보</string>
+    <string name="play_unsentimagelist_title">미전송 이미지</string>
+    <string name="ply_3box_dlna_error">TV 재생이 불가능합니다. 카메라에서 오류가 발생했습니다.</string>
+    <string name="ply_3box_mode_change_error">TV 재생이 불가능합니다. 카메라에서 오류가 발생했습니다.</string>
+    <string name="ply_action_camera_power_off">전원 끄기</string>
+    <string name="ply_action_create_highlight">하이라이트 만들기</string>
+    <string name="ply_action_edit_protect">장면 보호</string>
+    <string name="ply_action_edit_split_delete">분할 및 삭제</string>
+    <string name="ply_action_multiframephoto">하일라이트 사진 콜라주</string>
+    <string name="ply_action_tv_play">TV에서 재생</string>
+    <string name="ply_btn_cancel">취소</string>
+    <string name="ply_btn_select">선택</string>
+    <string name="ply_highlight_coping">생성된 하이라이트 장면 복사 중...</string>
+    <string name="ply_highlight_copy_error">생성된 하이라이트 장면 복사 중 오류가 발생했습니다.</string>
+    <string name="ply_highlight_copy_start_error">생성된 하이라이트 장면을 복사하지 못했습니다.</string>
+    <string name="ply_highlight_create_error">하이라이트 생성 중 오류가 발생했습니다.</string>
+    <string name="ply_highlight_create_error_confirm_cam">하이라이트를 생성할 수 없습니다. 비디오 카메라를 확인하십시오.</string>
+    <string name="ply_highlight_create_error_invalid_bgm">하이라이트 만들기에 실패했습니다. 선택된 BGM 데이터가 호환되지 않거나 손상되었습니다.</string>
+    <string name="ply_highlight_create_error_invalid_title_picture">하이라이트 만들기에 실패했습니다. 선택된 타이틀 이미지 데이터가 호환되지 않거나 손상되었습니다.</string>
+    <string name="ply_highlight_create_error_no_highlight">하이라이트를 생성할 수 없습니다. 추출할 수 있는 장면이 없습니다.</string>
+    <string name="ply_highlight_create_error_no_remain">하이라이트를 생성할 수 없습니다. 저장 매체에 남은 용량이 부족합니다.</string>
+    <string name="ply_highlight_create_start_error">하이라이트 생성을 시작하지 못했습니다.</string>
+    <string name="ply_highlight_creating">하이라이트 생성 중...</string>
+    <string name="ply_highlight_delete_error">생성된 하이라이트 장면을 삭제하지 못했습니다.</string>
+    <string name="ply_highlight_get_sceane_info_error">장면 정보를 가져오지 못했습니다.</string>
+    <string name="ply_highlight_low_memory_error" />
+    <string name="ply_highlight_not_select_sceane">선택된 장면이 없습니다.</string>
+    <string name="ply_highlight_send_param_error">하이라이트 생성 중 매개 변수를 보낼 때 오류가 발생했습니다.</string>
+    <string name="ply_highlight_sending_bgm">배경 음악 전송 중...</string>
+    <string name="ply_highlight_sending_title_picture">타이틀 이미지 전송 중...</string>
+    <string name="ply_highlight_slct_bgm">배경 음악 선택</string>
+    <string name="ply_msg_ask_cloud_upload_max_num">선택한 이미지를 업로드하면, 클라우드 싱크 서비스의 업로드 한계가 초과되었기 때문에 이전 이미지가 삭제됩니다.</string>
+    <string name="ply_msg_ask_cloud_upload_max_num_no">업로드하지 않음</string>
+    <string name="ply_msg_ask_cloud_upload_max_num_yes">업로드</string>
+    <string name="ply_msg_cannnot_upload_max_num">업로드 대상이 한계에 도달했기 때문에 이미지를 더 업로드할 수 없습니다.</string>
+    <string name="ply_msg_cannot_upload_cloud_size_over">업로드할 수 없습니다. 클라우드 싱크 서비스 서버의 용량이 한계에 도달했습니다.</string>
+    <string name="ply_msg_cannot_upload_file_size_over">선택한 이미지가 너무 커서 업로드할 수 없습니다.</string>
+    <string name="ply_msg_cannot_upload_no_other">업로드할 수 없습니다. 등록된 장치가 없습니다.</string>
+    <string name="ply_msg_changed_folder">표시된 이미지가 변경되었습니다.</string>
+    <string name="ply_msg_err_confirmation_sd">"이미지 복사 중 오류가 발생했습니다.
+스마트폰/태블릿의 SD 카드를 확인하십시오."</string>
+    <string name="ply_msg_err_copy_file">이미지를 복사하는 동안 오류가 발생했습니다.</string>
+    <string name="ply_msg_err_copy_file_lack_of_remain">빈 공간이 부족합니다.</string>
+    <string name="ply_msg_err_copy_file_maybe">이미지 복사가 실패했을 수 있습니다.</string>
+    <string name="ply_msg_err_copy_file_not_supported">이미지 형식을 이 애플리케이션에서 지원하지 않으므로 복사하지 못했습니다.</string>
+    <string name="ply_msg_err_copy_file_not_supported_included">하나 이상의 파일은 본 스마트폰에서 지원되지 않는 형식이기 때문에 복사할 수 없습니다.</string>
+    <string name="ply_msg_err_copy_file_not_supported_or_lack_space">이미지를 복사하는 동안 오류가 발생했습니다.</string>
+    <string name="ply_msg_err_copy_file_not_supported_or_lack_space_included">하나 이상의 파일이 본 스마트폰에서 지원되지 않는 형식이거나 여유 공간이 부족하여 복사할 수 없습니다.</string>
+    <string name="ply_msg_err_copy_file_type_avchd">AVCHD 형식으로 기록된 장면은 저장할 수 없습니다. 이를 저장하려면 비디오 카메라에서 장면을 MP4 형식으로 변환하십시오.</string>
+    <string name="ply_msg_err_delete_file">이미지를 삭제하는 동안 오류가 발생했습니다.</string>
+    <string name="ply_msg_select_max_num">이미지를 더 선택할 수 없습니다.</string>
+    <string name="ply_multiphoto_create_error">하일라이트 사진 콜라주 생성에 실패했습니다.</string>
+    <string name="ply_multiphoto_create_error_no_highlight">하이라이트 사진 콜라주 생성에 실패했습니다. 추출할 수 있는 장면이 없습니다.</string>
+    <string name="ply_multiphoto_creating">하일라이트 사진 콜라주 생성 중...</string>
+    <string name="ply_multiphoto_foldername_error">최대 8자의 1바이트 문자를 사용하여 폴더 이름을 입력합니다.</string>
+    <string name="ply_multiphoto_save">사진 저장 중...</string>
+    <string name="ply_multiphoto_save_complete">사진이 저장되었습니다.</string>
+    <string name="ply_phcol_change_folder">사진 저장 폴더 이름 지정</string>
+    <string name="ply_phcol_save_photo">%d개의 사진이 스마트폰에 저장됩니다.</string>
+    <string name="ply_phcol_title">하일라이트 사진 콜라주</string>
+    <string name="ply_phcol_title_slct_frame_title">프레임 선택</string>
+    <string name="ply_phcol_title_slct_picture">이미지 선택</string>
+    <string name="ply_select_action_delete">삭제</string>
+    <string name="ply_select_action_save">저장</string>
+    <string name="ply_select_action_share">공유</string>
+    <string name="psh_ntfy_babymon_dtct_ado">"알림
+비디오 카메라가 사운드를 감지했습니다."</string>
+    <string name="psh_ntfy_babymon_start">"알림
+베이비 모니터가 활성화되었습니다."</string>
+    <string name="pstyle_color_filter_green">그린</string>
+    <string name="pstyle_color_filter_off">꺼짐</string>
+    <string name="pstyle_color_filter_orange">오렌지</string>
+    <string name="pstyle_color_filter_red">레드</string>
+    <string name="pstyle_color_filter_yellow">옐로</string>
+    <string name="qrcode_read">QR 코드</string>
+    <string name="rec_angle_standard">STANDARD</string>
+    <string name="rec_angle_wide">WIDE</string>
+    <string name="rec_autoreview_finish">종료</string>
+    <string name="rec_autoreview_now">오토 리뷰</string>
+    <string name="rec_btn_icon_display">정보</string>
+    <string name="rec_btn_icon_display_new">DISP.</string>
+    <string name="rec_btn_quick_menu">SET</string>
+    <string name="rec_delay">Delay</string>
+    <string name="rec_during_burst">연사 촬영 중...</string>
+    <string name="rec_during_exposure">촬영 중...</string>
+    <string name="rec_just_a_moment">잠시만 기다리십시오...</string>
+    <string name="rec_label_f">F</string>
+    <string name="rec_label_mf">MF</string>
+    <string name="rec_label_ss">SS</string>
+    <string name="rec_liveview_second">초</string>
+    <string name="rec_msg_4kmovie_rec_error">Wi-Fi 접속 중에는4K 비디오를 촬영할 수 없습니다.</string>
+    <string name="rec_msg_4kphoto_error">Wi-Fi 접속 중에는 4K 포토를저장할 수 없습니다.</string>
+    <string name="rec_msg_4kphoto_rec_error">Wi-Fi 접속으로비디오를 촬영할 수 없습니다.</string>
+    <string name="rec_msg_capture_failed">촬영에 실패했습니다.</string>
+    <string name="rec_msg_cinelike_enable">카메라가 %s 모드이므로 촬영하는 데 이 응용 프로그램을 사용할 수 없습니다.</string>
+    <string name="rec_msg_first_action">촬영 모드에서 시작할 때는 렌즈가 갑자기 돌출될 수 있으므로 주의하십시오.</string>
+    <string name="rec_msg_focusselect_error">Wi-Fi 연결 시포스트 포커스 기능을수행할 수 없습니다.</string>
+    <string name="rec_msg_interval_shot_mode">카메라가 인터벌 촬영 모드에 있기 때문에 현재 이 응용 프로그램을 촬영에 사용할 수 없습니다.</string>
+    <string name="rec_msg_lack_of_memory">메모리가 부족합니다.</string>
+    <string name="rec_msg_lack_of_memory_for_movie">메모리가 부족하여 다음 촬영 시간이 설정됩니다.</string>
+    <string name="rec_msg_lens_error">"촬영에 실패했습니다.
+카메라를 확인하십시오."</string>
+    <string name="rec_msg_max_rec_time">최대 촬영 가능 시간</string>
+    <string name="rec_msg_modechange_error">모드를 전환할 수 없습니다.</string>
+    <string name="rec_msg_movie_recording">비디오를 촬영 중입니다. 카메라를 조작하면 촬영이 중지됩니다.</string>
+    <string name="rec_msg_need_to_extend_lens">"줌링을 돌려 렌즈를
+확장하십시오."</string>
+    <string name="rec_msg_not_recmovie_this_mode">현재 모드에서는 비디오 촬영이 불가능합니다.</string>
+    <string name="rec_msg_not_supported_mode">선택한 촬영 모드에서는 무선 촬영을 사용할 수 없으므로 일반 촬영 모드로 전환되었습니다.</string>
+    <string name="rec_msg_only_sdi_rec">"메모리 카드가 들어있지 않습니다.
+SDI 리모트 촬영만 합니다."</string>
+    <string name="rec_msg_recstart_err_reject">비디오 촬영을 시작할 수 없습니다.</string>
+    <string name="rec_msg_recstart_error">비디오 촬영을 시작할 수 없습니다.</string>
+    <string name="rec_msg_recstop_error">비디오 촬영을 중지할 수 없습니다.</string>
+    <string name="rec_msg_sd_lock">"이 카메라의 메모리 카드는
+쓰기 보호되어 있습니다.
+이미지를 캡처하려면 보호를 해제하십시오."</string>
+    <string name="rec_msg_ss_bulb">셔터 속도가 벌브로 설정되었기 때문에 촬영을 할 수 없습니다.</string>
+    <string name="rec_msg_stop_live_stream">"스마트폰의 라이브 뷰를 사용할 수 없습니다.
+카메라에서 수신된 이미지가 있는지 또는 카메라와의 연결이 끊겼는지 확인하십시오."</string>
+    <string name="rec_msg_stop_recording">카메라 응답 때문에 촬영이 중지되었습니다.</string>
+    <string name="rec_msg_stop_recording_lack_memory">메모리 부족 때문에 촬영이 중지되었습니다.</string>
+    <string name="rec_msg_video_rectime_crnt">설정된 촬영 시간</string>
+    <string name="rec_msg_wait_for_camera_temperature_down">"일시적으로 무효로 됩니다.
+카메라 온도가
+내려갈 때까지 기다리십시오."</string>
+    <string name="rec_msg_zoom_error">"줌 작동에 실패했습니다.
+카메라를 확인하십시오."</string>
+    <string name="rec_now_long_shutter_noise_reduction">셔터노이즈 제거 중입니다</string>
+    <string name="rec_remain">R</string>
+    <string name="rec_remain_hour">h</string>
+    <string name="rec_remain_minute">m</string>
+    <string name="rec_remain_time_label">R</string>
+    <string name="rec_remote_voice_remain_a">%d초 남음</string>
+    <string name="rec_selftimer_cancel">취소</string>
+    <string name="rec_sensitivity_gain">게인</string>
+    <string name="rec_sensitivity_gain_semipro">GAIN</string>
+    <string name="rec_stopmotion_auto">자동 촬영</string>
+    <string name="rec_stopmotion_create_error">비디오 생성 중 오류가 발생했습니다.</string>
+    <string name="rec_stopmotion_create_error_confirm_cam">비디오를 생성할 수 없습니다. 카메라를 확인하십시오.</string>
+    <string name="rec_stopmotion_create_error_no_remain">비디오를 생성할 수 없습니다. 저장 매체에 여유 공간이 부족합니다.</string>
+    <string name="rec_stopmotion_create_start_error">비디오 생성을 시작할 수 없습니다.</string>
+    <string name="rec_stopmotion_create_video">스톱 모션 비디오</string>
+    <string name="rec_stopmotion_creating">비디오 생성 중...</string>
+    <string name="rec_stopmotion_discontinuation">스톱 모션 애니메이션 이미지 촬영을 계속할 수 없고 중단되었습니다.</string>
+    <string name="rec_stopmotion_framerate">프레임 레이트</string>
+    <string name="rec_stopmotion_interval">촬영 간격</string>
+    <string name="rec_stopmotion_iterval_time">%d초.</string>
+    <string name="rec_stopmotion_not_contents">촬영된 스톱 모션 애니메이션 이미지가 없습니다. 새 촬영을 시작하시겠습니까?</string>
+    <string name="rec_stopmotion_order_normal">NORMAL</string>
+    <string name="rec_stopmotion_order_reverse">REVERSE</string>
+    <string name="rec_stopmotion_order_setting">순서</string>
+    <string name="rec_stopmotion_over_contents">스톱 모션 애니메이션 이미지를 더 이상 촬영할 수 없습니다.</string>
+    <string name="rec_stopmotion_select_continue">추가</string>
+    <string name="rec_stopmotion_select_recorded_animation">촬영된 스톱 모션 애니메이션 이미지 선택</string>
+    <string name="rec_stopmotion_select_start">신규</string>
+    <string name="rec_stopmotion_send_param_error">비디오 생성 매개 변수 전송 중 오류가 발생했습니다.</string>
+    <string name="rec_stopmotion_start">시작</string>
+    <string name="rec_stopmotion_title">스톱 모션 애니메이션</string>
+    <string name="rec_stopmotion_video_quality_setting">화질설정</string>
+    <string name="rec_stopmotion_warning_automode">촬영 버튼을 눌러 촬영을 시작합니다.</string>
+    <string name="rec_tab_btn">라이브 컨트롤</string>
+    <string name="remain_marking_number">R %d</string>
+    <string name="scn_gid_backlight_portrait">"역광으로 전체적인
+화면 밝기가 증가하여
+빛을 통해 인물사진이
+부드러워집니다"</string>
+    <string name="scn_gid_backlight_portrait_onepoint">"태양을 피사체 뒤에
+등지고 촬영합니다"</string>
+    <string name="scn_gid_backlight_portrait_recom_lens">밝은 렌즈</string>
+    <string name="scn_gid_backlight_portrait_step_up">"노출을 변경하여
+가볍고 섬세한
+효과를 줍니다"</string>
+    <string name="scn_gid_backlight_strobe">"실외에서 플래시를
+사용하여 얼굴빛을
+보다 균일하게 합니다"</string>
+    <string name="scn_gid_backlight_strobe_onepoint">플래시를 터뜨립니다</string>
+    <string name="scn_gid_backlight_strobe_recom_lens">표준 줌 렌즈</string>
+    <string name="scn_gid_backlight_strobe_step_up">"노출을 변경하여
+얼굴의 밝기를
+조정합니다"</string>
+    <string name="scn_gid_blue_sky">"햇살이 밝은 날에는
+전체적인 화면 밝기를
+증가시켜 활기차고
+푸른 하늘 이미지를
+연출합니다"</string>
+    <string name="scn_gid_blue_sky_onepoint">"푸른 하늘과 구름
+사이의 균형을
+잘 맞춥니다"</string>
+    <string name="scn_gid_blue_sky_recom_lens">"광각 렌즈
+망원 렌즈"</string>
+    <string name="scn_gid_blue_sky_step_up">"노출을 변경하여
+분위기를
+조정합니다"</string>
+    <string name="scn_gid_clear_skin">"더 밝은 얼굴과
+부드러운 색상으로
+건강한 모습을
+연출합니다."</string>
+    <string name="scn_gid_clear_skin_onepoint">"피사체의 상반신을
+프레임에 채웁니다"</string>
+    <string name="scn_gid_clear_skin_recom_lens">"밝은 렌즈
+망원 렌즈"</string>
+    <string name="scn_gid_clear_skin_step_up">"노출을 변경하여
+전체적인 밝기를
+조정합니다"</string>
+    <string name="scn_gid_cooking">"전체적인 화면
+밝기를 증가시켜
+음식이 맛있어
+보이게 합니다"</string>
+    <string name="scn_gid_cooking_onepoint">"피사체에 포커스를
+맞추고 배경을
+흐리게 만듭니다"</string>
+    <string name="scn_gid_cooking_recom_lens">"접사 렌즈
+밝은 렌즈"</string>
+    <string name="scn_gid_cooking_step_up">"조리개를 조절하여
+배경 초점을
+흐리게 합니다"</string>
+    <string name="scn_gid_cool_night">"청색을 증가시키면
+일몰 후 근사하고
+정교한 밤하늘을
+구현할 수 있습니다"</string>
+    <string name="scn_gid_cool_night_onepoint">"맑은 날 일몰 직후
+하늘과 건물을
+촬영합니다"</string>
+    <string name="scn_gid_cool_night_recom_lens">광각 렌즈</string>
+    <string name="scn_gid_cool_night_step_up">"화이트밸런스를
+변경하여 하늘의
+청색 정도를
+조정합니다"</string>
+    <string name="scn_gid_fixflush_backlight_strobe">"실외에서 플래시를
+사용하여 얼굴빛을
+보다 균일하게 합니다"</string>
+    <string name="scn_gid_fixflush_backlight_strobe_onepoint">플래시를 사용합니다</string>
+    <string name="scn_gid_fixflush_backlight_strobe_recom_lens">표준 줌 렌즈</string>
+    <string name="scn_gid_fixflush_backlight_strobe_step_up">"노출을 변경하여
+얼굴의 밝기를
+조정합니다"</string>
+    <string name="scn_gid_fixflush_night_portrait">"필플래시와 긴 노출로
+야경 배경에서
+뛰어난 인물 사진을
+찍을 수 있습니다"</string>
+    <string name="scn_gid_fixflush_night_portrait_onepoint">플래시를 사용합니다</string>
+    <string name="scn_gid_fixflush_night_portrait_recom_lens">광각 렌즈</string>
+    <string name="scn_gid_fixflush_night_portrait_step_up">"노출을 변경하여
+전체적인 밝기를
+조정합니다"</string>
+    <string name="scn_gid_fixlens_portrait">"얼굴 밝기를 조정
+하고 배경 초점을
+흐리게 하여 선명한
+인물 사진을
+만듭니다."</string>
+    <string name="scn_gid_fixlens_portrait_onepoint">줌을 증가시킵니다</string>
+    <string name="scn_gid_fixlens_portrait_step_up">"노출을 변경하여
+전체적인 밝기를
+조정합니다"</string>
+    <string name="scn_gid_flower">"소프트 포커스로
+확산된 이미지를
+구현합니다"</string>
+    <string name="scn_gid_flower_onepoint">"커튼 등으로 빛을
+확산하여 부드러운
+빛을 배경으로
+꽃을 배치합니다"</string>
+    <string name="scn_gid_flower_recom_lens">접사 렌즈</string>
+    <string name="scn_gid_flower_step_up">"노출을 변경하여
+전체적인 밝기를
+조정합니다"</string>
+    <string name="scn_gid_handheld_night">"야경을 핸드헬드
+촬영할 때에 흔들림과
+노이즈를 최소화하기 위해
+다수의 이미지를
+촬영해서 데이터를
+조합합니다."</string>
+    <string name="scn_gid_handheld_night_onepoint">"카메라를 단단히 잡아서
+흔들림을 최소화합니다."</string>
+    <string name="scn_gid_handheld_night_recom_lens">광각 렌즈</string>
+    <string name="scn_gid_handheld_night_step_up">"노출을 변경하여
+전체적인 밝기를
+조정합니다"</string>
+    <string name="scn_gid_illumination">"스타 필터로 빛의
+핀 포인트를
+증가시킵니다"</string>
+    <string name="scn_gid_illumination_onepoint">"최상의 클로즈업
+효과를 냅니다"</string>
+    <string name="scn_gid_illumination_recom_lens">"광각 렌즈
+망원 렌즈"</string>
+    <string name="scn_gid_illumination_step_up">"노출을 변경하여
+광채를 조정합니다"</string>
+    <string name="scn_gid_kids">"배경 포커싱을 줄이고
+피부 톤을 강조하여
+아이 얼굴에
+초점을 맞춥니다"</string>
+    <string name="scn_gid_kids_onepoint">"화면을 터치하여
+아이에게 초점을
+맞춥니다"</string>
+    <string name="scn_gid_kids_recom_lens">밝은 렌즈</string>
+    <string name="scn_gid_kids_step_up">"노출을 변경하여
+분위기를
+조정합니다"</string>
+    <string name="scn_gid_landscape">"하늘과 나무의
+채도를 높여
+보다 특별한 풍경이
+연출됩니다"</string>
+    <string name="scn_gid_landscape_onepoint">구도를 고려합니다</string>
+    <string name="scn_gid_landscape_recom_lens">광각 렌즈</string>
+    <string name="scn_gid_landscape_step_up">"라인 가이드 기능을
+활성화하여 이미지
+구도가 수평인지
+확인합니다"</string>
+    <string name="scn_gid_longexpo_night">"느린 셔터스피드로
+빛의 흔적을 포착해
+예술적인 야경을
+만들 수 있습니다"</string>
+    <string name="scn_gid_longexpo_night_onepoint">"삼각대나 안정된
+스탠드를 사용하는
+것이 좋습니다"</string>
+    <string name="scn_gid_longexpo_night_recom_lens">표준 줌 렌즈</string>
+    <string name="scn_gid_longexpo_night_step_up">"셔터스피드를
+변경하여 또다른
+빛의 궤적을
+구현할 수 있습니다"</string>
+    <string name="scn_gid_magic_hour">"자주색을 증가시켜
+일몰 직후 낭만적인
+하늘 이미지를
+연출합니다"</string>
+    <string name="scn_gid_magic_hour_onepoint">"맑은 날 일몰 직후
+수평으로 사진을
+촬영합니다"</string>
+    <string name="scn_gid_magic_hour_recom_lens">광각 렌즈</string>
+    <string name="scn_gid_magic_hour_step_up">"노출을 변경하여
+색의 심도를
+조정합니다"</string>
+    <string name="scn_gid_monochrome">"모노톤으로
+순간의 분위기를
+포착합니다"</string>
+    <string name="scn_gid_monochrome_onepoint">"선택조명으로
+대비를 높이고
+이미지 분위기를
+고조시킵니다"</string>
+    <string name="scn_gid_monochrome_recom_lens">표준 줌 렌즈</string>
+    <string name="scn_gid_monochrome_step_up">"채도를 변경하여
+색조를 조정하고
+분위기를
+변화시킵니다"</string>
+    <string name="scn_gid_night">"어둠 속의 조명
+채도를 증가시켜
+야경을 강조합니다"</string>
+    <string name="scn_gid_night_onepoint">"삼각대나 안정된
+스탠드를 사용하는
+것이 좋습니다"</string>
+    <string name="scn_gid_night_portrait">"필플래시와 긴 노출로
+야경 배경에서
+뛰어난 인물 사진을
+찍을 수 있습니다"</string>
+    <string name="scn_gid_night_portrait_onepoint">플래시를 터뜨립니다</string>
+    <string name="scn_gid_night_portrait_recom_lens">광각 렌즈</string>
+    <string name="scn_gid_night_portrait_step_up">"노출을 변경하여
+전체적인 밝기를
+조정합니다"</string>
+    <string name="scn_gid_night_recom_lens">"광각 렌즈
+망원 렌즈"</string>
+    <string name="scn_gid_night_step_up">"노출을 변경하여
+전체적인 밝기를
+조정합니다"</string>
+    <string name="scn_gid_onepoint">-원 포인트</string>
+    <string name="scn_gid_pet">"셔터스피드를 높여
+이미지 흐림을
+방지하고 빠른
+움직임을 선명하게
+촬영합니다"</string>
+    <string name="scn_gid_pet_onepoint">"동물과 눈높이를
+맞춰 촬영합니다"</string>
+    <string name="scn_gid_pet_recom_lens">밝은 렌즈</string>
+    <string name="scn_gid_pet_step_up">"연사 촬영으로
+역동적인 이미지를
+녹화합니다"</string>
+    <string name="scn_gid_portrait">"얼굴 밝기를 조정
+하고 배경 초점을
+흐리게 하여 선명한
+인물 사진을
+만듭니다."</string>
+    <string name="scn_gid_portrait_onepoint">"줌 렌즈 사용시
+줌을 증가시킵니다"</string>
+    <string name="scn_gid_portrait_recom_lens">"밝은 렌즈
+망원 렌즈"</string>
+    <string name="scn_gid_portrait_step_up">"노출을 변경하여
+전체적인 밝기를
+조정합니다"</string>
+    <string name="scn_gid_recommended_lens">-권장 렌즈</string>
+    <string name="scn_gid_shimmering_water">"향상된 물의 광채로
+더 밝고 푸른 빛을
+띠도록 합니다"</string>
+    <string name="scn_gid_shimmering_water_onepoint">"태양 각이 낮은
+이른 아침 또는
+저녁 늦게 최상의
+결과를 얻습니다"</string>
+    <string name="scn_gid_shimmering_water_recom_lens">망원 렌즈</string>
+    <string name="scn_gid_shimmering_water_step_up">"노출을 변경하여
+광채를 조정합니다"</string>
+    <string name="scn_gid_sports">"스포츠 경기 등에서
+셔터스피드를 높여
+이미지 흐림을
+방지합니다"</string>
+    <string name="scn_gid_sports_onepoint">"피사체의 움직임을
+관찰하여 구도를
+맞춥니다"</string>
+    <string name="scn_gid_sports_recom_lens">망원 렌즈</string>
+    <string name="scn_gid_sports_step_up">"노출을 변경하여
+전체적인 밝기를
+조정합니다"</string>
+    <string name="scn_gid_step_up">-고급</string>
+    <string name="scn_gid_sunset">"적색을 증가시켜
+선명한 일몰을
+연출합니다"</string>
+    <string name="scn_gid_sunset_onepoint">"맑은 날 최상의
+결과를 얻습니다"</string>
+    <string name="scn_gid_sunset_recom_lens">광각 렌즈</string>
+    <string name="scn_gid_sunset_step_up">"채도를 변경하여
+일몰 시 노을의
+적색 정도를
+조정합니다"</string>
+    <string name="scn_gid_sweets">"전체적인 화면
+밝기를 높게하여
+디저트의 예쁜
+느낌이 증가됩니다"</string>
+    <string name="scn_gid_sweets_onepoint">"전체 프레임을
+디저트로 꽉
+채웁니다"</string>
+    <string name="scn_gid_sweets_recom_lens">"접사 렌즈
+밝은 렌즈"</string>
+    <string name="scn_gid_sweets_step_up">"채도를 변경하여
+분위기를
+조정합니다"</string>
+    <string name="scn_gid_warm_night">"따뜻한 색상을
+증가시켜 따뜻한
+밤하늘 이미지를
+구현할 수 있습니다"</string>
+    <string name="scn_gid_warm_night_onepoint">"가능한 사진에
+빛 요소를
+포함시킵니다"</string>
+    <string name="scn_gid_warm_night_recom_lens">"광각 렌즈
+망원 렌즈"</string>
+    <string name="scn_gid_warm_night_step_up">"화이트 밸런스를
+변경하여 분위기를
+조정합니다"</string>
+    <string name="scn_gid_warm_portrait">"따뜻한 색조로
+편안한 분위기의
+이미지를 만듭니다"</string>
+    <string name="scn_gid_warm_portrait_onepoint">"간접광 장면을
+선택하고 직사광선을
+피합니다"</string>
+    <string name="scn_gid_warm_portrait_recom_lens">표준 줌 렌즈</string>
+    <string name="scn_gid_warm_portrait_step_up">"화이트 밸런스를
+변경하여 분위기를
+바꿉니다"</string>
+    <string name="setup_ap_setting">연결 대상 설정</string>
+    <string name="setup_app_setting">응용 프로그램 기능</string>
+    <string name="setup_ask_app_init">응용 프로그램 설정이 재설정됩니다. 재설정하시겠습니까?</string>
+    <string name="setup_ask_camera_format">포맷을 하면 연결된 장치의 카드에 있는 모든 데이터가 삭제됩니다. 포맷을 계속하시겠습니까?</string>
+    <string name="setup_ask_camera_init">연결된 장치에 대한 설정이 기본 설정으로 복원됩니다. 계속하시겠습니까?</string>
+    <string name="setup_ask_camera_number_reset">MP4 및 연결된 장치의 정지 사진 파일 수가 재설정됩니다. 계속하시겠습니까?</string>
+    <string name="setup_ask_camera_power_off">연결된 장치를 끄시겠습니까?</string>
+    <string name="setup_avchd_quality">AVCHD 재생 품질</string>
+    <string name="setup_avchd_quality_high">고품질</string>
+    <string name="setup_avchd_quality_normal">표준 품질</string>
+    <string name="setup_btn_complete">완료</string>
+    <string name="setup_btn_delete">지우기</string>
+    <string name="setup_btn_edit">편집</string>
+    <string name="setup_btn_finish">완료</string>
+    <string name="setup_btn_format">포맷</string>
+    <string name="setup_btn_init">초기 설정</string>
+    <string name="setup_btn_power_off">전원 끄기</string>
+    <string name="setup_btn_priority_down">우선 순위 낮추기</string>
+    <string name="setup_btn_priority_up">우선 순위 높이기</string>
+    <string name="setup_btn_regist">등록</string>
+    <string name="setup_btn_reset">번호 재설정</string>
+    <string name="setup_btn_return">돌아가기</string>
+    <string name="setup_byte">바이트</string>
+    <string name="setup_cam_ssid_setting">SSID/Wi-Fi 비밀번호 설정</string>
+    <string name="setup_cam_ssid_setting_message">"카메라의 SSID 및 Wi-Fi 비밀번호가 초기화되었습니다.
+SSID 및 Wi-Fi 비밀번호를 변경하십시오."</string>
+    <string name="setup_cam_ssid_setting_message_recomend">카메라의 SSID 및 Wi-Fi 암호가 기본값으로 설정되었습니다. SSID와 Wi-Fi 암호를 변경할 것을 권장합니다. 이 설정을 변경하려면 “카메라 Wi-Fi 설정” → “카메라 SSID 설정”을 선택하십시오.</string>
+    <string name="setup_cmn_wifi_address">Wi-Fi 주소</string>
+    <string name="setup_common_connect_type">Wi-Fi 및 Wi-Fi Direct 모두를 사용할 수 있습니다. 연결 방법을 선택하십시오.</string>
+    <string name="setup_connect">연결 대상 설정</string>
+    <string name="setup_connect_no_camera">"카메라를 찾을 수 없습니다.
+검색이 종료되었습니다."</string>
+    <string name="setup_easy_wifi_hmmon_cam_id">카메라의 홈 모니터 장치 ID</string>
+    <string name="setup_easy_wifi_hmmon_exp">홈 모니터 기능을 시작하기 위해 필요한 홈 모니터 장치 ID는 카메라에서 가져올 수 있습니다.</string>
+    <string name="setup_easy_wifi_hmmon_sp_id">스마트폰의 홈 모니터 장치 ID</string>
+    <string name="setup_easy_wifi_input">수동 입력</string>
+    <string name="setup_easy_wifi_not_registerd">등록되지 않음</string>
+    <string name="setup_easy_wifi_setup_title">Wi-Fi 기능의 초기 설정</string>
+    <string name="setup_easy_wifi_use_sp_login_id">스마트폰의 로그인 ID 사용</string>
+    <string name="setup_fps_value1">5</string>
+    <string name="setup_fps_value2">1</string>
+    <string name="setup_geo_tagging">위치 로깅 설정</string>
+    <string name="setup_help">도움말</string>
+    <string name="setup_imageshuttle_network_name_explain">"다른 장치에서는 표시되는 이름이 변경될 수 있습니다.
+연결된 장치에 따라, 입력 문자가 올바르게 표시되지 않을 수 있습니다.
+이름 변경은 다음번에 이 응용 프로그램을 시작할 때 적용됩니다."</string>
+    <string name="setup_iso">ISO</string>
+    <string name="setup_iso_color_temp">색 온도</string>
+    <string name="setup_jump_rec_1">1(감도: 낮음)</string>
+    <string name="setup_jump_rec_2">2</string>
+    <string name="setup_jump_rec_3">3</string>
+    <string name="setup_jump_rec_4">4</string>
+    <string name="setup_jump_rec_5">5(감도: 높음)</string>
+    <string name="setup_jump_rec_high">높음</string>
+    <string name="setup_jump_rec_low">낮음</string>
+    <string name="setup_jump_rec_mid">중간</string>
+    <string name="setup_jump_rec_off">끄기</string>
+    <string name="setup_language_code">ko</string>
+    <string name="setup_liveview">라이브 컨트롤 설정</string>
+    <string name="setup_liveview_lens_warning">렌즈 돌출 경고</string>
+    <string name="setup_liveview_quality">라이브 컨트롤 품질</string>
+    <string name="setup_liveview_selfshot">셀프 촬영 모드</string>
+    <string name="setup_menu">메뉴</string>
+    <string name="setup_msg_ask_cloud_setup">연결된 카메라가 LUMIX CLUB 클라우드 싱크와 호환되어야 합니다. 현재 설정을 계속 사용하시겠습니까?</string>
+    <string name="setup_msg_ask_geotag_setup">연결된 카메라가 위치 로깅 기능과 호환되어야 합니다. 현재 설정을 계속 사용하시겠습니까?</string>
+    <string name="setup_msg_ask_remote_access_setup">연결된 카메라가 홈 모니터링 기능과 호환되어야 합니다. 현재 설정을 계속 사용하시겠습니까?</string>
+    <string name="setup_msg_camera_disconnected">"연결이 끊겼습니다.
+로컬 재생 모드에서 시작합니다."</string>
+    <string name="setup_msg_camera_lens_error">렌즈 장착 조건이 변경되었습니다.</string>
+    <string name="setup_msg_camera_memu_update">메뉴가 업데이트되었습니다.</string>
+    <string name="setup_msg_gps_logging_1st">이 기능은 위치 로깅을 지원하는 장치에만 사용할 수 있습니다.</string>
+    <string name="setup_msg_remote_access_1st">이 기능은 홈 모니터를 지원하는 장치에만 사용할 수 있습니다.</string>
+    <string name="setup_msg_remote_access_3g_necessary_a">홈 모니터 기능을 시작하려면 3G 또는 이와 유사한 이동전화망에 연결해야 합니다. 연결을 전환하시겠습니까?</string>
+    <string name="setup_msg_remote_access_id_necessary">연결 대상을 설정합니다.</string>
+    <string name="setup_msg_start_remote_watch">홈 모니터링을 시작하시겠습니까?</string>
+    <string name="setup_mtu_value1">1280바이트</string>
+    <string name="setup_mtu_value2">576바이트</string>
+    <string name="setup_name_invalid_char_code">"연결 대상에 따라 입력 문자가 올바르게 표시되지 않을 수 있습니다.
+등록을 계속하시겠습니까?"</string>
+    <string name="setup_name_over_length">등록할 수 있는 문자 수는 20입니다.</string>
+    <string name="setup_network_name">이름</string>
+    <string name="setup_network_name_explain">"다른 장치에 표시되는 DLNA 이름을 변경할 수 있습니다.
+연결된 장치에 따라, 입력 문자가 올바르게 표시되지 않을 수 있습니다.
+이름 변경은 다음번에 이 응용 프로그램을 시작할 때 적용됩니다."</string>
+    <string name="setup_network_name_setting">네트워크 이름</string>
+    <string name="setup_now_format" />
+    <string name="setup_now_init">잠시만 기다리십시오...</string>
+    <string name="setup_now_reset">잠시만 기다리십시오...</string>
+    <string name="setup_off">끄기</string>
+    <string name="setup_on">켜기</string>
+    <string name="setup_picmate_activate">LUMIX CLUB 기능 사용 시작</string>
+    <string name="setup_picmate_add_equip">추가</string>
+    <string name="setup_picmate_already_have_id">로그인 ID가 이미 있는 경우</string>
+    <string name="setup_picmate_btn_agree">동의</string>
+    <string name="setup_picmate_btn_longin">로그인</string>
+    <string name="setup_picmate_btn_new_regist">신규등록</string>
+    <string name="setup_picmate_btn_not_agree">동의하지 않음</string>
+    <string name="setup_picmate_btn_regist">등록</string>
+    <string name="setup_picmate_btn_sync_login_id">카메라와 동일한 LUMIX CLUB 로그인 ID 등록</string>
+    <string name="setup_picmate_btn_sync_need_check_login">로그인 ID 또는 암호가 변경되었습니다. 이 ID로 LUMIX CLUB에 로그인할 수 있는지 확인하십시오.</string>
+    <string name="setup_picmate_btn_unregist">등록하지 않음</string>
+    <string name="setup_picmate_cam_or_app_have_id">이 앱과 카메라 모두에 동일한 로그인 ID를 사용하려는 경우</string>
+    <string name="setup_picmate_cloud">클라우드 싱크 설정</string>
+    <string name="setup_picmate_cloud_action_capacity_over">작업: 제한 초과</string>
+    <string name="setup_picmate_cloud_action_confirm_update">업데이트 확인</string>
+    <string name="setup_picmate_cloud_auto_sync">자동 싱크</string>
+    <string name="setup_picmate_cloud_confirm">항상 확인</string>
+    <string name="setup_picmate_cloud_overwrite">항상 덮어쓰기</string>
+    <string name="setup_picmate_cloud_picsize_recieving">이미지 크기(다운로드)</string>
+    <string name="setup_picmate_cloud_picsize_sending">이미지 크기(업로드)</string>
+    <string name="setup_picmate_cloud_using">클라우드 싱크 사용</string>
+    <string name="setup_picmate_label_access_number">액세스 번호</string>
+    <string name="setup_picmate_label_address_number">주소 번호</string>
+    <string name="setup_picmate_label_comment_input">이미지에 대한 설명을 입력합니다.</string>
+    <string name="setup_picmate_label_login_id">로그인 ID</string>
+    <string name="setup_picmate_label_login_password">암호</string>
+    <string name="setup_picmate_label_login_password_check">암호 확인</string>
+    <string name="setup_picmate_label_login_regist">등록 암호 입력</string>
+    <string name="setup_picmate_label_login_regist2">등록 암호 입력</string>
+    <string name="setup_picmate_label_name">이름</string>
+    <string name="setup_picmate_manage_id">로그인 ID 관리</string>
+    <string name="setup_picmate_not_have_id">로그인 ID가 없는 경우</string>
+    <string name="setup_picmate_regist_equip">AV 장치 등록</string>
+    <string name="setup_picmate_regist_service">웹 서비스 등록</string>
+    <string name="setup_picmate_service_sync">서비스 목록 싱크</string>
+    <string name="setup_picmate_title_av_list">대상 AV 장치</string>
+    <string name="setup_picmate_title_av_regist">AV 장치 정보</string>
+    <string name="setup_picmate_title_comment_input">설명 입력</string>
+    <string name="setup_picmate_title_login_info">로그인 정보 입력</string>
+    <string name="setup_picmate_title_login_regist">등록 암호 입력</string>
+    <string name="setup_picmate_title_web">LUMIX CLUB 인증</string>
+    <string name="setup_picmate_upload_image">업로드된 이미지</string>
+    <string name="setup_picsize_fullhd">풀 HD(1920x1080)</string>
+    <string name="setup_picsize_large">큼(원본)</string>
+    <string name="setup_picsize_middle">중간</string>
+    <string name="setup_picsize_original">무제한(전체 픽셀)</string>
+    <string name="setup_picsize_recommend">권장</string>
+    <string name="setup_picsize_small">작음</string>
+    <string name="setup_picsize_vga">VGA(640x480)</string>
+    <string name="setup_ply_picture_sort">사진 정렬</string>
+    <string name="setup_ply_picture_sort_name">FILE NAME</string>
+    <string name="setup_ply_picture_sort_rectime">DATE/TIME</string>
+    <string name="setup_rec">촬영 설정</string>
+    <string name="setup_rec_time">촬영 시간</string>
+    <string name="setup_rectime_explain">비디오 촬영을 시작할 때의 카메라 상태에 따라, 실제 촬영 시간은 이전에 설정된 시간보다 짧아질 수 있습니다.</string>
+    <string name="setup_remote_access_equip_id">장치 ID</string>
+    <string name="setup_remote_access_equip_pw">암호</string>
+    <string name="setup_remote_access_qr_button">QR 코드</string>
+    <string name="setup_scn_gid_btn_title_finish_setting">설정</string>
+    <string name="setup_scn_gid_btn_title_photoshot">촬영</string>
+    <string name="setup_scn_gid_navigation_title">장면 가이드</string>
+    <string name="setup_set_picmate_id_to_camera">카메라 로그인 ID 설정</string>
+    <string name="setup_smaope_camera_picsize">크기: 카메라에서 복사</string>
+    <string name="setup_smaope_delete_gps">업로드 위치 삭제</string>
+    <string name="setup_smaope_download_file_format">RAW + JPEG 이미지 저장 형식</string>
+    <string name="setup_smaope_picamate">LUMIX CLUB 설정</string>
+    <string name="setup_smaope_picjmp">\"이미지 공유 \" 설정</string>
+    <string name="setup_smaope_player_select">비디오 플레이어 선택</string>
+    <string name="setup_smaope_player_select_summary_off">Image App 플레이어를 사용하여 재생</string>
+    <string name="setup_smaope_player_select_summary_off_leica">Image Shuttle 플레이어를 사용하여 재생</string>
+    <string name="setup_smaope_player_select_summary_on">플레이어를 선택하고 재생</string>
+    <string name="setup_smaope_web_picsize">크기: 웹 업로드</string>
+    <string name="setup_smaope_work_charging">전송: 충전 중에만</string>
+    <string name="setup_smaope_work_wifi_connecting">전송: Wi-Fi만 사용</string>
+    <string name="setup_smart_app">Smart App</string>
+    <string name="setup_smart_operation">재생 설정</string>
+    <string name="setup_ssid_ap_title">무선 액세스 지점 설정</string>
+    <string name="setup_ssid_live_title">라이브 캐스트 설정</string>
+    <string name="setup_ssid_search">검색</string>
+    <string name="setup_start_remote_ext_setting">고급 설정</string>
+    <string name="setup_start_remote_mtu">MTU</string>
+    <string name="setup_start_remote_watch">홈 모니터 시작</string>
+    <string name="setup_terms">이용 약관</string>
+    <string name="setup_time_not_setting">설정하지 않음</string>
+    <string name="setup_time_sync">시계 설정</string>
+    <string name="setup_time_sync_message">"카메라 시계가 설정되지 않았습니다.
+스마트폰 시계를 사용하여 카메라를 동기화합니다."</string>
+    <string name="setup_use_remote_watch">홈 모니터 사용</string>
+    <string name="setup_version">버전</string>
+    <string name="setup_version_info">버전 정보</string>
+    <string name="setup_video_frame_rate">프레임/초</string>
+    <string name="setup_video_frame_rate_simple">프레임/초</string>
+    <string name="setup_white_balance">화이트 밸런스</string>
+    <string name="setup_white_balance_detail_a">A</string>
+    <string name="setup_white_balance_detail_b">B</string>
+    <string name="setup_white_balance_detail_g">G</string>
+    <string name="setup_white_balance_detail_m">M</string>
+    <string name="setup_white_balance_label">WB</string>
+    <string name="setup_white_balance_set_button">SET</string>
+    <string name="setup_white_balance_set_explain">아래 버튼을 누르면 화이트 밸런스를 설정할 수 있습니다.</string>
+    <string name="setup_wifi_encryption">암호화 방식</string>
+    <string name="setup_wifi_encryption_aes">AES</string>
+    <string name="setup_wifi_encryption_none">없음</string>
+    <string name="setup_wifi_encryption_tkip">TKIP</string>
+    <string name="setup_wifi_encryption_wep">WEP</string>
+    <string name="setup_wifi_security">보안</string>
+    <string name="setup_wifi_security_open">없음</string>
+    <string name="setup_wifi_security_shared">WPA2</string>
+    <string name="setup_wifi_security_wpa">WEP</string>
+    <string name="setup_wifi_security_wpa2">WPA</string>
+    <string name="setup_wifi_setting">Wi-Fi 설정</string>
+    <string name="setup_wifi_setting_message">방송할 때(라이브 캐스트) 또는 액세스 포인트를 통해 주변 장치를 연결할 때 설정을 수행합니다.</string>
+    <string name="slow_zoom_speed_fast">빠름</string>
+    <string name="slow_zoom_speed_setting">줌 속도</string>
+    <string name="slow_zoom_speed_slow">Lenta</string>
+    <string name="slow_zoom_speed_standard">일반</string>
+    <string name="smartop_albumlist_title">보고자 하는 폴더 또는 앨범을 선택하십시오.</string>
+    <string name="smartop_confirm_delete">선택한 파일을 삭제하시겠습니까?</string>
+    <string name="smartop_copy_err">다운로드 실패</string>
+    <string name="smartop_copy_error_title">오류</string>
+    <string name="smartop_msg_comp_copying">복사가 완료되었습니다.</string>
+    <string name="smartop_no_send_error_title">주의</string>
+    <string name="smartop_re_conect_title">"연결이 중단되었습니다.
+참조 대상을 선택하십시오."</string>
+    <string name="snap_movie_bgm_title_1">1번</string>
+    <string name="snap_movie_bgm_title_2">2번</string>
+    <string name="snap_movie_bgm_title_3">3번</string>
+    <string name="snap_movie_bgm_title_4">4번</string>
+    <string name="snap_movie_bgm_title_5">5번</string>
+    <string name="snap_movie_bgm_title_6">6번</string>
+    <string name="snap_movie_bgm_title_7">7번</string>
+    <string name="snap_movie_bgm_title_8">8번</string>
+    <string name="snap_movie_content_time">초.</string>
+    <string name="tab_home_button">홈</string>
+    <string name="text_4k_crop_end_frame">종료</string>
+    <string name="text_4k_crop_frame_setting2">조절</string>
+    <string name="text_4k_crop_start_frame">시작</string>
+    <string name="title_connection_error">연결 오류</string>
+    <string name="title_use_functab" />
+    <string name="title_usegeo">위치 로깅 사용</string>
+    <string name="touchshare_copied_picture">복사된 이미지</string>
+    <string name="touchshare_copying">이미지 복사 중...</string>
+    <string name="touchshare_exit_action">이 기능을 종료하려면 다음 버튼을 누르십시오.</string>
+    <string name="touchshare_msg_not_connecting">카메라 연결이 끊어졌습니다.</string>
+    <string name="touchshare_next_touch_action">이미지를 계속 복사하려면 카메라에서 이미지를 선택한 다음 스마트폰을 카메라에 다시 터치하십시오.</string>
+    <string name="ugase_agreement_support">"Google Analytics의 이용 약관 및 개인 정보 취급 방침에 대한 자세한 내용은 Google Analytics의 웹 사이트를 참조하십시오.
+Google Analytics 이용 약관
+http://www.google.com/intl/ja/analytics/tos.html
+Google 정책 및 일반 규정
+http://www.google.com/intl/ja/policies/privacy/
+
+문의 사항은 이용 약관에 있는 연락처로 문의해 주십시오."</string>
+    <string name="ugase_agreement_support_old">문의 사항이 있을 경우, 이 앱의 이용 약관에 나온 연락처 정보를 사용하십시오.</string>
+    <string name="ugase_agreement_text_1">"(1) 이 앱은 사용하시는 단말기에 이 앱의 사용 이력 로그를 남기며, Panasonic Corporation(이하 회사로 지칭)이 지정한 서버에 사용 이력을 업로드하는 기능을 가지고 있습니다. 이 앱과 관련된 소프트웨어 업데이트를 제공하고 이 앱을 개선하며 기능 및 고객 편의의 향상을 위해 고객에 대한 지원 서비스 및 기술을 원활하게 제공할 수 있도록 이 앱을 사용할 때 자동으로 생성되고 저장되는 고객의 장치, 기기, 시스템, 응용 프로그램 소프트웨어 및 주변 장치에 관한 기술 정보(촬영, 재생 및 전송 등의 사용 정보를 포함)뿐만 아니라 이 앱의 사용 이력 및 기술 로그와 관련된 정보를 회사가 지정한 서버에 수집 및 저장하고 개별 고객을 식별할 수 없는 방법으로 사용합니다.
+문의 사항은 이용 약관에 있는 연락처로 문의해 주십시오."</string>
+    <string name="ugase_agreement_text_2">"(2) 이 Panasonic Corporation(이하 회사로 지칭) 앱은 Google Inc.(이하 Google로 지칭)에서 제공하는 Google Analytics 서비스를 이용하여 이 앱과 관련된 소프트웨어 업데이트를 제공하고 이 앱의 개선과 기능 및 고객 편의를 향상시키고 지원 서비스 및 기술을 고객에게 원활하게 제공하며 마케팅(판촉) 목적으로 사용합니다.
+이 앱에서 Google Analytics를 이용하는 경우, 회사에서 발급한 쿠키를 기반으로 이 앱을 사용할 때 자동으로 생성되고 저장되는 고객의 장치, 기기, 시스템, 응용 프로그램 소프트웨어 및 주변 장치, 연결 기기와 관련된 기술 정보(화면 뷰의 표시 상태, 촬영, 재생 및 전송 등의 조작 및 사용 정보를 포함), 이 앱의 사용 이력 및 기술 로그와 관련된 정보, 고객의 거주 국가 또는 사용 언어(이하 이 정보를 고객 정보로 지칭)와 관련된 정보를 Google에서 자동으로 수집, 기록 및 분석합니다.
+회사는 Google의 분석 결과를 받아 고객 정보를 파악합니다. Google Analytics에 의해 수집, 기록 및 분석한 고객 정보에는 고객을 개별적으로 식별하는 정보가 포함되어 있지 않습니다.
+이 정보는 Google의 개인 정보 취급 방침에 따라 Google이 관리합니다. 
+"</string>
+    <string name="ugase_agreement_text_old">이 앱에는 고객이 사용하는 장치의 사용 조건을 유지관리하고 해당 정보를 Panasonic Corporation(이하 회사로 지칭)로 업로드하는 기능이 포함되어 있습니다. 이 앱과 관련된 소프트웨어 업데이트를 제공하고, 이 앱을 개선하며, 기능과 고객 편의를 높이고, 고객에게 보다 원활하게 지원 서비스와 기술을 전달하기 위해 고객의 장비, 장치, 시스템, 응용 프로그램 소프트웨어 및 주변 장비와 관련된 기술 정보(기록, 재생, 전송과 같은 사용 정보 포함)를 비롯하여 이 앱의 사용 시 자동으로 생성되어 저장되는 앱의 사용 기록 및 기술 로그와 관련 정보가 수집되어 회사에서 지정한 서버에 저장되며 고객의 개인 신원 정보를 파악할 수 없는 방법으로 사용됩니다.</string>
+    <string name="ugase_agreement_title">데이터 수집 및 사용 계약</string>
+    <string name="ugase_agreement_title_old">데이터 사용 계약</string>
+    <string name="ugase_conditions">사용 조건</string>
+    <string name="ugase_explain">앱 사용 조건이 자동으로 서버로 전송됩니다. 이 설정은 나중에 변경할 수 있습니다.</string>
+    <string name="ugase_explain_menu">\"메뉴 \" -> \"응용 프로그램 기능 \" -> \"사용 조건 \" -> \"자동으로 보내기 \"</string>
+    <string name="ugase_explain_menu_cookie_policy">\"메뉴 \" -> \"응용 프로그램 기능 \" -> \"사용 조건 \" -> \"자동으로 보내기 \"</string>
+    <string name="ugase_send_automatically">자동으로 보내기</string>
+    <string name="ugase_send_usage_conditions">사용 조건 보내기</string>
+    <string name="wf_msg_confirm_regain">"이 앱에서 만든 이전 ID가 비활성화됩니다.
+다시 등록하시겠습니까?"</string>
+    <string name="wifi_connect_no">아니요</string>
+    <string name="wifi_connect_yes">예</string>
+    <string name="wifi_disconnect">"카메라에 연결하려면 Wi-Fi가 켜져 있어야 합니다.
+Wi-Fi를 켜시겠습니까?
+
+카메라에 연결하면 다른 응용 프로그램을 사용한 업로드가 취소됩니다. 업로드가 완료되었는지 확인하십시오."</string>
+    <string name="wifi_password_input">암호를 입력하십시오.</string>
+    <string name="wifi_password_input2">"암호가 올바르지 않습니다.
+암호를 다시 입력하십시오."</string>
+    <string name="wifi_password_visible">암호 표시</string>
+    <string name="wifi_st_unknown">"Wi-Fi를 활성화할 수 없습니다.
+Wi-Fi 설정을 확인하십시오."</string>
+    <string name="wifi_wifi_setting">Wi-Fi 설정</string>
+    <string name="wipe_frame_color_gray">회색</string>
+    <string name="wipe_frame_color_green">녹색</string>
+    <string name="wipe_frame_color_orange">주황색</string>
+    <string name="wipe_frame_color_pink">분홍색</string>
+    <string name="wipe_frame_color_shadow">음영</string>
+    <string name="wipe_frame_less">프레임 없음</string>
+</resources>

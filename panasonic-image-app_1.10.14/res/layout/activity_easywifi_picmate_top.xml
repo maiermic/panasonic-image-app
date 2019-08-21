@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="#ffffffff" android:id="@id/easywifi_picmate_top_text" android:background="#ff555555" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/setup_smaope_picamate" android:layout_alignParentTop="true" />
+    <TextView android:textColor="#ffffffff" android:id="@id/easywifi_picmate_comment_text" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="5.0dip" android:text="@string/easywifi_setting_picmate_comment" android:layout_above="@id/easywifi_picmate_btn_layout" android:layout_below="@id/easywifi_picmate_top_text" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/easywifi_picmate_btn_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="2.0" android:layout_alignParentBottom="true">
+        <Button android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/cmn_skip" android:layout_weight="1.0" android:onClick="onClickSkip" />
+        <Button android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/cmn_next" android:layout_weight="1.0" android:onClick="onClickNext" />
+    </LinearLayout>
+</RelativeLayout>

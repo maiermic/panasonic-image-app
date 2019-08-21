@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/live_view_icon_font_size_xlarge" android:gravity="center|left" android:id="@id/title" android:background="@drawable/title_base_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/cmn_cloud_backup1" android:layout_alignParentTop="true" />
+    <TextView android:textSize="@dimen/live_view_icon_font_size_xxlarge" android:id="@id/deviceName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/title" />
+    <TextView android:textSize="@dimen/live_view_icon_font_size_xxlarge" android:gravity="center" android:id="@id/currentState" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/msg_cloud_backup_doing" android:layout_below="@id/deviceName" />
+    <ProgressBar android:layout_gravity="center_horizontal" android:id="@id/progressBar" android:paddingTop="30.0dip" android:paddingBottom="30.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="20.0dip" android:progress="0" android:layout_below="@id/currentState" style="?android:attr/progressBarStyleHorizontal" />
+    <TextView android:textSize="@dimen/live_view_icon_font_size_xxlarge" android:gravity="right" android:id="@id/sendingNum" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="0/0" android:layout_below="@id/progressBar" />
+    <RelativeLayout android:gravity="center" android:id="@id/suspendButtonGroupView" android:background="@drawable/listselector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/sendingNum">
+        <Button android:id="@id/suspendButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cmn_cloud_backup_terminate" android:onClick="OnClickSuspend" />
+    </RelativeLayout>
+</RelativeLayout>

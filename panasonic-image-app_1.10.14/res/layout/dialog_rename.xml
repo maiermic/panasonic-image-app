@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/layoutDialogRename" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/textView1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="リネーム" android:scrollHorizontally="false" />
+    <EditText android:id="@id/renameEdit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:ems="10" android:maxLength="30" android:inputType="text">
+        <requestFocus />
+    </EditText>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/renameOkButton" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/cmn_btn_ok" android:layout_weight="1.0" android:onClick="OnClickRenameOK" />
+        <Button android:id="@id/renamedCancelButton" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/cmn_btn_cancel" android:layout_weight="1.0" android:onClick="OnClickRenameCancel" />
+    </LinearLayout>
+</LinearLayout>

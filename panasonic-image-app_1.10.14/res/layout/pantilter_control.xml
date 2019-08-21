@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/pantilter_updown_layout" android:layout_width="wrap_content" android:layout_height="fill_parent" android:weightSum="2.0" android:layout_centerHorizontal="true">
+            <ImageButton android:id="@id/topButton" android:background="#00000000" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_marginBottom="3.0dip" android:src="@drawable/liveview_pantilter_top_arrow_button" android:scaleType="fitCenter" android:layout_weight="1.0" />
+            <ImageButton android:id="@id/bottomButton" android:background="#00000000" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_marginTop="3.0dip" android:src="@drawable/liveview_pantilter_down_arrow_button" android:scaleType="fitCenter" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:weightSum="2.0" android:layout_toLeftOf="@id/pantilter_updown_layout">
+            <ImageButton android:id="@id/leftButton" android:background="#00000000" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_marginTop="3.0dip" android:layout_marginBottom="3.0dip" android:src="@drawable/liveview_pantilter_left_arrow_button" android:scaleType="fitCenter" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:weightSum="2.0" android:layout_toRightOf="@id/pantilter_updown_layout">
+            <ImageButton android:id="@id/rightButton" android:background="#00000000" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_marginTop="3.0dip" android:layout_marginBottom="3.0dip" android:src="@drawable/liveview_pantilter_right_arrow_button" android:scaleType="fitCenter" android:layout_weight="1.0" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

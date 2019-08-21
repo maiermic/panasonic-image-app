@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/scrollView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@id/linearLayout1" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:gravity="left" android:id="@id/setup_movieslideshow_setting_title_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="48.0dip" android:text="@string/msg_movieslideshow_settings_title" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:gravity="left" android:id="@id/setup_movieslideshow_setting_textView_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="29.0dip" android:text="@string/msg_movieslideshow_settings" android:layout_below="@id/setup_movieslideshow_setting_title_message" android:layout_alignParentLeft="true" />
+        </RelativeLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="vertical" android:id="@id/linearLayout1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="horizontal" android:id="@id/linearLayout2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="2.0">
+            <Button android:id="@id/dummybotton1" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <Button android:id="@id/setup_movieslideshow_setting_button_settings" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/rec_btn_quick_menu" android:layout_weight="3.0" android:onClick="OnSettingsClick" />
+            <Button android:id="@id/dummybotton2" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/linearLayout3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <Button android:id="@id/dummybotton3" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <Button android:id="@id/setup_movieslideshow_setting_button_sceneselect" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/msg_scene_select" android:layout_weight="3.0" android:onClick="OnSceneSelectClick" />
+            <Button android:id="@id/dummybotton4" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/selectpicture_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+        <include android:id="@id/movieslideshow_menu" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" layout="@layout/selectpicture_menu" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/selectPicture_gridView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/selectpicture_info" android:layout_below="@id/selectpicture_name" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+        <GridView android:gravity="center" android:id="@id/sceneProtect_gridView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:horizontalSpacing="@dimen/padding_medium" android:verticalSpacing="@dimen/padding_medium" android:stretchMode="columnWidth" android:columnWidth="96.0dip" android:numColumns="auto_fit" />
+        <TextView android:textColor="@android:color/white" android:gravity="center" android:id="@id/sceneProtect_gridViewOverlayMessage" android:background="#ff000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <include android:id="@id/selectpicture_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true" layout="@layout/selectpicture_info" />
+</RelativeLayout>

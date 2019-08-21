@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="frameImage" format="reference" />
+    <attr name="buttonImage" format="reference" />
+    <attr name="lockState">
+        <enum name="lock" value="1" />
+        <enum name="unlock" value="0" />
+    </attr>
+    <attr name="maxRowNumber" format="integer" />
+    <attr name="menuImage" format="reference" />
+    <attr name="menuTitle" format="reference|string" />
+    <attr name="item_width" format="dimension" />
+    <attr name="background_color" format="color" />
+    <attr name="overlay_visible" format="boolean" />
+    <attr name="overlay_color" format="color" />
+    <attr name="item_text_color" format="color" />
+    <attr name="item_text_size" format="dimension" />
+    <attr name="focus_item_text_color" format="color" />
+    <attr name="focus_item_background" format="color" />
+    <attr name="title_area_width" format="dimension" />
+    <attr name="title_image" format="reference" />
+    <attr name="right_blank_area_width" format="dimension" />
+    <attr name="hairline_visible" format="boolean" />
+    <attr name="strokeColor" format="color" />
+    <attr name="strokeWidth" format="dimension" />
+    <attr name="imageAspectRatioAdjust">
+        <enum name="adjust_height" value="2" />
+        <enum name="adjust_width" value="1" />
+        <enum name="none" value="0" />
+    </attr>
+    <attr name="imageAspectRatio" format="float" />
+    <attr name="circleCrop" format="boolean" />
+    <attr name="buttonSize" format="reference">
+        <enum name="icon_only" value="2" />
+        <enum name="standard" value="0" />
+        <enum name="wide" value="1" />
+    </attr>
+    <attr name="colorScheme" format="reference">
+        <enum name="auto" value="2" />
+        <enum name="dark" value="0" />
+        <enum name="light" value="1" />
+    </attr>
+    <attr name="scopeUris" format="reference|string" />
+</resources>

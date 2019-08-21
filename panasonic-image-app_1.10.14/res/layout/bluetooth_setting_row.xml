@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/live_view_icon_font_size_xxlarge" android:id="@id/textview_device_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <ImageButton android:id="@id/imagebutton_setting" android:background="@drawable/list_camera_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitCenter" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/imageview_checkmark" android:paddingRight="16.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/list_camera_target" android:scaleType="fitCenter" android:layout_toLeftOf="@id/imagebutton_setting" android:layout_centerVertical="true" />
+</RelativeLayout>

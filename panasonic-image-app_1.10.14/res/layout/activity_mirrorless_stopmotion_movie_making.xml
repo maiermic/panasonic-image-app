@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:fastScrollEnabled="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <Button android:id="@id/stopMotionExcuteButton" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/cmn_btn_execute" android:layout_weight="8.0" />
+                <LinearLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/stopMotionQuality" android:background="@android:drawable/list_selector_background" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:minHeight="?android:listPreferredItemHeight" android:onClick="onQualityClick">
+                <TextView android:textAppearance="?android:textAppearanceLarge" android:id="@id/stopMotionQualityTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="@string/rec_stopmotion_video_quality_setting" />
+                <TextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/stopMotionQualitySubTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/stopMotionFrameRate" android:background="@android:drawable/list_selector_background" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:minHeight="?android:listPreferredItemHeight" android:onClick="onFrameRateClick">
+                <TextView android:textAppearance="?android:textAppearanceLarge" android:id="@id/stopMotionFrameRateTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="@string/rec_stopmotion_framerate" />
+                <TextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/stopMotionFrameRateSubTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/stopMotionRecOrder" android:background="@android:drawable/list_selector_background" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:minHeight="?android:listPreferredItemHeight" android:onClick="onRecOrderClick">
+                <TextView android:textAppearance="?android:textAppearanceLarge" android:id="@id/stopMotionRecOrderTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="@string/rec_stopmotion_order_setting" />
+                <TextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/stopMotionRecOrderSubTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rec_stopmotion_order_normal" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

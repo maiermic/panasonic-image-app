@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:visibility="visible" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="2.0">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageButton android:id="@id/backButton" android:background="#00000000" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="3.0dip" android:layout_marginTop="3.0dip" android:src="@drawable/back_n" android:layout_weight="1.0" android:onClick="onClickBack" />
+                <ImageButton android:background="#00000000" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="5.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="5.0">
+                <RelativeLayout android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <LinearLayout android:orientation="vertical" android:id="@id/updown_layout" android:layout_width="wrap_content" android:layout_height="fill_parent" android:weightSum="2.0" android:layout_centerHorizontal="true">
+                        <ImageButton android:id="@id/topButton" android:background="#00000000" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_marginLeft="3.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="3.0dip" android:layout_marginBottom="3.0dip" android:src="@drawable/liveview_pantilter_top_arrow_button" android:scaleType="fitCenter" android:layout_weight="1.0" android:onClick="onClickTop" />
+                        <ImageButton android:id="@id/bottomButton" android:background="#00000000" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_marginLeft="3.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="3.0dip" android:src="@drawable/liveview_pantilter_down_arrow_button" android:scaleType="fitCenter" android:layout_weight="1.0" android:onClick="onClickBottom" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:weightSum="2.0" android:layout_toLeftOf="@id/updown_layout">
+                        <ImageButton android:id="@id/leftButton" android:background="#00000000" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_marginLeft="3.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="3.0dip" android:layout_marginBottom="3.0dip" android:src="@drawable/liveview_pantilter_left_arrow_button" android:scaleType="fitCenter" android:layout_weight="1.0" android:onClick="onClickLeft" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:weightSum="2.0" android:layout_toRightOf="@id/updown_layout">
+                        <ImageButton android:id="@id/rightButton" android:background="#00000000" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_marginLeft="3.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="3.0dip" android:layout_marginBottom="3.0dip" android:src="@drawable/liveview_pantilter_right_arrow_button" android:scaleType="fitCenter" android:layout_weight="1.0" android:onClick="onClickRight" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageButton android:id="@id/zoomInButton" android:background="#00000000" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_marginTop="3.0dip" android:layout_marginBottom="3.0dip" android:src="@drawable/crop_frame_expand" android:scaleType="fitCenter" android:layout_weight="1.0" android:onClick="onClickZoomIn" />
+                <ImageButton android:id="@id/zoomOutButton" android:background="#00000000" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_marginBottom="3.0dip" android:src="@drawable/crop_frame_reduce" android:scaleType="fitCenter" android:layout_weight="1.0" android:onClick="onClickZoomOut" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:id="@id/setButtonGroup" android:paddingLeft="5.0dip" android:paddingTop="2.0dip" android:paddingRight="2.0dip" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true">
+                <ImageButton android:layout_gravity="center" android:id="@id/setButton" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/multi_photo_frame_main_finish_button" android:scaleType="fitCenter" android:onClick="onClickSet" />
+                <TextView android:textSize="@dimen/live_view_lumix_font_size" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/setButtonText" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/cmn_btn_dicision" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/resetButtonGroup" android:paddingLeft="5.0dip" android:paddingTop="2.0dip" android:paddingRight="2.0dip" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/setButtonGroup">
+                <ImageButton android:layout_gravity="center" android:id="@id/resetButton" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/multi_photo_frame_main_finish_button" android:scaleType="fitCenter" android:onClick="onClickReset" />
+                <TextView android:textSize="@dimen/live_view_lumix_font_size" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/resetButtonText" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/cmn_btn_reset" />
+            </FrameLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

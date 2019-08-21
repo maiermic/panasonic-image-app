@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/connectedRing" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ring" android:scaleType="centerInside" android:adjustViewBounds="true" android:alpha="1.0" />
+    <ImageView android:layout_gravity="center" android:id="@id/cameraIcon" android:background="#00000000" android:visibility="invisible" android:layout_width="144.0dip" android:layout_height="fill_parent" android:layout_marginTop="28.0dip" android:layout_marginBottom="28.0dip" android:src="@android:drawable/ic_menu_camera" android:scaleType="centerInside" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_width="fill_parent" android:layout_height="30.0dip" android:src="@drawable/top_layout_mask" android:layout_alignParentTop="true" />
+        <ImageView android:layout_width="fill_parent" android:layout_height="36.0dip" android:src="@drawable/top_layout_mask" android:layout_alignParentBottom="true" android:rotation="180.0" />
+        <View android:id="@id/view_center_dummy" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_centerInParent="true" />
+        <TextView android:textSize="@dimen/live_view_icon_font_size_xlarge" android:textColor="#ff358af1" android:gravity="center" android:id="@id/deviceName" android:visibility="invisible" android:layout_width="192.0dip" android:layout_height="wrap_content" android:layout_below="@id/view_center_dummy" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/sliderToLeftPage" android:background="#00000000" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/slide_arrow_left_n" android:scaleType="fitCenter" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:gravity="center" android:background="@drawable/title_base_bg" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/setup_picmate_upload_image" android:scrollHorizontally="false" />
+    <com.panasonic.avc.cng.view.parts.ImageFlipper android:id="@id/upload_one_content_preview_flipper" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

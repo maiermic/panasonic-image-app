@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ViewFlipper android:orientation="vertical" android:id="@id/flipper" android:layout_width="fill_parent" android:layout_height="fill_parent" android:inAnimation="@android:anim/slide_out_right"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:foreground="@drawable/arrow_right" android:foregroundGravity="center|right">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/scene_guide_thumbnails" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="8.0">
+                <LinearLayout android:orientation="horizontal" android:id="@id/scene_guide_thumbnail_top" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="5.0">
+                    <LinearLayout android:orientation="vertical" android:id="@id/scene_guide_thumbnail_left" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="2.6">
+                            <ImageView android:id="@id/scene_guide_thumbnail_left_top1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:adjustViewBounds="true" android:cropToPadding="false" />
+                            <ImageView android:id="@id/scene_guide_thumbnail_left_top2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:adjustViewBounds="true" android:cropToPadding="false" />
+                        </FrameLayout>
+                        <LinearLayout android:orientation="horizontal" android:id="@id/scene_guide_thumbnail_left_bottom" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                            <FrameLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                                <ImageView android:id="@id/scene_guide_thumbnail_left_bottom1_1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:adjustViewBounds="true" android:cropToPadding="false" />
+                                <ImageView android:id="@id/scene_guide_thumbnail_left_bottom1_2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:adjustViewBounds="true" android:cropToPadding="false" />
+                            </FrameLayout>
+                            <FrameLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                                <ImageView android:id="@id/scene_guide_thumbnail_left_bottom2_1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:adjustViewBounds="true" android:cropToPadding="false" />
+                                <ImageView android:id="@id/scene_guide_thumbnail_left_bottom2_2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:adjustViewBounds="true" android:cropToPadding="false" />
+                            </FrameLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/scene_guide_thumbnail_right" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <LinearLayout android:orientation="horizontal" android:id="@id/scene_guide_thumbnail_right_top" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                            <FrameLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                                <ImageView android:layout_gravity="left" android:id="@id/scene_guide_thumbnail_right_top_left_1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:adjustViewBounds="true" />
+                                <ImageView android:layout_gravity="left" android:id="@id/scene_guide_thumbnail_right_top_left_2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:adjustViewBounds="true" />
+                            </FrameLayout>
+                            <FrameLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                                <ImageView android:id="@id/scene_guide_thumbnail_right_top_right_1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:adjustViewBounds="true" />
+                                <ImageView android:id="@id/scene_guide_thumbnail_right_top_right_2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:adjustViewBounds="true" />
+                            </FrameLayout>
+                        </LinearLayout>
+                        <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.4">
+                            <ImageView android:id="@id/scene_guide_thumbnail_right_middle_1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:adjustViewBounds="true" />
+                            <ImageView android:id="@id/scene_guide_thumbnail_right_middle_2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:adjustViewBounds="true" />
+                        </FrameLayout>
+                        <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.4">
+                            <ImageView android:id="@id/scene_guide_thumbnail_right_bottom_1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:adjustViewBounds="true" />
+                            <ImageView android:id="@id/scene_guide_thumbnail_right_bottom_2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:adjustViewBounds="true" />
+                        </FrameLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/scene_guide_thumbnail_bottom" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.25">
+                    <FrameLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <ImageView android:id="@id/scene_guide_thumbnail_bottom1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:adjustViewBounds="true" />
+                        <ImageView android:id="@id/scene_guide_thumbnail_bottom2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:adjustViewBounds="true" />
+                    </FrameLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/scene_guide_bottom_menu" android:background="@drawable/bg" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="2.0">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <CheckBox android:gravity="center|left" android:id="@id/checkbox" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+                    <TextView android:textAppearance="?android:textAppearanceMedium" android:gravity="center|left" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/cmn_label_title_nextskipview" />
+                </LinearLayout>
+                <TextView android:textAppearance="?android:textAppearanceLarge" android:gravity="bottom|center|right" android:id="@id/scene_guide_title" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</ViewFlipper>

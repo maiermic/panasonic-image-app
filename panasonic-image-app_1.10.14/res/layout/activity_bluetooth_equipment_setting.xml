@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="@dimen/live_view_icon_font_size_xxlarge" android:gravity="center|left" android:id="@id/title" android:background="@drawable/title_base_bg" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="@string/cmn_bluetooth" android:layout_alignParentTop="true" />
+        <Button android:id="@id/deregistButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cmn_unregist_camera" android:layout_below="@id/title" android:layout_centerHorizontal="true" android:onClick="OnClickDeregist" />
+        <RelativeLayout android:id="@id/cloudBackUpSettingViewGroup" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/deregistButton">
+            <TextView android:textSize="@dimen/live_view_icon_font_size_xxlarge" android:id="@id/cloudBackUp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/cmn_cloud_backup" android:layout_alignParentTop="true" />
+            <TextView android:textSize="@dimen/live_view_icon_font_size_xxlarge" android:id="@id/cloudExplain" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/msg_cloud_backup_setting" android:layout_below="@id/cloudBackUp" />
+            <RelativeLayout android:gravity="center" android:id="@id/autobackupGroupView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/cloudExplain">
+                <CheckBox android:id="@id/autobackupCheckBox" android:focusable="false" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+                <TextView android:textSize="@dimen/live_view_icon_font_size_xxlarge" android:gravity="center" android:id="@id/autobackupTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cmn_auto_cloud_backup" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View android:id="@id/divider1" android:background="@android:color/white" android:layout_width="wrap_content" android:layout_height="1.0dip" android:layout_below="@id/autobackupGroupView" />
+            <RelativeLayout android:gravity="center" android:id="@id/stopConditionGroupView" android:background="@drawable/listselector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/divider1" android:onClick="OnStopCondition">
+                <TextView android:textSize="@dimen/live_view_icon_font_size_xxlarge" android:id="@id/stopConditionTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/cmn_cloud_backup_terminate_condition_battery" android:layout_alignParentLeft="true" />
+                <TextView android:textSize="@dimen/live_view_icon_font_size_xxlarge" android:gravity="right" android:id="@id/stopCondition" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/cmn_remain_battery_1" android:layout_below="@id/stopConditionTitle" />
+            </RelativeLayout>
+            <View android:id="@id/divider2" android:background="@android:color/white" android:layout_width="wrap_content" android:layout_height="1.0dip" android:layout_below="@id/stopConditionGroupView" />
+            <RelativeLayout android:gravity="center" android:id="@id/ssidListGroupView" android:background="@drawable/listselector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/divider2" android:onClick="OnSsidList">
+                <TextView android:textSize="@dimen/live_view_icon_font_size_xxlarge" android:id="@id/ssidListTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/cmn_cloud_backup_connect_ap" android:layout_alignParentLeft="true" />
+                <TextView android:textSize="@dimen/live_view_icon_font_size_xxlarge" android:gravity="right" android:id="@id/ssid" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/ssidListTitle" />
+            </RelativeLayout>
+            <View android:id="@id/divider3" android:background="@android:color/white" android:layout_width="wrap_content" android:layout_height="1.0dip" android:layout_below="@id/ssidListGroupView" />
+            <RelativeLayout android:gravity="center" android:id="@id/cloudSettingGroupView" android:background="@drawable/listselector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/divider3" android:onClick="OnCloudSetting">
+                <TextView android:textSize="@dimen/live_view_icon_font_size_xxlarge" android:id="@id/cloudSetting" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/cmn_cloud_backup_picmate_settings" />
+                <TextView android:gravity="right" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/cloudSetting" />
+            </RelativeLayout>
+            <View android:id="@id/divider4" android:background="@android:color/white" android:layout_width="wrap_content" android:layout_height="1.0dip" android:layout_below="@id/cloudSettingGroupView" />
+            <RelativeLayout android:gravity="center" android:id="@id/sendSizeGroupView" android:background="@drawable/listselector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/divider4" android:onClick="OnSendSize">
+                <TextView android:textSize="@dimen/live_view_icon_font_size_xxlarge" android:id="@id/sendSizeTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/cmn_cloud_backup_send_size" android:layout_alignParentLeft="true" />
+                <TextView android:textSize="@dimen/live_view_icon_font_size_xxlarge" android:gravity="right" android:id="@id/sendSize" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/cmn_cloud_backup_send_size_org" android:layout_below="@id/sendSizeTitle" />
+            </RelativeLayout>
+            <View android:id="@id/divider5" android:background="@android:color/white" android:layout_width="wrap_content" android:layout_height="1.0dip" android:layout_below="@id/sendSizeGroupView" />
+            <RelativeLayout android:gravity="center" android:id="@id/locationDataDeleteGroupView" android:background="@drawable/listselector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/divider5">
+                <CheckBox android:id="@id/locationCheckBox" android:focusable="false" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+                <TextView android:textSize="@dimen/live_view_icon_font_size_xxlarge" android:gravity="center" android:id="@id/locationCheckBoxTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cmn_cloud_backup_remove_location_data" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View android:id="@id/divider6" android:background="@android:color/white" android:layout_width="wrap_content" android:layout_height="1.0dip" android:layout_below="@id/locationDataDeleteGroupView" />
+            <RelativeLayout android:gravity="center" android:id="@id/connectTestGroupView" android:background="@drawable/listselector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/divider6" android:onClick="OnConnectTest">
+                <TextView android:textSize="@dimen/live_view_icon_font_size_xxlarge" android:id="@id/connectTest" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/cmn_cloud_backup_connection_test" />
+                <TextView android:gravity="right" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/connectTest" />
+            </RelativeLayout>
+            <View android:id="@id/divider7" android:background="@android:color/white" android:layout_width="wrap_content" android:layout_height="1.0dip" android:layout_below="@id/connectTestGroupView" />
+            <RelativeLayout android:gravity="center" android:id="@id/backUpStartGroupView" android:background="@drawable/listselector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/divider7" android:onClick="OnBackUpStart">
+                <TextView android:textSize="@dimen/live_view_icon_font_size_xxlarge" android:id="@id/backupStart" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/cmn_cloud_backup_start_backup" />
+                <TextView android:gravity="right" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/backupStart" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

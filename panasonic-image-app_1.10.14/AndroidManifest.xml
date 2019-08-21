@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:sharedUserId="panasonic.imageapp" package="com.panasonic.avc.cng.imageapp" platformBuildVersionCode="26" platformBuildVersionName="8.0.0">
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.NFC"/>
+    <uses-permission android:name="com.felicanetworks.mfc.permission.MFC_ACCESS"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-feature android:name="android.hardware.location" android:required="false"/>
+    <uses-feature android:name="android.hardware.location.gps" android:required="false"/>
+    <uses-feature android:name="android.hardware.location.network" android:required="false"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.REORDER_TASKS"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <permission android:name="com.panasonic.avc.cng.imageapp.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.panasonic.avc.cng.imageapp.permission.C2D_MESSAGE"/>
+    <application android:hardwareAccelerated="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:name="android.support.multidex.MultiDexApplication" android:theme="@style/AppTheme">
+        <service android:exported="false" android:name="com.felicanetworks.mfc.Felica"/>
+        <service android:exported="false" android:name="com.felicanetworks.mfc.FSC"/>
+        <service android:name="com.panasonic.avc.cng.model.service.geotagservice.GpsLogService" android:process=":gpsservice"/>
+        <service android:name="com.panasonic.avc.cng.model.service.upload.usages.logservice.UsagesLogService" android:process=":logservice"/>
+        <service android:name="com.panasonic.avc.cng.model.service.imageapp.ImageAppTotalService"/>
+        <service android:exported="false" android:name="com.panasonic.avc.cng.application.fcm.ImageAppInstanceIdService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.panasonic.avc.cng.application.fcm.ImageAppMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/app_name" android:name="com.panasonic.avc.cng.application.ImageAppLauncher">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:name="com.panasonic.avc.cng.view.geotag.GeoTagActivity"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.liveview.movie.homemonitor.LiveViewRemoteVoiceActivity"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.liveview.movie.homemonitor.LiveViewRemoteWatchActivity"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.liveview.LiveViewLumixActivity"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.liveview.LiveViewLumixMirrorlessActivity"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.liveview.LiveViewLumixCompactActivity"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.liveview.LiveViewLumixGseriesActivity"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.liveview.LiveViewNoConnectionActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:name="com.panasonic.avc.cng.view.smartoperation.HighlightPreferenceActivity" android:theme="@android:style/Theme.Black"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:name="com.panasonic.avc.cng.view.play.splitdelete.SplitDeleteActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:name="com.panasonic.avc.cng.view.setting.ConnectSettingActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:name="com.panasonic.avc.cng.view.setting.PlaybackSettingActivity" android:theme="@android:style/Theme.Black"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:name="com.panasonic.avc.cng.view.setting.AppSettingActivity" android:theme="@android:style/Theme.Black"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.setting.PicMateSettingActivity" android:theme="@android:style/Theme.Black"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.setting.PicMateSettingPreferenceActivity" android:theme="@android:style/Theme.Black"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:name="com.panasonic.avc.cng.view.setting.CloudSettingActivity" android:theme="@android:style/Theme.Black"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.setting.PictureJumpSetupActivity"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.setting.NetworkNameSettingActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:name="com.panasonic.avc.cng.view.setting.RemoteWatchSettingActivity" android:theme="@android:style/Theme.Black"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.setting.RemoteWatchConnectActivity" android:screenOrientation="portrait"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.setting.TermsActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:name="com.panasonic.avc.cng.view.setting.MenuTermsActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:name="com.panasonic.avc.cng.view.setting.HelpActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:name="com.panasonic.avc.cng.view.setting.RecursiveSettingActivity" android:theme="@android:style/Theme.Black"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.common.QrCodeReaderActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:name="com.panasonic.avc.cng.view.smartoperation.ContentPlayerActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:name="com.panasonic.avc.cng.view.threebox.ThreeBoxActivity"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.smartoperation.PictureJumpActivity" android:theme="@android:style/Theme.Translucent"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:name="com.panasonic.avc.cng.view.smartoperation.PicmateSendActivity" android:theme="@android:style/Theme.Translucent"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:name="com.panasonic.avc.cng.view.setting.LoginActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:name="com.panasonic.avc.cng.view.setting.CreatePasswordActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:name="com.panasonic.avc.cng.view.setting.RegistServiceActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:name="com.panasonic.avc.cng.view.setting.RegistEquipmentActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:name="com.panasonic.avc.cng.view.setting.PicmateUploadContentsViewActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:name="com.panasonic.avc.cng.view.setting.PicmateUploadOneContentViewActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:name="com.panasonic.avc.cng.view.setting.WebViewActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:name="com.panasonic.avc.cng.view.setting.WebServiceWebViewActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:name="com.panasonic.avc.cng.view.setting.RegistEquipmentInfoActivity"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.setting.CameraPowerOffActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:name="com.panasonic.avc.cng.view.setting.CameraAllDeleteActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:name="com.panasonic.avc.cng.view.setting.SetupConnectSettingActivity" android:theme="@android:style/Theme.Black"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:name="com.panasonic.avc.cng.view.setting.SetupAccessPointSettingActivity" android:theme="@android:style/Theme.Black"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:name="com.panasonic.avc.cng.view.setting.SetupDateTimeSettingActivity" android:theme="@android:style/Theme.Black"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.setting.CamSetupInitActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:name="com.panasonic.avc.cng.view.setting.CamSetupFormatActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:name="com.panasonic.avc.cng.view.setting.CamWhiteBalanceSetModeActivity"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.setting.CamSetupNumRstActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:name="com.panasonic.avc.cng.view.setting.CamSetupDevInfoActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:name="com.panasonic.avc.cng.view.setting.SetupConnectCameraSettingActivity" android:theme="@android:style/Theme.Black"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:name="com.panasonic.avc.cng.view.setting.SetupConnectHomeNetworkSettingActivity" android:theme="@android:style/Theme.Black"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:name="com.panasonic.avc.cng.view.setting.SetupWearableSettingActivity" android:theme="@android:style/Theme.Black"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:name="com.panasonic.avc.cng.view.setting.RemoteWatchAdvancedSettingActivity" android:theme="@android:style/Theme.Black"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.setting.SetupWithLiveViewListActivity"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.setting.SetupWithLiveViewLumixMirrorlessListActivity"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.setting.SetupWithLiveViewSliderBarActivity"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.setting.LiveSetupFandSs2Activity"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.setting.LiveSetupListViewActivity"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.setting.LiveSetupSliderBarActivity"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.smartoperation.PicmateUnsentImageListActivity"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.smartoperation.PicmateUnsentImageInfoActivity"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.common.NfcFirstTouchActivity" android:theme="@android:style/Theme.Black"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:name="com.panasonic.avc.cng.view.common.TouchShareCopyActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:name="com.panasonic.avc.cng.view.common.TouchShareNextActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.functab.SmartAppLauncherActivity"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.setting.LiveSetupDrumPickerFandSSActivity"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.setting.LiveSetupDrumPickerFandSSandPActivity"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.setting.LiveSetupDrumPickerWhiteBalanceActivity"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.setting.LiveSetupDrumPickerIsoActivity"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.setting.SetupWithLiveViewPhotoStyleActivity"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.setting.SetupWithLiveViewPhotoStyleDetailActivity"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.application.LumixLinkCallActivity"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.setting.LiveSetupLumixMirrorlessSliderBarActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:name="com.panasonic.avc.cng.view.setting.MirrorlessStopmotionAutoManualSettingActivity" android:theme="@android:style/Theme.Black"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:name="com.panasonic.avc.cng.view.setting.MirrorlessStopmotionTakenMoreNewActivity" android:theme="@android:style/Theme.Black"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.setting.MirrorlessStopmotionShotImageSelectionAnimeActivity" android:theme="@android:style/Theme.Black"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.setting.LiveViewMirrorlessStopmotionActivity"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.setting.LiveViewStopmotionActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:name="com.panasonic.avc.cng.view.setting.MirrorlessStopmotionMovieMakingActivity" android:theme="@android:style/Theme.Black"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.setting.SetupWithLiveViewSceneGuideSelectActivity" android:theme="@style/SceneGuideTheme"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.setting.SceneGuideTopActivity"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.setting.MirrorlessStopmotionOperationActivity"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.setting.MirrorlessStopmotionOneContentPreviewActivity"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.setting.MirrorlessStopmotionPictureJumpActivity" android:theme="@android:style/Theme.Translucent"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:name="com.panasonic.avc.cng.application.ImageAppBaseActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:name="com.panasonic.avc.cng.view.play.browser.MainBrowserActivity"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.play.browser.OneContentPreviewActivity"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.play.browser.GroupBrowserActivity"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.play.highlight.HighlightActivity"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.play.splitdelete.SplitDeleteFileSelectActivity"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.play.sceneprotect.SceneProtectActivity"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.liveview.movie.conventional.LiveViewMovieVideoActivity" android:theme="@style/ActivityStyle"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.liveview.movie.conventional.LiveViewMoviePictureActivity" android:theme="@style/ActivityStyle"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.liveview.movie.conventional.LiveViewMovieVideoWithFullActivity" android:theme="@style/ActivityStyle"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.liveview.movie.conventional.LiveViewMoviePictureWithFullActivity" android:theme="@style/ActivityStyle"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.liveview.movie.conventional.LiveViewMovieOnlyVideoActivity" android:theme="@style/ActivityStyle"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.liveview.movie.wearable.LiveViewWearableActivity"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.liveview.movie.wearable.LiveViewWearablePictureActivity"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.liveview.movie.wearable.LiveViewWearableVideoActivity"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.liveview.movie.vertical.LiveViewVerticalActivity"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.play.movieslideshow.MovieSlideshowActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:name="com.panasonic.avc.cng.view.play.movieslideshow.MovieSlideshowPreferenceActivity" android:theme="@android:style/Theme.Black"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.play.movieslideshow.SetupMovieSlideshowSettingActivity"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.play.movieslideshow.SelectPictureActivity"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.liveview.movie.pantilter.LiveViewMoviePantilterAutoMovieActivity" android:theme="@style/ActivityStyle"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.liveview.movie.pantilter.LiveViewMoviePantilterManualMovieActivity" android:theme="@style/ActivityStyle"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.liveview.movie.pantilter.LiveViewMoviePantilterPresetActivity"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.play.multiphotoframe.MultiPhotoFrameBrowseActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:name="com.panasonic.avc.cng.view.play.snapmovie.SnapMovieBrowserActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.play.snapmovie.SnapMovieOneContentPreviewActivity"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.application.fcm.PushNotifyActivity" android:theme="@android:style/Theme.Dialog"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:name="com.panasonic.avc.cng.view.liveview.movie.pantilter.LiveViewMoviePantilterCheckRangeActivity"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.liveview.movie.homemonitor.LiveViewMoviePantilterRemoteWatchAutoActivity"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.liveview.movie.homemonitor.LiveViewMoviePantilterRemoteWatchManualActivity"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.liveview.movie.homemonitor.LiveViewMoviePantilterRemoteVoiceActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:name="com.panasonic.avc.cng.view.liveview.movie.homemonitor.LiveViewMoviePantilterRemoteCheckRangeActivity"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.liveview.movie.homemonitor.LiveViewMoviePantilterRemoteWatchPresetActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:name="com.panasonic.avc.cng.view.play.multiphotoframe.MultiPhotoFrameExecuteActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:name="com.panasonic.avc.cng.view.setting.EasyWiFiSettingActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:name="com.panasonic.avc.cng.view.setting.EasyWiFiApListActivity" android:theme="@android:style/Theme.Black"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:name="com.panasonic.avc.cng.view.setting.EasyWiFiApRegistActivity" android:theme="@android:style/Theme.Black"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:name="com.panasonic.avc.cng.view.setting.EasyWiFiApTopActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:name="com.panasonic.avc.cng.view.setting.EasyWiFiClockTopActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:name="com.panasonic.avc.cng.view.setting.EasyWiFiMimamoriTopActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:name="com.panasonic.avc.cng.view.setting.EasyWiFiPicMateRegistActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:name="com.panasonic.avc.cng.view.setting.EasyWiFiPicMateTopActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:name="com.panasonic.avc.cng.view.setting.EasyWiFiUstreamTopActivity"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.liveview.movie.matanity.LiveViewMovieMatanityMainActivity"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.play.multiphotoframe.MultiPhotoFrameMainActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:name="com.panasonic.avc.cng.view.play.multiphotoframe.MultiPhotoFrameSelectPictureActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:name="com.panasonic.avc.cng.view.play.multiphotoframe.MultiPhotoFrameSelectPictureGroupActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:name="com.panasonic.avc.cng.view.liveview.movie.conventional.LiveViewMovieBabyMonitorActivity" android:theme="@style/ActivityStyle"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:name="com.panasonic.avc.cng.view.play.multiphotoframe.MultiPhotoFrameSelectFrameActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:name="com.panasonic.avc.cng.view.play.movieslideshow.MovieSlideshowSelectBgmActivity"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.liveview.LiveViewLumixGHActivity" android:theme="@style/ActivityStyle"/>
+        <activity android:name="com.panasonic.avc.cng.view.liveview.LiveViewLumixGHFullscreenActivity" android:screenOrientation="sensorLandscape" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.setting.LiveSetupDrumPickerOnlyFActivity"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.setting.LiveSetupDrumPickerOnlySSActivity"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.setting.LiveSetupDrumPickerGainActivity"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.play.snapmovie.SnapMoviePreviewActivity"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.setting.LiveSetupMovieWhiteBalanceActivity"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.setting.LiveSetupMovieGainActivity"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.setting.LiveSetupMovieFandSSActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:name="com.panasonic.avc.cng.view.wirelesstwincamera.WirelessTwinCameraActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:name="com.panasonic.avc.cng.view.cameraconnect.GuidanceMenuActivity"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.liveview.movie.conventional.LiveViewMovieCheckRangeActivity"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.setting.LiveSetupDrumPickerDriveModeActivity"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.setting.LiveSetupDrumPickerDriveModeDetailActivity"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.setting.LiveSetupDrumPickerAfModeActivity"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.setting.LiveSetupDrumPickerAfModeDetailActivity"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.setting.SetupWithLiveViewCreativeControlActivity"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.setting.SetupWithLiveViewFilterSelectActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:name="com.panasonic.avc.cng.view.transferassist.TransferModeSelectActivity"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.setting.SettingBracketShotNumActivity" android:theme="@android:style/Theme.Dialog"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.usages.UsagesTransparentActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:name="com.panasonic.avc.cng.view.usages.UsagesSettingActivity" android:theme="@android:style/Theme.Black"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:name="com.panasonic.avc.cng.view.usages.UsagesAcceptActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:name="com.panasonic.avc.cng.view.usages.TermsAgreementActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:name="com.panasonic.avc.cng.view.usages.TagManagerAgreementActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:name="com.panasonic.avc.cng.view.setting.AppSettingForNoIDActivity" android:theme="@android:style/Theme.Black"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:name="com.panasonic.avc.cng.view.bluetooth.BluetoothSettingActivity"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.bluetooth.BluetoothRegistActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:name="com.panasonic.avc.cng.view.bluetooth.BluetoothEquipmentSettingActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:name="com.panasonic.avc.cng.view.bluetooth.BluetoothCloudSettingActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:name="com.panasonic.avc.cng.view.bluetooth.BluetoothCloudBackupActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:name="com.panasonic.avc.cng.view.bluetooth.BluetoothUploadSettingActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:name="com.panasonic.avc.cng.view.camerasetting.CameraSettingActivity"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.setting.LiveSetupDrumPickerRecModeActivity"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.setting.LiveSetupDrumPickerRecModeDetailActivity"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.setting.LiveSetupDrumPickerFocusModeActivity"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.bluetooth.BluetoothRemoteControllerActivity"/>
+        <activity android:label="" android:name="com.panasonic.avc.cng.view.cameraconnect.AccessPointSettingActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:name="com.panasonic.avc.cng.view.cameraconnect.AccessPointListActivity"/>
+        <provider android:authorities="com.panasonic.avc.cng.imageapp.geotagprovider" android:name="com.panasonic.avc.cng.model.service.geotagservice.GeoTagProvider"/>
+        <provider android:authorities="com.panasonic.avc.cng.imageapp.debuglogprovider" android:name="com.panasonic.avc.cng.util.DebugLogProvider"/>
+        <provider android:authorities="com.panasonic.avc.cng.imageapp.bluetoothprovider" android:name="com.panasonic.avc.cng.core.bluetooth.BluetoothProvider"/>
+        <provider android:authorities="com.panasonic.avc.cng.imageapp.camerasettingprovider" android:name="com.panasonic.avc.cng.view.camerasetting.CameraSettingProvider"/>
+        <provider android:authorities="com.panasonic.avc.cng.imageapp.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="android.support.v4.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_path"/>
+        </provider>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <receiver android:enabled="true" android:exported="true" android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver" android:permission="android.permission.INSTALL_PACKAGES">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <category android:name="com.panasonic.avc.cng.imageapp"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.google.firebase.iid.FirebaseInstanceIdInternalReceiver"/>
+        <service android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="com.panasonic.avc.cng.imageapp.firebaseinitprovider" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <service android:exported="true" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+    </application>
+</manifest>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:title="@string/setup_picmate_cloud_using" android:key="CloudEnable" android:defaultValue="false" android:summaryOn="@string/setup_on" android:summaryOff="@string/setup_off" />
+    <CheckBoxPreference android:title="@string/setup_picmate_cloud_auto_sync" android:key="CloudAutoSync" android:dependency="CloudEnable" android:defaultValue="false" android:summaryOn="@string/setup_on" android:summaryOff="@string/setup_off" />
+    <CheckBoxPreference android:title="@string/setup_smaope_work_wifi_connecting" android:key="CloudWifiConnecting" android:dependency="CloudEnable" android:defaultValue="true" android:summaryOn="@string/setup_on" android:summaryOff="@string/setup_off" />
+    <CheckBoxPreference android:title="@string/setup_smaope_work_charging" android:key="CloudCharging" android:dependency="CloudEnable" android:defaultValue="true" android:summaryOn="@string/setup_on" android:summaryOff="@string/setup_off" />
+    <ListPreference android:entries="@array/setup_cloudsync_send_picsize_string" android:title="@string/setup_picmate_cloud_picsize_sending" android:key="CloudSendPicsize" android:summary="" android:dependency="CloudEnable" android:defaultValue="PlayPicsizeLarge" android:dialogTitle="@string/setup_picmate_cloud_picsize_sending" android:entryValues="@array/setup_cloudsync_transe_picsize_value" />
+    <ListPreference android:entries="@array/setup_cloudsync_receive_picsize_string" android:title="@string/setup_picmate_cloud_picsize_recieving" android:key="CloudRecievePicsize" android:summary="" android:dependency="CloudEnable" android:defaultValue="PlayPicsizeLarge" android:dialogTitle="@string/setup_picmate_cloud_picsize_recieving" android:entryValues="@array/setup_cloudsync_transe_picsize_value" />
+    <ListPreference android:entries="@array/setup_cloudsync_capacity_over_string" android:title="@string/setup_picmate_cloud_action_capacity_over" android:key="CloudCapaOver" android:summary="" android:dependency="CloudEnable" android:defaultValue="CloudActionConfirm" android:dialogTitle="@string/setup_picmate_cloud_action_capacity_over" android:entryValues="@array/setup_cloudsync_capacity_over_value" />
+    <PreferenceScreen android:title="@string/setup_picmate_cloud_action_confirm_update" android:key="CloudConfirmUpdate" android:dependency="CloudEnable" />
+</PreferenceScreen>

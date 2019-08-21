@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:visibility="visible" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="horizontal" android:id="@id/SlideMenuOpenControlViewGroup" android:background="@drawable/controll_open" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <FrameLayout android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="4.0" />
+                <ImageButton android:id="@id/SlideMenuControlView_btn_open" android:background="#00ffffff" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="8.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/SlideMenuCloseControlViewGroup" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:id="@id/SlideMenuViewGroup" android:background="#ff000000" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="6.0">
+                <include android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/liveview_lumix_mirrorless_control_slidemenu" />
+            </LinearLayout>
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="3.0">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <LinearLayout android:orientation="horizontal" android:id="@id/SlideMenuControlClose" android:background="@drawable/controll_close" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                    <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="2.0" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                        <FrameLayout android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="7.0" />
+                        <ImageButton android:id="@id/SlideMenuControlView_btn_close" android:background="#00ffffff" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.0" />
+                        <FrameLayout android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.0" />
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

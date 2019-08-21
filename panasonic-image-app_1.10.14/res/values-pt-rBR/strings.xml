@@ -1,0 +1,1783 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_google_play_services_enable_button">Ativar</string>
+    <string name="common_google_play_services_enable_text">%1$s só funciona com o Google Play Services ativado.</string>
+    <string name="common_google_play_services_enable_title">Ativar o Google Play Services</string>
+    <string name="common_google_play_services_install_button">Instalar</string>
+    <string name="common_google_play_services_install_text">O app %1$s não funciona sem o Google Play Services, o qual não está instalado no seu dispositivo.</string>
+    <string name="common_google_play_services_install_title">Instalar o Google Play Services</string>
+    <string name="common_google_play_services_notification_ticker">Erro do Google Play Services</string>
+    <string name="common_google_play_services_unknown_issue">O app %1$s está com problemas com o Google Play Services. Tente novamente.</string>
+    <string name="common_google_play_services_unsupported_text">O app %1$s não funciona sem o Google Play Services, o qual não é compatível com seu dispositivo.</string>
+    <string name="common_google_play_services_update_button">Atualizar</string>
+    <string name="common_google_play_services_update_text">%1$s só funciona com uma versão atualizada do Google Play Services.</string>
+    <string name="common_google_play_services_update_title">Atualizar o Google Play Services</string>
+    <string name="common_google_play_services_updating_text">%1$s não funciona sem o Google Play Services, o qual está sendo atualizado no momento.</string>
+    <string name="common_google_play_services_wear_update_text">É necessária uma nova versão do Google Play Services. Ele será atualizado em breve.</string>
+    <string name="common_open_on_phone">Abrir no smartphone</string>
+    <string name="common_signin_button_text">Fazer login</string>
+    <string name="common_signin_button_text_long">Fazer login com o Google</string>
+    <string name="app_name">Image App</string>
+    <string name="app_name_leica">Image Shuttle</string>
+    <string name="av_no_name">Dispositivo AV</string>
+    <string name="baby_monitor">Baby Monitor</string>
+    <string name="babymon_cannot_operation">Esta função não está disponível ao usar a função Baby Monitor.</string>
+    <string name="babymon_cant_regstid">"Não foi possível conectar ao servidor.
+Impossível usar a função de notificação."</string>
+    <string name="babymon_mic_resttime">%02d segundos restantes</string>
+    <string name="bracket_shooted_suspended">Captura da variável de sequênica suspensa.</string>
+    <string name="bracket_shooted_suspended_unable_recharge">Captura da variável de sequência suspensa porque o flash não conseguiu recarregar.</string>
+    <string name="btn_ask_idsync_no">Não copiar</string>
+    <string name="btn_ask_idsync_yes">Copiar</string>
+    <string name="btn_geotag_not_takeover">Não atualizar</string>
+    <string name="btn_geotag_takeover">Atualizar</string>
+    <string name="btn_geotag_takeover_delete">Apagar</string>
+    <string name="btn_phcol_change_frame">Alterar a moldura</string>
+    <string name="btn_phcol_change_photo">Alterar a fotografia</string>
+    <string name="cam_command_msg_check_camera">Verifique a câmera.</string>
+    <string name="cam_command_msg_sending">Comunicando com a câmera...</string>
+    <string name="cam_command_msg_sending_error">Ocorreu um erro durante a comunicação com a câmera.</string>
+    <string name="camera_ap_password">Senha:</string>
+    <string name="camera_ap_ssid">SSID:</string>
+    <string name="cinelike_dolly_zoom">Dolly Zoom</string>
+    <string name="cinelike_slow_quick">Lento/Rápido</string>
+    <string name="cloud_msg_cancel">Cancelar?</string>
+    <string name="cloud_msg_canceled">Cancelado.</string>
+    <string name="cloud_msg_no_update">Não é necessário atualizar.</string>
+    <string name="cloud_msg_update">Atualizar?</string>
+    <string name="cloud_msg_update_error">Falha ao atualizar.</string>
+    <string name="cloud_msg_updated">Atualização concluída.</string>
+    <string name="cloud_msg_updating">Atualizando...</string>
+    <string name="cm_msg_error_cloud_save_local">Algumas imagens não foram salvas por causa de erro.</string>
+    <string name="cm_msg_remain">Tempo restante:</string>
+    <string name="cmn_auto_cloud_backup">Backup autom.</string>
+    <string name="cmn_bluetooth">Bluetooth</string>
+    <string name="cmn_bluetooth_setting">Configuração do Bluetooth</string>
+    <string name="cmn_bluetooth_setting_short">Conf. Bluetooth</string>
+    <string name="cmn_bt_remote_controller">Controlo à distância do obturador</string>
+    <string name="cmn_bt_remote_controller_title">Contr. rem. do obturador</string>
+    <string name="cmn_btn_cancel">Cancelar</string>
+    <string name="cmn_btn_close">Fechar</string>
+    <string name="cmn_btn_detail">Detalhes</string>
+    <string name="cmn_btn_dicision">Ajust.</string>
+    <string name="cmn_btn_end">Sair</string>
+    <string name="cmn_btn_execute">Executar</string>
+    <string name="cmn_btn_execute_short">Exec</string>
+    <string name="cmn_btn_ok">OK</string>
+    <string name="cmn_btn_reset">Reinic.</string>
+    <string name="cmn_btn_save">Salvar</string>
+    <string name="cmn_btn_update">Atualizar</string>
+    <string name="cmn_build_number">Número de compilação</string>
+    <string name="cmn_camera_setting">Câmera- configurações</string>
+    <string name="cmn_camera_setting_copy">Cópia config. câmara</string>
+    <string name="cmn_camera_setting_copy2">"Cópia config.
+câmara"</string>
+    <string name="cmn_camera_setting_copy3">Cópia config. câmara</string>
+    <string name="cmn_camera_setting_delete">Apagar</string>
+    <string name="cmn_camera_setting_rename">Mudança do nome</string>
+    <string name="cmn_camera_setting_save">Salvar configurações</string>
+    <string name="cmn_camera_setting_saved_settings">Configurações da câmera salvas</string>
+    <string name="cmn_camera_setting_send_camera">Enviar para a câmera</string>
+    <string name="cmn_card_protected">O cartão está bloqueado. Desbloquei-o.</string>
+    <string name="cmn_cloud_backup">Backup na nuvem</string>
+    <string name="cmn_cloud_backup1">Backup na nuvem</string>
+    <string name="cmn_cloud_backup_ap_ssid">Informações de conexão do ponto de acesso sem fio (SSID)</string>
+    <string name="cmn_cloud_backup_connect_ap">Pto acesso s/ fio conec.</string>
+    <string name="cmn_cloud_backup_connection_test">Teste de conexão</string>
+    <string name="cmn_cloud_backup_picmate_settings">Configuração da nuvem</string>
+    <string name="cmn_cloud_backup_remove_location_data">Apagar dados de local.</string>
+    <string name="cmn_cloud_backup_send_size">Tamanho</string>
+    <string name="cmn_cloud_backup_send_size_l">L</string>
+    <string name="cmn_cloud_backup_send_size_m">M</string>
+    <string name="cmn_cloud_backup_send_size_org">Original</string>
+    <string name="cmn_cloud_backup_send_size_s">S</string>
+    <string name="cmn_cloud_backup_send_size_vga">VGA</string>
+    <string name="cmn_cloud_backup_start">Iniciar</string>
+    <string name="cmn_cloud_backup_start_backup">Iniciar backup</string>
+    <string name="cmn_cloud_backup_terminate">Cancel.</string>
+    <string name="cmn_cloud_backup_terminate_condition_battery">Cond. Par. (carga bat.)</string>
+    <string name="cmn_connect">Conexão</string>
+    <string name="cmn_connect_mode_qr_code">Cód QR</string>
+    <string name="cmn_connect_mode_wifi">Wi-Fi</string>
+    <string name="cmn_connection_dsc_direct">Direto</string>
+    <string name="cmn_connection_dsc_network">Através da rede</string>
+    <string name="cmn_connection_dsc_wifi_direct">Wi-Fi Direct</string>
+    <string name="cmn_connection_movie_direct">Conexão direta</string>
+    <string name="cmn_connection_movie_network">Conexão do ponto de acesso sem fio</string>
+    <string name="cmn_connection_tethering">Roteador Wi-Fi</string>
+    <string name="cmn_contorl_camera">Operar com a câmera</string>
+    <string name="cmn_digital_still_camera">Câmera Digital</string>
+    <string name="cmn_digital_video_camera">Câmera de Vídeo Digital</string>
+    <string name="cmn_digital_video_camera_wearable">Câmera Portátil</string>
+    <string name="cmn_error_title">Erro</string>
+    <string name="cmn_function_dsc_connect_sp">Disparo Remoto e Visualização</string>
+    <string name="cmn_function_dsc_send_image_camera">Enviar imagens armazenadas na câmera</string>
+    <string name="cmn_function_dsc_send_image_recording">Enviar imagens durante a gravação</string>
+    <string name="cmn_function_movie_remote_control">Controle remoto</string>
+    <string name="cmn_help_url">http://panasonic.jp/support/spn/global/dsc/help/l_link2.1/br-pr/</string>
+    <string name="cmn_help_url_test">http://panasonic.jp/support/spn/global/dsc/help/YN_19102012_l_link2.1/br-pr/</string>
+    <string name="cmn_imageapp_help_url">http://panasonic.jp/support/spn/global/dsc/help/image_app/br-pr/</string>
+    <string name="cmn_imageapp_help_url_test">http://panasonic.jp/support/spn/global/dsc/help/test_1120_image_app/br-pr/</string>
+    <string name="cmn_imageshuttle_help_url">http://www.leica-image-shuttle.help.leica-camera.com/</string>
+    <string name="cmn_imageshuttle_license_html_android">license_android_en</string>
+    <string name="cmn_label_title_nextskipview">Não mostrar esta tela novamente.</string>
+    <string name="cmn_llink_dummy" />
+    <string name="cmn_msg_3box_no_contents_found">Nenhum conteúdo reproduzível foi encontrado.</string>
+    <string name="cmn_msg_3box_skip_play_mp4_a500">"Apenas vídeos nos seguintes formatos podem ser reproduzidos em uma TV.
+“848x480/30p(25p)”
+“848x480/240fps(200fps)”
+“1280x720/30p(25p)”
+“1280x720/120fps(100fps)”"</string>
+    <string name="cmn_msg_3box_skip_play_mp4_vertical">"Apenas vídeos no seguinte formato podem ser reproduzidos em uma TV.
+“640x480/30p”"</string>
+    <string name="cmn_msg_3box_skip_play_mp4_wearable">"Apenas vídeos nos seguintes formatos podem ser reproduzidos em uma TV.
+“848x480/30p(25p)” e “848x480/240fps(200fps)”."</string>
+    <string name="cmn_msg_already_regist">Registrado</string>
+    <string name="cmn_msg_ask_camera_change_rec_mode">Mudado para o modo de gravação usando a câmera.</string>
+    <string name="cmn_msg_camera_changed_rec_mode">Alterado para modo de gravação na câmera.</string>
+    <string name="cmn_msg_cannot_play_3box">Não é possível reproduzir na TV a cena selecionada.</string>
+    <string name="cmn_msg_cannot_play_3box_mp4_60p">Os vídeos em formato MP4 1920x1080/60p (50p) não podem ser reproduzidos em uma TV.</string>
+    <string name="cmn_msg_cannot_play_mp4">O conteúdo MP4 desta câmera não pode ser transmitido em TV.</string>
+    <string name="cmn_msg_check_receive_image">Verificar as imagens de download?</string>
+    <string name="cmn_msg_confirm_app_finish_on_back_pressed">Pressione o botão ourta vez para sair do aplicativo.</string>
+    <string name="cmn_msg_connect_camera">A câmera [%s] está conectada.</string>
+    <string name="cmn_msg_connect_error">Falha na conexão.</string>
+    <string name="cmn_msg_connect_local_mode">"Falha de conexão.
+Iniciar o Modo local."</string>
+    <string name="cmn_msg_delete_all_data">Apagar os dados?</string>
+    <string name="cmn_msg_delete_data">Dados eliminados.</string>
+    <string name="cmn_msg_disconnected">"A conexão caiu.
+Defina a conexão Wi-Fi da câmara novamente."</string>
+    <string name="cmn_msg_disconnected2">A conexão caiu.</string>
+    <string name="cmn_msg_disconnected_and_retry_connect">A câmera não responde. Refaça as configurações de Wi-Fi na câmera ou mova-se para um local onde há melhor recepção das ondas de rádio e toque no botão \"OK \".</string>
+    <string name="cmn_msg_disconnected_and_wait_for_recieve">"Caiu a conexão da câmera ou a gravação foi interrompida.
+Faça a conexão Wi-Fi da câmera outra vez ou copie as imagens."</string>
+    <string name="cmn_msg_disconnected_and_wait_for_recieve_short">"Caiu a conexão da câmera ou a gravação foi interrompida.
+É possível copiar imagens."</string>
+    <string name="cmn_msg_disconnected_dmr">A conexão ao dispositivo de reprodução foi interrompida.</string>
+    <string name="cmn_msg_error_not_internet">"Sem conexão à Internet.
+Conecte-se à Internet."</string>
+    <string name="cmn_msg_error_rec">"Falha ao capturar.
+Verifique a câmera ou o cartão de memória."</string>
+    <string name="cmn_msg_help_error_not_internet">"Impossível carregar a \"Ajuda \" porque o smartphone não está conectado à Internet.
+Conecte-se à Internet."</string>
+    <string name="cmn_msg_jump_snap_warning">Para capturar usando Foto de salto, defina a câmera como \"Única \".</string>
+    <string name="cmn_msg_just_a_moment">Aguarde...</string>
+    <string name="cmn_msg_movie_rec_disable">Captura de vídeo não disponível no momento.</string>
+    <string name="cmn_msg_need_lumix_link">Instale [LUMIX LINK] no seu smartphone/tablet para conectar à câmera selecionada.</string>
+    <string name="cmn_msg_not_change_mode_in_cam_writing">Impossível alterar o modo atual devido a gravação em progresso na câmera.</string>
+    <string name="cmn_msg_not_connect_in_com_recording">A conexão não é possível devido à gravação de vídeo em progresso na câmera.</string>
+    <string name="cmn_msg_not_func_now_camera_recording">Gravação de vídeo com câmera...</string>
+    <string name="cmn_msg_not_func_now_camera_use">Esta função não pode ser usada no momento porque a câmera está realizando uma operação.</string>
+    <string name="cmn_msg_not_func_now_common">Esta função não está disponível no momento.</string>
+    <string name="cmn_msg_not_func_now_movie_recording">Esta função não está disponível durante a gravação de vídeo.</string>
+    <string name="cmn_msg_not_func_now_photo_recording">Esta função não está disponível durante a gravação de imagens.</string>
+    <string name="cmn_msg_not_func_now_receive_image">Esta função não pode ser usada no momento porque está sendo feito o donwload de imagens da câmara.</string>
+    <string name="cmn_msg_not_func_now_regist_image">Esta função não pode ser usada no momento devido ao registro de imagem em progresso.</string>
+    <string name="cmn_msg_not_func_now_selftimer_waitting">Esta função não está disponível ao usar o timer automático.</string>
+    <string name="cmn_msg_not_func_now_shooting">Aguarde...</string>
+    <string name="cmn_msg_not_func_now_speaking">Esta função não está disponível ao usar a função de voz remota.</string>
+    <string name="cmn_msg_not_movie_rec_in_cam_writing">A gravação de vídeo não é possível no momento devido a gravação em progresso na câmera.</string>
+    <string name="cmn_msg_now_camera_use">Operação em progresso na câmera.</string>
+    <string name="cmn_msg_now_camera_use_snapmovie">Esta operação não pode ser realizada quando a função Filme simples da câmera digital está como ON. Defina Filme simples como OFF para usar este aplicativo.</string>
+    <string name="cmn_msg_now_recieve_images_from_camera">Fazendo o download de imagens da câmera...</string>
+    <string name="cmn_msg_now_regist_image">Registrando imagens recebidas...</string>
+    <string name="cmn_msg_only_movie">Apenas vídeos MP4</string>
+    <string name="cmn_msg_only_picture">Apenas fotos</string>
+    <string name="cmn_msg_picmate_cloud_warning">O upload para a Pasta nuvem está disponível, depois da definição Sincronização nuvem ter sido realizada em dispositivos passíveis de download, como PC ou smartphone.</string>
+    <string name="cmn_msg_picmate_cloud_warning2">Uma pasta em nuvem guarda as imagens transferidas durante 30 dias (até 1000 imagens). As imagens transferidas são apagadas automaticamente 30 dias após a transferência.</string>
+    <string name="cmn_msg_picmate_cloud_warning3">Quando o download de imagens a partir de uma pasta em nuvem para todos os aparelhos especificados estiver completo, as imagens podem ser apagadas da pasta em nuvem, mesmo antes do final dos 30 dias após a transferência.</string>
+    <string name="cmn_msg_picture_shutter_disable">Captura de imagem não disponível no momento.</string>
+    <string name="cmn_msg_qr_error">Não foi possível ler o código QR.</string>
+    <string name="cmn_msg_read_qr_code">Posicione o código QR no quadro e capture-o.</string>
+    <string name="cmn_msg_remain_60min_or_less">Capacidade insuficiente no cartão. São necessários no mínimo 60 minutos restantes para fazer a gravar neste modo.</string>
+    <string name="cmn_msg_remain_zero">"Memória insuficiente.
+Verifique a câmera."</string>
+    <string name="cmn_msg_sd_unset">"Sem cartão de memória.
+Verifique a câmera."</string>
+    <string name="cmn_msg_server_multi">Selecione a câmera a ser conectada.</string>
+    <string name="cmn_msg_server_zero">"Impossível conectar à câmera.
+Verifique se a câmera a ser conectada está selecionada nas configurações de Wi-Fi."</string>
+    <string name="cmn_msg_server_zero_2">Não é possível usar esta função no momento.</string>
+    <string name="cmn_msg_server_zero_2_old">Não é possível usar esta função no momento. Verifique as configurações de Wi-Fi da câmera e do smartphone e selecione a câmera em \"Conf. dest. conexão \".</string>
+    <string name="cmn_msg_server_zero_old">"Impossível detectar a câmera a ser conectada.
+Selecione a câmera a ser conectada a partir do menu."</string>
+    <string name="cmn_msg_server_zero_os_wifi">Verifique as configurações de Wi-Fi do dispositivo para confirmar que a câmera a ser conectada está selecionada.</string>
+    <string name="cmn_msg_wifi_connect_longtime">A conexão pode demorar vários minutos.</string>
+    <string name="cmn_msg_wifi_multi">Selecione um ponto de acesso a ser conectado.</string>
+    <string name="cmn_network">Rede</string>
+    <string name="cmn_network_ap_camera_id">SSID</string>
+    <string name="cmn_network_camera_ssid">SSID</string>
+    <string name="cmn_network_live_camera_id">SSID</string>
+    <string name="cmn_network_wps">WPS</string>
+    <string name="cmn_next">Avançar</string>
+    <string name="cmn_no">NÃO</string>
+    <string name="cmn_notification_title">Esta é uma notificação do Image App.</string>
+    <string name="cmn_notification_title_leica">Esta é uma notificação do Image Shuttle.</string>
+    <string name="cmn_now_wait_camera_response">Aguardando resposta da câmera...</string>
+    <string name="cmn_off">DESLIGADO</string>
+    <string name="cmn_on">LIGADO</string>
+    <string name="cmn_particle_high">Alta</string>
+    <string name="cmn_particle_low">Baixa</string>
+    <string name="cmn_particle_mid">Padrão</string>
+    <string name="cmn_particle_off">Desligado</string>
+    <string name="cmn_pict_saved">As fotografias foram salvas.</string>
+    <string name="cmn_registered_camera">Câmera registrada</string>
+    <string name="cmn_registerring_camera">Câmera ativada para ser registrada</string>
+    <string name="cmn_remain_battery_1">1 cap. p/ bat. rest.</string>
+    <string name="cmn_remain_battery_2">2 cap. p/ bat. rest.</string>
+    <string name="cmn_remote_watch">Monitor doméstico</string>
+    <string name="cmn_search">Procurar</string>
+    <string name="cmn_settings">Ajustes</string>
+    <string name="cmn_single_shoot">Única</string>
+    <string name="cmn_skip">Pular</string>
+    <string name="cmn_slepp">Suspensão</string>
+    <string name="cmn_smart_app_url">http://panasonic.jp/pss/</string>
+    <string name="cmn_standby">Em espera</string>
+    <string name="cmn_stop_reason_value">[%d]</string>
+    <string name="cmn_unregist_camera">Cancelar registro</string>
+    <string name="cmn_waiting_transfer">Aguard. transf. imagem</string>
+    <string name="cmn_wifi">Wi-Fi</string>
+    <string name="cmn_wifi_setting_short">Conf. Wi-Fi</string>
+    <string name="cmn_yes">SIM</string>
+    <string name="cnm_msg_please_talk">Fale</string>
+    <string name="connect_msg_nfc_reset_history">Para conectar à câmera, comece a partir do início.</string>
+    <string name="content_type_avchd">AVCHD</string>
+    <string name="content_type_avchd_3d">AVCHD-3D</string>
+    <string name="content_type_avchd_50i">1080/50i</string>
+    <string name="content_type_avchd_50p">1080/50p</string>
+    <string name="content_type_avchd_60i">1080/60i</string>
+    <string name="content_type_avchd_60p">1080/60p</string>
+    <string name="content_type_avchd_sbs">SbS</string>
+    <string name="content_type_jpeg">JPEG</string>
+    <string name="content_type_mp4">MP4/iFrame</string>
+    <string name="content_type_mp4_only">MP4</string>
+    <string name="demo_msg_nfc_explain">Touch the NFC mark on the camera with your smartphone.</string>
+    <string name="easy_setting_confirm_at_camera">[Confirmação na câmera]</string>
+    <string name="easy_setting_connection_test_on_camera">(3) Executar a função \"Teste de conexão \" na câmera.</string>
+    <string name="easy_setting_current_time_camera">Hora atual na câmera</string>
+    <string name="easy_setting_current_time_sp">Hora atual no smartphone</string>
+    <string name="easy_setting_id_camera">A identificação de login LUMIX CLUB já registrada nesta câmera</string>
+    <string name="easy_setting_live_cast">Live Cast</string>
+    <string name="easy_setting_msg_already_regist_id">Uma identificação de login LUMIX CLUB já está registrada nesta câmera.</string>
+    <string name="easy_setting_msg_finish_setting">As funções de conexão Wi-Fi do smartphone à câmera foram inicializadas.</string>
+    <string name="easy_setting_msg_need_operation">Para usar a função de Live Cast, as seguintes operações adicionais também devem ser realizadas.</string>
+    <string name="easy_setting_msg_need_regist">* Para usar as funções Live Cast, Baby Monitor e DLNA, é necessário registrar primeiro.</string>
+    <string name="easy_setting_msg_need_regist_id_for_use">* Se ainda não tiver uma identificação de login LUMIX CLUB e uma senha, use um PC ou outro dispositivo para obtê-las antes.</string>
+    <string name="easy_setting_msg_regist_access_point">Registra o ponto de acesso na câmera.</string>
+    <string name="easy_setting_msg_regist_id_to_camera">Registra a sua identificação de login LUMIX CLUB e senha na câmera.</string>
+    <string name="easy_setting_msg_skip_or_next_syncronize">Se os dispositivos já estiverem sincronizados, pode saltar este passo. Para sincronizar os dispositivos novamente, toque em Avançar.</string>
+    <string name="easy_setting_msg_skip_or_next_use">Para continuar usando a identificação de login, toque em Pular. Para alterá-la, toque em Avançar.</string>
+    <string name="easy_setting_msg_ssid_exist">O mesmo SSID foi registrado anteriormente.</string>
+    <string name="easy_setting_msg_syncronize_time">O relógio do smartphone e o da câmera serão sincronizados.</string>
+    <string name="easy_setting_regist_access_point">Registro do ponto de acesso</string>
+    <string name="easy_setting_regist_access_point_for_use">Se usar um ponto de acesso, registre-o antes.</string>
+    <string name="easy_setting_regist_ustream_id">(1) Obter uma identificação USTREAM</string>
+    <string name="easy_setting_select_item">Selecione o item que deseja configurar.</string>
+    <string name="easy_setting_setting_at_pc">[Configurações realizadas através de um PC ou outro dispositivo]</string>
+    <string name="easy_setting_syncronize_time">Sincronização do relógio</string>
+    <string name="easy_setting_ustream_setting_at_picmate">Inicie sessão no LUMIX CLUB, selecione Configuração da conexão de serviços de Web e defina USTREAM.</string>
+    <string name="easy_setting_web_setting_at_picmate">(2) Defina a Conexão de serviços de Web (USTREAM) no LUMIX CLUB</string>
+    <string name="easy_wifi_setting_ap_msg">"Escolha o ponto de aceso para conectar.
+Se o ponto de acesso ainda não estiver registrado, selecione a primeira fileira livre disponível (acima) para registrar o ponto de acesso sem fio."</string>
+    <string name="easywifi_clock_camtime_known">Tempo desconhecido</string>
+    <string name="easywifi_mimamori_invalidatedata">A informação obtida da câmera é incorreta.</string>
+    <string name="easywifi_picmate_overwrite">"O ID de login está registrado na câmera.
+Deseja substituí-lo?"</string>
+    <string name="easywifi_picmate_setting">Configurando a identificação do LUMIX CLUB...</string>
+    <string name="easywifi_setting_ap_comment">"Registra o ponto de acesso na câmera.
+
+Se usar um ponto de acesso, registre-o antes.
+
+* Para usar as funções Live Cast, Baby Monitor e DLNA, é necessário registrar primeiro."</string>
+    <string name="easywifi_setting_ap_comment_for_wearable">"Registra o ponto de acesso na câmera.
+
+Se usar um ponto de acesso, registre-o antes.
+
+* Para usar as funções Canal vivo e DLNA, é necessário registrar primeiro."</string>
+    <string name="easywifi_setting_ap_comment_for_wearable_no_livecast">"Registra o ponto de acesso na câmera.
+
+Se usar um ponto de acesso, registre-o antes.
+
+* Para usar as funções DLNA, é necessário registrar primeiro."</string>
+    <string name="easywifi_setting_clock_comment">"O relógio do smartphone e o da câmera serão sincronizados.
+
+Hora atual na câmera 
+%1$s
+
+Hora atual no smartphone
+%2$s
+
+Se os dispositivos já estiverem sincronizados, pode saltar este passo. Para sincronizar os dispositivos novamente, toque em Avançar."</string>
+    <string name="easywifi_setting_mimamori_title">Configurações do Monitor doméstico</string>
+    <string name="easywifi_setting_nodata">A obtenção da informação da câmera falhou.</string>
+    <string name="easywifi_setting_picmate_comment">"Registra a sua identificação de login LUMIX CLUB e senha na câmera.
+
+* Se ainda não tiver uma identificação de login LUMIX CLUB e uma senha, use um PC ou outro dispositivo para obtê-las antes.
+
+%s
+
+Para continuar usando a identificação de login, toque em Pular. Para alterá-la, toque em Avançar."</string>
+    <string name="easywifi_setting_picmate_login_invalidate">Digite o seu ID de login e senha.</string>
+    <string name="easywifi_setting_ustream_comment">"As funções de conexão Wi-Fi do smartphone à câmera foram inicializadas.
+
+Para usar a função de Canal vivo, as seguintes operações adicionais também devem ser realizadas. 
+
+[Configurações realizadas através de um PC ou outro dispositivo]
+(1) Obter uma identificação USTREAM 
+
+(2) Defina a Conexão de serviços de Web (USTREAM) no LUMIX CLUB
+Inicie sessão no LUMIX CLUB, selecione Configuração da conexão de serviços de Web e defina USTREAM.
+
+[Confirmação na câmera]
+(3) Executar a função \"Teste de conexão \" na câmera."</string>
+    <string name="easywifi_setting_ustream_comment2">"As funções de conexão Wi-Fi do smartphone à câmera foram inicializadas.
+
+Para usar a função de Canal vivo, as seguintes operações adicionais também devem ser realizadas. 
+
+[Configurações realizadas através de um PC ou outro dispositivo]
+(1) Obter uma identificação USTREAM 
+
+(2) Defina a Conexão de serviços de Web (USTREAM) no LUMIX CLUB
+Inicie sessão no LUMIX CLUB, selecione Configuração da conexão de serviços de Web e defina USTREAM.
+"</string>
+    <string name="easywifi_setting_ustream_title">Configurações USTREAM</string>
+    <string name="explain_menu_privacy_notice">\"Menu \" -> \"Função do aplicativo \" -> \"Condições de uso \" -> \"Enviar automaticamente \"</string>
+    <string name="exposure_compensation">Compens. exposição</string>
+    <string name="folder_type_dsc">LUMIX</string>
+    <string name="folder_type_dsc_sd1">LUMIX(SD1)</string>
+    <string name="folder_type_dsc_sd2">LUMIX(SD2)</string>
+    <string name="folder_type_leica_dsc">Leica</string>
+    <string name="folder_type_movie">Câmera de vídeo</string>
+    <string name="folder_type_movie_mem">Câmera de vídeo (memória integrada)</string>
+    <string name="folder_type_movie_sd">Câmera de vídeo (SD)</string>
+    <string name="func_app_boot_android">É necessário acessar a Internet para iniciar [%s].</string>
+    <string name="func_app_btn_boot">Iniciar app</string>
+    <string name="func_app_btn_google_play">Ir para Google Play</string>
+    <string name="func_app_install_android">É necessário acessar a Internet para instalar [%s].</string>
+    <string name="func_app_need_reboot">Se o smartphone estiver conectado diretamente à câmera, mude para outro modo de conexão que permita acesso à Internet e inicie o app outra vez.</string>
+    <string name="func_auto_phcol_detail">A fotografia é criada combinando-se as melhores capturas as quais são selecionadas automaticamente dentre as cenas gravadas pela videocâmara.</string>
+    <string name="func_geotag_detail">As informações de localização do smartphone/tablet serão adicionadas à imagem.</string>
+    <string name="func_guidance_picture_send">Transferir imagem</string>
+    <string name="func_guidance_remote_controll">Operação remota</string>
+    <string name="func_highlight_detail">Você pode extrair seleções de várias cenas, reproduzi-las e salvá-las como um vídeo curto.</string>
+    <string name="func_homemonitor_detail">Você pode monitorar a sua residência enquanto está fora de casa.</string>
+    <string name="func_item_auto_phcol">Colagem de fotos selecionadas</string>
+    <string name="func_item_auto_phcol_2">Destacar colagem de fotos</string>
+    <string name="func_item_geotag">Geolocalização</string>
+    <string name="func_item_highlight">Realçar Reprod.</string>
+    <string name="func_item_highlight_2">Realçar Reprod.</string>
+    <string name="func_item_phcol">Colagem de fotos</string>
+    <string name="func_item_phcol_2">Colagem de fotos</string>
+    <string name="func_item_picmate">LUMIX CLUB PicMate</string>
+    <string name="func_item_smartapp">Panasonic SmartApp</string>
+    <string name="func_item_smartapp_2">Panasonic SmartApp</string>
+    <string name="func_item_snap_movie">Filme simples</string>
+    <string name="func_item_snap_movie_2">Filme simples</string>
+    <string name="func_item_stopmotion">Assistente de animação Stop Motion</string>
+    <string name="func_phcol_detail">É possível criar uma única imagem combinando as suas fotografias preferidas.</string>
+    <string name="func_picmate_detail">Um site de compartilhamento de fotografias e vídeos onde é possível “organizar, compartilhar e exibir” fotografias e vídeos gravados com a câmera digital</string>
+    <string name="func_smartapp_detail" />
+    <string name="func_snapmovie_detail">É possível combinar os vídeos gravados com a câmera no modo Filme simples</string>
+    <string name="func_stopmotion_detail">Você pode usar uma fotografia anterior como o fundo da próxima fotografia e tirar uma fotografia enquanto visualiza a de fundo</string>
+    <string name="func_tab_btn">Função</string>
+    <string name="func_transfer_all">Tudo</string>
+    <string name="func_transfer_auto">Transferência em lote</string>
+    <string name="func_transfer_auto_days">Últimos %d dias</string>
+    <string name="func_transfer_auto_today">Hoje</string>
+    <string name="func_transfer_only_movie">Apenas vídeos</string>
+    <string name="func_transfer_only_picture">Apenas fotos</string>
+    <string name="func_transfer_picture_movie">Fotos e vídeos</string>
+    <string name="func_transfer_select">Transferir a seleção</string>
+    <string name="geotag_btn_allow_send_gps_data_to_camera">Enviar dados</string>
+    <string name="geotag_btn_allow_synctime_with_camera">Sincronizar</string>
+    <string name="geotag_btn_allow_writting_to_picture">Gravar</string>
+    <string name="geotag_btn_gps_logging_off">Desativar geotagging</string>
+    <string name="geotag_btn_gps_logging_on">Ativar geotagging</string>
+    <string name="geotag_button_delete_gps">Apagar</string>
+    <string name="geotag_button_gps_send_all">Envio em lote</string>
+    <string name="geotag_button_send_geotag">Enviar dados localização</string>
+    <string name="geotag_button_sync_time">Sinc. hora</string>
+    <string name="geotag_cell_gps_worklog">Histórico de operação</string>
+    <string name="geotag_cell_interval">Intervalo de registro</string>
+    <string name="geotag_cell_interval_15sec">15 seg</string>
+    <string name="geotag_cell_interval_1sec">1 seg</string>
+    <string name="geotag_cell_interval_30sec">30 seg</string>
+    <string name="geotag_cell_interval_5sec">5 seg</string>
+    <string name="geotag_cell_interval_60sec">60 seg</string>
+    <string name="geotag_cell_save_gps">Grav. inf. local.</string>
+    <string name="geotag_label_gps_logging_disable">Impossível acessar dados localização</string>
+    <string name="geotag_label_gps_logging_enable">Acessando dados localização…</string>
+    <string name="geotag_label_gps_logging_off">Geotagging desativado</string>
+    <string name="geotag_label_gps_logging_on">Geotagging ativado…</string>
+    <string name="geotag_label_gps_nfc_touch">Enviar NFC</string>
+    <string name="geotag_label_lastsynctime">Hora da última sincronização:</string>
+    <string name="geotag_msg_ask_write_to_picture">Gravar a localização atual no aquivo de imagem?</string>
+    <string name="geotag_msg_camera_error">A câmera conectada não suporta a função de Histórico de localização.</string>
+    <string name="geotag_msg_cancel_write_to_picture">"O processo de gravação foi cancelado.
+Os dados localização foram transferidos para a câmera."</string>
+    <string name="geotag_msg_cant_send_gpsdata">Impossível enviar os dados de localização.</string>
+    <string name="geotag_msg_error_write_to_picture">Falha ao gravar os dados localização.</string>
+    <string name="geotag_msg_gps_setting">"Para ativar o Histórico de localização, a função GPS deve estar ativada.
+Ativar a função GPS?"</string>
+    <string name="geotag_msg_gps_setting_off">"O histórico de localização será desativado.
+Alterar a configuração da função GPS também?"</string>
+    <string name="geotag_msg_if_you_start_send_gps_data">A câmera conectada deve ser compatível com Histórico localização. Enviar dados localização?</string>
+    <string name="geotag_msg_if_you_start_synctime">A câmera conectada deve ser compatível com Histórico localização. Executar Sincronização hora?</string>
+    <string name="geotag_msg_now_write_to_picture">Gravando dados localização…</string>
+    <string name="geotag_msg_sdcard_is_protected_gps">O cartão SD está protegido. Desative a proteção.</string>
+    <string name="geotag_msg_sync_cancel">Cancelada a sincronização da hora.</string>
+    <string name="geotag_msg_sync_error">Falha ao sincronizar a hora.</string>
+    <string name="geotag_title">Geolocalização</string>
+    <string name="geotag_title_label_delete_gps_select">"Dados de localização enviados.
+Apagar os dados de localização?"</string>
+    <string name="geotag_title_label_send_gps_now">Enviando os dados de localização...</string>
+    <string name="geotag_title_label_sync_time_now">Sincronizando a hora...</string>
+    <string name="geotag_worklog_savepointnum">Número de históricos de localização:</string>
+    <string name="geotag_worklog_status_delege_gps_data">Dados de localização excluídos.</string>
+    <string name="geotag_worklog_status_error_gps">Histórico da localização interrompido inesperadamente.</string>
+    <string name="geotag_worklog_status_error_send_gps_data">Falha na transmissão dos dados da localização.</string>
+    <string name="geotag_worklog_status_error_synctime">Sincronização hora falhou.</string>
+    <string name="geotag_worklog_status_error_write_to_camera">Leitura dos dados localização falhou.</string>
+    <string name="geotag_worklog_status_off">“Gravar informações da localização” está desativado.</string>
+    <string name="geotag_worklog_status_on">“Gravar informações da localização” está ativado.</string>
+    <string name="geotag_worklog_status_send_gps_data">Dados da localização enviados à câmera.</string>
+    <string name="geotag_worklog_status_synctime">Sincronização hora concluída.</string>
+    <string name="geotag_worklog_status_write_to_camera">Leitura dos dados localização concluída.</string>
+    <string name="giotag_msg_no_gps_function">Impossível usar a função GPS com este aparelho.</string>
+    <string name="highlight_duration_180sec">APROX. 3 MIN.</string>
+    <string name="highlight_duration_90sec">APROX. 90 SEG.</string>
+    <string name="highlight_duration_none">AUTOMÁTICO</string>
+    <string name="highlight_effect_clasical">CLÁSSICA</string>
+    <string name="highlight_effect_dynamic">DINÂMICO</string>
+    <string name="highlight_effect_natural">NATURAL</string>
+    <string name="highlight_effect_off">DESATIVAR</string>
+    <string name="highlight_effect_pop">POP</string>
+    <string name="highlight_option_effect">EFEITO</string>
+    <string name="highlight_option_playtime">Tempo reprod</string>
+    <string name="highlight_option_priority">Prior detec face</string>
+    <string name="highlight_priority_off">DESATIVAR</string>
+    <string name="highlight_priority_on">ATIVAR</string>
+    <string name="mgs_vrec_stop_write">A gravação foi interrompida devido a um erro de escrita.</string>
+    <string name="mic_level_setting_title">POZIOM MIC</string>
+    <string name="movieslideshow_error_bgmcheck">Não é possível usar este arquivo para criar Realçar.</string>
+    <string name="movieslideshow_error_bgmcheck_copy_protected">Não é possível usar este arquivo para criar Realçar, pois o seu conteúdo está protegido por direitos autorais.</string>
+    <string name="movieslideshow_option_bgm">Música de fundo</string>
+    <string name="movieslideshow_option_bgm_original">Fonte sonora</string>
+    <string name="movieslideshow_option_bgm_preset">Predefinições</string>
+    <string name="movieslideshow_option_bgm_setting">Config. som</string>
+    <string name="movieslideshow_save_format">Formato de armazenamento</string>
+    <string name="movieslideshow_save_format_mp4high">MP4/alta qualidade de imagem</string>
+    <string name="movieslideshow_save_format_mp4low">MP4/baixa qualidade de imagem</string>
+    <string name="movieslideshow_setting_bgm">Quando ativado, é possível especificar a música de fundo e o tempo de execução.</string>
+    <string name="movieslideshow_setting_title">Quando ativado, é possível especificar a imagem título no tempo de execução.</string>
+    <string name="movieslideshow_title_picture">Imagem título</string>
+    <string name="movieslideshow_title_settings">Configurações do título</string>
+    <string name="movieslideshow_warning_bgm">Nenhum arquivo de música foi selecionado. Tem certeza que deseja criar Realçar sem escolher um arquivo de música?</string>
+    <string name="movieslideshow_warning_picture">Não foi selecionada nenhuma imagem. Deseja criar Realces sem definir uma imagem título?</string>
+    <string name="msg_4k_photo_marking_limit_over">Atingiu o número máximo de 40 Marcadores, não é possível definir mais.</string>
+    <string name="msg_4kprebrst_to_4kbrst">"Movimento parou-câmara mudada para modo de disp. contínuo 4K.
+
+Aguarde que a câmara arrefeça."</string>
+    <string name="msg_6kprebrst_to_6kbrst">"Movimento parou-câmara mudada para modo de disp. contínuo 6K.
+
+Aguarde que a câmara arrefeça."</string>
+    <string name="msg_access_number_incomplete">Use 4 dígitos para o número de acesso</string>
+    <string name="msg_address_number_incomplete">Use 16 dígitos para o número do endereço</string>
+    <string name="msg_ask_copy_picmate_id_to_app">"O ID de login da câmera está definido. 
+Deseja usar o ID de login da câmera para este aplicativo também?"</string>
+    <string name="msg_ask_copy_picmate_id_to_camera">"O ID de login da câmera não está definido. 
+Deseja usar o mesmo ID de login deste aplicativo?"</string>
+    <string name="msg_ask_copy_snapmovie_previous">Copiar o(s) vídeo(s) curto(s) gravado(s) há %d dia(s) no modo Filme simples?</string>
+    <string name="msg_ask_copy_snapmovie_today">Copiar o(s) vídeo(s) curto(s) gravado(s) hoje no modo Filme simples?</string>
+    <string name="msg_ask_create_stopmotion_video_now">Criar vídeo agora?</string>
+    <string name="msg_ask_create_stopmotion_video_withtime">"Criar um vídeo?
+Isso levará cerca de %d minutos."</string>
+    <string name="msg_ask_delete_all_contents">Eliminar os arquivos da câmera exibidos no momento?</string>
+    <string name="msg_ask_delete_all_contents_with_protect">Eliminar os arquivos da câmera exibidos no momento? (Os arquivos protegidos não serão excluídos.)</string>
+    <string name="msg_ask_delete_setting">Eliminar todas as configurações?</string>
+    <string name="msg_ask_idsync_from_camera">A identificação de login LUMIX CLUB está registrada na câmera. Copiar a identificação de login LUMIX CLUB da câmera para este aplicativo?</string>
+    <string name="msg_ask_idsync_to_camera">A identificação de login LUMIX CLUB está registrada neste aplicativo. Copiar a identificação de login LUMIX CLUB deste aplicativo para a câmera conectada?</string>
+    <string name="msg_ask_idsync_to_camera2">A identificação de login LUMIX CLUB está registrada na câmera. Copiar a identificação de login LUMIX CLUB deste aplicativo para a câmera conectada?</string>
+    <string name="msg_ask_picjump_setting">"As configurações de“Compartilhamento de imagens” não foram feitas .
+Fazer agora?"</string>
+    <string name="msg_ask_picjump_setting_yes">Fazer as configurações agora</string>
+    <string name="msg_ask_picmate_id_overwrite">Registrar o ID de login na câmera?</string>
+    <string name="msg_ask_quit_stopmotion">Finalizar disparo stop motion?</string>
+    <string name="msg_ask_snapmovie_save_file">Combinar os vídeos e salvar?</string>
+    <string name="msg_ask_stopmotion_use_prev_setting">Usar a mesma qualidade e relação de aspecto da imagem que as da última gravação?</string>
+    <string name="msg_assert_temperature_warning">A conexão Wi-Fi será interrompida dentro de alguns minutos devido a superaquecimento da câmera.</string>
+    <string name="msg_auto_transfer_connect_wifi">Conectar a câmera via Wi-Fi para receber imagens da câmera (transferência automática de imagens)?</string>
+    <string name="msg_bt_remote_controller_cannot_use_for_autosend">Contr. rem. do obturador não pode ser usado quando a câmera estiver na transferência automática de imagens.</string>
+    <string name="msg_bt_remote_controller_sw_on">Ligue o interruptor de alimentação da câmera.</string>
+    <string name="msg_bt_remote_controller_wifi_confirm">"Contr. rem. do obturador não pode ser usado quando a câmera estiver conectada à Wi-Fi. 
+Terminar a conexão Wi-Fi da câmera?"</string>
+    <string name="msg_bt_smart_phone_name">Nome do smartphone</string>
+    <string name="msg_bt_smart_phone_name_explain">O nome do smartphone exibido na câmera pode ser alterado.</string>
+    <string name="msg_bt_smart_phone_name_too_long">O nome inserido para o smartphone é longo demais.</string>
+    <string name="msg_camera_connecting_to_other">A câmera está estabelecendo uma conexão com outro smartphone ou tablet.</string>
+    <string name="msg_camera_initialize_finished">As configurações da câmera conectada foram inicializadas.</string>
+    <string name="msg_camera_no_battery">A bateria da câmera está fraca. A câmera será desligada.</string>
+    <string name="msg_camera_not_registered_for_no_connected_wifi">"Não foi possível conectar ao ponto de acesso. 
+O registro não foi concluído."</string>
+    <string name="msg_camera_not_registered_for_user_refused">"Conexão rejeitada pela câmera. 
+O registro não foi concluído."</string>
+    <string name="msg_camera_numreset_finished">O número foi restaurado.</string>
+    <string name="msg_camera_registered">O registro foi concluído.</string>
+    <string name="msg_camera_setting_communcation_error">"Não foi possível realizar a comunicação com a câmera. 
+Reiniciar."</string>
+    <string name="msg_camera_setting_limit_over">"Os dados não podem mais ser salvos. 
+Exclua as configurações de câmera salvas."</string>
+    <string name="msg_cancel_all">Cancelar tudo?</string>
+    <string name="msg_cannnot_delete_sd_protected">O cartão SD está protegido. Desative a proteção.</string>
+    <string name="msg_cannnot_execute_because_content_protected">Não é possível realizar esta operação porque a imagem está protegida. Desproteja a imagem primeiro.</string>
+    <string name="msg_cannnot_execute_because_content_short">Não é possível usar esta função para gravação de imagens inferior a 3 segundos.</string>
+    <string name="msg_cannnot_execute_no_account">Esta função não está disponível porque não há identificação de login LUMIX CLUB registrada.</string>
+    <string name="msg_cannnot_execute_no_internet">Esta função não está disponível porque não há conexão à Internet.</string>
+    <string name="msg_cannnot_execute_no_internet2">Esta função não está disponível quando conectado diretamente à câmera ou se não houver conexão à Internet.</string>
+    <string name="msg_cannnot_picture_jump">Esta função não está disponível no momento.</string>
+    <string name="msg_cannnot_picture_jump_no_data">As configurações de“Compartilhamento de imagens” não estão registradas.</string>
+    <string name="msg_cannnot_regist_picture_jump_sns">Impossível registrar, pois a certificação está incompleta.</string>
+    <string name="msg_cannnot_split_delete_cur_position">Impossível a eliminação parcial no momento.</string>
+    <string name="msg_cannnot_up_down_because_wps">Não é possível alterar a ordem de prioridade do destino de conexão definida usando WPS.</string>
+    <string name="msg_cannot_action_camera_preparation">Não é possível usar esta função no momento porque está sendo feita a manutenção no cartão da câmera.</string>
+    <string name="msg_cannot_communcation_camera_with_pairing">"Não foi possível realizar a comunicação com a câmara.
+Se emparelhar foi concluído na câmara, liberte emparelhar e comece novamente."</string>
+    <string name="msg_cannot_communcation_camera_without_pairing">Não foi possível realizar a comunicação com a câmera. Verifique se o emparelhamento foi cancelado na câmera.</string>
+    <string name="msg_cannot_communicate_camera">"Não foi possível realizar a comunicação com a câmera.
+Selecione-a novamente."</string>
+    <string name="msg_cannot_connect_ap_with_bt_tethering">Não é possível conectar a um ponto de acesso durante a conexão do Bluetooth.</string>
+    <string name="msg_cannot_connect_camera_for_clear_pairing">A câmera não pode ser conectada pois o \"Emparelhamento \" não foi configurado pela câmera. Registre a câmera novamente.</string>
+    <string name="msg_cannot_create_video_rec_two_sd">Impossível criar um vídeo pois a gravação divide-se por dois cartões SD.</string>
+    <string name="msg_cannot_execute_sd_card_error">Impossível usar esta função devido a problemas com o cartão SD.</string>
+    <string name="msg_cannot_execute_sd_card_under_restoration">Não é possível usar esta função porque o cartão SD está sendo reparado.</string>
+    <string name="msg_cannot_format_no_card_inserted">Não há um cartão SD inserido na câmera.</string>
+    <string name="msg_cannot_format_sd_card_error">Impossível fazer a formatação devido a problemas com o cartão SD.</string>
+    <string name="msg_cannot_format_sd_card_protected">O cartão SD está protegido. Desative a proteção.</string>
+    <string name="msg_cannot_format_sd_card_under_restoration">Impossível fazer a formatação, pois o cartão SD está sendo reparado.</string>
+    <string name="msg_cannot_picture_jump_not_support_content">Esta função não está disponível porque o formato é incompatível.</string>
+    <string name="msg_cannot_read_camera_preparation">Não foi possível ler o conteúdo porque está sendo feita a manutenção no cartão da câmera.</string>
+    <string name="msg_cannot_record_video_sdhc_sdxc">Gravar um vídeo com uma gravação de cópia de segurança requer a utilização de dois cartões SD idênticos.</string>
+    <string name="msg_cannot_regist_camera_for_limit_over">"A câmera não pode ser mais registrada. 
+Cancele as câmeras registradas."</string>
+    <string name="msg_cannot_restart_remote_wakeup">"Devido ao estado da câmera, esta função não poderá ser utilizada.
+Certifique-se de que a câmera não esteja em operação.
+Quando estiver conectado à câmera via Wi-Fi, verifique o ponto de acesso da conexão nos ajustes de Wi-Fi."</string>
+    <string name="msg_cannot_switch_current_sd">Impossível trocar.</string>
+    <string name="msg_changed_target_content_highlight">Alterado para vídeos que podem ser usados com a função Realçar a Reprodução.</string>
+    <string name="msg_changed_target_content_phcol">Alterado para vídeos que podem ser usados com a função Colagem de fotos selecionadas.</string>
+    <string name="msg_cloud_backup_ble_disconnect">A conexão do Bluetooth com a câmera caiu.</string>
+    <string name="msg_cloud_backup_camera_busy">Quando a câmera estiver funcionando, esta função não poderá ser utilizada.</string>
+    <string name="msg_cloud_backup_camera_busy_remote">Terminar a conexão Wi-Fi da câmera.</string>
+    <string name="msg_cloud_backup_cannot_start">O backup não pode ser iniciado</string>
+    <string name="msg_cloud_backup_communicate_fail">Não foi possível realizar a comunicação com a câmera.</string>
+    <string name="msg_cloud_backup_communication_error">"Não foi possível realizar a comunicação com a câmera. 
+Selecione-a novamente."</string>
+    <string name="msg_cloud_backup_conection_test_cancel">Teste de conexão cancelado.</string>
+    <string name="msg_cloud_backup_conection_test_fail">Teste de conexão falhou.</string>
+    <string name="msg_cloud_backup_conection_test_success">Teste de conexão concluído.</string>
+    <string name="msg_cloud_backup_conection_test_testing_android">Testando a conexão...(%1$d/%2$d)</string>
+    <string name="msg_cloud_backup_doing">Backup na nuvem pela câmera em andamento...</string>
+    <string name="msg_cloud_backup_finish">Backup na nuvem concluído pela câmera.</string>
+    <string name="msg_cloud_backup_finish_images">[%d foto(s)]</string>
+    <string name="msg_cloud_backup_no_ap">O ponto de acesso não foi registrado na câmera. Registre o ponto de acesso.</string>
+    <string name="msg_cloud_backup_not_support">O backup não está suportado</string>
+    <string name="msg_cloud_backup_not_working">O backup está parando...</string>
+    <string name="msg_cloud_backup_setting">"Faça o backup das imagens da câmera para a nuvem através do ponto de acesso. 
+ Para definir as configurações para o backup na nuvem, ligue a fonte de energia da câmera e conecte-se através do Bluetooth."</string>
+    <string name="msg_cloud_backup_setting_old">"Faça o backup das imagens da câmera para a nuvem através do ponto de acesso. 
+Para definir as configurações para o backup na nuvem, ligue a fonte de energia da câmera."</string>
+    <string name="msg_cloud_backup_start">Backup na nuvem iniciado pela câmera.</string>
+    <string name="msg_cloud_backup_start_fail">Não foi possível iniciar o backup.</string>
+    <string name="msg_cloud_backup_terminate">Backup na nuvem interrompido pela câmera.</string>
+    <string name="msg_cloud_backup_to_finish">Backup de %s concluído</string>
+    <string name="msg_cloud_backup_to_target">Backup de %s em andamento...</string>
+    <string name="msg_cloud_backup_to_terminate">Backup de %s interrompido</string>
+    <string name="msg_cloud_backup_upload_target">Destino de carregamento</string>
+    <string name="msg_cloud_no_connecting">A câmera não está conectada</string>
+    <string name="msg_cmn_attention">Atenção</string>
+    <string name="msg_communication_error_occurred">Está ocorrendo um erro durante a comunicação com a câmera.</string>
+    <string name="msg_complete_id_sync">Registrada a mesma identificação de login LUMIX CLUB da câmera.</string>
+    <string name="msg_confirm_auto_transfer_receive">Conectar-se a outro smartphone e receber imagens naquele smartphone?</string>
+    <string name="msg_confirm_communication_env">Verifique se há um problema com o ambiente de comunicação.</string>
+    <string name="msg_confirm_network_connection">Verifique a conexão.</string>
+    <string name="msg_confirm_selected_function">Verifique a função.</string>
+    <string name="msg_connect_ap_on_wifi_setting">Conecte-se ao ponto de acesso abaixo na Configuração do Wi-Fi.</string>
+    <string name="msg_connected">Conectado</string>
+    <string name="msg_connected_to_camera">Conexão à câmera com êxito.</string>
+    <string name="msg_connecting">Conectando...</string>
+    <string name="msg_connecting_camera">A câmera [%s] está sendo conectada.</string>
+    <string name="msg_connecting_camera_is_lumix_sync">Use [LUMIX Sync] para a câmera à qual se conectará.</string>
+    <string name="msg_connecting_to_camera">Conectando à câmera.</string>
+    <string name="msg_connecting_to_camera1">Conectando à câmera.</string>
+    <string name="msg_connection_duplicated">"A câmera já está em uso.
+Selecione outra câmera."</string>
+    <string name="msg_connection_duplicated_dsc">A câmera já está em uso. Selecione outra câmera ou desligue a sua conexão Wi-Fi e logo ligue-a novamente.</string>
+    <string name="msg_connection_failed">"Impossível conectar à câmera.
+Verifique as configurações de Wi-Fi."</string>
+    <string name="msg_connection_nosupport_camera">Dispositivo incompatível.</string>
+    <string name="msg_connection_test_phase_four">Ocorreu um erro de comunicação.</string>
+    <string name="msg_connection_test_phase_one">Não foi possível conectar ao ponto de acesso.</string>
+    <string name="msg_connection_test_phase_three">Ocorreu um erro de comunicação.</string>
+    <string name="msg_connection_test_phase_two">Não foi possível conectar ao servidor.</string>
+    <string name="msg_connection_test_phase_zero">Nenhum ponto de acesso sem fio foi encontrado.</string>
+    <string name="msg_connectl_next_ap">Conecte-se ao ponto de acesso abaixo.</string>
+    <string name="msg_cookie_policy_agreement">As condições de uso do aplicativo serão enviadas automaticamente ao servidor. Estas configurações podem ser alteradas posteriormente.</string>
+    <string name="msg_create_folder_error">Não é possível criar uma pasta</string>
+    <string name="msg_delete_camera_registration">Cancelar registro?</string>
+    <string name="msg_delete_camera_registration_with_pairing">"Registro cancelado.
+Liberte também emparelhar da câmara."</string>
+    <string name="msg_disable_shoot">Impossível filmar imagem</string>
+    <string name="msg_disconnect_camera">A conexão com a câmera foi desligada.</string>
+    <string name="msg_disconnectd_ssid">A conexão com %s caiu.</string>
+    <string name="msg_dlna_play_explain">"
+[Observação para usuários conectando a câmera a um dispositivo DLNA]
+Defina o modo de gravação como “848x480/30p(25p)” para os vídeos que serão reproduzidos em uma TV compatível com DLNA.
+
+Método de configuração:
+Selecione “Menu” -> “Config Grav.” -> “Modo normal captura” e selecione “Modo de Grav” -> “848x480/30p(25p)”."</string>
+    <string name="msg_do_connect_wifi_for_regstering_camera">Para concluir o registro, a %s precisa estar conectada ao Wi-Fi.</string>
+    <string name="msg_enable_location_service">Defina a configuração de \"Localização \" para LIGAR.</string>
+    <string name="msg_enable_wifi_direct">Ativar Wi-Fi Direct</string>
+    <string name="msg_enable_wifi_setting_for_connection">"A câmera precisa estar conectada ao Wi-Fi.
+Ativar o Wi-Fi?"</string>
+    <string name="msg_err_save_file_not_supported">Não é possível usar esta função porque o formato da imagem não é compatível com o seu smartphone ou tablet.</string>
+    <string name="msg_err_save_file_not_supported_or_lack_space">Não é possível usar esta função porque o formato da imagem não é compatível com o seu smartphone ou tablet, ou o espaço disponível para armazenamento é insuficiente.</string>
+    <string name="msg_err_sync_id">Falha ao copiar a identificação de login LUMIX CLUB. Verifique a conexão da câmera.</string>
+    <string name="msg_error_af_lock">Não é possível usar a função AF+MF, pois a imagem não está focalizada.</string>
+    <string name="msg_error_connect_app_need_update">Não foi possível conectar à câmera. Atualize este aplicativo.</string>
+    <string name="msg_error_connect_check_camera">Não foi possível conectar à câmera. Verifique a câmera a ser conectada.</string>
+    <string name="msg_error_connect_check_input_param">Não foi possível conectar à câmera. Verifique a identificação do dispositivo e a senha.</string>
+    <string name="msg_error_fail_to_copy_movieslideshow">Falha ao copiar o arquivo Realçar. Tente criar Realçar outra vez usando um formato de imagem de qualidade inferior.</string>
+    <string name="msg_error_homemon_disconnected">A conexão à câmera foi interrompida. Aguarde um pouco antes de tentar outra vez.</string>
+    <string name="msg_error_login">Falha ao fazer login.</string>
+    <string name="msg_error_matanity_autoreview_reconnect">"A conexão à camera foi interrompida durante a verificação da fotografia gravada. 
+A fotografia gravada foi salva automaticamente."</string>
+    <string name="msg_error_matanity_capture_full">Impossível gravar porque já está gravado o número máximo de cenas. Crie um novo projeto Stop Motion.</string>
+    <string name="msg_error_matanity_create_project_full">Impossível criar uma nova fotografia Stop Motion porque a pasta da data e o grupo de gravação Stop Motion já estão cheios.</string>
+    <string name="msg_error_pantilter_playmode">Não é possível usar esta função enquanto Suporte a distância está conectado.</string>
+    <string name="msg_error_picmate">Ocorreu um erro durante a comunicação com LUMIX CLUB.</string>
+    <string name="msg_error_picmate_agreement">Esta função não está disponível porque não foi possível obter os Termos de uso.</string>
+    <string name="msg_error_picture_jump">Ocorreu um erro durante o upload. Verifique se tem acesso à Internet.</string>
+    <string name="msg_error_picture_jump_invalid_data">Impossível fazer o upload da imagem especificada porque não é possível ler os dados.</string>
+    <string name="msg_error_picture_jump_need_check_application">"Falha ao transferir a imagem. 
+Confirme que o aplicativo de destino da transferência está instalado."</string>
+    <string name="msg_error_picture_jump_need_check_picmateserver_av">Falha ao fazer o upload da imagem. Confirme que completou o registro do seu dispositivo AV no LUMIX CLUB.</string>
+    <string name="msg_error_regist">"Falha ao fazer o novo registro.
+Digite uma cadeia de 8 a 16 caracteres 
+contendo letras e números."</string>
+    <string name="msg_error_regist_password_length">"Digite uma cadeia de 8 a 16 caracteres 
+contendo letras e números."</string>
+    <string name="msg_error_setting_av">"Falha ao registrar o dispositivo AV.
+Confirme que o número de endereço/número de acesso digitado está registrado no LUMIX CLUB.
+Para detalhes, consulte o manual de instruções do dispositivo AV usado."</string>
+    <string name="msg_error_setting_cloud">Falha ao configurar sincron. nuvem.</string>
+    <string name="msg_error_upload_not_internet">Impossível fazer o upload de aquivos porque não há conexão à Internet.</string>
+    <string name="msg_eula_agreement_new">"Você deve concordar com os termos de uso para usar esta aplicação.
+Se você concorda, clique no botão \"Concordo \"."</string>
+    <string name="msg_eula_agreement_update">"Os termos de uso desta aplicação foram atualizados.
+Você deve concordar com os termos de uso para continuar usando esta aplicação.
+Se você concorda, clique no botão \"Concordo \"."</string>
+    <string name="msg_file_copy_error_occurred">Ocorreu um erro ao copiar as imagens.</string>
+    <string name="msg_file_copying">Copiando arquivo(s)...</string>
+    <string name="msg_file_uploading">Enviando arquivo(s)...</string>
+    <string name="msg_focus_select_change_focus_mode">Mudar para modo AF para pós-focagem.</string>
+    <string name="msg_focus_select_change_pint_position">A posição de focagem mudou devido a uma operação. A gravação parou.</string>
+    <string name="msg_focus_select_shooting">A gravar com pós-focagem</string>
+    <string name="msg_func_not_supported">Esta função não é compatível com o seu dispositivo.</string>
+    <string name="msg_geotag_takeover_data1">Já existem dados de localização de uma versão anterior.</string>
+    <string name="msg_geotag_takeover_data2">Os dados de localização precisam ser atualizados para usar esta versão.</string>
+    <string name="msg_geotag_takeover_data3">Atualizar dados de localização?</string>
+    <string name="msg_geotag_takeover_delete">Apagar os dados de localização gravados pela versão anterior?</string>
+    <string name="msg_geotag_takeover_executing">Atualizando dados de localização…</string>
+    <string name="msg_geotag_takeover_not_delete">Não apagar</string>
+    <string name="msg_high_temperature_warning">Impossível continuar operando a câmera devido a superaquecimento. A câmera será desligada.</string>
+    <string name="msg_howto_end_exposure">Toque no botão de gravação para cancelar a exposição.</string>
+    <string name="msg_howto_picjump_setting">As configurações de“Compartilhamento de imagens” podem ser feitas através do procedimento a seguir.</string>
+    <string name="msg_hrs_image_creating">Criar imagem de alta resolução</string>
+    <string name="msg_input_all_to_complete">Depois de completar todos os itens, pressione Concluir.</string>
+    <string name="msg_input_all_to_login">Pressione “Login” depois de completar todos os campos.</string>
+    <string name="msg_input_all_to_regist">Pressione “Registrar” depois de completar todos os campos.</string>
+    <string name="msg_input_all_to_register">Pressione “Registrar” depois de completar todos os campos.</string>
+    <string name="msg_input_all_to_setting">Pressione “SET” depois de completar todos os campos.</string>
+    <string name="msg_invalid_camera_nfc_setting">As configurações NFC da câmera são inválidas. Corrija as configurações.</string>
+    <string name="msg_lc_ready">"A câmera começa a criar
+uma imagem com moldura preta para Redução
+de Ruído após o botão do obturador
+ser pressionado."</string>
+    <string name="msg_lc_start">"A Combinação de Visualização ao Vivo inicia
+após o botão do obturador ser pressionado."</string>
+    <string name="msg_lc_waiting">"Criando uma imagem de quadro preto para 
+Redução de Ruído.
+Aguarde."</string>
+    <string name="msg_lc_waiting_nr">Processando</string>
+    <string name="msg_lc_waiting_nr_old">"A Redução de Ruído está em andamento.
+Aguarde."</string>
+    <string name="msg_liveview_lens_warning">"Mudar para o modo de gravação?
+(A lente pode ser estendida.)"</string>
+    <string name="msg_location_service_warning">"Informações de localização não podem ser obtidas.
+Ativar [Serv. Localização]."</string>
+    <string name="msg_location_service_warning_notify">Informações de localização não podem ser obtidas.</string>
+    <string name="msg_login_password_diff">A senha não corresponde.</string>
+    <string name="msg_loop_lack_of_remain">Capacidade insuficiente no cartão. São necessários no mínimo 60 minutos restantes para fazer a gravar neste modo.</string>
+    <string name="msg_loop_rec_stop">A gravação foi interrompida automaticamente porque foram decorridas 24 horas desde o início da gravação.</string>
+    <string name="msg_matanity_cannot_use">Não é possível usar esta função enquanto verifica as fotografias tiradas.</string>
+    <string name="msg_matanity_change_confirm">"O projeto atual será concluído e a gravação será feita como um novo projeto.
+Tem certeza que deseja continuar?"</string>
+    <string name="msg_media_format_error_need_reformat">Falha ao formatar. É necessário reformatar este cartão SD.</string>
+    <string name="msg_media_format_finished">Formatação concluída.</string>
+    <string name="msg_movie_wifi_connecting">Conectando...</string>
+    <string name="msg_movieslideshow_settings">"O aplicativo pode selecionar automaticamente destaques das cenas gravadas e salvá-los com efeitos adicionados.
+Pode alterar os efeitos alterando-se as configurações."</string>
+    <string name="msg_movieslideshow_settings_title">Criar Realces</string>
+    <string name="msg_need_camera_time_setting">Acertar o relógio da câmera.</string>
+    <string name="msg_need_picmate_id">Como este aplicativo utiliza um serviço vinculado aos serviços LUMIX CLUB para fazer upload na web, é necessário concordar com os termos e condições dos serviços LUMIX CLUB a fim de fazer o upload de arquivos na web.</string>
+    <string name="msg_need_picmate_id_input">Digitar identif. login registrada</string>
+    <string name="msg_need_picmate_id_regist">Obter nova identificação de login</string>
+    <string name="msg_need_power_on_for_sd_card_restoration">"Foi detectado um erro no cartão SD, mas não é possível restaurar as informações de gestão de dados porque a bateria da câmera está baixa. Carregue a bateria. 
+Pressione OK para desligar a câmera."</string>
+    <string name="msg_network_invalid_ap_ssid">O SSID só pode ter símbolos e caracteres alfanuméricos de byte único. (1 a 32 caracteres.)</string>
+    <string name="msg_network_invalid_ap_ssid_pw">A senha só pode ter símbolos e caracteres alfanuméricos de byte único. (0, 5, ou 8 a 64 caracteres.)</string>
+    <string name="msg_network_invalid_camera_ssid">O SSID só pode ter símbolos e caracteres alfanuméricos de byte único. (1 a 32 caracteres.)</string>
+    <string name="msg_network_invalid_camera_ssid_pw">A senha só pode ter símbolos e caracteres alfanuméricos de byte único. (8 a 64 caracteres.)</string>
+    <string name="msg_network_invalid_ssid_or_pass">SSID ou senha incorreta.</string>
+    <string name="msg_nfc__movie_display">Realizar a conexão Wi-Fi com este smartphone?</string>
+    <string name="msg_nfc__movie_display_v2">Conectar a este smartphone via Wi-Fi?</string>
+    <string name="msg_nfc_after_movie_work">Em seguida, toque na marca NFC do dispositivo a ser conectado com o smartphone outra vez.</string>
+    <string name="msg_nfc_cancel_camera_state_confirm">“%s” está exibido na câmera?</string>
+    <string name="msg_nfc_complete">Processamento NFC concluído com êxito.</string>
+    <string name="msg_nfc_de_touch">Toque NFC</string>
+    <string name="msg_nfc_explain">Se o dispositivo a ser conectado for compatível com NFC, toque na marca NFC na lateral do dispositivo com o smartphone.</string>
+    <string name="msg_nfc_explain_tmp">Se estiver usando um modelo compatível com NFC, toque a câmera com o dispositivo.</string>
+    <string name="msg_nfc_failed_touch">O toque falhou. Dependendo das condições de operação da câmera, pode não ser possível usar a função NFC. Selecione o dispositivo que deseja conectar a partir da lista.</string>
+    <string name="msg_nfc_failed_touch_camera_reject">A conexão foi recusada.</string>
+    <string name="msg_nfc_failed_touch_invalid_camera">Dispositivo incompatível.</string>
+    <string name="msg_nfc_failed_touch_invalid_content">"Falha ao tocar.
+A função NFC pode não funcionar, dependendo das condições de operação da câmera."</string>
+    <string name="msg_nfc_failed_touch_invalid_data">"Falha ao tocar.
+Não foi possível obter as informações necessárias."</string>
+    <string name="msg_nfc_failed_touch_invalid_io_exception">"Falha ao tocar.
+O toque pode ter sido interrompido durante o processamento de NFC. Tente tocar por mais tempo."</string>
+    <string name="msg_nfc_failed_touch_other_error">Falha ao tocar.</string>
+    <string name="msg_nfc_failed_touch_power_off_setting">Ligue a câmera e toque outra vez.</string>
+    <string name="msg_nfc_failed_touch_setting_off">Ative a função NFC na câmera e toque outra vez.</string>
+    <string name="msg_nfc_failed_touch_share_invalid_content">"Falha ao tocar.
+A imagem pode não ser compatível. Selecione outra imagem e tente tocar novamente."</string>
+    <string name="msg_nfc_movie_work">* Se “%s” aparecer no LCD da câmera conectada, selecione “SIM” e toque-a com o seu smartphone.</string>
+    <string name="msg_nfc_movie_work_v2">* Se “%s” aparecer no LCD da câmera que deseja conectar, selecione “SIM” e toque-a com o smartphone outra vez.</string>
+    <string name="msg_nfc_not_work_explain">Se não for compatível com NFC, aguarde.</string>
+    <string name="msg_nfc_touch_failed">Sem conexão à câmera. Toque outra vez.</string>
+    <string name="msg_nfc_touch_same_camera">Toque a mesma câmera novamente.</string>
+    <string name="msg_no_access_point_found">Nenhum ponto de acesso sem fio foi encontrado</string>
+    <string name="msg_no_card_inserted">Não há um cartão SD inserido na câmera.</string>
+    <string name="msg_no_connecting">Desconectado</string>
+    <string name="msg_no_contents_found">Nenhum conteúdo reproduzível foi encontrado.</string>
+    <string name="msg_no_contents_found_for_select">Não foi encontrado nenhum conteúdo que possa ser selecionado.</string>
+    <string name="msg_no_network_connection">Não conectado à rede (%s).</string>
+    <string name="msg_non_sync_diff_id">Diferentes identificações de login LUMIX CLUB já estão definidas para a câmera e este aplicativo.</string>
+    <string name="msg_non_sync_not_exist_id">Nenhuma identificação de login LUMIX CLUB está definida para a câmera e este aplicativo.</string>
+    <string name="msg_not_connected">Desconectado</string>
+    <string name="msg_not_found_copy_target">Não existem imagens correspondentes para copiar.</string>
+    <string name="msg_not_input_password">A senha não foi introduzida. Deseja aplicar as configurações mesmo assim?</string>
+    <string name="msg_not_supported_by_os_version">Esta função não é compatível com a versão atual do sistema operacional do seu dispositivo.</string>
+    <string name="msg_now_camera_geotag_write_to_picture">Impossível conectar porque a câmera está enviando informações de localização.</string>
+    <string name="msg_now_cloud_downloading">Fazendo o download de imagens detectadas recentemente....</string>
+    <string name="msg_now_connecting">Conectando...</string>
+    <string name="msg_now_connecting_to_camera">Conectando à câmera...</string>
+    <string name="msg_now_connecting_to_camera_and_waiting_image">Conectando à câmera ou aguardando as fotos sendo enviadas pela câmera.</string>
+    <string name="msg_now_connecting_to_network">Conectando à rede...</string>
+    <string name="msg_now_id_syncing">Copiando a identificação de login LUMIX CLUB...</string>
+    <string name="msg_now_reate_stopmotion_video">Criando vídeo…</string>
+    <string name="msg_now_saving_image">Importando imagens...</string>
+    <string name="msg_now_saving_movie">Importando vídeos…</string>
+    <string name="msg_now_searching">Procurando...</string>
+    <string name="msg_now_searching_camera_and_select_wifi">"Procurando a câmera…
+Feche o diálogo/app e selecione o SSID da câmera na lista Wi-Fi para conexão direta."</string>
+    <string name="msg_now_searching_camera_and_select_wifi_and_stable_wifi_off">"Procurando a câmera…
+Feche o diálogo/app e selecione o SSID da câmera na lista Wi-Fi para conexão direta."</string>
+    <string name="msg_now_searching_camera_and_waiting_image">"Procurando a câmera
+ou aguardando as imagens sendo enviadas pela câmera."</string>
+    <string name="msg_now_searching_camera_and_waiting_image_and_select_wifi">"Procurando ou aguardando o envio das imagens pela câmera.
+Feche o diálogo/app e selecione o SSID da câmera na lista Wi-Fi para conexão direta."</string>
+    <string name="msg_now_searching_camera_and_waiting_image_and_select_wifi_and_stable_wifi_off">"Procurando ou aguardando o envio das imagens pela câmera.
+Feche o diálogo/app e selecione o SSID da câmera na lista Wi-Fi para conexão direta."</string>
+    <string name="msg_now_searching_for_camera">Procurando a câmera...</string>
+    <string name="msg_now_searching_for_network">Procurando a rede...</string>
+    <string name="msg_now_snapmovie_creating">Criando Filme simples…</string>
+    <string name="msg_now_webservice_loading">Obtendo informações sobre outros serviços Web associados com LUMIX CLUB...</string>
+    <string name="msg_occurred_communication_error">Ocorreu um erro de comunicação.</string>
+    <string name="msg_operate_camera_to_wait_pairing">Configure a câmera para em espera para \"Emparelhamento \".</string>
+    <string name="msg_pantilter_check_range">A conexão não é possível pois a câmera está realizando a Verificação de Intervalo De Gravação.</string>
+    <string name="msg_pantilter_play_confirm">Pausar a operação automática?</string>
+    <string name="msg_phcol_able_mk_phcol">Você pode usar recortes das fotografias para fazer uma colagem de fotos.</string>
+    <string name="msg_phcol_confirm_exit">Sair sem salvar a fotografia atual?</string>
+    <string name="msg_phcol_folder_create_error">"Falha ao criar a pasta.
+Digite um nome diferente de pasta e tente novamente."</string>
+    <string name="msg_phcol_folder_exist_warn">O nome da pasta especificada já existe. Deseja adicionar as fotografias a essa pasta?</string>
+    <string name="msg_phcol_folder_input_warn">Digite o nome da pasta usando um máximo de %d caracteres de byte único.</string>
+    <string name="msg_phcol_warning_select_folder">As informações da(s) imagem(ns) selecionada(s) será(ão) eliminada(s).Tem certeza que deseja continuar?</string>
+    <string name="msg_picmate_size_over">Impossível fazer o upload da imagem selecionada porque ela é grande demais.</string>
+    <string name="msg_please_off_auto_transfer">Desative os ajustes de [Transferência automát.] da câmera.</string>
+    <string name="msg_pre_copy_content_to_local">"A reprodução no seu smartphone pode não ser possível, dependendo do modelo. 
+Copiar?"</string>
+    <string name="msg_pre_copy_exclude_content">As imagens em formatos não compatíveis com o smartphone serão excluídas. Deseja continuar?</string>
+    <string name="msg_pre_shoot1">"Foto SH1 PRE (velocidade de pré-disparo super alta) com o obturador da câmera.
+SH1 (velocidade de disparo super alta) pode ser ativada a partir deste aplicativo."</string>
+    <string name="msg_pre_shoot2">"Foto SH2 PRE (velocidade de pré-disparo super alta) com o obturador da câmera.
+SH2 (velocidade de disparo super alta) pode ser ativada a partir deste aplicativo."</string>
+    <string name="msg_prerec_to_disable">"Pré-disparo parou.
+
+Deixe que a câmara arrefeça."</string>
+    <string name="msg_privacy_notice_agreement">As condições de uso do aplicativo serão enviadas automaticamente ao servidor. Estas configurações podem ser alteradas posteriormente.</string>
+    <string name="msg_pwless_authentification_deny">A câmera (%s) não aceitou a conexão.</string>
+    <string name="msg_pwless_authentification_fail">Impossível conectar à câmera (%s).</string>
+    <string name="msg_pwless_other_sp_authentification">A câmera (%s) está conectada a outro smartphone.</string>
+    <string name="msg_pwless_wait_authentification1">Verificando a câmera (%s)…</string>
+    <string name="msg_pwless_wait_authentification2">Opere a câmera para conectar.</string>
+    <string name="msg_qr_confirm">O dispositivo a ser conectado deve ser compatível com a função de leitura do código QR. Continuar?</string>
+    <string name="msg_qr_explain">Se o seu dispositivo possuir um QR scanner, toque no seguinte botão.</string>
+    <string name="msg_qrcode_warning_do_not_scan_remoteqr1">Para escanear o código QR da função Monitor doméstico, abra o menu e selecione Função do aplicativo > Monito Dom > Conf. dest. conexão e pressione o botão do código QR.</string>
+    <string name="msg_rating_avchd_restriction">"As imagens que podem ser configuradas para ★5 só serão configuradas para ★5. 
+Deseja continuar?"</string>
+    <string name="msg_rating_clear_multi_protect">As imagens protegidas não foram divulgadas.</string>
+    <string name="msg_rating_clear_multi_protect_unsupport">Não foi possível definir %d imagens.</string>
+    <string name="msg_rating_set_multi_protect_unsupport">Não foi possível definir %d imagens.</string>
+    <string name="msg_rating_set_single_protect">Esta foto é protegida.</string>
+    <string name="msg_rating_set_single_unsupport">Não pode ser aplicado a esta imagem.</string>
+    <string name="msg_raw_image_warning">Dependendo do sistema operacional do smartphone, arquivos RAW podem não ser apresentados corretamente.</string>
+    <string name="msg_recording_slowmotion_mode">Não é possível produzir imagens e som ao gravar vídeo em câmera lenta.</string>
+    <string name="msg_regist_unsent_upload_with_internet">As imagens selecionadas foram registradas na lista de imagens não enviadas. Fazer o upload dos arquivos da lista de imagens não enviadas após conectar à Internet.</string>
+    <string name="msg_regstering_camera">Registrando %s...</string>
+    <string name="msg_rejected_to_camera">Conexão à câmera recusada.</string>
+    <string name="msg_release_internet_connection">Desligue a conexão à Internet na Configuração do Bluetooth e, em seguida, conecte-se ao ponto de acesso abaixo na Configuração do Wi-Fi.</string>
+    <string name="msg_remote_nfc_failed_touch">O toque falhou. Dependendo das condições de operação da câmera, pode não ser possível usar a função NFC.</string>
+    <string name="msg_remoteaccess_confirm_finish">Sair do Monitoramento Domiciliar?</string>
+    <string name="msg_remoteaccess_error_check_input_param">Confirme o ID e a senha da câmera que deseja conectar.</string>
+    <string name="msg_remoteaccess_error_check_internet">Confirme que o ponto de acesso LAN sem fio no qual a câmera está conectada tenha conexão à Internet.</string>
+    <string name="msg_remoteaccess_error_problem_on_network">A comunicação normal da câmera não é possível no momento ou o seu ambiente de rede não permite o uso da função Monitor Doméstico.</string>
+    <string name="msg_remoteaccess_error_trafficy_line">A linha está ocupada. Tente outra vez mais tarde.</string>
+    <string name="msg_remoteview_quality_qvga">"A qualidade de controle ao vivo é [QVGA].
+É possível alterar a configuração de [Qual. Contr. ao Vivo] em [Conf. Contr. ao Vivo] no [Menu]."</string>
+    <string name="msg_request_check_wifi_setting">Câmera não encontrada. Cheque a configuração do Wi-Fi.</string>
+    <string name="msg_retry">Tente novamente.</string>
+    <string name="msg_savecomplete_ask_playmode_android">O conteúdo foi salvo na Galeria. Parar de editar e confirmar?</string>
+    <string name="msg_scene_select">Seleção de cena</string>
+    <string name="msg_sd_card_under_restoration">Erro de informação de gestão de dados. As informações de gestão de dados estão sendo restabelecidas.</string>
+    <string name="msg_searching_camera_on_ssid">Procurando câmera conectada a %s...</string>
+    <string name="msg_select_camera">Selecione uma câmera</string>
+    <string name="msg_select_camera_to_control">Selecione a câmera a ser conectada.</string>
+    <string name="msg_select_connection">Selecionar o método de conexão</string>
+    <string name="msg_select_content_over_time">Não é possível selecionar esta imagem porque foi excedida a duração máxima que pode ser combinada.</string>
+    <string name="msg_select_control_camera">Quando a câmera for operada e %s for selecionado, selecione \"Operar com a câmera \".</string>
+    <string name="msg_select_function">Selecione uma função</string>
+    <string name="msg_selected_function_invalid">A função especificada não foi selecionada com a câmera.</string>
+    <string name="msg_send_all">Fazer upload de tudo?</string>
+    <string name="msg_send_ugase_failed">Não foi possível enviar as condições de uso.</string>
+    <string name="msg_setup_easy_wifi_overwrite">A identificação do dispositivo Monitor doméstico está registrada no smartphone. Deseja substituí-la?</string>
+    <string name="msg_setup_easy_wifi_registered">A identificação do dispositivo Monitor doméstico está registrada no smartphone.</string>
+    <string name="msg_snapmovie_confirm_exit">Fechar sem gravar o vídeo atual?</string>
+    <string name="msg_split_delete_back">Posterior</string>
+    <string name="msg_split_delete_front">Anterior</string>
+    <string name="msg_split_delete_return">Voltar</string>
+    <string name="msg_split_delete_which">Que parte deve ser apagada?</string>
+    <string name="msg_ssid_init_need_change">O SSID da câmera e a senha do Wi-Fi estão configurados nas definições originais. Recomendamos alterar o SSID e a senha do Wi-Fi. Para alterá-los, selecione “Config. Wi-Fi câmera” → “Config. SSID câmera”.</string>
+    <string name="msg_ssid_label">Câmera SSID:</string>
+    <string name="msg_ssid_pw_valid_after_power_on">A definição do SSID/senha será ativada ao desligar e ligar novamente a câmera ou quando restabelecer a conexão Wi-Fi da câmera.</string>
+    <string name="msg_stop_motion_animation_finished">Disparo stop motion concluído.</string>
+    <string name="msg_stop_reason_eight">Não há imagens p/ fazer backup.</string>
+    <string name="msg_stop_reason_five">Não foi possível fazer login. Verifique sua ID e senha.</string>
+    <string name="msg_stop_reason_four">Ocorreu um erro de comunicação. Tente novamente.</string>
+    <string name="msg_stop_reason_nine">Não foi possível iniciar o backup porque a câmara está no modo sleep.</string>
+    <string name="msg_stop_reason_seven">Verifique a câmera.</string>
+    <string name="msg_stop_reason_six">Impossível conectar destino para upload. Verifique as configurações do destino de upload.</string>
+    <string name="msg_stop_reason_ten">Não foi possível iniciar o backup porque a câmara está carregando.</string>
+    <string name="msg_stop_reason_two">Verifique a carga restante da bateria.</string>
+    <string name="msg_stopmotion_disable_func">Não é possível usar esta função enquanto verifica as fotografias tiradas.</string>
+    <string name="msg_stopmotion_new_proj_warn">Será criada uma nova fotografia Stop Motion. Se criar um novo projeto, não será possível adicionar gravações ao grupo de gravações atual. Tem certeza que deseja continuar?</string>
+    <string name="msg_stopmotion_system_freq_error" />
+    <string name="msg_tc_backup_not_recorded">"O modo de gravação foi alterado.
+Não é possível fazer backup para Câmera dupla neste modo de gravação."</string>
+    <string name="msg_tc_backup_off">O backup para Câmera dupla será cancelado.</string>
+    <string name="msg_touch_de_geotag_disable">A função NFC da câmera está desativada.</string>
+    <string name="msg_touch_de_geotag_exist_geotag">Os dados de localização já foram atribuídos a esta imagem.</string>
+    <string name="msg_touch_de_geotag_fail">Impossível enviar dados localização à câmera.</string>
+    <string name="msg_touch_de_geotag_invalid_screen">A câmera não pode atribuir dados de localização nesta condição.</string>
+    <string name="msg_touch_de_geotag_no_data">Não há dados de localização relevantes registrados no smartphone.</string>
+    <string name="msg_touch_de_geotag_others">Impossível atribuir dados de localização a esta imagem.</string>
+    <string name="msg_touch_de_geotag_protect_content">A imagem está protegida.</string>
+    <string name="msg_touch_de_geotag_success">Dados da localização enviados à câmera.</string>
+    <string name="msg_touch_de_geotag_unsupport">A câmera não é compatível com a atribuição de dados de localização por NFC.</string>
+    <string name="msg_touch_de_geotag_unsupport_content">Impossível atribuir dados de localização a esta imagem.</string>
+    <string name="msg_touch_de_geotag_write_protect">O cartão SD está protegido contra gravação.</string>
+    <string name="msg_transfer_attention">Usar a transferência em lote pode duplicar as imagens transferidas anteriormente.</string>
+    <string name="msg_volume_down_in_howling">Se ocorrer ruídos, diminua o volume no seu smartphone/tablet.</string>
+    <string name="msg_vrec_stop_avchd_track_over">A gravação foi interrompida porque foram atingidos os limites do padrão AVCHD.</string>
+    <string name="msg_vrec_stop_create_folder_error">"Falha ao criar a pasta. 
+Impossível iniciar a gravação."</string>
+    <string name="msg_vrec_stop_internal_memory_full">A gravação foi interrompida porque a memória está cheia.</string>
+    <string name="msg_vrec_stop_speed_insufficient">A gravação foi interrompida porque o cartão não tem capacidade para a velocidade de escrita.</string>
+    <string name="msg_vrec_stop_temperature_over">A gravação foi interrompida devido a superaquecimento da câmera.</string>
+    <string name="msg_vrec_stop_uplimit">A gravação foi interrompida porque excedeu o tamanho dos dados que podem ser gravados.</string>
+    <string name="msg_warning_limit_contents">Já existem muitas imagens armazenadas no cartão SD inserido na câmera. Isso pode causar funcionamento instável.</string>
+    <string name="msg_warning_loop_rec_auto_delete">Ao usar gravação contínua, as cenas gravadas há mais de uma hora são apagadas automaticamente.</string>
+    <string name="msg_warning_loop_rec_stop_soon">A gravação logo parará automaticamente.</string>
+    <string name="msg_warning_rec_high_temperature">"A saída de vídeo e áudio foi interrompida porque está sendo feita a gravação de vídeo.
+Toque na tela para fechar esta mensagem e voltar para a gravação."</string>
+    <string name="msg_warning_remote_access_change_mode">Impossível usar enquanto utilizar a função Monitor doméstico.</string>
+    <string name="msg_white_balance_set_error">Não foi possível definir o equilíbrio de branco.</string>
+    <string name="msg_white_balance_set_success">O equilíbrio de branco foi definido.</string>
+    <string name="msg_wifi_disconnect_remote_watch_warning">Para usar o recurso Monito Dom, selecione “Não”, pois esta função requer uma linha 3G ou outra de telefone celular.</string>
+    <string name="msg_wtc_no_camera_response">Nenhuma resposta recebida da câmera. Verifique a câmera.</string>
+    <string name="msg_wtc_no_image_sending">"LiveView sem fios A câmara dupla irá parar.
+Para iniciar o LiveView, use a câmara."</string>
+    <string name="multiphoto_create">Criar a colagem de fotos selecionadas</string>
+    <string name="paly_title_warning">Aviso</string>
+    <string name="pantilter_cancel">Cancelar</string>
+    <string name="pantilter_check_range">Verificando intervalo de gravação…</string>
+    <string name="pantilter_error">"Ocorreu um problema com o Suporte a distância.
+Verifique o Suporte a distância."</string>
+    <string name="pantilter_manual">Realizando operação manual...</string>
+    <string name="pantilter_moving_obj">Objeto em movimento ativado</string>
+    <string name="pantilter_moving_obj_pause">Objeto em movimento pausado</string>
+    <string name="pantilter_noconnected">A conexão ao Suporte a distância foi interrompida.</string>
+    <string name="pantilter_party_auto">Cena da festa ativada</string>
+    <string name="pantilter_party_auto_pause">Cena da festa pausada</string>
+    <string name="pantilter_pause">Pausar</string>
+    <string name="pantilter_preset_btn_cancel">Canc</string>
+    <string name="pantilter_preset_btn_pause">Pausa</string>
+    <string name="pantilter_preset_btn_restart">Rein.</string>
+    <string name="pantilter_preset_btn_stop">Inter</string>
+    <string name="pantilter_preset_home">Orig</string>
+    <string name="pantilter_preset_mode">Posições predefinidas</string>
+    <string name="pantilter_preset_moving">Reposicionando...</string>
+    <string name="pantilter_preset_noset">Indef</string>
+    <string name="pantilter_preset_pause">Predefinir</string>
+    <string name="pantilter_preset_pos1">POS1</string>
+    <string name="pantilter_preset_pos2">POS2</string>
+    <string name="pantilter_preset_pos3">POS3</string>
+    <string name="pantilter_preset_pos4">POS4</string>
+    <string name="pantilter_preset_pos5">POS5</string>
+    <string name="pantilter_preset_regist">Registra as definições</string>
+    <string name="pantilter_preset_round_moving">Circulando…</string>
+    <string name="pantilter_preset_round_pause">Ciclo pausado</string>
+    <string name="pantilter_preset_round_setting">Configurações do ciclo</string>
+    <string name="pantilter_preset_skip">Salto</string>
+    <string name="pantilter_resetting">Redefinindo o ponto original...</string>
+    <string name="pantilter_searching">Procurando...</string>
+    <string name="pantilter_set_home_position">"Aguarde.
+ Configurando a posição original."</string>
+    <string name="pantilter_start">Iniciar</string>
+    <string name="picmate_ask_delete_content">Excluir as imagens selecionadas no provedor LUMIX CLUB?</string>
+    <string name="picmate_cloud_folder_name">Pasta LUMIX CLUB</string>
+    <string name="picmate_cloud_service_name">Sincron. nuvem</string>
+    <string name="picmate_command_msg_regist_error">Falha ao registrar.</string>
+    <string name="picmate_command_msg_sending">Comunicando com o provedor...</string>
+    <string name="picmate_command_msg_sending_error">Ocorreu um erro durante a comunicação com o provedor.</string>
+    <string name="picmate_lumix_club">LUMIX CLUB</string>
+    <string name="picmate_msg_network">Sem conexão à Internet. Selecione o método de conexão.</string>
+    <string name="picmate_msg_network_3g">3G</string>
+    <string name="picmate_msg_network_wifi">Wi-Fi</string>
+    <string name="picmate_regist">Registrado</string>
+    <string name="picmate_regist2">(Registrado)</string>
+    <string name="picmate_service_top" />
+    <string name="picmate_sync_service_fail">Lista de serviço não sincronizada.</string>
+    <string name="picmate_sync_service_success">Lista de serviço sincronizada.</string>
+    <string name="picmate_url_lang_code">bra</string>
+    <string name="picmate_wifi_direct_send_error">A transmissão não é possível porque a câmera está conectada via Wi-Fi Direct.</string>
+    <string name="picturejump_copy">Sal. smartphone</string>
+    <string name="picturejump_delete">Lixeira (Excluir)</string>
+    <string name="picturejump_location_gallery">Galeria</string>
+    <string name="picturejump_new_av">Registrar o novo dispositivo AV</string>
+    <string name="play_3box_no_dmr_found">Dispositivo de reprodução não encontrado.</string>
+    <string name="play_3box_select_dmr">Selecione o dispositivo de reprodução.</string>
+    <string name="play_btn_close">Fechar</string>
+    <string name="play_btn_continue">Continuar</string>
+    <string name="play_btn_no">NÃO</string>
+    <string name="play_btn_untransmit_detail">Detalhes</string>
+    <string name="play_btn_yes">SIM</string>
+    <string name="play_camera_function">FUNÇÃO DA CÂMERA</string>
+    <string name="play_delete_all_content">Eliminar tudo</string>
+    <string name="play_delete_confirm_for_protect">Excluir os arquivos selecionados?(Os arquivos protegidos não serão excluídos.)</string>
+    <string name="play_delete_with_jpeg_confirm">Eliminar o(s) arquivo(s) selecionado(s)? (O(s) outro(s) arquivo(s) gravados ao mesmo tempo também será(ão) eliminado(s).)</string>
+    <string name="play_delete_with_jpeg_confirm_for_protect">Eliminar o(s) arquivo(s) selecionado(s)? (O(s) outro(s) arquivo(s) gravados ao mesmo tempo também será(ão) eliminado(s).) No entanto, os arquivos protegidos não serão eliminados.</string>
+    <string name="play_highlight_format">FORMATO</string>
+    <string name="play_highlight_media">MÍDIA</string>
+    <string name="play_msg_canceling_copy">"A cópia foi cancelada.
+Não desligue a energia."</string>
+    <string name="play_msg_canceling_delete">A exclusão foi cancelada.</string>
+    <string name="play_msg_complete_delete">A exclusão foi concluída.</string>
+    <string name="play_msg_delete_data">Excluir da lista de imagens não enviadas?</string>
+    <string name="play_msg_delete_from_list">Arquivos excluídos da lista de imagens não enviadas.</string>
+    <string name="play_msg_location_service_request_enable">Impossível exibir imagens em Rolo da Câmera. Ativar [Serv. Localização].</string>
+    <string name="play_msg_movie_play_error">Impossível continuar a reprodução do vídeo com este aplicativo. A reprodução foi interrompida.</string>
+    <string name="play_msg_movie_play_start">A reprodução pode ser interrompida ou não ser possível no caso de vídeos longos ou em alta definição.</string>
+    <string name="play_msg_movie_play_start2">A reprodução normal pode não ser possível dependendo do modelo do seu smartphone ou tablet.</string>
+    <string name="play_msg_reading_data">Carregando...</string>
+    <string name="play_msg_send_all">Iniciar o upload de todas as fotografias/vídeos.</string>
+    <string name="play_msg_send_cancell">Cancelando a transmissão...</string>
+    <string name="play_msg_send_comp">Transmissão do arquivo concluída.</string>
+    <string name="play_msg_send_err">Erro de transmissão</string>
+    <string name="play_msg_send_one">Iniciar o upload.</string>
+    <string name="play_msg_setting_step">As configurações de“Compartilhamento de imagens” não foram feitas. Faça as configurações a partir do menu de configuração.</string>
+    <string name="play_select_format">Selecione o formato</string>
+    <string name="play_tab_btn">Reprodução</string>
+    <string name="play_unsentimageinfo_button_canceltosend">Cancelar o upload</string>
+    <string name="play_unsentimageinfo_button_sendallimage">Upload nov. todas imag./vídeo restantes</string>
+    <string name="play_unsentimageinfo_button_sendcrntimage">Upload imag./vídeo novamente</string>
+    <string name="play_unsentimageinfo_cell_destsite">Destino</string>
+    <string name="play_unsentimageinfo_cell_sendtime">Hora de início</string>
+    <string name="play_unsentimageinfo_title">Informações</string>
+    <string name="play_unsentimagelist_title">Imagens não enviadas</string>
+    <string name="ply_3box_dlna_error">Impossível reproduzir na TV. Ocorreu um erro na câmera.</string>
+    <string name="ply_3box_mode_change_error">Impossível reproduzir na TV. Ocorreu um erro na câmera.</string>
+    <string name="ply_action_camera_power_off">Desligar</string>
+    <string name="ply_action_create_highlight">Criar Realçar</string>
+    <string name="ply_action_edit_protect">PROT. CENA</string>
+    <string name="ply_action_edit_split_delete">Dividir &amp; Apagar</string>
+    <string name="ply_action_multiframephoto">Colagem de fotos selecionadas</string>
+    <string name="ply_action_tv_play">Repr. em TV</string>
+    <string name="ply_btn_cancel">Cancel.</string>
+    <string name="ply_btn_select">Selec.</string>
+    <string name="ply_highlight_coping">Copiando cena de realce criada...</string>
+    <string name="ply_highlight_copy_error">Ocorreu um erro ao copiar a cena de realce criada.</string>
+    <string name="ply_highlight_copy_start_error">Não foi possível copiar a cena de realce criada.</string>
+    <string name="ply_highlight_create_error">Ocorreu um erro durante a criação do realce.</string>
+    <string name="ply_highlight_create_error_confirm_cam">Os realces não podem ser criados. Cheque a câmera de vídeo.</string>
+    <string name="ply_highlight_create_error_invalid_bgm">Falha ao criar Realces. Os dados BGM selecionados não são compatíveis ou estão corrompidos.</string>
+    <string name="ply_highlight_create_error_invalid_title_picture">Falha ao criar Realces. Os dados da imagem título selecionada não são compatíveis ou estão corrompidos.</string>
+    <string name="ply_highlight_create_error_no_highlight">Os realces não podem ser criados. Não há cenas para extrair.</string>
+    <string name="ply_highlight_create_error_no_remain">Os realces não podem ser criados. A capacidade restante da mídia de armazenamento é insuficiente.</string>
+    <string name="ply_highlight_create_start_error">Não foi possível iniciar a criação do realce.</string>
+    <string name="ply_highlight_creating">Criando realce...</string>
+    <string name="ply_highlight_delete_error">Não foi possível apagar a cena de realce criada.</string>
+    <string name="ply_highlight_get_sceane_info_error">Falha ao adquirir informações de cena.</string>
+    <string name="ply_highlight_low_memory_error" />
+    <string name="ply_highlight_not_select_sceane">Nenhuma cena selecionada.</string>
+    <string name="ply_highlight_send_param_error">Ocorreu um erro ao enviar os parâmetros durante a criação do realce.</string>
+    <string name="ply_highlight_sending_bgm">Transferindo a música de fundo...</string>
+    <string name="ply_highlight_sending_title_picture">Transferindo a imagem título...</string>
+    <string name="ply_highlight_slct_bgm">Seleção de música de fundo</string>
+    <string name="ply_msg_ask_cloud_upload_max_num">Se fizer o upload da imagem selecionada, as imagens antigas serão excluídas, pois excedeu o limite de upload do Serviço de sincron. nuvem.</string>
+    <string name="ply_msg_ask_cloud_upload_max_num_no">Não fazer o upload</string>
+    <string name="ply_msg_ask_cloud_upload_max_num_yes">Fazer o upload</string>
+    <string name="ply_msg_cannnot_upload_max_num">Impossível fazer o upload de mais imagens pois excedeu o limite do destino de upload.</string>
+    <string name="ply_msg_cannot_upload_cloud_size_over">Impossível fazer o upload. Limite de capacidade excedido no provedor do Serviço de sincron. nuvem.</string>
+    <string name="ply_msg_cannot_upload_file_size_over">Impossível fazer o upload da imagem selecionada porque ela é grande demais.</string>
+    <string name="ply_msg_cannot_upload_no_other">Impossível fazer o upload. Nenhum dispositivo registrado.</string>
+    <string name="ply_msg_changed_folder">A imagem exibida foi alterada.</string>
+    <string name="ply_msg_err_confirmation_sd">"Ocorreu um erro ao copiar as imagens.
+Verifique o cartão SD do seu smartphone/tablet."</string>
+    <string name="ply_msg_err_copy_file">Ocorreu um erro ao copiar as imagens.</string>
+    <string name="ply_msg_err_copy_file_lack_of_remain">Não há espaço livre suficiente.</string>
+    <string name="ply_msg_err_copy_file_maybe">A cópia de imagens pode ter falhado.</string>
+    <string name="ply_msg_err_copy_file_not_supported">Não foi possível copiar porque a imagem não é compatível com este aplicativo.</string>
+    <string name="ply_msg_err_copy_file_not_supported_included">Um ou mais arquivos não podem ser copiados porque o formato não é compatível com este smartphone.</string>
+    <string name="ply_msg_err_copy_file_not_supported_or_lack_space">Ocorreu um erro ao copiar as imagens.</string>
+    <string name="ply_msg_err_copy_file_not_supported_or_lack_space_included">Um ou mais arquivos não podem ser copiados porque o formato não é compatível com este smartphone ou porque não há espaço livre suficiente.</string>
+    <string name="ply_msg_err_copy_file_type_avchd">Não é possível salvar cenas gravadas no formato AVCHD. Converta a cena para o formato MP4 na câmera de vídeo para a salvar.</string>
+    <string name="ply_msg_err_delete_file">Ocorreu um erro ao excluir as imagens.</string>
+    <string name="ply_msg_select_max_num">Impossível selecionar mais fotografias.</string>
+    <string name="ply_multiphoto_create_error">Falha ao criar a colagem de fotos selecionadas.</string>
+    <string name="ply_multiphoto_create_error_no_highlight">Falha ao criar a colagem de fotos selecionadas. Não há cenas que podem ser extraídas.</string>
+    <string name="ply_multiphoto_creating">Criando a colagem de fotos selecionadas...</string>
+    <string name="ply_multiphoto_foldername_error">Digite o nome da pasta usando no máximo 8 caracteres de byte único.</string>
+    <string name="ply_multiphoto_save">Salvando as fotografias...</string>
+    <string name="ply_multiphoto_save_complete">As fotografias foram salvas.</string>
+    <string name="ply_phcol_change_folder">Especificar o nome da pasta onde armazenar as fotografias</string>
+    <string name="ply_phcol_save_photo">%d fotografias serão salvas no smartphone.</string>
+    <string name="ply_phcol_title">Colagem de fotos selecionadas</string>
+    <string name="ply_phcol_title_slct_frame_title">Seleção da moldura</string>
+    <string name="ply_phcol_title_slct_picture">Seleção da imagem</string>
+    <string name="ply_select_action_delete">Excluir</string>
+    <string name="ply_select_action_save">Salvar</string>
+    <string name="ply_select_action_share">Compartilhar</string>
+    <string name="psh_ntfy_babymon_dtct_ado">"Notificação
+A câmera de vídeo detectou áudio."</string>
+    <string name="psh_ntfy_babymon_start">"Notificação
+Baby Monitor ativado."</string>
+    <string name="pstyle_color_filter_green">Verde</string>
+    <string name="pstyle_color_filter_off">Desligado</string>
+    <string name="pstyle_color_filter_orange">Laranja</string>
+    <string name="pstyle_color_filter_red">Vermelho</string>
+    <string name="pstyle_color_filter_yellow">Amarelo</string>
+    <string name="qrcode_read">Cód QR</string>
+    <string name="rec_angle_standard">STANDARD</string>
+    <string name="rec_angle_wide">WIDE</string>
+    <string name="rec_autoreview_finish">Sair</string>
+    <string name="rec_autoreview_now">Revisão automática</string>
+    <string name="rec_btn_icon_display">Info</string>
+    <string name="rec_btn_icon_display_new">DISP.</string>
+    <string name="rec_btn_quick_menu">SET</string>
+    <string name="rec_delay">Delay</string>
+    <string name="rec_during_burst">Tirando fotografias no modo disparo contínuo...</string>
+    <string name="rec_during_exposure">Exposição...</string>
+    <string name="rec_just_a_moment">Aguarde...</string>
+    <string name="rec_label_f">F</string>
+    <string name="rec_label_mf">MF</string>
+    <string name="rec_label_ss">SS</string>
+    <string name="rec_liveview_second">seg</string>
+    <string name="rec_msg_4kmovie_rec_error">Não é possível gravar 4k vídeo com a conexão Wi-Fi.</string>
+    <string name="rec_msg_4kphoto_error">Não pode gravar foto 4K durante ligação Wi-Fi.</string>
+    <string name="rec_msg_4kphoto_rec_error">Não é possível gravar vídeo com a conexão Wi-Fi.</string>
+    <string name="rec_msg_capture_failed">A gravação falhou.</string>
+    <string name="rec_msg_cinelike_enable">Este aplicativo não pode ser usado para fotografar porque a câmera está no modo %s.</string>
+    <string name="rec_msg_first_action">Tenha cuidado com a lente, pois ela pode se estender de repente quando iniciar no modo de gravação.</string>
+    <string name="rec_msg_focusselect_error">Não pode gravar com pós-focagem durante a ligação WiFi.</string>
+    <string name="rec_msg_interval_shot_mode">Impossível usar este aplicativo para fotografar no momento porque a câmera está no modo Fotog. Intervalo Tempo.</string>
+    <string name="rec_msg_lack_of_memory">Memória insuficiente.</string>
+    <string name="rec_msg_lack_of_memory_for_movie">O seguinte tempo de gravação está sendo definido devido a memória insuficiente.</string>
+    <string name="rec_msg_lens_error">"Falha na gravação.
+Verifique a câmera."</string>
+    <string name="rec_msg_max_rec_time">Tempo máximo de gravação</string>
+    <string name="rec_msg_modechange_error">Falha ao alterar modos.</string>
+    <string name="rec_msg_movie_recording">Gravando vídeo. Opere a câmera para interromper a gravação.</string>
+    <string name="rec_msg_need_to_extend_lens">"Gire o anel de zoom
+para estender a lente"</string>
+    <string name="rec_msg_not_recmovie_this_mode">A gravação de vídeo não é possível no modo atual.</string>
+    <string name="rec_msg_not_supported_mode">Passou para o modo de gravação normal porque a gravação sem fio não está disponível no modo de gravação selecionado.</string>
+    <string name="rec_msg_only_sdi_rec">"Sem cartão de memória.
+Apenas gravação remota SDI."</string>
+    <string name="rec_msg_recstart_err_reject">A captura do vídeo não pode ser iniciada.</string>
+    <string name="rec_msg_recstart_error">Falha ao iniciar a gravação de vídeo.</string>
+    <string name="rec_msg_recstop_error">Falha ao parar a gravação de vídeo.</string>
+    <string name="rec_msg_sd_lock">"O cartão de memória da câmera está protegido contra gravação.
+Desative a proteção para tirar uma fotografia."</string>
+    <string name="rec_msg_ss_bulb">Não é possível gravar porque a velocidade do obturador está definida como Bulb.</string>
+    <string name="rec_msg_stop_live_stream">"Interrompido o envio de imagem.
+Verifique se a imagem da câmera foi recebida e se a câmera está conectada."</string>
+    <string name="rec_msg_stop_recording">A gravação foi interrompida devido à resposta da câmera.</string>
+    <string name="rec_msg_stop_recording_lack_memory">A gravação foi interrompida devido a memória insuficiente.</string>
+    <string name="rec_msg_video_rectime_crnt">Tempo de gravação definido</string>
+    <string name="rec_msg_wait_for_camera_temperature_down">"Temporariamente desativado.
+Aguarde que a câmara arrefeça."</string>
+    <string name="rec_msg_zoom_error">"Falha ao usar zoom.
+Verifique a câmera."</string>
+    <string name="rec_now_long_shutter_noise_reduction">Redução ruído obturador longo em processamento</string>
+    <string name="rec_remain">R</string>
+    <string name="rec_remain_hour">h</string>
+    <string name="rec_remain_minute">m</string>
+    <string name="rec_remain_time_label">R</string>
+    <string name="rec_remote_voice_remain_a">%d segundos restantes</string>
+    <string name="rec_selftimer_cancel">Cancel.</string>
+    <string name="rec_sensitivity_gain">Ganho</string>
+    <string name="rec_sensitivity_gain_semipro">GAIN</string>
+    <string name="rec_stopmotion_auto">Disparo Automático</string>
+    <string name="rec_stopmotion_create_error">Ocorreu um erro durante a criação de vídeo.</string>
+    <string name="rec_stopmotion_create_error_confirm_cam">A criação de vídeo não é possível. Verifique a câmera.</string>
+    <string name="rec_stopmotion_create_error_no_remain">A criação de vídeo não é possível. Não há espaço livre suficiente no suporte de armazenamento.</string>
+    <string name="rec_stopmotion_create_start_error">Falha ao iniciar a criação de vídeo.</string>
+    <string name="rec_stopmotion_create_video">Vídeo Stop Motion</string>
+    <string name="rec_stopmotion_creating">Criando vídeo...</string>
+    <string name="rec_stopmotion_discontinuation">A gravação de imagens de Animaç. Stop Motion não pôde continuar e foi interrompida.</string>
+    <string name="rec_stopmotion_framerate">Taxa de quadros</string>
+    <string name="rec_stopmotion_interval">Intervalo de disparo</string>
+    <string name="rec_stopmotion_iterval_time">%d seg.</string>
+    <string name="rec_stopmotion_not_contents">Não há imagens de Animaç. Stop Motion gravadas. Iniciar uma nova gravação?</string>
+    <string name="rec_stopmotion_order_normal">NORMAL</string>
+    <string name="rec_stopmotion_order_reverse">REVERSE</string>
+    <string name="rec_stopmotion_order_setting">Sequência</string>
+    <string name="rec_stopmotion_over_contents">Impossível continuar a gravação de imagens de Animaç. Stop Motion.</string>
+    <string name="rec_stopmotion_select_continue">Adicional</string>
+    <string name="rec_stopmotion_select_recorded_animation">Seleção de imagens de Animaç. Stop Motion gravadas</string>
+    <string name="rec_stopmotion_select_start">Novo</string>
+    <string name="rec_stopmotion_send_param_error">Ocorreu um erro durante a transmissão dos parâmetros de criação de vídeo.</string>
+    <string name="rec_stopmotion_start">Iniciar</string>
+    <string name="rec_stopmotion_title">Animaç. Stop Motion</string>
+    <string name="rec_stopmotion_video_quality_setting">Modo imagem</string>
+    <string name="rec_stopmotion_warning_automode">Toque no botão de gravação para iniciar a gravação.</string>
+    <string name="rec_tab_btn">Contr. ao Vivo</string>
+    <string name="remain_marking_number">R %d</string>
+    <string name="scn_gid_backlight_portrait">"Com retroiluminação,
+o brilho total da
+cena aumenta.
+Retratos são suavizados
+e compensados c/ luz."</string>
+    <string name="scn_gid_backlight_portrait_onepoint">"Ajustar a posição
+de disparo de forma
+que o sol esteja
+atrás do indivíduo."</string>
+    <string name="scn_gid_backlight_portrait_recom_lens">Lente brilhante</string>
+    <string name="scn_gid_backlight_portrait_step_up">"Alterar a exposição
+para ajustar
+o efeito luminoso."</string>
+    <string name="scn_gid_backlight_strobe">"Em exteriores, flash é
+usado p/ iluminar rosto
+de forma uniforme."</string>
+    <string name="scn_gid_backlight_strobe_onepoint">Abrir o Flash.</string>
+    <string name="scn_gid_backlight_strobe_recom_lens">Lente zoom padrão</string>
+    <string name="scn_gid_backlight_strobe_step_up">"Alterar a
+exposição para ajustar
+o brilho do
+rosto."</string>
+    <string name="scn_gid_blue_sky">"Num dia de sol,
+o brilho total
+da cena é aumentado
+para criar uma imagem
+vibrante do céu azul."</string>
+    <string name="scn_gid_blue_sky_onepoint">"Tentar manter um bom
+equilíbrio entre o
+céu azul e as nuvens."</string>
+    <string name="scn_gid_blue_sky_recom_lens">"Lente Grande-Angular
+Teleobjetiva"</string>
+    <string name="scn_gid_blue_sky_step_up">"Mudar a exposição
+para alterar
+a sensação."</string>
+    <string name="scn_gid_clear_skin">"Rosto mais brilhante
+e cor de pele mais
+suave cria ar jovem
+e saudável."</string>
+    <string name="scn_gid_clear_skin_onepoint">"Encher a moldura com
+a metade superior do
+corpo do indivíduo."</string>
+    <string name="scn_gid_clear_skin_recom_lens">"Lente brilhante
+Teleobjetiva"</string>
+    <string name="scn_gid_clear_skin_step_up">"Alterar a exposição
+para ajustar
+o brilho total."</string>
+    <string name="scn_gid_cooking">"O brilho total da
+cena é aumentado
+para tornar a comida
+mais atraente."</string>
+    <string name="scn_gid_cooking_onepoint">"Este efeito foca
+o indivíduo e
+desfoca o fundo."</string>
+    <string name="scn_gid_cooking_recom_lens">"Lente macro
+Lente brilhante"</string>
+    <string name="scn_gid_cooking_step_up">"Ajustar a abertura
+para variar a
+desfocagem
+do fundo."</string>
+    <string name="scn_gid_cool_night">"Tons azuis são
+reforçados para criar
+imagem agradável e
+sofist. de céu noturno
+após o pôr-do-sol."</string>
+    <string name="scn_gid_cool_night_onepoint">"Fotografar uma imagem
+de céu e edifícios logo
+após o pôr-do-sol
+em dia limpo."</string>
+    <string name="scn_gid_cool_night_recom_lens">Lente Grande-Angular</string>
+    <string name="scn_gid_cool_night_step_up">"Alterar o balanço
+de brancos p/
+ajustar o azul
+do céu."</string>
+    <string name="scn_gid_fixflush_backlight_strobe">"Em exteriores, flash é
+usado p/ iluminar rosto
+de forma uniforme."</string>
+    <string name="scn_gid_fixflush_backlight_strobe_onepoint">Utilizar o Flash</string>
+    <string name="scn_gid_fixflush_backlight_strobe_recom_lens">Lente zoom padrão</string>
+    <string name="scn_gid_fixflush_backlight_strobe_step_up">"Alterar a
+exposição para ajustar
+o brilho do
+rosto."</string>
+    <string name="scn_gid_fixflush_night_portrait">"Flash cheio e exposição
+mais longa captam
+retratos melhores
+em cenas noturnas."</string>
+    <string name="scn_gid_fixflush_night_portrait_onepoint">Utilizar o Flash</string>
+    <string name="scn_gid_fixflush_night_portrait_recom_lens">Lente Grande-Angular</string>
+    <string name="scn_gid_fixflush_night_portrait_step_up">"Alterar a exposição
+para ajustar
+o brilho total."</string>
+    <string name="scn_gid_fixlens_portrait">"O brilho do
+rosto é ajustado
+e o fundo
+é desfocado para
+criar um retrato
+nítido."</string>
+    <string name="scn_gid_fixlens_portrait_onepoint">Aumentar o zoom.</string>
+    <string name="scn_gid_fixlens_portrait_step_up">"Alterar a exposição
+para ajustar
+o brilho total."</string>
+    <string name="scn_gid_flower">"A focagem suave cria
+uma imagem difusa."</string>
+    <string name="scn_gid_flower_onepoint">"Colocar as flores
+em luz suave, como
+uma luz difusa através
+de uma cortina."</string>
+    <string name="scn_gid_flower_recom_lens">Lente macro</string>
+    <string name="scn_gid_flower_step_up">"Alterar a exposição
+para ajustar
+o brilho total."</string>
+    <string name="scn_gid_handheld_night">"Capte várias imagens e
+combine os dados para
+minimizar o ruído e a
+desfocagem em disparo
+manual com cenário
+noturno."</string>
+    <string name="scn_gid_handheld_night_onepoint">"Segure a câmara com
+firmeza para minimizar
+qualquer movimento."</string>
+    <string name="scn_gid_handheld_night_recom_lens">Lente Grande-Angular</string>
+    <string name="scn_gid_handheld_night_step_up">"Alterar a exposição
+para ajustar
+o brilho total."</string>
+    <string name="scn_gid_illumination">"Filtro de estrela reforça
+os pontos de luz."</string>
+    <string name="scn_gid_illumination_onepoint">"Esta característica
+funciona melhor em
+close up."</string>
+    <string name="scn_gid_illumination_recom_lens">"Lente Grande-Angular
+Teleobjetiva"</string>
+    <string name="scn_gid_illumination_step_up">"Alterar a
+exposição para ajustar
+o brilho."</string>
+    <string name="scn_gid_kids">"Desfocagem de fundo
+moderada e tom de pele
+realçado, destacam
+rosto de criança."</string>
+    <string name="scn_gid_kids_onepoint">"Tocar na tela
+para focar na
+criança."</string>
+    <string name="scn_gid_kids_recom_lens">Lente brilhante</string>
+    <string name="scn_gid_kids_step_up">"Mudar a exposição
+para alterar
+a sensação."</string>
+    <string name="scn_gid_landscape">"Saturação do céu
+e árvores criam
+cenários mais distintos."</string>
+    <string name="scn_gid_landscape_onepoint">"Considerar a
+composição."</string>
+    <string name="scn_gid_landscape_recom_lens">Lente Grande-Angular</string>
+    <string name="scn_gid_landscape_step_up">"Ativar funcão
+Guia de Linha p/
+garantir nivelamento
+da imagem."</string>
+    <string name="scn_gid_longexpo_night">"Uma veloc. lenta do
+obturador capta traços
+de luz, criando cena
+noturna artística."</string>
+    <string name="scn_gid_longexpo_night_onepoint">"Recomenda-se um tripé
+ou base estável."</string>
+    <string name="scn_gid_longexpo_night_recom_lens">Lente zoom padrão</string>
+    <string name="scn_gid_longexpo_night_step_up">"Alterar a velocidade
+do obturador para
+criar diferentes
+trajetórias de luz."</string>
+    <string name="scn_gid_magic_hour">"Tom púrpuro
+intensificado cria
+imagem romântica
+do céu logo depois
+do pôr-do-sol."</string>
+    <string name="scn_gid_magic_hour_onepoint">"Tirar foto do
+horizonte logo
+após o pôr sol em
+dia de céu limpo."</string>
+    <string name="scn_gid_magic_hour_recom_lens">Lente Grande-Angular</string>
+    <string name="scn_gid_magic_hour_step_up">"Alterar a
+exposição para ajustar
+a profundidade das
+cores."</string>
+    <string name="scn_gid_monochrome">"Uma imagem monocr.
+capta a sensação
+do momento."</string>
+    <string name="scn_gid_monochrome_onepoint">"Iluminação seletiva
+adiciona contraste e
+aumenta a sensação
+da imagem."</string>
+    <string name="scn_gid_monochrome_recom_lens">Lente zoom padrão</string>
+    <string name="scn_gid_monochrome_step_up">"Alterar a saturação
+para ajustar
+o tom de cor e
+alterar a sensação."</string>
+    <string name="scn_gid_night">"Saturação de cor
+da luz da noite é
+elevada p/ acentuar
+cena noturna."</string>
+    <string name="scn_gid_night_onepoint">"Recomenda-se um tripé
+ou base estável."</string>
+    <string name="scn_gid_night_portrait">"Flash cheio e exposição
+mais longa captam
+retratos melhores
+em cenas noturnas."</string>
+    <string name="scn_gid_night_portrait_onepoint">Abrir o flash.</string>
+    <string name="scn_gid_night_portrait_recom_lens">Lente Grande-Angular</string>
+    <string name="scn_gid_night_portrait_step_up">"Alterar a exposição
+para ajustar
+o brilho total."</string>
+    <string name="scn_gid_night_recom_lens">"Lente Grande-Angular
+Teleobjetiva"</string>
+    <string name="scn_gid_night_step_up">"Alterar a exposição
+para ajustar
+o brilho total."</string>
+    <string name="scn_gid_onepoint">-Um Ponto</string>
+    <string name="scn_gid_pet">"Veloc. mais rápida do
+obt. previne borrão
+e capta imagem clara
+do animal em
+movimento rápido."</string>
+    <string name="scn_gid_pet_onepoint">"Fotografar ao nível de
+olho do animal."</string>
+    <string name="scn_gid_pet_recom_lens">Lente brilhante</string>
+    <string name="scn_gid_pet_step_up">"Usar disparo contínuo
+para gravar imagens
+de movimento
+contínuo."</string>
+    <string name="scn_gid_portrait">"O brilho do
+rosto é ajustado
+e o fundo
+é desfocado para
+criar um retrato
+nítido."</string>
+    <string name="scn_gid_portrait_onepoint">"Aumentar o zoom
+ao usar lente zoom."</string>
+    <string name="scn_gid_portrait_recom_lens">"Lente brilhante
+Teleobjetiva"</string>
+    <string name="scn_gid_portrait_step_up">"Alterar a exposição
+para ajustar
+o brilho total."</string>
+    <string name="scn_gid_recommended_lens">-Lente Recomendada</string>
+    <string name="scn_gid_shimmering_water">"O reflexo da água
+é aumentada p/
+parecer mais
+brilhante e
+ligeiramente azulada."</string>
+    <string name="scn_gid_shimmering_water_onepoint">"Melhor no início ou
+no final do dia quando
+o ângulo sol está baixo."</string>
+    <string name="scn_gid_shimmering_water_recom_lens">Teleobjetiva</string>
+    <string name="scn_gid_shimmering_water_step_up">"Alterar a
+exposição para ajustar
+o brilho."</string>
+    <string name="scn_gid_sports">"Veloc. mais rápida do
+obt. previne desfoc.
+por ex., eventos de
+esportes."</string>
+    <string name="scn_gid_sports_onepoint">"Ver o movimento do
+indivíduo p/ enquadrar
+a fotografia"</string>
+    <string name="scn_gid_sports_recom_lens">Teleobjetiva</string>
+    <string name="scn_gid_sports_step_up">"Alterar a exposição
+para ajustar
+o brilho total."</string>
+    <string name="scn_gid_step_up">-Avançar</string>
+    <string name="scn_gid_sunset">"Vermelho intenso
+cria imagem viva
+do pôr-do-sol."</string>
+    <string name="scn_gid_sunset_onepoint">"Melhores resultados
+ocorrem em dias claros."</string>
+    <string name="scn_gid_sunset_recom_lens">Lente Grande-Angular</string>
+    <string name="scn_gid_sunset_step_up">"Alterar a saturação
+para ajustar a
+intensidade do vermelho
+do pôr-do-sol."</string>
+    <string name="scn_gid_sweets">"O brilho total da
+cena é aumentada
+para reforçar o
+lado atrativo da
+sobremesa."</string>
+    <string name="scn_gid_sweets_onepoint">"Encher a moldura
+inteira com a
+sobremesa."</string>
+    <string name="scn_gid_sweets_recom_lens">"Lente macro
+Lente brilhante"</string>
+    <string name="scn_gid_sweets_step_up">"Alterar a saturação
+para alterar
+a sensação."</string>
+    <string name="scn_gid_warm_night">"O tom de cor
+quente cria uma
+imagem quente do
+cenário noturno."</string>
+    <string name="scn_gid_warm_night_onepoint">"Sempre que possível,
+incluir elementos
+de iluminação
+na foto."</string>
+    <string name="scn_gid_warm_night_recom_lens">"Lente Grande-Angular
+Teleobjetiva"</string>
+    <string name="scn_gid_warm_night_step_up">"Alterar o
+equi. brancos p/
+alterar a sensação."</string>
+    <string name="scn_gid_warm_portrait">"O tom de cor
+quente cria uma
+imagem com uma
+sensação relaxante."</string>
+    <string name="scn_gid_warm_portrait_onepoint">"Escolher cenas c/ luz
+indireta ou evitar
+luz forte do sol."</string>
+    <string name="scn_gid_warm_portrait_recom_lens">Lente zoom padrão</string>
+    <string name="scn_gid_warm_portrait_step_up">"Alterar o equilíbrio
+dos brancos para
+alterar a sensação."</string>
+    <string name="setup_ap_setting">Configuração do destino da conexão</string>
+    <string name="setup_app_setting">Função do aplicativo</string>
+    <string name="setup_ask_app_init">As configurações do aplicativo serão restabelecidas. Continuar?</string>
+    <string name="setup_ask_camera_format">Se formatar, todos os dados do cartão do dispositivo conectado serão eliminados. Continuar a formatação?</string>
+    <string name="setup_ask_camera_init">As configurações do dispositivo conectado serão restauradas nas originais de fábrica. Continuar?</string>
+    <string name="setup_ask_camera_number_reset">Os números de arquivos de fotografias e MP4 do dispositivo conectado serão restaurados. Continuar?</string>
+    <string name="setup_ask_camera_power_off">Desligar o dispositivo conectado?</string>
+    <string name="setup_avchd_quality">Qualidade de playback AVCHD</string>
+    <string name="setup_avchd_quality_high">Alta qualidade</string>
+    <string name="setup_avchd_quality_normal">Qualidade padrão</string>
+    <string name="setup_btn_complete">Concluir</string>
+    <string name="setup_btn_delete">Apagar</string>
+    <string name="setup_btn_edit">Editar</string>
+    <string name="setup_btn_finish">Concluir</string>
+    <string name="setup_btn_format">Formato</string>
+    <string name="setup_btn_init">Ajustes Iniciais</string>
+    <string name="setup_btn_power_off">Desligar</string>
+    <string name="setup_btn_priority_down">Diminuir a prioridade</string>
+    <string name="setup_btn_priority_up">Aumentar a prioridade</string>
+    <string name="setup_btn_regist">Registrar</string>
+    <string name="setup_btn_reset">Reset Números</string>
+    <string name="setup_btn_return">Voltar</string>
+    <string name="setup_byte">bytes</string>
+    <string name="setup_cam_ssid_setting">Configuração de senha Wi-Fi/SSID</string>
+    <string name="setup_cam_ssid_setting_message">"A senha do Wi-Fi e SSID da câmera foi inicializada.
+Altere a senha do Wi-Fi e SSID."</string>
+    <string name="setup_cam_ssid_setting_message_recomend">O SSID da câmera e a senha do Wi-Fi estão configurados nas definições originais. Recomendamos alterar o SSID e a senha do Wi-Fi. Para alterá-los, selecione “Config. Wi-Fi câmera” → “Config. SSID câmera”.</string>
+    <string name="setup_cmn_wifi_address">Endereço Wi-Fi</string>
+    <string name="setup_common_connect_type">Podem ser usados ambos Wi-Fi e Wi-Fi Direct. Selecione o método de conexão.</string>
+    <string name="setup_connect">Conf. dest. conexão</string>
+    <string name="setup_connect_no_camera">"Impossível encontrar a câmera.
+Terminada a busca."</string>
+    <string name="setup_easy_wifi_hmmon_cam_id">Identificação do dispositivo Monitor doméstico da câmera</string>
+    <string name="setup_easy_wifi_hmmon_exp">A identificação do dispositivo Monitor doméstico necessária para iniciar a função Monitor doméstico pode ser obtida da câmera.</string>
+    <string name="setup_easy_wifi_hmmon_sp_id">Identificação do dispositivo Monitor doméstico do smartphone</string>
+    <string name="setup_easy_wifi_input">Introdução manual</string>
+    <string name="setup_easy_wifi_not_registerd">Não registrado</string>
+    <string name="setup_easy_wifi_setup_title">Configurações iniciais das funções Wi-Fi</string>
+    <string name="setup_easy_wifi_use_sp_login_id">Use o ID de login do seu smartphone</string>
+    <string name="setup_fps_value1">5</string>
+    <string name="setup_fps_value2">1</string>
+    <string name="setup_geo_tagging">Configurações do histórico de localização</string>
+    <string name="setup_help">Ajuda</string>
+    <string name="setup_imageshuttle_network_name_explain">"Os nomes DLNA exibidos em outros dispositivos podem ser alterados.
+Os caracteres digitados podem não ser exibidos corretamente dependendo dos dispositivos conectados.
+As alterações dos nomes serão efetivas na próxima vez que executar este aplicativo."</string>
+    <string name="setup_iso">ISO</string>
+    <string name="setup_iso_color_temp">Temperatura de cor</string>
+    <string name="setup_jump_rec_1">1 (Sensibil.: Baixa)</string>
+    <string name="setup_jump_rec_2">2</string>
+    <string name="setup_jump_rec_3">3</string>
+    <string name="setup_jump_rec_4">4</string>
+    <string name="setup_jump_rec_5">5 (Sensibil.: Alta)</string>
+    <string name="setup_jump_rec_high">Alta</string>
+    <string name="setup_jump_rec_low">Baixa</string>
+    <string name="setup_jump_rec_mid">Média</string>
+    <string name="setup_jump_rec_off">DESLIGADO</string>
+    <string name="setup_language_code">pt-BR</string>
+    <string name="setup_liveview">Conf. Contr. ao Vivo</string>
+    <string name="setup_liveview_lens_warning">Aviso extensão lente</string>
+    <string name="setup_liveview_quality">Qual. Contr. ao Vivo</string>
+    <string name="setup_liveview_selfshot">Modo autoretrato</string>
+    <string name="setup_menu">Menu</string>
+    <string name="setup_msg_ask_cloud_setup">A câmera conectada deve ser compatível com a função Sincron. nuvem da LUMIX CLUB. Continuar com as configurações atuais?</string>
+    <string name="setup_msg_ask_geotag_setup">A câmera conectada deve ser compatível com a função Histórico de localização. Continuar com as configurações atuais?</string>
+    <string name="setup_msg_ask_remote_access_setup">A câmera conectada deve ser compatível com a função Monitoração doméstica. Continuar com as configurações atuais?</string>
+    <string name="setup_msg_camera_disconnected">"Caiu a conexão.
+Começa no modo de reprodução local."</string>
+    <string name="setup_msg_camera_lens_error">A condição de instalação da lente foi alterada.</string>
+    <string name="setup_msg_camera_memu_update">O menu foi atualizado.</string>
+    <string name="setup_msg_gps_logging_1st">Esta função só pode ser usada com dispositivos que suportam Histórico de localização.</string>
+    <string name="setup_msg_remote_access_1st">Esta função só pode ser usada com dispositivos que suportam Monitor doméstico.</string>
+    <string name="setup_msg_remote_access_3g_necessary_a">Para iniciar a função Monitor Doméstico, é necessário conectar via 3G ou linha de telefone celular semelhante. Alterar a conexão?</string>
+    <string name="setup_msg_remote_access_id_necessary">Defina o destino da conexão.</string>
+    <string name="setup_msg_start_remote_watch">Iniciar monitoração do monitor doméstico?</string>
+    <string name="setup_mtu_value1">1280 byte</string>
+    <string name="setup_mtu_value2">576 byte</string>
+    <string name="setup_name_invalid_char_code">"Os caracteres digitados podem não ser exibidos corretamente dependendo do destino da conexão.
+Deseja continuar o registro?"</string>
+    <string name="setup_name_over_length">O número de caracteres que podem ser registrados é 20.</string>
+    <string name="setup_network_name">Nome</string>
+    <string name="setup_network_name_explain">"Os nomes DLNA exibidos em outros dispositivos podem ser alterados.
+Os caracteres digitados podem não ser exibidos corretamente dependendo dos dispositivos conectados.
+As alterações dos nomes serão efetivas na próxima vez que executar este aplicativo."</string>
+    <string name="setup_network_name_setting">Nome da rede</string>
+    <string name="setup_now_format" />
+    <string name="setup_now_init">Aguarde...</string>
+    <string name="setup_now_reset">Aguarde...</string>
+    <string name="setup_off">DESLIGADO</string>
+    <string name="setup_on">LIGADO</string>
+    <string name="setup_picmate_activate">Inic. uso LUMIX CLUB</string>
+    <string name="setup_picmate_add_equip">Adicionar</string>
+    <string name="setup_picmate_already_have_id">Se já possui um ID de login</string>
+    <string name="setup_picmate_btn_agree">Concordo</string>
+    <string name="setup_picmate_btn_longin">Login</string>
+    <string name="setup_picmate_btn_new_regist">Cadastro</string>
+    <string name="setup_picmate_btn_not_agree">Não concordo</string>
+    <string name="setup_picmate_btn_regist">Registrar</string>
+    <string name="setup_picmate_btn_sync_login_id">Registrar a mesma identicação de login LUMIX CLUB da câmera</string>
+    <string name="setup_picmate_btn_sync_need_check_login">O ID de login ou a senha foi alterado. Verifique se pode fazer login no LUMIX CLUB com este ID.</string>
+    <string name="setup_picmate_btn_unregist">Não registrar</string>
+    <string name="setup_picmate_cam_or_app_have_id">Se deseja usar o mesmo ID de login para ambos este aplicativo e a câmera</string>
+    <string name="setup_picmate_cloud">Conf. sincron. nuvem</string>
+    <string name="setup_picmate_cloud_action_capacity_over">Ação: excedeu limite</string>
+    <string name="setup_picmate_cloud_action_confirm_update">Confirmar a atualização</string>
+    <string name="setup_picmate_cloud_auto_sync">Sincron. automatic.</string>
+    <string name="setup_picmate_cloud_confirm">Confirmar sempre</string>
+    <string name="setup_picmate_cloud_overwrite">Substituir sempre</string>
+    <string name="setup_picmate_cloud_picsize_recieving">Tam. imagem (downl.)</string>
+    <string name="setup_picmate_cloud_picsize_sending">Tam. imagem (upload)</string>
+    <string name="setup_picmate_cloud_using">Usar sincron. nuvem</string>
+    <string name="setup_picmate_label_access_number">Nº acesso</string>
+    <string name="setup_picmate_label_address_number">Nº endereço</string>
+    <string name="setup_picmate_label_comment_input">Digite uma observação sobre a imagem.</string>
+    <string name="setup_picmate_label_login_id">Id. login</string>
+    <string name="setup_picmate_label_login_password">Senha</string>
+    <string name="setup_picmate_label_login_password_check">Confirmar a senha</string>
+    <string name="setup_picmate_label_login_regist">Digite a senha de registro</string>
+    <string name="setup_picmate_label_login_regist2">Digite a senha de registro</string>
+    <string name="setup_picmate_label_name">Nome</string>
+    <string name="setup_picmate_manage_id">Geren. ident. login</string>
+    <string name="setup_picmate_not_have_id">Se não possui um ID de login</string>
+    <string name="setup_picmate_regist_equip">Registrar disposit. AV</string>
+    <string name="setup_picmate_regist_service">Regist. serv. Web</string>
+    <string name="setup_picmate_service_sync">Sincr. lista serviços</string>
+    <string name="setup_picmate_title_av_list">Destino dispositivo AV</string>
+    <string name="setup_picmate_title_av_regist">Inform. disposit. AV</string>
+    <string name="setup_picmate_title_comment_input">Digitar observações</string>
+    <string name="setup_picmate_title_login_info">Digitar informação login</string>
+    <string name="setup_picmate_title_login_regist">Digitar a senha para registrar</string>
+    <string name="setup_picmate_title_web">Certificação LUMIX CLUB</string>
+    <string name="setup_picmate_upload_image">Imagens carregadas</string>
+    <string name="setup_picsize_fullhd">Full HD (1920 x 1080)</string>
+    <string name="setup_picsize_large">Grande (original)</string>
+    <string name="setup_picsize_middle">Médio</string>
+    <string name="setup_picsize_original">Ilimitado (pixels totais)</string>
+    <string name="setup_picsize_recommend">Recomendado</string>
+    <string name="setup_picsize_small">Pequeno</string>
+    <string name="setup_picsize_vga">VGA (640 x 480)</string>
+    <string name="setup_ply_picture_sort">Ordenar foto</string>
+    <string name="setup_ply_picture_sort_name">FILE NAME</string>
+    <string name="setup_ply_picture_sort_rectime">DATE/TIME</string>
+    <string name="setup_rec">Config. gravação</string>
+    <string name="setup_rec_time">Tempo de gravação</string>
+    <string name="setup_rectime_explain">O tempo real de gravação pode ser menos do que o definido anteriormente dependendo do estado da câmera no início da gravação do vídeo.</string>
+    <string name="setup_remote_access_equip_id">Identificação do dispositivo</string>
+    <string name="setup_remote_access_equip_pw">Senha</string>
+    <string name="setup_remote_access_qr_button">Cód QR</string>
+    <string name="setup_scn_gid_btn_title_finish_setting">Definir</string>
+    <string name="setup_scn_gid_btn_title_photoshot">Registrar</string>
+    <string name="setup_scn_gid_navigation_title">Guia de cena</string>
+    <string name="setup_set_picmate_id_to_camera">Def ID login câmera</string>
+    <string name="setup_smaope_camera_picsize">Tam: Cópia da câm.</string>
+    <string name="setup_smaope_delete_gps">Apag. local. upload</string>
+    <string name="setup_smaope_download_file_format">Formato de salvamento de imagens RAW+JPEG</string>
+    <string name="setup_smaope_picamate">Config. LUMIX CLUB</string>
+    <string name="setup_smaope_picjmp">Conf. “Comp. imag.”</string>
+    <string name="setup_smaope_player_select">Seleção do player de vídeo</string>
+    <string name="setup_smaope_player_select_summary_off">Reproduzir usando o player do Image App</string>
+    <string name="setup_smaope_player_select_summary_off_leica">Reproduzir usando o player do Image Shuttle</string>
+    <string name="setup_smaope_player_select_summary_on">Selecionar o player e reproduzir</string>
+    <string name="setup_smaope_web_picsize">Tam. im. (upl. Web)</string>
+    <string name="setup_smaope_work_charging">Transf.: só recarr.</string>
+    <string name="setup_smaope_work_wifi_connecting">Transf.: só Wi-Fi</string>
+    <string name="setup_smart_app">Smart App</string>
+    <string name="setup_smart_operation">Config. reprodução</string>
+    <string name="setup_ssid_ap_title">Ajust. Ponto Acesso Sem Fio</string>
+    <string name="setup_ssid_live_title">Configurações LIVE</string>
+    <string name="setup_ssid_search">Procurar</string>
+    <string name="setup_start_remote_ext_setting">Configurações avançadas</string>
+    <string name="setup_start_remote_mtu">MTU</string>
+    <string name="setup_start_remote_watch">Iniciar o Monitor doméstico</string>
+    <string name="setup_terms">Termos de uso</string>
+    <string name="setup_time_not_setting">Não definido</string>
+    <string name="setup_time_sync">Ajuste do relógio</string>
+    <string name="setup_time_sync_message">"O relógio da câmera não foi ajustado.
+Sincronize a câmera usando o relógio do seu smartphone."</string>
+    <string name="setup_use_remote_watch">Usar Monit Dom</string>
+    <string name="setup_version">Versão</string>
+    <string name="setup_version_info">Informações sobre a versão</string>
+    <string name="setup_video_frame_rate">quad/seg</string>
+    <string name="setup_video_frame_rate_simple">quad/seg</string>
+    <string name="setup_white_balance">Bal. brancos</string>
+    <string name="setup_white_balance_detail_a">A</string>
+    <string name="setup_white_balance_detail_b">B</string>
+    <string name="setup_white_balance_detail_g">G</string>
+    <string name="setup_white_balance_detail_m">M</string>
+    <string name="setup_white_balance_label">EB</string>
+    <string name="setup_white_balance_set_button">SET</string>
+    <string name="setup_white_balance_set_explain">Se tocar no botão abaixo pode definir o equilíbrio de brancos.</string>
+    <string name="setup_wifi_encryption">Método de codificação</string>
+    <string name="setup_wifi_encryption_aes">AES</string>
+    <string name="setup_wifi_encryption_none">Nenhum</string>
+    <string name="setup_wifi_encryption_tkip">TKIP</string>
+    <string name="setup_wifi_encryption_wep">WEP</string>
+    <string name="setup_wifi_security">Segurança</string>
+    <string name="setup_wifi_security_open">Nenhuma</string>
+    <string name="setup_wifi_security_shared">WPA2</string>
+    <string name="setup_wifi_security_wpa">WEP</string>
+    <string name="setup_wifi_security_wpa2">WPA</string>
+    <string name="setup_wifi_setting">Configuração do Wi-Fi</string>
+    <string name="setup_wifi_setting_message">Faça a configuração durante a difusão (Live Cast) ou ao fazer a conexão periférica do equipamento via um ponto de acesso.</string>
+    <string name="slow_zoom_speed_fast">Rápida</string>
+    <string name="slow_zoom_speed_setting">Velocidade do zoom</string>
+    <string name="slow_zoom_speed_slow">느림</string>
+    <string name="slow_zoom_speed_standard">Normal</string>
+    <string name="smartop_albumlist_title">Selecionar a pasta ou álbum que deseja exibir.</string>
+    <string name="smartop_confirm_delete">Excluir o(s) arquivo(s) selecionado(s)?</string>
+    <string name="smartop_copy_err">Falha ao fazer o download</string>
+    <string name="smartop_copy_error_title">Erro</string>
+    <string name="smartop_msg_comp_copying">Cópia concluída.</string>
+    <string name="smartop_no_send_error_title">Atenção</string>
+    <string name="smartop_re_conect_title">"Conexão interrompida.
+Selecionar o destino de referência."</string>
+    <string name="snap_movie_bgm_title_1">Nº 1</string>
+    <string name="snap_movie_bgm_title_2">Nº 2</string>
+    <string name="snap_movie_bgm_title_3">Nº 3</string>
+    <string name="snap_movie_bgm_title_4">Nº 4</string>
+    <string name="snap_movie_bgm_title_5">Nº 5</string>
+    <string name="snap_movie_bgm_title_6">Nº 6</string>
+    <string name="snap_movie_bgm_title_7">Nº 7</string>
+    <string name="snap_movie_bgm_title_8">Nº 8</string>
+    <string name="snap_movie_content_time">seg.</string>
+    <string name="tab_home_button">Posição original</string>
+    <string name="text_4k_crop_end_frame">Sair</string>
+    <string name="text_4k_crop_frame_setting2">Ajustar</string>
+    <string name="text_4k_crop_start_frame">Iniciar</string>
+    <string name="title_connection_error">Erro de conexão</string>
+    <string name="title_use_functab" />
+    <string name="title_usegeo">Usar Hist Localiz</string>
+    <string name="touchshare_copied_picture">Imagem(s) copiada(s)</string>
+    <string name="touchshare_copying">Copiando imagem(s)...</string>
+    <string name="touchshare_exit_action">Para sair desta função, toque o botão a seguir.</string>
+    <string name="touchshare_msg_not_connecting">A conexão à câmera foi interrompida.</string>
+    <string name="touchshare_next_touch_action">Para continuar copiando, selecione as imagens na câmera e toque a câmera com o smartphone outra vez.</string>
+    <string name="ugase_agreement_support">"Consulte o site do Google Analytics para obter detalhes sobre os termos de uso e política de privacidade do Google Analytics. 
+Termos de uso do Google Analytics
+http://www.google.com/intl/ja/analytics/tos.html
+Política e regras gerais do Google
+http://www.google.com/intl/ja/policies/privacy/
+
+Caso tenha dúvidas, use as informações de contato nos termos de uso.
+"</string>
+    <string name="ugase_agreement_support_old">Caso tenha dúvidas, use as informações de contato nos termos de uso deste aplicativo.</string>
+    <string name="ugase_agreement_text_1">"(1) Este aplicativo retém um registro com o histórico do usuário deste aplicativo no terminal que você está usando e é equipado com uma função que envia o histórico do usuário a um servidor designado pela Panasonic Corporation (a Empresa, posteriormente no documento). Para fornecer atualizações de software relacionadas a este aplicativo, realizar melhorias ao aplicativo, aumentar a funcionalidade e a conveniência ao cliente, e garantir uma entrega satisfatória de serviços de suporte e tecnologia a clientes, informações técnicas (incluindo informações de uso como gravações, reproduções e transmissões) relacionadas ao equipamento, sistema, dispositivo, software de aplicativo e equipamento periférico do cliente, bem como informações relacionadas ao histórico de uso e registros técnicos deste aplicativo e informações associadas que são criadas e salvas automaticamente quando este aplicativo é usado, são coletadas e armazenadas nos servidores específicos da Empresa e usadas com métodos que não podem identificar clientes individuais. 
+Caso tenha dúvidas, use as informações de contato nos termos de uso.
+"</string>
+    <string name="ugase_agreement_text_2">"(2) Este aplicativo da Panasonic Corporation (a Empresa, posteriormente no documento) usa o Google Analytics, um serviço fornecido pelo Google Inc. (doravante Google) para fornecer atualizações de software relacionadas a este aplicativo, realizar melhorias ao aplicativo, aumentar a conveniência ao cliente e a funcionalidade, garantir a entrega de serviços de suporte ao cliente e para propósitos de marketing (promoção de vendas). 
+Quando o Google Analytics é usado neste aplicativo, com base no cookie emitido pela Empresa, informações técnicas (incluindo informações de operação e uso, como o status de exibição da visualização da tela, gravação, reprodução e transmissões) relacionados ao equipamento, dispositivo, sistema, software de aplicativo, equipamento periférico e dispositivos conectados do cliente, bem como informações relacionadas ao histórico do uso e registros técnicos deste aplicativo e informações associadas, o país de residência do cliente ou idioma usado (estas informações serão doravante denominadas como \"informações do cliente \") que são criadas e salvas automaticamente quando este aplicativo é usado, são coletadas, registradas e analisadas automaticamente pelo Google. 
+A Empresa recebe os resultados da análise do Google para compreender as informações do cliente. As informações do cliente coletadas, gravadas e analisadas pelo Google Analytics não contêm dados que identificam os clientes individualmente. 
+Essas informações também são controladas pelo Google com base na política de privacidade do Google. 
+"</string>
+    <string name="ugase_agreement_text_old">Este aplicativo contém uma função que mantém as condições de uso do dispositivo usado pelo cliente e o envia a Panasonic Corporation (esta empresa, posteriormente no documento). Para fornecer atualizações de software relacionadas a este aplicativo, realizar melhorias ao aplicativo, aumentar a funcionalidade e a conveniência ao cliente, e garantir uma entrega satisfatória de serviços de suporte e tecnologia a clientes, informações técnicas (incluindo informações de uso como gravações, reproduções e transmissões) relacionadas aos equipamentos, sistemas, dispositivos, software de aplicativo e equipamentos periféricos do cliente, bem como informações relacionadas ao histórico de uso e registros técnicos deste aplicativo e informações associadas que são criadas e salvas automaticamente quando este aplicativo é usado, são coletadas e armazenadas nos servidores específicos desta empresa e usadas com métodos que não podem identificar clientes.</string>
+    <string name="ugase_agreement_title">Acordo de aquisição e uso de dados</string>
+    <string name="ugase_agreement_title_old">Acordo de uso de dados</string>
+    <string name="ugase_conditions">Condições de uso</string>
+    <string name="ugase_explain">As condições de uso do aplicativo serão enviadas automaticamente ao servidor. Estas configurações podem ser alteradas posteriormente.</string>
+    <string name="ugase_explain_menu">\"Menu \" -> \"Função do aplicativo \" -> \"Condições de uso \" -> \"Enviar automaticamente \"</string>
+    <string name="ugase_explain_menu_cookie_policy">\"Menu \" -> \"Função do aplicativo \" -> \"Condições de uso \" -> \"Enviar automaticamente \"</string>
+    <string name="ugase_send_automatically">Enviar automaticamente</string>
+    <string name="ugase_send_usage_conditions">Enviar condições de uso</string>
+    <string name="wf_msg_confirm_regain">"A identificação antiga adquirida com este aplicativo será desativada.
+Registrar novamente?"</string>
+    <string name="wifi_connect_no">Não</string>
+    <string name="wifi_connect_yes">Sim</string>
+    <string name="wifi_disconnect">"O Wi-Fi deve ser ativado para conectar à câmera.
+Ativar o Wi-Fi?
+
+Ao conectar à câmera, o upload usando outros aplicativos será cancelado. Certifique-se de que o upload foi concluído."</string>
+    <string name="wifi_password_input">Digite a senha.</string>
+    <string name="wifi_password_input2">"A senha está incorreta.
+Digite a senha outra vez."</string>
+    <string name="wifi_password_visible">Exibir senha</string>
+    <string name="wifi_st_unknown">"Impossível ativar o Wi-Fi.
+Verifique as configurações de Wi-Fi."</string>
+    <string name="wifi_wifi_setting">Configuração do Wi-Fi</string>
+    <string name="wipe_frame_color_gray">Cinzento</string>
+    <string name="wipe_frame_color_green">Verde</string>
+    <string name="wipe_frame_color_orange">Alaranjado</string>
+    <string name="wipe_frame_color_pink">Cor-de-rosa</string>
+    <string name="wipe_frame_color_shadow">Sombra</string>
+    <string name="wipe_frame_less">Sem moldura</string>
+</resources>

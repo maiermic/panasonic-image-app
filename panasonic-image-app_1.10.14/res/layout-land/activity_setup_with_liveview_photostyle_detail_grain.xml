@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:gravity="center" android:id="@id/titleTextView" android:background="@drawable/main_mode_back_color" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="title" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:baselineAligned="false" android:layout_weight="1.0">
+        <LinearLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <com.panasonic.avc.cng.view.parts.LiveViewLumixSurface android:id="@id/liveViewLumixSurface" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:background="@drawable/bg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.7">
+            <LinearLayout android:orientation="vertical" android:id="@id/sliderBar1" android:padding="@dimen/padding_medium" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="1.5" />
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="6.0">
+                    <LinearLayout android:gravity="right" android:orientation="vertical" android:paddingTop="@dimen/sliderbarV_paddingTop" android:paddingBottom="@dimen/sliderbarV_paddingBottom" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                        <TextView android:textAppearance="?android:textAppearanceSmall" android:gravity="center|right|top" android:id="@id/sliderMaxValueTextView1" android:layout_width="wrap_content" android:layout_height="0.0dip" android:text="+5" android:layout_weight="1.0" />
+                        <TextView android:textAppearance="?android:textAppearanceSmall" android:gravity="center|right" android:id="@id/sliderZeroValueTextView1" android:layout_width="wrap_content" android:layout_height="0.0dip" android:text="0" android:layout_weight="1.0" />
+                        <TextView android:textAppearance="?android:textAppearanceSmall" android:gravity="bottom|center|right" android:id="@id/sliderMinValueTextView1" android:layout_width="wrap_content" android:layout_height="0.0dip" android:text="-5" android:layout_weight="1.0" />
+                    </LinearLayout>
+                    <com.panasonic.avc.cng.view.parts.VerticalSeekBar android:id="@id/sliderSeekBarV1" android:paddingLeft="@dimen/sliderbarV_paddingLeft" android:paddingTop="@dimen/sliderbarV_paddingTop" android:paddingRight="@dimen/sliderbarV_paddingRight" android:paddingBottom="@dimen/sliderbarV_paddingBottom" android:layout_width="wrap_content" android:layout_height="fill_parent" style="@style/SliderBarV" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                    <TextView android:textSize="@dimen/live_view_icon_font_size_xlarge" android:gravity="center" android:id="@id/currentValueTextView1" android:layout_width="fill_parent" android:layout_height="0.0dip" android:adjustViewBounds="true" android:layout_weight="1.0" />
+                    <ImageView android:layout_gravity="left" android:id="@id/Contrast" android:paddingBottom="@dimen/photostyle_icon_paddingLeft" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="@dimen/live_view_icon_lumix_margin" android:src="@drawable/setup_pstyle_contrast" android:adjustViewBounds="true" android:layout_weight="1.0" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/sliderBar2" android:padding="@dimen/padding_medium" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="1.5" />
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="6.0">
+                    <LinearLayout android:gravity="right" android:orientation="vertical" android:paddingTop="@dimen/sliderbarV_paddingTop" android:paddingBottom="@dimen/sliderbarV_paddingBottom" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                        <TextView android:textAppearance="?android:textAppearanceSmall" android:gravity="center|right|top" android:id="@id/sliderMaxValueTextView2" android:layout_width="wrap_content" android:layout_height="0.0dip" android:text="+5" android:layout_weight="1.0" />
+                        <TextView android:textAppearance="?android:textAppearanceSmall" android:gravity="center|right" android:id="@id/sliderZeroValueTextView2" android:layout_width="wrap_content" android:layout_height="0.0dip" android:text="0" android:layout_weight="1.0" />
+                        <TextView android:textAppearance="?android:textAppearanceSmall" android:gravity="bottom|center|right" android:id="@id/sliderMinValueTextView2" android:layout_width="wrap_content" android:layout_height="0.0dip" android:text="-5" android:layout_weight="1.0" />
+                    </LinearLayout>
+                    <com.panasonic.avc.cng.view.parts.VerticalSeekBar android:id="@id/sliderSeekBarV2" android:paddingLeft="@dimen/sliderbarV_paddingLeft" android:paddingTop="@dimen/sliderbarV_paddingTop" android:paddingRight="@dimen/sliderbarV_paddingRight" android:paddingBottom="@dimen/sliderbarV_paddingBottom" android:layout_width="wrap_content" android:layout_height="fill_parent" style="@style/SliderBarV" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                    <TextView android:textSize="@dimen/live_view_icon_font_size_xlarge" android:gravity="center" android:id="@id/currentValueTextView2" android:layout_width="fill_parent" android:layout_height="0.0dip" android:adjustViewBounds="true" android:layout_weight="1.0" />
+                    <ImageView android:id="@id/Sharpness" android:paddingBottom="@dimen/photostyle_icon_paddingLeft" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="@dimen/live_view_icon_lumix_margin" android:src="@drawable/setup_pstyle_sharpness" android:adjustViewBounds="true" android:layout_weight="1.0" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/sliderBar3" android:padding="@dimen/padding_medium" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/photostyle_icon_paddingTop" android:paddingRight="@dimen/photostyle_icon_paddingRight" android:paddingBottom="@dimen/photostyle_icon_paddingLeft" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="1.5">
+                    <ImageButton android:id="@id/PhotoStyleColorWithGrain" android:background="#00000000" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:scaleType="fitCenter" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="6.0">
+                    <LinearLayout android:gravity="right" android:orientation="vertical" android:paddingTop="@dimen/sliderbarV_paddingTop" android:paddingBottom="@dimen/sliderbarV_paddingBottom" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                        <TextView android:textAppearance="?android:textAppearanceSmall" android:gravity="center|right|top" android:id="@id/sliderMaxValueTextView3" android:layout_width="wrap_content" android:layout_height="0.0dip" android:text="+5" android:layout_weight="1.0" />
+                        <TextView android:textAppearance="?android:textAppearanceSmall" android:gravity="center|right" android:id="@id/sliderZeroValueTextView3" android:layout_width="wrap_content" android:layout_height="0.0dip" android:text="0" android:layout_weight="1.0" />
+                        <TextView android:textAppearance="?android:textAppearanceSmall" android:gravity="bottom|center|right" android:id="@id/sliderMinValueTextView3" android:layout_width="wrap_content" android:layout_height="0.0dip" android:text="-5" android:layout_weight="1.0" />
+                    </LinearLayout>
+                    <com.panasonic.avc.cng.view.parts.VerticalSeekBar android:id="@id/sliderSeekBarV3" android:paddingLeft="@dimen/sliderbarV_paddingLeft" android:paddingTop="@dimen/sliderbarV_paddingTop" android:paddingRight="@dimen/sliderbarV_paddingRight" android:paddingBottom="@dimen/sliderbarV_paddingBottom" android:layout_width="wrap_content" android:layout_height="fill_parent" style="@style/SliderBarV" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                    <TextView android:textSize="@dimen/live_view_icon_font_size_xlarge" android:gravity="center" android:id="@id/currentValueTextView3" android:layout_width="fill_parent" android:layout_height="0.0dip" android:adjustViewBounds="true" android:layout_weight="1.0" />
+                    <ImageView android:id="@id/Noise_Reduction" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="@dimen/live_view_icon_lumix_margin" android:src="@drawable/setup_pstyle_noise_reduction" android:adjustViewBounds="true" android:layout_weight="1.0" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/sliderBar4" android:padding="@dimen/padding_medium" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/photostyle_icon_paddingTop" android:paddingRight="@dimen/photostyle_icon_paddingRight" android:paddingBottom="@dimen/photostyle_icon_paddingLeft" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="1.5">
+                    <FrameLayout android:layout_width="wrap_content" android:layout_height="fill_parent">
+                        <ImageButton android:id="@id/PhotoStyleColorOnly" android:background="#00000000" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:scaleType="fitCenter" />
+                        <ImageButton android:id="@id/PhotoStyleGrain" android:background="#00000000" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:scaleType="fitCenter" />
+                    </FrameLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="6.0">
+                    <LinearLayout android:gravity="right" android:orientation="vertical" android:paddingTop="@dimen/sliderbarV_paddingTop" android:paddingBottom="@dimen/sliderbarV_paddingBottom" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                        <TextView android:textAppearance="?android:textAppearanceSmall" android:gravity="center|right|top" android:id="@id/sliderMaxValueTextView4" android:layout_width="wrap_content" android:layout_height="0.0dip" android:text="+5" android:layout_weight="1.0" />
+                        <TextView android:textAppearance="?android:textAppearanceSmall" android:gravity="center|right" android:id="@id/sliderZeroValueTextView4" android:layout_width="wrap_content" android:layout_height="0.0dip" android:text="0" android:layout_weight="1.0" />
+                        <TextView android:textAppearance="?android:textAppearanceSmall" android:gravity="bottom|center|right" android:id="@id/sliderMinValueTextView4" android:layout_width="wrap_content" android:layout_height="0.0dip" android:text="-5" android:layout_weight="1.0" />
+                    </LinearLayout>
+                    <com.panasonic.avc.cng.view.parts.VerticalSeekBar android:id="@id/sliderSeekBarV4" android:paddingLeft="@dimen/sliderbarV_paddingLeft" android:paddingTop="@dimen/sliderbarV_paddingTop" android:paddingRight="@dimen/sliderbarV_paddingRight" android:paddingBottom="@dimen/sliderbarV_paddingBottom" android:layout_width="wrap_content" android:layout_height="fill_parent" style="@style/SliderBarV" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                    <TextView android:textSize="@dimen/live_view_icon_font_size_xlarge" android:gravity="center" android:id="@id/currentValueTextView4" android:layout_width="fill_parent" android:layout_height="0.0dip" android:adjustViewBounds="true" android:layout_weight="1.0" />
+                    <ImageView android:id="@id/Saturation" android:paddingBottom="@dimen/photostyle_icon_paddingLeft" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="@dimen/live_view_icon_lumix_margin" android:src="@drawable/setup_pstyle_saturation" android:adjustViewBounds="true" android:layout_weight="1.0" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

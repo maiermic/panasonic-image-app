@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:title="@string/setup_use_remote_watch" android:key="UseRemoteWatch" android:defaultValue="false" android:summaryOn="@string/setup_on" android:summaryOff="@string/setup_off" android:disableDependentsState="false" />
+    <PreferenceScreen android:title="@string/setup_connect" android:key="ConnectSetting" android:dependency="UseRemoteWatch" />
+    <PreferenceScreen android:title="@string/setup_start_remote_ext_setting" android:key="AdvancedSetting" android:dependency="UseRemoteWatch">
+        <intent android:targetPackage="com.panasonic.avc.cng.imageapp" android:action="android.intent.action.MAIN" android:targetClass="com.panasonic.avc.cng.view.setting.RemoteWatchAdvancedSettingActivity" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/setup_start_remote_watch" android:key="StartRemoteWatch" android:dependency="UseRemoteWatch" />
+</PreferenceScreen>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/live_view_icon_font_size_xxlarge" android:gravity="center" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_medium" android:layout_marginBottom="@dimen/padding_medium" android:text="@string/cmn_bt_remote_controller" android:layout_alignParentTop="true" />
+    <ImageView android:gravity="center" android:id="@id/bluetoothIcon" android:paddingLeft="@dimen/padding_medium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/status_bluetooth_off" android:scaleType="centerInside" android:layout_below="@id/title" android:layout_alignParentLeft="true" />
+    <FrameLayout android:id="@id/connectionStateLayout" android:layout_width="wrap_content" android:layout_height="@dimen/home_top_connection_status_height" android:layout_marginLeft="10.0dip" android:layout_marginRight="36.0dip" android:layout_toRightOf="@id/bluetoothIcon" android:layout_below="@id/title">
+        <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/camera_connect_base3" android:scaleType="fitXY" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/connectingIcon" android:padding="4.0dip" android:layout_width="24.0dip" android:layout_height="fill_parent" android:src="@drawable/no_camera_connected" android:scaleType="centerInside" android:layout_alignParentLeft="true" />
+            <TextView android:textSize="@dimen/live_view_icon_font_size_xxlarge" android:textColor="@drawable/text_color" android:ellipsize="end" android:gravity="center" android:id="@id/textConnect" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="24.0dip" android:text="@string/msg_not_connected" android:singleLine="true" android:layout_toRightOf="@id/connectingIcon" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </FrameLayout>
+    <TextView android:textSize="@dimen/live_view_icon_font_size_xxlarge" android:textColor="#ff00a1ff" android:ellipsize="end" android:gravity="center" android:id="@id/cameraName" android:layout_width="fill_parent" android:layout_height="@dimen/home_top_connection_status_height" android:layout_marginTop="@dimen/padding_medium" android:singleLine="true" android:layout_below="@id/connectionStateLayout" />
+</RelativeLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/linearLayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cmn_connect_mode_wifi" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/detailButton" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cmn_btn_detail" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:onClick="onClickDetail" />
+    </RelativeLayout>
+    <View android:id="@id/divider" android:background="@android:color/white" android:layout_width="wrap_content" android:layout_height="1.0dip" />
+    <LinearLayout android:gravity="center" android:id="@id/selectTextGroup" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/selectText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cmn_msg_wifi_multi" />
+    </LinearLayout>
+    <View android:id="@id/divider2" android:background="@android:color/white" android:layout_width="wrap_content" android:layout_height="1.0dip" />
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <ListView android:id="@id/listView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:choiceMode="singleChoice" android:layout_weight="1.0" />
+        <LinearLayout android:orientation="vertical" android:id="@id/nothingApTextViewGroup" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <Button android:id="@id/dummybotton1" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="3.0" />
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:gravity="center|left" android:id="@id/nothingApTextView" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/msg_no_access_point_found" android:layout_weight="1.0" />
+            <Button android:id="@id/dummybotton2" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="3.0" />
+        </LinearLayout>
+    </FrameLayout>
+    <View android:id="@id/divider3" android:background="@android:color/white" android:layout_width="wrap_content" android:layout_height="1.0dip" />
+    <FrameLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/ListView1">
+        <Button android:textAppearance="?android:textAppearanceMedium" android:id="@id/updateButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cmn_btn_update" android:onClick="onClickUpdate" />
+        <Button android:textAppearance="?android:textAppearanceMedium" android:id="@id/wifiSettingButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setup_wifi_setting" android:onClick="onClickWifiSetting" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/multiframephotobrowse_menu" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true" layout="@layout/multiframephotobrowse_menu" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:ellipsize="marquee" android:id="@id/playSelectFolderName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/multiframephoto_info" android:layout_below="@id/multiframephotobrowse_menu" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+        <GridView android:gravity="center" android:id="@id/multiframephoto_gridView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:horizontalSpacing="@dimen/padding_medium" android:verticalSpacing="@dimen/padding_medium" android:stretchMode="columnWidth" android:columnWidth="96.0dip" android:numColumns="auto_fit" />
+        <TextView android:textColor="@android:color/white" android:gravity="center" android:id="@id/multiframephoto_gridViewOverlayMessage" android:background="#ff000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <include android:id="@id/multiframephoto_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/primary_menu" android:layout_centerHorizontal="true" android:layout_centerVertical="true" layout="@layout/highlight_info" />
+    <include android:id="@id/primary_menu" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true" layout="@layout/primary_menu" />
+</RelativeLayout>

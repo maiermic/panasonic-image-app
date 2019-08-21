@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#00000000" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="3.0">
+            <ImageButton android:layout_gravity="center" android:background="#00000000" android:visibility="invisible" android:layout_width="@dimen/live_view_lumix_button_medium" android:layout_height="fill_parent" android:layout_margin="@dimen/margin_small" android:src="@drawable/no_label_button" android:scaleType="fitCenter" android:layout_centerInParent="true" />
+            <RelativeLayout android:layout_gravity="center" android:layout_width="@dimen/live_view_lumix_button_medium" android:layout_height="fill_parent" android:layout_margin="@dimen/margin_small">
+                <ImageButton android:id="@id/SlideMenuControlView_btn_3" android:background="#00000000" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/btn_no_label" android:scaleType="fitCenter" android:layout_centerInParent="true" android:onClick="onClickOffButton" />
+                <TextView android:textSize="@dimen/live_view_lumix_font_size" android:gravity="center" android:id="@id/SlideMenuControlView_txt_3" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <ImageButton android:layout_gravity="center" android:background="#00000000" android:visibility="invisible" android:layout_width="@dimen/live_view_lumix_button_medium" android:layout_height="fill_parent" android:layout_margin="@dimen/margin_small" android:src="@drawable/no_label_button" android:scaleType="fitCenter" android:layout_centerInParent="true" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="3.0">
+            <FrameLayout android:layout_gravity="center" android:layout_width="@dimen/live_view_lumix_button_medium" android:layout_height="fill_parent" android:layout_margin="@dimen/margin_small" android:layout_centerInParent="true">
+                <ImageButton android:layout_gravity="center" android:background="#00000000" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/no_label_button" android:scaleType="fitCenter" android:layout_centerInParent="true" />
+                <ImageButton android:layout_gravity="center" android:background="#00000000" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/no_label_button" android:scaleType="fitCenter" android:layout_centerInParent="true" />
+            </FrameLayout>
+            <RelativeLayout android:layout_gravity="center" android:layout_width="@dimen/live_view_lumix_button_medium" android:layout_height="fill_parent" android:layout_margin="@dimen/margin_small" android:layout_centerInParent="true" />
+            <FrameLayout android:layout_gravity="center|right" android:layout_width="@dimen/live_view_lumix_button_medium" android:layout_height="fill_parent" android:layout_margin="@dimen/margin_small">
+                <com.panasonic.avc.cng.view.parts.ImageButtonEx android:layout_gravity="center" android:id="@id/MfZoomInButton" android:background="#00000000" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/mf_zoom_in" android:scaleType="fitCenter" />
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <RelativeLayout android:layout_gravity="center" android:layout_width="@dimen/live_view_lumix_button_medium" android:layout_height="fill_parent" android:layout_margin="@dimen/margin_small" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="top" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="3.0">
+            <ImageButton android:layout_gravity="center" android:background="#00000000" android:visibility="invisible" android:layout_width="@dimen/live_view_lumix_button_medium" android:layout_height="fill_parent" android:layout_margin="@dimen/margin_small" android:src="@drawable/no_label_button" android:scaleType="fitCenter" android:layout_centerInParent="true" />
+            <RelativeLayout android:layout_gravity="center" android:layout_width="@dimen/live_view_lumix_button_medium" android:layout_height="fill_parent" android:layout_margin="@dimen/margin_small">
+                <com.panasonic.avc.cng.view.parts.TwoStateImageButton android:layout_gravity="center" android:id="@id/AssistScaleModeButton" android:background="#00000000" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/mf_pinp_btn" android:scaleType="fitCenter" android:onClick="onClickAssistScaleModeButton" />
+            </RelativeLayout>
+            <ImageButton android:layout_gravity="center" android:background="#00000000" android:visibility="invisible" android:layout_width="@dimen/live_view_lumix_button_medium" android:layout_height="fill_parent" android:layout_margin="@dimen/margin_small" android:src="@drawable/no_label_button" android:scaleType="fitCenter" android:layout_centerInParent="true" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="3.0">
+            <FrameLayout android:layout_gravity="right" android:layout_width="@dimen/live_view_lumix_button_medium" android:layout_height="fill_parent" android:layout_margin="@dimen/margin_small">
+                <ImageButton android:layout_gravity="center" android:background="#00000000" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/no_label_button" android:scaleType="fitCenter" android:layout_centerInParent="true" />
+                <ImageButton android:layout_gravity="center" android:background="#00000000" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/no_label_button" android:scaleType="fitCenter" android:layout_centerInParent="true" />
+            </FrameLayout>
+            <RelativeLayout android:layout_gravity="center" android:layout_width="@dimen/live_view_lumix_button_medium" android:layout_height="fill_parent" android:layout_margin="@dimen/margin_small" />
+            <FrameLayout android:layout_gravity="center|right" android:layout_width="@dimen/live_view_lumix_button_medium" android:layout_height="fill_parent" android:layout_margin="@dimen/margin_small">
+                <com.panasonic.avc.cng.view.parts.ImageButtonEx android:layout_gravity="center" android:id="@id/MfZoomOutButton" android:background="#00000000" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/mf_zoom_out" android:scaleType="fitCenter" />
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <com.panasonic.avc.cng.view.parts.TwoStateImageButton android:layout_gravity="center" android:id="@id/DigitalScopeButton" android:background="#00000000" android:layout_width="@dimen/live_view_lumix_button_medium" android:layout_height="fill_parent" android:layout_margin="@dimen/margin_small" android:src="@drawable/af_pt_scp_expand" android:scaleType="fitCenter" android:onClick="onClickDigitalScopeStartFinishButton" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

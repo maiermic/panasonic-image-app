@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.panasonic.avc.cng.view.cameraconnect.WifiAccessPointItemView android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="22.0sp" android:ellipsize="end" android:id="@id/wifiSsid" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="TextView" android:singleLine="true" android:layout_toLeftOf="@id/wfifStatusLayout" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <FrameLayout android:id="@id/wfifStatusLayout" android:layout_width="30.0dip" android:layout_height="20.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <ImageView android:id="@id/wifiLevel" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/wifi_level_3" />
+        <ImageView android:layout_gravity="bottom|center|right" android:id="@id/wifiPassLock" android:layout_width="12.0dip" android:layout_height="12.0dip" android:src="@android:drawable/ic_lock_idle_lock" />
+    </FrameLayout>
+</com.panasonic.avc.cng.view.cameraconnect.WifiAccessPointItemView>

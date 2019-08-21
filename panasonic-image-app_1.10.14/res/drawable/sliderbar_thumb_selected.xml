@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="ring" android:useLevel="false" android:innerRadius="0.0dip" android:thickness="@dimen/sliderbar_thumbThickness"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <size android:height="@dimen/sliderbar_thumbSize" android:width="@dimen/sliderbar_thumbSize" />
+    <gradient android:startColor="@color/sliderbar_thumb_selected_start" android:endColor="@color/sliderbar_thumb_selected_end" android:type="radial" android:gradientRadius="10.0" />
+</shape>

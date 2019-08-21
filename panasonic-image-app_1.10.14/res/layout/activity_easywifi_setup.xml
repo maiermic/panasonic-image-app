@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="#ffffffff" android:id="@id/easywifi_top_text" android:background="#ff555555" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/setup_easy_wifi_setup_title" android:singleLine="true" android:layout_alignParentTop="true" />
+    <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="#ffffffff" android:id="@id/easywifi_operation_text" android:background="#ff000000" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="@string/easy_setting_select_item" android:layout_below="@id/easywifi_top_text" />
+    <ListView android:id="@id/easywifi_contents_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/easywifi_completed_btn" android:layout_below="@id/easywifi_operation_text" />
+    <Button android:gravity="center" android:id="@id/easywifi_completed_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/setup_btn_finish" android:layout_alignParentBottom="true" android:onClick="onClickCompleted" />
+</RelativeLayout>

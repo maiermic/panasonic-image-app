@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_transfer_conditions" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View style="@style/TransferSelectSectionDividerStyle" />
+        <RadioGroup android:id="@id/radiogroup_transfer_kind" android:layout_width="fill_parent" android:layout_height="wrap_content" android:checkedButton="@id/radio_transkind_picture">
+            <RadioButton android:id="@id/radio_transkind_picture" android:text="@string/func_transfer_only_picture" style="@style/TransferSelectConditionRadioStyle" />
+            <RadioButton android:id="@id/radio_transkind_movie" android:text="@string/func_transfer_only_movie" style="@style/TransferSelectConditionRadioStyle" />
+            <RadioButton android:id="@id/radio_transkind_all" android:text="@string/func_transfer_all" style="@style/TransferSelectConditionRadioStyle" />
+        </RadioGroup>
+        <RadioGroup android:id="@id/radiogroup_transfer_sdcard" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:checkedButton="@id/radio_trans_sdcard1">
+            <View style="@style/TransferSelectSectionDividerStyle" />
+            <RadioButton android:id="@id/radio_trans_sdcard1" android:text="SD1" style="@style/TransferSelectConditionRadioStyle" />
+            <RadioButton android:id="@id/radio_trans_sdcard2" android:text="SD2" style="@style/TransferSelectConditionRadioStyle" />
+        </RadioGroup>
+    </LinearLayout>
+</ScrollView>

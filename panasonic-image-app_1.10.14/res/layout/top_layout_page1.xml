@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/buttonsLayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/sliderToRightPage" android:background="#00000000" android:visibility="invisible" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/slide_arrow_right_n" android:scaleType="center" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_toLeftOf="@id/sliderToRightPage" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <LinearLayout style="@style/GuidanceMenuIconLayoutStyle">
+                <ImageButton android:id="@id/nfcBluetoothButton" android:src="@drawable/bluetooth" android:onClick="onClickBluetooth" style="@style/GuidanceMenuIconStyle" />
+                <TextView android:id="@id/nfcBluetoothCodeTitle" android:text="@string/cmn_bluetooth" android:layout_below="@id/nfcBluetoothButton" style="@style/GuidanceMenuIconTextStyle" />
+            </LinearLayout>
+            <LinearLayout style="@style/GuidanceMenuIconLayoutStyle">
+                <ImageButton android:id="@id/wifiButton" android:src="@drawable/wifi" android:onClick="onClickWifi" style="@style/GuidanceMenuIconStyle" />
+                <TextView android:id="@id/wifiSettingTitle" android:text="@string/cmn_connect_mode_wifi" android:layout_below="@id/wifiButton" style="@style/GuidanceMenuIconTextStyle" />
+            </LinearLayout>
+            <LinearLayout style="@style/GuidanceMenuIconLayoutStyle">
+                <ImageButton android:id="@id/qrCodeButton" android:src="@drawable/qr_code" android:onClick="onClickQR" style="@style/GuidanceMenuIconStyle" />
+                <TextView android:id="@id/qrCodeTitle" android:text="@string/cmn_connect_mode_qr_code" android:layout_below="@id/qrCodeButton" style="@style/GuidanceMenuIconTextStyle" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/nfcView" android:visibility="gone" style="@style/GuidanceMenuIconLayoutStyle">
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/nfcImage" android:src="@drawable/nfc_touch" style="@style/GuidanceMenuIconStyle" />
+                <TextView android:id="@id/nfcTitle" android:text="@string/msg_nfc_de_touch" android:layout_below="@id/nfcImage" style="@style/GuidanceMenuIconTextStyle" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <com.panasonic.avc.cng.view.cameraconnect.GuidanceMenuProgressView android:id="@id/view_guidance_progress" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

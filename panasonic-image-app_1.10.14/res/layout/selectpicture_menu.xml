@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:id="@id/selectPictureActivityName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/movieslideshow_title_picture" android:singleLine="true" android:layout_centerInParent="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <Button android:textColor="@android:color/white" android:id="@id/selectPictureJpegButton" android:background="@drawable/smartoperation_black_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitCenter" android:text="@string/content_type_jpeg" android:layout_alignParentLeft="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        <Button android:textColor="@android:color/white" android:id="@id/selectPictureExecuteButton" android:background="@drawable/smartoperation_black_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitCenter" android:text="@string/cmn_btn_execute_short" android:layout_alignParentRight="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:onClick="OnClickSelectPictureExecute" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:ellipsize="marquee" android:id="@id/GalleryName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/picturejump_location_gallery" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

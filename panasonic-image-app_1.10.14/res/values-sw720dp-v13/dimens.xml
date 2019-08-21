@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="guidance_text_mergin">40.0dip</dimen>
+    <dimen name="home_connection_state_text_size">14.0sp</dimen>
+    <dimen name="live_view_lumix_font_size">15.0dip</dimen>
+    <dimen name="live_view_icon_font_size">9.0dip</dimen>
+    <dimen name="live_view_icon_font_size_xlarge">16.0sp</dimen>
+    <dimen name="live_view_marking_icon_font_size">16.0dip</dimen>
+    <dimen name="padding_small">10.0dip</dimen>
+</resources>

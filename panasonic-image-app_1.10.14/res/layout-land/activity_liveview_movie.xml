@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:baselineAligned="false" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="7.0">
+            <include android:layout_gravity="top" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" layout="@layout/liveview_surface_movie" />
+            <include android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="@dimen/iconview_status_bar_height" layout="@layout/liveview_status_bar_movie" />
+        </LinearLayout>
+        <LinearLayout android:background="@drawable/bg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="3.0">
+            <include android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" layout="@layout/liveview_zoom_bar" />
+            <include android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" layout="@layout/liveview_slowzoom_setting" />
+            <include android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" layout="@layout/liveview_shutter_movie" />
+        </LinearLayout>
+    </LinearLayout>
+    <include android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/primary_menu" />
+</LinearLayout>

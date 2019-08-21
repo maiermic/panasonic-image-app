@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/bluetoothIcon" android:layout_width="@dimen/home_top_left_icon_width" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:src="@drawable/status_bluetooth_off" android:scaleType="centerInside" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <ImageView android:id="@id/wifiIcon" android:layout_width="@dimen/home_top_left_icon_width" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:src="@drawable/status_wifi_off" android:scaleType="centerInside" android:layout_toRightOf="@id/bluetoothIcon" android:layout_alignParentTop="true" />
+    <ImageView android:id="@id/cameraPowerOffButton" android:visibility="invisible" android:layout_width="@dimen/home_top_poweroff_icon_width" android:layout_height="@dimen/home_top_connection_status_height" android:src="@drawable/smartoperation_campowoff_button" android:scaleType="fitXY" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:onClick="OnClickCameraPowerOff" />
+    <FrameLayout android:id="@id/connectionStateLayout" android:layout_width="wrap_content" android:layout_height="@dimen/home_top_connection_status_height" android:layout_marginLeft="10.0dip" android:layout_marginRight="18.0dip" android:layout_toLeftOf="@id/cameraPowerOffButton" android:layout_toRightOf="@id/wifiIcon" android:layout_alignParentTop="true">
+        <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/camera_connect_base3" android:scaleType="fitXY" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/connectingIcon" android:padding="4.0dip" android:layout_width="24.0dip" android:layout_height="fill_parent" android:src="@drawable/no_camera_connected" android:scaleType="centerInside" android:layout_alignParentLeft="true" />
+            <TextView android:textSize="@dimen/home_connection_state_text_size" android:textColor="@drawable/text_color" android:ellipsize="end" android:gravity="center" android:id="@id/textConnect" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="24.0dip" android:text="@string/msg_not_connected" android:singleLine="true" android:layout_toRightOf="@id/connectingIcon" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </FrameLayout>
+    <com.panasonic.avc.cng.view.cameraconnect.GuidanceMenuTopViewPager android:id="@id/topLayoutPager" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/connectionStateLayout" android:layout_alignParentBottom="true" />
+</RelativeLayout>

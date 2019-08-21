@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@id/setup_connect_setting_listView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:gravity="center|left|top" android:id="@id/setup_connect_setting_text_msg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="@string/easy_wifi_setting_ap_msg" />
+    <Button android:id="@id/setup_connect_setting_ok" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/setup_btn_complete" />
+</LinearLayout>

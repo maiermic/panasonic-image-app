@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_margin="@dimen/margin_small" android:layout_weight="1.0">
+        <ImageButton android:layout_gravity="center" android:id="@id/TouchOffButton" android:background="#00000000" android:layout_width="@dimen/live_view_lumix_button_medium" android:layout_height="fill_parent" android:src="@drawable/liveview_lumix_touchaf_off_button" android:scaleType="fitCenter" android:layout_centerInParent="true" android:onClick="onClickOffButton" />
+        <RelativeLayout android:layout_gravity="center" android:id="@id/TimerOffButtonViewGroup" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageButton android:id="@id/TimerOffButton" android:background="#00000000" android:layout_width="@dimen/live_view_lumix_button_medium" android:layout_height="fill_parent" android:src="@drawable/btn_no_label" android:scaleType="fitCenter" android:layout_centerInParent="true" android:onClick="onClickOffButton" />
+            <TextView android:textSize="@dimen/live_view_lumix_font_size" android:gravity="center" android:id="@id/TimerOffTextView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/rec_selftimer_cancel" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <ImageButton android:layout_gravity="center" android:id="@id/ReviewOffButton" android:background="#00000000" android:layout_width="@dimen/live_view_lumix_button_medium" android:layout_height="fill_parent" android:src="@drawable/liveview_lumix_autoreview_off_button" android:scaleType="fitCenter" android:layout_centerInParent="true" android:onClick="onClickOffButton" />
+    </FrameLayout>
+    <include android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_margin="@dimen/margin_small" android:layout_weight="4.0" layout="@layout/liveview_zoom_area_lumix" />
+    <RelativeLayout android:layout_gravity="center" android:id="@id/InfoButtonViewGroup" android:duplicateParentState="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_margin="@dimen/margin_small" android:layout_weight="1.0">
+        <ImageButton android:id="@id/InfoButton" android:background="#00000000" android:duplicateParentState="true" android:layout_width="@dimen/live_view_lumix_button_medium" android:layout_height="fill_parent" android:src="@drawable/no_label_button" android:scaleType="fitCenter" android:layout_centerInParent="true" android:onClick="onClickInfoButton" />
+        <TextView android:textSize="@dimen/live_view_lumix_font_size" android:gravity="center" android:id="@id/InfoButtonTextView" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/rec_btn_icon_display" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</LinearLayout>

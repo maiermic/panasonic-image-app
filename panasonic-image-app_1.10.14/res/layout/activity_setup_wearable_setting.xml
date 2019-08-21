@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/scrollView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@id/linearLayout1" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:gravity="left" android:id="@id/setup_wearable_setting_textView_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="48.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:gravity="left" android:id="@id/setup_wearable_setting_dlna_textView_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="29.0dip" android:text="@string/msg_dlna_play_explain" android:layout_below="@id/setup_wearable_setting_textView_message" android:layout_alignParentLeft="true" />
+        </RelativeLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="horizontal" android:id="@id/linearLayout1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true">
+        <Button android:id="@id/setup_wearable_setting_button_skip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:layout_weight="1.0" />
+        <Button android:id="@id/setup_wearable_setting_button_next" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:layout_weight="1.0" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:gravity="center" android:background="@drawable/title_base_bg" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/setup_picmate_title_login_info" android:scrollHorizontally="false" />
+        <ScrollView android:id="@id/scrollViewLogin" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/setup_picmate_already_have_id" />
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/setup_picmate_label_login_id" android:scrollHorizontally="false" />
+                <EditText android:id="@id/PicMateIdInput" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/setup_picmate_label_login_id" android:inputType="textVisiblePassword" />
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/setup_picmate_label_login_password" android:scrollHorizontally="false" />
+                <EditText android:id="@id/PicMatePassword" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/setup_picmate_label_login_password" android:inputType="textPassword" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <Button android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/rec_btn_quick_menu" android:onClick="onClickLoginButton" />
+                    <Button android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cmn_btn_cancel" android:onClick="onClickCancelButton" />
+                </LinearLayout>
+                <Button android:id="@id/buttonMargin" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/textViewSynchronize" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setup_picmate_cam_or_app_have_id" />
+                <Button android:gravity="center" android:id="@id/SynchronizeButton" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setup_picmate_btn_sync_login_id" android:onClick="onClickSynchronizeButton" />
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setup_picmate_not_have_id" />
+                <Button android:gravity="center" android:id="@id/NewRegisterButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setup_picmate_btn_new_regist" android:onClick="onClickNewRegisterButton" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/HideLayout1" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

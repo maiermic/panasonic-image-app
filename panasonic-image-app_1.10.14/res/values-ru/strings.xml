@@ -1,0 +1,1834 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_google_play_services_enable_button">Включить</string>
+    <string name="common_google_play_services_enable_text">Для работы приложения \"%1$s\" требуется включить сервисы Google Play.</string>
+    <string name="common_google_play_services_enable_title">Включите сервисы Google Play</string>
+    <string name="common_google_play_services_install_button">Установить</string>
+    <string name="common_google_play_services_install_text">Для работы приложения \"%1$s\" требуется установить сервисы Google Play.</string>
+    <string name="common_google_play_services_install_title">Установите сервисы Google Play</string>
+    <string name="common_google_play_services_notification_ticker">Ошибка сервисов Google Play</string>
+    <string name="common_google_play_services_unknown_issue">Приложению \"%1$s\" не удается подключиться к сервисам Google Play. Повторите попытку.</string>
+    <string name="common_google_play_services_unsupported_text">Для работы с приложением \"%1$s\" требуются сервисы Google Play. Они не поддерживаются на вашем устройстве.</string>
+    <string name="common_google_play_services_update_button">Обновить</string>
+    <string name="common_google_play_services_update_text">Чтобы запустить приложение \"%1$s\", обновите сервисы Google Play.</string>
+    <string name="common_google_play_services_update_title">Обновите сервисы Google Play</string>
+    <string name="common_google_play_services_updating_text">Сервисы Google Play, необходимые для работы приложения \"%1$s\", в настоящий момент обновляются.</string>
+    <string name="common_google_play_services_wear_update_text">Версия сервисов Google Play устарела. Они автоматически обновятся в ближайшее время.</string>
+    <string name="common_open_on_phone">Открыть на телефоне</string>
+    <string name="common_signin_button_text">Войти</string>
+    <string name="common_signin_button_text_long">Войти через аккаунт Google</string>
+    <string name="app_name">Image App</string>
+    <string name="app_name_leica">Image Shuttle</string>
+    <string name="av_no_name">Аудиовидеоустройство</string>
+    <string name="baby_monitor">Радионяня</string>
+    <string name="babymon_cannot_operation">Эта функция недоступна при использовании функции Радионяня.</string>
+    <string name="babymon_cant_regstid">"Соединение с сервером невозможно.
+Невозможно использовать функцию уведомления."</string>
+    <string name="babymon_mic_resttime">Осталось %02d сек.</string>
+    <string name="bracket_shooted_suspended">Брекетинг-съемка не выполнена.</string>
+    <string name="bracket_shooted_suspended_unable_recharge">Брекетинг-съемка не выполнена, т.к. вспышка не зарядилась.</string>
+    <string name="btn_ask_idsync_no">Не копировать</string>
+    <string name="btn_ask_idsync_yes">Копировать</string>
+    <string name="btn_geotag_not_takeover">Не обновлять</string>
+    <string name="btn_geotag_takeover">Обновить</string>
+    <string name="btn_geotag_takeover_delete">Стереть</string>
+    <string name="btn_phcol_change_frame">Изменить кадр</string>
+    <string name="btn_phcol_change_photo">Изменить фотоснимок</string>
+    <string name="cam_command_msg_check_camera">Проверьте камеру.</string>
+    <string name="cam_command_msg_sending">Обмен информацией с камерой...</string>
+    <string name="cam_command_msg_sending_error">Во время обмена информацией с камерой произошла ошибка.</string>
+    <string name="camera_ap_password">Пароль:</string>
+    <string name="camera_ap_ssid">SSID:</string>
+    <string name="cinelike_dolly_zoom">Долли зум</string>
+    <string name="cinelike_slow_quick">Медленное/быстрое</string>
+    <string name="cloud_msg_cancel">Отменить?</string>
+    <string name="cloud_msg_canceled">Отменено.</string>
+    <string name="cloud_msg_no_update">Обновление не является необходимым.</string>
+    <string name="cloud_msg_update">Обновить?</string>
+    <string name="cloud_msg_update_error">Сбой обновления.</string>
+    <string name="cloud_msg_updated">Обновление завершено.</string>
+    <string name="cloud_msg_updating">Обновление...</string>
+    <string name="cm_msg_error_cloud_save_local">Из-за ошибки некоторые изображения не сохранены.</string>
+    <string name="cm_msg_remain">Оставшееся время:</string>
+    <string name="cmn_auto_cloud_backup">Автомат. резервное копир.</string>
+    <string name="cmn_bluetooth">Bluetooth</string>
+    <string name="cmn_bluetooth_setting">Настр Bluetooth</string>
+    <string name="cmn_bluetooth_setting_short">Настр Bluetooth</string>
+    <string name="cmn_bt_remote_controller">Пульт дистанционного управления затвором</string>
+    <string name="cmn_bt_remote_controller_title">Пульт дист. упр. затвором</string>
+    <string name="cmn_btn_cancel">Отмена</string>
+    <string name="cmn_btn_close">Закрыть</string>
+    <string name="cmn_btn_detail">Подробнее</string>
+    <string name="cmn_btn_dicision">Уст.</string>
+    <string name="cmn_btn_end">Вых.</string>
+    <string name="cmn_btn_execute">Выполнить</string>
+    <string name="cmn_btn_execute_short">Вып.</string>
+    <string name="cmn_btn_ok">OK</string>
+    <string name="cmn_btn_reset">Сброс</string>
+    <string name="cmn_btn_save">Сохранение</string>
+    <string name="cmn_btn_update">Обновление</string>
+    <string name="cmn_build_number">Номер сборки</string>
+    <string name="cmn_camera_setting">Настройки камеры</string>
+    <string name="cmn_camera_setting_copy">Копирование настроек кам.</string>
+    <string name="cmn_camera_setting_copy2">"Копирование
+настроек кам."</string>
+    <string name="cmn_camera_setting_copy3">Копирование настроек кам.</string>
+    <string name="cmn_camera_setting_delete">Удал.</string>
+    <string name="cmn_camera_setting_rename">Изменить имя</string>
+    <string name="cmn_camera_setting_save">Сохранить настройки</string>
+    <string name="cmn_camera_setting_saved_settings">Сохраненные настройки камеры</string>
+    <string name="cmn_camera_setting_send_camera">Отправить на камеру</string>
+    <string name="cmn_card_protected">Карта памяти заблокирована. Разблокируйте ее.</string>
+    <string name="cmn_cloud_backup">Резервное копирование в облачное хранилище</string>
+    <string name="cmn_cloud_backup1">Резервное копир. в облако</string>
+    <string name="cmn_cloud_backup_ap_ssid">Информация о подключении к точке беспроводного доступа (SSID)</string>
+    <string name="cmn_cloud_backup_connect_ap">Точка доступа для подкл.</string>
+    <string name="cmn_cloud_backup_connection_test">Проверка подключения</string>
+    <string name="cmn_cloud_backup_picmate_settings">Настройки облачного хранилища</string>
+    <string name="cmn_cloud_backup_remove_location_data">Удал. дан.о местопол.</string>
+    <string name="cmn_cloud_backup_send_size">Размер</string>
+    <string name="cmn_cloud_backup_send_size_l">L</string>
+    <string name="cmn_cloud_backup_send_size_m">M</string>
+    <string name="cmn_cloud_backup_send_size_org">Первоначальный</string>
+    <string name="cmn_cloud_backup_send_size_s">S</string>
+    <string name="cmn_cloud_backup_send_size_vga">VGA</string>
+    <string name="cmn_cloud_backup_start">Нач.</string>
+    <string name="cmn_cloud_backup_start_backup">Начать резервное копирование</string>
+    <string name="cmn_cloud_backup_terminate">Отмен.</string>
+    <string name="cmn_cloud_backup_terminate_condition_battery">Усл.остан.(заряд бат.кам.)</string>
+    <string name="cmn_connect">Подключение</string>
+    <string name="cmn_connect_mode_qr_code">QR-код</string>
+    <string name="cmn_connect_mode_wifi">Wi-Fi</string>
+    <string name="cmn_connection_dsc_direct">Напрямую</string>
+    <string name="cmn_connection_dsc_network">Через сеть</string>
+    <string name="cmn_connection_dsc_wifi_direct">Wi-Fi Direct</string>
+    <string name="cmn_connection_movie_direct">Прямое подключение</string>
+    <string name="cmn_connection_movie_network">Подключение беспр. точки дост</string>
+    <string name="cmn_connection_tethering">Мобильная точка доступа</string>
+    <string name="cmn_contorl_camera">Работа с камерой</string>
+    <string name="cmn_digital_still_camera">Цифровая фотокамера</string>
+    <string name="cmn_digital_video_camera">Цифровая видеокамера</string>
+    <string name="cmn_digital_video_camera_wearable">Спортивная камера</string>
+    <string name="cmn_error_title">Ошибка</string>
+    <string name="cmn_function_dsc_connect_sp">Дистанц. упр. съемкой и просмотр</string>
+    <string name="cmn_function_dsc_send_image_camera">Отпр.изобр., хран. в фотоаппарате</string>
+    <string name="cmn_function_dsc_send_image_recording">Отправить изображения во время записи</string>
+    <string name="cmn_function_movie_remote_control">Пульт ДУ</string>
+    <string name="cmn_help_url">http://panasonic.jp/support/spn/global/dsc/help/l_link2.1/ru/</string>
+    <string name="cmn_help_url_test">http://panasonic.jp/support/spn/global/dsc/help/YN_19102012_l_link2.1/ru/</string>
+    <string name="cmn_imageapp_help_url">http://panasonic.jp/support/spn/global/dsc/help/image_app/ru/</string>
+    <string name="cmn_imageapp_help_url_test">http://panasonic.jp/support/spn/global/dsc/help/test_1120_image_app/ru/</string>
+    <string name="cmn_imageshuttle_help_url">http://www.leica-image-shuttle.help.leica-camera.com/</string>
+    <string name="cmn_imageshuttle_license_html_android">license_android_en</string>
+    <string name="cmn_label_title_nextskipview">Не показывать эту сцена еще раз.</string>
+    <string name="cmn_llink_dummy" />
+    <string name="cmn_msg_3box_no_contents_found">Не найдено содержание для воспроизведения.</string>
+    <string name="cmn_msg_3box_skip_play_mp4_a500">"Только видеоматериалы в следующих форматах можно воспроизводить на ТВ.
+“848x480/30p(25p)” “848x480/240fps(200fps)”
+“1280x720/30p(25p)”
+“1280x720/120fps(100fps)”"</string>
+    <string name="cmn_msg_3box_skip_play_mp4_vertical">"Только видеоматериалы в следующем формате можно воспроизводить на ТВ.
+“640x480/30p”."</string>
+    <string name="cmn_msg_3box_skip_play_mp4_wearable">"Только видеоматериалы в следующих форматах можно воспроизводить на ТВ.
+“848x480/30p(25p)” и “848x480/240fps(200fps)”."</string>
+    <string name="cmn_msg_already_regist">Зарегистрировано</string>
+    <string name="cmn_msg_ask_camera_change_rec_mode">Переключено на режим записи с помощью камеры.</string>
+    <string name="cmn_msg_camera_changed_rec_mode">Переключение в режим записи на камере.</string>
+    <string name="cmn_msg_cannot_play_3box">Выбранную сцену невозможно воспроизвести на ТВ.</string>
+    <string name="cmn_msg_cannot_play_3box_mp4_60p">Видео в формате MP4 1920x1080/60p (50p) невозможно воспроизводить на ТВ.</string>
+    <string name="cmn_msg_cannot_play_mp4">Содержание MP4 этой камеры невозможно воспроизвести на ТВ.</string>
+    <string name="cmn_msg_check_receive_image">Проверить скаченные изображения?</string>
+    <string name="cmn_msg_confirm_app_finish_on_back_pressed">Нажмите кнопку еще раз, чтобы выйти из приложения.</string>
+    <string name="cmn_msg_connect_camera">Подсоединена камера [%s].</string>
+    <string name="cmn_msg_connect_error">Сбой соединения.</string>
+    <string name="cmn_msg_connect_local_mode">"Сбой соединения.
+Запустите автономный режим."</string>
+    <string name="cmn_msg_delete_all_data">Стереть данные?</string>
+    <string name="cmn_msg_delete_data">Данные удалены.</string>
+    <string name="cmn_msg_disconnected">"Связь с камерой потеряна.
+Установите соединение Wi-Fi для камеры еще раз."</string>
+    <string name="cmn_msg_disconnected2">Связь с камерой потеряна.</string>
+    <string name="cmn_msg_disconnected_and_retry_connect">Нет отклика от камеры. Заново выполните установки Wi-Fi на камере или перейдите в место с лучшим состоянием радиоволн и ударьте кнопку \"OK \".</string>
+    <string name="cmn_msg_disconnected_and_wait_for_recieve">"Связь с камерой потеряна или закончен режим записи.
+Установите Wi-Fi соединение с камерой еще раз или скопируйте изображения."</string>
+    <string name="cmn_msg_disconnected_and_wait_for_recieve_short">"Связь с камерой потеряна.
+Возможно копирование изображения."</string>
+    <string name="cmn_msg_disconnected_dmr">Соединение с устройством воспроизведения было прервано.</string>
+    <string name="cmn_msg_error_not_internet">"Нет соединения с интернетом.
+Подсоединитесь к интернету."</string>
+    <string name="cmn_msg_error_rec">"Сбой съемки.
+Проверьте камеру или карту памяти."</string>
+    <string name="cmn_msg_help_error_not_internet">Невозможно загрузить \"Справку \", так как Ваш смартфон не подсоединен к интернету.Подсоединитесь к интернету.</string>
+    <string name="cmn_msg_jump_snap_warning">Для съемки с использованием опции Снимок прыжка установите камеру на \"Один сн. \".</string>
+    <string name="cmn_msg_just_a_moment">Пожалуйста, подождите...</string>
+    <string name="cmn_msg_movie_rec_disable">Видеосъемка сейчас недоступна.</string>
+    <string name="cmn_msg_need_lumix_link">Установите [LUMIX LINK] на смартфон/планшет, чтобы подсоединиться к выбранной камере.</string>
+    <string name="cmn_msg_not_change_mode_in_cam_writing">Невозможно изменить текущий режим, так как выполняется запись на камере.</string>
+    <string name="cmn_msg_not_connect_in_com_recording">Подсоединение невозможно, так как выполняется видеозапись на камере.</string>
+    <string name="cmn_msg_not_func_now_camera_recording">Записывается видео с помощью камеры…</string>
+    <string name="cmn_msg_not_func_now_camera_use">Эту функцию невозможно использовать в настоящее время, так как камера выполняет операцию.</string>
+    <string name="cmn_msg_not_func_now_common">Эта функция в данный момент недоступна.</string>
+    <string name="cmn_msg_not_func_now_movie_recording">Эта функция недоступна во время видеозаписи.</string>
+    <string name="cmn_msg_not_func_now_photo_recording">Эта функция недоступна во время записи фотоснимков.</string>
+    <string name="cmn_msg_not_func_now_receive_image">Эту функцию невозможно использовать в настоящее время, так как сейчас скачиваются изображения с камеры.</string>
+    <string name="cmn_msg_not_func_now_regist_image">Сейчас невозможно использовать эту функцию, так как выполняется регистрация изображений.</string>
+    <string name="cmn_msg_not_func_now_selftimer_waitting">Эта функция недоступна при использовании таймера автоспуска.</string>
+    <string name="cmn_msg_not_func_now_shooting">Пожалуйста, подождите...</string>
+    <string name="cmn_msg_not_func_now_speaking">Эта функция недоступна при использовании функции удаленной громкости.</string>
+    <string name="cmn_msg_not_movie_rec_in_cam_writing">Сейчас видеозапись невозможна, так как выполняется запись на камере.</string>
+    <string name="cmn_msg_now_camera_use">Выполняется операция на камере.</string>
+    <string name="cmn_msg_now_camera_use_snapmovie">Эту операцию невозможно выполнить, когда функция Film Snap цифровой фотокамеры на ON. Установите Film Snap на OFF для использования этого приложения.</string>
+    <string name="cmn_msg_now_recieve_images_from_camera">Скачивание изображений с камеры...</string>
+    <string name="cmn_msg_now_regist_image">Регистрация полученных изображений...</string>
+    <string name="cmn_msg_only_movie">Только видео MP4</string>
+    <string name="cmn_msg_only_picture">Только фотоснимки</string>
+    <string name="cmn_msg_picmate_cloud_warning">Загрузка в папку облака доступна после выполнения настройки облачной синхронизации на таких доступных для скачивания устройствах, как ПК или смартфон.</string>
+    <string name="cmn_msg_picmate_cloud_warning2">Переданные изображения сохраняются в облачной папке в течение 30 дней (до 1000 снимков). Переданные изображения автоматически удаляются через 30 дней послепередачи.</string>
+    <string name="cmn_msg_picmate_cloud_warning3">После выполнения загрузки изображений из облачной папки на все указанные устройства изображения можно удалить из облачной папки даже в течение 30 дней после передачи.</string>
+    <string name="cmn_msg_picture_shutter_disable">Фотосъемка сейчас не доступна.</string>
+    <string name="cmn_msg_qr_error">Невозможно считать QR-код.</string>
+    <string name="cmn_msg_read_qr_code">Расположите QR код внутри рамки и захватите его.</string>
+    <string name="cmn_msg_remain_60min_or_less">Недостаточная емкость карты. Вам нужно, чтобы осталось, по крайней мере, 60 минут для записи в этом режиме.</string>
+    <string name="cmn_msg_remain_zero">"Недостаточно памяти.
+Проверьте камеру."</string>
+    <string name="cmn_msg_sd_unset">"Нет карты памяти.
+Проверьте камеру."</string>
+    <string name="cmn_msg_server_multi">Выберите камеру для соединения.</string>
+    <string name="cmn_msg_server_zero">"Невозможно соединиться с камерой.
+В настройках Wi-Fi проверьте, выбрана ли камера для соединения."</string>
+    <string name="cmn_msg_server_zero_2">Эту функцию сейчас невозможно использовать.</string>
+    <string name="cmn_msg_server_zero_2_old">Эту функцию сейчас невозможно использовать. Проверьте настройки Wi-Fi камеры и смартфона, а затем выберите камеру в \"Настройка назн.соед. \".</string>
+    <string name="cmn_msg_server_zero_old">"Невозможно найти камеру для соединения.
+Выберите камеру для соединения из меню."</string>
+    <string name="cmn_msg_server_zero_os_wifi">Проверьте настройки Wi-Fi устройства для подтверждения, что Вы выбрали камеру для соединения.</string>
+    <string name="cmn_msg_wifi_connect_longtime">Соединение может занять несколько минут.</string>
+    <string name="cmn_msg_wifi_multi">Выберите точку доступа для соединения.</string>
+    <string name="cmn_network">Сеть</string>
+    <string name="cmn_network_ap_camera_id">Сетевой идентиф.</string>
+    <string name="cmn_network_camera_ssid">Сетевой идентиф.</string>
+    <string name="cmn_network_live_camera_id">Сетевой идентиф.</string>
+    <string name="cmn_network_wps">WPS</string>
+    <string name="cmn_next">Дальше</string>
+    <string name="cmn_no">НЕТ</string>
+    <string name="cmn_notification_title">Это оповещение от Image App.</string>
+    <string name="cmn_notification_title_leica">Это оповещение от Image Shuttle.</string>
+    <string name="cmn_now_wait_camera_response">Ожидание отклика камеры…</string>
+    <string name="cmn_off">ВЫКЛ.</string>
+    <string name="cmn_on">ВКЛ.</string>
+    <string name="cmn_particle_high">Высок.</string>
+    <string name="cmn_particle_low">Низк.</string>
+    <string name="cmn_particle_mid">Стандартн.</string>
+    <string name="cmn_particle_off">Выкл</string>
+    <string name="cmn_pict_saved">Фотоснимки были сохранены.</string>
+    <string name="cmn_registered_camera">Камера зарегистрирована</string>
+    <string name="cmn_registerring_camera">Камера готова к регистрации</string>
+    <string name="cmn_remain_battery_1">Осталась 1 емк. бат.</string>
+    <string name="cmn_remain_battery_2">Осталось 2 емк. бат.</string>
+    <string name="cmn_remote_watch">Дом.видеонаблюд.</string>
+    <string name="cmn_search">Поиск</string>
+    <string name="cmn_settings">Hастройки</string>
+    <string name="cmn_single_shoot">Один сн.</string>
+    <string name="cmn_skip">Пропустить</string>
+    <string name="cmn_slepp">Режим ожидания</string>
+    <string name="cmn_smart_app_url">http://panasonic.jp/pss/</string>
+    <string name="cmn_standby">Ожидание</string>
+    <string name="cmn_stop_reason_value">[%d]</string>
+    <string name="cmn_unregist_camera">Отмена регистрации</string>
+    <string name="cmn_waiting_transfer">Ожид.переноса изобр.</string>
+    <string name="cmn_wifi">Wi-Fi</string>
+    <string name="cmn_wifi_setting_short">Настр Wi-Fi</string>
+    <string name="cmn_yes">ДА</string>
+    <string name="cnm_msg_please_talk">Разговор</string>
+    <string name="connect_msg_nfc_reset_history">Чтобы подсоединить камеру, пожалуйста, начните с начала.</string>
+    <string name="content_type_avchd">AVCHD</string>
+    <string name="content_type_avchd_3d">AVCHD-3D</string>
+    <string name="content_type_avchd_50i">1080/50i</string>
+    <string name="content_type_avchd_50p">1080/50p</string>
+    <string name="content_type_avchd_60i">1080/60i</string>
+    <string name="content_type_avchd_60p">1080/60p</string>
+    <string name="content_type_avchd_sbs">SbS</string>
+    <string name="content_type_jpeg">JPEG</string>
+    <string name="content_type_mp4">MP4/iFrame</string>
+    <string name="content_type_mp4_only">MP4</string>
+    <string name="demo_msg_nfc_explain">Touch the NFC mark on the camera with your smartphone.</string>
+    <string name="easy_setting_confirm_at_camera">[Подтверждение на камере]</string>
+    <string name="easy_setting_connection_test_on_camera">(3) Выполните функцию \"Проверка соединения \" на камере.</string>
+    <string name="easy_setting_current_time_camera">Текущее время на камере</string>
+    <string name="easy_setting_current_time_sp">Текущее время на смартфоне</string>
+    <string name="easy_setting_id_camera">Имя пользователя LUMIX CLUB, уже зарегистрированное на этой камере</string>
+    <string name="easy_setting_live_cast">Live Cast (Живое вещание)</string>
+    <string name="easy_setting_msg_already_regist_id">Имя пользователя LUMIX CLUB уже зарегистрировано на этой камере.</string>
+    <string name="easy_setting_msg_finish_setting">Инициализированы функции Wi-Fi между смартфоном и камерой.</string>
+    <string name="easy_setting_msg_need_operation">Чтобы использовать функцию живого вещания, необходимо также выполнить следующие дополнительные операции.</string>
+    <string name="easy_setting_msg_need_regist">* Чтобы использовать функции Live Cast, Радионяня и DLNA, сначала необходимо зарегистрироваться.</string>
+    <string name="easy_setting_msg_need_regist_id_for_use">* Если у Вас уже нет имени пользователя и пароля LUMIX CLUB, используйте ПК или другое устройство, чтобы заранее получить имя пользователя и пароль LUMIX CLUB.</string>
+    <string name="easy_setting_msg_regist_access_point">Регистрирует точку доступа на камере.</string>
+    <string name="easy_setting_msg_regist_id_to_camera">Регистрирует Ваше имя пользователя и пароль LUMIX CLUB на камере.</string>
+    <string name="easy_setting_msg_skip_or_next_syncronize">Если устройства уже синхронизированы, Вы можете пропустить этот шаг. Чтобы повторно синхронизировать устройства, коснитесь Дальше.</string>
+    <string name="easy_setting_msg_skip_or_next_use">Чтобы продолжить использование этого имени пользователя, коснитесь Пропустить. Чтобы изменить его, коснитесь Дальше.</string>
+    <string name="easy_setting_msg_ssid_exist">Такое же имя сети SSID было ранее зарегистрировано.</string>
+    <string name="easy_setting_msg_syncronize_time">Часы смартфона и часы камеры будут синхронизированы.</string>
+    <string name="easy_setting_regist_access_point">Регистрация точки доступа</string>
+    <string name="easy_setting_regist_access_point_for_use">Если Вы используете точку доступа, заранее зарегистрируйте ее.</string>
+    <string name="easy_setting_regist_ustream_id">(1) Получение имени пользователя USTREAM</string>
+    <string name="easy_setting_select_item">Выберите пункт, который Вы хотите установить.</string>
+    <string name="easy_setting_setting_at_pc">[Установки, выполненые через ПК или другое устройство]</string>
+    <string name="easy_setting_syncronize_time">Синхронизация часов</string>
+    <string name="easy_setting_ustream_setting_at_picmate">Войдите в LUMIX CLUB, выберите настройки соединения с интернет-сервисом и настройте USTREAM.</string>
+    <string name="easy_setting_web_setting_at_picmate">(2) Установите соединение с интернет-сервисом (USTREAM) на LUMIX CLUB</string>
+    <string name="easy_wifi_setting_ap_msg">"Пожалуйста, выберите точку доступа для подсоединения.
+Если точка доступа еще не зарегистрирована, пожалуйста, сначала выберите доступную пустую строку (выше) для регистрации беспроводной точки доступа."</string>
+    <string name="easywifi_clock_camtime_known">Время неизвестно</string>
+    <string name="easywifi_mimamori_invalidatedata">Информация, полученная с камеры, неправильная.</string>
+    <string name="easywifi_picmate_overwrite">"Идентификатор входа в систему зарегистрирован в камере.
+Вы хотите перезаписать его?"</string>
+    <string name="easywifi_picmate_setting">Установки LUMIX CLUB ID...</string>
+    <string name="easywifi_setting_ap_comment">"Регистрирует точку доступа на камере.
+
+Если Вы используете точку доступа, заранее зарегистрируйте ее.
+
+* Чтобы использовать функции Live Cast, Радионяня и DLNA, сначала необходимо зарегистрироваться."</string>
+    <string name="easywifi_setting_ap_comment_for_wearable">"Регистрирует точку доступа на камере.
+
+Если Вы используете точку доступа, заранее зарегистрируйте ее.
+
+* Чтобы использовать функции Live Cast и DLNA, сначала необходимо зарегистрироваться."</string>
+    <string name="easywifi_setting_ap_comment_for_wearable_no_livecast">"Регистрирует точку доступа на камере.
+
+Если Вы используете точку доступа, заранее зарегистрируйте ее.
+
+* Чтобы использовать функции DLNA, сначала необходимо зарегистрироваться."</string>
+    <string name="easywifi_setting_clock_comment">"Часы смартфона и часы камеры будут синхронизированы.
+
+Текущее время на камере
+%1$s
+
+Текущее время на смартфоне
+%2$s
+
+Если устройства уже синхронизированы, Вы можете пропустить этот шаг. Чтобы повторно синхронизировать устройства, коснитесь Дальше."</string>
+    <string name="easywifi_setting_mimamori_title">Установки домашнего видеонаблюдения</string>
+    <string name="easywifi_setting_nodata">Сбой получения информации с камеры.</string>
+    <string name="easywifi_setting_picmate_comment">"Регистрирует Ваше имя пользователя и пароль LUMIX CLUB на камере.
+
+* Если у Вас уже нет имени пользователя и пароля LUMIX CLUB, используйте ПК или другое устройство, чтобы заранее получить имя пользователя и пароль LUMIX CLUB.
+
+%s
+
+Чтобы продолжить использование этого имени пользователя, коснитесь Пропустить. Чтобы изменить его, коснитесь Дальше."</string>
+    <string name="easywifi_setting_picmate_login_invalidate">Введите идентификатор входа в систему и пароль.</string>
+    <string name="easywifi_setting_ustream_comment">"Инициализированы функции Wi-Fi между смартфоном и камерой.
+
+Чтобы использовать функцию живого вещания, необходимо также выполнить следующие дополнительные операции. 
+
+[Установки, выполненые через ПК или другое устройство]
+(1) Получение имени пользователя USTREAM
+
+(2) Установите соединение с интернет-сервисом (USTREAM) на LUMIX CLUB
+Войдите в LUMIX CLUB, выберите настройки соединения с интернет-сервисом и настройте USTREAM.
+
+[Подтверждение на камере]
+(3) Выполните функцию \"Проверка соединения \" на камере."</string>
+    <string name="easywifi_setting_ustream_comment2">"Инициализированы функции Wi-Fi между смартфоном и камерой.
+
+Чтобы использовать функцию живого вещания, необходимо также выполнить следующие дополнительные операции. 
+
+[Установки, выполненые через ПК или другое устройство]
+(1) Получение имени пользователя USTREAM
+
+(2) Установите соединение с интернет-сервисом (USTREAM) на LUMIX CLUB
+Войдите в LUMIX CLUB, выберите настройки соединения с интернет-сервисом и настройте USTREAM.
+"</string>
+    <string name="easywifi_setting_ustream_title">Установки USTREAM</string>
+    <string name="explain_menu_privacy_notice">\"Меню \" -> \"Функция приложения \" -> \"Условия использования \" -> \"Отправлять автоматически \"</string>
+    <string name="exposure_compensation">Компенсация экспоз.</string>
+    <string name="folder_type_dsc">LUMIX</string>
+    <string name="folder_type_dsc_sd1">LUMIX(SD1)</string>
+    <string name="folder_type_dsc_sd2">LUMIX(SD2)</string>
+    <string name="folder_type_leica_dsc">Leica</string>
+    <string name="folder_type_movie">Видеокамера</string>
+    <string name="folder_type_movie_mem">Видеокамера (встроенная память)</string>
+    <string name="folder_type_movie_sd">Видеокамера (SD)</string>
+    <string name="func_app_boot_android">Вы должны иметь доступ к интернету, чтобы запустить [%s].</string>
+    <string name="func_app_btn_boot">Запуск приложения</string>
+    <string name="func_app_btn_google_play">Переход к Google Play</string>
+    <string name="func_app_install_android">Вы должны иметь доступ к интернету, чтобы установить [%s].</string>
+    <string name="func_app_need_reboot">Если Ваш смартфон в настоящее время напрямую подсоединен к камере, пожалуйста, отсоедините его, чтобы имелся доступ к интернету. Перезапустите приложение.</string>
+    <string name="func_auto_phcol_detail">Фотоснимок создается объединением лучших снимков, которые автоматически выбираются из записанной сцены с помощью видеокамеры.</string>
+    <string name="func_geotag_detail">Информация геолокации смартфона/планшета будет добавлена к изображению.</string>
+    <string name="func_guidance_picture_send">Передача изображения</string>
+    <string name="func_guidance_remote_controll">Удаленная операция</string>
+    <string name="func_highlight_detail">Вы можете извлечь Выделенное воспроизведение из нескольких сцен, воспроизвести их и сохранить их как короткое видео.</string>
+    <string name="func_homemonitor_detail">Вы можете наблюдать за происходящим в Вашем доме во время своего отсутствия.</string>
+    <string name="func_item_auto_phcol">Фотоколлаж Выделенное воспроизведение</string>
+    <string name="func_item_auto_phcol_2">Фотоколлаж Выделен.воспр</string>
+    <string name="func_item_geotag">Геопривязка</string>
+    <string name="func_item_highlight">Вос.наиб.ярк.мом.</string>
+    <string name="func_item_highlight_2">Вос.наиб.ярк.мом.</string>
+    <string name="func_item_phcol">Фотоколлаж</string>
+    <string name="func_item_phcol_2">Фотоколлаж</string>
+    <string name="func_item_picmate">LUMIX CLUB PicMate</string>
+    <string name="func_item_smartapp">Panasonic SmartApp</string>
+    <string name="func_item_smartapp_2">Panasonic SmartApp</string>
+    <string name="func_item_snap_movie">Film Snap</string>
+    <string name="func_item_snap_movie_2">Film Snap</string>
+    <string name="func_item_stopmotion">Поддержка анимации остановки движения</string>
+    <string name="func_phcol_detail">Вы можете создать отдельное изображение, объединяя Ваши избранные фотоснимки.</string>
+    <string name="func_picmate_detail">Сайт совместного использования фотоснимков и видео, где Вы можете “организовывать, совместно использовать и показывать” фотоснимки и видео, записанные с помощью цифровой камеры</string>
+    <string name="func_smartapp_detail" />
+    <string name="func_snapmovie_detail">Вы можете объединять видео, снятые Вами на камере в режиме Film Snap</string>
+    <string name="func_stopmotion_detail">Вы можете использовать ранее сделанный фотоснимок в качестве фона для следующего фотоснимка, и делать фотоснимок, просматривая фон</string>
+    <string name="func_tab_btn">Функция</string>
+    <string name="func_transfer_all">Все</string>
+    <string name="func_transfer_auto">Пакетная передача</string>
+    <string name="func_transfer_auto_days">Последние %d дней</string>
+    <string name="func_transfer_auto_today">Сегодня</string>
+    <string name="func_transfer_only_movie">Только видео</string>
+    <string name="func_transfer_only_picture">Только фото</string>
+    <string name="func_transfer_picture_movie">Фото и видео</string>
+    <string name="func_transfer_select">Передача выбранного</string>
+    <string name="geotag_btn_allow_send_gps_data_to_camera">Отправка данных</string>
+    <string name="geotag_btn_allow_synctime_with_camera">Синхронизация</string>
+    <string name="geotag_btn_allow_writting_to_picture">Записать</string>
+    <string name="geotag_btn_gps_logging_off">Выключение географической привязки</string>
+    <string name="geotag_btn_gps_logging_on">Запуск географической привязки</string>
+    <string name="geotag_button_delete_gps">Стереть</string>
+    <string name="geotag_button_gps_send_all">Пакетная отправка</string>
+    <string name="geotag_button_send_geotag">Отправить данные геолок.</string>
+    <string name="geotag_button_sync_time">Синхронизация по времени</string>
+    <string name="geotag_cell_gps_worklog">Журнал работы</string>
+    <string name="geotag_cell_interval">Интервал записи</string>
+    <string name="geotag_cell_interval_15sec">15 сек.</string>
+    <string name="geotag_cell_interval_1sec">1 сек.</string>
+    <string name="geotag_cell_interval_30sec">30 сек.</string>
+    <string name="geotag_cell_interval_5sec">5 сек.</string>
+    <string name="geotag_cell_interval_60sec">60 сек.</string>
+    <string name="geotag_cell_save_gps">Зап.инфо геолок.</string>
+    <string name="geotag_label_gps_logging_disable">Невозможно получить данные геолокации</string>
+    <string name="geotag_label_gps_logging_enable">Получение данных геолокации…</string>
+    <string name="geotag_label_gps_logging_off">Географическая привязка отключено</string>
+    <string name="geotag_label_gps_logging_on">Географическая привязка включена…</string>
+    <string name="geotag_label_gps_nfc_touch">Отправка по NFC</string>
+    <string name="geotag_label_lastsynctime">Время последней синхронизации:</string>
+    <string name="geotag_msg_ask_write_to_picture">Записать информацию текущей геолокации в файл изображения?</string>
+    <string name="geotag_msg_camera_error">Подсоединенная камера не поддерживает регистрацию геолокации.</string>
+    <string name="geotag_msg_cancel_write_to_picture">"Процесс записи был отменен.
+Данные геолокации были переданы на камеру."</string>
+    <string name="geotag_msg_cant_send_gpsdata">Невозможно отправить данные геолокации.</string>
+    <string name="geotag_msg_error_write_to_picture">Сбой записи данных геолокации.</string>
+    <string name="geotag_msg_gps_setting">"Для включения регистрации геолокации необходимо включить функцию GPS.
+Включить функцию GPS?"</string>
+    <string name="geotag_msg_gps_setting_off">"Регистрация геолокации будет выключена.
+Изменить также установку функции GPS?"</string>
+    <string name="geotag_msg_if_you_start_send_gps_data">Подсоединенная камера должна поддерживать регистрацию геолокации. Отправить данные геолокации?</string>
+    <string name="geotag_msg_if_you_start_synctime">Подсоединенная камера должна поддерживать регистрацию геолокации. Выполнить синхронизацию по времени?</string>
+    <string name="geotag_msg_now_write_to_picture">Запись данных геолокации…</string>
+    <string name="geotag_msg_sdcard_is_protected_gps">Карта памяти SD защищена. Удалите защиту.</string>
+    <string name="geotag_msg_sync_cancel">Синхрон.по времени отменена.</string>
+    <string name="geotag_msg_sync_error">Сбой синхронизации по времени.</string>
+    <string name="geotag_title">Геопривязка</string>
+    <string name="geotag_title_label_delete_gps_select">"Данные геолокации отправлены. 
+Стереть данные геолокации?"</string>
+    <string name="geotag_title_label_send_gps_now">Отправка данных геолокации...</string>
+    <string name="geotag_title_label_sync_time_now">Синхронизация по времени...</string>
+    <string name="geotag_worklog_savepointnum">Количество записей регистрации информации геолокации:</string>
+    <string name="geotag_worklog_status_delege_gps_data">Данные геолокации удалены.</string>
+    <string name="geotag_worklog_status_error_gps">Ненормальное завершение регистрации геолокации.</string>
+    <string name="geotag_worklog_status_error_send_gps_data">Сбой передачи данных геолокации.</string>
+    <string name="geotag_worklog_status_error_synctime">Сбой синхронизации по времени.</string>
+    <string name="geotag_worklog_status_error_write_to_camera">Сбой считывания данных геолокации.</string>
+    <string name="geotag_worklog_status_off">“Зап.инфо геолок.” выключена.</string>
+    <string name="geotag_worklog_status_on">“Зап.инфо геолок.” включена.</string>
+    <string name="geotag_worklog_status_send_gps_data">Данные геолокации отправлены на камеру.</string>
+    <string name="geotag_worklog_status_synctime">Синхронизация по времени завершена.</string>
+    <string name="geotag_worklog_status_write_to_camera">Завершение считывания данных геолокации.</string>
+    <string name="giotag_msg_no_gps_function">Невозможно использовать функцию GPS с этим аппаратом.</string>
+    <string name="highlight_duration_180sec">ОК. 3 МИН</string>
+    <string name="highlight_duration_90sec">ОК. 90 СЕК</string>
+    <string name="highlight_duration_none">АВТО</string>
+    <string name="highlight_effect_clasical">КЛАССИКА</string>
+    <string name="highlight_effect_dynamic">ДИНАМИЧНАЯ</string>
+    <string name="highlight_effect_natural">ПРИРОДА</string>
+    <string name="highlight_effect_off">ВЫКЛ.</string>
+    <string name="highlight_effect_pop">ПОП</string>
+    <string name="highlight_option_effect">ЭФФЕКТ</string>
+    <string name="highlight_option_playtime">Время воспроиз.</string>
+    <string name="highlight_option_priority">Приорит.расп.лиц</string>
+    <string name="highlight_priority_off">ВЫКЛ.</string>
+    <string name="highlight_priority_on">ВКЛ.</string>
+    <string name="mgs_vrec_stop_write">Запись была остановлена из-за ошибки записи.</string>
+    <string name="mic_level_setting_title">УРОВ. МИКР.</string>
+    <string name="movieslideshow_error_bgmcheck">Этот файл невозможно использовать для создания наиболее ярких моментов.</string>
+    <string name="movieslideshow_error_bgmcheck_copy_protected">Этот файл невозможно использовать для создания наиболее ярких моментов, так как содержание файла защищено от копирования.</string>
+    <string name="movieslideshow_option_bgm">Фоновая музыка</string>
+    <string name="movieslideshow_option_bgm_original">Источник звука</string>
+    <string name="movieslideshow_option_bgm_preset">Предварительные настройки</string>
+    <string name="movieslideshow_option_bgm_setting">Установки аудио</string>
+    <string name="movieslideshow_save_format">Формат хранения</string>
+    <string name="movieslideshow_save_format_mp4high">MP4/Высокое качество изображения</string>
+    <string name="movieslideshow_save_format_mp4low">MP4/Низкое качество изображения</string>
+    <string name="movieslideshow_setting_bgm">Если доступно, Вы можете задавать фоновую музыку во время выполнения.</string>
+    <string name="movieslideshow_setting_title">Если доступно, Вы можете задавать изображение заголовка во время выполнения.</string>
+    <string name="movieslideshow_title_picture">Изображение заголовка</string>
+    <string name="movieslideshow_title_settings">Установки заголовка</string>
+    <string name="movieslideshow_warning_bgm">Музыкальный файл не выбран. Вы уверены, что хотите начать создание наиболее ярких моментов без выбора музыкального файла?</string>
+    <string name="movieslideshow_warning_picture">Нет выбранных изображений. Вы хотите создать наиболее яркие моменты без установки изображения заголовка?</string>
+    <string name="msg_4k_photo_marking_limit_over">Дальнейшая установка закладок невозможна. Достигнуто макс. 40 количество закладок.</string>
+    <string name="msg_4kprebrst_to_4kbrst">"Движение остановлено - камера переключена на режим сер.съемк 4K.
+
+Подождите, пока камера не охладится."</string>
+    <string name="msg_6kprebrst_to_6kbrst">"Движение остановлено - камера переключена на режим сер.съемк 6K.
+
+Подождите, пока камера не охладится."</string>
+    <string name="msg_access_number_incomplete">Используйте 4 цифры для номера доступа</string>
+    <string name="msg_address_number_incomplete">Используйте 16 цифр для номера адреса</string>
+    <string name="msg_ask_copy_picmate_id_to_app">"Идентификатор входа в систему для камеры был установлен. 
+Вы хотите использовать идентификатор входа в систему камеры также и для этого приложения?"</string>
+    <string name="msg_ask_copy_picmate_id_to_camera">"Идентификатор входа в систему для камеры не был установлен. 
+Вы хотите использовать такой же идентификатор входа в систему, как и для этого приложения?"</string>
+    <string name="msg_ask_copy_snapmovie_previous">Скопировать короткое(ие) видео, снятое(ые) %d дня(дней) назад в режиме Film Snap?</string>
+    <string name="msg_ask_copy_snapmovie_today">Скопировать короткое(ие) видео, снятое(ые) сегодня в режиме Film Snap?</string>
+    <string name="msg_ask_create_stopmotion_video_now">Создать видео?</string>
+    <string name="msg_ask_create_stopmotion_video_withtime">"Создать видео?
+Это займет приблиз. %d минут."</string>
+    <string name="msg_ask_delete_all_contents">Удалить отображаемые в настоящее время файлы камеры?</string>
+    <string name="msg_ask_delete_all_contents_with_protect">Удалить отображаемые в настоящее время файлы камеры? (Защищенные файлы не будут удалены.)</string>
+    <string name="msg_ask_delete_setting">Удалить установки?</string>
+    <string name="msg_ask_idsync_from_camera">Идентификатор LUMIX CLUB зарегистрирован на камере. Скопировать идентификатор LUMIX CLUB с камеры на это приложение?</string>
+    <string name="msg_ask_idsync_to_camera">Идентификатор LUMIX CLUB зарегистрирован на этом приложении. Скопировать идентификатор LUMIX CLUB с этого приложения на подсоединенную камеру?</string>
+    <string name="msg_ask_idsync_to_camera2">Идентификатор LUMIX CLUB зарегистрирован на фотокамере. Скопировать идентификатор LUMIX CLUB с этого приложения на подсоединенную камеру?</string>
+    <string name="msg_ask_picjump_setting">"Настройки“Совместное использование изображения” не были выполнены.
+Выполнить их сейчас?"</string>
+    <string name="msg_ask_picjump_setting_yes">Выполнить настройки сейчас</string>
+    <string name="msg_ask_picmate_id_overwrite">Зарегистрировать имя для входа в систему на камере?</string>
+    <string name="msg_ask_quit_stopmotion">Завершить покадровую съемку?</string>
+    <string name="msg_ask_snapmovie_save_file">Объединить видео и сохранить?</string>
+    <string name="msg_ask_stopmotion_use_prev_setting">Использовать такие формат и качество изображения, как и для последней записи?</string>
+    <string name="msg_assert_temperature_warning">Соединение Wi-Fi будет прервано через несколько минут из-за перегрева внутри камеры.</string>
+    <string name="msg_auto_transfer_connect_wifi">Подключить камеру с помощью Wi-Fi для приема изображений с камеры (автоматическая передача изображения)?</string>
+    <string name="msg_bt_remote_controller_cannot_use_for_autosend">Пульт дист. упр. затвором невозможно использовать, когда камерой выполняется автоматическая передача изображения.</string>
+    <string name="msg_bt_remote_controller_sw_on">Включите выключатель питания камеры.</string>
+    <string name="msg_bt_remote_controller_wifi_confirm">"Пульт дист. упр. затвором невозможно использовать, когда камера подключена к Wi-Fi. 
+Завершить Wi-Fi соединение камеры?"</string>
+    <string name="msg_bt_smart_phone_name">Имя смартфона</string>
+    <string name="msg_bt_smart_phone_name_explain">Имя смарфона, отображающееся на камере, можно изменить.</string>
+    <string name="msg_bt_smart_phone_name_too_long">Слишком длинное введенное имя смартфона.</string>
+    <string name="msg_camera_connecting_to_other">Камера устанавливает соединение с другим смартфоном или планшетом.</string>
+    <string name="msg_camera_initialize_finished">Установки подсоединенной камеры были инициализированы.</string>
+    <string name="msg_camera_no_battery">Низкая емкость аккумулятора камеры. Питание камеры отключится.</string>
+    <string name="msg_camera_not_registered_for_no_connected_wifi">"Невозможно подключиться к точке доступа. 
+Регистрация не завершена."</string>
+    <string name="msg_camera_not_registered_for_user_refused">"Подключение отклонено камерой. 
+Регистрация не завершена."</string>
+    <string name="msg_camera_numreset_finished">Номер был сброшен.</string>
+    <string name="msg_camera_registered">Регистрация завершена.</string>
+    <string name="msg_camera_setting_communcation_error">"Обмен данными с камерой невозможен. 
+Начните все сначала."</string>
+    <string name="msg_camera_setting_limit_over">"Невозможно сохранить эти данные. 
+Удалите сохраненные настройки камеры."</string>
+    <string name="msg_cancel_all">Отменить все?</string>
+    <string name="msg_cannnot_delete_sd_protected">Карта памяти SD защищена. Удалите защиту.</string>
+    <string name="msg_cannnot_execute_because_content_protected">Эту операцию невозможно выполнить, так как изображение защищено. Сначала снимите защиту.</string>
+    <string name="msg_cannnot_execute_because_content_short">Эту функцию невозможно использовать для изображений, короче чем 3 секунды.</string>
+    <string name="msg_cannnot_execute_no_account">Эта функция недоступна, так как не зарегистрирован идентификатор LUMIX CLUB.</string>
+    <string name="msg_cannnot_execute_no_internet">Эта функция недоступна, так как нет соединения с интернетом.</string>
+    <string name="msg_cannnot_execute_no_internet2">Эта функция недоступна в случае прямого подсоединения к камере или в случае отсутствия соединения с интернетом.</string>
+    <string name="msg_cannnot_picture_jump">Эта функция в данный момент недоступна.</string>
+    <string name="msg_cannnot_picture_jump_no_data">Настройки “Совместное использование изображения” не зарегистрированы.</string>
+    <string name="msg_cannnot_regist_picture_jump_sns">Регистрация невозможна, так как не завершена сертификация.</string>
+    <string name="msg_cannnot_split_delete_cur_position">Частичное удаление в этой точке невозможно.</string>
+    <string name="msg_cannnot_up_down_because_wps">Невозможно изменить порядок приоритета назначения соединения, установленный с помощью WPS.</string>
+    <string name="msg_cannot_action_camera_preparation">Эту функцию сейчас невозможно использовать, так как выполняется обслуживание на карте памяти камеры.</string>
+    <string name="msg_cannot_communcation_camera_with_pairing">"Обмен данными с камерой невозможен.
+Если на камере выполнено сопряжение, удалите сопряжение, а затем начните все сначала."</string>
+    <string name="msg_cannot_communcation_camera_without_pairing">Обмен данными с камерой невозможен. Проверьте, не отменено ли сопряжение на стороне камеры.</string>
+    <string name="msg_cannot_communicate_camera">"Обмен данными с камерой невозможен.
+Выберите ее снова."</string>
+    <string name="msg_cannot_connect_ap_with_bt_tethering">Невозможно подключиться к точке доступа в режиме модема Bluetooth.</string>
+    <string name="msg_cannot_connect_camera_for_clear_pairing">Камеру невозможно подключить, так как для нее не выполнено \"Сопряжение \". Зарегистрируйте камеру еще раз.</string>
+    <string name="msg_cannot_create_video_rec_two_sd">Невозможно создать видео, так как запись занимает две карты SD.</string>
+    <string name="msg_cannot_execute_sd_card_error">Эту функцию невозможно использовать из-за проблемы с картой памяти SD.</string>
+    <string name="msg_cannot_execute_sd_card_under_restoration">Эту функцию невозможно использовать, так как восстанавливается карта памяти SD.</string>
+    <string name="msg_cannot_format_no_card_inserted">В камеру не вставлена карта памяти SD.</string>
+    <string name="msg_cannot_format_sd_card_error">Форматирование невозможно из-за проблем с картой памяти SD.</string>
+    <string name="msg_cannot_format_sd_card_protected">Карта памяти SD защищена. Удалите защиту.</string>
+    <string name="msg_cannot_format_sd_card_under_restoration">Форматирование невозможно, так как восстанавливается карта памяти SD.</string>
+    <string name="msg_cannot_picture_jump_not_support_content">Эта функция недоступна, так как формат не поддерживается.</string>
+    <string name="msg_cannot_read_camera_preparation">Невозможно считать содержание, так как выполняется обслуживание на карте памяти камеры.</string>
+    <string name="msg_cannot_record_video_sdhc_sdxc">Для записи видео с резервным копированием требуются две идентичные карты SD.</string>
+    <string name="msg_cannot_regist_camera_for_limit_over">"Еще одна камера не может быть зарегистрирована. 
+Отмените регистрацию существующих камер."</string>
+    <string name="msg_cannot_restart_remote_wakeup">"Вследствие состояния камеры нельзя воспользоваться этой функцией.
+Убедитесь, что камера не находится в процессе работы.
+При подключении к камере с помощью Wi-Fi проверьте точку доступа этого подключения в настройках Wi-Fi."</string>
+    <string name="msg_cannot_switch_current_sd">Не удается включить.</string>
+    <string name="msg_changed_target_content_highlight">Переключение на видео, которые можно использовать с функцией воспроизведения наиболее ярких моментов.</string>
+    <string name="msg_changed_target_content_phcol">Переключение на видео, которые можно использовать с функцией фотоколлаж Выделенное воспроизведение.</string>
+    <string name="msg_cloud_backup_ble_disconnect">Связь с камерой через Bluetooth потеряна.</string>
+    <string name="msg_cloud_backup_camera_busy">Поскольку камера находится в процессе работы, то в данный момент нельзя воспользоваться этой функцией.</string>
+    <string name="msg_cloud_backup_camera_busy_remote">Завершите подключение Wi-Fi камеры.</string>
+    <string name="msg_cloud_backup_cannot_start">Резервное копирование не может быть запущено</string>
+    <string name="msg_cloud_backup_communicate_fail">Обмен данными с камерой невозможен.</string>
+    <string name="msg_cloud_backup_communication_error">"Обмен данными с камерой невозможен. 
+Выберите ее снова."</string>
+    <string name="msg_cloud_backup_conection_test_cancel">Тест соединения отменен.</string>
+    <string name="msg_cloud_backup_conection_test_fail">Тест соединения не выполнен.</string>
+    <string name="msg_cloud_backup_conection_test_success">Тест соединения завершен.</string>
+    <string name="msg_cloud_backup_conection_test_testing_android">Проверка подключения...(%1$d/%2$d)</string>
+    <string name="msg_cloud_backup_doing">Идет резервное копирование данных камеры в облачное хранилище...</string>
+    <string name="msg_cloud_backup_finish">Камера завершила резервное копирование данных в облачное хранилище.</string>
+    <string name="msg_cloud_backup_finish_images">[%d изображение(ий)]</string>
+    <string name="msg_cloud_backup_no_ap">Точка доступа не зарегистрирована в камере. Зарегистрируйте точку доступа.</string>
+    <string name="msg_cloud_backup_not_support">Резервное копирование не поддерживается</string>
+    <string name="msg_cloud_backup_not_working">Резервное копирование останавливается...</string>
+    <string name="msg_cloud_backup_setting">"Резервное копирование изображений с камеры в облачное хранилище через точку доступа. 
+Для выбора настроек резервного копирования в облачное хранилище включите питание камеры, а затем подключите ее через Bluetooth."</string>
+    <string name="msg_cloud_backup_setting_old">"Резервное копирование изображений с камеры в облачное хранилище через точку доступа. 
+Для выбора настроек резервного копирования в облачное хранилище включите питание камеры."</string>
+    <string name="msg_cloud_backup_start">Камера начала резервное копирование данных в облачное хранилище.</string>
+    <string name="msg_cloud_backup_start_fail">Не удается запустить резервное копирование.</string>
+    <string name="msg_cloud_backup_terminate">Резервное копирование данных в облачное хранилище остановлено камерой.</string>
+    <string name="msg_cloud_backup_to_finish">Резервное копирование данных %s завершено</string>
+    <string name="msg_cloud_backup_to_target">Идет резервное копирование данных %s...</string>
+    <string name="msg_cloud_backup_to_terminate">Резервное копирование данных %s остановлено</string>
+    <string name="msg_cloud_backup_upload_target">Место для отправки данных</string>
+    <string name="msg_cloud_no_connecting">Камера не подключена</string>
+    <string name="msg_cmn_attention">Внимание</string>
+    <string name="msg_communication_error_occurred">Во время обмена информацией с камерой происходит ошибка.</string>
+    <string name="msg_complete_id_sync">Зарегистрирован такой же идентификатор LUMIX CLUB как и на камере.</string>
+    <string name="msg_confirm_auto_transfer_receive">Подключиться к другому смартфону и принимать изображения на нем?</string>
+    <string name="msg_confirm_communication_env">Проверьте, нет ли проблем с коммуникационной средой.</string>
+    <string name="msg_confirm_network_connection">Проверьте подключение.</string>
+    <string name="msg_confirm_selected_function">Проверьте функцию.</string>
+    <string name="msg_connect_ap_on_wifi_setting">Подключитесь к указанной ниже точке доступа в меню \"Настр Wi-Fi \".</string>
+    <string name="msg_connected">Подсоединено</string>
+    <string name="msg_connected_to_camera">Успешное подсоединение к камере.</string>
+    <string name="msg_connecting">Идет подключение...</string>
+    <string name="msg_connecting_camera">Подсоединена камера [%s].</string>
+    <string name="msg_connecting_camera_is_lumix_sync">Используйте [LUMIX Sync] для подключения к камере.</string>
+    <string name="msg_connecting_to_camera">Подсоединение к камере.</string>
+    <string name="msg_connecting_to_camera1">Подсоединение к камере.</string>
+    <string name="msg_connection_duplicated">"Камера уже используется.
+Выберите другую камеру."</string>
+    <string name="msg_connection_duplicated_dsc">Камера уже используется. Выберите другую камеру или отключите соединение Wi-Fi на камере, а затем включите его.</string>
+    <string name="msg_connection_failed">"Невозможно соединиться с камерой.
+Проверьте соединение Wi-Fi."</string>
+    <string name="msg_connection_nosupport_camera">Неподдерживаемое устройство.</string>
+    <string name="msg_connection_test_phase_four">Ошибка соединения.</string>
+    <string name="msg_connection_test_phase_one">Невозможно подключиться к точке доступа.</string>
+    <string name="msg_connection_test_phase_three">Ошибка соединения.</string>
+    <string name="msg_connection_test_phase_two">Соединение с сервером невозможно.</string>
+    <string name="msg_connection_test_phase_zero">Не найдена беспр. точка доступа.</string>
+    <string name="msg_connectl_next_ap">Подключение к указанной ниже точке доступа.</string>
+    <string name="msg_cookie_policy_agreement">Условия использования приложения будут автоматически отправлены на сервер. Эту настройку можно позднее изменить.</string>
+    <string name="msg_create_folder_error">Невозможно создать папку</string>
+    <string name="msg_delete_camera_registration">Отменить регистрацию?</string>
+    <string name="msg_delete_camera_registration_with_pairing">"Регистрация отменена.
+Удалите сопряжение также и на камере."</string>
+    <string name="msg_disable_shoot">Съемка невозможна</string>
+    <string name="msg_disconnect_camera">Соединение с камерой прервано.</string>
+    <string name="msg_disconnectd_ssid">Связь с %s потеряна.</string>
+    <string name="msg_dlna_play_explain">"
+[Замечание для пользователей, подсоединяющих камеру к DLNA-устройству]
+Для видеоматериалов, которые нужно воспроизвести на DLNA-совместимом ТВ установите режим записи на “848x480/30p(25p)”.
+
+Способ установки:
+Выберите “Меню” -> “Настр.Зап.” -> “Нормал.режим съемки”, а затем выберите “Режим Зап.” -> “848x480/30p(25p)”."</string>
+    <string name="msg_do_connect_wifi_for_regstering_camera">Для завершения регистрации необходимо подключить %s к Wi-Fi.</string>
+    <string name="msg_enable_location_service">Установите для параметра \"Местоположение \" значение \"ВКЛ \".</string>
+    <string name="msg_enable_wifi_direct">Включить Wi-Fi Direct</string>
+    <string name="msg_enable_wifi_setting_for_connection">"Wi-Fi нужно включить для соединения с камерой.
+Включить Wi-Fi?"</string>
+    <string name="msg_err_save_file_not_supported">Эту функцию невозможно использовать, так как формат изображения не поддерживается Вашим смартфоном или планшетом.</string>
+    <string name="msg_err_save_file_not_supported_or_lack_space">Эту функцию невозможно использовать, так как формат изображения не поддерживается Вашим смартфоном или планшетом, или же из-за недостаточного доступного места сохранения.</string>
+    <string name="msg_err_sync_id">Сбой копирования идентификатора LUMIX CLUB. Проверьте соединение с камерой.</string>
+    <string name="msg_error_af_lock">Функцию AF+MF невозможно использовать, так как изображение не в фокусе.</string>
+    <string name="msg_error_connect_app_need_update">Соединение к камере невозможно. Пожалуйста, обновите это приложение.</string>
+    <string name="msg_error_connect_check_camera">Подсоединение к камере невозможно. Проверьте подсоединяемую камеру.</string>
+    <string name="msg_error_connect_check_input_param">Подсоединение к камере невозможно. Проверьте идентификатор устройства и пароль.</string>
+    <string name="msg_error_fail_to_copy_movieslideshow">Сбой копирования созданного файла　наиболее ярких моментов. Попробуйте создать еще раз　наиболее яркие моменты, сохраняя　наиболее яркие моменты　с помощью формата более низкого качества изображения.</string>
+    <string name="msg_error_homemon_disconnected">Подсоединение к камере было прервано. Пожалуйста, подождите немного перед повторной попыткой.</string>
+    <string name="msg_error_login">Сбой входа в систему.</string>
+    <string name="msg_error_matanity_autoreview_reconnect">"Подсоединение к камере было прервано во время проверки записанного фотоснимка. 
+Записанный фотоснимок был сохранен автоматически."</string>
+    <string name="msg_error_matanity_capture_full">Запись невозможна, так как уже записано максимальное количество сцен. Создайте новый проект Остановка движения.</string>
+    <string name="msg_error_matanity_create_project_full">Невозможно создать новый фотоснимок Остановка движения, так как папка данных и группа записи Остановка движения уже заполнены.</string>
+    <string name="msg_error_pantilter_playmode">Эту функцию невозможно использовать, пока подсоединена дистанционная поворотная база.</string>
+    <string name="msg_error_picmate">Во время связи с LUMIX CLUB произошла ошибка.</string>
+    <string name="msg_error_picmate_agreement">Эта функция недоступна, так как не получено Соглашение об использовании.</string>
+    <string name="msg_error_picture_jump">Во время загрузки произошла ошибка. Проверьте, что Вы можете получить доступ к интернету.</string>
+    <string name="msg_error_picture_jump_invalid_data">Указанное изображение невозможно загрузить, так как нельзя считать его данные.</string>
+    <string name="msg_error_picture_jump_need_check_application">"Сбой передачи изображения. 
+Подтвердите, что установлено приложение назначения передачи."</string>
+    <string name="msg_error_picture_jump_need_check_picmateserver_av">Сбой загрузки изображения. Подтвердите, что Вы завершили регистрацию Вашего АВ устройства на LUMIX CLUB.</string>
+    <string name="msg_error_regist">"Сбой новой регистрации.
+Введите последовательность из 8 – 16 символов 
+с комбинацией букв и цифр."</string>
+    <string name="msg_error_regist_password_length">"Введите последовательность из 8 – 16 символов 
+с комбинацией букв и цифр."</string>
+    <string name="msg_error_setting_av">"Сбой регистрации аудиовидеоустройства.
+Проверьте, что введенный номер адреса/номер доступа зарегистрирован с LUMIX CLUB.
+Для получения подробных сведений обратитесь к инструкции по эксплуатации используемого аудиовидеоустройства."</string>
+    <string name="msg_error_setting_cloud">Сбой настройки облачной синхронизации</string>
+    <string name="msg_error_upload_not_internet">Невозможно загрузить файлы, так как нет соединения с интернетом.</string>
+    <string name="msg_eula_agreement_new">"Чтобы использовать это приложение, вы должны согласиться с условиями использования.
+Если вы согласны с условиями, нажмите кнопку \"Согласен \"."</string>
+    <string name="msg_eula_agreement_update">"Условия использования этого приложения обновлены.
+Чтобы продолжать пользоваться этим приложением, вы должны согласиться с условиями использования.
+Если вы согласны с условиями, нажмите кнопку \"Согласен \"."</string>
+    <string name="msg_file_copy_error_occurred">Произошла ошибка при копировании изображений.</string>
+    <string name="msg_file_copying">Копирование файла(ов)</string>
+    <string name="msg_file_uploading">Отправление файла(ов)...</string>
+    <string name="msg_focus_select_change_focus_mode">Для использования Пост-фокуса перейдите в режим AF.</string>
+    <string name="msg_focus_select_change_pint_position">Положение фокуса изменено другими действиями. Запись остановлена.</string>
+    <string name="msg_focus_select_shooting">Запись в пост-фокусе</string>
+    <string name="msg_func_not_supported">Эта функция не поддерживается Вашим устройством.</string>
+    <string name="msg_geotag_takeover_data1">Уже имеются данные геолок. от более ранней версии.</string>
+    <string name="msg_geotag_takeover_data2">Данные геолок. должны быть обновлены для использования с этой версией.</string>
+    <string name="msg_geotag_takeover_data3">Обновить данные геолок.?</string>
+    <string name="msg_geotag_takeover_delete">Стереть данные геолок., записанные для более ранней версии?</string>
+    <string name="msg_geotag_takeover_executing">Обновление данных геолок…</string>
+    <string name="msg_geotag_takeover_not_delete">Не стирать</string>
+    <string name="msg_high_temperature_warning">Камера не может продолжить работу из-за перегрева. Питание камеры отключится.</string>
+    <string name="msg_howto_end_exposure">Ударьте кнопку записи, чтобы отменить экспозицию.</string>
+    <string name="msg_howto_picjump_setting">Настройки“Совместное использование изображения” можно выполнить с помощью следующей процедуры.</string>
+    <string name="msg_hrs_image_creating">"Создание изображения
+высокого разрешения"</string>
+    <string name="msg_input_all_to_complete">Когда Вы завершите все пункты, нажмите Завершить.</string>
+    <string name="msg_input_all_to_login">Нажмите \"Вход в систему \" после заполнения всех полей.</string>
+    <string name="msg_input_all_to_regist">Нажмите \"Зарегистрировать \" после заполнения всех полей.</string>
+    <string name="msg_input_all_to_register">Нажмите \"Зарегистрировать \" после заполнения всех полей.</string>
+    <string name="msg_input_all_to_setting">Нажмите \"Set \" после заполнения всех полей.</string>
+    <string name="msg_invalid_camera_nfc_setting">Неверные NFC установки на камере. Пожалуйста, исправьте установки.</string>
+    <string name="msg_lc_ready">"Для снижения шума
+после нажатия кнопки
+затвора камера
+начинает создавать
+изобр. в черной рамке."</string>
+    <string name="msg_lc_start">"Композиция визирования
+по экрану
+начинается после
+нажатия кнопки
+затвора."</string>
+    <string name="msg_lc_waiting">"Создание изображения в черной рамке
+для снижения шума.
+Подождите."</string>
+    <string name="msg_lc_waiting_nr">Идет обработка</string>
+    <string name="msg_lc_waiting_nr_old">"Выполняется снижение шума.
+Подождите."</string>
+    <string name="msg_liveview_lens_warning">Изменить на режим записи?(Объектив может выдвинуться.)</string>
+    <string name="msg_location_service_warning">"Невозможно получить информацию о местоположении.
+Активизируйте [Службы геолокации]."</string>
+    <string name="msg_location_service_warning_notify">Невозможно получить информацию о местоположении.</string>
+    <string name="msg_login_password_diff">Пароль не соответствует.</string>
+    <string name="msg_loop_lack_of_remain">Недостаточная емкость карты. Вам нужно, чтобы осталось, по крайней мере, 60 минут для записи в этом режиме.</string>
+    <string name="msg_loop_rec_stop">Запись была автоматически остановлена, так как прошло 24 часа с начала записи.</string>
+    <string name="msg_matanity_cannot_use">Эту функцию нельзя использовать во время подтверждения снятых фотоснимков.</string>
+    <string name="msg_matanity_change_confirm">"Текущий проект будет закончен, и запись будет выполняться как новый проект.
+Вы уверены, что хотите продолжить?"</string>
+    <string name="msg_media_format_error_need_reformat">Сбой форматирования. Эту карту памяти SD необходимо переформатировать.</string>
+    <string name="msg_media_format_finished">Форматирование завершено.</string>
+    <string name="msg_movie_wifi_connecting">Идет подключение...</string>
+    <string name="msg_movieslideshow_settings">"Приложение может автоматически выбирать выделенные участки из записанных Вами сцен и сохранять их с добавленными эффектами.
+Вы можете изменять эффекты, изменяя установки."</string>
+    <string name="msg_movieslideshow_settings_title">Создание наиболее ярких моментов</string>
+    <string name="msg_need_camera_time_setting">Установите время на камере.</string>
+    <string name="msg_need_picmate_id">Так как это приложение использует службы, связанные со службами LUMIX CLUB, для загрузок на веб-службы, Вы должны согласиться с соглашениями и условиями служб LUMIX CLUB, чтобы загружать файлы на веб-службы.</string>
+    <string name="msg_need_picmate_id_input">Ввести зарегистриров. идентификатор</string>
+    <string name="msg_need_picmate_id_regist">Получить новый идентификатор</string>
+    <string name="msg_need_power_on_for_sd_card_restoration">"Обнаружена ошибка карты памяти SD, но информацию управления данными невозможно восстановить из-за низкого заряда батареи камеры. Зарядите батарею.
+Нажмите OK, чтобы выключить камеру."</string>
+    <string name="msg_network_invalid_ap_ssid">Имя сети SSID может содержать только однобитные буквенно-цифровые знаки и символы. (1 - 32 знака.)</string>
+    <string name="msg_network_invalid_ap_ssid_pw">Пароль может содержать только однобитные буквенно-цифровые знаки и символы. (0, 5 или 8 – 64 знаков.)</string>
+    <string name="msg_network_invalid_camera_ssid">Имя сети SSID может содержать только однобитные буквенно-цифровые знаки и символы. (1 - 32 знака.)</string>
+    <string name="msg_network_invalid_camera_ssid_pw">Пароль может содержать только однобитные буквенно-цифровые знаки и символы. (8 - 64 знака.)</string>
+    <string name="msg_network_invalid_ssid_or_pass">Неправильное имя сети SSID или пароль.</string>
+    <string name="msg_nfc__movie_display">Установить Wi-Fi соединение со смартфоном?</string>
+    <string name="msg_nfc__movie_display_v2">Подсоединить к этому смартфону через Wi-Fi?</string>
+    <string name="msg_nfc_after_movie_work">Затем коснитесь метки NFC на устройстве, чтобы снова соединиться с Вашим смартфоном.</string>
+    <string name="msg_nfc_cancel_camera_state_confirm">Отображается ли “%s” на камере?</string>
+    <string name="msg_nfc_complete">Обработка NFC успешно завершена.</string>
+    <string name="msg_nfc_de_touch">Касание NFC</string>
+    <string name="msg_nfc_explain">Если подсоединяемое устройство совместимо с NFC, коснитесь метки NFC на стороне устройства Вашим смартфоном.</string>
+    <string name="msg_nfc_explain_tmp">Если Вы используете NFC-совместимую модель, коснитесь устройством камеры.</string>
+    <string name="msg_nfc_failed_touch">Сбой прикосновения. В зависимости от условий работы камеры прикосновение NFC может быть невозможно. Выберите устройство, к которому Вы хотите подсоединиться, из списка.</string>
+    <string name="msg_nfc_failed_touch_camera_reject">Соединение отклонено.</string>
+    <string name="msg_nfc_failed_touch_invalid_camera">Неподдерживаемое устройство.</string>
+    <string name="msg_nfc_failed_touch_invalid_content">"Сбой касания.
+Функция NFC может не работать в зависимости от условий работы камеры."</string>
+    <string name="msg_nfc_failed_touch_invalid_data">"Сбой касания.
+Невозможно получить необходимую информацию."</string>
+    <string name="msg_nfc_failed_touch_invalid_io_exception">"Сбой касания.
+Касание может быть прервано во время обработки NFC. Попробуйте касание немного позднее."</string>
+    <string name="msg_nfc_failed_touch_other_error">Сбой касания.</string>
+    <string name="msg_nfc_failed_touch_power_off_setting">Включите камеру, а затем коснитесь еще раз.</string>
+    <string name="msg_nfc_failed_touch_setting_off">Включите функцию NFC на камере, а затем коснитесь еще раз.</string>
+    <string name="msg_nfc_failed_touch_share_invalid_content">"Сбой касания.
+Изображение может не поддерживаться. Выберите другое изображение и попробуйте коснуться еще раз."</string>
+    <string name="msg_nfc_movie_work">* Если на ЖК-мониторе подсоединенной камеры отображается “%s”, выберите “ДА”, а затем прикоснитесь к ней  смартфоном.</string>
+    <string name="msg_nfc_movie_work_v2">* Если на ЖК-мониторе подсоединенной камеры отображается “%s”, выберите “ДА”, а затем прикоснитесь к ней смартфоном еще раз.</string>
+    <string name="msg_nfc_not_work_explain">Если оно несовместимо с NFC, пожалуйста, подождите.</string>
+    <string name="msg_nfc_touch_failed">Нет соединения с камерой. Пожалуйста, прикоснитесь к ней еще раз.</string>
+    <string name="msg_nfc_touch_same_camera">Прикоснитесь к той же самой камере еще раз.</string>
+    <string name="msg_no_access_point_found">Не найдена беспр. точка доступа</string>
+    <string name="msg_no_card_inserted">В камеру не вставлена карта памяти SD.</string>
+    <string name="msg_no_connecting">Не подсоединено</string>
+    <string name="msg_no_contents_found">Не найдено содержание для воспроизведения.</string>
+    <string name="msg_no_contents_found_for_select">Не найдено доступное для выбора содержание.</string>
+    <string name="msg_no_network_connection">Нет подключения к сети (%s).</string>
+    <string name="msg_non_sync_diff_id">Другие идентификаторы LUMIX CLUB уже установлены для камеры и этого приложения.</string>
+    <string name="msg_non_sync_not_exist_id">Не установлен идентификатор LUMIX CLUB для камеры и этого приложения.</string>
+    <string name="msg_not_connected">Не подсоединено</string>
+    <string name="msg_not_found_copy_target">Нет подходящих изображений для копирования.</string>
+    <string name="msg_not_input_password">Пароль не введен. Вы все равно хотите применить установки?</string>
+    <string name="msg_not_supported_by_os_version">Эта функция не поддерживается текущей версией ОС Вашего устройства.</string>
+    <string name="msg_now_camera_geotag_write_to_picture">Соединение невозможно, так как камера отправляет информацию геолокации.</string>
+    <string name="msg_now_cloud_downloading">Скачивание вновь найденных изображений....</string>
+    <string name="msg_now_connecting">Подсоединение...</string>
+    <string name="msg_now_connecting_to_camera">Подсоединение к камере...</string>
+    <string name="msg_now_connecting_to_camera_and_waiting_image">Подсоединение к камере или ожидание изображений, которые должны быть отправлены с камеры.</string>
+    <string name="msg_now_connecting_to_network">Подсоединение к сети...</string>
+    <string name="msg_now_id_syncing">Копирование идентификатора LUMIX CLUB...</string>
+    <string name="msg_now_reate_stopmotion_video">Создание видео...</string>
+    <string name="msg_now_saving_image">Импортирование изображений…</string>
+    <string name="msg_now_saving_movie">Импортирование видео…</string>
+    <string name="msg_now_searching">Поиск...</string>
+    <string name="msg_now_searching_camera_and_select_wifi">"Поиск камеры…
+Закройте диалог/прил. и выберите SSID камеры для прямого соединения из списка Wi-Fi."</string>
+    <string name="msg_now_searching_camera_and_select_wifi_and_stable_wifi_off">"Поиск камеры…
+Закройте диалог/прил. и выберите SSID камеры для прямого соединения из списка Wi-Fi."</string>
+    <string name="msg_now_searching_camera_and_waiting_image">"Поиск камеры
+или ожидание изображений, которые должны быть отправлены с камеры."</string>
+    <string name="msg_now_searching_camera_and_waiting_image_and_select_wifi">Поиск или ожидание камеры для передачи изобр. Закройте диалог/прил. и выберите SSID камеры для прямого соединения из списка Wi-Fi.</string>
+    <string name="msg_now_searching_camera_and_waiting_image_and_select_wifi_and_stable_wifi_off">Поиск или ожидание камеры для передачи изобр. Закройте диалог/прил. и выберите SSID камеры для прямого соединения из списка Wi-Fi.</string>
+    <string name="msg_now_searching_for_camera">Поиск камеры...</string>
+    <string name="msg_now_searching_for_network">Поиск сети...</string>
+    <string name="msg_now_snapmovie_creating">Создание Film Snap…</string>
+    <string name="msg_now_webservice_loading">Получение информации на других Web-службах, связанных с LUMIX CLUB...</string>
+    <string name="msg_occurred_communication_error">Ошибка соединения.</string>
+    <string name="msg_operate_camera_to_wait_pairing">Переведите камеру в режим ожидания, чтобы выполнить \"Сопряжение \".</string>
+    <string name="msg_pantilter_check_range">Подсоединение невозможно, так как камера выполняет операцию Проверить Диапазон Записи.</string>
+    <string name="msg_pantilter_play_confirm">Пауза автоматического функционирования?</string>
+    <string name="msg_phcol_able_mk_phcol">Вы можете использовать вырезанные фотоснимки для создания фотоколлажа.</string>
+    <string name="msg_phcol_confirm_exit">Выйти без сохранения текущего изображения?</string>
+    <string name="msg_phcol_folder_create_error">"Сбой создания папки.
+Введите другое имя папки и попробуйте еще раз."</string>
+    <string name="msg_phcol_folder_exist_warn">Указанное имя папки уже существует. Вы хотите добавить фотоснимки к этой папке?</string>
+    <string name="msg_phcol_folder_input_warn">Пожалуйста, введите имя папки, используя до %d однобитных символов. </string>
+    <string name="msg_phcol_warning_select_folder">Информация для выбранного(ых) изображения(й) будет удалена. Вы уверены, что хотите продолжить?</string>
+    <string name="msg_picmate_size_over">Невозможно загрузить выбранное изображение, так как оно слишком большое.</string>
+    <string name="msg_please_off_auto_transfer">Отключите установку [Автопередача] камеры.</string>
+    <string name="msg_pre_copy_content_to_local">"Воспроизведение на смартфоне может быть невозможно в зависимости от модели.
+Копировать?"</string>
+    <string name="msg_pre_copy_exclude_content">Изображения в форматах, не поддерживаемых смартфоном, будут исключены. Вы хотите продолжить?</string>
+    <string name="msg_pre_shoot1">"Выполняйте съемку SH1 PRE (со сверхвысокой скоростью предварительной съемки) с использованием затвора камеры.
+ Из этого приложения можно выполнять съемку SH1 (со сверхвысокой скоростью)."</string>
+    <string name="msg_pre_shoot2">"Выполняйте съемку SH2 PRE (со сверхвысокой скоростью предварительной съемки) с использованием затвора камеры.
+ Из этого приложения можно выполнять съемку SH2 (со сверхвысокой скоростью)."</string>
+    <string name="msg_prerec_to_disable">"Предварительная серийная съемка остановлена.
+
+Камере необходимо остыть."</string>
+    <string name="msg_privacy_notice_agreement">Условия использования приложения будут автоматически отправлены на сервер. Эту настройку можно позднее изменить.</string>
+    <string name="msg_pwless_authentification_deny">Камера (%s) отклонила соединение.</string>
+    <string name="msg_pwless_authentification_fail">Невозможно подсоединиться к камере (%s).</string>
+    <string name="msg_pwless_other_sp_authentification">Камера (%s) подсоединена к другому смартфону.</string>
+    <string name="msg_pwless_wait_authentification1">Проверка камеры (%s)…</string>
+    <string name="msg_pwless_wait_authentification2">Управление камерой для подсоединения.</string>
+    <string name="msg_qr_confirm">Подсоединяемое устройство должно быть совместимо с функцией считывания QR-кода. Продолжить?</string>
+    <string name="msg_qr_explain">Если Ваше устройство имеет QR-сканер, щелкните следующую кнопку.</string>
+    <string name="msg_qrcode_warning_do_not_scan_remoteqr1">Чтобы отсканировать QR-код для функции домашнего видеонаблюдения, откройте меню и выберите Функция приложения > Наблюдение > Настройка назн.соед., а затем нажмите кнопку QR-кода.</string>
+    <string name="msg_rating_avchd_restriction">"Изображения, которые можно настроить только на ★5, будут настроены на ★5. 
+Вы хотите продолжить?"</string>
+    <string name="msg_rating_clear_multi_protect">Не снята блокировка с защищенных изображений.</string>
+    <string name="msg_rating_clear_multi_protect_unsupport">Нельзя установить для %d изображ.</string>
+    <string name="msg_rating_set_multi_protect_unsupport">Нельзя установить для %d изображ.</string>
+    <string name="msg_rating_set_single_protect">Этот снимок защищен.</string>
+    <string name="msg_rating_set_single_unsupport">Нельзя установить для этого снимка.</string>
+    <string name="msg_raw_image_warning">В зависимости от ОС смартфона файлы RAW могут отображаться неправильно.</string>
+    <string name="msg_recording_slowmotion_mode">Изображение и звук невозможно выводить, пока записывается видео замедленной съемки.</string>
+    <string name="msg_regist_unsent_upload_with_internet">Выбранные изображения были зарегистрированы в списке неотправленных изображений. Загрузить файлы из списка неотправленных изображений после подсоединения к интернету.</string>
+    <string name="msg_regstering_camera">Регистрация %s...</string>
+    <string name="msg_rejected_to_camera">Подсоединение к камере не выполнено.</string>
+    <string name="msg_release_internet_connection">Отключите соединение с интернетом в меню \"Настр Bluetooth \", а затем подключитесь к указанной ниже точке доступа в меню \"Настр Wi-Fi \".</string>
+    <string name="msg_remote_nfc_failed_touch">Сбой прикосновения. В зависимости от условий работы камеры прикосновение NFC может быть невозможно.</string>
+    <string name="msg_remoteaccess_confirm_finish">Выйти из видеонаблюдения?</string>
+    <string name="msg_remoteaccess_error_check_input_param">Проверьте идентификатор и пароль камеры, к которой Вы хотите подсоединиться.</string>
+    <string name="msg_remoteaccess_error_check_internet">Проверьте, чтобы беспроводная точка доступа локальной сети, к которой подсоединена камера, была подсоединена к интернету.</string>
+    <string name="msg_remoteaccess_error_problem_on_network">Нормальное взаимодействие с камерой в настоящий момент невозможно, или же сетевая среда может не допускать использования функции домашнего видеонаблюдения.</string>
+    <string name="msg_remoteaccess_error_trafficy_line">Линия занята. Пожалуйста, попробуйте еще раз позднее.</string>
+    <string name="msg_remoteview_quality_qvga">"Качество изображения живого контроля — [QVGA].
+Можно изменить настройку [Кач.из.жив.контроля] раздела [Настр.жив.контроля] в [Меню]."</string>
+    <string name="msg_request_check_wifi_setting">Невозможно найти камеру для подсоединения. Проверьте настройки Wi-Fi.</string>
+    <string name="msg_retry">Повторите попытку.</string>
+    <string name="msg_savecomplete_ask_playmode_android">Содержание сохранено в Галерею. Выйти из редактирования и сохранить?</string>
+    <string name="msg_scene_select">Выбор сцены</string>
+    <string name="msg_sd_card_under_restoration">Ошибка информации управления данными. Восстановление информации управления данными.</string>
+    <string name="msg_searching_camera_on_ssid">Поиск камеры, подключенной к %s...</string>
+    <string name="msg_select_camera">Выберите камеру</string>
+    <string name="msg_select_camera_to_control">Выберите камеру для подключения.</string>
+    <string name="msg_select_connection">Выберите метод подключения</string>
+    <string name="msg_select_content_over_time">Это изображение невозможно выбрать, так как превышена максимальная длительность, которую можно объединять.</string>
+    <string name="msg_select_control_camera">Если выполнялась работа с камерой и было выбрано %s, выберите \"Работа с камерой \".</string>
+    <string name="msg_select_function">Выберите функцию</string>
+    <string name="msg_selected_function_invalid">Указанная функция не была выбрана с помощью камеры.</string>
+    <string name="msg_send_all">Отправить все?</string>
+    <string name="msg_send_ugase_failed">Не удалось отправить условия использования.</string>
+    <string name="msg_setup_easy_wifi_overwrite">Идентификатор устройства домашнего видеонаблюдения был зарегистрирован на смартфоне. Вы хотите перезаписать его?</string>
+    <string name="msg_setup_easy_wifi_registered">Идентификатор устройства домашнего видеонаблюдения был зарегистрирован на смартфоне.</string>
+    <string name="msg_snapmovie_confirm_exit">Выйти без сохранения текущего видео?</string>
+    <string name="msg_split_delete_back">После</string>
+    <string name="msg_split_delete_front">Перед</string>
+    <string name="msg_split_delete_return">Возврат</string>
+    <string name="msg_split_delete_which">Какую часть следует удалить?</string>
+    <string name="msg_ssid_init_need_change">SSID и пароль Wi-Fi камеры установлены на значения по умолчанию. Рекомендуется изменить SSID и пароль Wi-Fi. Чтобы изменить эти установки, выберите “Уст-ки Wi-Fi камеры” → “Уст-ки SSID камеры”.</string>
+    <string name="msg_ssid_label">SSID камеры:</string>
+    <string name="msg_ssid_pw_valid_after_power_on">Установленные имя сети SSID/пароль будут отражаться при выключении и повторном включении камеры или при соединении Wi-Fi для восстановления камеры.</string>
+    <string name="msg_stop_motion_animation_finished">Покадровая съемка завершена.</string>
+    <string name="msg_stop_reason_eight">Нет изображений для резервного копирования.</string>
+    <string name="msg_stop_reason_five">Вход невозможен. Проверьте ваше имя пользователя и пароль.</string>
+    <string name="msg_stop_reason_four">Ошибка соединения. Попробовать еще раз.</string>
+    <string name="msg_stop_reason_nine">Не удается запустить резервное копирование, поскольку камера находится в режиме сна.</string>
+    <string name="msg_stop_reason_seven">Проверьте камеру.</string>
+    <string name="msg_stop_reason_six">Не удается подключиться к пункту назначения загрузки. Проверьте настройки пункта назначения загрузки.</string>
+    <string name="msg_stop_reason_ten">Не удается запустить резервное копирование, поскольку камера заряжается.</string>
+    <string name="msg_stop_reason_two">Проверьте оставшийся заряд батареи.</string>
+    <string name="msg_stopmotion_disable_func">Эту функцию невозможно использовать во время подтверждения снятых фотоснимков.</string>
+    <string name="msg_stopmotion_new_proj_warn">Будет создан новый фотоснимок Остановка движения. Если Вы создадите новый проект, дальнейшие записи невозможно добавлять к текущей группе записи. Вы уверены, что хотите продолжить?</string>
+    <string name="msg_stopmotion_system_freq_error" />
+    <string name="msg_tc_backup_not_recorded">"Режим записи изменен. 
+Резервное копирование для Twin Camera невозможно выполнить в этом режиме записи."</string>
+    <string name="msg_tc_backup_off">Резервное копирование для Twin Camera будет отменено.</string>
+    <string name="msg_touch_de_geotag_disable">Функция NFC камеры отменена.</string>
+    <string name="msg_touch_de_geotag_exist_geotag">Данные геолок. уже заданы для этого изображения.</string>
+    <string name="msg_touch_de_geotag_fail">Невозможно отправить данные геолок. на камеру.</string>
+    <string name="msg_touch_de_geotag_invalid_screen">Камера не может задать данные геолок. в этом состоянии.</string>
+    <string name="msg_touch_de_geotag_no_data">На смартфоне не зарегистрированы соответствующие данные геолок.</string>
+    <string name="msg_touch_de_geotag_others">Данные геолок. невозможно задать для этого изображения.</string>
+    <string name="msg_touch_de_geotag_protect_content">Изображение защищено.</string>
+    <string name="msg_touch_de_geotag_success">Данные геолокации отправлены на камеру.</string>
+    <string name="msg_touch_de_geotag_unsupport">Камера не поддерживает задание данных геолок. по NFC.</string>
+    <string name="msg_touch_de_geotag_unsupport_content">Данные геолок. невозможно задать для этого изображения.</string>
+    <string name="msg_touch_de_geotag_write_protect">Карта SD имеет защиту от записи.</string>
+    <string name="msg_transfer_attention">С помощью пакетной передачи можно создавать копии ранее переданных изображений.</string>
+    <string name="msg_volume_down_in_howling">Если происходит завывание, уменьшите громкость смартфона/планшета.</string>
+    <string name="msg_vrec_stop_avchd_track_over">Запись была остановлена, так как достигнуты пределы для стандарта AVCHD.</string>
+    <string name="msg_vrec_stop_create_folder_error">Сбой создания папки. Запись не может начаться.</string>
+    <string name="msg_vrec_stop_internal_memory_full">Запись была остановлена, так как заполнена память.</string>
+    <string name="msg_vrec_stop_speed_insufficient">Запись была остановлена, так как карта памяти не может поддерживать скорость записи.</string>
+    <string name="msg_vrec_stop_temperature_over">Запись была остановлена из-за перегрева внутри камеры.</string>
+    <string name="msg_vrec_stop_uplimit">Запись была остановлена, так как превышен доступный для записи размер данных.</string>
+    <string name="msg_warning_limit_contents">Уже много изображений сохранено на карте SD, вставленной в камеру. Это может привести к неустойчивой работе.</string>
+    <string name="msg_warning_loop_rec_auto_delete">При использовании непрерывной записи сцены, записанные более одного часа назад, автоматически удаляются.</string>
+    <string name="msg_warning_loop_rec_stop_soon">Скоро запись автоматически остановится.</string>
+    <string name="msg_warning_rec_high_temperature">"Вывод видео и аудио остановлен, так как записывается видео.
+Коснитесь экрана, чтобы закрыть это сообщение и вернуться к съемке."</string>
+    <string name="msg_warning_remote_access_change_mode">Невозможно использовать, пока используется функция домашнего видеонаблюдения.</string>
+    <string name="msg_white_balance_set_error">Невозможно установить баланс белого.</string>
+    <string name="msg_white_balance_set_success">Баланс белого установлен.</string>
+    <string name="msg_wifi_disconnect_remote_watch_warning">При использовании возможности наблюдения выберите “Нет”, так как для этой функции требуется 3G или другая мобильная телефонная линия.</string>
+    <string name="msg_wtc_no_camera_response">Нет отклика от камеры. Пожалуйста, проверьте камеру.</string>
+    <string name="msg_wtc_no_image_sending">"Живой просмотр в режиме беспроводной сдвоенной камерыприостановлен.
+Для запуска живого просмотра включите камеру."</string>
+    <string name="multiphoto_create">Создать фотоколлаж Выделенное воспроизведение</string>
+    <string name="paly_title_warning">Предупреждение</string>
+    <string name="pantilter_cancel">Отмена</string>
+    <string name="pantilter_check_range">Подтверждение диапазона съемки...</string>
+    <string name="pantilter_error">"Произошла проблема с дистанционной поворотной базой.
+Проверьте дистанционную поворотную базу."</string>
+    <string name="pantilter_manual">Выполнение операции вручную...</string>
+    <string name="pantilter_moving_obj">Движущийся объект активизирован</string>
+    <string name="pantilter_moving_obj_pause">Движущийся объект приостановлен</string>
+    <string name="pantilter_noconnected">Соединение с дистанционной поворотной базой прервано.</string>
+    <string name="pantilter_party_auto">Режим вечеринка активизирован</string>
+    <string name="pantilter_party_auto_pause">Режим вечеринка приостановлен</string>
+    <string name="pantilter_pause">Пауза</string>
+    <string name="pantilter_preset_btn_cancel">Отмен</string>
+    <string name="pantilter_preset_btn_pause">Пауза</string>
+    <string name="pantilter_preset_btn_restart">Перез</string>
+    <string name="pantilter_preset_btn_stop">Стоп</string>
+    <string name="pantilter_preset_home">ИСХОД</string>
+    <string name="pantilter_preset_mode">Заранее установленные положения</string>
+    <string name="pantilter_preset_moving">Изменение положения…</string>
+    <string name="pantilter_preset_noset">Неуст</string>
+    <string name="pantilter_preset_pause">Заранее установлено</string>
+    <string name="pantilter_preset_pos1">ПОЛ1</string>
+    <string name="pantilter_preset_pos2">ПОЛ2</string>
+    <string name="pantilter_preset_pos3">ПОЛ3</string>
+    <string name="pantilter_preset_pos4">ПОЛ4</string>
+    <string name="pantilter_preset_pos5">ПОЛ5</string>
+    <string name="pantilter_preset_regist">Регистрация заранее установленного</string>
+    <string name="pantilter_preset_round_moving">Периодически…</string>
+    <string name="pantilter_preset_round_pause">Периодически приостановлено</string>
+    <string name="pantilter_preset_round_setting">Периодические установки</string>
+    <string name="pantilter_preset_skip">Проп</string>
+    <string name="pantilter_resetting">Сброс исходной точки...</string>
+    <string name="pantilter_searching">Поиск...</string>
+    <string name="pantilter_set_home_position">"Пожалуйста, подождите. 
+Установка домашнего положения."</string>
+    <string name="pantilter_start">Пуск</string>
+    <string name="picmate_ask_delete_content">Удалить выбранные изображения на сервере LUMIX CLUB?</string>
+    <string name="picmate_cloud_folder_name">Папка LUMIX CLUB</string>
+    <string name="picmate_cloud_service_name">Обл.синхрониз.</string>
+    <string name="picmate_command_msg_regist_error">Сбой регистрации.</string>
+    <string name="picmate_command_msg_sending">Обмен информацией с сервером...</string>
+    <string name="picmate_command_msg_sending_error">Во время обмена информацией с сервером произошла ошибка.</string>
+    <string name="picmate_lumix_club">LUMIX CLUB</string>
+    <string name="picmate_msg_network">Нет соединения с интернетом. Проверьте способ соединения.</string>
+    <string name="picmate_msg_network_3g">3G</string>
+    <string name="picmate_msg_network_wifi">Wi-Fi</string>
+    <string name="picmate_regist">Зарегистрировано</string>
+    <string name="picmate_regist2">(Зарегистрировано)</string>
+    <string name="picmate_service_top" />
+    <string name="picmate_sync_service_fail">Список служб не синхронизирован.</string>
+    <string name="picmate_sync_service_success">Список служб синхронизирован.</string>
+    <string name="picmate_url_lang_code">rus</string>
+    <string name="picmate_wifi_direct_send_error">Передача невозможна, так как камера подсоединена через Wi-Fi Direct.</string>
+    <string name="picturejump_copy">Сох.на смартфон</string>
+    <string name="picturejump_delete">Мусор (Удалить)</string>
+    <string name="picturejump_location_gallery">Галерея</string>
+    <string name="picturejump_new_av">Зарегистрировать новое аудиовидеоустройство</string>
+    <string name="play_3box_no_dmr_found">Устройство воспроизведения не найдено.</string>
+    <string name="play_3box_select_dmr">Выберите устройство воспроизведения.</string>
+    <string name="play_btn_close">Закрыть</string>
+    <string name="play_btn_continue">Продолжить</string>
+    <string name="play_btn_no">НЕТ</string>
+    <string name="play_btn_untransmit_detail">Подробнее</string>
+    <string name="play_btn_yes">ДА</string>
+    <string name="play_camera_function">ФУНКЦИЯ КАМЕРЫ</string>
+    <string name="play_delete_all_content">Удалить все</string>
+    <string name="play_delete_confirm_for_protect">Удалить выбранные файлы?(Защищенные файлы не будут удалены.)</string>
+    <string name="play_delete_with_jpeg_confirm">Удалить выбранный(е) файл(ы)? (Другой(ие) файл(ы), записанные в это же время, также будут удалены.)</string>
+    <string name="play_delete_with_jpeg_confirm_for_protect">Удалить выбранный(е) файл(ы)? (Другой(ие) файл(ы), записанные в это же время, также будут удалены.) Однако защищенные файлы не будут удалены.</string>
+    <string name="play_highlight_format">ФОРМАТ</string>
+    <string name="play_highlight_media">НОСИТЕЛЬ</string>
+    <string name="play_msg_canceling_copy">"Копирование отменено.
+Не выключайте питание."</string>
+    <string name="play_msg_canceling_delete">Удаление отменено.</string>
+    <string name="play_msg_complete_delete">Удаление завершено.</string>
+    <string name="play_msg_delete_data">Удалить из списка неотправленных изображений?</string>
+    <string name="play_msg_delete_from_list">Файлы были удалены из неотправленного списка изображений.</string>
+    <string name="play_msg_location_service_request_enable">Невозможно показать изображения на фотопленке. Включите [Службы геолокации].</string>
+    <string name="play_msg_movie_play_error">Невозможно продолжить воспроизведение видео с этим приложением. Воспроизведение остановлено.</string>
+    <string name="play_msg_movie_play_start">Для видео высокого разрешения или большой длины воспроизведение может прерываться или может быть невозможным.</string>
+    <string name="play_msg_movie_play_start2">В зависимости от модели смартфона или планшета нормальное воспроизведение может быть невозможно.</string>
+    <string name="play_msg_reading_data">Загрузка...</string>
+    <string name="play_msg_send_all">Начать загрузку всех фотоснимков/видео.</string>
+    <string name="play_msg_send_cancell">Отмена передачи...</string>
+    <string name="play_msg_send_comp">Передача файла завершена.</string>
+    <string name="play_msg_send_err">Ошибка передачи</string>
+    <string name="play_msg_send_one">Начинается загрузка.</string>
+    <string name="play_msg_setting_step">Настройки“Совместное использование изображения” не завершены. Выполните эти настройки из меню настройки.</string>
+    <string name="play_select_format">Выберите формат</string>
+    <string name="play_tab_btn">Воспроизвед.</string>
+    <string name="play_unsentimageinfo_button_canceltosend">Отмена загрузки</string>
+    <string name="play_unsentimageinfo_button_sendallimage">Повт.загрузка всех ост.изображений/видео</string>
+    <string name="play_unsentimageinfo_button_sendcrntimage">Повт.загрузка изображения/видео</string>
+    <string name="play_unsentimageinfo_cell_destsite">Назначение</string>
+    <string name="play_unsentimageinfo_cell_sendtime">Время начала</string>
+    <string name="play_unsentimageinfo_title">Информация</string>
+    <string name="play_unsentimagelist_title">Неотправленные изображения</string>
+    <string name="ply_3box_dlna_error">ТВ воспроизведение невозможно. Произошла ошибка с камерой.</string>
+    <string name="ply_3box_mode_change_error">ТВ воспроизведение невозможно. Произошла ошибка с камерой.</string>
+    <string name="ply_action_camera_power_off">Питание ВЫКЛ.</string>
+    <string name="ply_action_create_highlight">Созд.наиб.яр.мом.</string>
+    <string name="ply_action_edit_protect">ЗАЩИТА СЦЕН</string>
+    <string name="ply_action_edit_split_delete">Разделить &amp; Удалить</string>
+    <string name="ply_action_multiframephoto">Фотоколлаж Выделенное воспроизведение</string>
+    <string name="ply_action_tv_play">Воспроизведение на ТВ</string>
+    <string name="ply_btn_cancel">Отменить</string>
+    <string name="ply_btn_select">Выбрать</string>
+    <string name="ply_highlight_coping">Копирование созданной сцены наиболее ярких моментов…</string>
+    <string name="ply_highlight_copy_error">Произошла ошибка при копировании созданной сцены наиболее ярких моментов.</string>
+    <string name="ply_highlight_copy_start_error">Сбой копирования созданной сцены наиболее ярких моментов.</string>
+    <string name="ply_highlight_create_error">Произошла ошибка во время создания наиболее ярких моментов.</string>
+    <string name="ply_highlight_create_error_confirm_cam">Невозможно создавать наиболее яркие моменты. Проверьте видеокамеру.</string>
+    <string name="ply_highlight_create_error_invalid_bgm">Сбой создания наиболее ярких моментов. Выбранные данные BGM не совместимы или повреждены.</string>
+    <string name="ply_highlight_create_error_invalid_title_picture">Сбой создания наиболее ярких моментов. Данные выбранного изображения заголовка не совместимы или повреждены.</string>
+    <string name="ply_highlight_create_error_no_highlight">Невозможно создавать наиболее яркие моменты. Нет сцен, которые можно выделить.</string>
+    <string name="ply_highlight_create_error_no_remain">Невозможно создавать наиболее яркие моменты. Оставшаяся емкость носителя хранения недостаточна.</string>
+    <string name="ply_highlight_create_start_error">Сбой начала создания наиболее ярких моментов.</string>
+    <string name="ply_highlight_creating">Создание наиболее ярких моментов…</string>
+    <string name="ply_highlight_delete_error">Сбой удаления созданной сцены наиболее ярких моментов.</string>
+    <string name="ply_highlight_get_sceane_info_error">Сбой приема информации сцены.</string>
+    <string name="ply_highlight_low_memory_error" />
+    <string name="ply_highlight_not_select_sceane">Нет выбранных сцен.</string>
+    <string name="ply_highlight_send_param_error">Произошла ошибка при отправлении параметров во время создания наиболее ярких моментов.</string>
+    <string name="ply_highlight_sending_bgm">Перенос фоновой музыки...</string>
+    <string name="ply_highlight_sending_title_picture">Передача изображения заголовка...</string>
+    <string name="ply_highlight_slct_bgm">Выбор фоновой музыки</string>
+    <string name="ply_msg_ask_cloud_upload_max_num">Если загружено выбранное изображение, старые изображения будут удалены, так как превышен предел загрузки Облач.служба синхрониз.</string>
+    <string name="ply_msg_ask_cloud_upload_max_num_no">Не загружать</string>
+    <string name="ply_msg_ask_cloud_upload_max_num_yes">Загрузить</string>
+    <string name="ply_msg_cannnot_upload_max_num">Невозможно загрузить больше изображений, так как достигнут предел назначения загрузки.</string>
+    <string name="ply_msg_cannot_upload_cloud_size_over">Загрузка невозможна. Достигнут предел емкости на сервере Облач.служба синхрониз.</string>
+    <string name="ply_msg_cannot_upload_file_size_over">Невозможно загрузить выбранное изображение, так как оно слишком большое.</string>
+    <string name="ply_msg_cannot_upload_no_other">Загрузка невозможна. Нет зарегистрированных устройств.</string>
+    <string name="ply_msg_changed_folder">Отображаемое изображение было изменено.</string>
+    <string name="ply_msg_err_confirmation_sd">"Произошла ошибка при копировании изображений.
+Проверьте карту SD на смартфоне/планшете."</string>
+    <string name="ply_msg_err_copy_file">Произошла ошибка при копировании изображений.</string>
+    <string name="ply_msg_err_copy_file_lack_of_remain">Недостаточно свободного места.</string>
+    <string name="ply_msg_err_copy_file_maybe">Возможен сбой копирования изображения.</string>
+    <string name="ply_msg_err_copy_file_not_supported">Невозможно копировать, так как изображение не поддерживается этим приложением.</string>
+    <string name="ply_msg_err_copy_file_not_supported_included">Один или более файлов невозможно скопировать, так как они имеют формат, который не поддерживается этим смартфоном.</string>
+    <string name="ply_msg_err_copy_file_not_supported_or_lack_space">Произошла ошибка при копировании изображений.</string>
+    <string name="ply_msg_err_copy_file_not_supported_or_lack_space_included">Один или более файлов невозможно скопировать, так как они имеют формат, который не поддерживается этим смартфоном, или из-за недостатка свободного места.</string>
+    <string name="ply_msg_err_copy_file_type_avchd">Невозможно сохранить сцены, записанные в формате AVCHD. Преобразуйте сцену в формат MP4 на видеокамере, чтобы сохранить ее.</string>
+    <string name="ply_msg_err_delete_file">Произошла ошибка при удалении изображений.</string>
+    <string name="ply_msg_select_max_num">Невозможно выбрать больше изображений.</string>
+    <string name="ply_multiphoto_create_error">Сбой создание фотоколлажа Выделенное воспроизведение.</string>
+    <string name="ply_multiphoto_create_error_no_highlight">Сбой создания фотоколлажа Выделенное воспроизведение. Нет сцен, которые можно извлечь.</string>
+    <string name="ply_multiphoto_creating">Создание фотоколлажа Выделенное воспроизведение...</string>
+    <string name="ply_multiphoto_foldername_error">Введите имя папки, используя до 8 однобитных символов.</string>
+    <string name="ply_multiphoto_save">Сохранение фотоснимков...</string>
+    <string name="ply_multiphoto_save_complete">Фотоснимки сохранены.</string>
+    <string name="ply_phcol_change_folder">Укажите имя папки сохранения фотоснимков</string>
+    <string name="ply_phcol_save_photo">%d фотоснимков будут сохранены на смартфоне.</string>
+    <string name="ply_phcol_title">Фотоколлаж Выделенное воспроизведение</string>
+    <string name="ply_phcol_title_slct_frame_title">Выбор кадра</string>
+    <string name="ply_phcol_title_slct_picture">Выбор изображения</string>
+    <string name="ply_select_action_delete">Удалить</string>
+    <string name="ply_select_action_save">Сохранение</string>
+    <string name="ply_select_action_share">Поделиться</string>
+    <string name="psh_ntfy_babymon_dtct_ado">"Извещение
+Видеокамера обнаружила звук."</string>
+    <string name="psh_ntfy_babymon_start">"Оповещение
+Радионяня активизирована."</string>
+    <string name="pstyle_color_filter_green">Зеленый</string>
+    <string name="pstyle_color_filter_off">Выкл</string>
+    <string name="pstyle_color_filter_orange">Оранжевый</string>
+    <string name="pstyle_color_filter_red">Красный</string>
+    <string name="pstyle_color_filter_yellow">Желтый</string>
+    <string name="qrcode_read">QR-код</string>
+    <string name="rec_angle_standard">STANDARD</string>
+    <string name="rec_angle_wide">WIDE</string>
+    <string name="rec_autoreview_finish">Выйти</string>
+    <string name="rec_autoreview_now">Авто обзор</string>
+    <string name="rec_btn_icon_display">Инфо</string>
+    <string name="rec_btn_icon_display_new">DISP.</string>
+    <string name="rec_btn_quick_menu">Set</string>
+    <string name="rec_delay">Delay</string>
+    <string name="rec_during_burst">Снимаются серийные изображения…</string>
+    <string name="rec_during_exposure">Выполняется экспозиция…</string>
+    <string name="rec_just_a_moment">Пожалуйста, подождите...</string>
+    <string name="rec_label_f">F</string>
+    <string name="rec_label_mf">MF</string>
+    <string name="rec_label_ss">SS</string>
+    <string name="rec_liveview_second">сек.</string>
+    <string name="rec_msg_4kmovie_rec_error">Запись 4K видео невозможна, когда установлено Wi-Fi подключение.</string>
+    <string name="rec_msg_4kphoto_error">Невозможно записать 4K фото во время Wi-Fi соединения.</string>
+    <string name="rec_msg_4kphoto_rec_error">Запись видео невозможна, когда установлено подключение Wi-Fi.</string>
+    <string name="rec_msg_capture_failed">Сбой записи.</string>
+    <string name="rec_msg_cinelike_enable">Это приложение невозможно сейчас использовать для съемки, так как камера находится в режиме %s.</string>
+    <string name="rec_msg_first_action">Будьте осторожны с объективом, так как он может неожиданно выдвинуться при запуске в режиме записи.</string>
+    <string name="rec_msg_focusselect_error">Невозможно выполнить пост-фокусировку записи при Wi-Fi-соединении.</string>
+    <string name="rec_msg_interval_shot_mode">Это приложение невозможно сейчас использовать для съемки, так как камера находится в режиме Интервал. Съемка.</string>
+    <string name="rec_msg_lack_of_memory">Недостаточно памяти.</string>
+    <string name="rec_msg_lack_of_memory_for_movie">Следующее время записи устанавливается из-за недостаточной памяти.</string>
+    <string name="rec_msg_lens_error">"Сбой записи.
+Проверьте камеру."</string>
+    <string name="rec_msg_max_rec_time">Максимальное доступное время</string>
+    <string name="rec_msg_modechange_error">Сбой переключения режимов.</string>
+    <string name="rec_msg_movie_recording">Записывается видео. Управляйте камерой для остановки записи.</string>
+    <string name="rec_msg_need_to_extend_lens">"Поверните колесико
+трансфокатора, чтобы
+выдвинуть объектив"</string>
+    <string name="rec_msg_not_recmovie_this_mode">Видеозапись невозможна в текущем режиме.</string>
+    <string name="rec_msg_not_supported_mode">Переключено на нормальный режим записи, так как Беспроводная запись недоступна в выбранном режиме записи.</string>
+    <string name="rec_msg_only_sdi_rec">"Нет карты памяти.
+Только дист. запись через SDI."</string>
+    <string name="rec_msg_recstart_err_reject">Невозможно начать видеосъемку.</string>
+    <string name="rec_msg_recstart_error">Сбой начала видеозаписи.</string>
+    <string name="rec_msg_recstop_error">Сбой остановки видеозаписи.</string>
+    <string name="rec_msg_sd_lock">"Карта памяти этой камеры имеет защиту от записи.
+Удалите защиту для съемки изображения."</string>
+    <string name="rec_msg_ss_bulb">Запись невозможна, так как скорость затвора установлена на выдержку от руки.</string>
+    <string name="rec_msg_stop_live_stream">"Доставка изображения остановлена.
+Проверьте, что изображение получено с камеры и что камера подсоединена."</string>
+    <string name="rec_msg_stop_recording">Запись остановлена из-за отклика камеры.</string>
+    <string name="rec_msg_stop_recording_lack_memory">Запись остановлена из-за недостаточной памяти.</string>
+    <string name="rec_msg_video_rectime_crnt">Установленное время записи</string>
+    <string name="rec_msg_wait_for_camera_temperature_down">"Временно недоступно.
+Подождите, пока
+камера не охладится."</string>
+    <string name="rec_msg_zoom_error">"Сбой трансфокации.
+Проверьте камеру."</string>
+    <string name="rec_now_long_shutter_noise_reduction">Идет подавление шума</string>
+    <string name="rec_remain">R</string>
+    <string name="rec_remain_hour">h</string>
+    <string name="rec_remain_minute">m</string>
+    <string name="rec_remain_time_label">R</string>
+    <string name="rec_remote_voice_remain_a">Осталось %d сек.</string>
+    <string name="rec_selftimer_cancel">Отмен.</string>
+    <string name="rec_sensitivity_gain">Усиление</string>
+    <string name="rec_sensitivity_gain_semipro">GAIN</string>
+    <string name="rec_stopmotion_auto">Автосъемка</string>
+    <string name="rec_stopmotion_create_error">Произошла ошибка при создании видео.</string>
+    <string name="rec_stopmotion_create_error_confirm_cam">Создание видео невозможно. Проверьте камеру.</string>
+    <string name="rec_stopmotion_create_error_no_remain">Создание видео невозможно. Недостаточно свободного места на носителе хранения.</string>
+    <string name="rec_stopmotion_create_start_error">Сбой начала создания видео.</string>
+    <string name="rec_stopmotion_create_video">Покадровое видео</string>
+    <string name="rec_stopmotion_creating">Создание видео…</string>
+    <string name="rec_stopmotion_discontinuation">Запись изображения покадр. анимации не могла продолжаться и была прервана.</string>
+    <string name="rec_stopmotion_framerate">Частота кадров</string>
+    <string name="rec_stopmotion_interval">Интервал съемки</string>
+    <string name="rec_stopmotion_iterval_time">%d сек.</string>
+    <string name="rec_stopmotion_not_contents">Нет записанных изображений покадр. анимации. Начать новую запись?</string>
+    <string name="rec_stopmotion_order_normal">NORMAL</string>
+    <string name="rec_stopmotion_order_reverse">REVERSE</string>
+    <string name="rec_stopmotion_order_setting">Последовательность</string>
+    <string name="rec_stopmotion_over_contents">Дальнейшая запись изображения покадр. анимации невозможна.</string>
+    <string name="rec_stopmotion_select_continue">Дополнительный</string>
+    <string name="rec_stopmotion_select_recorded_animation">Выберите записанные изображения покадр. анимации</string>
+    <string name="rec_stopmotion_select_start">Новый</string>
+    <string name="rec_stopmotion_send_param_error">Произошла ошибка при передаче параметров создания видео.</string>
+    <string name="rec_stopmotion_start">Пуск</string>
+    <string name="rec_stopmotion_title">Покадр. анимация</string>
+    <string name="rec_stopmotion_video_quality_setting">Реж.кадра</string>
+    <string name="rec_stopmotion_warning_automode">Ударьте кнопку записи, чтобы начать запись.</string>
+    <string name="rec_tab_btn">Живой контроль</string>
+    <string name="remain_marking_number">R %d</string>
+    <string name="scn_gid_backlight_portrait">"Благодаря подсветке
+увеличивается общая
+яркость сцены.
+Портреты становятся
+нежными и
+наполняются светом."</string>
+    <string name="scn_gid_backlight_portrait_onepoint">"Измените положение
+для съемки, чтобы
+солнце находилось
+позади объекта."</string>
+    <string name="scn_gid_backlight_portrait_recom_lens">Яркий объектив</string>
+    <string name="scn_gid_backlight_portrait_step_up">"Измените экспозицию,
+чтобы придать
+изображению
+эффект легкости."</string>
+    <string name="scn_gid_backlight_strobe">"Вне помещения
+используйте вспышку,
+чтобы равномерно
+осветить лицо
+объекта."</string>
+    <string name="scn_gid_backlight_strobe_onepoint">"Используйте
+выдвижную вспышку."</string>
+    <string name="scn_gid_backlight_strobe_recom_lens">Стандартный зум-объектив</string>
+    <string name="scn_gid_backlight_strobe_step_up">"Измените экспозицию,
+чтобы получить
+необходимую
+яркость лица."</string>
+    <string name="scn_gid_blue_sky">"В солнечный день
+общая яркость экрана
+увеличивается,
+что подчеркивает
+синеву неба."</string>
+    <string name="scn_gid_blue_sky_onepoint">"Постарайтесь
+сохранить
+баланс между
+синим небом
+и облаками."</string>
+    <string name="scn_gid_blue_sky_recom_lens">"Широкоугольный объектив
+Телеобъектив"</string>
+    <string name="scn_gid_blue_sky_step_up">"Получите
+новое настроение,
+изменив экспозицию."</string>
+    <string name="scn_gid_clear_skin">"Яркость лица
+и нежность
+кожи придают объекту
+съемки здоровый
+и молодой вид."</string>
+    <string name="scn_gid_clear_skin_onepoint">"Поместите в кадр
+верхнюю часть
+объекта."</string>
+    <string name="scn_gid_clear_skin_recom_lens">"Яркий объектив
+Телеобъектив"</string>
+    <string name="scn_gid_clear_skin_step_up">"Измените экспозицию,
+чтобы настроить
+общую яркость."</string>
+    <string name="scn_gid_cooking">"Увеличьте
+общую яркость экрана,
+чтобы еда
+выглядела аппетитной."</string>
+    <string name="scn_gid_cooking_onepoint">"Этот эффект
+помогает
+сфокусироваться
+на объекте и
+расфокусировать фон."</string>
+    <string name="scn_gid_cooking_recom_lens">"Макросъемочный объектив
+Яркий объектив"</string>
+    <string name="scn_gid_cooking_step_up">"Регулируйте
+диафрагму,
+чтобы варьировать
+расфокусировку фона."</string>
+    <string name="scn_gid_cool_night">"Более глубокие
+синие тона придают
+ночному небу
+изысканность и
+ощущение прохлады
+после заката."</string>
+    <string name="scn_gid_cool_night_onepoint">"Сделайте снимок
+неба и зданий
+в ясный день
+сразу же
+после заката."</string>
+    <string name="scn_gid_cool_night_recom_lens">Широкоугольный объектив</string>
+    <string name="scn_gid_cool_night_step_up">"Получите
+необходимую
+синеву неба,
+изменив
+баланс белого."</string>
+    <string name="scn_gid_fixflush_backlight_strobe">"Вне помещения
+используйте вспышку,
+чтобы равномерно
+осветить лицо
+объекта."</string>
+    <string name="scn_gid_fixflush_backlight_strobe_onepoint">Используйте вспышку</string>
+    <string name="scn_gid_fixflush_backlight_strobe_recom_lens">Стандартный зум-объектив</string>
+    <string name="scn_gid_fixflush_backlight_strobe_step_up">"Измените экспозицию,
+чтобы получить
+необходимую
+яркость лица."</string>
+    <string name="scn_gid_fixflush_night_portrait">"Заполняющая вспышка
+и длинная экспозиция
+позволяют делать
+более четкие портреты
+на фоне
+ночного пейзажа."</string>
+    <string name="scn_gid_fixflush_night_portrait_onepoint">Используйте вспышку</string>
+    <string name="scn_gid_fixflush_night_portrait_recom_lens">Широкоугольный объектив</string>
+    <string name="scn_gid_fixflush_night_portrait_step_up">"Измените экспозицию,
+чтобы настроить
+общую яркость."</string>
+    <string name="scn_gid_fixlens_portrait">"Четкий портрет
+создается благодаря
+настройке яркости
+лица и
+расфокусировке фона."</string>
+    <string name="scn_gid_fixlens_portrait_onepoint">Увеличьте масштабирование.</string>
+    <string name="scn_gid_fixlens_portrait_step_up">"Измените экспозицию,
+чтобы настроить
+общую яркость."</string>
+    <string name="scn_gid_flower">"Нерезкое изображение
+придает
+эффект рассеянности."</string>
+    <string name="scn_gid_flower_onepoint">"Разместите цветы
+в мягком свете,
+например, в свете,
+который рассеивается
+через занавески."</string>
+    <string name="scn_gid_flower_recom_lens">Макросъемочный объектив</string>
+    <string name="scn_gid_flower_step_up">"Измените экспозицию,
+чтобы настроить
+общую яркость."</string>
+    <string name="scn_gid_handheld_night">"Сделайте неск.
+изобр. и объедините
+получ. данные для
+сведения до миним. шума
+и размыт. при портат.
+съемке ноч. пейзажа."</string>
+    <string name="scn_gid_handheld_night_onepoint">"Держите камеру
+крепко, чтобы свести
+до минимума движение."</string>
+    <string name="scn_gid_handheld_night_recom_lens">Широкоугольный объектив</string>
+    <string name="scn_gid_handheld_night_step_up">"Измените экспозицию,
+чтобы настроить
+общую яркость."</string>
+    <string name="scn_gid_illumination">"Звездный фильтр
+усиливает эффект
+от точечных
+источников света."</string>
+    <string name="scn_gid_illumination_onepoint">"Эта функция
+лучше всего
+работает
+в режиме Макро."</string>
+    <string name="scn_gid_illumination_recom_lens">"Широкоугольный объектив
+Телеобъектив"</string>
+    <string name="scn_gid_illumination_step_up">"Измените экспозицию,
+чтобы придать блеск."</string>
+    <string name="scn_gid_kids">"Умеренная
+расфокусировка фона
+и акцент на тоне кожи
+привлекают внимание
+к детскому лицу."</string>
+    <string name="scn_gid_kids_onepoint">"Для фокусировки
+на ребенке
+прикоснитесь к экрану."</string>
+    <string name="scn_gid_kids_recom_lens">Яркий объектив</string>
+    <string name="scn_gid_kids_step_up">"Получите
+новое настроение,
+изменив экспозицию."</string>
+    <string name="scn_gid_landscape">"Насыщенность неба
+и деревьев помогает
+создать более
+отчетливый пейзаж."</string>
+    <string name="scn_gid_landscape_onepoint">"Продумайте
+композицию."</string>
+    <string name="scn_gid_landscape_recom_lens">Широкоугольный объектив</string>
+    <string name="scn_gid_landscape_step_up">"Используйте
+разметочную линию,
+чтобы убедиться в
+ровности изображения."</string>
+    <string name="scn_gid_longexpo_night">"Низкая скорость
+затвора позволяет
+запечатлевать
+полосы света для
+создания худож.
+ночного пейзажа."</string>
+    <string name="scn_gid_longexpo_night_onepoint">"Рекомендуется
+использовать
+штатив или
+устойчивую опору."</string>
+    <string name="scn_gid_longexpo_night_recom_lens">Стандартный зум-объектив</string>
+    <string name="scn_gid_longexpo_night_step_up">"Изменяйте
+скорость затвора
+для воссоздания
+лучей света."</string>
+    <string name="scn_gid_magic_hour">"Более глубокий
+пурпурный тон
+создает романтич.
+изображение неба
+сразу же после заката."</string>
+    <string name="scn_gid_magic_hour_onepoint">"Сделайте снимок
+горизонта
+в ясный день
+сразу же
+после заката"</string>
+    <string name="scn_gid_magic_hour_recom_lens">Широкоугольный объектив</string>
+    <string name="scn_gid_magic_hour_step_up">"Измените экспозицию,
+чтобы настроить
+глубину цвета."</string>
+    <string name="scn_gid_monochrome">"Монохромное
+изображение
+передает
+настроение момента."</string>
+    <string name="scn_gid_monochrome_onepoint">"Выбор. освещение
+может добавить
+контрастности и
+придать снимку
+особое настроение."</string>
+    <string name="scn_gid_monochrome_recom_lens">Стандартный зум-объектив</string>
+    <string name="scn_gid_monochrome_step_up">"Измените
+насыщенность,
+чтобы настроить
+цветовой тон и
+изменить настроение."</string>
+    <string name="scn_gid_night">"Увеличение
+насыщенности
+ночного освещения
+делает ночной
+пейзаж
+более подчеркнутым."</string>
+    <string name="scn_gid_night_onepoint">"Рекомендуется
+использовать штатив
+или
+устойчивую опору."</string>
+    <string name="scn_gid_night_portrait">"Заполняющая вспышка
+и длинная экспозиция
+позволяют делать
+более четкие портреты
+на фоне
+ночного пейзажа."</string>
+    <string name="scn_gid_night_portrait_onepoint">"Используйте
+выдвижную вспышку"</string>
+    <string name="scn_gid_night_portrait_recom_lens">Широкоугольный объектив</string>
+    <string name="scn_gid_night_portrait_step_up">"Измените экспозицию,
+чтобы настроить
+общую яркость."</string>
+    <string name="scn_gid_night_recom_lens">"Широкоугольный объектив
+Телеобъектив"</string>
+    <string name="scn_gid_night_step_up">"Измените экспозицию,
+чтобы настроить
+общую яркость."</string>
+    <string name="scn_gid_onepoint">-Подсказка</string>
+    <string name="scn_gid_pet">"Увел.скорости затвора
+предотвр. размыт.
+изобр. и позволяет
+сделать четкий снимок
+быстро движ.
+животного."</string>
+    <string name="scn_gid_pet_onepoint">"Делайте снимки
+на уровне глаз
+животного."</string>
+    <string name="scn_gid_pet_recom_lens">Яркий объектив</string>
+    <string name="scn_gid_pet_step_up">"Используйте
+непрерывную съемку,
+чтобы запечатлеть
+непрерывное
+движение."</string>
+    <string name="scn_gid_portrait">"Четкий портрет
+создается благодаря
+настройке яркости
+лица и
+расфокусировке фона."</string>
+    <string name="scn_gid_portrait_onepoint">"Увеличьте
+масштабирование,
+используя
+трансфокатор."</string>
+    <string name="scn_gid_portrait_recom_lens">"Яркий объектив
+Телеобъектив"</string>
+    <string name="scn_gid_portrait_step_up">"Измените экспозицию,
+чтобы настроить
+общую яркость."</string>
+    <string name="scn_gid_recommended_lens">-Реком. объектив</string>
+    <string name="scn_gid_shimmering_water">"Блеск придает
+воде яркость
+и легкую синеву."</string>
+    <string name="scn_gid_shimmering_water_onepoint">"Наиболее эффективно
+рано утром или поздно
+вечером при малом
+угле падения
+солнечного света."</string>
+    <string name="scn_gid_shimmering_water_recom_lens">Телеобъектив</string>
+    <string name="scn_gid_shimmering_water_step_up">"Измените экспозицию,
+чтобы придать блеск."</string>
+    <string name="scn_gid_sports">"Увеличение скорости
+затвора предотвращает
+размытость
+изображения,
+напр., во время съемки
+спорт. мероприятий."</string>
+    <string name="scn_gid_sports_onepoint">"Чтобы снимок
+вышел удачным,
+следите за движениями
+объекта в кадре"</string>
+    <string name="scn_gid_sports_recom_lens">Телеобъектив</string>
+    <string name="scn_gid_sports_step_up">"Измените экспозицию,
+чтобы настроить
+общую яркость."</string>
+    <string name="scn_gid_step_up">-Дополнительно</string>
+    <string name="scn_gid_sunset">"Усиление
+красного цвета
+создает яркое
+изображение заката."</string>
+    <string name="scn_gid_sunset_onepoint">"Наилучший
+результат
+можно получить
+в ясный день."</string>
+    <string name="scn_gid_sunset_recom_lens">Широкоугольный объектив</string>
+    <string name="scn_gid_sunset_step_up">"Измените
+насыщенность,
+чтобы настроить
+красноту
+отсветов заката."</string>
+    <string name="scn_gid_sweets">"Увеличьте
+общую яркость
+экрана, чтобы
+сделать десерт
+соблазнительным."</string>
+    <string name="scn_gid_sweets_onepoint">"Заполните
+весь кадр
+десертом."</string>
+    <string name="scn_gid_sweets_recom_lens">"Макросъемочный объектив
+Яркий объектив"</string>
+    <string name="scn_gid_sweets_step_up">"Получите
+новое настроение,
+изменив
+насыщенность."</string>
+    <string name="scn_gid_warm_night">"Теплый тон
+придает
+ночному небу
+теплоту."</string>
+    <string name="scn_gid_warm_night_onepoint">"Включайте
+в свой снимок
+элементы освещения."</string>
+    <string name="scn_gid_warm_night_recom_lens">"Широкоугольный объектив
+Телеобъектив"</string>
+    <string name="scn_gid_warm_night_step_up">"Получите
+новое настроение,
+изменив
+баланс белого."</string>
+    <string name="scn_gid_warm_portrait">"Теплый тон создает
+непринужденную
+атмосферу."</string>
+    <string name="scn_gid_warm_portrait_onepoint">"Выбирайте сцены
+с непрямым
+освещением или
+избегайте яркого
+солнечного света."</string>
+    <string name="scn_gid_warm_portrait_recom_lens">Стандартный зум-объектив</string>
+    <string name="scn_gid_warm_portrait_step_up">"Получите
+новое настроение,
+изменив
+баланс белого."</string>
+    <string name="setup_ap_setting">Установки назначения соединения</string>
+    <string name="setup_app_setting">Функция приложения</string>
+    <string name="setup_ask_app_init">Установки приложения будут сброшены. OK?</string>
+    <string name="setup_ask_camera_format">При форматировании все данные на карте памяти на подсоединенном устройстве будут удалены. Продолжить форматирование?</string>
+    <string name="setup_ask_camera_init">Установки для подсоединенного устройства будут сброшены на установки по умолчанию. Продолжить?</string>
+    <string name="setup_ask_camera_number_reset">Будут сборошены MP4 и номера файлов фотоснимков подсоединенного устройства. Продолжить?</string>
+    <string name="setup_ask_camera_power_off">ВЫКЛ. подсоединенное устройство?</string>
+    <string name="setup_avchd_quality">Качество воспроизведения AVCHD</string>
+    <string name="setup_avchd_quality_high">Высокое качество</string>
+    <string name="setup_avchd_quality_normal">Стандартное качество</string>
+    <string name="setup_btn_complete">Завершить</string>
+    <string name="setup_btn_delete">Стереть</string>
+    <string name="setup_btn_edit">Редакт</string>
+    <string name="setup_btn_finish">Завершить</string>
+    <string name="setup_btn_format">Формат</string>
+    <string name="setup_btn_init">Нач. Настр</string>
+    <string name="setup_btn_power_off">Питание ВЫКЛ.</string>
+    <string name="setup_btn_priority_down">Понижение приоритета</string>
+    <string name="setup_btn_priority_up">Повышение приоритета</string>
+    <string name="setup_btn_regist">Зарегистриров.</string>
+    <string name="setup_btn_reset">Сброс Нумерации</string>
+    <string name="setup_btn_return">Возврат</string>
+    <string name="setup_byte">бит </string>
+    <string name="setup_cam_ssid_setting">Установки SSID/пароля Wi-Fi</string>
+    <string name="setup_cam_ssid_setting_message">"SSID и пароль Wi-Fi на камере были инициализированы.
+Измените SSID и пароль Wi-Fi."</string>
+    <string name="setup_cam_ssid_setting_message_recomend">SSID и пароль Wi-Fi камеры установлены на значения по умолчанию. Рекомендуется изменить SSID и пароль Wi-Fi. Чтобы изменить эти установки, выберите “Уст-ки Wi-Fi камеры” → “Уст-ки SSID камеры”.</string>
+    <string name="setup_cmn_wifi_address">Wi-Fi адрес</string>
+    <string name="setup_common_connect_type">Можно использовать как Wi-Fi, так и Wi-Fi Direct. Выберите способ соединения.</string>
+    <string name="setup_connect">Настройка назн.соед.</string>
+    <string name="setup_connect_no_camera">"Невозможно найти камеру.
+Закончите поиск."</string>
+    <string name="setup_easy_wifi_hmmon_cam_id">Идентификатор устройства домашнего видеонаблюдения камеры</string>
+    <string name="setup_easy_wifi_hmmon_exp">Идентификатор устройства домашнего видеонаблюдения, необходимый для запуска функции домашнего видеонаблюдения, можно получить с камеры.</string>
+    <string name="setup_easy_wifi_hmmon_sp_id">Идентификатор устройства домашнего видеонаблюдения смартфона</string>
+    <string name="setup_easy_wifi_input">Ручной ввод</string>
+    <string name="setup_easy_wifi_not_registerd">Не зарегистрировано</string>
+    <string name="setup_easy_wifi_setup_title">Первоначальные установки для функций Wi-Fi</string>
+    <string name="setup_easy_wifi_use_sp_login_id">Используйте идентификатор входа в систему Вашего смартфона</string>
+    <string name="setup_fps_value1">5</string>
+    <string name="setup_fps_value2">1</string>
+    <string name="setup_geo_tagging">Установки регистрации геолокации</string>
+    <string name="setup_help">Справка</string>
+    <string name="setup_imageshuttle_network_name_explain">"Имена, отображаемые на других устройствах, могут быть изменены.
+Введенные символы могут отображаться неправильно в зависимости от подсоединенных устройств.
+Изменения имен будут применяться при следующем запуске этого приложения."</string>
+    <string name="setup_iso">ISO</string>
+    <string name="setup_iso_color_temp">Цветовая температура</string>
+    <string name="setup_jump_rec_1">1 (Чувст.: Низкая)</string>
+    <string name="setup_jump_rec_2">2</string>
+    <string name="setup_jump_rec_3">3</string>
+    <string name="setup_jump_rec_4">4</string>
+    <string name="setup_jump_rec_5">5 (Чувст.: Высокая)</string>
+    <string name="setup_jump_rec_high">Высокая</string>
+    <string name="setup_jump_rec_low">Низкая</string>
+    <string name="setup_jump_rec_mid">Средняя</string>
+    <string name="setup_jump_rec_off">ВЫКЛ.</string>
+    <string name="setup_language_code">ru</string>
+    <string name="setup_liveview">Настр.жив.контроля</string>
+    <string name="setup_liveview_lens_warning">Предуп.о выдв.объек.</string>
+    <string name="setup_liveview_quality">Кач.из.жив.контроля</string>
+    <string name="setup_liveview_selfshot">Режим автосъемки</string>
+    <string name="setup_menu">Меню</string>
+    <string name="setup_msg_ask_cloud_setup">Подсоединенная камера должна быть совместима с функцией облачной синхронизации LUMIX CLUB. Продолжить с текущими установками?</string>
+    <string name="setup_msg_ask_geotag_setup">Подсоединенная камера должна быть совместима с функцией регистрации геолокации. Продолжить с текущими установками?</string>
+    <string name="setup_msg_ask_remote_access_setup">Подсоединенная камера должна быть совместима с функцией домашнего видеонаблюдения. Продолжить с текущими установками?</string>
+    <string name="setup_msg_camera_disconnected">"Соединение потеряно.
+Запускается в местном режиме воспроизведения."</string>
+    <string name="setup_msg_camera_lens_error">Изменилось состояние крепления объектива.</string>
+    <string name="setup_msg_camera_memu_update">Меню обновлено.</string>
+    <string name="setup_msg_gps_logging_1st">Эту функцию можно использовать только с устройствами, поддерживающими регистрацию геолокации.</string>
+    <string name="setup_msg_remote_access_1st">Эту функцию можно использовать только с устройствами, поддерживающими домашнее видеонаблюдение.</string>
+    <string name="setup_msg_remote_access_3g_necessary_a">Чтобы запустить функцию домашнего видеонаблюдения, Вам нужно подсоединиться через 3G или подобную мобильную телефонную линию. Переключить подсоединение?</string>
+    <string name="setup_msg_remote_access_id_necessary">Установите назначение соединения.</string>
+    <string name="setup_msg_start_remote_watch">Начать домашнее видеонаблюдение?</string>
+    <string name="setup_mtu_value1">1280 бит</string>
+    <string name="setup_mtu_value2">576 бит</string>
+    <string name="setup_name_invalid_char_code">"Введенные символы могут отображаться неправильно в зависимости от назначения подсоединения.
+Вы хотите продолжить регистрацию?"</string>
+    <string name="setup_name_over_length">Количество символов, которые можно зарегистрировать, составляет 20.</string>
+    <string name="setup_network_name">Имя</string>
+    <string name="setup_network_name_explain">"Имена DLNA, отображаемые на других устройствах, могут быть изменены.
+Введенные символы могут отображаться неправильно в зависимости от подсоединенных устройств.
+Изменения имен будут применяться при следующем запуске этого приложения."</string>
+    <string name="setup_network_name_setting">Имя сети</string>
+    <string name="setup_now_format">Идет форматирование.</string>
+    <string name="setup_now_init">Пожалуйста, подождите...</string>
+    <string name="setup_now_reset">Пожалуйста, подождите...</string>
+    <string name="setup_off">ВЫКЛ.</string>
+    <string name="setup_on">ВКЛ.</string>
+    <string name="setup_picmate_activate">Зап.исп.LUMIX CLUB</string>
+    <string name="setup_picmate_add_equip">Добавить</string>
+    <string name="setup_picmate_already_have_id">Если у Вас уже есть идентификатор входа в систему</string>
+    <string name="setup_picmate_btn_agree">Согласен</string>
+    <string name="setup_picmate_btn_longin">Вход в систему</string>
+    <string name="setup_picmate_btn_new_regist">Подписаться</string>
+    <string name="setup_picmate_btn_not_agree">Не согласен</string>
+    <string name="setup_picmate_btn_regist">Зарегистрировать</string>
+    <string name="setup_picmate_btn_sync_login_id">Регистрировать такой же идентификатор LUMIX CLUB как и на камере</string>
+    <string name="setup_picmate_btn_sync_need_check_login">Идентификатор или пароль для входа в систему были изменены. Проверьте, что Вы можете войти на LUMIX CLUB с этим идентификатором.</string>
+    <string name="setup_picmate_btn_unregist">Не регистрировать</string>
+    <string name="setup_picmate_cam_or_app_have_id">Если Вы хотите использовать один и тот же идентификатор входа в система и для этого приложения, и для камеры</string>
+    <string name="setup_picmate_cloud">Настр.обл.синхрониз.</string>
+    <string name="setup_picmate_cloud_action_capacity_over">Действие:превыш.емк.</string>
+    <string name="setup_picmate_cloud_action_confirm_update">Подтвердить загрузку</string>
+    <string name="setup_picmate_cloud_auto_sync">Синхронизир.автомат.</string>
+    <string name="setup_picmate_cloud_confirm">Всегда подтверждать</string>
+    <string name="setup_picmate_cloud_overwrite">Всегда перезаписывать</string>
+    <string name="setup_picmate_cloud_picsize_recieving">Разм.изобр.(скачив.)</string>
+    <string name="setup_picmate_cloud_picsize_sending">Разм.изобр(загрузка)</string>
+    <string name="setup_picmate_cloud_using">Исп.облач.синхрониз.</string>
+    <string name="setup_picmate_label_access_number">Номер доступа</string>
+    <string name="setup_picmate_label_address_number">Номер адреса</string>
+    <string name="setup_picmate_label_comment_input">Введите комментарий для изображения.</string>
+    <string name="setup_picmate_label_login_id">Идентифик.</string>
+    <string name="setup_picmate_label_login_password">Пароль</string>
+    <string name="setup_picmate_label_login_password_check">Подтверждение пароля</string>
+    <string name="setup_picmate_label_login_regist">Введ регистрационного пароля</string>
+    <string name="setup_picmate_label_login_regist2">Введ регистрационного пароля</string>
+    <string name="setup_picmate_label_name">Имя</string>
+    <string name="setup_picmate_manage_id">Управ.идентификат.</string>
+    <string name="setup_picmate_not_have_id">Если у Вас нет идентификатора входа в систему</string>
+    <string name="setup_picmate_regist_equip">Регис.аудиовидеоуст.</string>
+    <string name="setup_picmate_regist_service">Регистрац.веб-службы</string>
+    <string name="setup_picmate_service_sync">Служба синхрон.списка</string>
+    <string name="setup_picmate_title_av_list">Назначение аудиовидеоус.</string>
+    <string name="setup_picmate_title_av_regist">Инфо аудиовидеоус.</string>
+    <string name="setup_picmate_title_comment_input">Ввод комментариев</string>
+    <string name="setup_picmate_title_login_info">"Введите инфо
+входа в сист."</string>
+    <string name="setup_picmate_title_login_regist">Ввод пароля для регистрации</string>
+    <string name="setup_picmate_title_web">Сертификация LUMIX CLUB</string>
+    <string name="setup_picmate_upload_image">Загружен.изображения</string>
+    <string name="setup_picsize_fullhd">Full HD (1920x1080)</string>
+    <string name="setup_picsize_large">Большой (оригинальный)</string>
+    <string name="setup_picsize_middle">Средний</string>
+    <string name="setup_picsize_original">Неограничено (полные пикселы)</string>
+    <string name="setup_picsize_recommend">Рекомендуется</string>
+    <string name="setup_picsize_small">Маленький</string>
+    <string name="setup_picsize_vga">VGA (640x480)</string>
+    <string name="setup_ply_picture_sort">Сортировка кадров</string>
+    <string name="setup_ply_picture_sort_name">FILE NAME</string>
+    <string name="setup_ply_picture_sort_rectime">DATE/TIME</string>
+    <string name="setup_rec">Настройки записи</string>
+    <string name="setup_rec_time">Время записи</string>
+    <string name="setup_rectime_explain">Действительное время записи может быть короче, чем ранее установленное, в зависимости от состояния камеры в начале записи видео.</string>
+    <string name="setup_remote_access_equip_id">Идентиф.устройства</string>
+    <string name="setup_remote_access_equip_pw">Пароль</string>
+    <string name="setup_remote_access_qr_button">QR-код</string>
+    <string name="setup_scn_gid_btn_title_finish_setting">Установлено</string>
+    <string name="setup_scn_gid_btn_title_photoshot">Запись</string>
+    <string name="setup_scn_gid_navigation_title">Руководство по сцене</string>
+    <string name="setup_set_picmate_id_to_camera">Уст.иден-р сист.кам.</string>
+    <string name="setup_smaope_camera_picsize">Размер:Копир.с кам.</string>
+    <string name="setup_smaope_delete_gps">Уд.инф.мес.при загр.</string>
+    <string name="setup_smaope_download_file_format">Формат сохранения изображений RAW+JPEG</string>
+    <string name="setup_smaope_picamate">Настройки LUMIX CLUB</string>
+    <string name="setup_smaope_picjmp">Настр.“Совм.исп.из.”</string>
+    <string name="setup_smaope_player_select">Выбор видео плеера</string>
+    <string name="setup_smaope_player_select_summary_off">Воспроизведение с помощью плеера Image App</string>
+    <string name="setup_smaope_player_select_summary_off_leica">Воспроизведение с помощью плеера Image Shuttle</string>
+    <string name="setup_smaope_player_select_summary_on">Выбор плеера и воспроизведение</string>
+    <string name="setup_smaope_web_picsize">Раз.из.(загр.на веб)</string>
+    <string name="setup_smaope_work_charging">Передача:только зар.</string>
+    <string name="setup_smaope_work_wifi_connecting">Передача:толькоWi-Fi</string>
+    <string name="setup_smart_app">Smart App</string>
+    <string name="setup_smart_operation">Настр.воспроизвед.</string>
+    <string name="setup_ssid_ap_title">Уст. беспр. ТД</string>
+    <string name="setup_ssid_live_title">Настройки Live</string>
+    <string name="setup_ssid_search">Поиск</string>
+    <string name="setup_start_remote_ext_setting">Расширенные установки</string>
+    <string name="setup_start_remote_mtu">MTU</string>
+    <string name="setup_start_remote_watch">Нач.дом.видеон.</string>
+    <string name="setup_terms">Соглашен.об использ.</string>
+    <string name="setup_time_not_setting">Не установлено</string>
+    <string name="setup_time_sync">Устан часы</string>
+    <string name="setup_time_sync_message">"Часы камеры не установлены.
+Синхронизируйте камеру с помощью часов Вашего смартфона."</string>
+    <string name="setup_use_remote_watch">Исп.дом.видеон.</string>
+    <string name="setup_version">Версия</string>
+    <string name="setup_version_info">Информация версии</string>
+    <string name="setup_video_frame_rate">кадр./с</string>
+    <string name="setup_video_frame_rate_simple">кадр./с</string>
+    <string name="setup_white_balance">Бал. бел.</string>
+    <string name="setup_white_balance_detail_a">A</string>
+    <string name="setup_white_balance_detail_b">B</string>
+    <string name="setup_white_balance_detail_g">G</string>
+    <string name="setup_white_balance_detail_m">M</string>
+    <string name="setup_white_balance_label">WB</string>
+    <string name="setup_white_balance_set_button">Set</string>
+    <string name="setup_white_balance_set_explain">Удар по приведенной ниже кнопки позволяет Вам установить баланс белого.</string>
+    <string name="setup_wifi_encryption">Метод шифрования</string>
+    <string name="setup_wifi_encryption_aes">AES</string>
+    <string name="setup_wifi_encryption_none">Нет</string>
+    <string name="setup_wifi_encryption_tkip">TKIP</string>
+    <string name="setup_wifi_encryption_wep">WEP</string>
+    <string name="setup_wifi_security">Безопасность</string>
+    <string name="setup_wifi_security_open">Нет</string>
+    <string name="setup_wifi_security_shared">WPA2</string>
+    <string name="setup_wifi_security_wpa">WEP</string>
+    <string name="setup_wifi_security_wpa2">WPA</string>
+    <string name="setup_wifi_setting">Настр Wi-Fi</string>
+    <string name="setup_wifi_setting_message">Выполните установки при транслировании (Live Channel) или при подсоединении периферийного оборудования через точку доступа.</string>
+    <string name="slow_zoom_speed_fast">Быстрое</string>
+    <string name="slow_zoom_speed_setting">Скор. зума</string>
+    <string name="slow_zoom_speed_slow">Медленное</string>
+    <string name="slow_zoom_speed_standard">Нормальн</string>
+    <string name="smartop_albumlist_title">Щелкните по папке или альбому, которую Вы хотите посмотреть.</string>
+    <string name="smartop_confirm_delete">Удалить выбранный(е) файл(ы)?</string>
+    <string name="smartop_copy_err">Сбой скачивания</string>
+    <string name="smartop_copy_error_title">Ошибка</string>
+    <string name="smartop_msg_comp_copying">Копирование завершено.</string>
+    <string name="smartop_no_send_error_title">Внимание</string>
+    <string name="smartop_re_conect_title">"Соединение прервано.
+Выберите исходное назначение."</string>
+    <string name="snap_movie_bgm_title_1">№ 1</string>
+    <string name="snap_movie_bgm_title_2">№ 2</string>
+    <string name="snap_movie_bgm_title_3">№ 3</string>
+    <string name="snap_movie_bgm_title_4">№ 4</string>
+    <string name="snap_movie_bgm_title_5">№ 5</string>
+    <string name="snap_movie_bgm_title_6">№ 6</string>
+    <string name="snap_movie_bgm_title_7">№ 7</string>
+    <string name="snap_movie_bgm_title_8">№ 8</string>
+    <string name="snap_movie_content_time">сек.</string>
+    <string name="tab_home_button">Домашний</string>
+    <string name="text_4k_crop_end_frame">Выход</string>
+    <string name="text_4k_crop_frame_setting2">"Настр.
+кадр"</string>
+    <string name="text_4k_crop_start_frame">Нач.</string>
+    <string name="title_connection_error">Ошибка соединения</string>
+    <string name="title_use_functab" />
+    <string name="title_usegeo">Исп.регист.геолокации</string>
+    <string name="touchshare_copied_picture">Скопированное(ые) изображение(я)</string>
+    <string name="touchshare_copying">Копирование изображения(й)...</string>
+    <string name="touchshare_exit_action">Чтобы выйти из этой функции, ударьте по следующей кнопке.</string>
+    <string name="touchshare_msg_not_connecting">Подсоединение к камере было прервано.</string>
+    <string name="touchshare_next_touch_action">Чтобы продолжить копирование изображений, выберите изображения на камере, а затем снова прикоснитесь смартфоном к камере.</string>
+    <string name="ugase_agreement_support">"
+Подробная информация об условиях использования и политике конфиденциальности службы Google Analytics приведена на веб-сайте службы Google Analytics.
+Условия использования службы Google Analytics
+http://www.google.com/intl/ja/analytics/tos.html
+Политика Google и общие правила
+http://www.google.com/intl/ja/policies/privacy/
+
+Если у вас имеются вопросы, воспользуйтесь контактной информацией, приведенной в условиях использования.
+"</string>
+    <string name="ugase_agreement_support_old">Если у вас имеются вопросы, воспользуйтесь контактной информацией, приведенной в условиях использования данного приложения.</string>
+    <string name="ugase_agreement_text_1">"(1) Данное приложение сохраняет историю его использования в журнале на используемом вами терминале и оснащено функцией отправки истории пользователя на сервер, предназначенный для этого компанией Panasonic Corporation (далее — Компания). Для предоставления обновлений данного приложения, внесения улучшений в данное приложение, повышения функциональности и удобства использования, а также для эффективного обслуживания клиентов техническая информация (включая информацию об использовании, таком как запись, воспроизведение и передача), связанная с оборудованием, устройством, системой, приложением и периферийным оборудованием клиента, а также информация, связанная с историей использования данного приложения, журналы технических данных и связанная информация, автоматически создаваемая и сохраняемая при использовании данного приложения, может собираться, сохраняться на указанных серверах Компании и использоваться способами, не допускающими идентификацию отдельных клиентов. 
+Если у вас имеются вопросы, воспользуйтесь контактной информацией, приведенной в условиях использования."</string>
+    <string name="ugase_agreement_text_2">"(2) В данном приложении компании Panasonic Corporation (далее — Компания) используется Google Analytics — служба, предоставляемая компанией Google Inc. (далее — Google) и обеспечивающая обновление приложения, внесение в это приложение улучшений, повышение функциональности и удобства использования, эффективное обслуживание клиентов, а также выполняющая задачи маркетинга (стимулирования сбыта).
+При использовании в данном приложении службы Google Analytics на базе созданного Компанией cookie-файла Google автоматически собирает, записывает и анализирует техническую информацию (включая информацию о работе и использовании, например, о состоянии отображения информации на экране, записи, воспроизведении и передаче), относящуюся к оборудованию, устройству, системе, приложению, периферийному оборудованию клиента и подключенным устройствам, а также информацию, относящуюся к истории использования данного приложения и журналам технических данных, связанную информацию, информацию о стране проживания клиента или используемом им языке (далее — «информация о клиенте»), автоматически создаваемую и сохраняемую при использовании данного приложения.
+Компания получает от Google результаты анализа с целью выяснения информации о клиентах. Информация о клиентах, собираемая, записываемая и анализируемая службой Google Analytics, не содержит данных, идентифицирующих отдельных клиентов.
+Эта информация также контролируется компанией Google, исходя из политики конфиденциальности Google.
+"</string>
+    <string name="ugase_agreement_text_old">Данное приложение содержит функцию, которая отслеживает условия использования устройства клиента и отправляет их Panasonic Corporation (далее «эта компания»). Для предоставления обновлений данного приложения, внесения улучшений в данное приложение, повышения функциональности и удобства использования, а также для эффективного обслуживания клиентов техническая информация (включая информацию об использовании, таком как запись, воспроизведение и передача), связанная с оборудованием, устройством, системой, приложением и периферийным оборудованием клиента, а также информация, связанная с историей использования данного приложения, журналы технических данных и связанная информация, автоматически создаваемая и сохраняемая при использовании данного приложения, собирается и сохраняется на указанные серверы компании, и используется способами, не допускающими идентификацию отдельных клиентов.</string>
+    <string name="ugase_agreement_title">Сбор данных и соглашение об использовании</string>
+    <string name="ugase_agreement_title_old">Соглашение об использовании данных</string>
+    <string name="ugase_conditions">Условия использования</string>
+    <string name="ugase_explain">Условия использования приложения будут автоматически отправлены на сервер. Эту настройку можно позднее изменить.</string>
+    <string name="ugase_explain_menu">\"Меню \" -> \"Функция приложения \" -> \"Условия использования \" -> \"Отправлять автоматически \"</string>
+    <string name="ugase_explain_menu_cookie_policy">\"Меню \" -> \"Функция приложения \" -> \"Условия использования \" -> \"Отправлять автоматически \"</string>
+    <string name="ugase_send_automatically">Отправлять автоматически</string>
+    <string name="ugase_send_usage_conditions">Отправлять условия использования</string>
+    <string name="wf_msg_confirm_regain">"Старый идентификатор, присвоенный этим приложением, будет отменен.
+Зарегистрировать еще раз?"</string>
+    <string name="wifi_connect_no">Нет</string>
+    <string name="wifi_connect_yes">Да</string>
+    <string name="wifi_disconnect">"Wi-Fi нужно включить для соединения с камерой.
+Включить Wi-Fi?
+
+При подсоединении к камере загрузка с помощью других приложений будет отменена. Убедитесь, что загрузка завершена."</string>
+    <string name="wifi_password_input">Введите пароль</string>
+    <string name="wifi_password_input2">"Неправильный пароль.
+Введите пароль еще раз."</string>
+    <string name="wifi_password_visible">Отображение пароля</string>
+    <string name="wifi_st_unknown">Невозможно включить Wi-Fi.Проверьте настройки Wi-Fi.</string>
+    <string name="wifi_wifi_setting">Настр Wi-Fi</string>
+    <string name="wipe_frame_color_gray">Серый</string>
+    <string name="wipe_frame_color_green">Зеленый</string>
+    <string name="wipe_frame_color_orange">Оранжевый</string>
+    <string name="wipe_frame_color_pink">Розовый</string>
+    <string name="wipe_frame_color_shadow">Тень</string>
+    <string name="wipe_frame_less">Без рамок</string>
+</resources>

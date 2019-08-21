@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/liveViewOverlay" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.panasonic.avc.cng.view.parts.LiveViewLumixSurface android:id="@id/liveViewLumixSurface" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBottom="@id/liveViewLumixSurface" android:layout_alignParentRight="true">
+            <include android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/liveview_icon_lumix" />
+        </FrameLayout>
+    </RelativeLayout>
+    <TextView android:textColor="@android:color/white" android:gravity="center" android:id="@id/liveViewOverlayMessage" android:background="#ff444444" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/cmn_msg_server_zero_2" />
+    <TextView android:textColor="@android:color/white" android:gravity="center" android:id="@id/bulbMessage" android:background="#00000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

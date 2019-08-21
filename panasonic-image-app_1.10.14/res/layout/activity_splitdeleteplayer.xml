@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/splitdeleteplayer_main" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.panasonic.avc.cng.view.parts.DisplayBaseView android:id="@id/displayBaseView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <SurfaceView android:id="@id/surfaceView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <MediaController android:id="@id/mediaController1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/surfaceView1" />
+        <View android:id="@id/view1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/mediaController1" />
+        <include android:id="@id/splitdelete_controller" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" layout="@layout/splitdeleteplayer_control" />
+    </RelativeLayout>
+    <include android:id="@id/splitdeleteplayer_info" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/splitdeleteplayer_info" />
+</FrameLayout>

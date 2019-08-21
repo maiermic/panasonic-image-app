@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/ManualFocusArea" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/ManualFocusTextFar" android:background="#00000000" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/icon_mf_far" android:scaleType="fitCenter" android:layout_weight="2.0" />
+    <FrameLayout android:layout_gravity="center" android:id="@id/ManualFocusSlider" android:background="@drawable/rec_zoom_guide" android:layout_width="0.0dip" android:layout_height="wrap_content" android:scaleType="fitCenter" android:layout_weight="9.0">
+        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageButton android:layout_gravity="center" android:id="@id/ManualFocusFarFastButton" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/rec_zslider_dummy" android:scaleType="fitCenter" android:layout_weight="1.0" />
+            <ImageButton android:layout_gravity="center" android:id="@id/ManualFocusFarSlowButton" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/rec_zslider_dummy" android:scaleType="fitCenter" android:layout_weight="1.0" />
+            <ImageButton android:layout_gravity="center" android:id="@id/ManualFocusSliderThumbDummy" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/rec_zslider_dummy" android:scaleType="fitCenter" android:layout_weight="1.0" />
+            <ImageButton android:layout_gravity="center" android:id="@id/ManualFocusNearSlowButton" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/rec_zslider_dummy" android:scaleType="fitCenter" android:layout_weight="1.0" />
+            <ImageButton android:layout_gravity="center" android:id="@id/ManualFocusNearFastButton" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/rec_zslider_dummy" android:scaleType="fitCenter" android:layout_weight="1.0" />
+        </LinearLayout>
+        <ImageButton android:layout_gravity="center" android:id="@id/ManualFocusSliderThumbButton" android:background="#00000000" android:layout_width="@dimen/zoomSlider_width_size" android:layout_height="@dimen/zoomSlider_height_size" android:src="@drawable/liveview_zoom_slider_button2" android:scaleType="fitCenter" />
+    </FrameLayout>
+    <ImageView android:layout_gravity="center" android:id="@id/ManualFocusTextNear" android:background="#00000000" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/icon_mf_near" android:scaleType="fitCenter" android:layout_weight="2.0" />
+</LinearLayout>

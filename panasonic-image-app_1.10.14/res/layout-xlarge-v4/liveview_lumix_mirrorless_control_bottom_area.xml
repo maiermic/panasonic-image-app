@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <RelativeLayout android:layout_gravity="center" android:id="@id/QMenuButtonViewGroup" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageButton android:id="@id/QMenuButton" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="@dimen/live_view_lumix_button_medium" android:src="@drawable/liveview_lumix_qmenu_new" android:scaleType="fitCenter" android:layout_centerInParent="true" android:onClick="OnClickQMenu" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_gravity="center" android:id="@id/ExitButtonViewGroup" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageButton android:id="@id/ExitButton" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="@dimen/live_view_lumix_button_medium" android:src="@drawable/no_label_button" android:scaleType="fitCenter" android:layout_centerInParent="true" android:onClick="onClickExitButton" />
+            <TextView android:textSize="@dimen/live_view_lumix_font_size" android:gravity="center" android:id="@id/ExitTextView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/cmn_btn_end" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_gravity="center" android:id="@id/CancelButtonViewGroup" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageButton android:id="@id/CancelButton" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="@dimen/live_view_lumix_button_medium" android:src="@drawable/no_label_button" android:scaleType="fitCenter" android:layout_centerInParent="true" android:onClick="OnClickCancel" />
+            <TextView android:textSize="@dimen/live_view_lumix_font_size" android:gravity="center" android:id="@id/CancelTextView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/rec_selftimer_cancel" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </FrameLayout>
+    <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="4.0">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/NormalButtonViewGroup" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:id="@id/TouchResetButtonViewGroup" android:duplicateParentState="false" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageButton android:layout_gravity="center" android:id="@id/TouchResetButton" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="@dimen/live_view_lumix_button_medium" android:src="@drawable/no_label_button" android:scaleType="fitCenter" android:layout_centerInParent="true" android:onClick="onClickResetButton" />
+                <TextView android:textSize="@dimen/live_view_lumix_font_size" android:gravity="center" android:id="@id/TouchResetTextView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/cmn_btn_reset" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_gravity="center" android:id="@id/HRSExitButtonViewGroup" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageButton android:id="@id/HRSExitButton" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="@dimen/live_view_lumix_button_medium" android:src="@drawable/no_label_button" android:scaleType="fitCenter" android:layout_centerInParent="true" android:onClick="onClickHRSExitButton" />
+                <TextView android:textSize="@dimen/live_view_lumix_font_size" android:gravity="center" android:id="@id/HRSTextView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/cmn_btn_end" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <FrameLayout android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.0">
+                <com.panasonic.avc.cng.view.parts.ImageButtonEx android:layout_gravity="center" android:id="@id/shutterButton" android:background="#00000000" android:layout_width="wrap_content" android:layout_height="@dimen/live_view_lumix_button_medium" android:src="@drawable/liveview_lumix_rec_shutter_button_new" android:scaleType="fitCenter" />
+                <ImageButton android:layout_gravity="center" android:id="@id/CreativeRecButton" android:background="#00000000" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="@dimen/live_view_lumix_button_medium" android:src="@drawable/liveview_movie_rec_button" android:scaleType="fitCenter" android:onClick="OnClickCreativeRec" />
+            </FrameLayout>
+            <FrameLayout android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <RelativeLayout android:layout_gravity="center" android:id="@id/JumpSnapButtonViewGroup" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <ImageButton android:id="@id/JumpSnapButton" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="@dimen/live_view_lumix_button_medium" android:src="@drawable/jumpsnap_button" android:scaleType="fitCenter" android:layout_centerInParent="true" android:onClick="onClickJumpSnapButton" />
+                </RelativeLayout>
+            </FrameLayout>
+            <FrameLayout android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <RelativeLayout android:layout_gravity="center" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/CropButtonViewGroup" android:visibility="invisible" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:duplicateParentState="false" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageButton android:layout_gravity="center" android:id="@id/CropTouchResetButton" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="@dimen/live_view_lumix_button_medium" android:src="@drawable/no_label_button" android:scaleType="fitCenter" android:layout_centerInParent="true" android:onClick="onClickCropResetButton" />
+                <TextView android:textSize="@dimen/live_view_lumix_font_size" android:gravity="center" android:id="@id/CropTouchResetTextView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/cmn_btn_reset" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <FrameLayout android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.0">
+                <ImageButton android:layout_gravity="center" android:id="@id/CropRecButton" android:background="#00000000" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="@dimen/live_view_lumix_button_medium" android:src="@drawable/liveview_movie_rec_button" android:scaleType="fitCenter" android:onClick="OnClickCropRec" />
+            </FrameLayout>
+            <FrameLayout android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <RelativeLayout android:layout_gravity="center" android:id="@id/FrameMoveButtonViewGroup" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <ImageButton android:layout_gravity="center" android:id="@id/FrameMoveButton" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="@dimen/live_view_lumix_button_medium" android:src="@drawable/no_label_button" android:scaleType="fitCenter" android:layout_centerInParent="true" android:onClick="onClickFrameMoveButton" />
+                    <TextView android:textSize="@dimen/live_view_lumix_font_size" android:gravity="center" android:id="@id/FrameMoveTextView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/text_4k_crop_frame_setting2" android:layout_centerInParent="true" />
+                </RelativeLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="center" android:duplicateParentState="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <RelativeLayout android:layout_gravity="center" android:id="@id/RecButtonViewGroup" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="@dimen/live_view_lumix_button_medium">
+            <ImageButton android:layout_gravity="center" android:id="@id/RecButton" android:background="#00000000" android:visibility="invisible" android:duplicateParentState="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/rec_movie_rec_start_button" android:scaleType="fitCenter" android:onClick="OnClickRec" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_gravity="center" android:id="@id/PlaybackConfirmationButtonViewGroup" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="@dimen/live_view_lumix_button_medium">
+            <ImageButton android:layout_gravity="center" android:id="@id/PlaybackConfirmationButton" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/liveview_lumix_thumb_group_play" android:scaleType="fitCenter" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_gravity="center" android:id="@id/PhotoMarkingButtonViewGroup" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="@dimen/live_view_lumix_button_medium">
+            <ImageButton android:layout_gravity="center" android:id="@id/PhotoMarkingButton" android:background="#00000000" android:visibility="invisible" android:duplicateParentState="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/photo_marking_button" android:scaleType="fitCenter" android:onClick="OnClickPhotoMarking" />
+        </RelativeLayout>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,1801 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_google_play_services_enable_button">Inschakelen</string>
+    <string name="common_google_play_services_enable_text">%1$s werkt niet, tenzij je Google Play-services inschakelt.</string>
+    <string name="common_google_play_services_enable_title">Google Play-services inschakelen</string>
+    <string name="common_google_play_services_install_button">Installeren</string>
+    <string name="common_google_play_services_install_text">%1$s kan niet worden uitgevoerd zonder Google Play-services, die je nog niet op je apparaat hebt.</string>
+    <string name="common_google_play_services_install_title">Google Play-services ophalen</string>
+    <string name="common_google_play_services_notification_ticker">Fout met Google Play-services</string>
+    <string name="common_google_play_services_unknown_issue">%1$s ondervindt problemen met Google Play-services. Probeer het opnieuw.</string>
+    <string name="common_google_play_services_unsupported_text">%1$s kan niet worden uitgevoerd zonder Google Play-services, die niet worden ondersteund op je apparaat.</string>
+    <string name="common_google_play_services_update_button">Updaten</string>
+    <string name="common_google_play_services_update_text">%1$s kan niet worden uitgevoerd, tenzij je Google Play-services updatet.</string>
+    <string name="common_google_play_services_update_title">Google Play-services updaten</string>
+    <string name="common_google_play_services_updating_text">%1$s kan niet worden uitgevoerd zonder Google Play-services, die momenteel worden geüpdatet.</string>
+    <string name="common_google_play_services_wear_update_text">Er is een nieuwe versie van Google Play-services vereist. De update wordt binnenkort automatisch uitgevoerd.</string>
+    <string name="common_open_on_phone">Openen op telefoon</string>
+    <string name="common_signin_button_text">Inloggen</string>
+    <string name="common_signin_button_text_long">Inloggen met Google</string>
+    <string name="app_name">Image App</string>
+    <string name="app_name_leica">Image Shuttle</string>
+    <string name="av_no_name">AV-toestel</string>
+    <string name="baby_monitor">Babymonitor</string>
+    <string name="babymon_cannot_operation">Deze functie is niet beschikbaar tijdens het gebruik van de functie Babymonitor.</string>
+    <string name="babymon_cant_regstid">"Kon geen verbinding maken met de server.
+De kennisgevingsfunctie kan niet worden gebruikt."</string>
+    <string name="babymon_mic_resttime">%02d seconden resterend</string>
+    <string name="bracket_shooted_suspended">Bracketopname opgeschort.</string>
+    <string name="bracket_shooted_suspended_unable_recharge">Bracketopname opgeschort omdat de flitser niet kon opladen.</string>
+    <string name="btn_ask_idsync_no">Niet kopiëren</string>
+    <string name="btn_ask_idsync_yes">Kopiëren</string>
+    <string name="btn_geotag_not_takeover">Niet bijwerken</string>
+    <string name="btn_geotag_takeover">Bijwerken</string>
+    <string name="btn_geotag_takeover_delete">Wissen</string>
+    <string name="btn_phcol_change_frame">Frame wijzigen</string>
+    <string name="btn_phcol_change_photo">Foto wijzigen</string>
+    <string name="cam_command_msg_check_camera">Controleer de camera.</string>
+    <string name="cam_command_msg_sending">Communiceren met de camera...</string>
+    <string name="cam_command_msg_sending_error">Fout tijdens communicatie met de camera.</string>
+    <string name="camera_ap_password">Wachtwoord:</string>
+    <string name="camera_ap_ssid">SSID:</string>
+    <string name="cinelike_dolly_zoom">Dolly Zoom</string>
+    <string name="cinelike_slow_quick">Slow/Quick</string>
+    <string name="cloud_msg_cancel">Annuleren?</string>
+    <string name="cloud_msg_canceled">Geannuleerd.</string>
+    <string name="cloud_msg_no_update">Bijwerken niet nodig.</string>
+    <string name="cloud_msg_update">Bijwerken?</string>
+    <string name="cloud_msg_update_error">Bijwerken mislukt.</string>
+    <string name="cloud_msg_updated">Bijwerken voltooid.</string>
+    <string name="cloud_msg_updating">Bijwerken...</string>
+    <string name="cm_msg_error_cloud_save_local">Door een fout zijn sommige beelden niet opgeslagen.</string>
+    <string name="cm_msg_remain">Resterende tijd:</string>
+    <string name="cmn_auto_cloud_backup">Automatische back-up</string>
+    <string name="cmn_bluetooth">Bluetooth</string>
+    <string name="cmn_bluetooth_setting">Bluetooth-setup</string>
+    <string name="cmn_bluetooth_setting_short">Bluetooth-setup</string>
+    <string name="cmn_bt_remote_controller">Afstandsbediening sluiter</string>
+    <string name="cmn_bt_remote_controller_title">Afstandsbed. sluiter</string>
+    <string name="cmn_btn_cancel">Annuleren</string>
+    <string name="cmn_btn_close">Sluiten</string>
+    <string name="cmn_btn_detail">Details</string>
+    <string name="cmn_btn_dicision">Inst.</string>
+    <string name="cmn_btn_end">Exit</string>
+    <string name="cmn_btn_execute">Uitvoeren</string>
+    <string name="cmn_btn_execute_short">Uitv.</string>
+    <string name="cmn_btn_ok">OK</string>
+    <string name="cmn_btn_reset">Reset</string>
+    <string name="cmn_btn_save">Opslaan</string>
+    <string name="cmn_btn_update">Bijwerken</string>
+    <string name="cmn_build_number">Buiidnummer</string>
+    <string name="cmn_camera_setting">Camera-instellingen</string>
+    <string name="cmn_camera_setting_copy">Camera-inst. kopie</string>
+    <string name="cmn_camera_setting_copy2">"Camera-inst.
+kopie"</string>
+    <string name="cmn_camera_setting_copy3">Camera-inst. kopie</string>
+    <string name="cmn_camera_setting_delete">Wissen</string>
+    <string name="cmn_camera_setting_rename">De naam wijzigen</string>
+    <string name="cmn_camera_setting_save">Instelling opslaan</string>
+    <string name="cmn_camera_setting_saved_settings">Opgeslagen camera-instellingen</string>
+    <string name="cmn_camera_setting_send_camera">Verzenden naar camera</string>
+    <string name="cmn_card_protected">De kaart is vergrendeld. Ontgrendel de kaart.</string>
+    <string name="cmn_cloud_backup">Back-up naar de cloud</string>
+    <string name="cmn_cloud_backup1">Back-up naar cloud</string>
+    <string name="cmn_cloud_backup_ap_ssid">Verbindingsinformatie van draadloos toegangspunt (SSID)</string>
+    <string name="cmn_cloud_backup_connect_ap">Te verbinden WAP</string>
+    <string name="cmn_cloud_backup_connection_test">Verbindingstest</string>
+    <string name="cmn_cloud_backup_picmate_settings">Cloudinstelling</string>
+    <string name="cmn_cloud_backup_remove_location_data">Locatiegeg. wissen</string>
+    <string name="cmn_cloud_backup_send_size">Grootte</string>
+    <string name="cmn_cloud_backup_send_size_l">L</string>
+    <string name="cmn_cloud_backup_send_size_m">M</string>
+    <string name="cmn_cloud_backup_send_size_org">Origineel</string>
+    <string name="cmn_cloud_backup_send_size_s">S</string>
+    <string name="cmn_cloud_backup_send_size_vga">VGA</string>
+    <string name="cmn_cloud_backup_start">Start</string>
+    <string name="cmn_cloud_backup_start_backup">Back-up starten</string>
+    <string name="cmn_cloud_backup_terminate">Annul</string>
+    <string name="cmn_cloud_backup_terminate_condition_battery">Stopomst. (camerabatt.)</string>
+    <string name="cmn_connect">Verbinding</string>
+    <string name="cmn_connect_mode_qr_code">QR-code</string>
+    <string name="cmn_connect_mode_wifi">Wi-Fi</string>
+    <string name="cmn_connection_dsc_direct">Direct</string>
+    <string name="cmn_connection_dsc_network">Via netwerk</string>
+    <string name="cmn_connection_dsc_wifi_direct">Wi-Fi Direct</string>
+    <string name="cmn_connection_movie_direct">Directe verbinding</string>
+    <string name="cmn_connection_movie_network">Verbinding draadloze toegangspunt</string>
+    <string name="cmn_connection_tethering">Mobiele hotspot</string>
+    <string name="cmn_contorl_camera">Bedienen met camera</string>
+    <string name="cmn_digital_still_camera">Digitale Camera</string>
+    <string name="cmn_digital_video_camera">Digitale Videocamera</string>
+    <string name="cmn_digital_video_camera_wearable">Draagbare mini camcorder</string>
+    <string name="cmn_error_title">Fout</string>
+    <string name="cmn_function_dsc_connect_sp">Op afstand opnemen en weergeven</string>
+    <string name="cmn_function_dsc_send_image_camera">Afbeeldingen versturen van camera</string>
+    <string name="cmn_function_dsc_send_image_recording">Afbeeldingen versturen tijdens opname</string>
+    <string name="cmn_function_movie_remote_control">Afst. Bedien.</string>
+    <string name="cmn_help_url">http://panasonic.jp/support/spn/global/dsc/help/l_link2.1/du/</string>
+    <string name="cmn_help_url_test">http://panasonic.jp/support/spn/global/dsc/help/YN_19102012_l_link2.1/du/</string>
+    <string name="cmn_imageapp_help_url">http://panasonic.jp/support/spn/global/dsc/help/image_app/du/</string>
+    <string name="cmn_imageapp_help_url_test">http://panasonic.jp/support/spn/global/dsc/help/test_1120_image_app/du/</string>
+    <string name="cmn_imageshuttle_help_url">http://www.leica-image-shuttle.help.leica-camera.com/</string>
+    <string name="cmn_imageshuttle_license_html_android">license_android_en</string>
+    <string name="cmn_label_title_nextskipview">Dit scherm niet meer afbeelden.</string>
+    <string name="cmn_llink_dummy" />
+    <string name="cmn_msg_3box_no_contents_found">Geen afspeelbare inhoud gevonden.</string>
+    <string name="cmn_msg_3box_skip_play_mp4_a500">"Alleen video's in de volgende indelingen kunnen op een tv worden afgespeeld.
+“848x480/30p(25p)” “848x480/240fps(200fps)”
+“1280x720/30p(25p)”
+“1280x720/120fps(100fps)”"</string>
+    <string name="cmn_msg_3box_skip_play_mp4_vertical">"Alleen video's in de volgende indeling kunnen op een tv worden afgespeeld.
+“640x480/30p”"</string>
+    <string name="cmn_msg_3box_skip_play_mp4_wearable">"Alleen video's in de volgende indelingen kunnen op een tv worden afgespeeld.
+“848x480/30p(25p)” en “848x480/240fps(200fps)”."</string>
+    <string name="cmn_msg_already_regist">Geregistreerd.</string>
+    <string name="cmn_msg_ask_camera_change_rec_mode">Overgeschakeld naar opnamestand met de camera.</string>
+    <string name="cmn_msg_camera_changed_rec_mode">Overgeschakeld naar opnamestand op de camera.</string>
+    <string name="cmn_msg_cannot_play_3box">Geselecteerde scène kan niet op de TV worden afgespeeld.</string>
+    <string name="cmn_msg_cannot_play_3box_mp4_60p">"Video's in MP4 1920x1080/60p (50p) formaat kunnen niet op een tv worden afgespeeld."</string>
+    <string name="cmn_msg_cannot_play_mp4">De MP4-inhoud van deze camera kan niet op een tv worden afgespeeld.</string>
+    <string name="cmn_msg_check_receive_image">Gedownloade beelden controleren?</string>
+    <string name="cmn_msg_confirm_app_finish_on_back_pressed">Druk opnieuw op de knop om de toepassing af te sluiten.</string>
+    <string name="cmn_msg_connect_camera">De camera [%s] is verbonden.</string>
+    <string name="cmn_msg_connect_error">Verbinding mislukt.</string>
+    <string name="cmn_msg_connect_local_mode">"Verbinding mislukt.
+Start de lokale modus."</string>
+    <string name="cmn_msg_delete_all_data">Gegevens wissen?</string>
+    <string name="cmn_msg_delete_data">Gegevens gewist.</string>
+    <string name="cmn_msg_disconnected">"Verbinding met de camera is verbroken.
+Stel de Wi-Fi-verbinding voor de camera opnieuw in."</string>
+    <string name="cmn_msg_disconnected2">Verbinding met de camera is verbroken.</string>
+    <string name="cmn_msg_disconnected_and_retry_connect">Er is geen reactie van de camera. Voer de Wi-Fi-instellingen opnieuw uit op de camera of ga naar een locatie waar de ontvangstomgeving voor radiogolven beter is en tik op de knop \"OK \".</string>
+    <string name="cmn_msg_disconnected_and_wait_for_recieve">"Verbinding met de camera is verloren of opnamemodus is beëindigd.
+Stel de Wi-Fi-verbinding op deze camera opnieuw in of kopieer beelden."</string>
+    <string name="cmn_msg_disconnected_and_wait_for_recieve_short">"Verbinding met de camera is verloren of opnamemodus is beëindigd.
+Beelden kopiëren is mogelijk."</string>
+    <string name="cmn_msg_disconnected_dmr">De verbinding naar het afspeelapparaat werd verbroken.</string>
+    <string name="cmn_msg_error_not_internet">"Geen verbinding met internet.
+Maak verbinding met internet."</string>
+    <string name="cmn_msg_error_rec">"Opname mislukt.
+Controleer de camera of de geheugenkaart."</string>
+    <string name="cmn_msg_help_error_not_internet">"Kan \"Help \" niet laden omdat uw smartphone niet verbonden is met internet.
+Maak verbinding met internet."</string>
+    <string name="cmn_msg_jump_snap_warning">Stel de camera in op “Enkel”om op te nemen met Springsnapshot.</string>
+    <string name="cmn_msg_just_a_moment">Een ogenblikje...</string>
+    <string name="cmn_msg_movie_rec_disable">Video opnemen momenteel niet beschikbaar.</string>
+    <string name="cmn_msg_need_lumix_link">Installeer [LUMIX LINK] op uw smartphone/tablet om verbinding te maken met de geselecteerde camera.</string>
+    <string name="cmn_msg_not_change_mode_in_cam_writing">De huidige stand kan niet worden gewijzigd, want er wordt opgenomen op de camera.</string>
+    <string name="cmn_msg_not_connect_in_com_recording">Verbinding is niet mogelijk, want er wordt video opgenomen op de camera.</string>
+    <string name="cmn_msg_not_func_now_camera_recording">Een video opnemen met de camera...</string>
+    <string name="cmn_msg_not_func_now_camera_use">Deze functie kan momenteel niet worden gebruikt omdat de camera een bewerking uitvoert.</string>
+    <string name="cmn_msg_not_func_now_common">Deze functie is op dit moment niet beschikbaar.</string>
+    <string name="cmn_msg_not_func_now_movie_recording">Deze functie is niet beschikbaar tijdens video-opnamen.</string>
+    <string name="cmn_msg_not_func_now_photo_recording">Deze functie is niet beschikbaar tijdens foto-opnamen.</string>
+    <string name="cmn_msg_not_func_now_receive_image">Deze functie kan momenteel niet worden gebruikt, want er worden momenteel beelden gedownload van de camera.</string>
+    <string name="cmn_msg_not_func_now_regist_image">Deze functie kan momenteel niet worden gebruikt, want de beeldregistratie wordt uitgevoerd.</string>
+    <string name="cmn_msg_not_func_now_selftimer_waitting">Deze functie is niet beschikbaar terwijl u de zelfontspanner gebruikt.</string>
+    <string name="cmn_msg_not_func_now_shooting">Een ogenblikje...</string>
+    <string name="cmn_msg_not_func_now_speaking">Deze functie is niet beschikbaar tijdens het gebruik van de functie Remote Voice.</string>
+    <string name="cmn_msg_not_movie_rec_in_cam_writing">Er kan momenteel geen video worden opgenomen, want er wordt opgenomen op de camera.</string>
+    <string name="cmn_msg_now_camera_use">Bewerking uitgevoerd op de camera.</string>
+    <string name="cmn_msg_now_camera_use_snapmovie">Deze bewerking kan niet worden uitgevoerd wanneer de functie Snapfilm van de digitale camera op ON is ingesteld. Stel Snapfilm in op OFF om deze app te gebruiken.</string>
+    <string name="cmn_msg_now_recieve_images_from_camera">Beelden worden gedownload van de camera...</string>
+    <string name="cmn_msg_now_regist_image">Ontvangen beelden worden geregistreerd...</string>
+    <string name="cmn_msg_only_movie">"Alleen MP4-video's"</string>
+    <string name="cmn_msg_only_picture">"Alleen foto's"</string>
+    <string name="cmn_msg_picmate_cloud_warning">Uploaden naar cloudmap is beschikbaar als cloud-synchronisatie is ingesteld op apparaten met een downloadfunctie, zoals PC of smartphone.</string>
+    <string name="cmn_msg_picmate_cloud_warning2">Een Cloud Folder slaat overgezette beelden 30 dagen op (tot 1000 beelden). Overgezette beelden worden automatisch 30 dagen na de overzetting gewist.</string>
+    <string name="cmn_msg_picmate_cloud_warning3">Wanneer de download van beelden vanaf een Cloud Folder naar alle gespecificeerde inrichtingen voltooid is, zouden er zelfs binnen 30 dagen vanaf de overzetting beelden gewist kunnen worden van de Cloud Folder.</string>
+    <string name="cmn_msg_picture_shutter_disable">Fotograferen momenteel niet beschikbaar.</string>
+    <string name="cmn_msg_qr_error">De QR-code kon niet worden gelezen.</string>
+    <string name="cmn_msg_read_qr_code">Plaats de QR-code binnen het frame en leg deze vast.</string>
+    <string name="cmn_msg_remain_60min_or_less">Onvoldoende capaciteit op de kaart. U hebt ten minste 60 resterende minuten nodig om in deze modus op te nemen.</string>
+    <string name="cmn_msg_remain_zero">"Onvoldoende geheugen.
+Controleer de camera."</string>
+    <string name="cmn_msg_sd_unset">"Geen geheugenkaart.
+Controleer de camera."</string>
+    <string name="cmn_msg_server_multi">Selecteer een camera om een verbinding mee te maken.</string>
+    <string name="cmn_msg_server_zero">"Kan geen verbinding maken met de camera.
+Controleer in Wi-Fi-instellingen of er een camera is geselecteerd om verbinding mee te maken."</string>
+    <string name="cmn_msg_server_zero_2">Deze functie kan momenteel niet worden gebruikt.</string>
+    <string name="cmn_msg_server_zero_2_old">Deze functie kan momenteel niet worden gebruikt. Controleer de Wi-Fi-instellingen van uw camera en uw smartphone en selecteer vervolgens de camera onder “Verbind.best. inst.”.</string>
+    <string name="cmn_msg_server_zero_old">"Kan geen camera vinden om een verbinding mee te maken.
+Selecteer in het menu een camera om een verbinding mee te maken."</string>
+    <string name="cmn_msg_server_zero_os_wifi">Controleer de Wi-Fi-instellingen van het apparaat om te controleren of er een camera is geselecteerd om verbinding mee te maken.</string>
+    <string name="cmn_msg_wifi_connect_longtime">Het verbinden kan enkele minuten duren.</string>
+    <string name="cmn_msg_wifi_multi">Selecteer een toegangspunt om een verbinding mee te maken.</string>
+    <string name="cmn_network">Netwerk</string>
+    <string name="cmn_network_ap_camera_id">SSID</string>
+    <string name="cmn_network_camera_ssid">SSID</string>
+    <string name="cmn_network_live_camera_id">SSID</string>
+    <string name="cmn_network_wps">WPS</string>
+    <string name="cmn_next">Volgende</string>
+    <string name="cmn_no">NEE</string>
+    <string name="cmn_notification_title">Dit is een mededeling van Image App.</string>
+    <string name="cmn_notification_title_leica">Dit is een mededeling van Image Shuttle.</string>
+    <string name="cmn_now_wait_camera_response">Wachten op reactie camera...</string>
+    <string name="cmn_off">UIT</string>
+    <string name="cmn_on">AAN</string>
+    <string name="cmn_particle_high">Hoog</string>
+    <string name="cmn_particle_low">Laag</string>
+    <string name="cmn_particle_mid">Standaard</string>
+    <string name="cmn_particle_off">Uit</string>
+    <string name="cmn_pict_saved">"De foto's zijn opgeslagen."</string>
+    <string name="cmn_registered_camera">Camera geregistreerd</string>
+    <string name="cmn_registerring_camera">Camera inschakelen om geregistreerd te worden</string>
+    <string name="cmn_remain_battery_1">1 cap. Resterend</string>
+    <string name="cmn_remain_battery_2">2 cap. Resterend</string>
+    <string name="cmn_remote_watch">Home Monitor</string>
+    <string name="cmn_search">Zoeken</string>
+    <string name="cmn_settings">Instellingen</string>
+    <string name="cmn_single_shoot">Enkel</string>
+    <string name="cmn_skip">Overslaan</string>
+    <string name="cmn_slepp">Slaapmodus</string>
+    <string name="cmn_smart_app_url">http://panasonic.jp/pss/</string>
+    <string name="cmn_standby">Stand-by</string>
+    <string name="cmn_stop_reason_value">[%d]</string>
+    <string name="cmn_unregist_camera">Registratie annuleren</string>
+    <string name="cmn_waiting_transfer">Wachten op bldoverdr.</string>
+    <string name="cmn_wifi">WiFi</string>
+    <string name="cmn_wifi_setting_short">Wi-Fi-setup</string>
+    <string name="cmn_yes">JA</string>
+    <string name="cnm_msg_please_talk">Spreken</string>
+    <string name="connect_msg_nfc_reset_history">Begin vooraan om een verbinding met de camera te maken.</string>
+    <string name="content_type_avchd">AVCHD</string>
+    <string name="content_type_avchd_3d">AVCHD-3D</string>
+    <string name="content_type_avchd_50i">1080/50i</string>
+    <string name="content_type_avchd_50p">1080/50p</string>
+    <string name="content_type_avchd_60i">1080/60i</string>
+    <string name="content_type_avchd_60p">1080/60p</string>
+    <string name="content_type_avchd_sbs">SbS</string>
+    <string name="content_type_jpeg">JPEG</string>
+    <string name="content_type_mp4">MP4/iFrame</string>
+    <string name="content_type_mp4_only">MP4</string>
+    <string name="demo_msg_nfc_explain">Touch the NFC mark on the camera with your smartphone.</string>
+    <string name="easy_setting_confirm_at_camera">[Bevestiging op de camera]</string>
+    <string name="easy_setting_connection_test_on_camera">(3) Voer de functie \"Verbindingstest \" op de camera uit.</string>
+    <string name="easy_setting_current_time_camera">Huidige tijd op de camera</string>
+    <string name="easy_setting_current_time_sp">Huidige tijd op de smartphone</string>
+    <string name="easy_setting_id_camera">De LUMIX CLUB aanmeldings-ID is al geregistreerd in deze camera</string>
+    <string name="easy_setting_live_cast">Live zenden</string>
+    <string name="easy_setting_msg_already_regist_id">Er is al een LUMIX CLUB aanmeldings-ID geregistreerd in deze camera.</string>
+    <string name="easy_setting_msg_finish_setting">De smartphone-naar-camera Wi-Fi functies zijn geïnitialiseerd.</string>
+    <string name="easy_setting_msg_need_operation">Voor gebruik van de functie Live zenden moet u tevens de volgende aanvullende handelingen verrichten.</string>
+    <string name="easy_setting_msg_need_regist">* Om de functies Live zenden, Babymonitor en DLNA te gebruiken, moet u zich eerst registreren.</string>
+    <string name="easy_setting_msg_need_regist_id_for_use">* Als u nog geen LUMIX CLUB aanmeldings-ID en wachtwoord hebt, gebruikt u een PC of ander apparaat om vooraf een LUMIX CLUB aanmeldings-ID en wachtwoord te verkrijgen.</string>
+    <string name="easy_setting_msg_regist_access_point">Registreert het toegangspunt in de camera.</string>
+    <string name="easy_setting_msg_regist_id_to_camera">Registreert uw LUMIX CLUB aanmeldings-ID en wachtwoord in de camera.</string>
+    <string name="easy_setting_msg_skip_or_next_syncronize">Als de apparaten al zijn gesynchroniseerd, kunt u deze stap overslaan. Om de apparaten opnieuw te synchroniseren, raakt u Volgende aan.</string>
+    <string name="easy_setting_msg_skip_or_next_use">Om die LUMIX CLUB aanmeldings-ID te blijven gebruiken, raakt u Overslaan aan. Voor wijzigen, raakt u Volgende aan.</string>
+    <string name="easy_setting_msg_ssid_exist">Dezelfde SSID is eerder geregistreerd.</string>
+    <string name="easy_setting_msg_syncronize_time">De klok van de smartphone en de klok van de camera worden gesynchroniseerd.</string>
+    <string name="easy_setting_regist_access_point">Registreren van het toegangspunt</string>
+    <string name="easy_setting_regist_access_point_for_use">Als u een toegangspunt gebruikt, moet u dit vooraf registreren.</string>
+    <string name="easy_setting_regist_ustream_id">(1) Verkrijgen van een USTREAM-ID</string>
+    <string name="easy_setting_select_item">Selecteer het onderdeel dat u wilt instellen.</string>
+    <string name="easy_setting_setting_at_pc">[Instellingen verricht via een PC of ander apparaat]</string>
+    <string name="easy_setting_syncronize_time">Synchroniseren van de klok</string>
+    <string name="easy_setting_ustream_setting_at_picmate">Meld u aan bij LUMIX CLUB, selecteer Instellingen voor koppelingen internetdiensten en stel USTREAM in.</string>
+    <string name="easy_setting_web_setting_at_picmate">(2) Stel Koppelingen internetdiensten (USTREAM) in op LUMIX CLUB</string>
+    <string name="easy_wifi_setting_ap_msg">"Kies het toegangspunt om mee te verbinden.
+Wanneer het toegangspunt nog niet geregistreerd is, dient u de eerste beschikbare lege rij (boven) te selecteren om het draadloze toegangspunt te registreren."</string>
+    <string name="easywifi_clock_camtime_known">Tijd onbekend</string>
+    <string name="easywifi_mimamori_invalidatedata">De van de camera opgehaalde informatie is onjuist.</string>
+    <string name="easywifi_picmate_overwrite">"De login-ID is in de camera geregistreerd.
+Wilt u deze overschrijven?"</string>
+    <string name="easywifi_picmate_setting">De LUMIX CLUB ID wordt ingesteld...</string>
+    <string name="easywifi_setting_ap_comment">"Registreert het toegangspunt in de camera.
+
+Als u een toegangspunt gebruikt, moet u dit vooraf registreren.
+
+* Om de functies Live zenden, Babymonitor en DLNA te gebruiken, moet u zich eerst registreren."</string>
+    <string name="easywifi_setting_ap_comment_for_wearable">"Registreert het toegangspunt in de camera.
+
+Als u een toegangspunt gebruikt, moet u dit vooraf registreren.
+
+* Om de functies Live zenden en DLNA te gebruiken, moet u zich eerst registreren."</string>
+    <string name="easywifi_setting_ap_comment_for_wearable_no_livecast">"Registreert het toegangspunt in de camera.
+
+Als u een toegangspunt gebruikt, moet u dit vooraf registreren.
+
+* Om de functies DLNA te gebruiken, moet u zich eerst registreren."</string>
+    <string name="easywifi_setting_clock_comment">"De klok van de smartphone en de klok van de camera worden gesynchroniseerd.
+
+Huidige tijd op de camera
+%1$s
+
+Huidige tijd op de smartphone
+%2$s
+
+Als de apparaten al zijn gesynchroniseerd, kunt u deze stap overslaan. Om de apparaten opnieuw te synchroniseren, raakt u Volgende aan."</string>
+    <string name="easywifi_setting_mimamori_title">Instellingen voor Home Monitor</string>
+    <string name="easywifi_setting_nodata">Ophalen van informatie van de camera is mislukt.</string>
+    <string name="easywifi_setting_picmate_comment">"Registreert uw LUMIX CLUB aanmeldings-ID en wachtwoord in de camera.
+
+* Als u nog geen LUMIX CLUB aanmeldings-ID en wachtwoord hebt, gebruikt u een PC of ander apparaat om vooraf een LUMIX CLUB aanmeldings-ID en wachtwoord te verkrijgen.
+
+%s
+
+Om die LUMIX CLUB aanmeldings-ID te blijven gebruiken, raakt u Overslaan aan. Voor wijzigen, raakt u Volgende aan."</string>
+    <string name="easywifi_setting_picmate_login_invalidate">Voer uw login-ID en uw wachtwoord in.</string>
+    <string name="easywifi_setting_ustream_comment">"De smartphone-naar-camera Wi-Fi functies zijn geïnitialiseerd.
+
+Voor gebruik van de live kanaal-functie moet u tevens de volgende aanvullende handelingen verrichten.
+
+[Instellingen verricht via een PC of ander apparaat]
+(1) Verkrijgen van een USTREAM-ID
+
+(2) Stel Koppelingen internetdiensten (USTREAM) in op LUMIX CLUB
+Meld u aan bij LUMIX CLUB, selecteer Instellingen voor koppelingen internetdiensten en stel USTREAM in.
+
+[Bevestiging op de camera]
+(3) Voer de functie \"Verbindingstest \" op de camera uit."</string>
+    <string name="easywifi_setting_ustream_comment2">"De smartphone-naar-camera Wi-Fi functies zijn geïnitialiseerd.
+
+Voor gebruik van de live kanaal-functie moet u tevens de volgende aanvullende handelingen verrichten.
+
+[Instellingen verricht via een PC of ander apparaat]
+(1) Verkrijgen van een USTREAM-ID
+
+(2) Stel Koppelingen internetdiensten (USTREAM) in op LUMIX CLUB
+Meld u aan bij LUMIX CLUB, selecteer Instellingen voor koppelingen internetdiensten en stel USTREAM in.
+"</string>
+    <string name="easywifi_setting_ustream_title">USTREAM-instellingen</string>
+    <string name="explain_menu_privacy_notice">\"Menu \" -> \"Toepassingsfunctie \" -> \"Gebruiksvoorwaarden \" -> \"Automatisch versturen \"</string>
+    <string name="exposure_compensation">Belichtingscomp.</string>
+    <string name="folder_type_dsc">LUMIX</string>
+    <string name="folder_type_dsc_sd1">LUMIX(SD1)</string>
+    <string name="folder_type_dsc_sd2">LUMIX(SD2)</string>
+    <string name="folder_type_leica_dsc">Leica</string>
+    <string name="folder_type_movie">Videocamera</string>
+    <string name="folder_type_movie_mem">Videocamera (intern geheugen)</string>
+    <string name="folder_type_movie_sd">Videocamera (SD)</string>
+    <string name="func_app_boot_android">U moet toegang hebben tot internet om [%s] te starten.</string>
+    <string name="func_app_btn_boot">App starten</string>
+    <string name="func_app_btn_google_play">Naar Google Play</string>
+    <string name="func_app_install_android">U moet toegang hebben tot internet om [%s] te installeren.</string>
+    <string name="func_app_need_reboot">Als de smartphone rechtstreeks op de camera aangesloten is, schakelt u naar een andere verbindingsmethode die toegang biedt tot internet en start u de app opnieuw.</string>
+    <string name="func_auto_phcol_detail">U kunt één foto maken door de beste opnamen te combineren, die automatisch geselecteerd zijn uit de scène die door de videocamera is opgenomen.</string>
+    <string name="func_geotag_detail">Locatiegegevens van smartphone/tablet worden aan het beeld toegevoegd.</string>
+    <string name="func_guidance_picture_send">Beeld overdragen</string>
+    <string name="func_guidance_remote_controll">Afstandsbediening</string>
+    <string name="func_highlight_detail">U kunt highlights uit verschillende scènes halen, deze afspelen en als korte video opslaan.</string>
+    <string name="func_homemonitor_detail">U kunt de situatie thuis bewaken als u niet thuis bent.</string>
+    <string name="func_item_auto_phcol">Highlight fotocollage</string>
+    <string name="func_item_auto_phcol_2">Highlight fotocollage</string>
+    <string name="func_item_geotag">Geografische labelling</string>
+    <string name="func_item_highlight">Highlight weergave</string>
+    <string name="func_item_highlight_2">Highlight weergave</string>
+    <string name="func_item_phcol">Fotocollage</string>
+    <string name="func_item_phcol_2">Fotocollage</string>
+    <string name="func_item_picmate">LUMIX CLUB PicMate</string>
+    <string name="func_item_smartapp">Panasonic SmartApp</string>
+    <string name="func_item_smartapp_2">Panasonic SmartApp</string>
+    <string name="func_item_snap_movie">Snapfilm</string>
+    <string name="func_item_snap_movie_2">Snapfilm</string>
+    <string name="func_item_stopmotion">Stop Motion-animatie-assistent</string>
+    <string name="func_phcol_detail">"Er wordt één beeld gemaakt van een combinatie van uw favoriete foto's."</string>
+    <string name="func_picmate_detail">Een foto- en video-uitwisselingssite waar u foto’s en video’s die u met de digitale camera opgenomen hebt, kunt “ordenen, delen en weergeven”</string>
+    <string name="func_smartapp_detail" />
+    <string name="func_snapmovie_detail">U kunt video’s samenvoegen die u met de camera in de snapfilmmodus hebt opgenomen</string>
+    <string name="func_stopmotion_detail">U kunt een eerder gemaakte foto als achtergrond voor de volgende foto gebruiken en een foto maken terwijl u de achtergrond bekijkt</string>
+    <string name="func_tab_btn">Functie</string>
+    <string name="func_transfer_all">Alles</string>
+    <string name="func_transfer_auto">Groepsoverdracht</string>
+    <string name="func_transfer_auto_days">Laatste %d dagen</string>
+    <string name="func_transfer_auto_today">Vandaag</string>
+    <string name="func_transfer_only_movie">"Alleen video's"</string>
+    <string name="func_transfer_only_picture">"Alleen foto's"</string>
+    <string name="func_transfer_picture_movie">"Foto's en video's"</string>
+    <string name="func_transfer_select">Selectie overdragen</string>
+    <string name="geotag_btn_allow_send_gps_data_to_camera">Gegevens verzenden</string>
+    <string name="geotag_btn_allow_synctime_with_camera">Synchroniseren</string>
+    <string name="geotag_btn_allow_writting_to_picture">Schrijven</string>
+    <string name="geotag_btn_gps_logging_off">Geotagging stoppen</string>
+    <string name="geotag_btn_gps_logging_on">Geotagging starten</string>
+    <string name="geotag_button_delete_gps">Wissen</string>
+    <string name="geotag_button_gps_send_all">Batch verzenden</string>
+    <string name="geotag_button_send_geotag">Locatiegeg. verzenden</string>
+    <string name="geotag_button_sync_time">Tijdsync.</string>
+    <string name="geotag_cell_gps_worklog">Bedieningslogboek</string>
+    <string name="geotag_cell_interval">Registratie-interval</string>
+    <string name="geotag_cell_interval_15sec">15 s</string>
+    <string name="geotag_cell_interval_1sec">1 s</string>
+    <string name="geotag_cell_interval_30sec">30 s</string>
+    <string name="geotag_cell_interval_5sec">5 s</string>
+    <string name="geotag_cell_interval_60sec">60 s</string>
+    <string name="geotag_cell_save_gps">Loc.info registr.</string>
+    <string name="geotag_label_gps_logging_disable">Kan geen locatiegegevens ophalen</string>
+    <string name="geotag_label_gps_logging_enable">Locatiegegevens ophalen…</string>
+    <string name="geotag_label_gps_logging_off">Geotagging uit</string>
+    <string name="geotag_label_gps_logging_on">Geotagging aan…</string>
+    <string name="geotag_label_gps_nfc_touch">Verzenden via NFC</string>
+    <string name="geotag_label_lastsynctime">Tijdstip van laatste synchronisatie:</string>
+    <string name="geotag_msg_ask_write_to_picture">Huidige locatie-informatie in het beeldbestand schrijven?</string>
+    <string name="geotag_msg_camera_error">De verbonden camera ondersteunt locatiereg. niet.</string>
+    <string name="geotag_msg_cancel_write_to_picture">"Het schrijfproces is geannuleerd.
+De locatiegegevens zijn naar de camera overgebracht."</string>
+    <string name="geotag_msg_cant_send_gpsdata">Kan locatiegegevens niet verzenden.</string>
+    <string name="geotag_msg_error_write_to_picture">Locatiegegevens schrijven mislukt.</string>
+    <string name="geotag_msg_gps_setting">"Als u locatiereg. AAN wilt zetten, moet u de GPS-functie inschakelen.
+De GPS-functie inschakelen?"</string>
+    <string name="geotag_msg_gps_setting_off">"Locatiereg. wordt uitgeschakeld.
+Instelling GPS-functie ook wijzigen?"</string>
+    <string name="geotag_msg_if_you_start_send_gps_data">De verbonden camera moet locatieregistratie ondersteunen. Locatiegegevens verzenden?</string>
+    <string name="geotag_msg_if_you_start_synctime">De verbonden camera moet locatieregistratie ondersteunen. Tijdsynchronisatie uitvoeren?</string>
+    <string name="geotag_msg_now_write_to_picture">Locatiegegevens schrijven…</string>
+    <string name="geotag_msg_sdcard_is_protected_gps">De SD-kaart is beveiligd. Verwijder de beveiliging.</string>
+    <string name="geotag_msg_sync_cancel">Time Sync. geannuleerd.</string>
+    <string name="geotag_msg_sync_error">Tijdsynchronisatie mislukt.</string>
+    <string name="geotag_title">Geogr. labell.</string>
+    <string name="geotag_title_label_delete_gps_select">"Locatiegegevens verzonden.
+Locatiegegevens wissen?"</string>
+    <string name="geotag_title_label_send_gps_now">Locatiegegevens verzenden...　　　</string>
+    <string name="geotag_title_label_sync_time_now">Tijd synchroniseren...</string>
+    <string name="geotag_worklog_savepointnum">Aantal locatieregistraties:</string>
+    <string name="geotag_worklog_status_delege_gps_data">Locatiegegevens verwijderd.</string>
+    <string name="geotag_worklog_status_error_gps">Locatiereg. niet normaal afgesloten.</string>
+    <string name="geotag_worklog_status_error_send_gps_data">Overdracht van locatiegegevens mislukt.</string>
+    <string name="geotag_worklog_status_error_synctime">Tijdsynchronisatie mislukt.</string>
+    <string name="geotag_worklog_status_error_write_to_camera">Locatiegegevens lezen mislukt.</string>
+    <string name="geotag_worklog_status_off">“Loc. info registr.” is uitgeschakeld.</string>
+    <string name="geotag_worklog_status_on">“Loc. info registr.” is ingeschakeld.</string>
+    <string name="geotag_worklog_status_send_gps_data">Locatiegegevens verzonden naar camera.</string>
+    <string name="geotag_worklog_status_synctime">Tijdsynchronisatie voltooid.</string>
+    <string name="geotag_worklog_status_write_to_camera">Locatiegegevens lezen voltooid.</string>
+    <string name="giotag_msg_no_gps_function">Kan GPS-functie niet gebruiken op dit apparaat.</string>
+    <string name="highlight_duration_180sec">ONG. 3 MIN.</string>
+    <string name="highlight_duration_90sec">ONG. 90 SEC.</string>
+    <string name="highlight_duration_none">AUTO</string>
+    <string name="highlight_effect_clasical">KLASSIEK</string>
+    <string name="highlight_effect_dynamic">DYNAMISCH</string>
+    <string name="highlight_effect_natural">NATUUR</string>
+    <string name="highlight_effect_off">UIT</string>
+    <string name="highlight_effect_pop">POP</string>
+    <string name="highlight_option_effect">EFFECT</string>
+    <string name="highlight_option_playtime">AFSPEELDUUR</string>
+    <string name="highlight_option_priority">Gez.det.priorit.</string>
+    <string name="highlight_priority_off">UIT</string>
+    <string name="highlight_priority_on">AAN</string>
+    <string name="mgs_vrec_stop_write">De opname is gestopt als gevolg van een schrijffout.</string>
+    <string name="mic_level_setting_title">Mic. Niveau</string>
+    <string name="movieslideshow_error_bgmcheck">U kunt dit bestand niet gebruiken om een highlight te maken.</string>
+    <string name="movieslideshow_error_bgmcheck_copy_protected">U kunt dit bestand niet gebruiken om een highlight te maken, omdat de inhoud van het bestand auteursrechtelijk beschermd is.</string>
+    <string name="movieslideshow_option_bgm">Achtergrondmuziek</string>
+    <string name="movieslideshow_option_bgm_original">Geluidsbron</string>
+    <string name="movieslideshow_option_bgm_preset">Voorinstellingen</string>
+    <string name="movieslideshow_option_bgm_setting">Audio-instellingen</string>
+    <string name="movieslideshow_save_format">Opslagformaat</string>
+    <string name="movieslideshow_save_format_mp4high">MP4/Hoge beeldkwaliteit</string>
+    <string name="movieslideshow_save_format_mp4low">MP4/Lage beeldkwaliteit</string>
+    <string name="movieslideshow_setting_bgm">Wanneer de achtergrondmuziek is ingeschakeld, kunt u deze tijdens bedrijf specificeren.</string>
+    <string name="movieslideshow_setting_title">Wanneer het titelbeeld is ingeschakeld, kunt u dit tijdens bedrijf specificeren.</string>
+    <string name="movieslideshow_title_picture">Titelbeeld</string>
+    <string name="movieslideshow_title_settings">Titelinstellingen</string>
+    <string name="movieslideshow_warning_bgm">Geen muziekbestand geselecteerd. Weet u zeker dat u wilt beginnen met het maken van een highlight zonder een muziekbestand te selecteren?</string>
+    <string name="movieslideshow_warning_picture">Geen beeld geselecteerd. Wilt u highlights maken zonder een titelbeeld in te stellen?</string>
+    <string name="msg_4k_photo_marking_limit_over">Er kunnen tot 40 bladwijzers ingesteld worden. U kunt geen nieuwe bladwijzers toevoegen.</string>
+    <string name="msg_4kprebrst_to_4kbrst">"Motion gestopped - camera omgezet naar 4K-burstinstelling.
+
+Wacht totdat de camera is afgekoeld."</string>
+    <string name="msg_6kprebrst_to_6kbrst">"Motion gestopped - camera omgezet naar 6K-burstinstelling.
+
+Wacht totdat de camera is afgekoeld."</string>
+    <string name="msg_access_number_incomplete">Gebruik 4 cijfers voor toegangsnummer</string>
+    <string name="msg_address_number_incomplete">Gebruik 16 cijfers voor adresnummer</string>
+    <string name="msg_ask_copy_picmate_id_to_app">"De login-ID voor de camera is ingesteld. 
+Wilt u de login-ID van de camera ook voor deze app gebruiken?"</string>
+    <string name="msg_ask_copy_picmate_id_to_camera">"De login-ID voor de camera is niet ingesteld.
+Wilt u dezelfde login-ID gebruiken als voor deze app?"</string>
+    <string name="msg_ask_copy_snapmovie_previous">Korte video(s) die %d dag(en) geleden zijn opgenomen in snapfilmmodus kopiëren?</string>
+    <string name="msg_ask_copy_snapmovie_today">Korte video(s) die vandaag zijn opgenomen in snapfilmmodus kopiëren?</string>
+    <string name="msg_ask_create_stopmotion_video_now">Nu video maken?</string>
+    <string name="msg_ask_create_stopmotion_video_withtime">"Video creëren?
+Dit duurt ongeveer %d minuten."</string>
+    <string name="msg_ask_delete_all_contents">De momenteel weergegeven camerabestanden verwijderen?</string>
+    <string name="msg_ask_delete_all_contents_with_protect">De momenteel weergegeven camerabestanden verwijderen? (Beveiligde bestanden worden niet verwijderd.)</string>
+    <string name="msg_ask_delete_setting">De instellingen verwijderen?</string>
+    <string name="msg_ask_idsync_from_camera">De LUMIX CLUB-aanmeld-id is geregistreerd in de camera. De LUMIX CLUB-aanmeld-id kopiëren van deze camera naar dit programma?</string>
+    <string name="msg_ask_idsync_to_camera">De LUMIX CLUB-aanmeld-id is geregistreerd in dit programma. De LUMIX CLUB-aanmeld-id kopiëren van dit programma naar de aangesloten camera?</string>
+    <string name="msg_ask_idsync_to_camera2">De LUMIX CLUB-aanmeld-id is geregistreerd in de camera. De LUMIX CLUB-aanmeld-id kopiëren van dit programma naar de aangesloten camera?</string>
+    <string name="msg_ask_picjump_setting">"Er zijn geen \"Fotodeel \"-instellingen opgegeven.
+Wilt u dat nu doen?"</string>
+    <string name="msg_ask_picjump_setting_yes">Instellingen nu opgeven</string>
+    <string name="msg_ask_picmate_id_overwrite">Aanmeldings-ID in de camera registreren?</string>
+    <string name="msg_ask_quit_stopmotion">Stop-motionopname stoppen?</string>
+    <string name="msg_ask_snapmovie_save_file">Video’s samenvoegen en opslaan?</string>
+    <string name="msg_ask_stopmotion_use_prev_setting">Dezelfde beeldverhouding en -kwaliteit gebruiken als voor de laatste opname?</string>
+    <string name="msg_assert_temperature_warning">De Wi-Fi verbinding wordt over enkele minuten onderbroken, vanwege oververhitting in de camera.</string>
+    <string name="msg_auto_transfer_connect_wifi">Camera via Wi-Fi verbinden om beelden te ontvangen van de camera (automatische beeldoverdracht)?</string>
+    <string name="msg_bt_remote_controller_cannot_use_for_autosend">Afstandsbed. sluiter kan niet worden gebruikt als de camera in automatische beeldoverdracht is.</string>
+    <string name="msg_bt_remote_controller_sw_on">Schakel de stroomvoorziening van de camera in.</string>
+    <string name="msg_bt_remote_controller_wifi_confirm">"Afstandsbed. sluiter kan niet worden gebruikt als de camera een Wi-Fi-verbinding heeft. 
+Wi-Fi-verbinding van de camera verbreken?"</string>
+    <string name="msg_bt_smart_phone_name">Naam smartphone</string>
+    <string name="msg_bt_smart_phone_name_explain">De naam van de smartphone, die op de camera wordt weergegeven, kan worden gewijzigd.</string>
+    <string name="msg_bt_smart_phone_name_too_long">De ingevoerde naam voor de smartphone is te lang.</string>
+    <string name="msg_camera_connecting_to_other">De camera maakt verbinding met een andere smartphone of tablet.</string>
+    <string name="msg_camera_initialize_finished">De instellingen van de aangesloten camera werden geïnitialiseerd.</string>
+    <string name="msg_camera_no_battery">De batterij van de camera is bijna leeg. De camera wordt UIT gezet.</string>
+    <string name="msg_camera_not_registered_for_no_connected_wifi">"Kon niet worden verbonden met het toegangspunt. 
+De registratie is niet voltooid."</string>
+    <string name="msg_camera_not_registered_for_user_refused">"Verbinding geweigerd door de camera. 
+De registratie is niet voltooid."</string>
+    <string name="msg_camera_numreset_finished">Het nummer is opnieuw ingesteld.</string>
+    <string name="msg_camera_registered">De registratie is voltooid.</string>
+    <string name="msg_camera_setting_communcation_error">"Communicatie met de camera is niet mogelijk. 
+Start helemaal opnieuw."</string>
+    <string name="msg_camera_setting_limit_over">"Gegevens kunnen niet meer worden opgeslagen. 
+Wis de opgeslagen camera-instellingen."</string>
+    <string name="msg_cancel_all">Alles annuleren?</string>
+    <string name="msg_cannnot_delete_sd_protected">De SD-kaart is beveiligd. Verwijder de beveiliging.</string>
+    <string name="msg_cannnot_execute_because_content_protected">Deze bewerking kan niet worden uitgevoerd, want het beeld is beveiligd. Hef eerst de beveiliging op.</string>
+    <string name="msg_cannnot_execute_because_content_short">Deze functie kan niet worden gebruikt voor beelden korter dan 3 seconden.</string>
+    <string name="msg_cannnot_execute_no_account">Deze functie is niet beschikbaar omdat er geen LUMIX CLUB-aanmeld-id is geregistreerd.</string>
+    <string name="msg_cannnot_execute_no_internet">Deze functie is niet beschikbaar omdat er geen internetverbinding is.</string>
+    <string name="msg_cannnot_execute_no_internet2">Deze functie is niet beschikbaar bij rechtstreekse aansluiting op de camera of wanneer er geen verbinding is met internet.</string>
+    <string name="msg_cannnot_picture_jump">Deze functie is op dit moment niet beschikbaar.</string>
+    <string name="msg_cannnot_picture_jump_no_data">Er zijn geen \"Fotodeel \"-instellingen geregistreerd.</string>
+    <string name="msg_cannnot_regist_picture_jump_sns">Registratie niet mogelijk vanwege onvolledige certificering.</string>
+    <string name="msg_cannnot_split_delete_cur_position">Gedeeltelijke verwijdering op dit punt niet mogelijk.</string>
+    <string name="msg_cannnot_up_down_because_wps">De prioriteitsvolgorde van de verbindingsbestemming die met WPS is ingesteld, kan niet worden gewijzigd.</string>
+    <string name="msg_cannot_action_camera_preparation">Deze functie kan momenteel niet worden gebruikt, omdat er onderhoud wordt uitgevoerd aan de camerakaart.</string>
+    <string name="msg_cannot_communcation_camera_with_pairing">"Communicatie met de camera is niet mogelijk.
+Als de koppeling bij de camera is voltooid, geef de koppeling vrij en start helemaal opnieuw."</string>
+    <string name="msg_cannot_communcation_camera_without_pairing">Communicatie met de camera is niet mogelijk. Controleer of het koppelen op de camera is geannuleerd.</string>
+    <string name="msg_cannot_communicate_camera">"Communicatie met de camera is niet mogelijk.
+Selecteer hem opnieuw."</string>
+    <string name="msg_cannot_connect_ap_with_bt_tethering">Het is niet mogelijk om tijdens Bluetooth-tethering met een toegangspunt te verbinden.</string>
+    <string name="msg_cannot_connect_camera_for_clear_pairing">De camera kan niet worden verbonden als \"Koppelen \" niet door de camera is ingesteld. Registreer de camera opnieuw.</string>
+    <string name="msg_cannot_create_video_rec_two_sd">Kan geen video maken omdat de capaciteit van twee SD-kaarten ontoereikend is.</string>
+    <string name="msg_cannot_execute_sd_card_error">Deze functie kan niet worden gebruikt als gevolg van een probleem met de SD-kaart.</string>
+    <string name="msg_cannot_execute_sd_card_under_restoration">Deze functie kan niet worden gebruikt, aangezien de SD-kaart gerepareerd wordt.</string>
+    <string name="msg_cannot_format_no_card_inserted">Er is geen SD-kaart in de camera geplaatst.</string>
+    <string name="msg_cannot_format_sd_card_error">Formatteren niet mogelijk als gevolg van problemen met de SD-kaart.</string>
+    <string name="msg_cannot_format_sd_card_protected">De SD-kaart is beveiligd. Verwijder de beveiliging.</string>
+    <string name="msg_cannot_format_sd_card_under_restoration">Formatteren niet mogelijk, aangezien de SD-kaart gerepareerd wordt.</string>
+    <string name="msg_cannot_picture_jump_not_support_content">Deze functie is niet beschikbaar omdat de indeling niet wordt ondersteund.</string>
+    <string name="msg_cannot_read_camera_preparation">Kon inhoud niet lezen, omdat er onderhoud wordt uitgevoerd aan de camerakaart.</string>
+    <string name="msg_cannot_record_video_sdhc_sdxc">Een video opnemen met een back-up opname vereist twee identieke SD-kaarten.</string>
+    <string name="msg_cannot_regist_camera_for_limit_over">"De camera kan niet meer worden geregistreerd. 
+De geregistreerde camera's annuleren."</string>
+    <string name="msg_cannot_restart_remote_wakeup">"Door de status van de camera kan deze functie niet worden gebruikt.
+De camera mag niet in gebruik zijn.
+Controleer het verbindingstoegangspunt in de WiFi-instellingen, als u via WiFi met de camera bent verbonden."</string>
+    <string name="msg_cannot_switch_current_sd">Kan niet omschakelen.</string>
+    <string name="msg_changed_target_content_highlight">Overgeschakeld naar video’s die gebruikt kunnen worden met de functie Highlight weergave.</string>
+    <string name="msg_changed_target_content_phcol">"Overgeschakeld naar video's die gebruikt kunnen worden met de functie Highlight fotocollage."</string>
+    <string name="msg_cloud_backup_ble_disconnect">De Bluetooth-verbinding met de camera is verbroken.</string>
+    <string name="msg_cloud_backup_camera_busy">Als de camera wordt bediend, kan deze functie op dit ogenblik niet worden gebruikt.</string>
+    <string name="msg_cloud_backup_camera_busy_remote">Verbreek de Wi-Fi-verbinding van de camera.</string>
+    <string name="msg_cloud_backup_cannot_start">Back-up kan niet worden gestart</string>
+    <string name="msg_cloud_backup_communicate_fail">Communicatie met de camera is niet mogelijk.</string>
+    <string name="msg_cloud_backup_communication_error">"Communicatie met de camera is niet mogelijk. 
+Selecteer hem opnieuw."</string>
+    <string name="msg_cloud_backup_conection_test_cancel">Verbindingstest geannuleerd.</string>
+    <string name="msg_cloud_backup_conection_test_fail">Verbindingstest mislukt.</string>
+    <string name="msg_cloud_backup_conection_test_success">Verbindingstest voltooid.</string>
+    <string name="msg_cloud_backup_conection_test_testing_android">Verbinding wordt getest...(%1$d/%2$d)</string>
+    <string name="msg_cloud_backup_doing">Back-up naar cloud door de camera bezig...</string>
+    <string name="msg_cloud_backup_finish">Back-up naar cloud voltooid door de camera.</string>
+    <string name="msg_cloud_backup_finish_images">[%d opname(n)]</string>
+    <string name="msg_cloud_backup_no_ap">Toegangspunt is niet geregistreerd in de camera. Registreer het toegangspunt.</string>
+    <string name="msg_cloud_backup_not_support">Back-up wordt niet ondersteund</string>
+    <string name="msg_cloud_backup_not_working">Back-up wordt gestopt...</string>
+    <string name="msg_cloud_backup_setting">"Back-up afbeeldingen van de camera naar de cloud via het toegangspunt. 
+Om de instellingen voor back-up naar de cloud te configureren, schakel de stroomvoorziening van de camera in en maak vervolgens verbinding via Bluetooth."</string>
+    <string name="msg_cloud_backup_setting_old">"Back-up afbeeldingen van de camera naar de cloud via het toegangspunt. 
+Om de instellingen voor back-up naar de cloud te configureren, schakel de stroomvoorziening van de camera in."</string>
+    <string name="msg_cloud_backup_start">Back-up naar cloud gestart door de camera.</string>
+    <string name="msg_cloud_backup_start_fail">Back-up kan niet worden gestart.</string>
+    <string name="msg_cloud_backup_terminate">Back-up naar cloud gestopt door camera.</string>
+    <string name="msg_cloud_backup_to_finish">Back-up van %s is voltooid</string>
+    <string name="msg_cloud_backup_to_target">Back-up van %s is bezig...</string>
+    <string name="msg_cloud_backup_to_terminate">Back-up van %s is gestopt</string>
+    <string name="msg_cloud_backup_upload_target">Uploadbestemming</string>
+    <string name="msg_cloud_no_connecting">Camera is niet verbonden</string>
+    <string name="msg_cmn_attention">Let op</string>
+    <string name="msg_communication_error_occurred">Fout tijdens communicatie met de camera.</string>
+    <string name="msg_complete_id_sync">Dezelfde LUMIX CLUB-aanmeld-id als de camera is geregistreerd.</string>
+    <string name="msg_confirm_auto_transfer_receive">Wilt u met een andere smartphone verbinden en op die smartphone beelden ontvangen?</string>
+    <string name="msg_confirm_communication_env">Controleer of er een probleem is met de communicatieomgeving.</string>
+    <string name="msg_confirm_network_connection">Controleer de verbinding.</string>
+    <string name="msg_confirm_selected_function">Controleer de functie.</string>
+    <string name="msg_connect_ap_on_wifi_setting">Sluit aan op het onderstaande toegangspunt in Wi-Fi-setup.</string>
+    <string name="msg_connected">Verbonden</string>
+    <string name="msg_connected_to_camera">Verbinding gemaakt met camera.</string>
+    <string name="msg_connecting">Verbinden...</string>
+    <string name="msg_connecting_camera">De camera [%s] wordt verbonden.</string>
+    <string name="msg_connecting_camera_is_lumix_sync">Gebruik [LUMIX Sync] voor de camera om verbinding mee te maken.</string>
+    <string name="msg_connecting_to_camera">Verbinding maken met camera.</string>
+    <string name="msg_connecting_to_camera1">Verbinding maken met camera.</string>
+    <string name="msg_connection_duplicated">"De camera is al in gebruik.
+Selecteer een andere camera."</string>
+    <string name="msg_connection_duplicated_dsc">"De camera is al in gebruik.
+Selecteer een andere camera, of schakel de Wi-Fi verbinding van de camera eenmaal uit en dan weer in."</string>
+    <string name="msg_connection_failed">"Kan geen verbinding maken met de camera.
+Controleer de Wi-Fi-instellingen."</string>
+    <string name="msg_connection_nosupport_camera">Niet-ondersteund apparaat.</string>
+    <string name="msg_connection_test_phase_four">Er is een communicatiefout opgetreden.</string>
+    <string name="msg_connection_test_phase_one">Kon niet worden verbonden met het toegangspunt.</string>
+    <string name="msg_connection_test_phase_three">Er is een communicatiefout opgetreden.</string>
+    <string name="msg_connection_test_phase_two">Kon geen verbinding maken met de server.</string>
+    <string name="msg_connection_test_phase_zero">Kan draadloos toegangspunt niet vinden.</string>
+    <string name="msg_connectl_next_ap">Verbind met het onderstaande toegangspunt.</string>
+    <string name="msg_cookie_policy_agreement">De gebruiksvoorwaarden voor de app worden automatisch naar de server verstuurd. Deze instelling kan later gewijzigd worden.</string>
+    <string name="msg_create_folder_error">Creëren van een map niet mogelijk</string>
+    <string name="msg_delete_camera_registration">Registratie annuleren?</string>
+    <string name="msg_delete_camera_registration_with_pairing">"De registratie is geannuleerd.
+Geef ook de koppeling op de camera vrij."</string>
+    <string name="msg_disable_shoot">Opname niet mogelijk</string>
+    <string name="msg_disconnect_camera">De verbinding met de camera is verbroken.</string>
+    <string name="msg_disconnectd_ssid">De verbinding met %s is verbroken.</string>
+    <string name="msg_dlna_play_explain">"
+[Opmerking voor gebruikers die een verbinding maken tussen de camera en een DLNA-apparaat]
+Voor video's die moeten worden afgespeeld op een DLNA-compatibele tv, zet u de opnamestand op “848x480/30p(25p)”.
+
+Instelmethode:
+Selecteer “Menu” -> “Opname inst.” -> “Normale opnamestand” en selecteer vervolgens “Opn. stand” -> “848x480/30p(25p)”."</string>
+    <string name="msg_do_connect_wifi_for_regstering_camera">Om de registratie te voltooien, moet %s met Wi-Fi verbonden zijn.</string>
+    <string name="msg_enable_location_service">Stel de instelling \"Locatie \" in op AAN.</string>
+    <string name="msg_enable_wifi_direct">Schakel Wi-Fi Direct in</string>
+    <string name="msg_enable_wifi_setting_for_connection">"De camera moet met Wi-Fi zijn verbonden.
+Wi-Fi inschakelen?"</string>
+    <string name="msg_err_save_file_not_supported">Deze functie kan niet worden gebruikt omdat het beeldformaat niet wordt ondersteund op uw smartphone of tablet.</string>
+    <string name="msg_err_save_file_not_supported_or_lack_space">Deze functie kan niet worden gebruikt omdat het beeldformaat niet wordt ondersteund op uw smartphone of tablet of omdat er onvoldoende opslagruimte beschikbaar is.</string>
+    <string name="msg_err_sync_id">Het kopiëren van de LUMIX CLUB-aanmeld-id is mislukt. Controleer de verbinding met de camera.</string>
+    <string name="msg_error_af_lock">De AF+MF-functie kan niet worden gebruikt, aangezien het beeld niet scherp is.</string>
+    <string name="msg_error_connect_app_need_update">Kon geen verbinding maken met de camera. Werk deze applicatie bij.</string>
+    <string name="msg_error_connect_check_camera">Kon geen verbinding maken met de camera. Controleer de camera waarmee verbinding moet worden gemaakt.</string>
+    <string name="msg_error_connect_check_input_param">Kon geen verbinding maken met de camera. Controleer de apparaat-ID en het wachtwoord.</string>
+    <string name="msg_error_fail_to_copy_movieslideshow">Kopiëren van het gemaakte highlightbestand mislukt. Probeer de highlight opnieuw te maken door de highlight in een lagere beeldkwaliteitsindeling op te slaan.</string>
+    <string name="msg_error_homemon_disconnected">De verbinding met de camera is verbroken. Wacht een ogenblikje en probeer het dan opnieuw.</string>
+    <string name="msg_error_login">Aanmelden mislukt.</string>
+    <string name="msg_error_matanity_autoreview_reconnect">"De verbinding met de camera werd verbroken tijdens controle van de gemaakte foto. 
+De gemaakte foto werd automatisch opgeslagen."</string>
+    <string name="msg_error_matanity_capture_full">Opnemen is niet mogelijk, omdat het maximumaantal scènes al is opgenomen. Maak een nieuw Stop Motion-project.</string>
+    <string name="msg_error_matanity_create_project_full">Er kan geen nieuwe Stop Motion-foto worden gemaakt omdat de datummap en de opnamegroep voor Stop Motion al vol is.</string>
+    <string name="msg_error_pantilter_playmode">Deze functie kan niet worden gebruikt terwijl de Afstand Pan Tilt Cradle is aangesloten.</string>
+    <string name="msg_error_picmate">Fout tijdens communicatie met LUMIX CLUB.</string>
+    <string name="msg_error_picmate_agreement">Deze functie is niet beschikbaar omdat de gebruiksvoorwaarden niet konden worden verkregen.</string>
+    <string name="msg_error_picture_jump">Fout bij uploaden. Controleer of u toegang hebt tot internet.</string>
+    <string name="msg_error_picture_jump_invalid_data">Het opgenomen beeld kan niet worden geüpload, omdat de gegevens niet konden worden gelezen.</string>
+    <string name="msg_error_picture_jump_need_check_application">"Beelden overzetten mislukt. 
+Controleer of de toepassing op de overdrachtsbestemming is geïnstalleerd."</string>
+    <string name="msg_error_picture_jump_need_check_picmateserver_av">Beelden uploaden mislukt. Controleer of u de registratie van uw AV-toestel bij de LUMIX CLUB hebt voltooid.</string>
+    <string name="msg_error_regist">"Nieuwe registratie mislukt.
+Voer een reeks van 8 – 16 tekens in
+(gebruik zowel letters als cijfers)."</string>
+    <string name="msg_error_regist_password_length">"Voer een reeks van 8 – 16 tekens in
+(gebruik zowel letters als cijfers)."</string>
+    <string name="msg_error_setting_av">"Registratie AV-apparaat mislukt.
+Bevestig dat het ingevoerde adresnummer/toegangsnummer bij LUMIX CLUB geregistreerd is.
+Zie voor meer informatie de gebruiksaanwijzing van het gebruikte AV-apparaat."</string>
+    <string name="msg_error_setting_cloud">Cloud-synchr. instellen mislukt.</string>
+    <string name="msg_error_upload_not_internet">Kan geen bestanden uploaden, want er is geen internetverbinding.</string>
+    <string name="msg_eula_agreement_new">"Om deze toepassing te gebruiken, moet u akkoord gaan met de gebruiksvoorwaarden.
+Als u akkoord gaat, tik op de knop \"Akkoord \"."</string>
+    <string name="msg_eula_agreement_update">"De gebruiksvoorwaarden van deze toepassing werden bijgewerkt.
+U moet akkoord gaan met de gebruiksvoorwaarden om deze toepassing te blijven gebruiken.
+Als u akkoord gaat, tik op de knop \"Akkoord \"."</string>
+    <string name="msg_file_copy_error_occurred">Er is een fout opgetreden tijdens het kopiëren van beelden.</string>
+    <string name="msg_file_copying">Bestand(en) kopiëren...</string>
+    <string name="msg_file_uploading">Bestand(en) verzenden...</string>
+    <string name="msg_focus_select_change_focus_mode">Gebruik AF-stand voor post focus.</string>
+    <string name="msg_focus_select_change_pint_position">De focus positie is veranderd door een handeling. De opname is gestopt.</string>
+    <string name="msg_focus_select_shooting">Opnemen in post focus</string>
+    <string name="msg_func_not_supported">Deze functie wordt niet ondersteund door uw apparaat.</string>
+    <string name="msg_geotag_takeover_data1">Er zijn al locatiegegevens van een eerdere versie aanwezig.</string>
+    <string name="msg_geotag_takeover_data2">De locatiegegevens moeten worden bijgewerkt om ze met deze versie te gebruiken.</string>
+    <string name="msg_geotag_takeover_data3">Locatiegegevens bijwerken?</string>
+    <string name="msg_geotag_takeover_delete">Door een eerdere versie opgenomen locatiegegevens wissen?</string>
+    <string name="msg_geotag_takeover_executing">Locatiegegevens bijwerken…</string>
+    <string name="msg_geotag_takeover_not_delete">Niet wissen</string>
+    <string name="msg_high_temperature_warning">De camera kan niet langer ingeschakeld blijven als gevolg van oververhitting. De camera wordt UIT gezet.</string>
+    <string name="msg_howto_end_exposure">Tik op de opnameknop om de belichting te annuleren.</string>
+    <string name="msg_howto_picjump_setting">U kunt als volgt \"Fotodeel \"-instellingen opgeven.</string>
+    <string name="msg_hrs_image_creating">Creeer Hoge Resolutie beeld</string>
+    <string name="msg_input_all_to_complete">Druk op Voltooien als u alle items hebt voltooid.</string>
+    <string name="msg_input_all_to_login">Druk op “Aanmelden” nadat alle velden zijn ingevuld.</string>
+    <string name="msg_input_all_to_regist">Druk op “Registreren” nadat alle velden zijn ingevuld.</string>
+    <string name="msg_input_all_to_register">Druk op “Registreren” nadat alle velden zijn ingevuld.</string>
+    <string name="msg_input_all_to_setting">Druk op “Set” nadat alle velden zijn ingevuld.</string>
+    <string name="msg_invalid_camera_nfc_setting">De NFC-instellingen op de camera zijn ongeldig. Corrigeer de instellingen.</string>
+    <string name="msg_lc_ready">"De camera maakt een
+zwart framebeeld aan voor
+ruisreductie nadat op de
+sluiterknop is gedrukt."</string>
+    <string name="msg_lc_start">"Samenstelling Live View
+start nadat op de
+sluiterknop is gedrukt."</string>
+    <string name="msg_lc_waiting">"Zwart framebeeld aanmaken
+voor ruisreductie.
+Een ogenblikje."</string>
+    <string name="msg_lc_waiting_nr">Bezig met verwerken</string>
+    <string name="msg_lc_waiting_nr_old">"Ruisreductie is bezig.
+Een ogenblikje."</string>
+    <string name="msg_liveview_lens_warning">"Overgaan naar opnamemodus?
+(De lens kan uitschuiven.)"</string>
+    <string name="msg_location_service_warning">"Locatiegegevens kunnen niet worden verkregen.
+Schakel [Locatievoorzieningen] in."</string>
+    <string name="msg_location_service_warning_notify">Locatiegegevens kunnen niet worden verkregen.</string>
+    <string name="msg_login_password_diff">Wachtwoord komt niet overeen.</string>
+    <string name="msg_loop_lack_of_remain">Onvoldoende capaciteit op de kaart. U hebt ten minste 60 resterende minuten nodig om in deze modus op te nemen.</string>
+    <string name="msg_loop_rec_stop">De opname is automatisch gestopt, aangezien er 24 uur verstreken zijn sinds het begin van de opname.</string>
+    <string name="msg_matanity_cannot_use">"Deze functie kan niet worden gebruikt terwijl u gemaakte foto's bevestigt."</string>
+    <string name="msg_matanity_change_confirm">"Het huidige project wordt beëindigd en de opname wordt als nieuw project uitgevoerd.
+Weet u zeker dat u door wilt gaan?"</string>
+    <string name="msg_media_format_error_need_reformat">Formatteren mislukt. Deze SD-kaart moet opnieuw worden geformatteerd.</string>
+    <string name="msg_media_format_finished">Formatteren voltooid.</string>
+    <string name="msg_movie_wifi_connecting">Verbinden...</string>
+    <string name="msg_movieslideshow_settings">"De app kan automatisch hoogtepunten selecteren van de scènes die u hebt opgenomen en deze opslaan met toegevoegde effecten.
+U kunt de effecten wijzigen door de instellingen te wijzigen."</string>
+    <string name="msg_movieslideshow_settings_title">Highlights maken</string>
+    <string name="msg_need_camera_time_setting">Stel de tijd in op de camera.</string>
+    <string name="msg_need_picmate_id">Aangezien dit programma een service gebruikt die is gekoppeld aan LUMIX CLUB-services voor het uploaden naar webservices, moet u akkoord gaan met de voorwaarden van de LUMIX CLUB-services om bestanden te kunnen uploaden naar webservices.</string>
+    <string name="msg_need_picmate_id_input">Geregistreerde aanmeld-id invoeren</string>
+    <string name="msg_need_picmate_id_regist">Een nieuwe aanmeld-id aanvragen</string>
+    <string name="msg_need_power_on_for_sd_card_restoration">"Een SD-kaartfout was gedetecteerd, maar de gegevensbeheerinformatie kan niet worden hersteld, omdat de batterij van de camera bijna leeg is. Laad de batterij op. 
+Druk op OK om de camera uit te schakelen."</string>
+    <string name="msg_network_invalid_ap_ssid">De SSID mag slechts alfanumerieke tekens en symbolen van één byte bevatten. (1-32 tekens.)</string>
+    <string name="msg_network_invalid_ap_ssid_pw">Het wachtwoord mag slechts alfanumerieke tekens en symbolen van één byte bevatten. (0, 5 of 8-64 tekens.)</string>
+    <string name="msg_network_invalid_camera_ssid">De SSID mag slechts alfanumerieke tekens en symbolen van één byte bevatten. (1-32 tekens.)</string>
+    <string name="msg_network_invalid_camera_ssid_pw">Het wachtwoord mag slechts alfanumerieke tekens en symbolen van één byte bevatten. (8-64 tekens.)</string>
+    <string name="msg_network_invalid_ssid_or_pass">Onjuiste SSID of wachtwoord.</string>
+    <string name="msg_nfc__movie_display">Maak Wi-Fi-verbinding met deze smartphone?</string>
+    <string name="msg_nfc__movie_display_v2">Via Wi-Fi verbinding maken met deze smartphone?</string>
+    <string name="msg_nfc_after_movie_work">Raak vervolgens het NFC-teken op het apparaat aan om opnieuw een verbinding met uw smartphone te maken.</string>
+    <string name="msg_nfc_cancel_camera_state_confirm">Wordt “%s” weergegeven op de camera?</string>
+    <string name="msg_nfc_complete">NFC-verwerking met succes voltooid.</string>
+    <string name="msg_nfc_de_touch">NFC-aanraakverbinding</string>
+    <string name="msg_nfc_explain">Als het aan te sluiten apparaat compatibel is met NFC, raakt u het NFC-teken aan de zijkant van het apparaat met uw smartphone aan.</string>
+    <string name="msg_nfc_explain_tmp">Als u een NFC-compatibel model gebruikt, tikt u met uw apparaat tegen de camera.</string>
+    <string name="msg_nfc_failed_touch">Aanraken mislukt. Afhankelijk van de gebruiksomstandigheden van de camera is aanraken via NFC niet altijd mogelijk. Selecteer in de lijst het apparaat waarmee u verbinding wilt maken.</string>
+    <string name="msg_nfc_failed_touch_camera_reject">De verbinding werd geweigerd.</string>
+    <string name="msg_nfc_failed_touch_invalid_camera">Niet-ondersteund apparaat.</string>
+    <string name="msg_nfc_failed_touch_invalid_content">"Aanraken mislukt.
+De NFC-functie werkt mogelijk niet, afhankelijk van de gebruiksomstandigheden van de camera."</string>
+    <string name="msg_nfc_failed_touch_invalid_data">"Aanraken mislukt.
+De benodigde informatie kon niet verkregen worden."</string>
+    <string name="msg_nfc_failed_touch_invalid_io_exception">"Aanraken mislukt.
+Het aanraken is mogelijk onderbroken tijdens de NFC-verwerking. Raak wat langer aan."</string>
+    <string name="msg_nfc_failed_touch_other_error">Aanraken mislukt.</string>
+    <string name="msg_nfc_failed_touch_power_off_setting">Zet de camera AAN en raak vervolgens opnieuw aan.</string>
+    <string name="msg_nfc_failed_touch_setting_off">Schakel de NFC-functie op de camera in en raak vervolgens opnieuw aan.</string>
+    <string name="msg_nfc_failed_touch_share_invalid_content">"Aanraken mislukt.
+Het beeld wordt mogelijk niet ondersteund. Selecteer een ander beeld en probeer opnieuw aan te raken."</string>
+    <string name="msg_nfc_movie_work">*Als “%s” wordt weergegeven op het lcd-scherm van de aangesloten camera, selecteert u “JA” en raakt u de camera vervolgens met uw smartphone aan.</string>
+    <string name="msg_nfc_movie_work_v2">* Als “%s” wordt weergegeven op het lcd-scherm van de aan te sluiten camera, selecteert u “JA” en raakt u de camera dan opnieuw aan met uw smartphone.</string>
+    <string name="msg_nfc_not_work_explain">Als het niet NFC-compatibel is, wacht u een ogenblikje.</string>
+    <string name="msg_nfc_touch_failed">Geen verbinding met de camera. Raak deze opnieuw aan.</string>
+    <string name="msg_nfc_touch_same_camera">Raak dezelfde camera opnieuw aan.</string>
+    <string name="msg_no_access_point_found">Kan draadloos toegangspunt niet vinden</string>
+    <string name="msg_no_card_inserted">Er is geen SD-kaart in de camera geplaatst.</string>
+    <string name="msg_no_connecting">Niet verbonden</string>
+    <string name="msg_no_contents_found">Geen afspeelbare inhoud gevonden.</string>
+    <string name="msg_no_contents_found_for_select">Geen selecteerbare inhoud gevonden.</string>
+    <string name="msg_no_network_connection">Niet verbonden met het netwerk (%s).</string>
+    <string name="msg_non_sync_diff_id">"Verschillende LUMIX CLUB aanmeld-id's zijn al ingesteld voor de camera en dit programma."</string>
+    <string name="msg_non_sync_not_exist_id">Geen LUMIX CLUB-aanmeld-id is ingesteld voor de camera en dit programma.</string>
+    <string name="msg_not_connected">Niet verbonden</string>
+    <string name="msg_not_found_copy_target">Er zijn geen overeenkomende beelden om te kopiëren.</string>
+    <string name="msg_not_input_password">Geen wachtwoord ingevoerd. Wilt u de instellingen toch toepassen?</string>
+    <string name="msg_not_supported_by_os_version">Deze functie wordt niet ondersteund door het huidige besturingssysteem van uw apparaat.</string>
+    <string name="msg_now_camera_geotag_write_to_picture">Verbinding is niet mogelijk, aangezien de camera locatie-informatie verzendt.</string>
+    <string name="msg_now_cloud_downloading">Pas gedetecteerde beelden downloaden...</string>
+    <string name="msg_now_connecting">Verbinding maken...</string>
+    <string name="msg_now_connecting_to_camera">Verbinding maken met camera...</string>
+    <string name="msg_now_connecting_to_camera_and_waiting_image">Verbinding maken met camera of wachten op beelden die van de camera worden verzonden.</string>
+    <string name="msg_now_connecting_to_network">Verbinding maken met netwerk...</string>
+    <string name="msg_now_id_syncing">De LUMIX CLUB-aanmeld-id kopiëren...</string>
+    <string name="msg_now_reate_stopmotion_video">Video wordt gemaakt...</string>
+    <string name="msg_now_saving_image">Beelden worden geïmporteerd…</string>
+    <string name="msg_now_saving_movie">Video’s worden geïmporteerd…</string>
+    <string name="msg_now_searching">Zoeken...</string>
+    <string name="msg_now_searching_camera_and_select_wifi">"Camera zoeken…
+Sluit de dialoog/app en kies uit de Wi-Fi lijst de camera-SSID voor directe verbinding."</string>
+    <string name="msg_now_searching_camera_and_select_wifi_and_stable_wifi_off">"Camera zoeken…
+Sluit de dialoog/app en kies uit de Wi-Fi lijst de camera-SSID voor directe verbinding."</string>
+    <string name="msg_now_searching_camera_and_waiting_image">"Zoeken naar de camera
+of wachten op beelden die van de camera worden verzonden."</string>
+    <string name="msg_now_searching_camera_and_waiting_image_and_select_wifi">"Zoekend of wachtend tot de camera beelden verzendt. 
+Sluit de dialoog/app en kies uit de Wi-Fi lijst de camera-SSID voor directe verbinding."</string>
+    <string name="msg_now_searching_camera_and_waiting_image_and_select_wifi_and_stable_wifi_off">"Zoekend of wachtend tot de camera beelden verzendt. 
+Sluit de dialoog/app en kies uit de Wi-Fi lijst de camera-SSID voor directe verbinding."</string>
+    <string name="msg_now_searching_for_camera">Camera zoeken...</string>
+    <string name="msg_now_searching_for_network">Netwerk zoeken...</string>
+    <string name="msg_now_snapmovie_creating">Snapfilm wordt gemaakt…</string>
+    <string name="msg_now_webservice_loading">Informatie ophalen in andere Web-services van LUMIX CLUB...</string>
+    <string name="msg_occurred_communication_error">Er is een communicatiefout opgetreden.</string>
+    <string name="msg_operate_camera_to_wait_pairing">Bedien de camera om hem op stand-by in te stellen voor \"Koppelen \".</string>
+    <string name="msg_pantilter_check_range">Verbinding is niet mogelijk, omdat de camera een Opname Bereik Controle uitvoert.</string>
+    <string name="msg_pantilter_play_confirm">Automatische bediening pauzeren?</string>
+    <string name="msg_phcol_able_mk_phcol">"U kunt uitgesneden foto's gebruiken om een fotocollage te maken."</string>
+    <string name="msg_phcol_confirm_exit">Afsluiten zonder de huidige foto op te slaan?</string>
+    <string name="msg_phcol_folder_create_error">"Map maken mislukt.
+Voer een andere mapnaam in en probeer het opnieuw."</string>
+    <string name="msg_phcol_folder_exist_warn">"De opgegeven mapnaam bestaat al. Wilt u de foto's aan die map toevoegen?"</string>
+    <string name="msg_phcol_folder_input_warn">Voer de mapnaam in met maximaal %d tekens van één byte.</string>
+    <string name="msg_phcol_warning_select_folder">De informatie voor de geselecteerde beelden wordt gewist. Weet u zeker dat u door wilt gaan?</string>
+    <string name="msg_picmate_size_over">Kan het geselecteerde beeld niet uploaden, want het is te groot.</string>
+    <string name="msg_please_off_auto_transfer">Schakel de instelling [Autom. overzetten] van de camera uit.</string>
+    <string name="msg_pre_copy_content_to_local">"Afspelen is niet altijd mogelijk op uw smartphone, afhankelijk van het model.
+Kopiëren?"</string>
+    <string name="msg_pre_copy_exclude_content">Beelden in formaten die niet worden ondersteund door de smartphone worden overgeslagen. Wilt u doorgaan?</string>
+    <string name="msg_pre_shoot1">"Opname met SH1 PRE (supersnelle Pre-Burst) met camerasluiter.
+SH1 (supersnelle burst) kan worden opgenomen met deze toepassing."</string>
+    <string name="msg_pre_shoot2">"Opname met SH2 PRE (supersnelle Pre-Burst) met camerasluiter.
+SH2 (supersnelle burst) kan worden opgenomen met deze toepassing."</string>
+    <string name="msg_prerec_to_disable">"Voorburst gestopt.
+
+Laat de camera afkoelen."</string>
+    <string name="msg_privacy_notice_agreement">De gebruiksvoorwaarden voor de app worden automatisch naar de server verstuurd. Deze instelling kan later gewijzigd worden.</string>
+    <string name="msg_pwless_authentification_deny">Camera (%s) heeft de verbinding geweigerd.</string>
+    <string name="msg_pwless_authentification_fail">Kon geen verbinding maken met camera (%s).</string>
+    <string name="msg_pwless_other_sp_authentification">Camera (%s) is met een andere smartphone verbonden.</string>
+    <string name="msg_pwless_wait_authentification1">Camera (%s) controleren…</string>
+    <string name="msg_pwless_wait_authentification2">Bedien de camera om verbinding te maken.</string>
+    <string name="msg_qr_confirm">Het apparaat waarmee verbinding gemaakt wordt, moet compatibel zijn met de functie voor het lezen van QR-code. Doorgaan?</string>
+    <string name="msg_qr_explain">Tik op de volgende knop als uw apparaat een QR-scanner heeft.</string>
+    <string name="msg_qrcode_warning_do_not_scan_remoteqr1">Als u de QR-code voor de functie Home Monitor wilt scannen, opent u het menu en selecteert u Toepassingsfunctie > H. Monitor > Verbind.best. inst. en drukt u vervolgens op de knop QR-code.</string>
+    <string name="msg_rating_avchd_restriction">"Afbeeldingen die kunnen worden geconfigureerd naar ★5 zullen alleen worden geconfigureerd naar ★5. 
+Wilt u doorgaan?"</string>
+    <string name="msg_rating_clear_multi_protect">Beschermde afbeeldingen werden niet vrijgegeven.</string>
+    <string name="msg_rating_clear_multi_protect_unsupport">"%d foto's kunnen niet worden ingesteld."</string>
+    <string name="msg_rating_set_multi_protect_unsupport">"%d foto's kunnen niet worden ingesteld."</string>
+    <string name="msg_rating_set_single_protect">Deze foto is beveiligd.</string>
+    <string name="msg_rating_set_single_unsupport">Kan op deze foto niet ingesteld worden.</string>
+    <string name="msg_raw_image_warning">Afhankelijk van het besturingssysteem van de smartphone worden RAW-bestanden mogelijk niet correct weergegeven.</string>
+    <string name="msg_recording_slowmotion_mode">Beeld en geluid kunnen niet worden weergegeven tijdens het opnemen van een video in slow motion.</string>
+    <string name="msg_regist_unsent_upload_with_internet">Geselecteerde beelden zijn geregistreerd in de lijst met niet-verzonden beelden. Upload de bestanden uit de lijst met niet-verzonden beelden na verbinding gemaakt te hebben met internet.</string>
+    <string name="msg_regstering_camera">Bezig met registreren van %s...</string>
+    <string name="msg_rejected_to_camera">Verbinding met camera geweigerd.</string>
+    <string name="msg_release_internet_connection">Verbreek de internetverbinding in de Bluetooth-setup en verbind daarna met het toegangspunt hieronder in de Wi-Fi-setup.</string>
+    <string name="msg_remote_nfc_failed_touch">Aanraken mislukt. Afhankelijk van de gebruiksomstandigheden van de camera is aanraken via NFC niet altijd mogelijk.</string>
+    <string name="msg_remoteaccess_confirm_finish">Verlaat Huis Monitor?</string>
+    <string name="msg_remoteaccess_error_check_input_param">Bevestig de ID en het wachtwoord van de camera waarmee u een verbinding wilt maken.</string>
+    <string name="msg_remoteaccess_error_check_internet">Controleer of het toegangspunt voor het draadloze netwerk waarmee de camera een verbinding heeft, verbonden is met internet.</string>
+    <string name="msg_remoteaccess_error_problem_on_network">Normale communicatie met de camera is momenteel niet mogelijk, of uw netwerkomgeving staat het gebruik van de functie Home Monitor niet toe.</string>
+    <string name="msg_remoteaccess_error_trafficy_line">De lijn is bezet. Probeer het later opnieuw.</string>
+    <string name="msg_remoteview_quality_qvga">"Beeldkwaliteit livebesturing is [QVGA].
+U kunt de instelling [Beeldkwal. livebest.] wijzigen onder [Inst. livebesturing] in the [Menu]."</string>
+    <string name="msg_request_check_wifi_setting">Camera niet gevonden. Controleer Wi-Fi-setup.</string>
+    <string name="msg_retry">Probeer opnieuw.</string>
+    <string name="msg_savecomplete_ask_playmode_android">Inhoud opgeslagen in galerij. Stoppen met bewerken en bevestigen?</string>
+    <string name="msg_scene_select">Scèneselectie</string>
+    <string name="msg_sd_card_under_restoration">Fout in gegevensbeheerinformatie. De gegevensbeheerinformatie wordt hersteld.</string>
+    <string name="msg_searching_camera_on_ssid">Zoeken naar camera verbonden met %s...</string>
+    <string name="msg_select_camera">Selecteer een camera</string>
+    <string name="msg_select_camera_to_control">Selecteer de camera die moet verbonden worden.</string>
+    <string name="msg_select_connection">Selecteer de verbindingsmethode</string>
+    <string name="msg_select_content_over_time">Dit beeld kan niet worden geselecteerd omdat de maximale duur van de beelden die kunnen worden samengevoegd, is overschreden.</string>
+    <string name="msg_select_control_camera">Als de camera werd bediend en %s is geselecteerd, selecteer dan \"Bedienen met camera \".</string>
+    <string name="msg_select_function">Selecteer een functie</string>
+    <string name="msg_selected_function_invalid">De specifieke functie is niet op de camera geselecteerd.</string>
+    <string name="msg_send_all">Alles uploaden?</string>
+    <string name="msg_send_ugase_failed">Kon gebruiksvoorwaarden niet versturen.</string>
+    <string name="msg_setup_easy_wifi_overwrite">De apparaat-ID voor Home Monitor is in de smartphone geregistreerd. Wilt u deze overschrijven?</string>
+    <string name="msg_setup_easy_wifi_registered">De apparaat-ID voor Home Monitor is in de smartphone geregistreerd.</string>
+    <string name="msg_snapmovie_confirm_exit">Afsluiten zonder huidige video op te slaan?</string>
+    <string name="msg_split_delete_back">Achter</string>
+    <string name="msg_split_delete_front">Voor</string>
+    <string name="msg_split_delete_return">Terug</string>
+    <string name="msg_split_delete_which">Welk deel moet worden verwijderd?</string>
+    <string name="msg_ssid_init_need_change">De instellingen voor SSID en Wi-Fi-wachtwoord van de camera worden op de standaardwaarden gezet. Het verdient aanbeveling de SSID en het Wi-Fi-wachtwoord te wijzigen. Als u deze instellingen wilt wijzigen, selecteert u “Wi-Fi-inst. camera” → “SSID-inst. camera”.</string>
+    <string name="msg_ssid_label">Camera-SSID:</string>
+    <string name="msg_ssid_pw_valid_after_power_on">De ingestelde SSID/het ingestelde wachtwoord wordt weerspiegeld wanneer de camera UIT en vervolgens weer AAN wordt gezet of wanneer de Wi-Fi-verbinding met de camera opnieuw tot stand wordt gebracht.</string>
+    <string name="msg_stop_motion_animation_finished">Stop-motionopname is gestopt.</string>
+    <string name="msg_stop_reason_eight">Er zijn geen te back-uppen beelden.</string>
+    <string name="msg_stop_reason_five">Aanmelden is niet mogelijk. Controleer uw aanmeldings-ID en wachtwoord.</string>
+    <string name="msg_stop_reason_four">Er is een communicatiefout opgetreden. Probeer het opnieuw.</string>
+    <string name="msg_stop_reason_nine">Back-up kan niet worden gestart omdat de camera in slaapmodus is.</string>
+    <string name="msg_stop_reason_seven">Controleer de camera.</string>
+    <string name="msg_stop_reason_six">Kan geen verbinding maken met uploadbestemming. Controleer de instellingen van de uploadbestemming.</string>
+    <string name="msg_stop_reason_ten">Back-up kan niet worden gestart omdat de camera aan het opladen is.</string>
+    <string name="msg_stop_reason_two">Controleer resterend batterijvermogen.</string>
+    <string name="msg_stopmotion_disable_func">"Deze functie kan niet gebruikt worden tijdens bevestiging van gemaakte foto's."</string>
+    <string name="msg_stopmotion_new_proj_warn">Er wordt een nieuwe Stop Motion-foto gemaakt. Als u een nieuw project maakt, kunnen er geen verdere opnamen worden toegevoegd aan de huidige opnamegroep. Weet u zeker dat u door wilt gaan?</string>
+    <string name="msg_stopmotion_system_freq_error" />
+    <string name="msg_tc_backup_not_recorded">"De opnamemodus is gewijzigd.
+ Back-up voor Twin Camera kan niet worden uitgevoerd in deze opnamemodus."</string>
+    <string name="msg_tc_backup_off">Back-up voor Twin Camera wordt geannuleerd.</string>
+    <string name="msg_touch_de_geotag_disable">De NFC-functie van de camera is uitgeschakeld.</string>
+    <string name="msg_touch_de_geotag_exist_geotag">Er zijn al locatiegegevens aan dit beeld toegewezen.</string>
+    <string name="msg_touch_de_geotag_fail">Kon locatiegegevens niet naar de camera verzenden.</string>
+    <string name="msg_touch_de_geotag_invalid_screen">De camera kan geen locatiegegevens toewijzen in deze staat.</string>
+    <string name="msg_touch_de_geotag_no_data">Er zijn geen relevante locatiegegevens in de smartphone geregistreerd.</string>
+    <string name="msg_touch_de_geotag_others">Er kunnen geen locatiegegevens aan dit beeld worden toegewezen.</string>
+    <string name="msg_touch_de_geotag_protect_content">Het beeld is beveiligd.</string>
+    <string name="msg_touch_de_geotag_success">Locatiegegevens verzonden naar camera.</string>
+    <string name="msg_touch_de_geotag_unsupport">De camera ondersteunt geen toewijzing van locatiegegevens door NFC.</string>
+    <string name="msg_touch_de_geotag_unsupport_content">Er kunnen geen locatiegegevens aan dit beeld worden toegewezen.</string>
+    <string name="msg_touch_de_geotag_write_protect">De SD-kaart is tegen schrijven beveiligd.</string>
+    <string name="msg_transfer_attention">Groepsoverdracht kan duplicaten van eerder overgebrachte beelden creëren.</string>
+    <string name="msg_volume_down_in_howling">Als u een fluittoon hoort, verlaagt u het volume op uw smartphone/tablet.</string>
+    <string name="msg_vrec_stop_avchd_track_over">De opname is gestopt omdat de limieten voor de AVCHD-norm zijn bereikt.</string>
+    <string name="msg_vrec_stop_create_folder_error">Het maken van een map is mislukt. De opname kan niet worden gestart.</string>
+    <string name="msg_vrec_stop_internal_memory_full">De opname is gestopt omdat het geheugen vol is.</string>
+    <string name="msg_vrec_stop_speed_insufficient">De opname is gestopt omdat de kaart de schrijfsnelheid niet kan bijhouden.</string>
+    <string name="msg_vrec_stop_temperature_over">De opname is gestopt als gevolg van oververhitting in de camera.</string>
+    <string name="msg_vrec_stop_uplimit">Het opnemen is gestopt omdat de maximale hoeveelheid opneembare gegevens is overschreden.</string>
+    <string name="msg_warning_limit_contents">Er zijn al veel beelden opgeslagen op de SD-kaart die in de camera geplaatst is. Dit kan een instabiele werking veroorzaken.</string>
+    <string name="msg_warning_loop_rec_auto_delete">Wanneer u continuopnamen gebruikt, worden scènes die meer dan een uur geleden opgenomen zijn, automatisch gewist.</string>
+    <string name="msg_warning_loop_rec_stop_soon">De opname zal zo meteen automatisch stoppen.</string>
+    <string name="msg_warning_rec_high_temperature">"Het afspelen van video en audio wordt gestopt omdat er video wordt opgenomen.
+Raak het scherm aan om dit bericht te sluiten en terug te keren naar opnemen."</string>
+    <string name="msg_warning_remote_access_change_mode">Kan niet worden gebruikt tijdens gebruik van de Home Monitor-functie.</string>
+    <string name="msg_white_balance_set_error">De witbalans kon niet worden ingesteld.</string>
+    <string name="msg_white_balance_set_success">De witbalans is ingesteld.</string>
+    <string name="msg_wifi_disconnect_remote_watch_warning">Wanneer u de functie H. Monitor gebruikt, selecteert u “Nee”, aangezien deze functie een 3G of een andere mobiele telefoonlijn vereist.</string>
+    <string name="msg_wtc_no_camera_response">Geen reactie van camera. Controleer de camera.</string>
+    <string name="msg_wtc_no_image_sending">"Weergavestand op Draadloze Twin Camera stopt.
+Gebruik de camera om de weergavestand te starten."</string>
+    <string name="multiphoto_create">Highlight fotocollage maken</string>
+    <string name="paly_title_warning">Waarschuwing</string>
+    <string name="pantilter_cancel">Annuleren</string>
+    <string name="pantilter_check_range">Het opnamebereik wordt geverifieerd...</string>
+    <string name="pantilter_error">"Er heeft zich een probleem voorgedaan met de Afstand Pan Tilt Cradle.
+Controleer de Afstand Pan Tilt Cradle."</string>
+    <string name="pantilter_manual">Handmatige bediening uitvoeren...</string>
+    <string name="pantilter_moving_obj">Bewegende voorwerpen worden geactiveerd</string>
+    <string name="pantilter_moving_obj_pause">Bewegende voorwerpen worden gepauzeerd</string>
+    <string name="pantilter_noconnected">De verbinding met de Afstand Pan Tilt Cradle is verbroken.</string>
+    <string name="pantilter_party_auto">Party Scene wordt geactiveerd</string>
+    <string name="pantilter_party_auto_pause">Party Scene wordt gepauzeerd</string>
+    <string name="pantilter_pause">Pauze</string>
+    <string name="pantilter_preset_btn_cancel">Ann.</string>
+    <string name="pantilter_preset_btn_pause">Pauze</string>
+    <string name="pantilter_preset_btn_restart">Hrst.</string>
+    <string name="pantilter_preset_btn_stop">Stop</string>
+    <string name="pantilter_preset_home">HOME</string>
+    <string name="pantilter_preset_mode">Voorinstelposities</string>
+    <string name="pantilter_preset_moving">Positie wordt opnieuw bepaald…</string>
+    <string name="pantilter_preset_noset">N.in.</string>
+    <string name="pantilter_preset_pause">Voorinstellingen</string>
+    <string name="pantilter_preset_pos1">POS1</string>
+    <string name="pantilter_preset_pos2">POS2</string>
+    <string name="pantilter_preset_pos3">POS3</string>
+    <string name="pantilter_preset_pos4">POS4</string>
+    <string name="pantilter_preset_pos5">POS5</string>
+    <string name="pantilter_preset_regist">Voorinstellingen registreren</string>
+    <string name="pantilter_preset_round_moving">Cyclus wordt uitgevoerd…</string>
+    <string name="pantilter_preset_round_pause">Cyclus uitvoeren gepauzeerd</string>
+    <string name="pantilter_preset_round_setting">Instellingen voor uitvoering cyclus</string>
+    <string name="pantilter_preset_skip">Ovrs.</string>
+    <string name="pantilter_resetting">Oorspronkelijke punt wordt teruggezet...</string>
+    <string name="pantilter_searching">Bezig met zoeken...</string>
+    <string name="pantilter_set_home_position">"Een ogenblikje.
+ De beginpositie wordt ingesteld."</string>
+    <string name="pantilter_start">Start</string>
+    <string name="picmate_ask_delete_content">Geselecteerde beelden op LUMIX CLUB-server verwijderen?</string>
+    <string name="picmate_cloud_folder_name">LUMIX CLUB-map</string>
+    <string name="picmate_cloud_service_name">Cloud-synchr.</string>
+    <string name="picmate_command_msg_regist_error">Registratie mislukt.</string>
+    <string name="picmate_command_msg_sending">Communiceren met de server...</string>
+    <string name="picmate_command_msg_sending_error">Fout tijdens communicatie met de server.</string>
+    <string name="picmate_lumix_club">LUMIX CLUB</string>
+    <string name="picmate_msg_network">Geen verbinding met internet. Selecteer een verbindingsmethode.</string>
+    <string name="picmate_msg_network_3g">3G</string>
+    <string name="picmate_msg_network_wifi">Wi-Fi</string>
+    <string name="picmate_regist">Geregistreerd.</string>
+    <string name="picmate_regist2">(Geregistreerd.)</string>
+    <string name="picmate_service_top" />
+    <string name="picmate_sync_service_fail">Lijst met services niet gesynchroniseerd.</string>
+    <string name="picmate_sync_service_success">Lijst met services gesynchroniseerd.</string>
+    <string name="picmate_url_lang_code">ned</string>
+    <string name="picmate_wifi_direct_send_error">Verzending is niet mogelijk, want de camera is verbonden via Wi-Fi Direct.</string>
+    <string name="picturejump_copy">Ops. op smartp.</string>
+    <string name="picturejump_delete">Prull.b. (vrw.)</string>
+    <string name="picturejump_location_gallery">Galerij</string>
+    <string name="picturejump_new_av">Nieuw AV-toestel registreren</string>
+    <string name="play_3box_no_dmr_found">Afspeelapparaat niet gevonden.</string>
+    <string name="play_3box_select_dmr">Selecteer het afspeelapparaat.</string>
+    <string name="play_btn_close">Sluiten</string>
+    <string name="play_btn_continue">Doorgaan</string>
+    <string name="play_btn_no">NEE</string>
+    <string name="play_btn_untransmit_detail">Details</string>
+    <string name="play_btn_yes">JA</string>
+    <string name="play_camera_function">CAMERAFUNCTIE</string>
+    <string name="play_delete_all_content">Alles verwijderen</string>
+    <string name="play_delete_confirm_for_protect">Geselecteerde bestanden verwijderen?(Beveiligde bestanden worden niet verwijderd.)</string>
+    <string name="play_delete_with_jpeg_confirm">Geselecteerde bestand(en) wissen? (De andere bestand(en) die tegelijk zijn opgenomen worden ook gewist.)</string>
+    <string name="play_delete_with_jpeg_confirm_for_protect">"Geselecteerde bestand(en) wissen? (De andere bestand(en) die tegelijk zijn opgenomen worden ook gewist.) 
+Beschermde bestanden zullen echter niet worden gewist."</string>
+    <string name="play_highlight_format">FORMAAT</string>
+    <string name="play_highlight_media">MEDIA</string>
+    <string name="play_msg_canceling_copy">"Kopiëren geannuleerd.
+Schakel het apparaat niet uit."</string>
+    <string name="play_msg_canceling_delete">Verwijderen geannuleerd.</string>
+    <string name="play_msg_complete_delete">Verwijderen voltooid.</string>
+    <string name="play_msg_delete_data">Verwijderen uit lijst met niet-verzonden beelden?</string>
+    <string name="play_msg_delete_from_list">Bestanden zijn gewist van de lijst met niet-verzonden beelden.</string>
+    <string name="play_msg_location_service_request_enable">Beelden in filmrol kunnen niet worden weergegeven. Schakel [Locatievoorzieningen] in.</string>
+    <string name="play_msg_movie_play_error">Kon niet doorgaan met het afspelen van de video in deze toepassing. Het afspelen werd gestopt.</string>
+    <string name="play_msg_movie_play_start">Bij high-definition of lange video’s kan het afspelen worden onderbroken of niet mogelijk zijn.</string>
+    <string name="play_msg_movie_play_start2">Afhankelijk van uw model smartphone of tablet kan het normale afspelen niet mogelijk zijn.</string>
+    <string name="play_msg_reading_data">Laden...</string>
+    <string name="play_msg_send_all">"Start de upload van alle foto's/video's."</string>
+    <string name="play_msg_send_cancell">Transmissie wordt geannuleerd...</string>
+    <string name="play_msg_send_comp">Transmissie van bestanden voltooid.</string>
+    <string name="play_msg_send_err">Transmissiefout</string>
+    <string name="play_msg_send_one">De upload starten.</string>
+    <string name="play_msg_setting_step">\"Fotodeel \"-instellingen zijn niet voltooid. Geef deze instellingen op in het instelmenu.</string>
+    <string name="play_select_format">Selecteer formaat</string>
+    <string name="play_tab_btn">Afspelen</string>
+    <string name="play_unsentimageinfo_button_canceltosend">Upload annuleren</string>
+    <string name="play_unsentimageinfo_button_sendallimage">"Alle resterende foto's/video's uploaden"</string>
+    <string name="play_unsentimageinfo_button_sendcrntimage">Deze foto/video opnieuw uploaden</string>
+    <string name="play_unsentimageinfo_cell_destsite">Bestemming</string>
+    <string name="play_unsentimageinfo_cell_sendtime">Begintijd</string>
+    <string name="play_unsentimageinfo_title">Informatie</string>
+    <string name="play_unsentimagelist_title">Niet-verzonden beelden</string>
+    <string name="ply_3box_dlna_error">Afspelen op tv is niet mogelijk. Er is een fout opgetreden in de camera.</string>
+    <string name="ply_3box_mode_change_error">Afspelen op tv is niet mogelijk. Er is een fout opgetreden in de camera.</string>
+    <string name="ply_action_camera_power_off">Camera UIT</string>
+    <string name="ply_action_create_highlight">Highlights maken</string>
+    <string name="ply_action_edit_protect">SCÈNE BEVEILIGEN</string>
+    <string name="ply_action_edit_split_delete">Splits en verwijder</string>
+    <string name="ply_action_multiframephoto">Highlight fotocollage</string>
+    <string name="ply_action_tv_play">Speel af op TV</string>
+    <string name="ply_btn_cancel">Annul.</string>
+    <string name="ply_btn_select">Select.</string>
+    <string name="ply_highlight_coping">Gemaakte highlightscène wordt gekopieerd...</string>
+    <string name="ply_highlight_copy_error">Er is een fout opgetreden tijdens het kopiëren van de gemaakte highlightscène.</string>
+    <string name="ply_highlight_copy_start_error">Kon gemaakte highlightscène niet kopiëren.</string>
+    <string name="ply_highlight_create_error">Er is een fout opgetreden tijdens het maken van een highlight.</string>
+    <string name="ply_highlight_create_error_confirm_cam">Highlights kunnen niet worden gemaakt. Controleer de videocamera.</string>
+    <string name="ply_highlight_create_error_invalid_bgm">Highlight maken mislukt. De geselecteerde BGM-gegevens zijn niet compatibel of zijn beschadigd.</string>
+    <string name="ply_highlight_create_error_invalid_title_picture">Highlight maken mislukt. De geselecteerde titelbeeldgegevens zijn niet compatibel of zijn beschadigd.</string>
+    <string name="ply_highlight_create_error_no_highlight">Highlights kunnen niet worden gemaakt. Er zijn geen scènes die kunnen worden geëxtraheerd.</string>
+    <string name="ply_highlight_create_error_no_remain">Highlights kunnen niet worden gemaakt. De resterende capaciteit van het opslagmedium is onvoldoende.</string>
+    <string name="ply_highlight_create_start_error">Kon geen highlight maken.</string>
+    <string name="ply_highlight_creating">Highlight wordt gemaakt...</string>
+    <string name="ply_highlight_delete_error">Kon gemaakte highlightscène niet verwijderen.</string>
+    <string name="ply_highlight_get_sceane_info_error">Kon geen scènegegevens ophalen.</string>
+    <string name="ply_highlight_low_memory_error" />
+    <string name="ply_highlight_not_select_sceane">Er zijn geen scènes geselecteerd.</string>
+    <string name="ply_highlight_send_param_error">Er is een fout opgetreden bij de verzending van parameters tijdens het maken van een highlight.</string>
+    <string name="ply_highlight_sending_bgm">Achtergrondmuziek wordt overgebracht...</string>
+    <string name="ply_highlight_sending_title_picture">Titelbeeld wordt overgebracht...</string>
+    <string name="ply_highlight_slct_bgm">Selectie achtergrondmuziek</string>
+    <string name="ply_msg_ask_cloud_upload_max_num">Als het geselecteerde beeld wordt geüpload, worden oude beelden verwijderd omdat de uploadlimiet van de Cloud-synchr. service is overschreden.</string>
+    <string name="ply_msg_ask_cloud_upload_max_num_no">Niet uploaden</string>
+    <string name="ply_msg_ask_cloud_upload_max_num_yes">Uploaden</string>
+    <string name="ply_msg_cannnot_upload_max_num">Kan geen beelden meer uploaden, want de uploadbestemming heeft zijn limiet bereikt.</string>
+    <string name="ply_msg_cannot_upload_cloud_size_over">Kan niet uploaden. Capaciteit op de server van Cloud-synchr. service heeft limiet bereikt.</string>
+    <string name="ply_msg_cannot_upload_file_size_over">Kan het geselecteerde beeld niet uploaden, want het is te groot.</string>
+    <string name="ply_msg_cannot_upload_no_other">Kan niet uploaden. Geen geregistreerde apparaten.</string>
+    <string name="ply_msg_changed_folder">Het weergegeven beeld is gewijzigd.</string>
+    <string name="ply_msg_err_confirmation_sd">"Er is een fout opgetreden tijdens het kopiëren van beelden.
+Controleer de SD-kaart in uw smartphone/tablet."</string>
+    <string name="ply_msg_err_copy_file">Er is een fout opgetreden tijdens het kopiëren van beelden.</string>
+    <string name="ply_msg_err_copy_file_lack_of_remain">Onvoldoende vrije ruimte.</string>
+    <string name="ply_msg_err_copy_file_maybe">Het kopiëren van beelden is mogelijk mislukt.</string>
+    <string name="ply_msg_err_copy_file_not_supported">Kon niet kopiëren omdat het beeld niet door dit programma wordt ondersteund.</string>
+    <string name="ply_msg_err_copy_file_not_supported_included">Een of meer bestanden kunnen niet gekopieerd worden, omdat ze in een indeling staan die niet door deze smartphone wordt ondersteund.</string>
+    <string name="ply_msg_err_copy_file_not_supported_or_lack_space">Er is een fout opgetreden tijdens het kopiëren van beelden.</string>
+    <string name="ply_msg_err_copy_file_not_supported_or_lack_space_included">Een of meer bestanden kunnen niet gekopieerd worden, omdat ze in een indeling staan die niet door deze smartphone wordt ondersteund, of vanwege een gebrek aan vrije ruimte.</string>
+    <string name="ply_msg_err_copy_file_type_avchd">Scènes die in AVCHD-formaat zijn opgenomen, kunnen niet worden opgeslagen. Converteer de scène naar MP4-formaat op de videocamera om deze op te slaan.</string>
+    <string name="ply_msg_err_delete_file">Er is een fout opgetreden tijdens het verwijderen van beelden.</string>
+    <string name="ply_msg_select_max_num">Kan geen beelden meer selecteren.</string>
+    <string name="ply_multiphoto_create_error">Highlight fotocollage maken mislukt.</string>
+    <string name="ply_multiphoto_create_error_no_highlight">Highlight fotocollage maken mislukt. Er zijn geen scènes om op te halen.</string>
+    <string name="ply_multiphoto_creating">Highlight fotocollage wordt gemaakt...</string>
+    <string name="ply_multiphoto_foldername_error">Voer de mapnaam in met maximaal 8 tekens van één byte.</string>
+    <string name="ply_multiphoto_save">"Foto's worden opgeslagen..."</string>
+    <string name="ply_multiphoto_save_complete">"De foto's zijn opgeslagen."</string>
+    <string name="ply_phcol_change_folder">Geef de mapnaam voor opslag van de foto op</string>
+    <string name="ply_phcol_save_photo">"%d foto's worden opgeslagen op de smartphone."</string>
+    <string name="ply_phcol_title">Highlight fotocollage</string>
+    <string name="ply_phcol_title_slct_frame_title">Frameselectie</string>
+    <string name="ply_phcol_title_slct_picture">Beeldselectie</string>
+    <string name="ply_select_action_delete">vrw.</string>
+    <string name="ply_select_action_save">Opslaan</string>
+    <string name="ply_select_action_share">Delen</string>
+    <string name="psh_ntfy_babymon_dtct_ado">"Melding
+De videocamera heeft geluid waargenomen."</string>
+    <string name="psh_ntfy_babymon_start">"Melding
+Babymonitor geactiveerd."</string>
+    <string name="pstyle_color_filter_green">Groen</string>
+    <string name="pstyle_color_filter_off">Uit</string>
+    <string name="pstyle_color_filter_orange">Oranje</string>
+    <string name="pstyle_color_filter_red">Rood</string>
+    <string name="pstyle_color_filter_yellow">Geel</string>
+    <string name="qrcode_read">QR-code</string>
+    <string name="rec_angle_standard">STANDARD</string>
+    <string name="rec_angle_wide">WIDE</string>
+    <string name="rec_autoreview_finish">Afsluiten</string>
+    <string name="rec_autoreview_now">Auto review</string>
+    <string name="rec_btn_icon_display">info.</string>
+    <string name="rec_btn_icon_display_new">DISP.</string>
+    <string name="rec_btn_quick_menu">Set</string>
+    <string name="rec_delay">Delay</string>
+    <string name="rec_during_burst">"Burstfoto's worden gemaakt..."</string>
+    <string name="rec_during_exposure">Belichten...</string>
+    <string name="rec_just_a_moment">Een ogenblikje...</string>
+    <string name="rec_label_f">F</string>
+    <string name="rec_label_mf">MF</string>
+    <string name="rec_label_ss">SS</string>
+    <string name="rec_liveview_second">s</string>
+    <string name="rec_msg_4kmovie_rec_error">Kan geen 4K video opnemen indien Wi-Fi is ingeschakeld.</string>
+    <string name="rec_msg_4kphoto_error">Kan 4K-foto niet opn.bij Wi-Fi-verb.</string>
+    <string name="rec_msg_4kphoto_rec_error">Kan geen video opnemen met de Wi-Fi-verbinding.</string>
+    <string name="rec_msg_capture_failed">Opnemen mislukt.</string>
+    <string name="rec_msg_cinelike_enable">Deze toepassing kan niet worden gebruikt voor opname omdat de camera in %s-stand staat.</string>
+    <string name="rec_msg_first_action">Wees voorzichtig met de lens. Deze kan plotseling uitschuiven als u start in de opnamemodus.</string>
+    <string name="rec_msg_focusselect_error">Post focus niet te gebruiken tijdens Wi-Fi verbinding.</string>
+    <string name="rec_msg_interval_shot_mode">Deze toepassing kan momenteel niet voor opnemen worden gebruikt, omdat de camera in de intervalopnamestand staat.</string>
+    <string name="rec_msg_lack_of_memory">Onvoldoende geheugen.</string>
+    <string name="rec_msg_lack_of_memory_for_movie">De volgende opnameduur wordt ingesteld als gevolg van onvoldoende geheugen.</string>
+    <string name="rec_msg_lens_error">"Registratie mislukt.
+Controleer de camera."</string>
+    <string name="rec_msg_max_rec_time">Maximale opnameduur</string>
+    <string name="rec_msg_modechange_error">Kon niet overschakelen naar andere stand.</string>
+    <string name="rec_msg_movie_recording">Video wordt opgenomen. Bedien de camera om de opname te stoppen.</string>
+    <string name="rec_msg_need_to_extend_lens">"Draai de zoomring om
+in/uit te zoomen"</string>
+    <string name="rec_msg_not_recmovie_this_mode">Er kan geen video worden opgenomen in de huidige stand.</string>
+    <string name="rec_msg_not_supported_mode">Overgeschakeld naar normale opnamemodus omdat draadloos opnemen niet beschikbaar is in de geselecteerde opnamemodus.</string>
+    <string name="rec_msg_only_sdi_rec">"Geen geheugenkaart.
+Alleen SDI-afstandopname."</string>
+    <string name="rec_msg_recstart_err_reject">Video opnemen kan niet worden gestart.</string>
+    <string name="rec_msg_recstart_error">Video-opname kon niet worden gestart.</string>
+    <string name="rec_msg_recstop_error">Video-opname kon niet worden gestopt.</string>
+    <string name="rec_msg_sd_lock">"De geheugenkaart van deze camera is tegen schrijven beveiligd.
+Ontgrendel de beveiliging om een beeld op te nemen."</string>
+    <string name="rec_msg_ss_bulb">Opnemen is niet mogelijk, want de sluitertijd is ingesteld op Bulb.</string>
+    <string name="rec_msg_stop_live_stream">"Beeldlevering wordt gestopt.
+Controleer of het beeld van de camera is ontvangen en of de camera is aangesloten."</string>
+    <string name="rec_msg_stop_recording">Opname gestopt als gevolg van camerareactie.</string>
+    <string name="rec_msg_stop_recording_lack_memory">Opname gestopt als gevolg van onvoldoende geheugen.</string>
+    <string name="rec_msg_video_rectime_crnt">Ingestelde opnameduur</string>
+    <string name="rec_msg_wait_for_camera_temperature_down">"Tijdelijk uitgeschakeld.
+Wacht totdat de
+camera is afgekoeld."</string>
+    <string name="rec_msg_zoom_error">"Zoomen mislukt.
+Controleer de camera."</string>
+    <string name="rec_now_long_shutter_noise_reduction">Lange sluitertijd ruisreductie lopend</string>
+    <string name="rec_remain">R</string>
+    <string name="rec_remain_hour">h</string>
+    <string name="rec_remain_minute">m</string>
+    <string name="rec_remain_time_label">R</string>
+    <string name="rec_remote_voice_remain_a">%d seconden resterend</string>
+    <string name="rec_selftimer_cancel">Annul</string>
+    <string name="rec_sensitivity_gain">Gain</string>
+    <string name="rec_sensitivity_gain_semipro">GAIN</string>
+    <string name="rec_stopmotion_auto">Automatische opname</string>
+    <string name="rec_stopmotion_create_error">Er is een fout opgetreden tijdens het creëren van video.</string>
+    <string name="rec_stopmotion_create_error_confirm_cam">Het creëren van video is niet mogelijk. Controleer de camera.</string>
+    <string name="rec_stopmotion_create_error_no_remain">Het creëren van video is niet mogelijk. Er is niet genoeg vrije ruimte op het opslagmedium.</string>
+    <string name="rec_stopmotion_create_start_error">Starten van het creëren van video is mislukt.</string>
+    <string name="rec_stopmotion_create_video">Stop-motionvideo</string>
+    <string name="rec_stopmotion_creating">Creëren van video...</string>
+    <string name="rec_stopmotion_discontinuation">Het opnemen van beelden met Stop-motionanimatie kon niet worden voortgezet en werd onderbroken.</string>
+    <string name="rec_stopmotion_framerate">Beeldfrequentie</string>
+    <string name="rec_stopmotion_interval">Opname-interval</string>
+    <string name="rec_stopmotion_iterval_time">%d sec.</string>
+    <string name="rec_stopmotion_not_contents">Er zijn geen beelden met Stop-motionanimatie. Een nieuwe opname starten?</string>
+    <string name="rec_stopmotion_order_normal">NORMAL</string>
+    <string name="rec_stopmotion_order_reverse">REVERSE</string>
+    <string name="rec_stopmotion_order_setting">Serie</string>
+    <string name="rec_stopmotion_over_contents">Het opnemen van beelden met Stop-motionanimatie is niet meer mogelijk.</string>
+    <string name="rec_stopmotion_select_continue">Aanvullend</string>
+    <string name="rec_stopmotion_select_recorded_animation">"Opgenomen Stop-motionanimatie-foto's selecteren"</string>
+    <string name="rec_stopmotion_select_start">Nieuw</string>
+    <string name="rec_stopmotion_send_param_error">Er is een fout opgetreden tijdens het zenden van de parameters voor het creëren van video.</string>
+    <string name="rec_stopmotion_start">Start</string>
+    <string name="rec_stopmotion_title">Stop-motionanimatie</string>
+    <string name="rec_stopmotion_video_quality_setting">Fotomode</string>
+    <string name="rec_stopmotion_warning_automode">Tik op de opnameknop om de opname te starten.</string>
+    <string name="rec_tab_btn">Livebesturing</string>
+    <string name="remain_marking_number">R %d</string>
+    <string name="scn_gid_backlight_portrait">"Bij tegenlicht wordt
+het beeld helderder.
+Portretten worden
+zachter met een
+extra vleugje
+stralend licht."</string>
+    <string name="scn_gid_backlight_portrait_onepoint">"Kies een opnamepositie
+waarbij uw onderwerp
+van achteren verlicht
+wordt."</string>
+    <string name="scn_gid_backlight_portrait_recom_lens">Heldere lens</string>
+    <string name="scn_gid_backlight_portrait_step_up">"Pas de belichting aan
+om het luchtige effect
+nog te versterken."</string>
+    <string name="scn_gid_backlight_strobe">"Buitenshuis wordt de
+flits gebruikt om het
+gezicht gelijkmatiger
+te verlichten."</string>
+    <string name="scn_gid_backlight_strobe_onepoint">Klap de flits uit.</string>
+    <string name="scn_gid_backlight_strobe_recom_lens">Standaard zoom lens</string>
+    <string name="scn_gid_backlight_strobe_step_up">"Pas de belichting aan
+om het gezicht helder
+weer te geven."</string>
+    <string name="scn_gid_blue_sky">"Maakt opnamen bij
+volle zon helderder
+met een stralende
+blauwe hemel."</string>
+    <string name="scn_gid_blue_sky_onepoint">"Zoek een elegant
+evenwicht tussen
+de blauwe lucht en
+de wolkenpartijen."</string>
+    <string name="scn_gid_blue_sky_recom_lens">"Groothoeklens
+Telelens"</string>
+    <string name="scn_gid_blue_sky_step_up">"Pas de belichting aan
+om de sfeer
+aan te passen."</string>
+    <string name="scn_gid_clear_skin">"Maakt een helder
+portret met zachte,
+jonge huidtinten."</string>
+    <string name="scn_gid_clear_skin_onepoint">"Breng het bovenlichaam
+en het gezicht mooi
+in beeld."</string>
+    <string name="scn_gid_clear_skin_recom_lens">"Heldere lens
+Telelens"</string>
+    <string name="scn_gid_clear_skin_step_up">"Pas de belichting aan
+voor een gebalanceerd
+beeld."</string>
+    <string name="scn_gid_cooking">"Geeft gerechten op hun
+best weer door de
+helderheid van het beeld
+te verhogen."</string>
+    <string name="scn_gid_cooking_onepoint">"Dit effect stelt scherp
+op het onderwerp en
+houdt de achtergrond
+uit focus."</string>
+    <string name="scn_gid_cooking_recom_lens">"Macrolens
+Heldere lens"</string>
+    <string name="scn_gid_cooking_step_up">"Pas het diafragma aan
+om het effect van de
+scherptediepte te
+wijzigen."</string>
+    <string name="scn_gid_cool_night">"Versterkt blauwtinten
+voor koele en zuivere
+opnamen na
+zonsondergang."</string>
+    <string name="scn_gid_cool_night_onepoint">"Bijvoorbeeld voor de
+krachtige contouren van
+gebouwen tegen een
+onbewolkte avondhemel
+in de schemer."</string>
+    <string name="scn_gid_cool_night_recom_lens">Groothoeklens</string>
+    <string name="scn_gid_cool_night_step_up">"Pas de witbalans aan
+om het blauw van de
+avondhemel optimaal
+te laten spreken."</string>
+    <string name="scn_gid_fixflush_backlight_strobe">"Buitenshuis wordt de
+flits gebruikt om het
+gezicht gelijkmatiger
+te verlichten."</string>
+    <string name="scn_gid_fixflush_backlight_strobe_onepoint">Gebruik de flits</string>
+    <string name="scn_gid_fixflush_backlight_strobe_recom_lens">Standaard zoom lens</string>
+    <string name="scn_gid_fixflush_backlight_strobe_step_up">"Pas de belichting aan
+om het gezicht helder
+weer te geven."</string>
+    <string name="scn_gid_fixflush_night_portrait">"Maakt een helder
+portret tegen een
+nachtelijke achtergrond
+met de invulflits en
+een langere belichting."</string>
+    <string name="scn_gid_fixflush_night_portrait_onepoint">Gebruik de flits</string>
+    <string name="scn_gid_fixflush_night_portrait_recom_lens">Groothoeklens</string>
+    <string name="scn_gid_fixflush_night_portrait_step_up">"Pas de belichting aan
+voor een optimale
+helderheid."</string>
+    <string name="scn_gid_fixlens_portrait">"Past de helderheid
+van het gezicht aan
+en vervaagt de
+achtergrond voor een
+geprononceerd portret."</string>
+    <string name="scn_gid_fixlens_portrait_onepoint">Zoom in.</string>
+    <string name="scn_gid_fixlens_portrait_step_up">"Pas de belichting aan
+voor een gebalanceerd
+beeld."</string>
+    <string name="scn_gid_flower">"Creëert een diffuus
+beeld met een zachte
+focus."</string>
+    <string name="scn_gid_flower_onepoint">"Zorg dat de bloemen
+zacht verlicht worden,
+bijvoorbeeld door licht
+dat door een gordijn
+valt."</string>
+    <string name="scn_gid_flower_recom_lens">Macrolens</string>
+    <string name="scn_gid_flower_step_up">"Pas de belichting aan
+voor een optimale
+helderheid."</string>
+    <string name="scn_gid_handheld_night">"Leg meerdere beelden vast
+en combineer de data om
+onscherpte en ruis voor
+nachtopname uit hand te
+minimaliseren."</string>
+    <string name="scn_gid_handheld_night_onepoint">"Houd de camera stevig
+vast om bewegingen te
+minimaliseren."</string>
+    <string name="scn_gid_handheld_night_recom_lens">Groothoeklens</string>
+    <string name="scn_gid_handheld_night_step_up">"Pas de belichting aan
+voor een gebalanceerd
+beeld."</string>
+    <string name="scn_gid_illumination">"Creëert een zee van
+lichtpuntjes door het
+speciale sterfilter."</string>
+    <string name="scn_gid_illumination_onepoint">"Geeft het beste effect
+bij opnamen van nabij."</string>
+    <string name="scn_gid_illumination_recom_lens">"Groothoeklens
+Telelens"</string>
+    <string name="scn_gid_illumination_step_up">"Pas de belichting aan
+om de lichtfonkelingen
+nog mooier te laten
+uitkomen."</string>
+    <string name="scn_gid_kids">"Benadrukt
+kindergezichten door
+het achtergrond licht
+onscherp te maken
+en de huidtonen
+te versterken."</string>
+    <string name="scn_gid_kids_onepoint">"Stel scherp op het kind
+met het aanraakscherm."</string>
+    <string name="scn_gid_kids_recom_lens">Heldere lens</string>
+    <string name="scn_gid_kids_step_up">"Pas de belichting aan
+om de kindersfeer
+nog te versterken."</string>
+    <string name="scn_gid_landscape">"Landschappen worden
+nog pakkender door
+de lucht en de bomen
+iets verzadigder weer
+te geven."</string>
+    <string name="scn_gid_landscape_onepoint">"Kies een aantrekkelijke
+compositie."</string>
+    <string name="scn_gid_landscape_recom_lens">Groothoeklens</string>
+    <string name="scn_gid_landscape_step_up">"Geef in de zoeker de
+richtlijnen weer om
+de opname mooi
+horizontaal te maken."</string>
+    <string name="scn_gid_longexpo_night">"Verleent nachtopnamen
+een artistiek effect
+door lichtsporen vast te
+leggen met een
+langzame sluitertijd."</string>
+    <string name="scn_gid_longexpo_night_onepoint">"Plaats de camera op
+een statief of een
+stabiele ondergrond."</string>
+    <string name="scn_gid_longexpo_night_recom_lens">Standaard zoom lens</string>
+    <string name="scn_gid_longexpo_night_step_up">"Pas de sluitertijd aan om
+de lengte en het effect
+van de lichtsporen te
+veranderen.
+"</string>
+    <string name="scn_gid_magic_hour">"Versterkt de atmosfeer
+van een romantische
+zonsondergang door
+de paarstinten te
+accentueren."</string>
+    <string name="scn_gid_magic_hour_onepoint">"Fotografeer de
+horizon kort na
+zonsondergang op
+een onbewolkte dag."</string>
+    <string name="scn_gid_magic_hour_recom_lens">Groothoeklens</string>
+    <string name="scn_gid_magic_hour_step_up">"Pas de belichting aan
+om de kleurdiepte
+aan te passen."</string>
+    <string name="scn_gid_monochrome">"Creëert monochrome
+opnamen die de unieke
+sfeer van het moment
+kunnen vastleggen."</string>
+    <string name="scn_gid_monochrome_onepoint">"Zorg dat het onderwerp
+zo verlicht is dat het
+contrast en de sfeer
+optimaal uitkomen."</string>
+    <string name="scn_gid_monochrome_recom_lens">Standaard zoom lens</string>
+    <string name="scn_gid_monochrome_step_up">"Pas de verzadiging
+aan om de kleurtoon
+en de stemming
+optimaal weer te geven."</string>
+    <string name="scn_gid_night">"Verbetert opnamen
+bij weinig licht door
+de kleuren in het
+donkere beeld
+meer te verzadigen."</string>
+    <string name="scn_gid_night_onepoint">"Plaats de camera op
+een statief of een
+stabiele ondergrond."</string>
+    <string name="scn_gid_night_portrait">"Maakt een helder
+portret tegen een
+nachtelijke achtergrond
+met de invulflits en
+een langere belichting."</string>
+    <string name="scn_gid_night_portrait_onepoint">Klap de flitser uit.</string>
+    <string name="scn_gid_night_portrait_recom_lens">Groothoeklens</string>
+    <string name="scn_gid_night_portrait_step_up">"Pas de belichting aan
+voor een optimale
+helderheid."</string>
+    <string name="scn_gid_night_recom_lens">"Groothoeklens
+Telelens"</string>
+    <string name="scn_gid_night_step_up">"Pas de belichting aan
+om de helderheid
+optimaal in te stellen."</string>
+    <string name="scn_gid_onepoint">-Tip</string>
+    <string name="scn_gid_pet">"Maakt scherpe opnamen
+van bewegende dieren
+door een snellere
+sluitertijd te gebruiken."</string>
+    <string name="scn_gid_pet_onepoint">"Fotografeer het dier op
+een veilige afstand op
+ooghoogte."</string>
+    <string name="scn_gid_pet_recom_lens">Heldere lens</string>
+    <string name="scn_gid_pet_step_up">"Maak burstopnamen
+om een continue
+beweging vast te
+leggen."</string>
+    <string name="scn_gid_portrait">"Past de helderheid
+van het gezicht aan
+en vervaagt de
+achtergrond voor een
+geprononceerd portret."</string>
+    <string name="scn_gid_portrait_onepoint">"Zoom in als u een
+zoomlens gebruikt."</string>
+    <string name="scn_gid_portrait_recom_lens">"Heldere lens
+Telelens"</string>
+    <string name="scn_gid_portrait_step_up">"Pas de belichting aan
+voor een gebalanceerd
+beeld."</string>
+    <string name="scn_gid_recommended_lens">-Aanbevolen lens</string>
+    <string name="scn_gid_shimmering_water">"Maakt glinsterende
+waterpartijen helderder
+en versterkt de
+blauwtinten licht."</string>
+    <string name="scn_gid_shimmering_water_onepoint">"U krijgt het beste effect
+vroeg of laat op de dag
+bij een lage lichtinval
+op het water."</string>
+    <string name="scn_gid_shimmering_water_recom_lens">Telelens</string>
+    <string name="scn_gid_shimmering_water_step_up">"Pas de belichting aan
+om de glinsteringen
+nog treffender te laten
+uitkomen."</string>
+    <string name="scn_gid_sports">"Maakt scherpe opnamen
+van bijvoorbeeld
+sportevenementen
+met minder kans op
+beweging door een
+snellere sluitertijd."</string>
+    <string name="scn_gid_sports_onepoint">"Volg het onderwerp
+om het op het juiste
+moment in beeld
+vast te leggen."</string>
+    <string name="scn_gid_sports_recom_lens">Telelens</string>
+    <string name="scn_gid_sports_step_up">"Pas de belichting aan
+voor een optimale
+helderheid."</string>
+    <string name="scn_gid_step_up">-Geavanceerd</string>
+    <string name="scn_gid_sunset">"Creëert een krachtige
+zonsondergang door
+de roodtinten te
+accentueren."</string>
+    <string name="scn_gid_sunset_onepoint">"Het beste resultaat
+krijgt u bij een
+onbewolkte hemel."</string>
+    <string name="scn_gid_sunset_recom_lens">Groothoeklens</string>
+    <string name="scn_gid_sunset_step_up">"Pas de verzadiging aan
+om de roodtinten van
+de zonsondergang
+optimaal te laten
+uitkomen."</string>
+    <string name="scn_gid_sweets">"Geeft desserts
+verleidelijk weer
+door de helderheid
+aan te passen."</string>
+    <string name="scn_gid_sweets_onepoint">"Breng het dessert
+mooi en ruim in
+beeld."</string>
+    <string name="scn_gid_sweets_recom_lens">"Macrolens
+Heldere lens"</string>
+    <string name="scn_gid_sweets_step_up">"Pas de verzadiging
+aan om de sfeer
+nog beter vast te
+leggen."</string>
+    <string name="scn_gid_warm_night">"Creëert een gloeiende
+avondhemel door
+warme kleurtinten
+te versterken."</string>
+    <string name="scn_gid_warm_night_onepoint">"Zorg dat een deel van
+het onderwerp licht
+uitstraalt."</string>
+    <string name="scn_gid_warm_night_recom_lens">"Groothoeklens
+Telelens"</string>
+    <string name="scn_gid_warm_night_step_up">"Pas de witbalans aan
+om de sfeer
+aan te passen."</string>
+    <string name="scn_gid_warm_portrait">"Creëert een ontspannen
+atmosfeer met warme
+kleurtonen."</string>
+    <string name="scn_gid_warm_portrait_onepoint">"Kies een onderwerp dat
+indirect verlicht wordt
+of vermijd hard zonlicht."</string>
+    <string name="scn_gid_warm_portrait_recom_lens">Standaard zoom lens</string>
+    <string name="scn_gid_warm_portrait_step_up">"Pas de witbalans aan
+om de stemming
+te versterken."</string>
+    <string name="setup_ap_setting">Doelinstellingen voor verbinding</string>
+    <string name="setup_app_setting">Toepassingsfunctie</string>
+    <string name="setup_ask_app_init">De instellingen van de applicatie zullen worden teruggesteld. OK?</string>
+    <string name="setup_ask_camera_format">Bij het formatteren worden alle gegevens op de kaart in het aangesloten apparaat verwijderd. Doorgaan met formatteren?</string>
+    <string name="setup_ask_camera_init">De instellingen voor het aangesloten apparaat worden teruggezet naar de standaardinstellingen. Doorgaan?</string>
+    <string name="setup_ask_camera_number_reset">De MP4 en het aantal fotobestanden van het aangesloten apparaat worden teruggezet. Doorgaan?</string>
+    <string name="setup_ask_camera_power_off">Aangesloten apparaat UIT zetten?</string>
+    <string name="setup_avchd_quality">AVCHD-afspeelkwaliteit</string>
+    <string name="setup_avchd_quality_high">Hoge kwaliteit</string>
+    <string name="setup_avchd_quality_normal">Standaardkwaliteit</string>
+    <string name="setup_btn_complete">Voltooien</string>
+    <string name="setup_btn_delete">Wissen</string>
+    <string name="setup_btn_edit">Bewerk</string>
+    <string name="setup_btn_finish">Voltooien</string>
+    <string name="setup_btn_format">Formaat</string>
+    <string name="setup_btn_init">Begininstelling</string>
+    <string name="setup_btn_power_off">Camera UIT</string>
+    <string name="setup_btn_priority_down">De prioriteit verlagen</string>
+    <string name="setup_btn_priority_up">De prioriteit verhogen</string>
+    <string name="setup_btn_regist">Registreren</string>
+    <string name="setup_btn_reset">Nummer resetten</string>
+    <string name="setup_btn_return">Terug</string>
+    <string name="setup_byte">bytes</string>
+    <string name="setup_cam_ssid_setting">SSID/Wi-Fi-wachtwoordinstellingen</string>
+    <string name="setup_cam_ssid_setting_message">"De SSID en het Wi-Fi-wachtwoord van de camera zijn geïnitialiseerd.
+Wijzig de SSID en het Wi-Fi-wachtwoord."</string>
+    <string name="setup_cam_ssid_setting_message_recomend">De instellingen voor SSID en Wi-Fi-wachtwoord van de camera worden op de standaardwaarden gezet. Het verdient aanbeveling de SSID en het Wi-Fi-wachtwoord te wijzigen. Als u deze instellingen wilt wijzigen, selecteert u “Wi-Fi-inst. camera” → “SSID-inst. camera”.</string>
+    <string name="setup_cmn_wifi_address">Wi-Fi-adres</string>
+    <string name="setup_common_connect_type">Zowel Wi-Fi als Wi-Fi Direct kan worden gebruikt. Selecteer een verbindingsmethode.</string>
+    <string name="setup_connect">Verbind.best. inst.</string>
+    <string name="setup_connect_no_camera">"Kon geen camera vinden.
+Stop met zoeken."</string>
+    <string name="setup_easy_wifi_hmmon_cam_id">De apparaat-ID voor Home Monitor van de camera</string>
+    <string name="setup_easy_wifi_hmmon_exp">De apparaat-ID voor Home Monitor die nodig is om de functie Home Monitor te starten, kan vanaf de camera worden opgehaald.</string>
+    <string name="setup_easy_wifi_hmmon_sp_id">De apparaat-ID voor Home Monitor van de smartphone</string>
+    <string name="setup_easy_wifi_input">Handmatige invoer</string>
+    <string name="setup_easy_wifi_not_registerd">Niet geregistreerd</string>
+    <string name="setup_easy_wifi_setup_title">Oorspronkelijke instellingen voor Wi-Fi-functies</string>
+    <string name="setup_easy_wifi_use_sp_login_id">Gebruik de login-ID van uw smartphone</string>
+    <string name="setup_fps_value1">5</string>
+    <string name="setup_fps_value2">1</string>
+    <string name="setup_geo_tagging">Instellingen voor locatieregistratie</string>
+    <string name="setup_help">Help</string>
+    <string name="setup_imageshuttle_network_name_explain">"De weergegeven namen op andere apparaten kunnen worden gewijzigd.
+Ingevoerde tekens worden mogelijk niet correct weergegeven, afhankelijk van de aangesloten apparatuur.
+Naamswijzigingen worden toegepast als deze toepassing opnieuw wordt gestart."</string>
+    <string name="setup_iso">ISO</string>
+    <string name="setup_iso_color_temp">Kleurtemperatuur</string>
+    <string name="setup_jump_rec_1">1 (Gevoeligh.: laag)</string>
+    <string name="setup_jump_rec_2">2</string>
+    <string name="setup_jump_rec_3">3</string>
+    <string name="setup_jump_rec_4">4</string>
+    <string name="setup_jump_rec_5">5 (Gevoeligh.: hoog)</string>
+    <string name="setup_jump_rec_high">Hoog</string>
+    <string name="setup_jump_rec_low">Laag</string>
+    <string name="setup_jump_rec_mid">Middel</string>
+    <string name="setup_jump_rec_off">UIT</string>
+    <string name="setup_language_code">nl</string>
+    <string name="setup_liveview">Inst. livebesturing</string>
+    <string name="setup_liveview_lens_warning">Waarsch. lens uitg.</string>
+    <string name="setup_liveview_quality">Beeldkwal. livebest.</string>
+    <string name="setup_liveview_selfshot">Zelfopnamemodus</string>
+    <string name="setup_menu">Menu</string>
+    <string name="setup_msg_ask_cloud_setup">De aangesloten camera moet compatibel zijn met de cloud-synchronisatie van LUMIX CLUB. Doorgaan met de huidige instellingen?</string>
+    <string name="setup_msg_ask_geotag_setup">De aangesloten camera moet compatibel zijn met de locatieregistratiefunctie. Doorgaan met de huidige instellingen?</string>
+    <string name="setup_msg_ask_remote_access_setup">De aangesloten camera moet compatibel zijn met de Home Monitoring-functie. Doorgaan met de huidige instellingen?</string>
+    <string name="setup_msg_camera_disconnected">"Verbinding is verbroken.
+Er wordt gestart in de lokale afspeelstand."</string>
+    <string name="setup_msg_camera_lens_error">De lensbevestiging is gewijzigd.</string>
+    <string name="setup_msg_camera_memu_update">Het menu is bijgewerkt.</string>
+    <string name="setup_msg_gps_logging_1st">Deze functie kan alleen worden gebruikt met apparaten die locatieregistratie ondersteunen.</string>
+    <string name="setup_msg_remote_access_1st">Deze functie kan alleen worden gebruikt met apparaten die Home Monitor ondersteunen.</string>
+    <string name="setup_msg_remote_access_3g_necessary_a">Om de functie Home Monitor te starten, dient u een verbinding te maken via een 3G of soortgelijke mobiele telefoonlijn. De verbinding overschakelen?</string>
+    <string name="setup_msg_remote_access_id_necessary">Stel de bestemming voor de verbinding in.</string>
+    <string name="setup_msg_start_remote_watch">Home Monitor starten?</string>
+    <string name="setup_mtu_value1">1280 bytes</string>
+    <string name="setup_mtu_value2">576 bytes</string>
+    <string name="setup_name_invalid_char_code">"Ingevoerde tekens worden mogelijk niet correct weergegeven, afhankelijk van de bestemming van de verbinding.
+Wilt u doorgaan met de registratie?"</string>
+    <string name="setup_name_over_length">Het aantal tekens dat geregistreerd kan worden, is 20.</string>
+    <string name="setup_network_name">Naam</string>
+    <string name="setup_network_name_explain">"DLNA-namen die op andere apparaten worden weergegeven, kunnen gewijzigd worden.
+Ingevoerde tekens worden mogelijk niet correct weergegeven, afhankelijk van de aangesloten apparatuur.
+Naamswijzigingen worden toegepast als deze toepassing opnieuw wordt gestart."</string>
+    <string name="setup_network_name_setting">Netwerknaam</string>
+    <string name="setup_now_format">NU FORMATTEREN</string>
+    <string name="setup_now_init">Een ogenblikje...</string>
+    <string name="setup_now_reset">Een ogenblikje...</string>
+    <string name="setup_off">UIT</string>
+    <string name="setup_on">AAN</string>
+    <string name="setup_picmate_activate">LUMIX CLUB-fn. strt.</string>
+    <string name="setup_picmate_add_equip">Toevoegen</string>
+    <string name="setup_picmate_already_have_id">Als u al een login-ID hebt</string>
+    <string name="setup_picmate_btn_agree">Akkoord</string>
+    <string name="setup_picmate_btn_longin">Aanmelden</string>
+    <string name="setup_picmate_btn_new_regist">Inschrijven</string>
+    <string name="setup_picmate_btn_not_agree">Niet akkoord</string>
+    <string name="setup_picmate_btn_regist">Registreren</string>
+    <string name="setup_picmate_btn_sync_login_id">Zelfde LUMIX CLUB aanmeld-id registreren als camera</string>
+    <string name="setup_picmate_btn_sync_need_check_login">De aanmeldings-ID of het wachtwoord is gewijzigd. Controleer of u kunt aanmelden bij LUMIX CLUB met deze ID.</string>
+    <string name="setup_picmate_btn_unregist">Niet registreren</string>
+    <string name="setup_picmate_cam_or_app_have_id">Als u dezelfde login-ID voor zowel deze app als de camera wilt gebruiken</string>
+    <string name="setup_picmate_cloud">Cloud-synchr.inst.</string>
+    <string name="setup_picmate_cloud_action_capacity_over">Actie: lim. oversch.</string>
+    <string name="setup_picmate_cloud_action_confirm_update">Update bevestigen</string>
+    <string name="setup_picmate_cloud_auto_sync">Aut. synchroniseren</string>
+    <string name="setup_picmate_cloud_confirm">Altijd bevestigen</string>
+    <string name="setup_picmate_cloud_overwrite">Altijd overschrijven</string>
+    <string name="setup_picmate_cloud_picsize_recieving">Beeldgroote (downl.)</string>
+    <string name="setup_picmate_cloud_picsize_sending">Beeldgrootte (upl.)</string>
+    <string name="setup_picmate_cloud_using">Cloud-synchr. gebruiken</string>
+    <string name="setup_picmate_label_access_number">Toegangsnummer</string>
+    <string name="setup_picmate_label_address_number">Adresnummer</string>
+    <string name="setup_picmate_label_comment_input">Voer een opmerking in voor het beeld.</string>
+    <string name="setup_picmate_label_login_id">Aanmeld-id</string>
+    <string name="setup_picmate_label_login_password">Wachtwoord</string>
+    <string name="setup_picmate_label_login_password_check">Wachtwoord bevestigen</string>
+    <string name="setup_picmate_label_login_regist">Registratiewachtwoord invoeren</string>
+    <string name="setup_picmate_label_login_regist2">Registratiewachtwoord invoeren</string>
+    <string name="setup_picmate_label_name">Naam</string>
+    <string name="setup_picmate_manage_id">Aanmeld-id beheren</string>
+    <string name="setup_picmate_not_have_id">Als u geen login-ID hebt</string>
+    <string name="setup_picmate_regist_equip">AV-app. registreren</string>
+    <string name="setup_picmate_regist_service">Web-services reg.</string>
+    <string name="setup_picmate_service_sync">Servicelijst sync.</string>
+    <string name="setup_picmate_title_av_list">AV-doelapparaat</string>
+    <string name="setup_picmate_title_av_regist">AV-apparaatinformatie</string>
+    <string name="setup_picmate_title_comment_input">Opmerkingen invoeren</string>
+    <string name="setup_picmate_title_login_info">Aanmeldinformatie invoeren</string>
+    <string name="setup_picmate_title_login_regist">Wachtwoord invoeren voor registratie</string>
+    <string name="setup_picmate_title_web">LUMIX CLUB-certificaat</string>
+    <string name="setup_picmate_upload_image">Geüploade beelden</string>
+    <string name="setup_picsize_fullhd">Volledig HD (1920 x 1080)</string>
+    <string name="setup_picsize_large">Groot (origineel)</string>
+    <string name="setup_picsize_middle">Standaard</string>
+    <string name="setup_picsize_original">Onbeperkt (volledige pixels)</string>
+    <string name="setup_picsize_recommend">Aanbevolen</string>
+    <string name="setup_picsize_small">Klein</string>
+    <string name="setup_picsize_vga">VGA (640 x 480)</string>
+    <string name="setup_ply_picture_sort">"Foto's sorteren"</string>
+    <string name="setup_ply_picture_sort_name">FILE NAME</string>
+    <string name="setup_ply_picture_sort_rectime">DATE/TIME</string>
+    <string name="setup_rec">Opname-instellingen</string>
+    <string name="setup_rec_time">Opnameduur</string>
+    <string name="setup_rectime_explain">Werkelijke opnameduur kan korter zijn dan de eerder ingestelde opnameduur, afhankelijk van de camerastatus aan het begin van de video-opname.</string>
+    <string name="setup_remote_access_equip_id">Apparaat-ID</string>
+    <string name="setup_remote_access_equip_pw">Wachtwoord</string>
+    <string name="setup_remote_access_qr_button">QR-code</string>
+    <string name="setup_scn_gid_btn_title_finish_setting">Instellen</string>
+    <string name="setup_scn_gid_btn_title_photoshot">Opnemen</string>
+    <string name="setup_scn_gid_navigation_title">Scènegids</string>
+    <string name="setup_set_picmate_id_to_camera">Login-ID camera inst</string>
+    <string name="setup_smaope_camera_picsize">Gr.: kopiëren v. cam.</string>
+    <string name="setup_smaope_delete_gps">Uploadloc. wissen</string>
+    <string name="setup_smaope_download_file_format">Opslagformaat voor RAW+JPEG-beelden</string>
+    <string name="setup_smaope_picamate">LUMIX CLUB-instell.</string>
+    <string name="setup_smaope_picjmp">“Fotodeel”-instell.</string>
+    <string name="setup_smaope_player_select">Videospeler selecteren</string>
+    <string name="setup_smaope_player_select_summary_off">Afspelen met Image App-speler</string>
+    <string name="setup_smaope_player_select_summary_off_leica">Afspelen met Image Shuttle-speler</string>
+    <string name="setup_smaope_player_select_summary_on">Speler selecteren en afspelen</string>
+    <string name="setup_smaope_web_picsize">Grootte: upl. n. Web</string>
+    <string name="setup_smaope_work_charging">Overdr.: all. opld.</string>
+    <string name="setup_smaope_work_wifi_connecting">Overdr.: all. Wi-Fi</string>
+    <string name="setup_smart_app">Smart App</string>
+    <string name="setup_smart_operation">Afspeelinstellingen</string>
+    <string name="setup_ssid_ap_title">Draadl. toegangspunt inst.</string>
+    <string name="setup_ssid_live_title">Live Setup</string>
+    <string name="setup_ssid_search">Zoeken</string>
+    <string name="setup_start_remote_ext_setting">Geavanceerde instellingen</string>
+    <string name="setup_start_remote_mtu">MTU</string>
+    <string name="setup_start_remote_watch">Home Monitor starten</string>
+    <string name="setup_terms">Gebruiksvoorwaarden</string>
+    <string name="setup_time_not_setting">Niet ingesteld</string>
+    <string name="setup_time_sync">Klokinstelling</string>
+    <string name="setup_time_sync_message">"De klok van de camera is niet ingesteld.
+Synchroniseer de camera met de klok van uw smartphone."</string>
+    <string name="setup_use_remote_watch">Home Monitor gebruiken</string>
+    <string name="setup_version">Versie</string>
+    <string name="setup_version_info">Versiegegevens</string>
+    <string name="setup_video_frame_rate">frames/sec</string>
+    <string name="setup_video_frame_rate_simple">frames/sec</string>
+    <string name="setup_white_balance">Witbalans</string>
+    <string name="setup_white_balance_detail_a">A</string>
+    <string name="setup_white_balance_detail_b">B</string>
+    <string name="setup_white_balance_detail_g">G</string>
+    <string name="setup_white_balance_detail_m">M</string>
+    <string name="setup_white_balance_label">WB</string>
+    <string name="setup_white_balance_set_button">Set</string>
+    <string name="setup_white_balance_set_explain">Als u op de knop hieronder tikt, kunt u de witbalans instellen.</string>
+    <string name="setup_wifi_encryption">Versleutelingsmethode</string>
+    <string name="setup_wifi_encryption_aes">AES</string>
+    <string name="setup_wifi_encryption_none">Geen</string>
+    <string name="setup_wifi_encryption_tkip">TKIP</string>
+    <string name="setup_wifi_encryption_wep">WEP</string>
+    <string name="setup_wifi_security">Beveiliging</string>
+    <string name="setup_wifi_security_open">Geen</string>
+    <string name="setup_wifi_security_shared">WPA2</string>
+    <string name="setup_wifi_security_wpa">WEP</string>
+    <string name="setup_wifi_security_wpa2">WPA</string>
+    <string name="setup_wifi_setting">Wi-Fi-setup</string>
+    <string name="setup_wifi_setting_message">Voer instellingen in bij het uitzenden (Live kanaal) of bij het aansluiten van randapparatuur via een toegangspunt.</string>
+    <string name="slow_zoom_speed_fast">Snel</string>
+    <string name="slow_zoom_speed_setting">Zoomsnelh</string>
+    <string name="slow_zoom_speed_slow">Traag</string>
+    <string name="slow_zoom_speed_standard">Normaal</string>
+    <string name="smartop_albumlist_title">Selecteer de map of het album dat u wilt bekijken.</string>
+    <string name="smartop_confirm_delete">Geselecteerde bestand(en) verwijderen?</string>
+    <string name="smartop_copy_err">Download mislukt</string>
+    <string name="smartop_copy_error_title">Fout</string>
+    <string name="smartop_msg_comp_copying">Kopiëren voltooid.</string>
+    <string name="smartop_no_send_error_title">Let op</string>
+    <string name="smartop_re_conect_title">"Verbinding verbroken.
+Selecteer referentiebestemming."</string>
+    <string name="snap_movie_bgm_title_1">Nr. 1</string>
+    <string name="snap_movie_bgm_title_2">Nr. 2</string>
+    <string name="snap_movie_bgm_title_3">Nr. 3</string>
+    <string name="snap_movie_bgm_title_4">Nr. 4</string>
+    <string name="snap_movie_bgm_title_5">Nr. 5</string>
+    <string name="snap_movie_bgm_title_6">Nr. 6</string>
+    <string name="snap_movie_bgm_title_7">Nr. 7</string>
+    <string name="snap_movie_bgm_title_8">Nr. 8</string>
+    <string name="snap_movie_content_time">sec.</string>
+    <string name="tab_home_button">Beginscherm</string>
+    <string name="text_4k_crop_end_frame">Exit</string>
+    <string name="text_4k_crop_frame_setting2">Corr.</string>
+    <string name="text_4k_crop_start_frame">Start</string>
+    <string name="title_connection_error">Verbindingsfout</string>
+    <string name="title_use_functab" />
+    <string name="title_usegeo">Loc.reg. gebruiken</string>
+    <string name="touchshare_copied_picture">Gekopieerd(e) beeld(en)</string>
+    <string name="touchshare_copying">Beeld(en) wordt/worden gekopieerd...</string>
+    <string name="touchshare_exit_action">Tik op de volgende knop om deze functie af te sluiten.</string>
+    <string name="touchshare_msg_not_connecting">De verbinding met de camera was verbroken.</string>
+    <string name="touchshare_next_touch_action">Om door te gaan met het kopiëren van beelden, selecteert u beelden op de camera en raakt u vervolgens met uw smartphone opnieuw de camera aan.</string>
+    <string name="ugase_agreement_support">"Meer informatie over de gebruiksvoorwaarden en het privacybeleid van Google Analytics vindt u op de website van Google Analytics.
+Google Analytics gebruiksvoorwaarden
+http://www.google.com/intl/ja/analytics/tos.html
+Google beleid en algemene regels
+http://www.google.com/intl/ja/policies/privacy/
+
+Neem voor informatie of vragen contact op via de contactgegevens die in de gebruiksvoorwaarden vermeld staan.
+"</string>
+    <string name="ugase_agreement_support_old">Neem voor informatie of vragen contact op via de contactgegevens die in de gebruiksvoorwaarden voor deze app vermeld staan.</string>
+    <string name="ugase_agreement_text_1">"(1) Deze app houdt een logboek bij van de gebruikersgeschiedenis van deze app in de terminal die u gebruikt en bevat een functie om de gebruikersgeschiedenis te uploaden naar een server aangewezen door Panasonic Corporation (hierna, Dit bedrijf). Om voor deze app software-updates te kunnen leveren, verbeteringen aan deze app te kunnen aanbrengen, de functionaliteit en de gebruikerservaring te kunnen verbeteren, en om het leveren van ondersteunende diensten en technologie aan klanten soepel te laten verlopen, en technische informatie (waaronder gebruiksinformatie, zoals opnemen, afspelen en overzetten) ten aanzien van de apparatuur, het systeem, de applicatiesoftware en de randapparatuur van klanten, evenals informatie ten aanzien van de gebruiksgegevens van deze app en de technische logbestanden en bijbehorende informatie die automatisch wordt aangemaakt en opgeslagen wanneer deze app gebruikt wordt, kan worden verzameld en opgeslagen op de gespecificeerde servers van Dit bedrijf, en wordt gebruikt met methoden op basis waarvan de informatie niet herleid kan worden naar individuele klanten.
+Neem voor informatie of vragen contact op via de contactgegevens die in de gebruiksvoorwaarden vermeld staan.
+"</string>
+    <string name="ugase_agreement_text_2">"(2) Deze app van de Panasonic Corporation (hierna, dit Bedrijf) gebruikt Google Analytics, een dienst aangeboden door Google Inc. (hierna, Google) om software-updates gekoppeld aan deze app aan te bieden, verbeteringen aan deze app aan te brengen, functionaliteit en gebruiksvriendelijkheid te verhogen, vlotte levering van ondersteuningsdiensten en technologie voor klanten te verzekeren en voor marketingdoeleinden (verkoopspromotie).
+Als Google Analytics in deze app wordt gebruikt, gebaseerd op de cookie die door dit Bedrijf is uitgegeven, worden technische informatie (waaronder informatie over de werking en het gebruik, zoals de weergavestatus van de schermweergave, opname, afspelen en overdrachten) in verband met de apparatuur, toestel, systeem, applicatiesoftware, randapparatuur en verbonden toestellen van de klant, alsook informatie over de gebruiksgeschiedenis van deze app en technische logbestanden en gerelateerde informatie, land van vestiging of gebruikte taal van de klant (hierna wordt naar deze informatie verwezen als “klantinformatie”) die automatisch gecreëerd en opgeslagen worden, automatisch door Google verzameld, geregistreerd en geanalyseerd.
+Dit Bedrijf ontvangt van Google de analyseresultaten om de klantinformatie te begrijpen. Klantinformatie die door Google Analytics wordt geregistreerd en geanalyseerd, bevat geen informatie die de klanten individueel identificeert.
+Deze informatie wordt ook door Google gecontroleerd op basis van de privacybeleid van Google. 
+"</string>
+    <string name="ugase_agreement_text_old">Deze app bevat een functie met de gebruiksvoorwaarden van het apparaat dat door de klant wordt gebruikt, en uploadt ze naar Panasonic Corporation (hierna, Dit bedrijf). Om voor deze app software-updates te kunnen leveren, verbeteringen aan deze app te kunnen aanbrengen, de functionaliteit en de gebruikerservaring te kunnen verbeteren, en om het leveren van ondersteunende diensten en technologie aan klanten soepel te laten verlopen, en technische informatie (waaronder gebruiksinformatie, zoals opnemen, afspelen en overzetten) ten aanzien van de apparatuur , het systeem, de applicatiesoftware en de randapparatuur van klanten, evenals informatie ten aanzien van de gebruiksgegevens van deze app en de technische logbestande en bijbehorende informatie die automatisch wordt aangemaakt en opgeslagen wanneer deze app gebruikt wordt, wordt verzameld en opgeslagen op de gespecificeerde servers van Dit bedrijf, en wordt gebruikt met methoden op basis waarvan de informatie niet herleid kan worden naar individuele klanten.</string>
+    <string name="ugase_agreement_title">Gegevensverwerving en gebruikersovereenkomst</string>
+    <string name="ugase_agreement_title_old">Overeenkomst voor het gebruik van gegevens</string>
+    <string name="ugase_conditions">Gebruiksvoorwaarden</string>
+    <string name="ugase_explain">De gebruiksvoorwaarden voor de app worden automatisch naar de server verstuurd. Deze instelling kan later gewijzigd worden.</string>
+    <string name="ugase_explain_menu">\"Menu \" -> \"Toepassingsfunctie \" -> \"Gebruiksvoorwaarden \" -> \"Automatisch versturen \"</string>
+    <string name="ugase_explain_menu_cookie_policy">\"Menu \" -> \"Toepassingsfunctie \" -> \"Gebruiksvoorwaarden \" -> \"Automatisch versturen \"</string>
+    <string name="ugase_send_automatically">Automatisch versturen</string>
+    <string name="ugase_send_usage_conditions">Gebruiksvoorwaarden versturen</string>
+    <string name="wf_msg_confirm_regain">"De oude ID die met deze app is opgehaald, wordt uitgeschakeld.
+Opnieuw registreren?"</string>
+    <string name="wifi_connect_no">Nee</string>
+    <string name="wifi_connect_yes">Ja</string>
+    <string name="wifi_disconnect">"Wi-Fi moet ingeschakeld zijn om verbinding te maken met de camera.
+Wi-Fi inschakelen?
+
+Bij het maken van een verbinding met de camera wordt het uploaden in andere toepassingen geannuleerd. Zorg dat u klaar bent met uploaden."</string>
+    <string name="wifi_password_input">Voer het wachtwoord in.</string>
+    <string name="wifi_password_input2">"Het wachtwoord is onjuist.
+Voer het wachtwoord opnieuw in."</string>
+    <string name="wifi_password_visible">Wachtwoord weergeven</string>
+    <string name="wifi_st_unknown">"Kan Wi-Fi niet inschakelen.
+Controleer de Wi-Fi-instellingen."</string>
+    <string name="wifi_wifi_setting">Wi-Fi-setup</string>
+    <string name="wipe_frame_color_gray">Grijs</string>
+    <string name="wipe_frame_color_green">Groen</string>
+    <string name="wipe_frame_color_orange">Oranje</string>
+    <string name="wipe_frame_color_pink">Roze</string>
+    <string name="wipe_frame_color_shadow">Schaduw</string>
+    <string name="wipe_frame_less">Zonder rand</string>
+</resources>

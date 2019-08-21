@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="7.0">
+        <include android:layout_gravity="top" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" layout="@layout/liveview_surface_remote" />
+        <include android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="@dimen/iconview_status_bar_height" layout="@layout/liveview_status_bar_movie" />
+    </LinearLayout>
+    <FrameLayout android:orientation="vertical" android:background="@drawable/bg" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="3.0">
+        <LinearLayout android:orientation="vertical" android:id="@id/remote_watch_layout" android:background="@drawable/bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/bg" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="3.0dip" android:layout_marginRight="3.0dip" android:layout_weight="1.0">
+                <ImageView android:gravity="center_horizontal" android:id="@id/set_mic_vol" android:visibility="visible" android:layout_width="44.0dip" android:layout_height="44.0dip" android:src="@drawable/mic_setting_button" android:onClick="onClickMicVol" />
+                <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" android:layout_weight="1.0" layout="@layout/liveview_zoom_bar" />
+                <ImageView android:id="@id/babymon_pan_dummy" android:visibility="invisible" android:layout_width="44.0dip" android:layout_height="44.0dip" android:layout_marginLeft="1.0dip" />
+            </LinearLayout>
+            <include android:layout_gravity="bottom" android:id="@id/movieShutterGroup" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" layout="@layout/liveview_shutter_remotewatch" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/mic_vol_layout" android:background="@drawable/bg" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="8.0">
+                    <TextView android:textSize="@dimen/live_view_icon_font_size_xxlarge" android:gravity="center" android:id="@id/sliderValueTextView" android:padding="@dimen/padding_small" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Value" />
+                    <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/sliderbarH_paddingLeft" android:paddingRight="@dimen/sliderbarH_paddingRight" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textAppearance="?android:textAppearanceSmall" android:gravity="left" android:id="@id/sliderMinValueTextView" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="1" android:layout_weight="1.0" />
+                        <TextView android:textAppearance="?android:textAppearanceSmall" android:gravity="right" android:id="@id/sliderMaxValueTextView" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="10" android:layout_weight="1.0" />
+                    </LinearLayout>
+                    <SeekBar android:id="@id/sliderSeekBarH" android:paddingLeft="@dimen/sliderbarH_paddingLeft" android:paddingTop="@dimen/sliderbarH_paddingTop" android:paddingRight="@dimen/sliderbarH_paddingRight" android:paddingBottom="@dimen/sliderbarH_paddingBottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/sliderbarH_marginTop" android:layout_marginBottom="@dimen/sliderbarH_marginBottom" style="@style/SliderBarH" />
+                    <RelativeLayout android:paddingLeft="@dimen/sliderbarH_paddingLeft" android:paddingRight="@dimen/sliderbarH_paddingRight" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <ImageButton android:id="@id/valueUpButton" android:background="#00000000" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_right_button" android:scaleType="fitCenter" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:onClick="OnClickValueUp" android:contentDescription="+" />
+                        <ImageButton android:id="@id/valueDownButton" android:background="#00000000" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_left_button" android:scaleType="fitCenter" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:onClick="OnClickValueDown" android:contentDescription="-" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            </LinearLayout>
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:gravity="center" android:id="@id/titleTextView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/mic_level_setting_title" />
+        </LinearLayout>
+    </FrameLayout>
+    <include android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/primary_menu" />
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center" android:id="@id/QMenuButtonViewGroup" android:duplicateParentState="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_margin="@dimen/margin_small" android:layout_weight="1.0">
+        <ImageButton android:id="@id/QMenuButton" android:background="#00000000" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="@dimen/live_view_lumix_button_medium" android:src="@drawable/no_label_button" android:scaleType="fitCenter" android:layout_centerInParent="true" android:onClick="OnClickQMenu" />
+        <TextView android:textSize="@dimen/live_view_lumix_font_size" android:gravity="center" android:id="@id/textView1" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/rec_btn_quick_menu" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:duplicateParentState="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="4.0">
+        <FrameLayout android:layout_gravity="center" android:duplicateParentState="false" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_margin="@dimen/margin_small" android:layout_weight="1.0">
+            <com.panasonic.avc.cng.view.parts.TwoStateImageButton android:layout_gravity="center|right" android:id="@id/touchShutterOffButton" android:background="#00000000" android:duplicateParentState="false" android:layout_width="fill_parent" android:layout_height="@dimen/live_view_lumix_button_medium" android:src="@drawable/liveview_lumix_touchshutter_button_off" android:scaleType="fitCenter" />
+        </FrameLayout>
+        <FrameLayout android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.0">
+            <com.panasonic.avc.cng.view.parts.ImageButtonEx android:layout_gravity="center" android:id="@id/shutterButton" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="@dimen/live_view_lumix_button_medium" android:src="@drawable/liveview_lumix_rec_shutter_button" android:scaleType="fitCenter" />
+        </FrameLayout>
+        <FrameLayout android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_margin="@dimen/margin_small" android:layout_weight="1.0">
+            <ImageButton android:layout_gravity="center|left" android:id="@id/DmyButton" android:background="#00000000" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="@dimen/live_view_lumix_button_medium" android:src="@drawable/btn_no_label" android:scaleType="fitCenter" />
+        </FrameLayout>
+    </LinearLayout>
+    <FrameLayout android:layout_gravity="center" android:duplicateParentState="false" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_margin="@dimen/margin_small" android:layout_weight="1.0">
+        <ImageButton android:layout_gravity="center" android:id="@id/RecButton" android:background="#00000000" android:visibility="invisible" android:duplicateParentState="false" android:layout_width="fill_parent" android:layout_height="@dimen/live_view_lumix_button_medium" android:src="@drawable/rec_movie_rec_start_button" android:scaleType="fitCenter" android:onClick="OnClickRec" />
+    </FrameLayout>
+</LinearLayout>

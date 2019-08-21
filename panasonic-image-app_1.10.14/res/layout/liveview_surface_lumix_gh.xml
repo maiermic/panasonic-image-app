@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/liveViewOverlay" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.panasonic.avc.cng.view.parts.LiveViewLumixSurface android:id="@id/liveViewLumixSurface" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBottom="@id/liveViewLumixSurface" android:layout_alignParentRight="true">
+            <include android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/liveview_icon_lumix_gh" />
+        </FrameLayout>
+    </RelativeLayout>
+    <TextView android:textColor="@android:color/white" android:gravity="center" android:id="@id/liveViewOverlayMessage" android:background="#ff444444" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/cmn_msg_server_zero_2" />
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@android:color/white" android:gravity="center" android:id="@id/bulbMessage" android:background="#00000000" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ProgressBar android:layout_gravity="center_horizontal" android:id="@id/lcProgressBar" android:paddingTop="10.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" style="?android:attr/progressBarStyle" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="bottom|center|right" android:orientation="horizontal" android:id="@id/lc_capturing_layout" android:paddingRight="10.0dip" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/fullscreen_toggle_button_height">
+        <Space android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.0" />
+        <LinearLayout android:orientation="vertical" android:background="#7f000000" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textColor="@android:color/white" android:gravity="center" android:id="@id/lc_expo_time" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <TextView android:textColor="@android:color/white" android:gravity="center" android:id="@id/lc_elapse_sec" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageButton android:layout_gravity="bottom|center|right" android:id="@id/button_fullscreen_toggle" android:background="#00000000" android:visibility="invisible" android:layout_width="@dimen/fullscreen_toggle_button_width" android:layout_height="@dimen/fullscreen_toggle_button_height" android:src="@drawable/to_full_screen_button" android:scaleType="fitEnd" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/progressBarGroup" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="@dimen/live_view_icon_font_size_xlarge" android:layout_gravity="center_horizontal" android:id="@id/progressBarText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/msg_hrs_image_creating" />
+        <ProgressBar android:layout_gravity="center" android:id="@id/progressBar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/lv_progressbar_margin" android:layout_marginRight="@dimen/lv_progressbar_margin" android:progress="100" style="?android:attr/progressBarStyleHorizontal" />
+    </LinearLayout>
+</FrameLayout>

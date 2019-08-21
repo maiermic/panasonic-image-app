@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background">
+        <shape android:shape="rectangle"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <solid android:color="@color/snap_movie_progress_bg" />
+        </shape>
+    </item>
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape android:shape="rectangle"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+                <solid android:color="@color/snap_movie_progress" />
+                <stroke android:width="@dimen/snap_movie_progress_stroke" android:color="@color/snap_movie_progress_bg" />
+            </shape>
+        </clip>
+    </item>
+</layer-list>

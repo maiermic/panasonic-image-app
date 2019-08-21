@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<frames ver="1.0">
+    <frame usernum="2" w="640" h="640" resource="photo_collage_frame_1">
+        <item drawtype="fillrectangle" x="0" y="0" w="640" h="640" col="FFFFFFFF" />
+        <item drawtype="usercentertrim" x="20" y="20" w="290" h="600" priority="0" />
+        <item drawtype="usercentertrim" x="330" y="20" w="290" h="600" priority="1" />
+    </frame>
+    <frame usernum="3" w="640" h="640" resource="photo_collage_frame_2">
+        <item drawtype="fillrectangle" x="0" y="0" w="640" h="640" col="FFFFFFFF" />
+        <item drawtype="usercentertrim" x="20" y="20" w="290" h="600" priority="0" />
+        <item drawtype="usercentertrim" x="330" y="20" w="290" h="290" priority="1" />
+        <item drawtype="usercentertrim" x="330" y="330" w="290" h="290" priority="2" />
+    </frame>
+    <frame usernum="4" w="640" h="640" resource="photo_collage_frame_3">
+        <item drawtype="fillrectangle" x="0" y="0" w="640" h="640" col="FFFFFFFF" />
+        <item drawtype="usercentertrim" x="20" y="20" w="200" h="290" priority="2" />
+        <item drawtype="usercentertrim" x="240" y="20" w="380" h="290" priority="0" />
+        <item drawtype="usercentertrim" x="20" y="330" w="380" h="290" priority="1" />
+        <item drawtype="usercentertrim" x="420" y="330" w="200" h="290" priority="3" />
+    </frame>
+    <frame usernum="5" w="640" h="640" resource="photo_collage_frame_4">
+        <item drawtype="fillrectangle" x="0" y="0" w="640" h="640" col="FFFFFFFF" />
+        <item drawtype="usercentertrim" x="20" y="20" w="186" h="394" priority="3" />
+        <item drawtype="usercentertrim" x="226" y="20" w="394" h="186" priority="1" />
+        <item drawtype="usercentertrim" x="226" y="226" w="188" h="188" priority="0" />
+        <item drawtype="usercentertrim" x="20" y="434" w="394" h="186" priority="2" />
+        <item drawtype="usercentertrim" x="434" y="226" w="186" h="394" priority="4" />
+    </frame>
+    <frame usernum="2" w="848" h="480" resource="photo_collage_frame_5">
+        <item drawtype="fillrectangle" x="0" y="0" w="848" h="480" col="FFFFFFFF" />
+        <item drawtype="usercentertrim" x="20" y="20" w="394" h="440" priority="0" />
+        <item drawtype="usercentertrim" x="434" y="20" w="394" h="440" priority="1" />
+    </frame>
+    <frame usernum="3" w="848" h="480" resource="photo_collage_frame_6">
+        <item drawtype="fillrectangle" x="0" y="0" w="848" h="480" col="FFFFFFFF" />
+        <item drawtype="usercentertrim" x="20" y="20" w="394" h="440" priority="0" />
+        <item drawtype="usercentertrim" x="434" y="20" w="394" h="210" priority="1" />
+        <item drawtype="usercentertrim" x="434" y="250" w="394" h="210" priority="2" />
+    </frame>
+    <frame usernum="4" w="848" h="480" resource="photo_collage_frame_7">
+        <item drawtype="fillrectangle" x="0" y="0" w="848" h="480" col="FFFFFFFF" />
+        <item drawtype="usercentertrim" x="20" y="20" w="324" h="210" priority="2" />
+        <item drawtype="usercentertrim" x="364" y="20" w="464" h="210" priority="0" />
+        <item drawtype="usercentertrim" x="20" y="250" w="464" h="210" priority="1" />
+        <item drawtype="usercentertrim" x="504" y="250" w="324" h="210" priority="3" />
+    </frame>
+    <frame usernum="5" w="848" h="480" resource="photo_collage_frame_8">
+        <item drawtype="fillrectangle" x="0" y="0" w="848" h="480" col="FFFFFFFF" />
+        <item drawtype="usercentertrim" x="20" y="20" w="264" h="287" priority="3" />
+        <item drawtype="usercentertrim" x="304" y="20" w="524" h="133" priority="1" />
+        <item drawtype="usercentertrim" x="304" y="173" w="240" h="134" priority="0" />
+        <item drawtype="usercentertrim" x="20" y="327" w="524" h="133" priority="2" />
+        <item drawtype="usercentertrim" x="564" y="173" w="264" h="287" priority="4" />
+    </frame>
+    <frame usernum="2" w="640" h="640" resource="photo_collage_frame_9">
+        <item drawtype="fillrectangle" x="0" y="0" w="640" h="640" col="FFFFFFFF" />
+        <item drawtype="usercentertrim" x="20" y="20" w="600" h="290" priority="0" />
+        <item drawtype="usercentertrim" x="20" y="330" w="600" h="290" priority="1" />
+    </frame>
+    <frame usernum="3" w="640" h="640" resource="photo_collage_frame_10">
+        <item drawtype="fillrectangle" x="0" y="0" w="640" h="640" col="FFFFFFFF" />
+        <item drawtype="usercentertrim" x="20" y="20" w="600" h="390" priority="0" />
+        <item drawtype="usercentertrim" x="20" y="430" w="290" h="190" priority="1" />
+        <item drawtype="usercentertrim" x="330" y="430" w="290" h="190" priority="2" />
+    </frame>
+    <frame usernum="4" w="640" h="640" resource="photo_collage_frame_11">
+        <item drawtype="fillrectangle" x="0" y="0" w="640" h="640" col="FFFFFFFF" />
+        <item drawtype="usercentertrim" x="20" y="20" w="290" h="200" priority="2" />
+        <item drawtype="usercentertrim" x="330" y="20" w="290" h="380" priority="1" />
+        <item drawtype="usercentertrim" x="20" y="240" w="290" h="380" priority="0" />
+        <item drawtype="usercentertrim" x="330" y="420" w="290" h="200" priority="3" />
+    </frame>
+    <frame usernum="5" w="640" h="640" resource="photo_collage_frame_12">
+        <item drawtype="fillrectangle" x="0" y="0" w="640" h="640" col="FFFFFFFF" />
+        <item drawtype="usercentertrim" x="20" y="20" w="290" h="180" priority="1" />
+        <item drawtype="usercentertrim" x="330" y="20" w="290" h="180" priority="3" />
+        <item drawtype="usercentertrim" x="20" y="220" w="600" h="200" priority="0" />
+        <item drawtype="usercentertrim" x="20" y="440" w="290" h="180" priority="4" />
+        <item drawtype="usercentertrim" x="330" y="440" w="290" h="180" priority="2" />
+    </frame>
+    <frame usernum="2" w="848" h="480" resource="photo_collage_frame_13">
+        <item drawtype="fillrectangle" x="0" y="0" w="848" h="480" col="FFFFFFFF" />
+        <item drawtype="usercentertrim" x="20" y="20" w="808" h="210" priority="0" />
+        <item drawtype="usercentertrim" x="20" y="250" w="808" h="210" priority="1" />
+    </frame>
+    <frame usernum="3" w="848" h="480" resource="photo_collage_frame_14">
+        <item drawtype="fillrectangle" x="0" y="0" w="848" h="480" col="FFFFFFFF" />
+        <item drawtype="usercentertrim" x="20" y="20" w="808" h="240" priority="0" />
+        <item drawtype="usercentertrim" x="20" y="280" w="394" h="180" priority="1" />
+        <item drawtype="usercentertrim" x="434" y="280" w="394" h="180" priority="2" />
+    </frame>
+    <frame usernum="4" w="848" h="480" resource="photo_collage_frame_15">
+        <item drawtype="fillrectangle" x="0" y="0" w="848" h="480" col="FFFFFFFF" />
+        <item drawtype="usercentertrim" x="20" y="20" w="394" h="170" priority="2" />
+        <item drawtype="usercentertrim" x="434" y="20" w="394" h="250" priority="1" />
+        <item drawtype="usercentertrim" x="20" y="210" w="394" h="250" priority="0" />
+        <item drawtype="usercentertrim" x="434" y="290" w="394" h="170" priority="3" />
+    </frame>
+    <frame usernum="5" w="848" h="480" resource="photo_collage_frame_16">
+        <item drawtype="fillrectangle" x="0" y="0" w="848" h="480" col="FFFFFFFF" />
+        <item drawtype="usercentertrim" x="20" y="20" w="394" h="133" priority="1" />
+        <item drawtype="usercentertrim" x="434" y="20" w="394" h="133" priority="3" />
+        <item drawtype="usercentertrim" x="20" y="173" w="808" h="134" priority="0" />
+        <item drawtype="usercentertrim" x="20" y="327" w="394" h="133" priority="4" />
+        <item drawtype="usercentertrim" x="434" y="327" w="394" h="133" priority="2" />
+    </frame>
+</frames>

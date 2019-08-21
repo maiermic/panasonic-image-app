@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:title="@string/setup_picmate_activate" android:key="preferenceKeypicMateTop" android:defaultValue="true" android:summaryOn="@string/setup_on" android:summaryOff="@string/setup_off" android:disableDependentsState="false" />
+    <PreferenceScreen android:title="@string/setup_picmate_manage_id" android:key="preferenceKeypicMate02" android:dependency="preferenceKeypicMateTop" />
+    <PreferenceScreen android:title="@string/setup_set_picmate_id_to_camera" android:key="onClickId2Camera" android:dependency="preferenceKeypicMateTop" />
+    <PreferenceScreen android:title="@string/setup_picmate_cloud" android:key="preferenceKeypicMate03" android:dependency="preferenceKeypicMateTop" />
+    <PreferenceScreen android:title="@string/setup_picmate_regist_service" android:key="preferenceKeypicMate04" android:dependency="preferenceKeypicMateTop" />
+    <PreferenceScreen android:title="@string/setup_picmate_upload_image" android:key="preferenceKeypicMate06" android:dependency="preferenceKeypicMateTop" />
+    <PreferenceScreen android:title="@string/setup_picmate_service_sync" android:key="onClickServiceListSyncro" android:dependency="preferenceKeypicMateTop" />
+</PreferenceScreen>

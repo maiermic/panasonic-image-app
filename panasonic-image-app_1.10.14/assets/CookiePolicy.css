@@ -1,0 +1,13 @@
+﻿@charset "utf-8";
+body{font-size:100%;line-height:130%;font-family:Helvetica, sans-serif;margin:0px 10px 30px 10px;-webkit-text-size-adjust:none;word-wrap:break-word;}
+h1.title-1{font-size:1.2em;line-height:130%;margin:1.2em 0.5em 0 0;font-weight:normal;}
+p{font-size:12px;font-weight:normal;margin:1em 0;padding:0;}
+.mb05{margin:0 5px 0 0;}
+.MG0{margin:0;}
+.MT0{margin-top:0;padding-top:0;}
+.mb0{margin-bottom:0;}
+.mb1{margin-bottom:1em;}
+.mt5{margin-top:5px;}
+.underline{text-decoration:underline;}
+div#dT{margin-top:1.5em;font-size:12px;}
+.idT{text-indent:-1em;margin-left:1em;margin-top:2em;margin-bottom:1em;font-weight:bold;}

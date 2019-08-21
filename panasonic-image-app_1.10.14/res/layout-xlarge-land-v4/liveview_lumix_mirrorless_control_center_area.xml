@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/liveview_lumix_mirrorless_zoom_area_dummy" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <include android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="2.0" layout="@layout/liveview_lumix_mirrorless_zoom_bar_new" />
+    <FrameLayout android:layout_gravity="center" android:id="@id/mfAreaView" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="2.0">
+        <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/liveview_lumix_mirrorless_mf_bar" />
+    </FrameLayout>
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/liveview_lumix_mirrorless_mf_area_dummy" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+</LinearLayout>

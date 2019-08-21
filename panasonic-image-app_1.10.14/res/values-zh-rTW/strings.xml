@@ -1,0 +1,1679 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_google_play_services_enable_button">啟用</string>
+    <string name="common_google_play_services_enable_text">您必須啟用 Google Play 服務，才能執行「%1$s」。</string>
+    <string name="common_google_play_services_enable_title">啟用 Google Play 服務</string>
+    <string name="common_google_play_services_install_button">安裝</string>
+    <string name="common_google_play_services_install_text">您的裝置並未安裝 Google Play 服務，因此無法執行「%1$s」。</string>
+    <string name="common_google_play_services_install_title">取得 Google Play 服務</string>
+    <string name="common_google_play_services_notification_ticker">Google Play 服務發生錯誤</string>
+    <string name="common_google_play_services_unknown_issue">「%1$s」無法存取 Google Play 服務，請再試一次。</string>
+    <string name="common_google_play_services_unsupported_text">您的裝置不支援 Google Play 服務，因此無法執行「%1$s」。</string>
+    <string name="common_google_play_services_update_button">更新</string>
+    <string name="common_google_play_services_update_text">您必須更新 Google Play 服務，才能執行「%1$s」。</string>
+    <string name="common_google_play_services_update_title">更新 Google Play 服務</string>
+    <string name="common_google_play_services_updating_text">執行「%1$s」所需的 Google Play 服務正在更新。</string>
+    <string name="common_google_play_services_wear_update_text">必須使用新版 Google Play 服務。該服務稍後就會自動更新。</string>
+    <string name="common_open_on_phone">在手機上開啟</string>
+    <string name="common_signin_button_text">登入</string>
+    <string name="common_signin_button_text_long">使用 Google 帳戶登入</string>
+    <string name="app_name">Image App</string>
+    <string name="app_name_leica">Image Shuttle</string>
+    <string name="av_no_name">AV裝置</string>
+    <string name="baby_monitor">嬰兒監視器</string>
+    <string name="babymon_cannot_operation">此功能無法搭配嬰兒監視器功能使用。</string>
+    <string name="babymon_cant_regstid">"無法連線到伺服器。
+無法使用通知功能。"</string>
+    <string name="babymon_mic_resttime">還剩%02d秒鐘</string>
+    <string name="bracket_shooted_suspended">包圍攝影暫停。</string>
+    <string name="bracket_shooted_suspended_unable_recharge">包圍攝影暫停因閃光無法重新充電。</string>
+    <string name="btn_ask_idsync_no">不要複製</string>
+    <string name="btn_ask_idsync_yes">複製</string>
+    <string name="btn_geotag_not_takeover">不要更新</string>
+    <string name="btn_geotag_takeover">更新</string>
+    <string name="btn_geotag_takeover_delete">清除</string>
+    <string name="btn_phcol_change_frame">變更相框</string>
+    <string name="btn_phcol_change_photo">變更照片</string>
+    <string name="cam_command_msg_check_camera">請檢查相機/攝錄機。</string>
+    <string name="cam_command_msg_sending">與相機/攝錄機通訊中…</string>
+    <string name="cam_command_msg_sending_error">與相機/攝錄機通訊時發生錯誤。</string>
+    <string name="camera_ap_password">密碼：</string>
+    <string name="camera_ap_ssid">SSID:</string>
+    <string name="cinelike_dolly_zoom">Dolly變焦</string>
+    <string name="cinelike_slow_quick">慢/快</string>
+    <string name="cloud_msg_cancel">取消？</string>
+    <string name="cloud_msg_canceled">已取消。</string>
+    <string name="cloud_msg_no_update">不需更新。</string>
+    <string name="cloud_msg_update">更新？</string>
+    <string name="cloud_msg_update_error">更新失敗。</string>
+    <string name="cloud_msg_updated">更新完成。</string>
+    <string name="cloud_msg_updating">更新中...</string>
+    <string name="cm_msg_error_cloud_save_local">因為發生錯誤，而未儲存某些影像。</string>
+    <string name="cm_msg_remain">剩餘時間：</string>
+    <string name="cmn_auto_cloud_backup">自動備份</string>
+    <string name="cmn_bluetooth">Bluetooth</string>
+    <string name="cmn_bluetooth_setting">藍牙設定</string>
+    <string name="cmn_bluetooth_setting_short">藍牙設定</string>
+    <string name="cmn_bt_remote_controller">快門遙控</string>
+    <string name="cmn_bt_remote_controller_title">快門遙控</string>
+    <string name="cmn_btn_cancel">取消</string>
+    <string name="cmn_btn_close">關閉</string>
+    <string name="cmn_btn_detail">詳細資訊</string>
+    <string name="cmn_btn_dicision">設定</string>
+    <string name="cmn_btn_end">退出</string>
+    <string name="cmn_btn_execute">執行</string>
+    <string name="cmn_btn_execute_short">執行</string>
+    <string name="cmn_btn_ok">確定</string>
+    <string name="cmn_btn_reset">重設</string>
+    <string name="cmn_btn_save">儲存</string>
+    <string name="cmn_btn_update">更新</string>
+    <string name="cmn_build_number">版本號碼</string>
+    <string name="cmn_camera_setting">相機設定</string>
+    <string name="cmn_camera_setting_copy">相機設定複製</string>
+    <string name="cmn_camera_setting_copy2">"相機設定
+複製"</string>
+    <string name="cmn_camera_setting_copy3">"相機設定
+複製"</string>
+    <string name="cmn_camera_setting_delete">清除</string>
+    <string name="cmn_camera_setting_rename">變更名稱</string>
+    <string name="cmn_camera_setting_save">保存設定</string>
+    <string name="cmn_camera_setting_saved_settings">保存的相機設定</string>
+    <string name="cmn_camera_setting_send_camera">傳送到相機</string>
+    <string name="cmn_card_protected">記憶卡已鎖住，無法寫入。請將其解鎖。</string>
+    <string name="cmn_cloud_backup">備份到雲端</string>
+    <string name="cmn_cloud_backup1">雲端備份</string>
+    <string name="cmn_cloud_backup_ap_ssid">無線存取點的連接資訊（SSID）</string>
+    <string name="cmn_cloud_backup_connect_ap">要連接的無線存取點</string>
+    <string name="cmn_cloud_backup_connection_test">連接測試</string>
+    <string name="cmn_cloud_backup_picmate_settings">雲端設定</string>
+    <string name="cmn_cloud_backup_remove_location_data">刪除位置資料</string>
+    <string name="cmn_cloud_backup_send_size">大小</string>
+    <string name="cmn_cloud_backup_send_size_l">L</string>
+    <string name="cmn_cloud_backup_send_size_m">M</string>
+    <string name="cmn_cloud_backup_send_size_org">原始</string>
+    <string name="cmn_cloud_backup_send_size_s">S</string>
+    <string name="cmn_cloud_backup_send_size_vga">VGA</string>
+    <string name="cmn_cloud_backup_start">開始</string>
+    <string name="cmn_cloud_backup_start_backup">開始備份</string>
+    <string name="cmn_cloud_backup_terminate">取消</string>
+    <string name="cmn_cloud_backup_terminate_condition_battery">停止條件 (相機電池的剩餘電量)</string>
+    <string name="cmn_connect">連接</string>
+    <string name="cmn_connect_mode_qr_code">QR碼</string>
+    <string name="cmn_connect_mode_wifi">Wi-Fi</string>
+    <string name="cmn_connection_dsc_direct">直接</string>
+    <string name="cmn_connection_dsc_network">透過網路</string>
+    <string name="cmn_connection_dsc_wifi_direct">Wi-Fi Direct</string>
+    <string name="cmn_connection_movie_direct">直接連線</string>
+    <string name="cmn_connection_movie_network">無線接入點連線</string>
+    <string name="cmn_connection_tethering">行動無線基地台</string>
+    <string name="cmn_contorl_camera">通過相機操作</string>
+    <string name="cmn_digital_still_camera">數位相機</string>
+    <string name="cmn_digital_video_camera">數位攝影機</string>
+    <string name="cmn_digital_video_camera_wearable">運動型攝錄相機</string>
+    <string name="cmn_error_title">錯誤</string>
+    <string name="cmn_function_dsc_connect_sp">遙控拍攝及檢視</string>
+    <string name="cmn_function_dsc_send_image_camera">傳送儲存在相機中的影像</string>
+    <string name="cmn_function_dsc_send_image_recording">在拍攝時傳送影像</string>
+    <string name="cmn_function_movie_remote_control">遙控</string>
+    <string name="cmn_help_url">http://panasonic.jp/support/spn/global/dsc/help/l_link2.1/zh-tw/</string>
+    <string name="cmn_help_url_test">http://panasonic.jp/support/spn/global/dsc/help/YN_19102012_l_link2.1/zh-tw/</string>
+    <string name="cmn_imageapp_help_url">http://panasonic.jp/support/spn/global/dsc/help/image_app/zh-tw/</string>
+    <string name="cmn_imageapp_help_url_test">http://panasonic.jp/support/spn/global/dsc/help/test_1120_image_app/zh-tw/</string>
+    <string name="cmn_imageshuttle_help_url">http://www.leica-image-shuttle.help.leica-camera.com/</string>
+    <string name="cmn_imageshuttle_license_html_android">license_android_en</string>
+    <string name="cmn_label_title_nextskipview">不要再顯示此畫面。</string>
+    <string name="cmn_llink_dummy" />
+    <string name="cmn_msg_3box_no_contents_found">找不到可播放的內容。</string>
+    <string name="cmn_msg_3box_skip_play_mp4_a500">"只有下列格式的影片可以在電視上播放。
+“848x480/30p(25p)”
+“848x480/240fps(200fps)”
+“1280x720/30p(25p)”
+“1280x720/120fps(100fps)”"</string>
+    <string name="cmn_msg_3box_skip_play_mp4_vertical">"只有下列格式的影片可以在電視上播放。
+“640x480/30p”"</string>
+    <string name="cmn_msg_3box_skip_play_mp4_wearable">"只有下列格式的影片可以在電視上播放。
+“848x480/30p(25p)” 與 “848x480/240fps(200fps)”。"</string>
+    <string name="cmn_msg_already_regist">已登錄</string>
+    <string name="cmn_msg_ask_camera_change_rec_mode">用相機/攝錄機切換到記錄模式。</string>
+    <string name="cmn_msg_camera_changed_rec_mode">相機/攝錄機已切換至拍攝模式。</string>
+    <string name="cmn_msg_cannot_play_3box">選取的場景不能在電視上播放。</string>
+    <string name="cmn_msg_cannot_play_3box_mp4_60p">格式為MP4 1920x1080/60p (50p)的影片無法於電視機上播放。</string>
+    <string name="cmn_msg_cannot_play_mp4">此相機/攝錄機的MP4內容無法於電視上播放。</string>
+    <string name="cmn_msg_check_receive_image">要檢查下載的相片嗎？</string>
+    <string name="cmn_msg_confirm_app_finish_on_back_pressed">再按一次按鈕，離開此應用程式。</string>
+    <string name="cmn_msg_connect_camera">相機/攝錄機 [%s] 已連線。</string>
+    <string name="cmn_msg_connect_error">連接失敗。</string>
+    <string name="cmn_msg_connect_local_mode">"連接失敗。
+開啟本機模式。"</string>
+    <string name="cmn_msg_delete_all_data">刪除資料？</string>
+    <string name="cmn_msg_delete_data">資料已刪除。</string>
+    <string name="cmn_msg_disconnected">"無法連接相機/攝錄機。
+請再次設定相機/攝錄機的 Wi-Fi 連線。"</string>
+    <string name="cmn_msg_disconnected2">無法連接相機/攝錄機。</string>
+    <string name="cmn_msg_disconnected_and_retry_connect">相機/攝錄機沒有回應。在相機/攝錄機上重新設定Wi-Fi，或移動至較好的無線訊號接收環境下，再輕觸“確定”按鈕。</string>
+    <string name="cmn_msg_disconnected_and_wait_for_recieve">"相機/攝錄機連線中斷或拍攝模式結束。
+請重新設定相機/攝錄機的Wi-Fi連線或複製影像。"</string>
+    <string name="cmn_msg_disconnected_and_wait_for_recieve_short">"相機/攝錄機連線中斷或拍攝模式結束。
+您可以複製影像。"</string>
+    <string name="cmn_msg_disconnected_dmr">連線至播放裝置中斷。</string>
+    <string name="cmn_msg_error_not_internet">"尚未連接至網際網路。
+請連接到網際網路。"</string>
+    <string name="cmn_msg_error_rec">"拍攝失敗。
+請檢查相機/攝錄機或記憶卡。"</string>
+    <string name="cmn_msg_help_error_not_internet">"無法載入 “說明”，因為您的智能手機未連接到網際網路。
+請連接到網際網路。"</string>
+    <string name="cmn_msg_jump_snap_warning">若要用跳躍快照拍攝，請將相機/攝影機設定為“單張”。</string>
+    <string name="cmn_msg_just_a_moment">請稍候...</string>
+    <string name="cmn_msg_movie_rec_disable">目前無法拍攝影片。</string>
+    <string name="cmn_msg_need_lumix_link">在您的智能手機/平板電腦上安裝 [LUMIX LINK]，以連線到所選的相機/攝錄機。</string>
+    <string name="cmn_msg_not_change_mode_in_cam_writing">因為相機/攝錄機正在進行拍攝，所以無法變更目前的模式。</string>
+    <string name="cmn_msg_not_connect_in_com_recording">因為相機/攝錄機正在拍攝影片，所以無法連線。</string>
+    <string name="cmn_msg_not_func_now_camera_recording">正在用相機/攝錄機記錄視頻...</string>
+    <string name="cmn_msg_not_func_now_camera_use">此功能目前不能使用，因為相機/攝錄機正在執行另一項操作。</string>
+    <string name="cmn_msg_not_func_now_common">目前還無法使用此功能。</string>
+    <string name="cmn_msg_not_func_now_movie_recording">拍攝影片時，無法使用此功能。</string>
+    <string name="cmn_msg_not_func_now_photo_recording">拍攝照片時，無法使用此功能。</string>
+    <string name="cmn_msg_not_func_now_receive_image">此功能目前不能使用，因為正在從相機/攝錄機下載相片。</string>
+    <string name="cmn_msg_not_func_now_regist_image">因為正在登錄影像，所以此時無法使用此功能。</string>
+    <string name="cmn_msg_not_func_now_selftimer_waitting">此功能無法搭配自拍計時器使用。</string>
+    <string name="cmn_msg_not_func_now_shooting">請稍候...</string>
+    <string name="cmn_msg_not_func_now_speaking">此功能無法搭配遠程聲音功能使用。</string>
+    <string name="cmn_msg_not_movie_rec_in_cam_writing">因為相機/攝錄機正在進行拍攝，所以此時無法拍攝影片。</string>
+    <string name="cmn_msg_now_camera_use">相機/攝錄機正在進行操作。</string>
+    <string name="cmn_msg_now_camera_use_snapmovie">數位相機的快照影片功能設定為ON時，不能執行這項操作。請將快照影片設定為OFF，以便使用這個應用程式。</string>
+    <string name="cmn_msg_now_recieve_images_from_camera">正在從相機/攝錄機下載影像...</string>
+    <string name="cmn_msg_now_regist_image">正在登錄收到的影像...</string>
+    <string name="cmn_msg_only_movie">僅限MP4影片</string>
+    <string name="cmn_msg_only_picture">僅限照片</string>
+    <string name="cmn_msg_picmate_cloud_warning">在可下載的裝置如個人電腦或智能手機上完成雲端同步設定後，即可上傳至雲端資料夾。</string>
+    <string name="cmn_msg_picmate_cloud_warning2">雲端資料夾會保存傳輸的影像30天（最多1000張圖片）。 傳輸30天後，傳輸的影像會被自動清除。</string>
+    <string name="cmn_msg_picmate_cloud_warning3">從雲端資料夾到所有指定的裝置的影像的下載完成時，即使在傳輸後的30 天內，影像可能也會被從雲端資料夾中清除。</string>
+    <string name="cmn_msg_picture_shutter_disable">目前無法拍攝照片。</string>
+    <string name="cmn_msg_qr_error">無法讀取 QR 碼。</string>
+    <string name="cmn_msg_read_qr_code">將QR碼置於方框中並擷取該碼。</string>
+    <string name="cmn_msg_remain_60min_or_less">記憶卡容量不足。以此模式拍攝，您需要至少剩餘60分鐘。</string>
+    <string name="cmn_msg_remain_zero">"記憶體不足。
+請檢查相機/攝錄機。"</string>
+    <string name="cmn_msg_sd_unset">"沒有記憶卡。
+請檢查相機/攝錄機。"</string>
+    <string name="cmn_msg_server_multi">選取要連接的相機/攝錄機。</string>
+    <string name="cmn_msg_server_zero">"無法連接到相機/攝錄機。
+在 Wi-Fi 設定中，檢查是否已選取要連接的相機/攝錄機。"</string>
+    <string name="cmn_msg_server_zero_2">此時無法使用此功能。</string>
+    <string name="cmn_msg_server_zero_2_old">此時無法使用此功能。請確認您相機/攝錄機及智能手機的Wi-Fi設定，然後於“設定連接目的地”之下選取相機/攝錄機。</string>
+    <string name="cmn_msg_server_zero_old">"找不到要連接的相機/攝錄機。
+請從功能表選取要連接的相機/攝錄機。"</string>
+    <string name="cmn_msg_server_zero_os_wifi">檢查裝置的 Wi-Fi 設定，確認是否已選取要連接的相機/攝錄機。</string>
+    <string name="cmn_msg_wifi_connect_longtime">連線可能需時數分鐘。</string>
+    <string name="cmn_msg_wifi_multi">選取要連接的存取點。</string>
+    <string name="cmn_network">網路</string>
+    <string name="cmn_network_ap_camera_id">SSID</string>
+    <string name="cmn_network_camera_ssid">SSID</string>
+    <string name="cmn_network_live_camera_id">SSID</string>
+    <string name="cmn_network_wps">WPS</string>
+    <string name="cmn_next">下一步</string>
+    <string name="cmn_no">否</string>
+    <string name="cmn_notification_title">有一封Image App的通知。</string>
+    <string name="cmn_notification_title_leica">有一封Image Shuttle的通知。</string>
+    <string name="cmn_now_wait_camera_response">正在等待相機/攝錄機反應…</string>
+    <string name="cmn_off">關閉</string>
+    <string name="cmn_on">開啟</string>
+    <string name="cmn_particle_high">高</string>
+    <string name="cmn_particle_low">低</string>
+    <string name="cmn_particle_mid">標準</string>
+    <string name="cmn_particle_off">關閉</string>
+    <string name="cmn_pict_saved">照片已儲存。</string>
+    <string name="cmn_registered_camera">相機已登錄</string>
+    <string name="cmn_registerring_camera">相機允許進行登錄</string>
+    <string name="cmn_remain_battery_1">電池剩餘一格電</string>
+    <string name="cmn_remain_battery_2">電池剩餘兩格電</string>
+    <string name="cmn_remote_watch">家居監察</string>
+    <string name="cmn_search">搜尋</string>
+    <string name="cmn_settings">設定</string>
+    <string name="cmn_single_shoot">單張</string>
+    <string name="cmn_skip">略過</string>
+    <string name="cmn_slepp">休眠</string>
+    <string name="cmn_smart_app_url">http://panasonic.jp/pss/</string>
+    <string name="cmn_standby">待機</string>
+    <string name="cmn_stop_reason_value">[%d]</string>
+    <string name="cmn_unregist_camera">取消登錄</string>
+    <string name="cmn_waiting_transfer">等待影像傳輸</string>
+    <string name="cmn_wifi">Wi-Fi</string>
+    <string name="cmn_wifi_setting_short">Wi-Fi設定</string>
+    <string name="cmn_yes">是</string>
+    <string name="cnm_msg_please_talk">說話</string>
+    <string name="connect_msg_nfc_reset_history">若要連接相機/攝影機，請從開頭開始。</string>
+    <string name="content_type_avchd">AVCHD</string>
+    <string name="content_type_avchd_3d">AVCHD-3D</string>
+    <string name="content_type_avchd_50i">1080/50i</string>
+    <string name="content_type_avchd_50p">1080/50p</string>
+    <string name="content_type_avchd_60i">1080/60i</string>
+    <string name="content_type_avchd_60p">1080/60p</string>
+    <string name="content_type_avchd_sbs">SbS</string>
+    <string name="content_type_jpeg">JPEG</string>
+    <string name="content_type_mp4">MP4/iFrame</string>
+    <string name="content_type_mp4_only">MP4</string>
+    <string name="demo_msg_nfc_explain">請以智能手機點選相機/攝錄機端的 NFC 標記。</string>
+    <string name="easy_setting_confirm_at_camera">[在相機／攝錄機上確認]</string>
+    <string name="easy_setting_connection_test_on_camera">(3)在相機/攝錄機上執行“連接測試”。</string>
+    <string name="easy_setting_current_time_camera">相機／攝錄機的目前時間</string>
+    <string name="easy_setting_current_time_sp">智能手機的目前時間</string>
+    <string name="easy_setting_id_camera">已登錄於相機／攝錄機中的LUMIX CLUB登入ID</string>
+    <string name="easy_setting_live_cast">Live 播放</string>
+    <string name="easy_setting_msg_already_regist_id">LUMIX CLUB登入ID已登錄於此相機／攝錄機中。</string>
+    <string name="easy_setting_msg_finish_setting">智能手機連接到相機／攝錄機的Wi-Fi功能已初始化。</string>
+    <string name="easy_setting_msg_need_operation">若要使用Live播放功能，還必須執行下列的額外操作。</string>
+    <string name="easy_setting_msg_need_regist">*您必須先註冊，才能使用Live播放、嬰兒監視器及DLNA功能。</string>
+    <string name="easy_setting_msg_need_regist_id_for_use">*如果您還沒有LUMIX CLUB登入ID與密碼，請先使用電腦或其他裝置取得LUMIX CLUB登入ID與密碼。</string>
+    <string name="easy_setting_msg_regist_access_point">在相機／攝錄機中登錄您的Wi-Fi網路。</string>
+    <string name="easy_setting_msg_regist_id_to_camera">在相機／攝錄機中登錄您的LUMIX CLUB登入ID與密碼。</string>
+    <string name="easy_setting_msg_skip_or_next_syncronize">若裝置已同步，您可以略過此步驟。若要使裝置再次同步，請觸碰下一步。</string>
+    <string name="easy_setting_msg_skip_or_next_use">若要繼續使用此登入ID，請觸碰略過。若要變更此登入ID，請觸碰下一步。</string>
+    <string name="easy_setting_msg_ssid_exist">已使用相同的SSID進行過登錄。</string>
+    <string name="easy_setting_msg_syncronize_time">智能手機的時鐘與相機／攝錄機的時鐘將會同步。</string>
+    <string name="easy_setting_regist_access_point">熱點登錄</string>
+    <string name="easy_setting_regist_access_point_for_use">如果您要使用熱點，請先進行登錄。</string>
+    <string name="easy_setting_regist_ustream_id">(1)正在取得USTREAM ID</string>
+    <string name="easy_setting_select_item">選取您想要設定的項目。</string>
+    <string name="easy_setting_setting_at_pc">[透過電腦或其他裝置執行設定]</string>
+    <string name="easy_setting_syncronize_time">時鐘同步</string>
+    <string name="easy_setting_ustream_setting_at_picmate">登入LUMIX CLUB，選擇網路服務連結設定，然後設定USTREAM。</string>
+    <string name="easy_setting_web_setting_at_picmate">(2)在LUMIX CLUB上設定網路服務連結(USTREAM)</string>
+    <string name="easy_wifi_setting_ap_msg">"請選擇要連接的存取點。
+當存取點尚未註冊時，請選取第一個可用的空白行 (上方) 以註冊無線存取點。"</string>
+    <string name="easywifi_clock_camtime_known">時間不明</string>
+    <string name="easywifi_mimamori_invalidatedata">由相機/攝錄機取得之資訊不正確。</string>
+    <string name="easywifi_picmate_overwrite">"此登入ID已經登錄至相機/攝錄機。
+是否要覆寫？"</string>
+    <string name="easywifi_picmate_setting">正在設定LUMIX CLUB ID...</string>
+    <string name="easywifi_setting_ap_comment">"在相機／攝錄機中登錄熱點。
+
+如果您要使用熱點，請先進行登錄。
+
+*您必須先註冊，才能使用Live播放、嬰兒監視器及DLNA功能。"</string>
+    <string name="easywifi_setting_ap_comment_for_wearable">"在相機／攝錄機中登錄熱點。
+
+如果您要使用熱點，請先進行登錄。
+
+*您需要先登錄，才能使用Live播放與DLNA功能。"</string>
+    <string name="easywifi_setting_ap_comment_for_wearable_no_livecast">"在相機／攝錄機中登錄熱點。
+
+如果您要使用熱點，請先進行登錄。
+
+*您需要先登錄，才能使用DLNA功能。"</string>
+    <string name="easywifi_setting_clock_comment">"智能手機的時鐘與相機／攝錄機的時鐘將會同步。
+
+相機／攝錄機的目前時間
+%1$s
+
+智能手機的目前時間
+%2$s
+
+若裝置已同步，您可以略過此步驟。若要使裝置再次同步，請觸碰下一步。"</string>
+    <string name="easywifi_setting_mimamori_title">家居監察設定</string>
+    <string name="easywifi_setting_nodata">由相機/攝錄機取得資訊失敗。</string>
+    <string name="easywifi_setting_picmate_comment">"在相機／攝錄機中登錄您的LUMIX CLUB登入ID與密碼。
+
+*如果您還沒有LUMIX CLUB登入ID與密碼，請先使用電腦或其他裝置取得LUMIX CLUB登入ID與密碼。
+
+%s
+
+若要繼續使用此登入ID，請觸碰略過。若要變更此登入ID，請觸碰下一步。"</string>
+    <string name="easywifi_setting_picmate_login_invalidate">輸入登入ID與密碼。</string>
+    <string name="easywifi_setting_ustream_comment">"智能手機連接到相機／攝錄機的Wi-Fi功能已初始化。
+
+為了使用Live頻道功能，也必須執行下列的額外操作。
+
+[透過電腦或其他裝置執行設定]
+(1)正在取得USTREAM ID
+
+(2)在LUMIX CLUB上設定網路服務連結(USTREAM)
+登入LUMIX CLUB，選擇網路服務連結設定，然後設定USTREAM。
+
+[在相機／攝錄機上確認]
+(3)在相機/攝錄機上執行“連接測試”。"</string>
+    <string name="easywifi_setting_ustream_comment2">"智能手機連接到相機／攝錄機的Wi-Fi功能已初始化。
+
+為了使用Live頻道功能，也必須執行下列的額外操作。
+
+[透過電腦或其他裝置執行設定]
+(1)正在取得USTREAM ID
+
+(2)在LUMIX CLUB上設定網路服務連結(USTREAM)
+登入LUMIX CLUB，選擇網路服務連結設定，然後設定USTREAM。
+"</string>
+    <string name="easywifi_setting_ustream_title">USTREAM設定</string>
+    <string name="explain_menu_privacy_notice">“功能表” -> “應用程式功能” -> “用量條件” -> “自動傳送”</string>
+    <string name="exposure_compensation">曝光補償</string>
+    <string name="folder_type_dsc">LUMIX</string>
+    <string name="folder_type_dsc_sd1">LUMIX(SD1)</string>
+    <string name="folder_type_dsc_sd2">LUMIX(SD2)</string>
+    <string name="folder_type_leica_dsc">Leica</string>
+    <string name="folder_type_movie">攝錄機</string>
+    <string name="folder_type_movie_mem">攝錄機 (內置記憶體)</string>
+    <string name="folder_type_movie_sd">攝錄機 (SD)</string>
+    <string name="func_app_boot_android">您必須要能存取網際網路才能啟動 [%s]。</string>
+    <string name="func_app_btn_boot">啟動應用程式</string>
+    <string name="func_app_btn_google_play">前往Google Play</string>
+    <string name="func_app_install_android">您必須要能存取網際網路才能安裝 [%s]。</string>
+    <string name="func_app_need_reboot">若您的智能手機現正直接連接至相機/攝錄機，請切換為其他允許存取網際網路的連線方法，並重新啟動應用程式。</string>
+    <string name="func_auto_phcol_detail">攝影機會自動從拍攝場景中選取多張最佳照片，然後其將被組合而成單張照片。</string>
+    <string name="func_geotag_detail">將會在此照片中加入智能手機/平板電腦的定位資訊。</string>
+    <string name="func_guidance_picture_send">傳送影像</string>
+    <string name="func_guidance_remote_controll">遙控操作</string>
+    <string name="func_highlight_detail">您可以從多個場景擷取重點並加以播放，然後將其儲存為短片。</string>
+    <string name="func_homemonitor_detail">您可以在外出時監視家中的狀況。</string>
+    <string name="func_item_auto_phcol">重點相片拼貼</string>
+    <string name="func_item_auto_phcol_2">重點相片拼貼</string>
+    <string name="func_item_geotag">地理標記</string>
+    <string name="func_item_highlight">精選重溫</string>
+    <string name="func_item_highlight_2">精選重溫</string>
+    <string name="func_item_phcol">相片拼貼</string>
+    <string name="func_item_phcol_2">相片拼貼</string>
+    <string name="func_item_picmate">LUMIX CLUB PicMate</string>
+    <string name="func_item_smartapp">Panasonic SmartApp</string>
+    <string name="func_item_smartapp_2">Panasonic SmartApp</string>
+    <string name="func_item_snap_movie">快照影片</string>
+    <string name="func_item_snap_movie_2">快照影片</string>
+    <string name="func_item_stopmotion">停格動畫輔助</string>
+    <string name="func_phcol_detail">您可以組合您喜愛的照片來建立單一影像。</string>
+    <string name="func_picmate_detail">您可以“分類、分享及顯示”使用數位相機/攝錄機所拍攝之照片與影片的分享網站</string>
+    <string name="func_smartapp_detail" />
+    <string name="func_snapmovie_detail">您可以合併以相機/攝影機的快照影片模式所拍攝的影片</string>
+    <string name="func_stopmotion_detail">您可以使用先前拍攝的照片，做為下一張照片的背景，並且一邊看著背景，一邊拍攝照片</string>
+    <string name="func_tab_btn">功能</string>
+    <string name="func_transfer_all">全部</string>
+    <string name="func_transfer_auto">批次傳送</string>
+    <string name="func_transfer_auto_days">前 %d 天</string>
+    <string name="func_transfer_auto_today">今天</string>
+    <string name="func_transfer_only_movie">僅限影片</string>
+    <string name="func_transfer_only_picture">僅限照片</string>
+    <string name="func_transfer_picture_movie">照片與影片</string>
+    <string name="func_transfer_select">傳送選擇</string>
+    <string name="geotag_btn_allow_send_gps_data_to_camera">傳送資料</string>
+    <string name="geotag_btn_allow_synctime_with_camera">同步</string>
+    <string name="geotag_btn_allow_writting_to_picture">寫入</string>
+    <string name="geotag_btn_gps_logging_off">停止地理標記</string>
+    <string name="geotag_btn_gps_logging_on">起動地理標記</string>
+    <string name="geotag_button_delete_gps">清除</string>
+    <string name="geotag_button_gps_send_all">批次傳送</string>
+    <string name="geotag_button_send_geotag">傳送定位資料</string>
+    <string name="geotag_button_sync_time">時間同步</string>
+    <string name="geotag_cell_gps_worklog">操作記錄</string>
+    <string name="geotag_cell_interval">記錄間隔</string>
+    <string name="geotag_cell_interval_15sec">15 秒鐘</string>
+    <string name="geotag_cell_interval_1sec">1 秒鐘</string>
+    <string name="geotag_cell_interval_30sec">30 秒鐘</string>
+    <string name="geotag_cell_interval_5sec">5 秒鐘</string>
+    <string name="geotag_cell_interval_60sec">60 秒鐘</string>
+    <string name="geotag_cell_save_gps">記錄定位資訊</string>
+    <string name="geotag_label_gps_logging_disable">無法取得定位資料</string>
+    <string name="geotag_label_gps_logging_enable">正在取得定位資料...</string>
+    <string name="geotag_label_gps_logging_off">地理標記關閉</string>
+    <string name="geotag_label_gps_logging_on">正在開啟地理標記...</string>
+    <string name="geotag_label_gps_nfc_touch">透過NFC傳送</string>
+    <string name="geotag_label_lastsynctime">上次同步時間：</string>
+    <string name="geotag_msg_ask_write_to_picture">是否將目前的定位資訊寫入影像檔案?</string>
+    <string name="geotag_msg_camera_error">所連接的相機/攝錄機不支援定位記錄。</string>
+    <string name="geotag_msg_cancel_write_to_picture">"寫入程序已取消。
+定位資料已傳送至相機/攝影機。"</string>
+    <string name="geotag_msg_cant_send_gpsdata">無法傳送定位資料。</string>
+    <string name="geotag_msg_error_write_to_picture">寫入定位資料失敗。</string>
+    <string name="geotag_msg_gps_setting">"若要開啟（ON）定位記錄，就必須啟用GPS功能。
+要啟用GPS功能嗎？"</string>
+    <string name="geotag_msg_gps_setting_off">"將關閉定位記錄。
+要一併變更GPS功能設定嗎？"</string>
+    <string name="geotag_msg_if_you_start_send_gps_data">所連接的相機/攝錄機必須支援定位記錄。是否要傳送定位資料？</string>
+    <string name="geotag_msg_if_you_start_synctime">所連接的相機/攝錄機必須支援定位記錄。是否要執行時間同步？</string>
+    <string name="geotag_msg_now_write_to_picture">正在寫入定位資料...</string>
+    <string name="geotag_msg_sdcard_is_protected_gps">SD卡受保護。請取消保護。</string>
+    <string name="geotag_msg_sync_cancel">已取消時間同步。</string>
+    <string name="geotag_msg_sync_error">時間同步失敗。</string>
+    <string name="geotag_title">地理標記</string>
+    <string name="geotag_title_label_delete_gps_select">"已傳送定位資料。
+清除定位資料?"</string>
+    <string name="geotag_title_label_send_gps_now">傳送定位資料...</string>
+    <string name="geotag_title_label_sync_time_now">同步時間...</string>
+    <string name="geotag_worklog_savepointnum">定位記錄數目：</string>
+    <string name="geotag_worklog_status_delege_gps_data">已刪除定位資料。</string>
+    <string name="geotag_worklog_status_error_gps">定位記錄異常終止。</string>
+    <string name="geotag_worklog_status_error_send_gps_data">定位資料傳輸失敗。</string>
+    <string name="geotag_worklog_status_error_synctime">時間同步失敗。</string>
+    <string name="geotag_worklog_status_error_write_to_camera">讀取定位資料失敗。</string>
+    <string name="geotag_worklog_status_off">已關閉（OFF）“記錄定位資訊”。</string>
+    <string name="geotag_worklog_status_on">已開啟（ON）“記錄定位資訊”。</string>
+    <string name="geotag_worklog_status_send_gps_data">已將定位資料傳送至相機/攝錄機。</string>
+    <string name="geotag_worklog_status_synctime">時間同步已完成。</string>
+    <string name="geotag_worklog_status_write_to_camera">讀取定位資料已完成。</string>
+    <string name="giotag_msg_no_gps_function">此裝置無法使用GPS功能。</string>
+    <string name="highlight_duration_180sec">約3分鐘</string>
+    <string name="highlight_duration_90sec">約90秒</string>
+    <string name="highlight_duration_none">自動</string>
+    <string name="highlight_effect_clasical">古典音樂</string>
+    <string name="highlight_effect_dynamic">動態音樂</string>
+    <string name="highlight_effect_natural">自然音樂</string>
+    <string name="highlight_effect_off">關閉</string>
+    <string name="highlight_effect_pop">流行音樂</string>
+    <string name="highlight_option_effect">特效</string>
+    <string name="highlight_option_playtime">播放時間</string>
+    <string name="highlight_option_priority">人臉偵測優先</string>
+    <string name="highlight_priority_off">關閉</string>
+    <string name="highlight_priority_on">開啟</string>
+    <string name="mgs_vrec_stop_write">發生寫入錯誤，所以已停止拍攝。</string>
+    <string name="mic_level_setting_title">麥克風聲量</string>
+    <string name="movieslideshow_error_bgmcheck">無法使用此檔案建立精選。</string>
+    <string name="movieslideshow_error_bgmcheck_copy_protected">無法使用此檔案建立精選，因為檔案的內容受版權保護。</string>
+    <string name="movieslideshow_option_bgm">背景音樂</string>
+    <string name="movieslideshow_option_bgm_original">音源</string>
+    <string name="movieslideshow_option_bgm_preset">預設</string>
+    <string name="movieslideshow_option_bgm_setting">音訊設定</string>
+    <string name="movieslideshow_save_format">儲存格式</string>
+    <string name="movieslideshow_save_format_mp4high">MP4/高畫質</string>
+    <string name="movieslideshow_save_format_mp4low">MP4/低畫質</string>
+    <string name="movieslideshow_setting_bgm">啟用時，您可以在執行時指定背景音樂。</string>
+    <string name="movieslideshow_setting_title">啟用時，您可以在執行時指定標題影像。</string>
+    <string name="movieslideshow_title_picture">標題影像</string>
+    <string name="movieslideshow_title_settings">標題設定</string>
+    <string name="movieslideshow_warning_bgm">未選取音樂檔案。您確定要不選取音樂檔案便開始建立精選嗎?</string>
+    <string name="movieslideshow_warning_picture">未選取影像。您想要不設定標題影像而建立精選嗎？</string>
+    <string name="msg_4k_photo_marking_limit_over">由於書籤最大數量為 40 個，您無法再繼續設定。</string>
+    <string name="msg_4kprebrst_to_4kbrst">"動作停止 - 相機切換至4K 連拍模式。
+
+請等候相機冷卻。"</string>
+    <string name="msg_6kprebrst_to_6kbrst">"動作停止 - 相機切換至6K 連拍模式。
+
+請等候相機冷卻。"</string>
+    <string name="msg_access_number_incomplete">請為存取號碼輸入 4 個數字</string>
+    <string name="msg_address_number_incomplete">請為位址號碼輸入 16 個數字</string>
+    <string name="msg_ask_copy_picmate_id_to_app">"已設定相機/攝錄機的登入ID。
+您想要於此應用程式使用與相機/攝錄機相同的登入ID嗎？"</string>
+    <string name="msg_ask_copy_picmate_id_to_camera">"尚未設定相機/攝錄機的登入ID。
+您想要使用與此應用程式相同的登入ID嗎？"</string>
+    <string name="msg_ask_copy_snapmovie_previous">要複製%d天前以快照影片模式拍攝的短影片嗎？</string>
+    <string name="msg_ask_copy_snapmovie_today">要複製今日以快照影片模式拍攝的短影片嗎？</string>
+    <string name="msg_ask_create_stopmotion_video_now">要現在製作影片？</string>
+    <string name="msg_ask_create_stopmotion_video_withtime">"要建立影片嗎？
+可能需花費約 %d 分鐘。"</string>
+    <string name="msg_ask_delete_all_contents">要刪除目前顯示的相機/攝錄機檔案嗎？</string>
+    <string name="msg_ask_delete_all_contents_with_protect">要刪除目前顯示的相機/攝錄機檔案嗎？（將不會刪除受保護的檔案。）</string>
+    <string name="msg_ask_delete_setting">是否刪除設定？</string>
+    <string name="msg_ask_idsync_from_camera">已將LUMIX CLUB登入ID登錄至相機/攝錄機中。將LUMIX CLUB登入ID從相機/攝錄機複製到此應用程式？</string>
+    <string name="msg_ask_idsync_to_camera">已將LUMIX CLUB登入ID登錄至此應用程式中。將LUMIX CLUB登入ID從此應用程式複製到所連接的相機/攝錄機？</string>
+    <string name="msg_ask_idsync_to_camera2">已將LUMIX CLUB登入ID登錄至相機/攝錄機中。將LUMIX CLUB登入ID從此應用程式複製到所連接的相機/攝錄機？</string>
+    <string name="msg_ask_picjump_setting">"尚未執行“影像分享”設定。
+要現在執行嗎？"</string>
+    <string name="msg_ask_picjump_setting_yes">現在執行設定</string>
+    <string name="msg_ask_picmate_id_overwrite">在相機/攝錄機中登錄登入ID？</string>
+    <string name="msg_ask_quit_stopmotion">要結束停格拍攝？</string>
+    <string name="msg_ask_snapmovie_save_file">合併影片並儲存？</string>
+    <string name="msg_ask_stopmotion_use_prev_setting">要使用與前次拍攝相同的照片高寬比與品質嗎？</string>
+    <string name="msg_assert_temperature_warning">相機／攝錄機已在使用中。選取另一台相機／攝錄機，或關閉相機／攝錄機的Wi-Fi連線，然後再度開啟。</string>
+    <string name="msg_auto_transfer_connect_wifi">要透過Wi-Fi連接相機以接收來自於相機的影像（自動影像傳輸）嗎？</string>
+    <string name="msg_bt_remote_controller_cannot_use_for_autosend">當相機處於自動影像傳輸時，無法使用快門遙控。</string>
+    <string name="msg_bt_remote_controller_sw_on">開啟相機的電源開關。</string>
+    <string name="msg_bt_remote_controller_wifi_confirm">"相機連接Wi-Fi時無法使用快門遙控。
+終止相機的Wi-Fi連線嗎？"</string>
+    <string name="msg_bt_smart_phone_name">智能手機名稱</string>
+    <string name="msg_bt_smart_phone_name_explain">可更改相機中顯示的智能手機名稱。</string>
+    <string name="msg_bt_smart_phone_name_too_long">輸入的智能手機名稱過長。</string>
+    <string name="msg_camera_connecting_to_other">相機/攝影機正與其他智慧型手機或平板電腦建立連結。</string>
+    <string name="msg_camera_initialize_finished">已初始化連線相機/攝錄機的設定。</string>
+    <string name="msg_camera_no_battery">相機/攝錄機電池電量不足。相機/攝錄機電源即將關閉。</string>
+    <string name="msg_camera_not_registered_for_no_connected_wifi">"無法連接到存取點。 
+沒有完成登錄。"</string>
+    <string name="msg_camera_not_registered_for_user_refused">"相機拒絕連接。 
+沒有完成登錄。"</string>
+    <string name="msg_camera_numreset_finished">已重設該數字。</string>
+    <string name="msg_camera_registered">登錄已完成。</string>
+    <string name="msg_camera_setting_communcation_error">"無法與相機進行通訊。
+請重頭開始。"</string>
+    <string name="msg_camera_setting_limit_over">"無法再保存資料。 
+請刪除保存的相機設定。"</string>
+    <string name="msg_cancel_all">全部取消？</string>
+    <string name="msg_cannnot_delete_sd_protected">SD卡受保護。請取消保護。</string>
+    <string name="msg_cannnot_execute_because_content_protected">因為該影像受保護，所以無法執行此作業。請先解除保護。</string>
+    <string name="msg_cannnot_execute_because_content_short">此功能無法用於短於3秒的影像。</string>
+    <string name="msg_cannnot_execute_no_account">由於尚未登錄LUMIX CLUB登入ID，因此無法使用此功能。</string>
+    <string name="msg_cannnot_execute_no_internet">由於未連接到網際網路，因此無法使用此功能。</string>
+    <string name="msg_cannnot_execute_no_internet2">直接連線相機/攝錄機或未連線至網際網路時，無法使用此功能。</string>
+    <string name="msg_cannnot_picture_jump">目前無法使用此功能。</string>
+    <string name="msg_cannnot_picture_jump_no_data">尚未登錄“影像分享”設定。</string>
+    <string name="msg_cannnot_regist_picture_jump_sns">由於認證尚未完成，因此無法進行登錄。</string>
+    <string name="msg_cannnot_split_delete_cur_position">此時無法進行部分刪除。</string>
+    <string name="msg_cannnot_up_down_because_wps">無法變更使用WPS所設定的連線目的地優先順序。</string>
+    <string name="msg_cannot_action_camera_preparation">此功能目前無法使用，因為相機/攝影機的記憶卡正在執行維護。</string>
+    <string name="msg_cannot_communcation_camera_with_pairing">"無法與相機進行通訊。
+如果相機已完成配對，請釋放配對資訊，然後重頭開始。"</string>
+    <string name="msg_cannot_communcation_camera_without_pairing">無法與相機進行通訊。檢查相機側是否已取消配對。</string>
+    <string name="msg_cannot_communicate_camera">"無法與相機進行通訊。
+請重新選擇。"</string>
+    <string name="msg_cannot_connect_ap_with_bt_tethering">藍牙網路共用期間無法連接到存取點。</string>
+    <string name="msg_cannot_connect_camera_for_clear_pairing">無法連接相機，因為相機未設定 \"配對 \"。請重新登錄相機。</string>
+    <string name="msg_cannot_create_video_rec_two_sd">由於拍攝內容跨越兩張SD卡，會無法建立影片。</string>
+    <string name="msg_cannot_execute_sd_card_error">因為SD卡發生問題，所以無法使用此功能。</string>
+    <string name="msg_cannot_execute_sd_card_under_restoration">SD記憶卡正在維修中，所以無法使用此功能。</string>
+    <string name="msg_cannot_format_no_card_inserted">相機/攝錄機中未插入任何SD記憶卡。</string>
+    <string name="msg_cannot_format_sd_card_error">SD記憶卡有問題，所以無法進行格式化。</string>
+    <string name="msg_cannot_format_sd_card_protected">SD卡受保護。請取消保護。</string>
+    <string name="msg_cannot_format_sd_card_under_restoration">SD記憶卡正在維修中，所以無法進行格式化。</string>
+    <string name="msg_cannot_picture_jump_not_support_content">由於不支援此格式，因此無法使用此功能。</string>
+    <string name="msg_cannot_read_camera_preparation">無法讀取內容，因為相機/攝影機的記憶卡正在執行維護。</string>
+    <string name="msg_cannot_record_video_sdhc_sdxc">使用備份拍攝模式拍攝影片需要使用兩張相同的SD卡。</string>
+    <string name="msg_cannot_regist_camera_for_limit_over">"無法再登錄更多的相機。
+請取消已登錄的相機。"</string>
+    <string name="msg_cannot_restart_remote_wakeup">"因為相機的狀態，無法使用該功能。
+請確保相機未工作。
+當通過Wi-Fi連接至相機時，檢查Wi-Fi設置中的連接存取點。"</string>
+    <string name="msg_cannot_switch_current_sd">無法切換。</string>
+    <string name="msg_changed_target_content_highlight">已切換至可以使用精選重溫功能的影片。</string>
+    <string name="msg_changed_target_content_phcol">已切換至可以使用重點相片拼貼功能的影片。</string>
+    <string name="msg_cloud_backup_ble_disconnect">與相機的藍牙連接已中斷。</string>
+    <string name="msg_cloud_backup_camera_busy">相機正在操作，此時無法使用該功能。</string>
+    <string name="msg_cloud_backup_camera_busy_remote">終止相機的Wi-Fi連線。</string>
+    <string name="msg_cloud_backup_cannot_start">無法開始備份</string>
+    <string name="msg_cloud_backup_communicate_fail">無法與相機進行通訊。</string>
+    <string name="msg_cloud_backup_communication_error">"無法與相機進行通訊。 
+請重新選擇。"</string>
+    <string name="msg_cloud_backup_conection_test_cancel">連接測試取消。</string>
+    <string name="msg_cloud_backup_conection_test_fail">連接測試失敗。</string>
+    <string name="msg_cloud_backup_conection_test_success">連接測試完成。</string>
+    <string name="msg_cloud_backup_conection_test_testing_android">正在測試連接...(%1$d/%2$d)</string>
+    <string name="msg_cloud_backup_doing">相機正在進行雲端備份...</string>
+    <string name="msg_cloud_backup_finish">相機已完成雲端備份。</string>
+    <string name="msg_cloud_backup_finish_images">[%d張]</string>
+    <string name="msg_cloud_backup_no_ap">相機沒有登錄存取點。請登錄存取點。</string>
+    <string name="msg_cloud_backup_not_support">不支援備份</string>
+    <string name="msg_cloud_backup_not_working">備份停止中...</string>
+    <string name="msg_cloud_backup_setting">"通過接入點將相機圖像備份至雲端。
+若要配置雲端備份設定，請開啟相機的電源，然後通過藍牙連接。"</string>
+    <string name="msg_cloud_backup_setting_old">"透過存取點將相機的影像備份到雲端。
+若要配置雲端備份設定，請開啟相機的電源。"</string>
+    <string name="msg_cloud_backup_start">相機開始雲端備份。</string>
+    <string name="msg_cloud_backup_start_fail">無法啟動備份。</string>
+    <string name="msg_cloud_backup_terminate">相機的雲端備份已中止。</string>
+    <string name="msg_cloud_backup_to_finish">已完成%s的備份</string>
+    <string name="msg_cloud_backup_to_target">%s的備份正在進行...</string>
+    <string name="msg_cloud_backup_to_terminate">%s的備份已中止</string>
+    <string name="msg_cloud_backup_upload_target">上傳目的地</string>
+    <string name="msg_cloud_no_connecting">沒有連接相機/攝錄機</string>
+    <string name="msg_cmn_attention">注意</string>
+    <string name="msg_communication_error_occurred">與相機/攝錄機通訊過程中發生錯誤。</string>
+    <string name="msg_complete_id_sync">已登錄與相機/攝錄機相同的LUMIX CLUB登入ID。</string>
+    <string name="msg_confirm_auto_transfer_receive">是否連接至另一智能手機並接收該智能手機上的影像？</string>
+    <string name="msg_confirm_communication_env">檢查通訊環境是否存在任何問題。</string>
+    <string name="msg_confirm_network_connection">檢查連接。</string>
+    <string name="msg_confirm_selected_function">檢查功能。</string>
+    <string name="msg_connect_ap_on_wifi_setting">請連接到Wi-Fi設定之下的存取點。</string>
+    <string name="msg_connected">已連線</string>
+    <string name="msg_connected_to_camera">連結至相機/攝影機成功。</string>
+    <string name="msg_connecting">連線中...</string>
+    <string name="msg_connecting_camera">相機[%s]已連接。</string>
+    <string name="msg_connecting_camera_is_lumix_sync">使用 [LUMIX Sync] 供相機連線。</string>
+    <string name="msg_connecting_to_camera">正在連結至相機/攝影機。</string>
+    <string name="msg_connecting_to_camera1">正在連結至相機/攝影機。</string>
+    <string name="msg_connection_duplicated">"相機/攝錄機已在使用中。
+請選取其他相機 。"</string>
+    <string name="msg_connection_duplicated_dsc">相機／攝錄機已在使用中。選取另一台相機／攝錄機，或關閉相機／攝錄機的Wi-Fi連線，然後再度開啟。</string>
+    <string name="msg_connection_failed">"無法連接到相機/攝錄機。
+請檢查 Wi-Fi 設定。"</string>
+    <string name="msg_connection_nosupport_camera">不支援該裝置。</string>
+    <string name="msg_connection_test_phase_four">發生通訊錯誤。</string>
+    <string name="msg_connection_test_phase_one">無法連接到存取點。</string>
+    <string name="msg_connection_test_phase_three">發生通訊錯誤。</string>
+    <string name="msg_connection_test_phase_two">無法連線到伺服器。</string>
+    <string name="msg_connection_test_phase_zero">找不到無線熱點。</string>
+    <string name="msg_connectl_next_ap">連接到下列存取點。</string>
+    <string name="msg_cookie_policy_agreement">將自動傳送應用程式用量條件到伺服器。此設定可以稍後變更。</string>
+    <string name="msg_create_folder_error">無法建立資料夾</string>
+    <string name="msg_delete_camera_registration">取消登錄嗎？</string>
+    <string name="msg_delete_camera_registration_with_pairing">"已取消登錄。
+同時請在相機上釋放配對資訊。"</string>
+    <string name="msg_disable_shoot">無法拍攝影像</string>
+    <string name="msg_disconnect_camera">與相機的連接已中斷。</string>
+    <string name="msg_disconnectd_ssid">丟失與%s的連接。</string>
+    <string name="msg_dlna_play_explain">"
+[使用者將相機/攝錄機連接至DLNA裝置的注意事項]
+若是要在具備DLNA功能的電視上播放之影片，請將拍攝模式設為“848x480/30p(25p)”。
+
+設定方法：
+選取“功能表”->“拍攝設定”->“標準拍攝模式”，然後選取“拍攝模式”->“848x480/30p(25p)”。"</string>
+    <string name="msg_do_connect_wifi_for_regstering_camera">若要完成登錄，%s必須連接Wi-Fi。</string>
+    <string name="msg_enable_location_service">將“定位”設定設為開啟。</string>
+    <string name="msg_enable_wifi_direct">啟用Wi-Fi Direct</string>
+    <string name="msg_enable_wifi_setting_for_connection">"相機必須連接Wi-Fi。
+要啟用Wi-Fi嗎？"</string>
+    <string name="msg_err_save_file_not_supported">此功能無法使用，因為您的智慧型手機或平板電腦不支援此影像格式。</string>
+    <string name="msg_err_save_file_not_supported_or_lack_space">此功能無法使用，因為您的智慧型手機或平板電腦不支援此影像格式、或可用的儲存空間不足。</string>
+    <string name="msg_err_sync_id">複製LUMIX CLUB登入ID作業失敗。請檢查相機/攝錄機的連接。</string>
+    <string name="msg_error_af_lock">AF+MF功能無法使用，因為影像不在對焦內。</string>
+    <string name="msg_error_connect_app_need_update">無法連接到相機/攝影機。請更新此應用程式。</string>
+    <string name="msg_error_connect_check_camera">無法連線至相機/攝錄機。請檢查要連線的相機/攝錄機。</string>
+    <string name="msg_error_connect_check_input_param">無法連線至相機/攝錄機。請檢查裝置 ID 與密碼。</string>
+    <string name="msg_error_fail_to_copy_movieslideshow">複製已建立的精選檔案失敗。請將精選儲存為較低畫質格式，再次嘗試建立精選。</string>
+    <string name="msg_error_homemon_disconnected">相機/攝影機的連線中斷。請稍後再試一次。</string>
+    <string name="msg_error_login">登入失敗。</string>
+    <string name="msg_error_matanity_autoreview_reconnect">"檢查所拍攝的照片時，相機/攝影機連線中斷。
+已自動儲存所拍攝的照片。"</string>
+    <string name="msg_error_matanity_capture_full">已達拍攝的場景數上限，所以無法再進行拍攝。請建立新的定格動作項目。</string>
+    <string name="msg_error_matanity_create_project_full">日期資料夾與定格動作群組已滿，所以無法再建立新的定格動作照片。</string>
+    <string name="msg_error_pantilter_playmode">連線到遙遠雲台支架時，無法使用此功能。</string>
+    <string name="msg_error_picmate">與LUMIX CLUB通訊時發生錯誤。</string>
+    <string name="msg_error_picmate_agreement">由於無法取得使用條款，因此無法使用此功能。</string>
+    <string name="msg_error_picture_jump">上傳時發生錯誤。請確認已可存取網際網路。</string>
+    <string name="msg_error_picture_jump_invalid_data">無法上傳指定的影像，因為無法讀取資料。</string>
+    <string name="msg_error_picture_jump_need_check_application">"影像傳送失敗。
+請確認是否已安裝傳送目標應用程式。"</string>
+    <string name="msg_error_picture_jump_need_check_picmateserver_av">影像上傳失敗。請確認您已經完成在LUMIX CLUB註冊您的AV裝置。</string>
+    <string name="msg_error_regist">"新登錄失敗。
+請輸入8 – 16個字母及數字混合
+的字元字串。"</string>
+    <string name="msg_error_regist_password_length">"請輸入8 – 16個字母及數字混合
+的字元字串。"</string>
+    <string name="msg_error_setting_av">"AV裝置登記失敗。
+請確認輸入的位址號碼/存取號碼已經與 LUMIX CLUB登記。
+詳情請參考所用AV裝置的使用說明書。"</string>
+    <string name="msg_error_setting_cloud">雲端同步設定失敗。</string>
+    <string name="msg_error_upload_not_internet">檔案無法上傳，因為未連線到網際網路。</string>
+    <string name="msg_eula_agreement_new">"若要使用本應用程式，您必須同意使用條款。
+如果您同意，請點擊“同意”按鈕。"</string>
+    <string name="msg_eula_agreement_update">"本應用程式的使用條款已更新。
+若要繼續使用本應用程式，您必須同意使用條款。
+如果您同意，請點擊“同意”按鈕。"</string>
+    <string name="msg_file_copy_error_occurred">複製影像時發生錯誤。</string>
+    <string name="msg_file_copying">複製檔案中…</string>
+    <string name="msg_file_uploading">傳送檔案中...</string>
+    <string name="msg_focus_select_change_focus_mode">變更為 AF 模式進行拍攝後對焦。</string>
+    <string name="msg_focus_select_change_pint_position">對焦位置在操作中出現變更。拍攝已停止。</string>
+    <string name="msg_focus_select_shooting">正以拍攝後對焦拍攝</string>
+    <string name="msg_func_not_supported">您的裝置不支援此功能。</string>
+    <string name="msg_geotag_takeover_data1">已有較早版本的定位資料。</string>
+    <string name="msg_geotag_takeover_data2">必須更新定位資料以於此版本中使用。</string>
+    <string name="msg_geotag_takeover_data3">要更新定位資料嗎？</string>
+    <string name="msg_geotag_takeover_delete">要刪除較早版本所記錄的定位資料嗎？</string>
+    <string name="msg_geotag_takeover_executing">正在更新定位資料...</string>
+    <string name="msg_geotag_takeover_not_delete">不要刪除</string>
+    <string name="msg_high_temperature_warning">相機/攝錄機因為過熱而無法繼續運作。相機/攝錄機電源將關閉。</string>
+    <string name="msg_howto_end_exposure">輕觸拍攝按鈕取消曝光。</string>
+    <string name="msg_howto_picjump_setting">可以使用下列程序執行“影像分享”設定。</string>
+    <string name="msg_hrs_image_creating">生成高解析度影像</string>
+    <string name="msg_input_all_to_complete">完成所有項目時，請按 “完成”。</string>
+    <string name="msg_input_all_to_login">填寫完所有欄位之後，請按“登入”。</string>
+    <string name="msg_input_all_to_regist">填寫完所有欄位之後，請按“登錄”。</string>
+    <string name="msg_input_all_to_register">填寫完所有欄位之後，請按“登錄”。</string>
+    <string name="msg_input_all_to_setting">填寫完所有欄位之後，請按“SET”。</string>
+    <string name="msg_invalid_camera_nfc_setting">相機/攝錄機上的NFC設定無效。請更正該設定。</string>
+    <string name="msg_lc_ready">"按下快門按鈕後
+相機開始為降噪
+建立黑框影像。"</string>
+    <string name="msg_lc_start">"按下快門按鈕後
+啟動即時視圖合成。"</string>
+    <string name="msg_lc_waiting">"正在為降噪建立黑框影像。
+請稍候。"</string>
+    <string name="msg_lc_waiting_nr">處理</string>
+    <string name="msg_lc_waiting_nr_old">"降噪正在進行中。
+請稍候。"</string>
+    <string name="msg_liveview_lens_warning">"改用拍攝模式?
+（鏡頭可能會延伸。）"</string>
+    <string name="msg_location_service_warning">"無法取得定位資訊。
+請啟用[定位服務]。"</string>
+    <string name="msg_location_service_warning_notify">無法取得定位資訊。</string>
+    <string name="msg_login_password_diff">密碼不相符。</string>
+    <string name="msg_loop_lack_of_remain">記憶卡容量不足。以此模式拍攝，您需要至少剩餘60分鐘。</string>
+    <string name="msg_loop_rec_stop">開始拍攝已經過24小時，錄影自動停止。</string>
+    <string name="msg_matanity_cannot_use">在確認拍攝的照片時無法使用此功能。</string>
+    <string name="msg_matanity_change_confirm">"目前的項目將予結束，並以新項目的方式進行拍攝。
+確定要繼續嗎?"</string>
+    <string name="msg_media_format_error_need_reformat">格式化失敗。此SD記憶卡需要重新格式化。</string>
+    <string name="msg_media_format_finished">格式化已完成。</string>
+    <string name="msg_movie_wifi_connecting">連線中...</string>
+    <string name="msg_movieslideshow_settings">"此應用程式會從您所拍攝的場景中自動選出精選，加上特效後儲存。
+您可以透過更改設定來改變特效。"</string>
+    <string name="msg_movieslideshow_settings_title">建立精選</string>
+    <string name="msg_need_camera_time_setting">設定相機/攝錄機時間。</string>
+    <string name="msg_need_picmate_id">由於此應用程式會利用與LUMIX CLUB連結的服務，將資料上傳到Web服務，因此您必須同意LUMIX CLUB服務的條款及條件，才可將檔案上傳至Web服務。</string>
+    <string name="msg_need_picmate_id_input">輸入已登記的登入ID</string>
+    <string name="msg_need_picmate_id_regist">取得新的登入ID</string>
+    <string name="msg_need_power_on_for_sd_card_restoration">"偵測到SD卡錯誤，但因為相機/攝錄機的電量不足而無法回復資料管理資訊。請為電池充電。
+請按“確定”關閉相機/攝錄機。"</string>
+    <string name="msg_network_invalid_ap_ssid">SSID只能包含單位元組的英數字元與符號（1-32個字元）。</string>
+    <string name="msg_network_invalid_ap_ssid_pw">密碼只能包含單位元組的英數字元與符號（0或5個字元，或是8到64個字元）。</string>
+    <string name="msg_network_invalid_camera_ssid">SSID只能包含單位元組的英數字元與符號（1-32個字元）。</string>
+    <string name="msg_network_invalid_camera_ssid_pw">密碼只能包含單位元組的英數字元與符號（8-64個字元）。</string>
+    <string name="msg_network_invalid_ssid_or_pass">SSID或密碼不正確。</string>
+    <string name="msg_nfc__movie_display">使用Wi-Fi連線至此智能手機?</string>
+    <string name="msg_nfc__movie_display_v2">使用Wi-Fi連線至此智能手機？</string>
+    <string name="msg_nfc_after_movie_work">點選相機/攝錄機上的 NFC 標記，再次連線至您的智能手機。</string>
+    <string name="msg_nfc_cancel_camera_state_confirm">相機/攝錄機上是否顯示“%s”？</string>
+    <string name="msg_nfc_complete">NFC處理已順利完成。</string>
+    <string name="msg_nfc_de_touch">NFC觸控</string>
+    <string name="msg_nfc_explain">如果要連線的相機/攝錄機具備 NFC 功能，請以智能手機點選相機/攝錄機端的 NFC 標記。</string>
+    <string name="msg_nfc_explain_tmp">若您使用具備 NFC 功能的機型，請以智能手機點選相機/攝錄機端的 NFC 標記。</string>
+    <string name="msg_nfc_failed_touch">觸控失敗。能否進行NFC觸控取決於相機/攝錄機的操作狀態。請從清單中選取要連線的裝置。</string>
+    <string name="msg_nfc_failed_touch_camera_reject">連線被拒。</string>
+    <string name="msg_nfc_failed_touch_invalid_camera">不支援該裝置。</string>
+    <string name="msg_nfc_failed_touch_invalid_content">"觸碰失敗。
+是否可使用NFC功能，取決於相機/攝錄機的操作條件。"</string>
+    <string name="msg_nfc_failed_touch_invalid_data">"觸碰失敗。
+無法取得必要資訊。"</string>
+    <string name="msg_nfc_failed_touch_invalid_io_exception">"觸碰失敗。
+NFC處理期間可能中斷了觸碰。請嘗試拉長觸碰時間。"</string>
+    <string name="msg_nfc_failed_touch_other_error">觸碰失敗。</string>
+    <string name="msg_nfc_failed_touch_power_off_setting">啟動相機/攝錄機電源，然後再觸碰一次。</string>
+    <string name="msg_nfc_failed_touch_setting_off">啟用相機/攝錄機上的NFC功能，然後再觸碰一次。</string>
+    <string name="msg_nfc_failed_touch_share_invalid_content">"觸碰失敗。
+可能不支援該影像。請選取其他影像，然後再試一次觸碰。"</string>
+    <string name="msg_nfc_movie_work">* 若連接的相機/攝錄機LCD上顯示“%s”，請選取 “是”，然後將智能手機觸碰相機/攝錄機。</string>
+    <string name="msg_nfc_movie_work_v2">若連接的相機/攝錄機與NFC不相容，請輕觸Wi-Fi按鈕。</string>
+    <string name="msg_nfc_not_work_explain">如果不具備 NFC 功能，請稍候。</string>
+    <string name="msg_nfc_touch_failed">未連線至相機/攝錄機。請再觸碰相機/攝錄機一次。</string>
+    <string name="msg_nfc_touch_same_camera">請再次觸控相同的相機/攝錄機。</string>
+    <string name="msg_no_access_point_found">找不到無線熱點</string>
+    <string name="msg_no_card_inserted">相機/攝錄機中未插入任何SD記憶卡。</string>
+    <string name="msg_no_connecting">未連線</string>
+    <string name="msg_no_contents_found">找不到可播放的內容。</string>
+    <string name="msg_no_contents_found_for_select">找不到可選取的內容。</string>
+    <string name="msg_no_network_connection">未連接至網路(%s)。</string>
+    <string name="msg_non_sync_diff_id">相機/攝錄機與此應用程式上已設定了不同的LUMIX CLUB登入ID。</string>
+    <string name="msg_non_sync_not_exist_id">相機/攝錄機與此應用程式上未設定LUMIX CLUB登入ID。</string>
+    <string name="msg_not_connected">未連線</string>
+    <string name="msg_not_found_copy_target">沒有符合的影像可以複製。</string>
+    <string name="msg_not_input_password">未輸入密碼。仍然要套用設定？</string>
+    <string name="msg_not_supported_by_os_version">裝置目前的作業系統版本不支援這個功能。</string>
+    <string name="msg_now_camera_geotag_write_to_picture">無法建立連線，因為相機/攝影機正在傳送定位資訊。</string>
+    <string name="msg_now_cloud_downloading">正在下載最近偵測到的影像....</string>
+    <string name="msg_now_connecting">連接中...</string>
+    <string name="msg_now_connecting_to_camera">正在連接相機/攝錄機…</string>
+    <string name="msg_now_connecting_to_camera_and_waiting_image">正在連接相機/攝錄機或正在等待從相機/攝錄機傳送影像。</string>
+    <string name="msg_now_connecting_to_network">正在連接網路...</string>
+    <string name="msg_now_id_syncing">正在複製LUMIX CLUB登入ID...</string>
+    <string name="msg_now_reate_stopmotion_video">製作影片中...</string>
+    <string name="msg_now_saving_image">正在匯入影像...</string>
+    <string name="msg_now_saving_movie">正在匯入影片...</string>
+    <string name="msg_now_searching">搜尋中...</string>
+    <string name="msg_now_searching_camera_and_select_wifi">"正在搜尋相機/攝錄機…
+關閉這個對話框/應用程式並從 Wi-Fi 清單選擇相機/攝影機的 SSID 以便直接連線。"</string>
+    <string name="msg_now_searching_camera_and_select_wifi_and_stable_wifi_off">"正在搜尋相機/攝錄機…
+關閉這個對話框/應用程式並從 Wi-Fi 清單選擇相機/攝影機的 SSID 以便直接連線。"</string>
+    <string name="msg_now_searching_camera_and_waiting_image">"正在搜尋相機／攝錄機
+或正在等待從相機／攝錄機傳送影像。"</string>
+    <string name="msg_now_searching_camera_and_waiting_image_and_select_wifi">"正在搜尋相機/攝影機或等待相機/攝影機傳送影像。
+關閉這個對話框/應用程式並從 Wi-Fi 清單選擇相機/攝影機的 SSID 以便直接連線。"</string>
+    <string name="msg_now_searching_camera_and_waiting_image_and_select_wifi_and_stable_wifi_off">"正在搜尋相機/攝影機或等待相機/攝影機傳送影像。
+關閉這個對話框/應用程式並從 Wi-Fi 清單選擇相機/攝影機的 SSID 以便直接連線。"</string>
+    <string name="msg_now_searching_for_camera">正在搜尋相機/攝錄機…</string>
+    <string name="msg_now_searching_for_network">正在搜尋網路...</string>
+    <string name="msg_now_snapmovie_creating">建立快照影片中...</string>
+    <string name="msg_now_webservice_loading">正在取得與LUMIX CLUB相關的其他網路服務上的資訊...</string>
+    <string name="msg_occurred_communication_error">發生通訊錯誤。</string>
+    <string name="msg_operate_camera_to_wait_pairing">操作相機，將它設定為待機以進行“配對”。</string>
+    <string name="msg_pantilter_check_range">無法建立連線，因為相機/攝影機正在執行拍攝範圍檢查。</string>
+    <string name="msg_pantilter_play_confirm">要暫停自動操作嗎？</string>
+    <string name="msg_phcol_able_mk_phcol">您可以使用從影片剪下的照片來製作相片拼貼。</string>
+    <string name="msg_phcol_confirm_exit">結束而不儲存目前照片嗎？</string>
+    <string name="msg_phcol_folder_create_error">"建立資料夾失敗。
+請輸入其他資料夾名稱，然後重試。"</string>
+    <string name="msg_phcol_folder_exist_warn">指定的資料夾名稱已經存在。是否要將照片新增至該資料夾？</string>
+    <string name="msg_phcol_folder_input_warn">請輸入不超過%d個半形字元的資料夾名稱。 </string>
+    <string name="msg_phcol_warning_select_folder">將清除所選影像的資訊。確定要繼續嗎？</string>
+    <string name="msg_picmate_size_over">選取的影像太大，無法上傳。</string>
+    <string name="msg_please_off_auto_transfer">將相機的[自動傳輸]設置設為「關閉」。</string>
+    <string name="msg_pre_copy_content_to_local">"是否可在您智能手機上播放，取決於您的機型。
+是否要複製？"</string>
+    <string name="msg_pre_copy_exclude_content">將刪除智能手機不支援格式的影像。您要繼續嗎？</string>
+    <string name="msg_pre_shoot1">"使用相機快門拍攝SH1 PRE（超高速快門前連拍）。
+可以從本應用程式拍攝SH1（超高速連拍）。"</string>
+    <string name="msg_pre_shoot2">"使用相機快門拍攝SH2 PRE（超高速快門前連拍）。
+可以從本應用程式拍攝SH2（超高速連拍）。"</string>
+    <string name="msg_prerec_to_disable">"預連拍已停止。
+
+請讓相機冷卻。"</string>
+    <string name="msg_privacy_notice_agreement">將自動傳送應用程式用量條件到伺服器。此設定可以稍後變更。</string>
+    <string name="msg_pwless_authentification_deny">相機/攝影機（%s）拒絕連接。</string>
+    <string name="msg_pwless_authentification_fail">無法連接至相機/攝影機（%s）。</string>
+    <string name="msg_pwless_other_sp_authentification">相機/攝影機（%s）已連接到其他智慧型手機。</string>
+    <string name="msg_pwless_wait_authentification1">正在檢查相機/攝影機（%s）...</string>
+    <string name="msg_pwless_wait_authentification2">操作相機/攝影機以連接。</string>
+    <string name="msg_qr_confirm">要連線的相機/攝錄機必須具備讀取 QR 碼功能。要繼續?</string>
+    <string name="msg_qr_explain">若您的裝置有 QR 掃瞄程式，請點選以下按鈕。</string>
+    <string name="msg_qrcode_warning_do_not_scan_remoteqr1">若要掃描家居監察功能的QR碼，請開啟功能表，再選取應用程式功能 > 家居監察 > 設定連接目的地，然後按下QR碼按鈕。</string>
+    <string name="msg_rating_avchd_restriction">"只可配置成★5的圖像將配置成★5。
+您要繼續嗎？"</string>
+    <string name="msg_rating_clear_multi_protect">受保護的影像未釋放。</string>
+    <string name="msg_rating_clear_multi_protect_unsupport">無法設定 %d 張照片。</string>
+    <string name="msg_rating_set_multi_protect_unsupport">無法設定 %d 張照片。</string>
+    <string name="msg_rating_set_single_protect">此圖片處於保護狀態。</string>
+    <string name="msg_rating_set_single_unsupport">無法設定此圖片。</string>
+    <string name="msg_raw_image_warning">根據智能手機的OS，可能無法正確顯示RAW檔。</string>
+    <string name="msg_recording_slowmotion_mode">拍攝慢動作影片時，無法輸出影像與聲音。</string>
+    <string name="msg_regist_unsent_upload_with_internet">已將選取的影像儲存到未傳送的影像清單。必須先連線到網際網路，才可上傳未傳送的影像清單中的檔案。</string>
+    <string name="msg_regstering_camera">正在登錄%s...</string>
+    <string name="msg_rejected_to_camera">連結至相機/攝影機遭拒。</string>
+    <string name="msg_release_internet_connection">斷開藍牙設定中的網際網路連線，然後請連接到Wi-Fi設定之下的存取點。</string>
+    <string name="msg_remote_nfc_failed_touch">觸控失敗。能否進行NFC觸控取決於相機/攝錄機的操作狀態。</string>
+    <string name="msg_remoteaccess_confirm_finish">離開家居監察?</string>
+    <string name="msg_remoteaccess_error_check_input_param">確認您要連線之相機/攝錄機的ID與密碼。</string>
+    <string name="msg_remoteaccess_error_check_internet">確認相機/攝錄機連線的無線LAN存取點已連線至網際網路。</string>
+    <string name="msg_remoteaccess_error_problem_on_network">目前無法進行正常的相機/攝錄機通訊，或者您的網路環境可能不允許使用家居監察功能。</string>
+    <string name="msg_remoteaccess_error_trafficy_line">線路繁忙中，請稍後再試。</string>
+    <string name="msg_remoteview_quality_qvga">"即時控制影像品質為[QVGA]。
+您可以在[功能表]中的[即時控制設定]下更改[即時控制影像品質]設定。"</string>
+    <string name="msg_request_check_wifi_setting">找不到要連線的相機/攝錄機。請檢查 Wi-Fi 設定。</string>
+    <string name="msg_retry">重試。</string>
+    <string name="msg_savecomplete_ask_playmode_android">內容已儲存到圖片庫。結束編輯並確認？</string>
+    <string name="msg_scene_select">場景選擇</string>
+    <string name="msg_sd_card_under_restoration">資料管理資訊錯誤。正在回復資料管理資訊。</string>
+    <string name="msg_searching_camera_on_ssid">正在搜尋連接至%s的相機/攝影機...</string>
+    <string name="msg_select_camera">選擇相機/攝影機</string>
+    <string name="msg_select_camera_to_control">選擇要連接的相機/攝影機 。</string>
+    <string name="msg_select_connection">選擇連線方式</string>
+    <string name="msg_select_content_over_time">不可選取此影像，因為已超過可合併的最長期間。</string>
+    <string name="msg_select_control_camera">當操作相機/攝影機並選擇%s時，請選擇“通過相機操作”。</string>
+    <string name="msg_select_function">選擇功能</string>
+    <string name="msg_selected_function_invalid">還未通過相機/攝影機 選擇指定功能。</string>
+    <string name="msg_send_all">全部上傳？</string>
+    <string name="msg_send_ugase_failed">無法傳送用量條件。</string>
+    <string name="msg_setup_easy_wifi_overwrite">此家居監察裝置ID已經登錄至智能手機。是否要覆寫？</string>
+    <string name="msg_setup_easy_wifi_registered">此家居監察裝置ID已經登錄至智能手機。</string>
+    <string name="msg_snapmovie_confirm_exit">要不儲存即結束目前的影片嗎？</string>
+    <string name="msg_split_delete_back">後部分</string>
+    <string name="msg_split_delete_front">前部分</string>
+    <string name="msg_split_delete_return">返回</string>
+    <string name="msg_split_delete_which">要清除哪部分？</string>
+    <string name="msg_ssid_init_need_change">此相機/攝錄機的SSID與Wi-Fi密碼，設定為預設值。建議您變更SSID與Wi-Fi密碼。若要變更這些設定，請選取“相機/攝錄機Wi-Fi設定”→“相機/攝錄機SSID設定”。</string>
+    <string name="msg_ssid_label">相機/攝影機SSID：</string>
+    <string name="msg_ssid_pw_valid_after_power_on">關閉相機/攝錄機後再重新啟動，或重新建立相機/攝錄機的Wi-Fi連線時，會反映出設定的SSID/密碼。</string>
+    <string name="msg_stop_motion_animation_finished">停格拍攝已結束。</string>
+    <string name="msg_stop_reason_eight">沒有可備份的影像。</string>
+    <string name="msg_stop_reason_five">無法登入。請檢查您的登入ID與密碼。</string>
+    <string name="msg_stop_reason_four">發生通訊錯誤。請重試。</string>
+    <string name="msg_stop_reason_nine">無法啟動備份，因為相繼處於休眠模式。</string>
+    <string name="msg_stop_reason_seven">請檢查相機。</string>
+    <string name="msg_stop_reason_six">無法連接到上傳目的地。請檢查上傳目的地的設定。</string>
+    <string name="msg_stop_reason_ten">無法開始備份，因為相機正在充電。</string>
+    <string name="msg_stop_reason_two">請檢查電池的剩餘電量。</string>
+    <string name="msg_stopmotion_disable_func">在確認拍攝的照片時無法使用此功能。</string>
+    <string name="msg_stopmotion_new_proj_warn">新的定格動作照片會隨即建立。當您建立新項目時，將無法在目前的拍攝群組中新增其他拍攝。確定要繼續嗎？</string>
+    <string name="msg_stopmotion_system_freq_error" />
+    <string name="msg_tc_backup_not_recorded">"拍攝模式已變更。 
+無法於此拍攝模式執行雙攝像鏡頭的備份。"</string>
+    <string name="msg_tc_backup_off">將取消雙攝像鏡頭的備份。</string>
+    <string name="msg_touch_de_geotag_disable">相機/攝影機的NFC功能已停用。</string>
+    <string name="msg_touch_de_geotag_exist_geotag">定位資料已指定到此影像。</string>
+    <string name="msg_touch_de_geotag_fail">無法傳送定位資料至相機/攝影機。</string>
+    <string name="msg_touch_de_geotag_invalid_screen">相機/攝影機無法在此狀態中指定定位資料。</string>
+    <string name="msg_touch_de_geotag_no_data">智慧型手機中沒有已登錄的相關定位資料。</string>
+    <string name="msg_touch_de_geotag_others">無法指定此影像之定位資料。</string>
+    <string name="msg_touch_de_geotag_protect_content">影像受到保護。</string>
+    <string name="msg_touch_de_geotag_success">已將定位資料傳送至相機/攝錄機。</string>
+    <string name="msg_touch_de_geotag_unsupport">相機/攝影機不支援由NFC指定的定位資料。</string>
+    <string name="msg_touch_de_geotag_unsupport_content">無法指定此影像之定位資料。</string>
+    <string name="msg_touch_de_geotag_write_protect">SD卡為防寫保護。</string>
+    <string name="msg_transfer_attention">使用批次傳送可能會重複傳送先前已傳送的影像。</string>
+    <string name="msg_volume_down_in_howling">如果發生振鳴，請降低智能手機/平版電腦上的音量。</string>
+    <string name="msg_vrec_stop_avchd_track_over">已達AVCHD標準的限制，所以已停止拍攝。</string>
+    <string name="msg_vrec_stop_create_folder_error">建立資料夾失敗。無法開始拍攝。</string>
+    <string name="msg_vrec_stop_internal_memory_full">記憶體已滿，所以已停止拍攝。</string>
+    <string name="msg_vrec_stop_speed_insufficient">記憶卡趕不上寫入速度，所以已停止拍攝。</string>
+    <string name="msg_vrec_stop_temperature_over">相機/攝錄機內部過熱，所以已停止拍攝。</string>
+    <string name="msg_vrec_stop_uplimit">已超過可拍攝的資料大小，所以已停止拍攝。</string>
+    <string name="msg_warning_limit_contents">插入相機/攝錄機的SD卡中已儲存許多影像。這可能會導致操作不穩定。</string>
+    <string name="msg_warning_loop_rec_auto_delete">使用連續拍攝時，會自動刪除超過一小時前拍攝的場景。</string>
+    <string name="msg_warning_loop_rec_stop_soon">拍攝很快會自動停止。</string>
+    <string name="msg_warning_rec_high_temperature">"視訊與音訊輸出因為正在錄製視訊而停止。
+觸碰螢幕以關閉此訊息並恢復拍攝。"</string>
+    <string name="msg_warning_remote_access_change_mode">使用家居監察功能時無法使用。</string>
+    <string name="msg_white_balance_set_error">無法設定白平衡。</string>
+    <string name="msg_white_balance_set_success">已設定白平衡。</string>
+    <string name="msg_wifi_disconnect_remote_watch_warning">使用家居監察功能時，請選取“否”，因為此功能需要3G/4G的數據計劃。(其使用受您的數據計劃限制。)</string>
+    <string name="msg_wtc_no_camera_response">相機/攝影機沒有回應。請檢查相機/攝影機。</string>
+    <string name="msg_wtc_no_image_sending">"無線配對相機上的即時取景正在停止。
+要開始即時取景，請對相機進行操作。"</string>
+    <string name="multiphoto_create">建立重點相片拼貼</string>
+    <string name="paly_title_warning">警告</string>
+    <string name="pantilter_cancel">取消</string>
+    <string name="pantilter_check_range">正在檢查拍攝範圍…</string>
+    <string name="pantilter_error">"遙距雲台支架發生問題。
+請檢查遙距雲台支架。"</string>
+    <string name="pantilter_manual">正在執行手動操作...</string>
+    <string name="pantilter_moving_obj">移動物體已啟用</string>
+    <string name="pantilter_moving_obj_pause">移動物體已暫停</string>
+    <string name="pantilter_noconnected">遙距雲台支架的連線中斷。</string>
+    <string name="pantilter_party_auto">派對場面已啟用</string>
+    <string name="pantilter_party_auto_pause">派對場面已暫停</string>
+    <string name="pantilter_pause">暫停</string>
+    <string name="pantilter_preset_btn_cancel">取消</string>
+    <string name="pantilter_preset_btn_pause">暫停</string>
+    <string name="pantilter_preset_btn_restart">重新開始</string>
+    <string name="pantilter_preset_btn_stop">停止</string>
+    <string name="pantilter_preset_home">HOME</string>
+    <string name="pantilter_preset_mode">預設位置</string>
+    <string name="pantilter_preset_moving">重新定位中...</string>
+    <string name="pantilter_preset_noset">沒有設定</string>
+    <string name="pantilter_preset_pause">預設</string>
+    <string name="pantilter_preset_pos1">POS1</string>
+    <string name="pantilter_preset_pos2">POS2</string>
+    <string name="pantilter_preset_pos3">POS3</string>
+    <string name="pantilter_preset_pos4">POS4</string>
+    <string name="pantilter_preset_pos5">POS5</string>
+    <string name="pantilter_preset_regist">登錄預設</string>
+    <string name="pantilter_preset_round_moving">循環中...</string>
+    <string name="pantilter_preset_round_pause">暫停循環</string>
+    <string name="pantilter_preset_round_setting">循環設定</string>
+    <string name="pantilter_preset_skip">跳過</string>
+    <string name="pantilter_resetting">正在重設原點...</string>
+    <string name="pantilter_searching">正在搜尋…</string>
+    <string name="pantilter_set_home_position">"請稍等。 
+正在設定原始位置。"</string>
+    <string name="pantilter_start">開始</string>
+    <string name="picmate_ask_delete_content">要從LUMIX CLUB伺服器刪除選取的影像嗎？</string>
+    <string name="picmate_cloud_folder_name">LUMIX CLUB資料夾</string>
+    <string name="picmate_cloud_service_name">雲端同步</string>
+    <string name="picmate_command_msg_regist_error">登錄失敗。</string>
+    <string name="picmate_command_msg_sending">與伺服器通訊中...</string>
+    <string name="picmate_command_msg_sending_error">與伺服器通訊時發生錯誤。</string>
+    <string name="picmate_lumix_club">LUMIX CLUB</string>
+    <string name="picmate_msg_network">尚未連接至網際網路。請選擇連接方式。</string>
+    <string name="picmate_msg_network_3g">3G</string>
+    <string name="picmate_msg_network_wifi">Wi-Fi</string>
+    <string name="picmate_regist">已登錄</string>
+    <string name="picmate_regist2">(已登錄)</string>
+    <string name="picmate_service_top" />
+    <string name="picmate_sync_service_fail">無法同步服務清單。</string>
+    <string name="picmate_sync_service_success">已同步服務清單。</string>
+    <string name="picmate_url_lang_code">tch</string>
+    <string name="picmate_wifi_direct_send_error">因為透過 Wi-Fi Direct 連線相機/攝錄機，所以無法進行傳輸。</string>
+    <string name="picturejump_copy">儲存至智能手機</string>
+    <string name="picturejump_delete">垃圾（刪除）</string>
+    <string name="picturejump_location_gallery">圖片庫</string>
+    <string name="picturejump_new_av">登錄新的AV裝置</string>
+    <string name="play_3box_no_dmr_found">找不到播放裝置。</string>
+    <string name="play_3box_select_dmr">選取播放裝置。</string>
+    <string name="play_btn_close">關閉</string>
+    <string name="play_btn_continue">繼續</string>
+    <string name="play_btn_no">否</string>
+    <string name="play_btn_untransmit_detail">詳細資訊</string>
+    <string name="play_btn_yes">是</string>
+    <string name="play_camera_function">相機/攝錄機功能</string>
+    <string name="play_delete_all_content">刪除全部</string>
+    <string name="play_delete_confirm_for_protect">要刪除選取的檔案嗎？（將不會刪除受保護的檔案。）</string>
+    <string name="play_delete_with_jpeg_confirm">刪除選取檔案？（其他同時拍攝的檔案也會被刪除。）</string>
+    <string name="play_delete_with_jpeg_confirm_for_protect">刪除選取檔案？（其他同時拍攝的檔案也會被刪除。）但是受保護的檔案不會被刪除。</string>
+    <string name="play_highlight_format">格式</string>
+    <string name="play_highlight_media">媒體</string>
+    <string name="play_msg_canceling_copy">"已取消複製。
+請勿關掉電源。"</string>
+    <string name="play_msg_canceling_delete">已取消刪除。</string>
+    <string name="play_msg_complete_delete">刪除完成。</string>
+    <string name="play_msg_delete_data">從未傳送的影像清單中刪除？</string>
+    <string name="play_msg_delete_from_list">已從未傳送的影像清單刪除檔案。</string>
+    <string name="play_msg_location_service_request_enable">無法顯示相機膠卷中的影像。請啟用 [定位服務]。</string>
+    <string name="play_msg_movie_play_error">無法在此應用程式中繼續播放該影片。播放已停止。</string>
+    <string name="play_msg_movie_play_start">若是高畫質或長時間的影片，播放可能會中斷或是無法播放。</string>
+    <string name="play_msg_movie_play_start2">能否正常地播放取決於智能手機或平板電腦的機型。</string>
+    <string name="play_msg_reading_data">載入中...</string>
+    <string name="play_msg_send_all">開始上傳所有照片/影片。</string>
+    <string name="play_msg_send_cancell">正在取消傳輸...</string>
+    <string name="play_msg_send_comp">檔案傳輸完成。</string>
+    <string name="play_msg_send_err">傳輸錯誤</string>
+    <string name="play_msg_send_one">開始上傳。</string>
+    <string name="play_msg_setting_step">尚未完成“影像分享”設定。請從設定功能表執行這些設定。</string>
+    <string name="play_select_format">選取格式</string>
+    <string name="play_tab_btn">播放</string>
+    <string name="play_unsentimageinfo_button_canceltosend">取消上傳</string>
+    <string name="play_unsentimageinfo_button_sendallimage">再次上傳所有剩餘的照片/影片</string>
+    <string name="play_unsentimageinfo_button_sendcrntimage">再次上傳此照片/影片</string>
+    <string name="play_unsentimageinfo_cell_destsite">目的地</string>
+    <string name="play_unsentimageinfo_cell_sendtime">開始時間</string>
+    <string name="play_unsentimageinfo_title">資訊</string>
+    <string name="play_unsentimagelist_title">未傳送的影像</string>
+    <string name="ply_3box_dlna_error">無法於電視上播放。電視發生問題。</string>
+    <string name="ply_3box_mode_change_error">無法於電視上播放。相機/攝錄機發生錯誤。</string>
+    <string name="ply_action_camera_power_off">關閉電源</string>
+    <string name="ply_action_create_highlight">建立精選</string>
+    <string name="ply_action_edit_protect">場景保護</string>
+    <string name="ply_action_edit_split_delete">分割並清除</string>
+    <string name="ply_action_multiframephoto">重點相片拼貼</string>
+    <string name="ply_action_tv_play">於電視播放</string>
+    <string name="ply_btn_cancel">取消</string>
+    <string name="ply_btn_select">選取</string>
+    <string name="ply_highlight_coping">正在複製建立的精選場景...</string>
+    <string name="ply_highlight_copy_error">在複製建立的精選場景時發生錯誤。</string>
+    <string name="ply_highlight_copy_start_error">無法複製建立的精選場景。</string>
+    <string name="ply_highlight_create_error">建立精選期間發生錯誤。</string>
+    <string name="ply_highlight_create_error_confirm_cam">無法建立精選。請查看攝錄機。</string>
+    <string name="ply_highlight_create_error_invalid_bgm">建立精選失敗。選取的BGM資料不相容或已損毀。</string>
+    <string name="ply_highlight_create_error_invalid_title_picture">建立精選失敗。選取的標題影像資料不相容或已損毀。</string>
+    <string name="ply_highlight_create_error_no_highlight">無法建立精選。無法擷取任何場景。</string>
+    <string name="ply_highlight_create_error_no_remain">無法建立精選。儲存媒體所剩的容量不足。</string>
+    <string name="ply_highlight_create_start_error">無法開始建立精選。</string>
+    <string name="ply_highlight_creating">正在建立精選...</string>
+    <string name="ply_highlight_delete_error">無法清除建立的精選場景。</string>
+    <string name="ply_highlight_get_sceane_info_error">無法取得場景資訊。</string>
+    <string name="ply_highlight_low_memory_error" />
+    <string name="ply_highlight_not_select_sceane">未選取任何場景。</string>
+    <string name="ply_highlight_send_param_error">建立精選期間於傳送參數時發生錯誤。</string>
+    <string name="ply_highlight_sending_bgm">正在傳送背景音樂...</string>
+    <string name="ply_highlight_sending_title_picture">正在傳送標題影像...</string>
+    <string name="ply_highlight_slct_bgm">背景音樂選擇</string>
+    <string name="ply_msg_ask_cloud_upload_max_num">若是上傳選取的影像，將會刪除舊的影像，因為已經超出了雲端同步服務的上傳限制。</string>
+    <string name="ply_msg_ask_cloud_upload_max_num_no">不上傳</string>
+    <string name="ply_msg_ask_cloud_upload_max_num_yes">上傳</string>
+    <string name="ply_msg_cannnot_upload_max_num">由於上傳目的地已達其上限，因此無法再上傳其他影像。</string>
+    <string name="ply_msg_cannot_upload_cloud_size_over">無法上傳。已達雲端同步服務伺服器的容量上限。</string>
+    <string name="ply_msg_cannot_upload_file_size_over">選取的影像太大，無法上傳。</string>
+    <string name="ply_msg_cannot_upload_no_other">無法上傳。無任何已登錄的裝置。</string>
+    <string name="ply_msg_changed_folder">顯示的影像已變更。</string>
+    <string name="ply_msg_err_confirmation_sd">"複製影像時發生錯誤。
+請檢查智能手機/平板電腦中的SD卡。"</string>
+    <string name="ply_msg_err_copy_file">複製影像時發生錯誤。</string>
+    <string name="ply_msg_err_copy_file_lack_of_remain">可用的空間不足。</string>
+    <string name="ply_msg_err_copy_file_maybe">影像複製可能失敗。</string>
+    <string name="ply_msg_err_copy_file_not_supported">此應用程式不支援這張影像格式，因此無法複製。</string>
+    <string name="ply_msg_err_copy_file_not_supported_included">有一個或多個檔案的格式不受此智能手機支援，所以無法複製。</string>
+    <string name="ply_msg_err_copy_file_not_supported_or_lack_space">複製影像時發生錯誤。</string>
+    <string name="ply_msg_err_copy_file_not_supported_or_lack_space_included">有一個或多個檔案格式不受此智能手機支援，或是手機的可用空間不足，所以無法複製。</string>
+    <string name="ply_msg_err_copy_file_type_avchd">無法儲存以AVCHD格式拍攝的場景。請將攝錄機上的場景轉換為MP4格式，以進行儲存。</string>
+    <string name="ply_msg_err_delete_file">刪除影像時發生錯誤。</string>
+    <string name="ply_msg_select_max_num">無法選取更多影像。</string>
+    <string name="ply_multiphoto_create_error">建立重點相片拼貼失敗。</string>
+    <string name="ply_multiphoto_create_error_no_highlight">建立重點相片拼貼失敗。沒有可擷取的場景。</string>
+    <string name="ply_multiphoto_creating">正在建立重點相片拼貼...</string>
+    <string name="ply_multiphoto_foldername_error">最多可使用8個半形字元來輸入資料夾名稱。</string>
+    <string name="ply_multiphoto_save">正在儲存照片...</string>
+    <string name="ply_multiphoto_save_complete">照片已儲存。</string>
+    <string name="ply_phcol_change_folder">指定儲存照片之資料夾名稱</string>
+    <string name="ply_phcol_save_photo">%d張照片將會存於智能手機中。</string>
+    <string name="ply_phcol_title">重點相片拼貼</string>
+    <string name="ply_phcol_title_slct_frame_title">相框選擇</string>
+    <string name="ply_phcol_title_slct_picture">影像選取</string>
+    <string name="ply_select_action_delete">刪除</string>
+    <string name="ply_select_action_save">儲存</string>
+    <string name="ply_select_action_share">分享</string>
+    <string name="psh_ntfy_babymon_dtct_ado">"注意
+此攝錄機偵測到聲音。"</string>
+    <string name="psh_ntfy_babymon_start">"注意
+嬰兒監視器已啟用。"</string>
+    <string name="pstyle_color_filter_green">綠色</string>
+    <string name="pstyle_color_filter_off">關閉</string>
+    <string name="pstyle_color_filter_orange">橘色</string>
+    <string name="pstyle_color_filter_red">紅色</string>
+    <string name="pstyle_color_filter_yellow">黃色</string>
+    <string name="qrcode_read">QR碼</string>
+    <string name="rec_angle_standard">STANDARD</string>
+    <string name="rec_angle_wide">WIDE</string>
+    <string name="rec_autoreview_finish">結束</string>
+    <string name="rec_autoreview_now">自動檢閱</string>
+    <string name="rec_btn_icon_display">資訊</string>
+    <string name="rec_btn_icon_display_new">DISP.</string>
+    <string name="rec_btn_quick_menu">SET</string>
+    <string name="rec_delay">Delay</string>
+    <string name="rec_during_burst">正在拍攝連拍相片...</string>
+    <string name="rec_during_exposure">曝光中…</string>
+    <string name="rec_just_a_moment">請稍候...</string>
+    <string name="rec_label_f">F</string>
+    <string name="rec_label_mf">MF</string>
+    <string name="rec_label_ss">SS</string>
+    <string name="rec_liveview_second">秒鐘</string>
+    <string name="rec_msg_4kmovie_rec_error">Wi-Fi 連線無法錄製4K影片。</string>
+    <string name="rec_msg_4kphoto_error">無法在 Wi-Fi 連線時拍攝 4K 照片。</string>
+    <string name="rec_msg_4kphoto_rec_error">Wi-Fi 連線無法錄製影片。</string>
+    <string name="rec_msg_capture_failed">拍攝失敗。</string>
+    <string name="rec_msg_cinelike_enable">目前無法使用此應用程式拍攝，因為相機/攝錄機為%s模式。</string>
+    <string name="rec_msg_first_action">開啟拍攝模式時，請注意鏡頭可能會突然延伸。</string>
+    <string name="rec_msg_focusselect_error">在 Wi-Fi 連線期間無法以後對焦錄製。</string>
+    <string name="rec_msg_interval_shot_mode">目前無法使用此應用程式拍攝，因為相機/攝影機為縮時拍攝模式。</string>
+    <string name="rec_msg_lack_of_memory">記憶體不足。</string>
+    <string name="rec_msg_lack_of_memory_for_movie">下列記錄時間是因為記憶體不足而設定。</string>
+    <string name="rec_msg_lens_error">"拍攝失敗。
+請檢查相機/攝錄機。"</string>
+    <string name="rec_msg_max_rec_time">可以記錄的最長時間</string>
+    <string name="rec_msg_modechange_error">無法切換模式。</string>
+    <string name="rec_msg_movie_recording">正在記錄視頻。請操作相機/攝錄機以停止記錄。</string>
+    <string name="rec_msg_need_to_extend_lens">"請旋轉變焦環
+以延伸鏡頭"</string>
+    <string name="rec_msg_not_recmovie_this_mode">目前的模式無法拍攝影片。</string>
+    <string name="rec_msg_not_supported_mode">選取的拍攝模式無法使用無線拍攝，因此請切換至一般拍攝模式。</string>
+    <string name="rec_msg_only_sdi_rec">"無記憶卡。
+僅限SDI遠程錄製。"</string>
+    <string name="rec_msg_recstart_err_reject">無法開始拍攝影片。</string>
+    <string name="rec_msg_recstart_error">無法開始拍攝影片。</string>
+    <string name="rec_msg_recstop_error">無法停止拍攝影片。</string>
+    <string name="rec_msg_sd_lock">"此相機/攝錄機的記憶卡設有防寫保護。
+必須先取消保護，才能拍攝影像。"</string>
+    <string name="rec_msg_ss_bulb">因為快門速度設為 Bulb，所以無法進行拍攝。</string>
+    <string name="rec_msg_stop_live_stream">"影像傳送停止。
+請檢查是否收到相機/攝錄機傳來的影像，以及是否已經連接相機/攝錄機。"</string>
+    <string name="rec_msg_stop_recording">記錄因為相機/攝錄機繁忙而停止。</string>
+    <string name="rec_msg_stop_recording_lack_memory">記錄因為記憶體不足而停止。</string>
+    <string name="rec_msg_video_rectime_crnt">設定記錄時間</string>
+    <string name="rec_msg_wait_for_camera_temperature_down">"暫時停用。
+請等候相機/攝錄機冷卻。"</string>
+    <string name="rec_msg_zoom_error">"變焦失敗。
+請檢查相機/攝錄機。"</string>
+    <string name="rec_now_long_shutter_noise_reduction">慢速快門降雜訊進行中</string>
+    <string name="rec_remain">R</string>
+    <string name="rec_remain_hour">h</string>
+    <string name="rec_remain_minute">m</string>
+    <string name="rec_remain_time_label">R</string>
+    <string name="rec_remote_voice_remain_a">還剩%d秒鐘</string>
+    <string name="rec_selftimer_cancel">取消</string>
+    <string name="rec_sensitivity_gain">增益</string>
+    <string name="rec_sensitivity_gain_semipro">GAIN</string>
+    <string name="rec_stopmotion_auto">自動拍攝</string>
+    <string name="rec_stopmotion_create_error">建立影片時發生錯誤。</string>
+    <string name="rec_stopmotion_create_error_confirm_cam">無法建立影片。請檢查相機/攝錄機。</string>
+    <string name="rec_stopmotion_create_error_no_remain">無法建立影片。儲存媒體上的可用空間不足。</string>
+    <string name="rec_stopmotion_create_start_error">無法啟動影片建立。</string>
+    <string name="rec_stopmotion_create_video">停格影片</string>
+    <string name="rec_stopmotion_creating">建立影片中...</string>
+    <string name="rec_stopmotion_discontinuation">無法繼續拍攝停格動畫影像，並已中斷拍攝。</string>
+    <string name="rec_stopmotion_framerate">畫格速率</string>
+    <string name="rec_stopmotion_interval">攝影間隔</string>
+    <string name="rec_stopmotion_iterval_time">%d 秒</string>
+    <string name="rec_stopmotion_not_contents">找不到拍攝的停格動畫影像。要開始新的拍攝嗎？</string>
+    <string name="rec_stopmotion_order_normal">NORMAL</string>
+    <string name="rec_stopmotion_order_reverse">REVERSE</string>
+    <string name="rec_stopmotion_order_setting">順序</string>
+    <string name="rec_stopmotion_over_contents">無法再繼續拍攝停格動畫影像。</string>
+    <string name="rec_stopmotion_select_continue">其他</string>
+    <string name="rec_stopmotion_select_recorded_animation">選取拍攝的停格動畫影像</string>
+    <string name="rec_stopmotion_select_start">新增</string>
+    <string name="rec_stopmotion_send_param_error">傳輸影片建立參數時發生錯誤。</string>
+    <string name="rec_stopmotion_start">開始</string>
+    <string name="rec_stopmotion_title">停格動畫</string>
+    <string name="rec_stopmotion_video_quality_setting">圖片模式</string>
+    <string name="rec_stopmotion_warning_automode">輕觸拍攝按鈕，即可開始拍攝。</string>
+    <string name="rec_tab_btn">即時控制</string>
+    <string name="remain_marking_number">R %d</string>
+    <string name="scn_gid_backlight_portrait">"有背光時，提高整體
+畫面亮度，可柔化
+人像，溶入光線。"</string>
+    <string name="scn_gid_backlight_portrait_onepoint">"調整拍攝位置，使拍攝
+主體背向陽光。"</string>
+    <string name="scn_gid_backlight_portrait_recom_lens">明亮的鏡頭</string>
+    <string name="scn_gid_backlight_portrait_step_up">"改變曝光度，調整
+繞射效果。"</string>
+    <string name="scn_gid_backlight_strobe">"戶外拍攝時，
+利用閃光燈平均
+照亮拍攝主體臉部。"</string>
+    <string name="scn_gid_backlight_strobe_onepoint">開啟閃光燈。</string>
+    <string name="scn_gid_backlight_strobe_recom_lens">標準變焦鏡頭</string>
+    <string name="scn_gid_backlight_strobe_step_up">"改變曝光度，調整臉部
+亮度。"</string>
+    <string name="scn_gid_blue_sky">"晴天拍攝時，提高整體
+畫面亮度，創造色彩鮮明
+的藍天影像。"</string>
+    <string name="scn_gid_blue_sky_onepoint">"嘗試平衡藍天與
+白雲的比例。"</string>
+    <string name="scn_gid_blue_sky_recom_lens">"廣角鏡頭
+長焦鏡頭"</string>
+    <string name="scn_gid_blue_sky_step_up">"改變曝光度，展現不同
+氣氛。"</string>
+    <string name="scn_gid_clear_skin">"亮化臉部、柔化
+皮膚顏色，呈現
+春青健康的感覺。"</string>
+    <string name="scn_gid_clear_skin_onepoint">"使拍攝主體的上半身
+佔滿整個螢幕。"</string>
+    <string name="scn_gid_clear_skin_recom_lens">"明亮的鏡頭
+長焦鏡頭"</string>
+    <string name="scn_gid_clear_skin_step_up">"改變曝光度，調整整體
+亮度。"</string>
+    <string name="scn_gid_cooking">"提高整體畫面亮度，使
+食物更具吸引力。"</string>
+    <string name="scn_gid_cooking_onepoint">"此效果會將焦點
+放在主體，
+並使背景柔化。"</string>
+    <string name="scn_gid_cooking_recom_lens">"微距鏡頭
+明亮的鏡頭"</string>
+    <string name="scn_gid_cooking_step_up">"調整光圈，變更背景
+柔化程度。"</string>
+    <string name="scn_gid_cool_night">"強化藍色調，
+使日落後的夜空
+顯得沉靜細緻。"</string>
+    <string name="scn_gid_cool_night_onepoint">"在天朗氣清的日子，
+拍攝日落後的天空及
+建築物。"</string>
+    <string name="scn_gid_cool_night_recom_lens">廣角鏡頭</string>
+    <string name="scn_gid_cool_night_step_up">"改變白平衡設定，調整
+天空的藍色度。"</string>
+    <string name="scn_gid_fixflush_backlight_strobe">"戶外拍攝時，
+利用閃光燈平均
+照亮拍攝主體臉部。"</string>
+    <string name="scn_gid_fixflush_backlight_strobe_onepoint">使用閃光燈</string>
+    <string name="scn_gid_fixflush_backlight_strobe_recom_lens">標準變焦鏡頭</string>
+    <string name="scn_gid_fixflush_backlight_strobe_step_up">"改變曝光度，調整臉部
+亮度。"</string>
+    <string name="scn_gid_fixflush_night_portrait">"使用閃光燈及長時間
+曝光，呈現較佳的夜間
+人像拍攝效果。"</string>
+    <string name="scn_gid_fixflush_night_portrait_onepoint">使用閃光燈</string>
+    <string name="scn_gid_fixflush_night_portrait_recom_lens">廣角鏡頭</string>
+    <string name="scn_gid_fixflush_night_portrait_step_up">"改變曝光度，調整整體
+亮度。"</string>
+    <string name="scn_gid_fixlens_portrait">"調整臉部亮度，並使背景
+柔化，拍出清晰人像。"</string>
+    <string name="scn_gid_fixlens_portrait_onepoint">增加焦距。</string>
+    <string name="scn_gid_fixlens_portrait_step_up">"改變曝光度，調整整體
+亮度。"</string>
+    <string name="scn_gid_flower">"利用柔焦功能，創造柔化
+影像。"</string>
+    <string name="scn_gid_flower_onepoint">"在柔和光線下拍攝
+花朵，例如透過窗簾
+的散射光線。"</string>
+    <string name="scn_gid_flower_recom_lens">微距鏡頭</string>
+    <string name="scn_gid_flower_step_up">"改變曝光度，調整整體
+亮度。"</string>
+    <string name="scn_gid_handheld_night">"拍攝多張影像並合併資料，
+使模糊和雜訊減至最低，
+適合手提式夜拍使用。"</string>
+    <string name="scn_gid_handheld_night_onepoint">"拿穩相機，將任何移動
+減至最低。"</string>
+    <string name="scn_gid_handheld_night_recom_lens">廣角鏡頭</string>
+    <string name="scn_gid_handheld_night_step_up">"改變曝光度，調整整體
+亮度。"</string>
+    <string name="scn_gid_illumination">"使用濾鏡強化
+星芒效果。"</string>
+    <string name="scn_gid_illumination_onepoint">"近距離拍攝時，效果
+最佳。"</string>
+    <string name="scn_gid_illumination_recom_lens">"廣角鏡頭
+長焦鏡頭"</string>
+    <string name="scn_gid_illumination_step_up">"改變曝光度，調整
+閃耀效果。"</string>
+    <string name="scn_gid_kids">"使背景適度柔化，
+並增強肌膚色調，
+令小孩面孔更突出。"</string>
+    <string name="scn_gid_kids_onepoint">"輕觸螢幕，將對焦點
+放在小孩上。"</string>
+    <string name="scn_gid_kids_recom_lens">明亮的鏡頭</string>
+    <string name="scn_gid_kids_step_up">"改變曝光度，展現不同
+氣氛。"</string>
+    <string name="scn_gid_landscape">"提高天空、樹木的
+色彩飽和度，使風景
+更為清楚分明。"</string>
+    <string name="scn_gid_landscape_onepoint">仔細構思整體構圖。</string>
+    <string name="scn_gid_landscape_recom_lens">廣角鏡頭</string>
+    <string name="scn_gid_landscape_step_up">"啟用引導線顯示功能，
+確保影像保持水平。"</string>
+    <string name="scn_gid_longexpo_night">"使用較慢的快門速度捕捉
+光線軌跡，創造出藝術般
+的夜景。"</string>
+    <string name="scn_gid_longexpo_night_onepoint">"建議使用三腳架或
+把相機放在穩固的
+平面上。"</string>
+    <string name="scn_gid_longexpo_night_recom_lens">標準變焦鏡頭</string>
+    <string name="scn_gid_longexpo_night_step_up">"改變快門速度，創造
+不同的光線軌跡。"</string>
+    <string name="scn_gid_magic_hour">"強化紫色調，展現日落
+天空的浪漫情調。"</string>
+    <string name="scn_gid_magic_hour_onepoint">"在天朗氣清的日子，
+拍攝日落後的
+地平線。"</string>
+    <string name="scn_gid_magic_hour_recom_lens">廣角鏡頭</string>
+    <string name="scn_gid_magic_hour_step_up">"改變曝光度，調整色彩
+深度。"</string>
+    <string name="scn_gid_monochrome">"以單色調影像捕捉
+現場氣氛。"</string>
+    <string name="scn_gid_monochrome_onepoint">"適當的燈光可增加
+對比，加強影像呈現的
+氣氛。"</string>
+    <string name="scn_gid_monochrome_recom_lens">標準變焦鏡頭</string>
+    <string name="scn_gid_monochrome_step_up">"改變色彩飽和度，調整
+色調以改變氣氛。"</string>
+    <string name="scn_gid_night">"提高夜間光線的色彩
+飽和度，突顯夜景。"</string>
+    <string name="scn_gid_night_onepoint">"建議使用三腳架或
+把相機放在穩固的
+平面上。"</string>
+    <string name="scn_gid_night_portrait">"使用閃光燈及長時間
+曝光，呈現較佳的夜間
+人像拍攝效果。"</string>
+    <string name="scn_gid_night_portrait_onepoint">開啟閃光燈。</string>
+    <string name="scn_gid_night_portrait_recom_lens">廣角鏡頭</string>
+    <string name="scn_gid_night_portrait_step_up">"改變曝光度，調整整體
+亮度。"</string>
+    <string name="scn_gid_night_recom_lens">"廣角鏡頭
+長焦鏡頭"</string>
+    <string name="scn_gid_night_step_up">"改變曝光度，調整整體
+亮度。"</string>
+    <string name="scn_gid_onepoint">-要點</string>
+    <string name="scn_gid_pet">"使用較快的快門速度，
+避免影像模糊，清晰
+捕捉快速移動中的動物。"</string>
+    <string name="scn_gid_pet_onepoint">"嘗試以動物的水平視角
+拍攝。"</string>
+    <string name="scn_gid_pet_recom_lens">明亮的鏡頭</string>
+    <string name="scn_gid_pet_step_up">"使用連續拍攝功能，
+記錄整個動作過程。"</string>
+    <string name="scn_gid_portrait">"調整臉部亮度，並使背景
+柔化，拍出清晰人像。"</string>
+    <string name="scn_gid_portrait_onepoint">"使用變焦鏡頭時增加
+焦距。"</string>
+    <string name="scn_gid_portrait_recom_lens">"明亮的鏡頭
+長焦鏡頭"</string>
+    <string name="scn_gid_portrait_step_up">"改變曝光度，調整整體
+亮度。"</string>
+    <string name="scn_gid_recommended_lens">-推薦鏡頭</string>
+    <string name="scn_gid_shimmering_water">"強化水面閃耀效果，
+令水面色調偏藍並
+更顯光亮。"</string>
+    <string name="scn_gid_shimmering_water_onepoint">"清晨或黃昏太陽角度
+較低時，效果最佳。"</string>
+    <string name="scn_gid_shimmering_water_recom_lens">長焦鏡頭</string>
+    <string name="scn_gid_shimmering_water_step_up">"改變曝光度，調整
+閃耀效果。"</string>
+    <string name="scn_gid_sports">"使用較快的快門速度，
+避免影像模糊，例如拍攝
+運動項目時。"</string>
+    <string name="scn_gid_sports_onepoint">"觀察拍攝主體的動作，
+構思拍攝時機。"</string>
+    <string name="scn_gid_sports_recom_lens">長焦鏡頭</string>
+    <string name="scn_gid_sports_step_up">"改變曝光度，調整
+整體亮度。"</string>
+    <string name="scn_gid_step_up">-進階</string>
+    <string name="scn_gid_sunset">"強化紅色調，令
+日落顏色更鮮明。"</string>
+    <string name="scn_gid_sunset_onepoint">"天氣晴朗時，拍攝效果
+最佳。"</string>
+    <string name="scn_gid_sunset_recom_lens">廣角鏡頭</string>
+    <string name="scn_gid_sunset_step_up">"改變飽和度，調整
+夕陽光芒的紅色度。"</string>
+    <string name="scn_gid_sweets">"提高整體畫面亮度，
+令甜點賣相更精緻。"</string>
+    <string name="scn_gid_sweets_onepoint">"使甜點佔滿整個
+畫面。"</string>
+    <string name="scn_gid_sweets_recom_lens">"微距鏡頭
+明亮的鏡頭"</string>
+    <string name="scn_gid_sweets_step_up">"改變色彩飽和度，展現
+不同氣氛。"</string>
+    <string name="scn_gid_warm_night">"利用暖色調創造溫暖的
+夜空影像。"</string>
+    <string name="scn_gid_warm_night_onepoint">"盡可能在照片中
+加入燈光等光亮元素。"</string>
+    <string name="scn_gid_warm_night_recom_lens">"廣角鏡頭
+長焦鏡頭"</string>
+    <string name="scn_gid_warm_night_step_up">"改變白平衡設定，
+展現不同氣氛。"</string>
+    <string name="scn_gid_warm_portrait">"使用暖色調，為影像
+創造悠閒的氣氛。"</string>
+    <string name="scn_gid_warm_portrait_onepoint">"選擇間接光源場景，或
+避免陽光直射。"</string>
+    <string name="scn_gid_warm_portrait_recom_lens">標準變焦鏡頭</string>
+    <string name="scn_gid_warm_portrait_step_up">"改變白平衡設定，展現
+不同氣氛。"</string>
+    <string name="setup_ap_setting">連線目的地設定</string>
+    <string name="setup_app_setting">應用程式功能</string>
+    <string name="setup_ask_app_init">即將重設應用程式設定。確定嗎？</string>
+    <string name="setup_ask_camera_format">進行格式化時，將會刪除連線裝置中記憶卡上的所有資料。要繼續格式化?</string>
+    <string name="setup_ask_camera_init">連線裝置的設定將回復為預設設定。要繼續?</string>
+    <string name="setup_ask_camera_number_reset">將會重設 MP4 與連線裝置的照片檔案數。要繼續?</string>
+    <string name="setup_ask_camera_power_off">關閉連線的裝置?</string>
+    <string name="setup_avchd_quality">AVCHD播放畫質</string>
+    <string name="setup_avchd_quality_high">高畫質</string>
+    <string name="setup_avchd_quality_normal">標準畫質</string>
+    <string name="setup_btn_complete">完成</string>
+    <string name="setup_btn_delete">清除</string>
+    <string name="setup_btn_edit">編輯</string>
+    <string name="setup_btn_finish">完成</string>
+    <string name="setup_btn_format">格式化</string>
+    <string name="setup_btn_init">初始設定</string>
+    <string name="setup_btn_power_off">關閉電源</string>
+    <string name="setup_btn_priority_down">降低優先</string>
+    <string name="setup_btn_priority_up">提高優先</string>
+    <string name="setup_btn_regist">登錄</string>
+    <string name="setup_btn_reset">重設號碼</string>
+    <string name="setup_btn_return">返回</string>
+    <string name="setup_byte">位元組</string>
+    <string name="setup_cam_ssid_setting">SSID/Wi-Fi密碼設定</string>
+    <string name="setup_cam_ssid_setting_message">"尚未初始設定相機/攝錄機的SSID與Wi-Fi密碼。
+請變更SSID與Wi-Fi密碼。"</string>
+    <string name="setup_cam_ssid_setting_message_recomend">此相機/攝錄機的SSID與Wi-Fi密碼，設定為預設值。建議您變更SSID與Wi-Fi密碼。若要變更這些設定，請選取“相機/攝錄機Wi-Fi設定”→“相機/攝錄機SSID設定”。</string>
+    <string name="setup_cmn_wifi_address">Wi-Fi 位址</string>
+    <string name="setup_common_connect_type">可以使用Wi-Fi與Wi-Fi Direct。請選取連線方法。</string>
+    <string name="setup_connect">設定連接目的地</string>
+    <string name="setup_connect_no_camera">"找不到相機/攝錄機。
+搜尋結束。"</string>
+    <string name="setup_easy_wifi_hmmon_cam_id">相機/攝錄機之家居監察裝置ID</string>
+    <string name="setup_easy_wifi_hmmon_exp">您可由相機/攝錄機取得啟用家居監察功能所需的家居監察裝置ID。</string>
+    <string name="setup_easy_wifi_hmmon_sp_id">智能手機的家居監察裝置ID</string>
+    <string name="setup_easy_wifi_input">手動輸入</string>
+    <string name="setup_easy_wifi_not_registerd">尚未登錄</string>
+    <string name="setup_easy_wifi_setup_title">Wi-Fi功能的初始設定</string>
+    <string name="setup_easy_wifi_use_sp_login_id">使用您智能手機的登入ID</string>
+    <string name="setup_fps_value1">5</string>
+    <string name="setup_fps_value2">1</string>
+    <string name="setup_geo_tagging">定位記錄設定</string>
+    <string name="setup_help">說明</string>
+    <string name="setup_imageshuttle_network_name_explain">"顯示於其他裝置上的名稱可以變更。
+視乎連接裝置而定，輸入的字元可能無法正確顯示。
+名稱變更會在下次啟動本應用程式時套用上去。"</string>
+    <string name="setup_iso">ISO</string>
+    <string name="setup_iso_color_temp">色溫</string>
+    <string name="setup_jump_rec_1">1（感度：低）</string>
+    <string name="setup_jump_rec_2">2</string>
+    <string name="setup_jump_rec_3">3</string>
+    <string name="setup_jump_rec_4">4</string>
+    <string name="setup_jump_rec_5">5（感度：高）</string>
+    <string name="setup_jump_rec_high">高</string>
+    <string name="setup_jump_rec_low">低</string>
+    <string name="setup_jump_rec_mid">中</string>
+    <string name="setup_jump_rec_off">關閉</string>
+    <string name="setup_language_code">zh-TW</string>
+    <string name="setup_liveview">即時控制設定</string>
+    <string name="setup_liveview_lens_warning">鏡頭延伸警告</string>
+    <string name="setup_liveview_quality">即時控制影像品質</string>
+    <string name="setup_liveview_selfshot">自拍模式</string>
+    <string name="setup_menu">功能表</string>
+    <string name="setup_msg_ask_cloud_setup">連線的相機/攝錄機必須具備LUMIX CLUB 雲端同步功能。要繼續使用目前的設定?</string>
+    <string name="setup_msg_ask_geotag_setup">連線的相機/攝錄機必須具備定位記錄功能。要繼續使用目前的設定?</string>
+    <string name="setup_msg_ask_remote_access_setup">連線的相機/攝錄機必須具備家居監察功能。要繼續使用目前的功能 ?</string>
+    <string name="setup_msg_camera_disconnected">"連接遺失。
+請在本機播放模式開始。"</string>
+    <string name="setup_msg_camera_lens_error">已變更鏡頭連接狀態。</string>
+    <string name="setup_msg_camera_memu_update">已更新選單。</string>
+    <string name="setup_msg_gps_logging_1st">此功能僅適用於支援定位記錄的裝置。</string>
+    <string name="setup_msg_remote_access_1st">此功能僅適用於支援家居監察的裝置。</string>
+    <string name="setup_msg_remote_access_3g_necessary_a">若要啟動家居監察功能，您需要透過3G或4G網路連線。其使用受您的數據計劃限制。您可能會被服務供應商收取數據費用。</string>
+    <string name="setup_msg_remote_access_id_necessary">設定連線目的地。</string>
+    <string name="setup_msg_start_remote_watch">開始家居監察？</string>
+    <string name="setup_mtu_value1">1280位元組</string>
+    <string name="setup_mtu_value2">576位元組</string>
+    <string name="setup_name_invalid_char_code">"視乎連接目的地而定，輸入的字元可能無法正確顯示。
+您要繼續登記嗎？"</string>
+    <string name="setup_name_over_length">可以登記的字元數目為20個。</string>
+    <string name="setup_network_name">名稱</string>
+    <string name="setup_network_name_explain">"顯示於其他裝置上的DLNA 名稱可以變更。
+視乎連接裝置而定，輸入的字元可能無法正確顯示。
+名稱變更會在下次啟動本應用程式時套用上去。"</string>
+    <string name="setup_network_name_setting">網路名稱</string>
+    <string name="setup_now_format">正在格式化。</string>
+    <string name="setup_now_init">請稍候...</string>
+    <string name="setup_now_reset">請稍候...</string>
+    <string name="setup_off">關閉</string>
+    <string name="setup_on">開啟</string>
+    <string name="setup_picmate_activate">開始使用 LUMIX CLUB 功能</string>
+    <string name="setup_picmate_add_equip">新增</string>
+    <string name="setup_picmate_already_have_id">若您已經擁有登入ID</string>
+    <string name="setup_picmate_btn_agree">同意</string>
+    <string name="setup_picmate_btn_longin">登入</string>
+    <string name="setup_picmate_btn_new_regist">註冊</string>
+    <string name="setup_picmate_btn_not_agree">不同意</string>
+    <string name="setup_picmate_btn_regist">登錄</string>
+    <string name="setup_picmate_btn_sync_login_id">登錄與相機/攝錄機相同的LUMIX CLUB登入ID</string>
+    <string name="setup_picmate_btn_sync_need_check_login">已變更登入ID或密碼。請確認您可利用此ID登入LUMIX CLUB。</string>
+    <string name="setup_picmate_btn_unregist">不要登錄</string>
+    <string name="setup_picmate_cam_or_app_have_id">若您想在此應用程式與相機/攝錄機上使用同一個登入ID</string>
+    <string name="setup_picmate_cloud">雲端同步設定</string>
+    <string name="setup_picmate_cloud_action_capacity_over">容量超過限制時的動作</string>
+    <string name="setup_picmate_cloud_action_confirm_update">確認更新</string>
+    <string name="setup_picmate_cloud_auto_sync">自動同步</string>
+    <string name="setup_picmate_cloud_confirm">一律確認</string>
+    <string name="setup_picmate_cloud_overwrite">一律覆寫</string>
+    <string name="setup_picmate_cloud_picsize_recieving">影像尺寸（下載）</string>
+    <string name="setup_picmate_cloud_picsize_sending">影像尺寸（上傳）</string>
+    <string name="setup_picmate_cloud_using">使用雲端同步</string>
+    <string name="setup_picmate_label_access_number">存取號碼</string>
+    <string name="setup_picmate_label_address_number">位址號碼</string>
+    <string name="setup_picmate_label_comment_input">為圖片輸入註解。</string>
+    <string name="setup_picmate_label_login_id">登入 ID</string>
+    <string name="setup_picmate_label_login_password">密碼</string>
+    <string name="setup_picmate_label_login_password_check">確認密碼</string>
+    <string name="setup_picmate_label_login_regist">輸入登錄密碼</string>
+    <string name="setup_picmate_label_login_regist2">輸入登錄密碼</string>
+    <string name="setup_picmate_label_name">名稱</string>
+    <string name="setup_picmate_manage_id">管理登入 ID</string>
+    <string name="setup_picmate_not_have_id">若你沒有登入ID</string>
+    <string name="setup_picmate_regist_equip">登錄 AV 裝置</string>
+    <string name="setup_picmate_regist_service">登錄影像分享服務</string>
+    <string name="setup_picmate_service_sync">服務清單同步</string>
+    <string name="setup_picmate_title_av_list">AV 裝置目的地</string>
+    <string name="setup_picmate_title_av_regist">AV 裝置資訊</string>
+    <string name="setup_picmate_title_comment_input">輸入註解</string>
+    <string name="setup_picmate_title_login_info">輸入登入資訊</string>
+    <string name="setup_picmate_title_login_regist">輸入密碼以登錄</string>
+    <string name="setup_picmate_title_web">LUMIX CLUB 認證</string>
+    <string name="setup_picmate_upload_image">已上傳的影像</string>
+    <string name="setup_picsize_fullhd">Full HD (1920x1080)</string>
+    <string name="setup_picsize_large">大（原始尺寸）</string>
+    <string name="setup_picsize_middle">中</string>
+    <string name="setup_picsize_original">無限制（全像素）</string>
+    <string name="setup_picsize_recommend">建議影像尺寸</string>
+    <string name="setup_picsize_small">小</string>
+    <string name="setup_picsize_vga">VGA (640x480)</string>
+    <string name="setup_ply_picture_sort">圖片分類</string>
+    <string name="setup_ply_picture_sort_name">FILE NAME</string>
+    <string name="setup_ply_picture_sort_rectime">DATE/TIME</string>
+    <string name="setup_rec">拍攝設定</string>
+    <string name="setup_rec_time">記錄時間</string>
+    <string name="setup_rectime_explain">實際的記錄時間可能比先前設定的短，要視乎視頻記錄開始時的相機/攝錄機的可用記憶體而定。</string>
+    <string name="setup_remote_access_equip_id">裝置 ID</string>
+    <string name="setup_remote_access_equip_pw">密碼</string>
+    <string name="setup_remote_access_qr_button">QR碼</string>
+    <string name="setup_scn_gid_btn_title_finish_setting">設定</string>
+    <string name="setup_scn_gid_btn_title_photoshot">拍攝</string>
+    <string name="setup_scn_gid_navigation_title">場景指南</string>
+    <string name="setup_set_picmate_id_to_camera">設定相機/攝錄機登入ID</string>
+    <string name="setup_smaope_camera_picsize">影像尺寸：從相機/攝錄機複製</string>
+    <string name="setup_smaope_delete_gps">上傳時清除位置資訊</string>
+    <string name="setup_smaope_download_file_format">RAW+JPEG影像的保存格式</string>
+    <string name="setup_smaope_picamate">LUMIX CLUB 設定</string>
+    <string name="setup_smaope_picjmp">“影像分享”設定</string>
+    <string name="setup_smaope_player_select">選取影片播放器</string>
+    <string name="setup_smaope_player_select_summary_off">使用Image App播放器播放</string>
+    <string name="setup_smaope_player_select_summary_off_leica">使用Image Shuttle播放器播放</string>
+    <string name="setup_smaope_player_select_summary_on">選取播放器並播放</string>
+    <string name="setup_smaope_web_picsize">影像尺寸（上傳到網路）</string>
+    <string name="setup_smaope_work_charging">傳輸：僅限充電時</string>
+    <string name="setup_smaope_work_wifi_connecting">傳輸：僅限連接上Wi-Fi時</string>
+    <string name="setup_smart_app">Smart App</string>
+    <string name="setup_smart_operation">播放設定</string>
+    <string name="setup_ssid_ap_title">設定無線熱點</string>
+    <string name="setup_ssid_live_title">Live設定</string>
+    <string name="setup_ssid_search">搜尋</string>
+    <string name="setup_start_remote_ext_setting">進階設定</string>
+    <string name="setup_start_remote_mtu">MTU</string>
+    <string name="setup_start_remote_watch">開始家居監察</string>
+    <string name="setup_terms">使用條款</string>
+    <string name="setup_time_not_setting">未設定</string>
+    <string name="setup_time_sync">時鐘設定</string>
+    <string name="setup_time_sync_message">"尚未設定相機/攝錄機的時鐘。
+請使用智能手機的時鐘，同步相機/攝錄機的時鐘。"</string>
+    <string name="setup_use_remote_watch">使用家居監察</string>
+    <string name="setup_version">版本</string>
+    <string name="setup_version_info">版本資訊</string>
+    <string name="setup_video_frame_rate">幀/秒</string>
+    <string name="setup_video_frame_rate_simple">幀/秒</string>
+    <string name="setup_white_balance">白平衡</string>
+    <string name="setup_white_balance_detail_a">A</string>
+    <string name="setup_white_balance_detail_b">B</string>
+    <string name="setup_white_balance_detail_g">G</string>
+    <string name="setup_white_balance_detail_m">M</string>
+    <string name="setup_white_balance_label">WB</string>
+    <string name="setup_white_balance_set_button">SET</string>
+    <string name="setup_white_balance_set_explain">點一下以下按鈕可以設定白平衡。</string>
+    <string name="setup_wifi_encryption">加密法</string>
+    <string name="setup_wifi_encryption_aes">AES</string>
+    <string name="setup_wifi_encryption_none">無</string>
+    <string name="setup_wifi_encryption_tkip">TKIP</string>
+    <string name="setup_wifi_encryption_wep">WEP</string>
+    <string name="setup_wifi_security">安全性</string>
+    <string name="setup_wifi_security_open">無</string>
+    <string name="setup_wifi_security_shared">WPA2</string>
+    <string name="setup_wifi_security_wpa">WEP</string>
+    <string name="setup_wifi_security_wpa2">WPA</string>
+    <string name="setup_wifi_setting">Wi-Fi設定</string>
+    <string name="setup_wifi_setting_message">於廣播（Live頻道）時或透過存取點連線週邊設備時，執行設定。</string>
+    <string name="slow_zoom_speed_fast">快</string>
+    <string name="slow_zoom_speed_setting">變焦速度</string>
+    <string name="slow_zoom_speed_slow">慢</string>
+    <string name="slow_zoom_speed_standard">標準</string>
+    <string name="smartop_albumlist_title">請選擇要檢視的資料夾或相簿。</string>
+    <string name="smartop_confirm_delete">刪除所選取的檔案？</string>
+    <string name="smartop_copy_err">下載失敗</string>
+    <string name="smartop_copy_error_title">錯誤</string>
+    <string name="smartop_msg_comp_copying">複製完成。</string>
+    <string name="smartop_no_send_error_title">注意</string>
+    <string name="smartop_re_conect_title">"連接中斷。
+請選擇參考目的地。"</string>
+    <string name="snap_movie_bgm_title_1">編號1</string>
+    <string name="snap_movie_bgm_title_2">編號2</string>
+    <string name="snap_movie_bgm_title_3">編號3</string>
+    <string name="snap_movie_bgm_title_4">編號4</string>
+    <string name="snap_movie_bgm_title_5">編號5</string>
+    <string name="snap_movie_bgm_title_6">編號6</string>
+    <string name="snap_movie_bgm_title_7">編號7</string>
+    <string name="snap_movie_bgm_title_8">編號8</string>
+    <string name="snap_movie_content_time">秒</string>
+    <string name="tab_home_button">原位</string>
+    <string name="text_4k_crop_end_frame">退出</string>
+    <string name="text_4k_crop_frame_setting2">調整</string>
+    <string name="text_4k_crop_start_frame">開始</string>
+    <string name="title_connection_error">連接錯誤</string>
+    <string name="title_use_functab" />
+    <string name="title_usegeo">使用定位記錄</string>
+    <string name="touchshare_copied_picture">已複製影像</string>
+    <string name="touchshare_copying">複製影像中...</string>
+    <string name="touchshare_exit_action">若要結束此功能，請點一下以下按鈕。</string>
+    <string name="touchshare_msg_not_connecting">與相機/攝錄機的連線中斷。</string>
+    <string name="touchshare_next_touch_action">若要繼續複製影像，請選取相機/攝錄機上的影像，然後再次將您的智能手機觸碰相機/攝錄機。</string>
+    <string name="ugase_agreement_support">"有關Google Analytics的使用條款和隱私政策詳情，請查詢Google Analytics的網站。
+Google Analytics使用條款
+http://www.google.com/intl/ja/analytics/tos.html
+Google政策和通則
+http://www.google.com/intl/ja/policies/privacy/
+
+如需進行查詢，請使用使用條款上所列的聯絡資訊。"</string>
+    <string name="ugase_agreement_support_old">如需進行查詢，請使用本應用程式使用條款上所列的聯絡資訊。</string>
+    <string name="ugase_agreement_text_1">"(1) 本應用程式會保留您正使用終端中本應用程式的用戶歷史日誌且具有將用戶歷史上傳至Panasonic Corporation（以下稱為公司）指定伺服器的功能。為了提供與本應用程式相關的軟體更新、對此應用程式進行改進、增加功能與客戶便利性並確保更順暢地對客戶交付支援服務與技術，當使用本應用程式時，將自動建立並儲存與客戶設備、裝置、應用程式軟體，以及週邊設備相關的技術資訊（包括錄製、播放與傳輸之類的用量資訊），以及與本應用程式相關的用量歷史資訊及技術記錄與相關資訊，上述資訊可能被收集並儲存在本公司指定的伺服器內，並且以無法識別個別客戶身份的方式來使用。
+如需進行查詢，請使用使用條款上所列的聯絡資訊。"</string>
+    <string name="ugase_agreement_text_2">Panasonic Corporation（以下稱為公司）的本應用程式使用Google Analytics，一項Google Inc.（以下稱為Google）提供的服務，來提供本應用程式的軟體更新、本應用程式的改進、增加功能和客戶便利、確保為客戶順暢提供支援服務和技術、以及用於市場行銷（銷售促銷）目的。當本款應用程式中使用Google Analytics時，基於公司發出的cookie，使用本應用程式時自動創建並保存客戶設備、器件、系統、應用軟體、週邊設備和連接設備相關的技術資訊（包括螢幕查看的顯示狀態、記錄、重播和傳輸等操作和使用資訊）以及本應用程式使用歷史和技術日誌相關的資訊和關聯資訊、客戶的居住國家或使用語言（以下將此資訊稱為「客戶資訊」）會被Google自動收集、記錄並分析。公司從Google接收分析結果以瞭解客戶資訊。Google Analytics收集、記錄和分析的客戶資訊不包含識別單獨客戶的資訊。此資訊也基於Google的隱私政策由Google控制。</string>
+    <string name="ugase_agreement_text_old">本應用程式包含會維護客戶所使用裝置的用量條件，且將上傳到 Panasonic Corporation（本文稱為「本公司」）的功能。為了提供與本應用程式相關的軟體更新、對此應用程式進行改進、增加功能與客戶便利性並確保更順暢地對客戶交付支援服務與技術，當使用本應用程式時，將自動建立並儲存與客戶設備、裝置、應用程式軟體，以及週邊設備相關的技術資訊（包括錄製、播放與傳輸之類的用量資訊），以及與本應用程式相關的用量歷史資訊及技術記錄與相關資訊，上述資訊將被收集並儲存在本公司指定的伺服器內，並且以無法識別個別客戶身份的方式來使用。</string>
+    <string name="ugase_agreement_title">資料獲取和使用協定</string>
+    <string name="ugase_agreement_title_old">資料用量協議</string>
+    <string name="ugase_conditions">用量條件</string>
+    <string name="ugase_explain">將自動傳送應用程式用量條件到伺服器。此設定可以稍後變更。</string>
+    <string name="ugase_explain_menu">“功能表” -> “應用程式功能” -> “用量條件” -> “自動傳送”</string>
+    <string name="ugase_explain_menu_cookie_policy">“功能表” -> “應用程式功能” -> “用量條件” -> “自動傳送”</string>
+    <string name="ugase_send_automatically">自動傳送</string>
+    <string name="ugase_send_usage_conditions">傳送用量條件</string>
+    <string name="wf_msg_confirm_regain">"將會停用此應用程式取得的舊ID，
+是否再次登錄？"</string>
+    <string name="wifi_connect_no">否</string>
+    <string name="wifi_connect_yes">是</string>
+    <string name="wifi_disconnect">"必須啟用Wi-Fi 才可以連接到相機/攝錄機。
+要啟用Wi-Fi嗎？
+
+連接到相機/攝錄機時，使用其他應用程式的上傳會被取消。請確認上傳已經完成。"</string>
+    <string name="wifi_password_input">輸入密碼。</string>
+    <string name="wifi_password_input2">"密碼不正確。
+請重新輸入密碼。"</string>
+    <string name="wifi_password_visible">顯示密碼</string>
+    <string name="wifi_st_unknown">"無法啟用 Wi-Fi。
+請檢查 Wi-Fi 設定。"</string>
+    <string name="wifi_wifi_setting">Wi-Fi設定</string>
+    <string name="wipe_frame_color_gray">灰色</string>
+    <string name="wipe_frame_color_green">綠色</string>
+    <string name="wipe_frame_color_orange">橘色</string>
+    <string name="wipe_frame_color_pink">粉紅色</string>
+    <string name="wipe_frame_color_shadow">陰影</string>
+    <string name="wipe_frame_less">無框</string>
+</resources>
