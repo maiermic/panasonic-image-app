@@ -40,6 +40,7 @@ Reverse engineered source code of [Panasonic Image App][app-link]
 ### Tools
 - [Apktool][apktool_2.4.0.jar]
 - [jadx][jadx]
+- [Android SDK Build-Tools](https://developer.android.com/studio/releases/build-tools)
 
 ### Decode APK
 
