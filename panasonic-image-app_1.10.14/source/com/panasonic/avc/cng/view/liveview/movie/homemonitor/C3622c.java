@@ -16,7 +16,7 @@ import android.widget.FrameLayout;
 import com.panasonic.avc.cng.core.codec.G711Codec;
 import com.panasonic.avc.cng.core.codec.PacketLossConcealer;
 import com.panasonic.avc.cng.core.p040a.C1438ac;
-import com.panasonic.avc.cng.core.p040a.C1442ag;
+import com.panasonic.avc.cng.core.p040a.RecordVianaCommand;
 import com.panasonic.avc.cng.core.p040a.C1448aj;
 import com.panasonic.avc.cng.core.p040a.C1473at;
 import com.panasonic.avc.cng.imageapp.R;
@@ -339,7 +339,7 @@ public class C3622c extends C2291c implements C2239a, C3909b {
     /* access modifiers changed from: private */
 
     /* renamed from: bI */
-    public C1442ag f11806bI;
+    public RecordVianaCommand recordVianaCommand;
     /* access modifiers changed from: private */
 
     /* renamed from: bJ */
@@ -1550,7 +1550,7 @@ public class C3622c extends C2291c implements C2239a, C3909b {
 
     /* renamed from: n */
     public void mo8633n() {
-        if (!mo8639t() && !mo8640u() && this.f11806bI != null) {
+        if (!mo8639t() && !mo8640u() && this.recordVianaCommand != null) {
             this.f11811bN = true;
             m14480ag();
             m14478af();
@@ -1559,7 +1559,7 @@ public class C3622c extends C2291c implements C2239a, C3909b {
                 public void run() {
                     final C1853h c;
                     synchronized (C1910l.m7679a()) {
-                        c = C3622c.this.f11806bI.mo3508c();
+                        c = C3622c.this.recordVianaCommand.mo3508c();
                     }
                     if (C3622c.this.f3707b != null) {
                         C3622c.this.f3707b.post(new Runnable() {
@@ -1592,7 +1592,7 @@ public class C3622c extends C2291c implements C2239a, C3909b {
 
     /* renamed from: o */
     public void mo8634o() {
-        if (this.f11806bI == null) {
+        if (this.recordVianaCommand == null) {
             this.f11892t.mo3216a(Boolean.valueOf(false));
             this.f11893u.mo3216a(Boolean.valueOf(false));
             this.f11729J.mo3216a(Boolean.valueOf(false));
@@ -1604,7 +1604,7 @@ public class C3622c extends C2291c implements C2239a, C3909b {
                     public void run() {
                         C1853h b;
                         synchronized (C1910l.m7679a()) {
-                            b = C3622c.this.f11806bI.mo3507b();
+                            b = C3622c.this.recordVianaCommand.mo3507b();
                         }
                         if (!b.mo4771a()) {
                             C3622c.this.mo3207a((Runnable) new Runnable() {
@@ -1627,7 +1627,7 @@ public class C3622c extends C2291c implements C2239a, C3909b {
                 public void run() {
                     final C1853h a;
                     synchronized (C1910l.m7679a()) {
-                        a = C3622c.this.f11806bI.mo3505a();
+                        a = C3622c.this.recordVianaCommand.mo3505a();
                     }
                     C3622c.this.f11816bS = false;
                     C3622c.this.mo3207a((Runnable) new Runnable() {
@@ -1696,7 +1696,7 @@ public class C3622c extends C2291c implements C2239a, C3909b {
                                 C1712b.m6919c().mo4897a(C3622c.this.f11802bE);
                                 C3622c.this.f11880h = C3622c.this.f11800bC.mo5794f();
                                 C3622c.this.f11800bC.mo5784a(C3622c.this.f11801bD);
-                                C3622c.this.f11806bI = new C1442ag(C3622c.this.f11802bE.f5682d);
+                                C3622c.this.recordVianaCommand = new RecordVianaCommand(C3622c.this.f11802bE.f5682d);
                                 C3622c.this.f11807bJ = new C3911w();
                                 C3622c.this.f11808bK = new C1438ac(C3622c.this.f11802bE.f5682d);
                                 C3622c.this.mo3207a((Runnable) new Runnable() {

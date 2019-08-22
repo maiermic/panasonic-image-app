@@ -4,12 +4,12 @@ import com.panasonic.avc.cng.model.p051c.C1853h;
 import com.panasonic.avc.cng.util.C2261g;
 
 /* renamed from: com.panasonic.avc.cng.core.a.ag */
-public class C1442ag {
+public class RecordVianaCommand {
 
     /* renamed from: a */
     protected String f3916a = "";
 
-    public C1442ag(String str) {
+    public RecordVianaCommand(String str) {
         this.f3916a = String.format("http://%s:80", new Object[]{str});
     }
 

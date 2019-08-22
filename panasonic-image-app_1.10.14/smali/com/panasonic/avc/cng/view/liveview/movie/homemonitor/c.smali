@@ -900,7 +900,7 @@
 
 .field private bH:Z
 
-.field private bI:Lcom/panasonic/avc/cng/core/a/ag;
+.field private recordVianaCommand:Lcom/panasonic/avc/cng/core/a/RecordVianaCommand;
 
 .field private bJ:Lcom/panasonic/avc/cng/view/liveview/w;
 
@@ -2070,22 +2070,22 @@
     return-object p1
 .end method
 
-.method static synthetic a(Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c;)Lcom/panasonic/avc/cng/core/a/ag;
+.method static synthetic a(Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c;)Lcom/panasonic/avc/cng/core/a/RecordVianaCommand;
     .locals 1
 
     .prologue
     .line 85
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c;->bI:Lcom/panasonic/avc/cng/core/a/ag;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c;->recordVianaCommand:Lcom/panasonic/avc/cng/core/a/RecordVianaCommand;
 
     return-object v0
 .end method
 
-.method static synthetic a(Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c;Lcom/panasonic/avc/cng/core/a/ag;)Lcom/panasonic/avc/cng/core/a/ag;
+.method static synthetic a(Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c;Lcom/panasonic/avc/cng/core/a/RecordVianaCommand;)Lcom/panasonic/avc/cng/core/a/RecordVianaCommand;
     .locals 0
 
     .prologue
     .line 85
-    iput-object p1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c;->bI:Lcom/panasonic/avc/cng/core/a/ag;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c;->recordVianaCommand:Lcom/panasonic/avc/cng/core/a/RecordVianaCommand;
 
     return-object p1
 .end method
@@ -14279,7 +14279,7 @@
 
     .line 1414
     :cond_1
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c;->bI:Lcom/panasonic/avc/cng/core/a/ag;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c;->recordVianaCommand:Lcom/panasonic/avc/cng/core/a/RecordVianaCommand;
 
     if-eqz v0, :cond_0
 
@@ -14321,7 +14321,7 @@
     const/4 v2, 0x0
 
     .line 1489
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c;->bI:Lcom/panasonic/avc/cng/core/a/ag;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c;->recordVianaCommand:Lcom/panasonic/avc/cng/core/a/RecordVianaCommand;
 
     if-nez v0, :cond_1
 
