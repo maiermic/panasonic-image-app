@@ -56,7 +56,7 @@
     :try_start_0
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b$11;->b:Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b;->k(Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b;)Lcom/panasonic/avc/cng/core/a/ab;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b;->k(Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b;)Lcom/panasonic/avc/cng/core/a/PantiluterCommand;
 
     move-result-object v0
 
@@ -68,7 +68,7 @@
 
     array-length v2, v2
 
-    invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/core/a/ab;->b(I)Lcom/panasonic/avc/cng/model/c/h;
+    invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/core/a/PantiluterCommand;->b(I)Lcom/panasonic/avc/cng/model/c/h;
 
     move-result-object v0
 
@@ -113,7 +113,7 @@
     .line 1985
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b$11;->b:Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b;->k(Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b;)Lcom/panasonic/avc/cng/core/a/ab;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b;->k(Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b;)Lcom/panasonic/avc/cng/core/a/PantiluterCommand;
 
     move-result-object v0
 
@@ -123,7 +123,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/core/a/ab;->a([B)Lcom/panasonic/avc/cng/model/c/h;
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/core/a/PantiluterCommand;->a([B)Lcom/panasonic/avc/cng/model/c/h;
 
     goto :goto_0
 .end method

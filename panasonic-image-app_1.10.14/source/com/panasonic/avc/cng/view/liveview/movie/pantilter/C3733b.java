@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.os.Handler;
 import android.os.Message;
 import android.widget.FrameLayout;
-import com.panasonic.avc.cng.core.p040a.C1437ab;
+import com.panasonic.avc.cng.core.p040a.PantiluterCommand;
 import com.panasonic.avc.cng.core.p040a.C1441af;
 import com.panasonic.avc.cng.core.p040a.C1448aj;
 import com.panasonic.avc.cng.core.p040a.C1501d;
@@ -435,7 +435,7 @@ public class C3733b extends C2291c {
     /* access modifiers changed from: private */
 
     /* renamed from: bs */
-    public C1437ab f12274bs;
+    public PantiluterCommand f12274bs;
     /* access modifiers changed from: private */
 
     /* renamed from: bt */
@@ -1280,7 +1280,7 @@ public class C3733b extends C2291c {
             this.f12290e.mo3216a(a.f5685g);
             this.f12272bq = new C1441af(a.f5682d);
             this.f12273br = new C3911w();
-            this.f12274bs = new C1437ab(a.f5682d);
+            this.f12274bs = new PantiluterCommand(a.f5682d);
             this.f12270bo = C2253z.m9690b(this.f3706a, a);
             this.f12270bo.mo5369f();
             this.f12270bo.mo5367a(this.f12271bp, z, true);

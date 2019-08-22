@@ -4,7 +4,7 @@ import com.panasonic.avc.cng.model.p051c.C1853h;
 import com.panasonic.avc.cng.util.C2261g;
 
 /* renamed from: com.panasonic.avc.cng.core.a.ab */
-public class C1437ab extends C1497c {
+public class PantiluterCommand extends C1497c {
 
     /* renamed from: h */
     private final String f3906h = "PantiluterCommand";
@@ -12,7 +12,7 @@ public class C1437ab extends C1497c {
     /* renamed from: i */
     private final int f3907i = 5;
 
-    public C1437ab(String str) {
+    public PantiluterCommand(String str) {
         super(str);
     }
 

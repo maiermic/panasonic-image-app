@@ -9,7 +9,7 @@ import android.content.res.Configuration;
 import android.os.Handler;
 import android.os.Message;
 import android.preference.PreferenceManager;
-import com.panasonic.avc.cng.core.p040a.C1437ab;
+import com.panasonic.avc.cng.core.p040a.PantiluterCommand;
 import com.panasonic.avc.cng.core.p040a.C1441af;
 import com.panasonic.avc.cng.core.p040a.C1448aj;
 import com.panasonic.avc.cng.core.p040a.C1494ay;
@@ -464,7 +464,7 @@ public class C3541f extends C2291c {
     /* access modifiers changed from: private */
 
     /* renamed from: bz */
-    public C1437ab f11524bz;
+    public PantiluterCommand f11524bz;
     /* access modifiers changed from: private */
 
     /* renamed from: ca */
@@ -1354,7 +1354,7 @@ public class C3541f extends C2291c {
             this.f11542e.mo3216a(a.f5685g);
             this.f11522bx = new C1441af(a.f5682d);
             this.f11523by = new C3911w();
-            this.f11524bz = new C1437ab(a.f5682d);
+            this.f11524bz = new PantiluterCommand(a.f5682d);
             this.f11473bA = new C1494ay(a.f5682d);
             this.f11520bv = C2253z.m9690b(this.f3706a, a);
             this.f11520bv.mo5369f();
