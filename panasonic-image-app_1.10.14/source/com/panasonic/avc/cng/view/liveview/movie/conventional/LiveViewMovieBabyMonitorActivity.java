@@ -31,7 +31,7 @@ import com.google.firebase.iid.FirebaseInstanceId;
 import com.panasonic.avc.cng.application.C1347a;
 import com.panasonic.avc.cng.application.ImageAppLauncher;
 import com.panasonic.avc.cng.core.codec.G711Codec;
-import com.panasonic.avc.cng.core.p040a.C1412a;
+import com.panasonic.avc.cng.core.p040a.BabyMonitorCommand;
 import com.panasonic.avc.cng.core.p040a.C1448aj;
 import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.C1712b;
@@ -127,7 +127,7 @@ public class LiveViewMovieBabyMonitorActivity extends C3476a implements C0010a, 
         /* access modifiers changed from: private */
 
         /* renamed from: g */
-        public C1412a f11088g = null;
+        public BabyMonitorCommand f11088g = null;
         /* access modifiers changed from: private */
 
         /* renamed from: h */
@@ -205,7 +205,7 @@ public class LiveViewMovieBabyMonitorActivity extends C3476a implements C0010a, 
 
         /* renamed from: b */
         private void m13772b(String str) {
-            new C1412a(C1712b.m6919c().mo4896a().f5682d).mo3413b(str);
+            new BabyMonitorCommand(C1712b.m6919c().mo4896a().f5682d).mo3413b(str);
         }
 
         /* renamed from: b */
@@ -221,7 +221,7 @@ public class LiveViewMovieBabyMonitorActivity extends C3476a implements C0010a, 
 
         /* renamed from: c */
         private void m13774c(String str) {
-            new C1412a(C1712b.m6919c().mo4896a().f5682d).mo3415c(str);
+            new BabyMonitorCommand(C1712b.m6919c().mo4896a().f5682d).mo3415c(str);
         }
 
         /* renamed from: c */
@@ -256,7 +256,7 @@ public class LiveViewMovieBabyMonitorActivity extends C3476a implements C0010a, 
             this.f11085d = 0;
             this.f11087f[0] = 0;
             this.f11087f[1] = 0;
-            this.f11088g = new C1412a(a.f5682d);
+            this.f11088g = new BabyMonitorCommand(a.f5682d);
             new Thread(new Runnable() {
                 public void run() {
                     synchronized (C1910l.m7679a()) {
@@ -340,7 +340,7 @@ public class LiveViewMovieBabyMonitorActivity extends C3476a implements C0010a, 
                 if (!TextUtils.isEmpty(c)) {
                     C1892f a = C1712b.m6919c().mo4896a();
                     if (a != null) {
-                        new C1412a(a.f5682d).mo3410a(c);
+                        new BabyMonitorCommand(a.f5682d).mo3410a(c);
                     }
                     while (LiveViewMovieBabyMonitorActivity.this.getStartLive() != 2 && LiveViewMovieBabyMonitorActivity.this.getStartLive() != 3) {
                         try {

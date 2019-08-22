@@ -89,13 +89,13 @@
     if-eqz v2, :cond_0
 
     .line 35
-    new-instance v0, Lcom/panasonic/avc/cng/core/a/a;
+    new-instance v0, Lcom/panasonic/avc/cng/core/a/BabyMonitorCommand;
 
     iget-object v2, v2, Lcom/panasonic/avc/cng/model/f;->d:Ljava/lang/String;
 
-    invoke-direct {v0, v2}, Lcom/panasonic/avc/cng/core/a/a;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v2}, Lcom/panasonic/avc/cng/core/a/BabyMonitorCommand;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/core/a/a;->a(Ljava/lang/String;)Z
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/core/a/BabyMonitorCommand;->a(Ljava/lang/String;)Z
 
     move-result v0
 

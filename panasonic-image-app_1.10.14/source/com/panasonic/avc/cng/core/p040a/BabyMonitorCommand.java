@@ -12,7 +12,7 @@ import java.net.SocketException;
 import java.util.ArrayList;
 
 /* renamed from: com.panasonic.avc.cng.core.a.a */
-public class C1412a extends C1497c {
+public class BabyMonitorCommand extends C1497c {
 
     /* renamed from: k */
     private static Object f3843k = new Object();
@@ -26,7 +26,7 @@ public class C1412a extends C1497c {
     /* renamed from: j */
     private int f3846j = 20000;
 
-    public C1412a(String str) {
+    public BabyMonitorCommand(String str) {
         super(str);
         this.f3844h = str;
     }

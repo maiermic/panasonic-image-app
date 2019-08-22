@@ -4,7 +4,7 @@ import android.content.Intent;
 import android.text.TextUtils;
 import com.google.firebase.iid.FirebaseInstanceId;
 import com.google.firebase.iid.FirebaseInstanceIdService;
-import com.panasonic.avc.cng.core.p040a.C1412a;
+import com.panasonic.avc.cng.core.p040a.BabyMonitorCommand;
 import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.C1892f;
 import com.panasonic.avc.cng.util.C2261g;
@@ -17,7 +17,7 @@ public class ImageAppInstanceIdService extends FirebaseInstanceIdService {
         C2261g.m9763a("FirebaseMessaging", getClass().getSimpleName() + "#onTokenRefresh: token = " + c);
         C1892f a = C1712b.m6919c().mo4896a();
         if (z && a != null) {
-            z = new C1412a(a.f5682d).mo3410a(c);
+            z = new BabyMonitorCommand(a.f5682d).mo3410a(c);
         }
         Intent intent = new Intent();
         intent.setAction("ImageAppInstanceIdService.ACTION_TOKEN_REFRESHED");

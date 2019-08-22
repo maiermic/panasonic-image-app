@@ -36,7 +36,7 @@
 
 .field private f:[I
 
-.field private g:Lcom/panasonic/avc/cng/core/a/a;
+.field private g:Lcom/panasonic/avc/cng/core/a/BabyMonitorCommand;
 
 .field private h:Landroid/os/Handler;
 
@@ -83,7 +83,7 @@
     iput-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieBabyMonitorActivity$a;->f:[I
 
     .line 125
-    iput-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieBabyMonitorActivity$a;->g:Lcom/panasonic/avc/cng/core/a/a;
+    iput-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieBabyMonitorActivity$a;->g:Lcom/panasonic/avc/cng/core/a/BabyMonitorCommand;
 
     .line 126
     iput-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieBabyMonitorActivity$a;->h:Landroid/os/Handler;
@@ -140,22 +140,22 @@
     return-object p1
 .end method
 
-.method static synthetic a(Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieBabyMonitorActivity$a;)Lcom/panasonic/avc/cng/core/a/a;
+.method static synthetic a(Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieBabyMonitorActivity$a;)Lcom/panasonic/avc/cng/core/a/BabyMonitorCommand;
     .locals 1
 
     .prologue
     .line 112
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieBabyMonitorActivity$a;->g:Lcom/panasonic/avc/cng/core/a/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieBabyMonitorActivity$a;->g:Lcom/panasonic/avc/cng/core/a/BabyMonitorCommand;
 
     return-object v0
 .end method
 
-.method static synthetic a(Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieBabyMonitorActivity$a;Lcom/panasonic/avc/cng/core/a/a;)Lcom/panasonic/avc/cng/core/a/a;
+.method static synthetic a(Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieBabyMonitorActivity$a;Lcom/panasonic/avc/cng/core/a/BabyMonitorCommand;)Lcom/panasonic/avc/cng/core/a/BabyMonitorCommand;
     .locals 0
 
     .prologue
     .line 112
-    iput-object p1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieBabyMonitorActivity$a;->g:Lcom/panasonic/avc/cng/core/a/a;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieBabyMonitorActivity$a;->g:Lcom/panasonic/avc/cng/core/a/BabyMonitorCommand;
 
     return-object p1
 .end method
@@ -269,7 +269,7 @@
 
     .prologue
     .line 188
-    new-instance v0, Lcom/panasonic/avc/cng/core/a/a;
+    new-instance v0, Lcom/panasonic/avc/cng/core/a/BabyMonitorCommand;
 
     .line 189
     invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
@@ -282,9 +282,9 @@
 
     iget-object v1, v1, Lcom/panasonic/avc/cng/model/f;->d:Ljava/lang/String;
 
-    invoke-direct {v0, v1}, Lcom/panasonic/avc/cng/core/a/a;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v1}, Lcom/panasonic/avc/cng/core/a/BabyMonitorCommand;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v0, p1}, Lcom/panasonic/avc/cng/core/a/a;->b(Ljava/lang/String;)Z
+    invoke-virtual {v0, p1}, Lcom/panasonic/avc/cng/core/a/BabyMonitorCommand;->b(Ljava/lang/String;)Z
 
     .line 190
     return-void
@@ -305,7 +305,7 @@
 
     .prologue
     .line 218
-    new-instance v0, Lcom/panasonic/avc/cng/core/a/a;
+    new-instance v0, Lcom/panasonic/avc/cng/core/a/BabyMonitorCommand;
 
     .line 219
     invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
@@ -318,9 +318,9 @@
 
     iget-object v1, v1, Lcom/panasonic/avc/cng/model/f;->d:Ljava/lang/String;
 
-    invoke-direct {v0, v1}, Lcom/panasonic/avc/cng/core/a/a;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v1}, Lcom/panasonic/avc/cng/core/a/BabyMonitorCommand;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v0, p1}, Lcom/panasonic/avc/cng/core/a/a;->c(Ljava/lang/String;)Z
+    invoke-virtual {v0, p1}, Lcom/panasonic/avc/cng/core/a/BabyMonitorCommand;->c(Ljava/lang/String;)Z
 
     .line 220
     return-void
@@ -463,7 +463,7 @@
 
     if-gtz v4, :cond_2
 
-    iget-object v4, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieBabyMonitorActivity$a;->g:Lcom/panasonic/avc/cng/core/a/a;
+    iget-object v4, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieBabyMonitorActivity$a;->g:Lcom/panasonic/avc/cng/core/a/BabyMonitorCommand;
 
     if-eqz v4, :cond_2
 
@@ -663,13 +663,13 @@
     aput v1, v3, v0
 
     .line 269
-    new-instance v1, Lcom/panasonic/avc/cng/core/a/a;
+    new-instance v1, Lcom/panasonic/avc/cng/core/a/BabyMonitorCommand;
 
     iget-object v2, v2, Lcom/panasonic/avc/cng/model/f;->d:Ljava/lang/String;
 
-    invoke-direct {v1, v2}, Lcom/panasonic/avc/cng/core/a/a;-><init>(Ljava/lang/String;)V
+    invoke-direct {v1, v2}, Lcom/panasonic/avc/cng/core/a/BabyMonitorCommand;-><init>(Ljava/lang/String;)V
 
-    iput-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieBabyMonitorActivity$a;->g:Lcom/panasonic/avc/cng/core/a/a;
+    iput-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieBabyMonitorActivity$a;->g:Lcom/panasonic/avc/cng/core/a/BabyMonitorCommand;
 
     .line 271
     new-instance v1, Ljava/lang/Thread;
@@ -803,13 +803,13 @@
     if-eqz v1, :cond_0
 
     .line 399
-    new-instance v2, Lcom/panasonic/avc/cng/core/a/a;
+    new-instance v2, Lcom/panasonic/avc/cng/core/a/BabyMonitorCommand;
 
     iget-object v1, v1, Lcom/panasonic/avc/cng/model/f;->d:Ljava/lang/String;
 
-    invoke-direct {v2, v1}, Lcom/panasonic/avc/cng/core/a/a;-><init>(Ljava/lang/String;)V
+    invoke-direct {v2, v1}, Lcom/panasonic/avc/cng/core/a/BabyMonitorCommand;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v2, v0}, Lcom/panasonic/avc/cng/core/a/a;->a(Ljava/lang/String;)Z
+    invoke-virtual {v2, v0}, Lcom/panasonic/avc/cng/core/a/BabyMonitorCommand;->a(Ljava/lang/String;)Z
 
     .line 403
     :cond_0
@@ -1012,7 +1012,7 @@
 
     .line 328
     :cond_1
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieBabyMonitorActivity$a;->g:Lcom/panasonic/avc/cng/core/a/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieBabyMonitorActivity$a;->g:Lcom/panasonic/avc/cng/core/a/BabyMonitorCommand;
 
     if-eqz v0, :cond_2
 
