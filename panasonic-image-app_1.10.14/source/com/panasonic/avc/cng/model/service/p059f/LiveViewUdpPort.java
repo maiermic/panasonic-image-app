@@ -5,7 +5,7 @@ import java.net.DatagramPacket;
 import java.net.DatagramSocket;
 
 /* renamed from: com.panasonic.avc.cng.model.service.f.g */
-public class C2059g {
+public class LiveViewUdpPort {
 
     /* renamed from: a */
     int f6366a = 0;

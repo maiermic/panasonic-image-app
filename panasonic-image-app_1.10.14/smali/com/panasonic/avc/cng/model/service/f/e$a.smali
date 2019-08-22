@@ -436,16 +436,16 @@
     const-wide/16 v2, 0x64
 
     .line 320
-    new-instance v4, Lcom/panasonic/avc/cng/model/service/f/g;
+    new-instance v4, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;
 
-    invoke-direct {v4}, Lcom/panasonic/avc/cng/model/service/f/g;-><init>()V
+    invoke-direct {v4}, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;-><init>()V
 
     .line 321
     const/4 v5, 0x1
 
     .line 326
     :try_start_0
-    invoke-virtual {v4}, Lcom/panasonic/avc/cng/model/service/f/g;->a()V
+    invoke-virtual {v4}, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;->a()V
     :try_end_0
     .catch Ljava/net/SocketException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -463,7 +463,7 @@
     if-nez v0, :cond_0
 
     .line 342
-    invoke-virtual {v4}, Lcom/panasonic/avc/cng/model/service/f/g;->d()V
+    invoke-virtual {v4}, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;->d()V
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
 
@@ -512,7 +512,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v4}, Lcom/panasonic/avc/cng/model/service/f/g;->b()I
+    invoke-virtual {v4}, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;->b()I
 
     move-result v6
 
@@ -541,7 +541,7 @@
     invoke-virtual {v1, v0}, Lcom/panasonic/avc/cng/model/service/f/e;->a(Lcom/panasonic/avc/cng/model/c/h;)V
 
     .line 360
-    invoke-virtual {v4}, Lcom/panasonic/avc/cng/model/service/f/g;->d()V
+    invoke-virtual {v4}, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;->d()V
     :try_end_4
     .catch Ljava/lang/Exception; {:try_start_4 .. :try_end_4} :catch_1
 
@@ -563,7 +563,7 @@
     .line 446
     :cond_1
     :goto_1
-    invoke-virtual {v4}, Lcom/panasonic/avc/cng/model/service/f/g;->d()V
+    invoke-virtual {v4}, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;->d()V
 
     goto :goto_0
 
@@ -659,7 +659,7 @@
     .line 381
     :cond_4
     :try_start_9
-    invoke-virtual {v4}, Lcom/panasonic/avc/cng/model/service/f/g;->c()[B
+    invoke-virtual {v4}, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;->c()[B
 
     move-result-object v0
 
@@ -886,7 +886,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v4}, Lcom/panasonic/avc/cng/model/service/f/g;->b()I
+    invoke-virtual {v4}, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;->b()I
 
     move-result v6
 

@@ -12,7 +12,6 @@ import com.panasonic.avc.cng.model.C1897j.C1905h;
 import com.panasonic.avc.cng.model.C1910l;
 import com.panasonic.avc.cng.model.p051c.C1853h;
 import com.panasonic.avc.cng.model.service.C2176k;
-import com.panasonic.avc.cng.model.service.C2176k.C2177a;
 import com.panasonic.avc.cng.util.C2261g;
 import java.lang.ref.SoftReference;
 import java.net.SocketException;
@@ -71,7 +70,7 @@ public class C2054d implements C2176k {
         }
 
         public void run() {
-            C2059g gVar = new C2059g();
+            LiveViewUdpPort gVar = new LiveViewUdpPort();
             try {
                 gVar.mo5379a();
                 try {
