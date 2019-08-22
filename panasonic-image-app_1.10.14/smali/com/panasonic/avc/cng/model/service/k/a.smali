@@ -13,7 +13,7 @@
 
 .field private c:Lcom/panasonic/avc/cng/model/service/t$a;
 
-.field private d:Lcom/panasonic/avc/cng/core/a/ah;
+.field private remoteStreamCommand:Lcom/panasonic/avc/cng/core/a/RemoteStreamCommand;
 
 .field private e:Ljava/lang/String;
 
@@ -46,7 +46,7 @@
     iput-object v1, p0, Lcom/panasonic/avc/cng/model/service/k/a;->c:Lcom/panasonic/avc/cng/model/service/t$a;
 
     .line 38
-    iput-object v1, p0, Lcom/panasonic/avc/cng/model/service/k/a;->d:Lcom/panasonic/avc/cng/core/a/ah;
+    iput-object v1, p0, Lcom/panasonic/avc/cng/model/service/k/a;->remoteStreamCommand:Lcom/panasonic/avc/cng/core/a/RemoteStreamCommand;
 
     .line 39
     const-string v0, ""
@@ -437,7 +437,7 @@
 
 
 # virtual methods
-.method public a(Lcom/panasonic/avc/cng/model/service/t$a;Lcom/panasonic/avc/cng/core/a/ah;)I
+.method public a(Lcom/panasonic/avc/cng/model/service/t$a;Lcom/panasonic/avc/cng/core/a/RemoteStreamCommand;)I
     .locals 1
 
     .prologue
@@ -445,7 +445,7 @@
     iput-object p1, p0, Lcom/panasonic/avc/cng/model/service/k/a;->c:Lcom/panasonic/avc/cng/model/service/t$a;
 
     .line 185
-    iput-object p2, p0, Lcom/panasonic/avc/cng/model/service/k/a;->d:Lcom/panasonic/avc/cng/core/a/ah;
+    iput-object p2, p0, Lcom/panasonic/avc/cng/model/service/k/a;->remoteStreamCommand:Lcom/panasonic/avc/cng/core/a/RemoteStreamCommand;
 
     .line 186
     new-instance v0, Ljava/lang/Thread;
@@ -1215,11 +1215,11 @@
     if-ne v0, v4, :cond_4
 
     .line 259
-    iget-object v2, p0, Lcom/panasonic/avc/cng/model/service/k/a;->d:Lcom/panasonic/avc/cng/core/a/ah;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/model/service/k/a;->remoteStreamCommand:Lcom/panasonic/avc/cng/core/a/RemoteStreamCommand;
 
     array-length v3, v1
 
-    invoke-virtual {v2, v1, v3}, Lcom/panasonic/avc/cng/core/a/ah;->a([BI)[B
+    invoke-virtual {v2, v1, v3}, Lcom/panasonic/avc/cng/core/a/RemoteStreamCommand;->a([BI)[B
 
     move-result-object v2
 

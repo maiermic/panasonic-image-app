@@ -2,7 +2,7 @@ package com.panasonic.avc.cng.model.service.p064k;
 
 import android.content.Context;
 import android.preference.PreferenceManager;
-import com.panasonic.avc.cng.core.p040a.C1443ah;
+import com.panasonic.avc.cng.core.p040a.RemoteStreamCommand;
 import com.panasonic.avc.cng.core.p040a.C1465an;
 import com.panasonic.avc.cng.core.p040a.C1469ap;
 import com.panasonic.avc.cng.imageapp.R;
@@ -31,7 +31,7 @@ public class C2178a implements Runnable {
     private C2239a f6742c = null;
 
     /* renamed from: d */
-    private C1443ah f6743d = null;
+    private RemoteStreamCommand remoteStreamCommand = null;
 
     /* renamed from: e */
     private String f6744e = "";
@@ -103,9 +103,9 @@ public class C2178a implements Runnable {
     }
 
     /* renamed from: a */
-    public int mo5775a(C2239a aVar, C1443ah ahVar) {
+    public int mo5775a(C2239a aVar, RemoteStreamCommand ahVar) {
         this.f6742c = aVar;
-        this.f6743d = ahVar;
+        this.remoteStreamCommand = ahVar;
         this.f6745f = new Thread(this);
         this.f6745f.start();
         return 0;
@@ -139,7 +139,7 @@ public class C2178a implements Runnable {
                 }
                 byte[] bArr = new byte[1048576];
                 while (!this.f6746g && a) {
-                    byte[] a2 = this.f6743d.mo3510a(bArr, bArr.length);
+                    byte[] a2 = this.remoteStreamCommand.mo3510a(bArr, bArr.length);
                     if (this.f6742c != null) {
                         if (a2 != null) {
                             this.f6742c.mo5908a(a2);

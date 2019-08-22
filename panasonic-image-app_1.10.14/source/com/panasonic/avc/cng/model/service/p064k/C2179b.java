@@ -3,14 +3,12 @@ package com.panasonic.avc.cng.model.service.p064k;
 import android.content.Context;
 import android.media.AudioManager;
 import android.preference.PreferenceManager;
-import com.panasonic.avc.cng.core.p040a.C1443ah;
+import com.panasonic.avc.cng.core.p040a.RemoteStreamCommand;
 import com.panasonic.avc.cng.core.p040a.C1445ai;
 import com.panasonic.avc.cng.core.p040a.C1465an;
 import com.panasonic.avc.cng.model.C1892f;
 import com.panasonic.avc.cng.model.p051c.C1846e;
 import com.panasonic.avc.cng.model.service.C2238t;
-import com.panasonic.avc.cng.model.service.C2238t.C2239a;
-import com.panasonic.avc.cng.model.service.C2238t.C2240b;
 import com.panasonic.avc.cng.model.service.p064k.C2180c.C2181a;
 import com.panasonic.avc.cng.model.service.p064k.C2180c.C2182b;
 import com.panasonic.avc.cng.util.C2261g;
@@ -38,7 +36,7 @@ public class C2179b implements C2182b, C2238t {
     private C1445ai f6753f = null;
 
     /* renamed from: g */
-    private C1443ah f6754g = null;
+    private RemoteStreamCommand remoteStreamCommand = null;
 
     /* renamed from: h */
     private boolean f6755h = false;
@@ -68,9 +66,9 @@ public class C2179b implements C2182b, C2238t {
                 this.f6755h = true;
                 this.f6752e = new C2178a(this.f6748a, this.f6750c);
             } else {
-                if (this.f6754g != null) {
-                    this.f6754g.mo3511b();
-                    this.f6754g = null;
+                if (this.remoteStreamCommand != null) {
+                    this.remoteStreamCommand.mo3511b();
+                    this.remoteStreamCommand = null;
                 }
                 if (this.f6753f != null) {
                     this.f6753f.mo3515b();
@@ -90,9 +88,9 @@ public class C2179b implements C2182b, C2238t {
                 this.f6752e = null;
             }
             C1465an.m5741a();
-            if (this.f6754g != null) {
-                this.f6754g.mo3511b();
-                this.f6754g = null;
+            if (this.remoteStreamCommand != null) {
+                this.remoteStreamCommand.mo3511b();
+                this.remoteStreamCommand = null;
             }
             if (this.f6753f != null) {
                 this.f6753f.mo3515b();
@@ -129,7 +127,7 @@ public class C2179b implements C2182b, C2238t {
         if (this.f6752e == null) {
             return -100;
         }
-        return this.f6752e.mo5775a(aVar, this.f6754g);
+        return this.f6752e.mo5775a(aVar, this.remoteStreamCommand);
     }
 
     /* renamed from: e */
@@ -198,8 +196,8 @@ public class C2179b implements C2182b, C2238t {
             C1465an.m5742a(this.f6750c.f6773a, this.f6750c.f6775c[2], this.f6750c.f6774b, this.f6750c.f6776d[2], Integer.parseInt(PreferenceManager.getDefaultSharedPreferences(this.f6748a).getString("RemoteWatchSettingMTU", "1280")));
         } else if (i == 1) {
             try {
-                this.f6754g = new C1443ah(this.f6750c.f6773a, this.f6750c.f6775c[i], this.f6750c.f6774b, this.f6750c.f6776d[i]);
-                this.f6754g.mo3509a();
+                this.remoteStreamCommand = new RemoteStreamCommand(this.f6750c.f6773a, this.f6750c.f6775c[i], this.f6750c.f6774b, this.f6750c.f6776d[i]);
+                this.remoteStreamCommand.mo3509a();
             } catch (SocketException e) {
                 C2261g.m9769c("RemoteViewService", "OnConnected() : RemoteStream port open fail !!!");
                 e.printStackTrace();

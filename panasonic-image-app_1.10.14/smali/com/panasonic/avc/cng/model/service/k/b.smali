@@ -20,7 +20,7 @@
 
 .field private f:Lcom/panasonic/avc/cng/core/a/ai;
 
-.field private g:Lcom/panasonic/avc/cng/core/a/ah;
+.field private remoteStreamCommand:Lcom/panasonic/avc/cng/core/a/RemoteStreamCommand;
 
 .field private h:Z
 
@@ -58,7 +58,7 @@
     iput-object v0, p0, Lcom/panasonic/avc/cng/model/service/k/b;->f:Lcom/panasonic/avc/cng/core/a/ai;
 
     .line 40
-    iput-object v0, p0, Lcom/panasonic/avc/cng/model/service/k/b;->g:Lcom/panasonic/avc/cng/core/a/ah;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/model/service/k/b;->remoteStreamCommand:Lcom/panasonic/avc/cng/core/a/RemoteStreamCommand;
 
     .line 43
     iput-boolean v1, p0, Lcom/panasonic/avc/cng/model/service/k/b;->h:Z
@@ -110,9 +110,9 @@
     :cond_0
     iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/k/b;->e:Lcom/panasonic/avc/cng/model/service/k/a;
 
-    iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/k/b;->g:Lcom/panasonic/avc/cng/core/a/ah;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/k/b;->remoteStreamCommand:Lcom/panasonic/avc/cng/core/a/RemoteStreamCommand;
 
-    invoke-virtual {v0, p1, v1}, Lcom/panasonic/avc/cng/model/service/k/a;->a(Lcom/panasonic/avc/cng/model/service/t$a;Lcom/panasonic/avc/cng/core/a/ah;)I
+    invoke-virtual {v0, p1, v1}, Lcom/panasonic/avc/cng/model/service/k/a;->a(Lcom/panasonic/avc/cng/model/service/t$a;Lcom/panasonic/avc/cng/core/a/RemoteStreamCommand;)I
 
     move-result v0
 
@@ -189,17 +189,17 @@
 
     .line 103
     :cond_1
-    iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/k/b;->g:Lcom/panasonic/avc/cng/core/a/ah;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/k/b;->remoteStreamCommand:Lcom/panasonic/avc/cng/core/a/RemoteStreamCommand;
 
     if-eqz v1, :cond_2
 
     .line 105
-    iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/k/b;->g:Lcom/panasonic/avc/cng/core/a/ah;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/k/b;->remoteStreamCommand:Lcom/panasonic/avc/cng/core/a/RemoteStreamCommand;
 
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/core/a/ah;->b()V
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/core/a/RemoteStreamCommand;->b()V
 
     .line 106
-    iput-object v3, p0, Lcom/panasonic/avc/cng/model/service/k/b;->g:Lcom/panasonic/avc/cng/core/a/ah;
+    iput-object v3, p0, Lcom/panasonic/avc/cng/model/service/k/b;->remoteStreamCommand:Lcom/panasonic/avc/cng/core/a/RemoteStreamCommand;
 
     .line 109
     :cond_2
@@ -338,7 +338,7 @@
 
     .line 367
     :try_start_0
-    new-instance v0, Lcom/panasonic/avc/cng/core/a/ah;
+    new-instance v0, Lcom/panasonic/avc/cng/core/a/RemoteStreamCommand;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/k/b;->c:Lcom/panasonic/avc/cng/model/service/k/c$a;
 
@@ -360,14 +360,14 @@
 
     aget v4, v4, p1
 
-    invoke-direct {v0, v1, v2, v3, v4}, Lcom/panasonic/avc/cng/core/a/ah;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
+    invoke-direct {v0, v1, v2, v3, v4}, Lcom/panasonic/avc/cng/core/a/RemoteStreamCommand;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/model/service/k/b;->g:Lcom/panasonic/avc/cng/core/a/ah;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/model/service/k/b;->remoteStreamCommand:Lcom/panasonic/avc/cng/core/a/RemoteStreamCommand;
 
     .line 372
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/k/b;->g:Lcom/panasonic/avc/cng/core/a/ah;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/k/b;->remoteStreamCommand:Lcom/panasonic/avc/cng/core/a/RemoteStreamCommand;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/ah;->a()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/RemoteStreamCommand;->a()V
     :try_end_0
     .catch Ljava/net/SocketException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -539,17 +539,17 @@
     invoke-static {}, Lcom/panasonic/avc/cng/core/a/an;->a()V
 
     .line 144
-    iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/k/b;->g:Lcom/panasonic/avc/cng/core/a/ah;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/k/b;->remoteStreamCommand:Lcom/panasonic/avc/cng/core/a/RemoteStreamCommand;
 
     if-eqz v1, :cond_1
 
     .line 146
-    iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/k/b;->g:Lcom/panasonic/avc/cng/core/a/ah;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/k/b;->remoteStreamCommand:Lcom/panasonic/avc/cng/core/a/RemoteStreamCommand;
 
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/core/a/ah;->b()V
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/core/a/RemoteStreamCommand;->b()V
 
     .line 147
-    iput-object v4, p0, Lcom/panasonic/avc/cng/model/service/k/b;->g:Lcom/panasonic/avc/cng/core/a/ah;
+    iput-object v4, p0, Lcom/panasonic/avc/cng/model/service/k/b;->remoteStreamCommand:Lcom/panasonic/avc/cng/core/a/RemoteStreamCommand;
 
     .line 150
     :cond_1

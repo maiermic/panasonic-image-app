@@ -8,7 +8,7 @@ import java.net.InetAddress;
 import java.net.SocketException;
 
 /* renamed from: com.panasonic.avc.cng.core.a.ah */
-public class C1443ah {
+public class RemoteStreamCommand {
     /* access modifiers changed from: private */
 
     /* renamed from: a */
@@ -39,7 +39,7 @@ public class C1443ah {
     /* renamed from: h */
     private int f3924h = 0;
 
-    public C1443ah(String str, int i, String str2, int i2) {
+    public RemoteStreamCommand(String str, int i, String str2, int i2) {
         this.f3922f = str;
         this.f3924h = i;
         this.f3921e = str2;
@@ -57,22 +57,22 @@ public class C1443ah {
         this.f3920d = new Thread(new Runnable() {
             public void run() {
                 byte[] bArr = {0, 0};
-                while (!C1443ah.this.f3919c) {
-                    synchronized (C1443ah.f3917a) {
+                while (!RemoteStreamCommand.this.f3919c) {
+                    synchronized (RemoteStreamCommand.f3917a) {
                         try {
-                            if (C1443ah.this.f3918b != null) {
-                                C1443ah.this.f3918b.send(new DatagramPacket(bArr, 2, InetAddress.getByName(C1443ah.this.f3921e), C1443ah.this.f3923g));
+                            if (RemoteStreamCommand.this.f3918b != null) {
+                                RemoteStreamCommand.this.f3918b.send(new DatagramPacket(bArr, 2, InetAddress.getByName(RemoteStreamCommand.this.f3921e), RemoteStreamCommand.this.f3923g));
                             } else {
                                 C2261g.m9769c("RemoteStreamCommand", "socket null !!");
                             }
                         } catch (SocketException e) {
                             C2261g.m9769c("RemoteStreamCommand", e.toString());
                             e.printStackTrace();
-                            C1443ah.this.mo3511b();
+                            RemoteStreamCommand.this.mo3511b();
                         } catch (IOException e2) {
                             C2261g.m9769c("RemoteStreamCommand", e2.toString());
                             e2.printStackTrace();
-                            C1443ah.this.mo3511b();
+                            RemoteStreamCommand.this.mo3511b();
                         }
                     }
                     try {
@@ -82,10 +82,10 @@ public class C1443ah {
                     }
                 }
                 C2261g.m9771e("RemoteStreamCommand", "run() : Stop !!!");
-                if (C1443ah.this.f3918b != null) {
-                    synchronized (C1443ah.f3917a) {
-                        C1443ah.this.f3918b.close();
-                        C1443ah.this.f3918b = null;
+                if (RemoteStreamCommand.this.f3918b != null) {
+                    synchronized (RemoteStreamCommand.f3917a) {
+                        RemoteStreamCommand.this.f3918b.close();
+                        RemoteStreamCommand.this.f3918b = null;
                     }
                     return;
                 }
