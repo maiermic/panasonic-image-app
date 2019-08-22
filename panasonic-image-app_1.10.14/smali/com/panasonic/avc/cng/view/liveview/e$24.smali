@@ -43,11 +43,11 @@
     .line 7138
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/e$24;->a:Lcom/panasonic/avc/cng/view/liveview/e;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/e;->k:Lcom/panasonic/avc/cng/core/a/af;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/e;->k:Lcom/panasonic/avc/cng/core/a/RecordCommand;
 
     const-string v1, "enable"
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/core/a/af;->a(Ljava/lang/String;)Lcom/panasonic/avc/cng/model/c/h;
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/core/a/RecordCommand;->a(Ljava/lang/String;)Lcom/panasonic/avc/cng/model/c/h;
 
     .line 7139
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/e$24;->a:Lcom/panasonic/avc/cng/view/liveview/e;

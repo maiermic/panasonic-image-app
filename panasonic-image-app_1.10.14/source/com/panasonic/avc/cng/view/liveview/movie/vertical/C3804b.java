@@ -4,7 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Handler;
 import android.os.Message;
-import com.panasonic.avc.cng.core.p040a.C1441af;
+import com.panasonic.avc.cng.core.p040a.RecordCommand;
 import com.panasonic.avc.cng.core.p040a.C1468ao;
 import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.C1892f;
@@ -48,7 +48,7 @@ public class C3804b extends C2291c {
     /* access modifiers changed from: private */
 
     /* renamed from: F */
-    public C1441af f12470F;
+    public RecordCommand f12470F;
     /* access modifiers changed from: private */
 
     /* renamed from: G */
@@ -544,7 +544,7 @@ public class C3804b extends C2291c {
         if (a != null) {
             this.f12484T = false;
             this.f12495e.mo3216a(a.f5685g);
-            this.f12470F = new C1441af(a.f5682d);
+            this.f12470F = new RecordCommand(a.f5682d);
             this.f12471G = new C3911w();
             this.f12468D = C2253z.m9690b(this.f3706a, a);
             this.f12468D.mo5369f();

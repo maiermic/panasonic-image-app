@@ -95,9 +95,9 @@
     .line 2824
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/h$22;->a:Lcom/panasonic/avc/cng/view/liveview/h;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/h;->k:Lcom/panasonic/avc/cng/core/a/af;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/h;->k:Lcom/panasonic/avc/cng/core/a/RecordCommand;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/af;->e()Lcom/panasonic/avc/cng/model/c/h;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/RecordCommand;->e()Lcom/panasonic/avc/cng/model/c/h;
 
     move-result-object v0
 
@@ -130,11 +130,11 @@
     :try_start_1
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/h$22;->a:Lcom/panasonic/avc/cng/view/liveview/h;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/h;->k:Lcom/panasonic/avc/cng/core/a/af;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/h;->k:Lcom/panasonic/avc/cng/core/a/RecordCommand;
 
     const/4 v2, 0x0
 
-    invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/core/a/af;->b(I)Lcom/panasonic/avc/cng/model/c/h;
+    invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/core/a/RecordCommand;->b(I)Lcom/panasonic/avc/cng/model/c/h;
 
     move-result-object v0
 

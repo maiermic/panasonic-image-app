@@ -10,7 +10,7 @@ import android.os.Handler;
 import android.os.Message;
 import android.preference.PreferenceManager;
 import com.panasonic.avc.cng.core.p040a.PantiluterCommand;
-import com.panasonic.avc.cng.core.p040a.C1441af;
+import com.panasonic.avc.cng.core.p040a.RecordCommand;
 import com.panasonic.avc.cng.core.p040a.C1448aj;
 import com.panasonic.avc.cng.core.p040a.C1494ay;
 import com.panasonic.avc.cng.core.p040a.C1501d;
@@ -456,7 +456,7 @@ public class C3541f extends C2291c {
     /* access modifiers changed from: private */
 
     /* renamed from: bx */
-    public C1441af f11522bx;
+    public RecordCommand f11522bx;
     /* access modifiers changed from: private */
 
     /* renamed from: by */
@@ -1352,7 +1352,7 @@ public class C3541f extends C2291c {
         if (a != null) {
             this.f11490bR = false;
             this.f11542e.mo3216a(a.f5685g);
-            this.f11522bx = new C1441af(a.f5682d);
+            this.f11522bx = new RecordCommand(a.f5682d);
             this.f11523by = new C3911w();
             this.f11524bz = new PantiluterCommand(a.f5682d);
             this.f11473bA = new C1494ay(a.f5682d);

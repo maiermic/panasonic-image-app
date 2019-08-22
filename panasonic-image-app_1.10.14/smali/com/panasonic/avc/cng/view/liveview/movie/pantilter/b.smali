@@ -1091,7 +1091,7 @@
 
 .field private bp:Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b$b;
 
-.field private bq:Lcom/panasonic/avc/cng/core/a/af;
+.field private bq:Lcom/panasonic/avc/cng/core/a/RecordCommand;
 
 .field private br:Lcom/panasonic/avc/cng/view/liveview/w;
 
@@ -5664,12 +5664,12 @@
     return p1
 .end method
 
-.method static synthetic c(Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b;)Lcom/panasonic/avc/cng/core/a/af;
+.method static synthetic c(Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b;)Lcom/panasonic/avc/cng/core/a/RecordCommand;
     .locals 1
 
     .prologue
     .line 72
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b;->bq:Lcom/panasonic/avc/cng/core/a/af;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b;->bq:Lcom/panasonic/avc/cng/core/a/RecordCommand;
 
     return-object v0
 .end method
@@ -9166,7 +9166,7 @@
 
     .prologue
     .line 4905
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b;->bq:Lcom/panasonic/avc/cng/core/a/af;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b;->bq:Lcom/panasonic/avc/cng/core/a/RecordCommand;
 
     if-nez v0, :cond_0
 
@@ -11796,13 +11796,13 @@
     invoke-virtual {v1, v2}, Lcom/panasonic/avc/cng/a/c;->a(Ljava/lang/Object;)V
 
     .line 1086
-    new-instance v1, Lcom/panasonic/avc/cng/core/a/af;
+    new-instance v1, Lcom/panasonic/avc/cng/core/a/RecordCommand;
 
     iget-object v2, v0, Lcom/panasonic/avc/cng/model/f;->d:Ljava/lang/String;
 
-    invoke-direct {v1, v2}, Lcom/panasonic/avc/cng/core/a/af;-><init>(Ljava/lang/String;)V
+    invoke-direct {v1, v2}, Lcom/panasonic/avc/cng/core/a/RecordCommand;-><init>(Ljava/lang/String;)V
 
-    iput-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b;->bq:Lcom/panasonic/avc/cng/core/a/af;
+    iput-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b;->bq:Lcom/panasonic/avc/cng/core/a/RecordCommand;
 
     .line 1087
     new-instance v1, Lcom/panasonic/avc/cng/view/liveview/w;
@@ -12619,7 +12619,7 @@
     iput-boolean v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b;->bB:Z
 
     .line 1178
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b;->bq:Lcom/panasonic/avc/cng/core/a/af;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b;->bq:Lcom/panasonic/avc/cng/core/a/RecordCommand;
 
     if-eqz v0, :cond_0
 
@@ -12656,7 +12656,7 @@
     const/4 v2, 0x0
 
     .line 1249
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b;->bq:Lcom/panasonic/avc/cng/core/a/af;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b;->bq:Lcom/panasonic/avc/cng/core/a/RecordCommand;
 
     if-eqz v0, :cond_0
 

@@ -16,7 +16,7 @@ import android.view.View;
 import android.view.View.OnTouchListener;
 import android.widget.ImageButton;
 import com.panasonic.avc.cng.core.dlna.C1699h;
-import com.panasonic.avc.cng.core.p040a.C1441af;
+import com.panasonic.avc.cng.core.p040a.RecordCommand;
 import com.panasonic.avc.cng.core.p040a.C1468ao;
 import com.panasonic.avc.cng.core.p040a.C1473at.C1488o;
 import com.panasonic.avc.cng.core.p040a.C1508g;
@@ -1255,7 +1255,7 @@ public abstract class C2994e extends C1342a implements C2177a {
     protected C3099d f9499j;
 
     /* renamed from: k */
-    protected C1441af f9500k;
+    protected RecordCommand f9500k;
 
     /* renamed from: l */
     protected C3911w f9501l;
@@ -6024,7 +6024,7 @@ public abstract class C2994e extends C1342a implements C2177a {
         }
         if (a != null) {
             this.f9234br.mo3216a(a.f5685g);
-            this.f9500k = new C1441af(a.f5682d);
+            this.f9500k = new RecordCommand(a.f5682d);
             this.f9501l = new C3911w();
             this.f9502m = new C3891o(this.f9349e);
             this.f9503n = new C1508g(a.f5682d);

@@ -59,11 +59,11 @@
     .line 1687
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c$18;->a:Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c;->a(Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c;)Lcom/panasonic/avc/cng/core/a/af;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c;->a(Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c;)Lcom/panasonic/avc/cng/core/a/RecordCommand;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/af;->g()Lcom/panasonic/avc/cng/model/c/h;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/RecordCommand;->g()Lcom/panasonic/avc/cng/model/c/h;
 
     move-result-object v0
 

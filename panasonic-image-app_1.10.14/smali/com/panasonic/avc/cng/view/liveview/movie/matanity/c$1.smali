@@ -54,11 +54,11 @@
     :try_start_0
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/c$1;->a:Lcom/panasonic/avc/cng/view/liveview/movie/matanity/c;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/c;->a(Lcom/panasonic/avc/cng/view/liveview/movie/matanity/c;)Lcom/panasonic/avc/cng/core/a/af;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/c;->a(Lcom/panasonic/avc/cng/view/liveview/movie/matanity/c;)Lcom/panasonic/avc/cng/core/a/RecordCommand;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/af;->a()Lcom/panasonic/avc/cng/model/c/h;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/RecordCommand;->a()Lcom/panasonic/avc/cng/model/c/h;
 
     move-result-object v0
 

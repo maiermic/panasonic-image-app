@@ -391,7 +391,7 @@
 
 .field private ae:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/e$d;
 
-.field private af:Lcom/panasonic/avc/cng/core/a/af;
+.field private recordCommand:Lcom/panasonic/avc/cng/core/a/RecordCommand;
 
 .field private ag:Lcom/panasonic/avc/cng/view/liveview/w;
 
@@ -2513,12 +2513,12 @@
     return v0
 .end method
 
-.method static synthetic a(Lcom/panasonic/avc/cng/view/liveview/movie/conventional/e;)Lcom/panasonic/avc/cng/core/a/af;
+.method static synthetic a(Lcom/panasonic/avc/cng/view/liveview/movie/conventional/e;)Lcom/panasonic/avc/cng/core/a/RecordCommand;
     .locals 1
 
     .prologue
     .line 64
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/e;->af:Lcom/panasonic/avc/cng/core/a/af;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/e;->recordCommand:Lcom/panasonic/avc/cng/core/a/RecordCommand;
 
     return-object v0
 .end method
@@ -5351,13 +5351,13 @@
     invoke-virtual {v1, v2}, Lcom/panasonic/avc/cng/a/c;->a(Ljava/lang/Object;)V
 
     .line 696
-    new-instance v1, Lcom/panasonic/avc/cng/core/a/af;
+    new-instance v1, Lcom/panasonic/avc/cng/core/a/RecordCommand;
 
     iget-object v2, v0, Lcom/panasonic/avc/cng/model/f;->d:Ljava/lang/String;
 
-    invoke-direct {v1, v2}, Lcom/panasonic/avc/cng/core/a/af;-><init>(Ljava/lang/String;)V
+    invoke-direct {v1, v2}, Lcom/panasonic/avc/cng/core/a/RecordCommand;-><init>(Ljava/lang/String;)V
 
-    iput-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/e;->af:Lcom/panasonic/avc/cng/core/a/af;
+    iput-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/e;->recordCommand:Lcom/panasonic/avc/cng/core/a/RecordCommand;
 
     .line 697
     new-instance v1, Lcom/panasonic/avc/cng/view/liveview/w;
@@ -5553,7 +5553,7 @@
     const/4 v2, 0x0
 
     .line 760
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/e;->af:Lcom/panasonic/avc/cng/core/a/af;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/e;->recordCommand:Lcom/panasonic/avc/cng/core/a/RecordCommand;
 
     if-nez v0, :cond_1
 

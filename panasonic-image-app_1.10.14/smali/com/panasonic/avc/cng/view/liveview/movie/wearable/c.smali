@@ -524,7 +524,7 @@
 
 .field private ar:Lcom/panasonic/avc/cng/model/service/k$a;
 
-.field private as:Lcom/panasonic/avc/cng/core/a/af;
+.field private as:Lcom/panasonic/avc/cng/core/a/RecordCommand;
 
 .field private at:Lcom/panasonic/avc/cng/core/a/ay;
 
@@ -4462,12 +4462,12 @@
     return v0
 .end method
 
-.method static synthetic a(Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c;)Lcom/panasonic/avc/cng/core/a/af;
+.method static synthetic a(Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c;)Lcom/panasonic/avc/cng/core/a/RecordCommand;
     .locals 1
 
     .prologue
     .line 74
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c;->as:Lcom/panasonic/avc/cng/core/a/af;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c;->as:Lcom/panasonic/avc/cng/core/a/RecordCommand;
 
     return-object v0
 .end method
@@ -6654,7 +6654,7 @@
 
     .prologue
     .line 1675
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c;->as:Lcom/panasonic/avc/cng/core/a/af;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c;->as:Lcom/panasonic/avc/cng/core/a/RecordCommand;
 
     if-eqz v0, :cond_0
 
@@ -6683,7 +6683,7 @@
 
     .prologue
     .line 1771
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c;->as:Lcom/panasonic/avc/cng/core/a/af;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c;->as:Lcom/panasonic/avc/cng/core/a/RecordCommand;
 
     if-eqz v0, :cond_0
 
@@ -9772,13 +9772,13 @@
     invoke-virtual {v1, v2}, Lcom/panasonic/avc/cng/a/c;->a(Ljava/lang/Object;)V
 
     .line 943
-    new-instance v1, Lcom/panasonic/avc/cng/core/a/af;
+    new-instance v1, Lcom/panasonic/avc/cng/core/a/RecordCommand;
 
     iget-object v2, v0, Lcom/panasonic/avc/cng/model/f;->d:Ljava/lang/String;
 
-    invoke-direct {v1, v2}, Lcom/panasonic/avc/cng/core/a/af;-><init>(Ljava/lang/String;)V
+    invoke-direct {v1, v2}, Lcom/panasonic/avc/cng/core/a/RecordCommand;-><init>(Ljava/lang/String;)V
 
-    iput-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c;->as:Lcom/panasonic/avc/cng/core/a/af;
+    iput-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c;->as:Lcom/panasonic/avc/cng/core/a/RecordCommand;
 
     .line 944
     new-instance v1, Lcom/panasonic/avc/cng/core/a/ay;
@@ -10122,7 +10122,7 @@
     iput-boolean v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c;->aB:Z
 
     .line 1115
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c;->as:Lcom/panasonic/avc/cng/core/a/af;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c;->as:Lcom/panasonic/avc/cng/core/a/RecordCommand;
 
     if-eqz v0, :cond_0
 
@@ -10183,7 +10183,7 @@
     const/4 v2, 0x0
 
     .line 1259
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c;->as:Lcom/panasonic/avc/cng/core/a/af;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c;->as:Lcom/panasonic/avc/cng/core/a/RecordCommand;
 
     if-nez v0, :cond_1
 

@@ -10,7 +10,7 @@ import android.os.Handler;
 import android.os.Message;
 import android.widget.Toast;
 import com.panasonic.avc.cng.core.dlna.C1699h;
-import com.panasonic.avc.cng.core.p040a.C1441af;
+import com.panasonic.avc.cng.core.p040a.RecordCommand;
 import com.panasonic.avc.cng.core.p040a.C1468ao;
 import com.panasonic.avc.cng.core.p040a.C1473at.C1488o;
 import com.panasonic.avc.cng.core.p040a.C1536t;
@@ -175,7 +175,7 @@ public class C3367m extends C1342a implements C2177a {
     /* access modifiers changed from: private */
 
     /* renamed from: aM */
-    public C1441af f10827aM;
+    public RecordCommand f10827aM;
 
     /* renamed from: aN */
     private C3911w f10828aN;
@@ -1570,7 +1570,7 @@ public class C3367m extends C1342a implements C2177a {
         }
         if (a != null) {
             this.f10898c.mo3216a(a.f5685g);
-            this.f10827aM = new C1441af(a.f5682d);
+            this.f10827aM = new RecordCommand(a.f5682d);
             this.f10828aN = new C3911w();
             this.f10829aO = new C1536t(a.f5682d);
             this.f10822aH = C2253z.m9690b(this.f3706a, a);

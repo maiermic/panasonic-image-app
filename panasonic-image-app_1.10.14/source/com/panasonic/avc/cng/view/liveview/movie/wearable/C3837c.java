@@ -10,7 +10,7 @@ import android.os.Handler;
 import android.os.Message;
 import android.preference.PreferenceManager;
 import android.widget.ImageButton;
-import com.panasonic.avc.cng.core.p040a.C1441af;
+import com.panasonic.avc.cng.core.p040a.RecordCommand;
 import com.panasonic.avc.cng.core.p040a.C1468ao;
 import com.panasonic.avc.cng.core.p040a.C1494ay;
 import com.panasonic.avc.cng.core.p040a.C1501d;
@@ -279,7 +279,7 @@ public class C3837c extends C2291c {
     /* access modifiers changed from: private */
 
     /* renamed from: as */
-    public C1441af f12676as;
+    public RecordCommand f12676as;
     /* access modifiers changed from: private */
 
     /* renamed from: at */
@@ -1067,7 +1067,7 @@ public class C3837c extends C2291c {
         if (a != null) {
             this.f12642aK = false;
             this.f12695e.mo3216a(a.f5685g);
-            this.f12676as = new C1441af(a.f5682d);
+            this.f12676as = new RecordCommand(a.f5682d);
             this.f12677at = new C1494ay(a.f5682d);
             this.f12674aq = C2253z.m9690b(this.f3706a, a);
             this.f12674aq.mo5369f();

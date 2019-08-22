@@ -3060,7 +3060,7 @@
 
 .field protected j:Lcom/panasonic/avc/cng/view/liveview/e$d;
 
-.field protected k:Lcom/panasonic/avc/cng/core/a/af;
+.field protected k:Lcom/panasonic/avc/cng/core/a/RecordCommand;
 
 .field protected l:Lcom/panasonic/avc/cng/view/liveview/w;
 
@@ -12141,7 +12141,7 @@
 
     .line 4002
     :cond_4
-    iget-object v3, p0, Lcom/panasonic/avc/cng/view/liveview/e;->k:Lcom/panasonic/avc/cng/core/a/af;
+    iget-object v3, p0, Lcom/panasonic/avc/cng/view/liveview/e;->k:Lcom/panasonic/avc/cng/core/a/RecordCommand;
 
     if-nez v3, :cond_5
 
@@ -29426,13 +29426,13 @@
     invoke-virtual {v1, v2}, Lcom/panasonic/avc/cng/a/c;->a(Ljava/lang/Object;)V
 
     .line 2416
-    new-instance v1, Lcom/panasonic/avc/cng/core/a/af;
+    new-instance v1, Lcom/panasonic/avc/cng/core/a/RecordCommand;
 
     iget-object v2, v0, Lcom/panasonic/avc/cng/model/f;->d:Ljava/lang/String;
 
-    invoke-direct {v1, v2}, Lcom/panasonic/avc/cng/core/a/af;-><init>(Ljava/lang/String;)V
+    invoke-direct {v1, v2}, Lcom/panasonic/avc/cng/core/a/RecordCommand;-><init>(Ljava/lang/String;)V
 
-    iput-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/e;->k:Lcom/panasonic/avc/cng/core/a/af;
+    iput-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/e;->k:Lcom/panasonic/avc/cng/core/a/RecordCommand;
 
     .line 2417
     new-instance v1, Lcom/panasonic/avc/cng/view/liveview/w;
@@ -29684,7 +29684,7 @@
 
     .prologue
     .line 14098
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/e;->k:Lcom/panasonic/avc/cng/core/a/af;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/e;->k:Lcom/panasonic/avc/cng/core/a/RecordCommand;
 
     if-nez v0, :cond_0
 
@@ -41022,7 +41022,7 @@
 
     .line 3198
     :cond_4
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/e;->k:Lcom/panasonic/avc/cng/core/a/af;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/e;->k:Lcom/panasonic/avc/cng/core/a/RecordCommand;
 
     if-eqz v0, :cond_0
 

@@ -43,11 +43,11 @@
     .line 2343
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/k$33;->a:Lcom/panasonic/avc/cng/view/liveview/k;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/k;->e(Lcom/panasonic/avc/cng/view/liveview/k;)Lcom/panasonic/avc/cng/core/a/af;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/k;->e(Lcom/panasonic/avc/cng/view/liveview/k;)Lcom/panasonic/avc/cng/core/a/RecordCommand;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/af;->b()Lcom/panasonic/avc/cng/model/c/h;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/RecordCommand;->b()Lcom/panasonic/avc/cng/model/c/h;
 
     move-result-object v0
 

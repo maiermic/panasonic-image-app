@@ -4,7 +4,7 @@ import com.panasonic.avc.cng.model.p051c.C1853h;
 import com.panasonic.avc.cng.util.C2261g;
 
 /* renamed from: com.panasonic.avc.cng.core.a.af */
-public class C1441af extends C1497c {
+public class RecordCommand extends C1497c {
 
     /* renamed from: h */
     private final String f3914h = "RecordCommand";
@@ -12,7 +12,7 @@ public class C1441af extends C1497c {
     /* renamed from: i */
     private final int f3915i = 5;
 
-    public C1441af(String str) {
+    public RecordCommand(String str) {
         super(str);
     }
 

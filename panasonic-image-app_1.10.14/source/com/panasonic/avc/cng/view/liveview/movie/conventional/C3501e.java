@@ -7,7 +7,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnTouchListener;
 import com.panasonic.avc.cng.core.p040a.C1440ae;
-import com.panasonic.avc.cng.core.p040a.C1441af;
+import com.panasonic.avc.cng.core.p040a.RecordCommand;
 import com.panasonic.avc.cng.core.p040a.C1468ao;
 import com.panasonic.avc.cng.core.p040a.C1501d;
 import com.panasonic.avc.cng.core.p040a.C1536t;
@@ -230,7 +230,7 @@ public class C3501e extends C2291c {
     /* access modifiers changed from: private */
 
     /* renamed from: af */
-    public C1441af f11281af;
+    public RecordCommand recordCommand;
     /* access modifiers changed from: private */
 
     /* renamed from: ag */
@@ -1052,7 +1052,7 @@ public class C3501e extends C2291c {
         if (a != null) {
             this.f11300ay = false;
             this.f11303f.mo3216a(a.f5685g);
-            this.f11281af = new C1441af(a.f5682d);
+            this.recordCommand = new RecordCommand(a.f5682d);
             this.f11282ag = new C3911w();
             this.f11283ah = new C3891o(this.f11279ad);
             this.f11284ai = new C1536t(a.f5682d);
@@ -1089,7 +1089,7 @@ public class C3501e extends C2291c {
 
     /* renamed from: i */
     public void mo8323i() {
-        if (this.f11281af == null) {
+        if (this.recordCommand == null) {
             this.f11312o.mo3216a(Boolean.valueOf(false));
             this.f11313p.mo3216a(Boolean.valueOf(false));
             this.f11227B.mo3216a(Boolean.valueOf(false));
@@ -1101,7 +1101,7 @@ public class C3501e extends C2291c {
                     public void run() {
                         final C1853h f;
                         synchronized (C1910l.m7679a()) {
-                            f = C3501e.this.f11281af.mo3501f();
+                            f = C3501e.this.recordCommand.mo3501f();
                         }
                         C3501e.this.f11294as = false;
                         C3501e.this.mo3207a((Runnable) new Runnable() {
@@ -1123,7 +1123,7 @@ public class C3501e extends C2291c {
                 public void run() {
                     final C1853h e;
                     synchronized (C1910l.m7679a()) {
-                        e = C3501e.this.f11281af.mo3500e();
+                        e = C3501e.this.recordCommand.mo3500e();
                     }
                     C3501e.this.f11294as = false;
                     C3501e.this.mo3207a((Runnable) new Runnable() {

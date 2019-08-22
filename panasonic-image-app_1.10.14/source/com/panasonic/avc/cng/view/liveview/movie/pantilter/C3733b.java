@@ -7,7 +7,7 @@ import android.os.Handler;
 import android.os.Message;
 import android.widget.FrameLayout;
 import com.panasonic.avc.cng.core.p040a.PantiluterCommand;
-import com.panasonic.avc.cng.core.p040a.C1441af;
+import com.panasonic.avc.cng.core.p040a.RecordCommand;
 import com.panasonic.avc.cng.core.p040a.C1448aj;
 import com.panasonic.avc.cng.core.p040a.C1501d;
 import com.panasonic.avc.cng.imageapp.R;
@@ -427,7 +427,7 @@ public class C3733b extends C2291c {
     /* access modifiers changed from: private */
 
     /* renamed from: bq */
-    public C1441af f12272bq;
+    public RecordCommand f12272bq;
     /* access modifiers changed from: private */
 
     /* renamed from: br */
@@ -1278,7 +1278,7 @@ public class C3733b extends C2291c {
         if (a != null) {
             this.f12235bF = false;
             this.f12290e.mo3216a(a.f5685g);
-            this.f12272bq = new C1441af(a.f5682d);
+            this.f12272bq = new RecordCommand(a.f5682d);
             this.f12273br = new C3911w();
             this.f12274bs = new PantiluterCommand(a.f5682d);
             this.f12270bo = C2253z.m9690b(this.f3706a, a);

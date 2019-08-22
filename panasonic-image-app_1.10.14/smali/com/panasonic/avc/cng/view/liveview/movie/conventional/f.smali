@@ -1150,7 +1150,7 @@
 
 .field private bw:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f$b;
 
-.field private bx:Lcom/panasonic/avc/cng/core/a/af;
+.field private bx:Lcom/panasonic/avc/cng/core/a/RecordCommand;
 
 .field private by:Lcom/panasonic/avc/cng/view/liveview/w;
 
@@ -4454,12 +4454,12 @@
     return v0
 .end method
 
-.method static synthetic a(Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;)Lcom/panasonic/avc/cng/core/a/af;
+.method static synthetic a(Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;)Lcom/panasonic/avc/cng/core/a/RecordCommand;
     .locals 1
 
     .prologue
     .line 82
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;->bx:Lcom/panasonic/avc/cng/core/a/af;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;->bx:Lcom/panasonic/avc/cng/core/a/RecordCommand;
 
     return-object v0
 .end method
@@ -7040,7 +7040,7 @@
 
     .prologue
     .line 4490
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;->bx:Lcom/panasonic/avc/cng/core/a/af;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;->bx:Lcom/panasonic/avc/cng/core/a/RecordCommand;
 
     if-nez v0, :cond_0
 
@@ -10205,13 +10205,13 @@
     invoke-virtual {v1, v2}, Lcom/panasonic/avc/cng/a/c;->a(Ljava/lang/Object;)V
 
     .line 1116
-    new-instance v1, Lcom/panasonic/avc/cng/core/a/af;
+    new-instance v1, Lcom/panasonic/avc/cng/core/a/RecordCommand;
 
     iget-object v2, v0, Lcom/panasonic/avc/cng/model/f;->d:Ljava/lang/String;
 
-    invoke-direct {v1, v2}, Lcom/panasonic/avc/cng/core/a/af;-><init>(Ljava/lang/String;)V
+    invoke-direct {v1, v2}, Lcom/panasonic/avc/cng/core/a/RecordCommand;-><init>(Ljava/lang/String;)V
 
-    iput-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;->bx:Lcom/panasonic/avc/cng/core/a/af;
+    iput-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;->bx:Lcom/panasonic/avc/cng/core/a/RecordCommand;
 
     .line 1117
     new-instance v1, Lcom/panasonic/avc/cng/view/liveview/w;
@@ -10754,7 +10754,7 @@
     iput-boolean v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;->bJ:Z
 
     .line 1204
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;->bx:Lcom/panasonic/avc/cng/core/a/af;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;->bx:Lcom/panasonic/avc/cng/core/a/RecordCommand;
 
     if-eqz v0, :cond_0
 
@@ -10794,7 +10794,7 @@
     const/4 v1, 0x0
 
     .line 1278
-    iget-object v2, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;->bx:Lcom/panasonic/avc/cng/core/a/af;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;->bx:Lcom/panasonic/avc/cng/core/a/RecordCommand;
 
     if-nez v2, :cond_1
 

@@ -45,9 +45,9 @@
     .line 3519
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/e$63;->a:Lcom/panasonic/avc/cng/view/liveview/e;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/e;->k:Lcom/panasonic/avc/cng/core/a/af;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/e;->k:Lcom/panasonic/avc/cng/core/a/RecordCommand;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/af;->b()Lcom/panasonic/avc/cng/model/c/h;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/RecordCommand;->b()Lcom/panasonic/avc/cng/model/c/h;
 
     move-result-object v0
 

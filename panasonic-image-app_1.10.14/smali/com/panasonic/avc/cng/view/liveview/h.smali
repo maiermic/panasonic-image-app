@@ -4479,7 +4479,7 @@
 
     .line 2533
     :cond_3
-    iget-object v2, p0, Lcom/panasonic/avc/cng/view/liveview/h;->k:Lcom/panasonic/avc/cng/core/a/af;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/view/liveview/h;->k:Lcom/panasonic/avc/cng/core/a/RecordCommand;
 
     if-eqz v2, :cond_0
 

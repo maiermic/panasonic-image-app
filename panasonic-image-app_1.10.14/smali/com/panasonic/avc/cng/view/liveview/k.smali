@@ -1049,7 +1049,7 @@
 
 .field private bT:Lcom/panasonic/avc/cng/view/liveview/k$b;
 
-.field private bU:Lcom/panasonic/avc/cng/core/a/af;
+.field private bU:Lcom/panasonic/avc/cng/core/a/RecordCommand;
 
 .field private bV:Lcom/panasonic/avc/cng/view/liveview/w;
 
@@ -7737,12 +7737,12 @@
     return p1
 .end method
 
-.method static synthetic e(Lcom/panasonic/avc/cng/view/liveview/k;)Lcom/panasonic/avc/cng/core/a/af;
+.method static synthetic e(Lcom/panasonic/avc/cng/view/liveview/k;)Lcom/panasonic/avc/cng/core/a/RecordCommand;
     .locals 1
 
     .prologue
     .line 99
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/k;->bU:Lcom/panasonic/avc/cng/core/a/af;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/k;->bU:Lcom/panasonic/avc/cng/core/a/RecordCommand;
 
     return-object v0
 .end method
@@ -10542,7 +10542,7 @@
 
     .line 2635
     :cond_3
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/k;->bU:Lcom/panasonic/avc/cng/core/a/af;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/k;->bU:Lcom/panasonic/avc/cng/core/a/RecordCommand;
 
     if-nez v0, :cond_4
 
@@ -11529,13 +11529,13 @@
     invoke-virtual {v1, v2}, Lcom/panasonic/avc/cng/a/c;->a(Ljava/lang/Object;)V
 
     .line 1635
-    new-instance v1, Lcom/panasonic/avc/cng/core/a/af;
+    new-instance v1, Lcom/panasonic/avc/cng/core/a/RecordCommand;
 
     iget-object v2, v0, Lcom/panasonic/avc/cng/model/f;->d:Ljava/lang/String;
 
-    invoke-direct {v1, v2}, Lcom/panasonic/avc/cng/core/a/af;-><init>(Ljava/lang/String;)V
+    invoke-direct {v1, v2}, Lcom/panasonic/avc/cng/core/a/RecordCommand;-><init>(Ljava/lang/String;)V
 
-    iput-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/k;->bU:Lcom/panasonic/avc/cng/core/a/af;
+    iput-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/k;->bU:Lcom/panasonic/avc/cng/core/a/RecordCommand;
 
     .line 1636
     new-instance v1, Lcom/panasonic/avc/cng/view/liveview/w;
@@ -15650,7 +15650,7 @@
     if-nez v0, :cond_0
 
     .line 2078
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/k;->bU:Lcom/panasonic/avc/cng/core/a/af;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/k;->bU:Lcom/panasonic/avc/cng/core/a/RecordCommand;
 
     if-eqz v0, :cond_0
 
