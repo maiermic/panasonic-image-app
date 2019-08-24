@@ -73,7 +73,7 @@ public class LiveViewLumixService implements C2176k {
         public void run() {
             LiveViewUdpPort gVar = new LiveViewUdpPort();
             try {
-                gVar.mo5379a();
+                gVar.connect();
                 try {
                     if (!this.f6348c || m8519a()) {
                         ParseTagHighlightSceneInfo a = LiveViewLumixService.this.f6336a.mo3789a(gVar.getPort(), 5);

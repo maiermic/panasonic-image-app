@@ -445,7 +445,7 @@
 
     .line 326
     :try_start_0
-    invoke-virtual {v4}, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;->a()V
+    invoke-virtual {v4}, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;->connect()V
     :try_end_0
     .catch Ljava/net/SocketException; {:try_start_0 .. :try_end_0} :catch_0
 

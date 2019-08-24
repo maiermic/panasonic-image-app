@@ -61,7 +61,7 @@ public class LiveViewVerticalService implements C2176k {
             ParseTagHighlightSceneInfo a;
             LiveViewUdpPort gVar = new LiveViewUdpPort();
             try {
-                gVar.mo5379a();
+                gVar.connect();
                 try {
                     if (!this.f6379c || m8572a()) {
                         synchronized (C1910l.m7679a()) {

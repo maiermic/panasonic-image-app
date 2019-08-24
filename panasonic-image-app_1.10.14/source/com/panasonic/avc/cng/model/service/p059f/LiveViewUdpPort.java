@@ -20,7 +20,7 @@ public class LiveViewUdpPort {
     byte[] buffer = null;
 
     /* renamed from: a */
-    public void mo5379a() {
+    public void connect() {
         this.buffer = new byte[65536];
         this.port = 49152;
         while (this.port <= 65535) {

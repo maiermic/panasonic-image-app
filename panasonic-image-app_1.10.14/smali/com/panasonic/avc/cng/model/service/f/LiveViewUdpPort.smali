@@ -42,7 +42,7 @@
 
 
 # virtual methods
-.method public a()V
+.method public connect()V
     .locals 7
 
     .prologue
