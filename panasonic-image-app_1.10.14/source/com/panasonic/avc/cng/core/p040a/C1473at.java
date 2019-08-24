@@ -266,7 +266,7 @@ public class C1473at {
     public class C1478e extends C1487n {
 
         /* renamed from: a */
-        public short f4022a;
+        public short zoomRatio;
 
         /* renamed from: b */
         public byte f4023b;
@@ -1159,7 +1159,7 @@ public class C1473at {
     private C1478e m5792g(short s, C2255a aVar) {
         C1478e eVar = new C1478e();
         eVar.f4091af = s;
-        eVar.f4022a = aVar.mo5941b();
+        eVar.zoomRatio = aVar.mo5941b();
         eVar.f4023b = aVar.mo5940a();
         eVar.f4024c = aVar.mo5940a();
         eVar.f4025d = aVar.mo5940a();
@@ -1190,7 +1190,7 @@ public class C1473at {
     private C1485l m5794i(short s, C2255a aVar) {
         C1485l lVar = new C1485l();
         lVar.f4091af = s;
-        lVar.f4022a = aVar.mo5941b();
+        lVar.zoomRatio = aVar.mo5941b();
         lVar.f4023b = aVar.mo5940a();
         lVar.f4024c = aVar.mo5940a();
         lVar.f4025d = aVar.mo5940a();

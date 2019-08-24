@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public a:S
+.field public zoomRatio:S
 
 .field public b:B
 

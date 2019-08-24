@@ -365,7 +365,7 @@ public class C1897j {
 
         public C1899b(C1476c cVar) {
             if (cVar.f3997c != null) {
-                this.zoomRatio = cVar.f3997c.f4022a;
+                this.zoomRatio = cVar.f3997c.zoomRatio;
                 this.f5718b = (short) cVar.f3997c.f4023b;
                 this.f5719c = (short) cVar.f3997c.f4024c;
                 this.f5720d = (short) cVar.f3997c.f4025d;
@@ -425,7 +425,7 @@ public class C1897j {
                 this.f5724h = cVar.f4003i.f4049I;
                 this.f5725i = cVar.f4003i.f4050J;
             } else if (cVar.f4004j != null) {
-                this.zoomRatio = cVar.f4004j.f4022a;
+                this.zoomRatio = cVar.f4004j.zoomRatio;
                 this.f5718b = (short) cVar.f4004j.f4023b;
                 this.f5719c = (short) cVar.f4004j.f4024c;
                 this.f5720d = (short) cVar.f4004j.f4025d;

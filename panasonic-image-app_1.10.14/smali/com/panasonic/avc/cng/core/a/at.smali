@@ -1462,7 +1462,7 @@
 
     move-result v1
 
-    iput-short v1, v0, Lcom/panasonic/avc/cng/core/a/at$e;->a:S
+    iput-short v1, v0, Lcom/panasonic/avc/cng/core/a/at$e;->zoomRatio:S
 
     .line 1837
     invoke-virtual {p2}, Lcom/panasonic/avc/cng/util/a;->a()B
@@ -1613,7 +1613,7 @@
 
     move-result v1
 
-    iput-short v1, v0, Lcom/panasonic/avc/cng/core/a/at$l;->a:S
+    iput-short v1, v0, Lcom/panasonic/avc/cng/core/a/at$l;->zoomRatio:S
 
     .line 1891
     invoke-virtual {p2}, Lcom/panasonic/avc/cng/util/a;->a()B
