@@ -52,7 +52,7 @@ public class LiveViewUdpPort {
     }
 
     /* renamed from: c */
-    public byte[] mo5381c() {
+    public byte[] receiveData() {
         this.packet.setLength(this.buffer.length);
         this.socket.receive(this.packet);
         return this.packet.getData();

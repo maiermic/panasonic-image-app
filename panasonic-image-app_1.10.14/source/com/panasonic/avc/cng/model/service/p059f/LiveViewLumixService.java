@@ -91,7 +91,7 @@ public class LiveViewLumixService implements C2176k {
                         C1476c cVar = null;
                         while (!LiveViewLumixService.this.f6342g) {
                             try {
-                                byte[] c = gVar.mo5381c();
+                                byte[] c = gVar.receiveData();
                                 long j = 1;
                                 if (LiveViewLumixService.this.f6344i) {
                                     j = 100;

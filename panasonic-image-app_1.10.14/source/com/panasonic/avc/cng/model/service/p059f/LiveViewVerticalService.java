@@ -77,7 +77,7 @@ public class LiveViewVerticalService implements C2176k {
                         }
                         while (!LiveViewVerticalService.this.f6376g) {
                             try {
-                                C1473at atVar = new C1473at(gVar.mo5381c());
+                                C1473at atVar = new C1473at(gVar.receiveData());
                                 if (LiveViewVerticalService.this.f6374e != null) {
                                     LiveViewVerticalService.this.f6374e.mo5766a(1);
                                     LiveViewVerticalService.this.mo5384a(atVar);

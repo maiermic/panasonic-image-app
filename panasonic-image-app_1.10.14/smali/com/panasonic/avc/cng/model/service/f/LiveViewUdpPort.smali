@@ -220,7 +220,7 @@
     return v0
 .end method
 
-.method public c()[B
+.method public receiveData()[B
     .locals 2
 
     .prologue

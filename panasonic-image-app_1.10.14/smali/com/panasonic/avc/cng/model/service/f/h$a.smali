@@ -640,7 +640,7 @@
     .line 367
     :cond_3
     :try_start_9
-    invoke-virtual {v2}, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;->c()[B
+    invoke-virtual {v2}, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;->receiveData()[B
 
     move-result-object v0
 

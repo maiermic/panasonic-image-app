@@ -659,7 +659,7 @@
     .line 381
     :cond_4
     :try_start_9
-    invoke-virtual {v4}, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;->c()[B
+    invoke-virtual {v4}, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;->receiveData()[B
 
     move-result-object v0
 
