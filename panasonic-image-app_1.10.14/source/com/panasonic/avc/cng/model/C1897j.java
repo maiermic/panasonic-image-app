@@ -375,7 +375,7 @@ public class C1897j {
                 this.f5724h = 0;
                 this.f5725i = 0;
             } else if (cVar.f3996b != null) {
-                this.zoomRatio = cVar.f3996b.f4007a;
+                this.zoomRatio = cVar.f3996b.zoomRatio;
                 this.f5718b = (short) cVar.f3996b.f4008b;
                 this.f5719c = (short) cVar.f3996b.f4009c;
                 this.f5720d = (short) cVar.f3996b.f4010d;
@@ -385,7 +385,7 @@ public class C1897j {
                 this.f5724h = 0;
                 this.f5725i = 0;
             } else if (cVar.f3999e != null) {
-                this.zoomRatio = cVar.f3999e.f4007a;
+                this.zoomRatio = cVar.f3999e.zoomRatio;
                 this.f5718b = (short) cVar.f3999e.f4008b;
                 this.f5719c = (short) cVar.f3999e.f4009c;
                 this.f5720d = (short) cVar.f3999e.f4010d;
@@ -395,7 +395,7 @@ public class C1897j {
                 this.f5724h = cVar.f3999e.f4049I;
                 this.f5725i = cVar.f3999e.f4050J;
             } else if (cVar.f4000f != null) {
-                this.zoomRatio = cVar.f4000f.f4007a;
+                this.zoomRatio = cVar.f4000f.zoomRatio;
                 this.f5718b = (short) cVar.f4000f.f4008b;
                 this.f5719c = (short) cVar.f4000f.f4009c;
                 this.f5720d = (short) cVar.f4000f.f4010d;
@@ -405,7 +405,7 @@ public class C1897j {
                 this.f5724h = cVar.f4000f.f4049I;
                 this.f5725i = cVar.f4000f.f4050J;
             } else if (cVar.f4001g != null) {
-                this.zoomRatio = cVar.f4001g.f4007a;
+                this.zoomRatio = cVar.f4001g.zoomRatio;
                 this.f5718b = (short) cVar.f4001g.f4008b;
                 this.f5719c = (short) cVar.f4001g.f4009c;
                 this.f5720d = (short) cVar.f4001g.f4010d;
@@ -415,7 +415,7 @@ public class C1897j {
                 this.f5724h = cVar.f4001g.f4049I;
                 this.f5725i = cVar.f4001g.f4050J;
             } else if (cVar.f4003i != null) {
-                this.zoomRatio = cVar.f4003i.f4007a;
+                this.zoomRatio = cVar.f4003i.zoomRatio;
                 this.f5718b = (short) cVar.f4003i.f4008b;
                 this.f5719c = (short) cVar.f4003i.f4009c;
                 this.f5720d = (short) cVar.f4003i.f4010d;
@@ -435,7 +435,7 @@ public class C1897j {
                 this.f5724h = 0;
                 this.f5725i = 0;
             } else if (cVar.f4005k != null) {
-                this.zoomRatio = cVar.f4005k.f4007a;
+                this.zoomRatio = cVar.f4005k.zoomRatio;
                 this.f5718b = (short) cVar.f4005k.f4008b;
                 this.f5719c = (short) cVar.f4005k.f4009c;
                 this.f5720d = (short) cVar.f4005k.f4010d;

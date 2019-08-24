@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public a:S
+.field public zoomRatio:S
 
 .field public b:B
 
@@ -66,9 +66,9 @@
 
     .prologue
     .line 414
-    iget-short v0, p1, Lcom/panasonic/avc/cng/core/a/at$d;->a:S
+    iget-short v0, p1, Lcom/panasonic/avc/cng/core/a/at$d;->zoomRatio:S
 
-    iput-short v0, p0, Lcom/panasonic/avc/cng/core/a/at$d;->a:S
+    iput-short v0, p0, Lcom/panasonic/avc/cng/core/a/at$d;->zoomRatio:S
 
     .line 415
     iget-byte v0, p1, Lcom/panasonic/avc/cng/core/a/at$d;->b:B

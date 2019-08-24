@@ -183,7 +183,7 @@ public class C1473at {
     public class C1477d extends C1487n {
 
         /* renamed from: a */
-        public short f4007a;
+        public short zoomRatio;
 
         /* renamed from: b */
         public byte f4008b;
@@ -245,7 +245,7 @@ public class C1473at {
 
         /* renamed from: a */
         public void mo3585a(C1477d dVar) {
-            this.f4007a = dVar.f4007a;
+            this.zoomRatio = dVar.zoomRatio;
             this.f4008b = dVar.f4008b;
             this.f4009c = dVar.f4009c;
             this.f4010d = dVar.f4010d;
@@ -904,7 +904,7 @@ public class C1473at {
 
     /* renamed from: a */
     private void m5784a(C1477d dVar, C2255a aVar) {
-        dVar.f4007a = aVar.calculateZoomRatio();
+        dVar.zoomRatio = aVar.calculateZoomRatio();
         dVar.f4008b = aVar.mo5940a();
         dVar.f4009c = aVar.mo5940a();
         dVar.f4010d = aVar.mo5940a();

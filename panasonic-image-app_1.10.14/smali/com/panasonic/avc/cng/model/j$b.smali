@@ -241,7 +241,7 @@
     .line 1089
     iget-object v0, p2, Lcom/panasonic/avc/cng/core/a/at$c;->b:Lcom/panasonic/avc/cng/core/a/at$d;
 
-    iget-short v0, v0, Lcom/panasonic/avc/cng/core/a/at$d;->a:S
+    iget-short v0, v0, Lcom/panasonic/avc/cng/core/a/at$d;->zoomRatio:S
 
     iput-short v0, p0, Lcom/panasonic/avc/cng/model/j$b;->zoomRatio:S
 
@@ -316,7 +316,7 @@
     .line 1101
     iget-object v0, p2, Lcom/panasonic/avc/cng/core/a/at$c;->e:Lcom/panasonic/avc/cng/core/a/at$g;
 
-    iget-short v0, v0, Lcom/panasonic/avc/cng/core/a/at$g;->a:S
+    iget-short v0, v0, Lcom/panasonic/avc/cng/core/a/at$g;->zoomRatio:S
 
     iput-short v0, p0, Lcom/panasonic/avc/cng/model/j$b;->zoomRatio:S
 
@@ -399,7 +399,7 @@
     .line 1113
     iget-object v0, p2, Lcom/panasonic/avc/cng/core/a/at$c;->f:Lcom/panasonic/avc/cng/core/a/at$h;
 
-    iget-short v0, v0, Lcom/panasonic/avc/cng/core/a/at$h;->a:S
+    iget-short v0, v0, Lcom/panasonic/avc/cng/core/a/at$h;->zoomRatio:S
 
     iput-short v0, p0, Lcom/panasonic/avc/cng/model/j$b;->zoomRatio:S
 
@@ -482,7 +482,7 @@
     .line 1125
     iget-object v0, p2, Lcom/panasonic/avc/cng/core/a/at$c;->g:Lcom/panasonic/avc/cng/core/a/at$i;
 
-    iget-short v0, v0, Lcom/panasonic/avc/cng/core/a/at$i;->a:S
+    iget-short v0, v0, Lcom/panasonic/avc/cng/core/a/at$i;->zoomRatio:S
 
     iput-short v0, p0, Lcom/panasonic/avc/cng/model/j$b;->zoomRatio:S
 
@@ -565,7 +565,7 @@
     .line 1137
     iget-object v0, p2, Lcom/panasonic/avc/cng/core/a/at$c;->i:Lcom/panasonic/avc/cng/core/a/at$k;
 
-    iget-short v0, v0, Lcom/panasonic/avc/cng/core/a/at$k;->a:S
+    iget-short v0, v0, Lcom/panasonic/avc/cng/core/a/at$k;->zoomRatio:S
 
     iput-short v0, p0, Lcom/panasonic/avc/cng/model/j$b;->zoomRatio:S
 
@@ -723,7 +723,7 @@
     .line 1161
     iget-object v0, p2, Lcom/panasonic/avc/cng/core/a/at$c;->k:Lcom/panasonic/avc/cng/core/a/at$m;
 
-    iget-short v0, v0, Lcom/panasonic/avc/cng/core/a/at$m;->a:S
+    iget-short v0, v0, Lcom/panasonic/avc/cng/core/a/at$m;->zoomRatio:S
 
     iput-short v0, p0, Lcom/panasonic/avc/cng/model/j$b;->zoomRatio:S
 
