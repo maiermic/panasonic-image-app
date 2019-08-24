@@ -9,7 +9,7 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/panasonic/avc/cng/model/service/f/h$a;
+        Lcom/panasonic/avc/cng/model/service/f/LiveViewVerticalServiceRunnable;
     }
 .end annotation
 
@@ -281,9 +281,9 @@
     .line 103
     new-instance v0, Ljava/lang/Thread;
 
-    new-instance v1, Lcom/panasonic/avc/cng/model/service/f/h$a;
+    new-instance v1, Lcom/panasonic/avc/cng/model/service/f/LiveViewVerticalServiceRunnable;
 
-    invoke-direct {v1, p0, p2, p3}, Lcom/panasonic/avc/cng/model/service/f/h$a;-><init>(Lcom/panasonic/avc/cng/model/service/f/LiveViewVerticalService;ZZ)V
+    invoke-direct {v1, p0, p2, p3}, Lcom/panasonic/avc/cng/model/service/f/LiveViewVerticalServiceRunnable;-><init>(Lcom/panasonic/avc/cng/model/service/f/LiveViewVerticalService;ZZ)V
 
     invoke-direct {v0, v1}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;)V
 

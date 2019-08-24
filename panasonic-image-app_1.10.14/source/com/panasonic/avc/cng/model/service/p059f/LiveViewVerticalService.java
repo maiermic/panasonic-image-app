@@ -44,7 +44,7 @@ public class LiveViewVerticalService implements C2176k {
     public boolean f6376g;
 
     /* renamed from: com.panasonic.avc.cng.model.service.f.h$a */
-    private class C2061a implements Runnable {
+    private class LiveViewVerticalServiceRunnable implements Runnable {
 
         /* renamed from: b */
         private boolean f6378b;
@@ -52,7 +52,7 @@ public class LiveViewVerticalService implements C2176k {
         /* renamed from: c */
         private boolean f6379c;
 
-        public C2061a(boolean z, boolean z2) {
+        public LiveViewVerticalServiceRunnable(boolean z, boolean z2) {
             this.f6378b = z;
             this.f6379c = z2;
         }
@@ -295,7 +295,7 @@ public class LiveViewVerticalService implements C2176k {
         if (this.f6370a != null && this.f6371b != null && this.f6372c != null && this.f6373d != null) {
             this.f6372c.mo5355a();
             this.f6373d.mo5361a(aVar);
-            this.f6375f = new Thread(new C2061a(z, z2));
+            this.f6375f = new Thread(new LiveViewVerticalServiceRunnable(z, z2));
             this.f6375f.start();
         }
     }
