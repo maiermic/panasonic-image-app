@@ -17,11 +17,11 @@ public class LiveViewUdpPort {
     DatagramPacket f6368c = null;
 
     /* renamed from: d */
-    byte[] f6369d = null;
+    byte[] buffer = null;
 
     /* renamed from: a */
     public void mo5379a() {
-        this.f6369d = new byte[65536];
+        this.buffer = new byte[65536];
         this.port = 49152;
         while (this.port <= 65535) {
             try {
@@ -43,7 +43,7 @@ public class LiveViewUdpPort {
         } else {
             ImageAppLog.error("LiveViewUdpPort", "No empty UDP port");
         }
-        this.f6368c = new DatagramPacket(this.f6369d, this.f6369d.length);
+        this.f6368c = new DatagramPacket(this.buffer, this.buffer.length);
     }
 
     /* renamed from: b */
@@ -53,7 +53,7 @@ public class LiveViewUdpPort {
 
     /* renamed from: c */
     public byte[] mo5381c() {
-        this.f6368c.setLength(this.f6369d.length);
+        this.f6368c.setLength(this.buffer.length);
         this.f6367b.receive(this.f6368c);
         return this.f6368c.getData();
     }
@@ -61,7 +61,7 @@ public class LiveViewUdpPort {
     /* renamed from: d */
     public void mo5382d() {
         this.f6368c = null;
-        this.f6369d = null;
+        this.buffer = null;
         ImageAppLog.info("LiveViewUdpPort", String.format("UDP socket close[%d]", new Object[]{Integer.valueOf(this.port)}));
         if (this.f6367b != null) {
             this.f6367b.close();

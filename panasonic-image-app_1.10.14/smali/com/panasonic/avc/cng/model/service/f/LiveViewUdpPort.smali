@@ -10,7 +10,7 @@
 
 .field c:Ljava/net/DatagramPacket;
 
-.field d:[B
+.field buffer:[B
 
 
 # direct methods
@@ -35,7 +35,7 @@
     iput-object v1, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;->c:Ljava/net/DatagramPacket;
 
     .line 17
-    iput-object v1, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;->d:[B
+    iput-object v1, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;->buffer:[B
 
     return-void
 .end method
@@ -55,7 +55,7 @@
 
     new-array v0, v0, [B
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;->d:[B
+    iput-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;->buffer:[B
 
     .line 40
     const v0, 0xc000
@@ -128,9 +128,9 @@
     :goto_1
     new-instance v0, Ljava/net/DatagramPacket;
 
-    iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;->d:[B
+    iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;->buffer:[B
 
-    iget-object v2, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;->d:[B
+    iget-object v2, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;->buffer:[B
 
     array-length v2, v2
 
@@ -227,7 +227,7 @@
     .line 96
     iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;->c:Ljava/net/DatagramPacket;
 
-    iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;->d:[B
+    iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;->buffer:[B
 
     array-length v1, v1
 
@@ -261,7 +261,7 @@
     iput-object v5, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;->c:Ljava/net/DatagramPacket;
 
     .line 111
-    iput-object v5, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;->d:[B
+    iput-object v5, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;->buffer:[B
 
     .line 113
     const-string v0, "LiveViewUdpPort"
