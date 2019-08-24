@@ -22,7 +22,7 @@ public class C2255a {
     }
 
     /* renamed from: b */
-    public short mo5941b() {
+    public short calculateZoomRatio() {
         short s = ((((short) this.f6982a[this.f6983b]) & 255) << 8) | (((short) this.f6982a[this.f6983b + 1]) & 255);
         this.f6983b += 2;
         return (short) s;

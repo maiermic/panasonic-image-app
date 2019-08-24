@@ -157,7 +157,7 @@
     iput v1, p1, Lcom/panasonic/avc/cng/core/a/at$a;->a:I
 
     .line 1378
-    invoke-virtual {v2}, Lcom/panasonic/avc/cng/util/a;->b()S
+    invoke-virtual {v2}, Lcom/panasonic/avc/cng/util/a;->calculateZoomRatio()S
 
     move-result v1
 
@@ -250,7 +250,7 @@
 
     .line 1397
     :cond_1
-    invoke-virtual {v2}, Lcom/panasonic/avc/cng/util/a;->b()S
+    invoke-virtual {v2}, Lcom/panasonic/avc/cng/util/a;->calculateZoomRatio()S
 
     move-result v0
 
@@ -312,7 +312,7 @@
     iput-object v1, p1, Lcom/panasonic/avc/cng/core/a/at$c;->k:Lcom/panasonic/avc/cng/core/a/at$m;
 
     .line 1430
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/util/a;->b()S
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/util/a;->calculateZoomRatio()S
 
     move-result v1
 
@@ -506,7 +506,7 @@
 
     .prologue
     .line 1497
-    invoke-virtual {p2}, Lcom/panasonic/avc/cng/util/a;->b()S
+    invoke-virtual {p2}, Lcom/panasonic/avc/cng/util/a;->calculateZoomRatio()S
 
     move-result v0
 
@@ -633,7 +633,7 @@
     .line 1520
     iget-object v2, v1, Lcom/panasonic/avc/cng/core/a/at$o;->a:Landroid/graphics/Rect;
 
-    invoke-virtual {p2}, Lcom/panasonic/avc/cng/util/a;->b()S
+    invoke-virtual {p2}, Lcom/panasonic/avc/cng/util/a;->calculateZoomRatio()S
 
     move-result v3
 
@@ -642,7 +642,7 @@
     .line 1521
     iget-object v2, v1, Lcom/panasonic/avc/cng/core/a/at$o;->a:Landroid/graphics/Rect;
 
-    invoke-virtual {p2}, Lcom/panasonic/avc/cng/util/a;->b()S
+    invoke-virtual {p2}, Lcom/panasonic/avc/cng/util/a;->calculateZoomRatio()S
 
     move-result v3
 
@@ -651,7 +651,7 @@
     .line 1522
     iget-object v2, v1, Lcom/panasonic/avc/cng/core/a/at$o;->a:Landroid/graphics/Rect;
 
-    invoke-virtual {p2}, Lcom/panasonic/avc/cng/util/a;->b()S
+    invoke-virtual {p2}, Lcom/panasonic/avc/cng/util/a;->calculateZoomRatio()S
 
     move-result v3
 
@@ -660,7 +660,7 @@
     .line 1523
     iget-object v2, v1, Lcom/panasonic/avc/cng/core/a/at$o;->a:Landroid/graphics/Rect;
 
-    invoke-virtual {p2}, Lcom/panasonic/avc/cng/util/a;->b()S
+    invoke-virtual {p2}, Lcom/panasonic/avc/cng/util/a;->calculateZoomRatio()S
 
     move-result v3
 
@@ -713,126 +713,126 @@
 
     .prologue
     .line 1599
-    invoke-virtual {p2}, Lcom/panasonic/avc/cng/util/a;->b()S
+    invoke-virtual {p2}, Lcom/panasonic/avc/cng/util/a;->calculateZoomRatio()S
 
     move-result v0
 
     iput-short v0, p1, Lcom/panasonic/avc/cng/core/a/at$g;->p:S
 
     .line 1600
-    invoke-virtual {p2}, Lcom/panasonic/avc/cng/util/a;->b()S
+    invoke-virtual {p2}, Lcom/panasonic/avc/cng/util/a;->calculateZoomRatio()S
 
     move-result v0
 
     iput-short v0, p1, Lcom/panasonic/avc/cng/core/a/at$g;->q:S
 
     .line 1601
-    invoke-virtual {p2}, Lcom/panasonic/avc/cng/util/a;->b()S
+    invoke-virtual {p2}, Lcom/panasonic/avc/cng/util/a;->calculateZoomRatio()S
 
     move-result v0
 
     iput-short v0, p1, Lcom/panasonic/avc/cng/core/a/at$g;->r:S
 
     .line 1602
-    invoke-virtual {p2}, Lcom/panasonic/avc/cng/util/a;->b()S
+    invoke-virtual {p2}, Lcom/panasonic/avc/cng/util/a;->calculateZoomRatio()S
 
     move-result v0
 
     iput-short v0, p1, Lcom/panasonic/avc/cng/core/a/at$g;->s:S
 
     .line 1603
-    invoke-virtual {p2}, Lcom/panasonic/avc/cng/util/a;->b()S
+    invoke-virtual {p2}, Lcom/panasonic/avc/cng/util/a;->calculateZoomRatio()S
 
     move-result v0
 
     iput-short v0, p1, Lcom/panasonic/avc/cng/core/a/at$g;->t:S
 
     .line 1604
-    invoke-virtual {p2}, Lcom/panasonic/avc/cng/util/a;->b()S
+    invoke-virtual {p2}, Lcom/panasonic/avc/cng/util/a;->calculateZoomRatio()S
 
     move-result v0
 
     iput-short v0, p1, Lcom/panasonic/avc/cng/core/a/at$g;->u:S
 
     .line 1606
-    invoke-virtual {p2}, Lcom/panasonic/avc/cng/util/a;->b()S
+    invoke-virtual {p2}, Lcom/panasonic/avc/cng/util/a;->calculateZoomRatio()S
 
     move-result v0
 
     iput-short v0, p1, Lcom/panasonic/avc/cng/core/a/at$g;->v:S
 
     .line 1607
-    invoke-virtual {p2}, Lcom/panasonic/avc/cng/util/a;->b()S
+    invoke-virtual {p2}, Lcom/panasonic/avc/cng/util/a;->calculateZoomRatio()S
 
     move-result v0
 
     iput-short v0, p1, Lcom/panasonic/avc/cng/core/a/at$g;->w:S
 
     .line 1608
-    invoke-virtual {p2}, Lcom/panasonic/avc/cng/util/a;->b()S
+    invoke-virtual {p2}, Lcom/panasonic/avc/cng/util/a;->calculateZoomRatio()S
 
     move-result v0
 
     iput-short v0, p1, Lcom/panasonic/avc/cng/core/a/at$g;->x:S
 
     .line 1609
-    invoke-virtual {p2}, Lcom/panasonic/avc/cng/util/a;->b()S
+    invoke-virtual {p2}, Lcom/panasonic/avc/cng/util/a;->calculateZoomRatio()S
 
     move-result v0
 
     iput-short v0, p1, Lcom/panasonic/avc/cng/core/a/at$g;->y:S
 
     .line 1610
-    invoke-virtual {p2}, Lcom/panasonic/avc/cng/util/a;->b()S
+    invoke-virtual {p2}, Lcom/panasonic/avc/cng/util/a;->calculateZoomRatio()S
 
     move-result v0
 
     iput-short v0, p1, Lcom/panasonic/avc/cng/core/a/at$g;->z:S
 
     .line 1611
-    invoke-virtual {p2}, Lcom/panasonic/avc/cng/util/a;->b()S
+    invoke-virtual {p2}, Lcom/panasonic/avc/cng/util/a;->calculateZoomRatio()S
 
     move-result v0
 
     iput-short v0, p1, Lcom/panasonic/avc/cng/core/a/at$g;->A:S
 
     .line 1613
-    invoke-virtual {p2}, Lcom/panasonic/avc/cng/util/a;->b()S
+    invoke-virtual {p2}, Lcom/panasonic/avc/cng/util/a;->calculateZoomRatio()S
 
     move-result v0
 
     iput-short v0, p1, Lcom/panasonic/avc/cng/core/a/at$g;->B:S
 
     .line 1614
-    invoke-virtual {p2}, Lcom/panasonic/avc/cng/util/a;->b()S
+    invoke-virtual {p2}, Lcom/panasonic/avc/cng/util/a;->calculateZoomRatio()S
 
     move-result v0
 
     iput-short v0, p1, Lcom/panasonic/avc/cng/core/a/at$g;->C:S
 
     .line 1615
-    invoke-virtual {p2}, Lcom/panasonic/avc/cng/util/a;->b()S
+    invoke-virtual {p2}, Lcom/panasonic/avc/cng/util/a;->calculateZoomRatio()S
 
     move-result v0
 
     iput-short v0, p1, Lcom/panasonic/avc/cng/core/a/at$g;->D:S
 
     .line 1616
-    invoke-virtual {p2}, Lcom/panasonic/avc/cng/util/a;->b()S
+    invoke-virtual {p2}, Lcom/panasonic/avc/cng/util/a;->calculateZoomRatio()S
 
     move-result v0
 
     iput-short v0, p1, Lcom/panasonic/avc/cng/core/a/at$g;->E:S
 
     .line 1617
-    invoke-virtual {p2}, Lcom/panasonic/avc/cng/util/a;->b()S
+    invoke-virtual {p2}, Lcom/panasonic/avc/cng/util/a;->calculateZoomRatio()S
 
     move-result v0
 
     iput-short v0, p1, Lcom/panasonic/avc/cng/core/a/at$g;->F:S
 
     .line 1618
-    invoke-virtual {p2}, Lcom/panasonic/avc/cng/util/a;->b()S
+    invoke-virtual {p2}, Lcom/panasonic/avc/cng/util/a;->calculateZoomRatio()S
 
     move-result v0
 
@@ -846,21 +846,21 @@
     iput-byte v0, p1, Lcom/panasonic/avc/cng/core/a/at$g;->H:B
 
     .line 1621
-    invoke-virtual {p2}, Lcom/panasonic/avc/cng/util/a;->b()S
+    invoke-virtual {p2}, Lcom/panasonic/avc/cng/util/a;->calculateZoomRatio()S
 
     move-result v0
 
     iput-short v0, p1, Lcom/panasonic/avc/cng/core/a/at$g;->I:S
 
     .line 1622
-    invoke-virtual {p2}, Lcom/panasonic/avc/cng/util/a;->b()S
+    invoke-virtual {p2}, Lcom/panasonic/avc/cng/util/a;->calculateZoomRatio()S
 
     move-result v0
 
     iput-short v0, p1, Lcom/panasonic/avc/cng/core/a/at$g;->J:S
 
     .line 1623
-    invoke-virtual {p2}, Lcom/panasonic/avc/cng/util/a;->b()S
+    invoke-virtual {p2}, Lcom/panasonic/avc/cng/util/a;->calculateZoomRatio()S
 
     move-result v0
 
@@ -919,7 +919,7 @@
     const/4 v1, 0x0
 
     .line 1540
-    invoke-virtual {p2}, Lcom/panasonic/avc/cng/util/a;->b()S
+    invoke-virtual {p2}, Lcom/panasonic/avc/cng/util/a;->calculateZoomRatio()S
 
     move-result v0
 
@@ -1065,7 +1065,7 @@
     .line 1567
     iget-object v0, v4, Lcom/panasonic/avc/cng/core/a/at$p;->a:Landroid/graphics/Rect;
 
-    invoke-virtual {p2}, Lcom/panasonic/avc/cng/util/a;->b()S
+    invoke-virtual {p2}, Lcom/panasonic/avc/cng/util/a;->calculateZoomRatio()S
 
     move-result v6
 
@@ -1074,7 +1074,7 @@
     .line 1568
     iget-object v0, v4, Lcom/panasonic/avc/cng/core/a/at$p;->a:Landroid/graphics/Rect;
 
-    invoke-virtual {p2}, Lcom/panasonic/avc/cng/util/a;->b()S
+    invoke-virtual {p2}, Lcom/panasonic/avc/cng/util/a;->calculateZoomRatio()S
 
     move-result v6
 
@@ -1083,7 +1083,7 @@
     .line 1569
     iget-object v0, v4, Lcom/panasonic/avc/cng/core/a/at$p;->a:Landroid/graphics/Rect;
 
-    invoke-virtual {p2}, Lcom/panasonic/avc/cng/util/a;->b()S
+    invoke-virtual {p2}, Lcom/panasonic/avc/cng/util/a;->calculateZoomRatio()S
 
     move-result v6
 
@@ -1092,7 +1092,7 @@
     .line 1570
     iget-object v0, v4, Lcom/panasonic/avc/cng/core/a/at$p;->a:Landroid/graphics/Rect;
 
-    invoke-virtual {p2}, Lcom/panasonic/avc/cng/util/a;->b()S
+    invoke-virtual {p2}, Lcom/panasonic/avc/cng/util/a;->calculateZoomRatio()S
 
     move-result v6
 
@@ -1293,7 +1293,7 @@
     iput-byte v1, v0, Lcom/panasonic/avc/cng/core/a/at$i;->O:B
 
     .line 1741
-    invoke-virtual {p2}, Lcom/panasonic/avc/cng/util/a;->b()S
+    invoke-virtual {p2}, Lcom/panasonic/avc/cng/util/a;->calculateZoomRatio()S
 
     move-result v1
 
@@ -1343,7 +1343,7 @@
     iput-byte v1, v0, Lcom/panasonic/avc/cng/core/a/at$j;->O:B
 
     .line 1774
-    invoke-virtual {p2}, Lcom/panasonic/avc/cng/util/a;->b()S
+    invoke-virtual {p2}, Lcom/panasonic/avc/cng/util/a;->calculateZoomRatio()S
 
     move-result v1
 
@@ -1400,7 +1400,7 @@
     iput-byte v1, v0, Lcom/panasonic/avc/cng/core/a/at$k;->O:B
 
     .line 1809
-    invoke-virtual {p2}, Lcom/panasonic/avc/cng/util/a;->b()S
+    invoke-virtual {p2}, Lcom/panasonic/avc/cng/util/a;->calculateZoomRatio()S
 
     move-result v1
 
@@ -1421,7 +1421,7 @@
     iput-byte v1, v0, Lcom/panasonic/avc/cng/core/a/at$k;->S:B
 
     .line 1814
-    invoke-virtual {p2}, Lcom/panasonic/avc/cng/util/a;->b()S
+    invoke-virtual {p2}, Lcom/panasonic/avc/cng/util/a;->calculateZoomRatio()S
 
     move-result v1
 
@@ -1458,7 +1458,7 @@
     iput-short p1, v0, Lcom/panasonic/avc/cng/core/a/at$e;->af:S
 
     .line 1836
-    invoke-virtual {p2}, Lcom/panasonic/avc/cng/util/a;->b()S
+    invoke-virtual {p2}, Lcom/panasonic/avc/cng/util/a;->calculateZoomRatio()S
 
     move-result v1
 
@@ -1537,14 +1537,14 @@
     iput-short p1, v0, Lcom/panasonic/avc/cng/core/a/at$f;->af:S
 
     .line 1864
-    invoke-virtual {p2}, Lcom/panasonic/avc/cng/util/a;->b()S
+    invoke-virtual {p2}, Lcom/panasonic/avc/cng/util/a;->calculateZoomRatio()S
 
     move-result v1
 
     iput-short v1, v0, Lcom/panasonic/avc/cng/core/a/at$f;->a:S
 
     .line 1865
-    invoke-virtual {p2}, Lcom/panasonic/avc/cng/util/a;->b()S
+    invoke-virtual {p2}, Lcom/panasonic/avc/cng/util/a;->calculateZoomRatio()S
 
     move-result v1
 
@@ -1565,14 +1565,14 @@
     iput v1, v0, Lcom/panasonic/avc/cng/core/a/at$f;->d:I
 
     .line 1868
-    invoke-virtual {p2}, Lcom/panasonic/avc/cng/util/a;->b()S
+    invoke-virtual {p2}, Lcom/panasonic/avc/cng/util/a;->calculateZoomRatio()S
 
     move-result v1
 
     iput-short v1, v0, Lcom/panasonic/avc/cng/core/a/at$f;->e:S
 
     .line 1869
-    invoke-virtual {p2}, Lcom/panasonic/avc/cng/util/a;->b()S
+    invoke-virtual {p2}, Lcom/panasonic/avc/cng/util/a;->calculateZoomRatio()S
 
     move-result v1
 
@@ -1586,7 +1586,7 @@
     iput v1, v0, Lcom/panasonic/avc/cng/core/a/at$f;->g:I
 
     .line 1871
-    invoke-virtual {p2}, Lcom/panasonic/avc/cng/util/a;->b()S
+    invoke-virtual {p2}, Lcom/panasonic/avc/cng/util/a;->calculateZoomRatio()S
 
     move-result v1
 
@@ -1609,7 +1609,7 @@
     iput-short p1, v0, Lcom/panasonic/avc/cng/core/a/at$l;->af:S
 
     .line 1890
-    invoke-virtual {p2}, Lcom/panasonic/avc/cng/util/a;->b()S
+    invoke-virtual {p2}, Lcom/panasonic/avc/cng/util/a;->calculateZoomRatio()S
 
     move-result v1
 
@@ -1729,7 +1729,7 @@
     iput-byte v0, v1, Lcom/panasonic/avc/cng/core/a/at$m;->O:B
 
     .line 1932
-    invoke-virtual {p2}, Lcom/panasonic/avc/cng/util/a;->b()S
+    invoke-virtual {p2}, Lcom/panasonic/avc/cng/util/a;->calculateZoomRatio()S
 
     move-result v0
 
@@ -1750,7 +1750,7 @@
     iput-byte v0, v1, Lcom/panasonic/avc/cng/core/a/at$m;->S:B
 
     .line 1937
-    invoke-virtual {p2}, Lcom/panasonic/avc/cng/util/a;->b()S
+    invoke-virtual {p2}, Lcom/panasonic/avc/cng/util/a;->calculateZoomRatio()S
 
     move-result v0
 
@@ -1771,7 +1771,7 @@
     iput-byte v0, v1, Lcom/panasonic/avc/cng/core/a/at$m;->aa:B
 
     .line 1941
-    invoke-virtual {p2}, Lcom/panasonic/avc/cng/util/a;->b()S
+    invoke-virtual {p2}, Lcom/panasonic/avc/cng/util/a;->calculateZoomRatio()S
 
     move-result v0
 

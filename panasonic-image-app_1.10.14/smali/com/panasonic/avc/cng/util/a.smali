@@ -51,7 +51,7 @@
     return v0
 .end method
 
-.method public b()S
+.method public calculateZoomRatio()S
     .locals 3
 
     .prologue

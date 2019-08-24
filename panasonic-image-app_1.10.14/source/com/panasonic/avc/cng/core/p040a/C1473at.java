@@ -834,7 +834,7 @@ public class C1473at {
     private int m5781a(C1474a aVar, byte[] bArr, int i) {
         C2255a aVar2 = new C2255a(bArr, i);
         aVar.f3979a = aVar2.mo5942c();
-        aVar.f3980b = aVar2.mo5941b();
+        aVar.f3980b = aVar2.calculateZoomRatio();
         aVar.f3981c = aVar2.mo5943d();
         aVar.f3982d = aVar2.mo5940a();
         for (int i2 = 0; i2 < 6; i2++) {
@@ -847,7 +847,7 @@ public class C1473at {
         for (int i3 = 0; i3 < 8; i3++) {
             aVar.f3988j[i3] = aVar2.mo5940a();
         }
-        aVar.f3989k = aVar2.mo5941b() & 65535;
+        aVar.f3989k = aVar2.calculateZoomRatio() & 65535;
         return aVar2.mo5944e();
     }
 
@@ -864,7 +864,7 @@ public class C1473at {
         cVar.f4003i = null;
         cVar.f4004j = null;
         cVar.f4005k = null;
-        cVar.f3995a = aVar.mo5941b();
+        cVar.f3995a = aVar.calculateZoomRatio();
         switch (cVar.f3995a) {
             case 1:
                 cVar.f3996b = m5783a(cVar.f3995a, aVar);
@@ -904,7 +904,7 @@ public class C1473at {
 
     /* renamed from: a */
     private void m5784a(C1477d dVar, C2255a aVar) {
-        dVar.f4007a = aVar.mo5941b();
+        dVar.f4007a = aVar.calculateZoomRatio();
         dVar.f4008b = aVar.mo5940a();
         dVar.f4009c = aVar.mo5940a();
         dVar.f4010d = aVar.mo5940a();
@@ -922,10 +922,10 @@ public class C1473at {
             for (int i = 0; i < dVar.f4019m; i++) {
                 dVar.f4020n[i] = new C1488o();
                 C1488o oVar = dVar.f4020n[i];
-                oVar.f4093a.left = aVar.mo5941b();
-                oVar.f4093a.top = aVar.mo5941b();
-                oVar.f4093a.right = aVar.mo5941b();
-                oVar.f4093a.bottom = aVar.mo5941b();
+                oVar.f4093a.left = aVar.calculateZoomRatio();
+                oVar.f4093a.top = aVar.calculateZoomRatio();
+                oVar.f4093a.right = aVar.calculateZoomRatio();
+                oVar.f4093a.bottom = aVar.calculateZoomRatio();
                 oVar.f4094b = Color.rgb(aVar.mo5940a() & 255, aVar.mo5940a() & 255, aVar.mo5940a() & 255);
                 oVar.f4095c = aVar.mo5940a();
             }
@@ -1054,28 +1054,28 @@ public class C1473at {
 
     /* renamed from: a */
     private void m5785a(C1480g gVar, C2255a aVar) {
-        gVar.f4055p = aVar.mo5941b();
-        gVar.f4056q = aVar.mo5941b();
-        gVar.f4057r = aVar.mo5941b();
-        gVar.f4058s = aVar.mo5941b();
-        gVar.f4059t = aVar.mo5941b();
-        gVar.f4060u = aVar.mo5941b();
-        gVar.f4061v = aVar.mo5941b();
-        gVar.f4062w = aVar.mo5941b();
-        gVar.f4063x = aVar.mo5941b();
-        gVar.f4064y = aVar.mo5941b();
-        gVar.f4065z = aVar.mo5941b();
-        gVar.f4041A = aVar.mo5941b();
-        gVar.f4042B = aVar.mo5941b();
-        gVar.f4043C = aVar.mo5941b();
-        gVar.f4044D = aVar.mo5941b();
-        gVar.f4045E = aVar.mo5941b();
-        gVar.f4046F = aVar.mo5941b();
-        gVar.f4047G = aVar.mo5941b();
+        gVar.f4055p = aVar.calculateZoomRatio();
+        gVar.f4056q = aVar.calculateZoomRatio();
+        gVar.f4057r = aVar.calculateZoomRatio();
+        gVar.f4058s = aVar.calculateZoomRatio();
+        gVar.f4059t = aVar.calculateZoomRatio();
+        gVar.f4060u = aVar.calculateZoomRatio();
+        gVar.f4061v = aVar.calculateZoomRatio();
+        gVar.f4062w = aVar.calculateZoomRatio();
+        gVar.f4063x = aVar.calculateZoomRatio();
+        gVar.f4064y = aVar.calculateZoomRatio();
+        gVar.f4065z = aVar.calculateZoomRatio();
+        gVar.f4041A = aVar.calculateZoomRatio();
+        gVar.f4042B = aVar.calculateZoomRatio();
+        gVar.f4043C = aVar.calculateZoomRatio();
+        gVar.f4044D = aVar.calculateZoomRatio();
+        gVar.f4045E = aVar.calculateZoomRatio();
+        gVar.f4046F = aVar.calculateZoomRatio();
+        gVar.f4047G = aVar.calculateZoomRatio();
         gVar.f4048H = aVar.mo5940a();
-        gVar.f4049I = aVar.mo5941b();
-        gVar.f4050J = aVar.mo5941b();
-        gVar.f4051K = aVar.mo5941b();
+        gVar.f4049I = aVar.calculateZoomRatio();
+        gVar.f4050J = aVar.calculateZoomRatio();
+        gVar.f4051K = aVar.calculateZoomRatio();
         gVar.f4052L = aVar.mo5940a();
         if (gVar.f4052L > 0) {
             gVar.f4053M = new byte[gVar.f4052L];
@@ -1119,7 +1119,7 @@ public class C1473at {
         m5784a((C1477d) iVar, aVar);
         m5785a((C1480g) iVar, aVar);
         iVar.f4066O = aVar.mo5940a();
-        iVar.f4068Q = aVar.mo5941b();
+        iVar.f4068Q = aVar.calculateZoomRatio();
         iVar.f4069R = aVar.mo5940a();
         iVar.f4070S = aVar.mo5940a();
         return iVar;
@@ -1132,7 +1132,7 @@ public class C1473at {
         m5784a((C1477d) jVar, aVar);
         m5785a((C1480g) jVar, aVar);
         jVar.f4066O = aVar.mo5940a();
-        jVar.f4068Q = aVar.mo5941b();
+        jVar.f4068Q = aVar.calculateZoomRatio();
         jVar.f4069R = aVar.mo5940a();
         jVar.f4070S = aVar.mo5940a();
         jVar.f4072U = m5793h(s, aVar);
@@ -1146,10 +1146,10 @@ public class C1473at {
         m5786a(kVar, aVar);
         m5785a((C1480g) kVar, aVar);
         kVar.f4066O = aVar.mo5940a();
-        kVar.f4068Q = aVar.mo5941b();
+        kVar.f4068Q = aVar.calculateZoomRatio();
         kVar.f4069R = aVar.mo5940a();
         kVar.f4070S = aVar.mo5940a();
-        kVar.f4075V = aVar.mo5941b();
+        kVar.f4075V = aVar.calculateZoomRatio();
         kVar.f4076W = aVar.mo5940a();
         kVar.f4077X = aVar.mo5940a();
         return kVar;
@@ -1159,7 +1159,7 @@ public class C1473at {
     private C1478e m5792g(short s, C2255a aVar) {
         C1478e eVar = new C1478e();
         eVar.f4091af = s;
-        eVar.zoomRatio = aVar.mo5941b();
+        eVar.zoomRatio = aVar.calculateZoomRatio();
         eVar.f4023b = aVar.mo5940a();
         eVar.f4024c = aVar.mo5940a();
         eVar.f4025d = aVar.mo5940a();
@@ -1175,14 +1175,14 @@ public class C1473at {
     private C1479f m5793h(short s, C2255a aVar) {
         C1479f fVar = new C1479f();
         fVar.f4091af = s;
-        fVar.f4032a = aVar.mo5941b();
-        fVar.f4033b = aVar.mo5941b();
+        fVar.f4032a = aVar.calculateZoomRatio();
+        fVar.f4033b = aVar.calculateZoomRatio();
         fVar.f4034c = aVar.mo5943d();
         fVar.f4035d = aVar.mo5943d();
-        fVar.f4036e = aVar.mo5941b();
-        fVar.f4037f = aVar.mo5941b();
+        fVar.f4036e = aVar.calculateZoomRatio();
+        fVar.f4037f = aVar.calculateZoomRatio();
         fVar.f4038g = aVar.mo5943d();
-        fVar.f4039h = aVar.mo5941b();
+        fVar.f4039h = aVar.calculateZoomRatio();
         return fVar;
     }
 
@@ -1190,7 +1190,7 @@ public class C1473at {
     private C1485l m5794i(short s, C2255a aVar) {
         C1485l lVar = new C1485l();
         lVar.f4091af = s;
-        lVar.zoomRatio = aVar.mo5941b();
+        lVar.zoomRatio = aVar.calculateZoomRatio();
         lVar.f4023b = aVar.mo5940a();
         lVar.f4024c = aVar.mo5940a();
         lVar.f4025d = aVar.mo5940a();
@@ -1213,13 +1213,13 @@ public class C1473at {
         m5786a((C1484k) mVar, aVar);
         m5785a((C1480g) mVar, aVar);
         mVar.f4066O = aVar.mo5940a();
-        mVar.f4068Q = aVar.mo5941b();
+        mVar.f4068Q = aVar.calculateZoomRatio();
         mVar.f4069R = aVar.mo5940a();
         mVar.f4070S = aVar.mo5940a();
-        mVar.f4075V = aVar.mo5941b();
+        mVar.f4075V = aVar.calculateZoomRatio();
         mVar.f4076W = aVar.mo5940a();
         mVar.f4086aa = aVar.mo5940a();
-        mVar.f4087ab = aVar.mo5941b();
+        mVar.f4087ab = aVar.calculateZoomRatio();
         mVar.f4088ac = aVar.mo5940a();
         for (int i = 0; i < 16; i++) {
             mVar.f4089ad[i] = aVar.mo5940a();
