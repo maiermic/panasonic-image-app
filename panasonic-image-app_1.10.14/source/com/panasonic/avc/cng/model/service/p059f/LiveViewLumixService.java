@@ -76,7 +76,7 @@ public class LiveViewLumixService implements C2176k {
                 gVar.mo5379a();
                 try {
                     if (!this.f6348c || m8519a()) {
-                        ParseTagHighlightSceneInfo a = LiveViewLumixService.this.f6336a.mo3789a(gVar.mo5380b(), 5);
+                        ParseTagHighlightSceneInfo a = LiveViewLumixService.this.f6336a.mo3789a(gVar.getPort(), 5);
                         if (!a.mo4771a()) {
                             LiveViewLumixService.this.mo5366a(a);
                             gVar.mo5382d();

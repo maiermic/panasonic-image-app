@@ -47,7 +47,7 @@ public class LiveViewUdpPort {
     }
 
     /* renamed from: b */
-    public int mo5380b() {
+    public int getPort() {
         return this.port;
     }
 

@@ -497,7 +497,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v3}, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;->b()I
+    invoke-virtual {v3}, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;->getPort()I
 
     move-result v1
 

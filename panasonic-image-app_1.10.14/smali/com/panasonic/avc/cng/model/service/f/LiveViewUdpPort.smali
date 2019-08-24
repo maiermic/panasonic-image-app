@@ -210,7 +210,7 @@
     goto :goto_1
 .end method
 
-.method public b()I
+.method public getPort()I
     .locals 1
 
     .prologue
