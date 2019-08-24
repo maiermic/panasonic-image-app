@@ -69,7 +69,7 @@ public class LiveViewVerticalService implements C2176k {
                         }
                         if (!a.mo4771a()) {
                             LiveViewVerticalService.this.mo5385a(a);
-                            gVar.mo5382d();
+                            gVar.close();
                             return;
                         }
                         if (LiveViewVerticalService.this.f6374e != null) {
@@ -94,10 +94,10 @@ public class LiveViewVerticalService implements C2176k {
                         synchronized (C1910l.m7679a()) {
                             LiveViewVerticalService.this.f6370a.mo3792b(1);
                         }
-                        gVar.mo5382d();
+                        gVar.close();
                         return;
                     }
-                    gVar.mo5382d();
+                    gVar.close();
                 } catch (Exception e2) {
                     ImageAppLog.error("LiveViewVerticalService", e2.toString());
                 }

@@ -251,7 +251,7 @@
     return-object v0
 .end method
 
-.method public d()V
+.method public close()V
     .locals 6
 
     .prologue

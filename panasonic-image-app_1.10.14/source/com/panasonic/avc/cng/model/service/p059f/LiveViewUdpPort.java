@@ -59,7 +59,7 @@ public class LiveViewUdpPort {
     }
 
     /* renamed from: d */
-    public void mo5382d() {
+    public void close() {
         this.packet = null;
         this.buffer = null;
         ImageAppLog.info("LiveViewUdpPort", String.format("UDP socket close[%d]", new Object[]{Integer.valueOf(this.port)}));

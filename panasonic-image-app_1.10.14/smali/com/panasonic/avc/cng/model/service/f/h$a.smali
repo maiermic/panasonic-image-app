@@ -461,7 +461,7 @@
     if-nez v0, :cond_0
 
     .line 329
-    invoke-virtual {v2}, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;->d()V
+    invoke-virtual {v2}, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;->close()V
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
 
@@ -532,7 +532,7 @@
     invoke-virtual {v1, v0}, Lcom/panasonic/avc/cng/model/service/f/LiveViewVerticalService;->a(Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;)V
 
     .line 346
-    invoke-virtual {v2}, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;->d()V
+    invoke-virtual {v2}, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;->close()V
     :try_end_4
     .catch Ljava/lang/Exception; {:try_start_4 .. :try_end_4} :catch_1
 
@@ -553,7 +553,7 @@
 
     .line 413
     :goto_1
-    invoke-virtual {v2}, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;->d()V
+    invoke-virtual {v2}, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;->close()V
 
     goto :goto_0
 

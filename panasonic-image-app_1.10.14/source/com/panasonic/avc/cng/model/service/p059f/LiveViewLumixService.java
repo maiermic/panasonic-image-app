@@ -79,7 +79,7 @@ public class LiveViewLumixService implements C2176k {
                         ParseTagHighlightSceneInfo a = LiveViewLumixService.this.f6336a.mo3789a(gVar.getPort(), 5);
                         if (!a.mo4771a()) {
                             LiveViewLumixService.this.mo5366a(a);
-                            gVar.mo5382d();
+                            gVar.close();
                             return;
                         }
                         if (LiveViewLumixService.this.f6340e != null) {
@@ -124,10 +124,10 @@ public class LiveViewLumixService implements C2176k {
                                 LiveViewLumixService.this.f6336a.mo3792b(5);
                             }
                         }
-                        gVar.mo5382d();
+                        gVar.close();
                         return;
                     }
-                    gVar.mo5382d();
+                    gVar.close();
                 } catch (Exception e2) {
                     ImageAppLog.error("LiveViewLumixService", e2.toString());
                 }
