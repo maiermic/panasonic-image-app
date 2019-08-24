@@ -6,7 +6,7 @@
 # instance fields
 .field port:I
 
-.field b:Ljava/net/DatagramSocket;
+.field socket:Ljava/net/DatagramSocket;
 
 .field c:Ljava/net/DatagramPacket;
 
@@ -29,7 +29,7 @@
     iput v0, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;->port:I
 
     .line 15
-    iput-object v1, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;->b:Ljava/net/DatagramSocket;
+    iput-object v1, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;->socket:Ljava/net/DatagramSocket;
 
     .line 16
     iput-object v1, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;->c:Ljava/net/DatagramPacket;
@@ -102,23 +102,23 @@
 
     invoke-direct {v0, v1}, Ljava/net/DatagramSocket;-><init>(I)V
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;->b:Ljava/net/DatagramSocket;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;->socket:Ljava/net/DatagramSocket;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 60
     :cond_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;->b:Ljava/net/DatagramSocket;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;->socket:Ljava/net/DatagramSocket;
 
     if-eqz v0, :cond_2
 
     .line 63
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;->b:Ljava/net/DatagramSocket;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;->socket:Ljava/net/DatagramSocket;
 
     invoke-virtual {v0, v5}, Ljava/net/DatagramSocket;->setReuseAddress(Z)V
 
     .line 64
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;->b:Ljava/net/DatagramSocket;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;->socket:Ljava/net/DatagramSocket;
 
     const/16 v1, 0x3e8
 
@@ -175,12 +175,12 @@
     invoke-static {v1, v0}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 52
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;->b:Ljava/net/DatagramSocket;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;->socket:Ljava/net/DatagramSocket;
 
     if-eqz v0, :cond_1
 
     .line 54
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;->b:Ljava/net/DatagramSocket;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;->socket:Ljava/net/DatagramSocket;
 
     invoke-virtual {v0}, Ljava/net/DatagramSocket;->close()V
 
@@ -188,7 +188,7 @@
     :cond_1
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;->b:Ljava/net/DatagramSocket;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;->socket:Ljava/net/DatagramSocket;
 
     .line 40
     iget v0, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;->port:I
@@ -234,7 +234,7 @@
     invoke-virtual {v0, v1}, Ljava/net/DatagramPacket;->setLength(I)V
 
     .line 97
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;->b:Ljava/net/DatagramSocket;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;->socket:Ljava/net/DatagramSocket;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;->c:Ljava/net/DatagramPacket;
 
@@ -289,18 +289,18 @@
     invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 114
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;->b:Ljava/net/DatagramSocket;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;->socket:Ljava/net/DatagramSocket;
 
     if-eqz v0, :cond_0
 
     .line 116
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;->b:Ljava/net/DatagramSocket;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;->socket:Ljava/net/DatagramSocket;
 
     invoke-virtual {v0}, Ljava/net/DatagramSocket;->close()V
 
     .line 118
     :cond_0
-    iput-object v5, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;->b:Ljava/net/DatagramSocket;
+    iput-object v5, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;->socket:Ljava/net/DatagramSocket;
 
     .line 119
     return-void

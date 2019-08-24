@@ -11,7 +11,7 @@ public class LiveViewUdpPort {
     int port = 0;
 
     /* renamed from: b */
-    DatagramSocket f6367b = null;
+    DatagramSocket socket = null;
 
     /* renamed from: c */
     DatagramPacket f6368c = null;
@@ -26,20 +26,20 @@ public class LiveViewUdpPort {
         while (this.port <= 65535) {
             try {
                 ImageAppLog.info("LiveViewUdpPort", String.format("UDP socket open[%d]", new Object[]{Integer.valueOf(this.port)}));
-                this.f6367b = new DatagramSocket(this.port);
+                this.socket = new DatagramSocket(this.port);
                 break;
             } catch (Exception e) {
                 ImageAppLog.error("LiveViewUdpPort", String.format("UDP socket close[%d](%s)", new Object[]{Integer.valueOf(this.port), e.toString()}));
-                if (this.f6367b != null) {
-                    this.f6367b.close();
+                if (this.socket != null) {
+                    this.socket.close();
                 }
-                this.f6367b = null;
+                this.socket = null;
                 this.port++;
             }
         }
-        if (this.f6367b != null) {
-            this.f6367b.setReuseAddress(true);
-            this.f6367b.setSoTimeout(1000);
+        if (this.socket != null) {
+            this.socket.setReuseAddress(true);
+            this.socket.setSoTimeout(1000);
         } else {
             ImageAppLog.error("LiveViewUdpPort", "No empty UDP port");
         }
@@ -54,7 +54,7 @@ public class LiveViewUdpPort {
     /* renamed from: c */
     public byte[] mo5381c() {
         this.f6368c.setLength(this.buffer.length);
-        this.f6367b.receive(this.f6368c);
+        this.socket.receive(this.f6368c);
         return this.f6368c.getData();
     }
 
@@ -63,9 +63,9 @@ public class LiveViewUdpPort {
         this.f6368c = null;
         this.buffer = null;
         ImageAppLog.info("LiveViewUdpPort", String.format("UDP socket close[%d]", new Object[]{Integer.valueOf(this.port)}));
-        if (this.f6367b != null) {
-            this.f6367b.close();
+        if (this.socket != null) {
+            this.socket.close();
         }
-        this.f6367b = null;
+        this.socket = null;
     }
 }
