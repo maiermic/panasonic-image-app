@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field a:I
+.field port:I
 
 .field b:Ljava/net/DatagramSocket;
 
@@ -26,7 +26,7 @@
     .line 14
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;->a:I
+    iput v0, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;->port:I
 
     .line 15
     iput-object v1, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;->b:Ljava/net/DatagramSocket;
@@ -60,10 +60,10 @@
     .line 40
     const v0, 0xc000
 
-    iput v0, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;->a:I
+    iput v0, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;->port:I
 
     :goto_0
-    iget v0, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;->a:I
+    iget v0, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;->port:I
 
     const v1, 0xffff
 
@@ -81,7 +81,7 @@
 
     const/4 v3, 0x0
 
-    iget v4, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;->a:I
+    iget v4, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;->port:I
 
     invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -98,7 +98,7 @@
     .line 46
     new-instance v0, Ljava/net/DatagramSocket;
 
-    iget v1, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;->a:I
+    iget v1, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;->port:I
 
     invoke-direct {v0, v1}, Ljava/net/DatagramSocket;-><init>(I)V
 
@@ -154,7 +154,7 @@
 
     new-array v3, v3, [Ljava/lang/Object;
 
-    iget v4, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;->a:I
+    iget v4, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;->port:I
 
     invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -191,11 +191,11 @@
     iput-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;->b:Ljava/net/DatagramSocket;
 
     .line 40
-    iget v0, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;->a:I
+    iget v0, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;->port:I
 
     add-int/lit8 v0, v0, 0x1
 
-    iput v0, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;->a:I
+    iput v0, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;->port:I
 
     goto :goto_0
 
@@ -215,7 +215,7 @@
 
     .prologue
     .line 85
-    iget v0, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;->a:I
+    iget v0, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;->port:I
 
     return v0
 .end method
@@ -274,7 +274,7 @@
 
     const/4 v3, 0x0
 
-    iget v4, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;->a:I
+    iget v4, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;->port:I
 
     invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 

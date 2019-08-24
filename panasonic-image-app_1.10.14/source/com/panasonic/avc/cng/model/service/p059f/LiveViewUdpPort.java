@@ -8,7 +8,7 @@ import java.net.DatagramSocket;
 public class LiveViewUdpPort {
 
     /* renamed from: a */
-    int f6366a = 0;
+    int port = 0;
 
     /* renamed from: b */
     DatagramSocket f6367b = null;
@@ -22,19 +22,19 @@ public class LiveViewUdpPort {
     /* renamed from: a */
     public void mo5379a() {
         this.f6369d = new byte[65536];
-        this.f6366a = 49152;
-        while (this.f6366a <= 65535) {
+        this.port = 49152;
+        while (this.port <= 65535) {
             try {
-                ImageAppLog.info("LiveViewUdpPort", String.format("UDP socket open[%d]", new Object[]{Integer.valueOf(this.f6366a)}));
-                this.f6367b = new DatagramSocket(this.f6366a);
+                ImageAppLog.info("LiveViewUdpPort", String.format("UDP socket open[%d]", new Object[]{Integer.valueOf(this.port)}));
+                this.f6367b = new DatagramSocket(this.port);
                 break;
             } catch (Exception e) {
-                ImageAppLog.error("LiveViewUdpPort", String.format("UDP socket close[%d](%s)", new Object[]{Integer.valueOf(this.f6366a), e.toString()}));
+                ImageAppLog.error("LiveViewUdpPort", String.format("UDP socket close[%d](%s)", new Object[]{Integer.valueOf(this.port), e.toString()}));
                 if (this.f6367b != null) {
                     this.f6367b.close();
                 }
                 this.f6367b = null;
-                this.f6366a++;
+                this.port++;
             }
         }
         if (this.f6367b != null) {
@@ -48,7 +48,7 @@ public class LiveViewUdpPort {
 
     /* renamed from: b */
     public int mo5380b() {
-        return this.f6366a;
+        return this.port;
     }
 
     /* renamed from: c */
@@ -62,7 +62,7 @@ public class LiveViewUdpPort {
     public void mo5382d() {
         this.f6368c = null;
         this.f6369d = null;
-        ImageAppLog.info("LiveViewUdpPort", String.format("UDP socket close[%d]", new Object[]{Integer.valueOf(this.f6366a)}));
+        ImageAppLog.info("LiveViewUdpPort", String.format("UDP socket close[%d]", new Object[]{Integer.valueOf(this.port)}));
         if (this.f6367b != null) {
             this.f6367b.close();
         }
