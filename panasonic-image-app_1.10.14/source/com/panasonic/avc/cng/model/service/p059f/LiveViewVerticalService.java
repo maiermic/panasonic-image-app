@@ -59,17 +59,17 @@ public class LiveViewVerticalService implements C2176k {
 
         public void run() {
             ParseTagHighlightSceneInfo a;
-            LiveViewUdpPort gVar = new LiveViewUdpPort();
+            LiveViewUdpPort liveViewUdpPort = new LiveViewUdpPort();
             try {
-                gVar.connect();
+                liveViewUdpPort.connect();
                 try {
                     if (!this.f6379c || m8572a()) {
                         synchronized (C1910l.m7679a()) {
-                            a = LiveViewVerticalService.this.f6370a.mo3789a(gVar.getPort(), 5);
+                            a = LiveViewVerticalService.this.f6370a.mo3789a(liveViewUdpPort.getPort(), 5);
                         }
                         if (!a.mo4771a()) {
                             LiveViewVerticalService.this.mo5385a(a);
-                            gVar.close();
+                            liveViewUdpPort.close();
                             return;
                         }
                         if (LiveViewVerticalService.this.f6374e != null) {
@@ -77,7 +77,7 @@ public class LiveViewVerticalService implements C2176k {
                         }
                         while (!LiveViewVerticalService.this.f6376g) {
                             try {
-                                C1473at atVar = new C1473at(gVar.receiveData());
+                                C1473at atVar = new C1473at(liveViewUdpPort.receiveData());
                                 if (LiveViewVerticalService.this.f6374e != null) {
                                     LiveViewVerticalService.this.f6374e.mo5766a(1);
                                     LiveViewVerticalService.this.mo5384a(atVar);
@@ -94,10 +94,10 @@ public class LiveViewVerticalService implements C2176k {
                         synchronized (C1910l.m7679a()) {
                             LiveViewVerticalService.this.f6370a.mo3792b(1);
                         }
-                        gVar.close();
+                        liveViewUdpPort.close();
                         return;
                     }
-                    gVar.close();
+                    liveViewUdpPort.close();
                 } catch (Exception e2) {
                     ImageAppLog.error("LiveViewVerticalService", e2.toString());
                 }
