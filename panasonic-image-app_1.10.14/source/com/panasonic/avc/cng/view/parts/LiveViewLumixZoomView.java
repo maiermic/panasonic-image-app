@@ -66,7 +66,7 @@ public class LiveViewLumixZoomView extends SurfaceView implements Callback {
     private short[] f13135i = new short[4];
 
     /* renamed from: j */
-    private int f13136j;
+    private int zoomRatio;
 
     /* renamed from: k */
     private int f13137k;
@@ -151,7 +151,7 @@ public class LiveViewLumixZoomView extends SurfaceView implements Callback {
         for (int i2 = 0; i2 < sArr2.length; i2++) {
             this.f13135i[i2] = sArr2[i2];
         }
-        this.f13136j = liveViewLumixSurface.get_zoomRatio();
+        this.zoomRatio = liveViewLumixSurface.get_zoomRatio();
         this.f13137k = liveViewLumixSurface.get__crntFocalDist();
         this.f13138l = liveViewLumixSurface.get__crntEXzoom();
         this.f13141o = liveViewLumixSurface.get_zoomBarFramePaint();
@@ -287,17 +287,17 @@ public class LiveViewLumixZoomView extends SurfaceView implements Callback {
                                     str = String.format(Locale.getDefault(), "%dmm", new Object[]{Integer.valueOf(this.f13137k)});
                                 } else if (!C1879a.m7545b(a7, "1.2") || a7.f5688j != 65539) {
                                     if (!c.booleanValue() || !valueOf.booleanValue()) {
-                                        str = String.format(Locale.getDefault(), "%.1f" + this.f13130d, new Object[]{Double.valueOf(((double) this.f13136j) * 0.1d)});
+                                        str = String.format(Locale.getDefault(), "%.1f" + this.f13130d, new Object[]{Double.valueOf(((double) this.zoomRatio) * 0.1d)});
                                     } else {
                                         str = String.format(Locale.getDefault(), "%dmm", new Object[]{Integer.valueOf(this.f13137k)});
                                     }
                                 } else if (this.f13140n) {
                                     str = String.format(Locale.getDefault(), "%dmm", new Object[]{Integer.valueOf(this.f13137k)});
                                 } else {
-                                    str = String.format(Locale.getDefault(), "%.1f" + this.f13130d, new Object[]{Double.valueOf(((double) this.f13136j) * 0.1d)});
+                                    str = String.format(Locale.getDefault(), "%.1f" + this.f13130d, new Object[]{Double.valueOf(((double) this.zoomRatio) * 0.1d)});
                                 }
                             } else if (!c.booleanValue() || !valueOf.booleanValue()) {
-                                str = String.format(Locale.getDefault(), "%.1f" + this.f13130d, new Object[]{Double.valueOf(((double) this.f13136j) * 0.1d)});
+                                str = String.format(Locale.getDefault(), "%.1f" + this.f13130d, new Object[]{Double.valueOf(((double) this.zoomRatio) * 0.1d)});
                             } else {
                                 str = String.format(Locale.getDefault(), "%dmm", new Object[]{Integer.valueOf(this.f13137k)});
                             }

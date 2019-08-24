@@ -37,7 +37,7 @@
 
 .field private i:[S
 
-.field private j:I
+.field private zoomRatio:I
 
 .field private k:I
 
@@ -1030,7 +1030,7 @@
 
     const/4 v6, 0x0
 
-    iget v8, p0, Lcom/panasonic/avc/cng/view/parts/LiveViewLumixZoomView;->j:I
+    iget v8, p0, Lcom/panasonic/avc/cng/view/parts/LiveViewLumixZoomView;->zoomRatio:I
 
     int-to-double v8, v8
 
@@ -1125,7 +1125,7 @@
 
     const/4 v6, 0x0
 
-    iget v8, p0, Lcom/panasonic/avc/cng/view/parts/LiveViewLumixZoomView;->j:I
+    iget v8, p0, Lcom/panasonic/avc/cng/view/parts/LiveViewLumixZoomView;->zoomRatio:I
 
     int-to-double v8, v8
 
@@ -1220,7 +1220,7 @@
 
     const/4 v6, 0x0
 
-    iget v8, p0, Lcom/panasonic/avc/cng/view/parts/LiveViewLumixZoomView;->j:I
+    iget v8, p0, Lcom/panasonic/avc/cng/view/parts/LiveViewLumixZoomView;->zoomRatio:I
 
     int-to-double v8, v8
 
@@ -1618,7 +1618,7 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/panasonic/avc/cng/view/parts/LiveViewLumixZoomView;->j:I
+    iput v0, p0, Lcom/panasonic/avc/cng/view/parts/LiveViewLumixZoomView;->zoomRatio:I
 
     .line 162
     invoke-virtual {p1}, Lcom/panasonic/avc/cng/view/parts/LiveViewLumixSurface;->get__crntFocalDist()I
