@@ -1,4 +1,4 @@
-.class Lcom/panasonic/avc/cng/model/service/f/d$a;
+.class Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixServiceRunnable;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
@@ -31,15 +31,15 @@
 
     .prologue
     .line 394
-    iput-object p1, p0, Lcom/panasonic/avc/cng/model/service/f/d$a;->a:Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixServiceRunnable;->a:Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 395
-    iput-boolean p2, p0, Lcom/panasonic/avc/cng/model/service/f/d$a;->b:Z
+    iput-boolean p2, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixServiceRunnable;->b:Z
 
     .line 396
-    iput-boolean p3, p0, Lcom/panasonic/avc/cng/model/service/f/d$a;->c:Z
+    iput-boolean p3, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixServiceRunnable;->c:Z
 
     .line 397
     return-void
@@ -94,12 +94,12 @@
     invoke-virtual {v6, v7}, Lcom/panasonic/avc/cng/core/dlna/DlnaWrapper;->e(Ljava/lang/String;)Lcom/panasonic/avc/cng/core/dlna/f;
 
     .line 574
-    iget-boolean v0, p0, Lcom/panasonic/avc/cng/model/service/f/d$a;->b:Z
+    iget-boolean v0, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixServiceRunnable;->b:Z
 
     if-eqz v0, :cond_4
 
     .line 577
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/d$a;->a:Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixServiceRunnable;->a:Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;
 
     invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;->f(Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;)Lcom/panasonic/avc/cng/core/a/ModeChangeCommand;
 
@@ -150,7 +150,7 @@
     const/4 v3, -0x1
 
     .line 595
-    iget-object v4, p0, Lcom/panasonic/avc/cng/model/service/f/d$a;->a:Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;
+    iget-object v4, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixServiceRunnable;->a:Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;
 
     invoke-static {v4}, Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;->b(Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;)Lcom/panasonic/avc/cng/model/service/k$a;
 
@@ -159,7 +159,7 @@
     if-eqz v4, :cond_1
 
     .line 598
-    iget-object v4, p0, Lcom/panasonic/avc/cng/model/service/f/d$a;->a:Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;
+    iget-object v4, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixServiceRunnable;->a:Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;
 
     invoke-static {v4}, Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;->b(Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;)Lcom/panasonic/avc/cng/model/service/k$a;
 
@@ -169,7 +169,7 @@
 
     .line 602
     :cond_1
-    iget-object v4, p0, Lcom/panasonic/avc/cng/model/service/f/d$a;->a:Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;
+    iget-object v4, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixServiceRunnable;->a:Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;
 
     int-to-long v10, v8
 
@@ -257,7 +257,7 @@
     if-eqz v0, :cond_6
 
     .line 643
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/d$a;->a:Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixServiceRunnable;->a:Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;
 
     invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;->b(Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;)Lcom/panasonic/avc/cng/model/service/k$a;
 
@@ -266,7 +266,7 @@
     if-eqz v0, :cond_3
 
     .line 645
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/d$a;->a:Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixServiceRunnable;->a:Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;
 
     invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;->b(Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;)Lcom/panasonic/avc/cng/model/service/k$a;
 
@@ -284,7 +284,7 @@
 
     .line 582
     :cond_4
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/d$a;->a:Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixServiceRunnable;->a:Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;
 
     invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;->f(Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;)Lcom/panasonic/avc/cng/core/a/ModeChangeCommand;
 
@@ -298,7 +298,7 @@
 
     .line 634
     :cond_5
-    iget-object v3, p0, Lcom/panasonic/avc/cng/model/service/f/d$a;->a:Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;
+    iget-object v3, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixServiceRunnable;->a:Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;
 
     int-to-long v10, v8
 
@@ -316,7 +316,7 @@
 
     .line 650
     :cond_6
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/d$a;->a:Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixServiceRunnable;->a:Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;
 
     invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;->b(Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;)Lcom/panasonic/avc/cng/model/service/k$a;
 
@@ -325,7 +325,7 @@
     if-eqz v0, :cond_7
 
     .line 653
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/d$a;->a:Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixServiceRunnable;->a:Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;
 
     invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;->b(Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;)Lcom/panasonic/avc/cng/model/service/k$a;
 
@@ -336,7 +336,7 @@
     .line 670
     :cond_7
     :goto_5
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/d$a;->a:Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixServiceRunnable;->a:Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;
 
     invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;->b(Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;)Lcom/panasonic/avc/cng/model/service/k$a;
 
@@ -345,7 +345,7 @@
     if-eqz v0, :cond_8
 
     .line 673
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/d$a;->a:Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixServiceRunnable;->a:Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;
 
     invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;->b(Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;)Lcom/panasonic/avc/cng/model/service/k$a;
 
@@ -371,7 +371,7 @@
     if-eqz v3, :cond_a
 
     .line 660
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/d$a;->a:Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixServiceRunnable;->a:Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;
 
     invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;->b(Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;)Lcom/panasonic/avc/cng/model/service/k$a;
 
@@ -401,7 +401,7 @@
     if-nez v3, :cond_7
 
     .line 665
-    iget-object v2, p0, Lcom/panasonic/avc/cng/model/service/f/d$a;->a:Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixServiceRunnable;->a:Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;
 
     invoke-virtual {v2, v0}, Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;->a(Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;)V
 
@@ -453,12 +453,12 @@
 
     .line 419
     :try_start_1
-    iget-boolean v0, p0, Lcom/panasonic/avc/cng/model/service/f/d$a;->c:Z
+    iget-boolean v0, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixServiceRunnable;->c:Z
 
     if-eqz v0, :cond_0
 
     .line 421
-    invoke-direct {p0}, Lcom/panasonic/avc/cng/model/service/f/d$a;->a()Z
+    invoke-direct {p0}, Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixServiceRunnable;->a()Z
 
     move-result v0
 
@@ -491,7 +491,7 @@
     .line 430
     :cond_0
     :try_start_2
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/d$a;->a:Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixServiceRunnable;->a:Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;
 
     invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;->a(Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;)Lcom/panasonic/avc/cng/core/a/LiveViewCommand;
 
@@ -515,7 +515,7 @@
     if-nez v1, :cond_2
 
     .line 435
-    iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/f/d$a;->a:Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixServiceRunnable;->a:Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;
 
     invoke-virtual {v1, v0}, Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;->a(Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;)V
 
@@ -549,7 +549,7 @@
     .line 442
     :cond_2
     :try_start_3
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/d$a;->a:Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixServiceRunnable;->a:Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;
 
     invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;->b(Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;)Lcom/panasonic/avc/cng/model/service/k$a;
 
@@ -558,7 +558,7 @@
     if-eqz v0, :cond_3
 
     .line 444
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/d$a;->a:Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixServiceRunnable;->a:Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;
 
     invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;->b(Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;)Lcom/panasonic/avc/cng/model/service/k$a;
 
@@ -568,7 +568,7 @@
 
     .line 448
     :cond_3
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/d$a;->a:Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixServiceRunnable;->a:Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;
 
     invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;->b(Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;)Lcom/panasonic/avc/cng/model/service/k$a;
 
@@ -577,7 +577,7 @@
     if-eqz v0, :cond_4
 
     .line 450
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/d$a;->a:Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixServiceRunnable;->a:Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;
 
     invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;->b(Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;)Lcom/panasonic/avc/cng/model/service/k$a;
 
@@ -593,7 +593,7 @@
     .line 457
     :cond_5
     :goto_2
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/d$a;->a:Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixServiceRunnable;->a:Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;
 
     invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;->c(Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;)Z
 
@@ -602,7 +602,7 @@
     if-eqz v0, :cond_6
 
     .line 532
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/d$a;->a:Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixServiceRunnable;->a:Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;
 
     invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;->e(Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;)Z
 
@@ -621,7 +621,7 @@
 
     .line 537
     :try_start_4
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/d$a;->a:Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixServiceRunnable;->a:Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;
 
     invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;->a(Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;)Lcom/panasonic/avc/cng/core/a/LiveViewCommand;
 
@@ -657,7 +657,7 @@
     const-wide/16 v4, 0x1
 
     .line 468
-    iget-object v9, p0, Lcom/panasonic/avc/cng/model/service/f/d$a;->a:Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;
+    iget-object v9, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixServiceRunnable;->a:Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;
 
     invoke-static {v9}, Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;->d(Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;)Z
 
@@ -670,7 +670,7 @@
     .line 514
     :cond_7
     :goto_3
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/d$a;->a:Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixServiceRunnable;->a:Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;
 
     invoke-virtual {v0, v4, v5}, Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;->a(J)V
     :try_end_6
@@ -693,7 +693,7 @@
     invoke-static {v4, v0}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 520
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/d$a;->a:Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixServiceRunnable;->a:Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;
 
     invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;->b(Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;)Lcom/panasonic/avc/cng/model/service/k$a;
 
@@ -701,7 +701,7 @@
 
     if-eqz v0, :cond_5
 
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/d$a;->a:Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixServiceRunnable;->a:Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;
 
     invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;->c(Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;)Z
 
@@ -710,7 +710,7 @@
     if-nez v0, :cond_5
 
     .line 522
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/d$a;->a:Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixServiceRunnable;->a:Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;
 
     invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;->b(Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;)Lcom/panasonic/avc/cng/model/service/k$a;
 
@@ -749,7 +749,7 @@
     .line 494
     :cond_a
     :goto_4
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/d$a;->a:Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixServiceRunnable;->a:Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;
 
     invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;->b(Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;)Lcom/panasonic/avc/cng/model/service/k$a;
 
@@ -757,7 +757,7 @@
 
     if-eqz v0, :cond_b
 
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/d$a;->a:Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixServiceRunnable;->a:Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;
 
     invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;->c(Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;)Z
 
@@ -766,7 +766,7 @@
     if-nez v0, :cond_b
 
     .line 496
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/d$a;->a:Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixServiceRunnable;->a:Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;
 
     invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;->b(Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;)Lcom/panasonic/avc/cng/model/service/k$a;
 
@@ -777,7 +777,7 @@
     invoke-interface {v0, v10}, Lcom/panasonic/avc/cng/model/service/k$a;->a(I)V
 
     .line 498
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/d$a;->a:Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixServiceRunnable;->a:Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;
 
     invoke-virtual {v0, v9}, Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;->a(Lcom/panasonic/avc/cng/core/a/at;)V
 

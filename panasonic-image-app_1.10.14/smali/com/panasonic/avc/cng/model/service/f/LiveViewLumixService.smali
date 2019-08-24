@@ -9,7 +9,7 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/panasonic/avc/cng/model/service/f/d$a;
+        Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixServiceRunnable;
     }
 .end annotation
 
@@ -336,9 +336,9 @@
     .line 115
     new-instance v0, Ljava/lang/Thread;
 
-    new-instance v1, Lcom/panasonic/avc/cng/model/service/f/d$a;
+    new-instance v1, Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixServiceRunnable;
 
-    invoke-direct {v1, p0, p2, p3}, Lcom/panasonic/avc/cng/model/service/f/d$a;-><init>(Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;ZZ)V
+    invoke-direct {v1, p0, p2, p3}, Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixServiceRunnable;-><init>(Lcom/panasonic/avc/cng/model/service/f/LiveViewLumixService;ZZ)V
 
     invoke-direct {v0, v1}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;)V
 

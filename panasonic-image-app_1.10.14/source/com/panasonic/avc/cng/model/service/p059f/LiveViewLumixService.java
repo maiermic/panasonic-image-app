@@ -57,7 +57,7 @@ public class LiveViewLumixService implements C2176k {
     private SoftReference<byte[]> f6345j;
 
     /* renamed from: com.panasonic.avc.cng.model.service.f.d$a */
-    private class C2055a implements Runnable {
+    private class LiveViewLumixServiceRunnable implements Runnable {
 
         /* renamed from: b */
         private boolean f6347b;
@@ -65,7 +65,7 @@ public class LiveViewLumixService implements C2176k {
         /* renamed from: c */
         private boolean f6348c;
 
-        public C2055a(boolean z, boolean z2) {
+        public LiveViewLumixServiceRunnable(boolean z, boolean z2) {
             this.f6347b = z;
             this.f6348c = z2;
         }
@@ -330,7 +330,7 @@ public class LiveViewLumixService implements C2176k {
         if (this.f6336a != null && this.f6337b != null && this.f6338c != null && this.f6339d != null) {
             this.f6338c.mo5355a();
             this.f6339d.mo5361a(aVar);
-            this.f6341f = new Thread(new C2055a(z, z2));
+            this.f6341f = new Thread(new LiveViewLumixServiceRunnable(z, z2));
             this.f6341f.start();
             mo5370g();
         }
