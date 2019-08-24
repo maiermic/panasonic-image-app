@@ -61,7 +61,7 @@
 
 
 # virtual methods
-.method public a(Lcom/panasonic/avc/cng/core/a/at$d;)V
+.method public assign(Lcom/panasonic/avc/cng/core/a/at$d;)V
     .locals 1
 
     .prologue

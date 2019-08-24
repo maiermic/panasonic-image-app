@@ -144,25 +144,25 @@ public class C1473at {
         /* renamed from: b */
         public boolean mo3583b(C1476c cVar) {
             if (this.f3999e != null && cVar.f3996b != null) {
-                this.f3999e.mo3585a(cVar.f3996b);
+                this.f3999e.assign(cVar.f3996b);
                 cVar.f3999e = this.f3999e;
                 cVar.f3996b = null;
                 cVar.f3995a = this.f3995a;
                 return true;
             } else if (this.f4000f != null && cVar.f3996b != null) {
-                this.f4000f.mo3585a(cVar.f3996b);
+                this.f4000f.assign(cVar.f3996b);
                 cVar.f4000f = this.f4000f;
                 cVar.f3996b = null;
                 cVar.f3995a = this.f3995a;
                 return true;
             } else if (this.f4001g != null && cVar.f3996b != null) {
-                this.f4001g.mo3585a(cVar.f3996b);
+                this.f4001g.assign(cVar.f3996b);
                 cVar.f4001g = this.f4001g;
                 cVar.f3996b = null;
                 cVar.f3995a = this.f3995a;
                 return true;
             } else if (this.f4003i != null && cVar.f3996b != null) {
-                this.f4003i.mo3585a(cVar.f3996b);
+                this.f4003i.assign(cVar.f3996b);
                 cVar.f4003i = this.f4003i;
                 cVar.f3996b = null;
                 cVar.f3995a = this.f3995a;
@@ -170,7 +170,7 @@ public class C1473at {
             } else if (this.f4005k == null || cVar.f3996b == null) {
                 return false;
             } else {
-                this.f4005k.mo3585a(cVar.f3996b);
+                this.f4005k.assign(cVar.f3996b);
                 cVar.f4005k = this.f4005k;
                 cVar.f3996b = null;
                 cVar.f3995a = this.f3995a;
@@ -244,7 +244,7 @@ public class C1473at {
         }
 
         /* renamed from: a */
-        public void mo3585a(C1477d dVar) {
+        public void assign(C1477d dVar) {
             this.zoomRatio = dVar.zoomRatio;
             this.f4008b = dVar.f4008b;
             this.f4009c = dVar.f4009c;

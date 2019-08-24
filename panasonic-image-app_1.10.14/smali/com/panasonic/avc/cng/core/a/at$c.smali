@@ -130,7 +130,7 @@
 
     iget-object v2, p1, Lcom/panasonic/avc/cng/core/a/at$c;->b:Lcom/panasonic/avc/cng/core/a/at$d;
 
-    invoke-virtual {v1, v2}, Lcom/panasonic/avc/cng/core/a/at$g;->a(Lcom/panasonic/avc/cng/core/a/at$d;)V
+    invoke-virtual {v1, v2}, Lcom/panasonic/avc/cng/core/a/at$g;->assign(Lcom/panasonic/avc/cng/core/a/at$d;)V
 
     .line 212
     iget-object v1, p0, Lcom/panasonic/avc/cng/core/a/at$c;->e:Lcom/panasonic/avc/cng/core/a/at$g;
@@ -164,7 +164,7 @@
 
     iget-object v2, p1, Lcom/panasonic/avc/cng/core/a/at$c;->b:Lcom/panasonic/avc/cng/core/a/at$d;
 
-    invoke-virtual {v1, v2}, Lcom/panasonic/avc/cng/core/a/at$h;->a(Lcom/panasonic/avc/cng/core/a/at$d;)V
+    invoke-virtual {v1, v2}, Lcom/panasonic/avc/cng/core/a/at$h;->assign(Lcom/panasonic/avc/cng/core/a/at$d;)V
 
     .line 224
     iget-object v1, p0, Lcom/panasonic/avc/cng/core/a/at$c;->f:Lcom/panasonic/avc/cng/core/a/at$h;
@@ -196,7 +196,7 @@
 
     iget-object v2, p1, Lcom/panasonic/avc/cng/core/a/at$c;->b:Lcom/panasonic/avc/cng/core/a/at$d;
 
-    invoke-virtual {v1, v2}, Lcom/panasonic/avc/cng/core/a/at$i;->a(Lcom/panasonic/avc/cng/core/a/at$d;)V
+    invoke-virtual {v1, v2}, Lcom/panasonic/avc/cng/core/a/at$i;->assign(Lcom/panasonic/avc/cng/core/a/at$d;)V
 
     .line 236
     iget-object v1, p0, Lcom/panasonic/avc/cng/core/a/at$c;->g:Lcom/panasonic/avc/cng/core/a/at$i;
@@ -228,7 +228,7 @@
 
     iget-object v2, p1, Lcom/panasonic/avc/cng/core/a/at$c;->b:Lcom/panasonic/avc/cng/core/a/at$d;
 
-    invoke-virtual {v1, v2}, Lcom/panasonic/avc/cng/core/a/at$k;->a(Lcom/panasonic/avc/cng/core/a/at$d;)V
+    invoke-virtual {v1, v2}, Lcom/panasonic/avc/cng/core/a/at$k;->assign(Lcom/panasonic/avc/cng/core/a/at$d;)V
 
     .line 248
     iget-object v1, p0, Lcom/panasonic/avc/cng/core/a/at$c;->i:Lcom/panasonic/avc/cng/core/a/at$k;
@@ -260,7 +260,7 @@
 
     iget-object v2, p1, Lcom/panasonic/avc/cng/core/a/at$c;->b:Lcom/panasonic/avc/cng/core/a/at$d;
 
-    invoke-virtual {v1, v2}, Lcom/panasonic/avc/cng/core/a/at$m;->a(Lcom/panasonic/avc/cng/core/a/at$d;)V
+    invoke-virtual {v1, v2}, Lcom/panasonic/avc/cng/core/a/at$m;->assign(Lcom/panasonic/avc/cng/core/a/at$d;)V
 
     .line 260
     iget-object v1, p0, Lcom/panasonic/avc/cng/core/a/at$c;->k:Lcom/panasonic/avc/cng/core/a/at$m;
