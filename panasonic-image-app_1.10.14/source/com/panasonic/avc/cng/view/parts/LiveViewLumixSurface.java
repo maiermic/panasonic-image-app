@@ -324,7 +324,7 @@ public class LiveViewLumixSurface extends SurfaceView implements Callback {
                         });
                     }
                     LiveViewLumixSurface.this.f13096x = true;
-                    LiveViewLumixSurface.this.zoomRatio = fVar.f5758c.f5717a;
+                    LiveViewLumixSurface.this.zoomRatio = fVar.f5758c.zoomRatio;
                     short s = fVar.f5758c.f5718b;
                     if (!fVar.f5761f.f5731e) {
                         LiveViewLumixSurface.this.f12994L = fVar.f5758c.f5724h;

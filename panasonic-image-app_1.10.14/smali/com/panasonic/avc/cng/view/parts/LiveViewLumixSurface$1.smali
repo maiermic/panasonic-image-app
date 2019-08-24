@@ -102,7 +102,7 @@
 
     iget-object v3, p1, Lcom/panasonic/avc/cng/model/j$f;->c:Lcom/panasonic/avc/cng/model/j$b;
 
-    iget-short v3, v3, Lcom/panasonic/avc/cng/model/j$b;->a:S
+    iget-short v3, v3, Lcom/panasonic/avc/cng/model/j$b;->zoomRatio:S
 
     invoke-static {v2, v3}, Lcom/panasonic/avc/cng/view/parts/LiveViewLumixSurface;->a(Lcom/panasonic/avc/cng/view/parts/LiveViewLumixSurface;I)I
 

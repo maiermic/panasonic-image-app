@@ -388,8 +388,8 @@ public class LiveViewSurface extends SurfaceView implements Callback {
                     }
                 }
             }
-            if (this.f13172b.f5717a != -1) {
-                canvas.drawText(String.format("%.1f" + this.f13183m, new Object[]{Double.valueOf(((double) this.f13172b.f5717a) * 0.1d)}), (float) (this.f13178h.right + this.f13186p), (float) this.f13178h.bottom, this.f13182l);
+            if (this.f13172b.zoomRatio != -1) {
+                canvas.drawText(String.format("%.1f" + this.f13183m, new Object[]{Double.valueOf(((double) this.f13172b.zoomRatio) * 0.1d)}), (float) (this.f13178h.right + this.f13186p), (float) this.f13178h.bottom, this.f13182l);
             }
             if (this.f13172b.f5718b != -1) {
                 canvas.drawRect(this.f13178h, this.f13179i);
@@ -415,8 +415,8 @@ public class LiveViewSurface extends SurfaceView implements Callback {
                     }
                 }
             }
-            if (this.f13172b.f5717a != -1) {
-                canvas.drawText(String.format("%.1f" + this.f13183m, new Object[]{Double.valueOf(((double) this.f13172b.f5717a) * 0.1d)}), (float) (this.f13178h.right + this.f13186p), (float) this.f13178h.bottom, this.f13182l);
+            if (this.f13172b.zoomRatio != -1) {
+                canvas.drawText(String.format("%.1f" + this.f13183m, new Object[]{Double.valueOf(((double) this.f13172b.zoomRatio) * 0.1d)}), (float) (this.f13178h.right + this.f13186p), (float) this.f13178h.bottom, this.f13182l);
             }
         }
 

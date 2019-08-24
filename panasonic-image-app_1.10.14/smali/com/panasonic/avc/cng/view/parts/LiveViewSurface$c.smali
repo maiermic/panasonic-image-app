@@ -506,7 +506,7 @@
     :cond_1
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/LiveViewSurface$c;->b:Lcom/panasonic/avc/cng/model/j$b;
 
-    iget-short v0, v0, Lcom/panasonic/avc/cng/model/j$b;->a:S
+    iget-short v0, v0, Lcom/panasonic/avc/cng/model/j$b;->zoomRatio:S
 
     if-eq v0, v8, :cond_2
 
@@ -539,7 +539,7 @@
 
     iget-object v3, p0, Lcom/panasonic/avc/cng/view/parts/LiveViewSurface$c;->b:Lcom/panasonic/avc/cng/model/j$b;
 
-    iget-short v3, v3, Lcom/panasonic/avc/cng/model/j$b;->a:S
+    iget-short v3, v3, Lcom/panasonic/avc/cng/model/j$b;->zoomRatio:S
 
     int-to-double v4, v3
 
@@ -1041,7 +1041,7 @@
     :cond_2
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/LiveViewSurface$c;->b:Lcom/panasonic/avc/cng/model/j$b;
 
-    iget-short v0, v0, Lcom/panasonic/avc/cng/model/j$b;->a:S
+    iget-short v0, v0, Lcom/panasonic/avc/cng/model/j$b;->zoomRatio:S
 
     if-eq v0, v8, :cond_3
 
@@ -1074,7 +1074,7 @@
 
     iget-object v3, p0, Lcom/panasonic/avc/cng/view/parts/LiveViewSurface$c;->b:Lcom/panasonic/avc/cng/model/j$b;
 
-    iget-short v3, v3, Lcom/panasonic/avc/cng/model/j$b;->a:S
+    iget-short v3, v3, Lcom/panasonic/avc/cng/model/j$b;->zoomRatio:S
 
     int-to-double v4, v3
 

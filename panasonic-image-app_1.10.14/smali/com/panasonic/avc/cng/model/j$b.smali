@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public a:S
+.field public zoomRatio:S
 
 .field public b:S
 
@@ -60,7 +60,7 @@
 
     iget-short v0, v0, Lcom/panasonic/avc/cng/core/a/at$e;->a:S
 
-    iput-short v0, p0, Lcom/panasonic/avc/cng/model/j$b;->a:S
+    iput-short v0, p0, Lcom/panasonic/avc/cng/model/j$b;->zoomRatio:S
 
     .line 1078
     iget-object v0, p2, Lcom/panasonic/avc/cng/core/a/at$c;->c:Lcom/panasonic/avc/cng/core/a/at$e;
@@ -243,7 +243,7 @@
 
     iget-short v0, v0, Lcom/panasonic/avc/cng/core/a/at$d;->a:S
 
-    iput-short v0, p0, Lcom/panasonic/avc/cng/model/j$b;->a:S
+    iput-short v0, p0, Lcom/panasonic/avc/cng/model/j$b;->zoomRatio:S
 
     .line 1090
     iget-object v0, p2, Lcom/panasonic/avc/cng/core/a/at$c;->b:Lcom/panasonic/avc/cng/core/a/at$d;
@@ -318,7 +318,7 @@
 
     iget-short v0, v0, Lcom/panasonic/avc/cng/core/a/at$g;->a:S
 
-    iput-short v0, p0, Lcom/panasonic/avc/cng/model/j$b;->a:S
+    iput-short v0, p0, Lcom/panasonic/avc/cng/model/j$b;->zoomRatio:S
 
     .line 1102
     iget-object v0, p2, Lcom/panasonic/avc/cng/core/a/at$c;->e:Lcom/panasonic/avc/cng/core/a/at$g;
@@ -401,7 +401,7 @@
 
     iget-short v0, v0, Lcom/panasonic/avc/cng/core/a/at$h;->a:S
 
-    iput-short v0, p0, Lcom/panasonic/avc/cng/model/j$b;->a:S
+    iput-short v0, p0, Lcom/panasonic/avc/cng/model/j$b;->zoomRatio:S
 
     .line 1114
     iget-object v0, p2, Lcom/panasonic/avc/cng/core/a/at$c;->f:Lcom/panasonic/avc/cng/core/a/at$h;
@@ -484,7 +484,7 @@
 
     iget-short v0, v0, Lcom/panasonic/avc/cng/core/a/at$i;->a:S
 
-    iput-short v0, p0, Lcom/panasonic/avc/cng/model/j$b;->a:S
+    iput-short v0, p0, Lcom/panasonic/avc/cng/model/j$b;->zoomRatio:S
 
     .line 1126
     iget-object v0, p2, Lcom/panasonic/avc/cng/core/a/at$c;->g:Lcom/panasonic/avc/cng/core/a/at$i;
@@ -567,7 +567,7 @@
 
     iget-short v0, v0, Lcom/panasonic/avc/cng/core/a/at$k;->a:S
 
-    iput-short v0, p0, Lcom/panasonic/avc/cng/model/j$b;->a:S
+    iput-short v0, p0, Lcom/panasonic/avc/cng/model/j$b;->zoomRatio:S
 
     .line 1138
     iget-object v0, p2, Lcom/panasonic/avc/cng/core/a/at$c;->i:Lcom/panasonic/avc/cng/core/a/at$k;
@@ -650,7 +650,7 @@
 
     iget-short v0, v0, Lcom/panasonic/avc/cng/core/a/at$l;->a:S
 
-    iput-short v0, p0, Lcom/panasonic/avc/cng/model/j$b;->a:S
+    iput-short v0, p0, Lcom/panasonic/avc/cng/model/j$b;->zoomRatio:S
 
     .line 1150
     iget-object v0, p2, Lcom/panasonic/avc/cng/core/a/at$c;->j:Lcom/panasonic/avc/cng/core/a/at$l;
@@ -725,7 +725,7 @@
 
     iget-short v0, v0, Lcom/panasonic/avc/cng/core/a/at$m;->a:S
 
-    iput-short v0, p0, Lcom/panasonic/avc/cng/model/j$b;->a:S
+    iput-short v0, p0, Lcom/panasonic/avc/cng/model/j$b;->zoomRatio:S
 
     .line 1162
     iget-object v0, p2, Lcom/panasonic/avc/cng/core/a/at$c;->k:Lcom/panasonic/avc/cng/core/a/at$m;
@@ -799,7 +799,7 @@
 
     .line 1173
     :cond_f
-    iput-short v2, p0, Lcom/panasonic/avc/cng/model/j$b;->a:S
+    iput-short v2, p0, Lcom/panasonic/avc/cng/model/j$b;->zoomRatio:S
 
     .line 1174
     iput-short v2, p0, Lcom/panasonic/avc/cng/model/j$b;->b:S
