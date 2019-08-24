@@ -87,7 +87,7 @@ public class LiveViewLumixSurface extends SurfaceView implements Callback {
     /* access modifiers changed from: private */
 
     /* renamed from: K */
-    public int f12993K;
+    public int zoomRatio;
     /* access modifiers changed from: private */
 
     /* renamed from: L */
@@ -324,7 +324,7 @@ public class LiveViewLumixSurface extends SurfaceView implements Callback {
                         });
                     }
                     LiveViewLumixSurface.this.f13096x = true;
-                    LiveViewLumixSurface.this.f12993K = fVar.f5758c.f5717a;
+                    LiveViewLumixSurface.this.zoomRatio = fVar.f5758c.f5717a;
                     short s = fVar.f5758c.f5718b;
                     if (!fVar.f5761f.f5731e) {
                         LiveViewLumixSurface.this.f12994L = fVar.f5758c.f5724h;
@@ -749,7 +749,7 @@ public class LiveViewLumixSurface extends SurfaceView implements Callback {
     }
 
     public int get_zoomRatio() {
-        return this.f12993K;
+        return this.zoomRatio;
     }
 
     public int get__crntFocalDist() {
@@ -892,7 +892,7 @@ public class LiveViewLumixSurface extends SurfaceView implements Callback {
         this.f12990H[3] = 3;
         this.f12991I = 0;
         setZoomRatioPos(this.f12991I);
-        this.f12993K = 10;
+        this.zoomRatio = 10;
         m15817g();
     }
 

@@ -42,7 +42,7 @@
 
 .field private J:F
 
-.field private K:I
+.field private zoomRatio:I
 
 .field private L:I
 
@@ -1805,7 +1805,7 @@
 
     .prologue
     .line 60
-    iput p1, p0, Lcom/panasonic/avc/cng/view/parts/LiveViewLumixSurface;->K:I
+    iput p1, p0, Lcom/panasonic/avc/cng/view/parts/LiveViewLumixSurface;->zoomRatio:I
 
     return p1
 .end method
@@ -18250,7 +18250,7 @@
 
     .prologue
     .line 229
-    iget v0, p0, Lcom/panasonic/avc/cng/view/parts/LiveViewLumixSurface;->K:I
+    iget v0, p0, Lcom/panasonic/avc/cng/view/parts/LiveViewLumixSurface;->zoomRatio:I
 
     return v0
 .end method
@@ -19486,7 +19486,7 @@
     .line 1084
     const/16 v0, 0xa
 
-    iput v0, p0, Lcom/panasonic/avc/cng/view/parts/LiveViewLumixSurface;->K:I
+    iput v0, p0, Lcom/panasonic/avc/cng/view/parts/LiveViewLumixSurface;->zoomRatio:I
 
     .line 1088
     invoke-direct {p0}, Lcom/panasonic/avc/cng/view/parts/LiveViewLumixSurface;->g()V
