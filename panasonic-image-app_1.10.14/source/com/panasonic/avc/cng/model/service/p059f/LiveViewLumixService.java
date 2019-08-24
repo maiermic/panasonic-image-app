@@ -71,15 +71,15 @@ public class LiveViewLumixService implements C2176k {
         }
 
         public void run() {
-            LiveViewUdpPort gVar = new LiveViewUdpPort();
+            LiveViewUdpPort liveViewUdpPort = new LiveViewUdpPort();
             try {
-                gVar.connect();
+                liveViewUdpPort.connect();
                 try {
                     if (!this.f6348c || m8519a()) {
-                        ParseTagHighlightSceneInfo a = LiveViewLumixService.this.f6336a.mo3789a(gVar.getPort(), 5);
+                        ParseTagHighlightSceneInfo a = LiveViewLumixService.this.f6336a.mo3789a(liveViewUdpPort.getPort(), 5);
                         if (!a.mo4771a()) {
                             LiveViewLumixService.this.mo5366a(a);
-                            gVar.close();
+                            liveViewUdpPort.close();
                             return;
                         }
                         if (LiveViewLumixService.this.f6340e != null) {
@@ -91,7 +91,7 @@ public class LiveViewLumixService implements C2176k {
                         C1476c cVar = null;
                         while (!LiveViewLumixService.this.f6342g) {
                             try {
-                                byte[] c = gVar.receiveData();
+                                byte[] c = liveViewUdpPort.receiveData();
                                 long j = 1;
                                 if (LiveViewLumixService.this.f6344i) {
                                     j = 100;
@@ -124,10 +124,10 @@ public class LiveViewLumixService implements C2176k {
                                 LiveViewLumixService.this.f6336a.mo3792b(5);
                             }
                         }
-                        gVar.close();
+                        liveViewUdpPort.close();
                         return;
                     }
-                    gVar.close();
+                    liveViewUdpPort.close();
                 } catch (Exception e2) {
                     ImageAppLog.error("LiveViewLumixService", e2.toString());
                 }
