@@ -38,8 +38,8 @@ import android.support.p000v4.p001a.C0013ac.C0018d;
 import android.util.Base64;
 import android.util.Log;
 import android.util.Xml;
-import com.panasonic.avc.cng.core.p040a.C1450al;
-import com.panasonic.avc.cng.core.p040a.C1468ao;
+import com.panasonic.avc.cng.core.p040a.StaticHttpCommand;
+import com.panasonic.avc.cng.core.p040a.StatusCommand;
 import com.panasonic.avc.cng.core.p040a.C1501d;
 import com.panasonic.avc.cng.core.p046c.C1686t;
 import com.panasonic.avc.cng.imageapp.C1701a.C1702a;
@@ -48,10 +48,10 @@ import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.C1892f;
 import com.panasonic.avc.cng.model.C1910l;
-import com.panasonic.avc.cng.model.p051c.C1846e;
+import com.panasonic.avc.cng.model.p051c.CameraStatus;
 import com.panasonic.avc.cng.model.p051c.C1847f;
 import com.panasonic.avc.cng.model.p051c.C1848g;
-import com.panasonic.avc.cng.model.p051c.C1853h;
+import com.panasonic.avc.cng.model.p051c.ParseTagHighlightSceneInfo;
 import com.panasonic.avc.cng.model.p051c.C1865q.C1866a;
 import com.panasonic.avc.cng.model.p051c.C1865q.C1867b;
 import com.panasonic.avc.cng.model.service.C2028e;
@@ -60,17 +60,17 @@ import com.panasonic.avc.cng.model.service.C2137j.C2138a;
 import com.panasonic.avc.cng.model.service.C2137j.C2139b;
 import com.panasonic.avc.cng.model.service.C2137j.C2140c;
 import com.panasonic.avc.cng.model.service.C2137j.C2141d;
-import com.panasonic.avc.cng.model.service.C2253z;
-import com.panasonic.avc.cng.model.service.geotagservice.C2077c;
-import com.panasonic.avc.cng.model.service.p054a.C1925a;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
+import com.panasonic.avc.cng.model.service.geotagservice.GeotagLogRecord;
+import com.panasonic.avc.cng.model.service.p054a.BrowseMenuService;
 import com.panasonic.avc.cng.model.service.p054a.C1932b;
 import com.panasonic.avc.cng.model.service.p056c.C2020c;
-import com.panasonic.avc.cng.model.service.p069p.C2211a;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.model.service.p069p.WifiService;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.util.C2266l;
 import com.panasonic.avc.cng.view.bluetooth.BluetoothCloudBackupActivity;
 import com.panasonic.avc.cng.view.cameraconnect.C2649a;
-import com.panasonic.avc.cng.view.cameraconnect.C2754l;
+import com.panasonic.avc.cng.view.cameraconnect.WifiUtil;
 import com.panasonic.avc.cng.view.cameraconnect.GuidanceMenuActivity;
 import com.panasonic.avc.cng.view.parts.C4244s;
 import java.io.StringReader;
@@ -94,7 +94,7 @@ public class ImageAppTotalService extends Service implements LeScanCallback, Lis
     /* access modifiers changed from: private */
 
     /* renamed from: A */
-    public C1468ao f6524A = null;
+    public StatusCommand f6524A = null;
     /* access modifiers changed from: private */
 
     /* renamed from: B */
@@ -184,10 +184,10 @@ public class ImageAppTotalService extends Service implements LeScanCallback, Lis
     /* renamed from: Y */
     private final BluetoothGattCallback f6548Y = new BluetoothGattCallback() {
         public void onConnectionStateChange(BluetoothGatt bluetoothGatt, int i, int i2) {
-            C2261g.m9769c("ImageAppTotalService", "onConnectionStateChange");
-            C2261g.m9769c("ImageAppTotalService", "status:" + i);
-            C2261g.m9769c("ImageAppTotalService", "newState:" + i2);
-            C2261g.m9769c("ImageAppTotalService", "_isBTConnectTimeout:" + ImageAppTotalService.this.f6538O);
+            ImageAppLog.error("ImageAppTotalService", "onConnectionStateChange");
+            ImageAppLog.error("ImageAppTotalService", "status:" + i);
+            ImageAppLog.error("ImageAppTotalService", "newState:" + i2);
+            ImageAppLog.error("ImageAppTotalService", "_isBTConnectTimeout:" + ImageAppTotalService.this.f6538O);
             if (ImageAppTotalService.this.f6538O) {
                 ImageAppTotalService.this.f6537N = false;
                 ImageAppTotalService.this.f6538O = false;
@@ -240,7 +240,7 @@ public class ImageAppTotalService extends Service implements LeScanCallback, Lis
                     ImageAppTotalService.this.mo5559b(false);
                     if (ImageAppTotalService.this.f6558h == null) {
                         boolean z = PreferenceManager.getDefaultSharedPreferences(ImageAppTotalService.this.getApplicationContext()).getBoolean("BTScanStart", false);
-                        C2261g.m9769c("ImageAppTotalService", "isStartBTScan:" + z);
+                        ImageAppLog.error("ImageAppTotalService", "isStartBTScan:" + z);
                         if (z) {
                             ImageAppTotalService.this.mo5546a(3000);
                         }
@@ -266,7 +266,7 @@ public class ImageAppTotalService extends Service implements LeScanCallback, Lis
         }
 
         public void onServicesDiscovered(BluetoothGatt bluetoothGatt, int i) {
-            C2261g.m9769c("ImageAppTotalService", "onServicesDiscovered");
+            ImageAppLog.error("ImageAppTotalService", "onServicesDiscovered");
             ImageAppTotalService.this.mo5555b(10);
             ImageAppTotalService.this.mo5555b(8);
             ImageAppTotalService.this.mo5555b(30);
@@ -278,7 +278,7 @@ public class ImageAppTotalService extends Service implements LeScanCallback, Lis
             ImageAppTotalService.this.mo5555b(32);
             ImageAppTotalService.this.mo5555b(33);
             String b = ImageAppTotalService.this.mo5555b(40);
-            C2261g.m9769c("ImageAppTotalService", "ret:" + b);
+            ImageAppLog.error("ImageAppTotalService", "ret:" + b);
             ImageAppTotalService.this.f6557g = true;
             if (ImageAppTotalService.this.f6576z && ImageAppTotalService.this.f6563m == C4244s.f14193c) {
                 ImageAppTotalService.this.mo5545a(1, C2266l.m9808a("4D454930010010008001" + PreferenceManager.getDefaultSharedPreferences(ImageAppTotalService.this.getApplicationContext()).getString("Dlna_UUID_Seed", "")));
@@ -303,14 +303,14 @@ public class ImageAppTotalService extends Service implements LeScanCallback, Lis
         }
 
         public void onCharacteristicRead(BluetoothGatt bluetoothGatt, final BluetoothGattCharacteristic bluetoothGattCharacteristic, final int i) {
-            C2261g.m9763a("ImageAppTotalService", "onCharacteristicRead");
-            C2261g.m9763a("ImageAppTotalService", "status:" + i);
-            C2261g.m9763a("ImageAppTotalService", "characteristic.getUuid():" + bluetoothGattCharacteristic.getUuid());
+            ImageAppLog.debug("ImageAppTotalService", "onCharacteristicRead");
+            ImageAppLog.debug("ImageAppTotalService", "status:" + i);
+            ImageAppLog.debug("ImageAppTotalService", "characteristic.getUuid():" + bluetoothGattCharacteristic.getUuid());
             if (bluetoothGattCharacteristic.getValue() != null && bluetoothGattCharacteristic.getUuid() != null) {
                 UUID uuid = bluetoothGattCharacteristic.getUuid();
                 String[] a = C2266l.m9809a(1, bluetoothGattCharacteristic.getValue());
                 ImageAppTotalService.this.f6544U = a;
-                C2261g.m9763a("ImageAppTotalService", "retStr[0]:" + a[0]);
+                ImageAppLog.debug("ImageAppTotalService", "retStr[0]:" + a[0]);
                 Bundle bundle = new Bundle();
                 PreferenceManager.getDefaultSharedPreferences(ImageAppTotalService.this.getApplicationContext()).getString("CurrentConnectedAddress", "");
                 if (i != 0) {
@@ -357,10 +357,10 @@ public class ImageAppTotalService extends Service implements LeScanCallback, Lis
                                     z = true;
                                 }
                                 Bundle bundle = new Bundle();
-                                C2261g.m9769c("ImageAppTotalService", "isAutoBackupOn:" + z);
-                                C2261g.m9769c("ImageAppTotalService", "_isCurrentMode:" + ImageAppTotalService.this.f6563m);
+                                ImageAppLog.error("ImageAppTotalService", "isAutoBackupOn:" + z);
+                                ImageAppLog.error("ImageAppTotalService", "_isCurrentMode:" + ImageAppTotalService.this.f6563m);
                                 if (ImageAppTotalService.this.f6563m == C4244s.f14193c && z) {
-                                    C2261g.m9769c("ImageAppTotalService", "_isAutoBackUpPreparingOK:" + ImageAppTotalService.this.f6525B);
+                                    ImageAppLog.error("ImageAppTotalService", "_isAutoBackUpPreparingOK:" + ImageAppTotalService.this.f6525B);
                                     if (ImageAppTotalService.this.f6525B) {
                                         String str = "";
                                         String str2 = "";
@@ -368,7 +368,7 @@ public class ImageAppTotalService extends Service implements LeScanCallback, Lis
                                         String i = C2266l.m9846i(ImageAppTotalService.this.getApplicationContext(), string);
                                         String g = C2266l.m9840g(ImageAppTotalService.this.getApplicationContext(), string);
                                         ImageAppTotalService.this.f6564n = C2266l.m9826d(ImageAppTotalService.this.getApplicationContext(), string);
-                                        C2261g.m9769c("ImageAppTotalService", "_targetSSID:" + ImageAppTotalService.this.f6564n);
+                                        ImageAppLog.error("ImageAppTotalService", "_targetSSID:" + ImageAppTotalService.this.f6564n);
                                         if (h != null && !h.equalsIgnoreCase("") && i != null && !i.equalsIgnoreCase("") && g != null && !g.equalsIgnoreCase("")) {
                                             ImageAppTotalService.this.mo5545a(12, C2266l.m9792a(32, ImageAppTotalService.this.f6564n).getBytes());
                                         }
@@ -399,8 +399,8 @@ public class ImageAppTotalService extends Service implements LeScanCallback, Lis
                                     if (runningAppProcessInfo.importance == 100) {
                                         bundle.putByteArray("VALUE", bluetoothGattCharacteristic.getValue());
                                         String className = ((RunningTaskInfo) ((ActivityManager) ImageAppTotalService.this.getApplicationContext().getSystemService("activity")).getRunningTasks(1).get(0)).topActivity.getClassName();
-                                        C2261g.m9769c("ImageAppTotalService", "className:" + className);
-                                        C2261g.m9769c("ImageAppTotalService", "_prevClassName:" + ImageAppTotalService.this.f6535L);
+                                        ImageAppLog.error("ImageAppTotalService", "className:" + className);
+                                        ImageAppLog.error("ImageAppTotalService", "_prevClassName:" + ImageAppTotalService.this.f6535L);
                                         if (className != null) {
                                             if (className.equalsIgnoreCase("com.panasonic.avc.cng.view.liveview.LiveViewLumixGHActivity") || ImageAppTotalService.this.f6535L.equalsIgnoreCase("com.panasonic.avc.cng.view.liveview.LiveViewLumixGHActivity") || className.equalsIgnoreCase("com.panasonic.avc.cng.view.bluetooth.BluetoothCloudBackupActivity") || ImageAppTotalService.this.f6535L.equalsIgnoreCase("com.panasonic.avc.cng.view.bluetooth.BluetoothCloudBackupActivity") || className.equalsIgnoreCase("com.panasonic.avc.cng.view.bluetooth.BluetoothEquipmentSettingActivity") || ImageAppTotalService.this.f6535L.equalsIgnoreCase("com.panasonic.avc.cng.view.bluetooth.BluetoothEquipmentSettingActivity")) {
                                                 if (ImageAppTotalService.this.f6536M) {
@@ -472,9 +472,9 @@ public class ImageAppTotalService extends Service implements LeScanCallback, Lis
             String c;
             String c2;
             String c3;
-            C2261g.m9763a("ImageAppTotalService", "onCharacteristicWrite");
-            C2261g.m9763a("ImageAppTotalService", "status:" + i);
-            C2261g.m9763a("ImageAppTotalService", "characteristic.getUuid():" + bluetoothGattCharacteristic.getUuid());
+            ImageAppLog.debug("ImageAppTotalService", "onCharacteristicWrite");
+            ImageAppLog.debug("ImageAppTotalService", "status:" + i);
+            ImageAppLog.debug("ImageAppTotalService", "characteristic.getUuid():" + bluetoothGattCharacteristic.getUuid());
             ImageAppTotalService.this.f6541R = false;
             if (bluetoothGattCharacteristic.getUuid() != null) {
                 UUID uuid = bluetoothGattCharacteristic.getUuid();
@@ -691,22 +691,22 @@ public class ImageAppTotalService extends Service implements LeScanCallback, Lis
                         ImageAppTotalService.this.f6558h.mo5666a(uuid, i);
                     }
                 } else if (ImageAppTotalService.this.f6563m == C4244s.f14192b) {
-                    C2261g.m9763a("ImageAppTotalService", "_isAutoSendWriteNotFinish:" + ImageAppTotalService.this.f6542S);
+                    ImageAppLog.debug("ImageAppTotalService", "_isAutoSendWriteNotFinish:" + ImageAppTotalService.this.f6542S);
                     if (ImageAppTotalService.this.f6542S) {
-                        WifiInfo b = new C2754l(ImageAppTotalService.this.getApplicationContext()).mo6743b();
+                        WifiInfo b = new WifiUtil(ImageAppTotalService.this.getApplicationContext()).mo6743b();
                         if (b.getIpAddress() == 0) {
-                            C2261g.m9763a("ImageAppTotalService", "SoftAP");
+                            ImageAppLog.debug("ImageAppTotalService", "SoftAP");
                             ImageAppTotalService.this.f6566p = C4244s.f14197g;
-                            C2261g.m9763a("ImageAppTotalService", "writeData:" + ImageAppTotalService.this.mo5545a(11, C4244s.f14197g));
+                            ImageAppLog.debug("ImageAppTotalService", "writeData:" + ImageAppTotalService.this.mo5545a(11, C4244s.f14197g));
                         } else {
-                            C2261g.m9763a("ImageAppTotalService", "STA");
-                            C2261g.m9763a("ImageAppTotalService", "wifiInfo.getSSID():" + b.getSSID());
+                            ImageAppLog.debug("ImageAppTotalService", "STA");
+                            ImageAppLog.debug("ImageAppTotalService", "wifiInfo.getSSID():" + b.getSSID());
                             ImageAppTotalService.this.f6566p = C4244s.f14198h;
                             String ssid = b.getSSID();
                             if (ssid.startsWith("\"") && ssid.endsWith("\"")) {
                                 ssid = ssid.substring(1, ssid.length() - 1);
                             }
-                            C2261g.m9763a("ImageAppTotalService", "writeData:" + ImageAppTotalService.this.mo5545a(12, C2266l.m9792a(32, ssid).getBytes()));
+                            ImageAppLog.debug("ImageAppTotalService", "writeData:" + ImageAppTotalService.this.mo5545a(12, C2266l.m9792a(32, ssid).getBytes()));
                         }
                         ImageAppTotalService.this.f6542S = false;
                     } else if (uuid.equals(UUID.fromString("8d08a420-3213-11e6-8aca-0002a5d5c51b"))) {
@@ -733,8 +733,8 @@ public class ImageAppTotalService extends Service implements LeScanCallback, Lis
                                 if (runningAppProcessInfo.processName.equals(ImageAppTotalService.this.getPackageName())) {
                                     if (runningAppProcessInfo.importance == 100) {
                                         String className2 = ((RunningTaskInfo) ((ActivityManager) ImageAppTotalService.this.getApplicationContext().getSystemService("activity")).getRunningTasks(1).get(0)).topActivity.getClassName();
-                                        C2261g.m9769c("ImageAppTotalService", "className:" + className2);
-                                        C2261g.m9769c("ImageAppTotalService", "_prevClassName:" + ImageAppTotalService.this.f6535L);
+                                        ImageAppLog.error("ImageAppTotalService", "className:" + className2);
+                                        ImageAppLog.error("ImageAppTotalService", "_prevClassName:" + ImageAppTotalService.this.f6535L);
                                         ImageAppTotalService.this.f6535L = className2;
                                         if (className2 != null) {
                                             if (className2.equalsIgnoreCase("com.panasonic.avc.cng.view.liveview.LiveViewLumixGHActivity") || className2.equalsIgnoreCase("com.panasonic.avc.cng.view.bluetooth.BluetoothCloudBackupActivity") || className2.equalsIgnoreCase("com.panasonic.avc.cng.view.bluetooth.BluetoothEquipmentSettingActivity")) {
@@ -772,8 +772,8 @@ public class ImageAppTotalService extends Service implements LeScanCallback, Lis
                                 if (runningAppProcessInfo2.processName.equals(ImageAppTotalService.this.getPackageName())) {
                                     if (runningAppProcessInfo2.importance == 100) {
                                         String className3 = ((RunningTaskInfo) ((ActivityManager) ImageAppTotalService.this.getApplicationContext().getSystemService("activity")).getRunningTasks(1).get(0)).topActivity.getClassName();
-                                        C2261g.m9769c("ImageAppTotalService", "className:" + className3);
-                                        C2261g.m9769c("ImageAppTotalService", "_prevClassName:" + ImageAppTotalService.this.f6535L);
+                                        ImageAppLog.error("ImageAppTotalService", "className:" + className3);
+                                        ImageAppLog.error("ImageAppTotalService", "_prevClassName:" + ImageAppTotalService.this.f6535L);
                                         ImageAppTotalService.this.f6535L = className3;
                                         if (className3 != null) {
                                             if (className3.equalsIgnoreCase("com.panasonic.avc.cng.view.liveview.LiveViewLumixGHActivity") || className3.equalsIgnoreCase("com.panasonic.avc.cng.view.bluetooth.BluetoothCloudBackupActivity") || className3.equalsIgnoreCase("com.panasonic.avc.cng.view.bluetooth.BluetoothEquipmentSettingActivity")) {
@@ -784,7 +784,7 @@ public class ImageAppTotalService extends Service implements LeScanCallback, Lis
                                                     if (string5.equalsIgnoreCase(name)) {
                                                         string5 = name;
                                                     }
-                                                    C2253z.m9688b(ImageAppTotalService.this.getApplicationContext(), true).mo5326c();
+                                                    ServiceFactory.m9688b(ImageAppTotalService.this.getApplicationContext(), true).mo5326c();
                                                     ImageAppTotalService.this.f6560j.mo5855a(string5, "");
                                                     return;
                                                 } else if (ImageAppTotalService.this.f6558h != null) {
@@ -821,7 +821,7 @@ public class ImageAppTotalService extends Service implements LeScanCallback, Lis
                                                 ImageAppTotalService.this.mo5570l();
                                                 return;
                                             }
-                                            C2043f b2 = C2253z.m9688b(ImageAppTotalService.this.getApplicationContext(), false);
+                                            C2043f b2 = ServiceFactory.m9688b(ImageAppTotalService.this.getApplicationContext(), false);
                                             if (b2 != null) {
                                                 b2.mo5326c();
                                             }
@@ -878,31 +878,31 @@ public class ImageAppTotalService extends Service implements LeScanCallback, Lis
         }
 
         public void onCharacteristicChanged(BluetoothGatt bluetoothGatt, BluetoothGattCharacteristic bluetoothGattCharacteristic) {
-            C2261g.m9763a("ImageAppTotalService", "onCharacteristicChanged");
+            ImageAppLog.debug("ImageAppTotalService", "onCharacteristicChanged");
             Bundle bundle = new Bundle();
             bundle.putByteArray("VALUE", bluetoothGattCharacteristic.getValue());
             UUID uuid = bluetoothGattCharacteristic.getUuid();
             if (uuid != null) {
-                C2261g.m9763a("ImageAppTotalService", "uuid:" + uuid);
+                ImageAppLog.debug("ImageAppTotalService", "uuid:" + uuid);
                 byte[] value = bluetoothGattCharacteristic.getValue();
                 if (value != null) {
                     for (int i = 0; i < value.length; i++) {
-                        C2261g.m9769c("ImageAppTotalService", "readData:" + value[i]);
+                        ImageAppLog.error("ImageAppTotalService", "readData:" + value[i]);
                     }
                 }
                 if (uuid.equals(UUID.fromString("4cf487c0-32a7-11e6-a50d-0002a5d5c51b"))) {
                     ImageAppTotalService.this.mo5563e();
                 } else if (uuid.equals(UUID.fromString("37701b80-32a7-11e6-bb83-0002a5d5c51b"))) {
-                    C2261g.m9769c("ImageAppTotalService", "readData[0]:" + value[0]);
+                    ImageAppLog.error("ImageAppTotalService", "readData[0]:" + value[0]);
                     if (value[0] == 1) {
-                        C2261g.m9769c("ImageAppTotalService", "GPS start!");
+                        ImageAppLog.error("ImageAppTotalService", "GPS start!");
                         ImageAppTotalService.this.f6529F = true;
                         if (VERSION.SDK_INT >= 26) {
                             ImageAppTotalService.this.startForeground(2, new C0018d(ImageAppTotalService.this.getApplicationContext()).mo16a());
                         }
                         ImageAppTotalService.this.m8829a((LocationManager) ImageAppTotalService.this.getSystemService("location"));
                     } else if (value[0] == 2) {
-                        C2261g.m9769c("ImageAppTotalService", "GPS stop!");
+                        ImageAppLog.error("ImageAppTotalService", "GPS stop!");
                         ImageAppTotalService.this.f6529F = false;
                         if (VERSION.SDK_INT >= 26) {
                             ImageAppTotalService.this.stopForeground(true);
@@ -911,7 +911,7 @@ public class ImageAppTotalService extends Service implements LeScanCallback, Lis
                     } else if (value[0] == 3) {
                         String string = Secure.getString(ImageAppTotalService.this.getContentResolver(), "location_providers_allowed");
                         if (string.indexOf("gps", 0) > 0 || string.indexOf("network", 0) > 0) {
-                            C2261g.m9769c("ImageAppTotalService", "GpsActionNotifyRequire:");
+                            ImageAppLog.error("ImageAppTotalService", "GpsActionNotifyRequire:");
                             String string2 = PreferenceManager.getDefaultSharedPreferences(ImageAppTotalService.this.getApplicationContext()).getString("GPSData", null);
                             if (string2 != null) {
                                 ImageAppTotalService.this.mo5545a(7, Base64.decode(string2, 0));
@@ -928,7 +928,7 @@ public class ImageAppTotalService extends Service implements LeScanCallback, Lis
                     if (value != null) {
                         ImageAppTotalService.this.f6570t = jArr[0] | (jArr[1] << 8) | (jArr[2] << 16) | (jArr[3] << 24);
                     }
-                    C2261g.m9763a("ImageAppTotalService", "_sendLeftNum:" + ImageAppTotalService.this.f6570t);
+                    ImageAppLog.debug("ImageAppTotalService", "_sendLeftNum:" + ImageAppTotalService.this.f6570t);
                     byte[] bArr2 = new byte[4];
                     long[] jArr2 = new long[4];
                     byte[] copyOfRange2 = Arrays.copyOfRange(value, 4, 8);
@@ -938,7 +938,7 @@ public class ImageAppTotalService extends Service implements LeScanCallback, Lis
                     if (value != null) {
                         ImageAppTotalService.this.f6569s = jArr2[0] | (jArr2[1] << 8) | (jArr2[2] << 16) | (jArr2[3] << 24);
                     }
-                    C2261g.m9763a("ImageAppTotalService", "_sendAllNum:" + ImageAppTotalService.this.f6569s);
+                    ImageAppLog.debug("ImageAppTotalService", "_sendAllNum:" + ImageAppTotalService.this.f6569s);
                     String className = ((RunningTaskInfo) ((ActivityManager) ImageAppTotalService.this.getApplicationContext().getSystemService("activity")).getRunningTasks(1).get(0)).topActivity.getClassName();
                     if (className == null) {
                         ImageAppTotalService.this.m8854d((int) C4244s.f14191a[0]);
@@ -952,7 +952,7 @@ public class ImageAppTotalService extends Service implements LeScanCallback, Lis
                     }
                 } else if (uuid.equals(UUID.fromString("d611b4a0-3217-11e6-8d98-0002a5d5c51b"))) {
                     byte b = value[0] & 255;
-                    C2261g.m9769c("ImageAppTotalService", "reason:" + b);
+                    ImageAppLog.error("ImageAppTotalService", "reason:" + b);
                     String className2 = ((RunningTaskInfo) ((ActivityManager) ImageAppTotalService.this.getApplicationContext().getSystemService("activity")).getRunningTasks(1).get(0)).topActivity.getClassName();
                     if (className2 == null) {
                         ImageAppTotalService.this.m8854d((int) b);
@@ -986,8 +986,8 @@ public class ImageAppTotalService extends Service implements LeScanCallback, Lis
                                 if (runningAppProcessInfo.processName.equals(ImageAppTotalService.this.getPackageName())) {
                                     if (runningAppProcessInfo.importance == 100) {
                                         String className3 = ((RunningTaskInfo) ((ActivityManager) ImageAppTotalService.this.getApplicationContext().getSystemService("activity")).getRunningTasks(1).get(0)).topActivity.getClassName();
-                                        C2261g.m9769c("ImageAppTotalService", "className:" + className3);
-                                        C2261g.m9769c("ImageAppTotalService", "_prevClassName:" + ImageAppTotalService.this.f6535L);
+                                        ImageAppLog.error("ImageAppTotalService", "className:" + className3);
+                                        ImageAppLog.error("ImageAppTotalService", "_prevClassName:" + ImageAppTotalService.this.f6535L);
                                         if (className3 != null) {
                                             if (className3.equalsIgnoreCase("com.panasonic.avc.cng.view.liveview.LiveViewLumixGHActivity") || ImageAppTotalService.this.f6535L.equalsIgnoreCase("com.panasonic.avc.cng.view.liveview.LiveViewLumixGHActivity") || className3.equalsIgnoreCase("com.panasonic.avc.cng.view.bluetooth.BluetoothCloudBackupActivity") || ImageAppTotalService.this.f6535L.equalsIgnoreCase("com.panasonic.avc.cng.view.bluetooth.BluetoothCloudBackupActivity") || className3.equalsIgnoreCase("com.panasonic.avc.cng.view.bluetooth.BluetoothEquipmentSettingActivity") || ImageAppTotalService.this.f6535L.equalsIgnoreCase("com.panasonic.avc.cng.view.bluetooth.BluetoothEquipmentSettingActivity")) {
                                                 if (value[0] == 0) {
@@ -1017,10 +1017,10 @@ public class ImageAppTotalService extends Service implements LeScanCallback, Lis
                         }
                     } else if (ImageAppTotalService.this.f6543T) {
                         if (value[0] == 0) {
-                            C2261g.m9763a("ImageAppTotalService", "WifiConnectSTA");
+                            ImageAppLog.debug("ImageAppTotalService", "WifiConnectSTA");
                             ImageAppTotalService.this.mo5545a(11, C4244s.f14198h);
                         } else {
-                            C2261g.m9763a("ImageAppTotalService", "WifiConnectSoftAP");
+                            ImageAppLog.debug("ImageAppTotalService", "WifiConnectSoftAP");
                             ImageAppTotalService.this.mo5545a(11, C4244s.f14197g);
                         }
                         if (ImageAppTotalService.this.f6558h != null) {
@@ -1040,10 +1040,10 @@ public class ImageAppTotalService extends Service implements LeScanCallback, Lis
                         ImageAppTotalService.this.f6558h.mo5664a(bundle, "e182ec41-3213-11e6-ab07-0002a5d5c51b");
                     }
                 } else if (uuid.equals(UUID.fromString("48669da0-3217-11e6-b08d-0002a5d5c51b"))) {
-                    C2261g.m9760a(3198989, "");
+                    ImageAppLog.m9760a(3198989, "");
                     ImageAppTotalService.this.mo5556b();
                     for (int i4 = 0; i4 < 5 && ImageAppTotalService.this.f6567q.equals("0"); i4++) {
-                        C2261g.m9769c("ImageAppTotalService", "capability待ち " + i4);
+                        ImageAppLog.error("ImageAppTotalService", "capability待ち " + i4);
                         try {
                             Thread.sleep(1000);
                         } catch (InterruptedException e) {
@@ -1052,7 +1052,7 @@ public class ImageAppTotalService extends Service implements LeScanCallback, Lis
                     }
                     ImageAppTotalService.this.m8849c(ImageAppTotalService.this.f6567q);
                 } else if (uuid.equals(UUID.fromString("e182ec43-3213-11e6-ab07-0002a5d5c51b"))) {
-                    C2261g.m9760a(2105354, "");
+                    ImageAppLog.m9760a(2105354, "");
                     ImageAppTotalService.this.f6539P = false;
                     if (value[0] == 1) {
                         if (ImageAppTotalService.this.f6546W != null) {
@@ -1061,7 +1061,7 @@ public class ImageAppTotalService extends Service implements LeScanCallback, Lis
                             ImageAppTotalService.this.f6546W = new C2131b();
                         }
                         ImageAppTotalService.this.f6563m = C4244s.f14192b;
-                        C2028e a = C2253z.m9680a(ImageAppTotalService.this.getApplicationContext(), false);
+                        C2028e a = ServiceFactory.m9680a(ImageAppTotalService.this.getApplicationContext(), false);
                         if (a != null) {
                             a.mo5283g();
                         }
@@ -1078,24 +1078,24 @@ public class ImageAppTotalService extends Service implements LeScanCallback, Lis
                                         }
                                         return;
                                     }
-                                    C2261g.m9763a("ImageAppTotalService", "_isBleWriting:" + ImageAppTotalService.this.f6541R);
+                                    ImageAppLog.debug("ImageAppTotalService", "_isBleWriting:" + ImageAppTotalService.this.f6541R);
                                     if (!ImageAppTotalService.this.f6541R) {
                                         ImageAppTotalService.this.f6542S = true;
-                                        WifiInfo b2 = new C2754l(ImageAppTotalService.this.getApplicationContext()).mo6743b();
+                                        WifiInfo b2 = new WifiUtil(ImageAppTotalService.this.getApplicationContext()).mo6743b();
                                         if (b2.getIpAddress() == 0) {
-                                            C2261g.m9763a("ImageAppTotalService", "SoftAP");
+                                            ImageAppLog.debug("ImageAppTotalService", "SoftAP");
                                             ImageAppTotalService.this.f6566p = C4244s.f14197g;
-                                            C2261g.m9763a("ImageAppTotalService", "writeData:" + ImageAppTotalService.this.mo5545a(11, C4244s.f14197g));
+                                            ImageAppLog.debug("ImageAppTotalService", "writeData:" + ImageAppTotalService.this.mo5545a(11, C4244s.f14197g));
                                             return;
                                         }
-                                        C2261g.m9763a("ImageAppTotalService", "STA");
-                                        C2261g.m9763a("ImageAppTotalService", "wifiInfo.getSSID():" + b2.getSSID());
+                                        ImageAppLog.debug("ImageAppTotalService", "STA");
+                                        ImageAppLog.debug("ImageAppTotalService", "wifiInfo.getSSID():" + b2.getSSID());
                                         ImageAppTotalService.this.f6566p = C4244s.f14198h;
                                         String ssid = b2.getSSID();
                                         if (ssid.startsWith("\"") && ssid.endsWith("\"")) {
                                             ssid = ssid.substring(1, ssid.length() - 1);
                                         }
-                                        C2261g.m9763a("ImageAppTotalService", "writeData:" + ImageAppTotalService.this.mo5545a(12, C2266l.m9792a(32, ssid).getBytes()));
+                                        ImageAppLog.debug("ImageAppTotalService", "writeData:" + ImageAppTotalService.this.mo5545a(12, C2266l.m9792a(32, ssid).getBytes()));
                                         return;
                                     }
                                     return;
@@ -1124,8 +1124,8 @@ public class ImageAppTotalService extends Service implements LeScanCallback, Lis
         }
 
         public void onDescriptorWrite(BluetoothGatt bluetoothGatt, BluetoothGattDescriptor bluetoothGattDescriptor, int i) {
-            C2261g.m9763a("ImageAppTotalService", "onDescriptorWrite");
-            C2261g.m9763a("ImageAppTotalService", "status:" + i);
+            ImageAppLog.debug("ImageAppTotalService", "onDescriptorWrite");
+            ImageAppLog.debug("ImageAppTotalService", "status:" + i);
         }
     };
 
@@ -1133,17 +1133,17 @@ public class ImageAppTotalService extends Service implements LeScanCallback, Lis
     private C2141d f6549Z = new C2141d() {
         /* renamed from: a */
         public void mo5608a() {
-            C2261g.m9769c("ImageAppTotalService", "onConnectStart ");
+            ImageAppLog.error("ImageAppTotalService", "onConnectStart ");
         }
 
         /* renamed from: a */
         public void mo5609a(int i, C2649a aVar) {
-            C2261g.m9769c("ImageAppTotalService", "onConnected ");
-            C2261g.m9769c("ImageAppTotalService", "apConnectStatus: " + i);
+            ImageAppLog.error("ImageAppTotalService", "onConnected ");
+            ImageAppLog.error("ImageAppTotalService", "apConnectStatus: " + i);
             if (i != 3) {
                 if (ImageAppTotalService.this.f6560j != null) {
                     ImageAppTotalService.this.f6560j.mo5861c();
-                    C2043f b = C2253z.m9688b(ImageAppTotalService.this.getApplicationContext(), false);
+                    C2043f b = ServiceFactory.m9688b(ImageAppTotalService.this.getApplicationContext(), false);
                     if (b != null) {
                         b.mo5327d();
                     }
@@ -1160,19 +1160,19 @@ public class ImageAppTotalService extends Service implements LeScanCallback, Lis
 
         /* renamed from: a */
         public void mo5610a(int i, boolean z) {
-            C2261g.m9769c("ImageAppTotalService", "onWifiEnableStatus ");
+            ImageAppLog.error("ImageAppTotalService", "onWifiEnableStatus ");
         }
 
         /* renamed from: a */
         public void mo5611a(boolean z, int i, boolean z2) {
-            C2261g.m9769c("ImageAppTotalService", "onSetWifiEnableResult ");
-            C2261g.m9769c("ImageAppTotalService", "isSuccess:" + z);
-            C2261g.m9769c("ImageAppTotalService", "wifiEnableStatus:" + i);
+            ImageAppLog.error("ImageAppTotalService", "onSetWifiEnableResult ");
+            ImageAppLog.error("ImageAppTotalService", "isSuccess:" + z);
+            ImageAppLog.error("ImageAppTotalService", "wifiEnableStatus:" + i);
         }
 
         /* renamed from: a */
         public void mo5612a(boolean z, C1892f fVar, boolean z2, int i) {
-            C2261g.m9769c("ImageAppTotalService", "onFinishConnectCamera reason:" + i);
+            ImageAppLog.error("ImageAppTotalService", "onFinishConnectCamera reason:" + i);
         }
     };
     /* access modifiers changed from: private */
@@ -1196,7 +1196,7 @@ public class ImageAppTotalService extends Service implements LeScanCallback, Lis
         /* renamed from: a */
         public void mo5616a(int i, int i2, int i3) {
             if (i == 4) {
-                C2261g.m9769c("ImageAppTotalService", "Copy Complete");
+                ImageAppLog.error("ImageAppTotalService", "Copy Complete");
                 if (ImageAppTotalService.this.f6546W != null && ImageAppTotalService.this.f6546W.mo5624c()) {
                     ImageAppTotalService.this.m8849c(ImageAppTotalService.this.f6567q);
                 }
@@ -1256,11 +1256,11 @@ public class ImageAppTotalService extends Service implements LeScanCallback, Lis
     /* access modifiers changed from: private */
 
     /* renamed from: j */
-    public C2211a f6560j;
+    public WifiService f6560j;
     /* access modifiers changed from: private */
 
     /* renamed from: k */
-    public C1925a f6561k;
+    public BrowseMenuService f6561k;
 
     /* renamed from: l */
     private C1932b f6562l;
@@ -1343,7 +1343,7 @@ public class ImageAppTotalService extends Service implements LeScanCallback, Lis
 
         /* renamed from: a */
         public void mo5622a() {
-            C2261g.m9769c("ImageAppTotalService", "KeepAliveService Start");
+            ImageAppLog.error("ImageAppTotalService", "KeepAliveService Start");
             this.f6609c = false;
             this.f6608b = new Thread(this);
             this.f6608b.start();
@@ -1351,7 +1351,7 @@ public class ImageAppTotalService extends Service implements LeScanCallback, Lis
 
         /* renamed from: b */
         public void mo5623b() {
-            C2261g.m9769c("ImageAppTotalService", "KeepAliveService Stop");
+            ImageAppLog.error("ImageAppTotalService", "KeepAliveService Stop");
             this.f6609c = true;
             if (this.f6608b != null) {
                 try {
@@ -1371,15 +1371,15 @@ public class ImageAppTotalService extends Service implements LeScanCallback, Lis
         }
 
         public void run() {
-            C1468ao aoVar = new C1468ao(ImageAppTotalService.this.f6571u.trim());
+            StatusCommand aoVar = new StatusCommand(ImageAppTotalService.this.f6571u.trim());
             while (!this.f6609c) {
                 try {
                     Thread.sleep(1000);
                     synchronized (C1910l.m7679a()) {
-                        C1846e b = aoVar.mo3551b(5);
-                        C2261g.m9769c("ImageAppTotalService", "KeepAlive[]");
+                        CameraStatus b = aoVar.mo3551b(5);
+                        ImageAppLog.error("ImageAppTotalService", "KeepAlive[]");
                         if (b == null) {
-                            C2261g.m9771e("ImageAppTotalService", "KeepAlive[error]");
+                            ImageAppLog.info("ImageAppTotalService", "KeepAlive[error]");
                             this.f6609c = true;
                             return;
                         }
@@ -1404,9 +1404,9 @@ public class ImageAppTotalService extends Service implements LeScanCallback, Lis
             f6523d = e.getAdapter();
         }
         this.f6572v = new Handler();
-        this.f6560j = new C2211a(getApplicationContext(), this.f6572v);
+        this.f6560j = new WifiService(getApplicationContext(), this.f6572v);
         this.f6560j.mo5852a(this.f6549Z);
-        this.f6561k = new C1925a(getApplicationContext(), this.f6572v);
+        this.f6561k = new BrowseMenuService(getApplicationContext(), this.f6572v);
         this.f6561k.mo5056a(this.f6552ab);
         this.f6562l = new C1932b(getApplicationContext(), this.f6572v);
         this.f6562l.mo5079a(this.f6551aa);
@@ -1426,7 +1426,7 @@ public class ImageAppTotalService extends Service implements LeScanCallback, Lis
     public int onStartCommand(Intent intent, int i, int i2) {
         Log.d("ImageAppTotalService", "onStartCommand()");
         boolean z = PreferenceManager.getDefaultSharedPreferences(getApplicationContext()).getBoolean("BTScanStart", false);
-        C2261g.m9769c("ImageAppTotalService", "isStartBTScan:" + z);
+        ImageAppLog.error("ImageAppTotalService", "isStartBTScan:" + z);
         if (z) {
             mo5546a(3000);
         }
@@ -1434,12 +1434,12 @@ public class ImageAppTotalService extends Service implements LeScanCallback, Lis
     }
 
     public IBinder onBind(Intent intent) {
-        C2261g.m9763a("ImageAppTotalService", "Bindしました");
+        ImageAppLog.debug("ImageAppTotalService", "Bindしました");
         return this.f6547X;
     }
 
     public boolean onUnbind(Intent intent) {
-        C2261g.m9763a("ImageAppTotalService", "onUnbind()");
+        ImageAppLog.debug("ImageAppTotalService", "onUnbind()");
         return super.onUnbind(intent);
     }
 
@@ -1520,13 +1520,13 @@ public class ImageAppTotalService extends Service implements LeScanCallback, Lis
                     for (byte valueOf : copyOfRange) {
                         str = str + String.valueOf(valueOf);
                     }
-                    C2261g.m9769c("ImageAppTotalService", "before address:" + str);
+                    ImageAppLog.error("ImageAppTotalService", "before address:" + str);
                     if (copyOfRange[copyOfRange.length - 1] != 0) {
                         substring = str.substring(String.valueOf(copyOfRange[0]).length(), str.length());
                     } else {
                         substring = str.substring(0, str.length() - 1);
                     }
-                    C2261g.m9769c("ImageAppTotalService", "after address:" + substring);
+                    ImageAppLog.error("ImageAppTotalService", "after address:" + substring);
                     String string = defaultSharedPreferences.getString("CurrentConnectedAddress", "");
                     String b2 = C2266l.m9811b(getApplicationContext(), string);
                     boolean z = false;
@@ -1539,7 +1539,7 @@ public class ImageAppTotalService extends Service implements LeScanCallback, Lis
                         this.f6565o = this.f6564n;
                         this.f6528E = false;
                     }
-                    C2261g.m9769c("ImageAppTotalService", "phoneSsid:" + i9 + " / _oldSSID:" + this.f6565o);
+                    ImageAppLog.error("ImageAppTotalService", "phoneSsid:" + i9 + " / _oldSSID:" + this.f6565o);
                     if (this.f6565o == null || this.f6565o.equalsIgnoreCase(i9)) {
                         if (this.f6565o == null && i9 != null && i9.equalsIgnoreCase(this.f6564n)) {
                             this.f6526C = true;
@@ -1550,11 +1550,11 @@ public class ImageAppTotalService extends Service implements LeScanCallback, Lis
                     this.f6565o = i9;
                     if (z && this.f6560j.mo5864f() && this.f6526C) {
                         this.f6545V = false;
-                        C2261g.m9760a(2105353, "");
+                        ImageAppLog.m9760a(2105353, "");
                         this.f6527D = true;
-                        C2261g.m9769c("ImageAppTotalService", "_isCloudBackUpStart:" + this.f6527D);
-                        C2261g.m9769c("ImageAppTotalService", "state:" + str2);
-                        C2261g.m9769c("ImageAppTotalService", "_isCloudBackUpEnable:" + this.f6526C);
+                        ImageAppLog.error("ImageAppTotalService", "_isCloudBackUpStart:" + this.f6527D);
+                        ImageAppLog.error("ImageAppTotalService", "state:" + str2);
+                        ImageAppLog.error("ImageAppTotalService", "_isCloudBackUpEnable:" + this.f6526C);
                         if (str2 == "sleep" || str2 == "sleep_pow_off" || str2 == "sleep_pow_off_fast") {
                             this.f6525B = false;
                             if (!string.equalsIgnoreCase("") && string.equalsIgnoreCase(substring)) {
@@ -1608,7 +1608,7 @@ public class ImageAppTotalService extends Service implements LeScanCallback, Lis
                     public void run() {
                         ImageAppTotalService.this.f6550a.post(new Runnable() {
                             public void run() {
-                                C2261g.m9769c("ImageAppTotalService", "mConnected:" + ImageAppTotalService.this.f6557g);
+                                ImageAppLog.error("ImageAppTotalService", "mConnected:" + ImageAppTotalService.this.f6557g);
                                 if (!ImageAppTotalService.this.f6557g) {
                                     if (ImageAppTotalService.this.f6558h != null) {
                                         ImageAppTotalService.this.f6558h.mo5671c();
@@ -1633,7 +1633,7 @@ public class ImageAppTotalService extends Service implements LeScanCallback, Lis
         if (!this.f6532I) {
             String string = Secure.getString(getContentResolver(), "location_providers_allowed");
             if (string.indexOf("gps", 0) < 0 && string.indexOf("network", 0) < 0) {
-                C2261g.m9769c("ImageAppTotalService", "GPSが無効");
+                ImageAppLog.error("ImageAppTotalService", "GPSが無効");
                 if (this.f6558h != null) {
                     this.f6558h.mo5674f();
                 }
@@ -1650,7 +1650,7 @@ public class ImageAppTotalService extends Service implements LeScanCallback, Lis
 
     /* renamed from: a */
     public void mo5547a(BluetoothDevice bluetoothDevice, boolean z, boolean z2) {
-        C2261g.m9760a(2101253, "");
+        ImageAppLog.m9760a(2101253, "");
         this.f6537N = true;
         this.f6543T = z2;
         this.f6538O = false;
@@ -1668,7 +1668,7 @@ public class ImageAppTotalService extends Service implements LeScanCallback, Lis
                     public void run() {
                         ImageAppTotalService.this.f6550a.post(new Runnable() {
                             public void run() {
-                                C2261g.m9769c("ImageAppTotalService", "_isBTConnecting:" + ImageAppTotalService.this.f6537N);
+                                ImageAppLog.error("ImageAppTotalService", "_isBTConnecting:" + ImageAppTotalService.this.f6537N);
                                 if (ImageAppTotalService.this.f6537N) {
                                     ImageAppTotalService.this.f6537N = false;
                                     if (ImageAppTotalService.this.f6558h != null) {
@@ -1704,7 +1704,7 @@ public class ImageAppTotalService extends Service implements LeScanCallback, Lis
 
     /* renamed from: c */
     public void mo5560c() {
-        C2261g.m9763a("ImageAppTotalService", "disconnect");
+        ImageAppLog.debug("ImageAppTotalService", "disconnect");
         this.f6537N = false;
         this.f6538O = false;
         this.f6539P = false;
@@ -1713,7 +1713,7 @@ public class ImageAppTotalService extends Service implements LeScanCallback, Lis
             this.f6554c = null;
         }
         if (this.f6555e != null) {
-            C2261g.m9763a("ImageAppTotalService", "disconnect");
+            ImageAppLog.debug("ImageAppTotalService", "disconnect");
             this.f6555e.disconnect();
         }
         PreferenceManager.getDefaultSharedPreferences(getApplicationContext()).edit().putLong("AutoBackupLeftNum", 0).commit();
@@ -1738,7 +1738,7 @@ public class ImageAppTotalService extends Service implements LeScanCallback, Lis
         if (this.f6555e == null) {
             return "No_Gatt";
         }
-        C2261g.m9769c("ImageAppTotalService", "write type:" + i);
+        ImageAppLog.error("ImageAppTotalService", "write type:" + i);
         switch (i) {
             case 1:
                 str = "054ac620-3214-11e6-ac0d-0002a5d5c51b";
@@ -1832,12 +1832,12 @@ public class ImageAppTotalService extends Service implements LeScanCallback, Lis
         if (characteristic == null) {
             return "No_GattChar";
         }
-        C2261g.m9769c("ImageAppTotalService", "bytes:" + bArr[0]);
-        C2261g.m9769c("ImageAppTotalService", "length:" + bArr.length);
+        ImageAppLog.error("ImageAppTotalService", "bytes:" + bArr[0]);
+        ImageAppLog.error("ImageAppTotalService", "length:" + bArr.length);
         characteristic.setValue(bArr);
         this.f6541R = true;
         if (!this.f6555e.writeCharacteristic(characteristic)) {
-            C2261g.m9769c("ImageAppTotalService", "writeCharacteristic: writeCharacteristic false");
+            ImageAppLog.error("ImageAppTotalService", "writeCharacteristic: writeCharacteristic false");
             return "Write_Error";
         }
         this.f6541R = false;
@@ -1911,17 +1911,17 @@ public class ImageAppTotalService extends Service implements LeScanCallback, Lis
         }
         BluetoothGattService service = this.f6555e.getService(UUID.fromString(str));
         if (service == null) {
-            C2261g.m9769c("ImageAppTotalService", "readCharacteristic: readCharacteristic false1");
+            ImageAppLog.error("ImageAppTotalService", "readCharacteristic: readCharacteristic false1");
             return "No_GattService";
         }
         BluetoothGattCharacteristic characteristic = service.getCharacteristic(UUID.fromString(str2));
         if (characteristic == null) {
-            C2261g.m9769c("ImageAppTotalService", "readCharacteristic: readCharacteristic false2");
+            ImageAppLog.error("ImageAppTotalService", "readCharacteristic: readCharacteristic false2");
             return "No_GattChar";
         } else if (this.f6555e.readCharacteristic(characteristic)) {
             return "Success";
         } else {
-            C2261g.m9769c("ImageAppTotalService", "readCharacteristic: readCharacteristic false3");
+            ImageAppLog.error("ImageAppTotalService", "readCharacteristic: readCharacteristic false3");
             return "Read_Error";
         }
     }
@@ -2021,7 +2021,7 @@ public class ImageAppTotalService extends Service implements LeScanCallback, Lis
     public void mo5563e() {
         short s;
         byte b = 1;
-        C2261g.m9763a("ImageAppTotalService", "sendTimeInfomation");
+        ImageAppLog.debug("ImageAppTotalService", "sendTimeInfomation");
         Calendar instance = Calendar.getInstance(TimeZone.getTimeZone("GMT"));
         int offset = TimeZone.getDefault().getOffset(System.currentTimeMillis()) / 60000;
         short s2 = (short) instance.get(1);
@@ -2053,7 +2053,7 @@ public class ImageAppTotalService extends Service implements LeScanCallback, Lis
     /* renamed from: a */
     public void mo5548a(Location location, byte b, int i) {
         double d = 2.147483647E9d;
-        C2261g.m9763a("ImageAppTotalService", "sendGPSInfomation");
+        ImageAppLog.debug("ImageAppTotalService", "sendGPSInfomation");
         int latitude = (int) (location != null ? location.getLatitude() * 1.0E7d : 2.147483647E9d);
         if (location != null) {
             d = location.getLongitude() * 1.0E7d;
@@ -2095,7 +2095,7 @@ public class ImageAppTotalService extends Service implements LeScanCallback, Lis
     /* renamed from: d */
     public void m8854d(int i) {
         long j = 0;
-        C2261g.m9769c("ImageAppTotalService", "showNotification state:" + i);
+        ImageAppLog.error("ImageAppTotalService", "showNotification state:" + i);
         NotificationManager notificationManager = (NotificationManager) getApplicationContext().getSystemService("notification");
         SharedPreferences defaultSharedPreferences = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
         int currentTimeMillis = (int) System.currentTimeMillis();
@@ -2108,15 +2108,15 @@ public class ImageAppTotalService extends Service implements LeScanCallback, Lis
         defaultSharedPreferences.edit().putLong("AutoBackupAllNum", this.f6569s).commit();
         defaultSharedPreferences.edit().putInt("AutoBackupStopReason", i).commit();
         if (i == -1) {
-            C2261g.m9769c("ImageAppTotalService", "not connected");
+            ImageAppLog.error("ImageAppTotalService", "not connected");
             this.f6568r.mo27b((CharSequence) getApplicationContext().getString(R.string.msg_cloud_backup_ble_disconnect));
             mo5561c((int) C4244s.f14191a[0]);
         } else if (i == -2) {
-            C2261g.m9769c("ImageAppTotalService", "not pairing");
+            ImageAppLog.error("ImageAppTotalService", "not pairing");
             this.f6568r.mo27b((CharSequence) getApplicationContext().getString(R.string.msg_cannot_communcation_camera_without_pairing));
             mo5561c((int) C4244s.f14191a[0]);
         } else if (i == 2 || i == 3 || i == 4 || i == 5 || i == 6 || i == 7 || i == 8 || i == 9 || i == 10) {
-            C2261g.m9769c("ImageAppTotalService", "interrupt");
+            ImageAppLog.error("ImageAppTotalService", "interrupt");
             long j2 = this.f6569s - this.f6570t;
             if (this.f6569s != 0) {
                 j = (100 * j2) / this.f6569s;
@@ -2127,13 +2127,13 @@ public class ImageAppTotalService extends Service implements LeScanCallback, Lis
             defaultSharedPreferences.edit().putLong("AutoBackupLeftNum", this.f6570t).commit();
             mo5561c((int) C4244s.f14191a[0]);
         } else if (i == 1 || this.f6570t == 0) {
-            C2261g.m9769c("ImageAppTotalService", "success");
+            ImageAppLog.error("ImageAppTotalService", "success");
             this.f6568r.mo27b((CharSequence) getApplicationContext().getString(R.string.msg_cloud_backup_finish) + String.format(getApplicationContext().getResources().getString(R.string.msg_cloud_backup_finish_images), new Object[]{Long.valueOf(this.f6569s)}));
             defaultSharedPreferences.edit().putLong("AutoBackupLeftNum", this.f6570t).commit();
             mo5561c((int) C4244s.f14191a[0]);
             this.f6568r.mo18a(100, 100, false);
         } else {
-            C2261g.m9769c("ImageAppTotalService", "backup now");
+            ImageAppLog.error("ImageAppTotalService", "backup now");
             long j3 = this.f6569s - this.f6570t;
             if (this.f6569s != 0) {
                 j = (100 * j3) / this.f6569s;
@@ -2256,7 +2256,7 @@ public class ImageAppTotalService extends Service implements LeScanCallback, Lis
                 edit.putBoolean("GeotagLogEnabled", true);
                 edit.commit();
                 if (!this.f6530G && !z) {
-                    new C2077c(getApplicationContext()).mo5449a(getApplicationContext().getResources().getString(R.string.geotag_worklog_status_on));
+                    new GeotagLogRecord(getApplicationContext()).mo5449a(getApplicationContext().getResources().getString(R.string.geotag_worklog_status_on));
                 }
                 this.f6530G = true;
             }
@@ -2282,7 +2282,7 @@ public class ImageAppTotalService extends Service implements LeScanCallback, Lis
                 edit.putBoolean("GeotagLogEnabled", false);
                 edit.commit();
                 if (!z) {
-                    new C2077c(getApplicationContext()).mo5449a(getApplicationContext().getResources().getString(R.string.geotag_worklog_status_off));
+                    new GeotagLogRecord(getApplicationContext()).mo5449a(getApplicationContext().getResources().getString(R.string.geotag_worklog_status_off));
                 }
                 this.f6530G = false;
                 if (!z) {
@@ -2297,9 +2297,9 @@ public class ImageAppTotalService extends Service implements LeScanCallback, Lis
     }
 
     public void onLocationChanged(Location location) {
-        C2261g.m9769c("ImageAppTotalService", "Location=(" + location.getLatitude() + ", " + location.getLongitude() + ", " + location.getAltitude() + ")");
-        C2261g.m9769c("ImageAppTotalService", "Provider=(" + location.getProvider() + ")");
-        C2261g.m9769c("ImageAppTotalService", "Time=(" + new Date(location.getTime()).toString() + ")");
+        ImageAppLog.error("ImageAppTotalService", "Location=(" + location.getLatitude() + ", " + location.getLongitude() + ", " + location.getAltitude() + ")");
+        ImageAppLog.error("ImageAppTotalService", "Provider=(" + location.getProvider() + ")");
+        ImageAppLog.error("ImageAppTotalService", "Time=(" + new Date(location.getTime()).toString() + ")");
         long currentTimeMillis = (long) ((int) ((System.currentTimeMillis() - C2266l.m9825d()) / 1000));
         if (!this.f6529F) {
             return;
@@ -2312,7 +2312,7 @@ public class ImageAppTotalService extends Service implements LeScanCallback, Lis
     }
 
     public void onProviderDisabled(String str) {
-        C2261g.m9763a("ImageAppTotalService", "onProviderDisabled(" + str + ")");
+        ImageAppLog.debug("ImageAppTotalService", "onProviderDisabled(" + str + ")");
         if (VERSION.SDK_INT >= 26) {
             stopForeground(true);
         }
@@ -2320,24 +2320,24 @@ public class ImageAppTotalService extends Service implements LeScanCallback, Lis
     }
 
     public void onProviderEnabled(String str) {
-        C2261g.m9763a("ImageAppTotalService", "onProviderEnabled");
+        ImageAppLog.debug("ImageAppTotalService", "onProviderEnabled");
         mo5554a(false);
     }
 
     public void onStatusChanged(String str, int i, Bundle bundle) {
-        C2261g.m9763a("ImageAppTotalService", "onStatusChanged");
+        ImageAppLog.debug("ImageAppTotalService", "onStatusChanged");
     }
 
     public void onGpsStatusChanged(int i) {
         switch (i) {
             case 1:
-                C2261g.m9763a("ImageAppTotalService", "GPS_EVENT_STARTED");
+                ImageAppLog.debug("ImageAppTotalService", "GPS_EVENT_STARTED");
                 return;
             case 2:
-                C2261g.m9763a("ImageAppTotalService", "GPS_EVENT_STOPPED");
+                ImageAppLog.debug("ImageAppTotalService", "GPS_EVENT_STOPPED");
                 return;
             case 3:
-                C2261g.m9763a("ImageAppTotalService", "GPS_EVENT_FIRST_FIX");
+                ImageAppLog.debug("ImageAppTotalService", "GPS_EVENT_FIRST_FIX");
                 return;
             default:
                 return;
@@ -2369,7 +2369,7 @@ public class ImageAppTotalService extends Service implements LeScanCallback, Lis
                 eventType = xmlPullParser.next();
             }
         } catch (Exception e) {
-            C2261g.m9769c("ParseDocument", e.getMessage());
+            ImageAppLog.error("ParseDocument", e.getMessage());
         }
     }
 
@@ -2388,7 +2388,7 @@ public class ImageAppTotalService extends Service implements LeScanCallback, Lis
                 next = xmlPullParser.next();
             }
         } catch (Exception e) {
-            C2261g.m9769c("ParseTagEnvelope", e.getMessage());
+            ImageAppLog.error("ParseTagEnvelope", e.getMessage());
         }
     }
 
@@ -2407,7 +2407,7 @@ public class ImageAppTotalService extends Service implements LeScanCallback, Lis
                 next = xmlPullParser.next();
             }
         } catch (Exception e) {
-            C2261g.m9769c("ParseBodyItem", e.getMessage());
+            ImageAppLog.error("ParseBodyItem", e.getMessage());
         }
     }
 
@@ -2426,7 +2426,7 @@ public class ImageAppTotalService extends Service implements LeScanCallback, Lis
                 next = xmlPullParser.next();
             }
         } catch (Exception e) {
-            C2261g.m9769c("ParseBrowseResponseItem", e.getMessage());
+            ImageAppLog.error("ParseBrowseResponseItem", e.getMessage());
         }
     }
 
@@ -2445,7 +2445,7 @@ public class ImageAppTotalService extends Service implements LeScanCallback, Lis
                 next = xmlPullParser.next();
             }
         } catch (Exception e) {
-            C2261g.m9769c("ParseResultItem", e.getMessage());
+            ImageAppLog.error("ParseResultItem", e.getMessage());
         }
     }
 
@@ -2464,7 +2464,7 @@ public class ImageAppTotalService extends Service implements LeScanCallback, Lis
                 next = xmlPullParser.next();
             }
         } catch (Exception e) {
-            C2261g.m9769c("ParseTagDidlLite", e.getMessage());
+            ImageAppLog.error("ParseTagDidlLite", e.getMessage());
         }
     }
 
@@ -2484,7 +2484,7 @@ public class ImageAppTotalService extends Service implements LeScanCallback, Lis
                 next = xmlPullParser.next();
             }
         } catch (Exception e) {
-            C2261g.m9769c("ParseTagItem", e.getMessage());
+            ImageAppLog.error("ParseTagItem", e.getMessage());
         }
     }
 
@@ -2497,7 +2497,7 @@ public class ImageAppTotalService extends Service implements LeScanCallback, Lis
                 if (next == 4) {
                     if (attributeValue != null && (attributeValue.contains("CAM_ORG") || attributeValue.contains("CAM_RAW_JPG") || attributeValue.contains("CAM_RAW"))) {
                         this.f6573w = xmlPullParser.getText();
-                        C2261g.m9769c("ImageAppTotalService", "_URL:" + this.f6573w);
+                        ImageAppLog.error("ImageAppTotalService", "_URL:" + this.f6573w);
                         return;
                     }
                 } else if (next == 2) {
@@ -2506,7 +2506,7 @@ public class ImageAppTotalService extends Service implements LeScanCallback, Lis
                 next = xmlPullParser.next();
             }
         } catch (Exception e) {
-            C2261g.m9769c("ParseTagRes", e.getMessage());
+            ImageAppLog.error("ParseTagRes", e.getMessage());
         }
     }
 
@@ -2521,16 +2521,16 @@ public class ImageAppTotalService extends Service implements LeScanCallback, Lis
                 next = xmlPullParser.next();
             }
         } catch (Exception e) {
-            C2261g.m9769c("ParseTagUnknown", e.getMessage());
+            ImageAppLog.error("ParseTagUnknown", e.getMessage());
         }
     }
 
     /* access modifiers changed from: private */
     /* renamed from: c */
     public void m8849c(final String str) {
-        C2261g.m9769c("ImageAppTotalService", "StartAutoTransfer objectID:" + str);
+        ImageAppLog.error("ImageAppTotalService", "StartAutoTransfer objectID:" + str);
         if (str.equals("0")) {
-            C2261g.m9769c("ImageAppTotalService", "StartAutoTransfer error objectID:0");
+            ImageAppLog.error("ImageAppTotalService", "StartAutoTransfer error objectID:0");
         } else {
             new Thread(new Runnable() {
                 public void run() {
@@ -2540,9 +2540,9 @@ public class ImageAppTotalService extends Service implements LeScanCallback, Lis
                     }
                     ImageAppTotalService.this.f6573w = "";
                     while (true) {
-                        C1853h a = ImageAppTotalService.this.f6524A.mo3547a(str);
+                        ParseTagHighlightSceneInfo a = ImageAppTotalService.this.f6524A.mo3547a(str);
                         if (a != null) {
-                            C2261g.m9769c("ImageAppTotalService", "result.GetError():" + a.mo4772b());
+                            ImageAppLog.error("ImageAppTotalService", "result.GetError():" + a.mo4772b());
                         }
                         if (!a.mo4771a()) {
                             ImageAppTotalService.this.f6534K = false;
@@ -2553,11 +2553,11 @@ public class ImageAppTotalService extends Service implements LeScanCallback, Lis
                             return;
                         }
                         int u = a.mo4791u();
-                        C2261g.m9769c("ImageAppTotalService", "target num:" + u);
+                        ImageAppLog.error("ImageAppTotalService", "target num:" + u);
                         if (u != 0) {
-                            String a2 = C1450al.m5706a("http://" + ImageAppTotalService.this.f6571u.trim() + ":60606/Server0/CDS_control", "<?xml version=\"1.0\" encoding=\"utf-8\"?><s:Envelope xmlns:s=\"http://schemas.xmlsoap.org/soap/envelope/\" s:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\"><s:Body><u:Browse xmlns:u=\"urn:schemas-upnp-org:service:ContentDirectory:1\" xmlns:pana=\"urn:schemas-panasonic-com:pana\"><ObjectID>" + ImageAppTotalService.this.f6567q + "</ObjectID><BrowseFlag>BrowseDirectChildren</BrowseFlag><Filter>*</Filter><StartingIndex>0</StartingIndex><RequestedCount>1</RequestedCount><SortCriteria></SortCriteria><pana:X_FromCP>LumixLink2.0</pana:X_FromCP></u:Browse></s:Body></s:Envelope>", ImageAppTotalService.this.f6571u.trim());
+                            String a2 = StaticHttpCommand.m5706a("http://" + ImageAppTotalService.this.f6571u.trim() + ":60606/Server0/CDS_control", "<?xml version=\"1.0\" encoding=\"utf-8\"?><s:Envelope xmlns:s=\"http://schemas.xmlsoap.org/soap/envelope/\" s:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\"><s:Body><u:Browse xmlns:u=\"urn:schemas-upnp-org:service:ContentDirectory:1\" xmlns:pana=\"urn:schemas-panasonic-com:pana\"><ObjectID>" + ImageAppTotalService.this.f6567q + "</ObjectID><BrowseFlag>BrowseDirectChildren</BrowseFlag><Filter>*</Filter><StartingIndex>0</StartingIndex><RequestedCount>1</RequestedCount><SortCriteria></SortCriteria><pana:X_FromCP>LumixLink2.0</pana:X_FromCP></u:Browse></s:Body></s:Envelope>", ImageAppTotalService.this.f6571u.trim());
                             if (a2.equals("")) {
-                                C2261g.m9769c("Test", "browseRes:なし");
+                                ImageAppLog.error("Test", "browseRes:なし");
                                 if (ImageAppTotalService.this.f6558h != null) {
                                     ImageAppTotalService.this.f6558h.mo5665a("Error");
                                     return;
@@ -2623,10 +2623,10 @@ public class ImageAppTotalService extends Service implements LeScanCallback, Lis
                     ImageAppTotalService.this.f6571u = str;
                 }
                 if (str.equalsIgnoreCase("")) {
-                    ImageAppTotalService.this.f6524A = new C1468ao(ImageAppTotalService.this.f6571u.trim());
+                    ImageAppTotalService.this.f6524A = new StatusCommand(ImageAppTotalService.this.f6571u.trim());
                     dVar = new C1501d(ImageAppTotalService.this.f6571u.trim());
                 } else {
-                    ImageAppTotalService.this.f6524A = new C1468ao(str.trim());
+                    ImageAppTotalService.this.f6524A = new StatusCommand(str.trim());
                     dVar = new C1501d(ImageAppTotalService.this.f6571u.trim());
                 }
                 if (ImageAppTotalService.this.f6546W != null) {
@@ -2669,12 +2669,12 @@ public class ImageAppTotalService extends Service implements LeScanCallback, Lis
         boolean z2;
         boolean z3;
         boolean z4;
-        C2261g.m9769c("ImageAppTotalService", "GPS Check Start");
+        ImageAppLog.error("ImageAppTotalService", "GPS Check Start");
         if (location2 == null || location == null) {
             return true;
         }
         long time = location.getTime() - location2.getTime();
-        C2261g.m9769c("ImageAppTotalService", "timeDelta:" + time);
+        ImageAppLog.error("ImageAppTotalService", "timeDelta:" + time);
         boolean z5 = time > 120000;
         if (time < -120000) {
             z = true;
@@ -2686,20 +2686,20 @@ public class ImageAppTotalService extends Service implements LeScanCallback, Lis
         } else {
             z2 = false;
         }
-        C2261g.m9769c("ImageAppTotalService", "isSignificantlyNewer:" + z5);
-        C2261g.m9769c("ImageAppTotalService", "isSignificantlyOlder:" + z);
-        C2261g.m9769c("ImageAppTotalService", "isNewer:" + z2);
+        ImageAppLog.error("ImageAppTotalService", "isSignificantlyNewer:" + z5);
+        ImageAppLog.error("ImageAppTotalService", "isSignificantlyOlder:" + z);
+        ImageAppLog.error("ImageAppTotalService", "isNewer:" + z2);
         if (z5) {
-            C2261g.m9769c("ImageAppTotalService", "New Data1");
+            ImageAppLog.error("ImageAppTotalService", "New Data1");
             return true;
         } else if (z) {
-            C2261g.m9769c("ImageAppTotalService", "Invalid Data1");
+            ImageAppLog.error("ImageAppTotalService", "Invalid Data1");
             return false;
         } else {
-            C2261g.m9769c("ImageAppTotalService", "location.getAccuracy():" + location.getAccuracy());
-            C2261g.m9769c("ImageAppTotalService", "currentBestLocation.getAccuracy():" + location2.getAccuracy());
+            ImageAppLog.error("ImageAppTotalService", "location.getAccuracy():" + location.getAccuracy());
+            ImageAppLog.error("ImageAppTotalService", "currentBestLocation.getAccuracy():" + location2.getAccuracy());
             int accuracy = (int) (location.getAccuracy() - location2.getAccuracy());
-            C2261g.m9769c("ImageAppTotalService", "accuracyDelta:" + accuracy);
+            ImageAppLog.error("ImageAppTotalService", "accuracyDelta:" + accuracy);
             boolean z6 = accuracy > 0;
             if (accuracy < 0) {
                 z3 = true;
@@ -2711,25 +2711,25 @@ public class ImageAppTotalService extends Service implements LeScanCallback, Lis
             } else {
                 z4 = false;
             }
-            C2261g.m9769c("ImageAppTotalService", "isLessAccurate:" + z6);
-            C2261g.m9769c("ImageAppTotalService", "isMoreAccurate:" + z3);
-            C2261g.m9769c("ImageAppTotalService", "isSignificantlyLessAccurate:" + z4);
+            ImageAppLog.error("ImageAppTotalService", "isLessAccurate:" + z6);
+            ImageAppLog.error("ImageAppTotalService", "isMoreAccurate:" + z3);
+            ImageAppLog.error("ImageAppTotalService", "isSignificantlyLessAccurate:" + z4);
             boolean b = m8844b(location.getProvider(), location2.getProvider());
-            C2261g.m9769c("ImageAppTotalService", "isFromSameProvider:" + b);
+            ImageAppLog.error("ImageAppTotalService", "isFromSameProvider:" + b);
             if (z3) {
-                C2261g.m9769c("ImageAppTotalService", "New Data2");
+                ImageAppLog.error("ImageAppTotalService", "New Data2");
                 return true;
             } else if (z2 && !z6) {
-                C2261g.m9769c("ImageAppTotalService", "New Data3");
+                ImageAppLog.error("ImageAppTotalService", "New Data3");
                 return true;
             } else if (z2 && !z4 && b) {
-                C2261g.m9769c("ImageAppTotalService", "New Data4");
+                ImageAppLog.error("ImageAppTotalService", "New Data4");
                 return true;
             } else if (!z2 || z4 || !location.getProvider().equalsIgnoreCase("gps")) {
-                C2261g.m9769c("ImageAppTotalService", "Invalid Data2");
+                ImageAppLog.error("ImageAppTotalService", "Invalid Data2");
                 return false;
             } else {
-                C2261g.m9769c("ImageAppTotalService", "New Data5");
+                ImageAppLog.error("ImageAppTotalService", "New Data5");
                 return true;
             }
         }
@@ -2753,7 +2753,7 @@ public class ImageAppTotalService extends Service implements LeScanCallback, Lis
         }
         this.f6536M = false;
         this.f6539P = false;
-        this.f6524A = new C1468ao(this.f6571u.trim());
+        this.f6524A = new StatusCommand(this.f6571u.trim());
         final C1501d dVar = new C1501d(this.f6571u.trim());
         if (!(this.f6524A == null || dVar == null)) {
             new Thread(new Runnable() {
@@ -2804,7 +2804,7 @@ public class ImageAppTotalService extends Service implements LeScanCallback, Lis
                     }
                     if (ImageAppTotalService.this.f6560j != null) {
                         ImageAppTotalService.this.f6560j.mo5861c();
-                        C2043f b = C2253z.m9688b(ImageAppTotalService.this.getApplicationContext(), false);
+                        C2043f b = ServiceFactory.m9688b(ImageAppTotalService.this.getApplicationContext(), false);
                         if (b != null) {
                             b.mo5327d();
                         }
@@ -2850,7 +2850,7 @@ public class ImageAppTotalService extends Service implements LeScanCallback, Lis
                         return true;
                     }
                     String className = ((RunningTaskInfo) ((ActivityManager) getApplicationContext().getSystemService("activity")).getRunningTasks(1).get(0)).topActivity.getClassName();
-                    C2261g.m9769c("ImageAppTotalService", "className:" + className);
+                    ImageAppLog.error("ImageAppTotalService", "className:" + className);
                     if (className == null) {
                         return true;
                     }

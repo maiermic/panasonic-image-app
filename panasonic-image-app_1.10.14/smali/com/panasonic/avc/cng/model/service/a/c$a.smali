@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/panasonic/avc/cng/model/service/a/c;
+    value = Lcom/panasonic/avc/cng/model/service/a/BrowserServiceCamera;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -22,7 +22,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/panasonic/avc/cng/model/service/a/c;
+.field final synthetic a:Lcom/panasonic/avc/cng/model/service/a/BrowserServiceCamera;
 
 .field private b:I
 
@@ -56,12 +56,12 @@
 
 
 # direct methods
-.method public constructor <init>(Lcom/panasonic/avc/cng/model/service/a/c;III)V
+.method public constructor <init>(Lcom/panasonic/avc/cng/model/service/a/BrowserServiceCamera;III)V
     .locals 2
 
     .prologue
     .line 953
-    iput-object p1, p0, Lcom/panasonic/avc/cng/model/service/a/c$a;->a:Lcom/panasonic/avc/cng/model/service/a/c;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/model/service/a/c$a;->a:Lcom/panasonic/avc/cng/model/service/a/BrowserServiceCamera;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

@@ -97,13 +97,13 @@
     return-object v0
 .end method
 
-.method public static a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/setting/g;)Landroid/widget/ArrayAdapter;
+.method public static a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;)Landroid/widget/ArrayAdapter;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Landroid/app/Activity;",
-            "Lcom/panasonic/avc/cng/view/setting/g;",
+            "Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;",
             ")",
             "Landroid/widget/ArrayAdapter",
             "<",
@@ -114,7 +114,7 @@
 
     .prologue
     .line 848
-    invoke-virtual {p1}, Lcom/panasonic/avc/cng/view/setting/g;->i()Ljava/util/List;
+    invoke-virtual {p1}, Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;->i()Ljava/util/List;
 
     move-result-object v0
 
@@ -155,13 +155,13 @@
     return-object v0
 .end method
 
-.method public static a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/smartoperation/i;)Landroid/widget/ArrayAdapter;
+.method public static a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;)Landroid/widget/ArrayAdapter;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Landroid/app/Activity;",
-            "Lcom/panasonic/avc/cng/view/smartoperation/i;",
+            "Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;",
             ")",
             "Landroid/widget/ArrayAdapter",
             "<",
@@ -172,7 +172,7 @@
 
     .prologue
     .line 828
-    invoke-virtual {p1}, Lcom/panasonic/avc/cng/view/smartoperation/i;->v()Ljava/util/List;
+    invoke-virtual {p1}, Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;->v()Ljava/util/List;
 
     move-result-object v0
 
@@ -288,14 +288,14 @@
     invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/b/e$a;->join()V
 
     .line 586
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/b/e$a;->a()Lcom/panasonic/avc/cng/model/c/h;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/b/e$a;->a()Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
     move-result-object v2
 
     .line 589
     new-instance v0, Lcom/panasonic/avc/cng/view/b/e$b;
 
-    invoke-direct {v0, v2}, Lcom/panasonic/avc/cng/view/b/e$b;-><init>(Lcom/panasonic/avc/cng/model/c/h;)V
+    invoke-direct {v0, v2}, Lcom/panasonic/avc/cng/view/b/e$b;-><init>(Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;)V
     :try_end_0
     .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -340,7 +340,7 @@
 
     invoke-direct {v2, p0, v0}, Lcom/panasonic/avc/cng/view/b/e$3;-><init>(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;)V
 
-    invoke-static {p0, v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;Lcom/panasonic/avc/cng/view/b/a$c;)V
+    invoke-static {p0, v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;Lcom/panasonic/avc/cng/view/b/a$c;)V
 
     .line 1492
     return-void
@@ -375,7 +375,7 @@
     .line 1425
     sget-object v0, Lcom/panasonic/avc/cng/view/b/b$a;->fA:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {p0, v0, v1}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {p0, v0, v1}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     .line 1426
     return-void
@@ -453,7 +453,7 @@
 
     invoke-direct {v2, p0, v0, p1, p2}, Lcom/panasonic/avc/cng/view/b/e$14;-><init>(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/widget/ArrayAdapter;Lcom/panasonic/avc/cng/view/b/a$c;)V
 
-    invoke-static {p0, v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;Lcom/panasonic/avc/cng/view/b/a$c;)V
+    invoke-static {p0, v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;Lcom/panasonic/avc/cng/view/b/a$c;)V
 
     .line 934
     return-void
@@ -500,7 +500,7 @@
 
     invoke-direct/range {v0 .. v5}, Lcom/panasonic/avc/cng/view/b/e$15;-><init>(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Ljava/util/List;Lcom/panasonic/avc/cng/view/cameraconnect/j;Lcom/panasonic/avc/cng/view/b/a$a;)V
 
-    invoke-static {p0, v2, v6, v0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;Lcom/panasonic/avc/cng/view/b/a$c;)V
+    invoke-static {p0, v2, v6, v0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;Lcom/panasonic/avc/cng/view/b/a$c;)V
 
     .line 1108
     :cond_0
@@ -518,7 +518,7 @@
 
     invoke-direct {v1, p3, p0, p1, p2}, Lcom/panasonic/avc/cng/view/b/e$13;-><init>(Lcom/panasonic/avc/cng/view/cameraconnect/a;Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Lcom/panasonic/avc/cng/view/b/a$a;)V
 
-    invoke-static {p0, p1, v0, v1}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;Lcom/panasonic/avc/cng/view/b/a$c;)V
+    invoke-static {p0, p1, v0, v1}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;Lcom/panasonic/avc/cng/view/b/a$c;)V
 
     .line 551
     return-void
@@ -540,7 +540,7 @@
     return-void
 .end method
 
-.method public static a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/play/browser/a;Lcom/panasonic/avc/cng/view/smartoperation/i;Lcom/panasonic/avc/cng/view/smartoperation/h;)V
+.method public static a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/play/browser/a;Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;Lcom/panasonic/avc/cng/view/smartoperation/h;)V
     .locals 6
 
     .prologue
@@ -576,7 +576,7 @@
     if-eqz p2, :cond_1
 
     .line 139
-    invoke-virtual {p2}, Lcom/panasonic/avc/cng/view/smartoperation/i;->w()Z
+    invoke-virtual {p2}, Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;->w()Z
 
     move-result v0
 
@@ -642,7 +642,7 @@
 
     invoke-direct {v1, p0}, Lcom/panasonic/avc/cng/view/b/e$1;-><init>(Landroid/app/Activity;)V
 
-    invoke-static {p0, v0, v2, v1}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;Lcom/panasonic/avc/cng/view/b/a$c;)V
+    invoke-static {p0, v0, v2, v1}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;Lcom/panasonic/avc/cng/view/b/a$c;)V
 
     .line 160
     return-void
@@ -661,7 +661,7 @@
     goto :goto_0
 .end method
 
-.method public static a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/play/browser/a;Lcom/panasonic/avc/cng/view/smartoperation/i;Lcom/panasonic/avc/cng/view/smartoperation/h;Lcom/panasonic/avc/cng/view/setting/g;)V
+.method public static a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/play/browser/a;Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;Lcom/panasonic/avc/cng/view/smartoperation/h;Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;)V
     .locals 8
 
     .prologue
@@ -683,9 +683,9 @@
 
     move-object v6, p4
 
-    invoke-direct/range {v0 .. v6}, Lcom/panasonic/avc/cng/view/b/e$12;-><init>(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Lcom/panasonic/avc/cng/view/play/browser/a;Lcom/panasonic/avc/cng/view/smartoperation/i;Lcom/panasonic/avc/cng/view/smartoperation/h;Lcom/panasonic/avc/cng/view/setting/g;)V
+    invoke-direct/range {v0 .. v6}, Lcom/panasonic/avc/cng/view/b/e$12;-><init>(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Lcom/panasonic/avc/cng/view/play/browser/a;Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;Lcom/panasonic/avc/cng/view/smartoperation/h;Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;)V
 
-    invoke-static {p0, v2, v7, v0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;Lcom/panasonic/avc/cng/view/b/a$c;)V
+    invoke-static {p0, v2, v7, v0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;Lcom/panasonic/avc/cng/view/b/a$c;)V
 
     .line 459
     return-void
@@ -741,18 +741,18 @@
 
     invoke-direct {v2, p1, p0}, Lcom/panasonic/avc/cng/view/b/e$18;-><init>(Lcom/panasonic/avc/cng/view/setting/ao;Landroid/app/Activity;)V
 
-    invoke-static {p0, v1, v0, v2}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;Lcom/panasonic/avc/cng/view/b/a$c;)V
+    invoke-static {p0, v1, v0, v2}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;Lcom/panasonic/avc/cng/view/b/a$c;)V
 
     .line 1306
     return-void
 .end method
 
-.method public static a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/setting/g;Lcom/panasonic/avc/cng/view/b/a$c;)V
+.method public static a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;Lcom/panasonic/avc/cng/view/b/a$c;)V
     .locals 1
 
     .prologue
     .line 987
-    invoke-static {p0, p1}, Lcom/panasonic/avc/cng/view/b/e;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/setting/g;)Landroid/widget/ArrayAdapter;
+    invoke-static {p0, p1}, Lcom/panasonic/avc/cng/view/b/e;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;)Landroid/widget/ArrayAdapter;
 
     move-result-object v0
 
@@ -780,7 +780,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {p0, v0, v1}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {p0, v0, v1}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     .line 980
     :goto_0
@@ -793,12 +793,12 @@
     goto :goto_0
 .end method
 
-.method public static a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/smartoperation/i;Lcom/panasonic/avc/cng/view/b/a$c;)V
+.method public static a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;Lcom/panasonic/avc/cng/view/b/a$c;)V
     .locals 1
 
     .prologue
     .line 961
-    invoke-static {p0, p1}, Lcom/panasonic/avc/cng/view/b/e;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/smartoperation/i;)Landroid/widget/ArrayAdapter;
+    invoke-static {p0, p1}, Lcom/panasonic/avc/cng/view/b/e;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;)Landroid/widget/ArrayAdapter;
 
     move-result-object v0
 
@@ -826,7 +826,7 @@
 
     invoke-direct {v2, p0, p1, v0}, Lcom/panasonic/avc/cng/view/b/e$6;-><init>(Landroid/app/Activity;Ljava/lang/String;Lcom/panasonic/avc/cng/view/b/b$a;)V
 
-    invoke-static {p0, v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;Lcom/panasonic/avc/cng/view/b/a$c;)V
+    invoke-static {p0, v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;Lcom/panasonic/avc/cng/view/b/a$c;)V
 
     .line 1603
     :cond_0
@@ -847,25 +847,25 @@
 
     invoke-direct {v2, p0, v0, p1}, Lcom/panasonic/avc/cng/view/b/e$8;-><init>(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Z)V
 
-    invoke-static {p0, v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;Lcom/panasonic/avc/cng/view/b/a$c;)V
+    invoke-static {p0, v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;Lcom/panasonic/avc/cng/view/b/a$c;)V
 
     .line 1634
     return-void
 .end method
 
-.method public static a(Landroid/content/Context;Lcom/panasonic/avc/cng/view/play/browser/a;Lcom/panasonic/avc/cng/view/parts/t;)V
+.method public static a(Landroid/content/Context;Lcom/panasonic/avc/cng/view/play/browser/a;Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;)V
     .locals 3
 
     .prologue
     .line 78
-    invoke-static {}, Lcom/panasonic/avc/cng/model/service/z;->f()Lcom/panasonic/avc/cng/model/service/a;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->f()Lcom/panasonic/avc/cng/model/service/a;
 
     move-result-object v0
 
     .line 79
     if-eqz v0, :cond_1
 
-    instance-of v0, v0, Lcom/panasonic/avc/cng/model/service/a/c;
+    instance-of v0, v0, Lcom/panasonic/avc/cng/model/service/a/BrowserServiceCamera;
 
     if-eqz v0, :cond_1
 
@@ -883,7 +883,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {p0, v0, v1}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {p0, v0, v1}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     .line 126
     :cond_0
@@ -902,7 +902,7 @@
     if-eqz p2, :cond_0
 
     .line 92
-    invoke-virtual {p2}, Lcom/panasonic/avc/cng/view/parts/t;->q()Ljava/util/ArrayList;
+    invoke-virtual {p2}, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->q()Ljava/util/ArrayList;
 
     move-result-object v0
 
@@ -958,7 +958,7 @@
 
     sget-object v0, Lcom/panasonic/avc/cng/view/b/b$a;->x:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {p0, v0, v1}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {p0, v0, v1}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     goto :goto_0
 
@@ -986,12 +986,12 @@
     goto :goto_1
 .end method
 
-.method public static a(Landroid/content/Context;Lcom/panasonic/avc/cng/view/play/splitdelete/c;)V
+.method public static a(Landroid/content/Context;Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;)V
     .locals 4
 
     .prologue
     .line 1313
-    invoke-virtual {p1}, Lcom/panasonic/avc/cng/view/play/splitdelete/c;->q()[Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;->q()[Ljava/lang/String;
 
     move-result-object v0
 
@@ -1020,7 +1020,7 @@
 
     invoke-direct {v3, p0}, Lcom/panasonic/avc/cng/view/b/e$2;-><init>(Landroid/content/Context;)V
 
-    invoke-static {v0, v2, v1, v3}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;Lcom/panasonic/avc/cng/view/b/a$c;)V
+    invoke-static {v0, v2, v1, v3}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;Lcom/panasonic/avc/cng/view/b/a$c;)V
 
     .line 1325
     return-void
@@ -1052,11 +1052,11 @@
 
     .line 1337
     :pswitch_0
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
@@ -1081,10 +1081,10 @@
     .line 1342
     sget-object v0, Lcom/panasonic/avc/cng/view/b/b$a;->P:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {p1, v0, v2}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {p1, v0, v2}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     .line 1343
-    invoke-static {p1, v3}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;I)V
+    invoke-static {p1, v3}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;I)V
 
     goto :goto_0
 
@@ -1092,17 +1092,17 @@
     :cond_1
     sget-object v0, Lcom/panasonic/avc/cng/view/b/b$a;->P:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {p1, v0, v2}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {p1, v0, v2}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     goto :goto_0
 
     .line 1355
     :pswitch_1
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
@@ -1127,10 +1127,10 @@
     .line 1360
     sget-object v0, Lcom/panasonic/avc/cng/view/b/b$a;->cu:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {p1, v0, v2}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {p1, v0, v2}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     .line 1361
-    invoke-static {p1, v3}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;I)V
+    invoke-static {p1, v3}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;I)V
 
     goto :goto_0
 
@@ -1138,7 +1138,7 @@
     :cond_2
     sget-object v0, Lcom/panasonic/avc/cng/view/b/b$a;->cu:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {p1, v0, v2}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {p1, v0, v2}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     goto :goto_0
 
@@ -1152,7 +1152,7 @@
     .end packed-switch
 .end method
 
-.method public static a(Lcom/panasonic/avc/cng/view/play/browser/a;Lcom/panasonic/avc/cng/view/smartoperation/i;Lcom/panasonic/avc/cng/view/smartoperation/h;)V
+.method public static a(Lcom/panasonic/avc/cng/view/play/browser/a;Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;Lcom/panasonic/avc/cng/view/smartoperation/h;)V
     .locals 0
 
     .prologue
@@ -1172,7 +1172,7 @@
     if-eqz p1, :cond_2
 
     .line 185
-    invoke-virtual {p1}, Lcom/panasonic/avc/cng/view/smartoperation/i;->A()V
+    invoke-virtual {p1}, Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;->A()V
 
     goto :goto_0
 
@@ -1183,12 +1183,12 @@
     goto :goto_0
 .end method
 
-.method public static a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/threebox/c;)[Ljava/lang/String;
+.method public static a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;)[Ljava/lang/String;
     .locals 4
 
     .prologue
     .line 557
-    invoke-virtual {p1}, Lcom/panasonic/avc/cng/view/threebox/c;->h()Ljava/util/List;
+    invoke-virtual {p1}, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;->h()Ljava/util/List;
 
     move-result-object v2
 
@@ -1239,27 +1239,27 @@
     return-object v3
 .end method
 
-.method public static a(Landroid/content/Context;Lcom/panasonic/avc/cng/view/play/movieslideshow/c;)[Ljava/lang/String;
+.method public static a(Landroid/content/Context;Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowViewModel;)[Ljava/lang/String;
     .locals 9
 
     .prologue
     const/4 v2, 0x0
 
     .line 686
-    invoke-virtual {p1}, Lcom/panasonic/avc/cng/view/play/movieslideshow/c;->i()Lcom/panasonic/avc/cng/view/smartoperation/b;
+    invoke-virtual {p1}, Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowViewModel;->i()Lcom/panasonic/avc/cng/view/smartoperation/GetSelectFormatList;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/smartoperation/b;->j()I
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/smartoperation/GetSelectFormatList;->j()I
 
     move-result v0
 
     .line 688
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v1
 
@@ -1303,11 +1303,11 @@
 
     .line 701
     :cond_1
-    invoke-virtual {p1}, Lcom/panasonic/avc/cng/view/play/movieslideshow/c;->i()Lcom/panasonic/avc/cng/view/smartoperation/b;
+    invoke-virtual {p1}, Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowViewModel;->i()Lcom/panasonic/avc/cng/view/smartoperation/GetSelectFormatList;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/smartoperation/b;->g()[Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/smartoperation/GetSelectFormatList;->g()[Ljava/lang/String;
 
     move-result-object v0
 
@@ -1359,11 +1359,11 @@
     invoke-direct {v5}, Ljava/util/ArrayList;-><init>()V
 
     .line 712
-    invoke-virtual {p1}, Lcom/panasonic/avc/cng/view/play/movieslideshow/c;->i()Lcom/panasonic/avc/cng/view/smartoperation/b;
+    invoke-virtual {p1}, Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowViewModel;->i()Lcom/panasonic/avc/cng/view/smartoperation/GetSelectFormatList;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/smartoperation/b;->h()Ljava/util/List;
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/smartoperation/GetSelectFormatList;->h()Ljava/util/List;
 
     move-result-object v6
 
@@ -1465,7 +1465,7 @@
     goto/16 :goto_0
 .end method
 
-.method public static a(Landroid/content/Context;Lcom/panasonic/avc/cng/view/play/multiphotoframe/c;)[Ljava/lang/String;
+.method public static a(Landroid/content/Context;Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameBrowseViewModel;)[Ljava/lang/String;
     .locals 9
 
     .prologue
@@ -1511,20 +1511,20 @@
     aput-object v1, v4, v0
 
     .line 764
-    invoke-virtual {p1}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/c;->j()Lcom/panasonic/avc/cng/view/smartoperation/b;
+    invoke-virtual {p1}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameBrowseViewModel;->j()Lcom/panasonic/avc/cng/view/smartoperation/GetSelectFormatList;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/smartoperation/b;->j()I
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/smartoperation/GetSelectFormatList;->j()I
 
     move-result v0
 
     .line 766
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v1
 
@@ -1545,11 +1545,11 @@
     invoke-direct {v5}, Ljava/util/ArrayList;-><init>()V
 
     .line 774
-    invoke-virtual {p1}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/c;->j()Lcom/panasonic/avc/cng/view/smartoperation/b;
+    invoke-virtual {p1}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameBrowseViewModel;->j()Lcom/panasonic/avc/cng/view/smartoperation/GetSelectFormatList;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/smartoperation/b;->h()Ljava/util/List;
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/smartoperation/GetSelectFormatList;->h()Ljava/util/List;
 
     move-result-object v6
 
@@ -1656,11 +1656,11 @@
 
     .prologue
     .line 1377
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
@@ -1683,7 +1683,7 @@
     if-eqz v0, :cond_0
 
     .line 1382
-    invoke-static {}, Lcom/panasonic/avc/cng/view/b/d;->a()V
+    invoke-static {}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a()V
 
     .line 1385
     :cond_0
@@ -1704,7 +1704,7 @@
 
     invoke-direct {v2, p0, v0}, Lcom/panasonic/avc/cng/view/b/e$4;-><init>(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;)V
 
-    invoke-static {p0, v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;Lcom/panasonic/avc/cng/view/b/a$c;)V
+    invoke-static {p0, v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;Lcom/panasonic/avc/cng/view/b/a$c;)V
 
     .line 1525
     return-void
@@ -1776,14 +1776,14 @@
 
     invoke-direct {v1, p0, v2, v3, p1}, Lcom/panasonic/avc/cng/view/b/e$16;-><init>(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/widget/ArrayAdapter;Lcom/panasonic/avc/cng/view/b/a$a;)V
 
-    invoke-static {p0, v2, v0, v1}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;Lcom/panasonic/avc/cng/view/b/a$c;)V
+    invoke-static {p0, v2, v0, v1}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;Lcom/panasonic/avc/cng/view/b/a$c;)V
 
     .line 1215
     :cond_1
     return-void
 .end method
 
-.method public static b(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/play/browser/a;Lcom/panasonic/avc/cng/view/smartoperation/i;Lcom/panasonic/avc/cng/view/smartoperation/h;)V
+.method public static b(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/play/browser/a;Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;Lcom/panasonic/avc/cng/view/smartoperation/h;)V
     .locals 5
 
     .prologue
@@ -1810,7 +1810,7 @@
     .line 202
     sget-object v3, Lcom/panasonic/avc/cng/view/b/b$a;->X:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {p0, v3, v0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {p0, v3, v0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     .line 204
     invoke-static {}, Lcom/panasonic/avc/cng/view/b/e;->a()I
@@ -1867,7 +1867,7 @@
 
     new-instance v1, Lcom/panasonic/avc/cng/view/b/e$11;
 
-    invoke-direct {v1, p0, p1, p2, p3}, Lcom/panasonic/avc/cng/view/b/e$11;-><init>(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/play/browser/a;Lcom/panasonic/avc/cng/view/smartoperation/i;Lcom/panasonic/avc/cng/view/smartoperation/h;)V
+    invoke-direct {v1, p0, p1, p2, p3}, Lcom/panasonic/avc/cng/view/b/e$11;-><init>(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/play/browser/a;Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;Lcom/panasonic/avc/cng/view/smartoperation/h;)V
 
     invoke-direct {v0, v1}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;)V
 
@@ -1893,7 +1893,7 @@
     if-eqz p2, :cond_4
 
     .line 223
-    invoke-virtual {p2}, Lcom/panasonic/avc/cng/view/smartoperation/i;->x()Z
+    invoke-virtual {p2}, Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;->x()Z
 
     move-result v0
 
@@ -1917,7 +1917,7 @@
 
     .line 304
     :cond_6
-    invoke-static {p0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;)V
+    invoke-static {p0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;)V
 
     .line 307
     if-eqz p1, :cond_7
@@ -1932,7 +1932,7 @@
     if-eqz p2, :cond_8
 
     .line 313
-    invoke-virtual {p2}, Lcom/panasonic/avc/cng/view/smartoperation/i;->q()Z
+    invoke-virtual {p2}, Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;->q()Z
 
     goto :goto_2
 
@@ -1966,7 +1966,7 @@
     if-eqz p2, :cond_b
 
     .line 326
-    invoke-virtual {p2}, Lcom/panasonic/avc/cng/view/smartoperation/i;->x()Z
+    invoke-virtual {p2}, Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;->x()Z
 
     move-result v0
 
@@ -2004,7 +2004,7 @@
     if-eqz p2, :cond_f
 
     .line 336
-    invoke-virtual {p2, v1, v2}, Lcom/panasonic/avc/cng/view/smartoperation/i;->a(ZZ)V
+    invoke-virtual {p2, v1, v2}, Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;->a(ZZ)V
 
     goto :goto_3
 
@@ -2022,7 +2022,7 @@
     if-eqz p2, :cond_11
 
     .line 351
-    invoke-virtual {p2}, Lcom/panasonic/avc/cng/view/smartoperation/i;->z()V
+    invoke-virtual {p2}, Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;->z()V
 
     goto :goto_2
 
@@ -2061,7 +2061,7 @@
 
     invoke-direct {v2, p0, p1, v0}, Lcom/panasonic/avc/cng/view/b/e$9;-><init>(Landroid/app/Activity;Ljava/lang/String;Lcom/panasonic/avc/cng/view/b/b$a;)V
 
-    invoke-static {p0, v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;Lcom/panasonic/avc/cng/view/b/a$c;)V
+    invoke-static {p0, v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;Lcom/panasonic/avc/cng/view/b/a$c;)V
 
     .line 1655
     :cond_0
@@ -2082,7 +2082,7 @@
 
     invoke-direct {v2, p0, v0}, Lcom/panasonic/avc/cng/view/b/e$5;-><init>(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;)V
 
-    invoke-static {p0, v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;Lcom/panasonic/avc/cng/view/b/a$c;)V
+    invoke-static {p0, v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;Lcom/panasonic/avc/cng/view/b/a$c;)V
 
     .line 1563
     return-void
@@ -2149,7 +2149,7 @@
 
     invoke-direct {v3, p0, v1, v2, p1}, Lcom/panasonic/avc/cng/view/b/e$17;-><init>(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/widget/ArrayAdapter;Lcom/panasonic/avc/cng/view/b/a$a;)V
 
-    invoke-static {p0, v1, v0, v3}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;Lcom/panasonic/avc/cng/view/b/a$c;)V
+    invoke-static {p0, v1, v0, v3}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;Lcom/panasonic/avc/cng/view/b/a$c;)V
 
     .line 1282
     :cond_1
@@ -2232,7 +2232,7 @@
     invoke-virtual {v2, v3, v0}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 1581
-    invoke-static {p0, v1, v2}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {p0, v1, v2}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     .line 1582
     return-void
@@ -2252,7 +2252,7 @@
 
     invoke-direct {v2, p0, v0}, Lcom/panasonic/avc/cng/view/b/e$7;-><init>(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;)V
 
-    invoke-static {p0, v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;Lcom/panasonic/avc/cng/view/b/a$c;)V
+    invoke-static {p0, v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;Lcom/panasonic/avc/cng/view/b/a$c;)V
 
     .line 1618
     return-void

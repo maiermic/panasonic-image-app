@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/panasonic/avc/cng/view/smartoperation/b;
+    value = Lcom/panasonic/avc/cng/view/smartoperation/GetSelectFormatList;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

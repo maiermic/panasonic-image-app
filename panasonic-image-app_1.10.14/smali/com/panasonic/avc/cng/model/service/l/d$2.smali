@@ -45,11 +45,11 @@
 
     .prologue
     .line 338
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
@@ -75,11 +75,11 @@
     :try_start_0
     iget-object v2, p0, Lcom/panasonic/avc/cng/model/service/l/d$2;->b:Lcom/panasonic/avc/cng/model/service/l/d;
 
-    invoke-static {v2}, Lcom/panasonic/avc/cng/model/service/l/d;->b(Lcom/panasonic/avc/cng/model/service/l/d;)Lcom/panasonic/avc/cng/core/a/ap;
+    invoke-static {v2}, Lcom/panasonic/avc/cng/model/service/l/d;->b(Lcom/panasonic/avc/cng/model/service/l/d;)Lcom/panasonic/avc/cng/core/a/StatusVianaCommand;
 
     move-result-object v2
 
-    invoke-virtual {v2}, Lcom/panasonic/avc/cng/core/a/ap;->c()Ljava/lang/String;
+    invoke-virtual {v2}, Lcom/panasonic/avc/cng/core/a/StatusVianaCommand;->c()Ljava/lang/String;
 
     move-result-object v2
 

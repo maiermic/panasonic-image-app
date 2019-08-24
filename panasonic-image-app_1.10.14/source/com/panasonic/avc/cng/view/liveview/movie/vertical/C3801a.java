@@ -30,7 +30,7 @@ public class C3801a {
     /* access modifiers changed from: private */
 
     /* renamed from: b */
-    public C3804b f12444b;
+    public LiveViewVerticalViewModel f12444b;
 
     /* renamed from: c */
     private C4230p f12445c = null;
@@ -153,7 +153,7 @@ public class C3801a {
     }
 
     /* renamed from: a */
-    public void mo8965a(Activity activity, C3804b bVar) {
+    public void mo8965a(Activity activity, LiveViewVerticalViewModel bVar) {
         this.f12443a = activity;
         this.f12444b = bVar;
         m15180c();

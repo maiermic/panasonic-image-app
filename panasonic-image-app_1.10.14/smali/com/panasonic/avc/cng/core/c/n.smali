@@ -192,14 +192,14 @@
     .prologue
     .line 177
     :try_start_0
-    invoke-static {p1}, Lcom/panasonic/avc/cng/model/service/z;->a(Landroid/content/Context;)Lcom/panasonic/avc/cng/core/c/s;
+    invoke-static {p1}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->a(Landroid/content/Context;)Lcom/panasonic/avc/cng/core/c/Picmate;
 
     move-result-object v0
 
     .line 178
     const/4 v1, 0x5
 
-    invoke-virtual {v0, p0, v1}, Lcom/panasonic/avc/cng/core/c/s;->b(Lcom/panasonic/avc/cng/core/c/n;I)Landroid/graphics/Bitmap;
+    invoke-virtual {v0, p0, v1}, Lcom/panasonic/avc/cng/core/c/Picmate;->b(Lcom/panasonic/avc/cng/core/c/n;I)Landroid/graphics/Bitmap;
     :try_end_0
     .catch Lcom/panasonic/avc/cng/core/c/j; {:try_start_0 .. :try_end_0} :catch_0
 

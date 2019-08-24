@@ -12,9 +12,9 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    new-instance v0, Lcom/google/android/gms/e/af;
+    new-instance v0, Lcom/google/android/gms/e/GoogleTagManager;
 
-    invoke-direct {v0}, Lcom/google/android/gms/e/af;-><init>()V
+    invoke-direct {v0}, Lcom/google/android/gms/e/GoogleTagManager;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/e/bt;->b:Lcom/google/android/gms/e/bu;
 

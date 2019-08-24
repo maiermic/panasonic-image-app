@@ -9,7 +9,7 @@ import com.panasonic.avc.cng.model.C1892f;
 import com.panasonic.avc.cng.model.service.p056c.C2020c;
 import com.panasonic.avc.cng.model.service.p068o.C2209a;
 import com.panasonic.avc.cng.p038a.C1342a;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.view.smartoperation.PicmateSendActivity.C5872b;
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -619,9 +619,9 @@ public class C5565an extends C1342a {
                 }
             }
             if (this.f17260m == null) {
-                C2261g.m9763a("★WifiConnectDialog:", "ResultList=NULL");
+                ImageAppLog.debug("★WifiConnectDialog:", "ResultList=NULL");
             } else {
-                C2261g.m9763a("★WifiConnectDialog:", "ResultList.size=" + String.valueOf(this.f17260m.size()));
+                ImageAppLog.debug("★WifiConnectDialog:", "ResultList.size=" + String.valueOf(this.f17260m.size()));
             }
             if (bVar == null) {
                 return;

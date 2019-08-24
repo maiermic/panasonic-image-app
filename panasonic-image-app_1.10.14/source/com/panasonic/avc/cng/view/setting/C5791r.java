@@ -6,7 +6,7 @@ import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.C1892f;
 import com.panasonic.avc.cng.model.p051c.C1844d;
 import com.panasonic.avc.cng.model.service.C1985b;
-import com.panasonic.avc.cng.model.service.C2253z;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
 import com.panasonic.avc.cng.p038a.C1342a;
 import com.panasonic.avc.cng.view.setting.C5541am.C5563o;
 
@@ -35,7 +35,7 @@ public class C5791r extends C1342a {
         if (C1712b.m6919c() != null) {
             this.f17774c = C1712b.m6919c().mo4896a();
             if (this.f17774c != null) {
-                this.f17775d = C2253z.m9679a(this.f3706a, this.f17774c);
+                this.f17775d = ServiceFactory.m9679a(this.f3706a, this.f17774c);
                 if (this.f17775d != null) {
                     this.f17777f = this.f17775d.mo5189b();
                 }

@@ -10,7 +10,7 @@ import android.os.Handler;
 import android.preference.PreferenceManager;
 import android.support.p000v4.content.FileProvider;
 import com.panasonic.avc.cng.application.p039a.C1350a;
-import com.panasonic.avc.cng.core.p040a.C1543y;
+import com.panasonic.avc.cng.core.p040a.ModeChangeCommand;
 import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.C1833c;
@@ -18,19 +18,19 @@ import com.panasonic.avc.cng.model.C1878d;
 import com.panasonic.avc.cng.model.C1892f;
 import com.panasonic.avc.cng.model.C1909k;
 import com.panasonic.avc.cng.model.C1910l;
-import com.panasonic.avc.cng.model.p051c.C1846e;
-import com.panasonic.avc.cng.model.p051c.C1853h;
+import com.panasonic.avc.cng.model.p051c.CameraStatus;
+import com.panasonic.avc.cng.model.p051c.ParseTagHighlightSceneInfo;
 import com.panasonic.avc.cng.model.service.C1921a;
 import com.panasonic.avc.cng.model.service.C1985b.C1986a;
 import com.panasonic.avc.cng.model.service.C2028e;
-import com.panasonic.avc.cng.model.service.C2253z;
-import com.panasonic.avc.cng.model.service.p054a.C1936c;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
+import com.panasonic.avc.cng.model.service.p054a.BrowserServiceCamera;
 import com.panasonic.avc.cng.model.service.p054a.C1941d;
 import com.panasonic.avc.cng.model.service.p054a.C1948f;
 import com.panasonic.avc.cng.p038a.C1344c;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.view.p072a.C2291c;
-import com.panasonic.avc.cng.view.parts.C4245t;
+import com.panasonic.avc.cng.view.parts.BrowserViewModel;
 import com.panasonic.avc.cng.view.parts.C4262x;
 import com.panasonic.avc.cng.view.smartoperation.C5919e;
 import com.panasonic.avc.cng.view.smartoperation.C5919e.C5932b;
@@ -215,13 +215,13 @@ public class C4459i extends C2291c {
         int i;
         int i2 = 0;
         super(context, handler);
-        C1921a f = C2253z.m9703f();
+        C1921a f = ServiceFactory.m9703f();
         if (f != null) {
             i = f.mo5034b();
         } else {
             i = 0;
         }
-        if (f instanceof C1936c) {
+        if (f instanceof BrowserServiceCamera) {
             while (i2 < i) {
                 this.f14713x.add(new C4262x(null, i2, this.f3707b, f));
                 i2++;
@@ -235,9 +235,9 @@ public class C4459i extends C2291c {
         this.f14688C = new C4469b();
         this.f14687B = new C5919e(this.f3706a, this.f3707b, this.f14688C);
         this.f14689D = new C4470j(this.f3706a, this.f3707b);
-        C2028e a = C2253z.m9680a(this.f3706a, true);
+        C2028e a = ServiceFactory.m9680a(this.f3706a, true);
         if (a != null) {
-            C1846e i3 = a.mo5285i();
+            CameraStatus i3 = a.mo5285i();
             if (i3 != null) {
                 this.f14691F = i3.mo4706n();
                 this.f14692G = i3.mo4675X();
@@ -346,14 +346,14 @@ public class C4459i extends C2291c {
     public void mo10485l() {
         int i;
         this.f14713x = new ArrayList<>();
-        C1921a f = C2253z.m9703f();
+        C1921a f = ServiceFactory.m9703f();
         if (f != null) {
             f.mo5029a();
             i = f.mo5034b();
         } else {
             i = 0;
         }
-        if (f instanceof C1936c) {
+        if (f instanceof BrowserServiceCamera) {
             for (int i2 = 0; i2 < i; i2++) {
                 this.f14713x.add(new C4262x(null, i2, this.f3707b, f));
             }
@@ -377,7 +377,7 @@ public class C4459i extends C2291c {
             m17597v();
             this.f14687B.mo12931a(2);
         } else if (this.f14690E != null) {
-            this.f14690E.mo10232a(false, (C4245t) null);
+            this.f14690E.mo10232a(false, (BrowserViewModel) null);
         }
     }
 
@@ -531,7 +531,7 @@ public class C4459i extends C2291c {
                         return;
                     }
                 }
-                C2261g.m9760a(3166213, "");
+                ImageAppLog.m9760a(3166213, "");
                 Intent intent2 = new Intent(this.f3706a, ContentPlayerActivity.class);
                 intent2.putExtra("Player_CurrnetIndex_Key", mo10483j());
                 intent2.putExtra(C1350a.KEY_SCREEN_NAME_IDENTIFIER, c instanceof C1909k ? "Local" : "Remote");
@@ -562,7 +562,7 @@ public class C4459i extends C2291c {
 
     /* renamed from: o */
     public void mo10488o() {
-        C1921a f = C2253z.m9703f();
+        C1921a f = ServiceFactory.m9703f();
         if (f != null) {
             f.mo5039d();
             mo10485l();
@@ -571,20 +571,20 @@ public class C4459i extends C2291c {
 
     /* renamed from: p */
     public boolean mo10489p() {
-        C1921a f = C2253z.m9703f();
+        C1921a f = ServiceFactory.m9703f();
         return f != null && (f instanceof C1948f);
     }
 
     /* renamed from: q */
     public boolean mo10490q() {
-        C1921a f = C2253z.m9703f();
+        C1921a f = ServiceFactory.m9703f();
         return f != null && (f instanceof C1941d);
     }
 
     /* renamed from: r */
     public boolean mo10491r() {
-        C1921a f = C2253z.m9703f();
-        return f != null && (f instanceof C1936c);
+        C1921a f = ServiceFactory.m9703f();
+        return f != null && (f instanceof BrowserServiceCamera);
     }
 
     /* renamed from: s */
@@ -600,7 +600,7 @@ public class C4459i extends C2291c {
     }
 
     /* renamed from: a */
-    public void mo6018a(C1846e eVar) {
+    public void mo6018a(CameraStatus eVar) {
         boolean z;
         String C = eVar.mo4654C();
         if (C.equalsIgnoreCase("high") && this.f3707b != null) {
@@ -677,11 +677,11 @@ public class C4459i extends C2291c {
                 C1892f a = C1712b.m6919c().mo4896a();
                 if (a != null) {
                     synchronized (C1910l.m7679a()) {
-                        C1853h a2 = new C1543y(a.f5682d).mo3409a();
+                        ParseTagHighlightSceneInfo a2 = new ModeChangeCommand(a.f5682d).mo3409a();
                         if (!a2.mo4771a()) {
-                            C2261g.m9766b("OneContentPreviewViewModel", "PlayMode Error:" + a2.mo4772b());
+                            ImageAppLog.warning("OneContentPreviewViewModel", "PlayMode Error:" + a2.mo4772b());
                         } else {
-                            C2253z.m9679a(C4459i.this.f3706a, a).mo5185a((C1986a) new C1986a() {
+                            ServiceFactory.m9679a(C4459i.this.f3706a, a).mo5185a((C1986a) new C1986a() {
                                 /* renamed from: a */
                                 public void mo5201a() {
                                 }

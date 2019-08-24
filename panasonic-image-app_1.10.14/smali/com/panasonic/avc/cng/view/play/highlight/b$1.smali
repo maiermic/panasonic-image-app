@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/view/play/highlight/b;->a(Lcom/panasonic/avc/cng/model/c/e;)V
+    value = Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;->a(Lcom/panasonic/avc/cng/model/c/CameraStatus;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -22,16 +22,16 @@
 
 .field final synthetic b:I
 
-.field final synthetic c:Lcom/panasonic/avc/cng/view/play/highlight/b;
+.field final synthetic c:Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;
 
 
 # direct methods
-.method constructor <init>(Lcom/panasonic/avc/cng/view/play/highlight/b;II)V
+.method constructor <init>(Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;II)V
     .locals 0
 
     .prologue
     .line 373
-    iput-object p1, p0, Lcom/panasonic/avc/cng/view/play/highlight/b$1;->c:Lcom/panasonic/avc/cng/view/play/highlight/b;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/view/play/highlight/b$1;->c:Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;
 
     iput p2, p0, Lcom/panasonic/avc/cng/view/play/highlight/b$1;->a:I
 
@@ -50,9 +50,9 @@
     .prologue
     .line 378
     :try_start_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/b$1;->c:Lcom/panasonic/avc/cng/view/play/highlight/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/b$1;->c:Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/highlight/b;->g:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;->g:Lcom/panasonic/avc/cng/a/c;
 
     iget v1, p0, Lcom/panasonic/avc/cng/view/play/highlight/b$1;->a:I
 
@@ -63,9 +63,9 @@
     invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/a/c;->a(Ljava/lang/Object;)V
 
     .line 379
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/b$1;->c:Lcom/panasonic/avc/cng/view/play/highlight/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/b$1;->c:Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/highlight/b;->f:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;->f:Lcom/panasonic/avc/cng/a/c;
 
     iget v1, p0, Lcom/panasonic/avc/cng/view/play/highlight/b$1;->b:I
 

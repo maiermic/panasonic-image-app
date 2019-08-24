@@ -10,7 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.C1712b;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.util.C2266l;
 import com.panasonic.avc.cng.view.p072a.C2291c;
 import com.panasonic.avc.cng.view.p072a.C2308e;
@@ -18,12 +18,12 @@ import com.panasonic.avc.cng.view.p072a.C2313g;
 import com.panasonic.avc.cng.view.p072a.C2316j;
 import com.panasonic.avc.cng.view.p073b.C2317a.C2325c;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
 import com.panasonic.avc.cng.view.p073b.C2337e;
 import com.panasonic.avc.cng.view.p073b.C2376f.C2378b;
-import com.panasonic.avc.cng.view.parts.C4245t.C4252c;
-import com.panasonic.avc.cng.view.parts.C4245t.C4255e;
-import com.panasonic.avc.cng.view.play.multiphotoframe.C4600c.C4603a;
+import com.panasonic.avc.cng.view.parts.BrowserViewModel.C4252c;
+import com.panasonic.avc.cng.view.parts.BrowserViewModel.C4255e;
+import com.panasonic.avc.cng.view.play.multiphotoframe.MultiPhotoFrameBrowseViewModel.C4603a;
 import com.panasonic.avc.cng.view.play.p076a.C4270a;
 import java.util.List;
 
@@ -31,7 +31,7 @@ public class MultiPhotoFrameBrowseActivity extends C4270a {
     /* access modifiers changed from: private */
 
     /* renamed from: a */
-    public C4600c f14930a;
+    public MultiPhotoFrameBrowseViewModel f14930a;
     /* access modifiers changed from: private */
 
     /* renamed from: b */
@@ -88,7 +88,7 @@ public class MultiPhotoFrameBrowseActivity extends C4270a {
         public void mo10008a(int i, int i2) {
             MultiPhotoFrameBrowseActivity.this._cameraUtil.mo6032a((Runnable) new Runnable() {
                 public void run() {
-                    C2331d.m10114a((Activity) MultiPhotoFrameBrowseActivity.this, C2328a.ON_EXCEEDED_MAX_SELECT_NUM, (Bundle) null);
+                    DialogFactory.m10114a((Activity) MultiPhotoFrameBrowseActivity.this, C2328a.ON_EXCEEDED_MAX_SELECT_NUM, (Bundle) null);
                 }
             });
         }
@@ -119,11 +119,11 @@ public class MultiPhotoFrameBrowseActivity extends C4270a {
         public void mo10657a() {
             Bundle bundle = new Bundle();
             bundle.putInt(C2378b.MESSAGE_ID.name(), R.string.ply_multiphoto_creating);
-            C2331d.m10115a((Activity) MultiPhotoFrameBrowseActivity.this, C2328a.PROCESS_PROGRESS, bundle, (C2325c) new C2325c() {
+            DialogFactory.m10115a((Activity) MultiPhotoFrameBrowseActivity.this, C2328a.PROCESS_PROGRESS, bundle, (C2325c) new C2325c() {
                 /* renamed from: a */
                 public void mo6131a() {
-                    C2331d.m10111a((Activity) MultiPhotoFrameBrowseActivity.this, C2328a.PROCESS_PROGRESS, (int) R.id.percent_num, (CharSequence) "0");
-                    C2331d.m10136e(MultiPhotoFrameBrowseActivity.this, C2328a.PROCESS_PROGRESS, R.id.slash, 4);
+                    DialogFactory.m10111a((Activity) MultiPhotoFrameBrowseActivity.this, C2328a.PROCESS_PROGRESS, (int) R.id.percent_num, (CharSequence) "0");
+                    DialogFactory.m10136e(MultiPhotoFrameBrowseActivity.this, C2328a.PROCESS_PROGRESS, R.id.slash, 4);
                 }
             });
             if (MultiPhotoFrameBrowseActivity.this.f14930a != null) {
@@ -133,36 +133,36 @@ public class MultiPhotoFrameBrowseActivity extends C4270a {
 
         /* renamed from: a */
         public void mo10658a(int i) {
-            C2331d.m10111a((Activity) MultiPhotoFrameBrowseActivity.this, C2328a.PROCESS_PROGRESS, (int) R.id.percent_num, (CharSequence) String.valueOf(i));
-            C2331d.m10104a((Activity) MultiPhotoFrameBrowseActivity.this, C2328a.PROCESS_PROGRESS, (int) R.id.progressBar2, i);
+            DialogFactory.m10111a((Activity) MultiPhotoFrameBrowseActivity.this, C2328a.PROCESS_PROGRESS, (int) R.id.percent_num, (CharSequence) String.valueOf(i));
+            DialogFactory.m10104a((Activity) MultiPhotoFrameBrowseActivity.this, C2328a.PROCESS_PROGRESS, (int) R.id.progressBar2, i);
         }
 
         /* renamed from: b */
         public void mo10661b(int i) {
-            C2331d.m10100a((Activity) MultiPhotoFrameBrowseActivity.this);
+            DialogFactory.m10100a((Activity) MultiPhotoFrameBrowseActivity.this);
             if (i == 1 || i == 2 || i == 3) {
-                C2331d.m10114a((Activity) MultiPhotoFrameBrowseActivity.this, C2328a.ErrorMultiPhotoDlg, (Bundle) null);
+                DialogFactory.m10114a((Activity) MultiPhotoFrameBrowseActivity.this, C2328a.ErrorMultiPhotoDlg, (Bundle) null);
             } else if (i == 6) {
-                C2331d.m10114a((Activity) MultiPhotoFrameBrowseActivity.this, C2328a.ErrorNoHighLightMultiPhoto, (Bundle) null);
+                DialogFactory.m10114a((Activity) MultiPhotoFrameBrowseActivity.this, C2328a.ErrorNoHighLightMultiPhoto, (Bundle) null);
                 if (MultiPhotoFrameBrowseActivity.this.f14930a != null && !MultiPhotoFrameBrowseActivity.this.f14930a.mo10781p()) {
                     MultiPhotoFrameBrowseActivity.this.f14930a.mo10776k();
                 }
             } else if (i == 4) {
-                C2331d.m10114a((Activity) MultiPhotoFrameBrowseActivity.this, C2328a.ErrorMultiPhotoDlg, (Bundle) null);
+                DialogFactory.m10114a((Activity) MultiPhotoFrameBrowseActivity.this, C2328a.ErrorMultiPhotoDlg, (Bundle) null);
             } else if (i == 5) {
-                C2331d.m10114a((Activity) MultiPhotoFrameBrowseActivity.this, C2328a.ErrorMultiPhotoDlg, (Bundle) null);
+                DialogFactory.m10114a((Activity) MultiPhotoFrameBrowseActivity.this, C2328a.ErrorMultiPhotoDlg, (Bundle) null);
             }
             ((Button) MultiPhotoFrameBrowseActivity.this.findViewById(R.id.MultiFramePhotoExecuteButton)).setEnabled(true);
         }
 
         /* renamed from: a */
         public void mo10659a(List<String> list) {
-            C2331d.m10100a((Activity) MultiPhotoFrameBrowseActivity.this);
+            DialogFactory.m10100a((Activity) MultiPhotoFrameBrowseActivity.this);
         }
 
         /* renamed from: b */
         public void mo10660b() {
-            C2331d.m10100a((Activity) MultiPhotoFrameBrowseActivity.this);
+            DialogFactory.m10100a((Activity) MultiPhotoFrameBrowseActivity.this);
             MultiPhotoFrameBrowseActivity.this.f14930a.mo6022d().putBoolean("GalleryUpdateKey", false);
             MultiPhotoFrameBrowseActivity.this.finish();
         }
@@ -178,9 +178,9 @@ public class MultiPhotoFrameBrowseActivity extends C4270a {
         this._handler = new Handler();
         this.f14932c = new C4553a();
         this.f14933d = new C4558b();
-        this.f14930a = (C4600c) C2316j.m10030a("MultiPhotoFrameBrowseViewModel");
+        this.f14930a = (MultiPhotoFrameBrowseViewModel) C2316j.m10030a("MultiPhotoFrameBrowseViewModel");
         if (this.f14930a == null) {
-            this.f14930a = new C4600c(this._context, this._handler);
+            this.f14930a = new MultiPhotoFrameBrowseViewModel(this._context, this._handler);
             this.f14930a.mo10766a(this._context, this._handler, this.f14932c, this.f14933d);
             C2316j.m10032a("MultiPhotoFrameBrowseViewModel", this.f14930a);
             Bundle extras = getIntent().getExtras();
@@ -206,7 +206,7 @@ public class MultiPhotoFrameBrowseActivity extends C4270a {
         this.f14931b = new C4598b();
         this.f14931b.mo10762a(this, this.f14930a);
         if (z) {
-            C2331d.m10114a((Activity) this, C2328a.WarningFormatDlg, (Bundle) null);
+            DialogFactory.m10114a((Activity) this, C2328a.WarningFormatDlg, (Bundle) null);
         }
         if (VERSION.SDK_INT >= 24) {
             setTheme(R.style.AppThemeForOreo);
@@ -263,16 +263,16 @@ public class MultiPhotoFrameBrowseActivity extends C4270a {
         if (!isFinishing()) {
             this.f14934e = false;
             if (this.f14930a.mo10774i().mo9981o() != 0) {
-                C2331d.m10114a((Activity) this, C2328a.ResetSelectedContentsDlg, (Bundle) null);
+                DialogFactory.m10114a((Activity) this, C2328a.ResetSelectedContentsDlg, (Bundle) null);
                 return;
             }
             Bundle bundle = new Bundle();
             bundle.putStringArray(C2378b.SINGLE_CHOICE_LIST.name(), this.f14930a.mo10775j().mo12924d());
             bundle.putInt(C2378b.SINGLE_CHOICE_CHECKED_ITEM.name(), this.f14930a.mo10775j().mo12925e());
-            C2331d.m10115a((Activity) this, C2328a.HIGMLIGHT_MEDIA_SELECT, bundle, (C2325c) new C2325c() {
+            DialogFactory.m10115a((Activity) this, C2328a.HIGMLIGHT_MEDIA_SELECT, bundle, (C2325c) new C2325c() {
                 /* renamed from: a */
                 public void mo6131a() {
-                    C2331d.m10129c((Activity) MultiPhotoFrameBrowseActivity.this, C2328a.HIGMLIGHT_MEDIA_SELECT, (int) R.id.title, (int) R.string.smartop_albumlist_title);
+                    DialogFactory.m10129c((Activity) MultiPhotoFrameBrowseActivity.this, C2328a.HIGMLIGHT_MEDIA_SELECT, (int) R.id.title, (int) R.string.smartop_albumlist_title);
                 }
             });
         }
@@ -282,7 +282,7 @@ public class MultiPhotoFrameBrowseActivity extends C4270a {
     public void onActivityResult(int i, int i2, Intent intent) {
         super.onActivityResult(i, i2, intent);
         if (intent == null || i2 != -1) {
-            C2261g.m9769c("MultiPhotoFrameBrowseActivity", "result error!!");
+            ImageAppLog.error("MultiPhotoFrameBrowseActivity", "result error!!");
         } else if (i == 21) {
             Bundle extras = intent.getExtras();
             if (extras == null || this.f14930a == null) {
@@ -304,7 +304,7 @@ public class MultiPhotoFrameBrowseActivity extends C4270a {
         if (!isFinishing()) {
             this.f14934e = true;
             if (this.f14930a.mo10774i().mo9981o() != 0) {
-                C2331d.m10114a((Activity) this, C2328a.ResetSelectedContentsDlg, (Bundle) null);
+                DialogFactory.m10114a((Activity) this, C2328a.ResetSelectedContentsDlg, (Bundle) null);
                 return;
             }
             String[] a = C2337e.m10176a((Context) this, this.f14930a);
@@ -312,10 +312,10 @@ public class MultiPhotoFrameBrowseActivity extends C4270a {
                 Bundle bundle = new Bundle();
                 bundle.putStringArray(C2378b.SINGLE_CHOICE_LIST.name(), a);
                 bundle.putInt(C2378b.SINGLE_CHOICE_CHECKED_ITEM.name(), this.f14930a.mo10775j().mo12930j());
-                C2331d.m10115a((Activity) this, C2328a.HIGHLIGHT_FORMAT_SELECT, bundle, (C2325c) new C2325c() {
+                DialogFactory.m10115a((Activity) this, C2328a.HIGHLIGHT_FORMAT_SELECT, bundle, (C2325c) new C2325c() {
                     /* renamed from: a */
                     public void mo6131a() {
-                        C2331d.m10129c((Activity) MultiPhotoFrameBrowseActivity.this, C2328a.HIGHLIGHT_FORMAT_SELECT, (int) R.id.title, (int) R.string.play_select_format);
+                        DialogFactory.m10129c((Activity) MultiPhotoFrameBrowseActivity.this, C2328a.HIGHLIGHT_FORMAT_SELECT, (int) R.id.title, (int) R.string.play_select_format);
                     }
                 });
             }
@@ -333,7 +333,7 @@ public class MultiPhotoFrameBrowseActivity extends C4270a {
             return;
         }
         if (this.f14930a.mo10774i().mo9981o() <= 0) {
-            C2331d.m10114a((Activity) this, C2328a.ERROR_NO_CONTENT_SELECT, (Bundle) null);
+            DialogFactory.m10114a((Activity) this, C2328a.ERROR_NO_CONTENT_SELECT, (Bundle) null);
             return;
         }
         this.f14930a.f15051j.mo3216a(Boolean.valueOf(false));
@@ -351,10 +351,10 @@ public class MultiPhotoFrameBrowseActivity extends C4270a {
                         Bundle bundle = new Bundle();
                         bundle.putStringArray(C2378b.SINGLE_CHOICE_LIST.name(), a);
                         bundle.putInt(C2378b.SINGLE_CHOICE_CHECKED_ITEM.name(), this.f14930a.mo10775j().mo12930j());
-                        C2331d.m10115a((Activity) this, C2328a.HIGHLIGHT_FORMAT_SELECT, bundle, (C2325c) new C2325c() {
+                        DialogFactory.m10115a((Activity) this, C2328a.HIGHLIGHT_FORMAT_SELECT, bundle, (C2325c) new C2325c() {
                             /* renamed from: a */
                             public void mo6131a() {
-                                C2331d.m10129c((Activity) MultiPhotoFrameBrowseActivity.this, C2328a.HIGHLIGHT_FORMAT_SELECT, (int) R.id.title, (int) R.string.play_select_format);
+                                DialogFactory.m10129c((Activity) MultiPhotoFrameBrowseActivity.this, C2328a.HIGHLIGHT_FORMAT_SELECT, (int) R.id.title, (int) R.string.play_select_format);
                             }
                         });
                         return;
@@ -364,10 +364,10 @@ public class MultiPhotoFrameBrowseActivity extends C4270a {
                 Bundle bundle2 = new Bundle();
                 bundle2.putStringArray(C2378b.SINGLE_CHOICE_LIST.name(), this.f14930a.mo10775j().mo12924d());
                 bundle2.putInt(C2378b.SINGLE_CHOICE_CHECKED_ITEM.name(), this.f14930a.mo10775j().mo12925e());
-                C2331d.m10115a((Activity) this, C2328a.HIGMLIGHT_MEDIA_SELECT, bundle2, (C2325c) new C2325c() {
+                DialogFactory.m10115a((Activity) this, C2328a.HIGMLIGHT_MEDIA_SELECT, bundle2, (C2325c) new C2325c() {
                     /* renamed from: a */
                     public void mo6131a() {
-                        C2331d.m10129c((Activity) MultiPhotoFrameBrowseActivity.this, C2328a.HIGMLIGHT_MEDIA_SELECT, (int) R.id.title, (int) R.string.smartop_albumlist_title);
+                        DialogFactory.m10129c((Activity) MultiPhotoFrameBrowseActivity.this, C2328a.HIGMLIGHT_MEDIA_SELECT, (int) R.id.title, (int) R.string.smartop_albumlist_title);
                     }
                 });
                 return;
@@ -398,7 +398,7 @@ public class MultiPhotoFrameBrowseActivity extends C4270a {
             case HIGMLIGHT_MEDIA_SELECT:
                 int e = this.f14930a.mo10775j().mo12925e();
                 this.f14930a.mo10775j().mo12918a(i);
-                C2331d.m10100a((Activity) this);
+                DialogFactory.m10100a((Activity) this);
                 if (e != i) {
                     C2266l.m9797a((Context) this, (Activity) this, this.f14930a.mo10775j().mo12924d()[i].toString());
                     return;
@@ -407,7 +407,7 @@ public class MultiPhotoFrameBrowseActivity extends C4270a {
             case HIGHLIGHT_FORMAT_SELECT:
                 int j = this.f14930a.mo10775j().mo12930j();
                 this.f14930a.mo10775j().mo12920b(i);
-                C2331d.m10100a((Activity) this);
+                DialogFactory.m10100a((Activity) this);
                 String[] a = C2337e.m10176a((Context) this, this.f14930a);
                 if (j != i && a != null) {
                     C2266l.m9797a((Context) this, (Activity) this, a[i]);

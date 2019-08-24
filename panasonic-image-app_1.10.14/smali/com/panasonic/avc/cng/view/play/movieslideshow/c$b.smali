@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/panasonic/avc/cng/view/play/movieslideshow/c;
+    value = Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowViewModel;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

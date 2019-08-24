@@ -6,15 +6,15 @@ import android.os.Bundle;
 import android.os.Handler;
 import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.C1712b;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.view.p072a.C2291c;
 import com.panasonic.avc.cng.view.p072a.C2308e;
 import com.panasonic.avc.cng.view.p072a.C2313g;
 import com.panasonic.avc.cng.view.p072a.C2316j;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
-import com.panasonic.avc.cng.view.parts.C4245t.C4252c;
-import com.panasonic.avc.cng.view.parts.C4245t.C4255e;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
+import com.panasonic.avc.cng.view.parts.BrowserViewModel.C4252c;
+import com.panasonic.avc.cng.view.parts.BrowserViewModel.C4255e;
 import com.panasonic.avc.cng.view.play.p076a.C4270a;
 import com.panasonic.avc.cng.view.play.splitdelete.C4836b.C4838a;
 
@@ -79,7 +79,7 @@ public class SplitDeleteFileSelectActivity extends C4270a {
         public void mo10008a(int i, int i2) {
             SplitDeleteFileSelectActivity.this._cameraUtil.mo6032a((Runnable) new Runnable() {
                 public void run() {
-                    C2331d.m10114a((Activity) SplitDeleteFileSelectActivity.this, C2328a.ON_EXCEEDED_MAX_SELECT_NUM, (Bundle) null);
+                    DialogFactory.m10114a((Activity) SplitDeleteFileSelectActivity.this, C2328a.ON_EXCEEDED_MAX_SELECT_NUM, (Bundle) null);
                 }
             });
         }
@@ -139,7 +139,7 @@ public class SplitDeleteFileSelectActivity extends C4270a {
         public void mo11260a() {
             SplitDeleteFileSelectActivity.this._handler.post(new Runnable() {
                 public void run() {
-                    C2331d.m10114a((Activity) SplitDeleteFileSelectActivity.this, C2328a.ON_PROTECTED, (Bundle) null);
+                    DialogFactory.m10114a((Activity) SplitDeleteFileSelectActivity.this, C2328a.ON_PROTECTED, (Bundle) null);
                 }
             });
         }
@@ -148,7 +148,7 @@ public class SplitDeleteFileSelectActivity extends C4270a {
         public void mo11261b() {
             SplitDeleteFileSelectActivity.this._handler.post(new Runnable() {
                 public void run() {
-                    C2331d.m10114a((Activity) SplitDeleteFileSelectActivity.this, C2328a.ON_SHORT_CONTENTS, (Bundle) null);
+                    DialogFactory.m10114a((Activity) SplitDeleteFileSelectActivity.this, C2328a.ON_SHORT_CONTENTS, (Bundle) null);
                 }
             });
         }
@@ -223,7 +223,7 @@ public class SplitDeleteFileSelectActivity extends C4270a {
         } else if (intent != null) {
             Bundle extras = intent.getExtras();
             if (extras != null && i == 10 && i2 == -1) {
-                C2261g.m9763a("SplitDeleteFileSelectActivity", "onActivityResult() => OnSplitDeleteResult()");
+                ImageAppLog.debug("SplitDeleteFileSelectActivity", "onActivityResult() => OnSplitDeleteResult()");
                 this.f15684e.m18765a(extras);
             }
         }

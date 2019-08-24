@@ -245,11 +245,11 @@
 
     move-result-object v3
 
-    invoke-virtual {v3}, Lcom/panasonic/avc/cng/view/setting/af;->c()Lcom/panasonic/avc/cng/view/parts/t;
+    invoke-virtual {v3}, Lcom/panasonic/avc/cng/view/setting/af;->c()Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
     move-result-object v3
 
-    invoke-direct {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/parts/bq;-><init>(Landroid/content/Context;ILcom/panasonic/avc/cng/view/parts/t;)V
+    invoke-direct {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/parts/bq;-><init>(Landroid/content/Context;ILcom/panasonic/avc/cng/view/parts/BrowserViewModel;)V
 
     .line 265
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/PicmateUploadContentsViewActivity$a;->a:Lcom/panasonic/avc/cng/view/setting/PicmateUploadContentsViewActivity;

@@ -51,7 +51,7 @@
 
     const v2, 0x7f0f0292
 
-    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/d;->c(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;I)Landroid/text/Editable;
+    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->c(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;I)Landroid/text/Editable;
 
     move-result-object v0
 
@@ -102,7 +102,7 @@
 
     sget-object v2, Lcom/panasonic/avc/cng/view/b/b$a;->X:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {v1, v2, v0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {v1, v2, v0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     .line 403
     return-void
@@ -117,16 +117,16 @@
     :cond_2
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/b/e$12$1;->a:Lcom/panasonic/avc/cng/view/b/e$12;
 
-    iget-object v1, v1, Lcom/panasonic/avc/cng/view/b/e$12;->d:Lcom/panasonic/avc/cng/view/smartoperation/i;
+    iget-object v1, v1, Lcom/panasonic/avc/cng/view/b/e$12;->d:Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;
 
     if-eqz v1, :cond_3
 
     .line 388
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/b/e$12$1;->a:Lcom/panasonic/avc/cng/view/b/e$12;
 
-    iget-object v1, v1, Lcom/panasonic/avc/cng/view/b/e$12;->d:Lcom/panasonic/avc/cng/view/smartoperation/i;
+    iget-object v1, v1, Lcom/panasonic/avc/cng/view/b/e$12;->d:Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;
 
-    invoke-virtual {v1, v0}, Lcom/panasonic/avc/cng/view/smartoperation/i;->d(Ljava/lang/String;)V
+    invoke-virtual {v1, v0}, Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;->d(Ljava/lang/String;)V
 
     goto :goto_1
 
@@ -151,16 +151,16 @@
     :cond_4
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/b/e$12$1;->a:Lcom/panasonic/avc/cng/view/b/e$12;
 
-    iget-object v1, v1, Lcom/panasonic/avc/cng/view/b/e$12;->f:Lcom/panasonic/avc/cng/view/setting/g;
+    iget-object v1, v1, Lcom/panasonic/avc/cng/view/b/e$12;->f:Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;
 
     if-eqz v1, :cond_0
 
     .line 396
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/b/e$12$1;->a:Lcom/panasonic/avc/cng/view/b/e$12;
 
-    iget-object v1, v1, Lcom/panasonic/avc/cng/view/b/e$12;->f:Lcom/panasonic/avc/cng/view/setting/g;
+    iget-object v1, v1, Lcom/panasonic/avc/cng/view/b/e$12;->f:Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;
 
-    invoke-virtual {v1, v0}, Lcom/panasonic/avc/cng/view/setting/g;->b(Ljava/lang/String;)V
+    invoke-virtual {v1, v0}, Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;->b(Ljava/lang/String;)V
 
     goto :goto_1
 .end method

@@ -52,9 +52,9 @@
     :try_start_0
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/e$50;->a:Lcom/panasonic/avc/cng/view/liveview/e;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/e;->k:Lcom/panasonic/avc/cng/core/a/af;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/e;->k:Lcom/panasonic/avc/cng/core/a/RecordCommand;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/af;->i()Lcom/panasonic/avc/cng/model/c/h;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/RecordCommand;->i()Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
     move-result-object v0
 
@@ -64,7 +64,7 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 14115
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/h;->a()Z
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;->a()Z
 
     move-result v1
 
@@ -75,10 +75,10 @@
 
     const-string v2, "Marking Error"
 
-    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 14118
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/h;->b()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;->b()Ljava/lang/String;
 
     move-result-object v0
 

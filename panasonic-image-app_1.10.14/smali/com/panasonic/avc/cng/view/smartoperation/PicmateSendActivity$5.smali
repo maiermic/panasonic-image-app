@@ -140,21 +140,21 @@
 
     sget-object v3, Landroid/widget/ImageView$ScaleType;->FIT_START:Landroid/widget/ImageView$ScaleType;
 
-    invoke-static {v1, v2, v5, v3}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;ILandroid/widget/ImageView$ScaleType;)V
+    invoke-static {v1, v2, v5, v3}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;ILandroid/widget/ImageView$ScaleType;)V
 
     .line 778
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/smartoperation/PicmateSendActivity$5;->a:Lcom/panasonic/avc/cng/view/smartoperation/PicmateSendActivity;
 
     sget-object v2, Lcom/panasonic/avc/cng/view/b/b$a;->db:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {v1, v2, v5, v0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;ILandroid/graphics/Bitmap;)V
+    invoke-static {v1, v2, v5, v0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;ILandroid/graphics/Bitmap;)V
 
     .line 781
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/smartoperation/PicmateSendActivity$5;->a:Lcom/panasonic/avc/cng/view/smartoperation/PicmateSendActivity;
 
     sget-object v1, Lcom/panasonic/avc/cng/view/b/b$a;->db:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {v0, v1, v5}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;I)V
+    invoke-static {v0, v1, v5}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;I)V
 
     .line 785
     :cond_1
@@ -185,7 +185,7 @@
 
     const v3, 0x7f0f02a8
 
-    invoke-static {v1, v2, v3, v0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;ILjava/lang/CharSequence;)V
+    invoke-static {v1, v2, v3, v0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;ILjava/lang/CharSequence;)V
 
     .line 788
     return-void

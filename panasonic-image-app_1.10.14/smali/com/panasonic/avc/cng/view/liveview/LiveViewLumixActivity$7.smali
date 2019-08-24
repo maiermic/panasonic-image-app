@@ -148,7 +148,7 @@
 
     move-result-object v2
 
-    invoke-static {v0, v1, v5, v2}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;ILandroid/widget/ListAdapter;)V
+    invoke-static {v0, v1, v5, v2}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;ILandroid/widget/ListAdapter;)V
 
     .line 944
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixActivity$7;->b:Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixActivity;
@@ -159,7 +159,7 @@
 
     invoke-direct {v2, p0}, Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixActivity$7$1;-><init>(Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixActivity$7;)V
 
-    invoke-static {v0, v1, v5, v2}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;ILandroid/widget/AdapterView$OnItemClickListener;)V
+    invoke-static {v0, v1, v5, v2}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;ILandroid/widget/AdapterView$OnItemClickListener;)V
 
     .line 960
     return-void

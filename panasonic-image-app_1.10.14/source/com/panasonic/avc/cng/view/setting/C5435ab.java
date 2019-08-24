@@ -15,18 +15,18 @@ import com.panasonic.avc.cng.model.C1833c;
 import com.panasonic.avc.cng.model.C1878d;
 import com.panasonic.avc.cng.model.C1892f;
 import com.panasonic.avc.cng.model.C1909k;
-import com.panasonic.avc.cng.model.p051c.C1846e;
+import com.panasonic.avc.cng.model.p051c.CameraStatus;
 import com.panasonic.avc.cng.model.service.C1921a;
 import com.panasonic.avc.cng.model.service.C2028e;
 import com.panasonic.avc.cng.model.service.C2028e.C2031c;
-import com.panasonic.avc.cng.model.service.C2253z;
-import com.panasonic.avc.cng.model.service.p054a.C1936c;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
+import com.panasonic.avc.cng.model.service.p054a.BrowserServiceCamera;
 import com.panasonic.avc.cng.model.service.p054a.C1941d;
 import com.panasonic.avc.cng.model.service.p054a.C1948f;
 import com.panasonic.avc.cng.p038a.C1342a;
 import com.panasonic.avc.cng.p038a.C1344c;
-import com.panasonic.avc.cng.util.C2261g;
-import com.panasonic.avc.cng.view.parts.C4245t;
+import com.panasonic.avc.cng.util.ImageAppLog;
+import com.panasonic.avc.cng.view.parts.BrowserViewModel;
 import com.panasonic.avc.cng.view.parts.C4262x;
 import com.panasonic.avc.cng.view.play.browser.C4373a;
 import com.panasonic.avc.cng.view.smartoperation.C5917c;
@@ -136,10 +136,10 @@ public class C5435ab extends C1342a {
         }
 
         /* renamed from: a */
-        public void mo5337a(C1846e eVar) {
+        public void mo5337a(CameraStatus eVar) {
             boolean z;
-            C2261g.m9770d("OneContentPreviewViewModel", "OnGetState");
-            if (C1846e.m7190a(eVar)) {
+            ImageAppLog.verbose("OneContentPreviewViewModel", "OnGetState");
+            if (CameraStatus.m7190a(eVar)) {
                 SharedPreferences defaultSharedPreferences = PreferenceManager.getDefaultSharedPreferences(C5435ab.this.f3706a);
                 if (!defaultSharedPreferences.getBoolean("HighTemperature", false)) {
                     String C = eVar.mo4654C();
@@ -203,7 +203,7 @@ public class C5435ab extends C1342a {
                 z = true;
             }
             if (C5435ab.this.f16951y != null) {
-                C5435ab.this.f16951y.mo11670a(z, C1846e.m7191b(eVar));
+                C5435ab.this.f16951y.mo11670a(z, CameraStatus.m7191b(eVar));
             }
         }
 
@@ -362,13 +362,13 @@ public class C5435ab extends C1342a {
         int i;
         int i2 = 0;
         this.f16943q = new ArrayList<>();
-        C1921a f = C2253z.m9703f();
+        C1921a f = ServiceFactory.m9703f();
         if (f != null) {
             i = f.mo5034b();
         } else {
             i = 0;
         }
-        if (f instanceof C1936c) {
+        if (f instanceof BrowserServiceCamera) {
             while (i2 < i) {
                 this.f16943q.add(new C4262x(null, i2, this.f3707b, f));
                 i2++;
@@ -381,11 +381,11 @@ public class C5435ab extends C1342a {
         }
         this.f16946t = new C5445b();
         this.f16945s = new C5919e(this.f3706a, this.f3707b, this.f16946t);
-        this.f16949w = C2253z.m9680a(this.f3706a, true);
+        this.f16949w = ServiceFactory.m9680a(this.f3706a, true);
         this.f16950x = new C5438a();
         if (this.f16949w != null) {
             this.f16949w.mo5268a((C2031c) this.f16950x);
-            C1846e i3 = this.f16949w.mo5285i();
+            CameraStatus i3 = this.f16949w.mo5285i();
             if (i3 != null) {
                 this.f16928A = i3.mo4675X();
             }
@@ -449,9 +449,9 @@ public class C5435ab extends C1342a {
     public void mo12089k() {
         int i;
         this.f16943q = new ArrayList<>();
-        C1921a f = C2253z.m9703f();
+        C1921a f = ServiceFactory.m9703f();
         if (f != null) {
-            if (f instanceof C1936c) {
+            if (f instanceof BrowserServiceCamera) {
                 f.mo5029a();
             }
             i = f.mo5034b();
@@ -460,7 +460,7 @@ public class C5435ab extends C1342a {
         }
         int i2 = 0;
         while (i2 < i) {
-            this.f16943q.add(new C4262x(f instanceof C1936c ? null : f.mo5036b(i2), i2, this.f3707b, f));
+            this.f16943q.add(new C4262x(f instanceof BrowserServiceCamera ? null : f.mo5036b(i2), i2, this.f3707b, f));
             i2++;
         }
         this.f16944r = Math.max(0, Math.min(this.f16943q.size() - 1, this.f16944r));
@@ -478,7 +478,7 @@ public class C5435ab extends C1342a {
             m20348r();
             this.f16945s.mo12931a(2);
         } else if (this.f16952z != null) {
-            this.f16952z.mo10232a(false, (C4245t) null);
+            this.f16952z.mo10232a(false, (BrowserViewModel) null);
         }
     }
 
@@ -565,7 +565,7 @@ public class C5435ab extends C1342a {
 
     /* renamed from: n */
     public void mo12092n() {
-        C1921a f = C2253z.m9703f();
+        C1921a f = ServiceFactory.m9703f();
         if (f != null) {
             f.mo5039d();
             mo12089k();
@@ -574,7 +574,7 @@ public class C5435ab extends C1342a {
 
     /* renamed from: o */
     public boolean mo12093o() {
-        C1921a f = C2253z.m9703f();
+        C1921a f = ServiceFactory.m9703f();
         if (f == null || !(f instanceof C1948f)) {
             return false;
         }
@@ -583,7 +583,7 @@ public class C5435ab extends C1342a {
 
     /* renamed from: p */
     public boolean mo12094p() {
-        C1921a f = C2253z.m9703f();
+        C1921a f = ServiceFactory.m9703f();
         if (f == null || !(f instanceof C1941d)) {
             return false;
         }

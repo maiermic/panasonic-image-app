@@ -14,7 +14,7 @@ import android.view.SurfaceHolder;
 import android.view.SurfaceHolder.Callback;
 import android.view.SurfaceView;
 import com.panasonic.avc.cng.imageapp.R;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 
 public class LiveViewLumixMfView extends SurfaceView implements Callback {
 
@@ -113,7 +113,7 @@ public class LiveViewLumixMfView extends SurfaceView implements Callback {
             this.f12974j = i;
             this.f12975k = i2;
             this.f12978n = z;
-            C2261g.m9763a("ManualFocus", String.format("focus value = %d", new Object[]{Integer.valueOf(this.f12974j)}));
+            ImageAppLog.debug("ManualFocus", String.format("focus value = %d", new Object[]{Integer.valueOf(this.f12974j)}));
             m15743b();
             m15745c();
         }

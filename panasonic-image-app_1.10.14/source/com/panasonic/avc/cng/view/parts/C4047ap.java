@@ -17,8 +17,8 @@ import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.C1892f;
 import com.panasonic.avc.cng.model.p051c.C1860l;
 import com.panasonic.avc.cng.model.service.C1985b;
-import com.panasonic.avc.cng.model.service.C2253z;
-import com.panasonic.avc.cng.view.parts.C3973ab.C3977a;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
+import com.panasonic.avc.cng.view.parts.SetPickerPosition.C3977a;
 
 /* renamed from: com.panasonic.avc.cng.view.parts.ap */
 public class C4047ap extends RelativeLayout implements Callback {
@@ -72,13 +72,13 @@ public class C4047ap extends RelativeLayout implements Callback {
     public C4053a f13678f;
 
     /* renamed from: g */
-    private C3973ab f13679g;
+    private SetPickerPosition f13679g;
 
     /* renamed from: h */
-    private C3973ab f13680h;
+    private SetPickerPosition f13680h;
 
     /* renamed from: i */
-    private C3973ab f13681i;
+    private SetPickerPosition f13681i;
 
     /* renamed from: j */
     private LinearLayout f13682j;
@@ -178,7 +178,7 @@ public class C4047ap extends RelativeLayout implements Callback {
             if (C1712b.m6919c() != null) {
                 this.f13665A = C1712b.m6919c().mo4896a();
                 if (this.f13665A != null) {
-                    this.f13666B = C2253z.m9679a(this.f13673a, this.f13665A);
+                    this.f13666B = ServiceFactory.m9679a(this.f13673a, this.f13665A);
                     if (this.f13666B != null) {
                         this.f13666B.mo5189b();
                     }
@@ -292,7 +292,7 @@ public class C4047ap extends RelativeLayout implements Callback {
         } else {
             this.f13692t = mo9646b(5, 200);
         }
-        this.f13679g = new C3973ab(this.f13673a, this.f13692t);
+        this.f13679g = new SetPickerPosition(this.f13673a, this.f13692t);
         this.f13679g.setOnPostionChangedListener(new C3977a() {
             /* renamed from: a */
             public void mo9447a(int i, int i2, boolean z) {
@@ -301,7 +301,7 @@ public class C4047ap extends RelativeLayout implements Callback {
             }
         });
         this.f13679g.setCoverType(1);
-        this.f13680h = new C3973ab(this.f13673a, this.f13692t);
+        this.f13680h = new SetPickerPosition(this.f13673a, this.f13692t);
         this.f13680h.setOnPostionChangedListener(new C3977a() {
             /* renamed from: a */
             public void mo9447a(int i, int i2, boolean z) {
@@ -310,7 +310,7 @@ public class C4047ap extends RelativeLayout implements Callback {
             }
         });
         this.f13680h.setCoverType(1);
-        this.f13681i = new C3973ab(this.f13673a, this.f13692t);
+        this.f13681i = new SetPickerPosition(this.f13673a, this.f13692t);
         this.f13681i.setOnPostionChangedListener(new C3977a() {
             /* renamed from: a */
             public void mo9447a(int i, int i2, boolean z) {

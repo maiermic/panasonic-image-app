@@ -31,7 +31,7 @@
 
 .field private _copyButton:Landroid/view/View;
 
-.field private _reconnectThread:Lcom/panasonic/avc/cng/view/play/browser/b;
+.field private _reconnectThread:Lcom/panasonic/avc/cng/view/play/browser/BrowserConnectWiFi;
 
 .field private _resultAction:Lcom/panasonic/avc/cng/view/play/browser/OneContentPreviewActivity$c;
 
@@ -85,22 +85,22 @@
     return-object v0
 .end method
 
-.method static synthetic access$1000(Lcom/panasonic/avc/cng/view/play/browser/OneContentPreviewActivity;)Lcom/panasonic/avc/cng/view/a/d;
+.method static synthetic access$1000(Lcom/panasonic/avc/cng/view/play/browser/OneContentPreviewActivity;)Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
     .locals 1
 
     .prologue
     .line 60
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/OneContentPreviewActivity;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/OneContentPreviewActivity;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
     return-object v0
 .end method
 
-.method static synthetic access$1100(Lcom/panasonic/avc/cng/view/play/browser/OneContentPreviewActivity;)Lcom/panasonic/avc/cng/view/a/d;
+.method static synthetic access$1100(Lcom/panasonic/avc/cng/view/play/browser/OneContentPreviewActivity;)Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
     .locals 1
 
     .prologue
     .line 60
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/OneContentPreviewActivity;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/OneContentPreviewActivity;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
     return-object v0
 .end method
@@ -125,12 +125,12 @@
     return-object v0
 .end method
 
-.method static synthetic access$402(Lcom/panasonic/avc/cng/view/play/browser/OneContentPreviewActivity;Lcom/panasonic/avc/cng/view/play/browser/b;)Lcom/panasonic/avc/cng/view/play/browser/b;
+.method static synthetic access$402(Lcom/panasonic/avc/cng/view/play/browser/OneContentPreviewActivity;Lcom/panasonic/avc/cng/view/play/browser/BrowserConnectWiFi;)Lcom/panasonic/avc/cng/view/play/browser/BrowserConnectWiFi;
     .locals 0
 
     .prologue
     .line 60
-    iput-object p1, p0, Lcom/panasonic/avc/cng/view/play/browser/OneContentPreviewActivity;->_reconnectThread:Lcom/panasonic/avc/cng/view/play/browser/b;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/view/play/browser/OneContentPreviewActivity;->_reconnectThread:Lcom/panasonic/avc/cng/view/play/browser/BrowserConnectWiFi;
 
     return-object p1
 .end method
@@ -196,7 +196,7 @@
 
     const-string v1, ""
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 1011
     iput-object p1, p0, Lcom/panasonic/avc/cng/view/play/browser/OneContentPreviewActivity;->_copyButton:Landroid/view/View;
@@ -285,7 +285,7 @@
 
     const-string v1, ""
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 1073
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/OneContentPreviewActivity;->_browseMenu:Lcom/panasonic/avc/cng/view/play/browser/a;
@@ -494,7 +494,7 @@
 
     invoke-direct {v2, p0}, Lcom/panasonic/avc/cng/view/play/browser/OneContentPreviewActivity$1;-><init>(Lcom/panasonic/avc/cng/view/play/browser/OneContentPreviewActivity;)V
 
-    invoke-static {p0, v1, v0, v2}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;Lcom/panasonic/avc/cng/view/b/a$c;)V
+    invoke-static {p0, v1, v0, v2}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;Lcom/panasonic/avc/cng/view/b/a$c;)V
 
     .line 1096
     return-void
@@ -509,7 +509,7 @@
 
     const-string v1, ""
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 999
     invoke-virtual {p0}, Lcom/panasonic/avc/cng/view/play/browser/OneContentPreviewActivity;->isFinishing()Z
@@ -610,7 +610,7 @@
 
     const-string v1, "OnReconnectDevice()"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 963
     invoke-virtual {p0}, Lcom/panasonic/avc/cng/view/play/browser/OneContentPreviewActivity;->isFinishing()Z
@@ -628,7 +628,7 @@
     :cond_1
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/OneContentPreviewActivity;->_context:Landroid/content/Context;
 
-    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/model/service/z;->a(Landroid/content/Context;Z)Lcom/panasonic/avc/cng/model/service/e;
+    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->a(Landroid/content/Context;Z)Lcom/panasonic/avc/cng/model/service/e;
 
     move-result-object v0
 
@@ -636,20 +636,20 @@
     if-eqz v0, :cond_3
 
     .line 971
-    invoke-interface {v0}, Lcom/panasonic/avc/cng/model/service/e;->i()Lcom/panasonic/avc/cng/model/c/e;
+    invoke-interface {v0}, Lcom/panasonic/avc/cng/model/service/e;->i()Lcom/panasonic/avc/cng/model/c/CameraStatus;
 
     move-result-object v0
 
     .line 973
     if-eqz v0, :cond_3
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/e;->l()I
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->l()I
 
     move-result v1
 
     if-eq v1, v2, :cond_2
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/e;->l()I
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->l()I
 
     move-result v0
 
@@ -809,16 +809,16 @@
     const/4 v6, 0x1
 
     .line 812
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/OneContentPreviewActivity;->_reconnectThread:Lcom/panasonic/avc/cng/view/play/browser/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/OneContentPreviewActivity;->_reconnectThread:Lcom/panasonic/avc/cng/view/play/browser/BrowserConnectWiFi;
 
     if-eqz v0, :cond_0
 
     .line 813
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/OneContentPreviewActivity;->_reconnectThread:Lcom/panasonic/avc/cng/view/play/browser/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/OneContentPreviewActivity;->_reconnectThread:Lcom/panasonic/avc/cng/view/play/browser/BrowserConnectWiFi;
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/play/browser/b;->a(Z)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/play/browser/BrowserConnectWiFi;->a(Z)V
 
     .line 815
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
@@ -827,9 +827,9 @@
 
     .line 817
     :goto_0
-    iget-object v2, p0, Lcom/panasonic/avc/cng/view/play/browser/OneContentPreviewActivity;->_reconnectThread:Lcom/panasonic/avc/cng/view/play/browser/b;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/view/play/browser/OneContentPreviewActivity;->_reconnectThread:Lcom/panasonic/avc/cng/view/play/browser/BrowserConnectWiFi;
 
-    invoke-virtual {v2}, Lcom/panasonic/avc/cng/view/play/browser/b;->a()Z
+    invoke-virtual {v2}, Lcom/panasonic/avc/cng/view/play/browser/BrowserConnectWiFi;->a()Z
 
     move-result v2
 
@@ -866,7 +866,7 @@
 
     .line 828
     :cond_0
-    invoke-static {p0, v6}, Lcom/panasonic/avc/cng/model/service/z;->a(Landroid/content/Context;Z)Lcom/panasonic/avc/cng/model/service/e;
+    invoke-static {p0, v6}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->a(Landroid/content/Context;Z)Lcom/panasonic/avc/cng/model/service/e;
 
     move-result-object v0
 
@@ -884,7 +884,7 @@
     :cond_1
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/OneContentPreviewActivity;->_reconnectThread:Lcom/panasonic/avc/cng/view/play/browser/b;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/OneContentPreviewActivity;->_reconnectThread:Lcom/panasonic/avc/cng/view/play/browser/BrowserConnectWiFi;
 
     .line 835
     invoke-super {p0}, Lcom/panasonic/avc/cng/view/play/a/a;->finish()V
@@ -910,7 +910,7 @@
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/OneContentPreviewActivity;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/OneContentPreviewActivity;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
     .line 842
     invoke-virtual {p0}, Lcom/panasonic/avc/cng/view/play/browser/OneContentPreviewActivity;->GetViewModel()Lcom/panasonic/avc/cng/view/a/c;
@@ -927,7 +927,7 @@
 
     move-result v2
 
-    invoke-virtual {v0, p3, v1, v2}, Lcom/panasonic/avc/cng/view/a/d;->a(Landroid/content/Intent;Landroid/os/Bundle;Z)Z
+    invoke-virtual {v0, p3, v1, v2}, Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;->a(Landroid/content/Intent;Landroid/os/Bundle;Z)Z
 
     move-result v0
 
@@ -985,7 +985,7 @@
     if-eqz v0, :cond_3
 
     .line 861
-    new-instance v0, Lcom/panasonic/avc/cng/view/play/browser/b;
+    new-instance v0, Lcom/panasonic/avc/cng/view/play/browser/BrowserConnectWiFi;
 
     const-string v1, "ReconnectWiFiAP"
 
@@ -1010,9 +1010,9 @@
 
     move-object v1, p0
 
-    invoke-direct/range {v0 .. v5}, Lcom/panasonic/avc/cng/view/play/browser/b;-><init>(Landroid/app/Activity;Ljava/lang/String;Ljava/lang/String;IZ)V
+    invoke-direct/range {v0 .. v5}, Lcom/panasonic/avc/cng/view/play/browser/BrowserConnectWiFi;-><init>(Landroid/app/Activity;Ljava/lang/String;Ljava/lang/String;IZ)V
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/OneContentPreviewActivity;->_reconnectThread:Lcom/panasonic/avc/cng/view/play/browser/b;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/OneContentPreviewActivity;->_reconnectThread:Lcom/panasonic/avc/cng/view/play/browser/BrowserConnectWiFi;
 
     .line 866
     :cond_3
@@ -1027,7 +1027,7 @@
 
     const-string v1, "onActivityResult() => OnPictureJumpResult()"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 868
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/OneContentPreviewActivity;->_resultAction:Lcom/panasonic/avc/cng/view/play/browser/OneContentPreviewActivity$c;
@@ -1046,7 +1046,7 @@
 
     const-string v1, "onActivityResult() => IntentUpload"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 908
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/OneContentPreviewActivity;->_browseMenu:Lcom/panasonic/avc/cng/view/play/browser/a;
@@ -1056,7 +1056,7 @@
     .line 909
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/OneContentPreviewActivity;->_browseMenu:Lcom/panasonic/avc/cng/view/play/browser/a;
 
-    invoke-virtual {v0, v9}, Lcom/panasonic/avc/cng/view/play/browser/a;->a(Lcom/panasonic/avc/cng/view/parts/t;)V
+    invoke-virtual {v0, v9}, Lcom/panasonic/avc/cng/view/play/browser/a;->a(Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;)V
 
     goto :goto_0
 
@@ -1073,7 +1073,7 @@
 
     const-string v1, "onActivityResult() => OnHighlightResult()"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 872
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/OneContentPreviewActivity;->_resultAction:Lcom/panasonic/avc/cng/view/play/browser/OneContentPreviewActivity$c;
@@ -1095,7 +1095,7 @@
 
     const-string v1, "onActivityResult() => OnHighlightResult()"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 876
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/OneContentPreviewActivity;->_resultAction:Lcom/panasonic/avc/cng/view/play/browser/OneContentPreviewActivity$c;
@@ -1117,7 +1117,7 @@
 
     const-string v1, "onActivityResult() => OnSplitDeleteResult()"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 880
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/OneContentPreviewActivity;->_resultAction:Lcom/panasonic/avc/cng/view/play/browser/OneContentPreviewActivity$c;
@@ -1242,7 +1242,7 @@
     .line 922
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/OneContentPreviewActivity;->_browseMenu:Lcom/panasonic/avc/cng/view/play/browser/a;
 
-    invoke-virtual {v0, v9}, Lcom/panasonic/avc/cng/view/play/browser/a;->a(Lcom/panasonic/avc/cng/view/parts/t;)V
+    invoke-virtual {v0, v9}, Lcom/panasonic/avc/cng/view/play/browser/a;->a(Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;)V
 
     goto/16 :goto_0
 .end method
@@ -1289,7 +1289,7 @@
     iput-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/OneContentPreviewActivity;->_viewModelName:Ljava/lang/String;
 
     .line 602
-    iput-object v6, p0, Lcom/panasonic/avc/cng/view/play/browser/OneContentPreviewActivity;->_reconnectThread:Lcom/panasonic/avc/cng/view/play/browser/b;
+    iput-object v6, p0, Lcom/panasonic/avc/cng/view/play/browser/OneContentPreviewActivity;->_reconnectThread:Lcom/panasonic/avc/cng/view/play/browser/BrowserConnectWiFi;
 
     .line 605
     invoke-virtual {p0}, Lcom/panasonic/avc/cng/view/play/browser/OneContentPreviewActivity;->getIntent()Landroid/content/Intent;
@@ -1763,7 +1763,7 @@
     .line 1109
     sget-object v1, Lcom/panasonic/avc/cng/view/b/b$a;->hU:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {p0, v1, v3}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {p0, v1, v3}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     goto :goto_0
 
@@ -1775,7 +1775,7 @@
 
     invoke-direct {v2, p0}, Lcom/panasonic/avc/cng/view/play/browser/OneContentPreviewActivity$2;-><init>(Lcom/panasonic/avc/cng/view/play/browser/OneContentPreviewActivity;)V
 
-    invoke-static {p0, v1, v3, v2}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;Lcom/panasonic/avc/cng/view/b/a$c;)V
+    invoke-static {p0, v1, v3, v2}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;Lcom/panasonic/avc/cng/view/b/a$c;)V
 
     goto :goto_0
 
@@ -1835,7 +1835,7 @@
 
     .line 1142
     :pswitch_5
-    invoke-static {p0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;)V
+    invoke-static {p0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;)V
 
     .line 1145
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/browser/OneContentPreviewActivity;->_viewModel:Lcom/panasonic/avc/cng/view/play/browser/i;
@@ -1869,7 +1869,7 @@
 
     .line 1153
     :pswitch_6
-    invoke-static {p0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;)V
+    invoke-static {p0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;)V
 
     goto :goto_0
 
@@ -1943,7 +1943,7 @@
 
     const-string v1, ""
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 1321
     :cond_0
@@ -1957,7 +1957,7 @@
     invoke-virtual {v0, p2}, Lcom/panasonic/avc/cng/view/smartoperation/e;->b(I)V
 
     .line 1324
-    invoke-static {p0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;)V
+    invoke-static {p0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;)V
 
     .line 1330
     :cond_1
@@ -1989,7 +1989,7 @@
 
     const-string v1, ""
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     goto :goto_0
 
@@ -2018,7 +2018,7 @@
 
     const-string v1, ""
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     goto :goto_0
 
@@ -2047,7 +2047,7 @@
 
     const-string v1, ""
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     goto :goto_0
 
@@ -2076,7 +2076,7 @@
 
     const-string v1, ""
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     goto :goto_0
 
@@ -2101,7 +2101,7 @@
     .line 1259
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/OneContentPreviewActivity;->_browseMenu:Lcom/panasonic/avc/cng/view/play/browser/a;
 
-    invoke-static {v0, v1, v1}, Lcom/panasonic/avc/cng/view/b/e;->a(Lcom/panasonic/avc/cng/view/play/browser/a;Lcom/panasonic/avc/cng/view/smartoperation/i;Lcom/panasonic/avc/cng/view/smartoperation/h;)V
+    invoke-static {v0, v1, v1}, Lcom/panasonic/avc/cng/view/b/e;->a(Lcom/panasonic/avc/cng/view/play/browser/a;Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;Lcom/panasonic/avc/cng/view/smartoperation/h;)V
 
     .line 1283
     :cond_0
@@ -2165,7 +2165,7 @@
     .line 1269
     sget-object v0, Lcom/panasonic/avc/cng/view/b/b$a;->j:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {p0, v0, v1}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {p0, v0, v1}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     .line 1270
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/OneContentPreviewActivity;->_browseMenu:Lcom/panasonic/avc/cng/view/play/browser/a;
@@ -2192,7 +2192,7 @@
     .line 1275
     sget-object v0, Lcom/panasonic/avc/cng/view/b/b$a;->j:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {p0, v0, v1}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {p0, v0, v1}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     .line 1276
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/OneContentPreviewActivity;->_browseMenu:Lcom/panasonic/avc/cng/view/play/browser/a;
@@ -2279,7 +2279,7 @@
     :pswitch_1
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/OneContentPreviewActivity;->_browseMenu:Lcom/panasonic/avc/cng/view/play/browser/a;
 
-    invoke-static {p0, v0, v2, v2}, Lcom/panasonic/avc/cng/view/b/e;->b(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/play/browser/a;Lcom/panasonic/avc/cng/view/smartoperation/i;Lcom/panasonic/avc/cng/view/smartoperation/h;)V
+    invoke-static {p0, v0, v2, v2}, Lcom/panasonic/avc/cng/view/b/e;->b(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/play/browser/a;Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;Lcom/panasonic/avc/cng/view/smartoperation/h;)V
 
     goto :goto_0
 
@@ -2338,7 +2338,7 @@
     :pswitch_5
     sget-object v0, Lcom/panasonic/avc/cng/view/b/b$a;->R:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {p0, v0, v2}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {p0, v0, v2}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     goto :goto_0
 
@@ -2522,7 +2522,7 @@
     if-eqz v0, :cond_0
 
     .line 756
-    new-instance v0, Lcom/panasonic/avc/cng/view/play/browser/b;
+    new-instance v0, Lcom/panasonic/avc/cng/view/play/browser/BrowserConnectWiFi;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/browser/OneContentPreviewActivity;->_browseMenu:Lcom/panasonic/avc/cng/view/play/browser/a;
 
@@ -2545,9 +2545,9 @@
 
     move-object v1, p0
 
-    invoke-direct/range {v0 .. v5}, Lcom/panasonic/avc/cng/view/play/browser/b;-><init>(Landroid/app/Activity;Ljava/lang/String;Ljava/lang/String;IZ)V
+    invoke-direct/range {v0 .. v5}, Lcom/panasonic/avc/cng/view/play/browser/BrowserConnectWiFi;-><init>(Landroid/app/Activity;Ljava/lang/String;Ljava/lang/String;IZ)V
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/OneContentPreviewActivity;->_reconnectThread:Lcom/panasonic/avc/cng/view/play/browser/b;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/OneContentPreviewActivity;->_reconnectThread:Lcom/panasonic/avc/cng/view/play/browser/BrowserConnectWiFi;
 
     .line 760
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/OneContentPreviewActivity;->_browseMenu:Lcom/panasonic/avc/cng/view/play/browser/a;
@@ -2560,7 +2560,7 @@
     :cond_0
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/OneContentPreviewActivity;->_context:Landroid/content/Context;
 
-    invoke-static {v0, v5}, Lcom/panasonic/avc/cng/model/service/z;->a(Landroid/content/Context;Z)Lcom/panasonic/avc/cng/model/service/e;
+    invoke-static {v0, v5}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->a(Landroid/content/Context;Z)Lcom/panasonic/avc/cng/model/service/e;
 
     move-result-object v0
 
@@ -2568,7 +2568,7 @@
     if-eqz v0, :cond_2
 
     .line 767
-    invoke-interface {v0}, Lcom/panasonic/avc/cng/model/service/e;->i()Lcom/panasonic/avc/cng/model/c/e;
+    invoke-interface {v0}, Lcom/panasonic/avc/cng/model/service/e;->i()Lcom/panasonic/avc/cng/model/c/CameraStatus;
 
     move-result-object v0
 
@@ -2576,13 +2576,13 @@
     if-eqz v0, :cond_2
 
     .line 770
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/e;->l()I
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->l()I
 
     move-result v1
 
     if-eq v1, v5, :cond_1
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/e;->l()I
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->l()I
 
     move-result v0
 

@@ -1,5 +1,5 @@
 .class public Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;
-.super Lcom/panasonic/avc/cng/view/setting/al;
+.super Lcom/panasonic/avc/cng/view/setting/SettingMenuBaseActivity;
 .source "SourceFile"
 
 # interfaces
@@ -19,7 +19,7 @@
 
 
 # instance fields
-.field protected a:Lcom/panasonic/avc/cng/application/c;
+.field protected a:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
 .field protected b:Lcom/panasonic/avc/cng/application/c$e;
 
@@ -27,7 +27,7 @@
 
 .field private d:Z
 
-.field private e:Lcom/panasonic/avc/cng/view/geotag/b;
+.field private e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
 .field private f:Lcom/panasonic/avc/cng/view/geotag/a;
 
@@ -77,7 +77,7 @@
     const/4 v1, 0x0
 
     .line 84
-    invoke-direct {p0}, Lcom/panasonic/avc/cng/view/setting/al;-><init>()V
+    invoke-direct {p0}, Lcom/panasonic/avc/cng/view/setting/SettingMenuBaseActivity;-><init>()V
 
     .line 86
     iput-boolean v1, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->d:Z
@@ -217,12 +217,12 @@
     return v0
 .end method
 
-.method static synthetic a(Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;)Lcom/panasonic/avc/cng/view/geotag/b;
+.method static synthetic a(Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;)Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
     .locals 1
 
     .prologue
     .line 84
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
     return-object v0
 .end method
@@ -255,12 +255,12 @@
 
     .line 1391
     :pswitch_0
-    invoke-static {p0, p1, v0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {p0, p1, v0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     .line 1392
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    iget-object v1, v1, Lcom/panasonic/avc/cng/view/geotag/b;->j:Lcom/panasonic/avc/cng/a/c;
+    iget-object v1, v1, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->j:Lcom/panasonic/avc/cng/a/c;
 
     invoke-static {v3}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -270,7 +270,7 @@
 
     .line 1419
     :goto_1
-    invoke-static {p0, p1, v0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {p0, p1, v0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     goto :goto_0
 
@@ -324,9 +324,9 @@
     invoke-virtual {v0, v2, v1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 1402
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    iget-object v1, v1, Lcom/panasonic/avc/cng/view/geotag/b;->j:Lcom/panasonic/avc/cng/a/c;
+    iget-object v1, v1, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->j:Lcom/panasonic/avc/cng/a/c;
 
     invoke-static {v3}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -386,9 +386,9 @@
     invoke-virtual {v0, v2, v1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 1412
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    iget-object v1, v1, Lcom/panasonic/avc/cng/view/geotag/b;->j:Lcom/panasonic/avc/cng/a/c;
+    iget-object v1, v1, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->j:Lcom/panasonic/avc/cng/a/c;
 
     invoke-static {v3}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -763,7 +763,7 @@
 
     const-string v1, "Status timer start."
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 1156
     new-instance v0, Ljava/util/Timer;
@@ -828,7 +828,7 @@
 
     const-string v1, "Status timer stop."
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 1191
     :cond_0
@@ -859,7 +859,7 @@
     const/4 v4, 0x0
 
     .line 1199
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
     if-nez v0, :cond_1
 
@@ -882,9 +882,9 @@
     if-eqz v0, :cond_2
 
     .line 1208
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/geotag/b;->y()Ljava/lang/String;
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->y()Ljava/lang/String;
 
     move-result-object v1
 
@@ -892,9 +892,9 @@
 
     .line 1212
     :cond_2
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/geotag/b;->z()Ljava/util/List;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->z()Ljava/util/List;
 
     move-result-object v2
 
@@ -1043,7 +1043,7 @@
     .prologue
     .line 1776
     .line 1779
-    invoke-static {p0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;)V
+    invoke-static {p0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;)V
 
     .line 1784
     new-instance v0, Lcom/panasonic/avc/cng/view/setting/i$a;
@@ -1069,11 +1069,11 @@
 
     .prologue
     .line 1798
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
@@ -1088,7 +1088,7 @@
     :cond_0
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->v:Landroid/content/Context;
 
-    invoke-static {v1, v0}, Lcom/panasonic/avc/cng/model/service/z;->a(Landroid/content/Context;Lcom/panasonic/avc/cng/model/f;)Lcom/panasonic/avc/cng/model/service/b;
+    invoke-static {v1, v0}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->a(Landroid/content/Context;Lcom/panasonic/avc/cng/model/f;)Lcom/panasonic/avc/cng/model/service/b;
 
     move-result-object v0
 
@@ -1107,85 +1107,85 @@
 
     .prologue
     .line 2450
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/application/c;->f:Ljava/lang/Thread;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->f:Ljava/lang/Thread;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/application/c;->j:Lcom/panasonic/avc/cng/application/c$a;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->j:Lcom/panasonic/avc/cng/application/c$a;
 
     if-eqz v0, :cond_0
 
     .line 2452
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/application/c;->j:Lcom/panasonic/avc/cng/application/c$a;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->j:Lcom/panasonic/avc/cng/application/c$a;
 
     invoke-virtual {v0}, Lcom/panasonic/avc/cng/application/c$a;->a()V
 
     .line 2455
     :cond_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/application/c;->d:Ljava/lang/Thread;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->d:Ljava/lang/Thread;
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/application/c;->h:Lcom/panasonic/avc/cng/application/c$f;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->h:Lcom/panasonic/avc/cng/application/c$f;
 
     if-eqz v0, :cond_1
 
     .line 2457
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/application/c;->h:Lcom/panasonic/avc/cng/application/c$f;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->h:Lcom/panasonic/avc/cng/application/c$f;
 
     invoke-virtual {v0}, Lcom/panasonic/avc/cng/application/c$f;->a()V
 
     .line 2460
     :cond_1
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/application/c;->e:Ljava/lang/Thread;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->e:Ljava/lang/Thread;
 
     if-eqz v0, :cond_2
 
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/application/c;->i:Lcom/panasonic/avc/cng/application/c$g;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->i:Lcom/panasonic/avc/cng/application/c$g;
 
     if-eqz v0, :cond_2
 
     .line 2462
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/application/c;->i:Lcom/panasonic/avc/cng/application/c$g;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->i:Lcom/panasonic/avc/cng/application/c$g;
 
     invoke-virtual {v0}, Lcom/panasonic/avc/cng/application/c$g;->a()V
 
     .line 2465
     :cond_2
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/application/c;->g:Ljava/lang/Thread;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->g:Ljava/lang/Thread;
 
     if-eqz v0, :cond_3
 
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/application/c;->k:Lcom/panasonic/avc/cng/application/c$b;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->k:Lcom/panasonic/avc/cng/application/c$b;
 
     if-eqz v0, :cond_3
 
     .line 2467
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/application/c;->k:Lcom/panasonic/avc/cng/application/c$b;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->k:Lcom/panasonic/avc/cng/application/c$b;
 
     invoke-virtual {v0}, Lcom/panasonic/avc/cng/application/c$b;->a()V
 
@@ -1208,14 +1208,14 @@
     iput v2, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->m:I
 
     .line 1068
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
     if-eqz v0, :cond_0
 
     .line 1070
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/b;->k:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->k:Lcom/panasonic/avc/cng/a/c;
 
     invoke-static {v3}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -1224,9 +1224,9 @@
     invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/a/c;->a(Ljava/lang/Object;)V
 
     .line 1071
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/b;->l:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->l:Lcom/panasonic/avc/cng/a/c;
 
     invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -1235,9 +1235,9 @@
     invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/a/c;->a(Ljava/lang/Object;)V
 
     .line 1072
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/b;->m:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->m:Lcom/panasonic/avc/cng/a/c;
 
     invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -1246,18 +1246,18 @@
     invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/a/c;->a(Ljava/lang/Object;)V
 
     .line 1074
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/geotag/b;->c()Z
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->c()Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
     .line 1076
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/b;->n:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->n:Lcom/panasonic/avc/cng/a/c;
 
     invoke-static {v3}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -1266,9 +1266,9 @@
     invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/a/c;->a(Ljava/lang/Object;)V
 
     .line 1077
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/b;->q:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->q:Lcom/panasonic/avc/cng/a/c;
 
     invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -1278,9 +1278,9 @@
 
     .line 1084
     :goto_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/b;->r:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->r:Lcom/panasonic/avc/cng/a/c;
 
     invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -1289,9 +1289,9 @@
     invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/a/c;->a(Ljava/lang/Object;)V
 
     .line 1085
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/b;->s:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->s:Lcom/panasonic/avc/cng/a/c;
 
     invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -1308,9 +1308,9 @@
 
     .line 1081
     :cond_1
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/b;->n:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->n:Lcom/panasonic/avc/cng/a/c;
 
     invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -1319,9 +1319,9 @@
     invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/a/c;->a(Ljava/lang/Object;)V
 
     .line 1082
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/b;->q:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->q:Lcom/panasonic/avc/cng/a/c;
 
     invoke-static {v3}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -1346,14 +1346,14 @@
     iput v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->m:I
 
     .line 1134
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
     if-eqz v0, :cond_0
 
     .line 1136
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/b;->k:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->k:Lcom/panasonic/avc/cng/a/c;
 
     invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -1362,9 +1362,9 @@
     invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/a/c;->a(Ljava/lang/Object;)V
 
     .line 1137
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/b;->l:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->l:Lcom/panasonic/avc/cng/a/c;
 
     invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -1373,9 +1373,9 @@
     invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/a/c;->a(Ljava/lang/Object;)V
 
     .line 1138
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/b;->m:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->m:Lcom/panasonic/avc/cng/a/c;
 
     invoke-static {v3}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -1384,9 +1384,9 @@
     invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/a/c;->a(Ljava/lang/Object;)V
 
     .line 1140
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/b;->n:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->n:Lcom/panasonic/avc/cng/a/c;
 
     invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -1395,9 +1395,9 @@
     invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/a/c;->a(Ljava/lang/Object;)V
 
     .line 1141
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/b;->q:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->q:Lcom/panasonic/avc/cng/a/c;
 
     invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -1406,9 +1406,9 @@
     invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/a/c;->a(Ljava/lang/Object;)V
 
     .line 1142
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/b;->r:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->r:Lcom/panasonic/avc/cng/a/c;
 
     invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -1417,9 +1417,9 @@
     invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/a/c;->a(Ljava/lang/Object;)V
 
     .line 1143
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/b;->s:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->s:Lcom/panasonic/avc/cng/a/c;
 
     invoke-static {v3}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -1444,14 +1444,14 @@
     iput v3, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->m:I
 
     .line 1101
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
     if-eqz v0, :cond_0
 
     .line 1103
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/b;->k:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->k:Lcom/panasonic/avc/cng/a/c;
 
     invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -1460,9 +1460,9 @@
     invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/a/c;->a(Ljava/lang/Object;)V
 
     .line 1104
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/b;->l:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->l:Lcom/panasonic/avc/cng/a/c;
 
     invoke-static {v3}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -1471,9 +1471,9 @@
     invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/a/c;->a(Ljava/lang/Object;)V
 
     .line 1105
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/b;->m:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->m:Lcom/panasonic/avc/cng/a/c;
 
     invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -1482,9 +1482,9 @@
     invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/a/c;->a(Ljava/lang/Object;)V
 
     .line 1107
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/b;->n:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->n:Lcom/panasonic/avc/cng/a/c;
 
     invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -1493,9 +1493,9 @@
     invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/a/c;->a(Ljava/lang/Object;)V
 
     .line 1108
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/b;->q:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->q:Lcom/panasonic/avc/cng/a/c;
 
     invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -1504,9 +1504,9 @@
     invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/a/c;->a(Ljava/lang/Object;)V
 
     .line 1109
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/b;->r:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->r:Lcom/panasonic/avc/cng/a/c;
 
     invoke-static {v3}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -1515,9 +1515,9 @@
     invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/a/c;->a(Ljava/lang/Object;)V
 
     .line 1110
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/b;->s:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->s:Lcom/panasonic/avc/cng/a/c;
 
     invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -1551,7 +1551,7 @@
 
     const-string v1, ""
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 1571
     invoke-virtual {p0}, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->ShowDmsErrorIfReceiving()Z
@@ -1638,7 +1638,7 @@
     const/4 v2, 0x0
 
     .line 1015
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
     if-nez v0, :cond_0
 
@@ -1648,18 +1648,18 @@
 
     .line 1019
     :cond_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/geotag/b;->c()Z
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->c()Z
 
     move-result v0
 
     if-nez v0, :cond_3
 
     .line 1022
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/geotag/b;->x()Z
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->x()Z
 
     move-result v0
 
@@ -1673,7 +1673,7 @@
     .line 1026
     sget-object v0, Lcom/panasonic/avc/cng/view/b/b$a;->eZ:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {p0, v0, v2}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {p0, v0, v2}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     goto :goto_0
 
@@ -1700,15 +1700,15 @@
     .line 1037
     sget-object v0, Lcom/panasonic/avc/cng/view/b/b$a;->eX:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {p0, v0, v2}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {p0, v0, v2}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     goto :goto_0
 
     .line 1042
     :cond_2
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/geotag/b;->i()Z
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->i()Z
 
     .line 1043
     invoke-direct {p0}, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e()V
@@ -1717,14 +1717,14 @@
 
     .line 1050
     :cond_3
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/geotag/b;->j()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->j()V
 
     .line 1053
     sget-object v0, Lcom/panasonic/avc/cng/view/b/b$a;->eY:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {p0, v0, v2}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {p0, v0, v2}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     .line 1055
     invoke-direct {p0}, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->f()V
@@ -1741,7 +1741,7 @@
 
     const-string v1, ""
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 1633
     return-void
@@ -1756,7 +1756,7 @@
 
     const-string v1, ""
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 1510
     invoke-virtual {p0}, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->ShowDmsErrorIfReceiving()Z
@@ -1771,11 +1771,11 @@
 
     .line 1516
     :cond_0
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
@@ -1811,7 +1811,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {p0, v0, v1}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {p0, v0, v1}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     goto :goto_0
 
@@ -1839,7 +1839,7 @@
 
     if-nez v0, :cond_0
 
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
     if-nez v0, :cond_1
 
@@ -1853,9 +1853,9 @@
     iput v2, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->j:I
 
     .line 1437
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/b;->j:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->j:Lcom/panasonic/avc/cng/a/c;
 
     invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -1864,14 +1864,14 @@
     invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/a/c;->a(Ljava/lang/Object;)V
 
     .line 1438
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/view/geotag/b;->b(Z)V
+    invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->b(Z)V
 
     .line 1441
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/geotag/b;->p()Lcom/panasonic/avc/cng/view/b/b$a;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->p()Lcom/panasonic/avc/cng/view/b/b$a;
 
     move-result-object v0
 
@@ -1881,9 +1881,9 @@
     if-eq v0, v1, :cond_3
 
     .line 1445
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    iget-object v1, v1, Lcom/panasonic/avc/cng/view/geotag/b;->j:Lcom/panasonic/avc/cng/a/c;
+    iget-object v1, v1, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->j:Lcom/panasonic/avc/cng/a/c;
 
     invoke-static {v3}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -1892,9 +1892,9 @@
     invoke-virtual {v1, v2}, Lcom/panasonic/avc/cng/a/c;->a(Ljava/lang/Object;)V
 
     .line 1446
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    invoke-virtual {v1, v3}, Lcom/panasonic/avc/cng/view/geotag/b;->b(Z)V
+    invoke-virtual {v1, v3}, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->b(Z)V
 
     .line 1448
     sget-object v1, Lcom/panasonic/avc/cng/view/b/b$a;->eO:Lcom/panasonic/avc/cng/view/b/b$a;
@@ -1932,7 +1932,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {p0, v0, v1}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {p0, v0, v1}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     goto :goto_0
 .end method
@@ -1946,7 +1946,7 @@
 
     const-string v1, ""
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 1622
     invoke-virtual {p0}, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->openOptionsMenu()V
@@ -1979,9 +1979,9 @@
     iput v1, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->j:I
 
     .line 1348
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/b;->g:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->g:Lcom/panasonic/avc/cng/a/c;
 
     invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -1990,9 +1990,9 @@
     invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/a/c;->a(Ljava/lang/Object;)V
 
     .line 1351
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/geotag/b;->l()Lcom/panasonic/avc/cng/view/b/b$a;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->l()Lcom/panasonic/avc/cng/view/b/b$a;
 
     move-result-object v0
 
@@ -2002,9 +2002,9 @@
     if-eq v0, v1, :cond_2
 
     .line 1355
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    iget-object v1, v1, Lcom/panasonic/avc/cng/view/geotag/b;->g:Lcom/panasonic/avc/cng/a/c;
+    iget-object v1, v1, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->g:Lcom/panasonic/avc/cng/a/c;
 
     invoke-static {v3}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -2046,7 +2046,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {p0, v0, v1}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {p0, v0, v1}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     goto :goto_0
 .end method
@@ -2060,7 +2060,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {p0, v0, v1}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {p0, v0, v1}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     .line 1685
     return-void
@@ -2102,19 +2102,19 @@
 
     move v5, p2
 
-    invoke-static/range {v0 .. v5}, Lcom/panasonic/avc/cng/view/common/e;->a(Ljava/lang/String;Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/model/service/o$a;Lcom/panasonic/avc/cng/application/c$e;B)Lcom/panasonic/avc/cng/application/c;
+    invoke-static/range {v0 .. v5}, Lcom/panasonic/avc/cng/view/common/e;->a(Ljava/lang/String;Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/model/service/o$a;Lcom/panasonic/avc/cng/application/c$e;B)Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/c;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
     .line 2138
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
     if-nez v0, :cond_0
 
     .line 2140
-    new-instance v0, Lcom/panasonic/avc/cng/application/c;
+    new-instance v0, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->v:Landroid/content/Context;
 
@@ -2130,14 +2130,14 @@
 
     move v5, p2
 
-    invoke-direct/range {v0 .. v7}, Lcom/panasonic/avc/cng/application/c;-><init>(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/model/service/o$a;Lcom/panasonic/avc/cng/application/c$e;BIZ)V
+    invoke-direct/range {v0 .. v7}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;-><init>(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/model/service/o$a;Lcom/panasonic/avc/cng/application/c$e;BIZ)V
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/c;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
     .line 2141
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/application/c;->c()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->c()V
 
     .line 2143
     :cond_0
@@ -2170,14 +2170,14 @@
     const/4 v3, 0x0
 
     .line 974
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
     if-eqz v0, :cond_0
 
     .line 976
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/b;->o:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->o:Lcom/panasonic/avc/cng/a/c;
 
     invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -2189,9 +2189,9 @@
     if-eqz p1, :cond_2
 
     .line 979
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/b;->p:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->p:Lcom/panasonic/avc/cng/a/c;
 
     invoke-virtual {p0}, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->getResources()Landroid/content/res/Resources;
 
@@ -2207,9 +2207,9 @@
 
     .line 986
     :goto_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/b;->k:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->k:Lcom/panasonic/avc/cng/a/c;
 
     invoke-virtual {v0}, Lcom/panasonic/avc/cng/a/c;->b()Ljava/lang/Object;
 
@@ -2227,9 +2227,9 @@
     if-eqz p1, :cond_3
 
     .line 990
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/b;->n:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->n:Lcom/panasonic/avc/cng/a/c;
 
     invoke-static {v4}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -2238,9 +2238,9 @@
     invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/a/c;->a(Ljava/lang/Object;)V
 
     .line 991
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/b;->q:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->q:Lcom/panasonic/avc/cng/a/c;
 
     invoke-static {v3}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -2254,9 +2254,9 @@
     if-eqz p1, :cond_1
 
     .line 1004
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/geotag/b;->t()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->t()V
 
     .line 1006
     :cond_1
@@ -2264,9 +2264,9 @@
 
     .line 983
     :cond_2
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/b;->p:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->p:Lcom/panasonic/avc/cng/a/c;
 
     invoke-virtual {p0}, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->getResources()Landroid/content/res/Resources;
 
@@ -2284,9 +2284,9 @@
 
     .line 995
     :cond_3
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/b;->n:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->n:Lcom/panasonic/avc/cng/a/c;
 
     invoke-static {v3}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -2295,9 +2295,9 @@
     invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/a/c;->a(Ljava/lang/Object;)V
 
     .line 996
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/b;->q:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->q:Lcom/panasonic/avc/cng/a/c;
 
     invoke-static {v4}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -2319,7 +2319,7 @@
     const/4 v3, 0x1
 
     .line 934
-    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/al;->b()V
+    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/SettingMenuBaseActivity;->b()V
 
     .line 936
     new-instance v0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity$a;
@@ -2333,27 +2333,27 @@
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->g:Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity$a;
 
-    invoke-static {p0, v0, v1}, Lcom/panasonic/avc/cng/view/common/e;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/geotag/b$b;)Lcom/panasonic/avc/cng/view/geotag/b;
+    invoke-static {p0, v0, v1}, Lcom/panasonic/avc/cng/view/common/e;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/geotag/b$b;)Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
     .line 940
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
     if-nez v0, :cond_0
 
     .line 942
-    new-instance v0, Lcom/panasonic/avc/cng/view/geotag/b;
+    new-instance v0, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->t:Landroid/os/Handler;
 
     iget-object v2, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->g:Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity$a;
 
-    invoke-direct {v0, p0, v1, v2}, Lcom/panasonic/avc/cng/view/geotag/b;-><init>(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/geotag/b$b;)V
+    invoke-direct {v0, p0, v1, v2}, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;-><init>(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/geotag/b$b;)V
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
     .line 946
     :cond_0
@@ -2371,9 +2371,9 @@
     .line 949
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->f:Lcom/panasonic/avc/cng/view/geotag/a;
 
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    invoke-virtual {v0, p0, v1}, Lcom/panasonic/avc/cng/view/geotag/a;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/geotag/b;)V
+    invoke-virtual {v0, p0, v1}, Lcom/panasonic/avc/cng/view/geotag/a;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;)V
 
     .line 953
     :cond_1
@@ -2386,7 +2386,7 @@
     .line 954
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->v:Landroid/content/Context;
 
-    invoke-static {v0, v3}, Lcom/panasonic/avc/cng/model/service/z;->a(Landroid/content/Context;Z)Lcom/panasonic/avc/cng/model/service/e;
+    invoke-static {v0, v3}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->a(Landroid/content/Context;Z)Lcom/panasonic/avc/cng/model/service/e;
 
     move-result-object v0
 
@@ -2430,11 +2430,11 @@
 
     .prologue
     .line 1478
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
@@ -2455,7 +2455,7 @@
     invoke-static {}, Lcom/panasonic/avc/cng/model/b;->a()V
 
     .line 1487
-    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/al;->c()V
+    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/SettingMenuBaseActivity;->c()V
 
     .line 1488
     return-void
@@ -2502,29 +2502,29 @@
 
     .line 689
     :cond_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
     if-eqz v0, :cond_1
 
     .line 692
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    invoke-virtual {v0, v3}, Lcom/panasonic/avc/cng/view/geotag/b;->a(Z)V
+    invoke-virtual {v0, v3}, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->a(Z)V
 
     .line 694
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/geotag/b;->a()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->a()V
 
     .line 695
-    iput-object v2, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iput-object v2, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
     .line 698
-    invoke-static {v2}, Lcom/panasonic/avc/cng/view/common/e;->a(Lcom/panasonic/avc/cng/view/geotag/b;)V
+    invoke-static {v2}, Lcom/panasonic/avc/cng/view/common/e;->a(Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;)V
 
     .line 701
     :cond_1
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
     if-eqz v0, :cond_2
 
@@ -2533,27 +2533,27 @@
 
     const-string v1, "_nfcViewModel != null"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 705
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
-    invoke-virtual {v0, v3}, Lcom/panasonic/avc/cng/application/c;->a(Z)V
+    invoke-virtual {v0, v3}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->a(Z)V
 
     .line 708
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/application/c;->d()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->d()V
 
     .line 710
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
-    invoke-virtual {v0, v3, v3}, Lcom/panasonic/avc/cng/application/c;->a(ZZ)V
+    invoke-virtual {v0, v3, v3}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->a(ZZ)V
 
     .line 712
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/application/c;->m()Ljava/lang/Boolean;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->m()Ljava/lang/Boolean;
 
     move-result-object v0
 
@@ -2562,12 +2562,12 @@
     move-result v0
 
     .line 714
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/c;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/application/c;->a()V
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->a()V
 
     .line 715
-    iput-object v2, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/c;
+    iput-object v2, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
     .line 717
     if-nez v0, :cond_2
@@ -2575,11 +2575,11 @@
     .line 719
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->u:Ljava/lang/String;
 
-    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/view/common/e;->a(Ljava/lang/String;Lcom/panasonic/avc/cng/application/c;)V
+    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/view/common/e;->a(Ljava/lang/String;Lcom/panasonic/avc/cng/application/NfcSupportViewModel;)V
 
     .line 723
     :cond_2
-    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/al;->finish()V
+    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/SettingMenuBaseActivity;->finish()V
 
     .line 724
     return-void
@@ -2600,7 +2600,7 @@
     const/4 v5, 0x1
 
     .line 1847
-    invoke-super {p0, p1, p2, p3}, Lcom/panasonic/avc/cng/view/setting/al;->onActivityResult(IILandroid/content/Intent;)V
+    invoke-super {p0, p1, p2, p3}, Lcom/panasonic/avc/cng/view/setting/SettingMenuBaseActivity;->onActivityResult(IILandroid/content/Intent;)V
 
     .line 1850
     const/16 v0, 0x2bc
@@ -2608,14 +2608,14 @@
     if-ne p1, v0, :cond_1
 
     .line 1852
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
     if-eqz v0, :cond_0
 
     .line 1854
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/geotag/b;->i()Z
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->i()Z
 
     move-result v0
 
@@ -2623,9 +2623,9 @@
     if-eq v0, v5, :cond_0
 
     .line 1857
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/geotag/b;->j()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->j()V
 
     .line 1858
     invoke-virtual {p0, v2}, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a(Z)V
@@ -2684,27 +2684,27 @@
     move-result v0
 
     .line 1890
-    iget-object v4, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/c;
+    iget-object v4, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
-    invoke-virtual {v4, v2}, Lcom/panasonic/avc/cng/application/c;->e(Ljava/lang/String;)V
+    invoke-virtual {v4, v2}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->e(Ljava/lang/String;)V
 
     .line 1891
-    iget-object v4, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/c;
+    iget-object v4, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
-    invoke-virtual {v4, v3}, Lcom/panasonic/avc/cng/application/c;->f(Ljava/lang/String;)V
+    invoke-virtual {v4, v3}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->f(Ljava/lang/String;)V
 
     .line 1894
-    iget-object v4, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/c;
+    iget-object v4, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
-    invoke-virtual {v4, v1}, Lcom/panasonic/avc/cng/application/c;->d(Ljava/lang/String;)V
+    invoke-virtual {v4, v1}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->d(Ljava/lang/String;)V
 
     .line 1897
     if-nez v0, :cond_4
 
     .line 1900
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
-    invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/application/c;->b(Ljava/lang/String;)V
+    invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->b(Ljava/lang/String;)V
 
     .line 1983
     :cond_2
@@ -2776,9 +2776,9 @@
 
     .line 1905
     :cond_4
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
-    invoke-virtual {v0, v2, v3}, Lcom/panasonic/avc/cng/application/c;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, v2, v3}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_1
 
@@ -2798,14 +2798,14 @@
     if-ne v1, v5, :cond_8
 
     .line 1928
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
     if-eqz v0, :cond_2
 
     .line 1930
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    invoke-virtual {v0, v5}, Lcom/panasonic/avc/cng/view/geotag/b;->d(Z)Lcom/panasonic/avc/cng/view/b/b$a;
+    invoke-virtual {v0, v5}, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->d(Z)Lcom/panasonic/avc/cng/view/b/b$a;
 
     move-result-object v0
 
@@ -2837,14 +2837,14 @@
     if-ne v1, v2, :cond_b
 
     .line 1948
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
     if-eqz v1, :cond_2
 
     .line 1950
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    invoke-virtual {v1, v5}, Lcom/panasonic/avc/cng/view/geotag/b;->d(Z)Lcom/panasonic/avc/cng/view/b/b$a;
+    invoke-virtual {v1, v5}, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->d(Z)Lcom/panasonic/avc/cng/view/b/b$a;
 
     move-result-object v1
 
@@ -2909,7 +2909,7 @@
 
     .prologue
     .line 1498
-    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/al;->onBackPressed()V
+    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/SettingMenuBaseActivity;->onBackPressed()V
 
     .line 1499
     return-void
@@ -2920,7 +2920,7 @@
 
     .prologue
     .line 891
-    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/al;->onConfigurationChanged(Landroid/content/res/Configuration;)V
+    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/SettingMenuBaseActivity;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
     .line 894
     const v0, 0x7f03001d
@@ -2960,9 +2960,9 @@
     :cond_0
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->f:Lcom/panasonic/avc/cng/view/geotag/a;
 
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    invoke-virtual {v0, p0, v1}, Lcom/panasonic/avc/cng/view/geotag/a;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/geotag/b;)V
+    invoke-virtual {v0, p0, v1}, Lcom/panasonic/avc/cng/view/geotag/a;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;)V
 
     .line 911
     const/4 v0, 0x0
@@ -2983,7 +2983,7 @@
     invoke-static {p0}, Lcom/panasonic/avc/cng/model/b;->a(Landroid/app/Activity;)V
 
     .line 591
-    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/al;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/SettingMenuBaseActivity;->onCreate(Landroid/os/Bundle;)V
 
     .line 593
     iput-object p0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->v:Landroid/content/Context;
@@ -3082,7 +3082,7 @@
 
     .line 665
     :cond_1
-    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/al;->onDestroy()V
+    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/SettingMenuBaseActivity;->onDestroy()V
 
     .line 666
     return-void
@@ -3102,7 +3102,7 @@
     aget v0, v0, v1
 
     .line 2713
-    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/al;->onDialogCancel(Lcom/panasonic/avc/cng/view/b/b$a;)V
+    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/SettingMenuBaseActivity;->onDialogCancel(Lcom/panasonic/avc/cng/view/b/b$a;)V
 
     .line 2716
     return-void
@@ -3113,7 +3113,7 @@
 
     .prologue
     .line 2721
-    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/al;->onDialogDismiss(Lcom/panasonic/avc/cng/view/b/b$a;)V
+    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/SettingMenuBaseActivity;->onDialogDismiss(Lcom/panasonic/avc/cng/view/b/b$a;)V
 
     .line 2722
     return-void
@@ -3196,21 +3196,21 @@
 
     .line 1748
     :pswitch_4
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/geotag/b;->k()Z
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->k()Z
 
     move-result v1
 
     if-eqz v1, :cond_1
 
     .line 1750
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/geotag/b;->n()V
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->n()V
 
     .line 1751
-    invoke-static {p0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;)V
+    invoke-static {p0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;)V
 
     .line 1753
     :cond_1
@@ -3253,7 +3253,7 @@
 
     .prologue
     .line 2739
-    invoke-super {p0, p1, p2}, Lcom/panasonic/avc/cng/view/setting/al;->onItemClick(Lcom/panasonic/avc/cng/view/b/b$a;I)V
+    invoke-super {p0, p1, p2}, Lcom/panasonic/avc/cng/view/setting/SettingMenuBaseActivity;->onItemClick(Lcom/panasonic/avc/cng/view/b/b$a;I)V
 
     .line 2740
     return-void
@@ -3264,7 +3264,7 @@
 
     .prologue
     .line 2733
-    invoke-super {p0, p1, p2, p3}, Lcom/panasonic/avc/cng/view/setting/al;->onMultiChoice(Lcom/panasonic/avc/cng/view/b/b$a;IZ)V
+    invoke-super {p0, p1, p2, p3}, Lcom/panasonic/avc/cng/view/setting/SettingMenuBaseActivity;->onMultiChoice(Lcom/panasonic/avc/cng/view/b/b$a;IZ)V
 
     .line 2734
     return-void
@@ -3291,7 +3291,7 @@
 
     .line 2702
     :pswitch_0
-    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/al;->onNegativeButtonClick(Lcom/panasonic/avc/cng/view/b/b$a;)V
+    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/SettingMenuBaseActivity;->onNegativeButtonClick(Lcom/panasonic/avc/cng/view/b/b$a;)V
 
     .line 2705
     :cond_0
@@ -3300,16 +3300,16 @@
 
     .line 2629
     :pswitch_1
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/geotag/b;->r()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->r()V
 
     .line 2632
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
@@ -3335,71 +3335,71 @@
     :cond_1
     sget-object v0, Lcom/panasonic/avc/cng/view/b/b$a;->fa:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {p0, v0, v3}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {p0, v0, v3}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     goto :goto_0
 
     .line 2643
     :pswitch_2
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/geotag/b;->k()Z
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->k()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 2645
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/geotag/b;->n()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->n()V
 
     goto :goto_0
 
     .line 2652
     :pswitch_3
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/geotag/b;->o()Z
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->o()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 2654
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/geotag/b;->q()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->q()V
 
     goto :goto_0
 
     .line 2661
     :pswitch_4
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/geotag/b;->u()Z
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->u()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 2663
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/geotag/b;->w()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->w()V
 
     goto :goto_0
 
     .line 2669
     :pswitch_5
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
     if-eqz v0, :cond_0
 
     .line 2671
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/geotag/b;->B()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->B()V
 
     goto :goto_0
 
@@ -3413,14 +3413,14 @@
 
     .line 2682
     :pswitch_7
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
     if-eqz v0, :cond_0
 
     .line 2684
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/b;->g:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->g:Lcom/panasonic/avc/cng/a/c;
 
     invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -3432,14 +3432,14 @@
 
     .line 2690
     :pswitch_8
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
     if-eqz v0, :cond_0
 
     .line 2692
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/b;->j:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->j:Lcom/panasonic/avc/cng/a/c;
 
     invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -3453,7 +3453,7 @@
     :pswitch_9
     sget-object v0, Lcom/panasonic/avc/cng/view/b/b$a;->fG:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {p0, v0, v3}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {p0, v0, v3}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     goto/16 :goto_0
 
@@ -3480,7 +3480,7 @@
 
     .prologue
     .line 2619
-    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/al;->onNeutralButtonClick(Lcom/panasonic/avc/cng/view/b/b$a;)V
+    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/SettingMenuBaseActivity;->onNeutralButtonClick(Lcom/panasonic/avc/cng/view/b/b$a;)V
 
     .line 2620
     return-void
@@ -3491,18 +3491,18 @@
 
     .prologue
     .line 2171
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
     if-eqz v0, :cond_0
 
     .line 2173
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
-    invoke-virtual {v0, p1}, Lcom/panasonic/avc/cng/application/c;->a(Landroid/content/Intent;)V
+    invoke-virtual {v0, p1}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->a(Landroid/content/Intent;)V
 
     .line 2176
     :cond_0
-    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/al;->onNewIntent(Landroid/content/Intent;)V
+    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/SettingMenuBaseActivity;->onNewIntent(Landroid/content/Intent;)V
 
     .line 2177
     return-void
@@ -3513,38 +3513,38 @@
 
     .prologue
     .line 852
-    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/al;->onPause()V
+    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/SettingMenuBaseActivity;->onPause()V
 
     .line 855
     invoke-direct {p0}, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->f()V
 
     .line 858
-    invoke-static {p0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;)V
+    invoke-static {p0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;)V
 
     .line 860
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
     if-eqz v0, :cond_0
 
     .line 863
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/geotag/b;->q()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->q()V
 
     .line 864
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/geotag/b;->r()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->r()V
 
     .line 867
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/geotag/b;->n()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->n()V
 
     .line 869
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/b;->g:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->g:Lcom/panasonic/avc/cng/a/c;
 
     const/4 v1, 0x1
 
@@ -3555,22 +3555,22 @@
     invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/a/c;->a(Ljava/lang/Object;)V
 
     .line 872
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/geotag/b;->a(Z)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->a(Z)V
 
     .line 875
     :cond_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
     if-eqz v0, :cond_1
 
     .line 877
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/application/c;->f()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->f()V
 
     .line 880
     :cond_1
@@ -3602,7 +3602,7 @@
     packed-switch v0, :pswitch_data_0
 
     .line 2611
-    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/al;->onPositiveButtonClick(Lcom/panasonic/avc/cng/view/b/b$a;)V
+    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/SettingMenuBaseActivity;->onPositiveButtonClick(Lcom/panasonic/avc/cng/view/b/b$a;)V
 
     .line 2614
     :cond_0
@@ -3617,21 +3617,21 @@
 
     .line 2485
     :pswitch_1
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/geotag/b;->s()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->s()V
 
     .line 2486
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/view/geotag/b;->b(Z)V
+    invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->b(Z)V
 
     .line 2489
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
@@ -3657,7 +3657,7 @@
     :cond_1
     sget-object v0, Lcom/panasonic/avc/cng/view/b/b$a;->fa:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {p0, v0, v3}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {p0, v0, v3}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     goto :goto_0
 
@@ -3699,7 +3699,7 @@
     :cond_2
     sget-object v0, Lcom/panasonic/avc/cng/view/b/b$a;->eS:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {p0, v0, v3}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {p0, v0, v3}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     goto :goto_0
 
@@ -3741,15 +3741,15 @@
     :cond_3
     sget-object v0, Lcom/panasonic/avc/cng/view/b/b$a;->eS:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {p0, v0, v3}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {p0, v0, v3}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     goto :goto_0
 
     .line 2542
     :pswitch_4
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/geotag/b;->v()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->v()V
 
     .line 2543
     new-instance v0, Landroid/os/Bundle;
@@ -3774,15 +3774,15 @@
 
     invoke-direct {v2, p0}, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity$9;-><init>(Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;)V
 
-    invoke-static {p0, v1, v0, v2}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;Lcom/panasonic/avc/cng/view/b/a$c;)V
+    invoke-static {p0, v1, v0, v2}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;Lcom/panasonic/avc/cng/view/b/a$c;)V
 
     goto/16 :goto_0
 
     .line 2560
     :pswitch_5
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/geotag/b;->m()Lcom/panasonic/avc/cng/view/b/b$a;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->m()Lcom/panasonic/avc/cng/view/b/b$a;
 
     move-result-object v0
 
@@ -3798,15 +3798,15 @@
 
     .line 2570
     :pswitch_6
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/geotag/b;->c()Z
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->c()Z
 
     move-result v1
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/geotag/b;->c(Z)Lcom/panasonic/avc/cng/view/b/b$a;
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->c(Z)Lcom/panasonic/avc/cng/view/b/b$a;
 
     move-result-object v0
 
@@ -3844,34 +3844,34 @@
 
     invoke-direct {v2, p0}, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity$10;-><init>(Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;)V
 
-    invoke-static {p0, v1, v0, v2}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;Lcom/panasonic/avc/cng/view/b/a$c;)V
+    invoke-static {p0, v1, v0, v2}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;Lcom/panasonic/avc/cng/view/b/a$c;)V
 
     .line 2596
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
     if-eqz v0, :cond_0
 
     .line 2598
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
     new-instance v1, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity$b;
 
     invoke-direct {v1, p0, v3}, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity$b;-><init>(Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity$1;)V
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/geotag/b;->a(Lcom/panasonic/avc/cng/model/service/h$a;)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->a(Lcom/panasonic/avc/cng/model/service/h$a;)V
 
     goto/16 :goto_0
 
     .line 2604
     :pswitch_8
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
     if-eqz v0, :cond_0
 
     .line 2606
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/geotag/b;->C()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->C()V
 
     goto/16 :goto_0
 
@@ -3911,7 +3911,7 @@
     return v0
 
     :cond_0
-    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/al;->onPrepareOptionsMenu(Landroid/view/Menu;)Z
+    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/SettingMenuBaseActivity;->onPrepareOptionsMenu(Landroid/view/Menu;)Z
 
     move-result v0
 
@@ -3923,18 +3923,18 @@
 
     .prologue
     .line 2160
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
     if-eqz v0, :cond_0
 
     .line 2162
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/application/c;->l()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->l()V
 
     .line 2165
     :cond_0
-    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/al;->onRestoreInstanceState(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/SettingMenuBaseActivity;->onRestoreInstanceState(Landroid/os/Bundle;)V
 
     .line 2166
     return-void
@@ -3949,43 +3949,43 @@
     const/4 v3, 0x0
 
     .line 749
-    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/al;->onResume()V
+    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/SettingMenuBaseActivity;->onResume()V
 
     .line 783
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
     if-eqz v0, :cond_0
 
     .line 785
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
     const/4 v1, 0x1
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/geotag/b;->a(Z)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->a(Z)V
 
     .line 790
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/geotag/b;->f()I
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->f()I
 
     move-result v0
 
     .line 791
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    invoke-virtual {v1, v0}, Lcom/panasonic/avc/cng/view/geotag/b;->b(I)V
+    invoke-virtual {v1, v0}, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->b(I)V
 
     .line 794
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/geotag/b;->g()Z
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->g()Z
 
     move-result v0
 
     .line 796
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    iget-object v1, v1, Lcom/panasonic/avc/cng/view/geotag/b;->j:Lcom/panasonic/avc/cng/a/c;
+    iget-object v1, v1, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->j:Lcom/panasonic/avc/cng/a/c;
 
     invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -4005,13 +4005,13 @@
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/geotag/b;->A()Z
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->A()Z
 
     move-result v0
 
@@ -4087,43 +4087,43 @@
     .line 824
     sget-object v0, Lcom/panasonic/avc/cng/view/b/b$a;->fE:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {p0, v0, v1}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {p0, v0, v1}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     .line 827
     :cond_1
     iput-boolean v3, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->q:Z
 
     .line 829
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
     if-eqz v0, :cond_2
 
     .line 831
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/application/c;->e()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->e()V
 
     .line 834
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
-    iget-boolean v0, v0, Lcom/panasonic/avc/cng/application/c;->c:Z
+    iget-boolean v0, v0, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->c:Z
 
     if-eqz v0, :cond_2
 
     .line 836
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
-    iput-boolean v3, v0, Lcom/panasonic/avc/cng/application/c;->c:Z
+    iput-boolean v3, v0, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->c:Z
 
     .line 837
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
-    invoke-virtual {v0, v3, v3}, Lcom/panasonic/avc/cng/application/c;->a(ZZ)V
+    invoke-virtual {v0, v3, v3}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->a(ZZ)V
 
     .line 838
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/application/c;->k()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->k()V
 
     .line 843
     :cond_2
@@ -4184,17 +4184,17 @@
 
     .prologue
     .line 627
-    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/al;->onSaveInstanceState(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/SettingMenuBaseActivity;->onSaveInstanceState(Landroid/os/Bundle;)V
 
     .line 629
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
     if-eqz v0, :cond_0
 
     .line 632
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->e:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/e;->a(Lcom/panasonic/avc/cng/view/geotag/b;)V
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/e;->a(Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;)V
 
     .line 634
     :cond_0
@@ -4205,19 +4205,19 @@
     invoke-virtual {p1, v0, v1}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
     .line 637
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
     if-eqz v0, :cond_1
 
     .line 643
     :cond_1
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
     if-eqz v0, :cond_2
 
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/application/c;->m()Ljava/lang/Boolean;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->m()Ljava/lang/Boolean;
 
     move-result-object v0
 
@@ -4230,9 +4230,9 @@
     .line 645
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->u:Ljava/lang/String;
 
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/c;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/common/e;->a(Ljava/lang/String;Lcom/panasonic/avc/cng/application/c;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/common/e;->a(Ljava/lang/String;Lcom/panasonic/avc/cng/application/NfcSupportViewModel;)V
 
     .line 647
     :cond_2
@@ -4244,7 +4244,7 @@
 
     .prologue
     .line 2727
-    invoke-super {p0, p1, p2}, Lcom/panasonic/avc/cng/view/setting/al;->onSingleChoice(Lcom/panasonic/avc/cng/view/b/b$a;I)V
+    invoke-super {p0, p1, p2}, Lcom/panasonic/avc/cng/view/setting/SettingMenuBaseActivity;->onSingleChoice(Lcom/panasonic/avc/cng/view/b/b$a;I)V
 
     .line 2728
     return-void
@@ -4255,7 +4255,7 @@
 
     .prologue
     .line 729
-    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/al;->onStart()V
+    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/SettingMenuBaseActivity;->onStart()V
 
     .line 732
     const/16 v0, 0x10
@@ -4272,16 +4272,16 @@
     invoke-virtual {p0, v1, v0}, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a(Ljava/lang/String;B)V
 
     .line 736
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/application/c;->j()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->j()V
 
     .line 740
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
     iget-boolean v1, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->d:Z
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/application/c;->a(Z)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->a(Z)V
 
     .line 741
     return-void
@@ -4292,17 +4292,17 @@
 
     .prologue
     .line 2182
-    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/al;->onStop()V
+    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/SettingMenuBaseActivity;->onStop()V
 
     .line 2184
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
     if-eqz v0, :cond_0
 
     .line 2186
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/application/c;->d()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->d()V
 
     .line 2188
     :cond_0

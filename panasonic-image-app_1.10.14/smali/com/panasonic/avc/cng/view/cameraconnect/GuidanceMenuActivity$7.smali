@@ -53,7 +53,7 @@
 
     invoke-direct {v0, v1}, Lcom/panasonic/avc/cng/core/a/d;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/d;->h()Lcom/panasonic/avc/cng/model/c/h;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/d;->h()Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
     .line 2406
     return-void

@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/panasonic/avc/cng/view/liveview/d;
+    value = Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixBaseActivity;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

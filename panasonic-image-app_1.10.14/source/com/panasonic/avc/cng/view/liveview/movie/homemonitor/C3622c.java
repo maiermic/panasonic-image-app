@@ -15,8 +15,8 @@ import android.os.Message;
 import android.widget.FrameLayout;
 import com.panasonic.avc.cng.core.codec.G711Codec;
 import com.panasonic.avc.cng.core.codec.PacketLossConcealer;
-import com.panasonic.avc.cng.core.p040a.C1438ac;
-import com.panasonic.avc.cng.core.p040a.C1442ag;
+import com.panasonic.avc.cng.core.p040a.PantiluterVianaCommand;
+import com.panasonic.avc.cng.core.p040a.RecordVianaCommand;
 import com.panasonic.avc.cng.core.p040a.C1448aj;
 import com.panasonic.avc.cng.core.p040a.C1473at;
 import com.panasonic.avc.cng.imageapp.R;
@@ -28,11 +28,11 @@ import com.panasonic.avc.cng.model.C1897j.C1905h;
 import com.panasonic.avc.cng.model.C1897j.C1906i;
 import com.panasonic.avc.cng.model.C1910l;
 import com.panasonic.avc.cng.model.p051c.C1836aa;
-import com.panasonic.avc.cng.model.p051c.C1837ab;
+import com.panasonic.avc.cng.model.p051c.ParseTagPositionInfo;
 import com.panasonic.avc.cng.model.p051c.C1838ac;
-import com.panasonic.avc.cng.model.p051c.C1839ad;
-import com.panasonic.avc.cng.model.p051c.C1846e;
-import com.panasonic.avc.cng.model.p051c.C1853h;
+import com.panasonic.avc.cng.model.p051c.ParseTagRoundInfo;
+import com.panasonic.avc.cng.model.p051c.CameraStatus;
+import com.panasonic.avc.cng.model.p051c.ParseTagHighlightSceneInfo;
 import com.panasonic.avc.cng.model.p051c.C1860l;
 import com.panasonic.avc.cng.model.p052d.C1879a;
 import com.panasonic.avc.cng.model.service.C1985b;
@@ -42,11 +42,11 @@ import com.panasonic.avc.cng.model.service.C2028e.C2031c;
 import com.panasonic.avc.cng.model.service.C2238t;
 import com.panasonic.avc.cng.model.service.C2238t.C2239a;
 import com.panasonic.avc.cng.model.service.C2238t.C2240b;
-import com.panasonic.avc.cng.model.service.C2253z;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
 import com.panasonic.avc.cng.model.service.p056c.C2020c;
 import com.panasonic.avc.cng.p038a.C1344c;
 import com.panasonic.avc.cng.util.C2256b;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.util.C2264j;
 import com.panasonic.avc.cng.util.C2274o;
 import com.panasonic.avc.cng.view.liveview.C3906v;
@@ -339,7 +339,7 @@ public class C3622c extends C2291c implements C2239a, C3909b {
     /* access modifiers changed from: private */
 
     /* renamed from: bI */
-    public C1442ag f11806bI;
+    public RecordVianaCommand f11806bI;
     /* access modifiers changed from: private */
 
     /* renamed from: bJ */
@@ -347,7 +347,7 @@ public class C3622c extends C2291c implements C2239a, C3909b {
     /* access modifiers changed from: private */
 
     /* renamed from: bK */
-    public C1438ac f11808bK;
+    public PantiluterVianaCommand f11808bK;
     /* access modifiers changed from: private */
 
     /* renamed from: bL */
@@ -588,7 +588,7 @@ public class C3622c extends C2291c implements C2239a, C3909b {
     public C3679e f11879g = null;
 
     /* renamed from: h */
-    C1846e f11880h;
+    CameraStatus f11880h;
 
     /* renamed from: i */
     public C1344c<String> f11881i;
@@ -686,9 +686,9 @@ public class C3622c extends C2291c implements C2239a, C3909b {
         }
 
         /* renamed from: a */
-        public void mo8694a(final C1846e eVar) {
+        public void mo8694a(final CameraStatus eVar) {
             boolean z;
-            if (C1846e.m7190a(eVar)) {
+            if (CameraStatus.m7190a(eVar)) {
                 this.f11966b = eVar.mo4678a();
                 if (this.f11967c < 0 && eVar.mo4690c() >= 0) {
                     this.f11971g = true;
@@ -706,7 +706,7 @@ public class C3622c extends C2291c implements C2239a, C3909b {
                     this.f11972h = true;
                 }
                 if (C3622c.this.f11870cs) {
-                    C2028e a = C2253z.m9680a((Context) null, false);
+                    C2028e a = ServiceFactory.m9680a((Context) null, false);
                     if (a != null) {
                         C2031c d = a.mo5280d();
                         if (d != null) {
@@ -792,7 +792,7 @@ public class C3622c extends C2291c implements C2239a, C3909b {
                 if (C3622c.this.f11859ch != null) {
                     C3622c.this.f11859ch.stop();
                 }
-                C3622c.this.f11798bA.mo8538b(C1846e.m7191b(eVar));
+                C3622c.this.f11798bA.mo8538b(CameraStatus.m7191b(eVar));
             }
         }
     }
@@ -1519,7 +1519,7 @@ public class C3622c extends C2291c implements C2239a, C3909b {
     /* renamed from: m */
     public void mo8632m() {
         if (!C2274o.m9891O(this.f11864cm)) {
-            C1985b a = C2253z.m9679a(this.f3706a, C1712b.m6919c().mo4896a());
+            C1985b a = ServiceFactory.m9679a(this.f3706a, C1712b.m6919c().mo4896a());
             if (a != null) {
                 a.mo5185a((C1986a) new C1986a() {
                     /* renamed from: c */
@@ -1557,7 +1557,7 @@ public class C3622c extends C2291c implements C2239a, C3909b {
             m14482ah();
             new Thread(new Runnable() {
                 public void run() {
-                    final C1853h c;
+                    final ParseTagHighlightSceneInfo c;
                     synchronized (C1910l.m7679a()) {
                         c = C3622c.this.f11806bI.mo3508c();
                     }
@@ -1602,7 +1602,7 @@ public class C3622c extends C2291c implements C2239a, C3909b {
                 this.f11810bM = true;
                 new Thread(new Runnable() {
                     public void run() {
-                        C1853h b;
+                        ParseTagHighlightSceneInfo b;
                         synchronized (C1910l.m7679a()) {
                             b = C3622c.this.f11806bI.mo3507b();
                         }
@@ -1625,7 +1625,7 @@ public class C3622c extends C2291c implements C2239a, C3909b {
             m14482ah();
             new Thread(new Runnable() {
                 public void run() {
-                    final C1853h a;
+                    final ParseTagHighlightSceneInfo a;
                     synchronized (C1910l.m7679a()) {
                         a = C3622c.this.f11806bI.mo3505a();
                     }
@@ -1664,7 +1664,7 @@ public class C3622c extends C2291c implements C2239a, C3909b {
                                 }
                             }
                         });
-                        C3622c.this.f11800bC = C2253z.m9715l(C3622c.this.f3706a);
+                        C3622c.this.f11800bC = ServiceFactory.m9715l(C3622c.this.f3706a);
                         C2240b bVar = new C2240b();
                         bVar.f6933a = C3622c.this.f11799bB.getString("ImageApp.Viana.Id", "");
                         bVar.f6934b = C3622c.this.f11799bB.getString("ImageApp.Viana.Password", "");
@@ -1673,12 +1673,12 @@ public class C3622c extends C2291c implements C2239a, C3909b {
                         if (!z2) {
                             i = C3622c.this.f11800bC.mo5785a(bVar);
                         } else {
-                            C2261g.m9763a(C3622c.f11718bw, "見守り　リトライモード");
+                            ImageAppLog.debug(C3622c.f11718bw, "見守り　リトライモード");
                             long currentTimeMillis = System.currentTimeMillis();
                             while (i != 0 && System.currentTimeMillis() - currentTimeMillis <= 75000) {
                                 i = C3622c.this.f11800bC.mo5785a(bVar);
                                 if (i != 0) {
-                                    C2261g.m9763a(C3622c.f11718bw, "Ｖｉａｎａセットアップ失敗");
+                                    ImageAppLog.debug(C3622c.f11718bw, "Ｖｉａｎａセットアップ失敗");
                                     C3622c.this.f11800bC.mo5790b();
                                     try {
                                         Thread.sleep(1000);
@@ -1686,7 +1686,7 @@ public class C3622c extends C2291c implements C2239a, C3909b {
                                         e.printStackTrace();
                                     }
                                 } else {
-                                    C2261g.m9763a(C3622c.f11718bw, "Ｖｉａｎａセットアップ成功");
+                                    ImageAppLog.debug(C3622c.f11718bw, "Ｖｉａｎａセットアップ成功");
                                 }
                             }
                         }
@@ -1696,9 +1696,9 @@ public class C3622c extends C2291c implements C2239a, C3909b {
                                 C1712b.m6919c().mo4897a(C3622c.this.f11802bE);
                                 C3622c.this.f11880h = C3622c.this.f11800bC.mo5794f();
                                 C3622c.this.f11800bC.mo5784a(C3622c.this.f11801bD);
-                                C3622c.this.f11806bI = new C1442ag(C3622c.this.f11802bE.f5682d);
+                                C3622c.this.f11806bI = new RecordVianaCommand(C3622c.this.f11802bE.f5682d);
                                 C3622c.this.f11807bJ = new C3911w();
-                                C3622c.this.f11808bK = new C1438ac(C3622c.this.f11802bE.f5682d);
+                                C3622c.this.f11808bK = new PantiluterVianaCommand(C3622c.this.f11802bE.f5682d);
                                 C3622c.this.mo3207a((Runnable) new Runnable() {
                                     public void run() {
                                         C3622c.this.f11881i.mo3216a(C3622c.this.f11802bE.f5685g);
@@ -1895,7 +1895,7 @@ public class C3622c extends C2291c implements C2239a, C3909b {
                     int i2 = 0;
                     while (true) {
                         i2++;
-                        C2261g.m9763a(C3622c.f11718bw, String.format("EndRemoteVoiceThread() : flg=%s, count=%d", new Object[]{String.valueOf(C3622c.this.mo8641v()), Integer.valueOf(i2)}));
+                        ImageAppLog.debug(C3622c.f11718bw, String.format("EndRemoteVoiceThread() : flg=%s, count=%d", new Object[]{String.valueOf(C3622c.this.mo8641v()), Integer.valueOf(i2)}));
                         if (!C3622c.this.mo8641v() || i2 >= 30) {
                             C3622c.this.mo3207a((Runnable) new Runnable() {
                                 public void run() {
@@ -1946,12 +1946,12 @@ public class C3622c extends C2291c implements C2239a, C3909b {
                         break;
                     }
                     if (C3622c.this.f11800bC != null) {
-                        C1846e f = C3622c.this.f11800bC.mo5794f();
+                        CameraStatus f = C3622c.this.f11800bC.mo5794f();
                         if (C3622c.this.f11820bW == null) {
                             C3622c.this.f11820bW = new C3673a();
                         }
-                        if (!C1846e.m7190a(f)) {
-                            final int b = C1846e.m7191b(f);
+                        if (!CameraStatus.m7190a(f)) {
+                            final int b = CameraStatus.m7191b(f);
                             C3622c.this.mo3207a((Runnable) new Runnable() {
                                 public void run() {
                                     if (C3622c.this.f11798bA != null && !C3622c.this.f11875cx) {
@@ -2124,7 +2124,7 @@ public class C3622c extends C2291c implements C2239a, C3909b {
             this.f11720A.mo3216a("");
             return;
         }
-        final C1985b a2 = C2253z.m9679a(this.f3706a, a);
+        final C1985b a2 = ServiceFactory.m9679a(this.f3706a, a);
         if (a2 != null) {
             a2.mo5185a((C1986a) new C1986a() {
                 /* renamed from: c */
@@ -2192,7 +2192,7 @@ public class C3622c extends C2291c implements C2239a, C3909b {
 
     /* access modifiers changed from: private */
     /* renamed from: b */
-    public void m14507b(C1846e eVar) {
+    public void m14507b(CameraStatus eVar) {
         int i;
         int i2 = 1;
         if (!((String) this.f11895w.mo3217b()).equalsIgnoreCase("sd")) {
@@ -2269,7 +2269,7 @@ public class C3622c extends C2291c implements C2239a, C3909b {
 
     /* access modifiers changed from: private */
     /* renamed from: a */
-    public int m14420a(C1853h hVar) {
+    public int m14420a(ParseTagHighlightSceneInfo hVar) {
         String b = hVar.mo4772b();
         if (b.equalsIgnoreCase("err_critical") || b.equalsIgnoreCase("err_param") || b.equalsIgnoreCase("err_system_error")) {
             return 4;
@@ -2282,7 +2282,7 @@ public class C3622c extends C2291c implements C2239a, C3909b {
 
     /* access modifiers changed from: private */
     /* renamed from: b */
-    public int m14502b(C1853h hVar) {
+    public int m14502b(ParseTagHighlightSceneInfo hVar) {
         String b = hVar.mo4772b();
         if (b.equalsIgnoreCase("err_critical") || b.equalsIgnoreCase("err_param") || b.equalsIgnoreCase("err_system_error")) {
             return 3;
@@ -3129,32 +3129,32 @@ public class C3622c extends C2291c implements C2239a, C3909b {
     private static void m14512c(byte[] bArr) {
         try {
             C1473at atVar = new C1473at(bArr);
-            C2261g.m9771e(f11718bw, "<BasicHaeder>");
-            C2261g.m9771e(f11718bw, String.format(" totalSize = %x", new Object[]{Integer.valueOf(atVar.f3976a.f3979a)}));
-            C2261g.m9771e(f11718bw, String.format(" version = %x", new Object[]{Short.valueOf(atVar.f3976a.f3980b)}));
-            C2261g.m9771e(f11718bw, String.format(" seqNo = %x", new Object[]{Integer.valueOf(atVar.f3976a.f3981c)}));
-            C2261g.m9771e(f11718bw, String.format(" dataFlag = %x", new Object[]{Byte.valueOf(atVar.f3976a.f3982d)}));
-            C2261g.m9771e(f11718bw, String.format(" srcID = %x%x%x%x%x%x", new Object[]{Byte.valueOf(atVar.f3976a.f3983e[0]), Byte.valueOf(atVar.f3976a.f3983e[1]), Byte.valueOf(atVar.f3976a.f3983e[2]), Byte.valueOf(atVar.f3976a.f3983e[3]), Byte.valueOf(atVar.f3976a.f3983e[4]), Byte.valueOf(atVar.f3976a.f3983e[5])}));
-            C2261g.m9771e(f11718bw, String.format(" srcSubID = %x", new Object[]{Byte.valueOf(atVar.f3976a.f3984f)}));
-            C2261g.m9771e(f11718bw, String.format(" dataType = %x", new Object[]{Byte.valueOf(atVar.f3976a.f3985g)}));
-            C2261g.m9771e(f11718bw, String.format(" reserve1 = %x", new Object[]{Byte.valueOf(atVar.f3976a.f3986h)}));
-            C2261g.m9771e(f11718bw, String.format(" pts = %x", new Object[]{Integer.valueOf(atVar.f3976a.f3987i)}));
-            C2261g.m9771e(f11718bw, String.format(" reserve2 = %x%x%x%x%x%x%x%x", new Object[]{Byte.valueOf(atVar.f3976a.f3988j[0]), Byte.valueOf(atVar.f3976a.f3988j[1]), Byte.valueOf(atVar.f3976a.f3988j[2]), Byte.valueOf(atVar.f3976a.f3988j[3]), Byte.valueOf(atVar.f3976a.f3988j[4]), Byte.valueOf(atVar.f3976a.f3988j[5]), Byte.valueOf(atVar.f3976a.f3988j[6]), Byte.valueOf(atVar.f3976a.f3988j[7])}));
-            C2261g.m9771e(f11718bw, String.format(" exHeaderSize = %x", new Object[]{Integer.valueOf(atVar.f3976a.f3989k)}));
-            C2261g.m9771e(f11718bw, "</BasicHaeder>");
-            C2261g.m9771e(f11718bw, "<ExHeader>");
+            ImageAppLog.info(f11718bw, "<BasicHaeder>");
+            ImageAppLog.info(f11718bw, String.format(" totalSize = %x", new Object[]{Integer.valueOf(atVar.f3976a.f3979a)}));
+            ImageAppLog.info(f11718bw, String.format(" version = %x", new Object[]{Short.valueOf(atVar.f3976a.f3980b)}));
+            ImageAppLog.info(f11718bw, String.format(" seqNo = %x", new Object[]{Integer.valueOf(atVar.f3976a.f3981c)}));
+            ImageAppLog.info(f11718bw, String.format(" dataFlag = %x", new Object[]{Byte.valueOf(atVar.f3976a.f3982d)}));
+            ImageAppLog.info(f11718bw, String.format(" srcID = %x%x%x%x%x%x", new Object[]{Byte.valueOf(atVar.f3976a.f3983e[0]), Byte.valueOf(atVar.f3976a.f3983e[1]), Byte.valueOf(atVar.f3976a.f3983e[2]), Byte.valueOf(atVar.f3976a.f3983e[3]), Byte.valueOf(atVar.f3976a.f3983e[4]), Byte.valueOf(atVar.f3976a.f3983e[5])}));
+            ImageAppLog.info(f11718bw, String.format(" srcSubID = %x", new Object[]{Byte.valueOf(atVar.f3976a.f3984f)}));
+            ImageAppLog.info(f11718bw, String.format(" dataType = %x", new Object[]{Byte.valueOf(atVar.f3976a.f3985g)}));
+            ImageAppLog.info(f11718bw, String.format(" reserve1 = %x", new Object[]{Byte.valueOf(atVar.f3976a.f3986h)}));
+            ImageAppLog.info(f11718bw, String.format(" pts = %x", new Object[]{Integer.valueOf(atVar.f3976a.f3987i)}));
+            ImageAppLog.info(f11718bw, String.format(" reserve2 = %x%x%x%x%x%x%x%x", new Object[]{Byte.valueOf(atVar.f3976a.f3988j[0]), Byte.valueOf(atVar.f3976a.f3988j[1]), Byte.valueOf(atVar.f3976a.f3988j[2]), Byte.valueOf(atVar.f3976a.f3988j[3]), Byte.valueOf(atVar.f3976a.f3988j[4]), Byte.valueOf(atVar.f3976a.f3988j[5]), Byte.valueOf(atVar.f3976a.f3988j[6]), Byte.valueOf(atVar.f3976a.f3988j[7])}));
+            ImageAppLog.info(f11718bw, String.format(" exHeaderSize = %x", new Object[]{Integer.valueOf(atVar.f3976a.f3989k)}));
+            ImageAppLog.info(f11718bw, "</BasicHaeder>");
+            ImageAppLog.info(f11718bw, "<ExHeader>");
             if (atVar.f3977b.f3998d != null) {
-                C2261g.m9771e(f11718bw, String.format(" exheadertype = %x", new Object[]{Short.valueOf(atVar.f3977b.f3998d.f4091af)}));
-                C2261g.m9771e(f11718bw, String.format(" formattag = %x", new Object[]{Short.valueOf(atVar.f3977b.f3998d.f4032a)}));
-                C2261g.m9771e(f11718bw, String.format(" channels = %x", new Object[]{Short.valueOf(atVar.f3977b.f3998d.f4033b)}));
-                C2261g.m9771e(f11718bw, String.format(" samplespersec = %x", new Object[]{Integer.valueOf(atVar.f3977b.f3998d.f4034c)}));
-                C2261g.m9771e(f11718bw, String.format(" avgbytepersec = %x", new Object[]{Integer.valueOf(atVar.f3977b.f3998d.f4035d)}));
-                C2261g.m9771e(f11718bw, String.format(" blockalign = %x", new Object[]{Short.valueOf(atVar.f3977b.f3998d.f4036e)}));
-                C2261g.m9771e(f11718bw, String.format(" bitspersample = %x", new Object[]{Short.valueOf(atVar.f3977b.f3998d.f4037f)}));
-                C2261g.m9771e(f11718bw, String.format(" channelmask = %x", new Object[]{Integer.valueOf(atVar.f3977b.f3998d.f4038g)}));
-                C2261g.m9771e(f11718bw, String.format(" exreserve1 = %x", new Object[]{Short.valueOf(atVar.f3977b.f3998d.f4039h)}));
+                ImageAppLog.info(f11718bw, String.format(" exheadertype = %x", new Object[]{Short.valueOf(atVar.f3977b.f3998d.f4091af)}));
+                ImageAppLog.info(f11718bw, String.format(" formattag = %x", new Object[]{Short.valueOf(atVar.f3977b.f3998d.f4032a)}));
+                ImageAppLog.info(f11718bw, String.format(" channels = %x", new Object[]{Short.valueOf(atVar.f3977b.f3998d.f4033b)}));
+                ImageAppLog.info(f11718bw, String.format(" samplespersec = %x", new Object[]{Integer.valueOf(atVar.f3977b.f3998d.f4034c)}));
+                ImageAppLog.info(f11718bw, String.format(" avgbytepersec = %x", new Object[]{Integer.valueOf(atVar.f3977b.f3998d.f4035d)}));
+                ImageAppLog.info(f11718bw, String.format(" blockalign = %x", new Object[]{Short.valueOf(atVar.f3977b.f3998d.f4036e)}));
+                ImageAppLog.info(f11718bw, String.format(" bitspersample = %x", new Object[]{Short.valueOf(atVar.f3977b.f3998d.f4037f)}));
+                ImageAppLog.info(f11718bw, String.format(" channelmask = %x", new Object[]{Integer.valueOf(atVar.f3977b.f3998d.f4038g)}));
+                ImageAppLog.info(f11718bw, String.format(" exreserve1 = %x", new Object[]{Short.valueOf(atVar.f3977b.f3998d.f4039h)}));
             }
-            C2261g.m9771e(f11718bw, "</ExHeader>");
+            ImageAppLog.info(f11718bw, "</ExHeader>");
         } catch (Exception e) {
         }
     }
@@ -3188,7 +3188,7 @@ public class C3622c extends C2291c implements C2239a, C3909b {
         if (this.f11808bK != null) {
             new Thread(new Runnable() {
                 public void run() {
-                    final C1853h a;
+                    final ParseTagHighlightSceneInfo a;
                     synchronized (C1910l.m7679a()) {
                         a = C3622c.this.f11808bK.mo3473a();
                     }
@@ -3200,7 +3200,7 @@ public class C3622c extends C2291c implements C2239a, C3909b {
                                     C3622c.this.f11733N.mo3216a(Boolean.valueOf(false));
                                     return;
                                 }
-                                C2261g.m9769c(C3622c.f11718bw, "OnStart():Error!!");
+                                ImageAppLog.error(C3622c.f11718bw, "OnStart():Error!!");
                                 C3622c.this.f11783al.mo3216a(Boolean.valueOf(true));
                             }
                         });
@@ -3215,14 +3215,14 @@ public class C3622c extends C2291c implements C2239a, C3909b {
         if (this.f11808bK != null) {
             new Thread(new Runnable() {
                 public void run() {
-                    final C1853h b;
+                    final ParseTagHighlightSceneInfo b;
                     synchronized (C1910l.m7679a()) {
                         b = C3622c.this.f11808bK.mo3477b();
                     }
                     C3622c.this.mo3207a((Runnable) new Runnable() {
                         public void run() {
                             if (!b.mo4771a()) {
-                                C2261g.m9769c(C3622c.f11718bw, "OnPantilterPause():Error!!");
+                                ImageAppLog.error(C3622c.f11718bw, "OnPantilterPause():Error!!");
                                 C3622c.this.f11783al.mo3216a(Boolean.valueOf(true));
                             }
                         }
@@ -3237,14 +3237,14 @@ public class C3622c extends C2291c implements C2239a, C3909b {
         if (this.f11808bK != null) {
             new Thread(new Runnable() {
                 public void run() {
-                    final C1853h a;
+                    final ParseTagHighlightSceneInfo a;
                     synchronized (C1910l.m7679a()) {
                         a = C3622c.this.f11808bK.mo3475a(str);
                     }
                     C3622c.this.mo3207a((Runnable) new Runnable() {
                         public void run() {
                             if (!a.mo4771a()) {
-                                C2261g.m9769c(C3622c.f11718bw, String.format("OnControlStart(%s):Error!!", new Object[]{str}));
+                                ImageAppLog.error(C3622c.f11718bw, String.format("OnControlStart(%s):Error!!", new Object[]{str}));
                             }
                         }
                     });
@@ -3258,14 +3258,14 @@ public class C3622c extends C2291c implements C2239a, C3909b {
         if (this.f11808bK != null) {
             new Thread(new Runnable() {
                 public void run() {
-                    final C1853h b;
+                    final ParseTagHighlightSceneInfo b;
                     synchronized (C1910l.m7679a()) {
                         b = C3622c.this.f11808bK.mo3478b(str);
                     }
                     C3622c.this.mo3207a((Runnable) new Runnable() {
                         public void run() {
                             if (!b.mo4771a()) {
-                                C2261g.m9769c(C3622c.f11718bw, String.format("OnControlStop(%s):Error!!", new Object[]{str}));
+                                ImageAppLog.error(C3622c.f11718bw, String.format("OnControlStop(%s):Error!!", new Object[]{str}));
                             }
                         }
                     });
@@ -3279,7 +3279,7 @@ public class C3622c extends C2291c implements C2239a, C3909b {
         if (this.f11808bK != null) {
             new Thread(new Runnable() {
                 public void run() {
-                    final C1853h c;
+                    final ParseTagHighlightSceneInfo c;
                     synchronized (C1910l.m7679a()) {
                         c = C3622c.this.f11808bK.mo3480c();
                     }
@@ -3288,7 +3288,7 @@ public class C3622c extends C2291c implements C2239a, C3909b {
                             if (c.mo4771a()) {
                                 C3622c.this.f11865cn = 0;
                             } else {
-                                C2261g.m9769c(C3622c.f11718bw, "OnCheckStart():Error!!");
+                                ImageAppLog.error(C3622c.f11718bw, "OnCheckStart():Error!!");
                             }
                         }
                     });
@@ -3302,12 +3302,12 @@ public class C3622c extends C2291c implements C2239a, C3909b {
         if (this.f11808bK != null) {
             new Thread(new Runnable() {
                 public void run() {
-                    C1853h c;
+                    ParseTagHighlightSceneInfo c;
                     synchronized (C1910l.m7679a()) {
                         c = C3622c.this.f11808bK.mo3481c(str);
                     }
                     if (!c.mo4771a()) {
-                        C2261g.m9769c(C3622c.f11718bw, "setposition Error");
+                        ImageAppLog.error(C3622c.f11718bw, "setposition Error");
                     }
                 }
             }).start();
@@ -3323,7 +3323,7 @@ public class C3622c extends C2291c implements C2239a, C3909b {
                     synchronized (C1910l.m7679a()) {
                         d = C3622c.this.f11808bK.mo3483d();
                     }
-                    C3622c.this.f11876cy = new C1837ab().mo4631a(d);
+                    C3622c.this.f11876cy = new ParseTagPositionInfo().mo4631a(d);
                     C3622c.this.f11850cB.clear();
                     if (C3622c.this.f11876cy == null || C3622c.this.f11876cy.mo4630a() == null) {
                         C3622c.this.mo3207a((Runnable) new Runnable() {
@@ -3396,7 +3396,7 @@ public class C3622c extends C2291c implements C2239a, C3909b {
                     synchronized (C1910l.m7679a()) {
                         e = C3622c.this.f11808bK.mo3484e();
                     }
-                    C3622c.this.f11877cz = new C1839ad().mo4633a(e);
+                    C3622c.this.f11877cz = new ParseTagRoundInfo().mo4633a(e);
                     if (C3622c.this.f11877cz != null && C3622c.this.f11877cz.f5346b != null) {
                         C3622c.this.f11851cC.clear();
                         for (int i = 0; i < C3622c.this.f11877cz.f5346b.size(); i++) {
@@ -3428,12 +3428,12 @@ public class C3622c extends C2291c implements C2239a, C3909b {
         if (this.f11808bK != null) {
             new Thread(new Runnable() {
                 public void run() {
-                    C1853h d;
+                    ParseTagHighlightSceneInfo d;
                     synchronized (C1910l.m7679a()) {
                         d = C3622c.this.f11808bK.mo3482d(str);
                     }
                     if (!d.mo4771a()) {
-                        C2261g.m9769c(C3622c.f11718bw, "presetstart Error");
+                        ImageAppLog.error(C3622c.f11718bw, "presetstart Error");
                     }
                 }
             }).start();
@@ -3445,12 +3445,12 @@ public class C3622c extends C2291c implements C2239a, C3909b {
         if (this.f11808bK != null) {
             new Thread(new Runnable() {
                 public void run() {
-                    C1853h f;
+                    ParseTagHighlightSceneInfo f;
                     synchronized (C1910l.m7679a()) {
                         f = C3622c.this.f11808bK.mo3485f();
                     }
                     if (!f.mo4771a()) {
-                        C2261g.m9769c(C3622c.f11718bw, "presetstop Error");
+                        ImageAppLog.error(C3622c.f11718bw, "presetstop Error");
                     }
                 }
             }).start();
@@ -3462,12 +3462,12 @@ public class C3622c extends C2291c implements C2239a, C3909b {
         if (this.f11808bK != null) {
             new Thread(new Runnable() {
                 public void run() {
-                    C1853h g;
+                    ParseTagHighlightSceneInfo g;
                     synchronized (C1910l.m7679a()) {
                         g = C3622c.this.f11808bK.mo3486g();
                     }
                     if (!g.mo4771a()) {
-                        C2261g.m9769c(C3622c.f11718bw, "roundstart Error");
+                        ImageAppLog.error(C3622c.f11718bw, "roundstart Error");
                     }
                 }
             }).start();
@@ -3479,12 +3479,12 @@ public class C3622c extends C2291c implements C2239a, C3909b {
         if (this.f11808bK != null) {
             new Thread(new Runnable() {
                 public void run() {
-                    C1853h i;
+                    ParseTagHighlightSceneInfo i;
                     synchronized (C1910l.m7679a()) {
                         i = C3622c.this.f11808bK.mo3488i();
                     }
                     if (!i.mo4771a()) {
-                        C2261g.m9769c(C3622c.f11718bw, "roundpause Error");
+                        ImageAppLog.error(C3622c.f11718bw, "roundpause Error");
                     }
                 }
             }).start();
@@ -3496,12 +3496,12 @@ public class C3622c extends C2291c implements C2239a, C3909b {
         if (this.f11808bK != null) {
             new Thread(new Runnable() {
                 public void run() {
-                    C1853h h;
+                    ParseTagHighlightSceneInfo h;
                     synchronized (C1910l.m7679a()) {
                         h = C3622c.this.f11808bK.mo3487h();
                     }
                     if (!h.mo4771a()) {
-                        C2261g.m9769c(C3622c.f11718bw, "roundstop Error");
+                        ImageAppLog.error(C3622c.f11718bw, "roundstop Error");
                     }
                 }
             }).start();
@@ -3513,12 +3513,12 @@ public class C3622c extends C2291c implements C2239a, C3909b {
         if (this.f11808bK != null) {
             new Thread(new Runnable() {
                 public void run() {
-                    C1853h j;
+                    ParseTagHighlightSceneInfo j;
                     synchronized (C1910l.m7679a()) {
                         j = C3622c.this.f11808bK.mo3489j();
                     }
                     if (!j.mo4771a()) {
-                        C2261g.m9769c(C3622c.f11718bw, "delrounddata Error");
+                        ImageAppLog.error(C3622c.f11718bw, "delrounddata Error");
                     } else {
                         C3622c.this.mo8619d(true);
                     }
@@ -3532,7 +3532,7 @@ public class C3622c extends C2291c implements C2239a, C3909b {
         if (this.f11808bK != null) {
             new Thread(new Runnable() {
                 public void run() {
-                    C1853h a;
+                    ParseTagHighlightSceneInfo a;
                     synchronized (C1910l.m7679a()) {
                         a = C3622c.this.f11808bK.mo3474a(ajVar.mo3518b().length);
                     }

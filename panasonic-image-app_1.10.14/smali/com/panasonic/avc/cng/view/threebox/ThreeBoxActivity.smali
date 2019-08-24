@@ -1,5 +1,5 @@
 .class public Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;
-.super Lcom/panasonic/avc/cng/view/setting/al;
+.super Lcom/panasonic/avc/cng/view/setting/SettingMenuBaseActivity;
 .source "SourceFile"
 
 
@@ -14,11 +14,11 @@
 # instance fields
 .field private final a:Ljava/lang/String;
 
-.field private b:Lcom/panasonic/avc/cng/view/threebox/c;
+.field private b:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;
 
 .field private c:Lcom/panasonic/avc/cng/view/threebox/a;
 
-.field private d:Lcom/panasonic/avc/cng/view/threebox/b;
+.field private d:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxSeekBarView;
 
 .field private e:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity$a;
 
@@ -29,7 +29,7 @@
 
     .prologue
     .line 33
-    invoke-direct {p0}, Lcom/panasonic/avc/cng/view/setting/al;-><init>()V
+    invoke-direct {p0}, Lcom/panasonic/avc/cng/view/setting/SettingMenuBaseActivity;-><init>()V
 
     .line 35
     const-string v0, "ThreeBoxActivity"
@@ -39,12 +39,12 @@
     return-void
 .end method
 
-.method static synthetic a(Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;)Lcom/panasonic/avc/cng/view/threebox/c;
+.method static synthetic a(Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;)Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;
     .locals 1
 
     .prologue
     .line 33
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;->b:Lcom/panasonic/avc/cng/view/threebox/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;->b:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;
 
     return-object v0
 .end method
@@ -213,9 +213,9 @@
 
     .prologue
     .line 400
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;->b:Lcom/panasonic/avc/cng/view/threebox/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;->b:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/threebox/c;->m()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;->m()V
 
     .line 401
     return-void
@@ -226,9 +226,9 @@
 
     .prologue
     .line 384
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;->b:Lcom/panasonic/avc/cng/view/threebox/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;->b:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/threebox/c;->n()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;->n()V
 
     .line 385
     return-void
@@ -239,9 +239,9 @@
 
     .prologue
     .line 376
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;->b:Lcom/panasonic/avc/cng/view/threebox/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;->b:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/threebox/c;->l()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;->l()V
 
     .line 377
     return-void
@@ -252,9 +252,9 @@
 
     .prologue
     .line 392
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;->b:Lcom/panasonic/avc/cng/view/threebox/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;->b:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/threebox/c;->o()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;->o()V
 
     .line 393
     return-void
@@ -280,7 +280,7 @@
 
     const-string v1, ""
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 441
     return-void
@@ -295,7 +295,7 @@
 
     const-string v1, ""
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 451
     invoke-virtual {p0}, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;->ShowDmsErrorIfReceiving()Z
@@ -336,7 +336,7 @@
 
     const-string v1, ""
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 420
     invoke-virtual {p0}, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;->ShowDmsErrorIfReceiving()Z
@@ -374,7 +374,7 @@
 
     const-string v1, ""
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 474
     invoke-virtual {p0}, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;->openOptionsMenu()V
@@ -388,7 +388,7 @@
 
     .prologue
     .line 113
-    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/al;->b()V
+    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/SettingMenuBaseActivity;->b()V
 
     .line 114
     return-void
@@ -404,29 +404,29 @@
     invoke-virtual {p0}, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;->OnSetResult()V
 
     .line 218
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;->b:Lcom/panasonic/avc/cng/view/threebox/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;->b:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;
 
     if-eqz v0, :cond_0
 
     .line 220
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;->b:Lcom/panasonic/avc/cng/view/threebox/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;->b:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/threebox/c;->o()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;->o()V
 
     .line 221
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;->b:Lcom/panasonic/avc/cng/view/threebox/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;->b:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/threebox/c;->a()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;->a()V
 
     .line 222
-    iput-object v1, p0, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;->b:Lcom/panasonic/avc/cng/view/threebox/c;
+    iput-object v1, p0, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;->b:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;
 
     .line 224
     :cond_0
-    invoke-static {v1}, Lcom/panasonic/avc/cng/view/common/e;->a(Lcom/panasonic/avc/cng/view/threebox/c;)V
+    invoke-static {v1}, Lcom/panasonic/avc/cng/view/common/e;->a(Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;)V
 
     .line 226
-    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/al;->finish()V
+    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/SettingMenuBaseActivity;->finish()V
 
     .line 227
     return-void
@@ -437,7 +437,7 @@
 
     .prologue
     .line 243
-    invoke-super {p0, p1, p2, p3}, Lcom/panasonic/avc/cng/view/setting/al;->onActivityResult(IILandroid/content/Intent;)V
+    invoke-super {p0, p1, p2, p3}, Lcom/panasonic/avc/cng/view/setting/SettingMenuBaseActivity;->onActivityResult(IILandroid/content/Intent;)V
 
     .line 245
     if-eqz p3, :cond_0
@@ -476,7 +476,7 @@
 
     .prologue
     .line 123
-    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/al;->onConfigurationChanged(Landroid/content/res/Configuration;)V
+    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/SettingMenuBaseActivity;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
     .line 124
     return-void
@@ -492,7 +492,7 @@
     invoke-static {p0}, Lcom/panasonic/avc/cng/model/b;->a(Landroid/app/Activity;)V
 
     .line 51
-    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/al;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/SettingMenuBaseActivity;->onCreate(Landroid/os/Bundle;)V
 
     .line 54
     const/4 v0, 0x1
@@ -547,32 +547,32 @@
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;->e:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity$a;
 
-    invoke-static {p0, v0, v1}, Lcom/panasonic/avc/cng/view/common/e;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/threebox/c$b;)Lcom/panasonic/avc/cng/view/threebox/c;
+    invoke-static {p0, v0, v1}, Lcom/panasonic/avc/cng/view/common/e;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/threebox/c$b;)Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;->b:Lcom/panasonic/avc/cng/view/threebox/c;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;->b:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;
 
     .line 73
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;->b:Lcom/panasonic/avc/cng/view/threebox/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;->b:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;
 
     if-nez v0, :cond_0
 
     .line 76
-    new-instance v0, Lcom/panasonic/avc/cng/view/threebox/c;
+    new-instance v0, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;->_handler:Landroid/os/Handler;
 
     iget-object v2, p0, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;->e:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity$a;
 
-    invoke-direct {v0, p0, v1, v2}, Lcom/panasonic/avc/cng/view/threebox/c;-><init>(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/threebox/c$b;)V
+    invoke-direct {v0, p0, v1, v2}, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;-><init>(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/threebox/c$b;)V
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;->b:Lcom/panasonic/avc/cng/view/threebox/c;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;->b:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;
 
     .line 79
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;->b:Lcom/panasonic/avc/cng/view/threebox/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;->b:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/threebox/c;->g()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;->g()V
 
     .line 82
     invoke-virtual {p0}, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;->getIntent()Landroid/content/Intent;
@@ -594,19 +594,19 @@
     move-result v0
 
     .line 86
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;->b:Lcom/panasonic/avc/cng/view/threebox/c;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;->b:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;
 
-    invoke-virtual {v1, v0}, Lcom/panasonic/avc/cng/view/threebox/c;->a(I)V
+    invoke-virtual {v1, v0}, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;->a(I)V
 
     .line 92
     :cond_0
-    new-instance v0, Lcom/panasonic/avc/cng/view/threebox/b;
+    new-instance v0, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxSeekBarView;
 
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;->b:Lcom/panasonic/avc/cng/view/threebox/c;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;->b:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;
 
-    invoke-direct {v0, p0, v1}, Lcom/panasonic/avc/cng/view/threebox/b;-><init>(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/threebox/c;)V
+    invoke-direct {v0, p0, v1}, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxSeekBarView;-><init>(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;)V
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;->d:Lcom/panasonic/avc/cng/view/threebox/b;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;->d:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxSeekBarView;
 
     .line 95
     new-instance v0, Lcom/panasonic/avc/cng/view/threebox/a;
@@ -618,9 +618,9 @@
     .line 96
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;->c:Lcom/panasonic/avc/cng/view/threebox/a;
 
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;->b:Lcom/panasonic/avc/cng/view/threebox/c;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;->b:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;
 
-    invoke-virtual {v0, p0, v1}, Lcom/panasonic/avc/cng/view/threebox/a;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/threebox/c;)V
+    invoke-virtual {v0, p0, v1}, Lcom/panasonic/avc/cng/view/threebox/a;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;)V
 
     .line 99
     invoke-virtual {p0}, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;->b()V
@@ -646,23 +646,23 @@
     if-eqz v0, :cond_0
 
     .line 197
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;->b:Lcom/panasonic/avc/cng/view/threebox/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;->b:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;
 
     if-eqz v0, :cond_0
 
     .line 199
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;->b:Lcom/panasonic/avc/cng/view/threebox/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;->b:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/threebox/c;->c()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;->c()V
 
     .line 200
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;->b:Lcom/panasonic/avc/cng/view/threebox/c;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;->b:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;
 
     .line 204
     :cond_0
-    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/al;->onDestroy()V
+    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/SettingMenuBaseActivity;->onDestroy()V
 
     .line 205
     return-void
@@ -673,7 +673,7 @@
 
     .prologue
     .line 768
-    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/al;->onDialogCancel(Lcom/panasonic/avc/cng/view/b/b$a;)V
+    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/SettingMenuBaseActivity;->onDialogCancel(Lcom/panasonic/avc/cng/view/b/b$a;)V
 
     .line 769
     return-void
@@ -684,7 +684,7 @@
 
     .prologue
     .line 775
-    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/al;->onDialogDismiss(Lcom/panasonic/avc/cng/view/b/b$a;)V
+    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/SettingMenuBaseActivity;->onDialogDismiss(Lcom/panasonic/avc/cng/view/b/b$a;)V
 
     .line 777
     return-void
@@ -720,7 +720,7 @@
 
     .prologue
     .line 817
-    invoke-super {p0, p1, p2}, Lcom/panasonic/avc/cng/view/setting/al;->onItemClick(Lcom/panasonic/avc/cng/view/b/b$a;I)V
+    invoke-super {p0, p1, p2}, Lcom/panasonic/avc/cng/view/setting/SettingMenuBaseActivity;->onItemClick(Lcom/panasonic/avc/cng/view/b/b$a;I)V
 
     .line 818
     return-void
@@ -731,7 +731,7 @@
 
     .prologue
     .line 811
-    invoke-super {p0, p1, p2, p3}, Lcom/panasonic/avc/cng/view/setting/al;->onMultiChoice(Lcom/panasonic/avc/cng/view/b/b$a;IZ)V
+    invoke-super {p0, p1, p2, p3}, Lcom/panasonic/avc/cng/view/setting/SettingMenuBaseActivity;->onMultiChoice(Lcom/panasonic/avc/cng/view/b/b$a;IZ)V
 
     .line 812
     return-void
@@ -753,7 +753,7 @@
     packed-switch v0, :pswitch_data_0
 
     .line 759
-    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/al;->onNegativeButtonClick(Lcom/panasonic/avc/cng/view/b/b$a;)V
+    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/SettingMenuBaseActivity;->onNegativeButtonClick(Lcom/panasonic/avc/cng/view/b/b$a;)V
 
     .line 762
     :goto_0
@@ -779,7 +779,7 @@
 
     .prologue
     .line 744
-    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/al;->onNeutralButtonClick(Lcom/panasonic/avc/cng/view/b/b$a;)V
+    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/SettingMenuBaseActivity;->onNeutralButtonClick(Lcom/panasonic/avc/cng/view/b/b$a;)V
 
     .line 745
     return-void
@@ -790,18 +790,18 @@
 
     .prologue
     .line 172
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;->b:Lcom/panasonic/avc/cng/view/threebox/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;->b:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;
 
     if-eqz v0, :cond_0
 
     .line 174
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;->b:Lcom/panasonic/avc/cng/view/threebox/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;->b:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/threebox/c;->e()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;->e()V
 
     .line 177
     :cond_0
-    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/al;->onPause()V
+    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/SettingMenuBaseActivity;->onPause()V
 
     .line 178
     return-void
@@ -823,7 +823,7 @@
     packed-switch v0, :pswitch_data_0
 
     .line 735
-    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/al;->onPositiveButtonClick(Lcom/panasonic/avc/cng/view/b/b$a;)V
+    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/SettingMenuBaseActivity;->onPositiveButtonClick(Lcom/panasonic/avc/cng/view/b/b$a;)V
 
     .line 738
     :goto_0
@@ -870,7 +870,7 @@
     return v0
 
     :cond_0
-    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/al;->onPrepareOptionsMenu(Landroid/view/Menu;)Z
+    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/SettingMenuBaseActivity;->onPrepareOptionsMenu(Landroid/view/Menu;)Z
 
     move-result v0
 
@@ -882,18 +882,18 @@
 
     .prologue
     .line 157
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;->b:Lcom/panasonic/avc/cng/view/threebox/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;->b:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;
 
     if-eqz v0, :cond_0
 
     .line 159
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;->b:Lcom/panasonic/avc/cng/view/threebox/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;->b:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/threebox/c;->d()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;->d()V
 
     .line 162
     :cond_0
-    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/al;->onResume()V
+    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/SettingMenuBaseActivity;->onResume()V
 
     .line 163
     return-void
@@ -904,18 +904,18 @@
 
     .prologue
     .line 133
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;->b:Lcom/panasonic/avc/cng/view/threebox/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;->b:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;
 
     if-eqz v0, :cond_0
 
     .line 135
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;->b:Lcom/panasonic/avc/cng/view/threebox/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;->b:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/e;->a(Lcom/panasonic/avc/cng/view/threebox/c;)V
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/e;->a(Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;)V
 
     .line 138
     :cond_0
-    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/al;->onSaveInstanceState(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/SettingMenuBaseActivity;->onSaveInstanceState(Landroid/os/Bundle;)V
 
     .line 139
     return-void
@@ -937,7 +937,7 @@
     packed-switch v0, :pswitch_data_0
 
     .line 803
-    invoke-super {p0, p1, p2}, Lcom/panasonic/avc/cng/view/setting/al;->onSingleChoice(Lcom/panasonic/avc/cng/view/b/b$a;I)V
+    invoke-super {p0, p1, p2}, Lcom/panasonic/avc/cng/view/setting/SettingMenuBaseActivity;->onSingleChoice(Lcom/panasonic/avc/cng/view/b/b$a;I)V
 
     .line 806
     :goto_0
@@ -945,26 +945,26 @@
 
     .line 786
     :pswitch_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;->b:Lcom/panasonic/avc/cng/view/threebox/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;->b:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/threebox/c;->h()Ljava/util/List;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;->h()Ljava/util/List;
 
     move-result-object v0
 
     .line 789
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;->b:Lcom/panasonic/avc/cng/view/threebox/c;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;->b:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;
 
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/threebox/c;->e()V
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;->e()V
 
     .line 792
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;->b:Lcom/panasonic/avc/cng/view/threebox/c;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;->b:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;
 
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/threebox/c;->f()I
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;->f()I
 
     move-result v1
 
     .line 793
-    iget-object v2, p0, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;->b:Lcom/panasonic/avc/cng/view/threebox/c;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;->b:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;
 
     invoke-interface {v0, p2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -972,17 +972,17 @@
 
     check-cast v0, Lcom/panasonic/avc/cng/model/f;
 
-    invoke-virtual {v2, v1, v0}, Lcom/panasonic/avc/cng/view/threebox/c;->a(ILcom/panasonic/avc/cng/model/f;)V
+    invoke-virtual {v2, v1, v0}, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;->a(ILcom/panasonic/avc/cng/model/f;)V
 
     .line 796
-    invoke-static {p0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;)V
+    invoke-static {p0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;)V
 
     .line 799
     sget-object v0, Lcom/panasonic/avc/cng/view/b/b$a;->j:Lcom/panasonic/avc/cng/view/b/b$a;
 
     const/4 v1, 0x0
 
-    invoke-static {p0, v0, v1}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {p0, v0, v1}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     goto :goto_0
 
@@ -1000,7 +1000,7 @@
 
     .prologue
     .line 147
-    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/al;->onStart()V
+    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/SettingMenuBaseActivity;->onStart()V
 
     .line 148
     return-void
@@ -1011,7 +1011,7 @@
 
     .prologue
     .line 186
-    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/al;->onStop()V
+    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/SettingMenuBaseActivity;->onStop()V
 
     .line 187
     return-void
@@ -1022,7 +1022,7 @@
 
     .prologue
     .line 365
-    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/al;->onWindowFocusChanged(Z)V
+    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/SettingMenuBaseActivity;->onWindowFocusChanged(Z)V
 
     .line 369
     return-void

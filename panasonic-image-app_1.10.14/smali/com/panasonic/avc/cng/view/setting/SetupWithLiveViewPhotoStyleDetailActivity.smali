@@ -260,7 +260,7 @@
     .line 750
     sget-object v0, Lcom/panasonic/avc/cng/view/b/b$a;->bL:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {p0, v0, v1}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {p0, v0, v1}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     .line 751
     return-void
@@ -435,7 +435,7 @@
     .line 791
     sget-object v0, Lcom/panasonic/avc/cng/view/b/b$a;->hO:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {p0, v0, v1}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {p0, v0, v1}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     .line 792
     return-void
@@ -1410,11 +1410,11 @@
 
     .line 102
     :cond_0
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
@@ -1743,7 +1743,7 @@
     invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/au;->m()V
 
     .line 1072
-    invoke-static {p0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;)V
+    invoke-static {p0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;)V
 
     goto :goto_0
 
@@ -1762,7 +1762,7 @@
     invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/au;->m()V
 
     .line 1083
-    invoke-static {p0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;)V
+    invoke-static {p0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;)V
 
     goto :goto_0
 

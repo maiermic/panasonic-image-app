@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/panasonic/avc/cng/view/play/multiphotoframe/c;
+    value = Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameBrowseViewModel;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,28 +18,28 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/panasonic/avc/cng/view/play/multiphotoframe/c;
+.field final synthetic a:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameBrowseViewModel;
 
 
 # direct methods
-.method private constructor <init>(Lcom/panasonic/avc/cng/view/play/multiphotoframe/c;)V
+.method private constructor <init>(Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameBrowseViewModel;)V
     .locals 0
 
     .prologue
     .line 524
-    iput-object p1, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/c$b;->a:Lcom/panasonic/avc/cng/view/play/multiphotoframe/c;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/c$b;->a:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameBrowseViewModel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/panasonic/avc/cng/view/play/multiphotoframe/c;Lcom/panasonic/avc/cng/view/play/multiphotoframe/c$1;)V
+.method synthetic constructor <init>(Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameBrowseViewModel;Lcom/panasonic/avc/cng/view/play/multiphotoframe/c$1;)V
     .locals 0
 
     .prologue
     .line 524
-    invoke-direct {p0, p1}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/c$b;-><init>(Lcom/panasonic/avc/cng/view/play/multiphotoframe/c;)V
+    invoke-direct {p0, p1}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/c$b;-><init>(Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameBrowseViewModel;)V
 
     return-void
 .end method
@@ -51,14 +51,14 @@
 
     .prologue
     .line 532
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/c$b;->a:Lcom/panasonic/avc/cng/view/play/multiphotoframe/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/c$b;->a:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameBrowseViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/c;->l()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameBrowseViewModel;->l()V
 
     .line 535
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/c$b;->a:Lcom/panasonic/avc/cng/view/play/multiphotoframe/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/c$b;->a:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameBrowseViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/c;->k()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameBrowseViewModel;->k()V
 
     .line 536
     return-void

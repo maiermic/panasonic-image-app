@@ -50,13 +50,13 @@
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/ae$8;->b:Lcom/panasonic/avc/cng/view/setting/ae;
 
-    invoke-static {v1}, Lcom/panasonic/avc/cng/view/setting/ae;->c(Lcom/panasonic/avc/cng/view/setting/ae;)Lcom/panasonic/avc/cng/core/c/s;
+    invoke-static {v1}, Lcom/panasonic/avc/cng/view/setting/ae;->c(Lcom/panasonic/avc/cng/view/setting/ae;)Lcom/panasonic/avc/cng/core/c/Picmate;
 
     move-result-object v1
 
     iget-boolean v2, p0, Lcom/panasonic/avc/cng/view/setting/ae$8;->a:Z
 
-    invoke-virtual {v1, v2}, Lcom/panasonic/avc/cng/core/c/s;->c(Z)Lcom/panasonic/avc/cng/core/c/a;
+    invoke-virtual {v1, v2}, Lcom/panasonic/avc/cng/core/c/Picmate;->c(Z)Lcom/panasonic/avc/cng/core/c/a;
 
     move-result-object v1
 

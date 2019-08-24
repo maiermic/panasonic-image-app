@@ -1,5 +1,5 @@
 .class public Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSandPActivity;
-.super Lcom/panasonic/avc/cng/view/setting/u;
+.super Lcom/panasonic/avc/cng/view/setting/LiveSetupLumixMirrorlessBaseActivity;
 .source "SourceFile"
 
 
@@ -14,9 +14,9 @@
 # instance fields
 .field private A:Z
 
-.field private n:Lcom/panasonic/avc/cng/view/parts/ae;
+.field private n:Lcom/panasonic/avc/cng/view/parts/DrumPickerFandSSandPLayout;
 
-.field private q:Lcom/panasonic/avc/cng/view/setting/o;
+.field private q:Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;
 
 .field private r:Lcom/panasonic/avc/cng/view/setting/u$a;
 
@@ -32,7 +32,7 @@
 
 .field private x:J
 
-.field private y:Lcom/panasonic/avc/cng/view/parts/ak;
+.field private y:Lcom/panasonic/avc/cng/view/parts/PShift;
 
 .field private z:Z
 
@@ -45,7 +45,7 @@
     const/4 v0, 0x0
 
     .line 27
-    invoke-direct {p0}, Lcom/panasonic/avc/cng/view/setting/u;-><init>()V
+    invoke-direct {p0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupLumixMirrorlessBaseActivity;-><init>()V
 
     .line 163
     iput-boolean v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSandPActivity;->z:Z
@@ -66,12 +66,12 @@
     return-wide p1
 .end method
 
-.method static synthetic a(Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSandPActivity;)Lcom/panasonic/avc/cng/view/parts/ae;
+.method static synthetic a(Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSandPActivity;)Lcom/panasonic/avc/cng/view/parts/DrumPickerFandSSandPLayout;
     .locals 1
 
     .prologue
     .line 27
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSandPActivity;->n:Lcom/panasonic/avc/cng/view/parts/ae;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSandPActivity;->n:Lcom/panasonic/avc/cng/view/parts/DrumPickerFandSSandPLayout;
 
     return-object v0
 .end method
@@ -154,12 +154,12 @@
     return-wide p1
 .end method
 
-.method static synthetic b(Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSandPActivity;)Lcom/panasonic/avc/cng/view/setting/o;
+.method static synthetic b(Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSandPActivity;)Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;
     .locals 1
 
     .prologue
     .line 27
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSandPActivity;->q:Lcom/panasonic/avc/cng/view/setting/o;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSandPActivity;->q:Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;
 
     return-object v0
 .end method
@@ -301,7 +301,7 @@
 
     .prologue
     .line 256
-    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/u;->a()V
+    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupLumixMirrorlessBaseActivity;->a()V
 
     .line 257
     return-void
@@ -314,16 +314,16 @@
     const/4 v3, 0x0
 
     .line 265
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSandPActivity;->q:Lcom/panasonic/avc/cng/view/setting/o;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSandPActivity;->q:Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;
 
     if-eqz v0, :cond_1
 
     .line 266
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
@@ -346,20 +346,20 @@
     if-eqz v0, :cond_0
 
     .line 270
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSandPActivity;->q:Lcom/panasonic/avc/cng/view/setting/o;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSandPActivity;->q:Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;
 
     const-string v1, "exit"
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/setting/o;->c(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;->c(Ljava/lang/String;)V
 
     .line 273
     :cond_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSandPActivity;->q:Lcom/panasonic/avc/cng/view/setting/o;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSandPActivity;->q:Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/o;->a()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;->a()V
 
     .line 274
-    iput-object v3, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSandPActivity;->q:Lcom/panasonic/avc/cng/view/setting/o;
+    iput-object v3, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSandPActivity;->q:Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;
 
     .line 276
     :cond_1
@@ -381,17 +381,17 @@
 
     .line 282
     :cond_3
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSandPActivity;->y:Lcom/panasonic/avc/cng/view/parts/ak;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSandPActivity;->y:Lcom/panasonic/avc/cng/view/parts/PShift;
 
     if-eqz v0, :cond_4
 
     .line 283
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSandPActivity;->y:Lcom/panasonic/avc/cng/view/parts/ak;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSandPActivity;->y:Lcom/panasonic/avc/cng/view/parts/PShift;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/parts/ak;->a()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/parts/PShift;->a()V
 
     .line 284
-    iput-object v3, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSandPActivity;->y:Lcom/panasonic/avc/cng/view/parts/ak;
+    iput-object v3, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSandPActivity;->y:Lcom/panasonic/avc/cng/view/parts/PShift;
 
     .line 286
     :cond_4
@@ -413,7 +413,7 @@
 
     .line 292
     :cond_6
-    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/u;->d()V
+    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupLumixMirrorlessBaseActivity;->d()V
 
     .line 293
     return-void
@@ -424,7 +424,7 @@
 
     .prologue
     .line 300
-    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/u;->e()V
+    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupLumixMirrorlessBaseActivity;->e()V
 
     .line 303
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSandPActivity;->g:Lcom/panasonic/avc/cng/view/liveview/k;
@@ -512,7 +512,7 @@
     const/4 v1, 0x0
 
     .line 319
-    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/u;->f()V
+    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupLumixMirrorlessBaseActivity;->f()V
 
     .line 321
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSandPActivity;->g:Lcom/panasonic/avc/cng/view/liveview/k;
@@ -574,7 +574,7 @@
 
     .prologue
     .line 337
-    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/u;->g()V
+    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupLumixMirrorlessBaseActivity;->g()V
 
     .line 340
     invoke-virtual {p0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSandPActivity;->h()V
@@ -590,11 +590,11 @@
     const/4 v3, 0x1
 
     .line 171
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v6
 
@@ -616,7 +616,7 @@
     invoke-static {p0}, Lcom/panasonic/avc/cng/model/b;->a(Landroid/app/Activity;)V
 
     .line 181
-    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/u;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/LiveSetupLumixMirrorlessBaseActivity;->onCreate(Landroid/os/Bundle;)V
 
     .line 183
     new-instance v0, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSandPActivity$a;
@@ -635,7 +635,7 @@
     .line 186
     new-instance v1, Lcom/panasonic/avc/cng/view/setting/u$d;
 
-    invoke-direct {v1, p0}, Lcom/panasonic/avc/cng/view/setting/u$d;-><init>(Lcom/panasonic/avc/cng/view/setting/u;)V
+    invoke-direct {v1, p0}, Lcom/panasonic/avc/cng/view/setting/u$d;-><init>(Lcom/panasonic/avc/cng/view/setting/LiveSetupLumixMirrorlessBaseActivity;)V
 
     iput-object v1, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSandPActivity;->l:Lcom/panasonic/avc/cng/view/setting/u$d;
 
@@ -659,12 +659,12 @@
     :goto_1
     new-instance v0, Lcom/panasonic/avc/cng/view/setting/u$e;
 
-    invoke-direct {v0, p0}, Lcom/panasonic/avc/cng/view/setting/u$e;-><init>(Lcom/panasonic/avc/cng/view/setting/u;)V
+    invoke-direct {v0, p0}, Lcom/panasonic/avc/cng/view/setting/u$e;-><init>(Lcom/panasonic/avc/cng/view/setting/LiveSetupLumixMirrorlessBaseActivity;)V
 
     iput-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSandPActivity;->r:Lcom/panasonic/avc/cng/view/setting/u$a;
 
     .line 205
-    new-instance v0, Lcom/panasonic/avc/cng/view/setting/o;
+    new-instance v0, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSandPActivity;->_context:Landroid/content/Context;
 
@@ -672,25 +672,25 @@
 
     iget-object v3, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSandPActivity;->r:Lcom/panasonic/avc/cng/view/setting/u$a;
 
-    invoke-direct {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/setting/o;-><init>(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/setting/u$a;)V
+    invoke-direct {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;-><init>(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/setting/u$a;)V
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSandPActivity;->q:Lcom/panasonic/avc/cng/view/setting/o;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSandPActivity;->q:Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;
 
     .line 208
-    new-instance v0, Lcom/panasonic/avc/cng/view/parts/ak;
+    new-instance v0, Lcom/panasonic/avc/cng/view/parts/PShift;
 
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSandPActivity;->q:Lcom/panasonic/avc/cng/view/setting/o;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSandPActivity;->q:Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;
 
-    invoke-direct {v0, v1}, Lcom/panasonic/avc/cng/view/parts/ak;-><init>(Lcom/panasonic/avc/cng/view/setting/o;)V
+    invoke-direct {v0, v1}, Lcom/panasonic/avc/cng/view/parts/PShift;-><init>(Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;)V
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSandPActivity;->y:Lcom/panasonic/avc/cng/view/parts/ak;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSandPActivity;->y:Lcom/panasonic/avc/cng/view/parts/PShift;
 
     .line 209
-    new-instance v0, Lcom/panasonic/avc/cng/view/parts/ae;
+    new-instance v0, Lcom/panasonic/avc/cng/view/parts/DrumPickerFandSSandPLayout;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSandPActivity;->_context:Landroid/content/Context;
 
-    iget-object v3, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSandPActivity;->y:Lcom/panasonic/avc/cng/view/parts/ak;
+    iget-object v3, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSandPActivity;->y:Lcom/panasonic/avc/cng/view/parts/PShift;
 
     iget-boolean v4, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSandPActivity;->z:Z
 
@@ -698,23 +698,23 @@
 
     move-object v2, p0
 
-    invoke-direct/range {v0 .. v5}, Lcom/panasonic/avc/cng/view/parts/ae;-><init>(Landroid/content/Context;Landroid/app/Activity;Lcom/panasonic/avc/cng/view/parts/ak;ZZ)V
+    invoke-direct/range {v0 .. v5}, Lcom/panasonic/avc/cng/view/parts/DrumPickerFandSSandPLayout;-><init>(Landroid/content/Context;Landroid/app/Activity;Lcom/panasonic/avc/cng/view/parts/PShift;ZZ)V
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSandPActivity;->n:Lcom/panasonic/avc/cng/view/parts/ae;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSandPActivity;->n:Lcom/panasonic/avc/cng/view/parts/DrumPickerFandSSandPLayout;
 
     .line 210
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSandPActivity;->n:Lcom/panasonic/avc/cng/view/parts/ae;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSandPActivity;->n:Lcom/panasonic/avc/cng/view/parts/DrumPickerFandSSandPLayout;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/parts/ae;->a()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/parts/DrumPickerFandSSandPLayout;->a()V
 
     .line 212
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSandPActivity;->n:Lcom/panasonic/avc/cng/view/parts/ae;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSandPActivity;->n:Lcom/panasonic/avc/cng/view/parts/DrumPickerFandSSandPLayout;
 
     new-instance v1, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSandPActivity$1;
 
     invoke-direct {v1, p0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSandPActivity$1;-><init>(Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSandPActivity;)V
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/parts/ae;->setDrumPickerSettingListener(Lcom/panasonic/avc/cng/view/parts/ae$a;)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/parts/DrumPickerFandSSandPLayout;->setDrumPickerSettingListener(Lcom/panasonic/avc/cng/view/parts/ae$a;)V
 
     .line 243
     if-eqz v6, :cond_0
@@ -735,11 +735,11 @@
     if-eqz v0, :cond_0
 
     .line 246
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSandPActivity;->q:Lcom/panasonic/avc/cng/view/setting/o;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSandPActivity;->q:Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;
 
     const-string v1, "entry"
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/setting/o;->c(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;->c(Ljava/lang/String;)V
 
     .line 249
     :cond_0
@@ -762,7 +762,7 @@
     .line 190
     new-instance v1, Lcom/panasonic/avc/cng/view/setting/u$d;
 
-    invoke-direct {v1, p0}, Lcom/panasonic/avc/cng/view/setting/u$d;-><init>(Lcom/panasonic/avc/cng/view/setting/u;)V
+    invoke-direct {v1, p0}, Lcom/panasonic/avc/cng/view/setting/u$d;-><init>(Lcom/panasonic/avc/cng/view/setting/LiveSetupLumixMirrorlessBaseActivity;)V
 
     iput-object v1, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSandPActivity;->l:Lcom/panasonic/avc/cng/view/setting/u$d;
 
@@ -800,7 +800,7 @@
     .line 195
     new-instance v1, Lcom/panasonic/avc/cng/view/setting/u$c;
 
-    invoke-direct {v1, p0}, Lcom/panasonic/avc/cng/view/setting/u$c;-><init>(Lcom/panasonic/avc/cng/view/setting/u;)V
+    invoke-direct {v1, p0}, Lcom/panasonic/avc/cng/view/setting/u$c;-><init>(Lcom/panasonic/avc/cng/view/setting/LiveSetupLumixMirrorlessBaseActivity;)V
 
     iput-object v1, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSandPActivity;->m:Lcom/panasonic/avc/cng/view/setting/u$c;
 

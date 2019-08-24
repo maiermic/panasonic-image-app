@@ -9,19 +9,19 @@ import com.google.android.gms.common.api.Scope;
 public final class C1037mf {
 
     /* renamed from: a */
-    public static final C0574b<C1051mt, C1042mk> f3039a = new C1038mg();
+    public static final C0574b<SignInClientImpl, C1042mk> f3039a = new C1038mg();
 
     /* renamed from: b */
     public static final C0569a<C1042mk> f3040b = new C0569a<>("SignIn.API", f3039a, f3041c);
 
     /* renamed from: c */
-    private static C0579g<C1051mt> f3041c = new C0579g<>();
+    private static C0579g<SignInClientImpl> f3041c = new C0579g<>();
 
     /* renamed from: d */
-    private static C0579g<C1051mt> f3042d = new C0579g<>();
+    private static C0579g<SignInClientImpl> f3042d = new C0579g<>();
 
     /* renamed from: e */
-    private static C0574b<C1051mt, C1040mi> f3043e = new C1039mh();
+    private static C0574b<SignInClientImpl, C1040mi> f3043e = new C1039mh();
 
     /* renamed from: f */
     private static Scope f3044f = new Scope("profile");

@@ -43,22 +43,22 @@
     return-object v0
 .end method
 
-.method static synthetic b(Lcom/panasonic/avc/cng/view/play/sceneprotect/SceneProtectActivity;)Lcom/panasonic/avc/cng/view/a/d;
+.method static synthetic b(Lcom/panasonic/avc/cng/view/play/sceneprotect/SceneProtectActivity;)Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
     .locals 1
 
     .prologue
     .line 23
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/sceneprotect/SceneProtectActivity;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/sceneprotect/SceneProtectActivity;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
     return-object v0
 .end method
 
-.method static synthetic c(Lcom/panasonic/avc/cng/view/play/sceneprotect/SceneProtectActivity;)Lcom/panasonic/avc/cng/view/a/d;
+.method static synthetic c(Lcom/panasonic/avc/cng/view/play/sceneprotect/SceneProtectActivity;)Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
     .locals 1
 
     .prologue
     .line 23
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/sceneprotect/SceneProtectActivity;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/sceneprotect/SceneProtectActivity;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
     return-object v0
 .end method
@@ -73,52 +73,52 @@
     return-object v0
 .end method
 
-.method static synthetic e(Lcom/panasonic/avc/cng/view/play/sceneprotect/SceneProtectActivity;)Lcom/panasonic/avc/cng/view/a/d;
+.method static synthetic e(Lcom/panasonic/avc/cng/view/play/sceneprotect/SceneProtectActivity;)Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
     .locals 1
 
     .prologue
     .line 23
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/sceneprotect/SceneProtectActivity;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/sceneprotect/SceneProtectActivity;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
     return-object v0
 .end method
 
-.method static synthetic f(Lcom/panasonic/avc/cng/view/play/sceneprotect/SceneProtectActivity;)Lcom/panasonic/avc/cng/view/a/d;
+.method static synthetic f(Lcom/panasonic/avc/cng/view/play/sceneprotect/SceneProtectActivity;)Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
     .locals 1
 
     .prologue
     .line 23
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/sceneprotect/SceneProtectActivity;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/sceneprotect/SceneProtectActivity;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
     return-object v0
 .end method
 
-.method static synthetic g(Lcom/panasonic/avc/cng/view/play/sceneprotect/SceneProtectActivity;)Lcom/panasonic/avc/cng/view/a/d;
+.method static synthetic g(Lcom/panasonic/avc/cng/view/play/sceneprotect/SceneProtectActivity;)Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
     .locals 1
 
     .prologue
     .line 23
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/sceneprotect/SceneProtectActivity;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/sceneprotect/SceneProtectActivity;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
     return-object v0
 .end method
 
-.method static synthetic h(Lcom/panasonic/avc/cng/view/play/sceneprotect/SceneProtectActivity;)Lcom/panasonic/avc/cng/view/a/d;
+.method static synthetic h(Lcom/panasonic/avc/cng/view/play/sceneprotect/SceneProtectActivity;)Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
     .locals 1
 
     .prologue
     .line 23
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/sceneprotect/SceneProtectActivity;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/sceneprotect/SceneProtectActivity;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
     return-object v0
 .end method
 
-.method static synthetic i(Lcom/panasonic/avc/cng/view/play/sceneprotect/SceneProtectActivity;)Lcom/panasonic/avc/cng/view/a/d;
+.method static synthetic i(Lcom/panasonic/avc/cng/view/play/sceneprotect/SceneProtectActivity;)Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
     .locals 1
 
     .prologue
     .line 23
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/sceneprotect/SceneProtectActivity;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/sceneprotect/SceneProtectActivity;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
     return-object v0
 .end method

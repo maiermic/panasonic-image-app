@@ -43,9 +43,9 @@
     .line 454
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/b$a$2;->a:Lcom/panasonic/avc/cng/view/play/highlight/b$a;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/highlight/b$a;->a:Lcom/panasonic/avc/cng/view/play/highlight/b;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/highlight/b$a;->a:Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/highlight/b;->b(Lcom/panasonic/avc/cng/view/play/highlight/b;)Lcom/panasonic/avc/cng/view/play/highlight/b$b;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;->b(Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;)Lcom/panasonic/avc/cng/view/play/highlight/b$b;
 
     move-result-object v0
 
@@ -54,17 +54,17 @@
     .line 456
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/b$a$2;->a:Lcom/panasonic/avc/cng/view/play/highlight/b$a;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/highlight/b$a;->a:Lcom/panasonic/avc/cng/view/play/highlight/b;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/highlight/b$a;->a:Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/highlight/b;->b(Lcom/panasonic/avc/cng/view/play/highlight/b;)Lcom/panasonic/avc/cng/view/play/highlight/b$b;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;->b(Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;)Lcom/panasonic/avc/cng/view/play/highlight/b$b;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/highlight/b$a$2;->a:Lcom/panasonic/avc/cng/view/play/highlight/b$a;
 
-    iget-object v1, v1, Lcom/panasonic/avc/cng/view/play/highlight/b$a;->a:Lcom/panasonic/avc/cng/view/play/highlight/b;
+    iget-object v1, v1, Lcom/panasonic/avc/cng/view/play/highlight/b$a;->a:Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;
 
-    invoke-static {v1}, Lcom/panasonic/avc/cng/view/play/highlight/b;->c(Lcom/panasonic/avc/cng/view/play/highlight/b;)I
+    invoke-static {v1}, Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;->c(Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;)I
 
     move-result v1
 

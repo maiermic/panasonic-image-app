@@ -8,7 +8,7 @@ import android.util.Log;
 import android.widget.TextView;
 import com.panasonic.avc.cng.application.C1347a;
 import com.panasonic.avc.cng.application.C1347a.C1349a;
-import com.panasonic.avc.cng.application.p039a.C1351b;
+import com.panasonic.avc.cng.application.p039a.GoogleTagManager;
 import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.view.p073b.C2317a.C2323a;
@@ -186,7 +186,7 @@ public class TransferModeSelectActivity extends C5741i implements C2323a, C6027a
                 finish();
                 return;
             case Auto:
-                C1351b.m5317a().mo3232a((Context) this, "Batch Transfer");
+                GoogleTagManager.m5317a().mo3232a((Context) this, "Batch Transfer");
                 this.f18358c.setText(R.string.func_transfer_auto);
                 getFragmentManager().beginTransaction().replace(R.id.fragment_container, new C6026a()).addToBackStack(null).commit();
                 return;

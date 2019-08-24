@@ -29,7 +29,7 @@ import com.google.android.gms.C0516a.C0518b;
 import com.google.android.gms.common.api.GoogleApiActivity;
 import com.google.android.gms.common.internal.C0612ab;
 import com.google.android.gms.common.internal.C0633aw;
-import com.google.android.gms.common.internal.C0634ax;
+import com.google.android.gms.common.internal.DialogRedirect;
 import com.google.android.gms.common.util.C0690e;
 import com.google.android.gms.common.util.C0695j;
 import com.google.android.gms.p035d.C0821eh;
@@ -91,7 +91,7 @@ public class C0602c extends C0672m {
     }
 
     /* renamed from: a */
-    static Dialog m2265a(Context context, int i, C0634ax axVar, OnCancelListener onCancelListener) {
+    static Dialog m2265a(Context context, int i, DialogRedirect axVar, OnCancelListener onCancelListener) {
         Builder builder = null;
         if (i == 0) {
             return null;
@@ -131,7 +131,7 @@ public class C0602c extends C0672m {
         C0821eh ehVar = new C0821eh(eiVar);
         context.registerReceiver(ehVar, intentFilter);
         ehVar.mo2146a(context);
-        if (C0703w.m2581a(context, "com.google.android.gms")) {
+        if (GooglePlayServicesUtil.m2581a(context, "com.google.android.gms")) {
             return ehVar;
         }
         eiVar.mo2107a();
@@ -169,7 +169,7 @@ public class C0602c extends C0672m {
                 case 1:
                 case 2:
                 case 3:
-                    C0703w.f1477c.set(false);
+                    GooglePlayServicesUtil.f1477c.set(false);
                     i2 = 10436;
                     break;
                 default:
@@ -189,7 +189,7 @@ public class C0602c extends C0672m {
 
     /* renamed from: a */
     public Dialog mo1610a(Activity activity, int i, int i2, OnCancelListener onCancelListener) {
-        return m2265a((Context) activity, i, C0634ax.m2388a(activity, C0672m.m2496a((Context) activity, i, "d"), i2), onCancelListener);
+        return m2265a((Context) activity, i, DialogRedirect.m2388a(activity, C0672m.m2496a((Context) activity, i, "d"), i2), onCancelListener);
     }
 
     /* renamed from: a */
@@ -214,7 +214,7 @@ public class C0602c extends C0672m {
 
     /* renamed from: a */
     public final boolean mo1615a(Activity activity, C0825el elVar, int i, int i2, OnCancelListener onCancelListener) {
-        Dialog a = m2265a((Context) activity, i, C0634ax.m2389a(elVar, C0672m.m2496a((Context) activity, i, "d"), 2), onCancelListener);
+        Dialog a = m2265a((Context) activity, i, DialogRedirect.m2389a(elVar, C0672m.m2496a((Context) activity, i, "d"), 2), onCancelListener);
         if (a == null) {
             return false;
         }

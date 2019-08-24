@@ -14,7 +14,7 @@ import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.C1892f;
 import com.panasonic.avc.cng.p038a.C1343b;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.view.parts.C4145d;
 import com.panasonic.avc.cng.view.parts.C4151e;
 import com.panasonic.avc.cng.view.parts.C4208k;
@@ -161,7 +161,7 @@ public class C4779d {
 
                 /* renamed from: b */
                 public void mo9216b() {
-                    C2261g.m9770d("OneContentPreviewActivity", "onClick");
+                    ImageAppLog.verbose("OneContentPreviewActivity", "onClick");
                     if (!C4779d.this.f15521c.mo9209c() && C4779d.this.f15520b != null) {
                         C4779d.this.f15520b.mo11145l();
                     }

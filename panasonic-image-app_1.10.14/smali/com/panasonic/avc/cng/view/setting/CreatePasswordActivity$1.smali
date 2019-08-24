@@ -82,7 +82,7 @@
     :cond_1
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/CreatePasswordActivity$1;->a:Lcom/panasonic/avc/cng/view/setting/CreatePasswordActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;)V
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;)V
 
     .line 245
     const/4 v0, 0x6
@@ -94,7 +94,7 @@
 
     sget-object v1, Lcom/panasonic/avc/cng/view/b/b$a;->dQ:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     goto :goto_0
 
@@ -104,7 +104,7 @@
 
     sget-object v1, Lcom/panasonic/avc/cng/view/b/b$a;->dP:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     goto :goto_0
 .end method
@@ -151,7 +151,7 @@
     .line 265
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/CreatePasswordActivity$1;->a:Lcom/panasonic/avc/cng/view/setting/CreatePasswordActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;)V
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;)V
 
     .line 267
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/CreatePasswordActivity$1;->a:Lcom/panasonic/avc/cng/view/setting/CreatePasswordActivity;
@@ -171,7 +171,7 @@
     :cond_1
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/CreatePasswordActivity$1;->a:Lcom/panasonic/avc/cng/view/setting/CreatePasswordActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;)V
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;)V
 
     .line 275
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/CreatePasswordActivity$1;->a:Lcom/panasonic/avc/cng/view/setting/CreatePasswordActivity;
@@ -180,7 +180,7 @@
 
     const/4 v2, 0x0
 
-    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     goto :goto_0
 .end method

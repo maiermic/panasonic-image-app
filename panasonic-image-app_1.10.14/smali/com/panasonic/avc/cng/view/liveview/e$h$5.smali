@@ -105,13 +105,13 @@
 
     iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/e$h;->a:Lcom/panasonic/avc/cng/view/liveview/e;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/e;->k:Lcom/panasonic/avc/cng/core/a/af;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/e;->k:Lcom/panasonic/avc/cng/core/a/RecordCommand;
 
     iget v2, p0, Lcom/panasonic/avc/cng/view/liveview/e$h$5;->a:I
 
     iget v3, p0, Lcom/panasonic/avc/cng/view/liveview/e$h$5;->b:I
 
-    invoke-virtual {v0, v2, v3}, Lcom/panasonic/avc/cng/core/a/af;->b(II)Lcom/panasonic/avc/cng/model/c/h;
+    invoke-virtual {v0, v2, v3}, Lcom/panasonic/avc/cng/core/a/RecordCommand;->b(II)Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
     move-result-object v0
 
@@ -166,13 +166,13 @@
 
     iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/e$h;->a:Lcom/panasonic/avc/cng/view/liveview/e;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/e;->k:Lcom/panasonic/avc/cng/core/a/af;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/e;->k:Lcom/panasonic/avc/cng/core/a/RecordCommand;
 
     iget v2, p0, Lcom/panasonic/avc/cng/view/liveview/e$h$5;->a:I
 
     iget v3, p0, Lcom/panasonic/avc/cng/view/liveview/e$h$5;->b:I
 
-    invoke-virtual {v0, v2, v3}, Lcom/panasonic/avc/cng/core/a/af;->a(II)Lcom/panasonic/avc/cng/model/c/h;
+    invoke-virtual {v0, v2, v3}, Lcom/panasonic/avc/cng/core/a/RecordCommand;->a(II)Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
@@ -192,7 +192,7 @@
 
     new-instance v2, Lcom/panasonic/avc/cng/view/liveview/e$h$5$1;
 
-    invoke-direct {v2, p0, v0}, Lcom/panasonic/avc/cng/view/liveview/e$h$5$1;-><init>(Lcom/panasonic/avc/cng/view/liveview/e$h$5;Lcom/panasonic/avc/cng/model/c/h;)V
+    invoke-direct {v2, p0, v0}, Lcom/panasonic/avc/cng/view/liveview/e$h$5$1;-><init>(Lcom/panasonic/avc/cng/view/liveview/e$h$5;Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;)V
 
     invoke-virtual {v1, v2}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 

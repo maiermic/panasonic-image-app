@@ -42,7 +42,7 @@ public class C1575i {
 
     /* renamed from: c */
     public void mo3897c() {
-        GLES20.glBufferSubData(34962, 0, this.f4391c * 5 * 4, C1568e.m6247a(this.f4390b));
+        GLES20.glBufferSubData(34962, 0, this.f4391c * 5 * 4, OGLUtility.m6247a(this.f4390b));
     }
 
     /* renamed from: d */

@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/panasonic/avc/cng/view/smartoperation/i;
+    value = Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

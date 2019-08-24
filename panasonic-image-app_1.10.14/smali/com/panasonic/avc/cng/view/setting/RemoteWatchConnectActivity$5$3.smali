@@ -103,13 +103,13 @@
 
     iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/RemoteWatchConnectActivity$5;->a:Lcom/panasonic/avc/cng/view/setting/RemoteWatchConnectActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/RemoteWatchConnectActivity;->access$2100(Lcom/panasonic/avc/cng/view/setting/RemoteWatchConnectActivity;)Lcom/panasonic/avc/cng/application/e;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/RemoteWatchConnectActivity;->access$2100(Lcom/panasonic/avc/cng/view/setting/RemoteWatchConnectActivity;)Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportViewModel;
 
     move-result-object v0
 
     const/4 v1, 0x1
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/application/e;->a(Z)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportViewModel;->a(Z)V
 
     .line 584
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/RemoteWatchConnectActivity$5$3;->a:Lcom/panasonic/avc/cng/view/setting/RemoteWatchConnectActivity$5;

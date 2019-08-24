@@ -1,7 +1,7 @@
 package com.panasonic.avc.cng.model.service.p068o;
 
 import android.content.Context;
-import com.panasonic.avc.cng.core.p040a.C1492aw;
+import com.panasonic.avc.cng.core.p040a.WearableSettingCommand;
 import com.panasonic.avc.cng.core.p040a.C1501d;
 import com.panasonic.avc.cng.model.C1703a;
 import com.panasonic.avc.cng.model.C1892f;
@@ -26,7 +26,7 @@ public class C2209a {
     private C1501d f6849c;
 
     /* renamed from: d */
-    private C1492aw f6850d;
+    private WearableSettingCommand f6850d;
 
     /* renamed from: e */
     private String f6851e;
@@ -43,7 +43,7 @@ public class C2209a {
     public void mo5840a() {
         if (this.f6848b != null) {
             this.f6849c = new C1501d(this.f6848b.f5682d);
-            this.f6850d = new C1492aw(this.f6848b.f5682d);
+            this.f6850d = new WearableSettingCommand(this.f6848b.f5682d);
         }
     }
 

@@ -1,5 +1,5 @@
 .class final Lcom/google/android/gms/common/internal/ay;
-.super Lcom/google/android/gms/common/internal/ax;
+.super Lcom/google/android/gms/common/internal/DialogRedirect;
 
 
 # instance fields
@@ -20,7 +20,7 @@
 
     iput p3, p0, Lcom/google/android/gms/common/internal/ay;->c:I
 
-    invoke-direct {p0}, Lcom/google/android/gms/common/internal/ax;-><init>()V
+    invoke-direct {p0}, Lcom/google/android/gms/common/internal/DialogRedirect;-><init>()V
 
     return-void
 .end method

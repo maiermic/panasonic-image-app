@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/panasonic/avc/cng/view/setting/n;
+    value = Lcom/panasonic/avc/cng/view/setting/LiveSetupSliderBarActivity;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/panasonic/avc/cng/view/setting/n;
+.field final synthetic a:Lcom/panasonic/avc/cng/view/setting/LiveSetupSliderBarActivity;
 
 
 # direct methods
-.method public constructor <init>(Lcom/panasonic/avc/cng/view/setting/n;)V
+.method public constructor <init>(Lcom/panasonic/avc/cng/view/setting/LiveSetupSliderBarActivity;)V
     .locals 0
 
     .prologue
     .line 997
-    iput-object p1, p0, Lcom/panasonic/avc/cng/view/setting/n$b;->a:Lcom/panasonic/avc/cng/view/setting/n;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/view/setting/n$b;->a:Lcom/panasonic/avc/cng/view/setting/LiveSetupSliderBarActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -54,13 +54,13 @@
     if-ne p1, v0, :cond_0
 
     .line 1008
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/n$b;->a:Lcom/panasonic/avc/cng/view/setting/n;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/n$b;->a:Lcom/panasonic/avc/cng/view/setting/LiveSetupSliderBarActivity;
 
     sget-object v1, Lcom/panasonic/avc/cng/view/b/b$a;->bg:Lcom/panasonic/avc/cng/view/b/b$a;
 
     const/4 v2, 0x0
 
-    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     .line 1010
     :cond_0
@@ -81,11 +81,11 @@
     if-ne p1, v0, :cond_1
 
     .line 1079
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/n$b;->a:Lcom/panasonic/avc/cng/view/setting/n;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/n$b;->a:Lcom/panasonic/avc/cng/view/setting/LiveSetupSliderBarActivity;
 
     sget-object v1, Lcom/panasonic/avc/cng/view/b/b$a;->bi:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     .line 1094
     :cond_0
@@ -97,11 +97,11 @@
     if-ne p1, v1, :cond_2
 
     .line 1083
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/n$b;->a:Lcom/panasonic/avc/cng/view/setting/n;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/n$b;->a:Lcom/panasonic/avc/cng/view/setting/LiveSetupSliderBarActivity;
 
     sget-object v1, Lcom/panasonic/avc/cng/view/b/b$a;->bk:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     goto :goto_0
 
@@ -110,11 +110,11 @@
     if-ne p2, v0, :cond_3
 
     .line 1087
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/n$b;->a:Lcom/panasonic/avc/cng/view/setting/n;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/n$b;->a:Lcom/panasonic/avc/cng/view/setting/LiveSetupSliderBarActivity;
 
     sget-object v1, Lcom/panasonic/avc/cng/view/b/b$a;->bl:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     goto :goto_0
 
@@ -123,11 +123,11 @@
     if-ne p2, v1, :cond_0
 
     .line 1091
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/n$b;->a:Lcom/panasonic/avc/cng/view/setting/n;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/n$b;->a:Lcom/panasonic/avc/cng/view/setting/LiveSetupSliderBarActivity;
 
     sget-object v1, Lcom/panasonic/avc/cng/view/b/b$a;->bm:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     goto :goto_0
 .end method
@@ -137,9 +137,9 @@
 
     .prologue
     .line 1183
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/n$b;->a:Lcom/panasonic/avc/cng/view/setting/n;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/n$b;->a:Lcom/panasonic/avc/cng/view/setting/LiveSetupSliderBarActivity;
 
-    invoke-virtual {v0, p1}, Lcom/panasonic/avc/cng/view/setting/n;->DmsBase_OnNotifySubscribe(Lcom/panasonic/avc/cng/core/dlna/h;)V
+    invoke-virtual {v0, p1}, Lcom/panasonic/avc/cng/view/setting/LiveSetupSliderBarActivity;->DmsBase_OnNotifySubscribe(Lcom/panasonic/avc/cng/core/dlna/h;)V
 
     .line 1184
     return-void
@@ -158,9 +158,9 @@
 
     .prologue
     .line 1101
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/n$b;->a:Lcom/panasonic/avc/cng/view/setting/n;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/n$b;->a:Lcom/panasonic/avc/cng/view/setting/LiveSetupSliderBarActivity;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/n;->_handler:Landroid/os/Handler;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/LiveSetupSliderBarActivity;->_handler:Landroid/os/Handler;
 
     new-instance v1, Lcom/panasonic/avc/cng/view/setting/n$b$1;
 
@@ -182,13 +182,13 @@
     if-ne p1, v0, :cond_0
 
     .line 1021
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/n$b;->a:Lcom/panasonic/avc/cng/view/setting/n;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/n$b;->a:Lcom/panasonic/avc/cng/view/setting/LiveSetupSliderBarActivity;
 
     sget-object v1, Lcom/panasonic/avc/cng/view/b/b$a;->bg:Lcom/panasonic/avc/cng/view/b/b$a;
 
     const/4 v2, 0x0
 
-    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     .line 1023
     :cond_0
@@ -200,9 +200,9 @@
 
     .prologue
     .line 1115
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/n$b;->a:Lcom/panasonic/avc/cng/view/setting/n;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/n$b;->a:Lcom/panasonic/avc/cng/view/setting/LiveSetupSliderBarActivity;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/n;->_handler:Landroid/os/Handler;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/LiveSetupSliderBarActivity;->_handler:Landroid/os/Handler;
 
     new-instance v1, Lcom/panasonic/avc/cng/view/setting/n$b$2;
 
@@ -223,42 +223,42 @@
     const/4 v2, 0x0
 
     .line 1032
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/n$b;->a:Lcom/panasonic/avc/cng/view/setting/n;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/n$b;->a:Lcom/panasonic/avc/cng/view/setting/LiveSetupSliderBarActivity;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/n;->_resultBundle:Landroid/os/Bundle;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/LiveSetupSliderBarActivity;->_resultBundle:Landroid/os/Bundle;
 
     if-eqz v0, :cond_0
 
     .line 1035
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/n$b;->a:Lcom/panasonic/avc/cng/view/setting/n;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/n$b;->a:Lcom/panasonic/avc/cng/view/setting/LiveSetupSliderBarActivity;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/n;->_resultBundle:Landroid/os/Bundle;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/LiveSetupSliderBarActivity;->_resultBundle:Landroid/os/Bundle;
 
     const-string v1, "DeviceDisconnectedKey"
 
     invoke-virtual {v0, v1, v3}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
 
     .line 1036
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/n$b;->a:Lcom/panasonic/avc/cng/view/setting/n;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/n$b;->a:Lcom/panasonic/avc/cng/view/setting/LiveSetupSliderBarActivity;
 
-    invoke-static {v0, v3}, Lcom/panasonic/avc/cng/view/setting/n;->a(Lcom/panasonic/avc/cng/view/setting/n;Z)Z
+    invoke-static {v0, v3}, Lcom/panasonic/avc/cng/view/setting/LiveSetupSliderBarActivity;->a(Lcom/panasonic/avc/cng/view/setting/LiveSetupSliderBarActivity;Z)Z
 
     .line 1039
     :cond_0
     packed-switch p1, :pswitch_data_0
 
     .line 1055
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/n$b;->a:Lcom/panasonic/avc/cng/view/setting/n;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/n$b;->a:Lcom/panasonic/avc/cng/view/setting/LiveSetupSliderBarActivity;
 
     sget-object v1, Lcom/panasonic/avc/cng/view/b/b$a;->b:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     .line 1061
     :goto_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/n$b;->a:Lcom/panasonic/avc/cng/view/setting/n;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/n$b;->a:Lcom/panasonic/avc/cng/view/setting/LiveSetupSliderBarActivity;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/n;->_context:Landroid/content/Context;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/LiveSetupSliderBarActivity;->_context:Landroid/content/Context;
 
     check-cast v0, Landroid/app/Activity;
 
@@ -270,21 +270,21 @@
 
     .line 1043
     :pswitch_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/n$b;->a:Lcom/panasonic/avc/cng/view/setting/n;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/n$b;->a:Lcom/panasonic/avc/cng/view/setting/LiveSetupSliderBarActivity;
 
     sget-object v1, Lcom/panasonic/avc/cng/view/b/b$a;->dr:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     goto :goto_0
 
     .line 1048
     :pswitch_1
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/n$b;->a:Lcom/panasonic/avc/cng/view/setting/n;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/n$b;->a:Lcom/panasonic/avc/cng/view/setting/LiveSetupSliderBarActivity;
 
     sget-object v1, Lcom/panasonic/avc/cng/view/b/b$a;->Q:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     goto :goto_0
 
@@ -301,9 +301,9 @@
 
     .prologue
     .line 1129
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/n$b;->a:Lcom/panasonic/avc/cng/view/setting/n;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/n$b;->a:Lcom/panasonic/avc/cng/view/setting/LiveSetupSliderBarActivity;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/n;->_handler:Landroid/os/Handler;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/LiveSetupSliderBarActivity;->_handler:Landroid/os/Handler;
 
     new-instance v1, Lcom/panasonic/avc/cng/view/setting/n$b$3;
 
@@ -320,9 +320,9 @@
 
     .prologue
     .line 1144
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/n$b;->a:Lcom/panasonic/avc/cng/view/setting/n;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/n$b;->a:Lcom/panasonic/avc/cng/view/setting/LiveSetupSliderBarActivity;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/n;->_handler:Landroid/os/Handler;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/LiveSetupSliderBarActivity;->_handler:Landroid/os/Handler;
 
     new-instance v1, Lcom/panasonic/avc/cng/view/setting/n$b$4;
 

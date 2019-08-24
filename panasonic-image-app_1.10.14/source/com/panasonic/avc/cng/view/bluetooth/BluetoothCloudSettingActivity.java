@@ -20,18 +20,18 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import com.panasonic.avc.cng.core.p046c.C1671s;
+import com.panasonic.avc.cng.core.p046c.Picmate;
 import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.C1892f;
 import com.panasonic.avc.cng.model.service.C2137j;
 import com.panasonic.avc.cng.model.service.C2210p;
-import com.panasonic.avc.cng.model.service.C2253z;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.util.C2266l;
 import com.panasonic.avc.cng.view.common.C2820e;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
 import com.panasonic.avc.cng.view.setting.C5432aa;
 import com.panasonic.avc.cng.view.setting.C5432aa.C5434a;
 import com.panasonic.avc.cng.view.setting.C5476ae;
@@ -127,8 +127,8 @@ public class BluetoothCloudSettingActivity extends C5432aa {
         public void handleMessage(Message message) {
             switch (message.what) {
                 case 7:
-                    if (!C2331d.m10125b((Activity) BluetoothCloudSettingActivity.this, C2328a.ON_PROGRESS)) {
-                        C2331d.m10114a((Activity) BluetoothCloudSettingActivity.this, C2328a.ON_PROGRESS, (Bundle) null);
+                    if (!DialogFactory.m10125b((Activity) BluetoothCloudSettingActivity.this, C2328a.ON_PROGRESS)) {
+                        DialogFactory.m10114a((Activity) BluetoothCloudSettingActivity.this, C2328a.ON_PROGRESS, (Bundle) null);
                         return;
                     }
                     return;
@@ -205,7 +205,7 @@ public class BluetoothCloudSettingActivity extends C5432aa {
         this.f7798u = (TextView) findViewById(R.id.upload);
         String string = defaultSharedPreferences.getString("CurrentConnectedAddress", "");
         this.f7798u.setText(C2266l.m9840g(this.f7778a, string));
-        C1671s a = C2253z.m9676a(this.f7778a);
+        Picmate a = ServiceFactory.m9676a(this.f7778a);
         String obj = this.f7779b.getText().toString();
         String obj2 = this.f7780c.getText().toString();
         if (a != null) {
@@ -228,17 +228,17 @@ public class BluetoothCloudSettingActivity extends C5432aa {
 
     /* access modifiers changed from: protected */
     public void onResume() {
-        C2261g.m9763a("BluetoothCloudSettingActivity", "onResume()");
+        ImageAppLog.debug("BluetoothCloudSettingActivity", "onResume()");
         super.onResume();
         this.f7795r = mo6193a();
     }
 
     /* access modifiers changed from: protected */
     public void onPause() {
-        C2261g.m9763a("BluetoothCloudSettingActivity", "onPause()");
+        ImageAppLog.debug("BluetoothCloudSettingActivity", "onPause()");
         super.onPause();
         if (this.f7795r != null) {
-            C2253z.m9712j();
+            ServiceFactory.m9712j();
             this.f7795r = null;
         }
     }
@@ -267,7 +267,7 @@ public class BluetoothCloudSettingActivity extends C5432aa {
         this.f7785h = (String) bundle.get("LOGIN_PW_KEY");
         this.f7787j = bundle.getInt("FOCAS_KEY");
         this.f7788k = bundle.getInt("CURSOL_KEY");
-        C2261g.m9763a("INIT", String.valueOf(this.f7787j) + ":onRestoreInstanceState(" + String.valueOf(this.f7788k) + ")");
+        ImageAppLog.debug("INIT", String.valueOf(this.f7787j) + ":onRestoreInstanceState(" + String.valueOf(this.f7788k) + ")");
         m10386b();
     }
 
@@ -360,17 +360,17 @@ public class BluetoothCloudSettingActivity extends C5432aa {
                                 BluetoothCloudSettingActivity.this.f7790m.mo12192c(String.valueOf(BluetoothCloudSettingActivity.this.f7790m.mo12197f().f4547a), null);
                                 C2266l.m9850j(BluetoothCloudSettingActivity.this.f7778a, PreferenceManager.getDefaultSharedPreferences(BluetoothCloudSettingActivity.this.f7778a).getString("CurrentConnectedAddress", ""), String.valueOf(BluetoothCloudSettingActivity.this.f7790m.mo12197f().f4547a));
                             }
-                            C2331d.m10100a((Activity) BluetoothCloudSettingActivity.this);
-                            C2331d.m10114a((Activity) BluetoothCloudSettingActivity.this, C2328a.ON_PICMATE_LOGIN_SUCCESS, (Bundle) null);
+                            DialogFactory.m10100a((Activity) BluetoothCloudSettingActivity.this);
+                            DialogFactory.m10114a((Activity) BluetoothCloudSettingActivity.this, C2328a.ON_PICMATE_LOGIN_SUCCESS, (Bundle) null);
                         }
                     } else if (i == 18) {
-                        C2331d.m10100a((Activity) BluetoothCloudSettingActivity.this);
-                        C2331d.m10114a((Activity) BluetoothCloudSettingActivity.this, C2328a.DIALOG_ID_PIC_LOGIN_ERROR, (Bundle) null);
+                        DialogFactory.m10100a((Activity) BluetoothCloudSettingActivity.this);
+                        DialogFactory.m10114a((Activity) BluetoothCloudSettingActivity.this, C2328a.DIALOG_ID_PIC_LOGIN_ERROR, (Bundle) null);
                     } else if (i == 8) {
-                        C2331d.m10100a((Activity) BluetoothCloudSettingActivity.this);
-                        C2331d.m10114a((Activity) BluetoothCloudSettingActivity.this, C2328a.DIALOG_ID_CONNECT_FAILED, (Bundle) null);
+                        DialogFactory.m10100a((Activity) BluetoothCloudSettingActivity.this);
+                        DialogFactory.m10114a((Activity) BluetoothCloudSettingActivity.this, C2328a.DIALOG_ID_CONNECT_FAILED, (Bundle) null);
                     } else {
-                        C2331d.m10100a((Activity) BluetoothCloudSettingActivity.this);
+                        DialogFactory.m10100a((Activity) BluetoothCloudSettingActivity.this);
                         BluetoothCloudSettingActivity.this.finish();
                     }
                 }
@@ -383,15 +383,15 @@ public class BluetoothCloudSettingActivity extends C5432aa {
                         if (i == 1) {
                             C2820e.m11790a(BluetoothCloudSettingActivity.this.f7790m);
                             BluetoothCloudSettingActivity.this.startActivityForResult(new Intent(BluetoothCloudSettingActivity.this, TermsActivity.class), 1);
-                            C2331d.m10100a((Activity) BluetoothCloudSettingActivity.this);
+                            DialogFactory.m10100a((Activity) BluetoothCloudSettingActivity.this);
                             return;
                         }
-                        C2331d.m10100a((Activity) BluetoothCloudSettingActivity.this);
-                        C2331d.m10114a((Activity) BluetoothCloudSettingActivity.this, C2328a.DIALOG_ID_CONNECT_FAILED, (Bundle) null);
+                        DialogFactory.m10100a((Activity) BluetoothCloudSettingActivity.this);
+                        DialogFactory.m10114a((Activity) BluetoothCloudSettingActivity.this, C2328a.DIALOG_ID_CONNECT_FAILED, (Bundle) null);
                     } else if (i2 != 22) {
                     } else {
                         if (i == 1) {
-                            C2331d.m10114a((Activity) BluetoothCloudSettingActivity.this, C2328a.DIALOG_ID_ASK_ID_2_PHONE, (Bundle) null);
+                            DialogFactory.m10114a((Activity) BluetoothCloudSettingActivity.this, C2328a.DIALOG_ID_ASK_ID_2_PHONE, (Bundle) null);
                             return;
                         }
                         BluetoothCloudSettingActivity.this.f7782e.setVisibility(8);
@@ -404,7 +404,7 @@ public class BluetoothCloudSettingActivity extends C5432aa {
             public void mo5072a(boolean z) {
                 if (!BluetoothCloudSettingActivity.this.isFinishing()) {
                     if (z) {
-                        C2331d.m10114a((Activity) BluetoothCloudSettingActivity.this, C2328a.DIALOG_ID_PICMATE_ID_OVERRIDE, (Bundle) null);
+                        DialogFactory.m10114a((Activity) BluetoothCloudSettingActivity.this, C2328a.DIALOG_ID_PICMATE_ID_OVERRIDE, (Bundle) null);
                     } else {
                         BluetoothCloudSettingActivity.this.f7790m.mo12208q();
                     }
@@ -415,7 +415,7 @@ public class BluetoothCloudSettingActivity extends C5432aa {
             public void mo5075b(boolean z) {
                 if (!BluetoothCloudSettingActivity.this.isFinishing()) {
                     if (z) {
-                        C2331d.m10114a((Activity) BluetoothCloudSettingActivity.this, C2328a.DIALOG_ID_PICMATE_ID_SYNC_SUCCESS, (Bundle) null);
+                        DialogFactory.m10114a((Activity) BluetoothCloudSettingActivity.this, C2328a.DIALOG_ID_PICMATE_ID_SYNC_SUCCESS, (Bundle) null);
                         C1892f a = C1712b.m6919c().mo4896a();
                         if (a != null && a.mo4886a()) {
                             BluetoothCloudSettingActivity.this.f7790m.mo12196e(BluetoothCloudSettingActivity.this.f7784g, BluetoothCloudSettingActivity.this.f7785h);
@@ -423,7 +423,7 @@ public class BluetoothCloudSettingActivity extends C5432aa {
                         }
                         return;
                     }
-                    C2331d.m10114a((Activity) BluetoothCloudSettingActivity.this, C2328a.DIALOG_ID_PICMATE_ID_SYNC_FAILED, (Bundle) null);
+                    DialogFactory.m10114a((Activity) BluetoothCloudSettingActivity.this, C2328a.DIALOG_ID_PICMATE_ID_SYNC_FAILED, (Bundle) null);
                 }
             }
 
@@ -437,7 +437,7 @@ public class BluetoothCloudSettingActivity extends C5432aa {
                         BluetoothCloudSettingActivity.this.f7785h = BluetoothCloudSettingActivity.this.f7790m.mo12203l();
                         BluetoothCloudSettingActivity.this.f7780c.setText(BluetoothCloudSettingActivity.this.f7784g);
                         BluetoothCloudSettingActivity.this.f7779b.setText(BluetoothCloudSettingActivity.this.f7785h);
-                        C2331d.m10114a((Activity) BluetoothCloudSettingActivity.this, C2328a.DIALOG_ID_PICMATE_ID_SYNC_SUCCESS, (Bundle) null);
+                        DialogFactory.m10114a((Activity) BluetoothCloudSettingActivity.this, C2328a.DIALOG_ID_PICMATE_ID_SYNC_SUCCESS, (Bundle) null);
                         C1892f a = C1712b.m6919c().mo4896a();
                         if (a != null && a.mo4886a()) {
                             BluetoothCloudSettingActivity.this.f7790m.mo12196e(BluetoothCloudSettingActivity.this.f7784g, BluetoothCloudSettingActivity.this.f7785h);
@@ -497,7 +497,7 @@ public class BluetoothCloudSettingActivity extends C5432aa {
 
     public void onClickNewRegisterButton(View view) {
         if (!this.f7780c.getText().toString().equals("")) {
-            C2331d.m10114a((Activity) this, C2328a.DIALOG_CHANGE_REGIST, (Bundle) null);
+            DialogFactory.m10114a((Activity) this, C2328a.DIALOG_CHANGE_REGIST, (Bundle) null);
             return;
         }
         m10383a(view);
@@ -524,7 +524,7 @@ public class BluetoothCloudSettingActivity extends C5432aa {
     public void onClickLoginButton(View view) {
         String obj = this.f7780c.getText().toString();
         if (this.f7779b.getText().toString().length() == 0 || obj.length() == 0) {
-            C2331d.m10114a((Activity) this, C2328a.DIALOG_ID_INVALID_INPUT_LOGIN, (Bundle) null);
+            DialogFactory.m10114a((Activity) this, C2328a.DIALOG_ID_INVALID_INPUT_LOGIN, (Bundle) null);
             return;
         }
         m10383a(view);
@@ -611,7 +611,7 @@ public class BluetoothCloudSettingActivity extends C5432aa {
 
     /* renamed from: a */
     public C2137j mo6193a() {
-        C2137j a = C2253z.m9682a(this.f7778a, this.f7789l, false);
+        C2137j a = ServiceFactory.m9682a(this.f7778a, this.f7789l, false);
         if (a == null) {
             return null;
         }

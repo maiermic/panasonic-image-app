@@ -8,7 +8,7 @@ import android.net.Uri;
 import android.opengl.GLES20;
 import android.opengl.Matrix;
 import com.panasonic.avc.cng.core.p042b.p044b.C1566c;
-import com.panasonic.avc.cng.core.p042b.p044b.C1568e;
+import com.panasonic.avc.cng.core.p042b.p044b.OGLUtility;
 import com.panasonic.avc.cng.core.p042b.p044b.C1569f;
 import com.panasonic.avc.cng.core.p042b.p044b.C1574h;
 import com.panasonic.avc.cng.core.p042b.p044b.C1575i;
@@ -21,7 +21,7 @@ import com.panasonic.avc.cng.core.p042b.p045c.C1593f;
 import com.panasonic.avc.cng.core.p042b.p045c.C1593f.C1599a;
 import com.panasonic.avc.cng.core.p042b.p045c.C1600g;
 import com.panasonic.avc.cng.model.service.p055b.C2003c;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import java.nio.BufferUnderflowException;
 import java.nio.ByteBuffer;
 import java.util.ArrayList;
@@ -121,7 +121,7 @@ public class C1549b implements C1566c {
 
     /* renamed from: a */
     public void mo3855a() {
-        C2261g.m9763a(f4313b, "Dispose()");
+        ImageAppLog.debug(f4313b, "Dispose()");
         synchronized (this.f4319g) {
             if (this.f4316d != null) {
                 C1593f fVar = this.f4316d;
@@ -411,7 +411,7 @@ public class C1549b implements C1566c {
 
             /* renamed from: c */
             public void mo3848c() {
-                C2261g.m9771e(C1549b.f4313b, String.format("OnEndOfStream(): video", new Object[0]));
+                ImageAppLog.info(C1549b.f4313b, String.format("OnEndOfStream(): video", new Object[0]));
                 C1549b.this.f4335w = true;
                 synchronized (C1549b.this.f4320h) {
                     if (C1549b.this.f4317e != null) {
@@ -476,18 +476,18 @@ public class C1549b implements C1566c {
                         }
                         dVar.mo3869a(bVar, bArr, C1549b.this.f4324l, 0, i);
                     } catch (BufferUnderflowException e) {
-                        C2261g.m9766b(C1549b.f4313b, e.getLocalizedMessage());
+                        ImageAppLog.warning(C1549b.f4313b, e.getLocalizedMessage());
                     } catch (IndexOutOfBoundsException e2) {
-                        C2261g.m9766b(C1549b.f4313b, e2.getLocalizedMessage());
+                        ImageAppLog.warning(C1549b.f4313b, e2.getLocalizedMessage());
                     } catch (IllegalStateException e3) {
-                        C2261g.m9766b(C1549b.f4313b, e3.getLocalizedMessage());
+                        ImageAppLog.warning(C1549b.f4313b, e3.getLocalizedMessage());
                     }
                 }
             }
 
             /* renamed from: a */
             public void mo3849a() {
-                C2261g.m9771e(C1549b.f4313b, String.format("OnEndOfStream(): audio", new Object[0]));
+                ImageAppLog.info(C1549b.f4313b, String.format("OnEndOfStream(): audio", new Object[0]));
                 if (C1549b.this.f4317e != null) {
                     C1549b.this.f4317e.mo3901a();
                     C1549b.this.f4317e = null;
@@ -509,7 +509,7 @@ public class C1549b implements C1566c {
     /* renamed from: h */
     private void m6180h() {
         this.f4314a = new C1556a();
-        this.f4314a.f4377b = C1568e.m6246a("uniform mat4 uMVPMatrix;attribute vec4 position;attribute vec2 texcoord;varying vec2 texcoordVarying;void main() {gl_Position = uMVPMatrix * position;texcoordVarying = texcoord;}", "#extension GL_OES_EGL_image_external : require\nprecision mediump float;varying vec2 texcoordVarying;uniform samplerExternalOES texture;uniform float flash;void main() {vec4 color = texture2D(texture, texcoordVarying);gl_FragColor =  vec4(color.r + flash- color.r*flash,color.g + flash- color.g*flash,color.b + flash- color.b*flash, color.a);}");
+        this.f4314a.f4377b = OGLUtility.m6246a("uniform mat4 uMVPMatrix;attribute vec4 position;attribute vec2 texcoord;varying vec2 texcoordVarying;void main() {gl_Position = uMVPMatrix * position;texcoordVarying = texcoord;}", "#extension GL_OES_EGL_image_external : require\nprecision mediump float;varying vec2 texcoordVarying;uniform samplerExternalOES texture;uniform float flash;void main() {vec4 color = texture2D(texture, texcoordVarying);gl_FragColor =  vec4(color.r + flash- color.r*flash,color.g + flash- color.g*flash,color.b + flash- color.b*flash, color.a);}");
         this.f4314a.f4378c = GLES20.glGetAttribLocation(this.f4314a.f4377b, "position");
         this.f4314a.f4379d = GLES20.glGetAttribLocation(this.f4314a.f4377b, "texcoord");
         this.f4314a.f4380e = GLES20.glGetUniformLocation(this.f4314a.f4377b, "texture");
@@ -617,8 +617,8 @@ public class C1549b implements C1566c {
         float[] fArr = {-1.0f, 1.0f, 0.0f, -1.0f, -1.0f, 0.0f, 1.0f, 1.0f, 0.0f, 1.0f, -1.0f, 0.0f};
         float[] fArr2 = {f2 - (f4 / 2.0f), f3 - (f4 / 2.0f), f2 - (f4 / 2.0f), (f4 / 2.0f) + f3, (f4 / 2.0f) + f2, f3 - (f4 / 2.0f), (f4 / 2.0f) + f2, (f4 / 2.0f) + f3};
         for (C1576j jVar : ((C1574h) this.f4321i.f4353e.get(i)).f4388c) {
-            jVar.f4394b = C1568e.m6247a(fArr);
-            jVar.f4393a = C1568e.m6247a(fArr2);
+            jVar.f4394b = OGLUtility.m6247a(fArr);
+            jVar.f4393a = OGLUtility.m6247a(fArr2);
             jVar.f4395c = 5;
             jVar.f4396d = 0;
             jVar.f4397e = 4;

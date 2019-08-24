@@ -477,7 +477,7 @@
     const/4 v0, 0x0
 
     .line 1258
-    invoke-static {}, Lcom/panasonic/avc/cng/model/service/z;->f()Lcom/panasonic/avc/cng/model/service/a;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->f()Lcom/panasonic/avc/cng/model/service/a;
 
     move-result-object v1
 
@@ -491,7 +491,7 @@
 
     .line 1263
     :cond_1
-    instance-of v2, v1, Lcom/panasonic/avc/cng/model/service/a/c;
+    instance-of v2, v1, Lcom/panasonic/avc/cng/model/service/a/BrowserServiceCamera;
 
     if-eqz v2, :cond_0
 
@@ -572,11 +572,11 @@
     iput-object v0, p0, Lcom/panasonic/avc/cng/view/smartoperation/e;->c:Ljava/util/List;
 
     .line 257
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v2
 
@@ -1314,7 +1314,7 @@
     .line 1084
     const/4 v0, 0x0
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/e;->a(Lcom/panasonic/avc/cng/view/threebox/c;)V
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/e;->a(Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;)V
 
     .line 1087
     new-instance v1, Landroid/content/Intent;
@@ -1491,11 +1491,11 @@
 
     .prologue
     .line 1141
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 

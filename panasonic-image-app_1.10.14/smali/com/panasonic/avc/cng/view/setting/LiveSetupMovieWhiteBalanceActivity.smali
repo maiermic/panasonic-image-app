@@ -14,7 +14,7 @@
 # instance fields
 .field private g:Lcom/panasonic/avc/cng/view/parts/ai;
 
-.field private h:Lcom/panasonic/avc/cng/view/setting/y;
+.field private h:Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceViewModel;
 
 .field private i:Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceActivity$a;
 
@@ -35,7 +35,7 @@
     iput-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceActivity;->g:Lcom/panasonic/avc/cng/view/parts/ai;
 
     .line 36
-    iput-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceActivity;->h:Lcom/panasonic/avc/cng/view/setting/y;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceActivity;->h:Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceViewModel;
 
     .line 39
     const/4 v0, 0x0
@@ -65,12 +65,12 @@
     return p1
 .end method
 
-.method static synthetic b(Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceActivity;)Lcom/panasonic/avc/cng/view/setting/y;
+.method static synthetic b(Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceActivity;)Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceViewModel;
     .locals 1
 
     .prologue
     .line 33
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceActivity;->h:Lcom/panasonic/avc/cng/view/setting/y;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceActivity;->h:Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceViewModel;
 
     return-object v0
 .end method
@@ -92,14 +92,14 @@
 
     .prologue
     .line 133
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceActivity;->h:Lcom/panasonic/avc/cng/view/setting/y;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceActivity;->h:Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceViewModel;
 
     if-eqz v0, :cond_0
 
     .line 135
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceActivity;->h:Lcom/panasonic/avc/cng/view/setting/y;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceActivity;->h:Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/y;->d()Landroid/os/Bundle;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceViewModel;->d()Landroid/os/Bundle;
 
     move-result-object v0
 
@@ -115,9 +115,9 @@
     invoke-direct {v0}, Landroid/content/Intent;-><init>()V
 
     .line 137
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceActivity;->h:Lcom/panasonic/avc/cng/view/setting/y;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceActivity;->h:Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceViewModel;
 
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/setting/y;->d()Landroid/os/Bundle;
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceViewModel;->d()Landroid/os/Bundle;
 
     move-result-object v1
 
@@ -135,19 +135,19 @@
     invoke-static {v0}, Lcom/panasonic/avc/cng/view/a/j;->b(Ljava/lang/String;)V
 
     .line 146
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceActivity;->h:Lcom/panasonic/avc/cng/view/setting/y;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceActivity;->h:Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceViewModel;
 
     if-eqz v0, :cond_1
 
     .line 148
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceActivity;->h:Lcom/panasonic/avc/cng/view/setting/y;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceActivity;->h:Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/y;->a()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceViewModel;->a()V
 
     .line 149
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceActivity;->h:Lcom/panasonic/avc/cng/view/setting/y;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceActivity;->h:Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceViewModel;
 
     .line 151
     :cond_1
@@ -159,18 +159,18 @@
 
     .prologue
     .line 186
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
     .line 187
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceActivity;->_context:Landroid/content/Context;
 
-    invoke-static {v1, v0}, Lcom/panasonic/avc/cng/model/service/z;->a(Landroid/content/Context;Lcom/panasonic/avc/cng/model/f;)Lcom/panasonic/avc/cng/model/service/b;
+    invoke-static {v1, v0}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->a(Landroid/content/Context;Lcom/panasonic/avc/cng/model/f;)Lcom/panasonic/avc/cng/model/service/b;
 
     move-result-object v1
 
@@ -214,9 +214,9 @@
 
     .line 202
     :cond_2
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceActivity;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceActivity;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
-    invoke-virtual {v0, p3}, Lcom/panasonic/avc/cng/view/a/d;->d(Landroid/content/Intent;)Z
+    invoke-virtual {v0, p3}, Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;->d(Landroid/content/Intent;)Z
 
     move-result v0
 
@@ -286,9 +286,9 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/panasonic/avc/cng/view/setting/y;
+    check-cast v0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceViewModel;
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceActivity;->h:Lcom/panasonic/avc/cng/view/setting/y;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceActivity;->h:Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceViewModel;
 
     .line 63
     new-instance v0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceActivity$a;
@@ -300,12 +300,12 @@
     iput-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceActivity;->i:Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceActivity$a;
 
     .line 64
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceActivity;->h:Lcom/panasonic/avc/cng/view/setting/y;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceActivity;->h:Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceViewModel;
 
     if-nez v0, :cond_0
 
     .line 67
-    new-instance v0, Lcom/panasonic/avc/cng/view/setting/y;
+    new-instance v0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceViewModel;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceActivity;->_context:Landroid/content/Context;
 
@@ -313,12 +313,12 @@
 
     iget-object v3, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceActivity;->i:Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceActivity$a;
 
-    invoke-direct {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/setting/y;-><init>(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/setting/y$b;)V
+    invoke-direct {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceViewModel;-><init>(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/setting/y$b;)V
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceActivity;->h:Lcom/panasonic/avc/cng/view/setting/y;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceActivity;->h:Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceViewModel;
 
     .line 68
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceActivity;->h:Lcom/panasonic/avc/cng/view/setting/y;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceActivity;->h:Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceViewModel;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceActivity;->_context:Landroid/content/Context;
 
@@ -326,12 +326,12 @@
 
     iget-object v3, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceActivity;->i:Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceActivity$a;
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/setting/y;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/setting/y$b;)V
+    invoke-virtual {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceViewModel;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/setting/y$b;)V
 
     .line 71
     const-string v0, "LiveSetupMovieWhiteBalanceViewModel"
 
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceActivity;->h:Lcom/panasonic/avc/cng/view/setting/y;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceActivity;->h:Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceViewModel;
 
     invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/a/j;->a(Ljava/lang/String;Lcom/panasonic/avc/cng/view/a/c;)V
 
@@ -341,9 +341,9 @@
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceActivity;->_context:Landroid/content/Context;
 
-    iget-object v2, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceActivity;->h:Lcom/panasonic/avc/cng/view/setting/y;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceActivity;->h:Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceViewModel;
 
-    invoke-direct {v0, v1, p0, v2}, Lcom/panasonic/avc/cng/view/parts/ai;-><init>(Landroid/content/Context;Landroid/app/Activity;Lcom/panasonic/avc/cng/view/setting/y;)V
+    invoke-direct {v0, v1, p0, v2}, Lcom/panasonic/avc/cng/view/parts/ai;-><init>(Landroid/content/Context;Landroid/app/Activity;Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceViewModel;)V
 
     iput-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceActivity;->g:Lcom/panasonic/avc/cng/view/parts/ai;
 
@@ -353,9 +353,9 @@
     invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/parts/ai;->a()V
 
     .line 82
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceActivity;->h:Lcom/panasonic/avc/cng/view/setting/y;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceActivity;->h:Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/y;->D()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceViewModel;->D()V
 
     .line 84
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceActivity;->g:Lcom/panasonic/avc/cng/view/parts/ai;
@@ -371,7 +371,7 @@
 
     .line 75
     :cond_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceActivity;->h:Lcom/panasonic/avc/cng/view/setting/y;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceActivity;->h:Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceViewModel;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceActivity;->_context:Landroid/content/Context;
 
@@ -379,7 +379,7 @@
 
     iget-object v3, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceActivity;->i:Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceActivity$a;
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/setting/y;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/setting/y$b;)V
+    invoke-virtual {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceViewModel;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/setting/y$b;)V
 
     goto :goto_0
 .end method

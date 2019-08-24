@@ -52,16 +52,16 @@
     .line 2828
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/d$8$1;->a:Lcom/panasonic/avc/cng/view/liveview/d$8;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/d$8;->b:Lcom/panasonic/avc/cng/view/liveview/d;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/d$8;->b:Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixBaseActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;)V
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;)V
 
     .line 2831
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/d$8$1;->a:Lcom/panasonic/avc/cng/view/liveview/d$8;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/d$8;->b:Lcom/panasonic/avc/cng/view/liveview/d;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/d$8;->b:Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixBaseActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/d;->e(Lcom/panasonic/avc/cng/view/liveview/d;)Lcom/panasonic/avc/cng/view/setting/am$l;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixBaseActivity;->e(Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixBaseActivity;)Lcom/panasonic/avc/cng/view/setting/am$l;
 
     move-result-object v0
 
@@ -70,17 +70,17 @@
     .line 2832
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/d$8$1;->a:Lcom/panasonic/avc/cng/view/liveview/d$8;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/d$8;->b:Lcom/panasonic/avc/cng/view/liveview/d;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/d$8;->b:Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixBaseActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/d;->e(Lcom/panasonic/avc/cng/view/liveview/d;)Lcom/panasonic/avc/cng/view/setting/am$l;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixBaseActivity;->e(Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixBaseActivity;)Lcom/panasonic/avc/cng/view/setting/am$l;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/d$8$1;->a:Lcom/panasonic/avc/cng/view/liveview/d$8;
 
-    iget-object v1, v1, Lcom/panasonic/avc/cng/view/liveview/d$8;->b:Lcom/panasonic/avc/cng/view/liveview/d;
+    iget-object v1, v1, Lcom/panasonic/avc/cng/view/liveview/d$8;->b:Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixBaseActivity;
 
-    invoke-static {v1}, Lcom/panasonic/avc/cng/view/liveview/d;->h(Lcom/panasonic/avc/cng/view/liveview/d;)Landroid/content/Context;
+    invoke-static {v1}, Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixBaseActivity;->h(Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixBaseActivity;)Landroid/content/Context;
 
     move-result-object v1
 

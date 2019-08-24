@@ -49,7 +49,7 @@
 
     check-cast v0, Landroid/app/Activity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;)V
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;)V
 
     .line 5198
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/MainBrowserActivity$11;->a:Lcom/panasonic/avc/cng/view/play/browser/MainBrowserActivity;
@@ -63,11 +63,11 @@
     .line 5201
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/MainBrowserActivity$11;->a:Lcom/panasonic/avc/cng/view/play/browser/MainBrowserActivity;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/browser/MainBrowserActivity;->_viewModel:Lcom/panasonic/avc/cng/view/play/browser/g;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/browser/MainBrowserActivity;->_viewModel:Lcom/panasonic/avc/cng/view/play/browser/MainBrowserViewModel;
 
     const/4 v1, 0x1
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/play/browser/g;->l(Z)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/play/browser/MainBrowserViewModel;->l(Z)V
 
     .line 5202
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/MainBrowserActivity$11;->a:Lcom/panasonic/avc/cng/view/play/browser/MainBrowserActivity;

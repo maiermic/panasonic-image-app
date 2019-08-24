@@ -48,9 +48,9 @@
     .line 35
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieVideoActivity;->_binder:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/b;
 
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieVideoActivity;->_viewModel:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieVideoActivity;->_viewModel:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;
 
-    invoke-virtual {v0, p0, v1}, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/b;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;)V
+    invoke-virtual {v0, p0, v1}, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/b;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;)V
 
     .line 36
     return-void

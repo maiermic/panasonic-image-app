@@ -12,7 +12,7 @@
 
 
 # instance fields
-.field private a:Lcom/panasonic/avc/cng/view/setting/ac;
+.field private a:Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionMovieMakingViewModel;
 
 .field private b:Lcom/panasonic/avc/cng/view/setting/ac$b;
 
@@ -35,9 +35,9 @@
     const/4 v0, 0x0
 
     .line 410
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionAutoManualSettingActivity;->a:Lcom/panasonic/avc/cng/view/setting/ac;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionAutoManualSettingActivity;->a:Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionMovieMakingViewModel;
 
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/setting/ac;->j()Ljava/util/ArrayList;
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionMovieMakingViewModel;->j()Ljava/util/ArrayList;
 
     move-result-object v1
 
@@ -131,7 +131,7 @@
     invoke-virtual {v1, v3, v2}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
     .line 333
-    invoke-static {p0, v0, v1}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {p0, v0, v1}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     goto :goto_0
 .end method
@@ -146,12 +146,12 @@
     return-void
 .end method
 
-.method static synthetic b(Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionAutoManualSettingActivity;)Lcom/panasonic/avc/cng/view/setting/ac;
+.method static synthetic b(Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionAutoManualSettingActivity;)Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionMovieMakingViewModel;
     .locals 1
 
     .prologue
     .line 38
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionAutoManualSettingActivity;->a:Lcom/panasonic/avc/cng/view/setting/ac;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionAutoManualSettingActivity;->a:Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionMovieMakingViewModel;
 
     return-object v0
 .end method
@@ -203,9 +203,9 @@
 
     .prologue
     .line 367
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionAutoManualSettingActivity;->a:Lcom/panasonic/avc/cng/view/setting/ac;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionAutoManualSettingActivity;->a:Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionMovieMakingViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/ac;->j()Ljava/util/ArrayList;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionMovieMakingViewModel;->j()Ljava/util/ArrayList;
 
     move-result-object v3
 
@@ -284,9 +284,9 @@
     const/4 v2, -0x1
 
     .line 386
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionAutoManualSettingActivity;->a:Lcom/panasonic/avc/cng/view/setting/ac;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionAutoManualSettingActivity;->a:Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionMovieMakingViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/ac;->j()Ljava/util/ArrayList;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionMovieMakingViewModel;->j()Ljava/util/ArrayList;
 
     move-result-object v3
 
@@ -309,9 +309,9 @@
 
     .line 392
     :cond_2
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionAutoManualSettingActivity;->a:Lcom/panasonic/avc/cng/view/setting/ac;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionAutoManualSettingActivity;->a:Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionMovieMakingViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/ac;->e()I
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionMovieMakingViewModel;->e()I
 
     move-result v4
 
@@ -398,9 +398,9 @@
     if-eqz v0, :cond_5
 
     .line 461
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionAutoManualSettingActivity;->a:Lcom/panasonic/avc/cng/view/setting/ac;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionAutoManualSettingActivity;->a:Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionMovieMakingViewModel;
 
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/setting/ac;->d()Z
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionMovieMakingViewModel;->d()Z
 
     move-result v1
 
@@ -525,9 +525,9 @@
 
     .line 516
     :cond_0
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionAutoManualSettingActivity;->a:Lcom/panasonic/avc/cng/view/setting/ac;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionAutoManualSettingActivity;->a:Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionMovieMakingViewModel;
 
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/setting/ac;->e()I
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionMovieMakingViewModel;->e()I
 
     move-result v1
 
@@ -582,35 +582,35 @@
     invoke-virtual {p0}, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionAutoManualSettingActivity;->OnSetResult()V
 
     .line 189
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionAutoManualSettingActivity;->a:Lcom/panasonic/avc/cng/view/setting/ac;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionAutoManualSettingActivity;->a:Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionMovieMakingViewModel;
 
     if-eqz v0, :cond_1
 
     .line 191
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionAutoManualSettingActivity;->a:Lcom/panasonic/avc/cng/view/setting/ac;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionAutoManualSettingActivity;->a:Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionMovieMakingViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/ac;->a()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionMovieMakingViewModel;->a()V
 
     .line 192
-    iput-object v1, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionAutoManualSettingActivity;->a:Lcom/panasonic/avc/cng/view/setting/ac;
+    iput-object v1, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionAutoManualSettingActivity;->a:Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionMovieMakingViewModel;
 
     .line 194
     :cond_1
-    invoke-static {v1}, Lcom/panasonic/avc/cng/view/common/e;->a(Lcom/panasonic/avc/cng/view/setting/ac;)V
+    invoke-static {v1}, Lcom/panasonic/avc/cng/view/common/e;->a(Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionMovieMakingViewModel;)V
 
     .line 197
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
     if-eqz v0, :cond_3
 
     .line 199
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
@@ -620,7 +620,7 @@
     .line 203
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionAutoManualSettingActivity;->_context:Landroid/content/Context;
 
-    invoke-static {v1, v0}, Lcom/panasonic/avc/cng/model/service/z;->a(Landroid/content/Context;Lcom/panasonic/avc/cng/model/f;)Lcom/panasonic/avc/cng/model/service/b;
+    invoke-static {v1, v0}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->a(Landroid/content/Context;Lcom/panasonic/avc/cng/model/f;)Lcom/panasonic/avc/cng/model/service/b;
 
     move-result-object v0
 
@@ -840,33 +840,33 @@
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionAutoManualSettingActivity;->b:Lcom/panasonic/avc/cng/view/setting/ac$b;
 
-    invoke-static {p0, v0, v1, v4}, Lcom/panasonic/avc/cng/view/common/e;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/setting/ac$b;Lcom/panasonic/avc/cng/view/setting/ac$c;)Lcom/panasonic/avc/cng/view/setting/ac;
+    invoke-static {p0, v0, v1, v4}, Lcom/panasonic/avc/cng/view/common/e;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/setting/ac$b;Lcom/panasonic/avc/cng/view/setting/ac$c;)Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionMovieMakingViewModel;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionAutoManualSettingActivity;->a:Lcom/panasonic/avc/cng/view/setting/ac;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionAutoManualSettingActivity;->a:Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionMovieMakingViewModel;
 
     .line 100
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionAutoManualSettingActivity;->a:Lcom/panasonic/avc/cng/view/setting/ac;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionAutoManualSettingActivity;->a:Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionMovieMakingViewModel;
 
     if-nez v0, :cond_0
 
     .line 102
-    new-instance v0, Lcom/panasonic/avc/cng/view/setting/ac;
+    new-instance v0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionMovieMakingViewModel;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionAutoManualSettingActivity;->_handler:Landroid/os/Handler;
 
     iget-object v2, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionAutoManualSettingActivity;->b:Lcom/panasonic/avc/cng/view/setting/ac$b;
 
-    invoke-direct {v0, p0, v1, v2}, Lcom/panasonic/avc/cng/view/setting/ac;-><init>(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/setting/ac$b;)V
+    invoke-direct {v0, p0, v1, v2}, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionMovieMakingViewModel;-><init>(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/setting/ac$b;)V
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionAutoManualSettingActivity;->a:Lcom/panasonic/avc/cng/view/setting/ac;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionAutoManualSettingActivity;->a:Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionMovieMakingViewModel;
 
     .line 104
     :cond_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionAutoManualSettingActivity;->a:Lcom/panasonic/avc/cng/view/setting/ac;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionAutoManualSettingActivity;->a:Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionMovieMakingViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/e;->a(Lcom/panasonic/avc/cng/view/setting/ac;)V
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/e;->a(Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionMovieMakingViewModel;)V
 
     .line 109
     const v0, 0x7f0f014b
@@ -899,9 +899,9 @@
     invoke-virtual {v0, v1}, Landroid/widget/CheckBox;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
 
     .line 139
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionAutoManualSettingActivity;->a:Lcom/panasonic/avc/cng/view/setting/ac;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionAutoManualSettingActivity;->a:Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionMovieMakingViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/ac;->n()Z
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionMovieMakingViewModel;->n()Z
 
     .line 140
     return-void
@@ -1129,33 +1129,33 @@
 
     const/4 v2, 0x0
 
-    invoke-static {p0, v0, v1, v2}, Lcom/panasonic/avc/cng/view/common/e;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/setting/ac$b;Lcom/panasonic/avc/cng/view/setting/ac$c;)Lcom/panasonic/avc/cng/view/setting/ac;
+    invoke-static {p0, v0, v1, v2}, Lcom/panasonic/avc/cng/view/common/e;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/setting/ac$b;Lcom/panasonic/avc/cng/view/setting/ac$c;)Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionMovieMakingViewModel;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionAutoManualSettingActivity;->a:Lcom/panasonic/avc/cng/view/setting/ac;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionAutoManualSettingActivity;->a:Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionMovieMakingViewModel;
 
     .line 157
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionAutoManualSettingActivity;->a:Lcom/panasonic/avc/cng/view/setting/ac;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionAutoManualSettingActivity;->a:Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionMovieMakingViewModel;
 
     if-nez v0, :cond_2
 
     .line 159
-    new-instance v0, Lcom/panasonic/avc/cng/view/setting/ac;
+    new-instance v0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionMovieMakingViewModel;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionAutoManualSettingActivity;->_handler:Landroid/os/Handler;
 
     iget-object v2, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionAutoManualSettingActivity;->b:Lcom/panasonic/avc/cng/view/setting/ac$b;
 
-    invoke-direct {v0, p0, v1, v2}, Lcom/panasonic/avc/cng/view/setting/ac;-><init>(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/setting/ac$b;)V
+    invoke-direct {v0, p0, v1, v2}, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionMovieMakingViewModel;-><init>(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/setting/ac$b;)V
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionAutoManualSettingActivity;->a:Lcom/panasonic/avc/cng/view/setting/ac;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionAutoManualSettingActivity;->a:Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionMovieMakingViewModel;
 
     .line 161
     :cond_2
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionAutoManualSettingActivity;->a:Lcom/panasonic/avc/cng/view/setting/ac;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionAutoManualSettingActivity;->a:Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionMovieMakingViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/e;->a(Lcom/panasonic/avc/cng/view/setting/ac;)V
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/e;->a(Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionMovieMakingViewModel;)V
 
     .line 165
     invoke-static {p0}, Lcom/panasonic/avc/cng/view/setting/al$a;->a(Landroid/app/Activity;)Z
@@ -1191,16 +1191,16 @@
 
     .line 575
     :pswitch_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionAutoManualSettingActivity;->a:Lcom/panasonic/avc/cng/view/setting/ac;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionAutoManualSettingActivity;->a:Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionMovieMakingViewModel;
 
     invoke-direct {p0, p2}, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionAutoManualSettingActivity;->a(I)I
 
     move-result v1
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/setting/ac;->a(I)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionMovieMakingViewModel;->a(I)V
 
     .line 578
-    invoke-static {p0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;)V
+    invoke-static {p0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;)V
 
     .line 581
     invoke-direct {p0}, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionAutoManualSettingActivity;->f()V

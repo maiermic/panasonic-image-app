@@ -47,18 +47,18 @@
 
     const-string v1, "SetNfcProcessFlg:false"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 720
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/RemoteWatchConnectActivity$6;->a:Lcom/panasonic/avc/cng/view/setting/RemoteWatchConnectActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/RemoteWatchConnectActivity;->access$2500(Lcom/panasonic/avc/cng/view/setting/RemoteWatchConnectActivity;)Lcom/panasonic/avc/cng/application/e;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/RemoteWatchConnectActivity;->access$2500(Lcom/panasonic/avc/cng/view/setting/RemoteWatchConnectActivity;)Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportViewModel;
 
     move-result-object v0
 
     const/4 v1, 0x1
 
-    invoke-virtual {v0, v3, v1}, Lcom/panasonic/avc/cng/application/e;->a(ZZ)V
+    invoke-virtual {v0, v3, v1}, Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportViewModel;->a(ZZ)V
 
     .line 724
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/RemoteWatchConnectActivity$6;->a:Lcom/panasonic/avc/cng/view/setting/RemoteWatchConnectActivity;
@@ -86,11 +86,11 @@
     :cond_0
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/RemoteWatchConnectActivity$6;->a:Lcom/panasonic/avc/cng/view/setting/RemoteWatchConnectActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/RemoteWatchConnectActivity;->access$2600(Lcom/panasonic/avc/cng/view/setting/RemoteWatchConnectActivity;)Lcom/panasonic/avc/cng/application/e;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/RemoteWatchConnectActivity;->access$2600(Lcom/panasonic/avc/cng/view/setting/RemoteWatchConnectActivity;)Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportViewModel;
 
     move-result-object v0
 
-    invoke-virtual {v0, v3}, Lcom/panasonic/avc/cng/application/e;->a(Z)V
+    invoke-virtual {v0, v3}, Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportViewModel;->a(Z)V
 
     .line 732
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/RemoteWatchConnectActivity$6;->a:Lcom/panasonic/avc/cng/view/setting/RemoteWatchConnectActivity;
@@ -118,11 +118,11 @@
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/RemoteWatchConnectActivity$6;->a:Lcom/panasonic/avc/cng/view/setting/RemoteWatchConnectActivity;
 
-    invoke-static {v1}, Lcom/panasonic/avc/cng/view/setting/RemoteWatchConnectActivity;->access$2700(Lcom/panasonic/avc/cng/view/setting/RemoteWatchConnectActivity;)Lcom/panasonic/avc/cng/application/e;
+    invoke-static {v1}, Lcom/panasonic/avc/cng/view/setting/RemoteWatchConnectActivity;->access$2700(Lcom/panasonic/avc/cng/view/setting/RemoteWatchConnectActivity;)Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportViewModel;
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/common/e;->a(Ljava/lang/String;Lcom/panasonic/avc/cng/application/e;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/common/e;->a(Ljava/lang/String;Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportViewModel;)V
 
     .line 736
     new-instance v0, Landroid/content/Intent;

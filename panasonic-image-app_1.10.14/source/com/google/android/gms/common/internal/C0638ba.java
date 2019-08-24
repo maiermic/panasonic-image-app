@@ -101,7 +101,7 @@ public final class C0638ba extends C0658a {
             if (r7 == 0) goto L_0x0021
             if (r7 != 0) goto L_0x002d
         L_0x001d:
-            android.accounts.Account r0 = com.google.android.gms.common.internal.C0610a.m2286a(r0)
+            android.accounts.Account r0 = com.google.android.gms.common.internal.AccountAccessor.m2286a(r0)
         L_0x0021:
             r2.f1372e = r0
         L_0x0023:

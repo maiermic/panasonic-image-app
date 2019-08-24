@@ -45,7 +45,7 @@
 
     const-string v1, "OnFind"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 336
     iget-object v0, p0, Lcom/panasonic/avc/cng/application/c$a$1;->a:Lcom/panasonic/avc/cng/application/c$a;
@@ -64,9 +64,9 @@
     :cond_0
     iget-object v0, p0, Lcom/panasonic/avc/cng/application/c$a$1;->a:Lcom/panasonic/avc/cng/application/c$a;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/application/c$a;->a:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/application/c$a;->a:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/application/c;->k(Lcom/panasonic/avc/cng/application/c;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->k(Lcom/panasonic/avc/cng/application/NfcSupportViewModel;)Landroid/os/Handler;
 
     move-result-object v0
 
@@ -88,7 +88,7 @@
 
     const-string v1, "OnNone"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 356
     iget-object v0, p0, Lcom/panasonic/avc/cng/application/c$a$1;->a:Lcom/panasonic/avc/cng/application/c$a;
@@ -107,9 +107,9 @@
     :cond_0
     iget-object v0, p0, Lcom/panasonic/avc/cng/application/c$a$1;->a:Lcom/panasonic/avc/cng/application/c$a;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/application/c$a;->a:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/application/c$a;->a:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/application/c;->l(Lcom/panasonic/avc/cng/application/c;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->l(Lcom/panasonic/avc/cng/application/NfcSupportViewModel;)Landroid/os/Handler;
 
     move-result-object v0
 

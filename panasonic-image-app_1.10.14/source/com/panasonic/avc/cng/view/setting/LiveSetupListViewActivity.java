@@ -11,7 +11,7 @@ import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.view.setting.C5541am.C5563o;
 
-public class LiveSetupListViewActivity extends C5766n {
+public class LiveSetupListViewActivity extends LiveSetupSliderBarActivity {
     /* access modifiers changed from: private */
 
     /* renamed from: g */

@@ -9,11 +9,11 @@ import android.view.TextureView.SurfaceTextureListener;
 import com.panasonic.avc.cng.core.p042b.p043a.C1549b;
 import com.panasonic.avc.cng.core.p042b.p043a.C1557c;
 import com.panasonic.avc.cng.core.p042b.p043a.C1558d;
-import com.panasonic.avc.cng.core.p042b.p044b.C1567d;
+import com.panasonic.avc.cng.core.p042b.p044b.OGLDisplayRenderer;
 import com.panasonic.avc.cng.core.p042b.p045c.C1577a;
 import com.panasonic.avc.cng.core.p042b.p045c.C1578b;
 import com.panasonic.avc.cng.model.service.p055b.C2003c;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.util.C2266l;
 import java.nio.ByteBuffer;
 import java.util.List;
@@ -31,7 +31,7 @@ public class C4792f implements SurfaceTextureListener {
     /* access modifiers changed from: private */
 
     /* renamed from: c */
-    public C1567d f15574c = null;
+    public OGLDisplayRenderer f15574c = null;
     /* access modifiers changed from: private */
 
     /* renamed from: d */
@@ -66,12 +66,12 @@ public class C4792f implements SurfaceTextureListener {
     }
 
     public C4792f() {
-        C2261g.m9763a(f15572a, "SnapMoviePlayer");
+        ImageAppLog.debug(f15572a, "SnapMoviePlayer");
     }
 
     /* renamed from: a */
     public void mo11157a(Context context, TextureView textureView, C4800a aVar) {
-        C2261g.m9763a(f15572a, "setup");
+        ImageAppLog.debug(f15572a, "setup");
         this.f15576e = aVar;
         this.f15573b = context;
         textureView.setSurfaceTextureListener(this);
@@ -81,16 +81,16 @@ public class C4792f implements SurfaceTextureListener {
     public void onSurfaceTextureAvailable(final SurfaceTexture surfaceTexture, final int i, final int i2) {
         new Thread(new Runnable() {
             public void run() {
-                C2261g.m9763a(C4792f.f15572a, String.format("onSurfaceTextureAvailable(%d, %d)", new Object[]{Integer.valueOf(i), Integer.valueOf(i2)}));
+                ImageAppLog.debug(C4792f.f15572a, String.format("onSurfaceTextureAvailable(%d, %d)", new Object[]{Integer.valueOf(i), Integer.valueOf(i2)}));
                 if (C4792f.this.f15574c == null) {
-                    C4792f.this.f15574c = new C1567d();
+                    C4792f.this.f15574c = new OGLDisplayRenderer();
                 }
                 C4792f.this.f15574c.mo3886a(surfaceTexture, i, i2);
                 C4792f.this.f15575d.mo3856a(i, i2);
                 if (C4792f.this.f15576e != null) {
                     C4792f.this.f15576e.mo11029a();
                 }
-                C2261g.m9763a(C4792f.f15572a, "onSurfaceTextureAvailable():end");
+                ImageAppLog.debug(C4792f.f15572a, "onSurfaceTextureAvailable():end");
             }
         }).start();
     }
@@ -98,17 +98,17 @@ public class C4792f implements SurfaceTextureListener {
     public void onSurfaceTextureSizeChanged(final SurfaceTexture surfaceTexture, final int i, final int i2) {
         new Thread(new Runnable() {
             public void run() {
-                C2261g.m9763a(C4792f.f15572a, String.format("onSurfaceTextureSizeChanged(%d, %d)", new Object[]{Integer.valueOf(i), Integer.valueOf(i2)}));
+                ImageAppLog.debug(C4792f.f15572a, String.format("onSurfaceTextureSizeChanged(%d, %d)", new Object[]{Integer.valueOf(i), Integer.valueOf(i2)}));
                 if (C4792f.this.f15574c == null) {
-                    C2261g.m9769c(C4792f.f15572a, "renderer is NULL!!!!");
-                    C4792f.this.f15574c = new C1567d();
+                    ImageAppLog.error(C4792f.f15572a, "renderer is NULL!!!!");
+                    C4792f.this.f15574c = new OGLDisplayRenderer();
                 }
                 C4792f.this.f15574c.mo3886a(surfaceTexture, i, i2);
                 C4792f.this.f15575d.mo3856a(i, i2);
                 if (C4792f.this.f15576e != null) {
                     C4792f.this.f15576e.mo11029a();
                 }
-                C2261g.m9763a(C4792f.f15572a, "onSurfaceTextureSizeChanged():end");
+                ImageAppLog.debug(C4792f.f15572a, "onSurfaceTextureSizeChanged():end");
             }
         }).start();
     }
@@ -131,7 +131,7 @@ public class C4792f implements SurfaceTextureListener {
 
     /* renamed from: a */
     public int mo11156a() {
-        C2261g.m9763a(f15572a, "PlayStatus:" + this.f15578g);
+        ImageAppLog.debug(f15572a, "PlayStatus:" + this.f15578g);
         return this.f15578g;
     }
 
@@ -139,12 +139,12 @@ public class C4792f implements SurfaceTextureListener {
     public void mo11158a(C2003c cVar, Uri uri, long j, long j2, boolean z) {
         this.f15577f = null;
         if (cVar == null) {
-            C2261g.m9769c(f15572a, "Nothing Video!!!");
+            ImageAppLog.error(f15572a, "Nothing Video!!!");
             return;
         }
         this.f15578g = 1;
         this.f15579h = System.currentTimeMillis() + 200;
-        C2261g.m9771e(f15572a, "Play start at " + this.f15579h);
+        ImageAppLog.info(f15572a, "Play start at " + this.f15579h);
         this.f15575d.mo3853a(this.f15573b, cVar, uri, z);
         this.f15575d.mo3859a(j, j2, new C1558d() {
             /* renamed from: a */
@@ -155,7 +155,7 @@ public class C4792f implements SurfaceTextureListener {
                 }
                 if (j == 0) {
                     C4792f.this.f15579h = System.currentTimeMillis();
-                    C2261g.m9771e(C4792f.f15572a, "Video start at " + C4792f.this.f15579h);
+                    ImageAppLog.info(C4792f.f15572a, "Video start at " + C4792f.this.f15579h);
                 } else {
                     j2 = System.currentTimeMillis() - C4792f.this.f15579h;
                 }
@@ -205,7 +205,7 @@ public class C4792f implements SurfaceTextureListener {
 
             /* renamed from: c */
             public void mo3872c() {
-                C2261g.m9771e(C4792f.f15572a, String.format("OnEndOfStream()", new Object[0]));
+                ImageAppLog.info(C4792f.f15572a, String.format("OnEndOfStream()", new Object[0]));
                 if (C4792f.this.f15577f != null) {
                     C4792f.this.f15577f.mo3899a();
                     C4792f.this.f15577f = null;
@@ -226,12 +226,12 @@ public class C4792f implements SurfaceTextureListener {
     public void mo11159a(List<C2003c> list, List<Uri> list2, int i, boolean z) {
         this.f15577f = null;
         if (list == null || list.size() <= 0) {
-            C2261g.m9769c(f15572a, "Nothing Video!!!");
+            ImageAppLog.error(f15572a, "Nothing Video!!!");
             return;
         }
         this.f15578g = 1;
         this.f15579h = System.currentTimeMillis() + 200;
-        C2261g.m9771e(f15572a, "Play start at " + this.f15579h);
+        ImageAppLog.info(f15572a, "Play start at " + this.f15579h);
         this.f15575d.mo3854a(this.f15573b, list, list2, z);
         this.f15575d.mo3858a(this.f15579h);
         this.f15575d.mo3857a(i, (C1558d) new C1558d() {
@@ -244,7 +244,7 @@ public class C4792f implements SurfaceTextureListener {
                 if (j == 0) {
                     C4792f.this.f15579h = System.currentTimeMillis();
                     C4792f.this.f15575d.mo3858a(C4792f.this.f15579h);
-                    C2261g.m9771e(C4792f.f15572a, "Video start at " + C4792f.this.f15579h);
+                    ImageAppLog.info(C4792f.f15572a, "Video start at " + C4792f.this.f15579h);
                 } else {
                     j2 = System.currentTimeMillis() - C4792f.this.f15579h;
                 }
@@ -298,7 +298,7 @@ public class C4792f implements SurfaceTextureListener {
 
             /* renamed from: c */
             public void mo3872c() {
-                C2261g.m9771e(C4792f.f15572a, String.format("OnEndOfStream()", new Object[0]));
+                ImageAppLog.info(C4792f.f15572a, String.format("OnEndOfStream()", new Object[0]));
                 if (C4792f.this.f15577f != null) {
                     C4792f.this.f15577f.mo3899a();
                     C4792f.this.f15577f = null;
@@ -311,7 +311,7 @@ public class C4792f implements SurfaceTextureListener {
 
             /* renamed from: a */
             public void mo3867a(long j) {
-                C2261g.m9769c(C4792f.f15572a, "base Change " + C4792f.this.f15579h + "->" + j);
+                ImageAppLog.error(C4792f.f15572a, "base Change " + C4792f.this.f15579h + "->" + j);
                 C4792f.this.f15579h = j;
             }
         });

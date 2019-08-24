@@ -47,7 +47,7 @@
 
     const-string v1, "OnStart()"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->verbose(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 1829
     return-void
@@ -90,7 +90,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->verbose(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 1835
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/a$4;->a:Lcom/panasonic/avc/cng/view/play/browser/a;
@@ -145,7 +145,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->verbose(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 1848
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/a$4;->a:Lcom/panasonic/avc/cng/view/play/browser/a;
@@ -237,7 +237,7 @@
 
     const-string v1, "OnCopyComplete()"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->verbose(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 1867
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/a$4;->a:Lcom/panasonic/avc/cng/view/play/browser/a;
@@ -300,7 +300,7 @@
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/browser/a$4;->a:Lcom/panasonic/avc/cng/view/play/browser/a;
 
-    invoke-static {v0, v1, v4, v4}, Lcom/panasonic/avc/cng/view/b/e;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/play/browser/a;Lcom/panasonic/avc/cng/view/smartoperation/i;Lcom/panasonic/avc/cng/view/smartoperation/h;)V
+    invoke-static {v0, v1, v4, v4}, Lcom/panasonic/avc/cng/view/b/e;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/play/browser/a;Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;Lcom/panasonic/avc/cng/view/smartoperation/h;)V
 
     goto :goto_0
 .end method

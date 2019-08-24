@@ -4,11 +4,11 @@ import android.app.Activity;
 import android.os.Bundle;
 import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.C1712b;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.view.liveview.movie.homemonitor.C3622c.C3676b;
 import com.panasonic.avc.cng.view.liveview.movie.homemonitor.C3622c.C3677c;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
 
 public class LiveViewMoviePantilterRemoteWatchAutoActivity extends C3614a {
     /* access modifiers changed from: protected */
@@ -21,7 +21,7 @@ public class LiveViewMoviePantilterRemoteWatchAutoActivity extends C3614a {
         C1712b.m6914a((Activity) this);
         super.onCreate(bundle);
         if (isLog()) {
-            C2261g.m9770d(GET_TAG(), "onCreate()");
+            ImageAppLog.verbose(GET_TAG(), "onCreate()");
         }
         setContentView(R.layout.activity_liveview_movie_pantilter_remotewatch_auto);
         mo8557a(1, false, 1, "manual");
@@ -42,7 +42,7 @@ public class LiveViewMoviePantilterRemoteWatchAutoActivity extends C3614a {
     /* access modifiers changed from: protected */
     public void onResume() {
         if (isLog()) {
-            C2261g.m9770d(GET_TAG(), "onResume()");
+            ImageAppLog.verbose(GET_TAG(), "onResume()");
         }
         if (this._isCheck) {
             this._isCheck = false;
@@ -60,13 +60,13 @@ public class LiveViewMoviePantilterRemoteWatchAutoActivity extends C3614a {
 
     public void onBackPressed() {
         if (isLog()) {
-            C2261g.m9770d(GET_TAG(), "onBackPressed()");
+            ImageAppLog.verbose(GET_TAG(), "onBackPressed()");
         }
         if (this._isMicVolSet) {
             this._isMicVolSet = false;
             changeUI(false);
             return;
         }
-        C2331d.m10114a((Activity) this, C2328a.ON_BACK_PRESSED, (Bundle) null);
+        DialogFactory.m10114a((Activity) this, C2328a.ON_BACK_PRESSED, (Bundle) null);
     }
 }

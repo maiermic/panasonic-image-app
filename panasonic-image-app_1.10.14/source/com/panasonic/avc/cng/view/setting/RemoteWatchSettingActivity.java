@@ -21,8 +21,8 @@ import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.service.p056c.C2020c;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
-import com.panasonic.avc.cng.view.setting.C5537al.C5540a;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
+import com.panasonic.avc.cng.view.setting.SettingMenuBaseActivity.C5540a;
 import com.panasonic.avc.cng.view.setting.C5741i.C5759a;
 
 public class RemoteWatchSettingActivity extends C5741i {
@@ -206,7 +206,7 @@ public class RemoteWatchSettingActivity extends C5741i {
     /* renamed from: a */
     private C5759a m20052a() {
         boolean z = true;
-        if (C2331d.m10124b(this)) {
+        if (DialogFactory.m10124b(this)) {
             z = false;
         }
         if (z) {

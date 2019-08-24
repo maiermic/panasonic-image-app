@@ -45,9 +45,9 @@
     .line 4174
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c$c$1;->a:Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c$c;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c$c;->a:Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c$c;->a:Lcom/panasonic/avc/cng/view/liveview/movie/wearable/LiveViewWearableViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c;->R(Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c;)Landroid/content/Context;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/LiveViewWearableViewModel;->R(Lcom/panasonic/avc/cng/view/liveview/movie/wearable/LiveViewWearableViewModel;)Landroid/content/Context;
 
     move-result-object v0
 
@@ -58,7 +58,7 @@
 
     const-string v1, "context is null."
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->b(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->warning(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 4198
     :goto_0
@@ -68,9 +68,9 @@
     :cond_0
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c$c$1;->a:Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c$c;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c$c;->a:Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c$c;->a:Lcom/panasonic/avc/cng/view/liveview/movie/wearable/LiveViewWearableViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c;->S(Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c;)Landroid/content/Context;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/LiveViewWearableViewModel;->S(Lcom/panasonic/avc/cng/view/liveview/movie/wearable/LiveViewWearableViewModel;)Landroid/content/Context;
 
     move-result-object v0
 
@@ -82,9 +82,9 @@
     .line 4183
     iget-object v2, p0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c$c$1;->a:Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c$c;
 
-    iget-object v2, v2, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c$c;->a:Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c;
+    iget-object v2, v2, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c$c;->a:Lcom/panasonic/avc/cng/view/liveview/movie/wearable/LiveViewWearableViewModel;
 
-    invoke-static {v2}, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c;->b(Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c;)I
+    invoke-static {v2}, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/LiveViewWearableViewModel;->b(Lcom/panasonic/avc/cng/view/liveview/movie/wearable/LiveViewWearableViewModel;)I
 
     move-result v2
 
@@ -97,16 +97,16 @@
 
     const-string v2, "OnNotifyStatus:ModeChange Error return Movie"
 
-    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/g;->b(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->warning(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 4186
     new-instance v1, Landroid/content/Intent;
 
     iget-object v2, p0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c$c$1;->a:Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c$c;
 
-    iget-object v2, v2, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c$c;->a:Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c;
+    iget-object v2, v2, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c$c;->a:Lcom/panasonic/avc/cng/view/liveview/movie/wearable/LiveViewWearableViewModel;
 
-    invoke-static {v2}, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c;->T(Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c;)Landroid/content/Context;
+    invoke-static {v2}, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/LiveViewWearableViewModel;->T(Lcom/panasonic/avc/cng/view/liveview/movie/wearable/LiveViewWearableViewModel;)Landroid/content/Context;
 
     move-result-object v2
 
@@ -131,9 +131,9 @@
     :cond_2
     iget-object v2, p0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c$c$1;->a:Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c$c;
 
-    iget-object v2, v2, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c$c;->a:Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c;
+    iget-object v2, v2, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c$c;->a:Lcom/panasonic/avc/cng/view/liveview/movie/wearable/LiveViewWearableViewModel;
 
-    invoke-static {v2}, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c;->b(Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c;)I
+    invoke-static {v2}, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/LiveViewWearableViewModel;->b(Lcom/panasonic/avc/cng/view/liveview/movie/wearable/LiveViewWearableViewModel;)I
 
     move-result v2
 
@@ -146,16 +146,16 @@
 
     const-string v2, "OnNotifyStatus:ModeChange Error return Picture"
 
-    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/g;->b(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->warning(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 4191
     new-instance v1, Landroid/content/Intent;
 
     iget-object v2, p0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c$c$1;->a:Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c$c;
 
-    iget-object v2, v2, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c$c;->a:Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c;
+    iget-object v2, v2, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c$c;->a:Lcom/panasonic/avc/cng/view/liveview/movie/wearable/LiveViewWearableViewModel;
 
-    invoke-static {v2}, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c;->U(Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c;)Landroid/content/Context;
+    invoke-static {v2}, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/LiveViewWearableViewModel;->U(Lcom/panasonic/avc/cng/view/liveview/movie/wearable/LiveViewWearableViewModel;)Landroid/content/Context;
 
     move-result-object v2
 

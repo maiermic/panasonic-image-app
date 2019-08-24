@@ -1,5 +1,5 @@
 .class public Lcom/panasonic/avc/cng/view/setting/LiveSetupListViewActivity;
-.super Lcom/panasonic/avc/cng/view/setting/n;
+.super Lcom/panasonic/avc/cng/view/setting/LiveSetupSliderBarActivity;
 .source "SourceFile"
 
 
@@ -26,7 +26,7 @@
 
     .prologue
     .line 23
-    invoke-direct {p0}, Lcom/panasonic/avc/cng/view/setting/n;-><init>()V
+    invoke-direct {p0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupSliderBarActivity;-><init>()V
 
     return-void
 .end method
@@ -48,7 +48,7 @@
 
     .prologue
     .line 52
-    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/n;->a()V
+    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupSliderBarActivity;->a()V
 
     .line 53
     return-void
@@ -59,7 +59,7 @@
 
     .prologue
     .line 189
-    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/n;->a(Z)V
+    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/LiveSetupSliderBarActivity;->a(Z)V
 
     .line 191
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupListViewActivity;->i:Landroid/widget/ListView;
@@ -81,7 +81,7 @@
 
     .prologue
     .line 61
-    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/n;->d()V
+    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupSliderBarActivity;->d()V
 
     .line 62
     return-void
@@ -92,7 +92,7 @@
 
     .prologue
     .line 88
-    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/n;->e()V
+    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupSliderBarActivity;->e()V
 
     .line 91
     const v0, 0x7f0f0018
@@ -132,7 +132,7 @@
 
     .prologue
     .line 70
-    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/n;->f()V
+    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupSliderBarActivity;->f()V
 
     .line 71
     return-void
@@ -143,7 +143,7 @@
 
     .prologue
     .line 79
-    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/n;->g()V
+    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupSliderBarActivity;->g()V
 
     .line 80
     return-void
@@ -158,7 +158,7 @@
     const/4 v2, 0x1
 
     .line 113
-    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/n;->h()V
+    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupSliderBarActivity;->h()V
 
     .line 119
     new-instance v3, Lcom/panasonic/avc/cng/view/setting/am$o;
@@ -371,7 +371,7 @@
     invoke-static {p0}, Lcom/panasonic/avc/cng/model/b;->a(Landroid/app/Activity;)V
 
     .line 43
-    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/n;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/LiveSetupSliderBarActivity;->onCreate(Landroid/os/Bundle;)V
 
     .line 44
     return-void

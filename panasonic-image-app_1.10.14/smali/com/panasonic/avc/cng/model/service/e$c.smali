@@ -21,5 +21,5 @@
 .method public abstract a(Lcom/panasonic/avc/cng/core/dlna/h;)V
 .end method
 
-.method public abstract a(Lcom/panasonic/avc/cng/model/c/e;)V
+.method public abstract a(Lcom/panasonic/avc/cng/model/c/CameraStatus;)V
 .end method

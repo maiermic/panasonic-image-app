@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/panasonic/avc/cng/view/liveview/n;
+    value = Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,28 +18,28 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/panasonic/avc/cng/view/liveview/n;
+.field final synthetic a:Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;
 
 
 # direct methods
-.method private constructor <init>(Lcom/panasonic/avc/cng/view/liveview/n;)V
+.method private constructor <init>(Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;)V
     .locals 0
 
     .prologue
     .line 352
-    iput-object p1, p0, Lcom/panasonic/avc/cng/view/liveview/n$b;->a:Lcom/panasonic/avc/cng/view/liveview/n;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/view/liveview/n$b;->a:Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/panasonic/avc/cng/view/liveview/n;Lcom/panasonic/avc/cng/view/liveview/n$1;)V
+.method synthetic constructor <init>(Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;Lcom/panasonic/avc/cng/view/liveview/n$1;)V
     .locals 0
 
     .prologue
     .line 352
-    invoke-direct {p0, p1}, Lcom/panasonic/avc/cng/view/liveview/n$b;-><init>(Lcom/panasonic/avc/cng/view/liveview/n;)V
+    invoke-direct {p0, p1}, Lcom/panasonic/avc/cng/view/liveview/n$b;-><init>(Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;)V
 
     return-void
 .end method
@@ -51,9 +51,9 @@
 
     .prologue
     .line 401
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/n$b;->a:Lcom/panasonic/avc/cng/view/liveview/n;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/n$b;->a:Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/n;->e(Lcom/panasonic/avc/cng/view/liveview/n;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;->e(Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;)Landroid/os/Handler;
 
     move-result-object v0
 
@@ -65,9 +65,9 @@
 
     .line 407
     :cond_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/n$b;->a:Lcom/panasonic/avc/cng/view/liveview/n;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/n$b;->a:Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/n;->f(Lcom/panasonic/avc/cng/view/liveview/n;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;->f(Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;)Landroid/os/Handler;
 
     move-result-object v0
 
@@ -100,21 +100,21 @@
     return-void
 .end method
 
-.method public a(Lcom/panasonic/avc/cng/model/c/e;)V
+.method public a(Lcom/panasonic/avc/cng/model/c/CameraStatus;)V
     .locals 3
 
     .prologue
     .line 360
-    invoke-static {p1}, Lcom/panasonic/avc/cng/model/c/e;->a(Lcom/panasonic/avc/cng/model/c/e;)Z
+    invoke-static {p1}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->a(Lcom/panasonic/avc/cng/model/c/CameraStatus;)Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
     .line 362
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/n$b;->a:Lcom/panasonic/avc/cng/view/liveview/n;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/n$b;->a:Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/n;->a(Lcom/panasonic/avc/cng/view/liveview/n;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;->a(Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;)Landroid/os/Handler;
 
     move-result-object v0
 
@@ -127,23 +127,23 @@
 
     .line 370
     :cond_1
-    invoke-static {p1}, Lcom/panasonic/avc/cng/model/c/e;->b(Lcom/panasonic/avc/cng/model/c/e;)I
+    invoke-static {p1}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->b(Lcom/panasonic/avc/cng/model/c/CameraStatus;)I
 
     move-result v0
 
     .line 371
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/n$b;->a:Lcom/panasonic/avc/cng/view/liveview/n;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/n$b;->a:Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;
 
-    invoke-static {v1}, Lcom/panasonic/avc/cng/view/liveview/n;->b(Lcom/panasonic/avc/cng/view/liveview/n;)Landroid/os/Handler;
+    invoke-static {v1}, Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;->b(Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;)Landroid/os/Handler;
 
     move-result-object v1
 
     if-eqz v1, :cond_0
 
     .line 377
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/n$b;->a:Lcom/panasonic/avc/cng/view/liveview/n;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/n$b;->a:Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;
 
-    invoke-static {v1}, Lcom/panasonic/avc/cng/view/liveview/n;->d(Lcom/panasonic/avc/cng/view/liveview/n;)Landroid/os/Handler;
+    invoke-static {v1}, Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;->d(Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;)Landroid/os/Handler;
 
     move-result-object v1
 
@@ -236,7 +236,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 457
     invoke-virtual {p1}, Lcom/panasonic/avc/cng/core/dlna/h;->a()I
@@ -265,18 +265,18 @@
     if-eq v0, v1, :cond_0
 
     .line 532
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/n$b;->a:Lcom/panasonic/avc/cng/view/liveview/n;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/n$b;->a:Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;
 
-    invoke-static {v1}, Lcom/panasonic/avc/cng/view/liveview/n;->c(Lcom/panasonic/avc/cng/view/liveview/n;)Lcom/panasonic/avc/cng/view/liveview/n$c;
+    invoke-static {v1}, Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;->c(Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;)Lcom/panasonic/avc/cng/view/liveview/n$c;
 
     move-result-object v1
 
     if-eqz v1, :cond_0
 
     .line 534
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/n$b;->a:Lcom/panasonic/avc/cng/view/liveview/n;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/n$b;->a:Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;
 
-    invoke-static {v1}, Lcom/panasonic/avc/cng/view/liveview/n;->c(Lcom/panasonic/avc/cng/view/liveview/n;)Lcom/panasonic/avc/cng/view/liveview/n$c;
+    invoke-static {v1}, Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;->c(Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;)Lcom/panasonic/avc/cng/view/liveview/n$c;
 
     move-result-object v1
 
@@ -401,7 +401,7 @@
 
     const-string v2, "false: because subscribe Error"
 
-    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 

@@ -43,9 +43,9 @@
     .line 204
     iget-object v0, p0, Lcom/panasonic/avc/cng/model/b/c$1$1;->a:Lcom/panasonic/avc/cng/model/b/c$1;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/model/b/c$1;->a:Lcom/panasonic/avc/cng/model/b/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/model/b/c$1;->a:Lcom/panasonic/avc/cng/model/b/ContentsCopyViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/b/c;->b(Lcom/panasonic/avc/cng/model/b/c;)Lcom/panasonic/avc/cng/model/b/c$b;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/b/ContentsCopyViewModel;->b(Lcom/panasonic/avc/cng/model/b/ContentsCopyViewModel;)Lcom/panasonic/avc/cng/model/b/c$b;
 
     move-result-object v0
 
@@ -54,9 +54,9 @@
     .line 205
     iget-object v0, p0, Lcom/panasonic/avc/cng/model/b/c$1$1;->a:Lcom/panasonic/avc/cng/model/b/c$1;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/model/b/c$1;->a:Lcom/panasonic/avc/cng/model/b/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/model/b/c$1;->a:Lcom/panasonic/avc/cng/model/b/ContentsCopyViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/b/c;->b(Lcom/panasonic/avc/cng/model/b/c;)Lcom/panasonic/avc/cng/model/b/c$b;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/b/ContentsCopyViewModel;->b(Lcom/panasonic/avc/cng/model/b/ContentsCopyViewModel;)Lcom/panasonic/avc/cng/model/b/c$b;
 
     move-result-object v0
 

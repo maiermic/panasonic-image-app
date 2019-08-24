@@ -59,11 +59,11 @@
     const/4 v4, 0x0
 
     .line 780
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
@@ -100,7 +100,7 @@
 
     .line 790
     :try_start_0
-    invoke-static {v0}, Lcom/panasonic/avc/cng/core/a/al;->a(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/core/a/StaticHttpCommand;->a(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -116,7 +116,7 @@
 
     const-string v3, "Cmd() is null...."
 
-    invoke-static {v2, v3}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v2, v3}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 795
     :cond_0
@@ -141,9 +141,9 @@
     invoke-static {v2, v1}, Lcom/panasonic/avc/cng/view/setting/au;->a(Lcom/panasonic/avc/cng/view/setting/au;Ljava/lang/String;)Ljava/lang/String;
 
     .line 802
-    new-instance v1, Lcom/panasonic/avc/cng/model/c/h;
+    new-instance v1, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
-    invoke-direct {v1, v0}, Lcom/panasonic/avc/cng/model/c/h;-><init>(Ljava/lang/String;)V
+    invoke-direct {v1, v0}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;-><init>(Ljava/lang/String;)V
 
     .line 803
     if-eqz v1, :cond_5
@@ -151,7 +151,7 @@
     .line 804
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/au$2;->c:Lcom/panasonic/avc/cng/view/setting/au;
 
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/model/c/h;->m()Ljava/lang/String;
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;->m()Ljava/lang/String;
 
     move-result-object v1
 

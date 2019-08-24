@@ -229,7 +229,7 @@
 
     if-eqz v0, :cond_b
 
-    invoke-static {p1, p2}, Landroid/support/v4/content/g;->a_(Landroid/content/Context;Landroid/content/Intent;)Landroid/content/ComponentName;
+    invoke-static {p1, p2}, Landroid/support/v4/content/WakefulBroadcastReceiver;->a_(Landroid/content/Context;Landroid/content/Intent;)Landroid/content/ComponentName;
 
     move-result-object v0
 

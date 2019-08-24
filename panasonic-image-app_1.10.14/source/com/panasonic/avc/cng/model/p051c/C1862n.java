@@ -1,7 +1,7 @@
 package com.panasonic.avc.cng.model.p051c;
 
 import android.util.Xml;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import java.io.StringReader;
 import java.util.Dictionary;
 import java.util.Hashtable;
@@ -45,7 +45,7 @@ public class C1862n extends C1843c {
                 eventType = xmlPullParser.next();
             }
         } catch (Exception e) {
-            C2261g.m9769c("ParseDocument", e.getMessage());
+            ImageAppLog.error("ParseDocument", e.getMessage());
             throw e;
         }
     }
@@ -65,7 +65,7 @@ public class C1862n extends C1843c {
                 next = xmlPullParser.next();
             }
         } catch (Exception e) {
-            C2261g.m9769c("ParseTagCamrply", e.getMessage());
+            ImageAppLog.error("ParseTagCamrply", e.getMessage());
             throw e;
         }
     }
@@ -102,7 +102,7 @@ public class C1862n extends C1843c {
                 next = xmlPullParser.next();
             }
         } catch (Exception e) {
-            C2261g.m9769c("ParseTagCamrply", e.getMessage());
+            ImageAppLog.error("ParseTagCamrply", e.getMessage());
             throw e;
         }
     }
@@ -125,7 +125,7 @@ public class C1862n extends C1843c {
                 next = xmlPullParser.next();
             }
         } catch (Exception e) {
-            C2261g.m9769c("ParseTagMainMenu", e.getMessage());
+            ImageAppLog.error("ParseTagMainMenu", e.getMessage());
             throw e;
         }
     }
@@ -148,7 +148,7 @@ public class C1862n extends C1843c {
                 next = xmlPullParser.next();
             }
         } catch (Exception e) {
-            C2261g.m9769c("ParseTagTopButtons", e.getMessage());
+            ImageAppLog.error("ParseTagTopButtons", e.getMessage());
             throw e;
         }
     }
@@ -171,7 +171,7 @@ public class C1862n extends C1843c {
                 next = xmlPullParser.next();
             }
         } catch (Exception e) {
-            C2261g.m9769c("ParseTagMainMenu", e.getMessage());
+            ImageAppLog.error("ParseTagMainMenu", e.getMessage());
             throw e;
         }
     }
@@ -194,7 +194,7 @@ public class C1862n extends C1843c {
                 next = xmlPullParser.next();
             }
         } catch (Exception e) {
-            C2261g.m9769c("ParseTagMainMenu", e.getMessage());
+            ImageAppLog.error("ParseTagMainMenu", e.getMessage());
             throw e;
         }
     }
@@ -217,7 +217,7 @@ public class C1862n extends C1843c {
                 next = xmlPullParser.next();
             }
         } catch (Exception e) {
-            C2261g.m9769c("ParseTagMainMenu", e.getMessage());
+            ImageAppLog.error("ParseTagMainMenu", e.getMessage());
             throw e;
         }
     }
@@ -240,7 +240,7 @@ public class C1862n extends C1843c {
                 next = xmlPullParser.next();
             }
         } catch (Exception e) {
-            C2261g.m9769c("ParseTagMainMenu", e.getMessage());
+            ImageAppLog.error("ParseTagMainMenu", e.getMessage());
             throw e;
         }
     }
@@ -258,7 +258,7 @@ public class C1862n extends C1843c {
             }
             return lVar;
         } catch (Exception e) {
-            C2261g.m9769c("ParseTagCamrply", e.getMessage());
+            ImageAppLog.error("ParseTagCamrply", e.getMessage());
             throw e;
         }
     }

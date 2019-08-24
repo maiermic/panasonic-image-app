@@ -101,7 +101,7 @@
     if-nez p5, :cond_2
 
     :goto_1
-    invoke-static {v0}, Lcom/google/android/gms/common/internal/a;->a(Lcom/google/android/gms/common/internal/j;)Landroid/accounts/Account;
+    invoke-static {v0}, Lcom/google/android/gms/common/internal/AccountAccessor;->a(Lcom/google/android/gms/common/internal/j;)Landroid/accounts/Account;
 
     move-result-object v0
 

@@ -23,23 +23,23 @@ import com.panasonic.avc.cng.model.service.C2137j;
 import com.panasonic.avc.cng.model.service.C2137j.C2138a;
 import com.panasonic.avc.cng.model.service.C2137j.C2141d;
 import com.panasonic.avc.cng.model.service.upload.usages.logservice.UsagesLogService;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.util.C2266l;
 import com.panasonic.avc.cng.view.cameraconnect.C2649a;
-import com.panasonic.avc.cng.view.cameraconnect.C2754l;
+import com.panasonic.avc.cng.view.cameraconnect.WifiUtil;
 import com.panasonic.avc.cng.view.cameraconnect.GuidanceMenuActivity;
 import com.panasonic.avc.cng.view.common.C2820e;
-import com.panasonic.avc.cng.view.liveview.C3882n.C3889c;
+import com.panasonic.avc.cng.view.liveview.LiveViewNoConnectionViewModel.C3889c;
 import com.panasonic.avc.cng.view.p073b.C2317a.C2325c;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
 import com.panasonic.avc.cng.view.parts.C4244s;
 import java.util.UUID;
 
 public class LiveViewNoConnectionActivity extends C2946c {
 
     /* renamed from: a */
-    private C3882n f8987a;
+    private LiveViewNoConnectionViewModel f8987a;
 
     /* renamed from: b */
     private C2932b f8988b;
@@ -85,25 +85,25 @@ public class LiveViewNoConnectionActivity extends C2946c {
 
         /* renamed from: b */
         public void mo5669b() {
-            C2261g.m9763a("LiveViewNoConnectionActivity", "onBleConnectStart");
+            ImageAppLog.debug("LiveViewNoConnectionActivity", "onBleConnectStart");
             LiveViewNoConnectionActivity.this.f8996j = "Connecting";
         }
 
         /* renamed from: a */
         public void mo5668a(boolean z) {
-            C2261g.m9763a("LiveViewNoConnectionActivity", "onBleConnected");
+            ImageAppLog.debug("LiveViewNoConnectionActivity", "onBleConnected");
             LiveViewNoConnectionActivity.this.f8996j = "Connected";
             if (LiveViewNoConnectionActivity.this.f8993g != null) {
                 LiveViewNoConnectionActivity.this.f8993g.mo5641c();
             }
             if (LiveViewNoConnectionActivity.this.f8993g != null) {
-                C2261g.m9763a("LiveViewNoConnectionActivity", "writeData:" + LiveViewNoConnectionActivity.this.f8993g.mo5627a(1, C2266l.m9808a("4D454930010010008001" + PreferenceManager.getDefaultSharedPreferences(LiveViewNoConnectionActivity.this.f8990d).getString("Dlna_UUID_Seed", ""))));
+                ImageAppLog.debug("LiveViewNoConnectionActivity", "writeData:" + LiveViewNoConnectionActivity.this.f8993g.mo5627a(1, C2266l.m9808a("4D454930010010008001" + PreferenceManager.getDefaultSharedPreferences(LiveViewNoConnectionActivity.this.f8990d).getString("Dlna_UUID_Seed", ""))));
             }
         }
 
         /* renamed from: a */
         public void mo5662a(int i) {
-            C2261g.m9763a("LiveViewNoConnectionActivity", "onBleDisconnected");
+            ImageAppLog.debug("LiveViewNoConnectionActivity", "onBleDisconnected");
             if (LiveViewNoConnectionActivity.this.f8991e != null) {
                 LiveViewNoConnectionActivity.this.f8996j = "Disconnected";
                 if (LiveViewNoConnectionActivity.this.f8993g != null) {
@@ -111,8 +111,8 @@ public class LiveViewNoConnectionActivity extends C2946c {
                 }
                 LiveViewNoConnectionActivity.this.f8991e.post(new Runnable() {
                     public void run() {
-                        if (C2331d.m10125b((Activity) LiveViewNoConnectionActivity.this, C2328a.ON_DMS_RECEIVING)) {
-                            C2331d.m10102a((Activity) LiveViewNoConnectionActivity.this, C2328a.ON_DMS_RECEIVING);
+                        if (DialogFactory.m10125b((Activity) LiveViewNoConnectionActivity.this, C2328a.ON_DMS_RECEIVING)) {
+                            DialogFactory.m10102a((Activity) LiveViewNoConnectionActivity.this, C2328a.ON_DMS_RECEIVING);
                         }
                     }
                 });
@@ -121,19 +121,19 @@ public class LiveViewNoConnectionActivity extends C2946c {
 
         /* renamed from: d */
         public void mo5672d() {
-            C2261g.m9763a("LiveViewNoConnectionActivity", "onBleConnectError");
+            ImageAppLog.debug("LiveViewNoConnectionActivity", "onBleConnectError");
             LiveViewNoConnectionActivity.this.f8996j = "Disconnected";
         }
 
         /* renamed from: a */
         public void mo5663a(BluetoothDevice bluetoothDevice, String str, String str2, String str3) {
             if (LiveViewNoConnectionActivity.this.f8991e != null && str != null) {
-                C2261g.m9763a("LiveViewNoConnectionActivity", "onBleScanResult / state = " + str3);
-                C2261g.m9763a("LiveViewNoConnectionActivity", "onBleScanResult / devName = " + str);
-                C2261g.m9763a("LiveViewNoConnectionActivity", "onBleScanResult / publicAddress = " + str2);
+                ImageAppLog.debug("LiveViewNoConnectionActivity", "onBleScanResult / state = " + str3);
+                ImageAppLog.debug("LiveViewNoConnectionActivity", "onBleScanResult / devName = " + str);
+                ImageAppLog.debug("LiveViewNoConnectionActivity", "onBleScanResult / publicAddress = " + str2);
                 if (str3.equalsIgnoreCase("normal")) {
                     String string = PreferenceManager.getDefaultSharedPreferences(LiveViewNoConnectionActivity.this.f8990d).getString("CurrentConnectedAddress", "");
-                    C2261g.m9763a("LiveViewNoConnectionActivity", "targetAddress:" + string);
+                    ImageAppLog.debug("LiveViewNoConnectionActivity", "targetAddress:" + string);
                     if (LiveViewNoConnectionActivity.this.f8993g != null && !string.equalsIgnoreCase("") && string.equalsIgnoreCase(str2) && !LiveViewNoConnectionActivity.this.f8996j.equalsIgnoreCase("Connecting")) {
                         LiveViewNoConnectionActivity.this.f8993g.mo5628a(bluetoothDevice, false);
                     }
@@ -143,13 +143,13 @@ public class LiveViewNoConnectionActivity extends C2946c {
 
         /* renamed from: a */
         public void mo5667a(UUID uuid, int i, Bundle bundle) {
-            C2261g.m9763a("LiveViewNoConnectionActivity", "onBleRead");
+            ImageAppLog.debug("LiveViewNoConnectionActivity", "onBleRead");
             byte[] byteArray = bundle.getByteArray("VALUE");
             if (byteArray != null && byteArray.length > 0 && uuid.equals(UUID.fromString("e1392720-3215-11e6-a035-0002a5d5c51b")) && LiveViewNoConnectionActivity.this.f8993g != null) {
                 LiveViewNoConnectionActivity.this.f8993g.mo5650l();
                 LiveViewNoConnectionActivity.this.f8991e.post(new Runnable() {
                     public void run() {
-                        C2331d.m10100a((Activity) LiveViewNoConnectionActivity.this);
+                        DialogFactory.m10100a((Activity) LiveViewNoConnectionActivity.this);
                     }
                 });
             }
@@ -159,7 +159,7 @@ public class LiveViewNoConnectionActivity extends C2946c {
         public void mo5666a(UUID uuid, int i) {
             String a;
             String c;
-            C2261g.m9763a("LiveViewNoConnectionActivity", "onBleWrite");
+            ImageAppLog.debug("LiveViewNoConnectionActivity", "onBleWrite");
             if (uuid.equals(UUID.fromString("e182ec40-3213-11e6-ab07-0002a5d5c51b"))) {
                 if (LiveViewNoConnectionActivity.this.f8993g != null && LiveViewNoConnectionActivity.this.f8993g.mo5645g()) {
                     if (LiveViewNoConnectionActivity.this.f8993g.mo5651m() && LiveViewNoConnectionActivity.this.f8993g != null) {
@@ -184,15 +184,15 @@ public class LiveViewNoConnectionActivity extends C2946c {
                     } else {
                         a = LiveViewNoConnectionActivity.this.f8993g.mo5627a(2, string2.getBytes());
                     }
-                    C2261g.m9763a("LiveViewNoConnectionActivity", "writeData:" + a);
+                    ImageAppLog.debug("LiveViewNoConnectionActivity", "writeData:" + a);
                 }
             } else if (uuid.equals(UUID.fromString("0d6f1880-3217-11e6-a4cb-0002a5d5c51b")) && LiveViewNoConnectionActivity.this.f8997k) {
                 if (LiveViewNoConnectionActivity.this.f8993g.mo5645g()) {
                     LiveViewNoConnectionActivity.this.f8991e.post(new Runnable() {
                         public void run() {
-                            if (!C2331d.m10125b((Activity) LiveViewNoConnectionActivity.this, C2328a.ON_BT_AUTOSEND_RECEIVE_WIFI_CONNECT_CONFIRM)) {
-                                C2331d.m10100a((Activity) LiveViewNoConnectionActivity.this);
-                                C2331d.m10114a((Activity) LiveViewNoConnectionActivity.this, C2328a.ON_BT_AUTOSEND_RECEIVE_WIFI_CONNECT_CONFIRM, (Bundle) null);
+                            if (!DialogFactory.m10125b((Activity) LiveViewNoConnectionActivity.this, C2328a.ON_BT_AUTOSEND_RECEIVE_WIFI_CONNECT_CONFIRM)) {
+                                DialogFactory.m10100a((Activity) LiveViewNoConnectionActivity.this);
+                                DialogFactory.m10114a((Activity) LiveViewNoConnectionActivity.this, C2328a.ON_BT_AUTOSEND_RECEIVE_WIFI_CONNECT_CONFIRM, (Bundle) null);
                             }
                         }
                     });
@@ -203,40 +203,40 @@ public class LiveViewNoConnectionActivity extends C2946c {
 
         /* renamed from: a */
         public void mo5664a(Bundle bundle, String str) {
-            C2261g.m9763a("LiveViewNoConnectionActivity", "onBleNotification");
+            ImageAppLog.debug("LiveViewNoConnectionActivity", "onBleNotification");
             byte[] byteArray = bundle.getByteArray("VALUE");
             if (LiveViewNoConnectionActivity.this.f8993g != null && LiveViewNoConnectionActivity.this.f8993g.mo5645g()) {
                 if (str.equals("18345be1-3217-11e6-b56c-0002a5d5c51b")) {
                     LiveViewNoConnectionActivity.this.f8997k = true;
                     if (byteArray != null && byteArray.length > 0) {
-                        C2261g.m9763a("LiveViewNoConnectionActivity", "result[0]:" + byteArray[0]);
+                        ImageAppLog.debug("LiveViewNoConnectionActivity", "result[0]:" + byteArray[0]);
                         if (byteArray[0] == 0) {
-                            C2261g.m9763a("LiveViewNoConnectionActivity", "WifiConnectSTA");
-                            C2261g.m9763a("LiveViewNoConnectionActivity", "writeData:" + LiveViewNoConnectionActivity.this.f8993g.mo5627a(11, C4244s.f14198h));
+                            ImageAppLog.debug("LiveViewNoConnectionActivity", "WifiConnectSTA");
+                            ImageAppLog.debug("LiveViewNoConnectionActivity", "writeData:" + LiveViewNoConnectionActivity.this.f8993g.mo5627a(11, C4244s.f14198h));
                             return;
                         }
-                        C2261g.m9763a("LiveViewNoConnectionActivity", "WifiConnectSoftAP");
-                        C2261g.m9763a("LiveViewNoConnectionActivity", "writeData:" + LiveViewNoConnectionActivity.this.f8993g.mo5627a(11, C4244s.f14197g));
+                        ImageAppLog.debug("LiveViewNoConnectionActivity", "WifiConnectSoftAP");
+                        ImageAppLog.debug("LiveViewNoConnectionActivity", "writeData:" + LiveViewNoConnectionActivity.this.f8993g.mo5627a(11, C4244s.f14197g));
                     }
                 } else if (str.equals("e182ec43-3213-11e6-ab07-0002a5d5c51b") && byteArray != null && byteArray.length > 0) {
                     if (byteArray[0] == 1) {
                         if (LiveViewNoConnectionActivity.this.f8993g != null) {
                             LiveViewNoConnectionActivity.this.f8993g.mo5641c();
                         }
-                        WifiInfo b = new C2754l(LiveViewNoConnectionActivity.this.f8990d).mo6743b();
+                        WifiInfo b = new WifiUtil(LiveViewNoConnectionActivity.this.f8990d).mo6743b();
                         if (b.getIpAddress() == 0) {
-                            C2261g.m9763a("LiveViewNoConnectionActivity", "SoftAP");
+                            ImageAppLog.debug("LiveViewNoConnectionActivity", "SoftAP");
                             LiveViewNoConnectionActivity.this.f8997k = true;
-                            C2261g.m9763a("LiveViewNoConnectionActivity", "writeData:" + LiveViewNoConnectionActivity.this.f8993g.mo5627a(11, C4244s.f14197g));
+                            ImageAppLog.debug("LiveViewNoConnectionActivity", "writeData:" + LiveViewNoConnectionActivity.this.f8993g.mo5627a(11, C4244s.f14197g));
                             return;
                         }
-                        C2261g.m9763a("LiveViewNoConnectionActivity", "STA");
-                        C2261g.m9763a("LiveViewNoConnectionActivity", "wifiInfo.getSSID():" + b.getSSID());
+                        ImageAppLog.debug("LiveViewNoConnectionActivity", "STA");
+                        ImageAppLog.debug("LiveViewNoConnectionActivity", "wifiInfo.getSSID():" + b.getSSID());
                         String ssid = b.getSSID();
                         if (ssid.startsWith("\"") && ssid.endsWith("\"")) {
                             ssid = ssid.substring(1, ssid.length() - 1);
                         }
-                        C2261g.m9763a("LiveViewNoConnectionActivity", "writeData:" + LiveViewNoConnectionActivity.this.f8993g.mo5627a(12, C2266l.m9792a(32, ssid).getBytes()));
+                        ImageAppLog.debug("LiveViewNoConnectionActivity", "writeData:" + LiveViewNoConnectionActivity.this.f8993g.mo5627a(12, C2266l.m9792a(32, ssid).getBytes()));
                     } else if (LiveViewNoConnectionActivity.this.f8993g != null) {
                         LiveViewNoConnectionActivity.this.f8993g.mo5636a(3000);
                     }
@@ -246,50 +246,50 @@ public class LiveViewNoConnectionActivity extends C2946c {
 
         /* renamed from: a */
         public void mo5661a() {
-            C2261g.m9763a("LiveViewNoConnectionActivity", "onBleScanStart");
+            ImageAppLog.debug("LiveViewNoConnectionActivity", "onBleScanStart");
         }
 
         /* renamed from: c */
         public void mo5671c() {
-            C2261g.m9763a("LiveViewNoConnectionActivity", "onBleConnectTimeOut");
+            ImageAppLog.debug("LiveViewNoConnectionActivity", "onBleConnectTimeOut");
         }
 
         /* renamed from: a */
         public void mo5665a(String str) {
-            C2261g.m9763a("LiveViewNoConnectionActivity", "onBleCopyStatus");
+            ImageAppLog.debug("LiveViewNoConnectionActivity", "onBleCopyStatus");
             if (str.equalsIgnoreCase("Complete")) {
-                if (!C2331d.m10125b((Activity) LiveViewNoConnectionActivity.this, C2328a.ON_BT_AUTOSEND_NOT_FOUND)) {
-                    C2331d.m10100a((Activity) LiveViewNoConnectionActivity.this);
-                    C2331d.m10114a((Activity) LiveViewNoConnectionActivity.this, C2328a.ON_BT_AUTOSEND_COPY_COMPLETE_CONFIRM, (Bundle) null);
+                if (!DialogFactory.m10125b((Activity) LiveViewNoConnectionActivity.this, C2328a.ON_BT_AUTOSEND_NOT_FOUND)) {
+                    DialogFactory.m10100a((Activity) LiveViewNoConnectionActivity.this);
+                    DialogFactory.m10114a((Activity) LiveViewNoConnectionActivity.this, C2328a.ON_BT_AUTOSEND_COPY_COMPLETE_CONFIRM, (Bundle) null);
                 }
             } else if (str.equalsIgnoreCase("Copying")) {
-                if (!C2331d.m10125b((Activity) LiveViewNoConnectionActivity.this, C2328a.ON_BT_AUTOSEND_NOT_FOUND)) {
-                    C2331d.m10115a((Activity) LiveViewNoConnectionActivity.this, C2328a.ON_DMS_RECEIVING, (Bundle) null, (C2325c) new C2325c() {
+                if (!DialogFactory.m10125b((Activity) LiveViewNoConnectionActivity.this, C2328a.ON_BT_AUTOSEND_NOT_FOUND)) {
+                    DialogFactory.m10115a((Activity) LiveViewNoConnectionActivity.this, C2328a.ON_DMS_RECEIVING, (Bundle) null, (C2325c) new C2325c() {
                         /* renamed from: a */
                         public void mo6131a() {
-                            C2331d.m10129c((Activity) LiveViewNoConnectionActivity.this, C2328a.ON_DMS_RECEIVING, (int) R.id.text, (int) R.string.cmn_msg_now_regist_image);
+                            DialogFactory.m10129c((Activity) LiveViewNoConnectionActivity.this, C2328a.ON_DMS_RECEIVING, (int) R.id.text, (int) R.string.cmn_msg_now_regist_image);
                         }
                     });
                 }
             } else if (str.equalsIgnoreCase("NotFound")) {
-                if (!C2331d.m10125b((Activity) LiveViewNoConnectionActivity.this, C2328a.ON_BT_AUTOSEND_NOT_FOUND)) {
-                    C2331d.m10100a((Activity) LiveViewNoConnectionActivity.this);
-                    C2331d.m10115a((Activity) LiveViewNoConnectionActivity.this, C2328a.ON_BT_AUTOSEND_NOT_FOUND, (Bundle) null, (C2325c) new C2325c() {
+                if (!DialogFactory.m10125b((Activity) LiveViewNoConnectionActivity.this, C2328a.ON_BT_AUTOSEND_NOT_FOUND)) {
+                    DialogFactory.m10100a((Activity) LiveViewNoConnectionActivity.this);
+                    DialogFactory.m10115a((Activity) LiveViewNoConnectionActivity.this, C2328a.ON_BT_AUTOSEND_NOT_FOUND, (Bundle) null, (C2325c) new C2325c() {
                         /* renamed from: a */
                         public void mo6131a() {
-                            C2331d.m10111a((Activity) LiveViewNoConnectionActivity.this, C2328a.ON_BT_AUTOSEND_NOT_FOUND, (int) R.id.text, (CharSequence) LiveViewNoConnectionActivity.this.f8990d.getString(R.string.msg_file_copy_error_occurred) + "\n" + LiveViewNoConnectionActivity.this.f8990d.getString(R.string.msg_communication_error_occurred) + "\n" + LiveViewNoConnectionActivity.this.f8990d.getString(R.string.msg_confirm_communication_env));
+                            DialogFactory.m10111a((Activity) LiveViewNoConnectionActivity.this, C2328a.ON_BT_AUTOSEND_NOT_FOUND, (int) R.id.text, (CharSequence) LiveViewNoConnectionActivity.this.f8990d.getString(R.string.msg_file_copy_error_occurred) + "\n" + LiveViewNoConnectionActivity.this.f8990d.getString(R.string.msg_communication_error_occurred) + "\n" + LiveViewNoConnectionActivity.this.f8990d.getString(R.string.msg_confirm_communication_env));
                         }
                     });
                 }
             } else if (str.equalsIgnoreCase("NotRemain")) {
-                C2331d.m10100a((Activity) LiveViewNoConnectionActivity.this);
-                C2331d.m10114a((Activity) LiveViewNoConnectionActivity.this, C2328a.ErrNoRemainMultiPhoto, (Bundle) null);
+                DialogFactory.m10100a((Activity) LiveViewNoConnectionActivity.this);
+                DialogFactory.m10114a((Activity) LiveViewNoConnectionActivity.this, C2328a.ErrNoRemainMultiPhoto, (Bundle) null);
             } else if (str.equalsIgnoreCase("Error")) {
-                C2331d.m10100a((Activity) LiveViewNoConnectionActivity.this);
-                C2331d.m10115a((Activity) LiveViewNoConnectionActivity.this, C2328a.ON_BT_AUTOSEND_NOT_FOUND, (Bundle) null, (C2325c) new C2325c() {
+                DialogFactory.m10100a((Activity) LiveViewNoConnectionActivity.this);
+                DialogFactory.m10115a((Activity) LiveViewNoConnectionActivity.this, C2328a.ON_BT_AUTOSEND_NOT_FOUND, (Bundle) null, (C2325c) new C2325c() {
                     /* renamed from: a */
                     public void mo6131a() {
-                        C2331d.m10111a((Activity) LiveViewNoConnectionActivity.this, C2328a.ON_BT_AUTOSEND_NOT_FOUND, (int) R.id.text, (CharSequence) LiveViewNoConnectionActivity.this.f8990d.getString(R.string.msg_file_copy_error_occurred) + "\n" + LiveViewNoConnectionActivity.this.f8990d.getString(R.string.msg_communication_error_occurred) + "\n" + LiveViewNoConnectionActivity.this.f8990d.getString(R.string.msg_confirm_communication_env));
+                        DialogFactory.m10111a((Activity) LiveViewNoConnectionActivity.this, C2328a.ON_BT_AUTOSEND_NOT_FOUND, (int) R.id.text, (CharSequence) LiveViewNoConnectionActivity.this.f8990d.getString(R.string.msg_file_copy_error_occurred) + "\n" + LiveViewNoConnectionActivity.this.f8990d.getString(R.string.msg_communication_error_occurred) + "\n" + LiveViewNoConnectionActivity.this.f8990d.getString(R.string.msg_confirm_communication_env));
                     }
                 });
             }
@@ -297,25 +297,25 @@ public class LiveViewNoConnectionActivity extends C2946c {
 
         /* renamed from: b */
         public void mo5670b(boolean z) {
-            C2261g.m9763a("LiveViewNoConnectionActivity", "onBleNotificationEnable");
+            ImageAppLog.debug("LiveViewNoConnectionActivity", "onBleNotificationEnable");
             if (!z) {
-                C2331d.m10114a((Activity) LiveViewNoConnectionActivity.this, C2328a.ON_BT_GPS_DISABLE_CONFIRM, (Bundle) null);
+                DialogFactory.m10114a((Activity) LiveViewNoConnectionActivity.this, C2328a.ON_BT_GPS_DISABLE_CONFIRM, (Bundle) null);
             }
         }
 
         /* renamed from: e */
         public void mo5673e() {
-            C2261g.m9763a("LiveViewNoConnectionActivity", "onBleServicePrepared");
+            ImageAppLog.debug("LiveViewNoConnectionActivity", "onBleServicePrepared");
         }
 
         /* renamed from: f */
         public void mo5674f() {
-            C2261g.m9763a("LiveViewNoConnectionActivity", "onBleScanResultError");
+            ImageAppLog.debug("LiveViewNoConnectionActivity", "onBleScanResultError");
         }
 
         /* renamed from: g */
         public void mo5675g() {
-            C2261g.m9763a("LiveViewNoConnectionActivity", "onAutoSendAcctrlDone");
+            ImageAppLog.debug("LiveViewNoConnectionActivity", "onAutoSendAcctrlDone");
         }
     }
 
@@ -328,13 +328,13 @@ public class LiveViewNoConnectionActivity extends C2946c {
         public void mo7125a(int i) {
             switch (i) {
                 case 2:
-                    C2331d.m10114a((Activity) LiveViewNoConnectionActivity.this, C2328a.ON_DISCONNECT_BY_HIGH_TEMP_NO_FINISH, (Bundle) null);
+                    DialogFactory.m10114a((Activity) LiveViewNoConnectionActivity.this, C2328a.ON_DISCONNECT_BY_HIGH_TEMP_NO_FINISH, (Bundle) null);
                     break;
                 case 3:
-                    C2331d.m10114a((Activity) LiveViewNoConnectionActivity.this, C2328a.ON_DISCONNECT_BATTERY_LOW_NO_FINISH, (Bundle) null);
+                    DialogFactory.m10114a((Activity) LiveViewNoConnectionActivity.this, C2328a.ON_DISCONNECT_BATTERY_LOW_NO_FINISH, (Bundle) null);
                     break;
                 default:
-                    C2331d.m10114a((Activity) LiveViewNoConnectionActivity.this, C2328a.ON_DISCONNECT_NO_FINISH, (Bundle) null);
+                    DialogFactory.m10114a((Activity) LiveViewNoConnectionActivity.this, C2328a.ON_DISCONNECT_NO_FINISH, (Bundle) null);
                     break;
             }
             ((Activity) LiveViewNoConnectionActivity.this.f8990d).closeOptionsMenu();
@@ -357,7 +357,7 @@ public class LiveViewNoConnectionActivity extends C2946c {
         public void mo7127a(final C2328a aVar) {
             LiveViewNoConnectionActivity.this.f8991e.post(new Runnable() {
                 public void run() {
-                    C2331d.m10114a((Activity) LiveViewNoConnectionActivity.this, aVar, (Bundle) null);
+                    DialogFactory.m10114a((Activity) LiveViewNoConnectionActivity.this, aVar, (Bundle) null);
                 }
             });
         }
@@ -379,7 +379,7 @@ public class LiveViewNoConnectionActivity extends C2946c {
 
         /* renamed from: a */
         public void mo5609a(int i, C2649a aVar) {
-            C2261g.m9763a("LiveViewNoConnectionActivity", "onConnected()");
+            ImageAppLog.debug("LiveViewNoConnectionActivity", "onConnected()");
             if (LiveViewNoConnectionActivity.this.f8993g != null) {
                 LiveViewNoConnectionActivity.this.f8993g.mo5634a(PreferenceManager.getDefaultSharedPreferences(LiveViewNoConnectionActivity.this.f8990d).getString("CurrentConnectedSSID", ""), false, true, false);
             }
@@ -387,7 +387,7 @@ public class LiveViewNoConnectionActivity extends C2946c {
 
         /* renamed from: a */
         public void mo5610a(int i, boolean z) {
-            C2261g.m9763a("LiveViewNoConnectionActivity", "onWifiEnableStatus()");
+            ImageAppLog.debug("LiveViewNoConnectionActivity", "onWifiEnableStatus()");
             if (LiveViewNoConnectionActivity.this.f8991e != null && !z) {
                 switch (i) {
                     case 1:
@@ -404,15 +404,15 @@ public class LiveViewNoConnectionActivity extends C2946c {
                             SharedPreferences defaultSharedPreferences2 = PreferenceManager.getDefaultSharedPreferences(LiveViewNoConnectionActivity.this.f8990d);
                             String string = defaultSharedPreferences2.getString("CurrentConnectedSSID", "");
                             String string2 = defaultSharedPreferences2.getString("CurrentConnectedPass", "");
-                            C2261g.m9769c("Test", "ssid:" + string);
-                            C2261g.m9769c("Test", "password:" + string2);
+                            ImageAppLog.error("Test", "ssid:" + string);
+                            ImageAppLog.error("Test", "password:" + string2);
                             LiveViewNoConnectionActivity.this.f8993g.mo5640b(string, string2);
                             return;
                         }
                         return;
                     case 3:
                         if (LiveViewNoConnectionActivity.this.f8993g != null && LiveViewNoConnectionActivity.this.f8993g.mo5645g()) {
-                            C2331d.m10114a((Activity) LiveViewNoConnectionActivity.this, C2328a.ON_BT_AUTOSEND_WIFI_CONNECT_CONFIRM, (Bundle) null);
+                            DialogFactory.m10114a((Activity) LiveViewNoConnectionActivity.this, C2328a.ON_BT_AUTOSEND_WIFI_CONNECT_CONFIRM, (Bundle) null);
                             return;
                         }
                         return;
@@ -424,7 +424,7 @@ public class LiveViewNoConnectionActivity extends C2946c {
 
         /* renamed from: a */
         public void mo5611a(boolean z, int i, boolean z2) {
-            C2261g.m9763a("LiveViewNoConnectionActivity", "onSetWifiEnableResult()");
+            ImageAppLog.debug("LiveViewNoConnectionActivity", "onSetWifiEnableResult()");
             if (LiveViewNoConnectionActivity.this.f8993g != null) {
                 LiveViewNoConnectionActivity.this.f8993g.mo5641c();
                 SharedPreferences defaultSharedPreferences = PreferenceManager.getDefaultSharedPreferences(LiveViewNoConnectionActivity.this.f8990d);
@@ -434,11 +434,11 @@ public class LiveViewNoConnectionActivity extends C2946c {
 
         /* renamed from: a */
         public void mo5612a(boolean z, C1892f fVar, boolean z2, int i) {
-            C2261g.m9763a("LiveViewNoConnectionActivity", "onFinishConnectCamera()");
+            ImageAppLog.debug("LiveViewNoConnectionActivity", "onFinishConnectCamera()");
             if (LiveViewNoConnectionActivity.this.f8993g != null) {
                 LiveViewNoConnectionActivity.this.f8991e.post(new Runnable() {
                     public void run() {
-                        C2331d.m10100a((Activity) LiveViewNoConnectionActivity.this);
+                        DialogFactory.m10100a((Activity) LiveViewNoConnectionActivity.this);
                     }
                 });
                 if (fVar != null && !LiveViewNoConnectionActivity.this.f8993g.mo5651m()) {
@@ -462,13 +462,13 @@ public class LiveViewNoConnectionActivity extends C2946c {
         this.f8995i = new C2934c();
         this.f8987a = C2820e.m11763a((Context) this, this.f8991e, (C3889c) this.f8988b, (C2138a) this.f8994h, (C2141d) this.f8995i);
         if (this.f8987a == null) {
-            this.f8987a = new C3882n(this, this.f8991e, this.f8988b, this.f8994h, this.f8995i);
+            this.f8987a = new LiveViewNoConnectionViewModel(this, this.f8991e, this.f8988b, this.f8994h, this.f8995i);
         }
         this.f8993g = this.f8987a.mo9118a(this.f8991e);
         this.f8989c = new C1349a() {
             /* renamed from: a */
             public void mo3228a() {
-                C2331d.m10114a((Activity) LiveViewNoConnectionActivity.this, C2328a.ON_NEED_LUMIX_LINK, (Bundle) null);
+                DialogFactory.m10114a((Activity) LiveViewNoConnectionActivity.this, C2328a.ON_NEED_LUMIX_LINK, (Bundle) null);
             }
         };
         Bundle extras = getIntent().getExtras();
@@ -478,9 +478,9 @@ public class LiveViewNoConnectionActivity extends C2946c {
                 this.f8987a.mo9122b(i);
             }
             if (PreferenceManager.getDefaultSharedPreferences(this.f8990d).getBoolean("BT_AUTOSEND_START", false)) {
-                C2331d.m10114a((Activity) this, C2328a.ON_BT_AUTOSEND_RECEIVE_WIFI_CONNECT_CONFIRM, (Bundle) null);
+                DialogFactory.m10114a((Activity) this, C2328a.ON_BT_AUTOSEND_RECEIVE_WIFI_CONNECT_CONFIRM, (Bundle) null);
             } else if (extras.getBoolean("ShowDisconnectMSG", false)) {
-                C2331d.m10114a((Activity) this, C2328a.ON_DISCONNECT_FINISH_WIFI, (Bundle) null);
+                DialogFactory.m10114a((Activity) this, C2328a.ON_DISCONNECT_FINISH_WIFI, (Bundle) null);
             }
             this.f8992f = extras.getBoolean("PantilterCheckingDisconnect", false);
         }
@@ -552,7 +552,7 @@ public class LiveViewNoConnectionActivity extends C2946c {
         if (this.f8987a != null) {
             this.f8987a.mo3205a();
             this.f8987a = null;
-            C2820e.m11786a((C3882n) null);
+            C2820e.m11786a((LiveViewNoConnectionViewModel) null);
         }
         super.finish();
     }
@@ -577,7 +577,7 @@ public class LiveViewNoConnectionActivity extends C2946c {
     public void onUserLeaveHint() {
         if (this.f8993g != null) {
             boolean p = this.f8993g.mo5654p();
-            C2261g.m9769c("LiveViewNoConnectionActivity", "isBG:" + p);
+            ImageAppLog.error("LiveViewNoConnectionActivity", "isBG:" + p);
             if (this.f8990d != null && PreferenceManager.getDefaultSharedPreferences(this.f8990d).getBoolean("Auto", false) && p) {
                 new UsagesLogService().mo5911a(this.f8990d);
             }
@@ -604,12 +604,12 @@ public class LiveViewNoConnectionActivity extends C2946c {
     }
 
     public void OnClickLiveView(View view) {
-        C2261g.m9760a(3149826, "");
-        C2261g.m9770d("LiveViewNoConnectionActivity", "OnClickLiveView");
+        ImageAppLog.m9760a(3149826, "");
+        ImageAppLog.verbose("LiveViewNoConnectionActivity", "OnClickLiveView");
     }
 
     public void OnClickBrowser(View view) {
-        C2261g.m9760a(3149827, "");
+        ImageAppLog.m9760a(3149827, "");
         if (!ShowDmsErrorIfReceiving() && this.f8987a != null) {
             this.f8987a.mo9125e();
         }
@@ -622,12 +622,12 @@ public class LiveViewNoConnectionActivity extends C2946c {
     }
 
     public void OnClickSetup(View view) {
-        C2261g.m9760a(3149828, "");
+        ImageAppLog.m9760a(3149828, "");
         openOptionsMenu();
     }
 
     public void OnClickHome(View view) {
-        C2261g.m9760a(3149825, "");
+        ImageAppLog.m9760a(3149825, "");
         if (!ShowDmsErrorIfReceiving()) {
             if (this.f8993g != null) {
                 this.f8987a.mo9121a(this.f8993g.mo5645g());
@@ -708,10 +708,10 @@ public class LiveViewNoConnectionActivity extends C2946c {
                 return;
             case ON_BT_AUTOSEND_RECEIVE_WIFI_CONNECT_CONFIRM:
                 if (this.f8993g != null) {
-                    C2261g.m9763a("LiveViewNoConnectionActivity", "ACTION_MODE writeData:" + this.f8993g.mo5627a(4, C4244s.f14192b));
+                    ImageAppLog.debug("LiveViewNoConnectionActivity", "ACTION_MODE writeData:" + this.f8993g.mo5627a(4, C4244s.f14192b));
                     this.f8991e.post(new Runnable() {
                         public void run() {
-                            C2331d.m10114a((Activity) LiveViewNoConnectionActivity.this, C2328a.ON_PROGRESS, (Bundle) null);
+                            DialogFactory.m10114a((Activity) LiveViewNoConnectionActivity.this, C2328a.ON_PROGRESS, (Bundle) null);
                         }
                     });
                     return;

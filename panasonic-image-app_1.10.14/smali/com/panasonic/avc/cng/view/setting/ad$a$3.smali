@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/view/setting/ad$a;->a(Lcom/panasonic/avc/cng/model/c/e;)V
+    value = Lcom/panasonic/avc/cng/view/setting/ad$a;->a(Lcom/panasonic/avc/cng/model/c/CameraStatus;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -44,9 +44,9 @@
     :try_start_0
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ad$a$3;->a:Lcom/panasonic/avc/cng/view/setting/ad$a;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/ad$a;->a:Lcom/panasonic/avc/cng/view/setting/ad;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/ad$a;->a:Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionSmartOperationViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/ad;->f:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionSmartOperationViewModel;->f:Lcom/panasonic/avc/cng/a/c;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/ad$a$3;->a:Lcom/panasonic/avc/cng/view/setting/ad$a;
 
@@ -63,9 +63,9 @@
     .line 784
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ad$a$3;->a:Lcom/panasonic/avc/cng/view/setting/ad$a;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/ad$a;->a:Lcom/panasonic/avc/cng/view/setting/ad;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/ad$a;->a:Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionSmartOperationViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/ad;->e:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionSmartOperationViewModel;->e:Lcom/panasonic/avc/cng/a/c;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/ad$a$3;->a:Lcom/panasonic/avc/cng/view/setting/ad$a;
 

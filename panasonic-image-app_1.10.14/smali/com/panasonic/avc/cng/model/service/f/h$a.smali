@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/panasonic/avc/cng/model/service/f/h;
+    value = Lcom/panasonic/avc/cng/model/service/f/LiveViewVerticalService;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/panasonic/avc/cng/model/service/f/h;
+.field final synthetic a:Lcom/panasonic/avc/cng/model/service/f/LiveViewVerticalService;
 
 .field private b:Z
 
@@ -26,12 +26,12 @@
 
 
 # direct methods
-.method public constructor <init>(Lcom/panasonic/avc/cng/model/service/f/h;ZZ)V
+.method public constructor <init>(Lcom/panasonic/avc/cng/model/service/f/LiveViewVerticalService;ZZ)V
     .locals 0
 
     .prologue
     .line 299
-    iput-object p1, p0, Lcom/panasonic/avc/cng/model/service/f/h$a;->a:Lcom/panasonic/avc/cng/model/service/f/h;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/model/service/f/h$a;->a:Lcom/panasonic/avc/cng/model/service/f/LiveViewVerticalService;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -54,11 +54,11 @@
     const/4 v1, 0x0
 
     .line 424
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v3
 
@@ -99,19 +99,19 @@
     if-eqz v0, :cond_4
 
     .line 444
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/h$a;->a:Lcom/panasonic/avc/cng/model/service/f/h;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/h$a;->a:Lcom/panasonic/avc/cng/model/service/f/LiveViewVerticalService;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/h;->d(Lcom/panasonic/avc/cng/model/service/f/h;)Lcom/panasonic/avc/cng/core/a/y;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/LiveViewVerticalService;->d(Lcom/panasonic/avc/cng/model/service/f/LiveViewVerticalService;)Lcom/panasonic/avc/cng/core/a/ModeChangeCommand;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/y;->b()Lcom/panasonic/avc/cng/model/c/h;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/ModeChangeCommand;->b()Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
     move-result-object v0
 
     .line 453
     :goto_1
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/h;->d()Z
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;->d()Z
 
     move-result v4
 
@@ -138,7 +138,7 @@
 
     move-result-object v3
 
-    invoke-static {v0, v3}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v3}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 458
     const v0, 0x1d4c0
@@ -150,18 +150,18 @@
     const/4 v3, -0x1
 
     .line 462
-    iget-object v4, p0, Lcom/panasonic/avc/cng/model/service/f/h$a;->a:Lcom/panasonic/avc/cng/model/service/f/h;
+    iget-object v4, p0, Lcom/panasonic/avc/cng/model/service/f/h$a;->a:Lcom/panasonic/avc/cng/model/service/f/LiveViewVerticalService;
 
-    invoke-static {v4}, Lcom/panasonic/avc/cng/model/service/f/h;->b(Lcom/panasonic/avc/cng/model/service/f/h;)Lcom/panasonic/avc/cng/model/service/k$a;
+    invoke-static {v4}, Lcom/panasonic/avc/cng/model/service/f/LiveViewVerticalService;->b(Lcom/panasonic/avc/cng/model/service/f/LiveViewVerticalService;)Lcom/panasonic/avc/cng/model/service/k$a;
 
     move-result-object v4
 
     if-eqz v4, :cond_1
 
     .line 465
-    iget-object v4, p0, Lcom/panasonic/avc/cng/model/service/f/h$a;->a:Lcom/panasonic/avc/cng/model/service/f/h;
+    iget-object v4, p0, Lcom/panasonic/avc/cng/model/service/f/h$a;->a:Lcom/panasonic/avc/cng/model/service/f/LiveViewVerticalService;
 
-    invoke-static {v4}, Lcom/panasonic/avc/cng/model/service/f/h;->b(Lcom/panasonic/avc/cng/model/service/f/h;)Lcom/panasonic/avc/cng/model/service/k$a;
+    invoke-static {v4}, Lcom/panasonic/avc/cng/model/service/f/LiveViewVerticalService;->b(Lcom/panasonic/avc/cng/model/service/f/LiveViewVerticalService;)Lcom/panasonic/avc/cng/model/service/k$a;
 
     move-result-object v4
 
@@ -169,11 +169,11 @@
 
     .line 469
     :cond_1
-    iget-object v4, p0, Lcom/panasonic/avc/cng/model/service/f/h$a;->a:Lcom/panasonic/avc/cng/model/service/f/h;
+    iget-object v4, p0, Lcom/panasonic/avc/cng/model/service/f/h$a;->a:Lcom/panasonic/avc/cng/model/service/f/LiveViewVerticalService;
 
     int-to-long v10, v8
 
-    invoke-virtual {v4, v10, v11}, Lcom/panasonic/avc/cng/model/service/f/h;->a(J)V
+    invoke-virtual {v4, v10, v11}, Lcom/panasonic/avc/cng/model/service/f/LiveViewVerticalService;->a(J)V
 
     move v4, v0
 
@@ -242,7 +242,7 @@
 
     move-result-object v0
 
-    invoke-static {v3, v0}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v3, v0}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     move v3, v2
 
@@ -257,18 +257,18 @@
     if-eqz v0, :cond_6
 
     .line 510
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/h$a;->a:Lcom/panasonic/avc/cng/model/service/f/h;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/h$a;->a:Lcom/panasonic/avc/cng/model/service/f/LiveViewVerticalService;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/h;->b(Lcom/panasonic/avc/cng/model/service/f/h;)Lcom/panasonic/avc/cng/model/service/k$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/LiveViewVerticalService;->b(Lcom/panasonic/avc/cng/model/service/f/LiveViewVerticalService;)Lcom/panasonic/avc/cng/model/service/k$a;
 
     move-result-object v0
 
     if-eqz v0, :cond_3
 
     .line 512
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/h$a;->a:Lcom/panasonic/avc/cng/model/service/f/h;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/h$a;->a:Lcom/panasonic/avc/cng/model/service/f/LiveViewVerticalService;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/h;->b(Lcom/panasonic/avc/cng/model/service/f/h;)Lcom/panasonic/avc/cng/model/service/k$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/LiveViewVerticalService;->b(Lcom/panasonic/avc/cng/model/service/f/LiveViewVerticalService;)Lcom/panasonic/avc/cng/model/service/k$a;
 
     move-result-object v0
 
@@ -284,13 +284,13 @@
 
     .line 449
     :cond_4
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/h$a;->a:Lcom/panasonic/avc/cng/model/service/f/h;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/h$a;->a:Lcom/panasonic/avc/cng/model/service/f/LiveViewVerticalService;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/h;->d(Lcom/panasonic/avc/cng/model/service/f/h;)Lcom/panasonic/avc/cng/core/a/y;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/LiveViewVerticalService;->d(Lcom/panasonic/avc/cng/model/service/f/LiveViewVerticalService;)Lcom/panasonic/avc/cng/core/a/ModeChangeCommand;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/y;->c()Lcom/panasonic/avc/cng/model/c/h;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/ModeChangeCommand;->c()Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
     move-result-object v0
 
@@ -298,11 +298,11 @@
 
     .line 501
     :cond_5
-    iget-object v3, p0, Lcom/panasonic/avc/cng/model/service/f/h$a;->a:Lcom/panasonic/avc/cng/model/service/f/h;
+    iget-object v3, p0, Lcom/panasonic/avc/cng/model/service/f/h$a;->a:Lcom/panasonic/avc/cng/model/service/f/LiveViewVerticalService;
 
     int-to-long v10, v8
 
-    invoke-virtual {v3, v10, v11}, Lcom/panasonic/avc/cng/model/service/f/h;->a(J)V
+    invoke-virtual {v3, v10, v11}, Lcom/panasonic/avc/cng/model/service/f/LiveViewVerticalService;->a(J)V
 
     .line 504
     sub-int v3, v4, v8
@@ -316,18 +316,18 @@
 
     .line 517
     :cond_6
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/h$a;->a:Lcom/panasonic/avc/cng/model/service/f/h;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/h$a;->a:Lcom/panasonic/avc/cng/model/service/f/LiveViewVerticalService;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/h;->b(Lcom/panasonic/avc/cng/model/service/f/h;)Lcom/panasonic/avc/cng/model/service/k$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/LiveViewVerticalService;->b(Lcom/panasonic/avc/cng/model/service/f/LiveViewVerticalService;)Lcom/panasonic/avc/cng/model/service/k$a;
 
     move-result-object v0
 
     if-eqz v0, :cond_7
 
     .line 520
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/h$a;->a:Lcom/panasonic/avc/cng/model/service/f/h;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/h$a;->a:Lcom/panasonic/avc/cng/model/service/f/LiveViewVerticalService;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/h;->b(Lcom/panasonic/avc/cng/model/service/f/h;)Lcom/panasonic/avc/cng/model/service/k$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/LiveViewVerticalService;->b(Lcom/panasonic/avc/cng/model/service/f/LiveViewVerticalService;)Lcom/panasonic/avc/cng/model/service/k$a;
 
     move-result-object v0
 
@@ -336,18 +336,18 @@
     .line 537
     :cond_7
     :goto_5
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/h$a;->a:Lcom/panasonic/avc/cng/model/service/f/h;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/h$a;->a:Lcom/panasonic/avc/cng/model/service/f/LiveViewVerticalService;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/h;->b(Lcom/panasonic/avc/cng/model/service/f/h;)Lcom/panasonic/avc/cng/model/service/k$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/LiveViewVerticalService;->b(Lcom/panasonic/avc/cng/model/service/f/LiveViewVerticalService;)Lcom/panasonic/avc/cng/model/service/k$a;
 
     move-result-object v0
 
     if-eqz v0, :cond_8
 
     .line 540
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/h$a;->a:Lcom/panasonic/avc/cng/model/service/f/h;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/h$a;->a:Lcom/panasonic/avc/cng/model/service/f/LiveViewVerticalService;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/h;->b(Lcom/panasonic/avc/cng/model/service/f/h;)Lcom/panasonic/avc/cng/model/service/k$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/LiveViewVerticalService;->b(Lcom/panasonic/avc/cng/model/service/f/LiveViewVerticalService;)Lcom/panasonic/avc/cng/model/service/k$a;
 
     move-result-object v0
 
@@ -364,16 +364,16 @@
 
     .line 525
     :cond_9
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/h;->c()Z
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;->c()Z
 
     move-result v3
 
     if-eqz v3, :cond_a
 
     .line 527
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/h$a;->a:Lcom/panasonic/avc/cng/model/service/f/h;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/h$a;->a:Lcom/panasonic/avc/cng/model/service/f/LiveViewVerticalService;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/h;->b(Lcom/panasonic/avc/cng/model/service/f/h;)Lcom/panasonic/avc/cng/model/service/k$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/LiveViewVerticalService;->b(Lcom/panasonic/avc/cng/model/service/f/LiveViewVerticalService;)Lcom/panasonic/avc/cng/model/service/k$a;
 
     move-result-object v0
 
@@ -394,16 +394,16 @@
     .line 530
     :cond_a
     :try_start_1
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/h;->a()Z
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;->a()Z
 
     move-result v3
 
     if-nez v3, :cond_7
 
     .line 532
-    iget-object v2, p0, Lcom/panasonic/avc/cng/model/service/f/h$a;->a:Lcom/panasonic/avc/cng/model/service/f/h;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/model/service/f/h$a;->a:Lcom/panasonic/avc/cng/model/service/f/LiveViewVerticalService;
 
-    invoke-virtual {v2, v0}, Lcom/panasonic/avc/cng/model/service/f/h;->a(Lcom/panasonic/avc/cng/model/c/h;)V
+    invoke-virtual {v2, v0}, Lcom/panasonic/avc/cng/model/service/f/LiveViewVerticalService;->a(Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;)V
 
     .line 534
     monitor-exit v5
@@ -434,16 +434,16 @@
 
     .prologue
     .line 306
-    new-instance v2, Lcom/panasonic/avc/cng/model/service/f/g;
+    new-instance v2, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;
 
-    invoke-direct {v2}, Lcom/panasonic/avc/cng/model/service/f/g;-><init>()V
+    invoke-direct {v2}, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;-><init>()V
 
     .line 307
     const/4 v3, 0x1
 
     .line 312
     :try_start_0
-    invoke-virtual {v2}, Lcom/panasonic/avc/cng/model/service/f/g;->a()V
+    invoke-virtual {v2}, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;->a()V
     :try_end_0
     .catch Ljava/net/SocketException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -461,7 +461,7 @@
     if-nez v0, :cond_0
 
     .line 329
-    invoke-virtual {v2}, Lcom/panasonic/avc/cng/model/service/f/g;->d()V
+    invoke-virtual {v2}, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;->d()V
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
 
@@ -480,7 +480,7 @@
 
     move-result-object v0
 
-    invoke-static {v1, v0}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v0}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 
@@ -497,19 +497,19 @@
 
     .line 338
     :try_start_3
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/h$a;->a:Lcom/panasonic/avc/cng/model/service/f/h;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/h$a;->a:Lcom/panasonic/avc/cng/model/service/f/LiveViewVerticalService;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/h;->a(Lcom/panasonic/avc/cng/model/service/f/h;)Lcom/panasonic/avc/cng/core/a/s;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/LiveViewVerticalService;->a(Lcom/panasonic/avc/cng/model/service/f/LiveViewVerticalService;)Lcom/panasonic/avc/cng/core/a/LiveViewCommand;
 
     move-result-object v0
 
-    invoke-virtual {v2}, Lcom/panasonic/avc/cng/model/service/f/g;->b()I
+    invoke-virtual {v2}, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;->b()I
 
     move-result v4
 
     const/4 v5, 0x5
 
-    invoke-virtual {v0, v4, v5}, Lcom/panasonic/avc/cng/core/a/s;->a(II)Lcom/panasonic/avc/cng/model/c/h;
+    invoke-virtual {v0, v4, v5}, Lcom/panasonic/avc/cng/core/a/LiveViewCommand;->a(II)Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
     move-result-object v0
 
@@ -520,19 +520,19 @@
 
     .line 342
     :try_start_4
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/h;->a()Z
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;->a()Z
 
     move-result v1
 
     if-nez v1, :cond_1
 
     .line 344
-    iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/f/h$a;->a:Lcom/panasonic/avc/cng/model/service/f/h;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/f/h$a;->a:Lcom/panasonic/avc/cng/model/service/f/LiveViewVerticalService;
 
-    invoke-virtual {v1, v0}, Lcom/panasonic/avc/cng/model/service/f/h;->a(Lcom/panasonic/avc/cng/model/c/h;)V
+    invoke-virtual {v1, v0}, Lcom/panasonic/avc/cng/model/service/f/LiveViewVerticalService;->a(Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;)V
 
     .line 346
-    invoke-virtual {v2}, Lcom/panasonic/avc/cng/model/service/f/g;->d()V
+    invoke-virtual {v2}, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;->d()V
     :try_end_4
     .catch Ljava/lang/Exception; {:try_start_4 .. :try_end_4} :catch_1
 
@@ -549,11 +549,11 @@
 
     move-result-object v0
 
-    invoke-static {v1, v0}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v0}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 413
     :goto_1
-    invoke-virtual {v2}, Lcom/panasonic/avc/cng/model/service/f/g;->d()V
+    invoke-virtual {v2}, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;->d()V
 
     goto :goto_0
 
@@ -571,18 +571,18 @@
 
     .line 350
     :cond_1
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/h$a;->a:Lcom/panasonic/avc/cng/model/service/f/h;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/h$a;->a:Lcom/panasonic/avc/cng/model/service/f/LiveViewVerticalService;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/h;->b(Lcom/panasonic/avc/cng/model/service/f/h;)Lcom/panasonic/avc/cng/model/service/k$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/LiveViewVerticalService;->b(Lcom/panasonic/avc/cng/model/service/f/LiveViewVerticalService;)Lcom/panasonic/avc/cng/model/service/k$a;
 
     move-result-object v0
 
     if-eqz v0, :cond_2
 
     .line 352
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/h$a;->a:Lcom/panasonic/avc/cng/model/service/f/h;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/h$a;->a:Lcom/panasonic/avc/cng/model/service/f/LiveViewVerticalService;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/h;->b(Lcom/panasonic/avc/cng/model/service/f/h;)Lcom/panasonic/avc/cng/model/service/k$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/LiveViewVerticalService;->b(Lcom/panasonic/avc/cng/model/service/f/LiveViewVerticalService;)Lcom/panasonic/avc/cng/model/service/k$a;
 
     move-result-object v0
 
@@ -593,9 +593,9 @@
     .line 359
     :cond_2
     :goto_2
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/h$a;->a:Lcom/panasonic/avc/cng/model/service/f/h;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/h$a;->a:Lcom/panasonic/avc/cng/model/service/f/LiveViewVerticalService;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/h;->c(Lcom/panasonic/avc/cng/model/service/f/h;)Z
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/LiveViewVerticalService;->c(Lcom/panasonic/avc/cng/model/service/f/LiveViewVerticalService;)Z
 
     move-result v0
 
@@ -612,13 +612,13 @@
 
     .line 403
     :try_start_7
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/h$a;->a:Lcom/panasonic/avc/cng/model/service/f/h;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/h$a;->a:Lcom/panasonic/avc/cng/model/service/f/LiveViewVerticalService;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/h;->a(Lcom/panasonic/avc/cng/model/service/f/h;)Lcom/panasonic/avc/cng/core/a/s;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/LiveViewVerticalService;->a(Lcom/panasonic/avc/cng/model/service/f/LiveViewVerticalService;)Lcom/panasonic/avc/cng/core/a/LiveViewCommand;
 
     move-result-object v0
 
-    invoke-virtual {v0, v3}, Lcom/panasonic/avc/cng/core/a/s;->b(I)Lcom/panasonic/avc/cng/model/c/h;
+    invoke-virtual {v0, v3}, Lcom/panasonic/avc/cng/core/a/LiveViewCommand;->b(I)Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
     .line 404
     monitor-exit v1
@@ -640,7 +640,7 @@
     .line 367
     :cond_3
     :try_start_9
-    invoke-virtual {v2}, Lcom/panasonic/avc/cng/model/service/f/g;->c()[B
+    invoke-virtual {v2}, Lcom/panasonic/avc/cng/model/service/f/LiveViewUdpPort;->c()[B
 
     move-result-object v0
 
@@ -650,18 +650,18 @@
     invoke-direct {v4, v0}, Lcom/panasonic/avc/cng/core/a/at;-><init>([B)V
 
     .line 373
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/h$a;->a:Lcom/panasonic/avc/cng/model/service/f/h;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/h$a;->a:Lcom/panasonic/avc/cng/model/service/f/LiveViewVerticalService;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/h;->b(Lcom/panasonic/avc/cng/model/service/f/h;)Lcom/panasonic/avc/cng/model/service/k$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/LiveViewVerticalService;->b(Lcom/panasonic/avc/cng/model/service/f/LiveViewVerticalService;)Lcom/panasonic/avc/cng/model/service/k$a;
 
     move-result-object v0
 
     if-eqz v0, :cond_4
 
     .line 375
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/h$a;->a:Lcom/panasonic/avc/cng/model/service/f/h;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/h$a;->a:Lcom/panasonic/avc/cng/model/service/f/LiveViewVerticalService;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/h;->b(Lcom/panasonic/avc/cng/model/service/f/h;)Lcom/panasonic/avc/cng/model/service/k$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/LiveViewVerticalService;->b(Lcom/panasonic/avc/cng/model/service/f/LiveViewVerticalService;)Lcom/panasonic/avc/cng/model/service/k$a;
 
     move-result-object v0
 
@@ -670,9 +670,9 @@
     invoke-interface {v0, v1}, Lcom/panasonic/avc/cng/model/service/k$a;->a(I)V
 
     .line 377
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/h$a;->a:Lcom/panasonic/avc/cng/model/service/f/h;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/h$a;->a:Lcom/panasonic/avc/cng/model/service/f/LiveViewVerticalService;
 
-    invoke-virtual {v0, v4}, Lcom/panasonic/avc/cng/model/service/f/h;->a(Lcom/panasonic/avc/cng/core/a/at;)V
+    invoke-virtual {v0, v4}, Lcom/panasonic/avc/cng/model/service/f/LiveViewVerticalService;->a(Lcom/panasonic/avc/cng/core/a/at;)V
 
     .line 380
     :cond_4
@@ -780,9 +780,9 @@
 
     .line 392
     :cond_a
-    iget-object v4, p0, Lcom/panasonic/avc/cng/model/service/f/h$a;->a:Lcom/panasonic/avc/cng/model/service/f/h;
+    iget-object v4, p0, Lcom/panasonic/avc/cng/model/service/f/h$a;->a:Lcom/panasonic/avc/cng/model/service/f/LiveViewVerticalService;
 
-    invoke-virtual {v4, v0, v1}, Lcom/panasonic/avc/cng/model/service/f/h;->a(J)V
+    invoke-virtual {v4, v0, v1}, Lcom/panasonic/avc/cng/model/service/f/LiveViewVerticalService;->a(J)V
     :try_end_9
     .catch Ljava/lang/Exception; {:try_start_9 .. :try_end_9} :catch_2
 
@@ -800,7 +800,7 @@
 
     move-result-object v0
 
-    invoke-static {v1, v0}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v0}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
     :try_end_a
     .catch Ljava/lang/Exception; {:try_start_a .. :try_end_a} :catch_1
 

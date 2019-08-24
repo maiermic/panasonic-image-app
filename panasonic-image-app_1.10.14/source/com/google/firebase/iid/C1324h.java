@@ -67,7 +67,7 @@ public final class C1324h implements ServiceConnection {
         r4.f3649f = true;
      */
     /* JADX WARNING: Code restructure failed: missing block: B:36:0x0094, code lost:
-        if (com.google.android.gms.common.stats.C0679a.m2525a().mo1749a(r4.f3644a, r4.f3645b, r4, 65) == false) goto L_0x009a;
+        if (com.google.android.gms.common.stats.ConnectionTracker.m2525a().mo1749a(r4.f3644a, r4.f3645b, r4, 65) == false) goto L_0x009a;
      */
     /* JADX WARNING: Code restructure failed: missing block: B:39:0x0098, code lost:
         r0 = false;
@@ -153,7 +153,7 @@ public final class C1324h implements ServiceConnection {
             if (r0 != 0) goto L_0x0096
             r0 = 1
             r4.f3649f = r0     // Catch:{ all -> 0x0054 }
-            com.google.android.gms.common.stats.a r0 = com.google.android.gms.common.stats.C0679a.m2525a()     // Catch:{ SecurityException -> 0x00b5 }
+            com.google.android.gms.common.stats.a r0 = com.google.android.gms.common.stats.ConnectionTracker.m2525a()     // Catch:{ SecurityException -> 0x00b5 }
             android.content.Context r1 = r4.f3644a     // Catch:{ SecurityException -> 0x00b5 }
             android.content.Intent r2 = r4.f3645b     // Catch:{ SecurityException -> 0x00b5 }
             r3 = 65

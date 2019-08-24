@@ -11,8 +11,8 @@ import com.panasonic.avc.cng.model.C1897j.C1903f;
 import com.panasonic.avc.cng.model.p051c.C1844d;
 import com.panasonic.avc.cng.model.p052d.C1879a;
 import com.panasonic.avc.cng.model.service.C1985b;
-import com.panasonic.avc.cng.model.service.C2253z;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.view.common.C2820e;
 import com.panasonic.avc.cng.view.liveview.C2994e.C3116f;
 import com.panasonic.avc.cng.view.liveview.C3259j.C3269a;
@@ -20,15 +20,15 @@ import com.panasonic.avc.cng.view.liveview.C3271k.C3336c;
 import com.panasonic.avc.cng.view.liveview.C3271k.C3337d;
 import com.panasonic.avc.cng.view.liveview.icon.C3206a;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
 import com.panasonic.avc.cng.view.parts.C3981ad;
 import com.panasonic.avc.cng.view.parts.C3981ad.C3990a;
 import com.panasonic.avc.cng.view.parts.C4257u;
-import com.panasonic.avc.cng.view.setting.C5804u.C5806a;
-import com.panasonic.avc.cng.view.setting.C5804u.C5812c;
-import com.panasonic.avc.cng.view.setting.C5804u.C5817d;
+import com.panasonic.avc.cng.view.setting.LiveSetupLumixMirrorlessBaseActivity.C5806a;
+import com.panasonic.avc.cng.view.setting.LiveSetupLumixMirrorlessBaseActivity.C5812c;
+import com.panasonic.avc.cng.view.setting.LiveSetupLumixMirrorlessBaseActivity.C5817d;
 
-public class LiveSetupDrumPickerFandSSActivity extends C5804u {
+public class LiveSetupDrumPickerFandSSActivity extends LiveSetupLumixMirrorlessBaseActivity {
     /* access modifiers changed from: private */
 
     /* renamed from: A */
@@ -44,7 +44,7 @@ public class LiveSetupDrumPickerFandSSActivity extends C5804u {
     /* access modifiers changed from: private */
 
     /* renamed from: q */
-    public C5780o f16026q;
+    public LiveSetupDrumPickerFandSSViewModel f16026q;
 
     /* renamed from: r */
     private C5806a f16027r;
@@ -173,7 +173,7 @@ public class LiveSetupDrumPickerFandSSActivity extends C5804u {
                                 }
                             } else {
                                 if (LiveSetupDrumPickerFandSSActivity.this.f16026q != null) {
-                                    C2261g.m9763a(getClass().getSimpleName(), "Current Tv Num = " + fVar.f5760e.mo4961e());
+                                    ImageAppLog.debug(getClass().getSimpleName(), "Current Tv Num = " + fVar.f5760e.mo4961e());
                                     LiveSetupDrumPickerFandSSActivity.this.f16026q.mo12663b((long) fVar.f5760e.mo4961e());
                                 }
                                 if (!(LiveSetupDrumPickerFandSSActivity.this.f16029t == ((long) fVar.f5760e.mo4966i()) && LiveSetupDrumPickerFandSSActivity.this.f16030u == ((long) fVar.f5760e.mo4967j()) && LiveSetupDrumPickerFandSSActivity.this.f16031v == ((long) fVar.f5760e.mo4964g()) && LiveSetupDrumPickerFandSSActivity.this.f16032w == ((long) fVar.f5760e.mo4965h()))) {
@@ -235,7 +235,7 @@ public class LiveSetupDrumPickerFandSSActivity extends C5804u {
                 LiveSetupDrumPickerFandSSActivity.this.f17829e.mo7033b();
             }
             if (z) {
-                C2331d.m10114a((Activity) LiveSetupDrumPickerFandSSActivity.this, C2328a.ON_PROGRESS, (Bundle) null);
+                DialogFactory.m10114a((Activity) LiveSetupDrumPickerFandSSActivity.this, C2328a.ON_PROGRESS, (Bundle) null);
             }
             LiveSetupDrumPickerFandSSActivity.this.mo11480a(false);
         }
@@ -246,7 +246,7 @@ public class LiveSetupDrumPickerFandSSActivity extends C5804u {
                 LiveSetupDrumPickerFandSSActivity.this.f17829e.mo7034c();
             }
             LiveSetupDrumPickerFandSSActivity.this.mo11480a(true);
-            C2331d.m10100a((Activity) LiveSetupDrumPickerFandSSActivity.this);
+            DialogFactory.m10100a((Activity) LiveSetupDrumPickerFandSSActivity.this);
             if (LiveSetupDrumPickerFandSSActivity.this._resultBundle != null) {
                 LiveSetupDrumPickerFandSSActivity.this._resultBundle.putBoolean("ContentsUpdateKey", true);
             }
@@ -296,16 +296,16 @@ public class LiveSetupDrumPickerFandSSActivity extends C5804u {
             this.f17831g.mo7868a((C3336c) aVar);
         }
         if (!(C1712b.m6919c() == null || a == null)) {
-            C1985b a2 = C2253z.m9679a(this._context, a);
+            C1985b a2 = ServiceFactory.m9679a(this._context, a);
             if (a2 != null) {
                 this.f16028s = a2.mo5189b();
             }
         }
         this.f16027r = new C5005b();
         if ("menu_item_id_f_and_ss_angle".equalsIgnoreCase(this.f16028s.f5368a)) {
-            this.f16026q = new C5780o(this._context, this._handler, this.f16027r, this.f17826b);
+            this.f16026q = new LiveSetupDrumPickerFandSSViewModel(this._context, this._handler, this.f16027r, this.f17826b);
         } else {
-            this.f16026q = new C5780o(this._context, this._handler, this.f16027r);
+            this.f16026q = new LiveSetupDrumPickerFandSSViewModel(this._context, this._handler, this.f16027r);
         }
         this.f16025n = new C3981ad(this._context, this, this.f16026q, this.f16023A, this.f16024B);
         if ("menu_item_id_f_and_ss_sync".equalsIgnoreCase(this.f16028s.f5368a) || "menu_item_id_f_and_ss_angle_sync".equalsIgnoreCase(this.f16028s.f5368a)) {

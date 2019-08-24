@@ -75,7 +75,7 @@
 
     const-string v2, "OnShutter[Capture]\u2605"
 
-    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 3239
     const-string v0, "LiveViewLumixBaseViewModel_B"
@@ -102,7 +102,7 @@
 
     move-result-object v2
 
-    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 3240
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/e$56;->a:Lcom/panasonic/avc/cng/view/liveview/e;
@@ -129,9 +129,9 @@
     .line 3244
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/e$56;->a:Lcom/panasonic/avc/cng/view/liveview/e;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/e;->k:Lcom/panasonic/avc/cng/core/a/af;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/e;->k:Lcom/panasonic/avc/cng/core/a/RecordCommand;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/af;->a()Lcom/panasonic/avc/cng/model/c/h;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/RecordCommand;->a()Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
     move-result-object v0
 
@@ -221,7 +221,7 @@
 
     new-instance v3, Lcom/panasonic/avc/cng/view/liveview/e$56$1;
 
-    invoke-direct {v3, p0, v0}, Lcom/panasonic/avc/cng/view/liveview/e$56$1;-><init>(Lcom/panasonic/avc/cng/view/liveview/e$56;Lcom/panasonic/avc/cng/model/c/h;)V
+    invoke-direct {v3, p0, v0}, Lcom/panasonic/avc/cng/view/liveview/e$56$1;-><init>(Lcom/panasonic/avc/cng/view/liveview/e$56;Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;)V
 
     invoke-virtual {v2, v3}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 

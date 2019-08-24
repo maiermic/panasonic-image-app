@@ -51,7 +51,7 @@
 
 
 # virtual methods
-.method public DmsBase_OnGetState(Lcom/panasonic/avc/cng/model/c/e;ZI)V
+.method public DmsBase_OnGetState(Lcom/panasonic/avc/cng/model/c/CameraStatus;ZI)V
     .locals 3
 
     .prologue

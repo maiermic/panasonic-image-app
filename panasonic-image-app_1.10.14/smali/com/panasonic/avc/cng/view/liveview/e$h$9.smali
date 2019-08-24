@@ -45,11 +45,11 @@
 
     iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/e$h;->a:Lcom/panasonic/avc/cng/view/liveview/e;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/e;->o:Lcom/panasonic/avc/cng/core/a/t;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/e;->o:Lcom/panasonic/avc/cng/core/a/LiveViewOperationCommand;
 
     const-string v1, "up"
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/core/a/t;->b(Ljava/lang/String;)Lcom/panasonic/avc/cng/model/c/h;
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/core/a/LiveViewOperationCommand;->b(Ljava/lang/String;)Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
     .line 10694
     return-void

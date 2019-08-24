@@ -18,23 +18,23 @@ import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.C1892f;
 import com.panasonic.avc.cng.model.p051c.C1844d;
 import com.panasonic.avc.cng.model.service.C1985b;
-import com.panasonic.avc.cng.model.service.C2253z;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.view.common.C2820e;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
 import com.panasonic.avc.cng.view.p073b.C2376f.C2378b;
-import com.panasonic.avc.cng.view.setting.C5446ac.C5461b;
-import com.panasonic.avc.cng.view.setting.C5446ac.C5462c;
-import com.panasonic.avc.cng.view.setting.C5446ac.C5463d;
-import com.panasonic.avc.cng.view.setting.C5537al.C5540a;
+import com.panasonic.avc.cng.view.setting.MirrorlessStopmotionMovieMakingViewModel.C5461b;
+import com.panasonic.avc.cng.view.setting.MirrorlessStopmotionMovieMakingViewModel.C5462c;
+import com.panasonic.avc.cng.view.setting.MirrorlessStopmotionMovieMakingViewModel.C5463d;
+import com.panasonic.avc.cng.view.setting.SettingMenuBaseActivity.C5540a;
 import java.util.ArrayList;
 
 public class MirrorlessStopmotionAutoManualSettingActivity extends C5741i {
     /* access modifiers changed from: private */
 
     /* renamed from: a */
-    public C5446ac f16298a;
+    public MirrorlessStopmotionMovieMakingViewModel f16298a;
 
     /* renamed from: b */
     private C5461b f16299b;
@@ -52,7 +52,7 @@ public class MirrorlessStopmotionAutoManualSettingActivity extends C5741i {
             if (true == dVar.mo12141b()) {
                 MirrorlessStopmotionAutoManualSettingActivity.this.m19791d();
             } else {
-                C2331d.m10114a((Activity) MirrorlessStopmotionAutoManualSettingActivity.this, C2328a.ON_STOPMOTION_ERROR_SETTING_CMD_FINISH, (Bundle) null);
+                DialogFactory.m10114a((Activity) MirrorlessStopmotionAutoManualSettingActivity.this, C2328a.ON_STOPMOTION_ERROR_SETTING_CMD_FINISH, (Bundle) null);
             }
         }
     }
@@ -69,12 +69,12 @@ public class MirrorlessStopmotionAutoManualSettingActivity extends C5741i {
         this.f16299b = new C5116a();
         this.f16298a = C2820e.m11765a((Context) this, this._handler, this.f16299b, (C5462c) null);
         if (this.f16298a == null) {
-            this.f16298a = new C5446ac(this, this._handler, this.f16299b);
+            this.f16298a = new MirrorlessStopmotionMovieMakingViewModel(this, this._handler, this.f16299b);
         }
         C2820e.m11788a(this.f16298a);
         ((Button) findViewById(R.id.nextButton)).setOnClickListener(new OnClickListener() {
             public void onClick(View view) {
-                C2261g.m9760a(3158040, "");
+                ImageAppLog.m9760a(3158040, "");
                 MirrorlessStopmotionAutoManualSettingActivity.this.startActivityForResult(new Intent(MirrorlessStopmotionAutoManualSettingActivity.this._context, MirrorlessStopmotionTakenMoreNewActivity.class), 7);
             }
         });
@@ -94,7 +94,7 @@ public class MirrorlessStopmotionAutoManualSettingActivity extends C5741i {
         if (!C5540a.m20622a((Activity) this)) {
             this.f16298a = C2820e.m11765a((Context) this, this._handler, this.f16299b, (C5462c) null);
             if (this.f16298a == null) {
-                this.f16298a = new C5446ac(this, this._handler, this.f16299b);
+                this.f16298a = new MirrorlessStopmotionMovieMakingViewModel(this, this._handler, this.f16299b);
             }
             C2820e.m11788a(this.f16298a);
             if (C5540a.m20622a((Activity) this)) {
@@ -112,11 +112,11 @@ public class MirrorlessStopmotionAutoManualSettingActivity extends C5741i {
             this.f16298a.mo3205a();
             this.f16298a = null;
         }
-        C2820e.m11788a((C5446ac) null);
+        C2820e.m11788a((MirrorlessStopmotionMovieMakingViewModel) null);
         if (C1712b.m6919c() != null) {
             C1892f a = C1712b.m6919c().mo4896a();
             if (a != null) {
-                C1985b a2 = C2253z.m9679a(this._context, a);
+                C1985b a2 = ServiceFactory.m9679a(this._context, a);
                 if (a2 != null) {
                     C1844d f = a2.mo5194f();
                     if (f != null) {
@@ -184,7 +184,7 @@ public class MirrorlessStopmotionAutoManualSettingActivity extends C5741i {
         if (c >= 0 && b != null) {
             bundle.putStringArray(C2378b.SINGLE_CHOICE_LIST.name(), b);
             bundle.putInt(C2378b.SINGLE_CHOICE_CHECKED_ITEM.name(), c);
-            C2331d.m10114a((Activity) this, aVar, bundle);
+            DialogFactory.m10114a((Activity) this, aVar, bundle);
         }
     }
 
@@ -338,7 +338,7 @@ public class MirrorlessStopmotionAutoManualSettingActivity extends C5741i {
         switch (aVar) {
             case ON_STOPMOTION_SETTING_INTERVAL:
                 this.f16298a.mo12103a(m19783a(i));
-                C2331d.m10100a((Activity) this);
+                DialogFactory.m10100a((Activity) this);
                 m19793f();
                 return;
             default:

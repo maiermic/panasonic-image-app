@@ -47,7 +47,7 @@
     .line 300
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ai$3;->b:Lcom/panasonic/avc/cng/view/setting/ai;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/ai;->f:Lcom/panasonic/avc/cng/core/c/s;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/ai;->f:Lcom/panasonic/avc/cng/core/c/Picmate;
 
     if-eqz v0, :cond_0
 
@@ -57,7 +57,7 @@
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/ai$3;->b:Lcom/panasonic/avc/cng/view/setting/ai;
 
-    iget-object v1, v1, Lcom/panasonic/avc/cng/view/setting/ai;->f:Lcom/panasonic/avc/cng/core/c/s;
+    iget-object v1, v1, Lcom/panasonic/avc/cng/view/setting/ai;->f:Lcom/panasonic/avc/cng/core/c/Picmate;
 
     iget-object v2, p0, Lcom/panasonic/avc/cng/view/setting/ai$3;->b:Lcom/panasonic/avc/cng/view/setting/ai;
 
@@ -65,7 +65,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v1, v2}, Lcom/panasonic/avc/cng/core/c/s;->a(Lcom/panasonic/avc/cng/core/c/i;)Ljava/lang/String;
+    invoke-virtual {v1, v2}, Lcom/panasonic/avc/cng/core/c/Picmate;->a(Lcom/panasonic/avc/cng/core/c/i;)Ljava/lang/String;
 
     move-result-object v1
 

@@ -52,24 +52,24 @@
     .line 82
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/c$1;->a:Lcom/panasonic/avc/cng/view/play/browser/c;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/browser/c;->a(Lcom/panasonic/avc/cng/view/play/browser/c;)Lcom/panasonic/avc/cng/view/play/browser/d;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/browser/c;->a(Lcom/panasonic/avc/cng/view/play/browser/c;)Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;
 
     move-result-object v0
 
-    invoke-virtual {v0, p3}, Lcom/panasonic/avc/cng/view/play/browser/d;->d(I)V
+    invoke-virtual {v0, p3}, Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;->d(I)V
 
     .line 85
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/c$1;->a:Lcom/panasonic/avc/cng/view/play/browser/c;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/browser/c;->a(Lcom/panasonic/avc/cng/view/play/browser/c;)Lcom/panasonic/avc/cng/view/play/browser/d;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/browser/c;->a(Lcom/panasonic/avc/cng/view/play/browser/c;)Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/browser/d;->m()Lcom/panasonic/avc/cng/view/parts/t;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;->m()Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
     move-result-object v0
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/parts/t;->e:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->e:Lcom/panasonic/avc/cng/a/c;
 
     invoke-virtual {v0}, Lcom/panasonic/avc/cng/a/c;->b()Ljava/lang/Object;
 

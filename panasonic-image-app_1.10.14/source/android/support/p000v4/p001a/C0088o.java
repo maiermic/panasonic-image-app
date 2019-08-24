@@ -36,7 +36,7 @@ public abstract class C0088o<E> extends C0086m {
     private boolean f243g;
 
     /* renamed from: h */
-    private C0123y f244h;
+    private LoaderManager f244h;
 
     /* renamed from: i */
     private boolean f245i;
@@ -130,7 +130,7 @@ public abstract class C0088o<E> extends C0086m {
     /* renamed from: a */
     public void mo275a(String str) {
         if (this.f242f != null) {
-            C0123y yVar = (C0123y) this.f242f.get(str);
+            LoaderManager yVar = (LoaderManager) this.f242f.get(str);
             if (yVar != null && !yVar.f369f) {
                 yVar.mo431h();
                 this.f242f.remove(str);
@@ -193,12 +193,12 @@ public abstract class C0088o<E> extends C0086m {
     public void mo285m() {
         if (this.f242f != null) {
             int size = this.f242f.size();
-            C0123y[] yVarArr = new C0123y[size];
+            LoaderManager[] yVarArr = new LoaderManager[size];
             for (int i = size - 1; i >= 0; i--) {
-                yVarArr[i] = (C0123y) this.f242f.mo561c(i);
+                yVarArr[i] = (LoaderManager) this.f242f.mo561c(i);
             }
             for (int i2 = 0; i2 < size; i2++) {
-                C0123y yVar = yVarArr[i2];
+                LoaderManager yVar = yVarArr[i2];
                 yVar.mo428e();
                 yVar.mo430g();
             }
@@ -207,18 +207,18 @@ public abstract class C0088o<E> extends C0086m {
 
     /* access modifiers changed from: 0000 */
     /* renamed from: a */
-    public C0123y mo273a(String str, boolean z, boolean z2) {
+    public LoaderManager mo273a(String str, boolean z, boolean z2) {
         if (this.f242f == null) {
             this.f242f = new C0146h<>();
         }
-        C0123y yVar = (C0123y) this.f242f.get(str);
+        LoaderManager yVar = (LoaderManager) this.f242f.get(str);
         if (yVar != null) {
             yVar.mo423a(this);
             return yVar;
         } else if (!z2) {
             return yVar;
         } else {
-            C0123y yVar2 = new C0123y(str, this, z);
+            LoaderManager yVar2 = new LoaderManager(str, this, z);
             this.f242f.put(str, yVar2);
             return yVar2;
         }
@@ -230,14 +230,14 @@ public abstract class C0088o<E> extends C0086m {
         boolean z;
         if (this.f242f != null) {
             int size = this.f242f.size();
-            C0123y[] yVarArr = new C0123y[size];
+            LoaderManager[] yVarArr = new LoaderManager[size];
             for (int i = size - 1; i >= 0; i--) {
-                yVarArr[i] = (C0123y) this.f242f.mo561c(i);
+                yVarArr[i] = (LoaderManager) this.f242f.mo561c(i);
             }
             boolean j = mo282j();
             z = false;
             for (int i2 = 0; i2 < size; i2++) {
-                C0123y yVar = yVarArr[i2];
+                LoaderManager yVar = yVarArr[i2];
                 if (!yVar.f369f && j) {
                     if (!yVar.f368e) {
                         yVar.mo425b();

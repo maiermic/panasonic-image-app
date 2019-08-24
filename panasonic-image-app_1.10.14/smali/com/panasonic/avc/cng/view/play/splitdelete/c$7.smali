@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/view/play/splitdelete/c;->c(Z)V
+    value = Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;->c(Z)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/panasonic/avc/cng/view/play/splitdelete/c;
+.field final synthetic a:Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;
 
 
 # direct methods
-.method constructor <init>(Lcom/panasonic/avc/cng/view/play/splitdelete/c;)V
+.method constructor <init>(Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;)V
     .locals 0
 
     .prologue
     .line 1069
-    iput-object p1, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/c$7;->a:Lcom/panasonic/avc/cng/view/play/splitdelete/c;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/c$7;->a:Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -41,9 +41,9 @@
 
     .prologue
     .line 1077
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/c$7;->a:Lcom/panasonic/avc/cng/view/play/splitdelete/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/c$7;->a:Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/splitdelete/c;->a(Lcom/panasonic/avc/cng/view/play/splitdelete/c;)Lcom/panasonic/avc/cng/view/play/splitdelete/c$c;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;->a(Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;)Lcom/panasonic/avc/cng/view/play/splitdelete/c$c;
 
     move-result-object v0
 
@@ -57,9 +57,9 @@
     if-eqz v0, :cond_1
 
     .line 1082
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/c$7;->a:Lcom/panasonic/avc/cng/view/play/splitdelete/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/c$7;->a:Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/splitdelete/c;->a(Lcom/panasonic/avc/cng/view/play/splitdelete/c;)Lcom/panasonic/avc/cng/view/play/splitdelete/c$c;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;->a(Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;)Lcom/panasonic/avc/cng/view/play/splitdelete/c$c;
 
     move-result-object v0
 
@@ -68,20 +68,20 @@
     .line 1091
     :cond_0
     :goto_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/c$7;->a:Lcom/panasonic/avc/cng/view/play/splitdelete/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/c$7;->a:Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/play/splitdelete/c;->d(Lcom/panasonic/avc/cng/view/play/splitdelete/c;Z)Z
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;->d(Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;Z)Z
 
     .line 1092
     return-void
 
     .line 1087
     :cond_1
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/c$7;->a:Lcom/panasonic/avc/cng/view/play/splitdelete/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/c$7;->a:Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/splitdelete/c;->a(Lcom/panasonic/avc/cng/view/play/splitdelete/c;)Lcom/panasonic/avc/cng/view/play/splitdelete/c$c;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;->a(Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;)Lcom/panasonic/avc/cng/view/play/splitdelete/c$c;
 
     move-result-object v0
 

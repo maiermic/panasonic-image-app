@@ -233,7 +233,7 @@
 
     invoke-direct {v3, p0}, Lcom/panasonic/avc/cng/view/play/snapmovie/SnapMoviePreviewActivity$b$1;-><init>(Lcom/panasonic/avc/cng/view/play/snapmovie/SnapMoviePreviewActivity$b;)V
 
-    invoke-static {v1, v2, v0, v3}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;Lcom/panasonic/avc/cng/view/b/a$c;)V
+    invoke-static {v1, v2, v0, v3}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;Lcom/panasonic/avc/cng/view/b/a$c;)V
 
     goto :goto_0
 
@@ -241,7 +241,7 @@
     :pswitch_2
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/snapmovie/SnapMoviePreviewActivity$b;->a:Lcom/panasonic/avc/cng/view/play/snapmovie/SnapMoviePreviewActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;)V
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;)V
 
     goto :goto_0
 
@@ -249,7 +249,7 @@
     :pswitch_3
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/snapmovie/SnapMoviePreviewActivity$b;->a:Lcom/panasonic/avc/cng/view/play/snapmovie/SnapMoviePreviewActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;)V
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;)V
 
     .line 2168
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/snapmovie/SnapMoviePreviewActivity$b;->a:Lcom/panasonic/avc/cng/view/play/snapmovie/SnapMoviePreviewActivity;
@@ -276,7 +276,7 @@
     .line 2170
     iget-object v6, p0, Lcom/panasonic/avc/cng/view/play/snapmovie/SnapMoviePreviewActivity$b;->a:Lcom/panasonic/avc/cng/view/play/snapmovie/SnapMoviePreviewActivity;
 
-    new-instance v0, Lcom/panasonic/avc/cng/view/play/browser/b;
+    new-instance v0, Lcom/panasonic/avc/cng/view/play/browser/BrowserConnectWiFi;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/snapmovie/SnapMoviePreviewActivity$b;->a:Lcom/panasonic/avc/cng/view/play/snapmovie/SnapMoviePreviewActivity;
 
@@ -318,9 +318,9 @@
 
     const/4 v5, 0x1
 
-    invoke-direct/range {v0 .. v5}, Lcom/panasonic/avc/cng/view/play/browser/b;-><init>(Landroid/app/Activity;Ljava/lang/String;Ljava/lang/String;IZ)V
+    invoke-direct/range {v0 .. v5}, Lcom/panasonic/avc/cng/view/play/browser/BrowserConnectWiFi;-><init>(Landroid/app/Activity;Ljava/lang/String;Ljava/lang/String;IZ)V
 
-    invoke-static {v6, v0}, Lcom/panasonic/avc/cng/view/play/snapmovie/SnapMoviePreviewActivity;->a(Lcom/panasonic/avc/cng/view/play/snapmovie/SnapMoviePreviewActivity;Lcom/panasonic/avc/cng/view/play/browser/b;)Lcom/panasonic/avc/cng/view/play/browser/b;
+    invoke-static {v6, v0}, Lcom/panasonic/avc/cng/view/play/snapmovie/SnapMoviePreviewActivity;->a(Lcom/panasonic/avc/cng/view/play/snapmovie/SnapMoviePreviewActivity;Lcom/panasonic/avc/cng/view/play/browser/BrowserConnectWiFi;)Lcom/panasonic/avc/cng/view/play/browser/BrowserConnectWiFi;
 
     .line 2171
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/snapmovie/SnapMoviePreviewActivity$b;->a:Lcom/panasonic/avc/cng/view/play/snapmovie/SnapMoviePreviewActivity;
@@ -337,14 +337,14 @@
     :pswitch_4
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/snapmovie/SnapMoviePreviewActivity$b;->a:Lcom/panasonic/avc/cng/view/play/snapmovie/SnapMoviePreviewActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;)V
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;)V
 
     .line 2180
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/snapmovie/SnapMoviePreviewActivity$b;->a:Lcom/panasonic/avc/cng/view/play/snapmovie/SnapMoviePreviewActivity;
 
     sget-object v1, Lcom/panasonic/avc/cng/view/b/b$a;->D:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {v0, v1, v7}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {v0, v1, v7}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     goto/16 :goto_0
 
@@ -352,7 +352,7 @@
     :pswitch_5
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/snapmovie/SnapMoviePreviewActivity$b;->a:Lcom/panasonic/avc/cng/view/play/snapmovie/SnapMoviePreviewActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;)V
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;)V
 
     .line 2187
     if-nez p2, :cond_1
@@ -362,7 +362,7 @@
 
     sget-object v1, Lcom/panasonic/avc/cng/view/b/b$a;->E:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {v0, v1, v7}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {v0, v1, v7}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     goto/16 :goto_0
 
@@ -377,7 +377,7 @@
 
     sget-object v1, Lcom/panasonic/avc/cng/view/b/b$a;->N:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {v0, v1, v7}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {v0, v1, v7}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     goto/16 :goto_0
 

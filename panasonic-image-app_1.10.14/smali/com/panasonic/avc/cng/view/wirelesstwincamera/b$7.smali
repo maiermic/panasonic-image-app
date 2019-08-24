@@ -41,11 +41,11 @@
 
     .prologue
     .line 711
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
@@ -53,14 +53,14 @@
     if-eqz v0, :cond_0
 
     .line 715
-    new-instance v1, Lcom/panasonic/avc/cng/core/a/ax;
+    new-instance v1, Lcom/panasonic/avc/cng/core/a/WirelessTwinCommand;
 
     iget-object v0, v0, Lcom/panasonic/avc/cng/model/f;->d:Ljava/lang/String;
 
-    invoke-direct {v1, v0}, Lcom/panasonic/avc/cng/core/a/ax;-><init>(Ljava/lang/String;)V
+    invoke-direct {v1, v0}, Lcom/panasonic/avc/cng/core/a/WirelessTwinCommand;-><init>(Ljava/lang/String;)V
 
     .line 716
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/core/a/ax;->b()Lcom/panasonic/avc/cng/model/c/h;
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/core/a/WirelessTwinCommand;->b()Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
     .line 718
     :cond_0

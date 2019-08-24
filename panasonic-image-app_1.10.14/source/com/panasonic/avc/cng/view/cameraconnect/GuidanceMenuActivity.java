@@ -38,10 +38,10 @@ import android.widget.TextView;
 import android.widget.Toast;
 import com.panasonic.avc.cng.application.C1347a;
 import com.panasonic.avc.cng.application.C1347a.C1349a;
-import com.panasonic.avc.cng.application.C1357b;
-import com.panasonic.avc.cng.application.C1357b.C1360a;
+import com.panasonic.avc.cng.application.NfcSupportActivity;
+import com.panasonic.avc.cng.application.NfcSupportActivity.C1360a;
 import com.panasonic.avc.cng.application.LumixLinkCallActivity;
-import com.panasonic.avc.cng.application.p039a.C1351b;
+import com.panasonic.avc.cng.application.p039a.GoogleTagManager;
 import com.panasonic.avc.cng.core.dlna.DlnaWrapper;
 import com.panasonic.avc.cng.core.p040a.C1501d;
 import com.panasonic.avc.cng.core.p046c.C1686t;
@@ -54,24 +54,24 @@ import com.panasonic.avc.cng.model.C1910l;
 import com.panasonic.avc.cng.model.C1911m;
 import com.panasonic.avc.cng.model.C1912n;
 import com.panasonic.avc.cng.model.C1913o;
-import com.panasonic.avc.cng.model.p051c.C1846e;
+import com.panasonic.avc.cng.model.p051c.CameraStatus;
 import com.panasonic.avc.cng.model.p051c.C1868r;
 import com.panasonic.avc.cng.model.p052d.C1879a;
 import com.panasonic.avc.cng.model.service.C2028e;
 import com.panasonic.avc.cng.model.service.C2137j;
 import com.panasonic.avc.cng.model.service.C2137j.C2138a;
 import com.panasonic.avc.cng.model.service.C2206o.C2207a;
-import com.panasonic.avc.cng.model.service.C2253z;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
 import com.panasonic.avc.cng.model.service.upload.usages.logservice.UsagesLogService;
 import com.panasonic.avc.cng.util.C2258d;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.util.C2266l;
 import com.panasonic.avc.cng.util.C2275p;
 import com.panasonic.avc.cng.view.bluetooth.BluetoothCloudBackupActivity;
 import com.panasonic.avc.cng.view.bluetooth.BluetoothRemoteControllerActivity;
 import com.panasonic.avc.cng.view.bluetooth.BluetoothSettingActivity;
 import com.panasonic.avc.cng.view.bluetooth.C2550h;
-import com.panasonic.avc.cng.view.cameraconnect.C2666e.C2674a;
+import com.panasonic.avc.cng.view.cameraconnect.CameraConnectViewModel.C2674a;
 import com.panasonic.avc.cng.view.camerasetting.CameraSettingActivity;
 import com.panasonic.avc.cng.view.common.QrCodeReaderActivity;
 import com.panasonic.avc.cng.view.common.TouchShareCopyActivity;
@@ -88,7 +88,7 @@ import com.panasonic.avc.cng.view.p072a.C2316j;
 import com.panasonic.avc.cng.view.p073b.C2317a.C2323a;
 import com.panasonic.avc.cng.view.p073b.C2317a.C2325c;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
 import com.panasonic.avc.cng.view.p073b.C2337e;
 import com.panasonic.avc.cng.view.p073b.C2376f.C2378b;
 import com.panasonic.avc.cng.view.parts.C4244s;
@@ -117,7 +117,7 @@ import java.util.TimerTask;
 import java.util.UUID;
 
 @SuppressLint({"StringFormatMatches", "StringFormatInvalid", "InflateParams"})
-public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
+public class GuidanceMenuActivity extends NfcSupportActivity implements C0010a, C2310a {
     private static final int BT_CONNECT_CALLBACK_MINUTES = 30000;
     private static final String CURRENT_DISP_KEY = "CURRENT_DISP_KEY";
     private static final int MIN_WIDTH = 480;
@@ -276,14 +276,14 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
     private C0174f _topPageChangeListener = new C0179j() {
         /* renamed from: a */
         public void mo692a(int i) {
-            C2261g.m9763a(GuidanceMenuActivity.TAG, "Page changed (TopViewPager): Page = " + i);
+            ImageAppLog.debug(GuidanceMenuActivity.TAG, "Page changed (TopViewPager): Page = " + i);
             GuidanceMenuActivity.this._currentTopPagerItem = i;
         }
     };
     /* access modifiers changed from: private */
     public GuidanceMenuTopViewPager _topViewPager = null;
     /* access modifiers changed from: private */
-    public C2685i _viewModel;
+    public GuidanceMenuViewModel _viewModel;
     private ViewPager _viewPager = null;
     /* access modifiers changed from: private */
     public boolean _wifiDirect = false;
@@ -320,15 +320,15 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
 
         /* renamed from: b */
         public void mo5669b() {
-            C2261g.m9763a(GuidanceMenuActivity.TAG, "onBleConnectStart");
+            ImageAppLog.debug(GuidanceMenuActivity.TAG, "onBleConnectStart");
             GuidanceMenuActivity.this._btConnectState = "Connecting";
             GuidanceMenuActivity.this._isBTConnectNotCompleted = true;
         }
 
         /* renamed from: a */
         public void mo5668a(boolean z) {
-            C2261g.m9763a(GuidanceMenuActivity.TAG, "onBleConnected");
-            C2261g.m9763a(GuidanceMenuActivity.TAG, "_btAdvertisingState:" + GuidanceMenuActivity.this._btAdvertisingState);
+            ImageAppLog.debug(GuidanceMenuActivity.TAG, "onBleConnected");
+            ImageAppLog.debug(GuidanceMenuActivity.TAG, "_btAdvertisingState:" + GuidanceMenuActivity.this._btAdvertisingState);
             GuidanceMenuActivity.this._isWakeUpNG = false;
             GuidanceMenuActivity.this._timeoutCount = 0;
             if (GuidanceMenuActivity.this._timeoutTimer != null) {
@@ -340,7 +340,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
             if (GuidanceMenuActivity.this._imageAppService != null) {
                 GuidanceMenuActivity.this._imageAppService.mo5641c();
             }
-            if (C2331d.m10125b((Activity) GuidanceMenuActivity.this, C2328a.SEARCH_CAMERA_OR_UPLOAD) && !GuidanceMenuActivity.this._isBTFastBoot && GuidanceMenuActivity.this._viewModel != null) {
+            if (DialogFactory.m10125b((Activity) GuidanceMenuActivity.this, C2328a.SEARCH_CAMERA_OR_UPLOAD) && !GuidanceMenuActivity.this._isBTFastBoot && GuidanceMenuActivity.this._viewModel != null) {
                 GuidanceMenuActivity.this.dismissAllDlg();
                 GuidanceMenuActivity.this._viewModel.mo6648o();
             }
@@ -353,10 +353,10 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
                     });
                 }
                 if (GuidanceMenuActivity.this._imageAppService != null && !GuidanceMenuActivity.this._imageAppService.mo5647i()) {
-                    C2261g.m9763a(GuidanceMenuActivity.TAG, "_isBTConnectNotCompleted:" + GuidanceMenuActivity.this._isBTConnectNotCompleted);
-                    C2261g.m9763a(GuidanceMenuActivity.TAG, "isBTConnected:" + GuidanceMenuActivity.this._imageAppService.mo5649k());
+                    ImageAppLog.debug(GuidanceMenuActivity.TAG, "_isBTConnectNotCompleted:" + GuidanceMenuActivity.this._isBTConnectNotCompleted);
+                    ImageAppLog.debug(GuidanceMenuActivity.TAG, "isBTConnected:" + GuidanceMenuActivity.this._imageAppService.mo5649k());
                     if ((GuidanceMenuActivity.this._btAdvertisingState.equalsIgnoreCase("normal") || GuidanceMenuActivity.this._btAdvertisingState.equalsIgnoreCase("wakeup") || GuidanceMenuActivity.this._isBTConnectNotCompleted || GuidanceMenuActivity.this._imageAppService.mo5649k()) && GuidanceMenuActivity.this._imageAppService != null) {
-                        C2261g.m9763a(GuidanceMenuActivity.TAG, "writeData:" + GuidanceMenuActivity.this._imageAppService.mo5627a(1, C2266l.m9808a("4D454930010010008001" + PreferenceManager.getDefaultSharedPreferences(GuidanceMenuActivity.this._context).getString("Dlna_UUID_Seed", ""))));
+                        ImageAppLog.debug(GuidanceMenuActivity.TAG, "writeData:" + GuidanceMenuActivity.this._imageAppService.mo5627a(1, C2266l.m9808a("4D454930010010008001" + PreferenceManager.getDefaultSharedPreferences(GuidanceMenuActivity.this._context).getString("Dlna_UUID_Seed", ""))));
                     }
                 }
             }
@@ -364,8 +364,8 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
 
         /* renamed from: a */
         public void mo5662a(int i) {
-            C2261g.m9763a(GuidanceMenuActivity.TAG, "onBleDisconnected");
-            C2261g.m9769c(GuidanceMenuActivity.TAG, "status:" + i);
+            ImageAppLog.debug(GuidanceMenuActivity.TAG, "onBleDisconnected");
+            ImageAppLog.error(GuidanceMenuActivity.TAG, "status:" + i);
             if (GuidanceMenuActivity.this._isBTFastBoot && GuidanceMenuActivity.this._actionMode == C4244s.f14194d && (i == 133 || i == 62)) {
                 SharedPreferences defaultSharedPreferences = PreferenceManager.getDefaultSharedPreferences(GuidanceMenuActivity.this._context);
                 String string = defaultSharedPreferences.getString("CurrentConnectedSSID", "");
@@ -390,16 +390,16 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
                 if (GuidanceMenuActivity.this._handler != null) {
                     GuidanceMenuActivity.this._handler.post(new Runnable() {
                         public void run() {
-                            if (C2331d.m10125b((Activity) GuidanceMenuActivity.this, C2328a.ON_DMS_RECEIVING)) {
-                                C2331d.m10102a((Activity) GuidanceMenuActivity.this, C2328a.ON_DMS_RECEIVING);
+                            if (DialogFactory.m10125b((Activity) GuidanceMenuActivity.this, C2328a.ON_DMS_RECEIVING)) {
+                                DialogFactory.m10102a((Activity) GuidanceMenuActivity.this, C2328a.ON_DMS_RECEIVING);
                             }
                             if (GuidanceMenuActivity.this._actionMode == C4244s.f14194d && GuidanceMenuActivity.this._disconnectState == 19) {
                                 GuidanceMenuActivity.this._actionMode = C4244s.f14191a;
                                 GuidanceMenuActivity.this._isBTFastBoot = false;
                                 GuidanceMenuActivity.this._isOnStartWifiCheck = false;
                                 GuidanceMenuActivity.this._isBTFastBootAPConnect = false;
-                                C2331d.m10100a((Activity) GuidanceMenuActivity.this);
-                                C2331d.m10114a((Activity) GuidanceMenuActivity.this, C2328a.ON_CAMERA_SETTING_NET_ERROR, (Bundle) null);
+                                DialogFactory.m10100a((Activity) GuidanceMenuActivity.this);
+                                DialogFactory.m10114a((Activity) GuidanceMenuActivity.this, C2328a.ON_CAMERA_SETTING_NET_ERROR, (Bundle) null);
                             }
                             GuidanceMenuActivity.this.updateView(C1712b.m6919c().mo4896a() == null ? C2678f.NotConnected : C2678f.Connected);
                         }
@@ -419,13 +419,13 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
         /* renamed from: a */
         public void mo5663a(BluetoothDevice bluetoothDevice, String str, String str2, String str3) {
             if (str != null) {
-                C2261g.m9769c(GuidanceMenuActivity.TAG, "onBleScanResult: devName = " + str + ", publicAddress = " + str2 + ", state = " + str3);
+                ImageAppLog.error(GuidanceMenuActivity.TAG, "onBleScanResult: devName = " + str + ", publicAddress = " + str2 + ", state = " + str3);
                 GuidanceMenuActivity.this._bt_timeoutCounter = 0;
                 if (str3.equalsIgnoreCase("wakeup")) {
                     SharedPreferences defaultSharedPreferences = PreferenceManager.getDefaultSharedPreferences(GuidanceMenuActivity.this._context);
                     boolean z = defaultSharedPreferences.getBoolean("Bluetooth", false);
                     if (GuidanceMenuActivity.this._isBluetoothEnable && z && C2266l.m9823c() && GuidanceMenuActivity.this._imageAppService != null && !GuidanceMenuActivity.this._imageAppService.mo5647i()) {
-                        C2261g.m9763a(GuidanceMenuActivity.TAG, "_btConnectState:" + GuidanceMenuActivity.this._btConnectState);
+                        ImageAppLog.debug(GuidanceMenuActivity.TAG, "_btConnectState:" + GuidanceMenuActivity.this._btConnectState);
                         String string = defaultSharedPreferences.getString("CurrentConnectedAddress", "");
                         if (!string.equalsIgnoreCase("") && string.equalsIgnoreCase(str2)) {
                             if (GuidanceMenuActivity.this._actionMode == C4244s.f14194d || GuidanceMenuActivity.this._isBTRemoteControllerMode) {
@@ -453,8 +453,8 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
                     SharedPreferences defaultSharedPreferences2 = PreferenceManager.getDefaultSharedPreferences(GuidanceMenuActivity.this._context);
                     boolean z2 = defaultSharedPreferences2.getBoolean("Bluetooth", false);
                     if (GuidanceMenuActivity.this._isBluetoothEnable && z2 && C2266l.m9823c() && GuidanceMenuActivity.this._imageAppService != null && !GuidanceMenuActivity.this._imageAppService.mo5647i()) {
-                        C2261g.m9763a(GuidanceMenuActivity.TAG, "_btConnectState:" + GuidanceMenuActivity.this._btConnectState);
-                        if (!C2331d.m10125b((Activity) GuidanceMenuActivity.this, C2328a.ON_BT_AP_LIST)) {
+                        ImageAppLog.debug(GuidanceMenuActivity.TAG, "_btConnectState:" + GuidanceMenuActivity.this._btConnectState);
+                        if (!DialogFactory.m10125b((Activity) GuidanceMenuActivity.this, C2328a.ON_BT_AP_LIST)) {
                             List f = C2266l.m9837f(GuidanceMenuActivity.this._context);
                             String string2 = defaultSharedPreferences2.getString("CurrentConnectedAddress", "");
                             GuidanceMenuActivity.this._btApList.clear();
@@ -505,14 +505,14 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
                                     GuidanceMenuActivity.this.connect(bluetoothDevice, str2, false);
                                 }
                             }
-                            if (GuidanceMenuActivity.this._btApList.size() > 0 && GuidanceMenuActivity.this._btConnectState.equalsIgnoreCase("Disconnected") && !GuidanceMenuActivity.this._isOnStartWifiCheck && !GuidanceMenuActivity.this._isBtScanSelectCancel && !C2331d.m10125b((Activity) GuidanceMenuActivity.this, C2328a.ON_BT_AP_LIST)) {
+                            if (GuidanceMenuActivity.this._btApList.size() > 0 && GuidanceMenuActivity.this._btConnectState.equalsIgnoreCase("Disconnected") && !GuidanceMenuActivity.this._isOnStartWifiCheck && !GuidanceMenuActivity.this._isBtScanSelectCancel && !DialogFactory.m10125b((Activity) GuidanceMenuActivity.this, C2328a.ON_BT_AP_LIST)) {
                                 GuidanceMenuActivity.this.showBluetoothAndApListDialog();
                             }
                         }
                     }
                 } else if (str3.equalsIgnoreCase("sleep") || str3.equalsIgnoreCase("sleep_pow_on") || str3.equalsIgnoreCase("sleep_pow_off") || str3.equalsIgnoreCase("sleep_pow_on_fast") || str3.equalsIgnoreCase("sleep_pow_off_fast")) {
                     if (C1712b.m6919c().mo4896a() != null) {
-                        C2261g.m9769c("TEST", "SLEEP変化無視");
+                        ImageAppLog.error("TEST", "SLEEP変化無視");
                         return;
                     }
                     String string3 = PreferenceManager.getDefaultSharedPreferences(GuidanceMenuActivity.this._context).getString("CurrentConnectedAddress", "");
@@ -524,7 +524,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
                         GuidanceMenuActivity.this.updateView(C2678f.ConnectedBt);
                     }
                 } else if (C1712b.m6919c().mo4896a() != null) {
-                    C2261g.m9769c("TEST", "SLEEP変化無視");
+                    ImageAppLog.error("TEST", "SLEEP変化無視");
                 } else {
                     GuidanceMenuActivity.this._btConnectState = "Disconnected";
                     GuidanceMenuActivity.this._btAdvertisingState = "none";
@@ -539,17 +539,17 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
 
         /* renamed from: a */
         public void mo5667a(UUID uuid, int i, Bundle bundle) {
-            C2261g.m9763a(GuidanceMenuActivity.TAG, "onBleReadEnd");
+            ImageAppLog.debug(GuidanceMenuActivity.TAG, "onBleReadEnd");
             if (GuidanceMenuActivity.this._imageAppService != null && !GuidanceMenuActivity.this._imageAppService.mo5647i()) {
                 if (uuid.equals(UUID.fromString("69e4d998-54b7-40f5-a5f8-4cc236cd2347"))) {
                     byte[] byteArray = bundle.getByteArray("VALUE");
                     if (byteArray != null && byteArray.length > 0) {
-                        C2261g.m9763a(GuidanceMenuActivity.TAG, "ret[0]:" + byteArray[0]);
+                        ImageAppLog.debug(GuidanceMenuActivity.TAG, "ret[0]:" + byteArray[0]);
                         if (byteArray[0] == 2) {
                             GuidanceMenuActivity.this.startActivityForResult(new Intent(GuidanceMenuActivity.this.getApplication(), BluetoothCloudBackupActivity.class), 7);
                         } else if (GuidanceMenuActivity.this._btConnectState.equals("Connected")) {
                             if (GuidanceMenuActivity.this._imageAppService != null) {
-                                C2261g.m9763a(GuidanceMenuActivity.TAG, "writeData:" + GuidanceMenuActivity.this._imageAppService.mo5627a(1, C2266l.m9808a("4D454930010010008001" + PreferenceManager.getDefaultSharedPreferences(GuidanceMenuActivity.this._context).getString("Dlna_UUID_Seed", ""))));
+                                ImageAppLog.debug(GuidanceMenuActivity.TAG, "writeData:" + GuidanceMenuActivity.this._imageAppService.mo5627a(1, C2266l.m9808a("4D454930010010008001" + PreferenceManager.getDefaultSharedPreferences(GuidanceMenuActivity.this._context).getString("Dlna_UUID_Seed", ""))));
                             }
                         } else if (GuidanceMenuActivity.this._btAdvertisingState.equalsIgnoreCase("wakeup")) {
                             GuidanceMenuActivity.this.writeWakeUpInfo();
@@ -566,7 +566,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
                         GuidanceMenuActivity.this._initialForm = jArr[3] | (jArr[0] << 24) | (jArr[1] << 16) | (jArr[2] << 8);
                         if (GuidanceMenuActivity.this._imageAppService != null) {
                             GuidanceMenuActivity.this._isChangedSSID = false;
-                            C2261g.m9763a(GuidanceMenuActivity.TAG, "readData:" + GuidanceMenuActivity.this._imageAppService.mo5626a(5));
+                            ImageAppLog.debug(GuidanceMenuActivity.TAG, "readData:" + GuidanceMenuActivity.this._imageAppService.mo5626a(5));
                         }
                     }
                 } else if (uuid.equals(UUID.fromString("e206a5c0-3214-11e6-afe4-0002a5d5c51b"))) {
@@ -582,7 +582,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
                         }).start();
                     }
                     if (!GuidanceMenuActivity.this._isChangedSSID && GuidanceMenuActivity.this._imageAppService != null) {
-                        C2261g.m9763a(GuidanceMenuActivity.TAG, "readData:" + GuidanceMenuActivity.this._imageAppService.mo5626a(6));
+                        ImageAppLog.debug(GuidanceMenuActivity.TAG, "readData:" + GuidanceMenuActivity.this._imageAppService.mo5626a(6));
                     }
                 } else if (uuid.equals(UUID.fromString("c97cf1a5-3c03-4290-8c1b-9e74b9500f54"))) {
                     byte[] byteArray4 = bundle.getByteArray("VALUE");
@@ -591,21 +591,21 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
                         wrap.order(ByteOrder.LITTLE_ENDIAN);
                         PreferenceManager.getDefaultSharedPreferences(GuidanceMenuActivity.this._context).edit().putString("CurrentConnectedPass", C1686t.m6748a(wrap.array(), GuidanceMenuActivity.this._initialForm).trim()).apply();
                     }
-                    WifiInfo b = new C2754l(GuidanceMenuActivity.this._context).mo6743b();
+                    WifiInfo b = new WifiUtil(GuidanceMenuActivity.this._context).mo6743b();
                     if (b.getIpAddress() == 0) {
-                        C2261g.m9763a(GuidanceMenuActivity.TAG, "SoftAP");
+                        ImageAppLog.debug(GuidanceMenuActivity.TAG, "SoftAP");
                         GuidanceMenuActivity.this._isConnectConfirmDone = true;
                         GuidanceMenuActivity.this._isSoftAp = true;
-                        C2261g.m9763a(GuidanceMenuActivity.TAG, "writeData:" + GuidanceMenuActivity.this._imageAppService.mo5627a(11, C4244s.f14197g));
+                        ImageAppLog.debug(GuidanceMenuActivity.TAG, "writeData:" + GuidanceMenuActivity.this._imageAppService.mo5627a(11, C4244s.f14197g));
                         return;
                     }
-                    C2261g.m9763a(GuidanceMenuActivity.TAG, "STA");
-                    C2261g.m9763a(GuidanceMenuActivity.TAG, "wifiInfo.getSSID():" + b.getSSID());
+                    ImageAppLog.debug(GuidanceMenuActivity.TAG, "STA");
+                    ImageAppLog.debug(GuidanceMenuActivity.TAG, "wifiInfo.getSSID():" + b.getSSID());
                     String ssid = b.getSSID();
                     if (ssid.startsWith("\"") && ssid.endsWith("\"")) {
                         ssid = ssid.substring(1, ssid.length() - 1);
                     }
-                    C2261g.m9763a(GuidanceMenuActivity.TAG, "writeData:" + GuidanceMenuActivity.this._imageAppService.mo5627a(12, C2266l.m9792a(32, ssid).getBytes()));
+                    ImageAppLog.debug(GuidanceMenuActivity.TAG, "writeData:" + GuidanceMenuActivity.this._imageAppService.mo5627a(12, C2266l.m9792a(32, ssid).getBytes()));
                 } else if (uuid.equals(UUID.fromString("e1392720-3215-11e6-a035-0002a5d5c51b")) && GuidanceMenuActivity.this._imageAppService != null) {
                     GuidanceMenuActivity.this._imageAppService.mo5650l();
                 }
@@ -616,7 +616,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
         public void mo5666a(UUID uuid, int i) {
             String a;
             String c;
-            C2261g.m9763a(GuidanceMenuActivity.TAG, "onBleWriteEnd");
+            ImageAppLog.debug(GuidanceMenuActivity.TAG, "onBleWriteEnd");
             if (GuidanceMenuActivity.this._imageAppService != null && !GuidanceMenuActivity.this._imageAppService.mo5647i()) {
                 if (uuid.equals(UUID.fromString("8d08a420-3213-11e6-8aca-0002a5d5c51b"))) {
                     if (!GuidanceMenuActivity.this._imageAppService.mo5645g() && GuidanceMenuActivity.this._imageAppService != null) {
@@ -634,7 +634,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
                         } else {
                             a = GuidanceMenuActivity.this._imageAppService.mo5627a(2, string2.getBytes());
                         }
-                        C2261g.m9763a(GuidanceMenuActivity.TAG, "writeData:" + a);
+                        ImageAppLog.debug(GuidanceMenuActivity.TAG, "writeData:" + a);
                     }
                 } else if (uuid.equals(UUID.fromString("cd7a71a0-3213-11e6-8f56-0002a5d5c51b"))) {
                     if (GuidanceMenuActivity.this._isBTWakeupFastBootAPError) {
@@ -650,7 +650,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
                     if (i == 133 && GuidanceMenuActivity.this._handler != null) {
                         GuidanceMenuActivity.this._handler.post(new Runnable() {
                             public void run() {
-                                C2331d.m10114a((Activity) GuidanceMenuActivity.this, C2328a.ON_BT_PARING_REGIST_ERROR, (Bundle) null);
+                                DialogFactory.m10114a((Activity) GuidanceMenuActivity.this, C2328a.ON_BT_PARING_REGIST_ERROR, (Bundle) null);
                             }
                         });
                     }
@@ -658,10 +658,10 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
                         public void run() {
                             int i = 1;
                             boolean a = GuidanceMenuActivity.this._imageAppService.mo5637a("f3b05360-3215-11e6-8529-0002a5d5c51b", "cb6b7580-3218-11e6-92ad-0002a5d5c51b");
-                            C2261g.m9769c(GuidanceMenuActivity.TAG, "isCloudBackupSupported:" + a);
+                            ImageAppLog.error(GuidanceMenuActivity.TAG, "isCloudBackupSupported:" + a);
                             C2266l.m9798a(GuidanceMenuActivity.this._context, GuidanceMenuActivity.this._publicAddress, a ? 1 : 0);
                             boolean a2 = GuidanceMenuActivity.this._imageAppService.mo5637a("054ac620-3214-11e6-0001-0002a5d5c51b", "054ac621-3214-11e6-0001-0002a5d5c51b");
-                            C2261g.m9769c(GuidanceMenuActivity.TAG, "isCameraSettingSupported:" + a2);
+                            ImageAppLog.error(GuidanceMenuActivity.TAG, "isCameraSettingSupported:" + a2);
                             Context access$25000 = GuidanceMenuActivity.this._context;
                             String access$2000 = GuidanceMenuActivity.this._publicAddress;
                             if (!a2) {
@@ -685,7 +685,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
                         } else if (GuidanceMenuActivity.this._handler != null) {
                             GuidanceMenuActivity.this._handler.post(new Runnable() {
                                 public void run() {
-                                    C2331d.m10100a((Activity) GuidanceMenuActivity.this);
+                                    DialogFactory.m10100a((Activity) GuidanceMenuActivity.this);
                                 }
                             });
                         }
@@ -697,12 +697,12 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
                     GuidanceMenuActivity.this._isBTWakeupFastBootAPError = false;
                     if ((!GuidanceMenuActivity.this._isBTFastBoot || GuidanceMenuActivity.this._imageAppService.mo5645g()) && GuidanceMenuActivity.this._imageAppService != null && GuidanceMenuActivity.this._isConnectConfirmDone) {
                         if (!GuidanceMenuActivity.this._imageAppService.mo5645g()) {
-                            C2261g.m9763a(GuidanceMenuActivity.TAG, "writeData:" + GuidanceMenuActivity.this._imageAppService.mo5627a(4, C4244s.f14194d));
+                            ImageAppLog.debug(GuidanceMenuActivity.TAG, "writeData:" + GuidanceMenuActivity.this._imageAppService.mo5627a(4, C4244s.f14194d));
                         } else if (GuidanceMenuActivity.this._handler != null) {
                             GuidanceMenuActivity.this._handler.post(new Runnable() {
                                 public void run() {
-                                    C2331d.m10100a((Activity) GuidanceMenuActivity.this);
-                                    C2331d.m10114a((Activity) GuidanceMenuActivity.this, C2328a.ON_BT_AUTOSEND_RECEIVE_WIFI_CONNECT_CONFIRM, (Bundle) null);
+                                    DialogFactory.m10100a((Activity) GuidanceMenuActivity.this);
+                                    DialogFactory.m10114a((Activity) GuidanceMenuActivity.this, C2328a.ON_BT_AUTOSEND_RECEIVE_WIFI_CONNECT_CONFIRM, (Bundle) null);
                                 }
                             });
                         }
@@ -710,7 +710,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
                     }
                 } else if (uuid.equals(UUID.fromString("18345be0-3217-11e6-b56c-0002a5d5c51b"))) {
                     if (GuidanceMenuActivity.this._imageAppService != null) {
-                        C2261g.m9763a(GuidanceMenuActivity.TAG, "writeData:" + GuidanceMenuActivity.this._imageAppService.mo5627a(11, C4244s.f14199i));
+                        ImageAppLog.debug(GuidanceMenuActivity.TAG, "writeData:" + GuidanceMenuActivity.this._imageAppService.mo5627a(11, C4244s.f14199i));
                     }
                 } else if (uuid.equals(UUID.fromString("e182ec40-3213-11e6-ab07-0002a5d5c51b"))) {
                     if (GuidanceMenuActivity.this._imageAppService == null) {
@@ -725,8 +725,8 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
                     } else if (GuidanceMenuActivity.this._isActionModeResultUUID) {
                         GuidanceMenuActivity.this._isActionModeResultUUID = false;
                     } else {
-                        C2261g.m9769c(GuidanceMenuActivity.TAG, "_isBTFastBootConnectFail:" + GuidanceMenuActivity.this._isBTFastBootConnectFail);
-                        C2261g.m9769c(GuidanceMenuActivity.TAG, "_isBTFastBootAPConnect:" + GuidanceMenuActivity.this._isBTFastBootAPConnect);
+                        ImageAppLog.error(GuidanceMenuActivity.TAG, "_isBTFastBootConnectFail:" + GuidanceMenuActivity.this._isBTFastBootConnectFail);
+                        ImageAppLog.error(GuidanceMenuActivity.TAG, "_isBTFastBootAPConnect:" + GuidanceMenuActivity.this._isBTFastBootAPConnect);
                         if (GuidanceMenuActivity.this._isBTFastBootConnectFail || (GuidanceMenuActivity.this._isBTFastBoot && !GuidanceMenuActivity.this._isBTFastBootAPConnect)) {
                             if (GuidanceMenuActivity.this._viewModel != null) {
                                 String str2 = "";
@@ -777,7 +777,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
                         }
                     }
                 } else if (uuid.equals(UUID.fromString("7be5fd56-475b-11e7-a919-92ebcb67fe33"))) {
-                    C2261g.m9769c(GuidanceMenuActivity.TAG, "REMOTE_CONTROL_ACTION_UUID write OK");
+                    ImageAppLog.error(GuidanceMenuActivity.TAG, "REMOTE_CONTROL_ACTION_UUID write OK");
                     if (GuidanceMenuActivity.this._isBTWakeupFastBootAPError) {
                         GuidanceMenuActivity.this._isBTWakeupFastBootAPError = false;
                         if (GuidanceMenuActivity.this._handler != null) {
@@ -798,21 +798,21 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
             String str2;
             String str3;
             boolean z2 = false;
-            C2261g.m9763a(GuidanceMenuActivity.TAG, "onBleNotification");
+            ImageAppLog.debug(GuidanceMenuActivity.TAG, "onBleNotification");
             byte[] byteArray = bundle.getByteArray("VALUE");
             if (GuidanceMenuActivity.this._imageAppService != null) {
                 if (!GuidanceMenuActivity.this._imageAppService.mo5647i()) {
                     if (str.equals("18345be1-3217-11e6-b56c-0002a5d5c51b")) {
                         GuidanceMenuActivity.this._isConnectConfirmDone = true;
                         if (byteArray != null && byteArray.length > 0) {
-                            C2261g.m9763a(GuidanceMenuActivity.TAG, "result[0]:" + byteArray[0]);
+                            ImageAppLog.debug(GuidanceMenuActivity.TAG, "result[0]:" + byteArray[0]);
                             if (byteArray[0] == 0) {
-                                C2261g.m9763a(GuidanceMenuActivity.TAG, "WifiConnectSTA");
-                                C2261g.m9763a(GuidanceMenuActivity.TAG, "writeData:" + GuidanceMenuActivity.this._imageAppService.mo5627a(11, C4244s.f14198h));
+                                ImageAppLog.debug(GuidanceMenuActivity.TAG, "WifiConnectSTA");
+                                ImageAppLog.debug(GuidanceMenuActivity.TAG, "writeData:" + GuidanceMenuActivity.this._imageAppService.mo5627a(11, C4244s.f14198h));
                                 z = false;
                             } else {
-                                C2261g.m9763a(GuidanceMenuActivity.TAG, "WifiConnectSoftAP");
-                                C2261g.m9763a(GuidanceMenuActivity.TAG, "writeData:" + GuidanceMenuActivity.this._imageAppService.mo5627a(11, C4244s.f14197g));
+                                ImageAppLog.debug(GuidanceMenuActivity.TAG, "WifiConnectSoftAP");
+                                ImageAppLog.debug(GuidanceMenuActivity.TAG, "writeData:" + GuidanceMenuActivity.this._imageAppService.mo5627a(11, C4244s.f14197g));
                                 z = true;
                             }
                             String str4 = "";
@@ -855,20 +855,20 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
                                 if (GuidanceMenuActivity.this._imageAppService != null) {
                                     GuidanceMenuActivity.this._imageAppService.mo5641c();
                                 }
-                                WifiInfo b = new C2754l(GuidanceMenuActivity.this._context).mo6743b();
+                                WifiInfo b = new WifiUtil(GuidanceMenuActivity.this._context).mo6743b();
                                 if (b.getIpAddress() == 0) {
-                                    C2261g.m9763a(GuidanceMenuActivity.TAG, "SoftAP");
+                                    ImageAppLog.debug(GuidanceMenuActivity.TAG, "SoftAP");
                                     GuidanceMenuActivity.this._isConnectConfirmDone = true;
                                     GuidanceMenuActivity.this._isSoftAp = true;
-                                    C2261g.m9763a(GuidanceMenuActivity.TAG, "writeData:" + GuidanceMenuActivity.this._imageAppService.mo5627a(11, C4244s.f14197g));
+                                    ImageAppLog.debug(GuidanceMenuActivity.TAG, "writeData:" + GuidanceMenuActivity.this._imageAppService.mo5627a(11, C4244s.f14197g));
                                 } else {
-                                    C2261g.m9763a(GuidanceMenuActivity.TAG, "STA");
-                                    C2261g.m9763a(GuidanceMenuActivity.TAG, "wifiInfo.getSSID():" + b.getSSID());
+                                    ImageAppLog.debug(GuidanceMenuActivity.TAG, "STA");
+                                    ImageAppLog.debug(GuidanceMenuActivity.TAG, "wifiInfo.getSSID():" + b.getSSID());
                                     String ssid = b.getSSID();
                                     if (ssid.startsWith("\"") && ssid.endsWith("\"")) {
                                         ssid = ssid.substring(1, ssid.length() - 1);
                                     }
-                                    C2261g.m9763a(GuidanceMenuActivity.TAG, "writeData:" + GuidanceMenuActivity.this._imageAppService.mo5627a(12, C2266l.m9792a(32, ssid).getBytes()));
+                                    ImageAppLog.debug(GuidanceMenuActivity.TAG, "writeData:" + GuidanceMenuActivity.this._imageAppService.mo5627a(12, C2266l.m9792a(32, ssid).getBytes()));
                                 }
                             } else if (byteArray[0] == 2) {
                                 GuidanceMenuActivity.this._isAutoSendMode = false;
@@ -879,14 +879,14 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
                                     } else {
                                         GuidanceMenuActivity.this._imageAppService.mo5636a((long) GuidanceMenuActivity.SCAN_PERIOD);
                                     }
-                                    if (!C2331d.m10125b((Activity) GuidanceMenuActivity.this, C2328a.ON_BT_AUTOSEND_PLEASE_OFF)) {
-                                        C2331d.m10100a((Activity) GuidanceMenuActivity.this);
+                                    if (!DialogFactory.m10125b((Activity) GuidanceMenuActivity.this, C2328a.ON_BT_AUTOSEND_PLEASE_OFF)) {
+                                        DialogFactory.m10100a((Activity) GuidanceMenuActivity.this);
                                     }
                                 }
                             } else if (byteArray[0] == 3) {
                                 GuidanceMenuActivity.this._isChangedSSID = true;
                                 if (GuidanceMenuActivity.this._imageAppService != null) {
-                                    C2261g.m9763a(GuidanceMenuActivity.TAG, "readData:" + GuidanceMenuActivity.this._imageAppService.mo5626a(5));
+                                    ImageAppLog.debug(GuidanceMenuActivity.TAG, "readData:" + GuidanceMenuActivity.this._imageAppService.mo5626a(5));
                                 }
                             } else {
                                 GuidanceMenuActivity.this._isAutoSendMode = false;
@@ -916,7 +916,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
                             if (GuidanceMenuActivity.this._isAutoSendMode) {
                                 GuidanceMenuActivity.this._handler.post(new Runnable() {
                                     public void run() {
-                                        C2331d.m10100a((Activity) GuidanceMenuActivity.this);
+                                        DialogFactory.m10100a((Activity) GuidanceMenuActivity.this);
                                     }
                                 });
                                 if (GuidanceMenuActivity.this._imageAppService != null) {
@@ -926,8 +926,8 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
                             } else {
                                 GuidanceMenuActivity.this._handler.post(new Runnable() {
                                     public void run() {
-                                        C2331d.m10100a((Activity) GuidanceMenuActivity.this);
-                                        C2331d.m10114a((Activity) GuidanceMenuActivity.this, C2328a.ON_BT_CANNOT_REMOTE_WAKEUP, (Bundle) null);
+                                        DialogFactory.m10100a((Activity) GuidanceMenuActivity.this);
+                                        DialogFactory.m10114a((Activity) GuidanceMenuActivity.this, C2328a.ON_BT_CANNOT_REMOTE_WAKEUP, (Bundle) null);
                                     }
                                 });
                                 GuidanceMenuActivity.this.stopConnecting();
@@ -938,12 +938,12 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
                         if (byteArray != null && byteArray.length > 0) {
                             if (byteArray[0] == 0) {
                                 if (GuidanceMenuActivity.this._isBTRemoteControllerEnableConfirm) {
-                                    C2261g.m9763a(GuidanceMenuActivity.TAG, "writeData:" + GuidanceMenuActivity.this._imageAppService.mo5627a(39, C4244s.f14210t));
+                                    ImageAppLog.debug(GuidanceMenuActivity.TAG, "writeData:" + GuidanceMenuActivity.this._imageAppService.mo5627a(39, C4244s.f14210t));
                                     GuidanceMenuActivity.this._isBTRemoteControllerEnableConfirm = false;
                                 } else {
                                     GuidanceMenuActivity.this._handler.post(new Runnable() {
                                         public void run() {
-                                            C2331d.m10100a((Activity) GuidanceMenuActivity.this);
+                                            DialogFactory.m10100a((Activity) GuidanceMenuActivity.this);
                                         }
                                     });
                                     Intent intent = new Intent(GuidanceMenuActivity.this.getApplication(), BluetoothRemoteControllerActivity.class);
@@ -966,32 +966,32 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
                                 GuidanceMenuActivity.this._isBTRemoteControllerEnableConfirm = false;
                                 GuidanceMenuActivity.this._handler.post(new Runnable() {
                                     public void run() {
-                                        C2331d.m10100a((Activity) GuidanceMenuActivity.this);
-                                        C2331d.m10114a((Activity) GuidanceMenuActivity.this, C2328a.ON_BT_CANNOT_REMOTE_WAKEUP, (Bundle) null);
+                                        DialogFactory.m10100a((Activity) GuidanceMenuActivity.this);
+                                        DialogFactory.m10114a((Activity) GuidanceMenuActivity.this, C2328a.ON_BT_CANNOT_REMOTE_WAKEUP, (Bundle) null);
                                     }
                                 });
                             } else if (byteArray[0] == 2) {
                                 GuidanceMenuActivity.this._isBTRemoteControllerEnableConfirm = false;
                                 GuidanceMenuActivity.this._handler.post(new Runnable() {
                                     public void run() {
-                                        C2331d.m10100a((Activity) GuidanceMenuActivity.this);
-                                        C2331d.m10114a((Activity) GuidanceMenuActivity.this, C2328a.ON_BT_REMOTE_CONTROL_CANNOT_USE_FOR_SW_OFF, (Bundle) null);
+                                        DialogFactory.m10100a((Activity) GuidanceMenuActivity.this);
+                                        DialogFactory.m10114a((Activity) GuidanceMenuActivity.this, C2328a.ON_BT_REMOTE_CONTROL_CANNOT_USE_FOR_SW_OFF, (Bundle) null);
                                     }
                                 });
                             } else if (byteArray[0] == 3) {
                                 GuidanceMenuActivity.this._isBTRemoteControllerEnableConfirm = false;
                                 GuidanceMenuActivity.this._handler.post(new Runnable() {
                                     public void run() {
-                                        C2331d.m10100a((Activity) GuidanceMenuActivity.this);
-                                        C2331d.m10114a((Activity) GuidanceMenuActivity.this, C2328a.ON_BT_REMOTE_CONTROL_CANNOT_USE_FOR_AUTOSEND, (Bundle) null);
+                                        DialogFactory.m10100a((Activity) GuidanceMenuActivity.this);
+                                        DialogFactory.m10114a((Activity) GuidanceMenuActivity.this, C2328a.ON_BT_REMOTE_CONTROL_CANNOT_USE_FOR_AUTOSEND, (Bundle) null);
                                     }
                                 });
                             } else if (byteArray[0] == 4) {
                                 GuidanceMenuActivity.this._isBTRemoteControllerEnableConfirm = false;
                                 GuidanceMenuActivity.this._handler.post(new Runnable() {
                                     public void run() {
-                                        C2331d.m10100a((Activity) GuidanceMenuActivity.this);
-                                        C2331d.m10114a((Activity) GuidanceMenuActivity.this, C2328a.ON_BT_REMOTE_CONTROL_WIFI_CONFIRM, (Bundle) null);
+                                        DialogFactory.m10100a((Activity) GuidanceMenuActivity.this);
+                                        DialogFactory.m10114a((Activity) GuidanceMenuActivity.this, C2328a.ON_BT_REMOTE_CONTROL_WIFI_CONFIRM, (Bundle) null);
                                     }
                                 });
                             }
@@ -999,7 +999,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
                     }
                 }
                 if (str.equals("da534d0a-63a3-447c-a889-aab701906af2")) {
-                    C2261g.m9769c(GuidanceMenuActivity.TAG, "_reconnect:" + GuidanceMenuActivity.this._reconnect);
+                    ImageAppLog.error(GuidanceMenuActivity.TAG, "_reconnect:" + GuidanceMenuActivity.this._reconnect);
                     if (!GuidanceMenuActivity.this._reconnect) {
                         GuidanceMenuActivity.this.startActivityForResult(new Intent(GuidanceMenuActivity.this.getApplication(), BluetoothCloudBackupActivity.class), 30);
                     }
@@ -1009,7 +1009,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
 
         /* renamed from: d */
         public void mo5672d() {
-            C2261g.m9763a(GuidanceMenuActivity.TAG, "onBleConnectError");
+            ImageAppLog.debug(GuidanceMenuActivity.TAG, "onBleConnectError");
             if (GuidanceMenuActivity.this._timeoutCount > 10) {
                 GuidanceMenuActivity.this._isWakeUpNG = false;
                 GuidanceMenuActivity.this._timeoutCount = 0;
@@ -1024,7 +1024,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
                                 GuidanceMenuActivity.this._actionMode = C4244s.f14191a;
                                 GuidanceMenuActivity.this._isBTFastBoot = false;
                                 GuidanceMenuActivity.this._isBTFastBootAPConnect = false;
-                                C2331d.m10114a((Activity) GuidanceMenuActivity.this, C2328a.ON_CAMERA_SETTING_NET_ERROR, (Bundle) null);
+                                DialogFactory.m10114a((Activity) GuidanceMenuActivity.this, C2328a.ON_CAMERA_SETTING_NET_ERROR, (Bundle) null);
                                 return;
                             }
                             GuidanceMenuActivity.this._btConnectState = "Disconnected";
@@ -1038,18 +1038,18 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
 
         /* renamed from: a */
         public void mo5661a() {
-            C2261g.m9763a(GuidanceMenuActivity.TAG, "onBleScanStart");
+            ImageAppLog.debug(GuidanceMenuActivity.TAG, "onBleScanStart");
         }
 
         /* renamed from: c */
         public void mo5671c() {
-            C2261g.m9763a(GuidanceMenuActivity.TAG, "onBleConnectTimeOut");
+            ImageAppLog.debug(GuidanceMenuActivity.TAG, "onBleConnectTimeOut");
             if (GuidanceMenuActivity.this._btAdvertisingState.equalsIgnoreCase("sleep") || GuidanceMenuActivity.this._btAdvertisingState.equalsIgnoreCase("sleep_pow_on") || GuidanceMenuActivity.this._btAdvertisingState.equalsIgnoreCase("sleep_pow_off") || GuidanceMenuActivity.this._btAdvertisingState.equalsIgnoreCase("sleep_pow_on_fast") || GuidanceMenuActivity.this._btAdvertisingState.equalsIgnoreCase("sleep_pow_off_fast")) {
                 GuidanceMenuActivity.this._bt_timeoutCounter = GuidanceMenuActivity.this._bt_timeoutCounter + 1;
-                C2261g.m9769c(GuidanceMenuActivity.TAG, "タイムアウトカウンタ:" + GuidanceMenuActivity.this._bt_timeoutCounter + ": " + GuidanceMenuActivity.this._btConnectState);
+                ImageAppLog.error(GuidanceMenuActivity.TAG, "タイムアウトカウンタ:" + GuidanceMenuActivity.this._bt_timeoutCounter + ": " + GuidanceMenuActivity.this._btConnectState);
                 if (GuidanceMenuActivity.this._bt_timeoutCounter == 15) {
                     GuidanceMenuActivity.this._bt_timeoutCounter = 0;
-                    C2261g.m9769c(GuidanceMenuActivity.TAG, "タイムアウト15回切断");
+                    ImageAppLog.error(GuidanceMenuActivity.TAG, "タイムアウト15回切断");
                     GuidanceMenuActivity.this._btConnectState = "Disconnected";
                     GuidanceMenuActivity.this._btAdvertisingState = "none";
                     GuidanceMenuActivity.this._isBTDisconnect = true;
@@ -1069,41 +1069,41 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
 
         /* renamed from: a */
         public void mo5665a(String str) {
-            C2261g.m9763a(GuidanceMenuActivity.TAG, "onBleCopyStatus");
-            C2261g.m9763a(GuidanceMenuActivity.TAG, "state:" + str);
+            ImageAppLog.debug(GuidanceMenuActivity.TAG, "onBleCopyStatus");
+            ImageAppLog.debug(GuidanceMenuActivity.TAG, "state:" + str);
             if (str.equalsIgnoreCase("Complete")) {
-                if (!C2331d.m10125b((Activity) GuidanceMenuActivity.this, C2328a.ON_BT_AUTOSEND_NOT_FOUND)) {
-                    C2331d.m10100a((Activity) GuidanceMenuActivity.this);
-                    C2331d.m10114a((Activity) GuidanceMenuActivity.this, C2328a.ON_BT_AUTOSEND_COPY_COMPLETE_CONFIRM, (Bundle) null);
+                if (!DialogFactory.m10125b((Activity) GuidanceMenuActivity.this, C2328a.ON_BT_AUTOSEND_NOT_FOUND)) {
+                    DialogFactory.m10100a((Activity) GuidanceMenuActivity.this);
+                    DialogFactory.m10114a((Activity) GuidanceMenuActivity.this, C2328a.ON_BT_AUTOSEND_COPY_COMPLETE_CONFIRM, (Bundle) null);
                 }
             } else if (str.equalsIgnoreCase("Copying")) {
-                if (!C2331d.m10125b((Activity) GuidanceMenuActivity.this, C2328a.ON_BT_AUTOSEND_NOT_FOUND)) {
-                    C2331d.m10115a((Activity) GuidanceMenuActivity.this, C2328a.ON_DMS_RECEIVING, (Bundle) null, (C2325c) new C2325c() {
+                if (!DialogFactory.m10125b((Activity) GuidanceMenuActivity.this, C2328a.ON_BT_AUTOSEND_NOT_FOUND)) {
+                    DialogFactory.m10115a((Activity) GuidanceMenuActivity.this, C2328a.ON_DMS_RECEIVING, (Bundle) null, (C2325c) new C2325c() {
                         /* renamed from: a */
                         public void mo6131a() {
-                            C2331d.m10129c((Activity) GuidanceMenuActivity.this, C2328a.ON_DMS_RECEIVING, (int) R.id.text, (int) R.string.cmn_msg_now_regist_image);
+                            DialogFactory.m10129c((Activity) GuidanceMenuActivity.this, C2328a.ON_DMS_RECEIVING, (int) R.id.text, (int) R.string.cmn_msg_now_regist_image);
                         }
                     });
                 }
             } else if (str.equalsIgnoreCase("NotFound")) {
-                if (!C2331d.m10125b((Activity) GuidanceMenuActivity.this, C2328a.ON_BT_AUTOSEND_NOT_FOUND)) {
-                    C2331d.m10100a((Activity) GuidanceMenuActivity.this);
-                    C2331d.m10115a((Activity) GuidanceMenuActivity.this, C2328a.ON_BT_AUTOSEND_NOT_FOUND, (Bundle) null, (C2325c) new C2325c() {
+                if (!DialogFactory.m10125b((Activity) GuidanceMenuActivity.this, C2328a.ON_BT_AUTOSEND_NOT_FOUND)) {
+                    DialogFactory.m10100a((Activity) GuidanceMenuActivity.this);
+                    DialogFactory.m10115a((Activity) GuidanceMenuActivity.this, C2328a.ON_BT_AUTOSEND_NOT_FOUND, (Bundle) null, (C2325c) new C2325c() {
                         /* renamed from: a */
                         public void mo6131a() {
-                            C2331d.m10111a((Activity) GuidanceMenuActivity.this, C2328a.ON_BT_AUTOSEND_NOT_FOUND, (int) R.id.text, (CharSequence) GuidanceMenuActivity.this._context.getString(R.string.msg_file_copy_error_occurred) + "\n" + GuidanceMenuActivity.this._context.getString(R.string.msg_communication_error_occurred) + "\n" + GuidanceMenuActivity.this._context.getString(R.string.msg_confirm_communication_env));
+                            DialogFactory.m10111a((Activity) GuidanceMenuActivity.this, C2328a.ON_BT_AUTOSEND_NOT_FOUND, (int) R.id.text, (CharSequence) GuidanceMenuActivity.this._context.getString(R.string.msg_file_copy_error_occurred) + "\n" + GuidanceMenuActivity.this._context.getString(R.string.msg_communication_error_occurred) + "\n" + GuidanceMenuActivity.this._context.getString(R.string.msg_confirm_communication_env));
                         }
                     });
                 }
             } else if (str.equalsIgnoreCase("NotRemain")) {
-                C2331d.m10100a((Activity) GuidanceMenuActivity.this);
-                C2331d.m10114a((Activity) GuidanceMenuActivity.this, C2328a.ErrNoRemainMultiPhoto, (Bundle) null);
+                DialogFactory.m10100a((Activity) GuidanceMenuActivity.this);
+                DialogFactory.m10114a((Activity) GuidanceMenuActivity.this, C2328a.ErrNoRemainMultiPhoto, (Bundle) null);
             } else if (str.equalsIgnoreCase("Error")) {
-                C2331d.m10100a((Activity) GuidanceMenuActivity.this);
-                C2331d.m10115a((Activity) GuidanceMenuActivity.this, C2328a.ON_BT_AUTOSEND_NOT_FOUND, (Bundle) null, (C2325c) new C2325c() {
+                DialogFactory.m10100a((Activity) GuidanceMenuActivity.this);
+                DialogFactory.m10115a((Activity) GuidanceMenuActivity.this, C2328a.ON_BT_AUTOSEND_NOT_FOUND, (Bundle) null, (C2325c) new C2325c() {
                     /* renamed from: a */
                     public void mo6131a() {
-                        C2331d.m10111a((Activity) GuidanceMenuActivity.this, C2328a.ON_BT_AUTOSEND_NOT_FOUND, (int) R.id.text, (CharSequence) GuidanceMenuActivity.this._context.getString(R.string.msg_file_copy_error_occurred) + "\n" + GuidanceMenuActivity.this._context.getString(R.string.msg_communication_error_occurred) + "\n" + GuidanceMenuActivity.this._context.getString(R.string.msg_confirm_communication_env));
+                        DialogFactory.m10111a((Activity) GuidanceMenuActivity.this, C2328a.ON_BT_AUTOSEND_NOT_FOUND, (int) R.id.text, (CharSequence) GuidanceMenuActivity.this._context.getString(R.string.msg_file_copy_error_occurred) + "\n" + GuidanceMenuActivity.this._context.getString(R.string.msg_communication_error_occurred) + "\n" + GuidanceMenuActivity.this._context.getString(R.string.msg_confirm_communication_env));
                     }
                 });
             }
@@ -1111,15 +1111,15 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
 
         /* renamed from: b */
         public void mo5670b(boolean z) {
-            C2261g.m9763a(GuidanceMenuActivity.TAG, "onBleNotificationEnable");
+            ImageAppLog.debug(GuidanceMenuActivity.TAG, "onBleNotificationEnable");
             if (!z) {
-                C2331d.m10114a((Activity) GuidanceMenuActivity.this, C2328a.ON_BT_GPS_DISABLE_CONFIRM, (Bundle) null);
+                DialogFactory.m10114a((Activity) GuidanceMenuActivity.this, C2328a.ON_BT_GPS_DISABLE_CONFIRM, (Bundle) null);
             }
         }
 
         /* renamed from: e */
         public void mo5673e() {
-            C2261g.m9763a(GuidanceMenuActivity.TAG, "onBleServicePrepared");
+            ImageAppLog.debug(GuidanceMenuActivity.TAG, "onBleServicePrepared");
             if (GuidanceMenuActivity.this._imageAppService != null) {
                 if (GuidanceMenuActivity.this._imageAppService.mo5645g()) {
                     GuidanceMenuActivity.this._isAutoSendMode = true;
@@ -1130,10 +1130,10 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
                 if (C1712b.m6919c().mo4896a() != null || GuidanceMenuActivity.this._isAutoSendMode) {
                     GuidanceMenuActivity.this._imageAppService.mo5641c();
                 }
-                C2261g.m9763a(GuidanceMenuActivity.TAG, "_isBTConnectNotCompleted:" + GuidanceMenuActivity.this._isBTConnectNotCompleted);
-                C2261g.m9763a(GuidanceMenuActivity.TAG, "_imageAppService.isBTConnected():" + GuidanceMenuActivity.this._imageAppService.mo5649k());
+                ImageAppLog.debug(GuidanceMenuActivity.TAG, "_isBTConnectNotCompleted:" + GuidanceMenuActivity.this._isBTConnectNotCompleted);
+                ImageAppLog.debug(GuidanceMenuActivity.TAG, "_imageAppService.isBTConnected():" + GuidanceMenuActivity.this._imageAppService.mo5649k());
                 if (GuidanceMenuActivity.this._isBTConnectNotCompleted && GuidanceMenuActivity.this._imageAppService.mo5649k()) {
-                    C2261g.m9763a(GuidanceMenuActivity.TAG, "writeData:" + GuidanceMenuActivity.this._imageAppService.mo5627a(1, C2266l.m9808a("4D454930010010008001" + PreferenceManager.getDefaultSharedPreferences(GuidanceMenuActivity.this._context).getString("Dlna_UUID_Seed", ""))));
+                    ImageAppLog.debug(GuidanceMenuActivity.TAG, "writeData:" + GuidanceMenuActivity.this._imageAppService.mo5627a(1, C2266l.m9808a("4D454930010010008001" + PreferenceManager.getDefaultSharedPreferences(GuidanceMenuActivity.this._context).getString("Dlna_UUID_Seed", ""))));
                     GuidanceMenuActivity.this._isBTConnectNotCompleted = false;
                 }
             }
@@ -1141,18 +1141,18 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
 
         /* renamed from: f */
         public void mo5674f() {
-            C2261g.m9763a(GuidanceMenuActivity.TAG, "onBleScanResultError");
+            ImageAppLog.debug(GuidanceMenuActivity.TAG, "onBleScanResultError");
         }
 
         /* renamed from: g */
         public void mo5675g() {
-            C2261g.m9763a(GuidanceMenuActivity.TAG, "onAutoSendAcctrlDone");
+            ImageAppLog.debug(GuidanceMenuActivity.TAG, "onAutoSendAcctrlDone");
             GuidanceMenuActivity.this._isAutoSendModeWifiConected = true;
             if (GuidanceMenuActivity.this._handler != null) {
                 GuidanceMenuActivity.this._handler.post(new Runnable() {
                     public void run() {
-                        if (C2331d.m10125b((Activity) GuidanceMenuActivity.this._context, C2328a.ON_BT_WAKEUP_CONNECTING)) {
-                            C2331d.m10102a((Activity) GuidanceMenuActivity.this, C2328a.ON_BT_WAKEUP_CONNECTING);
+                        if (DialogFactory.m10125b((Activity) GuidanceMenuActivity.this._context, C2328a.ON_BT_WAKEUP_CONNECTING)) {
+                            DialogFactory.m10102a((Activity) GuidanceMenuActivity.this, C2328a.ON_BT_WAKEUP_CONNECTING);
                             GuidanceMenuActivity.this.updateView(C2678f.ConnectedBt);
                         }
                     }
@@ -1168,7 +1168,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
 
         /* renamed from: a */
         public void mo6349a() {
-            C2261g.m9771e(GuidanceMenuActivity.TAG, "OnStartStartWifiCheck()");
+            ImageAppLog.info(GuidanceMenuActivity.TAG, "OnStartStartWifiCheck()");
             GuidanceMenuActivity.this._isOnStartWifiCheck = true;
             if (!GuidanceMenuActivity.this._showApList) {
                 GuidanceMenuActivity.this.showSimpleDlg(C2328a.ON_PROGRESS, null);
@@ -1178,8 +1178,8 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
         /* renamed from: a */
         public void mo6351a(int i, boolean z) {
             boolean z2 = true;
-            C2261g.m9771e(GuidanceMenuActivity.TAG, String.format("OnFinishStartWifiCheck(cancel=%b)", new Object[]{Boolean.valueOf(z)}));
-            if (!GuidanceMenuActivity.this._showApList && !C2331d.m10125b((Activity) GuidanceMenuActivity.this._context, C2328a.ON_BT_AUTOSEND_RECEIVE_WIFI_CONNECT_CONFIRM)) {
+            ImageAppLog.info(GuidanceMenuActivity.TAG, String.format("OnFinishStartWifiCheck(cancel=%b)", new Object[]{Boolean.valueOf(z)}));
+            if (!GuidanceMenuActivity.this._showApList && !DialogFactory.m10125b((Activity) GuidanceMenuActivity.this._context, C2328a.ON_BT_AUTOSEND_RECEIVE_WIFI_CONNECT_CONFIRM)) {
                 GuidanceMenuActivity.this.dismissAllDlg();
             }
             if (z) {
@@ -1228,12 +1228,12 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
                                     GuidanceMenuActivity.this._timeoutTimer = new Timer(true);
                                     GuidanceMenuActivity.this._timeoutTimer.schedule(new TimerTask() {
                                         public void run() {
-                                            C2261g.m9769c(GuidanceMenuActivity.TAG, "_isWakeUpNG:" + GuidanceMenuActivity.this._isWakeUpNG);
-                                            C2261g.m9769c(GuidanceMenuActivity.TAG, "_timeoutCount:" + GuidanceMenuActivity.this._timeoutCount);
+                                            ImageAppLog.error(GuidanceMenuActivity.TAG, "_isWakeUpNG:" + GuidanceMenuActivity.this._isWakeUpNG);
+                                            ImageAppLog.error(GuidanceMenuActivity.TAG, "_timeoutCount:" + GuidanceMenuActivity.this._timeoutCount);
                                             if (GuidanceMenuActivity.this._isWakeUpNG) {
                                                 GuidanceMenuActivity.this.connect(GuidanceMenuActivity.this._btDevice, GuidanceMenuActivity.this._publicAddress, GuidanceMenuActivity.this._isBTFastBoot);
                                                 GuidanceMenuActivity.this._timeoutCount = GuidanceMenuActivity.this._timeoutCount + 1;
-                                                C2261g.m9769c(GuidanceMenuActivity.TAG, "_timeoutCount:" + GuidanceMenuActivity.this._timeoutCount);
+                                                ImageAppLog.error(GuidanceMenuActivity.TAG, "_timeoutCount:" + GuidanceMenuActivity.this._timeoutCount);
                                                 if (GuidanceMenuActivity.this._timeoutCount > 10) {
                                                     GuidanceMenuActivity.this._isWakeUpNG = false;
                                                     GuidanceMenuActivity.this._timeoutCount = 0;
@@ -1271,7 +1271,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
                         }
                     } else if (VERSION.SDK_INT != 23 || !VERSION.RELEASE.equalsIgnoreCase("6.0")) {
                         if (GuidanceMenuActivity.this._viewModel != null) {
-                            C2685i access$600 = GuidanceMenuActivity.this._viewModel;
+                            GuidanceMenuViewModel access$600 = GuidanceMenuActivity.this._viewModel;
                             if (GuidanceMenuActivity.this._showApList) {
                                 z2 = false;
                             }
@@ -1296,14 +1296,14 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
                         C2337e.m10184d(GuidanceMenuActivity.this);
                         return;
                     } else if (GuidanceMenuActivity.this._actionMode == C4244s.f14194d) {
-                        C2331d.m10114a((Activity) GuidanceMenuActivity.this, C2328a.ON_BT_WIFI_CONNECT_CONFIRM, (Bundle) null);
+                        DialogFactory.m10114a((Activity) GuidanceMenuActivity.this, C2328a.ON_BT_WIFI_CONNECT_CONFIRM, (Bundle) null);
                         return;
                     } else if (GuidanceMenuActivity.this._imageAppService != null && GuidanceMenuActivity.this._imageAppService.mo5645g()) {
-                        C2331d.m10114a((Activity) GuidanceMenuActivity.this, C2328a.ON_BT_AUTOSEND_WIFI_CONNECT_CONFIRM, (Bundle) null);
+                        DialogFactory.m10114a((Activity) GuidanceMenuActivity.this, C2328a.ON_BT_AUTOSEND_WIFI_CONNECT_CONFIRM, (Bundle) null);
                         return;
                     } else if (new DlnaWrapper().mo4273e() != 0) {
                         GuidanceMenuActivity.this._viewModel.mo6636b(GuidanceMenuActivity.this._nfcTouch, false);
-                        C2253z.m9688b(GuidanceMenuActivity.this._context, true).mo5328e();
+                        ServiceFactory.m9688b(GuidanceMenuActivity.this._context, true).mo5328e();
                         return;
                     } else {
                         GuidanceMenuActivity.this.updateView(C2678f.NotConnected);
@@ -1317,16 +1317,16 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
 
         /* renamed from: b */
         public void mo6359b() {
-            C2261g.m9771e(GuidanceMenuActivity.TAG, "OnStartSetWifiEnable()");
-            if (!C2331d.m10125b((Activity) GuidanceMenuActivity.this._context, C2328a.ON_BT_WAKEUP_CONNECTING)) {
+            ImageAppLog.info(GuidanceMenuActivity.TAG, "OnStartSetWifiEnable()");
+            if (!DialogFactory.m10125b((Activity) GuidanceMenuActivity.this._context, C2328a.ON_BT_WAKEUP_CONNECTING)) {
                 GuidanceMenuActivity.this.showSimpleDlg(C2328a.ON_PROGRESS, null);
             }
         }
 
         /* renamed from: a */
         public void mo6356a(boolean z, int i, boolean z2) {
-            C2261g.m9771e(GuidanceMenuActivity.TAG, String.format("OnFinishSetWifiEnable(cancel=%b)", new Object[]{Boolean.valueOf(z2)}));
-            if (!C2331d.m10125b((Activity) GuidanceMenuActivity.this._context, C2328a.ON_BT_WAKEUP_CONNECTING)) {
+            ImageAppLog.info(GuidanceMenuActivity.TAG, String.format("OnFinishSetWifiEnable(cancel=%b)", new Object[]{Boolean.valueOf(z2)}));
+            if (!DialogFactory.m10125b((Activity) GuidanceMenuActivity.this._context, C2328a.ON_BT_WAKEUP_CONNECTING)) {
                 GuidanceMenuActivity.this.dismissAllDlg();
             }
             if (z2) {
@@ -1342,7 +1342,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
                     GuidanceMenuActivity.this._viewModel.mo6630a(GuidanceMenuActivity.this._ssid, string, false, 90);
                 }
             } else if (!z) {
-                C2331d.m10114a((Activity) GuidanceMenuActivity.this, C2328a.ON_WIFI_ENABLE_ERROR, (Bundle) null);
+                DialogFactory.m10114a((Activity) GuidanceMenuActivity.this, C2328a.ON_WIFI_ENABLE_ERROR, (Bundle) null);
             } else if (GuidanceMenuActivity.this._viewModel != null) {
                 GuidanceMenuActivity.this._viewModel.mo6637c((int) GuidanceMenuActivity.WAIT_AP_CONNECT_TIME);
             }
@@ -1350,19 +1350,19 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
 
         /* renamed from: c */
         public void mo6361c() {
-            C2261g.m9771e(GuidanceMenuActivity.TAG, "OnStartUpdateAccessPointList()");
-            if (!C2331d.m10125b((Activity) GuidanceMenuActivity.this._context, C2328a.ON_BT_AUTOSEND_RECEIVE_WIFI_CONNECT_CONFIRM)) {
+            ImageAppLog.info(GuidanceMenuActivity.TAG, "OnStartUpdateAccessPointList()");
+            if (!DialogFactory.m10125b((Activity) GuidanceMenuActivity.this._context, C2328a.ON_BT_AUTOSEND_RECEIVE_WIFI_CONNECT_CONFIRM)) {
                 GuidanceMenuActivity.this.showSimpleDlg(C2328a.ON_SEARCHING_AP, null);
             }
         }
 
         /* renamed from: a */
         public void mo6353a(List<C2649a> list) {
-            C2261g.m9771e(GuidanceMenuActivity.TAG, "OnFinishUpdateAccessPointList()");
-            if (!C2331d.m10125b((Activity) GuidanceMenuActivity.this._context, C2328a.ON_BT_AUTOSEND_RECEIVE_WIFI_CONNECT_CONFIRM)) {
+            ImageAppLog.info(GuidanceMenuActivity.TAG, "OnFinishUpdateAccessPointList()");
+            if (!DialogFactory.m10125b((Activity) GuidanceMenuActivity.this._context, C2328a.ON_BT_AUTOSEND_RECEIVE_WIFI_CONNECT_CONFIRM)) {
                 GuidanceMenuActivity.this.dismissAllDlg();
             }
-            C2261g.m9769c(GuidanceMenuActivity.TAG, "_showApList:" + GuidanceMenuActivity.this._showApList);
+            ImageAppLog.error(GuidanceMenuActivity.TAG, "_showApList:" + GuidanceMenuActivity.this._showApList);
             if (list != null) {
                 GuidanceMenuActivity.this._apList = list;
             }
@@ -1418,7 +1418,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
 
         /* renamed from: d */
         public void mo6363d() {
-            C2261g.m9771e(GuidanceMenuActivity.TAG, "OnStartConnectAccessPoint()");
+            ImageAppLog.info(GuidanceMenuActivity.TAG, "OnStartConnectAccessPoint()");
             if (!GuidanceMenuActivity.this._btAdvertisingState.equalsIgnoreCase("sleep") && !GuidanceMenuActivity.this._btAdvertisingState.equalsIgnoreCase("sleep_pow_on") && !GuidanceMenuActivity.this._btAdvertisingState.equalsIgnoreCase("sleep_pow_off") && !GuidanceMenuActivity.this._btAdvertisingState.equalsIgnoreCase("sleep_pow_on_fast") && !GuidanceMenuActivity.this._btAdvertisingState.equalsIgnoreCase("sleep_pow_off_fast")) {
                 GuidanceMenuActivity.this.updateView(C2678f.Connecting);
             }
@@ -1448,21 +1448,21 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
 
         /* renamed from: a */
         public void mo6352a(C2649a aVar, int i, boolean z, boolean z2) {
-            C2261g.m9771e(GuidanceMenuActivity.TAG, String.format("OnFinishConnectAccessPoint(cancel=%b)", new Object[]{Boolean.valueOf(z)}));
+            ImageAppLog.info(GuidanceMenuActivity.TAG, String.format("OnFinishConnectAccessPoint(cancel=%b)", new Object[]{Boolean.valueOf(z)}));
             GuidanceMenuActivity.this.resetConnectOnStart();
             if (GuidanceMenuActivity.this._imageAppService != null) {
                 if (GuidanceMenuActivity.this._imageAppService.mo5649k() && GuidanceMenuActivity.this._imageAppService.mo5645g() && GuidanceMenuActivity.this._imageAppService.mo5652n()) {
-                    C2331d.m10102a((Activity) GuidanceMenuActivity.this, C2328a.ON_BT_WAKEUP_CONNECTING);
+                    DialogFactory.m10102a((Activity) GuidanceMenuActivity.this, C2328a.ON_BT_WAKEUP_CONNECTING);
                     GuidanceMenuActivity.this.updateView(C2678f.ConnectedBt);
                     return;
-                } else if (C2331d.m10125b((Activity) GuidanceMenuActivity.this, C2328a.ON_BT_AUTOSEND_RECEIVE_WIFI_CONNECT_CONFIRM)) {
-                    C2261g.m9769c(GuidanceMenuActivity.TAG, "自動画像転送MSG中は無視");
+                } else if (DialogFactory.m10125b((Activity) GuidanceMenuActivity.this, C2328a.ON_BT_AUTOSEND_RECEIVE_WIFI_CONNECT_CONFIRM)) {
+                    ImageAppLog.error(GuidanceMenuActivity.TAG, "自動画像転送MSG中は無視");
                     return;
                 }
             }
             if (z) {
-                if (C2331d.m10125b((Activity) GuidanceMenuActivity.this, C2328a.ON_BT_CANNOT_REMOTE_WAKEUP)) {
-                    C2261g.m9769c(GuidanceMenuActivity.TAG, "OnFinishConnectAccessPoint errorMSG表示");
+                if (DialogFactory.m10125b((Activity) GuidanceMenuActivity.this, C2328a.ON_BT_CANNOT_REMOTE_WAKEUP)) {
+                    ImageAppLog.error(GuidanceMenuActivity.TAG, "OnFinishConnectAccessPoint errorMSG表示");
                 } else {
                     GuidanceMenuActivity.this.dismissAllDlg();
                 }
@@ -1475,7 +1475,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
                 }
                 if (z2) {
                     mo6512e();
-                    C2253z.m9688b(GuidanceMenuActivity.this._context, false).mo5327d();
+                    ServiceFactory.m9688b(GuidanceMenuActivity.this._context, false).mo5327d();
                 }
                 GuidanceMenuActivity.this._isCameraConnecting = false;
                 if (GuidanceMenuActivity.this._imageAppService != null) {
@@ -1515,10 +1515,10 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
                 } else if (!z2 || !GuidanceMenuActivity.this._isBTFastBoot) {
                     GuidanceMenuActivity.this.updateView(C2678f.NotConnected);
                     if (GuidanceMenuActivity.this._nfcTouch) {
-                        C2331d.m10114a((Activity) GuidanceMenuActivity.this, C2328a.WiFiFailedNfcTimeout, (Bundle) null);
+                        DialogFactory.m10114a((Activity) GuidanceMenuActivity.this, C2328a.WiFiFailedNfcTimeout, (Bundle) null);
                     } else if (z2) {
-                        C2261g.m9769c(GuidanceMenuActivity.TAG, "_isBTFastBoot:" + GuidanceMenuActivity.this._isBTFastBoot);
-                        C2261g.m9769c(GuidanceMenuActivity.TAG, "_isBTFastBootConnectFail:" + GuidanceMenuActivity.this._isBTFastBootConnectFail);
+                        ImageAppLog.error(GuidanceMenuActivity.TAG, "_isBTFastBoot:" + GuidanceMenuActivity.this._isBTFastBoot);
+                        ImageAppLog.error(GuidanceMenuActivity.TAG, "_isBTFastBootConnectFail:" + GuidanceMenuActivity.this._isBTFastBootConnectFail);
                         if (GuidanceMenuActivity.this._isBTFastBoot) {
                             GuidanceMenuActivity.this._isBTFastBootConnectFail = true;
                         } else {
@@ -1530,13 +1530,13 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
                     }
                 } else {
                     GuidanceMenuActivity.this.dismissAllDlg();
-                    C2261g.m9769c(GuidanceMenuActivity.TAG, "高速起動での自動画像転送はエラーメッセージを出さない");
+                    ImageAppLog.error(GuidanceMenuActivity.TAG, "高速起動での自動画像転送はエラーメッセージを出さない");
                     GuidanceMenuActivity.this._isBTWakeupFastBootAPError = true;
                     return;
                 }
                 if (z2) {
                     mo6512e();
-                    C2253z.m9688b(GuidanceMenuActivity.this._context, false).mo5327d();
+                    ServiceFactory.m9688b(GuidanceMenuActivity.this._context, false).mo5327d();
                 }
                 GuidanceMenuActivity.this._isCameraConnecting = false;
             } else if (GuidanceMenuActivity.this._viewModel != null) {
@@ -1551,8 +1551,8 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
 
         /* renamed from: f */
         public void mo6366f() {
-            C2261g.m9771e(GuidanceMenuActivity.TAG, "OnStartSearchCamera()");
-            if (!C2331d.m10125b((Activity) GuidanceMenuActivity.this._context, C2328a.ON_BT_WAKEUP_CONNECTING) && !C2331d.m10125b((Activity) GuidanceMenuActivity.this._context, C2328a.ON_BT_AUTOSEND_RECEIVE_WIFI_CONNECT_CONFIRM)) {
+            ImageAppLog.info(GuidanceMenuActivity.TAG, "OnStartSearchCamera()");
+            if (!DialogFactory.m10125b((Activity) GuidanceMenuActivity.this._context, C2328a.ON_BT_WAKEUP_CONNECTING) && !DialogFactory.m10125b((Activity) GuidanceMenuActivity.this._context, C2328a.ON_BT_AUTOSEND_RECEIVE_WIFI_CONNECT_CONFIRM)) {
                 GuidanceMenuActivity.this.showSimpleDlg(C2328a.ON_PROGRESS, null);
             }
             if (!GuidanceMenuActivity.this._btAdvertisingState.equalsIgnoreCase("sleep") && !GuidanceMenuActivity.this._btAdvertisingState.equalsIgnoreCase("sleep_pow_on") && !GuidanceMenuActivity.this._btAdvertisingState.equalsIgnoreCase("sleep_pow_off") && !GuidanceMenuActivity.this._btAdvertisingState.equalsIgnoreCase("sleep_pow_on_fast") && !GuidanceMenuActivity.this._btAdvertisingState.equalsIgnoreCase("sleep_pow_off_fast")) {
@@ -1563,7 +1563,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
         /* renamed from: a */
         public void mo6354a(List<C1892f> list, boolean z, boolean z2) {
             boolean z3 = true;
-            C2261g.m9771e(GuidanceMenuActivity.TAG, String.format("OnFinishSearchCamera(cancel=%b)", new Object[]{Boolean.valueOf(z)}));
+            ImageAppLog.info(GuidanceMenuActivity.TAG, String.format("OnFinishSearchCamera(cancel=%b)", new Object[]{Boolean.valueOf(z)}));
             GuidanceMenuActivity.this._isOnStartWifiCheck = false;
             GuidanceMenuActivity.this._isCameraConnecting = false;
             if (GuidanceMenuActivity.this._imageAppService != null && GuidanceMenuActivity.this._isBTFastBoot && GuidanceMenuActivity.this._imageAppService.mo5649k()) {
@@ -1585,14 +1585,14 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
                 } else if (VERSION.SDK_INT < 25) {
                     mo6512e();
                 }
-                C2253z.m9688b(GuidanceMenuActivity.this._context, false).mo5327d();
+                ServiceFactory.m9688b(GuidanceMenuActivity.this._context, false).mo5327d();
             }
             if (GuidanceMenuActivity.this._imageAppService != null && GuidanceMenuActivity.this._imageAppService.mo5649k() && GuidanceMenuActivity.this._imageAppService.mo5645g() && GuidanceMenuActivity.this._imageAppService.mo5652n()) {
-                C2331d.m10102a((Activity) GuidanceMenuActivity.this, C2328a.ON_BT_WAKEUP_CONNECTING);
-                C2331d.m10102a((Activity) GuidanceMenuActivity.this, C2328a.ON_PROGRESS);
+                DialogFactory.m10102a((Activity) GuidanceMenuActivity.this, C2328a.ON_BT_WAKEUP_CONNECTING);
+                DialogFactory.m10102a((Activity) GuidanceMenuActivity.this, C2328a.ON_PROGRESS);
                 GuidanceMenuActivity.this.updateView(C2678f.ConnectedBt);
             } else if (z) {
-                if (!C2331d.m10125b((Activity) GuidanceMenuActivity.this, C2328a.ON_BT_CANNOT_REMOTE_WAKEUP)) {
+                if (!DialogFactory.m10125b((Activity) GuidanceMenuActivity.this, C2328a.ON_BT_CANNOT_REMOTE_WAKEUP)) {
                     GuidanceMenuActivity.this.dismissAllDlg();
                 }
                 if (GuidanceMenuActivity.this._imageAppService != null) {
@@ -1624,7 +1624,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
                                     }
                                 }
                                 if (GuidanceMenuActivity.this._viewModel != null) {
-                                    C2685i access$600 = GuidanceMenuActivity.this._viewModel;
+                                    GuidanceMenuViewModel access$600 = GuidanceMenuActivity.this._viewModel;
                                     C1892f fVar = (C1892f) GuidanceMenuActivity.this._deviceList.get(0);
                                     boolean access$3300 = GuidanceMenuActivity.this._nfcTouch;
                                     if (GuidanceMenuActivity.this._isAutoSendMode) {
@@ -1646,7 +1646,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
                                     GuidanceMenuActivity.this.showBluetoothAndApListDialog();
                                     return;
                                 } else if (GuidanceMenuActivity.this._viewModel != null) {
-                                    C2685i access$6002 = GuidanceMenuActivity.this._viewModel;
+                                    GuidanceMenuViewModel access$6002 = GuidanceMenuActivity.this._viewModel;
                                     C1892f fVar2 = (C1892f) GuidanceMenuActivity.this._deviceList.get(0);
                                     boolean access$33002 = GuidanceMenuActivity.this._nfcTouch;
                                     if (GuidanceMenuActivity.this._isAutoSendMode) {
@@ -1695,7 +1695,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
                     GuidanceMenuActivity.this.updateView(C2678f.NotConnected);
                 }
                 if (GuidanceMenuActivity.this._nfcTouch) {
-                    C2331d.m10114a((Activity) GuidanceMenuActivity.this, C2328a.WiFiFailedNfcTimeout, (Bundle) null);
+                    DialogFactory.m10114a((Activity) GuidanceMenuActivity.this, C2328a.WiFiFailedNfcTimeout, (Bundle) null);
                 } else if (GuidanceMenuActivity.this._deviceInfo != null && GuidanceMenuActivity.this._deviceInfo.f5688j == 0) {
                     if (GuidanceMenuActivity.this._nfcViewModel != null) {
                         GuidanceMenuActivity.this._nfcViewModel.mo3285b(true);
@@ -1710,12 +1710,12 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
 
         /* renamed from: g */
         public void mo6367g() {
-            C2261g.m9771e(GuidanceMenuActivity.TAG, "OnStartConnectCamera()");
+            ImageAppLog.info(GuidanceMenuActivity.TAG, "OnStartConnectCamera()");
         }
 
         /* renamed from: a */
         public void mo6358a(boolean z, C1892f fVar, boolean z2, int i) {
-            C2261g.m9771e(GuidanceMenuActivity.TAG, String.format("OnFinishConnectCamera(cancel=%b)", new Object[]{Boolean.valueOf(z2)}));
+            ImageAppLog.info(GuidanceMenuActivity.TAG, String.format("OnFinishConnectCamera(cancel=%b)", new Object[]{Boolean.valueOf(z2)}));
             GuidanceMenuActivity.this._isAutoSendModeWifiConected = false;
             if (z2) {
                 if (GuidanceMenuActivity.this._imageAppService != null) {
@@ -1763,47 +1763,47 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
                     GuidanceMenuActivity.this._imageAppService.mo5636a((long) GuidanceMenuActivity.SCAN_PERIOD);
                 }
                 if (GuidanceMenuActivity.this._nfcTouch) {
-                    C2261g.m9760a(2101250, "timeout");
-                    C2331d.m10114a((Activity) GuidanceMenuActivity.this, C2328a.WiFiFailedNfcTimeout, (Bundle) null);
+                    ImageAppLog.m9760a(2101250, "timeout");
+                    DialogFactory.m10114a((Activity) GuidanceMenuActivity.this, C2328a.WiFiFailedNfcTimeout, (Bundle) null);
                 } else if (i == 1) {
                     if (GuidanceMenuActivity.this._nfcViewModel != null) {
                         GuidanceMenuActivity.this._nfcViewModel.mo3285b(true);
                     }
                     if (fVar == null || !fVar.mo4886a()) {
-                        C2261g.m9760a(2101249, "AlreadyConnected MOVIE");
+                        ImageAppLog.m9760a(2101249, "AlreadyConnected MOVIE");
                         GuidanceMenuActivity.this.showSimpleDlg(C2328a.WiFiFailedAlreadyConnected, null);
                         return;
                     }
-                    C2261g.m9760a(2101249, "AlreadyConnected DSC");
+                    ImageAppLog.m9760a(2101249, "AlreadyConnected DSC");
                     GuidanceMenuActivity.this.showSimpleDlg(C2328a.WiFiFailedAlreadyConnected_DSC, null);
                 } else if (i == 2) {
                     if (GuidanceMenuActivity.this._nfcViewModel != null) {
-                        C2261g.m9760a(2101250, "UnsupportDevice");
+                        ImageAppLog.m9760a(2101250, "UnsupportDevice");
                         GuidanceMenuActivity.this._nfcViewModel.mo3285b(true);
                     } else {
-                        C2261g.m9760a(2101249, "UnsupportDevice");
+                        ImageAppLog.m9760a(2101249, "UnsupportDevice");
                     }
                     GuidanceMenuActivity.this.showSimpleDlg(C2328a.UnsupportDevice, null);
                 } else if (i == 7) {
                     if (GuidanceMenuActivity.this._ssid != null) {
-                        C2261g.m9760a(2101249, "PWDLESS_ERROR");
+                        ImageAppLog.m9760a(2101249, "PWDLESS_ERROR");
                         Bundle bundle = new Bundle();
                         bundle.putString(C2378b.MESSAGE_STRING.name(), String.format(GuidanceMenuActivity.this.getString(R.string.msg_pwless_authentification_fail), new Object[]{GuidanceMenuActivity.this._ssid}));
                         GuidanceMenuActivity.this.showSimpleDlg(C2328a.PWDLESS_ERROR, bundle);
                     }
                 } else if (i == 9) {
-                    C2261g.m9760a(2101249, "PWDLESS_ERROR_TIMEOUT");
+                    ImageAppLog.m9760a(2101249, "PWDLESS_ERROR_TIMEOUT");
                     GuidanceMenuActivity.this.showSimpleDlg(C2328a.PWDLESS_ERROR_TIMEOUT, null);
                 } else if (i == 5) {
                     if (GuidanceMenuActivity.this._ssid != null) {
-                        C2261g.m9760a(2101249, "PWDLESS_REFUSED");
+                        ImageAppLog.m9760a(2101249, "PWDLESS_REFUSED");
                         Bundle bundle2 = new Bundle();
                         bundle2.putString(C2378b.MESSAGE_STRING.name(), String.format(GuidanceMenuActivity.this.getString(R.string.msg_pwless_authentification_deny), new Object[]{GuidanceMenuActivity.this._ssid}));
                         GuidanceMenuActivity.this.showSimpleDlg(C2328a.PWDLESS_REFUSED, bundle2);
                     }
                 } else if (i == 6) {
                     if (GuidanceMenuActivity.this._ssid != null) {
-                        C2261g.m9760a(2101249, "PWDLESS_OTHER_REQUEST");
+                        ImageAppLog.m9760a(2101249, "PWDLESS_OTHER_REQUEST");
                         Bundle bundle3 = new Bundle();
                         bundle3.putString(C2378b.MESSAGE_STRING.name(), String.format(GuidanceMenuActivity.this.getString(R.string.msg_pwless_other_sp_authentification), new Object[]{GuidanceMenuActivity.this._ssid}));
                         GuidanceMenuActivity.this.showSimpleDlg(C2328a.PWDLESS_OTHER_REQUEST, bundle3);
@@ -1812,14 +1812,14 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
                     if (GuidanceMenuActivity.this._viewModel != null) {
                         if (fVar != null) {
                             PreferenceManager.getDefaultSharedPreferences(GuidanceMenuActivity.this._context).edit().putString("CurrentConnectedSSID", fVar.f5687i.mo4299b()).apply();
-                            C2261g.m9760a(2101249, fVar.f5685g);
+                            ImageAppLog.m9760a(2101249, fVar.f5685g);
                         }
-                        C2261g.m9760a(2105346, "");
+                        ImageAppLog.m9760a(2105346, "");
                         GuidanceMenuActivity.this._viewModel.mo6647n();
                         if (!GuidanceMenuActivity.this._isAutoSendMode) {
                             GuidanceMenuActivity.this.setDmsReceiving();
                             GuidanceMenuActivity.this.StartBrowser(true);
-                            C2253z.m9723r(GuidanceMenuActivity.this._context);
+                            ServiceFactory.m9723r(GuidanceMenuActivity.this._context);
                             return;
                         }
                         GuidanceMenuActivity.this.updateView(C2678f.ConnectedBt);
@@ -1829,14 +1829,14 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
                     }
                 } else if (i == 10) {
                     if (GuidanceMenuActivity.this._viewModel != null) {
-                        C2261g.m9760a(2101249, fVar.f5685g);
-                        C2261g.m9760a(2105346, "");
+                        ImageAppLog.m9760a(2101249, fVar.f5685g);
+                        ImageAppLog.m9760a(2105346, "");
                         GuidanceMenuActivity.this._isAutoSendMode = true;
                         GuidanceMenuActivity.this._viewModel.mo6647n();
                         if (GuidanceMenuActivity.this._imageAppService != null) {
                             GuidanceMenuActivity.this._isAutoSendModeWifiConected = GuidanceMenuActivity.this._imageAppService.mo5646h();
                             if (GuidanceMenuActivity.this._isAutoSendModeWifiConected) {
-                                C2331d.m10102a((Activity) GuidanceMenuActivity.this, C2328a.ON_PROGRESS);
+                                DialogFactory.m10102a((Activity) GuidanceMenuActivity.this, C2328a.ON_PROGRESS);
                             } else {
                                 GuidanceMenuActivity.this._imageAppService.mo5633a(fVar.f5682d);
                             }
@@ -1844,18 +1844,18 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
                         GuidanceMenuActivity.this.updateView(C2678f.ConnectedBt);
                     }
                 } else if (i != 12) {
-                    C2261g.m9760a(2101249, "ON_ERROR_CGI_ON_CONNECT");
+                    ImageAppLog.m9760a(2101249, "ON_ERROR_CGI_ON_CONNECT");
                     GuidanceMenuActivity.this.showSimpleDlg(C2328a.ON_ERROR_CGI_ON_CONNECT, null);
                 } else if (GuidanceMenuActivity.this._viewModel != null) {
                     GuidanceMenuActivity.this._isAutoSendMode = false;
                     GuidanceMenuActivity.this._handler.post(new Runnable() {
                         public void run() {
-                            C2331d.m10114a((Activity) GuidanceMenuActivity.this, C2328a.ON_BT_AUTOSEND_COMMAND_ERROR, (Bundle) null);
+                            DialogFactory.m10114a((Activity) GuidanceMenuActivity.this, C2328a.ON_BT_AUTOSEND_COMMAND_ERROR, (Bundle) null);
                         }
                     });
                 }
             } else if (i == 3) {
-                C2261g.m9760a(2101249, "ON_DISCONNECT_BY_HIGH_TEMP_FINISH");
+                ImageAppLog.m9760a(2101249, "ON_DISCONNECT_BY_HIGH_TEMP_FINISH");
                 GuidanceMenuActivity.this.updateView(C2678f.NotConnected);
                 GuidanceMenuActivity.this.showSimpleDlg(C2328a.ON_DISCONNECT_BY_HIGH_TEMP_FINISH, null);
             } else if (fVar != null) {
@@ -1868,7 +1868,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
                     GuidanceMenuActivity.this.updateView(C2678f.NotConnected);
                 } else if (!fVar.mo4886a() || !C1712b.m6920d().mo4907a(fVar)) {
                     if (GuidanceMenuActivity.this._nfcTouch) {
-                        C2261g.m9760a(2101250, fVar.f5685g);
+                        ImageAppLog.m9760a(2101250, fVar.f5685g);
                         fVar.f5696r = GuidanceMenuActivity.this._cameraMac;
                         fVar.f5697s = GuidanceMenuActivity.this._cameraSsid;
                         fVar.f5698t = GuidanceMenuActivity.this._cameraPassword;
@@ -1876,7 +1876,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
                             GuidanceMenuActivity.this._nfcViewModel.mo3280a(fVar.f5696r, fVar.f5697s, fVar.f5698t);
                         }
                     } else {
-                        C2261g.m9760a(2101249, fVar.f5685g);
+                        ImageAppLog.m9760a(2101249, fVar.f5685g);
                     }
                     GuidanceMenuActivity.this.updateView(C2678f.Connected);
                     if (GuidanceMenuActivity.this._actionMode == C4244s.f14194d && GuidanceMenuActivity.this._isLiveviewMode) {
@@ -1896,27 +1896,27 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
                             GuidanceMenuActivity.this.startActivityForResult(new Intent(GuidanceMenuActivity.this._context, TransferModeSelectActivity.class), 28);
                             return;
                         }
-                        C2261g.m9760a(3153924, "");
+                        ImageAppLog.m9760a(3153924, "");
                         GuidanceMenuActivity.this.StartBrowser(true);
                     } else if (fVar.mo4888b() || (GuidanceMenuActivity.this._viewModel != null && GuidanceMenuActivity.this._viewModel.mo6650q())) {
                         GuidanceMenuActivity.this.closeActivity(true, 0);
                     } else if (GuidanceMenuActivity.this._nfcTouch) {
-                        C2261g.m9760a(2105345, "");
+                        ImageAppLog.m9760a(2105345, "");
                         GuidanceMenuActivity.this.syncPicMateId(fVar, true);
                     } else if (GuidanceMenuActivity.this._wifiDirect || !fVar.mo4886a() || fVar.f5688j == 65537) {
-                        C2261g.m9760a(2105345, "");
+                        ImageAppLog.m9760a(2105345, "");
                         if (GuidanceMenuActivity.this._viewModel != null) {
                             GuidanceMenuActivity.this._viewModel.mo6640h(true);
                         }
                     } else {
-                        C2261g.m9760a(2105345, "");
+                        ImageAppLog.m9760a(2105345, "");
                         GuidanceMenuActivity.this.syncPicMateId(fVar, false);
                     }
                 } else {
                     C1712b.m6919c().mo4897a(null);
                     if (C1347a.m5306a(GuidanceMenuActivity.this._context)) {
                         Intent intent = new Intent(GuidanceMenuActivity.this._context, LumixLinkCallActivity.class);
-                        C2261g.m9760a(2105345, "LUMIX LINK");
+                        ImageAppLog.m9760a(2105345, "LUMIX LINK");
                         try {
                             GuidanceMenuActivity.this.startActivity(intent);
                             GuidanceMenuActivity.this.finish();
@@ -1927,7 +1927,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
                         GuidanceMenuActivity.this.stopConnecting();
                         GuidanceMenuActivity.this.updateView(C2678f.NotConnected);
                         GuidanceMenuActivity.this.showSimpleDlg(C2328a.ON_NEED_LUMIX_LINK, null);
-                        C2261g.m9760a(2101249, "LUMIX LINK NO INSTALL");
+                        ImageAppLog.m9760a(2101249, "LUMIX LINK NO INSTALL");
                     }
                 }
             } else {
@@ -1941,19 +1941,19 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
 
         /* renamed from: h */
         public void mo6368h() {
-            C2261g.m9771e(GuidanceMenuActivity.TAG, "OnStartWaitApConnect()");
+            ImageAppLog.info(GuidanceMenuActivity.TAG, "OnStartWaitApConnect()");
             GuidanceMenuActivity.this.showSimpleDlg(C2328a.ON_PROGRESS, null);
         }
 
         /* renamed from: i */
         public void mo6369i() {
             boolean z = true;
-            C2261g.m9771e(GuidanceMenuActivity.TAG, "OnFinishWaitApConnect()");
+            ImageAppLog.info(GuidanceMenuActivity.TAG, "OnFinishWaitApConnect()");
             if (!GuidanceMenuActivity.this._isLiveviewMode) {
                 GuidanceMenuActivity.this.dismissAllDlg();
                 if (VERSION.SDK_INT != 23 || !VERSION.RELEASE.equalsIgnoreCase("6.0")) {
                     if (GuidanceMenuActivity.this._viewModel != null) {
-                        C2685i access$600 = GuidanceMenuActivity.this._viewModel;
+                        GuidanceMenuViewModel access$600 = GuidanceMenuActivity.this._viewModel;
                         if (GuidanceMenuActivity.this._showApList) {
                             z = false;
                         }
@@ -2023,7 +2023,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
                     if (GuidanceMenuActivity.this._handler != null) {
                         GuidanceMenuActivity.this._handler.post(new Runnable() {
                             public void run() {
-                                C2331d.m10102a((Activity) GuidanceMenuActivity.this, C2328a.ON_PROGRESS);
+                                DialogFactory.m10102a((Activity) GuidanceMenuActivity.this, C2328a.ON_PROGRESS);
                             }
                         });
                         return;
@@ -2049,7 +2049,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
             if (z) {
                 C2337e.m10169a((Activity) GuidanceMenuActivity.this, GuidanceMenuActivity.this._viewModel.mo6654u());
                 GuidanceMenuActivity.this._isOnStartWifiCheck = false;
-            } else if (!C2331d.m10125b((Activity) GuidanceMenuActivity.this, C2328a.ON_BT_CANNOT_REMOTE_WAKEUP)) {
+            } else if (!DialogFactory.m10125b((Activity) GuidanceMenuActivity.this, C2328a.ON_BT_CANNOT_REMOTE_WAKEUP)) {
                 GuidanceMenuActivity.this.dismissAllDlg();
             }
         }
@@ -2068,11 +2068,11 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
 
         /* renamed from: d */
         public void mo6364d(boolean z) {
-            C2261g.m9769c(GuidanceMenuActivity.TAG, "OnPlayModeState");
-            C2261g.m9769c(GuidanceMenuActivity.TAG, "isSuccess:" + z);
-            C2331d.m10100a((Activity) GuidanceMenuActivity.this);
+            ImageAppLog.error(GuidanceMenuActivity.TAG, "OnPlayModeState");
+            ImageAppLog.error(GuidanceMenuActivity.TAG, "isSuccess:" + z);
+            DialogFactory.m10100a((Activity) GuidanceMenuActivity.this);
             if (!z) {
-                C2331d.m10114a((Activity) GuidanceMenuActivity.this, C2328a.ON_ERROR_PLAYMODE, (Bundle) null);
+                DialogFactory.m10114a((Activity) GuidanceMenuActivity.this, C2328a.ON_ERROR_PLAYMODE, (Bundle) null);
             }
         }
     }
@@ -2270,7 +2270,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
 
     @SuppressLint({"NewApi"})
     public void onCreate(Bundle bundle) {
-        C2261g.m9763a(TAG, "onCreate()");
+        ImageAppLog.debug(TAG, "onCreate()");
         C1712b.m6914a((Activity) this);
         super.onCreate(bundle);
         setContentView(R.layout.activity_guidance_menu_list);
@@ -2278,12 +2278,12 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
         this._handler = new Handler();
         this._connectListener = new C2639c();
         this._btListener = new C2616b();
-        this._viewModel = (C2685i) C2316j.m10030a(C2685i.f8333f);
+        this._viewModel = (GuidanceMenuViewModel) C2316j.m10030a(GuidanceMenuViewModel.f8333f);
         if (this._viewModel == null) {
             this._reconnect = getIntent().getBooleanExtra("Reconnect", true);
-            this._viewModel = new C2685i(this._context, this._handler, this._connectListener, this._btListener);
+            this._viewModel = new GuidanceMenuViewModel(this._context, this._handler, this._connectListener, this._btListener);
             this._viewModel.mo6540a(this._context, this._handler, (C2674a) this._connectListener, (C2138a) this._btListener);
-            C2316j.m10032a(C2685i.f8333f, this._viewModel);
+            C2316j.m10032a(GuidanceMenuViewModel.f8333f, this._viewModel);
         } else {
             if (bundle != null) {
                 this._reconnect = bundle.getBoolean("Reconnect", true);
@@ -2355,7 +2355,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
     /* access modifiers changed from: protected */
     public void onSaveInstanceState(Bundle bundle) {
         super.onSaveInstanceState(bundle);
-        C2261g.m9763a(TAG, "onSaveInstanceState()");
+        ImageAppLog.debug(TAG, "onSaveInstanceState()");
         if (bundle != null) {
             bundle.putBoolean("Reconnect", this._reconnect);
             bundle.putInt(CURRENT_DISP_KEY, this._dispMode.mo6613a());
@@ -2366,7 +2366,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
     /* access modifiers changed from: protected */
     public void onStart() {
         super.onStart();
-        C2261g.m9763a(TAG, "onStart()");
+        ImageAppLog.debug(TAG, "onStart()");
         if (this._imageAppService == null) {
             this._imageAppService = this._viewModel.mo6641i(false);
             this._isAutoSendMode = this._imageAppService.mo5645g();
@@ -2395,13 +2395,13 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
                         GuidanceMenuActivity.this.setDmsReceiving(0);
                         cancel();
                     }
-                    C2754l lVar = new C2754l(GuidanceMenuActivity.this._context);
+                    WifiUtil lVar = new WifiUtil(GuidanceMenuActivity.this._context);
                     if (lVar == null) {
                         return;
                     }
                     if (GuidanceMenuActivity.this._isDmsReceiving == 1) {
                         if (!lVar.mo6746b(1)) {
-                            C2261g.m9769c(GuidanceMenuActivity.TAG, "撮ってすぐ用タイマーキャンセル");
+                            ImageAppLog.error(GuidanceMenuActivity.TAG, "撮ってすぐ用タイマーキャンセル");
                             cancel();
                             GuidanceMenuActivity.this.setDmsReceiving(0);
                             GuidanceMenuActivity.this._handler.post(new Runnable() {
@@ -2415,17 +2415,17 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
                             });
                             return;
                         }
-                        C2261g.m9769c(GuidanceMenuActivity.TAG, "撮ってすぐ用タイマー 生存");
+                        ImageAppLog.error(GuidanceMenuActivity.TAG, "撮ってすぐ用タイマー 生存");
                     } else if (GuidanceMenuActivity.this._isDmsReceiving == 2) {
-                        C2028e a = C2253z.m9680a(GuidanceMenuActivity.this._context, false);
+                        C2028e a = ServiceFactory.m9680a(GuidanceMenuActivity.this._context, false);
                         if (a == null) {
                             return;
                         }
                         if (!a.mo5273b().equalsIgnoreCase("p2p") || C2266l.m9834e()) {
-                            C2261g.m9769c(GuidanceMenuActivity.TAG, "撮ってすぐ用タイマー 生存Direct");
+                            ImageAppLog.error(GuidanceMenuActivity.TAG, "撮ってすぐ用タイマー 生存Direct");
                             return;
                         }
-                        C2261g.m9769c(GuidanceMenuActivity.TAG, "撮ってすぐ用タイマーキャンセル Direct");
+                        ImageAppLog.error(GuidanceMenuActivity.TAG, "撮ってすぐ用タイマーキャンセル Direct");
                         cancel();
                         GuidanceMenuActivity.this.setDmsReceiving(0);
                         GuidanceMenuActivity.this._handler.post(new Runnable() {
@@ -2465,7 +2465,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
                         }
                     }
                 } else if (z) {
-                    C2331d.m10114a((Activity) this, C2328a.ON_BT_GPS_DISABLE_CONFIRM, (Bundle) null);
+                    DialogFactory.m10114a((Activity) this, C2328a.ON_BT_GPS_DISABLE_CONFIRM, (Bundle) null);
                     PreferenceManager.getDefaultSharedPreferences(this._context).edit().putBoolean("GPS_SETTING", false).apply();
                 } else {
                     updateView(C2678f.Connecting);
@@ -2488,7 +2488,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
     /* access modifiers changed from: protected */
     public void onResume() {
         super.onResume();
-        C2261g.m9763a(TAG, "onResume()");
+        ImageAppLog.debug(TAG, "onResume()");
         if (isEnableConnectOnStart()) {
             SharedPreferences defaultSharedPreferences = PreferenceManager.getDefaultSharedPreferences(this._context);
             boolean z = defaultSharedPreferences.getBoolean("Bluetooth", false);
@@ -2527,7 +2527,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
     /* access modifiers changed from: protected */
     public void onPause() {
         super.onPause();
-        C2261g.m9763a(TAG, "onPause()");
+        ImageAppLog.debug(TAG, "onPause()");
         this._isOnStartWifiCheck = false;
         this._isBTDisconnect = false;
     }
@@ -2535,7 +2535,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
     /* access modifiers changed from: protected */
     public void onStop() {
         super.onStop();
-        C2261g.m9763a(TAG, "onStop()");
+        ImageAppLog.debug(TAG, "onStop()");
         if (this._connectState == C2678f.Connecting) {
             stopConnecting();
         }
@@ -2544,7 +2544,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
     public void onUserLeaveHint() {
         if (this._imageAppService != null) {
             boolean p = this._imageAppService.mo5654p();
-            C2261g.m9769c(TAG, "isBG:" + p);
+            ImageAppLog.error(TAG, "isBG:" + p);
             if (this._context != null && PreferenceManager.getDefaultSharedPreferences(this._context).getBoolean("Auto", false) && p) {
                 new UsagesLogService().mo5911a(this._context);
             }
@@ -2552,7 +2552,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
     }
 
     public void onClickWifi(View view) {
-        C2261g.m9760a(3153921, "");
+        ImageAppLog.m9760a(3153921, "");
         if (IsValidState()) {
             if (this._imageAppService != null) {
                 this._imageAppService.mo5641c();
@@ -2568,12 +2568,12 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
     }
 
     public void onClickQR(View view) {
-        C2261g.m9760a(3153922, "");
+        ImageAppLog.m9760a(3153922, "");
         if (IsValidState()) {
             if (!C2266l.m9845h(this._context)) {
                 C0008a.m38a(this, new String[]{"android.permission.CAMERA"}, 35);
             } else if (this._isQRRunning) {
-                C2261g.m9771e("QRButton", "Running......");
+                ImageAppLog.info("QRButton", "Running......");
             } else {
                 this._isQRRunning = true;
                 if (!C2258d.m9740a()) {
@@ -2588,10 +2588,10 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
 
     @SuppressLint({"NewApi"})
     public void onClickBluetooth(View view) {
-        C2261g.m9760a(3153934, "");
+        ImageAppLog.m9760a(3153934, "");
         if (IsValidState()) {
             if (this._isBTRunning) {
-                C2261g.m9771e("BTButton", "Running......");
+                ImageAppLog.info("BTButton", "Running......");
                 return;
             }
             this._isBTRunning = true;
@@ -2609,16 +2609,16 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
                 }
                 intent.putExtra("DeviceName", string);
             }
-            C2261g.m9769c(TAG, "_isBTConnectNotCompleted:" + this._isBTConnectNotCompleted);
+            ImageAppLog.error(TAG, "_isBTConnectNotCompleted:" + this._isBTConnectNotCompleted);
             intent.putExtra("BT_Not_Completed", this._isBTConnectNotCompleted);
             startActivityForResult(intent, 30);
         }
     }
 
     public void OnClickCameraPowerOff(View view) {
-        C2261g.m9760a(3153935, "");
+        ImageAppLog.m9760a(3153935, "");
         if (!isFinishing()) {
-            C2331d.m10114a((Activity) this, C2328a.ON_POWER_OFF_SELECT, (Bundle) null);
+            DialogFactory.m10114a((Activity) this, C2328a.ON_POWER_OFF_SELECT, (Bundle) null);
         }
     }
 
@@ -2639,12 +2639,12 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
             z = true;
         }
         if (a == null || z) {
-            C2028e a2 = C2253z.m9680a(this._context, false);
+            C2028e a2 = ServiceFactory.m9680a(this._context, false);
             if (a2 != null) {
                 a2.mo5283g();
             }
             if (this._btAdvertisingState.equalsIgnoreCase("sleep") || this._btAdvertisingState.equalsIgnoreCase("sleep_pow_on") || this._btAdvertisingState.equalsIgnoreCase("sleep_pow_off") || this._btAdvertisingState.equalsIgnoreCase("sleep_pow_on_fast") || this._btAdvertisingState.equalsIgnoreCase("sleep_pow_off_fast") || this._btAdvertisingState.equalsIgnoreCase("normal") || this._btConnectState.equals("Connected")) {
-                C2261g.m9760a(3153936, "");
+                ImageAppLog.m9760a(3153936, "");
                 this._actionMode = C4244s.f14194d;
                 this._isLiveviewMode = true;
                 if (this._btAdvertisingState.equalsIgnoreCase("sleep_pow_on_fast") || this._btAdvertisingState.equalsIgnoreCase("sleep_pow_off_fast")) {
@@ -2674,11 +2674,11 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
                     this._viewModel.mo6644k();
                 }
             } else {
-                C2261g.m9760a(3153923, "");
+                ImageAppLog.m9760a(3153923, "");
                 StartLiveView(false, false);
             }
         } else {
-            C2261g.m9760a(3153923, "");
+            ImageAppLog.m9760a(3153923, "");
             if (this._imageAppService != null) {
                 this._imageAppService.mo5641c();
             }
@@ -2697,16 +2697,16 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
                     startActivityForResult(new Intent(this, TransferModeSelectActivity.class), 28);
                     return;
                 }
-                C2261g.m9760a(3153924, "");
+                ImageAppLog.m9760a(3153924, "");
                 StartBrowser(true);
                 return;
             }
-            C2028e a2 = C2253z.m9680a(this._context, false);
+            C2028e a2 = ServiceFactory.m9680a(this._context, false);
             if (a2 != null) {
                 a2.mo5283g();
             }
             if (this._btAdvertisingState.equalsIgnoreCase("sleep") || this._btAdvertisingState.equalsIgnoreCase("sleep_pow_on") || this._btAdvertisingState.equalsIgnoreCase("sleep_pow_off") || this._btAdvertisingState.equalsIgnoreCase("sleep_pow_on_fast") || this._btAdvertisingState.equalsIgnoreCase("sleep_pow_off_fast") || this._btAdvertisingState.equalsIgnoreCase("normal") || this._btConnectState.equals("Connected")) {
-                C2261g.m9760a(3153937, "");
+                ImageAppLog.m9760a(3153937, "");
                 this._actionMode = C4244s.f14194d;
                 this._isLiveviewMode = false;
                 if (this._btAdvertisingState.equalsIgnoreCase("sleep_pow_on_fast") || this._btAdvertisingState.equalsIgnoreCase("sleep_pow_off_fast")) {
@@ -2734,14 +2734,14 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
                     this._viewModel.mo6644k();
                 }
             } else {
-                C2261g.m9760a(3153924, "");
+                ImageAppLog.m9760a(3153924, "");
                 StartBrowser(true);
             }
         }
     }
 
     public void onClickGeoTag(View view) {
-        C2261g.m9760a(3153926, "");
+        ImageAppLog.m9760a(3153926, "");
         if (!IsValidState() || !this._isGeoTagEnable) {
             return;
         }
@@ -2753,7 +2753,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
     }
 
     public void onClickPhotoCollage(View view) {
-        C2261g.m9760a(3153928, "");
+        ImageAppLog.m9760a(3153928, "");
         if (IsValidState()) {
             if (C2266l.m9848i(this._context)) {
                 Intent intent = new Intent(this._context, MultiPhotoFrameSelectFrameActivity.class);
@@ -2766,7 +2766,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
     }
 
     public void onClickAutoPhotoCollage(View view) {
-        C2261g.m9760a(3153929, "");
+        ImageAppLog.m9760a(3153929, "");
         if (!IsValidState() || !this._isAutoPhotoCollageEnable) {
             return;
         }
@@ -2778,7 +2778,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
     }
 
     public void onClickMovieSlideshow(View view) {
-        C2261g.m9760a(3153930, "");
+        ImageAppLog.m9760a(3153930, "");
         if (!IsValidState() || !this._isMovieSlideShowEnable) {
             return;
         }
@@ -2790,7 +2790,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
     }
 
     public void onClickHomeMonitor(View view) {
-        C2261g.m9760a(3153931, "");
+        ImageAppLog.m9760a(3153931, "");
         if (VERSION.SDK_INT < 21) {
             showSimpleDlg(C2328a.DIALOG_ID_UNSUPPORTED, null);
         } else if (IsValidState() && this._isHomeMonitorEnable) {
@@ -2799,7 +2799,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
     }
 
     public void onClickSnapMovie(View view) {
-        C2261g.m9760a(3153927, "");
+        ImageAppLog.m9760a(3153927, "");
         if (!IsValidState() || !this._isSnapMovieEnable) {
             return;
         }
@@ -2814,7 +2814,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
     }
 
     public void onClickCameraSetting(View view) {
-        C2261g.m9760a(3153938, "");
+        ImageAppLog.m9760a(3153938, "");
         if (IsValidState() && this._isCameraSettingEnable) {
             Intent intent = new Intent(this._context, CameraSettingActivity.class);
             C1892f a = C1712b.m6919c().mo4896a();
@@ -2859,7 +2859,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
                 if (this._btDevice == null && this._imageAppService != null) {
                     this._btDevice = this._imageAppService.mo5643e();
                 }
-                C2261g.m9760a(3153938, this._btDevice.getName());
+                ImageAppLog.m9760a(3153938, this._btDevice.getName());
                 if (this._timeoutTimer != null) {
                     this._timeoutTimer.cancel();
                     this._timeoutTimer = null;
@@ -2868,12 +2868,12 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
                     this._timeoutTimer = new Timer(true);
                     this._timeoutTimer.schedule(new TimerTask() {
                         public void run() {
-                            C2261g.m9769c(GuidanceMenuActivity.TAG, "_isWakeUpNG:" + GuidanceMenuActivity.this._isWakeUpNG);
-                            C2261g.m9769c(GuidanceMenuActivity.TAG, "_timeoutCount:" + GuidanceMenuActivity.this._timeoutCount);
+                            ImageAppLog.error(GuidanceMenuActivity.TAG, "_isWakeUpNG:" + GuidanceMenuActivity.this._isWakeUpNG);
+                            ImageAppLog.error(GuidanceMenuActivity.TAG, "_timeoutCount:" + GuidanceMenuActivity.this._timeoutCount);
                             if (GuidanceMenuActivity.this._isWakeUpNG) {
                                 GuidanceMenuActivity.this.connect(GuidanceMenuActivity.this._btDevice, GuidanceMenuActivity.this._publicAddress, false);
                                 GuidanceMenuActivity.this._timeoutCount = GuidanceMenuActivity.this._timeoutCount + 1;
-                                C2261g.m9769c(GuidanceMenuActivity.TAG, "_timeoutCount:" + GuidanceMenuActivity.this._timeoutCount);
+                                ImageAppLog.error(GuidanceMenuActivity.TAG, "_timeoutCount:" + GuidanceMenuActivity.this._timeoutCount);
                                 if (GuidanceMenuActivity.this._timeoutCount > 10) {
                                     GuidanceMenuActivity.this._isWakeUpNG = false;
                                     GuidanceMenuActivity.this._timeoutCount = 0;
@@ -2891,7 +2891,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
             } else if (this._btAdvertisingState.equalsIgnoreCase("sleep_pow_off") || this._btAdvertisingState.equalsIgnoreCase("sleep_pow_off_fast")) {
                 this._isBTRemoteControllerEnableConfirm = false;
                 this._isBTRemoteControllerMode = false;
-                C2331d.m10114a((Activity) this, C2328a.ON_BT_REMOTE_CONTROL_CANNOT_USE_FOR_SW_OFF, (Bundle) null);
+                DialogFactory.m10114a((Activity) this, C2328a.ON_BT_REMOTE_CONTROL_CANNOT_USE_FOR_SW_OFF, (Bundle) null);
             } else if ((this._btConnectState.equals("Connected") || z) && this._imageAppService != null) {
                 this._isBTRemoteControllerEnableConfirm = true;
                 this._imageAppService.mo5627a(39, C4244s.f14209s);
@@ -2900,7 +2900,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
     }
 
     public void onClickPicmate(View view) {
-        C2261g.m9760a(3153932, "");
+        ImageAppLog.m9760a(3153932, "");
         if (IsValidState()) {
             Intent intent = new Intent(this._context, SmartAppLauncherActivity.class);
             intent.putExtra("AppCooperationPackage", "com.panasonic.avc.picmate");
@@ -2909,7 +2909,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
     }
 
     public void onClickPsa(View view) {
-        C2261g.m9760a(3153933, "");
+        ImageAppLog.m9760a(3153933, "");
         if (IsValidState()) {
             Intent intent = new Intent(this._context, SmartAppLauncherActivity.class);
             intent.putExtra("AppCooperationPackage", "com.panasonic.smart.gemini");
@@ -2920,7 +2920,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
     public void onConfigurationChanged(Configuration configuration) {
         C2680h hVar;
         super.onConfigurationChanged(configuration);
-        C2261g.m9763a(TAG, "onConfigurationChanged()");
+        ImageAppLog.debug(TAG, "onConfigurationChanged()");
         setContentView(R.layout.activity_guidance_menu_list);
         if (this._binder == null) {
             this._binder = new C2679g();
@@ -2969,9 +2969,9 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
     }
 
     public void OnClickLiveView(View view) {
-        C2261g.m9760a(3149826, "");
+        ImageAppLog.m9760a(3149826, "");
         if (this._connectState == C2678f.Connecting) {
-            C2331d.m10114a((Activity) this, C2328a.ON_CANNOT_CHANGE_SETUP, (Bundle) null);
+            DialogFactory.m10114a((Activity) this, C2328a.ON_CANNOT_CHANGE_SETUP, (Bundle) null);
             return;
         }
         if (this._imageAppService != null) {
@@ -2981,10 +2981,10 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
     }
 
     public void OnClickBrowser(View view) {
-        C2261g.m9760a(3149827, "");
+        ImageAppLog.m9760a(3149827, "");
         if (IsValidState()) {
             if (this._connectState == C2678f.Connecting) {
-                C2331d.m10114a((Activity) this, C2328a.ON_CANNOT_CHANGE_SETUP, (Bundle) null);
+                DialogFactory.m10114a((Activity) this, C2328a.ON_CANNOT_CHANGE_SETUP, (Bundle) null);
                 return;
             }
             if (this._imageAppService != null) {
@@ -3001,18 +3001,18 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
     }
 
     public void OnClickHome(View view) {
-        C2261g.m9760a(3149825, "");
+        ImageAppLog.m9760a(3149825, "");
     }
 
     public void OnClickSetup(View view) {
-        C2261g.m9760a(3149828, "");
+        ImageAppLog.m9760a(3149828, "");
         if (IsValidState()) {
             openOptionsMenu();
         }
     }
 
     public boolean onPrepareOptionsMenu(Menu menu) {
-        C2261g.m9763a(TAG, "onPrepareOptionsMenu()");
+        ImageAppLog.debug(TAG, "onPrepareOptionsMenu()");
         if (this._optionMenuUtil != null && IsValidState() && !ShowDmsErrorIfReceiving() && !this._viewModel.mo6642i() && this._optionMenuUtil.mo6073a(menu) && super.onPrepareOptionsMenu(menu)) {
             return true;
         }
@@ -3020,7 +3020,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
     }
 
     public boolean onMenuItemSelected(int i, MenuItem menuItem) {
-        C2261g.m9763a(TAG, "onMenuItemSelected()");
+        ImageAppLog.debug(TAG, "onMenuItemSelected()");
         if (menuItem.getItemId() == R.id.menu_setup_connect && this._optionMenuUtil != null) {
             this._optionMenuUtil.mo6071a(this._isDmsReceiving);
         }
@@ -3029,7 +3029,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
 
     /* access modifiers changed from: protected */
     public void onDestroy() {
-        C2261g.m9763a(TAG, "onDestroy()");
+        ImageAppLog.debug(TAG, "onDestroy()");
         this._handler = null;
         if (this._binder != null) {
             this._binder.mo6616a();
@@ -3040,11 +3040,11 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
 
     /* access modifiers changed from: protected */
     public void onRestart() {
-        C2261g.m9763a(TAG, "onRestart()");
+        ImageAppLog.debug(TAG, "onRestart()");
         super.onRestart();
-        C2028e a = C2253z.m9680a(this._context, true);
+        C2028e a = ServiceFactory.m9680a(this._context, true);
         if (a != null) {
-            C1846e i = a.mo5285i();
+            CameraStatus i = a.mo5285i();
             if (i == null) {
                 return;
             }
@@ -3087,7 +3087,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
             r8 = this;
             java.lang.String r0 = "GuidanceMenuActivity"
             java.lang.String r1 = "onActivityResult()"
-            com.panasonic.avc.cng.util.C2261g.m9763a(r0, r1)
+            com.panasonic.avc.cng.util.ImageAppLog.debug(r0, r1)
             super.onActivityResult(r9, r10, r11)
             r0 = 0
             r8._isQRRunning = r0
@@ -3525,7 +3525,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
             java.lang.StringBuilder r2 = r2.append(r3)
             java.lang.StringBuilder r0 = r2.append(r0)
             java.lang.String r0 = r0.toString()
-            com.panasonic.avc.cng.util.C2261g.m9763a(r1, r0)
+            com.panasonic.avc.cng.util.ImageAppLog.debug(r1, r0)
         L_0x038e:
             java.lang.String r0 = "BTShutterLock"
             boolean r0 = r6.getBoolean(r0)
@@ -3566,7 +3566,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
             boolean r3 = r8._isBTConnectNotCompleted
             java.lang.StringBuilder r2 = r2.append(r3)
             java.lang.String r2 = r2.toString()
-            com.panasonic.avc.cng.util.C2261g.m9769c(r1, r2)
+            com.panasonic.avc.cng.util.ImageAppLog.error(r1, r2)
             java.lang.String r1 = "GuidanceMenuActivity"
             java.lang.StringBuilder r2 = new java.lang.StringBuilder
             r2.<init>()
@@ -3575,7 +3575,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
             boolean r3 = r8._isBTRemoteControllerSupported
             java.lang.StringBuilder r2 = r2.append(r3)
             java.lang.String r2 = r2.toString()
-            com.panasonic.avc.cng.util.C2261g.m9769c(r1, r2)
+            com.panasonic.avc.cng.util.ImageAppLog.error(r1, r2)
             java.lang.String r1 = "CloudBackUpAppFinish"
             boolean r1 = r6.getBoolean(r1)
             java.lang.String r2 = "GuidanceMenuActivity"
@@ -3585,7 +3585,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
             java.lang.StringBuilder r3 = r3.append(r4)
             java.lang.StringBuilder r3 = r3.append(r1)
             java.lang.String r3 = r3.toString()
-            com.panasonic.avc.cng.util.C2261g.m9769c(r2, r3)
+            com.panasonic.avc.cng.util.ImageAppLog.error(r2, r3)
             if (r1 == 0) goto L_0x005c
             r8.TerminateApp()
             super.onBackPressed()
@@ -3814,7 +3814,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
     }
 
     public void finish() {
-        C2261g.m9763a(TAG, "finish()");
+        ImageAppLog.debug(TAG, "finish()");
         OnSetResult();
         if (this._nfcViewModel != null) {
             this._nfcViewModel.mo3281a(false);
@@ -3828,7 +3828,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
             this._viewModel.mo3205a();
             this._viewModel = null;
         }
-        C2316j.m10034b(C2685i.f8333f);
+        C2316j.m10034b(GuidanceMenuViewModel.f8333f);
         this._isWakeUpNG = false;
         this._timeoutCount = 0;
         if (this._timeoutTimer != null) {
@@ -3857,14 +3857,14 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
                     break;
             }
             if (this._viewModel != null) {
-                C2028e a = C2253z.m9680a(this._context, true);
+                C2028e a = ServiceFactory.m9680a(this._context, true);
                 if (a != null) {
-                    C1846e i2 = a.mo5285i();
+                    CameraStatus i2 = a.mo5285i();
                     if (i2 != null) {
                         if (i2.mo4661J() || this._viewModel.mo6650q() || i2.mo4686af() || i2.mo4685ae() || i2.mo4687ag()) {
                             ResultDisplay(i, str, str2);
                         } else {
-                            if (!C2331d.m10125b((Activity) this._context, C2328a.ON_PROGRESS) && this._handler != null) {
+                            if (!DialogFactory.m10125b((Activity) this._context, C2328a.ON_PROGRESS) && this._handler != null) {
                                 this._handler.post(new Runnable() {
                                     public void run() {
                                         GuidanceMenuActivity.this.showSimpleDlg(C2328a.ON_PROGRESS, null);
@@ -3884,7 +3884,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
 
     /* access modifiers changed from: private */
     public void reconnectAccessPoint(final C2649a aVar, final boolean z) {
-        C2261g.m9769c(TAG, "～再接続～");
+        ImageAppLog.error(TAG, "～再接続～");
         new Thread(new Runnable() {
             public void run() {
                 if (GuidanceMenuActivity.this._viewModel != null) {
@@ -3903,7 +3903,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
     }
 
     public void onBackPressed() {
-        C2261g.m9763a(TAG, "onBackPressed()");
+        ImageAppLog.debug(TAG, "onBackPressed()");
         if (isAppFinishConfirmed()) {
             TerminateApp();
             super.onBackPressed();
@@ -3968,15 +3968,15 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
                         }
                     });
                 }
-                C2331d.m10115a((Activity) this, C2328a.DmsReceiving, (Bundle) null, (C2325c) new C2325c() {
+                DialogFactory.m10115a((Activity) this, C2328a.DmsReceiving, (Bundle) null, (C2325c) new C2325c() {
                     /* renamed from: a */
                     public void mo6131a() {
-                        C2331d.m10129c((Activity) GuidanceMenuActivity.this, C2328a.DmsReceiving, (int) R.id.text, (int) R.string.cmn_msg_now_recieve_images_from_camera);
+                        DialogFactory.m10129c((Activity) GuidanceMenuActivity.this, C2328a.DmsReceiving, (int) R.id.text, (int) R.string.cmn_msg_now_recieve_images_from_camera);
                     }
                 });
                 return null;
             case 2:
-                if (C2331d.m10125b((Activity) this, C2328a.DmsReceiving)) {
+                if (DialogFactory.m10125b((Activity) this, C2328a.DmsReceiving)) {
                     dismissAllDlg();
                 }
                 return new C5759a();
@@ -4020,7 +4020,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
         return new C2207a() {
             /* renamed from: a */
             public void mo3255a(String str, String str2, String str3, boolean z, long j, long j2, long j3) {
-                C2261g.m9771e(GuidanceMenuActivity.TAG, "INfcResultListener-OnSuccess()");
+                ImageAppLog.info(GuidanceMenuActivity.TAG, "INfcResultListener-OnSuccess()");
                 GuidanceMenuActivity.this.dismissAllDlg();
                 if (GuidanceMenuActivity.this._nfcViewModel.mo3301m().booleanValue()) {
                     GuidanceMenuActivity.this._firstTouch = false;
@@ -4031,14 +4031,14 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
 
             /* renamed from: a */
             public void mo3251a() {
-                C2261g.m9771e(GuidanceMenuActivity.TAG, "INfcResultListener-OnFailedNotPermitMovie()");
+                ImageAppLog.info(GuidanceMenuActivity.TAG, "INfcResultListener-OnFailedNotPermitMovie()");
                 GuidanceMenuActivity.this.dismissAllDlg();
                 GuidanceMenuActivity.this.showSimpleDlg(C2328a.NfcTouchFailed, null);
             }
 
             /* renamed from: h */
             public void mo3263h() {
-                C2261g.m9771e(GuidanceMenuActivity.TAG, "INfcResultListener-OnFailedNotPermitNfcUse()");
+                ImageAppLog.info(GuidanceMenuActivity.TAG, "INfcResultListener-OnFailedNotPermitNfcUse()");
                 GuidanceMenuActivity.this.dismissAllDlg();
                 if (GuidanceMenuActivity.this._nfcViewModel != null) {
                     GuidanceMenuActivity.this._nfcViewModel.mo3285b(true);
@@ -4048,7 +4048,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
 
             /* renamed from: i */
             public void mo3264i() {
-                C2261g.m9771e(GuidanceMenuActivity.TAG, "INfcResultListener-OnFailedInvalidData()");
+                ImageAppLog.info(GuidanceMenuActivity.TAG, "INfcResultListener-OnFailedInvalidData()");
                 GuidanceMenuActivity.this.dismissAllDlg();
                 if (GuidanceMenuActivity.this._nfcViewModel != null) {
                     GuidanceMenuActivity.this._nfcViewModel.mo3285b(true);
@@ -4058,7 +4058,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
 
             /* renamed from: j */
             public void mo3265j() {
-                C2261g.m9771e(GuidanceMenuActivity.TAG, "INfcResultListener-OnFailedInvalidDevice()");
+                ImageAppLog.info(GuidanceMenuActivity.TAG, "INfcResultListener-OnFailedInvalidDevice()");
                 GuidanceMenuActivity.this.dismissAllDlg();
                 if (GuidanceMenuActivity.this._nfcViewModel != null) {
                     GuidanceMenuActivity.this._nfcViewModel.mo3285b(true);
@@ -4068,7 +4068,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
 
             /* renamed from: k */
             public void mo3266k() {
-                C2261g.m9771e(GuidanceMenuActivity.TAG, "INfcResultListener-OnFailedShareInvalidPicture()");
+                ImageAppLog.info(GuidanceMenuActivity.TAG, "INfcResultListener-OnFailedShareInvalidPicture()");
                 GuidanceMenuActivity.this.dismissAllDlg();
                 if (GuidanceMenuActivity.this._nfcViewModel != null) {
                     GuidanceMenuActivity.this._nfcViewModel.mo3285b(true);
@@ -4078,18 +4078,18 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
 
             /* renamed from: b */
             public void mo3257b() {
-                C2261g.m9771e(GuidanceMenuActivity.TAG, "INfcResultListener-OnFailed()");
+                ImageAppLog.info(GuidanceMenuActivity.TAG, "INfcResultListener-OnFailed()");
                 GuidanceMenuActivity.this.NfcTouchFailed();
             }
 
             /* renamed from: c */
             public void mo3258c() {
-                C2261g.m9771e(GuidanceMenuActivity.TAG, "INfcResultListener-OnTagDetected()");
+                ImageAppLog.info(GuidanceMenuActivity.TAG, "INfcResultListener-OnTagDetected()");
             }
 
             /* renamed from: a */
             public void mo3256a(boolean z) {
-                C2261g.m9771e(GuidanceMenuActivity.TAG, String.format("INfcResultListener-OnEnableNfc(%b)", new Object[]{Boolean.valueOf(z)}));
+                ImageAppLog.info(GuidanceMenuActivity.TAG, String.format("INfcResultListener-OnEnableNfc(%b)", new Object[]{Boolean.valueOf(z)}));
                 GuidanceMenuActivity.this._enableNFC = z;
                 if (GuidanceMenuActivity.this.isEnableConnectOnStart()) {
                     if (C1712b.m6919c().mo4896a() != null) {
@@ -4121,58 +4121,58 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
 
             /* renamed from: a */
             public void mo3253a(long j) {
-                C2261g.m9771e(GuidanceMenuActivity.TAG, "INfcResultListener-OnFinishFirstOneTouch()");
+                ImageAppLog.info(GuidanceMenuActivity.TAG, "INfcResultListener-OnFinishFirstOneTouch()");
                 GuidanceMenuActivity.this.showSecondTouch();
             }
 
             /* renamed from: d */
             public void mo3259d() {
-                C2261g.m9771e(GuidanceMenuActivity.TAG, "INfcResultListener-OnFailedFirstTwoTouch()");
+                ImageAppLog.info(GuidanceMenuActivity.TAG, "INfcResultListener-OnFailedFirstTwoTouch()");
                 GuidanceMenuActivity.this.showSimpleDlg(C2328a.WiFiFailed, null);
             }
 
             /* renamed from: e */
             public void mo3260e() {
-                C2261g.m9771e(GuidanceMenuActivity.TAG, "INfcResultListener-OnTouchedOtherMovie()");
+                ImageAppLog.info(GuidanceMenuActivity.TAG, "INfcResultListener-OnTouchedOtherMovie()");
                 GuidanceMenuActivity.this._nfcViewModel.mo3282a(false, false);
                 GuidanceMenuActivity.this._nfcViewModel.mo3299k();
             }
 
             /* renamed from: f */
             public void mo3261f() {
-                C2261g.m9771e(GuidanceMenuActivity.TAG, "INfcResultListener-OnWaitDlgStart()");
+                ImageAppLog.info(GuidanceMenuActivity.TAG, "INfcResultListener-OnWaitDlgStart()");
             }
 
             /* renamed from: g */
             public void mo3262g() {
-                C2261g.m9771e(GuidanceMenuActivity.TAG, "INfcResultListener-OnWaitDlgEnd()");
+                ImageAppLog.info(GuidanceMenuActivity.TAG, "INfcResultListener-OnWaitDlgEnd()");
             }
 
             /* renamed from: a */
             public void mo3254a(String str, String str2) {
-                C2261g.m9760a(2101251, "");
-                C2261g.m9771e(GuidanceMenuActivity.TAG, "INfcResultListener-OnShareSuccess()");
+                ImageAppLog.m9760a(2101251, "");
+                ImageAppLog.info(GuidanceMenuActivity.TAG, "INfcResultListener-OnShareSuccess()");
                 GuidanceMenuActivity.this.startTouchShare(str, str2);
             }
 
             /* renamed from: l */
             public void mo3267l() {
-                C2261g.m9760a(2101252, "");
+                ImageAppLog.m9760a(2101252, "");
             }
 
             /* renamed from: a */
             public void mo3252a(byte b) {
-                C2261g.m9760a(2101252, "");
+                ImageAppLog.m9760a(2101252, "");
             }
 
             /* renamed from: m */
             public void mo3268m() {
-                C2261g.m9760a(2101252, "");
+                ImageAppLog.m9760a(2101252, "");
             }
 
             /* renamed from: n */
             public void mo3269n() {
-                C2261g.m9760a(2101252, "");
+                ImageAppLog.m9760a(2101252, "");
             }
         };
     }
@@ -4208,22 +4208,22 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
         SetListener(new C1360a() {
             /* renamed from: a */
             public void mo3272a(C1892f fVar) {
-                C2261g.m9771e(GuidanceMenuActivity.TAG, "INfcSupportListener-OnSuccess()");
+                ImageAppLog.info(GuidanceMenuActivity.TAG, "INfcSupportListener-OnSuccess()");
                 GuidanceMenuActivity.this._viewModel.mo6629a(fVar.f5697s, fVar.f5698t);
             }
 
             /* renamed from: a */
             public void mo3271a() {
-                C2261g.m9771e(GuidanceMenuActivity.TAG, "INfcSupportListener-OnFailed()");
+                ImageAppLog.info(GuidanceMenuActivity.TAG, "INfcSupportListener-OnFailed()");
             }
         });
         this._nfcViewModel.mo3281a(true);
         this._firstTouch = true;
-        C2331d.m10115a((Activity) this, C2328a.ON_FIRST_NFC_TOUCH, (Bundle) null, (C2325c) new C2325c() {
+        DialogFactory.m10115a((Activity) this, C2328a.ON_FIRST_NFC_TOUCH, (Bundle) null, (C2325c) new C2325c() {
             /* renamed from: a */
             public void mo6131a() {
-                C2331d.m10111a((Activity) GuidanceMenuActivity.this, C2328a.ON_FIRST_NFC_TOUCH, (int) R.id.text, (CharSequence) GuidanceMenuActivity.this.getString(R.string.msg_nfc_after_movie_work) + "\n" + String.format(GuidanceMenuActivity.this.getString(R.string.msg_nfc_movie_work_v2), new Object[]{GuidanceMenuActivity.this.getString(R.string.msg_nfc__movie_display)}));
-                C1351b.m5317a().mo3232a((Context) GuidanceMenuActivity.this, "NFC Connect");
+                DialogFactory.m10111a((Activity) GuidanceMenuActivity.this, C2328a.ON_FIRST_NFC_TOUCH, (int) R.id.text, (CharSequence) GuidanceMenuActivity.this.getString(R.string.msg_nfc_after_movie_work) + "\n" + String.format(GuidanceMenuActivity.this.getString(R.string.msg_nfc_movie_work_v2), new Object[]{GuidanceMenuActivity.this.getString(R.string.msg_nfc__movie_display)}));
+                GoogleTagManager.m5317a().mo3232a((Context) GuidanceMenuActivity.this, "NFC Connect");
             }
         });
         this._nfcViewModel.mo3283b(System.currentTimeMillis());
@@ -4232,7 +4232,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
     /* access modifiers changed from: private */
     public void connectCameraNFC(String str, String str2, String str3, boolean z) {
         if (this._nfcTouch) {
-            C2261g.m9771e(TAG, "(NFC)now connecting...");
+            ImageAppLog.info(TAG, "(NFC)now connecting...");
             return;
         }
         if (this._imageAppService != null) {
@@ -4290,7 +4290,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
                             Intent intent;
                             if (a == null || !a.mo4886a()) {
                                 if (a == null || !a.mo4888b()) {
-                                    C2261g.m9760a(2105345, "");
+                                    ImageAppLog.m9760a(2105345, "");
                                     intent = new Intent(GuidanceMenuActivity.this.getApplication(), MainBrowserActivity.class);
                                 } else {
                                     Editor edit = PreferenceManager.getDefaultSharedPreferences(GuidanceMenuActivity.this._context).edit();
@@ -4300,25 +4300,25 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
                                     edit.putInt("current_play_folder", 0).apply();
                                     edit.putBoolean("play_mode_first", false).apply();
                                     if (a.f5688j == 131074 && ((C1879a.m7545b(a, "1.3") || C1879a.m7545b(a, "1.6")) && a.f5694p.mo4819c())) {
-                                        C2261g.m9760a(2105348, "");
+                                        ImageAppLog.m9760a(2105348, "");
                                         intent = new Intent(GuidanceMenuActivity.this.getApplication(), EasyWiFiSettingActivity.class);
                                     } else if (a.f5688j == 131074 && ((C1879a.m7545b(a, "1.3") || C1879a.m7545b(a, "1.6")) && a.f5694p.mo4820d())) {
-                                        C2261g.m9760a(2105348, "");
+                                        ImageAppLog.m9760a(2105348, "");
                                         intent = new Intent(GuidanceMenuActivity.this.getApplication(), EasyWiFiSettingActivity.class);
                                         intent.putExtra("EasyWiFiNoUstream", true);
                                     } else if (a.f5688j == 131076 && C1879a.m7545b(a, "1.4") && a.f5694p.mo4819c()) {
-                                        C2261g.m9760a(2105348, "");
+                                        ImageAppLog.m9760a(2105348, "");
                                         intent = new Intent(GuidanceMenuActivity.this.getApplication(), EasyWiFiSettingActivity.class);
                                     } else if (a.f5688j == 131073 && a.f5694p != null && a.f5694p.mo4821e()) {
-                                        C2261g.m9760a(2105350, "");
+                                        ImageAppLog.m9760a(2105350, "");
                                         intent = new Intent(GuidanceMenuActivity.this.getApplication(), WirelessTwinCameraActivity.class);
                                     } else if (a.f5688j == 131073 && a.f5694p != null && a.f5694p.mo4822f()) {
                                         PreferenceManager.getDefaultSharedPreferences(GuidanceMenuActivity.this._context).edit().putString("HighlightModeSSID", a.f5685g).commit();
-                                        C2261g.m9760a(2105350, "");
+                                        ImageAppLog.m9760a(2105350, "");
                                         intent = new Intent(GuidanceMenuActivity.this.getApplication(), MainBrowserActivity.class);
                                         intent.putExtra("HighlightMode", true);
                                     } else if (a.f5688j == 131074 && !a.f5689k) {
-                                        C2261g.m9760a(2105347, "");
+                                        ImageAppLog.m9760a(2105347, "");
                                         intent = new Intent(GuidanceMenuActivity.this.getApplication(), SetupWearableSettingActivity.class);
                                         if (!a.f5689k) {
                                             intent.putExtra("SETUP_WEARABLE_SETTING_DATETIME", true);
@@ -4340,7 +4340,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
                                     } else if (a2.mo6693a() == 2) {
                                         intent = C2275p.m9924b(GuidanceMenuActivity.this._context, a);
                                         if (a.f5688j == 131074 && C1879a.m7545b(a, "1.6")) {
-                                            C2754l lVar = new C2754l(GuidanceMenuActivity.this._context);
+                                            WifiUtil lVar = new WifiUtil(GuidanceMenuActivity.this._context);
                                             if (lVar.mo6735a(lVar.mo6743b()).equals("A1-wearable")) {
                                                 intent.putExtra("WearableMsgChangeSSID", true);
                                             }
@@ -4348,35 +4348,35 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
                                     } else if (a2.mo6693a() == 1) {
                                         intent = C2275p.m9921a(GuidanceMenuActivity.this._context, a);
                                         if (a.f5688j == 131074 && C1879a.m7545b(a, "1.6")) {
-                                            C2754l lVar2 = new C2754l(GuidanceMenuActivity.this._context);
+                                            WifiUtil lVar2 = new WifiUtil(GuidanceMenuActivity.this._context);
                                             if (lVar2.mo6735a(lVar2.mo6743b()).equals("A1-wearable")) {
                                                 intent.putExtra("WearableMsgChangeSSID", true);
                                             }
                                         }
                                     } else if (a2.mo6693a() != 0) {
-                                        C2261g.m9760a(2105345, "");
+                                        ImageAppLog.m9760a(2105345, "");
                                         intent = new Intent(GuidanceMenuActivity.this.getApplication(), MainBrowserActivity.class);
                                     } else if (a.f5694p != null && a.f5694p.mo4819c()) {
-                                        C2261g.m9760a(2105348, "");
+                                        ImageAppLog.m9760a(2105348, "");
                                         intent = new Intent(GuidanceMenuActivity.this.getApplication(), EasyWiFiSettingActivity.class);
                                     } else if (a.f5694p == null || !a.f5694p.mo4820d()) {
-                                        C2261g.m9760a(2105345, "");
+                                        ImageAppLog.m9760a(2105345, "");
                                         intent = new Intent(GuidanceMenuActivity.this.getApplication(), MainBrowserActivity.class);
                                         GuidanceMenuActivity.this.OnSetupBrowser(intent);
                                         if (a.f5688j == 131074 && C1879a.m7545b(a, "1.6")) {
-                                            C2754l lVar3 = new C2754l(GuidanceMenuActivity.this._context);
+                                            WifiUtil lVar3 = new WifiUtil(GuidanceMenuActivity.this._context);
                                             if (lVar3.mo6735a(lVar3.mo6743b()).equals("A1-wearable")) {
                                                 intent.putExtra("WearableMsgChangeSSID", true);
                                             }
                                         }
                                     } else {
-                                        C2261g.m9760a(2105348, "");
+                                        ImageAppLog.m9760a(2105348, "");
                                         intent = new Intent(GuidanceMenuActivity.this.getApplication(), EasyWiFiSettingActivity.class);
                                         intent.putExtra("EasyWiFiNoUstream", true);
                                     }
                                 }
                             } else if (C1712b.m6920d().mo4907a(a)) {
-                                C2261g.m9760a(2105345, "");
+                                ImageAppLog.m9760a(2105345, "");
                                 C1712b.m6919c().mo4897a(null);
                                 if (C1347a.m5306a(GuidanceMenuActivity.this._context)) {
                                     intent = new Intent(GuidanceMenuActivity.this._context, LumixLinkCallActivity.class);
@@ -4385,7 +4385,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
                                     return;
                                 }
                             } else if (a.f5688j == 65540) {
-                                C2261g.m9760a(2105345, "");
+                                ImageAppLog.m9760a(2105345, "");
                                 String f = C1347a.m5313f(GuidanceMenuActivity.this.getApplication().getApplicationContext());
                                 if (f == null) {
                                     f = "";
@@ -4405,7 +4405,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
                                     }
                                 }
                             } else {
-                                C2261g.m9760a(2105345, "");
+                                ImageAppLog.m9760a(2105345, "");
                                 String f2 = C1347a.m5313f(GuidanceMenuActivity.this.getApplication().getApplicationContext());
                                 if (f2 == null) {
                                     f2 = "";
@@ -4507,7 +4507,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
                     }
                 }
                 if (b.f5825a == null) {
-                    C2261g.m9763a("SmartApp", "NfcSettingList == null");
+                    ImageAppLog.debug("SmartApp", "NfcSettingList == null");
                 }
                 z = true;
             }
@@ -4627,8 +4627,8 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
 
     /* access modifiers changed from: private */
     public void updateView(C2678f fVar) {
-        C2261g.m9763a(TAG, "GuidanceMenuActivity.updateView: current = " + this._dispMode + ", next = " + fVar);
-        C2261g.m9763a(TAG, "GuidanceMenuActivity.updateView: _currentTopPagerItem = " + this._currentTopPagerItem);
+        ImageAppLog.debug(TAG, "GuidanceMenuActivity.updateView: current = " + this._dispMode + ", next = " + fVar);
+        ImageAppLog.debug(TAG, "GuidanceMenuActivity.updateView: _currentTopPagerItem = " + this._currentTopPagerItem);
         if (this._dispMode != fVar) {
             this._dispMode = fVar;
             switch (fVar) {
@@ -4667,7 +4667,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
                     this._handler.post(new Runnable() {
                         public void run() {
                             if (GuidanceMenuActivity.this._viewModel == null) {
-                                C2261g.m9766b(GuidanceMenuActivity.TAG, "ViewModel is null!!");
+                                ImageAppLog.warning(GuidanceMenuActivity.TAG, "ViewModel is null!!");
                             } else if (GuidanceMenuActivity.this._btConnectState.equals("Connected")) {
                                 GuidanceMenuActivity.this._viewModel.f8364x.mo3216a(Integer.valueOf(R.drawable.camera_connected));
                                 if (GuidanceMenuActivity.this._isAutoSendMode || GuidanceMenuActivity.this.isDmsReceiving()) {
@@ -4709,7 +4709,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
                     this._handler.post(new Runnable() {
                         public void run() {
                             if (GuidanceMenuActivity.this._viewModel == null) {
-                                C2261g.m9766b(GuidanceMenuActivity.TAG, "ViewModel is null!!");
+                                ImageAppLog.warning(GuidanceMenuActivity.TAG, "ViewModel is null!!");
                                 return;
                             }
                             if (GuidanceMenuActivity.this._btConnectState.equals("Connected")) {
@@ -4810,7 +4810,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
             this._handler.post(new Runnable() {
                 public void run() {
                     if (GuidanceMenuActivity.this._viewModel == null) {
-                        C2261g.m9766b(GuidanceMenuActivity.TAG, "ViewModel is null!!");
+                        ImageAppLog.warning(GuidanceMenuActivity.TAG, "ViewModel is null!!");
                         return;
                     }
                     GuidanceMenuActivity.this._viewModel.f8365y.mo3216a(Integer.valueOf(0));
@@ -4831,7 +4831,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
                             ((TextView) GuidanceMenuActivity.this.findViewById(R.id.textConnect)).setText(GuidanceMenuActivity.this.getSizeChangedString(GuidanceMenuActivity.this.getString(R.string.cmn_waiting_transfer), 0.75f));
                         }
                     } else {
-                        C2261g.m9766b(GuidanceMenuActivity.TAG, "Device or ViewModel is null!!");
+                        ImageAppLog.warning(GuidanceMenuActivity.TAG, "Device or ViewModel is null!!");
                     }
                 }
             });
@@ -4844,7 +4844,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
             this._handler.post(new Runnable() {
                 public void run() {
                     if (GuidanceMenuActivity.this._viewModel == null) {
-                        C2261g.m9766b(GuidanceMenuActivity.TAG, "ViewModel is null!!");
+                        ImageAppLog.warning(GuidanceMenuActivity.TAG, "ViewModel is null!!");
                         return;
                     }
                     GuidanceMenuActivity.this._viewModel.f8365y.mo3216a(Integer.valueOf(0));
@@ -4885,7 +4885,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
             this._handler.post(new Runnable() {
                 public void run() {
                     if (GuidanceMenuActivity.this._viewModel == null) {
-                        C2261g.m9766b(GuidanceMenuActivity.TAG, "ViewModel is null!!");
+                        ImageAppLog.warning(GuidanceMenuActivity.TAG, "ViewModel is null!!");
                         return;
                     }
                     GuidanceMenuActivity.this._viewModel.f8365y.mo3216a(Integer.valueOf(0));
@@ -4917,7 +4917,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
             this._handler.post(new Runnable() {
                 public void run() {
                     if (GuidanceMenuActivity.this._viewModel == null) {
-                        C2261g.m9766b(GuidanceMenuActivity.TAG, "ViewModel is null!!");
+                        ImageAppLog.warning(GuidanceMenuActivity.TAG, "ViewModel is null!!");
                         return;
                     }
                     GuidanceMenuActivity.this._viewModel.f8364x.mo3216a(Integer.valueOf(R.drawable.now_camera_connecting));
@@ -4938,7 +4938,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
     /* access modifiers changed from: private */
     public void setAllButtonState(boolean z) {
         if (this._viewModel == null) {
-            C2261g.m9766b(TAG, "ViewModel is null!!");
+            ImageAppLog.warning(TAG, "ViewModel is null!!");
             return;
         }
         View findViewById = findViewById(R.id.mainLiveViewButton);
@@ -5079,7 +5079,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
         return displayMetrics.widthPixels > displayMetrics.heightPixels;
     }
 
-    public void DmsBase_OnGetState(final C1846e eVar, boolean z, int i) {
+    public void DmsBase_OnGetState(final CameraStatus eVar, boolean z, int i) {
         if (this._viewModel != null && this._handler != null) {
             if (!z) {
                 this._viewModel.mo6018a(eVar);
@@ -5101,7 +5101,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
                                 GuidanceMenuActivity.this.updateView(C2678f.ConnectedBt);
                             }
                             if (!GuidanceMenuActivity.this._isBTRemoteControllerWifiDisconnect) {
-                                GuidanceMenuActivity.this.OnDeviceDisconnected(C1846e.m7191b(eVar));
+                                GuidanceMenuActivity.this.OnDeviceDisconnected(CameraStatus.m7191b(eVar));
                             }
                             GuidanceMenuActivity.this._isBTRemoteControllerWifiDisconnect = false;
                         }
@@ -5179,7 +5179,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
                 this._showApList = true;
                 if (VERSION.SDK_INT != 23 || !VERSION.RELEASE.equalsIgnoreCase("6.0")) {
                     if (this._viewModel != null) {
-                        C2685i iVar = this._viewModel;
+                        GuidanceMenuViewModel iVar = this._viewModel;
                         if (this._showApList) {
                             z = false;
                         }
@@ -5198,7 +5198,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
                 }
             case C1702a.HorizontalPicker_title_image /*9*/:
             case C1702a.HorizontalPicker_right_blank_area_width /*10*/:
-                Editable c = C2331d.m10128c(this, aVar, R.id.wifiPassword);
+                Editable c = DialogFactory.m10128c(this, aVar, R.id.wifiPassword);
                 String str = c != null ? c.toString() : "";
                 dismissAllDlg();
                 if (this._imageAppService != null) {
@@ -5269,7 +5269,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
                             this._showApList = true;
                             if (VERSION.SDK_INT != 23 || !VERSION.RELEASE.equalsIgnoreCase("6.0")) {
                                 if (this._viewModel != null) {
-                                    C2685i iVar2 = this._viewModel;
+                                    GuidanceMenuViewModel iVar2 = this._viewModel;
                                     if (this._showApList) {
                                         z = false;
                                     }
@@ -5281,7 +5281,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
                                 C0008a.m38a((Activity) this._context, new String[]{"android.permission.ACCESS_FINE_LOCATION", "android.permission.ACCESS_COARSE_LOCATION"}, 45);
                                 return;
                             } else if (this._viewModel != null) {
-                                C2685i iVar3 = this._viewModel;
+                                GuidanceMenuViewModel iVar3 = this._viewModel;
                                 if (this._showApList) {
                                     z = false;
                                 }
@@ -5303,7 +5303,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
                     return;
                 }
                 if (this._isQRRunning) {
-                    C2261g.m9771e("QRButton", "Running......");
+                    ImageAppLog.info("QRButton", "Running......");
                     return;
                 }
                 this._isQRRunning = true;
@@ -5373,7 +5373,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
                 this._isActionModeResultUUID = false;
                 return;
             case 37:
-                C2261g.m9763a(TAG, "ACTION_MODE writeData:" + this._imageAppService.mo5627a(4, C4244s.f14192b));
+                ImageAppLog.debug(TAG, "ACTION_MODE writeData:" + this._imageAppService.mo5627a(4, C4244s.f14192b));
                 if (this._btDevice == null && this._imageAppService != null) {
                     this._btDevice = this._imageAppService.mo5643e();
                 }
@@ -5400,7 +5400,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
             case 40:
                 if (this._imageAppService != null) {
                     this._isBTRemoteControllerWifiDisconnect = true;
-                    C2261g.m9763a(TAG, "BTRemoteControllerStart writeData:" + this._imageAppService.mo5627a(39, C4244s.f14210t));
+                    ImageAppLog.debug(TAG, "BTRemoteControllerStart writeData:" + this._imageAppService.mo5627a(39, C4244s.f14210t));
                     if (this._btDevice != null) {
                         String string3 = PreferenceManager.getDefaultSharedPreferences(this._context).getString("CurrentConnectedSSID", "");
                         String name3 = this._btDevice.getName();
@@ -5492,7 +5492,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
                     this._showApList = true;
                     if (VERSION.SDK_INT != 23 || !VERSION.RELEASE.equalsIgnoreCase("6.0")) {
                         if (this._viewModel != null) {
-                            C2685i iVar = this._viewModel;
+                            GuidanceMenuViewModel iVar = this._viewModel;
                             if (this._showApList) {
                                 z2 = false;
                             }
@@ -5501,7 +5501,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
                     } else if (!C2266l.m9852k(this._context)) {
                         C0008a.m38a((Activity) this._context, new String[]{"android.permission.ACCESS_FINE_LOCATION", "android.permission.ACCESS_COARSE_LOCATION"}, 45);
                     } else if (this._viewModel != null) {
-                        C2685i iVar2 = this._viewModel;
+                        GuidanceMenuViewModel iVar2 = this._viewModel;
                         if (!this._showApList) {
                             z = true;
                         } else {
@@ -5520,7 +5520,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
                     return;
                 }
                 if (this._isQRRunning) {
-                    C2261g.m9771e("QRButton", "Running......");
+                    ImageAppLog.info("QRButton", "Running......");
                     return;
                 }
                 this._isQRRunning = true;
@@ -5550,16 +5550,16 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
                 this._isBtScanSelectCancel = true;
                 return;
             case 37:
-                C2331d.m10114a((Activity) this, C2328a.ON_BT_AUTOSEND_CONFIRM_CONNECT_ANOTHER_PHONE, (Bundle) null);
+                DialogFactory.m10114a((Activity) this, C2328a.ON_BT_AUTOSEND_CONFIRM_CONNECT_ANOTHER_PHONE, (Bundle) null);
                 return;
             case 40:
                 if (this._imageAppService != null) {
-                    C2261g.m9763a(TAG, "BTRemoteControllerFinish writeData:" + this._imageAppService.mo5627a(39, C4244s.f14211u));
+                    ImageAppLog.debug(TAG, "BTRemoteControllerFinish writeData:" + this._imageAppService.mo5627a(39, C4244s.f14211u));
                     return;
                 }
                 return;
             case 41:
-                C2331d.m10114a((Activity) this, C2328a.ON_BT_AUTOSEND_PLEASE_OFF, (Bundle) null);
+                DialogFactory.m10114a((Activity) this, C2328a.ON_BT_AUTOSEND_PLEASE_OFF, (Bundle) null);
                 return;
             case 43:
             case 44:
@@ -5584,7 +5584,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
                 return;
             case 49:
                 stopConnecting();
-                C2331d.m10114a((Activity) this, C2328a.WiFiFailedNfcTimeout, (Bundle) null);
+                DialogFactory.m10114a((Activity) this, C2328a.WiFiFailedNfcTimeout, (Bundle) null);
                 return;
             case 50:
                 return;
@@ -5689,7 +5689,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
                     PreferenceManager.getDefaultSharedPreferences(this._context).edit().putString("CurrentConnectedSSID", ((C2615a) this._btApList.get(i)).f8155a).apply();
                     PreferenceManager.getDefaultSharedPreferences(this._context).edit().putString("CurrentConnectedAddress", ((C2615a) this._btApList.get(i)).f8156b).apply();
                     if (this._viewModel != null) {
-                        C2685i iVar = this._viewModel;
+                        GuidanceMenuViewModel iVar = this._viewModel;
                         C1892f fVar = (C1892f) this._deviceList.get(i);
                         boolean z3 = this._nfcTouch;
                         if (!this._isAutoSendMode) {
@@ -5722,7 +5722,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
                             i2 = 0;
                         }
                         PreferenceManager.getDefaultSharedPreferences(this._context).edit().putString("CurrentConnectedSSID", ((C2615a) this._btApList.get(i)).f8155a).apply();
-                        C2685i iVar2 = this._viewModel;
+                        GuidanceMenuViewModel iVar2 = this._viewModel;
                         C1892f fVar2 = (C1892f) this._deviceList.get(i2);
                         boolean z4 = this._nfcTouch;
                         if (this._isAutoSendMode) {
@@ -5841,7 +5841,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
             r1.putString(r2, r0)
             if (r6 == 0) goto L_0x00ef
             com.panasonic.avc.cng.view.b.b$a r0 = com.panasonic.avc.cng.view.p073b.C2327b.C2328a.ON_BT_WIFI_CONNECT_ERROR_BT_TETHERING
-            com.panasonic.avc.cng.view.p073b.C2331d.m10114a(r5, r0, r1)
+            com.panasonic.avc.cng.view.p073b.DialogFactory.m10114a(r5, r0, r1)
         L_0x00d4:
             return
         L_0x00d5:
@@ -5855,7 +5855,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
             goto L_0x0045
         L_0x00ef:
             com.panasonic.avc.cng.view.b.b$a r0 = com.panasonic.avc.cng.view.p073b.C2327b.C2328a.ON_BT_WIFI_CONNECT_ERROR
-            com.panasonic.avc.cng.view.p073b.C2331d.m10114a(r5, r0, r1)
+            com.panasonic.avc.cng.view.p073b.DialogFactory.m10114a(r5, r0, r1)
             goto L_0x00d4
         L_0x00f5:
             r1 = r2
@@ -5873,7 +5873,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
     }
 
     public void setDmsReceiving() {
-        C2028e a = C2253z.m9680a(this._context, false);
+        C2028e a = ServiceFactory.m9680a(this._context, false);
         if (a == null) {
             this._isDmsReceiving = 1;
         } else if (!a.mo5273b().equalsIgnoreCase("p2p") || !C2266l.m9834e()) {
@@ -5944,7 +5944,7 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
                         updateView(C2678f.NotConnected);
                         return;
                     } else if (this._viewModel != null) {
-                        C2685i iVar = this._viewModel;
+                        GuidanceMenuViewModel iVar = this._viewModel;
                         if (this._showApList) {
                             z = false;
                         }
@@ -5966,22 +5966,22 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
                             if (this._imageAppService != null) {
                                 this._imageAppService.mo5641c();
                             }
-                            WifiInfo b = new C2754l(this._context).mo6743b();
+                            WifiInfo b = new WifiUtil(this._context).mo6743b();
                             if (b.getIpAddress() == 0) {
-                                C2261g.m9763a(TAG, "SoftAP");
+                                ImageAppLog.debug(TAG, "SoftAP");
                                 this._isConnectConfirmDone = true;
                                 this._isSoftAp = true;
-                                C2261g.m9763a(TAG, "writeData:" + this._imageAppService.mo5627a(11, C4244s.f14197g));
+                                ImageAppLog.debug(TAG, "writeData:" + this._imageAppService.mo5627a(11, C4244s.f14197g));
                             } else {
-                                C2261g.m9763a(TAG, "STA");
-                                C2261g.m9763a(TAG, "wifiInfo.getSSID():" + b.getSSID());
+                                ImageAppLog.debug(TAG, "STA");
+                                ImageAppLog.debug(TAG, "wifiInfo.getSSID():" + b.getSSID());
                                 String ssid = b.getSSID();
                                 if (!ssid.startsWith("\"") || !ssid.endsWith("\"")) {
                                     str = ssid;
                                 } else {
                                     str = ssid.substring(1, ssid.length() - 1);
                                 }
-                                C2261g.m9763a(TAG, "writeData:" + this._imageAppService.mo5627a(12, C2266l.m9792a(32, str).getBytes()));
+                                ImageAppLog.debug(TAG, "writeData:" + this._imageAppService.mo5627a(12, C2266l.m9792a(32, str).getBytes()));
                             }
                         } else if (this._notifyResult[0] == 2) {
                             this._isAutoSendMode = false;
@@ -5992,14 +5992,14 @@ public class GuidanceMenuActivity extends C1357b implements C0010a, C2310a {
                                 } else {
                                     this._imageAppService.mo5636a((long) SCAN_PERIOD);
                                 }
-                                if (!C2331d.m10125b((Activity) this, C2328a.ON_BT_AUTOSEND_PLEASE_OFF)) {
-                                    C2331d.m10100a((Activity) this);
+                                if (!DialogFactory.m10125b((Activity) this, C2328a.ON_BT_AUTOSEND_PLEASE_OFF)) {
+                                    DialogFactory.m10100a((Activity) this);
                                 }
                             }
                         } else if (this._notifyResult[0] == 3) {
                             this._isChangedSSID = true;
                             if (this._imageAppService != null) {
-                                C2261g.m9763a(TAG, "readData:" + this._imageAppService.mo5626a(5));
+                                ImageAppLog.debug(TAG, "readData:" + this._imageAppService.mo5626a(5));
                             }
                         } else {
                             this._isAutoSendMode = false;

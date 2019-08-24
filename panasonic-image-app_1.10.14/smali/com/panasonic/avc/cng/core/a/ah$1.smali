@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/core/a/ah;->a()V
+    value = Lcom/panasonic/avc/cng/core/a/RemoteStreamCommand;->a()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/panasonic/avc/cng/core/a/ah;
+.field final synthetic a:Lcom/panasonic/avc/cng/core/a/RemoteStreamCommand;
 
 
 # direct methods
-.method constructor <init>(Lcom/panasonic/avc/cng/core/a/ah;)V
+.method constructor <init>(Lcom/panasonic/avc/cng/core/a/RemoteStreamCommand;)V
     .locals 0
 
     .prologue
     .line 70
-    iput-object p1, p0, Lcom/panasonic/avc/cng/core/a/ah$1;->a:Lcom/panasonic/avc/cng/core/a/ah;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/core/a/ah$1;->a:Lcom/panasonic/avc/cng/core/a/RemoteStreamCommand;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -57,16 +57,16 @@
 
     .line 77
     :goto_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/core/a/ah$1;->a:Lcom/panasonic/avc/cng/core/a/ah;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/core/a/ah$1;->a:Lcom/panasonic/avc/cng/core/a/RemoteStreamCommand;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/core/a/ah;->a(Lcom/panasonic/avc/cng/core/a/ah;)Z
+    invoke-static {v0}, Lcom/panasonic/avc/cng/core/a/RemoteStreamCommand;->a(Lcom/panasonic/avc/cng/core/a/RemoteStreamCommand;)Z
 
     move-result v0
 
     if-eq v0, v6, :cond_1
 
     .line 80
-    invoke-static {}, Lcom/panasonic/avc/cng/core/a/ah;->c()Ljava/lang/Object;
+    invoke-static {}, Lcom/panasonic/avc/cng/core/a/RemoteStreamCommand;->c()Ljava/lang/Object;
 
     move-result-object v2
 
@@ -74,18 +74,18 @@
 
     .line 85
     :try_start_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/core/a/ah$1;->a:Lcom/panasonic/avc/cng/core/a/ah;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/core/a/ah$1;->a:Lcom/panasonic/avc/cng/core/a/RemoteStreamCommand;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/core/a/ah;->b(Lcom/panasonic/avc/cng/core/a/ah;)Ljava/net/DatagramSocket;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/core/a/RemoteStreamCommand;->b(Lcom/panasonic/avc/cng/core/a/RemoteStreamCommand;)Ljava/net/DatagramSocket;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 87
-    iget-object v0, p0, Lcom/panasonic/avc/cng/core/a/ah$1;->a:Lcom/panasonic/avc/cng/core/a/ah;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/core/a/ah$1;->a:Lcom/panasonic/avc/cng/core/a/RemoteStreamCommand;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/core/a/ah;->c(Lcom/panasonic/avc/cng/core/a/ah;)Ljava/lang/String;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/core/a/RemoteStreamCommand;->c(Lcom/panasonic/avc/cng/core/a/RemoteStreamCommand;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -98,18 +98,18 @@
 
     const/4 v4, 0x2
 
-    iget-object v5, p0, Lcom/panasonic/avc/cng/core/a/ah$1;->a:Lcom/panasonic/avc/cng/core/a/ah;
+    iget-object v5, p0, Lcom/panasonic/avc/cng/core/a/ah$1;->a:Lcom/panasonic/avc/cng/core/a/RemoteStreamCommand;
 
-    invoke-static {v5}, Lcom/panasonic/avc/cng/core/a/ah;->d(Lcom/panasonic/avc/cng/core/a/ah;)I
+    invoke-static {v5}, Lcom/panasonic/avc/cng/core/a/RemoteStreamCommand;->d(Lcom/panasonic/avc/cng/core/a/RemoteStreamCommand;)I
 
     move-result v5
 
     invoke-direct {v3, v1, v4, v0, v5}, Ljava/net/DatagramPacket;-><init>([BILjava/net/InetAddress;I)V
 
     .line 96
-    iget-object v0, p0, Lcom/panasonic/avc/cng/core/a/ah$1;->a:Lcom/panasonic/avc/cng/core/a/ah;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/core/a/ah$1;->a:Lcom/panasonic/avc/cng/core/a/RemoteStreamCommand;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/core/a/ah;->b(Lcom/panasonic/avc/cng/core/a/ah;)Ljava/net/DatagramSocket;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/core/a/RemoteStreamCommand;->b(Lcom/panasonic/avc/cng/core/a/RemoteStreamCommand;)Ljava/net/DatagramSocket;
 
     move-result-object v0
 
@@ -152,7 +152,7 @@
 
     const-string v3, "socket null !!"
 
-    invoke-static {v0, v3}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v3}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
     :try_end_3
     .catch Ljava/net/SocketException; {:try_start_3 .. :try_end_3} :catch_1
     .catch Ljava/io/IOException; {:try_start_3 .. :try_end_3} :catch_2
@@ -172,15 +172,15 @@
 
     move-result-object v4
 
-    invoke-static {v3, v4}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v3, v4}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 108
     invoke-virtual {v0}, Ljava/net/SocketException;->printStackTrace()V
 
     .line 109
-    iget-object v0, p0, Lcom/panasonic/avc/cng/core/a/ah$1;->a:Lcom/panasonic/avc/cng/core/a/ah;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/core/a/ah$1;->a:Lcom/panasonic/avc/cng/core/a/RemoteStreamCommand;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/ah;->b()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/RemoteStreamCommand;->b()V
 
     goto :goto_1
 
@@ -206,15 +206,15 @@
 
     move-result-object v4
 
-    invoke-static {v3, v4}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v3, v4}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 114
     invoke-virtual {v0}, Ljava/io/IOException;->printStackTrace()V
 
     .line 115
-    iget-object v0, p0, Lcom/panasonic/avc/cng/core/a/ah$1;->a:Lcom/panasonic/avc/cng/core/a/ah;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/core/a/ah$1;->a:Lcom/panasonic/avc/cng/core/a/RemoteStreamCommand;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/ah;->b()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/RemoteStreamCommand;->b()V
     :try_end_5
     .catchall {:try_start_5 .. :try_end_5} :catchall_0
 
@@ -226,19 +226,19 @@
 
     const-string v1, "run() : Stop !!!"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 131
-    iget-object v0, p0, Lcom/panasonic/avc/cng/core/a/ah$1;->a:Lcom/panasonic/avc/cng/core/a/ah;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/core/a/ah$1;->a:Lcom/panasonic/avc/cng/core/a/RemoteStreamCommand;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/core/a/ah;->b(Lcom/panasonic/avc/cng/core/a/ah;)Ljava/net/DatagramSocket;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/core/a/RemoteStreamCommand;->b(Lcom/panasonic/avc/cng/core/a/RemoteStreamCommand;)Ljava/net/DatagramSocket;
 
     move-result-object v0
 
     if-eqz v0, :cond_2
 
     .line 133
-    invoke-static {}, Lcom/panasonic/avc/cng/core/a/ah;->c()Ljava/lang/Object;
+    invoke-static {}, Lcom/panasonic/avc/cng/core/a/RemoteStreamCommand;->c()Ljava/lang/Object;
 
     move-result-object v1
 
@@ -246,20 +246,20 @@
 
     .line 136
     :try_start_6
-    iget-object v0, p0, Lcom/panasonic/avc/cng/core/a/ah$1;->a:Lcom/panasonic/avc/cng/core/a/ah;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/core/a/ah$1;->a:Lcom/panasonic/avc/cng/core/a/RemoteStreamCommand;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/core/a/ah;->b(Lcom/panasonic/avc/cng/core/a/ah;)Ljava/net/DatagramSocket;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/core/a/RemoteStreamCommand;->b(Lcom/panasonic/avc/cng/core/a/RemoteStreamCommand;)Ljava/net/DatagramSocket;
 
     move-result-object v0
 
     invoke-virtual {v0}, Ljava/net/DatagramSocket;->close()V
 
     .line 137
-    iget-object v0, p0, Lcom/panasonic/avc/cng/core/a/ah$1;->a:Lcom/panasonic/avc/cng/core/a/ah;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/core/a/ah$1;->a:Lcom/panasonic/avc/cng/core/a/RemoteStreamCommand;
 
     const/4 v2, 0x0
 
-    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/core/a/ah;->a(Lcom/panasonic/avc/cng/core/a/ah;Ljava/net/DatagramSocket;)Ljava/net/DatagramSocket;
+    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/core/a/RemoteStreamCommand;->a(Lcom/panasonic/avc/cng/core/a/RemoteStreamCommand;Ljava/net/DatagramSocket;)Ljava/net/DatagramSocket;
 
     .line 138
     monitor-exit v1

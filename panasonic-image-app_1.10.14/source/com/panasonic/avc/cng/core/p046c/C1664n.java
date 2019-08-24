@@ -2,7 +2,7 @@ package com.panasonic.avc.cng.core.p046c;
 
 import android.content.Context;
 import android.graphics.Bitmap;
-import com.panasonic.avc.cng.model.service.C2253z;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
 import java.io.Serializable;
 import java.util.Date;
 import java.util.Locale;
@@ -192,7 +192,7 @@ public class C1664n implements Serializable {
     /* renamed from: a */
     public Bitmap mo4042a(Context context) {
         try {
-            return C2253z.m9676a(context).mo4197b(this, 5);
+            return ServiceFactory.m9676a(context).mo4197b(this, 5);
         } catch (C1651j e) {
             e.printStackTrace();
             return null;

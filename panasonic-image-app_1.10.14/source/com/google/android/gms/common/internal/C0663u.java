@@ -1,7 +1,7 @@
 package com.google.android.gms.common.internal;
 
 import android.os.IInterface;
-import com.google.android.gms.common.C0685u;
+import com.google.android.gms.common.GoogleCertificatesQuery;
 import com.google.android.gms.p034c.C0564a;
 
 /* renamed from: com.google.android.gms.common.internal.u */
@@ -10,7 +10,7 @@ public interface C0663u extends IInterface {
     C0564a mo1727a();
 
     /* renamed from: a */
-    boolean mo1728a(C0685u uVar, C0564a aVar);
+    boolean mo1728a(GoogleCertificatesQuery uVar, C0564a aVar);
 
     /* renamed from: a */
     boolean mo1729a(String str, C0564a aVar);

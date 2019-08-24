@@ -15,22 +15,22 @@ import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.C1892f;
 import com.panasonic.avc.cng.model.p051c.C1844d;
 import com.panasonic.avc.cng.model.service.C1985b;
-import com.panasonic.avc.cng.model.service.C2253z;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
 import com.panasonic.avc.cng.p038a.C1343b;
 import com.panasonic.avc.cng.view.common.C2820e;
 import com.panasonic.avc.cng.view.liveview.C2946c;
 import com.panasonic.avc.cng.view.liveview.C2994e;
 import com.panasonic.avc.cng.view.liveview.C2994e.C3116f;
-import com.panasonic.avc.cng.view.liveview.C3145g;
+import com.panasonic.avc.cng.view.liveview.LiveViewLumixCompactViewModel;
 import com.panasonic.avc.cng.view.liveview.C3259j.C3270b;
 import com.panasonic.avc.cng.view.liveview.C3367m;
 import com.panasonic.avc.cng.view.liveview.C3367m.C3405c;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
 import com.panasonic.avc.cng.view.parts.LiveViewLumixSurface;
 import com.panasonic.avc.cng.view.parts.LiveViewLumixSurface.C3947a;
 import com.panasonic.avc.cng.view.parts.LiveViewLumixZoomView;
-import com.panasonic.avc.cng.view.setting.C5537al.C5540a;
+import com.panasonic.avc.cng.view.setting.SettingMenuBaseActivity.C5540a;
 import com.panasonic.avc.cng.view.setting.C5541am.C5555h;
 
 /* renamed from: com.panasonic.avc.cng.view.setting.aq */
@@ -83,14 +83,14 @@ public class C5583aq extends C2946c {
         /* renamed from: a */
         public void mo7086a(int i) {
             if (i == 1) {
-                C2331d.m10114a((Activity) C5583aq.this, C2328a.ON_ERROR_REMAIN_ZERO, (Bundle) null);
+                DialogFactory.m10114a((Activity) C5583aq.this, C2328a.ON_ERROR_REMAIN_ZERO, (Bundle) null);
             }
         }
 
         /* renamed from: b */
         public void mo7096b(int i) {
             if (i == 1) {
-                C2331d.m10114a((Activity) C5583aq.this, C2328a.ON_ERROR_REMAIN_ZERO, (Bundle) null);
+                DialogFactory.m10114a((Activity) C5583aq.this, C2328a.ON_ERROR_REMAIN_ZERO, (Bundle) null);
             }
         }
 
@@ -101,13 +101,13 @@ public class C5583aq extends C2946c {
             }
             switch (i) {
                 case 2:
-                    C2331d.m10114a((Activity) C5583aq.this, C2328a.ON_DISCONNECT_BY_HIGH_TEMP_FINISH, (Bundle) null);
+                    DialogFactory.m10114a((Activity) C5583aq.this, C2328a.ON_DISCONNECT_BY_HIGH_TEMP_FINISH, (Bundle) null);
                     break;
                 case 3:
-                    C2331d.m10114a((Activity) C5583aq.this, C2328a.ON_DISCONNECT_BATTERY_LOW_FINISH, (Bundle) null);
+                    DialogFactory.m10114a((Activity) C5583aq.this, C2328a.ON_DISCONNECT_BATTERY_LOW_FINISH, (Bundle) null);
                     break;
                 default:
-                    C2331d.m10114a((Activity) C5583aq.this, C2328a.ON_DISCONNECT_FINISH, (Bundle) null);
+                    DialogFactory.m10114a((Activity) C5583aq.this, C2328a.ON_DISCONNECT_FINISH, (Bundle) null);
                     break;
             }
             ((Activity) C5583aq.this._context).closeOptionsMenu();
@@ -120,13 +120,13 @@ public class C5583aq extends C2946c {
         /* renamed from: a */
         public void mo7087a(int i, int i2) {
             if (i == 2) {
-                C2331d.m10114a((Activity) C5583aq.this, C2328a.ON_ERROR_SD_UNSET_MOVIE, (Bundle) null);
+                DialogFactory.m10114a((Activity) C5583aq.this, C2328a.ON_ERROR_SD_UNSET_MOVIE, (Bundle) null);
             } else if (i == 3) {
-                C2331d.m10114a((Activity) C5583aq.this, C2328a.ON_ERROR_SD_LOCK_MOVIE, (Bundle) null);
+                DialogFactory.m10114a((Activity) C5583aq.this, C2328a.ON_ERROR_SD_LOCK_MOVIE, (Bundle) null);
             } else if (i2 == 2) {
-                C2331d.m10114a((Activity) C5583aq.this, C2328a.ON_ERROR_SD_UNSET_PICTURE, (Bundle) null);
+                DialogFactory.m10114a((Activity) C5583aq.this, C2328a.ON_ERROR_SD_UNSET_PICTURE, (Bundle) null);
             } else if (i2 == 3) {
-                C2331d.m10114a((Activity) C5583aq.this, C2328a.ON_ERROR_SD_LOCK_PICTURE, (Bundle) null);
+                DialogFactory.m10114a((Activity) C5583aq.this, C2328a.ON_ERROR_SD_LOCK_PICTURE, (Bundle) null);
             }
         }
 
@@ -134,7 +134,7 @@ public class C5583aq extends C2946c {
         public void mo7095b() {
             C5583aq.this._handler.post(new Runnable() {
                 public void run() {
-                    C2331d.m10114a((Activity) C5583aq.this, C2328a.ON_PROGRESS, (Bundle) null);
+                    DialogFactory.m10114a((Activity) C5583aq.this, C2328a.ON_PROGRESS, (Bundle) null);
                 }
             });
         }
@@ -143,7 +143,7 @@ public class C5583aq extends C2946c {
         public void mo7098c() {
             C5583aq.this._handler.post(new Runnable() {
                 public void run() {
-                    C2331d.m10100a((Activity) C5583aq.this);
+                    DialogFactory.m10100a((Activity) C5583aq.this);
                 }
             });
         }
@@ -152,8 +152,8 @@ public class C5583aq extends C2946c {
         public void mo7100d() {
             C5583aq.this._handler.post(new Runnable() {
                 public void run() {
-                    C2331d.m10100a((Activity) C5583aq.this);
-                    C2331d.m10114a((Activity) C5583aq.this, C2328a.ON_DISCONNECT_FINISH, (Bundle) null);
+                    DialogFactory.m10100a((Activity) C5583aq.this);
+                    DialogFactory.m10114a((Activity) C5583aq.this, C2328a.ON_DISCONNECT_FINISH, (Bundle) null);
                 }
             });
         }
@@ -162,7 +162,7 @@ public class C5583aq extends C2946c {
         public void mo7101e() {
             C5583aq.this._handler.post(new Runnable() {
                 public void run() {
-                    C2331d.m10114a((Activity) C5583aq.this, C2328a.ON_SHOOT_MODE_CHANGED, (Bundle) null);
+                    DialogFactory.m10114a((Activity) C5583aq.this, C2328a.ON_SHOOT_MODE_CHANGED, (Bundle) null);
                 }
             });
         }
@@ -200,9 +200,9 @@ public class C5583aq extends C2946c {
         /* renamed from: b */
         public void mo7097b(String str) {
             if (str.equalsIgnoreCase("high")) {
-                C2331d.m10114a((Activity) C5583aq.this, C2328a.ON_DISCONNECT_BY_HIGH_TEMP_FINISH, (Bundle) null);
+                DialogFactory.m10114a((Activity) C5583aq.this, C2328a.ON_DISCONNECT_BY_HIGH_TEMP_FINISH, (Bundle) null);
             } else if (str.equalsIgnoreCase("assert")) {
-                C2331d.m10114a((Activity) C5583aq.this, C2328a.ON_ASEERT_TEMP_FINISH, (Bundle) null);
+                DialogFactory.m10114a((Activity) C5583aq.this, C2328a.ON_ASEERT_TEMP_FINISH, (Bundle) null);
             }
         }
 
@@ -244,14 +244,14 @@ public class C5583aq extends C2946c {
         /* renamed from: a */
         public void mo6989a(int i) {
             if (i == 1) {
-                C2331d.m10114a((Activity) C5583aq.this, C2328a.ON_ERROR_REMAIN_ZERO, (Bundle) null);
+                DialogFactory.m10114a((Activity) C5583aq.this, C2328a.ON_ERROR_REMAIN_ZERO, (Bundle) null);
             }
         }
 
         /* renamed from: b */
         public void mo6994b(int i) {
             if (i == 1) {
-                C2331d.m10114a((Activity) C5583aq.this, C2328a.ON_ERROR_REMAIN_ZERO, (Bundle) null);
+                DialogFactory.m10114a((Activity) C5583aq.this, C2328a.ON_ERROR_REMAIN_ZERO, (Bundle) null);
             }
         }
 
@@ -262,13 +262,13 @@ public class C5583aq extends C2946c {
             }
             switch (i) {
                 case 2:
-                    C2331d.m10114a((Activity) C5583aq.this, C2328a.ON_DISCONNECT_BY_HIGH_TEMP_FINISH, (Bundle) null);
+                    DialogFactory.m10114a((Activity) C5583aq.this, C2328a.ON_DISCONNECT_BY_HIGH_TEMP_FINISH, (Bundle) null);
                     break;
                 case 3:
-                    C2331d.m10114a((Activity) C5583aq.this, C2328a.ON_DISCONNECT_BATTERY_LOW_FINISH, (Bundle) null);
+                    DialogFactory.m10114a((Activity) C5583aq.this, C2328a.ON_DISCONNECT_BATTERY_LOW_FINISH, (Bundle) null);
                     break;
                 default:
-                    C2331d.m10114a((Activity) C5583aq.this, C2328a.ON_DISCONNECT_FINISH, (Bundle) null);
+                    DialogFactory.m10114a((Activity) C5583aq.this, C2328a.ON_DISCONNECT_FINISH, (Bundle) null);
                     break;
             }
             ((Activity) C5583aq.this._context).closeOptionsMenu();
@@ -281,13 +281,13 @@ public class C5583aq extends C2946c {
         /* renamed from: a */
         public void mo6990a(int i, int i2) {
             if (i == 2) {
-                C2331d.m10114a((Activity) C5583aq.this, C2328a.ON_ERROR_SD_UNSET_MOVIE, (Bundle) null);
+                DialogFactory.m10114a((Activity) C5583aq.this, C2328a.ON_ERROR_SD_UNSET_MOVIE, (Bundle) null);
             } else if (i == 3) {
-                C2331d.m10114a((Activity) C5583aq.this, C2328a.ON_ERROR_SD_LOCK_MOVIE, (Bundle) null);
+                DialogFactory.m10114a((Activity) C5583aq.this, C2328a.ON_ERROR_SD_LOCK_MOVIE, (Bundle) null);
             } else if (i2 == 2) {
-                C2331d.m10114a((Activity) C5583aq.this, C2328a.ON_ERROR_SD_UNSET_PICTURE, (Bundle) null);
+                DialogFactory.m10114a((Activity) C5583aq.this, C2328a.ON_ERROR_SD_UNSET_PICTURE, (Bundle) null);
             } else if (i2 == 3) {
-                C2331d.m10114a((Activity) C5583aq.this, C2328a.ON_ERROR_SD_LOCK_PICTURE, (Bundle) null);
+                DialogFactory.m10114a((Activity) C5583aq.this, C2328a.ON_ERROR_SD_LOCK_PICTURE, (Bundle) null);
             }
         }
 
@@ -295,7 +295,7 @@ public class C5583aq extends C2946c {
         public void mo6993b() {
             C5583aq.this._handler.post(new Runnable() {
                 public void run() {
-                    C2331d.m10114a((Activity) C5583aq.this, C2328a.ON_PROGRESS, (Bundle) null);
+                    DialogFactory.m10114a((Activity) C5583aq.this, C2328a.ON_PROGRESS, (Bundle) null);
                 }
             });
         }
@@ -304,7 +304,7 @@ public class C5583aq extends C2946c {
         public void mo6995c() {
             C5583aq.this._handler.post(new Runnable() {
                 public void run() {
-                    C2331d.m10100a((Activity) C5583aq.this);
+                    DialogFactory.m10100a((Activity) C5583aq.this);
                 }
             });
         }
@@ -313,8 +313,8 @@ public class C5583aq extends C2946c {
         public void mo6997d() {
             C5583aq.this._handler.post(new Runnable() {
                 public void run() {
-                    C2331d.m10100a((Activity) C5583aq.this);
-                    C2331d.m10114a((Activity) C5583aq.this, C2328a.ON_DISCONNECT_FINISH, (Bundle) null);
+                    DialogFactory.m10100a((Activity) C5583aq.this);
+                    DialogFactory.m10114a((Activity) C5583aq.this, C2328a.ON_DISCONNECT_FINISH, (Bundle) null);
                 }
             });
         }
@@ -323,7 +323,7 @@ public class C5583aq extends C2946c {
         public void mo6998e() {
             C5583aq.this._handler.post(new Runnable() {
                 public void run() {
-                    C2331d.m10114a((Activity) C5583aq.this, C2328a.ON_SHOOT_MODE_CHANGED, (Bundle) null);
+                    DialogFactory.m10114a((Activity) C5583aq.this, C2328a.ON_SHOOT_MODE_CHANGED, (Bundle) null);
                 }
             });
         }
@@ -356,7 +356,7 @@ public class C5583aq extends C2946c {
             if (C5583aq.this.f17295e != null) {
                 C5583aq.this.f17295e.mo7033b();
             }
-            C2331d.m10114a((Activity) C5583aq.this, C2328a.ON_PROGRESS, (Bundle) null);
+            DialogFactory.m10114a((Activity) C5583aq.this, C2328a.ON_PROGRESS, (Bundle) null);
             C5583aq.this.mo12001a(false);
         }
 
@@ -366,7 +366,7 @@ public class C5583aq extends C2946c {
                 C5583aq.this.f17295e.mo7034c();
             }
             C5583aq.this.mo12001a(true);
-            C2331d.m10100a((Activity) C5583aq.this);
+            DialogFactory.m10100a((Activity) C5583aq.this);
             if (C5583aq.this._resultBundle != null) {
                 C5583aq.this._resultBundle.putBoolean("ContentsUpdateKey", true);
             }
@@ -478,7 +478,7 @@ public class C5583aq extends C2946c {
         if (C1712b.m6919c() != null) {
             C1892f a = C1712b.m6919c().mo4896a();
             if (a != null) {
-                C1985b a2 = C2253z.m9679a(this._context, a);
+                C1985b a2 = ServiceFactory.m9679a(this._context, a);
                 if (a2 != null) {
                     C1844d f = a2.mo5194f();
                     if (f != null) {
@@ -564,7 +564,7 @@ public class C5583aq extends C2946c {
             this.f17301k = new C5585a();
             this.f17299i = C2820e.m11759a((Context) this, this._handler, (C3116f) this.f17301k);
             if (this.f17299i == null) {
-                this.f17299i = new C3145g(this, this._handler, this.f17301k);
+                this.f17299i = new LiveViewLumixCompactViewModel(this, this._handler, this.f17301k);
                 this.f17299i.mo7419c(1);
                 this.f17302l = true;
                 return;

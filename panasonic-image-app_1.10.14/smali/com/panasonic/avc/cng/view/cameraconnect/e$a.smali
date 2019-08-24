@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/panasonic/avc/cng/view/cameraconnect/e;
+    value = Lcom/panasonic/avc/cng/view/cameraconnect/CameraConnectViewModel;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

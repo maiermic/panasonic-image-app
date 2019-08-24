@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/panasonic/avc/cng/application/b;
+    value = Lcom/panasonic/avc/cng/application/NfcSupportActivity;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

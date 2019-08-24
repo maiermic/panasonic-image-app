@@ -75,7 +75,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/google/firebase/a;->a(Landroid/content/Context;)Lcom/google/firebase/a;
+    invoke-static {v0}, Lcom/google/firebase/FirebaseApp;->a(Landroid/content/Context;)Lcom/google/firebase/FirebaseApp;
 
     move-result-object v0
 

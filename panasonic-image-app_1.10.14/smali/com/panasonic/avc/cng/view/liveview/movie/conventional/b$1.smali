@@ -51,11 +51,11 @@
     .line 270
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/b$1;->a:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/b;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/b;->a(Lcom/panasonic/avc/cng/view/liveview/movie/conventional/b;)Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/b;->a(Lcom/panasonic/avc/cng/view/liveview/movie/conventional/b;)Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;->H()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;->H()V
 
     .line 271
     return-void

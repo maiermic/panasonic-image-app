@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/panasonic/avc/cng/view/play/highlight/b;
+    value = Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,28 +18,28 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/panasonic/avc/cng/view/play/highlight/b;
+.field final synthetic a:Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;
 
 
 # direct methods
-.method private constructor <init>(Lcom/panasonic/avc/cng/view/play/highlight/b;)V
+.method private constructor <init>(Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;)V
     .locals 0
 
     .prologue
     .line 411
-    iput-object p1, p0, Lcom/panasonic/avc/cng/view/play/highlight/b$a;->a:Lcom/panasonic/avc/cng/view/play/highlight/b;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/view/play/highlight/b$a;->a:Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/panasonic/avc/cng/view/play/highlight/b;Lcom/panasonic/avc/cng/view/play/highlight/b$1;)V
+.method synthetic constructor <init>(Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;Lcom/panasonic/avc/cng/view/play/highlight/b$1;)V
     .locals 0
 
     .prologue
     .line 411
-    invoke-direct {p0, p1}, Lcom/panasonic/avc/cng/view/play/highlight/b$a;-><init>(Lcom/panasonic/avc/cng/view/play/highlight/b;)V
+    invoke-direct {p0, p1}, Lcom/panasonic/avc/cng/view/play/highlight/b$a;-><init>(Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;)V
 
     return-void
 .end method
@@ -51,18 +51,18 @@
 
     .prologue
     .line 450
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/b$a;->a:Lcom/panasonic/avc/cng/view/play/highlight/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/b$a;->a:Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;
 
-    invoke-static {v0, p1}, Lcom/panasonic/avc/cng/view/play/highlight/b;->b(Lcom/panasonic/avc/cng/view/play/highlight/b;I)I
+    invoke-static {v0, p1}, Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;->b(Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;I)I
 
     .line 452
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/b$a;->a:Lcom/panasonic/avc/cng/view/play/highlight/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/b$a;->a:Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;
 
     new-instance v1, Lcom/panasonic/avc/cng/view/play/highlight/b$a$2;
 
     invoke-direct {v1, p0}, Lcom/panasonic/avc/cng/view/play/highlight/b$a$2;-><init>(Lcom/panasonic/avc/cng/view/play/highlight/b$a;)V
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/play/highlight/b;->b(Lcom/panasonic/avc/cng/view/play/highlight/b;Ljava/lang/Runnable;)Z
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;->b(Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;Ljava/lang/Runnable;)Z
 
     .line 460
     const-string v0, "HighlightViewModel"
@@ -75,9 +75,9 @@
 
     const/4 v3, 0x0
 
-    iget-object v4, p0, Lcom/panasonic/avc/cng/view/play/highlight/b$a;->a:Lcom/panasonic/avc/cng/view/play/highlight/b;
+    iget-object v4, p0, Lcom/panasonic/avc/cng/view/play/highlight/b$a;->a:Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;
 
-    invoke-static {v4}, Lcom/panasonic/avc/cng/view/play/highlight/b;->c(Lcom/panasonic/avc/cng/view/play/highlight/b;)I
+    invoke-static {v4}, Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;->c(Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;)I
 
     move-result v4
 
@@ -91,7 +91,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 461
     return-void
@@ -103,13 +103,13 @@
     .prologue
     .line 418
     .line 420
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/b$a;->a:Lcom/panasonic/avc/cng/view/play/highlight/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/b$a;->a:Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;
 
     new-instance v1, Lcom/panasonic/avc/cng/view/play/highlight/b$a$1;
 
     invoke-direct {v1, p0, p1}, Lcom/panasonic/avc/cng/view/play/highlight/b$a$1;-><init>(Lcom/panasonic/avc/cng/view/play/highlight/b$a;Lcom/panasonic/avc/cng/model/service/e/b;)V
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/play/highlight/b;->a(Lcom/panasonic/avc/cng/view/play/highlight/b;Ljava/lang/Runnable;)Z
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;->a(Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;Ljava/lang/Runnable;)Z
 
     .line 442
     return-void

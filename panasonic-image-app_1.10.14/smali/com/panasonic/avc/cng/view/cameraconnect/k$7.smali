@@ -43,7 +43,7 @@
     .line 1157
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/k$7;->a:Lcom/panasonic/avc/cng/view/cameraconnect/k;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/cameraconnect/k;->e(Lcom/panasonic/avc/cng/view/cameraconnect/k;)Lcom/panasonic/avc/cng/view/cameraconnect/l;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/cameraconnect/k;->e(Lcom/panasonic/avc/cng/view/cameraconnect/k;)Lcom/panasonic/avc/cng/view/cameraconnect/WifiUtil;
 
     move-result-object v0
 
@@ -52,11 +52,11 @@
     .line 1159
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/k$7;->a:Lcom/panasonic/avc/cng/view/cameraconnect/k;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/cameraconnect/k;->e(Lcom/panasonic/avc/cng/view/cameraconnect/k;)Lcom/panasonic/avc/cng/view/cameraconnect/l;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/cameraconnect/k;->e(Lcom/panasonic/avc/cng/view/cameraconnect/k;)Lcom/panasonic/avc/cng/view/cameraconnect/WifiUtil;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/cameraconnect/l;->d()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/cameraconnect/WifiUtil;->d()V
 
     .line 1161
     :cond_0

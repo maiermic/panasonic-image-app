@@ -11,8 +11,8 @@ public class C1350a extends Activity {
     /* access modifiers changed from: protected */
     public void onCreate(Bundle bundle) {
         super.onCreate(bundle);
-        C1351b.m5319a("Activity-Name = " + getClass().getName());
-        C1351b a = C1351b.m5317a();
+        GoogleTagManager.m5319a("Activity-Name = " + getClass().getName());
+        GoogleTagManager a = GoogleTagManager.m5317a();
         a.mo3231a(getApplicationContext());
         a.mo3233a(this, getIntent().getStringExtra(KEY_SCREEN_NAME_IDENTIFIER));
     }

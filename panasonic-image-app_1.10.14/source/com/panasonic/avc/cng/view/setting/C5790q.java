@@ -6,7 +6,7 @@ import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.C1892f;
 import com.panasonic.avc.cng.model.p051c.C1844d;
 import com.panasonic.avc.cng.model.service.C1985b;
-import com.panasonic.avc.cng.model.service.C2253z;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
 import com.panasonic.avc.cng.p038a.C1342a;
 import com.panasonic.avc.cng.view.setting.C5541am.C5563o;
 
@@ -35,7 +35,7 @@ public class C5790q extends C1342a {
         if (C1712b.m6919c() != null) {
             this.f17769c = C1712b.m6919c().mo4896a();
             if (this.f17769c != null) {
-                this.f17770d = C2253z.m9679a(this.f3706a, this.f17769c);
+                this.f17770d = ServiceFactory.m9679a(this.f3706a, this.f17769c);
                 if (this.f17770d != null) {
                     this.f17772f = this.f17770d.mo5189b();
                 }

@@ -126,11 +126,11 @@
     const/4 v5, 0x1
 
     .line 6468
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
@@ -143,11 +143,11 @@
 
     .line 6474
     :cond_0
-    new-instance v1, Lcom/panasonic/avc/cng/core/a/ao;
+    new-instance v1, Lcom/panasonic/avc/cng/core/a/StatusCommand;
 
     iget-object v0, v0, Lcom/panasonic/avc/cng/model/f;->d:Ljava/lang/String;
 
-    invoke-direct {v1, v0}, Lcom/panasonic/avc/cng/core/a/ao;-><init>(Ljava/lang/String;)V
+    invoke-direct {v1, v0}, Lcom/panasonic/avc/cng/core/a/StatusCommand;-><init>(Ljava/lang/String;)V
 
     .line 6478
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/k$g;->a:Lcom/panasonic/avc/cng/view/liveview/k;
@@ -161,7 +161,7 @@
 
     const-string v2, "KeepAlive[PauseDeviceWatch]"
 
-    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 6484
     :goto_1
@@ -182,7 +182,7 @@
 
     const-string v1, "KeepAlive[StartDeviceWatch]"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 
@@ -206,7 +206,7 @@
     const/4 v0, 0x5
 
     :try_start_1
-    invoke-virtual {v1, v0}, Lcom/panasonic/avc/cng/core/a/ao;->b(I)Lcom/panasonic/avc/cng/model/c/e;
+    invoke-virtual {v1, v0}, Lcom/panasonic/avc/cng/core/a/StatusCommand;->b(I)Lcom/panasonic/avc/cng/model/c/CameraStatus;
 
     move-result-object v0
 
@@ -215,7 +215,7 @@
 
     const-string v4, "KeepAlive[]"
 
-    invoke-static {v3, v4}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v3, v4}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 6498
     if-nez v0, :cond_2
@@ -225,7 +225,7 @@
 
     const-string v3, "KeepAlive[error]"
 
-    invoke-static {v0, v3}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v3}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 6501
     monitor-exit v2

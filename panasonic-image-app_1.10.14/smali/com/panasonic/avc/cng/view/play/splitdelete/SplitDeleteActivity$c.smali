@@ -58,7 +58,7 @@
     .line 368
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/SplitDeleteActivity$c;->a:Lcom/panasonic/avc/cng/view/play/splitdelete/SplitDeleteActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/splitdelete/SplitDeleteActivity;->c(Lcom/panasonic/avc/cng/view/play/splitdelete/SplitDeleteActivity;)Lcom/panasonic/avc/cng/view/play/splitdelete/c;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/splitdelete/SplitDeleteActivity;->c(Lcom/panasonic/avc/cng/view/play/splitdelete/SplitDeleteActivity;)Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;
 
     move-result-object v0
 
@@ -67,11 +67,11 @@
     .line 370
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/SplitDeleteActivity$c;->a:Lcom/panasonic/avc/cng/view/play/splitdelete/SplitDeleteActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/splitdelete/SplitDeleteActivity;->c(Lcom/panasonic/avc/cng/view/play/splitdelete/SplitDeleteActivity;)Lcom/panasonic/avc/cng/view/play/splitdelete/c;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/splitdelete/SplitDeleteActivity;->c(Lcom/panasonic/avc/cng/view/play/splitdelete/SplitDeleteActivity;)Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;
 
     move-result-object v0
 
-    invoke-virtual {v0, p1}, Lcom/panasonic/avc/cng/view/play/splitdelete/c;->a(Landroid/view/SurfaceHolder;)V
+    invoke-virtual {v0, p1}, Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;->a(Landroid/view/SurfaceHolder;)V
 
     .line 372
     :cond_0
@@ -90,7 +90,7 @@
     .line 321
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/SplitDeleteActivity$c;->a:Lcom/panasonic/avc/cng/view/play/splitdelete/SplitDeleteActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/splitdelete/SplitDeleteActivity;->c(Lcom/panasonic/avc/cng/view/play/splitdelete/SplitDeleteActivity;)Lcom/panasonic/avc/cng/view/play/splitdelete/c;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/splitdelete/SplitDeleteActivity;->c(Lcom/panasonic/avc/cng/view/play/splitdelete/SplitDeleteActivity;)Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;
 
     move-result-object v0
 
@@ -113,7 +113,7 @@
     .line 328
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/SplitDeleteActivity$c;->a:Lcom/panasonic/avc/cng/view/play/splitdelete/SplitDeleteActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/splitdelete/SplitDeleteActivity;->c(Lcom/panasonic/avc/cng/view/play/splitdelete/SplitDeleteActivity;)Lcom/panasonic/avc/cng/view/play/splitdelete/c;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/splitdelete/SplitDeleteActivity;->c(Lcom/panasonic/avc/cng/view/play/splitdelete/SplitDeleteActivity;)Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;
 
     move-result-object v0
 
@@ -129,16 +129,16 @@
 
     move-result-object v2
 
-    invoke-virtual {v0, v1, p1, v2}, Lcom/panasonic/avc/cng/view/play/splitdelete/c;->a(ILandroid/view/SurfaceHolder;Lcom/panasonic/avc/cng/view/play/splitdelete/c$c;)V
+    invoke-virtual {v0, v1, p1, v2}, Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;->a(ILandroid/view/SurfaceHolder;Lcom/panasonic/avc/cng/view/play/splitdelete/c$c;)V
 
     .line 329
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/SplitDeleteActivity$c;->a:Lcom/panasonic/avc/cng/view/play/splitdelete/SplitDeleteActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/splitdelete/SplitDeleteActivity;->c(Lcom/panasonic/avc/cng/view/play/splitdelete/SplitDeleteActivity;)Lcom/panasonic/avc/cng/view/play/splitdelete/c;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/splitdelete/SplitDeleteActivity;->c(Lcom/panasonic/avc/cng/view/play/splitdelete/SplitDeleteActivity;)Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/splitdelete/c;->d()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;->d()V
 
     .line 332
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/SplitDeleteActivity$c;->a:Lcom/panasonic/avc/cng/view/play/splitdelete/SplitDeleteActivity;
@@ -156,11 +156,11 @@
     .line 339
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/SplitDeleteActivity$c;->a:Lcom/panasonic/avc/cng/view/play/splitdelete/SplitDeleteActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/splitdelete/SplitDeleteActivity;->c(Lcom/panasonic/avc/cng/view/play/splitdelete/SplitDeleteActivity;)Lcom/panasonic/avc/cng/view/play/splitdelete/c;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/splitdelete/SplitDeleteActivity;->c(Lcom/panasonic/avc/cng/view/play/splitdelete/SplitDeleteActivity;)Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;
 
     move-result-object v0
 
-    invoke-virtual {v0, p1}, Lcom/panasonic/avc/cng/view/play/splitdelete/c;->a(Landroid/view/SurfaceHolder;)V
+    invoke-virtual {v0, p1}, Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;->a(Landroid/view/SurfaceHolder;)V
 
     goto :goto_0
 .end method
@@ -172,7 +172,7 @@
     .line 350
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/SplitDeleteActivity$c;->a:Lcom/panasonic/avc/cng/view/play/splitdelete/SplitDeleteActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/splitdelete/SplitDeleteActivity;->c(Lcom/panasonic/avc/cng/view/play/splitdelete/SplitDeleteActivity;)Lcom/panasonic/avc/cng/view/play/splitdelete/c;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/splitdelete/SplitDeleteActivity;->c(Lcom/panasonic/avc/cng/view/play/splitdelete/SplitDeleteActivity;)Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;
 
     move-result-object v0
 
@@ -181,13 +181,13 @@
     .line 352
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/SplitDeleteActivity$c;->a:Lcom/panasonic/avc/cng/view/play/splitdelete/SplitDeleteActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/splitdelete/SplitDeleteActivity;->c(Lcom/panasonic/avc/cng/view/play/splitdelete/SplitDeleteActivity;)Lcom/panasonic/avc/cng/view/play/splitdelete/c;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/splitdelete/SplitDeleteActivity;->c(Lcom/panasonic/avc/cng/view/play/splitdelete/SplitDeleteActivity;)Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;
 
     move-result-object v0
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/play/splitdelete/c;->a(Landroid/view/SurfaceHolder;)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;->a(Landroid/view/SurfaceHolder;)V
 
     .line 354
     :cond_0

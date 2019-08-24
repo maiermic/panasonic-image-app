@@ -47,11 +47,11 @@
     .line 479
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/parts/ah$4;->a:Lcom/panasonic/avc/cng/view/parts/ah;
 
-    invoke-static {v1}, Lcom/panasonic/avc/cng/view/parts/ah;->a(Lcom/panasonic/avc/cng/view/parts/ah;)Lcom/panasonic/avc/cng/view/setting/w;
+    invoke-static {v1}, Lcom/panasonic/avc/cng/view/parts/ah;->a(Lcom/panasonic/avc/cng/view/parts/ah;)Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSViewModel;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/setting/w;->I()Ljava/lang/String;
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSViewModel;->I()Ljava/lang/String;
 
     move-result-object v1
 
@@ -66,33 +66,33 @@
     .line 481
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ah$4;->a:Lcom/panasonic/avc/cng/view/parts/ah;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/parts/ah;->a(Lcom/panasonic/avc/cng/view/parts/ah;)Lcom/panasonic/avc/cng/view/setting/w;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/parts/ah;->a(Lcom/panasonic/avc/cng/view/parts/ah;)Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSViewModel;
 
     move-result-object v0
 
     const-string v1, "off"
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/setting/w;->d(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSViewModel;->d(Ljava/lang/String;)V
 
     .line 482
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ah$4;->a:Lcom/panasonic/avc/cng/view/parts/ah;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/parts/ah;->a(Lcom/panasonic/avc/cng/view/parts/ah;)Lcom/panasonic/avc/cng/view/setting/w;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/parts/ah;->a(Lcom/panasonic/avc/cng/view/parts/ah;)Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSViewModel;
 
     move-result-object v0
 
     const-string v1, "off"
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/setting/w;->f(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSViewModel;->f(Ljava/lang/String;)V
 
     .line 484
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ah$4;->a:Lcom/panasonic/avc/cng/view/parts/ah;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/parts/ah;->h(Lcom/panasonic/avc/cng/view/parts/ah;)Lcom/panasonic/avc/cng/view/parts/ab;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/parts/ah;->h(Lcom/panasonic/avc/cng/view/parts/ah;)Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
     move-result-object v0
 
-    invoke-virtual {v0, v3}, Lcom/panasonic/avc/cng/view/parts/ab;->setGray(Z)V
+    invoke-virtual {v0, v3}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;->setGray(Z)V
 
     .line 485
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ah$4;->a:Lcom/panasonic/avc/cng/view/parts/ah;
@@ -129,11 +129,11 @@
     .line 492
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ah$4;->a:Lcom/panasonic/avc/cng/view/parts/ah;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/parts/ah;->a(Lcom/panasonic/avc/cng/view/parts/ah;)Lcom/panasonic/avc/cng/view/setting/w;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/parts/ah;->a(Lcom/panasonic/avc/cng/view/parts/ah;)Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSViewModel;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/w;->E()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSViewModel;->E()V
 
     .line 512
     :goto_0
@@ -143,33 +143,33 @@
     :cond_0
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/parts/ah$4;->a:Lcom/panasonic/avc/cng/view/parts/ah;
 
-    invoke-static {v1}, Lcom/panasonic/avc/cng/view/parts/ah;->a(Lcom/panasonic/avc/cng/view/parts/ah;)Lcom/panasonic/avc/cng/view/setting/w;
+    invoke-static {v1}, Lcom/panasonic/avc/cng/view/parts/ah;->a(Lcom/panasonic/avc/cng/view/parts/ah;)Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSViewModel;
 
     move-result-object v1
 
     const-string v2, "on"
 
-    invoke-virtual {v1, v2}, Lcom/panasonic/avc/cng/view/setting/w;->d(Ljava/lang/String;)V
+    invoke-virtual {v1, v2}, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSViewModel;->d(Ljava/lang/String;)V
 
     .line 497
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/parts/ah$4;->a:Lcom/panasonic/avc/cng/view/parts/ah;
 
-    invoke-static {v1}, Lcom/panasonic/avc/cng/view/parts/ah;->a(Lcom/panasonic/avc/cng/view/parts/ah;)Lcom/panasonic/avc/cng/view/setting/w;
+    invoke-static {v1}, Lcom/panasonic/avc/cng/view/parts/ah;->a(Lcom/panasonic/avc/cng/view/parts/ah;)Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSViewModel;
 
     move-result-object v1
 
     const-string v2, "on"
 
-    invoke-virtual {v1, v2}, Lcom/panasonic/avc/cng/view/setting/w;->f(Ljava/lang/String;)V
+    invoke-virtual {v1, v2}, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSViewModel;->f(Ljava/lang/String;)V
 
     .line 499
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/parts/ah$4;->a:Lcom/panasonic/avc/cng/view/parts/ah;
 
-    invoke-static {v1}, Lcom/panasonic/avc/cng/view/parts/ah;->h(Lcom/panasonic/avc/cng/view/parts/ah;)Lcom/panasonic/avc/cng/view/parts/ab;
+    invoke-static {v1}, Lcom/panasonic/avc/cng/view/parts/ah;->h(Lcom/panasonic/avc/cng/view/parts/ah;)Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
     move-result-object v1
 
-    invoke-virtual {v1, v0}, Lcom/panasonic/avc/cng/view/parts/ab;->setGray(Z)V
+    invoke-virtual {v1, v0}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;->setGray(Z)V
 
     .line 500
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/parts/ah$4;->a:Lcom/panasonic/avc/cng/view/parts/ah;
@@ -220,11 +220,11 @@
     .line 510
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ah$4;->a:Lcom/panasonic/avc/cng/view/parts/ah;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/parts/ah;->a(Lcom/panasonic/avc/cng/view/parts/ah;)Lcom/panasonic/avc/cng/view/setting/w;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/parts/ah;->a(Lcom/panasonic/avc/cng/view/parts/ah;)Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSViewModel;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/w;->E()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSViewModel;->E()V
 
     goto :goto_0
 .end method

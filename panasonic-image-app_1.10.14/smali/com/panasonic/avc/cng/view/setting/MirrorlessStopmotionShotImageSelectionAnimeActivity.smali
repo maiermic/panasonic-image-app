@@ -13,7 +13,7 @@
 
 
 # instance fields
-.field private a:Lcom/panasonic/avc/cng/view/setting/ax;
+.field private a:Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;
 
 .field private b:Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionShotImageSelectionAnimeActivity$b;
 
@@ -35,12 +35,12 @@
     return-void
 .end method
 
-.method static synthetic a(Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionShotImageSelectionAnimeActivity;)Lcom/panasonic/avc/cng/view/setting/ax;
+.method static synthetic a(Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionShotImageSelectionAnimeActivity;)Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;
     .locals 1
 
     .prologue
     .line 47
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionShotImageSelectionAnimeActivity;->a:Lcom/panasonic/avc/cng/view/setting/ax;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionShotImageSelectionAnimeActivity;->a:Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;
 
     return-object v0
 .end method
@@ -64,14 +64,14 @@
 
     .line 366
     :cond_1
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionShotImageSelectionAnimeActivity;->a:Lcom/panasonic/avc/cng/view/setting/ax;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionShotImageSelectionAnimeActivity;->a:Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;
 
     if-eqz v0, :cond_2
 
     .line 368
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionShotImageSelectionAnimeActivity;->a:Lcom/panasonic/avc/cng/view/setting/ax;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionShotImageSelectionAnimeActivity;->a:Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/ax;->j()I
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;->j()I
 
     move-result v0
 
@@ -106,11 +106,11 @@
 
     .prologue
     .line 802
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
@@ -126,7 +126,7 @@
     :cond_1
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionShotImageSelectionAnimeActivity;->_context:Landroid/content/Context;
 
-    invoke-static {v1, v0}, Lcom/panasonic/avc/cng/model/service/z;->a(Landroid/content/Context;Lcom/panasonic/avc/cng/model/f;)Lcom/panasonic/avc/cng/model/service/b;
+    invoke-static {v1, v0}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->a(Landroid/content/Context;Lcom/panasonic/avc/cng/model/f;)Lcom/panasonic/avc/cng/model/service/b;
 
     move-result-object v0
 
@@ -181,14 +181,14 @@
 
     const v1, 0x7f03012e
 
-    iget-object v2, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionShotImageSelectionAnimeActivity;->a:Lcom/panasonic/avc/cng/view/setting/ax;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionShotImageSelectionAnimeActivity;->a:Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;
 
     .line 334
-    invoke-virtual {v2}, Lcom/panasonic/avc/cng/view/setting/ax;->k()Lcom/panasonic/avc/cng/view/parts/t;
+    invoke-virtual {v2}, Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;->k()Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
     move-result-object v2
 
-    invoke-direct {v0, p0, v1, v2}, Lcom/panasonic/avc/cng/view/parts/w;-><init>(Landroid/content/Context;ILcom/panasonic/avc/cng/view/parts/t;)V
+    invoke-direct {v0, p0, v1, v2}, Lcom/panasonic/avc/cng/view/parts/w;-><init>(Landroid/content/Context;ILcom/panasonic/avc/cng/view/parts/BrowserViewModel;)V
 
     .line 335
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionShotImageSelectionAnimeActivity;->d:Landroid/widget/GridView;
@@ -215,20 +215,20 @@
     const/4 v1, 0x0
 
     .line 237
-    invoke-static {v1}, Lcom/panasonic/avc/cng/view/common/e;->a(Lcom/panasonic/avc/cng/view/setting/ax;)V
+    invoke-static {v1}, Lcom/panasonic/avc/cng/view/common/e;->a(Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;)V
 
     .line 239
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionShotImageSelectionAnimeActivity;->a:Lcom/panasonic/avc/cng/view/setting/ax;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionShotImageSelectionAnimeActivity;->a:Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;
 
     if-eqz v0, :cond_0
 
     .line 241
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionShotImageSelectionAnimeActivity;->a:Lcom/panasonic/avc/cng/view/setting/ax;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionShotImageSelectionAnimeActivity;->a:Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/ax;->a()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;->a()V
 
     .line 242
-    iput-object v1, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionShotImageSelectionAnimeActivity;->a:Lcom/panasonic/avc/cng/view/setting/ax;
+    iput-object v1, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionShotImageSelectionAnimeActivity;->a:Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;
 
     .line 246
     :cond_0
@@ -434,19 +434,19 @@
 
     iget-object v2, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionShotImageSelectionAnimeActivity;->b:Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionShotImageSelectionAnimeActivity$b;
 
-    invoke-static {p0, v0, v1, v2}, Lcom/panasonic/avc/cng/view/common/e;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/parts/t$e;Lcom/panasonic/avc/cng/view/setting/ax$c;)Lcom/panasonic/avc/cng/view/setting/ax;
+    invoke-static {p0, v0, v1, v2}, Lcom/panasonic/avc/cng/view/common/e;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/parts/t$e;Lcom/panasonic/avc/cng/view/setting/ax$c;)Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionShotImageSelectionAnimeActivity;->a:Lcom/panasonic/avc/cng/view/setting/ax;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionShotImageSelectionAnimeActivity;->a:Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;
 
     .line 95
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionShotImageSelectionAnimeActivity;->a:Lcom/panasonic/avc/cng/view/setting/ax;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionShotImageSelectionAnimeActivity;->a:Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;
 
     if-nez v0, :cond_0
 
     .line 98
-    new-instance v0, Lcom/panasonic/avc/cng/view/setting/ax;
+    new-instance v0, Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionShotImageSelectionAnimeActivity;->_handler:Landroid/os/Handler;
 
@@ -454,9 +454,9 @@
 
     iget-object v3, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionShotImageSelectionAnimeActivity;->b:Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionShotImageSelectionAnimeActivity$b;
 
-    invoke-direct {v0, p0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/setting/ax;-><init>(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/parts/t$e;Lcom/panasonic/avc/cng/view/setting/ax$c;)V
+    invoke-direct {v0, p0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;-><init>(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/parts/t$e;Lcom/panasonic/avc/cng/view/setting/ax$c;)V
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionShotImageSelectionAnimeActivity;->a:Lcom/panasonic/avc/cng/view/setting/ax;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionShotImageSelectionAnimeActivity;->a:Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;
 
     .line 102
     :cond_0
@@ -511,17 +511,17 @@
 
     .line 221
     :cond_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionShotImageSelectionAnimeActivity;->a:Lcom/panasonic/avc/cng/view/setting/ax;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionShotImageSelectionAnimeActivity;->a:Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;
 
     if-eqz v0, :cond_1
 
     .line 223
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionShotImageSelectionAnimeActivity;->a:Lcom/panasonic/avc/cng/view/setting/ax;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionShotImageSelectionAnimeActivity;->a:Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/ax;->c()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;->c()V
 
     .line 224
-    iput-object v2, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionShotImageSelectionAnimeActivity;->a:Lcom/panasonic/avc/cng/view/setting/ax;
+    iput-object v2, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionShotImageSelectionAnimeActivity;->a:Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;
 
     .line 226
     :cond_1
@@ -714,11 +714,11 @@
 
     .line 913
     :pswitch_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionShotImageSelectionAnimeActivity;->a:Lcom/panasonic/avc/cng/view/setting/ax;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionShotImageSelectionAnimeActivity;->a:Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/setting/ax;->a(Z)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;->a(Z)V
 
     goto :goto_0
 
@@ -734,7 +734,7 @@
 
     .prologue
     .line 168
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionShotImageSelectionAnimeActivity;->a:Lcom/panasonic/avc/cng/view/setting/ax;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionShotImageSelectionAnimeActivity;->a:Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;
 
     if-eqz v0, :cond_0
 
@@ -743,12 +743,12 @@
 
     const-string v1, "viewModel.Pause()"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 173
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionShotImageSelectionAnimeActivity;->a:Lcom/panasonic/avc/cng/view/setting/ax;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionShotImageSelectionAnimeActivity;->a:Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/ax;->f()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;->f()V
 
     .line 176
     :cond_0
@@ -788,53 +788,53 @@
     move-result-object v0
 
     .line 860
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/b/e$b;->a:Lcom/panasonic/avc/cng/model/c/h;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/b/e$b;->a:Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/h;->a()Z
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;->a()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 862
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionShotImageSelectionAnimeActivity;->a:Lcom/panasonic/avc/cng/view/setting/ax;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionShotImageSelectionAnimeActivity;->a:Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;
 
     if-eqz v0, :cond_0
 
     .line 865
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionShotImageSelectionAnimeActivity;->a:Lcom/panasonic/avc/cng/view/setting/ax;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionShotImageSelectionAnimeActivity;->a:Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/ax;->m()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;->m()V
 
     .line 866
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionShotImageSelectionAnimeActivity;->a:Lcom/panasonic/avc/cng/view/setting/ax;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionShotImageSelectionAnimeActivity;->a:Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/ax;->l()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;->l()V
 
     goto :goto_0
 
     .line 873
     :pswitch_1
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionShotImageSelectionAnimeActivity;->a:Lcom/panasonic/avc/cng/view/setting/ax;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionShotImageSelectionAnimeActivity;->a:Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;
 
     const/4 v1, 0x1
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/setting/ax;->a(Z)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;->a(Z)V
 
     goto :goto_0
 
     .line 879
     :pswitch_2
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionShotImageSelectionAnimeActivity;->a:Lcom/panasonic/avc/cng/view/setting/ax;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionShotImageSelectionAnimeActivity;->a:Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/ax;->o()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;->o()V
 
     .line 882
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
@@ -867,9 +867,9 @@
     .line 894
     const-string v1, "StopMotionAutoOnKey"
 
-    iget-object v2, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionShotImageSelectionAnimeActivity;->a:Lcom/panasonic/avc/cng/view/setting/ax;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionShotImageSelectionAnimeActivity;->a:Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;
 
-    invoke-virtual {v2}, Lcom/panasonic/avc/cng/view/setting/ax;->n()Z
+    invoke-virtual {v2}, Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;->n()Z
 
     move-result v2
 
@@ -930,14 +930,14 @@
     if-nez v1, :cond_0
 
     .line 310
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionShotImageSelectionAnimeActivity;->a:Lcom/panasonic/avc/cng/view/setting/ax;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionShotImageSelectionAnimeActivity;->a:Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;
 
     if-eqz v1, :cond_2
 
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionShotImageSelectionAnimeActivity;->a:Lcom/panasonic/avc/cng/view/setting/ax;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionShotImageSelectionAnimeActivity;->a:Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;
 
     .line 311
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/setting/ax;->g()Z
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;->g()Z
 
     move-result v1
 
@@ -957,7 +957,7 @@
 
     .prologue
     .line 141
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionShotImageSelectionAnimeActivity;->a:Lcom/panasonic/avc/cng/view/setting/ax;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionShotImageSelectionAnimeActivity;->a:Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;
 
     if-eqz v0, :cond_0
 
@@ -966,12 +966,12 @@
 
     const-string v1, "viewModel.Resume()"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 146
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionShotImageSelectionAnimeActivity;->a:Lcom/panasonic/avc/cng/view/setting/ax;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionShotImageSelectionAnimeActivity;->a:Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/ax;->e()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;->e()V
 
     .line 148
     :cond_0
@@ -997,23 +997,23 @@
     invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/i;->onSaveInstanceState(Landroid/os/Bundle;)V
 
     .line 189
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionShotImageSelectionAnimeActivity;->a:Lcom/panasonic/avc/cng/view/setting/ax;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionShotImageSelectionAnimeActivity;->a:Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;
 
     if-eqz v0, :cond_0
 
     .line 192
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionShotImageSelectionAnimeActivity;->a:Lcom/panasonic/avc/cng/view/setting/ax;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionShotImageSelectionAnimeActivity;->a:Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;
 
     invoke-direct {p0}, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionShotImageSelectionAnimeActivity;->b()I
 
     move-result v1
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/setting/ax;->a(I)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;->a(I)V
 
     .line 194
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionShotImageSelectionAnimeActivity;->a:Lcom/panasonic/avc/cng/view/setting/ax;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionShotImageSelectionAnimeActivity;->a:Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/e;->a(Lcom/panasonic/avc/cng/view/setting/ax;)V
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/e;->a(Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;)V
 
     .line 196
     :cond_0
@@ -1039,14 +1039,14 @@
     invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/i;->onStart()V
 
     .line 113
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionShotImageSelectionAnimeActivity;->a:Lcom/panasonic/avc/cng/view/setting/ax;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionShotImageSelectionAnimeActivity;->a:Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;
 
     if-eqz v0, :cond_0
 
     .line 116
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionShotImageSelectionAnimeActivity;->a:Lcom/panasonic/avc/cng/view/setting/ax;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionShotImageSelectionAnimeActivity;->a:Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/ax;->d()Z
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;->d()Z
 
     move-result v0
 
@@ -1065,9 +1065,9 @@
 
     .line 131
     :goto_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionShotImageSelectionAnimeActivity;->a:Lcom/panasonic/avc/cng/view/setting/ax;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionShotImageSelectionAnimeActivity;->a:Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/ax;->l()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;->l()V
 
     .line 133
     :cond_0
@@ -1079,7 +1079,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {p0, v0, v1}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {p0, v0, v1}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     goto :goto_0
 .end method

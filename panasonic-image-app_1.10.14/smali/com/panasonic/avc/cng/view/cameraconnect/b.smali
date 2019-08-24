@@ -1,5 +1,5 @@
 .class public Lcom/panasonic/avc/cng/view/cameraconnect/b;
-.super Lcom/panasonic/avc/cng/view/cameraconnect/i;
+.super Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 .source "SourceFile"
 
 
@@ -45,7 +45,7 @@
     const/4 v1, 0x0
 
     .line 33
-    invoke-direct {p0, p1, p2, p3, p4}, Lcom/panasonic/avc/cng/view/cameraconnect/i;-><init>(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/cameraconnect/e$a;Lcom/panasonic/avc/cng/model/service/j$a;)V
+    invoke-direct {p0, p1, p2, p3, p4}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;-><init>(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/cameraconnect/e$a;Lcom/panasonic/avc/cng/model/service/j$a;)V
 
     .line 16
     const-string v0, "AccessPointListViewModel"
@@ -95,7 +95,7 @@
     invoke-virtual {p0}, Lcom/panasonic/avc/cng/view/cameraconnect/b;->j()V
 
     .line 61
-    invoke-super {p0}, Lcom/panasonic/avc/cng/view/cameraconnect/i;->a()V
+    invoke-super {p0}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->a()V
 
     .line 62
     return-void

@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/core/a/al;->a(Ljava/lang/String;Ljava/lang/StringBuffer;)Ljava/lang/String;
+    value = Lcom/panasonic/avc/cng/core/a/StaticHttpCommand;->a(Ljava/lang/String;Ljava/lang/StringBuffer;)Ljava/lang/String;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -93,7 +93,7 @@
 
     move-result-object v2
 
-    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 286
     const-string v1, "StaticHttpCommand"
@@ -138,7 +138,7 @@
 
     move-result-object v2
 
-    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/f;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/ImageAppCmdLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 290
     :goto_0
@@ -157,7 +157,7 @@
     move-result-object v0
 
     .line 266
-    invoke-static {}, Lcom/panasonic/avc/cng/core/a/al;->e()V
+    invoke-static {}, Lcom/panasonic/avc/cng/core/a/StaticHttpCommand;->e()V
 
     .line 267
     const-string v1, "StaticHttpCommand"
@@ -180,7 +180,7 @@
 
     move-result-object v2
 
-    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/f;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/ImageAppCmdLog;->verbose(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 270
     invoke-interface {p1}, Lorg/apache/http/HttpResponse;->getEntity()Lorg/apache/http/HttpEntity;
@@ -215,7 +215,7 @@
     move-result-object v0
 
     .line 277
-    invoke-static {}, Lcom/panasonic/avc/cng/core/a/al;->e()V
+    invoke-static {}, Lcom/panasonic/avc/cng/core/a/StaticHttpCommand;->e()V
 
     .line 278
     const-string v1, "StaticHttpCommand"
@@ -238,7 +238,7 @@
 
     move-result-object v2
 
-    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/f;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/ImageAppCmdLog;->verbose(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 

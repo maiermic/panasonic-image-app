@@ -21,7 +21,7 @@
 
 .field private c:Lcom/panasonic/avc/cng/model/service/i$b;
 
-.field private d:Lcom/panasonic/avc/cng/core/a/j;
+.field private d:Lcom/panasonic/avc/cng/core/a/HighLightCommand;
 
 .field private e:Lcom/panasonic/avc/cng/model/service/c;
 
@@ -261,23 +261,23 @@
     invoke-direct {p0, p4, v2}, Lcom/panasonic/avc/cng/model/service/e/a;->a(Lcom/panasonic/avc/cng/model/service/e/a$a;I)V
 
     .line 853
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/e/a;->d:Lcom/panasonic/avc/cng/core/a/j;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/e/a;->d:Lcom/panasonic/avc/cng/core/a/HighLightCommand;
 
     int-to-long v4, p2
 
-    invoke-virtual {v0, p1, v4, v5}, Lcom/panasonic/avc/cng/core/a/j;->a(Ljava/lang/String;J)Lcom/panasonic/avc/cng/model/c/h;
+    invoke-virtual {v0, p1, v4, v5}, Lcom/panasonic/avc/cng/core/a/HighLightCommand;->a(Ljava/lang/String;J)Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
     move-result-object v0
 
     .line 855
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/h;->a()Z
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;->a()Z
 
     move-result v1
 
     if-eqz v1, :cond_2
 
     .line 860
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/h;->I()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;->I()Ljava/lang/String;
 
     move-result-object v1
 
@@ -335,9 +335,9 @@
     if-eqz v1, :cond_1
 
     .line 896
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/e/a;->d:Lcom/panasonic/avc/cng/core/a/j;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/e/a;->d:Lcom/panasonic/avc/cng/core/a/HighLightCommand;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/j;->d()Z
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/HighLightCommand;->d()Z
 
     .line 937
     :cond_1
@@ -364,7 +364,7 @@
     if-eqz v1, :cond_b
 
     .line 868
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/h;->J()I
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;->J()I
 
     move-result v0
 
@@ -416,18 +416,18 @@
 
     .line 901
     :cond_5
-    iget-object v7, p0, Lcom/panasonic/avc/cng/model/service/e/a;->d:Lcom/panasonic/avc/cng/core/a/j;
+    iget-object v7, p0, Lcom/panasonic/avc/cng/model/service/e/a;->d:Lcom/panasonic/avc/cng/core/a/HighLightCommand;
 
-    invoke-virtual {v7, v6}, Lcom/panasonic/avc/cng/core/a/j;->a([B)Z
+    invoke-virtual {v7, v6}, Lcom/panasonic/avc/cng/core/a/HighLightCommand;->a([B)Z
 
     move-result v6
 
     if-nez v6, :cond_6
 
     .line 908
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/e/a;->d:Lcom/panasonic/avc/cng/core/a/j;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/e/a;->d:Lcom/panasonic/avc/cng/core/a/HighLightCommand;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/j;->e()Z
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/HighLightCommand;->e()Z
 
     .line 909
     iput-boolean v3, p0, Lcom/panasonic/avc/cng/model/service/e/a;->i:Z
@@ -448,9 +448,9 @@
     if-eqz v1, :cond_1
 
     .line 918
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/e/a;->d:Lcom/panasonic/avc/cng/core/a/j;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/e/a;->d:Lcom/panasonic/avc/cng/core/a/HighLightCommand;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/j;->d()Z
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/HighLightCommand;->d()Z
 
     goto :goto_3
 
@@ -470,17 +470,17 @@
     if-eqz v5, :cond_8
 
     .line 929
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/e/a;->d:Lcom/panasonic/avc/cng/core/a/j;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/e/a;->d:Lcom/panasonic/avc/cng/core/a/HighLightCommand;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/j;->e()Z
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/HighLightCommand;->e()Z
 
     goto :goto_4
 
     .line 933
     :cond_8
-    iget-object v5, p0, Lcom/panasonic/avc/cng/model/service/e/a;->d:Lcom/panasonic/avc/cng/core/a/j;
+    iget-object v5, p0, Lcom/panasonic/avc/cng/model/service/e/a;->d:Lcom/panasonic/avc/cng/core/a/HighLightCommand;
 
-    invoke-virtual {v5}, Lcom/panasonic/avc/cng/core/a/j;->c()Z
+    invoke-virtual {v5}, Lcom/panasonic/avc/cng/core/a/HighLightCommand;->c()Z
 
     move v5, v0
 
@@ -881,7 +881,7 @@
     .line 272
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/panasonic/avc/cng/model/service/e/a;->d:Lcom/panasonic/avc/cng/core/a/j;
+    iget-object v2, v0, Lcom/panasonic/avc/cng/model/service/e/a;->d:Lcom/panasonic/avc/cng/core/a/HighLightCommand;
 
     if-nez v2, :cond_1
 
@@ -1290,9 +1290,9 @@
     .line 449
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/panasonic/avc/cng/model/service/e/a;->d:Lcom/panasonic/avc/cng/core/a/j;
+    iget-object v2, v0, Lcom/panasonic/avc/cng/model/service/e/a;->d:Lcom/panasonic/avc/cng/core/a/HighLightCommand;
 
-    invoke-virtual {v2}, Lcom/panasonic/avc/cng/core/a/j;->b()Z
+    invoke-virtual {v2}, Lcom/panasonic/avc/cng/core/a/HighLightCommand;->b()Z
 
     .line 490
     :cond_b
@@ -1318,9 +1318,9 @@
     :cond_c
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/panasonic/avc/cng/model/service/e/a;->d:Lcom/panasonic/avc/cng/core/a/j;
+    iget-object v2, v0, Lcom/panasonic/avc/cng/model/service/e/a;->d:Lcom/panasonic/avc/cng/core/a/HighLightCommand;
 
-    invoke-virtual {v2, v13, v14, v15}, Lcom/panasonic/avc/cng/core/a/j;->a([Ljava/lang/String;[I[Ljava/lang/String;)V
+    invoke-virtual {v2, v13, v14, v15}, Lcom/panasonic/avc/cng/core/a/HighLightCommand;->a([Ljava/lang/String;[I[Ljava/lang/String;)V
 
     .line 456
     move-object/from16 v0, p0
@@ -1361,13 +1361,13 @@
     .line 464
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/panasonic/avc/cng/model/service/e/a;->d:Lcom/panasonic/avc/cng/core/a/j;
+    iget-object v2, v0, Lcom/panasonic/avc/cng/model/service/e/a;->d:Lcom/panasonic/avc/cng/core/a/HighLightCommand;
 
     move-object/from16 v0, v16
 
     move-object/from16 v1, v17
 
-    invoke-virtual {v2, v0, v1}, Lcom/panasonic/avc/cng/core/a/j;->a([Ljava/lang/String;[Ljava/lang/String;)Z
+    invoke-virtual {v2, v0, v1}, Lcom/panasonic/avc/cng/core/a/HighLightCommand;->a([Ljava/lang/String;[Ljava/lang/String;)Z
 
     move-result v2
 
@@ -1597,11 +1597,11 @@
 
     .prologue
     .line 73
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
@@ -1609,18 +1609,18 @@
     if-eqz v0, :cond_0
 
     .line 77
-    new-instance v1, Lcom/panasonic/avc/cng/core/a/j;
+    new-instance v1, Lcom/panasonic/avc/cng/core/a/HighLightCommand;
 
     iget-object v0, v0, Lcom/panasonic/avc/cng/model/f;->d:Ljava/lang/String;
 
-    invoke-direct {v1, v0}, Lcom/panasonic/avc/cng/core/a/j;-><init>(Ljava/lang/String;)V
+    invoke-direct {v1, v0}, Lcom/panasonic/avc/cng/core/a/HighLightCommand;-><init>(Ljava/lang/String;)V
 
-    iput-object v1, p0, Lcom/panasonic/avc/cng/model/service/e/a;->d:Lcom/panasonic/avc/cng/core/a/j;
+    iput-object v1, p0, Lcom/panasonic/avc/cng/model/service/e/a;->d:Lcom/panasonic/avc/cng/core/a/HighLightCommand;
 
     .line 78
     iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/e/a;->a:Landroid/content/Context;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/z;->j(Landroid/content/Context;)Lcom/panasonic/avc/cng/model/service/c;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->j(Landroid/content/Context;)Lcom/panasonic/avc/cng/model/service/c;
 
     move-result-object v0
 
@@ -1653,7 +1653,7 @@
 
     .prologue
     .line 116
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/e/a;->d:Lcom/panasonic/avc/cng/core/a/j;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/e/a;->d:Lcom/panasonic/avc/cng/core/a/HighLightCommand;
 
     if-nez v0, :cond_1
 
@@ -1674,7 +1674,7 @@
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/panasonic/avc/cng/model/service/e/a;->b(Ljava/util/List;III)V
 
     .line 128
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/e/a;->d:Lcom/panasonic/avc/cng/core/a/j;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/e/a;->d:Lcom/panasonic/avc/cng/core/a/HighLightCommand;
 
     iget v1, p0, Lcom/panasonic/avc/cng/model/service/e/a;->g:I
 
@@ -1684,7 +1684,7 @@
 
     invoke-direct {v3, p0}, Lcom/panasonic/avc/cng/model/service/e/a$1;-><init>(Lcom/panasonic/avc/cng/model/service/e/a;)V
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/core/a/j;->a(ILjava/lang/String;Lcom/panasonic/avc/cng/core/a/p;)V
+    invoke-virtual {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/core/a/HighLightCommand;->a(ILjava/lang/String;Lcom/panasonic/avc/cng/core/a/p;)V
 
     .line 245
     const/4 v0, 0x1
@@ -1699,7 +1699,7 @@
 
     .prologue
     .line 613
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/e/a;->d:Lcom/panasonic/avc/cng/core/a/j;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/e/a;->d:Lcom/panasonic/avc/cng/core/a/HighLightCommand;
 
     if-nez v0, :cond_0
 
@@ -1714,9 +1714,9 @@
     if-eqz v0, :cond_1
 
     .line 622
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/e/a;->d:Lcom/panasonic/avc/cng/core/a/j;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/e/a;->d:Lcom/panasonic/avc/cng/core/a/HighLightCommand;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/j;->a()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/HighLightCommand;->a()V
 
     .line 625
     :cond_1

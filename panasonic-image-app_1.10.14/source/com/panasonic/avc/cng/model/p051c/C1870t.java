@@ -1,7 +1,7 @@
 package com.panasonic.avc.cng.model.p051c;
 
 import android.util.Xml;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import java.io.ByteArrayInputStream;
 import java.io.InputStreamReader;
 import java.io.StringReader;
@@ -51,7 +51,7 @@ public class C1870t {
                 eventType = xmlPullParser.next();
             }
         } catch (Exception e) {
-            C2261g.m9769c("ParseDocument", e.getMessage());
+            ImageAppLog.error("ParseDocument", e.getMessage());
         }
     }
 
@@ -84,7 +84,7 @@ public class C1870t {
                         str2 = xmlPullParser.getText();
                     } catch (Exception e2) {
                         e = e2;
-                        C2261g.m9769c("ParseTagSimpleText", e.getMessage());
+                        ImageAppLog.error("ParseTagSimpleText", e.getMessage());
                         return str;
                     }
                 } else {
@@ -114,7 +114,7 @@ public class C1870t {
                 next = xmlPullParser.next();
             }
         } catch (Exception e) {
-            C2261g.m9769c("ParseTagUnknown", e.getMessage());
+            ImageAppLog.error("ParseTagUnknown", e.getMessage());
         }
     }
 

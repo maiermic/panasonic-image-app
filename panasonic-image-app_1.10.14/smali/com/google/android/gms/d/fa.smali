@@ -3,7 +3,7 @@
 
 
 # virtual methods
-.method public abstract a(Lcom/google/android/gms/d/dt;)V
+.method public abstract a(Lcom/google/android/gms/d/BasePendingResult;)V
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

@@ -13,17 +13,17 @@ import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.C1892f;
 import com.panasonic.avc.cng.model.C1897j.C1905h;
 import com.panasonic.avc.cng.model.C1897j.C1906i;
-import com.panasonic.avc.cng.model.p051c.C1846e;
+import com.panasonic.avc.cng.model.p051c.CameraStatus;
 import com.panasonic.avc.cng.model.p051c.C1860l;
 import com.panasonic.avc.cng.model.p052d.C1879a;
 import com.panasonic.avc.cng.model.service.C1985b;
-import com.panasonic.avc.cng.model.service.C2253z;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
 import com.panasonic.avc.cng.p038a.C1344c;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.util.C2274o;
 import com.panasonic.avc.cng.view.cameraconnect.GuidanceMenuActivity;
 import com.panasonic.avc.cng.view.liveview.LiveViewNoConnectionActivity;
-import com.panasonic.avc.cng.view.liveview.movie.conventional.C3541f.C3598a;
+import com.panasonic.avc.cng.view.liveview.movie.conventional.LiveViewMovieViewModel.C3598a;
 import com.panasonic.avc.cng.view.liveview.movie.matanity.LiveViewMovieMatanityMainActivity;
 import com.panasonic.avc.cng.view.liveview.p075a.C2939a;
 import com.panasonic.avc.cng.view.p072a.C2291c;
@@ -32,7 +32,7 @@ import com.panasonic.avc.cng.view.p072a.C2311f;
 import com.panasonic.avc.cng.view.p072a.C2311f.C2312a;
 import com.panasonic.avc.cng.view.p072a.C2316j;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
 import com.panasonic.avc.cng.view.p073b.C2337e;
 import com.panasonic.avc.cng.view.p073b.C2376f.C2378b;
 
@@ -49,7 +49,7 @@ public class C3476a extends C2939a {
     protected C3478a _mainListener;
     protected String[] _slowZoomTitleList;
     protected C3487b _tabMenuListener;
-    protected C3541f _viewModel;
+    protected LiveViewMovieViewModel _viewModel;
 
     /* renamed from: com.panasonic.avc.cng.view.liveview.movie.conventional.a$a */
     protected class C3478a implements C3598a {
@@ -59,24 +59,24 @@ public class C3476a extends C2939a {
         /* renamed from: a */
         public void mo8233a(int i) {
             if (i == 1) {
-                C2331d.m10114a((Activity) C3476a.this, C2328a.ON_ERROR_REMAIN_ZERO, (Bundle) null);
+                DialogFactory.m10114a((Activity) C3476a.this, C2328a.ON_ERROR_REMAIN_ZERO, (Bundle) null);
             } else if (i == 2) {
-                C2331d.m10114a((Activity) C3476a.this, C2328a.ON_ERROR_SD_LOCK_MOVIE, (Bundle) null);
+                DialogFactory.m10114a((Activity) C3476a.this, C2328a.ON_ERROR_SD_LOCK_MOVIE, (Bundle) null);
             } else if (i == 3) {
-                C2331d.m10114a((Activity) C3476a.this, C2328a.ON_ERROR_MOVIE_RECORD_FAIL, (Bundle) null);
+                DialogFactory.m10114a((Activity) C3476a.this, C2328a.ON_ERROR_MOVIE_RECORD_FAIL, (Bundle) null);
             } else {
-                C2331d.m10114a((Activity) C3476a.this, C2328a.ON_ERROR_MOVIE_RECORD_FAIL, (Bundle) null);
+                DialogFactory.m10114a((Activity) C3476a.this, C2328a.ON_ERROR_MOVIE_RECORD_FAIL, (Bundle) null);
             }
         }
 
         /* renamed from: b */
         public void mo8241b(int i) {
             if (i == 1) {
-                C2331d.m10114a((Activity) C3476a.this, C2328a.ON_ERROR_REMAIN_ZERO, (Bundle) null);
+                DialogFactory.m10114a((Activity) C3476a.this, C2328a.ON_ERROR_REMAIN_ZERO, (Bundle) null);
             } else if (i == 2) {
-                C2331d.m10114a((Activity) C3476a.this, C2328a.ON_ERROR_SD_LOCK_PICTURE, (Bundle) null);
+                DialogFactory.m10114a((Activity) C3476a.this, C2328a.ON_ERROR_SD_LOCK_PICTURE, (Bundle) null);
             } else if (i == 3) {
-                C2331d.m10114a((Activity) C3476a.this, C2328a.ON_ERROR_PIC_CAPTURE_FAIL, (Bundle) null);
+                DialogFactory.m10114a((Activity) C3476a.this, C2328a.ON_ERROR_PIC_CAPTURE_FAIL, (Bundle) null);
             }
         }
 
@@ -85,23 +85,23 @@ public class C3476a extends C2939a {
             if (C3476a.this._lastLiveViewMode != 1 || C3476a.this._viewModel == null || ((Integer) C3476a.this._viewModel.f11502bd.mo3217b()).intValue() == i) {
                 if (!(C3476a.this._lastLiveViewMode != 2 || C3476a.this._viewModel == null || ((Integer) C3476a.this._viewModel.f11503be.mo3217b()).intValue() == i2)) {
                     if (i2 == 2) {
-                        C2331d.m10114a((Activity) C3476a.this, C2328a.ON_ERROR_SD_UNSET_PICTURE, (Bundle) null);
+                        DialogFactory.m10114a((Activity) C3476a.this, C2328a.ON_ERROR_SD_UNSET_PICTURE, (Bundle) null);
                     } else if (i2 == 3) {
-                        C2331d.m10114a((Activity) C3476a.this, C2328a.ON_ERROR_SD_LOCK_PICTURE, (Bundle) null);
+                        DialogFactory.m10114a((Activity) C3476a.this, C2328a.ON_ERROR_SD_LOCK_PICTURE, (Bundle) null);
                     } else if (i2 == 4) {
-                        C2331d.m10114a((Activity) C3476a.this, C2328a.ON_ERROR_SD_REPAIRED_PICTURE, (Bundle) null);
+                        DialogFactory.m10114a((Activity) C3476a.this, C2328a.ON_ERROR_SD_REPAIRED_PICTURE, (Bundle) null);
                     } else if (i == 1 && i2 == 1) {
-                        C2331d.m10100a((Activity) C3476a.this);
+                        DialogFactory.m10100a((Activity) C3476a.this);
                     }
                 }
             } else if (i == 2) {
-                C2331d.m10114a((Activity) C3476a.this, C2328a.ON_ERROR_SD_UNSET_MOVIE, (Bundle) null);
+                DialogFactory.m10114a((Activity) C3476a.this, C2328a.ON_ERROR_SD_UNSET_MOVIE, (Bundle) null);
             } else if (i == 3) {
-                C2331d.m10114a((Activity) C3476a.this, C2328a.ON_ERROR_SD_LOCK_MOVIE, (Bundle) null);
+                DialogFactory.m10114a((Activity) C3476a.this, C2328a.ON_ERROR_SD_LOCK_MOVIE, (Bundle) null);
             } else if (i == 4) {
-                C2331d.m10114a((Activity) C3476a.this, C2328a.ON_ERROR_SD_REPAIRED_MOVIE, (Bundle) null);
+                DialogFactory.m10114a((Activity) C3476a.this, C2328a.ON_ERROR_SD_REPAIRED_MOVIE, (Bundle) null);
             } else if (i == 1 && i2 == 1) {
-                C2331d.m10100a((Activity) C3476a.this);
+                DialogFactory.m10100a((Activity) C3476a.this);
             }
             if (C3476a.this._viewModel != null) {
                 C3476a.this._viewModel.f11502bd.mo3216a(Integer.valueOf(i));
@@ -113,7 +113,7 @@ public class C3476a extends C2939a {
         public void mo8232a() {
             C3476a.this._cameraUtil.mo6032a((Runnable) new Runnable() {
                 public void run() {
-                    C2331d.m10114a((Activity) C3476a.this, C2328a.ON_PROGRESS, (Bundle) null);
+                    DialogFactory.m10114a((Activity) C3476a.this, C2328a.ON_PROGRESS, (Bundle) null);
                 }
             });
         }
@@ -122,7 +122,7 @@ public class C3476a extends C2939a {
         public void mo8240b() {
             C3476a.this._cameraUtil.mo6032a((Runnable) new Runnable() {
                 public void run() {
-                    C2331d.m10100a((Activity) C3476a.this);
+                    DialogFactory.m10100a((Activity) C3476a.this);
                 }
             });
         }
@@ -131,14 +131,14 @@ public class C3476a extends C2939a {
         public void mo8243c() {
             C3476a.this._cameraUtil.mo6032a((Runnable) new Runnable() {
                 public void run() {
-                    C2331d.m10100a((Activity) C3476a.this);
-                    C2331d.m10114a((Activity) C3476a.this, C2328a.ON_DISCONNECT_FINISH_WIFI, (Bundle) null);
+                    DialogFactory.m10100a((Activity) C3476a.this);
+                    DialogFactory.m10114a((Activity) C3476a.this, C2328a.ON_DISCONNECT_FINISH_WIFI, (Bundle) null);
                 }
             });
         }
 
         /* renamed from: a */
-        public void mo8235a(C1846e eVar) {
+        public void mo8235a(CameraStatus eVar) {
             C3476a.this.onGetStatusNotify(eVar);
         }
 
@@ -180,17 +180,17 @@ public class C3476a extends C2939a {
                 if (C2274o.m9917w(str) && !C3476a.this._isStartPreset) {
                     C3476a.this._isStartPreset = true;
                 }
-                if (C2331d.m10125b((Activity) C3476a.this, C2328a.ON_PANTILTER_SET_HOME_POSITION)) {
+                if (DialogFactory.m10125b((Activity) C3476a.this, C2328a.ON_PANTILTER_SET_HOME_POSITION)) {
                     C3476a.this._cameraUtil.mo6032a((Runnable) new Runnable() {
                         public void run() {
-                            C2331d.m10100a((Activity) C3476a.this);
+                            DialogFactory.m10100a((Activity) C3476a.this);
                         }
                     });
                 }
-            } else if (!C2331d.m10125b((Activity) C3476a.this, C2328a.ON_PANTILTER_SET_HOME_POSITION)) {
+            } else if (!DialogFactory.m10125b((Activity) C3476a.this, C2328a.ON_PANTILTER_SET_HOME_POSITION)) {
                 C3476a.this._cameraUtil.mo6032a((Runnable) new Runnable() {
                     public void run() {
-                        C2331d.m10114a((Activity) C3476a.this, C2328a.ON_PANTILTER_SET_HOME_POSITION, (Bundle) null);
+                        DialogFactory.m10114a((Activity) C3476a.this, C2328a.ON_PANTILTER_SET_HOME_POSITION, (Bundle) null);
                     }
                 });
             }
@@ -209,7 +209,7 @@ public class C3476a extends C2939a {
             Bundle bundle = new Bundle();
             bundle.putStringArray(C2378b.SINGLE_CHOICE_LIST.name(), C3476a.this._slowZoomTitleList);
             bundle.putInt(C2378b.SINGLE_CHOICE_CHECKED_ITEM.name(), i);
-            C2331d.m10114a((Activity) C3476a.this, C2328a.ON_SELECT_SLOW_ZOOM_SETTING, bundle);
+            DialogFactory.m10114a((Activity) C3476a.this, C2328a.ON_SELECT_SLOW_ZOOM_SETTING, bundle);
         }
 
         /* renamed from: d */
@@ -360,10 +360,10 @@ public class C3476a extends C2939a {
         /* renamed from: d */
         private boolean m13821d() {
             if (C3476a.this._viewModel.mo8413k()) {
-                C2331d.m10114a((Activity) C3476a.this, C2328a.ON_ERROR_NOW_MOVIE_RECORDING, (Bundle) null);
+                DialogFactory.m10114a((Activity) C3476a.this, C2328a.ON_ERROR_NOW_MOVIE_RECORDING, (Bundle) null);
                 return false;
             } else if (C3476a.this._viewModel.mo8414l() || C3476a.this._viewModel.mo8415m()) {
-                C2331d.m10114a((Activity) C3476a.this, C2328a.ON_ERROR_NOW_PIC_CAPTURE, (Bundle) null);
+                DialogFactory.m10114a((Activity) C3476a.this, C2328a.ON_ERROR_NOW_PIC_CAPTURE, (Bundle) null);
                 return false;
             } else if (C3476a.this._viewModel.mo8416n()) {
                 return true;
@@ -402,9 +402,9 @@ public class C3476a extends C2939a {
         this._context = this;
         this._handler = new Handler();
         this._mainListener = new C3478a();
-        this._viewModel = (C3541f) C2316j.m10030a("LiveViewMovieViewModel");
+        this._viewModel = (LiveViewMovieViewModel) C2316j.m10030a("LiveViewMovieViewModel");
         if (this._viewModel == null) {
-            this._viewModel = new C3541f(this._context, this._handler);
+            this._viewModel = new LiveViewMovieViewModel(this._context, this._handler);
             this._viewModel.mo8390a(this._context, this._handler, (C3598a) this._mainListener);
             C2316j.m10032a("LiveViewMovieViewModel", this._viewModel);
             this._viewModel.mo8396b(this._lastLiveViewMode);
@@ -479,7 +479,7 @@ public class C3476a extends C2939a {
     /* access modifiers changed from: protected */
     public boolean IsEnableOptionMenu() {
         if (this._viewModel.mo8414l()) {
-            C2331d.m10114a((Activity) this, C2328a.ON_ERROR_NOW_PIC_CAPTURE, (Bundle) null);
+            DialogFactory.m10114a((Activity) this, C2328a.ON_ERROR_NOW_PIC_CAPTURE, (Bundle) null);
             return false;
         } else if (!this._viewModel.mo8409g()) {
             return false;
@@ -502,7 +502,7 @@ public class C3476a extends C2939a {
     }
 
     public void OnClickShutter(View view) {
-        C2261g.m9760a(3158018, "");
+        ImageAppLog.m9760a(3158018, "");
         if (this._viewModel != null) {
             this._viewModel.mo8401c(0);
             this._viewModel.mo8411i();
@@ -513,7 +513,7 @@ public class C3476a extends C2939a {
     }
 
     public void OnClickRec(View view) {
-        C2261g.m9760a(3158017, "");
+        ImageAppLog.m9760a(3158017, "");
         if (this._viewModel != null) {
             this._viewModel.mo8412j();
         }
@@ -523,7 +523,7 @@ public class C3476a extends C2939a {
     }
 
     public void OnClickModeChange(View view) {
-        C2261g.m9760a(3158019, "");
+        ImageAppLog.m9760a(3158019, "");
         if (this._viewModel != null) {
             this._viewModel.mo8421s();
         }
@@ -538,7 +538,7 @@ public class C3476a extends C2939a {
             super.onActivityResult(i, i2, intent);
             C1892f a = C1712b.m6919c().mo4896a();
             if (a != null) {
-                C1985b a2 = C2253z.m9679a(this._context, a);
+                C1985b a2 = ServiceFactory.m9679a(this._context, a);
                 if (a2 != null) {
                     C1860l a3 = a2.mo5182a("menu_item_id_recmode_pht");
                     if (a3 != null && a3.f5569c.equalsIgnoreCase("anmast")) {
@@ -579,7 +579,7 @@ public class C3476a extends C2939a {
     }
 
     /* access modifiers changed from: protected */
-    public void onGetStatusNotify(C1846e eVar) {
+    public void onGetStatusNotify(CameraStatus eVar) {
     }
 
     /* access modifiers changed from: protected */
@@ -641,14 +641,14 @@ public class C3476a extends C2939a {
                     case 0:
                         if (this._viewModel != null) {
                             this._viewModel.mo8404d("normal");
-                            C2331d.m10100a((Activity) this);
+                            DialogFactory.m10100a((Activity) this);
                             return;
                         }
                         return;
                     case 1:
                         if (this._viewModel != null) {
                             this._viewModel.mo8404d("slow");
-                            C2331d.m10100a((Activity) this);
+                            DialogFactory.m10100a((Activity) this);
                             return;
                         }
                         return;

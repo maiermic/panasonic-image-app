@@ -26,13 +26,13 @@ import android.widget.TextView;
 import com.panasonic.avc.cng.core.mp4.Mp4CheckAAC;
 import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.C1712b;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.util.C2266l;
 import com.panasonic.avc.cng.view.p072a.C2291c;
 import com.panasonic.avc.cng.view.p072a.C2313g;
 import com.panasonic.avc.cng.view.p072a.C2316j;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
 import com.panasonic.avc.cng.view.play.p076a.C4270a;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -285,12 +285,12 @@ public class MovieSlideshowSelectBgmActivity extends C4270a implements OnComplet
                     }
                     int a = ((C4513b) MovieSlideshowSelectBgmActivity.this.f14810b.getAdapter()).mo10573a();
                     if (a < 0) {
-                        C2331d.m10114a((Activity) MovieSlideshowSelectBgmActivity.this, C2328a.BgmCompleteConfirmDlg, (Bundle) null);
+                        DialogFactory.m10114a((Activity) MovieSlideshowSelectBgmActivity.this, C2328a.BgmCompleteConfirmDlg, (Bundle) null);
                         return;
                     }
                     String a2 = ((C4517d) MovieSlideshowSelectBgmActivity.this.f14809a.mo10595c().get(a)).f14833d;
                     if (!new Mp4CheckAAC().mo4321a(a2)) {
-                        C2331d.m10114a((Activity) MovieSlideshowSelectBgmActivity.this, C2328a.BgmContentsNotSupportDlg, (Bundle) null);
+                        DialogFactory.m10114a((Activity) MovieSlideshowSelectBgmActivity.this, C2328a.BgmContentsNotSupportDlg, (Bundle) null);
                         return;
                     }
                     MovieSlideshowSelectBgmActivity.this.f14809a.mo6022d().putString("MovieSlideshowSelectBgm", a2);
@@ -358,7 +358,7 @@ public class MovieSlideshowSelectBgmActivity extends C4270a implements OnComplet
     /* renamed from: a */
     public void m17746a(String str) {
         if (this.f14812d == null) {
-            C2261g.m9769c("MovieSlideshowSelectBgmActivity", "_mediaPlayer == null");
+            ImageAppLog.error("MovieSlideshowSelectBgmActivity", "_mediaPlayer == null");
             return;
         }
         try {
@@ -369,18 +369,18 @@ public class MovieSlideshowSelectBgmActivity extends C4270a implements OnComplet
                 this.f14812d.setOnCompletionListener(this);
                 this.f14812d.start();
             } catch (IllegalStateException e) {
-                C2261g.m9769c("MovieSlideshowSelectBgmActivity", " prepare IllegalStateException");
+                ImageAppLog.error("MovieSlideshowSelectBgmActivity", " prepare IllegalStateException");
             } catch (IOException e2) {
-                C2261g.m9769c("MovieSlideshowSelectBgmActivity", " prepare IOException");
+                ImageAppLog.error("MovieSlideshowSelectBgmActivity", " prepare IOException");
             }
         } catch (IllegalArgumentException e3) {
-            C2261g.m9769c("MovieSlideshowSelectBgmActivity", "setDataSource IllegalArgumentException");
+            ImageAppLog.error("MovieSlideshowSelectBgmActivity", "setDataSource IllegalArgumentException");
         } catch (SecurityException e4) {
-            C2261g.m9769c("MovieSlideshowSelectBgmActivity", "setDataSource SecurityException");
+            ImageAppLog.error("MovieSlideshowSelectBgmActivity", "setDataSource SecurityException");
         } catch (IllegalStateException e5) {
-            C2261g.m9769c("MovieSlideshowSelectBgmActivity", "setDataSource IllegalStateException");
+            ImageAppLog.error("MovieSlideshowSelectBgmActivity", "setDataSource IllegalStateException");
         } catch (IOException e6) {
-            C2261g.m9769c("MovieSlideshowSelectBgmActivity", "setDataSource IOException");
+            ImageAppLog.error("MovieSlideshowSelectBgmActivity", "setDataSource IOException");
         }
     }
 

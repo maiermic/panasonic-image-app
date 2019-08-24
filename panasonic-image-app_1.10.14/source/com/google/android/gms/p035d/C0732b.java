@@ -1,7 +1,7 @@
 package com.google.android.gms.p035d;
 
 import android.content.Context;
-import com.google.firebase.C1307a;
+import com.google.firebase.FirebaseApp;
 import java.util.concurrent.atomic.AtomicReference;
 
 /* renamed from: com.google.android.gms.d.b */
@@ -20,6 +20,6 @@ public final class C0732b {
     }
 
     /* renamed from: a */
-    public static void m2705a(C1307a aVar) {
+    public static void m2705a(FirebaseApp aVar) {
     }
 }

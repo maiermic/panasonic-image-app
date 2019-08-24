@@ -12,32 +12,32 @@ import com.panasonic.avc.cng.imageapp.C1701a.C1702a;
 import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.C1892f;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.view.cameraconnect.GuidanceMenuActivity;
 import com.panasonic.avc.cng.view.common.C2820e;
 import com.panasonic.avc.cng.view.p073b.C2317a.C2325c;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
 import com.panasonic.avc.cng.view.p073b.C2337e;
 import com.panasonic.avc.cng.view.p073b.C2376f.C2378b;
-import com.panasonic.avc.cng.view.setting.C5537al;
-import com.panasonic.avc.cng.view.threebox.C5999c.C6007b;
+import com.panasonic.avc.cng.view.setting.SettingMenuBaseActivity;
+import com.panasonic.avc.cng.view.threebox.ThreeBoxViewModel.C6007b;
 import java.util.List;
 
-public class ThreeBoxActivity extends C5537al {
+public class ThreeBoxActivity extends SettingMenuBaseActivity {
 
     /* renamed from: a */
     private final String f18254a = "ThreeBoxActivity";
     /* access modifiers changed from: private */
 
     /* renamed from: b */
-    public C5999c f18255b;
+    public ThreeBoxViewModel f18255b;
 
     /* renamed from: c */
     private C5988a f18256c;
 
     /* renamed from: d */
-    private C5989b f18257d;
+    private ThreeBoxSeekBarView f18257d;
 
     /* renamed from: e */
     private C5985a f18258e;
@@ -99,25 +99,25 @@ public class ThreeBoxActivity extends C5537al {
 
         /* renamed from: a */
         public void mo13099a() {
-            C2331d.m10114a((Activity) ThreeBoxActivity.this, C2328a.WAIT_PROCESSING, (Bundle) null);
+            DialogFactory.m10114a((Activity) ThreeBoxActivity.this, C2328a.WAIT_PROCESSING, (Bundle) null);
         }
 
         /* renamed from: a */
         public void mo13102a(List<C1892f> list) {
             if (list.size() <= 0) {
-                C2331d.m10100a((Activity) ThreeBoxActivity.this);
-                C2331d.m10114a((Activity) ThreeBoxActivity.this, C2328a.DmrNotFound, (Bundle) null);
+                DialogFactory.m10100a((Activity) ThreeBoxActivity.this);
+                DialogFactory.m10114a((Activity) ThreeBoxActivity.this, C2328a.DmrNotFound, (Bundle) null);
             } else if (list.size() == 1) {
                 ThreeBoxActivity.this.f18255b.mo13132e();
                 ThreeBoxActivity.this.f18255b.mo13125a(ThreeBoxActivity.this.f18255b.mo13133f(), (C1892f) list.get(0));
             } else {
-                C2331d.m10100a((Activity) ThreeBoxActivity.this);
+                DialogFactory.m10100a((Activity) ThreeBoxActivity.this);
                 Bundle bundle = new Bundle();
                 bundle.putStringArray(C2378b.SINGLE_CHOICE_LIST.name(), C2337e.m10174a((Activity) ThreeBoxActivity.this, ThreeBoxActivity.this.f18255b));
-                C2331d.m10115a((Activity) ThreeBoxActivity.this, C2328a.SelectDmrList, bundle, (C2325c) new C2325c() {
+                DialogFactory.m10115a((Activity) ThreeBoxActivity.this, C2328a.SelectDmrList, bundle, (C2325c) new C2325c() {
                     /* renamed from: a */
                     public void mo6131a() {
-                        C2331d.m10129c((Activity) ThreeBoxActivity.this, C2328a.SelectDmrList, (int) R.id.title, (int) R.string.play_3box_select_dmr);
+                        DialogFactory.m10129c((Activity) ThreeBoxActivity.this, C2328a.SelectDmrList, (int) R.id.title, (int) R.string.play_3box_select_dmr);
                     }
                 });
             }
@@ -125,34 +125,34 @@ public class ThreeBoxActivity extends C5537al {
 
         /* renamed from: b */
         public void mo13103b() {
-            C2261g.m9770d("ThreeBoxActivity", "OnDmrConnected");
+            ImageAppLog.verbose("ThreeBoxActivity", "OnDmrConnected");
         }
 
         /* renamed from: c */
         public void mo13104c() {
-            C2261g.m9770d("ThreeBoxActivity", "OnDmsConnected");
+            ImageAppLog.verbose("ThreeBoxActivity", "OnDmsConnected");
             ThreeBoxActivity.this.f18255b.mo13130d();
         }
 
         /* renamed from: d */
         public void mo13105d() {
-            C2261g.m9770d("ThreeBoxActivity", "OnDmrDisconnected");
-            C2331d.m10114a((Activity) ThreeBoxActivity.this, C2328a.DmrDisconnected, (Bundle) null);
+            ImageAppLog.verbose("ThreeBoxActivity", "OnDmrDisconnected");
+            DialogFactory.m10114a((Activity) ThreeBoxActivity.this, C2328a.DmrDisconnected, (Bundle) null);
         }
 
         /* renamed from: a */
         public void mo13100a(int i) {
-            C2261g.m9770d("ThreeBoxActivity", "OnDmsDisconnected");
+            ImageAppLog.verbose("ThreeBoxActivity", "OnDmsDisconnected");
             ThreeBoxActivity.this._resultBundle.putBoolean("DeviceDisconnectedKey", true);
             switch (i) {
                 case 2:
-                    C2331d.m10114a((Activity) ThreeBoxActivity.this, C2328a.ON_DISCONNECT_BY_HIGH_TEMP_FINISH, (Bundle) null);
+                    DialogFactory.m10114a((Activity) ThreeBoxActivity.this, C2328a.ON_DISCONNECT_BY_HIGH_TEMP_FINISH, (Bundle) null);
                     return;
                 case 3:
-                    C2331d.m10114a((Activity) ThreeBoxActivity.this, C2328a.ON_DISCONNECT_FINISH, (Bundle) null);
+                    DialogFactory.m10114a((Activity) ThreeBoxActivity.this, C2328a.ON_DISCONNECT_FINISH, (Bundle) null);
                     return;
                 default:
-                    C2331d.m10114a((Activity) ThreeBoxActivity.this, C2328a.ON_DISCONNECT_FINISH, (Bundle) null);
+                    DialogFactory.m10114a((Activity) ThreeBoxActivity.this, C2328a.ON_DISCONNECT_FINISH, (Bundle) null);
                     return;
             }
         }
@@ -160,29 +160,29 @@ public class ThreeBoxActivity extends C5537al {
         /* renamed from: a */
         public void mo13101a(String str) {
             if (str.equalsIgnoreCase("high")) {
-                C2331d.m10114a((Activity) ThreeBoxActivity.this, C2328a.ON_DISCONNECT_BY_HIGH_TEMP_FINISH, (Bundle) null);
+                DialogFactory.m10114a((Activity) ThreeBoxActivity.this, C2328a.ON_DISCONNECT_BY_HIGH_TEMP_FINISH, (Bundle) null);
             } else if (str.equalsIgnoreCase("assert")) {
-                C2331d.m10114a((Activity) ThreeBoxActivity.this, C2328a.ON_ASEERT_TEMP_FINISH, (Bundle) null);
+                DialogFactory.m10114a((Activity) ThreeBoxActivity.this, C2328a.ON_ASEERT_TEMP_FINISH, (Bundle) null);
             }
         }
 
         /* renamed from: e */
         public void mo13106e() {
-            C2261g.m9770d("ThreeBoxActivity", "OnModeChangeError");
-            C2331d.m10100a((Activity) ThreeBoxActivity.this);
-            C2331d.m10114a((Activity) ThreeBoxActivity.this, C2328a.ModeChangeError, (Bundle) null);
+            ImageAppLog.verbose("ThreeBoxActivity", "OnModeChangeError");
+            DialogFactory.m10100a((Activity) ThreeBoxActivity.this);
+            DialogFactory.m10114a((Activity) ThreeBoxActivity.this, C2328a.ModeChangeError, (Bundle) null);
         }
 
         /* renamed from: f */
         public void mo13107f() {
-            C2261g.m9770d("ThreeBoxActivity", "OnPlayStarted");
-            C2331d.m10100a((Activity) ThreeBoxActivity.this);
+            ImageAppLog.verbose("ThreeBoxActivity", "OnPlayStarted");
+            DialogFactory.m10100a((Activity) ThreeBoxActivity.this);
         }
 
         /* renamed from: g */
         public void mo13108g() {
-            C2331d.m10100a((Activity) ThreeBoxActivity.this);
-            C2331d.m10114a((Activity) ThreeBoxActivity.this, C2328a.NoContentsFound, (Bundle) null);
+            DialogFactory.m10100a((Activity) ThreeBoxActivity.this);
+            DialogFactory.m10114a((Activity) ThreeBoxActivity.this, C2328a.NoContentsFound, (Bundle) null);
         }
 
         /* renamed from: h */
@@ -198,8 +198,8 @@ public class ThreeBoxActivity extends C5537al {
 
         /* renamed from: i */
         public void mo13110i() {
-            C2331d.m10100a((Activity) ThreeBoxActivity.this);
-            C2331d.m10114a((Activity) ThreeBoxActivity.this, C2328a.DlnaResultError, (Bundle) null);
+            DialogFactory.m10100a((Activity) ThreeBoxActivity.this);
+            DialogFactory.m10114a((Activity) ThreeBoxActivity.this, C2328a.DlnaResultError, (Bundle) null);
         }
     }
 
@@ -216,14 +216,14 @@ public class ThreeBoxActivity extends C5537al {
         this.f18258e = new C5985a(this, null);
         this.f18255b = C2820e.m11775a((Context) this, this._handler, (C6007b) this.f18258e);
         if (this.f18255b == null) {
-            this.f18255b = new C5999c(this, this._handler, this.f18258e);
+            this.f18255b = new ThreeBoxViewModel(this, this._handler, this.f18258e);
             this.f18255b.mo13134g();
             Bundle extras = getIntent().getExtras();
             if (extras != null) {
                 this.f18255b.mo13124a(extras.getInt("ThreeBoxStartIndex_Key", 0));
             }
         }
-        this.f18257d = new C5989b(this, this.f18255b);
+        this.f18257d = new ThreeBoxSeekBarView(this, this.f18255b);
         this.f18256c = new C5988a();
         this.f18256c.mo13112a(this, this.f18255b);
         mo6889b();
@@ -290,7 +290,7 @@ public class ThreeBoxActivity extends C5537al {
             this.f18255b.mo3205a();
             this.f18255b = null;
         }
-        C2820e.m11804a((C5999c) null);
+        C2820e.m11804a((ThreeBoxViewModel) null);
         super.finish();
     }
 
@@ -367,7 +367,7 @@ public class ThreeBoxActivity extends C5537al {
     }
 
     public void OnClickLiveView(View view) {
-        C2261g.m9760a(3149826, "");
+        ImageAppLog.m9760a(3149826, "");
         if (!ShowDmsErrorIfReceiving()) {
             this._resultBundle.putString("MoveToOtherKey", "LiveView");
             finish();
@@ -375,11 +375,11 @@ public class ThreeBoxActivity extends C5537al {
     }
 
     public void OnClickBrowser(View view) {
-        C2261g.m9760a(3149827, "");
+        ImageAppLog.m9760a(3149827, "");
     }
 
     public void OnClickHome(View view) {
-        C2261g.m9760a(3149825, "");
+        ImageAppLog.m9760a(3149825, "");
         if (!ShowDmsErrorIfReceiving()) {
             Intent intent = new Intent(this._context, GuidanceMenuActivity.class);
             finish();
@@ -388,7 +388,7 @@ public class ThreeBoxActivity extends C5537al {
     }
 
     public void OnClickSetup(View view) {
-        C2261g.m9760a(3149828, "");
+        ImageAppLog.m9760a(3149828, "");
         openOptionsMenu();
     }
 
@@ -453,8 +453,8 @@ public class ThreeBoxActivity extends C5537al {
                 List h = this.f18255b.mo13135h();
                 this.f18255b.mo13132e();
                 this.f18255b.mo13125a(this.f18255b.mo13133f(), (C1892f) h.get(i));
-                C2331d.m10100a((Activity) this);
-                C2331d.m10114a((Activity) this, C2328a.WAIT_PROCESSING, (Bundle) null);
+                DialogFactory.m10100a((Activity) this);
+                DialogFactory.m10114a((Activity) this, C2328a.WAIT_PROCESSING, (Bundle) null);
                 return;
             default:
                 super.onSingleChoice(aVar, i);

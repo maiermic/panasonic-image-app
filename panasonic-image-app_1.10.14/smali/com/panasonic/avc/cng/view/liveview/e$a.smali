@@ -43,14 +43,14 @@
     .line 12850
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/e$a;->a:Lcom/panasonic/avc/cng/view/liveview/e;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/e;->n:Lcom/panasonic/avc/cng/core/a/g;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/e;->n:Lcom/panasonic/avc/cng/core/a/FocusCommand;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/g;->a()Lcom/panasonic/avc/cng/model/c/h;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/FocusCommand;->a()Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
     move-result-object v0
 
     .line 12851
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/h;->a()Z
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;->a()Z
 
     move-result v0
 
@@ -61,7 +61,7 @@
 
     const-string v1, "MF assist position setting error."
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 12857
     :cond_0
@@ -155,7 +155,7 @@
     :goto_0
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/e$a;->a:Lcom/panasonic/avc/cng/view/liveview/e;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/e;->n:Lcom/panasonic/avc/cng/core/a/g;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/e;->n:Lcom/panasonic/avc/cng/core/a/FocusCommand;
 
     move-object v1, p1
 
@@ -167,7 +167,7 @@
 
     move v5, p5
 
-    invoke-virtual/range {v0 .. v5}, Lcom/panasonic/avc/cng/core/a/g;->a(Lcom/panasonic/avc/cng/core/a/g$a;IIII)Lcom/panasonic/avc/cng/model/c/i;
+    invoke-virtual/range {v0 .. v5}, Lcom/panasonic/avc/cng/core/a/FocusCommand;->a(Lcom/panasonic/avc/cng/core/a/g$a;IIII)Lcom/panasonic/avc/cng/model/c/i;
 
     move-result-object v0
 
@@ -183,7 +183,7 @@
 
     const-string v1, "pinchCommon error."
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 12923
     :cond_1
@@ -307,9 +307,9 @@
     :try_start_0
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/e$a;->a:Lcom/panasonic/avc/cng/view/liveview/e;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/e;->n:Lcom/panasonic/avc/cng/core/a/g;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/e;->n:Lcom/panasonic/avc/cng/core/a/FocusCommand;
 
-    invoke-virtual {v0, p1, p2, p3}, Lcom/panasonic/avc/cng/core/a/g;->a(Lcom/panasonic/avc/cng/core/a/g$a;II)Lcom/panasonic/avc/cng/model/c/i;
+    invoke-virtual {v0, p1, p2, p3}, Lcom/panasonic/avc/cng/core/a/FocusCommand;->a(Lcom/panasonic/avc/cng/core/a/g$a;II)Lcom/panasonic/avc/cng/model/c/i;
 
     move-result-object v0
 
@@ -325,7 +325,7 @@
 
     const-string v2, "dragCommon error."
 
-    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 12982
     :cond_0
@@ -397,9 +397,9 @@
     :cond_0
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/e$a;->a:Lcom/panasonic/avc/cng/view/liveview/e;
 
-    iget-object v1, v1, Lcom/panasonic/avc/cng/view/liveview/e;->n:Lcom/panasonic/avc/cng/core/a/g;
+    iget-object v1, v1, Lcom/panasonic/avc/cng/view/liveview/e;->n:Lcom/panasonic/avc/cng/core/a/FocusCommand;
 
-    invoke-virtual {v1, v0, p1, p2, p3}, Lcom/panasonic/avc/cng/core/a/g;->a(Lcom/panasonic/avc/cng/core/a/g$j;Lcom/panasonic/avc/cng/core/a/g$i;II)Lcom/panasonic/avc/cng/model/c/i;
+    invoke-virtual {v1, v0, p1, p2, p3}, Lcom/panasonic/avc/cng/core/a/FocusCommand;->a(Lcom/panasonic/avc/cng/core/a/g$j;Lcom/panasonic/avc/cng/core/a/g$i;II)Lcom/panasonic/avc/cng/model/c/i;
 
     move-result-object v0
 
@@ -415,7 +415,7 @@
 
     const-string v1, "changeAssistModeCommon error."
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 13015
     :cond_1
@@ -455,7 +455,7 @@
     .line 12828
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/e$a;->a:Lcom/panasonic/avc/cng/view/liveview/e;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/e;->n:Lcom/panasonic/avc/cng/core/a/g;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/e;->n:Lcom/panasonic/avc/cng/core/a/FocusCommand;
 
     new-instance v1, Ljava/math/BigDecimal;
 
@@ -479,7 +479,7 @@
 
     move-result v1
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/core/a/g;->c(I)Lcom/panasonic/avc/cng/model/c/i;
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/core/a/FocusCommand;->c(I)Lcom/panasonic/avc/cng/model/c/i;
 
     move-result-object v0
 
@@ -495,7 +495,7 @@
 
     const-string v1, "changeScale error."
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 12848
     :cond_0
@@ -567,7 +567,7 @@
     :try_start_0
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/e$a;->a:Lcom/panasonic/avc/cng/view/liveview/e;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/e;->n:Lcom/panasonic/avc/cng/core/a/g;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/e;->n:Lcom/panasonic/avc/cng/core/a/FocusCommand;
 
     move-object v1, p1
 
@@ -579,7 +579,7 @@
 
     move v5, p5
 
-    invoke-virtual/range {v0 .. v5}, Lcom/panasonic/avc/cng/core/a/g;->a(Lcom/panasonic/avc/cng/core/a/g$a;IIII)Lcom/panasonic/avc/cng/model/c/i;
+    invoke-virtual/range {v0 .. v5}, Lcom/panasonic/avc/cng/core/a/FocusCommand;->a(Lcom/panasonic/avc/cng/core/a/g$a;IIII)Lcom/panasonic/avc/cng/model/c/i;
 
     move-result-object v0
 
@@ -595,7 +595,7 @@
 
     const-string v1, "pinchCommon error."
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 12952
     :cond_0

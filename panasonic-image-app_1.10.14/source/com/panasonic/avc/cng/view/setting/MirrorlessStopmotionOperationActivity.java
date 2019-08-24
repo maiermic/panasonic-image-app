@@ -28,13 +28,13 @@ import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.C1892f;
 import com.panasonic.avc.cng.model.service.C1985b;
 import com.panasonic.avc.cng.model.service.C1985b.C1986a;
-import com.panasonic.avc.cng.model.service.C2253z;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
 import com.panasonic.avc.cng.p038a.C1343b;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.view.common.C2820e;
 import com.panasonic.avc.cng.view.p073b.C2317a.C2325c;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
 import com.panasonic.avc.cng.view.p073b.C2337e;
 import com.panasonic.avc.cng.view.p073b.C2376f.C2377a;
 import com.panasonic.avc.cng.view.p073b.C2376f.C2378b;
@@ -43,20 +43,20 @@ import com.panasonic.avc.cng.view.parts.C4151e;
 import com.panasonic.avc.cng.view.parts.C4204j;
 import com.panasonic.avc.cng.view.parts.C4213l;
 import com.panasonic.avc.cng.view.parts.C4230p;
-import com.panasonic.avc.cng.view.parts.C4245t;
-import com.panasonic.avc.cng.view.parts.C4245t.C4252c;
-import com.panasonic.avc.cng.view.parts.C4245t.C4255e;
+import com.panasonic.avc.cng.view.parts.BrowserViewModel;
+import com.panasonic.avc.cng.view.parts.BrowserViewModel.C4252c;
+import com.panasonic.avc.cng.view.parts.BrowserViewModel.C4255e;
 import com.panasonic.avc.cng.view.parts.C4261w;
 import com.panasonic.avc.cng.view.play.browser.C4373a;
 import com.panasonic.avc.cng.view.play.browser.C4373a.C4402a;
-import com.panasonic.avc.cng.view.setting.C5537al.C5540a;
+import com.panasonic.avc.cng.view.setting.SettingMenuBaseActivity.C5540a;
 import com.panasonic.avc.cng.view.smartoperation.C5918d;
 
-public class MirrorlessStopmotionOperationActivity extends C5537al {
+public class MirrorlessStopmotionOperationActivity extends SettingMenuBaseActivity {
     /* access modifiers changed from: private */
 
     /* renamed from: a */
-    public C5464ad f16347a;
+    public MirrorlessStopmotionSmartOperationViewModel f16347a;
     /* access modifiers changed from: private */
 
     /* renamed from: b */
@@ -120,7 +120,7 @@ public class MirrorlessStopmotionOperationActivity extends C5537al {
             if (MirrorlessStopmotionOperationActivity.this._handler != null && !MirrorlessStopmotionOperationActivity.this.isFinishing()) {
                 MirrorlessStopmotionOperationActivity.this._handler.post(new Runnable() {
                     public void run() {
-                        C2331d.m10114a((Activity) MirrorlessStopmotionOperationActivity.this, C2328a.ON_DISCONNECT_NO_FINISH, (Bundle) null);
+                        DialogFactory.m10114a((Activity) MirrorlessStopmotionOperationActivity.this, C2328a.ON_DISCONNECT_NO_FINISH, (Bundle) null);
                     }
                 });
             }
@@ -149,7 +149,7 @@ public class MirrorlessStopmotionOperationActivity extends C5537al {
         public void mo10008a(int i, int i2) {
             MirrorlessStopmotionOperationActivity.this._handler.post(new Runnable() {
                 public void run() {
-                    C2331d.m10114a((Activity) MirrorlessStopmotionOperationActivity.this, C2328a.ON_EXCEEDED_MAX_SELECT_NUM, (Bundle) null);
+                    DialogFactory.m10114a((Activity) MirrorlessStopmotionOperationActivity.this, C2328a.ON_EXCEEDED_MAX_SELECT_NUM, (Bundle) null);
                 }
             });
         }
@@ -159,7 +159,7 @@ public class MirrorlessStopmotionOperationActivity extends C5537al {
             if (MirrorlessStopmotionOperationActivity.this.f16349c == null || MirrorlessStopmotionOperationActivity.this.f16347a == null) {
                 return null;
             }
-            C4245t k = MirrorlessStopmotionOperationActivity.this.f16347a.mo12161k();
+            BrowserViewModel k = MirrorlessStopmotionOperationActivity.this.f16347a.mo12161k();
             k.getClass();
             return new C4252c(MirrorlessStopmotionOperationActivity.this.f16349c.getFirstVisiblePosition(), MirrorlessStopmotionOperationActivity.this.f16349c.getLastVisiblePosition());
         }
@@ -202,32 +202,32 @@ public class MirrorlessStopmotionOperationActivity extends C5537al {
                         bundle.putInt(C2378b.NEGATIVE_BUTTON_TEXT_ID.name(), R.string.cmn_btn_cancel);
                         bundle.putInt(C2378b.MESSAGE_ID.name(), R.string.cmn_msg_just_a_moment);
                         bundle.putBoolean(C2377a.EXCLUDE_DISMISS.name(), true);
-                        C2331d.m10115a((Activity) MirrorlessStopmotionOperationActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT, bundle, (C2325c) new C2325c() {
+                        DialogFactory.m10115a((Activity) MirrorlessStopmotionOperationActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT, bundle, (C2325c) new C2325c() {
                             /* renamed from: a */
                             public void mo6131a() {
-                                C2331d.m10111a((Activity) MirrorlessStopmotionOperationActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT, (int) R.id.percent_num, (CharSequence) "0");
-                                C2331d.m10111a((Activity) MirrorlessStopmotionOperationActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT, (int) R.id.numerator, (CharSequence) "1");
-                                C2331d.m10111a((Activity) MirrorlessStopmotionOperationActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT, (int) R.id.denominator, (CharSequence) String.valueOf(MirrorlessStopmotionOperationActivity.this.f16347a.mo12161k().mo9983q().size()));
+                                DialogFactory.m10111a((Activity) MirrorlessStopmotionOperationActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT, (int) R.id.percent_num, (CharSequence) "0");
+                                DialogFactory.m10111a((Activity) MirrorlessStopmotionOperationActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT, (int) R.id.numerator, (CharSequence) "1");
+                                DialogFactory.m10111a((Activity) MirrorlessStopmotionOperationActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT, (int) R.id.denominator, (CharSequence) String.valueOf(MirrorlessStopmotionOperationActivity.this.f16347a.mo12161k().mo9983q().size()));
                             }
                         });
                         return;
                     }
                     Bundle bundle2 = new Bundle();
                     bundle2.putInt(C2378b.NEGATIVE_BUTTON_TEXT_ID.name(), R.string.cmn_btn_cancel);
-                    C2331d.m10114a((Activity) MirrorlessStopmotionOperationActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE, bundle2);
+                    DialogFactory.m10114a((Activity) MirrorlessStopmotionOperationActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE, bundle2);
                     return;
                 case 2:
-                    if (C2331d.m10125b((Activity) MirrorlessStopmotionOperationActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT)) {
-                        C2331d.m10104a((Activity) MirrorlessStopmotionOperationActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT, (int) R.id.progressBar2, i3);
-                        C2331d.m10111a((Activity) MirrorlessStopmotionOperationActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT, (int) R.id.percent_num, (CharSequence) String.valueOf(i3));
-                        C2331d.m10111a((Activity) MirrorlessStopmotionOperationActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT, (int) R.id.numerator, (CharSequence) String.valueOf(i2));
+                    if (DialogFactory.m10125b((Activity) MirrorlessStopmotionOperationActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT)) {
+                        DialogFactory.m10104a((Activity) MirrorlessStopmotionOperationActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT, (int) R.id.progressBar2, i3);
+                        DialogFactory.m10111a((Activity) MirrorlessStopmotionOperationActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT, (int) R.id.percent_num, (CharSequence) String.valueOf(i3));
+                        DialogFactory.m10111a((Activity) MirrorlessStopmotionOperationActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT, (int) R.id.numerator, (CharSequence) String.valueOf(i2));
                         return;
                     }
                     return;
                 case 4:
-                    C2331d.m10100a((Activity) MirrorlessStopmotionOperationActivity.this);
-                    if (C2331d.m10125b((Activity) MirrorlessStopmotionOperationActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT)) {
-                        C2331d.m10102a((Activity) MirrorlessStopmotionOperationActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT);
+                    DialogFactory.m10100a((Activity) MirrorlessStopmotionOperationActivity.this);
+                    if (DialogFactory.m10125b((Activity) MirrorlessStopmotionOperationActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT)) {
+                        DialogFactory.m10102a((Activity) MirrorlessStopmotionOperationActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT);
                     }
                     if (!(MirrorlessStopmotionOperationActivity.this.f16347a == null || MirrorlessStopmotionOperationActivity.this.f16350d == null)) {
                         MirrorlessStopmotionOperationActivity.this.f16347a.mo12161k().mo9960c(true);
@@ -239,9 +239,9 @@ public class MirrorlessStopmotionOperationActivity extends C5537al {
                     }
                     return;
                 case 5:
-                    C2331d.m10100a((Activity) MirrorlessStopmotionOperationActivity.this);
-                    if (C2331d.m10125b((Activity) MirrorlessStopmotionOperationActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT)) {
-                        C2331d.m10102a((Activity) MirrorlessStopmotionOperationActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT);
+                    DialogFactory.m10100a((Activity) MirrorlessStopmotionOperationActivity.this);
+                    if (DialogFactory.m10125b((Activity) MirrorlessStopmotionOperationActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT)) {
+                        DialogFactory.m10102a((Activity) MirrorlessStopmotionOperationActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT);
                     }
                     if (!(MirrorlessStopmotionOperationActivity.this.f16347a == null || MirrorlessStopmotionOperationActivity.this.f16350d == null)) {
                         MirrorlessStopmotionOperationActivity.this.f16347a.mo12161k().mo9960c(true);
@@ -250,16 +250,16 @@ public class MirrorlessStopmotionOperationActivity extends C5537al {
                     if (!(MirrorlessStopmotionOperationActivity.this.f16348b == null || MirrorlessStopmotionOperationActivity.this.f16347a == null)) {
                         MirrorlessStopmotionOperationActivity.this.f16348b.mo10232a(false, MirrorlessStopmotionOperationActivity.this.f16347a.mo12161k());
                     }
-                    C2331d.m10100a((Activity) MirrorlessStopmotionOperationActivity.this);
-                    C2331d.m10114a((Activity) MirrorlessStopmotionOperationActivity.this, C2328a.ON_BROWSE_ACTION_CANCEL, (Bundle) null);
+                    DialogFactory.m10100a((Activity) MirrorlessStopmotionOperationActivity.this);
+                    DialogFactory.m10114a((Activity) MirrorlessStopmotionOperationActivity.this, C2328a.ON_BROWSE_ACTION_CANCEL, (Bundle) null);
                     return;
                 case 6:
-                    C2331d.m10100a((Activity) MirrorlessStopmotionOperationActivity.this);
-                    if (C2331d.m10125b((Activity) MirrorlessStopmotionOperationActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT)) {
-                        C2331d.m10102a((Activity) MirrorlessStopmotionOperationActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT);
+                    DialogFactory.m10100a((Activity) MirrorlessStopmotionOperationActivity.this);
+                    if (DialogFactory.m10125b((Activity) MirrorlessStopmotionOperationActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT)) {
+                        DialogFactory.m10102a((Activity) MirrorlessStopmotionOperationActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT);
                     }
                     if (i2 == 0) {
-                        C2331d.m10114a((Activity) MirrorlessStopmotionOperationActivity.this, C2328a.ON_BROWSE_ACTION_ERROR_DELETE, (Bundle) null);
+                        DialogFactory.m10114a((Activity) MirrorlessStopmotionOperationActivity.this, C2328a.ON_BROWSE_ACTION_ERROR_DELETE, (Bundle) null);
                         return;
                     }
                     return;
@@ -324,7 +324,7 @@ public class MirrorlessStopmotionOperationActivity extends C5537al {
             if (MirrorlessStopmotionOperationActivity.this._handler != null) {
                 MirrorlessStopmotionOperationActivity.this._handler.post(new Runnable() {
                     public void run() {
-                        C2331d.m10100a((Activity) MirrorlessStopmotionOperationActivity.this);
+                        DialogFactory.m10100a((Activity) MirrorlessStopmotionOperationActivity.this);
                     }
                 });
             }
@@ -338,9 +338,9 @@ public class MirrorlessStopmotionOperationActivity extends C5537al {
         /* renamed from: a */
         public void mo11702a(String str) {
             if (str.equalsIgnoreCase("high")) {
-                C2331d.m10114a((Activity) MirrorlessStopmotionOperationActivity.this, C2328a.ON_DISCONNECT_BY_HIGH_TEMP_NO_FINISH, (Bundle) null);
+                DialogFactory.m10114a((Activity) MirrorlessStopmotionOperationActivity.this, C2328a.ON_DISCONNECT_BY_HIGH_TEMP_NO_FINISH, (Bundle) null);
             } else if (str.equalsIgnoreCase("assert")) {
-                C2331d.m10114a((Activity) MirrorlessStopmotionOperationActivity.this, C2328a.ON_ASEERT_TEMP_NO_FINISH, (Bundle) null);
+                DialogFactory.m10114a((Activity) MirrorlessStopmotionOperationActivity.this, C2328a.ON_ASEERT_TEMP_NO_FINISH, (Bundle) null);
             }
         }
 
@@ -351,7 +351,7 @@ public class MirrorlessStopmotionOperationActivity extends C5537al {
     }
 
     public void onCreate(Bundle bundle) {
-        C2261g.m9763a("MirrorlessStopmotionSmartOperationActivity", "onCreate");
+        ImageAppLog.debug("MirrorlessStopmotionSmartOperationActivity", "onCreate");
         C1712b.m6914a((Activity) this);
         super.onCreate(bundle);
         requestWindowFeature(1);
@@ -369,7 +369,7 @@ public class MirrorlessStopmotionOperationActivity extends C5537al {
             if (extras != null) {
                 str = extras.getString("StopMotionObjectIDKey");
             }
-            this.f16347a = new C5464ad(this, this._handler, this.f16350d, cVar, str);
+            this.f16347a = new MirrorlessStopmotionSmartOperationViewModel(this, this._handler, this.f16350d, cVar, str);
         }
         C5158b bVar = new C5158b();
         this.f16348b = this.f16347a.mo12166p();
@@ -389,11 +389,11 @@ public class MirrorlessStopmotionOperationActivity extends C5537al {
             if (this.f16347a.mo12154d()) {
                 this._handler.postDelayed(new Runnable() {
                     public void run() {
-                        C2331d.m10100a((Activity) MirrorlessStopmotionOperationActivity.this);
+                        DialogFactory.m10100a((Activity) MirrorlessStopmotionOperationActivity.this);
                     }
                 }, 2000);
             } else {
-                C2331d.m10114a((Activity) this, C2328a.WAIT_PROCESSING, (Bundle) null);
+                DialogFactory.m10114a((Activity) this, C2328a.WAIT_PROCESSING, (Bundle) null);
             }
             this.f16347a.mo12162l();
         }
@@ -402,7 +402,7 @@ public class MirrorlessStopmotionOperationActivity extends C5537al {
     /* access modifiers changed from: protected */
     public void onResume() {
         if (this.f16347a != null) {
-            C2261g.m9763a("MirrorlessStopmotionSmartOperationActivity", "viewModel.Resume()");
+            ImageAppLog.debug("MirrorlessStopmotionSmartOperationActivity", "viewModel.Resume()");
             if (this.f16347a.mo12167q()) {
                 this.f16347a.mo12149b(false);
             }
@@ -414,7 +414,7 @@ public class MirrorlessStopmotionOperationActivity extends C5537al {
     /* access modifiers changed from: protected */
     public void onPause() {
         if (this.f16347a != null) {
-            C2261g.m9763a("MirrorlessStopmotionSmartOperationActivity", "viewModel.Pause()");
+            ImageAppLog.debug("MirrorlessStopmotionSmartOperationActivity", "viewModel.Pause()");
             this.f16347a.mo12156f();
         }
         super.onPause();
@@ -447,7 +447,7 @@ public class MirrorlessStopmotionOperationActivity extends C5537al {
     }
 
     public void finish() {
-        C2820e.m11789a((C5464ad) null);
+        C2820e.m11789a((MirrorlessStopmotionSmartOperationViewModel) null);
         if (this.f16347a != null) {
             this.f16347a.mo3205a();
             this.f16347a = null;
@@ -577,7 +577,7 @@ public class MirrorlessStopmotionOperationActivity extends C5537al {
                             }
                             m19868a(extras);
                         } else if (i == 3 && i2 == -1) {
-                            C2261g.m9763a("MirrorlessStopmotionSmartOperationActivity", "viewModel.onActivityResult => OnPictureJumpResult()");
+                            ImageAppLog.debug("MirrorlessStopmotionSmartOperationActivity", "viewModel.onActivityResult => OnPictureJumpResult()");
                             m19870b(extras);
                         }
                     }
@@ -682,7 +682,7 @@ public class MirrorlessStopmotionOperationActivity extends C5537al {
     private void m19877e() {
         C1892f a = C1712b.m6919c().mo4896a();
         if (a != null) {
-            C1985b a2 = C2253z.m9679a(this._context, a);
+            C1985b a2 = ServiceFactory.m9679a(this._context, a);
             if (a2 != null) {
                 a2.mo5185a((C1986a) new C1986a() {
                     /* renamed from: a */
@@ -690,8 +690,8 @@ public class MirrorlessStopmotionOperationActivity extends C5537al {
                         if (MirrorlessStopmotionOperationActivity.this._handler != null) {
                             MirrorlessStopmotionOperationActivity.this._handler.post(new Runnable() {
                                 public void run() {
-                                    if (!C2331d.m10125b((Activity) MirrorlessStopmotionOperationActivity.this, C2328a.ON_SUBSCRIBE_UPDATE)) {
-                                        C2331d.m10114a((Activity) MirrorlessStopmotionOperationActivity.this, C2328a.ON_SUBSCRIBE_UPDATE, (Bundle) null);
+                                    if (!DialogFactory.m10125b((Activity) MirrorlessStopmotionOperationActivity.this, C2328a.ON_SUBSCRIBE_UPDATE)) {
+                                        DialogFactory.m10114a((Activity) MirrorlessStopmotionOperationActivity.this, C2328a.ON_SUBSCRIBE_UPDATE, (Bundle) null);
                                     }
                                 }
                             });
@@ -703,8 +703,8 @@ public class MirrorlessStopmotionOperationActivity extends C5537al {
                         if (MirrorlessStopmotionOperationActivity.this._handler != null) {
                             MirrorlessStopmotionOperationActivity.this._handler.post(new Runnable() {
                                 public void run() {
-                                    if (C2331d.m10125b((Activity) MirrorlessStopmotionOperationActivity.this, C2328a.ON_SUBSCRIBE_UPDATE)) {
-                                        C2331d.m10100a((Activity) MirrorlessStopmotionOperationActivity.this);
+                                    if (DialogFactory.m10125b((Activity) MirrorlessStopmotionOperationActivity.this, C2328a.ON_SUBSCRIBE_UPDATE)) {
+                                        DialogFactory.m10100a((Activity) MirrorlessStopmotionOperationActivity.this);
                                     }
                                 }
                             });
@@ -716,8 +716,8 @@ public class MirrorlessStopmotionOperationActivity extends C5537al {
                         if (MirrorlessStopmotionOperationActivity.this._handler != null) {
                             MirrorlessStopmotionOperationActivity.this._handler.post(new Runnable() {
                                 public void run() {
-                                    if (C2331d.m10125b((Activity) MirrorlessStopmotionOperationActivity.this, C2328a.ON_SUBSCRIBE_UPDATE)) {
-                                        C2331d.m10100a((Activity) MirrorlessStopmotionOperationActivity.this);
+                                    if (DialogFactory.m10125b((Activity) MirrorlessStopmotionOperationActivity.this, C2328a.ON_SUBSCRIBE_UPDATE)) {
+                                        DialogFactory.m10100a((Activity) MirrorlessStopmotionOperationActivity.this);
                                     }
                                 }
                             });

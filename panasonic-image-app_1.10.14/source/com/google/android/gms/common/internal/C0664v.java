@@ -3,7 +3,7 @@ package com.google.android.gms.common.internal;
 import android.os.IBinder;
 import android.os.IInterface;
 import android.os.Parcel;
-import com.google.android.gms.common.C0685u;
+import com.google.android.gms.common.GoogleCertificatesQuery;
 import com.google.android.gms.p034c.C0564a;
 import com.google.android.gms.p034c.C0564a.C0565a;
 import com.google.android.gms.p035d.C1059na;
@@ -46,7 +46,7 @@ public abstract class C0664v extends C1059na implements C0663u {
                 C1060nb.m4467a(parcel2, b2);
                 break;
             case 5:
-                boolean a3 = mo1728a((C0685u) C1060nb.m4464a(parcel, C0685u.CREATOR), C0565a.m2212a(parcel.readStrongBinder()));
+                boolean a3 = mo1728a((GoogleCertificatesQuery) C1060nb.m4464a(parcel, GoogleCertificatesQuery.CREATOR), C0565a.m2212a(parcel.readStrongBinder()));
                 parcel2.writeNoException();
                 C1060nb.m4467a(parcel2, a3);
                 break;

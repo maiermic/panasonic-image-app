@@ -87,7 +87,7 @@
 
     const-string v1, ""
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 111
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/a/a;->_tabMenuUtil:Lcom/panasonic/avc/cng/view/a/g;
@@ -101,9 +101,9 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/panasonic/avc/cng/view/play/a/a;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/d;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/view/play/a/a;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
-    invoke-virtual {v0, p0, v1, v2}, Lcom/panasonic/avc/cng/view/a/g;->e(Lcom/panasonic/avc/cng/view/a/b;Lcom/panasonic/avc/cng/view/a/c;Lcom/panasonic/avc/cng/view/a/d;)V
+    invoke-virtual {v0, p0, v1, v2}, Lcom/panasonic/avc/cng/view/a/g;->e(Lcom/panasonic/avc/cng/view/a/b;Lcom/panasonic/avc/cng/view/a/c;Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;)V
 
     .line 115
     :cond_0
@@ -119,7 +119,7 @@
 
     const-string v1, ""
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 137
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/a/a;->_tabMenuUtil:Lcom/panasonic/avc/cng/view/a/g;
@@ -133,9 +133,9 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/panasonic/avc/cng/view/play/a/a;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/d;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/view/play/a/a;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
-    invoke-virtual {v0, p0, v1, v2}, Lcom/panasonic/avc/cng/view/a/g;->OnClickHome(Lcom/panasonic/avc/cng/view/a/b;Lcom/panasonic/avc/cng/view/a/c;Lcom/panasonic/avc/cng/view/a/d;)V
+    invoke-virtual {v0, p0, v1, v2}, Lcom/panasonic/avc/cng/view/a/g;->OnClickHome(Lcom/panasonic/avc/cng/view/a/b;Lcom/panasonic/avc/cng/view/a/c;Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;)V
 
     .line 141
     :cond_0
@@ -151,7 +151,7 @@
 
     const-string v1, ""
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 98
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/a/a;->_tabMenuUtil:Lcom/panasonic/avc/cng/view/a/g;
@@ -165,9 +165,9 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/panasonic/avc/cng/view/play/a/a;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/d;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/view/play/a/a;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
-    invoke-virtual {v0, p0, v1, v2}, Lcom/panasonic/avc/cng/view/a/g;->d(Lcom/panasonic/avc/cng/view/a/b;Lcom/panasonic/avc/cng/view/a/c;Lcom/panasonic/avc/cng/view/a/d;)V
+    invoke-virtual {v0, p0, v1, v2}, Lcom/panasonic/avc/cng/view/a/g;->d(Lcom/panasonic/avc/cng/view/a/b;Lcom/panasonic/avc/cng/view/a/c;Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;)V
 
     .line 102
     :cond_0
@@ -183,7 +183,7 @@
 
     const-string v1, ""
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 124
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/a/a;->_tabMenuUtil:Lcom/panasonic/avc/cng/view/a/g;
@@ -258,7 +258,7 @@
 
     .prologue
     .line 176
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/a/a;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/a/a;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
     .line 177
     invoke-virtual {p0}, Lcom/panasonic/avc/cng/view/play/a/a;->GetViewModel()Lcom/panasonic/avc/cng/view/a/c;
@@ -272,7 +272,7 @@
     const/4 v2, 0x1
 
     .line 176
-    invoke-virtual {v0, p3, v1, v2}, Lcom/panasonic/avc/cng/view/a/d;->a(Landroid/content/Intent;Landroid/os/Bundle;Z)Z
+    invoke-virtual {v0, p3, v1, v2}, Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;->a(Landroid/content/Intent;Landroid/os/Bundle;Z)Z
 
     move-result v0
 
@@ -422,9 +422,9 @@
     if-nez v1, :cond_0
 
     .line 49
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/a/a;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/d;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/a/a;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/a/d;->f()Z
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;->f()Z
 
     move-result v1
 

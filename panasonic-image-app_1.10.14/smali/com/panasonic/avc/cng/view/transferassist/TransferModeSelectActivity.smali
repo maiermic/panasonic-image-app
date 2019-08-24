@@ -207,13 +207,13 @@
 
     .line 217
     :pswitch_1
-    invoke-static {}, Lcom/panasonic/avc/cng/application/a/b;->a()Lcom/panasonic/avc/cng/application/a/b;
+    invoke-static {}, Lcom/panasonic/avc/cng/application/a/GoogleTagManager;->a()Lcom/panasonic/avc/cng/application/a/GoogleTagManager;
 
     move-result-object v0
 
     const-string v1, "Batch Transfer"
 
-    invoke-virtual {v0, p0, v1}, Lcom/panasonic/avc/cng/application/a/b;->a(Landroid/content/Context;Ljava/lang/String;)V
+    invoke-virtual {v0, p0, v1}, Lcom/panasonic/avc/cng/application/a/GoogleTagManager;->a(Landroid/content/Context;Ljava/lang/String;)V
 
     .line 219
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/transferassist/TransferModeSelectActivity;->c:Landroid/widget/TextView;

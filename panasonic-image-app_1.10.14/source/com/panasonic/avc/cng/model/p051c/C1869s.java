@@ -1,6 +1,6 @@
 package com.panasonic.avc.cng.model.p051c;
 
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import java.util.ArrayList;
 import java.util.List;
 import org.xmlpull.v1.XmlPullParser;
@@ -37,7 +37,7 @@ public class C1869s extends C1843c {
             }
             return this.f5604d;
         } catch (Exception e) {
-            C2261g.m9769c(f5603a, e.getMessage());
+            ImageAppLog.error(f5603a, e.getMessage());
             throw e;
         }
     }
@@ -50,9 +50,9 @@ public class C1869s extends C1843c {
             String attributeValue2 = xmlPullParser.getAttributeValue(null, "enable");
             if (attributeValue2 == null || !attributeValue2.equalsIgnoreCase("no")) {
                 arrayList.add(attributeValue);
-                C2261g.m9771e(f5603a, "add:" + attributeValue);
+                ImageAppLog.info(f5603a, "add:" + attributeValue);
             } else {
-                C2261g.m9771e(f5603a, "ignore:" + attributeValue);
+                ImageAppLog.info(f5603a, "ignore:" + attributeValue);
             }
             int next = xmlPullParser.next();
             while (next != 3 && next != 1) {
@@ -62,7 +62,7 @@ public class C1869s extends C1843c {
                 next = xmlPullParser.next();
             }
         } catch (Exception e) {
-            C2261g.m9769c(f5603a, e.getMessage());
+            ImageAppLog.error(f5603a, e.getMessage());
         }
     }
 }

@@ -61,11 +61,11 @@
 
     .prologue
     .line 316
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v2
 
@@ -99,7 +99,7 @@
     .line 331
     iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/l/c$1;->f:Lcom/panasonic/avc/cng/model/service/l/c;
 
-    invoke-static {v1}, Lcom/panasonic/avc/cng/model/service/l/c;->a(Lcom/panasonic/avc/cng/model/service/l/c;)Lcom/panasonic/avc/cng/core/a/v;
+    invoke-static {v1}, Lcom/panasonic/avc/cng/model/service/l/c;->a(Lcom/panasonic/avc/cng/model/service/l/c;)Lcom/panasonic/avc/cng/core/a/MenuCommand;
 
     move-result-object v1
 
@@ -109,13 +109,13 @@
 
     iget-object v6, p0, Lcom/panasonic/avc/cng/model/service/l/c$1;->e:Ljava/lang/String;
 
-    invoke-virtual {v1, v4, v5, v6}, Lcom/panasonic/avc/cng/core/a/v;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lcom/panasonic/avc/cng/model/c/h;
+    invoke-virtual {v1, v4, v5, v6}, Lcom/panasonic/avc/cng/core/a/MenuCommand;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
     move-result-object v1
 
     .line 338
     :goto_0
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/model/c/h;->a()Z
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;->a()Z
 
     move-result v4
 
@@ -124,11 +124,11 @@
     .line 341
     iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/l/c$1;->f:Lcom/panasonic/avc/cng/model/service/l/c;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/l/c;->b(Lcom/panasonic/avc/cng/model/service/l/c;)Lcom/panasonic/avc/cng/core/a/ao;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/l/c;->b(Lcom/panasonic/avc/cng/model/service/l/c;)Lcom/panasonic/avc/cng/core/a/StatusCommand;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/ao;->e()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/StatusCommand;->e()Ljava/lang/String;
 
     move-result-object v0
 
@@ -136,7 +136,7 @@
     :cond_1
     iget-object v4, p0, Lcom/panasonic/avc/cng/model/service/l/c$1;->f:Lcom/panasonic/avc/cng/model/service/l/c;
 
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/model/c/h;->L()Ljava/lang/String;
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;->L()Ljava/lang/String;
 
     move-result-object v5
 
@@ -145,7 +145,7 @@
     .line 345
     iget-object v4, p0, Lcom/panasonic/avc/cng/model/service/l/c$1;->f:Lcom/panasonic/avc/cng/model/service/l/c;
 
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/model/c/h;->M()Ljava/lang/String;
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;->M()Ljava/lang/String;
 
     move-result-object v5
 
@@ -154,7 +154,7 @@
     .line 346
     iget-object v4, p0, Lcom/panasonic/avc/cng/model/service/l/c$1;->f:Lcom/panasonic/avc/cng/model/service/l/c;
 
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/model/c/h;->N()Ljava/lang/String;
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;->N()Ljava/lang/String;
 
     move-result-object v1
 
@@ -252,7 +252,7 @@
     :try_start_1
     iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/l/c$1;->f:Lcom/panasonic/avc/cng/model/service/l/c;
 
-    invoke-static {v1}, Lcom/panasonic/avc/cng/model/service/l/c;->a(Lcom/panasonic/avc/cng/model/service/l/c;)Lcom/panasonic/avc/cng/core/a/v;
+    invoke-static {v1}, Lcom/panasonic/avc/cng/model/service/l/c;->a(Lcom/panasonic/avc/cng/model/service/l/c;)Lcom/panasonic/avc/cng/core/a/MenuCommand;
 
     move-result-object v1
 
@@ -264,7 +264,7 @@
 
     iget-object v7, p0, Lcom/panasonic/avc/cng/model/service/l/c$1;->b:Ljava/lang/String;
 
-    invoke-virtual {v1, v4, v5, v6, v7}, Lcom/panasonic/avc/cng/core/a/v;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lcom/panasonic/avc/cng/model/c/h;
+    invoke-virtual {v1, v4, v5, v6, v7}, Lcom/panasonic/avc/cng/core/a/MenuCommand;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
     move-result-object v1
 

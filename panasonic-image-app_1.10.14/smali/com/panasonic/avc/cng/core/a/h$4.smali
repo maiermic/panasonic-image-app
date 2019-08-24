@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/core/a/h;->a(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
+    value = Lcom/panasonic/avc/cng/core/a/XmlNode;->a(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,16 +15,16 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/panasonic/avc/cng/core/a/h;
+.field final synthetic a:Lcom/panasonic/avc/cng/core/a/XmlNode;
 
 
 # direct methods
-.method constructor <init>(Lcom/panasonic/avc/cng/core/a/h;Ljava/io/InputStream;Ljava/lang/String;Ljava/lang/String;)V
+.method constructor <init>(Lcom/panasonic/avc/cng/core/a/XmlNode;Ljava/io/InputStream;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
 
     .prologue
     .line 639
-    iput-object p1, p0, Lcom/panasonic/avc/cng/core/a/h$4;->a:Lcom/panasonic/avc/cng/core/a/h;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/core/a/h$4;->a:Lcom/panasonic/avc/cng/core/a/XmlNode;
 
     invoke-direct {p0, p2, p3, p4}, Lorg/a/a/a/a/a/d;-><init>(Ljava/io/InputStream;Ljava/lang/String;Ljava/lang/String;)V
 
@@ -38,9 +38,9 @@
 
     .prologue
     .line 643
-    iget-object v0, p0, Lcom/panasonic/avc/cng/core/a/h$4;->a:Lcom/panasonic/avc/cng/core/a/h;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/core/a/h$4;->a:Lcom/panasonic/avc/cng/core/a/XmlNode;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/core/a/h;->d(Lcom/panasonic/avc/cng/core/a/h;)Lcom/panasonic/avc/cng/model/service/geotagservice/d;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/core/a/XmlNode;->d(Lcom/panasonic/avc/cng/core/a/XmlNode;)Lcom/panasonic/avc/cng/model/service/geotagservice/d;
 
     move-result-object v0
 

@@ -43,9 +43,9 @@
     .line 353
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/aw$a$2;->a:Lcom/panasonic/avc/cng/view/setting/aw$a;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/aw$a;->a:Lcom/panasonic/avc/cng/view/setting/aw;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/aw$a;->a:Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewSceneGuideSelectViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/aw;->b(Lcom/panasonic/avc/cng/view/setting/aw;)Lcom/panasonic/avc/cng/view/setting/am$h;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewSceneGuideSelectViewModel;->b(Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewSceneGuideSelectViewModel;)Lcom/panasonic/avc/cng/view/setting/am$h;
 
     move-result-object v0
 
@@ -54,9 +54,9 @@
     .line 354
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/aw$a$2;->a:Lcom/panasonic/avc/cng/view/setting/aw$a;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/aw$a;->a:Lcom/panasonic/avc/cng/view/setting/aw;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/aw$a;->a:Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewSceneGuideSelectViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/aw;->b(Lcom/panasonic/avc/cng/view/setting/aw;)Lcom/panasonic/avc/cng/view/setting/am$h;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewSceneGuideSelectViewModel;->b(Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewSceneGuideSelectViewModel;)Lcom/panasonic/avc/cng/view/setting/am$h;
 
     move-result-object v0
 
@@ -65,17 +65,17 @@
     .line 355
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/aw$a$2;->a:Lcom/panasonic/avc/cng/view/setting/aw$a;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/aw$a;->a:Lcom/panasonic/avc/cng/view/setting/aw;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/aw$a;->a:Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewSceneGuideSelectViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/aw;->g(Lcom/panasonic/avc/cng/view/setting/aw;)Lcom/panasonic/avc/cng/view/setting/aw$b;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewSceneGuideSelectViewModel;->g(Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewSceneGuideSelectViewModel;)Lcom/panasonic/avc/cng/view/setting/aw$b;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/aw$a$2;->a:Lcom/panasonic/avc/cng/view/setting/aw$a;
 
-    iget-object v1, v1, Lcom/panasonic/avc/cng/view/setting/aw$a;->a:Lcom/panasonic/avc/cng/view/setting/aw;
+    iget-object v1, v1, Lcom/panasonic/avc/cng/view/setting/aw$a;->a:Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewSceneGuideSelectViewModel;
 
-    invoke-static {v1}, Lcom/panasonic/avc/cng/view/setting/aw;->f(Lcom/panasonic/avc/cng/view/setting/aw;)I
+    invoke-static {v1}, Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewSceneGuideSelectViewModel;->f(Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewSceneGuideSelectViewModel;)I
 
     move-result v1
 

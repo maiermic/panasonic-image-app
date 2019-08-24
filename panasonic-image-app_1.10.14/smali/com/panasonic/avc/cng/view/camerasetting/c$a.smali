@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/panasonic/avc/cng/view/camerasetting/c;
+    value = Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,28 +18,28 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/panasonic/avc/cng/view/camerasetting/c;
+.field final synthetic a:Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;
 
 
 # direct methods
-.method private constructor <init>(Lcom/panasonic/avc/cng/view/camerasetting/c;)V
+.method private constructor <init>(Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;)V
     .locals 0
 
     .prologue
     .line 192
-    iput-object p1, p0, Lcom/panasonic/avc/cng/view/camerasetting/c$a;->a:Lcom/panasonic/avc/cng/view/camerasetting/c;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/view/camerasetting/c$a;->a:Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/panasonic/avc/cng/view/camerasetting/c;Lcom/panasonic/avc/cng/view/camerasetting/c$1;)V
+.method synthetic constructor <init>(Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;Lcom/panasonic/avc/cng/view/camerasetting/c$1;)V
     .locals 0
 
     .prologue
     .line 192
-    invoke-direct {p0, p1}, Lcom/panasonic/avc/cng/view/camerasetting/c$a;-><init>(Lcom/panasonic/avc/cng/view/camerasetting/c;)V
+    invoke-direct {p0, p1}, Lcom/panasonic/avc/cng/view/camerasetting/c$a;-><init>(Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;)V
 
     return-void
 .end method
@@ -55,21 +55,21 @@
 
     const-string v1, "onBleScanStart"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 280
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/c$a;->a:Lcom/panasonic/avc/cng/view/camerasetting/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/c$a;->a:Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/camerasetting/c;->a(Lcom/panasonic/avc/cng/view/camerasetting/c;)Lcom/panasonic/avc/cng/model/service/j$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;->a(Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;)Lcom/panasonic/avc/cng/model/service/j$a;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 282
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/c$a;->a:Lcom/panasonic/avc/cng/view/camerasetting/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/c$a;->a:Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/camerasetting/c;->a(Lcom/panasonic/avc/cng/view/camerasetting/c;)Lcom/panasonic/avc/cng/model/service/j$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;->a(Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;)Lcom/panasonic/avc/cng/model/service/j$a;
 
     move-result-object v0
 
@@ -89,21 +89,21 @@
 
     const-string v1, "onBleDisconnected"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 207
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/c$a;->a:Lcom/panasonic/avc/cng/view/camerasetting/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/c$a;->a:Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/camerasetting/c;->a(Lcom/panasonic/avc/cng/view/camerasetting/c;)Lcom/panasonic/avc/cng/model/service/j$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;->a(Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;)Lcom/panasonic/avc/cng/model/service/j$a;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 209
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/c$a;->a:Lcom/panasonic/avc/cng/view/camerasetting/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/c$a;->a:Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/camerasetting/c;->a(Lcom/panasonic/avc/cng/view/camerasetting/c;)Lcom/panasonic/avc/cng/model/service/j$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;->a(Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;)Lcom/panasonic/avc/cng/model/service/j$a;
 
     move-result-object v0
 
@@ -123,21 +123,21 @@
 
     const-string v1, "onBleScanResult"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 235
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/c$a;->a:Lcom/panasonic/avc/cng/view/camerasetting/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/c$a;->a:Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/camerasetting/c;->a(Lcom/panasonic/avc/cng/view/camerasetting/c;)Lcom/panasonic/avc/cng/model/service/j$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;->a(Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;)Lcom/panasonic/avc/cng/model/service/j$a;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 237
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/c$a;->a:Lcom/panasonic/avc/cng/view/camerasetting/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/c$a;->a:Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/camerasetting/c;->a(Lcom/panasonic/avc/cng/view/camerasetting/c;)Lcom/panasonic/avc/cng/model/service/j$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;->a(Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;)Lcom/panasonic/avc/cng/model/service/j$a;
 
     move-result-object v0
 
@@ -157,21 +157,21 @@
 
     const-string v1, "onBleNotification"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 262
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/c$a;->a:Lcom/panasonic/avc/cng/view/camerasetting/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/c$a;->a:Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/camerasetting/c;->a(Lcom/panasonic/avc/cng/view/camerasetting/c;)Lcom/panasonic/avc/cng/model/service/j$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;->a(Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;)Lcom/panasonic/avc/cng/model/service/j$a;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 264
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/c$a;->a:Lcom/panasonic/avc/cng/view/camerasetting/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/c$a;->a:Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/camerasetting/c;->a(Lcom/panasonic/avc/cng/view/camerasetting/c;)Lcom/panasonic/avc/cng/model/service/j$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;->a(Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;)Lcom/panasonic/avc/cng/model/service/j$a;
 
     move-result-object v0
 
@@ -191,21 +191,21 @@
 
     const-string v1, "onBleCopyStatus"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 298
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/c$a;->a:Lcom/panasonic/avc/cng/view/camerasetting/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/c$a;->a:Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/camerasetting/c;->a(Lcom/panasonic/avc/cng/view/camerasetting/c;)Lcom/panasonic/avc/cng/model/service/j$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;->a(Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;)Lcom/panasonic/avc/cng/model/service/j$a;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 300
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/c$a;->a:Lcom/panasonic/avc/cng/view/camerasetting/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/c$a;->a:Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/camerasetting/c;->a(Lcom/panasonic/avc/cng/view/camerasetting/c;)Lcom/panasonic/avc/cng/model/service/j$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;->a(Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;)Lcom/panasonic/avc/cng/model/service/j$a;
 
     move-result-object v0
 
@@ -225,21 +225,21 @@
 
     const-string v1, "onBleWrite"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 253
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/c$a;->a:Lcom/panasonic/avc/cng/view/camerasetting/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/c$a;->a:Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/camerasetting/c;->a(Lcom/panasonic/avc/cng/view/camerasetting/c;)Lcom/panasonic/avc/cng/model/service/j$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;->a(Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;)Lcom/panasonic/avc/cng/model/service/j$a;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 255
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/c$a;->a:Lcom/panasonic/avc/cng/view/camerasetting/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/c$a;->a:Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/camerasetting/c;->a(Lcom/panasonic/avc/cng/view/camerasetting/c;)Lcom/panasonic/avc/cng/model/service/j$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;->a(Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;)Lcom/panasonic/avc/cng/model/service/j$a;
 
     move-result-object v0
 
@@ -259,21 +259,21 @@
 
     const-string v1, "onBleReadEnd"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 244
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/c$a;->a:Lcom/panasonic/avc/cng/view/camerasetting/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/c$a;->a:Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/camerasetting/c;->a(Lcom/panasonic/avc/cng/view/camerasetting/c;)Lcom/panasonic/avc/cng/model/service/j$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;->a(Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;)Lcom/panasonic/avc/cng/model/service/j$a;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 246
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/c$a;->a:Lcom/panasonic/avc/cng/view/camerasetting/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/c$a;->a:Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/camerasetting/c;->a(Lcom/panasonic/avc/cng/view/camerasetting/c;)Lcom/panasonic/avc/cng/model/service/j$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;->a(Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;)Lcom/panasonic/avc/cng/model/service/j$a;
 
     move-result-object v0
 
@@ -293,21 +293,21 @@
 
     const-string v1, "onBleConnected"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 198
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/c$a;->a:Lcom/panasonic/avc/cng/view/camerasetting/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/c$a;->a:Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/camerasetting/c;->a(Lcom/panasonic/avc/cng/view/camerasetting/c;)Lcom/panasonic/avc/cng/model/service/j$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;->a(Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;)Lcom/panasonic/avc/cng/model/service/j$a;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 200
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/c$a;->a:Lcom/panasonic/avc/cng/view/camerasetting/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/c$a;->a:Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/camerasetting/c;->a(Lcom/panasonic/avc/cng/view/camerasetting/c;)Lcom/panasonic/avc/cng/model/service/j$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;->a(Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;)Lcom/panasonic/avc/cng/model/service/j$a;
 
     move-result-object v0
 
@@ -327,21 +327,21 @@
 
     const-string v1, "onBleConnectStart"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 271
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/c$a;->a:Lcom/panasonic/avc/cng/view/camerasetting/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/c$a;->a:Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/camerasetting/c;->a(Lcom/panasonic/avc/cng/view/camerasetting/c;)Lcom/panasonic/avc/cng/model/service/j$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;->a(Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;)Lcom/panasonic/avc/cng/model/service/j$a;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 273
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/c$a;->a:Lcom/panasonic/avc/cng/view/camerasetting/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/c$a;->a:Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/camerasetting/c;->a(Lcom/panasonic/avc/cng/view/camerasetting/c;)Lcom/panasonic/avc/cng/model/service/j$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;->a(Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;)Lcom/panasonic/avc/cng/model/service/j$a;
 
     move-result-object v0
 
@@ -361,21 +361,21 @@
 
     const-string v1, "onBleNotificationEnable"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 307
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/c$a;->a:Lcom/panasonic/avc/cng/view/camerasetting/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/c$a;->a:Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/camerasetting/c;->a(Lcom/panasonic/avc/cng/view/camerasetting/c;)Lcom/panasonic/avc/cng/model/service/j$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;->a(Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;)Lcom/panasonic/avc/cng/model/service/j$a;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 309
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/c$a;->a:Lcom/panasonic/avc/cng/view/camerasetting/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/c$a;->a:Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/camerasetting/c;->a(Lcom/panasonic/avc/cng/view/camerasetting/c;)Lcom/panasonic/avc/cng/model/service/j$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;->a(Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;)Lcom/panasonic/avc/cng/model/service/j$a;
 
     move-result-object v0
 
@@ -395,21 +395,21 @@
 
     const-string v1, "onBleConnectTimeOut"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 289
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/c$a;->a:Lcom/panasonic/avc/cng/view/camerasetting/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/c$a;->a:Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/camerasetting/c;->a(Lcom/panasonic/avc/cng/view/camerasetting/c;)Lcom/panasonic/avc/cng/model/service/j$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;->a(Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;)Lcom/panasonic/avc/cng/model/service/j$a;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 291
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/c$a;->a:Lcom/panasonic/avc/cng/view/camerasetting/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/c$a;->a:Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/camerasetting/c;->a(Lcom/panasonic/avc/cng/view/camerasetting/c;)Lcom/panasonic/avc/cng/model/service/j$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;->a(Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;)Lcom/panasonic/avc/cng/model/service/j$a;
 
     move-result-object v0
 
@@ -429,21 +429,21 @@
 
     const-string v1, "onBleConnectError"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 217
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/c$a;->a:Lcom/panasonic/avc/cng/view/camerasetting/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/c$a;->a:Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/camerasetting/c;->a(Lcom/panasonic/avc/cng/view/camerasetting/c;)Lcom/panasonic/avc/cng/model/service/j$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;->a(Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;)Lcom/panasonic/avc/cng/model/service/j$a;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 219
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/c$a;->a:Lcom/panasonic/avc/cng/view/camerasetting/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/c$a;->a:Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/camerasetting/c;->a(Lcom/panasonic/avc/cng/view/camerasetting/c;)Lcom/panasonic/avc/cng/model/service/j$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;->a(Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;)Lcom/panasonic/avc/cng/model/service/j$a;
 
     move-result-object v0
 
@@ -463,21 +463,21 @@
 
     const-string v1, "onBleServicePrepared"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 316
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/c$a;->a:Lcom/panasonic/avc/cng/view/camerasetting/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/c$a;->a:Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/camerasetting/c;->a(Lcom/panasonic/avc/cng/view/camerasetting/c;)Lcom/panasonic/avc/cng/model/service/j$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;->a(Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;)Lcom/panasonic/avc/cng/model/service/j$a;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 318
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/c$a;->a:Lcom/panasonic/avc/cng/view/camerasetting/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/c$a;->a:Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/camerasetting/c;->a(Lcom/panasonic/avc/cng/view/camerasetting/c;)Lcom/panasonic/avc/cng/model/service/j$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;->a(Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;)Lcom/panasonic/avc/cng/model/service/j$a;
 
     move-result-object v0
 
@@ -497,21 +497,21 @@
 
     const-string v1, "onBleScanResultError"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 325
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/c$a;->a:Lcom/panasonic/avc/cng/view/camerasetting/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/c$a;->a:Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/camerasetting/c;->a(Lcom/panasonic/avc/cng/view/camerasetting/c;)Lcom/panasonic/avc/cng/model/service/j$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;->a(Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;)Lcom/panasonic/avc/cng/model/service/j$a;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 327
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/c$a;->a:Lcom/panasonic/avc/cng/view/camerasetting/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/c$a;->a:Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/camerasetting/c;->a(Lcom/panasonic/avc/cng/view/camerasetting/c;)Lcom/panasonic/avc/cng/model/service/j$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;->a(Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;)Lcom/panasonic/avc/cng/model/service/j$a;
 
     move-result-object v0
 
@@ -531,21 +531,21 @@
 
     const-string v1, "onAutoSendAcctrlDone"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 343
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/c$a;->a:Lcom/panasonic/avc/cng/view/camerasetting/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/c$a;->a:Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/camerasetting/c;->a(Lcom/panasonic/avc/cng/view/camerasetting/c;)Lcom/panasonic/avc/cng/model/service/j$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;->a(Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;)Lcom/panasonic/avc/cng/model/service/j$a;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 345
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/c$a;->a:Lcom/panasonic/avc/cng/view/camerasetting/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/c$a;->a:Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/camerasetting/c;->a(Lcom/panasonic/avc/cng/view/camerasetting/c;)Lcom/panasonic/avc/cng/model/service/j$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;->a(Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;)Lcom/panasonic/avc/cng/model/service/j$a;
 
     move-result-object v0
 

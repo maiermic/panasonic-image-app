@@ -148,11 +148,11 @@
     iput-object v2, p0, Lcom/panasonic/avc/cng/view/a/e;->i:Ljava/util/List;
 
     .line 156
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v2
 
-    invoke-virtual {v2}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v2}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v2
 
@@ -771,7 +771,7 @@
 
     const-string v4, ""
 
-    invoke-static {v3, v4}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v3, v4}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -784,11 +784,11 @@
 
     .line 351
     :cond_8
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
@@ -912,7 +912,7 @@
 
     const-string v4, ""
 
-    invoke-static {v3, v4}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v3, v4}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     goto/16 :goto_3
 
@@ -947,7 +947,7 @@
 
     const-string v4, ""
 
-    invoke-static {v3, v4}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v3, v4}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     goto/16 :goto_3
 
@@ -976,7 +976,7 @@
 
     const-string v4, ""
 
-    invoke-static {v3, v4}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v3, v4}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     goto/16 :goto_3
 
@@ -1005,7 +1005,7 @@
 
     const-string v4, ""
 
-    invoke-static {v3, v4}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v3, v4}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
 

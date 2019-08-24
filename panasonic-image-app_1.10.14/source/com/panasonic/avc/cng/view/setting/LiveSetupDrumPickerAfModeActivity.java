@@ -9,7 +9,7 @@ import com.panasonic.avc.cng.model.C1892f;
 import com.panasonic.avc.cng.model.p052d.C1879a;
 import com.panasonic.avc.cng.model.service.C1985b;
 import com.panasonic.avc.cng.model.service.C1985b.C1986a;
-import com.panasonic.avc.cng.model.service.C2253z;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
 import com.panasonic.avc.cng.view.parts.C4003af;
 import com.panasonic.avc.cng.view.parts.C4021aj;
@@ -18,7 +18,7 @@ import com.panasonic.avc.cng.view.parts.C4021aj.C4035c;
 import com.panasonic.avc.cng.view.setting.C5541am.C5543a;
 import com.panasonic.avc.cng.view.setting.C5541am.C5560m;
 
-public class LiveSetupDrumPickerAfModeActivity extends C5804u {
+public class LiveSetupDrumPickerAfModeActivity extends LiveSetupLumixMirrorlessBaseActivity {
     /* access modifiers changed from: private */
 
     /* renamed from: n */
@@ -135,7 +135,7 @@ public class LiveSetupDrumPickerAfModeActivity extends C5804u {
                                 public void run() {
                                     C1892f a = C1712b.m6919c().mo4896a();
                                     if (a != null) {
-                                        C1985b a2 = C2253z.m9679a(LiveSetupDrumPickerAfModeActivity.this._context, a);
+                                        C1985b a2 = ServiceFactory.m9679a(LiveSetupDrumPickerAfModeActivity.this._context, a);
                                         if (a2 != null) {
                                             a2.mo5185a((C1986a) new C1986a() {
                                                 /* renamed from: a */
@@ -182,7 +182,7 @@ public class LiveSetupDrumPickerAfModeActivity extends C5804u {
                                 public void run() {
                                     C1892f a = C1712b.m6919c().mo4896a();
                                     if (a != null) {
-                                        C1985b a2 = C2253z.m9679a(LiveSetupDrumPickerAfModeActivity.this._context, a);
+                                        C1985b a2 = ServiceFactory.m9679a(LiveSetupDrumPickerAfModeActivity.this._context, a);
                                         if (a2 != null) {
                                             a2.mo5185a((C1986a) new C1986a() {
                                                 /* renamed from: a */

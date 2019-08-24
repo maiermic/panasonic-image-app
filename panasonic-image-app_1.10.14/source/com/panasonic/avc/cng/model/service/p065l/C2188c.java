@@ -1,13 +1,13 @@
 package com.panasonic.avc.cng.model.service.p065l;
 
-import com.panasonic.avc.cng.core.p040a.C1468ao;
-import com.panasonic.avc.cng.core.p040a.C1540v;
+import com.panasonic.avc.cng.core.p040a.StatusCommand;
+import com.panasonic.avc.cng.core.p040a.MenuCommand;
 import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.C1892f;
 import com.panasonic.avc.cng.model.C1910l;
 import com.panasonic.avc.cng.model.p051c.C1835a;
 import com.panasonic.avc.cng.model.p051c.C1844d;
-import com.panasonic.avc.cng.model.p051c.C1853h;
+import com.panasonic.avc.cng.model.p051c.ParseTagHighlightSceneInfo;
 import com.panasonic.avc.cng.model.p051c.C1860l;
 import com.panasonic.avc.cng.model.p051c.C1861m;
 import com.panasonic.avc.cng.model.p051c.C1862n;
@@ -25,11 +25,11 @@ public class C2188c implements C1985b {
     /* access modifiers changed from: private */
 
     /* renamed from: c */
-    public C1540v f6789c = null;
+    public MenuCommand f6789c = null;
     /* access modifiers changed from: private */
 
     /* renamed from: d */
-    public C1468ao f6790d = null;
+    public StatusCommand f6790d = null;
     /* access modifiers changed from: private */
 
     /* renamed from: e */
@@ -158,10 +158,10 @@ public class C2188c implements C1985b {
         C1892f a = C1712b.m6919c().mo4896a();
         if (a != null) {
             if (this.f6789c == null) {
-                this.f6789c = new C1540v(a.f5682d);
+                this.f6789c = new MenuCommand(a.f5682d);
             }
             if (this.f6790d == null) {
-                this.f6790d = new C1468ao(a.f5682d);
+                this.f6790d = new StatusCommand(a.f5682d);
             }
             final C1986a aVar2 = aVar;
             final String str5 = str4;
@@ -170,7 +170,7 @@ public class C2188c implements C1985b {
             final String str8 = str3;
             new Thread(new Runnable() {
                 public void run() {
-                    C1853h e;
+                    ParseTagHighlightSceneInfo e;
                     C1892f a = C1712b.m6919c().mo4896a();
                     String str = null;
                     if (aVar2 != null) {
@@ -213,7 +213,7 @@ public class C2188c implements C1985b {
         C1892f a = C1712b.m6919c().mo4896a();
         if (a != null) {
             if (this.f6790d == null) {
-                this.f6790d = new C1468ao(a.f5682d);
+                this.f6790d = new StatusCommand(a.f5682d);
             }
             new Thread(new Runnable() {
                 public void run() {

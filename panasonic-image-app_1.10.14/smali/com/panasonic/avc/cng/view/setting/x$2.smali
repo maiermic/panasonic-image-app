@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/view/setting/x;->a(Ljava/lang/String;Lcom/panasonic/avc/cng/view/setting/x$a;)V
+    value = Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieGainViewModel;->a(Ljava/lang/String;Lcom/panasonic/avc/cng/view/setting/x$a;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -22,16 +22,16 @@
 
 .field final synthetic b:Lcom/panasonic/avc/cng/view/setting/x$a;
 
-.field final synthetic c:Lcom/panasonic/avc/cng/view/setting/x;
+.field final synthetic c:Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieGainViewModel;
 
 
 # direct methods
-.method constructor <init>(Lcom/panasonic/avc/cng/view/setting/x;Ljava/lang/String;Lcom/panasonic/avc/cng/view/setting/x$a;)V
+.method constructor <init>(Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieGainViewModel;Ljava/lang/String;Lcom/panasonic/avc/cng/view/setting/x$a;)V
     .locals 0
 
     .prologue
     .line 218
-    iput-object p1, p0, Lcom/panasonic/avc/cng/view/setting/x$2;->c:Lcom/panasonic/avc/cng/view/setting/x;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/view/setting/x$2;->c:Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieGainViewModel;
 
     iput-object p2, p0, Lcom/panasonic/avc/cng/view/setting/x$2;->a:Ljava/lang/String;
 
@@ -49,11 +49,11 @@
 
     .prologue
     .line 224
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
@@ -95,7 +95,7 @@
 
     .line 231
     :try_start_0
-    invoke-static {v0}, Lcom/panasonic/avc/cng/core/a/al;->a(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/core/a/StaticHttpCommand;->a(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -107,7 +107,7 @@
 
     const-string v3, "Cmd() is null...."
 
-    invoke-static {v2, v3}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v2, v3}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 236
     :cond_0
@@ -123,21 +123,21 @@
     invoke-direct {v1, v0, v2}, Lcom/panasonic/avc/cng/model/c/t;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 240
-    iget-object v2, p0, Lcom/panasonic/avc/cng/view/setting/x$2;->c:Lcom/panasonic/avc/cng/view/setting/x;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/view/setting/x$2;->c:Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieGainViewModel;
 
     invoke-virtual {v1}, Lcom/panasonic/avc/cng/model/c/t;->c()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-static {v2, v1}, Lcom/panasonic/avc/cng/view/setting/x;->a(Lcom/panasonic/avc/cng/view/setting/x;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2, v1}, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieGainViewModel;->a(Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieGainViewModel;Ljava/lang/String;)Ljava/lang/String;
 
     .line 242
-    new-instance v1, Lcom/panasonic/avc/cng/model/c/h;
+    new-instance v1, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
-    invoke-direct {v1, v0}, Lcom/panasonic/avc/cng/model/c/h;-><init>(Ljava/lang/String;)V
+    invoke-direct {v1, v0}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;-><init>(Ljava/lang/String;)V
 
     .line 243
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/model/c/h;->a()Z
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;->a()Z
 
     move-result v0
 

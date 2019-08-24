@@ -44,7 +44,7 @@
     return-object v1
 .end method
 
-.method public final a(Lcom/google/android/gms/common/u;Lcom/google/android/gms/c/a;)Z
+.method public final a(Lcom/google/android/gms/common/GoogleCertificatesQuery;Lcom/google/android/gms/c/a;)Z
     .locals 2
 
     invoke-virtual {p0}, Lcom/google/android/gms/common/internal/w;->c()Landroid/os/Parcel;

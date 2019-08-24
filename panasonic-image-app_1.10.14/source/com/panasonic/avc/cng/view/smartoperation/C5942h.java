@@ -12,9 +12,9 @@ import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.C1892f;
 import com.panasonic.avc.cng.model.C1909k;
 import com.panasonic.avc.cng.model.service.C2028e;
-import com.panasonic.avc.cng.model.service.C2253z;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
 import com.panasonic.avc.cng.model.service.p056c.C2020c;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.view.parts.C4262x;
 import com.panasonic.avc.cng.view.setting.C5424a;
 import com.panasonic.avc.cng.view.smartoperation.PicmateSendActivity.C5872b;
@@ -185,7 +185,7 @@ public class C5942h extends C5424a {
 
     /* renamed from: g */
     public void mo12987g() {
-        this.f16905f = C2253z.m9677a(this.f18156m, this.f18157n);
+        this.f16905f = ServiceFactory.m9677a(this.f18156m, this.f18157n);
     }
 
     /* renamed from: a */
@@ -426,7 +426,7 @@ public class C5942h extends C5424a {
     public void mo12975a(boolean z, boolean z2) {
         if (this.f18168y != null) {
             if (!z) {
-                C2028e a = C2253z.m9680a(this.f18156m, false);
+                C2028e a = ServiceFactory.m9680a(this.f18156m, false);
                 if (a != null) {
                     a.mo5270a(true, true);
                 }
@@ -446,7 +446,7 @@ public class C5942h extends C5424a {
     /* access modifiers changed from: protected */
     /* renamed from: q */
     public void mo12997q() {
-        C2028e a = C2253z.m9680a(this.f18156m, false);
+        C2028e a = ServiceFactory.m9680a(this.f18156m, false);
         if (a != null) {
             a.mo5282f();
         }
@@ -481,7 +481,7 @@ public class C5942h extends C5424a {
     /* access modifiers changed from: protected */
     /* renamed from: a */
     public void mo12971a(String str, String str2) {
-        C2028e a = C2253z.m9680a(this.f18156m, false);
+        C2028e a = ServiceFactory.m9680a(this.f18156m, false);
         if (a != null) {
             a.mo5283g();
         }
@@ -493,7 +493,7 @@ public class C5942h extends C5424a {
 
     /* renamed from: c */
     public void mo12982c(String str) {
-        C2028e a = C2253z.m9680a(this.f18156m, false);
+        C2028e a = ServiceFactory.m9680a(this.f18156m, false);
         if (a != null) {
             a.mo5283g();
         }
@@ -529,9 +529,9 @@ public class C5942h extends C5424a {
             }
             this.f18160q = list;
             if (this.f18160q == null) {
-                C2261g.m9763a("★WifiConnectDialog:", "ResultList=NULL");
+                ImageAppLog.debug("★WifiConnectDialog:", "ResultList=NULL");
             } else {
-                C2261g.m9763a("★WifiConnectDialog:", "ResultList.size=" + String.valueOf(this.f18160q.size()));
+                ImageAppLog.debug("★WifiConnectDialog:", "ResultList.size=" + String.valueOf(this.f18160q.size()));
             }
             if (bVar != null) {
                 if (this.f18160q != null) {
@@ -566,7 +566,7 @@ public class C5942h extends C5424a {
                 boolean z = false;
                 while (!z && j <= 60000 && this.f18154C) {
                     z = this.f18168y.mo5312e(this.f18156m);
-                    C2261g.m9763a("WiFiUtility", "ConnectWiFi:not connected yet time:" + String.valueOf(j));
+                    ImageAppLog.debug("WiFiUtility", "ConnectWiFi:not connected yet time:" + String.valueOf(j));
                     if (!z) {
                         j += 500;
                         mo12977b(500);
@@ -611,7 +611,7 @@ public class C5942h extends C5424a {
                     boolean z = false;
                     while (!z && j <= 60000 && this.f18154C) {
                         z = this.f18168y.mo5312e(this.f18156m);
-                        C2261g.m9763a("WiFiUtility", "ConnectWiFi:not connected yet time:" + String.valueOf(j));
+                        ImageAppLog.debug("WiFiUtility", "ConnectWiFi:not connected yet time:" + String.valueOf(j));
                         if (!z) {
                             j += 500;
                             mo12977b(500);

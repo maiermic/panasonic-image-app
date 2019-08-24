@@ -16,10 +16,10 @@ import android.view.ViewGroup;
 import android.widget.ListView;
 import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.C1712b;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
-import com.panasonic.avc.cng.view.setting.C5537al.C5540a;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
+import com.panasonic.avc.cng.view.setting.SettingMenuBaseActivity.C5540a;
 import com.panasonic.avc.cng.view.usages.UsagesSettingActivity;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -42,7 +42,7 @@ public class AppSettingActivity extends C5741i {
                 if (C1712b.m6920d().mo4908b().mo4903c()) {
                     findPreference.setOnPreferenceClickListener(new OnPreferenceClickListener() {
                         public boolean onPreferenceClick(Preference preference) {
-                            C2261g.m9760a(3178498, "");
+                            ImageAppLog.m9760a(3178498, "");
                             C4856a.this.getActivity().startActivityForResult(new Intent(C4856a.this.getActivity(), NetworkNameSettingActivity.class), 7);
                             return false;
                         }
@@ -53,9 +53,9 @@ public class AppSettingActivity extends C5741i {
             }
             findPreference("remoteWatch").setOnPreferenceClickListener(new OnPreferenceClickListener() {
                 public boolean onPreferenceClick(Preference preference) {
-                    C2261g.m9760a(3178497, "");
+                    ImageAppLog.m9760a(3178497, "");
                     if (VERSION.SDK_INT < 21) {
-                        C2331d.m10114a(C4856a.this.getActivity(), C2328a.DIALOG_ID_UNSUPPORTED, (Bundle) null);
+                        DialogFactory.m10114a(C4856a.this.getActivity(), C2328a.DIALOG_ID_UNSUPPORTED, (Bundle) null);
                     } else {
                         C4856a.this.getActivity().startActivityForResult(new Intent(C4856a.this.getActivity(), RemoteWatchSettingActivity.class), 7);
                     }
@@ -64,7 +64,7 @@ public class AppSettingActivity extends C5741i {
             });
             findPreference("Usages").setOnPreferenceClickListener(new OnPreferenceClickListener() {
                 public boolean onPreferenceClick(Preference preference) {
-                    C2261g.m9760a(3178499, "");
+                    ImageAppLog.m9760a(3178499, "");
                     C4856a.this.getActivity().startActivityForResult(new Intent(C4856a.this.getActivity(), UsagesSettingActivity.class), 7);
                     return false;
                 }
@@ -98,7 +98,7 @@ public class AppSettingActivity extends C5741i {
             String[] split = getString(R.string.version_switch_date).split("/");
             Calendar instance = Calendar.getInstance();
             instance.set(Integer.parseInt(split[0]), Integer.parseInt(split[1]) - 1, Integer.parseInt(split[2]));
-            C2261g.m9763a(getClass().getSimpleName(), "[NOTICE] Version switch date = " + new SimpleDateFormat("yyyy/MM/dd", Locale.getDefault()).format(instance.getTime()));
+            ImageAppLog.debug(getClass().getSimpleName(), "[NOTICE] Version switch date = " + new SimpleDateFormat("yyyy/MM/dd", Locale.getDefault()).format(instance.getTime()));
             if (System.currentTimeMillis() >= instance.getTimeInMillis()) {
                 PreferenceScreen preferenceScreen = getPreferenceScreen();
                 Preference findPreference = findPreference("ImageApp.Build.Version");

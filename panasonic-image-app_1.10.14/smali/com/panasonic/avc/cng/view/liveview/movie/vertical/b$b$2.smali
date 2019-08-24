@@ -43,23 +43,23 @@
     .line 1531
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$b$2;->a:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$b;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$b;->a:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$b;->a:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;->d(Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;)V
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;->d(Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;)V
 
     .line 1534
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$b$2;->a:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$b;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$b;->a:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$b;->a:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;->c(Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;)V
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;->c(Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;)V
 
     .line 1537
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$b$2;->a:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$b;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$b;->a:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$b;->a:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;->e(Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;)V
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;->e(Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;)V
 
     .line 1538
     return-void

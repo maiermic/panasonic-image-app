@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/view/parts/ab;->b()Landroid/widget/LinearLayout;
+    value = Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;->b()Landroid/widget/LinearLayout;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/panasonic/avc/cng/view/parts/ab;
+.field final synthetic a:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
 .field private b:Landroid/graphics/Paint;
 
@@ -23,12 +23,12 @@
 
 
 # direct methods
-.method constructor <init>(Lcom/panasonic/avc/cng/view/parts/ab;Landroid/content/Context;)V
+.method constructor <init>(Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;Landroid/content/Context;)V
     .locals 1
 
     .prologue
     .line 431
-    iput-object p1, p0, Lcom/panasonic/avc/cng/view/parts/ab$3;->a:Lcom/panasonic/avc/cng/view/parts/ab;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/view/parts/ab$3;->a:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
     invoke-direct {p0, p2}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;)V
 
@@ -73,9 +73,9 @@
     if-nez v0, :cond_0
 
     .line 439
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ab$3;->a:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ab$3;->a:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/parts/ab;->c(Lcom/panasonic/avc/cng/view/parts/ab;)F
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;->c(Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;)F
 
     move-result v2
 
@@ -278,18 +278,18 @@
     invoke-virtual {v8, v10, v0, v2}, Landroid/graphics/Canvas;->rotate(FFF)V
 
     .line 457
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ab$3;->a:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ab$3;->a:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/parts/ab;->d(Lcom/panasonic/avc/cng/view/parts/ab;)I
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;->d(Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;)I
 
     move-result v0
 
     if-nez v0, :cond_0
 
     .line 458
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ab$3;->a:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ab$3;->a:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
-    invoke-static {v0, p0, v8}, Lcom/panasonic/avc/cng/view/parts/ab;->a(Lcom/panasonic/avc/cng/view/parts/ab;Landroid/view/View;Landroid/graphics/Canvas;)V
+    invoke-static {v0, p0, v8}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;->a(Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;Landroid/view/View;Landroid/graphics/Canvas;)V
 
     .line 462
     :cond_0

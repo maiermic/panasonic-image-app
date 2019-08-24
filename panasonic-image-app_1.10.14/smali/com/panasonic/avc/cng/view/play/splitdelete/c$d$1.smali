@@ -43,25 +43,25 @@
     .line 641
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/c$d$1;->a:Lcom/panasonic/avc/cng/view/play/splitdelete/c$d;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/splitdelete/c$d;->a:Lcom/panasonic/avc/cng/view/play/splitdelete/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/splitdelete/c$d;->a:Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/splitdelete/c;->a(Lcom/panasonic/avc/cng/view/play/splitdelete/c;)Lcom/panasonic/avc/cng/view/play/splitdelete/c$c;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;->a(Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;)Lcom/panasonic/avc/cng/view/play/splitdelete/c$c;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/c$d$1;->a:Lcom/panasonic/avc/cng/view/play/splitdelete/c$d;
 
-    iget-object v1, v1, Lcom/panasonic/avc/cng/view/play/splitdelete/c$d;->a:Lcom/panasonic/avc/cng/view/play/splitdelete/c;
+    iget-object v1, v1, Lcom/panasonic/avc/cng/view/play/splitdelete/c$d;->a:Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;
 
-    invoke-static {v1}, Lcom/panasonic/avc/cng/view/play/splitdelete/c;->c(Lcom/panasonic/avc/cng/view/play/splitdelete/c;)I
+    invoke-static {v1}, Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;->c(Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;)I
 
     move-result v1
 
     iget-object v2, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/c$d$1;->a:Lcom/panasonic/avc/cng/view/play/splitdelete/c$d;
 
-    iget-object v2, v2, Lcom/panasonic/avc/cng/view/play/splitdelete/c$d;->a:Lcom/panasonic/avc/cng/view/play/splitdelete/c;
+    iget-object v2, v2, Lcom/panasonic/avc/cng/view/play/splitdelete/c$d;->a:Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;
 
-    invoke-static {v2}, Lcom/panasonic/avc/cng/view/play/splitdelete/c;->d(Lcom/panasonic/avc/cng/view/play/splitdelete/c;)I
+    invoke-static {v2}, Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;->d(Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;)I
 
     move-result v2
 

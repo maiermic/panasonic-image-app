@@ -57,7 +57,7 @@
 
     const/4 v2, 0x0
 
-    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     .line 505
     return-void
@@ -74,7 +74,7 @@
 
     const-string v1, "OnDmsDisconnected"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->verbose(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 592
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity$a;->a:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;
@@ -97,7 +97,7 @@
 
     sget-object v1, Lcom/panasonic/avc/cng/view/b/b$a;->b:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {v0, v1, v3}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {v0, v1, v3}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     .line 613
     :goto_0
@@ -109,7 +109,7 @@
 
     sget-object v1, Lcom/panasonic/avc/cng/view/b/b$a;->b:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {v0, v1, v3}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {v0, v1, v3}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     goto :goto_0
 
@@ -119,7 +119,7 @@
 
     sget-object v1, Lcom/panasonic/avc/cng/view/b/b$a;->Q:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {v0, v1, v3}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {v0, v1, v3}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     goto :goto_0
 
@@ -153,7 +153,7 @@
 
     sget-object v1, Lcom/panasonic/avc/cng/view/b/b$a;->Q:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     .line 628
     :cond_0
@@ -175,7 +175,7 @@
 
     sget-object v1, Lcom/panasonic/avc/cng/view/b/b$a;->ct:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     goto :goto_0
 .end method
@@ -203,7 +203,7 @@
     .line 518
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity$a;->a:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;)V
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;)V
 
     .line 521
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity$a;->a:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;
@@ -212,7 +212,7 @@
 
     const/4 v2, 0x0
 
-    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     .line 549
     :goto_0
@@ -231,27 +231,27 @@
     .line 526
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity$a;->a:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;->a(Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;)Lcom/panasonic/avc/cng/view/threebox/c;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;->a(Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;)Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/threebox/c;->e()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;->e()V
 
     .line 529
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity$a;->a:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;->a(Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;)Lcom/panasonic/avc/cng/view/threebox/c;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;->a(Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;)Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/threebox/c;->f()I
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;->f()I
 
     move-result v1
 
     .line 530
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity$a;->a:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;->a(Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;)Lcom/panasonic/avc/cng/view/threebox/c;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;->a(Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;)Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;
 
     move-result-object v2
 
@@ -263,7 +263,7 @@
 
     check-cast v0, Lcom/panasonic/avc/cng/model/f;
 
-    invoke-virtual {v2, v1, v0}, Lcom/panasonic/avc/cng/view/threebox/c;->a(ILcom/panasonic/avc/cng/model/f;)V
+    invoke-virtual {v2, v1, v0}, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;->a(ILcom/panasonic/avc/cng/model/f;)V
 
     goto :goto_0
 
@@ -271,7 +271,7 @@
     :cond_1
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity$a;->a:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;)V
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;)V
 
     .line 538
     new-instance v0, Landroid/os/Bundle;
@@ -289,11 +289,11 @@
 
     iget-object v3, p0, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity$a;->a:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;
 
-    invoke-static {v3}, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;->a(Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;)Lcom/panasonic/avc/cng/view/threebox/c;
+    invoke-static {v3}, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;->a(Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;)Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;
 
     move-result-object v3
 
-    invoke-static {v2, v3}, Lcom/panasonic/avc/cng/view/b/e;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/threebox/c;)[Ljava/lang/String;
+    invoke-static {v2, v3}, Lcom/panasonic/avc/cng/view/b/e;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;)[Ljava/lang/String;
 
     move-result-object v2
 
@@ -308,7 +308,7 @@
 
     invoke-direct {v3, p0}, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity$a$1;-><init>(Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity$a;)V
 
-    invoke-static {v1, v2, v0, v3}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;Lcom/panasonic/avc/cng/view/b/a$c;)V
+    invoke-static {v1, v2, v0, v3}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;Lcom/panasonic/avc/cng/view/b/a$c;)V
 
     goto :goto_0
 .end method
@@ -322,7 +322,7 @@
 
     const-string v1, "OnDmrConnected"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->verbose(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 557
     return-void
@@ -337,16 +337,16 @@
 
     const-string v1, "OnDmsConnected"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->verbose(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 567
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity$a;->a:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;->a(Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;)Lcom/panasonic/avc/cng/view/threebox/c;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;->a(Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;)Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/threebox/c;->d()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;->d()V
 
     .line 568
     return-void
@@ -361,7 +361,7 @@
 
     const-string v1, "OnDmrDisconnected"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->verbose(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 580
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity$a;->a:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;
@@ -370,7 +370,7 @@
 
     const/4 v2, 0x0
 
-    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     .line 581
     return-void
@@ -385,12 +385,12 @@
 
     const-string v1, "OnModeChangeError"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->verbose(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 637
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity$a;->a:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;)V
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;)V
 
     .line 642
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity$a;->a:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;
@@ -399,7 +399,7 @@
 
     const/4 v2, 0x0
 
-    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     .line 643
     return-void
@@ -414,12 +414,12 @@
 
     const-string v1, "OnPlayStarted"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->verbose(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 652
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity$a;->a:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;)V
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;)V
 
     .line 653
     return-void
@@ -432,7 +432,7 @@
     .line 660
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity$a;->a:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;)V
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;)V
 
     .line 663
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity$a;->a:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;
@@ -441,7 +441,7 @@
 
     const/4 v2, 0x0
 
-    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     .line 664
     return-void
@@ -485,7 +485,7 @@
     .line 687
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity$a;->a:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;)V
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;)V
 
     .line 690
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity$a;->a:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxActivity;
@@ -494,7 +494,7 @@
 
     const/4 v2, 0x0
 
-    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     .line 691
     return-void

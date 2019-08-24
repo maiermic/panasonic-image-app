@@ -4,7 +4,7 @@ import android.content.Intent;
 import android.text.TextUtils;
 import com.google.firebase.messaging.C1335a;
 import com.google.firebase.messaging.FirebaseMessagingService;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import java.util.Map;
 
 public class ImageAppMessagingService extends FirebaseMessagingService {
@@ -13,7 +13,7 @@ public class ImageAppMessagingService extends FirebaseMessagingService {
         Map a = aVar.mo3188a();
         if (a != null && a.size() != 0) {
             String str = (String) a.get("loc-key");
-            C2261g.m9763a("FirebaseMessaging", getClass().getSimpleName() + "#onMessageReceived: loc-key = " + str);
+            ImageAppLog.debug("FirebaseMessaging", getClass().getSimpleName() + "#onMessageReceived: loc-key = " + str);
             if (!TextUtils.isEmpty(str)) {
                 int identifier = getResources().getIdentifier(str, "string", getPackageName());
                 if (identifier != 0) {

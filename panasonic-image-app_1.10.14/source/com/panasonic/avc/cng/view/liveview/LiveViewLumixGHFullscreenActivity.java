@@ -21,17 +21,17 @@ import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.C1892f;
 import com.panasonic.avc.cng.model.C1897j.C1903f;
 import com.panasonic.avc.cng.model.p051c.C1844d;
-import com.panasonic.avc.cng.model.p051c.C1846e;
+import com.panasonic.avc.cng.model.p051c.CameraStatus;
 import com.panasonic.avc.cng.model.p051c.C1860l;
 import com.panasonic.avc.cng.model.service.C1985b;
-import com.panasonic.avc.cng.model.service.C2253z;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
 import com.panasonic.avc.cng.util.C2266l;
 import com.panasonic.avc.cng.view.liveview.C2936a.C2937a;
 import com.panasonic.avc.cng.view.liveview.C3271k.C3336c;
 import com.panasonic.avc.cng.view.liveview.C3895p.C3899b;
-import com.panasonic.avc.cng.view.liveview.C3900q.C3901a;
+import com.panasonic.avc.cng.view.liveview.SlideButton.C3901a;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
 import com.panasonic.avc.cng.view.parts.fullscreen.C4165a;
 import com.panasonic.avc.cng.view.parts.fullscreen.C4166b;
 import com.panasonic.avc.cng.view.parts.fullscreen.C4167c;
@@ -45,9 +45,9 @@ import com.panasonic.avc.cng.view.parts.fullscreen.C4178h;
 import com.panasonic.avc.cng.view.parts.fullscreen.FullscreenPicker;
 import com.panasonic.avc.cng.view.setting.C5541am;
 import com.panasonic.avc.cng.view.setting.C5541am.C5563o;
-import com.panasonic.avc.cng.view.setting.C5780o;
-import com.panasonic.avc.cng.view.setting.C5792s;
-import com.panasonic.avc.cng.view.setting.C5804u.C5806a;
+import com.panasonic.avc.cng.view.setting.LiveSetupDrumPickerFandSSViewModel;
+import com.panasonic.avc.cng.view.setting.LiveSetupDrumPickerWhiteBalanceViewModel;
+import com.panasonic.avc.cng.view.setting.LiveSetupLumixMirrorlessBaseActivity.C5806a;
 
 public class LiveViewLumixGHFullscreenActivity extends LiveViewLumixGHActivity implements C3899b {
     /* access modifiers changed from: private */
@@ -309,14 +309,14 @@ public class LiveViewLumixGHFullscreenActivity extends LiveViewLumixGHActivity i
         /* renamed from: a */
         public void mo7032a(boolean z) {
             if (z) {
-                C2331d.m10114a((Activity) LiveViewLumixGHFullscreenActivity.this, C2328a.ON_PROGRESS, (Bundle) null);
+                DialogFactory.m10114a((Activity) LiveViewLumixGHFullscreenActivity.this, C2328a.ON_PROGRESS, (Bundle) null);
             }
         }
 
         /* renamed from: c */
         public void mo7034c() {
-            if (C2331d.m10125b((Activity) LiveViewLumixGHFullscreenActivity.this, C2328a.ON_PROGRESS)) {
-                C2331d.m10100a((Activity) LiveViewLumixGHFullscreenActivity.this);
+            if (DialogFactory.m10125b((Activity) LiveViewLumixGHFullscreenActivity.this, C2328a.ON_PROGRESS)) {
+                DialogFactory.m10100a((Activity) LiveViewLumixGHFullscreenActivity.this);
             }
         }
 
@@ -337,7 +337,7 @@ public class LiveViewLumixGHFullscreenActivity extends LiveViewLumixGHActivity i
         this.f8899D.mo7131a((C2937a) new C2886e());
         this.f8907w = C1712b.m6919c().mo4896a();
         if (this.f8907w != null) {
-            this.f8908x = C2253z.m9679a(this._context, this.f8907w);
+            this.f8908x = ServiceFactory.m9679a(this._context, this.f8907w);
             C2883c cVar = new C2883c();
             this.f8909y = (FullscreenPicker) findViewById(R.id.picker_setting);
             this.f8909y.setOnSelectListener(cVar);
@@ -360,7 +360,7 @@ public class LiveViewLumixGHFullscreenActivity extends LiveViewLumixGHActivity i
             if (!(defaultSharedPreferences.getBoolean("FullScreenQVGAFirst", false) || this.f8907w.f5693o == null || this.f8907w.f5693o.f5575b == null)) {
                 C1860l lVar = (C1860l) this.f8907w.f5693o.f5575b.get("menu_item_id_liveview_quality");
                 if (!(lVar == null || lVar.f5569c == null || !lVar.f5569c.equalsIgnoreCase("qvga"))) {
-                    C2331d.m10114a((Activity) this, C2328a.ON_ERROR_FULLSCREEN_QVGA, (Bundle) null);
+                    DialogFactory.m10114a((Activity) this, C2328a.ON_ERROR_FULLSCREEN_QVGA, (Bundle) null);
                     defaultSharedPreferences.edit().putBoolean("FullScreenQVGAFirst", true).apply();
                 }
             }
@@ -391,12 +391,12 @@ public class LiveViewLumixGHFullscreenActivity extends LiveViewLumixGHActivity i
     /* access modifiers changed from: protected */
     /* renamed from: o */
     public C3895p mo7017o() {
-        C3900q qVar = new C3900q(this.f9043a.f9494gx);
+        SlideButton qVar = new SlideButton(this.f9043a.f9494gx);
         qVar.mo9150a((C3901a) new C3901a() {
             /* renamed from: a */
             public void mo7024a() {
                 if (LiveViewLumixGHFullscreenActivity.this.f9043a == null || (!LiveViewLumixGHFullscreenActivity.this.f9043a.mo7314aH() && !LiveViewLumixGHFullscreenActivity.this.f9043a.mo7312aF() && !LiveViewLumixGHFullscreenActivity.this.f9043a.mo7395bc() && !LiveViewLumixGHFullscreenActivity.this.f9043a.mo7396bd() && !LiveViewLumixGHFullscreenActivity.this.f9043a.mo7397be() && !LiveViewLumixGHFullscreenActivity.this.f9043a.mo7393ba())) {
-                    C1846e i = C2253z.m9680a(LiveViewLumixGHFullscreenActivity.this._context, true).mo5285i();
+                    CameraStatus i = ServiceFactory.m9680a(LiveViewLumixGHFullscreenActivity.this._context, true).mo5285i();
                     if (i == null || !i.mo4663L().equalsIgnoreCase("on")) {
                         new Thread() {
                             public void run() {
@@ -422,7 +422,7 @@ public class LiveViewLumixGHFullscreenActivity extends LiveViewLumixGHActivity i
     /* renamed from: a */
     public void mo7014a(int i, String str) {
         boolean z;
-        C5780o oVar;
+        LiveSetupDrumPickerFandSSViewModel oVar;
         int i2;
         C4171b bVar;
         if (this.f8907w != null && this.f8908x != null && this.f8903s != C2885d.Preparing && this.f8903s != C2885d.Prepared) {
@@ -440,7 +440,7 @@ public class LiveViewLumixGHFullscreenActivity extends LiveViewLumixGHActivity i
                     switch (this.f8902r) {
                         case WhiteBalance:
                             C4178h hVar = new C4178h(this);
-                            hVar.mo9851a(new C5792s(this._context, this._handler, this.f9046d, new C2887f()));
+                            hVar.mo9851a(new LiveSetupDrumPickerWhiteBalanceViewModel(this._context, this._handler, this.f9046d, new C2887f()));
                             i2 = R.drawable.meter_title_wb;
                             bVar = hVar;
                             break;
@@ -470,9 +470,9 @@ public class LiveViewLumixGHFullscreenActivity extends LiveViewLumixGHActivity i
                         z = false;
                     }
                     if (equalsIgnoreCase) {
-                        oVar = new C5780o(this._context, this._handler, new C2887f(), this.f9046d);
+                        oVar = new LiveSetupDrumPickerFandSSViewModel(this._context, this._handler, new C2887f(), this.f9046d);
                     } else {
-                        oVar = new C5780o(this._context, this._handler, new C2887f());
+                        oVar = new LiveSetupDrumPickerFandSSViewModel(this._context, this._handler, new C2887f());
                     }
                     C4177g gVar = new C4177g(this, i, z2, oVar, this.f8905u, z, this.f8906v);
                     gVar.mo9851a(oVar);

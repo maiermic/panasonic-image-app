@@ -1,6 +1,6 @@
 package com.panasonic.avc.cng.model.p051c;
 
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 
 /* renamed from: com.panasonic.avc.cng.model.c.w */
 public class C1873w {
@@ -113,7 +113,7 @@ public class C1873w {
                 }
             }
         } catch (Exception e) {
-            C2261g.m9769c("ParseDocument", e.getMessage());
+            ImageAppLog.error("ParseDocument", e.getMessage());
             throw e;
         }
     }

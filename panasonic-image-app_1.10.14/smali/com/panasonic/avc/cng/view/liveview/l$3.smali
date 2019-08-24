@@ -50,11 +50,11 @@
 
     .line 348
     .line 351
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v4
 
@@ -62,18 +62,18 @@
     if-eqz v4, :cond_5
 
     .line 355
-    new-instance v0, Lcom/panasonic/avc/cng/core/a/aq;
+    new-instance v0, Lcom/panasonic/avc/cng/core/a/StopMotionCommand;
 
     iget-object v2, v4, Lcom/panasonic/avc/cng/model/f;->d:Ljava/lang/String;
 
-    invoke-direct {v0, v2}, Lcom/panasonic/avc/cng/core/a/aq;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v2}, Lcom/panasonic/avc/cng/core/a/StopMotionCommand;-><init>(Ljava/lang/String;)V
 
     .line 356
     const-string v2, "stop"
 
     const/4 v5, 0x0
 
-    invoke-virtual {v0, v2, v5}, Lcom/panasonic/avc/cng/core/a/aq;->f(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-virtual {v0, v2, v5}, Lcom/panasonic/avc/cng/core/a/StopMotionCommand;->f(Ljava/lang/String;Ljava/lang/String;)I
 
     move-result v0
 
@@ -96,11 +96,11 @@
     if-ne v3, v2, :cond_3
 
     .line 375
-    new-instance v3, Lcom/panasonic/avc/cng/core/a/ao;
+    new-instance v3, Lcom/panasonic/avc/cng/core/a/StatusCommand;
 
     iget-object v4, v4, Lcom/panasonic/avc/cng/model/f;->d:Ljava/lang/String;
 
-    invoke-direct {v3, v4}, Lcom/panasonic/avc/cng/core/a/ao;-><init>(Ljava/lang/String;)V
+    invoke-direct {v3, v4}, Lcom/panasonic/avc/cng/core/a/StatusCommand;-><init>(Ljava/lang/String;)V
 
     .line 376
     :goto_2
@@ -109,7 +109,7 @@
     if-ge v1, v4, :cond_3
 
     .line 380
-    invoke-virtual {v3}, Lcom/panasonic/avc/cng/core/a/ao;->b()Lcom/panasonic/avc/cng/model/c/e;
+    invoke-virtual {v3}, Lcom/panasonic/avc/cng/core/a/StatusCommand;->b()Lcom/panasonic/avc/cng/model/c/CameraStatus;
 
     move-result-object v4
 
@@ -156,7 +156,7 @@
 
     .line 385
     :cond_1
-    invoke-virtual {v4}, Lcom/panasonic/avc/cng/model/c/e;->I()Ljava/lang/String;
+    invoke-virtual {v4}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->I()Ljava/lang/String;
 
     move-result-object v4
 

@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/model/service/g/a;->a(Ljava/util/List;Lcom/panasonic/avc/cng/model/service/n$b;)V
+    value = Lcom/panasonic/avc/cng/model/service/g/MultiPhotoService;->a(Ljava/util/List;Lcom/panasonic/avc/cng/model/service/n$b;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,16 +20,16 @@
 # instance fields
 .field final synthetic a:Lcom/panasonic/avc/cng/model/service/n$b;
 
-.field final synthetic b:Lcom/panasonic/avc/cng/model/service/g/a;
+.field final synthetic b:Lcom/panasonic/avc/cng/model/service/g/MultiPhotoService;
 
 
 # direct methods
-.method constructor <init>(Lcom/panasonic/avc/cng/model/service/g/a;Lcom/panasonic/avc/cng/model/service/n$b;)V
+.method constructor <init>(Lcom/panasonic/avc/cng/model/service/g/MultiPhotoService;Lcom/panasonic/avc/cng/model/service/n$b;)V
     .locals 0
 
     .prologue
     .line 109
-    iput-object p1, p0, Lcom/panasonic/avc/cng/model/service/g/a$1;->b:Lcom/panasonic/avc/cng/model/service/g/a;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/model/service/g/a$1;->b:Lcom/panasonic/avc/cng/model/service/g/MultiPhotoService;
 
     iput-object p2, p0, Lcom/panasonic/avc/cng/model/service/g/a$1;->a:Lcom/panasonic/avc/cng/model/service/n$b;
 

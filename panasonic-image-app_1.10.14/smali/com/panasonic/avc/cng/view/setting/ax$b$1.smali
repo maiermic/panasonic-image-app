@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/view/setting/ax$b;->a(Lcom/panasonic/avc/cng/model/c/e;)V
+    value = Lcom/panasonic/avc/cng/view/setting/ax$b;->a(Lcom/panasonic/avc/cng/model/c/CameraStatus;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -43,9 +43,9 @@
     .line 720
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ax$b$1;->a:Lcom/panasonic/avc/cng/view/setting/ax$b;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/ax$b;->a:Lcom/panasonic/avc/cng/view/setting/ax;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/ax$b;->a:Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/ax;->a(Lcom/panasonic/avc/cng/view/setting/ax;)Lcom/panasonic/avc/cng/view/setting/ax$c;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;->a(Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;)Lcom/panasonic/avc/cng/view/setting/ax$c;
 
     move-result-object v0
 

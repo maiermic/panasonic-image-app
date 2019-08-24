@@ -110,12 +110,12 @@
     return-object v0
 .end method
 
-.method static synthetic e(Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/a;)Lcom/panasonic/avc/cng/view/a/d;
+.method static synthetic e(Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/a;)Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
     .locals 1
 
     .prologue
     .line 39
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/a;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/a;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
     return-object v0
 .end method
@@ -130,12 +130,12 @@
     return-object v0
 .end method
 
-.method static synthetic g(Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/a;)Lcom/panasonic/avc/cng/view/a/d;
+.method static synthetic g(Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/a;)Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
     .locals 1
 
     .prologue
     .line 39
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/a;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/a;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
     return-object v0
 .end method
@@ -150,12 +150,12 @@
     return v0
 .end method
 
-.method static synthetic i(Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/a;)Lcom/panasonic/avc/cng/view/a/d;
+.method static synthetic i(Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/a;)Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
     .locals 1
 
     .prologue
     .line 39
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/a;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/a;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
     return-object v0
 .end method
@@ -179,7 +179,7 @@
 
     const-string v1, "GetViewModel()"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->verbose(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 230
     :cond_0
@@ -219,7 +219,7 @@
     .line 247
     sget-object v1, Lcom/panasonic/avc/cng/view/b/b$a;->bs:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {p0, v1, v2}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {p0, v1, v2}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     goto :goto_0
 
@@ -262,7 +262,7 @@
     :cond_3
     sget-object v1, Lcom/panasonic/avc/cng/view/b/b$a;->ca:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {p0, v1, v2}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {p0, v1, v2}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     goto :goto_0
 
@@ -282,7 +282,7 @@
 
     const-string v1, ""
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 391
     invoke-virtual {p0}, Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/a;->isLog()Z
@@ -297,7 +297,7 @@
 
     const-string v1, "OnClickPanChilterChange()"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->verbose(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 392
     :cond_0
@@ -334,7 +334,7 @@
 
     const-string v1, "OnClickPanChilterOff()"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->verbose(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 405
     :cond_0
@@ -371,7 +371,7 @@
 
     const-string v1, "OnClickPause()"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->verbose(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 371
     :cond_0
@@ -419,7 +419,7 @@
 
     const-string v1, "OnClickRecMPan()"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->verbose(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 310
     :cond_0
@@ -530,14 +530,14 @@
 
     const-string v1, ""
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 279
     sget-object v0, Lcom/panasonic/avc/cng/view/b/b$a;->ca:Lcom/panasonic/avc/cng/view/b/b$a;
 
     const/4 v1, 0x0
 
-    invoke-static {p0, v0, v1}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {p0, v0, v1}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     .line 286
     :cond_1
@@ -568,7 +568,7 @@
 
     const-string v1, "OnClickShutterMPan()"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->verbose(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 336
     :cond_0
@@ -595,7 +595,7 @@
 
     const-string v1, ""
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 350
     invoke-virtual {p0}, Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/a;->isLog()Z
@@ -610,7 +610,7 @@
 
     const-string v1, "OnClickStart()"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->verbose(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 351
     :cond_0
@@ -1125,7 +1125,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->verbose(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 109
     :cond_0
@@ -1415,7 +1415,7 @@
 
     const-string v1, "onActivityResult()"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->verbose(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 173
     :cond_0

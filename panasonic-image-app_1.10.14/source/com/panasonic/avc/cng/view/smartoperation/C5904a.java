@@ -10,14 +10,14 @@ import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.C1833c;
 import com.panasonic.avc.cng.model.C1878d;
 import com.panasonic.avc.cng.model.C1892f;
-import com.panasonic.avc.cng.model.p051c.C1846e;
+import com.panasonic.avc.cng.model.p051c.CameraStatus;
 import com.panasonic.avc.cng.model.service.C2028e;
 import com.panasonic.avc.cng.model.service.C2028e.C2031c;
 import com.panasonic.avc.cng.model.service.C2236s;
 import com.panasonic.avc.cng.model.service.C2236s.C2237a;
-import com.panasonic.avc.cng.model.service.C2253z;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
 import com.panasonic.avc.cng.p038a.C1342a;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import java.util.Locale;
 
 /* renamed from: com.panasonic.avc.cng.view.smartoperation.a */
@@ -77,8 +77,8 @@ public class C5904a extends C1342a {
         }
 
         /* renamed from: a */
-        public void mo5337a(C1846e eVar) {
-            if (C1846e.m7190a(eVar)) {
+        public void mo5337a(CameraStatus eVar) {
+            if (CameraStatus.m7190a(eVar)) {
                 String C = eVar.mo4654C();
                 if (C.equalsIgnoreCase("high")) {
                     C5904a.this.f3707b.post(new Runnable() {
@@ -98,10 +98,10 @@ public class C5904a extends C1342a {
                 }
             } else if (C5904a.this.f18079d instanceof C1833c) {
                 if (C5904a.this.f18081f != null) {
-                    C5904a.this.f18081f.mo12811a(C1846e.m7191b(eVar));
+                    C5904a.this.f18081f.mo12811a(CameraStatus.m7191b(eVar));
                 }
             } else if (C5904a.this.f18081f != null) {
-                C5904a.this.f18081f.mo12817b(C1846e.m7191b(eVar));
+                C5904a.this.f18081f.mo12817b(CameraStatus.m7191b(eVar));
             }
         }
 
@@ -256,7 +256,7 @@ public class C5904a extends C1342a {
 
     /* renamed from: a */
     public boolean mo12897a(int i) {
-        String b = C1712b.m6921e().mo4863b(C2253z.m9703f().mo5036b(i));
+        String b = C1712b.m6921e().mo4863b(ServiceFactory.m9703f().mo5036b(i));
         if (b.equals("liveview") || b.equals("liveview_av_mix")) {
             return false;
         }
@@ -266,13 +266,13 @@ public class C5904a extends C1342a {
     /* renamed from: a */
     public boolean mo12898a(int i, SurfaceHolder surfaceHolder, C5909b bVar) {
         this.f18084i = 0;
-        this.f18079d = C2253z.m9703f().mo5036b(i);
+        this.f18079d = ServiceFactory.m9703f().mo5036b(i);
         this.f18080e = surfaceHolder;
         this.f18081f = bVar;
         this.f18087l = 640;
         this.f18088m = 360;
         this.f18090o = new C5906a();
-        this.f18089n = C2253z.m9680a(this.f3706a, true);
+        this.f18089n = ServiceFactory.m9680a(this.f3706a, true);
         if (this.f18089n != null) {
             this.f18089n.mo5268a((C2031c) this.f18090o);
         }
@@ -286,7 +286,7 @@ public class C5904a extends C1342a {
     /* renamed from: c */
     public void mo12900c() {
         int i;
-        this.f18082g = C2253z.m9683a(this.f3706a, this.f18079d);
+        this.f18082g = ServiceFactory.m9683a(this.f3706a, this.f18079d);
         if (this.f18082g != null) {
             this.f18083h = this.f18082g.mo5681a();
             this.f18082g.mo5679a((C2237a) new C5910c());
@@ -412,7 +412,7 @@ public class C5904a extends C1342a {
     /* renamed from: m */
     public void mo12910m() {
         synchronized (this.f18091p) {
-            C2261g.m9763a(this.f18078c, "BeginSeek()");
+            ImageAppLog.debug(this.f18078c, "BeginSeek()");
             if (this.f18082g != null) {
                 this.f18084i = 4;
                 this.f18082g.mo5684d();
@@ -423,7 +423,7 @@ public class C5904a extends C1342a {
     /* renamed from: b */
     public void mo12899b(int i) {
         synchronized (this.f18091p) {
-            C2261g.m9763a(this.f18078c, String.format(Locale.getDefault(), "Seek() pos = %d", new Object[]{Integer.valueOf(i)}));
+            ImageAppLog.debug(this.f18078c, String.format(Locale.getDefault(), "Seek() pos = %d", new Object[]{Integer.valueOf(i)}));
             if (this.f18082g != null) {
                 this.f18082g.mo5676a((long) i);
             }
@@ -434,7 +434,7 @@ public class C5904a extends C1342a {
     public boolean mo12911n() {
         boolean z;
         synchronized (this.f18091p) {
-            C2261g.m9763a(this.f18078c, "EndSeek()");
+            ImageAppLog.debug(this.f18078c, "EndSeek()");
             if (this.f18082g == null || !this.f18082g.mo5685e()) {
                 z = false;
             } else {

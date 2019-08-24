@@ -96,7 +96,7 @@ public final class C1332p {
             java.lang.Boolean r0 = r6.f3684d     // Catch:{ SecurityException -> 0x011e, IllegalStateException -> 0x012d }
             boolean r0 = r0.booleanValue()     // Catch:{ SecurityException -> 0x011e, IllegalStateException -> 0x012d }
             if (r0 == 0) goto L_0x0111
-            android.content.ComponentName r0 = android.support.p000v4.content.C0158g.m727a_(r7, r8)     // Catch:{ SecurityException -> 0x011e, IllegalStateException -> 0x012d }
+            android.content.ComponentName r0 = android.support.p000v4.content.WakefulBroadcastReceiver.m727a_(r7, r8)     // Catch:{ SecurityException -> 0x011e, IllegalStateException -> 0x012d }
         L_0x0047:
             if (r0 != 0) goto L_0x012a
             java.lang.String r0 = "FirebaseInstanceId"

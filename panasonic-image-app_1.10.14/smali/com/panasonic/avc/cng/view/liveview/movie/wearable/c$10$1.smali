@@ -43,16 +43,16 @@
     .line 4345
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c$10$1;->a:Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c$10;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c$10;->a:Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c$10;->a:Lcom/panasonic/avc/cng/view/liveview/movie/wearable/LiveViewWearableViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c;->I()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/LiveViewWearableViewModel;->I()V
 
     .line 4346
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c$10$1;->a:Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c$10;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c$10;->a:Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c$10;->a:Lcom/panasonic/avc/cng/view/liveview/movie/wearable/LiveViewWearableViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c;->X:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/LiveViewWearableViewModel;->X:Lcom/panasonic/avc/cng/a/c;
 
     const/4 v1, 0x0
 

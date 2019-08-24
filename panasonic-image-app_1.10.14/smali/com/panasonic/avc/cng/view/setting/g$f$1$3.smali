@@ -45,9 +45,9 @@
 
     iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/g$f$1;->a:Lcom/panasonic/avc/cng/view/setting/g$f;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/g$f;->a:Lcom/panasonic/avc/cng/view/setting/g;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/g$f;->a:Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/g;->c:Lcom/panasonic/avc/cng/view/setting/g$d;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;->c:Lcom/panasonic/avc/cng/view/setting/g$d;
 
     sget-object v1, Lcom/panasonic/avc/cng/view/b/b$a;->dd:Lcom/panasonic/avc/cng/view/b/b$a;
 
@@ -58,9 +58,9 @@
 
     iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/g$f$1;->a:Lcom/panasonic/avc/cng/view/setting/g$f;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/g$f;->a:Lcom/panasonic/avc/cng/view/setting/g;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/g$f;->a:Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/g;->c:Lcom/panasonic/avc/cng/view/setting/g$d;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;->c:Lcom/panasonic/avc/cng/view/setting/g$d;
 
     sget-object v1, Lcom/panasonic/avc/cng/view/b/b$a;->Z:Lcom/panasonic/avc/cng/view/b/b$a;
 

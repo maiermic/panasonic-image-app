@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/view/play/multiphotoframe/n;->a(Ljava/util/List;)V
+    value = Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameSelectPictureViewModel;->a(Ljava/util/List;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,16 +20,16 @@
 # instance fields
 .field final synthetic a:Ljava/util/ArrayList;
 
-.field final synthetic b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/n;
+.field final synthetic b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameSelectPictureViewModel;
 
 
 # direct methods
-.method constructor <init>(Lcom/panasonic/avc/cng/view/play/multiphotoframe/n;Ljava/util/ArrayList;)V
+.method constructor <init>(Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameSelectPictureViewModel;Ljava/util/ArrayList;)V
     .locals 0
 
     .prologue
     .line 1128
-    iput-object p1, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/n$11;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/n;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/n$11;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameSelectPictureViewModel;
 
     iput-object p2, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/n$11;->a:Ljava/util/ArrayList;
 
@@ -45,16 +45,16 @@
 
     .prologue
     .line 1130
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/n$11;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/n;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/n$11;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameSelectPictureViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/n;->k:Lcom/panasonic/avc/cng/view/play/multiphotoframe/n$b;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameSelectPictureViewModel;->k:Lcom/panasonic/avc/cng/view/play/multiphotoframe/n$b;
 
     if-eqz v0, :cond_0
 
     .line 1131
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/n$11;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/n;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/n$11;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameSelectPictureViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/n;->k:Lcom/panasonic/avc/cng/view/play/multiphotoframe/n$b;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameSelectPictureViewModel;->k:Lcom/panasonic/avc/cng/view/play/multiphotoframe/n$b;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/n$11;->a:Ljava/util/ArrayList;
 

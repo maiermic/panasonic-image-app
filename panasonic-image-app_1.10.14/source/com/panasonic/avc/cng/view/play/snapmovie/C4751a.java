@@ -21,8 +21,8 @@ import com.panasonic.avc.cng.view.parts.C4151e;
 import com.panasonic.avc.cng.view.parts.C4208k;
 import com.panasonic.avc.cng.view.parts.C4213l;
 import com.panasonic.avc.cng.view.parts.C4230p;
-import com.panasonic.avc.cng.view.parts.C4245t;
-import com.panasonic.avc.cng.view.parts.C4245t.C4252c;
+import com.panasonic.avc.cng.view.parts.BrowserViewModel;
+import com.panasonic.avc.cng.view.parts.BrowserViewModel.C4252c;
 import com.panasonic.avc.cng.view.parts.C4258v;
 import com.panasonic.avc.cng.view.parts.C4262x;
 import com.panasonic.avc.cng.view.parts.ChapterProgressBar;
@@ -189,7 +189,7 @@ public class C4751a {
         }
         int firstVisiblePosition = this.f15431c.getFirstVisiblePosition();
         int lastVisiblePosition = this.f15431c.getLastVisiblePosition();
-        C4245t q = this.f15430b.mo11096q();
+        BrowserViewModel q = this.f15430b.mo11096q();
         q.getClass();
         return new C4252c(firstVisiblePosition, lastVisiblePosition);
     }

@@ -43,16 +43,16 @@
     .line 93
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/snapmovie/b$a;->a:Lcom/panasonic/avc/cng/view/play/snapmovie/b;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/snapmovie/b;->g:Lcom/panasonic/avc/cng/view/parts/t;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/snapmovie/b;->g:Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
     if-eqz v0, :cond_0
 
     .line 95
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/snapmovie/b$a;->a:Lcom/panasonic/avc/cng/view/play/snapmovie/b;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/snapmovie/b;->g:Lcom/panasonic/avc/cng/view/parts/t;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/snapmovie/b;->g:Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/parts/t;->l()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->l()V
 
     .line 98
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/snapmovie/b$a;->a:Lcom/panasonic/avc/cng/view/play/snapmovie/b;
@@ -64,11 +64,11 @@
     .line 101
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/snapmovie/b$a;->a:Lcom/panasonic/avc/cng/view/play/snapmovie/b;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/snapmovie/b;->g:Lcom/panasonic/avc/cng/view/parts/t;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/snapmovie/b;->g:Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/parts/t;->b(Z)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->b(Z)V
 
     .line 104
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/snapmovie/b$a;->a:Lcom/panasonic/avc/cng/view/play/snapmovie/b;

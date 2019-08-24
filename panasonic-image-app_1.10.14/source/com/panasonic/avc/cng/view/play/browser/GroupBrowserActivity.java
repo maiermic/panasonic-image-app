@@ -15,12 +15,12 @@ import com.panasonic.avc.cng.imageapp.C1701a.C1702a;
 import com.panasonic.avc.cng.imageapp.Httpc.HTTPcJni;
 import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.C1712b;
-import com.panasonic.avc.cng.model.p051c.C1846e;
+import com.panasonic.avc.cng.model.p051c.CameraStatus;
 import com.panasonic.avc.cng.model.p052d.C1879a;
 import com.panasonic.avc.cng.model.service.C2028e;
-import com.panasonic.avc.cng.model.service.C2253z;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
 import com.panasonic.avc.cng.model.service.p056c.C2020c;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.view.common.C2820e;
 import com.panasonic.avc.cng.view.p072a.C2291c;
 import com.panasonic.avc.cng.view.p072a.C2308e;
@@ -28,20 +28,20 @@ import com.panasonic.avc.cng.view.p072a.C2313g;
 import com.panasonic.avc.cng.view.p072a.C2316j;
 import com.panasonic.avc.cng.view.p073b.C2317a.C2325c;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
 import com.panasonic.avc.cng.view.p073b.C2337e;
 import com.panasonic.avc.cng.view.p073b.C2376f.C2377a;
 import com.panasonic.avc.cng.view.p073b.C2376f.C2378b;
 import com.panasonic.avc.cng.view.parts.C4103bi;
-import com.panasonic.avc.cng.view.parts.C4245t.C4252c;
-import com.panasonic.avc.cng.view.parts.C4245t.C4255e;
+import com.panasonic.avc.cng.view.parts.BrowserViewModel.C4252c;
+import com.panasonic.avc.cng.view.parts.BrowserViewModel.C4255e;
 import com.panasonic.avc.cng.view.parts.C4262x;
 import com.panasonic.avc.cng.view.play.browser.C4373a.C4402a;
-import com.panasonic.avc.cng.view.play.browser.C4417d.C4423b;
+import com.panasonic.avc.cng.view.play.browser.GroupBrowserViewModel.C4423b;
 import com.panasonic.avc.cng.view.play.p076a.C4270a;
 import com.panasonic.avc.cng.view.smartoperation.C5919e;
 import com.panasonic.avc.cng.view.smartoperation.C5942h;
-import com.panasonic.avc.cng.view.smartoperation.C5956i;
+import com.panasonic.avc.cng.view.smartoperation.PictureJumpViewModel;
 import com.panasonic.avc.cng.view.smartoperation.PictureJumpActivity;
 import java.util.ArrayList;
 import java.util.List;
@@ -53,7 +53,7 @@ public class GroupBrowserActivity extends C4270a {
     /* access modifiers changed from: private */
 
     /* renamed from: b */
-    public C4417d f14324b;
+    public GroupBrowserViewModel f14324b;
     /* access modifiers changed from: private */
 
     /* renamed from: c */
@@ -69,7 +69,7 @@ public class GroupBrowserActivity extends C4270a {
     /* access modifiers changed from: private */
 
     /* renamed from: f */
-    public C4411b f14328f = null;
+    public BrowserConnectWiFi f14328f = null;
     /* access modifiers changed from: private */
 
     /* renamed from: g */
@@ -123,7 +123,7 @@ public class GroupBrowserActivity extends C4270a {
         public void mo10012e() {
             GroupBrowserActivity.this._cameraUtil.mo6032a((Runnable) new Runnable() {
                 public void run() {
-                    C2331d.m10114a((Activity) GroupBrowserActivity.this, C2328a.ON_DISCONNECT_NO_FINISH, (Bundle) null);
+                    DialogFactory.m10114a((Activity) GroupBrowserActivity.this, C2328a.ON_DISCONNECT_NO_FINISH, (Bundle) null);
                 }
             });
         }
@@ -132,7 +132,7 @@ public class GroupBrowserActivity extends C4270a {
         public void mo10008a(int i, int i2) {
             GroupBrowserActivity.this._cameraUtil.mo6032a((Runnable) new Runnable() {
                 public void run() {
-                    C2331d.m10114a((Activity) GroupBrowserActivity.this, C2328a.ON_EXCEEDED_MAX_SELECT_NUM, (Bundle) null);
+                    DialogFactory.m10114a((Activity) GroupBrowserActivity.this, C2328a.ON_EXCEEDED_MAX_SELECT_NUM, (Bundle) null);
                 }
             });
         }
@@ -177,32 +177,32 @@ public class GroupBrowserActivity extends C4270a {
                 case 1:
                     Bundle bundle = new Bundle();
                     bundle.putInt(C2378b.MESSAGE_ID.name(), R.string.msg_file_copying);
-                    C2331d.m10115a((Activity) GroupBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_COPY, bundle, (C2325c) new C2325c() {
+                    DialogFactory.m10115a((Activity) GroupBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_COPY, bundle, (C2325c) new C2325c() {
                         /* renamed from: a */
                         public void mo6131a() {
-                            C2331d.m10111a((Activity) GroupBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_COPY, (int) R.id.percent_num, (CharSequence) "0");
-                            C2331d.m10111a((Activity) GroupBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_COPY, (int) R.id.numerator, (CharSequence) "1");
-                            C2331d.m10111a((Activity) GroupBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_COPY, (int) R.id.denominator, (CharSequence) String.valueOf(GroupBrowserActivity.this.f14326d.mo10252e().size()));
+                            DialogFactory.m10111a((Activity) GroupBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_COPY, (int) R.id.percent_num, (CharSequence) "0");
+                            DialogFactory.m10111a((Activity) GroupBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_COPY, (int) R.id.numerator, (CharSequence) "1");
+                            DialogFactory.m10111a((Activity) GroupBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_COPY, (int) R.id.denominator, (CharSequence) String.valueOf(GroupBrowserActivity.this.f14326d.mo10252e().size()));
                         }
                     });
                     return;
                 case 4:
                     GroupBrowserActivity.this.f14327e.m17027a(false, new boolean[0]);
-                    C2331d.m10100a((Activity) GroupBrowserActivity.this);
-                    C2331d.m10114a((Activity) GroupBrowserActivity.this, C2328a.ON_BROWSE_ACTION_COMPLETE_COPY, (Bundle) null);
+                    DialogFactory.m10100a((Activity) GroupBrowserActivity.this);
+                    DialogFactory.m10114a((Activity) GroupBrowserActivity.this, C2328a.ON_BROWSE_ACTION_COMPLETE_COPY, (Bundle) null);
                     return;
                 case 5:
-                    C2331d.m10100a((Activity) GroupBrowserActivity.this);
-                    C2331d.m10114a((Activity) GroupBrowserActivity.this, C2328a.ON_BROWSE_ACTION_CANCEL, (Bundle) null);
+                    DialogFactory.m10100a((Activity) GroupBrowserActivity.this);
+                    DialogFactory.m10114a((Activity) GroupBrowserActivity.this, C2328a.ON_BROWSE_ACTION_CANCEL, (Bundle) null);
                     GroupBrowserActivity.this.f14327e.m17027a(false, new boolean[0]);
                     return;
                 case 6:
-                    C2331d.m10100a((Activity) GroupBrowserActivity.this);
+                    DialogFactory.m10100a((Activity) GroupBrowserActivity.this);
                     if (i2 == 0) {
-                        C2331d.m10114a((Activity) GroupBrowserActivity.this, C2328a.ON_BROWSE_ACTION_ERROR_COPY, (Bundle) null);
+                        DialogFactory.m10114a((Activity) GroupBrowserActivity.this, C2328a.ON_BROWSE_ACTION_ERROR_COPY, (Bundle) null);
                         return;
                     } else if (i2 == 2) {
-                        C2331d.m10114a((Activity) GroupBrowserActivity.this, C2328a.ON_BROWSE_ACTION_ERROR_COPY_NO_REMAIN, (Bundle) null);
+                        DialogFactory.m10114a((Activity) GroupBrowserActivity.this, C2328a.ON_BROWSE_ACTION_ERROR_COPY_NO_REMAIN, (Bundle) null);
                         return;
                     } else {
                         return;
@@ -219,19 +219,19 @@ public class GroupBrowserActivity extends C4270a {
                     if (GroupBrowserActivity.this.f14326d != null) {
                         Bundle bundle = new Bundle();
                         bundle.putInt(C2378b.MESSAGE_ID.name(), R.string.msg_file_copying);
-                        C2331d.m10115a((Activity) GroupBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_SHARE, bundle, (C2325c) new C2325c() {
+                        DialogFactory.m10115a((Activity) GroupBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_SHARE, bundle, (C2325c) new C2325c() {
                             /* renamed from: a */
                             public void mo6131a() {
-                                C2331d.m10111a((Activity) GroupBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_SHARE, (int) R.id.percent_num, (CharSequence) "0");
-                                C2331d.m10111a((Activity) GroupBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_SHARE, (int) R.id.numerator, (CharSequence) "1");
-                                C2331d.m10111a((Activity) GroupBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_SHARE, (int) R.id.denominator, (CharSequence) String.valueOf(GroupBrowserActivity.this.f14326d.mo10252e().size()));
+                                DialogFactory.m10111a((Activity) GroupBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_SHARE, (int) R.id.percent_num, (CharSequence) "0");
+                                DialogFactory.m10111a((Activity) GroupBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_SHARE, (int) R.id.numerator, (CharSequence) "1");
+                                DialogFactory.m10111a((Activity) GroupBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_SHARE, (int) R.id.denominator, (CharSequence) String.valueOf(GroupBrowserActivity.this.f14326d.mo10252e().size()));
                             }
                         });
                         return;
                     }
                     return;
                 case 3:
-                    C2331d.m10100a((Activity) GroupBrowserActivity.this);
+                    DialogFactory.m10100a((Activity) GroupBrowserActivity.this);
                     if (GroupBrowserActivity.this.f14326d != null && GroupBrowserActivity.this.f14326d.mo10255f() != null && GroupBrowserActivity.this.f14324b != null) {
                         GroupBrowserActivity.this.f14324b.mo6022d().putString("ReconnectWiFiAP", GroupBrowserActivity.this.f14326d.mo10255f());
                         GroupBrowserActivity.this.finish();
@@ -239,25 +239,25 @@ public class GroupBrowserActivity extends C4270a {
                     }
                     return;
                 case 4:
-                    C2331d.m10100a((Activity) GroupBrowserActivity.this);
+                    DialogFactory.m10100a((Activity) GroupBrowserActivity.this);
                     if (GroupBrowserActivity.this.f14326d != null && GroupBrowserActivity.this.f14326d.mo10255f() != null) {
-                        GroupBrowserActivity.this.f14328f = new C4411b((Activity) GroupBrowserActivity.this._context, GroupBrowserActivity.this.f14326d.mo10255f(), GroupBrowserActivity.this.f14326d.mo10256g(), GroupBrowserActivity.this.f14326d.mo10257h(), true);
+                        GroupBrowserActivity.this.f14328f = new BrowserConnectWiFi((Activity) GroupBrowserActivity.this._context, GroupBrowserActivity.this.f14326d.mo10255f(), GroupBrowserActivity.this.f14326d.mo10256g(), GroupBrowserActivity.this.f14326d.mo10257h(), true);
                         GroupBrowserActivity.this.f14326d.mo10228a((String) null);
                         return;
                     }
                     return;
                 case 5:
-                    C2331d.m10100a((Activity) GroupBrowserActivity.this);
-                    C2331d.m10114a((Activity) GroupBrowserActivity.this, C2328a.ON_BROWSE_ACTION_CANCEL, (Bundle) null);
+                    DialogFactory.m10100a((Activity) GroupBrowserActivity.this);
+                    DialogFactory.m10114a((Activity) GroupBrowserActivity.this, C2328a.ON_BROWSE_ACTION_CANCEL, (Bundle) null);
                     GroupBrowserActivity.this.f14327e.m17027a(false, new boolean[0]);
                     return;
                 case 6:
-                    C2331d.m10100a((Activity) GroupBrowserActivity.this);
+                    DialogFactory.m10100a((Activity) GroupBrowserActivity.this);
                     if (i2 == 0) {
-                        C2331d.m10114a((Activity) GroupBrowserActivity.this, C2328a.ON_BROWSE_ACTION_ERROR_COPY, (Bundle) null);
+                        DialogFactory.m10114a((Activity) GroupBrowserActivity.this, C2328a.ON_BROWSE_ACTION_ERROR_COPY, (Bundle) null);
                         return;
                     } else if (i2 == 2) {
-                        C2331d.m10114a((Activity) GroupBrowserActivity.this, C2328a.ON_BROWSE_ACTION_ERROR_COPY_NO_REMAIN, (Bundle) null);
+                        DialogFactory.m10114a((Activity) GroupBrowserActivity.this, C2328a.ON_BROWSE_ACTION_ERROR_COPY_NO_REMAIN, (Bundle) null);
                         return;
                     } else {
                         return;
@@ -277,32 +277,32 @@ public class GroupBrowserActivity extends C4270a {
                         bundle.putInt(C2378b.NEGATIVE_BUTTON_TEXT_ID.name(), R.string.cmn_btn_cancel);
                         bundle.putInt(C2378b.MESSAGE_ID.name(), R.string.cmn_msg_just_a_moment);
                         bundle.putBoolean(C2377a.EXCLUDE_DISMISS.name(), true);
-                        C2331d.m10115a((Activity) GroupBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT, bundle, (C2325c) new C2325c() {
+                        DialogFactory.m10115a((Activity) GroupBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT, bundle, (C2325c) new C2325c() {
                             /* renamed from: a */
                             public void mo6131a() {
-                                C2331d.m10111a((Activity) GroupBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT, (int) R.id.percent_num, (CharSequence) "0");
-                                C2331d.m10111a((Activity) GroupBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT, (int) R.id.numerator, (CharSequence) "1");
-                                C2331d.m10111a((Activity) GroupBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT, (int) R.id.denominator, (CharSequence) String.valueOf(GroupBrowserActivity.this.f14324b.mo10334m().mo9983q().size()));
+                                DialogFactory.m10111a((Activity) GroupBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT, (int) R.id.percent_num, (CharSequence) "0");
+                                DialogFactory.m10111a((Activity) GroupBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT, (int) R.id.numerator, (CharSequence) "1");
+                                DialogFactory.m10111a((Activity) GroupBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT, (int) R.id.denominator, (CharSequence) String.valueOf(GroupBrowserActivity.this.f14324b.mo10334m().mo9983q().size()));
                             }
                         });
                         return;
                     }
                     Bundle bundle2 = new Bundle();
                     bundle2.putInt(C2378b.NEGATIVE_BUTTON_TEXT_ID.name(), R.string.cmn_btn_cancel);
-                    C2331d.m10114a((Activity) GroupBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE, bundle2);
+                    DialogFactory.m10114a((Activity) GroupBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE, bundle2);
                     return;
                 case 2:
-                    if (C2331d.m10125b((Activity) GroupBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT)) {
-                        C2331d.m10104a((Activity) GroupBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT, (int) R.id.progressBar2, i3);
-                        C2331d.m10111a((Activity) GroupBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT, (int) R.id.percent_num, (CharSequence) String.valueOf(i3));
-                        C2331d.m10111a((Activity) GroupBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT, (int) R.id.numerator, (CharSequence) String.valueOf(i2));
+                    if (DialogFactory.m10125b((Activity) GroupBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT)) {
+                        DialogFactory.m10104a((Activity) GroupBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT, (int) R.id.progressBar2, i3);
+                        DialogFactory.m10111a((Activity) GroupBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT, (int) R.id.percent_num, (CharSequence) String.valueOf(i3));
+                        DialogFactory.m10111a((Activity) GroupBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT, (int) R.id.numerator, (CharSequence) String.valueOf(i2));
                         return;
                     }
                     return;
                 case 4:
-                    C2331d.m10100a((Activity) GroupBrowserActivity.this);
-                    if (C2331d.m10125b((Activity) GroupBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT)) {
-                        C2331d.m10102a((Activity) GroupBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT);
+                    DialogFactory.m10100a((Activity) GroupBrowserActivity.this);
+                    if (DialogFactory.m10125b((Activity) GroupBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT)) {
+                        DialogFactory.m10102a((Activity) GroupBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT);
                     }
                     C4290d m = GroupBrowserActivity.this.f14327e;
                     if (i2 != 1) {
@@ -312,27 +312,27 @@ public class GroupBrowserActivity extends C4270a {
                     return;
                 case 5:
                     GroupBrowserActivity.this.f14327e.m17027a(false, new boolean[0]);
-                    C2331d.m10100a((Activity) GroupBrowserActivity.this);
-                    if (C2331d.m10125b((Activity) GroupBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT)) {
-                        C2331d.m10102a((Activity) GroupBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT);
+                    DialogFactory.m10100a((Activity) GroupBrowserActivity.this);
+                    if (DialogFactory.m10125b((Activity) GroupBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT)) {
+                        DialogFactory.m10102a((Activity) GroupBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT);
                     }
-                    C2331d.m10114a((Activity) GroupBrowserActivity.this, C2328a.ON_BROWSE_ACTION_CANCEL, (Bundle) null);
+                    DialogFactory.m10114a((Activity) GroupBrowserActivity.this, C2328a.ON_BROWSE_ACTION_CANCEL, (Bundle) null);
                     return;
                 case 6:
-                    C2331d.m10100a((Activity) GroupBrowserActivity.this);
+                    DialogFactory.m10100a((Activity) GroupBrowserActivity.this);
                     if (i2 == 0) {
-                        C2331d.m10114a((Activity) GroupBrowserActivity.this, C2328a.ON_BROWSE_ACTION_ERROR_DELETE, (Bundle) null);
+                        DialogFactory.m10114a((Activity) GroupBrowserActivity.this, C2328a.ON_BROWSE_ACTION_ERROR_DELETE, (Bundle) null);
                         return;
                     } else if (i2 == 2) {
-                        C2331d.m10114a((Activity) GroupBrowserActivity.this, C2328a.ON_BROWSE_ACTION_ERROR_COPY_NO_REMAIN, (Bundle) null);
+                        DialogFactory.m10114a((Activity) GroupBrowserActivity.this, C2328a.ON_BROWSE_ACTION_ERROR_COPY_NO_REMAIN, (Bundle) null);
                         return;
                     } else {
                         return;
                     }
                 case 7:
-                    C2331d.m10100a((Activity) GroupBrowserActivity.this);
-                    if (C2331d.m10125b((Activity) GroupBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT)) {
-                        C2331d.m10102a((Activity) GroupBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT);
+                    DialogFactory.m10100a((Activity) GroupBrowserActivity.this);
+                    if (DialogFactory.m10125b((Activity) GroupBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT)) {
+                        DialogFactory.m10102a((Activity) GroupBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT);
                         return;
                     }
                     return;
@@ -345,15 +345,15 @@ public class GroupBrowserActivity extends C4270a {
         public void mo10103d(int i, int i2, int i3) {
             switch (i) {
                 case 1:
-                    C2331d.m10114a((Activity) GroupBrowserActivity.this, C2328a.WAIT_PROCESSING, (Bundle) null);
+                    DialogFactory.m10114a((Activity) GroupBrowserActivity.this, C2328a.WAIT_PROCESSING, (Bundle) null);
                     return;
                 case 4:
-                    C2331d.m10100a((Activity) GroupBrowserActivity.this);
+                    DialogFactory.m10100a((Activity) GroupBrowserActivity.this);
                     GroupBrowserActivity.this.f14327e.m17027a(true, true);
                     return;
                 case 6:
-                    C2331d.m10100a((Activity) GroupBrowserActivity.this);
-                    C2331d.m10114a((Activity) GroupBrowserActivity.this, C2328a.DIALOG_ID_START_SYNC_FAILED, (Bundle) null);
+                    DialogFactory.m10100a((Activity) GroupBrowserActivity.this);
+                    DialogFactory.m10114a((Activity) GroupBrowserActivity.this, C2328a.DIALOG_ID_START_SYNC_FAILED, (Bundle) null);
                     return;
                 default:
                     return;
@@ -397,19 +397,19 @@ public class GroupBrowserActivity extends C4270a {
                 public void run() {
                     switch (i) {
                         case 1:
-                            C2331d.m10114a((Activity) GroupBrowserActivity.this, C2328a.ON_THREE_BOX_CANNOT_PLAY_MP4, (Bundle) null);
+                            DialogFactory.m10114a((Activity) GroupBrowserActivity.this, C2328a.ON_THREE_BOX_CANNOT_PLAY_MP4, (Bundle) null);
                             return;
                         case 2:
-                            C2331d.m10114a((Activity) GroupBrowserActivity.this, C2328a.ON_THREE_BOX_NO_CONTENTS, (Bundle) null);
+                            DialogFactory.m10114a((Activity) GroupBrowserActivity.this, C2328a.ON_THREE_BOX_NO_CONTENTS, (Bundle) null);
                             return;
                         case 3:
-                            C2331d.m10114a((Activity) GroupBrowserActivity.this, C2328a.ON_SCENE_PROTECT_NO_CONTENTS, (Bundle) null);
+                            DialogFactory.m10114a((Activity) GroupBrowserActivity.this, C2328a.ON_SCENE_PROTECT_NO_CONTENTS, (Bundle) null);
                             return;
                         case 4:
-                            C2331d.m10114a((Activity) GroupBrowserActivity.this, C2328a.ON_SPLIT_DELETE_NO_CONTENTS, (Bundle) null);
+                            DialogFactory.m10114a((Activity) GroupBrowserActivity.this, C2328a.ON_SPLIT_DELETE_NO_CONTENTS, (Bundle) null);
                             return;
                         case 7:
-                            C2331d.m10114a((Activity) GroupBrowserActivity.this, C2328a.ON_THREE_BOX_CANNOT_PLAY, (Bundle) null);
+                            DialogFactory.m10114a((Activity) GroupBrowserActivity.this, C2328a.ON_THREE_BOX_CANNOT_PLAY, (Bundle) null);
                             return;
                         default:
                             return;
@@ -424,10 +424,10 @@ public class GroupBrowserActivity extends C4270a {
                 public void run() {
                     switch (i) {
                         case 1:
-                            C2331d.m10114a((Activity) GroupBrowserActivity.this, C2328a.ON_THREE_BOX_SKIP_PLAY_MP4_WEARABLE, (Bundle) null);
+                            DialogFactory.m10114a((Activity) GroupBrowserActivity.this, C2328a.ON_THREE_BOX_SKIP_PLAY_MP4_WEARABLE, (Bundle) null);
                             return;
                         case 2:
-                            C2331d.m10114a((Activity) GroupBrowserActivity.this, C2328a.ON_THREE_BOX_SKIP_PLAY_MP4_VERTICAL, (Bundle) null);
+                            DialogFactory.m10114a((Activity) GroupBrowserActivity.this, C2328a.ON_THREE_BOX_SKIP_PLAY_MP4_VERTICAL, (Bundle) null);
                             return;
                         default:
                             return;
@@ -441,7 +441,7 @@ public class GroupBrowserActivity extends C4270a {
             GroupBrowserActivity.this._cameraUtil.mo6032a((Runnable) new Runnable() {
                 public void run() {
                     if (str.equalsIgnoreCase("need_repair")) {
-                        C2331d.m10114a((Activity) GroupBrowserActivity.this, C2328a.ON_SD_CARD_NEED_REPAIR, (Bundle) null);
+                        DialogFactory.m10114a((Activity) GroupBrowserActivity.this, C2328a.ON_SD_CARD_NEED_REPAIR, (Bundle) null);
                     }
                 }
             });
@@ -579,9 +579,9 @@ public class GroupBrowserActivity extends C4270a {
         this.f14323a = new Handler();
         C4276a aVar = new C4276a();
         C4286c cVar = new C4286c();
-        this.f14324b = (C4417d) C2316j.m10030a("GroupBrowserViewModel");
+        this.f14324b = (GroupBrowserViewModel) C2316j.m10030a("GroupBrowserViewModel");
         if (this.f14324b == null) {
-            this.f14324b = new C4417d(this._context, this.f14323a);
+            this.f14324b = new GroupBrowserViewModel(this._context, this.f14323a);
             this.f14324b.mo10318a(this._context, this.f14323a, aVar, cVar);
             C2316j.m10032a("GroupBrowserViewModel", this.f14324b);
             Bundle extras = getIntent().getExtras();
@@ -657,12 +657,12 @@ public class GroupBrowserActivity extends C4270a {
     public void onRestart() {
         super.onRestart();
         if (!(this.f14326d == null || this.f14326d.mo10255f() == null)) {
-            this.f14328f = new C4411b((Activity) this._context, this.f14326d.mo10255f(), this.f14326d.mo10256g(), this.f14326d.mo10257h(), true);
+            this.f14328f = new BrowserConnectWiFi((Activity) this._context, this.f14326d.mo10255f(), this.f14326d.mo10256g(), this.f14326d.mo10257h(), true);
             this.f14326d.mo10228a((String) null);
         }
-        C2028e a = C2253z.m9680a(this._context, true);
+        C2028e a = ServiceFactory.m9680a(this._context, true);
         if (a != null) {
-            C1846e i = a.mo5285i();
+            CameraStatus i = a.mo5285i();
             if (i == null) {
                 return;
             }
@@ -734,7 +734,7 @@ public class GroupBrowserActivity extends C4270a {
                 Bundle extras = intent.getExtras();
                 if (extras != null) {
                     if (extras.containsKey("ReconnectWiFiAP")) {
-                        this.f14328f = new C4411b(this, extras.getString("ReconnectWiFiAP"), this.f14326d.mo10256g(), this.f14326d.mo10257h(), true);
+                        this.f14328f = new BrowserConnectWiFi(this, extras.getString("ReconnectWiFiAP"), this.f14326d.mo10256g(), this.f14326d.mo10257h(), true);
                     }
                     if (i == 2 && i2 == -1) {
                         if (extras.getBoolean("LensCheck", false)) {
@@ -746,17 +746,17 @@ public class GroupBrowserActivity extends C4270a {
                             finish();
                             return;
                         } else {
-                            C2261g.m9763a("GroupBrowserActivity", "onActivityResult() => OnOneContentPreviewResult()");
+                            ImageAppLog.debug("GroupBrowserActivity", "onActivityResult() => OnOneContentPreviewResult()");
                             this.f14327e.m17024a(extras);
                         }
                     } else if (i == 3 && i2 == -1) {
-                        C2261g.m9763a("GroupBrowserActivity", "onActivityResult() => OnPictureJumpResult()");
+                        ImageAppLog.debug("GroupBrowserActivity", "onActivityResult() => OnPictureJumpResult()");
                         this.f14327e.m17029b(extras);
                         if (!((Boolean) this.f14324b.mo10334m().f14237e.mo3217b()).booleanValue()) {
                             this.f14324b.mo10334m().mo9985s();
                         }
                     } else if (i == 7 && i2 == -1) {
-                        C2261g.m9763a("GroupBrowserActivity", "onActivityResult() => OnMenuSettingResult()");
+                        ImageAppLog.debug("GroupBrowserActivity", "onActivityResult() => OnMenuSettingResult()");
                         this.f14327e.m17031c(extras);
                     }
                 } else {
@@ -764,7 +764,7 @@ public class GroupBrowserActivity extends C4270a {
                 }
             }
             if (i == 100) {
-                C2261g.m9763a("GroupBrowserActivity", "onActivityResult() => IntentUpload");
+                ImageAppLog.debug("GroupBrowserActivity", "onActivityResult() => IntentUpload");
                 if (this.f14326d != null) {
                     this.f14326d.mo10226a(this.f14324b.mo10334m());
                     this.f14326d.mo10233a(false, false);
@@ -774,7 +774,7 @@ public class GroupBrowserActivity extends C4270a {
                     this.f14326d.mo10265p();
                 }
             } else if (i == 12 && i2 == -1) {
-                C2261g.m9763a("GroupBrowserActivity", "onActivityResult() => OnPicmateUnsentImageListResult()");
+                ImageAppLog.debug("GroupBrowserActivity", "onActivityResult() => OnPicmateUnsentImageListResult()");
                 if (this.f14324b != null) {
                     this.f14324b.mo10333l();
                 }
@@ -808,11 +808,11 @@ public class GroupBrowserActivity extends C4270a {
     }
 
     public void OnReconnectDevice() {
-        C2261g.m9771e("GroupBrowserActivity", "OnReconnectDevice()");
+        ImageAppLog.info("GroupBrowserActivity", "OnReconnectDevice()");
         if (!isFinishing()) {
-            C2028e a = C2253z.m9680a(this._context, true);
+            C2028e a = ServiceFactory.m9680a(this._context, true);
             if (a != null) {
-                C1846e i = a.mo5285i();
+                CameraStatus i = a.mo5285i();
                 if (i != null && ((i.mo4704l() == 1 || i.mo4704l() == 2) && this.f14324b != null)) {
                     this.f14324b.mo10346y();
                 }
@@ -832,21 +832,21 @@ public class GroupBrowserActivity extends C4270a {
 
     public void OnClickOptionList(View view) {
         if (!isFinishing()) {
-            C2331d.m10100a((Activity) this);
+            DialogFactory.m10100a((Activity) this);
             this.f14324b.mo10321b(this.f14325c.mo10313c());
             Bundle bundle = new Bundle();
             bundle.putStringArray(C2378b.ITEM_LIST.name(), this.f14324b.mo10336o().mo12942e());
-            C2331d.m10115a((Activity) this, C2328a.SELECT_MOVIE_FUNCTION, bundle, (C2325c) new C2325c() {
+            DialogFactory.m10115a((Activity) this, C2328a.SELECT_MOVIE_FUNCTION, bundle, (C2325c) new C2325c() {
                 /* renamed from: a */
                 public void mo6131a() {
-                    C2331d.m10129c((Activity) GroupBrowserActivity.this, C2328a.SELECT_MOVIE_FUNCTION, (int) R.id.title, (int) R.string.play_camera_function);
+                    DialogFactory.m10129c((Activity) GroupBrowserActivity.this, C2328a.SELECT_MOVIE_FUNCTION, (int) R.id.title, (int) R.string.play_camera_function);
                 }
             });
         }
     }
 
     public void OnClickLiveView(View view) {
-        C2261g.m9760a(3149826, "");
+        ImageAppLog.m9760a(3149826, "");
         if (this._tabMenuUtil != null) {
             this._tabMenuUtil.mo6087d(this, this.f14324b, this._cameraUtil);
         }
@@ -856,7 +856,7 @@ public class GroupBrowserActivity extends C4270a {
         if (!isFinishing()) {
             this.f14324b.mo6022d().putBoolean("MultiSelectCheck", ((Boolean) this.f14324b.mo10334m().f14237e.mo3217b()).booleanValue());
             if (this.f14324b.mo10334m().mo9981o() > 0) {
-                C2331d.m10114a((Activity) this, C2328a.SelectedItemCancel, (Bundle) null);
+                DialogFactory.m10114a((Activity) this, C2328a.SelectedItemCancel, (Bundle) null);
             } else {
                 super.onBackPressed();
             }
@@ -922,10 +922,10 @@ public class GroupBrowserActivity extends C4270a {
             case 13:
                 return false;
             case 7:
-                if (!C2331d.m10125b((Activity) this, C2328a.ON_DMS_RECEIVING)) {
+                if (!DialogFactory.m10125b((Activity) this, C2328a.ON_DMS_RECEIVING)) {
                     return false;
                 }
-                C2331d.m10100a((Activity) this);
+                DialogFactory.m10100a((Activity) this);
                 return false;
             case 12:
                 GetViewModel().mo6022d().putBoolean("ControlLiveview_Finish", true);
@@ -977,7 +977,7 @@ public class GroupBrowserActivity extends C4270a {
                 this.f14326d.mo10263n();
                 return;
             case C1702a.HorizontalPicker_title_image /*9*/:
-                C2331d.m10114a((Activity) this, C2328a.ON_BROWSE_ACTION_WARNING_COPY, (Bundle) null);
+                DialogFactory.m10114a((Activity) this, C2328a.ON_BROWSE_ACTION_WARNING_COPY, (Bundle) null);
                 return;
             case C1702a.HorizontalPicker_right_blank_area_width /*10*/:
                 this.f14326d.mo10266q();
@@ -994,7 +994,7 @@ public class GroupBrowserActivity extends C4270a {
     public void onNegativeButtonClick(C2328a aVar) {
         switch (C42755.f14334a[aVar.ordinal()]) {
             case 5:
-                C2337e.m10173a(this.f14326d, (C5956i) null, (C5942h) null);
+                C2337e.m10173a(this.f14326d, (PictureJumpViewModel) null, (C5942h) null);
                 return;
             case 6:
                 this.f14326d.mo10230a(null);
@@ -1007,14 +1007,14 @@ public class GroupBrowserActivity extends C4270a {
                 return;
             case 12:
                 if (this.f14326d.mo10272w()) {
-                    C2331d.m10114a((Activity) this, C2328a.WAIT_PROCESSING, (Bundle) null);
+                    DialogFactory.m10114a((Activity) this, C2328a.WAIT_PROCESSING, (Bundle) null);
                     this.f14326d.mo10273x();
                     return;
                 }
                 return;
             case 13:
                 if (this.f14326d.mo10271v()) {
-                    C2331d.m10114a((Activity) this, C2328a.WAIT_PROCESSING, (Bundle) null);
+                    DialogFactory.m10114a((Activity) this, C2328a.WAIT_PROCESSING, (Bundle) null);
                     this.f14326d.mo10267r();
                     return;
                 }
@@ -1050,7 +1050,7 @@ public class GroupBrowserActivity extends C4270a {
         switch (C42755.f14334a[aVar.ordinal()]) {
             case HTTPcJni.JNI_CFG_HTTPC_MAX_HEAD /*16*/:
                 this.f14324b.mo10336o().mo12935b(i);
-                C2331d.m10100a((Activity) this);
+                DialogFactory.m10100a((Activity) this);
                 return;
             default:
                 super.onItemClick(aVar, i);
@@ -1063,7 +1063,7 @@ public class GroupBrowserActivity extends C4270a {
         Intent a = C1347a.m5301a(this._context, (C1349a) new C1349a() {
             /* renamed from: a */
             public void mo3228a() {
-                C2331d.m10114a((Activity) GroupBrowserActivity.this, C2328a.ON_NEED_LUMIX_LINK_NOCONNECTLIVEVIEW, (Bundle) null);
+                DialogFactory.m10114a((Activity) GroupBrowserActivity.this, C2328a.ON_NEED_LUMIX_LINK_NOCONNECTLIVEVIEW, (Bundle) null);
             }
         });
         if (a != null) {

@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/panasonic/avc/cng/view/liveview/n;
+    value = Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

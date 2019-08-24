@@ -117,7 +117,7 @@
 
     move-result-object v2
 
-    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 1840
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/snapmovie/SnapMoviePreviewActivity$9;->a:Lcom/panasonic/avc/cng/view/play/snapmovie/SnapMoviePreviewActivity;

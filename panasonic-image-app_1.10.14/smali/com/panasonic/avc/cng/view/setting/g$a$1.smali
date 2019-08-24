@@ -45,7 +45,7 @@
 
     const-string v1, "OnNone"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 295
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/g$a$1;->a:Lcom/panasonic/avc/cng/view/setting/g$a;
@@ -65,9 +65,9 @@
     :cond_1
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/g$a$1;->a:Lcom/panasonic/avc/cng/view/setting/g$a;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/g$a;->a:Lcom/panasonic/avc/cng/view/setting/g;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/g$a;->a:Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/g;->j(Lcom/panasonic/avc/cng/view/setting/g;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;->j(Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;)Landroid/os/Handler;
 
     move-result-object v0
 
@@ -76,9 +76,9 @@
     .line 305
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/g$a$1;->a:Lcom/panasonic/avc/cng/view/setting/g$a;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/g$a;->a:Lcom/panasonic/avc/cng/view/setting/g;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/g$a;->a:Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/g;->k(Lcom/panasonic/avc/cng/view/setting/g;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;->k(Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;)Landroid/os/Handler;
 
     move-result-object v0
 
@@ -100,7 +100,7 @@
 
     const-string v1, "OnFind"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 257
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/g$a$1;->a:Lcom/panasonic/avc/cng/view/setting/g$a;
@@ -120,9 +120,9 @@
     :cond_1
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/g$a$1;->a:Lcom/panasonic/avc/cng/view/setting/g$a;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/g$a;->a:Lcom/panasonic/avc/cng/view/setting/g;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/g$a;->a:Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/g;->h(Lcom/panasonic/avc/cng/view/setting/g;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;->h(Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;)Landroid/os/Handler;
 
     move-result-object v0
 
@@ -131,9 +131,9 @@
     .line 267
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/g$a$1;->a:Lcom/panasonic/avc/cng/view/setting/g$a;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/g$a;->a:Lcom/panasonic/avc/cng/view/setting/g;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/g$a;->a:Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/g;->i(Lcom/panasonic/avc/cng/view/setting/g;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;->i(Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;)Landroid/os/Handler;
 
     move-result-object v0
 

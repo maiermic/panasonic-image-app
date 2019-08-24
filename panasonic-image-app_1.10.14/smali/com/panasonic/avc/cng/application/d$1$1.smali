@@ -45,20 +45,20 @@
     .line 345
     iget-object v0, p0, Lcom/panasonic/avc/cng/application/d$1$1;->a:Lcom/panasonic/avc/cng/application/d$1;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/application/d$1;->a:Lcom/panasonic/avc/cng/application/d;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/application/d$1;->a:Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportActivity;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/application/d;->_nfcViewModel:Lcom/panasonic/avc/cng/application/e;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportViewModel;
 
-    iput-boolean v3, v0, Lcom/panasonic/avc/cng/application/e;->c:Z
+    iput-boolean v3, v0, Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportViewModel;->c:Z
 
     .line 347
     new-instance v0, Landroid/content/Intent;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/application/d$1$1;->a:Lcom/panasonic/avc/cng/application/d$1;
 
-    iget-object v1, v1, Lcom/panasonic/avc/cng/application/d$1;->a:Lcom/panasonic/avc/cng/application/d;
+    iget-object v1, v1, Lcom/panasonic/avc/cng/application/d$1;->a:Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportActivity;
 
-    invoke-static {v1}, Lcom/panasonic/avc/cng/application/d;->access$200(Lcom/panasonic/avc/cng/application/d;)Landroid/content/Context;
+    invoke-static {v1}, Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportActivity;->access$200(Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportActivity;)Landroid/content/Context;
 
     move-result-object v1
 
@@ -69,11 +69,11 @@
     .line 350
     iget-object v1, p0, Lcom/panasonic/avc/cng/application/d$1$1;->a:Lcom/panasonic/avc/cng/application/d$1;
 
-    iget-object v1, v1, Lcom/panasonic/avc/cng/application/d$1;->a:Lcom/panasonic/avc/cng/application/d;
+    iget-object v1, v1, Lcom/panasonic/avc/cng/application/d$1;->a:Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportActivity;
 
-    iget-object v1, v1, Lcom/panasonic/avc/cng/application/d;->_nfcViewModel:Lcom/panasonic/avc/cng/application/e;
+    iget-object v1, v1, Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportViewModel;
 
-    invoke-virtual {v1, v3}, Lcom/panasonic/avc/cng/application/e;->a(Z)V
+    invoke-virtual {v1, v3}, Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportViewModel;->a(Z)V
 
     .line 353
     const/16 v1, 0xe
@@ -81,9 +81,9 @@
     .line 356
     iget-object v2, p0, Lcom/panasonic/avc/cng/application/d$1$1;->a:Lcom/panasonic/avc/cng/application/d$1;
 
-    iget-object v2, v2, Lcom/panasonic/avc/cng/application/d$1;->a:Lcom/panasonic/avc/cng/application/d;
+    iget-object v2, v2, Lcom/panasonic/avc/cng/application/d$1;->a:Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportActivity;
 
-    invoke-virtual {v2, v0, v1}, Lcom/panasonic/avc/cng/application/d;->startActivityForResult(Landroid/content/Intent;I)V
+    invoke-virtual {v2, v0, v1}, Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportActivity;->startActivityForResult(Landroid/content/Intent;I)V
 
     .line 358
     return-void

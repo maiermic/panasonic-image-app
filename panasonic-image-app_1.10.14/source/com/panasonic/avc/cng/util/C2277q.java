@@ -323,7 +323,7 @@ public class C2277q implements SensorEventListener {
             java.lang.StringBuilder r8 = r8.append(r9)
             java.lang.StringBuilder r8 = r8.append(r6)
             java.lang.String r8 = r8.toString()
-            com.panasonic.avc.cng.util.C2261g.m9769c(r5, r8)
+            com.panasonic.avc.cng.util.ImageAppLog.error(r5, r8)
         L_0x0157:
             boolean r5 = r14.f7039g
             if (r5 != 0) goto L_0x016a
@@ -332,7 +332,7 @@ public class C2277q implements SensorEventListener {
             if (r5 <= 0) goto L_0x016a
             java.lang.String r5 = "TEST"
             java.lang.String r6 = "Hit!"
-            com.panasonic.avc.cng.util.C2261g.m9769c(r5, r6)
+            com.panasonic.avc.cng.util.ImageAppLog.error(r5, r6)
             r14.f7039g = r1
         L_0x016a:
             boolean r5 = r14.f7039g

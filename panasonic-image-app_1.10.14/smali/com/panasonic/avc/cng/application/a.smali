@@ -53,11 +53,11 @@
     const/4 v4, 0x1
 
     .line 167
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v1
 
@@ -495,11 +495,11 @@
     if-eqz v2, :cond_17
 
     .line 246
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v1
 
-    invoke-virtual {v1, v0}, Lcom/panasonic/avc/cng/model/g;->a(Lcom/panasonic/avc/cng/model/f;)V
+    invoke-virtual {v1, v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a(Lcom/panasonic/avc/cng/model/f;)V
 
     .line 250
     invoke-static {p0}, Lcom/panasonic/avc/cng/application/a;->a(Landroid/content/Context;)Z
@@ -675,11 +675,11 @@
 
     .prologue
     .line 676
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
@@ -759,7 +759,7 @@
     if-eqz p0, :cond_2
 
     .line 715
-    invoke-static {p1, v0}, Lcom/panasonic/avc/cng/model/service/z;->a(Landroid/content/Context;Z)Lcom/panasonic/avc/cng/model/service/e;
+    invoke-static {p1, v0}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->a(Landroid/content/Context;Z)Lcom/panasonic/avc/cng/model/service/e;
 
     move-result-object v1
 
@@ -767,7 +767,7 @@
     if-eqz v1, :cond_2
 
     .line 718
-    invoke-interface {v1}, Lcom/panasonic/avc/cng/model/service/e;->i()Lcom/panasonic/avc/cng/model/c/e;
+    invoke-interface {v1}, Lcom/panasonic/avc/cng/model/service/e;->i()Lcom/panasonic/avc/cng/model/c/CameraStatus;
 
     move-result-object v1
 
@@ -781,13 +781,13 @@
 
     .line 725
     :cond_1
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/model/c/e;->E()Ljava/lang/String;
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->E()Ljava/lang/String;
 
     move-result-object v2
 
     if-eqz v2, :cond_2
 
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/model/c/e;->E()Ljava/lang/String;
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->E()Ljava/lang/String;
 
     move-result-object v2
 
@@ -798,7 +798,7 @@
     if-lez v2, :cond_2
 
     .line 726
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/model/c/e;->E()Ljava/lang/String;
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->E()Ljava/lang/String;
 
     move-result-object v1
 
@@ -837,11 +837,11 @@
     const/4 v5, 0x1
 
     .line 282
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v1
 
@@ -880,11 +880,11 @@
     if-eqz v1, :cond_4
 
     .line 292
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v1
 
-    invoke-virtual {v1, v0}, Lcom/panasonic/avc/cng/model/g;->a(Lcom/panasonic/avc/cng/model/f;)V
+    invoke-virtual {v1, v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a(Lcom/panasonic/avc/cng/model/f;)V
 
     .line 296
     invoke-static {p0}, Lcom/panasonic/avc/cng/application/a;->a(Landroid/content/Context;)Z
@@ -1156,11 +1156,11 @@
     const/4 v1, 0x1
 
     .line 385
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v3
 
@@ -1194,7 +1194,7 @@
     const/4 v0, 0x0
 
     .line 397
-    invoke-static {p0, v1}, Lcom/panasonic/avc/cng/model/service/z;->a(Landroid/content/Context;Z)Lcom/panasonic/avc/cng/model/service/e;
+    invoke-static {p0, v1}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->a(Landroid/content/Context;Z)Lcom/panasonic/avc/cng/model/service/e;
 
     move-result-object v4
 
@@ -1202,14 +1202,14 @@
     if-eqz v4, :cond_2
 
     .line 399
-    invoke-interface {v4}, Lcom/panasonic/avc/cng/model/service/e;->i()Lcom/panasonic/avc/cng/model/c/e;
+    invoke-interface {v4}, Lcom/panasonic/avc/cng/model/service/e;->i()Lcom/panasonic/avc/cng/model/c/CameraStatus;
 
     move-result-object v4
 
     .line 400
     if-eqz v4, :cond_2
 
-    invoke-virtual {v4}, Lcom/panasonic/avc/cng/model/c/e;->m()Z
+    invoke-virtual {v4}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->m()Z
 
     move-result v4
 
@@ -1443,7 +1443,7 @@
     move-result-object v0
 
     .line 470
-    invoke-static {p0, v1}, Lcom/panasonic/avc/cng/model/service/z;->a(Landroid/content/Context;Z)Lcom/panasonic/avc/cng/model/service/e;
+    invoke-static {p0, v1}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->a(Landroid/content/Context;Z)Lcom/panasonic/avc/cng/model/service/e;
 
     move-result-object v4
 
@@ -1451,14 +1451,14 @@
     if-eqz v4, :cond_f
 
     .line 472
-    invoke-interface {v4}, Lcom/panasonic/avc/cng/model/service/e;->i()Lcom/panasonic/avc/cng/model/c/e;
+    invoke-interface {v4}, Lcom/panasonic/avc/cng/model/service/e;->i()Lcom/panasonic/avc/cng/model/c/CameraStatus;
 
     move-result-object v4
 
     .line 473
     if-eqz v4, :cond_f
 
-    invoke-virtual {v4}, Lcom/panasonic/avc/cng/model/c/e;->m()Z
+    invoke-virtual {v4}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->m()Z
 
     move-result v4
 
@@ -2035,11 +2035,11 @@
 
     .prologue
     .line 622
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
@@ -2083,11 +2083,11 @@
 
     .prologue
     .line 636
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
@@ -2131,11 +2131,11 @@
 
     .prologue
     .line 650
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 

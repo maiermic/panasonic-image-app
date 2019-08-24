@@ -43,9 +43,9 @@
     .line 765
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ac$a$2;->a:Lcom/panasonic/avc/cng/view/setting/ac$a;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/ac$a;->a:Lcom/panasonic/avc/cng/view/setting/ac;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/ac$a;->a:Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionMovieMakingViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/ac;->m(Lcom/panasonic/avc/cng/view/setting/ac;)Lcom/panasonic/avc/cng/view/setting/ac$c;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionMovieMakingViewModel;->m(Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionMovieMakingViewModel;)Lcom/panasonic/avc/cng/view/setting/ac$c;
 
     move-result-object v0
 
@@ -54,9 +54,9 @@
     .line 767
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ac$a$2;->a:Lcom/panasonic/avc/cng/view/setting/ac$a;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/ac$a;->a:Lcom/panasonic/avc/cng/view/setting/ac;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/ac$a;->a:Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionMovieMakingViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/ac;->m(Lcom/panasonic/avc/cng/view/setting/ac;)Lcom/panasonic/avc/cng/view/setting/ac$c;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionMovieMakingViewModel;->m(Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionMovieMakingViewModel;)Lcom/panasonic/avc/cng/view/setting/ac$c;
 
     move-result-object v0
 

@@ -57,7 +57,7 @@
     :cond_0
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/RegistEquipmentActivity$5;->a:Lcom/panasonic/avc/cng/view/setting/RegistEquipmentActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;)V
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;)V
 
     .line 253
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/RegistEquipmentActivity$5;->a:Lcom/panasonic/avc/cng/view/setting/RegistEquipmentActivity;
@@ -66,7 +66,7 @@
 
     const/4 v2, 0x0
 
-    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     goto :goto_0
 .end method

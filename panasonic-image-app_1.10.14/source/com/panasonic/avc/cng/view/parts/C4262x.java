@@ -6,7 +6,7 @@ import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.C1833c;
 import com.panasonic.avc.cng.model.C1878d;
 import com.panasonic.avc.cng.model.service.C1921a;
-import com.panasonic.avc.cng.model.service.p054a.C1936c;
+import com.panasonic.avc.cng.model.service.p054a.BrowserServiceCamera;
 import com.panasonic.avc.cng.p038a.C1342a;
 import com.panasonic.avc.cng.p038a.C1344c;
 
@@ -118,7 +118,7 @@ public class C4262x extends C1342a {
 
     /* renamed from: c */
     public C1878d mo10029c() {
-        if (this.f14307m != null && this.f14305k == null && (this.f14307m instanceof C1936c)) {
+        if (this.f14307m != null && this.f14305k == null && (this.f14307m instanceof BrowserServiceCamera)) {
             mo10028a(this.f14307m.mo5036b(this.f14306l));
         }
         return this.f14305k;

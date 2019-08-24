@@ -259,16 +259,16 @@
     move-result v0
 
     .line 201
-    invoke-static {v1}, Lcom/panasonic/avc/cng/util/g;->a(Z)V
+    invoke-static {v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(Z)V
 
     .line 202
-    invoke-static {v2}, Lcom/panasonic/avc/cng/util/g;->b(Z)V
+    invoke-static {v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->b(Z)V
 
     .line 203
-    invoke-static {v3}, Lcom/panasonic/avc/cng/util/f;->a(Z)V
+    invoke-static {v3}, Lcom/panasonic/avc/cng/util/ImageAppCmdLog;->a(Z)V
 
     .line 204
-    invoke-static {v0}, Lcom/panasonic/avc/cng/util/f;->b(Z)V
+    invoke-static {v0}, Lcom/panasonic/avc/cng/util/ImageAppCmdLog;->b(Z)V
 
     .line 208
     :cond_0

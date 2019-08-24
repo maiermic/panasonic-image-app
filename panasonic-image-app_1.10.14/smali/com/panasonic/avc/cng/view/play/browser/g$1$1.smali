@@ -51,11 +51,11 @@
     .line 442
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/g$1$1;->a:Lcom/panasonic/avc/cng/view/play/browser/g$1;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/browser/g$1;->a:Lcom/panasonic/avc/cng/view/play/browser/g;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/browser/g$1;->a:Lcom/panasonic/avc/cng/view/play/browser/MainBrowserViewModel;
 
     const/4 v1, 0x1
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/play/browser/g;->a(Lcom/panasonic/avc/cng/view/play/browser/g;Z)Z
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/play/browser/MainBrowserViewModel;->a(Lcom/panasonic/avc/cng/view/play/browser/MainBrowserViewModel;Z)Z
 
     .line 443
     return-void
@@ -68,11 +68,11 @@
     .line 437
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/g$1$1;->a:Lcom/panasonic/avc/cng/view/play/browser/g$1;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/browser/g$1;->a:Lcom/panasonic/avc/cng/view/play/browser/g;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/browser/g$1;->a:Lcom/panasonic/avc/cng/view/play/browser/MainBrowserViewModel;
 
     const/4 v1, 0x1
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/play/browser/g;->a(Lcom/panasonic/avc/cng/view/play/browser/g;Z)Z
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/play/browser/MainBrowserViewModel;->a(Lcom/panasonic/avc/cng/view/play/browser/MainBrowserViewModel;Z)Z
 
     .line 438
     return-void

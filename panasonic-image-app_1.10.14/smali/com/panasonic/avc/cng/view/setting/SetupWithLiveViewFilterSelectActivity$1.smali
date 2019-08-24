@@ -43,11 +43,11 @@
     .line 53
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewFilterSelectActivity$1;->a:Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewFilterSelectActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewFilterSelectActivity;->a(Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewFilterSelectActivity;)Lcom/panasonic/avc/cng/view/setting/as;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewFilterSelectActivity;->a(Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewFilterSelectActivity;)Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewFilterSelectViewModel;
 
     move-result-object v0
 
-    invoke-virtual {v0, p1}, Lcom/panasonic/avc/cng/view/setting/as;->a(I)V
+    invoke-virtual {v0, p1}, Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewFilterSelectViewModel;->a(I)V
 
     .line 54
     return-void

@@ -53,7 +53,7 @@
     .line 266
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity$a;->a:Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;->b(Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;)Lcom/panasonic/avc/cng/view/a/d;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;->b(Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;)Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
     move-result-object v0
 
@@ -61,7 +61,7 @@
 
     invoke-direct {v1, p0}, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity$a$1;-><init>(Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity$a;)V
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/a/d;->a(Ljava/lang/Runnable;)Z
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;->a(Ljava/lang/Runnable;)Z
 
     .line 270
     return-void
@@ -82,7 +82,7 @@
     .line 318
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity$a;->a:Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;->f(Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;)Lcom/panasonic/avc/cng/view/a/d;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;->f(Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;)Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
     move-result-object v0
 
@@ -90,7 +90,7 @@
 
     invoke-direct {v1, p0}, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity$a$4;-><init>(Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity$a;)V
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/a/d;->a(Ljava/lang/Runnable;)Z
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;->a(Ljava/lang/Runnable;)Z
 
     .line 322
     return-void
@@ -111,7 +111,7 @@
     .line 277
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity$a;->a:Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;->c(Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;)Lcom/panasonic/avc/cng/view/a/d;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;->c(Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;)Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
     move-result-object v0
 
@@ -125,7 +125,7 @@
     :cond_0
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity$a;->a:Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;->d(Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;)Lcom/panasonic/avc/cng/view/a/d;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;->d(Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;)Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
     move-result-object v0
 
@@ -133,7 +133,7 @@
 
     invoke-direct {v1, p0}, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity$a$2;-><init>(Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity$a;)V
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/a/d;->a(Ljava/lang/Runnable;)Z
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;->a(Ljava/lang/Runnable;)Z
 
     goto :goto_0
 .end method
@@ -145,7 +145,7 @@
     .line 295
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity$a;->a:Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;->e(Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;)Lcom/panasonic/avc/cng/view/a/d;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;->e(Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;)Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
     move-result-object v0
 
@@ -153,7 +153,7 @@
 
     invoke-direct {v1, p0}, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity$a$3;-><init>(Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity$a;)V
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/a/d;->a(Ljava/lang/Runnable;)Z
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;->a(Ljava/lang/Runnable;)Z
 
     .line 299
     return-void

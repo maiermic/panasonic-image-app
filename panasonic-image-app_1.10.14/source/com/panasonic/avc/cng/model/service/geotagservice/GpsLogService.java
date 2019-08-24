@@ -20,7 +20,7 @@ import android.view.View;
 import android.widget.Toast;
 import com.panasonic.avc.cng.imageapp.C1701a.C1702a;
 import com.panasonic.avc.cng.imageapp.R;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -148,7 +148,7 @@ public class GpsLogService extends Service implements Listener, LocationListener
             edit.putBoolean("GeotagLogEnabled", true);
             edit.commit();
             if (!this.f6404c && !z) {
-                new C2077c(getApplicationContext()).mo5449a(getResources().getString(R.string.geotag_worklog_status_on));
+                new GeotagLogRecord(getApplicationContext()).mo5449a(getResources().getString(R.string.geotag_worklog_status_on));
             }
             this.f6404c = true;
             this.f6405d = true;
@@ -178,7 +178,7 @@ public class GpsLogService extends Service implements Listener, LocationListener
                 edit.putBoolean("GeotagLogEnabled", false);
                 edit.commit();
                 if (!z) {
-                    new C2077c(getApplicationContext()).mo5449a(getResources().getString(R.string.geotag_worklog_status_off));
+                    new GeotagLogRecord(getApplicationContext()).mo5449a(getResources().getString(R.string.geotag_worklog_status_off));
                 }
                 this.f6404c = false;
                 m8611c();
@@ -200,7 +200,7 @@ public class GpsLogService extends Service implements Listener, LocationListener
         if (z) {
             m8603a(true);
         }
-        new C2077c(getApplicationContext()).mo5449a(getResources().getString(R.string.geotag_worklog_status_delege_gps_data));
+        new GeotagLogRecord(getApplicationContext()).mo5449a(getResources().getString(R.string.geotag_worklog_status_delege_gps_data));
     }
 
     /* access modifiers changed from: private */
@@ -352,22 +352,22 @@ public class GpsLogService extends Service implements Listener, LocationListener
     }
 
     public void onProviderDisabled(String str) {
-        C2261g.m9763a("GPS", "onProviderDisabled(" + str + ")");
+        ImageAppLog.debug("GPS", "onProviderDisabled(" + str + ")");
         m8609b(false);
     }
 
     public void onProviderEnabled(String str) {
-        C2261g.m9763a("GPS", "onProviderEnabled");
+        ImageAppLog.debug("GPS", "onProviderEnabled");
     }
 
     public void onStatusChanged(String str, int i, Bundle bundle) {
-        C2261g.m9763a("GPS", "onStatusChanged");
+        ImageAppLog.debug("GPS", "onStatusChanged");
     }
 
     public void onGpsStatusChanged(int i) {
         switch (i) {
             case 1:
-                C2261g.m9763a("GPS", "GPS_EVENT_STARTED");
+                ImageAppLog.debug("GPS", "GPS_EVENT_STARTED");
                 if (this.f6404c && this.f6403b == null) {
                     m8611c();
                     m8604b();
@@ -375,10 +375,10 @@ public class GpsLogService extends Service implements Listener, LocationListener
                 }
                 return;
             case 2:
-                C2261g.m9763a("GPS", "GPS_EVENT_STOPPED");
+                ImageAppLog.debug("GPS", "GPS_EVENT_STOPPED");
                 return;
             case 3:
-                C2261g.m9763a("GPS", "GPS_EVENT_FIRST_FIX");
+                ImageAppLog.debug("GPS", "GPS_EVENT_FIRST_FIX");
                 return;
             default:
                 return;

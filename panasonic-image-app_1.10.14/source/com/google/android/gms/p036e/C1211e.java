@@ -4,7 +4,7 @@ import android.content.Context;
 import android.os.Process;
 import com.google.android.gms.common.util.C0688c;
 import com.google.android.gms.common.util.C0689d;
-import com.google.android.gms.p029a.p030a.C0519a.C0520a;
+import com.google.android.gms.p029a.p030a.AdvertisingIdClient.C0520a;
 
 /* renamed from: com.google.android.gms.e.e */
 public final class C1211e {

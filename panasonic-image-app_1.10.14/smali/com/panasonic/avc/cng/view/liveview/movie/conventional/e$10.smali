@@ -47,18 +47,18 @@
     .line 900
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/e$10;->b:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/e;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/e;->f(Lcom/panasonic/avc/cng/view/liveview/movie/conventional/e;)Lcom/panasonic/avc/cng/core/a/t;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/e;->f(Lcom/panasonic/avc/cng/view/liveview/movie/conventional/e;)Lcom/panasonic/avc/cng/core/a/LiveViewOperationCommand;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/e$10;->a:Ljava/lang/String;
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/core/a/t;->c(Ljava/lang/String;)Lcom/panasonic/avc/cng/model/c/h;
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/core/a/LiveViewOperationCommand;->c(Ljava/lang/String;)Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
     move-result-object v0
 
     .line 901
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/h;->e()Z
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;->e()Z
 
     move-result v1
 
@@ -89,7 +89,7 @@
 
     .line 908
     :cond_1
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/h;->a()Z
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;->a()Z
 
     move-result v0
 

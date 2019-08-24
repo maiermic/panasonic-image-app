@@ -48,7 +48,7 @@ public class C2257c {
                     options.inSampleSize = i3;
                 }
             }
-            C2261g.m9770d(f6987a, String.format("inSampleSize[%d], BMP[%d:%d], DISP[%f:%f]", new Object[]{Integer.valueOf(options.inSampleSize), Integer.valueOf(options.outWidth), Integer.valueOf(options.outHeight), Double.valueOf(d2), Double.valueOf(d3)}));
+            ImageAppLog.verbose(f6987a, String.format("inSampleSize[%d], BMP[%d:%d], DISP[%f:%f]", new Object[]{Integer.valueOf(options.inSampleSize), Integer.valueOf(options.outWidth), Integer.valueOf(options.outHeight), Double.valueOf(d2), Double.valueOf(d3)}));
             options.inJustDecodeBounds = false;
             bitmap = BitmapFactory.decodeFile(str, options);
             if (attributeInt == 0 || attributeInt == 1) {
@@ -139,7 +139,7 @@ public class C2257c {
                     options.inSampleSize = i4;
                 }
             }
-            C2261g.m9770d(f6987a, String.format("inSampleSize[%d], BMP[%d:%d], DISP[%f:%f]", new Object[]{Integer.valueOf(options.inSampleSize), Integer.valueOf(options.outWidth), Integer.valueOf(options.outHeight), Double.valueOf(d), Double.valueOf(d2)}));
+            ImageAppLog.verbose(f6987a, String.format("inSampleSize[%d], BMP[%d:%d], DISP[%f:%f]", new Object[]{Integer.valueOf(options.inSampleSize), Integer.valueOf(options.outWidth), Integer.valueOf(options.outHeight), Double.valueOf(d), Double.valueOf(d2)}));
             options.inJustDecodeBounds = false;
             bitmap = BitmapFactory.decodeFile(str, options);
             if (attributeInt == 0 || attributeInt == 1) {

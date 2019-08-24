@@ -9,7 +9,7 @@ import com.panasonic.avc.cng.model.service.C1921a;
 import com.panasonic.avc.cng.model.service.C1921a.C1924c;
 import com.panasonic.avc.cng.model.service.C2137j.C2140c;
 import com.panasonic.avc.cng.model.service.C2252y;
-import com.panasonic.avc.cng.model.service.C2253z;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
 import com.panasonic.avc.cng.p038a.C1344c;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -164,7 +164,7 @@ public class C1932b extends C2252y {
         private void m7831a() {
             C1924c cVar;
             int i;
-            this.f5903b.f5879d = C2253z.m9695c(this.f5903b.f6947a, null);
+            this.f5903b.f5879d = ServiceFactory.m9695c(this.f5903b.f6947a, null);
             if (this.f5903b.f5879d instanceof C1924c) {
                 cVar = (C1924c) this.f5903b.f5879d;
             } else {

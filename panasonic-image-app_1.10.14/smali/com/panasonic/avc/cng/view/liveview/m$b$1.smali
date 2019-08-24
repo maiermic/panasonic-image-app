@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/view/liveview/m$b;->a(Lcom/panasonic/avc/cng/model/c/e;)V
+    value = Lcom/panasonic/avc/cng/view/liveview/m$b;->a(Lcom/panasonic/avc/cng/model/c/CameraStatus;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -262,7 +262,7 @@
 
     move-result-object v0
 
-    invoke-interface {v0}, Lcom/panasonic/avc/cng/model/service/e;->i()Lcom/panasonic/avc/cng/model/c/e;
+    invoke-interface {v0}, Lcom/panasonic/avc/cng/model/service/e;->i()Lcom/panasonic/avc/cng/model/c/CameraStatus;
 
     move-result-object v4
 
@@ -280,7 +280,7 @@
 
     iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/m$b;->a:Lcom/panasonic/avc/cng/view/liveview/m;
 
-    invoke-static {v0, v4}, Lcom/panasonic/avc/cng/view/liveview/m;->a(Lcom/panasonic/avc/cng/view/liveview/m;Lcom/panasonic/avc/cng/model/c/e;)V
+    invoke-static {v0, v4}, Lcom/panasonic/avc/cng/view/liveview/m;->a(Lcom/panasonic/avc/cng/view/liveview/m;Lcom/panasonic/avc/cng/model/c/CameraStatus;)V
 
     .line 3601
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/m$b$1;->e:Lcom/panasonic/avc/cng/view/liveview/m$b;
@@ -299,7 +299,7 @@
 
     if-eqz v4, :cond_a
 
-    invoke-virtual {v4}, Lcom/panasonic/avc/cng/model/c/e;->n()Z
+    invoke-virtual {v4}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->n()Z
 
     move-result v0
 
@@ -319,7 +319,7 @@
 
     if-eqz v4, :cond_b
 
-    invoke-virtual {v4}, Lcom/panasonic/avc/cng/model/c/e;->n()Z
+    invoke-virtual {v4}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->n()Z
 
     move-result v0
 
@@ -380,7 +380,7 @@
 
     move-result-object v4
 
-    invoke-static {v0, v4}, Lcom/panasonic/avc/cng/util/g;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v4}, Lcom/panasonic/avc/cng/util/ImageAppLog;->verbose(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 3614
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/m$b$1;->e:Lcom/panasonic/avc/cng/view/liveview/m$b;
@@ -458,7 +458,7 @@
 
     move-result-object v4
 
-    invoke-static {v0, v4}, Lcom/panasonic/avc/cng/util/g;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v4}, Lcom/panasonic/avc/cng/util/ImageAppLog;->verbose(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 3622
     :cond_4

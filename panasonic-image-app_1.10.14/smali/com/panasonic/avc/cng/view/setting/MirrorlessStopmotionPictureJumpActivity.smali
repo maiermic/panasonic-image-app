@@ -34,9 +34,9 @@
     invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpActivity;->a(Z)V
 
     .line 14
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionPictureJumpActivity;->d:Lcom/panasonic/avc/cng/view/smartoperation/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionPictureJumpActivity;->d:Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;
 
-    invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/view/smartoperation/i;->a(Z)V
+    invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;->a(Z)V
 
     .line 17
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionPictureJumpActivity;->g:Lcom/panasonic/avc/cng/view/parts/PictureJumpView;
@@ -76,15 +76,15 @@
     .line 26
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionPictureJumpActivity;->g:Lcom/panasonic/avc/cng/view/parts/PictureJumpView;
 
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionPictureJumpActivity;->d:Lcom/panasonic/avc/cng/view/smartoperation/i;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionPictureJumpActivity;->d:Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;
 
-    invoke-virtual {v1, v3}, Lcom/panasonic/avc/cng/view/smartoperation/i;->f(I)Landroid/graphics/Bitmap;
+    invoke-virtual {v1, v3}, Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;->f(I)Landroid/graphics/Bitmap;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionPictureJumpActivity;->d:Lcom/panasonic/avc/cng/view/smartoperation/i;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionPictureJumpActivity;->d:Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;
 
-    invoke-virtual {v2, v3}, Lcom/panasonic/avc/cng/view/smartoperation/i;->e(I)Ljava/lang/String;
+    invoke-virtual {v2, v3}, Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;->e(I)Ljava/lang/String;
 
     move-result-object v2
 

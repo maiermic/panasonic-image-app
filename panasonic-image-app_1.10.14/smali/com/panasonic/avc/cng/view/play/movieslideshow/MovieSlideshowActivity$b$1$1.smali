@@ -53,7 +53,7 @@
 
     const-string v3, "0"
 
-    invoke-static {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;ILjava/lang/CharSequence;)V
+    invoke-static {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;ILjava/lang/CharSequence;)V
 
     .line 693
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowActivity$b$1$1;->a:Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowActivity$b$1;
@@ -68,7 +68,7 @@
 
     const v3, 0x7f070385
 
-    invoke-static {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/b/d;->c(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;II)V
+    invoke-static {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->c(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;II)V
 
     .line 694
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowActivity$b$1$1;->a:Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowActivity$b$1;
@@ -83,7 +83,7 @@
 
     const/4 v3, 0x4
 
-    invoke-static {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/b/d;->e(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;II)V
+    invoke-static {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->e(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;II)V
 
     .line 695
     return-void

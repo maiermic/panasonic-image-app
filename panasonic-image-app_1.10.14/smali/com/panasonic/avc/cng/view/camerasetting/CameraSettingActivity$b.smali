@@ -67,14 +67,14 @@
     return-void
 .end method
 
-.method public a(Lcom/panasonic/avc/cng/model/c/e;)V
+.method public a(Lcom/panasonic/avc/cng/model/c/CameraStatus;)V
     .locals 2
 
     .prologue
     .line 939
     if-eqz p1, :cond_0
 
-    invoke-static {p1}, Lcom/panasonic/avc/cng/model/c/e;->a(Lcom/panasonic/avc/cng/model/c/e;)Z
+    invoke-static {p1}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->a(Lcom/panasonic/avc/cng/model/c/CameraStatus;)Z
 
     move-result v0
 

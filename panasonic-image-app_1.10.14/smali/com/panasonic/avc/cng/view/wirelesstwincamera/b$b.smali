@@ -70,11 +70,11 @@
 
     .prologue
     .line 1305
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
@@ -121,12 +121,12 @@
     return-void
 .end method
 
-.method public a(Lcom/panasonic/avc/cng/model/c/e;)V
+.method public a(Lcom/panasonic/avc/cng/model/c/CameraStatus;)V
     .locals 2
 
     .prologue
     .line 1206
-    invoke-static {p1}, Lcom/panasonic/avc/cng/model/c/e;->a(Lcom/panasonic/avc/cng/model/c/e;)Z
+    invoke-static {p1}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->a(Lcom/panasonic/avc/cng/model/c/CameraStatus;)Z
 
     move-result v0
 
@@ -139,7 +139,7 @@
 
     move-result v0
 
-    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/e;->m()Z
+    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->m()Z
 
     move-result v1
 
@@ -154,14 +154,14 @@
     :cond_0
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/wirelesstwincamera/b$b;->a:Lcom/panasonic/avc/cng/view/wirelesstwincamera/b;
 
-    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/e;->m()Z
+    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->m()Z
 
     move-result v1
 
     invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/wirelesstwincamera/b;->b(Lcom/panasonic/avc/cng/view/wirelesstwincamera/b;Z)Z
 
     .line 1221
-    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/e;->l()I
+    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->l()I
 
     move-result v0
 
@@ -170,7 +170,7 @@
     .line 1222
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/wirelesstwincamera/b$b;->a:Lcom/panasonic/avc/cng/view/wirelesstwincamera/b;
 
-    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/e;->P()Z
+    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->P()Z
 
     move-result v1
 

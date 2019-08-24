@@ -53,7 +53,7 @@
     .line 177
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/sceneprotect/SceneProtectActivity$a;->a:Lcom/panasonic/avc/cng/view/play/sceneprotect/SceneProtectActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/sceneprotect/SceneProtectActivity;->b(Lcom/panasonic/avc/cng/view/play/sceneprotect/SceneProtectActivity;)Lcom/panasonic/avc/cng/view/a/d;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/sceneprotect/SceneProtectActivity;->b(Lcom/panasonic/avc/cng/view/play/sceneprotect/SceneProtectActivity;)Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
     move-result-object v0
 
@@ -61,7 +61,7 @@
 
     invoke-direct {v1, p0}, Lcom/panasonic/avc/cng/view/play/sceneprotect/SceneProtectActivity$a$1;-><init>(Lcom/panasonic/avc/cng/view/play/sceneprotect/SceneProtectActivity$a;)V
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/a/d;->a(Ljava/lang/Runnable;)Z
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;->a(Ljava/lang/Runnable;)Z
 
     .line 181
     return-void
@@ -82,7 +82,7 @@
     .line 242
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/sceneprotect/SceneProtectActivity$a;->a:Lcom/panasonic/avc/cng/view/play/sceneprotect/SceneProtectActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/sceneprotect/SceneProtectActivity;->h(Lcom/panasonic/avc/cng/view/play/sceneprotect/SceneProtectActivity;)Lcom/panasonic/avc/cng/view/a/d;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/sceneprotect/SceneProtectActivity;->h(Lcom/panasonic/avc/cng/view/play/sceneprotect/SceneProtectActivity;)Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
     move-result-object v0
 
@@ -90,7 +90,7 @@
 
     invoke-direct {v1, p0}, Lcom/panasonic/avc/cng/view/play/sceneprotect/SceneProtectActivity$a$4;-><init>(Lcom/panasonic/avc/cng/view/play/sceneprotect/SceneProtectActivity$a;)V
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/a/d;->a(Ljava/lang/Runnable;)Z
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;->a(Ljava/lang/Runnable;)Z
 
     .line 246
     return-void
@@ -111,7 +111,7 @@
     .line 188
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/sceneprotect/SceneProtectActivity$a;->a:Lcom/panasonic/avc/cng/view/play/sceneprotect/SceneProtectActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/sceneprotect/SceneProtectActivity;->c(Lcom/panasonic/avc/cng/view/play/sceneprotect/SceneProtectActivity;)Lcom/panasonic/avc/cng/view/a/d;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/sceneprotect/SceneProtectActivity;->c(Lcom/panasonic/avc/cng/view/play/sceneprotect/SceneProtectActivity;)Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
     move-result-object v0
 
@@ -125,7 +125,7 @@
     :cond_0
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/sceneprotect/SceneProtectActivity$a;->a:Lcom/panasonic/avc/cng/view/play/sceneprotect/SceneProtectActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/sceneprotect/SceneProtectActivity;->f(Lcom/panasonic/avc/cng/view/play/sceneprotect/SceneProtectActivity;)Lcom/panasonic/avc/cng/view/a/d;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/sceneprotect/SceneProtectActivity;->f(Lcom/panasonic/avc/cng/view/play/sceneprotect/SceneProtectActivity;)Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
     move-result-object v0
 
@@ -133,7 +133,7 @@
 
     invoke-direct {v1, p0}, Lcom/panasonic/avc/cng/view/play/sceneprotect/SceneProtectActivity$a$2;-><init>(Lcom/panasonic/avc/cng/view/play/sceneprotect/SceneProtectActivity$a;)V
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/a/d;->a(Ljava/lang/Runnable;)Z
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;->a(Ljava/lang/Runnable;)Z
 
     goto :goto_0
 .end method
@@ -145,7 +145,7 @@
     .line 219
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/sceneprotect/SceneProtectActivity$a;->a:Lcom/panasonic/avc/cng/view/play/sceneprotect/SceneProtectActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/sceneprotect/SceneProtectActivity;->g(Lcom/panasonic/avc/cng/view/play/sceneprotect/SceneProtectActivity;)Lcom/panasonic/avc/cng/view/a/d;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/sceneprotect/SceneProtectActivity;->g(Lcom/panasonic/avc/cng/view/play/sceneprotect/SceneProtectActivity;)Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
     move-result-object v0
 
@@ -153,7 +153,7 @@
 
     invoke-direct {v1, p0}, Lcom/panasonic/avc/cng/view/play/sceneprotect/SceneProtectActivity$a$3;-><init>(Lcom/panasonic/avc/cng/view/play/sceneprotect/SceneProtectActivity$a;)V
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/a/d;->a(Ljava/lang/Runnable;)Z
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;->a(Ljava/lang/Runnable;)Z
 
     .line 223
     return-void

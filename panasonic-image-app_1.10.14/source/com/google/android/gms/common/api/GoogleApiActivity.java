@@ -11,7 +11,7 @@ import android.os.Bundle;
 import android.util.Log;
 import com.google.android.gms.common.C0568a;
 import com.google.android.gms.common.C0602c;
-import com.google.android.gms.p035d.C0814ea;
+import com.google.android.gms.p035d.GoogleApiManager;
 
 public class GoogleApiActivity extends Activity implements OnCancelListener {
 
@@ -40,7 +40,7 @@ public class GoogleApiActivity extends Activity implements OnCancelListener {
             this.f1236a = 0;
             setResult(i2, intent);
             if (booleanExtra) {
-                C0814ea a = C0814ea.m3104a((Context) this);
+                GoogleApiManager a = GoogleApiManager.m3104a((Context) this);
                 switch (i2) {
                     case -1:
                         a.mo2120a();

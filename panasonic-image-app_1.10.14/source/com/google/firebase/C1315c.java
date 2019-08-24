@@ -9,6 +9,6 @@ final class C1315c implements C0801do {
 
     /* renamed from: a */
     public final void mo2098a(boolean z) {
-        C1307a.m5115a(z);
+        FirebaseApp.m5115a(z);
     }
 }

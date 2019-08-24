@@ -22,7 +22,7 @@
 
 .field private final c:Landroid/os/Handler;
 
-.field private final d:Lcom/google/android/gms/common/stats/a;
+.field private final d:Lcom/google/android/gms/common/stats/ConnectionTracker;
 
 .field private final e:J
 
@@ -57,11 +57,11 @@
 
     iput-object v0, p0, Lcom/google/android/gms/common/internal/f;->c:Landroid/os/Handler;
 
-    invoke-static {}, Lcom/google/android/gms/common/stats/a;->a()Lcom/google/android/gms/common/stats/a;
+    invoke-static {}, Lcom/google/android/gms/common/stats/ConnectionTracker;->a()Lcom/google/android/gms/common/stats/ConnectionTracker;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/google/android/gms/common/internal/f;->d:Lcom/google/android/gms/common/stats/a;
+    iput-object v0, p0, Lcom/google/android/gms/common/internal/f;->d:Lcom/google/android/gms/common/stats/ConnectionTracker;
 
     const-wide/16 v0, 0x1388
 
@@ -98,10 +98,10 @@
     return-object v0
 .end method
 
-.method static synthetic d(Lcom/google/android/gms/common/internal/f;)Lcom/google/android/gms/common/stats/a;
+.method static synthetic d(Lcom/google/android/gms/common/internal/f;)Lcom/google/android/gms/common/stats/ConnectionTracker;
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/gms/common/internal/f;->d:Lcom/google/android/gms/common/stats/a;
+    iget-object v0, p0, Lcom/google/android/gms/common/internal/f;->d:Lcom/google/android/gms/common/stats/ConnectionTracker;
 
     return-object v0
 .end method

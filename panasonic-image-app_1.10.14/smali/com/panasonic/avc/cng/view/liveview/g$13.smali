@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/view/liveview/g;->bE()Lcom/panasonic/avc/cng/view/liveview/e$e;
+    value = Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixCompactViewModel;->bE()Lcom/panasonic/avc/cng/view/liveview/e$e;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,20 +15,20 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/panasonic/avc/cng/view/liveview/g;
+.field final synthetic a:Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixCompactViewModel;
 
 
 # direct methods
-.method constructor <init>(Lcom/panasonic/avc/cng/view/liveview/g;)V
+.method constructor <init>(Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixCompactViewModel;)V
     .locals 1
 
     .prologue
     .line 1168
-    iput-object p1, p0, Lcom/panasonic/avc/cng/view/liveview/g$13;->a:Lcom/panasonic/avc/cng/view/liveview/g;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/view/liveview/g$13;->a:Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixCompactViewModel;
 
     const/4 v0, 0x0
 
-    invoke-direct {p0, p1, v0}, Lcom/panasonic/avc/cng/view/liveview/g$a;-><init>(Lcom/panasonic/avc/cng/view/liveview/g;Lcom/panasonic/avc/cng/view/liveview/g$1;)V
+    invoke-direct {p0, p1, v0}, Lcom/panasonic/avc/cng/view/liveview/g$a;-><init>(Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixCompactViewModel;Lcom/panasonic/avc/cng/view/liveview/g$1;)V
 
     return-void
 .end method
@@ -40,17 +40,17 @@
 
     .prologue
     .line 1174
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/g$13;->a:Lcom/panasonic/avc/cng/view/liveview/g;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/g$13;->a:Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixCompactViewModel;
 
-    iget-object v1, v0, Lcom/panasonic/avc/cng/view/liveview/g;->am:Ljava/lang/Object;
+    iget-object v1, v0, Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixCompactViewModel;->am:Ljava/lang/Object;
 
     monitor-enter v1
 
     .line 1176
     :try_start_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/g$13;->a:Lcom/panasonic/avc/cng/view/liveview/g;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/g$13;->a:Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixCompactViewModel;
 
-    invoke-virtual {v0, p1, p2}, Lcom/panasonic/avc/cng/view/liveview/g;->d(II)V
+    invoke-virtual {v0, p1, p2}, Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixCompactViewModel;->d(II)V
 
     .line 1177
     monitor-exit v1

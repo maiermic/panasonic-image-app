@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/panasonic/avc/cng/view/setting/y;
+    value = Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceViewModel;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,28 +18,28 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/panasonic/avc/cng/view/setting/y;
+.field final synthetic a:Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceViewModel;
 
 
 # direct methods
-.method private constructor <init>(Lcom/panasonic/avc/cng/view/setting/y;)V
+.method private constructor <init>(Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceViewModel;)V
     .locals 0
 
     .prologue
     .line 330
-    iput-object p1, p0, Lcom/panasonic/avc/cng/view/setting/y$a;->a:Lcom/panasonic/avc/cng/view/setting/y;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/view/setting/y$a;->a:Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceViewModel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/panasonic/avc/cng/view/setting/y;Lcom/panasonic/avc/cng/view/setting/y$1;)V
+.method synthetic constructor <init>(Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceViewModel;Lcom/panasonic/avc/cng/view/setting/y$1;)V
     .locals 0
 
     .prologue
     .line 330
-    invoke-direct {p0, p1}, Lcom/panasonic/avc/cng/view/setting/y$a;-><init>(Lcom/panasonic/avc/cng/view/setting/y;)V
+    invoke-direct {p0, p1}, Lcom/panasonic/avc/cng/view/setting/y$a;-><init>(Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceViewModel;)V
 
     return-void
 .end method

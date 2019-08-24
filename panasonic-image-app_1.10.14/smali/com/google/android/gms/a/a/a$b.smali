@@ -4,7 +4,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/google/android/gms/a/a/a;
+    value = Lcom/google/android/gms/a/a/AdvertisingIdClient;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -23,7 +23,7 @@
         value = {
             "Ljava/lang/ref/WeakReference",
             "<",
-            "Lcom/google/android/gms/a/a/a;",
+            "Lcom/google/android/gms/a/a/AdvertisingIdClient;",
             ">;"
         }
     .end annotation
@@ -33,7 +33,7 @@
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/android/gms/a/a/a;J)V
+.method public constructor <init>(Lcom/google/android/gms/a/a/AdvertisingIdClient;J)V
     .locals 2
 
     invoke-direct {p0}, Ljava/lang/Thread;-><init>()V
@@ -72,11 +72,11 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/google/android/gms/a/a/a;
+    check-cast v0, Lcom/google/android/gms/a/a/AdvertisingIdClient;
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {v0}, Lcom/google/android/gms/a/a/a;->b()V
+    invoke-virtual {v0}, Lcom/google/android/gms/a/a/AdvertisingIdClient;->b()V
 
     const/4 v0, 0x1
 

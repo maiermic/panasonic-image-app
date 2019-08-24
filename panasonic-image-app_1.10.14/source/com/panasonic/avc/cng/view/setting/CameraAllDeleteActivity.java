@@ -12,9 +12,9 @@ import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.C1892f;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
 import com.panasonic.avc.cng.view.p073b.C2376f.C2378b;
-import com.panasonic.avc.cng.view.setting.C5537al.C5540a;
+import com.panasonic.avc.cng.view.setting.SettingMenuBaseActivity.C5540a;
 import com.panasonic.avc.cng.view.setting.C5741i.C5759a;
 
 public class CameraAllDeleteActivity extends C5741i {
@@ -60,7 +60,7 @@ public class CameraAllDeleteActivity extends C5741i {
                             CameraAllDeleteActivity.this.f15807b = true;
                             Bundle bundle = new Bundle();
                             bundle.putInt(C2378b.NEGATIVE_BUTTON_TEXT_ID.name(), R.string.cmn_btn_cancel);
-                            C2331d.m10114a((Activity) CameraAllDeleteActivity.this, C2328a.ON_PROGRESS, bundle);
+                            DialogFactory.m10114a((Activity) CameraAllDeleteActivity.this, C2328a.ON_PROGRESS, bundle);
                         }
                     });
                 }
@@ -103,7 +103,7 @@ public class CameraAllDeleteActivity extends C5741i {
     }
 
     public void finish() {
-        C2331d.m10100a((Activity) this);
+        DialogFactory.m10100a((Activity) this);
         OnSetResult();
         super.finish();
     }
@@ -174,8 +174,8 @@ public class CameraAllDeleteActivity extends C5741i {
                         public void mo3762a() {
                             CameraAllDeleteActivity.this._handler.post(new Runnable() {
                                 public void run() {
-                                    C2331d.m10100a((Activity) CameraAllDeleteActivity.this);
-                                    C2331d.m10114a((Activity) CameraAllDeleteActivity.this, C2328a.ON_PROGRESS, (Bundle) null);
+                                    DialogFactory.m10100a((Activity) CameraAllDeleteActivity.this);
+                                    DialogFactory.m10114a((Activity) CameraAllDeleteActivity.this, C2328a.ON_PROGRESS, (Bundle) null);
                                 }
                             });
                         }

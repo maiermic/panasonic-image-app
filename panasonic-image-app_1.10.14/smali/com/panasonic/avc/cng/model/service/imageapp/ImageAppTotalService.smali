@@ -28,7 +28,7 @@
 
 
 # instance fields
-.field private A:Lcom/panasonic/avc/cng/core/a/ao;
+.field private A:Lcom/panasonic/avc/cng/core/a/StatusCommand;
 
 .field private B:Z
 
@@ -100,9 +100,9 @@
 
 .field private i:Lcom/panasonic/avc/cng/model/service/j$d;
 
-.field private j:Lcom/panasonic/avc/cng/model/service/p/a;
+.field private j:Lcom/panasonic/avc/cng/model/service/p/WifiService;
 
-.field private k:Lcom/panasonic/avc/cng/model/service/a/a;
+.field private k:Lcom/panasonic/avc/cng/model/service/a/BrowseMenuService;
 
 .field private l:Lcom/panasonic/avc/cng/model/service/a/b;
 
@@ -223,7 +223,7 @@
     iput-boolean v3, p0, Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService;->z:Z
 
     .line 360
-    iput-object v2, p0, Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService;->A:Lcom/panasonic/avc/cng/core/a/ao;
+    iput-object v2, p0, Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService;->A:Lcom/panasonic/avc/cng/core/a/StatusCommand;
 
     .line 362
     iput-boolean v1, p0, Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService;->B:Z
@@ -348,12 +348,12 @@
     return-void
 .end method
 
-.method static synthetic C(Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService;)Lcom/panasonic/avc/cng/core/a/ao;
+.method static synthetic C(Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService;)Lcom/panasonic/avc/cng/core/a/StatusCommand;
     .locals 1
 
     .prologue
     .line 92
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService;->A:Lcom/panasonic/avc/cng/core/a/ao;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService;->A:Lcom/panasonic/avc/cng/core/a/StatusCommand;
 
     return-object v0
 .end method
@@ -398,12 +398,12 @@
     return-object v0
 .end method
 
-.method static synthetic H(Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService;)Lcom/panasonic/avc/cng/model/service/a/a;
+.method static synthetic H(Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService;)Lcom/panasonic/avc/cng/model/service/a/BrowseMenuService;
     .locals 1
 
     .prologue
     .line 92
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService;->k:Lcom/panasonic/avc/cng/model/service/a/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService;->k:Lcom/panasonic/avc/cng/model/service/a/BrowseMenuService;
 
     return-object v0
 .end method
@@ -448,12 +448,12 @@
     return-object p1
 .end method
 
-.method static synthetic a(Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService;Lcom/panasonic/avc/cng/core/a/ao;)Lcom/panasonic/avc/cng/core/a/ao;
+.method static synthetic a(Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService;Lcom/panasonic/avc/cng/core/a/StatusCommand;)Lcom/panasonic/avc/cng/core/a/StatusCommand;
     .locals 0
 
     .prologue
     .line 92
-    iput-object p1, p0, Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService;->A:Lcom/panasonic/avc/cng/core/a/ao;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService;->A:Lcom/panasonic/avc/cng/core/a/StatusCommand;
 
     return-object p1
 .end method
@@ -679,7 +679,7 @@
 
     move-result-object v0
 
-    invoke-static {v1, v0}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v0}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 3714
     :cond_2
@@ -708,7 +708,7 @@
 
     const-string v3, "GPS Check Start"
 
-    invoke-static {v0, v3}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v3}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 4270
     if-eqz p2, :cond_0
@@ -753,7 +753,7 @@
 
     move-result-object v3
 
-    invoke-static {v0, v3}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v3}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 4278
     const-wide/32 v4, 0x1d4c0
@@ -806,7 +806,7 @@
 
     move-result-object v6
 
-    invoke-static {v5, v6}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v5, v6}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 4282
     const-string v5, "ImageAppTotalService"
@@ -829,7 +829,7 @@
 
     move-result-object v6
 
-    invoke-static {v5, v6}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v5, v6}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 4283
     const-string v5, "ImageAppTotalService"
@@ -852,7 +852,7 @@
 
     move-result-object v6
 
-    invoke-static {v5, v6}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v5, v6}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 4286
     if-eqz v4, :cond_5
@@ -862,7 +862,7 @@
 
     const-string v2, "New Data1"
 
-    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     goto/16 :goto_0
 
@@ -893,7 +893,7 @@
 
     const-string v1, "Invalid Data1"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     move v1, v2
 
@@ -926,7 +926,7 @@
 
     move-result-object v4
 
-    invoke-static {v3, v4}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v3, v4}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 4297
     const-string v3, "ImageAppTotalService"
@@ -953,7 +953,7 @@
 
     move-result-object v4
 
-    invoke-static {v3, v4}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v3, v4}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 4298
     invoke-virtual {p1}, Landroid/location/Location;->getAccuracy()F
@@ -989,7 +989,7 @@
 
     move-result-object v5
 
-    invoke-static {v4, v5}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v4, v5}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 4300
     if-lez v3, :cond_7
@@ -1032,7 +1032,7 @@
 
     move-result-object v7
 
-    invoke-static {v6, v7}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v6, v7}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 4304
     const-string v6, "ImageAppTotalService"
@@ -1055,7 +1055,7 @@
 
     move-result-object v7
 
-    invoke-static {v6, v7}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v6, v7}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 4305
     const-string v6, "ImageAppTotalService"
@@ -1078,7 +1078,7 @@
 
     move-result-object v7
 
-    invoke-static {v6, v7}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v6, v7}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 4308
     invoke-virtual {p1}, Landroid/location/Location;->getProvider()Ljava/lang/String;
@@ -1114,7 +1114,7 @@
 
     move-result-object v8
 
-    invoke-static {v7, v8}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v7, v8}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 4312
     if-eqz v4, :cond_a
@@ -1124,7 +1124,7 @@
 
     const-string v2, "New Data2"
 
-    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     goto/16 :goto_0
 
@@ -1157,7 +1157,7 @@
 
     const-string v2, "New Data3"
 
-    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     goto/16 :goto_0
 
@@ -1174,7 +1174,7 @@
 
     const-string v2, "New Data4"
 
-    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     goto/16 :goto_0
 
@@ -1201,7 +1201,7 @@
 
     const-string v2, "New Data5"
 
-    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     goto/16 :goto_0
 
@@ -1211,7 +1211,7 @@
 
     const-string v1, "Invalid Data2"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     move v1, v2
 
@@ -1368,7 +1368,7 @@
 
     move-result-object v0
 
-    invoke-static {v1, v0}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v0}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 3756
     :cond_2
@@ -1481,7 +1481,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 4056
     const-string v0, "0"
@@ -1497,7 +1497,7 @@
 
     const-string v1, "StartAutoTransfer error objectID:0"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 4160
     :goto_0
@@ -1588,7 +1588,7 @@
 
     move-result-object v0
 
-    invoke-static {v1, v0}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v0}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 3798
     :cond_2
@@ -1660,7 +1660,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 3021
     invoke-virtual {p0}, Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService;->getApplicationContext()Landroid/content/Context;
@@ -1803,7 +1803,7 @@
 
     const-string v2, "not connected"
 
-    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 3046
     invoke-virtual {p0}, Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService;->getApplicationContext()Landroid/content/Context;
@@ -1893,7 +1893,7 @@
 
     const-string v2, "not pairing"
 
-    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 3054
     invoke-virtual {p0}, Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService;->getApplicationContext()Landroid/content/Context;
@@ -1964,7 +1964,7 @@
 
     const-string v6, "interrupt"
 
-    invoke-static {v5, v6}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v5, v6}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 3065
     iget-wide v6, p0, Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService;->s:J
@@ -2095,7 +2095,7 @@
 
     const-string v3, "success"
 
-    invoke-static {v2, v3}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v2, v3}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 3085
     iget-object v2, p0, Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService;->r:Landroid/support/v4/a/ac$d;
@@ -2193,7 +2193,7 @@
 
     const-string v5, "backup now"
 
-    invoke-static {v1, v5}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v5}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 3095
     iget-wide v6, p0, Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService;->s:J
@@ -2316,7 +2316,7 @@
 
     move-result-object v0
 
-    invoke-static {v1, v0}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v0}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 3840
     :cond_2
@@ -2412,7 +2412,7 @@
 
     move-result-object v0
 
-    invoke-static {v1, v0}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v0}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 3882
     :cond_2
@@ -2528,7 +2528,7 @@
 
     move-result-object v0
 
-    invoke-static {v1, v0}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v0}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 3924
     :cond_2
@@ -2636,7 +2636,7 @@
 
     move-result-object v0
 
-    invoke-static {v1, v0}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v0}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 3969
     :cond_2
@@ -2746,7 +2746,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 4017
     :cond_1
@@ -2783,7 +2783,7 @@
 
     move-result-object v0
 
-    invoke-static {v1, v0}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v0}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_1
 .end method
@@ -2857,7 +2857,7 @@
 
     move-result-object v0
 
-    invoke-static {v1, v0}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v0}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 4050
     :cond_1
@@ -3404,12 +3404,12 @@
     return v0
 .end method
 
-.method static synthetic v(Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService;)Lcom/panasonic/avc/cng/model/service/p/a;
+.method static synthetic v(Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService;)Lcom/panasonic/avc/cng/model/service/p/WifiService;
     .locals 1
 
     .prologue
     .line 92
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService;->j:Lcom/panasonic/avc/cng/model/service/p/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService;->j:Lcom/panasonic/avc/cng/model/service/p/WifiService;
 
     return-object v0
 .end method
@@ -3511,7 +3511,7 @@
 
     const-string v1, "readCharacteristic: readCharacteristic false1"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 2805
     const-string v0, "No_GattService"
@@ -3648,7 +3648,7 @@
 
     const-string v1, "readCharacteristic: readCharacteristic false2"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 2810
     const-string v0, "No_GattChar"
@@ -3671,7 +3671,7 @@
 
     const-string v1, "readCharacteristic: readCharacteristic false3"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 2816
     const-string v0, "Read_Error"
@@ -3753,7 +3753,7 @@
 
     move-result-object v2
 
-    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 2612
     sparse-switch p1, :sswitch_data_0
@@ -4005,7 +4005,7 @@
 
     move-result-object v2
 
-    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 2713
     const-string v1, "ImageAppTotalService"
@@ -4030,7 +4030,7 @@
 
     move-result-object v2
 
-    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 2714
     invoke-virtual {v0, p2}, Landroid/bluetooth/BluetoothGattCharacteristic;->setValue([B)Z
@@ -4055,7 +4055,7 @@
 
     const-string v1, "writeCharacteristic: writeCharacteristic false"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 2720
     const-string v0, "Write_Error"
@@ -4187,7 +4187,7 @@
 
     const-string v1, ""
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 820
     iput-boolean v2, p0, Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService;->N:Z
@@ -4311,7 +4311,7 @@
 
     const-string v3, "sendGPSInfomation"
 
-    invoke-static {v2, v3}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v2, v3}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 2973
     if-eqz p1, :cond_1
@@ -4699,13 +4699,13 @@
     if-nez p1, :cond_4
 
     .line 3524
-    new-instance v0, Lcom/panasonic/avc/cng/model/service/geotagservice/c;
+    new-instance v0, Lcom/panasonic/avc/cng/model/service/geotagservice/GeotagLogRecord;
 
     invoke-virtual {p0}, Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v1
 
-    invoke-direct {v0, v1}, Lcom/panasonic/avc/cng/model/service/geotagservice/c;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, v1}, Lcom/panasonic/avc/cng/model/service/geotagservice/GeotagLogRecord;-><init>(Landroid/content/Context;)V
 
     .line 3525
     invoke-virtual {p0}, Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService;->getApplicationContext()Landroid/content/Context;
@@ -4722,7 +4722,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/model/service/geotagservice/c;->a(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/model/service/geotagservice/GeotagLogRecord;->a(Ljava/lang/String;)V
 
     .line 3528
     :cond_4
@@ -5027,7 +5027,7 @@
 
     const-string v1, "GPS\u304c\u7121\u52b9"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 796
     iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService;->h:Lcom/panasonic/avc/cng/model/service/j$a;
@@ -5310,13 +5310,13 @@
     if-nez p1, :cond_1
 
     .line 3563
-    new-instance v0, Lcom/panasonic/avc/cng/model/service/geotagservice/c;
+    new-instance v0, Lcom/panasonic/avc/cng/model/service/geotagservice/GeotagLogRecord;
 
     invoke-virtual {p0}, Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v1
 
-    invoke-direct {v0, v1}, Lcom/panasonic/avc/cng/model/service/geotagservice/c;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, v1}, Lcom/panasonic/avc/cng/model/service/geotagservice/GeotagLogRecord;-><init>(Landroid/content/Context;)V
 
     .line 3564
     invoke-virtual {p0}, Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService;->getApplicationContext()Landroid/content/Context;
@@ -5333,7 +5333,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/model/service/geotagservice/c;->a(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/model/service/geotagservice/GeotagLogRecord;->a(Ljava/lang/String;)V
 
     .line 3567
     :cond_1
@@ -5411,7 +5411,7 @@
 
     const-string v1, "disconnect"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 895
     iput-boolean v2, p0, Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService;->N:Z
@@ -5446,7 +5446,7 @@
 
     const-string v1, "disconnect"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 906
     iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService;->e:Landroid/bluetooth/BluetoothGatt;
@@ -5587,7 +5587,7 @@
 
     const-string v3, "sendTimeInfomation"
 
-    invoke-static {v0, v3}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v3}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 2931
     const-string v0, "GMT"
@@ -5905,7 +5905,7 @@
     iput-boolean v0, p0, Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService;->P:Z
 
     .line 4351
-    new-instance v0, Lcom/panasonic/avc/cng/core/a/ao;
+    new-instance v0, Lcom/panasonic/avc/cng/core/a/StatusCommand;
 
     iget-object v2, p0, Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService;->u:Ljava/lang/String;
 
@@ -5913,9 +5913,9 @@
 
     move-result-object v2
 
-    invoke-direct {v0, v2}, Lcom/panasonic/avc/cng/core/a/ao;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v2}, Lcom/panasonic/avc/cng/core/a/StatusCommand;-><init>(Ljava/lang/String;)V
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService;->A:Lcom/panasonic/avc/cng/core/a/ao;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService;->A:Lcom/panasonic/avc/cng/core/a/StatusCommand;
 
     .line 4352
     new-instance v0, Lcom/panasonic/avc/cng/core/a/d;
@@ -5929,7 +5929,7 @@
     invoke-direct {v0, v2}, Lcom/panasonic/avc/cng/core/a/d;-><init>(Ljava/lang/String;)V
 
     .line 4353
-    iget-object v2, p0, Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService;->A:Lcom/panasonic/avc/cng/core/a/ao;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService;->A:Lcom/panasonic/avc/cng/core/a/StatusCommand;
 
     if-eqz v2, :cond_2
 
@@ -6104,7 +6104,7 @@
 
     move-result-object v4
 
-    invoke-static {v3, v4}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v3, v4}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 4597
     if-eqz v0, :cond_2
@@ -6158,7 +6158,7 @@
 
     const-string v1, "Bind\u3057\u307e\u3057\u305f"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 468
     iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService;->X:Landroid/os/IBinder;
@@ -6208,7 +6208,7 @@
     iput-object v0, p0, Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService;->v:Landroid/os/Handler;
 
     .line 429
-    new-instance v0, Lcom/panasonic/avc/cng/model/service/p/a;
+    new-instance v0, Lcom/panasonic/avc/cng/model/service/p/WifiService;
 
     invoke-virtual {p0}, Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService;->getApplicationContext()Landroid/content/Context;
 
@@ -6216,19 +6216,19 @@
 
     iget-object v2, p0, Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService;->v:Landroid/os/Handler;
 
-    invoke-direct {v0, v1, v2}, Lcom/panasonic/avc/cng/model/service/p/a;-><init>(Landroid/content/Context;Landroid/os/Handler;)V
+    invoke-direct {v0, v1, v2}, Lcom/panasonic/avc/cng/model/service/p/WifiService;-><init>(Landroid/content/Context;Landroid/os/Handler;)V
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService;->j:Lcom/panasonic/avc/cng/model/service/p/a;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService;->j:Lcom/panasonic/avc/cng/model/service/p/WifiService;
 
     .line 430
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService;->j:Lcom/panasonic/avc/cng/model/service/p/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService;->j:Lcom/panasonic/avc/cng/model/service/p/WifiService;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService;->Z:Lcom/panasonic/avc/cng/model/service/j$d;
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/model/service/p/a;->a(Lcom/panasonic/avc/cng/model/service/j$d;)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/model/service/p/WifiService;->a(Lcom/panasonic/avc/cng/model/service/j$d;)V
 
     .line 431
-    new-instance v0, Lcom/panasonic/avc/cng/model/service/a/a;
+    new-instance v0, Lcom/panasonic/avc/cng/model/service/a/BrowseMenuService;
 
     invoke-virtual {p0}, Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService;->getApplicationContext()Landroid/content/Context;
 
@@ -6236,16 +6236,16 @@
 
     iget-object v2, p0, Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService;->v:Landroid/os/Handler;
 
-    invoke-direct {v0, v1, v2}, Lcom/panasonic/avc/cng/model/service/a/a;-><init>(Landroid/content/Context;Landroid/os/Handler;)V
+    invoke-direct {v0, v1, v2}, Lcom/panasonic/avc/cng/model/service/a/BrowseMenuService;-><init>(Landroid/content/Context;Landroid/os/Handler;)V
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService;->k:Lcom/panasonic/avc/cng/model/service/a/a;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService;->k:Lcom/panasonic/avc/cng/model/service/a/BrowseMenuService;
 
     .line 432
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService;->k:Lcom/panasonic/avc/cng/model/service/a/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService;->k:Lcom/panasonic/avc/cng/model/service/a/BrowseMenuService;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService;->ab:Lcom/panasonic/avc/cng/model/service/j$b;
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/model/service/a/a;->a(Lcom/panasonic/avc/cng/model/service/j$b;)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/model/service/a/BrowseMenuService;->a(Lcom/panasonic/avc/cng/model/service/j$b;)V
 
     .line 433
     new-instance v0, Lcom/panasonic/avc/cng/model/service/a/b;
@@ -6330,7 +6330,7 @@
 
     const-string v1, "GPS_EVENT_STARTED"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 
@@ -6340,7 +6340,7 @@
 
     const-string v1, "GPS_EVENT_STOPPED"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 
@@ -6350,7 +6350,7 @@
 
     const-string v1, "GPS_EVENT_FIRST_FIX"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 
@@ -6767,7 +6767,7 @@
 
     move-result-object v6
 
-    invoke-static {v2, v6}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v2, v6}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 618
     array-length v2, v5
@@ -6822,7 +6822,7 @@
 
     move-result-object v5
 
-    invoke-static {v3, v5}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v3, v5}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 630
     const-string v3, "CurrentConnectedAddress"
@@ -6934,7 +6934,7 @@
 
     move-result-object v7
 
-    invoke-static {v6, v7}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v6, v7}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 647
     iget-object v6, p0, Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService;->o:Ljava/lang/String;
@@ -6973,9 +6973,9 @@
     .line 663
     if-eqz v3, :cond_1c
 
-    iget-object v3, p0, Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService;->j:Lcom/panasonic/avc/cng/model/service/p/a;
+    iget-object v3, p0, Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService;->j:Lcom/panasonic/avc/cng/model/service/p/WifiService;
 
-    invoke-virtual {v3}, Lcom/panasonic/avc/cng/model/service/p/a;->f()Z
+    invoke-virtual {v3}, Lcom/panasonic/avc/cng/model/service/p/WifiService;->f()Z
 
     move-result v3
 
@@ -6995,7 +6995,7 @@
 
     const-string v5, ""
 
-    invoke-static {v3, v5}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v3, v5}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 667
     const/4 v3, 0x1
@@ -7025,7 +7025,7 @@
 
     move-result-object v5
 
-    invoke-static {v3, v5}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v3, v5}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 669
     const-string v3, "ImageAppTotalService"
@@ -7048,7 +7048,7 @@
 
     move-result-object v5
 
-    invoke-static {v3, v5}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v3, v5}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 670
     const-string v3, "ImageAppTotalService"
@@ -7073,7 +7073,7 @@
 
     move-result-object v5
 
-    invoke-static {v3, v5}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v3, v5}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 672
     const-string v3, "sleep"
@@ -7382,7 +7382,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 3591
     const-string v0, "ImageAppTotalService"
@@ -7415,7 +7415,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 3592
     new-instance v0, Ljava/util/Date;
@@ -7457,7 +7457,7 @@
 
     move-result-object v0
 
-    invoke-static {v1, v0}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v0}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 3596
     invoke-static {}, Lcom/panasonic/avc/cng/util/l;->d()J
@@ -7547,7 +7547,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 3613
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
@@ -7580,7 +7580,7 @@
 
     const-string v1, "onProviderEnabled"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 3623
     const/4 v0, 0x0
@@ -7641,7 +7641,7 @@
 
     move-result-object v2
 
-    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 458
     if-eqz v0, :cond_0
@@ -7667,7 +7667,7 @@
 
     const-string v1, "onStatusChanged"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 3629
     return-void
@@ -7682,7 +7682,7 @@
 
     const-string v1, "onUnbind()"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 481
     invoke-super {p0, p1}, Landroid/app/Service;->onUnbind(Landroid/content/Intent;)Z

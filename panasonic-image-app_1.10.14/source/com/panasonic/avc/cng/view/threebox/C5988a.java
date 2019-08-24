@@ -18,7 +18,7 @@ public class C5988a {
     private Activity f18263a = null;
 
     /* renamed from: b */
-    private C5999c f18264b = null;
+    private ThreeBoxViewModel f18264b = null;
 
     /* renamed from: c */
     private C4213l f18265c = null;
@@ -45,7 +45,7 @@ public class C5988a {
     private C4124bp f18272j = null;
 
     /* renamed from: a */
-    public void mo13112a(Activity activity, C5999c cVar) {
+    public void mo13112a(Activity activity, ThreeBoxViewModel cVar) {
         this.f18263a = activity;
         this.f18264b = cVar;
         this.f18265c = new C4213l((ImageButton) this.f18263a.findViewById(R.id.ThreeBoxContentIsVideo));

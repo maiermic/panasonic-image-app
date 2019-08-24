@@ -66,7 +66,7 @@
     .line 648
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserActivity$c;->a:Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserActivity;->a(Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserActivity;)Lcom/panasonic/avc/cng/view/a/d;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserActivity;->a(Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserActivity;)Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
     move-result-object v0
 
@@ -74,7 +74,7 @@
 
     invoke-direct {v1, p0, p1}, Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserActivity$c$1;-><init>(Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserActivity$c;I)V
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/a/d;->a(Ljava/lang/Runnable;)Z
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;->a(Ljava/lang/Runnable;)Z
 
     .line 669
     return-void
@@ -87,7 +87,7 @@
     .line 697
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserActivity$c;->a:Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserActivity;->c(Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserActivity;)Lcom/panasonic/avc/cng/view/a/d;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserActivity;->c(Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserActivity;)Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
     move-result-object v0
 
@@ -95,7 +95,7 @@
 
     invoke-direct {v1, p0, p1}, Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserActivity$c$3;-><init>(Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserActivity$c;Ljava/lang/String;)V
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/a/d;->a(Ljava/lang/Runnable;)Z
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;->a(Ljava/lang/Runnable;)Z
 
     .line 705
     return-void
@@ -108,7 +108,7 @@
     .line 677
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserActivity$c;->a:Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserActivity;->b(Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserActivity;)Lcom/panasonic/avc/cng/view/a/d;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserActivity;->b(Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserActivity;)Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
     move-result-object v0
 
@@ -116,7 +116,7 @@
 
     invoke-direct {v1, p0, p1}, Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserActivity$c$2;-><init>(Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserActivity$c;I)V
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/a/d;->a(Ljava/lang/Runnable;)Z
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;->a(Ljava/lang/Runnable;)Z
 
     .line 689
     return-void

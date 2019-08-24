@@ -94,9 +94,9 @@
 
     iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c$23;->b:Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c;->h:Lcom/panasonic/avc/cng/model/c/e;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c;->h:Lcom/panasonic/avc/cng/model/c/CameraStatus;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/e;->E()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->E()Ljava/lang/String;
 
     move-result-object v0
 
@@ -110,9 +110,9 @@
 
     iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c$23;->b:Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c;->h:Lcom/panasonic/avc/cng/model/c/e;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c;->h:Lcom/panasonic/avc/cng/model/c/CameraStatus;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/e;->E()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->E()Ljava/lang/String;
 
     move-result-object v0
 
@@ -160,9 +160,9 @@
 
     iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c$23;->b:Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c;->h:Lcom/panasonic/avc/cng/model/c/e;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c;->h:Lcom/panasonic/avc/cng/model/c/CameraStatus;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/e;->E()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->E()Ljava/lang/String;
 
     move-result-object v2
 

@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/view/common/a/d;->a(I)V
+    value = Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;->a(I)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,16 +20,16 @@
 # instance fields
 .field final synthetic a:I
 
-.field final synthetic b:Lcom/panasonic/avc/cng/view/common/a/d;
+.field final synthetic b:Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;
 
 
 # direct methods
-.method constructor <init>(Lcom/panasonic/avc/cng/view/common/a/d;I)V
+.method constructor <init>(Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;I)V
     .locals 0
 
     .prologue
     .line 801
-    iput-object p1, p0, Lcom/panasonic/avc/cng/view/common/a/d$2;->b:Lcom/panasonic/avc/cng/view/common/a/d;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/view/common/a/d$2;->b:Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;
 
     iput p2, p0, Lcom/panasonic/avc/cng/view/common/a/d$2;->a:I
 
@@ -45,7 +45,7 @@
 
     .prologue
     .line 803
-    invoke-static {}, Lcom/panasonic/avc/cng/view/common/a/d;->e()Lcom/panasonic/avc/cng/view/common/a/d$a;
+    invoke-static {}, Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;->e()Lcom/panasonic/avc/cng/view/common/a/d$a;
 
     move-result-object v0
 

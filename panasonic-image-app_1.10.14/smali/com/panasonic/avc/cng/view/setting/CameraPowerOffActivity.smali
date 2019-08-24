@@ -1,5 +1,5 @@
 .class public Lcom/panasonic/avc/cng/view/setting/CameraPowerOffActivity;
-.super Lcom/panasonic/avc/cng/view/setting/al;
+.super Lcom/panasonic/avc/cng/view/setting/SettingMenuBaseActivity;
 .source "SourceFile"
 
 
@@ -21,7 +21,7 @@
 
     .prologue
     .line 22
-    invoke-direct {p0}, Lcom/panasonic/avc/cng/view/setting/al;-><init>()V
+    invoke-direct {p0}, Lcom/panasonic/avc/cng/view/setting/SettingMenuBaseActivity;-><init>()V
 
     return-void
 .end method
@@ -58,12 +58,12 @@
     invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/CameraPowerOffActivity$a;->join()V
 
     .line 229
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/CameraPowerOffActivity$a;->a(Lcom/panasonic/avc/cng/view/setting/CameraPowerOffActivity$a;)Lcom/panasonic/avc/cng/model/c/h;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/CameraPowerOffActivity$a;->a(Lcom/panasonic/avc/cng/view/setting/CameraPowerOffActivity$a;)Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
     move-result-object v0
 
     .line 231
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/h;->a()Z
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;->a()Z
 
     move-result v0
 
@@ -91,7 +91,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {p0, v0, v1}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {p0, v0, v1}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
     :try_end_0
     .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -117,7 +117,7 @@
     invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/al$a;->a(Landroid/os/Bundle;)V
 
     .line 212
-    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/al;->OnSetResult()V
+    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/SettingMenuBaseActivity;->OnSetResult()V
 
     .line 213
     return-void
@@ -147,7 +147,7 @@
 
     .line 199
     :cond_0
-    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/al;->finish()V
+    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/SettingMenuBaseActivity;->finish()V
 
     .line 200
     return-void
@@ -161,7 +161,7 @@
     invoke-static {p0}, Lcom/panasonic/avc/cng/model/b;->a(Landroid/app/Activity;)V
 
     .line 34
-    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/al;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/SettingMenuBaseActivity;->onCreate(Landroid/os/Bundle;)V
 
     .line 37
     const/4 v0, 0x1
@@ -219,7 +219,7 @@
 
     .prologue
     .line 182
-    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/al;->onDestroy()V
+    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/SettingMenuBaseActivity;->onDestroy()V
 
     .line 183
     return-void
@@ -230,7 +230,7 @@
 
     .prologue
     .line 387
-    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/al;->onDialogCancel(Lcom/panasonic/avc/cng/view/b/b$a;)V
+    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/SettingMenuBaseActivity;->onDialogCancel(Lcom/panasonic/avc/cng/view/b/b$a;)V
 
     .line 388
     return-void
@@ -241,7 +241,7 @@
 
     .prologue
     .line 394
-    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/al;->onDialogDismiss(Lcom/panasonic/avc/cng/view/b/b$a;)V
+    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/SettingMenuBaseActivity;->onDialogDismiss(Lcom/panasonic/avc/cng/view/b/b$a;)V
 
     .line 396
     return-void
@@ -298,7 +298,7 @@
 
     .prologue
     .line 413
-    invoke-super {p0, p1, p2}, Lcom/panasonic/avc/cng/view/setting/al;->onItemClick(Lcom/panasonic/avc/cng/view/b/b$a;I)V
+    invoke-super {p0, p1, p2}, Lcom/panasonic/avc/cng/view/setting/SettingMenuBaseActivity;->onItemClick(Lcom/panasonic/avc/cng/view/b/b$a;I)V
 
     .line 414
     return-void
@@ -309,7 +309,7 @@
 
     .prologue
     .line 407
-    invoke-super {p0, p1, p2, p3}, Lcom/panasonic/avc/cng/view/setting/al;->onMultiChoice(Lcom/panasonic/avc/cng/view/b/b$a;IZ)V
+    invoke-super {p0, p1, p2, p3}, Lcom/panasonic/avc/cng/view/setting/SettingMenuBaseActivity;->onMultiChoice(Lcom/panasonic/avc/cng/view/b/b$a;IZ)V
 
     .line 408
     return-void
@@ -320,7 +320,7 @@
 
     .prologue
     .line 380
-    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/al;->onNegativeButtonClick(Lcom/panasonic/avc/cng/view/b/b$a;)V
+    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/SettingMenuBaseActivity;->onNegativeButtonClick(Lcom/panasonic/avc/cng/view/b/b$a;)V
 
     .line 381
     return-void
@@ -331,7 +331,7 @@
 
     .prologue
     .line 373
-    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/al;->onNeutralButtonClick(Lcom/panasonic/avc/cng/view/b/b$a;)V
+    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/SettingMenuBaseActivity;->onNeutralButtonClick(Lcom/panasonic/avc/cng/view/b/b$a;)V
 
     .line 374
     return-void
@@ -342,7 +342,7 @@
 
     .prologue
     .line 146
-    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/al;->onPause()V
+    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/SettingMenuBaseActivity;->onPause()V
 
     .line 147
     return-void
@@ -364,7 +364,7 @@
     packed-switch v0, :pswitch_data_0
 
     .line 364
-    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/al;->onPositiveButtonClick(Lcom/panasonic/avc/cng/view/b/b$a;)V
+    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/SettingMenuBaseActivity;->onPositiveButtonClick(Lcom/panasonic/avc/cng/view/b/b$a;)V
 
     .line 367
     :goto_0
@@ -393,7 +393,7 @@
 
     .prologue
     .line 164
-    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/al;->onRestoreInstanceState(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/SettingMenuBaseActivity;->onRestoreInstanceState(Landroid/os/Bundle;)V
 
     .line 165
     return-void
@@ -404,7 +404,7 @@
 
     .prologue
     .line 131
-    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/al;->onResume()V
+    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/SettingMenuBaseActivity;->onResume()V
 
     .line 134
     invoke-static {p0}, Lcom/panasonic/avc/cng/view/setting/al$a;->a(Landroid/app/Activity;)Z
@@ -423,7 +423,7 @@
 
     .prologue
     .line 155
-    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/al;->onSaveInstanceState(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/SettingMenuBaseActivity;->onSaveInstanceState(Landroid/os/Bundle;)V
 
     .line 156
     return-void
@@ -434,7 +434,7 @@
 
     .prologue
     .line 401
-    invoke-super {p0, p1, p2}, Lcom/panasonic/avc/cng/view/setting/al;->onSingleChoice(Lcom/panasonic/avc/cng/view/b/b$a;I)V
+    invoke-super {p0, p1, p2}, Lcom/panasonic/avc/cng/view/setting/SettingMenuBaseActivity;->onSingleChoice(Lcom/panasonic/avc/cng/view/b/b$a;I)V
 
     .line 402
     return-void
@@ -445,7 +445,7 @@
 
     .prologue
     .line 122
-    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/al;->onStart()V
+    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/SettingMenuBaseActivity;->onStart()V
 
     .line 123
     return-void
@@ -456,7 +456,7 @@
 
     .prologue
     .line 173
-    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/al;->onStop()V
+    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/SettingMenuBaseActivity;->onStop()V
 
     .line 174
     return-void

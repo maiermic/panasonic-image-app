@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/view/setting/o;->a(Ljava/lang/String;Ljava/lang/String;)V
+    value = Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;->a(Ljava/lang/String;Ljava/lang/String;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -22,16 +22,16 @@
 
 .field final synthetic b:Ljava/lang/String;
 
-.field final synthetic c:Lcom/panasonic/avc/cng/view/setting/o;
+.field final synthetic c:Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;
 
 
 # direct methods
-.method constructor <init>(Lcom/panasonic/avc/cng/view/setting/o;Ljava/lang/String;Ljava/lang/String;)V
+.method constructor <init>(Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
 
     .prologue
     .line 216
-    iput-object p1, p0, Lcom/panasonic/avc/cng/view/setting/o$2;->c:Lcom/panasonic/avc/cng/view/setting/o;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/view/setting/o$2;->c:Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;
 
     iput-object p2, p0, Lcom/panasonic/avc/cng/view/setting/o$2;->a:Ljava/lang/String;
 
@@ -53,11 +53,11 @@
     const/4 v4, 0x0
 
     .line 218
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
@@ -99,7 +99,7 @@
     move-result-object v0
 
     .line 223
-    invoke-static {v0}, Lcom/panasonic/avc/cng/core/a/al;->a(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/core/a/StaticHttpCommand;->a(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -132,40 +132,40 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 234
     :goto_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/o$2;->c:Lcom/panasonic/avc/cng/view/setting/o;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/o$2;->c:Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/o;->a(Lcom/panasonic/avc/cng/view/setting/o;)Lcom/panasonic/avc/cng/view/setting/o$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;->a(Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;)Lcom/panasonic/avc/cng/view/setting/o$a;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 235
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/o$2;->c:Lcom/panasonic/avc/cng/view/setting/o;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/o$2;->c:Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/o;->a(Lcom/panasonic/avc/cng/view/setting/o;)Lcom/panasonic/avc/cng/view/setting/o$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;->a(Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;)Lcom/panasonic/avc/cng/view/setting/o$a;
 
     move-result-object v0
 
     invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/o$a;->b()V
 
     .line 237
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/o$2;->c:Lcom/panasonic/avc/cng/view/setting/o;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/o$2;->c:Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/o;->b(Lcom/panasonic/avc/cng/view/setting/o;)Lcom/panasonic/avc/cng/view/setting/am$h;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;->b(Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;)Lcom/panasonic/avc/cng/view/setting/am$h;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 238
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/o$2;->c:Lcom/panasonic/avc/cng/view/setting/o;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/o$2;->c:Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/o;->b(Lcom/panasonic/avc/cng/view/setting/o;)Lcom/panasonic/avc/cng/view/setting/am$h;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;->b(Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;)Lcom/panasonic/avc/cng/view/setting/am$h;
 
     move-result-object v0
 
@@ -190,16 +190,16 @@
     int-to-long v2, v0
 
     .line 230
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/o$2;->c:Lcom/panasonic/avc/cng/view/setting/o;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/o$2;->c:Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;
 
     invoke-static {v2, v3}, Ljava/lang/String;->valueOf(J)Ljava/lang/String;
 
     move-result-object v2
 
-    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/view/setting/o;->a(Lcom/panasonic/avc/cng/view/setting/o;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;->a(Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;Ljava/lang/String;)Ljava/lang/String;
 
     .line 231
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/o$2;->c:Lcom/panasonic/avc/cng/view/setting/o;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/o$2;->c:Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;
 
     sget-object v2, Lcom/panasonic/avc/cng/view/setting/o$b;->c:Lcom/panasonic/avc/cng/view/setting/o$b;
 
@@ -211,7 +211,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/setting/o;->b(Lcom/panasonic/avc/cng/view/setting/o;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;->b(Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;Ljava/lang/String;)Ljava/lang/String;
 
     goto :goto_0
 .end method

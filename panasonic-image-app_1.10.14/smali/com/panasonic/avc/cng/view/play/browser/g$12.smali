@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/view/play/browser/g;->a(Lcom/panasonic/avc/cng/model/c/e;)V
+    value = Lcom/panasonic/avc/cng/view/play/browser/MainBrowserViewModel;->a(Lcom/panasonic/avc/cng/model/c/CameraStatus;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,16 +20,16 @@
 # instance fields
 .field final synthetic a:Ljava/lang/String;
 
-.field final synthetic b:Lcom/panasonic/avc/cng/view/play/browser/g;
+.field final synthetic b:Lcom/panasonic/avc/cng/view/play/browser/MainBrowserViewModel;
 
 
 # direct methods
-.method constructor <init>(Lcom/panasonic/avc/cng/view/play/browser/g;Ljava/lang/String;)V
+.method constructor <init>(Lcom/panasonic/avc/cng/view/play/browser/MainBrowserViewModel;Ljava/lang/String;)V
     .locals 0
 
     .prologue
     .line 1292
-    iput-object p1, p0, Lcom/panasonic/avc/cng/view/play/browser/g$12;->b:Lcom/panasonic/avc/cng/view/play/browser/g;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/view/play/browser/g$12;->b:Lcom/panasonic/avc/cng/view/play/browser/MainBrowserViewModel;
 
     iput-object p2, p0, Lcom/panasonic/avc/cng/view/play/browser/g$12;->a:Ljava/lang/String;
 
@@ -45,9 +45,9 @@
 
     .prologue
     .line 1295
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/g$12;->b:Lcom/panasonic/avc/cng/view/play/browser/g;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/g$12;->b:Lcom/panasonic/avc/cng/view/play/browser/MainBrowserViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/browser/g;->p()Lcom/panasonic/avc/cng/view/parts/aa;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/browser/MainBrowserViewModel;->p()Lcom/panasonic/avc/cng/view/parts/aa;
 
     move-result-object v1
 

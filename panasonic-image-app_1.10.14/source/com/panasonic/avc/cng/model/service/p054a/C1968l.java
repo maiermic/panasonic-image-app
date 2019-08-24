@@ -94,7 +94,7 @@ public class C1968l extends C2252y {
 
     /* renamed from: c */
     public C1878d mo5149c() {
-        if (this.f6080m != null && this.f6078k == null && (this.f6080m instanceof C1936c)) {
+        if (this.f6080m != null && this.f6078k == null && (this.f6080m instanceof BrowserServiceCamera)) {
             mo5148b(this.f6080m.mo5036b(this.f6079l));
         }
         return this.f6078k;

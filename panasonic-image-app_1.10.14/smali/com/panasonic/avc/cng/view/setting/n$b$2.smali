@@ -43,9 +43,9 @@
     .line 1119
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/n$b$2;->a:Lcom/panasonic/avc/cng/view/setting/n$b;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/n$b;->a:Lcom/panasonic/avc/cng/view/setting/n;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/n$b;->a:Lcom/panasonic/avc/cng/view/setting/LiveSetupSliderBarActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;)V
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;)V
 
     .line 1120
     return-void

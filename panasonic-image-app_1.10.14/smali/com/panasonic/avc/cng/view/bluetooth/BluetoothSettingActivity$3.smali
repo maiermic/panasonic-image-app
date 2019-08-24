@@ -107,7 +107,7 @@
 
     move-result-object v5
 
-    invoke-static {v4, v5}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v4, v5}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 221
     const-string v4, "BluetoothSettingActivity"
@@ -134,7 +134,7 @@
 
     move-result-object v5
 
-    invoke-static {v4, v5}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v4, v5}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 223
     iget-object v4, p0, Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingActivity$3;->a:Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingActivity;

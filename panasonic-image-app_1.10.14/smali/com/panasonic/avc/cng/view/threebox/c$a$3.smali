@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/view/threebox/c$a;->a(Lcom/panasonic/avc/cng/model/c/e;)V
+    value = Lcom/panasonic/avc/cng/view/threebox/c$a;->a(Lcom/panasonic/avc/cng/model/c/CameraStatus;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -47,9 +47,9 @@
     .line 1218
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/c$a$3;->b:Lcom/panasonic/avc/cng/view/threebox/c$a;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/threebox/c$a;->a:Lcom/panasonic/avc/cng/view/threebox/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/threebox/c$a;->a:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/threebox/c;->a(Lcom/panasonic/avc/cng/view/threebox/c;)Lcom/panasonic/avc/cng/view/threebox/c$b;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;->a(Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;)Lcom/panasonic/avc/cng/view/threebox/c$b;
 
     move-result-object v0
 
@@ -58,9 +58,9 @@
     .line 1221
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/c$a$3;->b:Lcom/panasonic/avc/cng/view/threebox/c$a;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/threebox/c$a;->a:Lcom/panasonic/avc/cng/view/threebox/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/threebox/c$a;->a:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/threebox/c;->a(Lcom/panasonic/avc/cng/view/threebox/c;)Lcom/panasonic/avc/cng/view/threebox/c$b;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;->a(Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;)Lcom/panasonic/avc/cng/view/threebox/c$b;
 
     move-result-object v0
 

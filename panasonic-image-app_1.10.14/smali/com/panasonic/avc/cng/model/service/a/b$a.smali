@@ -43,7 +43,7 @@
 
     move-result-object v2
 
-    invoke-static {v2, v0}, Lcom/panasonic/avc/cng/model/service/z;->c(Landroid/content/Context;Lcom/panasonic/avc/cng/model/f;)Lcom/panasonic/avc/cng/model/service/a;
+    invoke-static {v2, v0}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->c(Landroid/content/Context;Lcom/panasonic/avc/cng/model/f;)Lcom/panasonic/avc/cng/model/service/a;
 
     move-result-object v2
 

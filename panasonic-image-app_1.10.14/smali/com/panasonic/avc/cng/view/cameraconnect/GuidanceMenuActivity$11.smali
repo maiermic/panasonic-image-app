@@ -45,7 +45,7 @@
 
     const-string v1, "INfcSupportListener-OnFailed()"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 4161
     return-void
@@ -60,12 +60,12 @@
 
     const-string v1, "INfcSupportListener-OnSuccess()"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 4156
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity$11;->a:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->access$600(Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;)Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->access$600(Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;)Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
     move-result-object v0
 
@@ -73,7 +73,7 @@
 
     iget-object v2, p1, Lcom/panasonic/avc/cng/model/f;->t:Ljava/lang/String;
 
-    invoke-virtual {v0, v1, v2}, Lcom/panasonic/avc/cng/view/cameraconnect/i;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 4157
     return-void

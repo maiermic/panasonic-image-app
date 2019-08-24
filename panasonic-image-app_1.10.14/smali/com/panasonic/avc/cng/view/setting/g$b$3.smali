@@ -43,18 +43,18 @@
     .line 464
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/g$b$3;->a:Lcom/panasonic/avc/cng/view/setting/g$b;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/g$b;->a:Lcom/panasonic/avc/cng/view/setting/g;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/g$b;->a:Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/g;->c:Lcom/panasonic/avc/cng/view/setting/g$d;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;->c:Lcom/panasonic/avc/cng/view/setting/g$d;
 
     if-eqz v0, :cond_0
 
     .line 466
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/g$b$3;->a:Lcom/panasonic/avc/cng/view/setting/g$b;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/g$b;->a:Lcom/panasonic/avc/cng/view/setting/g;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/g$b;->a:Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/g;->c:Lcom/panasonic/avc/cng/view/setting/g$d;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;->c:Lcom/panasonic/avc/cng/view/setting/g$d;
 
     sget-object v1, Lcom/panasonic/avc/cng/view/b/b$a;->fn:Lcom/panasonic/avc/cng/view/b/b$a;
 
@@ -63,9 +63,9 @@
     .line 468
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/g$b$3;->a:Lcom/panasonic/avc/cng/view/setting/g$b;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/g$b;->a:Lcom/panasonic/avc/cng/view/setting/g;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/g$b;->a:Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/g;->c:Lcom/panasonic/avc/cng/view/setting/g$d;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;->c:Lcom/panasonic/avc/cng/view/setting/g$d;
 
     sget-object v1, Lcom/panasonic/avc/cng/view/b/b$a;->fi:Lcom/panasonic/avc/cng/view/b/b$a;
 

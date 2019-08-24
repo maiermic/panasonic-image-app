@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/panasonic/avc/cng/view/a/d;
+    value = Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,28 +18,28 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/panasonic/avc/cng/view/a/d;
+.field final synthetic a:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
 
 # direct methods
-.method private constructor <init>(Lcom/panasonic/avc/cng/view/a/d;)V
+.method private constructor <init>(Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;)V
     .locals 0
 
     .prologue
     .line 789
-    iput-object p1, p0, Lcom/panasonic/avc/cng/view/a/d$a;->a:Lcom/panasonic/avc/cng/view/a/d;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/view/a/d$a;->a:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/panasonic/avc/cng/view/a/d;Lcom/panasonic/avc/cng/view/a/d$1;)V
+.method synthetic constructor <init>(Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;Lcom/panasonic/avc/cng/view/a/d$1;)V
     .locals 0
 
     .prologue
     .line 789
-    invoke-direct {p0, p1}, Lcom/panasonic/avc/cng/view/a/d$a;-><init>(Lcom/panasonic/avc/cng/view/a/d;)V
+    invoke-direct {p0, p1}, Lcom/panasonic/avc/cng/view/a/d$a;-><init>(Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;)V
 
     return-void
 .end method
@@ -51,9 +51,9 @@
 
     .prologue
     .line 796
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/a/d$a;->a:Lcom/panasonic/avc/cng/view/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/a/d$a;->a:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/a/d;->c(Lcom/panasonic/avc/cng/view/a/d;)Landroid/app/Activity;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;->c(Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;)Landroid/app/Activity;
 
     move-result-object v0
 
@@ -75,16 +75,16 @@
 
     const-string v1, "New File Comming!"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 807
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/a/d$a;->a:Lcom/panasonic/avc/cng/view/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/a/d$a;->a:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
     new-instance v1, Lcom/panasonic/avc/cng/view/a/d$a$1;
 
     invoke-direct {v1, p0}, Lcom/panasonic/avc/cng/view/a/d$a$1;-><init>(Lcom/panasonic/avc/cng/view/a/d$a;)V
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/a/d;->a(Ljava/lang/Runnable;)Z
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;->a(Ljava/lang/Runnable;)Z
 
     goto :goto_0
 
@@ -99,16 +99,16 @@
 
     const-string v1, "New File Uploaded!"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 833
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/a/d$a;->a:Lcom/panasonic/avc/cng/view/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/a/d$a;->a:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
     new-instance v1, Lcom/panasonic/avc/cng/view/a/d$a$2;
 
     invoke-direct {v1, p0}, Lcom/panasonic/avc/cng/view/a/d$a$2;-><init>(Lcom/panasonic/avc/cng/view/a/d$a;)V
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/a/d;->a(Ljava/lang/Runnable;)Z
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;->a(Ljava/lang/Runnable;)Z
 
     goto :goto_0
 
@@ -123,16 +123,16 @@
 
     const-string v1, "New File Continue!"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 861
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/a/d$a;->a:Lcom/panasonic/avc/cng/view/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/a/d$a;->a:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
     new-instance v1, Lcom/panasonic/avc/cng/view/a/d$a$3;
 
     invoke-direct {v1, p0}, Lcom/panasonic/avc/cng/view/a/d$a$3;-><init>(Lcom/panasonic/avc/cng/view/a/d$a;)V
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/a/d;->a(Ljava/lang/Runnable;)Z
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;->a(Ljava/lang/Runnable;)Z
 
     goto :goto_0
 
@@ -147,16 +147,16 @@
 
     const-string v1, "Error!"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 880
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/a/d$a;->a:Lcom/panasonic/avc/cng/view/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/a/d$a;->a:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
     new-instance v1, Lcom/panasonic/avc/cng/view/a/d$a$4;
 
     invoke-direct {v1, p0}, Lcom/panasonic/avc/cng/view/a/d$a$4;-><init>(Lcom/panasonic/avc/cng/view/a/d$a;)V
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/a/d;->a(Ljava/lang/Runnable;)Z
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;->a(Ljava/lang/Runnable;)Z
 
     goto :goto_0
 .end method

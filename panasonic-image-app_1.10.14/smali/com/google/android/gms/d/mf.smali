@@ -8,7 +8,7 @@
         value = {
             "Lcom/google/android/gms/common/api/a$b",
             "<",
-            "Lcom/google/android/gms/d/mt;",
+            "Lcom/google/android/gms/d/SignInClientImpl;",
             "Lcom/google/android/gms/d/mk;",
             ">;"
         }
@@ -31,7 +31,7 @@
         value = {
             "Lcom/google/android/gms/common/api/a$g",
             "<",
-            "Lcom/google/android/gms/d/mt;",
+            "Lcom/google/android/gms/d/SignInClientImpl;",
             ">;"
         }
     .end annotation
@@ -42,7 +42,7 @@
         value = {
             "Lcom/google/android/gms/common/api/a$g",
             "<",
-            "Lcom/google/android/gms/d/mt;",
+            "Lcom/google/android/gms/d/SignInClientImpl;",
             ">;"
         }
     .end annotation
@@ -53,7 +53,7 @@
         value = {
             "Lcom/google/android/gms/common/api/a$b",
             "<",
-            "Lcom/google/android/gms/d/mt;",
+            "Lcom/google/android/gms/d/SignInClientImpl;",
             "Lcom/google/android/gms/d/mi;",
             ">;"
         }

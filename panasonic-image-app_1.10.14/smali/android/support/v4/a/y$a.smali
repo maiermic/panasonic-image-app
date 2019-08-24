@@ -9,7 +9,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Landroid/support/v4/a/y;
+    value = Landroid/support/v4/a/LoaderManager;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -79,7 +79,7 @@
 
 .field n:Landroid/support/v4/a/y$a;
 
-.field final synthetic o:Landroid/support/v4/a/y;
+.field final synthetic o:Landroid/support/v4/a/LoaderManager;
 
 
 # virtual methods
@@ -116,7 +116,7 @@
     iput-boolean v3, p0, Landroid/support/v4/a/y$a;->h:Z
 
     .line 254
-    sget-boolean v0, Landroid/support/v4/a/y;->a:Z
+    sget-boolean v0, Landroid/support/v4/a/LoaderManager;->a:Z
 
     if-eqz v0, :cond_2
 
@@ -282,25 +282,25 @@
     const/4 v0, 0x0
 
     .line 469
-    iget-object v1, p0, Landroid/support/v4/a/y$a;->o:Landroid/support/v4/a/y;
+    iget-object v1, p0, Landroid/support/v4/a/y$a;->o:Landroid/support/v4/a/LoaderManager;
 
-    iget-object v1, v1, Landroid/support/v4/a/y;->g:Landroid/support/v4/a/o;
+    iget-object v1, v1, Landroid/support/v4/a/LoaderManager;->g:Landroid/support/v4/a/o;
 
     if-eqz v1, :cond_4
 
     .line 470
-    iget-object v0, p0, Landroid/support/v4/a/y$a;->o:Landroid/support/v4/a/y;
+    iget-object v0, p0, Landroid/support/v4/a/y$a;->o:Landroid/support/v4/a/LoaderManager;
 
-    iget-object v0, v0, Landroid/support/v4/a/y;->g:Landroid/support/v4/a/o;
+    iget-object v0, v0, Landroid/support/v4/a/LoaderManager;->g:Landroid/support/v4/a/o;
 
     iget-object v0, v0, Landroid/support/v4/a/o;->d:Landroid/support/v4/a/q;
 
     iget-object v0, v0, Landroid/support/v4/a/q;->u:Ljava/lang/String;
 
     .line 471
-    iget-object v1, p0, Landroid/support/v4/a/y$a;->o:Landroid/support/v4/a/y;
+    iget-object v1, p0, Landroid/support/v4/a/y$a;->o:Landroid/support/v4/a/LoaderManager;
 
-    iget-object v1, v1, Landroid/support/v4/a/y;->g:Landroid/support/v4/a/o;
+    iget-object v1, v1, Landroid/support/v4/a/LoaderManager;->g:Landroid/support/v4/a/o;
 
     iget-object v1, v1, Landroid/support/v4/a/o;->d:Landroid/support/v4/a/q;
 
@@ -313,7 +313,7 @@
     .line 474
     :goto_0
     :try_start_0
-    sget-boolean v0, Landroid/support/v4/a/y;->a:Z
+    sget-boolean v0, Landroid/support/v4/a/LoaderManager;->a:Z
 
     if-eqz v0, :cond_0
 
@@ -364,16 +364,16 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 478
-    iget-object v0, p0, Landroid/support/v4/a/y$a;->o:Landroid/support/v4/a/y;
+    iget-object v0, p0, Landroid/support/v4/a/y$a;->o:Landroid/support/v4/a/LoaderManager;
 
-    iget-object v0, v0, Landroid/support/v4/a/y;->g:Landroid/support/v4/a/o;
+    iget-object v0, v0, Landroid/support/v4/a/LoaderManager;->g:Landroid/support/v4/a/o;
 
     if-eqz v0, :cond_1
 
     .line 479
-    iget-object v0, p0, Landroid/support/v4/a/y$a;->o:Landroid/support/v4/a/y;
+    iget-object v0, p0, Landroid/support/v4/a/y$a;->o:Landroid/support/v4/a/LoaderManager;
 
-    iget-object v0, v0, Landroid/support/v4/a/y;->g:Landroid/support/v4/a/o;
+    iget-object v0, v0, Landroid/support/v4/a/LoaderManager;->g:Landroid/support/v4/a/o;
 
     iget-object v0, v0, Landroid/support/v4/a/o;->d:Landroid/support/v4/a/q;
 
@@ -393,16 +393,16 @@
     :catchall_0
     move-exception v0
 
-    iget-object v2, p0, Landroid/support/v4/a/y$a;->o:Landroid/support/v4/a/y;
+    iget-object v2, p0, Landroid/support/v4/a/y$a;->o:Landroid/support/v4/a/LoaderManager;
 
-    iget-object v2, v2, Landroid/support/v4/a/y;->g:Landroid/support/v4/a/o;
+    iget-object v2, v2, Landroid/support/v4/a/LoaderManager;->g:Landroid/support/v4/a/o;
 
     if-eqz v2, :cond_3
 
     .line 479
-    iget-object v2, p0, Landroid/support/v4/a/y$a;->o:Landroid/support/v4/a/y;
+    iget-object v2, p0, Landroid/support/v4/a/y$a;->o:Landroid/support/v4/a/LoaderManager;
 
-    iget-object v2, v2, Landroid/support/v4/a/y;->g:Landroid/support/v4/a/o;
+    iget-object v2, v2, Landroid/support/v4/a/LoaderManager;->g:Landroid/support/v4/a/o;
 
     iget-object v2, v2, Landroid/support/v4/a/o;->d:Landroid/support/v4/a/q;
 
@@ -646,7 +646,7 @@
 
     .prologue
     .line 275
-    sget-boolean v0, Landroid/support/v4/a/y;->a:Z
+    sget-boolean v0, Landroid/support/v4/a/LoaderManager;->a:Z
 
     if-eqz v0, :cond_0
 
@@ -707,7 +707,7 @@
     if-eqz v0, :cond_1
 
     .line 284
-    sget-boolean v0, Landroid/support/v4/a/y;->a:Z
+    sget-boolean v0, Landroid/support/v4/a/LoaderManager;->a:Z
 
     if-eqz v0, :cond_0
 
@@ -827,7 +827,7 @@
     const/4 v3, 0x0
 
     .line 319
-    sget-boolean v0, Landroid/support/v4/a/y;->a:Z
+    sget-boolean v0, Landroid/support/v4/a/LoaderManager;->a:Z
 
     if-eqz v0, :cond_0
 
@@ -903,7 +903,7 @@
     const/4 v4, 0x0
 
     .line 345
-    sget-boolean v0, Landroid/support/v4/a/y;->a:Z
+    sget-boolean v0, Landroid/support/v4/a/LoaderManager;->a:Z
 
     if-eqz v0, :cond_0
 
@@ -957,7 +957,7 @@
     if-eqz v0, :cond_2
 
     .line 350
-    sget-boolean v0, Landroid/support/v4/a/y;->a:Z
+    sget-boolean v0, Landroid/support/v4/a/LoaderManager;->a:Z
 
     if-eqz v0, :cond_1
 
@@ -985,25 +985,25 @@
 
     .line 352
     :cond_1
-    iget-object v0, p0, Landroid/support/v4/a/y$a;->o:Landroid/support/v4/a/y;
+    iget-object v0, p0, Landroid/support/v4/a/y$a;->o:Landroid/support/v4/a/LoaderManager;
 
-    iget-object v0, v0, Landroid/support/v4/a/y;->g:Landroid/support/v4/a/o;
+    iget-object v0, v0, Landroid/support/v4/a/LoaderManager;->g:Landroid/support/v4/a/o;
 
     if-eqz v0, :cond_7
 
     .line 353
-    iget-object v0, p0, Landroid/support/v4/a/y$a;->o:Landroid/support/v4/a/y;
+    iget-object v0, p0, Landroid/support/v4/a/y$a;->o:Landroid/support/v4/a/LoaderManager;
 
-    iget-object v0, v0, Landroid/support/v4/a/y;->g:Landroid/support/v4/a/o;
+    iget-object v0, v0, Landroid/support/v4/a/LoaderManager;->g:Landroid/support/v4/a/o;
 
     iget-object v0, v0, Landroid/support/v4/a/o;->d:Landroid/support/v4/a/q;
 
     iget-object v0, v0, Landroid/support/v4/a/q;->u:Ljava/lang/String;
 
     .line 354
-    iget-object v1, p0, Landroid/support/v4/a/y$a;->o:Landroid/support/v4/a/y;
+    iget-object v1, p0, Landroid/support/v4/a/y$a;->o:Landroid/support/v4/a/LoaderManager;
 
-    iget-object v1, v1, Landroid/support/v4/a/y;->g:Landroid/support/v4/a/o;
+    iget-object v1, v1, Landroid/support/v4/a/LoaderManager;->g:Landroid/support/v4/a/o;
 
     iget-object v1, v1, Landroid/support/v4/a/o;->d:Landroid/support/v4/a/q;
 
@@ -1025,16 +1025,16 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 359
-    iget-object v0, p0, Landroid/support/v4/a/y$a;->o:Landroid/support/v4/a/y;
+    iget-object v0, p0, Landroid/support/v4/a/y$a;->o:Landroid/support/v4/a/LoaderManager;
 
-    iget-object v0, v0, Landroid/support/v4/a/y;->g:Landroid/support/v4/a/o;
+    iget-object v0, v0, Landroid/support/v4/a/LoaderManager;->g:Landroid/support/v4/a/o;
 
     if-eqz v0, :cond_2
 
     .line 360
-    iget-object v0, p0, Landroid/support/v4/a/y$a;->o:Landroid/support/v4/a/y;
+    iget-object v0, p0, Landroid/support/v4/a/y$a;->o:Landroid/support/v4/a/LoaderManager;
 
-    iget-object v0, v0, Landroid/support/v4/a/y;->g:Landroid/support/v4/a/o;
+    iget-object v0, v0, Landroid/support/v4/a/LoaderManager;->g:Landroid/support/v4/a/o;
 
     iget-object v0, v0, Landroid/support/v4/a/o;->d:Landroid/support/v4/a/q;
 
@@ -1098,16 +1098,16 @@
     :catchall_0
     move-exception v0
 
-    iget-object v2, p0, Landroid/support/v4/a/y$a;->o:Landroid/support/v4/a/y;
+    iget-object v2, p0, Landroid/support/v4/a/y$a;->o:Landroid/support/v4/a/LoaderManager;
 
-    iget-object v2, v2, Landroid/support/v4/a/y;->g:Landroid/support/v4/a/o;
+    iget-object v2, v2, Landroid/support/v4/a/LoaderManager;->g:Landroid/support/v4/a/o;
 
     if-eqz v2, :cond_6
 
     .line 360
-    iget-object v2, p0, Landroid/support/v4/a/y$a;->o:Landroid/support/v4/a/y;
+    iget-object v2, p0, Landroid/support/v4/a/y$a;->o:Landroid/support/v4/a/LoaderManager;
 
-    iget-object v2, v2, Landroid/support/v4/a/y;->g:Landroid/support/v4/a/o;
+    iget-object v2, v2, Landroid/support/v4/a/LoaderManager;->g:Landroid/support/v4/a/o;
 
     iget-object v2, v2, Landroid/support/v4/a/o;->d:Landroid/support/v4/a/q;
 

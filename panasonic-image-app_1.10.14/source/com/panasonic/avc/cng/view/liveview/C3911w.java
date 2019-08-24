@@ -1,10 +1,10 @@
 package com.panasonic.avc.cng.view.liveview;
 
-import com.panasonic.avc.cng.core.p040a.C1494ay;
-import com.panasonic.avc.cng.core.p040a.C1495az;
+import com.panasonic.avc.cng.core.p040a.ZoomCommand;
+import com.panasonic.avc.cng.core.p040a.ZoomVianaCommand;
 import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.C1892f;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import java.util.ArrayList;
 
 /* renamed from: com.panasonic.avc.cng.view.liveview.w */
@@ -90,37 +90,37 @@ public class C3911w {
                                 }
                             }
                             if (a.mo4889c()) {
-                                C1495az azVar = new C1495az(a.f5682d);
+                                ZoomVianaCommand azVar = new ZoomVianaCommand(a.f5682d);
                                 if (i == 1) {
                                     azVar.mo3658a();
                                 } else if (i == 2) {
-                                    C2261g.m9760a(3158024, "normal");
+                                    ImageAppLog.m9760a(3158024, "normal");
                                     azVar.mo3659a("tele-normal");
                                 } else if (i == 3) {
-                                    C2261g.m9760a(3158024, "fast");
+                                    ImageAppLog.m9760a(3158024, "fast");
                                     azVar.mo3659a("tele-fast");
                                 } else if (i == 4) {
-                                    C2261g.m9760a(3158025, "normal");
+                                    ImageAppLog.m9760a(3158025, "normal");
                                     azVar.mo3659a("wide-normal");
                                 } else if (i == 5) {
-                                    C2261g.m9760a(3158025, "fast");
+                                    ImageAppLog.m9760a(3158025, "fast");
                                     azVar.mo3659a("wide-fast");
                                 }
                             } else {
-                                C1494ay ayVar = new C1494ay(a.f5682d);
+                                ZoomCommand ayVar = new ZoomCommand(a.f5682d);
                                 if (i == 1) {
                                     ayVar.mo3409a();
                                 } else if (i == 2) {
-                                    C2261g.m9760a(3158024, "normal");
+                                    ImageAppLog.m9760a(3158024, "normal");
                                     ayVar.mo3651a("tele-normal");
                                 } else if (i == 3) {
-                                    C2261g.m9760a(3158024, "fast");
+                                    ImageAppLog.m9760a(3158024, "fast");
                                     ayVar.mo3651a("tele-fast");
                                 } else if (i == 4) {
-                                    C2261g.m9760a(3158025, "normal");
+                                    ImageAppLog.m9760a(3158025, "normal");
                                     ayVar.mo3651a("wide-normal");
                                 } else if (i == 5) {
-                                    C2261g.m9760a(3158025, "fast");
+                                    ImageAppLog.m9760a(3158025, "fast");
                                     ayVar.mo3651a("wide-fast");
                                 }
                             }

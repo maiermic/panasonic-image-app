@@ -93,7 +93,7 @@
 
     check-cast v1, Landroid/app/Activity;
 
-    invoke-static {v1}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;)V
+    invoke-static {v1}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;)V
 
     .line 1934
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/browser/a$5$1;->a:Lcom/panasonic/avc/cng/view/play/browser/a$5;
@@ -156,7 +156,7 @@
 
     sget-object v2, Lcom/panasonic/avc/cng/view/b/b$a;->X:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {v0, v2, v1}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {v0, v2, v1}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     .line 1941
     return-void

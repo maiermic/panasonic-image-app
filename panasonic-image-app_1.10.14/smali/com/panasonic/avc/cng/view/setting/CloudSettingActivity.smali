@@ -279,7 +279,7 @@
 
     invoke-direct {v1, p0}, Lcom/panasonic/avc/cng/view/setting/CloudSettingActivity$2;-><init>(Lcom/panasonic/avc/cng/view/setting/CloudSettingActivity;)V
 
-    invoke-static {p0, v0, v2, v1}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;Lcom/panasonic/avc/cng/view/b/a$c;)V
+    invoke-static {p0, v0, v2, v1}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;Lcom/panasonic/avc/cng/view/b/a$c;)V
 
     goto :goto_0
 
@@ -287,7 +287,7 @@
     :pswitch_2
     sget-object v0, Lcom/panasonic/avc/cng/view/b/b$a;->ew:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {p0, v0, v2}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {p0, v0, v2}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     goto :goto_0
 
@@ -370,7 +370,7 @@
 
     invoke-direct {v2, p0}, Lcom/panasonic/avc/cng/view/setting/CloudSettingActivity$1;-><init>(Lcom/panasonic/avc/cng/view/setting/CloudSettingActivity;)V
 
-    invoke-static {p0, v1, v3, v2}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;Lcom/panasonic/avc/cng/view/b/a$c;)V
+    invoke-static {p0, v1, v3, v2}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;Lcom/panasonic/avc/cng/view/b/a$c;)V
 
     .line 170
     if-eqz v0, :cond_0
@@ -384,7 +384,7 @@
     :pswitch_2
     sget-object v0, Lcom/panasonic/avc/cng/view/b/b$a;->dn:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {p0, v0, v3}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {p0, v0, v3}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     goto :goto_0
 

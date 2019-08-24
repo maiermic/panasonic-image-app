@@ -1,7 +1,7 @@
 package com.panasonic.avc.cng.model.p051c;
 
 import com.panasonic.avc.cng.model.p051c.C1855j.C1856a;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import org.xmlpull.v1.XmlPullParser;
 
 /* renamed from: com.panasonic.avc.cng.model.c.k */
@@ -26,7 +26,7 @@ public class C1859k extends C1843c {
             }
             return jVar;
         } catch (Exception e) {
-            C2261g.m9769c("ParseTagContentActionInfo", e.getMessage());
+            ImageAppLog.error("ParseTagContentActionInfo", e.getMessage());
             throw e;
         }
     }
@@ -47,7 +47,7 @@ public class C1859k extends C1843c {
             }
             return jVar;
         } catch (Exception e) {
-            C2261g.m9769c("ParseTagItem", e.getMessage());
+            ImageAppLog.error("ParseTagItem", e.getMessage());
             throw e;
         }
     }
@@ -70,7 +70,7 @@ public class C1859k extends C1843c {
                 next = xmlPullParser.next();
             }
         } catch (Exception e) {
-            C2261g.m9769c("ParseTagXXXX", e.getMessage());
+            ImageAppLog.error("ParseTagXXXX", e.getMessage());
             throw e;
         }
     }
@@ -87,7 +87,7 @@ public class C1859k extends C1843c {
                 next = xmlPullParser.next();
             }
         } catch (Exception e) {
-            C2261g.m9769c("ParseTagAction", e.getMessage());
+            ImageAppLog.error("ParseTagAction", e.getMessage());
             throw e;
         }
     }

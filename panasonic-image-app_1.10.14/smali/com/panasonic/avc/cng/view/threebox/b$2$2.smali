@@ -47,9 +47,9 @@
     .line 131
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/b$2$2;->b:Lcom/panasonic/avc/cng/view/threebox/b$2;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/threebox/b$2;->a:Lcom/panasonic/avc/cng/view/threebox/b;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/threebox/b$2;->a:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxSeekBarView;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/threebox/b;->d(Lcom/panasonic/avc/cng/view/threebox/b;)Landroid/widget/TextView;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxSeekBarView;->d(Lcom/panasonic/avc/cng/view/threebox/ThreeBoxSeekBarView;)Landroid/widget/TextView;
 
     move-result-object v0
 

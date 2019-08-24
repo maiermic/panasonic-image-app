@@ -52,7 +52,7 @@
 
     if-eqz p1, :cond_0
 
-    invoke-static {p1}, Landroid/support/v4/content/g;->a(Landroid/content/Intent;)Z
+    invoke-static {p1}, Landroid/support/v4/content/WakefulBroadcastReceiver;->a(Landroid/content/Intent;)Z
 
     :cond_0
     iget-object v1, p0, Lcom/google/firebase/iid/b;->c:Ljava/lang/Object;

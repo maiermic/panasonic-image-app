@@ -13,7 +13,7 @@
 
 .field private c:Ljava/lang/String;
 
-.field private d:Lcom/panasonic/avc/cng/view/usages/a;
+.field private d:Lcom/panasonic/avc/cng/view/usages/UsagesViewModel;
 
 .field private e:Landroid/os/Bundle;
 
@@ -34,17 +34,17 @@
     .line 26
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/view/usages/UsagesTransparentActivity;->d:Lcom/panasonic/avc/cng/view/usages/a;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/view/usages/UsagesTransparentActivity;->d:Lcom/panasonic/avc/cng/view/usages/UsagesViewModel;
 
     return-void
 .end method
 
-.method static synthetic a(Lcom/panasonic/avc/cng/view/usages/UsagesTransparentActivity;)Lcom/panasonic/avc/cng/view/usages/a;
+.method static synthetic a(Lcom/panasonic/avc/cng/view/usages/UsagesTransparentActivity;)Lcom/panasonic/avc/cng/view/usages/UsagesViewModel;
     .locals 1
 
     .prologue
     .line 19
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/usages/UsagesTransparentActivity;->d:Lcom/panasonic/avc/cng/view/usages/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/usages/UsagesTransparentActivity;->d:Lcom/panasonic/avc/cng/view/usages/UsagesViewModel;
 
     return-object v0
 .end method
@@ -96,13 +96,13 @@
 
     .prologue
     .line 85
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/usages/UsagesTransparentActivity;->d:Lcom/panasonic/avc/cng/view/usages/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/usages/UsagesTransparentActivity;->d:Lcom/panasonic/avc/cng/view/usages/UsagesViewModel;
 
     new-instance v1, Lcom/panasonic/avc/cng/view/usages/UsagesTransparentActivity$2;
 
     invoke-direct {v1, p0}, Lcom/panasonic/avc/cng/view/usages/UsagesTransparentActivity$2;-><init>(Lcom/panasonic/avc/cng/view/usages/UsagesTransparentActivity;)V
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/usages/a;->a(Lcom/panasonic/avc/cng/model/service/x$a;)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/usages/UsagesViewModel;->a(Lcom/panasonic/avc/cng/model/service/x$a;)V
 
     .line 167
     return-void
@@ -113,19 +113,19 @@
 
     .prologue
     .line 74
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/usages/UsagesTransparentActivity;->d:Lcom/panasonic/avc/cng/view/usages/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/usages/UsagesTransparentActivity;->d:Lcom/panasonic/avc/cng/view/usages/UsagesViewModel;
 
     if-eqz v0, :cond_0
 
     .line 76
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/usages/UsagesTransparentActivity;->d:Lcom/panasonic/avc/cng/view/usages/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/usages/UsagesTransparentActivity;->d:Lcom/panasonic/avc/cng/view/usages/UsagesViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/usages/a;->a()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/usages/UsagesViewModel;->a()V
 
     .line 77
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/view/usages/UsagesTransparentActivity;->d:Lcom/panasonic/avc/cng/view/usages/a;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/view/usages/UsagesTransparentActivity;->d:Lcom/panasonic/avc/cng/view/usages/UsagesViewModel;
 
     .line 80
     :cond_0
@@ -160,15 +160,15 @@
     iput-object v0, p0, Lcom/panasonic/avc/cng/view/usages/UsagesTransparentActivity;->e:Landroid/os/Bundle;
 
     .line 38
-    new-instance v0, Lcom/panasonic/avc/cng/view/usages/a;
+    new-instance v0, Lcom/panasonic/avc/cng/view/usages/UsagesViewModel;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/usages/UsagesTransparentActivity;->a:Landroid/content/Context;
 
     iget-object v2, p0, Lcom/panasonic/avc/cng/view/usages/UsagesTransparentActivity;->b:Landroid/os/Handler;
 
-    invoke-direct {v0, v1, v2}, Lcom/panasonic/avc/cng/view/usages/a;-><init>(Landroid/content/Context;Landroid/os/Handler;)V
+    invoke-direct {v0, v1, v2}, Lcom/panasonic/avc/cng/view/usages/UsagesViewModel;-><init>(Landroid/content/Context;Landroid/os/Handler;)V
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/view/usages/UsagesTransparentActivity;->d:Lcom/panasonic/avc/cng/view/usages/a;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/view/usages/UsagesTransparentActivity;->d:Lcom/panasonic/avc/cng/view/usages/UsagesViewModel;
 
     .line 40
     invoke-virtual {p0}, Lcom/panasonic/avc/cng/view/usages/UsagesTransparentActivity;->getIntent()Landroid/content/Intent;
@@ -195,7 +195,7 @@
 
     .line 46
     :cond_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/usages/UsagesTransparentActivity;->d:Lcom/panasonic/avc/cng/view/usages/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/usages/UsagesTransparentActivity;->d:Lcom/panasonic/avc/cng/view/usages/UsagesViewModel;
 
     if-eqz v0, :cond_1
 

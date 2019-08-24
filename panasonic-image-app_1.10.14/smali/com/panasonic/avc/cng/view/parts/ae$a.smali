@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/panasonic/avc/cng/view/parts/ae;
+    value = Lcom/panasonic/avc/cng/view/parts/DrumPickerFandSSandPLayout;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

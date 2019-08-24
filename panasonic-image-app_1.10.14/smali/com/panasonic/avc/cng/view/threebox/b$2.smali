@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/panasonic/avc/cng/view/threebox/b;
+    value = Lcom/panasonic/avc/cng/view/threebox/ThreeBoxSeekBarView;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -24,16 +24,16 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/panasonic/avc/cng/view/threebox/b;
+.field final synthetic a:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxSeekBarView;
 
 
 # direct methods
-.method constructor <init>(Lcom/panasonic/avc/cng/view/threebox/b;Ljava/lang/Integer;)V
+.method constructor <init>(Lcom/panasonic/avc/cng/view/threebox/ThreeBoxSeekBarView;Ljava/lang/Integer;)V
     .locals 0
 
     .prologue
     .line 109
-    iput-object p1, p0, Lcom/panasonic/avc/cng/view/threebox/b$2;->a:Lcom/panasonic/avc/cng/view/threebox/b;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/view/threebox/b$2;->a:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxSeekBarView;
 
     invoke-direct {p0, p2}, Lcom/panasonic/avc/cng/a/d;-><init>(Ljava/lang/Object;)V
 
@@ -47,16 +47,16 @@
 
     .prologue
     .line 117
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/b$2;->a:Lcom/panasonic/avc/cng/view/threebox/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/b$2;->a:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxSeekBarView;
 
     invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
 
     move-result v1
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/threebox/b;->a(Lcom/panasonic/avc/cng/view/threebox/b;I)I
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxSeekBarView;->a(Lcom/panasonic/avc/cng/view/threebox/ThreeBoxSeekBarView;I)I
 
     .line 120
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/b$2;->a:Lcom/panasonic/avc/cng/view/threebox/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/b$2;->a:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxSeekBarView;
 
     invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
 
@@ -64,14 +64,14 @@
 
     const/4 v2, 0x0
 
-    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/view/threebox/b;->a(Lcom/panasonic/avc/cng/view/threebox/b;IZ)Ljava/lang/String;
+    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxSeekBarView;->a(Lcom/panasonic/avc/cng/view/threebox/ThreeBoxSeekBarView;IZ)Ljava/lang/String;
 
     move-result-object v0
 
     .line 121
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/threebox/b$2;->a:Lcom/panasonic/avc/cng/view/threebox/b;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/threebox/b$2;->a:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxSeekBarView;
 
-    invoke-static {v1}, Lcom/panasonic/avc/cng/view/threebox/b;->b(Lcom/panasonic/avc/cng/view/threebox/b;)Landroid/widget/TextView;
+    invoke-static {v1}, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxSeekBarView;->b(Lcom/panasonic/avc/cng/view/threebox/ThreeBoxSeekBarView;)Landroid/widget/TextView;
 
     move-result-object v1
 
@@ -82,11 +82,11 @@
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->post(Ljava/lang/Runnable;)Z
 
     .line 128
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/b$2;->a:Lcom/panasonic/avc/cng/view/threebox/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/b$2;->a:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxSeekBarView;
 
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/threebox/b$2;->a:Lcom/panasonic/avc/cng/view/threebox/b;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/threebox/b$2;->a:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxSeekBarView;
 
-    invoke-static {v1}, Lcom/panasonic/avc/cng/view/threebox/b;->c(Lcom/panasonic/avc/cng/view/threebox/b;)I
+    invoke-static {v1}, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxSeekBarView;->c(Lcom/panasonic/avc/cng/view/threebox/ThreeBoxSeekBarView;)I
 
     move-result v1
 
@@ -98,14 +98,14 @@
 
     const/4 v2, 0x1
 
-    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/view/threebox/b;->a(Lcom/panasonic/avc/cng/view/threebox/b;IZ)Ljava/lang/String;
+    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxSeekBarView;->a(Lcom/panasonic/avc/cng/view/threebox/ThreeBoxSeekBarView;IZ)Ljava/lang/String;
 
     move-result-object v0
 
     .line 129
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/threebox/b$2;->a:Lcom/panasonic/avc/cng/view/threebox/b;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/threebox/b$2;->a:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxSeekBarView;
 
-    invoke-static {v1}, Lcom/panasonic/avc/cng/view/threebox/b;->d(Lcom/panasonic/avc/cng/view/threebox/b;)Landroid/widget/TextView;
+    invoke-static {v1}, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxSeekBarView;->d(Lcom/panasonic/avc/cng/view/threebox/ThreeBoxSeekBarView;)Landroid/widget/TextView;
 
     move-result-object v1
 

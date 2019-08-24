@@ -5,8 +5,8 @@ import android.content.SharedPreferences.Editor;
 import android.os.Build.VERSION;
 import android.text.TextUtils;
 import android.util.Pair;
-import com.google.android.gms.p029a.p030a.C0519a;
-import com.google.android.gms.p029a.p030a.C0519a.C0520a;
+import com.google.android.gms.p029a.p030a.AdvertisingIdClient;
+import com.google.android.gms.p029a.p030a.AdvertisingIdClient.C0520a;
 import java.math.BigInteger;
 import java.security.MessageDigest;
 import java.util.Locale;
@@ -145,9 +145,9 @@ final class C0921hz extends C0963jm {
             return new Pair<>(this.f2606r, Boolean.valueOf(this.f2607s));
         }
         this.f2608t = b + mo2245x().mo2310a(str, C0900he.f2511c);
-        C0519a.m2036a(true);
+        AdvertisingIdClient.m2036a(true);
         try {
-            C0520a a = C0519a.m2033a(mo2235n());
+            C0520a a = AdvertisingIdClient.m2033a(mo2235n());
             if (a != null) {
                 this.f2606r = a.mo1402a();
                 this.f2607s = a.mo1403b();
@@ -159,7 +159,7 @@ final class C0921hz extends C0963jm {
             mo2243v().mo2442D().mo2452a("Unable to get advertising id", th);
             this.f2606r = "";
         }
-        C0519a.m2036a(false);
+        AdvertisingIdClient.m2036a(false);
         return new Pair<>(this.f2606r, Boolean.valueOf(this.f2607s));
     }
 

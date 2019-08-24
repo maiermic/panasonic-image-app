@@ -10,8 +10,8 @@ public abstract class C1433h extends C1413a<C1435j> {
 
     /* access modifiers changed from: protected */
     /* JADX WARNING: Code restructure failed: missing block: B:27:?, code lost:
-        com.panasonic.avc.cng.util.C2261g.m9763a(getClass().getSimpleName(), "Response XML: ");
-        com.panasonic.avc.cng.util.C2261g.m9763a(getClass().getSimpleName(), r0.toString());
+        com.panasonic.avc.cng.util.ImageAppLog.debug(getClass().getSimpleName(), "Response XML: ");
+        com.panasonic.avc.cng.util.ImageAppLog.debug(getClass().getSimpleName(), r0.toString());
         r2 = new com.panasonic.avc.cng.core.p040a.p041a.C1435j(r0.toString());
         r0 = r2.mo3455b("result");
      */
@@ -102,11 +102,11 @@ public abstract class C1433h extends C1413a<C1435j> {
             java.lang.Class r2 = r4.getClass()     // Catch:{ SocketTimeoutException -> 0x002b, IOException -> 0x003f, XmlPullParserException -> 0x0080 }
             java.lang.String r2 = r2.getSimpleName()     // Catch:{ SocketTimeoutException -> 0x002b, IOException -> 0x003f, XmlPullParserException -> 0x0080 }
             java.lang.String r3 = "Response XML: "
-            com.panasonic.avc.cng.util.C2261g.m9763a(r2, r3)     // Catch:{ SocketTimeoutException -> 0x002b, IOException -> 0x003f, XmlPullParserException -> 0x0080 }
+            com.panasonic.avc.cng.util.ImageAppLog.debug(r2, r3)     // Catch:{ SocketTimeoutException -> 0x002b, IOException -> 0x003f, XmlPullParserException -> 0x0080 }
             java.lang.Class r2 = r4.getClass()     // Catch:{ SocketTimeoutException -> 0x002b, IOException -> 0x003f, XmlPullParserException -> 0x0080 }
             java.lang.String r2 = r2.getSimpleName()     // Catch:{ SocketTimeoutException -> 0x002b, IOException -> 0x003f, XmlPullParserException -> 0x0080 }
             java.lang.String r3 = r0.toString()     // Catch:{ SocketTimeoutException -> 0x002b, IOException -> 0x003f, XmlPullParserException -> 0x0080 }
-            com.panasonic.avc.cng.util.C2261g.m9763a(r2, r3)     // Catch:{ SocketTimeoutException -> 0x002b, IOException -> 0x003f, XmlPullParserException -> 0x0080 }
+            com.panasonic.avc.cng.util.ImageAppLog.debug(r2, r3)     // Catch:{ SocketTimeoutException -> 0x002b, IOException -> 0x003f, XmlPullParserException -> 0x0080 }
             com.panasonic.avc.cng.core.a.a.j r2 = new com.panasonic.avc.cng.core.a.a.j     // Catch:{ SocketTimeoutException -> 0x002b, IOException -> 0x003f, XmlPullParserException -> 0x0080 }
             java.lang.String r0 = r0.toString()     // Catch:{ SocketTimeoutException -> 0x002b, IOException -> 0x003f, XmlPullParserException -> 0x0080 }
             r2.<init>(r0)     // Catch:{ SocketTimeoutException -> 0x002b, IOException -> 0x003f, XmlPullParserException -> 0x0080 }

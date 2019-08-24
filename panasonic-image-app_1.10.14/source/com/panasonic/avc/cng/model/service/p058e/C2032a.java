@@ -6,7 +6,7 @@ import com.panasonic.avc.cng.core.p040a.C1449ak;
 import com.panasonic.avc.cng.core.p040a.C1496b;
 import com.panasonic.avc.cng.core.p040a.C1506e;
 import com.panasonic.avc.cng.core.p040a.C1525i;
-import com.panasonic.avc.cng.core.p040a.C1526j;
+import com.panasonic.avc.cng.core.p040a.HighLightCommand;
 import com.panasonic.avc.cng.core.p040a.C1532p;
 import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.C1833c;
@@ -17,7 +17,7 @@ import com.panasonic.avc.cng.model.service.C2010c.C2011a;
 import com.panasonic.avc.cng.model.service.C2095i;
 import com.panasonic.avc.cng.model.service.C2095i.C2096a;
 import com.panasonic.avc.cng.model.service.C2095i.C2097b;
-import com.panasonic.avc.cng.model.service.C2253z;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
 import com.panasonic.avc.cng.util.C2256b;
 import com.panasonic.avc.cng.util.C2264j;
 import java.io.File;
@@ -44,7 +44,7 @@ public class C2032a implements C2095i {
     public C2097b f6287c;
 
     /* renamed from: d */
-    private C1526j f6288d;
+    private HighLightCommand f6288d;
     /* access modifiers changed from: private */
 
     /* renamed from: e */
@@ -86,8 +86,8 @@ public class C2032a implements C2095i {
     public void mo5340a(C2096a aVar) {
         C1892f a = C1712b.m6919c().mo4896a();
         if (a != null) {
-            this.f6288d = new C1526j(a.f5682d);
-            this.f6289e = C2253z.m9711j(this.f6285a);
+            this.f6288d = new HighLightCommand(a.f5682d);
+            this.f6289e = ServiceFactory.m9711j(this.f6285a);
             this.f6289e.mo5204a();
         }
         this.f6286b = aVar;

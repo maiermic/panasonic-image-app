@@ -76,9 +76,9 @@
     .line 142
     iget-object v2, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieVideoWithFullActivity$3;->b:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieVideoWithFullActivity;
 
-    iget-object v2, v2, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieVideoWithFullActivity;->_viewModel:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;
+    iget-object v2, v2, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieVideoWithFullActivity;->_viewModel:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;
 
-    iget-object v2, v2, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;->bf:Lcom/panasonic/avc/cng/a/c;
+    iget-object v2, v2, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;->bf:Lcom/panasonic/avc/cng/a/c;
 
     const/4 v3, 0x1
 
@@ -91,22 +91,22 @@
     .line 143
     iget-object v2, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieVideoWithFullActivity$3;->b:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieVideoWithFullActivity;
 
-    iget-object v2, v2, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieVideoWithFullActivity;->_viewModel:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;
+    iget-object v2, v2, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieVideoWithFullActivity;->_viewModel:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;
 
     if-eqz v2, :cond_0
 
     .line 145
     iget-object v2, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieVideoWithFullActivity$3;->b:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieVideoWithFullActivity;
 
-    iget-object v2, v2, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieVideoWithFullActivity;->_viewModel:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;
+    iget-object v2, v2, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieVideoWithFullActivity;->_viewModel:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;
 
-    iget-object v2, v2, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;->bg:Lcom/panasonic/avc/cng/a/c;
+    iget-object v2, v2, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;->bg:Lcom/panasonic/avc/cng/a/c;
 
     iget-object v3, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieVideoWithFullActivity$3;->b:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieVideoWithFullActivity;
 
-    iget-object v3, v3, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieVideoWithFullActivity;->_viewModel:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;
+    iget-object v3, v3, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieVideoWithFullActivity;->_viewModel:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;
 
-    invoke-virtual {v3}, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;->o()Z
+    invoke-virtual {v3}, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;->o()Z
 
     move-result v3
 
@@ -114,9 +114,9 @@
 
     iget-object v3, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieVideoWithFullActivity$3;->b:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieVideoWithFullActivity;
 
-    iget-object v3, v3, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieVideoWithFullActivity;->_viewModel:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;
+    iget-object v3, v3, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieVideoWithFullActivity;->_viewModel:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;
 
-    invoke-virtual {v3}, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;->p()Z
+    invoke-virtual {v3}, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;->p()Z
 
     move-result v3
 

@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/panasonic/avc/cng/view/bluetooth/c;
+    value = Lcom/panasonic/avc/cng/view/bluetooth/BluetoothRegistViewModel;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

@@ -22,7 +22,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
 import com.panasonic.avc.cng.application.C1347a;
-import com.panasonic.avc.cng.application.p039a.C1351b;
+import com.panasonic.avc.cng.application.p039a.GoogleTagManager;
 import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.C1892f;
@@ -30,12 +30,12 @@ import com.panasonic.avc.cng.model.p051c.C1844d;
 import com.panasonic.avc.cng.model.p051c.C1860l;
 import com.panasonic.avc.cng.model.p052d.C1879a;
 import com.panasonic.avc.cng.model.service.C1985b;
-import com.panasonic.avc.cng.model.service.C2253z;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.util.C2266l;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
-import com.panasonic.avc.cng.view.setting.C5537al.C5540a;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
+import com.panasonic.avc.cng.view.setting.SettingMenuBaseActivity.C5540a;
 import com.panasonic.avc.cng.view.setting.C5541am.C5545b;
 import com.panasonic.avc.cng.view.setting.C5541am.C5550d;
 import com.panasonic.avc.cng.view.setting.C5541am.C5551e;
@@ -84,7 +84,7 @@ public class RecursiveSettingActivity extends C5741i {
 
             public boolean onPreferenceClick(Preference preference) {
                 if (this.f16490b.mo12328a()) {
-                    C2331d.m10114a(C5232a.this.getActivity(), C2328a.ON_MATANITY_CHANGE_CONFIRM, (Bundle) null);
+                    DialogFactory.m10114a(C5232a.this.getActivity(), C2328a.ON_MATANITY_CHANGE_CONFIRM, (Bundle) null);
                 } else {
                     Bundle resultBundle = ((RecursiveSettingActivity) C5232a.this.getActivity()).getResultBundle();
                     if (!this.f16490b.mo12330a(C5232a.this.getActivity(), resultBundle)) {
@@ -107,7 +107,7 @@ public class RecursiveSettingActivity extends C5741i {
             public void mo7035c_() {
                 C5232a.this.f16483d.postDelayed(new Runnable() {
                     public void run() {
-                        C1985b a = C2253z.m9679a((Context) C5232a.this.getActivity(), C1712b.m6919c().mo4896a());
+                        C1985b a = ServiceFactory.m9679a((Context) C5232a.this.getActivity(), C1712b.m6919c().mo4896a());
                         if (a != null) {
                             String i = a.mo5197i();
                             Bundle resultBundle = ((RecursiveSettingActivity) C5232a.this.getActivity()).getResultBundle();
@@ -157,13 +157,13 @@ public class RecursiveSettingActivity extends C5741i {
 
             /* renamed from: b */
             public void mo7033b() {
-                C2331d.m10114a(C5232a.this.getActivity(), C2328a.ON_PROGRESS, (Bundle) null);
+                DialogFactory.m10114a(C5232a.this.getActivity(), C2328a.ON_PROGRESS, (Bundle) null);
             }
 
             /* renamed from: c */
             public void mo7034c() {
-                if (C2331d.m10125b(C5232a.this.getActivity(), C2328a.ON_PROGRESS)) {
-                    C2331d.m10100a(C5232a.this.getActivity());
+                if (DialogFactory.m10125b(C5232a.this.getActivity(), C2328a.ON_PROGRESS)) {
+                    DialogFactory.m10100a(C5232a.this.getActivity());
                 }
             }
 
@@ -430,7 +430,7 @@ public class RecursiveSettingActivity extends C5741i {
                                 str = oVar.f17234f[oVar.f17237i];
                                 z = true;
                             } else if (a != null) {
-                                C1985b a2 = C2253z.m9679a((Context) getActivity(), a);
+                                C1985b a2 = ServiceFactory.m9679a((Context) getActivity(), a);
                                 if (a2 != null) {
                                     if (bVar.f17181a.f5369b.equalsIgnoreCase("title_iris")) {
                                         C1860l a3 = a2.mo5182a("menu_item_id_iris");
@@ -483,7 +483,7 @@ public class RecursiveSettingActivity extends C5741i {
                         if (bVar.f17183c.equals("menu_item_id_white_balance")) {
                             listPreference.setOnPreferenceClickListener(new OnPreferenceClickListener() {
                                 public boolean onPreferenceClick(Preference preference) {
-                                    C1351b.m5317a().mo3232a(createPreferenceScreen.getContext(), "Movie WB");
+                                    GoogleTagManager.m5317a().mo3232a(createPreferenceScreen.getContext(), "Movie WB");
                                     return false;
                                 }
                             });
@@ -526,7 +526,7 @@ public class RecursiveSettingActivity extends C5741i {
                     createPreferenceScreen4.setKey("Usages");
                     createPreferenceScreen4.setOnPreferenceClickListener(new OnPreferenceClickListener() {
                         public boolean onPreferenceClick(Preference preference) {
-                            C2261g.m9760a(3178499, "");
+                            ImageAppLog.m9760a(3178499, "");
                             C5232a.this.getActivity().startActivityForResult(new Intent(C5232a.this.getActivity(), UsagesSettingActivity.class), 7);
                             return false;
                         }
@@ -584,7 +584,7 @@ public class RecursiveSettingActivity extends C5741i {
                 if (!defaultSharedPreferences.getBoolean("JumpRecSettingsFirstCheck", false) && !getActivity().getText(R.string.setup_jump_rec_off).toString().equalsIgnoreCase(str)) {
                     this.f16483d.post(new Runnable() {
                         public void run() {
-                            C2331d.m10114a(C5232a.this.getActivity(), C2328a.ON_JUMPREC_WARNNING, (Bundle) null);
+                            DialogFactory.m10114a(C5232a.this.getActivity(), C2328a.ON_JUMPREC_WARNNING, (Bundle) null);
                         }
                     });
                     defaultSharedPreferences.edit().putBoolean("JumpRecSettingsFirstCheck", true).apply();

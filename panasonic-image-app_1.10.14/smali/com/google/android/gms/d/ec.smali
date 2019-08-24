@@ -80,11 +80,11 @@
 
 .field private k:Lcom/google/android/gms/common/a;
 
-.field private synthetic l:Lcom/google/android/gms/d/ea;
+.field private synthetic l:Lcom/google/android/gms/d/GoogleApiManager;
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/android/gms/d/ea;Lcom/google/android/gms/common/api/d;)V
+.method public constructor <init>(Lcom/google/android/gms/d/GoogleApiManager;Lcom/google/android/gms/common/api/d;)V
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -96,7 +96,7 @@
 
     const/4 v1, 0x0
 
-    iput-object p1, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/ea;
+    iput-object p1, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/GoogleApiManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -120,7 +120,7 @@
 
     iput-object v1, p0, Lcom/google/android/gms/d/ec;->k:Lcom/google/android/gms/common/a;
 
-    invoke-static {p1}, Lcom/google/android/gms/d/ea;->a(Lcom/google/android/gms/d/ea;)Landroid/os/Handler;
+    invoke-static {p1}, Lcom/google/android/gms/d/GoogleApiManager;->a(Lcom/google/android/gms/d/GoogleApiManager;)Landroid/os/Handler;
 
     move-result-object v0
 
@@ -173,11 +173,11 @@
 
     if-eqz v0, :cond_1
 
-    invoke-static {p1}, Lcom/google/android/gms/d/ea;->b(Lcom/google/android/gms/d/ea;)Landroid/content/Context;
+    invoke-static {p1}, Lcom/google/android/gms/d/GoogleApiManager;->b(Lcom/google/android/gms/d/GoogleApiManager;)Landroid/content/Context;
 
     move-result-object v0
 
-    invoke-static {p1}, Lcom/google/android/gms/d/ea;->a(Lcom/google/android/gms/d/ea;)Landroid/os/Handler;
+    invoke-static {p1}, Lcom/google/android/gms/d/GoogleApiManager;->a(Lcom/google/android/gms/d/GoogleApiManager;)Landroid/os/Handler;
 
     move-result-object v1
 
@@ -403,15 +403,15 @@
 
     invoke-virtual {v0}, Lcom/google/android/gms/d/dy;->c()V
 
-    iget-object v0, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/ea;
+    iget-object v0, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/GoogleApiManager;
 
-    invoke-static {v0}, Lcom/google/android/gms/d/ea;->a(Lcom/google/android/gms/d/ea;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/google/android/gms/d/GoogleApiManager;->a(Lcom/google/android/gms/d/GoogleApiManager;)Landroid/os/Handler;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/ea;
+    iget-object v1, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/GoogleApiManager;
 
-    invoke-static {v1}, Lcom/google/android/gms/d/ea;->a(Lcom/google/android/gms/d/ea;)Landroid/os/Handler;
+    invoke-static {v1}, Lcom/google/android/gms/d/GoogleApiManager;->a(Lcom/google/android/gms/d/GoogleApiManager;)Landroid/os/Handler;
 
     move-result-object v1
 
@@ -423,23 +423,23 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/ea;
+    iget-object v2, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/GoogleApiManager;
 
-    invoke-static {v2}, Lcom/google/android/gms/d/ea;->c(Lcom/google/android/gms/d/ea;)J
+    invoke-static {v2}, Lcom/google/android/gms/d/GoogleApiManager;->c(Lcom/google/android/gms/d/GoogleApiManager;)J
 
     move-result-wide v2
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/os/Handler;->sendMessageDelayed(Landroid/os/Message;J)Z
 
-    iget-object v0, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/ea;
+    iget-object v0, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/GoogleApiManager;
 
-    invoke-static {v0}, Lcom/google/android/gms/d/ea;->a(Lcom/google/android/gms/d/ea;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/google/android/gms/d/GoogleApiManager;->a(Lcom/google/android/gms/d/GoogleApiManager;)Landroid/os/Handler;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/ea;
+    iget-object v1, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/GoogleApiManager;
 
-    invoke-static {v1}, Lcom/google/android/gms/d/ea;->a(Lcom/google/android/gms/d/ea;)Landroid/os/Handler;
+    invoke-static {v1}, Lcom/google/android/gms/d/GoogleApiManager;->a(Lcom/google/android/gms/d/GoogleApiManager;)Landroid/os/Handler;
 
     move-result-object v1
 
@@ -451,19 +451,19 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/ea;
+    iget-object v2, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/GoogleApiManager;
 
-    invoke-static {v2}, Lcom/google/android/gms/d/ea;->d(Lcom/google/android/gms/d/ea;)J
+    invoke-static {v2}, Lcom/google/android/gms/d/GoogleApiManager;->d(Lcom/google/android/gms/d/GoogleApiManager;)J
 
     move-result-wide v2
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/os/Handler;->sendMessageDelayed(Landroid/os/Message;J)Z
 
-    iget-object v0, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/ea;
+    iget-object v0, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/GoogleApiManager;
 
     const/4 v1, -0x1
 
-    invoke-static {v0, v1}, Lcom/google/android/gms/d/ea;->a(Lcom/google/android/gms/d/ea;I)I
+    invoke-static {v0, v1}, Lcom/google/android/gms/d/GoogleApiManager;->a(Lcom/google/android/gms/d/GoogleApiManager;I)I
 
     return-void
 .end method
@@ -475,9 +475,9 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/ea;
+    iget-object v0, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/GoogleApiManager;
 
-    invoke-static {v0}, Lcom/google/android/gms/d/ea;->a(Lcom/google/android/gms/d/ea;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/google/android/gms/d/GoogleApiManager;->a(Lcom/google/android/gms/d/GoogleApiManager;)Landroid/os/Handler;
 
     move-result-object v0
 
@@ -487,9 +487,9 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/os/Handler;->removeMessages(ILjava/lang/Object;)V
 
-    iget-object v0, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/ea;
+    iget-object v0, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/GoogleApiManager;
 
-    invoke-static {v0}, Lcom/google/android/gms/d/ea;->a(Lcom/google/android/gms/d/ea;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/google/android/gms/d/GoogleApiManager;->a(Lcom/google/android/gms/d/GoogleApiManager;)Landroid/os/Handler;
 
     move-result-object v0
 
@@ -512,9 +512,9 @@
 
     const/16 v3, 0xc
 
-    iget-object v0, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/ea;
+    iget-object v0, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/GoogleApiManager;
 
-    invoke-static {v0}, Lcom/google/android/gms/d/ea;->a(Lcom/google/android/gms/d/ea;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/google/android/gms/d/GoogleApiManager;->a(Lcom/google/android/gms/d/GoogleApiManager;)Landroid/os/Handler;
 
     move-result-object v0
 
@@ -522,15 +522,15 @@
 
     invoke-virtual {v0, v3, v1}, Landroid/os/Handler;->removeMessages(ILjava/lang/Object;)V
 
-    iget-object v0, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/ea;
+    iget-object v0, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/GoogleApiManager;
 
-    invoke-static {v0}, Lcom/google/android/gms/d/ea;->a(Lcom/google/android/gms/d/ea;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/google/android/gms/d/GoogleApiManager;->a(Lcom/google/android/gms/d/GoogleApiManager;)Landroid/os/Handler;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/ea;
+    iget-object v1, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/GoogleApiManager;
 
-    invoke-static {v1}, Lcom/google/android/gms/d/ea;->a(Lcom/google/android/gms/d/ea;)Landroid/os/Handler;
+    invoke-static {v1}, Lcom/google/android/gms/d/GoogleApiManager;->a(Lcom/google/android/gms/d/GoogleApiManager;)Landroid/os/Handler;
 
     move-result-object v1
 
@@ -540,9 +540,9 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/ea;
+    iget-object v2, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/GoogleApiManager;
 
-    invoke-static {v2}, Lcom/google/android/gms/d/ea;->h(Lcom/google/android/gms/d/ea;)J
+    invoke-static {v2}, Lcom/google/android/gms/d/GoogleApiManager;->h(Lcom/google/android/gms/d/GoogleApiManager;)J
 
     move-result-wide v2
 
@@ -556,15 +556,15 @@
 .method public final a()V
     .locals 4
 
-    iget-object v0, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/ea;
+    iget-object v0, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/GoogleApiManager;
 
-    invoke-static {v0}, Lcom/google/android/gms/d/ea;->a(Lcom/google/android/gms/d/ea;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/google/android/gms/d/GoogleApiManager;->a(Lcom/google/android/gms/d/GoogleApiManager;)Landroid/os/Handler;
 
     move-result-object v0
 
     invoke-static {v0}, Lcom/google/android/gms/common/internal/ab;->a(Landroid/os/Handler;)V
 
-    sget-object v0, Lcom/google/android/gms/d/ea;->a:Lcom/google/android/gms/common/api/Status;
+    sget-object v0, Lcom/google/android/gms/d/GoogleApiManager;->a:Lcom/google/android/gms/common/api/Status;
 
     invoke-virtual {p0, v0}, Lcom/google/android/gms/d/ec;->a(Lcom/google/android/gms/common/api/Status;)V
 
@@ -630,9 +630,9 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/ea;
+    iget-object v1, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/GoogleApiManager;
 
-    invoke-static {v1}, Lcom/google/android/gms/d/ea;->a(Lcom/google/android/gms/d/ea;)Landroid/os/Handler;
+    invoke-static {v1}, Lcom/google/android/gms/d/GoogleApiManager;->a(Lcom/google/android/gms/d/GoogleApiManager;)Landroid/os/Handler;
 
     move-result-object v1
 
@@ -648,9 +648,9 @@
     return-void
 
     :cond_0
-    iget-object v0, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/ea;
+    iget-object v0, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/GoogleApiManager;
 
-    invoke-static {v0}, Lcom/google/android/gms/d/ea;->a(Lcom/google/android/gms/d/ea;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/google/android/gms/d/GoogleApiManager;->a(Lcom/google/android/gms/d/GoogleApiManager;)Landroid/os/Handler;
 
     move-result-object v0
 
@@ -670,9 +670,9 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/ea;
+    iget-object v1, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/GoogleApiManager;
 
-    invoke-static {v1}, Lcom/google/android/gms/d/ea;->a(Lcom/google/android/gms/d/ea;)Landroid/os/Handler;
+    invoke-static {v1}, Lcom/google/android/gms/d/GoogleApiManager;->a(Lcom/google/android/gms/d/GoogleApiManager;)Landroid/os/Handler;
 
     move-result-object v1
 
@@ -688,9 +688,9 @@
     return-void
 
     :cond_0
-    iget-object v0, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/ea;
+    iget-object v0, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/GoogleApiManager;
 
-    invoke-static {v0}, Lcom/google/android/gms/d/ea;->a(Lcom/google/android/gms/d/ea;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/google/android/gms/d/GoogleApiManager;->a(Lcom/google/android/gms/d/GoogleApiManager;)Landroid/os/Handler;
 
     move-result-object v0
 
@@ -706,9 +706,9 @@
 .method public final a(Lcom/google/android/gms/common/a;)V
     .locals 5
 
-    iget-object v0, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/ea;
+    iget-object v0, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/GoogleApiManager;
 
-    invoke-static {v0}, Lcom/google/android/gms/d/ea;->a(Lcom/google/android/gms/d/ea;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/google/android/gms/d/GoogleApiManager;->a(Lcom/google/android/gms/d/GoogleApiManager;)Landroid/os/Handler;
 
     move-result-object v0
 
@@ -725,11 +725,11 @@
     :cond_0
     invoke-virtual {p0}, Lcom/google/android/gms/d/ec;->d()V
 
-    iget-object v0, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/ea;
+    iget-object v0, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/GoogleApiManager;
 
     const/4 v1, -0x1
 
-    invoke-static {v0, v1}, Lcom/google/android/gms/d/ea;->a(Lcom/google/android/gms/d/ea;I)I
+    invoke-static {v0, v1}, Lcom/google/android/gms/d/GoogleApiManager;->a(Lcom/google/android/gms/d/GoogleApiManager;I)I
 
     invoke-direct {p0, p1}, Lcom/google/android/gms/d/ec;->c(Lcom/google/android/gms/common/a;)V
 
@@ -741,7 +741,7 @@
 
     if-ne v0, v1, :cond_2
 
-    invoke-static {}, Lcom/google/android/gms/d/ea;->b()Lcom/google/android/gms/common/api/Status;
+    invoke-static {}, Lcom/google/android/gms/d/GoogleApiManager;->b()Lcom/google/android/gms/common/api/Status;
 
     move-result-object v0
 
@@ -765,24 +765,24 @@
     goto :goto_0
 
     :cond_3
-    invoke-static {}, Lcom/google/android/gms/d/ea;->c()Ljava/lang/Object;
+    invoke-static {}, Lcom/google/android/gms/d/GoogleApiManager;->c()Ljava/lang/Object;
 
     move-result-object v1
 
     monitor-enter v1
 
     :try_start_0
-    iget-object v0, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/ea;
+    iget-object v0, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/GoogleApiManager;
 
-    invoke-static {v0}, Lcom/google/android/gms/d/ea;->e(Lcom/google/android/gms/d/ea;)Lcom/google/android/gms/d/dz;
+    invoke-static {v0}, Lcom/google/android/gms/d/GoogleApiManager;->e(Lcom/google/android/gms/d/GoogleApiManager;)Lcom/google/android/gms/d/dz;
 
     move-result-object v0
 
     if-eqz v0, :cond_4
 
-    iget-object v0, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/ea;
+    iget-object v0, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/GoogleApiManager;
 
-    invoke-static {v0}, Lcom/google/android/gms/d/ea;->f(Lcom/google/android/gms/d/ea;)Ljava/util/Set;
+    invoke-static {v0}, Lcom/google/android/gms/d/GoogleApiManager;->f(Lcom/google/android/gms/d/GoogleApiManager;)Ljava/util/Set;
 
     move-result-object v0
 
@@ -794,9 +794,9 @@
 
     if-eqz v0, :cond_4
 
-    iget-object v0, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/ea;
+    iget-object v0, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/GoogleApiManager;
 
-    invoke-static {v0}, Lcom/google/android/gms/d/ea;->e(Lcom/google/android/gms/d/ea;)Lcom/google/android/gms/d/dz;
+    invoke-static {v0}, Lcom/google/android/gms/d/GoogleApiManager;->e(Lcom/google/android/gms/d/GoogleApiManager;)Lcom/google/android/gms/d/dz;
 
     move-result-object v0
 
@@ -823,11 +823,11 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    iget-object v0, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/ea;
+    iget-object v0, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/GoogleApiManager;
 
     iget v1, p0, Lcom/google/android/gms/d/ec;->h:I
 
-    invoke-virtual {v0, p1, v1}, Lcom/google/android/gms/d/ea;->a(Lcom/google/android/gms/common/a;I)Z
+    invoke-virtual {v0, p1, v1}, Lcom/google/android/gms/d/GoogleApiManager;->a(Lcom/google/android/gms/common/a;I)Z
 
     move-result v0
 
@@ -850,15 +850,15 @@
 
     if-eqz v0, :cond_6
 
-    iget-object v0, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/ea;
+    iget-object v0, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/GoogleApiManager;
 
-    invoke-static {v0}, Lcom/google/android/gms/d/ea;->a(Lcom/google/android/gms/d/ea;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/google/android/gms/d/GoogleApiManager;->a(Lcom/google/android/gms/d/GoogleApiManager;)Landroid/os/Handler;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/ea;
+    iget-object v1, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/GoogleApiManager;
 
-    invoke-static {v1}, Lcom/google/android/gms/d/ea;->a(Lcom/google/android/gms/d/ea;)Landroid/os/Handler;
+    invoke-static {v1}, Lcom/google/android/gms/d/GoogleApiManager;->a(Lcom/google/android/gms/d/GoogleApiManager;)Landroid/os/Handler;
 
     move-result-object v1
 
@@ -870,9 +870,9 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/ea;
+    iget-object v2, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/GoogleApiManager;
 
-    invoke-static {v2}, Lcom/google/android/gms/d/ea;->c(Lcom/google/android/gms/d/ea;)J
+    invoke-static {v2}, Lcom/google/android/gms/d/GoogleApiManager;->c(Lcom/google/android/gms/d/GoogleApiManager;)J
 
     move-result-wide v2
 
@@ -939,9 +939,9 @@
 .method public final a(Lcom/google/android/gms/common/api/Status;)V
     .locals 2
 
-    iget-object v0, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/ea;
+    iget-object v0, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/GoogleApiManager;
 
-    invoke-static {v0}, Lcom/google/android/gms/d/ea;->a(Lcom/google/android/gms/d/ea;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/google/android/gms/d/GoogleApiManager;->a(Lcom/google/android/gms/d/GoogleApiManager;)Landroid/os/Handler;
 
     move-result-object v0
 
@@ -981,9 +981,9 @@
 .method public final a(Lcom/google/android/gms/d/di;)V
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/ea;
+    iget-object v0, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/GoogleApiManager;
 
-    invoke-static {v0}, Lcom/google/android/gms/d/ea;->a(Lcom/google/android/gms/d/ea;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/google/android/gms/d/GoogleApiManager;->a(Lcom/google/android/gms/d/GoogleApiManager;)Landroid/os/Handler;
 
     move-result-object v0
 
@@ -1036,9 +1036,9 @@
 .method public final a(Lcom/google/android/gms/d/dm;)V
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/ea;
+    iget-object v0, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/GoogleApiManager;
 
-    invoke-static {v0}, Lcom/google/android/gms/d/ea;->a(Lcom/google/android/gms/d/ea;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/google/android/gms/d/GoogleApiManager;->a(Lcom/google/android/gms/d/GoogleApiManager;)Landroid/os/Handler;
 
     move-result-object v0
 
@@ -1062,9 +1062,9 @@
 .method public final b(Lcom/google/android/gms/common/a;)V
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/ea;
+    iget-object v0, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/GoogleApiManager;
 
-    invoke-static {v0}, Lcom/google/android/gms/d/ea;->a(Lcom/google/android/gms/d/ea;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/google/android/gms/d/GoogleApiManager;->a(Lcom/google/android/gms/d/GoogleApiManager;)Landroid/os/Handler;
 
     move-result-object v0
 
@@ -1101,9 +1101,9 @@
 .method public final d()V
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/ea;
+    iget-object v0, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/GoogleApiManager;
 
-    invoke-static {v0}, Lcom/google/android/gms/d/ea;->a(Lcom/google/android/gms/d/ea;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/google/android/gms/d/GoogleApiManager;->a(Lcom/google/android/gms/d/GoogleApiManager;)Landroid/os/Handler;
 
     move-result-object v0
 
@@ -1119,9 +1119,9 @@
 .method public final e()Lcom/google/android/gms/common/a;
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/ea;
+    iget-object v0, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/GoogleApiManager;
 
-    invoke-static {v0}, Lcom/google/android/gms/d/ea;->a(Lcom/google/android/gms/d/ea;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/google/android/gms/d/GoogleApiManager;->a(Lcom/google/android/gms/d/GoogleApiManager;)Landroid/os/Handler;
 
     move-result-object v0
 
@@ -1135,9 +1135,9 @@
 .method public final f()V
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/ea;
+    iget-object v0, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/GoogleApiManager;
 
-    invoke-static {v0}, Lcom/google/android/gms/d/ea;->a(Lcom/google/android/gms/d/ea;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/google/android/gms/d/GoogleApiManager;->a(Lcom/google/android/gms/d/GoogleApiManager;)Landroid/os/Handler;
 
     move-result-object v0
 
@@ -1158,9 +1158,9 @@
 
     const/16 v2, 0x8
 
-    iget-object v0, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/ea;
+    iget-object v0, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/GoogleApiManager;
 
-    invoke-static {v0}, Lcom/google/android/gms/d/ea;->a(Lcom/google/android/gms/d/ea;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/google/android/gms/d/GoogleApiManager;->a(Lcom/google/android/gms/d/GoogleApiManager;)Landroid/os/Handler;
 
     move-result-object v0
 
@@ -1172,15 +1172,15 @@
 
     invoke-direct {p0}, Lcom/google/android/gms/d/ec;->o()V
 
-    iget-object v0, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/ea;
+    iget-object v0, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/GoogleApiManager;
 
-    invoke-static {v0}, Lcom/google/android/gms/d/ea;->g(Lcom/google/android/gms/d/ea;)Lcom/google/android/gms/common/c;
+    invoke-static {v0}, Lcom/google/android/gms/d/GoogleApiManager;->g(Lcom/google/android/gms/d/GoogleApiManager;)Lcom/google/android/gms/common/c;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/ea;
+    iget-object v1, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/GoogleApiManager;
 
-    invoke-static {v1}, Lcom/google/android/gms/d/ea;->b(Lcom/google/android/gms/d/ea;)Landroid/content/Context;
+    invoke-static {v1}, Lcom/google/android/gms/d/GoogleApiManager;->b(Lcom/google/android/gms/d/GoogleApiManager;)Landroid/content/Context;
 
     move-result-object v1
 
@@ -1221,9 +1221,9 @@
 .method public final h()V
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/ea;
+    iget-object v0, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/GoogleApiManager;
 
-    invoke-static {v0}, Lcom/google/android/gms/d/ea;->a(Lcom/google/android/gms/d/ea;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/google/android/gms/d/GoogleApiManager;->a(Lcom/google/android/gms/d/GoogleApiManager;)Landroid/os/Handler;
 
     move-result-object v0
 
@@ -1270,9 +1270,9 @@
 .method public final i()V
     .locals 4
 
-    iget-object v0, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/ea;
+    iget-object v0, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/GoogleApiManager;
 
-    invoke-static {v0}, Lcom/google/android/gms/d/ea;->a(Lcom/google/android/gms/d/ea;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/google/android/gms/d/GoogleApiManager;->a(Lcom/google/android/gms/d/GoogleApiManager;)Landroid/os/Handler;
 
     move-result-object v0
 
@@ -1307,25 +1307,25 @@
 
     if-eqz v0, :cond_2
 
-    iget-object v0, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/ea;
+    iget-object v0, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/GoogleApiManager;
 
-    invoke-static {v0}, Lcom/google/android/gms/d/ea;->i(Lcom/google/android/gms/d/ea;)I
+    invoke-static {v0}, Lcom/google/android/gms/d/GoogleApiManager;->i(Lcom/google/android/gms/d/GoogleApiManager;)I
 
     move-result v0
 
     if-eqz v0, :cond_2
 
-    iget-object v0, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/ea;
+    iget-object v0, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/GoogleApiManager;
 
-    iget-object v1, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/ea;
+    iget-object v1, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/GoogleApiManager;
 
-    invoke-static {v1}, Lcom/google/android/gms/d/ea;->g(Lcom/google/android/gms/d/ea;)Lcom/google/android/gms/common/c;
+    invoke-static {v1}, Lcom/google/android/gms/d/GoogleApiManager;->g(Lcom/google/android/gms/d/GoogleApiManager;)Lcom/google/android/gms/common/c;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/ea;
+    iget-object v2, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/GoogleApiManager;
 
-    invoke-static {v2}, Lcom/google/android/gms/d/ea;->b(Lcom/google/android/gms/d/ea;)Landroid/content/Context;
+    invoke-static {v2}, Lcom/google/android/gms/d/GoogleApiManager;->b(Lcom/google/android/gms/d/GoogleApiManager;)Landroid/content/Context;
 
     move-result-object v2
 
@@ -1333,11 +1333,11 @@
 
     move-result v1
 
-    invoke-static {v0, v1}, Lcom/google/android/gms/d/ea;->a(Lcom/google/android/gms/d/ea;I)I
+    invoke-static {v0, v1}, Lcom/google/android/gms/d/GoogleApiManager;->a(Lcom/google/android/gms/d/GoogleApiManager;I)I
 
-    iget-object v0, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/ea;
+    iget-object v0, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/GoogleApiManager;
 
-    invoke-static {v0}, Lcom/google/android/gms/d/ea;->i(Lcom/google/android/gms/d/ea;)I
+    invoke-static {v0}, Lcom/google/android/gms/d/GoogleApiManager;->i(Lcom/google/android/gms/d/GoogleApiManager;)I
 
     move-result v0
 
@@ -1345,9 +1345,9 @@
 
     new-instance v0, Lcom/google/android/gms/common/a;
 
-    iget-object v1, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/ea;
+    iget-object v1, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/GoogleApiManager;
 
-    invoke-static {v1}, Lcom/google/android/gms/d/ea;->i(Lcom/google/android/gms/d/ea;)I
+    invoke-static {v1}, Lcom/google/android/gms/d/GoogleApiManager;->i(Lcom/google/android/gms/d/GoogleApiManager;)I
 
     move-result v1
 
@@ -1362,13 +1362,13 @@
     :cond_2
     new-instance v0, Lcom/google/android/gms/d/ef;
 
-    iget-object v1, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/ea;
+    iget-object v1, p0, Lcom/google/android/gms/d/ec;->l:Lcom/google/android/gms/d/GoogleApiManager;
 
     iget-object v2, p0, Lcom/google/android/gms/d/ec;->b:Lcom/google/android/gms/common/api/a$f;
 
     iget-object v3, p0, Lcom/google/android/gms/d/ec;->d:Lcom/google/android/gms/d/dl;
 
-    invoke-direct {v0, v1, v2, v3}, Lcom/google/android/gms/d/ef;-><init>(Lcom/google/android/gms/d/ea;Lcom/google/android/gms/common/api/a$f;Lcom/google/android/gms/d/dl;)V
+    invoke-direct {v0, v1, v2, v3}, Lcom/google/android/gms/d/ef;-><init>(Lcom/google/android/gms/d/GoogleApiManager;Lcom/google/android/gms/common/api/a$f;Lcom/google/android/gms/d/dl;)V
 
     iget-object v1, p0, Lcom/google/android/gms/d/ec;->b:Lcom/google/android/gms/common/api/a$f;
 

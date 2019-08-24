@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.preference.PreferenceManager;
 import android.view.View;
-import com.panasonic.avc.cng.core.p040a.C1468ao;
+import com.panasonic.avc.cng.core.p040a.StatusCommand;
 import com.panasonic.avc.cng.core.p040a.C1501d;
 import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.C1712b;
@@ -15,8 +15,8 @@ import com.panasonic.avc.cng.model.p051c.C1861m;
 import com.panasonic.avc.cng.model.p051c.C1862n;
 import com.panasonic.avc.cng.model.p052d.C1879a;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
-import com.panasonic.avc.cng.view.setting.C5537al.C5540a;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
+import com.panasonic.avc.cng.view.setting.SettingMenuBaseActivity.C5540a;
 import com.panasonic.avc.cng.view.setting.C5681d.C5686b;
 import com.panasonic.avc.cng.view.setting.C5741i.C5759a;
 
@@ -36,7 +36,7 @@ public class CamSetupInitActivity extends C5741i {
         public void run() {
             C1892f a = C1712b.m6919c().mo4896a();
             if (a != null && new C1501d(a.f5682d).mo3704e()) {
-                String e = new C1468ao(a.f5682d).mo3555e();
+                String e = new StatusCommand(a.f5682d).mo3555e();
                 if (e != null) {
                     C1861m a2 = new C1862n().mo4816a(e);
                     if (a2 != null) {
@@ -81,13 +81,13 @@ public class CamSetupInitActivity extends C5741i {
                         public void run() {
                             switch (i) {
                                 case 2:
-                                    C2331d.m10114a((Activity) CamSetupInitActivity.this, C2328a.ON_DISCONNECT_BY_HIGH_TEMP_FINISH, (Bundle) null);
+                                    DialogFactory.m10114a((Activity) CamSetupInitActivity.this, C2328a.ON_DISCONNECT_BY_HIGH_TEMP_FINISH, (Bundle) null);
                                     return;
                                 case 3:
-                                    C2331d.m10114a((Activity) CamSetupInitActivity.this, C2328a.ON_DISCONNECT_BATTERY_LOW_FINISH, (Bundle) null);
+                                    DialogFactory.m10114a((Activity) CamSetupInitActivity.this, C2328a.ON_DISCONNECT_BATTERY_LOW_FINISH, (Bundle) null);
                                     return;
                                 default:
-                                    C2331d.m10114a((Activity) CamSetupInitActivity.this, C2328a.ON_DISCONNECT_FINISH, (Bundle) null);
+                                    DialogFactory.m10114a((Activity) CamSetupInitActivity.this, C2328a.ON_DISCONNECT_FINISH, (Bundle) null);
                                     return;
                             }
                         }

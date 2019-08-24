@@ -52,7 +52,7 @@
 
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity$23;->a:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->access$600(Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;)Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->access$600(Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;)Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
     move-result-object v0
 
@@ -69,7 +69,7 @@
 
     .line 499
     :cond_1
-    new-instance v0, Lcom/panasonic/avc/cng/view/cameraconnect/l;
+    new-instance v0, Lcom/panasonic/avc/cng/view/cameraconnect/WifiUtil;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity$23;->a:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;
 
@@ -77,7 +77,7 @@
 
     move-result-object v1
 
-    invoke-direct {v0, v1}, Lcom/panasonic/avc/cng/view/cameraconnect/l;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, v1}, Lcom/panasonic/avc/cng/view/cameraconnect/WifiUtil;-><init>(Landroid/content/Context;)V
 
     .line 500
     if-eqz v0, :cond_2
@@ -92,7 +92,7 @@
     if-ne v1, v3, :cond_4
 
     .line 504
-    invoke-virtual {v0, v3}, Lcom/panasonic/avc/cng/view/cameraconnect/l;->b(I)Z
+    invoke-virtual {v0, v3}, Lcom/panasonic/avc/cng/view/cameraconnect/WifiUtil;->b(I)Z
 
     move-result v0
 
@@ -103,7 +103,7 @@
 
     const-string v1, "\u64ae\u3063\u3066\u3059\u3050\u7528\u30bf\u30a4\u30de\u30fc\u30ad\u30e3\u30f3\u30bb\u30eb"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 507
     invoke-virtual {p0}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity$23;->cancel()Z
@@ -137,7 +137,7 @@
 
     const-string v1, "\u64ae\u3063\u3066\u3059\u3050\u7528\u30bf\u30a4\u30de\u30fc \u751f\u5b58"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 
@@ -160,7 +160,7 @@
 
     move-result-object v0
 
-    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/model/service/z;->a(Landroid/content/Context;Z)Lcom/panasonic/avc/cng/model/service/e;
+    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->a(Landroid/content/Context;Z)Lcom/panasonic/avc/cng/model/service/e;
 
     move-result-object v0
 
@@ -192,7 +192,7 @@
 
     const-string v1, "\u64ae\u3063\u3066\u3059\u3050\u7528\u30bf\u30a4\u30de\u30fc\u30ad\u30e3\u30f3\u30bb\u30eb Direct"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 532
     invoke-virtual {p0}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity$23;->cancel()Z
@@ -223,7 +223,7 @@
 
     const-string v1, "\u64ae\u3063\u3066\u3059\u3050\u7528\u30bf\u30a4\u30de\u30fc \u751f\u5b58Direct"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 .end method

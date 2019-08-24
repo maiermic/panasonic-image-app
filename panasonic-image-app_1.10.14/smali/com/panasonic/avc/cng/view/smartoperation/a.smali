@@ -446,7 +446,7 @@
     const/4 v0, 0x1
 
     .line 374
-    invoke-static {}, Lcom/panasonic/avc/cng/model/service/z;->f()Lcom/panasonic/avc/cng/model/service/a;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->f()Lcom/panasonic/avc/cng/model/service/a;
 
     move-result-object v1
 
@@ -501,7 +501,7 @@
     iput v0, p0, Lcom/panasonic/avc/cng/view/smartoperation/a;->i:I
 
     .line 400
-    invoke-static {}, Lcom/panasonic/avc/cng/model/service/z;->f()Lcom/panasonic/avc/cng/model/service/a;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->f()Lcom/panasonic/avc/cng/model/service/a;
 
     move-result-object v1
 
@@ -542,7 +542,7 @@
 
     const/4 v2, 0x1
 
-    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/model/service/z;->a(Landroid/content/Context;Z)Lcom/panasonic/avc/cng/model/service/e;
+    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->a(Landroid/content/Context;Z)Lcom/panasonic/avc/cng/model/service/e;
 
     move-result-object v1
 
@@ -562,11 +562,11 @@
 
     .line 427
     :cond_0
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v1
 
@@ -635,7 +635,7 @@
 
     move-result-object v2
 
-    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 642
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/smartoperation/a;->g:Lcom/panasonic/avc/cng/model/service/s;
@@ -676,7 +676,7 @@
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/smartoperation/a;->d:Lcom/panasonic/avc/cng/model/d;
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/model/service/z;->a(Landroid/content/Context;Lcom/panasonic/avc/cng/model/d;)Lcom/panasonic/avc/cng/model/service/s;
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->a(Landroid/content/Context;Lcom/panasonic/avc/cng/model/d;)Lcom/panasonic/avc/cng/model/service/s;
 
     move-result-object v0
 
@@ -1101,7 +1101,7 @@
 
     const-string v2, "BeginSeek()"
 
-    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 626
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/smartoperation/a;->g:Lcom/panasonic/avc/cng/model/service/s;
@@ -1151,7 +1151,7 @@
 
     const-string v2, "EndSeek()"
 
-    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 655
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/smartoperation/a;->g:Lcom/panasonic/avc/cng/model/service/s;

@@ -8,9 +8,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.C1712b;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
 
 public class EasyWiFiMimamoriTopActivity extends C5763k {
 
@@ -25,7 +25,7 @@ public class EasyWiFiMimamoriTopActivity extends C5763k {
         C1712b.m6914a((Activity) this);
         super.onCreate(bundle);
         if (m21343b()) {
-            C2261g.m9770d(f15938d, "onCreate");
+            ImageAppLog.verbose(f15938d, "onCreate");
         }
         setContentView(R.layout.activity_easywifi_mimamori);
         String f = this.f17702a.mo12625f();
@@ -49,11 +49,11 @@ public class EasyWiFiMimamoriTopActivity extends C5763k {
     public void onClickNext(View view) {
         if (view == null) {
             super.onClickNext(view);
-        } else if (!C2331d.m10125b((Activity) this, C2328a.DIALOG_ID_EASY_WIFI_OVERWRITE) && !C2331d.m10125b((Activity) this, C2328a.DIALOG_ID_EASY_WIFI_REGISTERED)) {
+        } else if (!DialogFactory.m10125b((Activity) this, C2328a.DIALOG_ID_EASY_WIFI_OVERWRITE) && !DialogFactory.m10125b((Activity) this, C2328a.DIALOG_ID_EASY_WIFI_REGISTERED)) {
             if (this.f15939e) {
-                C2331d.m10114a((Activity) this, C2328a.DIALOG_ID_EASY_WIFI_OVERWRITE, (Bundle) null);
+                DialogFactory.m10114a((Activity) this, C2328a.DIALOG_ID_EASY_WIFI_OVERWRITE, (Bundle) null);
             } else if (m19015g()) {
-                C2331d.m10114a((Activity) this, C2328a.DIALOG_ID_EASY_WIFI_REGISTERED, (Bundle) null);
+                DialogFactory.m10114a((Activity) this, C2328a.DIALOG_ID_EASY_WIFI_REGISTERED, (Bundle) null);
             }
         }
     }

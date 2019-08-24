@@ -11,8 +11,8 @@ import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.p038a.C1343b;
 import com.panasonic.avc.cng.view.parts.C4145d;
 import com.panasonic.avc.cng.view.parts.C4230p;
-import com.panasonic.avc.cng.view.parts.C4245t;
-import com.panasonic.avc.cng.view.parts.C4245t.C4252c;
+import com.panasonic.avc.cng.view.parts.BrowserViewModel;
+import com.panasonic.avc.cng.view.parts.BrowserViewModel.C4252c;
 import com.panasonic.avc.cng.view.parts.C4261w;
 import com.panasonic.avc.cng.view.parts.C4262x;
 
@@ -124,7 +124,7 @@ class C4670a {
         }
         int firstVisiblePosition = this.f15273c.getFirstVisiblePosition();
         int lastVisiblePosition = this.f15273c.getLastVisiblePosition();
-        C4245t i = this.f15272b.mo10963i();
+        BrowserViewModel i = this.f15272b.mo10963i();
         i.getClass();
         return new C4252c(firstVisiblePosition, lastVisiblePosition);
     }

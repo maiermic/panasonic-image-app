@@ -19,7 +19,7 @@
 # instance fields
 .field a:Ljava/lang/String;
 
-.field private b:Lcom/panasonic/avc/cng/view/setting/g;
+.field private b:Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;
 
 .field private c:Lcom/panasonic/avc/cng/view/setting/g$d;
 
@@ -123,9 +123,9 @@
     invoke-virtual {v0, v1}, Landroid/widget/ListView;->setAdapter(Landroid/widget/ListAdapter;)V
 
     .line 491
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b:Lcom/panasonic/avc/cng/view/setting/g;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b:Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;
 
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/setting/g;->i()Ljava/util/List;
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;->i()Ljava/util/List;
 
     move-result-object v1
 
@@ -148,9 +148,9 @@
 
     .line 498
     :cond_1
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b:Lcom/panasonic/avc/cng/view/setting/g;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b:Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;
 
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/setting/g;->j()Ljava/util/List;
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;->j()Ljava/util/List;
 
     move-result-object v1
 
@@ -303,7 +303,7 @@
 
     const-string v1, "Running......"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 
@@ -345,7 +345,7 @@
     invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
 
     .line 940
-    invoke-static {p0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;)V
+    invoke-static {p0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;)V
 
     .line 941
     new-instance v0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity$b;
@@ -355,7 +355,7 @@
     iput-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->c:Lcom/panasonic/avc/cng/view/setting/g$d;
 
     .line 942
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b:Lcom/panasonic/avc/cng/view/setting/g;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b:Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;
 
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->_context:Landroid/content/Context;
 
@@ -363,7 +363,7 @@
 
     iget-object v2, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->c:Lcom/panasonic/avc/cng/view/setting/g$d;
 
-    invoke-virtual {v1, v0, v2}, Lcom/panasonic/avc/cng/view/setting/g;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/setting/g$d;)V
+    invoke-virtual {v1, v0, v2}, Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/setting/g$d;)V
 
     goto :goto_0
 
@@ -477,15 +477,15 @@
     .line 690
     sget-object v0, Lcom/panasonic/avc/cng/view/b/b$a;->fe:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {p0, v0, v1}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {p0, v0, v1}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     goto :goto_0
 
     .line 695
     :pswitch_1
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b:Lcom/panasonic/avc/cng/view/setting/g;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b:Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;
 
-    invoke-static {p0, v0}, Lcom/panasonic/avc/cng/view/b/e;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/setting/g;)Landroid/widget/ArrayAdapter;
+    invoke-static {p0, v0}, Lcom/panasonic/avc/cng/view/b/e;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;)Landroid/widget/ArrayAdapter;
 
     move-result-object v0
 
@@ -498,21 +498,21 @@
 
     .line 699
     :cond_1
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b:Lcom/panasonic/avc/cng/view/setting/g;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b:Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;
 
     new-instance v1, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity$3;
 
     invoke-direct {v1, p0}, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity$3;-><init>(Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;)V
 
-    invoke-static {p0, v0, v1}, Lcom/panasonic/avc/cng/view/b/e;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/setting/g;Lcom/panasonic/avc/cng/view/b/a$c;)V
+    invoke-static {p0, v0, v1}, Lcom/panasonic/avc/cng/view/b/e;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;Lcom/panasonic/avc/cng/view/b/a$c;)V
 
     goto :goto_0
 
     .line 761
     :pswitch_2
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b:Lcom/panasonic/avc/cng/view/setting/g;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b:Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;
 
-    invoke-static {p0, v2, v2, v2, v0}, Lcom/panasonic/avc/cng/view/b/e;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/play/browser/a;Lcom/panasonic/avc/cng/view/smartoperation/i;Lcom/panasonic/avc/cng/view/smartoperation/h;Lcom/panasonic/avc/cng/view/setting/g;)V
+    invoke-static {p0, v2, v2, v2, v0}, Lcom/panasonic/avc/cng/view/b/e;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/play/browser/a;Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;Lcom/panasonic/avc/cng/view/smartoperation/h;Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;)V
 
     goto :goto_0
 
@@ -524,7 +524,7 @@
 
     .line 773
     :pswitch_4
-    invoke-static {p0, p1, v2}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {p0, p1, v2}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     goto :goto_0
 
@@ -534,7 +534,7 @@
 
     invoke-direct {v0, p0}, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity$4;-><init>(Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;)V
 
-    invoke-static {p0, p1, v2, v0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;Lcom/panasonic/avc/cng/view/b/a$c;)V
+    invoke-static {p0, p1, v2, v0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;Lcom/panasonic/avc/cng/view/b/a$c;)V
 
     goto :goto_0
 
@@ -576,7 +576,7 @@
     :pswitch_9
     sget-object v0, Lcom/panasonic/avc/cng/view/b/b$a;->fl:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {p0, v0}, Lcom/panasonic/avc/cng/view/b/d;->b(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;)Z
+    invoke-static {p0, v0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->b(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;)Z
 
     move-result v0
 
@@ -595,13 +595,13 @@
 
     const-string v1, "WifiFailed while DmsDialog"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     goto/16 :goto_0
 
     .line 825
     :cond_4
-    invoke-static {p0, p1, v2}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {p0, p1, v2}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     goto/16 :goto_0
 
@@ -632,12 +632,12 @@
     return-void
 .end method
 
-.method static synthetic b(Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;)Lcom/panasonic/avc/cng/view/setting/g;
+.method static synthetic b(Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;)Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;
     .locals 1
 
     .prologue
     .line 54
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b:Lcom/panasonic/avc/cng/view/setting/g;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b:Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;
 
     return-object v0
 .end method
@@ -651,10 +651,10 @@
 
     const-string v1, "ConnectSettingViewModelThreadFinish"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 959
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b:Lcom/panasonic/avc/cng/view/setting/g;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b:Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;
 
     if-nez v0, :cond_1
 
@@ -665,24 +665,24 @@
 
     .line 964
     :cond_1
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b:Lcom/panasonic/avc/cng/view/setting/g;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b:Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/g;->c()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;->c()V
 
     .line 966
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b:Lcom/panasonic/avc/cng/view/setting/g;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b:Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;
 
     if-eqz v0, :cond_2
 
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b:Lcom/panasonic/avc/cng/view/setting/g;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b:Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/g;->e:Ljava/lang/Thread;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;->e:Ljava/lang/Thread;
 
     if-eqz v0, :cond_2
 
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b:Lcom/panasonic/avc/cng/view/setting/g;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b:Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/g;->j:Lcom/panasonic/avc/cng/view/setting/g$h;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;->j:Lcom/panasonic/avc/cng/view/setting/g$h;
 
     if-eqz v0, :cond_2
 
@@ -691,26 +691,26 @@
 
     const-string v1, "_viewModel._wifiThread \u2192\u3000Stop"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 969
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b:Lcom/panasonic/avc/cng/view/setting/g;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b:Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/g;->j:Lcom/panasonic/avc/cng/view/setting/g$h;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;->j:Lcom/panasonic/avc/cng/view/setting/g$h;
 
     invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/g$h;->a()V
 
     .line 973
     :cond_2
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b:Lcom/panasonic/avc/cng/view/setting/g;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b:Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/g;->f:Ljava/lang/Thread;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;->f:Ljava/lang/Thread;
 
     if-eqz v0, :cond_3
 
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b:Lcom/panasonic/avc/cng/view/setting/g;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b:Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/g;->k:Lcom/panasonic/avc/cng/view/setting/g$f;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;->k:Lcom/panasonic/avc/cng/view/setting/g$f;
 
     if-eqz v0, :cond_3
 
@@ -719,20 +719,20 @@
 
     const-string v1, "_viewModel._wifiConnectThread \u2192\u3000Stop"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 976
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b:Lcom/panasonic/avc/cng/view/setting/g;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b:Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/g;->k:Lcom/panasonic/avc/cng/view/setting/g$f;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;->k:Lcom/panasonic/avc/cng/view/setting/g$f;
 
     invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/g$f;->a()V
 
     .line 979
     :try_start_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b:Lcom/panasonic/avc/cng/view/setting/g;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b:Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/g;->f:Ljava/lang/Thread;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;->f:Ljava/lang/Thread;
 
     invoke-virtual {v0}, Ljava/lang/Thread;->join()V
     :try_end_0
@@ -741,15 +741,15 @@
     .line 986
     :cond_3
     :goto_1
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b:Lcom/panasonic/avc/cng/view/setting/g;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b:Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/g;->g:Ljava/lang/Thread;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;->g:Ljava/lang/Thread;
 
     if-eqz v0, :cond_4
 
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b:Lcom/panasonic/avc/cng/view/setting/g;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b:Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/g;->l:Lcom/panasonic/avc/cng/view/setting/g$g;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;->l:Lcom/panasonic/avc/cng/view/setting/g$g;
 
     if-eqz v0, :cond_4
 
@@ -758,20 +758,20 @@
 
     const-string v1, "_viewModel._wifiNewConnectThread \u2192\u3000Stop"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 989
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b:Lcom/panasonic/avc/cng/view/setting/g;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b:Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/g;->l:Lcom/panasonic/avc/cng/view/setting/g$g;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;->l:Lcom/panasonic/avc/cng/view/setting/g$g;
 
     invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/g$g;->a()V
 
     .line 992
     :try_start_1
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b:Lcom/panasonic/avc/cng/view/setting/g;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b:Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/g;->g:Ljava/lang/Thread;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;->g:Ljava/lang/Thread;
 
     invoke-virtual {v0}, Ljava/lang/Thread;->join()V
     :try_end_1
@@ -780,19 +780,19 @@
     .line 1000
     :cond_4
     :goto_2
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b:Lcom/panasonic/avc/cng/view/setting/g;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b:Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;
 
     if-eqz v0, :cond_5
 
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b:Lcom/panasonic/avc/cng/view/setting/g;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b:Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/g;->h:Ljava/lang/Thread;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;->h:Ljava/lang/Thread;
 
     if-eqz v0, :cond_5
 
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b:Lcom/panasonic/avc/cng/view/setting/g;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b:Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/g;->m:Lcom/panasonic/avc/cng/view/setting/g$a;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;->m:Lcom/panasonic/avc/cng/view/setting/g$a;
 
     if-eqz v0, :cond_5
 
@@ -801,30 +801,30 @@
 
     const-string v1, "_viewModel._cameraThread \u2192\u3000Stop"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 1003
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b:Lcom/panasonic/avc/cng/view/setting/g;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b:Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/g;->m:Lcom/panasonic/avc/cng/view/setting/g$a;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;->m:Lcom/panasonic/avc/cng/view/setting/g$a;
 
     invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/g$a;->a()V
 
     .line 1005
     :cond_5
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b:Lcom/panasonic/avc/cng/view/setting/g;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b:Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b:Lcom/panasonic/avc/cng/view/setting/g;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b:Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/g;->i:Ljava/lang/Thread;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;->i:Ljava/lang/Thread;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b:Lcom/panasonic/avc/cng/view/setting/g;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b:Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/g;->n:Lcom/panasonic/avc/cng/view/setting/g$b;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;->n:Lcom/panasonic/avc/cng/view/setting/g$b;
 
     if-eqz v0, :cond_0
 
@@ -833,12 +833,12 @@
 
     const-string v1, "_viewModel._deviceThread \u2192\u3000Stop"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 1008
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b:Lcom/panasonic/avc/cng/view/setting/g;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b:Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/g;->n:Lcom/panasonic/avc/cng/view/setting/g$b;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;->n:Lcom/panasonic/avc/cng/view/setting/g$b;
 
     invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/g$b;->e()V
 
@@ -899,7 +899,7 @@
     .prologue
     .line 1067
     .line 1069
-    invoke-static {p0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;)V
+    invoke-static {p0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;)V
 
     .line 1074
     new-instance v0, Lcom/panasonic/avc/cng/view/setting/i$a;
@@ -968,7 +968,7 @@
     invoke-virtual {p0}, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->OnSetResult()V
 
     .line 454
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b:Lcom/panasonic/avc/cng/view/setting/g;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b:Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;
 
     if-eqz v0, :cond_0
 
@@ -977,24 +977,24 @@
 
     const-string v1, "viewModel.Dispose()"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 457
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b:Lcom/panasonic/avc/cng/view/setting/g;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b:Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/g;->c()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;->c()V
 
     .line 458
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b:Lcom/panasonic/avc/cng/view/setting/g;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b:Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/g;->a()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;->a()V
 
     .line 459
-    iput-object v2, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b:Lcom/panasonic/avc/cng/view/setting/g;
+    iput-object v2, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b:Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;
 
     .line 461
     :cond_0
-    invoke-static {v2}, Lcom/panasonic/avc/cng/view/common/e;->a(Lcom/panasonic/avc/cng/view/setting/g;)V
+    invoke-static {v2}, Lcom/panasonic/avc/cng/view/common/e;->a(Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;)V
 
     .line 463
     invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/i;->finish()V
@@ -1036,9 +1036,9 @@
     if-eqz v0, :cond_0
 
     .line 326
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b:Lcom/panasonic/avc/cng/view/setting/g;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b:Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;
 
-    invoke-virtual {v1, v0}, Lcom/panasonic/avc/cng/view/setting/g;->a(Ljava/lang/String;)V
+    invoke-virtual {v1, v0}, Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;->a(Ljava/lang/String;)V
 
     .line 442
     :goto_0
@@ -1046,9 +1046,9 @@
 
     .line 331
     :cond_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b:Lcom/panasonic/avc/cng/view/setting/g;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b:Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/g;->d()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;->d()V
 
     goto :goto_0
 
@@ -1061,7 +1061,7 @@
 
     const-string v1, "onActivityResult"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 341
     if-nez p3, :cond_3
@@ -1080,7 +1080,7 @@
 
     .line 351
     :cond_2
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b:Lcom/panasonic/avc/cng/view/setting/g;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b:Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;
 
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->_context:Landroid/content/Context;
 
@@ -1088,7 +1088,7 @@
 
     iget-object v2, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->c:Lcom/panasonic/avc/cng/view/setting/g$d;
 
-    invoke-virtual {v1, v0, v2}, Lcom/panasonic/avc/cng/view/setting/g;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/setting/g$d;)V
+    invoke-virtual {v1, v0, v2}, Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/setting/g$d;)V
 
     goto :goto_0
 
@@ -1148,7 +1148,7 @@
 
     .line 389
     :cond_6
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b:Lcom/panasonic/avc/cng/view/setting/g;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b:Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;
 
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->_context:Landroid/content/Context;
 
@@ -1156,7 +1156,7 @@
 
     iget-object v2, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->c:Lcom/panasonic/avc/cng/view/setting/g$d;
 
-    invoke-virtual {v1, v0, v2}, Lcom/panasonic/avc/cng/view/setting/g;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/setting/g$d;)V
+    invoke-virtual {v1, v0, v2}, Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/setting/g$d;)V
 
     goto :goto_0
 
@@ -1219,14 +1219,14 @@
     move-result-object v0
 
     .line 424
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b:Lcom/panasonic/avc/cng/view/setting/g;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b:Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;
 
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/setting/g;->h()V
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;->h()V
 
     .line 425
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b:Lcom/panasonic/avc/cng/view/setting/g;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b:Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;
 
-    invoke-virtual {v1, v0, v2}, Lcom/panasonic/avc/cng/view/setting/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v1, v0, v2}, Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     goto/16 :goto_0
 
@@ -1311,19 +1311,19 @@
 
     iget-object v2, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->c:Lcom/panasonic/avc/cng/view/setting/g$d;
 
-    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/view/common/e;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/setting/g$d;)Lcom/panasonic/avc/cng/view/setting/g;
+    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/view/common/e;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/setting/g$d;)Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b:Lcom/panasonic/avc/cng/view/setting/g;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b:Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;
 
     .line 154
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b:Lcom/panasonic/avc/cng/view/setting/g;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b:Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;
 
     if-nez v0, :cond_0
 
     .line 156
-    new-instance v0, Lcom/panasonic/avc/cng/view/setting/g;
+    new-instance v0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->_context:Landroid/content/Context;
 
@@ -1331,9 +1331,9 @@
 
     iget-object v3, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->c:Lcom/panasonic/avc/cng/view/setting/g$d;
 
-    invoke-direct {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/setting/g;-><init>(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/setting/g$d;)V
+    invoke-direct {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;-><init>(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/setting/g$d;)V
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b:Lcom/panasonic/avc/cng/view/setting/g;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b:Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;
 
     .line 165
     :goto_0
@@ -1456,14 +1456,14 @@
     :pswitch_0
     sget-object v1, Lcom/panasonic/avc/cng/view/b/b$a;->fg:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {p0, v1}, Lcom/panasonic/avc/cng/view/b/d;->b(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;)Z
+    invoke-static {p0, v1}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->b(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;)Z
 
     move-result v1
 
     if-eqz v1, :cond_1
 
     .line 1022
-    invoke-static {p0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;)V
+    invoke-static {p0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;)V
 
     .line 1024
     sget-object v1, Lcom/panasonic/avc/cng/view/b/b$a;->fl:Lcom/panasonic/avc/cng/view/b/b$a;
@@ -1476,14 +1476,14 @@
     :cond_1
     sget-object v1, Lcom/panasonic/avc/cng/view/b/b$a;->fh:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {p0, v1}, Lcom/panasonic/avc/cng/view/b/d;->b(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;)Z
+    invoke-static {p0, v1}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->b(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;)Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
     .line 1028
-    invoke-static {p0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;)V
+    invoke-static {p0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;)V
 
     .line 1030
     sget-object v1, Lcom/panasonic/avc/cng/view/b/b$a;->fl:Lcom/panasonic/avc/cng/view/b/b$a;
@@ -1655,9 +1655,9 @@
     invoke-virtual {v0, v1, v2}, Lcom/panasonic/avc/cng/model/service/c/c;->a(Landroid/content/Context;Z)Z
 
     .line 1094
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b:Lcom/panasonic/avc/cng/view/setting/g;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b:Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/g;->e()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;->e()V
 
     goto :goto_0
 
@@ -1695,9 +1695,9 @@
     invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/i;->onSaveInstanceState(Landroid/os/Bundle;)V
 
     .line 278
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b:Lcom/panasonic/avc/cng/view/setting/g;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b:Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/e;->a(Lcom/panasonic/avc/cng/view/setting/g;)V
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/e;->a(Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;)V
 
     .line 279
     return-void

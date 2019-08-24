@@ -21,7 +21,7 @@
 
 .field private _pictureJumpEventListener:Lcom/panasonic/avc/cng/view/setting/PictureJumpSetupActivity$a;
 
-.field private _pjVM:Lcom/panasonic/avc/cng/view/smartoperation/i;
+.field private _pjVM:Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;
 
 .field private _selectIndex:I
 
@@ -48,7 +48,7 @@
     invoke-direct {p0}, Lcom/panasonic/avc/cng/view/setting/ag;-><init>()V
 
     .line 42
-    iput-object v1, p0, Lcom/panasonic/avc/cng/view/setting/PictureJumpSetupActivity;->_pjVM:Lcom/panasonic/avc/cng/view/smartoperation/i;
+    iput-object v1, p0, Lcom/panasonic/avc/cng/view/setting/PictureJumpSetupActivity;->_pjVM:Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;
 
     .line 43
     iput-object v1, p0, Lcom/panasonic/avc/cng/view/setting/PictureJumpSetupActivity;->_selectList:Ljava/util/List;
@@ -93,27 +93,27 @@
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/PictureJumpSetupActivity;->_pictureJumpEventListener:Lcom/panasonic/avc/cng/view/setting/PictureJumpSetupActivity$a;
 
-    invoke-static {p0, v0, v2, v2, v1}, Lcom/panasonic/avc/cng/view/common/e;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/smartoperation/i$b;Lcom/panasonic/avc/cng/view/smartoperation/i$b;Lcom/panasonic/avc/cng/model/b/c$a;)Lcom/panasonic/avc/cng/view/smartoperation/i;
+    invoke-static {p0, v0, v2, v2, v1}, Lcom/panasonic/avc/cng/view/common/e;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/smartoperation/i$b;Lcom/panasonic/avc/cng/view/smartoperation/i$b;Lcom/panasonic/avc/cng/model/b/c$a;)Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/view/setting/PictureJumpSetupActivity;->_pjVM:Lcom/panasonic/avc/cng/view/smartoperation/i;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/view/setting/PictureJumpSetupActivity;->_pjVM:Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;
 
     .line 126
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/PictureJumpSetupActivity;->_pjVM:Lcom/panasonic/avc/cng/view/smartoperation/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/PictureJumpSetupActivity;->_pjVM:Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;
 
     if-nez v0, :cond_0
 
     .line 128
-    new-instance v0, Lcom/panasonic/avc/cng/view/smartoperation/i;
+    new-instance v0, Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/PictureJumpSetupActivity;->_handler:Landroid/os/Handler;
 
     iget-object v2, p0, Lcom/panasonic/avc/cng/view/setting/PictureJumpSetupActivity;->_pictureJumpEventListener:Lcom/panasonic/avc/cng/view/setting/PictureJumpSetupActivity$a;
 
-    invoke-direct {v0, p0, v1, v2}, Lcom/panasonic/avc/cng/view/smartoperation/i;-><init>(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/model/b/c$a;)V
+    invoke-direct {v0, p0, v1, v2}, Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;-><init>(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/model/b/c$a;)V
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/view/setting/PictureJumpSetupActivity;->_pjVM:Lcom/panasonic/avc/cng/view/smartoperation/i;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/view/setting/PictureJumpSetupActivity;->_pjVM:Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;
 
     .line 131
     :cond_0
@@ -133,9 +133,9 @@
     if-nez v0, :cond_1
 
     .line 136
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/PictureJumpSetupActivity;->_pjVM:Lcom/panasonic/avc/cng/view/smartoperation/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/PictureJumpSetupActivity;->_pjVM:Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/smartoperation/i;->k()Ljava/util/List;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;->k()Ljava/util/List;
 
     move-result-object v0
 
@@ -175,15 +175,15 @@
     .line 147
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/PictureJumpSetupActivity;->_pictureJump:Lcom/panasonic/avc/cng/view/parts/PictureJumpView;
 
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/PictureJumpSetupActivity;->_pjVM:Lcom/panasonic/avc/cng/view/smartoperation/i;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/PictureJumpSetupActivity;->_pjVM:Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;
 
-    invoke-virtual {v1, v3}, Lcom/panasonic/avc/cng/view/smartoperation/i;->f(I)Landroid/graphics/Bitmap;
+    invoke-virtual {v1, v3}, Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;->f(I)Landroid/graphics/Bitmap;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/panasonic/avc/cng/view/setting/PictureJumpSetupActivity;->_pjVM:Lcom/panasonic/avc/cng/view/smartoperation/i;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/view/setting/PictureJumpSetupActivity;->_pjVM:Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;
 
-    invoke-virtual {v2, v3}, Lcom/panasonic/avc/cng/view/smartoperation/i;->e(I)Ljava/lang/String;
+    invoke-virtual {v2, v3}, Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;->e(I)Ljava/lang/String;
 
     move-result-object v2
 
@@ -192,15 +192,15 @@
     .line 148
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/PictureJumpSetupActivity;->_pictureJump:Lcom/panasonic/avc/cng/view/parts/PictureJumpView;
 
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/PictureJumpSetupActivity;->_pjVM:Lcom/panasonic/avc/cng/view/smartoperation/i;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/PictureJumpSetupActivity;->_pjVM:Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;
 
-    invoke-virtual {v1, v4}, Lcom/panasonic/avc/cng/view/smartoperation/i;->f(I)Landroid/graphics/Bitmap;
+    invoke-virtual {v1, v4}, Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;->f(I)Landroid/graphics/Bitmap;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/panasonic/avc/cng/view/setting/PictureJumpSetupActivity;->_pjVM:Lcom/panasonic/avc/cng/view/smartoperation/i;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/view/setting/PictureJumpSetupActivity;->_pjVM:Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;
 
-    invoke-virtual {v2, v4}, Lcom/panasonic/avc/cng/view/smartoperation/i;->e(I)Ljava/lang/String;
+    invoke-virtual {v2, v4}, Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;->e(I)Ljava/lang/String;
 
     move-result-object v2
 
@@ -209,15 +209,15 @@
     .line 149
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/PictureJumpSetupActivity;->_pictureJump:Lcom/panasonic/avc/cng/view/parts/PictureJumpView;
 
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/PictureJumpSetupActivity;->_pjVM:Lcom/panasonic/avc/cng/view/smartoperation/i;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/PictureJumpSetupActivity;->_pjVM:Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;
 
-    invoke-virtual {v1, v5}, Lcom/panasonic/avc/cng/view/smartoperation/i;->f(I)Landroid/graphics/Bitmap;
+    invoke-virtual {v1, v5}, Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;->f(I)Landroid/graphics/Bitmap;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/panasonic/avc/cng/view/setting/PictureJumpSetupActivity;->_pjVM:Lcom/panasonic/avc/cng/view/smartoperation/i;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/view/setting/PictureJumpSetupActivity;->_pjVM:Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;
 
-    invoke-virtual {v2, v5}, Lcom/panasonic/avc/cng/view/smartoperation/i;->e(I)Ljava/lang/String;
+    invoke-virtual {v2, v5}, Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;->e(I)Ljava/lang/String;
 
     move-result-object v2
 
@@ -226,15 +226,15 @@
     .line 150
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/PictureJumpSetupActivity;->_pictureJump:Lcom/panasonic/avc/cng/view/parts/PictureJumpView;
 
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/PictureJumpSetupActivity;->_pjVM:Lcom/panasonic/avc/cng/view/smartoperation/i;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/PictureJumpSetupActivity;->_pjVM:Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;
 
-    invoke-virtual {v1, v6}, Lcom/panasonic/avc/cng/view/smartoperation/i;->f(I)Landroid/graphics/Bitmap;
+    invoke-virtual {v1, v6}, Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;->f(I)Landroid/graphics/Bitmap;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/panasonic/avc/cng/view/setting/PictureJumpSetupActivity;->_pjVM:Lcom/panasonic/avc/cng/view/smartoperation/i;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/view/setting/PictureJumpSetupActivity;->_pjVM:Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;
 
-    invoke-virtual {v2, v6}, Lcom/panasonic/avc/cng/view/smartoperation/i;->e(I)Ljava/lang/String;
+    invoke-virtual {v2, v6}, Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;->e(I)Ljava/lang/String;
 
     move-result-object v2
 
@@ -640,7 +640,7 @@
     if-ge v7, v0, :cond_0
 
     .line 250
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/PictureJumpSetupActivity;->_pjVM:Lcom/panasonic/avc/cng/view/smartoperation/i;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/PictureJumpSetupActivity;->_pjVM:Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;
 
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/PictureJumpSetupActivity;->_selectList:Ljava/util/List;
 
@@ -654,7 +654,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v1, v0}, Lcom/panasonic/avc/cng/view/smartoperation/i;->c(Ljava/lang/String;)Landroid/graphics/Bitmap;
+    invoke-virtual {v1, v0}, Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;->c(Ljava/lang/String;)Landroid/graphics/Bitmap;
 
     move-result-object v0
 
@@ -732,7 +732,7 @@
     :try_start_1
     iget-object v3, p0, Lcom/panasonic/avc/cng/view/setting/PictureJumpSetupActivity;->_pictureJump:Lcom/panasonic/avc/cng/view/parts/PictureJumpView;
 
-    iget-object v4, p0, Lcom/panasonic/avc/cng/view/setting/PictureJumpSetupActivity;->_pjVM:Lcom/panasonic/avc/cng/view/smartoperation/i;
+    iget-object v4, p0, Lcom/panasonic/avc/cng/view/setting/PictureJumpSetupActivity;->_pjVM:Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/PictureJumpSetupActivity;->_selectList:Ljava/util/List;
 
@@ -746,7 +746,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v4, v1}, Lcom/panasonic/avc/cng/view/smartoperation/i;->b(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v4, v1}, Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;->b(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -850,23 +850,23 @@
     invoke-virtual {p0}, Lcom/panasonic/avc/cng/view/setting/PictureJumpSetupActivity;->OnSetResult()V
 
     .line 450
-    invoke-static {v1}, Lcom/panasonic/avc/cng/view/common/e;->a(Lcom/panasonic/avc/cng/view/smartoperation/i;)V
+    invoke-static {v1}, Lcom/panasonic/avc/cng/view/common/e;->a(Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;)V
 
     .line 451
     invoke-static {v1}, Lcom/panasonic/avc/cng/view/common/e;->a(Lcom/panasonic/avc/cng/view/setting/ah;)V
 
     .line 453
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/PictureJumpSetupActivity;->_pjVM:Lcom/panasonic/avc/cng/view/smartoperation/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/PictureJumpSetupActivity;->_pjVM:Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;
 
     if-eqz v0, :cond_0
 
     .line 455
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/PictureJumpSetupActivity;->_pjVM:Lcom/panasonic/avc/cng/view/smartoperation/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/PictureJumpSetupActivity;->_pjVM:Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/smartoperation/i;->a()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;->a()V
 
     .line 456
-    iput-object v1, p0, Lcom/panasonic/avc/cng/view/setting/PictureJumpSetupActivity;->_pjVM:Lcom/panasonic/avc/cng/view/smartoperation/i;
+    iput-object v1, p0, Lcom/panasonic/avc/cng/view/setting/PictureJumpSetupActivity;->_pjVM:Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;
 
     .line 459
     :cond_0
@@ -1221,7 +1221,7 @@
     if-lez p1, :cond_0
 
     .line 159
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/PictureJumpSetupActivity;->_pjVM:Lcom/panasonic/avc/cng/view/smartoperation/i;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/PictureJumpSetupActivity;->_pjVM:Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;
 
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/PictureJumpSetupActivity;->_selectList:Ljava/util/List;
 
@@ -1233,22 +1233,22 @@
 
     check-cast v0, Lcom/panasonic/avc/cng/model/b/g;
 
-    invoke-virtual {v1, p1, v0}, Lcom/panasonic/avc/cng/view/smartoperation/i;->a(ILcom/panasonic/avc/cng/model/b/g;)V
+    invoke-virtual {v1, p1, v0}, Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;->a(ILcom/panasonic/avc/cng/model/b/g;)V
 
     .line 162
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/PictureJumpSetupActivity;->_pictureJump:Lcom/panasonic/avc/cng/view/parts/PictureJumpView;
 
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/PictureJumpSetupActivity;->_pjVM:Lcom/panasonic/avc/cng/view/smartoperation/i;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/PictureJumpSetupActivity;->_pjVM:Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;
 
-    invoke-virtual {v1, p1}, Lcom/panasonic/avc/cng/view/smartoperation/i;->f(I)Landroid/graphics/Bitmap;
+    invoke-virtual {v1, p1}, Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;->f(I)Landroid/graphics/Bitmap;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/panasonic/avc/cng/view/setting/PictureJumpSetupActivity;->_pjVM:Lcom/panasonic/avc/cng/view/smartoperation/i;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/view/setting/PictureJumpSetupActivity;->_pjVM:Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;
 
     iget v3, p0, Lcom/panasonic/avc/cng/view/setting/PictureJumpSetupActivity;->_selectIndex:I
 
-    invoke-virtual {v2, p1, v3}, Lcom/panasonic/avc/cng/view/smartoperation/i;->a(II)Ljava/lang/String;
+    invoke-virtual {v2, p1, v3}, Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;->a(II)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1344,14 +1344,14 @@
 
     .line 107
     :cond_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/PictureJumpSetupActivity;->_pjVM:Lcom/panasonic/avc/cng/view/smartoperation/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/PictureJumpSetupActivity;->_pjVM:Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;
 
     if-eqz v0, :cond_1
 
     .line 109
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/PictureJumpSetupActivity;->_pjVM:Lcom/panasonic/avc/cng/view/smartoperation/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/PictureJumpSetupActivity;->_pjVM:Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/e;->a(Lcom/panasonic/avc/cng/view/smartoperation/i;)V
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/e;->a(Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;)V
 
     .line 111
     :cond_1
@@ -1368,7 +1368,7 @@
     .line 176
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/PictureJumpSetupActivity;->_pictureJump:Lcom/panasonic/avc/cng/view/parts/PictureJumpView;
 
-    iget-object v2, p0, Lcom/panasonic/avc/cng/view/setting/PictureJumpSetupActivity;->_pjVM:Lcom/panasonic/avc/cng/view/smartoperation/i;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/view/setting/PictureJumpSetupActivity;->_pjVM:Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;
 
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/PictureJumpSetupActivity;->_selectList:Ljava/util/List;
 
@@ -1384,7 +1384,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v2, v0}, Lcom/panasonic/avc/cng/view/smartoperation/i;->c(Ljava/lang/String;)Landroid/graphics/Bitmap;
+    invoke-virtual {v2, v0}, Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;->c(Ljava/lang/String;)Landroid/graphics/Bitmap;
 
     move-result-object v0
 

@@ -23,9 +23,9 @@ import com.panasonic.avc.cng.model.service.C2210p;
 import com.panasonic.avc.cng.view.common.C2820e;
 import com.panasonic.avc.cng.view.p073b.C2317a.C2325c;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
 import com.panasonic.avc.cng.view.p073b.C2376f.C2378b;
-import com.panasonic.avc.cng.view.setting.C5537al.C5540a;
+import com.panasonic.avc.cng.view.setting.SettingMenuBaseActivity.C5540a;
 
 public class PicMateSettingPreferenceActivity extends C5741i {
 
@@ -111,7 +111,7 @@ public class PicMateSettingPreferenceActivity extends C5741i {
                     if (C1712b.m6920d().mo4908b().mo4902b()) {
                         C5192a.this.mo11757b();
                     } else {
-                        C2331d.m10114a(C5192a.this.getActivity(), C2328a.DIALOG_ID_PIC_ASK_CLOUD_SETUP, (Bundle) null);
+                        DialogFactory.m10114a(C5192a.this.getActivity(), C2328a.DIALOG_ID_PIC_ASK_CLOUD_SETUP, (Bundle) null);
                     }
                     return false;
                 }
@@ -119,11 +119,11 @@ public class PicMateSettingPreferenceActivity extends C5741i {
             getPreferenceScreen().findPreference("onClickServiceListSyncro").setOnPreferenceClickListener(new OnPreferenceClickListener() {
                 public boolean onPreferenceClick(Preference preference) {
                     C5192a.this.f16426i.mo12055a(8);
-                    if (!C2331d.m10125b(C5192a.this.getActivity(), C2328a.DIALOG_ID_WEB_SERVICE_LOADING)) {
-                        C2331d.m10115a(C5192a.this.getActivity(), C2328a.DIALOG_ID_WEB_SERVICE_LOADING, (Bundle) null, (C2325c) new C2325c() {
+                    if (!DialogFactory.m10125b(C5192a.this.getActivity(), C2328a.DIALOG_ID_WEB_SERVICE_LOADING)) {
+                        DialogFactory.m10115a(C5192a.this.getActivity(), C2328a.DIALOG_ID_WEB_SERVICE_LOADING, (Bundle) null, (C2325c) new C2325c() {
                             /* renamed from: a */
                             public void mo6131a() {
-                                C2331d.m10129c(C5192a.this.getActivity(), C2328a.DIALOG_ID_WEB_SERVICE_LOADING, (int) R.id.text, (int) R.string.msg_now_webservice_loading);
+                                DialogFactory.m10129c(C5192a.this.getActivity(), C2328a.DIALOG_ID_WEB_SERVICE_LOADING, (int) R.id.text, (int) R.string.msg_now_webservice_loading);
                             }
                         });
                     }
@@ -135,7 +135,7 @@ public class PicMateSettingPreferenceActivity extends C5741i {
                     String str = C5192a.this.getText(R.string.msg_ask_copy_picmate_id_to_camera) + "\n" + C5192a.this.f16426i.mo12276m();
                     Bundle bundle = new Bundle();
                     bundle.putString(C2378b.MESSAGE_STRING.name(), str);
-                    C2331d.m10114a(C5192a.this.getActivity(), C2328a.DIALOG_ID_PIC_ASK_ID_2_CAMERA, bundle);
+                    DialogFactory.m10114a(C5192a.this.getActivity(), C2328a.DIALOG_ID_PIC_ASK_ID_2_CAMERA, bundle);
                     return false;
                 }
             });
@@ -208,13 +208,13 @@ public class PicMateSettingPreferenceActivity extends C5741i {
                 /* renamed from: a */
                 public void mo5071a(int i, int i2) {
                     if (i != 1) {
-                        if (C2331d.m10125b(C5192a.this.getActivity(), C2328a.DIALOG_ID_WEB_SERVICE_LOADING)) {
-                            C2331d.m10100a(C5192a.this.getActivity());
+                        if (DialogFactory.m10125b(C5192a.this.getActivity(), C2328a.DIALOG_ID_WEB_SERVICE_LOADING)) {
+                            DialogFactory.m10100a(C5192a.this.getActivity());
                         }
                         if (i == 6) {
-                            C2331d.m10114a(C5192a.this.getActivity(), C2328a.DIALOG_ID_CONNECT_FAILED, (Bundle) null);
+                            DialogFactory.m10114a(C5192a.this.getActivity(), C2328a.DIALOG_ID_CONNECT_FAILED, (Bundle) null);
                         } else if (i == 7) {
-                            C2331d.m10114a(C5192a.this.getActivity(), C2328a.DIALOG_ID_PIC_LOGIN_ERROR, (Bundle) null);
+                            DialogFactory.m10114a(C5192a.this.getActivity(), C2328a.DIALOG_ID_PIC_LOGIN_ERROR, (Bundle) null);
                         }
                     } else if (i2 == 8) {
                         C5192a.this.f16426i.mo12267c(8);
@@ -224,13 +224,13 @@ public class PicMateSettingPreferenceActivity extends C5741i {
                 /* renamed from: b */
                 public void mo5074b(int i, int i2) {
                     if (i == 1) {
-                        if (C2331d.m10125b(C5192a.this.getActivity(), C2328a.DIALOG_ID_WEB_SERVICE_LOADING)) {
-                            C2331d.m10100a(C5192a.this.getActivity());
+                        if (DialogFactory.m10125b(C5192a.this.getActivity(), C2328a.DIALOG_ID_WEB_SERVICE_LOADING)) {
+                            DialogFactory.m10100a(C5192a.this.getActivity());
                         }
                         if (i2 == 8) {
-                            C2331d.m10114a(C5192a.this.getActivity(), C2328a.DIALOG_ID_PIC_SYNC_SUCCESS, (Bundle) null);
+                            DialogFactory.m10114a(C5192a.this.getActivity(), C2328a.DIALOG_ID_PIC_SYNC_SUCCESS, (Bundle) null);
                         } else {
-                            C2331d.m10114a(C5192a.this.getActivity(), C2328a.DIALOG_ID_PIC_SYNC_FAILED, (Bundle) null);
+                            DialogFactory.m10114a(C5192a.this.getActivity(), C2328a.DIALOG_ID_PIC_SYNC_FAILED, (Bundle) null);
                         }
                     }
                 }

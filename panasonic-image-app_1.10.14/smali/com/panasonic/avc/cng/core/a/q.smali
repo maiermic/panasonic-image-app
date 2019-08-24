@@ -13,7 +13,7 @@
 .method public abstract a(Lcom/panasonic/avc/cng/core/a/at;)V
 .end method
 
-.method public abstract a(Lcom/panasonic/avc/cng/model/c/h;)V
+.method public abstract a(Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;)V
 .end method
 
 .method public abstract b()V

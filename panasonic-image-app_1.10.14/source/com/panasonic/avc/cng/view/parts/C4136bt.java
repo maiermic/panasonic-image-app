@@ -8,7 +8,7 @@ import android.view.View.OnTouchListener;
 import android.widget.FrameLayout.LayoutParams;
 import android.widget.ImageButton;
 import com.panasonic.avc.cng.p038a.C1345d;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 
 /* renamed from: com.panasonic.avc.cng.view.parts.bt */
 public class C4136bt extends Handler implements OnTouchListener {
@@ -119,7 +119,7 @@ public class C4136bt extends Handler implements OnTouchListener {
             removeMessages(1);
             if (floor < floor2) {
                 if (floor2 - floor == 1) {
-                    C2261g.m9763a("handleMessage", "slide => " + floor + " targetPos => " + floor2);
+                    ImageAppLog.debug("handleMessage", "slide => " + floor + " targetPos => " + floor2);
                 } else {
                     int i = floor + 25;
                     if (i < floor2) {
@@ -129,9 +129,9 @@ public class C4136bt extends Handler implements OnTouchListener {
                     sendEmptyMessageDelayed(0, 30);
                 }
             } else if (floor <= floor2) {
-                C2261g.m9763a("handleMessage", "slide => " + floor + " targetPos => " + floor2);
+                ImageAppLog.debug("handleMessage", "slide => " + floor + " targetPos => " + floor2);
             } else if (floor - floor2 == 1) {
-                C2261g.m9763a("handleMessage", "slide => " + floor + " targetPos => " + floor2);
+                ImageAppLog.debug("handleMessage", "slide => " + floor + " targetPos => " + floor2);
             } else {
                 int i2 = floor - 25;
                 if (i2 > floor2) {
@@ -165,7 +165,7 @@ public class C4136bt extends Handler implements OnTouchListener {
                     sendMessageDelayed(obtainMessage(1, view), 30);
                 }
             } else {
-                C2261g.m9763a("handleMessage", "slide => " + floor + " targetPos => " + left);
+                ImageAppLog.debug("handleMessage", "slide => " + floor + " targetPos => " + left);
             }
         }
         super.handleMessage(message);
@@ -397,7 +397,7 @@ public class C4136bt extends Handler implements OnTouchListener {
 
     /* renamed from: a */
     private void m16513a(boolean z) {
-        C2261g.m9763a("LiveViewTest", "ZoomStop");
+        ImageAppLog.debug("LiveViewTest", "ZoomStop");
         if (!z || this.f13927m) {
             this.f13927m = false;
             m16512a(0);

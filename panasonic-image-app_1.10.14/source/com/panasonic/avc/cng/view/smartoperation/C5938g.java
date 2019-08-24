@@ -15,14 +15,14 @@ import com.panasonic.avc.cng.model.C1833c;
 import com.panasonic.avc.cng.model.C1878d;
 import com.panasonic.avc.cng.model.C1892f;
 import com.panasonic.avc.cng.model.C1909k;
-import com.panasonic.avc.cng.model.p051c.C1846e;
+import com.panasonic.avc.cng.model.p051c.CameraStatus;
 import com.panasonic.avc.cng.model.service.C1921a;
 import com.panasonic.avc.cng.model.service.C2028e;
 import com.panasonic.avc.cng.model.service.C2028e.C2031c;
-import com.panasonic.avc.cng.model.service.C2253z;
-import com.panasonic.avc.cng.model.service.p054a.C1936c;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
+import com.panasonic.avc.cng.model.service.p054a.BrowserServiceCamera;
 import com.panasonic.avc.cng.p038a.C1342a;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.view.parts.C4262x;
 import com.panasonic.avc.cng.view.smartoperation.C5919e.C5932b;
 import java.util.ArrayList;
@@ -59,10 +59,10 @@ public class C5938g extends C1342a {
         }
 
         /* renamed from: a */
-        public void mo5337a(C1846e eVar) {
+        public void mo5337a(CameraStatus eVar) {
             boolean z = true;
-            C2261g.m9770d("OneContentPreviewViewModel", "OnGetState");
-            if (C1846e.m7190a(eVar)) {
+            ImageAppLog.verbose("OneContentPreviewViewModel", "OnGetState");
+            if (CameraStatus.m7190a(eVar)) {
                 String C = eVar.mo4654C();
                 SharedPreferences defaultSharedPreferences = PreferenceManager.getDefaultSharedPreferences(C5938g.this.f3706a);
                 if (!defaultSharedPreferences.getBoolean("HighTemperature", false) && C.equalsIgnoreCase("assert")) {
@@ -155,13 +155,13 @@ public class C5938g extends C1342a {
         int i;
         int i2 = 0;
         this.f18142c = new ArrayList<>();
-        C1921a f = C2253z.m9703f();
+        C1921a f = ServiceFactory.m9703f();
         if (f != null) {
             i = f.mo5034b();
         } else {
             i = 0;
         }
-        if (f instanceof C1936c) {
+        if (f instanceof BrowserServiceCamera) {
             while (i2 < i) {
                 this.f18142c.add(new C4262x(null, i2, this.f3707b, f));
                 i2++;
@@ -174,7 +174,7 @@ public class C5938g extends C1342a {
         }
         this.f18145f = new C5941b();
         this.f18144e = new C5919e(this.f3706a, this.f3707b, this.f18145f);
-        this.f18146g = C2253z.m9680a(this.f3706a, true);
+        this.f18146g = ServiceFactory.m9680a(this.f3706a, true);
         this.f18147h = new C5940a();
         if (this.f18146g != null) {
             this.f18146g.mo5268a((C2031c) this.f18147h);

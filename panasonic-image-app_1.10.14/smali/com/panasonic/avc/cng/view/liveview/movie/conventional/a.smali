@@ -35,7 +35,7 @@
 
 .field protected _tabMenuListener:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a$b;
 
-.field protected _viewModel:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;
+.field protected _viewModel:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;
 
 
 # direct methods
@@ -72,82 +72,82 @@
     return-void
 .end method
 
-.method static synthetic access$000(Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;)Lcom/panasonic/avc/cng/view/a/d;
+.method static synthetic access$000(Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;)Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
     .locals 1
 
     .prologue
     .line 62
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
     return-object v0
 .end method
 
-.method static synthetic access$100(Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;)Lcom/panasonic/avc/cng/view/a/d;
+.method static synthetic access$100(Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;)Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
     .locals 1
 
     .prologue
     .line 62
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
     return-object v0
 .end method
 
-.method static synthetic access$200(Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;)Lcom/panasonic/avc/cng/view/a/d;
+.method static synthetic access$200(Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;)Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
     .locals 1
 
     .prologue
     .line 62
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
     return-object v0
 .end method
 
-.method static synthetic access$300(Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;)Lcom/panasonic/avc/cng/view/a/d;
+.method static synthetic access$300(Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;)Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
     .locals 1
 
     .prologue
     .line 62
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
     return-object v0
 .end method
 
-.method static synthetic access$400(Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;)Lcom/panasonic/avc/cng/view/a/d;
+.method static synthetic access$400(Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;)Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
     .locals 1
 
     .prologue
     .line 62
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
     return-object v0
 .end method
 
-.method static synthetic access$500(Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;)Lcom/panasonic/avc/cng/view/a/d;
+.method static synthetic access$500(Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;)Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
     .locals 1
 
     .prologue
     .line 62
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
     return-object v0
 .end method
 
-.method static synthetic access$600(Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;)Lcom/panasonic/avc/cng/view/a/d;
+.method static synthetic access$600(Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;)Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
     .locals 1
 
     .prologue
     .line 62
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
     return-object v0
 .end method
 
-.method static synthetic access$700(Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;)Lcom/panasonic/avc/cng/view/a/d;
+.method static synthetic access$700(Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;)Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
     .locals 1
 
     .prologue
     .line 62
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
     return-object v0
 .end method
@@ -179,7 +179,7 @@
 
     .prologue
     .line 112
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_viewModel:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_viewModel:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;
 
     return-object v0
 .end method
@@ -191,9 +191,9 @@
     const/4 v1, 0x0
 
     .line 313
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_viewModel:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_viewModel:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;->l()Z
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;->l()Z
 
     move-result v0
 
@@ -204,7 +204,7 @@
 
     const/4 v2, 0x0
 
-    invoke-static {p0, v0, v2}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {p0, v0, v2}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     move v0, v1
 
@@ -214,9 +214,9 @@
 
     .line 319
     :cond_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_viewModel:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_viewModel:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;->g()Z
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;->g()Z
 
     move-result v0
 
@@ -229,9 +229,9 @@
 
     .line 324
     :cond_1
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_viewModel:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_viewModel:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;->Q:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;->Q:Lcom/panasonic/avc/cng/a/c;
 
     invoke-virtual {v0}, Lcom/panasonic/avc/cng/a/c;->b()Ljava/lang/Object;
 
@@ -279,17 +279,17 @@
 
     const-string v1, ""
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 411
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_viewModel:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_viewModel:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;
 
     if-eqz v0, :cond_0
 
     .line 413
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_viewModel:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_viewModel:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;->s()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;->s()V
 
     .line 415
     :cond_0
@@ -305,17 +305,17 @@
 
     const-string v1, ""
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 387
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_viewModel:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_viewModel:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;
 
     if-eqz v0, :cond_0
 
     .line 390
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_viewModel:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_viewModel:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;->j()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;->j()V
 
     .line 394
     :cond_0
@@ -324,14 +324,14 @@
     if-eqz v0, :cond_1
 
     .line 396
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_viewModel:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_viewModel:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;
 
     if-eqz v0, :cond_1
 
     .line 398
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_viewModel:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_viewModel:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;->H()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;->H()V
 
     .line 401
     :cond_1
@@ -347,24 +347,24 @@
 
     const-string v1, ""
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 363
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_viewModel:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_viewModel:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;
 
     if-eqz v0, :cond_0
 
     .line 365
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_viewModel:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_viewModel:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;
 
     const-wide/16 v2, 0x0
 
-    invoke-virtual {v0, v2, v3}, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;->c(J)V
+    invoke-virtual {v0, v2, v3}, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;->c(J)V
 
     .line 366
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_viewModel:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_viewModel:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;->i()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;->i()V
 
     .line 370
     :cond_0
@@ -373,14 +373,14 @@
     if-eqz v0, :cond_1
 
     .line 372
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_viewModel:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_viewModel:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;
 
     if-eqz v0, :cond_1
 
     .line 374
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_viewModel:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_viewModel:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;->H()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;->H()V
 
     .line 377
     :cond_1
@@ -435,28 +435,28 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;
+    check-cast v0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_viewModel:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_viewModel:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;
 
     .line 144
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_viewModel:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_viewModel:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;
 
     if-nez v0, :cond_0
 
     .line 147
-    new-instance v0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;
+    new-instance v0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_context:Landroid/content/Context;
 
     iget-object v2, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_handler:Landroid/os/Handler;
 
-    invoke-direct {v0, v1, v2}, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;-><init>(Landroid/content/Context;Landroid/os/Handler;)V
+    invoke-direct {v0, v1, v2}, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;-><init>(Landroid/content/Context;Landroid/os/Handler;)V
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_viewModel:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_viewModel:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;
 
     .line 148
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_viewModel:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_viewModel:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_context:Landroid/content/Context;
 
@@ -464,21 +464,21 @@
 
     iget-object v3, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_mainListener:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a$a;
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f$a;)V
+    invoke-virtual {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f$a;)V
 
     .line 151
     const-string v0, "LiveViewMovieViewModel"
 
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_viewModel:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_viewModel:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;
 
     invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/a/j;->a(Ljava/lang/String;Lcom/panasonic/avc/cng/view/a/c;)V
 
     .line 154
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_viewModel:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_viewModel:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;
 
     iget v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_lastLiveViewMode:I
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;->b(I)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;->b(I)V
 
     .line 162
     :goto_0
@@ -552,7 +552,7 @@
 
     .line 158
     :cond_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_viewModel:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_viewModel:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_context:Landroid/content/Context;
 
@@ -560,7 +560,7 @@
 
     iget-object v3, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_mainListener:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a$a;
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f$a;)V
+    invoke-virtual {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f$a;)V
 
     goto :goto_0
 
@@ -597,19 +597,19 @@
 
     .line 298
     :cond_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_viewModel:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_viewModel:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;
 
     if-eqz v0, :cond_1
 
     .line 300
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_viewModel:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_viewModel:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;->a()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;->a()V
 
     .line 301
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_viewModel:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_viewModel:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;
 
     .line 303
     :cond_1
@@ -621,9 +621,9 @@
 
     .prologue
     .line 505
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_viewModel:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_viewModel:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;
 
-    invoke-virtual {v0, p1}, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;->a(Landroid/content/Intent;)V
+    invoke-virtual {v0, p1}, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;->a(Landroid/content/Intent;)V
 
     .line 507
     invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/liveview/a/a;->OnSetupBrowser(Landroid/content/Intent;)V
@@ -637,14 +637,14 @@
 
     .prologue
     .line 344
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_viewModel:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_viewModel:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;
 
     if-eqz v0, :cond_0
 
     .line 347
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_viewModel:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_viewModel:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;->h()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;->h()V
 
     .line 350
     :cond_0
@@ -711,11 +711,11 @@
     invoke-super {p0, p1, p2, p3}, Lcom/panasonic/avc/cng/view/liveview/a/a;->onActivityResult(IILandroid/content/Intent;)V
 
     .line 448
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
@@ -725,7 +725,7 @@
     .line 451
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_context:Landroid/content/Context;
 
-    invoke-static {v1, v0}, Lcom/panasonic/avc/cng/model/service/z;->a(Landroid/content/Context;Lcom/panasonic/avc/cng/model/f;)Lcom/panasonic/avc/cng/model/service/b;
+    invoke-static {v1, v0}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->a(Landroid/content/Context;Lcom/panasonic/avc/cng/model/f;)Lcom/panasonic/avc/cng/model/service/b;
 
     move-result-object v0
 
@@ -881,16 +881,16 @@
     if-ne v0, v1, :cond_0
 
     .line 263
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_viewModel:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_viewModel:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;
 
     if-eqz v0, :cond_0
 
     .line 265
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_viewModel:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_viewModel:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;
 
     const/4 v1, 0x1
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;->b(Z)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;->b(Z)V
 
     .line 274
     :cond_0
@@ -928,7 +928,7 @@
     return-void
 .end method
 
-.method protected onGetStatusNotify(Lcom/panasonic/avc/cng/model/c/e;)V
+.method protected onGetStatusNotify(Lcom/panasonic/avc/cng/model/c/CameraStatus;)V
     .locals 0
 
     .prologue
@@ -1078,7 +1078,7 @@
     invoke-super {p0}, Lcom/panasonic/avc/cng/view/liveview/a/a;->onResume()V
 
     .line 202
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_viewModel:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_viewModel:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;
 
     if-eqz v0, :cond_1
 
@@ -1096,18 +1096,18 @@
 
     .line 211
     :cond_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_viewModel:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_viewModel:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;->f()Z
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;->f()Z
 
     move-result v0
 
     if-eqz v0, :cond_2
 
     .line 213
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_viewModel:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_viewModel:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;
 
-    invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;->b(Z)V
+    invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;->b(Z)V
 
     .line 217
     iget-boolean v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_isNeedStartLiveview:Z
@@ -1115,11 +1115,11 @@
     if-eqz v0, :cond_1
 
     .line 220
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_viewModel:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_viewModel:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;
 
     iget-boolean v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_isPictureRecMode:Z
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;->c(Z)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;->c(Z)V
 
     .line 221
     iput-boolean v2, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_isNeedStartLiveview:Z
@@ -1131,11 +1131,11 @@
 
     .line 227
     :cond_2
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_viewModel:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_viewModel:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;
 
     iget-boolean v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_isPictureRecMode:Z
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;->c(Z)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;->c(Z)V
 
     goto :goto_0
 .end method
@@ -1185,37 +1185,37 @@
 
     .line 1064
     :pswitch_1
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_viewModel:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_viewModel:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;
 
     if-eqz v0, :cond_0
 
     .line 1066
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_viewModel:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_viewModel:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;
 
     const-string v1, "normal"
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;->d(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;->d(Ljava/lang/String;)V
 
     .line 1067
-    invoke-static {p0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;)V
+    invoke-static {p0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;)V
 
     goto :goto_0
 
     .line 1071
     :pswitch_2
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_viewModel:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_viewModel:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;
 
     if-eqz v0, :cond_0
 
     .line 1073
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_viewModel:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/a;->_viewModel:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;
 
     const-string v1, "slow"
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;->d(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;->d(Ljava/lang/String;)V
 
     .line 1074
-    invoke-static {p0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;)V
+    invoke-static {p0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;)V
 
     goto :goto_0
 

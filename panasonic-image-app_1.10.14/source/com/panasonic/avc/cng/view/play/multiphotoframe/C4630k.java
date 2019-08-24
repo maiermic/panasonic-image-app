@@ -13,7 +13,7 @@ import android.widget.TextView;
 import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.p051c.C1865q.C1867b;
 import com.panasonic.avc.cng.p038a.C1343b;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.view.parts.C3971aa;
 import com.panasonic.avc.cng.view.parts.C4145d;
 import com.panasonic.avc.cng.view.parts.C4204j;
@@ -21,8 +21,8 @@ import com.panasonic.avc.cng.view.parts.C4208k;
 import com.panasonic.avc.cng.view.parts.C4213l;
 import com.panasonic.avc.cng.view.parts.C4230p;
 import com.panasonic.avc.cng.view.parts.C4241r;
-import com.panasonic.avc.cng.view.parts.C4245t;
-import com.panasonic.avc.cng.view.parts.C4245t.C4252c;
+import com.panasonic.avc.cng.view.parts.BrowserViewModel;
+import com.panasonic.avc.cng.view.parts.BrowserViewModel.C4252c;
 import com.panasonic.avc.cng.view.parts.C4261w;
 import com.panasonic.avc.cng.view.parts.ChapterProgressBar;
 
@@ -34,14 +34,14 @@ public class C4630k {
     /* access modifiers changed from: private */
 
     /* renamed from: b */
-    public C4636n f15164b;
+    public MultiPhotoFrameSelectPictureViewModel f15164b;
     /* access modifiers changed from: private */
 
     /* renamed from: c */
     public GridView f15165c;
 
     /* renamed from: a */
-    public void mo10866a(Activity activity, C4636n nVar, boolean z) {
+    public void mo10866a(Activity activity, MultiPhotoFrameSelectPictureViewModel nVar, boolean z) {
         this.f15163a = activity;
         this.f15164b = nVar;
         m18145c();
@@ -63,7 +63,7 @@ public class C4630k {
         this.f15165c.setAdapter(new C4261w(this.f15163a, R.layout.thumbnail_item, this.f15164b.mo10884k()));
         this.f15165c.setOnItemClickListener(new OnItemClickListener() {
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long j) {
-                C2261g.m9763a(C4630k.class.getSimpleName(), "onItemClick: position = " + i);
+                ImageAppLog.debug(C4630k.class.getSimpleName(), "onItemClick: position = " + i);
                 C4630k.this.f15164b.mo10877b(i);
                 if (((Boolean) C4630k.this.f15164b.mo10884k().f14237e.mo3217b()).booleanValue()) {
                     ((C4261w) C4630k.this.f15165c.getAdapter()).notifyDataSetChanged();
@@ -143,7 +143,7 @@ public class C4630k {
         }
         int firstVisiblePosition = this.f15165c.getFirstVisiblePosition();
         int lastVisiblePosition = this.f15165c.getLastVisiblePosition();
-        C4245t k = this.f15164b.mo10884k();
+        BrowserViewModel k = this.f15164b.mo10884k();
         k.getClass();
         return new C4252c(firstVisiblePosition, lastVisiblePosition);
     }

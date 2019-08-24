@@ -10,9 +10,9 @@ import com.panasonic.avc.cng.model.p051c.C1860l;
 import com.panasonic.avc.cng.model.p052d.C1879a;
 import com.panasonic.avc.cng.model.service.C1985b;
 import com.panasonic.avc.cng.model.service.C1985b.C1986a;
-import com.panasonic.avc.cng.model.service.C2253z;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
 import com.panasonic.avc.cng.view.p073b.C2376f.C2378b;
 import com.panasonic.avc.cng.view.parts.C4003af;
 import com.panasonic.avc.cng.view.parts.C4021aj;
@@ -21,7 +21,7 @@ import com.panasonic.avc.cng.view.parts.C4021aj.C4035c;
 import com.panasonic.avc.cng.view.setting.C5541am.C5552f;
 import com.panasonic.avc.cng.view.setting.C5541am.C5560m;
 
-public class LiveSetupDrumPickerDriveModeActivity extends C5804u {
+public class LiveSetupDrumPickerDriveModeActivity extends LiveSetupLumixMirrorlessBaseActivity {
     /* access modifiers changed from: private */
 
     /* renamed from: n */
@@ -68,7 +68,7 @@ public class LiveSetupDrumPickerDriveModeActivity extends C5804u {
 
             /* renamed from: b */
             public void mo9610b() {
-                C1985b a = C2253z.m9679a(LiveSetupDrumPickerDriveModeActivity.this._context, a);
+                C1985b a = ServiceFactory.m9679a(LiveSetupDrumPickerDriveModeActivity.this._context, a);
                 if (a != null) {
                     a.mo5185a((C1986a) new C1986a() {
                         /* renamed from: a */
@@ -132,10 +132,10 @@ public class LiveSetupDrumPickerDriveModeActivity extends C5804u {
                                 public void run() {
                                     C1892f a = C1712b.m6919c().mo4896a();
                                     if (a == null) {
-                                        C2331d.m10100a((Activity) LiveSetupDrumPickerDriveModeActivity.this);
+                                        DialogFactory.m10100a((Activity) LiveSetupDrumPickerDriveModeActivity.this);
                                         return;
                                     }
-                                    final C1985b a2 = C2253z.m9679a(LiveSetupDrumPickerDriveModeActivity.this._context, a);
+                                    final C1985b a2 = ServiceFactory.m9679a(LiveSetupDrumPickerDriveModeActivity.this._context, a);
                                     if (a2 != null) {
                                         a2.mo5185a((C1986a) new C1986a() {
                                             /* renamed from: a */
@@ -153,7 +153,7 @@ public class LiveSetupDrumPickerDriveModeActivity extends C5804u {
                                                             int identifier = LiveSetupDrumPickerDriveModeActivity.this.getResources().getIdentifier(j, "string", LiveSetupDrumPickerDriveModeActivity.this.getPackageName());
                                                             Bundle bundle = new Bundle();
                                                             bundle.putInt(C2378b.MESSAGE_ID.name(), identifier);
-                                                            C2331d.m10114a((Activity) LiveSetupDrumPickerDriveModeActivity.this, C2328a.ON_WAIT_TEMPERATURE_DOWN, bundle);
+                                                            DialogFactory.m10114a((Activity) LiveSetupDrumPickerDriveModeActivity.this, C2328a.ON_WAIT_TEMPERATURE_DOWN, bundle);
                                                         }
                                                         LiveSetupDrumPickerDriveModeActivity.this.m19123j();
                                                     }
@@ -173,7 +173,7 @@ public class LiveSetupDrumPickerDriveModeActivity extends C5804u {
                         public void mo5203c() {
                             LiveSetupDrumPickerDriveModeActivity.this._handler.post(new Runnable() {
                                 public void run() {
-                                    C2331d.m10100a((Activity) LiveSetupDrumPickerDriveModeActivity.this);
+                                    DialogFactory.m10100a((Activity) LiveSetupDrumPickerDriveModeActivity.this);
                                 }
                             });
                         }
@@ -195,10 +195,10 @@ public class LiveSetupDrumPickerDriveModeActivity extends C5804u {
                                 public void run() {
                                     C1892f a = C1712b.m6919c().mo4896a();
                                     if (a == null) {
-                                        C2331d.m10100a((Activity) LiveSetupDrumPickerDriveModeActivity.this);
+                                        DialogFactory.m10100a((Activity) LiveSetupDrumPickerDriveModeActivity.this);
                                         return;
                                     }
-                                    final C1985b a2 = C2253z.m9679a(LiveSetupDrumPickerDriveModeActivity.this._context, a);
+                                    final C1985b a2 = ServiceFactory.m9679a(LiveSetupDrumPickerDriveModeActivity.this._context, a);
                                     if (a2 != null) {
                                         a2.mo5185a((C1986a) new C1986a() {
                                             /* renamed from: a */
@@ -218,7 +218,7 @@ public class LiveSetupDrumPickerDriveModeActivity extends C5804u {
                                                             int identifier = LiveSetupDrumPickerDriveModeActivity.this.getResources().getIdentifier(j, "string", LiveSetupDrumPickerDriveModeActivity.this.getPackageName());
                                                             Bundle bundle = new Bundle();
                                                             bundle.putInt(C2378b.MESSAGE_ID.name(), identifier);
-                                                            C2331d.m10114a((Activity) LiveSetupDrumPickerDriveModeActivity.this, C2328a.ON_WAIT_TEMPERATURE_DOWN, bundle);
+                                                            DialogFactory.m10114a((Activity) LiveSetupDrumPickerDriveModeActivity.this, C2328a.ON_WAIT_TEMPERATURE_DOWN, bundle);
                                                         }
                                                     }
                                                 });
@@ -375,7 +375,7 @@ public class LiveSetupDrumPickerDriveModeActivity extends C5804u {
         }
         if (this.f17834j != null) {
             this.f17834j.mo7421c("");
-            C1985b a2 = C2253z.m9679a(this._context, a);
+            C1985b a2 = ServiceFactory.m9679a(this._context, a);
             C1860l a3 = a2.mo5182a("menu_item_id_burst_1");
             if (!(a3 == null || a3.f5569c == null)) {
                 if (a3.f5569c.equalsIgnoreCase("sh1_pre")) {

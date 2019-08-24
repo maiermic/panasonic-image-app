@@ -9,8 +9,8 @@ import android.widget.SimpleCursorAdapter;
 import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
-import com.panasonic.avc.cng.view.setting.C5537al.C5540a;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
+import com.panasonic.avc.cng.view.setting.SettingMenuBaseActivity.C5540a;
 import com.panasonic.avc.cng.view.setting.C5677c.C5680a;
 import com.panasonic.avc.cng.view.setting.C5681d.C5686b;
 import com.panasonic.avc.cng.view.setting.C5741i.C5759a;
@@ -41,7 +41,7 @@ public class CamSetupDevInfoActivity extends C5741i {
             matrixCursor.addRow(new String[]{"3", CamSetupDevInfoActivity.this.getText(R.string.cmn_network_camera_ssid).toString(), str3});
             listView.setAdapter(new SimpleCursorAdapter(CamSetupDevInfoActivity.this._context, 17367044, matrixCursor, new String[]{"name", "value"}, new int[]{16908308, 16908309}));
             CamSetupDevInfoActivity.this.SetDmsDialogId(C2328a.DMS_FILEUPLOADED_NOTIFY, C2328a.DMS_FILEUPLOADING_ERROR);
-            C2331d.m10100a((Activity) CamSetupDevInfoActivity.this);
+            DialogFactory.m10100a((Activity) CamSetupDevInfoActivity.this);
         }
     }
 
@@ -62,13 +62,13 @@ public class CamSetupDevInfoActivity extends C5741i {
                         public void run() {
                             switch (i) {
                                 case 2:
-                                    C2331d.m10114a((Activity) CamSetupDevInfoActivity.this, C2328a.ON_DISCONNECT_BY_HIGH_TEMP_FINISH, (Bundle) null);
+                                    DialogFactory.m10114a((Activity) CamSetupDevInfoActivity.this, C2328a.ON_DISCONNECT_BY_HIGH_TEMP_FINISH, (Bundle) null);
                                     return;
                                 case 3:
-                                    C2331d.m10114a((Activity) CamSetupDevInfoActivity.this, C2328a.ON_DISCONNECT_BATTERY_LOW_FINISH, (Bundle) null);
+                                    DialogFactory.m10114a((Activity) CamSetupDevInfoActivity.this, C2328a.ON_DISCONNECT_BATTERY_LOW_FINISH, (Bundle) null);
                                     return;
                                 default:
-                                    C2331d.m10114a((Activity) CamSetupDevInfoActivity.this, C2328a.ON_DISCONNECT_FINISH, (Bundle) null);
+                                    DialogFactory.m10114a((Activity) CamSetupDevInfoActivity.this, C2328a.ON_DISCONNECT_FINISH, (Bundle) null);
                                     return;
                             }
                         }
@@ -91,16 +91,16 @@ public class CamSetupDevInfoActivity extends C5741i {
             /* renamed from: a */
             public void mo11327a(String str) {
                 if (str.equalsIgnoreCase("high")) {
-                    C2331d.m10114a((Activity) CamSetupDevInfoActivity.this, C2328a.ON_DISCONNECT_BY_HIGH_TEMP_FINISH, (Bundle) null);
+                    DialogFactory.m10114a((Activity) CamSetupDevInfoActivity.this, C2328a.ON_DISCONNECT_BY_HIGH_TEMP_FINISH, (Bundle) null);
                 } else if (str.equalsIgnoreCase("assert")) {
-                    C2331d.m10114a((Activity) CamSetupDevInfoActivity.this, C2328a.ON_ASEERT_TEMP_FINISH, (Bundle) null);
+                    DialogFactory.m10114a((Activity) CamSetupDevInfoActivity.this, C2328a.ON_ASEERT_TEMP_FINISH, (Bundle) null);
                 }
             }
         });
         this.f15762c = new C4866a();
         this.f15761b = new C5677c(this, this._handler, this.f15762c);
         this.f15761b.mo12504c();
-        C2331d.m10114a((Activity) this, C2328a.ON_PROGRESS, (Bundle) null);
+        DialogFactory.m10114a((Activity) this, C2328a.ON_PROGRESS, (Bundle) null);
     }
 
     public void onResume() {

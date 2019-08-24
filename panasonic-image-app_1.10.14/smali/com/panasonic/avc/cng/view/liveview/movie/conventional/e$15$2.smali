@@ -104,7 +104,7 @@
 
     move-result-object v2
 
-    invoke-static {v2, v0}, Lcom/panasonic/avc/cng/model/service/z;->a(Landroid/content/Context;Z)Lcom/panasonic/avc/cng/model/service/e;
+    invoke-static {v2, v0}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->a(Landroid/content/Context;Z)Lcom/panasonic/avc/cng/model/service/e;
 
     move-result-object v2
 
@@ -112,7 +112,7 @@
     if-eqz v2, :cond_1
 
     .line 1390
-    invoke-interface {v2}, Lcom/panasonic/avc/cng/model/service/e;->i()Lcom/panasonic/avc/cng/model/c/e;
+    invoke-interface {v2}, Lcom/panasonic/avc/cng/model/service/e;->i()Lcom/panasonic/avc/cng/model/c/CameraStatus;
 
     move-result-object v2
 
@@ -128,7 +128,7 @@
 
     iget-boolean v4, v4, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/e$15;->b:Z
 
-    invoke-static {v3, v2, v4}, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/e;->a(Lcom/panasonic/avc/cng/view/liveview/movie/conventional/e;Lcom/panasonic/avc/cng/model/c/e;Z)V
+    invoke-static {v3, v2, v4}, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/e;->a(Lcom/panasonic/avc/cng/view/liveview/movie/conventional/e;Lcom/panasonic/avc/cng/model/c/CameraStatus;Z)V
 
     .line 1399
     :cond_1

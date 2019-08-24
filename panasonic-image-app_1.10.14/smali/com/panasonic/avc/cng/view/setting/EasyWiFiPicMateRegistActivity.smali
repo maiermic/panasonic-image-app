@@ -107,7 +107,7 @@
     .line 119
     sget-object v0, Lcom/panasonic/avc/cng/view/b/b$a;->en:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {p0, v0}, Lcom/panasonic/avc/cng/view/b/d;->b(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;)Z
+    invoke-static {p0, v0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->b(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;)Z
 
     move-result v0
 
@@ -245,7 +245,7 @@
     .line 154
     sget-object v0, Lcom/panasonic/avc/cng/view/b/b$a;->en:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {p0, v0, v5}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {p0, v0, v5}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     .line 156
     new-instance v0, Lcom/panasonic/avc/cng/util/n;
@@ -421,14 +421,14 @@
     .line 257
     sget-object v0, Lcom/panasonic/avc/cng/view/b/b$a;->en:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {p0, v0}, Lcom/panasonic/avc/cng/view/b/d;->b(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;)Z
+    invoke-static {p0, v0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->b(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 259
-    invoke-static {p0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;)V
+    invoke-static {p0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;)V
 
     .line 260
     const/4 v0, 0x0
@@ -460,7 +460,7 @@
     :goto_0
     sget-object v0, Lcom/panasonic/avc/cng/view/b/b$a;->en:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {p0, v0}, Lcom/panasonic/avc/cng/view/b/d;->b(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;)Z
+    invoke-static {p0, v0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->b(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;)Z
 
     move-result v0
 
@@ -493,11 +493,11 @@
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
 
     .line 232
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
@@ -589,16 +589,16 @@
     :cond_1
     sget-object v0, Lcom/panasonic/avc/cng/view/b/b$a;->em:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {p0, v0}, Lcom/panasonic/avc/cng/view/b/d;->b(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;)Z
+    invoke-static {p0, v0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->b(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;)Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
     .line 106
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/EasyWiFiPicMateRegistActivity;->a:Lcom/panasonic/avc/cng/view/setting/j;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/EasyWiFiPicMateRegistActivity;->a:Lcom/panasonic/avc/cng/view/setting/EasyWiFiManager;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/j;->h()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/EasyWiFiManager;->h()Ljava/lang/String;
 
     move-result-object v0
 
@@ -616,7 +616,7 @@
     .line 110
     sget-object v0, Lcom/panasonic/avc/cng/view/b/b$a;->em:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {p0, v0, v1}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {p0, v0, v1}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     goto :goto_0
 
@@ -777,7 +777,7 @@
 
     const-string v1, "onCreate"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->verbose(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 61
     :cond_0

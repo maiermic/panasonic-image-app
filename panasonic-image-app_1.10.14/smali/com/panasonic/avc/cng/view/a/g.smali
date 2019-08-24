@@ -16,7 +16,7 @@
 
 
 # virtual methods
-.method public a(Lcom/panasonic/avc/cng/view/a/b;Lcom/panasonic/avc/cng/view/a/c;Lcom/panasonic/avc/cng/view/a/d;)V
+.method public a(Lcom/panasonic/avc/cng/view/a/b;Lcom/panasonic/avc/cng/view/a/c;Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;)V
     .locals 3
 
     .prologue
@@ -53,7 +53,7 @@
     return-void
 .end method
 
-.method public b(Lcom/panasonic/avc/cng/view/a/b;Lcom/panasonic/avc/cng/view/a/c;Lcom/panasonic/avc/cng/view/a/d;)V
+.method public b(Lcom/panasonic/avc/cng/view/a/b;Lcom/panasonic/avc/cng/view/a/c;Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;)V
     .locals 3
 
     .prologue
@@ -90,7 +90,7 @@
     return-void
 .end method
 
-.method public c(Lcom/panasonic/avc/cng/view/a/b;Lcom/panasonic/avc/cng/view/a/c;Lcom/panasonic/avc/cng/view/a/d;)V
+.method public c(Lcom/panasonic/avc/cng/view/a/b;Lcom/panasonic/avc/cng/view/a/c;Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;)V
     .locals 3
 
     .prologue

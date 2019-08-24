@@ -130,7 +130,7 @@
 
     move-result-object v5
 
-    invoke-static {v4, v5}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v4, v5}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 1192
     const-string v4, "ImageAppTotalService"
@@ -161,7 +161,7 @@
 
     move-result-object v5
 
-    invoke-static {v4, v5}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v4, v5}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 1193
     iget-object v4, p0, Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService$3$6;->c:Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService$3;
@@ -207,7 +207,7 @@
 
     move-result-object v4
 
-    invoke-static {v0, v4}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v4}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 1196
     iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService$3$6;->c:Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService$3;
@@ -313,7 +313,7 @@
 
     move-result-object v6
 
-    invoke-static {v2, v6}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v2, v6}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 1206
     if-eqz v0, :cond_0

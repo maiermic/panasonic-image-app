@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/panasonic/avc/cng/view/play/highlight/b;
+    value = Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

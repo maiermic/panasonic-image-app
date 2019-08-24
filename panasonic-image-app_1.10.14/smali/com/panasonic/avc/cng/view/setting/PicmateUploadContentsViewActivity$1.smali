@@ -56,11 +56,11 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/af;->c()Lcom/panasonic/avc/cng/view/parts/t;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/af;->c()Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
     move-result-object v0
 
-    invoke-virtual {v0, p3}, Lcom/panasonic/avc/cng/view/parts/t;->d(I)V
+    invoke-virtual {v0, p3}, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->d(I)V
 
     .line 136
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/PicmateUploadContentsViewActivity$1;->a:Lcom/panasonic/avc/cng/view/setting/PicmateUploadContentsViewActivity;

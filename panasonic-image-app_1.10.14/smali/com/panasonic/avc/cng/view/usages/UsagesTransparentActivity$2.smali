@@ -101,7 +101,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/util/s;->b(Landroid/content/Context;)Z
+    invoke-static {v0}, Lcom/panasonic/avc/cng/util/UsagesLogUtil;->b(Landroid/content/Context;)Z
 
     move-result v0
 
@@ -126,7 +126,7 @@
 
     move-result-object v0
 
-    invoke-static {v1, v0}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v0}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 115
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/usages/UsagesTransparentActivity$2;->a:Lcom/panasonic/avc/cng/view/usages/UsagesTransparentActivity;
@@ -144,7 +144,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/util/s;->c(Landroid/content/Context;)V
+    invoke-static {v0}, Lcom/panasonic/avc/cng/util/UsagesLogUtil;->c(Landroid/content/Context;)V
 
     .line 118
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/usages/UsagesTransparentActivity$2;->a:Lcom/panasonic/avc/cng/view/usages/UsagesTransparentActivity;

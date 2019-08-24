@@ -43,11 +43,11 @@
     .line 209
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionMovieMakingActivity$1;->a:Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionMovieMakingActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionMovieMakingActivity;->d(Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionMovieMakingActivity;)Lcom/panasonic/avc/cng/view/setting/ac;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionMovieMakingActivity;->d(Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionMovieMakingActivity;)Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionMovieMakingViewModel;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/ac;->p()Z
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionMovieMakingViewModel;->p()Z
 
     .line 210
     return-void

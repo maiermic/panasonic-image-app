@@ -45,9 +45,9 @@
     .line 736
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/a$b;->a:Lcom/panasonic/avc/cng/view/liveview/movie/matanity/a;
 
-    iget-object v1, v1, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/a;->c:Lcom/panasonic/avc/cng/view/liveview/movie/matanity/c;
+    iget-object v1, v1, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/a;->c:Lcom/panasonic/avc/cng/view/liveview/movie/matanity/LiveViewMovieMatanityViewModel;
 
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/c;->k()Z
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/LiveViewMovieMatanityViewModel;->k()Z
 
     move-result v1
 
@@ -58,7 +58,7 @@
 
     sget-object v2, Lcom/panasonic/avc/cng/view/b/b$a;->bo:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {v1, v2, v3}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {v1, v2, v3}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     .line 761
     :cond_0
@@ -69,9 +69,9 @@
     :cond_1
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/a$b;->a:Lcom/panasonic/avc/cng/view/liveview/movie/matanity/a;
 
-    iget-object v1, v1, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/a;->c:Lcom/panasonic/avc/cng/view/liveview/movie/matanity/c;
+    iget-object v1, v1, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/a;->c:Lcom/panasonic/avc/cng/view/liveview/movie/matanity/LiveViewMovieMatanityViewModel;
 
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/c;->l()Z
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/LiveViewMovieMatanityViewModel;->l()Z
 
     move-result v1
 
@@ -79,9 +79,9 @@
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/a$b;->a:Lcom/panasonic/avc/cng/view/liveview/movie/matanity/a;
 
-    iget-object v1, v1, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/a;->c:Lcom/panasonic/avc/cng/view/liveview/movie/matanity/c;
+    iget-object v1, v1, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/a;->c:Lcom/panasonic/avc/cng/view/liveview/movie/matanity/LiveViewMovieMatanityViewModel;
 
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/c;->m()Z
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/LiveViewMovieMatanityViewModel;->m()Z
 
     move-result v1
 
@@ -93,7 +93,7 @@
 
     sget-object v2, Lcom/panasonic/avc/cng/view/b/b$a;->bs:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {v1, v2, v3}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {v1, v2, v3}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     goto :goto_0
 
@@ -101,9 +101,9 @@
     :cond_3
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/a$b;->a:Lcom/panasonic/avc/cng/view/liveview/movie/matanity/a;
 
-    iget-object v1, v1, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/a;->c:Lcom/panasonic/avc/cng/view/liveview/movie/matanity/c;
+    iget-object v1, v1, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/a;->c:Lcom/panasonic/avc/cng/view/liveview/movie/matanity/LiveViewMovieMatanityViewModel;
 
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/c;->n()Z
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/LiveViewMovieMatanityViewModel;->n()Z
 
     move-result v1
 
@@ -112,9 +112,9 @@
     .line 753
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/a$b;->a:Lcom/panasonic/avc/cng/view/liveview/movie/matanity/a;
 
-    iget-object v1, v1, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/a;->c:Lcom/panasonic/avc/cng/view/liveview/movie/matanity/c;
+    iget-object v1, v1, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/a;->c:Lcom/panasonic/avc/cng/view/liveview/movie/matanity/LiveViewMovieMatanityViewModel;
 
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/c;->g()Z
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/LiveViewMovieMatanityViewModel;->g()Z
 
     move-result v1
 
@@ -125,7 +125,7 @@
 
     sget-object v2, Lcom/panasonic/avc/cng/view/b/b$a;->bV:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {v1, v2, v3}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {v1, v2, v3}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     goto :goto_0
 

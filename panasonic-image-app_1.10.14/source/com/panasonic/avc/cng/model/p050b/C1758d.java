@@ -5,7 +5,7 @@ import android.os.Handler;
 import com.panasonic.avc.cng.model.C1878d;
 import com.panasonic.avc.cng.model.service.C2010c;
 import com.panasonic.avc.cng.model.service.C2010c.C2011a;
-import com.panasonic.avc.cng.model.service.C2253z;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
 import com.panasonic.avc.cng.p038a.C1342a;
 import java.util.ArrayList;
 import java.util.List;
@@ -46,7 +46,7 @@ public class C1758d extends C1342a {
 
     /* renamed from: c */
     public void mo4502c() {
-        this.f5145c = C2253z.m9711j(this.f5146d);
+        this.f5145c = ServiceFactory.m9711j(this.f5146d);
         this.f5145c.mo5204a();
     }
 

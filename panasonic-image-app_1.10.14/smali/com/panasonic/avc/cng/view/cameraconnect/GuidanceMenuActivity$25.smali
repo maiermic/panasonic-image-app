@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->DmsBase_OnGetState(Lcom/panasonic/avc/cng/model/c/e;ZI)V
+    value = Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->DmsBase_OnGetState(Lcom/panasonic/avc/cng/model/c/CameraStatus;ZI)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,20 +18,20 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/panasonic/avc/cng/model/c/e;
+.field final synthetic a:Lcom/panasonic/avc/cng/model/c/CameraStatus;
 
 .field final synthetic b:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;
 
 
 # direct methods
-.method constructor <init>(Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;Lcom/panasonic/avc/cng/model/c/e;)V
+.method constructor <init>(Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;Lcom/panasonic/avc/cng/model/c/CameraStatus;)V
     .locals 0
 
     .prologue
     .line 5790
     iput-object p1, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity$25;->b:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;
 
-    iput-object p2, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity$25;->a:Lcom/panasonic/avc/cng/model/c/e;
+    iput-object p2, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity$25;->a:Lcom/panasonic/avc/cng/model/c/CameraStatus;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -47,7 +47,7 @@
     .line 5792
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity$25;->b:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->access$600(Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;)Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->access$600(Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;)Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
     move-result-object v0
 
@@ -135,9 +135,9 @@
     .line 5817
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity$25;->b:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;
 
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity$25;->a:Lcom/panasonic/avc/cng/model/c/e;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity$25;->a:Lcom/panasonic/avc/cng/model/c/CameraStatus;
 
-    invoke-static {v1}, Lcom/panasonic/avc/cng/model/c/e;->b(Lcom/panasonic/avc/cng/model/c/e;)I
+    invoke-static {v1}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->b(Lcom/panasonic/avc/cng/model/c/CameraStatus;)I
 
     move-result v1
 

@@ -47,13 +47,13 @@
     .line 145
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/v$1;->b:Lcom/panasonic/avc/cng/view/parts/v;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/parts/v;->a(Lcom/panasonic/avc/cng/view/parts/v;)Lcom/panasonic/avc/cng/view/parts/t;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/parts/v;->a(Lcom/panasonic/avc/cng/view/parts/v;)Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
     move-result-object v0
 
     iget v1, p0, Lcom/panasonic/avc/cng/view/parts/v$1;->a:I
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/parts/t;->h(I)Z
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->h(I)Z
 
     .line 146
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/v$1;->b:Lcom/panasonic/avc/cng/view/parts/v;

@@ -777,7 +777,7 @@ public class C1941d implements C1921a, C1923b {
     /* renamed from: i */
     public void mo5100i() {
         this.f5956c = this.f5954a.getContentResolver();
-        this.f5957d = new C1983q(new Cursor[]{mo5099a(this.f5956c), m7879b(this.f5956c)}, "date_added", 1, true);
+        this.f5957d = new SortCursor(new Cursor[]{mo5099a(this.f5956c), m7879b(this.f5956c)}, "date_added", 1, true);
     }
 
     /* access modifiers changed from: protected */

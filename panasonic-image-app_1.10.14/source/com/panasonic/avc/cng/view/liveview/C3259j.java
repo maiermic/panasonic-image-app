@@ -5,15 +5,15 @@ import android.app.Activity;
 import android.content.Context;
 import android.graphics.Point;
 import android.os.Handler;
-import com.panasonic.avc.cng.core.p040a.C1468ao;
-import com.panasonic.avc.cng.core.p040a.C1470aq;
+import com.panasonic.avc.cng.core.p040a.StatusCommand;
+import com.panasonic.avc.cng.core.p040a.StopMotionCommand;
 import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.C1892f;
 import com.panasonic.avc.cng.model.C1914p.C1915a;
-import com.panasonic.avc.cng.model.p051c.C1846e;
+import com.panasonic.avc.cng.model.p051c.CameraStatus;
 import com.panasonic.avc.cng.model.service.C2028e;
 import com.panasonic.avc.cng.model.service.C2176k.C2177a;
-import com.panasonic.avc.cng.model.service.C2253z;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
 import com.panasonic.avc.cng.p038a.C1344c;
 import com.panasonic.avc.cng.view.liveview.C2994e.C3116f;
 import com.panasonic.avc.cng.view.liveview.C3895p.C3898a;
@@ -138,7 +138,7 @@ public class C3259j extends C3271k implements C2177a {
 
     /* renamed from: i */
     public String mo7821i() {
-        C1846e i = this.f10582e.mo5285i();
+        CameraStatus i = this.f10582e.mo5285i();
         if (i == null) {
             return this.f10356bQ;
         }
@@ -148,7 +148,7 @@ public class C3259j extends C3271k implements C2177a {
 
     /* renamed from: j */
     public long mo7822j() {
-        C1846e i = this.f10582e.mo5285i();
+        CameraStatus i = this.f10582e.mo5285i();
         if (i == null) {
             return 0;
         }
@@ -158,9 +158,9 @@ public class C3259j extends C3271k implements C2177a {
     /* renamed from: a */
     public void mo5766a(int i) {
         if (((Boolean) this.f10499bb.mo3217b()).booleanValue() && ((Boolean) this.f10501bd.mo3217b()).booleanValue()) {
-            C2028e a = C2253z.m9680a(this.f3706a, true);
+            C2028e a = ServiceFactory.m9680a(this.f3706a, true);
             if (a != null) {
-                final C1846e i2 = a.mo5285i();
+                final CameraStatus i2 = a.mo5285i();
                 if (i2 != null) {
                     this.f3707b.post(new Runnable() {
                         public void run() {
@@ -197,7 +197,7 @@ public class C3259j extends C3271k implements C2177a {
             public void run() {
                 final boolean z = false;
                 C1892f a = C1712b.m6919c().mo4896a();
-                if (a != null && new C1470aq(a.f5682d).mo3572f(str3, str4) == 0) {
+                if (a != null && new StopMotionCommand(a.f5682d).mo3572f(str3, str4) == 0) {
                     z = true;
                 }
                 if (C3259j.this.f3707b != null) {
@@ -228,7 +228,7 @@ public class C3259j extends C3271k implements C2177a {
                 final String str = "0";
                 C1892f a = C1712b.m6919c().mo4896a();
                 if (a != null) {
-                    C1470aq aqVar = new C1470aq(a.f5682d);
+                    StopMotionCommand aqVar = new StopMotionCommand(a.f5682d);
                     if (str == null) {
                         z = true;
                     } else if (aqVar.mo3572f("start", str) == 0) {
@@ -237,7 +237,7 @@ public class C3259j extends C3271k implements C2177a {
                         z = false;
                     }
                     if (true == z) {
-                        C1846e b = new C1468ao(a.f5682d).mo3550b();
+                        CameraStatus b = new StatusCommand(a.f5682d).mo3550b();
                         if (b != null) {
                             if (((int) b.mo4662K()) <= 0) {
                                 str = "0";
@@ -275,7 +275,7 @@ public class C3259j extends C3271k implements C2177a {
                 final boolean z;
                 C1892f a = C1712b.m6919c().mo4896a();
                 if (a != null) {
-                    if (new C1470aq(a.f5682d).mo3572f("stop", null) == 0) {
+                    if (new StopMotionCommand(a.f5682d).mo3572f("stop", null) == 0) {
                         z = true;
                     } else {
                         z = false;
@@ -286,7 +286,7 @@ public class C3259j extends C3271k implements C2177a {
                         e.printStackTrace();
                     }
                     if (true == z) {
-                        C1468ao aoVar = new C1468ao(a.f5682d);
+                        StatusCommand aoVar = new StatusCommand(a.f5682d);
                         for (int i = 0; i < 5; i++) {
                             String I = aoVar.mo3550b().mo4660I();
                             if (I != null && I.equalsIgnoreCase("off")) {

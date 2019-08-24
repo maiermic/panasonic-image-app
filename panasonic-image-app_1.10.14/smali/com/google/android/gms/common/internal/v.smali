@@ -136,13 +136,13 @@
     goto :goto_1
 
     :pswitch_4
-    sget-object v0, Lcom/google/android/gms/common/u;->CREATOR:Landroid/os/Parcelable$Creator;
+    sget-object v0, Lcom/google/android/gms/common/GoogleCertificatesQuery;->CREATOR:Landroid/os/Parcelable$Creator;
 
     invoke-static {p2, v0}, Lcom/google/android/gms/d/nb;->a(Landroid/os/Parcel;Landroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
 
     move-result-object v0
 
-    check-cast v0, Lcom/google/android/gms/common/u;
+    check-cast v0, Lcom/google/android/gms/common/GoogleCertificatesQuery;
 
     invoke-virtual {p2}, Landroid/os/Parcel;->readStrongBinder()Landroid/os/IBinder;
 
@@ -152,7 +152,7 @@
 
     move-result-object v2
 
-    invoke-virtual {p0, v0, v2}, Lcom/google/android/gms/common/internal/v;->a(Lcom/google/android/gms/common/u;Lcom/google/android/gms/c/a;)Z
+    invoke-virtual {p0, v0, v2}, Lcom/google/android/gms/common/internal/v;->a(Lcom/google/android/gms/common/GoogleCertificatesQuery;Lcom/google/android/gms/c/a;)Z
 
     move-result v0
 

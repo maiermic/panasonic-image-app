@@ -43,9 +43,9 @@
     .line 1482
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$b$1;->a:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$b;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$b;->a:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$b;->a:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;->u(Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;)V
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;->u(Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;)V
 
     .line 1483
     return-void

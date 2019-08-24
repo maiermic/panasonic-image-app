@@ -754,7 +754,7 @@
 
     .line 388
     :pswitch_0
-    invoke-static {p0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;)V
+    invoke-static {p0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;)V
 
     .line 390
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/wirelesstwincamera/WirelessTwinCameraActivity;->_wirelessTwinCameraViewModel:Lcom/panasonic/avc/cng/view/wirelesstwincamera/b;
@@ -765,7 +765,7 @@
 
     .line 395
     :pswitch_1
-    invoke-static {p0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;)V
+    invoke-static {p0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;)V
 
     .line 397
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/wirelesstwincamera/WirelessTwinCameraActivity;->_wirelessTwinCameraViewModel:Lcom/panasonic/avc/cng/view/wirelesstwincamera/b;
@@ -776,7 +776,7 @@
 
     .line 402
     :pswitch_2
-    invoke-static {p0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;)V
+    invoke-static {p0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;)V
 
     .line 404
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/wirelesstwincamera/WirelessTwinCameraActivity;->_wirelessTwinCameraViewModel:Lcom/panasonic/avc/cng/view/wirelesstwincamera/b;

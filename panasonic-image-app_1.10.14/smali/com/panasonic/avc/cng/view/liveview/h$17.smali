@@ -90,9 +90,9 @@
     .line 2474
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/h$17;->b:Lcom/panasonic/avc/cng/view/liveview/h;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/h;->o:Lcom/panasonic/avc/cng/core/a/t;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/h;->o:Lcom/panasonic/avc/cng/core/a/LiveViewOperationCommand;
 
-    invoke-virtual {v0, p1, p2}, Lcom/panasonic/avc/cng/core/a/t;->b(II)Lcom/panasonic/avc/cng/model/c/h;
+    invoke-virtual {v0, p1, p2}, Lcom/panasonic/avc/cng/core/a/LiveViewOperationCommand;->b(II)Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
     .line 2481
     :goto_0
@@ -106,9 +106,9 @@
     :cond_2
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/h$17;->b:Lcom/panasonic/avc/cng/view/liveview/h;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/h;->o:Lcom/panasonic/avc/cng/core/a/t;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/h;->o:Lcom/panasonic/avc/cng/core/a/LiveViewOperationCommand;
 
-    invoke-virtual {v0, p1, p2}, Lcom/panasonic/avc/cng/core/a/t;->a(II)Lcom/panasonic/avc/cng/model/c/h;
+    invoke-virtual {v0, p1, p2}, Lcom/panasonic/avc/cng/core/a/LiveViewOperationCommand;->a(II)Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
     goto :goto_0
 

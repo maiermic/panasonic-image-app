@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b;->s()V
+    value = Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/LiveViewMoviePantilterBaseViewModel;->s()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b;
+.field final synthetic a:Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/LiveViewMoviePantilterBaseViewModel;
 
 
 # direct methods
-.method constructor <init>(Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b;)V
+.method constructor <init>(Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/LiveViewMoviePantilterBaseViewModel;)V
     .locals 0
 
     .prologue
     .line 1932
-    iput-object p1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b$10;->a:Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b$10;->a:Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/LiveViewMoviePantilterBaseViewModel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -50,13 +50,13 @@
 
     .line 1938
     :try_start_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b$10;->a:Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b$10;->a:Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/LiveViewMoviePantilterBaseViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b;->k(Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b;)Lcom/panasonic/avc/cng/core/a/ab;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/LiveViewMoviePantilterBaseViewModel;->k(Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/LiveViewMoviePantilterBaseViewModel;)Lcom/panasonic/avc/cng/core/a/PantiluterCommand;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/ab;->j()Lcom/panasonic/avc/cng/model/c/h;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/PantiluterCommand;->j()Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
     move-result-object v0
 
@@ -66,7 +66,7 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 1943
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/h;->a()Z
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;->a()Z
 
     move-result v0
 
@@ -77,7 +77,7 @@
 
     const-string v1, "delrounddata Error"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 1952
     :goto_0
@@ -96,11 +96,11 @@
 
     .line 1949
     :cond_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b$10;->a:Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b$10;->a:Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/LiveViewMoviePantilterBaseViewModel;
 
     const/4 v1, 0x1
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b;->d(Z)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/LiveViewMoviePantilterBaseViewModel;->d(Z)V
 
     goto :goto_0
 .end method

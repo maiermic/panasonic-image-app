@@ -17,8 +17,8 @@ import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.C1892f;
 import com.panasonic.avc.cng.model.p051c.C1860l;
 import com.panasonic.avc.cng.model.service.C1985b;
-import com.panasonic.avc.cng.model.service.C2253z;
-import com.panasonic.avc.cng.view.parts.C3973ab.C3977a;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
+import com.panasonic.avc.cng.view.parts.SetPickerPosition.C3977a;
 import com.panasonic.avc.cng.view.setting.C5791r;
 
 /* renamed from: com.panasonic.avc.cng.view.parts.ag */
@@ -51,7 +51,7 @@ public class C4004ag extends RelativeLayout implements Callback {
     /* access modifiers changed from: private */
 
     /* renamed from: i */
-    public C3973ab f13484i;
+    public SetPickerPosition f13484i;
 
     /* renamed from: j */
     private LinearLayout f13485j;
@@ -133,7 +133,7 @@ public class C4004ag extends RelativeLayout implements Callback {
             if (C1712b.m6919c() != null) {
                 this.f13490o = C1712b.m6919c().mo4896a();
                 if (this.f13490o != null) {
-                    this.f13491p = C2253z.m9679a(this.f13476a, this.f13490o);
+                    this.f13491p = ServiceFactory.m9679a(this.f13476a, this.f13490o);
                 }
             }
             m16164d();
@@ -179,7 +179,7 @@ public class C4004ag extends RelativeLayout implements Callback {
         } else {
             b = mo9500b(5, 200);
         }
-        this.f13484i = new C3973ab(this.f13476a, b);
+        this.f13484i = new SetPickerPosition(this.f13476a, b);
         this.f13484i.setOnPostionChangedListener(new C3977a() {
             /* renamed from: a */
             public void mo9447a(int i, int i2, boolean z) {

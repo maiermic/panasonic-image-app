@@ -83,7 +83,7 @@
     .line 4210
     iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService$8;->b:Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService;
 
-    new-instance v1, Lcom/panasonic/avc/cng/core/a/ao;
+    new-instance v1, Lcom/panasonic/avc/cng/core/a/StatusCommand;
 
     iget-object v2, p0, Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService$8;->b:Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService;
 
@@ -95,9 +95,9 @@
 
     move-result-object v2
 
-    invoke-direct {v1, v2}, Lcom/panasonic/avc/cng/core/a/ao;-><init>(Ljava/lang/String;)V
+    invoke-direct {v1, v2}, Lcom/panasonic/avc/cng/core/a/StatusCommand;-><init>(Ljava/lang/String;)V
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService;->a(Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService;Lcom/panasonic/avc/cng/core/a/ao;)Lcom/panasonic/avc/cng/core/a/ao;
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService;->a(Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService;Lcom/panasonic/avc/cng/core/a/StatusCommand;)Lcom/panasonic/avc/cng/core/a/StatusCommand;
 
     .line 4211
     new-instance v0, Lcom/panasonic/avc/cng/core/a/d;
@@ -158,11 +158,11 @@
     :goto_1
     iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService$8;->b:Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService;->C(Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService;)Lcom/panasonic/avc/cng/core/a/ao;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService;->C(Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService;)Lcom/panasonic/avc/cng/core/a/StatusCommand;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/ao;->c()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/StatusCommand;->c()Ljava/lang/String;
 
     move-result-object v0
 
@@ -196,7 +196,7 @@
     :cond_4
     iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService$8;->b:Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService;
 
-    new-instance v1, Lcom/panasonic/avc/cng/core/a/ao;
+    new-instance v1, Lcom/panasonic/avc/cng/core/a/StatusCommand;
 
     iget-object v2, p0, Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService$8;->a:Ljava/lang/String;
 
@@ -204,9 +204,9 @@
 
     move-result-object v2
 
-    invoke-direct {v1, v2}, Lcom/panasonic/avc/cng/core/a/ao;-><init>(Ljava/lang/String;)V
+    invoke-direct {v1, v2}, Lcom/panasonic/avc/cng/core/a/StatusCommand;-><init>(Ljava/lang/String;)V
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService;->a(Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService;Lcom/panasonic/avc/cng/core/a/ao;)Lcom/panasonic/avc/cng/core/a/ao;
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService;->a(Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService;Lcom/panasonic/avc/cng/core/a/StatusCommand;)Lcom/panasonic/avc/cng/core/a/StatusCommand;
 
     .line 4216
     new-instance v0, Lcom/panasonic/avc/cng/core/a/d;

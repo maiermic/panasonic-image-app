@@ -43,9 +43,9 @@
     .line 183
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ak$a$1;->a:Lcom/panasonic/avc/cng/view/setting/ak$a;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/ak$a;->a:Lcom/panasonic/avc/cng/view/setting/ak;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/ak$a;->a:Lcom/panasonic/avc/cng/view/setting/SettingBracketViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/ak;->b(Lcom/panasonic/avc/cng/view/setting/ak;)Lcom/panasonic/avc/cng/view/setting/am$h;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/SettingBracketViewModel;->b(Lcom/panasonic/avc/cng/view/setting/SettingBracketViewModel;)Lcom/panasonic/avc/cng/view/setting/am$h;
 
     move-result-object v0
 

@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/model/service/p/a;->j()V
+    value = Lcom/panasonic/avc/cng/model/service/p/WifiService;->j()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/panasonic/avc/cng/model/service/p/a;
+.field final synthetic a:Lcom/panasonic/avc/cng/model/service/p/WifiService;
 
 
 # direct methods
-.method constructor <init>(Lcom/panasonic/avc/cng/model/service/p/a;)V
+.method constructor <init>(Lcom/panasonic/avc/cng/model/service/p/WifiService;)V
     .locals 0
 
     .prologue
     .line 721
-    iput-object p1, p0, Lcom/panasonic/avc/cng/model/service/p/a$7;->a:Lcom/panasonic/avc/cng/model/service/p/a;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/model/service/p/a$7;->a:Lcom/panasonic/avc/cng/model/service/p/WifiService;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -43,9 +43,9 @@
     const/4 v1, 0x0
 
     .line 725
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/p/a$7;->a:Lcom/panasonic/avc/cng/model/service/p/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/p/a$7;->a:Lcom/panasonic/avc/cng/model/service/p/WifiService;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/p/a;->d(Lcom/panasonic/avc/cng/model/service/p/a;)Ljava/lang/Thread;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/p/WifiService;->d(Lcom/panasonic/avc/cng/model/service/p/WifiService;)Ljava/lang/Thread;
 
     move-result-object v0
 
@@ -53,9 +53,9 @@
 
     .line 729
     :try_start_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/p/a$7;->a:Lcom/panasonic/avc/cng/model/service/p/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/p/a$7;->a:Lcom/panasonic/avc/cng/model/service/p/WifiService;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/p/a;->d(Lcom/panasonic/avc/cng/model/service/p/a;)Ljava/lang/Thread;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/p/WifiService;->d(Lcom/panasonic/avc/cng/model/service/p/WifiService;)Ljava/lang/Thread;
 
     move-result-object v0
 
@@ -65,15 +65,15 @@
 
     .line 736
     :goto_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/p/a$7;->a:Lcom/panasonic/avc/cng/model/service/p/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/p/a$7;->a:Lcom/panasonic/avc/cng/model/service/p/WifiService;
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/model/service/p/a;->a(Lcom/panasonic/avc/cng/model/service/p/a;Ljava/lang/Thread;)Ljava/lang/Thread;
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/model/service/p/WifiService;->a(Lcom/panasonic/avc/cng/model/service/p/WifiService;Ljava/lang/Thread;)Ljava/lang/Thread;
 
     .line 739
     :cond_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/p/a$7;->a:Lcom/panasonic/avc/cng/model/service/p/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/p/a$7;->a:Lcom/panasonic/avc/cng/model/service/p/WifiService;
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/model/service/p/a;->b(Lcom/panasonic/avc/cng/model/service/p/a;Ljava/lang/Thread;)Ljava/lang/Thread;
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/model/service/p/WifiService;->b(Lcom/panasonic/avc/cng/model/service/p/WifiService;Ljava/lang/Thread;)Ljava/lang/Thread;
 
     .line 740
     return-void

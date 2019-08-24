@@ -17,7 +17,7 @@ import com.panasonic.avc.cng.application.C1347a;
 import com.panasonic.avc.cng.imageapp.C1701a.C1702a;
 import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.p038a.C1343b;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.util.C2266l;
 import com.panasonic.avc.cng.util.C2274o;
 import com.panasonic.avc.cng.view.liveview.movie.conventional.C3476a;
@@ -29,7 +29,7 @@ import com.panasonic.avc.cng.view.p072a.C2311f;
 import com.panasonic.avc.cng.view.p072a.C2311f.C2312a;
 import com.panasonic.avc.cng.view.p072a.C2316j;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
 import com.panasonic.avc.cng.view.p073b.C2376f.C2378b;
 import com.panasonic.avc.cng.view.parts.C4213l;
 import com.panasonic.avc.cng.view.parts.C4225o;
@@ -112,7 +112,7 @@ public abstract class LiveViewMovieRemoteBaseActivity extends C3476a implements 
 
         /* renamed from: a */
         public void mo8534a() {
-            C2331d.m10114a((Activity) LiveViewMovieRemoteBaseActivity.this, C2328a.ON_PROGRESS, (Bundle) null);
+            DialogFactory.m10114a((Activity) LiveViewMovieRemoteBaseActivity.this, C2328a.ON_PROGRESS, (Bundle) null);
         }
 
         /* renamed from: a */
@@ -120,8 +120,8 @@ public abstract class LiveViewMovieRemoteBaseActivity extends C3476a implements 
             C2328a aVar;
             String format;
             String str = "";
-            if (C2331d.m10125b((Activity) LiveViewMovieRemoteBaseActivity.this, C2328a.ON_PROGRESS)) {
-                C2331d.m10100a((Activity) LiveViewMovieRemoteBaseActivity.this);
+            if (DialogFactory.m10125b((Activity) LiveViewMovieRemoteBaseActivity.this, C2328a.ON_PROGRESS)) {
+                DialogFactory.m10100a((Activity) LiveViewMovieRemoteBaseActivity.this);
             }
             switch (i) {
                 case -40:
@@ -147,28 +147,28 @@ public abstract class LiveViewMovieRemoteBaseActivity extends C3476a implements 
             }
             Bundle bundle = new Bundle();
             bundle.putString(C2378b.MESSAGE_STRING.name(), format);
-            C2331d.m10114a((Activity) LiveViewMovieRemoteBaseActivity.this, aVar, bundle);
+            DialogFactory.m10114a((Activity) LiveViewMovieRemoteBaseActivity.this, aVar, bundle);
         }
 
         /* renamed from: b */
         public void mo8537b() {
-            if (C2331d.m10125b((Activity) LiveViewMovieRemoteBaseActivity.this, C2328a.ON_PROGRESS)) {
-                C2331d.m10100a((Activity) LiveViewMovieRemoteBaseActivity.this);
+            if (DialogFactory.m10125b((Activity) LiveViewMovieRemoteBaseActivity.this, C2328a.ON_PROGRESS)) {
+                DialogFactory.m10100a((Activity) LiveViewMovieRemoteBaseActivity.this);
             }
         }
 
         /* renamed from: c */
         public void mo8539c() {
             if (LiveViewMovieRemoteBaseActivity.this.isLog()) {
-                C2261g.m9770d(LiveViewMovieRemoteBaseActivity.this.GET_TAG(), "OnBeginDisconnect():" + ((Activity) LiveViewMovieRemoteBaseActivity.this._context).getClass().getSimpleName());
+                ImageAppLog.verbose(LiveViewMovieRemoteBaseActivity.this.GET_TAG(), "OnBeginDisconnect():" + ((Activity) LiveViewMovieRemoteBaseActivity.this._context).getClass().getSimpleName());
             }
-            C2331d.m10114a((Activity) LiveViewMovieRemoteBaseActivity.this, C2328a.ON_PROGRESS, (Bundle) null);
+            DialogFactory.m10114a((Activity) LiveViewMovieRemoteBaseActivity.this, C2328a.ON_PROGRESS, (Bundle) null);
         }
 
         /* renamed from: d */
         public void mo8541d() {
-            if (C2331d.m10125b((Activity) LiveViewMovieRemoteBaseActivity.this, C2328a.ON_PROGRESS)) {
-                C2331d.m10100a((Activity) LiveViewMovieRemoteBaseActivity.this);
+            if (DialogFactory.m10125b((Activity) LiveViewMovieRemoteBaseActivity.this, C2328a.ON_PROGRESS)) {
+                DialogFactory.m10100a((Activity) LiveViewMovieRemoteBaseActivity.this);
             }
             if (LiveViewMovieRemoteBaseActivity.this._remoteViewModel != null) {
                 LiveViewMovieRemoteBaseActivity.this._remoteViewModel.mo3205a();
@@ -184,16 +184,16 @@ public abstract class LiveViewMovieRemoteBaseActivity extends C3476a implements 
                 LiveViewMovieRemoteBaseActivity.this._disconnecting = true;
                 switch (i) {
                     case 2:
-                        C2331d.m10114a((Activity) LiveViewMovieRemoteBaseActivity.this, C2328a.ON_DISCONNECT_BY_HIGH_TEMP_FINISH, (Bundle) null);
+                        DialogFactory.m10114a((Activity) LiveViewMovieRemoteBaseActivity.this, C2328a.ON_DISCONNECT_BY_HIGH_TEMP_FINISH, (Bundle) null);
                         return;
                     case 3:
-                        C2331d.m10114a((Activity) LiveViewMovieRemoteBaseActivity.this, C2328a.ON_DISCONNECT_BATTERY_LOW_FINISH, (Bundle) null);
+                        DialogFactory.m10114a((Activity) LiveViewMovieRemoteBaseActivity.this, C2328a.ON_DISCONNECT_BATTERY_LOW_FINISH, (Bundle) null);
                         return;
                     default:
-                        if (C2331d.m10125b((Activity) LiveViewMovieRemoteBaseActivity.this, C2328a.ON_PROGRESS)) {
-                            C2331d.m10100a((Activity) LiveViewMovieRemoteBaseActivity.this);
+                        if (DialogFactory.m10125b((Activity) LiveViewMovieRemoteBaseActivity.this, C2328a.ON_PROGRESS)) {
+                            DialogFactory.m10100a((Activity) LiveViewMovieRemoteBaseActivity.this);
                         }
-                        C2331d.m10114a((Activity) LiveViewMovieRemoteBaseActivity.this, C2328a.ON_DISCONNECT_HOME, (Bundle) null);
+                        DialogFactory.m10114a((Activity) LiveViewMovieRemoteBaseActivity.this, C2328a.ON_DISCONNECT_HOME, (Bundle) null);
                         return;
                 }
             }
@@ -203,10 +203,10 @@ public abstract class LiveViewMovieRemoteBaseActivity extends C3476a implements 
         public void mo8543e() {
             if (!LiveViewMovieRemoteBaseActivity.this._disconnecting) {
                 LiveViewMovieRemoteBaseActivity.this._disconnecting = true;
-                if (C2331d.m10125b((Activity) LiveViewMovieRemoteBaseActivity.this, C2328a.ON_PROGRESS)) {
-                    C2331d.m10100a((Activity) LiveViewMovieRemoteBaseActivity.this);
+                if (DialogFactory.m10125b((Activity) LiveViewMovieRemoteBaseActivity.this, C2328a.ON_PROGRESS)) {
+                    DialogFactory.m10100a((Activity) LiveViewMovieRemoteBaseActivity.this);
                 }
-                C2331d.m10114a((Activity) LiveViewMovieRemoteBaseActivity.this, C2328a.ON_DISCONNECT_HOME, (Bundle) null);
+                DialogFactory.m10114a((Activity) LiveViewMovieRemoteBaseActivity.this, C2328a.ON_DISCONNECT_HOME, (Bundle) null);
             }
         }
 
@@ -218,34 +218,34 @@ public abstract class LiveViewMovieRemoteBaseActivity extends C3476a implements 
         /* renamed from: c */
         public void mo8540c(int i) {
             if (i == 1) {
-                C2331d.m10114a((Activity) LiveViewMovieRemoteBaseActivity.this, C2328a.ON_ERROR_REMAIN_ZERO, (Bundle) null);
+                DialogFactory.m10114a((Activity) LiveViewMovieRemoteBaseActivity.this, C2328a.ON_ERROR_REMAIN_ZERO, (Bundle) null);
             } else if (i == 3) {
-                C2331d.m10114a((Activity) LiveViewMovieRemoteBaseActivity.this, C2328a.ON_ERROR_SD_LOCK_MOVIE, (Bundle) null);
+                DialogFactory.m10114a((Activity) LiveViewMovieRemoteBaseActivity.this, C2328a.ON_ERROR_SD_LOCK_MOVIE, (Bundle) null);
             } else if (i == 4) {
-                C2331d.m10114a((Activity) LiveViewMovieRemoteBaseActivity.this, C2328a.ON_ERROR_MOVIE_RECORD_FAIL, (Bundle) null);
+                DialogFactory.m10114a((Activity) LiveViewMovieRemoteBaseActivity.this, C2328a.ON_ERROR_MOVIE_RECORD_FAIL, (Bundle) null);
             }
         }
 
         /* renamed from: d */
         public void mo8542d(int i) {
             if (i == 1) {
-                C2331d.m10114a((Activity) LiveViewMovieRemoteBaseActivity.this, C2328a.ON_ERROR_REMAIN_ZERO, (Bundle) null);
+                DialogFactory.m10114a((Activity) LiveViewMovieRemoteBaseActivity.this, C2328a.ON_ERROR_REMAIN_ZERO, (Bundle) null);
             } else if (i == 2) {
-                C2331d.m10114a((Activity) LiveViewMovieRemoteBaseActivity.this, C2328a.ON_ERROR_SD_LOCK_PICTURE, (Bundle) null);
+                DialogFactory.m10114a((Activity) LiveViewMovieRemoteBaseActivity.this, C2328a.ON_ERROR_SD_LOCK_PICTURE, (Bundle) null);
             } else if (i == 3) {
-                C2331d.m10114a((Activity) LiveViewMovieRemoteBaseActivity.this, C2328a.ON_ERROR_PIC_CAPTURE_FAIL, (Bundle) null);
+                DialogFactory.m10114a((Activity) LiveViewMovieRemoteBaseActivity.this, C2328a.ON_ERROR_PIC_CAPTURE_FAIL, (Bundle) null);
             }
         }
 
         /* renamed from: g */
         public void mo8545g() {
-            C2331d.m10114a((Activity) LiveViewMovieRemoteBaseActivity.this, C2328a.ON_PROGRESS, (Bundle) null);
+            DialogFactory.m10114a((Activity) LiveViewMovieRemoteBaseActivity.this, C2328a.ON_PROGRESS, (Bundle) null);
         }
 
         /* renamed from: h */
         public void mo8546h() {
-            if (C2331d.m10125b((Activity) LiveViewMovieRemoteBaseActivity.this, C2328a.ON_PROGRESS)) {
-                C2331d.m10100a((Activity) LiveViewMovieRemoteBaseActivity.this);
+            if (DialogFactory.m10125b((Activity) LiveViewMovieRemoteBaseActivity.this, C2328a.ON_PROGRESS)) {
+                DialogFactory.m10100a((Activity) LiveViewMovieRemoteBaseActivity.this);
             }
             LiveViewMovieRemoteBaseActivity.this._remoteViewModel.mo8611a(LiveViewMovieRemoteBaseActivity.this._remoteViewModel.mo8582E(), (Activity) LiveViewMovieRemoteBaseActivity.this._context);
         }
@@ -253,25 +253,25 @@ public abstract class LiveViewMovieRemoteBaseActivity extends C3476a implements 
         /* renamed from: a */
         public void mo8536a(int i, int i2) {
             if (i == 2) {
-                C2331d.m10114a((Activity) LiveViewMovieRemoteBaseActivity.this, C2328a.ON_ERROR_SD_UNSET_MOVIE, (Bundle) null);
+                DialogFactory.m10114a((Activity) LiveViewMovieRemoteBaseActivity.this, C2328a.ON_ERROR_SD_UNSET_MOVIE, (Bundle) null);
             } else if (i == 3) {
-                C2331d.m10114a((Activity) LiveViewMovieRemoteBaseActivity.this, C2328a.ON_ERROR_SD_LOCK_MOVIE, (Bundle) null);
+                DialogFactory.m10114a((Activity) LiveViewMovieRemoteBaseActivity.this, C2328a.ON_ERROR_SD_LOCK_MOVIE, (Bundle) null);
             } else if (i == 4) {
-                C2331d.m10114a((Activity) LiveViewMovieRemoteBaseActivity.this, C2328a.ON_ERROR_SD_REPAIRED_MOVIE, (Bundle) null);
+                DialogFactory.m10114a((Activity) LiveViewMovieRemoteBaseActivity.this, C2328a.ON_ERROR_SD_REPAIRED_MOVIE, (Bundle) null);
             } else if (i2 == 2) {
-                C2331d.m10114a((Activity) LiveViewMovieRemoteBaseActivity.this, C2328a.ON_ERROR_SD_UNSET_PICTURE, (Bundle) null);
+                DialogFactory.m10114a((Activity) LiveViewMovieRemoteBaseActivity.this, C2328a.ON_ERROR_SD_UNSET_PICTURE, (Bundle) null);
             } else if (i2 == 3) {
-                C2331d.m10114a((Activity) LiveViewMovieRemoteBaseActivity.this, C2328a.ON_ERROR_SD_LOCK_PICTURE, (Bundle) null);
+                DialogFactory.m10114a((Activity) LiveViewMovieRemoteBaseActivity.this, C2328a.ON_ERROR_SD_LOCK_PICTURE, (Bundle) null);
             } else if (i2 == 4) {
-                C2331d.m10114a((Activity) LiveViewMovieRemoteBaseActivity.this, C2328a.ON_ERROR_SD_REPAIRED_PICTURE, (Bundle) null);
+                DialogFactory.m10114a((Activity) LiveViewMovieRemoteBaseActivity.this, C2328a.ON_ERROR_SD_REPAIRED_PICTURE, (Bundle) null);
             } else if (i == 1 && i2 == 1) {
-                C2331d.m10100a((Activity) LiveViewMovieRemoteBaseActivity.this);
+                DialogFactory.m10100a((Activity) LiveViewMovieRemoteBaseActivity.this);
             }
         }
 
         /* renamed from: i */
         public void mo8547i() {
-            C2331d.m10114a((Activity) LiveViewMovieRemoteBaseActivity.this, C2328a.ON_PANTILTER_FORBIDDEN_FOR_CHECKING, (Bundle) null);
+            DialogFactory.m10114a((Activity) LiveViewMovieRemoteBaseActivity.this, C2328a.ON_PANTILTER_FORBIDDEN_FOR_CHECKING, (Bundle) null);
         }
     }
 
@@ -286,12 +286,12 @@ public abstract class LiveViewMovieRemoteBaseActivity extends C3476a implements 
 
         /* renamed from: b */
         public void mo6082b() {
-            C2331d.m10114a((Activity) LiveViewMovieRemoteBaseActivity.this, C2328a.ON_NOT_USE_IN_REMOTE_VIEW, (Bundle) null);
+            DialogFactory.m10114a((Activity) LiveViewMovieRemoteBaseActivity.this, C2328a.ON_NOT_USE_IN_REMOTE_VIEW, (Bundle) null);
         }
 
         /* renamed from: c */
         public void mo6083c() {
-            C2331d.m10114a((Activity) LiveViewMovieRemoteBaseActivity.this, C2328a.ON_NOT_USE_IN_REMOTE_VIEW, (Bundle) null);
+            DialogFactory.m10114a((Activity) LiveViewMovieRemoteBaseActivity.this, C2328a.ON_NOT_USE_IN_REMOTE_VIEW, (Bundle) null);
         }
     }
 
@@ -339,7 +339,7 @@ public abstract class LiveViewMovieRemoteBaseActivity extends C3476a implements 
     /* access modifiers changed from: protected */
     public void onDestroy() {
         if (isLog()) {
-            C2261g.m9770d(GET_TAG(), "onDestroy()");
+            ImageAppLog.verbose(GET_TAG(), "onDestroy()");
         }
         super.onDestroy();
     }
@@ -348,7 +348,7 @@ public abstract class LiveViewMovieRemoteBaseActivity extends C3476a implements 
     public void onResume() {
         super.onResume();
         if (isLog()) {
-            C2261g.m9770d(GET_TAG(), "onResume()");
+            ImageAppLog.verbose(GET_TAG(), "onResume()");
         }
         if (this._remoteViewModel != null) {
             if (this._remoteBinder != null) {
@@ -368,7 +368,7 @@ public abstract class LiveViewMovieRemoteBaseActivity extends C3476a implements 
             this._remoteViewModel.mo8628i();
         }
         if (isLog()) {
-            C2261g.m9770d(GET_TAG(), "onPause()");
+            ImageAppLog.verbose(GET_TAG(), "onPause()");
         }
         super.onPause();
     }
@@ -377,7 +377,7 @@ public abstract class LiveViewMovieRemoteBaseActivity extends C3476a implements 
     public void onSaveInstanceState(Bundle bundle) {
         super.onSaveInstanceState(bundle);
         if (isLog()) {
-            C2261g.m9770d(GET_TAG(), "onSaveInstanceState()");
+            ImageAppLog.verbose(GET_TAG(), "onSaveInstanceState()");
         }
         if (this._remoteViewModel != null) {
             this._remoteViewModel.mo6021b(true);
@@ -388,7 +388,7 @@ public abstract class LiveViewMovieRemoteBaseActivity extends C3476a implements 
     /* access modifiers changed from: protected */
     public C2291c GetViewModel() {
         if (isLog()) {
-            C2261g.m9770d(GET_TAG(), "GetViewModel()");
+            ImageAppLog.verbose(GET_TAG(), "GetViewModel()");
         }
         return this._remoteViewModel;
     }
@@ -397,7 +397,7 @@ public abstract class LiveViewMovieRemoteBaseActivity extends C3476a implements 
     public void OnFinishActiviy() {
         if (this._remoteViewModel != null) {
             if (isLog()) {
-                C2261g.m9770d(GET_TAG(), String.format("OnFinishActiviy():mode=%d", new Object[]{Integer.valueOf(this._remoteViewModel.mo8629j())}));
+                ImageAppLog.verbose(GET_TAG(), String.format("OnFinishActiviy():mode=%d", new Object[]{Integer.valueOf(this._remoteViewModel.mo8629j())}));
             }
             this._remoteViewModel.mo8621e(false);
         }
@@ -414,7 +414,7 @@ public abstract class LiveViewMovieRemoteBaseActivity extends C3476a implements 
             return false;
         }
         if (this._remoteViewModel.mo8639t()) {
-            C2331d.m10114a((Activity) this, C2328a.ON_ERROR_NOW_PIC_CAPTURE, (Bundle) null);
+            DialogFactory.m10114a((Activity) this, C2328a.ON_ERROR_NOW_PIC_CAPTURE, (Bundle) null);
             return false;
         } else if (this._remoteViewModel.mo8631l()) {
             return true;
@@ -432,7 +432,7 @@ public abstract class LiveViewMovieRemoteBaseActivity extends C3476a implements 
     /* access modifiers changed from: protected */
     public void onActivityResult(int i, int i2, Intent intent) {
         if (isLog()) {
-            C2261g.m9770d(GET_TAG(), "onActivityResult()");
+            ImageAppLog.verbose(GET_TAG(), "onActivityResult()");
         }
         if (intent.getExtras() != null && !CheckActivityResult(i, i2, intent) && this._remoteViewModel != null) {
             this._remoteViewModel.mo8626h();
@@ -440,14 +440,14 @@ public abstract class LiveViewMovieRemoteBaseActivity extends C3476a implements 
     }
 
     public void OnClickShutter(View view) {
-        C2261g.m9760a(3158018, "");
+        ImageAppLog.m9760a(3158018, "");
         if (this._remoteViewModel != null) {
             this._remoteViewModel.mo8633n();
         }
     }
 
     public void OnClickRec(View view) {
-        C2261g.m9760a(3158017, "");
+        ImageAppLog.m9760a(3158017, "");
         if (this._remoteViewModel != null) {
             this._remoteViewModel.mo8634o();
             if (C2274o.m9896b(this._remoteViewModel.mo8582E()) || C2274o.m9898d(this._remoteViewModel.mo8582E()) || C2274o.m9900f(this._remoteViewModel.mo8582E())) {

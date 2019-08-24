@@ -6,14 +6,14 @@
 
 
 # instance fields
-.field private synthetic a:Lcom/google/android/gms/d/ea;
+.field private synthetic a:Lcom/google/android/gms/d/GoogleApiManager;
 
 
 # direct methods
-.method constructor <init>(Lcom/google/android/gms/d/ea;)V
+.method constructor <init>(Lcom/google/android/gms/d/GoogleApiManager;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/google/android/gms/d/eb;->a:Lcom/google/android/gms/d/ea;
+    iput-object p1, p0, Lcom/google/android/gms/d/eb;->a:Lcom/google/android/gms/d/GoogleApiManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -25,15 +25,15 @@
 .method public final a(Z)V
     .locals 4
 
-    iget-object v0, p0, Lcom/google/android/gms/d/eb;->a:Lcom/google/android/gms/d/ea;
+    iget-object v0, p0, Lcom/google/android/gms/d/eb;->a:Lcom/google/android/gms/d/GoogleApiManager;
 
-    invoke-static {v0}, Lcom/google/android/gms/d/ea;->a(Lcom/google/android/gms/d/ea;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/google/android/gms/d/GoogleApiManager;->a(Lcom/google/android/gms/d/GoogleApiManager;)Landroid/os/Handler;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/google/android/gms/d/eb;->a:Lcom/google/android/gms/d/ea;
+    iget-object v1, p0, Lcom/google/android/gms/d/eb;->a:Lcom/google/android/gms/d/GoogleApiManager;
 
-    invoke-static {v1}, Lcom/google/android/gms/d/ea;->a(Lcom/google/android/gms/d/ea;)Landroid/os/Handler;
+    invoke-static {v1}, Lcom/google/android/gms/d/GoogleApiManager;->a(Lcom/google/android/gms/d/GoogleApiManager;)Landroid/os/Handler;
 
     move-result-object v1
 

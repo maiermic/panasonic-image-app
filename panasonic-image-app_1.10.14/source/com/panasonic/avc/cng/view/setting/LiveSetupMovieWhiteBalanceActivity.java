@@ -7,14 +7,14 @@ import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.p051c.C1860l;
 import com.panasonic.avc.cng.model.service.C1985b;
-import com.panasonic.avc.cng.model.service.C2253z;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
 import com.panasonic.avc.cng.view.liveview.movie.conventional.C3491c;
 import com.panasonic.avc.cng.view.liveview.movie.conventional.C3498d;
 import com.panasonic.avc.cng.view.p072a.C2316j;
 import com.panasonic.avc.cng.view.parts.C4003af;
 import com.panasonic.avc.cng.view.parts.C4015ai;
 import com.panasonic.avc.cng.view.parts.C4015ai.C4019a;
-import com.panasonic.avc.cng.view.setting.C5838y.C5845b;
+import com.panasonic.avc.cng.view.setting.LiveSetupMovieWhiteBalanceViewModel.C5845b;
 
 public class LiveSetupMovieWhiteBalanceActivity extends C3491c {
     /* access modifiers changed from: private */
@@ -24,7 +24,7 @@ public class LiveSetupMovieWhiteBalanceActivity extends C3491c {
     /* access modifiers changed from: private */
 
     /* renamed from: h */
-    public C5838y f16176h = null;
+    public LiveSetupMovieWhiteBalanceViewModel f16176h = null;
 
     /* renamed from: i */
     private C5058a f16177i;
@@ -91,10 +91,10 @@ public class LiveSetupMovieWhiteBalanceActivity extends C3491c {
         mo8277a(this.f11188e, this.f11189f);
         this.f11185b = new C3498d();
         this.f11185b.mo8305b(this, this.f11184a);
-        this.f16176h = (C5838y) C2316j.m10030a("LiveSetupMovieWhiteBalanceViewModel");
+        this.f16176h = (LiveSetupMovieWhiteBalanceViewModel) C2316j.m10030a("LiveSetupMovieWhiteBalanceViewModel");
         this.f16177i = new C5058a();
         if (this.f16176h == null) {
-            this.f16176h = new C5838y(this._context, this._handler, this.f16177i);
+            this.f16176h = new LiveSetupMovieWhiteBalanceViewModel(this._context, this._handler, this.f16177i);
             this.f16176h.mo12769a(this._context, this._handler, this.f16177i);
             C2316j.m10032a("LiveSetupMovieWhiteBalanceViewModel", this.f16176h);
         } else {
@@ -164,7 +164,7 @@ public class LiveSetupMovieWhiteBalanceActivity extends C3491c {
 
     /* access modifiers changed from: protected */
     public void onActivityResult(int i, int i2, Intent intent) {
-        C1985b a = C2253z.m9679a(this._context, C1712b.m6919c().mo4896a());
+        C1985b a = ServiceFactory.m9679a(this._context, C1712b.m6919c().mo4896a());
         if (a != null) {
             C1860l lVar = null;
             if (a != null) {

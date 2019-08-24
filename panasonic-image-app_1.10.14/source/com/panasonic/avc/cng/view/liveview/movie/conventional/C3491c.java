@@ -10,8 +10,8 @@ import com.panasonic.avc.cng.application.C1347a;
 import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.C1897j.C1905h;
 import com.panasonic.avc.cng.model.C1897j.C1906i;
-import com.panasonic.avc.cng.model.p051c.C1846e;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.model.p051c.CameraStatus;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.view.cameraconnect.GuidanceMenuActivity;
 import com.panasonic.avc.cng.view.liveview.movie.conventional.C3501e.C3530c;
 import com.panasonic.avc.cng.view.liveview.p075a.C2939a;
@@ -21,7 +21,7 @@ import com.panasonic.avc.cng.view.p072a.C2311f;
 import com.panasonic.avc.cng.view.p072a.C2311f.C2312a;
 import com.panasonic.avc.cng.view.p072a.C2316j;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
 import com.panasonic.avc.cng.view.setting.LiveSetupMovieFandSSActivity;
 import com.panasonic.avc.cng.view.setting.LiveSetupMovieGainActivity;
 import com.panasonic.avc.cng.view.setting.LiveSetupMovieWhiteBalanceActivity;
@@ -55,13 +55,13 @@ public class C3491c extends C2939a {
         /* renamed from: a */
         public void mo8288a(int i) {
             if (i == 1) {
-                C2331d.m10114a((Activity) C3491c.this, C2328a.ON_ERROR_REMAIN_ZERO, (Bundle) null);
+                DialogFactory.m10114a((Activity) C3491c.this, C2328a.ON_ERROR_REMAIN_ZERO, (Bundle) null);
             } else if (i == 2) {
-                C2331d.m10114a((Activity) C3491c.this, C2328a.ON_ERROR_SD_LOCK_MOVIE, (Bundle) null);
+                DialogFactory.m10114a((Activity) C3491c.this, C2328a.ON_ERROR_SD_LOCK_MOVIE, (Bundle) null);
             } else if (i == 3) {
-                C2331d.m10114a((Activity) C3491c.this, C2328a.ON_ERROR_MOVIE_RECORD_FAIL, (Bundle) null);
+                DialogFactory.m10114a((Activity) C3491c.this, C2328a.ON_ERROR_MOVIE_RECORD_FAIL, (Bundle) null);
             } else {
-                C2331d.m10114a((Activity) C3491c.this, C2328a.ON_ERROR_MOVIE_RECORD_FAIL, (Bundle) null);
+                DialogFactory.m10114a((Activity) C3491c.this, C2328a.ON_ERROR_MOVIE_RECORD_FAIL, (Bundle) null);
             }
         }
 
@@ -71,17 +71,17 @@ public class C3491c extends C2939a {
                 return;
             }
             if (i == 2) {
-                C2331d.m10114a((Activity) C3491c.this, C2328a.ON_ERROR_SD_UNSET_MOVIE, (Bundle) null);
+                DialogFactory.m10114a((Activity) C3491c.this, C2328a.ON_ERROR_SD_UNSET_MOVIE, (Bundle) null);
             } else if (i == 3) {
-                C2331d.m10114a((Activity) C3491c.this, C2328a.ON_ERROR_SD_LOCK_MOVIE, (Bundle) null);
+                DialogFactory.m10114a((Activity) C3491c.this, C2328a.ON_ERROR_SD_LOCK_MOVIE, (Bundle) null);
             } else if (i == 4) {
-                C2331d.m10114a((Activity) C3491c.this, C2328a.ON_ERROR_SD_REPAIRED_MOVIE, (Bundle) null);
+                DialogFactory.m10114a((Activity) C3491c.this, C2328a.ON_ERROR_SD_REPAIRED_MOVIE, (Bundle) null);
             } else if (i == 5) {
-                C2331d.m10114a((Activity) C3491c.this, C2328a.ON_ERROR_SD_WRITE_SPEED, (Bundle) null);
+                DialogFactory.m10114a((Activity) C3491c.this, C2328a.ON_ERROR_SD_WRITE_SPEED, (Bundle) null);
             } else if (i == 6) {
-                C2331d.m10114a((Activity) C3491c.this, C2328a.ON_ERROR_SD_CARD_MOVIE, (Bundle) null);
+                DialogFactory.m10114a((Activity) C3491c.this, C2328a.ON_ERROR_SD_CARD_MOVIE, (Bundle) null);
             } else if (i == 1) {
-                C2331d.m10100a((Activity) C3491c.this);
+                DialogFactory.m10100a((Activity) C3491c.this);
             }
         }
 
@@ -89,7 +89,7 @@ public class C3491c extends C2939a {
         public void mo8287a() {
             C3491c.this._cameraUtil.mo6032a((Runnable) new Runnable() {
                 public void run() {
-                    C2331d.m10114a((Activity) C3491c.this, C2328a.ON_PROGRESS, (Bundle) null);
+                    DialogFactory.m10114a((Activity) C3491c.this, C2328a.ON_PROGRESS, (Bundle) null);
                 }
             });
         }
@@ -98,7 +98,7 @@ public class C3491c extends C2939a {
         public void mo8293b() {
             C3491c.this._cameraUtil.mo6032a((Runnable) new Runnable() {
                 public void run() {
-                    C2331d.m10100a((Activity) C3491c.this);
+                    DialogFactory.m10100a((Activity) C3491c.this);
                 }
             });
         }
@@ -107,14 +107,14 @@ public class C3491c extends C2939a {
         public void mo8295c() {
             C3491c.this._cameraUtil.mo6032a((Runnable) new Runnable() {
                 public void run() {
-                    C2331d.m10100a((Activity) C3491c.this);
-                    C2331d.m10114a((Activity) C3491c.this, C2328a.ON_DISCONNECT_NO_FINISH, (Bundle) null);
+                    DialogFactory.m10100a((Activity) C3491c.this);
+                    DialogFactory.m10114a((Activity) C3491c.this, C2328a.ON_DISCONNECT_NO_FINISH, (Bundle) null);
                 }
             });
         }
 
         /* renamed from: a */
-        public void mo8290a(C1846e eVar) {
+        public void mo8290a(CameraStatus eVar) {
             C3491c.this.mo8278a(eVar);
         }
 
@@ -142,7 +142,7 @@ public class C3491c extends C2939a {
         public void mo8297e() {
             C3491c.this._cameraUtil.mo6032a((Runnable) new Runnable() {
                 public void run() {
-                    C2331d.m10114a((Activity) C3491c.this, C2328a.ON_CANNOT_CHANGE_SETUP, (Bundle) null);
+                    DialogFactory.m10114a((Activity) C3491c.this, C2328a.ON_CANNOT_CHANGE_SETUP, (Bundle) null);
                     if (C3491c.this.f11184a != null) {
                         C3491c.this.f11184a.f11242Q.mo3216a(Boolean.valueOf(false));
                     }
@@ -170,10 +170,10 @@ public class C3491c extends C2939a {
         /* renamed from: d */
         private boolean m13872d() {
             if (C3491c.this.f11184a.mo8327m()) {
-                C2331d.m10114a((Activity) C3491c.this, C2328a.ON_ERROR_NOW_MOVIE_RECORDING, (Bundle) null);
+                DialogFactory.m10114a((Activity) C3491c.this, C2328a.ON_ERROR_NOW_MOVIE_RECORDING, (Bundle) null);
                 return false;
             } else if (C3491c.this.f11184a.mo8328n() || C3491c.this.f11184a.mo8329o()) {
-                C2331d.m10114a((Activity) C3491c.this, C2328a.ON_ERROR_NOW_PIC_CAPTURE, (Bundle) null);
+                DialogFactory.m10114a((Activity) C3491c.this, C2328a.ON_ERROR_NOW_PIC_CAPTURE, (Bundle) null);
                 return false;
             } else if (C3491c.this.f11184a.mo8330p()) {
                 return true;
@@ -281,7 +281,7 @@ public class C3491c extends C2939a {
     /* access modifiers changed from: protected */
     public boolean IsEnableOptionMenu() {
         if (this.f11184a.mo8328n()) {
-            C2331d.m10114a((Activity) this, C2328a.ON_ERROR_NOW_PIC_CAPTURE, (Bundle) null);
+            DialogFactory.m10114a((Activity) this, C2328a.ON_ERROR_NOW_PIC_CAPTURE, (Bundle) null);
             return false;
         } else if (!this.f11184a.mo8321g()) {
             return false;
@@ -301,7 +301,7 @@ public class C3491c extends C2939a {
     }
 
     public void OnClickRec(View view) {
-        C2261g.m9760a(3158017, "");
+        ImageAppLog.m9760a(3158017, "");
         if (this.f11184a != null) {
             this.f11184a.mo8323i();
         }
@@ -320,19 +320,19 @@ public class C3491c extends C2939a {
     }
 
     public void onClickGainButton(View view) {
-        C2261g.m9760a(3158045, "");
+        ImageAppLog.m9760a(3158045, "");
         startActivityForResult(new Intent(this._context, LiveSetupMovieGainActivity.class), 7);
         overridePendingTransition(0, 0);
     }
 
     public void onClickWhiteBalanceButton(View view) {
-        C2261g.m9760a(3158046, "");
+        ImageAppLog.m9760a(3158046, "");
         startActivityForResult(new Intent(this._context, LiveSetupMovieWhiteBalanceActivity.class), 7);
         overridePendingTransition(0, 0);
     }
 
     public void onClickIrisShtrsButton(View view) {
-        C2261g.m9760a(3158047, "");
+        ImageAppLog.m9760a(3158047, "");
         startActivityForResult(new Intent(this._context, LiveSetupMovieFandSSActivity.class), 7);
         overridePendingTransition(0, 0);
     }
@@ -358,7 +358,7 @@ public class C3491c extends C2939a {
 
     /* access modifiers changed from: protected */
     /* renamed from: a */
-    public void mo8278a(C1846e eVar) {
+    public void mo8278a(CameraStatus eVar) {
     }
 
     /* access modifiers changed from: protected */

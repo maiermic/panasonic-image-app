@@ -46,7 +46,7 @@
     :try_start_0
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ah$5;->a:Lcom/panasonic/avc/cng/view/setting/ah;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/ah;->f:Lcom/panasonic/avc/cng/core/c/s;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/ah;->f:Lcom/panasonic/avc/cng/core/c/Picmate;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/ah$5;->a:Lcom/panasonic/avc/cng/view/setting/ah;
 
@@ -76,7 +76,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v0, v2, v3, v1, v4}, Lcom/panasonic/avc/cng/core/c/s;->a(JLjava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, v2, v3, v1, v4}, Lcom/panasonic/avc/cng/core/c/Picmate;->a(JLjava/lang/String;Ljava/lang/String;)V
 
     .line 139
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ah$5;->a:Lcom/panasonic/avc/cng/view/setting/ah;

@@ -13,7 +13,7 @@ import com.panasonic.avc.cng.core.p042b.p045c.C1593f;
 import com.panasonic.avc.cng.core.p042b.p045c.C1593f.C1599a;
 import com.panasonic.avc.cng.core.p042b.p045c.C1600g;
 import com.panasonic.avc.cng.model.service.p055b.C2003c;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.util.C2266l;
 import java.nio.ByteBuffer;
 import java.util.List;
@@ -220,7 +220,7 @@ public class C1545a {
 
             /* renamed from: c */
             public void mo3848c() {
-                C2261g.m9771e(C1545a.f4292a, String.format("OnEndOfStream(): video", new Object[0]));
+                ImageAppLog.info(C1545a.f4292a, String.format("OnEndOfStream(): video", new Object[0]));
                 C1545a.this.f4304m = true;
                 if (C1545a.this.f4295d != null) {
                     C1545a.this.f4295d.mo3905c();
@@ -292,7 +292,7 @@ public class C1545a {
 
             /* renamed from: a */
             public void mo3849a() {
-                C2261g.m9771e(C1545a.f4292a, String.format("OnEndOfStream(): audio", new Object[0]));
+                ImageAppLog.info(C1545a.f4292a, String.format("OnEndOfStream(): audio", new Object[0]));
                 if (C1545a.this.f4295d != null) {
                     C1545a.this.f4295d.mo3901a();
                     C1545a.this.f4295d = null;

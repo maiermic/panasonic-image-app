@@ -1,5 +1,5 @@
 .class public Lcom/panasonic/avc/cng/view/play/multiphotoframe/m;
-.super Lcom/panasonic/avc/cng/view/play/multiphotoframe/n;
+.super Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameSelectPictureViewModel;
 .source "SourceFile"
 
 
@@ -74,7 +74,7 @@
     const/4 v2, 0x0
 
     .line 43
-    invoke-direct {p0, p1, p2}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/n;-><init>(Landroid/content/Context;Landroid/os/Handler;)V
+    invoke-direct {p0, p1, p2}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameSelectPictureViewModel;-><init>(Landroid/content/Context;Landroid/os/Handler;)V
 
     .line 25
     const-string v0, "0"
@@ -150,7 +150,7 @@
     const/4 v4, 0x1
 
     .line 107
-    new-instance v0, Lcom/panasonic/avc/cng/view/parts/t;
+    new-instance v0, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/m;->a:Landroid/content/Context;
 
@@ -158,22 +158,22 @@
 
     iget-object v3, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/m;->m:Lcom/panasonic/avc/cng/view/parts/t$e;
 
-    invoke-direct {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/parts/t;-><init>(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/parts/t$e;)V
+    invoke-direct {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;-><init>(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/parts/t$e;)V
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/m;->l:Lcom/panasonic/avc/cng/view/parts/t;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/m;->l:Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
     .line 110
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/m;->l:Lcom/panasonic/avc/cng/view/parts/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/m;->l:Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
-    invoke-virtual {v0, v4}, Lcom/panasonic/avc/cng/view/parts/t;->a(I)V
+    invoke-virtual {v0, v4}, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->a(I)V
 
     .line 111
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/m;->l:Lcom/panasonic/avc/cng/view/parts/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/m;->l:Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
-    invoke-virtual {v0, v4}, Lcom/panasonic/avc/cng/view/parts/t;->b(Z)V
+    invoke-virtual {v0, v4}, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->b(Z)V
 
     .line 114
-    invoke-static {}, Lcom/panasonic/avc/cng/model/service/z;->f()Lcom/panasonic/avc/cng/model/service/a;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->f()Lcom/panasonic/avc/cng/model/service/a;
 
     move-result-object v0
 
@@ -193,17 +193,17 @@
     invoke-virtual {p0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/m;->c()V
 
     .line 93
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/m;->l:Lcom/panasonic/avc/cng/view/parts/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/m;->l:Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/parts/t;->a()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->a()V
 
     .line 96
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/m;->C:Lcom/panasonic/avc/cng/model/service/a;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/z;->a(Lcom/panasonic/avc/cng/model/service/a;)V
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->a(Lcom/panasonic/avc/cng/model/service/a;)V
 
     .line 99
-    invoke-super {p0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/n;->a()V
+    invoke-super {p0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameSelectPictureViewModel;->a()V
 
     .line 100
     return-void
@@ -226,7 +226,7 @@
     iput-object p4, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/m;->k:Lcom/panasonic/avc/cng/view/play/multiphotoframe/n$b;
 
     .line 63
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/m;->l:Lcom/panasonic/avc/cng/view/parts/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/m;->l:Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/m;->a:Landroid/content/Context;
 
@@ -234,7 +234,7 @@
 
     iget-object v3, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/m;->m:Lcom/panasonic/avc/cng/view/parts/t$e;
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/parts/t;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/parts/t$e;)V
+    invoke-virtual {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/parts/t$e;)V
 
     .line 64
     return-void
@@ -256,19 +256,19 @@
 
     .prologue
     .line 215
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/m;->l:Lcom/panasonic/avc/cng/view/parts/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/m;->l:Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
     if-eqz v0, :cond_0
 
     .line 217
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/m;->l:Lcom/panasonic/avc/cng/view/parts/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/m;->l:Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
-    invoke-virtual {v0, p1}, Lcom/panasonic/avc/cng/view/parts/t;->g(I)Z
+    invoke-virtual {v0, p1}, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->g(I)Z
 
     .line 219
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/m;->l:Lcom/panasonic/avc/cng/view/parts/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/m;->l:Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/parts/t;->o()I
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->o()I
 
     move-result v0
 
@@ -301,9 +301,9 @@
     invoke-virtual {v1, v0}, Lcom/panasonic/avc/cng/a/c;->a(Ljava/lang/Object;)V
 
     .line 224
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/m;->l:Lcom/panasonic/avc/cng/view/parts/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/m;->l:Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
-    invoke-virtual {v0, p1}, Lcom/panasonic/avc/cng/view/parts/t;->c(I)V
+    invoke-virtual {v0, p1}, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->c(I)V
 
     .line 227
     new-instance v0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/m$1;
@@ -389,9 +389,9 @@
 
     .line 84
     :cond_4
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/m;->l:Lcom/panasonic/avc/cng/view/parts/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/m;->l:Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/parts/t;->c()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->c()V
 
     .line 85
     return-void
@@ -507,11 +507,11 @@
 
     .prologue
     .line 145
-    invoke-virtual {p0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/m;->k()Lcom/panasonic/avc/cng/view/parts/t;
+    invoke-virtual {p0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/m;->k()Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/parts/t;->w()Ljava/util/List;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->w()Ljava/util/List;
 
     move-result-object v0
 
@@ -533,26 +533,26 @@
 
     .prologue
     .line 176
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/m;->l:Lcom/panasonic/avc/cng/view/parts/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/m;->l:Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
     if-eqz v0, :cond_0
 
     .line 177
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/m;->l:Lcom/panasonic/avc/cng/view/parts/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/m;->l:Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/parts/t;->m()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->m()V
 
     .line 179
     :cond_0
     return-void
 .end method
 
-.method public k()Lcom/panasonic/avc/cng/view/parts/t;
+.method public k()Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
     .locals 1
 
     .prologue
     .line 187
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/m;->l:Lcom/panasonic/avc/cng/view/parts/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/m;->l:Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
     return-object v0
 .end method
@@ -580,24 +580,24 @@
     if-eqz v0, :cond_0
 
     .line 199
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/m;->l:Lcom/panasonic/avc/cng/view/parts/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/m;->l:Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/parts/t;->g()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->g()V
 
     .line 203
     :cond_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/m;->l:Lcom/panasonic/avc/cng/view/parts/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/m;->l:Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/parts/t;->h()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->h()V
 
     .line 206
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/m;->l:Lcom/panasonic/avc/cng/view/parts/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/m;->l:Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
     const/4 v1, 0x1
 
     iget-object v2, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/m;->E:Ljava/lang/String;
 
-    invoke-virtual {v0, v1, v2}, Lcom/panasonic/avc/cng/view/parts/t;->a(ILjava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->a(ILjava/lang/String;)V
 
     .line 207
     return-void

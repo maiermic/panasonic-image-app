@@ -24,9 +24,9 @@ import com.panasonic.avc.cng.model.p051c.C1860l;
 import com.panasonic.avc.cng.model.p052d.C1879a;
 import com.panasonic.avc.cng.model.service.C1985b;
 import com.panasonic.avc.cng.model.service.C1985b.C1986a;
-import com.panasonic.avc.cng.model.service.C2253z;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
 import com.panasonic.avc.cng.p038a.C1343b;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.view.parts.C4213l;
 import com.panasonic.avc.cng.view.parts.C4225o;
 import com.panasonic.avc.cng.view.parts.C4230p;
@@ -34,7 +34,7 @@ import com.panasonic.avc.cng.view.parts.VerticalSeekBar;
 import com.panasonic.avc.cng.view.parts.VerticalSeekBar.C3969a;
 import com.panasonic.avc.cng.view.setting.C5541am.C5563o;
 
-public class LiveSetupLumixMirrorlessSliderBarActivity extends C5804u {
+public class LiveSetupLumixMirrorlessSliderBarActivity extends LiveSetupLumixMirrorlessBaseActivity {
     /* access modifiers changed from: private */
 
     /* renamed from: A */
@@ -101,7 +101,7 @@ public class LiveSetupLumixMirrorlessSliderBarActivity extends C5804u {
         }
         if (C1712b.m6919c() != null) {
             if (a != null) {
-                this.f16146q = C2253z.m9679a(this._context, a);
+                this.f16146q = ServiceFactory.m9679a(this._context, a);
             }
             this.f16146q.mo5185a((C1986a) new C1986a() {
                 /* renamed from: a */
@@ -143,7 +143,7 @@ public class LiveSetupLumixMirrorlessSliderBarActivity extends C5804u {
                                 spinner.setPrompt(LiveSetupLumixMirrorlessSliderBarActivity.this.m19494b("title_exposure3_step"));
                                 spinner.setOnItemSelectedListener(new OnItemSelectedListener() {
                                     public void onItemSelected(AdapterView<?> adapterView, View view, int i, long j) {
-                                        C2261g.m9769c("Test", "_userIsInteracting:" + LiveSetupLumixMirrorlessSliderBarActivity.this.f16144B);
+                                        ImageAppLog.error("Test", "_userIsInteracting:" + LiveSetupLumixMirrorlessSliderBarActivity.this.f16144B);
                                         if (LiveSetupLumixMirrorlessSliderBarActivity.this.f16144B) {
                                             if (LiveSetupLumixMirrorlessSliderBarActivity.this.f16145n != null) {
                                                 LiveSetupLumixMirrorlessSliderBarActivity.this.f16145n.mo12735b(i);

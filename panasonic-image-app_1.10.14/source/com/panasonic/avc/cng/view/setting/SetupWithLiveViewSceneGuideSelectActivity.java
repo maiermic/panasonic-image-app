@@ -22,13 +22,13 @@ import com.panasonic.avc.cng.model.C1892f;
 import com.panasonic.avc.cng.model.p051c.C1860l;
 import com.panasonic.avc.cng.model.p052d.C1879a;
 import com.panasonic.avc.cng.model.service.C1985b;
-import com.panasonic.avc.cng.model.service.C2253z;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
 import com.panasonic.avc.cng.view.parts.C4267y;
-import com.panasonic.avc.cng.view.setting.C5537al.C5540a;
-import com.panasonic.avc.cng.view.setting.C5651aw.C5657b;
-import com.panasonic.avc.cng.view.setting.C5804u.C5806a;
+import com.panasonic.avc.cng.view.setting.SettingMenuBaseActivity.C5540a;
+import com.panasonic.avc.cng.view.setting.SetupWithLiveViewSceneGuideSelectViewModel.C5657b;
+import com.panasonic.avc.cng.view.setting.LiveSetupLumixMirrorlessBaseActivity.C5806a;
 import java.util.ArrayList;
 
 public class SetupWithLiveViewSceneGuideSelectActivity extends C5608at {
@@ -69,7 +69,7 @@ public class SetupWithLiveViewSceneGuideSelectActivity extends C5608at {
     /* access modifiers changed from: private */
 
     /* renamed from: l */
-    public C5651aw f16856l = null;
+    public SetupWithLiveViewSceneGuideSelectViewModel f16856l = null;
     /* access modifiers changed from: private */
 
     /* renamed from: m */
@@ -129,12 +129,12 @@ public class SetupWithLiveViewSceneGuideSelectActivity extends C5608at {
         if (C1712b.m6919c() != null) {
             this.f16847B = C1712b.m6919c().mo4896a();
             if (this.f16847B != null) {
-                this.f16848C = C2253z.m9679a(this._context, this.f16847B);
+                this.f16848C = ServiceFactory.m9679a(this._context, this.f16847B);
             }
         }
         this.f16853H = new ArrayList<>();
         this.f16865w = new C5418a();
-        this.f16856l = new C5651aw(this._context, this._handler, this.f17351b, this.f17352c, this.f16865w);
+        this.f16856l = new SetupWithLiveViewSceneGuideSelectViewModel(this._context, this._handler, this.f17351b, this.f17352c, this.f16865w);
         this.f16849D = this.f16856l.mo12469i();
         m20286i();
     }
@@ -237,7 +237,7 @@ public class SetupWithLiveViewSceneGuideSelectActivity extends C5608at {
     }
 
     public void OnClickRec(View view) {
-        C2261g.m9760a(3158017, "");
+        ImageAppLog.m9760a(3158017, "");
         this._resultBundle.putBoolean("SceneGuideRec", true);
         finish();
     }

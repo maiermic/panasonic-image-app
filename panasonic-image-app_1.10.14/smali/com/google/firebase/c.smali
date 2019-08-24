@@ -19,7 +19,7 @@
 .method public final a(Z)V
     .locals 0
 
-    invoke-static {p1}, Lcom/google/firebase/a;->a(Z)V
+    invoke-static {p1}, Lcom/google/firebase/FirebaseApp;->a(Z)V
 
     return-void
 .end method

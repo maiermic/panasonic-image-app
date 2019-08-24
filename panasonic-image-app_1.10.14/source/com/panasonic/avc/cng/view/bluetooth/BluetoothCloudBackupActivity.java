@@ -15,12 +15,12 @@ import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.service.C2137j;
 import com.panasonic.avc.cng.model.service.C2137j.C2138a;
-import com.panasonic.avc.cng.model.service.C2253z;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.util.C2266l;
 import com.panasonic.avc.cng.view.p072a.C2316j;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
 import com.panasonic.avc.cng.view.parts.C4244s;
 import com.panasonic.avc.cng.view.setting.C5741i;
 import java.util.Arrays;
@@ -31,7 +31,7 @@ import java.util.UUID;
 public class BluetoothCloudBackupActivity extends C5741i {
 
     /* renamed from: a */
-    public static final String f7711a = C2527a.class.getSimpleName();
+    public static final String f7711a = BluetoothCloudBackupViewModel.class.getSimpleName();
     /* access modifiers changed from: private */
 
     /* renamed from: A */
@@ -49,7 +49,7 @@ public class BluetoothCloudBackupActivity extends C5741i {
     private C2397a f7715c;
 
     /* renamed from: d */
-    private C2527a f7716d;
+    private BluetoothCloudBackupViewModel f7716d;
     /* access modifiers changed from: private */
 
     /* renamed from: e */
@@ -146,13 +146,13 @@ public class BluetoothCloudBackupActivity extends C5741i {
 
         /* renamed from: b */
         public void mo5669b() {
-            C2261g.m9763a("BluetoothCloudBackupActivity", "onBleConnectStart");
+            ImageAppLog.debug("BluetoothCloudBackupActivity", "onBleConnectStart");
             BluetoothCloudBackupActivity.this.f7733u = "Connecting";
         }
 
         /* renamed from: a */
         public void mo5668a(boolean z) {
-            C2261g.m9763a("BluetoothCloudBackupActivity", "onBleConnected");
+            ImageAppLog.debug("BluetoothCloudBackupActivity", "onBleConnected");
             BluetoothCloudBackupActivity.this.f7733u = "Connected";
             if (BluetoothCloudBackupActivity.this.f7714b != null && BluetoothCloudBackupActivity.this.f7728p) {
                 byte[] a = C2266l.m9808a("4D454930010010008001" + PreferenceManager.getDefaultSharedPreferences(BluetoothCloudBackupActivity.this.getApplicationContext()).getString("Dlna_UUID_Seed", ""));
@@ -165,14 +165,14 @@ public class BluetoothCloudBackupActivity extends C5741i {
 
         /* renamed from: a */
         public void mo5662a(int i) {
-            C2261g.m9769c("BluetoothCloudBackupActivity", "onBleDisconnected");
+            ImageAppLog.error("BluetoothCloudBackupActivity", "onBleDisconnected");
             BluetoothCloudBackupActivity.this.f7733u = "Disconnected";
             BluetoothCloudBackupActivity.this.f7737y = false;
             if (i != 133 && i != 62) {
                 if (!BluetoothCloudBackupActivity.this.f7736x) {
                     BluetoothCloudBackupActivity.this._handler.post(new Runnable() {
                         public void run() {
-                            C2331d.m10100a((Activity) BluetoothCloudBackupActivity.this);
+                            DialogFactory.m10100a((Activity) BluetoothCloudBackupActivity.this);
                             BluetoothCloudBackupActivity.this.f7717e.setText(BluetoothCloudBackupActivity.this._context.getString(R.string.msg_cloud_no_connecting));
                             BluetoothCloudBackupActivity.this.f7719g.setText("");
                             BluetoothCloudBackupActivity.this.f7721i.setText(BluetoothCloudBackupActivity.this._context.getString(R.string.cmn_btn_close));
@@ -196,7 +196,7 @@ public class BluetoothCloudBackupActivity extends C5741i {
 
         /* renamed from: d */
         public void mo5672d() {
-            C2261g.m9769c("BluetoothCloudBackupActivity", "onBleConnectError");
+            ImageAppLog.error("BluetoothCloudBackupActivity", "onBleConnectError");
             BluetoothCloudBackupActivity.this.f7733u = "Disconnected";
             BluetoothCloudBackupActivity.this.f7712A = false;
             BluetoothCloudBackupActivity.this.f7713B = 0;
@@ -207,7 +207,7 @@ public class BluetoothCloudBackupActivity extends C5741i {
             }
             BluetoothCloudBackupActivity.this._handler.post(new Runnable() {
                 public void run() {
-                    C2331d.m10100a((Activity) BluetoothCloudBackupActivity.this);
+                    DialogFactory.m10100a((Activity) BluetoothCloudBackupActivity.this);
                     BluetoothCloudBackupActivity.this.f7717e.setText(BluetoothCloudBackupActivity.this._context.getString(R.string.msg_cloud_no_connecting));
                     BluetoothCloudBackupActivity.this.f7719g.setText(BluetoothCloudBackupActivity.this._context.getString(R.string.msg_cloud_backup_communicate_fail));
                     BluetoothCloudBackupActivity.this.f7721i.setText(BluetoothCloudBackupActivity.this._context.getString(R.string.cmn_btn_ok));
@@ -219,13 +219,13 @@ public class BluetoothCloudBackupActivity extends C5741i {
 
         /* renamed from: a */
         public void mo5663a(final BluetoothDevice bluetoothDevice, final String str, String str2, String str3) {
-            C2261g.m9763a("BluetoothCloudBackupActivity", "onBleScanResult");
+            ImageAppLog.debug("BluetoothCloudBackupActivity", "onBleScanResult");
             if (str != null) {
-                C2261g.m9769c("BluetoothCloudBackupActivity", "onBleScanResult");
-                C2261g.m9769c("BluetoothCloudBackupActivity", "devName:" + str);
-                C2261g.m9769c("BluetoothCloudBackupActivity", "publicAddress:" + str2);
-                C2261g.m9769c("BluetoothCloudBackupActivity", "state:" + str3);
-                C2261g.m9769c("BluetoothCloudBackupActivity", "_isStopReasonComing:" + BluetoothCloudBackupActivity.this.f7736x);
+                ImageAppLog.error("BluetoothCloudBackupActivity", "onBleScanResult");
+                ImageAppLog.error("BluetoothCloudBackupActivity", "devName:" + str);
+                ImageAppLog.error("BluetoothCloudBackupActivity", "publicAddress:" + str2);
+                ImageAppLog.error("BluetoothCloudBackupActivity", "state:" + str3);
+                ImageAppLog.error("BluetoothCloudBackupActivity", "_isStopReasonComing:" + BluetoothCloudBackupActivity.this.f7736x);
                 String string = PreferenceManager.getDefaultSharedPreferences(BluetoothCloudBackupActivity.this._context).getString("CurrentConnectedAddress", "");
                 if (str3.equalsIgnoreCase("sleep") || str3.equalsIgnoreCase("sleep_pow_on") || str3.equalsIgnoreCase("sleep_pow_off") || str3.equalsIgnoreCase("sleep_pow_on_fast") || str3.equalsIgnoreCase("sleep_pow_off_fast")) {
                     if (!string.equalsIgnoreCase("") && string.equalsIgnoreCase(str2)) {
@@ -251,12 +251,12 @@ public class BluetoothCloudBackupActivity extends C5741i {
                                 }
                             }
                         });
-                        C2261g.m9769c("BluetoothCloudBackupActivity", "_isFromMenu:" + BluetoothCloudBackupActivity.this.f7727o);
+                        ImageAppLog.error("BluetoothCloudBackupActivity", "_isFromMenu:" + BluetoothCloudBackupActivity.this.f7727o);
                         if (BluetoothCloudBackupActivity.this.f7727o) {
                             if (BluetoothCloudBackupActivity.this.f7733u != "Connecting") {
                                 BluetoothCloudBackupActivity.this._handler.post(new Runnable() {
                                     public void run() {
-                                        C2331d.m10114a((Activity) BluetoothCloudBackupActivity.this, C2328a.ON_PROGRESS, (Bundle) null);
+                                        DialogFactory.m10114a((Activity) BluetoothCloudBackupActivity.this, C2328a.ON_PROGRESS, (Bundle) null);
                                     }
                                 });
                                 if (BluetoothCloudBackupActivity.this.f7714b != null) {
@@ -271,17 +271,17 @@ public class BluetoothCloudBackupActivity extends C5741i {
                                         BluetoothCloudBackupActivity.this.f7738z = new Timer(true);
                                         BluetoothCloudBackupActivity.this.f7738z.schedule(new TimerTask() {
                                             public void run() {
-                                                C2261g.m9769c("BluetoothCloudBackupActivity", "_isBTConnecting:" + BluetoothCloudBackupActivity.this.f7712A);
-                                                C2261g.m9769c("BluetoothCloudBackupActivity", "_timeoutCount:" + BluetoothCloudBackupActivity.this.f7713B);
+                                                ImageAppLog.error("BluetoothCloudBackupActivity", "_isBTConnecting:" + BluetoothCloudBackupActivity.this.f7712A);
+                                                ImageAppLog.error("BluetoothCloudBackupActivity", "_timeoutCount:" + BluetoothCloudBackupActivity.this.f7713B);
                                                 if (BluetoothCloudBackupActivity.this.f7712A) {
                                                     BluetoothCloudBackupActivity.this.m10234a(bluetoothDevice);
                                                     BluetoothCloudBackupActivity.this.f7713B = BluetoothCloudBackupActivity.this.f7713B + 1;
-                                                    C2261g.m9769c("BluetoothCloudBackupActivity", "_timeoutCount:" + BluetoothCloudBackupActivity.this.f7713B);
+                                                    ImageAppLog.error("BluetoothCloudBackupActivity", "_timeoutCount:" + BluetoothCloudBackupActivity.this.f7713B);
                                                     if (BluetoothCloudBackupActivity.this.f7713B > 1) {
                                                         BluetoothCloudBackupActivity.this.f7712A = false;
                                                         BluetoothCloudBackupActivity.this._handler.post(new Runnable() {
                                                             public void run() {
-                                                                C2331d.m10100a((Activity) BluetoothCloudBackupActivity.this);
+                                                                DialogFactory.m10100a((Activity) BluetoothCloudBackupActivity.this);
                                                                 BluetoothCloudBackupActivity.this.f7717e.setText(BluetoothCloudBackupActivity.this._context.getString(R.string.msg_cloud_no_connecting));
                                                                 BluetoothCloudBackupActivity.this.f7719g.setText("");
                                                                 BluetoothCloudBackupActivity.this.f7721i.setText(BluetoothCloudBackupActivity.this._context.getString(R.string.cmn_btn_close));
@@ -309,7 +309,7 @@ public class BluetoothCloudBackupActivity extends C5741i {
                             BluetoothCloudBackupActivity.this.f7713B = 0;
                             BluetoothCloudBackupActivity.this._handler.post(new Runnable() {
                                 public void run() {
-                                    C2331d.m10100a((Activity) BluetoothCloudBackupActivity.this);
+                                    DialogFactory.m10100a((Activity) BluetoothCloudBackupActivity.this);
                                 }
                             });
                         }
@@ -349,7 +349,7 @@ public class BluetoothCloudBackupActivity extends C5741i {
 
         /* renamed from: a */
         public void mo5667a(UUID uuid, int i, Bundle bundle) {
-            C2261g.m9763a("BluetoothCloudBackupActivity", "onBleReadEnd");
+            ImageAppLog.debug("BluetoothCloudBackupActivity", "onBleReadEnd");
             byte[] byteArray = bundle.getByteArray("VALUE");
             if (uuid.equals(UUID.fromString("03e23a31-a54c-40fa-a668-de9acdc910bb"))) {
                 if (byteArray != null) {
@@ -370,7 +370,7 @@ public class BluetoothCloudBackupActivity extends C5741i {
 
         /* renamed from: a */
         public void mo5666a(UUID uuid, int i) {
-            C2261g.m9763a("BluetoothCloudBackupActivity", "onBleWriteEnd");
+            ImageAppLog.debug("BluetoothCloudBackupActivity", "onBleWriteEnd");
             if (uuid.equals(UUID.fromString("8d08a420-3213-11e6-8aca-0002a5d5c51b"))) {
                 String string = BluetoothCloudBackupActivity.this._context.getSharedPreferences("com.panasonic.avc.cng.imageapp.privatekey", 0).getString("ImageApp.Network.Name", Build.MODEL);
                 if (BluetoothCloudBackupActivity.this.f7714b != null) {
@@ -381,7 +381,7 @@ public class BluetoothCloudBackupActivity extends C5741i {
                     if (BluetoothCloudBackupActivity.this._handler != null) {
                         BluetoothCloudBackupActivity.this._handler.post(new Runnable() {
                             public void run() {
-                                C2331d.m10100a((Activity) BluetoothCloudBackupActivity.this);
+                                DialogFactory.m10100a((Activity) BluetoothCloudBackupActivity.this);
                                 BluetoothCloudBackupActivity.this.f7719g.setText(BluetoothCloudBackupActivity.this._context.getString(R.string.msg_cannot_communcation_camera_without_pairing));
                                 BluetoothCloudBackupActivity.this.f7721i.setText(BluetoothCloudBackupActivity.this._context.getString(R.string.cmn_btn_close));
                                 BluetoothCloudBackupActivity.this.f7721i.setEnabled(true);
@@ -399,7 +399,7 @@ public class BluetoothCloudBackupActivity extends C5741i {
 
         /* renamed from: a */
         public void mo5664a(Bundle bundle, String str) {
-            C2261g.m9763a("BluetoothCloudBackupActivity", "onBleNotification");
+            ImageAppLog.debug("BluetoothCloudBackupActivity", "onBleNotification");
             BluetoothCloudBackupActivity.this._handler.post(new Runnable() {
                 public void run() {
                     BluetoothCloudBackupActivity.this.f7717e.setText(BluetoothCloudBackupActivity.this.f7723k);
@@ -410,7 +410,7 @@ public class BluetoothCloudBackupActivity extends C5741i {
                     BluetoothCloudBackupActivity.this.f7727o = false;
                     BluetoothCloudBackupActivity.this._handler.post(new Runnable() {
                         public void run() {
-                            C2331d.m10100a((Activity) BluetoothCloudBackupActivity.this);
+                            DialogFactory.m10100a((Activity) BluetoothCloudBackupActivity.this);
                         }
                     });
                     byte[] byteArray = bundle.getByteArray("VALUE");
@@ -424,7 +424,7 @@ public class BluetoothCloudBackupActivity extends C5741i {
                         if (byteArray != null) {
                             BluetoothCloudBackupActivity.this.f7724l = jArr[0] | (jArr[1] << 8) | (jArr[2] << 16) | (jArr[3] << 24);
                         }
-                        C2261g.m9763a("BluetoothCloudBackupActivity", "_leftNum:" + BluetoothCloudBackupActivity.this.f7724l);
+                        ImageAppLog.debug("BluetoothCloudBackupActivity", "_leftNum:" + BluetoothCloudBackupActivity.this.f7724l);
                         byte[] bArr2 = new byte[4];
                         long[] jArr2 = new long[4];
                         byte[] copyOfRange2 = Arrays.copyOfRange(byteArray, 4, 8);
@@ -434,7 +434,7 @@ public class BluetoothCloudBackupActivity extends C5741i {
                         if (byteArray != null) {
                             BluetoothCloudBackupActivity.this.f7725m = (jArr2[3] << 24) | jArr2[0] | (jArr2[1] << 8) | (jArr2[2] << 16);
                         }
-                        C2261g.m9763a("BluetoothCloudBackupActivity", "_allNum:" + BluetoothCloudBackupActivity.this.f7725m);
+                        ImageAppLog.debug("BluetoothCloudBackupActivity", "_allNum:" + BluetoothCloudBackupActivity.this.f7725m);
                     }
                     BluetoothCloudBackupActivity.this._handler.post(new Runnable() {
                         public void run() {
@@ -458,7 +458,7 @@ public class BluetoothCloudBackupActivity extends C5741i {
                     BluetoothCloudBackupActivity.this.f7727o = false;
                     final byte[] byteArray2 = bundle.getByteArray("VALUE");
                     final byte b = byteArray2[0] & 255;
-                    C2261g.m9763a("BluetoothCloudBackupActivity", "reason:" + b);
+                    ImageAppLog.debug("BluetoothCloudBackupActivity", "reason:" + b);
                     BluetoothCloudBackupActivity.this._handler.post(new Runnable() {
                         public void run() {
                             if (b == 1) {
@@ -477,63 +477,63 @@ public class BluetoothCloudBackupActivity extends C5741i {
                                 }
                                 BluetoothCloudBackupActivity.this.f7720h.setProgress(100);
                             } else if (b == 2) {
-                                C2331d.m10100a((Activity) BluetoothCloudBackupActivity.this);
+                                DialogFactory.m10100a((Activity) BluetoothCloudBackupActivity.this);
                                 BluetoothCloudBackupActivity.this.f7719g.setText(String.format(BluetoothCloudBackupActivity.this._context.getResources().getString(R.string.msg_cloud_backup_to_terminate), new Object[]{BluetoothCloudBackupActivity.this.f7722j}) + String.format(BluetoothCloudBackupActivity.this._context.getResources().getString(R.string.cmn_stop_reason_value), new Object[]{Byte.valueOf(byteArray2[0])}) + "\n" + BluetoothCloudBackupActivity.this._context.getString(R.string.msg_stop_reason_two));
                                 BluetoothCloudBackupActivity.this.f7721i.setText(BluetoothCloudBackupActivity.this._context.getString(R.string.cmn_cloud_backup_start));
                                 BluetoothCloudBackupActivity.this.f7721i.setEnabled(false);
                                 BluetoothCloudBackupActivity.this.f7731s = false;
                                 BluetoothCloudBackupActivity.this.f7736x = true;
                             } else if (b == 3) {
-                                C2331d.m10100a((Activity) BluetoothCloudBackupActivity.this);
+                                DialogFactory.m10100a((Activity) BluetoothCloudBackupActivity.this);
                                 BluetoothCloudBackupActivity.this.f7719g.setText(String.format(BluetoothCloudBackupActivity.this._context.getResources().getString(R.string.msg_cloud_backup_to_terminate), new Object[]{BluetoothCloudBackupActivity.this.f7722j}) + String.format(BluetoothCloudBackupActivity.this._context.getResources().getString(R.string.cmn_stop_reason_value), new Object[]{Byte.valueOf(byteArray2[0])}));
                                 BluetoothCloudBackupActivity.this.f7721i.setText(BluetoothCloudBackupActivity.this._context.getString(R.string.cmn_cloud_backup_start));
                                 BluetoothCloudBackupActivity.this.f7721i.setEnabled(false);
                                 BluetoothCloudBackupActivity.this.f7731s = false;
                                 BluetoothCloudBackupActivity.this.f7736x = true;
                             } else if (b == 4) {
-                                C2331d.m10100a((Activity) BluetoothCloudBackupActivity.this);
+                                DialogFactory.m10100a((Activity) BluetoothCloudBackupActivity.this);
                                 BluetoothCloudBackupActivity.this.f7719g.setText(String.format(BluetoothCloudBackupActivity.this._context.getResources().getString(R.string.msg_cloud_backup_to_terminate), new Object[]{BluetoothCloudBackupActivity.this.f7722j}) + String.format(BluetoothCloudBackupActivity.this._context.getResources().getString(R.string.cmn_stop_reason_value), new Object[]{Byte.valueOf(byteArray2[0])}) + "\n" + BluetoothCloudBackupActivity.this._context.getString(R.string.msg_stop_reason_four));
                                 BluetoothCloudBackupActivity.this.f7721i.setText(BluetoothCloudBackupActivity.this._context.getString(R.string.cmn_cloud_backup_start));
                                 BluetoothCloudBackupActivity.this.f7721i.setEnabled(false);
                                 BluetoothCloudBackupActivity.this.f7731s = false;
                                 BluetoothCloudBackupActivity.this.f7736x = true;
                             } else if (b == 5) {
-                                C2331d.m10100a((Activity) BluetoothCloudBackupActivity.this);
+                                DialogFactory.m10100a((Activity) BluetoothCloudBackupActivity.this);
                                 BluetoothCloudBackupActivity.this.f7719g.setText(String.format(BluetoothCloudBackupActivity.this._context.getResources().getString(R.string.msg_cloud_backup_to_terminate), new Object[]{BluetoothCloudBackupActivity.this.f7722j}) + String.format(BluetoothCloudBackupActivity.this._context.getResources().getString(R.string.cmn_stop_reason_value), new Object[]{Byte.valueOf(byteArray2[0])}) + "\n" + BluetoothCloudBackupActivity.this._context.getString(R.string.msg_stop_reason_five));
                                 BluetoothCloudBackupActivity.this.f7721i.setText(BluetoothCloudBackupActivity.this._context.getString(R.string.cmn_cloud_backup_start));
                                 BluetoothCloudBackupActivity.this.f7721i.setEnabled(false);
                                 BluetoothCloudBackupActivity.this.f7731s = false;
                                 BluetoothCloudBackupActivity.this.f7736x = true;
                             } else if (b == 6) {
-                                C2331d.m10100a((Activity) BluetoothCloudBackupActivity.this);
+                                DialogFactory.m10100a((Activity) BluetoothCloudBackupActivity.this);
                                 BluetoothCloudBackupActivity.this.f7719g.setText(String.format(BluetoothCloudBackupActivity.this._context.getResources().getString(R.string.msg_cloud_backup_to_terminate), new Object[]{BluetoothCloudBackupActivity.this.f7722j}) + String.format(BluetoothCloudBackupActivity.this._context.getResources().getString(R.string.cmn_stop_reason_value), new Object[]{Byte.valueOf(byteArray2[0])}) + "\n" + BluetoothCloudBackupActivity.this._context.getString(R.string.msg_stop_reason_six));
                                 BluetoothCloudBackupActivity.this.f7721i.setText(BluetoothCloudBackupActivity.this._context.getString(R.string.cmn_cloud_backup_start));
                                 BluetoothCloudBackupActivity.this.f7721i.setEnabled(false);
                                 BluetoothCloudBackupActivity.this.f7731s = false;
                                 BluetoothCloudBackupActivity.this.f7736x = true;
                             } else if (b == 7) {
-                                C2331d.m10100a((Activity) BluetoothCloudBackupActivity.this);
+                                DialogFactory.m10100a((Activity) BluetoothCloudBackupActivity.this);
                                 BluetoothCloudBackupActivity.this.f7719g.setText(String.format(BluetoothCloudBackupActivity.this._context.getResources().getString(R.string.msg_cloud_backup_to_terminate), new Object[]{BluetoothCloudBackupActivity.this.f7722j}) + String.format(BluetoothCloudBackupActivity.this._context.getResources().getString(R.string.cmn_stop_reason_value), new Object[]{Byte.valueOf(byteArray2[0])}) + "\n" + BluetoothCloudBackupActivity.this._context.getString(R.string.msg_stop_reason_seven));
                                 BluetoothCloudBackupActivity.this.f7721i.setText(BluetoothCloudBackupActivity.this._context.getString(R.string.cmn_cloud_backup_start));
                                 BluetoothCloudBackupActivity.this.f7721i.setEnabled(false);
                                 BluetoothCloudBackupActivity.this.f7731s = false;
                                 BluetoothCloudBackupActivity.this.f7736x = true;
                             } else if (b == 8) {
-                                C2331d.m10100a((Activity) BluetoothCloudBackupActivity.this);
+                                DialogFactory.m10100a((Activity) BluetoothCloudBackupActivity.this);
                                 BluetoothCloudBackupActivity.this.f7719g.setText(String.format(BluetoothCloudBackupActivity.this._context.getResources().getString(R.string.msg_cloud_backup_to_terminate), new Object[]{BluetoothCloudBackupActivity.this.f7722j}) + String.format(BluetoothCloudBackupActivity.this._context.getResources().getString(R.string.cmn_stop_reason_value), new Object[]{Byte.valueOf(byteArray2[0])}) + "\n" + BluetoothCloudBackupActivity.this._context.getString(R.string.msg_stop_reason_eight));
                                 BluetoothCloudBackupActivity.this.f7721i.setText(BluetoothCloudBackupActivity.this._context.getString(R.string.cmn_btn_close));
                                 BluetoothCloudBackupActivity.this.f7721i.setEnabled(true);
                                 BluetoothCloudBackupActivity.this.f7731s = false;
                                 BluetoothCloudBackupActivity.this.f7736x = true;
                             } else if (b == 9) {
-                                C2331d.m10100a((Activity) BluetoothCloudBackupActivity.this);
+                                DialogFactory.m10100a((Activity) BluetoothCloudBackupActivity.this);
                                 BluetoothCloudBackupActivity.this.f7719g.setText(String.format(BluetoothCloudBackupActivity.this._context.getResources().getString(R.string.msg_cloud_backup_to_terminate), new Object[]{BluetoothCloudBackupActivity.this.f7722j}) + String.format(BluetoothCloudBackupActivity.this._context.getResources().getString(R.string.cmn_stop_reason_value), new Object[]{Byte.valueOf(byteArray2[0])}) + "\n" + BluetoothCloudBackupActivity.this._context.getString(R.string.msg_stop_reason_nine));
                                 BluetoothCloudBackupActivity.this.f7721i.setText(BluetoothCloudBackupActivity.this._context.getString(R.string.cmn_btn_close));
                                 BluetoothCloudBackupActivity.this.f7721i.setEnabled(true);
                                 BluetoothCloudBackupActivity.this.f7731s = false;
                                 BluetoothCloudBackupActivity.this.f7736x = true;
                             } else if (b == 10) {
-                                C2331d.m10100a((Activity) BluetoothCloudBackupActivity.this);
+                                DialogFactory.m10100a((Activity) BluetoothCloudBackupActivity.this);
                                 BluetoothCloudBackupActivity.this.f7719g.setText(String.format(BluetoothCloudBackupActivity.this._context.getResources().getString(R.string.msg_cloud_backup_to_terminate), new Object[]{BluetoothCloudBackupActivity.this.f7722j}) + String.format(BluetoothCloudBackupActivity.this._context.getResources().getString(R.string.cmn_stop_reason_value), new Object[]{Byte.valueOf(byteArray2[0])}) + "\n" + BluetoothCloudBackupActivity.this._context.getString(R.string.msg_stop_reason_ten));
                                 BluetoothCloudBackupActivity.this.f7721i.setText(BluetoothCloudBackupActivity.this._context.getString(R.string.cmn_btn_close));
                                 BluetoothCloudBackupActivity.this.f7721i.setEnabled(true);
@@ -550,22 +550,22 @@ public class BluetoothCloudBackupActivity extends C5741i {
                                 return;
                             }
                             if (byteArray3[0] == 1) {
-                                C2331d.m10100a((Activity) BluetoothCloudBackupActivity.this);
+                                DialogFactory.m10100a((Activity) BluetoothCloudBackupActivity.this);
                                 BluetoothCloudBackupActivity.this.f7719g.setText(BluetoothCloudBackupActivity.this._context.getString(R.string.msg_cloud_backup_cannot_start));
                                 BluetoothCloudBackupActivity.this.f7721i.setText(BluetoothCloudBackupActivity.this._context.getString(R.string.cmn_btn_close));
                                 BluetoothCloudBackupActivity.this.f7721i.setEnabled(true);
                                 BluetoothCloudBackupActivity.this.f7731s = false;
                             } else if (byteArray3[0] == 2 || byteArray3[0] == 3) {
-                                C2331d.m10100a((Activity) BluetoothCloudBackupActivity.this);
-                                C2331d.m10114a((Activity) BluetoothCloudBackupActivity.this, C2328a.ON_BT_AUTOBACKUP_FAILED, (Bundle) null);
+                                DialogFactory.m10100a((Activity) BluetoothCloudBackupActivity.this);
+                                DialogFactory.m10114a((Activity) BluetoothCloudBackupActivity.this, C2328a.ON_BT_AUTOBACKUP_FAILED, (Bundle) null);
                             }
                         }
                     });
                 } else if (str.equals("e182ec43-3213-11e6-ab07-0002a5d5c51b")) {
                     BluetoothCloudBackupActivity.this._handler.post(new Runnable() {
                         public void run() {
-                            C2331d.m10100a((Activity) BluetoothCloudBackupActivity.this);
-                            C2331d.m10114a((Activity) BluetoothCloudBackupActivity.this, C2328a.ON_BT_AUTOBACKUP_FAILED, (Bundle) null);
+                            DialogFactory.m10100a((Activity) BluetoothCloudBackupActivity.this);
+                            DialogFactory.m10114a((Activity) BluetoothCloudBackupActivity.this, C2328a.ON_BT_AUTOBACKUP_FAILED, (Bundle) null);
                         }
                     });
                 }
@@ -574,12 +574,12 @@ public class BluetoothCloudBackupActivity extends C5741i {
 
         /* renamed from: a */
         public void mo5661a() {
-            C2261g.m9763a("BluetoothCloudBackupActivity", "onBleScanStart");
+            ImageAppLog.debug("BluetoothCloudBackupActivity", "onBleScanStart");
         }
 
         /* renamed from: c */
         public void mo5671c() {
-            C2261g.m9763a("BluetoothCloudBackupActivity", "onBleConnectTimeOut");
+            ImageAppLog.debug("BluetoothCloudBackupActivity", "onBleConnectTimeOut");
             if (BluetoothCloudBackupActivity.this.f7714b != null) {
                 BluetoothCloudBackupActivity.this.f7714b.mo5641c();
                 BluetoothCloudBackupActivity.this.f7714b.mo5636a(3000);
@@ -588,21 +588,21 @@ public class BluetoothCloudBackupActivity extends C5741i {
 
         /* renamed from: a */
         public void mo5665a(String str) {
-            C2261g.m9763a("BluetoothCloudBackupActivity", "onBleCopyStatus");
+            ImageAppLog.debug("BluetoothCloudBackupActivity", "onBleCopyStatus");
         }
 
         /* renamed from: b */
         public void mo5670b(boolean z) {
-            C2261g.m9763a("BluetoothCloudBackupActivity", "onBleNotificationEnable");
+            ImageAppLog.debug("BluetoothCloudBackupActivity", "onBleNotificationEnable");
         }
 
         /* renamed from: e */
         public void mo5673e() {
-            C2261g.m9763a("BluetoothCloudBackupActivity", "onBleServicePrepared");
+            ImageAppLog.debug("BluetoothCloudBackupActivity", "onBleServicePrepared");
             if (BluetoothCloudBackupActivity.this.f7714b != null && !BluetoothCloudBackupActivity.this.f7714b.mo5649k() && !BluetoothCloudBackupActivity.this.f7736x) {
                 BluetoothCloudBackupActivity.this._handler.post(new Runnable() {
                     public void run() {
-                        C2331d.m10100a((Activity) BluetoothCloudBackupActivity.this);
+                        DialogFactory.m10100a((Activity) BluetoothCloudBackupActivity.this);
                         BluetoothCloudBackupActivity.this.f7717e.setText(BluetoothCloudBackupActivity.this._context.getString(R.string.msg_cloud_no_connecting));
                         BluetoothCloudBackupActivity.this.f7719g.setText("");
                         BluetoothCloudBackupActivity.this.f7721i.setText(BluetoothCloudBackupActivity.this._context.getString(R.string.cmn_btn_close));
@@ -615,12 +615,12 @@ public class BluetoothCloudBackupActivity extends C5741i {
 
         /* renamed from: f */
         public void mo5674f() {
-            C2261g.m9763a("BluetoothCloudBackupActivity", "onBleScanResultError");
+            ImageAppLog.debug("BluetoothCloudBackupActivity", "onBleScanResultError");
         }
 
         /* renamed from: g */
         public void mo5675g() {
-            C2261g.m9763a("BluetoothCloudBackupActivity", "onAutoSendAcctrlDone");
+            ImageAppLog.debug("BluetoothCloudBackupActivity", "onAutoSendAcctrlDone");
         }
     }
 
@@ -630,11 +630,11 @@ public class BluetoothCloudBackupActivity extends C5741i {
         requestWindowFeature(1);
         setContentView(R.layout.activity_bluetooth_cloud_backup);
         this.f7715c = new C2397a();
-        this.f7716d = (C2527a) C2316j.m10030a(C2527a.f8000e);
+        this.f7716d = (BluetoothCloudBackupViewModel) C2316j.m10030a(BluetoothCloudBackupViewModel.f8000e);
         if (this.f7716d == null) {
-            this.f7716d = new C2527a(this._context, this._handler, this.f7715c);
+            this.f7716d = new BluetoothCloudBackupViewModel(this._context, this._handler, this.f7715c);
             this.f7716d.mo6313a(this._context, this._handler, this.f7715c);
-            C2316j.m10032a(C2527a.f8000e, this.f7716d);
+            C2316j.m10032a(BluetoothCloudBackupViewModel.f8000e, this.f7716d);
         } else {
             this.f7716d.mo6313a(this._context, this._handler, this.f7715c);
         }
@@ -686,7 +686,7 @@ public class BluetoothCloudBackupActivity extends C5741i {
         } else if (this.f7726n == 2) {
             this._handler.post(new Runnable() {
                 public void run() {
-                    C2331d.m10100a((Activity) BluetoothCloudBackupActivity.this);
+                    DialogFactory.m10100a((Activity) BluetoothCloudBackupActivity.this);
                     BluetoothCloudBackupActivity.this.f7719g.setText(String.format(BluetoothCloudBackupActivity.this._context.getResources().getString(R.string.msg_cloud_backup_to_terminate), new Object[]{BluetoothCloudBackupActivity.this.f7722j}) + String.format(BluetoothCloudBackupActivity.this._context.getResources().getString(R.string.cmn_stop_reason_value), new Object[]{Integer.valueOf(BluetoothCloudBackupActivity.this.f7726n)}) + BluetoothCloudBackupActivity.this._context.getString(R.string.msg_stop_reason_two));
                     BluetoothCloudBackupActivity.this.f7721i.setText(BluetoothCloudBackupActivity.this._context.getString(R.string.cmn_cloud_backup_start));
                     BluetoothCloudBackupActivity.this.f7721i.setEnabled(false);
@@ -697,7 +697,7 @@ public class BluetoothCloudBackupActivity extends C5741i {
         } else if (this.f7726n == 3) {
             this._handler.post(new Runnable() {
                 public void run() {
-                    C2331d.m10100a((Activity) BluetoothCloudBackupActivity.this);
+                    DialogFactory.m10100a((Activity) BluetoothCloudBackupActivity.this);
                     BluetoothCloudBackupActivity.this.f7719g.setText(String.format(BluetoothCloudBackupActivity.this._context.getResources().getString(R.string.msg_cloud_backup_to_terminate), new Object[]{BluetoothCloudBackupActivity.this.f7722j}) + String.format(BluetoothCloudBackupActivity.this._context.getResources().getString(R.string.cmn_stop_reason_value), new Object[]{Integer.valueOf(BluetoothCloudBackupActivity.this.f7726n)}));
                     BluetoothCloudBackupActivity.this.f7721i.setText(BluetoothCloudBackupActivity.this._context.getString(R.string.cmn_cloud_backup_start));
                     BluetoothCloudBackupActivity.this.f7721i.setEnabled(false);
@@ -708,7 +708,7 @@ public class BluetoothCloudBackupActivity extends C5741i {
         } else if (this.f7726n == 4) {
             this._handler.post(new Runnable() {
                 public void run() {
-                    C2331d.m10100a((Activity) BluetoothCloudBackupActivity.this);
+                    DialogFactory.m10100a((Activity) BluetoothCloudBackupActivity.this);
                     BluetoothCloudBackupActivity.this.f7719g.setText(String.format(BluetoothCloudBackupActivity.this._context.getResources().getString(R.string.msg_cloud_backup_to_terminate), new Object[]{BluetoothCloudBackupActivity.this.f7722j}) + String.format(BluetoothCloudBackupActivity.this._context.getResources().getString(R.string.cmn_stop_reason_value), new Object[]{Integer.valueOf(BluetoothCloudBackupActivity.this.f7726n)}) + BluetoothCloudBackupActivity.this._context.getString(R.string.msg_stop_reason_four));
                     BluetoothCloudBackupActivity.this.f7721i.setText(BluetoothCloudBackupActivity.this._context.getString(R.string.cmn_cloud_backup_start));
                     BluetoothCloudBackupActivity.this.f7721i.setEnabled(false);
@@ -719,7 +719,7 @@ public class BluetoothCloudBackupActivity extends C5741i {
         } else if (this.f7726n == 5) {
             this._handler.post(new Runnable() {
                 public void run() {
-                    C2331d.m10100a((Activity) BluetoothCloudBackupActivity.this);
+                    DialogFactory.m10100a((Activity) BluetoothCloudBackupActivity.this);
                     BluetoothCloudBackupActivity.this.f7719g.setText(String.format(BluetoothCloudBackupActivity.this._context.getResources().getString(R.string.msg_cloud_backup_to_terminate), new Object[]{BluetoothCloudBackupActivity.this.f7722j}) + String.format(BluetoothCloudBackupActivity.this._context.getResources().getString(R.string.cmn_stop_reason_value), new Object[]{Integer.valueOf(BluetoothCloudBackupActivity.this.f7726n)}) + BluetoothCloudBackupActivity.this._context.getString(R.string.msg_stop_reason_five));
                     BluetoothCloudBackupActivity.this.f7721i.setText(BluetoothCloudBackupActivity.this._context.getString(R.string.cmn_cloud_backup_start));
                     BluetoothCloudBackupActivity.this.f7721i.setEnabled(false);
@@ -730,7 +730,7 @@ public class BluetoothCloudBackupActivity extends C5741i {
         } else if (this.f7726n == 6) {
             this._handler.post(new Runnable() {
                 public void run() {
-                    C2331d.m10100a((Activity) BluetoothCloudBackupActivity.this);
+                    DialogFactory.m10100a((Activity) BluetoothCloudBackupActivity.this);
                     BluetoothCloudBackupActivity.this.f7719g.setText(String.format(BluetoothCloudBackupActivity.this._context.getResources().getString(R.string.msg_cloud_backup_to_terminate), new Object[]{BluetoothCloudBackupActivity.this.f7722j}) + String.format(BluetoothCloudBackupActivity.this._context.getResources().getString(R.string.cmn_stop_reason_value), new Object[]{Integer.valueOf(BluetoothCloudBackupActivity.this.f7726n)}) + BluetoothCloudBackupActivity.this._context.getString(R.string.msg_stop_reason_six));
                     BluetoothCloudBackupActivity.this.f7721i.setText(BluetoothCloudBackupActivity.this._context.getString(R.string.cmn_cloud_backup_start));
                     BluetoothCloudBackupActivity.this.f7721i.setEnabled(false);
@@ -741,7 +741,7 @@ public class BluetoothCloudBackupActivity extends C5741i {
         } else if (this.f7726n == 7) {
             this._handler.post(new Runnable() {
                 public void run() {
-                    C2331d.m10100a((Activity) BluetoothCloudBackupActivity.this);
+                    DialogFactory.m10100a((Activity) BluetoothCloudBackupActivity.this);
                     BluetoothCloudBackupActivity.this.f7719g.setText(String.format(BluetoothCloudBackupActivity.this._context.getResources().getString(R.string.msg_cloud_backup_to_terminate), new Object[]{BluetoothCloudBackupActivity.this.f7722j}) + String.format(BluetoothCloudBackupActivity.this._context.getResources().getString(R.string.cmn_stop_reason_value), new Object[]{Integer.valueOf(BluetoothCloudBackupActivity.this.f7726n)}) + BluetoothCloudBackupActivity.this._context.getString(R.string.msg_stop_reason_seven));
                     BluetoothCloudBackupActivity.this.f7721i.setText(BluetoothCloudBackupActivity.this._context.getString(R.string.cmn_cloud_backup_start));
                     BluetoothCloudBackupActivity.this.f7721i.setEnabled(false);
@@ -752,7 +752,7 @@ public class BluetoothCloudBackupActivity extends C5741i {
         } else if (this.f7726n == 8) {
             this._handler.post(new Runnable() {
                 public void run() {
-                    C2331d.m10100a((Activity) BluetoothCloudBackupActivity.this);
+                    DialogFactory.m10100a((Activity) BluetoothCloudBackupActivity.this);
                     BluetoothCloudBackupActivity.this.f7719g.setText(BluetoothCloudBackupActivity.this._context.getString(R.string.msg_stop_reason_eight));
                     BluetoothCloudBackupActivity.this.f7721i.setText(BluetoothCloudBackupActivity.this._context.getString(R.string.cmn_btn_close));
                     BluetoothCloudBackupActivity.this.f7721i.setEnabled(true);
@@ -763,7 +763,7 @@ public class BluetoothCloudBackupActivity extends C5741i {
         } else if (this.f7726n == 9) {
             this._handler.post(new Runnable() {
                 public void run() {
-                    C2331d.m10100a((Activity) BluetoothCloudBackupActivity.this);
+                    DialogFactory.m10100a((Activity) BluetoothCloudBackupActivity.this);
                     BluetoothCloudBackupActivity.this.f7719g.setText(BluetoothCloudBackupActivity.this._context.getString(R.string.msg_stop_reason_nine));
                     BluetoothCloudBackupActivity.this.f7721i.setText(BluetoothCloudBackupActivity.this._context.getString(R.string.cmn_btn_close));
                     BluetoothCloudBackupActivity.this.f7721i.setEnabled(true);
@@ -774,7 +774,7 @@ public class BluetoothCloudBackupActivity extends C5741i {
         } else if (this.f7726n == 16) {
             this._handler.post(new Runnable() {
                 public void run() {
-                    C2331d.m10100a((Activity) BluetoothCloudBackupActivity.this);
+                    DialogFactory.m10100a((Activity) BluetoothCloudBackupActivity.this);
                     BluetoothCloudBackupActivity.this.f7719g.setText(BluetoothCloudBackupActivity.this._context.getString(R.string.msg_stop_reason_ten));
                     BluetoothCloudBackupActivity.this.f7721i.setText(BluetoothCloudBackupActivity.this._context.getString(R.string.cmn_btn_close));
                     BluetoothCloudBackupActivity.this.f7721i.setEnabled(true);
@@ -785,7 +785,7 @@ public class BluetoothCloudBackupActivity extends C5741i {
         } else if (this.f7726n == -1) {
             this._handler.post(new Runnable() {
                 public void run() {
-                    C2331d.m10100a((Activity) BluetoothCloudBackupActivity.this);
+                    DialogFactory.m10100a((Activity) BluetoothCloudBackupActivity.this);
                     BluetoothCloudBackupActivity.this.f7719g.setText(BluetoothCloudBackupActivity.this._context.getString(R.string.msg_cloud_backup_ble_disconnect));
                     BluetoothCloudBackupActivity.this.f7721i.setText(BluetoothCloudBackupActivity.this._context.getString(R.string.cmn_btn_close));
                     BluetoothCloudBackupActivity.this.f7721i.setEnabled(true);
@@ -796,7 +796,7 @@ public class BluetoothCloudBackupActivity extends C5741i {
         } else if (this.f7726n == -2) {
             this._handler.post(new Runnable() {
                 public void run() {
-                    C2331d.m10100a((Activity) BluetoothCloudBackupActivity.this);
+                    DialogFactory.m10100a((Activity) BluetoothCloudBackupActivity.this);
                     BluetoothCloudBackupActivity.this.f7719g.setText(BluetoothCloudBackupActivity.this._context.getString(R.string.msg_cannot_communcation_camera_without_pairing));
                     BluetoothCloudBackupActivity.this.f7721i.setText(BluetoothCloudBackupActivity.this._context.getString(R.string.cmn_btn_close));
                     BluetoothCloudBackupActivity.this.f7721i.setEnabled(true);
@@ -829,7 +829,7 @@ public class BluetoothCloudBackupActivity extends C5741i {
         } else {
             this._handler.post(new Runnable() {
                 public void run() {
-                    C2331d.m10100a((Activity) BluetoothCloudBackupActivity.this);
+                    DialogFactory.m10100a((Activity) BluetoothCloudBackupActivity.this);
                     BluetoothCloudBackupActivity.this.f7717e.setText(BluetoothCloudBackupActivity.this._context.getString(R.string.msg_cloud_no_connecting));
                     BluetoothCloudBackupActivity.this.f7719g.setText("");
                     BluetoothCloudBackupActivity.this.f7721i.setText(BluetoothCloudBackupActivity.this._context.getString(R.string.cmn_btn_close));
@@ -842,7 +842,7 @@ public class BluetoothCloudBackupActivity extends C5741i {
 
     /* access modifiers changed from: protected */
     public void onResume() {
-        C2261g.m9763a("BluetoothCloudBackupActivity", "onResume()");
+        ImageAppLog.debug("BluetoothCloudBackupActivity", "onResume()");
         super.onResume();
         if (PreferenceManager.getDefaultSharedPreferences(this._context).getBoolean("Bluetooth", false) && C2266l.m9823c()) {
             this.f7714b = this.f7716d.mo6314c(true);
@@ -852,10 +852,10 @@ public class BluetoothCloudBackupActivity extends C5741i {
 
     /* access modifiers changed from: protected */
     public void onPause() {
-        C2261g.m9763a("BluetoothCloudBackupActivity", "onPause()");
+        ImageAppLog.debug("BluetoothCloudBackupActivity", "onPause()");
         super.onPause();
         if (this.f7714b != null) {
-            C2253z.m9712j();
+            ServiceFactory.m9712j();
             this.f7714b = null;
         }
     }
@@ -863,11 +863,11 @@ public class BluetoothCloudBackupActivity extends C5741i {
     public void OnClickSuspend(View view) {
         this.f7731s = false;
         if (this.f7721i.getText().equals(this._context.getString(R.string.cmn_cloud_backup_terminate))) {
-            C2261g.m9760a(3198988, "");
+            ImageAppLog.m9760a(3198988, "");
             this.f7727o = false;
             this.f7734v = false;
             if (this.f7735w) {
-                C2261g.m9771e("TAG", "Running......");
+                ImageAppLog.info("TAG", "Running......");
             } else if (this.f7714b != null) {
                 this.f7735w = true;
                 String a = this.f7714b.mo5627a(26, new byte[]{1});
@@ -875,13 +875,13 @@ public class BluetoothCloudBackupActivity extends C5741i {
                 if (this.f7714b != null) {
                     this.f7714b.mo5648j();
                 }
-                C2261g.m9763a("BluetoothCloudBackupActivity", "writeData:" + a);
+                ImageAppLog.debug("BluetoothCloudBackupActivity", "writeData:" + a);
             }
         } else if (this.f7721i.getText().equals(this._context.getString(R.string.cmn_cloud_backup_start))) {
-            C2261g.m9760a(3198987, "");
+            ImageAppLog.m9760a(3198987, "");
             this.f7735w = false;
             if (this.f7734v) {
-                C2261g.m9771e("TAG", "Running......");
+                ImageAppLog.info("TAG", "Running......");
             } else if (this.f7714b != null) {
                 this.f7734v = true;
                 this.f7714b.mo5638b((int) C4244s.f14193c[0]);
@@ -904,18 +904,18 @@ public class BluetoothCloudBackupActivity extends C5741i {
                         this.f7738z = new Timer(true);
                         this.f7738z.schedule(new TimerTask() {
                             public void run() {
-                                C2261g.m9769c("BluetoothCloudBackupActivity", "_isBTConnecting:" + BluetoothCloudBackupActivity.this.f7712A);
-                                C2261g.m9769c("BluetoothCloudBackupActivity", "_timeoutCount:" + BluetoothCloudBackupActivity.this.f7713B);
+                                ImageAppLog.error("BluetoothCloudBackupActivity", "_isBTConnecting:" + BluetoothCloudBackupActivity.this.f7712A);
+                                ImageAppLog.error("BluetoothCloudBackupActivity", "_timeoutCount:" + BluetoothCloudBackupActivity.this.f7713B);
                                 if (BluetoothCloudBackupActivity.this.f7712A) {
                                     BluetoothCloudBackupActivity.this.m10234a(BluetoothCloudBackupActivity.this.f7730r);
                                     BluetoothCloudBackupActivity.this.f7713B = BluetoothCloudBackupActivity.this.f7713B + 1;
-                                    C2261g.m9769c("BluetoothCloudBackupActivity", "_timeoutCount:" + BluetoothCloudBackupActivity.this.f7713B);
+                                    ImageAppLog.error("BluetoothCloudBackupActivity", "_timeoutCount:" + BluetoothCloudBackupActivity.this.f7713B);
                                     if (BluetoothCloudBackupActivity.this.f7713B > 1) {
                                         BluetoothCloudBackupActivity.this.f7712A = false;
                                     }
                                     BluetoothCloudBackupActivity.this._handler.post(new Runnable() {
                                         public void run() {
-                                            C2331d.m10100a((Activity) BluetoothCloudBackupActivity.this);
+                                            DialogFactory.m10100a((Activity) BluetoothCloudBackupActivity.this);
                                             BluetoothCloudBackupActivity.this.f7717e.setText(BluetoothCloudBackupActivity.this._context.getString(R.string.msg_cloud_no_connecting));
                                             BluetoothCloudBackupActivity.this.f7719g.setText("");
                                             BluetoothCloudBackupActivity.this.f7721i.setText(BluetoothCloudBackupActivity.this._context.getString(R.string.cmn_btn_close));
@@ -954,7 +954,7 @@ public class BluetoothCloudBackupActivity extends C5741i {
             this.f7738z.cancel();
             this.f7738z = null;
         }
-        C2316j.m10034b(C2527a.f8000e);
+        C2316j.m10034b(BluetoothCloudBackupViewModel.f8000e);
         super.finish();
     }
 

@@ -43,9 +43,9 @@
     .line 235
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/as$a$1;->a:Lcom/panasonic/avc/cng/view/setting/as$a;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/as$a;->a:Lcom/panasonic/avc/cng/view/setting/as;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/as$a;->a:Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewFilterSelectViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/as;->b(Lcom/panasonic/avc/cng/view/setting/as;)Lcom/panasonic/avc/cng/view/setting/am$h;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewFilterSelectViewModel;->b(Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewFilterSelectViewModel;)Lcom/panasonic/avc/cng/view/setting/am$h;
 
     move-result-object v0
 

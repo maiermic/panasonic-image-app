@@ -40,7 +40,7 @@ public class C3488b {
     /* access modifiers changed from: private */
 
     /* renamed from: b */
-    public C3541f f11157b;
+    public LiveViewMovieViewModel f11157b;
 
     /* renamed from: c */
     private C4230p f11158c = null;
@@ -181,7 +181,7 @@ public class C3488b {
     }
 
     /* renamed from: a */
-    public void mo8259a(Activity activity, C3541f fVar) {
+    public void mo8259a(Activity activity, LiveViewMovieViewModel fVar) {
         this.f11156a = activity;
         this.f11157b = fVar;
         m13828d();
@@ -189,14 +189,14 @@ public class C3488b {
     }
 
     /* renamed from: b */
-    public void mo8261b(Activity activity, C3541f fVar) {
+    public void mo8261b(Activity activity, LiveViewMovieViewModel fVar) {
         this.f11156a = activity;
         this.f11157b = fVar;
         m13828d();
     }
 
     /* renamed from: c */
-    public void mo8262c(Activity activity, C3541f fVar) {
+    public void mo8262c(Activity activity, LiveViewMovieViewModel fVar) {
         this.f11156a = activity;
         this.f11157b = fVar;
         m13829e();
@@ -204,7 +204,7 @@ public class C3488b {
     }
 
     /* renamed from: d */
-    public void mo8263d(Activity activity, C3541f fVar) {
+    public void mo8263d(Activity activity, LiveViewMovieViewModel fVar) {
         this.f11156a = activity;
         this.f11157b = fVar;
         m13828d();
@@ -212,7 +212,7 @@ public class C3488b {
     }
 
     /* renamed from: e */
-    public void mo8264e(Activity activity, C3541f fVar) {
+    public void mo8264e(Activity activity, LiveViewMovieViewModel fVar) {
         this.f11156a = activity;
         this.f11157b = fVar;
         m13829e();
@@ -220,7 +220,7 @@ public class C3488b {
     }
 
     /* renamed from: f */
-    public void mo8265f(Activity activity, C3541f fVar) {
+    public void mo8265f(Activity activity, LiveViewMovieViewModel fVar) {
         this.f11156a = activity;
         this.f11157b = fVar;
         m13830f();

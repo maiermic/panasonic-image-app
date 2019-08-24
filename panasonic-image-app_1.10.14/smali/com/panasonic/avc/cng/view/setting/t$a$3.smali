@@ -43,16 +43,16 @@
     .line 522
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/t$a$3;->a:Lcom/panasonic/avc/cng/view/setting/t$a;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/t$a;->a:Lcom/panasonic/avc/cng/view/setting/t;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/t$a;->a:Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/t;->h()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;->h()V
 
     .line 525
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/t$a$3;->a:Lcom/panasonic/avc/cng/view/setting/t$a;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/t$a;->a:Lcom/panasonic/avc/cng/view/setting/t;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/t$a;->a:Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/t;->b(Lcom/panasonic/avc/cng/view/setting/t;)Lcom/panasonic/avc/cng/view/setting/n$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;->b(Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;)Lcom/panasonic/avc/cng/view/setting/n$a;
 
     move-result-object v0
 
@@ -61,9 +61,9 @@
     .line 526
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/t$a$3;->a:Lcom/panasonic/avc/cng/view/setting/t$a;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/t$a;->a:Lcom/panasonic/avc/cng/view/setting/t;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/t$a;->a:Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/t;->b(Lcom/panasonic/avc/cng/view/setting/t;)Lcom/panasonic/avc/cng/view/setting/n$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;->b(Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;)Lcom/panasonic/avc/cng/view/setting/n$a;
 
     move-result-object v0
 

@@ -94,11 +94,11 @@
     :goto_0
     iget-object v4, p0, Lcom/panasonic/avc/cng/view/liveview/h$9;->a:Lcom/panasonic/avc/cng/view/liveview/h;
 
-    iget-object v4, v4, Lcom/panasonic/avc/cng/view/liveview/h;->n:Lcom/panasonic/avc/cng/core/a/g;
+    iget-object v4, v4, Lcom/panasonic/avc/cng/view/liveview/h;->n:Lcom/panasonic/avc/cng/core/a/FocusCommand;
 
     sget-object v5, Lcom/panasonic/avc/cng/core/a/g$j;->e:Lcom/panasonic/avc/cng/core/a/g$j;
 
-    invoke-virtual {v4, v5, v0, v2, v1}, Lcom/panasonic/avc/cng/core/a/g;->a(Lcom/panasonic/avc/cng/core/a/g$j;Lcom/panasonic/avc/cng/core/a/g$i;II)Lcom/panasonic/avc/cng/model/c/i;
+    invoke-virtual {v4, v5, v0, v2, v1}, Lcom/panasonic/avc/cng/core/a/FocusCommand;->a(Lcom/panasonic/avc/cng/core/a/g$j;Lcom/panasonic/avc/cng/core/a/g$i;II)Lcom/panasonic/avc/cng/model/c/i;
 
     move-result-object v0
 
@@ -114,7 +114,7 @@
 
     const-string v1, "OnFocusReset assistDisp error."
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 1775
     :cond_0

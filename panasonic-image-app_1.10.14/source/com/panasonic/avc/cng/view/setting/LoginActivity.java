@@ -19,10 +19,10 @@ import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.C1892f;
 import com.panasonic.avc.cng.model.service.C2210p;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.view.common.C2820e;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
 import com.panasonic.avc.cng.view.setting.C5432aa.C5434a;
 
 public class LoginActivity extends C5432aa {
@@ -84,8 +84,8 @@ public class LoginActivity extends C5432aa {
         public void handleMessage(Message message) {
             switch (message.what) {
                 case 7:
-                    if (!C2331d.m10125b((Activity) LoginActivity.this, C2328a.ON_PROGRESS)) {
-                        C2331d.m10114a((Activity) LoginActivity.this, C2328a.ON_PROGRESS, (Bundle) null);
+                    if (!DialogFactory.m10125b((Activity) LoginActivity.this, C2328a.ON_PROGRESS)) {
+                        DialogFactory.m10114a((Activity) LoginActivity.this, C2328a.ON_PROGRESS, (Bundle) null);
                         return;
                     }
                     return;
@@ -154,7 +154,7 @@ public class LoginActivity extends C5432aa {
         this.f16283g = (String) bundle.get("LOGIN_PW_KEY");
         this.f16284h = bundle.getInt("FOCAS_KEY");
         this.f16285i = bundle.getInt("CURSOL_KEY");
-        C2261g.m9763a("INIT", String.valueOf(this.f16284h) + ":onRestoreInstanceState(" + String.valueOf(this.f16285i) + ")");
+        ImageAppLog.debug("INIT", String.valueOf(this.f16284h) + ":onRestoreInstanceState(" + String.valueOf(this.f16285i) + ")");
         m19766a();
     }
 
@@ -240,17 +240,17 @@ public class LoginActivity extends C5432aa {
                             LoginActivity.this.f16287k.mo12185a(false);
                         } else if (i2 == 24) {
                             LoginActivity.this.f16287k.mo12192c(String.valueOf(LoginActivity.this.f16287k.mo12197f().f4547a), null);
-                            C2331d.m10100a((Activity) LoginActivity.this);
+                            DialogFactory.m10100a((Activity) LoginActivity.this);
                             LoginActivity.this.finish();
                         }
                     } else if (i == 18) {
-                        C2331d.m10100a((Activity) LoginActivity.this);
-                        C2331d.m10114a((Activity) LoginActivity.this, C2328a.DIALOG_ID_PIC_LOGIN_ERROR, (Bundle) null);
+                        DialogFactory.m10100a((Activity) LoginActivity.this);
+                        DialogFactory.m10114a((Activity) LoginActivity.this, C2328a.DIALOG_ID_PIC_LOGIN_ERROR, (Bundle) null);
                     } else if (i == 8) {
-                        C2331d.m10100a((Activity) LoginActivity.this);
-                        C2331d.m10114a((Activity) LoginActivity.this, C2328a.DIALOG_ID_CONNECT_FAILED, (Bundle) null);
+                        DialogFactory.m10100a((Activity) LoginActivity.this);
+                        DialogFactory.m10114a((Activity) LoginActivity.this, C2328a.DIALOG_ID_CONNECT_FAILED, (Bundle) null);
                     } else {
-                        C2331d.m10100a((Activity) LoginActivity.this);
+                        DialogFactory.m10100a((Activity) LoginActivity.this);
                         LoginActivity.this.finish();
                     }
                 }
@@ -263,15 +263,15 @@ public class LoginActivity extends C5432aa {
                         if (i == 1) {
                             C2820e.m11790a(LoginActivity.this.f16287k);
                             LoginActivity.this.startActivityForResult(new Intent(LoginActivity.this, TermsActivity.class), 1);
-                            C2331d.m10100a((Activity) LoginActivity.this);
+                            DialogFactory.m10100a((Activity) LoginActivity.this);
                             return;
                         }
-                        C2331d.m10100a((Activity) LoginActivity.this);
-                        C2331d.m10114a((Activity) LoginActivity.this, C2328a.DIALOG_ID_CONNECT_FAILED, (Bundle) null);
+                        DialogFactory.m10100a((Activity) LoginActivity.this);
+                        DialogFactory.m10114a((Activity) LoginActivity.this, C2328a.DIALOG_ID_CONNECT_FAILED, (Bundle) null);
                     } else if (i2 != 22) {
                     } else {
                         if (i == 1) {
-                            C2331d.m10114a((Activity) LoginActivity.this, C2328a.DIALOG_ID_ASK_ID_2_PHONE, (Bundle) null);
+                            DialogFactory.m10114a((Activity) LoginActivity.this, C2328a.DIALOG_ID_ASK_ID_2_PHONE, (Bundle) null);
                             return;
                         }
                         LoginActivity.this.f16280d.setVisibility(8);
@@ -284,7 +284,7 @@ public class LoginActivity extends C5432aa {
             public void mo5072a(boolean z) {
                 if (!LoginActivity.this.isFinishing()) {
                     if (z) {
-                        C2331d.m10114a((Activity) LoginActivity.this, C2328a.DIALOG_ID_PICMATE_ID_OVERRIDE, (Bundle) null);
+                        DialogFactory.m10114a((Activity) LoginActivity.this, C2328a.DIALOG_ID_PICMATE_ID_OVERRIDE, (Bundle) null);
                     } else {
                         LoginActivity.this.f16287k.mo12208q();
                     }
@@ -295,7 +295,7 @@ public class LoginActivity extends C5432aa {
             public void mo5075b(boolean z) {
                 if (!LoginActivity.this.isFinishing()) {
                     if (z) {
-                        C2331d.m10114a((Activity) LoginActivity.this, C2328a.DIALOG_ID_PICMATE_ID_SYNC_SUCCESS, (Bundle) null);
+                        DialogFactory.m10114a((Activity) LoginActivity.this, C2328a.DIALOG_ID_PICMATE_ID_SYNC_SUCCESS, (Bundle) null);
                         C1892f a = C1712b.m6919c().mo4896a();
                         if (a != null && a.mo4886a()) {
                             LoginActivity.this.f16287k.mo12196e(LoginActivity.this.f16282f, LoginActivity.this.f16283g);
@@ -303,7 +303,7 @@ public class LoginActivity extends C5432aa {
                         }
                         return;
                     }
-                    C2331d.m10114a((Activity) LoginActivity.this, C2328a.DIALOG_ID_PICMATE_ID_SYNC_FAILED, (Bundle) null);
+                    DialogFactory.m10114a((Activity) LoginActivity.this, C2328a.DIALOG_ID_PICMATE_ID_SYNC_FAILED, (Bundle) null);
                 }
             }
 
@@ -316,7 +316,7 @@ public class LoginActivity extends C5432aa {
                         LoginActivity.this.f16283g = LoginActivity.this.f16287k.mo12203l();
                         LoginActivity.this.f16278b.setText(LoginActivity.this.f16282f);
                         LoginActivity.this.f16277a.setText(LoginActivity.this.f16283g);
-                        C2331d.m10114a((Activity) LoginActivity.this, C2328a.DIALOG_ID_PICMATE_ID_SYNC_SUCCESS, (Bundle) null);
+                        DialogFactory.m10114a((Activity) LoginActivity.this, C2328a.DIALOG_ID_PICMATE_ID_SYNC_SUCCESS, (Bundle) null);
                         C1892f a = C1712b.m6919c().mo4896a();
                         if (a != null && a.mo4886a()) {
                             LoginActivity.this.f16287k.mo12196e(LoginActivity.this.f16282f, LoginActivity.this.f16283g);
@@ -383,7 +383,7 @@ public class LoginActivity extends C5432aa {
 
     public void onClickNewRegisterButton(View view) {
         if (!this.f16278b.getText().toString().equals("")) {
-            C2331d.m10114a((Activity) this, C2328a.DIALOG_CHANGE_REGIST, (Bundle) null);
+            DialogFactory.m10114a((Activity) this, C2328a.DIALOG_CHANGE_REGIST, (Bundle) null);
             return;
         }
         m19767a(view);
@@ -410,7 +410,7 @@ public class LoginActivity extends C5432aa {
     public void onClickLoginButton(View view) {
         String obj = this.f16278b.getText().toString();
         if (this.f16277a.getText().toString().length() == 0 || obj.length() == 0) {
-            C2331d.m10114a((Activity) this, C2328a.DIALOG_ID_INVALID_INPUT_LOGIN, (Bundle) null);
+            DialogFactory.m10114a((Activity) this, C2328a.DIALOG_ID_INVALID_INPUT_LOGIN, (Bundle) null);
             return;
         }
         m19767a(view);

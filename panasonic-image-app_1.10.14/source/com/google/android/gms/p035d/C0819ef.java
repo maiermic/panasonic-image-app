@@ -12,7 +12,7 @@ import java.util.Set;
 final class C0819ef implements C0625ao, C0835ev {
 
     /* renamed from: a */
-    final /* synthetic */ C0814ea f1856a;
+    final /* synthetic */ GoogleApiManager f1856a;
     /* access modifiers changed from: private */
 
     /* renamed from: b */
@@ -32,7 +32,7 @@ final class C0819ef implements C0625ao, C0835ev {
     /* renamed from: f */
     public boolean f1861f = false;
 
-    public C0819ef(C0814ea eaVar, C0578f fVar, C0798dl<?> dlVar) {
+    public C0819ef(GoogleApiManager eaVar, C0578f fVar, C0798dl<?> dlVar) {
         this.f1856a = eaVar;
         this.f1857b = fVar;
         this.f1858c = dlVar;

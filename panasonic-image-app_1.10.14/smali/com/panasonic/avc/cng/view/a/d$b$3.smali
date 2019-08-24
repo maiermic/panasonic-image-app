@@ -43,11 +43,11 @@
     .line 669
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/a/d$b$3;->a:Lcom/panasonic/avc/cng/view/a/d$b;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/a/d$b;->a:Lcom/panasonic/avc/cng/view/a/d;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/a/d$b;->a:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
     const/16 v1, 0xe
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/a/d;->a(Lcom/panasonic/avc/cng/view/a/d;I)Z
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;->a(Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;I)Z
 
     .line 671
     return-void

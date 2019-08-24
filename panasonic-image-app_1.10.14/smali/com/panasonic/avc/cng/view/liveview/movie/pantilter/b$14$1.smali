@@ -43,9 +43,9 @@
     .line 2385
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b$14$1;->a:Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b$14;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b$14;->b:Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b$14;->b:Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/LiveViewMoviePantilterBaseViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b;->s:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/LiveViewMoviePantilterBaseViewModel;->s:Lcom/panasonic/avc/cng/a/c;
 
     const-string v1, ""
 
@@ -54,9 +54,9 @@
     .line 2387
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b$14$1;->a:Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b$14;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b$14;->b:Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b$14;->b:Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/LiveViewMoviePantilterBaseViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b;->r:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/LiveViewMoviePantilterBaseViewModel;->r:Lcom/panasonic/avc/cng/a/c;
 
     const-string v1, ""
 
@@ -65,9 +65,9 @@
     .line 2390
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b$14$1;->a:Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b$14;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b$14;->b:Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b$14;->b:Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/LiveViewMoviePantilterBaseViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b;->u:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/LiveViewMoviePantilterBaseViewModel;->u:Lcom/panasonic/avc/cng/a/c;
 
     const-string v1, ""
 
@@ -76,9 +76,9 @@
     .line 2392
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b$14$1;->a:Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b$14;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b$14;->b:Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b$14;->b:Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/LiveViewMoviePantilterBaseViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b;->w:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/LiveViewMoviePantilterBaseViewModel;->w:Lcom/panasonic/avc/cng/a/c;
 
     const-string v1, ""
 
@@ -87,11 +87,11 @@
     .line 2395
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b$14$1;->a:Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b$14;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b$14;->b:Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b$14;->b:Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/LiveViewMoviePantilterBaseViewModel;
 
     const/4 v1, 0x1
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b;->e(Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b;Z)Z
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/LiveViewMoviePantilterBaseViewModel;->e(Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/LiveViewMoviePantilterBaseViewModel;Z)Z
 
     .line 2396
     return-void

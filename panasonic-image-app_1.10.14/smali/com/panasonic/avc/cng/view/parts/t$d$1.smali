@@ -43,15 +43,15 @@
     .line 768
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/t$d$1;->a:Lcom/panasonic/avc/cng/view/parts/t$d;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/parts/t$d;->b:Lcom/panasonic/avc/cng/view/parts/t;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/parts/t$d;->b:Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/parts/t;->g:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->g:Lcom/panasonic/avc/cng/a/c;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/parts/t$d$1;->a:Lcom/panasonic/avc/cng/view/parts/t$d;
 
-    iget-object v1, v1, Lcom/panasonic/avc/cng/view/parts/t$d;->b:Lcom/panasonic/avc/cng/view/parts/t;
+    iget-object v1, v1, Lcom/panasonic/avc/cng/view/parts/t$d;->b:Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
-    invoke-static {v1}, Lcom/panasonic/avc/cng/view/parts/t;->b(Lcom/panasonic/avc/cng/view/parts/t;)I
+    invoke-static {v1}, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->b(Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;)I
 
     move-result v1
 
@@ -64,15 +64,15 @@
     .line 769
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/t$d$1;->a:Lcom/panasonic/avc/cng/view/parts/t$d;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/parts/t$d;->b:Lcom/panasonic/avc/cng/view/parts/t;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/parts/t$d;->b:Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/parts/t;->h:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->h:Lcom/panasonic/avc/cng/a/c;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/parts/t$d$1;->a:Lcom/panasonic/avc/cng/view/parts/t$d;
 
-    iget-object v1, v1, Lcom/panasonic/avc/cng/view/parts/t$d;->b:Lcom/panasonic/avc/cng/view/parts/t;
+    iget-object v1, v1, Lcom/panasonic/avc/cng/view/parts/t$d;->b:Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
-    invoke-static {v1}, Lcom/panasonic/avc/cng/view/parts/t;->e(Lcom/panasonic/avc/cng/view/parts/t;)Ljava/util/List;
+    invoke-static {v1}, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->e(Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;)Ljava/util/List;
 
     move-result-object v1
 
@@ -89,9 +89,9 @@
     .line 772
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/t$d$1;->a:Lcom/panasonic/avc/cng/view/parts/t$d;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/parts/t$d;->b:Lcom/panasonic/avc/cng/view/parts/t;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/parts/t$d;->b:Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/parts/t;->b(Lcom/panasonic/avc/cng/view/parts/t;)I
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->b(Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;)I
 
     move-result v0
 
@@ -100,9 +100,9 @@
     .line 773
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/t$d$1;->a:Lcom/panasonic/avc/cng/view/parts/t$d;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/parts/t$d;->b:Lcom/panasonic/avc/cng/view/parts/t;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/parts/t$d;->b:Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/parts/t;->k:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->k:Lcom/panasonic/avc/cng/a/c;
 
     const/4 v1, 0x1
 
@@ -115,19 +115,19 @@
     .line 775
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/t$d$1;->a:Lcom/panasonic/avc/cng/view/parts/t$d;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/parts/t$d;->b:Lcom/panasonic/avc/cng/view/parts/t;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/parts/t$d;->b:Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/parts/t$d$1;->a:Lcom/panasonic/avc/cng/view/parts/t$d;
 
-    iget-object v1, v1, Lcom/panasonic/avc/cng/view/parts/t$d;->b:Lcom/panasonic/avc/cng/view/parts/t;
+    iget-object v1, v1, Lcom/panasonic/avc/cng/view/parts/t$d;->b:Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
-    invoke-static {v1}, Lcom/panasonic/avc/cng/view/parts/t;->b(Lcom/panasonic/avc/cng/view/parts/t;)I
+    invoke-static {v1}, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->b(Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;)I
 
     move-result v1
 
     add-int/lit8 v1, v1, -0x1
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/parts/t;->c(I)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->c(I)V
 
     .line 777
     :cond_0

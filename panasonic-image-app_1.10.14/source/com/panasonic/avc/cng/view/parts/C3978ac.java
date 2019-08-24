@@ -14,10 +14,10 @@ import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.C1892f;
 import com.panasonic.avc.cng.model.p051c.C1860l;
 import com.panasonic.avc.cng.model.service.C1985b;
-import com.panasonic.avc.cng.model.service.C2253z;
-import com.panasonic.avc.cng.view.parts.C3973ab.C3977a;
-import com.panasonic.avc.cng.view.setting.C5596ar;
-import com.panasonic.avc.cng.view.setting.C5602as;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
+import com.panasonic.avc.cng.view.parts.SetPickerPosition.C3977a;
+import com.panasonic.avc.cng.view.setting.SetupWithLiveViewCreativeControlViewModel;
+import com.panasonic.avc.cng.view.setting.SetupWithLiveViewFilterSelectViewModel;
 
 /* renamed from: com.panasonic.avc.cng.view.parts.ac */
 public class C3978ac extends RelativeLayout {
@@ -36,17 +36,17 @@ public class C3978ac extends RelativeLayout {
     public C3980a f13336d;
 
     /* renamed from: e */
-    private C5596ar f13337e;
+    private SetupWithLiveViewCreativeControlViewModel f13337e;
 
     /* renamed from: f */
-    private C5602as f13338f;
+    private SetupWithLiveViewFilterSelectViewModel f13338f;
 
     /* renamed from: g */
     private String[] f13339g;
     /* access modifiers changed from: private */
 
     /* renamed from: h */
-    public C3973ab f13340h;
+    public SetPickerPosition f13340h;
 
     /* renamed from: i */
     private LinearLayout f13341i;
@@ -86,7 +86,7 @@ public class C3978ac extends RelativeLayout {
         super.onSizeChanged(i, i2, i3, i4);
     }
 
-    public C3978ac(Context context, Activity activity, C5596ar arVar) {
+    public C3978ac(Context context, Activity activity, SetupWithLiveViewCreativeControlViewModel arVar) {
         super(context);
         this.f13333a = context;
         this.f13334b = activity;
@@ -100,14 +100,14 @@ public class C3978ac extends RelativeLayout {
             if (C1712b.m6919c() != null) {
                 this.f13343k = C1712b.m6919c().mo4896a();
                 if (this.f13343k != null) {
-                    this.f13344l = C2253z.m9679a(this.f13333a, this.f13343k);
+                    this.f13344l = ServiceFactory.m9679a(this.f13333a, this.f13343k);
                 }
             }
             m16052b();
         }
     }
 
-    public C3978ac(Context context, Activity activity, C5602as asVar) {
+    public C3978ac(Context context, Activity activity, SetupWithLiveViewFilterSelectViewModel asVar) {
         super(context);
         this.f13333a = context;
         this.f13334b = activity;
@@ -121,7 +121,7 @@ public class C3978ac extends RelativeLayout {
             if (C1712b.m6919c() != null) {
                 this.f13343k = C1712b.m6919c().mo4896a();
                 if (this.f13343k != null) {
-                    this.f13344l = C2253z.m9679a(this.f13333a, this.f13343k);
+                    this.f13344l = ServiceFactory.m9679a(this.f13333a, this.f13343k);
                 }
             }
             m16052b();
@@ -171,7 +171,7 @@ public class C3978ac extends RelativeLayout {
         } else {
             b2 = mo9450b(5, 200);
         }
-        this.f13340h = new C3973ab(this.f13333a, b2);
+        this.f13340h = new SetPickerPosition(this.f13333a, b2);
         this.f13340h.setPickerTextFace(Typeface.DEFAULT_BOLD);
         this.f13340h.setCoverType(1);
         this.f13340h.mo9431a(this.f13345m, this.f13341i, this.f13342j, a, i, 17, true);

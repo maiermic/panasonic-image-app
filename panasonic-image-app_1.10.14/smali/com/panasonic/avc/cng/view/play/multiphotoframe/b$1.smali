@@ -52,11 +52,11 @@
     .line 113
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/b$1;->a:Lcom/panasonic/avc/cng/view/play/multiphotoframe/b;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/b;->a(Lcom/panasonic/avc/cng/view/play/multiphotoframe/b;)Lcom/panasonic/avc/cng/view/play/multiphotoframe/c;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/b;->a(Lcom/panasonic/avc/cng/view/play/multiphotoframe/b;)Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameBrowseViewModel;
 
     move-result-object v0
 
-    invoke-virtual {v0, p3}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/c;->d(I)V
+    invoke-virtual {v0, p3}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameBrowseViewModel;->d(I)V
 
     .line 121
     return-void

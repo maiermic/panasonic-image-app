@@ -19,11 +19,11 @@ import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.C1892f;
 import com.panasonic.avc.cng.model.C1912n;
 import com.panasonic.avc.cng.model.C1913o;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.util.C2265k;
 import com.panasonic.avc.cng.util.C2272n;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
 
 public class EasyWiFiPicMateRegistActivity extends C5763k implements C2265k {
 
@@ -54,7 +54,7 @@ public class EasyWiFiPicMateRegistActivity extends C5763k implements C2265k {
         C1712b.m6914a((Activity) this);
         super.onCreate(bundle);
         if (m21343b()) {
-            C2261g.m9770d(f15941d, "onCreate");
+            ImageAppLog.verbose(f15941d, "onCreate");
         }
         setContentView(R.layout.activity_easywifi_picmate_regist);
         this.f15942e = C1913o.m7701a((Context) this);
@@ -82,12 +82,12 @@ public class EasyWiFiPicMateRegistActivity extends C5763k implements C2265k {
     public void onClickNext(View view) {
         if (view == null) {
             super.onClickNext(null);
-        } else if (C2331d.m10125b((Activity) this, C2328a.DIALOG_ID_EASY_WIFI_PICMATE_OVERWRITE)) {
+        } else if (DialogFactory.m10125b((Activity) this, C2328a.DIALOG_ID_EASY_WIFI_PICMATE_OVERWRITE)) {
         } else {
             if (this.f17702a.mo12627h() == null) {
                 m19016a(false);
             } else if (m19016a(true)) {
-                C2331d.m10114a((Activity) this, C2328a.DIALOG_ID_EASY_WIFI_PICMATE_OVERWRITE, (Bundle) null);
+                DialogFactory.m10114a((Activity) this, C2328a.DIALOG_ID_EASY_WIFI_PICMATE_OVERWRITE, (Bundle) null);
             }
         }
     }
@@ -96,7 +96,7 @@ public class EasyWiFiPicMateRegistActivity extends C5763k implements C2265k {
     private boolean m19016a(boolean z) {
         String obj;
         String obj2;
-        if (C2331d.m10125b((Activity) this, C2328a.DIALOG_ID_EASY_WIFI_PICMATE_PROGRESS)) {
+        if (DialogFactory.m10125b((Activity) this, C2328a.DIALOG_ID_EASY_WIFI_PICMATE_PROGRESS)) {
             return false;
         }
         String str = "";
@@ -117,7 +117,7 @@ public class EasyWiFiPicMateRegistActivity extends C5763k implements C2265k {
             C1912n nVar = new C1912n();
             nVar.mo4975a(obj);
             nVar.mo4979c(obj2);
-            C2331d.m10114a((Activity) this, C2328a.DIALOG_ID_EASY_WIFI_PICMATE_PROGRESS, (Bundle) null);
+            DialogFactory.m10114a((Activity) this, C2328a.DIALOG_ID_EASY_WIFI_PICMATE_PROGRESS, (Bundle) null);
             C2272n nVar2 = new C2272n(this, null, 0);
             nVar2.setDaemon(true);
             nVar2.mo5974a((Object) nVar);
@@ -174,7 +174,7 @@ public class EasyWiFiPicMateRegistActivity extends C5763k implements C2265k {
 
     /* renamed from: b */
     public boolean mo5760b(C2272n nVar, int i) {
-        while (!C2331d.m10125b((Activity) this, C2328a.DIALOG_ID_EASY_WIFI_PICMATE_PROGRESS)) {
+        while (!DialogFactory.m10125b((Activity) this, C2328a.DIALOG_ID_EASY_WIFI_PICMATE_PROGRESS)) {
             try {
                 Thread.sleep(100);
             } catch (Exception e) {
@@ -208,8 +208,8 @@ public class EasyWiFiPicMateRegistActivity extends C5763k implements C2265k {
 
     /* renamed from: a */
     public void mo5757a(Object obj, int i) {
-        if (C2331d.m10125b((Activity) this, C2328a.DIALOG_ID_EASY_WIFI_PICMATE_PROGRESS)) {
-            C2331d.m10100a((Activity) this);
+        if (DialogFactory.m10125b((Activity) this, C2328a.DIALOG_ID_EASY_WIFI_PICMATE_PROGRESS)) {
+            DialogFactory.m10100a((Activity) this);
             onClickNext(null);
         }
     }

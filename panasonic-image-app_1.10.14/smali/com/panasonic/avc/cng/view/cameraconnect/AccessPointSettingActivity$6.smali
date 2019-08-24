@@ -124,7 +124,7 @@
 
     const-string v4, "getExtraInfo\u304c\u53d6\u5f97\u3067\u304d\u306a\u3044"
 
-    invoke-static {v1, v4}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v4}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 773
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/cameraconnect/AccessPointSettingActivity$6;->a:Lcom/panasonic/avc/cng/view/cameraconnect/AccessPointSettingActivity;
@@ -234,7 +234,7 @@
     if-ne v0, v4, :cond_a
 
     .line 797
-    invoke-static {v7, v2}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v7, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 799
     const-string v0, "AccessPointSettingActivity"
@@ -257,7 +257,7 @@
 
     move-result-object v2
 
-    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 801
     const-string v0, "<unknown ssid>"
@@ -359,7 +359,7 @@
 
     .line 813
     :cond_a
-    invoke-static {v8, v2}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v8, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 814
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/cameraconnect/AccessPointSettingActivity$6;->a:Lcom/panasonic/avc/cng/view/cameraconnect/AccessPointSettingActivity;
@@ -416,7 +416,7 @@
 
     sget-object v2, Lcom/panasonic/avc/cng/view/b/b$a;->gc:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/view/b/d;->b(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;)Z
+    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->b(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;)Z
 
     move-result v1
 
@@ -501,7 +501,7 @@
 
     move-result-object v0
 
-    invoke-static {v1, v0}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v0}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     goto/16 :goto_3
 
@@ -651,14 +651,14 @@
     if-eqz v0, :cond_12
 
     .line 890
-    invoke-static {v7, v1}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v7, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 892
     const-string v0, "AccessPointSettingActivity"
 
     const-string v1, "WIFI_P2P_CONNECTION_CHANGED_ACTION Connected"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 899
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/AccessPointSettingActivity$6;->a:Lcom/panasonic/avc/cng/view/cameraconnect/AccessPointSettingActivity;
@@ -683,14 +683,14 @@
 
     .line 923
     :cond_12
-    invoke-static {v8, v1}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v8, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 924
     const-string v0, "AccessPointSettingActivity"
 
     const-string v1, "WIFI_P2P_CONNECTION_CHANGED_ACTION disconnected"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 925
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/AccessPointSettingActivity$6;->a:Lcom/panasonic/avc/cng/view/cameraconnect/AccessPointSettingActivity;

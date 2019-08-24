@@ -64,7 +64,7 @@
 
     const-string v2, "OnBurstShutterEnd[cancel]!_burstingMode"
 
-    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 1394
     monitor-exit v1
@@ -89,11 +89,11 @@
     .line 1399
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/m$12;->a:Lcom/panasonic/avc/cng/view/liveview/m;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/m;->c(Lcom/panasonic/avc/cng/view/liveview/m;)Lcom/panasonic/avc/cng/core/a/af;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/m;->c(Lcom/panasonic/avc/cng/view/liveview/m;)Lcom/panasonic/avc/cng/core/a/RecordCommand;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/af;->c()Lcom/panasonic/avc/cng/model/c/h;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/RecordCommand;->c()Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
     move-result-object v0
 
@@ -102,7 +102,7 @@
 
     const-string v3, "OnBurstShutterEnd[TouchCaptureCancel]\u2605\u2605"
 
-    invoke-static {v2, v3}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v2, v3}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 1409
     :goto_1
@@ -144,7 +144,7 @@
 
     new-instance v2, Lcom/panasonic/avc/cng/view/liveview/m$12$1;
 
-    invoke-direct {v2, p0, v0}, Lcom/panasonic/avc/cng/view/liveview/m$12$1;-><init>(Lcom/panasonic/avc/cng/view/liveview/m$12;Lcom/panasonic/avc/cng/model/c/h;)V
+    invoke-direct {v2, p0, v0}, Lcom/panasonic/avc/cng/view/liveview/m$12$1;-><init>(Lcom/panasonic/avc/cng/view/liveview/m$12;Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;)V
 
     invoke-virtual {v1, v2}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
@@ -155,11 +155,11 @@
     :try_start_1
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/m$12;->a:Lcom/panasonic/avc/cng/view/liveview/m;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/m;->c(Lcom/panasonic/avc/cng/view/liveview/m;)Lcom/panasonic/avc/cng/core/a/af;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/m;->c(Lcom/panasonic/avc/cng/view/liveview/m;)Lcom/panasonic/avc/cng/core/a/RecordCommand;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/af;->b()Lcom/panasonic/avc/cng/model/c/h;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/RecordCommand;->b()Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
     move-result-object v0
 
@@ -168,7 +168,7 @@
 
     const-string v3, "OnBurstShutterEnd[CaptureCancel]\u2605\u2605"
 
-    invoke-static {v2, v3}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v2, v3}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_1
 

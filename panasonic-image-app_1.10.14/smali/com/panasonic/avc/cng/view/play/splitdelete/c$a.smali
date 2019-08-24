@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/panasonic/avc/cng/view/play/splitdelete/c;
+    value = Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/panasonic/avc/cng/view/play/splitdelete/c;
+.field final synthetic a:Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;
 
 .field private b:Ljava/lang/String;
 
@@ -23,12 +23,12 @@
 
 
 # direct methods
-.method private constructor <init>(Lcom/panasonic/avc/cng/view/play/splitdelete/c;Ljava/lang/String;Ljava/lang/Runnable;)V
+.method private constructor <init>(Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;Ljava/lang/String;Ljava/lang/Runnable;)V
     .locals 0
 
     .prologue
     .line 141
-    iput-object p1, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/c$a;->a:Lcom/panasonic/avc/cng/view/play/splitdelete/c;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/c$a;->a:Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,12 +42,12 @@
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/panasonic/avc/cng/view/play/splitdelete/c;Ljava/lang/String;Ljava/lang/Runnable;Lcom/panasonic/avc/cng/view/play/splitdelete/c$1;)V
+.method synthetic constructor <init>(Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;Ljava/lang/String;Ljava/lang/Runnable;Lcom/panasonic/avc/cng/view/play/splitdelete/c$1;)V
     .locals 0
 
     .prologue
     .line 127
-    invoke-direct {p0, p1, p2, p3}, Lcom/panasonic/avc/cng/view/play/splitdelete/c$a;-><init>(Lcom/panasonic/avc/cng/view/play/splitdelete/c;Ljava/lang/String;Ljava/lang/Runnable;)V
+    invoke-direct {p0, p1, p2, p3}, Lcom/panasonic/avc/cng/view/play/splitdelete/c$a;-><init>(Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;Ljava/lang/String;Ljava/lang/Runnable;)V
 
     return-void
 .end method

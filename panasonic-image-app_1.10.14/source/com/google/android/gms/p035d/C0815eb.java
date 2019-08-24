@@ -4,9 +4,9 @@ package com.google.android.gms.p035d;
 final class C0815eb implements C0801do {
 
     /* renamed from: a */
-    private /* synthetic */ C0814ea f1841a;
+    private /* synthetic */ GoogleApiManager f1841a;
 
-    C0815eb(C0814ea eaVar) {
+    C0815eb(GoogleApiManager eaVar) {
         this.f1841a = eaVar;
     }
 

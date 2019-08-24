@@ -43,16 +43,16 @@
     .line 332
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/snapmovie/f$4;->a:Lcom/panasonic/avc/cng/view/play/snapmovie/f;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/snapmovie/f;->a(Lcom/panasonic/avc/cng/view/play/snapmovie/f;)Lcom/panasonic/avc/cng/core/b/b/d;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/snapmovie/f;->a(Lcom/panasonic/avc/cng/view/play/snapmovie/f;)Lcom/panasonic/avc/cng/core/b/b/OGLDisplayRenderer;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/b/b/d;->b()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/b/b/OGLDisplayRenderer;->b()V
 
     .line 334
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/snapmovie/f$4;->a:Lcom/panasonic/avc/cng/view/play/snapmovie/f;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/snapmovie/f;->a(Lcom/panasonic/avc/cng/view/play/snapmovie/f;)Lcom/panasonic/avc/cng/core/b/b/d;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/snapmovie/f;->a(Lcom/panasonic/avc/cng/view/play/snapmovie/f;)Lcom/panasonic/avc/cng/core/b/b/OGLDisplayRenderer;
 
     move-result-object v0
 
@@ -60,7 +60,7 @@
 
     invoke-direct {v1, p0}, Lcom/panasonic/avc/cng/view/play/snapmovie/f$4$1;-><init>(Lcom/panasonic/avc/cng/view/play/snapmovie/f$4;)V
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/core/b/b/d;->a(Ljava/lang/Runnable;)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/core/b/b/OGLDisplayRenderer;->a(Ljava/lang/Runnable;)V
 
     .line 343
     const-wide/16 v0, 0x64
@@ -147,7 +147,7 @@
 
     move-result-object v3
 
-    invoke-static {v2, v3}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v2, v3}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 305
     :goto_0
@@ -177,7 +177,7 @@
     :goto_1
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/snapmovie/f$4;->a:Lcom/panasonic/avc/cng/view/play/snapmovie/f;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/snapmovie/f;->a(Lcom/panasonic/avc/cng/view/play/snapmovie/f;)Lcom/panasonic/avc/cng/core/b/b/d;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/snapmovie/f;->a(Lcom/panasonic/avc/cng/view/play/snapmovie/f;)Lcom/panasonic/avc/cng/core/b/b/OGLDisplayRenderer;
 
     move-result-object v0
 
@@ -187,7 +187,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1, p1, p2}, Lcom/panasonic/avc/cng/core/b/b/d;->a(Lcom/panasonic/avc/cng/core/b/b/c;J)V
+    invoke-virtual {v0, v1, p1, p2}, Lcom/panasonic/avc/cng/core/b/b/OGLDisplayRenderer;->a(Lcom/panasonic/avc/cng/core/b/b/c;J)V
 
     .line 326
     return-void
@@ -275,7 +275,7 @@
     .line 351
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/snapmovie/f$4;->a:Lcom/panasonic/avc/cng/view/play/snapmovie/f;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/snapmovie/f;->a(Lcom/panasonic/avc/cng/view/play/snapmovie/f;)Lcom/panasonic/avc/cng/core/b/b/d;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/snapmovie/f;->a(Lcom/panasonic/avc/cng/view/play/snapmovie/f;)Lcom/panasonic/avc/cng/core/b/b/OGLDisplayRenderer;
 
     move-result-object v0
 
@@ -284,11 +284,11 @@
     .line 353
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/snapmovie/f$4;->a:Lcom/panasonic/avc/cng/view/play/snapmovie/f;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/snapmovie/f;->a(Lcom/panasonic/avc/cng/view/play/snapmovie/f;)Lcom/panasonic/avc/cng/core/b/b/d;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/snapmovie/f;->a(Lcom/panasonic/avc/cng/view/play/snapmovie/f;)Lcom/panasonic/avc/cng/core/b/b/OGLDisplayRenderer;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/b/b/d;->c()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/b/b/OGLDisplayRenderer;->c()V
 
     .line 355
     :cond_0
@@ -314,7 +314,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 390
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/snapmovie/f$4;->a:Lcom/panasonic/avc/cng/view/play/snapmovie/f;

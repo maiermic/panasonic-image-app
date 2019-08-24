@@ -10,7 +10,7 @@
 
 .field protected e:Lcom/panasonic/avc/cng/model/service/p;
 
-.field protected f:Lcom/panasonic/avc/cng/core/c/s;
+.field protected f:Lcom/panasonic/avc/cng/core/c/Picmate;
 
 .field protected g:Lcom/panasonic/avc/cng/model/n;
 
@@ -85,7 +85,7 @@
 
     .prologue
     .line 182
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/a;->f:Lcom/panasonic/avc/cng/core/c/s;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/a;->f:Lcom/panasonic/avc/cng/core/c/Picmate;
 
     if-eqz v0, :cond_0
 
@@ -128,7 +128,7 @@
 
     .prologue
     .line 134
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/a;->f:Lcom/panasonic/avc/cng/core/c/s;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/a;->f:Lcom/panasonic/avc/cng/core/c/Picmate;
 
     if-eqz v0, :cond_0
 
@@ -210,14 +210,14 @@
     :cond_0
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/a;->c:Landroid/content/Context;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/z;->a(Landroid/content/Context;)Lcom/panasonic/avc/cng/core/c/s;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->a(Landroid/content/Context;)Lcom/panasonic/avc/cng/core/c/Picmate;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/view/setting/a;->f:Lcom/panasonic/avc/cng/core/c/s;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/view/setting/a;->f:Lcom/panasonic/avc/cng/core/c/Picmate;
 
     .line 87
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/a;->f:Lcom/panasonic/avc/cng/core/c/s;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/a;->f:Lcom/panasonic/avc/cng/core/c/Picmate;
 
     if-eqz v0, :cond_1
 
@@ -226,11 +226,11 @@
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/a;->d:Landroid/os/Handler;
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/model/service/z;->a(Landroid/content/Context;Landroid/os/Handler;)Lcom/panasonic/avc/cng/core/c/s;
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->a(Landroid/content/Context;Landroid/os/Handler;)Lcom/panasonic/avc/cng/core/c/Picmate;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/view/setting/a;->f:Lcom/panasonic/avc/cng/core/c/s;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/view/setting/a;->f:Lcom/panasonic/avc/cng/core/c/Picmate;
 
     .line 91
     :cond_1
@@ -242,7 +242,7 @@
 
     .prologue
     .line 241
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/a;->f:Lcom/panasonic/avc/cng/core/c/s;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/a;->f:Lcom/panasonic/avc/cng/core/c/Picmate;
 
     if-eqz v0, :cond_0
 
@@ -285,14 +285,14 @@
 
     .prologue
     .line 99
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/a;->f:Lcom/panasonic/avc/cng/core/c/s;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/a;->f:Lcom/panasonic/avc/cng/core/c/Picmate;
 
     if-eqz v0, :cond_0
 
     .line 101
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/a;->f:Lcom/panasonic/avc/cng/core/c/s;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/a;->f:Lcom/panasonic/avc/cng/core/c/Picmate;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/c/s;->o()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/c/Picmate;->o()V
 
     .line 103
     :cond_0

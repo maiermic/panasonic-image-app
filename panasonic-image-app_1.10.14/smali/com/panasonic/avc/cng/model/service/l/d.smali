@@ -11,9 +11,9 @@
 
 .field private b:Lcom/panasonic/avc/cng/model/c/a;
 
-.field private c:Lcom/panasonic/avc/cng/core/a/w;
+.field private c:Lcom/panasonic/avc/cng/core/a/MenuVianaCommand;
 
-.field private d:Lcom/panasonic/avc/cng/core/a/ap;
+.field private d:Lcom/panasonic/avc/cng/core/a/StatusVianaCommand;
 
 .field private e:Ljava/lang/String;
 
@@ -41,10 +41,10 @@
     iput-object v0, p0, Lcom/panasonic/avc/cng/model/service/l/d;->b:Lcom/panasonic/avc/cng/model/c/a;
 
     .line 23
-    iput-object v0, p0, Lcom/panasonic/avc/cng/model/service/l/d;->c:Lcom/panasonic/avc/cng/core/a/w;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/model/service/l/d;->c:Lcom/panasonic/avc/cng/core/a/MenuVianaCommand;
 
     .line 24
-    iput-object v0, p0, Lcom/panasonic/avc/cng/model/service/l/d;->d:Lcom/panasonic/avc/cng/core/a/ap;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/model/service/l/d;->d:Lcom/panasonic/avc/cng/core/a/StatusVianaCommand;
 
     .line 26
     const-string v0, ""
@@ -70,12 +70,12 @@
     return-void
 .end method
 
-.method static synthetic a(Lcom/panasonic/avc/cng/model/service/l/d;)Lcom/panasonic/avc/cng/core/a/w;
+.method static synthetic a(Lcom/panasonic/avc/cng/model/service/l/d;)Lcom/panasonic/avc/cng/core/a/MenuVianaCommand;
     .locals 1
 
     .prologue
     .line 18
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/l/d;->c:Lcom/panasonic/avc/cng/core/a/w;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/l/d;->c:Lcom/panasonic/avc/cng/core/a/MenuVianaCommand;
 
     return-object v0
 .end method
@@ -100,12 +100,12 @@
     return p1
 .end method
 
-.method static synthetic b(Lcom/panasonic/avc/cng/model/service/l/d;)Lcom/panasonic/avc/cng/core/a/ap;
+.method static synthetic b(Lcom/panasonic/avc/cng/model/service/l/d;)Lcom/panasonic/avc/cng/core/a/StatusVianaCommand;
     .locals 1
 
     .prologue
     .line 18
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/l/d;->d:Lcom/panasonic/avc/cng/core/a/ap;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/l/d;->d:Lcom/panasonic/avc/cng/core/a/StatusVianaCommand;
 
     return-object v0
 .end method
@@ -137,11 +137,11 @@
 
     .prologue
     .line 71
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
@@ -186,11 +186,11 @@
     const/4 v1, 0x0
 
     .line 46
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
@@ -211,10 +211,10 @@
 
     .line 59
     :goto_0
-    iput-object v1, p0, Lcom/panasonic/avc/cng/model/service/l/d;->c:Lcom/panasonic/avc/cng/core/a/w;
+    iput-object v1, p0, Lcom/panasonic/avc/cng/model/service/l/d;->c:Lcom/panasonic/avc/cng/core/a/MenuVianaCommand;
 
     .line 60
-    iput-object v1, p0, Lcom/panasonic/avc/cng/model/service/l/d;->d:Lcom/panasonic/avc/cng/core/a/ap;
+    iput-object v1, p0, Lcom/panasonic/avc/cng/model/service/l/d;->d:Lcom/panasonic/avc/cng/core/a/StatusVianaCommand;
 
     .line 61
     return-void
@@ -245,11 +245,11 @@
 
     .prologue
     .line 317
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
@@ -269,18 +269,18 @@
 
     .line 328
     :cond_1
-    iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/l/d;->d:Lcom/panasonic/avc/cng/core/a/ap;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/l/d;->d:Lcom/panasonic/avc/cng/core/a/StatusVianaCommand;
 
     if-nez v1, :cond_2
 
     .line 330
-    new-instance v1, Lcom/panasonic/avc/cng/core/a/ap;
+    new-instance v1, Lcom/panasonic/avc/cng/core/a/StatusVianaCommand;
 
     iget-object v0, v0, Lcom/panasonic/avc/cng/model/f;->d:Ljava/lang/String;
 
-    invoke-direct {v1, v0}, Lcom/panasonic/avc/cng/core/a/ap;-><init>(Ljava/lang/String;)V
+    invoke-direct {v1, v0}, Lcom/panasonic/avc/cng/core/a/StatusVianaCommand;-><init>(Ljava/lang/String;)V
 
-    iput-object v1, p0, Lcom/panasonic/avc/cng/model/service/l/d;->d:Lcom/panasonic/avc/cng/core/a/ap;
+    iput-object v1, p0, Lcom/panasonic/avc/cng/model/service/l/d;->d:Lcom/panasonic/avc/cng/core/a/StatusVianaCommand;
 
     .line 334
     :cond_2
@@ -326,11 +326,11 @@
 
     .prologue
     .line 209
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
@@ -350,33 +350,33 @@
 
     .line 223
     :cond_1
-    iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/l/d;->c:Lcom/panasonic/avc/cng/core/a/w;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/l/d;->c:Lcom/panasonic/avc/cng/core/a/MenuVianaCommand;
 
     if-nez v1, :cond_2
 
     .line 225
-    new-instance v1, Lcom/panasonic/avc/cng/core/a/w;
+    new-instance v1, Lcom/panasonic/avc/cng/core/a/MenuVianaCommand;
 
     iget-object v2, v0, Lcom/panasonic/avc/cng/model/f;->d:Ljava/lang/String;
 
-    invoke-direct {v1, v2}, Lcom/panasonic/avc/cng/core/a/w;-><init>(Ljava/lang/String;)V
+    invoke-direct {v1, v2}, Lcom/panasonic/avc/cng/core/a/MenuVianaCommand;-><init>(Ljava/lang/String;)V
 
-    iput-object v1, p0, Lcom/panasonic/avc/cng/model/service/l/d;->c:Lcom/panasonic/avc/cng/core/a/w;
+    iput-object v1, p0, Lcom/panasonic/avc/cng/model/service/l/d;->c:Lcom/panasonic/avc/cng/core/a/MenuVianaCommand;
 
     .line 229
     :cond_2
-    iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/l/d;->d:Lcom/panasonic/avc/cng/core/a/ap;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/l/d;->d:Lcom/panasonic/avc/cng/core/a/StatusVianaCommand;
 
     if-nez v1, :cond_3
 
     .line 231
-    new-instance v1, Lcom/panasonic/avc/cng/core/a/ap;
+    new-instance v1, Lcom/panasonic/avc/cng/core/a/StatusVianaCommand;
 
     iget-object v0, v0, Lcom/panasonic/avc/cng/model/f;->d:Ljava/lang/String;
 
-    invoke-direct {v1, v0}, Lcom/panasonic/avc/cng/core/a/ap;-><init>(Ljava/lang/String;)V
+    invoke-direct {v1, v0}, Lcom/panasonic/avc/cng/core/a/StatusVianaCommand;-><init>(Ljava/lang/String;)V
 
-    iput-object v1, p0, Lcom/panasonic/avc/cng/model/service/l/d;->d:Lcom/panasonic/avc/cng/core/a/ap;
+    iput-object v1, p0, Lcom/panasonic/avc/cng/model/service/l/d;->d:Lcom/panasonic/avc/cng/core/a/StatusVianaCommand;
 
     .line 239
     :cond_3

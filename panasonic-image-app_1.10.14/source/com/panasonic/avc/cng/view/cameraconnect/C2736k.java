@@ -15,9 +15,9 @@ import android.os.Handler;
 import com.panasonic.avc.cng.imageapp.C1701a.C1702a;
 import com.panasonic.avc.cng.model.service.C2043f;
 import com.panasonic.avc.cng.model.service.C2043f.C2046c;
-import com.panasonic.avc.cng.model.service.C2253z;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
 import com.panasonic.avc.cng.p038a.C1342a;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -36,7 +36,7 @@ public class C2736k extends C1342a {
     /* access modifiers changed from: private */
 
     /* renamed from: d */
-    public C2754l f8474d;
+    public WifiUtil f8474d;
     /* access modifiers changed from: private */
 
     /* renamed from: e */
@@ -157,7 +157,7 @@ public class C2736k extends C1342a {
     public C2736k(Context context, Handler handler, C2752a aVar) {
         super(context, handler);
         this.f8473c = aVar;
-        this.f8474d = new C2754l(this.f3706a);
+        this.f8474d = new WifiUtil(this.f3706a);
         this.f8479i = null;
         this.f8475e = 0;
         this.f8477g = 0;
@@ -449,7 +449,7 @@ public class C2736k extends C1342a {
     /* renamed from: n */
     public int m11326n() {
         C2046c cVar = null;
-        C2043f b = C2253z.m9688b(this.f3706a, true);
+        C2043f b = ServiceFactory.m9688b(this.f3706a, true);
         for (int i = 0; i < 25; i++) {
             cVar = b.mo5319a(0);
             if (cVar != null || m11325m()) {
@@ -539,19 +539,19 @@ public class C2736k extends C1342a {
     public int m11309b(C2649a aVar, boolean z, boolean z2, int i) {
         int i2 = 3;
         if (aVar == null) {
-            C2261g.m9769c("WifiConnectViewModel", "ConnectWifiAP2: AccessPointInfo is null...");
+            ImageAppLog.error("WifiConnectViewModel", "ConnectWifiAP2: AccessPointInfo is null...");
             return 4;
         }
         if (aVar.mo6533c()) {
             WifiConfiguration a = this.f8474d.mo6733a(aVar.mo6528a(), aVar.mo6534d());
             if (a == null) {
-                C2261g.m9769c("WifiConnectViewModel", "ConnectWifiAP2: CreateNewConfig() is failed...");
+                ImageAppLog.error("WifiConnectViewModel", "ConnectWifiAP2: CreateNewConfig() is failed...");
                 return 4;
             }
             aVar.mo6529a(a);
         }
         if (this.f8474d.mo6739a(aVar.mo6532b())) {
-            C2261g.m9771e("WifiConnectViewModel", "ConnectWifiAP2: Already Connected.");
+            ImageAppLog.info("WifiConnectViewModel", "ConnectWifiAP2: Already Connected.");
             return 3;
         }
         this.f8478h = 0;
@@ -562,56 +562,56 @@ public class C2736k extends C1342a {
                 if (intent != null) {
                     String action = intent.getAction();
                     if (action != null) {
-                        C2261g.m9771e("BroadcastReceiver", action);
+                        ImageAppLog.info("BroadcastReceiver", action);
                         if (action.equals("android.net.wifi.supplicant.STATE_CHANGE")) {
                             SupplicantState supplicantState = (SupplicantState) intent.getParcelableExtra("newState");
                             if (supplicantState != null) {
                                 switch (C27519.f8521a[supplicantState.ordinal()]) {
                                     case 1:
-                                        C2261g.m9771e("BroadcastReceiver", "ASSOCIATED");
+                                        ImageAppLog.info("BroadcastReceiver", "ASSOCIATED");
                                         break;
                                     case 2:
-                                        C2261g.m9771e("BroadcastReceiver", "ASSOCIATING");
+                                        ImageAppLog.info("BroadcastReceiver", "ASSOCIATING");
                                         break;
                                     case 3:
-                                        C2261g.m9771e("BroadcastReceiver", "AUTHENTICATING");
+                                        ImageAppLog.info("BroadcastReceiver", "AUTHENTICATING");
                                         break;
                                     case 4:
-                                        C2261g.m9771e("BroadcastReceiver", "COMPLETED");
+                                        ImageAppLog.info("BroadcastReceiver", "COMPLETED");
                                         break;
                                     case 5:
-                                        C2261g.m9771e("BroadcastReceiver", "DISCONNECTED");
+                                        ImageAppLog.info("BroadcastReceiver", "DISCONNECTED");
                                         break;
                                     case 6:
-                                        C2261g.m9771e("BroadcastReceiver", "DORMANT");
+                                        ImageAppLog.info("BroadcastReceiver", "DORMANT");
                                         break;
                                     case 7:
-                                        C2261g.m9771e("BroadcastReceiver", "FOUR_WAY_HANDSHAKE");
+                                        ImageAppLog.info("BroadcastReceiver", "FOUR_WAY_HANDSHAKE");
                                         break;
                                     case C1702a.HorizontalPicker_title_area_width /*8*/:
-                                        C2261g.m9771e("BroadcastReceiver", "GROUP_HANDSHAKE");
+                                        ImageAppLog.info("BroadcastReceiver", "GROUP_HANDSHAKE");
                                         break;
                                     case C1702a.HorizontalPicker_title_image /*9*/:
-                                        C2261g.m9771e("BroadcastReceiver", "INACTIVE");
+                                        ImageAppLog.info("BroadcastReceiver", "INACTIVE");
                                         break;
                                     case C1702a.HorizontalPicker_right_blank_area_width /*10*/:
-                                        C2261g.m9771e("BroadcastReceiver", "INTERFACE_DISABLED");
+                                        ImageAppLog.info("BroadcastReceiver", "INTERFACE_DISABLED");
                                         break;
                                     case C1702a.HorizontalPicker_hairline_visible /*11*/:
-                                        C2261g.m9771e("BroadcastReceiver", "INVALID");
+                                        ImageAppLog.info("BroadcastReceiver", "INVALID");
                                         break;
                                     case 12:
-                                        C2261g.m9771e("BroadcastReceiver", "SCANNING");
+                                        ImageAppLog.info("BroadcastReceiver", "SCANNING");
                                         break;
                                     case 13:
-                                        C2261g.m9771e("BroadcastReceiver", "UNINITIALIZED");
+                                        ImageAppLog.info("BroadcastReceiver", "UNINITIALIZED");
                                         break;
                                     default:
-                                        C2261g.m9771e("BroadcastReceiver", "Unknown");
+                                        ImageAppLog.info("BroadcastReceiver", "Unknown");
                                         break;
                                 }
                                 if (intent.getIntExtra("supplicantError", -1) == 1) {
-                                    C2261g.m9769c("BroadcastReceiver", "ERROR_AUTHENTICATING");
+                                    ImageAppLog.error("BroadcastReceiver", "ERROR_AUTHENTICATING");
                                     C2736k.this.f8478h = 6;
                                     countDownLatch.countDown();
                                 }
@@ -620,55 +620,55 @@ public class C2736k extends C1342a {
                             NetworkInfo networkInfo = (NetworkInfo) intent.getParcelableExtra("networkInfo");
                             if (networkInfo == null) {
                                 if (C2736k.this.f8474d.mo6739a(b)) {
-                                    C2261g.m9769c("WifiConnectViewModel", "ConnectivityManager.CONNECTIVITY_ACTION　接続OK");
+                                    ImageAppLog.error("WifiConnectViewModel", "ConnectivityManager.CONNECTIVITY_ACTION　接続OK");
                                     C2736k.this.f8478h = 3;
                                     countDownLatch.countDown();
                                 }
                             } else if (networkInfo.getExtraInfo() == null) {
-                                C2261g.m9769c("WifiConnectViewModel", "WifiManager.CONNECTIVITY_ACTION getExtraInfoが取得できない");
+                                ImageAppLog.error("WifiConnectViewModel", "WifiManager.CONNECTIVITY_ACTION getExtraInfoが取得できない");
                                 if (C2736k.this.f8474d.mo6739a(b)) {
-                                    C2261g.m9769c("WifiConnectViewModel", "指定APに接続されている");
+                                    ImageAppLog.error("WifiConnectViewModel", "指定APに接続されている");
                                     C2736k.this.f8478h = 3;
                                     countDownLatch.countDown();
                                 }
                             } else if (!networkInfo.getExtraInfo().equals(b.SSID)) {
-                                C2261g.m9769c("WifiConnectViewModel", "CONNECTIVITY_ACTION ターゲットSSIDじゃない" + networkInfo.getExtraInfo());
+                                ImageAppLog.error("WifiConnectViewModel", "CONNECTIVITY_ACTION ターゲットSSIDじゃない" + networkInfo.getExtraInfo());
                             } else {
                                 State state = networkInfo.getState();
                                 if (state == State.CONNECTED) {
-                                    C2261g.m9769c("WifiConnectViewModel", "ConnectivityManager.CONNECTIVITY_ACTION　接続OK");
+                                    ImageAppLog.error("WifiConnectViewModel", "ConnectivityManager.CONNECTIVITY_ACTION　接続OK");
                                     C2736k.this.f8478h = 3;
                                     countDownLatch.countDown();
                                     return;
                                 }
-                                C2261g.m9769c("WifiConnectViewModel", "ConnectivityManager.CONNECTIVITY_ACTION: 接続NG " + state);
+                                ImageAppLog.error("WifiConnectViewModel", "ConnectivityManager.CONNECTIVITY_ACTION: 接続NG " + state);
                             }
                         } else if (action.equals("android.net.wifi.STATE_CHANGE")) {
                             NetworkInfo networkInfo2 = (NetworkInfo) intent.getParcelableExtra("networkInfo");
                             if (networkInfo2 == null) {
                                 if (C2736k.this.f8474d.mo6739a(b)) {
-                                    C2261g.m9769c("WifiConnectViewModel", "WifiManager.NETWORK_STATE_CHANGED_ACTION 接続OK");
+                                    ImageAppLog.error("WifiConnectViewModel", "WifiManager.NETWORK_STATE_CHANGED_ACTION 接続OK");
                                     C2736k.this.f8478h = 3;
                                     countDownLatch.countDown();
                                 }
                             } else if (networkInfo2.getExtraInfo() == null) {
-                                C2261g.m9769c("WifiConnectViewModel", "WifiManager.NETWORK_STATE_CHANGED_ACTION getExtraInfoが取得できない");
+                                ImageAppLog.error("WifiConnectViewModel", "WifiManager.NETWORK_STATE_CHANGED_ACTION getExtraInfoが取得できない");
                                 if (C2736k.this.f8474d.mo6739a(b)) {
-                                    C2261g.m9769c("WifiConnectViewModel", "指定APに接続されている");
+                                    ImageAppLog.error("WifiConnectViewModel", "指定APに接続されている");
                                     C2736k.this.f8478h = 3;
                                     countDownLatch.countDown();
                                 }
                             } else if (!networkInfo2.getExtraInfo().equals(b.SSID)) {
-                                C2261g.m9769c("WifiConnectViewModel", "NETWORK_STATE_CHANGED_ACTION ターゲットSSIDじゃない" + networkInfo2.getExtraInfo());
+                                ImageAppLog.error("WifiConnectViewModel", "NETWORK_STATE_CHANGED_ACTION ターゲットSSIDじゃない" + networkInfo2.getExtraInfo());
                             } else {
                                 State state2 = networkInfo2.getState();
                                 if (state2 == State.CONNECTED) {
-                                    C2261g.m9769c("WifiConnectViewModel", "WifiManager.NETWORK_STATE_CHANGED_ACTION 接続OK");
+                                    ImageAppLog.error("WifiConnectViewModel", "WifiManager.NETWORK_STATE_CHANGED_ACTION 接続OK");
                                     C2736k.this.f8478h = 3;
                                     countDownLatch.countDown();
                                     return;
                                 }
-                                C2261g.m9769c("WifiConnectViewModel", "WifiManager.NETWORK_STATE_CHANGED_ACTION: 接続NG " + state2);
+                                ImageAppLog.error("WifiConnectViewModel", "WifiManager.NETWORK_STATE_CHANGED_ACTION: 接続NG " + state2);
                             }
                         }
                     }
@@ -685,18 +685,18 @@ public class C2736k extends C1342a {
                 if (i3 >= i) {
                     break;
                 }
-                C2261g.m9769c("WifiConnectViewModel", "ConnectWifiAP2: ConnectWifiAP() waiting..." + i3);
+                ImageAppLog.error("WifiConnectViewModel", "ConnectWifiAP2: ConnectWifiAP() waiting..." + i3);
                 if (m11325m()) {
-                    C2261g.m9769c("WifiConnectViewModel", "停止要求確認　Break");
+                    ImageAppLog.error("WifiConnectViewModel", "停止要求確認　Break");
                     break;
                 }
                 try {
                     if (countDownLatch.await(1, TimeUnit.SECONDS)) {
-                        C2261g.m9769c("WifiConnectViewModel", "latch確認　Break");
+                        ImageAppLog.error("WifiConnectViewModel", "latch確認　Break");
                         break;
                     }
                     if (i3 % 25 == 15 && this.f8474d.mo6747b(aVar.mo6532b())) {
-                        C2261g.m9769c("WifiConnectViewModel", "指定APに接続されていない→再接続");
+                        ImageAppLog.error("WifiConnectViewModel", "指定APに接続されていない→再接続");
                         this.f8474d.mo6740a(aVar.mo6532b(), true);
                     }
                     i3++;
@@ -705,7 +705,7 @@ public class C2736k extends C1342a {
                 }
             }
         } else {
-            C2261g.m9769c("WifiConnectViewModel", "ConnectWifiAP2: ConnectWifiAP() is failed...");
+            ImageAppLog.error("WifiConnectViewModel", "ConnectWifiAP2: ConnectWifiAP() is failed...");
             this.f8478h = 4;
         }
         if (this.f8474d != null && !z) {
@@ -745,7 +745,7 @@ public class C2736k extends C1342a {
         m11318c(false);
      */
     /* JADX WARNING: Code restructure failed: missing block: B:37:0x00b2, code lost:
-        com.panasonic.avc.cng.util.C2261g.m9763a("WifiConnectViewModel", "FindTargetAP() Success!!");
+        com.panasonic.avc.cng.util.ImageAppLog.debug("WifiConnectViewModel", "FindTargetAP() Success!!");
      */
     /* JADX WARNING: Code restructure failed: missing block: B:54:?, code lost:
         return r0;
@@ -764,7 +764,7 @@ public class C2736k extends C1342a {
             r3 = 1
             r2[r3] = r15
             java.lang.String r1 = java.lang.String.format(r1, r2)
-            com.panasonic.avc.cng.util.C2261g.m9763a(r0, r1)
+            com.panasonic.avc.cng.util.ImageAppLog.debug(r0, r1)
             r3 = 0
             r2 = 0
             if (r15 != 0) goto L_0x0045
@@ -784,7 +784,7 @@ public class C2736k extends C1342a {
         L_0x002f:
             java.lang.String r0 = "WifiConnectViewModel"
             java.lang.String r1 = "FindTargetAP() Canceled... "
-            com.panasonic.avc.cng.util.C2261g.m9763a(r0, r1)
+            com.panasonic.avc.cng.util.ImageAppLog.debug(r0, r1)
         L_0x0036:
             if (r2 == 0) goto L_0x003c
             r0 = 0
@@ -792,7 +792,7 @@ public class C2736k extends C1342a {
         L_0x003c:
             java.lang.String r0 = "WifiConnectViewModel"
             java.lang.String r1 = "FindTargetAP() Failed... "
-            com.panasonic.avc.cng.util.C2261g.m9763a(r0, r1)
+            com.panasonic.avc.cng.util.ImageAppLog.debug(r0, r1)
             r0 = 0
         L_0x0044:
             return r0
@@ -811,7 +811,7 @@ public class C2736k extends C1342a {
         L_0x005a:
             java.lang.String r0 = "WifiConnectViewModel"
             java.lang.String r1 = "FindTargetAP() time out... "
-            com.panasonic.avc.cng.util.C2261g.m9763a(r0, r1)
+            com.panasonic.avc.cng.util.ImageAppLog.debug(r0, r1)
             goto L_0x0036
         L_0x0062:
             r10 = 10000(0x2710, double:4.9407E-320)
@@ -852,7 +852,7 @@ public class C2736k extends C1342a {
         L_0x00b2:
             java.lang.String r1 = "WifiConnectViewModel"
             java.lang.String r2 = "FindTargetAP() Success!!"
-            com.panasonic.avc.cng.util.C2261g.m9763a(r1, r2)
+            com.panasonic.avc.cng.util.ImageAppLog.debug(r1, r2)
             goto L_0x0044
         L_0x00ba:
             int r0 = r4 + 1
@@ -860,7 +860,7 @@ public class C2736k extends C1342a {
             if (r0 <= r3) goto L_0x00c9
             java.lang.String r0 = "WifiConnectViewModel"
             java.lang.String r1 = "FindTargetAP() empty time out... "
-            com.panasonic.avc.cng.util.C2261g.m9763a(r0, r1)
+            com.panasonic.avc.cng.util.ImageAppLog.debug(r0, r1)
             goto L_0x0036
         L_0x00c9:
             r4 = 500(0x1f4, double:2.47E-321)

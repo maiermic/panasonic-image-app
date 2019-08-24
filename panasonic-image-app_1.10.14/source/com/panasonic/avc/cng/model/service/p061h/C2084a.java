@@ -11,7 +11,7 @@ import android.os.Handler;
 import android.preference.PreferenceManager;
 import android.widget.Toast;
 import com.felicanetworks.mfc.C0346m;
-import com.panasonic.avc.cng.application.p039a.C1351b;
+import com.panasonic.avc.cng.application.p039a.GoogleTagManager;
 import com.panasonic.avc.cng.imageapp.C1701a.C1702a;
 import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.C1712b;
@@ -22,9 +22,9 @@ import com.panasonic.avc.cng.model.service.C2206o.C2207a;
 import com.panasonic.avc.cng.model.service.geotagservice.C2078d;
 import com.panasonic.avc.cng.model.service.geotagservice.GeoTagProvider;
 import com.panasonic.avc.cng.model.service.p056c.C2020c;
-import com.panasonic.avc.cng.util.C2261g;
-import com.panasonic.avc.cng.view.common.p074a.C2803d;
-import com.panasonic.avc.cng.view.common.p074a.C2803d.C2806a;
+import com.panasonic.avc.cng.util.ImageAppLog;
+import com.panasonic.avc.cng.view.common.p074a.NfcWrapper;
+import com.panasonic.avc.cng.view.common.p074a.NfcWrapper.C2806a;
 import com.panasonic.avc.cng.view.common.p074a.C2807e;
 import java.io.IOException;
 import java.nio.ByteBuffer;
@@ -79,7 +79,7 @@ public class C2084a implements C2206o, C2806a {
     /* access modifiers changed from: private */
 
     /* renamed from: k */
-    public C2803d f6467k;
+    public NfcWrapper f6467k;
     /* access modifiers changed from: private */
 
     /* renamed from: l */
@@ -143,11 +143,11 @@ public class C2084a implements C2206o, C2806a {
         }
 
         public void run() {
-            C2261g.m9763a("NfcService", "FirstTouchCountProc Start");
+            ImageAppLog.debug("NfcService", "FirstTouchCountProc Start");
             this.f6490b = false;
             while (!this.f6490b && System.currentTimeMillis() - C2084a.this.f6481y <= 120000) {
                 try {
-                    C2261g.m9763a("NFcService", "FirstTouchCountProc + 1000");
+                    ImageAppLog.debug("NFcService", "FirstTouchCountProc + 1000");
                     Thread.sleep(1000);
                 } catch (InterruptedException e) {
                 }
@@ -156,10 +156,10 @@ public class C2084a implements C2206o, C2806a {
             if (!this.f6490b) {
                 if (C2084a.this.f6464h == null || this.f6490b) {
                     if (C2084a.this.f6464h == null) {
-                        C2261g.m9763a("NfcService", "_handler == null");
+                        ImageAppLog.debug("NfcService", "_handler == null");
                     }
                     if (this.f6490b) {
-                        C2261g.m9763a("NfcService", "_isStop");
+                        ImageAppLog.debug("NfcService", "_isStop");
                         return;
                     }
                     return;
@@ -183,7 +183,7 @@ public class C2084a implements C2206o, C2806a {
         /* renamed from: a */
         public void mo5486a(int i) {
             try {
-                C2261g.m9763a("NfcService", "statusReceived Start");
+                ImageAppLog.debug("NfcService", "statusReceived Start");
                 switch (i) {
                     case 0:
                         C2084a.this.m8738k();
@@ -192,88 +192,88 @@ public class C2084a implements C2206o, C2806a {
                             public void run() {
                                 if (C2084a.this.f6467k != null && !C2084a.this.f6477u) {
                                     if (C2084a.this.f6468l == 1) {
-                                        C2261g.m9763a("NfcService", "NFCタグ検出の再開 NFC");
+                                        ImageAppLog.debug("NfcService", "NFCタグ検出の再開 NFC");
                                         C2084a.this.mo5499d();
                                         C2084a.this.f6475s = false;
                                         C2084a.this.f6467k.mo6847a(true);
                                     } else if (C2084a.this.f6468l == 2) {
-                                        C2261g.m9763a("NfcService", "NFCタグ検出の再開 Felica");
-                                        C2261g.m9763a("NfcService", "disconnect start");
+                                        ImageAppLog.debug("NfcService", "NFCタグ検出の再開 Felica");
+                                        ImageAppLog.debug("NfcService", "disconnect start");
                                         C2084a.this.mo5499d();
-                                        C2261g.m9763a("NfcService", "disconnect end");
+                                        ImageAppLog.debug("NfcService", "disconnect end");
                                         C2084a.this.f6475s = false;
-                                        C2261g.m9763a("NfcService", "startTagDetection start");
+                                        ImageAppLog.debug("NfcService", "startTagDetection start");
                                         C2084a.this.f6467k.mo6847a(false);
-                                        C2261g.m9763a("NfcService", "startTagDetection end");
+                                        ImageAppLog.debug("NfcService", "startTagDetection end");
                                     }
                                 }
                                 if (C2084a.this.f6472p != null) {
                                     C2084a.this.f6472p.mo3262g();
-                                    C2261g.m9763a("NfcService", "しばらくお待ちくださいダイアログ表示終了通知 finish");
+                                    ImageAppLog.debug("NfcService", "しばらくお待ちくださいダイアログ表示終了通知 finish");
                                 }
                             }
                         }, 3000);
                         return;
                     case C1702a.HorizontalPicker_right_blank_area_width /*10*/:
                         C2084a.this.f6468l = 1;
-                        C2261g.m9763a("NfcService", "case NfcWrapper.STATUS_NFC_AVAILABLE");
+                        ImageAppLog.debug("NfcService", "case NfcWrapper.STATUS_NFC_AVAILABLE");
                         C2084a.this.f6472p.mo3256a(true);
-                        C2261g.m9763a("NfcService", "_resultListener.OnEnableNfc(false)");
+                        ImageAppLog.debug("NfcService", "_resultListener.OnEnableNfc(false)");
                         C2084a.this.f6472p.mo3262g();
                         C2084a.this.mo5499d();
                         C2084a.this.f6467k.mo6847a(true);
                         return;
                     case C1702a.HorizontalPicker_hairline_visible /*11*/:
                     case 12:
-                        C2261g.m9763a("NfcService", "case NfcWrapper.STATUS_NFC_DISABLED/STATUS_NFC_NOT_EQUIPPED");
+                        ImageAppLog.debug("NfcService", "case NfcWrapper.STATUS_NFC_DISABLED/STATUS_NFC_NOT_EQUIPPED");
                         C2084a.this.f6472p.mo3256a(false);
-                        C2261g.m9763a("NfcService", "_resultListener.OnEnableNfc(false)");
+                        ImageAppLog.debug("NfcService", "_resultListener.OnEnableNfc(false)");
                         C2084a.this.f6472p.mo3262g();
                         return;
                     case 20:
                         C2084a.this.f6468l = 2;
-                        C2261g.m9763a("NfcService", "case NfcWrapper.STATUS_FELICA_AVAILABLE");
+                        ImageAppLog.debug("NfcService", "case NfcWrapper.STATUS_FELICA_AVAILABLE");
                         C2084a.this.f6472p.mo3256a(true);
-                        C2261g.m9763a("NfcService", "_resultListener.OnEnableNfc(true)");
+                        ImageAppLog.debug("NfcService", "_resultListener.OnEnableNfc(true)");
                         C2084a.this.f6472p.mo3262g();
                         C2084a.this.mo5499d();
                         C2084a.this.f6467k.mo6847a(false);
                         return;
                     case 21:
-                        C2261g.m9763a("NfcService", "case NfcWrapper.STATUS_FELICA_NOT_INITIALIZED");
+                        ImageAppLog.debug("NfcService", "case NfcWrapper.STATUS_FELICA_NOT_INITIALIZED");
                         C2084a.this.f6472p.mo3256a(false);
-                        C2261g.m9763a("NfcService", "_resultListener.OnEnableNfc(false)");
+                        ImageAppLog.debug("NfcService", "_resultListener.OnEnableNfc(false)");
                         C2084a.this.f6472p.mo3262g();
                         return;
                     case 22:
-                        C2261g.m9763a("NfcService", "case NfcWrapper.STATUS_FELICA_OPEN_FAILED");
+                        ImageAppLog.debug("NfcService", "case NfcWrapper.STATUS_FELICA_OPEN_FAILED");
                         C2084a.this.f6472p.mo3256a(false);
-                        C2261g.m9763a("NfcService", "_resultListener.OnEnableNfc(false)");
+                        ImageAppLog.debug("NfcService", "_resultListener.OnEnableNfc(false)");
                         C2084a.this.f6472p.mo3262g();
                         return;
                     case 23:
-                        C2261g.m9763a("NfcService", "case NfcWrapper.STATUS_FELICA_LOCKED");
+                        ImageAppLog.debug("NfcService", "case NfcWrapper.STATUS_FELICA_LOCKED");
                         C2084a.this.f6472p.mo3256a(false);
-                        C2261g.m9763a("NfcService", "_resultListener.OnEnableNfc(false)");
+                        ImageAppLog.debug("NfcService", "_resultListener.OnEnableNfc(false)");
                         C2084a.this.f6472p.mo3262g();
                         return;
                     case 24:
-                        C2261g.m9763a("NfcService", "checkFelicaAvailability STATUS_FELICA_RW_NOT_SUPPORTED");
-                        C2261g.m9763a("NfcService", "case NfcWrapper.STATUS_FELICA_RW_NOT_SUPPORTED");
+                        ImageAppLog.debug("NfcService", "checkFelicaAvailability STATUS_FELICA_RW_NOT_SUPPORTED");
+                        ImageAppLog.debug("NfcService", "case NfcWrapper.STATUS_FELICA_RW_NOT_SUPPORTED");
                         C2084a.this.f6472p.mo3256a(false);
-                        C2261g.m9763a("NfcService", "_resultListener.OnEnableNfc(false)");
+                        ImageAppLog.debug("NfcService", "_resultListener.OnEnableNfc(false)");
                         C2084a.this.f6472p.mo3262g();
                         return;
                     case 25:
-                        C2261g.m9763a("NfcService", "case NfcWrapper.STATUS_FELICA_NOT_EQUIPPED");
+                        ImageAppLog.debug("NfcService", "case NfcWrapper.STATUS_FELICA_NOT_EQUIPPED");
                         C2084a.this.f6472p.mo3256a(false);
-                        C2261g.m9763a("NfcService", "_resultListener.OnEnableNfc(false)");
+                        ImageAppLog.debug("NfcService", "_resultListener.OnEnableNfc(false)");
                         C2084a.this.f6472p.mo3262g();
                         return;
                     case 26:
-                        C2261g.m9763a("NfcService", "case NfcWrapper.STATUS_FELICA_AlREADY_RUN");
+                        ImageAppLog.debug("NfcService", "case NfcWrapper.STATUS_FELICA_AlREADY_RUN");
                         C2084a.this.f6472p.mo3256a(false);
-                        C2261g.m9763a("NfcService", "_resultListener.OnEnableNfc(false)");
+                        ImageAppLog.debug("NfcService", "_resultListener.OnEnableNfc(false)");
                         C2084a.this.f6472p.mo3262g();
                         return;
                     default:
@@ -285,13 +285,13 @@ public class C2084a implements C2206o, C2806a {
     }
 
     public C2084a() {
-        C2261g.m9763a("NfcService", "コンストラクタ");
-        C2261g.m9763a("NfcService", "NFCMODE" + String.valueOf(this.f6468l));
+        ImageAppLog.debug("NfcService", "コンストラクタ");
+        ImageAppLog.debug("NfcService", "NFCMODE" + String.valueOf(this.f6468l));
     }
 
     /* renamed from: a */
     public void mo5489a(Activity activity, Context context, Handler handler, C2207a aVar, byte b, int i, boolean z) {
-        C2261g.m9763a("NfcService", "Initialize");
+        ImageAppLog.debug("NfcService", "Initialize");
         this.f6464h = handler;
         this.f6466j = activity;
         this.f6465i = context;
@@ -302,21 +302,21 @@ public class C2084a implements C2206o, C2806a {
         this.f6469m = MediaPlayer.create(this.f6465i, R.raw.touch_complete);
         this.f6470n = MediaPlayer.create(this.f6465i, R.raw.touch_fail);
         if (!this.f6454A) {
-            C2261g.m9763a("NfcService", "new NfcWrapper");
+            ImageAppLog.debug("NfcService", "new NfcWrapper");
             this.f6455B = true;
             this.f6454A = true;
             this.f6471o = new C2093b();
             try {
-                C2261g.m9763a("NfcService", "new NfcWrapper start");
-                this.f6467k = new C2803d(this.f6465i);
-                C2261g.m9763a("NfcService", "new NfcWrapper end");
+                ImageAppLog.debug("NfcService", "new NfcWrapper start");
+                this.f6467k = new NfcWrapper(this.f6465i);
+                ImageAppLog.debug("NfcService", "new NfcWrapper end");
             } catch (Exception e) {
-                C2261g.m9763a("NfcService", "new NfcWrapper exception start");
+                ImageAppLog.debug("NfcService", "new NfcWrapper exception start");
                 e.printStackTrace();
-                C2261g.m9763a("NfcService", "new NfcWrapper exception end");
+                ImageAppLog.debug("NfcService", "new NfcWrapper exception end");
             }
-            C2261g.m9763a("NfcService", "setStatusListener");
-            C2803d.m11658a(this.f6471o);
+            ImageAppLog.debug("NfcService", "setStatusListener");
+            NfcWrapper.m11658a(this.f6471o);
             this.f6468l = 0;
         }
     }
@@ -335,7 +335,7 @@ public class C2084a implements C2206o, C2806a {
                 this.f6472p.mo3261f();
                 if (b != 12 && b == 11) {
                 }
-                C2261g.m9763a("NfcService", "checkFelicaAvailability");
+                ImageAppLog.debug("NfcService", "checkFelicaAvailability");
                 this.f6467k.mo6852c();
             }
         }
@@ -353,7 +353,7 @@ public class C2084a implements C2206o, C2806a {
     /* renamed from: b */
     public void mo5495b() {
         synchronized (this.f6462f) {
-            C2261g.m9763a("NfcService", "StartNfcWatchWithStopTimer");
+            ImageAppLog.debug("NfcService", "StartNfcWatchWithStopTimer");
             mo5505j();
             mo5499d();
             if (this.f6468l == 1) {
@@ -368,7 +368,7 @@ public class C2084a implements C2206o, C2806a {
 
     /* renamed from: a */
     public void mo5488a(Activity activity, Context context, Handler handler, C2207a aVar, byte b) {
-        C2261g.m9763a("NfcService", "rotate");
+        ImageAppLog.debug("NfcService", "rotate");
         this.f6464h = handler;
         this.f6466j = activity;
         this.f6465i = context;
@@ -390,7 +390,7 @@ public class C2084a implements C2206o, C2806a {
             monitor-enter(r1)
             java.lang.String r0 = "NfcService"
             java.lang.String r2 = "checkNfcAvailability"
-            com.panasonic.avc.cng.util.C2261g.m9763a(r0, r2)     // Catch:{ all -> 0x0020 }
+            com.panasonic.avc.cng.util.ImageAppLog.debug(r0, r2)     // Catch:{ all -> 0x0020 }
             com.panasonic.avc.cng.view.common.a.d r0 = r4.f6467k     // Catch:{ all -> 0x0020 }
             if (r0 != 0) goto L_0x0010
             monitor-exit(r1)     // Catch:{ all -> 0x0020 }
@@ -400,7 +400,7 @@ public class C2084a implements C2206o, C2806a {
             r4.mo5499d()     // Catch:{ all -> 0x0020 }
             java.lang.String r0 = "NfcService"
             java.lang.String r2 = "checkNfcAvailability"
-            com.panasonic.avc.cng.util.C2261g.m9763a(r0, r2)     // Catch:{ all -> 0x0020 }
+            com.panasonic.avc.cng.util.ImageAppLog.debug(r0, r2)     // Catch:{ all -> 0x0020 }
             com.panasonic.avc.cng.view.common.a.d r0 = r4.f6467k     // Catch:{ all -> 0x0020 }
             if (r0 != 0) goto L_0x0023
             monitor-exit(r1)     // Catch:{ all -> 0x0020 }
@@ -415,12 +415,12 @@ public class C2084a implements C2206o, C2806a {
             int r0 = r0.mo6849b(r2)     // Catch:{ all -> 0x0020 }
             java.lang.String r2 = "NfcService"
             java.lang.String r3 = "checkNfcAvailability1"
-            com.panasonic.avc.cng.util.C2261g.m9763a(r2, r3)     // Catch:{ all -> 0x0020 }
+            com.panasonic.avc.cng.util.ImageAppLog.debug(r2, r3)     // Catch:{ all -> 0x0020 }
             r2 = 10
             if (r0 != r2) goto L_0x0051
             java.lang.String r0 = "NfcService"
             java.lang.String r2 = "checkNfcAvailability-NFC"
-            com.panasonic.avc.cng.util.C2261g.m9763a(r0, r2)     // Catch:{ all -> 0x0020 }
+            com.panasonic.avc.cng.util.ImageAppLog.debug(r0, r2)     // Catch:{ all -> 0x0020 }
             com.panasonic.avc.cng.model.service.o$a r0 = r4.f6472p     // Catch:{ all -> 0x0020 }
             if (r0 == 0) goto L_0x0046
             com.panasonic.avc.cng.model.service.o$a r0 = r4.f6472p     // Catch:{ all -> 0x0020 }
@@ -437,7 +437,7 @@ public class C2084a implements C2206o, C2806a {
         L_0x0051:
             java.lang.String r0 = "NfcService"
             java.lang.String r2 = "checkNfcAvailability-FeliCa"
-            com.panasonic.avc.cng.util.C2261g.m9763a(r0, r2)     // Catch:{ all -> 0x0020 }
+            com.panasonic.avc.cng.util.ImageAppLog.debug(r0, r2)     // Catch:{ all -> 0x0020 }
             com.panasonic.avc.cng.view.common.a.d r0 = r4.f6467k     // Catch:{ all -> 0x0020 }
             if (r0 != 0) goto L_0x005e
             monitor-exit(r1)     // Catch:{ all -> 0x0020 }
@@ -447,7 +447,7 @@ public class C2084a implements C2206o, C2806a {
             r0.mo6852c()     // Catch:{ all -> 0x0020 }
             java.lang.String r0 = "NfcService"
             java.lang.String r2 = "checkNfcAvailability-FeliCa E"
-            com.panasonic.avc.cng.util.C2261g.m9763a(r0, r2)     // Catch:{ all -> 0x0020 }
+            com.panasonic.avc.cng.util.ImageAppLog.debug(r0, r2)     // Catch:{ all -> 0x0020 }
             goto L_0x004f
         */
         throw new UnsupportedOperationException("Method not decompiled: com.panasonic.avc.cng.model.service.p061h.C2084a.mo5497c():void");
@@ -456,7 +456,7 @@ public class C2084a implements C2206o, C2806a {
     /* renamed from: e */
     public void mo5500e() {
         synchronized (this.f6462f) {
-            C2261g.m9763a("NfcService", "StopNfcWatch");
+            ImageAppLog.debug("NfcService", "StopNfcWatch");
             mo5499d();
         }
     }
@@ -464,13 +464,13 @@ public class C2084a implements C2206o, C2806a {
     /* renamed from: d */
     public void mo5499d() {
         synchronized (this.f6462f) {
-            C2261g.m9763a("NfcService", "Disconnect");
+            ImageAppLog.debug("NfcService", "Disconnect");
             if (this.f6467k != null) {
                 try {
                     this.f6467k.mo6850b();
                     this.f6467k.mo6853d();
                 } catch (Exception e) {
-                    C2261g.m9769c("NfcService", "Disconnect()-Exception");
+                    ImageAppLog.error("NfcService", "Disconnect()-Exception");
                 }
             }
         }
@@ -479,7 +479,7 @@ public class C2084a implements C2206o, C2806a {
     /* renamed from: f */
     public void mo5501f() {
         synchronized (this.f6462f) {
-            C2261g.m9763a("NfcService", "Finalize");
+            ImageAppLog.debug("NfcService", "Finalize");
             mo5499d();
             this.f6467k = null;
             this.f6454A = false;
@@ -530,57 +530,57 @@ public class C2084a implements C2206o, C2806a {
         boolean z7;
         boolean z8;
         if (this.f6460d) {
-            C2261g.m9769c("NfcService", "onTagDetected 無視");
+            ImageAppLog.error("NfcService", "onTagDetected 無視");
             return;
         }
         try {
-            C2261g.m9763a("NfcService", "onTagDetected");
+            ImageAppLog.debug("NfcService", "onTagDetected");
             C2020c cVar = new C2020c();
             if (this.f6475s) {
-                C2261g.m9763a("NfcService", "_nfcProcessing = ture");
+                ImageAppLog.debug("NfcService", "_nfcProcessing = ture");
                 return;
             }
             if (this.f6456C) {
                 this.f6478v = System.currentTimeMillis();
             }
-            C2261g.m9763a("NfcService", "_nfcProcessing = false");
+            ImageAppLog.debug("NfcService", "_nfcProcessing = false");
             this.f6475s = true;
             mo5505j();
             this.f6472p.mo3258c();
-            C2261g.m9763a("NfcService", "OnTagDetected1");
-            C2261g.m9763a("NfcService", "OnTagDetected2");
+            ImageAppLog.debug("NfcService", "OnTagDetected1");
+            ImageAppLog.debug("NfcService", "OnTagDetected2");
             if (this.f6463g) {
                 byte[] a = this.f6467k.mo6848a(176, 16, 4);
                 if (a != null) {
-                    C2261g.m9763a("NfcService", "FeRAM 0x00b0:" + C2803d.m11657a(a));
+                    ImageAppLog.debug("NfcService", "FeRAM 0x00b0:" + NfcWrapper.m11657a(a));
                 }
                 byte[] a2 = this.f6467k.mo6848a(192, 16, 4);
                 if (a2 != null) {
-                    C2261g.m9763a("NfcService", "FeRAM 0x00c0:" + C2803d.m11657a(a2));
+                    ImageAppLog.debug("NfcService", "FeRAM 0x00c0:" + NfcWrapper.m11657a(a2));
                 }
                 byte[] a3 = this.f6467k.mo6848a(208, 16, 4);
                 if (a3 != null) {
-                    C2261g.m9763a("NfcService", "FeRAM 0x00d0:" + C2803d.m11657a(a3));
+                    ImageAppLog.debug("NfcService", "FeRAM 0x00d0:" + NfcWrapper.m11657a(a3));
                 }
                 byte[] a4 = this.f6467k.mo6848a(224, 16, 4);
                 if (a4 != null) {
-                    C2261g.m9763a("NfcService", "FeRAM 0x00e0:" + C2803d.m11657a(a4));
+                    ImageAppLog.debug("NfcService", "FeRAM 0x00e0:" + NfcWrapper.m11657a(a4));
                 }
                 byte[] a5 = this.f6467k.mo6848a(240, 16, 4);
                 if (a5 != null) {
-                    C2261g.m9763a("NfcService", "FeRAM 0x00f0:" + C2803d.m11657a(a5));
+                    ImageAppLog.debug("NfcService", "FeRAM 0x00f0:" + NfcWrapper.m11657a(a5));
                 }
                 byte[] a6 = this.f6467k.mo6848a(256, 16, 4);
                 if (a6 != null) {
-                    C2261g.m9763a("NfcService", "FeRAM 0x0100:" + C2803d.m11657a(a6));
+                    ImageAppLog.debug("NfcService", "FeRAM 0x0100:" + NfcWrapper.m11657a(a6));
                 }
                 byte[] a7 = this.f6467k.mo6848a(272, 16, 4);
                 if (a7 != null) {
-                    C2261g.m9763a("NfcService", "FeRAM 0x0110:" + C2803d.m11657a(a7));
+                    ImageAppLog.debug("NfcService", "FeRAM 0x0110:" + NfcWrapper.m11657a(a7));
                 }
                 byte[] a8 = this.f6467k.mo6848a(288, 16, 4);
                 if (a8 != null) {
-                    C2261g.m9763a("NfcService", "FeRAM 0x0120:" + C2803d.m11657a(a8));
+                    ImageAppLog.debug("NfcService", "FeRAM 0x0120:" + NfcWrapper.m11657a(a8));
                 }
             }
             if (!cVar.mo5309b(this.f6465i) || !cVar.mo5312e(this.f6465i)) {
@@ -610,9 +610,9 @@ public class C2084a implements C2206o, C2806a {
             String substring2 = trim.substring(0, 4);
             String substring3 = trim.substring(0, 3);
             if (substring.equalsIgnoreCase("HC-") || substring2.equalsIgnoreCase("DMC-") || substring3.equalsIgnoreCase("AG-")) {
-                C2261g.m9763a("NfcService", "OnTagDetected3");
+                ImageAppLog.debug("NfcService", "OnTagDetected3");
                 byte[] a11 = this.f6467k.mo6848a(176, 16, 4);
-                C2261g.m9763a("NfcService", "transceiveReadCommand(0x00B0, 16, 4) Finish");
+                ImageAppLog.debug("NfcService", "transceiveReadCommand(0x00B0, 16, 4) Finish");
                 String str4 = "";
                 for (int i2 = 0; i2 < 6; i2++) {
                     byte b = a11[i2] & 255;
@@ -622,15 +622,15 @@ public class C2084a implements C2206o, C2806a {
                     str4 = str4 + Integer.toHexString(b);
                 }
                 this.f6474r = str4;
-                C2261g.m9763a("NfcService", "CameraMac:" + this.f6474r);
+                ImageAppLog.debug("NfcService", "CameraMac:" + this.f6474r);
                 SharedPreferences defaultSharedPreferences = PreferenceManager.getDefaultSharedPreferences(this.f6465i);
                 String format = String.format("%s.%s", new Object[]{"ImageApp.Nfc.ConnectSsid", this.f6474r});
                 String format2 = String.format("%s.%s", new Object[]{"ImageApp.Nfc.ConnectPassword", this.f6474r});
                 C1913o b2 = C1712b.m6917b();
-                C2261g.m9763a("NfcService", "SharedPreferences Setting Finish");
+                ImageAppLog.debug("NfcService", "SharedPreferences Setting Finish");
                 if (this.f6482z) {
-                    C2261g.m9763a("NfcService", "初見2度目タッチ");
-                    C2261g.m9763a("NfcService", "NFC Connect:初見2度目タッチ");
+                    ImageAppLog.debug("NfcService", "初見2度目タッチ");
+                    ImageAppLog.debug("NfcService", "NFC Connect:初見2度目タッチ");
                     if (b2.f5825a == null || !b2.f5825a.containsKey(this.f6474r) || b2.f5825a.get(this.f6474r) == null) {
                         m8740m();
                         this.f6472p.mo3260e();
@@ -647,9 +647,9 @@ public class C2084a implements C2206o, C2806a {
                     } else {
                         z8 = false;
                     }
-                    C2261g.m9763a("NfcService", "bytesSize=" + String.valueOf(a12.length));
+                    ImageAppLog.debug("NfcService", "bytesSize=" + String.valueOf(a12.length));
                     for (byte valueOf : a12) {
-                        C2261g.m9763a("NfcService", "byte64" + String.valueOf(valueOf));
+                        ImageAppLog.debug("NfcService", "byte64" + String.valueOf(valueOf));
                     }
                     if (a12.length > 0) {
                         if (z8) {
@@ -659,11 +659,11 @@ public class C2084a implements C2206o, C2806a {
                         }
                         if (z8) {
                             if (str5 != null && str5.length() >= 0) {
-                                C2261g.m9763a("NfcService", "cameraPassword OK :" + str5 + ":End");
+                                ImageAppLog.debug("NfcService", "cameraPassword OK :" + str5 + ":End");
                                 z9 = true;
                             }
                         } else if (str5 != null && str5.length() > 0) {
-                            C2261g.m9763a("NfcService", "cameraPassword OK :" + str5 + ":End");
+                            ImageAppLog.debug("NfcService", "cameraPassword OK :" + str5 + ":End");
                             z9 = true;
                         }
                     }
@@ -674,13 +674,13 @@ public class C2084a implements C2206o, C2806a {
                         return;
                     }
                     m8740m();
-                    C2261g.m9763a("NfcService", "Passwordが取れなかった");
+                    ImageAppLog.debug("NfcService", "Passwordが取れなかった");
                     if (this.f6464h != null) {
                         this.f6472p.mo3261f();
                         this.f6464h.postDelayed(new Runnable() {
                             public void run() {
                                 C2084a.this.f6475s = false;
-                                C2261g.m9763a("NfcService", "postDelayed");
+                                ImageAppLog.debug("NfcService", "postDelayed");
                                 C2084a.this.mo5495b();
                                 C2084a.this.mo5487a(System.currentTimeMillis());
                                 C2084a.this.f6472p.mo3262g();
@@ -690,8 +690,8 @@ public class C2084a implements C2206o, C2806a {
                     }
                     return;
                 }
-                C2261g.m9763a("NfcService", "初見2度目以外");
-                C2261g.m9763a("NfcService", "NFC Connect:初見2度目以外");
+                ImageAppLog.debug("NfcService", "初見2度目以外");
+                ImageAppLog.debug("NfcService", "NFC Connect:初見2度目以外");
                 byte[] a13 = this.f6467k.mo6848a(176, 16, 4);
                 byte b3 = a13[6];
                 if ((b3 & 1) == 1) {
@@ -726,51 +726,51 @@ public class C2084a implements C2206o, C2806a {
                 switch (a13[8]) {
                     case 0:
                         i = 1;
-                        C2261g.m9763a("NfcService", "case 0");
+                        ImageAppLog.debug("NfcService", "case 0");
                         break;
                     case 1:
                         i = 2;
-                        C2261g.m9763a("NfcService", "case 1");
+                        ImageAppLog.debug("NfcService", "case 1");
                         break;
                     case 2:
                         i = 3;
-                        C2261g.m9763a("NfcService", "case 2");
+                        ImageAppLog.debug("NfcService", "case 2");
                         break;
                     case 3:
                         i = 4;
-                        C2261g.m9763a("NfcService", "case 3");
+                        ImageAppLog.debug("NfcService", "case 3");
                         break;
                     default:
                         i = 1;
-                        C2261g.m9763a("NfcService", "default");
+                        ImageAppLog.debug("NfcService", "default");
                         break;
                 }
                 if (this.f6463g) {
                     if (z) {
-                        C2261g.m9763a("NfcService", "cameraApFlg true");
+                        ImageAppLog.debug("NfcService", "cameraApFlg true");
                     } else {
-                        C2261g.m9763a("NfcService", "cameraApFlg false");
+                        ImageAppLog.debug("NfcService", "cameraApFlg false");
                     }
                     if (z2) {
-                        C2261g.m9763a("NfcService", "disablePowerOn true");
+                        ImageAppLog.debug("NfcService", "disablePowerOn true");
                     } else {
-                        C2261g.m9763a("NfcService", "disablePowerOn false");
+                        ImageAppLog.debug("NfcService", "disablePowerOn false");
                     }
-                    C2261g.m9763a("NfcService", "disableTouch false");
+                    ImageAppLog.debug("NfcService", "disableTouch false");
                     if (z3) {
-                        C2261g.m9763a("NfcService", "anotherSetFriendlyName true");
+                        ImageAppLog.debug("NfcService", "anotherSetFriendlyName true");
                     } else {
-                        C2261g.m9763a("NfcService", "anotherSetFriendlyName false");
+                        ImageAppLog.debug("NfcService", "anotherSetFriendlyName false");
                     }
                     if (z4) {
-                        C2261g.m9763a("NfcService", "disableGeotag true");
+                        ImageAppLog.debug("NfcService", "disableGeotag true");
                     } else {
-                        C2261g.m9763a("NfcService", "disableGeotag false");
+                        ImageAppLog.debug("NfcService", "disableGeotag false");
                     }
                 }
-                C2261g.m9763a("NfcService", "強制Apフラグ Finish");
+                ImageAppLog.debug("NfcService", "強制Apフラグ Finish");
                 byte[] a14 = this.f6467k.mo6848a(192, 32, 4);
-                C2261g.m9763a("NfcService", "カメラSSID Finish");
+                ImageAppLog.debug("NfcService", "カメラSSID Finish");
                 String str6 = new String(a14);
                 String trim2 = str6.trim();
                 if (trim2 == "") {
@@ -779,56 +779,56 @@ public class C2084a implements C2206o, C2806a {
                     this.f6472p.mo3264i();
                     return;
                 }
-                C2261g.m9763a("NfcService", String.format("cameraSsidTmp = %s, cameraSsid = %s", new Object[]{str6, trim2}));
-                C2261g.m9763a("NfcService", "カメラSSIDを、バイトから文字列に変換　Finish");
+                ImageAppLog.debug("NfcService", String.format("cameraSsidTmp = %s, cameraSsid = %s", new Object[]{str6, trim2}));
+                ImageAppLog.debug("NfcService", "カメラSSIDを、バイトから文字列に変換　Finish");
                 C2020c cVar2 = new C2020c();
                 String j = cVar2.mo5317j(this.f6465i);
                 String i3 = cVar2.mo5316i(this.f6465i);
                 if (trim2.equalsIgnoreCase(i3) && cVar.mo5312e(this.f6465i)) {
-                    C2261g.m9763a("NfcService", "タッチした機器に、現在接続中");
+                    ImageAppLog.debug("NfcService", "タッチした機器に、現在接続中");
                     if (this.f6477u) {
                         return;
                     }
                 }
-                C2261g.m9763a("NfcService", "タッチした機器に、現在接続中でない");
+                ImageAppLog.debug("NfcService", "タッチした機器に、現在接続中でない");
                 byte[] bArr2 = new byte[16];
                 String[] split = j.split(":");
-                C2261g.m9763a("NfcService", "MACアドレスの文字列から「:」を削除　Finish");
+                ImageAppLog.debug("NfcService", "MACアドレスの文字列から「:」を削除　Finish");
                 for (int i4 = 0; i4 < split.length; i4++) {
                     bArr2[i4] = (byte) Integer.parseInt(split[i4], 16);
                 }
-                C2261g.m9763a("NfcService", "スマホ情報をOSから取得　Finish");
+                ImageAppLog.debug("NfcService", "スマホ情報をOSから取得　Finish");
                 this.f6467k.mo6844a(224, bArr2, 4);
-                C2261g.m9763a("NfcService", "スマホMAC　Write　Finish");
+                ImageAppLog.debug("NfcService", "スマホMAC　Write　Finish");
                 if (this.f6463g) {
-                    C2261g.m9763a("NfcService", "FeRAM 0x00E0-1:" + C2803d.m11657a(this.f6467k.mo6848a(224, 16, 4)));
+                    ImageAppLog.debug("NfcService", "FeRAM 0x00E0-1:" + NfcWrapper.m11657a(this.f6467k.mo6848a(224, 16, 4)));
                 }
                 byte[] bArr3 = new byte[32];
                 for (int i5 = 0; i5 < bArr3.length; i5++) {
                     bArr3[i5] = 0;
                 }
                 if (!cVar.mo5312e(this.f6465i) || z) {
-                    C2261g.m9763a("NfcService", "phoneSsid:null");
+                    ImageAppLog.debug("NfcService", "phoneSsid:null");
                 } else if (i3 == null || i3.length() <= 0) {
-                    C2261g.m9763a("NfcService", "phoneSsid:null");
+                    ImageAppLog.debug("NfcService", "phoneSsid:null");
                 } else {
-                    C2261g.m9763a("NfcService", "phoneSsid:" + i3);
+                    ImageAppLog.debug("NfcService", "phoneSsid:" + i3);
                     byte[] bytes = i3.getBytes();
                     System.arraycopy(bytes, 0, bArr3, 0, Math.min(bytes.length, 32));
                 }
                 this.f6467k.mo6844a(240, bArr3, 4);
-                C2261g.m9763a("NfcService", "transmitWriteCommand(0x00F0, bytePhoneSsid, 4)");
-                C2261g.m9763a("NfcService", "スマホSSID　Finish");
+                ImageAppLog.debug("NfcService", "transmitWriteCommand(0x00F0, bytePhoneSsid, 4)");
+                ImageAppLog.debug("NfcService", "スマホSSID　Finish");
                 if (this.f6463g) {
-                    C2261g.m9763a("NfcService", "FeRAM 0x00F0:" + C2803d.m11657a(this.f6467k.mo6848a(240, 16, 4)));
-                    C2261g.m9763a("NfcService", "FeRAM 0x0１00:" + C2803d.m11657a(this.f6467k.mo6848a(256, 16, 4)));
-                    C2261g.m9763a("NfcService", "FeRAM 0x00E0(変化確認）:" + C2803d.m11657a(this.f6467k.mo6848a(224, 16, 4)));
+                    ImageAppLog.debug("NfcService", "FeRAM 0x00F0:" + NfcWrapper.m11657a(this.f6467k.mo6848a(240, 16, 4)));
+                    ImageAppLog.debug("NfcService", "FeRAM 0x0１00:" + NfcWrapper.m11657a(this.f6467k.mo6848a(256, 16, 4)));
+                    ImageAppLog.debug("NfcService", "FeRAM 0x00E0(変化確認）:" + NfcWrapper.m11657a(this.f6467k.mo6848a(224, 16, 4)));
                 }
                 bArr2[6] = this.f6473q;
                 this.f6467k.mo6844a(224, bArr2, 4);
-                C2261g.m9763a("NfcService", "アクセス識別フラグ：" + String.valueOf(bArr2[6]));
+                ImageAppLog.debug("NfcService", "アクセス識別フラグ：" + String.valueOf(bArr2[6]));
                 if (this.f6463g) {
-                    C2261g.m9763a("NfcService", "FeRAM 0x00E0-2:" + C2803d.m11657a(this.f6467k.mo6848a(224, 16, 4)));
+                    ImageAppLog.debug("NfcService", "FeRAM 0x00E0-2:" + NfcWrapper.m11657a(this.f6467k.mo6848a(224, 16, 4)));
                 }
                 String str7 = Build.MODEL;
                 if (str7 == null || str7.length() <= 0) {
@@ -841,9 +841,9 @@ public class C2084a implements C2206o, C2806a {
                     bArr4[i6] = 0;
                 }
                 if (str == null || str.length() <= 0) {
-                    C2261g.m9763a("NfcService", "phoneSsid:null");
+                    ImageAppLog.debug("NfcService", "phoneSsid:null");
                 } else {
-                    C2261g.m9763a("NfcService", "phoneModelName:" + str);
+                    ImageAppLog.debug("NfcService", "phoneModelName:" + str);
                     byte[] bytes2 = str.getBytes();
                     System.arraycopy(bytes2, 0, bArr4, 0, Math.min(bytes2.length, 16));
                     if (bArr4 != null && bArr4.length > 0) {
@@ -870,17 +870,17 @@ public class C2084a implements C2206o, C2806a {
                     str3 = substring4;
                 }
                 if (str3 == null) {
-                    C2261g.m9763a("NfcService", "shareSsid = null");
+                    ImageAppLog.debug("NfcService", "shareSsid = null");
                 } else {
-                    C2261g.m9763a("NfcService", "shareSsid = " + str3);
+                    ImageAppLog.debug("NfcService", "shareSsid = " + str3);
                 }
                 if (str2 == null) {
-                    C2261g.m9763a("NfcService", "sharePassword = null");
+                    ImageAppLog.debug("NfcService", "sharePassword = null");
                 } else {
-                    C2261g.m9763a("NfcService", "sharePassword = " + str2);
+                    ImageAppLog.debug("NfcService", "sharePassword = " + str2);
                 }
                 if ((this.f6473q & 16) != 16) {
-                    C2261g.m9763a("NfcService", "WiFi起動可能確認　Start");
+                    ImageAppLog.debug("NfcService", "WiFi起動可能確認　Start");
                     if (this.f6456C) {
                         this.f6479w = System.currentTimeMillis();
                     }
@@ -888,14 +888,14 @@ public class C2084a implements C2206o, C2806a {
                     if (this.f6456C) {
                         this.f6480x = System.currentTimeMillis();
                     }
-                    C2261g.m9763a("NfcService", "WiFi起動可能確認　End");
+                    ImageAppLog.debug("NfcService", "WiFi起動可能確認　End");
                     if (a16 == null || a16[0] == 0) {
-                        C2261g.m9763a("NfcService", "byteWakeState == null/0");
+                        ImageAppLog.debug("NfcService", "byteWakeState == null/0");
                         m8740m();
                         this.f6472p.mo3251a();
                         return;
                     }
-                    C2261g.m9763a("NfcService", String.format("byteWakeState = %d", new Object[]{Byte.valueOf(a16[0])}));
+                    ImageAppLog.debug("NfcService", String.format("byteWakeState = %d", new Object[]{Byte.valueOf(a16[0])}));
                     if ((a16[0] & 1) == 1) {
                         z6 = true;
                     } else {
@@ -911,14 +911,14 @@ public class C2084a implements C2206o, C2806a {
                         return;
                     }
                     if (this.f6463g) {
-                        C2261g.m9763a("NfcService", "FeRAM 0x00b0:" + C2803d.m11657a(this.f6467k.mo6848a(176, 16, 4)));
-                        C2261g.m9763a("NfcService", "FeRAM 0x00c0:" + C2803d.m11657a(this.f6467k.mo6848a(192, 16, 4)));
-                        C2261g.m9763a("NfcService", "FeRAM 0x00d0:" + C2803d.m11657a(this.f6467k.mo6848a(208, 16, 4)));
+                        ImageAppLog.debug("NfcService", "FeRAM 0x00b0:" + NfcWrapper.m11657a(this.f6467k.mo6848a(176, 16, 4)));
+                        ImageAppLog.debug("NfcService", "FeRAM 0x00c0:" + NfcWrapper.m11657a(this.f6467k.mo6848a(192, 16, 4)));
+                        ImageAppLog.debug("NfcService", "FeRAM 0x00d0:" + NfcWrapper.m11657a(this.f6467k.mo6848a(208, 16, 4)));
                         this.f6467k.mo6848a(224, 16, 4);
-                        C2261g.m9763a("NfcService", " FeRAM 0x00f0:" + C2803d.m11657a(this.f6467k.mo6848a(240, 16, 4)));
-                        C2261g.m9763a("NfcService", "FeRAM 0x0100:" + C2803d.m11657a(this.f6467k.mo6848a(256, 16, 4)));
-                        C2261g.m9763a("NfcService", "FeRAM 0x0110:" + C2803d.m11657a(this.f6467k.mo6848a(272, 16, 4)));
-                        C2261g.m9763a("NfcService", "FeRAM 0x0120:" + C2803d.m11657a(this.f6467k.mo6848a(288, 16, 4)));
+                        ImageAppLog.debug("NfcService", " FeRAM 0x00f0:" + NfcWrapper.m11657a(this.f6467k.mo6848a(240, 16, 4)));
+                        ImageAppLog.debug("NfcService", "FeRAM 0x0100:" + NfcWrapper.m11657a(this.f6467k.mo6848a(256, 16, 4)));
+                        ImageAppLog.debug("NfcService", "FeRAM 0x0110:" + NfcWrapper.m11657a(this.f6467k.mo6848a(272, 16, 4)));
+                        ImageAppLog.debug("NfcService", "FeRAM 0x0120:" + NfcWrapper.m11657a(this.f6467k.mo6848a(288, 16, 4)));
                     }
                     String string = defaultSharedPreferences.getString(format, "");
                     String string2 = defaultSharedPreferences.getString(format2, "");
@@ -951,7 +951,7 @@ public class C2084a implements C2206o, C2806a {
                 this.f6472p.mo3265j();
             }
         } catch (C2807e e) {
-            C2261g.m9763a("NfcService", "RfidStatusException");
+            ImageAppLog.debug("NfcService", "RfidStatusException");
             e.printStackTrace();
             m8722a(e);
             m8740m();
@@ -963,7 +963,7 @@ public class C2084a implements C2206o, C2806a {
                 mo5487a(System.currentTimeMillis());
             }
         } catch (IOException e2) {
-            C2261g.m9763a("NfcService", "IOException");
+            ImageAppLog.debug("NfcService", "IOException");
             e2.printStackTrace();
             m8723a(e2);
             m8740m();
@@ -975,7 +975,7 @@ public class C2084a implements C2206o, C2806a {
                 mo5487a(System.currentTimeMillis());
             }
         } catch (C0346m e3) {
-            C2261g.m9763a("NfcService", "FelicaException");
+            ImageAppLog.debug("NfcService", "FelicaException");
             e3.printStackTrace();
             m8721a(e3);
             m8740m();
@@ -987,13 +987,13 @@ public class C2084a implements C2206o, C2806a {
                 mo5487a(System.currentTimeMillis());
             }
         } catch (Exception e4) {
-            C2261g.m9763a("NfcService", "Exception");
+            ImageAppLog.debug("NfcService", "Exception");
             e4.printStackTrace();
             if (e4 != null) {
                 e4.printStackTrace();
             }
             mo5491a(e4);
-            C2261g.m9763a("NfcService", "catch (Exception e)");
+            ImageAppLog.debug("NfcService", "catch (Exception e)");
             m8740m();
             mo5499d();
             if (this.f6472p != null && !this.f6482z) {
@@ -1029,9 +1029,9 @@ public class C2084a implements C2206o, C2806a {
                 }
             }
             if (b.f5825a == null) {
-                C2261g.m9763a("NfcService", "新規認識：NfcSettingList=null");
+                ImageAppLog.debug("NfcService", "新規認識：NfcSettingList=null");
             } else {
-                C2261g.m9763a("NfcService", "新規認識：NfcSettingList.size=" + String.valueOf(b.f5825a.size()));
+                ImageAppLog.debug("NfcService", "新規認識：NfcSettingList.size=" + String.valueOf(b.f5825a.size()));
             }
             if (this.f6464h != null) {
                 m8739l();
@@ -1041,9 +1041,9 @@ public class C2084a implements C2206o, C2806a {
             m8739l();
             m8726a(z, this.f6474r, str3, str2);
             if (b.f5825a == null) {
-                C2261g.m9763a("NfcService", "既知認識：NfcSettingList=null");
+                ImageAppLog.debug("NfcService", "既知認識：NfcSettingList=null");
             } else {
-                C2261g.m9763a("NfcService", "既知認識：NfcSettingList.size=" + String.valueOf(b.f5825a.size()));
+                ImageAppLog.debug("NfcService", "既知認識：NfcSettingList.size=" + String.valueOf(b.f5825a.size()));
             }
         }
     }
@@ -1056,14 +1056,14 @@ public class C2084a implements C2206o, C2806a {
             this.f6472p.mo3264i();
             return;
         }
-        C2261g.m9763a("NfcService", "shareSsid = " + str);
-        C2261g.m9763a("NfcService", "sharePassword = " + str2);
+        ImageAppLog.debug("NfcService", "shareSsid = " + str);
+        ImageAppLog.debug("NfcService", "sharePassword = " + str2);
         this.f6472p.mo3254a(str, str2);
     }
 
     /* renamed from: a */
     private void m8727a(byte[] bArr) {
-        C1351b.m5317a().mo3232a(this.f6465i, "NFC Geotag");
+        GoogleTagManager.m5317a().mo3232a(this.f6465i, "NFC Geotag");
         Calendar instance = Calendar.getInstance();
         instance.add(14, -instance.getTimeZone().getOffset(instance.getTimeInMillis()));
         int i = bArr[4] + bArr[6];
@@ -1101,7 +1101,7 @@ public class C2084a implements C2206o, C2806a {
             instance3.add(14, ((int) time3) % 1000);
             instance3.add(13, (int) j);
             int timeInMillis = (int) ((instance3.getTimeInMillis() - C2078d.m8657a()) / 1000);
-            C2261g.m9763a("NfcService", "targetTime = " + instance3.get(1) + "/" + (instance3.get(2) + 1) + "/" + instance3.get(5) + "  " + instance3.get(11) + ":" + instance3.get(12) + ":" + instance3.get(13));
+            ImageAppLog.debug("NfcService", "targetTime = " + instance3.get(1) + "/" + (instance3.get(2) + 1) + "/" + instance3.get(5) + "  " + instance3.get(11) + ":" + instance3.get(12) + ":" + instance3.get(13));
             Cursor query = this.f6465i.getContentResolver().query(GeoTagProvider.f6395a, null, "time<=" + timeInMillis + " AND " + "format" + "==" + 65 + " AND " + "latitude" + "<>" + Integer.MAX_VALUE + " AND " + "longitude" + "<>" + Integer.MAX_VALUE + " AND " + "altitude" + "<>" + 32767, null, "time DESC LIMIT 1");
             if (query == null) {
                 return;
@@ -1139,11 +1139,11 @@ public class C2084a implements C2206o, C2806a {
     /* renamed from: a */
     private void m8726a(boolean z, String str, String str2, String str3) {
         if (!this.f6476t || z) {
-            C2261g.m9763a("NfcService", String.format("ダイレクト接続処理を開始:cameraMac = %s, ssid = %s, password = %s", new Object[]{str, str2, str3}));
+            ImageAppLog.debug("NfcService", String.format("ダイレクト接続処理を開始:cameraMac = %s, ssid = %s, password = %s", new Object[]{str, str2, str3}));
             this.f6472p.mo3255a(str, str2, str3, true, this.f6478v, this.f6479w, this.f6480x);
             return;
         }
-        C2261g.m9763a("NfcService", String.format("WiFi接続を維持:cameraMac = %s, ssid = %s, password = %s", new Object[]{str, str2, str3}));
+        ImageAppLog.debug("NfcService", String.format("WiFi接続を維持:cameraMac = %s, ssid = %s, password = %s", new Object[]{str, str2, str3}));
         this.f6472p.mo3255a(str, str2, str3, false, this.f6478v, this.f6479w, this.f6480x);
     }
 
@@ -1158,9 +1158,9 @@ public class C2084a implements C2206o, C2806a {
         defaultSharedPreferences.edit().putString(format, str2).commit();
         defaultSharedPreferences.edit().putString(format2, str3).commit();
         if (b.f5825a != null && b.f5825a.size() > 0) {
-            C2261g.m9763a("NfcService", "NfcSettingList.size:" + String.valueOf(b.f5825a.size()));
+            ImageAppLog.debug("NfcService", "NfcSettingList.size:" + String.valueOf(b.f5825a.size()));
             b.f5825a.remove(str);
-            C2261g.m9763a("NfcService", "NfcSettingList.size:" + String.valueOf(b.f5825a.size()));
+            ImageAppLog.debug("NfcService", "NfcSettingList.size:" + String.valueOf(b.f5825a.size()));
         }
     }
 
@@ -1245,25 +1245,25 @@ public class C2084a implements C2206o, C2806a {
     /* renamed from: i */
     public void mo5504i() {
         if (this.f6464h == null) {
-            C2261g.m9763a("NfcService", "RestartTagDetection _handler==null");
+            ImageAppLog.debug("NfcService", "RestartTagDetection _handler==null");
         } else {
             this.f6464h.post(new Runnable() {
                 public void run() {
                     if (C2084a.this.f6467k != null && !C2084a.this.f6477u) {
                         if (C2084a.this.f6468l == 1) {
-                            C2261g.m9763a("NfcService", "NFCタグ検出の再開 NFC");
+                            ImageAppLog.debug("NfcService", "NFCタグ検出の再開 NFC");
                             C2084a.this.mo5499d();
                             C2084a.this.f6475s = false;
                             C2084a.this.f6467k.mo6847a(true);
                         } else if (C2084a.this.f6468l == 2) {
-                            C2261g.m9763a("NfcService", "NFCタグ検出の再開 Felica");
-                            C2261g.m9763a("NfcService", "disconnect start");
+                            ImageAppLog.debug("NfcService", "NFCタグ検出の再開 Felica");
+                            ImageAppLog.debug("NfcService", "disconnect start");
                             C2084a.this.mo5499d();
-                            C2261g.m9763a("NfcService", "disconnect end");
+                            ImageAppLog.debug("NfcService", "disconnect end");
                             C2084a.this.f6475s = false;
-                            C2261g.m9763a("NfcService", "startTagDetection start");
+                            ImageAppLog.debug("NfcService", "startTagDetection start");
                             C2084a.this.f6467k.mo6847a(false);
-                            C2261g.m9763a("NfcService", "startTagDetection end");
+                            ImageAppLog.debug("NfcService", "startTagDetection end");
                         }
                     }
                 }

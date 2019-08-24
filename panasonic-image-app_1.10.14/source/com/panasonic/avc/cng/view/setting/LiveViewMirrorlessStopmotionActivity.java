@@ -39,9 +39,9 @@ import com.panasonic.avc.cng.model.C1892f;
 import com.panasonic.avc.cng.model.p052d.C1879a;
 import com.panasonic.avc.cng.model.service.C1985b;
 import com.panasonic.avc.cng.model.service.C1985b.C1986a;
-import com.panasonic.avc.cng.model.service.C2253z;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
 import com.panasonic.avc.cng.p038a.C1343b;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.view.cameraconnect.GuidanceMenuActivity;
 import com.panasonic.avc.cng.view.common.C2820e;
 import com.panasonic.avc.cng.view.liveview.C2946c;
@@ -58,7 +58,7 @@ import com.panasonic.avc.cng.view.liveview.icon.C3250n;
 import com.panasonic.avc.cng.view.liveview.icon.C3250n.C3254d;
 import com.panasonic.avc.cng.view.p073b.C2317a.C2325c;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
 import com.panasonic.avc.cng.view.parts.C4116bn.C4117a;
 import com.panasonic.avc.cng.view.parts.C4213l;
 import com.panasonic.avc.cng.view.parts.C4230p;
@@ -70,7 +70,7 @@ import com.panasonic.avc.cng.view.parts.LiveViewLumixSurface;
 import com.panasonic.avc.cng.view.parts.LiveViewLumixSurface.C3947a;
 import com.panasonic.avc.cng.view.parts.LiveViewLumixZoomView;
 import com.panasonic.avc.cng.view.parts.TwoStateImageButton;
-import com.panasonic.avc.cng.view.setting.C5537al.C5540a;
+import com.panasonic.avc.cng.view.setting.SettingMenuBaseActivity.C5540a;
 import com.panasonic.avc.cng.view.setting.C5541am.C5559l;
 import java.io.IOException;
 import java.io.InputStream;
@@ -151,16 +151,16 @@ public class LiveViewMirrorlessStopmotionActivity extends C2946c {
         /* renamed from: a */
         public void mo7086a(int i) {
             if (i == 1) {
-                C2331d.m10114a((Activity) LiveViewMirrorlessStopmotionActivity.this, C2328a.ON_ERROR_REMAIN_ZERO, (Bundle) null);
+                DialogFactory.m10114a((Activity) LiveViewMirrorlessStopmotionActivity.this, C2328a.ON_ERROR_REMAIN_ZERO, (Bundle) null);
             } else if (i == 4) {
-                C2331d.m10114a((Activity) LiveViewMirrorlessStopmotionActivity.this, C2328a.ON_ERROR_REJECT_VIDEOMODE, (Bundle) null);
+                DialogFactory.m10114a((Activity) LiveViewMirrorlessStopmotionActivity.this, C2328a.ON_ERROR_REJECT_VIDEOMODE, (Bundle) null);
             }
         }
 
         /* renamed from: b */
         public void mo7096b(int i) {
             if (i == 1) {
-                C2331d.m10114a((Activity) LiveViewMirrorlessStopmotionActivity.this, C2328a.ON_ERROR_REMAIN_ZERO, (Bundle) null);
+                DialogFactory.m10114a((Activity) LiveViewMirrorlessStopmotionActivity.this, C2328a.ON_ERROR_REMAIN_ZERO, (Bundle) null);
             }
         }
 
@@ -195,7 +195,7 @@ public class LiveViewMirrorlessStopmotionActivity extends C2946c {
         public void mo7095b() {
             LiveViewMirrorlessStopmotionActivity.this._handler.post(new Runnable() {
                 public void run() {
-                    C2331d.m10114a((Activity) LiveViewMirrorlessStopmotionActivity.this, C2328a.ON_PROGRESS, (Bundle) null);
+                    DialogFactory.m10114a((Activity) LiveViewMirrorlessStopmotionActivity.this, C2328a.ON_PROGRESS, (Bundle) null);
                 }
             });
         }
@@ -204,7 +204,7 @@ public class LiveViewMirrorlessStopmotionActivity extends C2946c {
         public void mo7098c() {
             LiveViewMirrorlessStopmotionActivity.this._handler.post(new Runnable() {
                 public void run() {
-                    C2331d.m10100a((Activity) LiveViewMirrorlessStopmotionActivity.this);
+                    DialogFactory.m10100a((Activity) LiveViewMirrorlessStopmotionActivity.this);
                 }
             });
         }
@@ -213,8 +213,8 @@ public class LiveViewMirrorlessStopmotionActivity extends C2946c {
         public void mo7100d() {
             LiveViewMirrorlessStopmotionActivity.this._handler.post(new Runnable() {
                 public void run() {
-                    C2331d.m10100a((Activity) LiveViewMirrorlessStopmotionActivity.this);
-                    C2331d.m10114a((Activity) LiveViewMirrorlessStopmotionActivity.this, C2328a.ON_DISCONNECT_NO_FINISH, (Bundle) null);
+                    DialogFactory.m10100a((Activity) LiveViewMirrorlessStopmotionActivity.this);
+                    DialogFactory.m10114a((Activity) LiveViewMirrorlessStopmotionActivity.this, C2328a.ON_DISCONNECT_NO_FINISH, (Bundle) null);
                 }
             });
         }
@@ -223,7 +223,7 @@ public class LiveViewMirrorlessStopmotionActivity extends C2946c {
         public void mo7101e() {
             LiveViewMirrorlessStopmotionActivity.this._handler.post(new Runnable() {
                 public void run() {
-                    C2331d.m10114a((Activity) LiveViewMirrorlessStopmotionActivity.this, C2328a.ON_SHOOT_MODE_CHANGED, (Bundle) null);
+                    DialogFactory.m10114a((Activity) LiveViewMirrorlessStopmotionActivity.this, C2328a.ON_SHOOT_MODE_CHANGED, (Bundle) null);
                 }
             });
         }
@@ -236,7 +236,7 @@ public class LiveViewMirrorlessStopmotionActivity extends C2946c {
         public void mo7089a(final C2328a aVar) {
             LiveViewMirrorlessStopmotionActivity.this._handler.post(new Runnable() {
                 public void run() {
-                    C2331d.m10114a((Activity) LiveViewMirrorlessStopmotionActivity.this, aVar, (Bundle) null);
+                    DialogFactory.m10114a((Activity) LiveViewMirrorlessStopmotionActivity.this, aVar, (Bundle) null);
                 }
             });
         }
@@ -303,7 +303,7 @@ public class LiveViewMirrorlessStopmotionActivity extends C2946c {
         public void mo7838b(boolean z, String str) {
             if (!z) {
                 LiveViewMirrorlessStopmotionActivity.this.m19561a(false);
-                C2331d.m10114a((Activity) LiveViewMirrorlessStopmotionActivity.this, C2328a.ON_ERROR_STOPMOTION_CMD, (Bundle) null);
+                DialogFactory.m10114a((Activity) LiveViewMirrorlessStopmotionActivity.this, C2328a.ON_ERROR_STOPMOTION_CMD, (Bundle) null);
                 return;
             }
             LiveViewMirrorlessStopmotionActivity.this.m19567b(str);
@@ -378,7 +378,7 @@ public class LiveViewMirrorlessStopmotionActivity extends C2946c {
         /* renamed from: a */
         public void mo7093a(int[] iArr) {
             if (C1879a.m7548d(C1712b.m6919c().mo4896a())) {
-                C2261g.m9771e("LiveViewMirrorlessStopmotionActivity", "" + iArr[9]);
+                ImageAppLog.info("LiveViewMirrorlessStopmotionActivity", "" + iArr[9]);
                 boolean z = 69 <= iArr[9] && iArr[9] <= 72;
                 LiveViewMirrorlessStopmotionActivity.this.ShowCameraControlBusyDialog(z, z);
             }
@@ -707,7 +707,7 @@ public class LiveViewMirrorlessStopmotionActivity extends C2946c {
                 public void onClick(View view) {
                     findViewById5.setEnabled(false);
                     if (LiveViewMirrorlessStopmotionActivity.this.f16207m) {
-                        C2261g.m9769c("playbutton", "Running......");
+                        ImageAppLog.error("playbutton", "Running......");
                         return;
                     }
                     LiveViewMirrorlessStopmotionActivity.this.f16207m = true;
@@ -730,7 +730,7 @@ public class LiveViewMirrorlessStopmotionActivity extends C2946c {
         imageButtonEx.setEnabledChangeListener(new C3924a() {
             /* renamed from: a */
             public void mo6982a(boolean z) {
-                C2261g.m9770d("LiveViewMirrorlessStopmotionActivity", "OnEnableChange　" + z);
+                ImageAppLog.verbose("LiveViewMirrorlessStopmotionActivity", "OnEnableChange　" + z);
                 if (!z && LiveViewMirrorlessStopmotionActivity.this.f16205k && LiveViewMirrorlessStopmotionActivity.this.f16195a.mo7855P()) {
                     LiveViewMirrorlessStopmotionActivity.this.f16205k = false;
                     LiveViewMirrorlessStopmotionActivity.this.f16195a.mo7899r();
@@ -745,16 +745,16 @@ public class LiveViewMirrorlessStopmotionActivity extends C2946c {
                     switch (motionEvent.getAction() & 255) {
                         case 0:
                             LiveViewMirrorlessStopmotionActivity.this.f16205k = true;
-                            C2261g.m9770d("LiveViewMirrorlessStopmotionActivity", "onTouch:ACTION_DOWN");
+                            ImageAppLog.verbose("LiveViewMirrorlessStopmotionActivity", "onTouch:ACTION_DOWN");
                             LiveViewMirrorlessStopmotionActivity.this.f16195a.mo7870a(false, 0, 0);
                             break;
                         case 1:
                             break;
                         case 3:
-                            C2261g.m9770d("LiveViewMirrorlessStopmotionActivity", "onTouch:ACTION_CANCEL");
+                            ImageAppLog.verbose("LiveViewMirrorlessStopmotionActivity", "onTouch:ACTION_CANCEL");
                             break;
                     }
-                    C2261g.m9770d("LiveViewMirrorlessStopmotionActivity", "onTouch:ACTION_UP");
+                    ImageAppLog.verbose("LiveViewMirrorlessStopmotionActivity", "onTouch:ACTION_UP");
                     LiveViewMirrorlessStopmotionActivity.this.f16205k = false;
                     if (LiveViewMirrorlessStopmotionActivity.this.f16195a.mo7855P()) {
                         LiveViewMirrorlessStopmotionActivity.this.f16195a.f10408O.mo3216a(Boolean.valueOf(false));
@@ -956,14 +956,14 @@ public class LiveViewMirrorlessStopmotionActivity extends C2946c {
     }
 
     public void onClickAeOffButton(View view) {
-        C2261g.m9760a(3158036, "");
+        ImageAppLog.m9760a(3158036, "");
         if (this.f16195a != null) {
             this.f16195a.mo7902u();
         }
     }
 
     public void onClickTouchAeButton(View view) {
-        C2261g.m9760a(3158035, "");
+        ImageAppLog.m9760a(3158035, "");
         if (mo11564a(C3270b.TOUCH_AE, null, null, null, 0, null, 0, null) && this.f16195a != null) {
             this.f16195a.mo7903v();
         }
@@ -1144,7 +1144,7 @@ public class LiveViewMirrorlessStopmotionActivity extends C2946c {
     }
 
     public void OnClickRec(View view) {
-        C2261g.m9760a(3158017, "");
+        ImageAppLog.m9760a(3158017, "");
         if (this.f16195a != null) {
             this.f16195a.mo7840A();
             this.f16195a.mo7847H();
@@ -1152,18 +1152,18 @@ public class LiveViewMirrorlessStopmotionActivity extends C2946c {
     }
 
     public void OnClickQMenu(View view) {
-        C2261g.m9760a(3158023, "");
+        ImageAppLog.m9760a(3158023, "");
         if (!this.f16195a.f10415V.mo7989c().booleanValue() || ShowDmsErrorIfReceiving() || this.f16195a == null) {
             return;
         }
         if (this.f16195a.mo7850K()) {
-            C2331d.m10114a((Activity) this, C2328a.ON_ERROR_NOW_PIC_CAPTURE, (Bundle) null);
+            DialogFactory.m10114a((Activity) this, C2328a.ON_ERROR_NOW_PIC_CAPTURE, (Bundle) null);
         } else if (this.f16195a.mo7862W()) {
             C1892f a = C1712b.m6919c().mo4896a();
             if (a != null) {
-                C1985b a2 = C2253z.m9679a(this._context, a);
+                C1985b a2 = ServiceFactory.m9679a(this._context, a);
                 if (a2 != null) {
-                    C2331d.m10114a((Activity) this, C2328a.ON_PROGRESS, (Bundle) null);
+                    DialogFactory.m10114a((Activity) this, C2328a.ON_PROGRESS, (Bundle) null);
                     a2.mo5185a((C1986a) new C1986a() {
                         /* renamed from: a */
                         public void mo5201a() {
@@ -1174,7 +1174,7 @@ public class LiveViewMirrorlessStopmotionActivity extends C2946c {
                             LiveViewMirrorlessStopmotionActivity.this.f16195a.mo7893e(false);
                             LiveViewMirrorlessStopmotionActivity.this._handler.post(new Runnable() {
                                 public void run() {
-                                    C2331d.m10100a((Activity) LiveViewMirrorlessStopmotionActivity.this);
+                                    DialogFactory.m10100a((Activity) LiveViewMirrorlessStopmotionActivity.this);
                                     if (!LiveViewMirrorlessStopmotionActivity.this.f16197c.mo12306h()) {
                                         LiveViewMirrorlessStopmotionActivity.this.m19587j();
                                     } else if (LiveViewMirrorlessStopmotionActivity.this.mo11564a(C3270b.QMENU, null, null, null, 0, null, 0, null)) {
@@ -1189,7 +1189,7 @@ public class LiveViewMirrorlessStopmotionActivity extends C2946c {
                         public void mo5203c() {
                             LiveViewMirrorlessStopmotionActivity.this._handler.post(new Runnable() {
                                 public void run() {
-                                    C2331d.m10100a((Activity) LiveViewMirrorlessStopmotionActivity.this);
+                                    DialogFactory.m10100a((Activity) LiveViewMirrorlessStopmotionActivity.this);
                                 }
                             });
                         }
@@ -1211,9 +1211,9 @@ public class LiveViewMirrorlessStopmotionActivity extends C2946c {
             return;
         }
         if (this.f16195a.mo7849J()) {
-            C2331d.m10114a((Activity) this, C2328a.ON_ERROR_NOW_MOVIE_RECORDING, (Bundle) null);
+            DialogFactory.m10114a((Activity) this, C2328a.ON_ERROR_NOW_MOVIE_RECORDING, (Bundle) null);
         } else if (this.f16195a.mo7850K()) {
-            C2331d.m10114a((Activity) this, C2328a.ON_ERROR_NOW_PIC_CAPTURE, (Bundle) null);
+            DialogFactory.m10114a((Activity) this, C2328a.ON_ERROR_NOW_PIC_CAPTURE, (Bundle) null);
         } else {
             Intent intent = new Intent(this._context, LiveSetupDrumPickerDriveModeActivity.class);
             intent.putExtra("StartActivityByMenu", true);
@@ -1228,9 +1228,9 @@ public class LiveViewMirrorlessStopmotionActivity extends C2946c {
             return;
         }
         if (this.f16195a.mo7849J()) {
-            C2331d.m10114a((Activity) this, C2328a.ON_ERROR_NOW_MOVIE_RECORDING, (Bundle) null);
+            DialogFactory.m10114a((Activity) this, C2328a.ON_ERROR_NOW_MOVIE_RECORDING, (Bundle) null);
         } else if (this.f16195a.mo7850K()) {
-            C2331d.m10114a((Activity) this, C2328a.ON_ERROR_NOW_PIC_CAPTURE, (Bundle) null);
+            DialogFactory.m10114a((Activity) this, C2328a.ON_ERROR_NOW_PIC_CAPTURE, (Bundle) null);
         } else {
             Intent intent = new Intent(this._context, LiveSetupDrumPickerAfModeActivity.class);
             intent.putExtra("StartActivityByMenu", true);
@@ -1240,33 +1240,33 @@ public class LiveViewMirrorlessStopmotionActivity extends C2946c {
     }
 
     public void OnClickLiveView(View view) {
-        C2261g.m9760a(3149826, "");
-        C2261g.m9770d("LiveViewMirrorlessStopmotionActivity", "OnClickLiveView");
+        ImageAppLog.m9760a(3149826, "");
+        ImageAppLog.verbose("LiveViewMirrorlessStopmotionActivity", "OnClickLiveView");
     }
 
     public void OnClickBrowser(View view) {
-        C2261g.m9760a(3149827, "");
+        ImageAppLog.m9760a(3149827, "");
         if (ShowDmsErrorIfReceiving() || this.f16195a == null) {
             return;
         }
         if (this.f16195a.mo7849J()) {
-            C2331d.m10114a((Activity) this, C2328a.ON_ERROR_NOW_MOVIE_RECORDING, (Bundle) null);
+            DialogFactory.m10114a((Activity) this, C2328a.ON_ERROR_NOW_MOVIE_RECORDING, (Bundle) null);
         } else if (this.f16195a.mo7850K()) {
-            C2331d.m10114a((Activity) this, C2328a.ON_ERROR_NOW_PIC_CAPTURE, (Bundle) null);
+            DialogFactory.m10114a((Activity) this, C2328a.ON_ERROR_NOW_PIC_CAPTURE, (Bundle) null);
         } else {
             this.f16195a.mo7876af();
         }
     }
 
     public void OnClickHome(View view) {
-        C2261g.m9760a(3149825, "");
+        ImageAppLog.m9760a(3149825, "");
         if (ShowDmsErrorIfReceiving() || this.f16195a == null) {
             return;
         }
         if (this.f16195a.mo7849J()) {
-            C2331d.m10114a((Activity) this, C2328a.ON_ERROR_NOW_MOVIE_RECORDING, (Bundle) null);
+            DialogFactory.m10114a((Activity) this, C2328a.ON_ERROR_NOW_MOVIE_RECORDING, (Bundle) null);
         } else if (this.f16195a.mo7850K()) {
-            C2331d.m10114a((Activity) this, C2328a.ON_ERROR_NOW_PIC_CAPTURE, (Bundle) null);
+            DialogFactory.m10114a((Activity) this, C2328a.ON_ERROR_NOW_PIC_CAPTURE, (Bundle) null);
         } else {
             Intent intent = new Intent(this._context, GuidanceMenuActivity.class);
             finish();
@@ -1275,7 +1275,7 @@ public class LiveViewMirrorlessStopmotionActivity extends C2946c {
     }
 
     public void OnClickSetup(View view) {
-        C2261g.m9760a(3149828, "");
+        ImageAppLog.m9760a(3149828, "");
         openOptionsMenu();
     }
 
@@ -1336,7 +1336,7 @@ public class LiveViewMirrorlessStopmotionActivity extends C2946c {
     /* renamed from: j */
     public void m19587j() {
         final C2328a aVar = C2328a.ON_SELECT_DIRECT_REC_SETTING;
-        C2331d.m10115a((Activity) this, aVar, (Bundle) null, (C2325c) new C2325c() {
+        DialogFactory.m10115a((Activity) this, aVar, (Bundle) null, (C2325c) new C2325c() {
             /* renamed from: a */
             public void mo6131a() {
                 C5559l lVar;
@@ -1354,10 +1354,10 @@ public class LiveViewMirrorlessStopmotionActivity extends C2946c {
                 } else {
                     LiveViewMirrorlessStopmotionActivity.this.f16202h = new ArrayAdapter(LiveViewMirrorlessStopmotionActivity.this._context, 17367043, LiveViewMirrorlessStopmotionActivity.this.f16201g.f17218c);
                 }
-                C2331d.m10110a((Activity) LiveViewMirrorlessStopmotionActivity.this, aVar, (int) R.id.qMenuListView, (ListAdapter) LiveViewMirrorlessStopmotionActivity.this.f16202h);
-                C2331d.m10107a((Activity) LiveViewMirrorlessStopmotionActivity.this, aVar, (int) R.id.qMenuListView, (OnItemClickListener) new OnItemClickListener() {
+                DialogFactory.m10110a((Activity) LiveViewMirrorlessStopmotionActivity.this, aVar, (int) R.id.qMenuListView, (ListAdapter) LiveViewMirrorlessStopmotionActivity.this.f16202h);
+                DialogFactory.m10107a((Activity) LiveViewMirrorlessStopmotionActivity.this, aVar, (int) R.id.qMenuListView, (OnItemClickListener) new OnItemClickListener() {
                     public void onItemClick(AdapterView<?> adapterView, View view, int i, long j) {
-                        C2331d.m10100a((Activity) LiveViewMirrorlessStopmotionActivity.this);
+                        DialogFactory.m10100a((Activity) LiveViewMirrorlessStopmotionActivity.this);
                         if (LiveViewMirrorlessStopmotionActivity.this.f16201g != null) {
                             LiveViewMirrorlessStopmotionActivity.this.f16201g.mo12318a(LiveViewMirrorlessStopmotionActivity.this._context, i);
                         }
@@ -1393,7 +1393,7 @@ public class LiveViewMirrorlessStopmotionActivity extends C2946c {
 
     /* renamed from: k */
     private boolean m19588k() {
-        return C2331d.m10125b((Activity) this, C2328a.ON_PROGRESS);
+        return DialogFactory.m10125b((Activity) this, C2328a.ON_PROGRESS);
     }
 
     /* renamed from: l */
@@ -1410,11 +1410,11 @@ public class LiveViewMirrorlessStopmotionActivity extends C2946c {
     /* renamed from: a */
     private void m19562a(boolean z, boolean z2) {
         if (!z) {
-            C2331d.m10102a((Activity) this, C2328a.ON_PROGRESS);
+            DialogFactory.m10102a((Activity) this, C2328a.ON_PROGRESS);
             return;
         }
         this.f16212t = z2;
-        C2331d.m10114a((Activity) this, C2328a.ON_PROGRESS, (Bundle) null);
+        DialogFactory.m10114a((Activity) this, C2328a.ON_PROGRESS, (Bundle) null);
     }
 
     /* renamed from: m */
@@ -1511,18 +1511,18 @@ public class LiveViewMirrorlessStopmotionActivity extends C2946c {
     public void m19597p() {
         mo11564a(C3270b.OTHER, null, null, null, 0, null, 0, null);
         ((Button) findViewById(R.id.StopmotionExitButton)).setEnabled(false);
-        C2331d.m10114a((Activity) this, C2328a.ON_STOPMOTION_FINISH_CONFIRM, (Bundle) null);
+        DialogFactory.m10114a((Activity) this, C2328a.ON_STOPMOTION_FINISH_CONFIRM, (Bundle) null);
     }
 
     /* renamed from: q */
     private void m19598q() {
-        C2331d.m10114a((Activity) this, C2328a.ON_STOPMOTION_CREATE_MOVIE_NOW_CONFIRM, (Bundle) null);
+        DialogFactory.m10114a((Activity) this, C2328a.ON_STOPMOTION_CREATE_MOVIE_NOW_CONFIRM, (Bundle) null);
     }
 
     /* access modifiers changed from: private */
     /* renamed from: r */
     public void m19599r() {
-        C2331d.m10114a((Activity) this, C2328a.ON_ERROR_STOPMOTION_LIMIT_NUM, (Bundle) null);
+        DialogFactory.m10114a((Activity) this, C2328a.ON_ERROR_STOPMOTION_LIMIT_NUM, (Bundle) null);
     }
 
     /* access modifiers changed from: private */

@@ -6,7 +6,7 @@
 # instance fields
 .field private a:Landroid/app/Activity;
 
-.field private b:Lcom/panasonic/avc/cng/view/play/highlight/b;
+.field private b:Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;
 
 .field private c:Landroid/widget/GridView;
 
@@ -55,12 +55,12 @@
     return-void
 .end method
 
-.method static synthetic a(Lcom/panasonic/avc/cng/view/play/highlight/a;)Lcom/panasonic/avc/cng/view/play/highlight/b;
+.method static synthetic a(Lcom/panasonic/avc/cng/view/play/highlight/a;)Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;
     .locals 1
 
     .prologue
     .line 22
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/a;->b:Lcom/panasonic/avc/cng/view/play/highlight/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/a;->b:Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;
 
     return-object v0
 .end method
@@ -99,14 +99,14 @@
 
     const v2, 0x7f03012e
 
-    iget-object v3, p0, Lcom/panasonic/avc/cng/view/play/highlight/a;->b:Lcom/panasonic/avc/cng/view/play/highlight/b;
+    iget-object v3, p0, Lcom/panasonic/avc/cng/view/play/highlight/a;->b:Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;
 
     .line 91
-    invoke-virtual {v3}, Lcom/panasonic/avc/cng/view/play/highlight/b;->h()Lcom/panasonic/avc/cng/view/parts/t;
+    invoke-virtual {v3}, Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;->h()Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
     move-result-object v3
 
-    invoke-direct {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/parts/w;-><init>(Landroid/content/Context;ILcom/panasonic/avc/cng/view/parts/t;)V
+    invoke-direct {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/parts/w;-><init>(Landroid/content/Context;ILcom/panasonic/avc/cng/view/parts/BrowserViewModel;)V
 
     .line 92
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/highlight/a;->c:Landroid/widget/GridView;
@@ -148,13 +148,13 @@
     iput-object v1, p0, Lcom/panasonic/avc/cng/view/play/highlight/a;->d:Lcom/panasonic/avc/cng/view/parts/p;
 
     .line 130
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/a;->b:Lcom/panasonic/avc/cng/view/play/highlight/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/a;->b:Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/highlight/b;->i()Lcom/panasonic/avc/cng/view/smartoperation/b;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;->i()Lcom/panasonic/avc/cng/view/smartoperation/GetSelectFormatList;
 
     move-result-object v0
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/smartoperation/b;->c:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/smartoperation/GetSelectFormatList;->c:Lcom/panasonic/avc/cng/a/c;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/highlight/a;->d:Lcom/panasonic/avc/cng/view/parts/p;
 
@@ -180,13 +180,13 @@
     iput-object v1, p0, Lcom/panasonic/avc/cng/view/play/highlight/a;->e:Lcom/panasonic/avc/cng/view/parts/at;
 
     .line 139
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/a;->b:Lcom/panasonic/avc/cng/view/play/highlight/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/a;->b:Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/highlight/b;->i()Lcom/panasonic/avc/cng/view/smartoperation/b;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;->i()Lcom/panasonic/avc/cng/view/smartoperation/GetSelectFormatList;
 
     move-result-object v0
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/smartoperation/b;->f:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/smartoperation/GetSelectFormatList;->f:Lcom/panasonic/avc/cng/a/c;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/highlight/a;->e:Lcom/panasonic/avc/cng/view/parts/at;
 
@@ -212,9 +212,9 @@
     iput-object v1, p0, Lcom/panasonic/avc/cng/view/play/highlight/a;->f:Lcom/panasonic/avc/cng/view/parts/p;
 
     .line 148
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/a;->b:Lcom/panasonic/avc/cng/view/play/highlight/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/a;->b:Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/highlight/b;->e:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;->e:Lcom/panasonic/avc/cng/a/c;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/highlight/a;->f:Lcom/panasonic/avc/cng/view/parts/p;
 
@@ -240,13 +240,13 @@
     iput-object v1, p0, Lcom/panasonic/avc/cng/view/play/highlight/a;->g:Lcom/panasonic/avc/cng/view/parts/p;
 
     .line 156
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/a;->b:Lcom/panasonic/avc/cng/view/play/highlight/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/a;->b:Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/highlight/b;->h()Lcom/panasonic/avc/cng/view/parts/t;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;->h()Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
     move-result-object v0
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/parts/t;->g:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->g:Lcom/panasonic/avc/cng/a/c;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/highlight/a;->g:Lcom/panasonic/avc/cng/view/parts/p;
 
@@ -255,13 +255,13 @@
     invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/a/c;->a(Lcom/panasonic/avc/cng/a/b;)V
 
     .line 158
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/a;->b:Lcom/panasonic/avc/cng/view/play/highlight/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/a;->b:Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/highlight/b;->h()Lcom/panasonic/avc/cng/view/parts/t;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;->h()Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
     move-result-object v0
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/parts/t;->k:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->k:Lcom/panasonic/avc/cng/a/c;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/highlight/a;->g:Lcom/panasonic/avc/cng/view/parts/p;
 
@@ -287,9 +287,9 @@
     iput-object v1, p0, Lcom/panasonic/avc/cng/view/play/highlight/a;->h:Lcom/panasonic/avc/cng/view/parts/d;
 
     .line 164
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/a;->b:Lcom/panasonic/avc/cng/view/play/highlight/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/a;->b:Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/highlight/b;->g:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;->g:Lcom/panasonic/avc/cng/a/c;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/highlight/a;->h:Lcom/panasonic/avc/cng/view/parts/d;
 
@@ -298,9 +298,9 @@
     invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/a/c;->a(Lcom/panasonic/avc/cng/a/b;)V
 
     .line 165
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/a;->b:Lcom/panasonic/avc/cng/view/play/highlight/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/a;->b:Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/highlight/b;->f:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;->f:Lcom/panasonic/avc/cng/a/c;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/highlight/a;->h:Lcom/panasonic/avc/cng/view/parts/d;
 
@@ -326,9 +326,9 @@
     iput-object v1, p0, Lcom/panasonic/avc/cng/view/play/highlight/a;->i:Lcom/panasonic/avc/cng/view/parts/p;
 
     .line 173
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/a;->b:Lcom/panasonic/avc/cng/view/play/highlight/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/a;->b:Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/highlight/b;->h:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;->h:Lcom/panasonic/avc/cng/a/c;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/highlight/a;->i:Lcom/panasonic/avc/cng/view/parts/p;
 
@@ -337,9 +337,9 @@
     invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/a/c;->a(Lcom/panasonic/avc/cng/a/b;)V
 
     .line 175
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/a;->b:Lcom/panasonic/avc/cng/view/play/highlight/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/a;->b:Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/highlight/b;->i:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;->i:Lcom/panasonic/avc/cng/a/c;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/highlight/a;->i:Lcom/panasonic/avc/cng/view/parts/p;
 
@@ -363,24 +363,24 @@
     iput-object v1, p0, Lcom/panasonic/avc/cng/view/play/highlight/a;->a:Landroid/app/Activity;
 
     .line 73
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/a;->b:Lcom/panasonic/avc/cng/view/play/highlight/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/a;->b:Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;
 
     if-eqz v0, :cond_0
 
     .line 75
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/a;->b:Lcom/panasonic/avc/cng/view/play/highlight/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/a;->b:Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/highlight/b;->c()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;->c()V
 
     .line 77
     :cond_0
-    iput-object v1, p0, Lcom/panasonic/avc/cng/view/play/highlight/a;->b:Lcom/panasonic/avc/cng/view/play/highlight/b;
+    iput-object v1, p0, Lcom/panasonic/avc/cng/view/play/highlight/a;->b:Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;
 
     .line 78
     return-void
 .end method
 
-.method public a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/play/highlight/b;)V
+.method public a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;)V
     .locals 0
 
     .prologue
@@ -388,7 +388,7 @@
     iput-object p1, p0, Lcom/panasonic/avc/cng/view/play/highlight/a;->a:Landroid/app/Activity;
 
     .line 56
-    iput-object p2, p0, Lcom/panasonic/avc/cng/view/play/highlight/a;->b:Lcom/panasonic/avc/cng/view/play/highlight/b;
+    iput-object p2, p0, Lcom/panasonic/avc/cng/view/play/highlight/a;->b:Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;
 
     .line 59
     invoke-direct {p0}, Lcom/panasonic/avc/cng/view/play/highlight/a;->c()V
@@ -413,7 +413,7 @@
 
     if-eqz v1, :cond_1
 
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/highlight/a;->b:Lcom/panasonic/avc/cng/view/play/highlight/b;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/highlight/a;->b:Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;
 
     if-eqz v1, :cond_1
 
@@ -424,14 +424,14 @@
 
     const v3, 0x7f03012e
 
-    iget-object v4, p0, Lcom/panasonic/avc/cng/view/play/highlight/a;->b:Lcom/panasonic/avc/cng/view/play/highlight/b;
+    iget-object v4, p0, Lcom/panasonic/avc/cng/view/play/highlight/a;->b:Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;
 
     .line 193
-    invoke-virtual {v4}, Lcom/panasonic/avc/cng/view/play/highlight/b;->h()Lcom/panasonic/avc/cng/view/parts/t;
+    invoke-virtual {v4}, Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;->h()Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
     move-result-object v4
 
-    invoke-direct {v1, v2, v3, v4}, Lcom/panasonic/avc/cng/view/parts/w;-><init>(Landroid/content/Context;ILcom/panasonic/avc/cng/view/parts/t;)V
+    invoke-direct {v1, v2, v3, v4}, Lcom/panasonic/avc/cng/view/parts/w;-><init>(Landroid/content/Context;ILcom/panasonic/avc/cng/view/parts/BrowserViewModel;)V
 
     .line 194
     iget-object v2, p0, Lcom/panasonic/avc/cng/view/play/highlight/a;->c:Landroid/widget/GridView;
@@ -441,22 +441,22 @@
     .line 197
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/highlight/a;->c:Landroid/widget/GridView;
 
-    iget-object v2, p0, Lcom/panasonic/avc/cng/view/play/highlight/a;->b:Lcom/panasonic/avc/cng/view/play/highlight/b;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/view/play/highlight/a;->b:Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;
 
-    invoke-virtual {v2}, Lcom/panasonic/avc/cng/view/play/highlight/b;->g()I
+    invoke-virtual {v2}, Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;->g()I
 
     move-result v2
 
     invoke-virtual {v1, v2}, Landroid/widget/GridView;->setSelection(I)V
 
     .line 200
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/highlight/a;->b:Lcom/panasonic/avc/cng/view/play/highlight/b;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/highlight/a;->b:Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;
 
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/play/highlight/b;->h()Lcom/panasonic/avc/cng/view/parts/t;
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;->h()Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/parts/t;->d()Ljava/util/List;
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->d()Ljava/util/List;
 
     move-result-object v1
 
@@ -469,9 +469,9 @@
     if-eqz p1, :cond_3
 
     .line 204
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/highlight/a;->b:Lcom/panasonic/avc/cng/view/play/highlight/b;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/highlight/a;->b:Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;
 
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/play/highlight/b;->i()Lcom/panasonic/avc/cng/view/smartoperation/b;
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;->i()Lcom/panasonic/avc/cng/view/smartoperation/GetSelectFormatList;
 
     move-result-object v1
 
@@ -479,7 +479,7 @@
     if-eqz v1, :cond_0
 
     .line 210
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/smartoperation/b;->f()Lcom/panasonic/avc/cng/view/parts/bi;
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/smartoperation/GetSelectFormatList;->f()Lcom/panasonic/avc/cng/view/parts/bi;
 
     move-result-object v1
 
@@ -502,13 +502,13 @@
 
     .line 220
     :cond_0
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/highlight/a;->b:Lcom/panasonic/avc/cng/view/play/highlight/b;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/highlight/a;->b:Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;
 
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/play/highlight/b;->h()Lcom/panasonic/avc/cng/view/parts/t;
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;->h()Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/parts/t;->x()I
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->x()I
 
     move-result v1
 
@@ -516,19 +516,19 @@
 
     if-eqz v0, :cond_2
 
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/a;->b:Lcom/panasonic/avc/cng/view/play/highlight/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/a;->b:Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;
 
     .line 221
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/highlight/b;->o()Z
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;->o()Z
 
     move-result v0
 
     if-nez v0, :cond_2
 
     .line 223
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/a;->b:Lcom/panasonic/avc/cng/view/play/highlight/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/a;->b:Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/highlight/b;->h:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;->h:Lcom/panasonic/avc/cng/a/c;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/highlight/a;->a:Landroid/app/Activity;
 
@@ -546,9 +546,9 @@
 
     .line 228
     :goto_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/a;->b:Lcom/panasonic/avc/cng/view/play/highlight/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/a;->b:Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/highlight/b;->i:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;->i:Lcom/panasonic/avc/cng/a/c;
 
     invoke-static {v5}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -563,9 +563,9 @@
 
     .line 226
     :cond_2
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/a;->b:Lcom/panasonic/avc/cng/view/play/highlight/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/a;->b:Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/highlight/b;->h:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;->h:Lcom/panasonic/avc/cng/a/c;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/highlight/a;->a:Landroid/app/Activity;
 
@@ -585,9 +585,9 @@
 
     .line 233
     :cond_3
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/highlight/a;->b:Lcom/panasonic/avc/cng/view/play/highlight/b;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/highlight/a;->b:Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;
 
-    iget-object v1, v1, Lcom/panasonic/avc/cng/view/play/highlight/b;->i:Lcom/panasonic/avc/cng/a/c;
+    iget-object v1, v1, Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;->i:Lcom/panasonic/avc/cng/a/c;
 
     invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -607,7 +607,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/a;->b:Lcom/panasonic/avc/cng/view/play/highlight/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/a;->b:Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;
 
     if-eqz v0, :cond_0
 
@@ -628,15 +628,15 @@
     .line 249
     new-instance v0, Lcom/panasonic/avc/cng/view/parts/t$c;
 
-    iget-object v3, p0, Lcom/panasonic/avc/cng/view/play/highlight/a;->b:Lcom/panasonic/avc/cng/view/play/highlight/b;
+    iget-object v3, p0, Lcom/panasonic/avc/cng/view/play/highlight/a;->b:Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;
 
-    invoke-virtual {v3}, Lcom/panasonic/avc/cng/view/play/highlight/b;->h()Lcom/panasonic/avc/cng/view/parts/t;
+    invoke-virtual {v3}, Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;->h()Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
     move-result-object v3
 
     invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-direct {v0, v3, v1, v2}, Lcom/panasonic/avc/cng/view/parts/t$c;-><init>(Lcom/panasonic/avc/cng/view/parts/t;II)V
+    invoke-direct {v0, v3, v1, v2}, Lcom/panasonic/avc/cng/view/parts/t$c;-><init>(Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;II)V
 
     .line 252
     :goto_0

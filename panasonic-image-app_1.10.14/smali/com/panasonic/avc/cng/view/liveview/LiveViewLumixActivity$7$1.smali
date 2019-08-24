@@ -54,7 +54,7 @@
 
     iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixActivity$7;->b:Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;)V
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;)V
 
     .line 954
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixActivity$7$1;->a:Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixActivity$7;

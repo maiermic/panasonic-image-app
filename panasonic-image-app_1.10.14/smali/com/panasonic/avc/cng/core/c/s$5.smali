@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/panasonic/avc/cng/core/c/s;
+    value = Lcom/panasonic/avc/cng/core/c/Picmate;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,16 +15,16 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/panasonic/avc/cng/core/c/s;
+.field final synthetic a:Lcom/panasonic/avc/cng/core/c/Picmate;
 
 
 # direct methods
-.method constructor <init>(Lcom/panasonic/avc/cng/core/c/s;)V
+.method constructor <init>(Lcom/panasonic/avc/cng/core/c/Picmate;)V
     .locals 0
 
     .prologue
     .line 247
-    iput-object p1, p0, Lcom/panasonic/avc/cng/core/c/s$5;->a:Lcom/panasonic/avc/cng/core/c/s;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/core/c/s$5;->a:Lcom/panasonic/avc/cng/core/c/Picmate;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -63,7 +63,7 @@
     move-result v1
 
     .line 253
-    iget-object v2, p0, Lcom/panasonic/avc/cng/core/c/s$5;->a:Lcom/panasonic/avc/cng/core/c/s;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/core/c/s$5;->a:Lcom/panasonic/avc/cng/core/c/Picmate;
 
     const/4 v3, 0x3
 
@@ -72,7 +72,7 @@
     const/4 v0, 0x1
 
     :cond_0
-    invoke-static {v2, v0}, Lcom/panasonic/avc/cng/core/c/s;->c(Lcom/panasonic/avc/cng/core/c/s;Z)Z
+    invoke-static {v2, v0}, Lcom/panasonic/avc/cng/core/c/Picmate;->c(Lcom/panasonic/avc/cng/core/c/Picmate;Z)Z
 
     .line 255
     :cond_1

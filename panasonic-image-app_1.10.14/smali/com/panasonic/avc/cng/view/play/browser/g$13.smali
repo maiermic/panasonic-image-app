@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/view/play/browser/g;->a(Lcom/panasonic/avc/cng/model/c/e;)V
+    value = Lcom/panasonic/avc/cng/view/play/browser/MainBrowserViewModel;->a(Lcom/panasonic/avc/cng/model/c/CameraStatus;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/panasonic/avc/cng/view/play/browser/g;
+.field final synthetic a:Lcom/panasonic/avc/cng/view/play/browser/MainBrowserViewModel;
 
 
 # direct methods
-.method constructor <init>(Lcom/panasonic/avc/cng/view/play/browser/g;)V
+.method constructor <init>(Lcom/panasonic/avc/cng/view/play/browser/MainBrowserViewModel;)V
     .locals 0
 
     .prologue
     .line 1313
-    iput-object p1, p0, Lcom/panasonic/avc/cng/view/play/browser/g$13;->a:Lcom/panasonic/avc/cng/view/play/browser/g;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/view/play/browser/g$13;->a:Lcom/panasonic/avc/cng/view/play/browser/MainBrowserViewModel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -41,35 +41,35 @@
 
     .prologue
     .line 1316
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/g$13;->a:Lcom/panasonic/avc/cng/view/play/browser/g;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/g$13;->a:Lcom/panasonic/avc/cng/view/play/browser/MainBrowserViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/browser/g;->d(Lcom/panasonic/avc/cng/view/play/browser/g;)Lcom/panasonic/avc/cng/view/parts/t;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/browser/MainBrowserViewModel;->d(Lcom/panasonic/avc/cng/view/play/browser/MainBrowserViewModel;)Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 1318
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/g$13;->a:Lcom/panasonic/avc/cng/view/play/browser/g;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/g$13;->a:Lcom/panasonic/avc/cng/view/play/browser/MainBrowserViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/browser/g;->d(Lcom/panasonic/avc/cng/view/play/browser/g;)Lcom/panasonic/avc/cng/view/parts/t;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/browser/MainBrowserViewModel;->d(Lcom/panasonic/avc/cng/view/play/browser/MainBrowserViewModel;)Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/parts/t;->l()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->l()V
 
     .line 1321
     :cond_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/g$13;->a:Lcom/panasonic/avc/cng/view/play/browser/g;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/g$13;->a:Lcom/panasonic/avc/cng/view/play/browser/MainBrowserViewModel;
 
     const/4 v1, -0x1
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/play/browser/g;->a(Lcom/panasonic/avc/cng/view/play/browser/g;I)I
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/play/browser/MainBrowserViewModel;->a(Lcom/panasonic/avc/cng/view/play/browser/MainBrowserViewModel;I)I
 
     .line 1324
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/g$13;->a:Lcom/panasonic/avc/cng/view/play/browser/g;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/g$13;->a:Lcom/panasonic/avc/cng/view/play/browser/MainBrowserViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/browser/g;->x()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/browser/MainBrowserViewModel;->x()V
 
     .line 1325
     return-void

@@ -51,7 +51,7 @@
     .line 6871
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/k$24;->c:Lcom/panasonic/avc/cng/view/liveview/k;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/k;->au(Lcom/panasonic/avc/cng/view/liveview/k;)Lcom/panasonic/avc/cng/core/a/g;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/k;->au(Lcom/panasonic/avc/cng/view/liveview/k;)Lcom/panasonic/avc/cng/core/a/FocusCommand;
 
     move-result-object v0
 
@@ -59,7 +59,7 @@
 
     iget v2, p0, Lcom/panasonic/avc/cng/view/liveview/k$24;->b:I
 
-    invoke-virtual {v0, v1, v2}, Lcom/panasonic/avc/cng/core/a/g;->a(II)Lcom/panasonic/avc/cng/model/c/i;
+    invoke-virtual {v0, v1, v2}, Lcom/panasonic/avc/cng/core/a/FocusCommand;->a(II)Lcom/panasonic/avc/cng/model/c/i;
 
     move-result-object v0
 
@@ -75,7 +75,7 @@
 
     const-string v1, "MF assist position setting error."
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 6887
     :cond_0

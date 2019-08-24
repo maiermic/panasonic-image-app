@@ -51,7 +51,7 @@
     .line 231
     const-string v0, "On"
 
-    invoke-static {v1, v0}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v1, v0}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 232
     const-string v0, "1"
@@ -79,7 +79,7 @@
     :cond_0
     const-string v0, "Off"
 
-    invoke-static {v1, v0}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v1, v0}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 237
     const-string v0, "0"

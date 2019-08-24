@@ -45,9 +45,9 @@
 
     iget-object v0, v0, Lcom/panasonic/avc/cng/application/c$f$1;->a:Lcom/panasonic/avc/cng/application/c$f;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/application/c$f;->a:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/application/c$f;->a:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/application/c;->a(Lcom/panasonic/avc/cng/application/c;)Lcom/panasonic/avc/cng/application/c$e;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->a(Lcom/panasonic/avc/cng/application/NfcSupportViewModel;)Lcom/panasonic/avc/cng/application/c$e;
 
     move-result-object v0
 
@@ -58,9 +58,9 @@
 
     iget-object v0, v0, Lcom/panasonic/avc/cng/application/c$f$1;->a:Lcom/panasonic/avc/cng/application/c$f;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/application/c$f;->a:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/application/c$f;->a:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/application/c;->a(Lcom/panasonic/avc/cng/application/c;)Lcom/panasonic/avc/cng/application/c$e;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->a(Lcom/panasonic/avc/cng/application/NfcSupportViewModel;)Lcom/panasonic/avc/cng/application/c$e;
 
     move-result-object v0
 
@@ -73,9 +73,9 @@
 
     iget-object v0, v0, Lcom/panasonic/avc/cng/application/c$f$1;->a:Lcom/panasonic/avc/cng/application/c$f;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/application/c$f;->a:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/application/c$f;->a:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/application/c;->i()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->i()V
 
     .line 200
     :cond_0

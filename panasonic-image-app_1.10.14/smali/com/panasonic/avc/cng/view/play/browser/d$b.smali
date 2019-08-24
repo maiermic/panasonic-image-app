@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/panasonic/avc/cng/view/play/browser/d;
+    value = Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

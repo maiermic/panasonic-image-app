@@ -82,11 +82,11 @@
     iget-object v3, p0, Lcom/panasonic/avc/cng/view/play/sceneprotect/a;->b:Lcom/panasonic/avc/cng/view/play/sceneprotect/b;
 
     .line 82
-    invoke-virtual {v3}, Lcom/panasonic/avc/cng/view/play/sceneprotect/b;->i()Lcom/panasonic/avc/cng/view/parts/t;
+    invoke-virtual {v3}, Lcom/panasonic/avc/cng/view/play/sceneprotect/b;->i()Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
     move-result-object v3
 
-    invoke-direct {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/parts/w;-><init>(Landroid/content/Context;ILcom/panasonic/avc/cng/view/parts/t;)V
+    invoke-direct {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/parts/w;-><init>(Landroid/content/Context;ILcom/panasonic/avc/cng/view/parts/BrowserViewModel;)V
 
     .line 83
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/sceneprotect/a;->c:Landroid/widget/GridView;
@@ -158,11 +158,11 @@
     .line 126
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/sceneprotect/a;->b:Lcom/panasonic/avc/cng/view/play/sceneprotect/b;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/sceneprotect/b;->i()Lcom/panasonic/avc/cng/view/parts/t;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/sceneprotect/b;->i()Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
     move-result-object v0
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/parts/t;->g:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->g:Lcom/panasonic/avc/cng/a/c;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/sceneprotect/a;->e:Lcom/panasonic/avc/cng/view/parts/p;
 
@@ -173,11 +173,11 @@
     .line 128
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/sceneprotect/a;->b:Lcom/panasonic/avc/cng/view/play/sceneprotect/b;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/sceneprotect/b;->i()Lcom/panasonic/avc/cng/view/parts/t;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/sceneprotect/b;->i()Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
     move-result-object v0
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/parts/t;->k:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->k:Lcom/panasonic/avc/cng/a/c;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/sceneprotect/a;->e:Lcom/panasonic/avc/cng/view/parts/p;
 
@@ -363,11 +363,11 @@
     iget-object v3, p0, Lcom/panasonic/avc/cng/view/play/sceneprotect/a;->b:Lcom/panasonic/avc/cng/view/play/sceneprotect/b;
 
     .line 164
-    invoke-virtual {v3}, Lcom/panasonic/avc/cng/view/play/sceneprotect/b;->i()Lcom/panasonic/avc/cng/view/parts/t;
+    invoke-virtual {v3}, Lcom/panasonic/avc/cng/view/play/sceneprotect/b;->i()Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
     move-result-object v3
 
-    invoke-direct {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/parts/w;-><init>(Landroid/content/Context;ILcom/panasonic/avc/cng/view/parts/t;)V
+    invoke-direct {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/parts/w;-><init>(Landroid/content/Context;ILcom/panasonic/avc/cng/view/parts/BrowserViewModel;)V
 
     .line 165
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/sceneprotect/a;->c:Landroid/widget/GridView;
@@ -388,11 +388,11 @@
     .line 171
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/sceneprotect/a;->b:Lcom/panasonic/avc/cng/view/play/sceneprotect/b;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/sceneprotect/b;->i()Lcom/panasonic/avc/cng/view/parts/t;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/sceneprotect/b;->i()Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/parts/t;->d()Ljava/util/List;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->d()Ljava/util/List;
 
     move-result-object v0
 
@@ -522,13 +522,13 @@
 
     iget-object v3, p0, Lcom/panasonic/avc/cng/view/play/sceneprotect/a;->b:Lcom/panasonic/avc/cng/view/play/sceneprotect/b;
 
-    invoke-virtual {v3}, Lcom/panasonic/avc/cng/view/play/sceneprotect/b;->i()Lcom/panasonic/avc/cng/view/parts/t;
+    invoke-virtual {v3}, Lcom/panasonic/avc/cng/view/play/sceneprotect/b;->i()Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
     move-result-object v3
 
     invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-direct {v0, v3, v1, v2}, Lcom/panasonic/avc/cng/view/parts/t$c;-><init>(Lcom/panasonic/avc/cng/view/parts/t;II)V
+    invoke-direct {v0, v3, v1, v2}, Lcom/panasonic/avc/cng/view/parts/t$c;-><init>(Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;II)V
 
     .line 224
     :goto_0

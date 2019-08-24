@@ -12,9 +12,9 @@ import com.panasonic.avc.cng.view.liveview.movie.wearable.LiveViewWearableActivi
 import com.panasonic.avc.cng.view.liveview.movie.wearable.LiveViewWearablePictureActivity;
 import com.panasonic.avc.cng.view.liveview.movie.wearable.LiveViewWearableVideoActivity;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
 import com.panasonic.avc.cng.view.play.browser.MainBrowserActivity;
-import com.panasonic.avc.cng.view.setting.C5537al.C5540a;
+import com.panasonic.avc.cng.view.setting.SettingMenuBaseActivity.C5540a;
 import com.panasonic.avc.cng.view.setting.C5681d.C5686b;
 
 public class SetupWearableSettingActivity extends C5741i {
@@ -85,13 +85,13 @@ public class SetupWearableSettingActivity extends C5741i {
                         public void run() {
                             switch (i) {
                                 case 2:
-                                    C2331d.m10114a((Activity) SetupWearableSettingActivity.this, C2328a.ON_DISCONNECT_BY_HIGH_TEMP_FINISH, (Bundle) null);
+                                    DialogFactory.m10114a((Activity) SetupWearableSettingActivity.this, C2328a.ON_DISCONNECT_BY_HIGH_TEMP_FINISH, (Bundle) null);
                                     return;
                                 case 3:
-                                    C2331d.m10114a((Activity) SetupWearableSettingActivity.this, C2328a.ON_DISCONNECT_BATTERY_LOW_FINISH, (Bundle) null);
+                                    DialogFactory.m10114a((Activity) SetupWearableSettingActivity.this, C2328a.ON_DISCONNECT_BATTERY_LOW_FINISH, (Bundle) null);
                                     return;
                                 default:
-                                    C2331d.m10114a((Activity) SetupWearableSettingActivity.this, C2328a.ON_DISCONNECT_FINISH, (Bundle) null);
+                                    DialogFactory.m10114a((Activity) SetupWearableSettingActivity.this, C2328a.ON_DISCONNECT_FINISH, (Bundle) null);
                                     return;
                             }
                         }

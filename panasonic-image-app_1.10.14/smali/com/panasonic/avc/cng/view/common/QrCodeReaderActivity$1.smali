@@ -45,7 +45,7 @@
 
     const-string v1, "surfaceChanged"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 96
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/QrCodeReaderActivity$1;->a:Lcom/panasonic/avc/cng/view/common/QrCodeReaderActivity;
@@ -167,7 +167,7 @@
 
     const-string v1, "surfaceCreated"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 72
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/QrCodeReaderActivity$1;->a:Lcom/panasonic/avc/cng/view/common/QrCodeReaderActivity;
@@ -201,7 +201,7 @@
 
     const-string v1, "surfaceDestroyed"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 83
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/QrCodeReaderActivity$1;->a:Lcom/panasonic/avc/cng/view/common/QrCodeReaderActivity;

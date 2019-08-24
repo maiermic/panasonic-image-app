@@ -39,7 +39,7 @@
 
 .field private g:Z
 
-.field private h:Landroid/support/v4/a/y;
+.field private h:Landroid/support/v4/a/LoaderManager;
 
 .field private i:Z
 
@@ -94,7 +94,7 @@
 
 
 # virtual methods
-.method a(Ljava/lang/String;ZZ)Landroid/support/v4/a/y;
+.method a(Ljava/lang/String;ZZ)Landroid/support/v4/a/LoaderManager;
     .locals 2
 
     .prologue
@@ -118,7 +118,7 @@
 
     move-result-object v0
 
-    check-cast v0, Landroid/support/v4/a/y;
+    check-cast v0, Landroid/support/v4/a/LoaderManager;
 
     .line 308
     if-nez v0, :cond_2
@@ -127,9 +127,9 @@
     if-eqz p3, :cond_1
 
     .line 310
-    new-instance v0, Landroid/support/v4/a/y;
+    new-instance v0, Landroid/support/v4/a/LoaderManager;
 
-    invoke-direct {v0, p1, p0, p2}, Landroid/support/v4/a/y;-><init>(Ljava/lang/String;Landroid/support/v4/a/o;Z)V
+    invoke-direct {v0, p1, p0, p2}, Landroid/support/v4/a/LoaderManager;-><init>(Ljava/lang/String;Landroid/support/v4/a/o;Z)V
 
     .line 311
     iget-object v1, p0, Landroid/support/v4/a/o;->f:Landroid/support/v4/c/h;
@@ -143,7 +143,7 @@
 
     .line 314
     :cond_2
-    invoke-virtual {v0, p0}, Landroid/support/v4/a/y;->a(Landroid/support/v4/a/o;)V
+    invoke-virtual {v0, p0}, Landroid/support/v4/a/LoaderManager;->a(Landroid/support/v4/a/o;)V
 
     goto :goto_0
 .end method
@@ -223,17 +223,17 @@
 
     move-result-object v0
 
-    check-cast v0, Landroid/support/v4/a/y;
+    check-cast v0, Landroid/support/v4/a/LoaderManager;
 
     .line 222
     if-eqz v0, :cond_0
 
-    iget-boolean v1, v0, Landroid/support/v4/a/y;->f:Z
+    iget-boolean v1, v0, Landroid/support/v4/a/LoaderManager;->f:Z
 
     if-nez v1, :cond_0
 
     .line 223
-    invoke-virtual {v0}, Landroid/support/v4/a/y;->h()V
+    invoke-virtual {v0}, Landroid/support/v4/a/LoaderManager;->h()V
 
     .line 224
     iget-object v0, p0, Landroid/support/v4/a/o;->f:Landroid/support/v4/c/h;
@@ -261,7 +261,7 @@
     iput-boolean p1, p0, Landroid/support/v4/a/o;->g:Z
 
     .line 258
-    iget-object v0, p0, Landroid/support/v4/a/o;->h:Landroid/support/v4/a/y;
+    iget-object v0, p0, Landroid/support/v4/a/o;->h:Landroid/support/v4/a/LoaderManager;
 
     if-nez v0, :cond_1
 
@@ -285,17 +285,17 @@
     if-eqz p1, :cond_2
 
     .line 268
-    iget-object v0, p0, Landroid/support/v4/a/o;->h:Landroid/support/v4/a/y;
+    iget-object v0, p0, Landroid/support/v4/a/o;->h:Landroid/support/v4/a/LoaderManager;
 
-    invoke-virtual {v0}, Landroid/support/v4/a/y;->d()V
+    invoke-virtual {v0}, Landroid/support/v4/a/LoaderManager;->d()V
 
     goto :goto_0
 
     .line 270
     :cond_2
-    iget-object v0, p0, Landroid/support/v4/a/o;->h:Landroid/support/v4/a/y;
+    iget-object v0, p0, Landroid/support/v4/a/o;->h:Landroid/support/v4/a/LoaderManager;
 
-    invoke-virtual {v0}, Landroid/support/v4/a/y;->c()V
+    invoke-virtual {v0}, Landroid/support/v4/a/LoaderManager;->c()V
 
     goto :goto_0
 .end method
@@ -363,7 +363,7 @@
     invoke-virtual {p3, v0}, Ljava/io/PrintWriter;->println(Z)V
 
     .line 360
-    iget-object v0, p0, Landroid/support/v4/a/o;->h:Landroid/support/v4/a/y;
+    iget-object v0, p0, Landroid/support/v4/a/o;->h:Landroid/support/v4/a/LoaderManager;
 
     if-eqz v0, :cond_0
 
@@ -375,7 +375,7 @@
     invoke-virtual {p3, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
     .line 362
-    iget-object v0, p0, Landroid/support/v4/a/o;->h:Landroid/support/v4/a/y;
+    iget-object v0, p0, Landroid/support/v4/a/o;->h:Landroid/support/v4/a/LoaderManager;
 
     invoke-static {v0}, Ljava/lang/System;->identityHashCode(Ljava/lang/Object;)I
 
@@ -393,7 +393,7 @@
     invoke-virtual {p3, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
     .line 364
-    iget-object v0, p0, Landroid/support/v4/a/o;->h:Landroid/support/v4/a/y;
+    iget-object v0, p0, Landroid/support/v4/a/o;->h:Landroid/support/v4/a/LoaderManager;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -413,7 +413,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1, p2, p3, p4}, Landroid/support/v4/a/y;->a(Ljava/lang/String;Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
+    invoke-virtual {v0, v1, p2, p3, p4}, Landroid/support/v4/a/LoaderManager;->a(Ljava/lang/String;Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
 
     .line 366
     :cond_0
@@ -518,14 +518,14 @@
     iput-boolean v3, p0, Landroid/support/v4/a/o;->j:Z
 
     .line 242
-    iget-object v0, p0, Landroid/support/v4/a/o;->h:Landroid/support/v4/a/y;
+    iget-object v0, p0, Landroid/support/v4/a/o;->h:Landroid/support/v4/a/LoaderManager;
 
     if-eqz v0, :cond_2
 
     .line 243
-    iget-object v0, p0, Landroid/support/v4/a/o;->h:Landroid/support/v4/a/y;
+    iget-object v0, p0, Landroid/support/v4/a/o;->h:Landroid/support/v4/a/LoaderManager;
 
-    invoke-virtual {v0}, Landroid/support/v4/a/y;->b()V
+    invoke-virtual {v0}, Landroid/support/v4/a/LoaderManager;->b()V
 
     .line 251
     :cond_1
@@ -547,27 +547,27 @@
 
     const/4 v2, 0x0
 
-    invoke-virtual {p0, v0, v1, v2}, Landroid/support/v4/a/o;->a(Ljava/lang/String;ZZ)Landroid/support/v4/a/y;
+    invoke-virtual {p0, v0, v1, v2}, Landroid/support/v4/a/o;->a(Ljava/lang/String;ZZ)Landroid/support/v4/a/LoaderManager;
 
     move-result-object v0
 
-    iput-object v0, p0, Landroid/support/v4/a/o;->h:Landroid/support/v4/a/y;
+    iput-object v0, p0, Landroid/support/v4/a/o;->h:Landroid/support/v4/a/LoaderManager;
 
     .line 247
-    iget-object v0, p0, Landroid/support/v4/a/o;->h:Landroid/support/v4/a/y;
+    iget-object v0, p0, Landroid/support/v4/a/o;->h:Landroid/support/v4/a/LoaderManager;
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Landroid/support/v4/a/o;->h:Landroid/support/v4/a/y;
+    iget-object v0, p0, Landroid/support/v4/a/o;->h:Landroid/support/v4/a/LoaderManager;
 
-    iget-boolean v0, v0, Landroid/support/v4/a/y;->e:Z
+    iget-boolean v0, v0, Landroid/support/v4/a/LoaderManager;->e:Z
 
     if-nez v0, :cond_1
 
     .line 248
-    iget-object v0, p0, Landroid/support/v4/a/o;->h:Landroid/support/v4/a/y;
+    iget-object v0, p0, Landroid/support/v4/a/o;->h:Landroid/support/v4/a/LoaderManager;
 
-    invoke-virtual {v0}, Landroid/support/v4/a/y;->b()V
+    invoke-virtual {v0}, Landroid/support/v4/a/LoaderManager;->b()V
 
     goto :goto_1
 .end method
@@ -577,7 +577,7 @@
 
     .prologue
     .line 282
-    iget-object v0, p0, Landroid/support/v4/a/o;->h:Landroid/support/v4/a/y;
+    iget-object v0, p0, Landroid/support/v4/a/o;->h:Landroid/support/v4/a/LoaderManager;
 
     if-nez v0, :cond_0
 
@@ -587,9 +587,9 @@
 
     .line 285
     :cond_0
-    iget-object v0, p0, Landroid/support/v4/a/o;->h:Landroid/support/v4/a/y;
+    iget-object v0, p0, Landroid/support/v4/a/o;->h:Landroid/support/v4/a/LoaderManager;
 
-    invoke-virtual {v0}, Landroid/support/v4/a/y;->h()V
+    invoke-virtual {v0}, Landroid/support/v4/a/LoaderManager;->h()V
 
     goto :goto_0
 .end method
@@ -611,7 +611,7 @@
     move-result v2
 
     .line 291
-    new-array v3, v2, [Landroid/support/v4/a/y;
+    new-array v3, v2, [Landroid/support/v4/a/LoaderManager;
 
     .line 292
     add-int/lit8 v0, v2, -0x1
@@ -628,7 +628,7 @@
 
     move-result-object v0
 
-    check-cast v0, Landroid/support/v4/a/y;
+    check-cast v0, Landroid/support/v4/a/LoaderManager;
 
     aput-object v0, v3, v1
 
@@ -650,10 +650,10 @@
     aget-object v1, v3, v0
 
     .line 297
-    invoke-virtual {v1}, Landroid/support/v4/a/y;->e()V
+    invoke-virtual {v1}, Landroid/support/v4/a/LoaderManager;->e()V
 
     .line 298
-    invoke-virtual {v1}, Landroid/support/v4/a/y;->g()V
+    invoke-virtual {v1}, Landroid/support/v4/a/LoaderManager;->g()V
 
     .line 295
     add-int/lit8 v0, v0, 0x1
@@ -695,7 +695,7 @@
     move-result v3
 
     .line 325
-    new-array v4, v3, [Landroid/support/v4/a/y;
+    new-array v4, v3, [Landroid/support/v4/a/LoaderManager;
 
     .line 326
     add-int/lit8 v0, v3, -0x1
@@ -712,7 +712,7 @@
 
     move-result-object v0
 
-    check-cast v0, Landroid/support/v4/a/y;
+    check-cast v0, Landroid/support/v4/a/LoaderManager;
 
     aput-object v0, v4, v2
 
@@ -739,27 +739,27 @@
     aget-object v5, v4, v1
 
     .line 332
-    iget-boolean v6, v5, Landroid/support/v4/a/y;->f:Z
+    iget-boolean v6, v5, Landroid/support/v4/a/LoaderManager;->f:Z
 
     if-nez v6, :cond_2
 
     if-eqz v2, :cond_2
 
     .line 333
-    iget-boolean v6, v5, Landroid/support/v4/a/y;->e:Z
+    iget-boolean v6, v5, Landroid/support/v4/a/LoaderManager;->e:Z
 
     if-nez v6, :cond_1
 
     .line 334
-    invoke-virtual {v5}, Landroid/support/v4/a/y;->b()V
+    invoke-virtual {v5}, Landroid/support/v4/a/LoaderManager;->b()V
 
     .line 336
     :cond_1
-    invoke-virtual {v5}, Landroid/support/v4/a/y;->d()V
+    invoke-virtual {v5}, Landroid/support/v4/a/LoaderManager;->d()V
 
     .line 338
     :cond_2
-    iget-boolean v6, v5, Landroid/support/v4/a/y;->f:Z
+    iget-boolean v6, v5, Landroid/support/v4/a/LoaderManager;->f:Z
 
     if-eqz v6, :cond_3
 
@@ -774,12 +774,12 @@
 
     .line 341
     :cond_3
-    invoke-virtual {v5}, Landroid/support/v4/a/y;->h()V
+    invoke-virtual {v5}, Landroid/support/v4/a/LoaderManager;->h()V
 
     .line 342
     iget-object v6, p0, Landroid/support/v4/a/o;->f:Landroid/support/v4/c/h;
 
-    iget-object v5, v5, Landroid/support/v4/a/y;->d:Ljava/lang/String;
+    iget-object v5, v5, Landroid/support/v4/a/LoaderManager;->d:Ljava/lang/String;
 
     invoke-virtual {v6, v5}, Landroid/support/v4/c/h;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 

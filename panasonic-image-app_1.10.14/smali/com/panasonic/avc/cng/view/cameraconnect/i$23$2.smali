@@ -53,15 +53,15 @@
     :try_start_0
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/i$23$2;->b:Lcom/panasonic/avc/cng/view/cameraconnect/i$23;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/cameraconnect/i$23;->f:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/cameraconnect/i$23;->f:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/cameraconnect/i;->g(Lcom/panasonic/avc/cng/view/cameraconnect/i;)Landroid/content/Context;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->g(Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;)Landroid/content/Context;
 
     move-result-object v0
 
     const/4 v2, 0x1
 
-    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/model/service/z;->a(Landroid/content/Context;Z)Lcom/panasonic/avc/cng/model/service/e;
+    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->a(Landroid/content/Context;Z)Lcom/panasonic/avc/cng/model/service/e;
 
     .line 736
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/i$23$2;->a:Ljava/lang/Object;

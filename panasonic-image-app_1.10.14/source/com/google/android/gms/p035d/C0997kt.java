@@ -11,7 +11,7 @@ import com.google.android.gms.common.C0568a;
 import com.google.android.gms.common.internal.C0612ab;
 import com.google.android.gms.common.internal.C0621ak;
 import com.google.android.gms.common.internal.C0622al;
-import com.google.android.gms.common.stats.C0679a;
+import com.google.android.gms.common.stats.ConnectionTracker;
 
 /* renamed from: com.google.android.gms.d.kt */
 public final class C0997kt implements ServiceConnection, C0621ak, C0622al {
@@ -59,7 +59,7 @@ public final class C0997kt implements ServiceConnection, C0621ak, C0622al {
     public final void mo2666a(Intent intent) {
         this.f2883a.mo2226e();
         Context n = this.f2883a.mo2235n();
-        C0679a a = C0679a.m2525a();
+        ConnectionTracker a = ConnectionTracker.m2525a();
         synchronized (this) {
             if (this.f2884b) {
                 this.f2883a.mo2243v().mo2443E().mo2451a("Connection attempt already in progress");
@@ -137,7 +137,7 @@ public final class C0997kt implements ServiceConnection, C0621ak, C0622al {
             if (r0 != 0) goto L_0x008d
             r0 = 0
             r4.f2884b = r0     // Catch:{ all -> 0x0054 }
-            com.google.android.gms.common.stats.C0679a.m2525a()     // Catch:{ IllegalArgumentException -> 0x009c }
+            com.google.android.gms.common.stats.ConnectionTracker.m2525a()     // Catch:{ IllegalArgumentException -> 0x009c }
             com.google.android.gms.d.kg r0 = r4.f2883a     // Catch:{ IllegalArgumentException -> 0x009c }
             android.content.Context r0 = r0.mo2235n()     // Catch:{ IllegalArgumentException -> 0x009c }
             com.google.android.gms.d.kg r1 = r4.f2883a     // Catch:{ IllegalArgumentException -> 0x009c }

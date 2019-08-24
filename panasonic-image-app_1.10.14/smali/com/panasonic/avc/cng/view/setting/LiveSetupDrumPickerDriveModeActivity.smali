@@ -1,5 +1,5 @@
 .class public Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerDriveModeActivity;
-.super Lcom/panasonic/avc/cng/view/setting/u;
+.super Lcom/panasonic/avc/cng/view/setting/LiveSetupLumixMirrorlessBaseActivity;
 .source "SourceFile"
 
 
@@ -21,7 +21,7 @@
     const/4 v0, 0x0
 
     .line 38
-    invoke-direct {p0}, Lcom/panasonic/avc/cng/view/setting/u;-><init>()V
+    invoke-direct {p0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupLumixMirrorlessBaseActivity;-><init>()V
 
     .line 43
     iput-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerDriveModeActivity;->q:Lcom/panasonic/avc/cng/view/setting/am$f;
@@ -116,11 +116,11 @@
     const v4, 0x7f0702af
 
     .line 480
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
@@ -156,7 +156,7 @@
     .line 490
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerDriveModeActivity;->_context:Landroid/content/Context;
 
-    invoke-static {v1, v0}, Lcom/panasonic/avc/cng/model/service/z;->a(Landroid/content/Context;Lcom/panasonic/avc/cng/model/f;)Lcom/panasonic/avc/cng/model/service/b;
+    invoke-static {v1, v0}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->a(Landroid/content/Context;Lcom/panasonic/avc/cng/model/f;)Lcom/panasonic/avc/cng/model/service/b;
 
     move-result-object v0
 
@@ -294,7 +294,7 @@
 
     .prologue
     .line 342
-    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/u;->a()V
+    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupLumixMirrorlessBaseActivity;->a()V
 
     .line 343
     return-void
@@ -305,7 +305,7 @@
 
     .prologue
     .line 400
-    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/u;->a(Z)V
+    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/LiveSetupLumixMirrorlessBaseActivity;->a(Z)V
 
     .line 403
     return-void
@@ -316,7 +316,7 @@
 
     .prologue
     .line 350
-    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/u;->d()V
+    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupLumixMirrorlessBaseActivity;->d()V
 
     .line 351
     return-void
@@ -327,7 +327,7 @@
 
     .prologue
     .line 359
-    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/u;->e()V
+    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupLumixMirrorlessBaseActivity;->e()V
 
     .line 360
     return-void
@@ -338,7 +338,7 @@
 
     .prologue
     .line 368
-    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/u;->f()V
+    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupLumixMirrorlessBaseActivity;->f()V
 
     .line 369
     return-void
@@ -349,7 +349,7 @@
 
     .prologue
     .line 377
-    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/u;->g()V
+    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupLumixMirrorlessBaseActivity;->g()V
 
     .line 380
     invoke-virtual {p0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerDriveModeActivity;->h()V
@@ -363,7 +363,7 @@
 
     .prologue
     .line 388
-    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/u;->h()V
+    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupLumixMirrorlessBaseActivity;->h()V
 
     .line 391
     return-void
@@ -376,11 +376,11 @@
     const/4 v6, 0x0
 
     .line 54
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v7
 
@@ -403,7 +403,7 @@
     invoke-static {p0}, Lcom/panasonic/avc/cng/model/b;->a(Landroid/app/Activity;)V
 
     .line 69
-    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/u;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/LiveSetupLumixMirrorlessBaseActivity;->onCreate(Landroid/os/Bundle;)V
 
     .line 72
     invoke-virtual {p0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerDriveModeActivity;->getIntent()Landroid/content/Intent;
@@ -544,7 +544,7 @@
 
     .prologue
     .line 449
-    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/u;->onDialogCancel(Lcom/panasonic/avc/cng/view/b/b$a;)V
+    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/LiveSetupLumixMirrorlessBaseActivity;->onDialogCancel(Lcom/panasonic/avc/cng/view/b/b$a;)V
 
     .line 450
     return-void
@@ -555,7 +555,7 @@
 
     .prologue
     .line 456
-    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/u;->onDialogDismiss(Lcom/panasonic/avc/cng/view/b/b$a;)V
+    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/LiveSetupLumixMirrorlessBaseActivity;->onDialogDismiss(Lcom/panasonic/avc/cng/view/b/b$a;)V
 
     .line 458
     return-void
@@ -566,7 +566,7 @@
 
     .prologue
     .line 475
-    invoke-super {p0, p1, p2}, Lcom/panasonic/avc/cng/view/setting/u;->onItemClick(Lcom/panasonic/avc/cng/view/b/b$a;I)V
+    invoke-super {p0, p1, p2}, Lcom/panasonic/avc/cng/view/setting/LiveSetupLumixMirrorlessBaseActivity;->onItemClick(Lcom/panasonic/avc/cng/view/b/b$a;I)V
 
     .line 476
     return-void
@@ -577,7 +577,7 @@
 
     .prologue
     .line 469
-    invoke-super {p0, p1, p2, p3}, Lcom/panasonic/avc/cng/view/setting/u;->onMultiChoice(Lcom/panasonic/avc/cng/view/b/b$a;IZ)V
+    invoke-super {p0, p1, p2, p3}, Lcom/panasonic/avc/cng/view/setting/LiveSetupLumixMirrorlessBaseActivity;->onMultiChoice(Lcom/panasonic/avc/cng/view/b/b$a;IZ)V
 
     .line 470
     return-void
@@ -588,7 +588,7 @@
 
     .prologue
     .line 442
-    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/u;->onNegativeButtonClick(Lcom/panasonic/avc/cng/view/b/b$a;)V
+    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/LiveSetupLumixMirrorlessBaseActivity;->onNegativeButtonClick(Lcom/panasonic/avc/cng/view/b/b$a;)V
 
     .line 443
     return-void
@@ -599,7 +599,7 @@
 
     .prologue
     .line 435
-    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/u;->onNeutralButtonClick(Lcom/panasonic/avc/cng/view/b/b$a;)V
+    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/LiveSetupLumixMirrorlessBaseActivity;->onNeutralButtonClick(Lcom/panasonic/avc/cng/view/b/b$a;)V
 
     .line 436
     return-void
@@ -621,7 +621,7 @@
     packed-switch v0, :pswitch_data_0
 
     .line 426
-    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/u;->onPositiveButtonClick(Lcom/panasonic/avc/cng/view/b/b$a;)V
+    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/LiveSetupLumixMirrorlessBaseActivity;->onPositiveButtonClick(Lcom/panasonic/avc/cng/view/b/b$a;)V
 
     .line 429
     :cond_0
@@ -680,7 +680,7 @@
 
     .prologue
     .line 463
-    invoke-super {p0, p1, p2}, Lcom/panasonic/avc/cng/view/setting/u;->onSingleChoice(Lcom/panasonic/avc/cng/view/b/b$a;I)V
+    invoke-super {p0, p1, p2}, Lcom/panasonic/avc/cng/view/setting/LiveSetupLumixMirrorlessBaseActivity;->onSingleChoice(Lcom/panasonic/avc/cng/view/b/b$a;I)V
 
     .line 464
     return-void

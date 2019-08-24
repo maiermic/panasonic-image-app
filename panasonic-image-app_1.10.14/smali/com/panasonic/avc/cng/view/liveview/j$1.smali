@@ -18,20 +18,20 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/panasonic/avc/cng/model/c/e;
+.field final synthetic a:Lcom/panasonic/avc/cng/model/c/CameraStatus;
 
 .field final synthetic b:Lcom/panasonic/avc/cng/view/liveview/j;
 
 
 # direct methods
-.method constructor <init>(Lcom/panasonic/avc/cng/view/liveview/j;Lcom/panasonic/avc/cng/model/c/e;)V
+.method constructor <init>(Lcom/panasonic/avc/cng/view/liveview/j;Lcom/panasonic/avc/cng/model/c/CameraStatus;)V
     .locals 0
 
     .prologue
     .line 268
     iput-object p1, p0, Lcom/panasonic/avc/cng/view/liveview/j$1;->b:Lcom/panasonic/avc/cng/view/liveview/j;
 
-    iput-object p2, p0, Lcom/panasonic/avc/cng/view/liveview/j$1;->a:Lcom/panasonic/avc/cng/model/c/e;
+    iput-object p2, p0, Lcom/panasonic/avc/cng/view/liveview/j$1;->a:Lcom/panasonic/avc/cng/model/c/CameraStatus;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -45,9 +45,9 @@
 
     .prologue
     .line 273
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/j$1;->a:Lcom/panasonic/avc/cng/model/c/e;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/j$1;->a:Lcom/panasonic/avc/cng/model/c/CameraStatus;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/e;->K()J
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->K()J
 
     move-result-wide v0
 
@@ -69,9 +69,9 @@
 
     .line 284
     :goto_0
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/j$1;->a:Lcom/panasonic/avc/cng/model/c/e;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/j$1;->a:Lcom/panasonic/avc/cng/model/c/CameraStatus;
 
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/model/c/e;->I()Ljava/lang/String;
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->I()Ljava/lang/String;
 
     move-result-object v1
 

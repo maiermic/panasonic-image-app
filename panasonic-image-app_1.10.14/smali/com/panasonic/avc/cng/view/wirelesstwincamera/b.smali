@@ -201,7 +201,7 @@
 
 .field private ab:Ljava/lang/Object;
 
-.field private ac:Lcom/panasonic/avc/cng/model/service/q/c;
+.field private ac:Lcom/panasonic/avc/cng/model/service/q/WTCService;
 
 .field private ad:Lcom/panasonic/avc/cng/view/wirelesstwincamera/b$c;
 
@@ -860,7 +860,7 @@
 
     const/4 v1, 0x1
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/model/service/z;->a(Landroid/content/Context;Z)Lcom/panasonic/avc/cng/model/service/e;
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->a(Landroid/content/Context;Z)Lcom/panasonic/avc/cng/model/service/e;
 
     move-result-object v0
 
@@ -1811,7 +1811,7 @@
 
     .prologue
     .line 808
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/wirelesstwincamera/b;->ac:Lcom/panasonic/avc/cng/model/service/q/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/wirelesstwincamera/b;->ac:Lcom/panasonic/avc/cng/model/service/q/WTCService;
 
     if-eqz v0, :cond_1
 
@@ -1853,7 +1853,7 @@
     iget v1, p0, Lcom/panasonic/avc/cng/view/wirelesstwincamera/b;->M:I
 
     .line 825
-    iget-object v2, p0, Lcom/panasonic/avc/cng/view/wirelesstwincamera/b;->ac:Lcom/panasonic/avc/cng/model/service/q/c;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/view/wirelesstwincamera/b;->ac:Lcom/panasonic/avc/cng/model/service/q/WTCService;
 
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/wirelesstwincamera/b;->A:Lcom/panasonic/avc/cng/a/c;
 
@@ -1867,7 +1867,7 @@
 
     move-result v0
 
-    invoke-virtual {v2, p1, v1, v0}, Lcom/panasonic/avc/cng/model/service/q/c;->a(Lcom/panasonic/avc/cng/model/service/q/a;II)[B
+    invoke-virtual {v2, p1, v1, v0}, Lcom/panasonic/avc/cng/model/service/q/WTCService;->a(Lcom/panasonic/avc/cng/model/service/q/a;II)[B
 
     move-result-object v0
 
@@ -2009,7 +2009,7 @@
 
     .prologue
     .line 758
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/wirelesstwincamera/b;->ac:Lcom/panasonic/avc/cng/model/service/q/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/wirelesstwincamera/b;->ac:Lcom/panasonic/avc/cng/model/service/q/WTCService;
 
     if-eqz v0, :cond_2
 
@@ -2038,9 +2038,9 @@
     if-nez v0, :cond_1
 
     .line 779
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/wirelesstwincamera/b;->ac:Lcom/panasonic/avc/cng/model/service/q/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/wirelesstwincamera/b;->ac:Lcom/panasonic/avc/cng/model/service/q/WTCService;
 
-    invoke-virtual {v0, p1}, Lcom/panasonic/avc/cng/model/service/q/c;->a([B)V
+    invoke-virtual {v0, p1}, Lcom/panasonic/avc/cng/model/service/q/WTCService;->a([B)V
 
     .line 782
     :cond_1
@@ -2153,18 +2153,18 @@
     const/4 v2, 0x0
 
     .line 727
-    new-instance v0, Lcom/panasonic/avc/cng/model/service/q/c;
+    new-instance v0, Lcom/panasonic/avc/cng/model/service/q/WTCService;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/wirelesstwincamera/b;->a:Landroid/content/Context;
 
-    invoke-direct {v0, v1}, Lcom/panasonic/avc/cng/model/service/q/c;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, v1}, Lcom/panasonic/avc/cng/model/service/q/WTCService;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/view/wirelesstwincamera/b;->ac:Lcom/panasonic/avc/cng/model/service/q/c;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/view/wirelesstwincamera/b;->ac:Lcom/panasonic/avc/cng/model/service/q/WTCService;
 
     .line 728
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/wirelesstwincamera/b;->ac:Lcom/panasonic/avc/cng/model/service/q/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/wirelesstwincamera/b;->ac:Lcom/panasonic/avc/cng/model/service/q/WTCService;
 
-    invoke-virtual {v0, p2, p1}, Lcom/panasonic/avc/cng/model/service/q/c;->a(ILjava/lang/String;)V
+    invoke-virtual {v0, p2, p1}, Lcom/panasonic/avc/cng/model/service/q/WTCService;->a(ILjava/lang/String;)V
 
     .line 730
     iput v2, p0, Lcom/panasonic/avc/cng/view/wirelesstwincamera/b;->M:I
@@ -3326,7 +3326,7 @@
 
     sget-object v1, Lcom/panasonic/avc/cng/view/b/b$a;->ep:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     goto :goto_0
 .end method
@@ -3446,14 +3446,14 @@
 
     .line 747
     :cond_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/wirelesstwincamera/b;->ac:Lcom/panasonic/avc/cng/model/service/q/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/wirelesstwincamera/b;->ac:Lcom/panasonic/avc/cng/model/service/q/WTCService;
 
     if-eqz v0, :cond_1
 
     .line 749
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/wirelesstwincamera/b;->ac:Lcom/panasonic/avc/cng/model/service/q/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/wirelesstwincamera/b;->ac:Lcom/panasonic/avc/cng/model/service/q/WTCService;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/service/q/c;->a()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/service/q/WTCService;->a()V
 
     .line 751
     :cond_1
@@ -3797,7 +3797,7 @@
 
     sget-object v2, Lcom/panasonic/avc/cng/view/b/b$a;->er:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {v0, v2, v1}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {v0, v2, v1}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     goto :goto_0
 .end method

@@ -100,13 +100,13 @@
 
     const-string v1, ""
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 645
     :goto_1
     const-string v0, ""
 
-    invoke-static {v2, v0}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v2, v0}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 646
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixActivity$6;->a:Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixActivity;
@@ -123,7 +123,7 @@
     :cond_1
     const-string v0, ""
 
-    invoke-static {v2, v0}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v2, v0}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     goto :goto_1
 

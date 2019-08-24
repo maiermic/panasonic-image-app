@@ -191,9 +191,9 @@
     invoke-static {v1}, Lcom/google/android/gms/common/internal/ab;->a(Ljava/lang/Object;)Ljava/lang/Object;
 
     :try_start_0
-    new-instance v1, Lcom/google/android/gms/common/u;
+    new-instance v1, Lcom/google/android/gms/common/GoogleCertificatesQuery;
 
-    invoke-direct {v1, p0, p1, p2}, Lcom/google/android/gms/common/u;-><init>(Ljava/lang/String;Lcom/google/android/gms/common/o;Z)V
+    invoke-direct {v1, p0, p1, p2}, Lcom/google/android/gms/common/GoogleCertificatesQuery;-><init>(Ljava/lang/String;Lcom/google/android/gms/common/o;Z)V
 
     sget-object v2, Lcom/google/android/gms/common/n;->a:Lcom/google/android/gms/common/internal/u;
 
@@ -207,7 +207,7 @@
 
     move-result-object v3
 
-    invoke-interface {v2, v1, v3}, Lcom/google/android/gms/common/internal/u;->a(Lcom/google/android/gms/common/u;Lcom/google/android/gms/c/a;)Z
+    invoke-interface {v2, v1, v3}, Lcom/google/android/gms/common/internal/u;->a(Lcom/google/android/gms/common/GoogleCertificatesQuery;Lcom/google/android/gms/c/a;)Z
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 

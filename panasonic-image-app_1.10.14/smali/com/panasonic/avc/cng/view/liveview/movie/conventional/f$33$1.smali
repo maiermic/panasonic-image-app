@@ -43,9 +43,9 @@
     .line 1850
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f$33$1;->a:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f$33;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f$33;->b:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f$33;->b:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;->r:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;->r:Lcom/panasonic/avc/cng/a/c;
 
     const-string v1, ""
 
@@ -54,9 +54,9 @@
     .line 1852
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f$33$1;->a:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f$33;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f$33;->b:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f$33;->b:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;->q:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;->q:Lcom/panasonic/avc/cng/a/c;
 
     const-string v1, ""
 
@@ -65,9 +65,9 @@
     .line 1855
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f$33$1;->a:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f$33;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f$33;->b:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f$33;->b:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;->t:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;->t:Lcom/panasonic/avc/cng/a/c;
 
     const-string v1, ""
 
@@ -76,9 +76,9 @@
     .line 1857
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f$33$1;->a:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f$33;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f$33;->b:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f$33;->b:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;->v:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;->v:Lcom/panasonic/avc/cng/a/c;
 
     const-string v1, ""
 
@@ -87,11 +87,11 @@
     .line 1860
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f$33$1;->a:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f$33;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f$33;->b:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f$33;->b:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;
 
     const/4 v1, 0x1
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;->e(Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;Z)Z
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;->e(Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;Z)Z
 
     .line 1861
     return-void

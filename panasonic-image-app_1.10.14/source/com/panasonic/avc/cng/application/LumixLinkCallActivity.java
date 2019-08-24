@@ -5,7 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import com.panasonic.avc.cng.application.p039a.C1350a;
 import com.panasonic.avc.cng.model.C1712b;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 
 public class LumixLinkCallActivity extends C1350a {
 
@@ -21,13 +21,13 @@ public class LumixLinkCallActivity extends C1350a {
     /* access modifiers changed from: protected */
     public void onPause() {
         super.onPause();
-        C2261g.m9763a("LumixLinkCallActivity", "onPause");
+        ImageAppLog.debug("LumixLinkCallActivity", "onPause");
     }
 
     /* access modifiers changed from: protected */
     public void onResume() {
         super.onResume();
-        C2261g.m9763a("LumixLinkCallActivity", "onResume");
+        ImageAppLog.debug("LumixLinkCallActivity", "onResume");
         if (!isFinishing()) {
             finish();
             C1712b.m6913a();

@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/core/a/al;->a(Ljava/lang/String;I)[B
+    value = Lcom/panasonic/avc/cng/core/a/StaticHttpCommand;->a(Ljava/lang/String;I)[B
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -85,7 +85,7 @@
 
     move-result-object v2
 
-    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/f;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/ImageAppCmdLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 507
     :goto_0

@@ -38,7 +38,7 @@
     iput-object v0, p0, Lcom/panasonic/avc/cng/view/setting/aj;->c:Lcom/panasonic/avc/cng/a/c;
 
     .line 57
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     .line 58
     invoke-static {}, Lcom/panasonic/avc/cng/model/b;->b()Lcom/panasonic/avc/cng/model/o;

@@ -47,7 +47,7 @@
     .line 2415
     iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/h/a$3;->a:Lcom/panasonic/avc/cng/model/service/h/a;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/h/a;->e(Lcom/panasonic/avc/cng/model/service/h/a;)Lcom/panasonic/avc/cng/view/common/a/d;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/h/a;->e(Lcom/panasonic/avc/cng/model/service/h/a;)Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;
 
     move-result-object v0
 
@@ -75,7 +75,7 @@
 
     const-string v1, "NFC\u30bf\u30b0\u691c\u51fa\u306e\u518d\u958b NFC"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 2421
     iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/h/a$3;->a:Lcom/panasonic/avc/cng/model/service/h/a;
@@ -90,11 +90,11 @@
     .line 2423
     iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/h/a$3;->a:Lcom/panasonic/avc/cng/model/service/h/a;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/h/a;->e(Lcom/panasonic/avc/cng/model/service/h/a;)Lcom/panasonic/avc/cng/view/common/a/d;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/h/a;->e(Lcom/panasonic/avc/cng/model/service/h/a;)Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;
 
     move-result-object v0
 
-    invoke-virtual {v0, v3}, Lcom/panasonic/avc/cng/view/common/a/d;->a(Z)V
+    invoke-virtual {v0, v3}, Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;->a(Z)V
 
     .line 2443
     :cond_0
@@ -118,14 +118,14 @@
 
     const-string v1, "NFC\u30bf\u30b0\u691c\u51fa\u306e\u518d\u958b Felica"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 2429
     const-string v0, "NfcService"
 
     const-string v1, "disconnect start"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 2430
     iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/h/a$3;->a:Lcom/panasonic/avc/cng/model/service/h/a;
@@ -137,7 +137,7 @@
 
     const-string v1, "disconnect end"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 2433
     iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/h/a$3;->a:Lcom/panasonic/avc/cng/model/service/h/a;
@@ -149,23 +149,23 @@
 
     const-string v1, "startTagDetection start"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 2436
     iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/h/a$3;->a:Lcom/panasonic/avc/cng/model/service/h/a;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/h/a;->e(Lcom/panasonic/avc/cng/model/service/h/a;)Lcom/panasonic/avc/cng/view/common/a/d;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/h/a;->e(Lcom/panasonic/avc/cng/model/service/h/a;)Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;
 
     move-result-object v0
 
-    invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/view/common/a/d;->a(Z)V
+    invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;->a(Z)V
 
     .line 2437
     const-string v0, "NfcService"
 
     const-string v1, "startTagDetection end"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 .end method

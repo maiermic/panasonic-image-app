@@ -12,9 +12,9 @@ import android.view.ViewGroup;
 import android.widget.ListView;
 import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.C1712b;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.setting.C5537al.C5540a;
+import com.panasonic.avc.cng.view.setting.SettingMenuBaseActivity.C5540a;
 import com.panasonic.avc.cng.view.usages.UsagesSettingActivity;
 
 public class AppSettingForNoIDActivity extends C5741i {
@@ -26,7 +26,7 @@ public class AppSettingForNoIDActivity extends C5741i {
             addPreferencesFromResource(R.xml.app_setting_preference_no_id);
             findPreference("Usages").setOnPreferenceClickListener(new OnPreferenceClickListener() {
                 public boolean onPreferenceClick(Preference preference) {
-                    C2261g.m9760a(3178499, "");
+                    ImageAppLog.m9760a(3178499, "");
                     C4860a.this.getActivity().startActivityForResult(new Intent(C4860a.this.getActivity(), UsagesSettingActivity.class), 7);
                     return false;
                 }

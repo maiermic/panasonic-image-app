@@ -143,9 +143,9 @@
     .line 1111
     :cond_0
     :try_start_0
-    iget-object v0, p1, Lcom/panasonic/avc/cng/model/service/a/c$a;->a:Lcom/panasonic/avc/cng/model/service/a/c;
+    iget-object v0, p1, Lcom/panasonic/avc/cng/model/service/a/c$a;->a:Lcom/panasonic/avc/cng/model/service/a/BrowserServiceCamera;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/model/service/a/c;->a:Landroid/content/Context;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/model/service/a/BrowserServiceCamera;->a:Landroid/content/Context;
 
     const-string v1, "window"
 
@@ -849,9 +849,9 @@
     :cond_1
     iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/a/c$a$b;->a:Lcom/panasonic/avc/cng/model/service/a/c$a;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/model/service/a/c$a;->a:Lcom/panasonic/avc/cng/model/service/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/model/service/a/c$a;->a:Lcom/panasonic/avc/cng/model/service/a/BrowserServiceCamera;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/a/c;->a(Lcom/panasonic/avc/cng/model/service/a/c;)Z
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/a/BrowserServiceCamera;->a(Lcom/panasonic/avc/cng/model/service/a/BrowserServiceCamera;)Z
 
     move-result v0
 
@@ -1046,9 +1046,9 @@
     :try_start_6
     iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/a/c$a$b;->a:Lcom/panasonic/avc/cng/model/service/a/c$a;
 
-    iget-object v1, v1, Lcom/panasonic/avc/cng/model/service/a/c$a;->a:Lcom/panasonic/avc/cng/model/service/a/c;
+    iget-object v1, v1, Lcom/panasonic/avc/cng/model/service/a/c$a;->a:Lcom/panasonic/avc/cng/model/service/a/BrowserServiceCamera;
 
-    iget-object v5, v1, Lcom/panasonic/avc/cng/model/service/a/c;->r:Ljava/lang/Object;
+    iget-object v5, v1, Lcom/panasonic/avc/cng/model/service/a/BrowserServiceCamera;->r:Ljava/lang/Object;
 
     monitor-enter v5
     :try_end_6
@@ -1105,7 +1105,7 @@
 
     const-string v8, "ExecuteGetThumbnail() Error"
 
-    invoke-static {v1, v8}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v8}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 1326
     iget v1, p0, Lcom/panasonic/avc/cng/model/service/a/c$a$b;->l:I

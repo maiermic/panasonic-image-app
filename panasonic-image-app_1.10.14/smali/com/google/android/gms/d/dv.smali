@@ -124,18 +124,18 @@
     :catch_0
     move-exception v1
 
-    invoke-static {v0}, Lcom/google/android/gms/d/dt;->b(Lcom/google/android/gms/common/api/h;)V
+    invoke-static {v0}, Lcom/google/android/gms/d/BasePendingResult;->b(Lcom/google/android/gms/common/api/h;)V
 
     throw v1
 
     :pswitch_1
     iget-object v0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
-    check-cast v0, Lcom/google/android/gms/d/dt;
+    check-cast v0, Lcom/google/android/gms/d/BasePendingResult;
 
     sget-object v1, Lcom/google/android/gms/common/api/Status;->d:Lcom/google/android/gms/common/api/Status;
 
-    invoke-virtual {v0, v1}, Lcom/google/android/gms/d/dt;->a(Lcom/google/android/gms/common/api/Status;)V
+    invoke-virtual {v0, v1}, Lcom/google/android/gms/d/BasePendingResult;->a(Lcom/google/android/gms/common/api/Status;)V
 
     goto :goto_0
 

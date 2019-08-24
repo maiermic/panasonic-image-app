@@ -2,13 +2,13 @@ package com.panasonic.avc.cng.model.service.p059f;
 
 import android.content.Context;
 import com.panasonic.avc.cng.core.p040a.C1473at;
-import com.panasonic.avc.cng.core.p040a.C1535s;
-import com.panasonic.avc.cng.core.p040a.C1543y;
+import com.panasonic.avc.cng.core.p040a.LiveViewCommand;
+import com.panasonic.avc.cng.core.p040a.ModeChangeCommand;
 import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.C1892f;
 import com.panasonic.avc.cng.model.C1897j;
 import com.panasonic.avc.cng.model.C1897j.C1905h;
-import com.panasonic.avc.cng.model.p051c.C1853h;
+import com.panasonic.avc.cng.model.p051c.ParseTagHighlightSceneInfo;
 import com.panasonic.avc.cng.model.service.C2176k;
 import com.panasonic.avc.cng.model.service.C2176k.C2177a;
 
@@ -17,14 +17,14 @@ public class C2056e implements C2176k {
     /* access modifiers changed from: private */
 
     /* renamed from: a */
-    public C1535s f6349a;
+    public LiveViewCommand f6349a;
     /* access modifiers changed from: private */
 
     /* renamed from: b */
-    public C1543y f6350b;
+    public ModeChangeCommand f6350b;
 
     /* renamed from: c */
-    private C2048b f6351c;
+    private G711Renderer f6351c;
 
     /* renamed from: d */
     private C2051c f6352d;
@@ -81,7 +81,7 @@ public class C2056e implements C2176k {
                 r0 = move-exception
                 java.lang.String r1 = "LiveViewMovieService"
                 java.lang.String r0 = r0.toString()
-                com.panasonic.avc.cng.util.C2261g.m9769c(r1, r0)
+                com.panasonic.avc.cng.util.ImageAppLog.error(r1, r0)
                 goto L_0x0018
             L_0x0024:
                 java.lang.Object r1 = com.panasonic.avc.cng.model.C1910l.m7679a()     // Catch:{ Exception -> 0x004f }
@@ -105,7 +105,7 @@ public class C2056e implements C2176k {
                 r0 = move-exception
                 java.lang.String r1 = "LiveViewMovieService"
                 java.lang.String r0 = r0.toString()
-                com.panasonic.avc.cng.util.C2261g.m9769c(r1, r0)
+                com.panasonic.avc.cng.util.ImageAppLog.error(r1, r0)
             L_0x0059:
                 r4.mo5382d()
                 goto L_0x0018
@@ -206,7 +206,7 @@ public class C2056e implements C2176k {
                 r0 = move-exception
                 java.lang.String r1 = "LiveViewMovieService"
                 java.lang.String r0 = r0.toString()     // Catch:{ Exception -> 0x004f }
-                com.panasonic.avc.cng.util.C2261g.m9769c(r1, r0)     // Catch:{ Exception -> 0x004f }
+                com.panasonic.avc.cng.util.ImageAppLog.error(r1, r0)     // Catch:{ Exception -> 0x004f }
                 com.panasonic.avc.cng.model.service.f.e r0 = com.panasonic.avc.cng.model.service.p059f.C2056e.this     // Catch:{ Exception -> 0x004f }
                 com.panasonic.avc.cng.model.service.k$a r0 = r0.f6353e     // Catch:{ Exception -> 0x004f }
                 if (r0 == 0) goto L_0x0131
@@ -285,7 +285,7 @@ public class C2056e implements C2176k {
                 r3 = 1
                 r8[r3] = r7     // Catch:{ all -> 0x0107 }
                 java.lang.String r3 = java.lang.String.format(r4, r8)     // Catch:{ all -> 0x0107 }
-                com.panasonic.avc.cng.util.C2261g.m9771e(r0, r3)     // Catch:{ all -> 0x0107 }
+                com.panasonic.avc.cng.util.ImageAppLog.info(r0, r3)     // Catch:{ all -> 0x0107 }
                 r0 = 120000(0x1d4c0, float:1.68156E-40)
                 r8 = 1000(0x3e8, float:1.401E-42)
                 r3 = -1
@@ -325,7 +325,7 @@ public class C2056e implements C2176k {
                 java.lang.String r0 = r0.f4990c     // Catch:{ all -> 0x0107 }
                 r10[r11] = r0     // Catch:{ all -> 0x0107 }
                 java.lang.String r0 = java.lang.String.format(r9, r10)     // Catch:{ all -> 0x0107 }
-                com.panasonic.avc.cng.util.C2261g.m9771e(r3, r0)     // Catch:{ all -> 0x0107 }
+                com.panasonic.avc.cng.util.ImageAppLog.info(r3, r0)     // Catch:{ all -> 0x0107 }
                 r3 = r2
                 r0 = r1
             L_0x00a1:
@@ -420,9 +420,9 @@ public class C2056e implements C2176k {
     public void mo5369f() {
         C1892f a = C1712b.m6919c().mo4896a();
         if (a != null) {
-            this.f6349a = new C1535s(a.f5682d, a.mo4891e());
-            this.f6350b = new C1543y(a.f5682d);
-            this.f6351c = new C2048b();
+            this.f6349a = new LiveViewCommand(a.f5682d, a.mo4891e());
+            this.f6350b = new ModeChangeCommand(a.f5682d);
+            this.f6351c = new G711Renderer();
             this.f6352d = new C2051c(false);
         }
     }
@@ -509,7 +509,7 @@ public class C2056e implements C2176k {
     }
 
     /* renamed from: a */
-    public void mo5377a(C1853h hVar) {
+    public void mo5377a(ParseTagHighlightSceneInfo hVar) {
         if (this.f6353e != null) {
             C1897j jVar = new C1897j();
             jVar.getClass();

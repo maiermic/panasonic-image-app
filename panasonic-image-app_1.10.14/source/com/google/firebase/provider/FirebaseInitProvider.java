@@ -8,7 +8,7 @@ import android.database.Cursor;
 import android.net.Uri;
 import android.util.Log;
 import com.google.android.gms.common.internal.C0612ab;
-import com.google.firebase.C1307a;
+import com.google.firebase.FirebaseApp;
 
 public class FirebaseInitProvider extends ContentProvider {
     public void attachInfo(Context context, ProviderInfo providerInfo) {
@@ -32,7 +32,7 @@ public class FirebaseInitProvider extends ContentProvider {
     }
 
     public boolean onCreate() {
-        if (C1307a.m5110a(getContext()) == null) {
+        if (FirebaseApp.m5110a(getContext()) == null) {
             Log.i("FirebaseInitProvider", "FirebaseApp initialization unsuccessful");
         } else {
             Log.i("FirebaseInitProvider", "FirebaseApp initialization successful");

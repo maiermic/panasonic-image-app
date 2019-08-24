@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/core/a/ai;->a()V
+    value = Lcom/panasonic/avc/cng/core/a/RemoteVoiceCommand;->a()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/panasonic/avc/cng/core/a/ai;
+.field final synthetic a:Lcom/panasonic/avc/cng/core/a/RemoteVoiceCommand;
 
 
 # direct methods
-.method constructor <init>(Lcom/panasonic/avc/cng/core/a/ai;)V
+.method constructor <init>(Lcom/panasonic/avc/cng/core/a/RemoteVoiceCommand;)V
     .locals 0
 
     .prologue
     .line 71
-    iput-object p1, p0, Lcom/panasonic/avc/cng/core/a/ai$1;->a:Lcom/panasonic/avc/cng/core/a/ai;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/core/a/ai$1;->a:Lcom/panasonic/avc/cng/core/a/RemoteVoiceCommand;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -56,9 +56,9 @@
 
     .line 78
     :goto_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/core/a/ai$1;->a:Lcom/panasonic/avc/cng/core/a/ai;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/core/a/ai$1;->a:Lcom/panasonic/avc/cng/core/a/RemoteVoiceCommand;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/core/a/ai;->a(Lcom/panasonic/avc/cng/core/a/ai;)Z
+    invoke-static {v0}, Lcom/panasonic/avc/cng/core/a/RemoteVoiceCommand;->a(Lcom/panasonic/avc/cng/core/a/RemoteVoiceCommand;)Z
 
     move-result v0
 
@@ -68,9 +68,9 @@
 
     .line 83
     :try_start_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/core/a/ai$1;->a:Lcom/panasonic/avc/cng/core/a/ai;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/core/a/ai$1;->a:Lcom/panasonic/avc/cng/core/a/RemoteVoiceCommand;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/core/a/ai;->b(Lcom/panasonic/avc/cng/core/a/ai;)Ljava/net/DatagramSocket;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/core/a/RemoteVoiceCommand;->b(Lcom/panasonic/avc/cng/core/a/RemoteVoiceCommand;)Ljava/net/DatagramSocket;
 
     move-result-object v0
 
@@ -98,15 +98,15 @@
 
     move-result-object v3
 
-    invoke-static {v2, v3}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v2, v3}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 92
     invoke-virtual {v0}, Ljava/net/SocketException;->printStackTrace()V
 
     .line 93
-    iget-object v0, p0, Lcom/panasonic/avc/cng/core/a/ai$1;->a:Lcom/panasonic/avc/cng/core/a/ai;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/core/a/ai$1;->a:Lcom/panasonic/avc/cng/core/a/RemoteVoiceCommand;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/ai;->b()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/RemoteVoiceCommand;->b()V
 
     goto :goto_0
 
@@ -121,15 +121,15 @@
 
     move-result-object v3
 
-    invoke-static {v2, v3}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v2, v3}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 98
     invoke-virtual {v0}, Ljava/io/IOException;->printStackTrace()V
 
     .line 99
-    iget-object v0, p0, Lcom/panasonic/avc/cng/core/a/ai$1;->a:Lcom/panasonic/avc/cng/core/a/ai;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/core/a/ai$1;->a:Lcom/panasonic/avc/cng/core/a/RemoteVoiceCommand;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/ai;->b()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/RemoteVoiceCommand;->b()V
 
     goto :goto_0
 
@@ -139,19 +139,19 @@
 
     const-string v1, "run() : Stop !!!"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 105
-    iget-object v0, p0, Lcom/panasonic/avc/cng/core/a/ai$1;->a:Lcom/panasonic/avc/cng/core/a/ai;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/core/a/ai$1;->a:Lcom/panasonic/avc/cng/core/a/RemoteVoiceCommand;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/core/a/ai;->b(Lcom/panasonic/avc/cng/core/a/ai;)Ljava/net/DatagramSocket;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/core/a/RemoteVoiceCommand;->b(Lcom/panasonic/avc/cng/core/a/RemoteVoiceCommand;)Ljava/net/DatagramSocket;
 
     move-result-object v0
 
     if-eqz v0, :cond_1
 
     .line 107
-    invoke-static {}, Lcom/panasonic/avc/cng/core/a/ai;->c()Ljava/lang/Object;
+    invoke-static {}, Lcom/panasonic/avc/cng/core/a/RemoteVoiceCommand;->c()Ljava/lang/Object;
 
     move-result-object v1
 
@@ -159,20 +159,20 @@
 
     .line 110
     :try_start_1
-    iget-object v0, p0, Lcom/panasonic/avc/cng/core/a/ai$1;->a:Lcom/panasonic/avc/cng/core/a/ai;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/core/a/ai$1;->a:Lcom/panasonic/avc/cng/core/a/RemoteVoiceCommand;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/core/a/ai;->b(Lcom/panasonic/avc/cng/core/a/ai;)Ljava/net/DatagramSocket;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/core/a/RemoteVoiceCommand;->b(Lcom/panasonic/avc/cng/core/a/RemoteVoiceCommand;)Ljava/net/DatagramSocket;
 
     move-result-object v0
 
     invoke-virtual {v0}, Ljava/net/DatagramSocket;->close()V
 
     .line 111
-    iget-object v0, p0, Lcom/panasonic/avc/cng/core/a/ai$1;->a:Lcom/panasonic/avc/cng/core/a/ai;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/core/a/ai$1;->a:Lcom/panasonic/avc/cng/core/a/RemoteVoiceCommand;
 
     const/4 v2, 0x0
 
-    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/core/a/ai;->a(Lcom/panasonic/avc/cng/core/a/ai;Ljava/net/DatagramSocket;)Ljava/net/DatagramSocket;
+    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/core/a/RemoteVoiceCommand;->a(Lcom/panasonic/avc/cng/core/a/RemoteVoiceCommand;Ljava/net/DatagramSocket;)Ljava/net/DatagramSocket;
 
     .line 112
     monitor-exit v1
@@ -181,9 +181,9 @@
 
     .line 115
     :cond_1
-    iget-object v0, p0, Lcom/panasonic/avc/cng/core/a/ai$1;->a:Lcom/panasonic/avc/cng/core/a/ai;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/core/a/ai$1;->a:Lcom/panasonic/avc/cng/core/a/RemoteVoiceCommand;
 
-    invoke-static {v0, v4}, Lcom/panasonic/avc/cng/core/a/ai;->a(Lcom/panasonic/avc/cng/core/a/ai;Ljava/lang/Thread;)Ljava/lang/Thread;
+    invoke-static {v0, v4}, Lcom/panasonic/avc/cng/core/a/RemoteVoiceCommand;->a(Lcom/panasonic/avc/cng/core/a/RemoteVoiceCommand;Ljava/lang/Thread;)Ljava/lang/Thread;
 
     .line 116
     return-void

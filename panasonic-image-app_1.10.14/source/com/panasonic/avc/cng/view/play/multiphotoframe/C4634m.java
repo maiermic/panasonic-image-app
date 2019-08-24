@@ -4,16 +4,16 @@ import android.content.Context;
 import android.os.Handler;
 import com.panasonic.avc.cng.model.C1878d;
 import com.panasonic.avc.cng.model.service.C1921a;
-import com.panasonic.avc.cng.model.service.C2253z;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
 import com.panasonic.avc.cng.p038a.C1344c;
-import com.panasonic.avc.cng.view.parts.C4245t;
-import com.panasonic.avc.cng.view.parts.C4245t.C4255e;
+import com.panasonic.avc.cng.view.parts.BrowserViewModel;
+import com.panasonic.avc.cng.view.parts.BrowserViewModel.C4255e;
 import com.panasonic.avc.cng.view.parts.ChapterProgressBar.C3916a;
-import com.panasonic.avc.cng.view.play.multiphotoframe.C4636n.C4660b;
+import com.panasonic.avc.cng.view.play.multiphotoframe.MultiPhotoFrameSelectPictureViewModel.C4660b;
 import java.util.List;
 
 /* renamed from: com.panasonic.avc.cng.view.play.multiphotoframe.m */
-public class C4634m extends C4636n {
+public class C4634m extends MultiPhotoFrameSelectPictureViewModel {
 
     /* renamed from: C */
     private C1921a f15171C;
@@ -77,16 +77,16 @@ public class C4634m extends C4636n {
     public void mo3205a() {
         mo10878c();
         this.f15207l.mo3205a();
-        C2253z.m9685a(this.f15171C);
+        ServiceFactory.m9685a(this.f15171C);
         super.mo3205a();
     }
 
     /* renamed from: E */
     private void m18158E() {
-        this.f15207l = new C4245t(this.f3706a, this.f3707b, this.f15208m);
+        this.f15207l = new BrowserViewModel(this.f3706a, this.f3707b, this.f15208m);
         this.f15207l.mo9947a(1);
         this.f15207l.mo9957b(true);
-        this.f15171C = C2253z.m9703f();
+        this.f15171C = ServiceFactory.m9703f();
     }
 
     /* renamed from: g */
@@ -132,7 +132,7 @@ public class C4634m extends C4636n {
     }
 
     /* renamed from: k */
-    public C4245t mo10884k() {
+    public BrowserViewModel mo10884k() {
         return this.f15207l;
     }
 

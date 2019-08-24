@@ -59,9 +59,9 @@
     .line 2394
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity$d;->a:Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
-    invoke-virtual {v0, v5, v5}, Lcom/panasonic/avc/cng/application/c;->a(ZZ)V
+    invoke-virtual {v0, v5, v5}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->a(ZZ)V
 
     .line 2396
     packed-switch p1, :pswitch_data_0
@@ -173,7 +173,7 @@
     :cond_1
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity$d;->a:Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
     iget-object v1, p2, Lcom/panasonic/avc/cng/model/f;->r:Ljava/lang/String;
 
@@ -181,7 +181,7 @@
 
     iget-object v3, p2, Lcom/panasonic/avc/cng/model/f;->t:Ljava/lang/String;
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/application/c;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 
@@ -219,7 +219,7 @@
     .line 2386
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity$d;->a:Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;)V
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;)V
 
     .line 2387
     return-void

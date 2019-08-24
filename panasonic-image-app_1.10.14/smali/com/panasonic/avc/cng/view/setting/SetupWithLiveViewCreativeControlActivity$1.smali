@@ -43,11 +43,11 @@
     .line 53
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewCreativeControlActivity$1;->a:Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewCreativeControlActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewCreativeControlActivity;->a(Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewCreativeControlActivity;)Lcom/panasonic/avc/cng/view/setting/ar;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewCreativeControlActivity;->a(Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewCreativeControlActivity;)Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewCreativeControlViewModel;
 
     move-result-object v0
 
-    invoke-virtual {v0, p1}, Lcom/panasonic/avc/cng/view/setting/ar;->a(I)V
+    invoke-virtual {v0, p1}, Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewCreativeControlViewModel;->a(I)V
 
     .line 54
     return-void

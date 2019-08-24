@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/panasonic/avc/cng/model/service/f/b;
+    value = Lcom/panasonic/avc/cng/model/service/f/G711Renderer;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

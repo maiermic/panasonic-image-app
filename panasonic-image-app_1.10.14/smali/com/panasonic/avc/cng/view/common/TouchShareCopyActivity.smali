@@ -1,5 +1,5 @@
 .class public Lcom/panasonic/avc/cng/view/common/TouchShareCopyActivity;
-.super Lcom/panasonic/avc/cng/application/b;
+.super Lcom/panasonic/avc/cng/application/NfcSupportActivity;
 .source "SourceFile"
 
 
@@ -18,7 +18,7 @@
 
 .field private c:Lcom/panasonic/avc/cng/view/common/d$b;
 
-.field private d:Lcom/panasonic/avc/cng/view/common/d;
+.field private d:Lcom/panasonic/avc/cng/view/common/TouchShareViewModel;
 
 .field private e:Landroid/widget/TextView;
 
@@ -41,7 +41,7 @@
 
     .prologue
     .line 22
-    invoke-direct {p0}, Lcom/panasonic/avc/cng/application/b;-><init>()V
+    invoke-direct {p0}, Lcom/panasonic/avc/cng/application/NfcSupportActivity;-><init>()V
 
     return-void
 .end method
@@ -185,14 +185,14 @@
 
     .prologue
     .line 422
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/TouchShareCopyActivity;->d:Lcom/panasonic/avc/cng/view/common/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/TouchShareCopyActivity;->d:Lcom/panasonic/avc/cng/view/common/TouchShareViewModel;
 
     if-eqz v0, :cond_0
 
     .line 424
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/TouchShareCopyActivity;->d:Lcom/panasonic/avc/cng/view/common/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/TouchShareCopyActivity;->d:Lcom/panasonic/avc/cng/view/common/TouchShareViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/common/d;->d()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/common/TouchShareViewModel;->d()V
 
     .line 426
     :cond_0
@@ -204,18 +204,18 @@
 
     .prologue
     .line 397
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/TouchShareCopyActivity;->d:Lcom/panasonic/avc/cng/view/common/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/TouchShareCopyActivity;->d:Lcom/panasonic/avc/cng/view/common/TouchShareViewModel;
 
     if-eqz v0, :cond_0
 
     .line 400
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/TouchShareCopyActivity;->d:Lcom/panasonic/avc/cng/view/common/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/TouchShareCopyActivity;->d:Lcom/panasonic/avc/cng/view/common/TouchShareViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/e;->a(Lcom/panasonic/avc/cng/view/common/d;)V
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/e;->a(Lcom/panasonic/avc/cng/view/common/TouchShareViewModel;)V
 
     .line 403
     :cond_0
-    invoke-super {p0}, Lcom/panasonic/avc/cng/application/b;->finish()V
+    invoke-super {p0}, Lcom/panasonic/avc/cng/application/NfcSupportActivity;->finish()V
 
     .line 404
     return-void
@@ -285,7 +285,7 @@
     invoke-static {p0}, Lcom/panasonic/avc/cng/model/b;->a(Landroid/app/Activity;)V
 
     .line 236
-    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/application/b;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/application/NfcSupportActivity;->onCreate(Landroid/os/Bundle;)V
 
     .line 239
     invoke-virtual {p0}, Lcom/panasonic/avc/cng/view/common/TouchShareCopyActivity;->getWindow()Landroid/view/Window;
@@ -315,33 +315,33 @@
 
     iget-object v2, p0, Lcom/panasonic/avc/cng/view/common/TouchShareCopyActivity;->c:Lcom/panasonic/avc/cng/view/common/d$b;
 
-    invoke-static {p0, v0, v2}, Lcom/panasonic/avc/cng/view/common/e;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/common/d$b;)Lcom/panasonic/avc/cng/view/common/d;
+    invoke-static {p0, v0, v2}, Lcom/panasonic/avc/cng/view/common/e;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/common/d$b;)Lcom/panasonic/avc/cng/view/common/TouchShareViewModel;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/view/common/TouchShareCopyActivity;->d:Lcom/panasonic/avc/cng/view/common/d;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/view/common/TouchShareCopyActivity;->d:Lcom/panasonic/avc/cng/view/common/TouchShareViewModel;
 
     .line 247
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/TouchShareCopyActivity;->d:Lcom/panasonic/avc/cng/view/common/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/TouchShareCopyActivity;->d:Lcom/panasonic/avc/cng/view/common/TouchShareViewModel;
 
     if-nez v0, :cond_0
 
     .line 250
-    new-instance v0, Lcom/panasonic/avc/cng/view/common/d;
+    new-instance v0, Lcom/panasonic/avc/cng/view/common/TouchShareViewModel;
 
     iget-object v2, p0, Lcom/panasonic/avc/cng/view/common/TouchShareCopyActivity;->a:Landroid/os/Handler;
 
     iget-object v3, p0, Lcom/panasonic/avc/cng/view/common/TouchShareCopyActivity;->c:Lcom/panasonic/avc/cng/view/common/d$b;
 
-    invoke-direct {v0, p0, v2, v3}, Lcom/panasonic/avc/cng/view/common/d;-><init>(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/common/d$b;)V
+    invoke-direct {v0, p0, v2, v3}, Lcom/panasonic/avc/cng/view/common/TouchShareViewModel;-><init>(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/common/d$b;)V
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/view/common/TouchShareCopyActivity;->d:Lcom/panasonic/avc/cng/view/common/d;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/view/common/TouchShareCopyActivity;->d:Lcom/panasonic/avc/cng/view/common/TouchShareViewModel;
 
     .line 254
     :cond_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/TouchShareCopyActivity;->d:Lcom/panasonic/avc/cng/view/common/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/TouchShareCopyActivity;->d:Lcom/panasonic/avc/cng/view/common/TouchShareViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/common/d;->e()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/common/TouchShareViewModel;->e()Ljava/lang/String;
 
     move-result-object v2
 
@@ -481,14 +481,14 @@
     if-lez v2, :cond_2
 
     .line 365
-    iget-object v2, p0, Lcom/panasonic/avc/cng/view/common/TouchShareCopyActivity;->d:Lcom/panasonic/avc/cng/view/common/d;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/view/common/TouchShareCopyActivity;->d:Lcom/panasonic/avc/cng/view/common/TouchShareViewModel;
 
-    invoke-virtual {v2, v1, v0}, Lcom/panasonic/avc/cng/view/common/d;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v2, v1, v0}, Lcom/panasonic/avc/cng/view/common/TouchShareViewModel;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 366
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/TouchShareCopyActivity;->d:Lcom/panasonic/avc/cng/view/common/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/TouchShareCopyActivity;->d:Lcom/panasonic/avc/cng/view/common/TouchShareViewModel;
 
-    invoke-virtual {v0, v6}, Lcom/panasonic/avc/cng/view/common/d;->a(Z)V
+    invoke-virtual {v0, v6}, Lcom/panasonic/avc/cng/view/common/TouchShareViewModel;->a(Z)V
 
     .line 371
     :cond_2
@@ -697,18 +697,18 @@
 
     .prologue
     .line 381
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/TouchShareCopyActivity;->d:Lcom/panasonic/avc/cng/view/common/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/TouchShareCopyActivity;->d:Lcom/panasonic/avc/cng/view/common/TouchShareViewModel;
 
     if-eqz v0, :cond_0
 
     .line 384
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/TouchShareCopyActivity;->d:Lcom/panasonic/avc/cng/view/common/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/TouchShareCopyActivity;->d:Lcom/panasonic/avc/cng/view/common/TouchShareViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/e;->a(Lcom/panasonic/avc/cng/view/common/d;)V
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/e;->a(Lcom/panasonic/avc/cng/view/common/TouchShareViewModel;)V
 
     .line 387
     :cond_0
-    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/application/b;->onSaveInstanceState(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/application/NfcSupportActivity;->onSaveInstanceState(Landroid/os/Bundle;)V
 
     .line 388
     return-void

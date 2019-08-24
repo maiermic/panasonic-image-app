@@ -47,16 +47,16 @@
     .line 3723
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/e$8;->b:Lcom/panasonic/avc/cng/view/liveview/e;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/e;->o:Lcom/panasonic/avc/cng/core/a/t;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/e;->o:Lcom/panasonic/avc/cng/core/a/LiveViewOperationCommand;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/e$8;->a:Ljava/lang/String;
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/core/a/t;->a(Ljava/lang/String;)Lcom/panasonic/avc/cng/model/c/h;
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/core/a/LiveViewOperationCommand;->a(Ljava/lang/String;)Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
     move-result-object v0
 
     .line 3724
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/h;->a()Z
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;->a()Z
 
     move-result v0
 

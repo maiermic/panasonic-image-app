@@ -2,7 +2,7 @@ package com.panasonic.avc.cng.model.service;
 
 import com.panasonic.avc.cng.core.dlna.C1699h;
 import com.panasonic.avc.cng.model.C1892f;
-import com.panasonic.avc.cng.model.p051c.C1846e;
+import com.panasonic.avc.cng.model.p051c.CameraStatus;
 import com.panasonic.avc.cng.model.service.p056c.C2013a.C2017a;
 import com.panasonic.avc.cng.model.service.p056c.C2013a.C2018b;
 import java.util.List;
@@ -31,7 +31,7 @@ public interface C2028e {
         void mo5336a(C1699h hVar);
 
         /* renamed from: a */
-        void mo5337a(C1846e eVar);
+        void mo5337a(CameraStatus eVar);
     }
 
     /* renamed from: a */
@@ -98,7 +98,7 @@ public interface C2028e {
     boolean mo5284h();
 
     /* renamed from: i */
-    C1846e mo5285i();
+    CameraStatus mo5285i();
 
     /* renamed from: j */
     void mo5286j();

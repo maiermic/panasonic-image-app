@@ -47,7 +47,7 @@
 
     const-string v1, "Subscribe false:"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 8286
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/e$d$2;->a:Lcom/panasonic/avc/cng/view/liveview/e$d;

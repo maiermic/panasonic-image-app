@@ -57,9 +57,9 @@
     :cond_0
     iget-object v0, p0, Lcom/panasonic/avc/cng/application/c$g$1;->a:Lcom/panasonic/avc/cng/application/c$g;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/application/c$g;->a:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/application/c$g;->a:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/application/c;->h(Lcom/panasonic/avc/cng/application/c;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->h(Lcom/panasonic/avc/cng/application/NfcSupportViewModel;)Landroid/os/Handler;
 
     move-result-object v0
 
@@ -93,9 +93,9 @@
     :cond_0
     iget-object v0, p0, Lcom/panasonic/avc/cng/application/c$g$1;->a:Lcom/panasonic/avc/cng/application/c$g;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/application/c$g;->a:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/application/c$g;->a:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/application/c;->i(Lcom/panasonic/avc/cng/application/c;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->i(Lcom/panasonic/avc/cng/application/NfcSupportViewModel;)Landroid/os/Handler;
 
     move-result-object v0
 
@@ -129,9 +129,9 @@
     :cond_0
     iget-object v0, p0, Lcom/panasonic/avc/cng/application/c$g$1;->a:Lcom/panasonic/avc/cng/application/c$g;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/application/c$g;->a:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/application/c$g;->a:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/application/c;->g(Lcom/panasonic/avc/cng/application/c;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->g(Lcom/panasonic/avc/cng/application/NfcSupportViewModel;)Landroid/os/Handler;
 
     move-result-object v0
 

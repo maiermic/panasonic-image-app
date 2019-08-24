@@ -1,5 +1,5 @@
 .class public Lcom/panasonic/avc/cng/view/smartoperation/PicmateUnsentImageListActivity;
-.super Lcom/panasonic/avc/cng/view/setting/al;
+.super Lcom/panasonic/avc/cng/view/setting/SettingMenuBaseActivity;
 .source "SourceFile"
 
 # interfaces
@@ -20,7 +20,7 @@
 
     .prologue
     .line 35
-    invoke-direct {p0}, Lcom/panasonic/avc/cng/view/setting/al;-><init>()V
+    invoke-direct {p0}, Lcom/panasonic/avc/cng/view/setting/SettingMenuBaseActivity;-><init>()V
 
     return-void
 .end method
@@ -174,7 +174,7 @@
 
 
 # virtual methods
-.method public DmsBase_OnGetState(Lcom/panasonic/avc/cng/model/c/e;ZI)V
+.method public DmsBase_OnGetState(Lcom/panasonic/avc/cng/model/c/CameraStatus;ZI)V
     .locals 3
 
     .prologue
@@ -213,7 +213,7 @@
 
     const-string v1, ""
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 206
     return-void
@@ -228,7 +228,7 @@
 
     const-string v1, ""
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 217
     invoke-virtual {p0}, Lcom/panasonic/avc/cng/view/smartoperation/PicmateUnsentImageListActivity;->ShowDmsErrorIfReceiving()Z
@@ -268,7 +268,7 @@
 
     const-string v1, ""
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 189
     invoke-virtual {p0}, Lcom/panasonic/avc/cng/view/smartoperation/PicmateUnsentImageListActivity;->ShowDmsErrorIfReceiving()Z
@@ -306,7 +306,7 @@
 
     const-string v1, ""
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 234
     invoke-virtual {p0}, Lcom/panasonic/avc/cng/view/smartoperation/PicmateUnsentImageListActivity;->openOptionsMenu()V
@@ -325,7 +325,7 @@
     invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/al$a;->a(Landroid/os/Bundle;)V
 
     .line 115
-    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/al;->OnSetResult()V
+    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/SettingMenuBaseActivity;->OnSetResult()V
 
     .line 116
     return-void
@@ -361,7 +361,7 @@
 
     .prologue
     .line 124
-    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/al;->b()V
+    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/SettingMenuBaseActivity;->b()V
 
     .line 127
     const v1, 0x7f0f0484
@@ -377,7 +377,7 @@
     .line 130
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/smartoperation/PicmateUnsentImageListActivity;->_context:Landroid/content/Context;
 
-    invoke-static {v1}, Lcom/panasonic/avc/cng/model/service/z;->a(Landroid/content/Context;)Lcom/panasonic/avc/cng/core/c/s;
+    invoke-static {v1}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->a(Landroid/content/Context;)Lcom/panasonic/avc/cng/core/c/Picmate;
 
     move-result-object v1
 
@@ -393,7 +393,7 @@
     invoke-virtual {v4, p0}, Lcom/panasonic/avc/cng/view/smartoperation/f;->a(Lcom/panasonic/avc/cng/view/smartoperation/f$a;)V
 
     .line 138
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/core/c/s;->c()Ljava/util/List;
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/core/c/Picmate;->c()Ljava/util/List;
 
     move-result-object v2
 
@@ -402,7 +402,7 @@
     move-result v3
 
     .line 140
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/core/c/s;->c()Ljava/util/List;
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/core/c/Picmate;->c()Ljava/util/List;
 
     move-result-object v2
 
@@ -514,7 +514,7 @@
     invoke-virtual {p0}, Lcom/panasonic/avc/cng/view/smartoperation/PicmateUnsentImageListActivity;->OnSetResult()V
 
     .line 107
-    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/al;->finish()V
+    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/SettingMenuBaseActivity;->finish()V
 
     .line 108
     return-void
@@ -525,7 +525,7 @@
 
     .prologue
     .line 252
-    invoke-super {p0, p1, p2, p3}, Lcom/panasonic/avc/cng/view/setting/al;->onActivityResult(IILandroid/content/Intent;)V
+    invoke-super {p0, p1, p2, p3}, Lcom/panasonic/avc/cng/view/setting/SettingMenuBaseActivity;->onActivityResult(IILandroid/content/Intent;)V
 
     .line 256
     const/16 v0, 0xb
@@ -586,7 +586,7 @@
     invoke-static {p0}, Lcom/panasonic/avc/cng/model/b;->a(Landroid/app/Activity;)V
 
     .line 78
-    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/al;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/SettingMenuBaseActivity;->onCreate(Landroid/os/Bundle;)V
 
     .line 80
     const/4 v0, 0x1
@@ -733,7 +733,7 @@
 
     .line 394
     :cond_1
-    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/al;->onPositiveButtonClick(Lcom/panasonic/avc/cng/view/b/b$a;)V
+    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/SettingMenuBaseActivity;->onPositiveButtonClick(Lcom/panasonic/avc/cng/view/b/b$a;)V
 
     goto :goto_0
 .end method
@@ -749,7 +749,7 @@
 
     if-nez v0, :cond_0
 
-    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/al;->onPrepareOptionsMenu(Landroid/view/Menu;)Z
+    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/SettingMenuBaseActivity;->onPrepareOptionsMenu(Landroid/view/Menu;)Z
 
     move-result v0
 
@@ -771,7 +771,7 @@
 
     .prologue
     .line 96
-    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/al;->onResume()V
+    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/SettingMenuBaseActivity;->onResume()V
 
     .line 99
     invoke-static {p0}, Lcom/panasonic/avc/cng/view/setting/al$a;->a(Landroid/app/Activity;)Z

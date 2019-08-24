@@ -53,11 +53,11 @@
     .line 325
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/e$a;->a:Lcom/panasonic/avc/cng/view/play/movieslideshow/e;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/movieslideshow/e;->a(Lcom/panasonic/avc/cng/view/play/movieslideshow/e;)Lcom/panasonic/avc/cng/view/parts/t;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/movieslideshow/e;->a(Lcom/panasonic/avc/cng/view/play/movieslideshow/e;)Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/parts/t;->l()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->l()V
 
     .line 328
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/e$a;->a:Lcom/panasonic/avc/cng/view/play/movieslideshow/e;

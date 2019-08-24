@@ -47,9 +47,9 @@
     .line 422
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/b$a$1;->b:Lcom/panasonic/avc/cng/view/play/highlight/b$a;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/highlight/b$a;->a:Lcom/panasonic/avc/cng/view/play/highlight/b;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/highlight/b$a;->a:Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/highlight/b;->b(Lcom/panasonic/avc/cng/view/play/highlight/b;)Lcom/panasonic/avc/cng/view/play/highlight/b$b;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;->b(Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;)Lcom/panasonic/avc/cng/view/play/highlight/b$b;
 
     move-result-object v0
 
@@ -67,9 +67,9 @@
     .line 427
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/b$a$1;->b:Lcom/panasonic/avc/cng/view/play/highlight/b$a;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/highlight/b$a;->a:Lcom/panasonic/avc/cng/view/play/highlight/b;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/highlight/b$a;->a:Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/highlight/b;->b(Lcom/panasonic/avc/cng/view/play/highlight/b;)Lcom/panasonic/avc/cng/view/play/highlight/b$b;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;->b(Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;)Lcom/panasonic/avc/cng/view/play/highlight/b$b;
 
     move-result-object v0
 
@@ -79,11 +79,11 @@
     :goto_0
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/b$a$1;->b:Lcom/panasonic/avc/cng/view/play/highlight/b$a;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/highlight/b$a;->a:Lcom/panasonic/avc/cng/view/play/highlight/b;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/highlight/b$a;->a:Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/play/highlight/b;->c(Z)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;->c(Z)V
 
     .line 441
     :cond_0
@@ -102,9 +102,9 @@
     .line 432
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/b$a$1;->b:Lcom/panasonic/avc/cng/view/play/highlight/b$a;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/highlight/b$a;->a:Lcom/panasonic/avc/cng/view/play/highlight/b;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/highlight/b$a;->a:Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/highlight/b;->b(Lcom/panasonic/avc/cng/view/play/highlight/b;)Lcom/panasonic/avc/cng/view/play/highlight/b$b;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;->b(Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;)Lcom/panasonic/avc/cng/view/play/highlight/b$b;
 
     move-result-object v0
 
@@ -116,9 +116,9 @@
     :cond_2
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/b$a$1;->b:Lcom/panasonic/avc/cng/view/play/highlight/b$a;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/highlight/b$a;->a:Lcom/panasonic/avc/cng/view/play/highlight/b;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/highlight/b$a;->a:Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/highlight/b;->b(Lcom/panasonic/avc/cng/view/play/highlight/b;)Lcom/panasonic/avc/cng/view/play/highlight/b$b;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;->b(Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;)Lcom/panasonic/avc/cng/view/play/highlight/b$b;
 
     move-result-object v0
 

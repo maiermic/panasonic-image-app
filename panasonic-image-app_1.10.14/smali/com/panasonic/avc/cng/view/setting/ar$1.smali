@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/view/setting/ar;->a(Ljava/lang/String;Ljava/lang/String;Lcom/panasonic/avc/cng/view/setting/ar$a;)V
+    value = Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewCreativeControlViewModel;->a(Ljava/lang/String;Ljava/lang/String;Lcom/panasonic/avc/cng/view/setting/ar$a;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -24,16 +24,16 @@
 
 .field final synthetic c:Lcom/panasonic/avc/cng/view/setting/ar$a;
 
-.field final synthetic d:Lcom/panasonic/avc/cng/view/setting/ar;
+.field final synthetic d:Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewCreativeControlViewModel;
 
 
 # direct methods
-.method constructor <init>(Lcom/panasonic/avc/cng/view/setting/ar;Ljava/lang/String;Ljava/lang/String;Lcom/panasonic/avc/cng/view/setting/ar$a;)V
+.method constructor <init>(Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewCreativeControlViewModel;Ljava/lang/String;Ljava/lang/String;Lcom/panasonic/avc/cng/view/setting/ar$a;)V
     .locals 0
 
     .prologue
     .line 173
-    iput-object p1, p0, Lcom/panasonic/avc/cng/view/setting/ar$1;->d:Lcom/panasonic/avc/cng/view/setting/ar;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/view/setting/ar$1;->d:Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewCreativeControlViewModel;
 
     iput-object p2, p0, Lcom/panasonic/avc/cng/view/setting/ar$1;->a:Ljava/lang/String;
 
@@ -53,11 +53,11 @@
 
     .prologue
     .line 179
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
@@ -108,7 +108,7 @@
 
     .line 189
     :try_start_0
-    invoke-static {v0}, Lcom/panasonic/avc/cng/core/a/al;->a(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/core/a/StaticHttpCommand;->a(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -120,7 +120,7 @@
 
     const-string v3, "Cmd() is null...."
 
-    invoke-static {v2, v3}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v2, v3}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 194
     :cond_0
@@ -129,21 +129,21 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 196
-    new-instance v1, Lcom/panasonic/avc/cng/model/c/h;
+    new-instance v1, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
-    invoke-direct {v1, v0}, Lcom/panasonic/avc/cng/model/c/h;-><init>(Ljava/lang/String;)V
+    invoke-direct {v1, v0}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;-><init>(Ljava/lang/String;)V
 
     .line 197
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/model/c/h;->a()Z
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;->a()Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
     .line 200
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ar$1;->d:Lcom/panasonic/avc/cng/view/setting/ar;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ar$1;->d:Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewCreativeControlViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/ar;->a(Lcom/panasonic/avc/cng/view/setting/ar;)Lcom/panasonic/avc/cng/model/service/b;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewCreativeControlViewModel;->a(Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewCreativeControlViewModel;)Lcom/panasonic/avc/cng/model/service/b;
 
     move-result-object v0
 

@@ -51,14 +51,14 @@
     .line 159
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ai$2;->c:Lcom/panasonic/avc/cng/view/setting/ai;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/ai;->f:Lcom/panasonic/avc/cng/core/c/s;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/ai;->f:Lcom/panasonic/avc/cng/core/c/Picmate;
 
     if-eqz v0, :cond_0
 
     .line 160
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ai$2;->c:Lcom/panasonic/avc/cng/view/setting/ai;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/ai;->f:Lcom/panasonic/avc/cng/core/c/s;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/ai;->f:Lcom/panasonic/avc/cng/core/c/Picmate;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/ai$2;->a:Ljava/lang/String;
 
@@ -66,7 +66,7 @@
 
     invoke-direct {v2, p0}, Lcom/panasonic/avc/cng/view/setting/ai$2$1;-><init>(Lcom/panasonic/avc/cng/view/setting/ai$2;)V
 
-    invoke-virtual {v0, v1, v2}, Lcom/panasonic/avc/cng/core/c/s;->a(Ljava/lang/String;Lcom/panasonic/avc/cng/core/c/g;)V
+    invoke-virtual {v0, v1, v2}, Lcom/panasonic/avc/cng/core/c/Picmate;->a(Ljava/lang/String;Lcom/panasonic/avc/cng/core/c/g;)V
 
     .line 234
     :goto_0

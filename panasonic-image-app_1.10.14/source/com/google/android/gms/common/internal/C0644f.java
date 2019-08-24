@@ -7,7 +7,7 @@ import android.os.Handler;
 import android.os.Handler.Callback;
 import android.os.Message;
 import android.util.Log;
-import com.google.android.gms.common.stats.C0679a;
+import com.google.android.gms.common.stats.ConnectionTracker;
 import java.util.HashMap;
 
 /* renamed from: com.google.android.gms.common.internal.f */
@@ -27,7 +27,7 @@ final class C0644f extends C0642d implements Callback {
     /* access modifiers changed from: private */
 
     /* renamed from: d */
-    public final C0679a f1389d;
+    public final ConnectionTracker f1389d;
 
     /* renamed from: e */
     private final long f1390e;
@@ -39,7 +39,7 @@ final class C0644f extends C0642d implements Callback {
     C0644f(Context context) {
         this.f1387b = context.getApplicationContext();
         this.f1388c = new Handler(context.getMainLooper(), this);
-        this.f1389d = C0679a.m2525a();
+        this.f1389d = ConnectionTracker.m2525a();
         this.f1390e = 5000;
         this.f1391f = 300000;
     }

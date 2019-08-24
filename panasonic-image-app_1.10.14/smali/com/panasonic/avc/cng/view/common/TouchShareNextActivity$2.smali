@@ -49,12 +49,12 @@
 
     const/4 v2, 0x0
 
-    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     .line 612
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity$2;->a:Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;->i(Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;)Lcom/panasonic/avc/cng/application/c;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;->i(Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;)Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
     move-result-object v0
 
@@ -63,11 +63,11 @@
     .line 614
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity$2;->a:Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;->j(Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;)Lcom/panasonic/avc/cng/application/c;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;->j(Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;)Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
     move-result-object v0
 
-    invoke-virtual {v0, v3, v3}, Lcom/panasonic/avc/cng/application/c;->a(ZZ)V
+    invoke-virtual {v0, v3, v3}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->a(ZZ)V
 
     .line 617
     :cond_0
@@ -91,7 +91,7 @@
     .line 777
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity$2;->a:Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;->y(Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;)Lcom/panasonic/avc/cng/application/c;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;->y(Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;)Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
     move-result-object v0
 
@@ -100,11 +100,11 @@
     .line 779
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity$2;->a:Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;->z(Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;)Lcom/panasonic/avc/cng/application/c;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;->z(Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;)Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
     move-result-object v0
 
-    invoke-virtual {v0, v1, v1}, Lcom/panasonic/avc/cng/application/c;->a(ZZ)V
+    invoke-virtual {v0, v1, v1}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->a(ZZ)V
 
     .line 781
     :cond_0
@@ -124,7 +124,7 @@
 
     const-string v1, ""
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 555
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity$2;->a:Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;
@@ -164,7 +164,7 @@
     :cond_0
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity$2;->a:Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;->d(Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;)Lcom/panasonic/avc/cng/application/c;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;->d(Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;)Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
     move-result-object v0
 
@@ -173,11 +173,11 @@
     .line 567
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity$2;->a:Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;->e(Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;)Lcom/panasonic/avc/cng/application/c;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;->e(Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;)Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
     move-result-object v0
 
-    invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/application/c;->b(Z)V
+    invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->b(Z)V
 
     .line 574
     :cond_1
@@ -220,12 +220,12 @@
 
     const/4 v2, 0x0
 
-    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     .line 730
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity$2;->a:Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;->s(Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;)Lcom/panasonic/avc/cng/application/c;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;->s(Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;)Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
     move-result-object v0
 
@@ -234,11 +234,11 @@
     .line 732
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity$2;->a:Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;->t(Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;)Lcom/panasonic/avc/cng/application/c;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;->t(Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;)Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
     move-result-object v0
 
-    invoke-virtual {v0, v3, v3}, Lcom/panasonic/avc/cng/application/c;->a(ZZ)V
+    invoke-virtual {v0, v3, v3}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->a(ZZ)V
 
     .line 734
     :cond_0
@@ -262,7 +262,7 @@
     .line 598
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity$2;->a:Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;->g(Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;)Lcom/panasonic/avc/cng/application/c;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;->g(Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;)Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
     move-result-object v0
 
@@ -271,11 +271,11 @@
     .line 600
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity$2;->a:Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;->h(Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;)Lcom/panasonic/avc/cng/application/c;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;->h(Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;)Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
     move-result-object v0
 
-    invoke-virtual {v0, v1, v1}, Lcom/panasonic/avc/cng/application/c;->a(ZZ)V
+    invoke-virtual {v0, v1, v1}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->a(ZZ)V
 
     .line 603
     :cond_0
@@ -299,7 +299,7 @@
     .line 742
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity$2;->a:Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;->u(Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;)Lcom/panasonic/avc/cng/application/c;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;->u(Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;)Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
     move-result-object v0
 
@@ -308,11 +308,11 @@
     .line 744
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity$2;->a:Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;->v(Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;)Lcom/panasonic/avc/cng/application/c;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;->v(Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;)Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
     move-result-object v0
 
-    invoke-virtual {v0, v1, v1}, Lcom/panasonic/avc/cng/application/c;->a(ZZ)V
+    invoke-virtual {v0, v1, v1}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->a(ZZ)V
 
     .line 746
     :cond_0
@@ -328,7 +328,7 @@
     .line 766
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity$2;->a:Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;->w(Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;)Lcom/panasonic/avc/cng/application/c;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;->w(Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;)Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
     move-result-object v0
 
@@ -337,11 +337,11 @@
     .line 768
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity$2;->a:Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;->x(Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;)Lcom/panasonic/avc/cng/application/c;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;->x(Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;)Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
     move-result-object v0
 
-    invoke-virtual {v0, v1, v1}, Lcom/panasonic/avc/cng/application/c;->a(ZZ)V
+    invoke-virtual {v0, v1, v1}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->a(ZZ)V
 
     .line 770
     :cond_0
@@ -377,12 +377,12 @@
 
     const/4 v2, 0x0
 
-    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     .line 639
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity$2;->a:Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;->k(Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;)Lcom/panasonic/avc/cng/application/c;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;->k(Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;)Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
     move-result-object v0
 
@@ -391,11 +391,11 @@
     .line 641
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity$2;->a:Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;->l(Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;)Lcom/panasonic/avc/cng/application/c;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;->l(Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;)Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
     move-result-object v0
 
-    invoke-virtual {v0, v3, v3}, Lcom/panasonic/avc/cng/application/c;->a(ZZ)V
+    invoke-virtual {v0, v3, v3}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->a(ZZ)V
 
     .line 643
     :cond_0
@@ -415,12 +415,12 @@
 
     const/4 v2, 0x0
 
-    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     .line 652
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity$2;->a:Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;->m(Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;)Lcom/panasonic/avc/cng/application/c;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;->m(Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;)Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
     move-result-object v0
 
@@ -429,11 +429,11 @@
     .line 654
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity$2;->a:Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;->n(Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;)Lcom/panasonic/avc/cng/application/c;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;->n(Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;)Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
     move-result-object v0
 
-    invoke-virtual {v0, v3, v3}, Lcom/panasonic/avc/cng/application/c;->a(ZZ)V
+    invoke-virtual {v0, v3, v3}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->a(ZZ)V
 
     .line 656
     :cond_0
@@ -453,12 +453,12 @@
 
     const/4 v2, 0x0
 
-    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     .line 665
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity$2;->a:Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;->o(Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;)Lcom/panasonic/avc/cng/application/c;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;->o(Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;)Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
     move-result-object v0
 
@@ -467,11 +467,11 @@
     .line 667
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity$2;->a:Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;->p(Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;)Lcom/panasonic/avc/cng/application/c;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;->p(Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;)Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
     move-result-object v0
 
-    invoke-virtual {v0, v3, v3}, Lcom/panasonic/avc/cng/application/c;->a(ZZ)V
+    invoke-virtual {v0, v3, v3}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->a(ZZ)V
 
     .line 669
     :cond_0
@@ -491,12 +491,12 @@
 
     const/4 v2, 0x0
 
-    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     .line 691
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity$2;->a:Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;->q(Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;)Lcom/panasonic/avc/cng/application/c;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;->q(Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;)Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
     move-result-object v0
 
@@ -505,11 +505,11 @@
     .line 693
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity$2;->a:Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;->r(Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;)Lcom/panasonic/avc/cng/application/c;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;->r(Lcom/panasonic/avc/cng/view/common/TouchShareNextActivity;)Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
     move-result-object v0
 
-    invoke-virtual {v0, v3, v3}, Lcom/panasonic/avc/cng/application/c;->a(ZZ)V
+    invoke-virtual {v0, v3, v3}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->a(ZZ)V
 
     .line 695
     :cond_0

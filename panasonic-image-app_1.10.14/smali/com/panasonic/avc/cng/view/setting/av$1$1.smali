@@ -51,9 +51,9 @@
     .line 217
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/av$1$1;->a:Lcom/panasonic/avc/cng/view/setting/av$1;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/av$1;->d:Lcom/panasonic/avc/cng/view/setting/av;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/av$1;->d:Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerPhotoStyleViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/av;->a(Lcom/panasonic/avc/cng/view/setting/av;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerPhotoStyleViewModel;->a(Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerPhotoStyleViewModel;)Landroid/os/Handler;
 
     move-result-object v0
 
@@ -62,9 +62,9 @@
     .line 220
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/av$1$1;->a:Lcom/panasonic/avc/cng/view/setting/av$1;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/av$1;->d:Lcom/panasonic/avc/cng/view/setting/av;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/av$1;->d:Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerPhotoStyleViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/av;->c(Lcom/panasonic/avc/cng/view/setting/av;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerPhotoStyleViewModel;->c(Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerPhotoStyleViewModel;)Landroid/os/Handler;
 
     move-result-object v0
 
@@ -86,9 +86,9 @@
     .line 227
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/av$1$1;->a:Lcom/panasonic/avc/cng/view/setting/av$1;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/av$1;->d:Lcom/panasonic/avc/cng/view/setting/av;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/av$1;->d:Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerPhotoStyleViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/av;->d(Lcom/panasonic/avc/cng/view/setting/av;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerPhotoStyleViewModel;->d(Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerPhotoStyleViewModel;)Landroid/os/Handler;
 
     move-result-object v0
 
@@ -97,9 +97,9 @@
     .line 230
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/av$1$1;->a:Lcom/panasonic/avc/cng/view/setting/av$1;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/av$1;->d:Lcom/panasonic/avc/cng/view/setting/av;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/av$1;->d:Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerPhotoStyleViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/av;->e(Lcom/panasonic/avc/cng/view/setting/av;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerPhotoStyleViewModel;->e(Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerPhotoStyleViewModel;)Landroid/os/Handler;
 
     move-result-object v0
 

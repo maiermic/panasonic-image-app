@@ -6,7 +6,7 @@
 # instance fields
 .field private a:Landroid/app/Activity;
 
-.field private b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/e;
+.field private b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameExecuteViewModel;
 
 .field private c:Lcom/panasonic/avc/cng/view/parts/p;
 
@@ -55,9 +55,9 @@
     iput-object v1, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/d;->c:Lcom/panasonic/avc/cng/view/parts/p;
 
     .line 86
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/d;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/e;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/d;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameExecuteViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/e;->e:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameExecuteViewModel;->e:Lcom/panasonic/avc/cng/a/c;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/d;->c:Lcom/panasonic/avc/cng/view/parts/p;
 
@@ -83,9 +83,9 @@
     iput-object v1, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/d;->d:Lcom/panasonic/avc/cng/view/parts/d;
 
     .line 102
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/d;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/e;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/d;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameExecuteViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/e;->g:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameExecuteViewModel;->g:Lcom/panasonic/avc/cng/a/c;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/d;->d:Lcom/panasonic/avc/cng/view/parts/d;
 
@@ -94,9 +94,9 @@
     invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/a/c;->a(Lcom/panasonic/avc/cng/a/b;)V
 
     .line 103
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/d;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/e;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/d;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameExecuteViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/e;->f:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameExecuteViewModel;->f:Lcom/panasonic/avc/cng/a/c;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/d;->d:Lcom/panasonic/avc/cng/view/parts/d;
 
@@ -120,9 +120,9 @@
     invoke-direct {v1, v0}, Lcom/panasonic/avc/cng/view/parts/j;-><init>(Landroid/widget/Button;)V
 
     .line 109
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/d;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/e;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/d;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameExecuteViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/e;->j:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameExecuteViewModel;->j:Lcom/panasonic/avc/cng/a/c;
 
     iget-object v1, v1, Lcom/panasonic/avc/cng/view/parts/j;->a:Lcom/panasonic/avc/cng/a/d;
 
@@ -144,24 +144,24 @@
     iput-object v1, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/d;->a:Landroid/app/Activity;
 
     .line 57
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/d;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/e;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/d;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameExecuteViewModel;
 
     if-eqz v0, :cond_0
 
     .line 59
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/d;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/e;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/d;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameExecuteViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/e;->c()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameExecuteViewModel;->c()V
 
     .line 61
     :cond_0
-    iput-object v1, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/d;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/e;
+    iput-object v1, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/d;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameExecuteViewModel;
 
     .line 62
     return-void
 .end method
 
-.method public a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/play/multiphotoframe/e;)V
+.method public a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameExecuteViewModel;)V
     .locals 0
 
     .prologue
@@ -169,7 +169,7 @@
     iput-object p1, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/d;->a:Landroid/app/Activity;
 
     .line 43
-    iput-object p2, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/d;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/e;
+    iput-object p2, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/d;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameExecuteViewModel;
 
     .line 46
     invoke-direct {p0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/d;->b()V

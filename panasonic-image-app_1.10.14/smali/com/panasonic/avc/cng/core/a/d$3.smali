@@ -78,12 +78,12 @@
 
     const-string v3, "deletecancel"
 
-    invoke-virtual {v2, v3, v5, v5}, Lcom/panasonic/avc/cng/core/a/d;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lcom/panasonic/avc/cng/model/c/h;
+    invoke-virtual {v2, v3, v5, v5}, Lcom/panasonic/avc/cng/core/a/d;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
     move-result-object v2
 
     .line 541
-    invoke-virtual {v2}, Lcom/panasonic/avc/cng/model/c/h;->a()Z
+    invoke-virtual {v2}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;->a()Z
 
     move-result v3
 
@@ -114,7 +114,7 @@
 
     .line 550
     :cond_2
-    invoke-virtual {v2}, Lcom/panasonic/avc/cng/model/c/h;->b()Ljava/lang/String;
+    invoke-virtual {v2}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;->b()Ljava/lang/String;
 
     move-result-object v3
 
@@ -173,7 +173,7 @@
 
     const/4 v1, 0x1
 
-    invoke-virtual {v2}, Lcom/panasonic/avc/cng/model/c/h;->b()Ljava/lang/String;
+    invoke-virtual {v2}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;->b()Ljava/lang/String;
 
     move-result-object v2
 
@@ -183,7 +183,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->b(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->warning(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_1
 .end method

@@ -13,10 +13,10 @@ import com.panasonic.avc.cng.model.p051c.C1835a;
 import com.panasonic.avc.cng.model.p051c.C1844d;
 import com.panasonic.avc.cng.model.service.C1985b;
 import com.panasonic.avc.cng.model.service.C1985b.C1986a;
-import com.panasonic.avc.cng.model.service.C2253z;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
-import com.panasonic.avc.cng.view.setting.C5537al.C5540a;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
+import com.panasonic.avc.cng.view.setting.SettingMenuBaseActivity.C5540a;
 import com.panasonic.avc.cng.view.setting.C5681d.C5686b;
 import com.panasonic.avc.cng.view.setting.C5741i.C5759a;
 import java.util.Dictionary;
@@ -57,13 +57,13 @@ public class CamWhiteBalanceSetModeActivity extends C5741i {
                         public void run() {
                             switch (i) {
                                 case 2:
-                                    C2331d.m10114a((Activity) CamWhiteBalanceSetModeActivity.this, C2328a.ON_DISCONNECT_BY_HIGH_TEMP_FINISH, (Bundle) null);
+                                    DialogFactory.m10114a((Activity) CamWhiteBalanceSetModeActivity.this, C2328a.ON_DISCONNECT_BY_HIGH_TEMP_FINISH, (Bundle) null);
                                     return;
                                 case 3:
-                                    C2331d.m10114a((Activity) CamWhiteBalanceSetModeActivity.this, C2328a.ON_DISCONNECT_BATTERY_LOW_FINISH, (Bundle) null);
+                                    DialogFactory.m10114a((Activity) CamWhiteBalanceSetModeActivity.this, C2328a.ON_DISCONNECT_BATTERY_LOW_FINISH, (Bundle) null);
                                     return;
                                 default:
-                                    C2331d.m10114a((Activity) CamWhiteBalanceSetModeActivity.this, C2328a.ON_DISCONNECT_FINISH, (Bundle) null);
+                                    DialogFactory.m10114a((Activity) CamWhiteBalanceSetModeActivity.this, C2328a.ON_DISCONNECT_FINISH, (Bundle) null);
                                     return;
                             }
                         }
@@ -93,7 +93,7 @@ public class CamWhiteBalanceSetModeActivity extends C5741i {
     public void OnClickOK(View view) {
         this._handler.post(new Runnable() {
             public void run() {
-                C2331d.m10114a((Activity) CamWhiteBalanceSetModeActivity.this, C2328a.ON_PROGRESS, (Bundle) null);
+                DialogFactory.m10114a((Activity) CamWhiteBalanceSetModeActivity.this, C2328a.ON_PROGRESS, (Bundle) null);
             }
         });
         new Thread(new Runnable() {
@@ -101,7 +101,7 @@ public class CamWhiteBalanceSetModeActivity extends C5741i {
                 C1892f a = C1712b.m6919c().mo4896a();
                 if (a != null) {
                     if (new C1440ae(a.f5682d).mo3409a()) {
-                        C1985b a2 = C2253z.m9679a(CamWhiteBalanceSetModeActivity.this._context, a);
+                        C1985b a2 = ServiceFactory.m9679a(CamWhiteBalanceSetModeActivity.this._context, a);
                         if (a2 != null) {
                             a2.mo5186a("setsetting", "whitebalance", "set", new C1986a() {
                                 /* renamed from: a */
@@ -113,8 +113,8 @@ public class CamWhiteBalanceSetModeActivity extends C5741i {
                                     CamWhiteBalanceSetModeActivity.this._resultBundle.putBoolean("MenuSettingUpdate", true);
                                     CamWhiteBalanceSetModeActivity.this._handler.post(new Runnable() {
                                         public void run() {
-                                            C2331d.m10100a((Activity) CamWhiteBalanceSetModeActivity.this);
-                                            C2331d.m10114a((Activity) CamWhiteBalanceSetModeActivity.this, C2328a.ON_CAM_WB_SET_SUCCESS, (Bundle) null);
+                                            DialogFactory.m10100a((Activity) CamWhiteBalanceSetModeActivity.this);
+                                            DialogFactory.m10114a((Activity) CamWhiteBalanceSetModeActivity.this, C2328a.ON_CAM_WB_SET_SUCCESS, (Bundle) null);
                                         }
                                     });
                                 }
@@ -123,8 +123,8 @@ public class CamWhiteBalanceSetModeActivity extends C5741i {
                                 public void mo5203c() {
                                     CamWhiteBalanceSetModeActivity.this._handler.post(new Runnable() {
                                         public void run() {
-                                            C2331d.m10100a((Activity) CamWhiteBalanceSetModeActivity.this);
-                                            C2331d.m10114a((Activity) CamWhiteBalanceSetModeActivity.this, C2328a.ON_CAM_WB_SET_ERROR, (Bundle) null);
+                                            DialogFactory.m10100a((Activity) CamWhiteBalanceSetModeActivity.this);
+                                            DialogFactory.m10114a((Activity) CamWhiteBalanceSetModeActivity.this, C2328a.ON_CAM_WB_SET_ERROR, (Bundle) null);
                                         }
                                     });
                                 }
@@ -135,8 +135,8 @@ public class CamWhiteBalanceSetModeActivity extends C5741i {
                     }
                     CamWhiteBalanceSetModeActivity.this._handler.post(new Runnable() {
                         public void run() {
-                            C2331d.m10100a((Activity) CamWhiteBalanceSetModeActivity.this);
-                            C2331d.m10114a((Activity) CamWhiteBalanceSetModeActivity.this, C2328a.ON_CAM_WB_SET_ERROR, (Bundle) null);
+                            DialogFactory.m10100a((Activity) CamWhiteBalanceSetModeActivity.this);
+                            DialogFactory.m10114a((Activity) CamWhiteBalanceSetModeActivity.this, C2328a.ON_CAM_WB_SET_ERROR, (Bundle) null);
                         }
                     });
                 }

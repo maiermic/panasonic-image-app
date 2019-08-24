@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/view/setting/al;->a(Lcom/panasonic/avc/cng/model/f;)V
+    value = Lcom/panasonic/avc/cng/view/setting/SettingMenuBaseActivity;->a(Lcom/panasonic/avc/cng/model/f;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,16 +20,16 @@
 # instance fields
 .field final synthetic a:Lcom/panasonic/avc/cng/model/f;
 
-.field final synthetic b:Lcom/panasonic/avc/cng/view/setting/al;
+.field final synthetic b:Lcom/panasonic/avc/cng/view/setting/SettingMenuBaseActivity;
 
 
 # direct methods
-.method constructor <init>(Lcom/panasonic/avc/cng/view/setting/al;Lcom/panasonic/avc/cng/model/f;)V
+.method constructor <init>(Lcom/panasonic/avc/cng/view/setting/SettingMenuBaseActivity;Lcom/panasonic/avc/cng/model/f;)V
     .locals 0
 
     .prologue
     .line 638
-    iput-object p1, p0, Lcom/panasonic/avc/cng/view/setting/al$2;->b:Lcom/panasonic/avc/cng/view/setting/al;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/view/setting/al$2;->b:Lcom/panasonic/avc/cng/view/setting/SettingMenuBaseActivity;
 
     iput-object p2, p0, Lcom/panasonic/avc/cng/view/setting/al$2;->a:Lcom/panasonic/avc/cng/model/f;
 
@@ -59,7 +59,7 @@
     invoke-direct {v0, v1}, Lcom/panasonic/avc/cng/core/a/d;-><init>(Ljava/lang/String;)V
 
     .line 643
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/d;->h()Lcom/panasonic/avc/cng/model/c/h;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/d;->h()Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
     .line 645
     :cond_0

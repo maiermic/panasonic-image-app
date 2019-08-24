@@ -14,9 +14,9 @@ import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.service.C2210p;
 import com.panasonic.avc.cng.view.common.C2820e;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
 import com.panasonic.avc.cng.view.parts.C4097be;
-import com.panasonic.avc.cng.view.setting.C5537al.C5540a;
+import com.panasonic.avc.cng.view.setting.SettingMenuBaseActivity.C5540a;
 
 public class RegistServiceActivity extends C5741i {
     /* access modifiers changed from: private */
@@ -53,7 +53,7 @@ public class RegistServiceActivity extends C5741i {
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long j) {
                 RegistServiceActivity.this.f16519a.mo12268d(i);
                 RegistServiceActivity.this.f16519a.mo12055a(3);
-                C2331d.m10114a((Activity) RegistServiceActivity.this, C2328a.ON_PROGRESS, (Bundle) null);
+                DialogFactory.m10114a((Activity) RegistServiceActivity.this, C2328a.ON_PROGRESS, (Bundle) null);
             }
         });
     }
@@ -63,7 +63,7 @@ public class RegistServiceActivity extends C5741i {
         super.onResume();
         if (!C5540a.m20622a((Activity) this)) {
             if (this.f16519a.mo12272i() == null) {
-                C2331d.m10114a((Activity) this, C2328a.ON_PROGRESS, (Bundle) null);
+                DialogFactory.m10114a((Activity) this, C2328a.ON_PROGRESS, (Bundle) null);
                 this.f16519a.mo12061a(true);
                 this.f16519a.mo12055a(2);
                 return;
@@ -91,11 +91,11 @@ public class RegistServiceActivity extends C5741i {
             public void mo5071a(int i, int i2) {
                 if (!RegistServiceActivity.this.isFinishing()) {
                     if (i != 1) {
-                        C2331d.m10100a((Activity) RegistServiceActivity.this);
+                        DialogFactory.m10100a((Activity) RegistServiceActivity.this);
                         if (i == 6) {
-                            C2331d.m10114a((Activity) RegistServiceActivity.this, C2328a.DIALOG_ID_CONNECT_FAILED, (Bundle) null);
+                            DialogFactory.m10114a((Activity) RegistServiceActivity.this, C2328a.DIALOG_ID_CONNECT_FAILED, (Bundle) null);
                         } else if (i == 7) {
-                            C2331d.m10114a((Activity) RegistServiceActivity.this, C2328a.DIALOG_ID_PIC_LOGIN_ERROR, (Bundle) null);
+                            DialogFactory.m10114a((Activity) RegistServiceActivity.this, C2328a.DIALOG_ID_PIC_LOGIN_ERROR, (Bundle) null);
                         }
                     } else if (i2 == 2) {
                         RegistServiceActivity.this.f16519a.mo12267c(2);
@@ -109,7 +109,7 @@ public class RegistServiceActivity extends C5741i {
             public void mo5074b(int i, int i2) {
                 if (!RegistServiceActivity.this.isFinishing()) {
                     if (i == 1) {
-                        C2331d.m10100a((Activity) RegistServiceActivity.this);
+                        DialogFactory.m10100a((Activity) RegistServiceActivity.this);
                         if (i2 == 2) {
                             RegistServiceActivity.this.m20034a();
                         } else if (i2 == 23) {
@@ -118,14 +118,14 @@ public class RegistServiceActivity extends C5741i {
                             RegistServiceActivity.this.f16519a.mo12263a(RegistServiceActivity.this.getText(R.string.setup_picmate_regist_service).toString());
                             RegistServiceActivity.this.startActivityForResult(new Intent(RegistServiceActivity.this, WebServiceWebViewActivity.class), 0);
                         } else {
-                            C2331d.m10114a((Activity) RegistServiceActivity.this, C2328a.DIALOG_ID_GET_EXT_SERVICE_FAILED, (Bundle) null);
+                            DialogFactory.m10114a((Activity) RegistServiceActivity.this, C2328a.DIALOG_ID_GET_EXT_SERVICE_FAILED, (Bundle) null);
                         }
                     } else {
-                        C2331d.m10100a((Activity) RegistServiceActivity.this);
+                        DialogFactory.m10100a((Activity) RegistServiceActivity.this);
                         if (i == 19) {
-                            C2331d.m10114a((Activity) RegistServiceActivity.this, C2328a.DIALOG_ID_GET_EXT_SERVICE_FAILED, (Bundle) null);
+                            DialogFactory.m10114a((Activity) RegistServiceActivity.this, C2328a.DIALOG_ID_GET_EXT_SERVICE_FAILED, (Bundle) null);
                         } else {
-                            C2331d.m10114a((Activity) RegistServiceActivity.this, C2328a.DIALOG_ID_GET_EXT_SERVICE_FAILED, (Bundle) null);
+                            DialogFactory.m10114a((Activity) RegistServiceActivity.this, C2328a.DIALOG_ID_GET_EXT_SERVICE_FAILED, (Bundle) null);
                         }
                     }
                 }
@@ -152,7 +152,7 @@ public class RegistServiceActivity extends C5741i {
             this.f16519a.mo12267c(2);
             new Handler(Looper.getMainLooper()).post(new Runnable() {
                 public void run() {
-                    C2331d.m10114a((Activity) RegistServiceActivity.this, C2328a.ON_PROGRESS, (Bundle) null);
+                    DialogFactory.m10114a((Activity) RegistServiceActivity.this, C2328a.ON_PROGRESS, (Bundle) null);
                 }
             });
         }

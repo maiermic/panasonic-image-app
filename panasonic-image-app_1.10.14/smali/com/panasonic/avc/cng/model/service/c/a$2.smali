@@ -47,11 +47,11 @@
     const/4 v3, 0x0
 
     .line 768
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
@@ -121,11 +121,11 @@
 
     .line 789
     :cond_1
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
@@ -133,13 +133,13 @@
     if-eqz v0, :cond_2
 
     .line 794
-    invoke-static {}, Lcom/panasonic/avc/cng/application/a/b;->a()Lcom/panasonic/avc/cng/application/a/b;
+    invoke-static {}, Lcom/panasonic/avc/cng/application/a/GoogleTagManager;->a()Lcom/panasonic/avc/cng/application/a/GoogleTagManager;
 
     move-result-object v1
 
     iget-object v2, v0, Lcom/panasonic/avc/cng/model/f;->g:Ljava/lang/String;
 
-    invoke-virtual {v1, v2}, Lcom/panasonic/avc/cng/application/a/b;->b(Ljava/lang/String;)V
+    invoke-virtual {v1, v2}, Lcom/panasonic/avc/cng/application/a/GoogleTagManager;->b(Ljava/lang/String;)V
 
     .line 797
     iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/c/a$2;->a:Lcom/panasonic/avc/cng/model/service/c/a;
@@ -172,11 +172,11 @@
 
     .line 814
     :cond_2
-    invoke-static {}, Lcom/panasonic/avc/cng/application/a/b;->a()Lcom/panasonic/avc/cng/application/a/b;
+    invoke-static {}, Lcom/panasonic/avc/cng/application/a/GoogleTagManager;->a()Lcom/panasonic/avc/cng/application/a/GoogleTagManager;
 
     move-result-object v0
 
-    invoke-virtual {v0, v5}, Lcom/panasonic/avc/cng/application/a/b;->b(Ljava/lang/String;)V
+    invoke-virtual {v0, v5}, Lcom/panasonic/avc/cng/application/a/GoogleTagManager;->b(Ljava/lang/String;)V
 
     .line 817
     iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/c/a$2;->a:Lcom/panasonic/avc/cng/model/service/c/a;

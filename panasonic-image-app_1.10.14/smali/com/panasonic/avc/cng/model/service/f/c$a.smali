@@ -168,7 +168,7 @@
     if-eqz v2, :cond_b
 
     .line 302
-    invoke-static {}, Lcom/panasonic/avc/cng/model/service/z;->g()Z
+    invoke-static {}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->g()Z
 
     move-result v2
 

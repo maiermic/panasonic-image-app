@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/view/a/d;->a(IZ)V
+    value = Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;->a(IZ)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/panasonic/avc/cng/view/a/d;
+.field final synthetic a:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
 
 # direct methods
-.method constructor <init>(Lcom/panasonic/avc/cng/view/a/d;)V
+.method constructor <init>(Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;)V
     .locals 0
 
     .prologue
     .line 1252
-    iput-object p1, p0, Lcom/panasonic/avc/cng/view/a/d$5;->a:Lcom/panasonic/avc/cng/view/a/d;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/view/a/d$5;->a:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -41,18 +41,18 @@
 
     .prologue
     .line 1254
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/a/d$5;->a:Lcom/panasonic/avc/cng/view/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/a/d$5;->a:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/a/d;->c(Lcom/panasonic/avc/cng/view/a/d;)Landroid/app/Activity;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;->c(Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;)Landroid/app/Activity;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 1257
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/a/d$5;->a:Lcom/panasonic/avc/cng/view/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/a/d$5;->a:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/a/d;->c(Lcom/panasonic/avc/cng/view/a/d;)Landroid/app/Activity;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;->c(Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;)Landroid/app/Activity;
 
     move-result-object v0
 
@@ -60,11 +60,11 @@
 
     .line 1261
     :cond_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/a/d$5;->a:Lcom/panasonic/avc/cng/view/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/a/d$5;->a:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
     const/16 v1, 0xc
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/a/d;->a(Lcom/panasonic/avc/cng/view/a/d;I)Z
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;->a(Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;I)Z
 
     .line 1262
     return-void

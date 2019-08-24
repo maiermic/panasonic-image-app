@@ -12,13 +12,13 @@ import com.panasonic.avc.cng.imageapp.C1701a.C1702a;
 import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.service.C1985b.C1986a;
-import com.panasonic.avc.cng.model.service.C2253z;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
 import com.panasonic.avc.cng.model.service.p055b.C2003c;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.view.p072a.C2291c;
 import com.panasonic.avc.cng.view.p072a.C2316j;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
 import com.panasonic.avc.cng.view.p073b.C2337e;
 import com.panasonic.avc.cng.view.play.browser.C4425e;
 import com.panasonic.avc.cng.view.play.p076a.C4270a;
@@ -152,7 +152,7 @@ public class SnapMovieOneContentPreviewActivity extends C4270a {
                 if (intent != null) {
                     String action = intent.getAction();
                     if (action != null) {
-                        C2261g.m9771e("SnapMovieOneContentPreviewActivity", "onReceive(" + action + ")");
+                        ImageAppLog.info("SnapMovieOneContentPreviewActivity", "onReceive(" + action + ")");
                         if (action.equals("android.intent.action.CLOSE_SYSTEM_DIALOGS")) {
                             if (SnapMovieOneContentPreviewActivity.this.f15329a != null) {
                                 SnapMovieOneContentPreviewActivity.this.f15329a.mo6022d().putBoolean("SnapMovieIsFinish", true);
@@ -251,7 +251,7 @@ public class SnapMovieOneContentPreviewActivity extends C4270a {
     }
 
     public void OnReconnectDevice() {
-        C2261g.m9771e("SnapMovieOneContentPreviewActivity", "OnReconnectDevice()");
+        ImageAppLog.info("SnapMovieOneContentPreviewActivity", "OnReconnectDevice()");
         if (isFinishing() || GetViewModel() == null) {
             return;
         }
@@ -274,20 +274,20 @@ public class SnapMovieOneContentPreviewActivity extends C4270a {
             case C1702a.HorizontalPicker_right_blank_area_width /*10*/:
                 return false;
             case 7:
-                if (!C2331d.m10125b((Activity) this, C2328a.ON_DMS_RECEIVING)) {
+                if (!DialogFactory.m10125b((Activity) this, C2328a.ON_DMS_RECEIVING)) {
                     return false;
                 }
-                C2331d.m10100a((Activity) this);
+                DialogFactory.m10100a((Activity) this);
                 return false;
             case C1702a.HorizontalPicker_hairline_visible /*11*/:
-                C2253z.m9679a(this._context, C1712b.m6919c().mo4896a()).mo5185a((C1986a) new C1986a() {
+                ServiceFactory.m9679a(this._context, C1712b.m6919c().mo4896a()).mo5185a((C1986a) new C1986a() {
                     /* renamed from: a */
                     public void mo5201a() {
                         if (SnapMovieOneContentPreviewActivity.this._handler != null) {
                             SnapMovieOneContentPreviewActivity.this._handler.post(new Runnable() {
                                 public void run() {
-                                    C2331d.m10100a((Activity) SnapMovieOneContentPreviewActivity.this._context);
-                                    C2331d.m10114a((Activity) SnapMovieOneContentPreviewActivity.this._context, C2328a.WAIT_PROCESSING, (Bundle) null);
+                                    DialogFactory.m10100a((Activity) SnapMovieOneContentPreviewActivity.this._context);
+                                    DialogFactory.m10114a((Activity) SnapMovieOneContentPreviewActivity.this._context, C2328a.WAIT_PROCESSING, (Bundle) null);
                                 }
                             });
                         }
@@ -298,7 +298,7 @@ public class SnapMovieOneContentPreviewActivity extends C4270a {
                         if (SnapMovieOneContentPreviewActivity.this._handler != null) {
                             SnapMovieOneContentPreviewActivity.this._handler.post(new Runnable() {
                                 public void run() {
-                                    C2331d.m10100a((Activity) SnapMovieOneContentPreviewActivity.this._context);
+                                    DialogFactory.m10100a((Activity) SnapMovieOneContentPreviewActivity.this._context);
                                 }
                             });
                         }
@@ -309,7 +309,7 @@ public class SnapMovieOneContentPreviewActivity extends C4270a {
                         if (SnapMovieOneContentPreviewActivity.this._handler != null) {
                             SnapMovieOneContentPreviewActivity.this._handler.post(new Runnable() {
                                 public void run() {
-                                    C2331d.m10100a((Activity) SnapMovieOneContentPreviewActivity.this._context);
+                                    DialogFactory.m10100a((Activity) SnapMovieOneContentPreviewActivity.this._context);
                                 }
                             });
                         }

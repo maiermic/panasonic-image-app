@@ -9,7 +9,7 @@
 
 
 # static fields
-.field protected static a:Lcom/panasonic/avc/cng/view/setting/j;
+.field protected static a:Lcom/panasonic/avc/cng/view/setting/EasyWiFiManager;
 
 .field private static final k:Ljava/lang/String;
 
@@ -62,7 +62,7 @@
     .line 52
     const/4 v0, 0x0
 
-    sput-object v0, Lcom/panasonic/avc/cng/view/setting/EasyWiFiSettingActivity;->a:Lcom/panasonic/avc/cng/view/setting/j;
+    sput-object v0, Lcom/panasonic/avc/cng/view/setting/EasyWiFiSettingActivity;->a:Lcom/panasonic/avc/cng/view/setting/EasyWiFiManager;
 
     return-void
 .end method
@@ -121,12 +121,12 @@
     return-object v0
 .end method
 
-.method public static a()Lcom/panasonic/avc/cng/view/setting/j;
+.method public static a()Lcom/panasonic/avc/cng/view/setting/EasyWiFiManager;
     .locals 1
 
     .prologue
     .line 78
-    sget-object v0, Lcom/panasonic/avc/cng/view/setting/EasyWiFiSettingActivity;->a:Lcom/panasonic/avc/cng/view/setting/j;
+    sget-object v0, Lcom/panasonic/avc/cng/view/setting/EasyWiFiSettingActivity;->a:Lcom/panasonic/avc/cng/view/setting/EasyWiFiManager;
 
     return-object v0
 .end method
@@ -138,11 +138,11 @@
     const/4 v2, -0x1
 
     .line 739
-    sget-object v0, Lcom/panasonic/avc/cng/view/setting/EasyWiFiSettingActivity;->a:Lcom/panasonic/avc/cng/view/setting/j;
+    sget-object v0, Lcom/panasonic/avc/cng/view/setting/EasyWiFiSettingActivity;->a:Lcom/panasonic/avc/cng/view/setting/EasyWiFiManager;
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1, v2}, Lcom/panasonic/avc/cng/view/setting/j;->a(Lcom/panasonic/avc/cng/view/setting/j$b;I)V
+    invoke-virtual {v0, v1, v2}, Lcom/panasonic/avc/cng/view/setting/EasyWiFiManager;->a(Lcom/panasonic/avc/cng/view/setting/j$b;I)V
 
     .line 740
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/EasyWiFiSettingActivity;->e:Landroid/widget/ArrayAdapter;
@@ -157,9 +157,9 @@
     if-eqz v0, :cond_0
 
     .line 743
-    sget-object v0, Lcom/panasonic/avc/cng/view/setting/EasyWiFiSettingActivity;->a:Lcom/panasonic/avc/cng/view/setting/j;
+    sget-object v0, Lcom/panasonic/avc/cng/view/setting/EasyWiFiSettingActivity;->a:Lcom/panasonic/avc/cng/view/setting/EasyWiFiManager;
 
-    invoke-virtual {v0, p1}, Lcom/panasonic/avc/cng/view/setting/j;->b(I)Lcom/panasonic/avc/cng/view/setting/j$b;
+    invoke-virtual {v0, p1}, Lcom/panasonic/avc/cng/view/setting/EasyWiFiManager;->b(I)Lcom/panasonic/avc/cng/view/setting/j$b;
 
     move-result-object v0
 
@@ -167,14 +167,14 @@
     if-eqz v0, :cond_0
 
     .line 746
-    sget-object v1, Lcom/panasonic/avc/cng/view/setting/EasyWiFiSettingActivity;->a:Lcom/panasonic/avc/cng/view/setting/j;
+    sget-object v1, Lcom/panasonic/avc/cng/view/setting/EasyWiFiSettingActivity;->a:Lcom/panasonic/avc/cng/view/setting/EasyWiFiManager;
 
-    invoke-virtual {v1, v0, v2}, Lcom/panasonic/avc/cng/view/setting/j;->a(Lcom/panasonic/avc/cng/view/setting/j$b;I)V
+    invoke-virtual {v1, v0, v2}, Lcom/panasonic/avc/cng/view/setting/EasyWiFiManager;->a(Lcom/panasonic/avc/cng/view/setting/j$b;I)V
 
     .line 748
-    sget-object v0, Lcom/panasonic/avc/cng/view/setting/EasyWiFiSettingActivity;->a:Lcom/panasonic/avc/cng/view/setting/j;
+    sget-object v0, Lcom/panasonic/avc/cng/view/setting/EasyWiFiSettingActivity;->a:Lcom/panasonic/avc/cng/view/setting/EasyWiFiManager;
 
-    invoke-virtual {v0, p0}, Lcom/panasonic/avc/cng/view/setting/j;->a(Landroid/content/Context;)Landroid/content/Intent;
+    invoke-virtual {v0, p0}, Lcom/panasonic/avc/cng/view/setting/EasyWiFiManager;->a(Landroid/content/Context;)Landroid/content/Intent;
 
     move-result-object v0
 
@@ -224,19 +224,19 @@
 
     .prologue
     .line 309
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/EasyWiFiSettingActivity;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/EasyWiFiSettingActivity;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
     if-eqz v0, :cond_0
 
     .line 312
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/EasyWiFiSettingActivity;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/EasyWiFiSettingActivity;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/a/d;->b()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;->b()V
 
     .line 314
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/EasyWiFiSettingActivity;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/EasyWiFiSettingActivity;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/a/d;->d()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;->d()V
 
     .line 316
     :cond_0
@@ -248,19 +248,19 @@
 
     .prologue
     .line 324
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/EasyWiFiSettingActivity;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/EasyWiFiSettingActivity;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
     if-eqz v0, :cond_0
 
     .line 327
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/EasyWiFiSettingActivity;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/EasyWiFiSettingActivity;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/a/d;->c()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;->c()V
 
     .line 329
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/EasyWiFiSettingActivity;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/EasyWiFiSettingActivity;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/a/d;->e()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;->e()V
 
     .line 331
     :cond_0
@@ -278,7 +278,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {p0, v0, v1}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {p0, v0, v1}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     .line 669
     const/4 v0, 0x1
@@ -293,13 +293,13 @@
     if-ne v0, v2, :cond_0
 
     .line 672
-    sget-object v0, Lcom/panasonic/avc/cng/view/setting/EasyWiFiSettingActivity;->a:Lcom/panasonic/avc/cng/view/setting/j;
+    sget-object v0, Lcom/panasonic/avc/cng/view/setting/EasyWiFiSettingActivity;->a:Lcom/panasonic/avc/cng/view/setting/EasyWiFiManager;
 
     sget-object v1, Lcom/panasonic/avc/cng/view/b/b$a;->bh:Lcom/panasonic/avc/cng/view/b/b$a;
 
     const/4 v2, 0x5
 
-    invoke-virtual {v0, v1, v2}, Lcom/panasonic/avc/cng/view/setting/j;->a(Lcom/panasonic/avc/cng/view/b/b$a;I)V
+    invoke-virtual {v0, v1, v2}, Lcom/panasonic/avc/cng/view/setting/EasyWiFiManager;->a(Lcom/panasonic/avc/cng/view/b/b$a;I)V
 
     .line 678
     :goto_0
@@ -307,11 +307,11 @@
 
     .line 676
     :cond_0
-    sget-object v0, Lcom/panasonic/avc/cng/view/setting/EasyWiFiSettingActivity;->a:Lcom/panasonic/avc/cng/view/setting/j;
+    sget-object v0, Lcom/panasonic/avc/cng/view/setting/EasyWiFiSettingActivity;->a:Lcom/panasonic/avc/cng/view/setting/EasyWiFiManager;
 
     sget-object v1, Lcom/panasonic/avc/cng/view/b/b$a;->bh:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-virtual {v0, v1, v2}, Lcom/panasonic/avc/cng/view/setting/j;->a(Lcom/panasonic/avc/cng/view/b/b$a;I)V
+    invoke-virtual {v0, v1, v2}, Lcom/panasonic/avc/cng/view/setting/EasyWiFiManager;->a(Lcom/panasonic/avc/cng/view/b/b$a;I)V
 
     goto :goto_0
 .end method
@@ -399,9 +399,9 @@
 
     .prologue
     .line 351
-    sget-object v0, Lcom/panasonic/avc/cng/view/setting/EasyWiFiSettingActivity;->a:Lcom/panasonic/avc/cng/view/setting/j;
+    sget-object v0, Lcom/panasonic/avc/cng/view/setting/EasyWiFiSettingActivity;->a:Lcom/panasonic/avc/cng/view/setting/EasyWiFiManager;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/j;->c()Lcom/panasonic/avc/cng/view/setting/m;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/EasyWiFiManager;->c()Lcom/panasonic/avc/cng/view/setting/m;
 
     move-result-object v0
 
@@ -436,9 +436,9 @@
 
     .line 805
     :cond_0
-    sget-object v0, Lcom/panasonic/avc/cng/view/setting/EasyWiFiSettingActivity;->a:Lcom/panasonic/avc/cng/view/setting/j;
+    sget-object v0, Lcom/panasonic/avc/cng/view/setting/EasyWiFiSettingActivity;->a:Lcom/panasonic/avc/cng/view/setting/EasyWiFiManager;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/j;->i()Z
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/EasyWiFiManager;->i()Z
 
     move-result v0
 
@@ -466,14 +466,14 @@
     :cond_2
     sget-object v0, Lcom/panasonic/avc/cng/view/b/b$a;->bh:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {p0, v0}, Lcom/panasonic/avc/cng/view/b/d;->b(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;)Z
+    invoke-static {p0, v0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->b(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;)Z
 
     move-result v0
 
     if-eqz v0, :cond_3
 
     .line 815
-    invoke-static {p0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;)V
+    invoke-static {p0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;)V
 
     .line 819
     :cond_3
@@ -541,11 +541,11 @@
 
     .line 145
     :goto_0
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v2
 
-    invoke-virtual {v2}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v2}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v6
 
@@ -601,7 +601,7 @@
 
     move-result-object v8
 
-    invoke-static {v7, v8}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v7, v8}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 159
     if-eqz v0, :cond_2
@@ -707,27 +707,27 @@
     invoke-virtual {p0, v1, v0, v2, v4}, Lcom/panasonic/avc/cng/view/setting/EasyWiFiSettingActivity;->SetupCameraWatching(ZLcom/panasonic/avc/cng/view/b/b$a;Lcom/panasonic/avc/cng/view/b/b$a;Lcom/panasonic/avc/cng/view/b/b$a;)V
 
     .line 239
-    new-instance v0, Lcom/panasonic/avc/cng/view/setting/j;
+    new-instance v0, Lcom/panasonic/avc/cng/view/setting/EasyWiFiManager;
 
     iget v2, p0, Lcom/panasonic/avc/cng/view/setting/EasyWiFiSettingActivity;->f:I
 
-    invoke-direct {v0, p0, v2}, Lcom/panasonic/avc/cng/view/setting/j;-><init>(Landroid/content/Context;I)V
+    invoke-direct {v0, p0, v2}, Lcom/panasonic/avc/cng/view/setting/EasyWiFiManager;-><init>(Landroid/content/Context;I)V
 
-    sput-object v0, Lcom/panasonic/avc/cng/view/setting/EasyWiFiSettingActivity;->a:Lcom/panasonic/avc/cng/view/setting/j;
+    sput-object v0, Lcom/panasonic/avc/cng/view/setting/EasyWiFiSettingActivity;->a:Lcom/panasonic/avc/cng/view/setting/EasyWiFiManager;
 
     .line 240
-    sget-object v0, Lcom/panasonic/avc/cng/view/setting/EasyWiFiSettingActivity;->a:Lcom/panasonic/avc/cng/view/setting/j;
+    sget-object v0, Lcom/panasonic/avc/cng/view/setting/EasyWiFiSettingActivity;->a:Lcom/panasonic/avc/cng/view/setting/EasyWiFiManager;
 
-    invoke-virtual {v0, p0, v3}, Lcom/panasonic/avc/cng/view/setting/j;->a(Lcom/panasonic/avc/cng/view/setting/EasyWiFiSettingActivity;Z)V
+    invoke-virtual {v0, p0, v3}, Lcom/panasonic/avc/cng/view/setting/EasyWiFiManager;->a(Lcom/panasonic/avc/cng/view/setting/EasyWiFiSettingActivity;Z)V
 
     .line 241
-    sget-object v0, Lcom/panasonic/avc/cng/view/setting/EasyWiFiSettingActivity;->a:Lcom/panasonic/avc/cng/view/setting/j;
+    sget-object v0, Lcom/panasonic/avc/cng/view/setting/EasyWiFiSettingActivity;->a:Lcom/panasonic/avc/cng/view/setting/EasyWiFiManager;
 
     const/4 v2, 0x0
 
     const/4 v3, -0x1
 
-    invoke-virtual {v0, v2, v3}, Lcom/panasonic/avc/cng/view/setting/j;->a(Lcom/panasonic/avc/cng/view/setting/j$b;I)V
+    invoke-virtual {v0, v2, v3}, Lcom/panasonic/avc/cng/view/setting/EasyWiFiManager;->a(Lcom/panasonic/avc/cng/view/setting/j$b;I)V
 
     .line 244
     new-instance v0, Landroid/widget/ArrayAdapter;
@@ -740,11 +740,11 @@
 
     .line 248
     :goto_6
-    sget-object v2, Lcom/panasonic/avc/cng/view/setting/EasyWiFiSettingActivity;->a:Lcom/panasonic/avc/cng/view/setting/j;
+    sget-object v2, Lcom/panasonic/avc/cng/view/setting/EasyWiFiSettingActivity;->a:Lcom/panasonic/avc/cng/view/setting/EasyWiFiManager;
 
     add-int/lit8 v0, v1, 0x1
 
-    invoke-virtual {v2, v1}, Lcom/panasonic/avc/cng/view/setting/j;->a(I)Ljava/lang/String;
+    invoke-virtual {v2, v1}, Lcom/panasonic/avc/cng/view/setting/EasyWiFiManager;->a(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -994,11 +994,11 @@
     if-ne v0, v1, :cond_3
 
     .line 836
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
@@ -1091,11 +1091,11 @@
     if-ne v0, v1, :cond_5
 
     .line 864
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
@@ -1120,11 +1120,11 @@
 
     .line 877
     :cond_5
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
@@ -1314,11 +1314,11 @@
 
     .prologue
     .line 653
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
@@ -1330,7 +1330,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {p0, v0, v1}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {p0, v0, v1}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     .line 662
     :goto_0
@@ -1411,7 +1411,7 @@
     const/4 v1, 0x0
 
     .line 445
-    sput-object v1, Lcom/panasonic/avc/cng/view/setting/EasyWiFiSettingActivity;->a:Lcom/panasonic/avc/cng/view/setting/j;
+    sput-object v1, Lcom/panasonic/avc/cng/view/setting/EasyWiFiSettingActivity;->a:Lcom/panasonic/avc/cng/view/setting/EasyWiFiManager;
 
     .line 448
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/EasyWiFiSettingActivity;->h:Landroid/content/BroadcastReceiver;
@@ -1564,18 +1564,18 @@
     const/4 v6, 0x0
 
     .line 688
-    sget-object v0, Lcom/panasonic/avc/cng/view/setting/EasyWiFiSettingActivity;->a:Lcom/panasonic/avc/cng/view/setting/j;
+    sget-object v0, Lcom/panasonic/avc/cng/view/setting/EasyWiFiSettingActivity;->a:Lcom/panasonic/avc/cng/view/setting/EasyWiFiManager;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/j;->i()Z
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/EasyWiFiManager;->i()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
     .line 690
-    sget-object v0, Lcom/panasonic/avc/cng/view/setting/EasyWiFiSettingActivity;->a:Lcom/panasonic/avc/cng/view/setting/j;
+    sget-object v0, Lcom/panasonic/avc/cng/view/setting/EasyWiFiSettingActivity;->a:Lcom/panasonic/avc/cng/view/setting/EasyWiFiManager;
 
-    invoke-virtual {v0, p3}, Lcom/panasonic/avc/cng/view/setting/j;->b(I)Lcom/panasonic/avc/cng/view/setting/j$b;
+    invoke-virtual {v0, p3}, Lcom/panasonic/avc/cng/view/setting/EasyWiFiManager;->b(I)Lcom/panasonic/avc/cng/view/setting/j$b;
 
     move-result-object v0
 
@@ -1587,9 +1587,9 @@
     if-eqz v0, :cond_0
 
     .line 694
-    sget-object v0, Lcom/panasonic/avc/cng/view/setting/EasyWiFiSettingActivity;->a:Lcom/panasonic/avc/cng/view/setting/j;
+    sget-object v0, Lcom/panasonic/avc/cng/view/setting/EasyWiFiSettingActivity;->a:Lcom/panasonic/avc/cng/view/setting/EasyWiFiManager;
 
-    invoke-virtual {v0, v3}, Lcom/panasonic/avc/cng/view/setting/j;->a(Z)V
+    invoke-virtual {v0, v3}, Lcom/panasonic/avc/cng/view/setting/EasyWiFiManager;->a(Z)V
 
     .line 697
     const-wide/16 v0, 0x64
@@ -1602,9 +1602,9 @@
     .line 706
     :cond_0
     :goto_0
-    sget-object v0, Lcom/panasonic/avc/cng/view/setting/EasyWiFiSettingActivity;->a:Lcom/panasonic/avc/cng/view/setting/j;
+    sget-object v0, Lcom/panasonic/avc/cng/view/setting/EasyWiFiSettingActivity;->a:Lcom/panasonic/avc/cng/view/setting/EasyWiFiManager;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/j;->i()Z
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/EasyWiFiManager;->i()Z
 
     move-result v0
 
@@ -1613,7 +1613,7 @@
     .line 709
     sget-object v0, Lcom/panasonic/avc/cng/view/b/b$a;->bh:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {p0, v0}, Lcom/panasonic/avc/cng/view/b/d;->b(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;)Z
+    invoke-static {p0, v0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->b(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;)Z
 
     move-result v0
 
@@ -1624,7 +1624,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {p0, v0, v1}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {p0, v0, v1}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     .line 713
     invoke-virtual {p0}, Lcom/panasonic/avc/cng/view/setting/EasyWiFiSettingActivity;->e()I
@@ -1816,9 +1816,9 @@
     if-nez v1, :cond_0
 
     .line 387
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/EasyWiFiSettingActivity;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/d;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/EasyWiFiSettingActivity;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/a/d;->f()Z
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;->f()Z
 
     move-result v1
 

@@ -87,7 +87,7 @@
     .line 151
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/a$1;->c:Lcom/panasonic/avc/cng/view/setting/a;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/a;->f:Lcom/panasonic/avc/cng/core/c/s;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/a;->f:Lcom/panasonic/avc/cng/core/c/Picmate;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/a$1;->c:Lcom/panasonic/avc/cng/view/setting/a;
 
@@ -107,7 +107,7 @@
 
     iget-object v3, p0, Lcom/panasonic/avc/cng/view/setting/a$1;->a:Ljava/lang/String;
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/core/c/s;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/core/c/Picmate;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 158
     :cond_0

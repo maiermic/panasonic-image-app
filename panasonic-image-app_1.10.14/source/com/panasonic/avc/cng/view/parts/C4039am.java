@@ -15,10 +15,10 @@ import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.C1892f;
 import com.panasonic.avc.cng.model.p051c.C1860l;
 import com.panasonic.avc.cng.model.service.C1985b;
-import com.panasonic.avc.cng.model.service.C2253z;
-import com.panasonic.avc.cng.util.C2261g;
-import com.panasonic.avc.cng.view.parts.C3973ab.C3977a;
-import com.panasonic.avc.cng.view.setting.C5641av;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
+import com.panasonic.avc.cng.util.ImageAppLog;
+import com.panasonic.avc.cng.view.parts.SetPickerPosition.C3977a;
+import com.panasonic.avc.cng.view.setting.LiveSetupDrumPickerPhotoStyleViewModel;
 
 /* renamed from: com.panasonic.avc.cng.view.parts.am */
 public class C4039am extends RelativeLayout {
@@ -41,14 +41,14 @@ public class C4039am extends RelativeLayout {
     public C4042a f13638e;
 
     /* renamed from: f */
-    private C5641av f13639f;
+    private LiveSetupDrumPickerPhotoStyleViewModel f13639f;
 
     /* renamed from: g */
     private String[] f13640g = this.f13639f.mo12452d();
     /* access modifiers changed from: private */
 
     /* renamed from: h */
-    public C3973ab f13641h;
+    public SetPickerPosition f13641h;
 
     /* renamed from: i */
     private LinearLayout f13642i;
@@ -98,7 +98,7 @@ public class C4039am extends RelativeLayout {
         super.onSizeChanged(i, i2, i3, i4);
     }
 
-    public C4039am(Context context, Activity activity, C5641av avVar) {
+    public C4039am(Context context, Activity activity, LiveSetupDrumPickerPhotoStyleViewModel avVar) {
         super(context);
         this.f13634a = context;
         this.f13635b = activity;
@@ -110,7 +110,7 @@ public class C4039am extends RelativeLayout {
             if (C1712b.m6919c() != null) {
                 this.f13645l = C1712b.m6919c().mo4896a();
                 if (this.f13645l != null) {
-                    this.f13646m = C2253z.m9679a(this.f13634a, this.f13645l);
+                    this.f13646m = ServiceFactory.m9679a(this.f13634a, this.f13645l);
                 }
             }
             m16300d();
@@ -171,7 +171,7 @@ public class C4039am extends RelativeLayout {
         } else {
             b2 = mo9618b(5, 200);
         }
-        this.f13641h = new C3973ab(this.f13634a, b2);
+        this.f13641h = new SetPickerPosition(this.f13634a, b2);
         this.f13641h.setPickerTextFace(Typeface.DEFAULT_BOLD);
         this.f13641h.setCoverType(1);
         this.f13641h.mo9431a(this.f13647n, this.f13642i, this.f13643j, a, i, 17, true);
@@ -242,13 +242,13 @@ public class C4039am extends RelativeLayout {
             this.f13644k.setVisibility(4);
             return;
         }
-        C2261g.m9769c("Test", "current.Value:" + a2.f5569c);
+        ImageAppLog.error("Test", "current.Value:" + a2.f5569c);
         if (a2.f5569c.equalsIgnoreCase("vlog_gamma")) {
             a = this.f13646m.mo5182a("menu_item_id_ph_sty_vlog_l");
         } else {
             a = this.f13646m.mo5182a("menu_item_id_ph_sty_" + a2.f5569c);
         }
-        C2261g.m9769c("Test", "current.Option:" + a.f5571e);
+        ImageAppLog.error("Test", "current.Option:" + a.f5571e);
         if (a == null || a.f5571e == null) {
             this.f13644k.setVisibility(4);
             return;

@@ -12,9 +12,9 @@ import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.service.C2210p;
 import com.panasonic.avc.cng.view.common.C2820e;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
 import com.panasonic.avc.cng.view.p073b.C2376f.C2378b;
-import com.panasonic.avc.cng.view.setting.C5537al.C5540a;
+import com.panasonic.avc.cng.view.setting.SettingMenuBaseActivity.C5540a;
 
 public class RegistEquipmentInfoActivity extends C5741i {
 
@@ -74,11 +74,11 @@ public class RegistEquipmentInfoActivity extends C5741i {
             public void mo5071a(int i, int i2) {
                 if (!RegistEquipmentInfoActivity.this.isFinishing()) {
                     if (i != 1) {
-                        C2331d.m10100a((Activity) RegistEquipmentInfoActivity.this);
+                        DialogFactory.m10100a((Activity) RegistEquipmentInfoActivity.this);
                         if (i == 6) {
-                            C2331d.m10114a((Activity) RegistEquipmentInfoActivity.this, C2328a.DIALOG_ID_CONNECT_FAILED, (Bundle) null);
+                            DialogFactory.m10114a((Activity) RegistEquipmentInfoActivity.this, C2328a.DIALOG_ID_CONNECT_FAILED, (Bundle) null);
                         } else if (i == 7) {
-                            C2331d.m10114a((Activity) RegistEquipmentInfoActivity.this, C2328a.DIALOG_ID_PIC_LOGIN_ERROR, (Bundle) null);
+                            DialogFactory.m10114a((Activity) RegistEquipmentInfoActivity.this, C2328a.DIALOG_ID_PIC_LOGIN_ERROR, (Bundle) null);
                         }
                     } else if (i2 == 6) {
                         RegistEquipmentInfoActivity.this.f16509c.mo12253i();
@@ -95,7 +95,7 @@ public class RegistEquipmentInfoActivity extends C5741i {
             /* renamed from: b */
             public void mo5074b(final int i, final int i2) {
                 if (!RegistEquipmentInfoActivity.this.isFinishing()) {
-                    C2331d.m10100a((Activity) RegistEquipmentInfoActivity.this);
+                    DialogFactory.m10100a((Activity) RegistEquipmentInfoActivity.this);
                     RegistEquipmentInfoActivity.this._handler.post(new Runnable() {
                         public void run() {
                             if (i2 == 6) {
@@ -105,7 +105,7 @@ public class RegistEquipmentInfoActivity extends C5741i {
                                 } else if (i == 9) {
                                     RegistEquipmentInfoActivity.this.m20026b();
                                 } else {
-                                    C2331d.m10114a((Activity) RegistEquipmentInfoActivity.this, C2328a.DIALOG_ID_REGIST_AV_FAILED, (Bundle) null);
+                                    DialogFactory.m10114a((Activity) RegistEquipmentInfoActivity.this, C2328a.DIALOG_ID_REGIST_AV_FAILED, (Bundle) null);
                                 }
                             } else if (i2 != 7) {
                             } else {
@@ -114,7 +114,7 @@ public class RegistEquipmentInfoActivity extends C5741i {
                                     RegistEquipmentInfoActivity.this.finish();
                                     return;
                                 }
-                                C2331d.m10114a((Activity) RegistEquipmentInfoActivity.this, C2328a.DIALOG_ID_REGIST_AV_FAILED, (Bundle) null);
+                                DialogFactory.m10114a((Activity) RegistEquipmentInfoActivity.this, C2328a.DIALOG_ID_REGIST_AV_FAILED, (Bundle) null);
                             }
                         }
                     });
@@ -141,7 +141,7 @@ public class RegistEquipmentInfoActivity extends C5741i {
         String format = String.format("%s\n\n%s\n(%s)", new Object[]{getResources().getString(R.string.cmn_msg_already_regist), getResources().getString(R.string.setup_picmate_label_address_number), this.f16511e.getText().toString()});
         Bundle bundle = new Bundle();
         bundle.putString(C2378b.MESSAGE_STRING.name(), format);
-        C2331d.m10114a((Activity) this, C2328a.DIALOG_ID_ALBUM_ALREADY_EXISTS, bundle);
+        DialogFactory.m10114a((Activity) this, C2328a.DIALOG_ID_ALBUM_ALREADY_EXISTS, bundle);
     }
 
     public void onClickRegistEquipmentOk(View view) {
@@ -151,21 +151,21 @@ public class RegistEquipmentInfoActivity extends C5741i {
         if (this.f16509c.mo12255k() < 0) {
             String obj3 = this.f16512f.getText().toString();
             if (obj.length() != this.f16507a) {
-                C2331d.m10114a((Activity) this, C2328a.DIALOG_ID_INVALID_ADDRESS, (Bundle) null);
+                DialogFactory.m10114a((Activity) this, C2328a.DIALOG_ID_INVALID_ADDRESS, (Bundle) null);
             } else if (obj3.length() != this.f16508b) {
-                C2331d.m10114a((Activity) this, C2328a.DIALOG_ID_INVALID_ACCESS, (Bundle) null);
+                DialogFactory.m10114a((Activity) this, C2328a.DIALOG_ID_INVALID_ACCESS, (Bundle) null);
             } else {
                 this.f16509c.mo12061a(false);
-                C2331d.m10114a((Activity) this, C2328a.ON_PROGRESS, (Bundle) null);
+                DialogFactory.m10114a((Activity) this, C2328a.ON_PROGRESS, (Bundle) null);
                 if (this.f16509c != null) {
                     this.f16509c.mo12059a(new C1663m(obj2, obj, obj3, null, false, 0));
                     this.f16509c.mo12055a(6);
                     return;
                 }
-                C2331d.m10114a((Activity) this, C2328a.DIALOG_ID_REGIST_AV_FAILED, (Bundle) null);
+                DialogFactory.m10114a((Activity) this, C2328a.DIALOG_ID_REGIST_AV_FAILED, (Bundle) null);
             }
         } else {
-            C2331d.m10114a((Activity) this, C2328a.ON_PROGRESS, (Bundle) null);
+            DialogFactory.m10114a((Activity) this, C2328a.ON_PROGRESS, (Bundle) null);
             this.f16509c.mo12059a(new C1663m(obj2, obj, this.f16509c.mo12067f().mo4039c(), null, false, 0));
             this.f16509c.mo12055a(7);
         }

@@ -9,10 +9,10 @@ import android.preference.PreferenceManager;
 import com.panasonic.avc.cng.core.dlna.C1699h;
 import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.C1892f;
-import com.panasonic.avc.cng.model.p051c.C1846e;
+import com.panasonic.avc.cng.model.p051c.CameraStatus;
 import com.panasonic.avc.cng.model.service.C2028e;
 import com.panasonic.avc.cng.model.service.C2028e.C2031c;
-import com.panasonic.avc.cng.model.service.C2253z;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
 import com.panasonic.avc.cng.p038a.C1342a;
 
 /* renamed from: com.panasonic.avc.cng.view.setting.d */
@@ -39,8 +39,8 @@ public class C5681d extends C1342a {
         }
 
         /* renamed from: a */
-        public void mo5337a(C1846e eVar) {
-            if (C1846e.m7190a(eVar)) {
+        public void mo5337a(CameraStatus eVar) {
+            if (CameraStatus.m7190a(eVar)) {
                 SharedPreferences defaultSharedPreferences = PreferenceManager.getDefaultSharedPreferences(C5681d.this.f3706a);
                 if (!defaultSharedPreferences.getBoolean("HighTemperature", false)) {
                     String C = eVar.mo4654C();
@@ -70,7 +70,7 @@ public class C5681d extends C1342a {
                     C5681d.this.f17552e = null;
                 }
                 if (C5681d.this.f17553f != null) {
-                    C5681d.this.f17553f.mo11326a(C1846e.m7191b(eVar));
+                    C5681d.this.f17553f.mo11326a(CameraStatus.m7191b(eVar));
                 }
             }
         }
@@ -111,7 +111,7 @@ public class C5681d extends C1342a {
         this.f17553f = bVar;
         this.f17550c = activity;
         if (this.f17553f != null) {
-            this.f17551d = C2253z.m9680a((Context) this.f17550c, true);
+            this.f17551d = ServiceFactory.m9680a((Context) this.f17550c, true);
             this.f17552e = new C5683a();
             if (this.f17551d != null) {
                 this.f17551d.mo5268a((C2031c) this.f17552e);

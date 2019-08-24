@@ -23,8 +23,8 @@ import com.panasonic.avc.cng.view.common.C2820e;
 import com.panasonic.avc.cng.view.p073b.C2317a.C2323a;
 import com.panasonic.avc.cng.view.p073b.C2317a.C2325c;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
-import com.panasonic.avc.cng.view.setting.C5537al.C5540a;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
+import com.panasonic.avc.cng.view.setting.SettingMenuBaseActivity.C5540a;
 
 public class CloudSettingActivity extends C5741i implements C2323a {
 
@@ -78,8 +78,8 @@ public class CloudSettingActivity extends C5741i implements C2323a {
                 public boolean onPreferenceChange(Preference preference, Object obj) {
                     C4912a.this.f15830c = ((Boolean) obj).booleanValue();
                     C4912a.this.f15829b.mo12055a(11);
-                    if (!C2331d.m10125b(C4912a.this.getActivity(), C2328a.ON_PROGRESS)) {
-                        C2331d.m10114a(C4912a.this.getActivity(), C2328a.ON_PROGRESS, (Bundle) null);
+                    if (!DialogFactory.m10125b(C4912a.this.getActivity(), C2328a.ON_PROGRESS)) {
+                        DialogFactory.m10114a(C4912a.this.getActivity(), C2328a.ON_PROGRESS, (Bundle) null);
                     }
                     return false;
                 }
@@ -88,8 +88,8 @@ public class CloudSettingActivity extends C5741i implements C2323a {
                 public boolean onPreferenceChange(Preference preference, Object obj) {
                     if (((Boolean) obj).booleanValue()) {
                         C4912a.this.f15829b.mo12055a(12);
-                        if (!C2331d.m10125b(C4912a.this.getActivity(), C2328a.ON_PROGRESS)) {
-                            C2331d.m10114a(C4912a.this.getActivity(), C2328a.ON_PROGRESS, (Bundle) null);
+                        if (!DialogFactory.m10125b(C4912a.this.getActivity(), C2328a.ON_PROGRESS)) {
+                            DialogFactory.m10114a(C4912a.this.getActivity(), C2328a.ON_PROGRESS, (Bundle) null);
                         }
                         return false;
                     }
@@ -100,8 +100,8 @@ public class CloudSettingActivity extends C5741i implements C2323a {
             getPreferenceScreen().findPreference("CloudConfirmUpdate").setOnPreferenceClickListener(new OnPreferenceClickListener() {
                 public boolean onPreferenceClick(Preference preference) {
                     C4912a.this.f15829b.mo12055a(9);
-                    if (!C2331d.m10125b(C4912a.this.getActivity(), C2328a.ON_PROGRESS)) {
-                        C2331d.m10114a(C4912a.this.getActivity(), C2328a.ON_PROGRESS, (Bundle) null);
+                    if (!DialogFactory.m10125b(C4912a.this.getActivity(), C2328a.ON_PROGRESS)) {
+                        DialogFactory.m10114a(C4912a.this.getActivity(), C2328a.ON_PROGRESS, (Bundle) null);
                     }
                     return false;
                 }
@@ -199,11 +199,11 @@ public class CloudSettingActivity extends C5741i implements C2323a {
                 public void mo5071a(int i, int i2) {
                     if (!C4912a.this.getActivity().isFinishing()) {
                         if (i != 1) {
-                            C2331d.m10100a(C4912a.this.getActivity());
+                            DialogFactory.m10100a(C4912a.this.getActivity());
                             if (i == 6) {
-                                C2331d.m10114a(C4912a.this.getActivity(), C2328a.DIALOG_ID_CONNECT_FAILED, (Bundle) null);
+                                DialogFactory.m10114a(C4912a.this.getActivity(), C2328a.DIALOG_ID_CONNECT_FAILED, (Bundle) null);
                             } else if (i == 7) {
-                                C2331d.m10114a(C4912a.this.getActivity(), C2328a.DIALOG_ID_PIC_LOGIN_ERROR, (Bundle) null);
+                                DialogFactory.m10114a(C4912a.this.getActivity(), C2328a.DIALOG_ID_PIC_LOGIN_ERROR, (Bundle) null);
                             }
                         } else if (i2 == 11) {
                             C4912a.this.f15829b.mo12517a(11, C4912a.this.f15830c);
@@ -219,7 +219,7 @@ public class CloudSettingActivity extends C5741i implements C2323a {
                 public void mo5074b(int i, int i2) {
                     if (!C4912a.this.getActivity().isFinishing()) {
                         if (i2 == 11) {
-                            C2331d.m10100a(C4912a.this.getActivity());
+                            DialogFactory.m10100a(C4912a.this.getActivity());
                             if (i == 1) {
                                 ((CheckBoxPreference) C4912a.this.getPreferenceScreen().findPreference("CloudEnable")).setChecked(C4912a.this.f15830c);
                                 if (!C4912a.this.f15830c) {
@@ -228,36 +228,36 @@ public class CloudSettingActivity extends C5741i implements C2323a {
                                     C4912a.this.m18921g();
                                 }
                             } else {
-                                C2331d.m10114a(C4912a.this.getActivity(), C2328a.DIALOG_ID_GET_EXT_SERVICE_FAILED, (Bundle) null);
+                                DialogFactory.m10114a(C4912a.this.getActivity(), C2328a.DIALOG_ID_GET_EXT_SERVICE_FAILED, (Bundle) null);
                             }
                         } else if (i2 == 12) {
-                            C2331d.m10100a(C4912a.this.getActivity());
+                            DialogFactory.m10100a(C4912a.this.getActivity());
                             if (i == 12) {
-                                C2331d.m10114a(C4912a.this.getActivity(), C2328a.DIALOG_ID_PIC_CLOUD_WARNING, (Bundle) null);
+                                DialogFactory.m10114a(C4912a.this.getActivity(), C2328a.DIALOG_ID_PIC_CLOUD_WARNING, (Bundle) null);
                             } else if (i == 13) {
-                                C2331d.m10114a(C4912a.this.getActivity(), C2328a.DIALOG_ID_PIC_CLOUD_WARNING2, (Bundle) null);
+                                DialogFactory.m10114a(C4912a.this.getActivity(), C2328a.DIALOG_ID_PIC_CLOUD_WARNING2, (Bundle) null);
                                 ((CheckBoxPreference) C4912a.this.getPreferenceScreen().findPreference("CloudAutoSync")).setChecked(true);
                                 C4912a.this.m18921g();
                             } else if (i == 8) {
-                                C2331d.m10114a(C4912a.this.getActivity(), C2328a.DIALOG_ID_GET_EXT_SERVICE_FAILED, (Bundle) null);
+                                DialogFactory.m10114a(C4912a.this.getActivity(), C2328a.DIALOG_ID_GET_EXT_SERVICE_FAILED, (Bundle) null);
                             }
                         } else if (i2 == 9) {
-                            C2331d.m10100a(C4912a.this.getActivity());
+                            DialogFactory.m10100a(C4912a.this.getActivity());
                             if (i == 11) {
-                                C2331d.m10114a(C4912a.this.getActivity(), C2328a.DIALOG_ID_CLOUD_UPDATE, (Bundle) null);
+                                DialogFactory.m10114a(C4912a.this.getActivity(), C2328a.DIALOG_ID_CLOUD_UPDATE, (Bundle) null);
                             } else if (i == 10) {
-                                C2331d.m10114a(C4912a.this.getActivity(), C2328a.DIALOG_ID_CLOUD_NO_UPDATE, (Bundle) null);
+                                DialogFactory.m10114a(C4912a.this.getActivity(), C2328a.DIALOG_ID_CLOUD_NO_UPDATE, (Bundle) null);
                             } else if (i != 1) {
-                                C2331d.m10114a(C4912a.this.getActivity(), C2328a.DIALOG_ID_GET_EXT_SERVICE_FAILED, (Bundle) null);
+                                DialogFactory.m10114a(C4912a.this.getActivity(), C2328a.DIALOG_ID_GET_EXT_SERVICE_FAILED, (Bundle) null);
                             }
                         } else if (i2 == 10) {
-                            C2331d.m10100a(C4912a.this.getActivity());
+                            DialogFactory.m10100a(C4912a.this.getActivity());
                             if (i == 1) {
-                                C2331d.m10114a(C4912a.this.getActivity(), C2328a.DIALOG_ID_START_SYNC_SUCCESS, (Bundle) null);
+                                DialogFactory.m10114a(C4912a.this.getActivity(), C2328a.DIALOG_ID_START_SYNC_SUCCESS, (Bundle) null);
                             } else if (i == -1) {
-                                C2331d.m10114a(C4912a.this.getActivity(), C2328a.ON_BROWSE_ACTION_CANCEL, (Bundle) null);
+                                DialogFactory.m10114a(C4912a.this.getActivity(), C2328a.ON_BROWSE_ACTION_CANCEL, (Bundle) null);
                             } else {
-                                C2331d.m10114a(C4912a.this.getActivity(), C2328a.DIALOG_ID_START_SYNC_FAILED, (Bundle) null);
+                                DialogFactory.m10114a(C4912a.this.getActivity(), C2328a.DIALOG_ID_START_SYNC_FAILED, (Bundle) null);
                             }
                         }
                     }
@@ -380,10 +380,10 @@ public class CloudSettingActivity extends C5741i implements C2323a {
                 }
                 return;
             case DIALOG_ID_CLOUD_UPDATE:
-                C2331d.m10115a((Activity) this, C2328a.DIALOG_ID_CLOUD_START_SYNC, (Bundle) null, (C2325c) new C2325c() {
+                DialogFactory.m10115a((Activity) this, C2328a.DIALOG_ID_CLOUD_START_SYNC, (Bundle) null, (C2325c) new C2325c() {
                     /* renamed from: a */
                     public void mo6131a() {
-                        C2331d.m10129c((Activity) CloudSettingActivity.this, C2328a.DIALOG_ID_CLOUD_START_SYNC, (int) R.id.text, (int) R.string.msg_now_cloud_downloading);
+                        DialogFactory.m10129c((Activity) CloudSettingActivity.this, C2328a.DIALOG_ID_CLOUD_START_SYNC, (int) R.id.text, (int) R.string.msg_now_cloud_downloading);
                     }
                 });
                 if (aVar2 != null) {
@@ -392,7 +392,7 @@ public class CloudSettingActivity extends C5741i implements C2323a {
                 }
                 return;
             case DIALOG_ID_PIC_CLOUD_WARNING2:
-                C2331d.m10114a((Activity) this, C2328a.DIALOG_ID_PIC_CLOUD_WARNING3, (Bundle) null);
+                DialogFactory.m10114a((Activity) this, C2328a.DIALOG_ID_PIC_CLOUD_WARNING3, (Bundle) null);
                 return;
             default:
                 super.onPositiveButtonClick(aVar);
@@ -407,15 +407,15 @@ public class CloudSettingActivity extends C5741i implements C2323a {
     public void onNegativeButtonClick(C2328a aVar) {
         switch (aVar) {
             case DIALOG_ID_START_SYNC_CANCELLING:
-                C2331d.m10115a((Activity) this, C2328a.DIALOG_ID_CLOUD_START_SYNC, (Bundle) null, (C2325c) new C2325c() {
+                DialogFactory.m10115a((Activity) this, C2328a.DIALOG_ID_CLOUD_START_SYNC, (Bundle) null, (C2325c) new C2325c() {
                     /* renamed from: a */
                     public void mo6131a() {
-                        C2331d.m10129c((Activity) CloudSettingActivity.this, C2328a.DIALOG_ID_CLOUD_START_SYNC, (int) R.id.text, (int) R.string.msg_now_cloud_downloading);
+                        DialogFactory.m10129c((Activity) CloudSettingActivity.this, C2328a.DIALOG_ID_CLOUD_START_SYNC, (int) R.id.text, (int) R.string.msg_now_cloud_downloading);
                     }
                 });
                 return;
             case DIALOG_ID_CLOUD_START_SYNC:
-                C2331d.m10114a((Activity) this, C2328a.DIALOG_ID_START_SYNC_CANCELLING, (Bundle) null);
+                DialogFactory.m10114a((Activity) this, C2328a.DIALOG_ID_START_SYNC_CANCELLING, (Bundle) null);
                 return;
             default:
                 super.onNegativeButtonClick(aVar);

@@ -88,7 +88,7 @@
 
     const-string v1, "onCreate"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->verbose(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 23
     :cond_0
@@ -97,9 +97,9 @@
     invoke-virtual {p0, v0}, Lcom/panasonic/avc/cng/view/setting/EasyWiFiPicMateTopActivity;->setContentView(I)V
 
     .line 26
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/EasyWiFiPicMateTopActivity;->a:Lcom/panasonic/avc/cng/view/setting/j;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/EasyWiFiPicMateTopActivity;->a:Lcom/panasonic/avc/cng/view/setting/EasyWiFiManager;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/j;->h()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/EasyWiFiManager;->h()Ljava/lang/String;
 
     move-result-object v1
 

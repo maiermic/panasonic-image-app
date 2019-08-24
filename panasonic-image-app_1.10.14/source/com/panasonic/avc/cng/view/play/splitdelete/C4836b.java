@@ -7,13 +7,13 @@ import android.os.Handler;
 import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.C1833c;
 import com.panasonic.avc.cng.model.C1892f;
-import com.panasonic.avc.cng.model.p051c.C1846e;
+import com.panasonic.avc.cng.model.p051c.CameraStatus;
 import com.panasonic.avc.cng.model.service.C2028e;
-import com.panasonic.avc.cng.model.service.C2253z;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
 import com.panasonic.avc.cng.p038a.C1344c;
 import com.panasonic.avc.cng.view.p072a.C2291c;
-import com.panasonic.avc.cng.view.parts.C4245t;
-import com.panasonic.avc.cng.view.parts.C4245t.C4255e;
+import com.panasonic.avc.cng.view.parts.BrowserViewModel;
+import com.panasonic.avc.cng.view.parts.BrowserViewModel.C4255e;
 import com.panasonic.avc.cng.view.parts.C4262x;
 
 /* renamed from: com.panasonic.avc.cng.view.play.splitdelete.b */
@@ -38,7 +38,7 @@ public class C4836b extends C2291c {
     private C4838a f15707j;
 
     /* renamed from: k */
-    private C4245t f15708k;
+    private BrowserViewModel f15708k;
 
     /* renamed from: l */
     private C4255e f15709l;
@@ -102,16 +102,16 @@ public class C4836b extends C2291c {
 
     /* renamed from: l */
     private void m18777l() {
-        this.f15708k = new C4245t(this.f3706a, this.f3707b, this.f15709l);
+        this.f15708k = new BrowserViewModel(this.f3706a, this.f3707b, this.f15709l);
         this.f15708k.f14244l.mo3216a(Boolean.valueOf(true));
         this.f15710m = -1;
         C1892f a = C1712b.m6919c().mo4896a();
         if (a != null) {
             this.f15702e.mo3216a(a.f5685g);
         }
-        C2028e a2 = C2253z.m9680a(this.f3706a, true);
+        C2028e a2 = ServiceFactory.m9680a(this.f3706a, true);
         if (a2 != null) {
-            C1846e i = a2.mo5285i();
+            CameraStatus i = a2.mo5285i();
             if (i != null) {
                 this.f15711n = i.mo4706n();
             }
@@ -148,7 +148,7 @@ public class C4836b extends C2291c {
     }
 
     /* renamed from: i */
-    public C4245t mo11276i() {
+    public BrowserViewModel mo11276i() {
         return this.f15708k;
     }
 
@@ -188,7 +188,7 @@ public class C4836b extends C2291c {
     }
 
     /* renamed from: a */
-    public void mo6018a(C1846e eVar) {
+    public void mo6018a(CameraStatus eVar) {
         final int a = eVar.mo4678a();
         final int b = eVar.mo4688b();
         mo3207a((Runnable) new Runnable() {

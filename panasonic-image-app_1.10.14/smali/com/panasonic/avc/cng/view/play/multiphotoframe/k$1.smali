@@ -74,29 +74,29 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 81
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/k$1;->a:Lcom/panasonic/avc/cng/view/play/multiphotoframe/k;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/k;->a(Lcom/panasonic/avc/cng/view/play/multiphotoframe/k;)Lcom/panasonic/avc/cng/view/play/multiphotoframe/n;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/k;->a(Lcom/panasonic/avc/cng/view/play/multiphotoframe/k;)Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameSelectPictureViewModel;
 
     move-result-object v0
 
-    invoke-virtual {v0, p3}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/n;->b(I)V
+    invoke-virtual {v0, p3}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameSelectPictureViewModel;->b(I)V
 
     .line 84
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/k$1;->a:Lcom/panasonic/avc/cng/view/play/multiphotoframe/k;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/k;->a(Lcom/panasonic/avc/cng/view/play/multiphotoframe/k;)Lcom/panasonic/avc/cng/view/play/multiphotoframe/n;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/k;->a(Lcom/panasonic/avc/cng/view/play/multiphotoframe/k;)Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameSelectPictureViewModel;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/n;->k()Lcom/panasonic/avc/cng/view/parts/t;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameSelectPictureViewModel;->k()Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
     move-result-object v0
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/parts/t;->e:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->e:Lcom/panasonic/avc/cng/a/c;
 
     invoke-virtual {v0}, Lcom/panasonic/avc/cng/a/c;->b()Ljava/lang/Object;
 

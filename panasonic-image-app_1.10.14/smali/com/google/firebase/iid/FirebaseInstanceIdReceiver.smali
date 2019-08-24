@@ -1,12 +1,12 @@
 .class public final Lcom/google/firebase/iid/FirebaseInstanceIdReceiver;
-.super Landroid/support/v4/content/g;
+.super Landroid/support/v4/content/WakefulBroadcastReceiver;
 
 
 # direct methods
 .method public constructor <init>()V
     .locals 0
 
-    invoke-direct {p0}, Landroid/support/v4/content/g;-><init>()V
+    invoke-direct {p0}, Landroid/support/v4/content/WakefulBroadcastReceiver;-><init>()V
 
     return-void
 .end method

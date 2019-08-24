@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;->x()V
+    value = Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;->x()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,16 +20,16 @@
 # instance fields
 .field final synthetic a:Lcom/panasonic/avc/cng/model/service/b;
 
-.field final synthetic b:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;
+.field final synthetic b:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;
 
 
 # direct methods
-.method constructor <init>(Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;Lcom/panasonic/avc/cng/model/service/b;)V
+.method constructor <init>(Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;Lcom/panasonic/avc/cng/model/service/b;)V
     .locals 0
 
     .prologue
     .line 1014
-    iput-object p1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$5;->b:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$5;->b:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;
 
     iput-object p2, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$5;->a:Lcom/panasonic/avc/cng/model/service/b;
 
@@ -53,9 +53,9 @@
 
     .prologue
     .line 1074
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$5;->b:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$5;->b:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;->q(Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;->q(Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;)Landroid/os/Handler;
 
     move-result-object v0
 
@@ -67,9 +67,9 @@
 
     .line 1080
     :cond_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$5;->b:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$5;->b:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;->s(Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;->s(Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;)Landroid/os/Handler;
 
     move-result-object v0
 
@@ -87,9 +87,9 @@
 
     .prologue
     .line 1020
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$5;->b:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$5;->b:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;->o(Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;->o(Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;)Landroid/os/Handler;
 
     move-result-object v0
 
@@ -101,9 +101,9 @@
 
     .line 1026
     :cond_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$5;->b:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$5;->b:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;->p(Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;->p(Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;)Landroid/os/Handler;
 
     move-result-object v0
 

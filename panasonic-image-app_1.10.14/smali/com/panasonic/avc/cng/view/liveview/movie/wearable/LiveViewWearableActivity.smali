@@ -1,5 +1,5 @@
 .class public Lcom/panasonic/avc/cng/view/liveview/movie/wearable/LiveViewWearableActivity;
-.super Lcom/panasonic/avc/cng/view/liveview/movie/wearable/a;
+.super Lcom/panasonic/avc/cng/view/liveview/movie/wearable/LiveViewWearableBaseActivity;
 .source "SourceFile"
 
 
@@ -9,7 +9,7 @@
 
     .prologue
     .line 19
-    invoke-direct {p0}, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/a;-><init>()V
+    invoke-direct {p0}, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/LiveViewWearableBaseActivity;-><init>()V
 
     return-void
 .end method
@@ -30,7 +30,7 @@
     invoke-static {p0}, Lcom/panasonic/avc/cng/model/b;->a(Landroid/app/Activity;)V
 
     .line 31
-    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/a;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/LiveViewWearableBaseActivity;->onCreate(Landroid/os/Bundle;)V
 
     .line 34
     invoke-static {p0}, Landroid/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
@@ -88,11 +88,11 @@
     invoke-virtual {p0, v3, v2, p1}, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/LiveViewWearableActivity;->a(IZLandroid/os/Bundle;)V
 
     .line 55
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v1
 

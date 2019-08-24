@@ -45,7 +45,7 @@
 
     iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity$4;->a:Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a(Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;)Lcom/panasonic/avc/cng/view/geotag/b;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a(Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;)Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
     move-result-object v0
 
@@ -56,11 +56,11 @@
 
     iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity$4;->a:Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a(Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;)Lcom/panasonic/avc/cng/view/geotag/b;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a(Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;)Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/geotag/b;->h()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->h()V
 
     .line 1171
     :cond_0

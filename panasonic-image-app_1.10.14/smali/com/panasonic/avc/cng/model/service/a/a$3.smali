@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/model/service/a/a;->g()V
+    value = Lcom/panasonic/avc/cng/model/service/a/BrowseMenuService;->g()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/panasonic/avc/cng/model/service/a/a;
+.field final synthetic a:Lcom/panasonic/avc/cng/model/service/a/BrowseMenuService;
 
 
 # direct methods
-.method constructor <init>(Lcom/panasonic/avc/cng/model/service/a/a;)V
+.method constructor <init>(Lcom/panasonic/avc/cng/model/service/a/BrowseMenuService;)V
     .locals 0
 
     .prologue
     .line 394
-    iput-object p1, p0, Lcom/panasonic/avc/cng/model/service/a/a$3;->a:Lcom/panasonic/avc/cng/model/service/a/a;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/model/service/a/a$3;->a:Lcom/panasonic/avc/cng/model/service/a/BrowseMenuService;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -41,18 +41,18 @@
 
     .prologue
     .line 398
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/a/a$3;->a:Lcom/panasonic/avc/cng/model/service/a/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/a/a$3;->a:Lcom/panasonic/avc/cng/model/service/a/BrowseMenuService;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/a/a;->a(Lcom/panasonic/avc/cng/model/service/a/a;)Lcom/panasonic/avc/cng/model/service/j$b;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/a/BrowseMenuService;->a(Lcom/panasonic/avc/cng/model/service/a/BrowseMenuService;)Lcom/panasonic/avc/cng/model/service/j$b;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 400
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/a/a$3;->a:Lcom/panasonic/avc/cng/model/service/a/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/a/a$3;->a:Lcom/panasonic/avc/cng/model/service/a/BrowseMenuService;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/a/a;->a(Lcom/panasonic/avc/cng/model/service/a/a;)Lcom/panasonic/avc/cng/model/service/j$b;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/a/BrowseMenuService;->a(Lcom/panasonic/avc/cng/model/service/a/BrowseMenuService;)Lcom/panasonic/avc/cng/model/service/j$b;
 
     move-result-object v0
 

@@ -53,7 +53,7 @@
     .line 753
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity$b;->a:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->a(Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;)Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->a(Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;)Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;
 
     move-result-object v0
 
@@ -62,11 +62,11 @@
     .line 755
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity$b;->a:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->a(Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;)Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->a(Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;)Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;
 
     move-result-object v0
 
-    invoke-virtual {v0, p3}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;->b(I)V
+    invoke-virtual {v0, p3}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;->b(I)V
 
     .line 757
     :cond_0
@@ -80,7 +80,7 @@
     .line 768
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity$b;->a:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->a(Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;)Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->a(Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;)Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;
 
     move-result-object v0
 
@@ -89,11 +89,11 @@
     .line 770
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity$b;->a:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->a(Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;)Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->a(Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;)Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;
 
     move-result-object v0
 
-    invoke-virtual {v0, p3}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;->b(I)V
+    invoke-virtual {v0, p3}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;->b(I)V
 
     .line 772
     :cond_0
@@ -107,7 +107,7 @@
     .line 777
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity$b;->a:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->a(Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;)Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->a(Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;)Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;
 
     move-result-object v0
 
@@ -116,11 +116,11 @@
     .line 779
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity$b;->a:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->a(Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;)Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->a(Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;)Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;->r()Z
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;->r()Z
 
     move-result v0
 
@@ -134,11 +134,11 @@
     :cond_0
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity$b;->a:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->a(Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;)Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->a(Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;)Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;
 
     move-result-object v0
 
-    invoke-virtual {v0, p3}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;->b(I)V
+    invoke-virtual {v0, p3}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;->b(I)V
 
     .line 788
     :cond_1

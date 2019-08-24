@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/panasonic/avc/cng/model/service/k/c;
+    value = Lcom/panasonic/avc/cng/model/service/k/VianaSetup;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

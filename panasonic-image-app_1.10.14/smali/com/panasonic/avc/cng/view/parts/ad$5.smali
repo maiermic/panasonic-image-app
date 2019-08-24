@@ -63,13 +63,13 @@
     .line 841
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad$5;->b:Lcom/panasonic/avc/cng/view/parts/ad;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/parts/ad;->d(Lcom/panasonic/avc/cng/view/parts/ad;)Lcom/panasonic/avc/cng/view/parts/ab;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/parts/ad;->d(Lcom/panasonic/avc/cng/view/parts/ad;)Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
     move-result-object v0
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/parts/ab;->setUserTouch(Z)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;->setUserTouch(Z)V
 
     .line 843
     :cond_0

@@ -52,28 +52,28 @@
     .line 105
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/a$1;->a:Lcom/panasonic/avc/cng/view/play/highlight/a;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/highlight/a;->a(Lcom/panasonic/avc/cng/view/play/highlight/a;)Lcom/panasonic/avc/cng/view/play/highlight/b;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/highlight/a;->a(Lcom/panasonic/avc/cng/view/play/highlight/a;)Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/highlight/b;->h()Lcom/panasonic/avc/cng/view/parts/t;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;->h()Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
     move-result-object v0
 
-    invoke-virtual {v0, p3}, Lcom/panasonic/avc/cng/view/parts/t;->g(I)Z
+    invoke-virtual {v0, p3}, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->g(I)Z
 
     .line 108
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/a$1;->a:Lcom/panasonic/avc/cng/view/play/highlight/a;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/highlight/a;->a(Lcom/panasonic/avc/cng/view/play/highlight/a;)Lcom/panasonic/avc/cng/view/play/highlight/b;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/highlight/a;->a(Lcom/panasonic/avc/cng/view/play/highlight/a;)Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/highlight/b;->h()Lcom/panasonic/avc/cng/view/parts/t;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;->h()Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
     move-result-object v0
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/parts/t;->e:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->e:Lcom/panasonic/avc/cng/a/c;
 
     invoke-virtual {v0}, Lcom/panasonic/avc/cng/a/c;->b()Ljava/lang/Object;
 

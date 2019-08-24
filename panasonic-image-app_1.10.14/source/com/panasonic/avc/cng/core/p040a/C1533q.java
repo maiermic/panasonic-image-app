@@ -1,6 +1,6 @@
 package com.panasonic.avc.cng.core.p040a;
 
-import com.panasonic.avc.cng.model.p051c.C1853h;
+import com.panasonic.avc.cng.model.p051c.ParseTagHighlightSceneInfo;
 
 /* renamed from: com.panasonic.avc.cng.core.a.q */
 public interface C1533q {
@@ -14,7 +14,7 @@ public interface C1533q {
     void mo3780a(C1473at atVar);
 
     /* renamed from: a */
-    void mo3781a(C1853h hVar);
+    void mo3781a(ParseTagHighlightSceneInfo hVar);
 
     /* renamed from: b */
     void mo3782b();

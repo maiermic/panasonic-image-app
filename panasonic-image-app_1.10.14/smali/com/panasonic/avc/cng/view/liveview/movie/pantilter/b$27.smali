@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b;->a(ZZ)V
+    value = Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/LiveViewMoviePantilterBaseViewModel;->a(ZZ)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -24,16 +24,16 @@
 
 .field final synthetic c:Z
 
-.field final synthetic d:Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b;
+.field final synthetic d:Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/LiveViewMoviePantilterBaseViewModel;
 
 
 # direct methods
-.method constructor <init>(Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b;Lcom/panasonic/avc/cng/core/a/d;ZZ)V
+.method constructor <init>(Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/LiveViewMoviePantilterBaseViewModel;Lcom/panasonic/avc/cng/core/a/d;ZZ)V
     .locals 0
 
     .prologue
     .line 5103
-    iput-object p1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b$27;->d:Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b$27;->d:Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/LiveViewMoviePantilterBaseViewModel;
 
     iput-object p2, p0, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b$27;->a:Lcom/panasonic/avc/cng/core/a/d;
 
@@ -68,18 +68,18 @@
     move-result-object v0
 
     .line 5109
-    iget-object v2, p0, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b$27;->d:Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b$27;->d:Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/LiveViewMoviePantilterBaseViewModel;
 
-    invoke-static {v2}, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b;->g(Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b;)Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b$a;
+    invoke-static {v2}, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/LiveViewMoviePantilterBaseViewModel;->g(Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/LiveViewMoviePantilterBaseViewModel;)Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b$a;
 
     move-result-object v2
 
     if-eqz v2, :cond_0
 
     .line 5111
-    iget-object v2, p0, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b$27;->d:Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b$27;->d:Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/LiveViewMoviePantilterBaseViewModel;
 
-    invoke-static {v2}, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b;->g(Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b;)Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b$a;
+    invoke-static {v2}, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/LiveViewMoviePantilterBaseViewModel;->g(Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/LiveViewMoviePantilterBaseViewModel;)Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b$a;
 
     move-result-object v2
 

@@ -6,7 +6,7 @@ import android.content.Context;
 import android.content.Intent;
 import com.panasonic.avc.cng.application.ImageAppLauncher;
 import com.panasonic.avc.cng.model.service.C2081h;
-import com.panasonic.avc.cng.model.service.C2253z;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
 import com.panasonic.avc.cng.util.C2264j;
 import com.panasonic.avc.cng.util.DebugLogProvider;
 import com.panasonic.avc.cng.view.common.C2820e;
@@ -23,7 +23,7 @@ public class C1712b {
     private static C1913o f5051b = null;
 
     /* renamed from: c */
-    private static C1893g f5052c = null;
+    private static DeviceManager f5052c = null;
 
     /* renamed from: d */
     private static C1895i f5053d = null;
@@ -43,12 +43,12 @@ public class C1712b {
         f5054e = null;
         C2820e.m11776a();
         f5055f = context.getApplicationContext();
-        C2253z.m9684a();
+        ServiceFactory.m9684a();
     }
 
     /* renamed from: a */
     public static void m6913a() {
-        C2253z.m9692b();
+        ServiceFactory.m9692b();
         f5051b = null;
         f5052c = null;
         f5053d = null;
@@ -60,9 +60,9 @@ public class C1712b {
     public static void m6914a(Activity activity) {
         if (f5055f == null) {
             m6916a((Context) activity);
-            C2253z.m9688b((Context) activity, true);
+            ServiceFactory.m9688b((Context) activity, true);
             if (activity.getApplicationContext().getSharedPreferences("com.panasonic.avc.cng.imageapp.privatekey", 0).getBoolean("GeotagLogRecording", false)) {
-                C2081h d = C2253z.m9698d(activity, null);
+                C2081h d = ServiceFactory.m9698d(activity, null);
                 if (d != null) {
                     d.mo5436n();
                 }
@@ -82,9 +82,9 @@ public class C1712b {
     }
 
     /* renamed from: c */
-    public static C1893g m6919c() {
+    public static DeviceManager m6919c() {
         if (f5052c == null) {
-            f5052c = new C1893g();
+            f5052c = new DeviceManager();
         }
         return f5052c;
     }

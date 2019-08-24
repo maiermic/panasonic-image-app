@@ -12,7 +12,7 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    sget v0, Lcom/google/android/gms/common/w;->b:I
+    sget v0, Lcom/google/android/gms/common/GooglePlayServicesUtil;->b:I
 
     sput v0, Lcom/google/android/gms/common/m;->b:I
 
@@ -183,11 +183,11 @@
 .method public a(Landroid/content/Context;)I
     .locals 2
 
-    invoke-static {p1}, Lcom/google/android/gms/common/w;->b(Landroid/content/Context;)I
+    invoke-static {p1}, Lcom/google/android/gms/common/GooglePlayServicesUtil;->b(Landroid/content/Context;)I
 
     move-result v0
 
-    invoke-static {p1, v0}, Lcom/google/android/gms/common/w;->b(Landroid/content/Context;I)Z
+    invoke-static {p1, v0}, Lcom/google/android/gms/common/GooglePlayServicesUtil;->b(Landroid/content/Context;I)Z
 
     move-result v1
 
@@ -238,7 +238,7 @@
 .method public a(I)Z
     .locals 1
 
-    invoke-static {p1}, Lcom/google/android/gms/common/w;->b(I)Z
+    invoke-static {p1}, Lcom/google/android/gms/common/GooglePlayServicesUtil;->b(I)Z
 
     move-result v0
 
@@ -248,7 +248,7 @@
 .method public b(I)Ljava/lang/String;
     .locals 1
 
-    invoke-static {p1}, Lcom/google/android/gms/common/w;->a(I)Ljava/lang/String;
+    invoke-static {p1}, Lcom/google/android/gms/common/GooglePlayServicesUtil;->a(I)Ljava/lang/String;
 
     move-result-object v0
 

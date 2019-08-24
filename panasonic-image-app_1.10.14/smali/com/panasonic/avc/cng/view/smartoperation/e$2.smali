@@ -49,11 +49,11 @@
     const/4 v1, 0x1
 
     .line 1194
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
@@ -67,12 +67,12 @@
 
     .line 1201
     :cond_1
-    invoke-static {}, Lcom/panasonic/avc/cng/model/service/z;->f()Lcom/panasonic/avc/cng/model/service/a;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->f()Lcom/panasonic/avc/cng/model/service/a;
 
     move-result-object v3
 
     .line 1203
-    instance-of v4, v3, Lcom/panasonic/avc/cng/model/service/a/c;
+    instance-of v4, v3, Lcom/panasonic/avc/cng/model/service/a/BrowserServiceCamera;
 
     if-eqz v4, :cond_0
 

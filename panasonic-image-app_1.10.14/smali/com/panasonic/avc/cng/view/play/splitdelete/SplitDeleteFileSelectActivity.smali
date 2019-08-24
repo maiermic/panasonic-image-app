@@ -55,52 +55,52 @@
     return-object v0
 .end method
 
-.method static synthetic b(Lcom/panasonic/avc/cng/view/play/splitdelete/SplitDeleteFileSelectActivity;)Lcom/panasonic/avc/cng/view/a/d;
+.method static synthetic b(Lcom/panasonic/avc/cng/view/play/splitdelete/SplitDeleteFileSelectActivity;)Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
     .locals 1
 
     .prologue
     .line 24
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/SplitDeleteFileSelectActivity;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/SplitDeleteFileSelectActivity;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
     return-object v0
 .end method
 
-.method static synthetic c(Lcom/panasonic/avc/cng/view/play/splitdelete/SplitDeleteFileSelectActivity;)Lcom/panasonic/avc/cng/view/a/d;
+.method static synthetic c(Lcom/panasonic/avc/cng/view/play/splitdelete/SplitDeleteFileSelectActivity;)Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
     .locals 1
 
     .prologue
     .line 24
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/SplitDeleteFileSelectActivity;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/SplitDeleteFileSelectActivity;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
     return-object v0
 .end method
 
-.method static synthetic d(Lcom/panasonic/avc/cng/view/play/splitdelete/SplitDeleteFileSelectActivity;)Lcom/panasonic/avc/cng/view/a/d;
+.method static synthetic d(Lcom/panasonic/avc/cng/view/play/splitdelete/SplitDeleteFileSelectActivity;)Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
     .locals 1
 
     .prologue
     .line 24
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/SplitDeleteFileSelectActivity;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/SplitDeleteFileSelectActivity;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
     return-object v0
 .end method
 
-.method static synthetic e(Lcom/panasonic/avc/cng/view/play/splitdelete/SplitDeleteFileSelectActivity;)Lcom/panasonic/avc/cng/view/a/d;
+.method static synthetic e(Lcom/panasonic/avc/cng/view/play/splitdelete/SplitDeleteFileSelectActivity;)Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
     .locals 1
 
     .prologue
     .line 24
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/SplitDeleteFileSelectActivity;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/SplitDeleteFileSelectActivity;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
     return-object v0
 .end method
 
-.method static synthetic f(Lcom/panasonic/avc/cng/view/play/splitdelete/SplitDeleteFileSelectActivity;)Lcom/panasonic/avc/cng/view/a/d;
+.method static synthetic f(Lcom/panasonic/avc/cng/view/play/splitdelete/SplitDeleteFileSelectActivity;)Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
     .locals 1
 
     .prologue
     .line 24
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/SplitDeleteFileSelectActivity;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/SplitDeleteFileSelectActivity;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
     return-object v0
 .end method
@@ -188,7 +188,7 @@
 
     .prologue
     .line 181
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/SplitDeleteFileSelectActivity;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/SplitDeleteFileSelectActivity;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
     .line 182
     invoke-virtual {p0}, Lcom/panasonic/avc/cng/view/play/splitdelete/SplitDeleteFileSelectActivity;->GetViewModel()Lcom/panasonic/avc/cng/view/a/c;
@@ -202,7 +202,7 @@
     const/4 v2, 0x1
 
     .line 181
-    invoke-virtual {v0, p3, v1, v2}, Lcom/panasonic/avc/cng/view/a/d;->a(Landroid/content/Intent;Landroid/os/Bundle;Z)Z
+    invoke-virtual {v0, p3, v1, v2}, Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;->a(Landroid/content/Intent;Landroid/os/Bundle;Z)Z
 
     move-result v0
 
@@ -242,7 +242,7 @@
 
     const-string v2, "onActivityResult() => OnSplitDeleteResult()"
 
-    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 203
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/SplitDeleteFileSelectActivity;->e:Lcom/panasonic/avc/cng/view/play/splitdelete/SplitDeleteFileSelectActivity$b;

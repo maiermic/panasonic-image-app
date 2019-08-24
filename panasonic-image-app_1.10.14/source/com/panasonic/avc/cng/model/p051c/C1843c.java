@@ -1,6 +1,6 @@
 package com.panasonic.avc.cng.model.p051c;
 
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import java.util.HashMap;
 import java.util.Map;
 import org.xmlpull.v1.XmlPullParser;
@@ -26,7 +26,7 @@ public class C1843c {
                 next = xmlPullParser.next();
             }
         } catch (Exception e) {
-            C2261g.m9769c("ParseTagUnknown", e.getMessage());
+            ImageAppLog.error("ParseTagUnknown", e.getMessage());
         }
     }
 
@@ -50,7 +50,7 @@ public class C1843c {
                         str2 = xmlPullParser.getText();
                     } catch (Exception e2) {
                         e = e2;
-                        C2261g.m9769c("ParseTagResult", e.getMessage());
+                        ImageAppLog.error("ParseTagResult", e.getMessage());
                         return str;
                     }
                 } else {
@@ -65,7 +65,7 @@ public class C1843c {
                     Exception exc = e3;
                     str = str2;
                     e = exc;
-                    C2261g.m9769c("ParseTagResult", e.getMessage());
+                    ImageAppLog.error("ParseTagResult", e.getMessage());
                     return str;
                 }
             }
@@ -97,7 +97,7 @@ public class C1843c {
                         str2 = xmlPullParser.getText();
                     } catch (Exception e2) {
                         e = e2;
-                        C2261g.m9769c("ParseTagSimpleText", e.getMessage());
+                        ImageAppLog.error("ParseTagSimpleText", e.getMessage());
                         return str;
                     }
                 } else {
@@ -112,7 +112,7 @@ public class C1843c {
                     Exception exc = e3;
                     str = str2;
                     e = exc;
-                    C2261g.m9769c("ParseTagSimpleText", e.getMessage());
+                    ImageAppLog.error("ParseTagSimpleText", e.getMessage());
                     return str;
                 }
             }
@@ -148,7 +148,7 @@ public class C1843c {
                 next = xmlPullParser.next();
             }
         } catch (Exception e) {
-            C2261g.m9769c("ParseTagMenuSet", e.getMessage());
+            ImageAppLog.error("ParseTagMenuSet", e.getMessage());
         }
     }
 
@@ -182,7 +182,7 @@ public class C1843c {
                 next = xmlPullParser.next();
             }
         } catch (Exception e) {
-            C2261g.m9769c("ParseTagLanguage", e.getMessage());
+            ImageAppLog.error("ParseTagLanguage", e.getMessage());
         }
     }
 
@@ -197,7 +197,7 @@ public class C1843c {
                 str2 = xmlPullParser.getAttributeValue(null, "id");
                 i++;
             } catch (Exception e) {
-                C2261g.m9769c("ParseTagLanguage", e.getMessage());
+                ImageAppLog.error("ParseTagLanguage", e.getMessage());
             }
         }
         int next = xmlPullParser.next();
@@ -216,7 +216,7 @@ public class C1843c {
             this.f5366b.put(str2, str);
             return;
         }
-        C2261g.m9769c("ParseTagLanguage", String.format("ID(%s) is null resource", new Object[]{str2}));
+        ImageAppLog.error("ParseTagLanguage", String.format("ID(%s) is null resource", new Object[]{str2}));
     }
 
     /* access modifiers changed from: protected */
@@ -239,7 +239,7 @@ public class C1843c {
                         str2 = xmlPullParser.getText();
                     } catch (Exception e2) {
                         e = e2;
-                        C2261g.m9769c("ParseTagProtoVer", e.getMessage());
+                        ImageAppLog.error("ParseTagProtoVer", e.getMessage());
                         return str;
                     }
                 } else {
@@ -254,7 +254,7 @@ public class C1843c {
                     Exception exc = e3;
                     str = str2;
                     e = exc;
-                    C2261g.m9769c("ParseTagProtoVer", e.getMessage());
+                    ImageAppLog.error("ParseTagProtoVer", e.getMessage());
                     return str;
                 }
             }

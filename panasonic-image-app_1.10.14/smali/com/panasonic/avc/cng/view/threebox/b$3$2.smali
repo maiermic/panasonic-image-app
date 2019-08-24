@@ -43,27 +43,27 @@
     .line 165
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/b$3$2;->a:Lcom/panasonic/avc/cng/view/threebox/b$3;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/threebox/b$3;->a:Lcom/panasonic/avc/cng/view/threebox/b;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/threebox/b$3;->a:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxSeekBarView;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/threebox/b;->d(Lcom/panasonic/avc/cng/view/threebox/b;)Landroid/widget/TextView;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxSeekBarView;->d(Lcom/panasonic/avc/cng/view/threebox/ThreeBoxSeekBarView;)Landroid/widget/TextView;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/threebox/b$3$2;->a:Lcom/panasonic/avc/cng/view/threebox/b$3;
 
-    iget-object v1, v1, Lcom/panasonic/avc/cng/view/threebox/b$3;->a:Lcom/panasonic/avc/cng/view/threebox/b;
+    iget-object v1, v1, Lcom/panasonic/avc/cng/view/threebox/b$3;->a:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxSeekBarView;
 
     iget-object v2, p0, Lcom/panasonic/avc/cng/view/threebox/b$3$2;->a:Lcom/panasonic/avc/cng/view/threebox/b$3;
 
-    iget-object v2, v2, Lcom/panasonic/avc/cng/view/threebox/b$3;->a:Lcom/panasonic/avc/cng/view/threebox/b;
+    iget-object v2, v2, Lcom/panasonic/avc/cng/view/threebox/b$3;->a:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxSeekBarView;
 
-    invoke-static {v2}, Lcom/panasonic/avc/cng/view/threebox/b;->c(Lcom/panasonic/avc/cng/view/threebox/b;)I
+    invoke-static {v2}, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxSeekBarView;->c(Lcom/panasonic/avc/cng/view/threebox/ThreeBoxSeekBarView;)I
 
     move-result v2
 
     const/4 v3, 0x1
 
-    invoke-static {v1, v2, v3}, Lcom/panasonic/avc/cng/view/threebox/b;->a(Lcom/panasonic/avc/cng/view/threebox/b;IZ)Ljava/lang/String;
+    invoke-static {v1, v2, v3}, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxSeekBarView;->a(Lcom/panasonic/avc/cng/view/threebox/ThreeBoxSeekBarView;IZ)Ljava/lang/String;
 
     move-result-object v1
 

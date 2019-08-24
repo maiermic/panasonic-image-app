@@ -12,13 +12,13 @@ import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.C1897j.C1905h;
 import com.panasonic.avc.cng.model.C1897j.C1906i;
-import com.panasonic.avc.cng.model.p051c.C1846e;
+import com.panasonic.avc.cng.model.p051c.CameraStatus;
 import com.panasonic.avc.cng.model.service.C2028e;
-import com.panasonic.avc.cng.model.service.C2253z;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.util.C2274o;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -43,9 +43,9 @@ public class LiveViewMovieCheckRangeActivity extends C3476a {
             this._binder.mo8261b(this, this._viewModel);
         }
         if (this._viewModel != null) {
-            C2028e a = C2253z.m9680a((Context) null, false);
+            C2028e a = ServiceFactory.m9680a((Context) null, false);
             if (a != null) {
-                C1846e i = a.mo5285i();
+                CameraStatus i = a.mo5285i();
                 if (i != null && !C2274o.m9889M(i.mo4656E())) {
                     this._viewModel.mo8381K();
                 }
@@ -53,7 +53,7 @@ public class LiveViewMovieCheckRangeActivity extends C3476a {
                 return;
             }
         }
-        C2331d.m10114a((Activity) this, C2328a.ON_PROGRESS, (Bundle) null);
+        DialogFactory.m10114a((Activity) this, C2328a.ON_PROGRESS, (Bundle) null);
         this._handler.post(new Runnable() {
             public void run() {
                 TextView textView = (TextView) LiveViewMovieCheckRangeActivity.this.findViewById(R.id.liveViewMessage);
@@ -65,9 +65,9 @@ public class LiveViewMovieCheckRangeActivity extends C3476a {
         this.f11122a = new Timer();
         this.f11122a.schedule(new TimerTask() {
             public void run() {
-                C2028e a = C2253z.m9680a((Context) null, false);
+                C2028e a = ServiceFactory.m9680a((Context) null, false);
                 if (a != null) {
-                    C1846e i = a.mo5285i();
+                    CameraStatus i = a.mo5285i();
                     if (LiveViewMovieCheckRangeActivity.this._viewModel != null && i != null) {
                         if (!C2274o.m9890N(i.mo4656E()) && !C2274o.m9889M(i.mo4656E()) && LiveViewMovieCheckRangeActivity.this.f11123b.booleanValue()) {
                             LiveViewMovieCheckRangeActivity.this.f11122a.cancel();
@@ -78,8 +78,8 @@ public class LiveViewMovieCheckRangeActivity extends C3476a {
                                 }
                             });
                         } else if (LiveViewMovieCheckRangeActivity.this.f11123b.booleanValue() && C2274o.m9889M(i.mo4656E())) {
-                            if (C2331d.m10125b((Activity) LiveViewMovieCheckRangeActivity.this, C2328a.ON_PROGRESS)) {
-                                C2331d.m10100a((Activity) LiveViewMovieCheckRangeActivity.this);
+                            if (DialogFactory.m10125b((Activity) LiveViewMovieCheckRangeActivity.this, C2328a.ON_PROGRESS)) {
+                                DialogFactory.m10100a((Activity) LiveViewMovieCheckRangeActivity.this);
                             }
                             LiveViewMovieCheckRangeActivity.this._handler.post(new Runnable() {
                                 public void run() {
@@ -103,7 +103,7 @@ public class LiveViewMovieCheckRangeActivity extends C3476a {
             this.f11122a.cancel();
             this.f11122a = null;
         }
-        C2331d.m10100a((Activity) this);
+        DialogFactory.m10100a((Activity) this);
         super.onPause();
     }
 
@@ -133,18 +133,18 @@ public class LiveViewMovieCheckRangeActivity extends C3476a {
     }
 
     public void OnClickSetup(View view) {
-        C2261g.m9760a(3149828, "");
-        C2331d.m10114a((Activity) this, C2328a.ON_PANTILTER_CANNOT_CHANGE_PLAY, (Bundle) null);
+        ImageAppLog.m9760a(3149828, "");
+        DialogFactory.m10114a((Activity) this, C2328a.ON_PANTILTER_CANNOT_CHANGE_PLAY, (Bundle) null);
     }
 
     public void OnClickBrowser(View view) {
-        C2261g.m9760a(3149827, "");
-        C2331d.m10114a((Activity) this, C2328a.ON_PANTILTER_CANNOT_CHANGE_PLAY, (Bundle) null);
+        ImageAppLog.m9760a(3149827, "");
+        DialogFactory.m10114a((Activity) this, C2328a.ON_PANTILTER_CANNOT_CHANGE_PLAY, (Bundle) null);
     }
 
     public void OnClickHome(View view) {
-        C2261g.m9760a(3149825, "");
-        C2331d.m10114a((Activity) this, C2328a.ON_PANTILTER_CANNOT_CHANGE_PLAY, (Bundle) null);
+        ImageAppLog.m9760a(3149825, "");
+        DialogFactory.m10114a((Activity) this, C2328a.ON_PANTILTER_CANNOT_CHANGE_PLAY, (Bundle) null);
     }
 
     /* access modifiers changed from: protected */
@@ -155,7 +155,7 @@ public class LiveViewMovieCheckRangeActivity extends C3476a {
     }
 
     /* access modifiers changed from: protected */
-    public void onGetStatusNotify(C1846e eVar) {
+    public void onGetStatusNotify(CameraStatus eVar) {
     }
 
     /* access modifiers changed from: protected */

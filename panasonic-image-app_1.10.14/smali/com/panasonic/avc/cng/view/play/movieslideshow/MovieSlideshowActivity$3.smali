@@ -43,7 +43,7 @@
     .line 908
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowActivity$3;->a:Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowActivity;->g(Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowActivity;)Lcom/panasonic/avc/cng/view/play/movieslideshow/c;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowActivity;->g(Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowActivity;)Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowViewModel;
 
     move-result-object v0
 
@@ -51,11 +51,11 @@
 
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowActivity$3;->a:Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowActivity;->g(Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowActivity;)Lcom/panasonic/avc/cng/view/play/movieslideshow/c;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowActivity;->g(Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowActivity;)Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowViewModel;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/movieslideshow/c;->h()Lcom/panasonic/avc/cng/view/parts/t;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowViewModel;->h()Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
     move-result-object v0
 
@@ -64,24 +64,24 @@
     .line 910
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowActivity$3;->a:Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowActivity;->g(Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowActivity;)Lcom/panasonic/avc/cng/view/play/movieslideshow/c;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowActivity;->g(Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowActivity;)Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowViewModel;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/movieslideshow/c;->h()Lcom/panasonic/avc/cng/view/parts/t;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowViewModel;->h()Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/parts/t;->l()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->l()V
 
     .line 911
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowActivity$3;->a:Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowActivity;->g(Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowActivity;)Lcom/panasonic/avc/cng/view/play/movieslideshow/c;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowActivity;->g(Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowActivity;)Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowViewModel;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/movieslideshow/c;->j()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowViewModel;->j()V
 
     .line 913
     :cond_0

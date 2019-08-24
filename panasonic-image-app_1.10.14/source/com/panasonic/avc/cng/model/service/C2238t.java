@@ -2,7 +2,7 @@ package com.panasonic.avc.cng.model.service;
 
 import android.content.Context;
 import com.panasonic.avc.cng.model.C1892f;
-import com.panasonic.avc.cng.model.p051c.C1846e;
+import com.panasonic.avc.cng.model.p051c.CameraStatus;
 
 /* renamed from: com.panasonic.avc.cng.model.service.t */
 public interface C2238t {
@@ -60,7 +60,7 @@ public interface C2238t {
     int mo5793e();
 
     /* renamed from: f */
-    C1846e mo5794f();
+    CameraStatus mo5794f();
 
     /* renamed from: g */
     int mo5795g();

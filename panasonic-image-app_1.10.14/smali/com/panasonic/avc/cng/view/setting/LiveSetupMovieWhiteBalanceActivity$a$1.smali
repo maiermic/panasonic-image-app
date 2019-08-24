@@ -49,7 +49,7 @@
 
     iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceActivity$a;->a:Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceActivity;->b(Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceActivity;)Lcom/panasonic/avc/cng/view/setting/y;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceActivity;->b(Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceActivity;)Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceViewModel;
 
     move-result-object v0
 
@@ -161,11 +161,11 @@
 
     iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceActivity$a;->a:Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceActivity;->b(Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceActivity;)Lcom/panasonic/avc/cng/view/setting/y;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceActivity;->b(Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceActivity;)Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceViewModel;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/y;->E()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceViewModel;->E()Ljava/lang/String;
 
     move-result-object v0
 
@@ -180,11 +180,11 @@
 
     iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceActivity$a;->a:Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceActivity;->b(Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceActivity;)Lcom/panasonic/avc/cng/view/setting/y;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceActivity;->b(Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceActivity;)Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceViewModel;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/y;->E()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceViewModel;->E()Ljava/lang/String;
 
     move-result-object v0
 

@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/application/b;->GetNfcResultListener()Lcom/panasonic/avc/cng/model/service/o$a;
+    value = Lcom/panasonic/avc/cng/application/NfcSupportActivity;->GetNfcResultListener()Lcom/panasonic/avc/cng/model/service/o$a;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/panasonic/avc/cng/application/b;
+.field final synthetic a:Lcom/panasonic/avc/cng/application/NfcSupportActivity;
 
 
 # direct methods
-.method constructor <init>(Lcom/panasonic/avc/cng/application/b;)V
+.method constructor <init>(Lcom/panasonic/avc/cng/application/NfcSupportActivity;)V
     .locals 0
 
     .prologue
     .line 287
-    iput-object p1, p0, Lcom/panasonic/avc/cng/application/b$1;->a:Lcom/panasonic/avc/cng/application/b;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/application/b$1;->a:Lcom/panasonic/avc/cng/application/NfcSupportActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -47,21 +47,21 @@
 
     const-string v1, "SetNfcProcessFlg"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 317
-    iget-object v0, p0, Lcom/panasonic/avc/cng/application/b$1;->a:Lcom/panasonic/avc/cng/application/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/application/b$1;->a:Lcom/panasonic/avc/cng/application/NfcSupportActivity;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/application/b;->_nfcViewModel:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/application/NfcSupportActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
-    invoke-virtual {v0, v2, v2}, Lcom/panasonic/avc/cng/application/c;->a(ZZ)V
+    invoke-virtual {v0, v2, v2}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->a(ZZ)V
 
     .line 319
     const-string v0, "\u2605ImageAppActivity"
 
     const-string v1, "NFC OnFailed"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 320
     return-void
@@ -80,9 +80,9 @@
 
     .prologue
     .line 349
-    iget-object v0, p0, Lcom/panasonic/avc/cng/application/b$1;->a:Lcom/panasonic/avc/cng/application/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/application/b$1;->a:Lcom/panasonic/avc/cng/application/NfcSupportActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/application/b;->access$100(Lcom/panasonic/avc/cng/application/b;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/application/NfcSupportActivity;->access$100(Lcom/panasonic/avc/cng/application/NfcSupportActivity;)Landroid/os/Handler;
 
     move-result-object v0
 
@@ -94,9 +94,9 @@
 
     .line 354
     :cond_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/application/b$1;->a:Lcom/panasonic/avc/cng/application/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/application/b$1;->a:Lcom/panasonic/avc/cng/application/NfcSupportActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/application/b;->access$300(Lcom/panasonic/avc/cng/application/b;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/application/NfcSupportActivity;->access$300(Lcom/panasonic/avc/cng/application/NfcSupportActivity;)Landroid/os/Handler;
 
     move-result-object v0
 
@@ -118,7 +118,7 @@
 
     const-string v1, ""
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 409
     return-void
@@ -129,28 +129,28 @@
 
     .prologue
     .line 293
-    iget-object v0, p0, Lcom/panasonic/avc/cng/application/b$1;->a:Lcom/panasonic/avc/cng/application/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/application/b$1;->a:Lcom/panasonic/avc/cng/application/NfcSupportActivity;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/application/b;->_nfcViewModel:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/application/NfcSupportActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
-    invoke-virtual {v0, p2}, Lcom/panasonic/avc/cng/application/c;->e(Ljava/lang/String;)V
+    invoke-virtual {v0, p2}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->e(Ljava/lang/String;)V
 
     .line 296
-    iget-object v0, p0, Lcom/panasonic/avc/cng/application/b$1;->a:Lcom/panasonic/avc/cng/application/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/application/b$1;->a:Lcom/panasonic/avc/cng/application/NfcSupportActivity;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/application/b;->_nfcViewModel:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/application/NfcSupportActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
-    invoke-virtual {v0, p1}, Lcom/panasonic/avc/cng/application/c;->d(Ljava/lang/String;)V
+    invoke-virtual {v0, p1}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->d(Ljava/lang/String;)V
 
     .line 298
     if-nez p4, :cond_0
 
     .line 301
-    iget-object v0, p0, Lcom/panasonic/avc/cng/application/b$1;->a:Lcom/panasonic/avc/cng/application/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/application/b$1;->a:Lcom/panasonic/avc/cng/application/NfcSupportActivity;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/application/b;->_nfcViewModel:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/application/NfcSupportActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
-    invoke-virtual {v0, p2}, Lcom/panasonic/avc/cng/application/c;->b(Ljava/lang/String;)V
+    invoke-virtual {v0, p2}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->b(Ljava/lang/String;)V
 
     .line 308
     :goto_0
@@ -158,11 +158,11 @@
 
     .line 306
     :cond_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/application/b$1;->a:Lcom/panasonic/avc/cng/application/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/application/b$1;->a:Lcom/panasonic/avc/cng/application/NfcSupportActivity;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/application/b;->_nfcViewModel:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/application/NfcSupportActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
-    invoke-virtual {v0, p2, p3}, Lcom/panasonic/avc/cng/application/c;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, p2, p3}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 .end method
@@ -186,21 +186,21 @@
 
     const-string v1, "SetNfcProcessFlg"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 327
-    iget-object v0, p0, Lcom/panasonic/avc/cng/application/b$1;->a:Lcom/panasonic/avc/cng/application/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/application/b$1;->a:Lcom/panasonic/avc/cng/application/NfcSupportActivity;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/application/b;->_nfcViewModel:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/application/NfcSupportActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
-    invoke-virtual {v0, v2, v2}, Lcom/panasonic/avc/cng/application/c;->a(ZZ)V
+    invoke-virtual {v0, v2, v2}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->a(ZZ)V
 
     .line 329
     const-string v0, "\u2605ImageAppActivity"
 
     const-string v1, "NFC OnFailed"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 331
     return-void

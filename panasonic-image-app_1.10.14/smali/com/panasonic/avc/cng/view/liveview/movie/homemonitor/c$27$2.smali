@@ -181,7 +181,7 @@
 
     iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c$27;->b:Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c;->h:Lcom/panasonic/avc/cng/model/c/e;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c;->h:Lcom/panasonic/avc/cng/model/c/CameraStatus;
 
     if-eqz v0, :cond_1
 
@@ -194,9 +194,9 @@
 
     iget-object v1, v1, Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c$27;->b:Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c;
 
-    iget-object v1, v1, Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c;->h:Lcom/panasonic/avc/cng/model/c/e;
+    iget-object v1, v1, Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c;->h:Lcom/panasonic/avc/cng/model/c/CameraStatus;
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c;->a(Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c;Lcom/panasonic/avc/cng/model/c/e;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c;->a(Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c;Lcom/panasonic/avc/cng/model/c/CameraStatus;)V
 
     .line 2519
     :cond_1

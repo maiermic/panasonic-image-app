@@ -14,7 +14,7 @@
 # instance fields
 .field private g:Lcom/panasonic/avc/cng/view/parts/ah;
 
-.field private h:Lcom/panasonic/avc/cng/view/setting/w;
+.field private h:Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSViewModel;
 
 .field private i:Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSActivity$a;
 
@@ -35,7 +35,7 @@
     iput-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSActivity;->g:Lcom/panasonic/avc/cng/view/parts/ah;
 
     .line 37
-    iput-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSActivity;->h:Lcom/panasonic/avc/cng/view/setting/w;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSActivity;->h:Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSViewModel;
 
     .line 40
     const/4 v0, 0x0
@@ -45,12 +45,12 @@
     return-void
 .end method
 
-.method static synthetic a(Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSActivity;)Lcom/panasonic/avc/cng/view/setting/w;
+.method static synthetic a(Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSActivity;)Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSViewModel;
     .locals 1
 
     .prologue
     .line 34
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSActivity;->h:Lcom/panasonic/avc/cng/view/setting/w;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSActivity;->h:Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSViewModel;
 
     return-object v0
 .end method
@@ -70,35 +70,35 @@
 
     .prologue
     .line 176
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSActivity;->h:Lcom/panasonic/avc/cng/view/setting/w;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSActivity;->h:Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/w;->F()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSViewModel;->F()V
 
     .line 177
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSActivity;->h:Lcom/panasonic/avc/cng/view/setting/w;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSActivity;->h:Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/w;->G()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSViewModel;->G()V
 
     .line 178
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSActivity;->h:Lcom/panasonic/avc/cng/view/setting/w;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSActivity;->h:Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/w;->D()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSViewModel;->D()V
 
     .line 179
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSActivity;->h:Lcom/panasonic/avc/cng/view/setting/w;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSActivity;->h:Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/w;->E()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSViewModel;->E()V
 
     .line 182
     new-instance v0, Lcom/panasonic/avc/cng/view/parts/ah;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSActivity;->_context:Landroid/content/Context;
 
-    iget-object v2, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSActivity;->h:Lcom/panasonic/avc/cng/view/setting/w;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSActivity;->h:Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSViewModel;
 
     iget-object v3, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSActivity;->_handler:Landroid/os/Handler;
 
-    invoke-direct {v0, v1, p0, v2, v3}, Lcom/panasonic/avc/cng/view/parts/ah;-><init>(Landroid/content/Context;Landroid/app/Activity;Lcom/panasonic/avc/cng/view/setting/w;Landroid/os/Handler;)V
+    invoke-direct {v0, v1, p0, v2, v3}, Lcom/panasonic/avc/cng/view/parts/ah;-><init>(Landroid/content/Context;Landroid/app/Activity;Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSViewModel;Landroid/os/Handler;)V
 
     iput-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSActivity;->g:Lcom/panasonic/avc/cng/view/parts/ah;
 
@@ -142,14 +142,14 @@
 
     .prologue
     .line 110
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSActivity;->h:Lcom/panasonic/avc/cng/view/setting/w;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSActivity;->h:Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSViewModel;
 
     if-eqz v0, :cond_0
 
     .line 112
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSActivity;->h:Lcom/panasonic/avc/cng/view/setting/w;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSActivity;->h:Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/w;->d()Landroid/os/Bundle;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSViewModel;->d()Landroid/os/Bundle;
 
     move-result-object v0
 
@@ -165,9 +165,9 @@
     invoke-direct {v0}, Landroid/content/Intent;-><init>()V
 
     .line 114
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSActivity;->h:Lcom/panasonic/avc/cng/view/setting/w;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSActivity;->h:Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSViewModel;
 
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/setting/w;->d()Landroid/os/Bundle;
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSViewModel;->d()Landroid/os/Bundle;
 
     move-result-object v1
 
@@ -185,19 +185,19 @@
     invoke-static {v0}, Lcom/panasonic/avc/cng/view/a/j;->b(Ljava/lang/String;)V
 
     .line 123
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSActivity;->h:Lcom/panasonic/avc/cng/view/setting/w;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSActivity;->h:Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSViewModel;
 
     if-eqz v0, :cond_1
 
     .line 125
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSActivity;->h:Lcom/panasonic/avc/cng/view/setting/w;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSActivity;->h:Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/w;->a()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSViewModel;->a()V
 
     .line 126
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSActivity;->h:Lcom/panasonic/avc/cng/view/setting/w;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSActivity;->h:Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSViewModel;
 
     .line 128
     :cond_1
@@ -209,18 +209,18 @@
 
     .prologue
     .line 149
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
     .line 150
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSActivity;->_context:Landroid/content/Context;
 
-    invoke-static {v1, v0}, Lcom/panasonic/avc/cng/model/service/z;->a(Landroid/content/Context;Lcom/panasonic/avc/cng/model/f;)Lcom/panasonic/avc/cng/model/service/b;
+    invoke-static {v1, v0}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->a(Landroid/content/Context;Lcom/panasonic/avc/cng/model/f;)Lcom/panasonic/avc/cng/model/service/b;
 
     move-result-object v1
 
@@ -256,9 +256,9 @@
 
     .line 166
     :goto_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSActivity;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSActivity;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
-    invoke-virtual {v0, p3}, Lcom/panasonic/avc/cng/view/a/d;->d(Landroid/content/Intent;)Z
+    invoke-virtual {v0, p3}, Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;->d(Landroid/content/Intent;)Z
 
     move-result v0
 
@@ -340,9 +340,9 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/panasonic/avc/cng/view/setting/w;
+    check-cast v0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSViewModel;
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSActivity;->h:Lcom/panasonic/avc/cng/view/setting/w;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSActivity;->h:Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSViewModel;
 
     .line 64
     new-instance v0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSActivity$a;
@@ -354,12 +354,12 @@
     iput-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSActivity;->i:Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSActivity$a;
 
     .line 65
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSActivity;->h:Lcom/panasonic/avc/cng/view/setting/w;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSActivity;->h:Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSViewModel;
 
     if-nez v0, :cond_0
 
     .line 68
-    new-instance v0, Lcom/panasonic/avc/cng/view/setting/w;
+    new-instance v0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSViewModel;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSActivity;->_context:Landroid/content/Context;
 
@@ -367,12 +367,12 @@
 
     iget-object v3, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSActivity;->i:Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSActivity$a;
 
-    invoke-direct {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/setting/w;-><init>(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/setting/w$b;)V
+    invoke-direct {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSViewModel;-><init>(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/setting/w$b;)V
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSActivity;->h:Lcom/panasonic/avc/cng/view/setting/w;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSActivity;->h:Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSViewModel;
 
     .line 69
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSActivity;->h:Lcom/panasonic/avc/cng/view/setting/w;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSActivity;->h:Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSViewModel;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSActivity;->_context:Landroid/content/Context;
 
@@ -380,12 +380,12 @@
 
     iget-object v3, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSActivity;->i:Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSActivity$a;
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/setting/w;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/setting/w$b;)V
+    invoke-virtual {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSViewModel;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/setting/w$b;)V
 
     .line 72
     const-string v0, "LiveSetupMovieFandSSViewModel"
 
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSActivity;->h:Lcom/panasonic/avc/cng/view/setting/w;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSActivity;->h:Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSViewModel;
 
     invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/a/j;->a(Ljava/lang/String;Lcom/panasonic/avc/cng/view/a/c;)V
 
@@ -398,7 +398,7 @@
 
     .line 76
     :cond_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSActivity;->h:Lcom/panasonic/avc/cng/view/setting/w;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSActivity;->h:Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSViewModel;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSActivity;->_context:Landroid/content/Context;
 
@@ -406,7 +406,7 @@
 
     iget-object v3, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSActivity;->i:Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSActivity$a;
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/setting/w;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/setting/w$b;)V
+    invoke-virtual {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSViewModel;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/setting/w$b;)V
 
     goto :goto_0
 .end method

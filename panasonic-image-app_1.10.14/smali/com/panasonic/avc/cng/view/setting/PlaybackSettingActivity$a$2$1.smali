@@ -45,7 +45,7 @@
 
     iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/PlaybackSettingActivity$a$2;->b:Lcom/panasonic/avc/cng/view/setting/PlaybackSettingActivity$a;
 
-    new-instance v1, Lcom/panasonic/avc/cng/core/a/v;
+    new-instance v1, Lcom/panasonic/avc/cng/core/a/MenuCommand;
 
     iget-object v2, p0, Lcom/panasonic/avc/cng/view/setting/PlaybackSettingActivity$a$2$1;->a:Lcom/panasonic/avc/cng/view/setting/PlaybackSettingActivity$a$2;
 
@@ -53,9 +53,9 @@
 
     iget-object v2, v2, Lcom/panasonic/avc/cng/model/f;->d:Ljava/lang/String;
 
-    invoke-direct {v1, v2}, Lcom/panasonic/avc/cng/core/a/v;-><init>(Ljava/lang/String;)V
+    invoke-direct {v1, v2}, Lcom/panasonic/avc/cng/core/a/MenuCommand;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/core/a/v;->a()Ljava/lang/String;
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/core/a/MenuCommand;->a()Ljava/lang/String;
 
     move-result-object v1
 

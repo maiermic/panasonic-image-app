@@ -8,10 +8,10 @@ import android.view.View;
 import com.panasonic.avc.cng.application.C1347a;
 import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.C1712b;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.view.cameraconnect.GuidanceMenuActivity;
 import com.panasonic.avc.cng.view.liveview.LiveViewNoConnectionActivity;
-import com.panasonic.avc.cng.view.liveview.movie.vertical.C3804b.C3822a;
+import com.panasonic.avc.cng.view.liveview.movie.vertical.LiveViewVerticalViewModel.C3822a;
 import com.panasonic.avc.cng.view.liveview.p075a.C2939a;
 import com.panasonic.avc.cng.view.p072a.C2291c;
 import com.panasonic.avc.cng.view.p072a.C2308e;
@@ -19,12 +19,12 @@ import com.panasonic.avc.cng.view.p072a.C2311f;
 import com.panasonic.avc.cng.view.p072a.C2311f.C2312a;
 import com.panasonic.avc.cng.view.p072a.C2316j;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
 
 public class LiveViewVerticalActivity extends C2939a {
 
     /* renamed from: a */
-    protected C3804b f12433a;
+    protected LiveViewVerticalViewModel f12433a;
 
     /* renamed from: b */
     protected C3801a f12434b;
@@ -43,24 +43,24 @@ public class LiveViewVerticalActivity extends C2939a {
         /* renamed from: a */
         public void mo8956a(int i) {
             if (i == 1) {
-                C2331d.m10114a((Activity) LiveViewVerticalActivity.this, C2328a.ON_ERROR_REMAIN_ZERO, (Bundle) null);
+                DialogFactory.m10114a((Activity) LiveViewVerticalActivity.this, C2328a.ON_ERROR_REMAIN_ZERO, (Bundle) null);
             } else if (i == 2) {
-                C2331d.m10114a((Activity) LiveViewVerticalActivity.this, C2328a.ON_ERROR_SD_LOCK_MOVIE, (Bundle) null);
+                DialogFactory.m10114a((Activity) LiveViewVerticalActivity.this, C2328a.ON_ERROR_SD_LOCK_MOVIE, (Bundle) null);
             } else if (i != 4 && i == 3) {
-                C2331d.m10114a((Activity) LiveViewVerticalActivity.this, C2328a.ON_ERROR_MOVIE_RECORD_FAIL, (Bundle) null);
+                DialogFactory.m10114a((Activity) LiveViewVerticalActivity.this, C2328a.ON_ERROR_MOVIE_RECORD_FAIL, (Bundle) null);
             }
         }
 
         /* renamed from: b */
         public void mo8959b(int i) {
             if (i == 1) {
-                C2331d.m10114a((Activity) LiveViewVerticalActivity.this, C2328a.ON_ERROR_REMAIN_ZERO, (Bundle) null);
+                DialogFactory.m10114a((Activity) LiveViewVerticalActivity.this, C2328a.ON_ERROR_REMAIN_ZERO, (Bundle) null);
             } else if (i == 2) {
-                C2331d.m10114a((Activity) LiveViewVerticalActivity.this, C2328a.ON_ERROR_SD_LOCK_PICTURE, (Bundle) null);
+                DialogFactory.m10114a((Activity) LiveViewVerticalActivity.this, C2328a.ON_ERROR_SD_LOCK_PICTURE, (Bundle) null);
             } else if (i == 4) {
             } else {
                 if (i == 3 || i == 0) {
-                    C2331d.m10114a((Activity) LiveViewVerticalActivity.this, C2328a.ON_ERROR_PIC_CAPTURE_FAIL, (Bundle) null);
+                    DialogFactory.m10114a((Activity) LiveViewVerticalActivity.this, C2328a.ON_ERROR_PIC_CAPTURE_FAIL, (Bundle) null);
                 }
             }
         }
@@ -68,19 +68,19 @@ public class LiveViewVerticalActivity extends C2939a {
         /* renamed from: a */
         public void mo8957a(int i, int i2) {
             if (i == 2) {
-                C2331d.m10114a((Activity) LiveViewVerticalActivity.this, C2328a.ON_ERROR_SD_UNSET_MOVIE, (Bundle) null);
+                DialogFactory.m10114a((Activity) LiveViewVerticalActivity.this, C2328a.ON_ERROR_SD_UNSET_MOVIE, (Bundle) null);
             } else if (i == 3) {
-                C2331d.m10114a((Activity) LiveViewVerticalActivity.this, C2328a.ON_ERROR_SD_LOCK_MOVIE, (Bundle) null);
+                DialogFactory.m10114a((Activity) LiveViewVerticalActivity.this, C2328a.ON_ERROR_SD_LOCK_MOVIE, (Bundle) null);
             } else if (i == 4) {
-                C2331d.m10114a((Activity) LiveViewVerticalActivity.this, C2328a.ON_ERROR_SD_REPAIRED_MOVIE, (Bundle) null);
+                DialogFactory.m10114a((Activity) LiveViewVerticalActivity.this, C2328a.ON_ERROR_SD_REPAIRED_MOVIE, (Bundle) null);
             } else if (i2 == 2) {
-                C2331d.m10114a((Activity) LiveViewVerticalActivity.this, C2328a.ON_ERROR_SD_UNSET_PICTURE, (Bundle) null);
+                DialogFactory.m10114a((Activity) LiveViewVerticalActivity.this, C2328a.ON_ERROR_SD_UNSET_PICTURE, (Bundle) null);
             } else if (i2 == 3) {
-                C2331d.m10114a((Activity) LiveViewVerticalActivity.this, C2328a.ON_ERROR_SD_LOCK_PICTURE, (Bundle) null);
+                DialogFactory.m10114a((Activity) LiveViewVerticalActivity.this, C2328a.ON_ERROR_SD_LOCK_PICTURE, (Bundle) null);
             } else if (i2 == 4) {
-                C2331d.m10114a((Activity) LiveViewVerticalActivity.this, C2328a.ON_ERROR_SD_REPAIRED_PICTURE, (Bundle) null);
+                DialogFactory.m10114a((Activity) LiveViewVerticalActivity.this, C2328a.ON_ERROR_SD_REPAIRED_PICTURE, (Bundle) null);
             } else if (i == 1 && i2 == 1) {
-                C2331d.m10100a((Activity) LiveViewVerticalActivity.this);
+                DialogFactory.m10100a((Activity) LiveViewVerticalActivity.this);
             }
         }
 
@@ -88,7 +88,7 @@ public class LiveViewVerticalActivity extends C2939a {
         public void mo8955a() {
             LiveViewVerticalActivity.this._handler.post(new Runnable() {
                 public void run() {
-                    C2331d.m10114a((Activity) LiveViewVerticalActivity.this, C2328a.ON_PROGRESS, (Bundle) null);
+                    DialogFactory.m10114a((Activity) LiveViewVerticalActivity.this, C2328a.ON_PROGRESS, (Bundle) null);
                 }
             });
         }
@@ -97,7 +97,7 @@ public class LiveViewVerticalActivity extends C2939a {
         public void mo8958b() {
             LiveViewVerticalActivity.this._handler.post(new Runnable() {
                 public void run() {
-                    C2331d.m10100a((Activity) LiveViewVerticalActivity.this);
+                    DialogFactory.m10100a((Activity) LiveViewVerticalActivity.this);
                 }
             });
         }
@@ -106,8 +106,8 @@ public class LiveViewVerticalActivity extends C2939a {
         public void mo8960c() {
             LiveViewVerticalActivity.this._handler.post(new Runnable() {
                 public void run() {
-                    C2331d.m10100a((Activity) LiveViewVerticalActivity.this);
-                    C2331d.m10114a((Activity) LiveViewVerticalActivity.this, C2328a.ON_DISCONNECT_FINISH, (Bundle) null);
+                    DialogFactory.m10100a((Activity) LiveViewVerticalActivity.this);
+                    DialogFactory.m10114a((Activity) LiveViewVerticalActivity.this, C2328a.ON_DISCONNECT_FINISH, (Bundle) null);
                 }
             });
         }
@@ -132,10 +132,10 @@ public class LiveViewVerticalActivity extends C2939a {
         /* renamed from: d */
         private boolean m15175d() {
             if (LiveViewVerticalActivity.this.f12433a.mo8975k()) {
-                C2331d.m10114a((Activity) LiveViewVerticalActivity.this, C2328a.ON_ERROR_NOW_MOVIE_RECORDING, (Bundle) null);
+                DialogFactory.m10114a((Activity) LiveViewVerticalActivity.this, C2328a.ON_ERROR_NOW_MOVIE_RECORDING, (Bundle) null);
                 return false;
             } else if (LiveViewVerticalActivity.this.f12433a.mo8976l() || LiveViewVerticalActivity.this.f12433a.mo8977m()) {
-                C2331d.m10114a((Activity) LiveViewVerticalActivity.this, C2328a.ON_ERROR_NOW_PIC_CAPTURE, (Bundle) null);
+                DialogFactory.m10114a((Activity) LiveViewVerticalActivity.this, C2328a.ON_ERROR_NOW_PIC_CAPTURE, (Bundle) null);
                 return false;
             } else if (LiveViewVerticalActivity.this.f12433a.mo8978n()) {
                 return true;
@@ -165,9 +165,9 @@ public class LiveViewVerticalActivity extends C2939a {
         this._context = this;
         this._handler = new Handler();
         this.f12435c = new C3796a();
-        this.f12433a = (C3804b) C2316j.m10030a("LiveViewVerticalViewModel");
+        this.f12433a = (LiveViewVerticalViewModel) C2316j.m10030a("LiveViewVerticalViewModel");
         if (this.f12433a == null) {
-            this.f12433a = new C3804b(this._context, this._handler);
+            this.f12433a = new LiveViewVerticalViewModel(this._context, this._handler);
             this.f12433a.mo8967a(this._context, this._handler, this.f12435c);
             C2316j.m10032a("LiveViewVerticalViewModel", this.f12433a);
         } else {
@@ -231,7 +231,7 @@ public class LiveViewVerticalActivity extends C2939a {
     /* access modifiers changed from: protected */
     public boolean IsEnableOptionMenu() {
         if (this.f12433a.mo8976l()) {
-            C2331d.m10114a((Activity) this, C2328a.ON_ERROR_NOW_PIC_CAPTURE, (Bundle) null);
+            DialogFactory.m10114a((Activity) this, C2328a.ON_ERROR_NOW_PIC_CAPTURE, (Bundle) null);
             return false;
         } else if (this.f12433a.mo8971g()) {
             return super.IsEnableOptionMenu();
@@ -248,14 +248,14 @@ public class LiveViewVerticalActivity extends C2939a {
     }
 
     public void OnClickShutter(View view) {
-        C2261g.m9760a(3158018, "");
+        ImageAppLog.m9760a(3158018, "");
         if (this.f12433a != null) {
             this.f12433a.mo8973i();
         }
     }
 
     public void OnClickRec(View view) {
-        C2261g.m9760a(3158017, "");
+        ImageAppLog.m9760a(3158017, "");
         if (this.f12433a != null) {
             this.f12433a.mo8974j();
         }

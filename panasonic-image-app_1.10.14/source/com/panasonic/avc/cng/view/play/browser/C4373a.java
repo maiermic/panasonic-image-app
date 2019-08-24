@@ -26,7 +26,7 @@ import android.widget.PopupWindow.OnDismissListener;
 import com.panasonic.avc.cng.core.dlna.C1699h;
 import com.panasonic.avc.cng.core.p040a.C1501d;
 import com.panasonic.avc.cng.core.p046c.C1663m;
-import com.panasonic.avc.cng.core.p046c.C1671s;
+import com.panasonic.avc.cng.core.p046c.Picmate;
 import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.C1833c;
@@ -37,9 +37,9 @@ import com.panasonic.avc.cng.model.p050b.C1715a;
 import com.panasonic.avc.cng.model.p050b.C1715a.C1728a;
 import com.panasonic.avc.cng.model.p050b.C1729b;
 import com.panasonic.avc.cng.model.p050b.C1729b.C1742a;
-import com.panasonic.avc.cng.model.p050b.C1743c;
-import com.panasonic.avc.cng.model.p050b.C1743c.C1756a;
-import com.panasonic.avc.cng.model.p050b.C1743c.C1757b;
+import com.panasonic.avc.cng.model.p050b.ContentsCopyViewModel;
+import com.panasonic.avc.cng.model.p050b.ContentsCopyViewModel.C1756a;
+import com.panasonic.avc.cng.model.p050b.ContentsCopyViewModel.C1757b;
 import com.panasonic.avc.cng.model.p050b.C1758d;
 import com.panasonic.avc.cng.model.p050b.C1758d.C1764a;
 import com.panasonic.avc.cng.model.p050b.C1765e;
@@ -48,26 +48,26 @@ import com.panasonic.avc.cng.model.p050b.C1814f;
 import com.panasonic.avc.cng.model.p050b.C1814f.C1827a;
 import com.panasonic.avc.cng.model.p050b.C1828g;
 import com.panasonic.avc.cng.model.p050b.C1829h;
-import com.panasonic.avc.cng.model.p051c.C1846e;
+import com.panasonic.avc.cng.model.p051c.CameraStatus;
 import com.panasonic.avc.cng.model.service.C2028e;
 import com.panasonic.avc.cng.model.service.C2210p;
-import com.panasonic.avc.cng.model.service.C2253z;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
 import com.panasonic.avc.cng.model.service.p056c.C2020c;
 import com.panasonic.avc.cng.p038a.C1342a;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.util.C2266l;
 import com.panasonic.avc.cng.view.common.C2820e;
 import com.panasonic.avc.cng.view.p073b.C2317a.C2325c;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
 import com.panasonic.avc.cng.view.p073b.C2337e;
 import com.panasonic.avc.cng.view.p073b.C2376f.C2378b;
 import com.panasonic.avc.cng.view.parts.C4087b;
-import com.panasonic.avc.cng.view.parts.C4088ba;
-import com.panasonic.avc.cng.view.parts.C4245t;
+import com.panasonic.avc.cng.view.parts.QuickAction;
+import com.panasonic.avc.cng.view.parts.BrowserViewModel;
 import com.panasonic.avc.cng.view.parts.C4262x;
 import com.panasonic.avc.cng.view.smartoperation.C5942h;
-import com.panasonic.avc.cng.view.smartoperation.C5956i;
+import com.panasonic.avc.cng.view.smartoperation.PictureJumpViewModel;
 import com.panasonic.avc.cng.view.smartoperation.PicmateSendActivity.C5872b;
 import com.panasonic.avc.cng.view.smartoperation.PictureJumpActivity;
 import java.util.ArrayList;
@@ -118,10 +118,10 @@ public class C4373a extends C1342a {
     /* access modifiers changed from: private */
 
     /* renamed from: K */
-    public C4088ba f14455K = null;
+    public QuickAction f14455K = null;
 
     /* renamed from: L */
-    private C4245t f14456L = null;
+    private BrowserViewModel f14456L = null;
 
     /* renamed from: M */
     private String f14457M = null;
@@ -280,7 +280,7 @@ public class C4373a extends C1342a {
     /* access modifiers changed from: private */
 
     /* renamed from: z */
-    public C1743c f14492z = null;
+    public ContentsCopyViewModel f14492z = null;
 
     /* renamed from: com.panasonic.avc.cng.view.play.browser.a$a */
     public interface C4402a {
@@ -322,7 +322,7 @@ public class C4373a extends C1342a {
 
         /* renamed from: a */
         public void mo5071a(int i, int i2) {
-            C2261g.m9771e(C4373a.f14444c, String.format(Locale.US, "onResponseConnectionVM(%d, %d)", new Object[]{Integer.valueOf(i), Integer.valueOf(i2)}));
+            ImageAppLog.info(C4373a.f14444c, String.format(Locale.US, "onResponseConnectionVM(%d, %d)", new Object[]{Integer.valueOf(i), Integer.valueOf(i2)}));
             if (i == 1) {
                 if (i2 == 4) {
                     C4373a.this.f14473g.mo4602g();
@@ -344,7 +344,7 @@ public class C4373a extends C1342a {
 
         /* renamed from: b */
         public void mo5074b(int i, int i2) {
-            C2261g.m9771e(C4373a.f14444c, String.format(Locale.US, "onResponseVM(%d, %d)", new Object[]{Integer.valueOf(i), Integer.valueOf(i2)}));
+            ImageAppLog.info(C4373a.f14444c, String.format(Locale.US, "onResponseVM(%d, %d)", new Object[]{Integer.valueOf(i), Integer.valueOf(i2)}));
             if (i2 != 4) {
                 return;
             }
@@ -366,17 +366,17 @@ public class C4373a extends C1342a {
 
         /* renamed from: a */
         public void mo5072a(boolean z) {
-            C2261g.m9771e(C4373a.f14444c, String.format("onResponseSyncAccountCheck(%s)", new Object[]{String.valueOf(z)}));
+            ImageAppLog.info(C4373a.f14444c, String.format("onResponseSyncAccountCheck(%s)", new Object[]{String.valueOf(z)}));
         }
 
         /* renamed from: b */
         public void mo5075b(boolean z) {
-            C2261g.m9771e(C4373a.f14444c, String.format("onResponseSyncAccountWrite(%s)", new Object[]{String.valueOf(z)}));
+            ImageAppLog.info(C4373a.f14444c, String.format("onResponseSyncAccountWrite(%s)", new Object[]{String.valueOf(z)}));
         }
 
         /* renamed from: a */
         public void mo5073a(boolean z, String str, String str2) {
-            C2261g.m9771e(C4373a.f14444c, String.format("onResponseSyncAccountCheckV2(%s, %s, %s)", new Object[]{String.valueOf(z), str, str2}));
+            ImageAppLog.info(C4373a.f14444c, String.format("onResponseSyncAccountCheckV2(%s, %s, %s)", new Object[]{String.valueOf(z), str, str2}));
         }
     }
 
@@ -648,11 +648,11 @@ public class C4373a extends C1342a {
                 }
             }
         }
-        mo10232a(false, (C4245t) null);
+        mo10232a(false, (BrowserViewModel) null);
     }
 
     /* renamed from: a */
-    public void mo10232a(boolean z, C4245t tVar) {
+    public void mo10232a(boolean z, BrowserViewModel tVar) {
         int i;
         boolean z2;
         boolean z3;
@@ -816,12 +816,12 @@ public class C4373a extends C1342a {
     }
 
     /* renamed from: a */
-    public void mo10223a(View view, C4245t tVar) {
+    public void mo10223a(View view, BrowserViewModel tVar) {
         this.f14457M = null;
         this.f14456L = tVar;
         this.f14489w = this.f14456L.mo9983q();
         if (mo10246c(this.f14489w)) {
-            C2331d.m10114a((Activity) this.f14470d, C2328a.ON_BROWSE_ACTION_ERROR_GROUP, (Bundle) null);
+            DialogFactory.m10114a((Activity) this.f14470d, C2328a.ON_BROWSE_ACTION_ERROR_GROUP, (Bundle) null);
         } else {
             mo10261l();
         }
@@ -837,20 +837,20 @@ public class C4373a extends C1342a {
         }
         this.f14489w.add(xVar);
         if (mo10246c(this.f14489w)) {
-            C2331d.m10114a((Activity) this.f14470d, C2328a.ON_BROWSE_ACTION_ERROR_GROUP, (Bundle) null);
+            DialogFactory.m10114a((Activity) this.f14470d, C2328a.ON_BROWSE_ACTION_ERROR_GROUP, (Bundle) null);
         } else {
             mo10261l();
         }
     }
 
-    public void OnClickShare(View view, C4245t tVar) {
+    public void OnClickShare(View view, BrowserViewModel tVar) {
         this.f14457M = null;
         this.f14456L = tVar;
         this.f14489w = this.f14456L.mo9983q();
         this.f14490x = new ArrayList<>();
         this.f14490x.addAll(tVar.mo9982p());
         if (mo10246c(this.f14489w)) {
-            C2331d.m10114a((Activity) this.f14470d, C2328a.ON_BROWSE_ACTION_ERROR_GROUP, (Bundle) null);
+            DialogFactory.m10114a((Activity) this.f14470d, C2328a.ON_BROWSE_ACTION_ERROR_GROUP, (Bundle) null);
         } else {
             mo10221a(view);
         }
@@ -867,7 +867,7 @@ public class C4373a extends C1342a {
         this.f14490x = new ArrayList<>();
         this.f14490x.add(Integer.valueOf(i));
         if (mo10246c(this.f14489w)) {
-            C2331d.m10114a((Activity) this.f14470d, C2328a.ON_BROWSE_ACTION_ERROR_GROUP, (Bundle) null);
+            DialogFactory.m10114a((Activity) this.f14470d, C2328a.ON_BROWSE_ACTION_ERROR_GROUP, (Bundle) null);
         } else {
             mo10221a(view);
         }
@@ -875,10 +875,10 @@ public class C4373a extends C1342a {
 
     /* renamed from: a */
     public void mo10221a(View view) {
-        this.f14455K = new C4088ba(view);
+        this.f14455K = new QuickAction(view);
         if (!this.f14454J && C1712b.m6920d().mo4908b().mo4902b() && this.f14453I == null && this.f14473g != null) {
             this.f14454J = true;
-            C2331d.m10114a((Activity) this.f14470d, C2328a.WAIT_PROCESSING, (Bundle) null);
+            DialogFactory.m10114a((Activity) this.f14470d, C2328a.WAIT_PROCESSING, (Bundle) null);
             this.f14473g.mo4596a(4);
         } else if (m17177R()) {
             m17172M();
@@ -886,7 +886,7 @@ public class C4373a extends C1342a {
     }
 
     /* renamed from: b */
-    public void mo10236b(View view, C4245t tVar) {
+    public void mo10236b(View view, BrowserViewModel tVar) {
         this.f14456L = tVar;
         ArrayList q = tVar.mo9983q();
         C1833c[] cVarArr = new C1833c[q.size()];
@@ -905,17 +905,17 @@ public class C4373a extends C1342a {
 
     /* renamed from: a */
     public void mo10225a(View view, C4262x xVar, int i) {
-        C2261g.m9763a(f14444c, getClass().getName() + "#OnClickRating(View, ContentViewModel, int) called.");
+        ImageAppLog.debug(f14444c, getClass().getName() + "#OnClickRating(View, ContentViewModel, int) called.");
         m17189a((C1833c) xVar.mo10029c());
     }
 
     /* renamed from: c */
-    public void mo10245c(View view, C4245t tVar) {
+    public void mo10245c(View view, BrowserViewModel tVar) {
         this.f14457M = null;
         this.f14456L = tVar;
         this.f14489w = this.f14456L.mo9983q();
         if (mo10246c(this.f14489w)) {
-            C2331d.m10114a((Activity) this.f14470d, C2328a.ON_BROWSE_ACTION_ERROR_GROUP, (Bundle) null);
+            DialogFactory.m10114a((Activity) this.f14470d, C2328a.ON_BROWSE_ACTION_ERROR_GROUP, (Bundle) null);
         } else {
             C2337e.m10170a(this.f14470d, this, this.f14456L);
         }
@@ -931,14 +931,14 @@ public class C4373a extends C1342a {
         }
         this.f14489w.add(xVar);
         if (mo10246c(this.f14489w)) {
-            C2331d.m10114a((Activity) this.f14470d, C2328a.ON_BROWSE_ACTION_ERROR_GROUP, (Bundle) null);
+            DialogFactory.m10114a((Activity) this.f14470d, C2328a.ON_BROWSE_ACTION_ERROR_GROUP, (Bundle) null);
         } else {
             C2337e.m10170a(this.f14470d, this, this.f14456L);
         }
     }
 
     public void OnClickBgmSelect(View view, int[] iArr, int[] iArr2) {
-        this.f14455K = new C4088ba(view);
+        this.f14455K = new QuickAction(view);
         m17188a(iArr, iArr2);
     }
 
@@ -1051,50 +1051,50 @@ public class C4373a extends C1342a {
             }
             this.f14489w.clear();
             this.f14489w.addAll(arrayList);
-            this.f14492z = new C1743c(this.f14470d, this.f14472f, new C1756a() {
+            this.f14492z = new ContentsCopyViewModel(this.f14470d, this.f14472f, new C1756a() {
                 /* renamed from: a */
                 public void mo4493a(int i) {
-                    C2261g.m9766b(C4373a.f14444c, "OnDeviceDisconnected()");
+                    ImageAppLog.warning(C4373a.f14444c, "OnDeviceDisconnected()");
                 }
 
                 /* renamed from: a */
                 public void mo4492a() {
-                    C2261g.m9766b(C4373a.f14444c, "OnReconnectDevice()");
+                    ImageAppLog.warning(C4373a.f14444c, "OnReconnectDevice()");
                 }
 
                 /* renamed from: a */
                 public void mo4494a(C1699h hVar) {
-                    C2261g.m9766b(C4373a.f14444c, "OnNotifySubscribe()");
+                    ImageAppLog.warning(C4373a.f14444c, "OnNotifySubscribe()");
                 }
 
                 /* renamed from: a */
                 public void mo4495a(String str) {
-                    C2261g.m9766b(C4373a.f14444c, "OnTemperature()");
+                    ImageAppLog.warning(C4373a.f14444c, "OnTemperature()");
                 }
             });
             this.f14492z.mo4476c();
             this.f14492z.mo4475a(arrayList, arrayList2);
             if (!z || !defaultSharedPreferences.getBoolean("PictureJumpPlayMessage", false)) {
                 if (z2 && z) {
-                    C2331d.m10114a((Activity) this.f14470d, C2328a.ON_BROWSE_ACTION_WARNING_COPY_EX_CNT_INC_VDO, (Bundle) null);
+                    DialogFactory.m10114a((Activity) this.f14470d, C2328a.ON_BROWSE_ACTION_WARNING_COPY_EX_CNT_INC_VDO, (Bundle) null);
                 } else if (z2) {
-                    C2331d.m10114a((Activity) this.f14470d, C2328a.ON_BROWSE_ACTION_WARNING_COPY_EX_CNT, (Bundle) null);
+                    DialogFactory.m10114a((Activity) this.f14470d, C2328a.ON_BROWSE_ACTION_WARNING_COPY_EX_CNT, (Bundle) null);
                 } else if (z) {
-                    C2331d.m10114a((Activity) this.f14470d, C2328a.ON_BROWSE_ACTION_WARNING_COPY, (Bundle) null);
+                    DialogFactory.m10114a((Activity) this.f14470d, C2328a.ON_BROWSE_ACTION_WARNING_COPY, (Bundle) null);
                 } else if (!z3 || !mo10275z()) {
                     mo10263n();
                 } else {
-                    C2331d.m10114a((Activity) this.f14470d, C2328a.ON_BROWSE_ACTION_WARNING_COPY_RAW, (Bundle) null);
+                    DialogFactory.m10114a((Activity) this.f14470d, C2328a.ON_BROWSE_ACTION_WARNING_COPY_RAW, (Bundle) null);
                 }
             } else if (z2) {
-                C2331d.m10114a((Activity) this.f14470d, C2328a.ON_BROWSE_ACTION_WARNING_COPY_EX_CNT, (Bundle) null);
+                DialogFactory.m10114a((Activity) this.f14470d, C2328a.ON_BROWSE_ACTION_WARNING_COPY_EX_CNT, (Bundle) null);
             } else if (!z3 || !mo10275z()) {
                 mo10263n();
             } else {
-                C2331d.m10114a((Activity) this.f14470d, C2328a.ON_BROWSE_ACTION_WARNING_COPY_RAW, (Bundle) null);
+                DialogFactory.m10114a((Activity) this.f14470d, C2328a.ON_BROWSE_ACTION_WARNING_COPY_RAW, (Bundle) null);
             }
         } else if (this.f14471e != null) {
-            C2331d.m10114a((Activity) this.f14470d, C2328a.ON_BROWSE_ACTION_ERROR_NOSD, (Bundle) null);
+            DialogFactory.m10114a((Activity) this.f14470d, C2328a.ON_BROWSE_ACTION_ERROR_NOSD, (Bundle) null);
             this.f14471e.mo10095a(6, 1, 0);
         }
     }
@@ -1148,25 +1148,25 @@ public class C4373a extends C1342a {
             }
             this.f14489w.clear();
             this.f14489w.addAll(arrayList);
-            this.f14492z = new C1743c(this.f14470d, this.f14472f, new C1756a() {
+            this.f14492z = new ContentsCopyViewModel(this.f14470d, this.f14472f, new C1756a() {
                 /* renamed from: a */
                 public void mo4493a(int i) {
-                    C2261g.m9766b(C4373a.f14444c, "OnDeviceDisconnected()");
+                    ImageAppLog.warning(C4373a.f14444c, "OnDeviceDisconnected()");
                 }
 
                 /* renamed from: a */
                 public void mo4492a() {
-                    C2261g.m9766b(C4373a.f14444c, "OnReconnectDevice()");
+                    ImageAppLog.warning(C4373a.f14444c, "OnReconnectDevice()");
                 }
 
                 /* renamed from: a */
                 public void mo4494a(C1699h hVar) {
-                    C2261g.m9766b(C4373a.f14444c, "OnNotifySubscribe()");
+                    ImageAppLog.warning(C4373a.f14444c, "OnNotifySubscribe()");
                 }
 
                 /* renamed from: a */
                 public void mo4495a(String str) {
-                    C2261g.m9766b(C4373a.f14444c, "OnTemperature()");
+                    ImageAppLog.warning(C4373a.f14444c, "OnTemperature()");
                 }
             });
             this.f14492z.mo4476c();
@@ -1178,19 +1178,19 @@ public class C4373a extends C1342a {
     /* access modifiers changed from: private */
     /* renamed from: a */
     public void m17183a(int i, int i2) {
-        C2261g.m9763a(f14444c, "updateProgressDialog: num = " + i + ", progress = " + i2);
+        ImageAppLog.debug(f14444c, "updateProgressDialog: num = " + i + ", progress = " + i2);
         C2328a aVar = null;
-        if (C2331d.m10125b((Activity) this.f14470d, C2328a.ON_BROWSE_ACTION_PROCESS_COPY)) {
+        if (DialogFactory.m10125b((Activity) this.f14470d, C2328a.ON_BROWSE_ACTION_PROCESS_COPY)) {
             aVar = C2328a.ON_BROWSE_ACTION_PROCESS_COPY;
-        } else if (C2331d.m10125b((Activity) this.f14470d, C2328a.ON_BROWSE_ACTION_PROCESS_SHARE)) {
+        } else if (DialogFactory.m10125b((Activity) this.f14470d, C2328a.ON_BROWSE_ACTION_PROCESS_SHARE)) {
             aVar = C2328a.ON_BROWSE_ACTION_PROCESS_SHARE;
-        } else if (C2331d.m10125b((Activity) this.f14470d, C2328a.PROCESS_PROGRESS)) {
+        } else if (DialogFactory.m10125b((Activity) this.f14470d, C2328a.PROCESS_PROGRESS)) {
             aVar = C2328a.PROCESS_PROGRESS;
         }
         if (aVar != null) {
-            C2331d.m10104a((Activity) this.f14470d, aVar, (int) R.id.progressBar2, i2);
-            C2331d.m10111a((Activity) this.f14470d, aVar, (int) R.id.percent_num, (CharSequence) String.valueOf(i2));
-            C2331d.m10111a((Activity) this.f14470d, aVar, (int) R.id.numerator, (CharSequence) String.valueOf(i));
+            DialogFactory.m10104a((Activity) this.f14470d, aVar, (int) R.id.progressBar2, i2);
+            DialogFactory.m10111a((Activity) this.f14470d, aVar, (int) R.id.percent_num, (CharSequence) String.valueOf(i2));
+            DialogFactory.m10111a((Activity) this.f14470d, aVar, (int) R.id.numerator, (CharSequence) String.valueOf(i));
         }
     }
 
@@ -1202,7 +1202,7 @@ public class C4373a extends C1342a {
         this.f14492z.mo4474a((C1757b) new C1757b() {
             /* renamed from: a */
             public void mo4496a() {
-                C2261g.m9770d(C4373a.f14444c, "OnStart()");
+                ImageAppLog.verbose(C4373a.f14444c, "OnStart()");
                 C4373a.this.f14491y = -1;
             }
 
@@ -1226,7 +1226,7 @@ public class C4373a extends C1342a {
 
             /* renamed from: a */
             public void mo4499a(String str) {
-                C2261g.m9770d(C4373a.f14444c, String.format("OnError(%s)", new Object[]{str}));
+                ImageAppLog.verbose(C4373a.f14444c, String.format("OnError(%s)", new Object[]{str}));
                 if (C4373a.this.f14471e != null) {
                     if (str.equalsIgnoreCase("cancel")) {
                         C4373a.this.f14471e.mo10095a(5, 0, 0);
@@ -1242,7 +1242,7 @@ public class C4373a extends C1342a {
 
             /* renamed from: b */
             public void mo4500b() {
-                C2261g.m9770d(C4373a.f14444c, "OnComplete()");
+                ImageAppLog.verbose(C4373a.f14444c, "OnComplete()");
                 if (C4373a.this.f14471e != null) {
                     C4373a.this.f14471e.mo10095a(4, 0, 0);
                 }
@@ -1278,7 +1278,7 @@ public class C4373a extends C1342a {
             }
         } else if (this.f14471e != null) {
             this.f14471e.mo10100b(6, 1, 0);
-            C2331d.m10114a((Activity) this.f14470d, C2328a.ON_BROWSE_ACTION_ERROR_NOSD, (Bundle) null);
+            DialogFactory.m10114a((Activity) this.f14470d, C2328a.ON_BROWSE_ACTION_ERROR_NOSD, (Bundle) null);
         }
     }
 
@@ -1333,12 +1333,12 @@ public class C4373a extends C1342a {
         this.f14447C.mo4453a((C1742a) new C1742a() {
             /* renamed from: a */
             public void mo4470a() {
-                C2261g.m9770d(C4373a.f14444c, "OnStart()");
+                ImageAppLog.verbose(C4373a.f14444c, "OnStart()");
             }
 
             /* renamed from: a */
             public void mo4471a(int i, int i2) {
-                C2261g.m9770d(C4373a.f14444c, String.format(Locale.US, "OnProgress() num[%d], progress[%d]", new Object[]{Integer.valueOf(i), Integer.valueOf(i2)}));
+                ImageAppLog.verbose(C4373a.f14444c, String.format(Locale.US, "OnProgress() num[%d], progress[%d]", new Object[]{Integer.valueOf(i), Integer.valueOf(i2)}));
                 if (C4373a.this.f14471e != null) {
                     C4373a.this.m17183a(i, i2);
                     C4373a.this.f14471e.mo10100b(2, i, i2);
@@ -1347,7 +1347,7 @@ public class C4373a extends C1342a {
 
             /* renamed from: a */
             public void mo4472a(String str) {
-                C2261g.m9770d(C4373a.f14444c, String.format("OnError(%s)", new Object[]{str}));
+                ImageAppLog.verbose(C4373a.f14444c, String.format("OnError(%s)", new Object[]{str}));
                 if (C4373a.this.f14471e != null) {
                     if (str.equalsIgnoreCase("cancel")) {
                         C4373a.this.f14471e.mo10100b(5, 0, 0);
@@ -1362,7 +1362,7 @@ public class C4373a extends C1342a {
 
             /* renamed from: b */
             public void mo4473b() {
-                C2261g.m9770d(C4373a.f14444c, "OnComplete()");
+                ImageAppLog.verbose(C4373a.f14444c, "OnComplete()");
                 if (C4373a.this.f14471e != null) {
                     C4373a.this.f14471e.mo10100b(4, 4, 0);
                 }
@@ -1430,7 +1430,7 @@ public class C4373a extends C1342a {
         }
         fVar.mo4573a(arrayList, z3, arrayList2);
         if (z4) {
-            C2331d.m10114a((Activity) this.f14470d, C2328a.ON_BROWSE_ACTION_WARNING_SHARE_EX_CNT, (Bundle) null);
+            DialogFactory.m10114a((Activity) this.f14470d, C2328a.ON_BROWSE_ACTION_WARNING_SHARE_EX_CNT, (Bundle) null);
         } else {
             m17170K();
         }
@@ -1444,12 +1444,12 @@ public class C4373a extends C1342a {
         this.f14446B.mo4572a((C1827a) new C1827a() {
             /* renamed from: a */
             public void mo4589a() {
-                C2261g.m9770d(C4373a.f14444c, "OnStart()");
+                ImageAppLog.verbose(C4373a.f14444c, "OnStart()");
             }
 
             /* renamed from: a */
             public void mo4590a(int i, int i2) {
-                C2261g.m9770d(C4373a.f14444c, String.format(Locale.US, "OnProgress() num[%d], progress[%d]", new Object[]{Integer.valueOf(i), Integer.valueOf(i2)}));
+                ImageAppLog.verbose(C4373a.f14444c, String.format(Locale.US, "OnProgress() num[%d], progress[%d]", new Object[]{Integer.valueOf(i), Integer.valueOf(i2)}));
                 if (C4373a.this.f14471e != null) {
                     C4373a.this.m17183a(i, i2);
                     C4373a.this.f14471e.mo10100b(2, i, i2);
@@ -1458,7 +1458,7 @@ public class C4373a extends C1342a {
 
             /* renamed from: a */
             public void mo4591a(String str) {
-                C2261g.m9770d(C4373a.f14444c, String.format("OnError(%s)", new Object[]{str}));
+                ImageAppLog.verbose(C4373a.f14444c, String.format("OnError(%s)", new Object[]{str}));
                 if (C4373a.this.f14471e != null) {
                     if (str.equalsIgnoreCase("cancel")) {
                         C4373a.this.f14471e.mo10100b(5, 0, 0);
@@ -1473,7 +1473,7 @@ public class C4373a extends C1342a {
 
             /* renamed from: b */
             public void mo4592b() {
-                C2261g.m9770d(C4373a.f14444c, "OnComplete()");
+                ImageAppLog.verbose(C4373a.f14444c, "OnComplete()");
                 if (C4373a.this.f14471e != null) {
                     C4373a.this.f14471e.mo10100b(4, 2, 0);
                 }
@@ -1504,12 +1504,12 @@ public class C4373a extends C1342a {
         this.f14448D.mo4429a((C1728a) new C1728a() {
             /* renamed from: a */
             public void mo4449a() {
-                C2261g.m9770d(C4373a.f14444c, "OnStart()");
+                ImageAppLog.verbose(C4373a.f14444c, "OnStart()");
             }
 
             /* renamed from: a */
             public void mo4450a(int i, int i2) {
-                C2261g.m9770d(C4373a.f14444c, String.format(Locale.US, "OnProgress() num[%d], progress[%d]", new Object[]{Integer.valueOf(i), Integer.valueOf(i2)}));
+                ImageAppLog.verbose(C4373a.f14444c, String.format(Locale.US, "OnProgress() num[%d], progress[%d]", new Object[]{Integer.valueOf(i), Integer.valueOf(i2)}));
                 if (C4373a.this.f14471e != null) {
                     C4373a.this.m17183a(i, i2);
                     C4373a.this.f14471e.mo10100b(2, i, i2);
@@ -1518,7 +1518,7 @@ public class C4373a extends C1342a {
 
             /* renamed from: a */
             public void mo4451a(String str) {
-                C2261g.m9770d(C4373a.f14444c, String.format("OnError(%s)", new Object[]{str}));
+                ImageAppLog.verbose(C4373a.f14444c, String.format("OnError(%s)", new Object[]{str}));
                 if (C4373a.this.f14471e != null) {
                     if (str.equalsIgnoreCase("cancel")) {
                         C4373a.this.f14471e.mo10100b(5, 0, 0);
@@ -1533,7 +1533,7 @@ public class C4373a extends C1342a {
 
             /* renamed from: b */
             public void mo4452b() {
-                C2261g.m9770d(C4373a.f14444c, "OnComplete()");
+                ImageAppLog.verbose(C4373a.f14444c, "OnComplete()");
                 if (C4373a.this.f14471e != null) {
                     C4373a.this.f14471e.mo10100b(4, 3, 0);
                 }
@@ -1615,7 +1615,7 @@ public class C4373a extends C1342a {
             }
             eVar.mo4516a(arrayList, z3, arrayList2);
             if (z4) {
-                C2331d.m10114a((Activity) this.f14470d, C2328a.ON_BROWSE_ACTION_WARNING_SHARE_EX_CNT, (Bundle) null);
+                DialogFactory.m10114a((Activity) this.f14470d, C2328a.ON_BROWSE_ACTION_WARNING_SHARE_EX_CNT, (Bundle) null);
             } else {
                 m17171L();
             }
@@ -1630,12 +1630,12 @@ public class C4373a extends C1342a {
         this.f14449E.mo4514a((C1813a) new C1813a() {
             /* renamed from: a */
             public void mo4568a() {
-                C2261g.m9770d(C4373a.f14444c, "OnStart()");
+                ImageAppLog.verbose(C4373a.f14444c, "OnStart()");
             }
 
             /* renamed from: a */
             public void mo4569a(int i, int i2) {
-                C2261g.m9770d(C4373a.f14444c, String.format(Locale.US, "OnProgress() num[%d], progress[%d]", new Object[]{Integer.valueOf(i), Integer.valueOf(i2)}));
+                ImageAppLog.verbose(C4373a.f14444c, String.format(Locale.US, "OnProgress() num[%d], progress[%d]", new Object[]{Integer.valueOf(i), Integer.valueOf(i2)}));
                 if (C4373a.this.f14471e != null) {
                     C4373a.this.m17183a(i, i2);
                     C4373a.this.f14471e.mo10100b(2, i, i2);
@@ -1644,7 +1644,7 @@ public class C4373a extends C1342a {
 
             /* renamed from: a */
             public void mo4570a(String str) {
-                C2261g.m9770d(C4373a.f14444c, String.format("OnError(%s)", new Object[]{str}));
+                ImageAppLog.verbose(C4373a.f14444c, String.format("OnError(%s)", new Object[]{str}));
                 if (C4373a.this.f14471e != null) {
                     if (str.equalsIgnoreCase("cancel")) {
                         C4373a.this.f14471e.mo10100b(5, 0, 0);
@@ -1659,13 +1659,13 @@ public class C4373a extends C1342a {
 
             /* renamed from: b */
             public void mo4571b() {
-                C2261g.m9770d(C4373a.f14444c, "OnCopyComplete()");
+                ImageAppLog.verbose(C4373a.f14444c, "OnCopyComplete()");
                 if (C4373a.this.f14471e != null) {
                     C4373a.this.f14471e.mo10100b(3, 1, 0);
                     if (C2266l.m9806a(C4373a.this.f14470d, false)) {
                         C4373a.this.f14449E.mo4521g();
                     } else {
-                        C2337e.m10161a((Activity) C4373a.this.f14470d, C4373a.this, (C5956i) null, (C5942h) null);
+                        C2337e.m10161a((Activity) C4373a.this.f14470d, C4373a.this, (PictureJumpViewModel) null, (C5942h) null);
                     }
                 }
             }
@@ -1674,7 +1674,7 @@ public class C4373a extends C1342a {
 
     /* renamed from: s */
     public boolean mo10268s() {
-        C2331d.m10100a((Activity) this.f14470d);
+        DialogFactory.m10100a((Activity) this.f14470d);
         if (this.f14449E == null) {
             return false;
         }
@@ -1684,28 +1684,28 @@ public class C4373a extends C1342a {
 
     /* renamed from: a */
     public void mo10231a(boolean z) {
-        C2331d.m10100a((Activity) this.f14470d);
+        DialogFactory.m10100a((Activity) this.f14470d);
         if (z) {
             C2337e.m10160a((Activity) this.f14470d, this, (C2325c) new C2325c() {
                 /* renamed from: a */
                 public void mo6131a() {
-                    C2331d.m10107a((Activity) C4373a.this.f14470d, C2328a.ON_NETWORK_SHOW_WIFI_LIST, (int) R.id.ListView1, (OnItemClickListener) new OnItemClickListener() {
+                    DialogFactory.m10107a((Activity) C4373a.this.f14470d, C2328a.ON_NETWORK_SHOW_WIFI_LIST, (int) R.id.ListView1, (OnItemClickListener) new OnItemClickListener() {
                         public void onItemClick(AdapterView<?> adapterView, View view, int i, long j) {
                             String str = (String) C2337e.m10147a((Activity) C4373a.this.f14470d, C4373a.this).getItem(((ListView) adapterView).getCheckedItemPosition());
-                            C2331d.m10100a((Activity) C4373a.this.f14470d);
+                            DialogFactory.m10100a((Activity) C4373a.this.f14470d);
                             C4373a.this.mo10228a(C2266l.m9810b(C4373a.this.f14470d.getApplicationContext()));
                             C4373a.this.mo10229a(str, "");
                             Bundle bundle = new Bundle();
                             bundle.putInt(C2378b.NEGATIVE_BUTTON_TEXT_ID.name(), R.string.cmn_btn_cancel);
-                            C2331d.m10114a((Activity) C4373a.this.f14470d, C2328a.ON_NETWORK_JUST_A_MOMENT, bundle);
+                            DialogFactory.m10114a((Activity) C4373a.this.f14470d, C2328a.ON_NETWORK_JUST_A_MOMENT, bundle);
                         }
                     });
-                    C2331d.m10106a((Activity) C4373a.this.f14470d, C2328a.ON_NETWORK_SHOW_WIFI_LIST, (int) R.id.listCancelbutton, (OnClickListener) new OnClickListener() {
+                    DialogFactory.m10106a((Activity) C4373a.this.f14470d, C2328a.ON_NETWORK_SHOW_WIFI_LIST, (int) R.id.listCancelbutton, (OnClickListener) new OnClickListener() {
                         public void onClick(View view) {
-                            C2331d.m10100a((Activity) C4373a.this.f14470d);
+                            DialogFactory.m10100a((Activity) C4373a.this.f14470d);
                         }
                     });
-                    C2331d.m10106a((Activity) C4373a.this.f14470d, C2328a.ON_NETWORK_SHOW_WIFI_LIST, (int) R.id.listUpdatebutton, (OnClickListener) new OnClickListener() {
+                    DialogFactory.m10106a((Activity) C4373a.this.f14470d, C2328a.ON_NETWORK_SHOW_WIFI_LIST, (int) R.id.listUpdatebutton, (OnClickListener) new OnClickListener() {
                         public void onClick(View view) {
                             if (!C4373a.this.mo10212F()) {
                                 C4373a.this.mo10241b(true, false);
@@ -1713,19 +1713,19 @@ public class C4373a extends C1342a {
                             C4373a.this.mo10214H();
                             Bundle bundle = new Bundle();
                             bundle.putInt(C2378b.NEGATIVE_BUTTON_TEXT_ID.name(), R.string.cmn_btn_cancel);
-                            C2331d.m10114a((Activity) C4373a.this.f14470d, C2328a.ON_NETWORK_JUST_A_MOMENT, bundle);
+                            DialogFactory.m10114a((Activity) C4373a.this.f14470d, C2328a.ON_NETWORK_JUST_A_MOMENT, bundle);
                         }
                     });
                 }
             });
         } else {
-            C2337e.m10161a((Activity) this.f14470d, this, (C5956i) null, (C5942h) null);
+            C2337e.m10161a((Activity) this.f14470d, this, (PictureJumpViewModel) null, (C5942h) null);
         }
     }
 
     /* renamed from: b */
     public void mo10240b(boolean z) {
-        C2331d.m10100a((Activity) this.f14470d);
+        DialogFactory.m10100a((Activity) this.f14470d);
         if (z) {
             C2337e.m10162a((Activity) this.f14470d, this, null, null, null);
         }
@@ -1737,23 +1737,23 @@ public class C4373a extends C1342a {
         if (this.f14455K == null && this.f14470d != null) {
             View findViewById = ((Activity) this.f14470d).findViewById(R.id.buttonBrowseActShare);
             if (findViewById != null) {
-                this.f14455K = new C4088ba(findViewById);
+                this.f14455K = new QuickAction(findViewById);
             }
         }
-        C2331d.m10100a((Activity) this.f14470d);
+        DialogFactory.m10100a((Activity) this.f14470d);
         int B = mo10208B();
         float f = this.f14470d.getResources().getDisplayMetrics().density;
-        C2261g.m9770d(f14444c, String.format(Locale.US, "density[%f]", new Object[]{Float.valueOf(f)}));
+        ImageAppLog.verbose(f14444c, String.format(Locale.US, "density[%f]", new Object[]{Float.valueOf(f)}));
         for (int i = 0; i < B; i++) {
             C4087b bVar = new C4087b();
             bVar.mo9722a(mo10248d(i));
-            C2261g.m9770d(f14444c, String.format("[%s]", new Object[]{bVar.mo9718a()}));
+            ImageAppLog.verbose(f14444c, String.format("[%s]", new Object[]{bVar.mo9718a()}));
             bVar.mo9719a(mo10251e(i));
             bVar.mo9721a(Integer.valueOf(i));
             bVar.mo9720a((OnClickListener) new OnClickListener() {
                 public void onClick(View view) {
                     Integer num = (Integer) view.getTag();
-                    C2261g.m9771e(C4373a.f14444c, String.format(Locale.US, "index[%d], app[%s]", new Object[]{num, C4373a.this.mo10248d(num.intValue())}));
+                    ImageAppLog.info(C4373a.f14444c, String.format(Locale.US, "index[%d], app[%s]", new Object[]{num, C4373a.this.mo10248d(num.intValue())}));
                     if (C4373a.this.f14455K != null) {
                         C4373a.this.f14455K.mo10061a((OnDismissListener) null);
                         C4373a.this.f14455K.mo10064d();
@@ -1799,7 +1799,7 @@ public class C4373a extends C1342a {
             View findViewById = ((Activity) this.f14470d).findViewById(R.id.buttonBrowseActRating);
             if (findViewById != null) {
                 new C1501d(C1712b.m6919c().mo4896a().f5682d);
-                final C4088ba baVar = new C4088ba(findViewById);
+                final QuickAction baVar = new QuickAction(findViewById);
                 baVar.mo10061a((OnDismissListener) new OnDismissListener() {
                     public void onDismiss() {
                         if (C4373a.this.f14471e != null) {
@@ -1821,7 +1821,7 @@ public class C4373a extends C1342a {
                         bVar.mo9721a(Integer.valueOf(i));
                         bVar.mo9720a((OnClickListener) new OnClickListener() {
                             public void onClick(View view) {
-                                C2261g.m9760a(3162129, Integer.toString(i));
+                                ImageAppLog.m9760a(3162129, Integer.toString(i));
                                 C4373a.this.f14462R = i;
                                 C4373a.this.f14463S = cVarArr;
                                 if (i >= 1 && i <= 4) {
@@ -1883,7 +1883,7 @@ public class C4373a extends C1342a {
     public int mo10270u() {
         final int i = 0;
         this.f14445A = new C1758d(this.f14470d, this.f14472f);
-        C1671s a = C2253z.m9676a(this.f14470d);
+        Picmate a = ServiceFactory.m9676a(this.f14470d);
         ArrayList arrayList = new ArrayList();
         Iterator it = this.f14489w.iterator();
         boolean z = false;
@@ -1909,7 +1909,7 @@ public class C4373a extends C1342a {
         this.f14445A.mo4501a(arrayList, new C1764a() {
             /* renamed from: a */
             public void mo4510a() {
-                C2261g.m9770d(C4373a.f14444c, "OnStart()");
+                ImageAppLog.verbose(C4373a.f14444c, "OnStart()");
                 if (C4373a.this.f14471e != null) {
                     C4373a.this.f14471e.mo10102c(1, 0, 0);
                 }
@@ -1917,7 +1917,7 @@ public class C4373a extends C1342a {
 
             /* renamed from: a */
             public void mo4512a(String str) {
-                C2261g.m9770d(C4373a.f14444c, String.format("OnError(%s)", new Object[]{str}));
+                ImageAppLog.verbose(C4373a.f14444c, String.format("OnError(%s)", new Object[]{str}));
                 if (C4373a.this.f14471e != null) {
                     if (str.equalsIgnoreCase("cancel")) {
                         C4373a.this.f14471e.mo10102c(5, 0, 0);
@@ -1932,7 +1932,7 @@ public class C4373a extends C1342a {
 
             /* renamed from: b */
             public void mo4513b() {
-                C2261g.m9770d(C4373a.f14444c, "OnComplete()");
+                ImageAppLog.verbose(C4373a.f14444c, "OnComplete()");
                 if (C4373a.this.f14471e != null) {
                     C4373a.this.f14471e.mo10102c(4, i, 0);
                 }
@@ -1941,7 +1941,7 @@ public class C4373a extends C1342a {
 
             /* renamed from: a */
             public void mo4511a(int i, int i2) {
-                C2261g.m9770d(C4373a.f14444c, String.format(Locale.US, "OnProgress() num[%d], progress[%d]", new Object[]{Integer.valueOf(i), Integer.valueOf(i2)}));
+                ImageAppLog.verbose(C4373a.f14444c, String.format(Locale.US, "OnProgress() num[%d], progress[%d]", new Object[]{Integer.valueOf(i), Integer.valueOf(i2)}));
                 if (C4373a.this.f14471e != null) {
                     C4373a.this.f14471e.mo10102c(2, i, i2);
                 }
@@ -1990,11 +1990,11 @@ public class C4373a extends C1342a {
     /* renamed from: y */
     public boolean mo10274y() {
         boolean z = true;
-        C2028e a = C2253z.m9680a(this.f14470d, true);
+        C2028e a = ServiceFactory.m9680a(this.f14470d, true);
         if (a == null) {
             return false;
         }
-        C1846e i = a.mo5285i();
+        CameraStatus i = a.mo5285i();
         if (i == null || !i.mo4699g()) {
             z = false;
         }
@@ -2151,7 +2151,7 @@ public class C4373a extends C1342a {
     }
 
     /* renamed from: a */
-    public void mo10226a(C4245t tVar) {
+    public void mo10226a(BrowserViewModel tVar) {
         if (tVar != null) {
             tVar.mo9985s();
             tVar.mo9957b(false);
@@ -2324,7 +2324,7 @@ public class C4373a extends C1342a {
     public void mo10241b(boolean z, boolean z2) {
         if (this.f14467W != null) {
             if (!z) {
-                C2028e a = C2253z.m9680a(this.f14470d, false);
+                C2028e a = ServiceFactory.m9680a(this.f14470d, false);
                 if (a != null) {
                     a.mo5270a(true, true);
                 }
@@ -2363,7 +2363,7 @@ public class C4373a extends C1342a {
 
     /* renamed from: a */
     public void mo10229a(String str, String str2) {
-        C2028e a = C2253z.m9680a(this.f14470d, false);
+        C2028e a = ServiceFactory.m9680a(this.f14470d, false);
         if (a != null) {
             a.mo5270a(true, true);
         }
@@ -2375,7 +2375,7 @@ public class C4373a extends C1342a {
 
     /* renamed from: e */
     public void mo10253e(String str) {
-        C2028e a = C2253z.m9680a(this.f14470d, false);
+        C2028e a = ServiceFactory.m9680a(this.f14470d, false);
         if (a != null) {
             a.mo5270a(true, true);
         }
@@ -2386,7 +2386,7 @@ public class C4373a extends C1342a {
 
     /* renamed from: I */
     public void mo10215I() {
-        C1671s a = C2253z.m9676a(this.f14470d);
+        Picmate a = ServiceFactory.m9676a(this.f14470d);
         if (a != null) {
             a.mo4216g();
         }
@@ -2428,9 +2428,9 @@ public class C4373a extends C1342a {
                 }
             }
             if (this.f14464T == null) {
-                C2261g.m9763a("★WifiConnectDialog:", "ResultList=NULL");
+                ImageAppLog.debug("★WifiConnectDialog:", "ResultList=NULL");
             } else {
-                C2261g.m9763a("★WifiConnectDialog:", "ResultList.size=" + String.valueOf(this.f14464T.size()));
+                ImageAppLog.debug("★WifiConnectDialog:", "ResultList.size=" + String.valueOf(this.f14464T.size()));
             }
             if (this.f14464T != null && this.f14464T.size() > 0) {
                 z = true;
@@ -2469,7 +2469,7 @@ public class C4373a extends C1342a {
                 boolean z = false;
                 while (!z && j <= 60000 && this.f14468X) {
                     z = this.f14467W.mo5312e(this.f14470d);
-                    C2261g.m9763a("WiFiUtility", "ConnectWiFi:not connected yet time:" + String.valueOf(j));
+                    ImageAppLog.debug("WiFiUtility", "ConnectWiFi:not connected yet time:" + String.valueOf(j));
                     if (!z) {
                         j += 500;
                         C2266l.m9802a(500);
@@ -2512,7 +2512,7 @@ public class C4373a extends C1342a {
                     boolean z = false;
                     while (!z && j <= 60000 && this.f14468X) {
                         z = this.f14467W.mo5312e(this.f14470d);
-                        C2261g.m9763a("WiFiUtility", "ConnectWiFi:not connected yet time:" + String.valueOf(j));
+                        ImageAppLog.debug("WiFiUtility", "ConnectWiFi:not connected yet time:" + String.valueOf(j));
                         if (!z) {
                             j += 500;
                             C2266l.m9802a(500);

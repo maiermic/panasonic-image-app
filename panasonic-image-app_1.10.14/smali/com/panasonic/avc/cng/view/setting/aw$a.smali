@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/panasonic/avc/cng/view/setting/aw;
+    value = Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewSceneGuideSelectViewModel;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,28 +18,28 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/panasonic/avc/cng/view/setting/aw;
+.field final synthetic a:Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewSceneGuideSelectViewModel;
 
 
 # direct methods
-.method private constructor <init>(Lcom/panasonic/avc/cng/view/setting/aw;)V
+.method private constructor <init>(Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewSceneGuideSelectViewModel;)V
     .locals 0
 
     .prologue
     .line 319
-    iput-object p1, p0, Lcom/panasonic/avc/cng/view/setting/aw$a;->a:Lcom/panasonic/avc/cng/view/setting/aw;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/view/setting/aw$a;->a:Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewSceneGuideSelectViewModel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/panasonic/avc/cng/view/setting/aw;Lcom/panasonic/avc/cng/view/setting/aw$1;)V
+.method synthetic constructor <init>(Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewSceneGuideSelectViewModel;Lcom/panasonic/avc/cng/view/setting/aw$1;)V
     .locals 0
 
     .prologue
     .line 319
-    invoke-direct {p0, p1}, Lcom/panasonic/avc/cng/view/setting/aw$a;-><init>(Lcom/panasonic/avc/cng/view/setting/aw;)V
+    invoke-direct {p0, p1}, Lcom/panasonic/avc/cng/view/setting/aw$a;-><init>(Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewSceneGuideSelectViewModel;)V
 
     return-void
 .end method
@@ -51,26 +51,26 @@
 
     .prologue
     .line 326
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/aw$a;->a:Lcom/panasonic/avc/cng/view/setting/aw;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/aw$a;->a:Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewSceneGuideSelectViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/aw;->b(Lcom/panasonic/avc/cng/view/setting/aw;)Lcom/panasonic/avc/cng/view/setting/am$h;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewSceneGuideSelectViewModel;->b(Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewSceneGuideSelectViewModel;)Lcom/panasonic/avc/cng/view/setting/am$h;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/aw$a;->a:Lcom/panasonic/avc/cng/view/setting/aw;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/aw$a;->a:Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewSceneGuideSelectViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/aw;->c(Lcom/panasonic/avc/cng/view/setting/aw;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewSceneGuideSelectViewModel;->c(Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewSceneGuideSelectViewModel;)Landroid/os/Handler;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 329
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/aw$a;->a:Lcom/panasonic/avc/cng/view/setting/aw;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/aw$a;->a:Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewSceneGuideSelectViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/aw;->d(Lcom/panasonic/avc/cng/view/setting/aw;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewSceneGuideSelectViewModel;->d(Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewSceneGuideSelectViewModel;)Landroid/os/Handler;
 
     move-result-object v0
 
@@ -90,26 +90,26 @@
 
     .prologue
     .line 345
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/aw$a;->a:Lcom/panasonic/avc/cng/view/setting/aw;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/aw$a;->a:Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewSceneGuideSelectViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/aw;->b(Lcom/panasonic/avc/cng/view/setting/aw;)Lcom/panasonic/avc/cng/view/setting/am$h;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewSceneGuideSelectViewModel;->b(Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewSceneGuideSelectViewModel;)Lcom/panasonic/avc/cng/view/setting/am$h;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/aw$a;->a:Lcom/panasonic/avc/cng/view/setting/aw;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/aw$a;->a:Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewSceneGuideSelectViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/aw;->e(Lcom/panasonic/avc/cng/view/setting/aw;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewSceneGuideSelectViewModel;->e(Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewSceneGuideSelectViewModel;)Landroid/os/Handler;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 348
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/aw$a;->a:Lcom/panasonic/avc/cng/view/setting/aw;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/aw$a;->a:Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewSceneGuideSelectViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/aw;->h(Lcom/panasonic/avc/cng/view/setting/aw;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewSceneGuideSelectViewModel;->h(Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewSceneGuideSelectViewModel;)Landroid/os/Handler;
 
     move-result-object v0
 
@@ -129,26 +129,26 @@
 
     .prologue
     .line 366
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/aw$a;->a:Lcom/panasonic/avc/cng/view/setting/aw;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/aw$a;->a:Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewSceneGuideSelectViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/aw;->b(Lcom/panasonic/avc/cng/view/setting/aw;)Lcom/panasonic/avc/cng/view/setting/am$h;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewSceneGuideSelectViewModel;->b(Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewSceneGuideSelectViewModel;)Lcom/panasonic/avc/cng/view/setting/am$h;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/aw$a;->a:Lcom/panasonic/avc/cng/view/setting/aw;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/aw$a;->a:Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewSceneGuideSelectViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/aw;->i(Lcom/panasonic/avc/cng/view/setting/aw;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewSceneGuideSelectViewModel;->i(Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewSceneGuideSelectViewModel;)Landroid/os/Handler;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 369
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/aw$a;->a:Lcom/panasonic/avc/cng/view/setting/aw;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/aw$a;->a:Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewSceneGuideSelectViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/aw;->j(Lcom/panasonic/avc/cng/view/setting/aw;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewSceneGuideSelectViewModel;->j(Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewSceneGuideSelectViewModel;)Landroid/os/Handler;
 
     move-result-object v0
 

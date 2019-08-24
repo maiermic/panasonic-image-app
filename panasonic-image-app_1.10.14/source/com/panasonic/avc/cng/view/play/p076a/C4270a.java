@@ -5,7 +5,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import com.panasonic.avc.cng.imageapp.C1701a.C1702a;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.view.p072a.C2289b;
 import com.panasonic.avc.cng.view.p072a.C2308e;
 import com.panasonic.avc.cng.view.p072a.C2308e.C2310a;
@@ -34,28 +34,28 @@ public class C4270a extends C2289b implements C2310a {
     }
 
     public void OnClickLiveView(View view) {
-        C2261g.m9760a(3149826, "");
+        ImageAppLog.m9760a(3149826, "");
         if (this._tabMenuUtil != null) {
             this._tabMenuUtil.mo6087d(this, GetViewModel(), this._cameraUtil);
         }
     }
 
     public void OnClickBrowser(View view) {
-        C2261g.m9760a(3149827, "");
+        ImageAppLog.m9760a(3149827, "");
         if (this._tabMenuUtil != null) {
             this._tabMenuUtil.mo6088e(this, GetViewModel(), this._cameraUtil);
         }
     }
 
     public void OnClickSetup(View view) {
-        C2261g.m9760a(3149828, "");
+        ImageAppLog.m9760a(3149828, "");
         if (this._tabMenuUtil != null) {
             this._tabMenuUtil.mo6086a(this);
         }
     }
 
     public void OnClickHome(View view) {
-        C2261g.m9760a(3149825, "");
+        ImageAppLog.m9760a(3149825, "");
         if (this._tabMenuUtil != null) {
             this._tabMenuUtil.OnClickHome(this, GetViewModel(), this._cameraUtil);
         }

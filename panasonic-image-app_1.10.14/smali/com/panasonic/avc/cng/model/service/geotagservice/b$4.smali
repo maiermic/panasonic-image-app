@@ -49,7 +49,7 @@
     .line 636
     iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/geotagservice/b$4;->a:Lcom/panasonic/avc/cng/model/service/geotagservice/b;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/geotagservice/b;->d(Lcom/panasonic/avc/cng/model/service/geotagservice/b;)Lcom/panasonic/avc/cng/core/a/h;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/geotagservice/b;->d(Lcom/panasonic/avc/cng/model/service/geotagservice/b;)Lcom/panasonic/avc/cng/core/a/XmlNode;
 
     move-result-object v0
 
@@ -82,13 +82,13 @@
     :cond_1
     iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/geotagservice/b$4;->a:Lcom/panasonic/avc/cng/model/service/geotagservice/b;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/geotagservice/b;->d(Lcom/panasonic/avc/cng/model/service/geotagservice/b;)Lcom/panasonic/avc/cng/core/a/h;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/geotagservice/b;->d(Lcom/panasonic/avc/cng/model/service/geotagservice/b;)Lcom/panasonic/avc/cng/core/a/XmlNode;
 
     move-result-object v0
 
     const-string v1, "start"
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/core/a/h;->a(Ljava/lang/String;)Z
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/core/a/XmlNode;->a(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -112,7 +112,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->b(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->warning(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 650
     iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/geotagservice/b$4;->a:Lcom/panasonic/avc/cng/model/service/geotagservice/b;
@@ -169,11 +169,11 @@
     :goto_2
     iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/geotagservice/b$4;->a:Lcom/panasonic/avc/cng/model/service/geotagservice/b;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/geotagservice/b;->d(Lcom/panasonic/avc/cng/model/service/geotagservice/b;)Lcom/panasonic/avc/cng/core/a/h;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/geotagservice/b;->d(Lcom/panasonic/avc/cng/model/service/geotagservice/b;)Lcom/panasonic/avc/cng/core/a/XmlNode;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/h;->d()Lcom/panasonic/avc/cng/model/c/ae;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/XmlNode;->d()Lcom/panasonic/avc/cng/model/c/ae;
 
     move-result-object v0
 

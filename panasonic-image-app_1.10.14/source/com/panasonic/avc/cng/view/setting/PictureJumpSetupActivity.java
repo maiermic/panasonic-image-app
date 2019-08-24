@@ -18,24 +18,24 @@ import com.panasonic.avc.cng.imageapp.C1701a.C1702a;
 import com.panasonic.avc.cng.imageapp.Httpc.HTTPcJni;
 import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.C1712b;
-import com.panasonic.avc.cng.model.p050b.C1743c.C1756a;
+import com.panasonic.avc.cng.model.p050b.ContentsCopyViewModel.C1756a;
 import com.panasonic.avc.cng.model.p050b.C1828g;
 import com.panasonic.avc.cng.view.common.C2820e;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
 import com.panasonic.avc.cng.view.parts.PictureJumpView;
 import com.panasonic.avc.cng.view.parts.PictureJumpView.C3959a;
-import com.panasonic.avc.cng.view.setting.C5537al.C5540a;
+import com.panasonic.avc.cng.view.setting.SettingMenuBaseActivity.C5540a;
 import com.panasonic.avc.cng.view.setting.C5741i.C5759a;
-import com.panasonic.avc.cng.view.smartoperation.C5956i;
-import com.panasonic.avc.cng.view.smartoperation.C5956i.C5973b;
+import com.panasonic.avc.cng.view.smartoperation.PictureJumpViewModel;
+import com.panasonic.avc.cng.view.smartoperation.PictureJumpViewModel.C5973b;
 import java.util.List;
 
 public class PictureJumpSetupActivity extends C5509ag implements C3959a {
     private int _displaySize;
     private PictureJumpView _pictureJump = null;
     private C5216a _pictureJumpEventListener = null;
-    private C5956i _pjVM = null;
+    private PictureJumpViewModel _pjVM = null;
     private int _selectIndex = -1;
     private List<C1828g> _selectList = null;
 
@@ -48,16 +48,16 @@ public class PictureJumpSetupActivity extends C5509ag implements C3959a {
         public void mo4493a(int i) {
             switch (i) {
                 case 0:
-                    C2331d.m10114a((Activity) PictureJumpSetupActivity.this, C2328a.ON_DISCONNECT_FINISH, (Bundle) null);
+                    DialogFactory.m10114a((Activity) PictureJumpSetupActivity.this, C2328a.ON_DISCONNECT_FINISH, (Bundle) null);
                     break;
                 case 1:
-                    C2331d.m10114a((Activity) PictureJumpSetupActivity.this, C2328a.ON_DISCONNECT_FINISH, (Bundle) null);
+                    DialogFactory.m10114a((Activity) PictureJumpSetupActivity.this, C2328a.ON_DISCONNECT_FINISH, (Bundle) null);
                     break;
                 case 2:
-                    C2331d.m10114a((Activity) PictureJumpSetupActivity.this, C2328a.ON_DISCONNECT_BY_HIGH_TEMP_NO_FINISH, (Bundle) null);
+                    DialogFactory.m10114a((Activity) PictureJumpSetupActivity.this, C2328a.ON_DISCONNECT_BY_HIGH_TEMP_NO_FINISH, (Bundle) null);
                     break;
                 case 3:
-                    C2331d.m10114a((Activity) PictureJumpSetupActivity.this, C2328a.ON_DISCONNECT_BATTERY_LOW_FINISH, (Bundle) null);
+                    DialogFactory.m10114a((Activity) PictureJumpSetupActivity.this, C2328a.ON_DISCONNECT_BATTERY_LOW_FINISH, (Bundle) null);
                     break;
             }
             PictureJumpSetupActivity.this._resultBundle.putBoolean("DeviceDisconnectedKey", true);
@@ -76,9 +76,9 @@ public class PictureJumpSetupActivity extends C5509ag implements C3959a {
         /* renamed from: a */
         public void mo4495a(String str) {
             if (str.equalsIgnoreCase("high")) {
-                C2331d.m10114a((Activity) PictureJumpSetupActivity.this, C2328a.ON_DISCONNECT_BY_HIGH_TEMP_NO_FINISH, (Bundle) null);
+                DialogFactory.m10114a((Activity) PictureJumpSetupActivity.this, C2328a.ON_DISCONNECT_BY_HIGH_TEMP_NO_FINISH, (Bundle) null);
             } else if (str.equalsIgnoreCase("assert")) {
-                C2331d.m10114a((Activity) PictureJumpSetupActivity.this, C2328a.ON_ASEERT_TEMP_FINISH, (Bundle) null);
+                DialogFactory.m10114a((Activity) PictureJumpSetupActivity.this, C2328a.ON_ASEERT_TEMP_FINISH, (Bundle) null);
             }
         }
     }
@@ -126,7 +126,7 @@ public class PictureJumpSetupActivity extends C5509ag implements C3959a {
         this._pictureJumpEventListener = new C5216a();
         this._pjVM = C2820e.m11774a((Context) this, this._handler, (C5973b) null, (C5973b) null, (C1756a) this._pictureJumpEventListener);
         if (this._pjVM == null) {
-            this._pjVM = new C5956i(this, this._handler, this._pictureJumpEventListener);
+            this._pjVM = new PictureJumpViewModel(this, this._handler, this._pictureJumpEventListener);
         }
         this._pictureJump = (PictureJumpView) findViewById(R.id.picture_jump_layout);
         if (this._selectList == null) {
@@ -163,7 +163,7 @@ public class PictureJumpSetupActivity extends C5509ag implements C3959a {
         this._handler.post(new Runnable() {
             public void run() {
                 if (!PictureJumpSetupActivity.this.isFinishing()) {
-                    C2331d.m10100a((Activity) PictureJumpSetupActivity.this);
+                    DialogFactory.m10100a((Activity) PictureJumpSetupActivity.this);
                     PictureJumpSetupActivity.this.InitializeComponent();
                 }
             }
@@ -175,7 +175,7 @@ public class PictureJumpSetupActivity extends C5509ag implements C3959a {
         this._handler.post(new Runnable() {
             public void run() {
                 if (!PictureJumpSetupActivity.this.isFinishing()) {
-                    C2331d.m10100a((Activity) PictureJumpSetupActivity.this);
+                    DialogFactory.m10100a((Activity) PictureJumpSetupActivity.this);
                     PictureJumpSetupActivity.this.InitializeComponent();
                     if (i == 1 && PictureJumpSetupActivity.this._viewModel != null && PictureJumpSetupActivity.this._viewModel.mo12252h()) {
                         PictureJumpSetupActivity.this.EquipmentComponent();
@@ -405,7 +405,7 @@ public class PictureJumpSetupActivity extends C5509ag implements C3959a {
 
     public void finish() {
         OnSetResult();
-        C2820e.m11803a((C5956i) null);
+        C2820e.m11803a((PictureJumpViewModel) null);
         C2820e.m11792a((C5511ah) null);
         if (this._pjVM != null) {
             this._pjVM.mo3205a();

@@ -56,13 +56,13 @@
     :try_start_0
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c$9;->b:Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c;->P(Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c;)Lcom/panasonic/avc/cng/core/a/ac;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c;->P(Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c;)Lcom/panasonic/avc/cng/core/a/PantiluterVianaCommand;
 
     move-result-object v0
 
     iget-object v2, p0, Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c$9;->a:Ljava/lang/String;
 
-    invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/core/a/ac;->c(Ljava/lang/String;)Lcom/panasonic/avc/cng/model/c/h;
+    invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/core/a/PantiluterVianaCommand;->c(Ljava/lang/String;)Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
     move-result-object v0
 
@@ -72,7 +72,7 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 5014
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/h;->a()Z
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;->a()Z
 
     move-result v0
 
@@ -85,7 +85,7 @@
 
     const-string v1, "setposition Error"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 5019
     :cond_0

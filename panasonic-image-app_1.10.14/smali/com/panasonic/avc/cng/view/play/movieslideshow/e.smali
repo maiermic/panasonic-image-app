@@ -68,7 +68,7 @@
     .end annotation
 .end field
 
-.field private j:Lcom/panasonic/avc/cng/view/parts/t;
+.field private j:Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
 .field private k:Lcom/panasonic/avc/cng/view/parts/t$e;
 
@@ -159,12 +159,12 @@
     return p1
 .end method
 
-.method static synthetic a(Lcom/panasonic/avc/cng/view/play/movieslideshow/e;)Lcom/panasonic/avc/cng/view/parts/t;
+.method static synthetic a(Lcom/panasonic/avc/cng/view/play/movieslideshow/e;)Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
     .locals 1
 
     .prologue
     .line 18
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/e;->j:Lcom/panasonic/avc/cng/view/parts/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/e;->j:Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
     return-object v0
 .end method
@@ -176,7 +176,7 @@
     const/4 v4, 0x1
 
     .line 142
-    new-instance v0, Lcom/panasonic/avc/cng/view/parts/t;
+    new-instance v0, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/e;->a:Landroid/content/Context;
 
@@ -184,19 +184,19 @@
 
     iget-object v3, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/e;->k:Lcom/panasonic/avc/cng/view/parts/t$e;
 
-    invoke-direct {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/parts/t;-><init>(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/parts/t$e;)V
+    invoke-direct {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;-><init>(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/parts/t$e;)V
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/e;->j:Lcom/panasonic/avc/cng/view/parts/t;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/e;->j:Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
     .line 144
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/e;->j:Lcom/panasonic/avc/cng/view/parts/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/e;->j:Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
-    invoke-virtual {v0, v4}, Lcom/panasonic/avc/cng/view/parts/t;->a(I)V
+    invoke-virtual {v0, v4}, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->a(I)V
 
     .line 145
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/e;->j:Lcom/panasonic/avc/cng/view/parts/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/e;->j:Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
-    invoke-virtual {v0, v4}, Lcom/panasonic/avc/cng/view/parts/t;->b(Z)V
+    invoke-virtual {v0, v4}, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->b(Z)V
 
     .line 148
     new-instance v0, Lcom/panasonic/avc/cng/view/play/movieslideshow/e$a;
@@ -226,11 +226,11 @@
     iput v0, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/e;->l:I
 
     .line 154
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
@@ -259,9 +259,9 @@
     invoke-virtual {p0}, Lcom/panasonic/avc/cng/view/play/movieslideshow/e;->c()V
 
     .line 129
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/e;->j:Lcom/panasonic/avc/cng/view/parts/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/e;->j:Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/parts/t;->a()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->a()V
 
     .line 130
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/e;->m:Lcom/panasonic/avc/cng/view/parts/aa;
@@ -300,7 +300,7 @@
     invoke-virtual {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/parts/aa;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/parts/aa$a;)V
 
     .line 101
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/e;->j:Lcom/panasonic/avc/cng/view/parts/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/e;->j:Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/e;->a:Landroid/content/Context;
 
@@ -308,23 +308,23 @@
 
     iget-object v3, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/e;->k:Lcom/panasonic/avc/cng/view/parts/t$e;
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/parts/t;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/parts/t$e;)V
+    invoke-virtual {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/parts/t$e;)V
 
     .line 102
     return-void
 .end method
 
-.method public a(Lcom/panasonic/avc/cng/model/c/e;)V
+.method public a(Lcom/panasonic/avc/cng/model/c/CameraStatus;)V
     .locals 3
 
     .prologue
     .line 292
-    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/e;->a()I
+    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->a()I
 
     move-result v0
 
     .line 293
-    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/e;->b()I
+    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->b()I
 
     move-result v1
 
@@ -336,7 +336,7 @@
     invoke-virtual {p0, v2}, Lcom/panasonic/avc/cng/view/play/movieslideshow/e;->a(Ljava/lang/Runnable;)Z
 
     .line 310
-    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/a/c;->a(Lcom/panasonic/avc/cng/model/c/e;)V
+    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/a/c;->a(Lcom/panasonic/avc/cng/model/c/CameraStatus;)V
 
     .line 311
     return-void
@@ -358,9 +358,9 @@
 
     .prologue
     .line 110
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/e;->j:Lcom/panasonic/avc/cng/view/parts/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/e;->j:Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/parts/t;->c()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->c()V
 
     .line 112
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/e;->e:Lcom/panasonic/avc/cng/a/c;
@@ -424,14 +424,14 @@
     invoke-virtual {p0, p1}, Lcom/panasonic/avc/cng/view/play/movieslideshow/e;->b(I)V
 
     .line 197
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/e;->j:Lcom/panasonic/avc/cng/view/parts/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/e;->j:Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
     if-eqz v0, :cond_0
 
     .line 199
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/e;->j:Lcom/panasonic/avc/cng/view/parts/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/e;->j:Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
-    invoke-virtual {v0, p1}, Lcom/panasonic/avc/cng/view/parts/t;->c(I)V
+    invoke-virtual {v0, p1}, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->c(I)V
 
     .line 201
     :cond_0
@@ -443,11 +443,11 @@
 
     .prologue
     .line 262
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
@@ -461,14 +461,14 @@
 
     .line 268
     :cond_1
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/e;->j:Lcom/panasonic/avc/cng/view/parts/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/e;->j:Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
     if-eqz v0, :cond_0
 
     .line 270
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/e;->j:Lcom/panasonic/avc/cng/view/parts/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/e;->j:Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/parts/t;->d()Ljava/util/List;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->d()Ljava/util/List;
 
     move-result-object v0
 
@@ -489,9 +489,9 @@
     if-nez v0, :cond_0
 
     .line 275
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/e;->j:Lcom/panasonic/avc/cng/view/parts/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/e;->j:Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
-    invoke-virtual {v0, p1}, Lcom/panasonic/avc/cng/view/parts/t;->c(I)V
+    invoke-virtual {v0, p1}, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->c(I)V
 
     goto :goto_0
 .end method
@@ -508,9 +508,9 @@
     if-ne v0, v1, :cond_0
 
     .line 172
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/e;->j:Lcom/panasonic/avc/cng/view/parts/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/e;->j:Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/parts/t;->d()Ljava/util/List;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->d()Ljava/util/List;
 
     move-result-object v0
 
@@ -535,21 +535,21 @@
 
     .prologue
     .line 208
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/e;->j:Lcom/panasonic/avc/cng/view/parts/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/e;->j:Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
     if-eqz v0, :cond_0
 
     .line 211
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/e;->j:Lcom/panasonic/avc/cng/view/parts/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/e;->j:Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/parts/t;->b(Z)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->b(Z)V
 
     .line 212
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/e;->j:Lcom/panasonic/avc/cng/view/parts/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/e;->j:Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/parts/t;->m()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->m()V
 
     .line 214
     :cond_0
@@ -561,14 +561,14 @@
 
     .prologue
     .line 222
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/e;->j:Lcom/panasonic/avc/cng/view/parts/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/e;->j:Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
     if-eqz v0, :cond_0
 
     .line 224
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/e;->j:Lcom/panasonic/avc/cng/view/parts/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/e;->j:Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/parts/t;->n()I
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->n()I
 
     move-result v0
 
@@ -582,12 +582,12 @@
     goto :goto_0
 .end method
 
-.method public j()Lcom/panasonic/avc/cng/view/parts/t;
+.method public j()Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
     .locals 1
 
     .prologue
     .line 237
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/e;->j:Lcom/panasonic/avc/cng/view/parts/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/e;->j:Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
     return-object v0
 .end method
@@ -597,13 +597,13 @@
 
     .prologue
     .line 247
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/e;->j:Lcom/panasonic/avc/cng/view/parts/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/e;->j:Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
     const/4 v1, 0x5
 
     const-string v2, "0"
 
-    invoke-virtual {v0, v1, v2}, Lcom/panasonic/avc/cng/view/parts/t;->a(ILjava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->a(ILjava/lang/String;)V
 
     .line 250
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/e;->i:Lcom/panasonic/avc/cng/a/c;

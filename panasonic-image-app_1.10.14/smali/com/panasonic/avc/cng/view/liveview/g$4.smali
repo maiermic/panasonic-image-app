@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/view/liveview/g;->bG()Lcom/panasonic/avc/cng/view/liveview/e$e;
+    value = Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixCompactViewModel;->bG()Lcom/panasonic/avc/cng/view/liveview/e$e;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,20 +15,20 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/panasonic/avc/cng/view/liveview/g;
+.field final synthetic a:Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixCompactViewModel;
 
 
 # direct methods
-.method constructor <init>(Lcom/panasonic/avc/cng/view/liveview/g;)V
+.method constructor <init>(Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixCompactViewModel;)V
     .locals 1
 
     .prologue
     .line 1222
-    iput-object p1, p0, Lcom/panasonic/avc/cng/view/liveview/g$4;->a:Lcom/panasonic/avc/cng/view/liveview/g;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/view/liveview/g$4;->a:Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixCompactViewModel;
 
     const/4 v0, 0x0
 
-    invoke-direct {p0, p1, v0}, Lcom/panasonic/avc/cng/view/liveview/g$a;-><init>(Lcom/panasonic/avc/cng/view/liveview/g;Lcom/panasonic/avc/cng/view/liveview/g$1;)V
+    invoke-direct {p0, p1, v0}, Lcom/panasonic/avc/cng/view/liveview/g$a;-><init>(Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixCompactViewModel;Lcom/panasonic/avc/cng/view/liveview/g$1;)V
 
     return-void
 .end method
@@ -40,9 +40,9 @@
 
     .prologue
     .line 1228
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/g$4;->a:Lcom/panasonic/avc/cng/view/liveview/g;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/g$4;->a:Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixCompactViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/g;->c:Lcom/panasonic/avc/cng/view/liveview/e$f;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixCompactViewModel;->c:Lcom/panasonic/avc/cng/view/liveview/e$f;
 
     new-instance v1, Landroid/graphics/Point;
 
@@ -57,9 +57,9 @@
     if-eqz v0, :cond_0
 
     .line 1229
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/g$4;->a:Lcom/panasonic/avc/cng/view/liveview/g;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/g$4;->a:Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixCompactViewModel;
 
-    invoke-virtual {v0, p1, p2}, Lcom/panasonic/avc/cng/view/liveview/g;->c(II)V
+    invoke-virtual {v0, p1, p2}, Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixCompactViewModel;->c(II)V
 
     .line 1231
     :cond_0

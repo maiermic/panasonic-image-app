@@ -21,8 +21,8 @@ import com.panasonic.avc.cng.model.C1703a;
 import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.view.common.C2820e;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
-import com.panasonic.avc.cng.view.setting.C5537al.C5540a;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
+import com.panasonic.avc.cng.view.setting.SettingMenuBaseActivity.C5540a;
 import com.panasonic.avc.cng.view.setting.C5565an.C5571a;
 import com.panasonic.avc.cng.view.setting.C5681d.C5686b;
 
@@ -59,7 +59,7 @@ public class SetupConnectCameraSettingActivity extends C5741i {
             if (SetupConnectCameraSettingActivity.this._handler != null) {
                 SetupConnectCameraSettingActivity.this._handler.post(new Runnable() {
                     public void run() {
-                        C2331d.m10114a((Activity) SetupConnectCameraSettingActivity.this, C2328a.ON_PROGRESS, (Bundle) null);
+                        DialogFactory.m10114a((Activity) SetupConnectCameraSettingActivity.this, C2328a.ON_PROGRESS, (Bundle) null);
                     }
                 });
                 try {
@@ -120,15 +120,15 @@ public class SetupConnectCameraSettingActivity extends C5741i {
                                 }
                             }});
                             ((EditText) SetupConnectCameraSettingActivity.this.findViewById(R.id.setup_macaddress_editview)).setText(d);
-                            C2331d.m10100a((Activity) SetupConnectCameraSettingActivity.this);
+                            DialogFactory.m10100a((Activity) SetupConnectCameraSettingActivity.this);
                             if (SetupConnectCameraSettingActivity.this.f16655c) {
-                                C2331d.m10114a((Activity) SetupConnectCameraSettingActivity.this, C2328a.ON_SET_CONNECT_CAMERA_SUCCESS, (Bundle) null);
+                                DialogFactory.m10114a((Activity) SetupConnectCameraSettingActivity.this, C2328a.ON_SET_CONNECT_CAMERA_SUCCESS, (Bundle) null);
                                 return;
                             }
                             return;
                         }
-                        C2331d.m10100a((Activity) SetupConnectCameraSettingActivity.this);
-                        C2331d.m10114a((Activity) SetupConnectCameraSettingActivity.this, C2328a.ON_SET_CONNECT_CAMERA_ERROR, (Bundle) null);
+                        DialogFactory.m10100a((Activity) SetupConnectCameraSettingActivity.this);
+                        DialogFactory.m10114a((Activity) SetupConnectCameraSettingActivity.this, C2328a.ON_SET_CONNECT_CAMERA_ERROR, (Bundle) null);
                     }
                 });
                 try {
@@ -143,8 +143,8 @@ public class SetupConnectCameraSettingActivity extends C5741i {
             if (SetupConnectCameraSettingActivity.this._handler != null) {
                 SetupConnectCameraSettingActivity.this._handler.post(new Runnable() {
                     public void run() {
-                        C2331d.m10100a((Activity) SetupConnectCameraSettingActivity.this);
-                        C2331d.m10114a((Activity) SetupConnectCameraSettingActivity.this, C2328a.ON_SET_CONNECT_CAMERA_ERROR, (Bundle) null);
+                        DialogFactory.m10100a((Activity) SetupConnectCameraSettingActivity.this);
+                        DialogFactory.m10114a((Activity) SetupConnectCameraSettingActivity.this, C2328a.ON_SET_CONNECT_CAMERA_ERROR, (Bundle) null);
                     }
                 });
             }
@@ -156,13 +156,13 @@ public class SetupConnectCameraSettingActivity extends C5741i {
                 SetupConnectCameraSettingActivity.this._handler.post(new Runnable() {
                     public void run() {
                         if (i == 1) {
-                            C2331d.m10114a((Activity) SetupConnectCameraSettingActivity.this, C2328a.ON_SET_CAMERA_SSID_INVALID, (Bundle) null);
+                            DialogFactory.m10114a((Activity) SetupConnectCameraSettingActivity.this, C2328a.ON_SET_CAMERA_SSID_INVALID, (Bundle) null);
                         } else if (i == 2) {
-                            C2331d.m10114a((Activity) SetupConnectCameraSettingActivity.this, C2328a.ON_SET_CAMERA_PARAM_INVALID, (Bundle) null);
+                            DialogFactory.m10114a((Activity) SetupConnectCameraSettingActivity.this, C2328a.ON_SET_CAMERA_PARAM_INVALID, (Bundle) null);
                         } else if (i == 3) {
-                            C2331d.m10114a((Activity) SetupConnectCameraSettingActivity.this, C2328a.ON_SET_CAMERA_SSID_INVALID_ZERO, (Bundle) null);
+                            DialogFactory.m10114a((Activity) SetupConnectCameraSettingActivity.this, C2328a.ON_SET_CAMERA_SSID_INVALID_ZERO, (Bundle) null);
                         } else if (i == 4) {
-                            C2331d.m10114a((Activity) SetupConnectCameraSettingActivity.this, C2328a.ON_SET_CAMERA_PASS_ZERO, (Bundle) null);
+                            DialogFactory.m10114a((Activity) SetupConnectCameraSettingActivity.this, C2328a.ON_SET_CAMERA_PASS_ZERO, (Bundle) null);
                         }
                     }
                 });
@@ -196,13 +196,13 @@ public class SetupConnectCameraSettingActivity extends C5741i {
                         public void run() {
                             switch (i) {
                                 case 2:
-                                    C2331d.m10114a((Activity) SetupConnectCameraSettingActivity.this, C2328a.ON_DISCONNECT_BY_HIGH_TEMP_FINISH, (Bundle) null);
+                                    DialogFactory.m10114a((Activity) SetupConnectCameraSettingActivity.this, C2328a.ON_DISCONNECT_BY_HIGH_TEMP_FINISH, (Bundle) null);
                                     return;
                                 case 3:
-                                    C2331d.m10114a((Activity) SetupConnectCameraSettingActivity.this, C2328a.ON_DISCONNECT_BATTERY_LOW_FINISH, (Bundle) null);
+                                    DialogFactory.m10114a((Activity) SetupConnectCameraSettingActivity.this, C2328a.ON_DISCONNECT_BATTERY_LOW_FINISH, (Bundle) null);
                                     return;
                                 default:
-                                    C2331d.m10114a((Activity) SetupConnectCameraSettingActivity.this, C2328a.ON_DISCONNECT_FINISH, (Bundle) null);
+                                    DialogFactory.m10114a((Activity) SetupConnectCameraSettingActivity.this, C2328a.ON_DISCONNECT_FINISH, (Bundle) null);
                                     return;
                             }
                         }
@@ -225,9 +225,9 @@ public class SetupConnectCameraSettingActivity extends C5741i {
             /* renamed from: a */
             public void mo11327a(String str) {
                 if (str.equalsIgnoreCase("high")) {
-                    C2331d.m10114a((Activity) SetupConnectCameraSettingActivity.this, C2328a.ON_DISCONNECT_BY_HIGH_TEMP_FINISH, (Bundle) null);
+                    DialogFactory.m10114a((Activity) SetupConnectCameraSettingActivity.this, C2328a.ON_DISCONNECT_BY_HIGH_TEMP_FINISH, (Bundle) null);
                 } else if (str.equalsIgnoreCase("assert")) {
-                    C2331d.m10114a((Activity) SetupConnectCameraSettingActivity.this, C2328a.ON_ASEERT_TEMP_FINISH, (Bundle) null);
+                    DialogFactory.m10114a((Activity) SetupConnectCameraSettingActivity.this, C2328a.ON_ASEERT_TEMP_FINISH, (Bundle) null);
                 }
             }
         });

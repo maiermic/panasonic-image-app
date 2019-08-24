@@ -9,5 +9,5 @@ public final class C0839ez {
     public static final Status f1907a = new Status(8, "The connection to Google Play services was lost");
 
     /* renamed from: b */
-    private static final C0806dt<?>[] f1908b = new C0806dt[0];
+    private static final BasePendingResult<?>[] f1908b = new BasePendingResult[0];
 }

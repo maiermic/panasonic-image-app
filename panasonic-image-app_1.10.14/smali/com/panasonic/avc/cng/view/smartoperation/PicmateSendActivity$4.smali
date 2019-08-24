@@ -43,7 +43,7 @@
     .line 742
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/smartoperation/PicmateSendActivity$4;->a:Lcom/panasonic/avc/cng/view/smartoperation/PicmateSendActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;)V
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;)V
 
     .line 743
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/smartoperation/PicmateSendActivity$4;->a:Lcom/panasonic/avc/cng/view/smartoperation/PicmateSendActivity;

@@ -1,7 +1,7 @@
 package com.panasonic.avc.cng.core.dlna;
 
 import android.util.Xml;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import java.io.StringReader;
 import java.util.ArrayList;
 import org.xmlpull.v1.XmlPullParser;
@@ -62,7 +62,7 @@ public class C1695d {
                 eventType = xmlPullParser.next();
             }
         } catch (Exception e) {
-            C2261g.m9769c("ParseDocument", e.getMessage());
+            ImageAppLog.error("ParseDocument", e.getMessage());
         }
     }
 
@@ -77,7 +77,7 @@ public class C1695d {
                 next = xmlPullParser.next();
             }
         } catch (Exception e) {
-            C2261g.m9769c("ParseTagUnknown", e.getMessage());
+            ImageAppLog.error("ParseTagUnknown", e.getMessage());
         }
     }
 
@@ -101,7 +101,7 @@ public class C1695d {
                         str2 = xmlPullParser.getText();
                     } catch (Exception e2) {
                         e = e2;
-                        C2261g.m9769c("ParseTagSimpleText", e.getMessage());
+                        ImageAppLog.error("ParseTagSimpleText", e.getMessage());
                         return str;
                     }
                 } else {
@@ -116,7 +116,7 @@ public class C1695d {
                     Exception exc = e3;
                     str = str2;
                     e = exc;
-                    C2261g.m9769c("ParseTagSimpleText", e.getMessage());
+                    ImageAppLog.error("ParseTagSimpleText", e.getMessage());
                     return str;
                 }
             }
@@ -143,7 +143,7 @@ public class C1695d {
                 next = xmlPullParser.next();
             }
         } catch (Exception e) {
-            C2261g.m9769c("ParseTagRoot", e.getMessage());
+            ImageAppLog.error("ParseTagRoot", e.getMessage());
         }
     }
 
@@ -182,7 +182,7 @@ public class C1695d {
                 next = xmlPullParser.next();
             }
         } catch (Exception e) {
-            C2261g.m9769c("ParseTagRoot", e.getMessage());
+            ImageAppLog.error("ParseTagRoot", e.getMessage());
         }
     }
 
@@ -203,7 +203,7 @@ public class C1695d {
                 next = xmlPullParser.next();
             }
         } catch (Exception e) {
-            C2261g.m9769c("ParseServiceList", e.getMessage());
+            ImageAppLog.error("ParseServiceList", e.getMessage());
         }
     }
 
@@ -231,7 +231,7 @@ public class C1695d {
                 next = xmlPullParser.next();
             }
         } catch (Exception e) {
-            C2261g.m9769c("ParseTagService", e.getMessage());
+            ImageAppLog.error("ParseTagService", e.getMessage());
         }
     }
 }

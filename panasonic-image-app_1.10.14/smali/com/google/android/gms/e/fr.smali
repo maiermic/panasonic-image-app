@@ -1,5 +1,5 @@
 .class public final Lcom/google/android/gms/e/fr;
-.super Lcom/google/android/gms/d/dt;
+.super Lcom/google/android/gms/d/BasePendingResult;
 
 
 # annotations
@@ -62,7 +62,7 @@
     move-result-object v0
 
     :goto_0
-    invoke-direct {p0, v0}, Lcom/google/android/gms/d/dt;-><init>(Landroid/os/Looper;)V
+    invoke-direct {p0, v0}, Lcom/google/android/gms/d/BasePendingResult;-><init>(Landroid/os/Looper;)V
 
     iput-object p1, p0, Lcom/google/android/gms/e/fr;->g:Landroid/content/Context;
 

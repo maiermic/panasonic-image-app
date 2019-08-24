@@ -15,7 +15,7 @@
 # instance fields
 .field private c:Lcom/panasonic/avc/cng/view/cameraconnect/k$a;
 
-.field private d:Lcom/panasonic/avc/cng/view/cameraconnect/l;
+.field private d:Lcom/panasonic/avc/cng/view/cameraconnect/WifiUtil;
 
 .field private e:I
 
@@ -62,13 +62,13 @@
     iput-object p3, p0, Lcom/panasonic/avc/cng/view/cameraconnect/k;->c:Lcom/panasonic/avc/cng/view/cameraconnect/k$a;
 
     .line 160
-    new-instance v0, Lcom/panasonic/avc/cng/view/cameraconnect/l;
+    new-instance v0, Lcom/panasonic/avc/cng/view/cameraconnect/WifiUtil;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/cameraconnect/k;->a:Landroid/content/Context;
 
-    invoke-direct {v0, v1}, Lcom/panasonic/avc/cng/view/cameraconnect/l;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, v1}, Lcom/panasonic/avc/cng/view/cameraconnect/WifiUtil;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/k;->d:Lcom/panasonic/avc/cng/view/cameraconnect/l;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/k;->d:Lcom/panasonic/avc/cng/view/cameraconnect/WifiUtil;
 
     .line 162
     const/4 v0, 0x0
@@ -294,7 +294,7 @@
 
     const-string v1, "ConnectWifiAP2: AccessPointInfo is null..."
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 1197
     :goto_0
@@ -309,7 +309,7 @@
     if-eqz v4, :cond_2
 
     .line 921
-    iget-object v4, p0, Lcom/panasonic/avc/cng/view/cameraconnect/k;->d:Lcom/panasonic/avc/cng/view/cameraconnect/l;
+    iget-object v4, p0, Lcom/panasonic/avc/cng/view/cameraconnect/k;->d:Lcom/panasonic/avc/cng/view/cameraconnect/WifiUtil;
 
     invoke-virtual {p1}, Lcom/panasonic/avc/cng/view/cameraconnect/a;->a()Landroid/net/wifi/ScanResult;
 
@@ -321,7 +321,7 @@
     move-result-object v6
 
     .line 921
-    invoke-virtual {v4, v5, v6}, Lcom/panasonic/avc/cng/view/cameraconnect/l;->a(Landroid/net/wifi/ScanResult;Ljava/lang/String;)Landroid/net/wifi/WifiConfiguration;
+    invoke-virtual {v4, v5, v6}, Lcom/panasonic/avc/cng/view/cameraconnect/WifiUtil;->a(Landroid/net/wifi/ScanResult;Ljava/lang/String;)Landroid/net/wifi/WifiConfiguration;
 
     move-result-object v4
 
@@ -333,7 +333,7 @@
 
     const-string v1, "ConnectWifiAP2: CreateNewConfig() is failed..."
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 
@@ -343,13 +343,13 @@
 
     .line 934
     :cond_2
-    iget-object v4, p0, Lcom/panasonic/avc/cng/view/cameraconnect/k;->d:Lcom/panasonic/avc/cng/view/cameraconnect/l;
+    iget-object v4, p0, Lcom/panasonic/avc/cng/view/cameraconnect/k;->d:Lcom/panasonic/avc/cng/view/cameraconnect/WifiUtil;
 
     invoke-virtual {p1}, Lcom/panasonic/avc/cng/view/cameraconnect/a;->b()Landroid/net/wifi/WifiConfiguration;
 
     move-result-object v5
 
-    invoke-virtual {v4, v5}, Lcom/panasonic/avc/cng/view/cameraconnect/l;->a(Landroid/net/wifi/WifiConfiguration;)Z
+    invoke-virtual {v4, v5}, Lcom/panasonic/avc/cng/view/cameraconnect/WifiUtil;->a(Landroid/net/wifi/WifiConfiguration;)Z
 
     move-result v4
 
@@ -360,7 +360,7 @@
 
     const-string v2, "ConnectWifiAP2: Already Connected."
 
-    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     move v2, v0
 
@@ -432,13 +432,13 @@
     invoke-virtual {v4, v6, v7}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
     .line 1097
-    iget-object v4, p0, Lcom/panasonic/avc/cng/view/cameraconnect/k;->d:Lcom/panasonic/avc/cng/view/cameraconnect/l;
+    iget-object v4, p0, Lcom/panasonic/avc/cng/view/cameraconnect/k;->d:Lcom/panasonic/avc/cng/view/cameraconnect/WifiUtil;
 
     invoke-virtual {p1}, Lcom/panasonic/avc/cng/view/cameraconnect/a;->b()Landroid/net/wifi/WifiConfiguration;
 
     move-result-object v7
 
-    invoke-virtual {v4, v7, v10}, Lcom/panasonic/avc/cng/view/cameraconnect/l;->a(Landroid/net/wifi/WifiConfiguration;Z)Z
+    invoke-virtual {v4, v7, v10}, Lcom/panasonic/avc/cng/view/cameraconnect/WifiUtil;->a(Landroid/net/wifi/WifiConfiguration;Z)Z
 
     move-result v4
 
@@ -474,7 +474,7 @@
 
     move-result-object v7
 
-    invoke-static {v3, v7}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v3, v7}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 1106
     invoke-direct {p0}, Lcom/panasonic/avc/cng/view/cameraconnect/k;->m()Z
@@ -488,12 +488,12 @@
 
     const-string v4, "\u505c\u6b62\u8981\u6c42\u78ba\u8a8d\u3000Break"
 
-    invoke-static {v3, v4}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v3, v4}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 1143
     :cond_4
     :goto_2
-    iget-object v3, p0, Lcom/panasonic/avc/cng/view/cameraconnect/k;->d:Lcom/panasonic/avc/cng/view/cameraconnect/l;
+    iget-object v3, p0, Lcom/panasonic/avc/cng/view/cameraconnect/k;->d:Lcom/panasonic/avc/cng/view/cameraconnect/WifiUtil;
 
     if-eqz v3, :cond_6
 
@@ -577,7 +577,7 @@
 
     const-string v7, "latch\u78ba\u8a8d\u3000Break"
 
-    invoke-static {v3, v7}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v3, v7}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
     :try_end_0
     .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -608,13 +608,13 @@
 
     if-ne v3, v7, :cond_8
 
-    iget-object v3, p0, Lcom/panasonic/avc/cng/view/cameraconnect/k;->d:Lcom/panasonic/avc/cng/view/cameraconnect/l;
+    iget-object v3, p0, Lcom/panasonic/avc/cng/view/cameraconnect/k;->d:Lcom/panasonic/avc/cng/view/cameraconnect/WifiUtil;
 
     invoke-virtual {p1}, Lcom/panasonic/avc/cng/view/cameraconnect/a;->b()Landroid/net/wifi/WifiConfiguration;
 
     move-result-object v7
 
-    invoke-virtual {v3, v7}, Lcom/panasonic/avc/cng/view/cameraconnect/l;->b(Landroid/net/wifi/WifiConfiguration;)Z
+    invoke-virtual {v3, v7}, Lcom/panasonic/avc/cng/view/cameraconnect/WifiUtil;->b(Landroid/net/wifi/WifiConfiguration;)Z
 
     move-result v3
 
@@ -625,10 +625,10 @@
 
     const-string v7, "\u6307\u5b9aAP\u306b\u63a5\u7d9a\u3055\u308c\u3066\u3044\u306a\u3044\u2192\u518d\u63a5\u7d9a"
 
-    invoke-static {v3, v7}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v3, v7}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 1127
-    iget-object v3, p0, Lcom/panasonic/avc/cng/view/cameraconnect/k;->d:Lcom/panasonic/avc/cng/view/cameraconnect/l;
+    iget-object v3, p0, Lcom/panasonic/avc/cng/view/cameraconnect/k;->d:Lcom/panasonic/avc/cng/view/cameraconnect/WifiUtil;
 
     invoke-virtual {p1}, Lcom/panasonic/avc/cng/view/cameraconnect/a;->b()Landroid/net/wifi/WifiConfiguration;
 
@@ -636,7 +636,7 @@
 
     const/4 v8, 0x1
 
-    invoke-virtual {v3, v7, v8}, Lcom/panasonic/avc/cng/view/cameraconnect/l;->a(Landroid/net/wifi/WifiConfiguration;Z)Z
+    invoke-virtual {v3, v7, v8}, Lcom/panasonic/avc/cng/view/cameraconnect/WifiUtil;->a(Landroid/net/wifi/WifiConfiguration;Z)Z
     :try_end_1
     .catch Ljava/lang/InterruptedException; {:try_start_1 .. :try_end_1} :catch_0
 
@@ -648,7 +648,7 @@
 
     const-string v4, "ConnectWifiAP2: ConnectWifiAP() is failed..."
 
-    invoke-static {v3, v4}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v3, v4}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 1140
     iput v2, p0, Lcom/panasonic/avc/cng/view/cameraconnect/k;->h:I
@@ -664,9 +664,9 @@
     if-ge v3, v4, :cond_6
 
     .line 1166
-    iget-object v3, p0, Lcom/panasonic/avc/cng/view/cameraconnect/k;->d:Lcom/panasonic/avc/cng/view/cameraconnect/l;
+    iget-object v3, p0, Lcom/panasonic/avc/cng/view/cameraconnect/k;->d:Lcom/panasonic/avc/cng/view/cameraconnect/WifiUtil;
 
-    invoke-virtual {v3}, Lcom/panasonic/avc/cng/view/cameraconnect/l;->d()V
+    invoke-virtual {v3}, Lcom/panasonic/avc/cng/view/cameraconnect/WifiUtil;->d()V
 
     goto :goto_3
 
@@ -677,13 +677,13 @@
     if-ne v0, v1, :cond_d
 
     .line 1187
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/k;->d:Lcom/panasonic/avc/cng/view/cameraconnect/l;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/k;->d:Lcom/panasonic/avc/cng/view/cameraconnect/WifiUtil;
 
     invoke-virtual {p1}, Lcom/panasonic/avc/cng/view/cameraconnect/a;->b()Landroid/net/wifi/WifiConfiguration;
 
     move-result-object v2
 
-    invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/view/cameraconnect/l;->c(Landroid/net/wifi/WifiConfiguration;)V
+    invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/view/cameraconnect/WifiUtil;->c(Landroid/net/wifi/WifiConfiguration;)V
 
     move v0, v1
 
@@ -728,30 +728,30 @@
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
     .line 807
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/k;->d:Lcom/panasonic/avc/cng/view/cameraconnect/l;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/k;->d:Lcom/panasonic/avc/cng/view/cameraconnect/WifiUtil;
 
-    invoke-virtual {v0, p1}, Lcom/panasonic/avc/cng/view/cameraconnect/l;->b(Z)Ljava/util/List;
+    invoke-virtual {v0, p1}, Lcom/panasonic/avc/cng/view/cameraconnect/WifiUtil;->b(Z)Ljava/util/List;
 
     move-result-object v0
 
     .line 808
-    iget-object v2, p0, Lcom/panasonic/avc/cng/view/cameraconnect/k;->d:Lcom/panasonic/avc/cng/view/cameraconnect/l;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/view/cameraconnect/k;->d:Lcom/panasonic/avc/cng/view/cameraconnect/WifiUtil;
 
-    invoke-virtual {v2}, Lcom/panasonic/avc/cng/view/cameraconnect/l;->c()Ljava/util/List;
+    invoke-virtual {v2}, Lcom/panasonic/avc/cng/view/cameraconnect/WifiUtil;->c()Ljava/util/List;
 
     move-result-object v2
 
     .line 809
-    iget-object v3, p0, Lcom/panasonic/avc/cng/view/cameraconnect/k;->d:Lcom/panasonic/avc/cng/view/cameraconnect/l;
+    iget-object v3, p0, Lcom/panasonic/avc/cng/view/cameraconnect/k;->d:Lcom/panasonic/avc/cng/view/cameraconnect/WifiUtil;
 
-    invoke-virtual {v3}, Lcom/panasonic/avc/cng/view/cameraconnect/l;->b()Landroid/net/wifi/WifiInfo;
+    invoke-virtual {v3}, Lcom/panasonic/avc/cng/view/cameraconnect/WifiUtil;->b()Landroid/net/wifi/WifiInfo;
 
     move-result-object v3
 
     .line 810
-    iget-object v4, p0, Lcom/panasonic/avc/cng/view/cameraconnect/k;->d:Lcom/panasonic/avc/cng/view/cameraconnect/l;
+    iget-object v4, p0, Lcom/panasonic/avc/cng/view/cameraconnect/k;->d:Lcom/panasonic/avc/cng/view/cameraconnect/WifiUtil;
 
-    invoke-virtual {v4, v3}, Lcom/panasonic/avc/cng/view/cameraconnect/l;->a(Landroid/net/wifi/WifiInfo;)Ljava/lang/String;
+    invoke-virtual {v4, v3}, Lcom/panasonic/avc/cng/view/cameraconnect/WifiUtil;->a(Landroid/net/wifi/WifiInfo;)Ljava/lang/String;
 
     move-result-object v3
 
@@ -847,9 +847,9 @@
     invoke-direct {v3, v7, v0}, Lcom/panasonic/avc/cng/view/cameraconnect/a;-><init>(Landroid/net/wifi/ScanResult;Landroid/net/wifi/WifiConfiguration;)V
 
     .line 845
-    iget-object v4, p0, Lcom/panasonic/avc/cng/view/cameraconnect/k;->d:Lcom/panasonic/avc/cng/view/cameraconnect/l;
+    iget-object v4, p0, Lcom/panasonic/avc/cng/view/cameraconnect/k;->d:Lcom/panasonic/avc/cng/view/cameraconnect/WifiUtil;
 
-    invoke-virtual {v4, v0}, Lcom/panasonic/avc/cng/view/cameraconnect/l;->a(Landroid/net/wifi/WifiConfiguration;)Z
+    invoke-virtual {v4, v0}, Lcom/panasonic/avc/cng/view/cameraconnect/WifiUtil;->a(Landroid/net/wifi/WifiConfiguration;)Z
 
     move-result v0
 
@@ -925,9 +925,9 @@
     const/4 v0, 0x0
 
     .line 770
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/cameraconnect/k;->d:Lcom/panasonic/avc/cng/view/cameraconnect/l;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/cameraconnect/k;->d:Lcom/panasonic/avc/cng/view/cameraconnect/WifiUtil;
 
-    invoke-virtual {v1, p1}, Lcom/panasonic/avc/cng/view/cameraconnect/l;->a(Z)Z
+    invoke-virtual {v1, p1}, Lcom/panasonic/avc/cng/view/cameraconnect/WifiUtil;->a(Z)Z
 
     move-result v1
 
@@ -942,11 +942,11 @@
     if-ge v1, v2, :cond_0
 
     .line 776
-    iget-object v2, p0, Lcom/panasonic/avc/cng/view/cameraconnect/k;->d:Lcom/panasonic/avc/cng/view/cameraconnect/l;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/view/cameraconnect/k;->d:Lcom/panasonic/avc/cng/view/cameraconnect/WifiUtil;
 
     const-wide/16 v4, 0x3e8
 
-    invoke-virtual {v2, p1, v4, v5}, Lcom/panasonic/avc/cng/view/cameraconnect/l;->a(ZJ)Z
+    invoke-virtual {v2, p1, v4, v5}, Lcom/panasonic/avc/cng/view/cameraconnect/WifiUtil;->a(ZJ)Z
 
     move-result v2
 
@@ -1042,12 +1042,12 @@
     return v0
 .end method
 
-.method static synthetic e(Lcom/panasonic/avc/cng/view/cameraconnect/k;)Lcom/panasonic/avc/cng/view/cameraconnect/l;
+.method static synthetic e(Lcom/panasonic/avc/cng/view/cameraconnect/k;)Lcom/panasonic/avc/cng/view/cameraconnect/WifiUtil;
     .locals 1
 
     .prologue
     .line 32
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/k;->d:Lcom/panasonic/avc/cng/view/cameraconnect/l;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/k;->d:Lcom/panasonic/avc/cng/view/cameraconnect/WifiUtil;
 
     return-object v0
 .end method
@@ -1122,7 +1122,7 @@
     .line 707
     iget-object v3, p0, Lcom/panasonic/avc/cng/view/cameraconnect/k;->a:Landroid/content/Context;
 
-    invoke-static {v3, v1}, Lcom/panasonic/avc/cng/model/service/z;->b(Landroid/content/Context;Z)Lcom/panasonic/avc/cng/model/service/f;
+    invoke-static {v3, v1}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->b(Landroid/content/Context;Z)Lcom/panasonic/avc/cng/model/service/f;
 
     move-result-object v4
 
@@ -1183,9 +1183,9 @@
 
     .line 745
     :cond_3
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/k;->d:Lcom/panasonic/avc/cng/view/cameraconnect/l;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/k;->d:Lcom/panasonic/avc/cng/view/cameraconnect/WifiUtil;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/cameraconnect/l;->a()Z
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/cameraconnect/WifiUtil;->a()Z
 
     move-result v0
 
@@ -1210,9 +1210,9 @@
 
     .prologue
     .line 654
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/k;->d:Lcom/panasonic/avc/cng/view/cameraconnect/l;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/k;->d:Lcom/panasonic/avc/cng/view/cameraconnect/WifiUtil;
 
-    invoke-virtual {v0, p1}, Lcom/panasonic/avc/cng/view/cameraconnect/l;->a(I)Landroid/net/NetworkInfo;
+    invoke-virtual {v0, p1}, Lcom/panasonic/avc/cng/view/cameraconnect/WifiUtil;->a(I)Landroid/net/NetworkInfo;
 
     move-result-object v0
 
@@ -1243,14 +1243,14 @@
 
     .prologue
     .line 671
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/k;->d:Lcom/panasonic/avc/cng/view/cameraconnect/l;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/k;->d:Lcom/panasonic/avc/cng/view/cameraconnect/WifiUtil;
 
     if-eqz v0, :cond_0
 
     .line 673
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/k;->d:Lcom/panasonic/avc/cng/view/cameraconnect/l;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/k;->d:Lcom/panasonic/avc/cng/view/cameraconnect/WifiUtil;
 
-    invoke-virtual {v0, p1}, Lcom/panasonic/avc/cng/view/cameraconnect/l;->a(Lcom/panasonic/avc/cng/view/cameraconnect/a;)V
+    invoke-virtual {v0, p1}, Lcom/panasonic/avc/cng/view/cameraconnect/WifiUtil;->a(Lcom/panasonic/avc/cng/view/cameraconnect/a;)V
 
     .line 675
     :cond_0
@@ -1417,7 +1417,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 1214
     const/4 v3, 0x0
@@ -1468,7 +1468,7 @@
 
     const-string v1, "FindTargetAP() Canceled... "
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 1305
     :goto_2
@@ -1486,7 +1486,7 @@
 
     const-string v1, "FindTargetAP() Failed... "
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 1312
     const/4 v0, 0x0
@@ -1532,7 +1532,7 @@
 
     const-string v1, "FindTargetAP() time out... "
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_2
 
@@ -1647,7 +1647,7 @@
 
     const-string v2, "FindTargetAP() Success!!"
 
-    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_3
 
@@ -1665,7 +1665,7 @@
 
     const-string v1, "FindTargetAP() empty time out... "
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     goto/16 :goto_2
 
@@ -1967,14 +1967,14 @@
 
     .line 639
     .line 641
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/cameraconnect/k;->d:Lcom/panasonic/avc/cng/view/cameraconnect/l;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/cameraconnect/k;->d:Lcom/panasonic/avc/cng/view/cameraconnect/WifiUtil;
 
     if-eqz v1, :cond_0
 
     .line 643
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/cameraconnect/k;->d:Lcom/panasonic/avc/cng/view/cameraconnect/l;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/cameraconnect/k;->d:Lcom/panasonic/avc/cng/view/cameraconnect/WifiUtil;
 
-    invoke-virtual {v1, v0}, Lcom/panasonic/avc/cng/view/cameraconnect/l;->b(I)Z
+    invoke-virtual {v1, v0}, Lcom/panasonic/avc/cng/view/cameraconnect/WifiUtil;->b(I)Z
 
     move-result v0
 
@@ -1991,14 +1991,14 @@
 
     .line 659
     .line 661
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/cameraconnect/k;->d:Lcom/panasonic/avc/cng/view/cameraconnect/l;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/cameraconnect/k;->d:Lcom/panasonic/avc/cng/view/cameraconnect/WifiUtil;
 
     if-eqz v1, :cond_0
 
     .line 663
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/cameraconnect/k;->d:Lcom/panasonic/avc/cng/view/cameraconnect/l;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/cameraconnect/k;->d:Lcom/panasonic/avc/cng/view/cameraconnect/WifiUtil;
 
-    invoke-virtual {v1, v0}, Lcom/panasonic/avc/cng/view/cameraconnect/l;->b(I)Z
+    invoke-virtual {v1, v0}, Lcom/panasonic/avc/cng/view/cameraconnect/WifiUtil;->b(I)Z
 
     move-result v0
 

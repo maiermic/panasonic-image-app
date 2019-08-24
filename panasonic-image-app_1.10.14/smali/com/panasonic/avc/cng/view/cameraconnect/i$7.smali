@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/view/cameraconnect/i;->b(Lcom/panasonic/avc/cng/model/f;Lcom/panasonic/avc/cng/model/n;)V
+    value = Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->b(Lcom/panasonic/avc/cng/model/f;Lcom/panasonic/avc/cng/model/n;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,16 +20,16 @@
 # instance fields
 .field final synthetic a:Lcom/panasonic/avc/cng/model/f;
 
-.field final synthetic b:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+.field final synthetic b:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
 
 # direct methods
-.method constructor <init>(Lcom/panasonic/avc/cng/view/cameraconnect/i;Lcom/panasonic/avc/cng/model/f;)V
+.method constructor <init>(Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;Lcom/panasonic/avc/cng/model/f;)V
     .locals 0
 
     .prologue
     .line 1361
-    iput-object p1, p0, Lcom/panasonic/avc/cng/view/cameraconnect/i$7;->b:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/view/cameraconnect/i$7;->b:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
     iput-object p2, p0, Lcom/panasonic/avc/cng/view/cameraconnect/i$7;->a:Lcom/panasonic/avc/cng/model/f;
 
@@ -45,16 +45,16 @@
 
     .prologue
     .line 1363
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/i$7;->b:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/i$7;->b:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/cameraconnect/i;->A:Lcom/panasonic/avc/cng/view/cameraconnect/e$a;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->A:Lcom/panasonic/avc/cng/view/cameraconnect/e$a;
 
     if-eqz v0, :cond_0
 
     .line 1364
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/i$7;->b:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/i$7;->b:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/cameraconnect/i;->A:Lcom/panasonic/avc/cng/view/cameraconnect/e$a;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->A:Lcom/panasonic/avc/cng/view/cameraconnect/e$a;
 
     const/4 v1, 0x1
 

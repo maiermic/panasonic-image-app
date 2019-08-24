@@ -1771,11 +1771,11 @@
     aput-object v1, v0, v4
 
     .line 610
-    new-instance v1, Lcom/panasonic/avc/cng/model/service/a/q;
+    new-instance v1, Lcom/panasonic/avc/cng/model/service/a/SortCursor;
 
     const-string v2, "date_added"
 
-    invoke-direct {v1, v0, v2, v3, v3}, Lcom/panasonic/avc/cng/model/service/a/q;-><init>([Landroid/database/Cursor;Ljava/lang/String;IZ)V
+    invoke-direct {v1, v0, v2, v3, v3}, Lcom/panasonic/avc/cng/model/service/a/SortCursor;-><init>([Landroid/database/Cursor;Ljava/lang/String;IZ)V
 
     iput-object v1, p0, Lcom/panasonic/avc/cng/model/service/a/f;->d:Landroid/database/Cursor;
 
@@ -1806,11 +1806,11 @@
     aput-object v1, v0, v3
 
     .line 622
-    new-instance v1, Lcom/panasonic/avc/cng/model/service/a/q;
+    new-instance v1, Lcom/panasonic/avc/cng/model/service/a/SortCursor;
 
     const-string v2, "date_added"
 
-    invoke-direct {v1, v0, v2, v3, v3}, Lcom/panasonic/avc/cng/model/service/a/q;-><init>([Landroid/database/Cursor;Ljava/lang/String;IZ)V
+    invoke-direct {v1, v0, v2, v3, v3}, Lcom/panasonic/avc/cng/model/service/a/SortCursor;-><init>([Landroid/database/Cursor;Ljava/lang/String;IZ)V
 
     iput-object v1, p0, Lcom/panasonic/avc/cng/model/service/a/f;->d:Landroid/database/Cursor;
 
@@ -1865,7 +1865,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 841
     iget-object v9, p0, Lcom/panasonic/avc/cng/model/service/a/f;->l:Ljava/lang/Object;
@@ -1930,7 +1930,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 883
     return-void
@@ -2012,7 +2012,7 @@
 
     const-string v1, "Error on New LocalConent"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_1
 

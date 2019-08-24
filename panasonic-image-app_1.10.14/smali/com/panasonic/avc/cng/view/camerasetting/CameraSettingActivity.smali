@@ -26,11 +26,11 @@
 
 .field private C:J
 
-.field private b:Lcom/panasonic/avc/cng/view/camerasetting/c;
+.field private b:Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;
 
-.field private c:Lcom/panasonic/avc/cng/core/a/ao;
+.field private c:Lcom/panasonic/avc/cng/core/a/StatusCommand;
 
-.field private d:Lcom/panasonic/avc/cng/core/a/y;
+.field private d:Lcom/panasonic/avc/cng/core/a/ModeChangeCommand;
 
 .field private e:Landroid/widget/TextView;
 
@@ -99,7 +99,7 @@
 
     .prologue
     .line 68
-    const-class v0, Lcom/panasonic/avc/cng/view/camerasetting/c;
+    const-class v0, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
 
@@ -754,12 +754,12 @@
     return-object v0
 .end method
 
-.method static synthetic d(Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingActivity;)Lcom/panasonic/avc/cng/core/a/ao;
+.method static synthetic d(Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingActivity;)Lcom/panasonic/avc/cng/core/a/StatusCommand;
     .locals 1
 
     .prologue
     .line 65
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingActivity;->c:Lcom/panasonic/avc/cng/core/a/ao;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingActivity;->c:Lcom/panasonic/avc/cng/core/a/StatusCommand;
 
     return-object v0
 .end method
@@ -803,7 +803,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {p0, v0, v1}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {p0, v0, v1}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     .line 304
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingActivity;->p:Lcom/panasonic/avc/cng/model/service/j;
@@ -835,7 +835,7 @@
 
     move-result-object v2
 
-    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 306
     const-string v1, "Critical_Error"
@@ -847,7 +847,7 @@
     if-eqz v0, :cond_2
 
     .line 308
-    invoke-static {p0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;)V
+    invoke-static {p0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;)V
 
     .line 316
     :cond_2
@@ -997,12 +997,12 @@
     return-object v0
 .end method
 
-.method static synthetic q(Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingActivity;)Lcom/panasonic/avc/cng/view/camerasetting/c;
+.method static synthetic q(Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingActivity;)Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;
     .locals 1
 
     .prologue
     .line 65
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingActivity;->b:Lcom/panasonic/avc/cng/view/camerasetting/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingActivity;->b:Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;
 
     return-object v0
 .end method
@@ -1104,7 +1104,7 @@
 
     .prologue
     .line 664
-    invoke-static {p0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;)V
+    invoke-static {p0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;)V
 
     .line 665
     return-void
@@ -1119,7 +1119,7 @@
 
     const v1, 0x7f0f02a0
 
-    invoke-static {p0, v0, v1}, Lcom/panasonic/avc/cng/view/b/d;->c(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;I)Landroid/text/Editable;
+    invoke-static {p0, v0, v1}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->c(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;I)Landroid/text/Editable;
 
     move-result-object v0
 
@@ -1212,7 +1212,7 @@
 
     .line 655
     :cond_0
-    invoke-static {p0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;)V
+    invoke-static {p0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;)V
 
     .line 656
     return-void
@@ -1235,14 +1235,14 @@
 
     const-string v1, ""
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 448
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
@@ -1286,11 +1286,11 @@
 
     .prologue
     .line 672
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
@@ -1328,7 +1328,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {p0, v0, v1}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {p0, v0, v1}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     goto :goto_0
 
@@ -1359,7 +1359,7 @@
     .line 516
     sget-object v0, Lcom/panasonic/avc/cng/view/b/b$a;->hl:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {p0, v0, v2}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {p0, v0, v2}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     .line 567
     :goto_0
@@ -1367,11 +1367,11 @@
 
     .line 520
     :cond_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingActivity;->c:Lcom/panasonic/avc/cng/core/a/ao;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingActivity;->c:Lcom/panasonic/avc/cng/core/a/StatusCommand;
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingActivity;->d:Lcom/panasonic/avc/cng/core/a/y;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingActivity;->d:Lcom/panasonic/avc/cng/core/a/ModeChangeCommand;
 
     if-nez v0, :cond_2
 
@@ -1380,22 +1380,22 @@
     if-eqz p1, :cond_3
 
     .line 523
-    new-instance v0, Lcom/panasonic/avc/cng/core/a/ao;
+    new-instance v0, Lcom/panasonic/avc/cng/core/a/StatusCommand;
 
     iget-object v1, p1, Lcom/panasonic/avc/cng/model/f;->d:Ljava/lang/String;
 
-    invoke-direct {v0, v1}, Lcom/panasonic/avc/cng/core/a/ao;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v1}, Lcom/panasonic/avc/cng/core/a/StatusCommand;-><init>(Ljava/lang/String;)V
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingActivity;->c:Lcom/panasonic/avc/cng/core/a/ao;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingActivity;->c:Lcom/panasonic/avc/cng/core/a/StatusCommand;
 
     .line 524
-    new-instance v0, Lcom/panasonic/avc/cng/core/a/y;
+    new-instance v0, Lcom/panasonic/avc/cng/core/a/ModeChangeCommand;
 
     iget-object v1, p1, Lcom/panasonic/avc/cng/model/f;->d:Ljava/lang/String;
 
-    invoke-direct {v0, v1}, Lcom/panasonic/avc/cng/core/a/y;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v1}, Lcom/panasonic/avc/cng/core/a/ModeChangeCommand;-><init>(Ljava/lang/String;)V
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingActivity;->d:Lcom/panasonic/avc/cng/core/a/y;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingActivity;->d:Lcom/panasonic/avc/cng/core/a/ModeChangeCommand;
 
     .line 533
     :cond_2
@@ -1416,7 +1416,7 @@
     :cond_3
     sget-object v0, Lcom/panasonic/avc/cng/view/b/b$a;->hm:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {p0, v0, v2}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {p0, v0, v2}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     goto :goto_0
 .end method
@@ -1517,12 +1517,12 @@
 
     const/4 v1, 0x0
 
-    invoke-static {p0, v0, v1}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {p0, v0, v1}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     .line 704
     sget-object v0, Lcom/panasonic/avc/cng/view/b/b$a;->hn:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {p0, v0}, Lcom/panasonic/avc/cng/view/b/d;->c(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;)Landroid/app/Dialog;
+    invoke-static {p0, v0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->c(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;)Landroid/app/Dialog;
 
     move-result-object v1
 
@@ -1584,11 +1584,11 @@
     const/4 v3, 0x0
 
     .line 575
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingActivity;->c:Lcom/panasonic/avc/cng/core/a/ao;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingActivity;->c:Lcom/panasonic/avc/cng/core/a/StatusCommand;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingActivity;->d:Lcom/panasonic/avc/cng/core/a/y;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingActivity;->d:Lcom/panasonic/avc/cng/core/a/ModeChangeCommand;
 
     if-nez v0, :cond_1
 
@@ -1597,22 +1597,22 @@
     if-eqz p1, :cond_2
 
     .line 579
-    new-instance v0, Lcom/panasonic/avc/cng/core/a/ao;
+    new-instance v0, Lcom/panasonic/avc/cng/core/a/StatusCommand;
 
     iget-object v1, p1, Lcom/panasonic/avc/cng/model/f;->d:Ljava/lang/String;
 
-    invoke-direct {v0, v1}, Lcom/panasonic/avc/cng/core/a/ao;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v1}, Lcom/panasonic/avc/cng/core/a/StatusCommand;-><init>(Ljava/lang/String;)V
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingActivity;->c:Lcom/panasonic/avc/cng/core/a/ao;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingActivity;->c:Lcom/panasonic/avc/cng/core/a/StatusCommand;
 
     .line 580
-    new-instance v0, Lcom/panasonic/avc/cng/core/a/y;
+    new-instance v0, Lcom/panasonic/avc/cng/core/a/ModeChangeCommand;
 
     iget-object v1, p1, Lcom/panasonic/avc/cng/model/f;->d:Ljava/lang/String;
 
-    invoke-direct {v0, v1}, Lcom/panasonic/avc/cng/core/a/y;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v1}, Lcom/panasonic/avc/cng/core/a/ModeChangeCommand;-><init>(Ljava/lang/String;)V
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingActivity;->d:Lcom/panasonic/avc/cng/core/a/y;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingActivity;->d:Lcom/panasonic/avc/cng/core/a/ModeChangeCommand;
 
     .line 592
     :cond_1
@@ -1678,7 +1678,7 @@
     .line 608
     sget-object v0, Lcom/panasonic/avc/cng/view/b/b$a;->hm:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {p0, v0, v3}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {p0, v0, v3}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     .line 630
     :goto_2
@@ -1688,7 +1688,7 @@
     :cond_2
     sget-object v0, Lcom/panasonic/avc/cng/view/b/b$a;->hm:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {p0, v0, v3}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {p0, v0, v3}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     goto :goto_2
 
@@ -1892,7 +1892,7 @@
 
     .line 345
     :cond_0
-    sget-object v0, Lcom/panasonic/avc/cng/view/camerasetting/c;->e:Ljava/lang/String;
+    sget-object v0, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;->e:Ljava/lang/String;
 
     invoke-static {v0}, Lcom/panasonic/avc/cng/view/a/j;->b(Ljava/lang/String;)V
 
@@ -1937,23 +1937,23 @@
     iput-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingActivity;->r:Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingActivity$c;
 
     .line 128
-    sget-object v0, Lcom/panasonic/avc/cng/view/camerasetting/c;->e:Ljava/lang/String;
+    sget-object v0, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;->e:Ljava/lang/String;
 
     invoke-static {v0}, Lcom/panasonic/avc/cng/view/a/j;->a(Ljava/lang/String;)Lcom/panasonic/avc/cng/view/a/c;
 
     move-result-object v0
 
-    check-cast v0, Lcom/panasonic/avc/cng/view/camerasetting/c;
+    check-cast v0, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingActivity;->b:Lcom/panasonic/avc/cng/view/camerasetting/c;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingActivity;->b:Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;
 
     .line 129
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingActivity;->b:Lcom/panasonic/avc/cng/view/camerasetting/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingActivity;->b:Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;
 
     if-nez v0, :cond_4
 
     .line 132
-    new-instance v0, Lcom/panasonic/avc/cng/view/camerasetting/c;
+    new-instance v0, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingActivity;->_context:Landroid/content/Context;
 
@@ -1963,12 +1963,12 @@
 
     iget-object v4, p0, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingActivity;->r:Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingActivity$c;
 
-    invoke-direct {v0, v1, v2, v3, v4}, Lcom/panasonic/avc/cng/view/camerasetting/c;-><init>(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/model/service/j$a;Lcom/panasonic/avc/cng/model/service/j$d;)V
+    invoke-direct {v0, v1, v2, v3, v4}, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;-><init>(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/model/service/j$a;Lcom/panasonic/avc/cng/model/service/j$d;)V
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingActivity;->b:Lcom/panasonic/avc/cng/view/camerasetting/c;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingActivity;->b:Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;
 
     .line 133
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingActivity;->b:Lcom/panasonic/avc/cng/view/camerasetting/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingActivity;->b:Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingActivity;->_context:Landroid/content/Context;
 
@@ -1978,12 +1978,12 @@
 
     iget-object v4, p0, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingActivity;->r:Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingActivity$c;
 
-    invoke-virtual {v0, v1, v2, v3, v4}, Lcom/panasonic/avc/cng/view/camerasetting/c;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/model/service/j$a;Lcom/panasonic/avc/cng/model/service/j$d;)V
+    invoke-virtual {v0, v1, v2, v3, v4}, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/model/service/j$a;Lcom/panasonic/avc/cng/model/service/j$d;)V
 
     .line 136
-    sget-object v0, Lcom/panasonic/avc/cng/view/camerasetting/c;->e:Ljava/lang/String;
+    sget-object v0, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;->e:Ljava/lang/String;
 
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingActivity;->b:Lcom/panasonic/avc/cng/view/camerasetting/c;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingActivity;->b:Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;
 
     invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/a/j;->a(Ljava/lang/String;Lcom/panasonic/avc/cng/view/a/c;)V
 
@@ -2058,11 +2058,11 @@
 
     .line 156
     :cond_0
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
@@ -2070,22 +2070,22 @@
     if-eqz v0, :cond_5
 
     .line 160
-    new-instance v1, Lcom/panasonic/avc/cng/core/a/ao;
+    new-instance v1, Lcom/panasonic/avc/cng/core/a/StatusCommand;
 
     iget-object v2, v0, Lcom/panasonic/avc/cng/model/f;->d:Ljava/lang/String;
 
-    invoke-direct {v1, v2}, Lcom/panasonic/avc/cng/core/a/ao;-><init>(Ljava/lang/String;)V
+    invoke-direct {v1, v2}, Lcom/panasonic/avc/cng/core/a/StatusCommand;-><init>(Ljava/lang/String;)V
 
-    iput-object v1, p0, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingActivity;->c:Lcom/panasonic/avc/cng/core/a/ao;
+    iput-object v1, p0, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingActivity;->c:Lcom/panasonic/avc/cng/core/a/StatusCommand;
 
     .line 161
-    new-instance v1, Lcom/panasonic/avc/cng/core/a/y;
+    new-instance v1, Lcom/panasonic/avc/cng/core/a/ModeChangeCommand;
 
     iget-object v0, v0, Lcom/panasonic/avc/cng/model/f;->d:Ljava/lang/String;
 
-    invoke-direct {v1, v0}, Lcom/panasonic/avc/cng/core/a/y;-><init>(Ljava/lang/String;)V
+    invoke-direct {v1, v0}, Lcom/panasonic/avc/cng/core/a/ModeChangeCommand;-><init>(Ljava/lang/String;)V
 
-    iput-object v1, p0, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingActivity;->d:Lcom/panasonic/avc/cng/core/a/y;
+    iput-object v1, p0, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingActivity;->d:Lcom/panasonic/avc/cng/core/a/ModeChangeCommand;
 
     .line 163
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingActivity;->e:Landroid/widget/TextView;
@@ -2165,7 +2165,7 @@
     .line 218
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingActivity;->_context:Landroid/content/Context;
 
-    invoke-static {v0, v5}, Lcom/panasonic/avc/cng/model/service/z;->a(Landroid/content/Context;Z)Lcom/panasonic/avc/cng/model/service/e;
+    invoke-static {v0, v5}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->a(Landroid/content/Context;Z)Lcom/panasonic/avc/cng/model/service/e;
 
     move-result-object v0
 
@@ -2217,7 +2217,7 @@
 
     .line 139
     :cond_4
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingActivity;->b:Lcom/panasonic/avc/cng/view/camerasetting/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingActivity;->b:Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingActivity;->_context:Landroid/content/Context;
 
@@ -2227,7 +2227,7 @@
 
     iget-object v4, p0, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingActivity;->r:Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingActivity$c;
 
-    invoke-virtual {v0, v1, v2, v3, v4}, Lcom/panasonic/avc/cng/view/camerasetting/c;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/model/service/j$a;Lcom/panasonic/avc/cng/model/service/j$d;)V
+    invoke-virtual {v0, v1, v2, v3, v4}, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/model/service/j$a;Lcom/panasonic/avc/cng/model/service/j$d;)V
 
     goto/16 :goto_0
 
@@ -2362,7 +2362,7 @@
 
     const-string v1, ""
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 753
     invoke-virtual {p0}, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingActivity;->a()V
@@ -2376,7 +2376,7 @@
     .line 758
     const-string v0, ""
 
-    invoke-static {v3, v0}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v3, v0}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 759
     invoke-virtual {p0}, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingActivity;->b()V
@@ -2392,12 +2392,12 @@
     .line 764
     const-string v0, ""
 
-    invoke-static {v4, v0}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v4, v0}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 765
     sget-object v0, Lcom/panasonic/avc/cng/view/b/b$a;->ho:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {p0, v0, v5}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {p0, v0, v5}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     goto :goto_0
 
@@ -2408,7 +2408,7 @@
     .line 773
     const-string v0, ""
 
-    invoke-static {v3, v0}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v3, v0}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 774
     invoke-virtual {p0}, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingActivity;->b()V
@@ -2422,12 +2422,12 @@
     .line 779
     const-string v0, ""
 
-    invoke-static {v4, v0}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v4, v0}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 780
     sget-object v0, Lcom/panasonic/avc/cng/view/b/b$a;->ho:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {p0, v0, v5}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {p0, v0, v5}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     goto :goto_0
 
@@ -2447,7 +2447,7 @@
 
     const-string v1, "onPause()"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 323
     invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/i;->onPause()V
@@ -2463,7 +2463,7 @@
     invoke-interface {v0}, Lcom/panasonic/avc/cng/model/service/j;->c()V
 
     .line 328
-    invoke-static {}, Lcom/panasonic/avc/cng/model/service/z;->j()V
+    invoke-static {}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->j()V
 
     .line 329
     const/4 v0, 0x0
@@ -2509,7 +2509,7 @@
     .line 397
     sget-object v0, Lcom/panasonic/avc/cng/view/b/b$a;->j:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {p0, v0, v3}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {p0, v0, v3}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     .line 399
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingActivity;->p:Lcom/panasonic/avc/cng/model/service/j;
@@ -2619,7 +2619,7 @@
 
     const-string v1, "onResume()"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 239
     invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/i;->onResume()V
@@ -2634,11 +2634,11 @@
     if-eqz v0, :cond_5
 
     .line 244
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
@@ -2646,9 +2646,9 @@
     if-nez v0, :cond_3
 
     .line 247
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingActivity;->b:Lcom/panasonic/avc/cng/view/camerasetting/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingActivity;->b:Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;
 
-    invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/view/camerasetting/c;->c(Z)Lcom/panasonic/avc/cng/model/service/j;
+    invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;->c(Z)Lcom/panasonic/avc/cng/model/service/j;
 
     move-result-object v0
 
@@ -2700,9 +2700,9 @@
     if-eqz v0, :cond_4
 
     .line 269
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingActivity;->b:Lcom/panasonic/avc/cng/view/camerasetting/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingActivity;->b:Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;
 
-    invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/view/camerasetting/c;->c(Z)Lcom/panasonic/avc/cng/model/service/j;
+    invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;->c(Z)Lcom/panasonic/avc/cng/model/service/j;
 
     move-result-object v0
 

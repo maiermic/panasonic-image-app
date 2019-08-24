@@ -43,9 +43,9 @@
     .line 310
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/av$a$3;->a:Lcom/panasonic/avc/cng/view/setting/av$a;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/av$a;->a:Lcom/panasonic/avc/cng/view/setting/av;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/av$a;->a:Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerPhotoStyleViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/av;->g(Lcom/panasonic/avc/cng/view/setting/av;)Lcom/panasonic/avc/cng/view/setting/am$h;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerPhotoStyleViewModel;->g(Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerPhotoStyleViewModel;)Lcom/panasonic/avc/cng/view/setting/am$h;
 
     move-result-object v0
 
@@ -54,9 +54,9 @@
     .line 311
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/av$a$3;->a:Lcom/panasonic/avc/cng/view/setting/av$a;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/av$a;->a:Lcom/panasonic/avc/cng/view/setting/av;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/av$a;->a:Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerPhotoStyleViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/av;->g(Lcom/panasonic/avc/cng/view/setting/av;)Lcom/panasonic/avc/cng/view/setting/am$h;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerPhotoStyleViewModel;->g(Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerPhotoStyleViewModel;)Lcom/panasonic/avc/cng/view/setting/am$h;
 
     move-result-object v0
 

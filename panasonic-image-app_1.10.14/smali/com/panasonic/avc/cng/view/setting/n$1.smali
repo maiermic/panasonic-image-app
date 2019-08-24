@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/panasonic/avc/cng/view/setting/n;
+    value = Lcom/panasonic/avc/cng/view/setting/LiveSetupSliderBarActivity;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

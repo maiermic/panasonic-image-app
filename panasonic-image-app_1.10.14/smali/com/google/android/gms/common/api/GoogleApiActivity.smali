@@ -95,7 +95,7 @@
 
     if-eqz v0, :cond_0
 
-    invoke-static {p0}, Lcom/google/android/gms/d/ea;->a(Landroid/content/Context;)Lcom/google/android/gms/d/ea;
+    invoke-static {p0}, Lcom/google/android/gms/d/GoogleApiManager;->a(Landroid/content/Context;)Lcom/google/android/gms/d/GoogleApiManager;
 
     move-result-object v0
 
@@ -128,12 +128,12 @@
 
     move-result v2
 
-    invoke-virtual {v0, v1, v2}, Lcom/google/android/gms/d/ea;->b(Lcom/google/android/gms/common/a;I)V
+    invoke-virtual {v0, v1, v2}, Lcom/google/android/gms/d/GoogleApiManager;->b(Lcom/google/android/gms/common/a;I)V
 
     goto :goto_0
 
     :pswitch_1
-    invoke-virtual {v0}, Lcom/google/android/gms/d/ea;->a()V
+    invoke-virtual {v0}, Lcom/google/android/gms/d/GoogleApiManager;->a()V
 
     goto :goto_0
 

@@ -18,20 +18,20 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/panasonic/avc/cng/model/c/e;
+.field final synthetic a:Lcom/panasonic/avc/cng/model/c/CameraStatus;
 
 .field final synthetic b:Lcom/panasonic/avc/cng/view/setting/LiveViewStopmotionActivity$a;
 
 
 # direct methods
-.method constructor <init>(Lcom/panasonic/avc/cng/view/setting/LiveViewStopmotionActivity$a;Lcom/panasonic/avc/cng/model/c/e;)V
+.method constructor <init>(Lcom/panasonic/avc/cng/view/setting/LiveViewStopmotionActivity$a;Lcom/panasonic/avc/cng/model/c/CameraStatus;)V
     .locals 0
 
     .prologue
     .line 1592
     iput-object p1, p0, Lcom/panasonic/avc/cng/view/setting/LiveViewStopmotionActivity$a$7;->b:Lcom/panasonic/avc/cng/view/setting/LiveViewStopmotionActivity$a;
 
-    iput-object p2, p0, Lcom/panasonic/avc/cng/view/setting/LiveViewStopmotionActivity$a$7;->a:Lcom/panasonic/avc/cng/model/c/e;
+    iput-object p2, p0, Lcom/panasonic/avc/cng/view/setting/LiveViewStopmotionActivity$a$7;->a:Lcom/panasonic/avc/cng/model/c/CameraStatus;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -45,18 +45,18 @@
 
     .prologue
     .line 1595
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveViewStopmotionActivity$a$7;->a:Lcom/panasonic/avc/cng/model/c/e;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveViewStopmotionActivity$a$7;->a:Lcom/panasonic/avc/cng/model/c/CameraStatus;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/e;->K()J
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->K()J
 
     move-result-wide v0
 
     long-to-int v0, v0
 
     .line 1598
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/LiveViewStopmotionActivity$a$7;->a:Lcom/panasonic/avc/cng/model/c/e;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/LiveViewStopmotionActivity$a$7;->a:Lcom/panasonic/avc/cng/model/c/CameraStatus;
 
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/model/c/e;->I()Ljava/lang/String;
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->I()Ljava/lang/String;
 
     move-result-object v1
 
@@ -96,7 +96,7 @@
 
     const/4 v2, 0x0
 
-    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     .line 1604
     :cond_0

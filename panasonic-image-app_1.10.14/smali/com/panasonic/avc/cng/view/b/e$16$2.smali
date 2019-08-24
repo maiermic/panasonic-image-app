@@ -45,7 +45,7 @@
 
     iget-object v0, v0, Lcom/panasonic/avc/cng/view/b/e$16;->a:Landroid/app/Activity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;)V
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;)V
 
     .line 1177
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/b/e$16$2;->a:Lcom/panasonic/avc/cng/view/b/e$16;

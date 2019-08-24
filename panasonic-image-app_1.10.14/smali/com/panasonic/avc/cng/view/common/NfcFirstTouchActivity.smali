@@ -1,5 +1,5 @@
 .class public Lcom/panasonic/avc/cng/view/common/NfcFirstTouchActivity;
-.super Lcom/panasonic/avc/cng/application/b;
+.super Lcom/panasonic/avc/cng/application/NfcSupportActivity;
 .source "SourceFile"
 
 
@@ -17,17 +17,17 @@
 
     .prologue
     .line 21
-    invoke-direct {p0}, Lcom/panasonic/avc/cng/application/b;-><init>()V
+    invoke-direct {p0}, Lcom/panasonic/avc/cng/application/NfcSupportActivity;-><init>()V
 
     return-void
 .end method
 
-.method static synthetic a(Lcom/panasonic/avc/cng/view/common/NfcFirstTouchActivity;)Lcom/panasonic/avc/cng/application/c;
+.method static synthetic a(Lcom/panasonic/avc/cng/view/common/NfcFirstTouchActivity;)Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
     .locals 1
 
     .prologue
     .line 21
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/NfcFirstTouchActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/NfcFirstTouchActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
     return-object v0
 .end method
@@ -108,32 +108,32 @@
     goto :goto_0
 .end method
 
-.method static synthetic b(Lcom/panasonic/avc/cng/view/common/NfcFirstTouchActivity;)Lcom/panasonic/avc/cng/application/c;
+.method static synthetic b(Lcom/panasonic/avc/cng/view/common/NfcFirstTouchActivity;)Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
     .locals 1
 
     .prologue
     .line 21
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/NfcFirstTouchActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/NfcFirstTouchActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
     return-object v0
 .end method
 
-.method static synthetic c(Lcom/panasonic/avc/cng/view/common/NfcFirstTouchActivity;)Lcom/panasonic/avc/cng/application/c;
+.method static synthetic c(Lcom/panasonic/avc/cng/view/common/NfcFirstTouchActivity;)Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
     .locals 1
 
     .prologue
     .line 21
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/NfcFirstTouchActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/NfcFirstTouchActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
     return-object v0
 .end method
 
-.method static synthetic d(Lcom/panasonic/avc/cng/view/common/NfcFirstTouchActivity;)Lcom/panasonic/avc/cng/application/c;
+.method static synthetic d(Lcom/panasonic/avc/cng/view/common/NfcFirstTouchActivity;)Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
     .locals 1
 
     .prologue
     .line 21
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/NfcFirstTouchActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/NfcFirstTouchActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
     return-object v0
 .end method
@@ -175,7 +175,7 @@
     invoke-virtual {p0}, Lcom/panasonic/avc/cng/view/common/NfcFirstTouchActivity;->finish()V
 
     .line 261
-    invoke-super {p0}, Lcom/panasonic/avc/cng/application/b;->onBackPressed()V
+    invoke-super {p0}, Lcom/panasonic/avc/cng/application/NfcSupportActivity;->onBackPressed()V
 
     .line 262
     return-void
@@ -201,7 +201,7 @@
     invoke-static {p0}, Lcom/panasonic/avc/cng/model/b;->a(Landroid/app/Activity;)V
 
     .line 38
-    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/application/b;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/application/NfcSupportActivity;->onCreate(Landroid/os/Bundle;)V
 
     .line 40
     invoke-virtual {p0}, Lcom/panasonic/avc/cng/view/common/NfcFirstTouchActivity;->getWindow()Landroid/view/Window;
@@ -332,9 +332,9 @@
 
     iget-object v2, p0, Lcom/panasonic/avc/cng/view/common/NfcFirstTouchActivity;->a:Landroid/os/Handler;
 
-    iget-object v3, p0, Lcom/panasonic/avc/cng/view/common/NfcFirstTouchActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/c;
+    iget-object v3, p0, Lcom/panasonic/avc/cng/view/common/NfcFirstTouchActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
-    invoke-direct {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/common/b;-><init>(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/application/c;)V
+    invoke-direct {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/common/b;-><init>(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/application/NfcSupportViewModel;)V
 
     iput-object v0, p0, Lcom/panasonic/avc/cng/view/common/NfcFirstTouchActivity;->c:Lcom/panasonic/avc/cng/view/common/b;
 
@@ -376,7 +376,7 @@
 
     .prologue
     .line 247
-    invoke-super {p0}, Lcom/panasonic/avc/cng/application/b;->onResume()V
+    invoke-super {p0}, Lcom/panasonic/avc/cng/application/NfcSupportActivity;->onResume()V
 
     .line 250
     return-void
@@ -387,7 +387,7 @@
 
     .prologue
     .line 237
-    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/application/b;->onSaveInstanceState(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/application/NfcSupportActivity;->onSaveInstanceState(Landroid/os/Bundle;)V
 
     .line 240
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/NfcFirstTouchActivity;->c:Lcom/panasonic/avc/cng/view/common/b;

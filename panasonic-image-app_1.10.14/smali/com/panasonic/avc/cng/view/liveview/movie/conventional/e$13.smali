@@ -48,11 +48,11 @@
     .line 1093
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/e$13;->b:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/e;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/e;->g(Lcom/panasonic/avc/cng/view/liveview/movie/conventional/e;)Lcom/panasonic/avc/cng/core/a/ao;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/e;->g(Lcom/panasonic/avc/cng/view/liveview/movie/conventional/e;)Lcom/panasonic/avc/cng/core/a/StatusCommand;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/ao;->k()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/StatusCommand;->k()Ljava/lang/String;
 
     move-result-object v0
 

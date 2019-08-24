@@ -333,7 +333,7 @@
 
     const-string v1, "connect error"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 307
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/usages/UsagesAcceptActivity;->b:Landroid/os/Handler;
@@ -348,7 +348,7 @@
 
     .line 317
     :cond_3
-    invoke-static {}, Lcom/panasonic/avc/cng/util/g;->a()Ljava/lang/String;
+    invoke-static {}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a()Ljava/lang/String;
 
     move-result-object v0
 
@@ -359,7 +359,7 @@
 
     const-string v2, "Manual"
 
-    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/s;->a(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/UsagesLogUtil;->a(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -384,7 +384,7 @@
 
     move-result-object v3
 
-    invoke-static {v2, v3}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v2, v3}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 322
     :try_start_0

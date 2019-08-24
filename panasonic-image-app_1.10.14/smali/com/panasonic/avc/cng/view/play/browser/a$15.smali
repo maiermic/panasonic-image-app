@@ -56,25 +56,25 @@
     .line 1004
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/browser/a$15;->b:Lcom/panasonic/avc/cng/view/play/browser/a;
 
-    invoke-static {v1}, Lcom/panasonic/avc/cng/view/play/browser/a;->i(Lcom/panasonic/avc/cng/view/play/browser/a;)Lcom/panasonic/avc/cng/view/parts/ba;
+    invoke-static {v1}, Lcom/panasonic/avc/cng/view/play/browser/a;->i(Lcom/panasonic/avc/cng/view/play/browser/a;)Lcom/panasonic/avc/cng/view/parts/QuickAction;
 
     move-result-object v1
 
-    invoke-virtual {v1, v2}, Lcom/panasonic/avc/cng/view/parts/ba;->a(Landroid/widget/PopupWindow$OnDismissListener;)V
+    invoke-virtual {v1, v2}, Lcom/panasonic/avc/cng/view/parts/QuickAction;->a(Landroid/widget/PopupWindow$OnDismissListener;)V
 
     .line 1005
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/browser/a$15;->b:Lcom/panasonic/avc/cng/view/play/browser/a;
 
-    invoke-static {v1}, Lcom/panasonic/avc/cng/view/play/browser/a;->i(Lcom/panasonic/avc/cng/view/play/browser/a;)Lcom/panasonic/avc/cng/view/parts/ba;
+    invoke-static {v1}, Lcom/panasonic/avc/cng/view/play/browser/a;->i(Lcom/panasonic/avc/cng/view/play/browser/a;)Lcom/panasonic/avc/cng/view/parts/QuickAction;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/parts/ba;->d()V
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/parts/QuickAction;->d()V
 
     .line 1006
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/browser/a$15;->b:Lcom/panasonic/avc/cng/view/play/browser/a;
 
-    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/view/play/browser/a;->a(Lcom/panasonic/avc/cng/view/play/browser/a;Lcom/panasonic/avc/cng/view/parts/ba;)Lcom/panasonic/avc/cng/view/parts/ba;
+    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/view/play/browser/a;->a(Lcom/panasonic/avc/cng/view/play/browser/a;Lcom/panasonic/avc/cng/view/parts/QuickAction;)Lcom/panasonic/avc/cng/view/parts/QuickAction;
 
     .line 1009
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/browser/a$15;->b:Lcom/panasonic/avc/cng/view/play/browser/a;

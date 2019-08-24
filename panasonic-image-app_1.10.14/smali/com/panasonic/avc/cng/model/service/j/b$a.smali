@@ -14,7 +14,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/panasonic/avc/cng/model/service/j/b;
+    value = Lcom/panasonic/avc/cng/model/service/j/PlayerServiceLocal;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -24,28 +24,28 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/panasonic/avc/cng/model/service/j/b;
+.field final synthetic a:Lcom/panasonic/avc/cng/model/service/j/PlayerServiceLocal;
 
 
 # direct methods
-.method private constructor <init>(Lcom/panasonic/avc/cng/model/service/j/b;)V
+.method private constructor <init>(Lcom/panasonic/avc/cng/model/service/j/PlayerServiceLocal;)V
     .locals 0
 
     .prologue
     .line 261
-    iput-object p1, p0, Lcom/panasonic/avc/cng/model/service/j/b$a;->a:Lcom/panasonic/avc/cng/model/service/j/b;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/model/service/j/b$a;->a:Lcom/panasonic/avc/cng/model/service/j/PlayerServiceLocal;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/panasonic/avc/cng/model/service/j/b;Lcom/panasonic/avc/cng/model/service/j/b$1;)V
+.method synthetic constructor <init>(Lcom/panasonic/avc/cng/model/service/j/PlayerServiceLocal;Lcom/panasonic/avc/cng/model/service/j/b$1;)V
     .locals 0
 
     .prologue
     .line 261
-    invoke-direct {p0, p1}, Lcom/panasonic/avc/cng/model/service/j/b$a;-><init>(Lcom/panasonic/avc/cng/model/service/j/b;)V
+    invoke-direct {p0, p1}, Lcom/panasonic/avc/cng/model/service/j/b$a;-><init>(Lcom/panasonic/avc/cng/model/service/j/PlayerServiceLocal;)V
 
     return-void
 .end method
@@ -77,7 +77,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 343
     return-void
@@ -100,21 +100,21 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 305
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/j/b$a;->a:Lcom/panasonic/avc/cng/model/service/j/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/j/b$a;->a:Lcom/panasonic/avc/cng/model/service/j/PlayerServiceLocal;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/j/b;->a(Lcom/panasonic/avc/cng/model/service/j/b;)Lcom/panasonic/avc/cng/model/service/s$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/j/PlayerServiceLocal;->a(Lcom/panasonic/avc/cng/model/service/j/PlayerServiceLocal;)Lcom/panasonic/avc/cng/model/service/s$a;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 307
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/j/b$a;->a:Lcom/panasonic/avc/cng/model/service/j/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/j/b$a;->a:Lcom/panasonic/avc/cng/model/service/j/PlayerServiceLocal;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/j/b;->a(Lcom/panasonic/avc/cng/model/service/j/b;)Lcom/panasonic/avc/cng/model/service/s$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/j/PlayerServiceLocal;->a(Lcom/panasonic/avc/cng/model/service/j/PlayerServiceLocal;)Lcom/panasonic/avc/cng/model/service/s$a;
 
     move-result-object v0
 
@@ -158,21 +158,21 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 370
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/j/b$a;->a:Lcom/panasonic/avc/cng/model/service/j/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/j/b$a;->a:Lcom/panasonic/avc/cng/model/service/j/PlayerServiceLocal;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/j/b;->a(Lcom/panasonic/avc/cng/model/service/j/b;)Lcom/panasonic/avc/cng/model/service/s$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/j/PlayerServiceLocal;->a(Lcom/panasonic/avc/cng/model/service/j/PlayerServiceLocal;)Lcom/panasonic/avc/cng/model/service/s$a;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 372
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/j/b$a;->a:Lcom/panasonic/avc/cng/model/service/j/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/j/b$a;->a:Lcom/panasonic/avc/cng/model/service/j/PlayerServiceLocal;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/j/b;->a(Lcom/panasonic/avc/cng/model/service/j/b;)Lcom/panasonic/avc/cng/model/service/s$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/j/PlayerServiceLocal;->a(Lcom/panasonic/avc/cng/model/service/j/PlayerServiceLocal;)Lcom/panasonic/avc/cng/model/service/s$a;
 
     move-result-object v0
 
@@ -216,7 +216,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 356
     return v5
@@ -265,7 +265,7 @@
 
     move-result-object v3
 
-    invoke-static {v2, v3}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v2, v3}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 284
     if-eqz v1, :cond_0
@@ -281,18 +281,18 @@
 
     .line 290
     :cond_1
-    iget-object v2, p0, Lcom/panasonic/avc/cng/model/service/j/b$a;->a:Lcom/panasonic/avc/cng/model/service/j/b;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/model/service/j/b$a;->a:Lcom/panasonic/avc/cng/model/service/j/PlayerServiceLocal;
 
-    invoke-static {v2}, Lcom/panasonic/avc/cng/model/service/j/b;->a(Lcom/panasonic/avc/cng/model/service/j/b;)Lcom/panasonic/avc/cng/model/service/s$a;
+    invoke-static {v2}, Lcom/panasonic/avc/cng/model/service/j/PlayerServiceLocal;->a(Lcom/panasonic/avc/cng/model/service/j/PlayerServiceLocal;)Lcom/panasonic/avc/cng/model/service/s$a;
 
     move-result-object v2
 
     if-eqz v2, :cond_2
 
     .line 292
-    iget-object v2, p0, Lcom/panasonic/avc/cng/model/service/j/b$a;->a:Lcom/panasonic/avc/cng/model/service/j/b;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/model/service/j/b$a;->a:Lcom/panasonic/avc/cng/model/service/j/PlayerServiceLocal;
 
-    invoke-static {v2}, Lcom/panasonic/avc/cng/model/service/j/b;->a(Lcom/panasonic/avc/cng/model/service/j/b;)Lcom/panasonic/avc/cng/model/service/s$a;
+    invoke-static {v2}, Lcom/panasonic/avc/cng/model/service/j/PlayerServiceLocal;->a(Lcom/panasonic/avc/cng/model/service/j/PlayerServiceLocal;)Lcom/panasonic/avc/cng/model/service/s$a;
 
     move-result-object v2
 
@@ -320,7 +320,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 319
     return-void
@@ -359,7 +359,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 332
     return-void

@@ -100,9 +100,9 @@
     .line 2699
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/h$20;->b:Lcom/panasonic/avc/cng/view/liveview/h;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/h;->k:Lcom/panasonic/avc/cng/core/a/af;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/h;->k:Lcom/panasonic/avc/cng/core/a/RecordCommand;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/af;->d()Lcom/panasonic/avc/cng/model/c/h;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/RecordCommand;->d()Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
     move-result-object v0
 
@@ -112,7 +112,7 @@
 
     const-string v3, "OnBulbShutterEnd[TouchCaptureCancel]\u2605\u2605"
 
-    invoke-static {v2, v3}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v2, v3}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 2745
     :goto_1
@@ -138,9 +138,9 @@
     :try_start_1
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/h$20;->b:Lcom/panasonic/avc/cng/view/liveview/h;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/h;->k:Lcom/panasonic/avc/cng/core/a/af;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/h;->k:Lcom/panasonic/avc/cng/core/a/RecordCommand;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/af;->c()Lcom/panasonic/avc/cng/model/c/h;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/RecordCommand;->c()Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
     move-result-object v0
 
@@ -191,9 +191,9 @@
     :goto_3
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/h$20;->b:Lcom/panasonic/avc/cng/view/liveview/h;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/h;->k:Lcom/panasonic/avc/cng/core/a/af;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/h;->k:Lcom/panasonic/avc/cng/core/a/RecordCommand;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/af;->b()Lcom/panasonic/avc/cng/model/c/h;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/RecordCommand;->b()Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
     move-result-object v0
 
@@ -202,7 +202,7 @@
 
     const-string v3, "OnBulbShutterEnd[CaptureCancel]\u2605\u2605"
 
-    invoke-static {v2, v3}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v2, v3}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_1
 
@@ -295,9 +295,9 @@
     :goto_4
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/h$20;->b:Lcom/panasonic/avc/cng/view/liveview/h;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/h;->k:Lcom/panasonic/avc/cng/core/a/af;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/h;->k:Lcom/panasonic/avc/cng/core/a/RecordCommand;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/af;->b()Lcom/panasonic/avc/cng/model/c/h;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/RecordCommand;->b()Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
     move-result-object v0
 
@@ -306,7 +306,7 @@
 
     const-string v3, "OnBulbShutterEnd[CaptureCancel]\u2605\u2605"
 
-    invoke-static {v2, v3}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v2, v3}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 2742
     iget-object v2, p0, Lcom/panasonic/avc/cng/view/liveview/h$20;->b:Lcom/panasonic/avc/cng/view/liveview/h;
@@ -337,7 +337,7 @@
 
     new-instance v2, Lcom/panasonic/avc/cng/view/liveview/h$20$1;
 
-    invoke-direct {v2, p0, v0}, Lcom/panasonic/avc/cng/view/liveview/h$20$1;-><init>(Lcom/panasonic/avc/cng/view/liveview/h$20;Lcom/panasonic/avc/cng/model/c/h;)V
+    invoke-direct {v2, p0, v0}, Lcom/panasonic/avc/cng/view/liveview/h$20$1;-><init>(Lcom/panasonic/avc/cng/view/liveview/h$20;Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;)V
 
     invoke-virtual {v1, v2}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 

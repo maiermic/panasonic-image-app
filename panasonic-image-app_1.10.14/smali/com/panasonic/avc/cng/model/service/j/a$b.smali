@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/panasonic/avc/cng/model/service/j/a;
+    value = Lcom/panasonic/avc/cng/model/service/j/PlayerServiceDLNA;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,18 +15,18 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/panasonic/avc/cng/model/service/j/a;
+.field final synthetic a:Lcom/panasonic/avc/cng/model/service/j/PlayerServiceDLNA;
 
 .field private b:Z
 
 
 # direct methods
-.method private constructor <init>(Lcom/panasonic/avc/cng/model/service/j/a;)V
+.method private constructor <init>(Lcom/panasonic/avc/cng/model/service/j/PlayerServiceDLNA;)V
     .locals 1
 
     .prologue
     .line 690
-    iput-object p1, p0, Lcom/panasonic/avc/cng/model/service/j/a$b;->a:Lcom/panasonic/avc/cng/model/service/j/a;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/model/service/j/a$b;->a:Lcom/panasonic/avc/cng/model/service/j/PlayerServiceDLNA;
 
     invoke-direct {p0}, Ljava/lang/Thread;-><init>()V
 
@@ -38,12 +38,12 @@
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/panasonic/avc/cng/model/service/j/a;Lcom/panasonic/avc/cng/model/service/j/a$1;)V
+.method synthetic constructor <init>(Lcom/panasonic/avc/cng/model/service/j/PlayerServiceDLNA;Lcom/panasonic/avc/cng/model/service/j/a$1;)V
     .locals 0
 
     .prologue
     .line 690
-    invoke-direct {p0, p1}, Lcom/panasonic/avc/cng/model/service/j/a$b;-><init>(Lcom/panasonic/avc/cng/model/service/j/a;)V
+    invoke-direct {p0, p1}, Lcom/panasonic/avc/cng/model/service/j/a$b;-><init>(Lcom/panasonic/avc/cng/model/service/j/PlayerServiceDLNA;)V
 
     return-void
 .end method
@@ -115,18 +115,18 @@
 
     .line 730
     :cond_1
-    iget-object v4, p0, Lcom/panasonic/avc/cng/model/service/j/a$b;->a:Lcom/panasonic/avc/cng/model/service/j/a;
+    iget-object v4, p0, Lcom/panasonic/avc/cng/model/service/j/a$b;->a:Lcom/panasonic/avc/cng/model/service/j/PlayerServiceDLNA;
 
-    invoke-static {v4}, Lcom/panasonic/avc/cng/model/service/j/a;->a(Lcom/panasonic/avc/cng/model/service/j/a;)Landroid/media/MediaPlayer;
+    invoke-static {v4}, Lcom/panasonic/avc/cng/model/service/j/PlayerServiceDLNA;->a(Lcom/panasonic/avc/cng/model/service/j/PlayerServiceDLNA;)Landroid/media/MediaPlayer;
 
     move-result-object v4
 
     if-eqz v4, :cond_0
 
     .line 735
-    iget-object v4, p0, Lcom/panasonic/avc/cng/model/service/j/a$b;->a:Lcom/panasonic/avc/cng/model/service/j/a;
+    iget-object v4, p0, Lcom/panasonic/avc/cng/model/service/j/a$b;->a:Lcom/panasonic/avc/cng/model/service/j/PlayerServiceDLNA;
 
-    invoke-static {v4}, Lcom/panasonic/avc/cng/model/service/j/a;->a(Lcom/panasonic/avc/cng/model/service/j/a;)Landroid/media/MediaPlayer;
+    invoke-static {v4}, Lcom/panasonic/avc/cng/model/service/j/PlayerServiceDLNA;->a(Lcom/panasonic/avc/cng/model/service/j/PlayerServiceDLNA;)Landroid/media/MediaPlayer;
 
     move-result-object v4
 
@@ -137,9 +137,9 @@
     if-eqz v4, :cond_3
 
     .line 737
-    iget-object v4, p0, Lcom/panasonic/avc/cng/model/service/j/a$b;->a:Lcom/panasonic/avc/cng/model/service/j/a;
+    iget-object v4, p0, Lcom/panasonic/avc/cng/model/service/j/a$b;->a:Lcom/panasonic/avc/cng/model/service/j/PlayerServiceDLNA;
 
-    invoke-static {v4}, Lcom/panasonic/avc/cng/model/service/j/a;->a(Lcom/panasonic/avc/cng/model/service/j/a;)Landroid/media/MediaPlayer;
+    invoke-static {v4}, Lcom/panasonic/avc/cng/model/service/j/PlayerServiceDLNA;->a(Lcom/panasonic/avc/cng/model/service/j/PlayerServiceDLNA;)Landroid/media/MediaPlayer;
 
     move-result-object v4
 
@@ -161,18 +161,18 @@
     if-lt v0, v4, :cond_3
 
     .line 747
-    iget-object v2, p0, Lcom/panasonic/avc/cng/model/service/j/a$b;->a:Lcom/panasonic/avc/cng/model/service/j/a;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/model/service/j/a$b;->a:Lcom/panasonic/avc/cng/model/service/j/PlayerServiceDLNA;
 
-    invoke-static {v2}, Lcom/panasonic/avc/cng/model/service/j/a;->e(Lcom/panasonic/avc/cng/model/service/j/a;)Lcom/panasonic/avc/cng/model/service/s$a;
+    invoke-static {v2}, Lcom/panasonic/avc/cng/model/service/j/PlayerServiceDLNA;->e(Lcom/panasonic/avc/cng/model/service/j/PlayerServiceDLNA;)Lcom/panasonic/avc/cng/model/service/s$a;
 
     move-result-object v2
 
     if-eqz v2, :cond_2
 
     .line 749
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/j/a$b;->a:Lcom/panasonic/avc/cng/model/service/j/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/j/a$b;->a:Lcom/panasonic/avc/cng/model/service/j/PlayerServiceDLNA;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/j/a;->e(Lcom/panasonic/avc/cng/model/service/j/a;)Lcom/panasonic/avc/cng/model/service/s$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/j/PlayerServiceDLNA;->e(Lcom/panasonic/avc/cng/model/service/j/PlayerServiceDLNA;)Lcom/panasonic/avc/cng/model/service/s$a;
 
     move-result-object v0
 
@@ -187,11 +187,11 @@
     .line 764
     :cond_3
     :goto_2
-    iget-object v4, p0, Lcom/panasonic/avc/cng/model/service/j/a$b;->a:Lcom/panasonic/avc/cng/model/service/j/a;
+    iget-object v4, p0, Lcom/panasonic/avc/cng/model/service/j/a$b;->a:Lcom/panasonic/avc/cng/model/service/j/PlayerServiceDLNA;
 
     const-wide/16 v6, 0x3e8
 
-    invoke-static {v4, v6, v7}, Lcom/panasonic/avc/cng/model/service/j/a;->b(Lcom/panasonic/avc/cng/model/service/j/a;J)V
+    invoke-static {v4, v6, v7}, Lcom/panasonic/avc/cng/model/service/j/PlayerServiceDLNA;->b(Lcom/panasonic/avc/cng/model/service/j/PlayerServiceDLNA;J)V
 
     goto :goto_0
 

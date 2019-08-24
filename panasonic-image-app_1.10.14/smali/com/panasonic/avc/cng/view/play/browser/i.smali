@@ -471,7 +471,7 @@
     iput-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/i;->G:Ljava/lang/String;
 
     .line 255
-    invoke-static {}, Lcom/panasonic/avc/cng/model/service/z;->f()Lcom/panasonic/avc/cng/model/service/a;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->f()Lcom/panasonic/avc/cng/model/service/a;
 
     move-result-object v2
 
@@ -485,7 +485,7 @@
 
     .line 261
     :goto_0
-    instance-of v3, v2, Lcom/panasonic/avc/cng/model/service/a/c;
+    instance-of v3, v2, Lcom/panasonic/avc/cng/model/service/a/BrowserServiceCamera;
 
     if-eqz v3, :cond_0
 
@@ -570,7 +570,7 @@
     .line 280
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/i;->a:Landroid/content/Context;
 
-    invoke-static {v0, v6}, Lcom/panasonic/avc/cng/model/service/z;->a(Landroid/content/Context;Z)Lcom/panasonic/avc/cng/model/service/e;
+    invoke-static {v0, v6}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->a(Landroid/content/Context;Z)Lcom/panasonic/avc/cng/model/service/e;
 
     move-result-object v0
 
@@ -578,7 +578,7 @@
     if-eqz v0, :cond_2
 
     .line 282
-    invoke-interface {v0}, Lcom/panasonic/avc/cng/model/service/e;->i()Lcom/panasonic/avc/cng/model/c/e;
+    invoke-interface {v0}, Lcom/panasonic/avc/cng/model/service/e;->i()Lcom/panasonic/avc/cng/model/c/CameraStatus;
 
     move-result-object v0
 
@@ -586,14 +586,14 @@
     if-eqz v0, :cond_2
 
     .line 284
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/e;->n()Z
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->n()Z
 
     move-result v1
 
     iput-boolean v1, p0, Lcom/panasonic/avc/cng/view/play/browser/i;->F:Z
 
     .line 285
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/e;->X()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->X()Ljava/lang/String;
 
     move-result-object v0
 
@@ -775,11 +775,11 @@
     move-result-object v3
 
     .line 562
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v4
 
@@ -969,11 +969,11 @@
     invoke-virtual {v0, v5}, Lcom/panasonic/avc/cng/a/c;->a(Ljava/lang/Object;)V
 
     .line 650
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
@@ -1669,7 +1669,7 @@
     return-void
 .end method
 
-.method public a(Lcom/panasonic/avc/cng/model/c/e;)V
+.method public a(Lcom/panasonic/avc/cng/model/c/CameraStatus;)V
     .locals 6
 
     .prologue
@@ -1678,7 +1678,7 @@
     const/4 v2, 0x0
 
     .line 881
-    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/e;->C()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->C()Ljava/lang/String;
 
     move-result-object v0
 
@@ -1761,12 +1761,12 @@
 
     .line 920
     :cond_1
-    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/e;->a()I
+    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->a()I
 
     move-result v0
 
     .line 921
-    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/e;->b()I
+    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->b()I
 
     move-result v3
 
@@ -1780,7 +1780,7 @@
     .line 939
     iget-boolean v0, p0, Lcom/panasonic/avc/cng/view/play/browser/i;->F:Z
 
-    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/e;->n()Z
+    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->n()Z
 
     move-result v3
 
@@ -1790,18 +1790,18 @@
 
     .line 943
     :goto_0
-    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/e;->n()Z
+    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->n()Z
 
     move-result v3
 
     iput-boolean v3, p0, Lcom/panasonic/avc/cng/view/play/browser/i;->F:Z
 
     .line 946
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v3
 
-    invoke-virtual {v3}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v3}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v3
 
@@ -1821,7 +1821,7 @@
     if-eqz v3, :cond_6
 
     .line 948
-    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/e;->X()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->X()Ljava/lang/String;
 
     move-result-object v3
 
@@ -1912,7 +1912,7 @@
 
     .line 959
     :cond_6
-    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/e;->X()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->X()Ljava/lang/String;
 
     move-result-object v1
 
@@ -2125,7 +2125,7 @@
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v5, v1}, Lcom/panasonic/avc/cng/view/play/browser/a;->a(ZLcom/panasonic/avc/cng/view/parts/t;)V
+    invoke-virtual {v0, v5, v1}, Lcom/panasonic/avc/cng/view/play/browser/a;->a(ZLcom/panasonic/avc/cng/view/parts/BrowserViewModel;)V
 
     .line 496
     :cond_0
@@ -2276,7 +2276,7 @@
     iput-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/i;->x:Ljava/util/ArrayList;
 
     .line 439
-    invoke-static {}, Lcom/panasonic/avc/cng/model/service/z;->f()Lcom/panasonic/avc/cng/model/service/a;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->f()Lcom/panasonic/avc/cng/model/service/a;
 
     move-result-object v3
 
@@ -2293,7 +2293,7 @@
 
     .line 448
     :goto_0
-    instance-of v2, v3, Lcom/panasonic/avc/cng/model/service/a/c;
+    instance-of v2, v3, Lcom/panasonic/avc/cng/model/service/a/BrowserServiceCamera;
 
     if-eqz v2, :cond_0
 
@@ -2573,7 +2573,7 @@
 
     const-string v2, ""
 
-    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 751
     new-instance v2, Landroid/content/Intent;
@@ -2774,7 +2774,7 @@
 
     .prologue
     .line 815
-    invoke-static {}, Lcom/panasonic/avc/cng/model/service/z;->f()Lcom/panasonic/avc/cng/model/service/a;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->f()Lcom/panasonic/avc/cng/model/service/a;
 
     move-result-object v0
 
@@ -2797,7 +2797,7 @@
 
     .prologue
     .line 829
-    invoke-static {}, Lcom/panasonic/avc/cng/model/service/z;->f()Lcom/panasonic/avc/cng/model/service/a;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->f()Lcom/panasonic/avc/cng/model/service/a;
 
     move-result-object v0
 
@@ -2824,7 +2824,7 @@
 
     .prologue
     .line 840
-    invoke-static {}, Lcom/panasonic/avc/cng/model/service/z;->f()Lcom/panasonic/avc/cng/model/service/a;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->f()Lcom/panasonic/avc/cng/model/service/a;
 
     move-result-object v0
 
@@ -2851,14 +2851,14 @@
 
     .prologue
     .line 851
-    invoke-static {}, Lcom/panasonic/avc/cng/model/service/z;->f()Lcom/panasonic/avc/cng/model/service/a;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->f()Lcom/panasonic/avc/cng/model/service/a;
 
     move-result-object v0
 
     .line 853
     if-eqz v0, :cond_0
 
-    instance-of v0, v0, Lcom/panasonic/avc/cng/model/service/a/c;
+    instance-of v0, v0, Lcom/panasonic/avc/cng/model/service/a/BrowserServiceCamera;
 
     if-eqz v0, :cond_0
 

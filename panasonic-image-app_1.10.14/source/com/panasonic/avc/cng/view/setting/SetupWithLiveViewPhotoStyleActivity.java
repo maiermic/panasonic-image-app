@@ -8,12 +8,12 @@ import android.os.Handler;
 import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
 import com.panasonic.avc.cng.view.parts.C4039am;
 import com.panasonic.avc.cng.view.parts.C4039am.C4042a;
 import com.panasonic.avc.cng.view.parts.C4039am.C4043b;
 import com.panasonic.avc.cng.view.setting.C5541am.C5555h;
-import com.panasonic.avc.cng.view.setting.C5641av.C5650b;
+import com.panasonic.avc.cng.view.setting.LiveSetupDrumPickerPhotoStyleViewModel.C5650b;
 
 public class SetupWithLiveViewPhotoStyleActivity extends C5608at {
     /* access modifiers changed from: private */
@@ -23,7 +23,7 @@ public class SetupWithLiveViewPhotoStyleActivity extends C5608at {
     /* access modifiers changed from: private */
 
     /* renamed from: m */
-    public C5641av f16796m;
+    public LiveSetupDrumPickerPhotoStyleViewModel f16796m;
 
     /* renamed from: n */
     private C5555h f16797n;
@@ -87,8 +87,8 @@ public class SetupWithLiveViewPhotoStyleActivity extends C5608at {
                 SetupWithLiveViewPhotoStyleActivity.this.f17354e.mo7034c();
             }
             SetupWithLiveViewPhotoStyleActivity.this.mo11995a(true);
-            if (C2331d.m10125b((Activity) SetupWithLiveViewPhotoStyleActivity.this, C2328a.ON_PROGRESS)) {
-                C2331d.m10100a((Activity) SetupWithLiveViewPhotoStyleActivity.this);
+            if (DialogFactory.m10125b((Activity) SetupWithLiveViewPhotoStyleActivity.this, C2328a.ON_PROGRESS)) {
+                DialogFactory.m10100a((Activity) SetupWithLiveViewPhotoStyleActivity.this);
             }
             if (SetupWithLiveViewPhotoStyleActivity.this._resultBundle != null) {
                 SetupWithLiveViewPhotoStyleActivity.this._resultBundle.putBoolean("ContentsUpdateKey", true);
@@ -106,7 +106,7 @@ public class SetupWithLiveViewPhotoStyleActivity extends C5608at {
         super.onCreate(bundle);
         this.f16797n = new C5393b();
         this.f16798q = new C5392a();
-        this.f16796m = new C5641av(this._context, this._handler, this.f17351b, this.f16797n, this.f16798q);
+        this.f16796m = new LiveSetupDrumPickerPhotoStyleViewModel(this._context, this._handler, this.f17351b, this.f16797n, this.f16798q);
         this.f16795l = new C4039am(this._context, this, this.f16796m);
         this.f16795l.mo9619b();
         this.f16795l.mo9617a();

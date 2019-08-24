@@ -92,7 +92,7 @@
 
     const-string v1, "onPause"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 65
     return-void
@@ -110,7 +110,7 @@
 
     const-string v1, "onResume"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 73
     invoke-virtual {p0}, Lcom/panasonic/avc/cng/application/LumixLinkCallActivity;->isFinishing()Z

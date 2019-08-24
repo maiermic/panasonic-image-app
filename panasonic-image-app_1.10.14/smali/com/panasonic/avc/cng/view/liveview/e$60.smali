@@ -55,18 +55,18 @@
     :try_start_0
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/e$60;->b:Lcom/panasonic/avc/cng/view/liveview/e;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/e;->o:Lcom/panasonic/avc/cng/core/a/t;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/e;->o:Lcom/panasonic/avc/cng/core/a/LiveViewOperationCommand;
 
     if-eqz v0, :cond_0
 
     .line 14699
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/e$60;->b:Lcom/panasonic/avc/cng/view/liveview/e;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/e;->o:Lcom/panasonic/avc/cng/core/a/t;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/e;->o:Lcom/panasonic/avc/cng/core/a/LiveViewOperationCommand;
 
     iget-object v2, p0, Lcom/panasonic/avc/cng/view/liveview/e$60;->a:Ljava/lang/String;
 
-    invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/core/a/t;->l(Ljava/lang/String;)Lcom/panasonic/avc/cng/model/c/i;
+    invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/core/a/LiveViewOperationCommand;->l(Ljava/lang/String;)Lcom/panasonic/avc/cng/model/c/i;
 
     .line 14701
     :cond_0
@@ -92,11 +92,11 @@
 
     .line 14703
     :cond_1
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
@@ -107,7 +107,7 @@
 
     move-result-object v2
 
-    invoke-static {v2, v0}, Lcom/panasonic/avc/cng/model/service/z;->a(Landroid/content/Context;Lcom/panasonic/avc/cng/model/f;)Lcom/panasonic/avc/cng/model/service/b;
+    invoke-static {v2, v0}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->a(Landroid/content/Context;Lcom/panasonic/avc/cng/model/f;)Lcom/panasonic/avc/cng/model/service/b;
 
     move-result-object v0
 

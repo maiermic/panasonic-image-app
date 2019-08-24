@@ -11,8 +11,8 @@ import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.p038a.C1343b;
 import com.panasonic.avc.cng.view.parts.C4145d;
 import com.panasonic.avc.cng.view.parts.C4230p;
-import com.panasonic.avc.cng.view.parts.C4245t;
-import com.panasonic.avc.cng.view.parts.C4245t.C4252c;
+import com.panasonic.avc.cng.view.parts.BrowserViewModel;
+import com.panasonic.avc.cng.view.parts.BrowserViewModel.C4252c;
 import com.panasonic.avc.cng.view.parts.C4261w;
 
 /* renamed from: com.panasonic.avc.cng.view.play.movieslideshow.d */
@@ -104,7 +104,7 @@ public class C4541d {
         }
         int firstVisiblePosition = this.f14908c.getFirstVisiblePosition();
         int lastVisiblePosition = this.f14908c.getLastVisiblePosition();
-        C4245t j = this.f14907b.mo10639j();
+        BrowserViewModel j = this.f14907b.mo10639j();
         j.getClass();
         return new C4252c(firstVisiblePosition, lastVisiblePosition);
     }

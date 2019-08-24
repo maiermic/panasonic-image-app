@@ -152,9 +152,9 @@
     .line 14040
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/e$49;->d:Lcom/panasonic/avc/cng/view/liveview/e;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/e;->n:Lcom/panasonic/avc/cng/core/a/g;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/e;->n:Lcom/panasonic/avc/cng/core/a/FocusCommand;
 
-    invoke-virtual {v0, v2, v4}, Lcom/panasonic/avc/cng/core/a/g;->a(II)Lcom/panasonic/avc/cng/model/c/i;
+    invoke-virtual {v0, v2, v4}, Lcom/panasonic/avc/cng/core/a/FocusCommand;->a(II)Lcom/panasonic/avc/cng/model/c/i;
 
     move-result-object v0
 
@@ -170,7 +170,7 @@
 
     const-string v1, "MF assist position setting error."
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 14089
     :cond_3
@@ -184,18 +184,18 @@
     :cond_5
     iget-object v5, p0, Lcom/panasonic/avc/cng/view/liveview/e$49;->d:Lcom/panasonic/avc/cng/view/liveview/e;
 
-    iget-object v5, v5, Lcom/panasonic/avc/cng/view/liveview/e;->n:Lcom/panasonic/avc/cng/core/a/g;
+    iget-object v5, v5, Lcom/panasonic/avc/cng/view/liveview/e;->n:Lcom/panasonic/avc/cng/core/a/FocusCommand;
 
     invoke-virtual {v1}, Ljava/math/BigDecimal;->intValue()I
 
     move-result v6
 
-    invoke-virtual {v5, v6}, Lcom/panasonic/avc/cng/core/a/g;->b(I)Lcom/panasonic/avc/cng/model/c/h;
+    invoke-virtual {v5, v6}, Lcom/panasonic/avc/cng/core/a/FocusCommand;->b(I)Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
     move-result-object v5
 
     .line 14055
-    invoke-virtual {v5}, Lcom/panasonic/avc/cng/model/c/h;->a()Z
+    invoke-virtual {v5}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;->a()Z
 
     move-result v5
 
@@ -206,7 +206,7 @@
 
     const-string v1, "MF assist magnification setting error."
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_2
 

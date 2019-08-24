@@ -62,21 +62,21 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 154
     const v0, 0x101002
 
     sget-object v1, Landroid/os/Build;->BRAND:Ljava/lang/String;
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 156
     const v0, 0x101003
 
     sget-object v1, Landroid/os/Build;->MODEL:Ljava/lang/String;
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 158
     const v0, 0x102001
@@ -95,7 +95,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 160
     const v0, 0x102002
@@ -114,7 +114,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 162
     const v0, 0x103001
@@ -123,7 +123,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 163
     return-void
@@ -194,7 +194,7 @@
     .line 49
     iget-object v1, p0, Lcom/panasonic/avc/cng/application/ImageAppBaseActivity;->b:Landroid/content/Context;
 
-    invoke-static {v1, v8}, Lcom/panasonic/avc/cng/model/service/z;->b(Landroid/content/Context;Z)Lcom/panasonic/avc/cng/model/service/f;
+    invoke-static {v1, v8}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->b(Landroid/content/Context;Z)Lcom/panasonic/avc/cng/model/service/f;
 
     .line 52
     iget-object v1, p0, Lcom/panasonic/avc/cng/application/ImageAppBaseActivity;->b:Landroid/content/Context;
@@ -222,7 +222,7 @@
 
     const/4 v2, 0x0
 
-    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/model/service/z;->d(Landroid/content/Context;Lcom/panasonic/avc/cng/model/f;)Lcom/panasonic/avc/cng/model/service/h;
+    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->d(Landroid/content/Context;Lcom/panasonic/avc/cng/model/f;)Lcom/panasonic/avc/cng/model/service/h;
 
     move-result-object v1
 
@@ -247,7 +247,7 @@
 
     const-string v2, "ImageAppTotalService startService"
 
-    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 65
     new-instance v1, Landroid/content/Intent;
@@ -346,7 +346,7 @@
 
     move-result-object v0
 
-    invoke-static {v5, v0}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v5, v0}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 83
     invoke-interface {v4, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -384,7 +384,7 @@
 
     move-result-object v6
 
-    invoke-static {v0, v6}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v6}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 85
     const-string v6, "ImageAppBaseActivity"
@@ -417,7 +417,7 @@
 
     move-result-object v0
 
-    invoke-static {v6, v0}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v6, v0}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 86
     iget-object v6, p0, Lcom/panasonic/avc/cng/application/ImageAppBaseActivity;->b:Landroid/content/Context;
@@ -454,7 +454,7 @@
 
     const-string v6, "connectAddress change"
 
-    invoke-static {v0, v6}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v6}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 90
     const-string v0, "CurrentConnectedAddress"

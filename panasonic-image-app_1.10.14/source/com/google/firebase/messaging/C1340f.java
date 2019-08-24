@@ -22,7 +22,7 @@ final class C1340f {
     public static void m5274a(Context context, Intent intent) {
         String stringExtra = intent.getStringExtra("google.c.a.abt");
         if (stringExtra != null) {
-            C1339e.m5268a(context, AppMeasurement.FCM_ORIGIN, Base64.decode(stringExtra, 0), new C1338d(), 1);
+            FirebaseAbtUtil.m5268a(context, AppMeasurement.FCM_ORIGIN, Base64.decode(stringExtra, 0), new C1338d(), 1);
         }
         m5275a(context, "_nr", intent);
     }

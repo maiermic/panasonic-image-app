@@ -1,8 +1,8 @@
 package com.google.android.gms.p035d;
 
 import android.text.TextUtils;
-import com.google.android.gms.p029a.p030a.C0519a;
-import com.google.android.gms.p029a.p030a.C0519a.C0520a;
+import com.google.android.gms.p029a.p030a.AdvertisingIdClient;
+import com.google.android.gms.p029a.p030a.AdvertisingIdClient.C0520a;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -115,7 +115,7 @@ public final class C0726au extends C0734bb {
     private final C0520a m2687e() {
         boolean z = false;
         try {
-            return C0519a.m2033a(mo1886i());
+            return AdvertisingIdClient.m2033a(mo1886i());
         } catch (IllegalStateException e) {
             mo1881e("IllegalStateException getting Ad Id Info. If you would like to see Audience reports, please ensure that you have added '<meta-data android:name=\"com.google.android.gms.version\" android:value=\"@integer/google_play_services_version\" />' to your application manifest file. See http://goo.gl/naFqQk for details.");
             return z;

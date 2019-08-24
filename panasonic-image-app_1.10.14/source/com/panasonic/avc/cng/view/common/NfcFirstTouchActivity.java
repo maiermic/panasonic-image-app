@@ -10,13 +10,13 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
-import com.panasonic.avc.cng.application.C1357b;
+import com.panasonic.avc.cng.application.NfcSupportActivity;
 import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.service.C2206o.C2207a;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 
-public class NfcFirstTouchActivity extends C1357b {
+public class NfcFirstTouchActivity extends NfcSupportActivity {
 
     /* renamed from: a */
     private Handler f8600a;
@@ -123,22 +123,22 @@ public class NfcFirstTouchActivity extends C1357b {
 
             /* renamed from: l */
             public void mo3267l() {
-                C2261g.m9760a(2101252, "");
+                ImageAppLog.m9760a(2101252, "");
             }
 
             /* renamed from: a */
             public void mo3252a(byte b) {
-                C2261g.m9760a(2101252, "");
+                ImageAppLog.m9760a(2101252, "");
             }
 
             /* renamed from: m */
             public void mo3268m() {
-                C2261g.m9760a(2101252, "");
+                ImageAppLog.m9760a(2101252, "");
             }
 
             /* renamed from: n */
             public void mo3269n() {
-                C2261g.m9760a(2101252, "");
+                ImageAppLog.m9760a(2101252, "");
             }
         };
     }

@@ -8,11 +8,11 @@ import com.panasonic.avc.cng.model.C1892f;
 import com.panasonic.avc.cng.model.p052d.C1879a;
 import com.panasonic.avc.cng.model.service.C1985b;
 import com.panasonic.avc.cng.model.service.C1985b.C1986a;
-import com.panasonic.avc.cng.model.service.C2253z;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
 import com.panasonic.avc.cng.view.parts.C4004ag;
 import com.panasonic.avc.cng.view.parts.C4004ag.C4006a;
 
-public class LiveSetupDrumPickerIsoActivity extends C5804u {
+public class LiveSetupDrumPickerIsoActivity extends LiveSetupLumixMirrorlessBaseActivity {
     /* access modifiers changed from: private */
 
     /* renamed from: n */
@@ -31,7 +31,7 @@ public class LiveSetupDrumPickerIsoActivity extends C5804u {
         }
         C1712b.m6914a((Activity) this);
         super.onCreate(bundle);
-        C1985b a2 = C2253z.m9679a(this._context, a);
+        C1985b a2 = ServiceFactory.m9679a(this._context, a);
         if (a2 != null) {
             a2.mo5185a((C1986a) new C1986a() {
                 /* renamed from: a */

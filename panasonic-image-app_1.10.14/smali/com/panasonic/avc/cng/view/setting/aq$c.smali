@@ -72,7 +72,7 @@
 
     const/4 v2, 0x0
 
-    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     .line 687
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/aq$c;->a:Lcom/panasonic/avc/cng/view/setting/aq;
@@ -114,7 +114,7 @@
     .line 704
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/aq$c;->a:Lcom/panasonic/avc/cng/view/setting/aq;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;)V
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;)V
 
     .line 706
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/aq$c;->a:Lcom/panasonic/avc/cng/view/setting/aq;

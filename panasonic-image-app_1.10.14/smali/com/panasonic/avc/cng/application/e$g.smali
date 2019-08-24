@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/panasonic/avc/cng/application/e;
+    value = Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportViewModel;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,18 +18,18 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/panasonic/avc/cng/application/e;
+.field final synthetic a:Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportViewModel;
 
 .field private b:Z
 
 
 # direct methods
-.method protected constructor <init>(Lcom/panasonic/avc/cng/application/e;)V
+.method protected constructor <init>(Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportViewModel;)V
     .locals 1
 
     .prologue
     .line 228
-    iput-object p1, p0, Lcom/panasonic/avc/cng/application/e$g;->a:Lcom/panasonic/avc/cng/application/e;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/application/e$g;->a:Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportViewModel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -76,13 +76,13 @@
     iput-boolean v0, p0, Lcom/panasonic/avc/cng/application/e$g;->b:Z
 
     .line 242
-    iget-object v0, p0, Lcom/panasonic/avc/cng/application/e$g;->a:Lcom/panasonic/avc/cng/application/e;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/application/e$g;->a:Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportViewModel;
 
     new-instance v1, Lcom/panasonic/avc/cng/application/e$g$1;
 
     invoke-direct {v1, p0}, Lcom/panasonic/avc/cng/application/e$g$1;-><init>(Lcom/panasonic/avc/cng/application/e$g;)V
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/application/e;->b(Lcom/panasonic/avc/cng/application/e;Lcom/panasonic/avc/cng/application/e$d;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportViewModel;->b(Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportViewModel;Lcom/panasonic/avc/cng/application/e$d;)V
 
     .line 306
     return-void

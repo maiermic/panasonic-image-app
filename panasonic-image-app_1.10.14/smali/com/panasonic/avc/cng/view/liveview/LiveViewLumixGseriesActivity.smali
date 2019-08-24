@@ -1,5 +1,5 @@
 .class public Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixGseriesActivity;
-.super Lcom/panasonic/avc/cng/view/liveview/d;
+.super Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixBaseActivity;
 .source "SourceFile"
 
 
@@ -23,7 +23,7 @@
 
     .prologue
     .line 30
-    invoke-direct {p0}, Lcom/panasonic/avc/cng/view/liveview/d;-><init>()V
+    invoke-direct {p0}, Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixBaseActivity;-><init>()V
 
     .line 43
     const/4 v0, 0x0
@@ -190,11 +190,11 @@
 
     .prologue
     .line 50
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
@@ -222,7 +222,7 @@
     goto :goto_0
 .end method
 
-.method protected a(Lcom/panasonic/avc/cng/view/liveview/d;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/liveview/d$a;)Lcom/panasonic/avc/cng/view/liveview/e;
+.method protected a(Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixBaseActivity;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/liveview/d$a;)Lcom/panasonic/avc/cng/view/liveview/e;
     .locals 1
 
     .prologue
@@ -258,7 +258,7 @@
 
     .prologue
     .line 199
-    invoke-super {p0}, Lcom/panasonic/avc/cng/view/liveview/d;->b()V
+    invoke-super {p0}, Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixBaseActivity;->b()V
 
     .line 202
     const v0, 0x7f0f0483
@@ -388,11 +388,11 @@
     const v0, 0x7f06000c
 
     .line 149
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v1
 
@@ -423,11 +423,11 @@
     const/4 v4, 0x0
 
     .line 462
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v2
 
@@ -534,11 +534,11 @@
 
     .prologue
     .line 163
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
@@ -678,7 +678,7 @@
 
     .line 450
     :cond_1
-    invoke-super {p0}, Lcom/panasonic/avc/cng/view/liveview/d;->onBackPressed()V
+    invoke-super {p0}, Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixBaseActivity;->onBackPressed()V
 
     goto :goto_0
 .end method
@@ -698,13 +698,13 @@
 
     const-string v1, "onCreate() called"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 67
     invoke-static {p0}, Lcom/panasonic/avc/cng/model/b;->a(Landroid/app/Activity;)V
 
     .line 69
-    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/liveview/d;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixBaseActivity;->onCreate(Landroid/os/Bundle;)V
 
     .line 71
     if-eqz p1, :cond_0
@@ -772,7 +772,7 @@
 
     .prologue
     .line 366
-    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/liveview/d;->onDmsWatchEvent(I)Ljava/lang/Object;
+    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixBaseActivity;->onDmsWatchEvent(I)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -811,7 +811,7 @@
     invoke-direct {p0, v0}, Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixGseriesActivity;->b(Z)V
 
     .line 110
-    invoke-super {p0}, Lcom/panasonic/avc/cng/view/liveview/d;->onPause()V
+    invoke-super {p0}, Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixBaseActivity;->onPause()V
 
     .line 111
     return-void
@@ -832,10 +832,10 @@
 
     const-string v1, "onResume() called"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 96
-    invoke-super {p0}, Lcom/panasonic/avc/cng/view/liveview/d;->onResume()V
+    invoke-super {p0}, Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixBaseActivity;->onResume()V
 
     .line 99
     invoke-direct {p0}, Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixGseriesActivity;->u()V
@@ -854,7 +854,7 @@
 
     .prologue
     .line 182
-    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/liveview/d;->onSaveInstanceState(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixBaseActivity;->onSaveInstanceState(Landroid/os/Bundle;)V
 
     .line 185
     const-string v0, "SHUTTER_BUTTON_TOUCH_DOWNED"
@@ -973,7 +973,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 551
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixGseriesActivity;->a:Lcom/panasonic/avc/cng/view/liveview/e;
@@ -1021,7 +1021,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 556
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixGseriesActivity;->t:Landroid/content/Intent;
@@ -1065,7 +1065,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 559
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixGseriesActivity;->t:Landroid/content/Intent;

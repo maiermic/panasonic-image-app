@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/view/parts/t;->e(Z)V
+    value = Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->e(Z)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -24,16 +24,16 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/panasonic/avc/cng/view/parts/t;
+.field final synthetic a:Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
 
 # direct methods
-.method constructor <init>(Lcom/panasonic/avc/cng/view/parts/t;Ljava/lang/Boolean;)V
+.method constructor <init>(Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;Ljava/lang/Boolean;)V
     .locals 0
 
     .prologue
     .line 1201
-    iput-object p1, p0, Lcom/panasonic/avc/cng/view/parts/t$1;->a:Lcom/panasonic/avc/cng/view/parts/t;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/view/parts/t$1;->a:Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
     invoke-direct {p0, p2}, Lcom/panasonic/avc/cng/a/c;-><init>(Ljava/lang/Object;)V
 
@@ -50,9 +50,9 @@
     invoke-super {p0, p1}, Lcom/panasonic/avc/cng/a/c;->a(Ljava/lang/Object;)V
 
     .line 1205
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/t$1;->a:Lcom/panasonic/avc/cng/view/parts/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/t$1;->a:Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
-    iget-object v1, v0, Lcom/panasonic/avc/cng/view/parts/t;->p:Lcom/panasonic/avc/cng/a/c;
+    iget-object v1, v0, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->p:Lcom/panasonic/avc/cng/a/c;
 
     invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
 

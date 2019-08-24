@@ -45,9 +45,9 @@
 
     iget-object v0, v0, Lcom/panasonic/avc/cng/application/c$f$1;->a:Lcom/panasonic/avc/cng/application/c$f;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/application/c$f;->a:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/application/c$f;->a:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/application/c;->a(Lcom/panasonic/avc/cng/application/c;)Lcom/panasonic/avc/cng/application/c$e;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->a(Lcom/panasonic/avc/cng/application/NfcSupportViewModel;)Lcom/panasonic/avc/cng/application/c$e;
 
     move-result-object v0
 
@@ -58,19 +58,19 @@
 
     iget-object v0, v0, Lcom/panasonic/avc/cng/application/c$f$1;->a:Lcom/panasonic/avc/cng/application/c$f;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/application/c$f;->a:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/application/c$f;->a:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/application/c$f$1$3;->a:Lcom/panasonic/avc/cng/application/c$f$1;
 
     iget-object v1, v1, Lcom/panasonic/avc/cng/application/c$f$1;->a:Lcom/panasonic/avc/cng/application/c$f;
 
-    iget-object v1, v1, Lcom/panasonic/avc/cng/application/c$f;->a:Lcom/panasonic/avc/cng/application/c;
+    iget-object v1, v1, Lcom/panasonic/avc/cng/application/c$f;->a:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
-    invoke-static {v1}, Lcom/panasonic/avc/cng/application/c;->e(Lcom/panasonic/avc/cng/application/c;)Ljava/lang/String;
+    invoke-static {v1}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->e(Lcom/panasonic/avc/cng/application/NfcSupportViewModel;)Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/application/c;->a(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->a(Ljava/lang/String;)V
 
     .line 226
     :cond_0

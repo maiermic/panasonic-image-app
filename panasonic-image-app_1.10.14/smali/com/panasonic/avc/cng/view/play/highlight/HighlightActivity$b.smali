@@ -75,7 +75,7 @@
 
     invoke-direct {v3, p0}, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity$b$1;-><init>(Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity$b;)V
 
-    invoke-static {v1, v2, v0, v3}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;Lcom/panasonic/avc/cng/view/b/a$c;)V
+    invoke-static {v1, v2, v0, v3}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;Lcom/panasonic/avc/cng/view/b/a$c;)V
 
     .line 375
     return-void
@@ -96,7 +96,7 @@
 
     move-result-object v3
 
-    invoke-static {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;ILjava/lang/CharSequence;)V
+    invoke-static {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;ILjava/lang/CharSequence;)V
 
     .line 386
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity$b;->a:Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;
@@ -105,7 +105,7 @@
 
     const v2, 0x7f0f027b
 
-    invoke-static {v0, v1, v2, p1}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;II)V
+    invoke-static {v0, v1, v2, p1}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;II)V
 
     .line 387
     return-void
@@ -120,7 +120,7 @@
     .line 394
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity$b;->a:Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;)V
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;)V
 
     .line 397
     const-string v0, "nohighlight"
@@ -136,7 +136,7 @@
 
     sget-object v1, Lcom/panasonic/avc/cng/view/b/b$a;->az:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     .line 409
     :goto_0
@@ -157,7 +157,7 @@
 
     sget-object v1, Lcom/panasonic/avc/cng/view/b/b$a;->aA:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     goto :goto_0
 
@@ -167,7 +167,7 @@
 
     sget-object v1, Lcom/panasonic/avc/cng/view/b/b$a;->ay:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     goto :goto_0
 .end method
@@ -179,12 +179,12 @@
     .line 416
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity$b;->a:Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;)V
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;)V
 
     .line 418
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity$b;->a:Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;->g(Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;)Lcom/panasonic/avc/cng/view/play/highlight/b;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;->g(Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;)Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;
 
     move-result-object v0
 
@@ -193,11 +193,11 @@
     .line 420
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity$b;->a:Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;->g(Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;)Lcom/panasonic/avc/cng/view/play/highlight/b;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;->g(Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;)Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/highlight/b;->d()Landroid/os/Bundle;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;->d()Landroid/os/Bundle;
 
     move-result-object v0
 
@@ -224,7 +224,7 @@
     .line 431
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity$b;->a:Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;)V
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;)V
 
     .line 432
     return-void

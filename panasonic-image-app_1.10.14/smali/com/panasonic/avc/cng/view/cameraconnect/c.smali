@@ -1,5 +1,5 @@
 .class public Lcom/panasonic/avc/cng/view/cameraconnect/c;
-.super Lcom/panasonic/avc/cng/view/cameraconnect/e;
+.super Lcom/panasonic/avc/cng/view/cameraconnect/CameraConnectViewModel;
 .source "SourceFile"
 
 # interfaces
@@ -95,7 +95,7 @@
     const/4 v2, 0x0
 
     .line 77
-    invoke-direct {p0, p1, p2, p3}, Lcom/panasonic/avc/cng/view/cameraconnect/e;-><init>(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/cameraconnect/e$a;)V
+    invoke-direct {p0, p1, p2, p3}, Lcom/panasonic/avc/cng/view/cameraconnect/CameraConnectViewModel;-><init>(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/cameraconnect/e$a;)V
 
     .line 41
     const-string v0, "AccessPointSettingViewModel"
@@ -570,7 +570,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/model/service/z;->a(Landroid/content/Context;Z)Lcom/panasonic/avc/cng/model/service/e;
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->a(Landroid/content/Context;Z)Lcom/panasonic/avc/cng/model/service/e;
 
     move-result-object v0
 
@@ -646,13 +646,13 @@
     invoke-virtual {p0}, Lcom/panasonic/avc/cng/view/cameraconnect/c;->u()V
 
     .line 165
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/model/g;->a(Lcom/panasonic/avc/cng/model/f;)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/model/DeviceManager;->a(Lcom/panasonic/avc/cng/model/f;)V
 
     .line 167
     new-instance v7, Ljava/lang/Thread;
@@ -1023,7 +1023,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/model/service/z;->a(Landroid/content/Context;Z)Lcom/panasonic/avc/cng/model/service/e;
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->a(Landroid/content/Context;Z)Lcom/panasonic/avc/cng/model/service/e;
 
     move-result-object v0
 
@@ -1254,11 +1254,11 @@
     const/4 v0, 0x1
 
     .line 731
-    new-instance v1, Lcom/panasonic/avc/cng/view/cameraconnect/l;
+    new-instance v1, Lcom/panasonic/avc/cng/view/cameraconnect/WifiUtil;
 
     iget-object v2, p0, Lcom/panasonic/avc/cng/view/cameraconnect/c;->a:Landroid/content/Context;
 
-    invoke-direct {v1, v2}, Lcom/panasonic/avc/cng/view/cameraconnect/l;-><init>(Landroid/content/Context;)V
+    invoke-direct {v1, v2}, Lcom/panasonic/avc/cng/view/cameraconnect/WifiUtil;-><init>(Landroid/content/Context;)V
 
     .line 732
     if-eqz v1, :cond_0
@@ -1266,7 +1266,7 @@
     .line 734
     const/4 v0, 0x0
 
-    invoke-virtual {v1, v0}, Lcom/panasonic/avc/cng/view/cameraconnect/l;->b(I)Z
+    invoke-virtual {v1, v0}, Lcom/panasonic/avc/cng/view/cameraconnect/WifiUtil;->b(I)Z
 
     move-result v0
 

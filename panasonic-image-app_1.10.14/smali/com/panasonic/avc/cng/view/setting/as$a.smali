@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/panasonic/avc/cng/view/setting/as;
+    value = Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewFilterSelectViewModel;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,28 +18,28 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/panasonic/avc/cng/view/setting/as;
+.field final synthetic a:Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewFilterSelectViewModel;
 
 
 # direct methods
-.method private constructor <init>(Lcom/panasonic/avc/cng/view/setting/as;)V
+.method private constructor <init>(Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewFilterSelectViewModel;)V
     .locals 0
 
     .prologue
     .line 220
-    iput-object p1, p0, Lcom/panasonic/avc/cng/view/setting/as$a;->a:Lcom/panasonic/avc/cng/view/setting/as;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/view/setting/as$a;->a:Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewFilterSelectViewModel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/panasonic/avc/cng/view/setting/as;Lcom/panasonic/avc/cng/view/setting/as$1;)V
+.method synthetic constructor <init>(Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewFilterSelectViewModel;Lcom/panasonic/avc/cng/view/setting/as$1;)V
     .locals 0
 
     .prologue
     .line 220
-    invoke-direct {p0, p1}, Lcom/panasonic/avc/cng/view/setting/as$a;-><init>(Lcom/panasonic/avc/cng/view/setting/as;)V
+    invoke-direct {p0, p1}, Lcom/panasonic/avc/cng/view/setting/as$a;-><init>(Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewFilterSelectViewModel;)V
 
     return-void
 .end method
@@ -51,26 +51,26 @@
 
     .prologue
     .line 227
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/as$a;->a:Lcom/panasonic/avc/cng/view/setting/as;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/as$a;->a:Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewFilterSelectViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/as;->b(Lcom/panasonic/avc/cng/view/setting/as;)Lcom/panasonic/avc/cng/view/setting/am$h;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewFilterSelectViewModel;->b(Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewFilterSelectViewModel;)Lcom/panasonic/avc/cng/view/setting/am$h;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/as$a;->a:Lcom/panasonic/avc/cng/view/setting/as;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/as$a;->a:Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewFilterSelectViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/as;->c(Lcom/panasonic/avc/cng/view/setting/as;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewFilterSelectViewModel;->c(Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewFilterSelectViewModel;)Landroid/os/Handler;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 230
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/as$a;->a:Lcom/panasonic/avc/cng/view/setting/as;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/as$a;->a:Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewFilterSelectViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/as;->d(Lcom/panasonic/avc/cng/view/setting/as;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewFilterSelectViewModel;->d(Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewFilterSelectViewModel;)Landroid/os/Handler;
 
     move-result-object v0
 
@@ -90,26 +90,26 @@
 
     .prologue
     .line 246
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/as$a;->a:Lcom/panasonic/avc/cng/view/setting/as;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/as$a;->a:Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewFilterSelectViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/as;->b(Lcom/panasonic/avc/cng/view/setting/as;)Lcom/panasonic/avc/cng/view/setting/am$h;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewFilterSelectViewModel;->b(Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewFilterSelectViewModel;)Lcom/panasonic/avc/cng/view/setting/am$h;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/as$a;->a:Lcom/panasonic/avc/cng/view/setting/as;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/as$a;->a:Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewFilterSelectViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/as;->e(Lcom/panasonic/avc/cng/view/setting/as;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewFilterSelectViewModel;->e(Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewFilterSelectViewModel;)Landroid/os/Handler;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 249
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/as$a;->a:Lcom/panasonic/avc/cng/view/setting/as;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/as$a;->a:Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewFilterSelectViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/as;->f(Lcom/panasonic/avc/cng/view/setting/as;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewFilterSelectViewModel;->f(Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewFilterSelectViewModel;)Landroid/os/Handler;
 
     move-result-object v0
 
@@ -129,26 +129,26 @@
 
     .prologue
     .line 266
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/as$a;->a:Lcom/panasonic/avc/cng/view/setting/as;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/as$a;->a:Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewFilterSelectViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/as;->b(Lcom/panasonic/avc/cng/view/setting/as;)Lcom/panasonic/avc/cng/view/setting/am$h;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewFilterSelectViewModel;->b(Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewFilterSelectViewModel;)Lcom/panasonic/avc/cng/view/setting/am$h;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/as$a;->a:Lcom/panasonic/avc/cng/view/setting/as;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/as$a;->a:Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewFilterSelectViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/as;->g(Lcom/panasonic/avc/cng/view/setting/as;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewFilterSelectViewModel;->g(Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewFilterSelectViewModel;)Landroid/os/Handler;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 269
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/as$a;->a:Lcom/panasonic/avc/cng/view/setting/as;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/as$a;->a:Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewFilterSelectViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/as;->h(Lcom/panasonic/avc/cng/view/setting/as;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewFilterSelectViewModel;->h(Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewFilterSelectViewModel;)Landroid/os/Handler;
 
     move-result-object v0
 

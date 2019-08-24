@@ -7,10 +7,10 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnTouchListener;
 import com.panasonic.avc.cng.core.p040a.C1440ae;
-import com.panasonic.avc.cng.core.p040a.C1441af;
-import com.panasonic.avc.cng.core.p040a.C1468ao;
+import com.panasonic.avc.cng.core.p040a.RecordCommand;
+import com.panasonic.avc.cng.core.p040a.StatusCommand;
 import com.panasonic.avc.cng.core.p040a.C1501d;
-import com.panasonic.avc.cng.core.p040a.C1536t;
+import com.panasonic.avc.cng.core.p040a.LiveViewOperationCommand;
 import com.panasonic.avc.cng.imageapp.C1701a.C1702a;
 import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.C1712b;
@@ -19,15 +19,15 @@ import com.panasonic.avc.cng.model.C1897j.C1903f;
 import com.panasonic.avc.cng.model.C1897j.C1905h;
 import com.panasonic.avc.cng.model.C1897j.C1906i;
 import com.panasonic.avc.cng.model.C1910l;
-import com.panasonic.avc.cng.model.p051c.C1846e;
-import com.panasonic.avc.cng.model.p051c.C1853h;
+import com.panasonic.avc.cng.model.p051c.CameraStatus;
+import com.panasonic.avc.cng.model.p051c.ParseTagHighlightSceneInfo;
 import com.panasonic.avc.cng.model.p051c.C1860l;
 import com.panasonic.avc.cng.model.service.C1985b;
 import com.panasonic.avc.cng.model.service.C1985b.C1986a;
 import com.panasonic.avc.cng.model.service.C2028e;
 import com.panasonic.avc.cng.model.service.C2176k;
 import com.panasonic.avc.cng.model.service.C2176k.C2177a;
-import com.panasonic.avc.cng.model.service.C2253z;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
 import com.panasonic.avc.cng.p038a.C1344c;
 import com.panasonic.avc.cng.view.liveview.C3271k.C3338e;
 import com.panasonic.avc.cng.view.liveview.C3271k.C3355l;
@@ -230,7 +230,7 @@ public class C3501e extends C2291c {
     /* access modifiers changed from: private */
 
     /* renamed from: af */
-    public C1441af f11281af;
+    public RecordCommand f11281af;
     /* access modifiers changed from: private */
 
     /* renamed from: ag */
@@ -241,7 +241,7 @@ public class C3501e extends C2291c {
     /* access modifiers changed from: private */
 
     /* renamed from: ai */
-    public C1536t f11284ai;
+    public LiveViewOperationCommand f11284ai;
     /* access modifiers changed from: private */
 
     /* renamed from: aj */
@@ -249,7 +249,7 @@ public class C3501e extends C2291c {
     /* access modifiers changed from: private */
 
     /* renamed from: ak */
-    public C1468ao f11286ak;
+    public StatusCommand f11286ak;
     /* access modifiers changed from: private */
 
     /* renamed from: al */
@@ -464,7 +464,7 @@ public class C3501e extends C2291c {
         void mo8289a(int i, int i2);
 
         /* renamed from: a */
-        void mo8290a(C1846e eVar);
+        void mo8290a(CameraStatus eVar);
 
         /* renamed from: a */
         void mo8291a(C1905h hVar);
@@ -1052,13 +1052,13 @@ public class C3501e extends C2291c {
         if (a != null) {
             this.f11300ay = false;
             this.f11303f.mo3216a(a.f5685g);
-            this.f11281af = new C1441af(a.f5682d);
+            this.f11281af = new RecordCommand(a.f5682d);
             this.f11282ag = new C3911w();
             this.f11283ah = new C3891o(this.f11279ad);
-            this.f11284ai = new C1536t(a.f5682d);
+            this.f11284ai = new LiveViewOperationCommand(a.f5682d);
             this.f11285aj = new C1440ae(a.f5682d);
-            this.f11286ak = new C1468ao(a.f5682d);
-            this.f11302e = C2253z.m9690b(this.f3706a, a);
+            this.f11286ak = new StatusCommand(a.f5682d);
+            this.f11302e = ServiceFactory.m9690b(this.f3706a, a);
             this.f11302e.mo5369f();
             this.f11302e.mo5367a(this.f11280ae, z, true);
             mo12750J();
@@ -1099,7 +1099,7 @@ public class C3501e extends C2291c {
                 this.f11288am = true;
                 new Thread(new Runnable() {
                     public void run() {
-                        final C1853h f;
+                        final ParseTagHighlightSceneInfo f;
                         synchronized (C1910l.m7679a()) {
                             f = C3501e.this.f11281af.mo3501f();
                         }
@@ -1121,7 +1121,7 @@ public class C3501e extends C2291c {
             mo12749I();
             new Thread(new Runnable() {
                 public void run() {
-                    final C1853h e;
+                    final ParseTagHighlightSceneInfo e;
                     synchronized (C1910l.m7679a()) {
                         e = C3501e.this.f11281af.mo3500e();
                     }
@@ -1172,7 +1172,7 @@ public class C3501e extends C2291c {
             cVar.mo3216a(Boolean.valueOf(z));
             new Thread(new Runnable() {
                 public void run() {
-                    C1853h c = C3501e.this.f11284ai.mo3801c(str);
+                    ParseTagHighlightSceneInfo c = C3501e.this.f11284ai.mo3801c(str);
                     if (!c.mo4775e()) {
                         if (!c.mo4771a()) {
                         }
@@ -1341,7 +1341,7 @@ public class C3501e extends C2291c {
             this.f11318u.mo3216a("");
             return;
         }
-        final C1985b a2 = C2253z.m9679a(this.f3706a, a);
+        final C1985b a2 = ServiceFactory.m9679a(this.f3706a, a);
         if (a2 != null) {
             a2.mo5185a((C1986a) new C1986a() {
                 /* renamed from: c */
@@ -1411,9 +1411,9 @@ public class C3501e extends C2291c {
                                     C3501e.this.f11298aw = 3;
                                 }
                             }
-                            C2028e a2 = C2253z.m9680a(C3501e.this.f3706a, false);
+                            C2028e a2 = ServiceFactory.m9680a(C3501e.this.f3706a, false);
                             if (a2 != null) {
-                                C1846e i = a2.mo5285i();
+                                CameraStatus i = a2.mo5285i();
                                 if (i != null) {
                                     C3501e.this.m13921a(i, z);
                                 }
@@ -1474,7 +1474,7 @@ public class C3501e extends C2291c {
 
     /* access modifiers changed from: private */
     /* renamed from: a */
-    public void m13921a(C1846e eVar, boolean z) {
+    public void m13921a(CameraStatus eVar, boolean z) {
         int i = 1;
         if (!this.f11297av.equalsIgnoreCase("sd") && !this.f11297av.equalsIgnoreCase("sd2")) {
             this.f11295at = true;
@@ -1522,11 +1522,11 @@ public class C3501e extends C2291c {
 
     /* renamed from: E */
     private int mo12745E() {
-        C2028e a = C2253z.m9680a(this.f3706a, false);
+        C2028e a = ServiceFactory.m9680a(this.f3706a, false);
         if (a == null) {
             return 0;
         }
-        C1846e i = a.mo5285i();
+        CameraStatus i = a.mo5285i();
         if (i != null && i.mo4692d() == 0 && i.mo4694e() == 0) {
             return 1;
         }
@@ -1535,7 +1535,7 @@ public class C3501e extends C2291c {
 
     /* access modifiers changed from: private */
     /* renamed from: a */
-    public int m13912a(C1853h hVar) {
+    public int m13912a(ParseTagHighlightSceneInfo hVar) {
         String b = hVar.mo4772b();
         if (b.equalsIgnoreCase("err_critical") || b.equalsIgnoreCase("err_param") || b.equalsIgnoreCase("err_system_error")) {
             return 3;
@@ -1548,7 +1548,7 @@ public class C3501e extends C2291c {
 
     /* renamed from: F */
     private void mo12746F() {
-        C1985b a = C2253z.m9679a(this.f3706a, C1712b.m6919c().mo4896a());
+        C1985b a = ServiceFactory.m9679a(this.f3706a, C1712b.m6919c().mo4896a());
         if (a != null) {
             a.mo5185a((C1986a) new C1986a() {
                 /* renamed from: c */
@@ -1698,7 +1698,7 @@ public class C3501e extends C2291c {
         this.f11313p.mo3216a(Boolean.valueOf(mo8327m()));
         this.f11227B.mo3216a(Boolean.valueOf(mo8327m()));
         this.f11243R.mo3216a(Boolean.valueOf(!mo8327m()));
-        C1985b a2 = C2253z.m9679a(this.f3706a, C1712b.m6919c().mo4896a());
+        C1985b a2 = ServiceFactory.m9679a(this.f3706a, C1712b.m6919c().mo4896a());
         if (a2 != null) {
             if (this.f11298aw == 3) {
                 C1860l a3 = a2.mo5182a("menu_item_id_btn_focus_assist");
@@ -1723,7 +1723,7 @@ public class C3501e extends C2291c {
                 this.f11323z.mo3216a(Boolean.valueOf(false));
             }
             if (mo8327m() && this.f11301az == null) {
-                C1846e i = C2253z.m9680a(this.f3706a, false).mo5285i();
+                CameraStatus i = ServiceFactory.m9680a(this.f3706a, false).mo5285i();
                 if (i != null) {
                     this.f11301az = new C3540i();
                     if (this.f11287al) {
@@ -1807,8 +1807,8 @@ public class C3501e extends C2291c {
     }
 
     /* renamed from: a */
-    public void mo6018a(C1846e eVar) {
-        if (C1846e.m7190a(eVar)) {
+    public void mo6018a(CameraStatus eVar) {
+        if (CameraStatus.m7190a(eVar)) {
             if (this.f11300ay) {
                 this.f11257aF = eVar.mo4678a();
                 if (!this.f11268aQ.equalsIgnoreCase(eVar.mo4691c("1"))) {
@@ -1877,7 +1877,7 @@ public class C3501e extends C2291c {
                             }
                             C3501e.this.f11306i.mo3216a(Boolean.valueOf(C3501e.this.f11260aI));
                             C3501e.this.f11307j.mo3216a(Boolean.valueOf(C3501e.this.f11261aJ));
-                            C1846e i3 = C2253z.m9680a(C3501e.this.f3706a, true).mo5285i();
+                            CameraStatus i3 = ServiceFactory.m9680a(C3501e.this.f3706a, true).mo5285i();
                             if (i3 != null) {
                                 String N = i3.mo4665N();
                                 if (N.equalsIgnoreCase("1")) {

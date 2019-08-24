@@ -589,7 +589,7 @@
     invoke-direct {v0, p0}, Lcom/panasonic/avc/cng/view/parts/fullscreen/h;-><init>(Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixGHFullscreenActivity;)V
 
     .line 563
-    new-instance v1, Lcom/panasonic/avc/cng/view/setting/s;
+    new-instance v1, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerWhiteBalanceViewModel;
 
     iget-object v2, p0, Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixGHFullscreenActivity;->_context:Landroid/content/Context;
 
@@ -601,7 +601,7 @@
 
     invoke-direct {v5, p0, v7}, Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixGHFullscreenActivity$f;-><init>(Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixGHFullscreenActivity;Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixGHFullscreenActivity$1;)V
 
-    invoke-direct {v1, v2, v3, v4, v5}, Lcom/panasonic/avc/cng/view/setting/s;-><init>(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/setting/am;Lcom/panasonic/avc/cng/view/setting/u$a;)V
+    invoke-direct {v1, v2, v3, v4, v5}, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerWhiteBalanceViewModel;-><init>(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/setting/am;Lcom/panasonic/avc/cng/view/setting/u$a;)V
 
     invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/parts/fullscreen/h;->a(Ljava/lang/Object;)V
 
@@ -705,7 +705,7 @@
     :goto_6
     if-eqz v10, :cond_b
 
-    new-instance v4, Lcom/panasonic/avc/cng/view/setting/o;
+    new-instance v4, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;
 
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixGHFullscreenActivity;->_context:Landroid/content/Context;
 
@@ -717,7 +717,7 @@
 
     iget-object v5, p0, Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixGHFullscreenActivity;->d:Lcom/panasonic/avc/cng/view/setting/am;
 
-    invoke-direct {v4, v0, v1, v2, v5}, Lcom/panasonic/avc/cng/view/setting/o;-><init>(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/setting/u$a;Lcom/panasonic/avc/cng/view/setting/am;)V
+    invoke-direct {v4, v0, v1, v2, v5}, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;-><init>(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/setting/u$a;Lcom/panasonic/avc/cng/view/setting/am;)V
 
     .line 606
     :goto_7
@@ -731,7 +731,7 @@
 
     move v2, p1
 
-    invoke-direct/range {v0 .. v7}, Lcom/panasonic/avc/cng/view/parts/fullscreen/g;-><init>(Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixGHFullscreenActivity;IZLcom/panasonic/avc/cng/view/setting/o;ZZZ)V
+    invoke-direct/range {v0 .. v7}, Lcom/panasonic/avc/cng/view/parts/fullscreen/g;-><init>(Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixGHFullscreenActivity;IZLcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;ZZZ)V
 
     .line 608
     invoke-virtual {v0, v4}, Lcom/panasonic/avc/cng/view/parts/fullscreen/g;->a(Ljava/lang/Object;)V
@@ -849,7 +849,7 @@
 
     .line 602
     :cond_b
-    new-instance v4, Lcom/panasonic/avc/cng/view/setting/o;
+    new-instance v4, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;
 
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixGHFullscreenActivity;->_context:Landroid/content/Context;
 
@@ -859,7 +859,7 @@
 
     invoke-direct {v2, p0, v7}, Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixGHFullscreenActivity$f;-><init>(Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixGHFullscreenActivity;Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixGHFullscreenActivity$1;)V
 
-    invoke-direct {v4, v0, v1, v2}, Lcom/panasonic/avc/cng/view/setting/o;-><init>(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/setting/u$a;)V
+    invoke-direct {v4, v0, v1, v2}, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;-><init>(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/setting/u$a;)V
 
     goto :goto_7
 
@@ -1056,20 +1056,20 @@
 
     .prologue
     .line 466
-    new-instance v0, Lcom/panasonic/avc/cng/view/liveview/q;
+    new-instance v0, Lcom/panasonic/avc/cng/view/liveview/SlideButton;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixGHFullscreenActivity;->a:Lcom/panasonic/avc/cng/view/liveview/e;
 
     iget-object v1, v1, Lcom/panasonic/avc/cng/view/liveview/e;->gx:Lcom/panasonic/avc/cng/view/liveview/k$m;
 
-    invoke-direct {v0, v1}, Lcom/panasonic/avc/cng/view/liveview/q;-><init>(Lcom/panasonic/avc/cng/view/liveview/k$m;)V
+    invoke-direct {v0, v1}, Lcom/panasonic/avc/cng/view/liveview/SlideButton;-><init>(Lcom/panasonic/avc/cng/view/liveview/k$m;)V
 
     .line 467
     new-instance v1, Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixGHFullscreenActivity$2;
 
     invoke-direct {v1, p0}, Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixGHFullscreenActivity$2;-><init>(Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixGHFullscreenActivity;)V
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/liveview/q;->a(Lcom/panasonic/avc/cng/view/liveview/q$a;)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/liveview/SlideButton;->a(Lcom/panasonic/avc/cng/view/liveview/q$a;)V
 
     .line 511
     return-object v0
@@ -1148,11 +1148,11 @@
     invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/liveview/a;->a(Lcom/panasonic/avc/cng/view/liveview/a$a;)V
 
     .line 367
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
@@ -1173,7 +1173,7 @@
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixGHFullscreenActivity;->w:Lcom/panasonic/avc/cng/model/f;
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/model/service/z;->a(Landroid/content/Context;Lcom/panasonic/avc/cng/model/f;)Lcom/panasonic/avc/cng/model/service/b;
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->a(Landroid/content/Context;Lcom/panasonic/avc/cng/model/f;)Lcom/panasonic/avc/cng/model/service/b;
 
     move-result-object v0
 
@@ -1384,7 +1384,7 @@
     .line 425
     sget-object v0, Lcom/panasonic/avc/cng/view/b/b$a;->hQ:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {p0, v0, v4}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {p0, v0, v4}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     .line 427
     invoke-interface {v1}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;

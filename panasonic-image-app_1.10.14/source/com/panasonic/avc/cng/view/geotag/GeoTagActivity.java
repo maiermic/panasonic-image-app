@@ -26,15 +26,15 @@ import android.widget.ListView;
 import android.widget.TextView;
 import com.panasonic.avc.cng.application.C1347a;
 import com.panasonic.avc.cng.application.C1347a.C1349a;
-import com.panasonic.avc.cng.application.C1362c;
-import com.panasonic.avc.cng.application.C1362c.C1373e;
+import com.panasonic.avc.cng.application.NfcSupportViewModel;
+import com.panasonic.avc.cng.application.NfcSupportViewModel.C1373e;
 import com.panasonic.avc.cng.core.dlna.C1699h;
 import com.panasonic.avc.cng.imageapp.C1701a.C1702a;
 import com.panasonic.avc.cng.imageapp.Httpc.HTTPcJni;
 import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.C1892f;
-import com.panasonic.avc.cng.model.p051c.C1846e;
+import com.panasonic.avc.cng.model.p051c.CameraStatus;
 import com.panasonic.avc.cng.model.p052d.C1879a;
 import com.panasonic.avc.cng.model.service.C1985b.C1986a;
 import com.panasonic.avc.cng.model.service.C2028e;
@@ -42,21 +42,21 @@ import com.panasonic.avc.cng.model.service.C2028e.C2031c;
 import com.panasonic.avc.cng.model.service.C2081h.C2082a;
 import com.panasonic.avc.cng.model.service.C2206o.C2207a;
 import com.panasonic.avc.cng.model.service.C2206o.C2208b;
-import com.panasonic.avc.cng.model.service.C2253z;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
 import com.panasonic.avc.cng.model.service.geotagservice.C2078d.C2080b;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.util.C2266l;
 import com.panasonic.avc.cng.view.common.C2820e;
 import com.panasonic.avc.cng.view.common.TouchShareCopyActivity;
-import com.panasonic.avc.cng.view.geotag.C2854b.C2857b;
+import com.panasonic.avc.cng.view.geotag.GeoTagViewModel.C2857b;
 import com.panasonic.avc.cng.view.liveview.movie.homemonitor.LiveViewRemoteWatchActivity;
 import com.panasonic.avc.cng.view.p073b.C2317a.C2325c;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
 import com.panasonic.avc.cng.view.p073b.C2337e;
 import com.panasonic.avc.cng.view.p073b.C2376f.C2378b;
-import com.panasonic.avc.cng.view.setting.C5537al;
-import com.panasonic.avc.cng.view.setting.C5537al.C5540a;
+import com.panasonic.avc.cng.view.setting.SettingMenuBaseActivity;
+import com.panasonic.avc.cng.view.setting.SettingMenuBaseActivity.C5540a;
 import com.panasonic.avc.cng.view.setting.C5741i.C5759a;
 import com.panasonic.avc.cng.view.setting.ConnectSettingActivity;
 import java.util.Collections;
@@ -64,10 +64,10 @@ import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class GeoTagActivity extends C5537al implements C1349a {
+public class GeoTagActivity extends SettingMenuBaseActivity implements C1349a {
 
     /* renamed from: a */
-    protected C1362c f8775a;
+    protected NfcSupportViewModel f8775a;
 
     /* renamed from: b */
     protected C1373e f8776b;
@@ -80,7 +80,7 @@ public class GeoTagActivity extends C5537al implements C1349a {
     /* access modifiers changed from: private */
 
     /* renamed from: e */
-    public C2854b f8779e;
+    public GeoTagViewModel f8779e;
 
     /* renamed from: f */
     private C2852a f8780f;
@@ -128,69 +128,69 @@ public class GeoTagActivity extends C5537al implements C1349a {
                 case 0:
                     Bundle bundle = new Bundle();
                     bundle.putInt(C2378b.MESSAGE_ID.name(), R.string.geotag_title_label_send_gps_now);
-                    C2331d.m10115a((Activity) GeoTagActivity.this, C2328a.DIALOG_ID_GEOTAGSEND_PROGRESS, bundle, (C2325c) new C2325c() {
+                    DialogFactory.m10115a((Activity) GeoTagActivity.this, C2328a.DIALOG_ID_GEOTAGSEND_PROGRESS, bundle, (C2325c) new C2325c() {
                         /* renamed from: a */
                         public void mo6131a() {
-                            C2331d.m10111a((Activity) GeoTagActivity.this, C2328a.DIALOG_ID_GEOTAGSEND_PROGRESS, (int) R.id.percent_num, (CharSequence) "0");
-                            C2331d.m10111a((Activity) GeoTagActivity.this, C2328a.DIALOG_ID_GEOTAGSEND_PROGRESS, (int) R.id.numerator, (CharSequence) "0");
-                            C2331d.m10111a((Activity) GeoTagActivity.this, C2328a.DIALOG_ID_GEOTAGSEND_PROGRESS, (int) R.id.denominator, (CharSequence) "100");
+                            DialogFactory.m10111a((Activity) GeoTagActivity.this, C2328a.DIALOG_ID_GEOTAGSEND_PROGRESS, (int) R.id.percent_num, (CharSequence) "0");
+                            DialogFactory.m10111a((Activity) GeoTagActivity.this, C2328a.DIALOG_ID_GEOTAGSEND_PROGRESS, (int) R.id.numerator, (CharSequence) "0");
+                            DialogFactory.m10111a((Activity) GeoTagActivity.this, C2328a.DIALOG_ID_GEOTAGSEND_PROGRESS, (int) R.id.denominator, (CharSequence) "100");
                         }
                     });
                     return;
                 case 1:
-                    C2331d.m10111a((Activity) GeoTagActivity.this, C2328a.DIALOG_ID_GEOTAGSEND_PROGRESS, (int) R.id.percent_num, (CharSequence) String.valueOf(message.arg1));
-                    C2331d.m10104a((Activity) GeoTagActivity.this, C2328a.DIALOG_ID_GEOTAGSEND_PROGRESS, (int) R.id.progressBar2, message.arg1);
-                    C2331d.m10111a((Activity) GeoTagActivity.this, C2328a.DIALOG_ID_GEOTAGSEND_PROGRESS, (int) R.id.numerator, (CharSequence) String.valueOf(message.arg1));
+                    DialogFactory.m10111a((Activity) GeoTagActivity.this, C2328a.DIALOG_ID_GEOTAGSEND_PROGRESS, (int) R.id.percent_num, (CharSequence) String.valueOf(message.arg1));
+                    DialogFactory.m10104a((Activity) GeoTagActivity.this, C2328a.DIALOG_ID_GEOTAGSEND_PROGRESS, (int) R.id.progressBar2, message.arg1);
+                    DialogFactory.m10111a((Activity) GeoTagActivity.this, C2328a.DIALOG_ID_GEOTAGSEND_PROGRESS, (int) R.id.numerator, (CharSequence) String.valueOf(message.arg1));
                     return;
                 case 2:
                     GeoTagActivity.this.f8779e.f8839j.mo3216a(Boolean.valueOf(true));
                     GeoTagActivity.this.f8779e.mo6938b(true);
-                    C2331d.m10100a((Activity) GeoTagActivity.this);
-                    C2331d.m10114a((Activity) GeoTagActivity.this, C2328a.DIALOG_ID_SEND_COMPLETE, (Bundle) null);
+                    DialogFactory.m10100a((Activity) GeoTagActivity.this);
+                    DialogFactory.m10114a((Activity) GeoTagActivity.this, C2328a.DIALOG_ID_SEND_COMPLETE, (Bundle) null);
                     return;
                 case 3:
                     GeoTagActivity.this.f8779e.f8839j.mo3216a(Boolean.valueOf(true));
                     GeoTagActivity.this.f8779e.mo6938b(true);
-                    C2331d.m10100a((Activity) GeoTagActivity.this);
-                    C2331d.m10114a((Activity) GeoTagActivity.this, C2328a.DIALOG_ID_SEND_FAILED, (Bundle) null);
+                    DialogFactory.m10100a((Activity) GeoTagActivity.this);
+                    DialogFactory.m10114a((Activity) GeoTagActivity.this, C2328a.DIALOG_ID_SEND_FAILED, (Bundle) null);
                     return;
                 case 4:
                     GeoTagActivity.this.f8779e.f8839j.mo3216a(Boolean.valueOf(true));
-                    C2331d.m10100a((Activity) GeoTagActivity.this);
+                    DialogFactory.m10100a((Activity) GeoTagActivity.this);
                     return;
                 case 5:
                     Bundle bundle2 = new Bundle();
                     bundle2.putInt(C2378b.MESSAGE_ID.name(), R.string.geotag_title_label_sync_time_now);
-                    C2331d.m10115a((Activity) GeoTagActivity.this, C2328a.DIALOG_ID_SYNCTIME_PROGRESS, bundle2, (C2325c) new C2325c() {
+                    DialogFactory.m10115a((Activity) GeoTagActivity.this, C2328a.DIALOG_ID_SYNCTIME_PROGRESS, bundle2, (C2325c) new C2325c() {
                         /* renamed from: a */
                         public void mo6131a() {
-                            C2331d.m10111a((Activity) GeoTagActivity.this, C2328a.DIALOG_ID_SYNCTIME_PROGRESS, (int) R.id.percent_num, (CharSequence) "0");
-                            C2331d.m10111a((Activity) GeoTagActivity.this, C2328a.DIALOG_ID_SYNCTIME_PROGRESS, (int) R.id.numerator, (CharSequence) "0");
-                            C2331d.m10111a((Activity) GeoTagActivity.this, C2328a.DIALOG_ID_SYNCTIME_PROGRESS, (int) R.id.denominator, (CharSequence) "100");
+                            DialogFactory.m10111a((Activity) GeoTagActivity.this, C2328a.DIALOG_ID_SYNCTIME_PROGRESS, (int) R.id.percent_num, (CharSequence) "0");
+                            DialogFactory.m10111a((Activity) GeoTagActivity.this, C2328a.DIALOG_ID_SYNCTIME_PROGRESS, (int) R.id.numerator, (CharSequence) "0");
+                            DialogFactory.m10111a((Activity) GeoTagActivity.this, C2328a.DIALOG_ID_SYNCTIME_PROGRESS, (int) R.id.denominator, (CharSequence) "100");
                         }
                     });
                     return;
                 case 6:
-                    C2331d.m10111a((Activity) GeoTagActivity.this, C2328a.DIALOG_ID_SYNCTIME_PROGRESS, (int) R.id.percent_num, (CharSequence) String.valueOf(message.arg1));
-                    C2331d.m10104a((Activity) GeoTagActivity.this, C2328a.DIALOG_ID_SYNCTIME_PROGRESS, (int) R.id.progressBar2, message.arg1);
-                    C2331d.m10111a((Activity) GeoTagActivity.this, C2328a.DIALOG_ID_SYNCTIME_PROGRESS, (int) R.id.numerator, (CharSequence) String.valueOf(message.arg1));
+                    DialogFactory.m10111a((Activity) GeoTagActivity.this, C2328a.DIALOG_ID_SYNCTIME_PROGRESS, (int) R.id.percent_num, (CharSequence) String.valueOf(message.arg1));
+                    DialogFactory.m10104a((Activity) GeoTagActivity.this, C2328a.DIALOG_ID_SYNCTIME_PROGRESS, (int) R.id.progressBar2, message.arg1);
+                    DialogFactory.m10111a((Activity) GeoTagActivity.this, C2328a.DIALOG_ID_SYNCTIME_PROGRESS, (int) R.id.numerator, (CharSequence) String.valueOf(message.arg1));
                     return;
                 case 7:
                     GeoTagActivity.this.f8779e.f8836g.mo3216a(Boolean.valueOf(true));
-                    C2331d.m10100a((Activity) GeoTagActivity.this);
-                    C2331d.m10100a((Activity) GeoTagActivity.this);
+                    DialogFactory.m10100a((Activity) GeoTagActivity.this);
+                    DialogFactory.m10100a((Activity) GeoTagActivity.this);
                     GeoTagActivity.this.f8779e.mo6937b(System.currentTimeMillis());
                     return;
                 case C1702a.HorizontalPicker_title_area_width /*8*/:
                     GeoTagActivity.this.f8779e.f8836g.mo3216a(Boolean.valueOf(true));
-                    C2331d.m10100a((Activity) GeoTagActivity.this);
-                    C2331d.m10114a((Activity) GeoTagActivity.this, C2328a.DIALOG_ID_SYNC_FAILED, (Bundle) null);
+                    DialogFactory.m10100a((Activity) GeoTagActivity.this);
+                    DialogFactory.m10114a((Activity) GeoTagActivity.this, C2328a.DIALOG_ID_SYNC_FAILED, (Bundle) null);
                     return;
                 case C1702a.HorizontalPicker_title_image /*9*/:
                     GeoTagActivity.this.f8779e.f8836g.mo3216a(Boolean.valueOf(true));
-                    C2331d.m10100a((Activity) GeoTagActivity.this);
-                    C2331d.m10100a((Activity) GeoTagActivity.this);
-                    C2331d.m10114a((Activity) GeoTagActivity.this, C2328a.DIALOG_ID_SYNC_CANCEL, (Bundle) null);
+                    DialogFactory.m10100a((Activity) GeoTagActivity.this);
+                    DialogFactory.m10100a((Activity) GeoTagActivity.this);
+                    DialogFactory.m10114a((Activity) GeoTagActivity.this, C2328a.DIALOG_ID_SYNC_CANCEL, (Bundle) null);
                     return;
                 case C1702a.HorizontalPicker_right_blank_area_width /*10*/:
                     GeoTagActivity.this.f8779e.f8839j.mo3216a(Boolean.valueOf(true));
@@ -214,7 +214,7 @@ public class GeoTagActivity extends C5537al implements C1349a {
                     return;
                 case HTTPcJni.JNI_CFG_HTTPC_MAX_HEAD /*16*/:
                     GeoTagActivity.this.mo6888a(false);
-                    C2331d.m10114a((Activity) GeoTagActivity.this, C2328a.NOT_SUPPORT_GPSLOGGER, (Bundle) null);
+                    DialogFactory.m10114a((Activity) GeoTagActivity.this, C2328a.NOT_SUPPORT_GPSLOGGER, (Bundle) null);
                     return;
                 case 17:
                     if (message.arg1 == 1) {
@@ -226,28 +226,28 @@ public class GeoTagActivity extends C5537al implements C1349a {
                     GeoTagActivity.this.f8779e.f8844o.mo3216a(Boolean.valueOf(true));
                     return;
                 case 101:
-                    C2331d.m10100a((Activity) GeoTagActivity.this);
-                    C2331d.m10114a((Activity) GeoTagActivity.this, C2328a.DIALOG_ID_ADD_LOCATION_ERROR, (Bundle) null);
+                    DialogFactory.m10100a((Activity) GeoTagActivity.this);
+                    DialogFactory.m10114a((Activity) GeoTagActivity.this, C2328a.DIALOG_ID_ADD_LOCATION_ERROR, (Bundle) null);
                     return;
                 case 102:
                 case 103:
-                    C2331d.m10111a((Activity) GeoTagActivity.this, C2328a.DIALOG_ID_ADD_LOCATION_PROGRESS, (int) R.id.percent_num, (CharSequence) String.valueOf(message.arg1));
-                    C2331d.m10104a((Activity) GeoTagActivity.this, C2328a.DIALOG_ID_ADD_LOCATION_PROGRESS, (int) R.id.progressBar2, message.arg1);
-                    C2331d.m10111a((Activity) GeoTagActivity.this, C2328a.DIALOG_ID_ADD_LOCATION_PROGRESS, (int) R.id.numerator, (CharSequence) String.valueOf(message.arg1));
+                    DialogFactory.m10111a((Activity) GeoTagActivity.this, C2328a.DIALOG_ID_ADD_LOCATION_PROGRESS, (int) R.id.percent_num, (CharSequence) String.valueOf(message.arg1));
+                    DialogFactory.m10104a((Activity) GeoTagActivity.this, C2328a.DIALOG_ID_ADD_LOCATION_PROGRESS, (int) R.id.progressBar2, message.arg1);
+                    DialogFactory.m10111a((Activity) GeoTagActivity.this, C2328a.DIALOG_ID_ADD_LOCATION_PROGRESS, (int) R.id.numerator, (CharSequence) String.valueOf(message.arg1));
                     return;
                 case 104:
-                    C2331d.m10111a((Activity) GeoTagActivity.this, C2328a.DIALOG_ID_ADD_LOCATION_PROGRESS, (int) R.id.percent_num, (CharSequence) "100");
-                    C2331d.m10104a((Activity) GeoTagActivity.this, C2328a.DIALOG_ID_ADD_LOCATION_PROGRESS, (int) R.id.progressBar2, 100);
-                    C2331d.m10111a((Activity) GeoTagActivity.this, C2328a.DIALOG_ID_ADD_LOCATION_PROGRESS, (int) R.id.numerator, (CharSequence) "100");
+                    DialogFactory.m10111a((Activity) GeoTagActivity.this, C2328a.DIALOG_ID_ADD_LOCATION_PROGRESS, (int) R.id.percent_num, (CharSequence) "100");
+                    DialogFactory.m10104a((Activity) GeoTagActivity.this, C2328a.DIALOG_ID_ADD_LOCATION_PROGRESS, (int) R.id.progressBar2, 100);
+                    DialogFactory.m10111a((Activity) GeoTagActivity.this, C2328a.DIALOG_ID_ADD_LOCATION_PROGRESS, (int) R.id.numerator, (CharSequence) "100");
                     GeoTagActivity.this.f8792t.post(new Runnable() {
                         public void run() {
-                            C2331d.m10100a((Activity) GeoTagActivity.this);
+                            DialogFactory.m10100a((Activity) GeoTagActivity.this);
                         }
                     });
                     return;
                 case 105:
-                    C2331d.m10100a((Activity) GeoTagActivity.this);
-                    C2331d.m10114a((Activity) GeoTagActivity.this, C2328a.DIALOG_ID_ADD_LOCATION_CANCEL, (Bundle) null);
+                    DialogFactory.m10100a((Activity) GeoTagActivity.this);
+                    DialogFactory.m10114a((Activity) GeoTagActivity.this, C2328a.DIALOG_ID_ADD_LOCATION_CANCEL, (Bundle) null);
                     return;
                 default:
                     return;
@@ -373,19 +373,19 @@ public class GeoTagActivity extends C5537al implements C1349a {
 
         /* renamed from: a */
         public void mo5482a() {
-            C2331d.m10100a((Activity) GeoTagActivity.this);
+            DialogFactory.m10100a((Activity) GeoTagActivity.this);
         }
 
         /* renamed from: a */
         public void mo5483a(int i) {
-            C2331d.m10111a((Activity) GeoTagActivity.this, C2328a.GeotagTransferProgress, (int) R.id.percent_num, (CharSequence) String.valueOf(i));
-            C2331d.m10104a((Activity) GeoTagActivity.this, C2328a.GeotagTransferProgress, (int) R.id.progressBar2, i);
-            C2331d.m10111a((Activity) GeoTagActivity.this, C2328a.GeotagTransferProgress, (int) R.id.numerator, (CharSequence) String.valueOf(i));
+            DialogFactory.m10111a((Activity) GeoTagActivity.this, C2328a.GeotagTransferProgress, (int) R.id.percent_num, (CharSequence) String.valueOf(i));
+            DialogFactory.m10104a((Activity) GeoTagActivity.this, C2328a.GeotagTransferProgress, (int) R.id.progressBar2, i);
+            DialogFactory.m10111a((Activity) GeoTagActivity.this, C2328a.GeotagTransferProgress, (int) R.id.numerator, (CharSequence) String.valueOf(i));
         }
 
         /* renamed from: a */
         public void mo5484a(C2080b bVar) {
-            C2331d.m10100a((Activity) GeoTagActivity.this);
+            DialogFactory.m10100a((Activity) GeoTagActivity.this);
         }
     }
 
@@ -395,7 +395,7 @@ public class GeoTagActivity extends C5537al implements C1349a {
         }
 
         /* renamed from: a */
-        public void mo5337a(C1846e eVar) {
+        public void mo5337a(CameraStatus eVar) {
             if (eVar != null) {
                 String C = eVar.mo4654C();
                 if (C.equalsIgnoreCase("high")) {
@@ -431,9 +431,9 @@ public class GeoTagActivity extends C5537al implements C1349a {
         /* renamed from: a */
         public void mo6915a(String str) {
             if (str.equalsIgnoreCase("high")) {
-                C2331d.m10114a((Activity) GeoTagActivity.this, C2328a.ON_DISCONNECT_BY_HIGH_TEMP_NO_FINISH, (Bundle) null);
+                DialogFactory.m10114a((Activity) GeoTagActivity.this, C2328a.ON_DISCONNECT_BY_HIGH_TEMP_NO_FINISH, (Bundle) null);
             } else if (str.equalsIgnoreCase("assert")) {
-                C2331d.m10114a((Activity) GeoTagActivity.this, C2328a.ON_ASEERT_TEMP_NO_FINISH, (Bundle) null);
+                DialogFactory.m10114a((Activity) GeoTagActivity.this, C2328a.ON_ASEERT_TEMP_NO_FINISH, (Bundle) null);
             }
         }
 
@@ -468,7 +468,7 @@ public class GeoTagActivity extends C5537al implements C1349a {
 
         /* renamed from: b */
         public void mo3275b(C2328a aVar) {
-            C2331d.m10100a((Activity) GeoTagActivity.this);
+            DialogFactory.m10100a((Activity) GeoTagActivity.this);
         }
 
         /* renamed from: a */
@@ -562,10 +562,10 @@ public class GeoTagActivity extends C5537al implements C1349a {
             this.f8779e.mo6935a(false);
             this.f8779e.mo3205a();
             this.f8779e = null;
-            C2820e.m11780a((C2854b) null);
+            C2820e.m11780a((GeoTagViewModel) null);
         }
         if (this.f8775a != null) {
-            C2261g.m9763a("GeoTagActivity", "_nfcViewModel != null");
+            ImageAppLog.debug("GeoTagActivity", "_nfcViewModel != null");
             this.f8775a.mo3281a(false);
             this.f8775a.mo3289d();
             this.f8775a.mo3282a(false, false);
@@ -573,7 +573,7 @@ public class GeoTagActivity extends C5537al implements C1349a {
             this.f8775a.mo3205a();
             this.f8775a = null;
             if (!booleanValue) {
-                C2820e.m11805a(this.f8793u, (C1362c) null);
+                C2820e.m11805a(this.f8793u, (NfcSupportViewModel) null);
             }
         }
         super.finish();
@@ -607,7 +607,7 @@ public class GeoTagActivity extends C5537al implements C1349a {
             String str = getString(R.string.msg_geotag_takeover_data1) + "\n" + getString(R.string.msg_geotag_takeover_data2) + "\n" + getString(R.string.msg_geotag_takeover_data3);
             Bundle bundle = new Bundle();
             bundle.putString(C2378b.MESSAGE_STRING.name(), str);
-            C2331d.m10114a((Activity) this, C2328a.GeotagTransferConfirmation, bundle);
+            DialogFactory.m10114a((Activity) this, C2328a.GeotagTransferConfirmation, bundle);
         }
         this.f8789q = false;
         if (this.f8775a != null) {
@@ -628,7 +628,7 @@ public class GeoTagActivity extends C5537al implements C1349a {
     public void onPause() {
         super.onPause();
         m11845f();
-        C2331d.m10100a((Activity) this);
+        DialogFactory.m10100a((Activity) this);
         if (this.f8779e != null) {
             this.f8779e.mo6956q();
             this.f8779e.mo6957r();
@@ -674,14 +674,14 @@ public class GeoTagActivity extends C5537al implements C1349a {
         this.f8781g = new C2842a();
         this.f8779e = C2820e.m11758a((Context) this, this.f8792t, (C2857b) this.f8781g);
         if (this.f8779e == null) {
-            this.f8779e = new C2854b(this, this.f8792t, this.f8781g);
+            this.f8779e = new GeoTagViewModel(this, this.f8792t, this.f8781g);
         }
         this.f8780f = new C2852a();
         if (this.f8780f != null) {
             this.f8780f.mo6923a(this, this.f8779e);
         }
         this.f8782h = new C2844c();
-        this.f8783i = C2253z.m9680a(this.f8794v, true);
+        this.f8783i = ServiceFactory.m9680a(this.f8794v, true);
         if (this.f8783i != null) {
             this.f8783i.mo5268a((C2031c) this.f8782h);
         }
@@ -717,13 +717,13 @@ public class GeoTagActivity extends C5537al implements C1349a {
         if (this.f8779e != null) {
             if (this.f8779e.mo6941c()) {
                 this.f8779e.mo6949j();
-                C2331d.m10114a((Activity) this, C2328a.DIALOG_ID_GPS_SETTING_OFF, (Bundle) null);
+                DialogFactory.m10114a((Activity) this, C2328a.DIALOG_ID_GPS_SETTING_OFF, (Bundle) null);
                 m11845f();
             } else if (!this.f8779e.mo6963x()) {
                 mo6888a(false);
-                C2331d.m10114a((Activity) this, C2328a.NOT_SUPPORT_GPSLOGGER, (Bundle) null);
+                DialogFactory.m10114a((Activity) this, C2328a.NOT_SUPPORT_GPSLOGGER, (Bundle) null);
             } else if (!Secure.isLocationProviderEnabled(this.f8794v.getContentResolver(), "gps")) {
-                C2331d.m10114a((Activity) this, C2328a.DIALOG_ID_GPS_SETTING, (Bundle) null);
+                DialogFactory.m10114a((Activity) this, C2328a.DIALOG_ID_GPS_SETTING, (Bundle) null);
             } else {
                 this.f8779e.mo6948i();
                 m11843e();
@@ -786,7 +786,7 @@ public class GeoTagActivity extends C5537al implements C1349a {
     /* renamed from: e */
     public void m11843e() {
         if (this.f8785k == null) {
-            C2261g.m9763a("GeoTagActivity", "Status timer start.");
+            ImageAppLog.debug("GeoTagActivity", "Status timer start.");
             this.f8785k = new Timer("GeoTagStateTimer", true);
             this.f8785k.schedule(new TimerTask() {
                 public void run() {
@@ -807,7 +807,7 @@ public class GeoTagActivity extends C5537al implements C1349a {
         if (this.f8785k != null) {
             this.f8785k.cancel();
             this.f8785k.purge();
-            C2261g.m9763a("GeoTagActivity", "Status timer stop.");
+            ImageAppLog.debug("GeoTagActivity", "Status timer stop.");
         }
         this.f8785k = null;
     }
@@ -895,7 +895,7 @@ public class GeoTagActivity extends C5537al implements C1349a {
                 m11832a(l);
                 return;
             }
-            C2331d.m10114a((Activity) this, C2328a.DIALOG_ID_CONFIRM_SYNC_TIME, (Bundle) null);
+            DialogFactory.m10114a((Activity) this, C2328a.DIALOG_ID_CONFIRM_SYNC_TIME, (Bundle) null);
         }
     }
 
@@ -910,7 +910,7 @@ public class GeoTagActivity extends C5537al implements C1349a {
             case 4:
             case 5:
             case 6:
-                C2331d.m10114a((Activity) this, aVar, (Bundle) null);
+                DialogFactory.m10114a((Activity) this, aVar, (Bundle) null);
                 this.f8779e.f8839j.mo3216a(Boolean.valueOf(true));
                 break;
             case 7:
@@ -926,7 +926,7 @@ public class GeoTagActivity extends C5537al implements C1349a {
             default:
                 return;
         }
-        C2331d.m10114a((Activity) this, aVar, bundle);
+        DialogFactory.m10114a((Activity) this, aVar, bundle);
     }
 
     public void OnClickSendGeotag(View view) {
@@ -946,7 +946,7 @@ public class GeoTagActivity extends C5537al implements C1349a {
                 m11832a(p);
                 return;
             }
-            C2331d.m10114a((Activity) this, C2328a.DIALOG_ID_CONFIRM_SEND_GPS, (Bundle) null);
+            DialogFactory.m10114a((Activity) this, C2328a.DIALOG_ID_CONFIRM_SEND_GPS, (Bundle) null);
         }
     }
 
@@ -966,14 +966,14 @@ public class GeoTagActivity extends C5537al implements C1349a {
     }
 
     public void OnClickLiveView(View view) {
-        C2261g.m9760a(3149826, "");
+        ImageAppLog.m9760a(3149826, "");
         if (!ShowDmsErrorIfReceiving()) {
             C1892f a = C1712b.m6919c().mo4896a();
             if (a != null) {
                 boolean z = PreferenceManager.getDefaultSharedPreferences(this).getBoolean("menu_item_id_warn_lens_out", true);
                 boolean g = a.mo4893g();
                 if (z && g) {
-                    C2331d.m10114a((Activity) this, C2328a.DIALOG_ID_WARN_LENS_OUT, (Bundle) null);
+                    DialogFactory.m10114a((Activity) this, C2328a.DIALOG_ID_WARN_LENS_OUT, (Bundle) null);
                     return;
                 }
             }
@@ -993,7 +993,7 @@ public class GeoTagActivity extends C5537al implements C1349a {
     }
 
     public void OnClickBrowser(View view) {
-        C2261g.m9760a(3149827, "");
+        ImageAppLog.m9760a(3149827, "");
         if (!ShowDmsErrorIfReceiving() && getResultBundle() != null) {
             getResultBundle().putBoolean("Browser", true);
             finish();
@@ -1008,12 +1008,12 @@ public class GeoTagActivity extends C5537al implements C1349a {
     }
 
     public void OnClickSetup(View view) {
-        C2261g.m9760a(3149828, "");
+        ImageAppLog.m9760a(3149828, "");
         openOptionsMenu();
     }
 
     public void OnClickHome(View view) {
-        C2261g.m9760a(3149825, "");
+        ImageAppLog.m9760a(3149825, "");
     }
 
     /* renamed from: a */
@@ -1042,7 +1042,7 @@ public class GeoTagActivity extends C5537al implements C1349a {
 
     /* renamed from: a */
     public void mo3228a() {
-        C2331d.m10114a((Activity) this, C2328a.ON_NEED_LUMIX_LINK, (Bundle) null);
+        DialogFactory.m10114a((Activity) this, C2328a.ON_NEED_LUMIX_LINK, (Bundle) null);
     }
 
     /* access modifiers changed from: protected */
@@ -1070,7 +1070,7 @@ public class GeoTagActivity extends C5537al implements C1349a {
             case 12:
                 if (this.f8779e.mo6950k()) {
                     this.f8779e.mo6953n();
-                    C2331d.m10100a((Activity) this);
+                    DialogFactory.m10100a((Activity) this);
                 }
                 m11841c(true);
                 return null;
@@ -1084,7 +1084,7 @@ public class GeoTagActivity extends C5537al implements C1349a {
 
     /* renamed from: h */
     private C5759a m11849h() {
-        C2331d.m10100a((Activity) this);
+        DialogFactory.m10100a((Activity) this);
         return new C5759a();
     }
 
@@ -1092,13 +1092,13 @@ public class GeoTagActivity extends C5537al implements C1349a {
     private void m11851i() {
         C1892f a = C1712b.m6919c().mo4896a();
         if (a != null) {
-            C2253z.m9679a(this.f8794v, a).mo5185a((C1986a) new C1986a() {
+            ServiceFactory.m9679a(this.f8794v, a).mo5185a((C1986a) new C1986a() {
                 /* renamed from: a */
                 public void mo5201a() {
                     GeoTagActivity.this.f8792t.post(new Runnable() {
                         public void run() {
-                            if (!C2331d.m10125b((Activity) GeoTagActivity.this, C2328a.ON_PROGRESS)) {
-                                C2331d.m10114a((Activity) GeoTagActivity.this, C2328a.ON_PROGRESS, (Bundle) null);
+                            if (!DialogFactory.m10125b((Activity) GeoTagActivity.this, C2328a.ON_PROGRESS)) {
+                                DialogFactory.m10114a((Activity) GeoTagActivity.this, C2328a.ON_PROGRESS, (Bundle) null);
                             }
                         }
                     });
@@ -1108,7 +1108,7 @@ public class GeoTagActivity extends C5537al implements C1349a {
                 public void mo5202b() {
                     GeoTagActivity.this.f8792t.post(new Runnable() {
                         public void run() {
-                            C2331d.m10100a((Activity) GeoTagActivity.this);
+                            DialogFactory.m10100a((Activity) GeoTagActivity.this);
                         }
                     });
                 }
@@ -1117,7 +1117,7 @@ public class GeoTagActivity extends C5537al implements C1349a {
                 public void mo5203c() {
                     GeoTagActivity.this.f8792t.post(new Runnable() {
                         public void run() {
-                            C2331d.m10100a((Activity) GeoTagActivity.this);
+                            DialogFactory.m10100a((Activity) GeoTagActivity.this);
                         }
                     });
                 }
@@ -1238,7 +1238,7 @@ public class GeoTagActivity extends C5537al implements C1349a {
         this.f8777c = mo6891d();
         this.f8775a = C2820e.m11754a(this.f8793u, this.f8794v, this.f8792t, this.f8777c, this.f8776b, b);
         if (this.f8775a == null) {
-            this.f8775a = new C1362c(this.f8794v, this.f8792t, this.f8777c, this.f8776b, b, C2208b.f6846b, false);
+            this.f8775a = new NfcSupportViewModel(this.f8794v, this.f8792t, this.f8777c, this.f8776b, b, C2208b.f6846b, false);
             this.f8775a.mo3286c();
         }
     }
@@ -1272,54 +1272,54 @@ public class GeoTagActivity extends C5537al implements C1349a {
         return new C2207a() {
             /* renamed from: a */
             public void mo3255a(String str, String str2, String str3, boolean z, long j, long j2, long j3) {
-                C2261g.m9771e("GeoTagActivity", "INfcResultListener-OnSuccess()");
+                ImageAppLog.info("GeoTagActivity", "INfcResultListener-OnSuccess()");
             }
 
             /* renamed from: a */
             public void mo3251a() {
-                C2261g.m9771e("GeoTagActivity", "INfcResultListener-OnFailedNotPermitMovie()");
+                ImageAppLog.info("GeoTagActivity", "INfcResultListener-OnFailedNotPermitMovie()");
             }
 
             /* renamed from: h */
             public void mo3263h() {
-                C2261g.m9771e("GeoTagActivity", "INfcResultListener-OnFailedNotPermitNfcUse()");
-                C2331d.m10114a((Activity) GeoTagActivity.this, C2328a.NfcTouchFailedNotPermitNfcUse, (Bundle) null);
+                ImageAppLog.info("GeoTagActivity", "INfcResultListener-OnFailedNotPermitNfcUse()");
+                DialogFactory.m10114a((Activity) GeoTagActivity.this, C2328a.NfcTouchFailedNotPermitNfcUse, (Bundle) null);
             }
 
             /* renamed from: i */
             public void mo3264i() {
-                C2261g.m9771e("GeoTagActivity", "INfcResultListener-OnFailedInvalidData()");
-                C2331d.m10114a((Activity) GeoTagActivity.this, C2328a.NfcTouchFailedInvalidData, (Bundle) null);
+                ImageAppLog.info("GeoTagActivity", "INfcResultListener-OnFailedInvalidData()");
+                DialogFactory.m10114a((Activity) GeoTagActivity.this, C2328a.NfcTouchFailedInvalidData, (Bundle) null);
             }
 
             /* renamed from: j */
             public void mo3265j() {
-                C2261g.m9771e("GeoTagActivity", "INfcResultListener-OnFailedInvalidDevice()");
-                C2331d.m10114a((Activity) GeoTagActivity.this, C2328a.NfcTouchFailedInvalidDevice, (Bundle) null);
+                ImageAppLog.info("GeoTagActivity", "INfcResultListener-OnFailedInvalidDevice()");
+                DialogFactory.m10114a((Activity) GeoTagActivity.this, C2328a.NfcTouchFailedInvalidDevice, (Bundle) null);
             }
 
             /* renamed from: k */
             public void mo3266k() {
-                C2261g.m9771e("GeoTagActivity", "INfcResultListener-OnFailedShareInvalidPicture()");
+                ImageAppLog.info("GeoTagActivity", "INfcResultListener-OnFailedShareInvalidPicture()");
             }
 
             /* renamed from: b */
             public void mo3257b() {
-                C2261g.m9771e("GeoTagActivity", "INfcResultListener-OnFailed()");
+                ImageAppLog.info("GeoTagActivity", "INfcResultListener-OnFailed()");
                 if (GeoTagActivity.this.f8779e != null) {
                     GeoTagActivity.this.f8779e.mo6934a(GeoTagActivity.this.getString(R.string.geotag_worklog_status_error_send_gps_data));
                 }
-                C2331d.m10114a((Activity) GeoTagActivity.this, C2328a.NfcTouchFailedTouchDeGeotag, (Bundle) null);
+                DialogFactory.m10114a((Activity) GeoTagActivity.this, C2328a.NfcTouchFailedTouchDeGeotag, (Bundle) null);
             }
 
             /* renamed from: c */
             public void mo3258c() {
-                C2261g.m9771e("GeoTagActivity", "INfcResultListener-OnTagDetected()");
+                ImageAppLog.info("GeoTagActivity", "INfcResultListener-OnTagDetected()");
             }
 
             /* renamed from: a */
             public void mo3256a(boolean z) {
-                C2261g.m9771e("GeoTagActivity", String.format("INfcResultListener-OnEnableNfc(%b)", new Object[]{Boolean.valueOf(z)}));
+                ImageAppLog.info("GeoTagActivity", String.format("INfcResultListener-OnEnableNfc(%b)", new Object[]{Boolean.valueOf(z)}));
                 GeoTagActivity.this.f8786l = z;
                 GeoTagActivity.this.runOnUiThread(new Runnable() {
                     public void run() {
@@ -1330,64 +1330,64 @@ public class GeoTagActivity extends C5537al implements C1349a {
 
             /* renamed from: a */
             public void mo3253a(long j) {
-                C2261g.m9771e("GeoTagActivity", "INfcResultListener-OnFinishFirstOneTouch()");
+                ImageAppLog.info("GeoTagActivity", "INfcResultListener-OnFinishFirstOneTouch()");
             }
 
             /* renamed from: d */
             public void mo3259d() {
-                C2261g.m9771e("GeoTagActivity", "INfcResultListener-OnFailedFirstTwoTouch()");
+                ImageAppLog.info("GeoTagActivity", "INfcResultListener-OnFailedFirstTwoTouch()");
             }
 
             /* renamed from: e */
             public void mo3260e() {
-                C2261g.m9771e("GeoTagActivity", "INfcResultListener-OnTouchedOtherMovie()");
+                ImageAppLog.info("GeoTagActivity", "INfcResultListener-OnTouchedOtherMovie()");
             }
 
             /* renamed from: f */
             public void mo3261f() {
-                C2261g.m9771e("GeoTagActivity", "INfcResultListener-OnWaitDlgStart()");
+                ImageAppLog.info("GeoTagActivity", "INfcResultListener-OnWaitDlgStart()");
             }
 
             /* renamed from: g */
             public void mo3262g() {
-                C2261g.m9771e("GeoTagActivity", "INfcResultListener-OnWaitDlgEnd()");
+                ImageAppLog.info("GeoTagActivity", "INfcResultListener-OnWaitDlgEnd()");
             }
 
             /* renamed from: a */
             public void mo3254a(String str, String str2) {
-                C2261g.m9760a(2101251, "");
-                C2261g.m9771e("GeoTagActivity", "INfcResultListener-OnShareSuccess()");
+                ImageAppLog.m9760a(2101251, "");
+                ImageAppLog.info("GeoTagActivity", "INfcResultListener-OnShareSuccess()");
             }
 
             /* renamed from: l */
             public void mo3267l() {
-                C2261g.m9760a(2101252, "");
-                C2261g.m9771e("GeoTagActivity", "INfcResultListener-OnFailedNotSupportedGeotag()");
-                C2331d.m10114a((Activity) GeoTagActivity.this, C2328a.NfcTouchFailedNotSupportedGeotag, (Bundle) null);
+                ImageAppLog.m9760a(2101252, "");
+                ImageAppLog.info("GeoTagActivity", "INfcResultListener-OnFailedNotSupportedGeotag()");
+                DialogFactory.m10114a((Activity) GeoTagActivity.this, C2328a.NfcTouchFailedNotSupportedGeotag, (Bundle) null);
             }
 
             /* renamed from: n */
             public void mo3269n() {
-                C2261g.m9760a(2101252, "");
-                C2261g.m9771e("GeoTagActivity", "INfcResultListener-OnGeotagSuccess()");
+                ImageAppLog.m9760a(2101252, "");
+                ImageAppLog.info("GeoTagActivity", "INfcResultListener-OnGeotagSuccess()");
                 if (GeoTagActivity.this.f8779e != null) {
                     GeoTagActivity.this.f8779e.mo6934a(GeoTagActivity.this.getString(R.string.geotag_worklog_status_send_gps_data));
                 }
-                C2331d.m10114a((Activity) GeoTagActivity.this, C2328a.TouchDeGeotagSuccess, (Bundle) null);
+                DialogFactory.m10114a((Activity) GeoTagActivity.this, C2328a.TouchDeGeotagSuccess, (Bundle) null);
             }
 
             /* renamed from: a */
             public void mo3252a(byte b) {
-                C2261g.m9760a(2101252, "");
-                C2261g.m9771e("GeoTagActivity", "INfcResultListener-OnFailedUnavailableGeotag()");
+                ImageAppLog.m9760a(2101252, "");
+                ImageAppLog.info("GeoTagActivity", "INfcResultListener-OnFailedUnavailableGeotag()");
                 C2337e.m10156a((Activity) GeoTagActivity.this, (int) b & 255);
             }
 
             /* renamed from: m */
             public void mo3268m() {
-                C2261g.m9760a(2101252, "");
-                C2261g.m9771e("GeoTagActivity", "INfcResultListener-OnFailedNotApplicatableGeotag()");
-                C2331d.m10114a((Activity) GeoTagActivity.this, C2328a.NfcTouchFailedNotApplicatableGeotag, (Bundle) null);
+                ImageAppLog.m9760a(2101252, "");
+                ImageAppLog.info("GeoTagActivity", "INfcResultListener-OnFailedNotApplicatableGeotag()");
+                DialogFactory.m10114a((Activity) GeoTagActivity.this, C2328a.NfcTouchFailedNotApplicatableGeotag, (Bundle) null);
             }
         };
     }
@@ -1419,7 +1419,7 @@ public class GeoTagActivity extends C5537al implements C1349a {
                 this.f8779e.mo6938b(false);
                 C1892f a = C1712b.m6919c().mo4896a();
                 if (C1879a.m7547c(a, "1.3") || a.f5691m.mo4747s()) {
-                    C2331d.m10114a((Activity) this, C2328a.DIALOG_ID_ADD_LOCATION_COMFIRM, (Bundle) null);
+                    DialogFactory.m10114a((Activity) this, C2328a.DIALOG_ID_ADD_LOCATION_COMFIRM, (Bundle) null);
                     return;
                 }
                 return;
@@ -1434,7 +1434,7 @@ public class GeoTagActivity extends C5537al implements C1349a {
                         return;
                     }
                 } else {
-                    C2331d.m10114a((Activity) this, C2328a.DIALOG_ID_PHONE_ERROR, (Bundle) null);
+                    DialogFactory.m10114a((Activity) this, C2328a.DIALOG_ID_PHONE_ERROR, (Bundle) null);
                     return;
                 }
             case 12:
@@ -1448,19 +1448,19 @@ public class GeoTagActivity extends C5537al implements C1349a {
                         return;
                     }
                 } else {
-                    C2331d.m10114a((Activity) this, C2328a.DIALOG_ID_PHONE_ERROR, (Bundle) null);
+                    DialogFactory.m10114a((Activity) this, C2328a.DIALOG_ID_PHONE_ERROR, (Bundle) null);
                     return;
                 }
             case 13:
                 this.f8779e.mo6961v();
                 Bundle bundle = new Bundle();
                 bundle.putInt(C2378b.MESSAGE_ID.name(), R.string.geotag_msg_now_write_to_picture);
-                C2331d.m10115a((Activity) this, C2328a.DIALOG_ID_ADD_LOCATION_PROGRESS, bundle, (C2325c) new C2325c() {
+                DialogFactory.m10115a((Activity) this, C2328a.DIALOG_ID_ADD_LOCATION_PROGRESS, bundle, (C2325c) new C2325c() {
                     /* renamed from: a */
                     public void mo6131a() {
-                        C2331d.m10111a((Activity) GeoTagActivity.this, C2328a.DIALOG_ID_ADD_LOCATION_PROGRESS, (int) R.id.percent_num, (CharSequence) "0");
-                        C2331d.m10111a((Activity) GeoTagActivity.this, C2328a.DIALOG_ID_ADD_LOCATION_PROGRESS, (int) R.id.numerator, (CharSequence) "0");
-                        C2331d.m10111a((Activity) GeoTagActivity.this, C2328a.DIALOG_ID_ADD_LOCATION_PROGRESS, (int) R.id.denominator, (CharSequence) "100");
+                        DialogFactory.m10111a((Activity) GeoTagActivity.this, C2328a.DIALOG_ID_ADD_LOCATION_PROGRESS, (int) R.id.percent_num, (CharSequence) "0");
+                        DialogFactory.m10111a((Activity) GeoTagActivity.this, C2328a.DIALOG_ID_ADD_LOCATION_PROGRESS, (int) R.id.numerator, (CharSequence) "0");
+                        DialogFactory.m10111a((Activity) GeoTagActivity.this, C2328a.DIALOG_ID_ADD_LOCATION_PROGRESS, (int) R.id.denominator, (CharSequence) "100");
                     }
                 });
                 return;
@@ -1481,14 +1481,14 @@ public class GeoTagActivity extends C5537al implements C1349a {
             case HTTPcJni.JNI_CFG_HTTPC_MAX_HEAD /*16*/:
                 Bundle bundle2 = new Bundle();
                 bundle2.putInt(C2378b.MESSAGE_ID.name(), R.string.msg_geotag_takeover_executing);
-                C2331d.m10115a((Activity) this, C2328a.GeotagTransferProgress, bundle2, (C2325c) new C2325c() {
+                DialogFactory.m10115a((Activity) this, C2328a.GeotagTransferProgress, bundle2, (C2325c) new C2325c() {
                     /* renamed from: a */
                     public void mo6131a() {
-                        C2331d.m10111a((Activity) GeoTagActivity.this, C2328a.GeotagTransferProgress, (int) R.id.percent_num, (CharSequence) "0");
-                        C2331d.m10111a((Activity) GeoTagActivity.this, C2328a.GeotagTransferProgress, (int) R.id.numerator, (CharSequence) "0");
+                        DialogFactory.m10111a((Activity) GeoTagActivity.this, C2328a.GeotagTransferProgress, (int) R.id.percent_num, (CharSequence) "0");
+                        DialogFactory.m10111a((Activity) GeoTagActivity.this, C2328a.GeotagTransferProgress, (int) R.id.numerator, (CharSequence) "0");
                         if (GeoTagActivity.this.f8779e != null) {
-                            C2331d.m10119b((Activity) GeoTagActivity.this, C2328a.GeotagTransferProgress, (int) R.id.progressBar2, GeoTagActivity.this.f8779e.mo6930D());
-                            C2331d.m10111a((Activity) GeoTagActivity.this, C2328a.GeotagTransferProgress, (int) R.id.denominator, (CharSequence) String.valueOf(GeoTagActivity.this.f8779e.mo6930D()));
+                            DialogFactory.m10119b((Activity) GeoTagActivity.this, C2328a.GeotagTransferProgress, (int) R.id.progressBar2, GeoTagActivity.this.f8779e.mo6930D());
+                            DialogFactory.m10111a((Activity) GeoTagActivity.this, C2328a.GeotagTransferProgress, (int) R.id.denominator, (CharSequence) String.valueOf(GeoTagActivity.this.f8779e.mo6930D()));
                         }
                     }
                 });
@@ -1519,7 +1519,7 @@ public class GeoTagActivity extends C5537al implements C1349a {
                 this.f8779e.mo6957r();
                 C1892f a = C1712b.m6919c().mo4896a();
                 if (C1879a.m7547c(a, "1.3") || a.f5691m.mo4747s()) {
-                    C2331d.m10114a((Activity) this, C2328a.DIALOG_ID_ADD_LOCATION_COMFIRM, (Bundle) null);
+                    DialogFactory.m10114a((Activity) this, C2328a.DIALOG_ID_ADD_LOCATION_COMFIRM, (Bundle) null);
                     return;
                 }
                 return;
@@ -1539,7 +1539,7 @@ public class GeoTagActivity extends C5537al implements C1349a {
                 }
                 return;
             case HTTPcJni.JNI_CFG_HTTPC_MAX_HEAD /*16*/:
-                C2331d.m10114a((Activity) this, C2328a.GeotagDeleteConfirmation, (Bundle) null);
+                DialogFactory.m10114a((Activity) this, C2328a.GeotagDeleteConfirmation, (Bundle) null);
                 return;
             case 18:
                 if (this.f8779e.mo6950k()) {

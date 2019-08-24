@@ -57,7 +57,7 @@
     invoke-virtual {p0, v0, v2, v1}, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/LiveViewMoviePantilterAutoMovieActivity;->a(IZLjava/lang/String;)V
 
     .line 40
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/LiveViewMoviePantilterAutoMovieActivity;->b:Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/LiveViewMoviePantilterAutoMovieActivity;->b:Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/LiveViewMoviePantilterBaseViewModel;
 
     if-eqz v0, :cond_0
 
@@ -71,37 +71,37 @@
     .line 44
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/LiveViewMoviePantilterAutoMovieActivity;->c:Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/c;
 
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/LiveViewMoviePantilterAutoMovieActivity;->b:Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/LiveViewMoviePantilterAutoMovieActivity;->b:Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/LiveViewMoviePantilterBaseViewModel;
 
-    invoke-virtual {v0, p0, v1}, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/c;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b;)V
+    invoke-virtual {v0, p0, v1}, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/c;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/LiveViewMoviePantilterBaseViewModel;)V
 
     .line 45
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/LiveViewMoviePantilterAutoMovieActivity;->c:Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/c;
 
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/LiveViewMoviePantilterAutoMovieActivity;->b:Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/LiveViewMoviePantilterAutoMovieActivity;->b:Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/LiveViewMoviePantilterBaseViewModel;
 
-    invoke-virtual {v0, p0, v1}, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/c;->b(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b;)V
+    invoke-virtual {v0, p0, v1}, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/c;->b(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/LiveViewMoviePantilterBaseViewModel;)V
 
     .line 47
-    invoke-static {v3, v2}, Lcom/panasonic/avc/cng/model/service/z;->a(Landroid/content/Context;Z)Lcom/panasonic/avc/cng/model/service/e;
+    invoke-static {v3, v2}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->a(Landroid/content/Context;Z)Lcom/panasonic/avc/cng/model/service/e;
 
     move-result-object v0
 
     .line 48
-    invoke-interface {v0}, Lcom/panasonic/avc/cng/model/service/e;->i()Lcom/panasonic/avc/cng/model/c/e;
+    invoke-interface {v0}, Lcom/panasonic/avc/cng/model/service/e;->i()Lcom/panasonic/avc/cng/model/c/CameraStatus;
 
     move-result-object v0
 
     .line 49
     if-eqz v0, :cond_0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/e;->E()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->E()Ljava/lang/String;
 
     move-result-object v1
 
     if-eqz v1, :cond_0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/e;->E()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->E()Ljava/lang/String;
 
     move-result-object v0
 
@@ -116,7 +116,7 @@
     .line 51
     sget-object v0, Lcom/panasonic/avc/cng/view/b/b$a;->cb:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {p0, v0, v3}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {p0, v0, v3}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     .line 54
     :cond_0
@@ -138,12 +138,12 @@
     iput-boolean v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/LiveViewMoviePantilterAutoMovieActivity;->_isCheck:Z
 
     .line 67
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/LiveViewMoviePantilterAutoMovieActivity;->b:Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/LiveViewMoviePantilterAutoMovieActivity;->b:Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/LiveViewMoviePantilterBaseViewModel;
 
     if-eqz v0, :cond_0
 
     .line 69
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/LiveViewMoviePantilterAutoMovieActivity;->b:Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/LiveViewMoviePantilterAutoMovieActivity;->b:Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/LiveViewMoviePantilterBaseViewModel;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/LiveViewMoviePantilterAutoMovieActivity;->_context:Landroid/content/Context;
 
@@ -151,7 +151,7 @@
 
     iget-object v3, p0, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/LiveViewMoviePantilterAutoMovieActivity;->d:Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/a$a;
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b$a;)V
+    invoke-virtual {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/LiveViewMoviePantilterBaseViewModel;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b$a;)V
 
     .line 72
     :cond_0
@@ -162,16 +162,16 @@
     .line 74
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/LiveViewMoviePantilterAutoMovieActivity;->c:Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/c;
 
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/LiveViewMoviePantilterAutoMovieActivity;->b:Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/LiveViewMoviePantilterAutoMovieActivity;->b:Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/LiveViewMoviePantilterBaseViewModel;
 
-    invoke-virtual {v0, p0, v1}, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/c;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b;)V
+    invoke-virtual {v0, p0, v1}, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/c;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/LiveViewMoviePantilterBaseViewModel;)V
 
     .line 75
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/LiveViewMoviePantilterAutoMovieActivity;->c:Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/c;
 
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/LiveViewMoviePantilterAutoMovieActivity;->b:Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/LiveViewMoviePantilterAutoMovieActivity;->b:Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/LiveViewMoviePantilterBaseViewModel;
 
-    invoke-virtual {v0, p0, v1}, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/c;->b(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b;)V
+    invoke-virtual {v0, p0, v1}, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/c;->b(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/LiveViewMoviePantilterBaseViewModel;)V
 
     .line 79
     :cond_1

@@ -8,16 +8,16 @@ import com.panasonic.avc.cng.core.p040a.C1501d;
 import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.C1892f;
-import com.panasonic.avc.cng.model.p051c.C1853h;
+import com.panasonic.avc.cng.model.p051c.ParseTagHighlightSceneInfo;
 import com.panasonic.avc.cng.model.service.C2028e;
-import com.panasonic.avc.cng.model.service.C2253z;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
-import com.panasonic.avc.cng.view.setting.C5537al.C5540a;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
+import com.panasonic.avc.cng.view.setting.SettingMenuBaseActivity.C5540a;
 import com.panasonic.avc.cng.view.setting.C5681d.C5686b;
 import com.panasonic.avc.cng.view.setting.C5741i.C5759a;
 
-public class CameraPowerOffActivity extends C5537al {
+public class CameraPowerOffActivity extends SettingMenuBaseActivity {
 
     /* renamed from: a */
     private C5681d f15817a;
@@ -26,7 +26,7 @@ public class CameraPowerOffActivity extends C5537al {
     private class C4908a extends Thread {
 
         /* renamed from: a */
-        C1853h f15823a;
+        ParseTagHighlightSceneInfo f15823a;
 
         private C4908a() {
             this.f15823a = null;
@@ -34,9 +34,9 @@ public class CameraPowerOffActivity extends C5537al {
 
         /* access modifiers changed from: private */
         /* renamed from: a */
-        public C1853h m18909a() {
+        public ParseTagHighlightSceneInfo m18909a() {
             if (this.f15823a == null) {
-                this.f15823a = new C1853h((byte[]) null);
+                this.f15823a = new ParseTagHighlightSceneInfo((byte[]) null);
             }
             return this.f15823a;
         }
@@ -44,7 +44,7 @@ public class CameraPowerOffActivity extends C5537al {
         public void run() {
             C1892f a = C1712b.m6919c().mo4896a();
             if (a != null) {
-                C2028e a2 = C2253z.m9680a(CameraPowerOffActivity.this._context, true);
+                C2028e a2 = ServiceFactory.m9680a(CameraPowerOffActivity.this._context, true);
                 a2.mo5270a(false, true);
                 C1501d dVar = new C1501d(a.f5682d);
                 if (a.f5688j == 131074) {
@@ -78,13 +78,13 @@ public class CameraPowerOffActivity extends C5537al {
                         public void run() {
                             switch (i) {
                                 case 2:
-                                    C2331d.m10114a((Activity) CameraPowerOffActivity.this, C2328a.ON_DISCONNECT_BY_HIGH_TEMP_FINISH, (Bundle) null);
+                                    DialogFactory.m10114a((Activity) CameraPowerOffActivity.this, C2328a.ON_DISCONNECT_BY_HIGH_TEMP_FINISH, (Bundle) null);
                                     return;
                                 case 3:
-                                    C2331d.m10114a((Activity) CameraPowerOffActivity.this, C2328a.ON_DISCONNECT_BATTERY_LOW_FINISH, (Bundle) null);
+                                    DialogFactory.m10114a((Activity) CameraPowerOffActivity.this, C2328a.ON_DISCONNECT_BATTERY_LOW_FINISH, (Bundle) null);
                                     return;
                                 default:
-                                    C2331d.m10114a((Activity) CameraPowerOffActivity.this, C2328a.ON_DISCONNECT_FINISH, (Bundle) null);
+                                    DialogFactory.m10114a((Activity) CameraPowerOffActivity.this, C2328a.ON_DISCONNECT_FINISH, (Bundle) null);
                                     return;
                             }
                         }
@@ -173,7 +173,7 @@ public class CameraPowerOffActivity extends C5537al {
                 finish();
                 return;
             }
-            C2331d.m10114a((Activity) this, C2328a.ErrorPictureJumpBusy, (Bundle) null);
+            DialogFactory.m10114a((Activity) this, C2328a.ErrorPictureJumpBusy, (Bundle) null);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

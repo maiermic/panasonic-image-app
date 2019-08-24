@@ -6,12 +6,12 @@ import com.panasonic.avc.cng.core.p046c.C1648g;
 import com.panasonic.avc.cng.core.p046c.C1650i;
 import com.panasonic.avc.cng.core.p046c.C1651j;
 import com.panasonic.avc.cng.core.p046c.C1663m;
-import com.panasonic.avc.cng.core.p046c.C1671s;
+import com.panasonic.avc.cng.core.p046c.Picmate;
 import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.C1912n;
 import com.panasonic.avc.cng.model.C1913o;
 import com.panasonic.avc.cng.model.service.C2210p;
-import com.panasonic.avc.cng.model.service.C2253z;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
 import com.panasonic.avc.cng.p038a.C1342a;
 import java.util.ArrayList;
 import java.util.List;
@@ -23,7 +23,7 @@ public class C1829h extends C1342a {
     protected C2210p f5288c;
 
     /* renamed from: d */
-    protected C1671s f5289d;
+    protected Picmate f5289d;
 
     /* renamed from: e */
     protected C1912n f5290e;
@@ -48,9 +48,9 @@ public class C1829h extends C1342a {
     public void mo4598c() {
         this.f5292g = new ArrayList();
         this.f5291f = new ArrayList<>();
-        this.f5289d = C2253z.m9676a(this.f3706a);
+        this.f5289d = ServiceFactory.m9676a(this.f3706a);
         if (this.f5289d != null) {
-            this.f5289d = C2253z.m9677a(this.f3706a, this.f3707b);
+            this.f5289d = ServiceFactory.m9677a(this.f3706a, this.f3707b);
         }
     }
 

@@ -48,11 +48,11 @@
     .line 91
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewPhotoStyleActivity$2;->a:Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewPhotoStyleActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewPhotoStyleActivity;->a(Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewPhotoStyleActivity;)Lcom/panasonic/avc/cng/view/setting/av;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewPhotoStyleActivity;->a(Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewPhotoStyleActivity;)Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerPhotoStyleViewModel;
 
     move-result-object v0
 
-    invoke-virtual {v0, p1}, Lcom/panasonic/avc/cng/view/setting/av;->a(I)V
+    invoke-virtual {v0, p1}, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerPhotoStyleViewModel;->a(I)V
 
     .line 92
     return-void

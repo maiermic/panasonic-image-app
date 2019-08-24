@@ -130,7 +130,7 @@
 
     move-result-object v2
 
-    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 217
     const/16 v1, 0xc8
@@ -142,7 +142,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/util/s;->b(Landroid/content/Context;)Z
+    invoke-static {v0}, Lcom/panasonic/avc/cng/util/UsagesLogUtil;->b(Landroid/content/Context;)Z
 
     move-result v0
 
@@ -167,7 +167,7 @@
 
     move-result-object v0
 
-    invoke-static {v1, v0}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v0}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 222
     invoke-virtual {p0}, Lcom/panasonic/avc/cng/model/service/upload/usages/logservice/UsagesLogService;->getApplicationContext()Landroid/content/Context;
@@ -181,7 +181,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/util/s;->c(Landroid/content/Context;)V
+    invoke-static {v0}, Lcom/panasonic/avc/cng/util/UsagesLogUtil;->c(Landroid/content/Context;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -239,7 +239,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/util/s;->a(Landroid/content/Context;)Ljava/lang/String;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/util/UsagesLogUtil;->a(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -492,7 +492,7 @@
 
     const-string v1, "Auto"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/s;->a(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/UsagesLogUtil;->a(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -517,7 +517,7 @@
 
     move-result-object v2
 
-    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 104
     :try_start_0
@@ -637,17 +637,17 @@
 
     const-string v1, "Service onStartCommand"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 74
     invoke-virtual {p0}, Lcom/panasonic/avc/cng/model/service/upload/usages/logservice/UsagesLogService;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/util/g;->a(Landroid/content/Context;)V
+    invoke-static {v0}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(Landroid/content/Context;)V
 
     .line 75
-    invoke-static {}, Lcom/panasonic/avc/cng/util/g;->a()Ljava/lang/String;
+    invoke-static {}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a()Ljava/lang/String;
 
     move-result-object v0
 
@@ -659,13 +659,13 @@
     if-eqz v1, :cond_0
 
     .line 78
-    invoke-static {}, Lcom/panasonic/avc/cng/util/s;->a()Z
+    invoke-static {}, Lcom/panasonic/avc/cng/util/UsagesLogUtil;->a()Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    invoke-static {}, Lcom/panasonic/avc/cng/util/s;->b()Z
+    invoke-static {}, Lcom/panasonic/avc/cng/util/UsagesLogUtil;->b()Z
 
     move-result v1
 
@@ -677,7 +677,7 @@
 
     const-string v1, "upload NG!"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 81
     invoke-virtual {p0}, Lcom/panasonic/avc/cng/model/service/upload/usages/logservice/UsagesLogService;->stopSelf()V

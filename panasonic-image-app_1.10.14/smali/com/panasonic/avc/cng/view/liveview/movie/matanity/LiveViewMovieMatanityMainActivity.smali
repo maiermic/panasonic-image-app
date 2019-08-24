@@ -39,7 +39,7 @@
     invoke-virtual {p0, v0, v2, p1}, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/LiveViewMovieMatanityMainActivity;->a(IZLandroid/os/Bundle;)V
 
     .line 32
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/LiveViewMovieMatanityMainActivity;->c:Lcom/panasonic/avc/cng/view/liveview/movie/matanity/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/LiveViewMovieMatanityMainActivity;->c:Lcom/panasonic/avc/cng/view/liveview/movie/matanity/LiveViewMovieMatanityViewModel;
 
     if-eqz v0, :cond_0
 
@@ -53,9 +53,9 @@
     .line 36
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/LiveViewMovieMatanityMainActivity;->d:Lcom/panasonic/avc/cng/view/liveview/movie/matanity/b;
 
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/LiveViewMovieMatanityMainActivity;->c:Lcom/panasonic/avc/cng/view/liveview/movie/matanity/c;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/LiveViewMovieMatanityMainActivity;->c:Lcom/panasonic/avc/cng/view/liveview/movie/matanity/LiveViewMovieMatanityViewModel;
 
-    invoke-virtual {v0, p0, v1}, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/b;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/liveview/movie/matanity/c;)V
+    invoke-virtual {v0, p0, v1}, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/b;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/liveview/movie/matanity/LiveViewMovieMatanityViewModel;)V
 
     .line 40
     :cond_0
@@ -81,9 +81,9 @@
     if-ne v1, v2, :cond_1
 
     .line 47
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/LiveViewMovieMatanityMainActivity;->c:Lcom/panasonic/avc/cng/view/liveview/movie/matanity/c;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/LiveViewMovieMatanityMainActivity;->c:Lcom/panasonic/avc/cng/view/liveview/movie/matanity/LiveViewMovieMatanityViewModel;
 
-    invoke-virtual {v1, v2}, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/c;->c(Z)V
+    invoke-virtual {v1, v2}, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/LiveViewMovieMatanityViewModel;->c(Z)V
 
     .line 51
     :cond_1

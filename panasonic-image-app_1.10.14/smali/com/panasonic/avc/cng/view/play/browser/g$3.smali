@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/view/play/browser/g;->k(Z)V
+    value = Lcom/panasonic/avc/cng/view/play/browser/MainBrowserViewModel;->k(Z)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/panasonic/avc/cng/view/play/browser/g;
+.field final synthetic a:Lcom/panasonic/avc/cng/view/play/browser/MainBrowserViewModel;
 
 
 # direct methods
-.method constructor <init>(Lcom/panasonic/avc/cng/view/play/browser/g;)V
+.method constructor <init>(Lcom/panasonic/avc/cng/view/play/browser/MainBrowserViewModel;)V
     .locals 0
 
     .prologue
     .line 1733
-    iput-object p1, p0, Lcom/panasonic/avc/cng/view/play/browser/g$3;->a:Lcom/panasonic/avc/cng/view/play/browser/g;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/view/play/browser/g$3;->a:Lcom/panasonic/avc/cng/view/play/browser/MainBrowserViewModel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -41,9 +41,9 @@
 
     .prologue
     .line 1735
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/g$3;->a:Lcom/panasonic/avc/cng/view/play/browser/g;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/g$3;->a:Lcom/panasonic/avc/cng/view/play/browser/MainBrowserViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/browser/g;->e(Lcom/panasonic/avc/cng/view/play/browser/g;)Landroid/content/Context;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/browser/MainBrowserViewModel;->e(Lcom/panasonic/avc/cng/view/play/browser/MainBrowserViewModel;)Landroid/content/Context;
 
     move-result-object v0
 
@@ -68,9 +68,9 @@
     invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
 
     .line 1736
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/g$3;->a:Lcom/panasonic/avc/cng/view/play/browser/g;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/g$3;->a:Lcom/panasonic/avc/cng/view/play/browser/MainBrowserViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/browser/g;->f(Lcom/panasonic/avc/cng/view/play/browser/g;)Landroid/content/Context;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/browser/MainBrowserViewModel;->f(Lcom/panasonic/avc/cng/view/play/browser/MainBrowserViewModel;)Landroid/content/Context;
 
     move-result-object v0
 

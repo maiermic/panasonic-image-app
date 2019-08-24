@@ -45,23 +45,23 @@
     iput-boolean v3, v0, Lcom/panasonic/avc/cng/view/setting/EasyWiFiSettingActivity;->i:Z
 
     .line 116
-    sget-object v0, Lcom/panasonic/avc/cng/view/setting/EasyWiFiSettingActivity;->a:Lcom/panasonic/avc/cng/view/setting/j;
+    sget-object v0, Lcom/panasonic/avc/cng/view/setting/EasyWiFiSettingActivity;->a:Lcom/panasonic/avc/cng/view/setting/EasyWiFiManager;
 
     if-eqz v0, :cond_0
 
     .line 118
-    sget-object v0, Lcom/panasonic/avc/cng/view/setting/EasyWiFiSettingActivity;->a:Lcom/panasonic/avc/cng/view/setting/j;
+    sget-object v0, Lcom/panasonic/avc/cng/view/setting/EasyWiFiSettingActivity;->a:Lcom/panasonic/avc/cng/view/setting/EasyWiFiManager;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/j;->d()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/EasyWiFiManager;->d()V
 
     .line 119
-    sget-object v0, Lcom/panasonic/avc/cng/view/setting/EasyWiFiSettingActivity;->a:Lcom/panasonic/avc/cng/view/setting/j;
+    sget-object v0, Lcom/panasonic/avc/cng/view/setting/EasyWiFiSettingActivity;->a:Lcom/panasonic/avc/cng/view/setting/EasyWiFiManager;
 
     const/4 v1, 0x0
 
     const/4 v2, 0x5
 
-    invoke-virtual {v0, v1, v2}, Lcom/panasonic/avc/cng/view/setting/j;->a(Lcom/panasonic/avc/cng/view/b/b$a;I)V
+    invoke-virtual {v0, v1, v2}, Lcom/panasonic/avc/cng/view/setting/EasyWiFiManager;->a(Lcom/panasonic/avc/cng/view/b/b$a;I)V
 
     .line 120
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/EasyWiFiSettingActivity$1;->a:Lcom/panasonic/avc/cng/view/setting/EasyWiFiSettingActivity;

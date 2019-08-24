@@ -3,11 +3,11 @@ package com.google.firebase.iid;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Parcelable;
-import android.support.p000v4.content.C0158g;
+import android.support.p000v4.content.WakefulBroadcastReceiver;
 import android.util.Log;
 import com.google.android.gms.common.util.C0695j;
 
-public final class FirebaseInstanceIdInternalReceiver extends C0158g {
+public final class FirebaseInstanceIdInternalReceiver extends WakefulBroadcastReceiver {
 
     /* renamed from: a */
     private static boolean f3619a = false;

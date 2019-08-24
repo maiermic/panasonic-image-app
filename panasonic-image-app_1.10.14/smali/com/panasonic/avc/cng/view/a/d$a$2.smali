@@ -44,11 +44,11 @@
     :try_start_0
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/a/d$a$2;->a:Lcom/panasonic/avc/cng/view/a/d$a;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/a/d$a;->a:Lcom/panasonic/avc/cng/view/a/d;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/a/d$a;->a:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
     const/4 v1, 0x2
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/a/d;->a(Lcom/panasonic/avc/cng/view/a/d;I)Z
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;->a(Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;I)Z
 
     move-result v0
 
@@ -58,9 +58,9 @@
     .line 843
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/a/d$a$2;->a:Lcom/panasonic/avc/cng/view/a/d$a;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/a/d$a;->a:Lcom/panasonic/avc/cng/view/a/d;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/a/d$a;->a:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/a/d;->c(Lcom/panasonic/avc/cng/view/a/d;)Landroid/app/Activity;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;->c(Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;)Landroid/app/Activity;
 
     move-result-object v0
 
@@ -69,9 +69,9 @@
     .line 846
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/a/d$a$2;->a:Lcom/panasonic/avc/cng/view/a/d$a;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/a/d$a;->a:Lcom/panasonic/avc/cng/view/a/d;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/a/d$a;->a:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/a/d;->h()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;->h()V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 

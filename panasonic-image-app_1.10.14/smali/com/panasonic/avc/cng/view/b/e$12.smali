@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/view/b/e;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/play/browser/a;Lcom/panasonic/avc/cng/view/smartoperation/i;Lcom/panasonic/avc/cng/view/smartoperation/h;Lcom/panasonic/avc/cng/view/setting/g;)V
+    value = Lcom/panasonic/avc/cng/view/b/e;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/play/browser/a;Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;Lcom/panasonic/avc/cng/view/smartoperation/h;Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -24,15 +24,15 @@
 
 .field final synthetic c:Lcom/panasonic/avc/cng/view/play/browser/a;
 
-.field final synthetic d:Lcom/panasonic/avc/cng/view/smartoperation/i;
+.field final synthetic d:Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;
 
 .field final synthetic e:Lcom/panasonic/avc/cng/view/smartoperation/h;
 
-.field final synthetic f:Lcom/panasonic/avc/cng/view/setting/g;
+.field final synthetic f:Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;
 
 
 # direct methods
-.method constructor <init>(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Lcom/panasonic/avc/cng/view/play/browser/a;Lcom/panasonic/avc/cng/view/smartoperation/i;Lcom/panasonic/avc/cng/view/smartoperation/h;Lcom/panasonic/avc/cng/view/setting/g;)V
+.method constructor <init>(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Lcom/panasonic/avc/cng/view/play/browser/a;Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;Lcom/panasonic/avc/cng/view/smartoperation/h;Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;)V
     .locals 0
 
     .prologue
@@ -43,11 +43,11 @@
 
     iput-object p3, p0, Lcom/panasonic/avc/cng/view/b/e$12;->c:Lcom/panasonic/avc/cng/view/play/browser/a;
 
-    iput-object p4, p0, Lcom/panasonic/avc/cng/view/b/e$12;->d:Lcom/panasonic/avc/cng/view/smartoperation/i;
+    iput-object p4, p0, Lcom/panasonic/avc/cng/view/b/e$12;->d:Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;
 
     iput-object p5, p0, Lcom/panasonic/avc/cng/view/b/e$12;->e:Lcom/panasonic/avc/cng/view/smartoperation/h;
 
-    iput-object p6, p0, Lcom/panasonic/avc/cng/view/b/e$12;->f:Lcom/panasonic/avc/cng/view/setting/g;
+    iput-object p6, p0, Lcom/panasonic/avc/cng/view/b/e$12;->f:Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -71,7 +71,7 @@
 
     invoke-direct {v3, p0}, Lcom/panasonic/avc/cng/view/b/e$12$1;-><init>(Lcom/panasonic/avc/cng/view/b/e$12;)V
 
-    invoke-static {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;ILandroid/view/View$OnClickListener;)V
+    invoke-static {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;ILandroid/view/View$OnClickListener;)V
 
     .line 406
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/b/e$12;->a:Landroid/app/Activity;
@@ -84,7 +84,7 @@
 
     invoke-direct {v3, p0}, Lcom/panasonic/avc/cng/view/b/e$12$2;-><init>(Lcom/panasonic/avc/cng/view/b/e$12;)V
 
-    invoke-static {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;ILandroid/view/View$OnClickListener;)V
+    invoke-static {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;ILandroid/view/View$OnClickListener;)V
 
     .line 438
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/b/e$12;->a:Landroid/app/Activity;
@@ -97,7 +97,7 @@
 
     invoke-direct {v3, p0}, Lcom/panasonic/avc/cng/view/b/e$12$3;-><init>(Lcom/panasonic/avc/cng/view/b/e$12;)V
 
-    invoke-static {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;ILandroid/widget/CompoundButton$OnCheckedChangeListener;)V
+    invoke-static {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;ILandroid/widget/CompoundButton$OnCheckedChangeListener;)V
 
     .line 457
     return-void

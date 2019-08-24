@@ -65,7 +65,7 @@
 
     const-string v1, "onConnected()"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 4954
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/MainBrowserActivity$h;->a:Lcom/panasonic/avc/cng/view/play/browser/MainBrowserActivity;
@@ -118,7 +118,7 @@
 
     const-string v1, "\u81ea\u52d5\u753b\u50cf\u8ee2\u9001\u3067acctrl\u304c\u7d42\u308f\u3063\u3066\u3044\u305f\u3089M-Search\u3057\u306a\u3044"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 4966
     :cond_0
@@ -169,7 +169,7 @@
 
     const-string v1, "onWifiEnableStatus()"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 4973
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/MainBrowserActivity$h;->a:Lcom/panasonic/avc/cng/view/play/browser/MainBrowserActivity;
@@ -340,7 +340,7 @@
 
     const/4 v2, 0x0
 
-    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     goto/16 :goto_0
 
@@ -363,7 +363,7 @@
 
     const-string v1, "onSetWifiEnableResult()"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 5027
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/MainBrowserActivity$h;->a:Lcom/panasonic/avc/cng/view/play/browser/MainBrowserActivity;
@@ -435,7 +435,7 @@
 
     const-string v1, "onFinishConnectCamera()"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 5048
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/MainBrowserActivity$h;->a:Lcom/panasonic/avc/cng/view/play/browser/MainBrowserActivity;

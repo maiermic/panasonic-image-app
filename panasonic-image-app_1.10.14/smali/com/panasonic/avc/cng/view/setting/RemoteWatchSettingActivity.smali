@@ -30,7 +30,7 @@
     const/4 v0, 0x1
 
     .line 414
-    invoke-static {p0}, Lcom/panasonic/avc/cng/view/b/d;->b(Landroid/app/Activity;)Z
+    invoke-static {p0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->b(Landroid/app/Activity;)Z
 
     move-result v1
 

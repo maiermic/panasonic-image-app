@@ -8,16 +8,16 @@ import android.graphics.Matrix;
 import android.os.Bundle;
 import android.os.Handler;
 import android.widget.Toast;
-import com.panasonic.avc.cng.application.C1357b;
-import com.panasonic.avc.cng.application.C1362c;
+import com.panasonic.avc.cng.application.NfcSupportActivity;
+import com.panasonic.avc.cng.application.NfcSupportViewModel;
 import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.service.C2206o.C2207a;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
 import com.panasonic.avc.cng.view.play.browser.MainBrowserActivity;
 
-public class TouchShareNextActivity extends C1357b {
+public class TouchShareNextActivity extends NfcSupportActivity {
 
     /* renamed from: a */
     private final String f8646a = "TouchShareNextActivity";
@@ -35,7 +35,7 @@ public class TouchShareNextActivity extends C1357b {
     /* access modifiers changed from: private */
 
     /* renamed from: e */
-    public C2810d f8650e = null;
+    public TouchShareViewModel f8650e = null;
 
     /* renamed from: f */
     private boolean f8651f = false;
@@ -383,8 +383,8 @@ public class TouchShareNextActivity extends C1357b {
     public void onStart() {
         super.onStart();
         if (this.f8650e == null) {
-            C2820e.m11805a(getClass().getName(), (C1362c) null);
-            this.f8650e = new C2810d(this, this.f8647b, this.f8649d);
+            C2820e.m11805a(getClass().getName(), (NfcSupportViewModel) null);
+            this.f8650e = new TouchShareViewModel(this, this.f8647b, this.f8649d);
         }
         InitializeNfc(getClass().getName(), 4, false);
         if (this.f8651f) {
@@ -392,12 +392,12 @@ public class TouchShareNextActivity extends C1357b {
             if (this._nfcViewModel != null) {
                 this._nfcViewModel.mo3300l();
                 this._nfcViewModel.mo3285b(true);
-                C2261g.m9763a("TouchShareNextActivity", "RestartTagDetection restart:ture");
+                ImageAppLog.debug("TouchShareNextActivity", "RestartTagDetection restart:ture");
                 this._nfcViewModel.mo3302n();
             }
         } else if (this._nfcViewModel != null) {
             this._nfcViewModel.mo3285b(true);
-            C2261g.m9763a("TouchShareNextActivity", "RestartTagDetection restart:false");
+            ImageAppLog.debug("TouchShareNextActivity", "RestartTagDetection restart:false");
             this._nfcViewModel.mo3302n();
         }
     }
@@ -420,7 +420,7 @@ public class TouchShareNextActivity extends C1357b {
         return new C2207a() {
             /* renamed from: a */
             public void mo3254a(final String str, final String str2) {
-                C2261g.m9760a(2101251, "");
+                ImageAppLog.m9760a(2101251, "");
                 Toast makeText = Toast.makeText(TouchShareNextActivity.this.f8648c, R.string.msg_nfc_complete, 0);
                 if (makeText != null && TouchShareNextActivity.this.getString(R.string.msg_nfc_complete).length() > 0) {
                     makeText.setGravity(17, 0, 0);
@@ -453,7 +453,7 @@ public class TouchShareNextActivity extends C1357b {
 
             /* renamed from: a */
             public void mo3251a() {
-                C2331d.m10114a((Activity) TouchShareNextActivity.this, C2328a.NfcTouchFailed, (Bundle) null);
+                DialogFactory.m10114a((Activity) TouchShareNextActivity.this, C2328a.NfcTouchFailed, (Bundle) null);
                 if (TouchShareNextActivity.this._nfcViewModel != null) {
                     TouchShareNextActivity.this._nfcViewModel.mo3282a(false, false);
                 }
@@ -461,7 +461,7 @@ public class TouchShareNextActivity extends C1357b {
 
             /* renamed from: h */
             public void mo3263h() {
-                C2331d.m10114a((Activity) TouchShareNextActivity.this, C2328a.NfcTouchFailedNotPermitNfcUse2, (Bundle) null);
+                DialogFactory.m10114a((Activity) TouchShareNextActivity.this, C2328a.NfcTouchFailedNotPermitNfcUse2, (Bundle) null);
                 if (TouchShareNextActivity.this._nfcViewModel != null) {
                     TouchShareNextActivity.this._nfcViewModel.mo3282a(false, false);
                 }
@@ -469,7 +469,7 @@ public class TouchShareNextActivity extends C1357b {
 
             /* renamed from: i */
             public void mo3264i() {
-                C2331d.m10114a((Activity) TouchShareNextActivity.this, C2328a.NfcTouchFailedInvalidData, (Bundle) null);
+                DialogFactory.m10114a((Activity) TouchShareNextActivity.this, C2328a.NfcTouchFailedInvalidData, (Bundle) null);
                 if (TouchShareNextActivity.this._nfcViewModel != null) {
                     TouchShareNextActivity.this._nfcViewModel.mo3282a(false, false);
                 }
@@ -477,7 +477,7 @@ public class TouchShareNextActivity extends C1357b {
 
             /* renamed from: j */
             public void mo3265j() {
-                C2331d.m10114a((Activity) TouchShareNextActivity.this, C2328a.NfcTouchFailedInvalidDevice, (Bundle) null);
+                DialogFactory.m10114a((Activity) TouchShareNextActivity.this, C2328a.NfcTouchFailedInvalidDevice, (Bundle) null);
                 if (TouchShareNextActivity.this._nfcViewModel != null) {
                     TouchShareNextActivity.this._nfcViewModel.mo3282a(false, false);
                 }
@@ -485,7 +485,7 @@ public class TouchShareNextActivity extends C1357b {
 
             /* renamed from: k */
             public void mo3266k() {
-                C2331d.m10114a((Activity) TouchShareNextActivity.this, C2328a.NfcTouchFailedShareInvalidPicture, (Bundle) null);
+                DialogFactory.m10114a((Activity) TouchShareNextActivity.this, C2328a.NfcTouchFailedShareInvalidPicture, (Bundle) null);
                 if (TouchShareNextActivity.this._nfcViewModel != null) {
                     TouchShareNextActivity.this._nfcViewModel.mo3282a(false, false);
                 }
@@ -509,7 +509,7 @@ public class TouchShareNextActivity extends C1357b {
 
             /* renamed from: a */
             public void mo3255a(String str, String str2, String str3, boolean z, long j, long j2, long j3) {
-                C2331d.m10114a((Activity) TouchShareNextActivity.this, C2328a.NfcTouchFailedInvalidFunction, (Bundle) null);
+                DialogFactory.m10114a((Activity) TouchShareNextActivity.this, C2328a.NfcTouchFailedInvalidFunction, (Bundle) null);
                 if (TouchShareNextActivity.this._nfcViewModel != null) {
                     TouchShareNextActivity.this._nfcViewModel.mo3282a(false, false);
                 }
@@ -568,7 +568,7 @@ public class TouchShareNextActivity extends C1357b {
     public void onBackPressed() {
         if (!this.f8652g.booleanValue()) {
             this.f8652g = Boolean.valueOf(true);
-            C2820e.m11779a((C2810d) null);
+            C2820e.m11779a((TouchShareViewModel) null);
             if (this.f8650e != null) {
                 this.f8650e.mo6861c();
                 this.f8650e.mo3205a();

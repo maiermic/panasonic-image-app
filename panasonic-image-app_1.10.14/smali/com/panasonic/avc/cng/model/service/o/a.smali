@@ -10,7 +10,7 @@
 
 .field private c:Lcom/panasonic/avc/cng/core/a/d;
 
-.field private d:Lcom/panasonic/avc/cng/core/a/aw;
+.field private d:Lcom/panasonic/avc/cng/core/a/WearableSettingCommand;
 
 .field private e:Ljava/lang/String;
 
@@ -299,15 +299,15 @@
     iput-object v0, p0, Lcom/panasonic/avc/cng/model/service/o/a;->c:Lcom/panasonic/avc/cng/core/a/d;
 
     .line 55
-    new-instance v0, Lcom/panasonic/avc/cng/core/a/aw;
+    new-instance v0, Lcom/panasonic/avc/cng/core/a/WearableSettingCommand;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/o/a;->b:Lcom/panasonic/avc/cng/model/f;
 
     iget-object v1, v1, Lcom/panasonic/avc/cng/model/f;->d:Ljava/lang/String;
 
-    invoke-direct {v0, v1}, Lcom/panasonic/avc/cng/core/a/aw;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v1}, Lcom/panasonic/avc/cng/core/a/WearableSettingCommand;-><init>(Ljava/lang/String;)V
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/model/service/o/a;->d:Lcom/panasonic/avc/cng/core/a/aw;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/model/service/o/a;->d:Lcom/panasonic/avc/cng/core/a/WearableSettingCommand;
 
     .line 58
     :cond_0
@@ -321,7 +321,7 @@
     const/4 v0, 0x0
 
     .line 289
-    iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/o/a;->d:Lcom/panasonic/avc/cng/core/a/aw;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/o/a;->d:Lcom/panasonic/avc/cng/core/a/WearableSettingCommand;
 
     if-nez v1, :cond_1
 
@@ -335,22 +335,22 @@
     invoke-direct {p0, p1}, Lcom/panasonic/avc/cng/model/service/o/a;->b(Lcom/panasonic/avc/cng/model/a;)V
 
     .line 295
-    iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/o/a;->d:Lcom/panasonic/avc/cng/core/a/aw;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/o/a;->d:Lcom/panasonic/avc/cng/core/a/WearableSettingCommand;
 
     iget v2, p0, Lcom/panasonic/avc/cng/model/service/o/a;->f:I
 
-    invoke-virtual {v1, v2}, Lcom/panasonic/avc/cng/core/a/aw;->b(I)Z
+    invoke-virtual {v1, v2}, Lcom/panasonic/avc/cng/core/a/WearableSettingCommand;->b(I)Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
     .line 300
-    iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/o/a;->d:Lcom/panasonic/avc/cng/core/a/aw;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/o/a;->d:Lcom/panasonic/avc/cng/core/a/WearableSettingCommand;
 
     iget-object v2, p0, Lcom/panasonic/avc/cng/model/service/o/a;->e:Ljava/lang/String;
 
-    invoke-virtual {v1, v2}, Lcom/panasonic/avc/cng/core/a/aw;->l(Ljava/lang/String;)Z
+    invoke-virtual {v1, v2}, Lcom/panasonic/avc/cng/core/a/WearableSettingCommand;->l(Ljava/lang/String;)Z
 
     move-result v1
 
@@ -367,7 +367,7 @@
 
     .prologue
     .line 335
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/o/a;->d:Lcom/panasonic/avc/cng/core/a/aw;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/o/a;->d:Lcom/panasonic/avc/cng/core/a/WearableSettingCommand;
 
     if-nez v0, :cond_0
 
@@ -379,9 +379,9 @@
     return v0
 
     :cond_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/o/a;->d:Lcom/panasonic/avc/cng/core/a/aw;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/o/a;->d:Lcom/panasonic/avc/cng/core/a/WearableSettingCommand;
 
-    invoke-virtual {v0, p1, p2}, Lcom/panasonic/avc/cng/core/a/aw;->f(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-virtual {v0, p1, p2}, Lcom/panasonic/avc/cng/core/a/WearableSettingCommand;->f(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v0
 
@@ -393,7 +393,7 @@
 
     .prologue
     .line 321
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/o/a;->d:Lcom/panasonic/avc/cng/core/a/aw;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/o/a;->d:Lcom/panasonic/avc/cng/core/a/WearableSettingCommand;
 
     if-nez v0, :cond_0
 
@@ -405,9 +405,9 @@
     return v0
 
     :cond_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/o/a;->d:Lcom/panasonic/avc/cng/core/a/aw;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/o/a;->d:Lcom/panasonic/avc/cng/core/a/WearableSettingCommand;
 
-    invoke-virtual {v0, p1, p2, p3}, Lcom/panasonic/avc/cng/core/a/aw;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-virtual {v0, p1, p2, p3}, Lcom/panasonic/avc/cng/core/a/WearableSettingCommand;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v0
 
@@ -419,7 +419,7 @@
 
     .prologue
     .line 146
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/o/a;->d:Lcom/panasonic/avc/cng/core/a/aw;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/o/a;->d:Lcom/panasonic/avc/cng/core/a/WearableSettingCommand;
 
     if-eqz v0, :cond_0
 
@@ -436,9 +436,9 @@
     return v0
 
     :cond_1
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/o/a;->d:Lcom/panasonic/avc/cng/core/a/aw;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/o/a;->d:Lcom/panasonic/avc/cng/core/a/WearableSettingCommand;
 
-    invoke-virtual {v0, p1, p2}, Lcom/panasonic/avc/cng/core/a/aw;->a(Ljava/util/Calendar;Ljava/util/TimeZone;)Z
+    invoke-virtual {v0, p1, p2}, Lcom/panasonic/avc/cng/core/a/WearableSettingCommand;->a(Ljava/util/Calendar;Ljava/util/TimeZone;)Z
 
     move-result v0
 
@@ -450,7 +450,7 @@
 
     .prologue
     .line 350
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/o/a;->d:Lcom/panasonic/avc/cng/core/a/aw;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/o/a;->d:Lcom/panasonic/avc/cng/core/a/WearableSettingCommand;
 
     if-nez v0, :cond_0
 
@@ -462,9 +462,9 @@
     return v0
 
     :cond_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/o/a;->d:Lcom/panasonic/avc/cng/core/a/aw;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/o/a;->d:Lcom/panasonic/avc/cng/core/a/WearableSettingCommand;
 
-    invoke-virtual {v0, p1}, Lcom/panasonic/avc/cng/core/a/aw;->c(Z)Z
+    invoke-virtual {v0, p1}, Lcom/panasonic/avc/cng/core/a/WearableSettingCommand;->c(Z)Z
 
     move-result v0
 
@@ -476,7 +476,7 @@
 
     .prologue
     .line 259
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/o/a;->d:Lcom/panasonic/avc/cng/core/a/aw;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/o/a;->d:Lcom/panasonic/avc/cng/core/a/WearableSettingCommand;
 
     if-nez v0, :cond_0
 
@@ -488,9 +488,9 @@
     return v0
 
     :cond_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/o/a;->d:Lcom/panasonic/avc/cng/core/a/aw;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/o/a;->d:Lcom/panasonic/avc/cng/core/a/WearableSettingCommand;
 
-    invoke-virtual {v0, p1, p2}, Lcom/panasonic/avc/cng/core/a/aw;->a([Ljava/lang/String;[Ljava/lang/String;)Z
+    invoke-virtual {v0, p1, p2}, Lcom/panasonic/avc/cng/core/a/WearableSettingCommand;->a([Ljava/lang/String;[Ljava/lang/String;)Z
 
     move-result v0
 
@@ -502,7 +502,7 @@
 
     .prologue
     .line 271
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/o/a;->d:Lcom/panasonic/avc/cng/core/a/aw;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/o/a;->d:Lcom/panasonic/avc/cng/core/a/WearableSettingCommand;
 
     if-nez v0, :cond_0
 
@@ -514,9 +514,9 @@
     return v0
 
     :cond_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/o/a;->d:Lcom/panasonic/avc/cng/core/a/aw;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/o/a;->d:Lcom/panasonic/avc/cng/core/a/WearableSettingCommand;
 
-    invoke-virtual {v0, p1, p2}, Lcom/panasonic/avc/cng/core/a/aw;->a([Z[Z)Z
+    invoke-virtual {v0, p1, p2}, Lcom/panasonic/avc/cng/core/a/WearableSettingCommand;->a([Z[Z)Z
 
     move-result v0
 
@@ -571,7 +571,7 @@
 
     .prologue
     .line 240
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/o/a;->d:Lcom/panasonic/avc/cng/core/a/aw;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/o/a;->d:Lcom/panasonic/avc/cng/core/a/WearableSettingCommand;
 
     if-nez v0, :cond_0
 
@@ -583,9 +583,9 @@
     return-object v0
 
     :cond_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/o/a;->d:Lcom/panasonic/avc/cng/core/a/aw;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/o/a;->d:Lcom/panasonic/avc/cng/core/a/WearableSettingCommand;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/aw;->o()Ljava/util/List;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/WearableSettingCommand;->o()Ljava/util/List;
 
     move-result-object v0
 

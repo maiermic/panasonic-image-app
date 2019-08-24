@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/view/play/multiphotoframe/c;->n()Z
+    value = Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameBrowseViewModel;->n()Z
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,16 +20,16 @@
 # instance fields
 .field final synthetic a:Ljava/util/List;
 
-.field final synthetic b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/c;
+.field final synthetic b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameBrowseViewModel;
 
 
 # direct methods
-.method constructor <init>(Lcom/panasonic/avc/cng/view/play/multiphotoframe/c;Ljava/util/List;)V
+.method constructor <init>(Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameBrowseViewModel;Ljava/util/List;)V
     .locals 0
 
     .prologue
     .line 508
-    iput-object p1, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/c$2;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/c;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/c$2;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameBrowseViewModel;
 
     iput-object p2, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/c$2;->a:Ljava/util/List;
 
@@ -45,17 +45,17 @@
 
     .prologue
     .line 512
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/c$2;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/c$2;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameBrowseViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/c;->b(Lcom/panasonic/avc/cng/view/play/multiphotoframe/c;)Lcom/panasonic/avc/cng/model/service/n;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameBrowseViewModel;->b(Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameBrowseViewModel;)Lcom/panasonic/avc/cng/model/service/n;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/c$2;->a:Ljava/util/List;
 
-    iget-object v2, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/c$2;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/c;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/c$2;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameBrowseViewModel;
 
-    invoke-static {v2}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/c;->a(Lcom/panasonic/avc/cng/view/play/multiphotoframe/c;)Lcom/panasonic/avc/cng/view/play/multiphotoframe/c$c;
+    invoke-static {v2}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameBrowseViewModel;->a(Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameBrowseViewModel;)Lcom/panasonic/avc/cng/view/play/multiphotoframe/c$c;
 
     move-result-object v2
 

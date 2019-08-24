@@ -108,7 +108,7 @@
 
     move-result v3
 
-    invoke-static {v2, v3}, Lcom/google/android/gms/common/util/o;->a(Landroid/content/Context;I)Z
+    invoke-static {v2, v3}, Lcom/google/android/gms/common/util/UidVerifier;->a(Landroid/content/Context;I)Z
 
     move-result v2
 
@@ -120,7 +120,7 @@
 
     move-result-object v2
 
-    invoke-static {v2}, Lcom/google/android/gms/common/x;->a(Landroid/content/Context;)Lcom/google/android/gms/common/x;
+    invoke-static {v2}, Lcom/google/android/gms/common/GoogleSignatureVerifier;->a(Landroid/content/Context;)Lcom/google/android/gms/common/GoogleSignatureVerifier;
 
     move-result-object v2
 
@@ -138,7 +138,7 @@
 
     move-result v4
 
-    invoke-virtual {v2, v3, v4}, Lcom/google/android/gms/common/x;->a(Landroid/content/pm/PackageManager;I)Z
+    invoke-virtual {v2, v3, v4}, Lcom/google/android/gms/common/GoogleSignatureVerifier;->a(Landroid/content/pm/PackageManager;I)Z
 
     move-result v2
 
@@ -178,7 +178,7 @@
 
     move-result v1
 
-    invoke-static {v0, v1, p1}, Lcom/google/android/gms/common/w;->a(Landroid/content/Context;ILjava/lang/String;)Z
+    invoke-static {v0, v1, p1}, Lcom/google/android/gms/common/GooglePlayServicesUtil;->a(Landroid/content/Context;ILjava/lang/String;)Z
 
     move-result v0
 

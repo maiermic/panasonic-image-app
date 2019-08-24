@@ -260,7 +260,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 432
     iget-object v0, p0, Lcom/panasonic/avc/cng/core/b/a/a$1;->d:Lcom/panasonic/avc/cng/core/b/a/a;

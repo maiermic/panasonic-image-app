@@ -6,7 +6,7 @@ final class C0522b extends Thread {
     /* renamed from: a */
     private /* synthetic */ String f1099a;
 
-    C0522b(C0519a aVar, String str) {
+    C0522b(AdvertisingIdClient aVar, String str) {
         this.f1099a = str;
     }
 

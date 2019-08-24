@@ -84,7 +84,7 @@
 
     const-string v1, "onTouch:ACTION_DOWN"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->verbose(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 214
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixCompactActivity$2;->a:Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixCompactActivity;
@@ -101,7 +101,7 @@
 
     const-string v1, "onTouch:ACTION_CANCEL"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->verbose(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 220
     :pswitch_3
@@ -109,7 +109,7 @@
 
     const-string v1, "onTouch:ACTION_UP"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->verbose(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 221
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixCompactActivity$2;->a:Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixCompactActivity;

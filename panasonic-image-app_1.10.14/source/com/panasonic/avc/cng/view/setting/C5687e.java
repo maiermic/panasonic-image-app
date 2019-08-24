@@ -13,14 +13,14 @@ import com.panasonic.avc.cng.imageapp.C1701a.C1702a;
 import com.panasonic.avc.cng.imageapp.Httpc.HTTPcJni;
 import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.C1892f;
-import com.panasonic.avc.cng.model.p051c.C1846e;
+import com.panasonic.avc.cng.model.p051c.CameraStatus;
 import com.panasonic.avc.cng.model.service.C2028e;
 import com.panasonic.avc.cng.model.service.C2028e.C2031c;
-import com.panasonic.avc.cng.model.service.C2253z;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
 import com.panasonic.avc.cng.model.service.p056c.C2013a.C2017a;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
-import com.panasonic.avc.cng.view.setting.C5537al.C5540a;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
+import com.panasonic.avc.cng.view.setting.SettingMenuBaseActivity.C5540a;
 import com.panasonic.avc.cng.view.setting.C5741i.C5759a;
 
 /* renamed from: com.panasonic.avc.cng.view.setting.e */
@@ -55,8 +55,8 @@ public class C5687e {
         }
 
         /* renamed from: a */
-        public void mo5337a(final C1846e eVar) {
-            if (C1846e.m7190a(eVar)) {
+        public void mo5337a(final CameraStatus eVar) {
+            if (CameraStatus.m7190a(eVar)) {
                 final String E = eVar.mo4656E();
                 if (C5687e.this.f17562f != null && !C5687e.this.f17562f.equalsIgnoreCase("noconnect") && !C5687e.this.f17562f.equalsIgnoreCase("error")) {
                     C5687e.this.f17558b.post(new Runnable() {
@@ -72,7 +72,7 @@ public class C5687e {
                 if (C.equalsIgnoreCase("high")) {
                     C5687e.this.f17558b.post(new Runnable() {
                         public void run() {
-                            C2331d.m10114a(C5687e.this.f17557a, C2328a.ON_DISCONNECT_BY_HIGH_TEMP_NO_FINISH, (Bundle) null);
+                            DialogFactory.m10114a(C5687e.this.f17557a, C2328a.ON_DISCONNECT_BY_HIGH_TEMP_NO_FINISH, (Bundle) null);
                         }
                     });
                 }
@@ -83,14 +83,14 @@ public class C5687e {
                     edit.commit();
                     C5687e.this.f17558b.post(new Runnable() {
                         public void run() {
-                            C2331d.m10114a(C5687e.this.f17557a, C2328a.ON_ASEERT_TEMP_FINISH, (Bundle) null);
+                            DialogFactory.m10114a(C5687e.this.f17557a, C2328a.ON_ASEERT_TEMP_FINISH, (Bundle) null);
                         }
                     });
                 }
             } else if (C5687e.this.f17558b != null) {
                 C5687e.this.f17558b.post(new Runnable() {
                     public void run() {
-                        C5687e.m21186a(C1846e.m7191b(eVar), C5687e.this.f17557a, C5687e.this.f17559c, C5687e.this.f17561e);
+                        C5687e.m21186a(CameraStatus.m7191b(eVar), C5687e.this.f17557a, C5687e.this.f17559c, C5687e.this.f17561e);
                     }
                 });
             }
@@ -104,7 +104,7 @@ public class C5687e {
         public void mo5336a(C1699h hVar) {
             boolean z;
             boolean z2 = true;
-            C2028e a = C2253z.m9680a((Context) C5687e.this.f17557a, false);
+            C2028e a = ServiceFactory.m9680a((Context) C5687e.this.f17557a, false);
             if (a != null) {
                 C2017a k = a.mo5287k();
                 if (k == null || !k.mo5292a()) {
@@ -150,7 +150,7 @@ public class C5687e {
         this.f17559c = bundle;
         this.f17561e = z;
         if (this.f17560d == null) {
-            C2028e a = C2253z.m9680a((Context) this.f17557a, true);
+            C2028e a = ServiceFactory.m9680a((Context) this.f17557a, true);
             this.f17560d = new C5689a();
             a.mo5268a((C2031c) this.f17560d);
         }
@@ -159,7 +159,7 @@ public class C5687e {
     /* renamed from: a */
     public void mo12510a() {
         if (this.f17560d != null) {
-            C2253z.m9680a((Context) this.f17557a, true).mo5276b((C2031c) this.f17560d);
+            ServiceFactory.m9680a((Context) this.f17557a, true).mo5276b((C2031c) this.f17560d);
             this.f17560d = null;
         }
         this.f17557a = null;
@@ -235,26 +235,26 @@ public class C5687e {
             switch (i) {
                 case 2:
                     if (z) {
-                        C2331d.m10114a(activity, C2328a.ON_DISCONNECT_BY_HIGH_TEMP_FINISH, (Bundle) null);
+                        DialogFactory.m10114a(activity, C2328a.ON_DISCONNECT_BY_HIGH_TEMP_FINISH, (Bundle) null);
                         return;
                     } else {
-                        C2331d.m10114a(activity, C2328a.ON_DISCONNECT_BY_HIGH_TEMP_NO_FINISH, (Bundle) null);
+                        DialogFactory.m10114a(activity, C2328a.ON_DISCONNECT_BY_HIGH_TEMP_NO_FINISH, (Bundle) null);
                         return;
                     }
                 case 3:
                     if (z) {
-                        C2331d.m10114a(activity, C2328a.ON_DISCONNECT_BATTERY_LOW_FINISH, (Bundle) null);
+                        DialogFactory.m10114a(activity, C2328a.ON_DISCONNECT_BATTERY_LOW_FINISH, (Bundle) null);
                         return;
                     } else {
-                        C2331d.m10114a(activity, C2328a.ON_DISCONNECT_BATTERY_LOW_NO_FINISH, (Bundle) null);
+                        DialogFactory.m10114a(activity, C2328a.ON_DISCONNECT_BATTERY_LOW_NO_FINISH, (Bundle) null);
                         return;
                     }
                 default:
                     if (z) {
-                        C2331d.m10114a(activity, C2328a.ON_DISCONNECT_FINISH, (Bundle) null);
+                        DialogFactory.m10114a(activity, C2328a.ON_DISCONNECT_FINISH, (Bundle) null);
                         return;
                     } else {
-                        C2331d.m10114a(activity, C2328a.ON_DISCONNECT_NO_FINISH, (Bundle) null);
+                        DialogFactory.m10114a(activity, C2328a.ON_DISCONNECT_NO_FINISH, (Bundle) null);
                         return;
                     }
             }

@@ -15,7 +15,7 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import com.panasonic.avc.cng.imageapp.C1701a.C1702a;
 import com.panasonic.avc.cng.imageapp.R;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 
 public class BTShutterButton extends RelativeLayout implements OnTouchListener {
 
@@ -137,7 +137,7 @@ public class BTShutterButton extends RelativeLayout implements OnTouchListener {
                 this.f12887c = C3913a.Unlock;
                 m15690a(5);
             } else if (y >= this.f12889e - 10.0f) {
-                C2261g.m9760a(3207171, "");
+                ImageAppLog.m9760a(3207171, "");
                 this.f12887c = C3913a.Lock;
                 m15690a(5);
             } else {

@@ -467,14 +467,14 @@
 
     const/4 v0, 0x1
 
-    invoke-static {v0}, Lcom/google/android/gms/a/a/a;->a(Z)V
+    invoke-static {v0}, Lcom/google/android/gms/a/a/AdvertisingIdClient;->a(Z)V
 
     :try_start_0
     invoke-virtual {p0}, Lcom/google/android/gms/d/hz;->n()Landroid/content/Context;
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/google/android/gms/a/a/a;->a(Landroid/content/Context;)Lcom/google/android/gms/a/a/a$a;
+    invoke-static {v0}, Lcom/google/android/gms/a/a/AdvertisingIdClient;->a(Landroid/content/Context;)Lcom/google/android/gms/a/a/a$a;
 
     move-result-object v0
 
@@ -507,7 +507,7 @@
     :goto_1
     const/4 v0, 0x0
 
-    invoke-static {v0}, Lcom/google/android/gms/a/a/a;->a(Z)V
+    invoke-static {v0}, Lcom/google/android/gms/a/a/AdvertisingIdClient;->a(Z)V
 
     new-instance v0, Landroid/util/Pair;
 

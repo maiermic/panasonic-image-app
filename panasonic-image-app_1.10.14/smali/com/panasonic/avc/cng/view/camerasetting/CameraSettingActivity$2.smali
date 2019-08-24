@@ -43,11 +43,11 @@
     .line 537
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingActivity$2;->a:Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingActivity;->d(Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingActivity;)Lcom/panasonic/avc/cng/core/a/ao;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingActivity;->d(Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingActivity;)Lcom/panasonic/avc/cng/core/a/StatusCommand;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/ao;->f()[B
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/StatusCommand;->f()[B
 
     move-result-object v0
 
@@ -57,7 +57,7 @@
     .line 540
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingActivity$2;->a:Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;)V
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;)V
 
     .line 541
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingActivity$2;->a:Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingActivity;
@@ -66,7 +66,7 @@
 
     const/4 v2, 0x0
 
-    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     .line 565
     :cond_0
@@ -77,7 +77,7 @@
     :cond_1
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingActivity$2;->a:Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingActivity;
 
-    invoke-static {v1}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;)V
+    invoke-static {v1}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;)V
 
     .line 550
     new-instance v1, Ljava/util/Date;

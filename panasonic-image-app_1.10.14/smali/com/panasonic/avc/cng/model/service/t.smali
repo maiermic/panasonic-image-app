@@ -40,7 +40,7 @@
 .method public abstract e()I
 .end method
 
-.method public abstract f()Lcom/panasonic/avc/cng/model/c/e;
+.method public abstract f()Lcom/panasonic/avc/cng/model/c/CameraStatus;
 .end method
 
 .method public abstract g()I

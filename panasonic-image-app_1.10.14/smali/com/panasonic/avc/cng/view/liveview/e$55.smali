@@ -56,11 +56,11 @@
     :try_start_0
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/e$55;->b:Lcom/panasonic/avc/cng/view/liveview/e;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/e;->o:Lcom/panasonic/avc/cng/core/a/t;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/e;->o:Lcom/panasonic/avc/cng/core/a/LiveViewOperationCommand;
 
     iget-object v2, p0, Lcom/panasonic/avc/cng/view/liveview/e$55;->a:Ljava/lang/String;
 
-    invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/core/a/t;->k(Ljava/lang/String;)Lcom/panasonic/avc/cng/model/c/i;
+    invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/core/a/LiveViewOperationCommand;->k(Ljava/lang/String;)Lcom/panasonic/avc/cng/model/c/i;
 
     move-result-object v0
 
@@ -81,7 +81,7 @@
 
     const-string v1, "CropFrameChange Error"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 14286
     :goto_0

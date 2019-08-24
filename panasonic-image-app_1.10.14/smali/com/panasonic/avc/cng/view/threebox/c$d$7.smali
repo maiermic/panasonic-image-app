@@ -51,9 +51,9 @@
     .line 1422
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/c$d$7;->c:Lcom/panasonic/avc/cng/view/threebox/c$d;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/threebox/c$d;->a:Lcom/panasonic/avc/cng/view/threebox/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/threebox/c$d;->a:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/threebox/c;->v(Lcom/panasonic/avc/cng/view/threebox/c;)Z
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;->v(Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;)Z
 
     move-result v0
 
@@ -62,16 +62,16 @@
     .line 1424
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/c$d$7;->c:Lcom/panasonic/avc/cng/view/threebox/c$d;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/threebox/c$d;->a:Lcom/panasonic/avc/cng/view/threebox/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/threebox/c$d;->a:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/threebox/c;->b(Lcom/panasonic/avc/cng/view/threebox/c;Z)Z
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;->b(Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;Z)Z
 
     .line 1426
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/c$d$7;->c:Lcom/panasonic/avc/cng/view/threebox/c$d;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/threebox/c$d;->a:Lcom/panasonic/avc/cng/view/threebox/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/threebox/c$d;->a:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/threebox/c$d$7;->c:Lcom/panasonic/avc/cng/view/threebox/c$d;
 
@@ -79,12 +79,12 @@
 
     move-result v1
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/threebox/c;->d(I)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;->d(I)V
 
     .line 1427
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/c$d$7;->c:Lcom/panasonic/avc/cng/view/threebox/c$d;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/threebox/c$d;->a:Lcom/panasonic/avc/cng/view/threebox/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/threebox/c$d;->a:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/threebox/c$d$7;->c:Lcom/panasonic/avc/cng/view/threebox/c$d;
 
@@ -92,7 +92,7 @@
 
     move-result v1
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/threebox/c;->c(I)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;->c(I)V
 
     .line 1432
     :cond_0
@@ -116,7 +116,7 @@
     .line 1435
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/c$d$7;->c:Lcom/panasonic/avc/cng/view/threebox/c$d;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/threebox/c$d;->a:Lcom/panasonic/avc/cng/view/threebox/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/threebox/c$d;->a:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/threebox/c$d$7;->c:Lcom/panasonic/avc/cng/view/threebox/c$d;
 
@@ -124,7 +124,7 @@
 
     move-result v1
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/threebox/c;->d(I)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;->d(I)V
 
     .line 1439
     :cond_1
@@ -148,7 +148,7 @@
     .line 1442
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/c$d$7;->c:Lcom/panasonic/avc/cng/view/threebox/c$d;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/threebox/c$d;->a:Lcom/panasonic/avc/cng/view/threebox/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/threebox/c$d;->a:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/threebox/c$d$7;->c:Lcom/panasonic/avc/cng/view/threebox/c$d;
 
@@ -156,7 +156,7 @@
 
     move-result v1
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/threebox/c;->c(I)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;->c(I)V
 
     .line 1444
     :cond_2

@@ -58,7 +58,7 @@
 
     iget-object v0, v0, Lcom/panasonic/avc/cng/view/smartoperation/PicmateSendActivity$d;->a:Lcom/panasonic/avc/cng/view/smartoperation/PicmateSendActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;)V
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;)V
 
     .line 443
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/smartoperation/PicmateSendActivity$d$2;->a:Lcom/panasonic/avc/cng/view/smartoperation/PicmateSendActivity$d;
@@ -82,7 +82,7 @@
 
     const/4 v2, 0x0
 
-    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     .line 446
     return-void

@@ -46,7 +46,7 @@
 
 .field private c:Lcom/panasonic/avc/cng/view/bluetooth/BluetoothEquipmentSettingActivity$a;
 
-.field private d:Lcom/panasonic/avc/cng/view/bluetooth/b;
+.field private d:Lcom/panasonic/avc/cng/view/bluetooth/BluetoothEquipmentSettingViewModel;
 
 .field private e:Ljava/lang/String;
 
@@ -99,7 +99,7 @@
 
     .prologue
     .line 46
-    const-class v0, Lcom/panasonic/avc/cng/view/bluetooth/b;
+    const-class v0, Lcom/panasonic/avc/cng/view/bluetooth/BluetoothEquipmentSettingViewModel;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
 
@@ -641,7 +641,7 @@
     invoke-virtual {v1, v3, v2}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
     .line 549
-    invoke-static {p0, v0, v1}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {p0, v0, v1}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     .line 550
     return-void
@@ -1526,7 +1526,7 @@
 
     const-string v1, ""
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 475
     new-instance v0, Landroid/content/Intent;
@@ -1565,7 +1565,7 @@
 
     const-string v1, ""
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 361
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/bluetooth/BluetoothEquipmentSettingActivity;->e:Ljava/lang/String;
@@ -1587,7 +1587,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {p0, v0, v1}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {p0, v0, v1}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     .line 366
     :cond_0
@@ -1605,7 +1605,7 @@
 
     const-string v1, ""
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 399
     new-instance v0, Landroid/content/Intent;
@@ -1639,7 +1639,7 @@
 
     const-string v1, ""
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 435
     iput v2, p0, Lcom/panasonic/avc/cng/view/bluetooth/BluetoothEquipmentSettingActivity;->J:I
@@ -1688,7 +1688,7 @@
 
     move-result-object v2
 
-    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 441
     const-string v1, "Success"
@@ -1943,7 +1943,7 @@
 
     move-result-object v2
 
-    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 384
     const-string v1, "Success"
@@ -2047,7 +2047,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 643
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/bluetooth/BluetoothEquipmentSettingActivity;->_resultBundle:Landroid/os/Bundle;
@@ -2074,7 +2074,7 @@
     invoke-virtual {p0, v1, v0}, Lcom/panasonic/avc/cng/view/bluetooth/BluetoothEquipmentSettingActivity;->setResult(ILandroid/content/Intent;)V
 
     .line 652
-    sget-object v0, Lcom/panasonic/avc/cng/view/bluetooth/b;->e:Ljava/lang/String;
+    sget-object v0, Lcom/panasonic/avc/cng/view/bluetooth/BluetoothEquipmentSettingViewModel;->e:Ljava/lang/String;
 
     invoke-static {v0}, Lcom/panasonic/avc/cng/view/a/j;->b(Ljava/lang/String;)V
 
@@ -2094,7 +2094,7 @@
 
     const-string v1, "onActivityResult()"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 563
     invoke-super {p0, p1, p2, p3}, Lcom/panasonic/avc/cng/view/setting/i;->onActivityResult(IILandroid/content/Intent;)V
@@ -2263,7 +2263,7 @@
 
     move-result-object v2
 
-    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 628
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/bluetooth/BluetoothEquipmentSettingActivity;->_resultBundle:Landroid/os/Bundle;
@@ -2342,23 +2342,23 @@
     iput-object v0, p0, Lcom/panasonic/avc/cng/view/bluetooth/BluetoothEquipmentSettingActivity;->c:Lcom/panasonic/avc/cng/view/bluetooth/BluetoothEquipmentSettingActivity$a;
 
     .line 111
-    sget-object v0, Lcom/panasonic/avc/cng/view/bluetooth/b;->e:Ljava/lang/String;
+    sget-object v0, Lcom/panasonic/avc/cng/view/bluetooth/BluetoothEquipmentSettingViewModel;->e:Ljava/lang/String;
 
     invoke-static {v0}, Lcom/panasonic/avc/cng/view/a/j;->a(Ljava/lang/String;)Lcom/panasonic/avc/cng/view/a/c;
 
     move-result-object v0
 
-    check-cast v0, Lcom/panasonic/avc/cng/view/bluetooth/b;
+    check-cast v0, Lcom/panasonic/avc/cng/view/bluetooth/BluetoothEquipmentSettingViewModel;
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/view/bluetooth/BluetoothEquipmentSettingActivity;->d:Lcom/panasonic/avc/cng/view/bluetooth/b;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/view/bluetooth/BluetoothEquipmentSettingActivity;->d:Lcom/panasonic/avc/cng/view/bluetooth/BluetoothEquipmentSettingViewModel;
 
     .line 112
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/bluetooth/BluetoothEquipmentSettingActivity;->d:Lcom/panasonic/avc/cng/view/bluetooth/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/bluetooth/BluetoothEquipmentSettingActivity;->d:Lcom/panasonic/avc/cng/view/bluetooth/BluetoothEquipmentSettingViewModel;
 
     if-nez v0, :cond_5
 
     .line 115
-    new-instance v0, Lcom/panasonic/avc/cng/view/bluetooth/b;
+    new-instance v0, Lcom/panasonic/avc/cng/view/bluetooth/BluetoothEquipmentSettingViewModel;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/bluetooth/BluetoothEquipmentSettingActivity;->_context:Landroid/content/Context;
 
@@ -2366,12 +2366,12 @@
 
     iget-object v5, p0, Lcom/panasonic/avc/cng/view/bluetooth/BluetoothEquipmentSettingActivity;->c:Lcom/panasonic/avc/cng/view/bluetooth/BluetoothEquipmentSettingActivity$a;
 
-    invoke-direct {v0, v1, v4, v5}, Lcom/panasonic/avc/cng/view/bluetooth/b;-><init>(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/model/service/j$a;)V
+    invoke-direct {v0, v1, v4, v5}, Lcom/panasonic/avc/cng/view/bluetooth/BluetoothEquipmentSettingViewModel;-><init>(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/model/service/j$a;)V
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/view/bluetooth/BluetoothEquipmentSettingActivity;->d:Lcom/panasonic/avc/cng/view/bluetooth/b;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/view/bluetooth/BluetoothEquipmentSettingActivity;->d:Lcom/panasonic/avc/cng/view/bluetooth/BluetoothEquipmentSettingViewModel;
 
     .line 116
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/bluetooth/BluetoothEquipmentSettingActivity;->d:Lcom/panasonic/avc/cng/view/bluetooth/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/bluetooth/BluetoothEquipmentSettingActivity;->d:Lcom/panasonic/avc/cng/view/bluetooth/BluetoothEquipmentSettingViewModel;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/bluetooth/BluetoothEquipmentSettingActivity;->_context:Landroid/content/Context;
 
@@ -2379,12 +2379,12 @@
 
     iget-object v5, p0, Lcom/panasonic/avc/cng/view/bluetooth/BluetoothEquipmentSettingActivity;->c:Lcom/panasonic/avc/cng/view/bluetooth/BluetoothEquipmentSettingActivity$a;
 
-    invoke-virtual {v0, v1, v4, v5}, Lcom/panasonic/avc/cng/view/bluetooth/b;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/model/service/j$a;)V
+    invoke-virtual {v0, v1, v4, v5}, Lcom/panasonic/avc/cng/view/bluetooth/BluetoothEquipmentSettingViewModel;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/model/service/j$a;)V
 
     .line 119
-    sget-object v0, Lcom/panasonic/avc/cng/view/bluetooth/b;->e:Ljava/lang/String;
+    sget-object v0, Lcom/panasonic/avc/cng/view/bluetooth/BluetoothEquipmentSettingViewModel;->e:Ljava/lang/String;
 
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/bluetooth/BluetoothEquipmentSettingActivity;->d:Lcom/panasonic/avc/cng/view/bluetooth/b;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/bluetooth/BluetoothEquipmentSettingActivity;->d:Lcom/panasonic/avc/cng/view/bluetooth/BluetoothEquipmentSettingViewModel;
 
     invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/a/j;->a(Ljava/lang/String;Lcom/panasonic/avc/cng/view/a/c;)V
 
@@ -3042,7 +3042,7 @@
 
     .line 123
     :cond_5
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/bluetooth/BluetoothEquipmentSettingActivity;->d:Lcom/panasonic/avc/cng/view/bluetooth/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/bluetooth/BluetoothEquipmentSettingActivity;->d:Lcom/panasonic/avc/cng/view/bluetooth/BluetoothEquipmentSettingViewModel;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/bluetooth/BluetoothEquipmentSettingActivity;->_context:Landroid/content/Context;
 
@@ -3050,7 +3050,7 @@
 
     iget-object v5, p0, Lcom/panasonic/avc/cng/view/bluetooth/BluetoothEquipmentSettingActivity;->c:Lcom/panasonic/avc/cng/view/bluetooth/BluetoothEquipmentSettingActivity$a;
 
-    invoke-virtual {v0, v1, v4, v5}, Lcom/panasonic/avc/cng/view/bluetooth/b;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/model/service/j$a;)V
+    invoke-virtual {v0, v1, v4, v5}, Lcom/panasonic/avc/cng/view/bluetooth/BluetoothEquipmentSettingViewModel;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/model/service/j$a;)V
 
     goto/16 :goto_0
 
@@ -3259,7 +3259,7 @@
 
     const-string v1, "onPause()"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 347
     invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/i;->onPause()V
@@ -3370,7 +3370,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {p0, v0, v1}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {p0, v0, v1}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     goto :goto_0
 
@@ -3423,7 +3423,7 @@
 
     move-result-object v0
 
-    invoke-static {v1, v0}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v0}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 
@@ -3445,7 +3445,7 @@
 
     const-string v1, "onResume()"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 331
     invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/i;->onResume()V
@@ -3476,11 +3476,11 @@
     if-eqz v0, :cond_0
 
     .line 338
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/bluetooth/BluetoothEquipmentSettingActivity;->d:Lcom/panasonic/avc/cng/view/bluetooth/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/bluetooth/BluetoothEquipmentSettingActivity;->d:Lcom/panasonic/avc/cng/view/bluetooth/BluetoothEquipmentSettingViewModel;
 
     const/4 v1, 0x1
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/bluetooth/b;->c(Z)Lcom/panasonic/avc/cng/model/service/j;
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/bluetooth/BluetoothEquipmentSettingViewModel;->c(Z)Lcom/panasonic/avc/cng/model/service/j;
 
     move-result-object v0
 
@@ -3525,7 +3525,7 @@
 
     .line 1314
     :pswitch_0
-    invoke-static {p0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;)V
+    invoke-static {p0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;)V
 
     .line 1315
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/bluetooth/BluetoothEquipmentSettingActivity;->_context:Landroid/content/Context;
@@ -3556,13 +3556,13 @@
 
     aget-object v1, v1, p2
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     goto :goto_0
 
     .line 1323
     :pswitch_1
-    invoke-static {p0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;)V
+    invoke-static {p0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;)V
 
     .line 1324
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/bluetooth/BluetoothEquipmentSettingActivity;->_context:Landroid/content/Context;
@@ -3700,7 +3700,7 @@
 
     .line 1363
     :pswitch_2
-    invoke-static {p0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;)V
+    invoke-static {p0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;)V
 
     .line 1364
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/bluetooth/BluetoothEquipmentSettingActivity;->b:Lcom/panasonic/avc/cng/model/service/j;
@@ -3767,7 +3767,7 @@
 
     aget-object v0, v0, p2
 
-    invoke-static {v3, v0}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v3, v0}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     goto/16 :goto_0
 
@@ -3818,7 +3818,7 @@
 
     aget-object v0, v0, p2
 
-    invoke-static {v3, v0}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v3, v0}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     goto/16 :goto_0
 
@@ -3848,7 +3848,7 @@
 
     aget-object v0, v0, p2
 
-    invoke-static {v3, v0}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v3, v0}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     goto/16 :goto_0
 
@@ -3880,7 +3880,7 @@
 
     aget-object v0, v0, p2
 
-    invoke-static {v3, v0}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v3, v0}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     goto/16 :goto_0
 

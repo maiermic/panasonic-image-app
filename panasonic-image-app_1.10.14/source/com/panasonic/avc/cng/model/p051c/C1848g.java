@@ -7,7 +7,7 @@ import com.panasonic.avc.cng.model.C1914p.C1919e;
 import com.panasonic.avc.cng.model.p051c.C1865q.C1866a;
 import com.panasonic.avc.cng.model.p051c.C1865q.C1867b;
 import com.panasonic.avc.cng.model.p051c.C1875y.C1876a;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import java.io.StringReader;
 import java.util.ArrayList;
 import java.util.List;
@@ -249,7 +249,7 @@ public class C1848g extends C1843c {
                 eventType = xmlPullParser.next();
             }
         } catch (Exception e) {
-            C2261g.m9769c("ParseDocument", e.getMessage());
+            ImageAppLog.error("ParseDocument", e.getMessage());
             throw e;
         }
     }
@@ -311,7 +311,7 @@ public class C1848g extends C1843c {
                 next = xmlPullParser.next();
             }
         } catch (Exception e) {
-            C2261g.m9769c("ParseTagCamrply", e.getMessage());
+            ImageAppLog.error("ParseTagCamrply", e.getMessage());
             throw e;
         }
     }
@@ -332,7 +332,7 @@ public class C1848g extends C1843c {
                 next = xmlPullParser.next();
             }
         } catch (Exception e) {
-            C2261g.m9769c("ParseTagMenuSet", e.getMessage());
+            ImageAppLog.error("ParseTagMenuSet", e.getMessage());
             throw e;
         }
     }
@@ -354,7 +354,7 @@ public class C1848g extends C1843c {
                 next = xmlPullParser.next();
             }
         } catch (Exception e) {
-            C2261g.m9769c("ParseTagMenuSet", e.getMessage());
+            ImageAppLog.error("ParseTagMenuSet", e.getMessage());
             throw e;
         }
     }
@@ -380,7 +380,7 @@ public class C1848g extends C1843c {
                 next = xmlPullParser.next();
             }
         } catch (Exception e) {
-            C2261g.m9769c("ParseTagCamModeSet", e.getMessage());
+            ImageAppLog.error("ParseTagCamModeSet", e.getMessage());
             throw e;
         }
     }
@@ -403,7 +403,7 @@ public class C1848g extends C1843c {
                 next = xmlPullParser.next();
             }
         } catch (Exception e) {
-            C2261g.m9769c("ParseTagModeList", e.getMessage());
+            ImageAppLog.error("ParseTagModeList", e.getMessage());
             throw e;
         }
     }
@@ -434,7 +434,7 @@ public class C1848g extends C1843c {
             }
             return yVar;
         } catch (Exception e) {
-            C2261g.m9769c("ParseTagModeList", e.getMessage());
+            ImageAppLog.error("ParseTagModeList", e.getMessage());
             throw e;
         }
     }
@@ -454,7 +454,7 @@ public class C1848g extends C1843c {
                 next = xmlPullParser.next();
             }
         } catch (Exception e) {
-            C2261g.m9769c("ParseTagLiveView", e.getMessage());
+            ImageAppLog.error("ParseTagLiveView", e.getMessage());
             throw e;
         }
     }
@@ -483,7 +483,7 @@ public class C1848g extends C1843c {
                 next = xmlPullParser.next();
             }
         } catch (Exception e) {
-            C2261g.m9769c("ParseTagMediaDir", e.getMessage());
+            ImageAppLog.error("ParseTagMediaDir", e.getMessage());
             throw e;
         }
     }
@@ -507,7 +507,7 @@ public class C1848g extends C1843c {
             }
             return aVar;
         } catch (Exception e) {
-            C2261g.m9769c("ParseTagFormatDir", e.getMessage());
+            ImageAppLog.error("ParseTagFormatDir", e.getMessage());
             throw e;
         }
     }
@@ -534,7 +534,7 @@ public class C1848g extends C1843c {
                 next = xmlPullParser.next();
             }
         } catch (Exception e) {
-            C2261g.m9769c("ParseTagDir", e.getMessage());
+            ImageAppLog.error("ParseTagDir", e.getMessage());
             throw e;
         }
     }
@@ -559,7 +559,7 @@ public class C1848g extends C1843c {
                 next = xmlPullParser.next();
             }
         } catch (Exception e) {
-            C2261g.m9769c("ParseTagDir", e.getMessage());
+            ImageAppLog.error("ParseTagDir", e.getMessage());
             throw e;
         }
     }
@@ -582,7 +582,7 @@ public class C1848g extends C1843c {
                 next = xmlPullParser.next();
             }
         } catch (Exception e) {
-            C2261g.m9769c("ParseTagDir", e.getMessage());
+            ImageAppLog.error("ParseTagDir", e.getMessage());
             throw e;
         }
     }
@@ -604,7 +604,7 @@ public class C1848g extends C1843c {
             }
             return qVar;
         } catch (Exception e) {
-            C2261g.m9769c("ParseTagModeList", e.getMessage());
+            ImageAppLog.error("ParseTagModeList", e.getMessage());
             throw e;
         }
     }
@@ -621,7 +621,7 @@ public class C1848g extends C1843c {
                 next = xmlPullParser.next();
             }
         } catch (Exception e) {
-            C2261g.m9769c("ParseTagHilightOption", e.getMessage());
+            ImageAppLog.error("ParseTagHilightOption", e.getMessage());
         }
     }
 
@@ -643,7 +643,7 @@ public class C1848g extends C1843c {
                 next = xmlPullParser.next();
             }
         } catch (Exception e) {
-            C2261g.m9769c("ParseTagDir", e.getMessage());
+            ImageAppLog.error("ParseTagDir", e.getMessage());
             throw e;
         }
     }
@@ -665,7 +665,7 @@ public class C1848g extends C1843c {
             }
             return eVar;
         } catch (Exception e) {
-            C2261g.m9769c("ParseTagStopMotionList", e.getMessage());
+            ImageAppLog.error("ParseTagStopMotionList", e.getMessage());
             throw e;
         }
     }
@@ -692,7 +692,7 @@ public class C1848g extends C1843c {
             }
             return dVar;
         } catch (Exception e) {
-            C2261g.m9769c("ParseTagStopMotionVideoQuality", e.getMessage());
+            ImageAppLog.error("ParseTagStopMotionVideoQuality", e.getMessage());
             throw e;
         }
     }
@@ -707,7 +707,7 @@ public class C1848g extends C1843c {
             }
             return cVar;
         } catch (Exception e) {
-            C2261g.m9769c("ParseTagStopMotionFramerate", e.getMessage());
+            ImageAppLog.error("ParseTagStopMotionFramerate", e.getMessage());
             throw e;
         }
     }
@@ -729,7 +729,7 @@ public class C1848g extends C1843c {
             }
             return this.f5480p;
         } catch (Exception e) {
-            C2261g.m9769c("ParseTagCamSpecList", e.getMessage());
+            ImageAppLog.error("ParseTagCamSpecList", e.getMessage());
             this.f5480p = 0;
             throw e;
         }
@@ -807,7 +807,7 @@ public class C1848g extends C1843c {
             }
             return i;
         } catch (Exception e) {
-            C2261g.m9769c("ParseCamSpec", e.getMessage());
+            ImageAppLog.error("ParseCamSpec", e.getMessage());
             throw e;
         }
     }
@@ -825,7 +825,7 @@ public class C1848g extends C1843c {
                 next = xmlPullParser.next();
             }
         } catch (Exception e) {
-            C2261g.m9769c("ParseTagCropDisp", e.getMessage());
+            ImageAppLog.error("ParseTagCropDisp", e.getMessage());
             this.f5485u = null;
             this.f5486v = null;
             throw e;
@@ -847,7 +847,7 @@ public class C1848g extends C1843c {
                 next = xmlPullParser.next();
             }
         } catch (Exception e) {
-            C2261g.m9769c("ParseTagAsstDisp", e.getMessage());
+            ImageAppLog.error("ParseTagAsstDisp", e.getMessage());
             this.f5481q = null;
             this.f5482r = null;
             this.f5483s = null;
@@ -871,7 +871,7 @@ public class C1848g extends C1843c {
                 next = xmlPullParser.next();
             }
         } catch (Exception e) {
-            C2261g.m9769c("ParseTagAsstDispPinpoint", e.getMessage());
+            ImageAppLog.error("ParseTagAsstDispPinpoint", e.getMessage());
             this.f5457U = null;
             this.f5458V = null;
             this.f5459W = null;
@@ -895,7 +895,7 @@ public class C1848g extends C1843c {
                 next = xmlPullParser.next();
             }
         } catch (Exception e) {
-            C2261g.m9769c("ParseTagAsstDispDigitalScope", e.getMessage());
+            ImageAppLog.error("ParseTagAsstDispDigitalScope", e.getMessage());
             this.f5461Y = null;
             this.f5462Z = null;
             this.f5464aa = null;
@@ -915,7 +915,7 @@ public class C1848g extends C1843c {
                 next = xmlPullParser.next();
             }
         } catch (Exception e) {
-            C2261g.m9769c("ParseTagDevice", e.getMessage());
+            ImageAppLog.error("ParseTagDevice", e.getMessage());
             throw e;
         }
     }
@@ -932,7 +932,7 @@ public class C1848g extends C1843c {
                 next = xmlPullParser.next();
             }
         } catch (Exception e) {
-            C2261g.m9769c("ParseTagPantilterAttribute", e.getMessage());
+            ImageAppLog.error("ParseTagPantilterAttribute", e.getMessage());
             throw e;
         }
     }
@@ -952,7 +952,7 @@ public class C1848g extends C1843c {
                 next = xmlPullParser.next();
             }
         } catch (Exception e) {
-            C2261g.m9769c("ParseTagAsstDispAttribute", e.getMessage());
+            ImageAppLog.error("ParseTagAsstDispAttribute", e.getMessage());
             throw e;
         }
     }
@@ -972,7 +972,7 @@ public class C1848g extends C1843c {
                 next = xmlPullParser.next();
             }
         } catch (Exception e) {
-            C2261g.m9769c("ParseTagAsstDispPinpointAttribute", e.getMessage());
+            ImageAppLog.error("ParseTagAsstDispPinpointAttribute", e.getMessage());
             throw e;
         }
     }
@@ -992,7 +992,7 @@ public class C1848g extends C1843c {
                 next = xmlPullParser.next();
             }
         } catch (Exception e) {
-            C2261g.m9769c("ParseTagAsstDispDigitalScopeAttribute", e.getMessage());
+            ImageAppLog.error("ParseTagAsstDispDigitalScopeAttribute", e.getMessage());
             throw e;
         }
     }
@@ -1009,7 +1009,7 @@ public class C1848g extends C1843c {
                 next = xmlPullParser.next();
             }
         } catch (Exception e) {
-            C2261g.m9769c("ParseTagCropDispAttribute", e.getMessage());
+            ImageAppLog.error("ParseTagCropDispAttribute", e.getMessage());
             throw e;
         }
     }
@@ -1027,7 +1027,7 @@ public class C1848g extends C1843c {
                 next = xmlPullParser.next();
             }
         } catch (Exception e) {
-            C2261g.m9769c("ParseTagSsSettingList", e.getMessage());
+            ImageAppLog.error("ParseTagSsSettingList", e.getMessage());
             throw e;
         }
     }
@@ -1045,7 +1045,7 @@ public class C1848g extends C1843c {
                 next = xmlPullParser.next();
             }
         } catch (Exception e) {
-            C2261g.m9769c("ParseTagFSettingList", e.getMessage());
+            ImageAppLog.error("ParseTagFSettingList", e.getMessage());
             throw e;
         }
     }
@@ -1062,7 +1062,7 @@ public class C1848g extends C1843c {
                 next = xmlPullParser.next();
             }
         } catch (Exception e) {
-            C2261g.m9769c("ParseTagSsSettingListAttribute", e.getMessage());
+            ImageAppLog.error("ParseTagSsSettingListAttribute", e.getMessage());
             throw e;
         }
     }
@@ -1079,7 +1079,7 @@ public class C1848g extends C1843c {
                 next = xmlPullParser.next();
             }
         } catch (Exception e) {
-            C2261g.m9769c("ParseTagFSettingListAttribute", e.getMessage());
+            ImageAppLog.error("ParseTagFSettingListAttribute", e.getMessage());
             throw e;
         }
     }

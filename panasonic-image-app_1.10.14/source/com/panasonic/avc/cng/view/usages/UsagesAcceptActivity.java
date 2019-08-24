@@ -13,14 +13,14 @@ import android.webkit.WebView;
 import android.widget.TextView;
 import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.C1712b;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.util.C2266l;
-import com.panasonic.avc.cng.util.C2280s;
+import com.panasonic.avc.cng.util.UsagesLogUtil;
 import com.panasonic.avc.cng.view.cameraconnect.GuidanceMenuActivity;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
 import com.panasonic.avc.cng.view.parts.PageIndicator;
-import com.panasonic.avc.cng.view.setting.C5537al.C5540a;
+import com.panasonic.avc.cng.view.setting.SettingMenuBaseActivity.C5540a;
 import com.panasonic.avc.cng.view.setting.C5687e;
 import com.panasonic.avc.cng.view.setting.C5741i;
 import java.io.File;
@@ -168,17 +168,17 @@ public class UsagesAcceptActivity extends C5741i {
         } else if (!this.f18395c.equalsIgnoreCase("Manual")) {
         } else {
             if (!C2266l.m9800a()) {
-                C2261g.m9763a("UsagesAcceptActivity", "connect error");
+                ImageAppLog.debug("UsagesAcceptActivity", "connect error");
                 this.f18394b.post(new Runnable() {
                     public void run() {
-                        C2331d.m10114a((Activity) UsagesAcceptActivity.this, C2328a.ON_UPLOAD_LOG_SERVER_ERROR, (Bundle) null);
+                        DialogFactory.m10114a((Activity) UsagesAcceptActivity.this, C2328a.ON_UPLOAD_LOG_SERVER_ERROR, (Bundle) null);
                     }
                 });
                 return;
             }
-            String a = C2261g.m9759a();
-            String a2 = C2280s.m9930a(getApplicationContext(), "Manual");
-            C2261g.m9763a("UsagesAcceptActivity", "fileName:" + a2);
+            String a = ImageAppLog.m9759a();
+            String a2 = UsagesLogUtil.m9930a(getApplicationContext(), "Manual");
+            ImageAppLog.debug("UsagesAcceptActivity", "fileName:" + a2);
             try {
                 OutputStreamWriter outputStreamWriter = new OutputStreamWriter(new FileOutputStream(new File(a2)));
                 outputStreamWriter.write(a);

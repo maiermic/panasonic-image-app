@@ -16,11 +16,11 @@ import com.panasonic.avc.cng.view.liveview.C3271k.C3337d;
 import com.panasonic.avc.cng.view.liveview.icon.C3206a;
 import com.panasonic.avc.cng.view.parts.C4021aj;
 import com.panasonic.avc.cng.view.parts.C4021aj.C4033a;
-import com.panasonic.avc.cng.view.setting.C5804u.C5806a;
-import com.panasonic.avc.cng.view.setting.C5804u.C5812c;
-import com.panasonic.avc.cng.view.setting.C5804u.C5817d;
+import com.panasonic.avc.cng.view.setting.LiveSetupLumixMirrorlessBaseActivity.C5806a;
+import com.panasonic.avc.cng.view.setting.LiveSetupLumixMirrorlessBaseActivity.C5812c;
+import com.panasonic.avc.cng.view.setting.LiveSetupLumixMirrorlessBaseActivity.C5817d;
 
-public class LiveSetupDrumPickerOnlyFActivity extends C5804u {
+public class LiveSetupDrumPickerOnlyFActivity extends LiveSetupLumixMirrorlessBaseActivity {
     /* access modifiers changed from: private */
 
     /* renamed from: n */
@@ -28,7 +28,7 @@ public class LiveSetupDrumPickerOnlyFActivity extends C5804u {
     /* access modifiers changed from: private */
 
     /* renamed from: q */
-    public C5780o f16073q;
+    public LiveSetupDrumPickerFandSSViewModel f16073q;
 
     /* renamed from: r */
     private C5806a f16074r;
@@ -109,7 +109,7 @@ public class LiveSetupDrumPickerOnlyFActivity extends C5804u {
             this.f17831g.mo7868a((C3336c) this.f16075s);
         }
         this.f16074r = new C5822e();
-        this.f16073q = new C5780o(this._context, this._handler, this.f16074r);
+        this.f16073q = new LiveSetupDrumPickerFandSSViewModel(this._context, this._handler, this.f16074r);
         this.f16072n = new C4021aj(this._context, (Activity) this, this.f16073q, false, false);
         this.f16072n.setScreenOrientation(false);
         this.f16072n.setDrumPickerSettingListener(new C4033a() {

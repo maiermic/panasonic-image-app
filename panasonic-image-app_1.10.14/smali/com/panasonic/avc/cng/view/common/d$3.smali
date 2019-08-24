@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/view/common/d;->p()V
+    value = Lcom/panasonic/avc/cng/view/common/TouchShareViewModel;->p()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/panasonic/avc/cng/view/common/d;
+.field final synthetic a:Lcom/panasonic/avc/cng/view/common/TouchShareViewModel;
 
 
 # direct methods
-.method constructor <init>(Lcom/panasonic/avc/cng/view/common/d;)V
+.method constructor <init>(Lcom/panasonic/avc/cng/view/common/TouchShareViewModel;)V
     .locals 0
 
     .prologue
     .line 1209
-    iput-object p1, p0, Lcom/panasonic/avc/cng/view/common/d$3;->a:Lcom/panasonic/avc/cng/view/common/d;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/view/common/d$3;->a:Lcom/panasonic/avc/cng/view/common/TouchShareViewModel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -41,16 +41,16 @@
 
     .prologue
     .line 1213
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/d$3;->a:Lcom/panasonic/avc/cng/view/common/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/d$3;->a:Lcom/panasonic/avc/cng/view/common/TouchShareViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/common/d;->c:Landroid/media/MediaPlayer;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/common/TouchShareViewModel;->c:Landroid/media/MediaPlayer;
 
     if-eqz v0, :cond_0
 
     .line 1215
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/d$3;->a:Lcom/panasonic/avc/cng/view/common/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/d$3;->a:Lcom/panasonic/avc/cng/view/common/TouchShareViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/common/d;->c:Landroid/media/MediaPlayer;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/common/TouchShareViewModel;->c:Landroid/media/MediaPlayer;
 
     invoke-virtual {v0}, Landroid/media/MediaPlayer;->start()V
 

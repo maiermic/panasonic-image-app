@@ -56,9 +56,9 @@
 
     if-nez v0, :cond_0
 
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/EasyWiFiApTopActivity;->a:Lcom/panasonic/avc/cng/view/setting/j;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/EasyWiFiApTopActivity;->a:Lcom/panasonic/avc/cng/view/setting/EasyWiFiManager;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/j;->a()I
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/EasyWiFiManager;->a()I
 
     move-result v0
 
@@ -105,9 +105,9 @@
     .line 81
     const-string v1, "EasyWiFiSettingMode"
 
-    iget-object v2, p0, Lcom/panasonic/avc/cng/view/setting/EasyWiFiApTopActivity;->a:Lcom/panasonic/avc/cng/view/setting/j;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/view/setting/EasyWiFiApTopActivity;->a:Lcom/panasonic/avc/cng/view/setting/EasyWiFiManager;
 
-    invoke-virtual {v2}, Lcom/panasonic/avc/cng/view/setting/j;->a()I
+    invoke-virtual {v2}, Lcom/panasonic/avc/cng/view/setting/EasyWiFiManager;->a()I
 
     move-result v2
 
@@ -140,7 +140,7 @@
 
     const-string v1, "onCreate"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->verbose(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 29
     :cond_0
@@ -185,9 +185,9 @@
     if-eqz v0, :cond_2
 
     .line 40
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/EasyWiFiApTopActivity;->a:Lcom/panasonic/avc/cng/view/setting/j;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/EasyWiFiApTopActivity;->a:Lcom/panasonic/avc/cng/view/setting/EasyWiFiManager;
 
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/setting/j;->a()I
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/setting/EasyWiFiManager;->a()I
 
     move-result v1
 
@@ -196,11 +196,11 @@
     if-ne v1, v2, :cond_4
 
     .line 42
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v1
 
@@ -239,9 +239,9 @@
 
     .line 52
     :cond_4
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/EasyWiFiApTopActivity;->a:Lcom/panasonic/avc/cng/view/setting/j;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/EasyWiFiApTopActivity;->a:Lcom/panasonic/avc/cng/view/setting/EasyWiFiManager;
 
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/setting/j;->a()I
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/setting/EasyWiFiManager;->a()I
 
     move-result v1
 

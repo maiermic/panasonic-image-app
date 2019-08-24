@@ -2,11 +2,11 @@ package com.google.android.gms.measurement;
 
 import android.content.Context;
 import android.content.Intent;
-import android.support.p000v4.content.C0158g;
+import android.support.p000v4.content.WakefulBroadcastReceiver;
 import com.google.android.gms.p035d.C0928if;
 import com.google.android.gms.p035d.C0930ih;
 
-public final class AppMeasurementReceiver extends C0158g implements C0930ih {
+public final class AppMeasurementReceiver extends WakefulBroadcastReceiver implements C0930ih {
 
     /* renamed from: a */
     private C0928if f3587a;

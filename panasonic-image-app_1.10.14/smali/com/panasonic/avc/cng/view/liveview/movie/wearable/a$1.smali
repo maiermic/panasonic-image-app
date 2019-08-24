@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/view/liveview/movie/wearable/a;->onResume()V
+    value = Lcom/panasonic/avc/cng/view/liveview/movie/wearable/LiveViewWearableBaseActivity;->onResume()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,16 +20,16 @@
 # instance fields
 .field final synthetic a:Lcom/panasonic/avc/cng/core/a/d;
 
-.field final synthetic b:Lcom/panasonic/avc/cng/view/liveview/movie/wearable/a;
+.field final synthetic b:Lcom/panasonic/avc/cng/view/liveview/movie/wearable/LiveViewWearableBaseActivity;
 
 
 # direct methods
-.method constructor <init>(Lcom/panasonic/avc/cng/view/liveview/movie/wearable/a;Lcom/panasonic/avc/cng/core/a/d;)V
+.method constructor <init>(Lcom/panasonic/avc/cng/view/liveview/movie/wearable/LiveViewWearableBaseActivity;Lcom/panasonic/avc/cng/core/a/d;)V
     .locals 0
 
     .prologue
     .line 280
-    iput-object p1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/a$1;->b:Lcom/panasonic/avc/cng/view/liveview/movie/wearable/a;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/a$1;->b:Lcom/panasonic/avc/cng/view/liveview/movie/wearable/LiveViewWearableBaseActivity;
 
     iput-object p2, p0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/a$1;->a:Lcom/panasonic/avc/cng/core/a/d;
 
@@ -62,9 +62,9 @@
     .line 286
     if-eqz v0, :cond_0
 
-    iget-object v2, p0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/a$1;->b:Lcom/panasonic/avc/cng/view/liveview/movie/wearable/a;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/a$1;->b:Lcom/panasonic/avc/cng/view/liveview/movie/wearable/LiveViewWearableBaseActivity;
 
-    iget-object v2, v2, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/a;->b:Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c;
+    iget-object v2, v2, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/LiveViewWearableBaseActivity;->b:Lcom/panasonic/avc/cng/view/liveview/movie/wearable/LiveViewWearableViewModel;
 
     if-eqz v2, :cond_0
 
@@ -78,22 +78,22 @@
     if-eqz v2, :cond_2
 
     .line 290
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/a$1;->b:Lcom/panasonic/avc/cng/view/liveview/movie/wearable/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/a$1;->b:Lcom/panasonic/avc/cng/view/liveview/movie/wearable/LiveViewWearableBaseActivity;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/a;->b:Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/LiveViewWearableBaseActivity;->b:Lcom/panasonic/avc/cng/view/liveview/movie/wearable/LiveViewWearableViewModel;
 
     const/4 v2, 0x1
 
-    invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c;->c(Z)V
+    invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/LiveViewWearableViewModel;->c(Z)V
 
     .line 291
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/a$1;->b:Lcom/panasonic/avc/cng/view/liveview/movie/wearable/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/a$1;->b:Lcom/panasonic/avc/cng/view/liveview/movie/wearable/LiveViewWearableBaseActivity;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/a;->b:Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/LiveViewWearableBaseActivity;->b:Lcom/panasonic/avc/cng/view/liveview/movie/wearable/LiveViewWearableViewModel;
 
     const/4 v2, 0x0
 
-    invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c;->f(Z)V
+    invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/LiveViewWearableViewModel;->f(Z)V
 
     .line 306
     :cond_0
@@ -107,9 +107,9 @@
     .line 307
     if-eqz v0, :cond_1
 
-    iget-object v2, p0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/a$1;->b:Lcom/panasonic/avc/cng/view/liveview/movie/wearable/a;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/a$1;->b:Lcom/panasonic/avc/cng/view/liveview/movie/wearable/LiveViewWearableBaseActivity;
 
-    iget-object v2, v2, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/a;->b:Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c;
+    iget-object v2, v2, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/LiveViewWearableBaseActivity;->b:Lcom/panasonic/avc/cng/view/liveview/movie/wearable/LiveViewWearableViewModel;
 
     if-eqz v2, :cond_1
 
@@ -123,13 +123,13 @@
     if-eqz v0, :cond_4
 
     .line 311
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/a$1;->b:Lcom/panasonic/avc/cng/view/liveview/movie/wearable/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/a$1;->b:Lcom/panasonic/avc/cng/view/liveview/movie/wearable/LiveViewWearableBaseActivity;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/a;->b:Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/LiveViewWearableBaseActivity;->b:Lcom/panasonic/avc/cng/view/liveview/movie/wearable/LiveViewWearableViewModel;
 
     const/4 v2, 0x1
 
-    invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c;->d(Z)V
+    invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/LiveViewWearableViewModel;->d(Z)V
 
     .line 318
     :cond_1
@@ -150,22 +150,22 @@
     if-eqz v0, :cond_3
 
     .line 295
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/a$1;->b:Lcom/panasonic/avc/cng/view/liveview/movie/wearable/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/a$1;->b:Lcom/panasonic/avc/cng/view/liveview/movie/wearable/LiveViewWearableBaseActivity;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/a;->b:Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/LiveViewWearableBaseActivity;->b:Lcom/panasonic/avc/cng/view/liveview/movie/wearable/LiveViewWearableViewModel;
 
     const/4 v2, 0x1
 
-    invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c;->f(Z)V
+    invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/LiveViewWearableViewModel;->f(Z)V
 
     .line 296
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/a$1;->b:Lcom/panasonic/avc/cng/view/liveview/movie/wearable/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/a$1;->b:Lcom/panasonic/avc/cng/view/liveview/movie/wearable/LiveViewWearableBaseActivity;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/a;->b:Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/LiveViewWearableBaseActivity;->b:Lcom/panasonic/avc/cng/view/liveview/movie/wearable/LiveViewWearableViewModel;
 
     const/4 v2, 0x0
 
-    invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c;->c(Z)V
+    invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/LiveViewWearableViewModel;->c(Z)V
 
     goto :goto_0
 
@@ -182,34 +182,34 @@
     .line 300
     :cond_3
     :try_start_1
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/a$1;->b:Lcom/panasonic/avc/cng/view/liveview/movie/wearable/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/a$1;->b:Lcom/panasonic/avc/cng/view/liveview/movie/wearable/LiveViewWearableBaseActivity;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/a;->b:Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/LiveViewWearableBaseActivity;->b:Lcom/panasonic/avc/cng/view/liveview/movie/wearable/LiveViewWearableViewModel;
 
     const/4 v2, 0x0
 
-    invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c;->c(Z)V
+    invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/LiveViewWearableViewModel;->c(Z)V
 
     .line 301
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/a$1;->b:Lcom/panasonic/avc/cng/view/liveview/movie/wearable/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/a$1;->b:Lcom/panasonic/avc/cng/view/liveview/movie/wearable/LiveViewWearableBaseActivity;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/a;->b:Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/LiveViewWearableBaseActivity;->b:Lcom/panasonic/avc/cng/view/liveview/movie/wearable/LiveViewWearableViewModel;
 
     const/4 v2, 0x0
 
-    invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c;->f(Z)V
+    invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/LiveViewWearableViewModel;->f(Z)V
 
     goto :goto_0
 
     .line 315
     :cond_4
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/a$1;->b:Lcom/panasonic/avc/cng/view/liveview/movie/wearable/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/a$1;->b:Lcom/panasonic/avc/cng/view/liveview/movie/wearable/LiveViewWearableBaseActivity;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/a;->b:Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/LiveViewWearableBaseActivity;->b:Lcom/panasonic/avc/cng/view/liveview/movie/wearable/LiveViewWearableViewModel;
 
     const/4 v2, 0x0
 
-    invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c;->d(Z)V
+    invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/LiveViewWearableViewModel;->d(Z)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 

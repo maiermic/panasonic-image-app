@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.TextView;
 import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.C1712b;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 
 public class EasyWiFiPicMateTopActivity extends C5763k {
 
@@ -19,7 +19,7 @@ public class EasyWiFiPicMateTopActivity extends C5763k {
         C1712b.m6914a((Activity) this);
         super.onCreate(bundle);
         if (m21343b()) {
-            C2261g.m9770d(f15947d, "onCreate");
+            ImageAppLog.verbose(f15947d, "onCreate");
         }
         setContentView(R.layout.activity_easywifi_picmate_top);
         String h = this.f17702a.mo12627h();

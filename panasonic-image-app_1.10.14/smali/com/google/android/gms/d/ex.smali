@@ -32,7 +32,7 @@
     const/4 v4, 0x0
 
     :try_start_0
-    sget-object v0, Lcom/google/android/gms/d/dt;->a:Ljava/lang/ThreadLocal;
+    sget-object v0, Lcom/google/android/gms/d/BasePendingResult;->a:Ljava/lang/ThreadLocal;
 
     const/4 v1, 0x1
 
@@ -77,7 +77,7 @@
     .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_0} :catch_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    sget-object v0, Lcom/google/android/gms/d/dt;->a:Ljava/lang/ThreadLocal;
+    sget-object v0, Lcom/google/android/gms/d/BasePendingResult;->a:Ljava/lang/ThreadLocal;
 
     invoke-static {v4}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -139,7 +139,7 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    sget-object v0, Lcom/google/android/gms/d/dt;->a:Ljava/lang/ThreadLocal;
+    sget-object v0, Lcom/google/android/gms/d/BasePendingResult;->a:Ljava/lang/ThreadLocal;
 
     invoke-static {v4}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -178,7 +178,7 @@
 
     move-object v1, v0
 
-    sget-object v0, Lcom/google/android/gms/d/dt;->a:Ljava/lang/ThreadLocal;
+    sget-object v0, Lcom/google/android/gms/d/BasePendingResult;->a:Ljava/lang/ThreadLocal;
 
     invoke-static {v4}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 

@@ -24,21 +24,21 @@ public class C2311f extends C2314h {
     }
 
     /* renamed from: a */
-    public void mo6077a(C2289b bVar, C2291c cVar, C2292d dVar) {
+    public void mo6077a(C2289b bVar, C2291c cVar, CameraWatchUtility dVar) {
         if (this.f7121a != null) {
             this.f7121a.mo6081a();
         }
     }
 
     /* renamed from: b */
-    public void mo6079b(C2289b bVar, C2291c cVar, C2292d dVar) {
+    public void mo6079b(C2289b bVar, C2291c cVar, CameraWatchUtility dVar) {
         if (this.f7121a != null) {
             this.f7121a.mo6082b();
         }
     }
 
     /* renamed from: c */
-    public void mo6080c(C2289b bVar, C2291c cVar, C2292d dVar) {
+    public void mo6080c(C2289b bVar, C2291c cVar, CameraWatchUtility dVar) {
         if (this.f7121a != null) {
             this.f7121a.mo6083c();
         }

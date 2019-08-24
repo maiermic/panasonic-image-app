@@ -41,11 +41,11 @@
 
     .prologue
     .line 676
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
@@ -53,14 +53,14 @@
     if-eqz v0, :cond_0
 
     .line 680
-    new-instance v1, Lcom/panasonic/avc/cng/core/a/ax;
+    new-instance v1, Lcom/panasonic/avc/cng/core/a/WirelessTwinCommand;
 
     iget-object v2, v0, Lcom/panasonic/avc/cng/model/f;->d:Ljava/lang/String;
 
-    invoke-direct {v1, v2}, Lcom/panasonic/avc/cng/core/a/ax;-><init>(Ljava/lang/String;)V
+    invoke-direct {v1, v2}, Lcom/panasonic/avc/cng/core/a/WirelessTwinCommand;-><init>(Ljava/lang/String;)V
 
     .line 682
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/core/a/ax;->a()I
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/core/a/WirelessTwinCommand;->a()I
 
     move-result v1
 
@@ -74,7 +74,7 @@
 
     const-string v1, "error StartWTC"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 698
     :cond_0

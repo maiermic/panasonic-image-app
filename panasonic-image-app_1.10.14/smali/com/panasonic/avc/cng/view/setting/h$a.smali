@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/panasonic/avc/cng/view/setting/h;
+    value = Lcom/panasonic/avc/cng/view/setting/DMSEventViewModel;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

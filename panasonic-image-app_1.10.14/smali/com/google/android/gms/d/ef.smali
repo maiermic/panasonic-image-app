@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/google/android/gms/d/ea;
+.field final synthetic a:Lcom/google/android/gms/d/GoogleApiManager;
 
 .field private final b:Lcom/google/android/gms/common/api/a$f;
 
@@ -37,7 +37,7 @@
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/android/gms/d/ea;Lcom/google/android/gms/common/api/a$f;Lcom/google/android/gms/d/dl;)V
+.method public constructor <init>(Lcom/google/android/gms/d/GoogleApiManager;Lcom/google/android/gms/common/api/a$f;Lcom/google/android/gms/d/dl;)V
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -50,7 +50,7 @@
 
     const/4 v0, 0x0
 
-    iput-object p1, p0, Lcom/google/android/gms/d/ef;->a:Lcom/google/android/gms/d/ea;
+    iput-object p1, p0, Lcom/google/android/gms/d/ef;->a:Lcom/google/android/gms/d/GoogleApiManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -131,9 +131,9 @@
 .method public final a(Lcom/google/android/gms/common/a;)V
     .locals 2
 
-    iget-object v0, p0, Lcom/google/android/gms/d/ef;->a:Lcom/google/android/gms/d/ea;
+    iget-object v0, p0, Lcom/google/android/gms/d/ef;->a:Lcom/google/android/gms/d/GoogleApiManager;
 
-    invoke-static {v0}, Lcom/google/android/gms/d/ea;->a(Lcom/google/android/gms/d/ea;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/google/android/gms/d/GoogleApiManager;->a(Lcom/google/android/gms/d/GoogleApiManager;)Landroid/os/Handler;
 
     move-result-object v0
 
@@ -198,9 +198,9 @@
 .method public final b(Lcom/google/android/gms/common/a;)V
     .locals 2
 
-    iget-object v0, p0, Lcom/google/android/gms/d/ef;->a:Lcom/google/android/gms/d/ea;
+    iget-object v0, p0, Lcom/google/android/gms/d/ef;->a:Lcom/google/android/gms/d/GoogleApiManager;
 
-    invoke-static {v0}, Lcom/google/android/gms/d/ea;->j(Lcom/google/android/gms/d/ea;)Ljava/util/Map;
+    invoke-static {v0}, Lcom/google/android/gms/d/GoogleApiManager;->j(Lcom/google/android/gms/d/GoogleApiManager;)Ljava/util/Map;
 
     move-result-object v0
 

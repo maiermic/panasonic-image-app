@@ -51,7 +51,7 @@
     .line 6987
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/k$26;->c:Lcom/panasonic/avc/cng/view/liveview/k;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/k;->a(Lcom/panasonic/avc/cng/view/liveview/k;)Lcom/panasonic/avc/cng/core/a/t;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/k;->a(Lcom/panasonic/avc/cng/view/liveview/k;)Lcom/panasonic/avc/cng/core/a/LiveViewOperationCommand;
 
     move-result-object v0
 
@@ -59,7 +59,7 @@
 
     iget v2, p0, Lcom/panasonic/avc/cng/view/liveview/k$26;->b:I
 
-    invoke-virtual {v0, v1, v2}, Lcom/panasonic/avc/cng/core/a/t;->c(II)Lcom/panasonic/avc/cng/model/c/i;
+    invoke-virtual {v0, v1, v2}, Lcom/panasonic/avc/cng/core/a/LiveViewOperationCommand;->c(II)Lcom/panasonic/avc/cng/model/c/i;
 
     move-result-object v0
 
@@ -75,7 +75,7 @@
 
     const-string v1, "AF pinpoint position setting error."
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 7003
     :cond_0

@@ -12,12 +12,12 @@ import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.p038a.C1343b;
 import com.panasonic.avc.cng.view.parts.C4213l;
 import com.panasonic.avc.cng.view.parts.C4230p;
-import com.panasonic.avc.cng.view.setting.C5766n.C5768a;
+import com.panasonic.avc.cng.view.setting.LiveSetupSliderBarActivity.C5768a;
 
-public class LiveSetupFandSs2Activity extends C5766n {
+public class LiveSetupFandSs2Activity extends LiveSetupSliderBarActivity {
 
     /* renamed from: g */
-    private C5798t f16131g;
+    private LiveSetupFandSs2ViewModel f16131g;
 
     /* renamed from: h */
     private C5768a f16132h;
@@ -51,7 +51,7 @@ public class LiveSetupFandSs2Activity extends C5766n {
     public void mo3228a() {
         super.mo3228a();
         this.f16132h = new C5779d();
-        this.f16131g = new C5798t(this._context, this._handler, this.f16132h);
+        this.f16131g = new LiveSetupFandSs2ViewModel(this._context, this._handler, this.f16132h);
         if (!this.f16131g.mo12699d()) {
             finish();
         }

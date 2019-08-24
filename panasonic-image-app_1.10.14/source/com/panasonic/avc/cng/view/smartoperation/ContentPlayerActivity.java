@@ -21,10 +21,10 @@ import android.widget.MediaController.MediaPlayerControl;
 import com.panasonic.avc.cng.core.dlna.C1699h;
 import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.C1712b;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.view.common.C2820e;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
 import com.panasonic.avc.cng.view.parts.DisplayBaseView;
 import com.panasonic.avc.cng.view.parts.DisplayBaseView.C3923a;
 import com.panasonic.avc.cng.view.setting.C5741i;
@@ -118,7 +118,7 @@ public class ContentPlayerActivity extends C5741i {
             if (ContentPlayerActivity.this.f17961c != null) {
                 ContentPlayerActivity.this._handler.post(new Runnable() {
                     public void run() {
-                        C2331d.m10114a((Activity) ContentPlayerActivity.this, C2328a.WAIT_PROCESSING, (Bundle) null);
+                        DialogFactory.m10114a((Activity) ContentPlayerActivity.this, C2328a.WAIT_PROCESSING, (Bundle) null);
                     }
                 });
                 ContentPlayerActivity.this.f17961c.mo12908k();
@@ -129,7 +129,7 @@ public class ContentPlayerActivity extends C5741i {
             if (ContentPlayerActivity.this.f17961c != null) {
                 ContentPlayerActivity.this._handler.post(new Runnable() {
                     public void run() {
-                        C2331d.m10114a((Activity) ContentPlayerActivity.this, C2328a.WAIT_PROCESSING, (Bundle) null);
+                        DialogFactory.m10114a((Activity) ContentPlayerActivity.this, C2328a.WAIT_PROCESSING, (Bundle) null);
                     }
                 });
                 ContentPlayerActivity.this.f17961c.mo12909l();
@@ -168,12 +168,12 @@ public class ContentPlayerActivity extends C5741i {
 
         /* renamed from: a */
         public void mo12810a() {
-            C2331d.m10100a((Activity) ContentPlayerActivity.this);
+            DialogFactory.m10100a((Activity) ContentPlayerActivity.this);
         }
 
         /* renamed from: b */
         public void mo12816b() {
-            C2331d.m10100a((Activity) ContentPlayerActivity.this);
+            DialogFactory.m10100a((Activity) ContentPlayerActivity.this);
         }
 
         /* renamed from: c */
@@ -194,7 +194,7 @@ public class ContentPlayerActivity extends C5741i {
                 ContentPlayerActivity.this._handler.post(new Runnable() {
                     public void run() {
                         ContentPlayerActivity.this.m21724c();
-                        C2331d.m10114a((Activity) ContentPlayerActivity.this, C2328a.ON_MEDIA_PLAYER_ERROR, (Bundle) null);
+                        DialogFactory.m10114a((Activity) ContentPlayerActivity.this, C2328a.ON_MEDIA_PLAYER_ERROR, (Bundle) null);
                     }
                 });
             }
@@ -203,9 +203,9 @@ public class ContentPlayerActivity extends C5741i {
         /* renamed from: a */
         public void mo12815a(String str) {
             if (str.equalsIgnoreCase("high")) {
-                C2331d.m10114a((Activity) ContentPlayerActivity.this, C2328a.ON_DISCONNECT_BY_HIGH_TEMP_FINISH, (Bundle) null);
+                DialogFactory.m10114a((Activity) ContentPlayerActivity.this, C2328a.ON_DISCONNECT_BY_HIGH_TEMP_FINISH, (Bundle) null);
             } else if (str.equalsIgnoreCase("assert")) {
-                C2331d.m10114a((Activity) ContentPlayerActivity.this, C2328a.ON_ASEERT_TEMP_FINISH, (Bundle) null);
+                DialogFactory.m10114a((Activity) ContentPlayerActivity.this, C2328a.ON_ASEERT_TEMP_FINISH, (Bundle) null);
             }
         }
 
@@ -229,13 +229,13 @@ public class ContentPlayerActivity extends C5741i {
                         ContentPlayerActivity.this._resultBundle.putBoolean("DeviceDisconnectedNoRefleshKey", true);
                         switch (i) {
                             case 2:
-                                C2331d.m10114a((Activity) ContentPlayerActivity.this, C2328a.ON_DISCONNECT_BY_HIGH_TEMP_NO_FINISH, (Bundle) null);
+                                DialogFactory.m10114a((Activity) ContentPlayerActivity.this, C2328a.ON_DISCONNECT_BY_HIGH_TEMP_NO_FINISH, (Bundle) null);
                                 return;
                             case 3:
-                                C2331d.m10114a((Activity) ContentPlayerActivity.this, C2328a.ON_DISCONNECT_BATTERY_LOW_NO_FINISH, (Bundle) null);
+                                DialogFactory.m10114a((Activity) ContentPlayerActivity.this, C2328a.ON_DISCONNECT_BATTERY_LOW_NO_FINISH, (Bundle) null);
                                 return;
                             default:
-                                C2331d.m10114a((Activity) ContentPlayerActivity.this, C2328a.ON_DISCONNECT_NO_FINISH, (Bundle) null);
+                                DialogFactory.m10114a((Activity) ContentPlayerActivity.this, C2328a.ON_DISCONNECT_NO_FINISH, (Bundle) null);
                                 return;
                         }
                     }
@@ -245,7 +245,7 @@ public class ContentPlayerActivity extends C5741i {
 
         /* renamed from: e */
         public void mo12821e() {
-            C2261g.m9771e(ContentPlayerActivity.this.f17959a, "OnReconnectDevice()");
+            ImageAppLog.info(ContentPlayerActivity.this.f17959a, "OnReconnectDevice()");
             if (!ContentPlayerActivity.this.isFinishing()) {
                 ContentPlayerActivity.this._handler.post(new Runnable() {
                     public void run() {
@@ -316,7 +316,7 @@ public class ContentPlayerActivity extends C5741i {
 
     /* renamed from: a */
     public static void m21719a(Context context, boolean z) {
-        C2261g.m9763a("Emergency", "setEmergency" + context.toString());
+        ImageAppLog.debug("Emergency", "setEmergency" + context.toString());
         SharedPreferences defaultSharedPreferences = PreferenceManager.getDefaultSharedPreferences(context);
         if (defaultSharedPreferences != null) {
             defaultSharedPreferences.edit().putBoolean("Player_Emergency_KillEnd", z).apply();
@@ -325,7 +325,7 @@ public class ContentPlayerActivity extends C5741i {
 
     /* renamed from: a */
     public static boolean m21721a(Context context) {
-        C2261g.m9763a("Emergency", "getEmergency" + context.toString());
+        ImageAppLog.debug("Emergency", "getEmergency" + context.toString());
         SharedPreferences defaultSharedPreferences = PreferenceManager.getDefaultSharedPreferences(context);
         if (defaultSharedPreferences == null || !defaultSharedPreferences.getBoolean("Player_Emergency_KillEnd", false)) {
             return false;
@@ -335,15 +335,15 @@ public class ContentPlayerActivity extends C5741i {
 
     /* renamed from: a */
     public static boolean m21720a(Activity activity, boolean z) {
-        C2261g.m9763a("Emergency", "isEmergency" + activity.toString());
+        ImageAppLog.debug("Emergency", "isEmergency" + activity.toString());
         if (!m21721a((Context) activity)) {
             return false;
         }
         if (z) {
             m21719a((Context) activity, false);
-            C2331d.m10114a(activity, C2328a.DIALOG_ID_SETUP_CAM_DISCONNECT_FINISH, (Bundle) null);
+            DialogFactory.m10114a(activity, C2328a.DIALOG_ID_SETUP_CAM_DISCONNECT_FINISH, (Bundle) null);
         } else {
-            C2331d.m10114a(activity, C2328a.DIALOG_ID_SETUP_CAM_DISCONNECT_NO_FINISH, (Bundle) null);
+            DialogFactory.m10114a(activity, C2328a.DIALOG_ID_SETUP_CAM_DISCONNECT_NO_FINISH, (Bundle) null);
         }
         return true;
     }
@@ -376,7 +376,7 @@ public class ContentPlayerActivity extends C5741i {
                 if (intent != null) {
                     String action = intent.getAction();
                     if (action != null) {
-                        C2261g.m9771e(ContentPlayerActivity.this.f17959a, "onReceive(" + action + ")");
+                        ImageAppLog.info(ContentPlayerActivity.this.f17959a, "onReceive(" + action + ")");
                         if (action.equals("android.intent.action.CLOSE_SYSTEM_DIALOGS")) {
                             if (ContentPlayerActivity.this.f17961c != null && ContentPlayerActivity.this.f17961c.mo12907j()) {
                                 ContentPlayerActivity.this.f17961c.mo12909l();
@@ -392,26 +392,26 @@ public class ContentPlayerActivity extends C5741i {
 
     /* access modifiers changed from: protected */
     public void onStart() {
-        C2261g.m9763a(this.f17959a, "onStart()");
+        ImageAppLog.debug(this.f17959a, "onStart()");
         super.onStart();
     }
 
     /* access modifiers changed from: protected */
     public void onRestart() {
-        C2261g.m9763a(this.f17959a, "onRestart()");
+        ImageAppLog.debug(this.f17959a, "onRestart()");
         super.onRestart();
     }
 
     /* access modifiers changed from: protected */
     public void onPause() {
-        C2261g.m9763a(this.f17959a, "onPause()");
+        ImageAppLog.debug(this.f17959a, "onPause()");
         finish();
         super.onPause();
     }
 
     /* access modifiers changed from: protected */
     public void onStop() {
-        C2261g.m9763a(this.f17959a, "onStop()");
+        ImageAppLog.debug(this.f17959a, "onStop()");
         super.onStop();
         unregisterReceiver(this.f17966h);
     }
@@ -483,13 +483,13 @@ public class ContentPlayerActivity extends C5741i {
     /* access modifiers changed from: private */
     /* renamed from: b */
     public void m21723b() {
-        C2331d.m10114a((Activity) this, C2328a.ON_PROGRESS, (Bundle) null);
+        DialogFactory.m10114a((Activity) this, C2328a.ON_PROGRESS, (Bundle) null);
     }
 
     /* access modifiers changed from: private */
     /* renamed from: c */
     public void m21724c() {
-        C2331d.m10100a((Activity) this);
+        DialogFactory.m10100a((Activity) this);
     }
 
     /* access modifiers changed from: private */
@@ -511,7 +511,7 @@ public class ContentPlayerActivity extends C5741i {
     /* access modifiers changed from: private */
     /* renamed from: f */
     public void m21730f() {
-        C2331d.m10114a((Activity) this, C2328a.DIALOG_ID_PLAY_OVER_NETWORK_WARNING, (Bundle) null);
+        DialogFactory.m10114a((Activity) this, C2328a.DIALOG_ID_PLAY_OVER_NETWORK_WARNING, (Bundle) null);
     }
 
     /* access modifiers changed from: private */

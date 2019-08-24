@@ -2,9 +2,9 @@ package com.panasonic.avc.cng.core.p040a;
 
 import com.panasonic.avc.cng.model.C1912n;
 import com.panasonic.avc.cng.model.p051c.C1840ae;
-import com.panasonic.avc.cng.model.p051c.C1853h;
+import com.panasonic.avc.cng.model.p051c.ParseTagHighlightSceneInfo;
 import com.panasonic.avc.cng.model.p051c.C1870t;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import java.net.URLEncoder;
 import java.util.Calendar;
 import java.util.Locale;
@@ -78,25 +78,25 @@ public class C1501d extends C1497c {
     }
 
     /* renamed from: a */
-    public C1853h mo3409a() {
+    public ParseTagHighlightSceneInfo mo3409a() {
         return mo3688j("poweroff");
     }
 
     /* renamed from: b */
-    public C1853h mo3698b() {
+    public ParseTagHighlightSceneInfo mo3698b() {
         String str = this.f4119b + "/cam.cgi?mode=camcmd&value=poweroff";
-        C1853h hVar = new C1853h((byte[]) null);
+        ParseTagHighlightSceneInfo hVar = new ParseTagHighlightSceneInfo((byte[]) null);
         int i = 0;
         while (true) {
             if (i >= this.f4121d) {
                 break;
             }
-            byte[] b = C1462am.m5737b(str, 5000);
+            byte[] b = StaticHttpCustomCommand.m5737b(str, 5000);
             if (b != null) {
-                hVar = new C1853h(b);
+                hVar = new ParseTagHighlightSceneInfo(b);
                 if (!hVar.mo4771a()) {
                     if (!hVar.mo4772b().equalsIgnoreCase("err_busy")) {
-                        C2261g.m9766b(f4118a, String.format("Command = %s, Result = %s", new Object[]{str, hVar.mo4772b()}));
+                        ImageAppLog.warning(f4118a, String.format("Command = %s, Result = %s", new Object[]{str, hVar.mo4772b()}));
                         break;
                     }
                     mo3674a(1000);
@@ -104,7 +104,7 @@ public class C1501d extends C1497c {
                     break;
                 }
             } else {
-                C2261g.m9769c(f4118a, "powerOff() is null....");
+                ImageAppLog.error(f4118a, "powerOff() is null....");
                 mo3674a(1000);
             }
             i++;
@@ -130,7 +130,7 @@ public class C1501d extends C1497c {
     private C1912n mo3573o() {
         C1870t b = mo3676b("pa", "pa");
         if (!b.mo4831a()) {
-            C2261g.m9766b(f4118a, String.format("getPicMateAccount Result = %s", new Object[]{b.mo4832b()}));
+            ImageAppLog.warning(f4118a, String.format("getPicMateAccount Result = %s", new Object[]{b.mo4832b()}));
             String b2 = b.mo4832b();
             if (b2 != null && b2.equalsIgnoreCase("err_reject")) {
                 C1912n nVar = new C1912n();
@@ -158,17 +158,17 @@ public class C1501d extends C1497c {
     }
 
     /* renamed from: a */
-    public C1853h mo3689a(String str) {
+    public ParseTagHighlightSceneInfo mo3689a(String str) {
         try {
             return mo3667a("device_name", URLEncoder.encode(str, "UTF-8").replace("+", "%20").replace("*", "%2A").replace("%7E", "~"));
         } catch (Exception e) {
             e.printStackTrace();
-            return new C1853h((String) null);
+            return new ParseTagHighlightSceneInfo((String) null);
         }
     }
 
     /* renamed from: a */
-    public C1853h mo3690a(String str, String str2, StringBuffer stringBuffer) {
+    public ParseTagHighlightSceneInfo mo3690a(String str, String str2, StringBuffer stringBuffer) {
         String d = mo3682d(str2);
         if (d.equalsIgnoreCase("") || d.length() == 0) {
             return null;
@@ -177,7 +177,7 @@ public class C1501d extends C1497c {
     }
 
     /* renamed from: a */
-    public C1853h mo3691a(String str, StringBuffer stringBuffer) {
+    public ParseTagHighlightSceneInfo mo3691a(String str, StringBuffer stringBuffer) {
         return mo3670a(stringBuffer, "req_acc_can", str, (String) null);
     }
 
@@ -224,7 +224,7 @@ public class C1501d extends C1497c {
                     }
                     while (!C1501d.this.f4143p) {
                         C1501d.this.m5926a(C1501d.this.f4147t);
-                        C2261g.m9771e(C1497c.f4118a, String.format("state=%s", new Object[]{C1501d.this.f4147t[0]}));
+                        ImageAppLog.info(C1497c.f4118a, String.format("state=%s", new Object[]{C1501d.this.f4147t[0]}));
                         if (C1501d.this.f4147t[0].equalsIgnoreCase("finish")) {
                             if (C1501d.this.f4135h != null) {
                                 C1501d.this.f4135h.mo3770b();
@@ -259,7 +259,7 @@ public class C1501d extends C1497c {
                     }
                     while (!C1501d.this.f4144q) {
                         C1501d.this.m5932b(C1501d.this.f4147t);
-                        C2261g.m9771e(C1497c.f4118a, String.format("state=%s", new Object[]{C1501d.this.f4147t[0]}));
+                        ImageAppLog.info(C1497c.f4118a, String.format("state=%s", new Object[]{C1501d.this.f4147t[0]}));
                         if (C1501d.this.f4147t[0].equalsIgnoreCase("finish")) {
                             if (C1501d.this.f4136i != null) {
                                 C1501d.this.f4136i.mo3763b();
@@ -293,7 +293,7 @@ public class C1501d extends C1497c {
                     }
                     int i = 0;
                     while (i < C1501d.this.f4121d) {
-                        C1853h b = C1501d.this.mo3675b("deletecancel", null, null);
+                        ParseTagHighlightSceneInfo b = C1501d.this.mo3675b("deletecancel", null, null);
                         if (b.mo4771a()) {
                             if (C1501d.this.f4137j != null) {
                                 C1501d.this.f4137j.mo3763b();
@@ -307,7 +307,7 @@ public class C1501d extends C1497c {
                             if (C1501d.this.f4137j != null) {
                                 C1501d.this.f4137j.mo3764c();
                             }
-                            C2261g.m9766b(C1497c.f4118a, String.format("strEditCmd(%s), Result = %s", new Object[]{"deletecancel", b.mo4772b()}));
+                            ImageAppLog.warning(C1497c.f4118a, String.format("strEditCmd(%s), Result = %s", new Object[]{"deletecancel", b.mo4772b()}));
                             return;
                         }
                     }
@@ -341,16 +341,16 @@ public class C1501d extends C1497c {
     /* renamed from: g */
     public String mo3707g() {
         String str = "0.00";
-        C1853h g = mo3685g("deviceinfo");
+        ParseTagHighlightSceneInfo g = mo3685g("deviceinfo");
         if (g.mo4771a()) {
             return g.mo4786p();
         }
-        C2261g.m9766b(f4118a, String.format("getVersion, Result = %s", new Object[]{g.mo4772b()}));
+        ImageAppLog.warning(f4118a, String.format("getVersion, Result = %s", new Object[]{g.mo4772b()}));
         return str;
     }
 
     /* renamed from: h */
-    public C1853h mo3708h() {
+    public ParseTagHighlightSceneInfo mo3708h() {
         return mo3688j("terminateapp");
     }
 
@@ -364,7 +364,7 @@ public class C1501d extends C1497c {
     public boolean mo3705e(String str, String str2) {
         int i = 0;
         while (i < this.f4121d) {
-            C1853h a = mo3667a(str, str2);
+            ParseTagHighlightSceneInfo a = mo3667a(str, str2);
             if (a.mo4771a()) {
                 return true;
             }
@@ -372,7 +372,7 @@ public class C1501d extends C1497c {
                 mo3674a(1000);
                 i++;
             } else {
-                C2261g.m9766b(f4118a, String.format("setSettin(%s, %s), Result = %s", new Object[]{str, str2, a.mo4772b()}));
+                ImageAppLog.warning(f4118a, String.format("setSettin(%s, %s), Result = %s", new Object[]{str, str2, a.mo4772b()}));
                 return false;
             }
         }
@@ -384,7 +384,7 @@ public class C1501d extends C1497c {
     public boolean mo3647d(String str, String str2, String str3) {
         int i = 0;
         while (i < this.f4121d) {
-            C1853h b = mo3675b(str, str2, str3);
+            ParseTagHighlightSceneInfo b = mo3675b(str, str2, str3);
             if (b.mo4771a()) {
                 return true;
             }
@@ -392,7 +392,7 @@ public class C1501d extends C1497c {
                 mo3674a(1000);
                 i++;
             } else {
-                C2261g.m9766b(f4118a, String.format("editCmd(%s, %s), Result = %s", new Object[]{str, str2, b.mo4772b()}));
+                ImageAppLog.warning(f4118a, String.format("editCmd(%s, %s), Result = %s", new Object[]{str, str2, b.mo4772b()}));
                 return false;
             }
         }
@@ -403,7 +403,7 @@ public class C1501d extends C1497c {
     private boolean m5939e(String str, String str2, String str3) {
         int i = 0;
         while (i < this.f4121d) {
-            C1853h c = mo3679c(str, str2, str3);
+            ParseTagHighlightSceneInfo c = mo3679c(str, str2, str3);
             if (c.mo4771a()) {
                 return true;
             }
@@ -411,7 +411,7 @@ public class C1501d extends C1497c {
                 mo3674a(1000);
                 i++;
             } else {
-                C2261g.m9766b(f4118a, String.format("editCmd(%s, %s), Result = %s", new Object[]{str, str2, c.mo4772b()}));
+                ImageAppLog.warning(f4118a, String.format("editCmd(%s, %s), Result = %s", new Object[]{str, str2, c.mo4772b()}));
                 return false;
             }
         }
@@ -432,7 +432,7 @@ public class C1501d extends C1497c {
                 C1840ae aeVar = new C1840ae(i2);
                 if (!aeVar.mo4634a()) {
                     if (!aeVar.mo4635b().equalsIgnoreCase("err_busy")) {
-                        C2261g.m9766b(f4118a, String.format("getProgress(), Result = %s", new Object[]{aeVar.mo4635b()}));
+                        ImageAppLog.warning(f4118a, String.format("getProgress(), Result = %s", new Object[]{aeVar.mo4635b()}));
                         break;
                     }
                     mo3674a(1000);
@@ -441,7 +441,7 @@ public class C1501d extends C1497c {
                     return;
                 }
             } else {
-                C2261g.m9769c(f4118a, "getProgress() is null....");
+                ImageAppLog.error(f4118a, "getProgress() is null....");
                 mo3674a(1000);
             }
             i++;
@@ -463,7 +463,7 @@ public class C1501d extends C1497c {
                 C1840ae aeVar = new C1840ae(i2);
                 if (!aeVar.mo4634a()) {
                     if (!aeVar.mo4635b().equalsIgnoreCase("err_busy")) {
-                        C2261g.m9766b(f4118a, String.format("getProgressAllDelete(), Result = %s", new Object[]{aeVar.mo4635b()}));
+                        ImageAppLog.warning(f4118a, String.format("getProgressAllDelete(), Result = %s", new Object[]{aeVar.mo4635b()}));
                         break;
                     }
                     mo3674a(1000);
@@ -472,7 +472,7 @@ public class C1501d extends C1497c {
                     return;
                 }
             } else {
-                C2261g.m9769c(f4118a, "getProgressAllDelete() is null....");
+                ImageAppLog.error(f4118a, "getProgressAllDelete() is null....");
                 mo3674a(1000);
             }
             i++;
@@ -482,7 +482,7 @@ public class C1501d extends C1497c {
 
     /* renamed from: i */
     public String mo3709i() {
-        C1853h f = mo3684f("pictmode");
+        ParseTagHighlightSceneInfo f = mo3684f("pictmode");
         if (!f.mo4771a() && !f.mo4772b().equalsIgnoreCase("err_no_data")) {
             return null;
         }
@@ -495,7 +495,7 @@ public class C1501d extends C1497c {
 
     /* renamed from: j */
     public String mo3710j() {
-        C1853h f = mo3684f("recmode");
+        ParseTagHighlightSceneInfo f = mo3684f("recmode");
         if (!f.mo4771a() && !f.mo4772b().equalsIgnoreCase("err_no_data")) {
             return null;
         }
@@ -508,7 +508,7 @@ public class C1501d extends C1497c {
 
     /* renamed from: k */
     public String mo3711k() {
-        C1853h f = mo3684f("delayrec");
+        ParseTagHighlightSceneInfo f = mo3684f("delayrec");
         if (!f.mo4771a() && !f.mo4772b().equalsIgnoreCase("err_no_data")) {
             return null;
         }
@@ -521,7 +521,7 @@ public class C1501d extends C1497c {
 
     /* renamed from: l */
     public String mo3713l() {
-        C1853h f = mo3684f("videoformat");
+        ParseTagHighlightSceneInfo f = mo3684f("videoformat");
         if (!f.mo4771a() && !f.mo4772b().equalsIgnoreCase("err_no_data")) {
             return null;
         }
@@ -534,7 +534,7 @@ public class C1501d extends C1497c {
 
     /* renamed from: m */
     public String mo3714m() {
-        C1853h f = mo3684f("videoquality");
+        ParseTagHighlightSceneInfo f = mo3684f("videoquality");
         if (!f.mo4771a() && !f.mo4772b().equalsIgnoreCase("err_no_data")) {
             return null;
         }
@@ -547,7 +547,7 @@ public class C1501d extends C1497c {
 
     /* renamed from: n */
     public String mo3715n() {
-        C1853h f = mo3684f("focusmode");
+        ParseTagHighlightSceneInfo f = mo3684f("focusmode");
         if (!f.mo4771a() && !f.mo4772b().equalsIgnoreCase("err_no_data")) {
             return null;
         }
@@ -574,7 +574,7 @@ public class C1501d extends C1497c {
             public void run() {
                 while (!C1501d.this.f4150w) {
                     C1501d.this.m5927a(C1501d.this.f4147t, C1501d.this.f4148u, C1501d.this.f4149v);
-                    C2261g.m9771e(C1497c.f4118a, String.format("state=%s", new Object[]{C1501d.this.f4147t[0]}));
+                    ImageAppLog.info(C1497c.f4118a, String.format("state=%s", new Object[]{C1501d.this.f4147t[0]}));
                     if (C1501d.this.f4138k != null) {
                         C1501d.this.f4138k.mo3773a(C1501d.this.f4148u[0]);
                     }
@@ -605,7 +605,7 @@ public class C1501d extends C1497c {
         for (int i = 0; i < this.f4121d; i++) {
             String i2 = mo3687i("hrs_synthesis");
             if (i2 == null) {
-                C2261g.m9769c(f4118a, "getProgress() is null....");
+                ImageAppLog.error(f4118a, "getProgress() is null....");
                 mo3674a(1000);
             } else {
                 C1840ae aeVar = new C1840ae(i2);
@@ -630,7 +630,7 @@ public class C1501d extends C1497c {
                     iArr[0] = -1;
                     strArr2[0] = "getprogress";
                 } else {
-                    C2261g.m9766b(f4118a, String.format("getProgress(), Result = %s", new Object[]{aeVar.mo4635b()}));
+                    ImageAppLog.warning(f4118a, String.format("getProgress(), Result = %s", new Object[]{aeVar.mo4635b()}));
                     strArr[0] = "error";
                     iArr[0] = -1;
                     strArr2[0] = "getprogress";

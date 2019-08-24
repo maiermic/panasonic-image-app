@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/panasonic/avc/cng/model/service/imageapp/a;
+    value = Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppService;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/panasonic/avc/cng/model/service/imageapp/a;
+.field final synthetic a:Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppService;
 
 
 # direct methods
-.method constructor <init>(Lcom/panasonic/avc/cng/model/service/imageapp/a;)V
+.method constructor <init>(Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppService;)V
     .locals 0
 
     .prologue
     .line 255
-    iput-object p1, p0, Lcom/panasonic/avc/cng/model/service/imageapp/a$3;->a:Lcom/panasonic/avc/cng/model/service/imageapp/a;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/model/service/imageapp/a$3;->a:Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppService;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -41,18 +41,18 @@
 
     .prologue
     .line 259
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/imageapp/a$3;->a:Lcom/panasonic/avc/cng/model/service/imageapp/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/imageapp/a$3;->a:Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppService;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/imageapp/a;->j(Lcom/panasonic/avc/cng/model/service/imageapp/a;)Lcom/panasonic/avc/cng/model/service/j$d;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppService;->j(Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppService;)Lcom/panasonic/avc/cng/model/service/j$d;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 261
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/imageapp/a$3;->a:Lcom/panasonic/avc/cng/model/service/imageapp/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/imageapp/a$3;->a:Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppService;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/imageapp/a;->j(Lcom/panasonic/avc/cng/model/service/imageapp/a;)Lcom/panasonic/avc/cng/model/service/j$d;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppService;->j(Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppService;)Lcom/panasonic/avc/cng/model/service/j$d;
 
     move-result-object v0
 
@@ -68,18 +68,18 @@
 
     .prologue
     .line 267
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/imageapp/a$3;->a:Lcom/panasonic/avc/cng/model/service/imageapp/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/imageapp/a$3;->a:Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppService;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/imageapp/a;->j(Lcom/panasonic/avc/cng/model/service/imageapp/a;)Lcom/panasonic/avc/cng/model/service/j$d;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppService;->j(Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppService;)Lcom/panasonic/avc/cng/model/service/j$d;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 269
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/imageapp/a$3;->a:Lcom/panasonic/avc/cng/model/service/imageapp/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/imageapp/a$3;->a:Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppService;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/imageapp/a;->j(Lcom/panasonic/avc/cng/model/service/imageapp/a;)Lcom/panasonic/avc/cng/model/service/j$d;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppService;->j(Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppService;)Lcom/panasonic/avc/cng/model/service/j$d;
 
     move-result-object v0
 
@@ -95,18 +95,18 @@
 
     .prologue
     .line 277
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/imageapp/a$3;->a:Lcom/panasonic/avc/cng/model/service/imageapp/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/imageapp/a$3;->a:Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppService;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/imageapp/a;->j(Lcom/panasonic/avc/cng/model/service/imageapp/a;)Lcom/panasonic/avc/cng/model/service/j$d;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppService;->j(Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppService;)Lcom/panasonic/avc/cng/model/service/j$d;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 279
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/imageapp/a$3;->a:Lcom/panasonic/avc/cng/model/service/imageapp/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/imageapp/a$3;->a:Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppService;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/imageapp/a;->j(Lcom/panasonic/avc/cng/model/service/imageapp/a;)Lcom/panasonic/avc/cng/model/service/j$d;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppService;->j(Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppService;)Lcom/panasonic/avc/cng/model/service/j$d;
 
     move-result-object v0
 
@@ -122,18 +122,18 @@
 
     .prologue
     .line 288
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/imageapp/a$3;->a:Lcom/panasonic/avc/cng/model/service/imageapp/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/imageapp/a$3;->a:Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppService;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/imageapp/a;->j(Lcom/panasonic/avc/cng/model/service/imageapp/a;)Lcom/panasonic/avc/cng/model/service/j$d;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppService;->j(Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppService;)Lcom/panasonic/avc/cng/model/service/j$d;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 290
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/imageapp/a$3;->a:Lcom/panasonic/avc/cng/model/service/imageapp/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/imageapp/a$3;->a:Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppService;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/imageapp/a;->j(Lcom/panasonic/avc/cng/model/service/imageapp/a;)Lcom/panasonic/avc/cng/model/service/j$d;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppService;->j(Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppService;)Lcom/panasonic/avc/cng/model/service/j$d;
 
     move-result-object v0
 
@@ -149,18 +149,18 @@
 
     .prologue
     .line 307
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/imageapp/a$3;->a:Lcom/panasonic/avc/cng/model/service/imageapp/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/imageapp/a$3;->a:Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppService;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/imageapp/a;->j(Lcom/panasonic/avc/cng/model/service/imageapp/a;)Lcom/panasonic/avc/cng/model/service/j$d;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppService;->j(Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppService;)Lcom/panasonic/avc/cng/model/service/j$d;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 309
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/imageapp/a$3;->a:Lcom/panasonic/avc/cng/model/service/imageapp/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/imageapp/a$3;->a:Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppService;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/imageapp/a;->j(Lcom/panasonic/avc/cng/model/service/imageapp/a;)Lcom/panasonic/avc/cng/model/service/j$d;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppService;->j(Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppService;)Lcom/panasonic/avc/cng/model/service/j$d;
 
     move-result-object v0
 

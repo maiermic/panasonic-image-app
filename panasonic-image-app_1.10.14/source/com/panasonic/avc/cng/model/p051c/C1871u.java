@@ -1,7 +1,7 @@
 package com.panasonic.avc.cng.model.p051c;
 
 import android.util.Xml;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import java.io.ByteArrayInputStream;
 import java.io.InputStreamReader;
 import org.xmlpull.v1.XmlPullParser;
@@ -13,7 +13,7 @@ public class C1871u {
     String f5607a = "error";
 
     /* renamed from: b */
-    C1846e f5608b = new C1846e();
+    CameraStatus f5608b = new CameraStatus();
 
     public C1871u(byte[] bArr) {
         try {
@@ -42,7 +42,7 @@ public class C1871u {
                 eventType = xmlPullParser.next();
             }
         } catch (Exception e) {
-            C2261g.m9769c("ParseDocument", e.getMessage());
+            ImageAppLog.error("ParseDocument", e.getMessage());
             this.f5607a = "error";
         }
     }
@@ -75,7 +75,7 @@ public class C1871u {
                 next = xmlPullParser.next();
             }
         } catch (Exception e) {
-            C2261g.m9769c("ParseTagState", e.getMessage());
+            ImageAppLog.error("ParseTagState", e.getMessage());
         }
     }
 
@@ -96,7 +96,7 @@ public class C1871u {
                 next = xmlPullParser.next();
             }
         } catch (Exception e) {
-            C2261g.m9769c("ParseTagRecRemainCapacity", e.getMessage());
+            ImageAppLog.error("ParseTagRecRemainCapacity", e.getMessage());
         }
     }
 
@@ -119,7 +119,7 @@ public class C1871u {
                 next = xmlPullParser.next();
             }
         } catch (Exception e) {
-            C2261g.m9769c("ParseTagRecTime", e.getMessage());
+            ImageAppLog.error("ParseTagRecTime", e.getMessage());
         }
     }
 
@@ -140,7 +140,7 @@ public class C1871u {
                 next = xmlPullParser.next();
             }
         } catch (Exception e) {
-            C2261g.m9769c("ParseTagMultiSd", e.getMessage());
+            ImageAppLog.error("ParseTagMultiSd", e.getMessage());
         }
     }
 
@@ -173,7 +173,7 @@ public class C1871u {
                 next = xmlPullParser.next();
             }
         } catch (Exception e) {
-            C2261g.m9769c("ParseTagMultiSdSlot", e.getMessage());
+            ImageAppLog.error("ParseTagMultiSdSlot", e.getMessage());
         }
     }
 
@@ -194,7 +194,7 @@ public class C1871u {
                 next = xmlPullParser.next();
             }
         } catch (Exception e) {
-            C2261g.m9769c("ParseTagRecRemainCapacity", e.getMessage());
+            ImageAppLog.error("ParseTagRecRemainCapacity", e.getMessage());
         }
     }
 
@@ -217,7 +217,7 @@ public class C1871u {
                         str2 = xmlPullParser.getText();
                     } catch (Exception e2) {
                         e = e2;
-                        C2261g.m9769c("ParseTagSimpleText", e.getMessage());
+                        ImageAppLog.error("ParseTagSimpleText", e.getMessage());
                         return str;
                     }
                 } else {
@@ -232,7 +232,7 @@ public class C1871u {
                     Exception exc = e3;
                     str = str2;
                     e = exc;
-                    C2261g.m9769c("ParseTagSimpleText", e.getMessage());
+                    ImageAppLog.error("ParseTagSimpleText", e.getMessage());
                     return str;
                 }
             }
@@ -255,7 +255,7 @@ public class C1871u {
                 next = xmlPullParser.next();
             }
         } catch (Exception e) {
-            C2261g.m9769c("ParseTagUnknown", e.getMessage());
+            ImageAppLog.error("ParseTagUnknown", e.getMessage());
         }
     }
 
@@ -278,7 +278,7 @@ public class C1871u {
     }
 
     /* renamed from: c */
-    public C1846e mo4836c() {
+    public CameraStatus mo4836c() {
         return this.f5608b;
     }
 

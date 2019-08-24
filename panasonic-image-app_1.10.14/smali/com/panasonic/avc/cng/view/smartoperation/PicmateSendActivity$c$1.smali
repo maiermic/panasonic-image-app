@@ -93,7 +93,7 @@
 
     aget-object v6, v2, v0
 
-    invoke-static {v3, v4, v5, v6}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;ILjava/lang/CharSequence;)V
+    invoke-static {v3, v4, v5, v6}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;ILjava/lang/CharSequence;)V
 
     .line 201
     add-int/lit8 v0, v0, 0x1

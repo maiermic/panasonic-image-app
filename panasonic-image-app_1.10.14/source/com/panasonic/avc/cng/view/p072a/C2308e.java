@@ -10,7 +10,7 @@ import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.C1892f;
 import com.panasonic.avc.cng.model.p051c.C1844d;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.view.cameraconnect.AccessPointSettingActivity;
 import com.panasonic.avc.cng.view.setting.AppSettingActivity;
 import com.panasonic.avc.cng.view.setting.AppSettingForNoIDActivity;
@@ -189,15 +189,15 @@ public class C2308e {
                 C5564p pVar = (C5564p) this.f7118i.get(itemId);
                 try {
                     if (pVar.f17239j == getClass().getClassLoader().loadClass("com.panasonic.avc.cng.view.cameraconnect.AccessPointSettingActivity")) {
-                        C2261g.m9760a(3170305, "");
+                        ImageAppLog.m9760a(3170305, "");
                     } else if (pVar.f17239j == getClass().getClassLoader().loadClass("com.panasonic.avc.cng.view.setting.PlaybackSettingActivity")) {
-                        C2261g.m9760a(3170306, "");
+                        ImageAppLog.m9760a(3170306, "");
                     } else if (pVar.f17239j == getClass().getClassLoader().loadClass("com.panasonic.avc.cng.view.setting.RecursiveSettingActivity")) {
-                        C2261g.m9760a(3170307, "");
+                        ImageAppLog.m9760a(3170307, "");
                     } else if (pVar.f17239j == getClass().getClassLoader().loadClass("com.panasonic.avc.cng.view.setting.MenuTermsActivity")) {
-                        C2261g.m9760a(3170308, "");
+                        ImageAppLog.m9760a(3170308, "");
                     } else if (pVar.f17239j == getClass().getClassLoader().loadClass("com.panasonic.avc.cng.view.setting.HelpActivity")) {
-                        C2261g.m9760a(3170309, "");
+                        ImageAppLog.m9760a(3170309, "");
                     }
                 } catch (Exception e) {
                 }

@@ -43,20 +43,20 @@
     .line 1346
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/u$b$3;->a:Lcom/panasonic/avc/cng/view/setting/u$b;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/u$b;->a:Lcom/panasonic/avc/cng/view/setting/u;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/u$b;->a:Lcom/panasonic/avc/cng/view/setting/LiveSetupLumixMirrorlessBaseActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;)V
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;)V
 
     .line 1347
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/u$b$3;->a:Lcom/panasonic/avc/cng/view/setting/u$b;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/u$b;->a:Lcom/panasonic/avc/cng/view/setting/u;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/u$b;->a:Lcom/panasonic/avc/cng/view/setting/LiveSetupLumixMirrorlessBaseActivity;
 
     sget-object v1, Lcom/panasonic/avc/cng/view/b/b$a;->b:Lcom/panasonic/avc/cng/view/b/b$a;
 
     const/4 v2, 0x0
 
-    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     .line 1348
     return-void

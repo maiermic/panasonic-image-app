@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/model/service/a/m;->b(I)V
+    value = Lcom/panasonic/avc/cng/model/service/a/CameraContentCopy;->b(I)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/panasonic/avc/cng/model/service/a/m;
+.field final synthetic a:Lcom/panasonic/avc/cng/model/service/a/CameraContentCopy;
 
 
 # direct methods
-.method constructor <init>(Lcom/panasonic/avc/cng/model/service/a/m;)V
+.method constructor <init>(Lcom/panasonic/avc/cng/model/service/a/CameraContentCopy;)V
     .locals 0
 
     .prologue
     .line 536
-    iput-object p1, p0, Lcom/panasonic/avc/cng/model/service/a/m$3;->a:Lcom/panasonic/avc/cng/model/service/a/m;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/model/service/a/m$3;->a:Lcom/panasonic/avc/cng/model/service/a/CameraContentCopy;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -41,9 +41,9 @@
 
     .prologue
     .line 539
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/a/m$3;->a:Lcom/panasonic/avc/cng/model/service/a/m;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/a/m$3;->a:Lcom/panasonic/avc/cng/model/service/a/CameraContentCopy;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/a/m;->e(Lcom/panasonic/avc/cng/model/service/a/m;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/a/CameraContentCopy;->e(Lcom/panasonic/avc/cng/model/service/a/CameraContentCopy;)Landroid/os/Handler;
 
     move-result-object v0
 
@@ -55,9 +55,9 @@
 
     .line 542
     :cond_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/a/m$3;->a:Lcom/panasonic/avc/cng/model/service/a/m;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/a/m$3;->a:Lcom/panasonic/avc/cng/model/service/a/CameraContentCopy;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/a/m;->f(Lcom/panasonic/avc/cng/model/service/a/m;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/a/CameraContentCopy;->f(Lcom/panasonic/avc/cng/model/service/a/CameraContentCopy;)Landroid/os/Handler;
 
     move-result-object v0
 
@@ -80,9 +80,9 @@
     if-ne p1, v0, :cond_2
 
     .line 555
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/a/m$3;->a:Lcom/panasonic/avc/cng/model/service/a/m;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/a/m$3;->a:Lcom/panasonic/avc/cng/model/service/a/CameraContentCopy;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/a/m;->g(Lcom/panasonic/avc/cng/model/service/a/m;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/a/CameraContentCopy;->g(Lcom/panasonic/avc/cng/model/service/a/CameraContentCopy;)Landroid/os/Handler;
 
     move-result-object v0
 
@@ -95,18 +95,18 @@
 
     .line 559
     :cond_1
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/a/m$3;->a:Lcom/panasonic/avc/cng/model/service/a/m;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/a/m$3;->a:Lcom/panasonic/avc/cng/model/service/a/CameraContentCopy;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/a/m;->b(Lcom/panasonic/avc/cng/model/service/a/m;)Lcom/panasonic/avc/cng/model/service/a/m$b;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/a/CameraContentCopy;->b(Lcom/panasonic/avc/cng/model/service/a/CameraContentCopy;)Lcom/panasonic/avc/cng/model/service/a/m$b;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 560
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/a/m$3;->a:Lcom/panasonic/avc/cng/model/service/a/m;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/a/m$3;->a:Lcom/panasonic/avc/cng/model/service/a/CameraContentCopy;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/a/m;->h(Lcom/panasonic/avc/cng/model/service/a/m;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/a/CameraContentCopy;->h(Lcom/panasonic/avc/cng/model/service/a/CameraContentCopy;)Landroid/os/Handler;
 
     move-result-object v0
 
@@ -120,18 +120,18 @@
 
     .line 570
     :cond_2
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/a/m$3;->a:Lcom/panasonic/avc/cng/model/service/a/m;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/a/m$3;->a:Lcom/panasonic/avc/cng/model/service/a/CameraContentCopy;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/a/m;->i(Lcom/panasonic/avc/cng/model/service/a/m;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/a/CameraContentCopy;->i(Lcom/panasonic/avc/cng/model/service/a/CameraContentCopy;)Landroid/os/Handler;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 575
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/a/m$3;->a:Lcom/panasonic/avc/cng/model/service/a/m;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/a/m$3;->a:Lcom/panasonic/avc/cng/model/service/a/CameraContentCopy;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/a/m;->j(Lcom/panasonic/avc/cng/model/service/a/m;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/a/CameraContentCopy;->j(Lcom/panasonic/avc/cng/model/service/a/CameraContentCopy;)Landroid/os/Handler;
 
     move-result-object v0
 

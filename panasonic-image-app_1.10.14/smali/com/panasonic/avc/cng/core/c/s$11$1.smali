@@ -47,9 +47,9 @@
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/core/c/s$11$1;->a:Lcom/panasonic/avc/cng/core/c/s$11;
 
-    iget-object v1, v1, Lcom/panasonic/avc/cng/core/c/s$11;->c:Lcom/panasonic/avc/cng/core/c/s;
+    iget-object v1, v1, Lcom/panasonic/avc/cng/core/c/s$11;->c:Lcom/panasonic/avc/cng/core/c/Picmate;
 
-    invoke-static {v1}, Lcom/panasonic/avc/cng/core/c/s;->d(Lcom/panasonic/avc/cng/core/c/s;)Z
+    invoke-static {v1}, Lcom/panasonic/avc/cng/core/c/Picmate;->d(Lcom/panasonic/avc/cng/core/c/Picmate;)Z
 
     move-result v1
 

@@ -147,9 +147,9 @@
 
     iget-object v3, v3, Lcom/panasonic/avc/cng/view/setting/ai$2;->c:Lcom/panasonic/avc/cng/view/setting/ai;
 
-    iget-object v3, v3, Lcom/panasonic/avc/cng/view/setting/ai;->f:Lcom/panasonic/avc/cng/core/c/s;
+    iget-object v3, v3, Lcom/panasonic/avc/cng/view/setting/ai;->f:Lcom/panasonic/avc/cng/core/c/Picmate;
 
-    invoke-virtual {v3, v0}, Lcom/panasonic/avc/cng/core/c/s;->b(Lcom/panasonic/avc/cng/core/c/i;)Z
+    invoke-virtual {v3, v0}, Lcom/panasonic/avc/cng/core/c/Picmate;->b(Lcom/panasonic/avc/cng/core/c/i;)Z
 
     move-result v3
 

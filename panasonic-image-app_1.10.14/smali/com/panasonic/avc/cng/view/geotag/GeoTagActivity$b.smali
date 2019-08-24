@@ -53,7 +53,7 @@
     .line 2090
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity$b;->a:Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;)V
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;)V
 
     .line 2091
     return-void
@@ -74,7 +74,7 @@
 
     move-result-object v3
 
-    invoke-static {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;ILjava/lang/CharSequence;)V
+    invoke-static {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;ILjava/lang/CharSequence;)V
 
     .line 2098
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity$b;->a:Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;
@@ -83,7 +83,7 @@
 
     const v2, 0x7f0f027b
 
-    invoke-static {v0, v1, v2, p1}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;II)V
+    invoke-static {v0, v1, v2, p1}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;II)V
 
     .line 2099
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity$b;->a:Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;
@@ -96,7 +96,7 @@
 
     move-result-object v3
 
-    invoke-static {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;ILjava/lang/CharSequence;)V
+    invoke-static {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;ILjava/lang/CharSequence;)V
 
     .line 2100
     return-void
@@ -109,7 +109,7 @@
     .line 2105
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity$b;->a:Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;)V
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;)V
 
     .line 2106
     return-void

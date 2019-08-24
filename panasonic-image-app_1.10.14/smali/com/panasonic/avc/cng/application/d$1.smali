@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/application/d;->GetRemoteWatchNfcResultListener()Lcom/panasonic/avc/cng/model/service/u$a;
+    value = Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportActivity;->GetRemoteWatchNfcResultListener()Lcom/panasonic/avc/cng/model/service/u$a;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/panasonic/avc/cng/application/d;
+.field final synthetic a:Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportActivity;
 
 
 # direct methods
-.method constructor <init>(Lcom/panasonic/avc/cng/application/d;)V
+.method constructor <init>(Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportActivity;)V
     .locals 0
 
     .prologue
     .line 285
-    iput-object p1, p0, Lcom/panasonic/avc/cng/application/d$1;->a:Lcom/panasonic/avc/cng/application/d;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/application/d$1;->a:Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -47,21 +47,21 @@
 
     const-string v1, "SetNfcProcessFlg"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 301
-    iget-object v0, p0, Lcom/panasonic/avc/cng/application/d$1;->a:Lcom/panasonic/avc/cng/application/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/application/d$1;->a:Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportActivity;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/application/d;->_nfcViewModel:Lcom/panasonic/avc/cng/application/e;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportViewModel;
 
-    invoke-virtual {v0, v2, v2}, Lcom/panasonic/avc/cng/application/e;->a(ZZ)V
+    invoke-virtual {v0, v2, v2}, Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportViewModel;->a(ZZ)V
 
     .line 303
     const-string v0, "\u2605ImageAppActivity"
 
     const-string v1, "NFC OnFailed"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 304
     return-void
@@ -72,9 +72,9 @@
 
     .prologue
     .line 334
-    iget-object v0, p0, Lcom/panasonic/avc/cng/application/d$1;->a:Lcom/panasonic/avc/cng/application/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/application/d$1;->a:Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/application/d;->access$100(Lcom/panasonic/avc/cng/application/d;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportActivity;->access$100(Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportActivity;)Landroid/os/Handler;
 
     move-result-object v0
 
@@ -86,9 +86,9 @@
 
     .line 339
     :cond_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/application/d$1;->a:Lcom/panasonic/avc/cng/application/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/application/d$1;->a:Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/application/d;->access$100(Lcom/panasonic/avc/cng/application/d;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportActivity;->access$100(Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportActivity;)Landroid/os/Handler;
 
     move-result-object v0
 
@@ -128,21 +128,21 @@
 
     const-string v1, "SetNfcProcessFlg"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 311
-    iget-object v0, p0, Lcom/panasonic/avc/cng/application/d$1;->a:Lcom/panasonic/avc/cng/application/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/application/d$1;->a:Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportActivity;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/application/d;->_nfcViewModel:Lcom/panasonic/avc/cng/application/e;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportViewModel;
 
-    invoke-virtual {v0, v2, v2}, Lcom/panasonic/avc/cng/application/e;->a(ZZ)V
+    invoke-virtual {v0, v2, v2}, Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportViewModel;->a(ZZ)V
 
     .line 313
     const-string v0, "\u2605ImageAppActivity"
 
     const-string v1, "NFC OnFailed"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 315
     return-void

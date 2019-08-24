@@ -1,13 +1,13 @@
 package com.panasonic.avc.cng.model.service.p065l;
 
-import com.panasonic.avc.cng.core.p040a.C1469ap;
-import com.panasonic.avc.cng.core.p040a.C1541w;
+import com.panasonic.avc.cng.core.p040a.StatusVianaCommand;
+import com.panasonic.avc.cng.core.p040a.MenuVianaCommand;
 import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.C1892f;
 import com.panasonic.avc.cng.model.C1910l;
 import com.panasonic.avc.cng.model.p051c.C1835a;
 import com.panasonic.avc.cng.model.p051c.C1844d;
-import com.panasonic.avc.cng.model.p051c.C1853h;
+import com.panasonic.avc.cng.model.p051c.ParseTagHighlightSceneInfo;
 import com.panasonic.avc.cng.model.p051c.C1860l;
 import com.panasonic.avc.cng.model.p051c.C1861m;
 import com.panasonic.avc.cng.model.p051c.C1862n;
@@ -25,11 +25,11 @@ public class C2191d implements C1985b {
     /* access modifiers changed from: private */
 
     /* renamed from: c */
-    public C1541w f6805c = null;
+    public MenuVianaCommand f6805c = null;
     /* access modifiers changed from: private */
 
     /* renamed from: d */
-    public C1469ap f6806d = null;
+    public StatusVianaCommand f6806d = null;
     /* access modifiers changed from: private */
 
     /* renamed from: e */
@@ -148,10 +148,10 @@ public class C2191d implements C1985b {
         C1892f a = C1712b.m6919c().mo4896a();
         if (a != null) {
             if (this.f6805c == null) {
-                this.f6805c = new C1541w(a.f5682d);
+                this.f6805c = new MenuVianaCommand(a.f5682d);
             }
             if (this.f6806d == null) {
-                this.f6806d = new C1469ap(a.f5682d);
+                this.f6806d = new StatusVianaCommand(a.f5682d);
             }
             final C1986a aVar2 = aVar;
             final String str5 = str4;
@@ -160,7 +160,7 @@ public class C2191d implements C1985b {
             final String str8 = str3;
             new Thread(new Runnable() {
                 public void run() {
-                    C1853h a;
+                    ParseTagHighlightSceneInfo a;
                     C1892f a2 = C1712b.m6919c().mo4896a();
                     String str = null;
                     if (aVar2 != null) {
@@ -204,7 +204,7 @@ public class C2191d implements C1985b {
         C1892f a = C1712b.m6919c().mo4896a();
         if (a != null) {
             if (this.f6806d == null) {
-                this.f6806d = new C1469ap(a.f5682d);
+                this.f6806d = new StatusVianaCommand(a.f5682d);
             }
             new Thread(new Runnable() {
                 public void run() {

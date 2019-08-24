@@ -5,11 +5,11 @@ import android.content.Context;
 import android.os.Bundle;
 import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.C1712b;
-import com.panasonic.avc.cng.model.p051c.C1846e;
-import com.panasonic.avc.cng.model.service.C2253z;
-import com.panasonic.avc.cng.view.liveview.movie.pantilter.C3733b.C3787a;
+import com.panasonic.avc.cng.model.p051c.CameraStatus;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
+import com.panasonic.avc.cng.view.liveview.movie.pantilter.LiveViewMoviePantilterBaseViewModel.C3787a;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
 
 public class LiveViewMoviePantilterAutoMovieActivity extends C3720a {
     /* access modifiers changed from: protected */
@@ -28,9 +28,9 @@ public class LiveViewMoviePantilterAutoMovieActivity extends C3720a {
             this.f12126c = new C3792c();
             this.f12126c.mo8946a(this, this.f12125b);
             this.f12126c.mo8948b(this, this.f12125b);
-            C1846e i = C2253z.m9680a((Context) null, false).mo5285i();
+            CameraStatus i = ServiceFactory.m9680a((Context) null, false).mo5285i();
             if (i != null && i.mo4656E() != null && i.mo4656E().equalsIgnoreCase("check")) {
-                C2331d.m10114a((Activity) this, C2328a.ON_PANTILTER_FORBIDDEN_FOR_CHECKING, (Bundle) null);
+                DialogFactory.m10114a((Activity) this, C2328a.ON_PANTILTER_FORBIDDEN_FOR_CHECKING, (Bundle) null);
             }
         }
     }

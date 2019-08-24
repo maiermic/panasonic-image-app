@@ -8,9 +8,9 @@ import android.view.View;
 import com.panasonic.avc.cng.imageapp.C1701a.C1702a;
 import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.C1712b;
-import com.panasonic.avc.cng.model.p051c.C1846e;
+import com.panasonic.avc.cng.model.p051c.CameraStatus;
 import com.panasonic.avc.cng.model.service.C2028e;
-import com.panasonic.avc.cng.model.service.C2253z;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
 import com.panasonic.avc.cng.model.service.p055b.C2003c;
 import com.panasonic.avc.cng.p038a.C1343b;
 import com.panasonic.avc.cng.view.p072a.C2291c;
@@ -18,9 +18,9 @@ import com.panasonic.avc.cng.view.p072a.C2308e;
 import com.panasonic.avc.cng.view.p072a.C2313g;
 import com.panasonic.avc.cng.view.p072a.C2316j;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
 import com.panasonic.avc.cng.view.play.browser.MainBrowserActivity;
-import com.panasonic.avc.cng.view.play.multiphotoframe.C4621h.C4625a;
+import com.panasonic.avc.cng.view.play.multiphotoframe.MultiPhotoFrameMainViewModel.C4625a;
 import com.panasonic.avc.cng.view.play.multiphotoframe.MultiPhotoFrameMainView.C4572a;
 import com.panasonic.avc.cng.view.play.multiphotoframe.MultiPhotoFrameMainView.C4573b;
 import com.panasonic.avc.cng.view.play.p076a.C4270a;
@@ -33,7 +33,7 @@ public class MultiPhotoFrameMainActivity extends C4270a {
     /* access modifiers changed from: private */
 
     /* renamed from: b */
-    public C4621h f14954b;
+    public MultiPhotoFrameMainViewModel f14954b;
 
     /* renamed from: c */
     private C4619f f14955c;
@@ -118,9 +118,9 @@ public class MultiPhotoFrameMainActivity extends C4270a {
         this.f14956d = new C4567a();
         this.f14953a = new C4568b();
         this.f14957e = (MultiPhotoFrameMainView) findViewById(R.id.multiPhotoSurface);
-        this.f14954b = (C4621h) C2316j.m10030a("MultiPhotoFrameMainViewModel");
+        this.f14954b = (MultiPhotoFrameMainViewModel) C2316j.m10030a("MultiPhotoFrameMainViewModel");
         if (this.f14954b == null) {
-            this.f14954b = new C4621h(this._context, this._handler, this.f14956d);
+            this.f14954b = new MultiPhotoFrameMainViewModel(this._context, this._handler, this.f14956d);
             this.f14954b.mo10826a(this._context, this._handler, this.f14956d);
             C2316j.m10032a("MultiPhotoFrameMainViewModel", this.f14954b);
             Bundle extras = getIntent().getExtras();
@@ -219,7 +219,7 @@ public class MultiPhotoFrameMainActivity extends C4270a {
             if (this.f14954b == null) {
                 super.onBackPressed();
             } else if (!this.f14954b.mo10844k() && !this.f14954b.mo10840g()) {
-                C2331d.m10114a((Activity) this, C2328a.FinishConfirmDlg, (Bundle) null);
+                DialogFactory.m10114a((Activity) this, C2328a.FinishConfirmDlg, (Bundle) null);
             } else if (this.f14954b.mo10844k()) {
                 this.f14954b.mo10838f(false);
             } else {
@@ -230,11 +230,11 @@ public class MultiPhotoFrameMainActivity extends C4270a {
 
     /* renamed from: a */
     private boolean m17898a() {
-        C2028e a = C2253z.m9680a(this._context, true);
+        C2028e a = ServiceFactory.m9680a(this._context, true);
         if (a == null) {
             return false;
         }
-        C1846e i = a.mo5285i();
+        CameraStatus i = a.mo5285i();
         if (i != null) {
             return i.mo4705m();
         }
@@ -316,7 +316,7 @@ public class MultiPhotoFrameMainActivity extends C4270a {
                         if (MultiPhotoFrameMainActivity.this._handler != null) {
                             MultiPhotoFrameMainActivity.this._handler.post(new Runnable() {
                                 public void run() {
-                                    C2331d.m10114a((Activity) MultiPhotoFrameMainActivity.this, C2328a.WAIT_PROCESSING, (Bundle) null);
+                                    DialogFactory.m10114a((Activity) MultiPhotoFrameMainActivity.this, C2328a.WAIT_PROCESSING, (Bundle) null);
                                 }
                             });
                         }
@@ -327,8 +327,8 @@ public class MultiPhotoFrameMainActivity extends C4270a {
                         if (MultiPhotoFrameMainActivity.this._handler != null) {
                             MultiPhotoFrameMainActivity.this._handler.post(new Runnable() {
                                 public void run() {
-                                    C2331d.m10100a((Activity) MultiPhotoFrameMainActivity.this);
-                                    C2331d.m10114a((Activity) MultiPhotoFrameMainActivity.this, C2328a.SaveCompleteDlg, (Bundle) null);
+                                    DialogFactory.m10100a((Activity) MultiPhotoFrameMainActivity.this);
+                                    DialogFactory.m10114a((Activity) MultiPhotoFrameMainActivity.this, C2328a.SaveCompleteDlg, (Bundle) null);
                                 }
                             });
                         }
@@ -343,7 +343,7 @@ public class MultiPhotoFrameMainActivity extends C4270a {
     public void OnFinishClick(View view) {
         if (!isFinishing()) {
             if (this.f14954b != null && !this.f14954b.mo10840g()) {
-                C2331d.m10114a((Activity) this, C2328a.FinishConfirmDlg, (Bundle) null);
+                DialogFactory.m10114a((Activity) this, C2328a.FinishConfirmDlg, (Bundle) null);
             } else if (this.f14954b == null || !this.f14954b.mo10844k()) {
                 this.f14956d.mo10686a(true);
             } else {

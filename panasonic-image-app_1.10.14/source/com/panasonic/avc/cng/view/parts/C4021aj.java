@@ -22,10 +22,10 @@ import com.panasonic.avc.cng.model.p051c.C1848g.C1850b;
 import com.panasonic.avc.cng.model.p051c.C1860l;
 import com.panasonic.avc.cng.model.p052d.C1879a;
 import com.panasonic.avc.cng.model.service.C1985b;
-import com.panasonic.avc.cng.model.service.C2253z;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
 import com.panasonic.avc.cng.util.C2266l;
 import com.panasonic.avc.cng.view.liveview.icon.C3206a;
-import com.panasonic.avc.cng.view.parts.C3973ab.C3977a;
+import com.panasonic.avc.cng.view.parts.SetPickerPosition.C3977a;
 import com.panasonic.avc.cng.view.setting.C5541am;
 import com.panasonic.avc.cng.view.setting.C5541am.C5543a;
 import com.panasonic.avc.cng.view.setting.C5541am.C5543a.C5544a;
@@ -34,7 +34,7 @@ import com.panasonic.avc.cng.view.setting.C5541am.C5552f.C5553a;
 import com.panasonic.avc.cng.view.setting.C5541am.C5560m;
 import com.panasonic.avc.cng.view.setting.C5541am.C5561n;
 import com.panasonic.avc.cng.view.setting.C5541am.C5561n.C5562a;
-import com.panasonic.avc.cng.view.setting.C5780o;
+import com.panasonic.avc.cng.view.setting.LiveSetupDrumPickerFandSSViewModel;
 import java.text.DecimalFormat;
 import java.util.Dictionary;
 import java.util.Enumeration;
@@ -114,7 +114,7 @@ public class C4021aj extends RelativeLayout implements Callback {
     /* access modifiers changed from: private */
 
     /* renamed from: g */
-    public C5780o f13587g;
+    public LiveSetupDrumPickerFandSSViewModel f13587g;
     /* access modifiers changed from: private */
 
     /* renamed from: h */
@@ -129,7 +129,7 @@ public class C4021aj extends RelativeLayout implements Callback {
     /* access modifiers changed from: private */
 
     /* renamed from: k */
-    public C3973ab f13591k;
+    public SetPickerPosition f13591k;
 
     /* renamed from: l */
     private LinearLayout f13592l;
@@ -266,7 +266,7 @@ public class C4021aj extends RelativeLayout implements Callback {
         this.f13585e.mo9609a();
     }
 
-    public C4021aj(Context context, Activity activity, C5780o oVar, boolean z, boolean z2) {
+    public C4021aj(Context context, Activity activity, LiveSetupDrumPickerFandSSViewModel oVar, boolean z, boolean z2) {
         boolean z3 = false;
         super(context);
         this.f13581a = context;
@@ -280,7 +280,7 @@ public class C4021aj extends RelativeLayout implements Callback {
             if (C1712b.m6919c() != null) {
                 this.f13588h = C1712b.m6919c().mo4896a();
                 if (this.f13588h != null) {
-                    this.f13589i = C2253z.m9679a(this.f13581a, this.f13588h);
+                    this.f13589i = ServiceFactory.m9679a(this.f13581a, this.f13588h);
                     if (this.f13589i != null) {
                         this.f13590j = this.f13589i.mo5189b();
                     }
@@ -325,7 +325,7 @@ public class C4021aj extends RelativeLayout implements Callback {
             if (C1712b.m6919c() != null) {
                 this.f13588h = C1712b.m6919c().mo4896a();
                 if (this.f13588h != null) {
-                    this.f13589i = C2253z.m9679a(this.f13581a, this.f13588h);
+                    this.f13589i = ServiceFactory.m9679a(this.f13581a, this.f13588h);
                     if (this.f13589i != null) {
                         this.f13590j = this.f13589i.mo5189b();
                     }
@@ -349,7 +349,7 @@ public class C4021aj extends RelativeLayout implements Callback {
             if (C1712b.m6919c() != null) {
                 this.f13588h = C1712b.m6919c().mo4896a();
                 if (this.f13588h != null) {
-                    this.f13589i = C2253z.m9679a(this.f13581a, this.f13588h);
+                    this.f13589i = ServiceFactory.m9679a(this.f13581a, this.f13588h);
                 }
             }
             this.f13573I = aVar;
@@ -370,7 +370,7 @@ public class C4021aj extends RelativeLayout implements Callback {
             if (C1712b.m6919c() != null) {
                 this.f13588h = C1712b.m6919c().mo4896a();
                 if (this.f13588h != null) {
-                    this.f13589i = C2253z.m9679a(this.f13581a, this.f13588h);
+                    this.f13589i = ServiceFactory.m9679a(this.f13581a, this.f13588h);
                     if (this.f13589i != null) {
                         this.f13590j = this.f13589i.mo5189b();
                     }
@@ -394,7 +394,7 @@ public class C4021aj extends RelativeLayout implements Callback {
             if (C1712b.m6919c() != null) {
                 this.f13588h = C1712b.m6919c().mo4896a();
                 if (this.f13588h != null) {
-                    this.f13589i = C2253z.m9679a(this.f13581a, this.f13588h);
+                    this.f13589i = ServiceFactory.m9679a(this.f13581a, this.f13588h);
                 }
             }
             this.f13574J = nVar;
@@ -414,7 +414,7 @@ public class C4021aj extends RelativeLayout implements Callback {
             if (C1712b.m6919c() != null) {
                 this.f13588h = C1712b.m6919c().mo4896a();
                 if (this.f13588h != null) {
-                    this.f13589i = C2253z.m9679a(this.f13581a, this.f13588h);
+                    this.f13589i = ServiceFactory.m9679a(this.f13581a, this.f13588h);
                     if (this.f13589i != null) {
                         this.f13590j = this.f13589i.mo5189b();
                     }
@@ -559,7 +559,7 @@ public class C4021aj extends RelativeLayout implements Callback {
         } else {
             this.f13603w = mo9571b(5, 200);
         }
-        this.f13591k = new C3973ab(this.f13581a, this.f13603w);
+        this.f13591k = new SetPickerPosition(this.f13581a, this.f13603w);
         this.f13591k.setOnPostionChangedListener(new C3977a() {
             /* renamed from: a */
             public void mo9447a(int i, int i2, boolean z) {
@@ -635,7 +635,7 @@ public class C4021aj extends RelativeLayout implements Callback {
         } else {
             this.f13603w = mo9571b(5, 200);
         }
-        this.f13591k = new C3973ab(this.f13581a, this.f13603w);
+        this.f13591k = new SetPickerPosition(this.f13581a, this.f13603w);
         this.f13591k.setOnPostionChangedListener(new C3977a() {
             /* renamed from: a */
             public void mo9447a(int i, int i2, boolean z) {
@@ -735,7 +735,7 @@ public class C4021aj extends RelativeLayout implements Callback {
         } else {
             this.f13603w = mo9571b(5, 200);
         }
-        this.f13591k = new C3973ab(this.f13581a, this.f13603w);
+        this.f13591k = new SetPickerPosition(this.f13581a, this.f13603w);
         this.f13591k.setOnPostionChangedListener(new C3977a() {
             /* renamed from: a */
             public void mo9447a(int i, int i2, boolean z) {
@@ -817,7 +817,7 @@ public class C4021aj extends RelativeLayout implements Callback {
         } else {
             this.f13603w = mo9571b(5, 200);
         }
-        this.f13591k = new C3973ab(this.f13581a, this.f13603w);
+        this.f13591k = new SetPickerPosition(this.f13581a, this.f13603w);
         this.f13591k.setOnPostionChangedListener(new C3977a() {
             /* renamed from: a */
             public void mo9447a(int i, int i2, boolean z) {
@@ -927,7 +927,7 @@ public class C4021aj extends RelativeLayout implements Callback {
         } else {
             b = mo9571b(4, 200);
         }
-        this.f13591k = new C3973ab(this.f13581a, b);
+        this.f13591k = new SetPickerPosition(this.f13581a, b);
         this.f13591k.setPickerTextFace(Typeface.DEFAULT_BOLD);
         this.f13591k.setCoverType(1);
         if (fVar != null || mVar == null) {
@@ -1091,7 +1091,7 @@ public class C4021aj extends RelativeLayout implements Callback {
         } else {
             b = mo9571b(4, 200);
         }
-        this.f13591k = new C3973ab(this.f13581a, b);
+        this.f13591k = new SetPickerPosition(this.f13581a, b);
         this.f13591k.setPickerTextFace(Typeface.DEFAULT_BOLD);
         this.f13591k.setCoverType(1);
         if (aVar != null || mVar == null) {
@@ -1189,7 +1189,7 @@ public class C4021aj extends RelativeLayout implements Callback {
         } else {
             b = mo9571b(4, 200);
         }
-        this.f13591k = new C3973ab(this.f13581a, b);
+        this.f13591k = new SetPickerPosition(this.f13581a, b);
         this.f13591k.setPickerTextFace(Typeface.DEFAULT_BOLD);
         this.f13591k.setCoverType(1);
         String[] strArr = new String[nVar.f17227c.size()];
@@ -1287,7 +1287,7 @@ public class C4021aj extends RelativeLayout implements Callback {
         } else {
             b = mo9571b(4, 200);
         }
-        this.f13591k = new C3973ab(this.f13581a, b);
+        this.f13591k = new SetPickerPosition(this.f13581a, b);
         this.f13591k.setPickerTextFace(Typeface.DEFAULT_BOLD);
         this.f13591k.setCoverType(1);
         this.f13591k.mo9431a(strArr, this.f13592l, this.f13593m, this.f13595o, this.f13596p, 17, true);

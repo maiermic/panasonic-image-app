@@ -43,9 +43,9 @@
     .line 531
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/c$a$2;->a:Lcom/panasonic/avc/cng/view/play/movieslideshow/c$a;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/movieslideshow/c$a;->a:Lcom/panasonic/avc/cng/view/play/movieslideshow/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/movieslideshow/c$a;->a:Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/movieslideshow/c;->a(Lcom/panasonic/avc/cng/view/play/movieslideshow/c;)Lcom/panasonic/avc/cng/view/play/movieslideshow/c$b;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowViewModel;->a(Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowViewModel;)Lcom/panasonic/avc/cng/view/play/movieslideshow/c$b;
 
     move-result-object v0
 
@@ -54,9 +54,9 @@
     .line 533
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/c$a$2;->a:Lcom/panasonic/avc/cng/view/play/movieslideshow/c$a;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/movieslideshow/c$a;->a:Lcom/panasonic/avc/cng/view/play/movieslideshow/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/movieslideshow/c$a;->a:Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/movieslideshow/c;->a(Lcom/panasonic/avc/cng/view/play/movieslideshow/c;)Lcom/panasonic/avc/cng/view/play/movieslideshow/c$b;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowViewModel;->a(Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowViewModel;)Lcom/panasonic/avc/cng/view/play/movieslideshow/c$b;
 
     move-result-object v0
 
@@ -64,9 +64,9 @@
 
     iget-object v2, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/c$a$2;->a:Lcom/panasonic/avc/cng/view/play/movieslideshow/c$a;
 
-    iget-object v2, v2, Lcom/panasonic/avc/cng/view/play/movieslideshow/c$a;->a:Lcom/panasonic/avc/cng/view/play/movieslideshow/c;
+    iget-object v2, v2, Lcom/panasonic/avc/cng/view/play/movieslideshow/c$a;->a:Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowViewModel;
 
-    invoke-static {v2}, Lcom/panasonic/avc/cng/view/play/movieslideshow/c;->b(Lcom/panasonic/avc/cng/view/play/movieslideshow/c;)I
+    invoke-static {v2}, Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowViewModel;->b(Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowViewModel;)I
 
     move-result v2
 

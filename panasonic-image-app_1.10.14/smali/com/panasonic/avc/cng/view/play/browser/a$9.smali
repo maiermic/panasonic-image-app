@@ -22,13 +22,13 @@
 
 .field final synthetic b:[Lcom/panasonic/avc/cng/model/c;
 
-.field final synthetic c:Lcom/panasonic/avc/cng/view/parts/ba;
+.field final synthetic c:Lcom/panasonic/avc/cng/view/parts/QuickAction;
 
 .field final synthetic d:Lcom/panasonic/avc/cng/view/play/browser/a;
 
 
 # direct methods
-.method constructor <init>(Lcom/panasonic/avc/cng/view/play/browser/a;I[Lcom/panasonic/avc/cng/model/c;Lcom/panasonic/avc/cng/view/parts/ba;)V
+.method constructor <init>(Lcom/panasonic/avc/cng/view/play/browser/a;I[Lcom/panasonic/avc/cng/model/c;Lcom/panasonic/avc/cng/view/parts/QuickAction;)V
     .locals 0
 
     .prologue
@@ -39,7 +39,7 @@
 
     iput-object p3, p0, Lcom/panasonic/avc/cng/view/play/browser/a$9;->b:[Lcom/panasonic/avc/cng/model/c;
 
-    iput-object p4, p0, Lcom/panasonic/avc/cng/view/play/browser/a$9;->c:Lcom/panasonic/avc/cng/view/parts/ba;
+    iput-object p4, p0, Lcom/panasonic/avc/cng/view/play/browser/a$9;->c:Lcom/panasonic/avc/cng/view/parts/QuickAction;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -65,7 +65,7 @@
 
     move-result-object v2
 
-    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 2142
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/a$9;->d:Lcom/panasonic/avc/cng/view/play/browser/a;
@@ -123,9 +123,9 @@
     invoke-interface {v0, v2, v1, v1}, Lcom/panasonic/avc/cng/view/play/browser/a$a;->d(III)V
 
     .line 2150
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/a$9;->c:Lcom/panasonic/avc/cng/view/parts/ba;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/a$9;->c:Lcom/panasonic/avc/cng/view/parts/QuickAction;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/parts/ba;->d()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/parts/QuickAction;->d()V
 
     .line 2170
     :goto_1
@@ -176,9 +176,9 @@
     invoke-interface {v0, v2, v1, v1}, Lcom/panasonic/avc/cng/view/play/browser/a$a;->d(III)V
 
     .line 2161
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/a$9;->c:Lcom/panasonic/avc/cng/view/parts/ba;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/a$9;->c:Lcom/panasonic/avc/cng/view/parts/QuickAction;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/parts/ba;->d()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/parts/QuickAction;->d()V
 
     goto :goto_1
 
@@ -195,9 +195,9 @@
     invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/browser/a;->t()V
 
     .line 2169
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/a$9;->c:Lcom/panasonic/avc/cng/view/parts/ba;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/a$9;->c:Lcom/panasonic/avc/cng/view/parts/QuickAction;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/parts/ba;->d()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/parts/QuickAction;->d()V
 
     goto :goto_1
 .end method

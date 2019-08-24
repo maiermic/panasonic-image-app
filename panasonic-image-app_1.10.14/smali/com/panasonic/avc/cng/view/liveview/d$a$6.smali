@@ -43,17 +43,17 @@
     .line 3259
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/d$a$6;->a:Lcom/panasonic/avc/cng/view/liveview/d$a;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/d$a;->a:Lcom/panasonic/avc/cng/view/liveview/d;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/d$a;->a:Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixBaseActivity;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/d;->a:Lcom/panasonic/avc/cng/view/liveview/e;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixBaseActivity;->a:Lcom/panasonic/avc/cng/view/liveview/e;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/d$a$6;->a:Lcom/panasonic/avc/cng/view/liveview/d$a;
 
-    iget-object v1, v1, Lcom/panasonic/avc/cng/view/liveview/d$a;->a:Lcom/panasonic/avc/cng/view/liveview/d;
+    iget-object v1, v1, Lcom/panasonic/avc/cng/view/liveview/d$a;->a:Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixBaseActivity;
 
     const v2, 0x7f0703d7
 
-    invoke-virtual {v1, v2}, Lcom/panasonic/avc/cng/view/liveview/d;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {v1, v2}, Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixBaseActivity;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v1
 

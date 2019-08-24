@@ -26,21 +26,21 @@ import com.panasonic.avc.cng.imageapp.Httpc.HTTPcJni;
 import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.C1892f;
-import com.panasonic.avc.cng.model.p050b.C1743c.C1756a;
+import com.panasonic.avc.cng.model.p050b.ContentsCopyViewModel.C1756a;
 import com.panasonic.avc.cng.model.p050b.C1828g;
 import com.panasonic.avc.cng.model.service.C1921a;
 import com.panasonic.avc.cng.model.service.C1985b;
 import com.panasonic.avc.cng.model.service.C1985b.C1986a;
-import com.panasonic.avc.cng.model.service.C2253z;
-import com.panasonic.avc.cng.model.service.p054a.C1936c;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
+import com.panasonic.avc.cng.model.service.p054a.BrowserServiceCamera;
 import com.panasonic.avc.cng.model.service.p054a.C1948f;
 import com.panasonic.avc.cng.p038a.C1345d;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.util.C2266l;
 import com.panasonic.avc.cng.view.common.C2820e;
 import com.panasonic.avc.cng.view.p073b.C2317a.C2325c;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
 import com.panasonic.avc.cng.view.p073b.C2337e;
 import com.panasonic.avc.cng.view.p073b.C2376f.C2377a;
 import com.panasonic.avc.cng.view.p073b.C2376f.C2378b;
@@ -49,7 +49,7 @@ import com.panasonic.avc.cng.view.parts.PictureJumpView;
 import com.panasonic.avc.cng.view.parts.PictureJumpView.C3959a;
 import com.panasonic.avc.cng.view.play.browser.C4373a;
 import com.panasonic.avc.cng.view.setting.C5741i;
-import com.panasonic.avc.cng.view.smartoperation.C5956i.C5973b;
+import com.panasonic.avc.cng.view.smartoperation.PictureJumpViewModel.C5973b;
 import com.panasonic.avc.cng.view.smartoperation.C5980j.C5983a;
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -66,7 +66,7 @@ public class PictureJumpActivity extends C5741i implements C0010a, C3959a {
     public static Point f18044c = null;
 
     /* renamed from: d */
-    protected C5956i f18045d = null;
+    protected PictureJumpViewModel f18045d = null;
 
     /* renamed from: e */
     protected ArrayList<C4262x> f18046e = null;
@@ -149,17 +149,17 @@ public class PictureJumpActivity extends C5741i implements C0010a, C3959a {
         public void mo12883a(boolean z, boolean z2) {
             if (!z2 || !PreferenceManager.getDefaultSharedPreferences(PictureJumpActivity.this._context).getBoolean("PictureJumpPlayMessage", false)) {
                 if (z && z2) {
-                    C2331d.m10114a((Activity) PictureJumpActivity.this, C2328a.DIALOG_COPY_WARN_EX_CNT_INCLUDE_VIDEO, (Bundle) null);
+                    DialogFactory.m10114a((Activity) PictureJumpActivity.this, C2328a.DIALOG_COPY_WARN_EX_CNT_INCLUDE_VIDEO, (Bundle) null);
                 } else if (z) {
-                    C2331d.m10114a((Activity) PictureJumpActivity.this, C2328a.DIALOG_COPY_WARN_EX_CNT, (Bundle) null);
+                    DialogFactory.m10114a((Activity) PictureJumpActivity.this, C2328a.DIALOG_COPY_WARN_EX_CNT, (Bundle) null);
                 } else if (z2) {
-                    C2331d.m10114a((Activity) PictureJumpActivity.this, C2328a.ON_BROWSE_ACTION_WARNING_COPY, (Bundle) null);
+                    DialogFactory.m10114a((Activity) PictureJumpActivity.this, C2328a.ON_BROWSE_ACTION_WARNING_COPY, (Bundle) null);
                 } else {
                     PictureJumpActivity.this.f18045d.mo13055n();
                     PictureJumpActivity.this.f18054m = true;
                 }
             } else if (z) {
-                C2331d.m10114a((Activity) PictureJumpActivity.this, C2328a.DIALOG_COPY_WARN_EX_CNT, (Bundle) null);
+                DialogFactory.m10114a((Activity) PictureJumpActivity.this, C2328a.DIALOG_COPY_WARN_EX_CNT, (Bundle) null);
             } else {
                 PictureJumpActivity.this.f18045d.mo13055n();
                 PictureJumpActivity.this.m21840e();
@@ -169,39 +169,39 @@ public class PictureJumpActivity extends C5741i implements C0010a, C3959a {
 
         /* renamed from: b */
         public void mo12884b() {
-            C2331d.m10114a((Activity) PictureJumpActivity.this, C2328a.DIALOG_COPY_WARN_EX_CNT_PICMATE, (Bundle) null);
+            DialogFactory.m10114a((Activity) PictureJumpActivity.this, C2328a.DIALOG_COPY_WARN_EX_CNT_PICMATE, (Bundle) null);
         }
 
         /* renamed from: c */
         public void mo12886c() {
-            C2331d.m10114a((Activity) PictureJumpActivity.this, C2328a.DIALOG_COPY_WARN_EX_CNT_INTENT, (Bundle) null);
+            DialogFactory.m10114a((Activity) PictureJumpActivity.this, C2328a.DIALOG_COPY_WARN_EX_CNT_INTENT, (Bundle) null);
         }
 
         /* renamed from: a */
         public void mo12881a(String str) {
-            C2331d.m10100a((Activity) PictureJumpActivity.this);
+            DialogFactory.m10100a((Activity) PictureJumpActivity.this);
             if (str.equalsIgnoreCase("cancel")) {
-                C2331d.m10114a((Activity) PictureJumpActivity.this, C2328a.ON_BROWSE_ACTION_CANCEL, (Bundle) null);
+                DialogFactory.m10114a((Activity) PictureJumpActivity.this, C2328a.ON_BROWSE_ACTION_CANCEL, (Bundle) null);
             } else if (str.equalsIgnoreCase("notSdCard")) {
-                C2331d.m10114a((Activity) PictureJumpActivity.this, C2328a.ON_BROWSE_ACTION_ERROR_NOSD, (Bundle) null);
+                DialogFactory.m10114a((Activity) PictureJumpActivity.this, C2328a.ON_BROWSE_ACTION_ERROR_NOSD, (Bundle) null);
             } else if (str.equalsIgnoreCase("copyGroup")) {
-                C2331d.m10114a((Activity) PictureJumpActivity.this, C2328a.ON_BROWSE_ACTION_ERROR_GROUP, (Bundle) null);
+                DialogFactory.m10114a((Activity) PictureJumpActivity.this, C2328a.ON_BROWSE_ACTION_ERROR_GROUP, (Bundle) null);
             } else if (str.equalsIgnoreCase("notRemain")) {
-                C2331d.m10114a((Activity) PictureJumpActivity.this, C2328a.ON_BROWSE_ACTION_ERROR_COPY_NO_REMAIN, (Bundle) null);
+                DialogFactory.m10114a((Activity) PictureJumpActivity.this, C2328a.ON_BROWSE_ACTION_ERROR_COPY_NO_REMAIN, (Bundle) null);
             } else {
-                C2331d.m10114a((Activity) PictureJumpActivity.this, C2328a.ON_BROWSE_ACTION_ERROR_COPY, (Bundle) null);
+                DialogFactory.m10114a((Activity) PictureJumpActivity.this, C2328a.ON_BROWSE_ACTION_ERROR_COPY, (Bundle) null);
             }
         }
 
         /* renamed from: a */
         public void mo12882a(boolean z) {
             if (z) {
-                C2331d.m10114a((Activity) PictureJumpActivity.this, C2328a.ON_BROWSE_ACTION_COMPLETE_COPY, (Bundle) null);
+                DialogFactory.m10114a((Activity) PictureJumpActivity.this, C2328a.ON_BROWSE_ACTION_COMPLETE_COPY, (Bundle) null);
                 PictureJumpActivity.this.f18052k = true;
                 PictureJumpActivity.this.f18054m = false;
                 return;
             }
-            C2331d.m10100a((Activity) PictureJumpActivity.this);
+            DialogFactory.m10100a((Activity) PictureJumpActivity.this);
         }
 
         /* renamed from: a */
@@ -211,49 +211,49 @@ public class PictureJumpActivity extends C5741i implements C0010a, C3959a {
 
         /* renamed from: d */
         public void mo12888d() {
-            C2331d.m10100a((Activity) PictureJumpActivity.this);
+            DialogFactory.m10100a((Activity) PictureJumpActivity.this);
             PictureJumpActivity.this.mo12874a();
         }
 
         /* renamed from: b */
         public void mo12885b(boolean z) {
-            C2331d.m10100a((Activity) PictureJumpActivity.this);
+            DialogFactory.m10100a((Activity) PictureJumpActivity.this);
             if (z) {
                 C2337e.m10167a((Activity) PictureJumpActivity.this, PictureJumpActivity.this.f18045d, (C2325c) new C2325c() {
                     /* renamed from: a */
                     public void mo6131a() {
-                        C2331d.m10107a((Activity) PictureJumpActivity.this._context, C2328a.ON_NETWORK_SHOW_WIFI_LIST, (int) R.id.ListView1, (OnItemClickListener) new OnItemClickListener() {
+                        DialogFactory.m10107a((Activity) PictureJumpActivity.this._context, C2328a.ON_NETWORK_SHOW_WIFI_LIST, (int) R.id.ListView1, (OnItemClickListener) new OnItemClickListener() {
                             public void onItemClick(AdapterView<?> adapterView, View view, int i, long j) {
                                 String str = (String) C2337e.m10151a((Activity) PictureJumpActivity.this, PictureJumpActivity.this.f18045d).getItem(((ListView) adapterView).getCheckedItemPosition());
-                                C2331d.m10100a((Activity) PictureJumpActivity.this);
+                                DialogFactory.m10100a((Activity) PictureJumpActivity.this);
                                 PictureJumpActivity.this.f18045d.mo13020a(C2266l.m9810b(PictureJumpActivity.this.getApplicationContext()));
                                 PictureJumpActivity.this.f18045d.mo13021a(str, "");
                                 Bundle bundle = new Bundle();
                                 bundle.putInt(C2378b.NEGATIVE_BUTTON_TEXT_ID.name(), R.string.cmn_btn_cancel);
-                                C2331d.m10114a((Activity) PictureJumpActivity.this, C2328a.ON_NETWORK_JUST_A_MOMENT, bundle);
+                                DialogFactory.m10114a((Activity) PictureJumpActivity.this, C2328a.ON_NETWORK_JUST_A_MOMENT, bundle);
                             }
                         });
-                        C2331d.m10106a((Activity) PictureJumpActivity.this._context, C2328a.ON_NETWORK_SHOW_WIFI_LIST, (int) R.id.listCancelbutton, (OnClickListener) new OnClickListener() {
+                        DialogFactory.m10106a((Activity) PictureJumpActivity.this._context, C2328a.ON_NETWORK_SHOW_WIFI_LIST, (int) R.id.listCancelbutton, (OnClickListener) new OnClickListener() {
                             public void onClick(View view) {
-                                C2331d.m10100a((Activity) PictureJumpActivity.this);
+                                DialogFactory.m10100a((Activity) PictureJumpActivity.this);
                                 PictureJumpActivity.this.finish();
                             }
                         });
-                        C2331d.m10106a((Activity) PictureJumpActivity.this._context, C2328a.ON_NETWORK_SHOW_WIFI_LIST, (int) R.id.listUpdatebutton, (OnClickListener) new OnClickListener() {
+                        DialogFactory.m10106a((Activity) PictureJumpActivity.this._context, C2328a.ON_NETWORK_SHOW_WIFI_LIST, (int) R.id.listUpdatebutton, (OnClickListener) new OnClickListener() {
                             public void onClick(View view) {
                                 if (!PictureJumpActivity.this.f18045d.mo13065x()) {
                                     PictureJumpActivity.this.f18045d.mo13024a(true, false);
                                 }
                                 PictureJumpActivity.this.f18045d.mo13067z();
-                                C2331d.m10100a((Activity) PictureJumpActivity.this);
+                                DialogFactory.m10100a((Activity) PictureJumpActivity.this);
                                 Bundle bundle = new Bundle();
                                 bundle.putInt(C2378b.NEGATIVE_BUTTON_TEXT_ID.name(), R.string.cmn_btn_cancel);
-                                C2331d.m10114a((Activity) PictureJumpActivity.this, C2328a.ON_NETWORK_JUST_A_MOMENT, bundle);
+                                DialogFactory.m10114a((Activity) PictureJumpActivity.this, C2328a.ON_NETWORK_JUST_A_MOMENT, bundle);
                             }
                         });
-                        C2331d.m10106a((Activity) PictureJumpActivity.this._context, C2328a.ON_NETWORK_SHOW_WIFI_LIST, (int) R.id.wifiSettingButton, (OnClickListener) new OnClickListener() {
+                        DialogFactory.m10106a((Activity) PictureJumpActivity.this._context, C2328a.ON_NETWORK_SHOW_WIFI_LIST, (int) R.id.wifiSettingButton, (OnClickListener) new OnClickListener() {
                             public void onClick(View view) {
-                                C2331d.m10100a((Activity) PictureJumpActivity.this);
+                                DialogFactory.m10100a((Activity) PictureJumpActivity.this);
                                 PictureJumpActivity.this.f18045d.mo13020a(C2266l.m9810b(PictureJumpActivity.this.getApplicationContext()));
                                 PictureJumpActivity.this.f18056o = true;
                                 PictureJumpActivity.this.startActivityForResult(new Intent("android.settings.WIFI_SETTINGS"), 98);
@@ -268,7 +268,7 @@ public class PictureJumpActivity extends C5741i implements C0010a, C3959a {
 
         /* renamed from: c */
         public void mo12887c(boolean z) {
-            C2331d.m10100a((Activity) PictureJumpActivity.this);
+            DialogFactory.m10100a((Activity) PictureJumpActivity.this);
             if (z) {
                 C2337e.m10162a(PictureJumpActivity.this, null, PictureJumpActivity.this.f18045d, null, null);
             }
@@ -276,7 +276,7 @@ public class PictureJumpActivity extends C5741i implements C0010a, C3959a {
 
         /* renamed from: e */
         public void mo12889e() {
-            C2331d.m10100a((Activity) PictureJumpActivity.this);
+            DialogFactory.m10100a((Activity) PictureJumpActivity.this);
             if (!C2266l.m9848i(PictureJumpActivity.this._context)) {
                 C0008a.m38a((Activity) PictureJumpActivity.this._context, new String[]{"android.permission.WRITE_EXTERNAL_STORAGE", "android.permission.READ_EXTERNAL_STORAGE"}, 50);
             } else if (PictureJumpActivity.this.f18045d != null) {
@@ -297,21 +297,21 @@ public class PictureJumpActivity extends C5741i implements C0010a, C3959a {
                 bundle.putInt(C2378b.NEGATIVE_BUTTON_TEXT_ID.name(), R.string.cmn_btn_cancel);
                 bundle.putInt(C2378b.MESSAGE_ID.name(), R.string.cmn_msg_just_a_moment);
                 bundle.putBoolean(C2377a.EXCLUDE_DISMISS.name(), true);
-                C2331d.m10115a((Activity) PictureJumpActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT, bundle, (C2325c) new C2325c() {
+                DialogFactory.m10115a((Activity) PictureJumpActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT, bundle, (C2325c) new C2325c() {
                     /* renamed from: a */
                     public void mo6131a() {
                         int i = 0;
                         if (PictureJumpActivity.this.f18045d.mo13043g() != null) {
                             i = PictureJumpActivity.this.f18045d.mo13043g().size();
                         }
-                        C2331d.m10111a((Activity) PictureJumpActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT, (int) R.id.percent_num, (CharSequence) "0");
-                        C2331d.m10111a((Activity) PictureJumpActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT, (int) R.id.numerator, (CharSequence) "1");
-                        C2331d.m10111a((Activity) PictureJumpActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT, (int) R.id.denominator, (CharSequence) String.valueOf(i));
+                        DialogFactory.m10111a((Activity) PictureJumpActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT, (int) R.id.percent_num, (CharSequence) "0");
+                        DialogFactory.m10111a((Activity) PictureJumpActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT, (int) R.id.numerator, (CharSequence) "1");
+                        DialogFactory.m10111a((Activity) PictureJumpActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT, (int) R.id.denominator, (CharSequence) String.valueOf(i));
                     }
                 });
                 return;
             }
-            C2331d.m10114a((Activity) PictureJumpActivity.this, C2328a.ON_PROGRESS, new Bundle());
+            DialogFactory.m10114a((Activity) PictureJumpActivity.this, C2328a.ON_PROGRESS, new Bundle());
         }
 
         /* renamed from: a */
@@ -328,38 +328,38 @@ public class PictureJumpActivity extends C5741i implements C0010a, C3959a {
 
         /* renamed from: a */
         public void mo12881a(String str) {
-            C2331d.m10100a((Activity) PictureJumpActivity.this);
-            if (C2331d.m10125b((Activity) PictureJumpActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT)) {
-                C2331d.m10102a((Activity) PictureJumpActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT);
+            DialogFactory.m10100a((Activity) PictureJumpActivity.this);
+            if (DialogFactory.m10125b((Activity) PictureJumpActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT)) {
+                DialogFactory.m10102a((Activity) PictureJumpActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT);
             }
             if (str.equalsIgnoreCase("cancel")) {
-                C2331d.m10114a((Activity) PictureJumpActivity.this, C2328a.ON_BROWSE_ACTION_CANCEL, (Bundle) null);
+                DialogFactory.m10114a((Activity) PictureJumpActivity.this, C2328a.ON_BROWSE_ACTION_CANCEL, (Bundle) null);
             } else if (str.equalsIgnoreCase("notSdCard")) {
-                C2331d.m10114a((Activity) PictureJumpActivity.this, C2328a.ON_BROWSE_ACTION_ERROR_COPY, (Bundle) null);
+                DialogFactory.m10114a((Activity) PictureJumpActivity.this, C2328a.ON_BROWSE_ACTION_ERROR_COPY, (Bundle) null);
             } else if (str.equalsIgnoreCase("deleteGroup")) {
-                C2331d.m10114a((Activity) PictureJumpActivity.this, C2328a.ON_BROWSE_ACTION_ERROR_GROUP, (Bundle) null);
+                DialogFactory.m10114a((Activity) PictureJumpActivity.this, C2328a.ON_BROWSE_ACTION_ERROR_GROUP, (Bundle) null);
             } else if (str.equalsIgnoreCase("errordelete")) {
-                C2331d.m10114a((Activity) PictureJumpActivity.this, C2328a.ON_BROWSE_ACTION_ERROR_DELETE, (Bundle) null);
+                DialogFactory.m10114a((Activity) PictureJumpActivity.this, C2328a.ON_BROWSE_ACTION_ERROR_DELETE, (Bundle) null);
             } else {
-                C2331d.m10114a((Activity) PictureJumpActivity.this, C2328a.ON_BROWSE_ACTION_ERROR_COPY, (Bundle) null);
+                DialogFactory.m10114a((Activity) PictureJumpActivity.this, C2328a.ON_BROWSE_ACTION_ERROR_COPY, (Bundle) null);
             }
         }
 
         /* renamed from: a */
         public void mo12882a(boolean z) {
-            C2331d.m10100a((Activity) PictureJumpActivity.this);
-            if (C2331d.m10125b((Activity) PictureJumpActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT)) {
-                C2331d.m10102a((Activity) PictureJumpActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT);
+            DialogFactory.m10100a((Activity) PictureJumpActivity.this);
+            if (DialogFactory.m10125b((Activity) PictureJumpActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT)) {
+                DialogFactory.m10102a((Activity) PictureJumpActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT);
             }
-            C2331d.m10114a((Activity) PictureJumpActivity.this, C2328a.DIALOG_PIC_JUMP_FINISH_DELETE, (Bundle) null);
+            DialogFactory.m10114a((Activity) PictureJumpActivity.this, C2328a.DIALOG_PIC_JUMP_FINISH_DELETE, (Bundle) null);
         }
 
         /* renamed from: a */
         public void mo12880a(int i, int i2) {
-            if (C2331d.m10125b((Activity) PictureJumpActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT)) {
-                C2331d.m10104a((Activity) PictureJumpActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT, (int) R.id.progressBar2, i2);
-                C2331d.m10111a((Activity) PictureJumpActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT, (int) R.id.percent_num, (CharSequence) String.valueOf(i2));
-                C2331d.m10111a((Activity) PictureJumpActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT, (int) R.id.numerator, (CharSequence) String.valueOf(i));
+            if (DialogFactory.m10125b((Activity) PictureJumpActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT)) {
+                DialogFactory.m10104a((Activity) PictureJumpActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT, (int) R.id.progressBar2, i2);
+                DialogFactory.m10111a((Activity) PictureJumpActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT, (int) R.id.percent_num, (CharSequence) String.valueOf(i2));
+                DialogFactory.m10111a((Activity) PictureJumpActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT, (int) R.id.numerator, (CharSequence) String.valueOf(i));
             }
         }
 
@@ -389,19 +389,19 @@ public class PictureJumpActivity extends C5741i implements C0010a, C3959a {
         public void mo4493a(int i) {
             switch (i) {
                 case 0:
-                    C2331d.m10114a((Activity) PictureJumpActivity.this, C2328a.ON_DISCONNECT_FINISH, (Bundle) null);
+                    DialogFactory.m10114a((Activity) PictureJumpActivity.this, C2328a.ON_DISCONNECT_FINISH, (Bundle) null);
                     PictureJumpActivity.this.f18055n = true;
                     break;
                 case 1:
-                    C2331d.m10114a((Activity) PictureJumpActivity.this, C2328a.ON_DISCONNECT_FINISH, (Bundle) null);
+                    DialogFactory.m10114a((Activity) PictureJumpActivity.this, C2328a.ON_DISCONNECT_FINISH, (Bundle) null);
                     PictureJumpActivity.this.f18055n = true;
                     break;
                 case 2:
-                    C2331d.m10114a((Activity) PictureJumpActivity.this, C2328a.ON_DISCONNECT_BY_HIGH_TEMP_FINISH, (Bundle) null);
+                    DialogFactory.m10114a((Activity) PictureJumpActivity.this, C2328a.ON_DISCONNECT_BY_HIGH_TEMP_FINISH, (Bundle) null);
                     PictureJumpActivity.this.f18055n = true;
                     break;
                 case 3:
-                    C2331d.m10114a((Activity) PictureJumpActivity.this, C2328a.ON_DISCONNECT_BATTERY_LOW_FINISH, (Bundle) null);
+                    DialogFactory.m10114a((Activity) PictureJumpActivity.this, C2328a.ON_DISCONNECT_BATTERY_LOW_FINISH, (Bundle) null);
                     PictureJumpActivity.this.f18055n = true;
                     break;
             }
@@ -425,9 +425,9 @@ public class PictureJumpActivity extends C5741i implements C0010a, C3959a {
                 return;
             }
             if (str.equalsIgnoreCase("high")) {
-                C2331d.m10114a((Activity) PictureJumpActivity.this, C2328a.ON_DISCONNECT_BY_HIGH_TEMP_FINISH, (Bundle) null);
+                DialogFactory.m10114a((Activity) PictureJumpActivity.this, C2328a.ON_DISCONNECT_BY_HIGH_TEMP_FINISH, (Bundle) null);
             } else if (str.equalsIgnoreCase("assert")) {
-                C2331d.m10114a((Activity) PictureJumpActivity.this, C2328a.ON_ASEERT_TEMP_FINISH, (Bundle) null);
+                DialogFactory.m10114a((Activity) PictureJumpActivity.this, C2328a.ON_ASEERT_TEMP_FINISH, (Bundle) null);
             }
         }
     }
@@ -446,7 +446,7 @@ public class PictureJumpActivity extends C5741i implements C0010a, C3959a {
         C5903c cVar = new C5903c();
         this.f18045d = C2820e.m11774a(this._context, this._handler, (C5973b) this.f18061t, (C5973b) this.f18062u, (C1756a) cVar);
         if (this.f18045d == null) {
-            this.f18045d = new C5956i(this._context, this._handler, cVar);
+            this.f18045d = new PictureJumpViewModel(this._context, this._handler, cVar);
             if (f18043b) {
                 finish();
             }
@@ -602,30 +602,30 @@ public class PictureJumpActivity extends C5741i implements C0010a, C3959a {
                     return;
                 }
             }
-            C1921a f = C2253z.m9703f();
+            C1921a f = ServiceFactory.m9703f();
             if (f == null || !(f instanceof C1948f) || !ShowDmsErrorIfReceiving()) {
                 this.f18045d.mo13030b(true);
                 if (!this.f18045d.mo13052k(i) || this.f18045d.mo13027b(i) == null) {
                     if (!this.f18045d.mo13044g(i)) {
-                        C2331d.m10114a((Activity) this, C2328a.DIALOG_PICTUREJUMP_NOTSETTING, (Bundle) null);
+                        DialogFactory.m10114a((Activity) this, C2328a.DIALOG_PICTUREJUMP_NOTSETTING, (Bundle) null);
                     } else if (this.f18045d.mo13027b(i).equals("IMAGE_APP_PICTUREJUMP_APPINFO_DELETE") && this.f18045d.mo13050j(i)) {
-                        C2331d.m10114a((Activity) this, C2328a.ON_PROTECTED, (Bundle) null);
+                        DialogFactory.m10114a((Activity) this, C2328a.ON_PROTECTED, (Bundle) null);
                     } else if (this.f18045d.mo13046h(i) && !this.f18045d.mo13053l()) {
-                        C2331d.m10114a((Activity) this, C2328a.DIALOG_PICTUREJUMP_NOACCOUNT, (Bundle) null);
+                        DialogFactory.m10114a((Activity) this, C2328a.DIALOG_PICTUREJUMP_NOACCOUNT, (Bundle) null);
                     } else if (this.f18045d.mo13048i(i)) {
-                        C2331d.m10114a((Activity) this, C2328a.DIALOG_PICTUREJUMP_INVALID, (Bundle) null);
+                        DialogFactory.m10114a((Activity) this, C2328a.DIALOG_PICTUREJUMP_INVALID, (Bundle) null);
                     } else {
                         C1892f a = C1712b.m6919c().mo4896a();
                         Bundle bundle = new Bundle();
                         bundle.putInt(C2378b.MESSAGE_ID.name(), (a == null || !a.mo4888b()) ? R.string.ply_msg_err_copy_file_not_supported : R.string.ply_msg_err_copy_file_type_avchd);
-                        C2331d.m10114a((Activity) this, C2328a.DIALOG_PICTUREJUMP_NOTSUPPORT, bundle);
+                        DialogFactory.m10114a((Activity) this, C2328a.DIALOG_PICTUREJUMP_NOTSUPPORT, bundle);
                     }
                 } else if (this.f18045d.mo13042f()) {
                     if (i == 4) {
                         m21831b();
                     }
                 } else if (this.f18045d.mo13027b(i).equals("IMAGE_APP_PICTUREJUMP_APPINFO_DELETE")) {
-                    C2261g.m9760a(3182594, "");
+                    ImageAppLog.m9760a(3182594, "");
                     if (this.f18045d.mo13054m()) {
                         m21831b();
                     } else if (this.f18062u != null) {
@@ -673,12 +673,12 @@ public class PictureJumpActivity extends C5741i implements C0010a, C3959a {
                 mo12874a();
                 return;
             }
-            C2331d.m10114a((Activity) this, C2328a.ON_PROGRESS, (Bundle) null);
+            DialogFactory.m10114a((Activity) this, C2328a.ON_PROGRESS, (Bundle) null);
             C5980j jVar = new C5980j(5000);
             jVar.mo13081a((C5983a) new C5983a() {
                 /* renamed from: a */
                 public void mo12846a() {
-                    C2331d.m10100a((Activity) PictureJumpActivity.this);
+                    DialogFactory.m10100a((Activity) PictureJumpActivity.this);
                     PictureJumpActivity.this.mo12874a();
                 }
             });
@@ -753,11 +753,11 @@ public class PictureJumpActivity extends C5741i implements C0010a, C3959a {
         OnSetResult();
         if (this.f18045d != null) {
             this.f18045d.mo13062u();
-            C2261g.m9763a("PictureJumpActivity", "viewModel.Dispose()");
+            ImageAppLog.debug("PictureJumpActivity", "viewModel.Dispose()");
             this.f18045d.mo3205a();
             this.f18045d = null;
         }
-        C2820e.m11803a((C5956i) null);
+        C2820e.m11803a((PictureJumpViewModel) null);
         if (this.f18048g != null) {
             this.f18048g.mo9336a();
             this.f18048g = null;
@@ -770,8 +770,8 @@ public class PictureJumpActivity extends C5741i implements C0010a, C3959a {
 
     /* renamed from: b */
     private void m21831b() {
-        C1921a f = C2253z.m9703f();
-        if (f == null || !(f instanceof C1936c) || !this.f18045d.mo13049j()) {
+        C1921a f = ServiceFactory.m9703f();
+        if (f == null || !(f instanceof BrowserServiceCamera) || !this.f18045d.mo13049j()) {
             int i = R.string.smartop_confirm_delete;
             if (this.f18045d.mo13047i()) {
                 if (this.f18045d.mo13045h()) {
@@ -784,10 +784,10 @@ public class PictureJumpActivity extends C5741i implements C0010a, C3959a {
             }
             Bundle bundle = new Bundle();
             bundle.putInt(C2378b.MESSAGE_ID.name(), i);
-            C2331d.m10114a((Activity) this, C2328a.DIALOG_PIC_JUMP_SEND_DELETE, bundle);
+            DialogFactory.m10114a((Activity) this, C2328a.DIALOG_PIC_JUMP_SEND_DELETE, bundle);
             return;
         }
-        C2331d.m10114a((Activity) this, C2328a.ON_PROTECTED_SD_CARD, (Bundle) null);
+        DialogFactory.m10114a((Activity) this, C2328a.ON_PROTECTED_SD_CARD, (Bundle) null);
     }
 
     /* access modifiers changed from: protected */
@@ -827,7 +827,7 @@ public class PictureJumpActivity extends C5741i implements C0010a, C3959a {
     private void m21836d() {
         C1892f a = C1712b.m6919c().mo4896a();
         if (a != null) {
-            C1985b a2 = C2253z.m9679a(this._context, a);
+            C1985b a2 = ServiceFactory.m9679a(this._context, a);
             if (a2 != null) {
                 a2.mo5185a((C1986a) new C1986a() {
                     /* renamed from: a */
@@ -851,12 +851,12 @@ public class PictureJumpActivity extends C5741i implements C0010a, C3959a {
     public void m21840e() {
         Bundle bundle = new Bundle();
         bundle.putInt(C2378b.MESSAGE_ID.name(), R.string.msg_file_copying);
-        C2331d.m10115a((Activity) this, C2328a.ON_BROWSE_ACTION_PROCESS_COPY, bundle, (C2325c) new C2325c() {
+        DialogFactory.m10115a((Activity) this, C2328a.ON_BROWSE_ACTION_PROCESS_COPY, bundle, (C2325c) new C2325c() {
             /* renamed from: a */
             public void mo6131a() {
-                C2331d.m10111a((Activity) PictureJumpActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_COPY, (int) R.id.percent_num, (CharSequence) "0");
-                C2331d.m10111a((Activity) PictureJumpActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_COPY, (int) R.id.numerator, (CharSequence) "1");
-                C2331d.m10111a((Activity) PictureJumpActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_COPY, (int) R.id.denominator, (CharSequence) String.valueOf(PictureJumpActivity.this.f18045d.mo13043g().size()));
+                DialogFactory.m10111a((Activity) PictureJumpActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_COPY, (int) R.id.percent_num, (CharSequence) "0");
+                DialogFactory.m10111a((Activity) PictureJumpActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_COPY, (int) R.id.numerator, (CharSequence) "1");
+                DialogFactory.m10111a((Activity) PictureJumpActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_COPY, (int) R.id.denominator, (CharSequence) String.valueOf(PictureJumpActivity.this.f18045d.mo13043g().size()));
             }
         });
     }
@@ -864,9 +864,9 @@ public class PictureJumpActivity extends C5741i implements C0010a, C3959a {
     /* access modifiers changed from: private */
     /* renamed from: a */
     public void m21826a(int i, int i2) {
-        C2331d.m10111a((Activity) this, C2328a.ON_BROWSE_ACTION_PROCESS_COPY, (int) R.id.percent_num, (CharSequence) String.valueOf(i2));
-        C2331d.m10104a((Activity) this, C2328a.ON_BROWSE_ACTION_PROCESS_COPY, (int) R.id.progressBar2, i2);
-        C2331d.m10111a((Activity) this, C2328a.ON_BROWSE_ACTION_PROCESS_COPY, (int) R.id.numerator, (CharSequence) String.valueOf(i));
+        DialogFactory.m10111a((Activity) this, C2328a.ON_BROWSE_ACTION_PROCESS_COPY, (int) R.id.percent_num, (CharSequence) String.valueOf(i2));
+        DialogFactory.m10104a((Activity) this, C2328a.ON_BROWSE_ACTION_PROCESS_COPY, (int) R.id.progressBar2, i2);
+        DialogFactory.m10111a((Activity) this, C2328a.ON_BROWSE_ACTION_PROCESS_COPY, (int) R.id.numerator, (CharSequence) String.valueOf(i));
     }
 
     public void onPositiveButtonClick(C2328a aVar) {
@@ -911,7 +911,7 @@ public class PictureJumpActivity extends C5741i implements C0010a, C3959a {
                 this.f18045d.mo13057p();
                 return;
             case 19:
-                C2331d.m10114a((Activity) this, C2328a.ON_BROWSE_ACTION_WARNING_COPY, (Bundle) null);
+                DialogFactory.m10114a((Activity) this, C2328a.ON_BROWSE_ACTION_WARNING_COPY, (Bundle) null);
                 return;
             case 20:
                 if (this.f18045d == null || !this.f18045d.mo13012B() || this.f18053l) {

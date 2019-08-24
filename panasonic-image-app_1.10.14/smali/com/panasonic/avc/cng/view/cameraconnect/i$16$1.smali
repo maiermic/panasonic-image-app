@@ -51,11 +51,11 @@
     .line 1618
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/i$16$1;->a:Lcom/panasonic/avc/cng/view/cameraconnect/i$16;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/cameraconnect/i$16;->a:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/cameraconnect/i$16;->a:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/cameraconnect/i;->c(Lcom/panasonic/avc/cng/view/cameraconnect/i;Z)Z
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->c(Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;Z)Z
 
     .line 1619
     return-void
@@ -68,11 +68,11 @@
     .line 1614
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/i$16$1;->a:Lcom/panasonic/avc/cng/view/cameraconnect/i$16;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/cameraconnect/i$16;->a:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/cameraconnect/i$16;->a:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/cameraconnect/i;->c(Lcom/panasonic/avc/cng/view/cameraconnect/i;Z)Z
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->c(Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;Z)Z
 
     .line 1615
     return-void

@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field protected _cameraUtil:Lcom/panasonic/avc/cng/view/a/d;
+.field protected _cameraUtil:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
 .field protected _context:Landroid/content/Context;
 
@@ -83,14 +83,14 @@
 
     .line 222
     :cond_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/a/b;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/a/b;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
     if-eqz v0, :cond_1
 
     .line 224
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/a/b;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/a/b;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/a/d;->a()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;->a()V
 
     .line 228
     :cond_1
@@ -144,26 +144,26 @@
     if-eqz v0, :cond_0
 
     .line 107
-    new-instance v1, Lcom/panasonic/avc/cng/view/a/d;
+    new-instance v1, Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
-    invoke-direct {v1}, Lcom/panasonic/avc/cng/view/a/d;-><init>()V
+    invoke-direct {v1}, Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;-><init>()V
 
-    iput-object v1, p0, Lcom/panasonic/avc/cng/view/a/b;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/d;
+    iput-object v1, p0, Lcom/panasonic/avc/cng/view/a/b;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
     .line 110
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/a/b;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/d;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/a/b;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
-    invoke-virtual {v1, p0, v0, p1}, Lcom/panasonic/avc/cng/view/a/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/a/c;Z)V
+    invoke-virtual {v1, p0, v0, p1}, Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/a/c;Z)V
 
     .line 113
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/a/b;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/a/b;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
-    invoke-virtual {v0, p2, p3}, Lcom/panasonic/avc/cng/view/a/d;->a(Lcom/panasonic/avc/cng/view/b/b$a;Lcom/panasonic/avc/cng/view/b/b$a;)V
+    invoke-virtual {v0, p2, p3}, Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;->a(Lcom/panasonic/avc/cng/view/b/b$a;Lcom/panasonic/avc/cng/view/b/b$a;)V
 
     .line 116
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/a/b;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/a/b;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
-    invoke-virtual {v0, p4}, Lcom/panasonic/avc/cng/view/a/d;->a(Lcom/panasonic/avc/cng/view/b/b$a;)V
+    invoke-virtual {v0, p4}, Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;->a(Lcom/panasonic/avc/cng/view/b/b$a;)V
 
     .line 118
     :cond_0
@@ -179,7 +179,7 @@
 
     check-cast v0, Landroid/app/Activity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;)V
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;)V
 
     .line 388
     return-void
@@ -194,7 +194,7 @@
 
     check-cast v0, Landroid/app/Activity;
 
-    invoke-static {v0, p1}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;)V
+    invoke-static {v0, p1}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;)V
 
     .line 399
     return-void
@@ -253,14 +253,14 @@
 
     .prologue
     .line 181
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/a/b;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/a/b;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
     if-eqz v0, :cond_0
 
     .line 184
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/a/b;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/a/b;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/a/d;->a()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;->a()V
 
     .line 187
     :cond_0
@@ -333,9 +333,9 @@
 
     .line 440
     :pswitch_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/a/b;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/a/b;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/a/d;->p()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;->p()V
 
     goto :goto_0
 
@@ -433,17 +433,17 @@
 
     .line 415
     :pswitch_1
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/a/b;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/a/b;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/a/d;->o()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;->o()V
 
     goto :goto_0
 
     .line 420
     :pswitch_2
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/a/b;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/a/b;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/a/d;->q()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;->q()V
 
     goto :goto_0
 
@@ -463,19 +463,19 @@
 
     .prologue
     .line 127
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/a/b;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/a/b;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
     if-eqz v0, :cond_0
 
     .line 130
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/a/b;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/a/b;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/a/d;->b()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;->b()V
 
     .line 133
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/a/b;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/a/b;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/a/d;->d()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;->d()V
 
     .line 136
     :cond_0
@@ -546,7 +546,7 @@
 
     check-cast v0, Landroid/app/Activity;
 
-    invoke-static {v0, p1, p2}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {v0, p1, p2}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     .line 379
     return-void

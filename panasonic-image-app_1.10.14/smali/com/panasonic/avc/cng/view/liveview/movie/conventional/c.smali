@@ -45,42 +45,42 @@
     return-void
 .end method
 
-.method static synthetic a(Lcom/panasonic/avc/cng/view/liveview/movie/conventional/c;)Lcom/panasonic/avc/cng/view/a/d;
+.method static synthetic a(Lcom/panasonic/avc/cng/view/liveview/movie/conventional/c;)Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
     .locals 1
 
     .prologue
     .line 43
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/c;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/c;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
     return-object v0
 .end method
 
-.method static synthetic b(Lcom/panasonic/avc/cng/view/liveview/movie/conventional/c;)Lcom/panasonic/avc/cng/view/a/d;
+.method static synthetic b(Lcom/panasonic/avc/cng/view/liveview/movie/conventional/c;)Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
     .locals 1
 
     .prologue
     .line 43
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/c;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/c;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
     return-object v0
 .end method
 
-.method static synthetic c(Lcom/panasonic/avc/cng/view/liveview/movie/conventional/c;)Lcom/panasonic/avc/cng/view/a/d;
+.method static synthetic c(Lcom/panasonic/avc/cng/view/liveview/movie/conventional/c;)Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
     .locals 1
 
     .prologue
     .line 43
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/c;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/c;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
     return-object v0
 .end method
 
-.method static synthetic d(Lcom/panasonic/avc/cng/view/liveview/movie/conventional/c;)Lcom/panasonic/avc/cng/view/a/d;
+.method static synthetic d(Lcom/panasonic/avc/cng/view/liveview/movie/conventional/c;)Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
     .locals 1
 
     .prologue
     .line 43
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/c;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/c;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
     return-object v0
 .end method
@@ -137,7 +137,7 @@
 
     const/4 v2, 0x0
 
-    invoke-static {p0, v0, v2}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {p0, v0, v2}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     move v0, v1
 
@@ -201,7 +201,7 @@
 
     const-string v1, ""
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 301
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/c;->a:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/e;
@@ -476,7 +476,7 @@
     goto :goto_1
 .end method
 
-.method protected a(Lcom/panasonic/avc/cng/model/c/e;)V
+.method protected a(Lcom/panasonic/avc/cng/model/c/CameraStatus;)V
     .locals 0
 
     .prologue
@@ -601,7 +601,7 @@
 
     const-string v1, ""
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 353
     new-instance v0, Landroid/content/Intent;
@@ -654,7 +654,7 @@
 
     const-string v1, ""
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 385
     new-instance v0, Landroid/content/Intent;
@@ -688,7 +688,7 @@
 
     const-string v1, ""
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 369
     new-instance v0, Landroid/content/Intent;

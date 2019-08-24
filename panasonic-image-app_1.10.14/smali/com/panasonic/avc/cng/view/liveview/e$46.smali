@@ -78,9 +78,9 @@
     .line 13807
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/e$46;->a:Lcom/panasonic/avc/cng/view/liveview/e;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/e;->n:Lcom/panasonic/avc/cng/core/a/g;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/e;->n:Lcom/panasonic/avc/cng/core/a/FocusCommand;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/g;->b()Lcom/panasonic/avc/cng/model/c/h;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/FocusCommand;->b()Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
     move-result-object v0
 
@@ -92,7 +92,7 @@
     iput-boolean v3, v2, Lcom/panasonic/avc/cng/view/liveview/e;->gv:Z
 
     .line 13809
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/h;->a()Z
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;->a()Z
 
     move-result v2
 
@@ -110,7 +110,7 @@
 
     const-string v2, "enterAfMfAssist afAeLock on success."
 
-    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 13828
     :cond_0
@@ -123,7 +123,7 @@
 
     .line 13815
     :cond_1
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/h;->e()Z
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;->e()Z
 
     move-result v0
 
@@ -154,14 +154,14 @@
     .line 13822
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/e$46;->a:Lcom/panasonic/avc/cng/view/liveview/e;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/e;->n:Lcom/panasonic/avc/cng/core/a/g;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/e;->n:Lcom/panasonic/avc/cng/core/a/FocusCommand;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/g;->c()Lcom/panasonic/avc/cng/model/c/h;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/FocusCommand;->c()Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
     move-result-object v0
 
     .line 13823
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/h;->a()Z
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;->a()Z
 
     move-result v0
 
@@ -172,7 +172,7 @@
 
     const-string v2, "enterAfMfAssist afAeLock off error."
 
-    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 
@@ -191,9 +191,9 @@
     :try_start_1
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/e$46;->a:Lcom/panasonic/avc/cng/view/liveview/e;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/e;->n:Lcom/panasonic/avc/cng/core/a/g;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/e;->n:Lcom/panasonic/avc/cng/core/a/FocusCommand;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/g;->b()Lcom/panasonic/avc/cng/model/c/h;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/FocusCommand;->b()Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
     move-result-object v0
 
@@ -213,7 +213,7 @@
 
     .line 13836
     :cond_4
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/h;->a()Z
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;->a()Z
 
     move-result v2
 
@@ -224,10 +224,10 @@
 
     const-string v3, "enterAfMfAssist afAeLock on error."
 
-    invoke-static {v2, v3}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v2, v3}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 13840
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/h;->e()Z
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;->e()Z
 
     move-result v0
 
@@ -258,14 +258,14 @@
     .line 13847
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/e$46;->a:Lcom/panasonic/avc/cng/view/liveview/e;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/e;->n:Lcom/panasonic/avc/cng/core/a/g;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/e;->n:Lcom/panasonic/avc/cng/core/a/FocusCommand;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/g;->c()Lcom/panasonic/avc/cng/model/c/h;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/FocusCommand;->c()Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
     move-result-object v0
 
     .line 13848
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/h;->a()Z
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;->a()Z
 
     move-result v0
 
@@ -276,7 +276,7 @@
 
     const-string v2, "enterAfMfAssist afAeLock off error."
 
-    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 13852
     :cond_6
@@ -288,14 +288,14 @@
     :cond_7
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/e$46;->a:Lcom/panasonic/avc/cng/view/liveview/e;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/e;->n:Lcom/panasonic/avc/cng/core/a/g;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/e;->n:Lcom/panasonic/avc/cng/core/a/FocusCommand;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/g;->d()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/FocusCommand;->d()V
 
     .line 13858
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/e$46;->a:Lcom/panasonic/avc/cng/view/liveview/e;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/e;->n:Lcom/panasonic/avc/cng/core/a/g;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/e;->n:Lcom/panasonic/avc/cng/core/a/FocusCommand;
 
     sget-object v2, Lcom/panasonic/avc/cng/core/a/g$j;->d:Lcom/panasonic/avc/cng/core/a/g$j;
 
@@ -305,7 +305,7 @@
 
     const/4 v5, 0x0
 
-    invoke-virtual {v0, v2, v3, v4, v5}, Lcom/panasonic/avc/cng/core/a/g;->a(Lcom/panasonic/avc/cng/core/a/g$j;Lcom/panasonic/avc/cng/core/a/g$i;II)Lcom/panasonic/avc/cng/model/c/i;
+    invoke-virtual {v0, v2, v3, v4, v5}, Lcom/panasonic/avc/cng/core/a/FocusCommand;->a(Lcom/panasonic/avc/cng/core/a/g$j;Lcom/panasonic/avc/cng/core/a/g$i;II)Lcom/panasonic/avc/cng/model/c/i;
 
     move-result-object v0
 
@@ -321,7 +321,7 @@
 
     const-string v3, "enterAfMfAssist assistDisp error."
 
-    invoke-static {v2, v3}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v2, v3}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 13861
     iget-object v2, p0, Lcom/panasonic/avc/cng/view/liveview/e$46;->a:Lcom/panasonic/avc/cng/view/liveview/e;
@@ -350,26 +350,26 @@
 
     .line 13866
     :cond_8
-    new-instance v2, Lcom/panasonic/avc/cng/model/c/h;
+    new-instance v2, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
     invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/i;->b()Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-direct {v2, v0}, Lcom/panasonic/avc/cng/model/c/h;-><init>(Ljava/lang/String;)V
+    invoke-direct {v2, v0}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;-><init>(Ljava/lang/String;)V
 
     .line 13867
     if-eqz v2, :cond_9
 
     .line 13868
-    invoke-virtual {v2}, Lcom/panasonic/avc/cng/model/c/h;->a()Z
+    invoke-virtual {v2}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;->a()Z
 
     move-result v0
 
     if-nez v0, :cond_9
 
     .line 13869
-    invoke-virtual {v2}, Lcom/panasonic/avc/cng/model/c/h;->b()Ljava/lang/String;
+    invoke-virtual {v2}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;->b()Ljava/lang/String;
 
     move-result-object v0
 
@@ -397,14 +397,14 @@
     .line 13876
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/e$46;->a:Lcom/panasonic/avc/cng/view/liveview/e;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/e;->n:Lcom/panasonic/avc/cng/core/a/g;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/e;->n:Lcom/panasonic/avc/cng/core/a/FocusCommand;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/g;->c()Lcom/panasonic/avc/cng/model/c/h;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/FocusCommand;->c()Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
     move-result-object v0
 
     .line 13877
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/h;->a()Z
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;->a()Z
 
     move-result v0
 
@@ -415,7 +415,7 @@
 
     const-string v2, "enterAfMfAssist afAeLock off2 error."
 
-    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 13880
     :cond_a

@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/view/setting/g;->k()V
+    value = Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;->k()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/panasonic/avc/cng/view/setting/g;
+.field final synthetic a:Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;
 
 
 # direct methods
-.method constructor <init>(Lcom/panasonic/avc/cng/view/setting/g;)V
+.method constructor <init>(Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;)V
     .locals 0
 
     .prologue
     .line 1066
-    iput-object p1, p0, Lcom/panasonic/avc/cng/view/setting/g$1;->a:Lcom/panasonic/avc/cng/view/setting/g;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/view/setting/g$1;->a:Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -44,15 +44,15 @@
 
     .line 1070
     .line 1071
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/g$1;->a:Lcom/panasonic/avc/cng/view/setting/g;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/g$1;->a:Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/g;->F(Lcom/panasonic/avc/cng/view/setting/g;)Landroid/content/Context;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;->F(Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;)Landroid/content/Context;
 
     move-result-object v0
 
     const/4 v2, 0x1
 
-    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/model/service/z;->b(Landroid/content/Context;Z)Lcom/panasonic/avc/cng/model/service/f;
+    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->b(Landroid/content/Context;Z)Lcom/panasonic/avc/cng/model/service/f;
 
     move-result-object v2
 
@@ -74,26 +74,26 @@
 
     .line 1096
     :cond_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/g$1;->a:Lcom/panasonic/avc/cng/view/setting/g;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/g$1;->a:Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/g;->G(Lcom/panasonic/avc/cng/view/setting/g;)Z
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;->G(Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;)Z
 
     move-result v0
 
     if-nez v0, :cond_1
 
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/g$1;->a:Lcom/panasonic/avc/cng/view/setting/g;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/g$1;->a:Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/g;->H(Lcom/panasonic/avc/cng/view/setting/g;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;->H(Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;)Landroid/os/Handler;
 
     move-result-object v0
 
     if-eqz v0, :cond_1
 
     .line 1098
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/g$1;->a:Lcom/panasonic/avc/cng/view/setting/g;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/g$1;->a:Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/g;->I(Lcom/panasonic/avc/cng/view/setting/g;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;->I(Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;)Landroid/os/Handler;
 
     move-result-object v0
 
@@ -118,9 +118,9 @@
 
     .line 1090
     :goto_1
-    iget-object v3, p0, Lcom/panasonic/avc/cng/view/setting/g$1;->a:Lcom/panasonic/avc/cng/view/setting/g;
+    iget-object v3, p0, Lcom/panasonic/avc/cng/view/setting/g$1;->a:Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;
 
-    invoke-static {v3}, Lcom/panasonic/avc/cng/view/setting/g;->G(Lcom/panasonic/avc/cng/view/setting/g;)Z
+    invoke-static {v3}, Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;->G(Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;)Z
 
     move-result v3
 

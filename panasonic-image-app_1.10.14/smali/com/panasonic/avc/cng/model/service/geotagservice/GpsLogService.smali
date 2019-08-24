@@ -100,13 +100,13 @@
 
     .line 275
     :cond_1
-    new-instance v0, Lcom/panasonic/avc/cng/model/service/geotagservice/c;
+    new-instance v0, Lcom/panasonic/avc/cng/model/service/geotagservice/GeotagLogRecord;
 
     invoke-virtual {p0}, Lcom/panasonic/avc/cng/model/service/geotagservice/GpsLogService;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v1
 
-    invoke-direct {v0, v1}, Lcom/panasonic/avc/cng/model/service/geotagservice/c;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, v1}, Lcom/panasonic/avc/cng/model/service/geotagservice/GeotagLogRecord;-><init>(Landroid/content/Context;)V
 
     .line 276
     invoke-virtual {p0}, Lcom/panasonic/avc/cng/model/service/geotagservice/GpsLogService;->getResources()Landroid/content/res/Resources;
@@ -119,7 +119,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/model/service/geotagservice/c;->a(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/model/service/geotagservice/GeotagLogRecord;->a(Ljava/lang/String;)V
 
     .line 277
     return-void
@@ -517,13 +517,13 @@
     if-nez p1, :cond_3
 
     .line 195
-    new-instance v0, Lcom/panasonic/avc/cng/model/service/geotagservice/c;
+    new-instance v0, Lcom/panasonic/avc/cng/model/service/geotagservice/GeotagLogRecord;
 
     invoke-virtual {p0}, Lcom/panasonic/avc/cng/model/service/geotagservice/GpsLogService;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v1
 
-    invoke-direct {v0, v1}, Lcom/panasonic/avc/cng/model/service/geotagservice/c;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, v1}, Lcom/panasonic/avc/cng/model/service/geotagservice/GeotagLogRecord;-><init>(Landroid/content/Context;)V
 
     .line 196
     invoke-virtual {p0}, Lcom/panasonic/avc/cng/model/service/geotagservice/GpsLogService;->getResources()Landroid/content/res/Resources;
@@ -536,7 +536,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/model/service/geotagservice/c;->a(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/model/service/geotagservice/GeotagLogRecord;->a(Ljava/lang/String;)V
 
     .line 199
     :cond_3
@@ -859,13 +859,13 @@
     if-nez p1, :cond_1
 
     .line 244
-    new-instance v0, Lcom/panasonic/avc/cng/model/service/geotagservice/c;
+    new-instance v0, Lcom/panasonic/avc/cng/model/service/geotagservice/GeotagLogRecord;
 
     invoke-virtual {p0}, Lcom/panasonic/avc/cng/model/service/geotagservice/GpsLogService;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v1
 
-    invoke-direct {v0, v1}, Lcom/panasonic/avc/cng/model/service/geotagservice/c;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, v1}, Lcom/panasonic/avc/cng/model/service/geotagservice/GeotagLogRecord;-><init>(Landroid/content/Context;)V
 
     .line 245
     invoke-virtual {p0}, Lcom/panasonic/avc/cng/model/service/geotagservice/GpsLogService;->getResources()Landroid/content/res/Resources;
@@ -878,7 +878,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/model/service/geotagservice/c;->a(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/model/service/geotagservice/GeotagLogRecord;->a(Ljava/lang/String;)V
 
     .line 248
     :cond_1
@@ -1252,7 +1252,7 @@
 
     const-string v1, "GPS_EVENT_STARTED"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 568
     iget-boolean v0, p0, Lcom/panasonic/avc/cng/model/service/geotagservice/GpsLogService;->c:Z
@@ -1277,7 +1277,7 @@
 
     const-string v1, "GPS_EVENT_STOPPED"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 
@@ -1287,7 +1287,7 @@
 
     const-string v1, "GPS_EVENT_FIRST_FIX"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 
@@ -1394,7 +1394,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 546
     const/4 v0, 0x0
@@ -1414,7 +1414,7 @@
 
     const-string v1, "onProviderEnabled"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 552
     return-void
@@ -1439,7 +1439,7 @@
 
     const-string v1, "onStatusChanged"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 557
     return-void

@@ -24,8 +24,8 @@ import com.panasonic.avc.cng.view.parts.C4151e;
 import com.panasonic.avc.cng.view.parts.C4204j;
 import com.panasonic.avc.cng.view.parts.C4213l;
 import com.panasonic.avc.cng.view.parts.C4230p;
-import com.panasonic.avc.cng.view.parts.C4245t;
-import com.panasonic.avc.cng.view.parts.C4245t.C4252c;
+import com.panasonic.avc.cng.view.parts.BrowserViewModel;
+import com.panasonic.avc.cng.view.parts.BrowserViewModel.C4252c;
 import com.panasonic.avc.cng.view.parts.C4261w;
 import com.panasonic.avc.cng.view.smartoperation.PictureJumpActivity;
 
@@ -37,7 +37,7 @@ public class C4427f {
     /* access modifiers changed from: private */
 
     /* renamed from: b */
-    public C4432g f14587b;
+    public MainBrowserViewModel f14587b;
     /* access modifiers changed from: private */
 
     /* renamed from: c */
@@ -83,7 +83,7 @@ public class C4427f {
     private C4230p f14601p = null;
 
     /* renamed from: a */
-    public void mo10366a(Activity activity, C4432g gVar) {
+    public void mo10366a(Activity activity, MainBrowserViewModel gVar) {
         this.f14586a = activity;
         this.f14587b = gVar;
         m17422e();
@@ -284,7 +284,7 @@ public class C4427f {
         }
         int firstVisiblePosition = this.f14588c.getFirstVisiblePosition();
         int lastVisiblePosition = this.f14588c.getLastVisiblePosition();
-        C4245t o = this.f14587b.mo10436o();
+        BrowserViewModel o = this.f14587b.mo10436o();
         o.getClass();
         return new C4252c(firstVisiblePosition, lastVisiblePosition);
     }

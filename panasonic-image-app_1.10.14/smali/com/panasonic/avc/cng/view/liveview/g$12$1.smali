@@ -51,24 +51,24 @@
     .line 1144
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/g$12$1;->c:Lcom/panasonic/avc/cng/view/liveview/g$12;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/g$12;->a:Lcom/panasonic/avc/cng/view/liveview/g;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/g$12;->a:Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixCompactViewModel;
 
-    iget-boolean v0, v0, Lcom/panasonic/avc/cng/view/liveview/g;->gu:Z
+    iget-boolean v0, v0, Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixCompactViewModel;->gu:Z
 
     if-eqz v0, :cond_0
 
     .line 1147
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/g$12$1;->c:Lcom/panasonic/avc/cng/view/liveview/g$12;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/g$12;->a:Lcom/panasonic/avc/cng/view/liveview/g;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/g$12;->a:Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixCompactViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/g;->o:Lcom/panasonic/avc/cng/core/a/t;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixCompactViewModel;->o:Lcom/panasonic/avc/cng/core/a/LiveViewOperationCommand;
 
     iget v1, p0, Lcom/panasonic/avc/cng/view/liveview/g$12$1;->a:I
 
     iget v2, p0, Lcom/panasonic/avc/cng/view/liveview/g$12$1;->b:I
 
-    invoke-virtual {v0, v1, v2}, Lcom/panasonic/avc/cng/core/a/t;->b(II)Lcom/panasonic/avc/cng/model/c/h;
+    invoke-virtual {v0, v1, v2}, Lcom/panasonic/avc/cng/core/a/LiveViewOperationCommand;->b(II)Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
     .line 1154
     :goto_0
@@ -78,15 +78,15 @@
     :cond_0
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/g$12$1;->c:Lcom/panasonic/avc/cng/view/liveview/g$12;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/g$12;->a:Lcom/panasonic/avc/cng/view/liveview/g;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/g$12;->a:Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixCompactViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/g;->o:Lcom/panasonic/avc/cng/core/a/t;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixCompactViewModel;->o:Lcom/panasonic/avc/cng/core/a/LiveViewOperationCommand;
 
     iget v1, p0, Lcom/panasonic/avc/cng/view/liveview/g$12$1;->a:I
 
     iget v2, p0, Lcom/panasonic/avc/cng/view/liveview/g$12$1;->b:I
 
-    invoke-virtual {v0, v1, v2}, Lcom/panasonic/avc/cng/core/a/t;->a(II)Lcom/panasonic/avc/cng/model/c/h;
+    invoke-virtual {v0, v1, v2}, Lcom/panasonic/avc/cng/core/a/LiveViewOperationCommand;->a(II)Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
     goto :goto_0
 .end method

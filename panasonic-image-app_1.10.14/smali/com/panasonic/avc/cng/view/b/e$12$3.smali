@@ -54,7 +54,7 @@
 
     const/16 v2, 0x91
 
-    invoke-static {v0, v1, v3, v2}, Lcom/panasonic/avc/cng/view/b/d;->f(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;II)V
+    invoke-static {v0, v1, v3, v2}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->f(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;II)V
 
     .line 452
     :goto_0
@@ -64,7 +64,7 @@
 
     sget-object v1, Lcom/panasonic/avc/cng/view/b/b$a;->Z:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {v0, v1, v3}, Lcom/panasonic/avc/cng/view/b/d;->c(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;I)Landroid/text/Editable;
+    invoke-static {v0, v1, v3}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->c(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;I)Landroid/text/Editable;
 
     move-result-object v0
 
@@ -83,7 +83,7 @@
 
     sget-object v2, Lcom/panasonic/avc/cng/view/b/b$a;->Z:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {v1, v2, v3, v0}, Lcom/panasonic/avc/cng/view/b/d;->g(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;II)V
+    invoke-static {v1, v2, v3, v0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->g(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;II)V
 
     .line 455
     return-void
@@ -98,7 +98,7 @@
 
     const/16 v2, 0x81
 
-    invoke-static {v0, v1, v3, v2}, Lcom/panasonic/avc/cng/view/b/d;->f(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;II)V
+    invoke-static {v0, v1, v3, v2}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->f(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;II)V
 
     goto :goto_0
 

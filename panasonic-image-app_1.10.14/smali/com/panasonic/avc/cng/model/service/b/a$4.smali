@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/model/service/b/a;->a(Lcom/panasonic/avc/cng/model/service/b/c;ZLcom/panasonic/avc/cng/model/service/c$b;)V
+    value = Lcom/panasonic/avc/cng/model/service/b/ContentControlService;->a(Lcom/panasonic/avc/cng/model/service/b/c;ZLcom/panasonic/avc/cng/model/service/c$b;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,28 +20,28 @@
 # instance fields
 .field final synthetic a:Lcom/panasonic/avc/cng/model/service/c$b;
 
-.field final synthetic b:Lcom/panasonic/avc/cng/core/a/ao;
+.field final synthetic b:Lcom/panasonic/avc/cng/core/a/StatusCommand;
 
 .field final synthetic c:Z
 
 .field final synthetic d:Ljava/util/concurrent/CountDownLatch;
 
-.field final synthetic e:Lcom/panasonic/avc/cng/model/service/b/a;
+.field final synthetic e:Lcom/panasonic/avc/cng/model/service/b/ContentControlService;
 
 .field private f:J
 
 
 # direct methods
-.method constructor <init>(Lcom/panasonic/avc/cng/model/service/b/a;Lcom/panasonic/avc/cng/model/service/c$b;Lcom/panasonic/avc/cng/core/a/ao;ZLjava/util/concurrent/CountDownLatch;)V
+.method constructor <init>(Lcom/panasonic/avc/cng/model/service/b/ContentControlService;Lcom/panasonic/avc/cng/model/service/c$b;Lcom/panasonic/avc/cng/core/a/StatusCommand;ZLjava/util/concurrent/CountDownLatch;)V
     .locals 2
 
     .prologue
     .line 950
-    iput-object p1, p0, Lcom/panasonic/avc/cng/model/service/b/a$4;->e:Lcom/panasonic/avc/cng/model/service/b/a;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/model/service/b/a$4;->e:Lcom/panasonic/avc/cng/model/service/b/ContentControlService;
 
     iput-object p2, p0, Lcom/panasonic/avc/cng/model/service/b/a$4;->a:Lcom/panasonic/avc/cng/model/service/c$b;
 
-    iput-object p3, p0, Lcom/panasonic/avc/cng/model/service/b/a$4;->b:Lcom/panasonic/avc/cng/core/a/ao;
+    iput-object p3, p0, Lcom/panasonic/avc/cng/model/service/b/a$4;->b:Lcom/panasonic/avc/cng/core/a/StatusCommand;
 
     iput-boolean p4, p0, Lcom/panasonic/avc/cng/model/service/b/a$4;->c:Z
 
@@ -77,7 +77,7 @@
 
     .line 959
     :cond_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/b/a$4;->b:Lcom/panasonic/avc/cng/core/a/ao;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/b/a$4;->b:Lcom/panasonic/avc/cng/core/a/StatusCommand;
 
     if-eqz v0, :cond_1
 
@@ -102,17 +102,17 @@
 
     const-string v3, "GetState() for alive..."
 
-    invoke-static {v2, v3}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v2, v3}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 965
     iput-wide v0, p0, Lcom/panasonic/avc/cng/model/service/b/a$4;->f:J
 
     .line 967
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/b/a$4;->b:Lcom/panasonic/avc/cng/core/a/ao;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/b/a$4;->b:Lcom/panasonic/avc/cng/core/a/StatusCommand;
 
     const/16 v1, 0x3e8
 
-    invoke-virtual {v0, v4, v1}, Lcom/panasonic/avc/cng/core/a/ao;->a(II)Lcom/panasonic/avc/cng/model/c/e;
+    invoke-virtual {v0, v4, v1}, Lcom/panasonic/avc/cng/core/a/StatusCommand;->a(II)Lcom/panasonic/avc/cng/model/c/CameraStatus;
 
     move-result-object v0
 
@@ -124,7 +124,7 @@
     .line 969
     iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/b/a$4;->a:Lcom/panasonic/avc/cng/model/service/c$b;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/e;->C()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->C()Ljava/lang/String;
 
     move-result-object v0
 
@@ -153,13 +153,13 @@
     if-eqz v0, :cond_0
 
     .line 979
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/b/a$4;->e:Lcom/panasonic/avc/cng/model/service/b/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/b/a$4;->e:Lcom/panasonic/avc/cng/model/service/b/ContentControlService;
 
     const/4 v1, 0x0
 
     iget-object v2, p2, Lcom/panasonic/avc/cng/model/service/b/c;->c:Ljava/lang/String;
 
-    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/model/service/b/a;->a(Lcom/panasonic/avc/cng/model/service/b/a;Lcom/panasonic/avc/cng/model/d;Ljava/lang/String;)V
+    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/model/service/b/ContentControlService;->a(Lcom/panasonic/avc/cng/model/service/b/ContentControlService;Lcom/panasonic/avc/cng/model/d;Ljava/lang/String;)V
 
     .line 982
     :cond_0

@@ -9,7 +9,7 @@ import com.panasonic.avc.cng.model.C1892f;
 import com.panasonic.avc.cng.model.p051c.C1860l;
 import com.panasonic.avc.cng.model.p052d.C1879a;
 import com.panasonic.avc.cng.model.service.C1985b;
-import com.panasonic.avc.cng.model.service.C2253z;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
 import com.panasonic.avc.cng.view.liveview.C3895p.C3898a;
 import com.panasonic.avc.cng.view.liveview.icon.C3250n.C3254d;
 import com.panasonic.avc.cng.view.setting.C5541am;
@@ -75,7 +75,7 @@ public class LiveViewLumixGHActivity extends LiveViewLumixGseriesActivity {
                 if (!(a == null || !a.f5691m.mo4752x() || LiveViewLumixGHActivity.this.f9043a == null)) {
                     LiveViewLumixGHActivity.this.f9043a.mo7268N();
                 }
-                C1985b a2 = C2253z.m9679a(LiveViewLumixGHActivity.this._context, a);
+                C1985b a2 = ServiceFactory.m9679a(LiveViewLumixGHActivity.this._context, a);
                 C1860l a3 = a2.mo5182a("menu_item_id_1shoot");
                 C1860l a4 = a2.mo5182a("menu_item_id_burst");
                 C1860l a5 = a2.mo5182a("menu_item_id_autobracket");
@@ -139,7 +139,7 @@ public class LiveViewLumixGHActivity extends LiveViewLumixGseriesActivity {
                 if (!(a == null || !a.f5691m.mo4752x() || LiveViewLumixGHActivity.this.f9043a == null)) {
                     LiveViewLumixGHActivity.this.f9043a.mo7268N();
                 }
-                C1985b a2 = C2253z.m9679a(LiveViewLumixGHActivity.this._context, a);
+                C1985b a2 = ServiceFactory.m9679a(LiveViewLumixGHActivity.this._context, a);
                 if (a2 != null) {
                     C1860l a3 = a2.mo5182a("menu_item_id_drivemode");
                     if (a3 != null && a3.f5567a.equalsIgnoreCase("menu_item_id_drivemode") && a3.f5568b && a3.f5573g) {

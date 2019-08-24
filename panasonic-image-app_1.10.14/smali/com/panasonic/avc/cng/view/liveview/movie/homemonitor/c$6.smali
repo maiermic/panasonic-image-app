@@ -56,13 +56,13 @@
     :try_start_0
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c$6;->b:Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c;->P(Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c;)Lcom/panasonic/avc/cng/core/a/ac;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c;->P(Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c;)Lcom/panasonic/avc/cng/core/a/PantiluterVianaCommand;
 
     move-result-object v0
 
     iget-object v2, p0, Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c$6;->a:Ljava/lang/String;
 
-    invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/core/a/ac;->a(Ljava/lang/String;)Lcom/panasonic/avc/cng/model/c/h;
+    invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/core/a/PantiluterVianaCommand;->a(Ljava/lang/String;)Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
     move-result-object v0
 
@@ -76,7 +76,7 @@
 
     new-instance v2, Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c$6$1;
 
-    invoke-direct {v2, p0, v0}, Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c$6$1;-><init>(Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c$6;Lcom/panasonic/avc/cng/model/c/h;)V
+    invoke-direct {v2, p0, v0}, Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c$6$1;-><init>(Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c$6;Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;)V
 
     invoke-static {v1, v2}, Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c;->t(Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c;Ljava/lang/Runnable;)Z
 

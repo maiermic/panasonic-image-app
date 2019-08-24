@@ -1,11 +1,11 @@
 .class public Lcom/panasonic/avc/cng/view/common/a/a$a;
-.super Lcom/panasonic/avc/cng/view/common/a/c;
+.super Lcom/panasonic/avc/cng/view/common/a/FelicaListener;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/panasonic/avc/cng/view/common/a/a;
+    value = Lcom/panasonic/avc/cng/view/common/a/CheckFelicaConnection;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,19 +15,19 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/panasonic/avc/cng/view/common/a/a;
+.field final synthetic a:Lcom/panasonic/avc/cng/view/common/a/CheckFelicaConnection;
 
 
 # direct methods
-.method public constructor <init>(Lcom/panasonic/avc/cng/view/common/a/a;Lcom/panasonic/avc/cng/view/common/a/d;)V
+.method public constructor <init>(Lcom/panasonic/avc/cng/view/common/a/CheckFelicaConnection;Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;)V
     .locals 0
 
     .prologue
     .line 93
-    iput-object p1, p0, Lcom/panasonic/avc/cng/view/common/a/a$a;->a:Lcom/panasonic/avc/cng/view/common/a/a;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/view/common/a/a$a;->a:Lcom/panasonic/avc/cng/view/common/a/CheckFelicaConnection;
 
     .line 94
-    invoke-direct {p0, p2}, Lcom/panasonic/avc/cng/view/common/a/c;-><init>(Lcom/panasonic/avc/cng/view/common/a/d;)V
+    invoke-direct {p0, p2}, Lcom/panasonic/avc/cng/view/common/a/FelicaListener;-><init>(Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;)V
 
     .line 95
     return-void
@@ -49,7 +49,7 @@
 
     const-string v1, "CheckFelicaListener.finished()"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 102
     invoke-virtual {p0}, Lcom/panasonic/avc/cng/view/common/a/a$a;->d()I
@@ -73,14 +73,14 @@
 
     .line 119
     :goto_0
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/common/a/a$a;->a:Lcom/panasonic/avc/cng/view/common/a/a;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/common/a/a$a;->a:Lcom/panasonic/avc/cng/view/common/a/CheckFelicaConnection;
 
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/common/a/a;->a()V
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/common/a/CheckFelicaConnection;->a()V
 
     .line 122
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/common/a/a$a;->b:Lcom/panasonic/avc/cng/view/common/a/d;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/common/a/a$a;->b:Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;
 
-    invoke-virtual {v1, v0}, Lcom/panasonic/avc/cng/view/common/a/d;->a(I)V
+    invoke-virtual {v1, v0}, Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;->a(I)V
 
     .line 123
     return-void
@@ -151,16 +151,16 @@
 
     .line 133
     :cond_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/a/a$a;->a:Lcom/panasonic/avc/cng/view/common/a/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/a/a$a;->a:Lcom/panasonic/avc/cng/view/common/a/CheckFelicaConnection;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/common/a/a;->a()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/common/a/CheckFelicaConnection;->a()V
 
     .line 136
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/a/a$a;->b:Lcom/panasonic/avc/cng/view/common/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/a/a$a;->b:Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;
 
     const/16 v1, 0x16
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/common/a/d;->a(I)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;->a(I)V
 
     .line 137
     return-void

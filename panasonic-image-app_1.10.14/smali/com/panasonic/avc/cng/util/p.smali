@@ -33,7 +33,7 @@
     .line 48
     const-string v0, ""
 
-    invoke-static {v1, v0}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v1, v0}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 49
     new-instance v0, Landroid/content/Intent;
@@ -63,7 +63,7 @@
     .line 54
     const-string v0, ""
 
-    invoke-static {v1, v0}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v1, v0}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 55
     new-instance v0, Landroid/content/Intent;
@@ -100,7 +100,7 @@
 
     const-string v1, ""
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 62
     new-instance v0, Landroid/content/Intent;
@@ -122,7 +122,7 @@
     .line 67
     const-string v0, ""
 
-    invoke-static {v2, v0}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v2, v0}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 68
     new-instance v0, Landroid/content/Intent;
@@ -144,7 +144,7 @@
     .line 73
     const-string v0, ""
 
-    invoke-static {v2, v0}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v2, v0}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 74
     new-instance v0, Landroid/content/Intent;
@@ -184,7 +184,7 @@
     .line 78
     const-string v0, ""
 
-    invoke-static {v2, v0}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v2, v0}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 79
     new-instance v0, Landroid/content/Intent;
@@ -199,7 +199,7 @@
     :cond_5
     const-string v0, ""
 
-    invoke-static {v2, v0}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v2, v0}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 84
     const-string v0, "1.4"
@@ -340,7 +340,7 @@
 
     const-string v1, ""
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 116
     new-instance v0, Landroid/content/Intent;
@@ -370,7 +370,7 @@
     .line 121
     const-string v0, ""
 
-    invoke-static {v3, v0}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v3, v0}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 122
     new-instance v0, Landroid/content/Intent;
@@ -398,7 +398,7 @@
     .line 127
     const-string v0, ""
 
-    invoke-static {v3, v0}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v3, v0}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 128
     new-instance v0, Landroid/content/Intent;
@@ -432,7 +432,7 @@
     .line 135
     const-string v0, ""
 
-    invoke-static {v5, v0}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v5, v0}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 136
     new-instance v0, Landroid/content/Intent;
@@ -462,7 +462,7 @@
 
     const-string v1, ""
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 142
     new-instance v0, Landroid/content/Intent;
@@ -511,7 +511,7 @@
     .line 150
     const-string v0, ""
 
-    invoke-static {v5, v0}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v5, v0}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 151
     new-instance v0, Landroid/content/Intent;
@@ -531,7 +531,7 @@
     :cond_5
     const-string v0, ""
 
-    invoke-static {v2, v0}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v2, v0}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 157
     const-string v0, "1.4"
@@ -604,7 +604,7 @@
     .line 177
     const-string v0, ""
 
-    invoke-static {v3, v0}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v3, v0}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 178
     new-instance v0, Landroid/content/Intent;
@@ -632,7 +632,7 @@
     .line 183
     const-string v0, ""
 
-    invoke-static {v3, v0}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v3, v0}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 184
     new-instance v0, Landroid/content/Intent;
@@ -670,7 +670,7 @@
     :cond_b
     const-string v0, ""
 
-    invoke-static {v2, v0}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v2, v0}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 190
     new-instance v0, Landroid/content/Intent;
@@ -685,7 +685,7 @@
     :cond_c
     const-string v0, ""
 
-    invoke-static {v2, v0}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v2, v0}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 195
     new-instance v0, Landroid/content/Intent;
@@ -707,7 +707,7 @@
     .line 201
     const-string v0, ""
 
-    invoke-static {v2, v0}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v2, v0}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 202
     new-instance v0, Landroid/content/Intent;
@@ -742,7 +742,7 @@
     .line 210
     const-string v0, ""
 
-    invoke-static {v3, v0}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v3, v0}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 211
     new-instance v0, Landroid/content/Intent;
@@ -770,7 +770,7 @@
     .line 216
     const-string v0, ""
 
-    invoke-static {v3, v0}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v3, v0}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 217
     new-instance v0, Landroid/content/Intent;
@@ -790,7 +790,7 @@
     :cond_10
     const-string v0, ""
 
-    invoke-static {v2, v0}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v2, v0}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 223
     new-instance v0, Landroid/content/Intent;
@@ -820,7 +820,7 @@
 
     const-string v1, ""
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 230
     new-instance v0, Landroid/content/Intent;
@@ -835,7 +835,7 @@
     :cond_12
     const-string v0, ""
 
-    invoke-static {v2, v0}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v2, v0}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 235
     const-string v0, "1.4"

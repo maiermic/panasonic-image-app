@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/view/liveview/g;->a(Lcom/panasonic/avc/cng/model/j$f;)V
+    value = Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixCompactViewModel;->a(Lcom/panasonic/avc/cng/model/j$f;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/panasonic/avc/cng/view/liveview/g;
+.field final synthetic a:Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixCompactViewModel;
 
 
 # direct methods
-.method constructor <init>(Lcom/panasonic/avc/cng/view/liveview/g;)V
+.method constructor <init>(Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixCompactViewModel;)V
     .locals 0
 
     .prologue
     .line 221
-    iput-object p1, p0, Lcom/panasonic/avc/cng/view/liveview/g$1;->a:Lcom/panasonic/avc/cng/view/liveview/g;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/view/liveview/g$1;->a:Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixCompactViewModel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -41,9 +41,9 @@
 
     .prologue
     .line 225
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/g$1;->a:Lcom/panasonic/avc/cng/view/liveview/g;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/g$1;->a:Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixCompactViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/liveview/g;->aD()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixCompactViewModel;->aD()V
 
     .line 232
     return-void

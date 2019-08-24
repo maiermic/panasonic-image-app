@@ -360,7 +360,7 @@
 
     sget-object v3, Lcom/panasonic/avc/cng/view/b/b$a;->ev:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {v1, v3, v0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {v1, v3, v0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     goto/16 :goto_0
 .end method

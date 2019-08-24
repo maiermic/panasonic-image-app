@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/panasonic/avc/cng/model/service/p/a;
+    value = Lcom/panasonic/avc/cng/model/service/p/WifiService;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,28 +18,28 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/panasonic/avc/cng/model/service/p/a;
+.field final synthetic a:Lcom/panasonic/avc/cng/model/service/p/WifiService;
 
 
 # direct methods
-.method private constructor <init>(Lcom/panasonic/avc/cng/model/service/p/a;)V
+.method private constructor <init>(Lcom/panasonic/avc/cng/model/service/p/WifiService;)V
     .locals 0
 
     .prologue
     .line 1438
-    iput-object p1, p0, Lcom/panasonic/avc/cng/model/service/p/a$a;->a:Lcom/panasonic/avc/cng/model/service/p/a;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/model/service/p/a$a;->a:Lcom/panasonic/avc/cng/model/service/p/WifiService;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/panasonic/avc/cng/model/service/p/a;Lcom/panasonic/avc/cng/model/service/p/a$1;)V
+.method synthetic constructor <init>(Lcom/panasonic/avc/cng/model/service/p/WifiService;Lcom/panasonic/avc/cng/model/service/p/a$1;)V
     .locals 0
 
     .prologue
     .line 1438
-    invoke-direct {p0, p1}, Lcom/panasonic/avc/cng/model/service/p/a$a;-><init>(Lcom/panasonic/avc/cng/model/service/p/a;)V
+    invoke-direct {p0, p1}, Lcom/panasonic/avc/cng/model/service/p/a$a;-><init>(Lcom/panasonic/avc/cng/model/service/p/WifiService;)V
 
     return-void
 .end method
@@ -63,21 +63,21 @@
 
     const-string v1, "Passwordless OnFinishConnectCamera"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 1450
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/p/a$a;->a:Lcom/panasonic/avc/cng/model/service/p/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/p/a$a;->a:Lcom/panasonic/avc/cng/model/service/p/WifiService;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/p/a;->b(Lcom/panasonic/avc/cng/model/service/p/a;)Lcom/panasonic/avc/cng/model/service/j$d;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/p/WifiService;->b(Lcom/panasonic/avc/cng/model/service/p/WifiService;)Lcom/panasonic/avc/cng/model/service/j$d;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 1452
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/p/a$a;->a:Lcom/panasonic/avc/cng/model/service/p/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/p/a$a;->a:Lcom/panasonic/avc/cng/model/service/p/WifiService;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/p/a;->b(Lcom/panasonic/avc/cng/model/service/p/a;)Lcom/panasonic/avc/cng/model/service/j$d;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/p/WifiService;->b(Lcom/panasonic/avc/cng/model/service/p/WifiService;)Lcom/panasonic/avc/cng/model/service/j$d;
 
     move-result-object v0
 

@@ -10,7 +10,7 @@ import android.location.Location;
 import android.os.AsyncTask;
 import com.panasonic.avc.cng.model.service.C2081h.C2082a;
 import com.panasonic.avc.cng.model.service.C2081h.C2083b;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import java.io.DataInputStream;
 import java.io.File;
 import java.io.FileInputStream;
@@ -471,7 +471,7 @@ public class C2078d extends InputStream {
     }
 
     public int available() {
-        C2261g.m9763a("GeotagManager", "available length=" + this.f6445j + ", " + this.f6444i);
+        ImageAppLog.debug("GeotagManager", "available length=" + this.f6445j + ", " + this.f6444i);
         return this.f6445j - this.f6444i;
     }
 
@@ -539,13 +539,13 @@ public class C2078d extends InputStream {
         } else if (this.f6438c == null) {
             return -1;
         } else {
-            C2261g.m9763a("GeotagMan", "Progress = 100 - complete");
+            ImageAppLog.debug("GeotagMan", "Progress = 100 - complete");
             this.f6438c.mo3746a(268435758, null, 100, 0);
             return -1;
         }
         int i2 = ((this.f6444i * 20) / this.f6439d) * 5;
         if (this.f6446k != i2) {
-            C2261g.m9763a("GeotagMan", "Progress = " + i2);
+            ImageAppLog.debug("GeotagMan", "Progress = " + i2);
             if (this.f6438c != null) {
                 this.f6438c.mo3746a(268435758, null, i2, 0);
             }

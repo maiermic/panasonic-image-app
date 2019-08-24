@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/view/cameraconnect/l;->b(Z)Ljava/util/List;
+    value = Lcom/panasonic/avc/cng/view/cameraconnect/WifiUtil;->b(Z)Ljava/util/List;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -17,16 +17,16 @@
 # instance fields
 .field final synthetic a:Ljava/util/concurrent/CountDownLatch;
 
-.field final synthetic b:Lcom/panasonic/avc/cng/view/cameraconnect/l;
+.field final synthetic b:Lcom/panasonic/avc/cng/view/cameraconnect/WifiUtil;
 
 
 # direct methods
-.method constructor <init>(Lcom/panasonic/avc/cng/view/cameraconnect/l;Ljava/util/concurrent/CountDownLatch;)V
+.method constructor <init>(Lcom/panasonic/avc/cng/view/cameraconnect/WifiUtil;Ljava/util/concurrent/CountDownLatch;)V
     .locals 0
 
     .prologue
     .line 260
-    iput-object p1, p0, Lcom/panasonic/avc/cng/view/cameraconnect/l$1;->b:Lcom/panasonic/avc/cng/view/cameraconnect/l;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/view/cameraconnect/l$1;->b:Lcom/panasonic/avc/cng/view/cameraconnect/WifiUtil;
 
     iput-object p2, p0, Lcom/panasonic/avc/cng/view/cameraconnect/l$1;->a:Ljava/util/concurrent/CountDownLatch;
 
@@ -50,7 +50,7 @@
     .line 267
     const-string v1, "WifiUtil"
 
-    invoke-static {v1, v0}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v0}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 268
     const-string v1, "android.net.wifi.SCAN_RESULTS"

@@ -50,7 +50,7 @@
 
     const-string v1, "DlnaSubscribeInfo.NOTIFY_EV_ID_SYNC_BUSY"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->b(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->warning(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 1044
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/i$2;->a:Lcom/panasonic/avc/cng/view/setting/i;

@@ -9,7 +9,7 @@
 .method public abstract a()Lcom/google/android/gms/c/a;
 .end method
 
-.method public abstract a(Lcom/google/android/gms/common/u;Lcom/google/android/gms/c/a;)Z
+.method public abstract a(Lcom/google/android/gms/common/GoogleCertificatesQuery;Lcom/google/android/gms/c/a;)Z
 .end method
 
 .method public abstract a(Ljava/lang/String;Lcom/google/android/gms/c/a;)Z

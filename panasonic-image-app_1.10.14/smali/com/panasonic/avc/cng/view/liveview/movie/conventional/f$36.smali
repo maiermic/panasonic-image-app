@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;->Z()V
+    value = Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;->Z()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,16 +20,16 @@
 # instance fields
 .field final synthetic a:Lcom/panasonic/avc/cng/core/a/d;
 
-.field final synthetic b:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;
+.field final synthetic b:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;
 
 
 # direct methods
-.method constructor <init>(Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;Lcom/panasonic/avc/cng/core/a/d;)V
+.method constructor <init>(Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;Lcom/panasonic/avc/cng/core/a/d;)V
     .locals 0
 
     .prologue
     .line 2673
-    iput-object p1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f$36;->b:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f$36;->b:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;
 
     iput-object p2, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f$36;->a:Lcom/panasonic/avc/cng/core/a/d;
 
@@ -60,18 +60,18 @@
     move-result-object v0
 
     .line 2679
-    iget-object v2, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f$36;->b:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f$36;->b:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;
 
-    invoke-static {v2}, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;->f(Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;)Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f$a;
+    invoke-static {v2}, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;->f(Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;)Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f$a;
 
     move-result-object v2
 
     if-eqz v2, :cond_0
 
     .line 2681
-    iget-object v2, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f$36;->b:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f$36;->b:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;
 
-    invoke-static {v2}, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;->f(Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;)Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f$a;
+    invoke-static {v2}, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;->f(Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;)Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f$a;
 
     move-result-object v2
 

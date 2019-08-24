@@ -3,7 +3,7 @@ package com.panasonic.avc.cng.view.p072a;
 import android.content.Context;
 import android.os.Bundle;
 import android.os.Handler;
-import com.panasonic.avc.cng.model.p051c.C1846e;
+import com.panasonic.avc.cng.model.p051c.CameraStatus;
 import com.panasonic.avc.cng.p038a.C1342a;
 
 /* renamed from: com.panasonic.avc.cng.view.a.c */
@@ -39,7 +39,7 @@ public class C2291c extends C1342a {
     }
 
     /* renamed from: a */
-    public void mo6018a(C1846e eVar) {
+    public void mo6018a(CameraStatus eVar) {
     }
 
     /* renamed from: a */

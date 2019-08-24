@@ -43,11 +43,11 @@
     .line 61
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerWhiteBalanceActivity$1;->a:Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerWhiteBalanceActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerWhiteBalanceActivity;->a(Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerWhiteBalanceActivity;)Lcom/panasonic/avc/cng/view/setting/s;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerWhiteBalanceActivity;->a(Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerWhiteBalanceActivity;)Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerWhiteBalanceViewModel;
 
     move-result-object v0
 
-    invoke-virtual {v0, p1}, Lcom/panasonic/avc/cng/view/setting/s;->a(I)V
+    invoke-virtual {v0, p1}, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerWhiteBalanceViewModel;->a(I)V
 
     .line 62
     return-void

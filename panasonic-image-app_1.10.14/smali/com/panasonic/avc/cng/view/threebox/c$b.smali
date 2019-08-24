@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/panasonic/avc/cng/view/threebox/c;
+    value = Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

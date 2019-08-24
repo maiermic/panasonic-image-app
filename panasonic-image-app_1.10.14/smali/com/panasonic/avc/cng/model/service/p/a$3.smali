@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/panasonic/avc/cng/model/service/p/a;
+    value = Lcom/panasonic/avc/cng/model/service/p/WifiService;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

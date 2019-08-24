@@ -43,9 +43,9 @@
     .line 1582
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/u$c$2;->a:Lcom/panasonic/avc/cng/view/setting/u$c;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/u$c;->a:Lcom/panasonic/avc/cng/view/setting/u;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/u$c;->a:Lcom/panasonic/avc/cng/view/setting/LiveSetupLumixMirrorlessBaseActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;)V
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;)V
 
     .line 1583
     return-void

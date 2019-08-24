@@ -43,9 +43,9 @@
     .line 458
     iget-object v0, p0, Lcom/panasonic/avc/cng/application/e$b$2;->a:Lcom/panasonic/avc/cng/application/e$b;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/application/e$b;->a:Lcom/panasonic/avc/cng/application/e;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/application/e$b;->a:Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/application/e;->a(Lcom/panasonic/avc/cng/application/e;)Lcom/panasonic/avc/cng/application/e$e;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportViewModel;->a(Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportViewModel;)Lcom/panasonic/avc/cng/application/e$e;
 
     move-result-object v0
 
@@ -54,9 +54,9 @@
     .line 460
     iget-object v0, p0, Lcom/panasonic/avc/cng/application/e$b$2;->a:Lcom/panasonic/avc/cng/application/e$b;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/application/e$b;->a:Lcom/panasonic/avc/cng/application/e;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/application/e$b;->a:Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/application/e;->a(Lcom/panasonic/avc/cng/application/e;)Lcom/panasonic/avc/cng/application/e$e;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportViewModel;->a(Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportViewModel;)Lcom/panasonic/avc/cng/application/e$e;
 
     move-result-object v0
 
@@ -67,9 +67,9 @@
     .line 462
     iget-object v0, p0, Lcom/panasonic/avc/cng/application/e$b$2;->a:Lcom/panasonic/avc/cng/application/e$b;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/application/e$b;->a:Lcom/panasonic/avc/cng/application/e;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/application/e$b;->a:Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/application/e;->a(Lcom/panasonic/avc/cng/application/e;)Lcom/panasonic/avc/cng/application/e$e;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportViewModel;->a(Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportViewModel;)Lcom/panasonic/avc/cng/application/e$e;
 
     move-result-object v0
 
@@ -77,9 +77,9 @@
 
     iget-object v2, p0, Lcom/panasonic/avc/cng/application/e$b$2;->a:Lcom/panasonic/avc/cng/application/e$b;
 
-    iget-object v2, v2, Lcom/panasonic/avc/cng/application/e$b;->a:Lcom/panasonic/avc/cng/application/e;
+    iget-object v2, v2, Lcom/panasonic/avc/cng/application/e$b;->a:Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportViewModel;
 
-    invoke-static {v2}, Lcom/panasonic/avc/cng/application/e;->o(Lcom/panasonic/avc/cng/application/e;)Lcom/panasonic/avc/cng/model/f;
+    invoke-static {v2}, Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportViewModel;->o(Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportViewModel;)Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v2
 

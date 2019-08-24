@@ -45,7 +45,7 @@
 
     iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserActivity$a;->a:Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserActivity;->g(Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserActivity;)Lcom/panasonic/avc/cng/view/play/browser/d;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserActivity;->g(Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserActivity;)Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;
 
     move-result-object v0
 
@@ -56,11 +56,11 @@
 
     iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserActivity$a;->a:Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserActivity;->g(Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserActivity;)Lcom/panasonic/avc/cng/view/play/browser/d;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserActivity;->g(Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserActivity;)Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/browser/d;->h()Z
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;->h()Z
 
     move-result v0
 
@@ -71,11 +71,11 @@
 
     iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserActivity$a;->a:Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserActivity;->g(Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserActivity;)Lcom/panasonic/avc/cng/view/play/browser/d;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserActivity;->g(Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserActivity;)Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/browser/d;->t()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;->t()V
 
     .line 750
     :cond_0
@@ -101,7 +101,7 @@
 
     iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserActivity$a;->a:Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserActivity;->g(Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserActivity;)Lcom/panasonic/avc/cng/view/play/browser/d;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserActivity;->g(Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserActivity;)Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;
 
     move-result-object v0
 
@@ -112,13 +112,13 @@
 
     iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserActivity$a;->a:Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserActivity;->g(Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserActivity;)Lcom/panasonic/avc/cng/view/play/browser/d;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserActivity;->g(Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserActivity;)Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;
 
     move-result-object v0
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/play/browser/d;->d(Z)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;->d(Z)V
 
     goto :goto_0
 .end method

@@ -23,14 +23,14 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 import com.panasonic.avc.cng.core.bluetooth.BluetoothProvider;
-import com.panasonic.avc.cng.core.p046c.C1671s;
+import com.panasonic.avc.cng.core.p046c.Picmate;
 import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.C1892f;
 import com.panasonic.avc.cng.model.p051c.C1835a;
 import com.panasonic.avc.cng.model.p051c.C1860l;
 import com.panasonic.avc.cng.model.service.C1985b;
-import com.panasonic.avc.cng.model.service.C2253z;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
 import com.panasonic.avc.cng.view.bluetooth.C2550h;
 import java.io.IOException;
 import java.net.InetAddress;
@@ -226,7 +226,7 @@ public class C2266l {
 
     /* renamed from: a */
     public static boolean m9806a(Context context, boolean z) {
-        C1671s a = C2253z.m9676a(context);
+        Picmate a = ServiceFactory.m9676a(context);
         if (a == null) {
             return false;
         }
@@ -291,17 +291,17 @@ public class C2266l {
                 break;
             }
             try {
-                C2261g.m9771e("InitEmptyPort", String.format("TCP socket open[%d]", new Object[]{Integer.valueOf(i3)}));
+                ImageAppLog.info("InitEmptyPort", String.format("TCP socket open[%d]", new Object[]{Integer.valueOf(i3)}));
                 serverSocket = new ServerSocket(i3);
                 break;
             } catch (SocketException e) {
                 if (e.toString().contains("ENONET")) {
-                    C2261g.m9769c("", "SocketException ENONET ");
+                    ImageAppLog.error("", "SocketException ENONET ");
                     return i3;
                 }
-                C2261g.m9769c("SocketException ", String.format("TCP socket close[%d](%s)", new Object[]{Integer.valueOf(i3), e.toString()}));
+                ImageAppLog.error("SocketException ", String.format("TCP socket close[%d](%s)", new Object[]{Integer.valueOf(i3), e.toString()}));
             } catch (Exception e2) {
-                C2261g.m9769c("InitEmptyPort", String.format("TCP socket close[%d](%s)", new Object[]{Integer.valueOf(i3), e2.toString()}));
+                ImageAppLog.error("InitEmptyPort", String.format("TCP socket close[%d](%s)", new Object[]{Integer.valueOf(i3), e2.toString()}));
             }
             i3++;
         }
@@ -309,7 +309,7 @@ public class C2266l {
             return i3;
         }
         try {
-            C2261g.m9771e("InitEmptyPort", String.format("TCP socket close[%d]", new Object[]{Integer.valueOf(i3)}));
+            ImageAppLog.info("InitEmptyPort", String.format("TCP socket close[%d]", new Object[]{Integer.valueOf(i3)}));
             serverSocket.close();
             return i3;
         } catch (IOException e3) {
@@ -324,7 +324,7 @@ public class C2266l {
         try {
             serverSocket = new ServerSocket(i);
         } catch (Exception e) {
-            C2261g.m9769c("isEmptyPort", String.format("TCP socket error [%d](%s)", new Object[]{Integer.valueOf(i), e.toString()}));
+            ImageAppLog.error("isEmptyPort", String.format("TCP socket error [%d](%s)", new Object[]{Integer.valueOf(i), e.toString()}));
             serverSocket = null;
         }
         if (serverSocket != null) {
@@ -332,7 +332,7 @@ public class C2266l {
                 serverSocket.close();
                 return true;
             } catch (IOException e2) {
-                C2261g.m9769c("isEmptyPort", String.format("TCP socket error close[%d](%s)", new Object[]{Integer.valueOf(i), e2.toString()}));
+                ImageAppLog.error("isEmptyPort", String.format("TCP socket error close[%d](%s)", new Object[]{Integer.valueOf(i), e2.toString()}));
             }
         }
         return false;
@@ -343,7 +343,7 @@ public class C2266l {
         if (context == null || str == null || str2 == null) {
             return false;
         }
-        C2261g.m9771e("isEnableContentToIntent", str);
+        ImageAppLog.info("isEnableContentToIntent", str);
         Activity activity = (Activity) context;
         Intent intent = new Intent("android.intent.action.SEND");
         intent.setType(str2);

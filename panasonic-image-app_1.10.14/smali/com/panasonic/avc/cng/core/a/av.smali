@@ -37,7 +37,7 @@
 
 
 # virtual methods
-.method public a()Lcom/panasonic/avc/cng/model/c/h;
+.method public a()Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
     .locals 8
 
     .prologue
@@ -67,13 +67,13 @@
     move-result-object v3
 
     .line 72
-    new-instance v1, Lcom/panasonic/avc/cng/model/c/h;
+    new-instance v1, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
     const/4 v0, 0x0
 
     check-cast v0, [B
 
-    invoke-direct {v1, v0}, Lcom/panasonic/avc/cng/model/c/h;-><init>([B)V
+    invoke-direct {v1, v0}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;-><init>([B)V
 
     move-object v0, v1
 
@@ -86,7 +86,7 @@
     if-ge v1, v4, :cond_1
 
     .line 75
-    invoke-static {v3}, Lcom/panasonic/avc/cng/core/a/al;->b(Ljava/lang/String;)[B
+    invoke-static {v3}, Lcom/panasonic/avc/cng/core/a/StaticHttpCommand;->b(Ljava/lang/String;)[B
 
     move-result-object v4
 
@@ -98,7 +98,7 @@
 
     const-string v5, "Start() is null...."
 
-    invoke-static {v4, v5}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v4, v5}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 79
     invoke-virtual {p0, v7}, Lcom/panasonic/avc/cng/core/a/av;->a(I)V
@@ -111,12 +111,12 @@
 
     .line 83
     :cond_0
-    new-instance v0, Lcom/panasonic/avc/cng/model/c/h;
+    new-instance v0, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
-    invoke-direct {v0, v4}, Lcom/panasonic/avc/cng/model/c/h;-><init>([B)V
+    invoke-direct {v0, v4}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;-><init>([B)V
 
     .line 86
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/h;->a()Z
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;->a()Z
 
     move-result v5
 
@@ -129,7 +129,7 @@
 
     .line 89
     :cond_2
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/h;->b()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;->b()Ljava/lang/String;
 
     move-result-object v5
 
@@ -145,9 +145,9 @@
     invoke-virtual {p0, v7}, Lcom/panasonic/avc/cng/core/a/av;->a(I)V
 
     .line 97
-    new-instance v0, Lcom/panasonic/avc/cng/model/c/h;
+    new-instance v0, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
-    invoke-direct {v0, v4}, Lcom/panasonic/avc/cng/model/c/h;-><init>([B)V
+    invoke-direct {v0, v4}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;-><init>([B)V
 
     goto :goto_1
 
@@ -161,7 +161,7 @@
 
     new-array v4, v4, [Ljava/lang/Object;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/h;->b()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;->b()Ljava/lang/String;
 
     move-result-object v5
 
@@ -171,12 +171,12 @@
 
     move-result-object v2
 
-    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_2
 .end method
 
-.method public a(ILjava/lang/String;)Lcom/panasonic/avc/cng/model/c/h;
+.method public a(ILjava/lang/String;)Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
     .locals 9
 
     .prologue
@@ -217,13 +217,13 @@
     move-result-object v3
 
     .line 33
-    new-instance v1, Lcom/panasonic/avc/cng/model/c/h;
+    new-instance v1, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
     const/4 v0, 0x0
 
     check-cast v0, [B
 
-    invoke-direct {v1, v0}, Lcom/panasonic/avc/cng/model/c/h;-><init>([B)V
+    invoke-direct {v1, v0}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;-><init>([B)V
 
     move-object v0, v1
 
@@ -238,7 +238,7 @@
     .line 36
     const/16 v4, 0x2710
 
-    invoke-static {v3, v4}, Lcom/panasonic/avc/cng/core/a/al;->a(Ljava/lang/String;I)[B
+    invoke-static {v3, v4}, Lcom/panasonic/avc/cng/core/a/StaticHttpCommand;->a(Ljava/lang/String;I)[B
 
     move-result-object v4
 
@@ -250,7 +250,7 @@
 
     const-string v5, "SetPlayScene() is null...."
 
-    invoke-static {v4, v5}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v4, v5}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 40
     invoke-virtual {p0, v8}, Lcom/panasonic/avc/cng/core/a/av;->a(I)V
@@ -263,12 +263,12 @@
 
     .line 44
     :cond_0
-    new-instance v0, Lcom/panasonic/avc/cng/model/c/h;
+    new-instance v0, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
-    invoke-direct {v0, v4}, Lcom/panasonic/avc/cng/model/c/h;-><init>([B)V
+    invoke-direct {v0, v4}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;-><init>([B)V
 
     .line 47
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/h;->a()Z
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;->a()Z
 
     move-result v5
 
@@ -281,7 +281,7 @@
 
     .line 50
     :cond_2
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/h;->b()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;->b()Ljava/lang/String;
 
     move-result-object v5
 
@@ -297,9 +297,9 @@
     invoke-virtual {p0, v8}, Lcom/panasonic/avc/cng/core/a/av;->a(I)V
 
     .line 58
-    new-instance v0, Lcom/panasonic/avc/cng/model/c/h;
+    new-instance v0, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
-    invoke-direct {v0, v4}, Lcom/panasonic/avc/cng/model/c/h;-><init>([B)V
+    invoke-direct {v0, v4}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;-><init>([B)V
 
     goto :goto_1
 
@@ -311,7 +311,7 @@
 
     new-array v4, v7, [Ljava/lang/Object;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/h;->b()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;->b()Ljava/lang/String;
 
     move-result-object v5
 
@@ -321,12 +321,12 @@
 
     move-result-object v2
 
-    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_2
 .end method
 
-.method public a(J)Lcom/panasonic/avc/cng/model/c/h;
+.method public a(J)Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
     .locals 9
 
     .prologue
@@ -362,13 +362,13 @@
     move-result-object v3
 
     .line 151
-    new-instance v1, Lcom/panasonic/avc/cng/model/c/h;
+    new-instance v1, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
     const/4 v0, 0x0
 
     check-cast v0, [B
 
-    invoke-direct {v1, v0}, Lcom/panasonic/avc/cng/model/c/h;-><init>([B)V
+    invoke-direct {v1, v0}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;-><init>([B)V
 
     move-object v0, v1
 
@@ -381,7 +381,7 @@
     if-ge v1, v4, :cond_1
 
     .line 154
-    invoke-static {v3}, Lcom/panasonic/avc/cng/core/a/al;->b(Ljava/lang/String;)[B
+    invoke-static {v3}, Lcom/panasonic/avc/cng/core/a/StaticHttpCommand;->b(Ljava/lang/String;)[B
 
     move-result-object v4
 
@@ -393,7 +393,7 @@
 
     const-string v5, "SeekPlay() is null...."
 
-    invoke-static {v4, v5}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v4, v5}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 158
     invoke-virtual {p0, v8}, Lcom/panasonic/avc/cng/core/a/av;->a(I)V
@@ -406,12 +406,12 @@
 
     .line 162
     :cond_0
-    new-instance v0, Lcom/panasonic/avc/cng/model/c/h;
+    new-instance v0, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
-    invoke-direct {v0, v4}, Lcom/panasonic/avc/cng/model/c/h;-><init>([B)V
+    invoke-direct {v0, v4}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;-><init>([B)V
 
     .line 165
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/h;->a()Z
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;->a()Z
 
     move-result v5
 
@@ -424,7 +424,7 @@
 
     .line 168
     :cond_2
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/h;->b()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;->b()Ljava/lang/String;
 
     move-result-object v5
 
@@ -440,9 +440,9 @@
     invoke-virtual {p0, v8}, Lcom/panasonic/avc/cng/core/a/av;->a(I)V
 
     .line 176
-    new-instance v0, Lcom/panasonic/avc/cng/model/c/h;
+    new-instance v0, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
-    invoke-direct {v0, v4}, Lcom/panasonic/avc/cng/model/c/h;-><init>([B)V
+    invoke-direct {v0, v4}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;-><init>([B)V
 
     goto :goto_1
 
@@ -454,7 +454,7 @@
 
     new-array v4, v7, [Ljava/lang/Object;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/h;->b()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;->b()Ljava/lang/String;
 
     move-result-object v5
 
@@ -464,12 +464,12 @@
 
     move-result-object v2
 
-    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_2
 .end method
 
-.method public a(JZ)Lcom/panasonic/avc/cng/model/c/h;
+.method public a(JZ)Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
     .locals 9
 
     .prologue
@@ -516,13 +516,13 @@
     move-result-object v3
 
     .line 276
-    new-instance v1, Lcom/panasonic/avc/cng/model/c/h;
+    new-instance v1, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
     const/4 v0, 0x0
 
     check-cast v0, [B
 
-    invoke-direct {v1, v0}, Lcom/panasonic/avc/cng/model/c/h;-><init>([B)V
+    invoke-direct {v1, v0}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;-><init>([B)V
 
     move-object v0, v1
 
@@ -535,7 +535,7 @@
     if-ge v1, v4, :cond_2
 
     .line 279
-    invoke-static {v3}, Lcom/panasonic/avc/cng/core/a/al;->b(Ljava/lang/String;)[B
+    invoke-static {v3}, Lcom/panasonic/avc/cng/core/a/StaticHttpCommand;->b(Ljava/lang/String;)[B
 
     move-result-object v4
 
@@ -547,7 +547,7 @@
 
     const-string v5, "ISkip() is null...."
 
-    invoke-static {v4, v5}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v4, v5}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 283
     invoke-virtual {p0, v8}, Lcom/panasonic/avc/cng/core/a/av;->a(I)V
@@ -566,12 +566,12 @@
 
     .line 287
     :cond_1
-    new-instance v0, Lcom/panasonic/avc/cng/model/c/h;
+    new-instance v0, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
-    invoke-direct {v0, v4}, Lcom/panasonic/avc/cng/model/c/h;-><init>([B)V
+    invoke-direct {v0, v4}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;-><init>([B)V
 
     .line 290
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/h;->a()Z
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;->a()Z
 
     move-result v5
 
@@ -584,7 +584,7 @@
 
     .line 293
     :cond_3
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/h;->b()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;->b()Ljava/lang/String;
 
     move-result-object v5
 
@@ -600,9 +600,9 @@
     invoke-virtual {p0, v8}, Lcom/panasonic/avc/cng/core/a/av;->a(I)V
 
     .line 301
-    new-instance v0, Lcom/panasonic/avc/cng/model/c/h;
+    new-instance v0, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
-    invoke-direct {v0, v4}, Lcom/panasonic/avc/cng/model/c/h;-><init>([B)V
+    invoke-direct {v0, v4}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;-><init>([B)V
 
     goto :goto_2
 
@@ -614,7 +614,7 @@
 
     new-array v4, v7, [Ljava/lang/Object;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/h;->b()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;->b()Ljava/lang/String;
 
     move-result-object v5
 
@@ -624,12 +624,12 @@
 
     move-result-object v2
 
-    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_3
 .end method
 
-.method public b()Lcom/panasonic/avc/cng/model/c/h;
+.method public b()Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
     .locals 8
 
     .prologue
@@ -659,13 +659,13 @@
     move-result-object v3
 
     .line 111
-    new-instance v1, Lcom/panasonic/avc/cng/model/c/h;
+    new-instance v1, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
     const/4 v0, 0x0
 
     check-cast v0, [B
 
-    invoke-direct {v1, v0}, Lcom/panasonic/avc/cng/model/c/h;-><init>([B)V
+    invoke-direct {v1, v0}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;-><init>([B)V
 
     move-object v0, v1
 
@@ -678,7 +678,7 @@
     if-ge v1, v4, :cond_1
 
     .line 114
-    invoke-static {v3}, Lcom/panasonic/avc/cng/core/a/al;->b(Ljava/lang/String;)[B
+    invoke-static {v3}, Lcom/panasonic/avc/cng/core/a/StaticHttpCommand;->b(Ljava/lang/String;)[B
 
     move-result-object v4
 
@@ -690,7 +690,7 @@
 
     const-string v5, "Pause() is null...."
 
-    invoke-static {v4, v5}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v4, v5}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 118
     invoke-virtual {p0, v7}, Lcom/panasonic/avc/cng/core/a/av;->a(I)V
@@ -703,12 +703,12 @@
 
     .line 122
     :cond_0
-    new-instance v0, Lcom/panasonic/avc/cng/model/c/h;
+    new-instance v0, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
-    invoke-direct {v0, v4}, Lcom/panasonic/avc/cng/model/c/h;-><init>([B)V
+    invoke-direct {v0, v4}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;-><init>([B)V
 
     .line 125
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/h;->a()Z
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;->a()Z
 
     move-result v5
 
@@ -721,7 +721,7 @@
 
     .line 128
     :cond_2
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/h;->b()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;->b()Ljava/lang/String;
 
     move-result-object v5
 
@@ -737,9 +737,9 @@
     invoke-virtual {p0, v7}, Lcom/panasonic/avc/cng/core/a/av;->a(I)V
 
     .line 136
-    new-instance v0, Lcom/panasonic/avc/cng/model/c/h;
+    new-instance v0, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
-    invoke-direct {v0, v4}, Lcom/panasonic/avc/cng/model/c/h;-><init>([B)V
+    invoke-direct {v0, v4}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;-><init>([B)V
 
     goto :goto_1
 
@@ -753,7 +753,7 @@
 
     new-array v4, v4, [Ljava/lang/Object;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/h;->b()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;->b()Ljava/lang/String;
 
     move-result-object v5
 
@@ -763,12 +763,12 @@
 
     move-result-object v2
 
-    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_2
 .end method
 
-.method public b(J)Lcom/panasonic/avc/cng/model/c/h;
+.method public b(J)Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
     .locals 9
 
     .prologue
@@ -804,13 +804,13 @@
     move-result-object v3
 
     .line 191
-    new-instance v1, Lcom/panasonic/avc/cng/model/c/h;
+    new-instance v1, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
     const/4 v0, 0x0
 
     check-cast v0, [B
 
-    invoke-direct {v1, v0}, Lcom/panasonic/avc/cng/model/c/h;-><init>([B)V
+    invoke-direct {v1, v0}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;-><init>([B)V
 
     move-object v0, v1
 
@@ -823,7 +823,7 @@
     if-ge v1, v4, :cond_1
 
     .line 194
-    invoke-static {v3}, Lcom/panasonic/avc/cng/core/a/al;->b(Ljava/lang/String;)[B
+    invoke-static {v3}, Lcom/panasonic/avc/cng/core/a/StaticHttpCommand;->b(Ljava/lang/String;)[B
 
     move-result-object v4
 
@@ -835,7 +835,7 @@
 
     const-string v5, "SeekPause() is null...."
 
-    invoke-static {v4, v5}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v4, v5}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 198
     invoke-virtual {p0, v8}, Lcom/panasonic/avc/cng/core/a/av;->a(I)V
@@ -848,12 +848,12 @@
 
     .line 202
     :cond_0
-    new-instance v0, Lcom/panasonic/avc/cng/model/c/h;
+    new-instance v0, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
-    invoke-direct {v0, v4}, Lcom/panasonic/avc/cng/model/c/h;-><init>([B)V
+    invoke-direct {v0, v4}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;-><init>([B)V
 
     .line 205
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/h;->a()Z
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;->a()Z
 
     move-result v5
 
@@ -866,7 +866,7 @@
 
     .line 208
     :cond_2
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/h;->b()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;->b()Ljava/lang/String;
 
     move-result-object v5
 
@@ -882,9 +882,9 @@
     invoke-virtual {p0, v8}, Lcom/panasonic/avc/cng/core/a/av;->a(I)V
 
     .line 216
-    new-instance v0, Lcom/panasonic/avc/cng/model/c/h;
+    new-instance v0, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
-    invoke-direct {v0, v4}, Lcom/panasonic/avc/cng/model/c/h;-><init>([B)V
+    invoke-direct {v0, v4}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;-><init>([B)V
 
     goto :goto_1
 
@@ -896,7 +896,7 @@
 
     new-array v4, v7, [Ljava/lang/Object;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/h;->b()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;->b()Ljava/lang/String;
 
     move-result-object v5
 
@@ -906,12 +906,12 @@
 
     move-result-object v2
 
-    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_2
 .end method
 
-.method public c()Lcom/panasonic/avc/cng/model/c/h;
+.method public c()Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
     .locals 9
 
     .prologue
@@ -943,13 +943,13 @@
     move-result-object v3
 
     .line 230
-    new-instance v1, Lcom/panasonic/avc/cng/model/c/h;
+    new-instance v1, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
     const/4 v0, 0x0
 
     check-cast v0, [B
 
-    invoke-direct {v1, v0}, Lcom/panasonic/avc/cng/model/c/h;-><init>([B)V
+    invoke-direct {v1, v0}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;-><init>([B)V
 
     move-object v0, v1
 
@@ -960,7 +960,7 @@
     if-ge v1, v7, :cond_1
 
     .line 233
-    invoke-static {v3}, Lcom/panasonic/avc/cng/core/a/al;->b(Ljava/lang/String;)[B
+    invoke-static {v3}, Lcom/panasonic/avc/cng/core/a/StaticHttpCommand;->b(Ljava/lang/String;)[B
 
     move-result-object v4
 
@@ -972,7 +972,7 @@
 
     const-string v5, "Stop() is null...."
 
-    invoke-static {v4, v5}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v4, v5}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 237
     invoke-virtual {p0, v8}, Lcom/panasonic/avc/cng/core/a/av;->a(I)V
@@ -985,12 +985,12 @@
 
     .line 241
     :cond_0
-    new-instance v0, Lcom/panasonic/avc/cng/model/c/h;
+    new-instance v0, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
-    invoke-direct {v0, v4}, Lcom/panasonic/avc/cng/model/c/h;-><init>([B)V
+    invoke-direct {v0, v4}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;-><init>([B)V
 
     .line 244
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/h;->a()Z
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;->a()Z
 
     move-result v5
 
@@ -1003,7 +1003,7 @@
 
     .line 247
     :cond_2
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/h;->b()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;->b()Ljava/lang/String;
 
     move-result-object v5
 
@@ -1019,9 +1019,9 @@
     invoke-virtual {p0, v8}, Lcom/panasonic/avc/cng/core/a/av;->a(I)V
 
     .line 255
-    new-instance v0, Lcom/panasonic/avc/cng/model/c/h;
+    new-instance v0, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
-    invoke-direct {v0, v4}, Lcom/panasonic/avc/cng/model/c/h;-><init>([B)V
+    invoke-direct {v0, v4}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;-><init>([B)V
 
     goto :goto_1
 
@@ -1033,7 +1033,7 @@
 
     new-array v4, v7, [Ljava/lang/Object;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/h;->b()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;->b()Ljava/lang/String;
 
     move-result-object v5
 
@@ -1043,7 +1043,7 @@
 
     move-result-object v2
 
-    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_2
 .end method

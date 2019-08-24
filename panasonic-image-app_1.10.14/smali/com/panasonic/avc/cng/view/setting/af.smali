@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private c:Lcom/panasonic/avc/cng/view/parts/t;
+.field private c:Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
 .field private d:Lcom/panasonic/avc/cng/view/parts/t$e;
 
@@ -38,7 +38,7 @@
 
     .prologue
     .line 57
-    invoke-static {}, Lcom/panasonic/avc/cng/model/service/z;->f()Lcom/panasonic/avc/cng/model/service/a;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->f()Lcom/panasonic/avc/cng/model/service/a;
 
     move-result-object v0
 
@@ -56,7 +56,7 @@
 
     .line 67
     :cond_0
-    new-instance v0, Lcom/panasonic/avc/cng/view/parts/t;
+    new-instance v0, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/af;->a:Landroid/content/Context;
 
@@ -66,9 +66,9 @@
 
     const/4 v4, 0x1
 
-    invoke-direct {v0, v1, v2, v3, v4}, Lcom/panasonic/avc/cng/view/parts/t;-><init>(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/parts/t$e;Z)V
+    invoke-direct {v0, v1, v2, v3, v4}, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;-><init>(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/parts/t$e;Z)V
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/view/setting/af;->c:Lcom/panasonic/avc/cng/view/parts/t;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/view/setting/af;->c:Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
     .line 69
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/af;->a:Landroid/content/Context;
@@ -77,7 +77,7 @@
 
     iget-object v2, p0, Lcom/panasonic/avc/cng/view/setting/af;->d:Lcom/panasonic/avc/cng/view/parts/t$e;
 
-    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/model/service/z;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/parts/t$e;)Lcom/panasonic/avc/cng/model/service/a;
+    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/parts/t$e;)Lcom/panasonic/avc/cng/model/service/a;
 
     move-result-object v0
 
@@ -106,12 +106,12 @@
     invoke-virtual {p0}, Lcom/panasonic/avc/cng/view/setting/af;->e()V
 
     .line 87
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/af;->c:Lcom/panasonic/avc/cng/view/parts/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/af;->c:Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/parts/t;->a()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->a()V
 
     .line 89
-    invoke-static {}, Lcom/panasonic/avc/cng/model/service/z;->e()V
+    invoke-static {}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->e()V
 
     .line 93
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/af;->f:Lcom/panasonic/avc/cng/model/service/a;
@@ -127,7 +127,7 @@
     :cond_0
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/af;->f:Lcom/panasonic/avc/cng/model/service/a;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/z;->a(Lcom/panasonic/avc/cng/model/service/a;)V
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->a(Lcom/panasonic/avc/cng/model/service/a;)V
 
     .line 103
     invoke-super {p0}, Lcom/panasonic/avc/cng/a/a;->a()V
@@ -161,7 +161,7 @@
     iput-object p3, p0, Lcom/panasonic/avc/cng/view/setting/af;->d:Lcom/panasonic/avc/cng/view/parts/t$e;
 
     .line 150
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/af;->c:Lcom/panasonic/avc/cng/view/parts/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/af;->c:Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/af;->a:Landroid/content/Context;
 
@@ -169,7 +169,7 @@
 
     iget-object v3, p0, Lcom/panasonic/avc/cng/view/setting/af;->d:Lcom/panasonic/avc/cng/view/parts/t$e;
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/parts/t;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/parts/t$e;)V
+    invoke-virtual {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/parts/t$e;)V
 
     .line 151
     return-void
@@ -187,9 +187,9 @@
     .line 181
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/af;->e:Lcom/panasonic/avc/cng/model/service/a/k;
 
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/af;->c:Lcom/panasonic/avc/cng/view/parts/t;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/af;->c:Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/parts/t;->p()Ljava/util/List;
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->p()Ljava/util/List;
 
     move-result-object v1
 
@@ -228,12 +228,12 @@
     return-void
 .end method
 
-.method public c()Lcom/panasonic/avc/cng/view/parts/t;
+.method public c()Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
     .locals 1
 
     .prologue
     .line 111
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/af;->c:Lcom/panasonic/avc/cng/view/parts/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/af;->c:Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
     return-object v0
 .end method
@@ -243,13 +243,13 @@
 
     .prologue
     .line 123
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/af;->c:Lcom/panasonic/avc/cng/view/parts/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/af;->c:Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
     const/4 v1, 0x3
 
     const-string v2, "0"
 
-    invoke-virtual {v0, v1, v2}, Lcom/panasonic/avc/cng/view/parts/t;->a(ILjava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->a(ILjava/lang/String;)V
 
     .line 124
     return-void
@@ -260,9 +260,9 @@
 
     .prologue
     .line 157
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/af;->c:Lcom/panasonic/avc/cng/view/parts/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/af;->c:Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/parts/t;->c()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->c()V
 
     .line 158
     return-void
@@ -299,9 +299,9 @@
     if-ne v0, v1, :cond_0
 
     .line 206
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/af;->c:Lcom/panasonic/avc/cng/view/parts/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/af;->c:Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/parts/t;->d()Ljava/util/List;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->d()Ljava/util/List;
 
     move-result-object v0
 

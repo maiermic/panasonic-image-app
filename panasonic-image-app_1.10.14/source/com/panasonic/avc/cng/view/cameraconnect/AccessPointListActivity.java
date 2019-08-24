@@ -26,14 +26,14 @@ import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.C1892f;
 import com.panasonic.avc.cng.model.service.C2137j.C2138a;
-import com.panasonic.avc.cng.model.service.C2253z;
-import com.panasonic.avc.cng.util.C2261g;
-import com.panasonic.avc.cng.view.cameraconnect.C2666e.C2674a;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
+import com.panasonic.avc.cng.util.ImageAppLog;
+import com.panasonic.avc.cng.view.cameraconnect.CameraConnectViewModel.C2674a;
 import com.panasonic.avc.cng.view.p072a.C2316j;
 import com.panasonic.avc.cng.view.p073b.C2317a.C2323a;
 import com.panasonic.avc.cng.view.p073b.C2317a.C2325c;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
 import com.panasonic.avc.cng.view.p073b.C2337e;
 import com.panasonic.avc.cng.view.p073b.C2376f.C2378b;
 import com.panasonic.avc.cng.view.setting.C5741i;
@@ -111,79 +111,79 @@ public class AccessPointListActivity extends C5741i {
 
         /* renamed from: b */
         public void mo5669b() {
-            C2261g.m9763a("AccessPointListActivity", "onBleConnectStart");
+            ImageAppLog.debug("AccessPointListActivity", "onBleConnectStart");
         }
 
         /* renamed from: a */
         public void mo5668a(boolean z) {
-            C2261g.m9763a("AccessPointListActivity", "onBleConnected");
+            ImageAppLog.debug("AccessPointListActivity", "onBleConnected");
         }
 
         /* renamed from: a */
         public void mo5662a(int i) {
-            C2261g.m9763a("AccessPointListActivity", "onBleDisconnected");
-            C2261g.m9769c("AccessPointListActivity", "status:" + i);
+            ImageAppLog.debug("AccessPointListActivity", "onBleDisconnected");
+            ImageAppLog.error("AccessPointListActivity", "status:" + i);
         }
 
         /* renamed from: a */
         public void mo5663a(BluetoothDevice bluetoothDevice, String str, String str2, String str3) {
-            C2261g.m9769c("AccessPointListActivity", "onBleScanResult: devName = " + str + ", publicAddress = " + str2 + ", state = " + str3);
+            ImageAppLog.error("AccessPointListActivity", "onBleScanResult: devName = " + str + ", publicAddress = " + str2 + ", state = " + str3);
         }
 
         /* renamed from: a */
         public void mo5667a(UUID uuid, int i, Bundle bundle) {
-            C2261g.m9763a("AccessPointListActivity", "onBleReadEnd");
+            ImageAppLog.debug("AccessPointListActivity", "onBleReadEnd");
         }
 
         /* renamed from: a */
         public void mo5666a(UUID uuid, int i) {
-            C2261g.m9763a("AccessPointListActivity", "onBleWriteEnd");
+            ImageAppLog.debug("AccessPointListActivity", "onBleWriteEnd");
         }
 
         /* renamed from: a */
         public void mo5664a(Bundle bundle, String str) {
-            C2261g.m9763a("AccessPointListActivity", "onBleNotification");
+            ImageAppLog.debug("AccessPointListActivity", "onBleNotification");
         }
 
         /* renamed from: d */
         public void mo5672d() {
-            C2261g.m9763a("AccessPointListActivity", "onBleConnectError");
+            ImageAppLog.debug("AccessPointListActivity", "onBleConnectError");
         }
 
         /* renamed from: a */
         public void mo5661a() {
-            C2261g.m9763a("AccessPointListActivity", "onBleScanStart");
+            ImageAppLog.debug("AccessPointListActivity", "onBleScanStart");
         }
 
         /* renamed from: c */
         public void mo5671c() {
-            C2261g.m9763a("AccessPointListActivity", "onBleConnectTimeOut");
+            ImageAppLog.debug("AccessPointListActivity", "onBleConnectTimeOut");
         }
 
         /* renamed from: a */
         public void mo5665a(String str) {
-            C2261g.m9763a("AccessPointListActivity", "onBleCopyStatus");
-            C2261g.m9763a("AccessPointListActivity", "state:" + str);
+            ImageAppLog.debug("AccessPointListActivity", "onBleCopyStatus");
+            ImageAppLog.debug("AccessPointListActivity", "state:" + str);
         }
 
         /* renamed from: b */
         public void mo5670b(boolean z) {
-            C2261g.m9763a("AccessPointListActivity", "onBleNotificationEnable");
+            ImageAppLog.debug("AccessPointListActivity", "onBleNotificationEnable");
         }
 
         /* renamed from: e */
         public void mo5673e() {
-            C2261g.m9763a("AccessPointListActivity", "onBleServicePrepared");
+            ImageAppLog.debug("AccessPointListActivity", "onBleServicePrepared");
         }
 
         /* renamed from: f */
         public void mo5674f() {
-            C2261g.m9763a("AccessPointListActivity", "onBleScanResultError");
+            ImageAppLog.debug("AccessPointListActivity", "onBleScanResultError");
         }
 
         /* renamed from: g */
         public void mo5675g() {
-            C2261g.m9763a("AccessPointListActivity", "onAutoSendAcctrlDone");
+            ImageAppLog.debug("AccessPointListActivity", "onAutoSendAcctrlDone");
         }
     }
 
@@ -194,7 +194,7 @@ public class AccessPointListActivity extends C5741i {
 
         /* renamed from: a */
         public void mo6349a() {
-            C2261g.m9771e("AccessPointListActivity", "OnStartStartWifiCheck()");
+            ImageAppLog.info("AccessPointListActivity", "OnStartStartWifiCheck()");
             if (!AccessPointListActivity.this.f8048c) {
                 AccessPointListActivity.this.showSimpleDlg(C2328a.ON_PROGRESS, null);
             }
@@ -203,7 +203,7 @@ public class AccessPointListActivity extends C5741i {
         /* renamed from: a */
         public void mo6351a(int i, boolean z) {
             boolean z2 = true;
-            C2261g.m9771e("AccessPointListActivity", String.format("OnFinishStartWifiCheck(cancel=%b)", new Object[]{Boolean.valueOf(z)}));
+            ImageAppLog.info("AccessPointListActivity", String.format("OnFinishStartWifiCheck(cancel=%b)", new Object[]{Boolean.valueOf(z)}));
             if (!AccessPointListActivity.this.f8048c) {
                 AccessPointListActivity.this.dismissAllDlg();
             }
@@ -238,7 +238,7 @@ public class AccessPointListActivity extends C5741i {
                             return;
                         } else if (new DlnaWrapper().mo4273e() != 0) {
                             AccessPointListActivity.this.f8047b.mo6636b(false, false);
-                            C2253z.m9688b(AccessPointListActivity.this._context, true).mo5328e();
+                            ServiceFactory.m9688b(AccessPointListActivity.this._context, true).mo5328e();
                             return;
                         } else {
                             return;
@@ -251,17 +251,17 @@ public class AccessPointListActivity extends C5741i {
 
         /* renamed from: b */
         public void mo6359b() {
-            C2261g.m9771e("AccessPointListActivity", "OnStartSetWifiEnable()");
+            ImageAppLog.info("AccessPointListActivity", "OnStartSetWifiEnable()");
             AccessPointListActivity.this.showSimpleDlg(C2328a.ON_PROGRESS, null);
         }
 
         /* renamed from: a */
         public void mo6356a(boolean z, int i, boolean z2) {
-            C2261g.m9771e("AccessPointListActivity", String.format("OnFinishSetWifiEnable(cancel=%b)", new Object[]{Boolean.valueOf(z2)}));
+            ImageAppLog.info("AccessPointListActivity", String.format("OnFinishSetWifiEnable(cancel=%b)", new Object[]{Boolean.valueOf(z2)}));
             AccessPointListActivity.this.dismissAllDlg();
             if (!z2) {
                 if (!z) {
-                    C2331d.m10114a((Activity) AccessPointListActivity.this, C2328a.ON_WIFI_ENABLE_ERROR, (Bundle) null);
+                    DialogFactory.m10114a((Activity) AccessPointListActivity.this, C2328a.ON_WIFI_ENABLE_ERROR, (Bundle) null);
                 } else if (AccessPointListActivity.this.f8047b != null) {
                     AccessPointListActivity.this.f8047b.mo6637c(10000);
                 }
@@ -270,13 +270,13 @@ public class AccessPointListActivity extends C5741i {
 
         /* renamed from: c */
         public void mo6361c() {
-            C2261g.m9771e("AccessPointListActivity", "OnStartUpdateAccessPointList()");
+            ImageAppLog.info("AccessPointListActivity", "OnStartUpdateAccessPointList()");
             AccessPointListActivity.this.showSimpleDlg(C2328a.ON_SEARCHING_AP, null);
         }
 
         /* renamed from: a */
         public void mo6353a(List<C2649a> list) {
-            C2261g.m9771e("AccessPointListActivity", "OnFinishUpdateAccessPointList()");
+            ImageAppLog.info("AccessPointListActivity", "OnFinishUpdateAccessPointList()");
             AccessPointListActivity.this.dismissAllDlg();
             if (AccessPointListActivity.this.f8048c) {
                 if (list != null) {
@@ -327,7 +327,7 @@ public class AccessPointListActivity extends C5741i {
 
         /* renamed from: d */
         public void mo6363d() {
-            C2261g.m9771e("AccessPointListActivity", "OnStartConnectAccessPoint()");
+            ImageAppLog.info("AccessPointListActivity", "OnStartConnectAccessPoint()");
         }
 
         /* renamed from: e */
@@ -353,12 +353,12 @@ public class AccessPointListActivity extends C5741i {
 
         /* renamed from: a */
         public void mo6352a(C2649a aVar, int i, boolean z, boolean z2) {
-            C2261g.m9771e("AccessPointListActivity", String.format("OnFinishConnectAccessPoint(cancel=%b)", new Object[]{Boolean.valueOf(z)}));
+            ImageAppLog.info("AccessPointListActivity", String.format("OnFinishConnectAccessPoint(cancel=%b)", new Object[]{Boolean.valueOf(z)}));
             if (z) {
                 AccessPointListActivity.this.dismissAllDlg();
                 if (z2) {
                     mo6365e();
-                    C2253z.m9688b(AccessPointListActivity.this._context, false).mo5327d();
+                    ServiceFactory.m9688b(AccessPointListActivity.this._context, false).mo5327d();
                 }
             } else if (i == 3) {
                 if (AccessPointListActivity.this.f8047b == null) {
@@ -387,13 +387,13 @@ public class AccessPointListActivity extends C5741i {
 
         /* renamed from: f */
         public void mo6366f() {
-            C2261g.m9771e("AccessPointListActivity", "OnStartSearchCamera()");
+            ImageAppLog.info("AccessPointListActivity", "OnStartSearchCamera()");
             AccessPointListActivity.this.showSimpleDlg(C2328a.ON_PROGRESS, null);
         }
 
         /* renamed from: a */
         public void mo6354a(List<C1892f> list, boolean z, boolean z2) {
-            C2261g.m9771e("AccessPointListActivity", String.format("OnFinishSearchCamera(cancel=%b)", new Object[]{Boolean.valueOf(z)}));
+            ImageAppLog.info("AccessPointListActivity", String.format("OnFinishSearchCamera(cancel=%b)", new Object[]{Boolean.valueOf(z)}));
             if (z2) {
                 String str = Build.MODEL;
                 if (str != null && (str.equals("SO-01F") || str.equals("SO-01J"))) {
@@ -406,7 +406,7 @@ public class AccessPointListActivity extends C5741i {
                 } else if (VERSION.SDK_INT < 25) {
                     mo6365e();
                 }
-                C2253z.m9688b(AccessPointListActivity.this._context, false).mo5327d();
+                ServiceFactory.m9688b(AccessPointListActivity.this._context, false).mo5327d();
             }
             if (z) {
                 AccessPointListActivity.this.dismissAllDlg();
@@ -432,12 +432,12 @@ public class AccessPointListActivity extends C5741i {
 
         /* renamed from: g */
         public void mo6367g() {
-            C2261g.m9771e("AccessPointListActivity", "OnStartConnectCamera()");
+            ImageAppLog.info("AccessPointListActivity", "OnStartConnectCamera()");
         }
 
         /* renamed from: a */
         public void mo6358a(boolean z, C1892f fVar, boolean z2, int i) {
-            C2261g.m9771e("AccessPointListActivity", String.format("OnFinishConnectCamera(cancel=%b)", new Object[]{Boolean.valueOf(z2)}));
+            ImageAppLog.info("AccessPointListActivity", String.format("OnFinishConnectCamera(cancel=%b)", new Object[]{Boolean.valueOf(z2)}));
             if (!z2) {
                 if (i == 7 || i == 9 || i == 5 || i == 6 || i == 8) {
                     AccessPointListActivity.this.dismissAllDlg();
@@ -445,35 +445,35 @@ public class AccessPointListActivity extends C5741i {
                 if (!z) {
                     if (i == 1) {
                         if (fVar == null || !fVar.mo4886a()) {
-                            C2261g.m9760a(2101249, "AlreadyConnected MOVIE");
+                            ImageAppLog.m9760a(2101249, "AlreadyConnected MOVIE");
                             AccessPointListActivity.this.showSimpleDlg(C2328a.WiFiFailedAlreadyConnected, null);
                             return;
                         }
-                        C2261g.m9760a(2101249, "AlreadyConnected DSC");
+                        ImageAppLog.m9760a(2101249, "AlreadyConnected DSC");
                         AccessPointListActivity.this.showSimpleDlg(C2328a.WiFiFailedAlreadyConnected_DSC, null);
                     } else if (i == 2) {
-                        C2261g.m9760a(2101249, "UnsupportDevice");
+                        ImageAppLog.m9760a(2101249, "UnsupportDevice");
                         AccessPointListActivity.this.showSimpleDlg(C2328a.UnsupportDevice, null);
                     } else if (i == 7) {
                         if (AccessPointListActivity.this.f8050e != null) {
-                            C2261g.m9760a(2101249, "PWDLESS_ERROR");
+                            ImageAppLog.m9760a(2101249, "PWDLESS_ERROR");
                             Bundle bundle = new Bundle();
                             bundle.putString(C2378b.MESSAGE_STRING.name(), String.format(AccessPointListActivity.this.getString(R.string.msg_pwless_authentification_fail), new Object[]{AccessPointListActivity.this.f8050e}));
                             AccessPointListActivity.this.showSimpleDlg(C2328a.PWDLESS_ERROR, bundle);
                         }
                     } else if (i == 9) {
-                        C2261g.m9760a(2101249, "PWDLESS_ERROR_TIMEOUT");
+                        ImageAppLog.m9760a(2101249, "PWDLESS_ERROR_TIMEOUT");
                         AccessPointListActivity.this.showSimpleDlg(C2328a.PWDLESS_ERROR_TIMEOUT, null);
                     } else if (i == 5) {
                         if (AccessPointListActivity.this.f8050e != null) {
-                            C2261g.m9760a(2101249, "PWDLESS_REFUSED");
+                            ImageAppLog.m9760a(2101249, "PWDLESS_REFUSED");
                             Bundle bundle2 = new Bundle();
                             bundle2.putString(C2378b.MESSAGE_STRING.name(), String.format(AccessPointListActivity.this.getString(R.string.msg_pwless_authentification_deny), new Object[]{AccessPointListActivity.this.f8050e}));
                             AccessPointListActivity.this.showSimpleDlg(C2328a.PWDLESS_REFUSED, bundle2);
                         }
                     } else if (i == 6) {
                         if (AccessPointListActivity.this.f8050e != null) {
-                            C2261g.m9760a(2101249, "PWDLESS_OTHER_REQUEST");
+                            ImageAppLog.m9760a(2101249, "PWDLESS_OTHER_REQUEST");
                             Bundle bundle3 = new Bundle();
                             bundle3.putString(C2378b.MESSAGE_STRING.name(), String.format(AccessPointListActivity.this.getString(R.string.msg_pwless_other_sp_authentification), new Object[]{AccessPointListActivity.this.f8050e}));
                             AccessPointListActivity.this.showSimpleDlg(C2328a.PWDLESS_OTHER_REQUEST, bundle3);
@@ -482,42 +482,42 @@ public class AccessPointListActivity extends C5741i {
                         if (AccessPointListActivity.this.f8047b != null) {
                             if (fVar != null) {
                                 PreferenceManager.getDefaultSharedPreferences(AccessPointListActivity.this._context).edit().putString("CurrentConnectedSSID", fVar.f5687i.mo4299b()).apply();
-                                C2261g.m9760a(2101249, fVar.f5685g);
+                                ImageAppLog.m9760a(2101249, fVar.f5685g);
                             }
-                            C2261g.m9760a(2105346, "");
+                            ImageAppLog.m9760a(2105346, "");
                             AccessPointListActivity.this.f8047b.mo6647n();
-                            C2253z.m9723r(AccessPointListActivity.this._context);
+                            ServiceFactory.m9723r(AccessPointListActivity.this._context);
                         }
                     } else if (i == 10) {
                         if (AccessPointListActivity.this.f8047b != null) {
-                            C2261g.m9760a(2101249, fVar.f5685g);
-                            C2261g.m9760a(2105346, "");
+                            ImageAppLog.m9760a(2101249, fVar.f5685g);
+                            ImageAppLog.m9760a(2105346, "");
                             AccessPointListActivity.this.f8047b.mo6647n();
                         }
                     } else if (i != 12) {
-                        C2261g.m9760a(2101249, "ON_ERROR_CGI_ON_CONNECT");
+                        ImageAppLog.m9760a(2101249, "ON_ERROR_CGI_ON_CONNECT");
                         AccessPointListActivity.this.showSimpleDlg(C2328a.ON_ERROR_CGI_ON_CONNECT, null);
                     } else if (AccessPointListActivity.this.f8047b != null) {
                         AccessPointListActivity.this._handler.post(new Runnable() {
                             public void run() {
-                                C2331d.m10114a((Activity) AccessPointListActivity.this, C2328a.ON_BT_AUTOSEND_COMMAND_ERROR, (Bundle) null);
+                                DialogFactory.m10114a((Activity) AccessPointListActivity.this, C2328a.ON_BT_AUTOSEND_COMMAND_ERROR, (Bundle) null);
                             }
                         });
                     }
                 } else if (i == 3) {
-                    C2261g.m9760a(2101249, "ON_DISCONNECT_BY_HIGH_TEMP_FINISH");
+                    ImageAppLog.m9760a(2101249, "ON_DISCONNECT_BY_HIGH_TEMP_FINISH");
                     AccessPointListActivity.this.showSimpleDlg(C2328a.ON_DISCONNECT_BY_HIGH_TEMP_FINISH, null);
                 } else if (fVar == null) {
                 } else {
                     if (!fVar.mo4886a() || !C1712b.m6920d().mo4907a(fVar)) {
-                        C2261g.m9760a(2101249, fVar.f5685g);
+                        ImageAppLog.m9760a(2101249, fVar.f5685g);
                         AccessPointListActivity.this.finish();
                         return;
                     }
                     C1712b.m6919c().mo4897a(null);
                     if (C1347a.m5306a(AccessPointListActivity.this._context)) {
                         Intent intent = new Intent(AccessPointListActivity.this._context, LumixLinkCallActivity.class);
-                        C2261g.m9760a(2105345, "LUMIX LINK");
+                        ImageAppLog.m9760a(2105345, "LUMIX LINK");
                         try {
                             AccessPointListActivity.this.startActivity(intent);
                             AccessPointListActivity.this.finish();
@@ -526,7 +526,7 @@ public class AccessPointListActivity extends C5741i {
                     } else {
                         AccessPointListActivity.this.m10806b();
                         AccessPointListActivity.this.showSimpleDlg(C2328a.ON_NEED_LUMIX_LINK, null);
-                        C2261g.m9760a(2101249, "LUMIX LINK NO INSTALL");
+                        ImageAppLog.m9760a(2101249, "LUMIX LINK NO INSTALL");
                     }
                 }
             } else if (AccessPointListActivity.this.f8050e != null) {
@@ -536,13 +536,13 @@ public class AccessPointListActivity extends C5741i {
 
         /* renamed from: h */
         public void mo6368h() {
-            C2261g.m9771e("AccessPointListActivity", "OnStartWaitApConnect()");
+            ImageAppLog.info("AccessPointListActivity", "OnStartWaitApConnect()");
             AccessPointListActivity.this.showSimpleDlg(C2328a.ON_PROGRESS, null);
         }
 
         /* renamed from: i */
         public void mo6369i() {
-            C2261g.m9771e("AccessPointListActivity", "OnFinishWaitApConnect()");
+            ImageAppLog.info("AccessPointListActivity", "OnFinishWaitApConnect()");
             AccessPointListActivity.this.dismissAllDlg();
             if (AccessPointListActivity.this.f8047b != null) {
                 AccessPointListActivity.this.f8047b.mo6639g(!AccessPointListActivity.this.f8048c);
@@ -636,7 +636,7 @@ public class AccessPointListActivity extends C5741i {
 
     /* access modifiers changed from: protected */
     public void onResume() {
-        C2261g.m9763a("AccessPointListActivity", "onResume()");
+        ImageAppLog.debug("AccessPointListActivity", "onResume()");
         super.onResume();
         if (this.f8047b != null) {
             this.f8048c = true;
@@ -646,7 +646,7 @@ public class AccessPointListActivity extends C5741i {
 
     /* access modifiers changed from: protected */
     public void onPause() {
-        C2261g.m9763a("AccessPointListActivity", "onPause()");
+        ImageAppLog.debug("AccessPointListActivity", "onPause()");
         super.onPause();
     }
 
@@ -670,16 +670,16 @@ public class AccessPointListActivity extends C5741i {
     public Object onDmsWatchEvent(int i) {
         switch (i) {
             case 1:
-                C2331d.m10115a((Activity) this, C2328a.DmsReceiving, (Bundle) null, (C2325c) new C2325c() {
+                DialogFactory.m10115a((Activity) this, C2328a.DmsReceiving, (Bundle) null, (C2325c) new C2325c() {
                     /* renamed from: a */
                     public void mo6131a() {
-                        C2331d.m10129c((Activity) AccessPointListActivity.this, C2328a.DmsReceiving, (int) R.id.text, (int) R.string.cmn_msg_now_recieve_images_from_camera);
+                        DialogFactory.m10129c((Activity) AccessPointListActivity.this, C2328a.DmsReceiving, (int) R.id.text, (int) R.string.cmn_msg_now_recieve_images_from_camera);
                     }
                 });
                 return null;
             case 2:
-                if (C2331d.m10125b((Activity) this, C2328a.DmsReceiving)) {
-                    C2331d.m10102a((Activity) this, C2328a.DmsReceiving);
+                if (DialogFactory.m10125b((Activity) this, C2328a.DmsReceiving)) {
+                    DialogFactory.m10102a((Activity) this, C2328a.DmsReceiving);
                 }
                 return new C5759a();
             case 3:
@@ -704,7 +704,7 @@ public class AccessPointListActivity extends C5741i {
 
     /* access modifiers changed from: protected */
     public void onActivityResult(int i, int i2, Intent intent) {
-        C2261g.m9763a("AccessPointListActivity", "onActivityResult()");
+        ImageAppLog.debug("AccessPointListActivity", "onActivityResult()");
         super.onActivityResult(i, i2, intent);
         Bundle bundle = null;
         if (intent != null) {
@@ -758,7 +758,7 @@ public class AccessPointListActivity extends C5741i {
     /* access modifiers changed from: private */
     /* renamed from: a */
     public void m10800a(final C2649a aVar, final boolean z) {
-        C2261g.m9769c("AccessPointListActivity", "～再接続～");
+        ImageAppLog.error("AccessPointListActivity", "～再接続～");
         new Thread(new Runnable() {
             public void run() {
                 if (AccessPointListActivity.this.f8047b != null) {
@@ -815,7 +815,7 @@ public class AccessPointListActivity extends C5741i {
                 return;
             case C1702a.HorizontalPicker_title_image /*9*/:
             case C1702a.HorizontalPicker_right_blank_area_width /*10*/:
-                Editable c = C2331d.m10128c(this, aVar, R.id.wifiPassword);
+                Editable c = DialogFactory.m10128c(this, aVar, R.id.wifiPassword);
                 String str = c != null ? c.toString() : "";
                 dismissAllDlg();
                 if (getResultBundle() != null) {
@@ -890,7 +890,7 @@ public class AccessPointListActivity extends C5741i {
                 return;
             case 33:
                 m10806b();
-                C2331d.m10114a((Activity) this, C2328a.WiFiFailedNfcTimeout, (Bundle) null);
+                DialogFactory.m10114a((Activity) this, C2328a.WiFiFailedNfcTimeout, (Bundle) null);
                 return;
             default:
                 super.onNegativeButtonClick(aVar);

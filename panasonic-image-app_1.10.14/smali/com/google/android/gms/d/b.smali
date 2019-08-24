@@ -60,7 +60,7 @@
     return-object v0
 .end method
 
-.method public static a(Lcom/google/firebase/a;)V
+.method public static a(Lcom/google/firebase/FirebaseApp;)V
     .locals 0
 
     return-void

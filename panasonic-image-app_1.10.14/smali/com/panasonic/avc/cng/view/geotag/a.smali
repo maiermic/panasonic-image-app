@@ -10,7 +10,7 @@
 # instance fields
 .field private b:Landroid/app/Activity;
 
-.field private c:Lcom/panasonic/avc/cng/view/geotag/b;
+.field private c:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
 
 # direct methods
@@ -41,12 +41,12 @@
     return-void
 .end method
 
-.method static synthetic a(Lcom/panasonic/avc/cng/view/geotag/a;)Lcom/panasonic/avc/cng/view/geotag/b;
+.method static synthetic a(Lcom/panasonic/avc/cng/view/geotag/a;)Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
     .locals 1
 
     .prologue
     .line 19
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/a;->c:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/a;->c:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
     return-object v0
 .end method
@@ -73,24 +73,24 @@
     iput-object v1, p0, Lcom/panasonic/avc/cng/view/geotag/a;->b:Landroid/app/Activity;
 
     .line 43
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/a;->c:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/a;->c:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
     if-eqz v0, :cond_0
 
     .line 45
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/a;->c:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/a;->c:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/geotag/b;->d()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->d()V
 
     .line 47
     :cond_0
-    iput-object v1, p0, Lcom/panasonic/avc/cng/view/geotag/a;->c:Lcom/panasonic/avc/cng/view/geotag/b;
+    iput-object v1, p0, Lcom/panasonic/avc/cng/view/geotag/a;->c:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
     .line 48
     return-void
 .end method
 
-.method public a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/geotag/b;)V
+.method public a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;)V
     .locals 4
 
     .prologue
@@ -98,10 +98,10 @@
     iput-object p1, p0, Lcom/panasonic/avc/cng/view/geotag/a;->b:Landroid/app/Activity;
 
     .line 61
-    iput-object p2, p0, Lcom/panasonic/avc/cng/view/geotag/a;->c:Lcom/panasonic/avc/cng/view/geotag/b;
+    iput-object p2, p0, Lcom/panasonic/avc/cng/view/geotag/a;->c:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
     .line 63
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/a;->c:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/a;->c:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
     if-nez v0, :cond_0
 
@@ -126,9 +126,9 @@
     invoke-direct {v1, v0}, Lcom/panasonic/avc/cng/view/parts/r;-><init>(Landroid/view/ViewGroup;)V
 
     .line 70
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/a;->c:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/a;->c:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/b;->g:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->g:Lcom/panasonic/avc/cng/a/c;
 
     iget-object v1, v1, Lcom/panasonic/avc/cng/view/parts/r;->a:Lcom/panasonic/avc/cng/a/d;
 
@@ -165,18 +165,18 @@
     invoke-direct {v2, v0}, Lcom/panasonic/avc/cng/view/parts/p;-><init>(Landroid/widget/TextView;)V
 
     .line 78
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/a;->c:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/a;->c:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/b;->h:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->h:Lcom/panasonic/avc/cng/a/c;
 
     iget-object v1, v1, Lcom/panasonic/avc/cng/view/parts/m;->a:Lcom/panasonic/avc/cng/a/d;
 
     invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/a/c;->a(Lcom/panasonic/avc/cng/a/b;)V
 
     .line 79
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/a;->c:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/a;->c:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/b;->i:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->i:Lcom/panasonic/avc/cng/a/c;
 
     iget-object v1, v2, Lcom/panasonic/avc/cng/view/parts/p;->a:Lcom/panasonic/avc/cng/a/d;
 
@@ -198,9 +198,9 @@
     invoke-direct {v1, v0}, Lcom/panasonic/avc/cng/view/parts/r;-><init>(Landroid/view/ViewGroup;)V
 
     .line 86
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/a;->c:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/a;->c:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/b;->j:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->j:Lcom/panasonic/avc/cng/a/c;
 
     iget-object v1, v1, Lcom/panasonic/avc/cng/view/parts/r;->a:Lcom/panasonic/avc/cng/a/d;
 
@@ -222,9 +222,9 @@
     invoke-direct {v1, v0}, Lcom/panasonic/avc/cng/view/parts/l;-><init>(Landroid/widget/ImageButton;)V
 
     .line 93
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/a;->c:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/a;->c:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/b;->k:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->k:Lcom/panasonic/avc/cng/a/c;
 
     iget-object v1, v1, Lcom/panasonic/avc/cng/view/parts/l;->b:Lcom/panasonic/avc/cng/a/d;
 
@@ -246,9 +246,9 @@
     invoke-direct {v1, v0}, Lcom/panasonic/avc/cng/view/parts/l;-><init>(Landroid/widget/ImageButton;)V
 
     .line 99
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/a;->c:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/a;->c:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/b;->l:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->l:Lcom/panasonic/avc/cng/a/c;
 
     iget-object v1, v1, Lcom/panasonic/avc/cng/view/parts/l;->b:Lcom/panasonic/avc/cng/a/d;
 
@@ -270,9 +270,9 @@
     invoke-direct {v1, v0}, Lcom/panasonic/avc/cng/view/parts/l;-><init>(Landroid/widget/ImageButton;)V
 
     .line 105
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/a;->c:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/a;->c:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/b;->m:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->m:Lcom/panasonic/avc/cng/a/c;
 
     iget-object v1, v1, Lcom/panasonic/avc/cng/view/parts/l;->b:Lcom/panasonic/avc/cng/a/d;
 
@@ -294,9 +294,9 @@
     invoke-direct {v1, v0}, Lcom/panasonic/avc/cng/view/parts/r;-><init>(Landroid/view/ViewGroup;)V
 
     .line 112
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/a;->c:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/a;->c:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/b;->n:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->n:Lcom/panasonic/avc/cng/a/c;
 
     iget-object v1, v1, Lcom/panasonic/avc/cng/view/parts/r;->b:Lcom/panasonic/avc/cng/a/d;
 
@@ -318,9 +318,9 @@
     invoke-direct {v1, v0}, Lcom/panasonic/avc/cng/view/parts/l;-><init>(Landroid/widget/ImageButton;)V
 
     .line 117
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/a;->c:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/a;->c:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/b;->o:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->o:Lcom/panasonic/avc/cng/a/c;
 
     iget-object v1, v1, Lcom/panasonic/avc/cng/view/parts/l;->a:Lcom/panasonic/avc/cng/view/parts/l$a;
 
@@ -342,9 +342,9 @@
     invoke-direct {v1, v0}, Lcom/panasonic/avc/cng/view/parts/p;-><init>(Landroid/widget/TextView;)V
 
     .line 122
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/a;->c:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/a;->c:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/b;->p:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->p:Lcom/panasonic/avc/cng/a/c;
 
     iget-object v1, v1, Lcom/panasonic/avc/cng/view/parts/p;->a:Lcom/panasonic/avc/cng/a/d;
 
@@ -366,9 +366,9 @@
     invoke-direct {v1, v0}, Lcom/panasonic/avc/cng/view/parts/r;-><init>(Landroid/view/ViewGroup;)V
 
     .line 129
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/a;->c:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/a;->c:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/b;->q:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->q:Lcom/panasonic/avc/cng/a/c;
 
     iget-object v1, v1, Lcom/panasonic/avc/cng/view/parts/r;->b:Lcom/panasonic/avc/cng/a/d;
 
@@ -390,9 +390,9 @@
     invoke-direct {v1, v0}, Lcom/panasonic/avc/cng/view/parts/r;-><init>(Landroid/view/ViewGroup;)V
 
     .line 136
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/a;->c:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/a;->c:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/b;->r:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->r:Lcom/panasonic/avc/cng/a/c;
 
     iget-object v1, v1, Lcom/panasonic/avc/cng/view/parts/r;->b:Lcom/panasonic/avc/cng/a/d;
 
@@ -414,9 +414,9 @@
     invoke-direct {v1, v0}, Lcom/panasonic/avc/cng/view/parts/r;-><init>(Landroid/view/ViewGroup;)V
 
     .line 143
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/a;->c:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/a;->c:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/b;->s:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->s:Lcom/panasonic/avc/cng/a/c;
 
     iget-object v1, v1, Lcom/panasonic/avc/cng/view/parts/r;->b:Lcom/panasonic/avc/cng/a/d;
 
@@ -438,9 +438,9 @@
     invoke-direct {v1, v0}, Lcom/panasonic/avc/cng/view/parts/p;-><init>(Landroid/widget/TextView;)V
 
     .line 148
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/a;->c:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/a;->c:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/b;->t:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->t:Lcom/panasonic/avc/cng/a/c;
 
     iget-object v1, v1, Lcom/panasonic/avc/cng/view/parts/p;->a:Lcom/panasonic/avc/cng/a/d;
 
@@ -463,18 +463,18 @@
     invoke-direct {v1, v0}, Lcom/panasonic/avc/cng/view/parts/o;-><init>(Landroid/widget/SeekBar;)V
 
     .line 152
-    iget-object v2, p0, Lcom/panasonic/avc/cng/view/geotag/a;->c:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/view/geotag/a;->c:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    iget-object v2, v2, Lcom/panasonic/avc/cng/view/geotag/b;->u:Lcom/panasonic/avc/cng/a/c;
+    iget-object v2, v2, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->u:Lcom/panasonic/avc/cng/a/c;
 
     iget-object v3, v1, Lcom/panasonic/avc/cng/view/parts/o;->d:Lcom/panasonic/avc/cng/a/d;
 
     invoke-virtual {v2, v3}, Lcom/panasonic/avc/cng/a/c;->a(Lcom/panasonic/avc/cng/a/b;)V
 
     .line 153
-    iget-object v2, p0, Lcom/panasonic/avc/cng/view/geotag/a;->c:Lcom/panasonic/avc/cng/view/geotag/b;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/view/geotag/a;->c:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    iget-object v2, v2, Lcom/panasonic/avc/cng/view/geotag/b;->v:Lcom/panasonic/avc/cng/a/c;
+    iget-object v2, v2, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->v:Lcom/panasonic/avc/cng/a/c;
 
     iget-object v1, v1, Lcom/panasonic/avc/cng/view/parts/o;->c:Lcom/panasonic/avc/cng/a/d;
 

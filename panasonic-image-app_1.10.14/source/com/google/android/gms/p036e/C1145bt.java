@@ -7,7 +7,7 @@ public final class C1145bt {
     static int f3257a;
 
     /* renamed from: b */
-    private static C1146bu f3258b = new C1103af();
+    private static C1146bu f3258b = new GoogleTagManager();
 
     /* renamed from: a */
     public static void m4657a(int i) {

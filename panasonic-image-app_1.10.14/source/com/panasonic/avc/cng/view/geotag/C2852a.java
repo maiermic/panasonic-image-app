@@ -9,7 +9,7 @@ import android.widget.SeekBar.OnSeekBarChangeListener;
 import android.widget.TextView;
 import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.p038a.C1343b;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.view.parts.C4213l;
 import com.panasonic.avc.cng.view.parts.C4218m;
 import com.panasonic.avc.cng.view.parts.C4225o;
@@ -28,7 +28,7 @@ public class C2852a {
     /* access modifiers changed from: private */
 
     /* renamed from: c */
-    public C2854b f8828c;
+    public GeoTagViewModel f8828c;
 
     /* renamed from: a */
     public void mo6922a() {
@@ -40,7 +40,7 @@ public class C2852a {
     }
 
     /* renamed from: a */
-    public void mo6923a(Activity activity, C2854b bVar) {
+    public void mo6923a(Activity activity, GeoTagViewModel bVar) {
         this.f8827b = activity;
         this.f8828c = bVar;
         if (this.f8828c != null) {
@@ -66,18 +66,18 @@ public class C2852a {
             this.f8828c.f8851v.mo3214a((C1343b<T>) oVar.f14148c);
             seekBar.setOnSeekBarChangeListener(new OnSeekBarChangeListener() {
                 public void onStartTrackingTouch(SeekBar seekBar) {
-                    C2261g.m9770d(C2852a.f8826a, "onStartTrackingTouch()");
+                    ImageAppLog.verbose(C2852a.f8826a, "onStartTrackingTouch()");
                 }
 
                 public void onStopTrackingTouch(SeekBar seekBar) {
-                    C2261g.m9770d(C2852a.f8826a, "onStopTrackingTouch()");
+                    ImageAppLog.verbose(C2852a.f8826a, "onStopTrackingTouch()");
                     if (C2852a.this.f8828c != null) {
                         C2852a.this.f8828c.mo6940c(((Integer) C2852a.this.f8828c.f8850u.mo3217b()).intValue());
                     }
                 }
 
                 public void onProgressChanged(SeekBar seekBar, int i, boolean z) {
-                    C2261g.m9770d(C2852a.f8826a, "onProgressChanged()");
+                    ImageAppLog.verbose(C2852a.f8826a, "onProgressChanged()");
                     if (z && C2852a.this.f8828c != null) {
                         C2852a.this.f8828c.mo6936b(i);
                     }

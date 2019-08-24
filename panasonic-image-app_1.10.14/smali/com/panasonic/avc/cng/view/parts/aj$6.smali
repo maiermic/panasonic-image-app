@@ -75,11 +75,11 @@
     .line 1082
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/parts/aj$6;->a:Lcom/panasonic/avc/cng/view/parts/aj;
 
-    invoke-static {v1}, Lcom/panasonic/avc/cng/view/parts/aj;->i(Lcom/panasonic/avc/cng/view/parts/aj;)Lcom/panasonic/avc/cng/view/setting/o;
+    invoke-static {v1}, Lcom/panasonic/avc/cng/view/parts/aj;->i(Lcom/panasonic/avc/cng/view/parts/aj;)Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;
 
     move-result-object v1
 
-    invoke-virtual {v1, v0}, Lcom/panasonic/avc/cng/view/setting/o;->a(I)V
+    invoke-virtual {v1, v0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;->a(I)V
 
     .line 1084
     const-string v1, "menu_item_id_ss_sync"
@@ -115,11 +115,11 @@
     :goto_1
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/aj$6;->a:Lcom/panasonic/avc/cng/view/parts/aj;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/parts/aj;->i(Lcom/panasonic/avc/cng/view/parts/aj;)Lcom/panasonic/avc/cng/view/setting/o;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/parts/aj;->i(Lcom/panasonic/avc/cng/view/parts/aj;)Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/o;->f()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;->f()Ljava/lang/String;
 
     move-result-object v0
 
@@ -148,22 +148,22 @@
     :cond_1
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/aj$6;->a:Lcom/panasonic/avc/cng/view/parts/aj;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/parts/aj;->c(Lcom/panasonic/avc/cng/view/parts/aj;)Lcom/panasonic/avc/cng/view/parts/ab;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/parts/aj;->c(Lcom/panasonic/avc/cng/view/parts/aj;)Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
     move-result-object v0
 
-    invoke-virtual {v0, v3, v4}, Lcom/panasonic/avc/cng/view/parts/ab;->b(II)V
+    invoke-virtual {v0, v3, v4}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;->b(II)V
 
     .line 1107
     :cond_2
     :goto_2
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/aj$6;->a:Lcom/panasonic/avc/cng/view/parts/aj;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/parts/aj;->c(Lcom/panasonic/avc/cng/view/parts/aj;)Lcom/panasonic/avc/cng/view/parts/ab;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/parts/aj;->c(Lcom/panasonic/avc/cng/view/parts/aj;)Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
     move-result-object v0
 
-    invoke-virtual {v0, v3}, Lcom/panasonic/avc/cng/view/parts/ab;->setUserTouch(Z)V
+    invoke-virtual {v0, v3}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;->setUserTouch(Z)V
 
     goto :goto_0
 
@@ -187,11 +187,11 @@
     :cond_4
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/aj$6;->a:Lcom/panasonic/avc/cng/view/parts/aj;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/parts/aj;->c(Lcom/panasonic/avc/cng/view/parts/aj;)Lcom/panasonic/avc/cng/view/parts/ab;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/parts/aj;->c(Lcom/panasonic/avc/cng/view/parts/aj;)Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
     move-result-object v0
 
-    invoke-virtual {v0, v3, p2}, Lcom/panasonic/avc/cng/view/parts/ab;->b(II)V
+    invoke-virtual {v0, v3, p2}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;->b(II)V
 
     goto :goto_2
 .end method

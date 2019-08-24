@@ -8,7 +8,7 @@ import android.widget.TextView;
 import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.C1892f;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 
 public class EasyWiFiApTopActivity extends C5763k {
 
@@ -23,7 +23,7 @@ public class EasyWiFiApTopActivity extends C5763k {
         C1712b.m6914a((Activity) this);
         super.onCreate(bundle);
         if (m21343b()) {
-            C2261g.m9770d(f15929d, "onCreate");
+            ImageAppLog.verbose(f15929d, "onCreate");
         }
         setContentView(R.layout.activity_easywifi_ap_top);
         Bundle extras = getIntent().getExtras();

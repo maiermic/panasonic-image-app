@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/core/a/al;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    value = Lcom/panasonic/avc/cng/core/a/StaticHttpCommand;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

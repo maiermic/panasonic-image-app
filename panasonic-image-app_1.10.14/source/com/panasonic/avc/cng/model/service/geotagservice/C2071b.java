@@ -10,13 +10,13 @@ import android.os.Message;
 import android.os.Messenger;
 import android.os.RemoteException;
 import android.provider.Settings.Secure;
-import com.panasonic.avc.cng.core.p040a.C1519h;
+import com.panasonic.avc.cng.core.p040a.XmlNode;
 import com.panasonic.avc.cng.model.C1892f;
 import com.panasonic.avc.cng.model.p051c.C1840ae;
 import com.panasonic.avc.cng.model.service.C2081h;
 import com.panasonic.avc.cng.model.service.C2081h.C2082a;
 import com.panasonic.avc.cng.model.service.C2081h.C2083b;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
@@ -36,10 +36,10 @@ public class C2071b implements C2081h {
     /* access modifiers changed from: private */
 
     /* renamed from: d */
-    public C1519h f6417d = null;
+    public XmlNode f6417d = null;
 
     /* renamed from: e */
-    private C2077c f6418e = null;
+    private GeotagLogRecord f6418e = null;
 
     /* renamed from: f */
     private C2078d f6419f = null;
@@ -208,7 +208,7 @@ public class C2071b implements C2081h {
     /* renamed from: a */
     public void mo5422a(String str) {
         if (this.f6418e == null) {
-            this.f6418e = new C2077c(this.f6414a);
+            this.f6418e = new GeotagLogRecord(this.f6414a);
         }
         this.f6418e.mo5449a(str);
     }
@@ -216,7 +216,7 @@ public class C2071b implements C2081h {
     /* renamed from: a */
     public List<String> mo5416a(boolean z) {
         if (this.f6418e == null) {
-            this.f6418e = new C2077c(this.f6414a);
+            this.f6418e = new GeotagLogRecord(this.f6414a);
         }
         return this.f6418e.mo5448a(z);
     }
@@ -272,7 +272,7 @@ public class C2071b implements C2081h {
             try {
                 Intent intent = new Intent(this.f6414a, GpsLogService.class);
                 if (this.f6414a == null || !this.f6414a.bindService(intent, this.f6427n, 1)) {
-                    C2261g.m9763a("GpsLogService", "bind failed");
+                    ImageAppLog.debug("GpsLogService", "bind failed");
                 }
             } catch (Exception e) {
             }
@@ -335,14 +335,14 @@ public class C2071b implements C2081h {
     }
 
     /* renamed from: a */
-    private C1519h m8618a(C1892f fVar) {
+    private XmlNode m8618a(C1892f fVar) {
         String str = "";
         if (fVar != null) {
             str = fVar.f5682d;
         }
-        C2261g.m9763a("GpsLogService", "ipAddress=" + str);
+        ImageAppLog.debug("GpsLogService", "ipAddress=" + str);
         m8625t();
-        return new C1519h(str);
+        return new XmlNode(str);
     }
 
     /* renamed from: t */
@@ -363,7 +363,7 @@ public class C2071b implements C2081h {
                         C2071b.this.f6416c.mo3746a(268435857, null, 0, 0);
                     }
                 } else if (!C2071b.this.f6417d.mo3740a("start")) {
-                    C2261g.m9766b("GeoTagService", String.format("%s command fail!!", new Object[]{"start"}));
+                    ImageAppLog.warning("GeoTagService", String.format("%s command fail!!", new Object[]{"start"}));
                     if (C2071b.this.f6416c != null) {
                         C2071b.this.f6416c.mo3746a(268435857, null, 0, 0);
                     }
@@ -424,7 +424,7 @@ public class C2071b implements C2081h {
         new Thread(new Runnable() {
             public void run() {
                 if (C2071b.this.f6417d != null && !C2071b.this.f6417d.mo3740a("abort")) {
-                    C2261g.m9766b("GeoTagService", String.format("%s command fail!!", new Object[]{"abort"}));
+                    ImageAppLog.warning("GeoTagService", String.format("%s command fail!!", new Object[]{"abort"}));
                 }
             }
         }).start();

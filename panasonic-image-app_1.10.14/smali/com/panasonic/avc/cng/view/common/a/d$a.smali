@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/panasonic/avc/cng/view/common/a/d;
+    value = Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

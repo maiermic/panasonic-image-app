@@ -28,9 +28,9 @@ import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.view.common.C2820e;
 import com.panasonic.avc.cng.view.p073b.C2317a.C2325c;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
 import com.panasonic.avc.cng.view.p073b.C2337e;
-import com.panasonic.avc.cng.view.setting.C5537al.C5540a;
+import com.panasonic.avc.cng.view.setting.SettingMenuBaseActivity.C5540a;
 import com.panasonic.avc.cng.view.setting.C5565an.C5571a;
 import com.panasonic.avc.cng.view.setting.C5681d.C5686b;
 import java.util.ArrayList;
@@ -88,7 +88,7 @@ public class SetupConnectHomeNetworkSettingActivity extends C5741i {
             if (SetupConnectHomeNetworkSettingActivity.this._handler != null) {
                 SetupConnectHomeNetworkSettingActivity.this._handler.post(new Runnable() {
                     public void run() {
-                        C2331d.m10114a((Activity) SetupConnectHomeNetworkSettingActivity.this, C2328a.ON_PROGRESS, (Bundle) null);
+                        DialogFactory.m10114a((Activity) SetupConnectHomeNetworkSettingActivity.this, C2328a.ON_PROGRESS, (Bundle) null);
                     }
                 });
                 try {
@@ -158,7 +158,7 @@ public class SetupConnectHomeNetworkSettingActivity extends C5741i {
                                 return charSequence.toString().matches("^[0-9a-zA-Z!-/:-@\\[-`{-~]+$") ? charSequence : "";
                             }
                         }});
-                        C2331d.m10100a((Activity) SetupConnectHomeNetworkSettingActivity.this);
+                        DialogFactory.m10100a((Activity) SetupConnectHomeNetworkSettingActivity.this);
                         if (SetupConnectHomeNetworkSettingActivity.this.f16683e) {
                             SetupConnectHomeNetworkSettingActivity.this.finish();
                         }
@@ -176,7 +176,7 @@ public class SetupConnectHomeNetworkSettingActivity extends C5741i {
             if (SetupConnectHomeNetworkSettingActivity.this._handler != null) {
                 SetupConnectHomeNetworkSettingActivity.this._handler.post(new Runnable() {
                     public void run() {
-                        C2331d.m10100a((Activity) SetupConnectHomeNetworkSettingActivity.this);
+                        DialogFactory.m10100a((Activity) SetupConnectHomeNetworkSettingActivity.this);
                         SetupConnectHomeNetworkSettingActivity.this.finish();
                     }
                 });
@@ -193,13 +193,13 @@ public class SetupConnectHomeNetworkSettingActivity extends C5741i {
                 SetupConnectHomeNetworkSettingActivity.this._handler.post(new Runnable() {
                     public void run() {
                         if (i == 1) {
-                            C2331d.m10114a((Activity) SetupConnectHomeNetworkSettingActivity.this, C2328a.ON_SET_AP_SSID_INVALID, (Bundle) null);
+                            DialogFactory.m10114a((Activity) SetupConnectHomeNetworkSettingActivity.this, C2328a.ON_SET_AP_SSID_INVALID, (Bundle) null);
                         } else if (i == 2) {
-                            C2331d.m10114a((Activity) SetupConnectHomeNetworkSettingActivity.this, C2328a.ON_SET_AP_PARAM_INVALID, (Bundle) null);
+                            DialogFactory.m10114a((Activity) SetupConnectHomeNetworkSettingActivity.this, C2328a.ON_SET_AP_PARAM_INVALID, (Bundle) null);
                         } else if (i == 3) {
-                            C2331d.m10114a((Activity) SetupConnectHomeNetworkSettingActivity.this, C2328a.ON_SET_AP_SSID_INVALID_ZERO, (Bundle) null);
+                            DialogFactory.m10114a((Activity) SetupConnectHomeNetworkSettingActivity.this, C2328a.ON_SET_AP_SSID_INVALID_ZERO, (Bundle) null);
                         } else if (i == 4) {
-                            C2331d.m10114a((Activity) SetupConnectHomeNetworkSettingActivity.this, C2328a.ON_SET_CAMERA_PASS_ZERO, (Bundle) null);
+                            DialogFactory.m10114a((Activity) SetupConnectHomeNetworkSettingActivity.this, C2328a.ON_SET_CAMERA_PASS_ZERO, (Bundle) null);
                         }
                     }
                 });
@@ -208,30 +208,30 @@ public class SetupConnectHomeNetworkSettingActivity extends C5741i {
 
         /* renamed from: a */
         public void mo11452a(boolean z) {
-            C2331d.m10100a((Activity) SetupConnectHomeNetworkSettingActivity.this);
+            DialogFactory.m10100a((Activity) SetupConnectHomeNetworkSettingActivity.this);
             C2337e.m10163a((Activity) SetupConnectHomeNetworkSettingActivity.this, SetupConnectHomeNetworkSettingActivity.this.f16681c, (C2325c) new C2325c() {
                 /* renamed from: a */
                 public void mo6131a() {
-                    C2331d.m10107a((Activity) SetupConnectHomeNetworkSettingActivity.this, C2328a.ON_NETWORK_SHOW_WIFI_LIST, (int) R.id.ListView1, (OnItemClickListener) new OnItemClickListener() {
+                    DialogFactory.m10107a((Activity) SetupConnectHomeNetworkSettingActivity.this, C2328a.ON_NETWORK_SHOW_WIFI_LIST, (int) R.id.ListView1, (OnItemClickListener) new OnItemClickListener() {
                         public void onItemClick(AdapterView<?> adapterView, View view, int i, long j) {
                             SetupConnectHomeNetworkSettingActivity.this.f16685g.setText((CharSequence) C2337e.m10148a((Activity) SetupConnectHomeNetworkSettingActivity.this, SetupConnectHomeNetworkSettingActivity.this.f16681c).getItem(i));
                             ((CheckBox) SetupConnectHomeNetworkSettingActivity.this.findViewById(R.id.setup_passwordDisplayCheckBox)).setEnabled(true);
                             SetupConnectHomeNetworkSettingActivity.this.f16686h.setHint("");
                             SetupConnectHomeNetworkSettingActivity.this.f16687i = null;
                             SetupConnectHomeNetworkSettingActivity.this.f16686h.requestFocus();
-                            C2331d.m10100a((Activity) SetupConnectHomeNetworkSettingActivity.this);
+                            DialogFactory.m10100a((Activity) SetupConnectHomeNetworkSettingActivity.this);
                         }
                     });
-                    C2331d.m10106a((Activity) SetupConnectHomeNetworkSettingActivity.this, C2328a.ON_NETWORK_SHOW_WIFI_LIST, (int) R.id.listCancelbutton, (OnClickListener) new OnClickListener() {
+                    DialogFactory.m10106a((Activity) SetupConnectHomeNetworkSettingActivity.this, C2328a.ON_NETWORK_SHOW_WIFI_LIST, (int) R.id.listCancelbutton, (OnClickListener) new OnClickListener() {
                         public void onClick(View view) {
-                            C2331d.m10100a((Activity) SetupConnectHomeNetworkSettingActivity.this);
+                            DialogFactory.m10100a((Activity) SetupConnectHomeNetworkSettingActivity.this);
                         }
                     });
-                    C2331d.m10106a((Activity) SetupConnectHomeNetworkSettingActivity.this, C2328a.ON_NETWORK_SHOW_WIFI_LIST, (int) R.id.listUpdatebutton, (OnClickListener) new OnClickListener() {
+                    DialogFactory.m10106a((Activity) SetupConnectHomeNetworkSettingActivity.this, C2328a.ON_NETWORK_SHOW_WIFI_LIST, (int) R.id.listUpdatebutton, (OnClickListener) new OnClickListener() {
                         public void onClick(View view) {
                             SetupConnectHomeNetworkSettingActivity.this.f16681c.mo12350h();
-                            C2331d.m10100a((Activity) SetupConnectHomeNetworkSettingActivity.this);
-                            C2331d.m10114a((Activity) SetupConnectHomeNetworkSettingActivity.this, C2328a.ON_PROGRESS, (Bundle) null);
+                            DialogFactory.m10100a((Activity) SetupConnectHomeNetworkSettingActivity.this);
+                            DialogFactory.m10114a((Activity) SetupConnectHomeNetworkSettingActivity.this, C2328a.ON_PROGRESS, (Bundle) null);
                         }
                     });
                 }
@@ -273,13 +273,13 @@ public class SetupConnectHomeNetworkSettingActivity extends C5741i {
                         public void run() {
                             switch (i) {
                                 case 2:
-                                    C2331d.m10114a((Activity) SetupConnectHomeNetworkSettingActivity.this, C2328a.ON_DISCONNECT_BY_HIGH_TEMP_FINISH, (Bundle) null);
+                                    DialogFactory.m10114a((Activity) SetupConnectHomeNetworkSettingActivity.this, C2328a.ON_DISCONNECT_BY_HIGH_TEMP_FINISH, (Bundle) null);
                                     return;
                                 case 3:
-                                    C2331d.m10114a((Activity) SetupConnectHomeNetworkSettingActivity.this, C2328a.ON_DISCONNECT_BATTERY_LOW_FINISH, (Bundle) null);
+                                    DialogFactory.m10114a((Activity) SetupConnectHomeNetworkSettingActivity.this, C2328a.ON_DISCONNECT_BATTERY_LOW_FINISH, (Bundle) null);
                                     return;
                                 default:
-                                    C2331d.m10114a((Activity) SetupConnectHomeNetworkSettingActivity.this, C2328a.ON_DISCONNECT_FINISH, (Bundle) null);
+                                    DialogFactory.m10114a((Activity) SetupConnectHomeNetworkSettingActivity.this, C2328a.ON_DISCONNECT_FINISH, (Bundle) null);
                                     return;
                             }
                         }
@@ -302,9 +302,9 @@ public class SetupConnectHomeNetworkSettingActivity extends C5741i {
             /* renamed from: a */
             public void mo11327a(String str) {
                 if (str.equalsIgnoreCase("high")) {
-                    C2331d.m10114a((Activity) SetupConnectHomeNetworkSettingActivity.this, C2328a.ON_DISCONNECT_BY_HIGH_TEMP_FINISH, (Bundle) null);
+                    DialogFactory.m10114a((Activity) SetupConnectHomeNetworkSettingActivity.this, C2328a.ON_DISCONNECT_BY_HIGH_TEMP_FINISH, (Bundle) null);
                 } else if (str.equalsIgnoreCase("assert")) {
-                    C2331d.m10114a((Activity) SetupConnectHomeNetworkSettingActivity.this, C2328a.ON_ASEERT_TEMP_FINISH, (Bundle) null);
+                    DialogFactory.m10114a((Activity) SetupConnectHomeNetworkSettingActivity.this, C2328a.ON_ASEERT_TEMP_FINISH, (Bundle) null);
                 }
             }
         });
@@ -318,7 +318,7 @@ public class SetupConnectHomeNetworkSettingActivity extends C5741i {
                 if (SetupConnectHomeNetworkSettingActivity.this.f16681c != null) {
                     SetupConnectHomeNetworkSettingActivity.this.f16681c.mo12350h();
                 }
-                C2331d.m10114a((Activity) SetupConnectHomeNetworkSettingActivity.this, C2328a.ON_PROGRESS, (Bundle) null);
+                DialogFactory.m10114a((Activity) SetupConnectHomeNetworkSettingActivity.this, C2328a.ON_PROGRESS, (Bundle) null);
             }
         });
         this.f16685g = (EditText) findViewById(R.id.setup_ssid_editview);
@@ -338,7 +338,7 @@ public class SetupConnectHomeNetworkSettingActivity extends C5741i {
         button.setVisibility(0);
         button.setOnClickListener(new OnClickListener() {
             public void onClick(View view) {
-                C2331d.m10114a((Activity) SetupConnectHomeNetworkSettingActivity.this, C2328a.ON_CONFIRM_DELETE_AP, (Bundle) null);
+                DialogFactory.m10114a((Activity) SetupConnectHomeNetworkSettingActivity.this, C2328a.ON_CONFIRM_DELETE_AP, (Bundle) null);
             }
         });
         ((Button) findViewById(R.id.setup_ok_button)).setOnClickListener(new OnClickListener() {

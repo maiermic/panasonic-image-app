@@ -47,7 +47,7 @@
     .line 195
     iget-object v0, p0, Lcom/panasonic/avc/cng/model/b/h$1;->b:Lcom/panasonic/avc/cng/model/b/h;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/model/b/h;->d:Lcom/panasonic/avc/cng/core/c/s;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/model/b/h;->d:Lcom/panasonic/avc/cng/core/c/Picmate;
 
     new-instance v1, Lcom/panasonic/avc/cng/model/b/h$1$1;
 
@@ -55,7 +55,7 @@
 
     sget v2, Lcom/panasonic/avc/cng/model/b;->a:I
 
-    invoke-virtual {v0, v1, v2}, Lcom/panasonic/avc/cng/core/c/s;->a(Lcom/panasonic/avc/cng/core/c/g;I)V
+    invoke-virtual {v0, v1, v2}, Lcom/panasonic/avc/cng/core/c/Picmate;->a(Lcom/panasonic/avc/cng/core/c/g;I)V
 
     .line 235
     return-void

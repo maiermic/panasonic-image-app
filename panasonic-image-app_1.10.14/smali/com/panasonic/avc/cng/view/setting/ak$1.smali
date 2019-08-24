@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/view/setting/ak;->a(Ljava/lang/String;Ljava/lang/String;Lcom/panasonic/avc/cng/view/setting/ak$a;)V
+    value = Lcom/panasonic/avc/cng/view/setting/SettingBracketViewModel;->a(Ljava/lang/String;Ljava/lang/String;Lcom/panasonic/avc/cng/view/setting/ak$a;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -24,16 +24,16 @@
 
 .field final synthetic c:Lcom/panasonic/avc/cng/view/setting/ak$a;
 
-.field final synthetic d:Lcom/panasonic/avc/cng/view/setting/ak;
+.field final synthetic d:Lcom/panasonic/avc/cng/view/setting/SettingBracketViewModel;
 
 
 # direct methods
-.method constructor <init>(Lcom/panasonic/avc/cng/view/setting/ak;Ljava/lang/String;Ljava/lang/String;Lcom/panasonic/avc/cng/view/setting/ak$a;)V
+.method constructor <init>(Lcom/panasonic/avc/cng/view/setting/SettingBracketViewModel;Ljava/lang/String;Ljava/lang/String;Lcom/panasonic/avc/cng/view/setting/ak$a;)V
     .locals 0
 
     .prologue
     .line 117
-    iput-object p1, p0, Lcom/panasonic/avc/cng/view/setting/ak$1;->d:Lcom/panasonic/avc/cng/view/setting/ak;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/view/setting/ak$1;->d:Lcom/panasonic/avc/cng/view/setting/SettingBracketViewModel;
 
     iput-object p2, p0, Lcom/panasonic/avc/cng/view/setting/ak$1;->a:Ljava/lang/String;
 
@@ -53,11 +53,11 @@
 
     .prologue
     .line 123
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
@@ -108,7 +108,7 @@
 
     .line 133
     :try_start_0
-    invoke-static {v0}, Lcom/panasonic/avc/cng/core/a/al;->a(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/core/a/StaticHttpCommand;->a(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -120,7 +120,7 @@
 
     const-string v3, "Cmd() is null...."
 
-    invoke-static {v2, v3}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v2, v3}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 138
     :cond_0
@@ -140,21 +140,21 @@
 
     .line 144
     :cond_1
-    new-instance v1, Lcom/panasonic/avc/cng/model/c/h;
+    new-instance v1, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
-    invoke-direct {v1, v0}, Lcom/panasonic/avc/cng/model/c/h;-><init>(Ljava/lang/String;)V
+    invoke-direct {v1, v0}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;-><init>(Ljava/lang/String;)V
 
     .line 145
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/model/c/h;->a()Z
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;->a()Z
 
     move-result v0
 
     if-eqz v0, :cond_2
 
     .line 148
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ak$1;->d:Lcom/panasonic/avc/cng/view/setting/ak;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ak$1;->d:Lcom/panasonic/avc/cng/view/setting/SettingBracketViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/ak;->a(Lcom/panasonic/avc/cng/view/setting/ak;)Lcom/panasonic/avc/cng/model/service/b;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/SettingBracketViewModel;->a(Lcom/panasonic/avc/cng/view/setting/SettingBracketViewModel;)Lcom/panasonic/avc/cng/model/service/b;
 
     move-result-object v0
 

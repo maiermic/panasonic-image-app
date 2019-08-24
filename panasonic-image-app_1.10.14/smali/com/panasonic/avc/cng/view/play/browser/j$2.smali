@@ -43,7 +43,7 @@
     .line 299
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/j$2;->a:Lcom/panasonic/avc/cng/view/play/browser/j;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/browser/j;->f(Lcom/panasonic/avc/cng/view/play/browser/j;)Lcom/panasonic/avc/cng/core/c/s;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/browser/j;->f(Lcom/panasonic/avc/cng/view/play/browser/j;)Lcom/panasonic/avc/cng/core/c/Picmate;
 
     move-result-object v0
 
@@ -52,13 +52,13 @@
     .line 300
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/j$2;->a:Lcom/panasonic/avc/cng/view/play/browser/j;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/browser/j;->f(Lcom/panasonic/avc/cng/view/play/browser/j;)Lcom/panasonic/avc/cng/core/c/s;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/browser/j;->f(Lcom/panasonic/avc/cng/view/play/browser/j;)Lcom/panasonic/avc/cng/core/c/Picmate;
 
     move-result-object v0
 
     const/4 v1, 0x1
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/core/c/s;->a(Z)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/core/c/Picmate;->a(Z)V
 
     .line 302
     :cond_0

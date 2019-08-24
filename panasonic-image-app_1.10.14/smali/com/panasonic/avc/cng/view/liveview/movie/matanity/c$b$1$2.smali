@@ -45,9 +45,9 @@
 
     iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/c$b$1;->b:Lcom/panasonic/avc/cng/view/liveview/movie/matanity/c$b;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/c$b;->a:Lcom/panasonic/avc/cng/view/liveview/movie/matanity/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/c$b;->a:Lcom/panasonic/avc/cng/view/liveview/movie/matanity/LiveViewMovieMatanityViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/c;->M(Lcom/panasonic/avc/cng/view/liveview/movie/matanity/c;)Landroid/content/Context;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/LiveViewMovieMatanityViewModel;->M(Lcom/panasonic/avc/cng/view/liveview/movie/matanity/LiveViewMovieMatanityViewModel;)Landroid/content/Context;
 
     move-result-object v0
 
@@ -73,9 +73,9 @@
 
     iget-object v2, v2, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/c$b$1;->b:Lcom/panasonic/avc/cng/view/liveview/movie/matanity/c$b;
 
-    iget-object v2, v2, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/c$b;->a:Lcom/panasonic/avc/cng/view/liveview/movie/matanity/c;
+    iget-object v2, v2, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/c$b;->a:Lcom/panasonic/avc/cng/view/liveview/movie/matanity/LiveViewMovieMatanityViewModel;
 
-    invoke-static {v2}, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/c;->N(Lcom/panasonic/avc/cng/view/liveview/movie/matanity/c;)Landroid/content/Context;
+    invoke-static {v2}, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/LiveViewMovieMatanityViewModel;->N(Lcom/panasonic/avc/cng/view/liveview/movie/matanity/LiveViewMovieMatanityViewModel;)Landroid/content/Context;
 
     move-result-object v2
 
@@ -101,9 +101,9 @@
 
     iget-object v2, v2, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/c$b$1;->b:Lcom/panasonic/avc/cng/view/liveview/movie/matanity/c$b;
 
-    iget-object v2, v2, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/c$b;->a:Lcom/panasonic/avc/cng/view/liveview/movie/matanity/c;
+    iget-object v2, v2, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/c$b;->a:Lcom/panasonic/avc/cng/view/liveview/movie/matanity/LiveViewMovieMatanityViewModel;
 
-    invoke-static {v2}, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/c;->O(Lcom/panasonic/avc/cng/view/liveview/movie/matanity/c;)Landroid/content/Context;
+    invoke-static {v2}, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/LiveViewMovieMatanityViewModel;->O(Lcom/panasonic/avc/cng/view/liveview/movie/matanity/LiveViewMovieMatanityViewModel;)Landroid/content/Context;
 
     move-result-object v2
 

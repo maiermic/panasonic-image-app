@@ -1,12 +1,12 @@
 .class public Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerWhiteBalanceActivity;
-.super Lcom/panasonic/avc/cng/view/setting/u;
+.super Lcom/panasonic/avc/cng/view/setting/LiveSetupLumixMirrorlessBaseActivity;
 .source "SourceFile"
 
 
 # instance fields
 .field private n:Lcom/panasonic/avc/cng/view/parts/aq;
 
-.field private q:Lcom/panasonic/avc/cng/view/setting/s;
+.field private q:Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerWhiteBalanceViewModel;
 
 .field private r:Lcom/panasonic/avc/cng/view/setting/u$a;
 
@@ -17,17 +17,17 @@
 
     .prologue
     .line 20
-    invoke-direct {p0}, Lcom/panasonic/avc/cng/view/setting/u;-><init>()V
+    invoke-direct {p0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupLumixMirrorlessBaseActivity;-><init>()V
 
     return-void
 .end method
 
-.method static synthetic a(Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerWhiteBalanceActivity;)Lcom/panasonic/avc/cng/view/setting/s;
+.method static synthetic a(Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerWhiteBalanceActivity;)Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerWhiteBalanceViewModel;
     .locals 1
 
     .prologue
     .line 20
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerWhiteBalanceActivity;->q:Lcom/panasonic/avc/cng/view/setting/s;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerWhiteBalanceActivity;->q:Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerWhiteBalanceViewModel;
 
     return-object v0
 .end method
@@ -39,7 +39,7 @@
 
     .prologue
     .line 72
-    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/u;->a()V
+    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupLumixMirrorlessBaseActivity;->a()V
 
     .line 73
     return-void
@@ -50,7 +50,7 @@
 
     .prologue
     .line 142
-    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/u;->a(Z)V
+    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/LiveSetupLumixMirrorlessBaseActivity;->a(Z)V
 
     .line 145
     return-void
@@ -63,17 +63,17 @@
     const/4 v1, 0x0
 
     .line 81
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerWhiteBalanceActivity;->q:Lcom/panasonic/avc/cng/view/setting/s;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerWhiteBalanceActivity;->q:Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerWhiteBalanceViewModel;
 
     if-eqz v0, :cond_0
 
     .line 82
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerWhiteBalanceActivity;->q:Lcom/panasonic/avc/cng/view/setting/s;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerWhiteBalanceActivity;->q:Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerWhiteBalanceViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/s;->a()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerWhiteBalanceViewModel;->a()V
 
     .line 83
-    iput-object v1, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerWhiteBalanceActivity;->q:Lcom/panasonic/avc/cng/view/setting/s;
+    iput-object v1, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerWhiteBalanceActivity;->q:Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerWhiteBalanceViewModel;
 
     .line 85
     :cond_0
@@ -86,7 +86,7 @@
 
     .line 88
     :cond_1
-    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/u;->d()V
+    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupLumixMirrorlessBaseActivity;->d()V
 
     .line 89
     return-void
@@ -97,7 +97,7 @@
 
     .prologue
     .line 97
-    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/u;->e()V
+    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupLumixMirrorlessBaseActivity;->e()V
 
     .line 98
     return-void
@@ -110,17 +110,17 @@
     const/4 v1, 0x0
 
     .line 106
-    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/u;->f()V
+    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupLumixMirrorlessBaseActivity;->f()V
 
     .line 108
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerWhiteBalanceActivity;->q:Lcom/panasonic/avc/cng/view/setting/s;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerWhiteBalanceActivity;->q:Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerWhiteBalanceViewModel;
 
     if-eqz v0, :cond_0
 
     .line 109
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerWhiteBalanceActivity;->q:Lcom/panasonic/avc/cng/view/setting/s;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerWhiteBalanceActivity;->q:Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerWhiteBalanceViewModel;
 
-    invoke-virtual {v0, v1, v1, v1}, Lcom/panasonic/avc/cng/view/setting/s;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/setting/u$a;)V
+    invoke-virtual {v0, v1, v1, v1}, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerWhiteBalanceViewModel;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/setting/u$a;)V
 
     .line 111
     :cond_0
@@ -132,7 +132,7 @@
 
     .prologue
     .line 119
-    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/u;->g()V
+    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupLumixMirrorlessBaseActivity;->g()V
 
     .line 122
     invoke-virtual {p0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerWhiteBalanceActivity;->h()V
@@ -146,7 +146,7 @@
 
     .prologue
     .line 130
-    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/u;->h()V
+    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupLumixMirrorlessBaseActivity;->h()V
 
     .line 133
     return-void
@@ -157,11 +157,11 @@
 
     .prologue
     .line 32
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
@@ -184,17 +184,17 @@
     invoke-static {p0}, Lcom/panasonic/avc/cng/model/b;->a(Landroid/app/Activity;)V
 
     .line 47
-    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/u;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/LiveSetupLumixMirrorlessBaseActivity;->onCreate(Landroid/os/Bundle;)V
 
     .line 50
     new-instance v0, Lcom/panasonic/avc/cng/view/setting/u$e;
 
-    invoke-direct {v0, p0}, Lcom/panasonic/avc/cng/view/setting/u$e;-><init>(Lcom/panasonic/avc/cng/view/setting/u;)V
+    invoke-direct {v0, p0}, Lcom/panasonic/avc/cng/view/setting/u$e;-><init>(Lcom/panasonic/avc/cng/view/setting/LiveSetupLumixMirrorlessBaseActivity;)V
 
     iput-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerWhiteBalanceActivity;->r:Lcom/panasonic/avc/cng/view/setting/u$a;
 
     .line 51
-    new-instance v0, Lcom/panasonic/avc/cng/view/setting/s;
+    new-instance v0, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerWhiteBalanceViewModel;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerWhiteBalanceActivity;->_context:Landroid/content/Context;
 
@@ -204,18 +204,18 @@
 
     iget-object v4, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerWhiteBalanceActivity;->r:Lcom/panasonic/avc/cng/view/setting/u$a;
 
-    invoke-direct {v0, v1, v2, v3, v4}, Lcom/panasonic/avc/cng/view/setting/s;-><init>(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/setting/am;Lcom/panasonic/avc/cng/view/setting/u$a;)V
+    invoke-direct {v0, v1, v2, v3, v4}, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerWhiteBalanceViewModel;-><init>(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/setting/am;Lcom/panasonic/avc/cng/view/setting/u$a;)V
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerWhiteBalanceActivity;->q:Lcom/panasonic/avc/cng/view/setting/s;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerWhiteBalanceActivity;->q:Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerWhiteBalanceViewModel;
 
     .line 54
     new-instance v0, Lcom/panasonic/avc/cng/view/parts/aq;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerWhiteBalanceActivity;->_context:Landroid/content/Context;
 
-    iget-object v2, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerWhiteBalanceActivity;->q:Lcom/panasonic/avc/cng/view/setting/s;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerWhiteBalanceActivity;->q:Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerWhiteBalanceViewModel;
 
-    invoke-virtual {v2}, Lcom/panasonic/avc/cng/view/setting/s;->c()[Ljava/lang/String;
+    invoke-virtual {v2}, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerWhiteBalanceViewModel;->c()[Ljava/lang/String;
 
     move-result-object v2
 

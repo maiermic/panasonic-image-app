@@ -67,7 +67,7 @@
     .line 959
     const-string v1, "BroadcastReceiver"
 
-    invoke-static {v1, v0}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v0}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 960
     const-string v1, "android.net.wifi.supplicant.STATE_CHANGE"
@@ -106,7 +106,7 @@
 
     const-string v1, "Unknown"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 983
     :goto_1
@@ -128,7 +128,7 @@
 
     const-string v1, "ERROR_AUTHENTICATING"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 992
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/k$6;->c:Lcom/panasonic/avc/cng/view/cameraconnect/k;
@@ -150,7 +150,7 @@
 
     const-string v1, "ASSOCIATED"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_1
 
@@ -160,7 +160,7 @@
 
     const-string v1, "ASSOCIATING"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_1
 
@@ -170,7 +170,7 @@
 
     const-string v1, "AUTHENTICATING"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_1
 
@@ -180,7 +180,7 @@
 
     const-string v1, "COMPLETED"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_1
 
@@ -190,7 +190,7 @@
 
     const-string v1, "DISCONNECTED"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_1
 
@@ -200,7 +200,7 @@
 
     const-string v1, "DORMANT"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_1
 
@@ -210,7 +210,7 @@
 
     const-string v1, "FOUR_WAY_HANDSHAKE"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_1
 
@@ -220,7 +220,7 @@
 
     const-string v1, "GROUP_HANDSHAKE"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_1
 
@@ -230,7 +230,7 @@
 
     const-string v1, "INACTIVE"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_1
 
@@ -240,7 +240,7 @@
 
     const-string v1, "INTERFACE_DISABLED"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_1
 
@@ -250,7 +250,7 @@
 
     const-string v1, "INVALID"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_1
 
@@ -260,7 +260,7 @@
 
     const-string v1, "SCANNING"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_1
 
@@ -270,7 +270,7 @@
 
     const-string v1, "UNINITIALIZED"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     goto/16 :goto_1
 
@@ -299,13 +299,13 @@
     .line 1002
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/k$6;->c:Lcom/panasonic/avc/cng/view/cameraconnect/k;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/cameraconnect/k;->e(Lcom/panasonic/avc/cng/view/cameraconnect/k;)Lcom/panasonic/avc/cng/view/cameraconnect/l;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/cameraconnect/k;->e(Lcom/panasonic/avc/cng/view/cameraconnect/k;)Lcom/panasonic/avc/cng/view/cameraconnect/WifiUtil;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/cameraconnect/k$6;->b:Landroid/net/wifi/WifiConfiguration;
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/cameraconnect/l;->a(Landroid/net/wifi/WifiConfiguration;)Z
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/cameraconnect/WifiUtil;->a(Landroid/net/wifi/WifiConfiguration;)Z
 
     move-result v0
 
@@ -316,7 +316,7 @@
 
     const-string v1, "ConnectivityManager.CONNECTIVITY_ACTION\u3000\u63a5\u7d9aOK"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 1005
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/k$6;->c:Lcom/panasonic/avc/cng/view/cameraconnect/k;
@@ -343,18 +343,18 @@
 
     const-string v1, "WifiManager.CONNECTIVITY_ACTION getExtraInfo\u304c\u53d6\u5f97\u3067\u304d\u306a\u3044"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 1016
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/k$6;->c:Lcom/panasonic/avc/cng/view/cameraconnect/k;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/cameraconnect/k;->e(Lcom/panasonic/avc/cng/view/cameraconnect/k;)Lcom/panasonic/avc/cng/view/cameraconnect/l;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/cameraconnect/k;->e(Lcom/panasonic/avc/cng/view/cameraconnect/k;)Lcom/panasonic/avc/cng/view/cameraconnect/WifiUtil;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/cameraconnect/k$6;->b:Landroid/net/wifi/WifiConfiguration;
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/cameraconnect/l;->a(Landroid/net/wifi/WifiConfiguration;)Z
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/cameraconnect/WifiUtil;->a(Landroid/net/wifi/WifiConfiguration;)Z
 
     move-result v0
 
@@ -365,7 +365,7 @@
 
     const-string v1, "\u6307\u5b9aAP\u306b\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 1018
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/k$6;->c:Lcom/panasonic/avc/cng/view/cameraconnect/k;
@@ -420,7 +420,7 @@
 
     move-result-object v0
 
-    invoke-static {v1, v0}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v0}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     goto/16 :goto_0
 
@@ -440,7 +440,7 @@
 
     const-string v1, "ConnectivityManager.CONNECTIVITY_ACTION\u3000\u63a5\u7d9aOK"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 1035
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/k$6;->c:Lcom/panasonic/avc/cng/view/cameraconnect/k;
@@ -476,7 +476,7 @@
 
     move-result-object v0
 
-    invoke-static {v1, v0}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v0}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     goto/16 :goto_0
 
@@ -505,13 +505,13 @@
     .line 1048
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/k$6;->c:Lcom/panasonic/avc/cng/view/cameraconnect/k;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/cameraconnect/k;->e(Lcom/panasonic/avc/cng/view/cameraconnect/k;)Lcom/panasonic/avc/cng/view/cameraconnect/l;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/cameraconnect/k;->e(Lcom/panasonic/avc/cng/view/cameraconnect/k;)Lcom/panasonic/avc/cng/view/cameraconnect/WifiUtil;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/cameraconnect/k$6;->b:Landroid/net/wifi/WifiConfiguration;
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/cameraconnect/l;->a(Landroid/net/wifi/WifiConfiguration;)Z
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/cameraconnect/WifiUtil;->a(Landroid/net/wifi/WifiConfiguration;)Z
 
     move-result v0
 
@@ -522,7 +522,7 @@
 
     const-string v1, "WifiManager.NETWORK_STATE_CHANGED_ACTION \u63a5\u7d9aOK"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 1051
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/k$6;->c:Lcom/panasonic/avc/cng/view/cameraconnect/k;
@@ -549,18 +549,18 @@
 
     const-string v1, "WifiManager.NETWORK_STATE_CHANGED_ACTION getExtraInfo\u304c\u53d6\u5f97\u3067\u304d\u306a\u3044"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 1062
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/k$6;->c:Lcom/panasonic/avc/cng/view/cameraconnect/k;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/cameraconnect/k;->e(Lcom/panasonic/avc/cng/view/cameraconnect/k;)Lcom/panasonic/avc/cng/view/cameraconnect/l;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/cameraconnect/k;->e(Lcom/panasonic/avc/cng/view/cameraconnect/k;)Lcom/panasonic/avc/cng/view/cameraconnect/WifiUtil;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/cameraconnect/k$6;->b:Landroid/net/wifi/WifiConfiguration;
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/cameraconnect/l;->a(Landroid/net/wifi/WifiConfiguration;)Z
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/cameraconnect/WifiUtil;->a(Landroid/net/wifi/WifiConfiguration;)Z
 
     move-result v0
 
@@ -571,7 +571,7 @@
 
     const-string v1, "\u6307\u5b9aAP\u306b\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 1064
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/k$6;->c:Lcom/panasonic/avc/cng/view/cameraconnect/k;
@@ -626,7 +626,7 @@
 
     move-result-object v0
 
-    invoke-static {v1, v0}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v0}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     goto/16 :goto_0
 
@@ -646,7 +646,7 @@
 
     const-string v1, "WifiManager.NETWORK_STATE_CHANGED_ACTION \u63a5\u7d9aOK"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 1081
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/k$6;->c:Lcom/panasonic/avc/cng/view/cameraconnect/k;
@@ -682,7 +682,7 @@
 
     move-result-object v0
 
-    invoke-static {v1, v0}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v0}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     goto/16 :goto_0
 

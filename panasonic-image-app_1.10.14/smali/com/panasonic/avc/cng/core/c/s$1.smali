@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/panasonic/avc/cng/core/c/s;
+    value = Lcom/panasonic/avc/cng/core/c/Picmate;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,16 +15,16 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/panasonic/avc/cng/core/c/s;
+.field final synthetic a:Lcom/panasonic/avc/cng/core/c/Picmate;
 
 
 # direct methods
-.method constructor <init>(Lcom/panasonic/avc/cng/core/c/s;)V
+.method constructor <init>(Lcom/panasonic/avc/cng/core/c/Picmate;)V
     .locals 0
 
     .prologue
     .line 178
-    iput-object p1, p0, Lcom/panasonic/avc/cng/core/c/s$1;->a:Lcom/panasonic/avc/cng/core/c/s;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/core/c/s$1;->a:Lcom/panasonic/avc/cng/core/c/Picmate;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -146,15 +146,15 @@
 
     const-string v1, "\u30da\u30a2\u30ea\u30f3\u30b0\u753b\u9762\u306e\u3068\u304d\u306f\u66f4\u65b0\u3057\u306a\u3044P"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 
     .line 213
     :cond_3
-    iget-object v0, p0, Lcom/panasonic/avc/cng/core/c/s$1;->a:Lcom/panasonic/avc/cng/core/c/s;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/core/c/s$1;->a:Lcom/panasonic/avc/cng/core/c/Picmate;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/core/c/s;->e(Lcom/panasonic/avc/cng/core/c/s;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/core/c/Picmate;->e(Lcom/panasonic/avc/cng/core/c/Picmate;)Landroid/os/Handler;
 
     move-result-object v0
 
@@ -168,14 +168,14 @@
 
     .line 237
     :cond_4
-    iget-object v0, p0, Lcom/panasonic/avc/cng/core/c/s$1;->a:Lcom/panasonic/avc/cng/core/c/s;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/core/c/s$1;->a:Lcom/panasonic/avc/cng/core/c/Picmate;
 
-    invoke-static {v0, v3}, Lcom/panasonic/avc/cng/core/c/s;->b(Lcom/panasonic/avc/cng/core/c/s;Z)Z
+    invoke-static {v0, v3}, Lcom/panasonic/avc/cng/core/c/Picmate;->b(Lcom/panasonic/avc/cng/core/c/Picmate;Z)Z
 
     .line 238
-    iget-object v0, p0, Lcom/panasonic/avc/cng/core/c/s$1;->a:Lcom/panasonic/avc/cng/core/c/s;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/core/c/s$1;->a:Lcom/panasonic/avc/cng/core/c/Picmate;
 
-    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/core/c/s;->a(Lcom/panasonic/avc/cng/core/c/s;Z)Z
+    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/core/c/Picmate;->a(Lcom/panasonic/avc/cng/core/c/Picmate;Z)Z
 
     goto :goto_0
 .end method

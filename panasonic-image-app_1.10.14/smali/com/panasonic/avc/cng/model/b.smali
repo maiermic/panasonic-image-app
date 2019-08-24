@@ -8,7 +8,7 @@
 
 .field private static b:Lcom/panasonic/avc/cng/model/o;
 
-.field private static c:Lcom/panasonic/avc/cng/model/g;
+.field private static c:Lcom/panasonic/avc/cng/model/DeviceManager;
 
 .field private static d:Lcom/panasonic/avc/cng/model/i;
 
@@ -33,7 +33,7 @@
     sput-object v1, Lcom/panasonic/avc/cng/model/b;->b:Lcom/panasonic/avc/cng/model/o;
 
     .line 28
-    sput-object v1, Lcom/panasonic/avc/cng/model/b;->c:Lcom/panasonic/avc/cng/model/g;
+    sput-object v1, Lcom/panasonic/avc/cng/model/b;->c:Lcom/panasonic/avc/cng/model/DeviceManager;
 
     .line 29
     sput-object v1, Lcom/panasonic/avc/cng/model/b;->d:Lcom/panasonic/avc/cng/model/i;
@@ -113,13 +113,13 @@
     const/4 v0, 0x0
 
     .line 846
-    invoke-static {}, Lcom/panasonic/avc/cng/model/service/z;->b()V
+    invoke-static {}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->b()V
 
     .line 848
     sput-object v0, Lcom/panasonic/avc/cng/model/b;->b:Lcom/panasonic/avc/cng/model/o;
 
     .line 849
-    sput-object v0, Lcom/panasonic/avc/cng/model/b;->c:Lcom/panasonic/avc/cng/model/g;
+    sput-object v0, Lcom/panasonic/avc/cng/model/b;->c:Lcom/panasonic/avc/cng/model/DeviceManager;
 
     .line 850
     sput-object v0, Lcom/panasonic/avc/cng/model/b;->d:Lcom/panasonic/avc/cng/model/i;
@@ -156,7 +156,7 @@
     invoke-static {p0}, Lcom/panasonic/avc/cng/model/b;->a(Landroid/content/Context;)V
 
     .line 872
-    invoke-static {p0, v3}, Lcom/panasonic/avc/cng/model/service/z;->b(Landroid/content/Context;Z)Lcom/panasonic/avc/cng/model/service/f;
+    invoke-static {p0, v3}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->b(Landroid/content/Context;Z)Lcom/panasonic/avc/cng/model/service/f;
 
     .line 875
     invoke-virtual {p0}, Landroid/app/Activity;->getApplicationContext()Landroid/content/Context;
@@ -180,7 +180,7 @@
     .line 877
     const/4 v0, 0x0
 
-    invoke-static {p0, v0}, Lcom/panasonic/avc/cng/model/service/z;->d(Landroid/content/Context;Lcom/panasonic/avc/cng/model/f;)Lcom/panasonic/avc/cng/model/service/h;
+    invoke-static {p0, v0}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->d(Landroid/content/Context;Lcom/panasonic/avc/cng/model/f;)Lcom/panasonic/avc/cng/model/service/h;
 
     move-result-object v0
 
@@ -245,7 +245,7 @@
     sput-object v0, Lcom/panasonic/avc/cng/model/b;->b:Lcom/panasonic/avc/cng/model/o;
 
     .line 829
-    sput-object v0, Lcom/panasonic/avc/cng/model/b;->c:Lcom/panasonic/avc/cng/model/g;
+    sput-object v0, Lcom/panasonic/avc/cng/model/b;->c:Lcom/panasonic/avc/cng/model/DeviceManager;
 
     .line 830
     sput-object v0, Lcom/panasonic/avc/cng/model/b;->d:Lcom/panasonic/avc/cng/model/i;
@@ -264,7 +264,7 @@
     sput-object v0, Lcom/panasonic/avc/cng/model/b;->f:Landroid/content/Context;
 
     .line 838
-    invoke-static {}, Lcom/panasonic/avc/cng/model/service/z;->a()V
+    invoke-static {}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->a()V
 
     .line 839
     return-void
@@ -317,25 +317,25 @@
     return-void
 .end method
 
-.method public static c()Lcom/panasonic/avc/cng/model/g;
+.method public static c()Lcom/panasonic/avc/cng/model/DeviceManager;
     .locals 1
 
     .prologue
     .line 910
-    sget-object v0, Lcom/panasonic/avc/cng/model/b;->c:Lcom/panasonic/avc/cng/model/g;
+    sget-object v0, Lcom/panasonic/avc/cng/model/b;->c:Lcom/panasonic/avc/cng/model/DeviceManager;
 
     if-nez v0, :cond_0
 
     .line 912
-    new-instance v0, Lcom/panasonic/avc/cng/model/g;
+    new-instance v0, Lcom/panasonic/avc/cng/model/DeviceManager;
 
-    invoke-direct {v0}, Lcom/panasonic/avc/cng/model/g;-><init>()V
+    invoke-direct {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;-><init>()V
 
-    sput-object v0, Lcom/panasonic/avc/cng/model/b;->c:Lcom/panasonic/avc/cng/model/g;
+    sput-object v0, Lcom/panasonic/avc/cng/model/b;->c:Lcom/panasonic/avc/cng/model/DeviceManager;
 
     .line 915
     :cond_0
-    sget-object v0, Lcom/panasonic/avc/cng/model/b;->c:Lcom/panasonic/avc/cng/model/g;
+    sget-object v0, Lcom/panasonic/avc/cng/model/b;->c:Lcom/panasonic/avc/cng/model/DeviceManager;
 
     return-object v0
 .end method

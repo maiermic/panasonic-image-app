@@ -5,7 +5,7 @@ import android.content.Context;
 import android.os.RemoteException;
 import com.google.android.gms.common.internal.C0612ab;
 import com.google.android.gms.common.internal.safeparcel.C0658a;
-import com.google.android.gms.common.stats.C0679a;
+import com.google.android.gms.common.stats.ConnectionTracker;
 import com.google.android.gms.common.util.C0688c;
 import com.google.android.gms.measurement.AppMeasurement.C1306g;
 import java.util.ArrayList;
@@ -275,7 +275,7 @@ public final class C0984kg extends C0963jm {
         super.mo2226e();
         mo2583Q();
         try {
-            C0679a.m2525a();
+            ConnectionTracker.m2525a();
             super.mo2235n().unbindService(this.f2841a);
         } catch (IllegalArgumentException | IllegalStateException e) {
         }

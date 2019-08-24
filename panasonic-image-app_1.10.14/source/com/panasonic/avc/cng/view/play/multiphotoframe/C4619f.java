@@ -13,13 +13,13 @@ public class C4619f {
     private Activity f15113a;
 
     /* renamed from: b */
-    private C4621h f15114b;
+    private MultiPhotoFrameMainViewModel f15114b;
 
     /* renamed from: c */
     private C4241r f15115c = null;
 
     /* renamed from: a */
-    public void mo10815a(Activity activity, C4621h hVar) {
+    public void mo10815a(Activity activity, MultiPhotoFrameMainViewModel hVar) {
         this.f15113a = activity;
         this.f15114b = hVar;
         m18077b();

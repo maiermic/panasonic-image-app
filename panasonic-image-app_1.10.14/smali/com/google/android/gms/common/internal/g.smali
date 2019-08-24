@@ -60,7 +60,7 @@
 
     iget-object v0, p0, Lcom/google/android/gms/common/internal/g;->g:Lcom/google/android/gms/common/internal/f;
 
-    invoke-static {v0}, Lcom/google/android/gms/common/internal/f;->d(Lcom/google/android/gms/common/internal/f;)Lcom/google/android/gms/common/stats/a;
+    invoke-static {v0}, Lcom/google/android/gms/common/internal/f;->d(Lcom/google/android/gms/common/internal/f;)Lcom/google/android/gms/common/stats/ConnectionTracker;
 
     iget-object v0, p0, Lcom/google/android/gms/common/internal/g;->g:Lcom/google/android/gms/common/internal/f;
 
@@ -86,7 +86,7 @@
 
     iget-object v0, p0, Lcom/google/android/gms/common/internal/g;->g:Lcom/google/android/gms/common/internal/f;
 
-    invoke-static {v0}, Lcom/google/android/gms/common/internal/f;->d(Lcom/google/android/gms/common/internal/f;)Lcom/google/android/gms/common/stats/a;
+    invoke-static {v0}, Lcom/google/android/gms/common/internal/f;->d(Lcom/google/android/gms/common/internal/f;)Lcom/google/android/gms/common/stats/ConnectionTracker;
 
     iget-object v0, p0, Lcom/google/android/gms/common/internal/g;->g:Lcom/google/android/gms/common/internal/f;
 
@@ -102,7 +102,7 @@
 
     const/16 v2, 0x81
 
-    invoke-static {v0, p1, v1, p0, v2}, Lcom/google/android/gms/common/stats/a;->a(Landroid/content/Context;Ljava/lang/String;Landroid/content/Intent;Landroid/content/ServiceConnection;I)Z
+    invoke-static {v0, p1, v1, p0, v2}, Lcom/google/android/gms/common/stats/ConnectionTracker;->a(Landroid/content/Context;Ljava/lang/String;Landroid/content/Intent;Landroid/content/ServiceConnection;I)Z
 
     move-result v0
 
@@ -151,7 +151,7 @@
     :try_start_0
     iget-object v0, p0, Lcom/google/android/gms/common/internal/g;->g:Lcom/google/android/gms/common/internal/f;
 
-    invoke-static {v0}, Lcom/google/android/gms/common/internal/f;->d(Lcom/google/android/gms/common/internal/f;)Lcom/google/android/gms/common/stats/a;
+    invoke-static {v0}, Lcom/google/android/gms/common/internal/f;->d(Lcom/google/android/gms/common/internal/f;)Lcom/google/android/gms/common/stats/ConnectionTracker;
 
     iget-object v0, p0, Lcom/google/android/gms/common/internal/g;->g:Lcom/google/android/gms/common/internal/f;
 
@@ -204,7 +204,7 @@
 
     iget-object v0, p0, Lcom/google/android/gms/common/internal/g;->g:Lcom/google/android/gms/common/internal/f;
 
-    invoke-static {v0}, Lcom/google/android/gms/common/internal/f;->d(Lcom/google/android/gms/common/internal/f;)Lcom/google/android/gms/common/stats/a;
+    invoke-static {v0}, Lcom/google/android/gms/common/internal/f;->d(Lcom/google/android/gms/common/internal/f;)Lcom/google/android/gms/common/stats/ConnectionTracker;
 
     iget-object v0, p0, Lcom/google/android/gms/common/internal/g;->g:Lcom/google/android/gms/common/internal/f;
 
@@ -234,7 +234,7 @@
 
     iget-object v0, p0, Lcom/google/android/gms/common/internal/g;->g:Lcom/google/android/gms/common/internal/f;
 
-    invoke-static {v0}, Lcom/google/android/gms/common/internal/f;->d(Lcom/google/android/gms/common/internal/f;)Lcom/google/android/gms/common/stats/a;
+    invoke-static {v0}, Lcom/google/android/gms/common/internal/f;->d(Lcom/google/android/gms/common/internal/f;)Lcom/google/android/gms/common/stats/ConnectionTracker;
 
     iget-object v0, p0, Lcom/google/android/gms/common/internal/g;->g:Lcom/google/android/gms/common/internal/f;
 

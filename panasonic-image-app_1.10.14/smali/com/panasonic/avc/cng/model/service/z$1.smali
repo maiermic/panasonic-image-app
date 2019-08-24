@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/model/service/z;->c()V
+    value = Lcom/panasonic/avc/cng/model/service/ServiceFactory;->c()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -35,18 +35,18 @@
 
     .prologue
     .line 245
-    invoke-static {}, Lcom/panasonic/avc/cng/model/service/z;->m()Lcom/panasonic/avc/cng/core/c/s;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->m()Lcom/panasonic/avc/cng/core/c/Picmate;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 247
-    invoke-static {}, Lcom/panasonic/avc/cng/model/service/z;->m()Lcom/panasonic/avc/cng/core/c/s;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->m()Lcom/panasonic/avc/cng/core/c/Picmate;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/c/s;->a()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/c/Picmate;->a()V
 
     .line 249
     :cond_0

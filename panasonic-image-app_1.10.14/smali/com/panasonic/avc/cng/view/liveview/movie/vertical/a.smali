@@ -14,7 +14,7 @@
 # instance fields
 .field private a:Landroid/app/Activity;
 
-.field private b:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;
+.field private b:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;
 
 .field private c:Lcom/panasonic/avc/cng/view/parts/p;
 
@@ -126,12 +126,12 @@
     return-void
 .end method
 
-.method static synthetic a(Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;)Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;
+.method static synthetic a(Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;)Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;
     .locals 1
 
     .prologue
     .line 27
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->b:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->b:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;
 
     return-object v0
 .end method
@@ -158,9 +158,9 @@
     iput-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->c:Lcom/panasonic/avc/cng/view/parts/p;
 
     .line 134
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->b:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->b:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;->e:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;->e:Lcom/panasonic/avc/cng/a/c;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->c:Lcom/panasonic/avc/cng/view/parts/p;
 
@@ -186,9 +186,9 @@
     iput-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->g:Lcom/panasonic/avc/cng/view/parts/l;
 
     .line 142
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->b:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->b:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;->h:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;->h:Lcom/panasonic/avc/cng/a/c;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->g:Lcom/panasonic/avc/cng/view/parts/l;
 
@@ -214,9 +214,9 @@
     iput-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->e:Lcom/panasonic/avc/cng/view/parts/i;
 
     .line 150
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->b:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->b:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;->f:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;->f:Lcom/panasonic/avc/cng/a/c;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->e:Lcom/panasonic/avc/cng/view/parts/i;
 
@@ -225,9 +225,9 @@
     invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/a/c;->a(Lcom/panasonic/avc/cng/a/b;)V
 
     .line 152
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->b:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->b:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;->g:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;->g:Lcom/panasonic/avc/cng/a/c;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->e:Lcom/panasonic/avc/cng/view/parts/i;
 
@@ -253,9 +253,9 @@
     iput-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->h:Lcom/panasonic/avc/cng/view/parts/l;
 
     .line 158
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->b:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->b:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;->k:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;->k:Lcom/panasonic/avc/cng/a/c;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->h:Lcom/panasonic/avc/cng/view/parts/l;
 
@@ -281,9 +281,9 @@
     iput-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->d:Lcom/panasonic/avc/cng/view/parts/i;
 
     .line 166
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->b:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->b:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;->i:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;->i:Lcom/panasonic/avc/cng/a/c;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->d:Lcom/panasonic/avc/cng/view/parts/i;
 
@@ -292,9 +292,9 @@
     invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/a/c;->a(Lcom/panasonic/avc/cng/a/b;)V
 
     .line 168
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->b:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->b:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;->j:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;->j:Lcom/panasonic/avc/cng/a/c;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->d:Lcom/panasonic/avc/cng/view/parts/i;
 
@@ -320,9 +320,9 @@
     iput-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->f:Lcom/panasonic/avc/cng/view/parts/d;
 
     .line 174
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->b:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->b:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;->m:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;->m:Lcom/panasonic/avc/cng/a/c;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->f:Lcom/panasonic/avc/cng/view/parts/d;
 
@@ -331,9 +331,9 @@
     invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/a/c;->a(Lcom/panasonic/avc/cng/a/b;)V
 
     .line 175
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->b:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->b:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;->l:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;->l:Lcom/panasonic/avc/cng/a/c;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->f:Lcom/panasonic/avc/cng/view/parts/d;
 
@@ -361,9 +361,9 @@
     iput-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->i:Lcom/panasonic/avc/cng/view/parts/bk;
 
     .line 185
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->b:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->b:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;->t:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;->t:Lcom/panasonic/avc/cng/a/c;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->i:Lcom/panasonic/avc/cng/view/parts/bk;
 
@@ -389,9 +389,9 @@
     iput-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->j:Lcom/panasonic/avc/cng/view/parts/p;
 
     .line 201
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->b:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->b:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;->u:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;->u:Lcom/panasonic/avc/cng/a/c;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->j:Lcom/panasonic/avc/cng/view/parts/p;
 
@@ -400,9 +400,9 @@
     invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/a/c;->a(Lcom/panasonic/avc/cng/a/b;)V
 
     .line 203
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->b:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->b:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;->y:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;->y:Lcom/panasonic/avc/cng/a/c;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->j:Lcom/panasonic/avc/cng/view/parts/p;
 
@@ -428,9 +428,9 @@
     iput-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->p:Lcom/panasonic/avc/cng/view/parts/bc;
 
     .line 209
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->b:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->b:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;->q:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;->q:Lcom/panasonic/avc/cng/a/c;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->p:Lcom/panasonic/avc/cng/view/parts/bc;
 
@@ -439,9 +439,9 @@
     invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/a/c;->a(Lcom/panasonic/avc/cng/a/b;)V
 
     .line 210
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->b:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->b:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;->p:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;->p:Lcom/panasonic/avc/cng/a/c;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->p:Lcom/panasonic/avc/cng/view/parts/bc;
 
@@ -467,9 +467,9 @@
     iput-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->k:Lcom/panasonic/avc/cng/view/parts/r;
 
     .line 218
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->b:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->b:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;->z:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;->z:Lcom/panasonic/avc/cng/a/c;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->k:Lcom/panasonic/avc/cng/view/parts/r;
 
@@ -495,9 +495,9 @@
     iput-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->l:Lcom/panasonic/avc/cng/view/parts/bl;
 
     .line 226
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->b:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->b:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;->s:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;->s:Lcom/panasonic/avc/cng/a/c;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->l:Lcom/panasonic/avc/cng/view/parts/bl;
 
@@ -523,9 +523,9 @@
     iput-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->n:Lcom/panasonic/avc/cng/view/parts/bm;
 
     .line 232
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->b:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->b:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;->A:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;->A:Lcom/panasonic/avc/cng/a/c;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->n:Lcom/panasonic/avc/cng/view/parts/bm;
 
@@ -551,9 +551,9 @@
     iput-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->o:Lcom/panasonic/avc/cng/view/parts/ar;
 
     .line 238
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->b:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->b:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;->B:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;->B:Lcom/panasonic/avc/cng/a/c;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->o:Lcom/panasonic/avc/cng/view/parts/ar;
 
@@ -579,9 +579,9 @@
     iput-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->m:Lcom/panasonic/avc/cng/view/parts/p;
 
     .line 246
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->b:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->b:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;->x:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;->x:Lcom/panasonic/avc/cng/a/c;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->m:Lcom/panasonic/avc/cng/view/parts/p;
 
@@ -607,9 +607,9 @@
     iput-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->q:Lcom/panasonic/avc/cng/view/parts/l;
 
     .line 253
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->b:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->b:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;->v:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;->v:Lcom/panasonic/avc/cng/a/c;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->q:Lcom/panasonic/avc/cng/view/parts/l;
 
@@ -618,9 +618,9 @@
     invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/a/c;->a(Lcom/panasonic/avc/cng/a/b;)V
 
     .line 254
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->b:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->b:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;->r:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;->r:Lcom/panasonic/avc/cng/a/c;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->q:Lcom/panasonic/avc/cng/view/parts/l;
 
@@ -646,9 +646,9 @@
     iput-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->r:Lcom/panasonic/avc/cng/view/parts/l;
 
     .line 260
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->b:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->b:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;->w:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;->w:Lcom/panasonic/avc/cng/a/c;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->r:Lcom/panasonic/avc/cng/view/parts/l;
 
@@ -751,9 +751,9 @@
     iput-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->t:Lcom/panasonic/avc/cng/view/parts/bt;
 
     .line 284
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->b:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->b:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;->o:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;->o:Lcom/panasonic/avc/cng/a/c;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->t:Lcom/panasonic/avc/cng/view/parts/bt;
 
@@ -777,18 +777,18 @@
     iput-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->a:Landroid/app/Activity;
 
     .line 72
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->b:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->b:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;
 
     if-eqz v0, :cond_0
 
     .line 74
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->b:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->b:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;->c()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;->c()V
 
     .line 76
     :cond_0
-    iput-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->b:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;
+    iput-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->b:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;
 
     .line 78
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->d:Lcom/panasonic/avc/cng/view/parts/i;
@@ -816,7 +816,7 @@
     return-void
 .end method
 
-.method public a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;)V
+.method public a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;)V
     .locals 0
 
     .prologue
@@ -824,7 +824,7 @@
     iput-object p1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->a:Landroid/app/Activity;
 
     .line 101
-    iput-object p2, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->b:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;
+    iput-object p2, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->b:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;
 
     .line 103
     invoke-direct {p0}, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->c()V
@@ -854,9 +854,9 @@
     iput-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->u:Lcom/panasonic/avc/cng/view/parts/LiveViewSurface;
 
     .line 116
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->b:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->b:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;->n:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;->n:Lcom/panasonic/avc/cng/a/c;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/a;->u:Lcom/panasonic/avc/cng/view/parts/LiveViewSurface;
 

@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/panasonic/avc/cng/view/setting/j;
+    value = Lcom/panasonic/avc/cng/view/setting/EasyWiFiManager;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -28,11 +28,11 @@
 
 .field public c:Z
 
-.field final synthetic d:Lcom/panasonic/avc/cng/view/setting/j;
+.field final synthetic d:Lcom/panasonic/avc/cng/view/setting/EasyWiFiManager;
 
 
 # direct methods
-.method public constructor <init>(Lcom/panasonic/avc/cng/view/setting/j;Ljava/lang/Class;)V
+.method public constructor <init>(Lcom/panasonic/avc/cng/view/setting/EasyWiFiManager;Ljava/lang/Class;)V
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -46,7 +46,7 @@
     const/4 v0, 0x0
 
     .line 91
-    iput-object p1, p0, Lcom/panasonic/avc/cng/view/setting/j$a;->d:Lcom/panasonic/avc/cng/view/setting/j;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/view/setting/j$a;->d:Lcom/panasonic/avc/cng/view/setting/EasyWiFiManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -68,7 +68,7 @@
     return-void
 .end method
 
-.method public constructor <init>(Lcom/panasonic/avc/cng/view/setting/j;Ljava/lang/Class;Ljava/lang/String;Z)V
+.method public constructor <init>(Lcom/panasonic/avc/cng/view/setting/EasyWiFiManager;Ljava/lang/Class;Ljava/lang/String;Z)V
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -84,7 +84,7 @@
     const/4 v0, 0x0
 
     .line 84
-    iput-object p1, p0, Lcom/panasonic/avc/cng/view/setting/j$a;->d:Lcom/panasonic/avc/cng/view/setting/j;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/view/setting/j$a;->d:Lcom/panasonic/avc/cng/view/setting/EasyWiFiManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

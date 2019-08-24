@@ -2,19 +2,19 @@ package com.panasonic.avc.cng.view.setting;
 
 import android.content.Context;
 import android.os.Handler;
-import com.panasonic.avc.cng.core.p040a.C1450al;
+import com.panasonic.avc.cng.core.p040a.StaticHttpCommand;
 import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.C1892f;
 import com.panasonic.avc.cng.model.C1910l;
-import com.panasonic.avc.cng.model.p051c.C1853h;
+import com.panasonic.avc.cng.model.p051c.ParseTagHighlightSceneInfo;
 import com.panasonic.avc.cng.model.p051c.C1870t;
 import com.panasonic.avc.cng.model.p052d.C1879a;
 import com.panasonic.avc.cng.model.service.C1985b;
 import com.panasonic.avc.cng.model.service.C1985b.C1986a;
-import com.panasonic.avc.cng.model.service.C2253z;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
 import com.panasonic.avc.cng.p038a.C1342a;
 import com.panasonic.avc.cng.p038a.C1344c;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.view.setting.C5541am.C5555h;
 
 /* renamed from: com.panasonic.avc.cng.view.setting.au */
@@ -232,7 +232,7 @@ public class C5630au extends C1342a implements C5555h {
                         C5630au.this.m21009w();
                         C1892f a = C1712b.m6919c().mo4896a();
                         if (a != null) {
-                            C1985b a2 = C2253z.m9679a(C5630au.this.f17441x, a);
+                            C1985b a2 = ServiceFactory.m9679a(C5630au.this.f17441x, a);
                             if (a2 != null) {
                                 a2.mo5185a((C1986a) new C1986a() {
                                     /* renamed from: a */
@@ -309,7 +309,7 @@ public class C5630au extends C1342a implements C5555h {
         this.f17392C = bVar;
         this.f17442y = C1712b.m6919c().mo4896a();
         if (this.f17442y != null) {
-            this.f17443z = C2253z.m9679a(this.f17441x, this.f17442y);
+            this.f17443z = ServiceFactory.m9679a(this.f17441x, this.f17442y);
             if (C1879a.m7547c(this.f17442y, "1.3")) {
                 this.f17418ac = true;
             }
@@ -662,12 +662,12 @@ public class C5630au extends C1342a implements C5555h {
                 String str = "";
                 String format = String.format("http://%s/cam.cgi?mode=%s&type=%s&value=%s&value2=%s", new Object[]{C1712b.m6919c().mo4896a().f5682d, "setsetting", str5, str6, str7});
                 synchronized (C1910l.m7679a()) {
-                    a = C1450al.m5704a(format);
+                    a = StaticHttpCommand.m5704a(format);
                     if (a == null) {
-                        C2261g.m9769c(C5630au.this.f17440w, "Cmd() is null....");
+                        ImageAppLog.error(C5630au.this.f17440w, "Cmd() is null....");
                     }
                 }
-                if (new C1853h(a).mo4771a()) {
+                if (new ParseTagHighlightSceneInfo(a).mo4771a()) {
                     C5630au.this.f17443z.mo5185a((C1986a) null);
                     C5630au.this.f17393D = false;
                     if (aVar2 != null) {
@@ -706,13 +706,13 @@ public class C5630au extends C1342a implements C5555h {
                 String str = "";
                 String format = String.format("http://%s/cam.cgi?mode=%s&type=%s", new Object[]{C1712b.m6919c().mo4896a().f5682d, "getsetting", str});
                 synchronized (C1910l.m7679a()) {
-                    a = C1450al.m5704a(format);
+                    a = StaticHttpCommand.m5704a(format);
                     if (a == null) {
-                        C2261g.m9769c(C5630au.this.f17440w, "Cmd() is null....");
+                        ImageAppLog.error(C5630au.this.f17440w, "Cmd() is null....");
                     }
                 }
                 C5630au.this.f17414Y = new C1870t(a, str).mo4833c();
-                C1853h hVar = new C1853h(a);
+                ParseTagHighlightSceneInfo hVar = new ParseTagHighlightSceneInfo(a);
                 if (hVar != null) {
                     C5630au.this.f17415Z = hVar.mo4783m();
                     if (C5630au.this.f17415Z != null) {

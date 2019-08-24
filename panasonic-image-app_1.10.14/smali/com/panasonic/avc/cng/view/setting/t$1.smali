@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/view/setting/t;->a(Ljava/lang/String;Ljava/lang/String;Lcom/panasonic/avc/cng/view/setting/t$a;)V
+    value = Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;->a(Ljava/lang/String;Ljava/lang/String;Lcom/panasonic/avc/cng/view/setting/t$a;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -24,16 +24,16 @@
 
 .field final synthetic c:Lcom/panasonic/avc/cng/view/setting/t$a;
 
-.field final synthetic d:Lcom/panasonic/avc/cng/view/setting/t;
+.field final synthetic d:Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;
 
 
 # direct methods
-.method constructor <init>(Lcom/panasonic/avc/cng/view/setting/t;Ljava/lang/String;Ljava/lang/String;Lcom/panasonic/avc/cng/view/setting/t$a;)V
+.method constructor <init>(Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;Ljava/lang/String;Ljava/lang/String;Lcom/panasonic/avc/cng/view/setting/t$a;)V
     .locals 0
 
     .prologue
     .line 312
-    iput-object p1, p0, Lcom/panasonic/avc/cng/view/setting/t$1;->d:Lcom/panasonic/avc/cng/view/setting/t;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/view/setting/t$1;->d:Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;
 
     iput-object p2, p0, Lcom/panasonic/avc/cng/view/setting/t$1;->a:Ljava/lang/String;
 
@@ -53,11 +53,11 @@
 
     .prologue
     .line 318
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v1
 
@@ -155,7 +155,7 @@
 
     .line 332
     :try_start_0
-    invoke-static {v3}, Lcom/panasonic/avc/cng/core/a/al;->a(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v3}, Lcom/panasonic/avc/cng/core/a/StaticHttpCommand;->a(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -163,7 +163,7 @@
     if-eqz v0, :cond_4
 
     .line 336
-    invoke-static {v0}, Lcom/panasonic/avc/cng/core/a/al;->a(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/core/a/StaticHttpCommand;->a(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -259,13 +259,13 @@
     div-float/2addr v0, v4
 
     .line 364
-    iget-object v4, p0, Lcom/panasonic/avc/cng/view/setting/t$1;->d:Lcom/panasonic/avc/cng/view/setting/t;
+    iget-object v4, p0, Lcom/panasonic/avc/cng/view/setting/t$1;->d:Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;
 
     invoke-static {v0}, Ljava/lang/String;->valueOf(F)Ljava/lang/String;
 
     move-result-object v7
 
-    invoke-static {v4, v7}, Lcom/panasonic/avc/cng/view/setting/t;->a(Lcom/panasonic/avc/cng/view/setting/t;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v4, v7}, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;->a(Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;Ljava/lang/String;)Ljava/lang/String;
 
     .line 366
     const/high16 v4, 0x41200000    # 10.0f
@@ -275,9 +275,9 @@
     if-ltz v0, :cond_1
 
     .line 368
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/t$1;->d:Lcom/panasonic/avc/cng/view/setting/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/t$1;->d:Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/t;->a(Lcom/panasonic/avc/cng/view/setting/t;)Ljava/lang/String;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;->a(Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -290,19 +290,19 @@
     if-eqz v0, :cond_1
 
     .line 370
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/t$1;->d:Lcom/panasonic/avc/cng/view/setting/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/t$1;->d:Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;
 
-    iget-object v4, p0, Lcom/panasonic/avc/cng/view/setting/t$1;->d:Lcom/panasonic/avc/cng/view/setting/t;
+    iget-object v4, p0, Lcom/panasonic/avc/cng/view/setting/t$1;->d:Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;
 
-    invoke-static {v4}, Lcom/panasonic/avc/cng/view/setting/t;->a(Lcom/panasonic/avc/cng/view/setting/t;)Ljava/lang/String;
+    invoke-static {v4}, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;->a(Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;)Ljava/lang/String;
 
     move-result-object v4
 
     const/4 v7, 0x0
 
-    iget-object v8, p0, Lcom/panasonic/avc/cng/view/setting/t$1;->d:Lcom/panasonic/avc/cng/view/setting/t;
+    iget-object v8, p0, Lcom/panasonic/avc/cng/view/setting/t$1;->d:Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;
 
-    invoke-static {v8}, Lcom/panasonic/avc/cng/view/setting/t;->a(Lcom/panasonic/avc/cng/view/setting/t;)Ljava/lang/String;
+    invoke-static {v8}, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;->a(Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;)Ljava/lang/String;
 
     move-result-object v8
 
@@ -316,39 +316,39 @@
 
     move-result-object v4
 
-    invoke-static {v0, v4}, Lcom/panasonic/avc/cng/view/setting/t;->a(Lcom/panasonic/avc/cng/view/setting/t;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v4}, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;->a(Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;Ljava/lang/String;)Ljava/lang/String;
 
     .line 373
     :cond_1
-    iget-object v4, p0, Lcom/panasonic/avc/cng/view/setting/t$1;->d:Lcom/panasonic/avc/cng/view/setting/t;
+    iget-object v4, p0, Lcom/panasonic/avc/cng/view/setting/t$1;->d:Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;
 
     if-nez v6, :cond_5
 
     const/4 v0, 0x1
 
     :goto_1
-    invoke-static {v4, v0}, Lcom/panasonic/avc/cng/view/setting/t;->a(Lcom/panasonic/avc/cng/view/setting/t;Z)Z
+    invoke-static {v4, v0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;->a(Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;Z)Z
 
     .line 374
-    iget-object v4, p0, Lcom/panasonic/avc/cng/view/setting/t$1;->d:Lcom/panasonic/avc/cng/view/setting/t;
+    iget-object v4, p0, Lcom/panasonic/avc/cng/view/setting/t$1;->d:Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;
 
     if-nez v5, :cond_6
 
     const/4 v0, 0x1
 
     :goto_2
-    invoke-static {v4, v0}, Lcom/panasonic/avc/cng/view/setting/t;->b(Lcom/panasonic/avc/cng/view/setting/t;Z)Z
+    invoke-static {v4, v0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;->b(Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;Z)Z
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
 
     .line 445
     :cond_2
     :goto_3
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/t$1;->d:Lcom/panasonic/avc/cng/view/setting/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/t$1;->d:Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/setting/t;->e(Lcom/panasonic/avc/cng/view/setting/t;Z)Z
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;->e(Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;Z)Z
 
     .line 448
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/t$1;->c:Lcom/panasonic/avc/cng/view/setting/t$a;
@@ -437,29 +437,29 @@
 
     .line 401
     :goto_5
-    iget-object v4, p0, Lcom/panasonic/avc/cng/view/setting/t$1;->d:Lcom/panasonic/avc/cng/view/setting/t;
+    iget-object v4, p0, Lcom/panasonic/avc/cng/view/setting/t$1;->d:Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;
 
-    invoke-static {v4, v0}, Lcom/panasonic/avc/cng/view/setting/t;->b(Lcom/panasonic/avc/cng/view/setting/t;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v4, v0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;->b(Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;Ljava/lang/String;)Ljava/lang/String;
 
     .line 402
-    iget-object v4, p0, Lcom/panasonic/avc/cng/view/setting/t$1;->d:Lcom/panasonic/avc/cng/view/setting/t;
+    iget-object v4, p0, Lcom/panasonic/avc/cng/view/setting/t$1;->d:Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;
 
     if-nez v6, :cond_a
 
     const/4 v0, 0x1
 
     :goto_6
-    invoke-static {v4, v0}, Lcom/panasonic/avc/cng/view/setting/t;->c(Lcom/panasonic/avc/cng/view/setting/t;Z)Z
+    invoke-static {v4, v0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;->c(Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;Z)Z
 
     .line 403
-    iget-object v4, p0, Lcom/panasonic/avc/cng/view/setting/t$1;->d:Lcom/panasonic/avc/cng/view/setting/t;
+    iget-object v4, p0, Lcom/panasonic/avc/cng/view/setting/t$1;->d:Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;
 
     if-nez v5, :cond_b
 
     const/4 v0, 0x1
 
     :goto_7
-    invoke-static {v4, v0}, Lcom/panasonic/avc/cng/view/setting/t;->d(Lcom/panasonic/avc/cng/view/setting/t;Z)Z
+    invoke-static {v4, v0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;->d(Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;Z)Z
     :try_end_3
     .catch Ljava/lang/Exception; {:try_start_3 .. :try_end_3} :catch_0
 
@@ -498,14 +498,14 @@
 
     move-result-object v0
 
-    invoke-static {v4, v0}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v4, v0}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 418
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/t$1;->d:Lcom/panasonic/avc/cng/view/setting/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/t$1;->d:Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/setting/t;->e(Lcom/panasonic/avc/cng/view/setting/t;Z)Z
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;->e(Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;Z)Z
 
     .line 421
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/t$1;->c:Lcom/panasonic/avc/cng/view/setting/t$a;
@@ -619,14 +619,14 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 433
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/t$1;->d:Lcom/panasonic/avc/cng/view/setting/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/t$1;->d:Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/setting/t;->e(Lcom/panasonic/avc/cng/view/setting/t;Z)Z
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;->e(Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;Z)Z
 
     .line 436
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/t$1;->c:Lcom/panasonic/avc/cng/view/setting/t$a;

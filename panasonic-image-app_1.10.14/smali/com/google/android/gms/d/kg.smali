@@ -725,7 +725,7 @@
     invoke-virtual {p0}, Lcom/google/android/gms/d/kg;->Q()V
 
     :try_start_0
-    invoke-static {}, Lcom/google/android/gms/common/stats/a;->a()Lcom/google/android/gms/common/stats/a;
+    invoke-static {}, Lcom/google/android/gms/common/stats/ConnectionTracker;->a()Lcom/google/android/gms/common/stats/ConnectionTracker;
 
     invoke-super {p0}, Lcom/google/android/gms/d/jm;->n()Landroid/content/Context;
 

@@ -15,8 +15,8 @@ import android.widget.ImageView.ScaleType;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import com.panasonic.avc.cng.imageapp.R;
-import com.panasonic.avc.cng.view.parts.C3973ab.C3977a;
-import com.panasonic.avc.cng.view.setting.C5824w;
+import com.panasonic.avc.cng.view.parts.SetPickerPosition.C3977a;
+import com.panasonic.avc.cng.view.setting.LiveSetupMovieFandSSViewModel;
 
 /* renamed from: com.panasonic.avc.cng.view.parts.ah */
 public class C4008ah extends RelativeLayout implements Callback {
@@ -62,15 +62,15 @@ public class C4008ah extends RelativeLayout implements Callback {
     /* access modifiers changed from: private */
 
     /* renamed from: h */
-    public C5824w f13509h;
+    public LiveSetupMovieFandSSViewModel f13509h;
     /* access modifiers changed from: private */
 
     /* renamed from: i */
-    public C3973ab f13510i;
+    public SetPickerPosition f13510i;
     /* access modifiers changed from: private */
 
     /* renamed from: j */
-    public C3973ab f13511j;
+    public SetPickerPosition f13511j;
 
     /* renamed from: k */
     private LinearLayout f13512k;
@@ -156,7 +156,7 @@ public class C4008ah extends RelativeLayout implements Callback {
         this.f13507f.mo9537a();
     }
 
-    public C4008ah(Context context, Activity activity, C5824w wVar, Handler handler) {
+    public C4008ah(Context context, Activity activity, LiveSetupMovieFandSSViewModel wVar, Handler handler) {
         super(context);
         this.f13502a = context;
         this.f13503b = activity;
@@ -310,7 +310,7 @@ public class C4008ah extends RelativeLayout implements Callback {
         this.f13504c.removeAllViews();
         this.f13512k.removeAllViews();
         this.f13514m.removeAllViews();
-        this.f13510i = new C3973ab(this.f13502a, this.f13521t);
+        this.f13510i = new SetPickerPosition(this.f13502a, this.f13521t);
         this.f13510i.setOnPostionChangedListener(new C3977a() {
             /* renamed from: a */
             public void mo9447a(int i, int i2, boolean z) {
@@ -387,7 +387,7 @@ public class C4008ah extends RelativeLayout implements Callback {
         this.f13505d.removeAllViews();
         this.f13513l.removeAllViews();
         this.f13515n.removeAllViews();
-        this.f13511j = new C3973ab(this.f13502a, this.f13521t);
+        this.f13511j = new SetPickerPosition(this.f13502a, this.f13521t);
         this.f13511j.setOnPostionChangedListener(new C3977a() {
             /* renamed from: a */
             public void mo9447a(int i, int i2, boolean z) {

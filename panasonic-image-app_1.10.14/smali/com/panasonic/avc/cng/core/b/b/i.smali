@@ -152,7 +152,7 @@
     .line 67
     iget-object v0, p0, Lcom/panasonic/avc/cng/core/b/b/i;->b:[F
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/core/b/b/e;->a([F)Ljava/nio/FloatBuffer;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/core/b/b/OGLUtility;->a([F)Ljava/nio/FloatBuffer;
 
     move-result-object v0
 

@@ -14,7 +14,7 @@ import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.service.C2210p;
 import com.panasonic.avc.cng.view.common.C2820e;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
 import com.panasonic.avc.cng.view.setting.C5432aa.C5434a;
 
 public class CreatePasswordActivity extends C5432aa {
@@ -169,11 +169,11 @@ public class CreatePasswordActivity extends C5432aa {
                         CreatePasswordActivity.this.f15881h.mo12182a(CreatePasswordActivity.this.f15876c);
                         return;
                     }
-                    C2331d.m10100a((Activity) CreatePasswordActivity.this);
+                    DialogFactory.m10100a((Activity) CreatePasswordActivity.this);
                     if (i == 6) {
-                        C2331d.m10114a((Activity) CreatePasswordActivity.this, C2328a.DIALOG_ID_REGIST_NOT_CONNECTION, (Bundle) null);
+                        DialogFactory.m10114a((Activity) CreatePasswordActivity.this, C2328a.DIALOG_ID_REGIST_NOT_CONNECTION, (Bundle) null);
                     } else {
-                        C2331d.m10114a((Activity) CreatePasswordActivity.this, C2328a.DIALOG_ID_REGIST_INVALID_PASSWORD, (Bundle) null);
+                        DialogFactory.m10114a((Activity) CreatePasswordActivity.this, C2328a.DIALOG_ID_REGIST_INVALID_PASSWORD, (Bundle) null);
                     }
                 }
             }
@@ -182,13 +182,13 @@ public class CreatePasswordActivity extends C5432aa {
             public void mo5074b(int i, int i2) {
                 if (!CreatePasswordActivity.this.isFinishing()) {
                     if (i == 1) {
-                        C2331d.m10100a((Activity) CreatePasswordActivity.this);
+                        DialogFactory.m10100a((Activity) CreatePasswordActivity.this);
                         CreatePasswordActivity.this.f15884k = -1;
                         CreatePasswordActivity.this.finish();
                         return;
                     }
-                    C2331d.m10100a((Activity) CreatePasswordActivity.this);
-                    C2331d.m10114a((Activity) CreatePasswordActivity.this, C2328a.DIALOG_ID_REGIST_INVALID_PASSWORD, (Bundle) null);
+                    DialogFactory.m10100a((Activity) CreatePasswordActivity.this);
+                    DialogFactory.m10114a((Activity) CreatePasswordActivity.this, C2328a.DIALOG_ID_REGIST_INVALID_PASSWORD, (Bundle) null);
                 }
             }
 
@@ -211,14 +211,14 @@ public class CreatePasswordActivity extends C5432aa {
         String obj = this.f15874a.getText().toString();
         String obj2 = this.f15875b.getText().toString();
         if (obj.length() == 0 || obj2.length() == 0) {
-            C2331d.m10114a((Activity) this, C2328a.DIALOG_LACK_PASSWORD, (Bundle) null);
+            DialogFactory.m10114a((Activity) this, C2328a.DIALOG_LACK_PASSWORD, (Bundle) null);
         } else if (8 > obj.length() || obj.length() > 16) {
-            C2331d.m10114a((Activity) this, C2328a.DIALOG_NG_PASSWORD, (Bundle) null);
+            DialogFactory.m10114a((Activity) this, C2328a.DIALOG_NG_PASSWORD, (Bundle) null);
         } else if (!obj.equals(obj2)) {
-            C2331d.m10114a((Activity) this, C2328a.DIALOG_DIFFERENCE_PASSWORD, (Bundle) null);
+            DialogFactory.m10114a((Activity) this, C2328a.DIALOG_DIFFERENCE_PASSWORD, (Bundle) null);
         } else {
             m18969a((View) this.f15882i);
-            C2331d.m10114a((Activity) this, C2328a.ON_PROGRESS, (Bundle) null);
+            DialogFactory.m10114a((Activity) this, C2328a.ON_PROGRESS, (Bundle) null);
             this.f15876c = obj;
             this.f15881h.mo12191c(0);
         }

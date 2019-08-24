@@ -17,7 +17,7 @@ import com.panasonic.avc.cng.util.C2266l;
 import com.panasonic.avc.cng.view.p072a.C2284a;
 import com.panasonic.avc.cng.view.p072a.C2316j;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
 
 public class WirelessTwinCameraActivity extends C2284a implements C0010a {
     /* access modifiers changed from: private */
@@ -75,7 +75,7 @@ public class WirelessTwinCameraActivity extends C2284a implements C0010a {
         this._actMngListener = new C1349a() {
             /* renamed from: a */
             public void mo3228a() {
-                C2331d.m10114a((Activity) WirelessTwinCameraActivity.this, C2328a.ON_NEED_LUMIX_LINK, (Bundle) null);
+                DialogFactory.m10114a((Activity) WirelessTwinCameraActivity.this, C2328a.ON_NEED_LUMIX_LINK, (Bundle) null);
             }
         };
         if (!C2266l.m9845h(this._context)) {
@@ -230,15 +230,15 @@ public class WirelessTwinCameraActivity extends C2284a implements C0010a {
     public void onSingleChoice(C2328a aVar, int i) {
         switch (aVar) {
             case DIALOG_ID_SETUP_WHITE_BALANCE:
-                C2331d.m10100a((Activity) this);
+                DialogFactory.m10100a((Activity) this);
                 this._wirelessTwinCameraViewModel.mo13258b(i);
                 return;
             case DIALOG_ID_SETUP_EXPOSURE:
-                C2331d.m10100a((Activity) this);
+                DialogFactory.m10100a((Activity) this);
                 this._wirelessTwinCameraViewModel.mo13262c(i);
                 return;
             case DIALOG_ID_SETUP_FPS:
-                C2331d.m10100a((Activity) this);
+                DialogFactory.m10100a((Activity) this);
                 this._wirelessTwinCameraViewModel.mo13264d(i);
                 return;
             default:

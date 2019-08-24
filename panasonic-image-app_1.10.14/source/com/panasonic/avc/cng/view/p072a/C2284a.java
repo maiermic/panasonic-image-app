@@ -11,10 +11,10 @@ import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.C1892f;
 import com.panasonic.avc.cng.model.service.C2028e;
-import com.panasonic.avc.cng.model.service.C2253z;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
 import com.panasonic.avc.cng.model.service.upload.usages.logservice.UsagesLogService;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
 
 /* renamed from: com.panasonic.avc.cng.view.a.a */
 public class C2284a extends C2289b {
@@ -22,7 +22,7 @@ public class C2284a extends C2289b {
     public Toast _finishMessageToast;
 
     public void dismissDlg() {
-        C2331d.m10100a((Activity) this);
+        DialogFactory.m10100a((Activity) this);
         super.onBackPressed();
         C1712b.m6913a();
     }
@@ -34,9 +34,9 @@ public class C2284a extends C2289b {
             }
             new Thread(new Runnable() {
                 public void run() {
-                    C2331d.m10114a((Activity) C2284a.this, C2328a.ON_PROGRESS, (Bundle) null);
+                    DialogFactory.m10114a((Activity) C2284a.this, C2328a.ON_PROGRESS, (Bundle) null);
                     C2284a.this.TerminateApp();
-                    C2028e a = C2253z.m9680a((Context) null, false);
+                    C2028e a = ServiceFactory.m9680a((Context) null, false);
                     if (a != null) {
                         a.mo5283g();
                     }

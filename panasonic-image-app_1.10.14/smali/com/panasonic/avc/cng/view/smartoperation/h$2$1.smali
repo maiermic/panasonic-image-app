@@ -60,7 +60,7 @@
 
     iget-object v0, v0, Lcom/panasonic/avc/cng/view/smartoperation/h$2;->d:Lcom/panasonic/avc/cng/view/smartoperation/h;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/smartoperation/h;->j(Lcom/panasonic/avc/cng/view/smartoperation/h;)Lcom/panasonic/avc/cng/core/c/s;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/smartoperation/h;->j(Lcom/panasonic/avc/cng/view/smartoperation/h;)Lcom/panasonic/avc/cng/core/c/Picmate;
 
     move-result-object v0
 
@@ -88,7 +88,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v0, v1, v2}, Lcom/panasonic/avc/cng/core/c/s;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Lcom/panasonic/avc/cng/core/c/Picmate;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 367
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/smartoperation/h$2$1;->a:Lcom/panasonic/avc/cng/view/smartoperation/h$2;

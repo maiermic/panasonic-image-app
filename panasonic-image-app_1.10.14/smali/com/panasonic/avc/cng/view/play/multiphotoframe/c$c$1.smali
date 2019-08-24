@@ -62,9 +62,9 @@
 
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/c$c$1;->d:Lcom/panasonic/avc/cng/view/play/multiphotoframe/c$c;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/c$c;->a:Lcom/panasonic/avc/cng/view/play/multiphotoframe/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/c$c;->a:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameBrowseViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/c;->c(Lcom/panasonic/avc/cng/view/play/multiphotoframe/c;)Landroid/content/Context;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameBrowseViewModel;->c(Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameBrowseViewModel;)Landroid/content/Context;
 
     move-result-object v0
 
@@ -82,9 +82,9 @@
     .line 578
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/c$c$1;->d:Lcom/panasonic/avc/cng/view/play/multiphotoframe/c$c;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/c$c;->a:Lcom/panasonic/avc/cng/view/play/multiphotoframe/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/c$c;->a:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameBrowseViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/c;->d(Lcom/panasonic/avc/cng/view/play/multiphotoframe/c;)Landroid/content/Context;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameBrowseViewModel;->d(Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameBrowseViewModel;)Landroid/content/Context;
 
     move-result-object v0
 
@@ -98,9 +98,9 @@
     .line 582
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/c$c$1;->d:Lcom/panasonic/avc/cng/view/play/multiphotoframe/c$c;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/c$c;->a:Lcom/panasonic/avc/cng/view/play/multiphotoframe/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/c$c;->a:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameBrowseViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/c;->e(Lcom/panasonic/avc/cng/view/play/multiphotoframe/c;)Lcom/panasonic/avc/cng/view/play/multiphotoframe/c$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameBrowseViewModel;->e(Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameBrowseViewModel;)Lcom/panasonic/avc/cng/view/play/multiphotoframe/c$a;
 
     move-result-object v0
 
@@ -124,9 +124,9 @@
     .line 586
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/c$c$1;->d:Lcom/panasonic/avc/cng/view/play/multiphotoframe/c$c;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/c$c;->a:Lcom/panasonic/avc/cng/view/play/multiphotoframe/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/c$c;->a:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameBrowseViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/c;->e(Lcom/panasonic/avc/cng/view/play/multiphotoframe/c;)Lcom/panasonic/avc/cng/view/play/multiphotoframe/c$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameBrowseViewModel;->e(Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameBrowseViewModel;)Lcom/panasonic/avc/cng/view/play/multiphotoframe/c$a;
 
     move-result-object v0
 
@@ -147,9 +147,9 @@
     .line 590
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/c$c$1;->d:Lcom/panasonic/avc/cng/view/play/multiphotoframe/c$c;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/c$c;->a:Lcom/panasonic/avc/cng/view/play/multiphotoframe/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/c$c;->a:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameBrowseViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/c;->e(Lcom/panasonic/avc/cng/view/play/multiphotoframe/c;)Lcom/panasonic/avc/cng/view/play/multiphotoframe/c$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameBrowseViewModel;->e(Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameBrowseViewModel;)Lcom/panasonic/avc/cng/view/play/multiphotoframe/c$a;
 
     move-result-object v0
 

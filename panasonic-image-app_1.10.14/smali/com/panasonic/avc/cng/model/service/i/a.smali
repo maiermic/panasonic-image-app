@@ -33,7 +33,7 @@
 
 .field private h:Landroid/app/Activity;
 
-.field private i:Lcom/panasonic/avc/cng/view/common/a/d;
+.field private i:Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;
 
 .field private j:I
 
@@ -121,7 +121,7 @@
 
     const-string v1, "\u30b3\u30f3\u30b9\u30c8\u30e9\u30af\u30bf"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 135
     const-string v0, "\u2605NfcRemoteWatchService"
@@ -150,7 +150,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 136
     return-void
@@ -304,12 +304,12 @@
     return-void
 .end method
 
-.method static synthetic e(Lcom/panasonic/avc/cng/model/service/i/a;)Lcom/panasonic/avc/cng/view/common/a/d;
+.method static synthetic e(Lcom/panasonic/avc/cng/model/service/i/a;)Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;
     .locals 1
 
     .prologue
     .line 26
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/i/a;->i:Lcom/panasonic/avc/cng/view/common/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/i/a;->i:Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;
 
     return-object v0
 .end method
@@ -369,7 +369,7 @@
 
     const-string v2, "onTagDetected"
 
-    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 689
     iget-boolean v1, p0, Lcom/panasonic/avc/cng/model/service/i/a;->p:Z
@@ -381,7 +381,7 @@
 
     const-string v1, "_nfcProcessing = ture"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 1203
     :cond_0
@@ -394,7 +394,7 @@
 
     const-string v2, "_nfcProcessing = false"
 
-    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 699
     iput-boolean v3, p0, Lcom/panasonic/avc/cng/model/service/i/a;->p:Z
@@ -419,21 +419,21 @@
 
     const-string v2, "OnTagDetected1"
 
-    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 715
     const-string v1, "\u2605NfcRemoteWatchService"
 
     const-string v2, "OnTagDetected1"
 
-    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 719
     const-string v1, "\u2605NfcRemoteWatchService"
 
     const-string v2, "OnTagDetected2"
 
-    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 722
     iget-boolean v1, p0, Lcom/panasonic/avc/cng/model/service/i/a;->e:Z
@@ -441,7 +441,7 @@
     if-eqz v1, :cond_a
 
     .line 724
-    iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/i/a;->i:Lcom/panasonic/avc/cng/view/common/a/d;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/i/a;->i:Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;
 
     const/16 v2, 0xb0
 
@@ -449,7 +449,7 @@
 
     const/4 v5, 0x4
 
-    invoke-virtual {v1, v2, v4, v5}, Lcom/panasonic/avc/cng/view/common/a/d;->a(III)[B
+    invoke-virtual {v1, v2, v4, v5}, Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;->a(III)[B
 
     move-result-object v1
 
@@ -458,15 +458,15 @@
 
     const-string v2, "\u2605NFC FeRAM 0x00b0:"
 
-    invoke-static {v1}, Lcom/panasonic/avc/cng/view/common/a/d;->a([B)Ljava/lang/String;
+    invoke-static {v1}, Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;->a([B)Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-static {v2, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v2, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 726
     :cond_3
-    iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/i/a;->i:Lcom/panasonic/avc/cng/view/common/a/d;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/i/a;->i:Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;
 
     const/16 v2, 0xc0
 
@@ -474,7 +474,7 @@
 
     const/4 v5, 0x4
 
-    invoke-virtual {v1, v2, v4, v5}, Lcom/panasonic/avc/cng/view/common/a/d;->a(III)[B
+    invoke-virtual {v1, v2, v4, v5}, Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;->a(III)[B
 
     move-result-object v1
 
@@ -483,15 +483,15 @@
 
     const-string v2, "\u2605NFC FeRAM 0x00c0:"
 
-    invoke-static {v1}, Lcom/panasonic/avc/cng/view/common/a/d;->a([B)Ljava/lang/String;
+    invoke-static {v1}, Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;->a([B)Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-static {v2, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v2, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 728
     :cond_4
-    iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/i/a;->i:Lcom/panasonic/avc/cng/view/common/a/d;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/i/a;->i:Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;
 
     const/16 v2, 0xd0
 
@@ -499,7 +499,7 @@
 
     const/4 v5, 0x4
 
-    invoke-virtual {v1, v2, v4, v5}, Lcom/panasonic/avc/cng/view/common/a/d;->a(III)[B
+    invoke-virtual {v1, v2, v4, v5}, Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;->a(III)[B
 
     move-result-object v1
 
@@ -508,15 +508,15 @@
 
     const-string v2, "\u2605NFC FeRAM 0x00d0:"
 
-    invoke-static {v1}, Lcom/panasonic/avc/cng/view/common/a/d;->a([B)Ljava/lang/String;
+    invoke-static {v1}, Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;->a([B)Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-static {v2, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v2, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 730
     :cond_5
-    iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/i/a;->i:Lcom/panasonic/avc/cng/view/common/a/d;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/i/a;->i:Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;
 
     const/16 v2, 0xe0
 
@@ -524,7 +524,7 @@
 
     const/4 v5, 0x4
 
-    invoke-virtual {v1, v2, v4, v5}, Lcom/panasonic/avc/cng/view/common/a/d;->a(III)[B
+    invoke-virtual {v1, v2, v4, v5}, Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;->a(III)[B
 
     move-result-object v1
 
@@ -533,15 +533,15 @@
 
     const-string v2, "\u2605NFC FeRAM 0x00e0:"
 
-    invoke-static {v1}, Lcom/panasonic/avc/cng/view/common/a/d;->a([B)Ljava/lang/String;
+    invoke-static {v1}, Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;->a([B)Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-static {v2, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v2, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 732
     :cond_6
-    iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/i/a;->i:Lcom/panasonic/avc/cng/view/common/a/d;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/i/a;->i:Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;
 
     const/16 v2, 0xf0
 
@@ -549,7 +549,7 @@
 
     const/4 v5, 0x4
 
-    invoke-virtual {v1, v2, v4, v5}, Lcom/panasonic/avc/cng/view/common/a/d;->a(III)[B
+    invoke-virtual {v1, v2, v4, v5}, Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;->a(III)[B
 
     move-result-object v1
 
@@ -558,15 +558,15 @@
 
     const-string v2, "\u2605NFC FeRAM 0x00f0:"
 
-    invoke-static {v1}, Lcom/panasonic/avc/cng/view/common/a/d;->a([B)Ljava/lang/String;
+    invoke-static {v1}, Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;->a([B)Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-static {v2, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v2, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 734
     :cond_7
-    iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/i/a;->i:Lcom/panasonic/avc/cng/view/common/a/d;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/i/a;->i:Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;
 
     const/16 v2, 0x100
 
@@ -574,7 +574,7 @@
 
     const/4 v5, 0x4
 
-    invoke-virtual {v1, v2, v4, v5}, Lcom/panasonic/avc/cng/view/common/a/d;->a(III)[B
+    invoke-virtual {v1, v2, v4, v5}, Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;->a(III)[B
 
     move-result-object v1
 
@@ -583,15 +583,15 @@
 
     const-string v2, "\u2605NFC FeRAM 0x0100:"
 
-    invoke-static {v1}, Lcom/panasonic/avc/cng/view/common/a/d;->a([B)Ljava/lang/String;
+    invoke-static {v1}, Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;->a([B)Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-static {v2, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v2, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 736
     :cond_8
-    iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/i/a;->i:Lcom/panasonic/avc/cng/view/common/a/d;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/i/a;->i:Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;
 
     const/16 v2, 0x110
 
@@ -599,7 +599,7 @@
 
     const/4 v5, 0x4
 
-    invoke-virtual {v1, v2, v4, v5}, Lcom/panasonic/avc/cng/view/common/a/d;->a(III)[B
+    invoke-virtual {v1, v2, v4, v5}, Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;->a(III)[B
 
     move-result-object v1
 
@@ -608,15 +608,15 @@
 
     const-string v2, "\u2605NFC FeRAM 0x0110:"
 
-    invoke-static {v1}, Lcom/panasonic/avc/cng/view/common/a/d;->a([B)Ljava/lang/String;
+    invoke-static {v1}, Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;->a([B)Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-static {v2, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v2, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 738
     :cond_9
-    iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/i/a;->i:Lcom/panasonic/avc/cng/view/common/a/d;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/i/a;->i:Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;
 
     const/16 v2, 0x120
 
@@ -624,7 +624,7 @@
 
     const/4 v5, 0x4
 
-    invoke-virtual {v1, v2, v4, v5}, Lcom/panasonic/avc/cng/view/common/a/d;->a(III)[B
+    invoke-virtual {v1, v2, v4, v5}, Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;->a(III)[B
 
     move-result-object v1
 
@@ -633,11 +633,11 @@
 
     const-string v2, "\u2605NFC FeRAM 0x0120:"
 
-    invoke-static {v1}, Lcom/panasonic/avc/cng/view/common/a/d;->a([B)Ljava/lang/String;
+    invoke-static {v1}, Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;->a([B)Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-static {v2, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v2, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 749
     :cond_a
@@ -645,17 +645,17 @@
 
     const-string v2, "OnTagDetected3"
 
-    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 750
     const-string v1, "\u2605NfcRemoteWatchService"
 
     const-string v2, "OnTagDetected3"
 
-    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 755
-    iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/i/a;->i:Lcom/panasonic/avc/cng/view/common/a/d;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/i/a;->i:Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;
 
     const/16 v2, 0xb0
 
@@ -663,7 +663,7 @@
 
     const/4 v5, 0x4
 
-    invoke-virtual {v1, v2, v4, v5}, Lcom/panasonic/avc/cng/view/common/a/d;->a(III)[B
+    invoke-virtual {v1, v2, v4, v5}, Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;->a(III)[B
 
     move-result-object v4
 
@@ -672,7 +672,7 @@
 
     const-string v2, "transceiveReadCommand(0x00B0, 16, 4) Finish"
 
-    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 760
     const-string v1, ""
@@ -768,7 +768,7 @@
 
     move-result-object v2
 
-    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 786
     const/4 v1, 0x6
@@ -818,7 +818,7 @@
 
     const-string v2, "RfidStatusException"
 
-    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 1099
     invoke-direct {p0, v0}, Lcom/panasonic/avc/cng/model/service/i/a;->a(Lcom/panasonic/avc/cng/view/common/a/e;)V
@@ -834,7 +834,7 @@
 
     const-string v1, "catch (RfidStatusException e)"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 1107
     iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/i/a;->n:Lcom/panasonic/avc/cng/model/service/u$a;
@@ -930,7 +930,7 @@
 
     const-string v7, "SharedPreferences Setting Finish"
 
-    invoke-static {v6, v7}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v6, v7}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 808
     iget-boolean v6, p0, Lcom/panasonic/avc/cng/model/service/i/a;->r:Z
@@ -949,7 +949,7 @@
 
     const-string v2, "NFC Connect:\u521d\u898b2\u5ea6\u76ee\u30bf\u30c3\u30c1"
 
-    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 815
     iget-object v1, v5, Lcom/panasonic/avc/cng/model/o;->b:Ljava/lang/String;
@@ -973,7 +973,7 @@
 
     const-string v1, "VianaCameraMac == null || VianaCameraMac=_cameraMac"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 821
     iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/i/a;->n:Lcom/panasonic/avc/cng/model/service/u$a;
@@ -996,7 +996,7 @@
 
     const-string v2, "IOException"
 
-    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 1124
     invoke-direct {p0, v0}, Lcom/panasonic/avc/cng/model/service/i/a;->a(Ljava/io/IOException;)V
@@ -1012,7 +1012,7 @@
 
     const-string v1, "catch (IOException e)"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 1132
     iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/i/a;->n:Lcom/panasonic/avc/cng/model/service/u$a;
@@ -1046,7 +1046,7 @@
     .line 828
     :cond_11
     :try_start_2
-    iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/i/a;->i:Lcom/panasonic/avc/cng/view/common/a/d;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/i/a;->i:Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;
 
     const/16 v2, 0x4200
 
@@ -1054,7 +1054,7 @@
 
     const/4 v5, 0x4
 
-    invoke-virtual {v1, v2, v4, v5}, Lcom/panasonic/avc/cng/view/common/a/d;->a(III)[B
+    invoke-virtual {v1, v2, v4, v5}, Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;->a(III)[B
 
     move-result-object v1
 
@@ -1087,7 +1087,7 @@
 
     move-result-object v6
 
-    invoke-static {v5, v6}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v5, v6}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 840
     if-nez v4, :cond_13
@@ -1240,7 +1240,7 @@
 
     const-string v2, "FelicaException"
 
-    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 1150
     invoke-direct {p0, v0}, Lcom/panasonic/avc/cng/model/service/i/a;->a(Lcom/felicanetworks/mfc/m;)V
@@ -1256,7 +1256,7 @@
 
     const-string v1, "catch (FelicaException e)"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 1158
     iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/i/a;->n:Lcom/panasonic/avc/cng/model/service/u$a;
@@ -1300,7 +1300,7 @@
 
     const-string v1, "Password\u304c\u53d6\u308c\u306a\u304b\u3063\u305f"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 886
     iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/i/a;->f:Landroid/os/Handler;
@@ -1339,7 +1339,7 @@
 
     const-string v2, "Exception"
 
-    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 1176
     if-eqz v0, :cond_15
@@ -1356,7 +1356,7 @@
 
     const-string v1, "catch (Exception e)"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 1186
     invoke-direct {p0}, Lcom/panasonic/avc/cng/model/service/i/a;->m()V
@@ -1369,7 +1369,7 @@
 
     const-string v1, "catch (Exception e)"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 1191
     iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/i/a;->n:Lcom/panasonic/avc/cng/model/service/u$a;
@@ -1414,7 +1414,7 @@
 
     const-string v6, "NFC Connect:\u521d\u898b2\u5ea6\u76ee\u4ee5\u5916"
 
-    invoke-static {v3, v6}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v3, v6}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 955
     new-instance v3, Lcom/panasonic/avc/cng/model/service/c/c;
@@ -1445,7 +1445,7 @@
 
     const-string v8, "MAC\u30a2\u30c9\u30ec\u30b9\u306e\u6587\u5b57\u5217\u304b\u3089\u300c:\u300d\u3092\u524a\u9664\u3000Finish"
 
-    invoke-static {v7, v8}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v7, v8}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 967
     :goto_5
@@ -1477,7 +1477,7 @@
 
     const-string v3, "\u30b9\u30de\u30db\u60c5\u5831\u3092OS\u304b\u3089\u53d6\u5f97\u3000Finish"
 
-    invoke-static {v0, v3}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v3}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 981
     const/4 v0, 0x2
@@ -1488,30 +1488,30 @@
     aput-byte v0, v6, v3
 
     .line 983
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/i/a;->i:Lcom/panasonic/avc/cng/view/common/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/i/a;->i:Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;
 
     const/16 v3, 0xe0
 
     const/4 v7, 0x4
 
-    invoke-virtual {v0, v3, v6, v7}, Lcom/panasonic/avc/cng/view/common/a/d;->a(I[BI)V
+    invoke-virtual {v0, v3, v6, v7}, Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;->a(I[BI)V
 
     .line 984
     const-string v0, "\u2605NfcRemoteWatchService"
 
     const-string v3, "\u30b9\u30de\u30dbMAC\u3000Write\u3000Finish"
 
-    invoke-static {v0, v3}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v3}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 989
     const-string v0, "\u2605NfcRemoteWatchService"
 
     const-string v3, "\u30ab\u30e1\u30e9\u72b6\u614b\u30d5\u30e9\u30b0\u78ba\u8a8d\u3000Start"
 
-    invoke-static {v0, v3}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v3}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 990
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/i/a;->i:Lcom/panasonic/avc/cng/view/common/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/i/a;->i:Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;
 
     const/16 v3, 0x4000
 
@@ -1519,7 +1519,7 @@
 
     const/4 v7, 0x4
 
-    invoke-virtual {v0, v3, v6, v7}, Lcom/panasonic/avc/cng/view/common/a/d;->a(III)[B
+    invoke-virtual {v0, v3, v6, v7}, Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;->a(III)[B
 
     move-result-object v0
 
@@ -1528,7 +1528,7 @@
 
     const-string v6, "\u30ab\u30e1\u30e9\u72b6\u614b\u30d5\u30e9\u30b0\u78ba\u8a8d\u3000End"
 
-    invoke-static {v3, v6}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v3, v6}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 995
     if-nez v0, :cond_19
@@ -1538,14 +1538,14 @@
 
     const-string v1, "byteWakeState == null"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 998
     const-string v0, "\u2605NfcRemoteWatchService"
 
     const-string v1, "byteWakeState == null"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 1000
     iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/i/a;->n:Lcom/panasonic/avc/cng/model/service/u$a;
@@ -1591,14 +1591,14 @@
 
     const-string v1, " 2\u30d3\u30c3\u30c8\u76ee\u304c\u7acb\u3063\u3066\u3044\u308b"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 1014
     const-string v0, "\u2605NfcRemoteWatchService"
 
     const-string v1, "byteWakeState ==  2\u30d3\u30c3\u30c8\u76ee\u304c\u7acb\u3063\u3066\u3044\u308b"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 1016
     iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/i/a;->n:Lcom/panasonic/avc/cng/model/service/u$a;
@@ -1614,7 +1614,7 @@
 
     .line 1025
     :cond_1a
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/i/a;->i:Lcom/panasonic/avc/cng/view/common/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/i/a;->i:Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;
 
     const/16 v3, 0xb0
 
@@ -1622,14 +1622,14 @@
 
     const/4 v7, 0x4
 
-    invoke-virtual {v0, v3, v6, v7}, Lcom/panasonic/avc/cng/view/common/a/d;->a(III)[B
+    invoke-virtual {v0, v3, v6, v7}, Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;->a(III)[B
 
     move-result-object v0
 
     .line 1026
     const-string v3, "\u2605\u2605VIANA FeRAM 0x00b0:"
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/a/d;->a([B)Ljava/lang/String;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;->a([B)Ljava/lang/String;
 
     move-result-object v0
 
@@ -1691,7 +1691,7 @@
 
     const-string v1, "null"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 1054
     :goto_6
@@ -1717,7 +1717,7 @@
 
     iget-object v1, v5, Lcom/panasonic/avc/cng/model/o;->b:Ljava/lang/String;
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_6
 
@@ -1742,7 +1742,7 @@
 
     const-string v1, "null"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     goto/16 :goto_0
 
@@ -1752,7 +1752,7 @@
 
     iget-object v1, v5, Lcom/panasonic/avc/cng/model/o;->b:Ljava/lang/String;
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
     :try_end_4
     .catch Lcom/panasonic/avc/cng/view/common/a/e; {:try_start_4 .. :try_end_4} :catch_0
     .catch Ljava/io/IOException; {:try_start_4 .. :try_end_4} :catch_1
@@ -1980,9 +1980,9 @@
     iput-boolean v3, p0, Lcom/panasonic/avc/cng/model/service/i/a;->t:Z
 
     .line 191
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/i/a;->i:Lcom/panasonic/avc/cng/view/common/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/i/a;->i:Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;
 
-    invoke-virtual {v0, v3}, Lcom/panasonic/avc/cng/view/common/a/d;->b(Z)I
+    invoke-virtual {v0, v3}, Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;->b(Z)I
 
     move-result v0
 
@@ -2015,9 +2015,9 @@
     invoke-virtual {p0}, Lcom/panasonic/avc/cng/model/service/i/a;->e()V
 
     .line 233
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/i/a;->i:Lcom/panasonic/avc/cng/view/common/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/i/a;->i:Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;
 
-    invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/view/common/a/d;->a(Z)V
+    invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;->a(Z)V
 
     .line 246
     :cond_1
@@ -2030,12 +2030,12 @@
 
     const-string v1, "checkFelicaAvailability"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 222
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/i/a;->i:Lcom/panasonic/avc/cng/view/common/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/i/a;->i:Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/common/a/d;->c()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;->c()V
 
     goto :goto_0
 
@@ -2056,9 +2056,9 @@
     invoke-virtual {p0}, Lcom/panasonic/avc/cng/model/service/i/a;->e()V
 
     .line 241
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/i/a;->i:Lcom/panasonic/avc/cng/view/common/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/i/a;->i:Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;
 
-    invoke-virtual {v0, v3}, Lcom/panasonic/avc/cng/view/common/a/d;->a(Z)V
+    invoke-virtual {v0, v3}, Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;->a(Z)V
 
     goto :goto_1
 .end method
@@ -2134,7 +2134,7 @@
 
     const-string v1, "Initialize"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 145
     iput-object p3, p0, Lcom/panasonic/avc/cng/model/service/i/a;->f:Landroid/os/Handler;
@@ -2183,7 +2183,7 @@
 
     const-string v1, "new NfcWrapper"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 159
     iput-boolean v3, p0, Lcom/panasonic/avc/cng/model/service/i/a;->t:Z
@@ -2202,13 +2202,13 @@
 
     .line 170
     :try_start_0
-    new-instance v0, Lcom/panasonic/avc/cng/view/common/a/d;
+    new-instance v0, Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/i/a;->g:Landroid/content/Context;
 
-    invoke-direct {v0, v1}, Lcom/panasonic/avc/cng/view/common/a/d;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, v1}, Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/model/service/i/a;->i:Lcom/panasonic/avc/cng/view/common/a/d;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/model/service/i/a;->i:Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -2218,12 +2218,12 @@
 
     const-string v1, "setStatusListener"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 179
     iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/i/a;->m:Lcom/panasonic/avc/cng/view/common/a/d$a;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/a/d;->a(Lcom/panasonic/avc/cng/view/common/a/d$a;)V
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;->a(Lcom/panasonic/avc/cng/view/common/a/d$a;)V
 
     .line 181
     iput v2, p0, Lcom/panasonic/avc/cng/model/service/i/a;->j:I
@@ -2247,9 +2247,9 @@
 
     .prologue
     .line 677
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/i/a;->i:Lcom/panasonic/avc/cng/view/common/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/i/a;->i:Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;
 
-    invoke-virtual {v0, p1}, Lcom/panasonic/avc/cng/view/common/a/d;->a(Landroid/content/Intent;)V
+    invoke-virtual {v0, p1}, Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;->a(Landroid/content/Intent;)V
 
     .line 678
     return-void
@@ -2423,7 +2423,7 @@
 
     const-string v2, "StartNfcWatch"
 
-    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 500
     invoke-virtual {p0}, Lcom/panasonic/avc/cng/model/service/i/a;->e()V
@@ -2434,11 +2434,11 @@
     if-ne v0, v3, :cond_1
 
     .line 505
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/i/a;->i:Lcom/panasonic/avc/cng/view/common/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/i/a;->i:Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;
 
     const/4 v2, 0x1
 
-    invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/view/common/a/d;->a(Z)V
+    invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;->a(Z)V
 
     .line 511
     :cond_0
@@ -2457,11 +2457,11 @@
     if-ne v0, v2, :cond_0
 
     .line 509
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/i/a;->i:Lcom/panasonic/avc/cng/view/common/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/i/a;->i:Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;
 
     const/4 v2, 0x0
 
-    invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/view/common/a/d;->a(Z)V
+    invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;->a(Z)V
 
     goto :goto_0
 
@@ -2485,7 +2485,7 @@
 
     const-string v1, "rotate"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 549
     iput-object p3, p0, Lcom/panasonic/avc/cng/model/service/i/a;->f:Landroid/os/Handler;
@@ -2503,9 +2503,9 @@
     invoke-virtual {p0}, Lcom/panasonic/avc/cng/model/service/i/a;->e()V
 
     .line 558
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/i/a;->i:Lcom/panasonic/avc/cng/view/common/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/i/a;->i:Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/common/a/d;->c()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;->c()V
 
     .line 564
     return-void
@@ -2539,7 +2539,7 @@
 
     const-string v2, "StartNfcWatchWithStopTimer"
 
-    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 524
     invoke-virtual {p0}, Lcom/panasonic/avc/cng/model/service/i/a;->j()V
@@ -2553,11 +2553,11 @@
     if-ne v0, v3, :cond_1
 
     .line 532
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/i/a;->i:Lcom/panasonic/avc/cng/view/common/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/i/a;->i:Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;
 
     const/4 v2, 0x1
 
-    invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/view/common/a/d;->a(Z)V
+    invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;->a(Z)V
 
     .line 538
     :cond_0
@@ -2576,11 +2576,11 @@
     if-ne v0, v2, :cond_0
 
     .line 536
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/i/a;->i:Lcom/panasonic/avc/cng/view/common/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/i/a;->i:Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;
 
     const/4 v2, 0x0
 
-    invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/view/common/a/d;->a(Z)V
+    invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;->a(Z)V
 
     goto :goto_0
 
@@ -2631,10 +2631,10 @@
 
     const-string v1, ""
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 573
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/i/a;->i:Lcom/panasonic/avc/cng/view/common/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/i/a;->i:Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;
 
     if-nez v0, :cond_0
 
@@ -2647,11 +2647,11 @@
     invoke-virtual {p0}, Lcom/panasonic/avc/cng/model/service/i/a;->e()V
 
     .line 582
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/i/a;->i:Lcom/panasonic/avc/cng/view/common/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/i/a;->i:Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/common/a/d;->b(Z)I
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;->b(Z)I
 
     move-result v0
 
@@ -2669,17 +2669,17 @@
     invoke-virtual {p0}, Lcom/panasonic/avc/cng/model/service/i/a;->e()V
 
     .line 593
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/i/a;->i:Lcom/panasonic/avc/cng/view/common/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/i/a;->i:Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;
 
-    invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/view/common/a/d;->a(Z)V
+    invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;->a(Z)V
 
     goto :goto_0
 
     .line 599
     :cond_1
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/i/a;->i:Lcom/panasonic/avc/cng/view/common/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/i/a;->i:Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/common/a/d;->c()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;->c()V
 
     goto :goto_0
 .end method
@@ -2699,22 +2699,22 @@
 
     const-string v2, "Disconnect"
 
-    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 625
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/i/a;->i:Lcom/panasonic/avc/cng/view/common/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/i/a;->i:Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;
 
     if-eqz v0, :cond_0
 
     .line 627
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/i/a;->i:Lcom/panasonic/avc/cng/view/common/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/i/a;->i:Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/common/a/d;->b()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;->b()V
 
     .line 628
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/i/a;->i:Lcom/panasonic/avc/cng/view/common/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/i/a;->i:Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/common/a/d;->d()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;->d()V
 
     .line 630
     :cond_0
@@ -2749,7 +2749,7 @@
 
     const-string v2, "StopNfcWatch"
 
-    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 613
     invoke-virtual {p0}, Lcom/panasonic/avc/cng/model/service/i/a;->e()V
@@ -2786,7 +2786,7 @@
 
     const-string v2, ""
 
-    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 641
     invoke-virtual {p0}, Lcom/panasonic/avc/cng/model/service/i/a;->e()V
@@ -2794,7 +2794,7 @@
     .line 643
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/model/service/i/a;->i:Lcom/panasonic/avc/cng/view/common/a/d;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/model/service/i/a;->i:Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;
 
     .line 645
     const/4 v0, 0x0
@@ -2855,11 +2855,11 @@
 
     .prologue
     .line 673
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/i/a;->i:Lcom/panasonic/avc/cng/view/common/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/i/a;->i:Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/i/a;->h:Landroid/app/Activity;
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/common/a/d;->a(Landroid/app/Activity;)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;->a(Landroid/app/Activity;)V
 
     .line 674
     return-void
@@ -2870,11 +2870,11 @@
 
     .prologue
     .line 668
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/i/a;->i:Lcom/panasonic/avc/cng/view/common/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/i/a;->i:Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/i/a;->h:Landroid/app/Activity;
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/common/a/d;->b(Landroid/app/Activity;)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;->b(Landroid/app/Activity;)V
 
     .line 669
     return-void

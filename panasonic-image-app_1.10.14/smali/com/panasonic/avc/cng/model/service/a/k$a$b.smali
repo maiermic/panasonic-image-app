@@ -302,11 +302,11 @@
 
     iget-object v3, v3, Lcom/panasonic/avc/cng/model/service/a/k$a;->a:Lcom/panasonic/avc/cng/model/service/a/k;
 
-    invoke-static {v3}, Lcom/panasonic/avc/cng/model/service/a/k;->a(Lcom/panasonic/avc/cng/model/service/a/k;)Lcom/panasonic/avc/cng/core/c/s;
+    invoke-static {v3}, Lcom/panasonic/avc/cng/model/service/a/k;->a(Lcom/panasonic/avc/cng/model/service/a/k;)Lcom/panasonic/avc/cng/core/c/Picmate;
 
     move-result-object v3
 
-    invoke-virtual {v3}, Lcom/panasonic/avc/cng/core/c/s;->j()Z
+    invoke-virtual {v3}, Lcom/panasonic/avc/cng/core/c/Picmate;->j()Z
 
     move-result v3
 
@@ -318,7 +318,7 @@
 
     iget-object v3, v3, Lcom/panasonic/avc/cng/model/service/a/k$a;->a:Lcom/panasonic/avc/cng/model/service/a/k;
 
-    invoke-static {v3}, Lcom/panasonic/avc/cng/model/service/a/k;->a(Lcom/panasonic/avc/cng/model/service/a/k;)Lcom/panasonic/avc/cng/core/c/s;
+    invoke-static {v3}, Lcom/panasonic/avc/cng/model/service/a/k;->a(Lcom/panasonic/avc/cng/model/service/a/k;)Lcom/panasonic/avc/cng/core/c/Picmate;
 
     move-result-object v3
 
@@ -328,7 +328,7 @@
 
     move-result-object v5
 
-    invoke-virtual {v3, v5, v1}, Lcom/panasonic/avc/cng/core/c/s;->a(Lcom/panasonic/avc/cng/core/c/n;I)Landroid/graphics/Bitmap;
+    invoke-virtual {v3, v5, v1}, Lcom/panasonic/avc/cng/core/c/Picmate;->a(Lcom/panasonic/avc/cng/core/c/n;I)Landroid/graphics/Bitmap;
     :try_end_3
     .catch Lcom/panasonic/avc/cng/core/c/j; {:try_start_3 .. :try_end_3} :catch_1
 

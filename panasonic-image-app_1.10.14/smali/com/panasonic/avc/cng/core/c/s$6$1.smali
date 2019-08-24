@@ -47,7 +47,7 @@
     .line 1399
     iget-object v0, p0, Lcom/panasonic/avc/cng/core/c/s$6$1;->b:Lcom/panasonic/avc/cng/core/c/s$6;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/core/c/s$6;->c:Lcom/panasonic/avc/cng/core/c/s;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/core/c/s$6;->c:Lcom/panasonic/avc/cng/core/c/Picmate;
 
     iget v1, p0, Lcom/panasonic/avc/cng/core/c/s$6$1;->a:I
 
@@ -55,7 +55,7 @@
 
     div-int/2addr v2, p2
 
-    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/core/c/s;->a(Lcom/panasonic/avc/cng/core/c/s;II)V
+    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/core/c/Picmate;->a(Lcom/panasonic/avc/cng/core/c/Picmate;II)V
 
     .line 1400
     return-void

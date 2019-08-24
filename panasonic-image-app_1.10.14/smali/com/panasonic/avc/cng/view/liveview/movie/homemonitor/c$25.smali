@@ -255,7 +255,7 @@
 
     move-result-object v3
 
-    invoke-static {v2, v3}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v2, v3}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 2028
     iget-object v2, p0, Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c$25;->a:Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c;

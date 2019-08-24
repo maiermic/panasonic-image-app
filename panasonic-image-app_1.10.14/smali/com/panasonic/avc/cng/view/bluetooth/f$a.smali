@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/panasonic/avc/cng/view/bluetooth/f;
+    value = Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,28 +18,28 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/panasonic/avc/cng/view/bluetooth/f;
+.field final synthetic a:Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;
 
 
 # direct methods
-.method private constructor <init>(Lcom/panasonic/avc/cng/view/bluetooth/f;)V
+.method private constructor <init>(Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;)V
     .locals 0
 
     .prologue
     .line 96
-    iput-object p1, p0, Lcom/panasonic/avc/cng/view/bluetooth/f$a;->a:Lcom/panasonic/avc/cng/view/bluetooth/f;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/view/bluetooth/f$a;->a:Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/panasonic/avc/cng/view/bluetooth/f;Lcom/panasonic/avc/cng/view/bluetooth/f$1;)V
+.method synthetic constructor <init>(Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;Lcom/panasonic/avc/cng/view/bluetooth/f$1;)V
     .locals 0
 
     .prologue
     .line 96
-    invoke-direct {p0, p1}, Lcom/panasonic/avc/cng/view/bluetooth/f$a;-><init>(Lcom/panasonic/avc/cng/view/bluetooth/f;)V
+    invoke-direct {p0, p1}, Lcom/panasonic/avc/cng/view/bluetooth/f$a;-><init>(Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;)V
 
     return-void
 .end method
@@ -55,21 +55,21 @@
 
     const-string v1, "onBleScanStart"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 202
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/bluetooth/f$a;->a:Lcom/panasonic/avc/cng/view/bluetooth/f;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/bluetooth/f$a;->a:Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/bluetooth/f;->a(Lcom/panasonic/avc/cng/view/bluetooth/f;)Lcom/panasonic/avc/cng/model/service/j$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;->a(Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;)Lcom/panasonic/avc/cng/model/service/j$a;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 204
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/bluetooth/f$a;->a:Lcom/panasonic/avc/cng/view/bluetooth/f;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/bluetooth/f$a;->a:Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/bluetooth/f;->a(Lcom/panasonic/avc/cng/view/bluetooth/f;)Lcom/panasonic/avc/cng/model/service/j$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;->a(Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;)Lcom/panasonic/avc/cng/model/service/j$a;
 
     move-result-object v0
 
@@ -89,21 +89,21 @@
 
     const-string v1, "onBleDisconnected"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 114
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/bluetooth/f$a;->a:Lcom/panasonic/avc/cng/view/bluetooth/f;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/bluetooth/f$a;->a:Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/bluetooth/f;->a(Lcom/panasonic/avc/cng/view/bluetooth/f;)Lcom/panasonic/avc/cng/model/service/j$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;->a(Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;)Lcom/panasonic/avc/cng/model/service/j$a;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 116
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/bluetooth/f$a;->a:Lcom/panasonic/avc/cng/view/bluetooth/f;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/bluetooth/f$a;->a:Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/bluetooth/f;->a(Lcom/panasonic/avc/cng/view/bluetooth/f;)Lcom/panasonic/avc/cng/model/service/j$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;->a(Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;)Lcom/panasonic/avc/cng/model/service/j$a;
 
     move-result-object v0
 
@@ -123,21 +123,21 @@
 
     const-string v1, "onBleScanResult"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 147
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/bluetooth/f$a;->a:Lcom/panasonic/avc/cng/view/bluetooth/f;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/bluetooth/f$a;->a:Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/bluetooth/f;->a(Lcom/panasonic/avc/cng/view/bluetooth/f;)Lcom/panasonic/avc/cng/model/service/j$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;->a(Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;)Lcom/panasonic/avc/cng/model/service/j$a;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 149
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/bluetooth/f$a;->a:Lcom/panasonic/avc/cng/view/bluetooth/f;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/bluetooth/f$a;->a:Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/bluetooth/f;->a(Lcom/panasonic/avc/cng/view/bluetooth/f;)Lcom/panasonic/avc/cng/model/service/j$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;->a(Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;)Lcom/panasonic/avc/cng/model/service/j$a;
 
     move-result-object v0
 
@@ -157,21 +157,21 @@
 
     const-string v1, "onBleNotification"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 180
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/bluetooth/f$a;->a:Lcom/panasonic/avc/cng/view/bluetooth/f;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/bluetooth/f$a;->a:Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/bluetooth/f;->a(Lcom/panasonic/avc/cng/view/bluetooth/f;)Lcom/panasonic/avc/cng/model/service/j$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;->a(Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;)Lcom/panasonic/avc/cng/model/service/j$a;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 182
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/bluetooth/f$a;->a:Lcom/panasonic/avc/cng/view/bluetooth/f;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/bluetooth/f$a;->a:Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/bluetooth/f;->a(Lcom/panasonic/avc/cng/view/bluetooth/f;)Lcom/panasonic/avc/cng/model/service/j$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;->a(Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;)Lcom/panasonic/avc/cng/model/service/j$a;
 
     move-result-object v0
 
@@ -191,21 +191,21 @@
 
     const-string v1, "onBleCopyStatus"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 224
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/bluetooth/f$a;->a:Lcom/panasonic/avc/cng/view/bluetooth/f;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/bluetooth/f$a;->a:Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/bluetooth/f;->a(Lcom/panasonic/avc/cng/view/bluetooth/f;)Lcom/panasonic/avc/cng/model/service/j$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;->a(Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;)Lcom/panasonic/avc/cng/model/service/j$a;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 226
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/bluetooth/f$a;->a:Lcom/panasonic/avc/cng/view/bluetooth/f;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/bluetooth/f$a;->a:Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/bluetooth/f;->a(Lcom/panasonic/avc/cng/view/bluetooth/f;)Lcom/panasonic/avc/cng/model/service/j$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;->a(Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;)Lcom/panasonic/avc/cng/model/service/j$a;
 
     move-result-object v0
 
@@ -225,21 +225,21 @@
 
     const-string v1, "onBleWrite"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 169
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/bluetooth/f$a;->a:Lcom/panasonic/avc/cng/view/bluetooth/f;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/bluetooth/f$a;->a:Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/bluetooth/f;->a(Lcom/panasonic/avc/cng/view/bluetooth/f;)Lcom/panasonic/avc/cng/model/service/j$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;->a(Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;)Lcom/panasonic/avc/cng/model/service/j$a;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 171
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/bluetooth/f$a;->a:Lcom/panasonic/avc/cng/view/bluetooth/f;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/bluetooth/f$a;->a:Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/bluetooth/f;->a(Lcom/panasonic/avc/cng/view/bluetooth/f;)Lcom/panasonic/avc/cng/model/service/j$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;->a(Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;)Lcom/panasonic/avc/cng/model/service/j$a;
 
     move-result-object v0
 
@@ -259,21 +259,21 @@
 
     const-string v1, "onBleReadEnd"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 158
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/bluetooth/f$a;->a:Lcom/panasonic/avc/cng/view/bluetooth/f;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/bluetooth/f$a;->a:Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/bluetooth/f;->a(Lcom/panasonic/avc/cng/view/bluetooth/f;)Lcom/panasonic/avc/cng/model/service/j$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;->a(Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;)Lcom/panasonic/avc/cng/model/service/j$a;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 160
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/bluetooth/f$a;->a:Lcom/panasonic/avc/cng/view/bluetooth/f;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/bluetooth/f$a;->a:Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/bluetooth/f;->a(Lcom/panasonic/avc/cng/view/bluetooth/f;)Lcom/panasonic/avc/cng/model/service/j$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;->a(Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;)Lcom/panasonic/avc/cng/model/service/j$a;
 
     move-result-object v0
 
@@ -293,21 +293,21 @@
 
     const-string v1, "onBleConnected"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 103
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/bluetooth/f$a;->a:Lcom/panasonic/avc/cng/view/bluetooth/f;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/bluetooth/f$a;->a:Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/bluetooth/f;->a(Lcom/panasonic/avc/cng/view/bluetooth/f;)Lcom/panasonic/avc/cng/model/service/j$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;->a(Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;)Lcom/panasonic/avc/cng/model/service/j$a;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 105
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/bluetooth/f$a;->a:Lcom/panasonic/avc/cng/view/bluetooth/f;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/bluetooth/f$a;->a:Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/bluetooth/f;->a(Lcom/panasonic/avc/cng/view/bluetooth/f;)Lcom/panasonic/avc/cng/model/service/j$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;->a(Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;)Lcom/panasonic/avc/cng/model/service/j$a;
 
     move-result-object v0
 
@@ -327,21 +327,21 @@
 
     const-string v1, "onBleConnectStart"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 191
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/bluetooth/f$a;->a:Lcom/panasonic/avc/cng/view/bluetooth/f;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/bluetooth/f$a;->a:Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/bluetooth/f;->a(Lcom/panasonic/avc/cng/view/bluetooth/f;)Lcom/panasonic/avc/cng/model/service/j$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;->a(Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;)Lcom/panasonic/avc/cng/model/service/j$a;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 193
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/bluetooth/f$a;->a:Lcom/panasonic/avc/cng/view/bluetooth/f;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/bluetooth/f$a;->a:Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/bluetooth/f;->a(Lcom/panasonic/avc/cng/view/bluetooth/f;)Lcom/panasonic/avc/cng/model/service/j$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;->a(Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;)Lcom/panasonic/avc/cng/model/service/j$a;
 
     move-result-object v0
 
@@ -361,21 +361,21 @@
 
     const-string v1, "onBleNotificationEnable"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 235
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/bluetooth/f$a;->a:Lcom/panasonic/avc/cng/view/bluetooth/f;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/bluetooth/f$a;->a:Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/bluetooth/f;->a(Lcom/panasonic/avc/cng/view/bluetooth/f;)Lcom/panasonic/avc/cng/model/service/j$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;->a(Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;)Lcom/panasonic/avc/cng/model/service/j$a;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 237
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/bluetooth/f$a;->a:Lcom/panasonic/avc/cng/view/bluetooth/f;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/bluetooth/f$a;->a:Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/bluetooth/f;->a(Lcom/panasonic/avc/cng/view/bluetooth/f;)Lcom/panasonic/avc/cng/model/service/j$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;->a(Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;)Lcom/panasonic/avc/cng/model/service/j$a;
 
     move-result-object v0
 
@@ -395,21 +395,21 @@
 
     const-string v1, "onBleConnectTimeOut"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 213
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/bluetooth/f$a;->a:Lcom/panasonic/avc/cng/view/bluetooth/f;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/bluetooth/f$a;->a:Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/bluetooth/f;->a(Lcom/panasonic/avc/cng/view/bluetooth/f;)Lcom/panasonic/avc/cng/model/service/j$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;->a(Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;)Lcom/panasonic/avc/cng/model/service/j$a;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 215
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/bluetooth/f$a;->a:Lcom/panasonic/avc/cng/view/bluetooth/f;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/bluetooth/f$a;->a:Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/bluetooth/f;->a(Lcom/panasonic/avc/cng/view/bluetooth/f;)Lcom/panasonic/avc/cng/model/service/j$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;->a(Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;)Lcom/panasonic/avc/cng/model/service/j$a;
 
     move-result-object v0
 
@@ -429,21 +429,21 @@
 
     const-string v1, "onBleConnectError"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 125
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/bluetooth/f$a;->a:Lcom/panasonic/avc/cng/view/bluetooth/f;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/bluetooth/f$a;->a:Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/bluetooth/f;->a(Lcom/panasonic/avc/cng/view/bluetooth/f;)Lcom/panasonic/avc/cng/model/service/j$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;->a(Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;)Lcom/panasonic/avc/cng/model/service/j$a;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 127
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/bluetooth/f$a;->a:Lcom/panasonic/avc/cng/view/bluetooth/f;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/bluetooth/f$a;->a:Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/bluetooth/f;->a(Lcom/panasonic/avc/cng/view/bluetooth/f;)Lcom/panasonic/avc/cng/model/service/j$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;->a(Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;)Lcom/panasonic/avc/cng/model/service/j$a;
 
     move-result-object v0
 
@@ -463,21 +463,21 @@
 
     const-string v1, "onBleServicePrepared"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 246
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/bluetooth/f$a;->a:Lcom/panasonic/avc/cng/view/bluetooth/f;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/bluetooth/f$a;->a:Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/bluetooth/f;->a(Lcom/panasonic/avc/cng/view/bluetooth/f;)Lcom/panasonic/avc/cng/model/service/j$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;->a(Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;)Lcom/panasonic/avc/cng/model/service/j$a;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 248
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/bluetooth/f$a;->a:Lcom/panasonic/avc/cng/view/bluetooth/f;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/bluetooth/f$a;->a:Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/bluetooth/f;->a(Lcom/panasonic/avc/cng/view/bluetooth/f;)Lcom/panasonic/avc/cng/model/service/j$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;->a(Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;)Lcom/panasonic/avc/cng/model/service/j$a;
 
     move-result-object v0
 
@@ -497,21 +497,21 @@
 
     const-string v1, "onBleScanResultError"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 257
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/bluetooth/f$a;->a:Lcom/panasonic/avc/cng/view/bluetooth/f;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/bluetooth/f$a;->a:Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/bluetooth/f;->a(Lcom/panasonic/avc/cng/view/bluetooth/f;)Lcom/panasonic/avc/cng/model/service/j$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;->a(Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;)Lcom/panasonic/avc/cng/model/service/j$a;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 259
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/bluetooth/f$a;->a:Lcom/panasonic/avc/cng/view/bluetooth/f;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/bluetooth/f$a;->a:Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/bluetooth/f;->a(Lcom/panasonic/avc/cng/view/bluetooth/f;)Lcom/panasonic/avc/cng/model/service/j$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;->a(Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;)Lcom/panasonic/avc/cng/model/service/j$a;
 
     move-result-object v0
 
@@ -531,21 +531,21 @@
 
     const-string v1, "onAutoSendAcctrlDone"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 275
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/bluetooth/f$a;->a:Lcom/panasonic/avc/cng/view/bluetooth/f;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/bluetooth/f$a;->a:Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/bluetooth/f;->a(Lcom/panasonic/avc/cng/view/bluetooth/f;)Lcom/panasonic/avc/cng/model/service/j$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;->a(Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;)Lcom/panasonic/avc/cng/model/service/j$a;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 277
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/bluetooth/f$a;->a:Lcom/panasonic/avc/cng/view/bluetooth/f;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/bluetooth/f$a;->a:Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/bluetooth/f;->a(Lcom/panasonic/avc/cng/view/bluetooth/f;)Lcom/panasonic/avc/cng/model/service/j$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;->a(Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;)Lcom/panasonic/avc/cng/model/service/j$a;
 
     move-result-object v0
 

@@ -21,7 +21,7 @@ public class C4258v extends BaseAdapter {
     /* access modifiers changed from: private */
 
     /* renamed from: b */
-    public C4245t f14287b;
+    public BrowserViewModel f14287b;
     /* access modifiers changed from: private */
 
     /* renamed from: c */
@@ -30,7 +30,7 @@ public class C4258v extends BaseAdapter {
     /* renamed from: d */
     private int f14289d;
 
-    public C4258v(Context context, int i, C4245t tVar, C4754b bVar) {
+    public C4258v(Context context, int i, BrowserViewModel tVar, C4754b bVar) {
         this.f14286a = context;
         this.f14289d = i;
         this.f14287b = tVar;

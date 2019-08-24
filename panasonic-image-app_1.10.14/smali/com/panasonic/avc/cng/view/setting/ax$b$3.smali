@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/view/setting/ax$b;->a(Lcom/panasonic/avc/cng/model/c/e;)V
+    value = Lcom/panasonic/avc/cng/view/setting/ax$b;->a(Lcom/panasonic/avc/cng/model/c/CameraStatus;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -44,9 +44,9 @@
     :try_start_0
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ax$b$3;->a:Lcom/panasonic/avc/cng/view/setting/ax$b;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/ax$b;->a:Lcom/panasonic/avc/cng/view/setting/ax;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/ax$b;->a:Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/ax;->d:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;->d:Lcom/panasonic/avc/cng/a/c;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/ax$b$3;->a:Lcom/panasonic/avc/cng/view/setting/ax$b;
 
@@ -63,9 +63,9 @@
     .line 762
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ax$b$3;->a:Lcom/panasonic/avc/cng/view/setting/ax$b;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/ax$b;->a:Lcom/panasonic/avc/cng/view/setting/ax;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/ax$b;->a:Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/ax;->c:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;->c:Lcom/panasonic/avc/cng/a/c;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/ax$b$3;->a:Lcom/panasonic/avc/cng/view/setting/ax$b;
 

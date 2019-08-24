@@ -15,19 +15,19 @@ import com.panasonic.avc.cng.model.p052d.C1879a;
 import com.panasonic.avc.cng.view.common.C2820e;
 import com.panasonic.avc.cng.view.p073b.C2317a.C2325c;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
 import com.panasonic.avc.cng.view.p073b.C2376f.C2378b;
-import com.panasonic.avc.cng.view.setting.C5446ac.C5461b;
-import com.panasonic.avc.cng.view.setting.C5446ac.C5462c;
-import com.panasonic.avc.cng.view.setting.C5446ac.C5463d;
-import com.panasonic.avc.cng.view.setting.C5537al.C5540a;
+import com.panasonic.avc.cng.view.setting.MirrorlessStopmotionMovieMakingViewModel.C5461b;
+import com.panasonic.avc.cng.view.setting.MirrorlessStopmotionMovieMakingViewModel.C5462c;
+import com.panasonic.avc.cng.view.setting.MirrorlessStopmotionMovieMakingViewModel.C5463d;
+import com.panasonic.avc.cng.view.setting.SettingMenuBaseActivity.C5540a;
 import java.util.ArrayList;
 
 public class MirrorlessStopmotionMovieMakingActivity extends C5741i {
     /* access modifiers changed from: private */
 
     /* renamed from: a */
-    public C5446ac f16304a;
+    public MirrorlessStopmotionMovieMakingViewModel f16304a;
 
     /* renamed from: b */
     private Handler f16305b;
@@ -52,16 +52,16 @@ public class MirrorlessStopmotionMovieMakingActivity extends C5741i {
                 if (true == dVar.mo12141b()) {
                     MirrorlessStopmotionMovieMakingActivity.this.m19810f();
                 } else {
-                    C2331d.m10114a((Activity) MirrorlessStopmotionMovieMakingActivity.this, C2328a.ON_STOPMOTION_ERROR_SETTING_CMD_FINISH, (Bundle) null);
+                    DialogFactory.m10114a((Activity) MirrorlessStopmotionMovieMakingActivity.this, C2328a.ON_STOPMOTION_ERROR_SETTING_CMD_FINISH, (Bundle) null);
                 }
             } else if (i != 6) {
             } else {
                 if (true == dVar.mo12141b()) {
                     MirrorlessStopmotionMovieMakingActivity.this.m19808d();
                 } else if (dVar.mo12143d()) {
-                    C2331d.m10114a((Activity) MirrorlessStopmotionMovieMakingActivity.this, C2328a.ON_STOPMOTION_ERROR_SETTING_CMD_NO_REMAIN, (Bundle) null);
+                    DialogFactory.m10114a((Activity) MirrorlessStopmotionMovieMakingActivity.this, C2328a.ON_STOPMOTION_ERROR_SETTING_CMD_NO_REMAIN, (Bundle) null);
                 } else {
-                    C2331d.m10114a((Activity) MirrorlessStopmotionMovieMakingActivity.this, C2328a.ON_STOPMOTION_ERROR_SETTING_CMD, (Bundle) null);
+                    DialogFactory.m10114a((Activity) MirrorlessStopmotionMovieMakingActivity.this, C2328a.ON_STOPMOTION_ERROR_SETTING_CMD, (Bundle) null);
                 }
             }
         }
@@ -84,26 +84,26 @@ public class MirrorlessStopmotionMovieMakingActivity extends C5741i {
 
         /* renamed from: a */
         public void mo11642a(String str) {
-            C2331d.m10100a((Activity) MirrorlessStopmotionMovieMakingActivity.this);
+            DialogFactory.m10100a((Activity) MirrorlessStopmotionMovieMakingActivity.this);
             if (str.equalsIgnoreCase("noremain")) {
-                C2331d.m10114a((Activity) MirrorlessStopmotionMovieMakingActivity.this, C2328a.ON_STOPMOTION_ERROR_MOVIE_MAKING_NO_REMAIN, (Bundle) null);
+                DialogFactory.m10114a((Activity) MirrorlessStopmotionMovieMakingActivity.this, C2328a.ON_STOPMOTION_ERROR_MOVIE_MAKING_NO_REMAIN, (Bundle) null);
             } else if (str.equalsIgnoreCase("startrequest")) {
-                C2331d.m10114a((Activity) MirrorlessStopmotionMovieMakingActivity.this, C2328a.ON_STOPMOTION_ERROR_MOVIE_MAKING_START, (Bundle) null);
+                DialogFactory.m10114a((Activity) MirrorlessStopmotionMovieMakingActivity.this, C2328a.ON_STOPMOTION_ERROR_MOVIE_MAKING_START, (Bundle) null);
             } else {
-                C2331d.m10114a((Activity) MirrorlessStopmotionMovieMakingActivity.this, C2328a.ON_STOPMOTION_ERROR_MOVIE_MAKING, (Bundle) null);
+                DialogFactory.m10114a((Activity) MirrorlessStopmotionMovieMakingActivity.this, C2328a.ON_STOPMOTION_ERROR_MOVIE_MAKING, (Bundle) null);
             }
         }
 
         /* renamed from: b */
         public void mo11643b() {
-            C2331d.m10100a((Activity) MirrorlessStopmotionMovieMakingActivity.this);
+            DialogFactory.m10100a((Activity) MirrorlessStopmotionMovieMakingActivity.this);
             MirrorlessStopmotionMovieMakingActivity.this._resultBundle.putBoolean("GalleryUpdateKey", true);
             MirrorlessStopmotionMovieMakingActivity.this.finish();
         }
 
         /* renamed from: c */
         public void mo11644c() {
-            C2331d.m10100a((Activity) MirrorlessStopmotionMovieMakingActivity.this);
+            DialogFactory.m10100a((Activity) MirrorlessStopmotionMovieMakingActivity.this);
             MirrorlessStopmotionMovieMakingActivity.this.finish();
         }
     }
@@ -121,7 +121,7 @@ public class MirrorlessStopmotionMovieMakingActivity extends C5741i {
         this.f16307d = new C5121b();
         this.f16304a = C2820e.m11765a((Context) this, this.f16305b, this.f16306c, this.f16307d);
         if (this.f16304a == null) {
-            this.f16304a = new C5446ac(this, this.f16305b, this.f16306c, this.f16307d);
+            this.f16304a = new MirrorlessStopmotionMovieMakingViewModel(this, this.f16305b, this.f16306c, this.f16307d);
         }
         C2820e.m11788a(this.f16304a);
         ((Button) findViewById(R.id.stopMotionExcuteButton)).setOnClickListener(new OnClickListener() {
@@ -136,7 +136,7 @@ public class MirrorlessStopmotionMovieMakingActivity extends C5741i {
         super.onResume();
         this.f16304a = C2820e.m11765a((Context) this, this.f16305b, this.f16306c, this.f16307d);
         if (this.f16304a == null) {
-            this.f16304a = new C5446ac(this, this.f16305b, this.f16306c, this.f16307d);
+            this.f16304a = new MirrorlessStopmotionMovieMakingViewModel(this, this.f16305b, this.f16306c, this.f16307d);
         }
         C2820e.m11788a(this.f16304a);
         if (C5540a.m20622a((Activity) this)) {
@@ -152,7 +152,7 @@ public class MirrorlessStopmotionMovieMakingActivity extends C5741i {
             this.f16304a.mo3205a();
             this.f16304a = null;
         }
-        C2820e.m11788a((C5446ac) null);
+        C2820e.m11788a((MirrorlessStopmotionMovieMakingViewModel) null);
         if (C1879a.m7545b(C1712b.m6919c().mo4896a(), "1.3")) {
             this._resultBundle.putBoolean("StopMotionFinishForModeDial", true);
         } else {
@@ -180,7 +180,7 @@ public class MirrorlessStopmotionMovieMakingActivity extends C5741i {
 
     /* access modifiers changed from: protected */
     public Object onDmsWatchEvent(int i) {
-        if (this.f16308e == null || C2331d.m10125b((Activity) this, C2328a.ON_STOPMOTION_MOVIE_MAKING_PROGRESS) || i == 10 || i == 11 || i == 16) {
+        if (this.f16308e == null || DialogFactory.m10125b((Activity) this, C2328a.ON_STOPMOTION_MOVIE_MAKING_PROGRESS) || i == 10 || i == 11 || i == 16) {
             return null;
         }
         return this.f16308e.mo12509a((Activity) this, i);
@@ -195,7 +195,7 @@ public class MirrorlessStopmotionMovieMakingActivity extends C5741i {
         if (h >= 0 && g != null) {
             bundle.putStringArray(C2378b.SINGLE_CHOICE_LIST.name(), g);
             bundle.putInt(C2378b.SINGLE_CHOICE_CHECKED_ITEM.name(), h);
-            C2331d.m10114a((Activity) this, aVar, bundle);
+            DialogFactory.m10114a((Activity) this, aVar, bundle);
         }
     }
 
@@ -208,7 +208,7 @@ public class MirrorlessStopmotionMovieMakingActivity extends C5741i {
         if (k >= 0 && j != null) {
             bundle.putStringArray(C2378b.SINGLE_CHOICE_LIST.name(), j);
             bundle.putInt(C2378b.SINGLE_CHOICE_CHECKED_ITEM.name(), k);
-            C2331d.m10114a((Activity) this, aVar, bundle);
+            DialogFactory.m10114a((Activity) this, aVar, bundle);
         }
     }
 
@@ -221,7 +221,7 @@ public class MirrorlessStopmotionMovieMakingActivity extends C5741i {
         if (n >= 0 && m != null) {
             bundle.putStringArray(C2378b.SINGLE_CHOICE_LIST.name(), m);
             bundle.putInt(C2378b.SINGLE_CHOICE_CHECKED_ITEM.name(), n);
-            C2331d.m10114a((Activity) this, aVar, bundle);
+            DialogFactory.m10114a((Activity) this, aVar, bundle);
         }
     }
 
@@ -232,7 +232,7 @@ public class MirrorlessStopmotionMovieMakingActivity extends C5741i {
         int max = Math.max(0, (this.f16304a.mo12117i() - 1) / 60) + 1;
         Bundle bundle = new Bundle();
         bundle.putString(C2378b.MESSAGE_STRING.name(), String.format(getText(R.string.msg_ask_create_stopmotion_video_withtime).toString(), new Object[]{Integer.valueOf(max)}));
-        C2331d.m10114a((Activity) this, aVar, bundle);
+        DialogFactory.m10114a((Activity) this, aVar, bundle);
     }
 
     /* access modifiers changed from: private */
@@ -241,14 +241,14 @@ public class MirrorlessStopmotionMovieMakingActivity extends C5741i {
         final C2328a aVar = C2328a.ON_STOPMOTION_MOVIE_MAKING_PROGRESS;
         Bundle bundle = new Bundle();
         bundle.putInt(C2378b.MESSAGE_ID.name(), R.string.msg_now_reate_stopmotion_video);
-        C2331d.m10115a((Activity) this, aVar, bundle, (C2325c) new C2325c() {
+        DialogFactory.m10115a((Activity) this, aVar, bundle, (C2325c) new C2325c() {
             /* renamed from: a */
             public void mo6131a() {
                 MirrorlessStopmotionMovieMakingActivity mirrorlessStopmotionMovieMakingActivity = MirrorlessStopmotionMovieMakingActivity.this;
-                C2331d.m10104a((Activity) mirrorlessStopmotionMovieMakingActivity, aVar, (int) R.id.progressBar2, 0);
-                C2331d.m10111a((Activity) mirrorlessStopmotionMovieMakingActivity, aVar, (int) R.id.percent_num, (CharSequence) "0");
-                C2331d.m10111a((Activity) mirrorlessStopmotionMovieMakingActivity, aVar, (int) R.id.numerator, (CharSequence) "0");
-                C2331d.m10111a((Activity) mirrorlessStopmotionMovieMakingActivity, aVar, (int) R.id.denominator, (CharSequence) "100");
+                DialogFactory.m10104a((Activity) mirrorlessStopmotionMovieMakingActivity, aVar, (int) R.id.progressBar2, 0);
+                DialogFactory.m10111a((Activity) mirrorlessStopmotionMovieMakingActivity, aVar, (int) R.id.percent_num, (CharSequence) "0");
+                DialogFactory.m10111a((Activity) mirrorlessStopmotionMovieMakingActivity, aVar, (int) R.id.numerator, (CharSequence) "0");
+                DialogFactory.m10111a((Activity) mirrorlessStopmotionMovieMakingActivity, aVar, (int) R.id.denominator, (CharSequence) "100");
             }
         });
     }
@@ -257,9 +257,9 @@ public class MirrorlessStopmotionMovieMakingActivity extends C5741i {
     /* renamed from: a */
     public void m19797a(int i) {
         C2328a aVar = C2328a.ON_STOPMOTION_MOVIE_MAKING_PROGRESS;
-        C2331d.m10104a((Activity) this, aVar, (int) R.id.progressBar2, i);
-        C2331d.m10111a((Activity) this, aVar, (int) R.id.percent_num, (CharSequence) String.valueOf(i));
-        C2331d.m10111a((Activity) this, aVar, (int) R.id.numerator, (CharSequence) String.valueOf(i));
+        DialogFactory.m10104a((Activity) this, aVar, (int) R.id.progressBar2, i);
+        DialogFactory.m10111a((Activity) this, aVar, (int) R.id.percent_num, (CharSequence) String.valueOf(i));
+        DialogFactory.m10111a((Activity) this, aVar, (int) R.id.numerator, (CharSequence) String.valueOf(i));
     }
 
     /* access modifiers changed from: private */
@@ -480,7 +480,7 @@ public class MirrorlessStopmotionMovieMakingActivity extends C5741i {
             case ON_STOPMOTION_MOVIE_MAKING_PROGRESS:
                 if (this.f16304a != null) {
                     this.f16304a.mo12126r();
-                    C2331d.m10114a((Activity) this, C2328a.ON_PROGRESS, (Bundle) null);
+                    DialogFactory.m10114a((Activity) this, C2328a.ON_PROGRESS, (Bundle) null);
                     return;
                 }
                 return;
@@ -513,18 +513,18 @@ public class MirrorlessStopmotionMovieMakingActivity extends C5741i {
                 if (!this.f16304a.mo12114f().equalsIgnoreCase(m19800b(i))) {
                     this.f16304a.mo12107b(m19800b(i));
                 }
-                C2331d.m10100a((Activity) this);
+                DialogFactory.m10100a((Activity) this);
                 m19813i();
                 m19816l();
                 return;
             case C1702a.HorizontalPicker_hairline_visible /*11*/:
                 this.f16304a.mo12110c(m19803c(i));
-                C2331d.m10100a((Activity) this);
+                DialogFactory.m10100a((Activity) this);
                 m19816l();
                 return;
             case 12:
                 this.f16304a.mo12111d(m19807d(i));
-                C2331d.m10100a((Activity) this);
+                DialogFactory.m10100a((Activity) this);
                 m19819o();
                 return;
             default:

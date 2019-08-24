@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;
+    value = Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,28 +18,28 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;
+.field final synthetic a:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;
 
 
 # direct methods
-.method private constructor <init>(Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;)V
+.method private constructor <init>(Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;)V
     .locals 0
 
     .prologue
     .line 1391
-    iput-object p1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$b;->a:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$b;->a:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$1;)V
+.method synthetic constructor <init>(Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$1;)V
     .locals 0
 
     .prologue
     .line 1391
-    invoke-direct {p0, p1}, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$b;-><init>(Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;)V
+    invoke-direct {p0, p1}, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$b;-><init>(Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;)V
 
     return-void
 .end method
@@ -56,36 +56,36 @@
     if-ne p1, v0, :cond_0
 
     .line 1512
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$b;->a:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$b;->a:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;->l()Z
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;->l()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 1515
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$b;->a:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$b;->a:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;->w(Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;)Z
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;->w(Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;)Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$b;->a:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$b;->a:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;
 
     .line 1516
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;->x(Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;)Z
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;->x(Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;)Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$b;->a:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$b;->a:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;
 
     .line 1517
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;->h(Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;)Z
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;->h(Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;)Z
 
     move-result v0
 
@@ -96,35 +96,35 @@
 
     const-string v1, "UDP is Time out ==> CapturingUdp ON!"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 1522
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$b;->a:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$b;->a:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;
 
     const/4 v1, 0x1
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;->h(Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;Z)Z
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;->h(Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;Z)Z
 
     .line 1523
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$b;->a:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$b;->a:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;->b(Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;Z)Z
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;->b(Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;Z)Z
 
     .line 1526
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$b;->a:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$b;->a:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;->y(Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;->y(Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;)Landroid/os/Handler;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 1528
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$b;->a:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$b;->a:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;->z(Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;->z(Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;)Landroid/os/Handler;
 
     move-result-object v0
 
@@ -149,17 +149,17 @@
     if-eqz v0, :cond_0
 
     .line 1403
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$b;->a:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$b;->a:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;
 
     iget-object v1, p1, Lcom/panasonic/avc/cng/model/j$f;->d:Lcom/panasonic/avc/cng/model/j$i;
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;->a(Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;Lcom/panasonic/avc/cng/model/j$i;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;->a(Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;Lcom/panasonic/avc/cng/model/j$i;)V
 
     .line 1407
     :cond_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$b;->a:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$b;->a:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;->t(Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;)Lcom/panasonic/avc/cng/view/liveview/w;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;->t(Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;)Lcom/panasonic/avc/cng/view/liveview/w;
 
     move-result-object v0
 
@@ -183,9 +183,9 @@
     if-eqz v0, :cond_2
 
     .line 1415
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$b;->a:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$b;->a:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;->n:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;->n:Lcom/panasonic/avc/cng/a/c;
 
     invoke-virtual {v0, p1}, Lcom/panasonic/avc/cng/a/c;->a(Ljava/lang/Object;)V
 
@@ -199,11 +199,11 @@
 
     .prologue
     .line 1427
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$b;->a:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$b;->a:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;
 
     const/4 v1, 0x1
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;->f(Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;Z)Z
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;->f(Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;Z)Z
 
     .line 1428
     return-void
@@ -214,18 +214,18 @@
 
     .prologue
     .line 1436
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$b;->a:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$b;->a:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;->f(Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;)Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;->f(Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;)Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$a;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 1438
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$b;->a:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$b;->a:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;->f(Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;)Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;->f(Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;)Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$a;
 
     move-result-object v0
 
@@ -233,11 +233,11 @@
 
     .line 1441
     :cond_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$b;->a:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$b;->a:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;->f(Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;Z)Z
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;->f(Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;Z)Z
 
     .line 1442
     return-void
@@ -248,18 +248,18 @@
 
     .prologue
     .line 1449
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$b;->a:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$b;->a:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;->f(Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;)Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;->f(Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;)Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$a;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 1451
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$b;->a:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$b;->a:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;->f(Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;)Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;->f(Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;)Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$a;
 
     move-result-object v0
 
@@ -267,11 +267,11 @@
 
     .line 1454
     :cond_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$b;->a:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$b;->a:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;
 
     const/4 v1, 0x1
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;->f(Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;Z)Z
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;->f(Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;Z)Z
 
     .line 1455
     return-void
@@ -282,18 +282,18 @@
 
     .prologue
     .line 1462
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$b;->a:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$b;->a:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;->f(Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;)Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;->f(Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;)Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$a;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 1464
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$b;->a:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$b;->a:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;->f(Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;)Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;->f(Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;)Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$a;
 
     move-result-object v0
 
@@ -301,11 +301,11 @@
 
     .line 1467
     :cond_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$b;->a:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$b;->a:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;
 
     const/4 v1, 0x1
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;->f(Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;Z)Z
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;->f(Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;Z)Z
 
     .line 1468
     return-void
@@ -316,9 +316,9 @@
 
     .prologue
     .line 1476
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$b;->a:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$b;->a:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;->v(Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;->v(Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;)Landroid/os/Handler;
 
     move-result-object v0
 

@@ -1,6 +1,6 @@
 package com.panasonic.avc.cng.core.p040a;
 
-import com.panasonic.avc.cng.model.p051c.C1853h;
+import com.panasonic.avc.cng.model.p051c.ParseTagHighlightSceneInfo;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
@@ -24,7 +24,7 @@ public class C1507f extends C1501d {
     /* renamed from: o */
     public Date mo3573o() {
         Date parse;
-        C1853h f = mo3684f("clock");
+        ParseTagHighlightSceneInfo f = mo3684f("clock");
         if (!f.mo4771a()) {
             return null;
         }
@@ -41,7 +41,7 @@ public class C1507f extends C1501d {
 
     /* renamed from: p */
     public String mo3721p() {
-        C1853h f = mo3684f("hm");
+        ParseTagHighlightSceneInfo f = mo3684f("hm");
         if (!f.mo4771a() && !f.mo4772b().equalsIgnoreCase("err_no_data")) {
             return null;
         }
@@ -54,7 +54,7 @@ public class C1507f extends C1501d {
 
     /* renamed from: q */
     public String mo3722q() {
-        C1853h f = mo3684f("pa");
+        ParseTagHighlightSceneInfo f = mo3684f("pa");
         if (!f.mo4771a() && !f.mo4772b().equalsIgnoreCase("err_no_data")) {
             return null;
         }

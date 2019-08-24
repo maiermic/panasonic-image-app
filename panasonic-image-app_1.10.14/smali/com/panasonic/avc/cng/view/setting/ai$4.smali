@@ -47,18 +47,18 @@
     .line 375
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ai$4;->b:Lcom/panasonic/avc/cng/view/setting/ai;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/ai;->f:Lcom/panasonic/avc/cng/core/c/s;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/ai;->f:Lcom/panasonic/avc/cng/core/c/Picmate;
 
     if-eqz v0, :cond_0
 
     .line 377
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ai$4;->b:Lcom/panasonic/avc/cng/view/setting/ai;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/ai;->f:Lcom/panasonic/avc/cng/core/c/s;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/ai;->f:Lcom/panasonic/avc/cng/core/c/Picmate;
 
     iget-boolean v1, p0, Lcom/panasonic/avc/cng/view/setting/ai$4;->a:Z
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/core/c/s;->a(Z)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/core/c/Picmate;->a(Z)V
 
     .line 379
     :cond_0

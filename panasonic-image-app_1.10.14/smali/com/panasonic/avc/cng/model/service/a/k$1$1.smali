@@ -61,7 +61,7 @@
 
     iget-object v0, v0, Lcom/panasonic/avc/cng/model/service/a/k$1;->a:Lcom/panasonic/avc/cng/model/service/a/k;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/a/k;->a(Lcom/panasonic/avc/cng/model/service/a/k;)Lcom/panasonic/avc/cng/core/c/s;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/a/k;->a(Lcom/panasonic/avc/cng/model/service/a/k;)Lcom/panasonic/avc/cng/core/c/Picmate;
 
     move-result-object v0
 
@@ -89,14 +89,14 @@
 
     move-result-object v2
 
-    invoke-virtual {v0, v1, v2}, Lcom/panasonic/avc/cng/core/c/s;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Lcom/panasonic/avc/cng/core/c/Picmate;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 734
     iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/a/k$1$1;->a:Lcom/panasonic/avc/cng/model/service/a/k$1;
 
     iget-object v0, v0, Lcom/panasonic/avc/cng/model/service/a/k$1;->a:Lcom/panasonic/avc/cng/model/service/a/k;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/a/k;->a(Lcom/panasonic/avc/cng/model/service/a/k;)Lcom/panasonic/avc/cng/core/c/s;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/a/k;->a(Lcom/panasonic/avc/cng/model/service/a/k;)Lcom/panasonic/avc/cng/core/c/Picmate;
 
     move-result-object v0
 
@@ -104,7 +104,7 @@
 
     invoke-direct {v1, p0}, Lcom/panasonic/avc/cng/model/service/a/k$1$1$1;-><init>(Lcom/panasonic/avc/cng/model/service/a/k$1$1;)V
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/core/c/s;->c(Lcom/panasonic/avc/cng/core/c/g;)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/core/c/Picmate;->c(Lcom/panasonic/avc/cng/core/c/g;)V
     :try_end_0
     .catch Lcom/panasonic/avc/cng/core/c/j; {:try_start_0 .. :try_end_0} :catch_0
 

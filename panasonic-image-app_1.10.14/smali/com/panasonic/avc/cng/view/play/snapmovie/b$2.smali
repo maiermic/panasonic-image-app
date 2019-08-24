@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/view/play/snapmovie/b;->a(Lcom/panasonic/avc/cng/model/c/e;)V
+    value = Lcom/panasonic/avc/cng/view/play/snapmovie/b;->a(Lcom/panasonic/avc/cng/model/c/CameraStatus;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,20 +18,20 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/panasonic/avc/cng/model/c/e;
+.field final synthetic a:Lcom/panasonic/avc/cng/model/c/CameraStatus;
 
 .field final synthetic b:Lcom/panasonic/avc/cng/view/play/snapmovie/b;
 
 
 # direct methods
-.method constructor <init>(Lcom/panasonic/avc/cng/view/play/snapmovie/b;Lcom/panasonic/avc/cng/model/c/e;)V
+.method constructor <init>(Lcom/panasonic/avc/cng/view/play/snapmovie/b;Lcom/panasonic/avc/cng/model/c/CameraStatus;)V
     .locals 0
 
     .prologue
     .line 899
     iput-object p1, p0, Lcom/panasonic/avc/cng/view/play/snapmovie/b$2;->b:Lcom/panasonic/avc/cng/view/play/snapmovie/b;
 
-    iput-object p2, p0, Lcom/panasonic/avc/cng/view/play/snapmovie/b$2;->a:Lcom/panasonic/avc/cng/model/c/e;
+    iput-object p2, p0, Lcom/panasonic/avc/cng/view/play/snapmovie/b$2;->a:Lcom/panasonic/avc/cng/model/c/CameraStatus;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -47,17 +47,17 @@
     const/4 v2, 0x0
 
     .line 901
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/snapmovie/b$2;->a:Lcom/panasonic/avc/cng/model/c/e;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/snapmovie/b$2;->a:Lcom/panasonic/avc/cng/model/c/CameraStatus;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/e;->n()Z
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->n()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/snapmovie/b$2;->a:Lcom/panasonic/avc/cng/model/c/e;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/snapmovie/b$2;->a:Lcom/panasonic/avc/cng/model/c/CameraStatus;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/e;->c()I
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->c()I
 
     move-result v0
 

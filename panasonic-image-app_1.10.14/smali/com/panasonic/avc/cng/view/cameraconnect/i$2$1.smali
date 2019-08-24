@@ -43,18 +43,18 @@
     .line 1147
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/i$2$1;->a:Lcom/panasonic/avc/cng/view/cameraconnect/i$2;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/cameraconnect/i$2;->b:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/cameraconnect/i$2;->b:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/cameraconnect/i;->A:Lcom/panasonic/avc/cng/view/cameraconnect/e$a;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->A:Lcom/panasonic/avc/cng/view/cameraconnect/e$a;
 
     if-eqz v0, :cond_0
 
     .line 1148
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/i$2$1;->a:Lcom/panasonic/avc/cng/view/cameraconnect/i$2;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/cameraconnect/i$2;->b:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/cameraconnect/i$2;->b:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/cameraconnect/i;->A:Lcom/panasonic/avc/cng/view/cameraconnect/e$a;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->A:Lcom/panasonic/avc/cng/view/cameraconnect/e$a;
 
     invoke-interface {v0}, Lcom/panasonic/avc/cng/view/cameraconnect/e$a;->h()V
 

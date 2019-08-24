@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/view/setting/ad;->d()Z
+    value = Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionSmartOperationViewModel;->d()Z
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/panasonic/avc/cng/view/setting/ad;
+.field final synthetic a:Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionSmartOperationViewModel;
 
 
 # direct methods
-.method constructor <init>(Lcom/panasonic/avc/cng/view/setting/ad;)V
+.method constructor <init>(Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionSmartOperationViewModel;)V
     .locals 0
 
     .prologue
     .line 297
-    iput-object p1, p0, Lcom/panasonic/avc/cng/view/setting/ad$1;->a:Lcom/panasonic/avc/cng/view/setting/ad;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/view/setting/ad$1;->a:Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionSmartOperationViewModel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -41,11 +41,11 @@
 
     .prologue
     .line 299
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
@@ -53,18 +53,18 @@
     if-eqz v0, :cond_1
 
     .line 303
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/ad$1;->a:Lcom/panasonic/avc/cng/view/setting/ad;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/ad$1;->a:Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionSmartOperationViewModel;
 
-    invoke-static {v1}, Lcom/panasonic/avc/cng/view/setting/ad;->a(Lcom/panasonic/avc/cng/view/setting/ad;)Lcom/panasonic/avc/cng/view/smartoperation/d;
+    invoke-static {v1}, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionSmartOperationViewModel;->a(Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionSmartOperationViewModel;)Lcom/panasonic/avc/cng/view/smartoperation/d;
 
     move-result-object v1
 
     if-eqz v1, :cond_0
 
     .line 305
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/ad$1;->a:Lcom/panasonic/avc/cng/view/setting/ad;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/ad$1;->a:Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionSmartOperationViewModel;
 
-    invoke-static {v1}, Lcom/panasonic/avc/cng/view/setting/ad;->a(Lcom/panasonic/avc/cng/view/setting/ad;)Lcom/panasonic/avc/cng/view/smartoperation/d;
+    invoke-static {v1}, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionSmartOperationViewModel;->a(Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionSmartOperationViewModel;)Lcom/panasonic/avc/cng/view/smartoperation/d;
 
     move-result-object v1
 
@@ -80,23 +80,23 @@
 
     .line 312
     :try_start_0
-    new-instance v2, Lcom/panasonic/avc/cng/core/a/y;
+    new-instance v2, Lcom/panasonic/avc/cng/core/a/ModeChangeCommand;
 
     iget-object v3, v0, Lcom/panasonic/avc/cng/model/f;->d:Ljava/lang/String;
 
-    invoke-direct {v2, v3}, Lcom/panasonic/avc/cng/core/a/y;-><init>(Ljava/lang/String;)V
+    invoke-direct {v2, v3}, Lcom/panasonic/avc/cng/core/a/ModeChangeCommand;-><init>(Ljava/lang/String;)V
 
     .line 315
-    invoke-virtual {v2}, Lcom/panasonic/avc/cng/core/a/y;->a()Lcom/panasonic/avc/cng/model/c/h;
+    invoke-virtual {v2}, Lcom/panasonic/avc/cng/core/a/ModeChangeCommand;->a()Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
     .line 320
-    iget-object v2, p0, Lcom/panasonic/avc/cng/view/setting/ad$1;->a:Lcom/panasonic/avc/cng/view/setting/ad;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/view/setting/ad$1;->a:Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionSmartOperationViewModel;
 
-    invoke-static {v2}, Lcom/panasonic/avc/cng/view/setting/ad;->b(Lcom/panasonic/avc/cng/view/setting/ad;)Landroid/content/Context;
+    invoke-static {v2}, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionSmartOperationViewModel;->b(Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionSmartOperationViewModel;)Landroid/content/Context;
 
     move-result-object v2
 
-    invoke-static {v2, v0}, Lcom/panasonic/avc/cng/model/service/z;->a(Landroid/content/Context;Lcom/panasonic/avc/cng/model/f;)Lcom/panasonic/avc/cng/model/service/b;
+    invoke-static {v2, v0}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->a(Landroid/content/Context;Lcom/panasonic/avc/cng/model/f;)Lcom/panasonic/avc/cng/model/service/b;
 
     move-result-object v0
 
@@ -125,18 +125,18 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 344
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ad$1;->a:Lcom/panasonic/avc/cng/view/setting/ad;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ad$1;->a:Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionSmartOperationViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/ad;->a(Lcom/panasonic/avc/cng/view/setting/ad;)Lcom/panasonic/avc/cng/view/smartoperation/d;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionSmartOperationViewModel;->a(Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionSmartOperationViewModel;)Lcom/panasonic/avc/cng/view/smartoperation/d;
 
     move-result-object v0
 
     if-eqz v0, :cond_1
 
     .line 346
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ad$1;->a:Lcom/panasonic/avc/cng/view/setting/ad;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ad$1;->a:Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionSmartOperationViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/ad;->a(Lcom/panasonic/avc/cng/view/setting/ad;)Lcom/panasonic/avc/cng/view/smartoperation/d;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionSmartOperationViewModel;->a(Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionSmartOperationViewModel;)Lcom/panasonic/avc/cng/view/smartoperation/d;
 
     move-result-object v0
 

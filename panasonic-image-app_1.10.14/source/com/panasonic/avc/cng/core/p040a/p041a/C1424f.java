@@ -2,7 +2,7 @@ package com.panasonic.avc.cng.core.p040a.p041a;
 
 import com.panasonic.avc.cng.core.p040a.p041a.C1413a.C1414a;
 import com.panasonic.avc.cng.core.p040a.p041a.C1415b.C1416a;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import java.io.UnsupportedEncodingException;
 import java.net.HttpURLConnection;
 import java.util.ArrayList;
@@ -39,7 +39,7 @@ public class C1424f {
         /* access modifiers changed from: protected */
         /* renamed from: g */
         public void mo3428g() {
-            C2261g.m9763a(getClass().getSimpleName(), "[MULTI-DEL] Cancel command finished");
+            ImageAppLog.debug(getClass().getSimpleName(), "[MULTI-DEL] Cancel command finished");
             if (C1424f.this.f3884c != null) {
                 C1424f.this.f3884c.mo3446a(true);
             }
@@ -48,7 +48,7 @@ public class C1424f {
         /* access modifiers changed from: protected */
         /* renamed from: a */
         public void mo3417a(C1415b bVar) {
-            C2261g.m9763a(getClass().getSimpleName(), "[MULTI-DEL] Cancel command failed");
+            ImageAppLog.debug(getClass().getSimpleName(), "[MULTI-DEL] Cancel command failed");
             bVar.printStackTrace();
             if (C1424f.this.f3884c != null) {
                 C1424f.this.f3884c.mo3446a(false);
@@ -100,7 +100,7 @@ public class C1424f {
                 java.lang.String r3 = r4.f3889b
                 java.lang.StringBuilder r1 = r1.append(r3)
                 java.lang.String r1 = r1.toString()
-                com.panasonic.avc.cng.util.C2261g.m9763a(r0, r1)
+                com.panasonic.avc.cng.util.ImageAppLog.debug(r0, r1)
                 java.io.OutputStreamWriter r1 = new java.io.OutputStreamWriter     // Catch:{ IOException -> 0x0038, all -> 0x004d }
                 java.io.OutputStream r0 = r5.getOutputStream()     // Catch:{ IOException -> 0x0038, all -> 0x004d }
                 r1.<init>(r0)     // Catch:{ IOException -> 0x0038, all -> 0x004d }
@@ -189,7 +189,7 @@ public class C1424f {
             C1430e a = C1430e.m5606a(jVar.mo3455b("state").mo3452b());
             int parseInt = Integer.parseInt(jVar.mo3455b("progress").mo3452b());
             int parseInt2 = Integer.parseInt(jVar.mo3455b("num").mo3452b());
-            C2261g.m9763a(getClass().getSimpleName(), "[MULTI-DEL] Progress Command Executed: state = " + a + ", progress = " + parseInt + ", num = " + parseInt2);
+            ImageAppLog.debug(getClass().getSimpleName(), "[MULTI-DEL] Progress Command Executed: state = " + a + ", progress = " + parseInt + ", num = " + parseInt2);
             if (C1424f.this.f3885d) {
                 if (a == C1430e.None) {
                     if (C1424f.this.f3884c != null) {

@@ -16,10 +16,10 @@ import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.service.C2210p;
 import com.panasonic.avc.cng.view.common.C2820e;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
 import com.panasonic.avc.cng.view.parts.C4097be;
 import com.panasonic.avc.cng.view.setting.C5520ai;
-import com.panasonic.avc.cng.view.setting.C5537al.C5540a;
+import com.panasonic.avc.cng.view.setting.SettingMenuBaseActivity.C5540a;
 import com.panasonic.avc.cng.view.setting.C5687e;
 import com.panasonic.avc.cng.view.setting.C5741i;
 import com.panasonic.avc.cng.view.setting.WebServiceWebViewActivity;
@@ -66,7 +66,7 @@ public class BluetoothUploadSettingActivity extends C5741i {
                 BluetoothUploadSettingActivity.this.f7992a.mo12268d(i);
                 if (!((C1663m) BluetoothUploadSettingActivity.this.f7992a.mo12272i().get(i)).mo4041e()) {
                     BluetoothUploadSettingActivity.this.f7992a.mo12057a(3, BluetoothUploadSettingActivity.this.f7994c);
-                    C2331d.m10114a((Activity) BluetoothUploadSettingActivity.this, C2328a.ON_PROGRESS, (Bundle) null);
+                    DialogFactory.m10114a((Activity) BluetoothUploadSettingActivity.this, C2328a.ON_PROGRESS, (Bundle) null);
                 }
                 beVar.notifyDataSetChanged();
             }
@@ -78,7 +78,7 @@ public class BluetoothUploadSettingActivity extends C5741i {
         super.onResume();
         if (!C5540a.m20622a((Activity) this)) {
             if (this.f7992a.mo12272i() == null) {
-                C2331d.m10114a((Activity) this, C2328a.ON_PROGRESS, (Bundle) null);
+                DialogFactory.m10114a((Activity) this, C2328a.ON_PROGRESS, (Bundle) null);
                 this.f7992a.mo12061a(true);
                 this.f7992a.mo12057a(2, this.f7994c);
                 return;
@@ -106,11 +106,11 @@ public class BluetoothUploadSettingActivity extends C5741i {
             public void mo5071a(int i, int i2) {
                 if (!BluetoothUploadSettingActivity.this.isFinishing()) {
                     if (i != 1) {
-                        C2331d.m10100a((Activity) BluetoothUploadSettingActivity.this);
+                        DialogFactory.m10100a((Activity) BluetoothUploadSettingActivity.this);
                         if (i == 6) {
-                            C2331d.m10114a((Activity) BluetoothUploadSettingActivity.this, C2328a.DIALOG_ID_CONNECT_FAILED, (Bundle) null);
+                            DialogFactory.m10114a((Activity) BluetoothUploadSettingActivity.this, C2328a.DIALOG_ID_CONNECT_FAILED, (Bundle) null);
                         } else if (i == 7) {
-                            C2331d.m10114a((Activity) BluetoothUploadSettingActivity.this, C2328a.DIALOG_ID_PIC_LOGIN_ERROR, (Bundle) null);
+                            DialogFactory.m10114a((Activity) BluetoothUploadSettingActivity.this, C2328a.DIALOG_ID_PIC_LOGIN_ERROR, (Bundle) null);
                         }
                     } else if (i2 == 2) {
                         BluetoothUploadSettingActivity.this.f7992a.mo12265b(2, BluetoothUploadSettingActivity.this.f7994c);
@@ -124,7 +124,7 @@ public class BluetoothUploadSettingActivity extends C5741i {
             public void mo5074b(int i, int i2) {
                 if (!BluetoothUploadSettingActivity.this.isFinishing()) {
                     if (i == 1) {
-                        C2331d.m10100a((Activity) BluetoothUploadSettingActivity.this);
+                        DialogFactory.m10100a((Activity) BluetoothUploadSettingActivity.this);
                         if (i2 == 2) {
                             BluetoothUploadSettingActivity.this.m10651a();
                         } else if (i2 == 23) {
@@ -133,14 +133,14 @@ public class BluetoothUploadSettingActivity extends C5741i {
                             BluetoothUploadSettingActivity.this.f7992a.mo12263a(BluetoothUploadSettingActivity.this.getText(R.string.setup_picmate_regist_service).toString());
                             BluetoothUploadSettingActivity.this.startActivityForResult(new Intent(BluetoothUploadSettingActivity.this, WebServiceWebViewActivity.class), 0);
                         } else {
-                            C2331d.m10114a((Activity) BluetoothUploadSettingActivity.this, C2328a.DIALOG_ID_GET_EXT_SERVICE_FAILED, (Bundle) null);
+                            DialogFactory.m10114a((Activity) BluetoothUploadSettingActivity.this, C2328a.DIALOG_ID_GET_EXT_SERVICE_FAILED, (Bundle) null);
                         }
                     } else {
-                        C2331d.m10100a((Activity) BluetoothUploadSettingActivity.this);
+                        DialogFactory.m10100a((Activity) BluetoothUploadSettingActivity.this);
                         if (i == 19) {
-                            C2331d.m10114a((Activity) BluetoothUploadSettingActivity.this, C2328a.DIALOG_ID_GET_EXT_SERVICE_FAILED, (Bundle) null);
+                            DialogFactory.m10114a((Activity) BluetoothUploadSettingActivity.this, C2328a.DIALOG_ID_GET_EXT_SERVICE_FAILED, (Bundle) null);
                         } else {
-                            C2331d.m10114a((Activity) BluetoothUploadSettingActivity.this, C2328a.DIALOG_ID_GET_EXT_SERVICE_FAILED, (Bundle) null);
+                            DialogFactory.m10114a((Activity) BluetoothUploadSettingActivity.this, C2328a.DIALOG_ID_GET_EXT_SERVICE_FAILED, (Bundle) null);
                         }
                     }
                 }
@@ -167,7 +167,7 @@ public class BluetoothUploadSettingActivity extends C5741i {
             this.f7992a.mo12265b(2, this.f7994c);
             new Handler(Looper.getMainLooper()).post(new Runnable() {
                 public void run() {
-                    C2331d.m10114a((Activity) BluetoothUploadSettingActivity.this, C2328a.ON_PROGRESS, (Bundle) null);
+                    DialogFactory.m10114a((Activity) BluetoothUploadSettingActivity.this, C2328a.ON_PROGRESS, (Bundle) null);
                 }
             });
         }

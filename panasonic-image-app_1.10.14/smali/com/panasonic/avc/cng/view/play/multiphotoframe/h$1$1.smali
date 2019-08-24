@@ -43,9 +43,9 @@
     .line 399
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/h$1$1;->a:Lcom/panasonic/avc/cng/view/play/multiphotoframe/h$1;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/h$1;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/h$1;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;->a(Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;)Lcom/panasonic/avc/cng/view/play/multiphotoframe/h$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;->a(Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;)Lcom/panasonic/avc/cng/view/play/multiphotoframe/h$a;
 
     move-result-object v0
 

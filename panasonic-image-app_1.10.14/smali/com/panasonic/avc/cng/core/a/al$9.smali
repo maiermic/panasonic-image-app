@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/core/a/al;->d(Ljava/lang/String;)[B
+    value = Lcom/panasonic/avc/cng/core/a/StaticHttpCommand;->d(Ljava/lang/String;)[B
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -85,7 +85,7 @@
 
     move-result-object v2
 
-    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 716
     const-string v1, "StaticHttpCommand"
@@ -130,29 +130,29 @@
 
     move-result-object v2
 
-    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/f;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/ImageAppCmdLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 719
     :goto_0
-    new-instance v1, Lcom/panasonic/avc/cng/model/c/h;
+    new-instance v1, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
-    invoke-direct {v1, v0}, Lcom/panasonic/avc/cng/model/c/h;-><init>([B)V
+    invoke-direct {v1, v0}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;-><init>([B)V
 
     .line 720
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/model/c/h;->a()Z
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;->a()Z
 
     move-result v1
 
     if-nez v1, :cond_0
 
     .line 722
-    invoke-static {v7}, Lcom/panasonic/avc/cng/core/a/al;->a(Z)Z
+    invoke-static {v7}, Lcom/panasonic/avc/cng/core/a/StaticHttpCommand;->a(Z)Z
 
     .line 723
-    invoke-static {v6}, Lcom/panasonic/avc/cng/core/a/al;->b(Z)Z
+    invoke-static {v6}, Lcom/panasonic/avc/cng/core/a/StaticHttpCommand;->b(Z)Z
 
     .line 724
-    invoke-static {v6}, Lcom/panasonic/avc/cng/core/a/al;->c(Z)Z
+    invoke-static {v6}, Lcom/panasonic/avc/cng/core/a/StaticHttpCommand;->c(Z)Z
 
     .line 732
     :goto_1
@@ -169,26 +169,26 @@
     move-result-object v0
 
     .line 707
-    invoke-static {}, Lcom/panasonic/avc/cng/core/a/al;->e()V
+    invoke-static {}, Lcom/panasonic/avc/cng/core/a/StaticHttpCommand;->e()V
 
     .line 708
     const-string v1, "StaticHttpCommand"
 
     const-string v2, "SendCGICommand:Res:OK"
 
-    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/f;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/ImageAppCmdLog;->verbose(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 
     .line 728
     :cond_0
-    invoke-static {v6}, Lcom/panasonic/avc/cng/core/a/al;->a(Z)Z
+    invoke-static {v6}, Lcom/panasonic/avc/cng/core/a/StaticHttpCommand;->a(Z)Z
 
     .line 729
-    invoke-static {v7}, Lcom/panasonic/avc/cng/core/a/al;->b(Z)Z
+    invoke-static {v7}, Lcom/panasonic/avc/cng/core/a/StaticHttpCommand;->b(Z)Z
 
     .line 730
-    invoke-static {v6}, Lcom/panasonic/avc/cng/core/a/al;->c(Z)Z
+    invoke-static {v6}, Lcom/panasonic/avc/cng/core/a/StaticHttpCommand;->c(Z)Z
 
     goto :goto_1
 

@@ -98,7 +98,7 @@
     iput-object v0, p0, Lcom/panasonic/avc/cng/view/smartoperation/g;->c:Ljava/util/ArrayList;
 
     .line 115
-    invoke-static {}, Lcom/panasonic/avc/cng/model/service/z;->f()Lcom/panasonic/avc/cng/model/service/a;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->f()Lcom/panasonic/avc/cng/model/service/a;
 
     move-result-object v2
 
@@ -112,7 +112,7 @@
 
     .line 122
     :goto_0
-    instance-of v3, v2, Lcom/panasonic/avc/cng/model/service/a/c;
+    instance-of v3, v2, Lcom/panasonic/avc/cng/model/service/a/BrowserServiceCamera;
 
     if-eqz v3, :cond_0
 
@@ -189,7 +189,7 @@
 
     const/4 v1, 0x1
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/model/service/z;->a(Landroid/content/Context;Z)Lcom/panasonic/avc/cng/model/service/e;
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->a(Landroid/content/Context;Z)Lcom/panasonic/avc/cng/model/service/e;
 
     move-result-object v0
 

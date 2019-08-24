@@ -1,7 +1,7 @@
 package com.panasonic.avc.cng.model.p051c;
 
 import android.util.Xml;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import java.io.StringReader;
 import java.util.Dictionary;
 import java.util.Hashtable;
@@ -81,7 +81,7 @@ public class C1842b extends C1843c {
                 eventType = xmlPullParser.next();
             }
         } catch (Exception e) {
-            C2261g.m9769c("ParseDocument", e.getMessage());
+            ImageAppLog.error("ParseDocument", e.getMessage());
             throw e;
         }
     }
@@ -103,7 +103,7 @@ public class C1842b extends C1843c {
                 next = xmlPullParser.next();
             }
         } catch (Exception e) {
-            C2261g.m9769c("ParseTagCamrply", e.getMessage());
+            ImageAppLog.error("ParseTagCamrply", e.getMessage());
             throw e;
         }
     }
@@ -116,10 +116,10 @@ public class C1842b extends C1843c {
             this.f5357e.f5638b = xmlPullParser.getAttributeValue(null, "version");
             this.f5357e.f5639c = xmlPullParser.getAttributeValue(null, "date");
             int next = xmlPullParser.next();
-            C2261g.m9771e("ParseTagMenuSet", String.format("Event = %d", new Object[]{Integer.valueOf(next)}));
+            ImageAppLog.info("ParseTagMenuSet", String.format("Event = %d", new Object[]{Integer.valueOf(next)}));
             while (next != 3 && next != 1) {
                 if (next == 2) {
-                    C2261g.m9771e("ParseTagMenuSet", String.format("TagName = %s", new Object[]{xmlPullParser.getName()}));
+                    ImageAppLog.info("ParseTagMenuSet", String.format("TagName = %s", new Object[]{xmlPullParser.getName()}));
                     if (xmlPullParser.getName().equalsIgnoreCase("menu")) {
                         m7173c(xmlPullParser, this.f5358f);
                     } else if (xmlPullParser.getName().equalsIgnoreCase("mainmenu")) {
@@ -178,10 +178,10 @@ public class C1842b extends C1843c {
                     }
                 }
                 next = xmlPullParser.next();
-                C2261g.m9771e("ParseTagMenuSet", String.format("Event = %d", new Object[]{Integer.valueOf(next)}));
+                ImageAppLog.info("ParseTagMenuSet", String.format("Event = %d", new Object[]{Integer.valueOf(next)}));
             }
         } catch (Exception e) {
-            C2261g.m9769c("ParseTagMenuSet", e.getMessage());
+            ImageAppLog.error("ParseTagMenuSet", e.getMessage());
             throw e;
         }
     }
@@ -201,7 +201,7 @@ public class C1842b extends C1843c {
                 next = xmlPullParser.next();
             }
         } catch (Exception e) {
-            C2261g.m9769c("ParseTagMainMenu", e.getMessage());
+            ImageAppLog.error("ParseTagMainMenu", e.getMessage());
             throw e;
         }
     }
@@ -221,7 +221,7 @@ public class C1842b extends C1843c {
                 next = xmlPullParser.next();
             }
         } catch (Exception e) {
-            C2261g.m9769c("ParseTagTopButtons", e.getMessage());
+            ImageAppLog.error("ParseTagTopButtons", e.getMessage());
             throw e;
         }
     }
@@ -244,7 +244,7 @@ public class C1842b extends C1843c {
                 next = xmlPullParser.next();
             }
         } catch (Exception e) {
-            C2261g.m9769c("ParseMenu", e.getMessage());
+            ImageAppLog.error("ParseMenu", e.getMessage());
             throw e;
         }
     }
@@ -271,7 +271,7 @@ public class C1842b extends C1843c {
             }
             return m;
         } catch (Exception e) {
-            C2261g.m9769c("ParseTagItem", e.getMessage());
+            ImageAppLog.error("ParseTagItem", e.getMessage());
             throw e;
         }
     }
@@ -292,7 +292,7 @@ public class C1842b extends C1843c {
             dVar.f5377j = xmlPullParser.getAttributeValue(null, "step_val");
             return dVar;
         } catch (Exception e) {
-            C2261g.m9769c("ParseAttributeItem", e.getMessage());
+            ImageAppLog.error("ParseAttributeItem", e.getMessage());
             throw e;
         }
     }
@@ -315,7 +315,7 @@ public class C1842b extends C1843c {
                 next = xmlPullParser.next();
             }
         } catch (Exception e) {
-            C2261g.m9769c("ParseTagGroup", e.getMessage());
+            ImageAppLog.error("ParseTagGroup", e.getMessage());
             throw e;
         }
     }

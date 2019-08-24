@@ -43,13 +43,13 @@
     .line 5043
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b$26$1;->a:Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b$26;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b$26;->a:Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b$26;->a:Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/LiveViewMoviePantilterBaseViewModel;
 
     new-instance v1, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b$26$1$1;
 
     invoke-direct {v1, p0}, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b$26$1$1;-><init>(Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b$26$1;)V
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b;->s(Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/b;Ljava/lang/Runnable;)Z
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/LiveViewMoviePantilterBaseViewModel;->s(Lcom/panasonic/avc/cng/view/liveview/movie/pantilter/LiveViewMoviePantilterBaseViewModel;Ljava/lang/Runnable;)Z
 
     .line 5068
     return-void

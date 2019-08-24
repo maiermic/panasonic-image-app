@@ -47,7 +47,7 @@
     .line 140
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ae$1;->b:Lcom/panasonic/avc/cng/view/setting/ae;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/ae;->c(Lcom/panasonic/avc/cng/view/setting/ae;)Lcom/panasonic/avc/cng/core/c/s;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/ae;->c(Lcom/panasonic/avc/cng/view/setting/ae;)Lcom/panasonic/avc/cng/core/c/Picmate;
 
     move-result-object v0
 
@@ -63,7 +63,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v0, v1, v2}, Lcom/panasonic/avc/cng/core/c/s;->b([Ljava/lang/String;[Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Lcom/panasonic/avc/cng/core/c/Picmate;->b([Ljava/lang/String;[Ljava/lang/String;)V
 
     .line 143
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ae$1;->b:Lcom/panasonic/avc/cng/view/setting/ae;

@@ -69,7 +69,7 @@
 
 .field private j:Lcom/panasonic/avc/cng/view/play/splitdelete/b$a;
 
-.field private k:Lcom/panasonic/avc/cng/view/parts/t;
+.field private k:Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
 .field private l:Lcom/panasonic/avc/cng/view/parts/t$e;
 
@@ -155,7 +155,7 @@
     const/4 v4, 0x1
 
     .line 157
-    new-instance v0, Lcom/panasonic/avc/cng/view/parts/t;
+    new-instance v0, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/b;->a:Landroid/content/Context;
 
@@ -163,14 +163,14 @@
 
     iget-object v3, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/b;->l:Lcom/panasonic/avc/cng/view/parts/t$e;
 
-    invoke-direct {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/parts/t;-><init>(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/parts/t$e;)V
+    invoke-direct {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;-><init>(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/parts/t$e;)V
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/b;->k:Lcom/panasonic/avc/cng/view/parts/t;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/b;->k:Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
     .line 160
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/b;->k:Lcom/panasonic/avc/cng/view/parts/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/b;->k:Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/parts/t;->l:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->l:Lcom/panasonic/avc/cng/a/c;
 
     invoke-static {v4}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -184,11 +184,11 @@
     iput v0, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/b;->m:I
 
     .line 165
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
@@ -206,7 +206,7 @@
     :cond_0
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/b;->a:Landroid/content/Context;
 
-    invoke-static {v0, v4}, Lcom/panasonic/avc/cng/model/service/z;->a(Landroid/content/Context;Z)Lcom/panasonic/avc/cng/model/service/e;
+    invoke-static {v0, v4}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->a(Landroid/content/Context;Z)Lcom/panasonic/avc/cng/model/service/e;
 
     move-result-object v0
 
@@ -214,7 +214,7 @@
     if-eqz v0, :cond_1
 
     .line 175
-    invoke-interface {v0}, Lcom/panasonic/avc/cng/model/service/e;->i()Lcom/panasonic/avc/cng/model/c/e;
+    invoke-interface {v0}, Lcom/panasonic/avc/cng/model/service/e;->i()Lcom/panasonic/avc/cng/model/c/CameraStatus;
 
     move-result-object v0
 
@@ -222,7 +222,7 @@
     if-eqz v0, :cond_1
 
     .line 178
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/e;->n()Z
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->n()Z
 
     move-result v0
 
@@ -243,14 +243,14 @@
     invoke-virtual {p0}, Lcom/panasonic/avc/cng/view/play/splitdelete/b;->c()V
 
     .line 144
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/b;->k:Lcom/panasonic/avc/cng/view/parts/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/b;->k:Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/parts/t;->c()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->c()V
 
     .line 145
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/b;->k:Lcom/panasonic/avc/cng/view/parts/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/b;->k:Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/parts/t;->u()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->u()V
 
     .line 148
     invoke-super {p0}, Lcom/panasonic/avc/cng/view/a/c;->a()V
@@ -276,7 +276,7 @@
     iput-object p4, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/b;->j:Lcom/panasonic/avc/cng/view/play/splitdelete/b$a;
 
     .line 116
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/b;->k:Lcom/panasonic/avc/cng/view/parts/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/b;->k:Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/b;->a:Landroid/content/Context;
 
@@ -284,23 +284,23 @@
 
     iget-object v3, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/b;->l:Lcom/panasonic/avc/cng/view/parts/t$e;
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/parts/t;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/parts/t$e;)V
+    invoke-virtual {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/parts/t$e;)V
 
     .line 117
     return-void
 .end method
 
-.method public a(Lcom/panasonic/avc/cng/model/c/e;)V
+.method public a(Lcom/panasonic/avc/cng/model/c/CameraStatus;)V
     .locals 3
 
     .prologue
     .line 341
-    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/e;->a()I
+    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->a()I
 
     move-result v0
 
     .line 342
-    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/e;->b()I
+    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->b()I
 
     move-result v1
 
@@ -312,14 +312,14 @@
     invoke-virtual {p0, v2}, Lcom/panasonic/avc/cng/view/play/splitdelete/b;->a(Ljava/lang/Runnable;)Z
 
     .line 359
-    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/e;->n()Z
+    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->n()Z
 
     move-result v0
 
     iput-boolean v0, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/b;->n:Z
 
     .line 361
-    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/a/c;->a(Lcom/panasonic/avc/cng/model/c/e;)V
+    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/a/c;->a(Lcom/panasonic/avc/cng/model/c/CameraStatus;)V
 
     .line 362
     return-void
@@ -391,9 +391,9 @@
 
     .line 131
     :cond_4
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/b;->k:Lcom/panasonic/avc/cng/view/parts/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/b;->k:Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/parts/t;->c()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->c()V
 
     .line 132
     return-void
@@ -407,14 +407,14 @@
     invoke-virtual {p0, p1}, Lcom/panasonic/avc/cng/view/play/splitdelete/b;->b(I)V
 
     .line 217
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/b;->k:Lcom/panasonic/avc/cng/view/parts/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/b;->k:Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
     if-eqz v0, :cond_0
 
     .line 219
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/b;->k:Lcom/panasonic/avc/cng/view/parts/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/b;->k:Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
-    invoke-virtual {v0, p1}, Lcom/panasonic/avc/cng/view/parts/t;->c(I)V
+    invoke-virtual {v0, p1}, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->c(I)V
 
     .line 221
     :cond_0
@@ -426,11 +426,11 @@
 
     .prologue
     .line 269
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
@@ -444,19 +444,19 @@
 
     .line 276
     :cond_1
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/b;->k:Lcom/panasonic/avc/cng/view/parts/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/b;->k:Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
     if-eqz v0, :cond_0
 
     .line 279
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/b;->k:Lcom/panasonic/avc/cng/view/parts/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/b;->k:Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
-    invoke-virtual {v0, p1}, Lcom/panasonic/avc/cng/view/parts/t;->c(I)V
+    invoke-virtual {v0, p1}, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->c(I)V
 
     .line 282
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/b;->k:Lcom/panasonic/avc/cng/view/parts/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/b;->k:Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/parts/t;->d()Ljava/util/List;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->d()Ljava/util/List;
 
     move-result-object v0
 
@@ -587,9 +587,9 @@
     if-ne v0, v1, :cond_0
 
     .line 193
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/b;->k:Lcom/panasonic/avc/cng/view/parts/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/b;->k:Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/parts/t;->d()Ljava/util/List;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->d()Ljava/util/List;
 
     move-result-object v0
 
@@ -614,14 +614,14 @@
 
     .prologue
     .line 229
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/b;->k:Lcom/panasonic/avc/cng/view/parts/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/b;->k:Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
     if-eqz v0, :cond_0
 
     .line 231
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/b;->k:Lcom/panasonic/avc/cng/view/parts/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/b;->k:Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/parts/t;->n()I
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->n()I
 
     move-result v0
 
@@ -635,12 +635,12 @@
     goto :goto_0
 .end method
 
-.method public i()Lcom/panasonic/avc/cng/view/parts/t;
+.method public i()Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
     .locals 1
 
     .prologue
     .line 244
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/b;->k:Lcom/panasonic/avc/cng/view/parts/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/b;->k:Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
     return-object v0
 .end method
@@ -650,9 +650,9 @@
 
     .prologue
     .line 254
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/b;->k:Lcom/panasonic/avc/cng/view/parts/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/b;->k:Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/parts/t;->t()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->t()V
 
     .line 257
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/b;->i:Lcom/panasonic/avc/cng/a/c;

@@ -53,7 +53,7 @@
     .line 257
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/b$a;->a:Lcom/panasonic/avc/cng/view/liveview/movie/matanity/b;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/b;->a(Lcom/panasonic/avc/cng/view/liveview/movie/matanity/b;)Lcom/panasonic/avc/cng/view/liveview/movie/matanity/c;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/b;->a(Lcom/panasonic/avc/cng/view/liveview/movie/matanity/b;)Lcom/panasonic/avc/cng/view/liveview/movie/matanity/LiveViewMovieMatanityViewModel;
 
     move-result-object v0
 
@@ -62,11 +62,11 @@
     .line 259
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/b$a;->a:Lcom/panasonic/avc/cng/view/liveview/movie/matanity/b;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/b;->a(Lcom/panasonic/avc/cng/view/liveview/movie/matanity/b;)Lcom/panasonic/avc/cng/view/liveview/movie/matanity/c;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/b;->a(Lcom/panasonic/avc/cng/view/liveview/movie/matanity/b;)Lcom/panasonic/avc/cng/view/liveview/movie/matanity/LiveViewMovieMatanityViewModel;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/c;->v()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/LiveViewMovieMatanityViewModel;->v()V
 
     .line 261
     :cond_0
@@ -80,7 +80,7 @@
     .line 268
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/b$a;->a:Lcom/panasonic/avc/cng/view/liveview/movie/matanity/b;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/b;->a(Lcom/panasonic/avc/cng/view/liveview/movie/matanity/b;)Lcom/panasonic/avc/cng/view/liveview/movie/matanity/c;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/b;->a(Lcom/panasonic/avc/cng/view/liveview/movie/matanity/b;)Lcom/panasonic/avc/cng/view/liveview/movie/matanity/LiveViewMovieMatanityViewModel;
 
     move-result-object v0
 
@@ -89,11 +89,11 @@
     .line 270
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/b$a;->a:Lcom/panasonic/avc/cng/view/liveview/movie/matanity/b;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/b;->a(Lcom/panasonic/avc/cng/view/liveview/movie/matanity/b;)Lcom/panasonic/avc/cng/view/liveview/movie/matanity/c;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/b;->a(Lcom/panasonic/avc/cng/view/liveview/movie/matanity/b;)Lcom/panasonic/avc/cng/view/liveview/movie/matanity/LiveViewMovieMatanityViewModel;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/c;->w()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/LiveViewMovieMatanityViewModel;->w()V
 
     .line 272
     :cond_0
@@ -107,7 +107,7 @@
     .line 279
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/b$a;->a:Lcom/panasonic/avc/cng/view/liveview/movie/matanity/b;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/b;->a(Lcom/panasonic/avc/cng/view/liveview/movie/matanity/b;)Lcom/panasonic/avc/cng/view/liveview/movie/matanity/c;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/b;->a(Lcom/panasonic/avc/cng/view/liveview/movie/matanity/b;)Lcom/panasonic/avc/cng/view/liveview/movie/matanity/LiveViewMovieMatanityViewModel;
 
     move-result-object v0
 
@@ -116,11 +116,11 @@
     .line 281
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/b$a;->a:Lcom/panasonic/avc/cng/view/liveview/movie/matanity/b;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/b;->a(Lcom/panasonic/avc/cng/view/liveview/movie/matanity/b;)Lcom/panasonic/avc/cng/view/liveview/movie/matanity/c;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/b;->a(Lcom/panasonic/avc/cng/view/liveview/movie/matanity/b;)Lcom/panasonic/avc/cng/view/liveview/movie/matanity/LiveViewMovieMatanityViewModel;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/c;->u()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/LiveViewMovieMatanityViewModel;->u()V
 
     .line 283
     :cond_0
@@ -134,7 +134,7 @@
     .line 290
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/b$a;->a:Lcom/panasonic/avc/cng/view/liveview/movie/matanity/b;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/b;->a(Lcom/panasonic/avc/cng/view/liveview/movie/matanity/b;)Lcom/panasonic/avc/cng/view/liveview/movie/matanity/c;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/b;->a(Lcom/panasonic/avc/cng/view/liveview/movie/matanity/b;)Lcom/panasonic/avc/cng/view/liveview/movie/matanity/LiveViewMovieMatanityViewModel;
 
     move-result-object v0
 
@@ -143,11 +143,11 @@
     .line 292
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/b$a;->a:Lcom/panasonic/avc/cng/view/liveview/movie/matanity/b;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/b;->a(Lcom/panasonic/avc/cng/view/liveview/movie/matanity/b;)Lcom/panasonic/avc/cng/view/liveview/movie/matanity/c;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/b;->a(Lcom/panasonic/avc/cng/view/liveview/movie/matanity/b;)Lcom/panasonic/avc/cng/view/liveview/movie/matanity/LiveViewMovieMatanityViewModel;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/c;->t()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/LiveViewMovieMatanityViewModel;->t()V
 
     .line 294
     :cond_0
@@ -161,7 +161,7 @@
     .line 301
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/b$a;->a:Lcom/panasonic/avc/cng/view/liveview/movie/matanity/b;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/b;->a(Lcom/panasonic/avc/cng/view/liveview/movie/matanity/b;)Lcom/panasonic/avc/cng/view/liveview/movie/matanity/c;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/b;->a(Lcom/panasonic/avc/cng/view/liveview/movie/matanity/b;)Lcom/panasonic/avc/cng/view/liveview/movie/matanity/LiveViewMovieMatanityViewModel;
 
     move-result-object v0
 
@@ -170,11 +170,11 @@
     .line 303
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/b$a;->a:Lcom/panasonic/avc/cng/view/liveview/movie/matanity/b;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/b;->a(Lcom/panasonic/avc/cng/view/liveview/movie/matanity/b;)Lcom/panasonic/avc/cng/view/liveview/movie/matanity/c;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/b;->a(Lcom/panasonic/avc/cng/view/liveview/movie/matanity/b;)Lcom/panasonic/avc/cng/view/liveview/movie/matanity/LiveViewMovieMatanityViewModel;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/c;->x()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/LiveViewMovieMatanityViewModel;->x()V
 
     .line 305
     :cond_0
@@ -188,7 +188,7 @@
     .line 312
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/b$a;->a:Lcom/panasonic/avc/cng/view/liveview/movie/matanity/b;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/b;->a(Lcom/panasonic/avc/cng/view/liveview/movie/matanity/b;)Lcom/panasonic/avc/cng/view/liveview/movie/matanity/c;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/b;->a(Lcom/panasonic/avc/cng/view/liveview/movie/matanity/b;)Lcom/panasonic/avc/cng/view/liveview/movie/matanity/LiveViewMovieMatanityViewModel;
 
     move-result-object v0
 
@@ -197,11 +197,11 @@
     .line 314
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/b$a;->a:Lcom/panasonic/avc/cng/view/liveview/movie/matanity/b;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/b;->a(Lcom/panasonic/avc/cng/view/liveview/movie/matanity/b;)Lcom/panasonic/avc/cng/view/liveview/movie/matanity/c;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/b;->a(Lcom/panasonic/avc/cng/view/liveview/movie/matanity/b;)Lcom/panasonic/avc/cng/view/liveview/movie/matanity/LiveViewMovieMatanityViewModel;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/c;->y()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/LiveViewMovieMatanityViewModel;->y()V
 
     .line 316
     :cond_0

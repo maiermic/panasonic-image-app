@@ -11,32 +11,32 @@ import android.os.Environment;
 import android.os.Handler;
 import android.os.StatFs;
 import android.preference.PreferenceManager;
-import com.panasonic.avc.cng.core.p040a.C1543y;
+import com.panasonic.avc.cng.core.p040a.ModeChangeCommand;
 import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.C1833c;
 import com.panasonic.avc.cng.model.C1878d;
 import com.panasonic.avc.cng.model.C1892f;
 import com.panasonic.avc.cng.model.C1910l;
-import com.panasonic.avc.cng.model.p051c.C1846e;
+import com.panasonic.avc.cng.model.p051c.CameraStatus;
 import com.panasonic.avc.cng.model.p051c.C1865q.C1866a;
 import com.panasonic.avc.cng.model.p051c.C1865q.C1867b;
 import com.panasonic.avc.cng.model.service.C1985b.C1986a;
 import com.panasonic.avc.cng.model.service.C2028e;
 import com.panasonic.avc.cng.model.service.C2199n;
 import com.panasonic.avc.cng.model.service.C2199n.C2200a;
-import com.panasonic.avc.cng.model.service.C2253z;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
 import com.panasonic.avc.cng.model.service.p055b.C2003c;
 import com.panasonic.avc.cng.p038a.C1344c;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.util.C2264j;
 import com.panasonic.avc.cng.view.p072a.C2291c;
 import com.panasonic.avc.cng.view.parts.C3971aa;
 import com.panasonic.avc.cng.view.parts.C3971aa.C3972a;
 import com.panasonic.avc.cng.view.parts.C4103bi;
-import com.panasonic.avc.cng.view.parts.C4245t;
-import com.panasonic.avc.cng.view.parts.C4245t.C4255e;
+import com.panasonic.avc.cng.view.parts.BrowserViewModel;
+import com.panasonic.avc.cng.view.parts.BrowserViewModel.C4255e;
 import com.panasonic.avc.cng.view.parts.C4262x;
-import com.panasonic.avc.cng.view.play.multiphotoframe.C4636n.C4660b;
+import com.panasonic.avc.cng.view.play.multiphotoframe.MultiPhotoFrameSelectPictureViewModel.C4660b;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
@@ -102,7 +102,7 @@ public class C4754b extends C2291c {
     protected C4775c f15460f;
 
     /* renamed from: g */
-    protected C4245t f15461g;
+    protected BrowserViewModel f15461g;
 
     /* renamed from: h */
     protected C4255e f15462h;
@@ -357,7 +357,7 @@ public class C4754b extends C2291c {
 
     /* renamed from: d */
     public void mo11081d(boolean z) {
-        C2261g.m9770d(f15444A, String.format("setAutoReceipt(%s)", new Object[]{String.valueOf(z)}));
+        ImageAppLog.verbose(f15444A, String.format("setAutoReceipt(%s)", new Object[]{String.valueOf(z)}));
         this.f15459O = z;
         if (this.f15446B == null) {
             return;
@@ -448,18 +448,18 @@ public class C4754b extends C2291c {
     private void m18492z() {
         this.f15465k = new C4769a();
         this.f15464j = new C3971aa(this.f15446B, this.f3707b, this.f15465k);
-        this.f15461g = new C4245t(this.f15446B, this.f3707b, this.f15462h);
+        this.f15461g = new BrowserViewModel(this.f15446B, this.f3707b, this.f15462h);
         this.f15461g.mo9947a(-1);
         this.f15461g.mo9957b(true);
         this.f15463i = -1;
         this.f15449E = new C4770b();
-        this.f15448D = C2253z.m9709i(this.f15446B);
+        this.f15448D = ServiceFactory.m9709i(this.f15446B);
         this.f15448D.mo5388a();
         this.f15466l = false;
         this.f15467m = null;
-        C2028e a = C2253z.m9680a(this.f15446B, true);
+        C2028e a = ServiceFactory.m9680a(this.f15446B, true);
         if (a != null) {
-            C1846e i = a.mo5285i();
+            CameraStatus i = a.mo5285i();
             if (i != null) {
                 this.f15468n = i.mo4706n();
             }
@@ -473,7 +473,7 @@ public class C4754b extends C2291c {
         int j = 60000 - mo11089j();
         if (j >= 0) {
             this.f15474t.mo3216a(Integer.valueOf(60000));
-            C4245t q = mo11096q();
+            BrowserViewModel q = mo11096q();
             if (q != null) {
                 q.mo9956b(j);
             }
@@ -500,7 +500,7 @@ public class C4754b extends C2291c {
         int j = 60000 - mo11089j();
         if (j >= 0) {
             this.f15474t.mo3216a(Integer.valueOf(60000));
-            C4245t q = mo11096q();
+            BrowserViewModel q = mo11096q();
             if (q != null) {
                 q.mo9956b(j);
             }
@@ -527,8 +527,8 @@ public class C4754b extends C2291c {
                             C4754b.this.f15460f.mo10997b();
                         }
                         synchronized (C1910l.m7679a()) {
-                            new C1543y(a.f5682d).mo3409a();
-                            C2253z.m9679a(C4754b.this.f15446B, a).mo5185a((C1986a) new C1986a() {
+                            new ModeChangeCommand(a.f5682d).mo3409a();
+                            ServiceFactory.m9679a(C4754b.this.f15446B, a).mo5185a((C1986a) new C1986a() {
                                 /* renamed from: a */
                                 public void mo5201a() {
                                 }
@@ -572,7 +572,7 @@ public class C4754b extends C2291c {
     }
 
     /* renamed from: q */
-    public C4245t mo11096q() {
+    public BrowserViewModel mo11096q() {
         return this.f15461g;
     }
 
@@ -597,7 +597,7 @@ public class C4754b extends C2291c {
             if (c != null) {
                 str2 = ((C1866a) c.f5598d.get(this.f15464j.mo9421l())).f5593e;
                 if (c.f5597c.equalsIgnoreCase("sd")) {
-                    C1846e i = C2253z.m9680a(this.f15446B, true).mo5285i();
+                    CameraStatus i = ServiceFactory.m9680a(this.f15446B, true).mo5285i();
                     if (i != null && !i.mo4706n()) {
                         if (this.f15460f != null) {
                             this.f15460f.mo10995a();
@@ -654,7 +654,7 @@ public class C4754b extends C2291c {
     }
 
     /* renamed from: a */
-    public void mo6018a(final C1846e eVar) {
+    public void mo6018a(final CameraStatus eVar) {
         boolean z = true;
         String C = eVar.mo4654C();
         if (C.equalsIgnoreCase("high") && this.f3707b != null) {

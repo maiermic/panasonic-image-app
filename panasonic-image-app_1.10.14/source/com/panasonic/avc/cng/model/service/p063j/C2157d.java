@@ -7,7 +7,7 @@ import com.panasonic.avc.cng.model.C1878d;
 import com.panasonic.avc.cng.model.service.C1921a;
 import com.panasonic.avc.cng.model.service.C2236s;
 import com.panasonic.avc.cng.model.service.C2236s.C2237a;
-import com.panasonic.avc.cng.model.service.C2253z;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
 
 /* renamed from: com.panasonic.avc.cng.model.service.j.d */
 public class C2157d implements C2173a, C2236s {
@@ -46,7 +46,7 @@ public class C2157d implements C2173a, C2236s {
     /* renamed from: a */
     public void mo5679a(C2237a aVar) {
         this.f6670a = aVar;
-        C1921a f = C2253z.m9703f();
+        C1921a f = ServiceFactory.m9703f();
         if (f != null) {
             f.mo5041f();
         }
@@ -279,7 +279,7 @@ public class C2157d implements C2173a, C2236s {
             this.f6672c.mo5762d();
             this.f6672c = null;
         }
-        C1921a f = C2253z.m9703f();
+        C1921a f = ServiceFactory.m9703f();
         if (f != null) {
             f.mo5042g();
         }

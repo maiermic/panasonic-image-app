@@ -13,11 +13,11 @@ import android.widget.TextView;
 import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.C1892f;
-import com.panasonic.avc.cng.model.p051c.C1846e;
+import com.panasonic.avc.cng.model.p051c.CameraStatus;
 import com.panasonic.avc.cng.model.service.C2028e;
-import com.panasonic.avc.cng.model.service.C2253z;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
 import com.panasonic.avc.cng.view.transferassist.TransferModeSelectActivity.C6023a;
 import com.panasonic.avc.cng.view.transferassist.TransferModeSelectActivity.C6024b;
 import com.panasonic.avc.cng.view.transferassist.TransferModeSelectActivity.C6025c;
@@ -57,22 +57,22 @@ public class C6026a extends Fragment implements OnClickListener, OnCheckedChange
     public void onClick(View view) {
         C1892f a = C1712b.m6919c().mo4896a();
         if (a != null) {
-            C2028e a2 = C2253z.m9680a((Context) getActivity(), false);
+            C2028e a2 = ServiceFactory.m9680a((Context) getActivity(), false);
             if (a2 != null) {
-                C1846e i = a2.mo5285i();
+                CameraStatus i = a2.mo5285i();
                 if (i != null) {
                     if (a.f5691m == null || !a.f5691m.mo4754z()) {
                         if (!i.mo4706n()) {
-                            C2331d.m10114a(getActivity(), C2328a.DIALOG_ID_SDCARD_NONE, (Bundle) null);
+                            DialogFactory.m10114a(getActivity(), C2328a.DIALOG_ID_SDCARD_NONE, (Bundle) null);
                             return;
                         }
                     } else if (this.f18381b == C6025c.SD1) {
                         if (!i.mo4707o()) {
-                            C2331d.m10114a(getActivity(), C2328a.DIALOG_ID_SDCARD_NONE, (Bundle) null);
+                            DialogFactory.m10114a(getActivity(), C2328a.DIALOG_ID_SDCARD_NONE, (Bundle) null);
                             return;
                         }
                     } else if (this.f18381b == C6025c.SD2 && !i.mo4708p()) {
-                        C2331d.m10114a(getActivity(), C2328a.DIALOG_ID_SDCARD_NONE, (Bundle) null);
+                        DialogFactory.m10114a(getActivity(), C2328a.DIALOG_ID_SDCARD_NONE, (Bundle) null);
                         return;
                     }
                 }

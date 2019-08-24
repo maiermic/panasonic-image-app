@@ -31,7 +31,7 @@ import com.google.firebase.iid.FirebaseInstanceId;
 import com.panasonic.avc.cng.application.C1347a;
 import com.panasonic.avc.cng.application.ImageAppLauncher;
 import com.panasonic.avc.cng.core.codec.G711Codec;
-import com.panasonic.avc.cng.core.p040a.C1412a;
+import com.panasonic.avc.cng.core.p040a.BabyMonitorCommand;
 import com.panasonic.avc.cng.core.p040a.C1448aj;
 import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.C1712b;
@@ -39,25 +39,25 @@ import com.panasonic.avc.cng.model.C1892f;
 import com.panasonic.avc.cng.model.C1897j.C1905h;
 import com.panasonic.avc.cng.model.C1897j.C1906i;
 import com.panasonic.avc.cng.model.C1910l;
-import com.panasonic.avc.cng.model.p051c.C1846e;
+import com.panasonic.avc.cng.model.p051c.CameraStatus;
 import com.panasonic.avc.cng.model.service.C2028e;
-import com.panasonic.avc.cng.model.service.C2253z;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
 import com.panasonic.avc.cng.p038a.C1343b;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.util.C2265k;
 import com.panasonic.avc.cng.util.C2266l;
 import com.panasonic.avc.cng.util.C2272n;
 import com.panasonic.avc.cng.util.C2274o;
 import com.panasonic.avc.cng.view.liveview.C3906v;
 import com.panasonic.avc.cng.view.liveview.C3906v.C3909b;
-import com.panasonic.avc.cng.view.liveview.movie.conventional.C3541f.C3598a;
+import com.panasonic.avc.cng.view.liveview.movie.conventional.LiveViewMovieViewModel.C3598a;
 import com.panasonic.avc.cng.view.liveview.movie.homemonitor.C3622c;
 import com.panasonic.avc.cng.view.p072a.C2308e;
 import com.panasonic.avc.cng.view.p072a.C2311f;
 import com.panasonic.avc.cng.view.p072a.C2311f.C2312a;
 import com.panasonic.avc.cng.view.p072a.C2316j;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
 import com.panasonic.avc.cng.view.p073b.C2376f.C2378b;
 import com.panasonic.avc.cng.view.parts.C4213l;
 import com.panasonic.avc.cng.view.parts.C4225o;
@@ -108,7 +108,7 @@ public class LiveViewMovieBabyMonitorActivity extends C3476a implements C0010a, 
     private class C3455a implements C2265k {
 
         /* renamed from: a */
-        protected C3541f f11082a = null;
+        protected LiveViewMovieViewModel f11082a = null;
 
         /* renamed from: c */
         private String f11084c = null;
@@ -127,7 +127,7 @@ public class LiveViewMovieBabyMonitorActivity extends C3476a implements C0010a, 
         /* access modifiers changed from: private */
 
         /* renamed from: g */
-        public C1412a f11088g = null;
+        public BabyMonitorCommand f11088g = null;
         /* access modifiers changed from: private */
 
         /* renamed from: h */
@@ -155,7 +155,7 @@ public class LiveViewMovieBabyMonitorActivity extends C3476a implements C0010a, 
                 if (C3455a.this.f11086e != null) {
                     byte[] a = C3622c.m14440a((Context) LiveViewMovieBabyMonitorActivity.this, C3455a.this.f11086e.mo4241a(sArr, 0, i), C3455a.this.f11087f, false);
                     if (C3455a.this.f11088g == null || C3455a.this.f11085d <= 0) {
-                        C2261g.m9766b("BabyProcess", "Cannot send audio data to movie!!");
+                        ImageAppLog.warning("BabyProcess", "Cannot send audio data to movie!!");
                     } else {
                         C3455a.this.f11088g.mo3411a(a, C3455a.this.f11085d);
                     }
@@ -163,7 +163,7 @@ public class LiveViewMovieBabyMonitorActivity extends C3476a implements C0010a, 
             }
         }
 
-        public C3455a(C3541f fVar) {
+        public C3455a(LiveViewMovieViewModel fVar) {
             this.f11082a = fVar;
             this.f11091j = new C3460a();
         }
@@ -187,8 +187,8 @@ public class LiveViewMovieBabyMonitorActivity extends C3476a implements C0010a, 
 
         /* renamed from: a */
         public void mo8196a() {
-            if (!C2331d.m10125b((Activity) LiveViewMovieBabyMonitorActivity.this, C2328a.ON_PROGRESS)) {
-                C2331d.m10114a((Activity) LiveViewMovieBabyMonitorActivity.this, C2328a.ON_PROGRESS, (Bundle) null);
+            if (!DialogFactory.m10125b((Activity) LiveViewMovieBabyMonitorActivity.this, C2328a.ON_PROGRESS)) {
+                DialogFactory.m10114a((Activity) LiveViewMovieBabyMonitorActivity.this, C2328a.ON_PROGRESS, (Bundle) null);
             }
             m13769a(0, (Object) null);
         }
@@ -205,7 +205,7 @@ public class LiveViewMovieBabyMonitorActivity extends C3476a implements C0010a, 
 
         /* renamed from: b */
         private void m13772b(String str) {
-            new C1412a(C1712b.m6919c().mo4896a().f5682d).mo3413b(str);
+            new BabyMonitorCommand(C1712b.m6919c().mo4896a().f5682d).mo3413b(str);
         }
 
         /* renamed from: b */
@@ -221,7 +221,7 @@ public class LiveViewMovieBabyMonitorActivity extends C3476a implements C0010a, 
 
         /* renamed from: c */
         private void m13774c(String str) {
-            new C1412a(C1712b.m6919c().mo4896a().f5682d).mo3415c(str);
+            new BabyMonitorCommand(C1712b.m6919c().mo4896a().f5682d).mo3415c(str);
         }
 
         /* renamed from: c */
@@ -256,7 +256,7 @@ public class LiveViewMovieBabyMonitorActivity extends C3476a implements C0010a, 
             this.f11085d = 0;
             this.f11087f[0] = 0;
             this.f11087f[1] = 0;
-            this.f11088g = new C1412a(a.f5682d);
+            this.f11088g = new BabyMonitorCommand(a.f5682d);
             new Thread(new Runnable() {
                 public void run() {
                     synchronized (C1910l.m7679a()) {
@@ -336,11 +336,11 @@ public class LiveViewMovieBabyMonitorActivity extends C3476a implements C0010a, 
         public boolean mo5760b(C2272n nVar, int i) {
             if (i == 0) {
                 String c = FirebaseInstanceId.m5134a().mo3136c();
-                C2261g.m9763a("FirebaseMessaging", getClass().getSimpleName() + "#runMethod: token = " + c);
+                ImageAppLog.debug("FirebaseMessaging", getClass().getSimpleName() + "#runMethod: token = " + c);
                 if (!TextUtils.isEmpty(c)) {
                     C1892f a = C1712b.m6919c().mo4896a();
                     if (a != null) {
-                        new C1412a(a.f5682d).mo3410a(c);
+                        new BabyMonitorCommand(a.f5682d).mo3410a(c);
                     }
                     while (LiveViewMovieBabyMonitorActivity.this.getStartLive() != 2 && LiveViewMovieBabyMonitorActivity.this.getStartLive() != 3) {
                         try {
@@ -369,8 +369,8 @@ public class LiveViewMovieBabyMonitorActivity extends C3476a implements C0010a, 
         /* renamed from: a */
         public void mo5757a(Object obj, int i) {
             if (i == 0) {
-                if (C2331d.m10125b((Activity) LiveViewMovieBabyMonitorActivity.this, C2328a.ON_PROGRESS)) {
-                    C2331d.m10100a((Activity) LiveViewMovieBabyMonitorActivity.this);
+                if (DialogFactory.m10125b((Activity) LiveViewMovieBabyMonitorActivity.this, C2328a.ON_PROGRESS)) {
+                    DialogFactory.m10100a((Activity) LiveViewMovieBabyMonitorActivity.this);
                 }
             } else if (i == 1) {
                 Long l = (Long) obj;
@@ -402,11 +402,11 @@ public class LiveViewMovieBabyMonitorActivity extends C3476a implements C0010a, 
                             } catch (InterruptedException e) {
                             }
                         }
-                        if (C2331d.m10125b((Activity) LiveViewMovieBabyMonitorActivity.this, C2328a.ON_PROGRESS)) {
-                            C2331d.m10100a((Activity) LiveViewMovieBabyMonitorActivity.this);
+                        if (DialogFactory.m10125b((Activity) LiveViewMovieBabyMonitorActivity.this, C2328a.ON_PROGRESS)) {
+                            DialogFactory.m10100a((Activity) LiveViewMovieBabyMonitorActivity.this);
                         }
                         if (intent.getBooleanExtra("ImageAppInstanceIdService.KEY_REFRESH_SUCCEEDED", false)) {
-                            C2331d.m10114a((Activity) LiveViewMovieBabyMonitorActivity.this, C2328a.DIALOG_ID_BABY_MON_CANT_REGIST, (Bundle) null);
+                            DialogFactory.m10114a((Activity) LiveViewMovieBabyMonitorActivity.this, C2328a.DIALOG_ID_BABY_MON_CANT_REGIST, (Bundle) null);
                         }
                     }
                 });
@@ -425,12 +425,12 @@ public class LiveViewMovieBabyMonitorActivity extends C3476a implements C0010a, 
 
         /* renamed from: b */
         public void mo6082b() {
-            C2331d.m10114a((Activity) LiveViewMovieBabyMonitorActivity.this, C2328a.ON_CANNOT_TRANSRATION_BSBY_MONOTARING, (Bundle) null);
+            DialogFactory.m10114a((Activity) LiveViewMovieBabyMonitorActivity.this, C2328a.ON_CANNOT_TRANSRATION_BSBY_MONOTARING, (Bundle) null);
         }
 
         /* renamed from: c */
         public void mo6083c() {
-            C2331d.m10114a((Activity) LiveViewMovieBabyMonitorActivity.this, C2328a.ON_CANNOT_TRANSRATION_BSBY_MONOTARING, (Bundle) null);
+            DialogFactory.m10114a((Activity) LiveViewMovieBabyMonitorActivity.this, C2328a.ON_CANNOT_TRANSRATION_BSBY_MONOTARING, (Bundle) null);
         }
     }
 
@@ -466,9 +466,9 @@ public class LiveViewMovieBabyMonitorActivity extends C3476a implements C0010a, 
         this._context = this;
         this._handler = new Handler();
         this._mainListener = new C3478a();
-        this._viewModel = (C3541f) C2316j.m10030a("LiveViewMovieViewModel");
+        this._viewModel = (LiveViewMovieViewModel) C2316j.m10030a("LiveViewMovieViewModel");
         if (this._viewModel == null) {
-            this._viewModel = new C3541f(this._context, this._handler);
+            this._viewModel = new LiveViewMovieViewModel(this._context, this._handler);
             this._viewModel.mo8390a(this._context, this._handler, (C3598a) this._mainListener);
             C2316j.m10032a("LiveViewMovieViewModel", this._viewModel);
             this._viewModel.mo8396b(this._lastLiveViewMode);
@@ -499,9 +499,9 @@ public class LiveViewMovieBabyMonitorActivity extends C3476a implements C0010a, 
         findViewById(R.id.rightButton).setOnTouchListener(this);
         OnCreateLiveViewActivity(1, false);
         this._binder = new C3488b();
-        C2028e a = C2253z.m9680a((Context) null, false);
+        C2028e a = ServiceFactory.m9680a((Context) null, false);
         if (a != null) {
-            C1846e i = a.mo5285i();
+            CameraStatus i = a.mo5285i();
             if (this._viewModel == null || i == null || (!C2274o.m9901g(i.mo4656E()) && !C2274o.m9911q(i.mo4656E()) && !C2274o.m9882F(i.mo4656E()) && !C2274o.m9881E(i.mo4656E()) && !C2274o.m9903i(i.mo4656E()) && !C2274o.m9918x(i.mo4656E()))) {
                 this._binder.mo8259a(this, this._viewModel);
             } else {
@@ -654,7 +654,7 @@ public class LiveViewMovieBabyMonitorActivity extends C3476a implements C0010a, 
         } else {
             bundle.putInt(C2378b.SINGLE_CHOICE_CHECKED_ITEM.name(), -1);
         }
-        C2331d.m10114a((Activity) this, C2328a.ON_SELECT_PANTILTER_ROUND_SETTING, bundle);
+        DialogFactory.m10114a((Activity) this, C2328a.ON_SELECT_PANTILTER_ROUND_SETTING, bundle);
     }
 
     public void onBackPressed() {
@@ -688,9 +688,9 @@ public class LiveViewMovieBabyMonitorActivity extends C3476a implements C0010a, 
             }
         }
         super.onResume();
-        C2028e a = C2253z.m9680a((Context) null, false);
+        C2028e a = ServiceFactory.m9680a((Context) null, false);
         if (a != null) {
-            C1846e i = a.mo5285i();
+            CameraStatus i = a.mo5285i();
             if (this._viewModel != null && i != null) {
                 if ((C2274o.m9901g(i.mo4656E()) || C2274o.m9911q(i.mo4656E()) || C2274o.m9882F(i.mo4656E()) || C2274o.m9881E(i.mo4656E()) || C2274o.m9903i(i.mo4656E()) || C2274o.m9918x(i.mo4656E()) || C2274o.m9904j(i.mo4656E())) && (this.mGuiMode == C3464d.PresetMain || this.mGuiMode == C3464d.Normal || this.mGuiMode == C3464d.Unknown)) {
                     this._viewModel.mo8428z();
@@ -924,7 +924,7 @@ public class LiveViewMovieBabyMonitorActivity extends C3476a implements C0010a, 
     /* access modifiers changed from: private */
     public void changeUI(C3464d dVar) {
         boolean z;
-        C2261g.m9763a("niwa", "uiMode = " + dVar);
+        ImageAppLog.debug("niwa", "uiMode = " + dVar);
         ViewGroup viewGroup = (ViewGroup) findViewById(R.id.babymon_arrow_layout);
         ViewGroup viewGroup2 = (ViewGroup) findViewById(R.id.babymon_onspeeking_layout);
         ViewGroup viewGroup3 = (ViewGroup) findViewById(R.id.babymon_control_layout);
@@ -943,7 +943,7 @@ public class LiveViewMovieBabyMonitorActivity extends C3476a implements C0010a, 
         LinearLayout linearLayout4 = (LinearLayout) findViewById(R.id.roundSetting);
         View findViewById4 = findViewById(R.id.preset_babymon_mic);
         ImageView imageView3 = (ImageView) findViewById(R.id.preset_mic_vol);
-        C2261g.m9771e(TAG, String.format(Locale.getDefault(), "changeUI(%s)", new Object[]{dVar}));
+        ImageAppLog.info(TAG, String.format(Locale.getDefault(), "changeUI(%s)", new Object[]{dVar}));
         if (this._viewModel != null) {
             if (dVar == C3464d.Normal) {
                 viewGroup4.setVisibility(0);
@@ -1559,7 +1559,7 @@ public class LiveViewMovieBabyMonitorActivity extends C3476a implements C0010a, 
         if (!this.mProcess.mo8203f()) {
             return super.IsEnableOptionMenu();
         }
-        C2331d.m10114a((Activity) this, C2328a.ON_CANNOT_CHANGE_SETUP, (Bundle) null);
+        DialogFactory.m10114a((Activity) this, C2328a.ON_CANNOT_CHANGE_SETUP, (Bundle) null);
         return false;
     }
 
@@ -1730,11 +1730,11 @@ public class LiveViewMovieBabyMonitorActivity extends C3476a implements C0010a, 
         }
     }
 
-    public void onGetStatusNotify(C1846e eVar) {
+    public void onGetStatusNotify(CameraStatus eVar) {
         boolean z;
         super.onGetStatusNotify(eVar);
         final String E = eVar.mo4656E();
-        C2261g.m9763a(TAG, String.format("enable:%s, pantiltmode:%s", new Object[]{String.valueOf(this._isPantilterEnable), E}));
+        ImageAppLog.debug(TAG, String.format("enable:%s, pantiltmode:%s", new Object[]{String.valueOf(this._isPantilterEnable), E}));
         if (E != null) {
             if (!E.equalsIgnoreCase(this._pantilterStatus)) {
                 z = true;
@@ -1759,7 +1759,7 @@ public class LiveViewMovieBabyMonitorActivity extends C3476a implements C0010a, 
             });
             if (!this._isMicVolSet) {
                 changeUI(C3464d.Update);
-                C2261g.m9763a("niwa1", "changeUI(Update)");
+                ImageAppLog.debug("niwa1", "changeUI(Update)");
             }
         } else if (E != null && (C2274o.m9901g(E) || C2274o.m9903i(E))) {
             this._isPantilterEnable = true;
@@ -1772,31 +1772,31 @@ public class LiveViewMovieBabyMonitorActivity extends C3476a implements C0010a, 
                     textView.setVisibility(0);
                     if (LiveViewMovieBabyMonitorActivity.this.mProcess.mo8203f()) {
                         LiveViewMovieBabyMonitorActivity.this.changeUI(C3464d.Greeting);
-                        C2261g.m9763a("niwa3", "changeUI(Greeting)");
+                        ImageAppLog.debug("niwa3", "changeUI(Greeting)");
                     } else if (LiveViewMovieBabyMonitorActivity.this._isVoiceSpeking) {
                     } else {
                         if (LiveViewMovieBabyMonitorActivity.this.mGuiMode == C3464d.PresetPosSet) {
                             if (!LiveViewMovieBabyMonitorActivity.this._isMicVolSet) {
                                 textView.setText(R.string.pantilter_preset_regist);
                                 LiveViewMovieBabyMonitorActivity.this.changeUI(C3464d.PresetPosSet);
-                                C2261g.m9763a("niwa6", "changeUI(PresetPosSet)");
+                                ImageAppLog.debug("niwa6", "changeUI(PresetPosSet)");
                             }
                         } else if (LiveViewMovieBabyMonitorActivity.this.mGuiMode == C3464d.PresetRoundSet) {
                             if (!LiveViewMovieBabyMonitorActivity.this._isMicVolSet) {
                                 textView.setText(R.string.pantilter_preset_round_setting);
                                 LiveViewMovieBabyMonitorActivity.this.changeUI(C3464d.PresetRoundSet);
-                                C2261g.m9763a("niwa7", "changeUI(PresetRoundSet)");
+                                ImageAppLog.debug("niwa7", "changeUI(PresetRoundSet)");
                             }
                         } else if (LiveViewMovieBabyMonitorActivity.this.mGuiMode == C3464d.PresetManualSet) {
                             if (!LiveViewMovieBabyMonitorActivity.this._isMicVolSet) {
                                 textView.setText(R.string.pantilter_preset_regist);
                                 LiveViewMovieBabyMonitorActivity.this.changeUI(C3464d.PresetManualSet);
-                                C2261g.m9763a("niwa8", "changeUI(PresetManualSet)");
+                                ImageAppLog.debug("niwa8", "changeUI(PresetManualSet)");
                             }
                         } else if (!LiveViewMovieBabyMonitorActivity.this._isMicVolSet) {
                             textView.setText(R.string.pantilter_preset_mode);
                             LiveViewMovieBabyMonitorActivity.this.changeUI(C3464d.PresetMain);
-                            C2261g.m9763a("niwa9", "changeUI(PresetMain)");
+                            ImageAppLog.debug("niwa9", "changeUI(PresetMain)");
                         }
                     }
                 }
@@ -1826,19 +1826,19 @@ public class LiveViewMovieBabyMonitorActivity extends C3476a implements C0010a, 
                         if (!LiveViewMovieBabyMonitorActivity.this._isMicVolSet && !LiveViewMovieBabyMonitorActivity.this.mProcess.mo8203f()) {
                             LiveViewMovieBabyMonitorActivity.this.changeUI(C3464d.PresetPosSet);
                         }
-                        C2261g.m9763a("niwa10", "changeUI(PresetPosSet)");
+                        ImageAppLog.debug("niwa10", "changeUI(PresetPosSet)");
                     } else if (LiveViewMovieBabyMonitorActivity.this.mGuiMode == C3464d.PresetManualSet) {
                         textView.setText(R.string.pantilter_preset_regist);
                         if (!LiveViewMovieBabyMonitorActivity.this._isMicVolSet && !LiveViewMovieBabyMonitorActivity.this.mProcess.mo8203f()) {
                             LiveViewMovieBabyMonitorActivity.this.changeUI(C3464d.PresetManualSet);
                         }
-                        C2261g.m9763a("niwa11", "changeUI(PresetManualSet)");
+                        ImageAppLog.debug("niwa11", "changeUI(PresetManualSet)");
                     } else if (LiveViewMovieBabyMonitorActivity.this.mGuiMode == C3464d.PresetRoundSet) {
                         textView.setText(R.string.pantilter_preset_round_setting);
                         if (!LiveViewMovieBabyMonitorActivity.this._isMicVolSet && !LiveViewMovieBabyMonitorActivity.this.mProcess.mo8203f()) {
                             LiveViewMovieBabyMonitorActivity.this.changeUI(C3464d.PresetRoundSet);
                         }
-                        C2261g.m9763a("niwa12", "changeUI(PresetRoundSet)");
+                        ImageAppLog.debug("niwa12", "changeUI(PresetRoundSet)");
                     } else {
                         String str = "";
                         if (C2274o.m9912r(E)) {
@@ -1858,7 +1858,7 @@ public class LiveViewMovieBabyMonitorActivity extends C3476a implements C0010a, 
                         if (!LiveViewMovieBabyMonitorActivity.this._isMicVolSet && !LiveViewMovieBabyMonitorActivity.this.mProcess.mo8203f()) {
                             LiveViewMovieBabyMonitorActivity.this.changeUI(C3464d.PresetMain);
                         }
-                        C2261g.m9763a("niwa13", "changeUI(PresetMain)");
+                        ImageAppLog.debug("niwa13", "changeUI(PresetMain)");
                     }
                 }
             });
@@ -1914,7 +1914,7 @@ public class LiveViewMovieBabyMonitorActivity extends C3476a implements C0010a, 
             if (!this._isMicVolSet && !this.mProcess.mo8203f()) {
                 changeUI(C3464d.PresetPosMoving);
             }
-            C2261g.m9763a("niwa14", "changeUI(PresetPosMoving)");
+            ImageAppLog.debug("niwa14", "changeUI(PresetPosMoving)");
         } else if (E != null && C2274o.m9918x(E)) {
             this._isPantilterEnable = true;
             this._isPreset = true;
@@ -1967,7 +1967,7 @@ public class LiveViewMovieBabyMonitorActivity extends C3476a implements C0010a, 
             if (!this._isMicVolSet && !this.mProcess.mo8203f()) {
                 changeUI(C3464d.PresetRoundMoving);
             }
-            C2261g.m9763a("niwa15", "changeUI(PresetRoundMoving)");
+            ImageAppLog.debug("niwa15", "changeUI(PresetRoundMoving)");
         } else if (E != null && C2274o.m9881E(E)) {
             this._isPantilterEnable = true;
             this.mCurrentPantilState = "roundpause";
@@ -1982,7 +1982,7 @@ public class LiveViewMovieBabyMonitorActivity extends C3476a implements C0010a, 
             if (!this._isMicVolSet && !this.mProcess.mo8203f()) {
                 changeUI(C3464d.PresetRoundMovingPause);
             }
-            C2261g.m9763a("niwa16", "changeUI(PresetRoundMovingPause)");
+            ImageAppLog.debug("niwa16", "changeUI(PresetRoundMovingPause)");
         } else if (E != null && C2274o.m9882F(E)) {
             this._isPantilterEnable = true;
             this._isPreset = true;
@@ -1994,19 +1994,19 @@ public class LiveViewMovieBabyMonitorActivity extends C3476a implements C0010a, 
                 if (!this._isMicVolSet && !this.mProcess.mo8203f()) {
                     changeUI(C3464d.PresetPosSet);
                 }
-                C2261g.m9763a("niwa17", "changeUI(PresetPosSet)");
+                ImageAppLog.debug("niwa17", "changeUI(PresetPosSet)");
             } else if (this.mGuiMode == C3464d.PresetManualSet) {
                 textView3.setText(R.string.pantilter_preset_regist);
                 if (!this._isMicVolSet && !this.mProcess.mo8203f()) {
                     changeUI(C3464d.PresetManualSet);
                 }
-                C2261g.m9763a("niwa18", "changeUI(PresetManualSet)");
+                ImageAppLog.debug("niwa18", "changeUI(PresetManualSet)");
             } else if (this.mGuiMode == C3464d.PresetRoundSet) {
                 textView3.setText(R.string.pantilter_preset_round_setting);
                 if (!this._isMicVolSet && !this.mProcess.mo8203f()) {
                     changeUI(C3464d.PresetRoundSet);
                 }
-                C2261g.m9763a("niwa19", "changeUI(PresetRoundSet)");
+                ImageAppLog.debug("niwa19", "changeUI(PresetRoundSet)");
             } else {
                 if (C2274o.m9883G(E)) {
                     this.mCurrentPantilState = "roundpausepos1";
@@ -2054,7 +2054,7 @@ public class LiveViewMovieBabyMonitorActivity extends C3476a implements C0010a, 
                 if (!this._isMicVolSet && !this.mProcess.mo8203f()) {
                     changeUI(C3464d.PresetRoundMovingPausePos);
                 }
-                C2261g.m9763a("niwa20", "changeUI(PresetRoundMovingPausePos)");
+                ImageAppLog.debug("niwa20", "changeUI(PresetRoundMovingPausePos)");
             }
         } else if (!this._isPantilterEnable || E == null || !E.equals("noconnect")) {
             this._isPantilterEnable = false;
@@ -2069,7 +2069,7 @@ public class LiveViewMovieBabyMonitorActivity extends C3476a implements C0010a, 
             });
             if (!this._isMicVolSet) {
                 changeUI(C3464d.Update);
-                C2261g.m9763a("niwa21", "changeUI(Update)");
+                ImageAppLog.debug("niwa21", "changeUI(Update)");
             }
         } else {
             this._isPantilterEnable = false;
@@ -2078,7 +2078,7 @@ public class LiveViewMovieBabyMonitorActivity extends C3476a implements C0010a, 
             this._isPreset = false;
             this._handler.post(new Runnable() {
                 public void run() {
-                    C2331d.m10114a((Activity) LiveViewMovieBabyMonitorActivity.this, C2328a.ON_PANTILTER_ERROR, (Bundle) null);
+                    DialogFactory.m10114a((Activity) LiveViewMovieBabyMonitorActivity.this, C2328a.ON_PANTILTER_ERROR, (Bundle) null);
                     TextView textView = (TextView) LiveViewMovieBabyMonitorActivity.this.findViewById(R.id.liveViewMessage);
                     textView.setVisibility(8);
                     textView.setText("");
@@ -2086,7 +2086,7 @@ public class LiveViewMovieBabyMonitorActivity extends C3476a implements C0010a, 
             });
             if (!this._isMicVolSet) {
                 changeUI(C3464d.Update);
-                C2261g.m9763a("niwa2", "changeUI(Update)");
+                ImageAppLog.debug("niwa2", "changeUI(Update)");
             }
         }
     }
@@ -2228,8 +2228,8 @@ public class LiveViewMovieBabyMonitorActivity extends C3476a implements C0010a, 
             return;
         }
         if (this.mProcess.mo8203f()) {
-            C2261g.m9760a(3149828, "");
-            C2331d.m10114a((Activity) this, C2328a.ON_CANNOT_CHANGE_SETUP, (Bundle) null);
+            ImageAppLog.m9760a(3149828, "");
+            DialogFactory.m10114a((Activity) this, C2328a.ON_CANNOT_CHANGE_SETUP, (Bundle) null);
             return;
         }
         super.OnClickSetup(view);
@@ -2251,7 +2251,7 @@ public class LiveViewMovieBabyMonitorActivity extends C3476a implements C0010a, 
     }
 
     public void onClickPresetMicVol(View view) {
-        C2261g.m9760a(3158051, "");
+        ImageAppLog.m9760a(3158051, "");
         this._isMicVolSet = true;
         prepareMicVol();
     }
@@ -2434,7 +2434,7 @@ public class LiveViewMovieBabyMonitorActivity extends C3476a implements C0010a, 
                 } else if (this.mChangePos == 5) {
                     this._viewModel.f11432aL.mo3216a(this._context.getText(i2).toString());
                 }
-                C2331d.m10100a((Activity) this);
+                DialogFactory.m10100a((Activity) this);
                 return;
             default:
                 super.onSingleChoice(aVar, i);

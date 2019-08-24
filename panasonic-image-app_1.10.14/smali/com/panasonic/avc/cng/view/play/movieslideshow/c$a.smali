@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/panasonic/avc/cng/view/play/movieslideshow/c;
+    value = Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowViewModel;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,28 +18,28 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/panasonic/avc/cng/view/play/movieslideshow/c;
+.field final synthetic a:Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowViewModel;
 
 
 # direct methods
-.method private constructor <init>(Lcom/panasonic/avc/cng/view/play/movieslideshow/c;)V
+.method private constructor <init>(Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowViewModel;)V
     .locals 0
 
     .prologue
     .line 488
-    iput-object p1, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/c$a;->a:Lcom/panasonic/avc/cng/view/play/movieslideshow/c;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/c$a;->a:Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowViewModel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/panasonic/avc/cng/view/play/movieslideshow/c;Lcom/panasonic/avc/cng/view/play/movieslideshow/c$1;)V
+.method synthetic constructor <init>(Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowViewModel;Lcom/panasonic/avc/cng/view/play/movieslideshow/c$1;)V
     .locals 0
 
     .prologue
     .line 488
-    invoke-direct {p0, p1}, Lcom/panasonic/avc/cng/view/play/movieslideshow/c$a;-><init>(Lcom/panasonic/avc/cng/view/play/movieslideshow/c;)V
+    invoke-direct {p0, p1}, Lcom/panasonic/avc/cng/view/play/movieslideshow/c$a;-><init>(Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowViewModel;)V
 
     return-void
 .end method
@@ -51,18 +51,18 @@
 
     .prologue
     .line 527
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/c$a;->a:Lcom/panasonic/avc/cng/view/play/movieslideshow/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/c$a;->a:Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowViewModel;
 
-    invoke-static {v0, p1}, Lcom/panasonic/avc/cng/view/play/movieslideshow/c;->a(Lcom/panasonic/avc/cng/view/play/movieslideshow/c;I)I
+    invoke-static {v0, p1}, Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowViewModel;->a(Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowViewModel;I)I
 
     .line 529
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/c$a;->a:Lcom/panasonic/avc/cng/view/play/movieslideshow/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/c$a;->a:Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowViewModel;
 
     new-instance v1, Lcom/panasonic/avc/cng/view/play/movieslideshow/c$a$2;
 
     invoke-direct {v1, p0}, Lcom/panasonic/avc/cng/view/play/movieslideshow/c$a$2;-><init>(Lcom/panasonic/avc/cng/view/play/movieslideshow/c$a;)V
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/play/movieslideshow/c;->b(Lcom/panasonic/avc/cng/view/play/movieslideshow/c;Ljava/lang/Runnable;)Z
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowViewModel;->b(Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowViewModel;Ljava/lang/Runnable;)Z
 
     .line 537
     const-string v0, "MovieSlideshowViewModel"
@@ -75,9 +75,9 @@
 
     const/4 v3, 0x0
 
-    iget-object v4, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/c$a;->a:Lcom/panasonic/avc/cng/view/play/movieslideshow/c;
+    iget-object v4, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/c$a;->a:Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowViewModel;
 
-    invoke-static {v4}, Lcom/panasonic/avc/cng/view/play/movieslideshow/c;->b(Lcom/panasonic/avc/cng/view/play/movieslideshow/c;)I
+    invoke-static {v4}, Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowViewModel;->b(Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowViewModel;)I
 
     move-result v4
 
@@ -91,7 +91,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 538
     return-void
@@ -103,13 +103,13 @@
     .prologue
     .line 495
     .line 497
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/c$a;->a:Lcom/panasonic/avc/cng/view/play/movieslideshow/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/c$a;->a:Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowViewModel;
 
     new-instance v1, Lcom/panasonic/avc/cng/view/play/movieslideshow/c$a$1;
 
     invoke-direct {v1, p0, p1}, Lcom/panasonic/avc/cng/view/play/movieslideshow/c$a$1;-><init>(Lcom/panasonic/avc/cng/view/play/movieslideshow/c$a;Lcom/panasonic/avc/cng/model/service/e/b;)V
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/play/movieslideshow/c;->a(Lcom/panasonic/avc/cng/view/play/movieslideshow/c;Ljava/lang/Runnable;)Z
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowViewModel;->a(Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowViewModel;Ljava/lang/Runnable;)Z
 
     .line 519
     return-void

@@ -7,14 +7,14 @@ import android.util.SparseArray;
 import com.panasonic.avc.cng.core.p046c.C1648g;
 import com.panasonic.avc.cng.core.p046c.C1651j;
 import com.panasonic.avc.cng.core.p046c.C1664n;
-import com.panasonic.avc.cng.core.p046c.C1671s;
+import com.panasonic.avc.cng.core.p046c.Picmate;
 import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.C1878d;
 import com.panasonic.avc.cng.model.C1912n;
 import com.panasonic.avc.cng.model.C1913o;
 import com.panasonic.avc.cng.model.C1920q;
 import com.panasonic.avc.cng.model.service.C1921a;
-import com.panasonic.avc.cng.model.service.C2253z;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -33,7 +33,7 @@ public class C1958k implements C1921a {
     /* access modifiers changed from: private */
 
     /* renamed from: d */
-    public C1671s f6035d;
+    public Picmate f6035d;
     /* access modifiers changed from: private */
 
     /* renamed from: e */
@@ -305,9 +305,9 @@ public class C1958k implements C1921a {
     /* renamed from: a */
     public void mo5132a(boolean z, C1982p pVar, boolean z2) {
         this.f6034c = C1913o.m7701a(this.f6032a);
-        this.f6035d = C2253z.m9676a(this.f6032a);
+        this.f6035d = ServiceFactory.m9676a(this.f6032a);
         if (this.f6035d != null) {
-            this.f6035d = C2253z.m9677a(this.f6032a, this.f6033b);
+            this.f6035d = ServiceFactory.m9677a(this.f6032a, this.f6033b);
         }
         if (z && z2) {
             this.f6036e = 0;

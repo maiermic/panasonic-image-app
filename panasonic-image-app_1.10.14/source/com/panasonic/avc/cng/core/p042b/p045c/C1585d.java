@@ -6,7 +6,7 @@ import android.media.MediaCodec.BufferInfo;
 import android.media.MediaFormat;
 import android.media.MediaMuxer;
 import android.view.Surface;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.util.C2266l;
 import java.nio.ByteBuffer;
 import java.util.ArrayList;
@@ -117,7 +117,7 @@ public class C1585d {
         try {
             this.f4442b = new MediaMuxer(str, 0);
             if (this.f4442b == null) {
-                C2261g.m9769c(f4441a, "muxer is null.");
+                ImageAppLog.error(f4441a, "muxer is null.");
             }
             this.f4459s = gVar != null;
             if (this.f4459s) {
@@ -134,11 +134,11 @@ public class C1585d {
             } else if (this.f4442b != null) {
                 this.f4446f = this.f4442b.addTrack(mediaFormat);
             } else {
-                C2261g.m9769c(f4441a, "muxer is null.");
+                ImageAppLog.error(f4441a, "muxer is null.");
             }
             String str3 = "audio/mp4a-latm";
             if (mediaFormat2 != null) {
-                C2261g.m9771e(f4441a, String.format("sample[%d], bit[%d], profile[%d]", new Object[]{Integer.valueOf(mediaFormat2.getInteger("sample-rate")), Integer.valueOf(mediaFormat2.getInteger("bitrate")), Integer.valueOf(mediaFormat2.getInteger("aac-profile"))}));
+                ImageAppLog.info(f4441a, String.format("sample[%d], bit[%d], profile[%d]", new Object[]{Integer.valueOf(mediaFormat2.getInteger("sample-rate")), Integer.valueOf(mediaFormat2.getInteger("bitrate")), Integer.valueOf(mediaFormat2.getInteger("aac-profile"))}));
                 this.f4444d = MediaCodec.createEncoderByType("audio/mp4a-latm");
                 this.f4444d.configure(mediaFormat2, null, null, 1);
                 this.f4444d.start();
@@ -146,7 +146,7 @@ public class C1585d {
                 MediaFormat createAudioFormat = MediaFormat.createAudioFormat("audio/mp4a-latm", bVar.f4401a, bVar.f4403c);
                 createAudioFormat.setInteger("aac-profile", 2);
                 createAudioFormat.setInteger("bitrate", 131072);
-                C2261g.m9771e(f4441a, String.format("sample[%d], bit[%d], profile[%d]", new Object[]{Integer.valueOf(createAudioFormat.getInteger("sample-rate")), Integer.valueOf(createAudioFormat.getInteger("bitrate")), Integer.valueOf(createAudioFormat.getInteger("aac-profile"))}));
+                ImageAppLog.info(f4441a, String.format("sample[%d], bit[%d], profile[%d]", new Object[]{Integer.valueOf(createAudioFormat.getInteger("sample-rate")), Integer.valueOf(createAudioFormat.getInteger("bitrate")), Integer.valueOf(createAudioFormat.getInteger("aac-profile"))}));
                 this.f4444d = MediaCodec.createEncoderByType("audio/mp4a-latm");
                 this.f4444d.configure(createAudioFormat, null, null, 1);
                 this.f4444d.start();
@@ -239,7 +239,7 @@ public class C1585d {
                                     e.printStackTrace();
                                 }
                                 if (i4 < 0 && !this.f4450j) {
-                                    C2261g.m9766b(f4441a, "bufIdx = " + i4);
+                                    ImageAppLog.warning(f4441a, "bufIdx = " + i4);
                                     C2266l.m9802a(2);
                                 }
                             }
@@ -391,17 +391,17 @@ public class C1585d {
                         z = true;
                     }
                 } else if (dequeueOutputBuffer == -2) {
-                    C2261g.m9771e(f4441a, "[V]INFO_OUTPUT_FORMAT_CHANGED");
+                    ImageAppLog.info(f4441a, "[V]INFO_OUTPUT_FORMAT_CHANGED");
                     if (this.f4442b != null) {
                         this.f4446f = this.f4442b.addTrack(this.f4443c.getOutputFormat());
                         z = true;
                     } else {
-                        C2261g.m9769c(f4441a, "muxer is null.");
+                        ImageAppLog.error(f4441a, "muxer is null.");
                         this.f4446f = -1;
                         z = true;
                     }
                 } else if (dequeueOutputBuffer == -3) {
-                    C2261g.m9771e(f4441a, "[V]INFO_OUTPUT_BUFFERS_CHANGED");
+                    ImageAppLog.info(f4441a, "[V]INFO_OUTPUT_BUFFERS_CHANGED");
                     this.f4457q = this.f4443c.getOutputBuffers();
                 } else if (dequeueOutputBuffer >= 0) {
                     z = true;
@@ -434,17 +434,17 @@ public class C1585d {
                         z = true;
                     }
                 } else if (i == -2) {
-                    C2261g.m9771e(f4441a, "[A]INFO_OUTPUT_FORMAT_CHANGED");
+                    ImageAppLog.info(f4441a, "[A]INFO_OUTPUT_FORMAT_CHANGED");
                     if (this.f4442b != null) {
                         this.f4447g = this.f4442b.addTrack(this.f4444d.getOutputFormat());
                         z = true;
                     } else {
-                        C2261g.m9769c(f4441a, "muxer is null.");
+                        ImageAppLog.error(f4441a, "muxer is null.");
                         this.f4447g = -1;
                         z = true;
                     }
                 } else if (i == -3) {
-                    C2261g.m9771e(f4441a, "[A]INFO_OUTPUT_BUFFERS_CHANGED");
+                    ImageAppLog.info(f4441a, "[A]INFO_OUTPUT_BUFFERS_CHANGED");
                     this.f4458r = this.f4444d.getOutputBuffers();
                 } else if (i < 0) {
                 }
@@ -462,7 +462,7 @@ public class C1585d {
         boolean z3;
         if (this.f4442b == null) {
             this.f4450j = true;
-            C2261g.m9769c(f4441a, "muxer is null.");
+            ImageAppLog.error(f4441a, "muxer is null.");
             return;
         }
         if (this.f4444d == null) {

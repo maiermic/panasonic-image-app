@@ -1,8 +1,8 @@
 package com.panasonic.avc.cng.view.liveview;
 
-import com.panasonic.avc.cng.core.p040a.C1508g;
-import com.panasonic.avc.cng.core.p040a.C1508g.C1510b;
-import com.panasonic.avc.cng.core.p040a.C1508g.C1513e;
+import com.panasonic.avc.cng.core.p040a.FocusCommand;
+import com.panasonic.avc.cng.core.p040a.FocusCommand.C1510b;
+import com.panasonic.avc.cng.core.p040a.FocusCommand.C1513e;
 import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.C1892f;
 import com.panasonic.avc.cng.model.p051c.C1854i;
@@ -158,7 +158,7 @@ public class C3891o {
                             g = C3891o.this.f12802d;
                             C3891o.this.f12802d = C3894a.NoOperation;
                         }
-                        C1508g gVar = new C1508g(a.f5682d);
+                        FocusCommand gVar = new FocusCommand(a.f5682d);
                         C1854i iVar2 = null;
                         try {
                             switch (C38932.f12811a[g.ordinal()]) {

@@ -18,9 +18,9 @@ import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.C1892f;
 import com.panasonic.avc.cng.model.p051c.C1860l;
 import com.panasonic.avc.cng.model.service.C1985b;
-import com.panasonic.avc.cng.model.service.C2253z;
-import com.panasonic.avc.cng.view.parts.C3973ab.C3977a;
-import com.panasonic.avc.cng.view.setting.C5838y;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
+import com.panasonic.avc.cng.view.parts.SetPickerPosition.C3977a;
+import com.panasonic.avc.cng.view.setting.LiveSetupMovieWhiteBalanceViewModel;
 import java.util.ArrayList;
 
 /* renamed from: com.panasonic.avc.cng.view.parts.ai */
@@ -61,15 +61,15 @@ public class C4015ai extends RelativeLayout implements Callback {
     /* access modifiers changed from: private */
 
     /* renamed from: g */
-    public C5838y f13542g;
+    public LiveSetupMovieWhiteBalanceViewModel f13542g;
     /* access modifiers changed from: private */
 
     /* renamed from: h */
-    public C3973ab f13543h;
+    public SetPickerPosition f13543h;
     /* access modifiers changed from: private */
 
     /* renamed from: i */
-    public C3973ab f13544i;
+    public SetPickerPosition f13544i;
 
     /* renamed from: j */
     private LinearLayout f13545j;
@@ -157,7 +157,7 @@ public class C4015ai extends RelativeLayout implements Callback {
         this.f13540e.mo9561a();
     }
 
-    public C4015ai(Context context, Activity activity, C5838y yVar) {
+    public C4015ai(Context context, Activity activity, LiveSetupMovieWhiteBalanceViewModel yVar) {
         super(context);
         this.f13536a = context;
         this.f13537b = activity;
@@ -172,7 +172,7 @@ public class C4015ai extends RelativeLayout implements Callback {
             if (C1712b.m6919c() != null) {
                 this.f13553r = C1712b.m6919c().mo4896a();
                 if (this.f13553r != null) {
-                    this.f13554s = C2253z.m9679a(this.f13536a, this.f13553r);
+                    this.f13554s = ServiceFactory.m9679a(this.f13536a, this.f13553r);
                 }
             }
             this.f13533B = C4003af.m16138c(context);
@@ -242,7 +242,7 @@ public class C4015ai extends RelativeLayout implements Callback {
         } else {
             this.f13560y = mo9542b(5, 200);
         }
-        this.f13543h = new C3973ab(this.f13536a, this.f13560y);
+        this.f13543h = new SetPickerPosition(this.f13536a, this.f13560y);
         this.f13543h.setOnPostionChangedListener(new C3977a() {
             /* renamed from: a */
             public void mo9447a(int i, int i2, boolean z) {
@@ -274,7 +274,7 @@ public class C4015ai extends RelativeLayout implements Callback {
                 }
             }
         });
-        this.f13544i = new C3973ab(this.f13536a, this.f13560y);
+        this.f13544i = new SetPickerPosition(this.f13536a, this.f13560y);
         this.f13544i.setOnPostionChangedListener(new C3977a() {
             /* renamed from: a */
             public void mo9447a(int i, int i2, boolean z) {

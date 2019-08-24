@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/panasonic/avc/cng/view/liveview/n;
+    value = Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,28 +18,28 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/panasonic/avc/cng/view/liveview/n;
+.field final synthetic a:Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;
 
 
 # direct methods
-.method private constructor <init>(Lcom/panasonic/avc/cng/view/liveview/n;)V
+.method private constructor <init>(Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;)V
     .locals 0
 
     .prologue
     .line 578
-    iput-object p1, p0, Lcom/panasonic/avc/cng/view/liveview/n$a;->a:Lcom/panasonic/avc/cng/view/liveview/n;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/view/liveview/n$a;->a:Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/panasonic/avc/cng/view/liveview/n;Lcom/panasonic/avc/cng/view/liveview/n$1;)V
+.method synthetic constructor <init>(Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;Lcom/panasonic/avc/cng/view/liveview/n$1;)V
     .locals 0
 
     .prologue
     .line 578
-    invoke-direct {p0, p1}, Lcom/panasonic/avc/cng/view/liveview/n$a;-><init>(Lcom/panasonic/avc/cng/view/liveview/n;)V
+    invoke-direct {p0, p1}, Lcom/panasonic/avc/cng/view/liveview/n$a;-><init>(Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;)V
 
     return-void
 .end method
@@ -55,21 +55,21 @@
 
     const-string v1, "onBleScanStart"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 666
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/n$a;->a:Lcom/panasonic/avc/cng/view/liveview/n;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/n$a;->a:Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/n;->g(Lcom/panasonic/avc/cng/view/liveview/n;)Lcom/panasonic/avc/cng/model/service/j$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;->g(Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;)Lcom/panasonic/avc/cng/model/service/j$a;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 668
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/n$a;->a:Lcom/panasonic/avc/cng/view/liveview/n;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/n$a;->a:Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/n;->g(Lcom/panasonic/avc/cng/view/liveview/n;)Lcom/panasonic/avc/cng/model/service/j$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;->g(Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;)Lcom/panasonic/avc/cng/model/service/j$a;
 
     move-result-object v0
 
@@ -89,21 +89,21 @@
 
     const-string v1, "onBleDisconnected"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 593
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/n$a;->a:Lcom/panasonic/avc/cng/view/liveview/n;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/n$a;->a:Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/n;->g(Lcom/panasonic/avc/cng/view/liveview/n;)Lcom/panasonic/avc/cng/model/service/j$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;->g(Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;)Lcom/panasonic/avc/cng/model/service/j$a;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 595
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/n$a;->a:Lcom/panasonic/avc/cng/view/liveview/n;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/n$a;->a:Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/n;->g(Lcom/panasonic/avc/cng/view/liveview/n;)Lcom/panasonic/avc/cng/model/service/j$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;->g(Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;)Lcom/panasonic/avc/cng/model/service/j$a;
 
     move-result-object v0
 
@@ -123,21 +123,21 @@
 
     const-string v1, "onBleScanResult"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 621
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/n$a;->a:Lcom/panasonic/avc/cng/view/liveview/n;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/n$a;->a:Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/n;->g(Lcom/panasonic/avc/cng/view/liveview/n;)Lcom/panasonic/avc/cng/model/service/j$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;->g(Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;)Lcom/panasonic/avc/cng/model/service/j$a;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 623
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/n$a;->a:Lcom/panasonic/avc/cng/view/liveview/n;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/n$a;->a:Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/n;->g(Lcom/panasonic/avc/cng/view/liveview/n;)Lcom/panasonic/avc/cng/model/service/j$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;->g(Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;)Lcom/panasonic/avc/cng/model/service/j$a;
 
     move-result-object v0
 
@@ -157,21 +157,21 @@
 
     const-string v1, "onBleNotification"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 648
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/n$a;->a:Lcom/panasonic/avc/cng/view/liveview/n;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/n$a;->a:Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/n;->g(Lcom/panasonic/avc/cng/view/liveview/n;)Lcom/panasonic/avc/cng/model/service/j$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;->g(Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;)Lcom/panasonic/avc/cng/model/service/j$a;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 650
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/n$a;->a:Lcom/panasonic/avc/cng/view/liveview/n;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/n$a;->a:Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/n;->g(Lcom/panasonic/avc/cng/view/liveview/n;)Lcom/panasonic/avc/cng/model/service/j$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;->g(Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;)Lcom/panasonic/avc/cng/model/service/j$a;
 
     move-result-object v0
 
@@ -191,21 +191,21 @@
 
     const-string v1, "onBleCopyStatus"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 684
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/n$a;->a:Lcom/panasonic/avc/cng/view/liveview/n;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/n$a;->a:Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/n;->g(Lcom/panasonic/avc/cng/view/liveview/n;)Lcom/panasonic/avc/cng/model/service/j$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;->g(Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;)Lcom/panasonic/avc/cng/model/service/j$a;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 686
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/n$a;->a:Lcom/panasonic/avc/cng/view/liveview/n;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/n$a;->a:Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/n;->g(Lcom/panasonic/avc/cng/view/liveview/n;)Lcom/panasonic/avc/cng/model/service/j$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;->g(Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;)Lcom/panasonic/avc/cng/model/service/j$a;
 
     move-result-object v0
 
@@ -225,21 +225,21 @@
 
     const-string v1, "onBleWriteEnd"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 639
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/n$a;->a:Lcom/panasonic/avc/cng/view/liveview/n;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/n$a;->a:Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/n;->g(Lcom/panasonic/avc/cng/view/liveview/n;)Lcom/panasonic/avc/cng/model/service/j$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;->g(Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;)Lcom/panasonic/avc/cng/model/service/j$a;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 641
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/n$a;->a:Lcom/panasonic/avc/cng/view/liveview/n;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/n$a;->a:Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/n;->g(Lcom/panasonic/avc/cng/view/liveview/n;)Lcom/panasonic/avc/cng/model/service/j$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;->g(Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;)Lcom/panasonic/avc/cng/model/service/j$a;
 
     move-result-object v0
 
@@ -259,21 +259,21 @@
 
     const-string v1, "onBleReadEnd"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 630
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/n$a;->a:Lcom/panasonic/avc/cng/view/liveview/n;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/n$a;->a:Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/n;->g(Lcom/panasonic/avc/cng/view/liveview/n;)Lcom/panasonic/avc/cng/model/service/j$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;->g(Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;)Lcom/panasonic/avc/cng/model/service/j$a;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 632
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/n$a;->a:Lcom/panasonic/avc/cng/view/liveview/n;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/n$a;->a:Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/n;->g(Lcom/panasonic/avc/cng/view/liveview/n;)Lcom/panasonic/avc/cng/model/service/j$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;->g(Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;)Lcom/panasonic/avc/cng/model/service/j$a;
 
     move-result-object v0
 
@@ -293,21 +293,21 @@
 
     const-string v1, "onBleConnected"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 584
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/n$a;->a:Lcom/panasonic/avc/cng/view/liveview/n;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/n$a;->a:Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/n;->g(Lcom/panasonic/avc/cng/view/liveview/n;)Lcom/panasonic/avc/cng/model/service/j$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;->g(Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;)Lcom/panasonic/avc/cng/model/service/j$a;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 586
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/n$a;->a:Lcom/panasonic/avc/cng/view/liveview/n;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/n$a;->a:Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/n;->g(Lcom/panasonic/avc/cng/view/liveview/n;)Lcom/panasonic/avc/cng/model/service/j$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;->g(Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;)Lcom/panasonic/avc/cng/model/service/j$a;
 
     move-result-object v0
 
@@ -327,21 +327,21 @@
 
     const-string v1, "onBleConnectStart"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 657
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/n$a;->a:Lcom/panasonic/avc/cng/view/liveview/n;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/n$a;->a:Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/n;->g(Lcom/panasonic/avc/cng/view/liveview/n;)Lcom/panasonic/avc/cng/model/service/j$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;->g(Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;)Lcom/panasonic/avc/cng/model/service/j$a;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 659
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/n$a;->a:Lcom/panasonic/avc/cng/view/liveview/n;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/n$a;->a:Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/n;->g(Lcom/panasonic/avc/cng/view/liveview/n;)Lcom/panasonic/avc/cng/model/service/j$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;->g(Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;)Lcom/panasonic/avc/cng/model/service/j$a;
 
     move-result-object v0
 
@@ -361,21 +361,21 @@
 
     const-string v1, "onBleNotificationEnable"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 693
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/n$a;->a:Lcom/panasonic/avc/cng/view/liveview/n;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/n$a;->a:Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/n;->g(Lcom/panasonic/avc/cng/view/liveview/n;)Lcom/panasonic/avc/cng/model/service/j$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;->g(Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;)Lcom/panasonic/avc/cng/model/service/j$a;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 695
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/n$a;->a:Lcom/panasonic/avc/cng/view/liveview/n;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/n$a;->a:Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/n;->g(Lcom/panasonic/avc/cng/view/liveview/n;)Lcom/panasonic/avc/cng/model/service/j$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;->g(Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;)Lcom/panasonic/avc/cng/model/service/j$a;
 
     move-result-object v0
 
@@ -395,21 +395,21 @@
 
     const-string v1, "onBleConnectTimeOut"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 675
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/n$a;->a:Lcom/panasonic/avc/cng/view/liveview/n;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/n$a;->a:Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/n;->g(Lcom/panasonic/avc/cng/view/liveview/n;)Lcom/panasonic/avc/cng/model/service/j$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;->g(Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;)Lcom/panasonic/avc/cng/model/service/j$a;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 677
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/n$a;->a:Lcom/panasonic/avc/cng/view/liveview/n;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/n$a;->a:Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/n;->g(Lcom/panasonic/avc/cng/view/liveview/n;)Lcom/panasonic/avc/cng/model/service/j$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;->g(Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;)Lcom/panasonic/avc/cng/model/service/j$a;
 
     move-result-object v0
 
@@ -429,21 +429,21 @@
 
     const-string v1, "onBleConnectError"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 603
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/n$a;->a:Lcom/panasonic/avc/cng/view/liveview/n;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/n$a;->a:Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/n;->g(Lcom/panasonic/avc/cng/view/liveview/n;)Lcom/panasonic/avc/cng/model/service/j$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;->g(Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;)Lcom/panasonic/avc/cng/model/service/j$a;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 605
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/n$a;->a:Lcom/panasonic/avc/cng/view/liveview/n;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/n$a;->a:Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/n;->g(Lcom/panasonic/avc/cng/view/liveview/n;)Lcom/panasonic/avc/cng/model/service/j$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;->g(Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;)Lcom/panasonic/avc/cng/model/service/j$a;
 
     move-result-object v0
 
@@ -463,21 +463,21 @@
 
     const-string v1, "onBleServicePrepared"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 702
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/n$a;->a:Lcom/panasonic/avc/cng/view/liveview/n;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/n$a;->a:Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/n;->g(Lcom/panasonic/avc/cng/view/liveview/n;)Lcom/panasonic/avc/cng/model/service/j$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;->g(Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;)Lcom/panasonic/avc/cng/model/service/j$a;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 704
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/n$a;->a:Lcom/panasonic/avc/cng/view/liveview/n;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/n$a;->a:Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/n;->g(Lcom/panasonic/avc/cng/view/liveview/n;)Lcom/panasonic/avc/cng/model/service/j$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;->g(Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;)Lcom/panasonic/avc/cng/model/service/j$a;
 
     move-result-object v0
 
@@ -497,21 +497,21 @@
 
     const-string v1, "onBleScanResultError"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 711
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/n$a;->a:Lcom/panasonic/avc/cng/view/liveview/n;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/n$a;->a:Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/n;->g(Lcom/panasonic/avc/cng/view/liveview/n;)Lcom/panasonic/avc/cng/model/service/j$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;->g(Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;)Lcom/panasonic/avc/cng/model/service/j$a;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 713
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/n$a;->a:Lcom/panasonic/avc/cng/view/liveview/n;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/n$a;->a:Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/n;->g(Lcom/panasonic/avc/cng/view/liveview/n;)Lcom/panasonic/avc/cng/model/service/j$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;->g(Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;)Lcom/panasonic/avc/cng/model/service/j$a;
 
     move-result-object v0
 
@@ -531,21 +531,21 @@
 
     const-string v1, "onAutoSendAcctrlDone"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 729
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/n$a;->a:Lcom/panasonic/avc/cng/view/liveview/n;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/n$a;->a:Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/n;->g(Lcom/panasonic/avc/cng/view/liveview/n;)Lcom/panasonic/avc/cng/model/service/j$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;->g(Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;)Lcom/panasonic/avc/cng/model/service/j$a;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 731
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/n$a;->a:Lcom/panasonic/avc/cng/view/liveview/n;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/n$a;->a:Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/n;->g(Lcom/panasonic/avc/cng/view/liveview/n;)Lcom/panasonic/avc/cng/model/service/j$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;->g(Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;)Lcom/panasonic/avc/cng/model/service/j$a;
 
     move-result-object v0
 

@@ -1049,15 +1049,15 @@
 
 .field private bT:Lcom/panasonic/avc/cng/view/liveview/k$b;
 
-.field private bU:Lcom/panasonic/avc/cng/core/a/af;
+.field private bU:Lcom/panasonic/avc/cng/core/a/RecordCommand;
 
 .field private bV:Lcom/panasonic/avc/cng/view/liveview/w;
 
 .field private bW:Lcom/panasonic/avc/cng/view/liveview/o;
 
-.field private bX:Lcom/panasonic/avc/cng/core/a/g;
+.field private bX:Lcom/panasonic/avc/cng/core/a/FocusCommand;
 
-.field private bY:Lcom/panasonic/avc/cng/core/a/t;
+.field private bY:Lcom/panasonic/avc/cng/core/a/LiveViewOperationCommand;
 
 .field private bZ:Lcom/panasonic/avc/cng/core/a/d;
 
@@ -2164,14 +2164,14 @@
     return-object v0
 .end method
 
-.method private a(Lcom/panasonic/avc/cng/model/c/h;)I
+.method private a(Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;)I
     .locals 4
 
     .prologue
     const/4 v0, 0x3
 
     .line 3695
-    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/h;->b()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;->b()Ljava/lang/String;
 
     move-result-object v2
 
@@ -2271,24 +2271,24 @@
     return p1
 .end method
 
-.method static synthetic a(Lcom/panasonic/avc/cng/view/liveview/k;Lcom/panasonic/avc/cng/model/c/h;)I
+.method static synthetic a(Lcom/panasonic/avc/cng/view/liveview/k;Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;)I
     .locals 1
 
     .prologue
     .line 99
-    invoke-direct {p0, p1}, Lcom/panasonic/avc/cng/view/liveview/k;->a(Lcom/panasonic/avc/cng/model/c/h;)I
+    invoke-direct {p0, p1}, Lcom/panasonic/avc/cng/view/liveview/k;->a(Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;)I
 
     move-result v0
 
     return v0
 .end method
 
-.method static synthetic a(Lcom/panasonic/avc/cng/view/liveview/k;)Lcom/panasonic/avc/cng/core/a/t;
+.method static synthetic a(Lcom/panasonic/avc/cng/view/liveview/k;)Lcom/panasonic/avc/cng/core/a/LiveViewOperationCommand;
     .locals 1
 
     .prologue
     .line 99
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/k;->bY:Lcom/panasonic/avc/cng/core/a/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/k;->bY:Lcom/panasonic/avc/cng/core/a/LiveViewOperationCommand;
 
     return-object v0
 .end method
@@ -2351,7 +2351,7 @@
     return-void
 .end method
 
-.method private a(Lcom/panasonic/avc/cng/model/c/e;)V
+.method private a(Lcom/panasonic/avc/cng/model/c/CameraStatus;)V
     .locals 7
 
     .prologue
@@ -2372,24 +2372,24 @@
 
     .line 3600
     :cond_1
-    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/e;->n()Z
+    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->n()Z
 
     move-result v0
 
     if-nez v0, :cond_3
 
-    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/e;->c()I
+    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->c()I
 
     move-result v0
 
     if-gtz v0, :cond_3
 
     .line 3602
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
@@ -2441,7 +2441,7 @@
 
     .line 3616
     :cond_3
-    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/e;->g()Z
+    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->g()Z
 
     move-result v0
 
@@ -2950,7 +2950,7 @@
 
     const-string v3, "\u2605\u2605_isSelfTimerMode[true]\u2605\u2605"
 
-    invoke-static {v0, v3}, Lcom/panasonic/avc/cng/util/g;->b(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v3}, Lcom/panasonic/avc/cng/util/ImageAppLog;->warning(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 3412
     :goto_8
@@ -3225,7 +3225,7 @@
     :cond_12
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/k;->a:Landroid/content/Context;
 
-    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/model/service/z;->a(Landroid/content/Context;Z)Lcom/panasonic/avc/cng/model/service/e;
+    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->a(Landroid/content/Context;Z)Lcom/panasonic/avc/cng/model/service/e;
 
     move-result-object v0
 
@@ -3266,7 +3266,7 @@
 
     const-string v3, "\u2605\u2605_isSelfTimerMode[false]\u2605\u2605"
 
-    invoke-static {v0, v3}, Lcom/panasonic/avc/cng/util/g;->b(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v3}, Lcom/panasonic/avc/cng/util/ImageAppLog;->warning(Ljava/lang/String;Ljava/lang/String;)V
 
     goto/16 :goto_8
 
@@ -3546,12 +3546,12 @@
     .line 3497
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/k;->e:Lcom/panasonic/avc/cng/model/service/e;
 
-    invoke-interface {v0}, Lcom/panasonic/avc/cng/model/service/e;->i()Lcom/panasonic/avc/cng/model/c/e;
+    invoke-interface {v0}, Lcom/panasonic/avc/cng/model/service/e;->i()Lcom/panasonic/avc/cng/model/c/CameraStatus;
 
     move-result-object v0
 
     .line 3499
-    invoke-direct {p0, v0}, Lcom/panasonic/avc/cng/view/liveview/k;->a(Lcom/panasonic/avc/cng/model/c/e;)V
+    invoke-direct {p0, v0}, Lcom/panasonic/avc/cng/view/liveview/k;->a(Lcom/panasonic/avc/cng/model/c/CameraStatus;)V
 
     .line 3503
     :cond_21
@@ -3682,7 +3682,7 @@
 
     const-string v1, "AF_Unknown"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_c
 
@@ -3692,7 +3692,7 @@
 
     const-string v1, "AF_NONE"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 3532
     iput v2, p0, Lcom/panasonic/avc/cng/view/liveview/k;->cv:I
@@ -3725,12 +3725,12 @@
     return-void
 .end method
 
-.method static synthetic a(Lcom/panasonic/avc/cng/view/liveview/k;Lcom/panasonic/avc/cng/model/c/e;)V
+.method static synthetic a(Lcom/panasonic/avc/cng/view/liveview/k;Lcom/panasonic/avc/cng/model/c/CameraStatus;)V
     .locals 0
 
     .prologue
     .line 99
-    invoke-direct {p0, p1}, Lcom/panasonic/avc/cng/view/liveview/k;->a(Lcom/panasonic/avc/cng/model/c/e;)V
+    invoke-direct {p0, p1}, Lcom/panasonic/avc/cng/view/liveview/k;->a(Lcom/panasonic/avc/cng/model/c/CameraStatus;)V
 
     return-void
 .end method
@@ -4489,11 +4489,11 @@
     .line 4435
     :cond_8
     :goto_d
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
@@ -5365,7 +5365,7 @@
 
     const-string v1, "IsVideoRecording() == false"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 4704
     :cond_0
@@ -5491,11 +5491,11 @@
     const/4 v0, 0x0
 
     .line 7208
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v1
 
@@ -5505,7 +5505,7 @@
     .line 7211
     iget-object v2, p0, Lcom/panasonic/avc/cng/view/liveview/k;->a:Landroid/content/Context;
 
-    invoke-static {v2, v1}, Lcom/panasonic/avc/cng/model/service/z;->a(Landroid/content/Context;Lcom/panasonic/avc/cng/model/f;)Lcom/panasonic/avc/cng/model/service/b;
+    invoke-static {v2, v1}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->a(Landroid/content/Context;Lcom/panasonic/avc/cng/model/f;)Lcom/panasonic/avc/cng/model/service/b;
 
     move-result-object v1
 
@@ -6063,12 +6063,12 @@
     goto :goto_0
 .end method
 
-.method static synthetic au(Lcom/panasonic/avc/cng/view/liveview/k;)Lcom/panasonic/avc/cng/core/a/g;
+.method static synthetic au(Lcom/panasonic/avc/cng/view/liveview/k;)Lcom/panasonic/avc/cng/core/a/FocusCommand;
     .locals 1
 
     .prologue
     .line 99
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/k;->bX:Lcom/panasonic/avc/cng/core/a/g;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/k;->bX:Lcom/panasonic/avc/cng/core/a/FocusCommand;
 
     return-object v0
 .end method
@@ -6131,11 +6131,11 @@
 
     .line 3013
     .line 3016
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
@@ -6273,11 +6273,11 @@
 
     .line 3068
     .line 3071
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
@@ -6424,11 +6424,11 @@
 
     .prologue
     .line 3133
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
@@ -6471,7 +6471,7 @@
     :cond_0
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/k;->a:Landroid/content/Context;
 
-    invoke-static {v1, v0}, Lcom/panasonic/avc/cng/model/service/z;->a(Landroid/content/Context;Lcom/panasonic/avc/cng/model/f;)Lcom/panasonic/avc/cng/model/service/b;
+    invoke-static {v1, v0}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->a(Landroid/content/Context;Lcom/panasonic/avc/cng/model/f;)Lcom/panasonic/avc/cng/model/service/b;
 
     move-result-object v0
 
@@ -6500,14 +6500,14 @@
     .line 3653
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/k;->e:Lcom/panasonic/avc/cng/model/service/e;
 
-    invoke-interface {v1}, Lcom/panasonic/avc/cng/model/service/e;->i()Lcom/panasonic/avc/cng/model/c/e;
+    invoke-interface {v1}, Lcom/panasonic/avc/cng/model/service/e;->i()Lcom/panasonic/avc/cng/model/c/CameraStatus;
 
     move-result-object v1
 
     .line 3656
     if-eqz v1, :cond_0
 
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/model/c/e;->c()I
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->c()I
 
     move-result v1
 
@@ -6546,14 +6546,14 @@
     .line 3675
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/k;->e:Lcom/panasonic/avc/cng/model/service/e;
 
-    invoke-interface {v1}, Lcom/panasonic/avc/cng/model/service/e;->i()Lcom/panasonic/avc/cng/model/c/e;
+    invoke-interface {v1}, Lcom/panasonic/avc/cng/model/service/e;->i()Lcom/panasonic/avc/cng/model/c/CameraStatus;
 
     move-result-object v1
 
     .line 3678
     if-eqz v1, :cond_1
 
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/model/c/e;->f()I
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->f()I
 
     move-result v1
 
@@ -7737,12 +7737,12 @@
     return p1
 .end method
 
-.method static synthetic e(Lcom/panasonic/avc/cng/view/liveview/k;)Lcom/panasonic/avc/cng/core/a/af;
+.method static synthetic e(Lcom/panasonic/avc/cng/view/liveview/k;)Lcom/panasonic/avc/cng/core/a/RecordCommand;
     .locals 1
 
     .prologue
     .line 99
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/k;->bU:Lcom/panasonic/avc/cng/core/a/af;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/k;->bU:Lcom/panasonic/avc/cng/core/a/RecordCommand;
 
     return-object v0
 .end method
@@ -7894,7 +7894,7 @@
 
     const-string v3, "_srvDevConnect == null"
 
-    invoke-static {v0, v3}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v3}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 4733
     :cond_0
@@ -7908,7 +7908,7 @@
     .line 4736
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/k;->e:Lcom/panasonic/avc/cng/model/service/e;
 
-    invoke-interface {v0}, Lcom/panasonic/avc/cng/model/service/e;->i()Lcom/panasonic/avc/cng/model/c/e;
+    invoke-interface {v0}, Lcom/panasonic/avc/cng/model/service/e;->i()Lcom/panasonic/avc/cng/model/c/CameraStatus;
 
     move-result-object v0
 
@@ -7916,7 +7916,7 @@
     :cond_1
     if-eqz v0, :cond_b
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/e;->g()Z
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->g()Z
 
     move-result v0
 
@@ -9715,7 +9715,7 @@
     .line 1334
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/k;->a:Landroid/content/Context;
 
-    invoke-static {v0, v5}, Lcom/panasonic/avc/cng/model/service/z;->a(Landroid/content/Context;Z)Lcom/panasonic/avc/cng/model/service/e;
+    invoke-static {v0, v5}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->a(Landroid/content/Context;Z)Lcom/panasonic/avc/cng/model/service/e;
 
     move-result-object v0
 
@@ -9774,11 +9774,11 @@
     const/4 v3, 0x0
 
     .line 1671
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
@@ -10288,11 +10288,11 @@
     const/4 v0, 0x1
 
     .line 2294
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v1
 
@@ -10394,7 +10394,7 @@
 
     const-string v1, "VideoRecStart"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 2510
     invoke-virtual {p0}, Lcom/panasonic/avc/cng/view/liveview/k;->S()Z
@@ -10457,7 +10457,7 @@
 
     const-string v1, "VideoRecStop"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 2576
     new-instance v0, Ljava/lang/Thread;
@@ -10502,7 +10502,7 @@
 
     const-string v1, "OnVideoRec Cancel (IsPictureCapturing() || IsSelfTimering())"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->verbose(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 2661
     :cond_1
@@ -10542,7 +10542,7 @@
 
     .line 2635
     :cond_3
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/k;->bU:Lcom/panasonic/avc/cng/core/a/af;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/k;->bU:Lcom/panasonic/avc/cng/core/a/RecordCommand;
 
     if-nez v0, :cond_4
 
@@ -10634,7 +10634,7 @@
 
     const-string v2, "\u2605\u2605\u2605\u2605\u2605IsCapturingUser(Force Cancel) \u2605\u2605\u2605\u2605\u2605"
 
-    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/g;->b(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->warning(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 2678
     iput-boolean v0, p0, Lcom/panasonic/avc/cng/view/liveview/k;->cx:Z
@@ -11468,11 +11468,11 @@
     const/4 v3, 0x1
 
     .line 1609
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
@@ -11529,13 +11529,13 @@
     invoke-virtual {v1, v2}, Lcom/panasonic/avc/cng/a/c;->a(Ljava/lang/Object;)V
 
     .line 1635
-    new-instance v1, Lcom/panasonic/avc/cng/core/a/af;
+    new-instance v1, Lcom/panasonic/avc/cng/core/a/RecordCommand;
 
     iget-object v2, v0, Lcom/panasonic/avc/cng/model/f;->d:Ljava/lang/String;
 
-    invoke-direct {v1, v2}, Lcom/panasonic/avc/cng/core/a/af;-><init>(Ljava/lang/String;)V
+    invoke-direct {v1, v2}, Lcom/panasonic/avc/cng/core/a/RecordCommand;-><init>(Ljava/lang/String;)V
 
-    iput-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/k;->bU:Lcom/panasonic/avc/cng/core/a/af;
+    iput-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/k;->bU:Lcom/panasonic/avc/cng/core/a/RecordCommand;
 
     .line 1636
     new-instance v1, Lcom/panasonic/avc/cng/view/liveview/w;
@@ -11554,22 +11554,22 @@
     iput-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/k;->bW:Lcom/panasonic/avc/cng/view/liveview/o;
 
     .line 1638
-    new-instance v1, Lcom/panasonic/avc/cng/core/a/g;
+    new-instance v1, Lcom/panasonic/avc/cng/core/a/FocusCommand;
 
     iget-object v2, v0, Lcom/panasonic/avc/cng/model/f;->d:Ljava/lang/String;
 
-    invoke-direct {v1, v2}, Lcom/panasonic/avc/cng/core/a/g;-><init>(Ljava/lang/String;)V
+    invoke-direct {v1, v2}, Lcom/panasonic/avc/cng/core/a/FocusCommand;-><init>(Ljava/lang/String;)V
 
-    iput-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/k;->bX:Lcom/panasonic/avc/cng/core/a/g;
+    iput-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/k;->bX:Lcom/panasonic/avc/cng/core/a/FocusCommand;
 
     .line 1639
-    new-instance v1, Lcom/panasonic/avc/cng/core/a/t;
+    new-instance v1, Lcom/panasonic/avc/cng/core/a/LiveViewOperationCommand;
 
     iget-object v2, v0, Lcom/panasonic/avc/cng/model/f;->d:Ljava/lang/String;
 
-    invoke-direct {v1, v2}, Lcom/panasonic/avc/cng/core/a/t;-><init>(Ljava/lang/String;)V
+    invoke-direct {v1, v2}, Lcom/panasonic/avc/cng/core/a/LiveViewOperationCommand;-><init>(Ljava/lang/String;)V
 
-    iput-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/k;->bY:Lcom/panasonic/avc/cng/core/a/t;
+    iput-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/k;->bY:Lcom/panasonic/avc/cng/core/a/LiveViewOperationCommand;
 
     .line 1640
     new-instance v1, Lcom/panasonic/avc/cng/core/a/d;
@@ -11605,7 +11605,7 @@
     :goto_0
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/k;->a:Landroid/content/Context;
 
-    invoke-static {v1, v0}, Lcom/panasonic/avc/cng/model/service/z;->b(Landroid/content/Context;Lcom/panasonic/avc/cng/model/f;)Lcom/panasonic/avc/cng/model/service/k;
+    invoke-static {v1, v0}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->b(Landroid/content/Context;Lcom/panasonic/avc/cng/model/f;)Lcom/panasonic/avc/cng/model/service/k;
 
     move-result-object v0
 
@@ -11666,7 +11666,7 @@
 
     const-string v1, "OnBurstShutterStart[cancel]_isEnableShutter"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 
@@ -11688,7 +11688,7 @@
 
     const-string v1, "OnBurstShutterStart[cancel]_burstingMode 1"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 
@@ -11933,11 +11933,11 @@
 
     .prologue
     .line 3543
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
@@ -11974,7 +11974,7 @@
 
     const-string v1, ""
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 4871
     invoke-virtual {p0}, Lcom/panasonic/avc/cng/view/liveview/k;->S()Z
@@ -15496,7 +15496,7 @@
 
     iget-object v2, p0, Lcom/panasonic/avc/cng/view/liveview/k;->e:Lcom/panasonic/avc/cng/model/service/e;
 
-    invoke-interface {v2}, Lcom/panasonic/avc/cng/model/service/e;->i()Lcom/panasonic/avc/cng/model/c/e;
+    invoke-interface {v2}, Lcom/panasonic/avc/cng/model/service/e;->i()Lcom/panasonic/avc/cng/model/c/CameraStatus;
 
     move-result-object v2
 
@@ -15585,7 +15585,7 @@
 
     const-string v1, "OnBurstShutterEnd[cancel]!IsBurstMode && !IsAutoBracketMode"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 2054
     :goto_0
@@ -15650,7 +15650,7 @@
     if-nez v0, :cond_0
 
     .line 2078
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/k;->bU:Lcom/panasonic/avc/cng/core/a/af;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/k;->bU:Lcom/panasonic/avc/cng/core/a/RecordCommand;
 
     if-eqz v0, :cond_0
 

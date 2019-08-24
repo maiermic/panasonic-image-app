@@ -8,7 +8,7 @@ import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
 import com.panasonic.avc.cng.view.parts.C4021aj;
 import com.panasonic.avc.cng.view.parts.C4021aj.C4033a;
 
-public class LiveSetupDrumPickerFocusModeActivity extends C5804u {
+public class LiveSetupDrumPickerFocusModeActivity extends LiveSetupLumixMirrorlessBaseActivity {
 
     /* renamed from: n */
     private C4021aj f16060n;

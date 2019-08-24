@@ -715,7 +715,7 @@
 
     move-result-object v8
 
-    invoke-static {v5, v8}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v5, v8}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 226
     :cond_4
@@ -734,7 +734,7 @@
 
     const-string v6, "Hit!"
 
-    invoke-static {v5, v6}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v5, v6}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 229
     iput-boolean v1, p0, Lcom/panasonic/avc/cng/util/q;->g:Z

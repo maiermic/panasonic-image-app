@@ -57,7 +57,7 @@
     :cond_0
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/PictureJumpSetupActivity$1;->a:Lcom/panasonic/avc/cng/view/setting/PictureJumpSetupActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;)V
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;)V
 
     .line 195
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/PictureJumpSetupActivity$1;->a:Lcom/panasonic/avc/cng/view/setting/PictureJumpSetupActivity;

@@ -3,11 +3,11 @@ package com.google.firebase.iid;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Build.VERSION;
-import android.support.p000v4.content.C0158g;
+import android.support.p000v4.content.WakefulBroadcastReceiver;
 import android.util.Base64;
 import android.util.Log;
 
-public final class FirebaseInstanceIdReceiver extends C0158g {
+public final class FirebaseInstanceIdReceiver extends WakefulBroadcastReceiver {
     public final void onReceive(Context context, Intent intent) {
         String str = null;
         int i = -1;

@@ -17,7 +17,7 @@ public class C4608d {
     private Activity f15076a;
 
     /* renamed from: b */
-    private C4609e f15077b;
+    private MultiPhotoFrameExecuteViewModel f15077b;
 
     /* renamed from: c */
     private C4230p f15078c = null;
@@ -26,7 +26,7 @@ public class C4608d {
     private C4145d f15079d = null;
 
     /* renamed from: a */
-    public void mo10787a(Activity activity, C4609e eVar) {
+    public void mo10787a(Activity activity, MultiPhotoFrameExecuteViewModel eVar) {
         this.f15076a = activity;
         this.f15077b = eVar;
         m18034b();

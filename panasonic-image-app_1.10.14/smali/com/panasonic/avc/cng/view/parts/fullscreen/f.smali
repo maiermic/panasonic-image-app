@@ -14,7 +14,7 @@
     value = {
         "Lcom/panasonic/avc/cng/view/parts/fullscreen/c",
         "<",
-        "Lcom/panasonic/avc/cng/view/setting/o;",
+        "Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;",
         ">;"
     }
 .end annotation
@@ -76,17 +76,17 @@
 
     .prologue
     .line 94
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
@@ -163,7 +163,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 64
     invoke-virtual {p0, p1}, Lcom/panasonic/avc/cng/view/parts/fullscreen/f;->a(Ljava/lang/String;)V
@@ -217,14 +217,14 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/panasonic/avc/cng/view/setting/o;
+    check-cast v0, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;
 
     if-le v3, v4, :cond_0
 
     const-string v2, "down"
 
     :goto_1
-    invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/view/setting/o;->c(Ljava/lang/String;)V
+    invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;->c(Ljava/lang/String;)V
 
     .line 111
     add-int/lit8 v0, v1, 0x1

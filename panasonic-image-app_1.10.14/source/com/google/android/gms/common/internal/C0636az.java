@@ -4,7 +4,7 @@ import android.content.Intent;
 import com.google.android.gms.p035d.C0825el;
 
 /* renamed from: com.google.android.gms.common.internal.az */
-final class C0636az extends C0634ax {
+final class C0636az extends DialogRedirect {
 
     /* renamed from: a */
     private /* synthetic */ Intent f1364a;

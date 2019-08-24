@@ -7,27 +7,27 @@ import android.os.Handler;
 import android.preference.PreferenceManager;
 import com.panasonic.avc.cng.core.p040a.C1473at.C1488o;
 import com.panasonic.avc.cng.core.p040a.C1501d;
-import com.panasonic.avc.cng.core.p040a.C1508g.C1509a;
-import com.panasonic.avc.cng.core.p040a.C1508g.C1512d;
-import com.panasonic.avc.cng.core.p040a.C1508g.C1517i;
-import com.panasonic.avc.cng.core.p040a.C1508g.C1518j;
+import com.panasonic.avc.cng.core.p040a.FocusCommand.C1509a;
+import com.panasonic.avc.cng.core.p040a.FocusCommand.C1512d;
+import com.panasonic.avc.cng.core.p040a.FocusCommand.C1517i;
+import com.panasonic.avc.cng.core.p040a.FocusCommand.C1518j;
 import com.panasonic.avc.cng.core.p040a.C1531o;
-import com.panasonic.avc.cng.core.p040a.C1536t.C1537a;
+import com.panasonic.avc.cng.core.p040a.LiveViewOperationCommand.C1537a;
 import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.C1892f;
 import com.panasonic.avc.cng.model.C1897j.C1903f;
 import com.panasonic.avc.cng.model.C1910l;
-import com.panasonic.avc.cng.model.p051c.C1846e;
+import com.panasonic.avc.cng.model.p051c.CameraStatus;
 import com.panasonic.avc.cng.model.p051c.C1848g.C1849a;
-import com.panasonic.avc.cng.model.p051c.C1853h;
+import com.panasonic.avc.cng.model.p051c.ParseTagHighlightSceneInfo;
 import com.panasonic.avc.cng.model.p051c.C1854i;
 import com.panasonic.avc.cng.model.p051c.C1860l;
 import com.panasonic.avc.cng.model.p052d.C1879a;
 import com.panasonic.avc.cng.model.service.C1985b;
-import com.panasonic.avc.cng.model.service.C2253z;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
 import com.panasonic.avc.cng.p038a.C1344c;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.util.C2266l;
 import com.panasonic.avc.cng.view.liveview.C2994e.C3116f;
 import com.panasonic.avc.cng.view.liveview.C2994e.C3141o;
@@ -172,7 +172,7 @@ public class C3161h extends C2994e {
         public void mo7588a(BigDecimal bigDecimal) {
             final C1854i c = C3161h.this.f9503n.mo3732c(bigDecimal.multiply(new BigDecimal(100)).setScale(1, 4).intValue());
             if (c.mo4803d()) {
-                C2261g.m9769c("LiveViewLumixGseriesViewModel", "changeScale error.");
+                ImageAppLog.error("LiveViewLumixGseriesViewModel", "changeScale error.");
             } else if (C3161h.this.f3707b != null) {
                 C3161h.this.f3707b.post(new Runnable() {
                     public void run() {
@@ -436,7 +436,7 @@ public class C3161h extends C2994e {
         if (this.f9149aK != fVar.mo4940i()) {
             C1892f a = C1712b.m6919c().mo4896a();
             if (a != null) {
-                C1985b a2 = C2253z.m9679a(this.f3706a, a);
+                C1985b a2 = ServiceFactory.m9679a(this.f3706a, a);
                 if (a2 != null) {
                     C1860l a3 = a2.mo5182a("menu_item_id_6k4k_photo_prerec");
                     if (a3 != null && a3.f5569c.equalsIgnoreCase("on") && fVar.mo4940i()) {
@@ -829,7 +829,7 @@ public class C3161h extends C2994e {
 
     /* access modifiers changed from: protected */
     /* renamed from: a */
-    public boolean mo7299a(C1846e eVar) {
+    public boolean mo7299a(CameraStatus eVar) {
         boolean z = true;
         C1892f a = C1712b.m6919c().mo4896a();
         if (a == null || a.f5691m == null || !a.f5691m.mo4754z()) {
@@ -965,7 +965,7 @@ public class C3161h extends C2994e {
             r0.mo3216a(r5)
             if (r4 == 0) goto L_0x03da
             com.panasonic.avc.cng.core.a.g$j r0 = r8.f9496gz
-            com.panasonic.avc.cng.core.a.g$j r5 = com.panasonic.avc.cng.core.p040a.C1508g.C1518j.Full
+            com.panasonic.avc.cng.core.a.g$j r5 = com.panasonic.avc.cng.core.p040a.FocusCommand.C1518j.Full
             if (r0 != r5) goto L_0x021e
             boolean r0 = r8.mo7256B()
             if (r0 == 0) goto L_0x0100
@@ -1166,7 +1166,7 @@ public class C3161h extends C2994e {
             goto L_0x0099
         L_0x021e:
             com.panasonic.avc.cng.core.a.g$j r0 = r8.f9496gz
-            com.panasonic.avc.cng.core.a.g$j r5 = com.panasonic.avc.cng.core.p040a.C1508g.C1518j.Pinp
+            com.panasonic.avc.cng.core.a.g$j r5 = com.panasonic.avc.cng.core.p040a.FocusCommand.C1518j.Pinp
             if (r0 != r5) goto L_0x03da
             boolean r0 = r8.mo7256B()
             if (r0 == 0) goto L_0x026e
@@ -1388,7 +1388,7 @@ public class C3161h extends C2994e {
     /* renamed from: i */
     public void mo7456i() {
         if (this.f9403fA.mo9771c().intValue() != 0) {
-            C2261g.m9760a(3158021, "");
+            ImageAppLog.m9760a(3158021, "");
             mo7265K();
             String str = "";
             if (this.f9128P == 1) {
@@ -1419,13 +1419,13 @@ public class C3161h extends C2994e {
                         com.panasonic.avc.cng.view.liveview.h r0 = com.panasonic.avc.cng.view.liveview.C3161h.this
                         java.lang.Object r3 = r0.f9177am
                         monitor-enter(r3)
-                        com.panasonic.avc.cng.core.a.g$i r0 = com.panasonic.avc.cng.core.p040a.C1508g.C1517i.DigitalScope     // Catch:{ all -> 0x0059 }
+                        com.panasonic.avc.cng.core.a.g$i r0 = com.panasonic.avc.cng.core.p040a.FocusCommand.C1517i.DigitalScope     // Catch:{ all -> 0x0059 }
                         com.panasonic.avc.cng.view.liveview.h r2 = com.panasonic.avc.cng.view.liveview.C3161h.this     // Catch:{ all -> 0x0059 }
                         com.panasonic.avc.cng.view.liveview.e$e r2 = r2.f9495gy     // Catch:{ all -> 0x0059 }
                         com.panasonic.avc.cng.view.liveview.e$b r2 = r2.mo7627d()     // Catch:{ all -> 0x0059 }
                         com.panasonic.avc.cng.view.liveview.e$b r4 = com.panasonic.avc.cng.view.liveview.C2994e.C3097b.DigitalScope     // Catch:{ all -> 0x0059 }
                         if (r2 != r4) goto L_0x005c
-                        com.panasonic.avc.cng.core.a.g$i r0 = com.panasonic.avc.cng.core.p040a.C1508g.C1517i.DigitalScope     // Catch:{ all -> 0x0059 }
+                        com.panasonic.avc.cng.core.a.g$i r0 = com.panasonic.avc.cng.core.p040a.FocusCommand.C1517i.DigitalScope     // Catch:{ all -> 0x0059 }
                         com.panasonic.avc.cng.view.liveview.h r2 = com.panasonic.avc.cng.view.liveview.C3161h.this     // Catch:{ all -> 0x0059 }
                         android.graphics.Point r2 = r2.f9456gA     // Catch:{ all -> 0x0059 }
                         if (r2 == 0) goto L_0x005c
@@ -1438,13 +1438,13 @@ public class C3161h extends C2994e {
                     L_0x0029:
                         com.panasonic.avc.cng.view.liveview.h r4 = com.panasonic.avc.cng.view.liveview.C3161h.this     // Catch:{ all -> 0x0059 }
                         com.panasonic.avc.cng.core.a.g r4 = r4.f9503n     // Catch:{ all -> 0x0059 }
-                        com.panasonic.avc.cng.core.a.g$j r5 = com.panasonic.avc.cng.core.p040a.C1508g.C1518j.Move     // Catch:{ all -> 0x0059 }
+                        com.panasonic.avc.cng.core.a.g$j r5 = com.panasonic.avc.cng.core.p040a.FocusCommand.C1518j.Move     // Catch:{ all -> 0x0059 }
                         com.panasonic.avc.cng.model.c.i r0 = r4.mo3728a(r5, r0, r2, r1)     // Catch:{ all -> 0x0059 }
                         boolean r1 = r0.mo4803d()     // Catch:{ all -> 0x0059 }
                         if (r1 == 0) goto L_0x0042
                         java.lang.String r0 = "LiveViewLumixGseriesViewModel"
                         java.lang.String r1 = "OnFocusReset assistDisp error."
-                        com.panasonic.avc.cng.util.C2261g.m9769c(r0, r1)     // Catch:{ all -> 0x0059 }
+                        com.panasonic.avc.cng.util.ImageAppLog.error(r0, r1)     // Catch:{ all -> 0x0059 }
                     L_0x0040:
                         monitor-exit(r3)     // Catch:{ all -> 0x0059 }
                         return
@@ -1481,13 +1481,13 @@ public class C3161h extends C2994e {
                         com.panasonic.avc.cng.view.liveview.h r0 = com.panasonic.avc.cng.view.liveview.C3161h.this
                         java.lang.Object r3 = r0.f9177am
                         monitor-enter(r3)
-                        com.panasonic.avc.cng.core.a.g$i r0 = com.panasonic.avc.cng.core.p040a.C1508g.C1517i.MfAssist     // Catch:{ all -> 0x0059 }
+                        com.panasonic.avc.cng.core.a.g$i r0 = com.panasonic.avc.cng.core.p040a.FocusCommand.C1517i.MfAssist     // Catch:{ all -> 0x0059 }
                         com.panasonic.avc.cng.view.liveview.h r2 = com.panasonic.avc.cng.view.liveview.C3161h.this     // Catch:{ all -> 0x0059 }
                         com.panasonic.avc.cng.view.liveview.e$e r2 = r2.f9495gy     // Catch:{ all -> 0x0059 }
                         com.panasonic.avc.cng.view.liveview.e$b r2 = r2.mo7627d()     // Catch:{ all -> 0x0059 }
                         com.panasonic.avc.cng.view.liveview.e$b r4 = com.panasonic.avc.cng.view.liveview.C2994e.C3097b.PinpointScale     // Catch:{ all -> 0x0059 }
                         if (r2 != r4) goto L_0x005c
-                        com.panasonic.avc.cng.core.a.g$i r0 = com.panasonic.avc.cng.core.p040a.C1508g.C1517i.Pinpoint     // Catch:{ all -> 0x0059 }
+                        com.panasonic.avc.cng.core.a.g$i r0 = com.panasonic.avc.cng.core.p040a.FocusCommand.C1517i.Pinpoint     // Catch:{ all -> 0x0059 }
                         com.panasonic.avc.cng.view.liveview.h r2 = com.panasonic.avc.cng.view.liveview.C3161h.this     // Catch:{ all -> 0x0059 }
                         android.graphics.Point r2 = r2.f9456gA     // Catch:{ all -> 0x0059 }
                         if (r2 == 0) goto L_0x005c
@@ -1500,13 +1500,13 @@ public class C3161h extends C2994e {
                     L_0x0029:
                         com.panasonic.avc.cng.view.liveview.h r4 = com.panasonic.avc.cng.view.liveview.C3161h.this     // Catch:{ all -> 0x0059 }
                         com.panasonic.avc.cng.core.a.g r4 = r4.f9503n     // Catch:{ all -> 0x0059 }
-                        com.panasonic.avc.cng.core.a.g$j r5 = com.panasonic.avc.cng.core.p040a.C1508g.C1518j.Move     // Catch:{ all -> 0x0059 }
+                        com.panasonic.avc.cng.core.a.g$j r5 = com.panasonic.avc.cng.core.p040a.FocusCommand.C1518j.Move     // Catch:{ all -> 0x0059 }
                         com.panasonic.avc.cng.model.c.i r0 = r4.mo3728a(r5, r0, r2, r1)     // Catch:{ all -> 0x0059 }
                         boolean r1 = r0.mo4803d()     // Catch:{ all -> 0x0059 }
                         if (r1 == 0) goto L_0x0042
                         java.lang.String r0 = "LiveViewLumixGseriesViewModel"
                         java.lang.String r1 = "OnFocusReset assistDisp error."
-                        com.panasonic.avc.cng.util.C2261g.m9769c(r0, r1)     // Catch:{ all -> 0x0059 }
+                        com.panasonic.avc.cng.util.ImageAppLog.error(r0, r1)     // Catch:{ all -> 0x0059 }
                     L_0x0040:
                         monitor-exit(r3)     // Catch:{ all -> 0x0059 }
                         return
@@ -1589,7 +1589,7 @@ public class C3161h extends C2994e {
                     C3161h.this.f9186av = false;
                     final C1854i k = C3161h.this.f9504o.mo3811k(str);
                     if (k.mo4803d()) {
-                        C2261g.m9769c("LiveViewLumixGseriesViewModel", "CropFrameChange Error");
+                        ImageAppLog.error("LiveViewLumixGseriesViewModel", "CropFrameChange Error");
                     } else {
                         C3161h.this.f3707b.post(new Runnable() {
                             public void run() {
@@ -1689,8 +1689,8 @@ public class C3161h extends C2994e {
                     com.panasonic.avc.cng.view.liveview.h r0 = com.panasonic.avc.cng.view.liveview.C3161h.this
                     r0.mo7377bK()
                     com.panasonic.avc.cng.view.liveview.h r0 = com.panasonic.avc.cng.view.liveview.C3161h.this
-                    com.panasonic.avc.cng.core.a.g$j r2 = com.panasonic.avc.cng.core.p040a.C1508g.C1518j.Current
-                    com.panasonic.avc.cng.core.a.g$i r3 = com.panasonic.avc.cng.core.p040a.C1508g.C1517i.Pinpoint
+                    com.panasonic.avc.cng.core.a.g$j r2 = com.panasonic.avc.cng.core.p040a.FocusCommand.C1518j.Current
+                    com.panasonic.avc.cng.core.a.g$i r3 = com.panasonic.avc.cng.core.p040a.FocusCommand.C1517i.Pinpoint
                     r4 = r8
                     r5 = r9
                     r0.mo7295a(r1, r2, r3, r4, r5)
@@ -1904,7 +1904,7 @@ public class C3161h extends C2994e {
                 L_0x0034:
                     java.lang.String r0 = "LiveViewLumixGseriesViewModel"
                     java.lang.String r2 = "enterAfMfAssist afAeLock on error."
-                    com.panasonic.avc.cng.util.C2261g.m9769c(r0, r2)     // Catch:{ all -> 0x0052 }
+                    com.panasonic.avc.cng.util.ImageAppLog.error(r0, r2)     // Catch:{ all -> 0x0052 }
                     com.panasonic.avc.cng.view.liveview.h r0 = com.panasonic.avc.cng.view.liveview.C3161h.this     // Catch:{ all -> 0x0052 }
                     com.panasonic.avc.cng.core.a.g r0 = r0.f9503n     // Catch:{ all -> 0x0052 }
                     com.panasonic.avc.cng.model.c.h r0 = r0.mo3731c()     // Catch:{ all -> 0x0052 }
@@ -1912,7 +1912,7 @@ public class C3161h extends C2994e {
                     if (r0 != 0) goto L_0x0050
                     java.lang.String r0 = "LiveViewLumixGseriesViewModel"
                     java.lang.String r2 = "enterAfMfAssist afAeLock off error."
-                    com.panasonic.avc.cng.util.C2261g.m9769c(r0, r2)     // Catch:{ all -> 0x0052 }
+                    com.panasonic.avc.cng.util.ImageAppLog.error(r0, r2)     // Catch:{ all -> 0x0052 }
                 L_0x0050:
                     monitor-exit(r1)     // Catch:{ all -> 0x0052 }
                     goto L_0x000f
@@ -1923,8 +1923,8 @@ public class C3161h extends C2994e {
                 L_0x0055:
                     com.panasonic.avc.cng.view.liveview.h r0 = com.panasonic.avc.cng.view.liveview.C3161h.this     // Catch:{ all -> 0x0052 }
                     com.panasonic.avc.cng.core.a.g r0 = r0.f9503n     // Catch:{ all -> 0x0052 }
-                    com.panasonic.avc.cng.core.a.g$j r2 = com.panasonic.avc.cng.core.p040a.C1508g.C1518j.CurrentAuto     // Catch:{ all -> 0x0052 }
-                    com.panasonic.avc.cng.core.a.g$i r3 = com.panasonic.avc.cng.core.p040a.C1508g.C1517i.MfAssist     // Catch:{ all -> 0x0052 }
+                    com.panasonic.avc.cng.core.a.g$j r2 = com.panasonic.avc.cng.core.p040a.FocusCommand.C1518j.CurrentAuto     // Catch:{ all -> 0x0052 }
+                    com.panasonic.avc.cng.core.a.g$i r3 = com.panasonic.avc.cng.core.p040a.FocusCommand.C1517i.MfAssist     // Catch:{ all -> 0x0052 }
                     r4 = 0
                     r5 = 0
                     com.panasonic.avc.cng.model.c.i r0 = r0.mo3728a(r2, r3, r4, r5)     // Catch:{ all -> 0x0052 }
@@ -1932,7 +1932,7 @@ public class C3161h extends C2994e {
                     if (r2 == 0) goto L_0x00a6
                     java.lang.String r2 = "LiveViewLumixGseriesViewModel"
                     java.lang.String r3 = "enterAfMfAssist assistDisp error."
-                    com.panasonic.avc.cng.util.C2261g.m9769c(r2, r3)     // Catch:{ all -> 0x0052 }
+                    com.panasonic.avc.cng.util.ImageAppLog.error(r2, r3)     // Catch:{ all -> 0x0052 }
                     com.panasonic.avc.cng.view.liveview.h r2 = com.panasonic.avc.cng.view.liveview.C3161h.this     // Catch:{ all -> 0x0052 }
                     r3 = 0
                     r2.f9186av = r3     // Catch:{ all -> 0x0052 }
@@ -1957,7 +1957,7 @@ public class C3161h extends C2994e {
                     if (r0 != 0) goto L_0x00a3
                     java.lang.String r0 = "LiveViewLumixGseriesViewModel"
                     java.lang.String r2 = "enterAfMfAssist afAeLock off2 error."
-                    com.panasonic.avc.cng.util.C2261g.m9769c(r0, r2)     // Catch:{ all -> 0x0052 }
+                    com.panasonic.avc.cng.util.ImageAppLog.error(r0, r2)     // Catch:{ all -> 0x0052 }
                 L_0x00a3:
                     monitor-exit(r1)     // Catch:{ all -> 0x0052 }
                     goto L_0x000f
@@ -2194,7 +2194,7 @@ public class C3161h extends C2994e {
                     L_0x003e:
                         java.lang.String r2 = "LiveViewLumixGseriesViewModel_B"
                         java.lang.String r3 = "OnBulbShutterStart[TouchCapture]★"
-                        com.panasonic.avc.cng.util.C2261g.m9771e(r2, r3)     // Catch:{ all -> 0x0088 }
+                        com.panasonic.avc.cng.util.ImageAppLog.info(r2, r3)     // Catch:{ all -> 0x0088 }
                     L_0x0045:
                         boolean r2 = r0.mo4775e()     // Catch:{ all -> 0x0088 }
                         if (r2 == 0) goto L_0x00c9
@@ -2229,7 +2229,7 @@ public class C3161h extends C2994e {
                         com.panasonic.avc.cng.view.liveview.h r0 = com.panasonic.avc.cng.view.liveview.C3161h.this     // Catch:{ all -> 0x0088 }
                         r2 = 0
                         r3 = 1
-                        com.panasonic.avc.cng.core.a.g$i r4 = com.panasonic.avc.cng.core.p040a.C1508g.C1517i.MfAssist     // Catch:{ all -> 0x0088 }
+                        com.panasonic.avc.cng.core.a.g$i r4 = com.panasonic.avc.cng.core.p040a.FocusCommand.C1517i.MfAssist     // Catch:{ all -> 0x0088 }
                         r0.mo7298a(r2, r3, r4)     // Catch:{ all -> 0x0088 }
                         goto L_0x0017
                     L_0x0088:
@@ -2257,7 +2257,7 @@ public class C3161h extends C2994e {
                         com.panasonic.avc.cng.model.c.h r0 = r0.mo3409a()     // Catch:{ all -> 0x0088 }
                         java.lang.String r2 = "LiveViewLumixGseriesViewModel_B"
                         java.lang.String r3 = "OnBulbShutterStart[Capture]★"
-                        com.panasonic.avc.cng.util.C2261g.m9771e(r2, r3)     // Catch:{ all -> 0x0088 }
+                        com.panasonic.avc.cng.util.ImageAppLog.info(r2, r3)     // Catch:{ all -> 0x0088 }
                         goto L_0x0045
                     L_0x00b9:
                         com.panasonic.avc.cng.view.liveview.h r2 = com.panasonic.avc.cng.view.liveview.C3161h.this     // Catch:{ all -> 0x0088 }
@@ -2349,7 +2349,7 @@ public class C3161h extends C2994e {
                     L_0x0030:
                         java.lang.String r2 = "LiveViewLumixGseriesViewModel_B"
                         java.lang.String r3 = "OnBulbShutterEnd[TouchCaptureCancel]★★"
-                        com.panasonic.avc.cng.util.C2261g.m9771e(r2, r3)     // Catch:{ all -> 0x007c }
+                        com.panasonic.avc.cng.util.ImageAppLog.info(r2, r3)     // Catch:{ all -> 0x007c }
                     L_0x0037:
                         monitor-exit(r1)     // Catch:{ all -> 0x007c }
                         com.panasonic.avc.cng.view.liveview.h r1 = com.panasonic.avc.cng.view.liveview.C3161h.this
@@ -2385,7 +2385,7 @@ public class C3161h extends C2994e {
                         com.panasonic.avc.cng.model.c.h r0 = r0.mo3494b()     // Catch:{ all -> 0x007c }
                         java.lang.String r2 = "LiveViewLumixGseriesViewModel_B"
                         java.lang.String r3 = "OnBulbShutterEnd[CaptureCancel]★★"
-                        com.panasonic.avc.cng.util.C2261g.m9771e(r2, r3)     // Catch:{ all -> 0x007c }
+                        com.panasonic.avc.cng.util.ImageAppLog.info(r2, r3)     // Catch:{ all -> 0x007c }
                         goto L_0x0037
                     L_0x007c:
                         r0 = move-exception
@@ -2428,7 +2428,7 @@ public class C3161h extends C2994e {
                         com.panasonic.avc.cng.model.c.h r0 = r0.mo3494b()     // Catch:{ all -> 0x007c }
                         java.lang.String r2 = "LiveViewLumixGseriesViewModel_B"
                         java.lang.String r3 = "OnBulbShutterEnd[CaptureCancel]★★"
-                        com.panasonic.avc.cng.util.C2261g.m9771e(r2, r3)     // Catch:{ all -> 0x007c }
+                        com.panasonic.avc.cng.util.ImageAppLog.info(r2, r3)     // Catch:{ all -> 0x007c }
                         com.panasonic.avc.cng.view.liveview.h r2 = com.panasonic.avc.cng.view.liveview.C3161h.this     // Catch:{ all -> 0x007c }
                         r2.mo7368bB()     // Catch:{ all -> 0x007c }
                         goto L_0x0037
@@ -2449,13 +2449,13 @@ public class C3161h extends C2994e {
                 }
             }).start();
         } else {
-            C2261g.m9771e("LiveViewLumixGseriesViewModel_B", "OnBulbShutterEnd[cancel]!IsBulb");
+            ImageAppLog.info("LiveViewLumixGseriesViewModel_B", "OnBulbShutterEnd[cancel]!IsBulb");
         }
     }
 
     /* renamed from: Q */
     public void mo7271Q() {
-        C2261g.m9771e("LiveViewLumixGseriesViewModel_B", "VideoRecStart");
+        ImageAppLog.info("LiveViewLumixGseriesViewModel_B", "VideoRecStart");
         if (mo7338af()) {
             new Thread(new Runnable() {
                 public void run() {
@@ -2476,7 +2476,7 @@ public class C3161h extends C2994e {
         mo7480u();
         new Thread(new Runnable() {
             public void run() {
-                final C1853h b;
+                final ParseTagHighlightSceneInfo b;
                 synchronized (C1910l.m7679a()) {
                     if (C3161h.this.f9495gy.mo7627d() == C3097b.TouchAE) {
                         C3161h.this.mo7478t(false);

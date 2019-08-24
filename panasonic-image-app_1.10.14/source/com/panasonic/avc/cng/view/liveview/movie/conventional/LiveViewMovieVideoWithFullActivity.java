@@ -12,7 +12,7 @@ import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.C1892f;
 import com.panasonic.avc.cng.model.C1910l;
-import com.panasonic.avc.cng.model.service.C2253z;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
 import com.panasonic.avc.cng.p038a.C1344c;
 import com.panasonic.avc.cng.util.C2266l;
 
@@ -68,7 +68,7 @@ public class LiveViewMovieVideoWithFullActivity extends C3476a {
         this._binder.mo8259a(this, this._viewModel);
         this._viewModel.mo8407f(false);
         C1892f a = C1712b.m6919c().mo4896a();
-        String b = C2266l.m9812b(C2253z.m9679a(this._context, a));
+        String b = C2266l.m9812b(ServiceFactory.m9679a(this._context, a));
         if (b.equalsIgnoreCase("")) {
             if (a != null) {
                 final C1501d dVar = new C1501d(a.f5682d);

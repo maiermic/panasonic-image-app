@@ -43,7 +43,7 @@
     .line 1383
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/a$20;->a:Lcom/panasonic/avc/cng/view/play/browser/a;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/browser/a;->k(Lcom/panasonic/avc/cng/view/play/browser/a;)Lcom/panasonic/avc/cng/model/b/c;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/browser/a;->k(Lcom/panasonic/avc/cng/view/play/browser/a;)Lcom/panasonic/avc/cng/model/b/ContentsCopyViewModel;
 
     move-result-object v0
 
@@ -52,11 +52,11 @@
     .line 1384
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/a$20;->a:Lcom/panasonic/avc/cng/view/play/browser/a;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/browser/a;->k(Lcom/panasonic/avc/cng/view/play/browser/a;)Lcom/panasonic/avc/cng/model/b/c;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/browser/a;->k(Lcom/panasonic/avc/cng/view/play/browser/a;)Lcom/panasonic/avc/cng/model/b/ContentsCopyViewModel;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/b/c;->f()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/b/ContentsCopyViewModel;->f()V
 
     .line 1386
     :cond_0

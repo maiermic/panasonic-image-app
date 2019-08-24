@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/panasonic/avc/cng/application/c;
+    value = Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,18 +18,18 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/panasonic/avc/cng/application/c;
+.field final synthetic a:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
 .field private b:Z
 
 
 # direct methods
-.method public constructor <init>(Lcom/panasonic/avc/cng/application/c;)V
+.method public constructor <init>(Lcom/panasonic/avc/cng/application/NfcSupportViewModel;)V
     .locals 1
 
     .prologue
     .line 145
-    iput-object p1, p0, Lcom/panasonic/avc/cng/application/c$f;->a:Lcom/panasonic/avc/cng/application/c;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/application/c$f;->a:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -76,13 +76,13 @@
     iput-boolean v0, p0, Lcom/panasonic/avc/cng/application/c$f;->b:Z
 
     .line 158
-    iget-object v0, p0, Lcom/panasonic/avc/cng/application/c$f;->a:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/application/c$f;->a:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
     new-instance v1, Lcom/panasonic/avc/cng/application/c$f$1;
 
     invoke-direct {v1, p0}, Lcom/panasonic/avc/cng/application/c$f$1;-><init>(Lcom/panasonic/avc/cng/application/c$f;)V
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/application/c;->a(Lcom/panasonic/avc/cng/application/c;Lcom/panasonic/avc/cng/application/c$d;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->a(Lcom/panasonic/avc/cng/application/NfcSupportViewModel;Lcom/panasonic/avc/cng/application/c$d;)V
 
     .line 230
     return-void

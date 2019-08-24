@@ -85,9 +85,9 @@
     .line 2681
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/e$12;->d:Lcom/panasonic/avc/cng/view/liveview/e;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/e;->o:Lcom/panasonic/avc/cng/core/a/t;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/e;->o:Lcom/panasonic/avc/cng/core/a/LiveViewOperationCommand;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/t;->j()Lcom/panasonic/avc/cng/model/c/h;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/LiveViewOperationCommand;->j()Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
     move-result-object v0
 
@@ -119,7 +119,7 @@
     .line 2686
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/e$12;->d:Lcom/panasonic/avc/cng/view/liveview/e;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/e;->n:Lcom/panasonic/avc/cng/core/a/g;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/e;->n:Lcom/panasonic/avc/cng/core/a/FocusCommand;
 
     sget-object v3, Lcom/panasonic/avc/cng/core/a/g$j;->f:Lcom/panasonic/avc/cng/core/a/g$j;
 
@@ -129,7 +129,7 @@
 
     const/4 v6, 0x0
 
-    invoke-virtual {v0, v3, v4, v5, v6}, Lcom/panasonic/avc/cng/core/a/g;->a(Lcom/panasonic/avc/cng/core/a/g$j;Lcom/panasonic/avc/cng/core/a/g$i;II)Lcom/panasonic/avc/cng/model/c/i;
+    invoke-virtual {v0, v3, v4, v5, v6}, Lcom/panasonic/avc/cng/core/a/FocusCommand;->a(Lcom/panasonic/avc/cng/core/a/g$j;Lcom/panasonic/avc/cng/core/a/g$i;II)Lcom/panasonic/avc/cng/model/c/i;
 
     move-result-object v0
 
@@ -145,7 +145,7 @@
 
     const-string v4, "OnFocusExit assistDisp error."
 
-    invoke-static {v3, v4}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v3, v4}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     :cond_1
     move-object v7, v1
@@ -166,7 +166,7 @@
 
     new-instance v4, Lcom/panasonic/avc/cng/view/liveview/e$12$1;
 
-    invoke-direct {v4, p0, v0, v1}, Lcom/panasonic/avc/cng/view/liveview/e$12$1;-><init>(Lcom/panasonic/avc/cng/view/liveview/e$12;Lcom/panasonic/avc/cng/model/c/h;Lcom/panasonic/avc/cng/model/c/i;)V
+    invoke-direct {v4, p0, v0, v1}, Lcom/panasonic/avc/cng/view/liveview/e$12$1;-><init>(Lcom/panasonic/avc/cng/view/liveview/e$12;Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;Lcom/panasonic/avc/cng/model/c/i;)V
 
     invoke-virtual {v3, v4}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 

@@ -65,7 +65,7 @@
 
     iget-object v2, p0, Lcom/panasonic/avc/cng/view/setting/PlaybackSettingActivity$a$3;->a:Lcom/panasonic/avc/cng/model/f;
 
-    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/model/service/z;->a(Landroid/content/Context;Lcom/panasonic/avc/cng/model/f;)Lcom/panasonic/avc/cng/model/service/b;
+    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->a(Landroid/content/Context;Lcom/panasonic/avc/cng/model/f;)Lcom/panasonic/avc/cng/model/service/b;
 
     move-result-object v1
 

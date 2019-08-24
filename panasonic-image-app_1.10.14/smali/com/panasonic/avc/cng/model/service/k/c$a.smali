@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/panasonic/avc/cng/model/service/k/c;
+    value = Lcom/panasonic/avc/cng/model/service/k/VianaSetup;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -23,18 +23,18 @@
 
 .field d:[I
 
-.field final synthetic e:Lcom/panasonic/avc/cng/model/service/k/c;
+.field final synthetic e:Lcom/panasonic/avc/cng/model/service/k/VianaSetup;
 
 
 # direct methods
-.method public constructor <init>(Lcom/panasonic/avc/cng/model/service/k/c;)V
+.method public constructor <init>(Lcom/panasonic/avc/cng/model/service/k/VianaSetup;)V
     .locals 2
 
     .prologue
     const/4 v1, 0x3
 
     .line 196
-    iput-object p1, p0, Lcom/panasonic/avc/cng/model/service/k/c$a;->e:Lcom/panasonic/avc/cng/model/service/k/c;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/model/service/k/c$a;->e:Lcom/panasonic/avc/cng/model/service/k/VianaSetup;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

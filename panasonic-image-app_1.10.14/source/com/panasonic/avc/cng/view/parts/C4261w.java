@@ -14,19 +14,19 @@ public class C4261w extends BaseAdapter {
     private Context f14294a;
 
     /* renamed from: b */
-    private C4245t f14295b;
+    private BrowserViewModel f14295b;
 
     /* renamed from: c */
     private int f14296c;
 
-    public C4261w(Context context, int i, C4245t tVar) {
+    public C4261w(Context context, int i, BrowserViewModel tVar) {
         this.f14294a = context;
         this.f14296c = i;
         this.f14295b = tVar;
     }
 
     /* renamed from: a */
-    public void mo10022a(C4245t tVar) {
+    public void mo10022a(BrowserViewModel tVar) {
         this.f14295b = tVar;
     }
 

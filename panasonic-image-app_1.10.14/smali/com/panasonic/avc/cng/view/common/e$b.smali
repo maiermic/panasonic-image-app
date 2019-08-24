@@ -17,7 +17,7 @@
 # instance fields
 .field private a:Ljava/lang/String;
 
-.field private b:Lcom/panasonic/avc/cng/application/e;
+.field private b:Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportViewModel;
 
 
 # direct methods
@@ -31,28 +31,28 @@
     .line 1332
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/view/common/e$b;->b:Lcom/panasonic/avc/cng/application/e;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/view/common/e$b;->b:Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportViewModel;
 
     .line 1336
     return-void
 .end method
 
-.method static synthetic a(Lcom/panasonic/avc/cng/view/common/e$b;)Lcom/panasonic/avc/cng/application/e;
+.method static synthetic a(Lcom/panasonic/avc/cng/view/common/e$b;)Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportViewModel;
     .locals 1
 
     .prologue
     .line 1329
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/e$b;->b:Lcom/panasonic/avc/cng/application/e;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/e$b;->b:Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportViewModel;
 
     return-object v0
 .end method
 
-.method static synthetic a(Lcom/panasonic/avc/cng/view/common/e$b;Lcom/panasonic/avc/cng/application/e;)Lcom/panasonic/avc/cng/application/e;
+.method static synthetic a(Lcom/panasonic/avc/cng/view/common/e$b;Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportViewModel;)Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportViewModel;
     .locals 0
 
     .prologue
     .line 1329
-    iput-object p1, p0, Lcom/panasonic/avc/cng/view/common/e$b;->b:Lcom/panasonic/avc/cng/application/e;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/view/common/e$b;->b:Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportViewModel;
 
     return-object p1
 .end method

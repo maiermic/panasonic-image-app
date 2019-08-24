@@ -15,13 +15,13 @@
 # static fields
 .field private static A:Lcom/panasonic/avc/cng/view/setting/ap;
 
-.field private static B:Lcom/panasonic/avc/cng/view/setting/ac;
+.field private static B:Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionMovieMakingViewModel;
 
 .field private static C:Lcom/panasonic/avc/cng/view/setting/ab;
 
-.field private static D:Lcom/panasonic/avc/cng/view/setting/ad;
+.field private static D:Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionSmartOperationViewModel;
 
-.field private static E:Lcom/panasonic/avc/cng/view/cameraconnect/e;
+.field private static E:Lcom/panasonic/avc/cng/view/cameraconnect/CameraConnectViewModel;
 
 .field private static a:Lcom/panasonic/avc/cng/view/liveview/m;
 
@@ -33,15 +33,15 @@
 
 .field private static e:Lcom/panasonic/avc/cng/view/liveview/e;
 
-.field private static f:Lcom/panasonic/avc/cng/view/liveview/n;
+.field private static f:Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;
 
-.field private static g:Lcom/panasonic/avc/cng/view/setting/ax;
+.field private static g:Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;
 
 .field private static h:Lcom/panasonic/avc/cng/view/setting/af;
 
 .field private static i:Lcom/panasonic/avc/cng/view/setting/ae;
 
-.field private static j:Lcom/panasonic/avc/cng/view/threebox/c;
+.field private static j:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;
 
 .field private static k:Lcom/panasonic/avc/cng/view/smartoperation/a;
 
@@ -49,11 +49,11 @@
 
 .field private static m:Lcom/panasonic/avc/cng/view/setting/ai;
 
-.field private static n:Lcom/panasonic/avc/cng/view/setting/g;
+.field private static n:Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;
 
 .field private static o:Lcom/panasonic/avc/cng/view/setting/ah;
 
-.field private static p:Lcom/panasonic/avc/cng/view/smartoperation/i;
+.field private static p:Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;
 
 .field private static q:Lcom/panasonic/avc/cng/view/setting/f;
 
@@ -83,9 +83,9 @@
     .end annotation
 .end field
 
-.field private static v:Lcom/panasonic/avc/cng/view/geotag/b;
+.field private static v:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-.field private static w:Lcom/panasonic/avc/cng/view/common/d;
+.field private static w:Lcom/panasonic/avc/cng/view/common/TouchShareViewModel;
 
 .field private static x:Lcom/panasonic/avc/cng/view/setting/ao;
 
@@ -117,10 +117,10 @@
     sput-object v1, Lcom/panasonic/avc/cng/view/common/e;->e:Lcom/panasonic/avc/cng/view/liveview/e;
 
     .line 78
-    sput-object v1, Lcom/panasonic/avc/cng/view/common/e;->f:Lcom/panasonic/avc/cng/view/liveview/n;
+    sput-object v1, Lcom/panasonic/avc/cng/view/common/e;->f:Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;
 
     .line 79
-    sput-object v1, Lcom/panasonic/avc/cng/view/common/e;->g:Lcom/panasonic/avc/cng/view/setting/ax;
+    sput-object v1, Lcom/panasonic/avc/cng/view/common/e;->g:Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;
 
     .line 80
     sput-object v1, Lcom/panasonic/avc/cng/view/common/e;->h:Lcom/panasonic/avc/cng/view/setting/af;
@@ -129,7 +129,7 @@
     sput-object v1, Lcom/panasonic/avc/cng/view/common/e;->i:Lcom/panasonic/avc/cng/view/setting/ae;
 
     .line 82
-    sput-object v1, Lcom/panasonic/avc/cng/view/common/e;->j:Lcom/panasonic/avc/cng/view/threebox/c;
+    sput-object v1, Lcom/panasonic/avc/cng/view/common/e;->j:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;
 
     .line 83
     sput-object v1, Lcom/panasonic/avc/cng/view/common/e;->k:Lcom/panasonic/avc/cng/view/smartoperation/a;
@@ -141,13 +141,13 @@
     sput-object v1, Lcom/panasonic/avc/cng/view/common/e;->m:Lcom/panasonic/avc/cng/view/setting/ai;
 
     .line 86
-    sput-object v1, Lcom/panasonic/avc/cng/view/common/e;->n:Lcom/panasonic/avc/cng/view/setting/g;
+    sput-object v1, Lcom/panasonic/avc/cng/view/common/e;->n:Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;
 
     .line 87
     sput-object v1, Lcom/panasonic/avc/cng/view/common/e;->o:Lcom/panasonic/avc/cng/view/setting/ah;
 
     .line 89
-    sput-object v1, Lcom/panasonic/avc/cng/view/common/e;->p:Lcom/panasonic/avc/cng/view/smartoperation/i;
+    sput-object v1, Lcom/panasonic/avc/cng/view/common/e;->p:Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;
 
     .line 91
     sput-object v1, Lcom/panasonic/avc/cng/view/common/e;->q:Lcom/panasonic/avc/cng/view/setting/f;
@@ -173,10 +173,10 @@
     sput-object v0, Lcom/panasonic/avc/cng/view/common/e;->u:Ljava/util/List;
 
     .line 99
-    sput-object v1, Lcom/panasonic/avc/cng/view/common/e;->v:Lcom/panasonic/avc/cng/view/geotag/b;
+    sput-object v1, Lcom/panasonic/avc/cng/view/common/e;->v:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
     .line 101
-    sput-object v1, Lcom/panasonic/avc/cng/view/common/e;->w:Lcom/panasonic/avc/cng/view/common/d;
+    sput-object v1, Lcom/panasonic/avc/cng/view/common/e;->w:Lcom/panasonic/avc/cng/view/common/TouchShareViewModel;
 
     .line 102
     sput-object v1, Lcom/panasonic/avc/cng/view/common/e;->x:Lcom/panasonic/avc/cng/view/setting/ao;
@@ -191,21 +191,21 @@
     sput-object v1, Lcom/panasonic/avc/cng/view/common/e;->A:Lcom/panasonic/avc/cng/view/setting/ap;
 
     .line 107
-    sput-object v1, Lcom/panasonic/avc/cng/view/common/e;->B:Lcom/panasonic/avc/cng/view/setting/ac;
+    sput-object v1, Lcom/panasonic/avc/cng/view/common/e;->B:Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionMovieMakingViewModel;
 
     .line 109
     sput-object v1, Lcom/panasonic/avc/cng/view/common/e;->C:Lcom/panasonic/avc/cng/view/setting/ab;
 
     .line 110
-    sput-object v1, Lcom/panasonic/avc/cng/view/common/e;->D:Lcom/panasonic/avc/cng/view/setting/ad;
+    sput-object v1, Lcom/panasonic/avc/cng/view/common/e;->D:Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionSmartOperationViewModel;
 
     .line 112
-    sput-object v1, Lcom/panasonic/avc/cng/view/common/e;->E:Lcom/panasonic/avc/cng/view/cameraconnect/e;
+    sput-object v1, Lcom/panasonic/avc/cng/view/common/e;->E:Lcom/panasonic/avc/cng/view/cameraconnect/CameraConnectViewModel;
 
     return-void
 .end method
 
-.method public static a(Ljava/lang/String;Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/model/service/o$a;Lcom/panasonic/avc/cng/application/c$e;B)Lcom/panasonic/avc/cng/application/c;
+.method public static a(Ljava/lang/String;Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/model/service/o$a;Lcom/panasonic/avc/cng/application/c$e;B)Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
     .locals 7
 
     .prologue
@@ -262,7 +262,7 @@
     invoke-interface {v0, v6}, Ljava/util/List;->remove(Ljava/lang/Object;)Z
 
     .line 1127
-    invoke-static {v6}, Lcom/panasonic/avc/cng/view/common/e$a;->a(Lcom/panasonic/avc/cng/view/common/e$a;)Lcom/panasonic/avc/cng/application/c;
+    invoke-static {v6}, Lcom/panasonic/avc/cng/view/common/e$a;->a(Lcom/panasonic/avc/cng/view/common/e$a;)Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
     move-result-object v0
 
@@ -276,10 +276,10 @@
 
     move v5, p5
 
-    invoke-virtual/range {v0 .. v5}, Lcom/panasonic/avc/cng/application/c;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/model/service/o$a;Lcom/panasonic/avc/cng/application/c$e;B)V
+    invoke-virtual/range {v0 .. v5}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/model/service/o$a;Lcom/panasonic/avc/cng/application/c$e;B)V
 
     .line 1129
-    invoke-static {v6}, Lcom/panasonic/avc/cng/view/common/e$a;->a(Lcom/panasonic/avc/cng/view/common/e$a;)Lcom/panasonic/avc/cng/application/c;
+    invoke-static {v6}, Lcom/panasonic/avc/cng/view/common/e$a;->a(Lcom/panasonic/avc/cng/view/common/e$a;)Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
     move-result-object v0
 
@@ -291,7 +291,7 @@
     goto :goto_0
 .end method
 
-.method public static a(Ljava/lang/String;Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/model/service/u$a;Lcom/panasonic/avc/cng/application/e$e;)Lcom/panasonic/avc/cng/application/e;
+.method public static a(Ljava/lang/String;Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/model/service/u$a;Lcom/panasonic/avc/cng/application/e$e;)Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportViewModel;
     .locals 4
 
     .prologue
@@ -346,14 +346,14 @@
     invoke-interface {v1, v0}, Ljava/util/List;->remove(Ljava/lang/Object;)Z
 
     .line 1236
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/e$b;->a(Lcom/panasonic/avc/cng/view/common/e$b;)Lcom/panasonic/avc/cng/application/e;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/e$b;->a(Lcom/panasonic/avc/cng/view/common/e$b;)Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportViewModel;
 
     move-result-object v1
 
-    invoke-virtual {v1, p1, p2, p3, p4}, Lcom/panasonic/avc/cng/application/e;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/model/service/u$a;Lcom/panasonic/avc/cng/application/e$e;)V
+    invoke-virtual {v1, p1, p2, p3, p4}, Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportViewModel;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/model/service/u$a;Lcom/panasonic/avc/cng/application/e$e;)V
 
     .line 1238
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/e$b;->a(Lcom/panasonic/avc/cng/view/common/e$b;)Lcom/panasonic/avc/cng/application/e;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/e$b;->a(Lcom/panasonic/avc/cng/view/common/e$b;)Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportViewModel;
 
     move-result-object v0
 
@@ -365,69 +365,69 @@
     goto :goto_0
 .end method
 
-.method public static a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/cameraconnect/e$a;)Lcom/panasonic/avc/cng/view/cameraconnect/e;
+.method public static a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/cameraconnect/e$a;)Lcom/panasonic/avc/cng/view/cameraconnect/CameraConnectViewModel;
     .locals 2
 
     .prologue
     .line 1690
-    sget-object v0, Lcom/panasonic/avc/cng/view/common/e;->E:Lcom/panasonic/avc/cng/view/cameraconnect/e;
+    sget-object v0, Lcom/panasonic/avc/cng/view/common/e;->E:Lcom/panasonic/avc/cng/view/cameraconnect/CameraConnectViewModel;
 
     .line 1692
     const/4 v1, 0x0
 
-    sput-object v1, Lcom/panasonic/avc/cng/view/common/e;->E:Lcom/panasonic/avc/cng/view/cameraconnect/e;
+    sput-object v1, Lcom/panasonic/avc/cng/view/common/e;->E:Lcom/panasonic/avc/cng/view/cameraconnect/CameraConnectViewModel;
 
     .line 1694
     if-eqz v0, :cond_0
 
     .line 1696
-    invoke-virtual {v0, p0, p1, p2}, Lcom/panasonic/avc/cng/view/cameraconnect/e;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/cameraconnect/e$a;)V
+    invoke-virtual {v0, p0, p1, p2}, Lcom/panasonic/avc/cng/view/cameraconnect/CameraConnectViewModel;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/cameraconnect/e$a;)V
 
     .line 1699
     :cond_0
     return-object v0
 .end method
 
-.method public static a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/common/d$b;)Lcom/panasonic/avc/cng/view/common/d;
+.method public static a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/common/d$b;)Lcom/panasonic/avc/cng/view/common/TouchShareViewModel;
     .locals 2
 
     .prologue
     .line 1387
-    sget-object v0, Lcom/panasonic/avc/cng/view/common/e;->w:Lcom/panasonic/avc/cng/view/common/d;
+    sget-object v0, Lcom/panasonic/avc/cng/view/common/e;->w:Lcom/panasonic/avc/cng/view/common/TouchShareViewModel;
 
     .line 1389
     const/4 v1, 0x0
 
-    sput-object v1, Lcom/panasonic/avc/cng/view/common/e;->w:Lcom/panasonic/avc/cng/view/common/d;
+    sput-object v1, Lcom/panasonic/avc/cng/view/common/e;->w:Lcom/panasonic/avc/cng/view/common/TouchShareViewModel;
 
     .line 1391
     if-eqz v0, :cond_0
 
     .line 1393
-    invoke-virtual {v0, p0, p1, p2}, Lcom/panasonic/avc/cng/view/common/d;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/common/d$b;)V
+    invoke-virtual {v0, p0, p1, p2}, Lcom/panasonic/avc/cng/view/common/TouchShareViewModel;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/common/d$b;)V
 
     .line 1396
     :cond_0
     return-object v0
 .end method
 
-.method public static a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/geotag/b$b;)Lcom/panasonic/avc/cng/view/geotag/b;
+.method public static a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/geotag/b$b;)Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
     .locals 2
 
     .prologue
     .line 1362
-    sget-object v0, Lcom/panasonic/avc/cng/view/common/e;->v:Lcom/panasonic/avc/cng/view/geotag/b;
+    sget-object v0, Lcom/panasonic/avc/cng/view/common/e;->v:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
     .line 1364
     const/4 v1, 0x0
 
-    sput-object v1, Lcom/panasonic/avc/cng/view/common/e;->v:Lcom/panasonic/avc/cng/view/geotag/b;
+    sput-object v1, Lcom/panasonic/avc/cng/view/common/e;->v:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
     .line 1366
     if-eqz v0, :cond_0
 
     .line 1368
-    invoke-virtual {v0, p0, p1, p2}, Lcom/panasonic/avc/cng/view/geotag/b;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/geotag/b$b;)V
+    invoke-virtual {v0, p0, p1, p2}, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/geotag/b$b;)V
 
     .line 1371
     :cond_0
@@ -506,12 +506,12 @@
     return-object v0
 .end method
 
-.method public static a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/liveview/n$c;Lcom/panasonic/avc/cng/model/service/j$a;Lcom/panasonic/avc/cng/model/service/j$d;)Lcom/panasonic/avc/cng/view/liveview/n;
+.method public static a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/liveview/n$c;Lcom/panasonic/avc/cng/model/service/j$a;Lcom/panasonic/avc/cng/model/service/j$d;)Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;
     .locals 6
 
     .prologue
     .line 868
-    sget-object v0, Lcom/panasonic/avc/cng/view/common/e;->f:Lcom/panasonic/avc/cng/view/liveview/n;
+    sget-object v0, Lcom/panasonic/avc/cng/view/common/e;->f:Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;
 
     .line 872
     if-eqz v0, :cond_0
@@ -527,7 +527,7 @@
     move-object v5, p4
 
     .line 874
-    invoke-virtual/range {v0 .. v5}, Lcom/panasonic/avc/cng/view/liveview/n;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/liveview/n$c;Lcom/panasonic/avc/cng/model/service/j$a;Lcom/panasonic/avc/cng/model/service/j$d;)V
+    invoke-virtual/range {v0 .. v5}, Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/liveview/n$c;Lcom/panasonic/avc/cng/model/service/j$a;Lcom/panasonic/avc/cng/model/service/j$d;)V
 
     .line 877
     :cond_0
@@ -552,41 +552,41 @@
     return-object v0
 .end method
 
-.method public static a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/setting/ac$b;Lcom/panasonic/avc/cng/view/setting/ac$c;)Lcom/panasonic/avc/cng/view/setting/ac;
+.method public static a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/setting/ac$b;Lcom/panasonic/avc/cng/view/setting/ac$c;)Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionMovieMakingViewModel;
     .locals 2
 
     .prologue
     .line 1582
-    sget-object v0, Lcom/panasonic/avc/cng/view/common/e;->B:Lcom/panasonic/avc/cng/view/setting/ac;
+    sget-object v0, Lcom/panasonic/avc/cng/view/common/e;->B:Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionMovieMakingViewModel;
 
     .line 1584
     const/4 v1, 0x0
 
-    sput-object v1, Lcom/panasonic/avc/cng/view/common/e;->B:Lcom/panasonic/avc/cng/view/setting/ac;
+    sput-object v1, Lcom/panasonic/avc/cng/view/common/e;->B:Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionMovieMakingViewModel;
 
     .line 1586
     if-eqz v0, :cond_0
 
     .line 1588
-    invoke-virtual {v0, p0, p1, p2, p3}, Lcom/panasonic/avc/cng/view/setting/ac;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/setting/ac$b;Lcom/panasonic/avc/cng/view/setting/ac$c;)V
+    invoke-virtual {v0, p0, p1, p2, p3}, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionMovieMakingViewModel;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/setting/ac$b;Lcom/panasonic/avc/cng/view/setting/ac$c;)V
 
     .line 1591
     :cond_0
     return-object v0
 .end method
 
-.method public static a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/parts/t$e;Lcom/panasonic/avc/cng/view/smartoperation/d;)Lcom/panasonic/avc/cng/view/setting/ad;
+.method public static a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/parts/t$e;Lcom/panasonic/avc/cng/view/smartoperation/d;)Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionSmartOperationViewModel;
     .locals 1
 
     .prologue
     .line 1654
-    sget-object v0, Lcom/panasonic/avc/cng/view/common/e;->D:Lcom/panasonic/avc/cng/view/setting/ad;
+    sget-object v0, Lcom/panasonic/avc/cng/view/common/e;->D:Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionSmartOperationViewModel;
 
     .line 1658
     if-eqz v0, :cond_0
 
     .line 1660
-    invoke-virtual {v0, p0, p1, p2, p3}, Lcom/panasonic/avc/cng/view/setting/ad;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/parts/t$e;Lcom/panasonic/avc/cng/view/smartoperation/d;)V
+    invoke-virtual {v0, p0, p1, p2, p3}, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionSmartOperationViewModel;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/parts/t$e;Lcom/panasonic/avc/cng/view/smartoperation/d;)V
 
     .line 1663
     :cond_0
@@ -657,36 +657,36 @@
     return-object v0
 .end method
 
-.method public static a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/parts/t$e;Lcom/panasonic/avc/cng/view/setting/ax$c;)Lcom/panasonic/avc/cng/view/setting/ax;
+.method public static a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/parts/t$e;Lcom/panasonic/avc/cng/view/setting/ax$c;)Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;
     .locals 1
 
     .prologue
     .line 906
-    sget-object v0, Lcom/panasonic/avc/cng/view/common/e;->g:Lcom/panasonic/avc/cng/view/setting/ax;
+    sget-object v0, Lcom/panasonic/avc/cng/view/common/e;->g:Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;
 
     .line 908
     if-eqz v0, :cond_0
 
     .line 910
-    invoke-virtual {v0, p0, p1, p2, p3}, Lcom/panasonic/avc/cng/view/setting/ax;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/parts/t$e;Lcom/panasonic/avc/cng/view/setting/ax$c;)V
+    invoke-virtual {v0, p0, p1, p2, p3}, Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/parts/t$e;Lcom/panasonic/avc/cng/view/setting/ax$c;)V
 
     .line 913
     :cond_0
     return-object v0
 .end method
 
-.method public static a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/setting/g$d;)Lcom/panasonic/avc/cng/view/setting/g;
+.method public static a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/setting/g$d;)Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;
     .locals 1
 
     .prologue
     .line 1045
-    sget-object v0, Lcom/panasonic/avc/cng/view/common/e;->n:Lcom/panasonic/avc/cng/view/setting/g;
+    sget-object v0, Lcom/panasonic/avc/cng/view/common/e;->n:Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;
 
     .line 1049
     if-eqz v0, :cond_0
 
     .line 1051
-    invoke-virtual {v0, p0, p1, p2}, Lcom/panasonic/avc/cng/view/setting/g;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/setting/g$d;)V
+    invoke-virtual {v0, p0, p1, p2}, Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/setting/g$d;)V
 
     .line 1054
     :cond_0
@@ -729,17 +729,17 @@
     return-object v0
 .end method
 
-.method public static a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/smartoperation/i$b;Lcom/panasonic/avc/cng/view/smartoperation/i$b;Lcom/panasonic/avc/cng/model/b/c$a;)Lcom/panasonic/avc/cng/view/smartoperation/i;
+.method public static a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/smartoperation/i$b;Lcom/panasonic/avc/cng/view/smartoperation/i$b;Lcom/panasonic/avc/cng/model/b/c$a;)Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;
     .locals 6
 
     .prologue
     .line 1269
-    sget-object v0, Lcom/panasonic/avc/cng/view/common/e;->p:Lcom/panasonic/avc/cng/view/smartoperation/i;
+    sget-object v0, Lcom/panasonic/avc/cng/view/common/e;->p:Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;
 
     .line 1271
     const/4 v1, 0x0
 
-    sput-object v1, Lcom/panasonic/avc/cng/view/common/e;->p:Lcom/panasonic/avc/cng/view/smartoperation/i;
+    sput-object v1, Lcom/panasonic/avc/cng/view/common/e;->p:Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;
 
     .line 1273
     if-eqz v0, :cond_0
@@ -755,25 +755,25 @@
     move-object v5, p4
 
     .line 1275
-    invoke-virtual/range {v0 .. v5}, Lcom/panasonic/avc/cng/view/smartoperation/i;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/smartoperation/i$b;Lcom/panasonic/avc/cng/view/smartoperation/i$b;Lcom/panasonic/avc/cng/model/b/c$a;)V
+    invoke-virtual/range {v0 .. v5}, Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/smartoperation/i$b;Lcom/panasonic/avc/cng/view/smartoperation/i$b;Lcom/panasonic/avc/cng/model/b/c$a;)V
 
     .line 1278
     :cond_0
     return-object v0
 .end method
 
-.method public static a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/threebox/c$b;)Lcom/panasonic/avc/cng/view/threebox/c;
+.method public static a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/threebox/c$b;)Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;
     .locals 1
 
     .prologue
     .line 972
-    sget-object v0, Lcom/panasonic/avc/cng/view/common/e;->j:Lcom/panasonic/avc/cng/view/threebox/c;
+    sget-object v0, Lcom/panasonic/avc/cng/view/common/e;->j:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;
 
     .line 976
     if-eqz v0, :cond_0
 
     .line 978
-    invoke-virtual {v0, p0, p1, p2}, Lcom/panasonic/avc/cng/view/threebox/c;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/threebox/c$b;)V
+    invoke-virtual {v0, p0, p1, p2}, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/threebox/c$b;)V
 
     .line 981
     :cond_0
@@ -796,7 +796,7 @@
 
     const-string v1, "_lumixViewVM != null"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 124
     sget-object v0, Lcom/panasonic/avc/cng/view/common/e;->a:Lcom/panasonic/avc/cng/view/liveview/m;
@@ -817,7 +817,7 @@
 
     const-string v1, "_lumixMirrorlessVM != null"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 131
     sget-object v0, Lcom/panasonic/avc/cng/view/common/e;->b:Lcom/panasonic/avc/cng/view/liveview/k;
@@ -838,7 +838,7 @@
 
     const-string v1, "_lumixMirrorlessStopMotionVM != null"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 138
     sget-object v0, Lcom/panasonic/avc/cng/view/common/e;->c:Lcom/panasonic/avc/cng/view/liveview/j;
@@ -859,7 +859,7 @@
 
     const-string v1, "_lumixStopMotionVM != null"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 145
     sget-object v0, Lcom/panasonic/avc/cng/view/common/e;->d:Lcom/panasonic/avc/cng/view/liveview/l;
@@ -880,7 +880,7 @@
 
     const-string v1, "_lumixBaseVM != null"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 168
     sget-object v0, Lcom/panasonic/avc/cng/view/common/e;->e:Lcom/panasonic/avc/cng/view/liveview/e;
@@ -892,7 +892,7 @@
 
     .line 172
     :cond_4
-    sget-object v0, Lcom/panasonic/avc/cng/view/common/e;->f:Lcom/panasonic/avc/cng/view/liveview/n;
+    sget-object v0, Lcom/panasonic/avc/cng/view/common/e;->f:Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;
 
     if-eqz v0, :cond_5
 
@@ -901,19 +901,19 @@
 
     const-string v1, "_noConnectionViewVM != null"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 175
-    sget-object v0, Lcom/panasonic/avc/cng/view/common/e;->f:Lcom/panasonic/avc/cng/view/liveview/n;
+    sget-object v0, Lcom/panasonic/avc/cng/view/common/e;->f:Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/liveview/n;->a()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;->a()V
 
     .line 176
-    sput-object v3, Lcom/panasonic/avc/cng/view/common/e;->f:Lcom/panasonic/avc/cng/view/liveview/n;
+    sput-object v3, Lcom/panasonic/avc/cng/view/common/e;->f:Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;
 
     .line 179
     :cond_5
-    sget-object v0, Lcom/panasonic/avc/cng/view/common/e;->g:Lcom/panasonic/avc/cng/view/setting/ax;
+    sget-object v0, Lcom/panasonic/avc/cng/view/common/e;->g:Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;
 
     if-eqz v0, :cond_6
 
@@ -922,15 +922,15 @@
 
     const-string v1, "_smartOperationStopMotionVM != null"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 182
-    sget-object v0, Lcom/panasonic/avc/cng/view/common/e;->g:Lcom/panasonic/avc/cng/view/setting/ax;
+    sget-object v0, Lcom/panasonic/avc/cng/view/common/e;->g:Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/ax;->a()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;->a()V
 
     .line 183
-    sput-object v3, Lcom/panasonic/avc/cng/view/common/e;->g:Lcom/panasonic/avc/cng/view/setting/ax;
+    sput-object v3, Lcom/panasonic/avc/cng/view/common/e;->g:Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;
 
     .line 186
     :cond_6
@@ -943,7 +943,7 @@
 
     const-string v1, "_uploadContentsVM != null"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 189
     sget-object v0, Lcom/panasonic/avc/cng/view/common/e;->h:Lcom/panasonic/avc/cng/view/setting/af;
@@ -964,7 +964,7 @@
 
     const-string v1, "_picmateVM != null"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 196
     sget-object v0, Lcom/panasonic/avc/cng/view/common/e;->i:Lcom/panasonic/avc/cng/view/setting/ae;
@@ -976,7 +976,7 @@
 
     .line 200
     :cond_8
-    sget-object v0, Lcom/panasonic/avc/cng/view/common/e;->j:Lcom/panasonic/avc/cng/view/threebox/c;
+    sget-object v0, Lcom/panasonic/avc/cng/view/common/e;->j:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;
 
     if-eqz v0, :cond_9
 
@@ -985,15 +985,15 @@
 
     const-string v1, "_threeBoxVM != null"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 203
-    sget-object v0, Lcom/panasonic/avc/cng/view/common/e;->j:Lcom/panasonic/avc/cng/view/threebox/c;
+    sget-object v0, Lcom/panasonic/avc/cng/view/common/e;->j:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/threebox/c;->a()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;->a()V
 
     .line 204
-    sput-object v3, Lcom/panasonic/avc/cng/view/common/e;->j:Lcom/panasonic/avc/cng/view/threebox/c;
+    sput-object v3, Lcom/panasonic/avc/cng/view/common/e;->j:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;
 
     .line 207
     :cond_9
@@ -1006,7 +1006,7 @@
 
     const-string v1, "_contentPlayerVM != null"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 210
     sget-object v0, Lcom/panasonic/avc/cng/view/common/e;->k:Lcom/panasonic/avc/cng/view/smartoperation/a;
@@ -1027,7 +1027,7 @@
 
     const-string v1, "_remoteWatchConnectVM != null"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 217
     sget-object v0, Lcom/panasonic/avc/cng/view/common/e;->l:Lcom/panasonic/avc/cng/view/setting/aj;
@@ -1048,7 +1048,7 @@
 
     const-string v1, "_registServiceVM != null"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 224
     sget-object v0, Lcom/panasonic/avc/cng/view/common/e;->m:Lcom/panasonic/avc/cng/view/setting/ai;
@@ -1060,7 +1060,7 @@
 
     .line 228
     :cond_c
-    sget-object v0, Lcom/panasonic/avc/cng/view/common/e;->n:Lcom/panasonic/avc/cng/view/setting/g;
+    sget-object v0, Lcom/panasonic/avc/cng/view/common/e;->n:Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;
 
     if-eqz v0, :cond_d
 
@@ -1069,15 +1069,15 @@
 
     const-string v1, "_connectSettingVM != null"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 231
-    sget-object v0, Lcom/panasonic/avc/cng/view/common/e;->n:Lcom/panasonic/avc/cng/view/setting/g;
+    sget-object v0, Lcom/panasonic/avc/cng/view/common/e;->n:Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/g;->a()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;->a()V
 
     .line 232
-    sput-object v3, Lcom/panasonic/avc/cng/view/common/e;->n:Lcom/panasonic/avc/cng/view/setting/g;
+    sput-object v3, Lcom/panasonic/avc/cng/view/common/e;->n:Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;
 
     .line 235
     :cond_d
@@ -1090,7 +1090,7 @@
 
     const-string v1, "_registEquipmentVM != null"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 238
     sget-object v0, Lcom/panasonic/avc/cng/view/common/e;->o:Lcom/panasonic/avc/cng/view/setting/ah;
@@ -1102,7 +1102,7 @@
 
     .line 249
     :cond_e
-    sget-object v0, Lcom/panasonic/avc/cng/view/common/e;->p:Lcom/panasonic/avc/cng/view/smartoperation/i;
+    sget-object v0, Lcom/panasonic/avc/cng/view/common/e;->p:Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;
 
     if-eqz v0, :cond_f
 
@@ -1111,15 +1111,15 @@
 
     const-string v1, "_pictureJumpVM != null"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 252
-    sget-object v0, Lcom/panasonic/avc/cng/view/common/e;->p:Lcom/panasonic/avc/cng/view/smartoperation/i;
+    sget-object v0, Lcom/panasonic/avc/cng/view/common/e;->p:Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/smartoperation/i;->a()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;->a()V
 
     .line 253
-    sput-object v3, Lcom/panasonic/avc/cng/view/common/e;->p:Lcom/panasonic/avc/cng/view/smartoperation/i;
+    sput-object v3, Lcom/panasonic/avc/cng/view/common/e;->p:Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;
 
     .line 256
     :cond_f
@@ -1132,7 +1132,7 @@
 
     const-string v1, "_cloudSyncroVM != null"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 259
     sget-object v0, Lcom/panasonic/avc/cng/view/common/e;->q:Lcom/panasonic/avc/cng/view/setting/f;
@@ -1153,7 +1153,7 @@
 
     const-string v1, "_picmateUploadVM != null"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 266
     sget-object v0, Lcom/panasonic/avc/cng/view/common/e;->r:Lcom/panasonic/avc/cng/view/smartoperation/h;
@@ -1182,7 +1182,7 @@
 
     const-string v1, "_nfcSupportVMList != empty"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 273
     sget-object v0, Lcom/panasonic/avc/cng/view/common/e;->s:Ljava/util/List;
@@ -1206,18 +1206,18 @@
     check-cast v0, Lcom/panasonic/avc/cng/view/common/e$a;
 
     .line 275
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/e$a;->a(Lcom/panasonic/avc/cng/view/common/e$a;)Lcom/panasonic/avc/cng/application/c;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/e$a;->a(Lcom/panasonic/avc/cng/view/common/e$a;)Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
     move-result-object v2
 
     if-eqz v2, :cond_12
 
     .line 277
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/e$a;->a(Lcom/panasonic/avc/cng/view/common/e$a;)Lcom/panasonic/avc/cng/application/c;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/e$a;->a(Lcom/panasonic/avc/cng/view/common/e$a;)Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/application/c;->a()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->a()V
 
     goto :goto_0
 
@@ -1238,7 +1238,7 @@
 
     const-string v1, "_nfcFirstTouchVM != null"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 286
     sget-object v0, Lcom/panasonic/avc/cng/view/common/e;->t:Lcom/panasonic/avc/cng/view/common/b;
@@ -1267,7 +1267,7 @@
 
     const-string v1, "_remoteWatchNfcSupportVMList != empty"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 293
     sget-object v0, Lcom/panasonic/avc/cng/view/common/e;->u:Ljava/util/List;
@@ -1291,18 +1291,18 @@
     check-cast v0, Lcom/panasonic/avc/cng/view/common/e$b;
 
     .line 295
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/e$b;->a(Lcom/panasonic/avc/cng/view/common/e$b;)Lcom/panasonic/avc/cng/application/e;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/e$b;->a(Lcom/panasonic/avc/cng/view/common/e$b;)Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportViewModel;
 
     move-result-object v2
 
     if-eqz v2, :cond_16
 
     .line 297
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/e$b;->a(Lcom/panasonic/avc/cng/view/common/e$b;)Lcom/panasonic/avc/cng/application/e;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/e$b;->a(Lcom/panasonic/avc/cng/view/common/e$b;)Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportViewModel;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/application/e;->a()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportViewModel;->a()V
 
     goto :goto_1
 
@@ -1314,7 +1314,7 @@
 
     .line 303
     :cond_18
-    sget-object v0, Lcom/panasonic/avc/cng/view/common/e;->v:Lcom/panasonic/avc/cng/view/geotag/b;
+    sget-object v0, Lcom/panasonic/avc/cng/view/common/e;->v:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
     if-eqz v0, :cond_19
 
@@ -1323,19 +1323,19 @@
 
     const-string v1, "_geoTagVM != null"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 306
-    sget-object v0, Lcom/panasonic/avc/cng/view/common/e;->v:Lcom/panasonic/avc/cng/view/geotag/b;
+    sget-object v0, Lcom/panasonic/avc/cng/view/common/e;->v:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/geotag/b;->a()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->a()V
 
     .line 307
-    sput-object v3, Lcom/panasonic/avc/cng/view/common/e;->v:Lcom/panasonic/avc/cng/view/geotag/b;
+    sput-object v3, Lcom/panasonic/avc/cng/view/common/e;->v:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
     .line 310
     :cond_19
-    sget-object v0, Lcom/panasonic/avc/cng/view/common/e;->w:Lcom/panasonic/avc/cng/view/common/d;
+    sget-object v0, Lcom/panasonic/avc/cng/view/common/e;->w:Lcom/panasonic/avc/cng/view/common/TouchShareViewModel;
 
     if-eqz v0, :cond_1a
 
@@ -1344,15 +1344,15 @@
 
     const-string v1, "_touchShareVM != null"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 313
-    sget-object v0, Lcom/panasonic/avc/cng/view/common/e;->w:Lcom/panasonic/avc/cng/view/common/d;
+    sget-object v0, Lcom/panasonic/avc/cng/view/common/e;->w:Lcom/panasonic/avc/cng/view/common/TouchShareViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/common/d;->a()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/common/TouchShareViewModel;->a()V
 
     .line 314
-    sput-object v3, Lcom/panasonic/avc/cng/view/common/e;->w:Lcom/panasonic/avc/cng/view/common/d;
+    sput-object v3, Lcom/panasonic/avc/cng/view/common/e;->w:Lcom/panasonic/avc/cng/view/common/TouchShareViewModel;
 
     .line 317
     :cond_1a
@@ -1365,7 +1365,7 @@
 
     const-string v1, "_setupDateTime != null"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 320
     sget-object v0, Lcom/panasonic/avc/cng/view/common/e;->x:Lcom/panasonic/avc/cng/view/setting/ao;
@@ -1386,7 +1386,7 @@
 
     const-string v1, "_setupConnectSettingVM1 != null"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 327
     sget-object v0, Lcom/panasonic/avc/cng/view/common/e;->y:Lcom/panasonic/avc/cng/view/setting/an;
@@ -1407,7 +1407,7 @@
 
     const-string v1, "_setupConnectSettingVM2 != null"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 334
     sget-object v0, Lcom/panasonic/avc/cng/view/common/e;->z:Lcom/panasonic/avc/cng/view/setting/an;
@@ -1428,7 +1428,7 @@
 
     const-string v1, "_setupWearbleSettingVM != null"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 341
     sget-object v0, Lcom/panasonic/avc/cng/view/common/e;->A:Lcom/panasonic/avc/cng/view/setting/ap;
@@ -1440,7 +1440,7 @@
 
     .line 345
     :cond_1e
-    sget-object v0, Lcom/panasonic/avc/cng/view/common/e;->B:Lcom/panasonic/avc/cng/view/setting/ac;
+    sget-object v0, Lcom/panasonic/avc/cng/view/common/e;->B:Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionMovieMakingViewModel;
 
     if-eqz v0, :cond_1f
 
@@ -1449,15 +1449,15 @@
 
     const-string v1, "_mirrorlessStopmotion != null"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 348
-    sget-object v0, Lcom/panasonic/avc/cng/view/common/e;->B:Lcom/panasonic/avc/cng/view/setting/ac;
+    sget-object v0, Lcom/panasonic/avc/cng/view/common/e;->B:Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionMovieMakingViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/ac;->a()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionMovieMakingViewModel;->a()V
 
     .line 349
-    sput-object v3, Lcom/panasonic/avc/cng/view/common/e;->B:Lcom/panasonic/avc/cng/view/setting/ac;
+    sput-object v3, Lcom/panasonic/avc/cng/view/common/e;->B:Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionMovieMakingViewModel;
 
     .line 352
     :cond_1f
@@ -1470,7 +1470,7 @@
 
     const-string v1, "_komadoriOneContentPreviewVM != null"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 355
     sget-object v0, Lcom/panasonic/avc/cng/view/common/e;->C:Lcom/panasonic/avc/cng/view/setting/ab;
@@ -1482,7 +1482,7 @@
 
     .line 359
     :cond_20
-    sget-object v0, Lcom/panasonic/avc/cng/view/common/e;->D:Lcom/panasonic/avc/cng/view/setting/ad;
+    sget-object v0, Lcom/panasonic/avc/cng/view/common/e;->D:Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionSmartOperationViewModel;
 
     if-eqz v0, :cond_21
 
@@ -1491,19 +1491,19 @@
 
     const-string v1, "_komadoriSmartOperationVM != null"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 362
-    sget-object v0, Lcom/panasonic/avc/cng/view/common/e;->D:Lcom/panasonic/avc/cng/view/setting/ad;
+    sget-object v0, Lcom/panasonic/avc/cng/view/common/e;->D:Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionSmartOperationViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/ad;->a()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionSmartOperationViewModel;->a()V
 
     .line 363
-    sput-object v3, Lcom/panasonic/avc/cng/view/common/e;->D:Lcom/panasonic/avc/cng/view/setting/ad;
+    sput-object v3, Lcom/panasonic/avc/cng/view/common/e;->D:Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionSmartOperationViewModel;
 
     .line 366
     :cond_21
-    sget-object v0, Lcom/panasonic/avc/cng/view/common/e;->E:Lcom/panasonic/avc/cng/view/cameraconnect/e;
+    sget-object v0, Lcom/panasonic/avc/cng/view/common/e;->E:Lcom/panasonic/avc/cng/view/cameraconnect/CameraConnectViewModel;
 
     if-eqz v0, :cond_22
 
@@ -1512,27 +1512,27 @@
 
     const-string v1, "_cameraConnectVM != null"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 369
-    sget-object v0, Lcom/panasonic/avc/cng/view/common/e;->E:Lcom/panasonic/avc/cng/view/cameraconnect/e;
+    sget-object v0, Lcom/panasonic/avc/cng/view/common/e;->E:Lcom/panasonic/avc/cng/view/cameraconnect/CameraConnectViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/cameraconnect/e;->a()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/cameraconnect/CameraConnectViewModel;->a()V
 
     .line 370
-    sput-object v3, Lcom/panasonic/avc/cng/view/common/e;->E:Lcom/panasonic/avc/cng/view/cameraconnect/e;
+    sput-object v3, Lcom/panasonic/avc/cng/view/common/e;->E:Lcom/panasonic/avc/cng/view/cameraconnect/CameraConnectViewModel;
 
     .line 372
     :cond_22
     return-void
 .end method
 
-.method public static a(Lcom/panasonic/avc/cng/view/cameraconnect/e;)V
+.method public static a(Lcom/panasonic/avc/cng/view/cameraconnect/CameraConnectViewModel;)V
     .locals 0
 
     .prologue
     .line 1674
-    sput-object p0, Lcom/panasonic/avc/cng/view/common/e;->E:Lcom/panasonic/avc/cng/view/cameraconnect/e;
+    sput-object p0, Lcom/panasonic/avc/cng/view/common/e;->E:Lcom/panasonic/avc/cng/view/cameraconnect/CameraConnectViewModel;
 
     .line 1675
     return-void
@@ -1549,23 +1549,23 @@
     return-void
 .end method
 
-.method public static a(Lcom/panasonic/avc/cng/view/common/d;)V
+.method public static a(Lcom/panasonic/avc/cng/view/common/TouchShareViewModel;)V
     .locals 0
 
     .prologue
     .line 1407
-    sput-object p0, Lcom/panasonic/avc/cng/view/common/e;->w:Lcom/panasonic/avc/cng/view/common/d;
+    sput-object p0, Lcom/panasonic/avc/cng/view/common/e;->w:Lcom/panasonic/avc/cng/view/common/TouchShareViewModel;
 
     .line 1408
     return-void
 .end method
 
-.method public static a(Lcom/panasonic/avc/cng/view/geotag/b;)V
+.method public static a(Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;)V
     .locals 0
 
     .prologue
     .line 1347
-    sput-object p0, Lcom/panasonic/avc/cng/view/common/e;->v:Lcom/panasonic/avc/cng/view/geotag/b;
+    sput-object p0, Lcom/panasonic/avc/cng/view/common/e;->v:Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
     .line 1348
     return-void
@@ -1626,12 +1626,12 @@
     return-void
 .end method
 
-.method public static a(Lcom/panasonic/avc/cng/view/liveview/n;)V
+.method public static a(Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;)V
     .locals 0
 
     .prologue
     .line 849
-    sput-object p0, Lcom/panasonic/avc/cng/view/common/e;->f:Lcom/panasonic/avc/cng/view/liveview/n;
+    sput-object p0, Lcom/panasonic/avc/cng/view/common/e;->f:Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;
 
     .line 850
     return-void
@@ -1648,23 +1648,23 @@
     return-void
 .end method
 
-.method public static a(Lcom/panasonic/avc/cng/view/setting/ac;)V
+.method public static a(Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionMovieMakingViewModel;)V
     .locals 0
 
     .prologue
     .line 1565
-    sput-object p0, Lcom/panasonic/avc/cng/view/common/e;->B:Lcom/panasonic/avc/cng/view/setting/ac;
+    sput-object p0, Lcom/panasonic/avc/cng/view/common/e;->B:Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionMovieMakingViewModel;
 
     .line 1566
     return-void
 .end method
 
-.method public static a(Lcom/panasonic/avc/cng/view/setting/ad;)V
+.method public static a(Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionSmartOperationViewModel;)V
     .locals 0
 
     .prologue
     .line 1638
-    sput-object p0, Lcom/panasonic/avc/cng/view/common/e;->D:Lcom/panasonic/avc/cng/view/setting/ad;
+    sput-object p0, Lcom/panasonic/avc/cng/view/common/e;->D:Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionSmartOperationViewModel;
 
     .line 1639
     return-void
@@ -1758,12 +1758,12 @@
     return-void
 .end method
 
-.method public static a(Lcom/panasonic/avc/cng/view/setting/ax;)V
+.method public static a(Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;)V
     .locals 0
 
     .prologue
     .line 889
-    sput-object p0, Lcom/panasonic/avc/cng/view/common/e;->g:Lcom/panasonic/avc/cng/view/setting/ax;
+    sput-object p0, Lcom/panasonic/avc/cng/view/common/e;->g:Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;
 
     .line 890
     return-void
@@ -1780,12 +1780,12 @@
     return-void
 .end method
 
-.method public static a(Lcom/panasonic/avc/cng/view/setting/g;)V
+.method public static a(Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;)V
     .locals 0
 
     .prologue
     .line 1030
-    sput-object p0, Lcom/panasonic/avc/cng/view/common/e;->n:Lcom/panasonic/avc/cng/view/setting/g;
+    sput-object p0, Lcom/panasonic/avc/cng/view/common/e;->n:Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;
 
     .line 1031
     return-void
@@ -1813,29 +1813,29 @@
     return-void
 .end method
 
-.method public static a(Lcom/panasonic/avc/cng/view/smartoperation/i;)V
+.method public static a(Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;)V
     .locals 0
 
     .prologue
     .line 1250
-    sput-object p0, Lcom/panasonic/avc/cng/view/common/e;->p:Lcom/panasonic/avc/cng/view/smartoperation/i;
+    sput-object p0, Lcom/panasonic/avc/cng/view/common/e;->p:Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;
 
     .line 1251
     return-void
 .end method
 
-.method public static a(Lcom/panasonic/avc/cng/view/threebox/c;)V
+.method public static a(Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;)V
     .locals 0
 
     .prologue
     .line 956
-    sput-object p0, Lcom/panasonic/avc/cng/view/common/e;->j:Lcom/panasonic/avc/cng/view/threebox/c;
+    sput-object p0, Lcom/panasonic/avc/cng/view/common/e;->j:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;
 
     .line 957
     return-void
 .end method
 
-.method public static a(Ljava/lang/String;Lcom/panasonic/avc/cng/application/c;)V
+.method public static a(Ljava/lang/String;Lcom/panasonic/avc/cng/application/NfcSupportViewModel;)V
     .locals 4
 
     .prologue
@@ -1900,7 +1900,7 @@
     invoke-static {v0, p0}, Lcom/panasonic/avc/cng/view/common/e$a;->a(Lcom/panasonic/avc/cng/view/common/e$a;Ljava/lang/String;)Ljava/lang/String;
 
     .line 1088
-    invoke-static {v0, p1}, Lcom/panasonic/avc/cng/view/common/e$a;->a(Lcom/panasonic/avc/cng/view/common/e$a;Lcom/panasonic/avc/cng/application/c;)Lcom/panasonic/avc/cng/application/c;
+    invoke-static {v0, p1}, Lcom/panasonic/avc/cng/view/common/e$a;->a(Lcom/panasonic/avc/cng/view/common/e$a;Lcom/panasonic/avc/cng/application/NfcSupportViewModel;)Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
     .line 1090
     sget-object v1, Lcom/panasonic/avc/cng/view/common/e;->s:Ljava/util/List;
@@ -1915,7 +1915,7 @@
     goto :goto_0
 .end method
 
-.method public static a(Ljava/lang/String;Lcom/panasonic/avc/cng/application/e;)V
+.method public static a(Ljava/lang/String;Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportViewModel;)V
     .locals 4
 
     .prologue
@@ -1980,7 +1980,7 @@
     invoke-static {v0, p0}, Lcom/panasonic/avc/cng/view/common/e$b;->a(Lcom/panasonic/avc/cng/view/common/e$b;Ljava/lang/String;)Ljava/lang/String;
 
     .line 1198
-    invoke-static {v0, p1}, Lcom/panasonic/avc/cng/view/common/e$b;->a(Lcom/panasonic/avc/cng/view/common/e$b;Lcom/panasonic/avc/cng/application/e;)Lcom/panasonic/avc/cng/application/e;
+    invoke-static {v0, p1}, Lcom/panasonic/avc/cng/view/common/e$b;->a(Lcom/panasonic/avc/cng/view/common/e$b;Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportViewModel;)Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportViewModel;
 
     .line 1200
     sget-object v1, Lcom/panasonic/avc/cng/view/common/e;->u:Ljava/util/List;

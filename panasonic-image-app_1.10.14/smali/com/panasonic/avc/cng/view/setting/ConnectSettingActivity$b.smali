@@ -81,7 +81,7 @@
 
     sget-object v1, Lcom/panasonic/avc/cng/view/b/b$a;->Y:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/b/d;->b(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;)Z
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->b(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;)Z
 
     move-result v0
 
@@ -90,7 +90,7 @@
     .line 573
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity$b;->a:Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b(Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;)Lcom/panasonic/avc/cng/view/setting/g;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b(Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;)Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;
 
     move-result-object v0
 
@@ -101,21 +101,21 @@
 
     const-string v1, "ImageAppViewModelListener: Restart"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 576
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity$b;->a:Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;)V
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;)V
 
     .line 578
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity$b;->a:Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b(Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;)Lcom/panasonic/avc/cng/view/setting/g;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b(Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;)Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/g;->d()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;->d()V
 
     .line 581
     :cond_0
@@ -142,7 +142,7 @@
     :sswitch_0
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity$b;->a:Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;)V
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;)V
 
     .line 594
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity$b;->a:Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;
@@ -159,7 +159,7 @@
     :sswitch_1
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity$b;->a:Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;)V
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;)V
 
     .line 598
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity$b;->a:Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;
@@ -178,7 +178,7 @@
     :sswitch_2
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity$b;->a:Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;)V
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;)V
 
     .line 605
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity$b;->a:Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;
@@ -226,7 +226,7 @@
     .line 614
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity$b;->a:Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;)V
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;)V
 
     .line 615
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity$b;->a:Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;
@@ -293,7 +293,7 @@
 
     sget-object v1, Lcom/panasonic/avc/cng/view/b/b$a;->fL:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {v0, v1, v5}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {v0, v1, v5}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     .line 663
     :cond_0
@@ -364,7 +364,7 @@
 
     sget-object v1, Lcom/panasonic/avc/cng/view/b/b$a;->fJ:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {v0, v1, v5}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {v0, v1, v5}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     goto :goto_0
 
@@ -422,7 +422,7 @@
 
     sget-object v1, Lcom/panasonic/avc/cng/view/b/b$a;->fK:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {v0, v1, v5}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {v0, v1, v5}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     goto :goto_0
 
@@ -457,7 +457,7 @@
     .line 559
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity$b;->a:Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;)V
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;)V
 
     .line 560
     return-void

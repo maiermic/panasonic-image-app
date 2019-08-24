@@ -43,7 +43,7 @@
     .line 482
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/smartoperation/h$3;->a:Lcom/panasonic/avc/cng/view/smartoperation/h;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/smartoperation/h;->m(Lcom/panasonic/avc/cng/view/smartoperation/h;)Lcom/panasonic/avc/cng/core/c/s;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/smartoperation/h;->m(Lcom/panasonic/avc/cng/view/smartoperation/h;)Lcom/panasonic/avc/cng/core/c/Picmate;
 
     move-result-object v0
 
@@ -52,13 +52,13 @@
     .line 483
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/smartoperation/h$3;->a:Lcom/panasonic/avc/cng/view/smartoperation/h;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/smartoperation/h;->n(Lcom/panasonic/avc/cng/view/smartoperation/h;)Lcom/panasonic/avc/cng/core/c/s;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/smartoperation/h;->n(Lcom/panasonic/avc/cng/view/smartoperation/h;)Lcom/panasonic/avc/cng/core/c/Picmate;
 
     move-result-object v0
 
     const/4 v1, 0x1
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/core/c/s;->a(Z)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/core/c/Picmate;->a(Z)V
 
     .line 485
     :cond_0

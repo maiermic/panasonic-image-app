@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/panasonic/avc/cng/view/liveview/movie/matanity/c;
+    value = Lcom/panasonic/avc/cng/view/liveview/movie/matanity/LiveViewMovieMatanityViewModel;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -24,7 +24,7 @@
 .method public abstract a(II)V
 .end method
 
-.method public abstract a(Lcom/panasonic/avc/cng/model/c/e;)V
+.method public abstract a(Lcom/panasonic/avc/cng/model/c/CameraStatus;)V
 .end method
 
 .method public abstract b()V

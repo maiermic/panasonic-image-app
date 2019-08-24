@@ -52,11 +52,11 @@
     .line 350
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionShotImageSelectionAnimeActivity$2;->a:Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionShotImageSelectionAnimeActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionShotImageSelectionAnimeActivity;->a(Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionShotImageSelectionAnimeActivity;)Lcom/panasonic/avc/cng/view/setting/ax;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionShotImageSelectionAnimeActivity;->a(Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionShotImageSelectionAnimeActivity;)Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;
 
     move-result-object v0
 
-    invoke-virtual {v0, p3}, Lcom/panasonic/avc/cng/view/setting/ax;->b(I)V
+    invoke-virtual {v0, p3}, Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;->b(I)V
 
     .line 351
     return-void

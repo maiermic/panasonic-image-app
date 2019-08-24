@@ -16,8 +16,8 @@ import android.preference.PreferenceManager;
 import android.telephony.TelephonyManager;
 import android.util.Log;
 import com.panasonic.avc.cng.model.C1712b;
-import com.panasonic.avc.cng.util.C2261g;
-import com.panasonic.avc.cng.view.cameraconnect.C2754l;
+import com.panasonic.avc.cng.util.ImageAppLog;
+import com.panasonic.avc.cng.view.cameraconnect.WifiUtil;
 import java.util.Iterator;
 import java.util.List;
 import java.util.UUID;
@@ -76,7 +76,7 @@ public class C2020c {
         int i = z ? 3 : 1;
         WifiManager wifiManager = (WifiManager) context.getSystemService("wifi");
         if (wifiManager.isWifiEnabled() == z) {
-            C2261g.m9763a("WiFiUtility", "isWifiEnableSame = " + String.valueOf(z));
+            ImageAppLog.debug("WiFiUtility", "isWifiEnableSame = " + String.valueOf(z));
             return true;
         }
         if (wifiManager.getWifiState() != i) {
@@ -115,30 +115,30 @@ public class C2020c {
             WifiInfo connectionInfo = ((WifiManager) context.getSystemService("wifi")).getConnectionInfo();
             if (connectionInfo != null) {
                 if (connectionInfo.getSSID() != null) {
-                    C2261g.m9763a("WiFiUtility", "wifiInfo.SSID = " + connectionInfo.getSSID() + "wifiInfo.NetworkId =" + String.valueOf(connectionInfo.getNetworkId()));
+                    ImageAppLog.debug("WiFiUtility", "wifiInfo.SSID = " + connectionInfo.getSSID() + "wifiInfo.NetworkId =" + String.valueOf(connectionInfo.getNetworkId()));
                     if (m8274a(connectionInfo).equals(str)) {
                         int ipAddress = connectionInfo.getIpAddress();
-                        C2261g.m9763a("WiFiUtility", "SSID compare:IpAddress = " + String.valueOf(ipAddress));
+                        ImageAppLog.debug("WiFiUtility", "SSID compare:IpAddress = " + String.valueOf(ipAddress));
                         if (ipAddress != 0) {
                             return true;
                         }
                     }
                 } else {
-                    C2261g.m9763a("WiFiUtility", "wifiInfo.SSID = null, wifiInfo.NetworkId =" + String.valueOf(connectionInfo.getNetworkId()));
+                    ImageAppLog.debug("WiFiUtility", "wifiInfo.SSID = null, wifiInfo.NetworkId =" + String.valueOf(connectionInfo.getNetworkId()));
                 }
                 if (connectionInfo.getNetworkId() == i) {
                     int ipAddress2 = connectionInfo.getIpAddress();
-                    C2261g.m9763a("WiFiUtility", "NetworkID compare:IpAddress = " + String.valueOf(ipAddress2));
+                    ImageAppLog.debug("WiFiUtility", "NetworkID compare:IpAddress = " + String.valueOf(ipAddress2));
                     if (ipAddress2 != 0) {
                         return true;
                     }
                 }
             } else {
-                C2261g.m9763a("WiFiUtility", "wifiInfo = null");
+                ImageAppLog.debug("WiFiUtility", "wifiInfo = null");
             }
             return false;
         } catch (Exception e) {
-            C2261g.m9769c("WiFiUtility", "Exception");
+            ImageAppLog.error("WiFiUtility", "Exception");
             return false;
         }
     }
@@ -148,7 +148,7 @@ public class C2020c {
         try {
             return ((WifiManager) context.getSystemService("wifi")).getConnectionInfo().getNetworkId();
         } catch (Exception e) {
-            C2261g.m9769c("WiFiUtility", "getConnectionInfo() Exception");
+            ImageAppLog.error("WiFiUtility", "getConnectionInfo() Exception");
             return 0;
         }
     }
@@ -171,7 +171,7 @@ public class C2020c {
     /* renamed from: g */
     public List<ScanResult> mo5314g(Context context) {
         int i = 0;
-        C2261g.m9763a("WiFiUtility", "GetWifiScanResults start");
+        ImageAppLog.debug("WiFiUtility", "GetWifiScanResults start");
         WifiManager wifiManager = (WifiManager) context.getSystemService("wifi");
         for (int i2 = 0; i2 < 5 && !wifiManager.isWifiEnabled() && wifiManager.getWifiState() != 2; i2++) {
             wifiManager.setWifiEnabled(true);
@@ -186,48 +186,48 @@ public class C2020c {
                 m8275a(200);
                 SupplicantState supplicantState = wifiManager.getConnectionInfo().getSupplicantState();
                 if (supplicantState == SupplicantState.COMPLETED) {
-                    C2261g.m9763a("WiFiUtility", "COMPLETED");
+                    ImageAppLog.debug("WiFiUtility", "COMPLETED");
                     break;
                 }
                 if (supplicantState == SupplicantState.SCANNING) {
-                    C2261g.m9763a("WiFiUtility", "WiFi Scanning...");
+                    ImageAppLog.debug("WiFiUtility", "WiFi Scanning...");
                 } else {
                     try {
                         if (supplicantState == SupplicantState.ASSOCIATED) {
-                            C2261g.m9763a("WiFiUtility", "ASSOCIATED");
+                            ImageAppLog.debug("WiFiUtility", "ASSOCIATED");
                         } else if (supplicantState == SupplicantState.ASSOCIATING) {
-                            C2261g.m9763a("WiFiUtility", "ASSOCIATING");
+                            ImageAppLog.debug("WiFiUtility", "ASSOCIATING");
                         } else if (supplicantState == SupplicantState.AUTHENTICATING) {
-                            C2261g.m9763a("WiFiUtility", "AUTHENTICATING");
+                            ImageAppLog.debug("WiFiUtility", "AUTHENTICATING");
                         } else if (supplicantState == SupplicantState.DISCONNECTED) {
-                            C2261g.m9763a("WiFiUtility", "DISCONNECTED");
+                            ImageAppLog.debug("WiFiUtility", "DISCONNECTED");
                         } else if (supplicantState == SupplicantState.DORMANT) {
-                            C2261g.m9763a("WiFiUtility", "DORMANT");
+                            ImageAppLog.debug("WiFiUtility", "DORMANT");
                         } else if (supplicantState == SupplicantState.FOUR_WAY_HANDSHAKE) {
-                            C2261g.m9763a("WiFiUtility", "FOUR_WAY_HANDSHAKE");
+                            ImageAppLog.debug("WiFiUtility", "FOUR_WAY_HANDSHAKE");
                         } else if (supplicantState == SupplicantState.GROUP_HANDSHAKE) {
-                            C2261g.m9763a("WiFiUtility", "GROUP_HANDSHAKE");
+                            ImageAppLog.debug("WiFiUtility", "GROUP_HANDSHAKE");
                         } else if (supplicantState == SupplicantState.INACTIVE) {
-                            C2261g.m9763a("WiFiUtility", "INACTIVE");
+                            ImageAppLog.debug("WiFiUtility", "INACTIVE");
                         } else if (supplicantState == SupplicantState.INTERFACE_DISABLED) {
-                            C2261g.m9763a("WiFiUtility", "INTERFACE_DISABLED");
+                            ImageAppLog.debug("WiFiUtility", "INTERFACE_DISABLED");
                         } else if (supplicantState == SupplicantState.INVALID) {
-                            C2261g.m9763a("WiFiUtility", "INVALID");
+                            ImageAppLog.debug("WiFiUtility", "INVALID");
                         } else if (supplicantState == SupplicantState.UNINITIALIZED) {
-                            C2261g.m9763a("WiFiUtility", "UNINITIALIZED");
+                            ImageAppLog.debug("WiFiUtility", "UNINITIALIZED");
                         } else {
-                            C2261g.m9763a("WiFiUtility", "Unknown value :" + supplicantState.toString());
+                            ImageAppLog.debug("WiFiUtility", "Unknown value :" + supplicantState.toString());
                         }
                     } catch (Exception e) {
-                        C2261g.m9763a("WiFiUtility", "ScanState unknown value");
+                        ImageAppLog.debug("WiFiUtility", "ScanState unknown value");
                     }
                 }
                 i++;
             }
-            return new C2754l(context).mo6736a(wifiManager.getScanResults());
+            return new WifiUtil(context).mo6736a(wifiManager.getScanResults());
         } catch (Exception e2) {
             e2.printStackTrace();
-            C2261g.m9769c("WiFiUtility", "Exception");
+            ImageAppLog.error("WiFiUtility", "Exception");
             return null;
         }
     }
@@ -245,7 +245,7 @@ public class C2020c {
             r5 = 0
             java.lang.String r0 = "WiFiUtility"
             java.lang.String r1 = "ConnectWiFi:start"
-            com.panasonic.avc.cng.util.C2261g.m9763a(r0, r1)
+            com.panasonic.avc.cng.util.ImageAppLog.debug(r0, r1)
             java.lang.String r0 = "wifi"
             java.lang.Object r0 = r11.getSystemService(r0)
             android.net.wifi.WifiManager r0 = (android.net.wifi.WifiManager) r0
@@ -311,7 +311,7 @@ public class C2020c {
             java.lang.String r7 = java.lang.String.valueOf(r8)
             java.lang.StringBuilder r6 = r6.append(r7)
             java.lang.String r6 = r6.toString()
-            com.panasonic.avc.cng.util.C2261g.m9763a(r3, r6)
+            com.panasonic.avc.cng.util.ImageAppLog.debug(r3, r6)
         L_0x00ae:
             r3 = r1
         L_0x00af:
@@ -327,19 +327,19 @@ public class C2020c {
         L_0x00c7:
             java.lang.String r0 = "WiFiUtility"
             java.lang.String r1 = "ConnectWiFi:unknownWifi"
-            com.panasonic.avc.cng.util.C2261g.m9763a(r0, r1)
+            com.panasonic.avc.cng.util.ImageAppLog.debug(r0, r1)
             java.lang.String r0 = "WiFiUtility"
             java.lang.String r1 = "ConnectWiFi:unknownWifi"
-            com.panasonic.avc.cng.util.C2261g.m9763a(r0, r1)
+            com.panasonic.avc.cng.util.ImageAppLog.debug(r0, r1)
             r0 = 2
             goto L_0x0015
         L_0x00d8:
             java.lang.String r0 = "WiFiUtility"
             java.lang.String r1 = "ConnectWiFi:failConnected"
-            com.panasonic.avc.cng.util.C2261g.m9763a(r0, r1)
+            com.panasonic.avc.cng.util.ImageAppLog.debug(r0, r1)
             java.lang.String r0 = "WiFiUtility"
             java.lang.String r1 = "ConnectWiFi:failConnected"
-            com.panasonic.avc.cng.util.C2261g.m9763a(r0, r1)
+            com.panasonic.avc.cng.util.ImageAppLog.debug(r0, r1)
             r0 = r4
             goto L_0x0015
         L_0x00e9:
@@ -350,7 +350,7 @@ public class C2020c {
             if (r1 == 0) goto L_0x00ff
             java.lang.String r0 = "WiFiUtility"
             java.lang.String r1 = "すでに接続されているのでenableNetworkを行わない"
-            com.panasonic.avc.cng.util.C2261g.m9763a(r0, r1)
+            com.panasonic.avc.cng.util.ImageAppLog.debug(r0, r1)
             r0 = r5
             goto L_0x0015
         L_0x00ff:
@@ -359,13 +359,13 @@ public class C2020c {
             if (r0 != 0) goto L_0x0111
             java.lang.String r0 = "WiFiUtility"
             java.lang.String r1 = "ConnectWiFi:failConnected"
-            com.panasonic.avc.cng.util.C2261g.m9763a(r0, r1)
+            com.panasonic.avc.cng.util.ImageAppLog.debug(r0, r1)
             r0 = r4
             goto L_0x0015
         L_0x0111:
             java.lang.String r0 = "WiFiUtility"
             java.lang.String r1 = "ConnectWiFi:connected"
-            com.panasonic.avc.cng.util.C2261g.m9763a(r0, r1)
+            com.panasonic.avc.cng.util.ImageAppLog.debug(r0, r1)
             r0 = r5
             goto L_0x0015
         L_0x011b:
@@ -447,7 +447,7 @@ public class C2020c {
     /* renamed from: a */
     public int mo5302a(Context context, String str, String str2) {
         WifiConfiguration wifiConfiguration;
-        C2261g.m9763a("WiFiUtility", "ConnectNewWiFi:start");
+        ImageAppLog.debug("WiFiUtility", "ConnectNewWiFi:start");
         Log.d("WiFiUtility", "SSID.len=" + String.valueOf(str.length()));
         if (str2 != null && str2.length() > 0) {
             Log.d("WiFiUtility", "Pass.len=" + String.valueOf(str2.length()));
@@ -492,11 +492,11 @@ public class C2020c {
         int addNetwork = wifiManager.addNetwork(wifiConfiguration);
         if (addNetwork == -1) {
             Log.d("WiFiUtility", "NewConnect:failConnected");
-            C2261g.m9763a("WiFiUtility", "NewConnect:failConnected");
+            ImageAppLog.debug("WiFiUtility", "NewConnect:failConnected");
             return 1;
         }
         Log.d("WiFiUtility", "NewConnect:OK");
-        C2261g.m9763a("WiFiUtility", "NewConnect:OK");
+        ImageAppLog.debug("WiFiUtility", "NewConnect:OK");
         wifiConfiguration.networkId = addNetwork;
         wifiManager.saveConfiguration();
         return 0;
@@ -510,7 +510,7 @@ public class C2020c {
                 return m8274a(connectionInfo);
             }
         } catch (Exception e) {
-            C2261g.m9769c("WiFiUtility", "getConnectionInfo() Exception");
+            ImageAppLog.error("WiFiUtility", "getConnectionInfo() Exception");
         }
         return null;
     }
@@ -536,7 +536,7 @@ public class C2020c {
                 return connectionInfo.getMacAddress();
             }
         } catch (Exception e) {
-            C2261g.m9769c("WiFiUtility", "getConnectionInfo() Exception");
+            ImageAppLog.error("WiFiUtility", "getConnectionInfo() Exception");
         }
         return "00:00:00:00:00:00";
     }

@@ -45,7 +45,7 @@
 
     .prologue
     .line 603
-    invoke-static {}, Lcom/panasonic/avc/cng/application/a/b;->a()Lcom/panasonic/avc/cng/application/a/b;
+    invoke-static {}, Lcom/panasonic/avc/cng/application/a/GoogleTagManager;->a()Lcom/panasonic/avc/cng/application/a/GoogleTagManager;
 
     move-result-object v0
 
@@ -57,7 +57,7 @@
 
     const-string v2, "Movie WB"
 
-    invoke-virtual {v0, v1, v2}, Lcom/panasonic/avc/cng/application/a/b;->a(Landroid/content/Context;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Lcom/panasonic/avc/cng/application/a/GoogleTagManager;->a(Landroid/content/Context;Ljava/lang/String;)V
 
     .line 604
     const/4 v0, 0x0

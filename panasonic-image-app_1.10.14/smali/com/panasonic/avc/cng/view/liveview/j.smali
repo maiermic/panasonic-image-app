@@ -248,7 +248,7 @@
 
     const/4 v1, 0x1
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/model/service/z;->a(Landroid/content/Context;Z)Lcom/panasonic/avc/cng/model/service/e;
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->a(Landroid/content/Context;Z)Lcom/panasonic/avc/cng/model/service/e;
 
     move-result-object v0
 
@@ -256,7 +256,7 @@
     if-eqz v0, :cond_0
 
     .line 264
-    invoke-interface {v0}, Lcom/panasonic/avc/cng/model/service/e;->i()Lcom/panasonic/avc/cng/model/c/e;
+    invoke-interface {v0}, Lcom/panasonic/avc/cng/model/service/e;->i()Lcom/panasonic/avc/cng/model/c/CameraStatus;
 
     move-result-object v0
 
@@ -268,7 +268,7 @@
 
     new-instance v2, Lcom/panasonic/avc/cng/view/liveview/j$1;
 
-    invoke-direct {v2, p0, v0}, Lcom/panasonic/avc/cng/view/liveview/j$1;-><init>(Lcom/panasonic/avc/cng/view/liveview/j;Lcom/panasonic/avc/cng/model/c/e;)V
+    invoke-direct {v2, p0, v0}, Lcom/panasonic/avc/cng/view/liveview/j$1;-><init>(Lcom/panasonic/avc/cng/view/liveview/j;Lcom/panasonic/avc/cng/model/c/CameraStatus;)V
 
     invoke-virtual {v1, v2}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
@@ -692,7 +692,7 @@
     .line 226
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/j;->e:Lcom/panasonic/avc/cng/model/service/e;
 
-    invoke-interface {v0}, Lcom/panasonic/avc/cng/model/service/e;->i()Lcom/panasonic/avc/cng/model/c/e;
+    invoke-interface {v0}, Lcom/panasonic/avc/cng/model/service/e;->i()Lcom/panasonic/avc/cng/model/c/CameraStatus;
 
     move-result-object v0
 
@@ -708,7 +708,7 @@
 
     .line 231
     :cond_0
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/e;->I()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->I()Ljava/lang/String;
 
     move-result-object v0
 
@@ -727,7 +727,7 @@
     .line 241
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/j;->e:Lcom/panasonic/avc/cng/model/service/e;
 
-    invoke-interface {v0}, Lcom/panasonic/avc/cng/model/service/e;->i()Lcom/panasonic/avc/cng/model/c/e;
+    invoke-interface {v0}, Lcom/panasonic/avc/cng/model/service/e;->i()Lcom/panasonic/avc/cng/model/c/CameraStatus;
 
     move-result-object v0
 
@@ -743,7 +743,7 @@
 
     .line 246
     :cond_0
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/e;->K()J
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->K()J
 
     move-result-wide v0
 

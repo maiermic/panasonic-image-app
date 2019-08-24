@@ -43,11 +43,11 @@
     .line 123
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionAutoManualSettingActivity$2;->a:Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionAutoManualSettingActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionAutoManualSettingActivity;->b(Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionAutoManualSettingActivity;)Lcom/panasonic/avc/cng/view/setting/ac;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionAutoManualSettingActivity;->b(Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionAutoManualSettingActivity;)Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionMovieMakingViewModel;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/ac;->d()Z
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionMovieMakingViewModel;->d()Z
 
     move-result v0
 
@@ -61,11 +61,11 @@
     :cond_0
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionAutoManualSettingActivity$2;->a:Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionAutoManualSettingActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionAutoManualSettingActivity;->b(Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionAutoManualSettingActivity;)Lcom/panasonic/avc/cng/view/setting/ac;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionAutoManualSettingActivity;->b(Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionAutoManualSettingActivity;)Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionMovieMakingViewModel;
 
     move-result-object v0
 
-    invoke-virtual {v0, p2}, Lcom/panasonic/avc/cng/view/setting/ac;->a(Z)V
+    invoke-virtual {v0, p2}, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionMovieMakingViewModel;->a(Z)V
 
     .line 132
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionAutoManualSettingActivity$2;->a:Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionAutoManualSettingActivity;

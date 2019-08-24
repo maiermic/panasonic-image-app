@@ -3,7 +3,7 @@ package com.panasonic.avc.cng.model.service.p066m;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.os.Handler;
-import com.panasonic.avc.cng.core.p040a.C1490au;
+import com.panasonic.avc.cng.core.p040a.VideoEditCommand;
 import com.panasonic.avc.cng.model.C1833c;
 import com.panasonic.avc.cng.model.C1878d;
 import com.panasonic.avc.cng.model.C1892f;
@@ -12,8 +12,8 @@ import com.panasonic.avc.cng.model.p051c.C1840ae;
 import com.panasonic.avc.cng.model.service.C1921a;
 import com.panasonic.avc.cng.model.service.C2246v;
 import com.panasonic.avc.cng.model.service.C2246v.C2247a;
-import com.panasonic.avc.cng.model.service.C2253z;
-import com.panasonic.avc.cng.model.service.p054a.C1936c;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
+import com.panasonic.avc.cng.model.service.p054a.BrowserServiceCamera;
 
 /* renamed from: com.panasonic.avc.cng.model.service.m.a */
 public class C2196a implements C2246v {
@@ -49,7 +49,7 @@ public class C2196a implements C2246v {
 
         public void run() {
             C1840ae a;
-            C1490au auVar = new C1490au(this.f6822b.f5682d);
+            VideoEditCommand auVar = new VideoEditCommand(this.f6822b.f5682d);
             if (this.f6823c instanceof C1833c) {
                 C1833c cVar = (C1833c) this.f6823c;
                 synchronized (C1910l.m7679a()) {
@@ -69,9 +69,9 @@ public class C2196a implements C2246v {
                         }
                     }
                 }
-                C1921a f = C2253z.m9703f();
-                if (f != null && (f instanceof C1936c) && a != null && a.mo4636c().equalsIgnoreCase("finish")) {
-                    C1936c cVar2 = (C1936c) f;
+                C1921a f = ServiceFactory.m9703f();
+                if (f != null && (f instanceof BrowserServiceCamera) && a != null && a.mo4636c().equalsIgnoreCase("finish")) {
+                    BrowserServiceCamera cVar2 = (BrowserServiceCamera) f;
                     cVar2.mo5084a((C1878d) cVar);
                     Bitmap bitmap = null;
                     while (bitmap == null) {

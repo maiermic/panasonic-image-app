@@ -16,7 +16,7 @@ public class C0672m {
     private static final C0672m f1411a = new C0672m();
 
     /* renamed from: b */
-    public static final int f1412b = C0703w.f1476b;
+    public static final int f1412b = GooglePlayServicesUtil.f1476b;
 
     C0672m() {
     }
@@ -64,8 +64,8 @@ public class C0672m {
 
     /* renamed from: a */
     public int mo1609a(Context context) {
-        int b = C0703w.m2582b(context);
-        if (C0703w.m2584b(context, b)) {
+        int b = GooglePlayServicesUtil.m2582b(context);
+        if (GooglePlayServicesUtil.m2584b(context, b)) {
             return 18;
         }
         return b;
@@ -87,11 +87,11 @@ public class C0672m {
 
     /* renamed from: a */
     public boolean mo1614a(int i) {
-        return C0703w.m2583b(i);
+        return GooglePlayServicesUtil.m2583b(i);
     }
 
     /* renamed from: b */
     public String mo1617b(int i) {
-        return C0703w.m2578a(i);
+        return GooglePlayServicesUtil.m2578a(i);
     }
 }

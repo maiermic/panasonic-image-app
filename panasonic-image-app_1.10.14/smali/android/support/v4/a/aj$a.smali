@@ -9,7 +9,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Landroid/support/v4/a/aj;
+    value = Landroid/support/v4/a/NotificationCompat;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -397,7 +397,7 @@
 
     iget-object v1, p0, Landroid/support/v4/a/aj$a;->a:Landroid/app/Notification$Builder;
 
-    invoke-static {v1, p1}, Landroid/support/v4/a/aj;->a(Landroid/app/Notification$Builder;Landroid/support/v4/a/ag$a;)Landroid/os/Bundle;
+    invoke-static {v1, p1}, Landroid/support/v4/a/NotificationCompat;->a(Landroid/app/Notification$Builder;Landroid/support/v4/a/ag$a;)Landroid/os/Bundle;
 
     move-result-object v1
 
@@ -419,7 +419,7 @@
     move-result-object v1
 
     .line 147
-    invoke-static {v1}, Landroid/support/v4/a/aj;->a(Landroid/app/Notification;)Landroid/os/Bundle;
+    invoke-static {v1}, Landroid/support/v4/a/NotificationCompat;->a(Landroid/app/Notification;)Landroid/os/Bundle;
 
     move-result-object v2
 
@@ -474,7 +474,7 @@
     .line 155
     iget-object v0, p0, Landroid/support/v4/a/aj$a;->c:Ljava/util/List;
 
-    invoke-static {v0}, Landroid/support/v4/a/aj;->a(Ljava/util/List;)Landroid/util/SparseArray;
+    invoke-static {v0}, Landroid/support/v4/a/NotificationCompat;->a(Ljava/util/List;)Landroid/util/SparseArray;
 
     move-result-object v0
 
@@ -482,7 +482,7 @@
     if-eqz v0, :cond_2
 
     .line 158
-    invoke-static {v1}, Landroid/support/v4/a/aj;->a(Landroid/app/Notification;)Landroid/os/Bundle;
+    invoke-static {v1}, Landroid/support/v4/a/NotificationCompat;->a(Landroid/app/Notification;)Landroid/os/Bundle;
 
     move-result-object v2
 

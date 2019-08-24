@@ -46,7 +46,7 @@
 
     const-string v1, "KeepAliveService Start"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 4469
     const/4 v0, 0x0
@@ -78,7 +78,7 @@
 
     const-string v1, "KeepAliveService Stop"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 4482
     const/4 v0, 0x1
@@ -155,7 +155,7 @@
 
     .prologue
     .line 4514
-    new-instance v1, Lcom/panasonic/avc/cng/core/a/ao;
+    new-instance v1, Lcom/panasonic/avc/cng/core/a/StatusCommand;
 
     iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService$b;->a:Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService;
 
@@ -167,7 +167,7 @@
 
     move-result-object v0
 
-    invoke-direct {v1, v0}, Lcom/panasonic/avc/cng/core/a/ao;-><init>(Ljava/lang/String;)V
+    invoke-direct {v1, v0}, Lcom/panasonic/avc/cng/core/a/StatusCommand;-><init>(Ljava/lang/String;)V
 
     .line 4518
     :goto_0
@@ -199,7 +199,7 @@
     const/4 v0, 0x5
 
     :try_start_1
-    invoke-virtual {v1, v0}, Lcom/panasonic/avc/cng/core/a/ao;->b(I)Lcom/panasonic/avc/cng/model/c/e;
+    invoke-virtual {v1, v0}, Lcom/panasonic/avc/cng/core/a/StatusCommand;->b(I)Lcom/panasonic/avc/cng/model/c/CameraStatus;
 
     move-result-object v0
 
@@ -208,7 +208,7 @@
 
     const-string v4, "KeepAlive[]"
 
-    invoke-static {v3, v4}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v3, v4}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 4532
     if-nez v0, :cond_1
@@ -218,7 +218,7 @@
 
     const-string v3, "KeepAlive[error]"
 
-    invoke-static {v0, v3}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v3}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 4535
     const/4 v0, 0x1

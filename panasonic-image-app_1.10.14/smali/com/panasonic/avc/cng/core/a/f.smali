@@ -66,12 +66,12 @@
     .line 39
     const-string v1, "clock"
 
-    invoke-virtual {p0, v1}, Lcom/panasonic/avc/cng/core/a/f;->f(Ljava/lang/String;)Lcom/panasonic/avc/cng/model/c/h;
+    invoke-virtual {p0, v1}, Lcom/panasonic/avc/cng/core/a/f;->f(Ljava/lang/String;)Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
     move-result-object v1
 
     .line 40
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/model/c/h;->a()Z
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;->a()Z
 
     move-result v2
 
@@ -94,7 +94,7 @@
     :try_start_1
     sget-object v3, Lcom/panasonic/avc/cng/core/a/f;->j:Ljava/text/SimpleDateFormat;
 
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/model/c/h;->z()Ljava/lang/String;
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;->z()Ljava/lang/String;
 
     move-result-object v1
 
@@ -139,19 +139,19 @@
     .line 70
     const-string v0, "hm"
 
-    invoke-virtual {p0, v0}, Lcom/panasonic/avc/cng/core/a/f;->f(Ljava/lang/String;)Lcom/panasonic/avc/cng/model/c/h;
+    invoke-virtual {p0, v0}, Lcom/panasonic/avc/cng/core/a/f;->f(Ljava/lang/String;)Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
     move-result-object v0
 
     .line 71
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/h;->a()Z
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;->a()Z
 
     move-result v1
 
     if-nez v1, :cond_1
 
     .line 73
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/h;->b()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;->b()Ljava/lang/String;
 
     move-result-object v1
 
@@ -173,7 +173,7 @@
 
     .line 79
     :cond_1
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/h;->B()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;->B()Ljava/lang/String;
 
     move-result-object v0
 
@@ -193,19 +193,19 @@
     .line 96
     const-string v0, "pa"
 
-    invoke-virtual {p0, v0}, Lcom/panasonic/avc/cng/core/a/f;->f(Ljava/lang/String;)Lcom/panasonic/avc/cng/model/c/h;
+    invoke-virtual {p0, v0}, Lcom/panasonic/avc/cng/core/a/f;->f(Ljava/lang/String;)Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
     move-result-object v0
 
     .line 97
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/h;->a()Z
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;->a()Z
 
     move-result v1
 
     if-nez v1, :cond_1
 
     .line 99
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/h;->b()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;->b()Ljava/lang/String;
 
     move-result-object v1
 
@@ -227,7 +227,7 @@
 
     .line 105
     :cond_1
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/h;->A()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;->A()Ljava/lang/String;
 
     move-result-object v0
 
@@ -247,7 +247,7 @@
     .line 140
     const-string v0, "close_wifisettings"
 
-    invoke-virtual {p0, v0}, Lcom/panasonic/avc/cng/core/a/f;->e(Ljava/lang/String;)Lcom/panasonic/avc/cng/model/c/h;
+    invoke-virtual {p0, v0}, Lcom/panasonic/avc/cng/core/a/f;->e(Ljava/lang/String;)Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
     .line 141
     return-void

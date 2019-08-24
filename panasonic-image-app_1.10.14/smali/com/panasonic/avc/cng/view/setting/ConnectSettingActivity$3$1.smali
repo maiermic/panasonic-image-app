@@ -71,11 +71,11 @@
 
     iget-object v1, v1, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity$3;->a:Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;
 
-    invoke-static {v1}, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b(Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;)Lcom/panasonic/avc/cng/view/setting/g;
+    invoke-static {v1}, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b(Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;)Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/b/e;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/setting/g;)Landroid/widget/ArrayAdapter;
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/b/e;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;)Landroid/widget/ArrayAdapter;
 
     move-result-object v0
 
@@ -99,20 +99,20 @@
 
     iget-object v1, v1, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity$3;->a:Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;
 
-    invoke-static {v1}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;)V
+    invoke-static {v1}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;)V
 
     .line 715
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity$3$1;->a:Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity$3;
 
     iget-object v1, v1, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity$3;->a:Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;
 
-    invoke-static {v1}, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b(Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;)Lcom/panasonic/avc/cng/view/setting/g;
+    invoke-static {v1}, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b(Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;)Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;
 
     move-result-object v1
 
     const-string v2, ""
 
-    invoke-virtual {v1, v0, v2}, Lcom/panasonic/avc/cng/view/setting/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v1, v0, v2}, Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 716
     return-void

@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c;->V()V
+    value = Lcom/panasonic/avc/cng/view/liveview/movie/wearable/LiveViewWearableViewModel;->V()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,16 +20,16 @@
 # instance fields
 .field final synthetic a:Z
 
-.field final synthetic b:Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c;
+.field final synthetic b:Lcom/panasonic/avc/cng/view/liveview/movie/wearable/LiveViewWearableViewModel;
 
 
 # direct methods
-.method constructor <init>(Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c;Z)V
+.method constructor <init>(Lcom/panasonic/avc/cng/view/liveview/movie/wearable/LiveViewWearableViewModel;Z)V
     .locals 0
 
     .prologue
     .line 3092
-    iput-object p1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c$6;->b:Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c$6;->b:Lcom/panasonic/avc/cng/view/liveview/movie/wearable/LiveViewWearableViewModel;
 
     iput-boolean p2, p0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c$6;->a:Z
 
@@ -45,9 +45,9 @@
 
     .prologue
     .line 3094
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c$6;->b:Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c$6;->b:Lcom/panasonic/avc/cng/view/liveview/movie/wearable/LiveViewWearableViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c;->z:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/LiveViewWearableViewModel;->z:Lcom/panasonic/avc/cng/a/c;
 
     iget-boolean v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c$6;->a:Z
 

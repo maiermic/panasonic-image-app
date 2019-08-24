@@ -5,7 +5,7 @@ import android.os.Bundle;
 import com.panasonic.avc.cng.core.p046c.C1663m;
 import com.panasonic.avc.cng.model.service.C2210p;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
 import java.util.ArrayList;
 
 /* renamed from: com.panasonic.avc.cng.view.setting.ag */
@@ -20,7 +20,7 @@ public abstract class C5509ag extends C5741i {
             return;
         }
         if (this._viewModel.mo12066e() == null) {
-            C2331d.m10114a((Activity) this, C2328a.ON_PROGRESS, (Bundle) null);
+            DialogFactory.m10114a((Activity) this, C2328a.ON_PROGRESS, (Bundle) null);
             this._viewModel.mo12061a(true);
             this._viewModel.mo12062b(4);
             return;

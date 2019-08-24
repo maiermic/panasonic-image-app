@@ -1,7 +1,7 @@
 package com.panasonic.avc.cng.core.p040a.p041a;
 
 import com.panasonic.avc.cng.core.p040a.p041a.C1415b.C1416a;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
@@ -119,7 +119,7 @@ public abstract class C1413a<T> {
                 i++;
             }
             String sb2 = sb.toString();
-            C2261g.m9763a(getClass().getSimpleName(), "HTTP URL = " + sb2);
+            ImageAppLog.debug(getClass().getSimpleName(), "HTTP URL = " + sb2);
             HttpURLConnection httpURLConnection = (HttpURLConnection) new URL(sb2).openConnection();
             httpURLConnection.setRequestMethod(this.f3848b.toString().toUpperCase());
             httpURLConnection.setConnectTimeout(this.f3850d);
@@ -142,11 +142,11 @@ public abstract class C1413a<T> {
     public void mo3420a(HttpURLConnection httpURLConnection) {
         try {
             if ("debug".equalsIgnoreCase("debug")) {
-                C2261g.m9763a(getClass().getSimpleName(), "HTTP Method = " + httpURLConnection.getRequestMethod());
+                ImageAppLog.debug(getClass().getSimpleName(), "HTTP Method = " + httpURLConnection.getRequestMethod());
                 Map requestProperties = httpURLConnection.getRequestProperties();
                 for (String str : requestProperties.keySet()) {
                     for (String str2 : (List) requestProperties.get(str)) {
-                        C2261g.m9763a(getClass().getSimpleName(), str + " = " + str2);
+                        ImageAppLog.debug(getClass().getSimpleName(), str + " = " + str2);
                     }
                 }
             }

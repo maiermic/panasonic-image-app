@@ -29,7 +29,7 @@ public class C3688b {
     /* access modifiers changed from: private */
 
     /* renamed from: b */
-    public C3691c f12002b;
+    public LiveViewMovieMatanityViewModel f12002b;
 
     /* renamed from: c */
     private C4230p f12003c = null;
@@ -146,7 +146,7 @@ public class C3688b {
     }
 
     /* renamed from: a */
-    public void mo8723a(Activity activity, C3691c cVar) {
+    public void mo8723a(Activity activity, LiveViewMovieMatanityViewModel cVar) {
         this.f12001a = activity;
         this.f12002b = cVar;
         m14705c();

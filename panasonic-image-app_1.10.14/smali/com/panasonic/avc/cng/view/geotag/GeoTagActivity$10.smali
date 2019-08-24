@@ -49,7 +49,7 @@
 
     const-string v3, "0"
 
-    invoke-static {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;ILjava/lang/CharSequence;)V
+    invoke-static {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;ILjava/lang/CharSequence;)V
 
     .line 2587
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity$10;->a:Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;
@@ -60,12 +60,12 @@
 
     const-string v3, "0"
 
-    invoke-static {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;ILjava/lang/CharSequence;)V
+    invoke-static {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;ILjava/lang/CharSequence;)V
 
     .line 2588
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity$10;->a:Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a(Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;)Lcom/panasonic/avc/cng/view/geotag/b;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a(Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;)Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
     move-result-object v0
 
@@ -80,15 +80,15 @@
 
     iget-object v3, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity$10;->a:Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;
 
-    invoke-static {v3}, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a(Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;)Lcom/panasonic/avc/cng/view/geotag/b;
+    invoke-static {v3}, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a(Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;)Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
     move-result-object v3
 
-    invoke-virtual {v3}, Lcom/panasonic/avc/cng/view/geotag/b;->D()I
+    invoke-virtual {v3}, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->D()I
 
     move-result v3
 
-    invoke-static {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/b/d;->b(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;II)V
+    invoke-static {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->b(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;II)V
 
     .line 2591
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity$10;->a:Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;
@@ -99,11 +99,11 @@
 
     iget-object v3, p0, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity$10;->a:Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;
 
-    invoke-static {v3}, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a(Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;)Lcom/panasonic/avc/cng/view/geotag/b;
+    invoke-static {v3}, Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;->a(Lcom/panasonic/avc/cng/view/geotag/GeoTagActivity;)Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;
 
     move-result-object v3
 
-    invoke-virtual {v3}, Lcom/panasonic/avc/cng/view/geotag/b;->D()I
+    invoke-virtual {v3}, Lcom/panasonic/avc/cng/view/geotag/GeoTagViewModel;->D()I
 
     move-result v3
 
@@ -111,7 +111,7 @@
 
     move-result-object v3
 
-    invoke-static {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;ILjava/lang/CharSequence;)V
+    invoke-static {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;ILjava/lang/CharSequence;)V
 
     .line 2593
     :cond_0

@@ -3,10 +3,10 @@ package com.panasonic.avc.cng.view.cameraconnect;
 import android.content.Context;
 import android.os.Handler;
 import com.panasonic.avc.cng.model.service.C2137j.C2138a;
-import com.panasonic.avc.cng.view.cameraconnect.C2666e.C2674a;
+import com.panasonic.avc.cng.view.cameraconnect.CameraConnectViewModel.C2674a;
 
 /* renamed from: com.panasonic.avc.cng.view.cameraconnect.b */
-public class C2650b extends C2685i {
+public class C2650b extends GuidanceMenuViewModel {
 
     /* renamed from: e */
     public static final String f8212e = C2650b.class.getSimpleName();

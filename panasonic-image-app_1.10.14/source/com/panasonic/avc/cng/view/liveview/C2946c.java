@@ -12,13 +12,13 @@ import com.panasonic.avc.cng.model.p052d.C1879a;
 import com.panasonic.avc.cng.view.common.TouchShareCopyActivity;
 import com.panasonic.avc.cng.view.liveview.movie.homemonitor.LiveViewRemoteWatchActivity;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
 import com.panasonic.avc.cng.view.play.browser.MainBrowserActivity;
-import com.panasonic.avc.cng.view.setting.C5537al;
+import com.panasonic.avc.cng.view.setting.SettingMenuBaseActivity;
 import com.panasonic.avc.cng.view.setting.C5741i.C5759a;
 
 /* renamed from: com.panasonic.avc.cng.view.liveview.c */
-public class C2946c extends C5537al {
+public class C2946c extends SettingMenuBaseActivity {
     public void onCreate(Bundle bundle) {
         C1712b.m6914a((Activity) this);
         super.onCreate(bundle);
@@ -31,7 +31,7 @@ public class C2946c extends C5537al {
 
     /* access modifiers changed from: protected */
     public void DismissDmsEventDialog() {
-        if (C2331d.m10125b((Activity) this, C2328a.DMS_FILEUPLOADED_NOTIFY)) {
+        if (DialogFactory.m10125b((Activity) this, C2328a.DMS_FILEUPLOADED_NOTIFY)) {
             DismissDmsEventDialog();
         }
     }
@@ -43,7 +43,7 @@ public class C2946c extends C5537al {
 
     /* access modifiers changed from: protected */
     public void DismissDmsErrorDialog() {
-        if (C2331d.m10125b((Activity) this, C2328a.DMS_FILEUPLOADING_ERROR)) {
+        if (DialogFactory.m10125b((Activity) this, C2328a.DMS_FILEUPLOADING_ERROR)) {
             DismissDmsErrorDialog();
         }
     }
@@ -95,7 +95,7 @@ public class C2946c extends C5537al {
             Intent b = C1347a.m5308b(this._context, new C1349a() {
                 /* renamed from: a */
                 public void mo3228a() {
-                    C2331d.m10114a((Activity) C2946c.this, C2328a.ON_NEED_LUMIX_LINK, (Bundle) null);
+                    DialogFactory.m10114a((Activity) C2946c.this, C2328a.ON_NEED_LUMIX_LINK, (Bundle) null);
                 }
             });
             if (b != null) {
@@ -118,7 +118,7 @@ public class C2946c extends C5537al {
         Intent b = C1347a.m5308b(this._context, new C1349a() {
             /* renamed from: a */
             public void mo3228a() {
-                C2331d.m10114a((Activity) C2946c.this, C2328a.ON_NEED_LUMIX_LINK, (Bundle) null);
+                DialogFactory.m10114a((Activity) C2946c.this, C2328a.ON_NEED_LUMIX_LINK, (Bundle) null);
             }
         });
         if (b == null) {
@@ -131,16 +131,16 @@ public class C2946c extends C5537al {
 
     /* renamed from: a */
     private C5759a mo3228a() {
-        C2331d.m10100a((Activity) this);
+        DialogFactory.m10100a((Activity) this);
         return new C5759a();
     }
 
     /* renamed from: a */
     public void mo7158a(Class<?> cls) {
         if (cls.equals(LiveViewLumixActivity.class) || cls.equals(LiveViewLumixCompactActivity.class)) {
-            C2331d.m10114a((Activity) this, C2328a.ON_WARN_LENS_OUT_FIRST, (Bundle) null);
+            DialogFactory.m10114a((Activity) this, C2328a.ON_WARN_LENS_OUT_FIRST, (Bundle) null);
         } else {
-            C2331d.m10114a((Activity) this, C2328a.ON_WARN_LENS_OUT_MIRRORLESS_FIRST, (Bundle) null);
+            DialogFactory.m10114a((Activity) this, C2328a.ON_WARN_LENS_OUT_MIRRORLESS_FIRST, (Bundle) null);
         }
     }
 

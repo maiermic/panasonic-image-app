@@ -15,7 +15,7 @@
 # instance fields
 .field protected a:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity$b;
 
-.field private b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;
+.field private b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;
 
 .field private c:Lcom/panasonic/avc/cng/view/play/multiphotoframe/f;
 
@@ -35,12 +35,12 @@
     return-void
 .end method
 
-.method static synthetic a(Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;)Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;
+.method static synthetic a(Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;)Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;
     .locals 1
 
     .prologue
     .line 36
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;
 
     return-object v0
 .end method
@@ -57,7 +57,7 @@
 
     const/4 v2, 0x1
 
-    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/model/service/z;->a(Landroid/content/Context;Z)Lcom/panasonic/avc/cng/model/service/e;
+    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->a(Landroid/content/Context;Z)Lcom/panasonic/avc/cng/model/service/e;
 
     move-result-object v1
 
@@ -65,7 +65,7 @@
     if-eqz v1, :cond_0
 
     .line 337
-    invoke-interface {v1}, Lcom/panasonic/avc/cng/model/service/e;->i()Lcom/panasonic/avc/cng/model/c/e;
+    invoke-interface {v1}, Lcom/panasonic/avc/cng/model/service/e;->i()Lcom/panasonic/avc/cng/model/c/CameraStatus;
 
     move-result-object v1
 
@@ -73,7 +73,7 @@
     if-eqz v1, :cond_0
 
     .line 340
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/model/c/e;->m()Z
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->m()Z
 
     move-result v0
 
@@ -99,14 +99,14 @@
     invoke-direct {v3, v0, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
     .line 697
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;
 
     if-eqz v0, :cond_3
 
     .line 699
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;->o()Ljava/util/ArrayList;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;->o()Ljava/util/ArrayList;
 
     move-result-object v4
 
@@ -169,9 +169,9 @@
 
     .line 717
     :cond_1
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;->j()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;->j()Ljava/lang/String;
 
     move-result-object v0
 
@@ -180,9 +180,9 @@
     .line 720
     const-string v0, "MultiPhotoSavePath"
 
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;
 
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;->j()Ljava/lang/String;
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;->j()Ljava/lang/String;
 
     move-result-object v1
 
@@ -192,9 +192,9 @@
     :cond_2
     const-string v0, "StartPhotoCollage"
 
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;
 
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;->k()Z
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;->k()Z
 
     move-result v1
 
@@ -203,9 +203,9 @@
     .line 727
     const-string v0, "MultiPhotoCloudFolder"
 
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;
 
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;->l()Z
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;->l()Z
 
     move-result v1
 
@@ -266,7 +266,7 @@
 
     .prologue
     .line 684
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;
 
     return-object v0
 .end method
@@ -289,19 +289,19 @@
     invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainView;->a()V
 
     .line 277
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;
 
     if-eqz v0, :cond_0
 
     .line 279
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;->a()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;->a()V
 
     .line 280
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;
 
     .line 282
     :cond_0
@@ -327,13 +327,13 @@
 
     .line 568
     :cond_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;->g()Z
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;->g()Z
 
     move-result v0
 
@@ -344,28 +344,28 @@
 
     const/4 v1, 0x0
 
-    invoke-static {p0, v0, v1}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {p0, v0, v1}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     goto :goto_0
 
     .line 575
     :cond_1
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;
 
     if-eqz v0, :cond_2
 
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;->k()Z
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;->k()Z
 
     move-result v0
 
     if-eqz v0, :cond_2
 
     .line 577
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;->f(Z)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;->f(Z)V
 
     goto :goto_0
 
@@ -408,18 +408,18 @@
     .line 484
     const-string v0, "MultiPhotoSelectFrame"
 
-    iget-object v2, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;
 
-    invoke-virtual {v2}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;->n()I
+    invoke-virtual {v2}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;->n()I
 
     move-result v2
 
     invoke-virtual {v1, v0, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
     .line 487
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;->o()Ljava/util/ArrayList;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;->o()Ljava/util/ArrayList;
 
     move-result-object v0
 
@@ -428,9 +428,9 @@
     .line 488
     const-string v0, "MultiPhotoPictureNum"
 
-    iget-object v2, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;
 
-    invoke-virtual {v2}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;->o()Ljava/util/ArrayList;
+    invoke-virtual {v2}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;->o()Ljava/util/ArrayList;
 
     move-result-object v2
 
@@ -505,16 +505,16 @@
     .line 511
     :cond_0
     :try_start_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;
 
     if-eqz v0, :cond_1
 
     .line 512
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;
 
     const/4 v1, 0x1
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;->c(Z)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;->c(Z)V
 
     .line 514
     :cond_1
@@ -547,7 +547,7 @@
     const/4 v2, 0x0
 
     .line 364
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
     .line 365
     invoke-virtual {p0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->GetViewModel()Lcom/panasonic/avc/cng/view/a/c;
@@ -559,7 +559,7 @@
     move-result-object v1
 
     .line 364
-    invoke-virtual {v0, p3, v1, v2}, Lcom/panasonic/avc/cng/view/a/d;->a(Landroid/content/Intent;Landroid/os/Bundle;Z)Z
+    invoke-virtual {v0, p3, v1, v2}, Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;->a(Landroid/content/Intent;Landroid/os/Bundle;Z)Z
 
     move-result v0
 
@@ -596,16 +596,16 @@
     if-ne p1, v1, :cond_2
 
     .line 386
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;
 
-    invoke-virtual {v1, v2}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;->c(Z)V
+    invoke-virtual {v1, v2}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;->c(Z)V
 
     .line 389
     const-string v1, "MultiPhotoSelectFrame"
 
-    iget-object v2, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;
 
-    invoke-virtual {v2}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;->n()I
+    invoke-virtual {v2}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;->n()I
 
     move-result v2
 
@@ -614,39 +614,39 @@
     move-result v0
 
     .line 390
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;
 
-    invoke-virtual {v1, v0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;->c(I)V
+    invoke-virtual {v1, v0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;->c(I)V
 
     .line 391
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;
 
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;->m()Lcom/panasonic/avc/cng/view/play/multiphotoframe/g;
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;->m()Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainData;
 
     move-result-object v1
 
-    invoke-virtual {v1, v0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/g;->a(I)V
+    invoke-virtual {v1, v0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainData;->a(I)V
 
     .line 392
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;->m()Lcom/panasonic/avc/cng/view/play/multiphotoframe/g;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;->m()Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainData;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/g;->a()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainData;->a()V
 
     .line 397
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;->f()Z
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;->f()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
     .line 400
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->e:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainView;
 
@@ -654,7 +654,7 @@
 
     move-result v1
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;->b(I)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;->b(I)V
 
     .line 401
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->e:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainView;
@@ -691,9 +691,9 @@
     if-ne p1, v1, :cond_0
 
     .line 410
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;
 
-    invoke-virtual {v1, v2}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;->c(Z)V
+    invoke-virtual {v1, v2}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;->c(Z)V
 
     .line 413
     const-string v1, "MultiPhotoSelectImage"
@@ -706,9 +706,9 @@
     if-eqz v0, :cond_0
 
     .line 417
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;
 
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;->f()Z
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;->f()Z
 
     move-result v1
 
@@ -717,9 +717,9 @@
     .line 419
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->e:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainView;
 
-    iget-object v2, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;
 
-    invoke-virtual {v2}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;->i()I
+    invoke-virtual {v2}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;->i()I
 
     move-result v2
 
@@ -727,7 +727,7 @@
 
     .line 421
     :cond_3
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;
 
     iget-object v2, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->e:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainView;
 
@@ -735,14 +735,14 @@
 
     move-result v2
 
-    invoke-virtual {v1, v0, v2}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;->a(Ljava/lang/String;I)Lcom/panasonic/avc/cng/model/service/b/c;
+    invoke-virtual {v1, v0, v2}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;->a(Ljava/lang/String;I)Lcom/panasonic/avc/cng/model/service/b/c;
 
     move-result-object v0
 
     .line 426
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;
 
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;->f()Z
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;->f()Z
 
     move-result v1
 
@@ -795,22 +795,22 @@
 
     .line 301
     :cond_1
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;
 
     if-eqz v0, :cond_4
 
     .line 304
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;->k()Z
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;->k()Z
 
     move-result v0
 
     if-nez v0, :cond_2
 
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;->g()Z
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;->g()Z
 
     move-result v0
 
@@ -821,26 +821,26 @@
 
     const/4 v1, 0x0
 
-    invoke-static {p0, v0, v1}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {p0, v0, v1}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     goto :goto_0
 
     .line 310
     :cond_2
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;->k()Z
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;->k()Z
 
     move-result v0
 
     if-eqz v0, :cond_3
 
     .line 313
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;->f(Z)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;->f(Z)V
 
     goto :goto_0
 
@@ -924,17 +924,17 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;
+    check-cast v0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;
 
     .line 74
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;
 
     if-nez v0, :cond_4
 
     .line 77
-    new-instance v0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;
+    new-instance v0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->_context:Landroid/content/Context;
 
@@ -942,12 +942,12 @@
 
     iget-object v3, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->d:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity$a;
 
-    invoke-direct {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;-><init>(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/play/multiphotoframe/h$a;)V
+    invoke-direct {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;-><init>(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/play/multiphotoframe/h$a;)V
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;
 
     .line 78
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->_context:Landroid/content/Context;
 
@@ -955,12 +955,12 @@
 
     iget-object v3, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->d:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity$a;
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/play/multiphotoframe/h$a;)V
+    invoke-virtual {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/play/multiphotoframe/h$a;)V
 
     .line 81
     const-string v0, "MultiPhotoFrameMainViewModel"
 
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;
 
     invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/a/j;->a(Ljava/lang/String;Lcom/panasonic/avc/cng/view/a/c;)V
 
@@ -977,7 +977,7 @@
     if-eqz v0, :cond_2
 
     .line 87
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;
 
     const-string v2, "StartPhotoCollage"
 
@@ -985,10 +985,10 @@
 
     move-result v2
 
-    invoke-virtual {v1, v2}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;->d(Z)V
+    invoke-virtual {v1, v2}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;->d(Z)V
 
     .line 90
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;
 
     const-string v2, "MultiPhotoCloudFolder"
 
@@ -996,10 +996,10 @@
 
     move-result v2
 
-    invoke-virtual {v1, v2}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;->e(Z)V
+    invoke-virtual {v1, v2}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;->e(Z)V
 
     .line 93
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;
 
     const-string v2, "MultiPhotoSelectFolder"
 
@@ -1007,7 +1007,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v1, v2}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;->a(Ljava/lang/String;)V
+    invoke-virtual {v1, v2}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;->a(Ljava/lang/String;)V
 
     .line 97
     const-string v1, "MultiPhotoSelectList"
@@ -1020,14 +1020,14 @@
     if-eqz v1, :cond_0
 
     .line 101
-    iget-object v2, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;
 
-    invoke-virtual {v2, v1}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;->a(Ljava/util/ArrayList;)V
+    invoke-virtual {v2, v1}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;->a(Ljava/util/ArrayList;)V
 
     .line 102
-    iget-object v2, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;
 
-    invoke-virtual {v2, v1}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;->b(Ljava/util/ArrayList;)V
+    invoke-virtual {v2, v1}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;->b(Ljava/util/ArrayList;)V
 
     .line 107
     :cond_0
@@ -1041,9 +1041,9 @@
     if-eq v1, v5, :cond_3
 
     .line 110
-    iget-object v2, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;
 
-    invoke-virtual {v2, v1}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;->c(I)V
+    invoke-virtual {v2, v1}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;->c(I)V
 
     .line 120
     :cond_1
@@ -1055,9 +1055,9 @@
     move-result-object v0
 
     .line 121
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;
 
-    invoke-virtual {v1, v0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;->b(Ljava/lang/String;)V
+    invoke-virtual {v1, v0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;->b(Ljava/lang/String;)V
 
     .line 132
     :cond_2
@@ -1108,14 +1108,14 @@
     .line 147
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->c:Lcom/panasonic/avc/cng/view/play/multiphotoframe/f;
 
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;
 
-    invoke-virtual {v0, p0, v1}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/f;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;)V
+    invoke-virtual {v0, p0, v1}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/f;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;)V
 
     .line 148
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;->f:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;->f:Lcom/panasonic/avc/cng/a/c;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->e:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainView;
 
@@ -1124,41 +1124,41 @@
     invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/a/c;->a(Lcom/panasonic/avc/cng/a/b;)V
 
     .line 149
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;->f:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;->f:Lcom/panasonic/avc/cng/a/c;
 
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;
 
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;->p()Ljava/util/ArrayList;
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;->p()Ljava/util/ArrayList;
 
     move-result-object v1
 
     invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/a/c;->a(Ljava/lang/Object;)V
 
     .line 151
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;->m()Lcom/panasonic/avc/cng/view/play/multiphotoframe/g;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;->m()Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainData;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;
 
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;->n()I
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;->n()I
 
     move-result v1
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/g;->a(I)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainData;->a(I)V
 
     .line 152
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;->m()Lcom/panasonic/avc/cng/view/play/multiphotoframe/g;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;->m()Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainData;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/g;->a()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainData;->a()V
 
     .line 158
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->e:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainView;
@@ -1170,13 +1170,13 @@
     .line 159
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->e:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainView;
 
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;
 
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;->m()Lcom/panasonic/avc/cng/view/play/multiphotoframe/g;
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;->m()Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainData;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainView;->setFrameDataViewModel(Lcom/panasonic/avc/cng/view/play/multiphotoframe/g;)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainView;->setFrameDataViewModel(Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainData;)V
 
     .line 160
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->e:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainView;
@@ -1188,20 +1188,20 @@
 
     .line 112
     :cond_3
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;
 
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;->o()Ljava/util/ArrayList;
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;->o()Ljava/util/ArrayList;
 
     move-result-object v1
 
     if-eqz v1, :cond_1
 
     .line 115
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;
 
-    iget-object v2, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;
 
-    invoke-virtual {v2}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;->o()Ljava/util/ArrayList;
+    invoke-virtual {v2}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;->o()Ljava/util/ArrayList;
 
     move-result-object v2
 
@@ -1209,13 +1209,13 @@
 
     move-result v2
 
-    invoke-virtual {v1, v2}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;->d(I)V
+    invoke-virtual {v1, v2}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;->d(I)V
 
     goto/16 :goto_0
 
     .line 128
     :cond_4
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->_context:Landroid/content/Context;
 
@@ -1223,7 +1223,7 @@
 
     iget-object v3, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->d:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity$a;
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/play/multiphotoframe/h$a;)V
+    invoke-virtual {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/play/multiphotoframe/h$a;)V
 
     goto/16 :goto_1
 .end method
@@ -1245,16 +1245,16 @@
     if-ne v0, v1, :cond_0
 
     .line 201
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;
 
     if-eqz v0, :cond_0
 
     .line 203
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;
 
     const/4 v1, 0x1
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;->b(Z)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;->b(Z)V
 
     .line 208
     :cond_0
@@ -1445,29 +1445,29 @@
 
     .line 861
     :pswitch_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;
 
     if-eqz v0, :cond_0
 
     .line 863
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;->q()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;->q()V
 
     goto :goto_0
 
     .line 869
     :pswitch_1
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;
 
     if-eqz v0, :cond_0
 
     .line 871
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;
 
     const/4 v1, 0x1
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;->f(Z)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;->f(Z)V
 
     goto :goto_0
 
@@ -1487,32 +1487,32 @@
     invoke-super {p0}, Lcom/panasonic/avc/cng/view/play/a/a;->onResume()V
 
     .line 180
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;
 
     if-eqz v0, :cond_0
 
     .line 183
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;->f()Z
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;->f()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 185
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;->b(Z)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;->b(Z)V
 
     .line 186
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->e:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainView;
 
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;
 
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;->i()I
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;->i()I
 
     move-result v1
 
@@ -1564,14 +1564,14 @@
     invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/play/a/a;->onWindowFocusChanged(Z)V
 
     .line 234
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;
 
     if-eqz v0, :cond_0
 
     .line 236
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainActivity;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;
 
-    invoke-virtual {v0, p1}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/h;->g(Z)V
+    invoke-virtual {v0, p1}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameMainViewModel;->g(Z)V
 
     .line 260
     :cond_0

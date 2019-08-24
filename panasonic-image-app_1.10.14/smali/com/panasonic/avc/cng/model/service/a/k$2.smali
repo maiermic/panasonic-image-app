@@ -47,7 +47,7 @@
     .line 823
     iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/a/k$2;->b:Lcom/panasonic/avc/cng/model/service/a/k;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/a/k;->a(Lcom/panasonic/avc/cng/model/service/a/k;)Lcom/panasonic/avc/cng/core/c/s;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/a/k;->a(Lcom/panasonic/avc/cng/model/service/a/k;)Lcom/panasonic/avc/cng/core/c/Picmate;
 
     move-result-object v0
 
@@ -55,7 +55,7 @@
 
     invoke-direct {v1, p0}, Lcom/panasonic/avc/cng/model/service/a/k$2$1;-><init>(Lcom/panasonic/avc/cng/model/service/a/k$2;)V
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/core/c/s;->b(Lcom/panasonic/avc/cng/core/c/g;)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/core/c/Picmate;->b(Lcom/panasonic/avc/cng/core/c/g;)V
 
     .line 859
     return-void

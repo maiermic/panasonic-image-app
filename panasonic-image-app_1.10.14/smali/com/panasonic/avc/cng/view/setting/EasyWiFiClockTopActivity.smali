@@ -64,14 +64,14 @@
     .line 111
     sget-object v0, Lcom/panasonic/avc/cng/view/b/b$a;->dw:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {p0, v0}, Lcom/panasonic/avc/cng/view/b/d;->b(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;)Z
+    invoke-static {p0, v0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->b(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 113
-    invoke-static {p0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;)V
+    invoke-static {p0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;)V
 
     .line 116
     :cond_0
@@ -112,14 +112,14 @@
     .line 211
     sget-object v0, Lcom/panasonic/avc/cng/view/b/b$a;->dw:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {p0, v0}, Lcom/panasonic/avc/cng/view/b/d;->b(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;)Z
+    invoke-static {p0, v0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->b(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 213
-    invoke-static {p0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;)V
+    invoke-static {p0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;)V
 
     .line 215
     const/4 v0, 0x0
@@ -166,7 +166,7 @@
     :goto_1
     sget-object v1, Lcom/panasonic/avc/cng/view/b/b$a;->dw:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {p0, v1}, Lcom/panasonic/avc/cng/view/b/d;->b(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;)Z
+    invoke-static {p0, v1}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->b(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;)Z
 
     move-result v1
 
@@ -199,11 +199,11 @@
     invoke-virtual {v1, v0}, Ljava/util/Calendar;->setTime(Ljava/util/Date;)V
 
     .line 163
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
@@ -211,9 +211,9 @@
     if-eqz v0, :cond_2
 
     .line 166
-    iget-object v2, p0, Lcom/panasonic/avc/cng/view/setting/EasyWiFiClockTopActivity;->a:Lcom/panasonic/avc/cng/view/setting/j;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/view/setting/EasyWiFiClockTopActivity;->a:Lcom/panasonic/avc/cng/view/setting/EasyWiFiManager;
 
-    invoke-virtual {v2}, Lcom/panasonic/avc/cng/view/setting/j;->a()I
+    invoke-virtual {v2}, Lcom/panasonic/avc/cng/view/setting/EasyWiFiManager;->a()I
 
     move-result v2
 
@@ -222,11 +222,11 @@
     if-ne v2, v3, :cond_3
 
     .line 168
-    new-instance v2, Lcom/panasonic/avc/cng/core/a/aw;
+    new-instance v2, Lcom/panasonic/avc/cng/core/a/WearableSettingCommand;
 
     iget-object v0, v0, Lcom/panasonic/avc/cng/model/f;->d:Ljava/lang/String;
 
-    invoke-direct {v2, v0}, Lcom/panasonic/avc/cng/core/a/aw;-><init>(Ljava/lang/String;)V
+    invoke-direct {v2, v0}, Lcom/panasonic/avc/cng/core/a/WearableSettingCommand;-><init>(Ljava/lang/String;)V
 
     .line 169
     const-string v0, "GMT"
@@ -243,7 +243,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v2, v0, v1}, Lcom/panasonic/avc/cng/core/a/aw;->a(Ljava/util/Calendar;Ljava/util/TimeZone;)Z
+    invoke-virtual {v2, v0, v1}, Lcom/panasonic/avc/cng/core/a/WearableSettingCommand;->a(Ljava/util/Calendar;Ljava/util/TimeZone;)Z
 
     .line 180
     :cond_2
@@ -350,7 +350,7 @@
     :cond_1
     sget-object v0, Lcom/panasonic/avc/cng/view/b/b$a;->dw:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {p0, v0}, Lcom/panasonic/avc/cng/view/b/d;->b(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;)Z
+    invoke-static {p0, v0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->b(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;)Z
 
     move-result v0
 
@@ -378,7 +378,7 @@
 
     invoke-direct {v4, p0, p0, v1, v0}, Lcom/panasonic/avc/cng/view/setting/EasyWiFiClockTopActivity$1;-><init>(Lcom/panasonic/avc/cng/view/setting/EasyWiFiClockTopActivity;Landroid/app/Activity;Ljava/text/DateFormat;Ljava/util/Date;)V
 
-    invoke-static {p0, v3, v2, v4}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;Lcom/panasonic/avc/cng/view/b/a$c;)V
+    invoke-static {p0, v3, v2, v4}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;Lcom/panasonic/avc/cng/view/b/a$c;)V
 
     .line 101
     new-instance v1, Lcom/panasonic/avc/cng/util/n;
@@ -430,7 +430,7 @@
 
     const-string v1, "onCreate"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->verbose(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 41
     :cond_0
@@ -439,9 +439,9 @@
     invoke-virtual {p0, v0}, Lcom/panasonic/avc/cng/view/setting/EasyWiFiClockTopActivity;->setContentView(I)V
 
     .line 44
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/EasyWiFiClockTopActivity;->a:Lcom/panasonic/avc/cng/view/setting/j;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/EasyWiFiClockTopActivity;->a:Lcom/panasonic/avc/cng/view/setting/EasyWiFiManager;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/j;->e()Ljava/util/Date;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/EasyWiFiManager;->e()Ljava/util/Date;
 
     move-result-object v3
 

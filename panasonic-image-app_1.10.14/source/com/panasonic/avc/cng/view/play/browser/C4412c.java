@@ -23,8 +23,8 @@ import com.panasonic.avc.cng.view.parts.C4151e;
 import com.panasonic.avc.cng.view.parts.C4204j;
 import com.panasonic.avc.cng.view.parts.C4213l;
 import com.panasonic.avc.cng.view.parts.C4230p;
-import com.panasonic.avc.cng.view.parts.C4245t;
-import com.panasonic.avc.cng.view.parts.C4245t.C4252c;
+import com.panasonic.avc.cng.view.parts.BrowserViewModel;
+import com.panasonic.avc.cng.view.parts.BrowserViewModel.C4252c;
 import com.panasonic.avc.cng.view.parts.C4261w;
 import com.panasonic.avc.cng.view.smartoperation.PictureJumpActivity;
 
@@ -36,14 +36,14 @@ public class C4412c {
     /* access modifiers changed from: private */
 
     /* renamed from: b */
-    public C4417d f14546b;
+    public GroupBrowserViewModel f14546b;
     /* access modifiers changed from: private */
 
     /* renamed from: c */
     public GridView f14547c;
 
     /* renamed from: a */
-    public void mo10309a(Activity activity, C4417d dVar) {
+    public void mo10309a(Activity activity, GroupBrowserViewModel dVar) {
         this.f14545a = activity;
         this.f14546b = dVar;
         m17349d();
@@ -195,7 +195,7 @@ public class C4412c {
         if (this.f14547c == null || this.f14546b == null) {
             return null;
         }
-        C4245t m = this.f14546b.mo10334m();
+        BrowserViewModel m = this.f14546b.mo10334m();
         m.getClass();
         return new C4252c(this.f14547c.getFirstVisiblePosition(), this.f14547c.getLastVisiblePosition());
     }

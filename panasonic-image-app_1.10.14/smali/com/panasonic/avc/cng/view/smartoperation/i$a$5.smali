@@ -43,9 +43,9 @@
     .line 253
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/smartoperation/i$a$5;->a:Lcom/panasonic/avc/cng/view/smartoperation/i$a;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/smartoperation/i$a;->a:Lcom/panasonic/avc/cng/view/smartoperation/i;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/smartoperation/i$a;->a:Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/smartoperation/i;->a(Lcom/panasonic/avc/cng/view/smartoperation/i;)Lcom/panasonic/avc/cng/model/b/c$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;->a(Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;)Lcom/panasonic/avc/cng/model/b/c$a;
 
     move-result-object v0
 
@@ -54,9 +54,9 @@
     .line 254
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/smartoperation/i$a$5;->a:Lcom/panasonic/avc/cng/view/smartoperation/i$a;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/smartoperation/i$a;->a:Lcom/panasonic/avc/cng/view/smartoperation/i;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/smartoperation/i$a;->a:Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/smartoperation/i;->a(Lcom/panasonic/avc/cng/view/smartoperation/i;)Lcom/panasonic/avc/cng/model/b/c$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;->a(Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;)Lcom/panasonic/avc/cng/model/b/c$a;
 
     move-result-object v0
 

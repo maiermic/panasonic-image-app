@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/view/play/movieslideshow/c;->a(Lcom/panasonic/avc/cng/model/c/e;)V
+    value = Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowViewModel;->a(Lcom/panasonic/avc/cng/model/c/CameraStatus;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -22,16 +22,16 @@
 
 .field final synthetic b:I
 
-.field final synthetic c:Lcom/panasonic/avc/cng/view/play/movieslideshow/c;
+.field final synthetic c:Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowViewModel;
 
 
 # direct methods
-.method constructor <init>(Lcom/panasonic/avc/cng/view/play/movieslideshow/c;II)V
+.method constructor <init>(Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowViewModel;II)V
     .locals 0
 
     .prologue
     .line 419
-    iput-object p1, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/c$1;->c:Lcom/panasonic/avc/cng/view/play/movieslideshow/c;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/c$1;->c:Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowViewModel;
 
     iput p2, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/c$1;->a:I
 
@@ -50,9 +50,9 @@
     .prologue
     .line 424
     :try_start_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/c$1;->c:Lcom/panasonic/avc/cng/view/play/movieslideshow/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/c$1;->c:Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/movieslideshow/c;->i:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowViewModel;->i:Lcom/panasonic/avc/cng/a/c;
 
     iget v1, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/c$1;->a:I
 
@@ -63,9 +63,9 @@
     invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/a/c;->a(Ljava/lang/Object;)V
 
     .line 425
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/c$1;->c:Lcom/panasonic/avc/cng/view/play/movieslideshow/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/c$1;->c:Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/movieslideshow/c;->h:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowViewModel;->h:Lcom/panasonic/avc/cng/a/c;
 
     iget v1, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/c$1;->b:I
 

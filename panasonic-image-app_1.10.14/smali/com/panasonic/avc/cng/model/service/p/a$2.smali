@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/model/service/p/a;->a(Ljava/lang/String;ZIILjava/lang/String;ZZ)V
+    value = Lcom/panasonic/avc/cng/model/service/p/WifiService;->a(Ljava/lang/String;ZIILjava/lang/String;ZZ)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -32,16 +32,16 @@
 
 .field final synthetic g:Z
 
-.field final synthetic h:Lcom/panasonic/avc/cng/model/service/p/a;
+.field final synthetic h:Lcom/panasonic/avc/cng/model/service/p/WifiService;
 
 
 # direct methods
-.method constructor <init>(Lcom/panasonic/avc/cng/model/service/p/a;ZILjava/lang/String;IZLjava/lang/String;Z)V
+.method constructor <init>(Lcom/panasonic/avc/cng/model/service/p/WifiService;ZILjava/lang/String;IZLjava/lang/String;Z)V
     .locals 0
 
     .prologue
     .line 1061
-    iput-object p1, p0, Lcom/panasonic/avc/cng/model/service/p/a$2;->h:Lcom/panasonic/avc/cng/model/service/p/a;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/model/service/p/a$2;->h:Lcom/panasonic/avc/cng/model/service/p/WifiService;
 
     iput-boolean p2, p0, Lcom/panasonic/avc/cng/model/service/p/a$2;->a:Z
 
@@ -79,9 +79,9 @@
     const/4 v2, 0x0
 
     .line 1064
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/p/a$2;->h:Lcom/panasonic/avc/cng/model/service/p/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/p/a$2;->h:Lcom/panasonic/avc/cng/model/service/p/WifiService;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/p/a;->f(Lcom/panasonic/avc/cng/model/service/p/a;)Landroid/content/Context;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/p/WifiService;->f(Lcom/panasonic/avc/cng/model/service/p/WifiService;)Landroid/content/Context;
 
     move-result-object v0
 
@@ -135,19 +135,19 @@
     invoke-virtual {v0, v7}, Landroid/net/ConnectivityManager;->bindProcessToNetwork(Landroid/net/Network;)Z
 
     .line 1074
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/p/a$2;->h:Lcom/panasonic/avc/cng/model/service/p/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/p/a$2;->h:Lcom/panasonic/avc/cng/model/service/p/WifiService;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/p/a;->g(Lcom/panasonic/avc/cng/model/service/p/a;)Landroid/content/Context;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/p/WifiService;->g(Lcom/panasonic/avc/cng/model/service/p/WifiService;)Landroid/content/Context;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/p/a$2;->h:Lcom/panasonic/avc/cng/model/service/p/a;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/p/a$2;->h:Lcom/panasonic/avc/cng/model/service/p/WifiService;
 
-    invoke-static {v1}, Lcom/panasonic/avc/cng/model/service/p/a;->h(Lcom/panasonic/avc/cng/model/service/p/a;)Landroid/os/Handler;
+    invoke-static {v1}, Lcom/panasonic/avc/cng/model/service/p/WifiService;->h(Lcom/panasonic/avc/cng/model/service/p/WifiService;)Landroid/os/Handler;
 
     move-result-object v1
 
-    invoke-static {v0, v5, v1}, Lcom/panasonic/avc/cng/model/service/z;->b(Landroid/content/Context;ZLandroid/os/Handler;)Lcom/panasonic/avc/cng/model/service/f;
+    invoke-static {v0, v5, v1}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->b(Landroid/content/Context;ZLandroid/os/Handler;)Lcom/panasonic/avc/cng/model/service/f;
 
     move-result-object v0
 
@@ -156,19 +156,19 @@
 
     .line 1084
     :cond_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/p/a$2;->h:Lcom/panasonic/avc/cng/model/service/p/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/p/a$2;->h:Lcom/panasonic/avc/cng/model/service/p/WifiService;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/p/a;->i(Lcom/panasonic/avc/cng/model/service/p/a;)Landroid/content/Context;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/p/WifiService;->i(Lcom/panasonic/avc/cng/model/service/p/WifiService;)Landroid/content/Context;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/p/a$2;->h:Lcom/panasonic/avc/cng/model/service/p/a;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/p/a$2;->h:Lcom/panasonic/avc/cng/model/service/p/WifiService;
 
-    invoke-static {v1}, Lcom/panasonic/avc/cng/model/service/p/a;->h(Lcom/panasonic/avc/cng/model/service/p/a;)Landroid/os/Handler;
+    invoke-static {v1}, Lcom/panasonic/avc/cng/model/service/p/WifiService;->h(Lcom/panasonic/avc/cng/model/service/p/WifiService;)Landroid/os/Handler;
 
     move-result-object v1
 
-    invoke-static {v0, v5, v1}, Lcom/panasonic/avc/cng/model/service/z;->a(Landroid/content/Context;ZLandroid/os/Handler;)Lcom/panasonic/avc/cng/model/service/e;
+    invoke-static {v0, v5, v1}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->a(Landroid/content/Context;ZLandroid/os/Handler;)Lcom/panasonic/avc/cng/model/service/e;
 
     move-result-object v7
 
@@ -178,9 +178,9 @@
 
     .line 1090
     :goto_1
-    iget-object v4, p0, Lcom/panasonic/avc/cng/model/service/p/a$2;->h:Lcom/panasonic/avc/cng/model/service/p/a;
+    iget-object v4, p0, Lcom/panasonic/avc/cng/model/service/p/a$2;->h:Lcom/panasonic/avc/cng/model/service/p/WifiService;
 
-    invoke-static {v4}, Lcom/panasonic/avc/cng/model/service/p/a;->j(Lcom/panasonic/avc/cng/model/service/p/a;)Ljava/lang/Object;
+    invoke-static {v4}, Lcom/panasonic/avc/cng/model/service/p/WifiService;->j(Lcom/panasonic/avc/cng/model/service/p/WifiService;)Ljava/lang/Object;
 
     move-result-object v4
 
@@ -188,20 +188,20 @@
 
     .line 1092
     :try_start_0
-    iget-object v6, p0, Lcom/panasonic/avc/cng/model/service/p/a$2;->h:Lcom/panasonic/avc/cng/model/service/p/a;
+    iget-object v6, p0, Lcom/panasonic/avc/cng/model/service/p/a$2;->h:Lcom/panasonic/avc/cng/model/service/p/WifiService;
 
-    invoke-static {v6}, Lcom/panasonic/avc/cng/model/service/p/a;->k(Lcom/panasonic/avc/cng/model/service/p/a;)Z
+    invoke-static {v6}, Lcom/panasonic/avc/cng/model/service/p/WifiService;->k(Lcom/panasonic/avc/cng/model/service/p/WifiService;)Z
 
     move-result v6
 
     if-eqz v6, :cond_3
 
     .line 1094
-    iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/p/a$2;->h:Lcom/panasonic/avc/cng/model/service/p/a;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/p/a$2;->h:Lcom/panasonic/avc/cng/model/service/p/WifiService;
 
     const/4 v6, 0x0
 
-    invoke-static {v1, v6}, Lcom/panasonic/avc/cng/model/service/p/a;->c(Lcom/panasonic/avc/cng/model/service/p/a;Z)Z
+    invoke-static {v1, v6}, Lcom/panasonic/avc/cng/model/service/p/WifiService;->c(Lcom/panasonic/avc/cng/model/service/p/WifiService;Z)Z
 
     .line 1096
     monitor-exit v4
@@ -214,9 +214,9 @@
 
     .line 1174
     :goto_2
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/p/a$2;->h:Lcom/panasonic/avc/cng/model/service/p/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/p/a$2;->h:Lcom/panasonic/avc/cng/model/service/p/WifiService;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/p/a;->j(Lcom/panasonic/avc/cng/model/service/p/a;)Ljava/lang/Object;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/p/WifiService;->j(Lcom/panasonic/avc/cng/model/service/p/WifiService;)Ljava/lang/Object;
 
     move-result-object v8
 
@@ -224,20 +224,20 @@
 
     .line 1176
     :try_start_1
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/p/a$2;->h:Lcom/panasonic/avc/cng/model/service/p/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/p/a$2;->h:Lcom/panasonic/avc/cng/model/service/p/WifiService;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/p/a;->k(Lcom/panasonic/avc/cng/model/service/p/a;)Z
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/p/WifiService;->k(Lcom/panasonic/avc/cng/model/service/p/WifiService;)Z
 
     move-result v0
 
     if-eqz v0, :cond_18
 
     .line 1178
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/p/a$2;->h:Lcom/panasonic/avc/cng/model/service/p/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/p/a$2;->h:Lcom/panasonic/avc/cng/model/service/p/WifiService;
 
     const/4 v6, 0x0
 
-    invoke-static {v0, v6}, Lcom/panasonic/avc/cng/model/service/p/a;->c(Lcom/panasonic/avc/cng/model/service/p/a;Z)Z
+    invoke-static {v0, v6}, Lcom/panasonic/avc/cng/model/service/p/WifiService;->c(Lcom/panasonic/avc/cng/model/service/p/WifiService;Z)Z
 
     move v6, v5
 
@@ -268,13 +268,13 @@
 
     move-result-object v8
 
-    invoke-static {v0, v8}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v8}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 1183
     if-nez v6, :cond_1
 
     .line 1186
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v8
 
@@ -351,18 +351,18 @@
     if-lez v0, :cond_b
 
     .line 1200
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/p/a$2;->h:Lcom/panasonic/avc/cng/model/service/p/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/p/a$2;->h:Lcom/panasonic/avc/cng/model/service/p/WifiService;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/p/a;->b(Lcom/panasonic/avc/cng/model/service/p/a;)Lcom/panasonic/avc/cng/model/service/j$d;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/p/WifiService;->b(Lcom/panasonic/avc/cng/model/service/p/WifiService;)Lcom/panasonic/avc/cng/model/service/j$d;
 
     move-result-object v0
 
     if-eqz v0, :cond_1
 
     .line 1202
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/p/a$2;->h:Lcom/panasonic/avc/cng/model/service/p/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/p/a$2;->h:Lcom/panasonic/avc/cng/model/service/p/WifiService;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/p/a;->b(Lcom/panasonic/avc/cng/model/service/p/a;)Lcom/panasonic/avc/cng/model/service/j$d;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/p/WifiService;->b(Lcom/panasonic/avc/cng/model/service/p/WifiService;)Lcom/panasonic/avc/cng/model/service/j$d;
 
     move-result-object v1
 
@@ -402,9 +402,9 @@
     move-result-object v4
 
     .line 1104
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/p/a$2;->h:Lcom/panasonic/avc/cng/model/service/p/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/p/a$2;->h:Lcom/panasonic/avc/cng/model/service/p/WifiService;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/p/a;->j(Lcom/panasonic/avc/cng/model/service/p/a;)Ljava/lang/Object;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/p/WifiService;->j(Lcom/panasonic/avc/cng/model/service/p/WifiService;)Ljava/lang/Object;
 
     move-result-object v6
 
@@ -412,20 +412,20 @@
 
     .line 1106
     :try_start_3
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/p/a$2;->h:Lcom/panasonic/avc/cng/model/service/p/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/p/a$2;->h:Lcom/panasonic/avc/cng/model/service/p/WifiService;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/p/a;->k(Lcom/panasonic/avc/cng/model/service/p/a;)Z
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/p/WifiService;->k(Lcom/panasonic/avc/cng/model/service/p/WifiService;)Z
 
     move-result v0
 
     if-eqz v0, :cond_4
 
     .line 1108
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/p/a$2;->h:Lcom/panasonic/avc/cng/model/service/p/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/p/a$2;->h:Lcom/panasonic/avc/cng/model/service/p/WifiService;
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/model/service/p/a;->c(Lcom/panasonic/avc/cng/model/service/p/a;Z)Z
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/model/service/p/WifiService;->c(Lcom/panasonic/avc/cng/model/service/p/WifiService;Z)Z
 
     .line 1110
     monitor-exit v6
@@ -560,23 +560,23 @@
     if-ne v0, v10, :cond_a
 
     .line 1150
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/p/a$2;->h:Lcom/panasonic/avc/cng/model/service/p/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/p/a$2;->h:Lcom/panasonic/avc/cng/model/service/p/WifiService;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/p/a;->a(Lcom/panasonic/avc/cng/model/service/p/a;)Lcom/panasonic/avc/cng/view/cameraconnect/l;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/p/WifiService;->a(Lcom/panasonic/avc/cng/model/service/p/WifiService;)Lcom/panasonic/avc/cng/view/cameraconnect/WifiUtil;
 
     move-result-object v0
 
-    iget-object v6, p0, Lcom/panasonic/avc/cng/model/service/p/a$2;->h:Lcom/panasonic/avc/cng/model/service/p/a;
+    iget-object v6, p0, Lcom/panasonic/avc/cng/model/service/p/a$2;->h:Lcom/panasonic/avc/cng/model/service/p/WifiService;
 
-    invoke-static {v6}, Lcom/panasonic/avc/cng/model/service/p/a;->a(Lcom/panasonic/avc/cng/model/service/p/a;)Lcom/panasonic/avc/cng/view/cameraconnect/l;
-
-    move-result-object v6
-
-    invoke-virtual {v6}, Lcom/panasonic/avc/cng/view/cameraconnect/l;->b()Landroid/net/wifi/WifiInfo;
+    invoke-static {v6}, Lcom/panasonic/avc/cng/model/service/p/WifiService;->a(Lcom/panasonic/avc/cng/model/service/p/WifiService;)Lcom/panasonic/avc/cng/view/cameraconnect/WifiUtil;
 
     move-result-object v6
 
-    invoke-virtual {v0, v6}, Lcom/panasonic/avc/cng/view/cameraconnect/l;->a(Landroid/net/wifi/WifiInfo;)Ljava/lang/String;
+    invoke-virtual {v6}, Lcom/panasonic/avc/cng/view/cameraconnect/WifiUtil;->b()Landroid/net/wifi/WifiInfo;
+
+    move-result-object v6
+
+    invoke-virtual {v0, v6}, Lcom/panasonic/avc/cng/view/cameraconnect/WifiUtil;->a(Landroid/net/wifi/WifiInfo;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -598,11 +598,11 @@
 
     .line 1163
     :cond_a
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/p/a$2;->h:Lcom/panasonic/avc/cng/model/service/p/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/p/a$2;->h:Lcom/panasonic/avc/cng/model/service/p/WifiService;
 
     const-wide/16 v8, 0x3e8
 
-    invoke-virtual {v0, v8, v9}, Lcom/panasonic/avc/cng/model/service/p/a;->a(J)V
+    invoke-virtual {v0, v8, v9}, Lcom/panasonic/avc/cng/model/service/p/WifiService;->a(J)V
 
     .line 1164
     add-int/lit8 v0, v1, 0x1
@@ -626,18 +626,18 @@
 
     .line 1207
     :cond_b
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/p/a$2;->h:Lcom/panasonic/avc/cng/model/service/p/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/p/a$2;->h:Lcom/panasonic/avc/cng/model/service/p/WifiService;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/p/a;->b(Lcom/panasonic/avc/cng/model/service/p/a;)Lcom/panasonic/avc/cng/model/service/j$d;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/p/WifiService;->b(Lcom/panasonic/avc/cng/model/service/p/WifiService;)Lcom/panasonic/avc/cng/model/service/j$d;
 
     move-result-object v0
 
     if-eqz v0, :cond_1
 
     .line 1209
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/p/a$2;->h:Lcom/panasonic/avc/cng/model/service/p/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/p/a$2;->h:Lcom/panasonic/avc/cng/model/service/p/WifiService;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/p/a;->b(Lcom/panasonic/avc/cng/model/service/p/a;)Lcom/panasonic/avc/cng/model/service/j$d;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/p/WifiService;->b(Lcom/panasonic/avc/cng/model/service/p/WifiService;)Lcom/panasonic/avc/cng/model/service/j$d;
 
     move-result-object v0
 
@@ -649,19 +649,19 @@
 
     .line 1215
     :cond_c
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/p/a$2;->h:Lcom/panasonic/avc/cng/model/service/p/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/p/a$2;->h:Lcom/panasonic/avc/cng/model/service/p/WifiService;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/p/a;->l(Lcom/panasonic/avc/cng/model/service/p/a;)Landroid/content/Context;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/p/WifiService;->l(Lcom/panasonic/avc/cng/model/service/p/WifiService;)Landroid/content/Context;
 
     move-result-object v0
 
-    iget-object v6, p0, Lcom/panasonic/avc/cng/model/service/p/a$2;->h:Lcom/panasonic/avc/cng/model/service/p/a;
+    iget-object v6, p0, Lcom/panasonic/avc/cng/model/service/p/a$2;->h:Lcom/panasonic/avc/cng/model/service/p/WifiService;
 
-    invoke-static {v6}, Lcom/panasonic/avc/cng/model/service/p/a;->h(Lcom/panasonic/avc/cng/model/service/p/a;)Landroid/os/Handler;
+    invoke-static {v6}, Lcom/panasonic/avc/cng/model/service/p/WifiService;->h(Lcom/panasonic/avc/cng/model/service/p/WifiService;)Landroid/os/Handler;
 
     move-result-object v6
 
-    invoke-static {v0, v6, v2}, Lcom/panasonic/avc/cng/model/service/z;->a(Landroid/content/Context;Landroid/os/Handler;Z)Lcom/panasonic/avc/cng/model/service/j;
+    invoke-static {v0, v6, v2}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->a(Landroid/content/Context;Landroid/os/Handler;Z)Lcom/panasonic/avc/cng/model/service/j;
 
     move-result-object v0
 
@@ -689,7 +689,7 @@
 
     const-string v1, "\u81ea\u52d5\u753b\u50cf\u8ee2\u9001\u3067acctrl\u304c\u7d42\u308f\u3063\u3066\u3044\u305f\u3089M-Search\u3057\u306a\u3044"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     goto/16 :goto_5
 
@@ -710,9 +710,9 @@
 
     check-cast v0, Lcom/panasonic/avc/cng/model/f;
 
-    iget-object v6, p0, Lcom/panasonic/avc/cng/model/service/p/a$2;->h:Lcom/panasonic/avc/cng/model/service/p/a;
+    iget-object v6, p0, Lcom/panasonic/avc/cng/model/service/p/a$2;->h:Lcom/panasonic/avc/cng/model/service/p/WifiService;
 
-    iget-object v6, v6, Lcom/panasonic/avc/cng/model/service/p/a;->c:Lcom/panasonic/avc/cng/model/service/c/a$b;
+    iget-object v6, v6, Lcom/panasonic/avc/cng/model/service/p/WifiService;->c:Lcom/panasonic/avc/cng/model/service/c/a$b;
 
     invoke-interface {v7, v0, v6, v5}, Lcom/panasonic/avc/cng/model/service/e;->a(Lcom/panasonic/avc/cng/model/f;Lcom/panasonic/avc/cng/model/service/c/a$b;Z)Z
 
@@ -766,9 +766,9 @@
     invoke-direct {v9, v0}, Lcom/panasonic/avc/cng/core/a/d;-><init>(Ljava/lang/String;)V
 
     .line 1247
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/p/a$2;->h:Lcom/panasonic/avc/cng/model/service/p/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/p/a$2;->h:Lcom/panasonic/avc/cng/model/service/p/WifiService;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/p/a;->m(Lcom/panasonic/avc/cng/model/service/p/a;)Landroid/content/Context;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/p/WifiService;->m(Lcom/panasonic/avc/cng/model/service/p/WifiService;)Landroid/content/Context;
 
     move-result-object v0
 
@@ -788,7 +788,7 @@
     move-result-object v0
 
     .line 1249
-    invoke-virtual {v9, v0}, Lcom/panasonic/avc/cng/core/a/d;->a(Ljava/lang/String;)Lcom/panasonic/avc/cng/model/c/h;
+    invoke-virtual {v9, v0}, Lcom/panasonic/avc/cng/core/a/d;->a(Ljava/lang/String;)Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
     .line 1252
     :cond_e
@@ -840,7 +840,7 @@
     if-eqz v0, :cond_15
 
     .line 1262
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v9
 
@@ -850,10 +850,10 @@
 
     check-cast v0, Lcom/panasonic/avc/cng/model/f;
 
-    invoke-virtual {v9, v0}, Lcom/panasonic/avc/cng/model/g;->a(Lcom/panasonic/avc/cng/model/f;)V
+    invoke-virtual {v9, v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a(Lcom/panasonic/avc/cng/model/f;)V
 
     .line 1263
-    iget-object v9, p0, Lcom/panasonic/avc/cng/model/service/p/a$2;->h:Lcom/panasonic/avc/cng/model/service/p/a;
+    iget-object v9, p0, Lcom/panasonic/avc/cng/model/service/p/a$2;->h:Lcom/panasonic/avc/cng/model/service/p/WifiService;
 
     invoke-interface {v4, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -861,18 +861,18 @@
 
     check-cast v0, Lcom/panasonic/avc/cng/model/f;
 
-    invoke-static {v9, v0}, Lcom/panasonic/avc/cng/model/service/p/a;->a(Lcom/panasonic/avc/cng/model/service/p/a;Lcom/panasonic/avc/cng/model/f;)Z
+    invoke-static {v9, v0}, Lcom/panasonic/avc/cng/model/service/p/WifiService;->a(Lcom/panasonic/avc/cng/model/service/p/WifiService;Lcom/panasonic/avc/cng/model/f;)Z
 
     move-result v0
 
     if-nez v0, :cond_15
 
     .line 1265
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0, v3}, Lcom/panasonic/avc/cng/model/g;->a(Lcom/panasonic/avc/cng/model/f;)V
+    invoke-virtual {v0, v3}, Lcom/panasonic/avc/cng/model/DeviceManager;->a(Lcom/panasonic/avc/cng/model/f;)V
 
     move v0, v5
 
@@ -907,24 +907,24 @@
 
     check-cast v0, Lcom/panasonic/avc/cng/model/f;
 
-    invoke-virtual {v8, v0}, Lcom/panasonic/avc/cng/model/g;->a(Lcom/panasonic/avc/cng/model/f;)V
+    invoke-virtual {v8, v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a(Lcom/panasonic/avc/cng/model/f;)V
 
     .line 1281
     invoke-interface {v7}, Lcom/panasonic/avc/cng/model/service/e;->e()V
 
     .line 1286
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/p/a$2;->h:Lcom/panasonic/avc/cng/model/service/p/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/p/a$2;->h:Lcom/panasonic/avc/cng/model/service/p/WifiService;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/p/a;->n(Lcom/panasonic/avc/cng/model/service/p/a;)Landroid/content/Context;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/p/WifiService;->n(Lcom/panasonic/avc/cng/model/service/p/WifiService;)Landroid/content/Context;
 
     move-result-object v0
 
     if-eqz v0, :cond_14
 
     .line 1288
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/p/a$2;->h:Lcom/panasonic/avc/cng/model/service/p/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/p/a$2;->h:Lcom/panasonic/avc/cng/model/service/p/WifiService;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/p/a;->o(Lcom/panasonic/avc/cng/model/service/p/a;)Landroid/content/Context;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/p/WifiService;->o(Lcom/panasonic/avc/cng/model/service/p/WifiService;)Landroid/content/Context;
 
     move-result-object v0
 
@@ -953,18 +953,18 @@
     :goto_8
     if-eqz v3, :cond_f
 
-    iget-object v7, p0, Lcom/panasonic/avc/cng/model/service/p/a$2;->h:Lcom/panasonic/avc/cng/model/service/p/a;
+    iget-object v7, p0, Lcom/panasonic/avc/cng/model/service/p/a$2;->h:Lcom/panasonic/avc/cng/model/service/p/WifiService;
 
-    invoke-static {v7}, Lcom/panasonic/avc/cng/model/service/p/a;->p(Lcom/panasonic/avc/cng/model/service/p/a;)Landroid/content/Context;
+    invoke-static {v7}, Lcom/panasonic/avc/cng/model/service/p/WifiService;->p(Lcom/panasonic/avc/cng/model/service/p/WifiService;)Landroid/content/Context;
 
     move-result-object v7
 
     if-eqz v7, :cond_f
 
     .line 1312
-    iget-object v7, p0, Lcom/panasonic/avc/cng/model/service/p/a$2;->h:Lcom/panasonic/avc/cng/model/service/p/a;
+    iget-object v7, p0, Lcom/panasonic/avc/cng/model/service/p/a$2;->h:Lcom/panasonic/avc/cng/model/service/p/WifiService;
 
-    invoke-static {v7}, Lcom/panasonic/avc/cng/model/service/p/a;->q(Lcom/panasonic/avc/cng/model/service/p/a;)Landroid/content/Context;
+    invoke-static {v7}, Lcom/panasonic/avc/cng/model/service/p/WifiService;->q(Lcom/panasonic/avc/cng/model/service/p/WifiService;)Landroid/content/Context;
 
     move-result-object v7
 
@@ -977,9 +977,9 @@
     move-result-object v7
 
     .line 1314
-    iget-object v8, p0, Lcom/panasonic/avc/cng/model/service/p/a$2;->h:Lcom/panasonic/avc/cng/model/service/p/a;
+    iget-object v8, p0, Lcom/panasonic/avc/cng/model/service/p/a$2;->h:Lcom/panasonic/avc/cng/model/service/p/WifiService;
 
-    invoke-static {v8}, Lcom/panasonic/avc/cng/model/service/p/a;->r(Lcom/panasonic/avc/cng/model/service/p/a;)Landroid/content/Context;
+    invoke-static {v8}, Lcom/panasonic/avc/cng/model/service/p/WifiService;->r(Lcom/panasonic/avc/cng/model/service/p/WifiService;)Landroid/content/Context;
 
     move-result-object v8
 
@@ -1019,9 +1019,9 @@
 
     .line 1322
     :goto_9
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/p/a$2;->h:Lcom/panasonic/avc/cng/model/service/p/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/p/a$2;->h:Lcom/panasonic/avc/cng/model/service/p/WifiService;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/p/a;->b(Lcom/panasonic/avc/cng/model/service/p/a;)Lcom/panasonic/avc/cng/model/service/j$d;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/p/WifiService;->b(Lcom/panasonic/avc/cng/model/service/p/WifiService;)Lcom/panasonic/avc/cng/model/service/j$d;
 
     move-result-object v0
 
@@ -1030,9 +1030,9 @@
     if-nez v6, :cond_1
 
     .line 1325
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/p/a$2;->h:Lcom/panasonic/avc/cng/model/service/p/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/p/a$2;->h:Lcom/panasonic/avc/cng/model/service/p/WifiService;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/p/a;->b(Lcom/panasonic/avc/cng/model/service/p/a;)Lcom/panasonic/avc/cng/model/service/j$d;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/p/WifiService;->b(Lcom/panasonic/avc/cng/model/service/p/WifiService;)Lcom/panasonic/avc/cng/model/service/j$d;
 
     move-result-object v6
 

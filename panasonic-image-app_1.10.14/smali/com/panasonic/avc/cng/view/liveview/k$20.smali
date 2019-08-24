@@ -154,11 +154,11 @@
     .line 6756
     iget-object v3, p0, Lcom/panasonic/avc/cng/view/liveview/k$20;->d:Lcom/panasonic/avc/cng/view/liveview/k;
 
-    invoke-static {v3}, Lcom/panasonic/avc/cng/view/liveview/k;->au(Lcom/panasonic/avc/cng/view/liveview/k;)Lcom/panasonic/avc/cng/core/a/g;
+    invoke-static {v3}, Lcom/panasonic/avc/cng/view/liveview/k;->au(Lcom/panasonic/avc/cng/view/liveview/k;)Lcom/panasonic/avc/cng/core/a/FocusCommand;
 
     move-result-object v3
 
-    invoke-virtual {v3, v2, v0}, Lcom/panasonic/avc/cng/core/a/g;->a(II)Lcom/panasonic/avc/cng/model/c/i;
+    invoke-virtual {v3, v2, v0}, Lcom/panasonic/avc/cng/core/a/FocusCommand;->a(II)Lcom/panasonic/avc/cng/model/c/i;
 
     move-result-object v0
 
@@ -174,7 +174,7 @@
 
     const-string v1, "MF assist position setting error."
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 6804
     :cond_3
@@ -189,7 +189,7 @@
     :cond_5
     iget-object v2, p0, Lcom/panasonic/avc/cng/view/liveview/k$20;->d:Lcom/panasonic/avc/cng/view/liveview/k;
 
-    invoke-static {v2}, Lcom/panasonic/avc/cng/view/liveview/k;->au(Lcom/panasonic/avc/cng/view/liveview/k;)Lcom/panasonic/avc/cng/core/a/g;
+    invoke-static {v2}, Lcom/panasonic/avc/cng/view/liveview/k;->au(Lcom/panasonic/avc/cng/view/liveview/k;)Lcom/panasonic/avc/cng/core/a/FocusCommand;
 
     move-result-object v2
 
@@ -197,12 +197,12 @@
 
     move-result v3
 
-    invoke-virtual {v2, v3}, Lcom/panasonic/avc/cng/core/a/g;->b(I)Lcom/panasonic/avc/cng/model/c/h;
+    invoke-virtual {v2, v3}, Lcom/panasonic/avc/cng/core/a/FocusCommand;->b(I)Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
     move-result-object v2
 
     .line 6771
-    invoke-virtual {v2}, Lcom/panasonic/avc/cng/model/c/h;->a()Z
+    invoke-virtual {v2}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;->a()Z
 
     move-result v2
 
@@ -213,7 +213,7 @@
 
     const-string v1, "MF assist magnification setting error."
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_2
 

@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/model/service/b/a;->b(Ljava/util/List;Lcom/panasonic/avc/cng/model/service/c$a;)V
+    value = Lcom/panasonic/avc/cng/model/service/b/ContentControlService;->b(Ljava/util/List;Lcom/panasonic/avc/cng/model/service/c$a;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,16 +20,16 @@
 # instance fields
 .field final synthetic a:Lcom/panasonic/avc/cng/model/service/c$a;
 
-.field final synthetic b:Lcom/panasonic/avc/cng/model/service/b/a;
+.field final synthetic b:Lcom/panasonic/avc/cng/model/service/b/ContentControlService;
 
 
 # direct methods
-.method constructor <init>(Lcom/panasonic/avc/cng/model/service/b/a;Lcom/panasonic/avc/cng/model/service/c$a;)V
+.method constructor <init>(Lcom/panasonic/avc/cng/model/service/b/ContentControlService;Lcom/panasonic/avc/cng/model/service/c$a;)V
     .locals 0
 
     .prologue
     .line 201
-    iput-object p1, p0, Lcom/panasonic/avc/cng/model/service/b/a$5;->b:Lcom/panasonic/avc/cng/model/service/b/a;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/model/service/b/a$5;->b:Lcom/panasonic/avc/cng/model/service/b/ContentControlService;
 
     iput-object p2, p0, Lcom/panasonic/avc/cng/model/service/b/a$5;->a:Lcom/panasonic/avc/cng/model/service/c$a;
 

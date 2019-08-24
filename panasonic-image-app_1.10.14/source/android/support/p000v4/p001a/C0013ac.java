@@ -13,7 +13,7 @@ import android.support.p000v4.p001a.C0037af.C0038a;
 import android.support.p000v4.p001a.C0039ag.C0040a;
 import android.support.p000v4.p001a.C0039ag.C0040a.C0041a;
 import android.support.p000v4.p001a.C0043ai.C0044a;
-import android.support.p000v4.p001a.C0045aj.C0046a;
+import android.support.p000v4.p001a.NotificationCompat.C0046a;
 import android.support.p000v4.p001a.C0047ak.C0048a;
 import android.support.p000v4.p002b.C0126a;
 import android.widget.RemoteViews;
@@ -602,7 +602,7 @@ public class C0013ac {
 
         /* renamed from: a */
         public Bundle mo41a(Notification notification) {
-            return C0045aj.m117a(notification);
+            return NotificationCompat.m117a(notification);
         }
     }
 
@@ -670,13 +670,13 @@ public class C0013ac {
         }
         if (qVar instanceof C0017c) {
             C0017c cVar = (C0017c) qVar;
-            C0045aj.m120a(abVar, cVar.f65e, cVar.f67g, cVar.f66f, cVar.f21a);
+            NotificationCompat.m120a(abVar, cVar.f65e, cVar.f67g, cVar.f66f, cVar.f21a);
         } else if (qVar instanceof C0020f) {
             C0020f fVar = (C0020f) qVar;
-            C0045aj.m121a(abVar, fVar.f65e, fVar.f67g, fVar.f66f, fVar.f55a);
+            NotificationCompat.m121a(abVar, fVar.f65e, fVar.f67g, fVar.f66f, fVar.f55a);
         } else if (qVar instanceof C0016b) {
             C0016b bVar = (C0016b) qVar;
-            C0045aj.m119a(abVar, bVar.f65e, bVar.f67g, bVar.f66f, bVar.f18a, bVar.f19b, bVar.f20c);
+            NotificationCompat.m119a(abVar, bVar.f65e, bVar.f67g, bVar.f66f, bVar.f18a, bVar.f19b, bVar.f20c);
         }
     }
 

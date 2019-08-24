@@ -43,13 +43,13 @@
     .line 4696
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f$32$1;->a:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f$32;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f$32;->a:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f$32;->a:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;
 
     new-instance v1, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f$32$1$1;
 
     invoke-direct {v1, p0}, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f$32$1$1;-><init>(Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f$32$1;)V
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;->p(Lcom/panasonic/avc/cng/view/liveview/movie/conventional/f;Ljava/lang/Runnable;)Z
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;->p(Lcom/panasonic/avc/cng/view/liveview/movie/conventional/LiveViewMovieViewModel;Ljava/lang/Runnable;)Z
 
     .line 4722
     return-void

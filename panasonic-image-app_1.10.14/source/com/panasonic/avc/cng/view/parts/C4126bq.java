@@ -18,7 +18,7 @@ public class C4126bq extends BaseAdapter {
     /* access modifiers changed from: private */
 
     /* renamed from: b */
-    public C4245t f13883b;
+    public BrowserViewModel f13883b;
 
     /* renamed from: c */
     private int f13884c;
@@ -42,7 +42,7 @@ public class C4126bq extends BaseAdapter {
         }
     }
 
-    public C4126bq(Context context, int i, C4245t tVar) {
+    public C4126bq(Context context, int i, BrowserViewModel tVar) {
         this.f13882a = context;
         this.f13884c = i;
         this.f13883b = tVar;

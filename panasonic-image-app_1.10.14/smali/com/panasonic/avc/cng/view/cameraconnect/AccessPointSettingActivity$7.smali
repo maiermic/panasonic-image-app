@@ -69,7 +69,7 @@
 
     const/high16 v3, -0x1000000
 
-    invoke-static {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/b/d;->d(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;II)V
+    invoke-static {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->d(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;II)V
 
     .line 1127
     const-string v0, ""
@@ -139,7 +139,7 @@
 
     const v3, 0x7f0f028b
 
-    invoke-static {v1, v2, v3, v0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;ILjava/lang/CharSequence;)V
+    invoke-static {v1, v2, v3, v0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;ILjava/lang/CharSequence;)V
 
     .line 1140
     new-instance v0, Ljava/lang/StringBuilder;
@@ -243,7 +243,7 @@
 
     const v3, 0x7f0f02a4
 
-    invoke-static {v1, v2, v3, v0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;ILjava/lang/CharSequence;)V
+    invoke-static {v1, v2, v3, v0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;ILjava/lang/CharSequence;)V
 
     .line 1150
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/AccessPointSettingActivity$7;->a:Landroid/app/Activity;
@@ -256,7 +256,7 @@
 
     move-result-object v2
 
-    invoke-static {v0, v1, v7, v2}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;ILandroid/widget/ListAdapter;)V
+    invoke-static {v0, v1, v7, v2}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;ILandroid/widget/ListAdapter;)V
 
     .line 1153
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/AccessPointSettingActivity$7;->a:Landroid/app/Activity;
@@ -267,7 +267,7 @@
 
     invoke-direct {v2, p0}, Lcom/panasonic/avc/cng/view/cameraconnect/AccessPointSettingActivity$7$1;-><init>(Lcom/panasonic/avc/cng/view/cameraconnect/AccessPointSettingActivity$7;)V
 
-    invoke-static {v0, v1, v7, v2}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;ILandroid/widget/AdapterView$OnItemClickListener;)V
+    invoke-static {v0, v1, v7, v2}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;ILandroid/widget/AdapterView$OnItemClickListener;)V
 
     .line 1168
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/AccessPointSettingActivity$7;->a:Landroid/app/Activity;
@@ -280,7 +280,7 @@
 
     invoke-direct {v3, p0}, Lcom/panasonic/avc/cng/view/cameraconnect/AccessPointSettingActivity$7$2;-><init>(Lcom/panasonic/avc/cng/view/cameraconnect/AccessPointSettingActivity$7;)V
 
-    invoke-static {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;ILandroid/view/View$OnClickListener;)V
+    invoke-static {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;ILandroid/view/View$OnClickListener;)V
 
     .line 1180
     return-void

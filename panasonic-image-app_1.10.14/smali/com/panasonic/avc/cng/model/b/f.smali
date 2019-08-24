@@ -971,7 +971,7 @@
     .line 119
     iget-object v0, p0, Lcom/panasonic/avc/cng/model/b/f;->i:Landroid/content/Context;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/z;->j(Landroid/content/Context;)Lcom/panasonic/avc/cng/model/service/c;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->j(Landroid/content/Context;)Lcom/panasonic/avc/cng/model/service/c;
 
     move-result-object v0
 
@@ -991,7 +991,7 @@
     :cond_0
     iget-object v0, p0, Lcom/panasonic/avc/cng/model/b/f;->i:Landroid/content/Context;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/z;->m(Landroid/content/Context;)Lcom/panasonic/avc/cng/model/service/d;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->m(Landroid/content/Context;)Lcom/panasonic/avc/cng/model/service/d;
 
     move-result-object v0
 
@@ -1011,7 +1011,7 @@
     :cond_1
     iget-object v0, p0, Lcom/panasonic/avc/cng/model/b/f;->i:Landroid/content/Context;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/z;->p(Landroid/content/Context;)Lcom/panasonic/avc/cng/model/service/r;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->p(Landroid/content/Context;)Lcom/panasonic/avc/cng/model/service/r;
 
     move-result-object v0
 
@@ -1031,7 +1031,7 @@
     :cond_2
     iget-object v0, p0, Lcom/panasonic/avc/cng/model/b/f;->i:Landroid/content/Context;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/z;->o(Landroid/content/Context;)Lcom/panasonic/avc/cng/model/service/q;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->o(Landroid/content/Context;)Lcom/panasonic/avc/cng/model/service/q;
 
     move-result-object v0
 
@@ -1051,7 +1051,7 @@
     :cond_3
     iget-object v0, p0, Lcom/panasonic/avc/cng/model/b/f;->i:Landroid/content/Context;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/z;->n(Landroid/content/Context;)Lcom/panasonic/avc/cng/model/service/l;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->n(Landroid/content/Context;)Lcom/panasonic/avc/cng/model/service/l;
 
     move-result-object v0
 

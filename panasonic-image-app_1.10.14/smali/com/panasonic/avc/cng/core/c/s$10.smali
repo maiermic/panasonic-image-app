@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/core/c/s;->b(Lcom/panasonic/avc/cng/core/c/g;)V
+    value = Lcom/panasonic/avc/cng/core/c/Picmate;->b(Lcom/panasonic/avc/cng/core/c/g;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,16 +20,16 @@
 # instance fields
 .field final synthetic a:Lcom/panasonic/avc/cng/core/c/g;
 
-.field final synthetic b:Lcom/panasonic/avc/cng/core/c/s;
+.field final synthetic b:Lcom/panasonic/avc/cng/core/c/Picmate;
 
 
 # direct methods
-.method constructor <init>(Lcom/panasonic/avc/cng/core/c/s;Lcom/panasonic/avc/cng/core/c/g;)V
+.method constructor <init>(Lcom/panasonic/avc/cng/core/c/Picmate;Lcom/panasonic/avc/cng/core/c/g;)V
     .locals 0
 
     .prologue
     .line 2687
-    iput-object p1, p0, Lcom/panasonic/avc/cng/core/c/s$10;->b:Lcom/panasonic/avc/cng/core/c/s;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/core/c/s$10;->b:Lcom/panasonic/avc/cng/core/c/Picmate;
 
     iput-object p2, p0, Lcom/panasonic/avc/cng/core/c/s$10;->a:Lcom/panasonic/avc/cng/core/c/g;
 
@@ -46,9 +46,9 @@
     .prologue
     .line 2689
     :goto_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/core/c/s$10;->b:Lcom/panasonic/avc/cng/core/c/s;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/core/c/s$10;->b:Lcom/panasonic/avc/cng/core/c/Picmate;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/core/c/s;->o(Lcom/panasonic/avc/cng/core/c/s;)Z
+    invoke-static {v0}, Lcom/panasonic/avc/cng/core/c/Picmate;->o(Lcom/panasonic/avc/cng/core/c/Picmate;)Z
 
     move-result v0
 
@@ -74,9 +74,9 @@
     :cond_0
     iget-object v0, p0, Lcom/panasonic/avc/cng/core/c/s$10;->a:Lcom/panasonic/avc/cng/core/c/g;
 
-    iget-object v1, p0, Lcom/panasonic/avc/cng/core/c/s$10;->b:Lcom/panasonic/avc/cng/core/c/s;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/core/c/s$10;->b:Lcom/panasonic/avc/cng/core/c/Picmate;
 
-    invoke-static {v1}, Lcom/panasonic/avc/cng/core/c/s;->d(Lcom/panasonic/avc/cng/core/c/s;)Z
+    invoke-static {v1}, Lcom/panasonic/avc/cng/core/c/Picmate;->d(Lcom/panasonic/avc/cng/core/c/Picmate;)Z
 
     move-result v1
 

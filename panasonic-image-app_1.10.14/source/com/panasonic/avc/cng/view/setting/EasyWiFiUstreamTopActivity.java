@@ -7,7 +7,7 @@ import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.C1892f;
 import com.panasonic.avc.cng.model.p052d.C1879a;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 
 public class EasyWiFiUstreamTopActivity extends C5763k {
 
@@ -19,7 +19,7 @@ public class EasyWiFiUstreamTopActivity extends C5763k {
         C1712b.m6914a((Activity) this);
         super.onCreate(bundle);
         if (m21343b()) {
-            C2261g.m9770d(f15963d, "onCreate");
+            ImageAppLog.verbose(f15963d, "onCreate");
         }
         setContentView(R.layout.activity_easywifi_ustream);
         C1892f a = C1712b.m6919c().mo4896a();

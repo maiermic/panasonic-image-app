@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/core/c/s;->a(Ljava/lang/String;Lcom/panasonic/avc/cng/core/c/g;)V
+    value = Lcom/panasonic/avc/cng/core/c/Picmate;->a(Ljava/lang/String;Lcom/panasonic/avc/cng/core/c/g;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -22,16 +22,16 @@
 
 .field final synthetic b:Lcom/panasonic/avc/cng/core/c/g;
 
-.field final synthetic c:Lcom/panasonic/avc/cng/core/c/s;
+.field final synthetic c:Lcom/panasonic/avc/cng/core/c/Picmate;
 
 
 # direct methods
-.method constructor <init>(Lcom/panasonic/avc/cng/core/c/s;Ljava/lang/String;Lcom/panasonic/avc/cng/core/c/g;)V
+.method constructor <init>(Lcom/panasonic/avc/cng/core/c/Picmate;Ljava/lang/String;Lcom/panasonic/avc/cng/core/c/g;)V
     .locals 0
 
     .prologue
     .line 3071
-    iput-object p1, p0, Lcom/panasonic/avc/cng/core/c/s$4;->c:Lcom/panasonic/avc/cng/core/c/s;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/core/c/s$4;->c:Lcom/panasonic/avc/cng/core/c/Picmate;
 
     iput-object p2, p0, Lcom/panasonic/avc/cng/core/c/s$4;->a:Ljava/lang/String;
 
@@ -50,11 +50,11 @@
     .prologue
     .line 3074
     :try_start_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/core/c/s$4;->c:Lcom/panasonic/avc/cng/core/c/s;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/core/c/s$4;->c:Lcom/panasonic/avc/cng/core/c/Picmate;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/core/c/s$4;->a:Ljava/lang/String;
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/core/c/s;->c(Ljava/lang/String;)Ljava/util/List;
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/core/c/Picmate;->c(Ljava/lang/String;)Ljava/util/List;
 
     move-result-object v0
 

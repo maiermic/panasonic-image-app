@@ -5,7 +5,7 @@ import com.panasonic.avc.cng.model.C1892f;
 import com.panasonic.avc.cng.model.C1897j.C1903f;
 import com.panasonic.avc.cng.view.liveview.LiveViewLumixGHFullscreenActivity;
 import com.panasonic.avc.cng.view.liveview.icon.C3206a;
-import com.panasonic.avc.cng.view.setting.C5780o;
+import com.panasonic.avc.cng.view.setting.LiveSetupDrumPickerFandSSViewModel;
 import java.util.Locale;
 
 /* renamed from: com.panasonic.avc.cng.view.parts.fullscreen.b */
@@ -63,7 +63,7 @@ public class C4166b extends C4175f {
     /* access modifiers changed from: protected */
     /* renamed from: a */
     public void mo9846a(int i) {
-        ((C5780o) mo9858h()).mo12664b(String.format(Locale.getDefault(), "%1$d/256", new Object[]{Long.valueOf(mo9878e(i).f14034b)}));
+        ((LiveSetupDrumPickerFandSSViewModel) mo9858h()).mo12664b(String.format(Locale.getDefault(), "%1$d/256", new Object[]{Long.valueOf(mo9878e(i).f14034b)}));
     }
 
     /* renamed from: a */

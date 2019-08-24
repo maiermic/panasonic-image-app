@@ -32,7 +32,7 @@
 
     .prologue
     .line 48
-    invoke-static {p1, p2}, Landroid/support/v4/view/i;->a(Landroid/view/LayoutInflater;Landroid/support/v4/view/k;)V
+    invoke-static {p1, p2}, Landroid/support/v4/view/LayoutInflaterCompatHC;->a(Landroid/view/LayoutInflater;Landroid/support/v4/view/k;)V
 
     .line 49
     return-void

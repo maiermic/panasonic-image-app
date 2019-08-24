@@ -8,7 +8,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/google/firebase/a;
+    value = Lcom/google/firebase/FirebaseApp;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -107,14 +107,14 @@
 .method public final onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 3
 
-    invoke-static {}, Lcom/google/firebase/a;->f()Ljava/lang/Object;
+    invoke-static {}, Lcom/google/firebase/FirebaseApp;->f()Ljava/lang/Object;
 
     move-result-object v1
 
     monitor-enter v1
 
     :try_start_0
-    sget-object v0, Lcom/google/firebase/a;->a:Ljava/util/Map;
+    sget-object v0, Lcom/google/firebase/FirebaseApp;->a:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->values()Ljava/util/Collection;
 
@@ -135,9 +135,9 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/google/firebase/a;
+    check-cast v0, Lcom/google/firebase/FirebaseApp;
 
-    invoke-static {v0}, Lcom/google/firebase/a;->a(Lcom/google/firebase/a;)V
+    invoke-static {v0}, Lcom/google/firebase/FirebaseApp;->a(Lcom/google/firebase/FirebaseApp;)V
 
     goto :goto_0
 

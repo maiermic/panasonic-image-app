@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/view/play/splitdelete/SplitDeleteActivity$a;-><init>(Lcom/panasonic/avc/cng/view/play/splitdelete/SplitDeleteActivity;Landroid/app/Activity;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/play/splitdelete/c;)V
+    value = Lcom/panasonic/avc/cng/view/play/splitdelete/SplitDeleteActivity$a;-><init>(Lcom/panasonic/avc/cng/view/play/splitdelete/SplitDeleteActivity;Landroid/app/Activity;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

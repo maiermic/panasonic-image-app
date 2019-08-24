@@ -43,9 +43,9 @@
     .line 822
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/a$a$2;->a:Lcom/panasonic/avc/cng/view/liveview/movie/wearable/a$a;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/a$a;->a:Lcom/panasonic/avc/cng/view/liveview/movie/wearable/a;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/a$a;->a:Lcom/panasonic/avc/cng/view/liveview/movie/wearable/LiveViewWearableBaseActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;)V
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;)V
 
     .line 823
     return-void

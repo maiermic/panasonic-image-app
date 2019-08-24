@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/model/service/a/m;->a(I)V
+    value = Lcom/panasonic/avc/cng/model/service/a/CameraContentCopy;->a(I)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/panasonic/avc/cng/model/service/a/m;
+.field final synthetic a:Lcom/panasonic/avc/cng/model/service/a/CameraContentCopy;
 
 
 # direct methods
-.method constructor <init>(Lcom/panasonic/avc/cng/model/service/a/m;)V
+.method constructor <init>(Lcom/panasonic/avc/cng/model/service/a/CameraContentCopy;)V
     .locals 0
 
     .prologue
     .line 313
-    iput-object p1, p0, Lcom/panasonic/avc/cng/model/service/a/m$2;->a:Lcom/panasonic/avc/cng/model/service/a/m;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/model/service/a/m$2;->a:Lcom/panasonic/avc/cng/model/service/a/CameraContentCopy;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -41,18 +41,18 @@
 
     .prologue
     .line 315
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/a/m$2;->a:Lcom/panasonic/avc/cng/model/service/a/m;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/a/m$2;->a:Lcom/panasonic/avc/cng/model/service/a/CameraContentCopy;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/a/m;->b(Lcom/panasonic/avc/cng/model/service/a/m;)Lcom/panasonic/avc/cng/model/service/a/m$b;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/a/CameraContentCopy;->b(Lcom/panasonic/avc/cng/model/service/a/CameraContentCopy;)Lcom/panasonic/avc/cng/model/service/a/m$b;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 317
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/a/m$2;->a:Lcom/panasonic/avc/cng/model/service/a/m;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/a/m$2;->a:Lcom/panasonic/avc/cng/model/service/a/CameraContentCopy;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/a/m;->b(Lcom/panasonic/avc/cng/model/service/a/m;)Lcom/panasonic/avc/cng/model/service/a/m$b;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/a/CameraContentCopy;->b(Lcom/panasonic/avc/cng/model/service/a/CameraContentCopy;)Lcom/panasonic/avc/cng/model/service/a/m$b;
 
     move-result-object v0
 

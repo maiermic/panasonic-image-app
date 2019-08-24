@@ -13,9 +13,9 @@
 
 .field private c:Lcom/panasonic/avc/cng/model/service/h$b;
 
-.field private d:Lcom/panasonic/avc/cng/core/a/h;
+.field private d:Lcom/panasonic/avc/cng/core/a/XmlNode;
 
-.field private e:Lcom/panasonic/avc/cng/model/service/geotagservice/c;
+.field private e:Lcom/panasonic/avc/cng/model/service/geotagservice/GeotagLogRecord;
 
 .field private f:Lcom/panasonic/avc/cng/model/service/geotagservice/d;
 
@@ -49,10 +49,10 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 45
-    iput-object v0, p0, Lcom/panasonic/avc/cng/model/service/geotagservice/b;->d:Lcom/panasonic/avc/cng/core/a/h;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/model/service/geotagservice/b;->d:Lcom/panasonic/avc/cng/core/a/XmlNode;
 
     .line 48
-    iput-object v0, p0, Lcom/panasonic/avc/cng/model/service/geotagservice/b;->e:Lcom/panasonic/avc/cng/model/service/geotagservice/c;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/model/service/geotagservice/b;->e:Lcom/panasonic/avc/cng/model/service/geotagservice/GeotagLogRecord;
 
     .line 51
     iput-object v0, p0, Lcom/panasonic/avc/cng/model/service/geotagservice/b;->f:Lcom/panasonic/avc/cng/model/service/geotagservice/d;
@@ -103,7 +103,7 @@
     return-object p1
 .end method
 
-.method private a(Lcom/panasonic/avc/cng/model/f;)Lcom/panasonic/avc/cng/core/a/h;
+.method private a(Lcom/panasonic/avc/cng/model/f;)Lcom/panasonic/avc/cng/core/a/XmlNode;
     .locals 4
 
     .prologue
@@ -138,15 +138,15 @@
 
     move-result-object v2
 
-    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 604
     invoke-direct {p0}, Lcom/panasonic/avc/cng/model/service/geotagservice/b;->t()V
 
     .line 606
-    new-instance v1, Lcom/panasonic/avc/cng/core/a/h;
+    new-instance v1, Lcom/panasonic/avc/cng/core/a/XmlNode;
 
-    invoke-direct {v1, v0}, Lcom/panasonic/avc/cng/core/a/h;-><init>(Ljava/lang/String;)V
+    invoke-direct {v1, v0}, Lcom/panasonic/avc/cng/core/a/XmlNode;-><init>(Ljava/lang/String;)V
 
     return-object v1
 .end method
@@ -218,12 +218,12 @@
     return-object v0
 .end method
 
-.method static synthetic d(Lcom/panasonic/avc/cng/model/service/geotagservice/b;)Lcom/panasonic/avc/cng/core/a/h;
+.method static synthetic d(Lcom/panasonic/avc/cng/model/service/geotagservice/b;)Lcom/panasonic/avc/cng/core/a/XmlNode;
     .locals 1
 
     .prologue
     .line 33
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/geotagservice/b;->d:Lcom/panasonic/avc/cng/core/a/h;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/geotagservice/b;->d:Lcom/panasonic/avc/cng/core/a/XmlNode;
 
     return-object v0
 .end method
@@ -233,25 +233,25 @@
 
     .prologue
     .line 614
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/geotagservice/b;->d:Lcom/panasonic/avc/cng/core/a/h;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/geotagservice/b;->d:Lcom/panasonic/avc/cng/core/a/XmlNode;
 
     if-eqz v0, :cond_0
 
     .line 616
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/geotagservice/b;->d:Lcom/panasonic/avc/cng/core/a/h;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/geotagservice/b;->d:Lcom/panasonic/avc/cng/core/a/XmlNode;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/h;->b()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/XmlNode;->b()V
 
     .line 617
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/geotagservice/b;->d:Lcom/panasonic/avc/cng/core/a/h;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/geotagservice/b;->d:Lcom/panasonic/avc/cng/core/a/XmlNode;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/h;->c()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/XmlNode;->c()V
 
     .line 620
     :cond_0
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/model/service/geotagservice/b;->d:Lcom/panasonic/avc/cng/core/a/h;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/model/service/geotagservice/b;->d:Lcom/panasonic/avc/cng/core/a/XmlNode;
 
     .line 621
     return-void
@@ -273,24 +273,24 @@
 
     .prologue
     .line 354
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/geotagservice/b;->e:Lcom/panasonic/avc/cng/model/service/geotagservice/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/geotagservice/b;->e:Lcom/panasonic/avc/cng/model/service/geotagservice/GeotagLogRecord;
 
     if-nez v0, :cond_0
 
     .line 356
-    new-instance v0, Lcom/panasonic/avc/cng/model/service/geotagservice/c;
+    new-instance v0, Lcom/panasonic/avc/cng/model/service/geotagservice/GeotagLogRecord;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/geotagservice/b;->a:Landroid/content/Context;
 
-    invoke-direct {v0, v1}, Lcom/panasonic/avc/cng/model/service/geotagservice/c;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, v1}, Lcom/panasonic/avc/cng/model/service/geotagservice/GeotagLogRecord;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/model/service/geotagservice/b;->e:Lcom/panasonic/avc/cng/model/service/geotagservice/c;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/model/service/geotagservice/b;->e:Lcom/panasonic/avc/cng/model/service/geotagservice/GeotagLogRecord;
 
     .line 359
     :cond_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/geotagservice/b;->e:Lcom/panasonic/avc/cng/model/service/geotagservice/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/geotagservice/b;->e:Lcom/panasonic/avc/cng/model/service/geotagservice/GeotagLogRecord;
 
-    invoke-virtual {v0, p1}, Lcom/panasonic/avc/cng/model/service/geotagservice/c;->a(Z)Ljava/util/List;
+    invoke-virtual {v0, p1}, Lcom/panasonic/avc/cng/model/service/geotagservice/GeotagLogRecord;->a(Z)Ljava/util/List;
 
     move-result-object v0
 
@@ -318,16 +318,16 @@
     .line 174
     iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/geotagservice/b;->b:Lcom/panasonic/avc/cng/model/f;
 
-    invoke-direct {p0, v0}, Lcom/panasonic/avc/cng/model/service/geotagservice/b;->a(Lcom/panasonic/avc/cng/model/f;)Lcom/panasonic/avc/cng/core/a/h;
+    invoke-direct {p0, v0}, Lcom/panasonic/avc/cng/model/service/geotagservice/b;->a(Lcom/panasonic/avc/cng/model/f;)Lcom/panasonic/avc/cng/core/a/XmlNode;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/model/service/geotagservice/b;->d:Lcom/panasonic/avc/cng/core/a/h;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/model/service/geotagservice/b;->d:Lcom/panasonic/avc/cng/core/a/XmlNode;
 
     .line 176
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/model/service/geotagservice/b;->e:Lcom/panasonic/avc/cng/model/service/geotagservice/c;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/model/service/geotagservice/b;->e:Lcom/panasonic/avc/cng/model/service/geotagservice/GeotagLogRecord;
 
     .line 179
     new-instance v0, Landroid/content/Intent;
@@ -417,11 +417,11 @@
     .line 155
     iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/geotagservice/b;->b:Lcom/panasonic/avc/cng/model/f;
 
-    invoke-direct {p0, v0}, Lcom/panasonic/avc/cng/model/service/geotagservice/b;->a(Lcom/panasonic/avc/cng/model/f;)Lcom/panasonic/avc/cng/core/a/h;
+    invoke-direct {p0, v0}, Lcom/panasonic/avc/cng/model/service/geotagservice/b;->a(Lcom/panasonic/avc/cng/model/f;)Lcom/panasonic/avc/cng/core/a/XmlNode;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/model/service/geotagservice/b;->d:Lcom/panasonic/avc/cng/core/a/h;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/model/service/geotagservice/b;->d:Lcom/panasonic/avc/cng/core/a/XmlNode;
 
     .line 158
     :cond_0
@@ -483,24 +483,24 @@
 
     .prologue
     .line 339
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/geotagservice/b;->e:Lcom/panasonic/avc/cng/model/service/geotagservice/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/geotagservice/b;->e:Lcom/panasonic/avc/cng/model/service/geotagservice/GeotagLogRecord;
 
     if-nez v0, :cond_0
 
     .line 341
-    new-instance v0, Lcom/panasonic/avc/cng/model/service/geotagservice/c;
+    new-instance v0, Lcom/panasonic/avc/cng/model/service/geotagservice/GeotagLogRecord;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/geotagservice/b;->a:Landroid/content/Context;
 
-    invoke-direct {v0, v1}, Lcom/panasonic/avc/cng/model/service/geotagservice/c;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, v1}, Lcom/panasonic/avc/cng/model/service/geotagservice/GeotagLogRecord;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/model/service/geotagservice/b;->e:Lcom/panasonic/avc/cng/model/service/geotagservice/c;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/model/service/geotagservice/b;->e:Lcom/panasonic/avc/cng/model/service/geotagservice/GeotagLogRecord;
 
     .line 344
     :cond_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/geotagservice/b;->e:Lcom/panasonic/avc/cng/model/service/geotagservice/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/geotagservice/b;->e:Lcom/panasonic/avc/cng/model/service/geotagservice/GeotagLogRecord;
 
-    invoke-virtual {v0, p1}, Lcom/panasonic/avc/cng/model/service/geotagservice/c;->a(Ljava/lang/String;)V
+    invoke-virtual {v0, p1}, Lcom/panasonic/avc/cng/model/service/geotagservice/GeotagLogRecord;->a(Ljava/lang/String;)V
 
     .line 345
     return-void
@@ -552,7 +552,7 @@
 
     const-string v1, "bind failed"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 495
     :cond_1
@@ -668,7 +668,7 @@
     iput-object v3, p0, Lcom/panasonic/avc/cng/model/service/geotagservice/b;->f:Lcom/panasonic/avc/cng/model/service/geotagservice/d;
 
     .line 215
-    iput-object v3, p0, Lcom/panasonic/avc/cng/model/service/geotagservice/b;->e:Lcom/panasonic/avc/cng/model/service/geotagservice/c;
+    iput-object v3, p0, Lcom/panasonic/avc/cng/model/service/geotagservice/b;->e:Lcom/panasonic/avc/cng/model/service/geotagservice/GeotagLogRecord;
 
     .line 216
     iput-object v3, p0, Lcom/panasonic/avc/cng/model/service/geotagservice/b;->m:Landroid/os/Handler;
@@ -682,7 +682,7 @@
 
     .prologue
     .line 233
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/geotagservice/b;->d:Lcom/panasonic/avc/cng/core/a/h;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/geotagservice/b;->d:Lcom/panasonic/avc/cng/core/a/XmlNode;
 
     if-nez v0, :cond_0
 
@@ -695,16 +695,16 @@
 
     .line 239
     :cond_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/geotagservice/b;->d:Lcom/panasonic/avc/cng/core/a/h;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/geotagservice/b;->d:Lcom/panasonic/avc/cng/core/a/XmlNode;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/geotagservice/b;->c:Lcom/panasonic/avc/cng/model/service/h$b;
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/core/a/h;->a(Lcom/panasonic/avc/cng/model/service/h$b;)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/core/a/XmlNode;->a(Lcom/panasonic/avc/cng/model/service/h$b;)V
 
     .line 241
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/geotagservice/b;->d:Lcom/panasonic/avc/cng/core/a/h;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/geotagservice/b;->d:Lcom/panasonic/avc/cng/core/a/XmlNode;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/h;->a()Z
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/XmlNode;->a()Z
 
     move-result v0
 
@@ -716,14 +716,14 @@
 
     .prologue
     .line 249
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/geotagservice/b;->d:Lcom/panasonic/avc/cng/core/a/h;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/geotagservice/b;->d:Lcom/panasonic/avc/cng/core/a/XmlNode;
 
     if-eqz v0, :cond_0
 
     .line 251
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/geotagservice/b;->d:Lcom/panasonic/avc/cng/core/a/h;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/geotagservice/b;->d:Lcom/panasonic/avc/cng/core/a/XmlNode;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/h;->b()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/XmlNode;->b()V
 
     .line 253
     :cond_0
@@ -735,7 +735,7 @@
 
     .prologue
     .line 395
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/geotagservice/b;->d:Lcom/panasonic/avc/cng/core/a/h;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/geotagservice/b;->d:Lcom/panasonic/avc/cng/core/a/XmlNode;
 
     if-nez v0, :cond_0
 
@@ -748,18 +748,18 @@
 
     .line 401
     :cond_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/geotagservice/b;->d:Lcom/panasonic/avc/cng/core/a/h;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/geotagservice/b;->d:Lcom/panasonic/avc/cng/core/a/XmlNode;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/geotagservice/b;->c:Lcom/panasonic/avc/cng/model/service/h$b;
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/core/a/h;->a(Lcom/panasonic/avc/cng/model/service/h$b;)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/core/a/XmlNode;->a(Lcom/panasonic/avc/cng/model/service/h$b;)V
 
     .line 403
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/geotagservice/b;->d:Lcom/panasonic/avc/cng/core/a/h;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/geotagservice/b;->d:Lcom/panasonic/avc/cng/core/a/XmlNode;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/geotagservice/b;->a:Landroid/content/Context;
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/core/a/h;->a(Landroid/content/Context;)Z
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/core/a/XmlNode;->a(Landroid/content/Context;)Z
 
     move-result v0
 
@@ -771,14 +771,14 @@
 
     .prologue
     .line 411
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/geotagservice/b;->d:Lcom/panasonic/avc/cng/core/a/h;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/geotagservice/b;->d:Lcom/panasonic/avc/cng/core/a/XmlNode;
 
     if-eqz v0, :cond_0
 
     .line 413
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/geotagservice/b;->d:Lcom/panasonic/avc/cng/core/a/h;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/geotagservice/b;->d:Lcom/panasonic/avc/cng/core/a/XmlNode;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/h;->c()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/XmlNode;->c()V
 
     .line 415
     :cond_0

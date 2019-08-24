@@ -4,7 +4,7 @@ import android.app.Service;
 import android.content.Intent;
 import android.os.Binder;
 import android.os.IBinder;
-import android.support.p000v4.content.C0158g;
+import android.support.p000v4.content.WakefulBroadcastReceiver;
 import android.util.Log;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -31,7 +31,7 @@ public abstract class C1318b extends Service {
     /* renamed from: d */
     public final void m5168d(Intent intent) {
         if (intent != null) {
-            C0158g.m726a(intent);
+            WakefulBroadcastReceiver.m726a(intent);
         }
         synchronized (this.f3629c) {
             this.f3631e--;

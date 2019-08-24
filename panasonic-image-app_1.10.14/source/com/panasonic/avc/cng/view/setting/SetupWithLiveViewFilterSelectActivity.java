@@ -9,7 +9,7 @@ import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
 import com.panasonic.avc.cng.view.parts.C3978ac;
 import com.panasonic.avc.cng.view.parts.C3978ac.C3980a;
-import com.panasonic.avc.cng.view.setting.C5804u.C5806a;
+import com.panasonic.avc.cng.view.setting.LiveSetupLumixMirrorlessBaseActivity.C5806a;
 
 public class SetupWithLiveViewFilterSelectActivity extends C5608at {
 
@@ -18,13 +18,13 @@ public class SetupWithLiveViewFilterSelectActivity extends C5608at {
     /* access modifiers changed from: private */
 
     /* renamed from: m */
-    public C5602as f16785m;
+    public SetupWithLiveViewFilterSelectViewModel f16785m;
 
     public void onCreate(Bundle bundle) {
         this.f17350a = R.layout.activity_setup_with_liveview_common_one_drumpicker;
         C1712b.m6914a((Activity) this);
         super.onCreate(bundle);
-        this.f16785m = new C5602as(this._context, this._handler, this.f17351b, this.f17352c);
+        this.f16785m = new SetupWithLiveViewFilterSelectViewModel(this._context, this._handler, this.f17351b, this.f17352c);
         this.f16784l = new C3978ac(this._context, (Activity) this, this.f16785m);
         this.f16784l.mo9449a();
         this.f16784l.setDrumPickerSettingListener(new C3980a() {

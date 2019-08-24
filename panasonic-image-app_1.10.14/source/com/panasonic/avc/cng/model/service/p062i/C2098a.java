@@ -17,9 +17,9 @@ import com.panasonic.avc.cng.model.C1913o;
 import com.panasonic.avc.cng.model.service.C2241u;
 import com.panasonic.avc.cng.model.service.C2241u.C2242a;
 import com.panasonic.avc.cng.model.service.p056c.C2020c;
-import com.panasonic.avc.cng.util.C2261g;
-import com.panasonic.avc.cng.view.common.p074a.C2803d;
-import com.panasonic.avc.cng.view.common.p074a.C2803d.C2806a;
+import com.panasonic.avc.cng.util.ImageAppLog;
+import com.panasonic.avc.cng.view.common.p074a.NfcWrapper;
+import com.panasonic.avc.cng.view.common.p074a.NfcWrapper.C2806a;
 import com.panasonic.avc.cng.view.common.p074a.C2807e;
 import java.io.IOException;
 
@@ -53,7 +53,7 @@ public class C2098a implements C2241u, C2806a {
     /* access modifiers changed from: private */
 
     /* renamed from: i */
-    public C2803d f6502i;
+    public NfcWrapper f6502i;
     /* access modifiers changed from: private */
 
     /* renamed from: j */
@@ -114,11 +114,11 @@ public class C2098a implements C2241u, C2806a {
         }
 
         public void run() {
-            C2261g.m9763a("★NfcRemoteWatchService", "FirstTouchCountProc Start");
+            ImageAppLog.debug("★NfcRemoteWatchService", "FirstTouchCountProc Start");
             this.f6519b = false;
             while (!this.f6519b && System.currentTimeMillis() - C2098a.this.f6510q <= 120000) {
                 try {
-                    C2261g.m9763a("NFcService", "FirstTouchCountProc + 1000");
+                    ImageAppLog.debug("NFcService", "FirstTouchCountProc + 1000");
                     Thread.sleep(1000);
                 } catch (InterruptedException e) {
                 }
@@ -127,10 +127,10 @@ public class C2098a implements C2241u, C2806a {
             if (!this.f6519b) {
                 if (C2098a.this.f6499f == null || this.f6519b) {
                     if (C2098a.this.f6499f == null) {
-                        C2261g.m9763a("★NfcRemoteWatchService", "_handler == null");
+                        ImageAppLog.debug("★NfcRemoteWatchService", "_handler == null");
                     }
                     if (this.f6519b) {
-                        C2261g.m9763a("★NfcRemoteWatchService", "_isStop");
+                        ImageAppLog.debug("★NfcRemoteWatchService", "_isStop");
                         return;
                     }
                     return;
@@ -154,35 +154,35 @@ public class C2098a implements C2241u, C2806a {
         /* renamed from: a */
         public void mo5486a(int i) {
             try {
-                C2261g.m9763a("NfcService", "statusReceived Start");
-                C2261g.m9763a("★NfcRemoteWatchService", "statusReceived Start");
+                ImageAppLog.debug("NfcService", "statusReceived Start");
+                ImageAppLog.debug("★NfcRemoteWatchService", "statusReceived Start");
                 switch (i) {
                     case 0:
-                        C2261g.m9763a("★NfcRemoteWatchService", "STATUS_TAG_DETECTED");
+                        ImageAppLog.debug("★NfcRemoteWatchService", "STATUS_TAG_DETECTED");
                         C2098a.this.m8787k();
                         C2098a.this.f6507n.mo3353f();
                         C2098a.this.f6499f.postDelayed(new Runnable() {
                             public void run() {
                                 if (C2098a.this.f6502i != null && !C2098a.this.f6514u) {
                                     if (C2098a.this.f6503j == 1) {
-                                        C2261g.m9763a("★NfcRemoteWatchService", "NFCタグ検出の再開 NFC");
+                                        ImageAppLog.debug("★NfcRemoteWatchService", "NFCタグ検出の再開 NFC");
                                         C2098a.this.mo5532e();
                                         C2098a.this.f6509p = false;
                                         C2098a.this.f6502i.mo6847a(true);
                                     } else if (C2098a.this.f6503j == 2) {
-                                        C2261g.m9763a("★NfcRemoteWatchService", "NFCタグ検出の再開 Felica");
-                                        C2261g.m9763a("★NfcRemoteWatchService", "disconnect start");
+                                        ImageAppLog.debug("★NfcRemoteWatchService", "NFCタグ検出の再開 Felica");
+                                        ImageAppLog.debug("★NfcRemoteWatchService", "disconnect start");
                                         C2098a.this.mo5532e();
-                                        C2261g.m9763a("★NfcRemoteWatchService", "disconnect end");
+                                        ImageAppLog.debug("★NfcRemoteWatchService", "disconnect end");
                                         C2098a.this.f6509p = false;
-                                        C2261g.m9763a("★NfcRemoteWatchService", "startTagDetection start");
+                                        ImageAppLog.debug("★NfcRemoteWatchService", "startTagDetection start");
                                         C2098a.this.f6502i.mo6847a(false);
-                                        C2261g.m9763a("★NfcRemoteWatchService", "startTagDetection end");
+                                        ImageAppLog.debug("★NfcRemoteWatchService", "startTagDetection end");
                                     }
                                 }
                                 if (C2098a.this.f6507n != null) {
                                     C2098a.this.f6507n.mo3354g();
-                                    C2261g.m9763a("★NfcRemoteWatchService", "しばらくお待ちくださいダイアログ表示終了通知 finish");
+                                    ImageAppLog.debug("★NfcRemoteWatchService", "しばらくお待ちくださいダイアログ表示終了通知 finish");
                                 }
                             }
                         }, 3000);
@@ -200,7 +200,7 @@ public class C2098a implements C2241u, C2806a {
                         C2098a.this.f6507n.mo3354g();
                         return;
                     case 20:
-                        C2261g.m9763a("★NfcRemoteWatchService", "STATUS_FELICA_AVAILABLE");
+                        ImageAppLog.debug("★NfcRemoteWatchService", "STATUS_FELICA_AVAILABLE");
                         C2098a.this.f6503j = 2;
                         C2098a.this.f6507n.mo3348a(true);
                         C2098a.this.f6507n.mo3354g();
@@ -220,7 +220,7 @@ public class C2098a implements C2241u, C2806a {
                         C2098a.this.f6507n.mo3354g();
                         return;
                     case 24:
-                        C2261g.m9763a("★NfcRemoteWatchService", "checkFelicaAvailability STATUS_FELICA_RW_NOT_SUPPORTED");
+                        ImageAppLog.debug("★NfcRemoteWatchService", "checkFelicaAvailability STATUS_FELICA_RW_NOT_SUPPORTED");
                         C2098a.this.f6507n.mo3348a(false);
                         C2098a.this.f6507n.mo3354g();
                         return;
@@ -241,13 +241,13 @@ public class C2098a implements C2241u, C2806a {
     }
 
     public C2098a() {
-        C2261g.m9763a("★NfcRemoteWatchService", "コンストラクタ");
-        C2261g.m9763a("★NfcRemoteWatchService", "NFCMODE" + String.valueOf(this.f6503j));
+        ImageAppLog.debug("★NfcRemoteWatchService", "コンストラクタ");
+        ImageAppLog.debug("★NfcRemoteWatchService", "NFCMODE" + String.valueOf(this.f6503j));
     }
 
     /* renamed from: a */
     public void mo5521a(Activity activity, Context context, Handler handler, C2242a aVar) {
-        C2261g.m9763a("★NfcRemoteWatchService", "Initialize");
+        ImageAppLog.debug("★NfcRemoteWatchService", "Initialize");
         this.f6499f = handler;
         this.f6501h = activity;
         this.f6500g = context;
@@ -256,17 +256,17 @@ public class C2098a implements C2241u, C2806a {
         this.f6504k = MediaPlayer.create(this.f6500g, R.raw.touch_complete);
         this.f6505l = MediaPlayer.create(this.f6500g, R.raw.touch_fail);
         if (!this.f6512s) {
-            C2261g.m9763a("★NfcRemoteWatchService", "new NfcWrapper");
+            ImageAppLog.debug("★NfcRemoteWatchService", "new NfcWrapper");
             this.f6513t = true;
             this.f6512s = true;
             this.f6506m = new C2104b();
             try {
-                this.f6502i = new C2803d(this.f6500g);
+                this.f6502i = new NfcWrapper(this.f6500g);
             } catch (Exception e) {
                 e.printStackTrace();
             }
-            C2261g.m9763a("★NfcRemoteWatchService", "setStatusListener");
-            C2803d.m11658a(this.f6506m);
+            ImageAppLog.debug("★NfcRemoteWatchService", "setStatusListener");
+            NfcWrapper.m11658a(this.f6506m);
             this.f6503j = 0;
         }
     }
@@ -279,7 +279,7 @@ public class C2098a implements C2241u, C2806a {
                 this.f6507n.mo3348a(true);
                 this.f6503j = 1;
             } else {
-                C2261g.m9763a("★NfcRemoteWatchService", "checkFelicaAvailability");
+                ImageAppLog.debug("★NfcRemoteWatchService", "checkFelicaAvailability");
                 this.f6502i.mo6852c();
             }
         }
@@ -297,7 +297,7 @@ public class C2098a implements C2241u, C2806a {
     /* renamed from: b */
     public void mo5526b() {
         synchronized (this.f6497d) {
-            C2261g.m9763a("★NfcRemoteWatchService", "StartNfcWatch");
+            ImageAppLog.debug("★NfcRemoteWatchService", "StartNfcWatch");
             mo5532e();
             if (this.f6503j == 1) {
                 this.f6502i.mo6847a(true);
@@ -310,7 +310,7 @@ public class C2098a implements C2241u, C2806a {
     /* renamed from: c */
     public void mo5529c() {
         synchronized (this.f6497d) {
-            C2261g.m9763a("★NfcRemoteWatchService", "StartNfcWatchWithStopTimer");
+            ImageAppLog.debug("★NfcRemoteWatchService", "StartNfcWatchWithStopTimer");
             mo5537j();
             mo5532e();
             if (this.f6503j == 1) {
@@ -323,7 +323,7 @@ public class C2098a implements C2241u, C2806a {
 
     /* renamed from: b */
     public void mo5527b(Activity activity, Context context, Handler handler, C2242a aVar) {
-        C2261g.m9763a("★NfcRemoteWatchService", "rotate");
+        ImageAppLog.debug("★NfcRemoteWatchService", "rotate");
         this.f6499f = handler;
         this.f6501h = activity;
         this.f6500g = context;
@@ -334,7 +334,7 @@ public class C2098a implements C2241u, C2806a {
 
     /* renamed from: d */
     public void mo5531d() {
-        C2261g.m9763a("★NfcRemoteWatchService", "");
+        ImageAppLog.debug("★NfcRemoteWatchService", "");
         if (this.f6502i != null) {
             mo5532e();
             if (this.f6502i.mo6849b(false) == 10) {
@@ -350,7 +350,7 @@ public class C2098a implements C2241u, C2806a {
     /* renamed from: f */
     public void mo5533f() {
         synchronized (this.f6497d) {
-            C2261g.m9763a("★NfcRemoteWatchService", "StopNfcWatch");
+            ImageAppLog.debug("★NfcRemoteWatchService", "StopNfcWatch");
             mo5532e();
         }
     }
@@ -358,7 +358,7 @@ public class C2098a implements C2241u, C2806a {
     /* renamed from: e */
     public void mo5532e() {
         synchronized (this.f6497d) {
-            C2261g.m9763a("★NfcService", "Disconnect");
+            ImageAppLog.debug("★NfcService", "Disconnect");
             if (this.f6502i != null) {
                 this.f6502i.mo6850b();
                 this.f6502i.mo6853d();
@@ -369,7 +369,7 @@ public class C2098a implements C2241u, C2806a {
     /* renamed from: g */
     public void mo5534g() {
         synchronized (this.f6497d) {
-            C2261g.m9763a("★NfcRemoteWatchService", "");
+            ImageAppLog.debug("★NfcRemoteWatchService", "");
             mo5532e();
             this.f6502i = null;
             this.f6512s = false;
@@ -411,59 +411,59 @@ public class C2098a implements C2241u, C2806a {
         String str;
         boolean z;
         String str2;
-        C2261g.m9763a("★NfcRemoteWatchService", "onTagDetected");
+        ImageAppLog.debug("★NfcRemoteWatchService", "onTagDetected");
         if (this.f6509p) {
-            C2261g.m9763a("★NfcRemoteWatchService", "_nfcProcessing = ture");
+            ImageAppLog.debug("★NfcRemoteWatchService", "_nfcProcessing = ture");
             return;
         }
-        C2261g.m9763a("★NfcRemoteWatchService", "_nfcProcessing = false");
+        ImageAppLog.debug("★NfcRemoteWatchService", "_nfcProcessing = false");
         this.f6509p = true;
         mo5537j();
         try {
             if (this.f6507n != null) {
                 this.f6507n.mo3350c();
             }
-            C2261g.m9763a("★NfcRemoteWatchService", "OnTagDetected1");
-            C2261g.m9763a("★NfcRemoteWatchService", "OnTagDetected1");
-            C2261g.m9763a("★NfcRemoteWatchService", "OnTagDetected2");
+            ImageAppLog.debug("★NfcRemoteWatchService", "OnTagDetected1");
+            ImageAppLog.debug("★NfcRemoteWatchService", "OnTagDetected1");
+            ImageAppLog.debug("★NfcRemoteWatchService", "OnTagDetected2");
             if (this.f6498e) {
                 byte[] a = this.f6502i.mo6848a(176, 16, 4);
                 if (a != null) {
-                    C2261g.m9763a("★NFC FeRAM 0x00b0:", C2803d.m11657a(a));
+                    ImageAppLog.debug("★NFC FeRAM 0x00b0:", NfcWrapper.m11657a(a));
                 }
                 byte[] a2 = this.f6502i.mo6848a(192, 16, 4);
                 if (a2 != null) {
-                    C2261g.m9763a("★NFC FeRAM 0x00c0:", C2803d.m11657a(a2));
+                    ImageAppLog.debug("★NFC FeRAM 0x00c0:", NfcWrapper.m11657a(a2));
                 }
                 byte[] a3 = this.f6502i.mo6848a(208, 16, 4);
                 if (a3 != null) {
-                    C2261g.m9763a("★NFC FeRAM 0x00d0:", C2803d.m11657a(a3));
+                    ImageAppLog.debug("★NFC FeRAM 0x00d0:", NfcWrapper.m11657a(a3));
                 }
                 byte[] a4 = this.f6502i.mo6848a(224, 16, 4);
                 if (a4 != null) {
-                    C2261g.m9763a("★NFC FeRAM 0x00e0:", C2803d.m11657a(a4));
+                    ImageAppLog.debug("★NFC FeRAM 0x00e0:", NfcWrapper.m11657a(a4));
                 }
                 byte[] a5 = this.f6502i.mo6848a(240, 16, 4);
                 if (a5 != null) {
-                    C2261g.m9763a("★NFC FeRAM 0x00f0:", C2803d.m11657a(a5));
+                    ImageAppLog.debug("★NFC FeRAM 0x00f0:", NfcWrapper.m11657a(a5));
                 }
                 byte[] a6 = this.f6502i.mo6848a(256, 16, 4);
                 if (a6 != null) {
-                    C2261g.m9763a("★NFC FeRAM 0x0100:", C2803d.m11657a(a6));
+                    ImageAppLog.debug("★NFC FeRAM 0x0100:", NfcWrapper.m11657a(a6));
                 }
                 byte[] a7 = this.f6502i.mo6848a(272, 16, 4);
                 if (a7 != null) {
-                    C2261g.m9763a("★NFC FeRAM 0x0110:", C2803d.m11657a(a7));
+                    ImageAppLog.debug("★NFC FeRAM 0x0110:", NfcWrapper.m11657a(a7));
                 }
                 byte[] a8 = this.f6502i.mo6848a(288, 16, 4);
                 if (a8 != null) {
-                    C2261g.m9763a("★NFC FeRAM 0x0120:", C2803d.m11657a(a8));
+                    ImageAppLog.debug("★NFC FeRAM 0x0120:", NfcWrapper.m11657a(a8));
                 }
             }
-            C2261g.m9763a("★NfcRemoteWatchService", "OnTagDetected3");
-            C2261g.m9763a("★NfcRemoteWatchService", "OnTagDetected3");
+            ImageAppLog.debug("★NfcRemoteWatchService", "OnTagDetected3");
+            ImageAppLog.debug("★NfcRemoteWatchService", "OnTagDetected3");
             byte[] a9 = this.f6502i.mo6848a(176, 16, 4);
-            C2261g.m9763a("★NfcRemoteWatchService", "transceiveReadCommand(0x00B0, 16, 4) Finish");
+            ImageAppLog.debug("★NfcRemoteWatchService", "transceiveReadCommand(0x00B0, 16, 4) Finish");
             String str3 = "";
             for (int i = 0; i < 6; i++) {
                 byte b = a9[i] & 255;
@@ -473,7 +473,7 @@ public class C2098a implements C2241u, C2806a {
                 str3 = str3 + Integer.toHexString(b);
             }
             this.f6508o = str3;
-            C2261g.m9763a("★NfcRemoteWatchService", "CameraMac:" + this.f6508o);
+            ImageAppLog.debug("★NfcRemoteWatchService", "CameraMac:" + this.f6508o);
             if ((a9[6] & Integer.parseInt("100", 2)) == Integer.parseInt("100", 2)) {
                 this.f6507n.mo3349b();
                 return;
@@ -482,12 +482,12 @@ public class C2098a implements C2241u, C2806a {
             String format = String.format("%s.%s", new Object[]{"ImageApp.Viana.Id", this.f6508o});
             String format2 = String.format("%s.%s", new Object[]{"ImageApp.Viana.Password", this.f6508o});
             C1913o b2 = C1712b.m6917b();
-            C2261g.m9763a("★NfcRemoteWatchService", "SharedPreferences Setting Finish");
+            ImageAppLog.debug("★NfcRemoteWatchService", "SharedPreferences Setting Finish");
             if (this.f6511r) {
                 Log.d("★NfcRemoteWatchService", "初見2度目タッチ");
-                C2261g.m9763a("★NfcRemoteWatchService", "NFC Connect:初見2度目タッチ");
+                ImageAppLog.debug("★NfcRemoteWatchService", "NFC Connect:初見2度目タッチ");
                 if (b2.f5826b == null || !b2.f5826b.equalsIgnoreCase(this.f6508o)) {
-                    C2261g.m9763a("★NFC Connect:", "VianaCameraMac == null || VianaCameraMac=_cameraMac");
+                    ImageAppLog.debug("★NFC Connect:", "VianaCameraMac == null || VianaCameraMac=_cameraMac");
                     this.f6507n.mo3352e();
                     return;
                 }
@@ -500,7 +500,7 @@ public class C2098a implements C2241u, C2806a {
                         break;
                     }
                     byte b3 = a10[i2];
-                    C2261g.m9763a("★NfcService:byte64", String.valueOf(b3));
+                    ImageAppLog.debug("★NfcService:byte64", String.valueOf(b3));
                     if (b3 == 0) {
                         bArr = null;
                         break;
@@ -536,13 +536,13 @@ public class C2098a implements C2241u, C2806a {
                     }
                     return;
                 }
-                C2261g.m9763a("★NFC Connect:", "Passwordが取れなかった");
+                ImageAppLog.debug("★NFC Connect:", "Passwordが取れなかった");
                 if (this.f6499f != null) {
                     this.f6507n.mo3353f();
                     this.f6499f.postDelayed(new Runnable() {
                         public void run() {
                             C2098a.this.f6509p = false;
-                            C2261g.m9763a("★NfcRemoteWatchService", "postDelayed");
+                            ImageAppLog.debug("★NfcRemoteWatchService", "postDelayed");
                             C2098a.this.mo5529c();
                             C2098a.this.mo5520a(System.currentTimeMillis());
                             C2098a.this.f6507n.mo3354g();
@@ -553,34 +553,34 @@ public class C2098a implements C2241u, C2806a {
                 return;
             }
             Log.d("★NFC Connect:", "初見2度目以外");
-            C2261g.m9763a("★NfcRemoteWatchService", "NFC Connect:初見2度目以外");
+            ImageAppLog.debug("★NfcRemoteWatchService", "NFC Connect:初見2度目以外");
             byte[] bArr2 = new byte[16];
             String[] split = new C2020c().mo5317j(this.f6500g).split(":");
-            C2261g.m9763a("★NfcRemoteWatchService", "MACアドレスの文字列から「:」を削除　Finish");
+            ImageAppLog.debug("★NfcRemoteWatchService", "MACアドレスの文字列から「:」を削除　Finish");
             for (int i3 = 0; i3 < split.length; i3++) {
                 bArr2[i3] = (byte) Integer.parseInt(split[i3], 16);
             }
-            C2261g.m9763a("★NfcRemoteWatchService", "スマホ情報をOSから取得　Finish");
+            ImageAppLog.debug("★NfcRemoteWatchService", "スマホ情報をOSから取得　Finish");
             bArr2[6] = 2;
             this.f6502i.mo6844a(224, bArr2, 4);
-            C2261g.m9763a("★NfcRemoteWatchService", "スマホMAC　Write　Finish");
-            C2261g.m9763a("★NfcRemoteWatchService", "カメラ状態フラグ確認　Start");
+            ImageAppLog.debug("★NfcRemoteWatchService", "スマホMAC　Write　Finish");
+            ImageAppLog.debug("★NfcRemoteWatchService", "カメラ状態フラグ確認　Start");
             byte[] a11 = this.f6502i.mo6848a(16384, 16, 4);
-            C2261g.m9763a("★NfcRemoteWatchService", "カメラ状態フラグ確認　End");
+            ImageAppLog.debug("★NfcRemoteWatchService", "カメラ状態フラグ確認　End");
             if (a11 == null) {
-                C2261g.m9763a("★NFC Connect:", "byteWakeState == null");
-                C2261g.m9763a("★NfcRemoteWatchService", "byteWakeState == null");
+                ImageAppLog.debug("★NFC Connect:", "byteWakeState == null");
+                ImageAppLog.debug("★NfcRemoteWatchService", "byteWakeState == null");
                 if (this.f6507n != null) {
                     this.f6507n.mo3345a();
                 }
             } else if ((a11[0] & Integer.parseInt("010", 2)) != Integer.parseInt("010", 2)) {
-                C2261g.m9763a("★NFC Connect:", " 2ビット目が立っている");
-                C2261g.m9763a("★NfcRemoteWatchService", "byteWakeState ==  2ビット目が立っている");
+                ImageAppLog.debug("★NFC Connect:", " 2ビット目が立っている");
+                ImageAppLog.debug("★NfcRemoteWatchService", "byteWakeState ==  2ビット目が立っている");
                 if (this.f6507n != null) {
                     this.f6507n.mo3345a();
                 }
             } else {
-                Log.d("★★VIANA FeRAM 0x00b0:", C2803d.m11657a(this.f6502i.mo6848a(176, 16, 4)));
+                Log.d("★★VIANA FeRAM 0x00b0:", NfcWrapper.m11657a(this.f6502i.mo6848a(176, 16, 4)));
                 String string = defaultSharedPreferences.getString(format, "");
                 String string2 = defaultSharedPreferences.getString(format2, "");
                 if (string == "" || string2 == "") {
@@ -588,9 +588,9 @@ public class C2098a implements C2241u, C2806a {
                         b2.f5826b = this.f6508o;
                     }
                     if (b2.f5826b == null) {
-                        C2261g.m9763a("★新規認識：VianaCameraMac=", "null");
+                        ImageAppLog.debug("★新規認識：VianaCameraMac=", "null");
                     } else {
-                        C2261g.m9763a("★新規認識：VianaCameraMac=", b2.f5826b);
+                        ImageAppLog.debug("★新規認識：VianaCameraMac=", b2.f5826b);
                     }
                     if (this.f6499f != null) {
                         m8788l();
@@ -602,17 +602,17 @@ public class C2098a implements C2241u, C2806a {
                 m8788l();
                 this.f6507n.mo3347a(this.f6508o, string, string2);
                 if (b2.f5826b == null) {
-                    C2261g.m9763a("★既知認識：VianaCameraMac=", "null");
+                    ImageAppLog.debug("★既知認識：VianaCameraMac=", "null");
                 } else {
-                    C2261g.m9763a("★既知認識：VianaCameraMac=", b2.f5826b);
+                    ImageAppLog.debug("★既知認識：VianaCameraMac=", b2.f5826b);
                 }
             }
         } catch (C2807e e) {
-            C2261g.m9763a("★NfcRemoteWatchService", "RfidStatusException");
+            ImageAppLog.debug("★NfcRemoteWatchService", "RfidStatusException");
             m8776a(e);
             m8789m();
             mo5532e();
-            C2261g.m9763a("★NFC Connect:", "catch (RfidStatusException e)");
+            ImageAppLog.debug("★NFC Connect:", "catch (RfidStatusException e)");
             if (this.f6507n != null && !this.f6511r) {
                 this.f6507n.mo3349b();
             }
@@ -620,11 +620,11 @@ public class C2098a implements C2241u, C2806a {
                 mo5520a(System.currentTimeMillis());
             }
         } catch (IOException e2) {
-            C2261g.m9763a("★NfcRemoteWatchService", "IOException");
+            ImageAppLog.debug("★NfcRemoteWatchService", "IOException");
             m8777a(e2);
             m8789m();
             mo5532e();
-            C2261g.m9763a("★NFC Connect:", "catch (IOException e)");
+            ImageAppLog.debug("★NFC Connect:", "catch (IOException e)");
             if (this.f6507n != null && !this.f6511r) {
                 this.f6507n.mo3349b();
             }
@@ -632,11 +632,11 @@ public class C2098a implements C2241u, C2806a {
                 mo5520a(System.currentTimeMillis());
             }
         } catch (C0346m e3) {
-            C2261g.m9763a("★NfcRemoteWatchService", "FelicaException");
+            ImageAppLog.debug("★NfcRemoteWatchService", "FelicaException");
             m8775a(e3);
             m8789m();
             mo5532e();
-            C2261g.m9763a("★NFC Connect:", "catch (FelicaException e)");
+            ImageAppLog.debug("★NFC Connect:", "catch (FelicaException e)");
             if (this.f6507n != null && !this.f6511r) {
                 this.f6507n.mo3349b();
             }
@@ -644,15 +644,15 @@ public class C2098a implements C2241u, C2806a {
                 mo5520a(System.currentTimeMillis());
             }
         } catch (Exception e4) {
-            C2261g.m9763a("★NfcRemoteWatchService", "Exception");
+            ImageAppLog.debug("★NfcRemoteWatchService", "Exception");
             if (e4 != null) {
                 e4.printStackTrace();
             }
             mo5523a(e4);
-            C2261g.m9763a("★NFC Connect:", "catch (Exception e)");
+            ImageAppLog.debug("★NFC Connect:", "catch (Exception e)");
             m8789m();
             mo5532e();
-            C2261g.m9763a("★NFC Connect:", "catch (Exception e)");
+            ImageAppLog.debug("★NFC Connect:", "catch (Exception e)");
             if (this.f6507n != null && !this.f6511r) {
                 this.f6507n.mo3349b();
             }

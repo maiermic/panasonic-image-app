@@ -28,12 +28,12 @@ import com.panasonic.avc.cng.core.p046c.C1686t;
 import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.service.C2137j;
 import com.panasonic.avc.cng.model.service.C2137j.C2138a;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.util.C2266l;
 import com.panasonic.avc.cng.view.p072a.C2316j;
 import com.panasonic.avc.cng.view.p073b.C2317a.C2325c;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
 import com.panasonic.avc.cng.view.setting.C5741i;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
@@ -43,7 +43,7 @@ import java.util.UUID;
 
 public class BluetoothSettingActivity extends C5741i implements C0010a {
     private static final int LOCATION_ON_SETTING_RESULTCODE = 700;
-    public static final String NAME = C2544f.class.getSimpleName();
+    public static final String NAME = BluetoothSettingViewModel.class.getSimpleName();
     private static final long SCAN_PERIOD = 10000;
     private static final String TAG = "BluetoothSettingActivity";
     /* access modifiers changed from: private */
@@ -89,7 +89,7 @@ public class BluetoothSettingActivity extends C5741i implements C0010a {
     /* access modifiers changed from: private */
     public ViewGroup _unregisteredViewGroup;
     /* access modifiers changed from: private */
-    public C2544f _viewModel;
+    public BluetoothSettingViewModel _viewModel;
 
     /* renamed from: com.panasonic.avc.cng.view.bluetooth.BluetoothSettingActivity$a */
     private class C2511a implements C2138a {
@@ -98,13 +98,13 @@ public class BluetoothSettingActivity extends C5741i implements C0010a {
 
         /* renamed from: b */
         public void mo5669b() {
-            C2261g.m9763a(BluetoothSettingActivity.TAG, "onBleConnectStart");
+            ImageAppLog.debug(BluetoothSettingActivity.TAG, "onBleConnectStart");
             if (BluetoothSettingActivity.this._handler != null) {
                 BluetoothSettingActivity.this._btConnectState = "Connecting";
                 BluetoothSettingActivity.this._handler.post(new Runnable() {
                     public void run() {
                         if (BluetoothSettingActivity.this._isPairingConnect) {
-                            C2331d.m10114a((Activity) BluetoothSettingActivity.this, C2328a.ON_PROGRESS, (Bundle) null);
+                            DialogFactory.m10114a((Activity) BluetoothSettingActivity.this, C2328a.ON_PROGRESS, (Bundle) null);
                         }
                     }
                 });
@@ -113,7 +113,7 @@ public class BluetoothSettingActivity extends C5741i implements C0010a {
 
         /* renamed from: a */
         public void mo5668a(boolean z) {
-            C2261g.m9763a(BluetoothSettingActivity.TAG, "onBleConnected");
+            ImageAppLog.debug(BluetoothSettingActivity.TAG, "onBleConnected");
             if (BluetoothSettingActivity.this._handler != null) {
                 BluetoothSettingActivity.this._btConnectState = "Connected";
                 if (BluetoothSettingActivity.this._imageAppService != null) {
@@ -122,7 +122,7 @@ public class BluetoothSettingActivity extends C5741i implements C0010a {
                 BluetoothSettingActivity.this._handler.post(new Runnable() {
                     public void run() {
                         if (BluetoothSettingActivity.this._imageAppService != null) {
-                            C2261g.m9763a(BluetoothSettingActivity.TAG, "writeData:" + BluetoothSettingActivity.this._imageAppService.mo5627a(1, C2266l.m9808a("4D454930010010008001" + PreferenceManager.getDefaultSharedPreferences(BluetoothSettingActivity.this._context).getString("Dlna_UUID_Seed", ""))));
+                            ImageAppLog.debug(BluetoothSettingActivity.TAG, "writeData:" + BluetoothSettingActivity.this._imageAppService.mo5627a(1, C2266l.m9808a("4D454930010010008001" + PreferenceManager.getDefaultSharedPreferences(BluetoothSettingActivity.this._context).getString("Dlna_UUID_Seed", ""))));
                         }
                     }
                 });
@@ -131,7 +131,7 @@ public class BluetoothSettingActivity extends C5741i implements C0010a {
 
         /* renamed from: a */
         public void mo5662a(int i) {
-            C2261g.m9763a(BluetoothSettingActivity.TAG, "onBleDisconnected");
+            ImageAppLog.debug(BluetoothSettingActivity.TAG, "onBleDisconnected");
             if (BluetoothSettingActivity.this._handler != null) {
                 BluetoothSettingActivity.this._btConnectState = "Disconnected";
                 if (BluetoothSettingActivity.this._imageAppService != null) {
@@ -139,9 +139,9 @@ public class BluetoothSettingActivity extends C5741i implements C0010a {
                 }
                 BluetoothSettingActivity.this._handler.post(new Runnable() {
                     public void run() {
-                        C2331d.m10102a((Activity) BluetoothSettingActivity.this, C2328a.ON_PROGRESS);
+                        DialogFactory.m10102a((Activity) BluetoothSettingActivity.this, C2328a.ON_PROGRESS);
                         if (BluetoothSettingActivity.this._isPairingConnect) {
-                            C2331d.m10114a((Activity) BluetoothSettingActivity.this, C2328a.ON_BT_PAIRING_ERROR, (Bundle) null);
+                            DialogFactory.m10114a((Activity) BluetoothSettingActivity.this, C2328a.ON_BT_PAIRING_ERROR, (Bundle) null);
                         }
                     }
                 });
@@ -155,14 +155,14 @@ public class BluetoothSettingActivity extends C5741i implements C0010a {
 
         /* renamed from: d */
         public void mo5672d() {
-            C2261g.m9763a(BluetoothSettingActivity.TAG, "onBleConnectError");
+            ImageAppLog.debug(BluetoothSettingActivity.TAG, "onBleConnectError");
             if (BluetoothSettingActivity.this._handler != null) {
                 BluetoothSettingActivity.this._btConnectState = "Disconnected";
                 BluetoothSettingActivity.this._handler.post(new Runnable() {
                     public void run() {
-                        C2331d.m10102a((Activity) BluetoothSettingActivity.this, C2328a.ON_PROGRESS);
+                        DialogFactory.m10102a((Activity) BluetoothSettingActivity.this, C2328a.ON_PROGRESS);
                         if (BluetoothSettingActivity.this._isPairingConnect) {
-                            C2331d.m10114a((Activity) BluetoothSettingActivity.this, C2328a.ON_BT_PAIRING_ERROR, (Bundle) null);
+                            DialogFactory.m10114a((Activity) BluetoothSettingActivity.this, C2328a.ON_BT_PAIRING_ERROR, (Bundle) null);
                         }
                     }
                 });
@@ -172,9 +172,9 @@ public class BluetoothSettingActivity extends C5741i implements C0010a {
         /* renamed from: a */
         public void mo5663a(BluetoothDevice bluetoothDevice, String str, String str2, String str3) {
             if (BluetoothSettingActivity.this._handler != null && str != null) {
-                C2261g.m9763a(BluetoothSettingActivity.TAG, "onBleScanResult / state = " + str3);
-                C2261g.m9763a(BluetoothSettingActivity.TAG, "onBleScanResult / devName = " + str);
-                C2261g.m9763a(BluetoothSettingActivity.TAG, "onBleScanResult / publicAddress = " + str2);
+                ImageAppLog.debug(BluetoothSettingActivity.TAG, "onBleScanResult / state = " + str3);
+                ImageAppLog.debug(BluetoothSettingActivity.TAG, "onBleScanResult / devName = " + str);
+                ImageAppLog.debug(BluetoothSettingActivity.TAG, "onBleScanResult / publicAddress = " + str2);
                 if (str3.equalsIgnoreCase("pairing")) {
                     final String str4 = str2;
                     final BluetoothDevice bluetoothDevice2 = bluetoothDevice;
@@ -264,7 +264,7 @@ public class BluetoothSettingActivity extends C5741i implements C0010a {
                     });
                 } else if (str3.equalsIgnoreCase("normal")) {
                     String string = PreferenceManager.getDefaultSharedPreferences(BluetoothSettingActivity.this._context).getString("CurrentConnectedAddress", "");
-                    C2261g.m9763a(BluetoothSettingActivity.TAG, "targetAddress:" + string);
+                    ImageAppLog.debug(BluetoothSettingActivity.TAG, "targetAddress:" + string);
                     if (BluetoothSettingActivity.this._imageAppService != null && !string.equalsIgnoreCase("") && string.equalsIgnoreCase(str2) && !BluetoothSettingActivity.this._btConnectState.equalsIgnoreCase("Connecting")) {
                         BluetoothSettingActivity.this._isBTConnectNotCompleted = true;
                         BluetoothSettingActivity.this._imageAppService.mo5628a(bluetoothDevice, false);
@@ -281,7 +281,7 @@ public class BluetoothSettingActivity extends C5741i implements C0010a {
                     } else {
                         BluetoothSettingActivity.this._handler.post(new Runnable() {
                             public void run() {
-                                C2331d.m10114a((Activity) BluetoothSettingActivity.this, C2328a.ON_BT_LOCATION_SETTING_ON, (Bundle) null);
+                                DialogFactory.m10114a((Activity) BluetoothSettingActivity.this, C2328a.ON_BT_LOCATION_SETTING_ON, (Bundle) null);
                             }
                         });
                     }
@@ -291,14 +291,14 @@ public class BluetoothSettingActivity extends C5741i implements C0010a {
 
         /* renamed from: a */
         public void mo5667a(UUID uuid, int i, Bundle bundle) {
-            C2261g.m9763a(BluetoothSettingActivity.TAG, "onBleRead");
+            ImageAppLog.debug(BluetoothSettingActivity.TAG, "onBleRead");
             if (uuid.equals(UUID.fromString("e206a5c0-3214-11e6-afe4-0002a5d5c51b"))) {
                 byte[] byteArray = bundle.getByteArray("VALUE");
                 if (byteArray != null) {
                     BluetoothSettingActivity.this._ssid = C2266l.m9809a(1, byteArray)[0];
                 }
                 if (BluetoothSettingActivity.this._imageAppService != null) {
-                    C2261g.m9763a(BluetoothSettingActivity.TAG, "readData:" + BluetoothSettingActivity.this._imageAppService.mo5626a(6));
+                    ImageAppLog.debug(BluetoothSettingActivity.TAG, "readData:" + BluetoothSettingActivity.this._imageAppService.mo5626a(6));
                 }
             } else if (uuid.equals(UUID.fromString("c97cf1a5-3c03-4290-8c1b-9e74b9500f54"))) {
                 byte[] byteArray2 = bundle.getByteArray("VALUE");
@@ -307,7 +307,7 @@ public class BluetoothSettingActivity extends C5741i implements C0010a {
                         ByteBuffer wrap = ByteBuffer.wrap(byteArray2);
                         wrap.order(ByteOrder.LITTLE_ENDIAN);
                         BluetoothSettingActivity.this._password = C1686t.m6748a(wrap.array(), BluetoothSettingActivity.this._initialForm).trim();
-                        C2261g.m9763a(BluetoothSettingActivity.TAG, "_password:" + BluetoothSettingActivity.this._password);
+                        ImageAppLog.debug(BluetoothSettingActivity.TAG, "_password:" + BluetoothSettingActivity.this._password);
                     } else {
                         BluetoothSettingActivity.this._password = C2266l.m9809a(1, byteArray2)[0];
                     }
@@ -315,7 +315,7 @@ public class BluetoothSettingActivity extends C5741i implements C0010a {
                 BluetoothSettingActivity.this._isPairingConnect = false;
                 BluetoothSettingActivity.this._handler.post(new Runnable() {
                     public void run() {
-                        C2331d.m10102a((Activity) BluetoothSettingActivity.this, C2328a.ON_PROGRESS);
+                        DialogFactory.m10102a((Activity) BluetoothSettingActivity.this, C2328a.ON_PROGRESS);
                         Intent intent = new Intent(BluetoothSettingActivity.this, BluetoothRegistActivity.class);
                         intent.putExtra("IntialForm", BluetoothSettingActivity.this._initialForm);
                         intent.putExtra("SSID", BluetoothSettingActivity.this._ssid);
@@ -335,7 +335,7 @@ public class BluetoothSettingActivity extends C5741i implements C0010a {
                     }
                     BluetoothSettingActivity.this._initialForm = jArr[3] | (jArr[0] << 24) | (jArr[1] << 16) | (jArr[2] << 8);
                     if (BluetoothSettingActivity.this._isPairingConnect) {
-                        C2261g.m9763a(BluetoothSettingActivity.TAG, "readData:" + BluetoothSettingActivity.this._imageAppService.mo5626a(5));
+                        ImageAppLog.debug(BluetoothSettingActivity.TAG, "readData:" + BluetoothSettingActivity.this._imageAppService.mo5626a(5));
                     }
                 }
             }
@@ -345,7 +345,7 @@ public class BluetoothSettingActivity extends C5741i implements C0010a {
         public void mo5666a(UUID uuid, int i) {
             String a;
             String c;
-            C2261g.m9763a(BluetoothSettingActivity.TAG, "onBleWrite");
+            ImageAppLog.debug(BluetoothSettingActivity.TAG, "onBleWrite");
             if (uuid.equals(UUID.fromString("8d08a420-3213-11e6-8aca-0002a5d5c51b"))) {
                 if (BluetoothSettingActivity.this._imageAppService != null) {
                     SharedPreferences sharedPreferences = BluetoothSettingActivity.this._context.getSharedPreferences("com.panasonic.avc.cng.imageapp.privatekey", 0);
@@ -362,7 +362,7 @@ public class BluetoothSettingActivity extends C5741i implements C0010a {
                     } else {
                         a = BluetoothSettingActivity.this._imageAppService.mo5627a(2, string2.getBytes());
                     }
-                    C2261g.m9763a(BluetoothSettingActivity.TAG, "writeData:" + a);
+                    ImageAppLog.debug(BluetoothSettingActivity.TAG, "writeData:" + a);
                 }
             } else if (!uuid.equals(UUID.fromString("cd7a71a0-3213-11e6-8f56-0002a5d5c51b"))) {
             } else {
@@ -373,7 +373,7 @@ public class BluetoothSettingActivity extends C5741i implements C0010a {
                 } else if (i == 133) {
                     BluetoothSettingActivity.this._handler.post(new Runnable() {
                         public void run() {
-                            C2331d.m10114a((Activity) BluetoothSettingActivity.this, C2328a.ON_BT_PARING_REGIST_ERROR, (Bundle) null);
+                            DialogFactory.m10114a((Activity) BluetoothSettingActivity.this, C2328a.ON_BT_PARING_REGIST_ERROR, (Bundle) null);
                         }
                     });
                 } else {
@@ -387,17 +387,17 @@ public class BluetoothSettingActivity extends C5741i implements C0010a {
 
         /* renamed from: a */
         public void mo5664a(Bundle bundle, String str) {
-            C2261g.m9763a(BluetoothSettingActivity.TAG, "onBleNotification");
+            ImageAppLog.debug(BluetoothSettingActivity.TAG, "onBleNotification");
         }
 
         /* renamed from: a */
         public void mo5661a() {
-            C2261g.m9763a(BluetoothSettingActivity.TAG, "onBleScanStart");
+            ImageAppLog.debug(BluetoothSettingActivity.TAG, "onBleScanStart");
         }
 
         /* renamed from: c */
         public void mo5671c() {
-            C2261g.m9763a(BluetoothSettingActivity.TAG, "onBleConnectTimeOut");
+            ImageAppLog.debug(BluetoothSettingActivity.TAG, "onBleConnectTimeOut");
             if (BluetoothSettingActivity.this._imageAppService != null) {
                 BluetoothSettingActivity.this._imageAppService.mo5641c();
                 BluetoothSettingActivity.this._handler.post(new Runnable() {
@@ -433,26 +433,26 @@ public class BluetoothSettingActivity extends C5741i implements C0010a {
 
         /* renamed from: a */
         public void mo5665a(String str) {
-            C2261g.m9763a(BluetoothSettingActivity.TAG, "onBleCopyStatus");
+            ImageAppLog.debug(BluetoothSettingActivity.TAG, "onBleCopyStatus");
         }
 
         /* renamed from: b */
         public void mo5670b(boolean z) {
-            C2261g.m9763a(BluetoothSettingActivity.TAG, "onBleNotificationEnable");
+            ImageAppLog.debug(BluetoothSettingActivity.TAG, "onBleNotificationEnable");
         }
 
         /* renamed from: e */
         public void mo5673e() {
-            C2261g.m9763a(BluetoothSettingActivity.TAG, "onBleServicePrepared");
+            ImageAppLog.debug(BluetoothSettingActivity.TAG, "onBleServicePrepared");
         }
 
         /* renamed from: f */
         public void mo5674f() {
-            C2261g.m9763a(BluetoothSettingActivity.TAG, "onBleScanResultError");
-            if (BluetoothSettingActivity.this._handler != null && !C2331d.m10125b((Activity) BluetoothSettingActivity.this, C2328a.ON_BT_LOCATION_SETTING_ON) && BluetoothSettingActivity.this._checkBox.isChecked()) {
+            ImageAppLog.debug(BluetoothSettingActivity.TAG, "onBleScanResultError");
+            if (BluetoothSettingActivity.this._handler != null && !DialogFactory.m10125b((Activity) BluetoothSettingActivity.this, C2328a.ON_BT_LOCATION_SETTING_ON) && BluetoothSettingActivity.this._checkBox.isChecked()) {
                 BluetoothSettingActivity.this._handler.post(new Runnable() {
                     public void run() {
-                        C2331d.m10114a((Activity) BluetoothSettingActivity.this, C2328a.ON_BT_LOCATION_SETTING_ON, (Bundle) null);
+                        DialogFactory.m10114a((Activity) BluetoothSettingActivity.this, C2328a.ON_BT_LOCATION_SETTING_ON, (Bundle) null);
                     }
                 });
             }
@@ -460,7 +460,7 @@ public class BluetoothSettingActivity extends C5741i implements C0010a {
 
         /* renamed from: g */
         public void mo5675g() {
-            C2261g.m9763a(BluetoothSettingActivity.TAG, "onAutoSendAcctrlDone");
+            ImageAppLog.debug(BluetoothSettingActivity.TAG, "onAutoSendAcctrlDone");
         }
     }
 
@@ -470,11 +470,11 @@ public class BluetoothSettingActivity extends C5741i implements C0010a {
         requestWindowFeature(1);
         setContentView(R.layout.activity_bluetooth_setting);
         C2511a aVar = new C2511a();
-        this._viewModel = (C2544f) C2316j.m10030a(C2544f.f8032e);
+        this._viewModel = (BluetoothSettingViewModel) C2316j.m10030a(BluetoothSettingViewModel.f8032e);
         if (this._viewModel == null) {
-            this._viewModel = new C2544f(this._context, this._handler, aVar);
+            this._viewModel = new BluetoothSettingViewModel(this._context, this._handler, aVar);
             this._viewModel.mo6330a(this._context, this._handler, aVar);
-            C2316j.m10032a(C2544f.f8032e, this._viewModel);
+            C2316j.m10032a(BluetoothSettingViewModel.f8032e, this._viewModel);
         } else {
             this._viewModel.mo6330a(this._context, this._handler, aVar);
         }
@@ -483,7 +483,7 @@ public class BluetoothSettingActivity extends C5741i implements C0010a {
         if (extras != null) {
             this._oldDeviceName = extras.getString("DeviceName");
             this._isBTConnectNotCompleted = extras.getBoolean("BT_Not_Completed", false);
-            C2261g.m9769c(TAG, "_isBTConnectNotCompleted:" + this._isBTConnectNotCompleted);
+            ImageAppLog.error(TAG, "_isBTConnectNotCompleted:" + this._isBTConnectNotCompleted);
         }
         this._checkBox = (CheckBox) findViewById(R.id.checkbox_bluetooth_enable);
         this._registeredTitleView = (TextView) findViewById(R.id.textview_registered_title);
@@ -535,8 +535,8 @@ public class BluetoothSettingActivity extends C5741i implements C0010a {
                 if (hVar != null) {
                     SharedPreferences defaultSharedPreferences = PreferenceManager.getDefaultSharedPreferences(BluetoothSettingActivity.this._context);
                     String string = defaultSharedPreferences.getString("CurrentConnectedAddress", "");
-                    C2261g.m9769c(BluetoothSettingActivity.TAG, "targetAddress:" + string);
-                    C2261g.m9769c(BluetoothSettingActivity.TAG, "device.getAddress():" + hVar.mo6340c());
+                    ImageAppLog.error(BluetoothSettingActivity.TAG, "targetAddress:" + string);
+                    ImageAppLog.error(BluetoothSettingActivity.TAG, "device.getAddress():" + hVar.mo6340c());
                     if (BluetoothSettingActivity.this._imageAppService != null && !hVar.mo6340c().equalsIgnoreCase(string)) {
                         BluetoothSettingActivity.this._imageAppService.mo5642d();
                         BluetoothSettingActivity.this._btConnectState = "Disconnected";
@@ -549,26 +549,26 @@ public class BluetoothSettingActivity extends C5741i implements C0010a {
         this._unregisteredListView.setAdapter(new C2547g(this));
         this._unregisteredListView.setOnItemClickListener(new OnItemClickListener() {
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long j) {
-                C2261g.m9760a(3198977, "");
+                ImageAppLog.m9760a(3198977, "");
                 SharedPreferences defaultSharedPreferences = PreferenceManager.getDefaultSharedPreferences(BluetoothSettingActivity.this._context);
                 if (!defaultSharedPreferences.getBoolean("Bluetooth", false) || !C2266l.m9823c()) {
                     BluetoothSettingActivity.this._handler.post(new Runnable() {
                         public void run() {
-                            C2331d.m10114a((Activity) BluetoothSettingActivity.this, C2328a.ON_BT_CONNECT_ERROR, (Bundle) null);
+                            DialogFactory.m10114a((Activity) BluetoothSettingActivity.this, C2328a.ON_BT_CONNECT_ERROR, (Bundle) null);
                         }
                     });
                 } else if (C2266l.m9837f(BluetoothSettingActivity.this._context).size() >= 5) {
                     BluetoothSettingActivity.this._handler.post(new Runnable() {
                         public void run() {
-                            C2331d.m10114a((Activity) BluetoothSettingActivity.this, C2328a.ON_BT_REGIST_ERROR, (Bundle) null);
+                            DialogFactory.m10114a((Activity) BluetoothSettingActivity.this, C2328a.ON_BT_REGIST_ERROR, (Bundle) null);
                         }
                     });
                 } else if (BluetoothSettingActivity.this._imageAppService != null) {
                     C2550h hVar = (C2550h) ((C2547g) adapterView.getAdapter()).getItem(i);
                     if (hVar != null) {
                         String string = defaultSharedPreferences.getString("CurrentConnectedAddress", "");
-                        C2261g.m9769c(BluetoothSettingActivity.TAG, "targetAddress:" + string);
-                        C2261g.m9769c(BluetoothSettingActivity.TAG, "device.getAddress():" + hVar.mo6340c());
+                        ImageAppLog.error(BluetoothSettingActivity.TAG, "targetAddress:" + string);
+                        ImageAppLog.error(BluetoothSettingActivity.TAG, "device.getAddress():" + hVar.mo6340c());
                         if (string.equalsIgnoreCase("") || hVar.mo6340c().equalsIgnoreCase(string) || !BluetoothSettingActivity.this._imageAppService.mo5649k()) {
                             BluetoothSettingActivity.this._isPairingConnect = true;
                             BluetoothSettingActivity.this._publicAddress = hVar.mo6340c();
@@ -659,7 +659,7 @@ public class BluetoothSettingActivity extends C5741i implements C0010a {
 
     /* access modifiers changed from: protected */
     public void onResume() {
-        C2261g.m9763a(TAG, "onResume()");
+        ImageAppLog.debug(TAG, "onResume()");
         super.onResume();
         if (PreferenceManager.getDefaultSharedPreferences(this._context).getBoolean("Bluetooth", false) && C2266l.m9823c()) {
             this._imageAppService = this._viewModel.mo6331c(true);
@@ -673,7 +673,7 @@ public class BluetoothSettingActivity extends C5741i implements C0010a {
 
     /* access modifiers changed from: protected */
     public void onPause() {
-        C2261g.m9763a(TAG, "onPause()");
+        ImageAppLog.debug(TAG, "onPause()");
         super.onPause();
     }
 
@@ -685,7 +685,7 @@ public class BluetoothSettingActivity extends C5741i implements C0010a {
     /* access modifiers changed from: protected */
     public void onActivityResult(int i, int i2, Intent intent) {
         int i3 = 0;
-        C2261g.m9763a(TAG, "onActivityResult()");
+        ImageAppLog.debug(TAG, "onActivityResult()");
         super.onActivityResult(i, i2, intent);
         Bundle bundle = null;
         if (intent != null) {
@@ -712,12 +712,12 @@ public class BluetoothSettingActivity extends C5741i implements C0010a {
             }
             if (bundle != null) {
                 this._isBTConnectNotCompleted = bundle.getBoolean("BT_Not_Completed");
-                C2261g.m9769c(TAG, "_isBTConnectNotCompleted:" + this._isBTConnectNotCompleted);
+                ImageAppLog.error(TAG, "_isBTConnectNotCompleted:" + this._isBTConnectNotCompleted);
                 if (bundle.getBoolean("BT_Pairing_Completed")) {
                     finish();
                 } else {
                     boolean z = bundle.getBoolean("CloudBackUpAppFinish");
-                    C2261g.m9769c(TAG, "isFinish:" + z);
+                    ImageAppLog.error(TAG, "isFinish:" + z);
                     this._resultBundle.putBoolean("CloudBackUpAppFinish", bundle.getBoolean("CloudBackUpAppFinish"));
                     if (z) {
                         finish();
@@ -750,7 +750,7 @@ public class BluetoothSettingActivity extends C5741i implements C0010a {
             case ON_BT_PAIRING_ERROR:
                 this._handler.post(new Runnable() {
                     public void run() {
-                        C2331d.m10102a((Activity) BluetoothSettingActivity.this, C2328a.ON_PROGRESS);
+                        DialogFactory.m10102a((Activity) BluetoothSettingActivity.this, C2328a.ON_PROGRESS);
                         ((C2547g) BluetoothSettingActivity.this._unregisteredListView.getAdapter()).clear();
                         BluetoothSettingActivity.this._unregisteredListView.setVisibility(4);
                         BluetoothSettingActivity.this._unregisteredMessageView.setVisibility(0);
@@ -758,12 +758,12 @@ public class BluetoothSettingActivity extends C5741i implements C0010a {
                 });
                 return;
             case ON_BT_DEVICE_NAME_CHANGE:
-                this._editDeviceName = C2331d.m10128c(this, C2328a.ON_BT_DEVICE_NAME_CHANGE, R.id.deviceName);
+                this._editDeviceName = DialogFactory.m10128c(this, C2328a.ON_BT_DEVICE_NAME_CHANGE, R.id.deviceName);
                 this._btDeviceName = this._editDeviceName != null ? this._editDeviceName.toString() : "";
                 if (this._btDeviceName.getBytes().length > 20) {
                     this._handler.post(new Runnable() {
                         public void run() {
-                            C2331d.m10114a((Activity) BluetoothSettingActivity.this, C2328a.ON_BT_DEVICE_NAME_TOO_LONG, (Bundle) null);
+                            DialogFactory.m10114a((Activity) BluetoothSettingActivity.this, C2328a.ON_BT_DEVICE_NAME_TOO_LONG, (Bundle) null);
                         }
                     });
                     return;
@@ -784,11 +784,11 @@ public class BluetoothSettingActivity extends C5741i implements C0010a {
                 this._btDeviceName = C2266l.m9821c(this._editDeviceName.toString());
                 this._handler.post(new Runnable() {
                     public void run() {
-                        C2331d.m10115a((Activity) BluetoothSettingActivity.this, C2328a.ON_BT_DEVICE_NAME_CHANGE, (Bundle) null, (C2325c) new C2325c() {
+                        DialogFactory.m10115a((Activity) BluetoothSettingActivity.this, C2328a.ON_BT_DEVICE_NAME_CHANGE, (Bundle) null, (C2325c) new C2325c() {
                             /* renamed from: a */
                             public void mo6131a() {
-                                C2331d.m10111a((Activity) BluetoothSettingActivity.this, C2328a.ON_BT_DEVICE_NAME_CHANGE, (int) R.id.deviceName, (CharSequence) BluetoothSettingActivity.this._btDeviceName);
-                                C2331d.m10138f(BluetoothSettingActivity.this, C2328a.ON_BT_DEVICE_NAME_CHANGE, R.id.deviceName, 1);
+                                DialogFactory.m10111a((Activity) BluetoothSettingActivity.this, C2328a.ON_BT_DEVICE_NAME_CHANGE, (int) R.id.deviceName, (CharSequence) BluetoothSettingActivity.this._btDeviceName);
+                                DialogFactory.m10138f(BluetoothSettingActivity.this, C2328a.ON_BT_DEVICE_NAME_CHANGE, R.id.deviceName, 1);
                             }
                         });
                     }
@@ -804,7 +804,7 @@ public class BluetoothSettingActivity extends C5741i implements C0010a {
         if (this._imageAppService != null && (this._oldDeviceName == null || !this._oldDeviceName.equals(this._ssid))) {
             this._resultBundle.putBoolean("DeviceChangedKey", true);
         }
-        C2261g.m9769c(TAG, "_isBTConnectNotCompleted:" + this._isBTConnectNotCompleted);
+        ImageAppLog.error(TAG, "_isBTConnectNotCompleted:" + this._isBTConnectNotCompleted);
         this._resultBundle.putBoolean("BT_Not_Completed", this._isBTConnectNotCompleted);
         Intent intent = new Intent();
         intent.putExtras(this._resultBundle);
@@ -812,7 +812,7 @@ public class BluetoothSettingActivity extends C5741i implements C0010a {
         if (this._viewModel != null) {
             this._viewModel.mo3205a();
         }
-        C2316j.m10034b(C2544f.f8032e);
+        C2316j.m10034b(BluetoothSettingViewModel.f8032e);
         super.finish();
     }
 
@@ -829,11 +829,11 @@ public class BluetoothSettingActivity extends C5741i implements C0010a {
         }
         this._handler.post(new Runnable() {
             public void run() {
-                C2331d.m10115a((Activity) BluetoothSettingActivity.this, C2328a.ON_BT_DEVICE_NAME_CHANGE, (Bundle) null, (C2325c) new C2325c() {
+                DialogFactory.m10115a((Activity) BluetoothSettingActivity.this, C2328a.ON_BT_DEVICE_NAME_CHANGE, (Bundle) null, (C2325c) new C2325c() {
                     /* renamed from: a */
                     public void mo6131a() {
-                        C2331d.m10111a((Activity) BluetoothSettingActivity.this, C2328a.ON_BT_DEVICE_NAME_CHANGE, (int) R.id.deviceName, (CharSequence) BluetoothSettingActivity.this._btDeviceName);
-                        C2331d.m10138f(BluetoothSettingActivity.this, C2328a.ON_BT_DEVICE_NAME_CHANGE, R.id.deviceName, 1);
+                        DialogFactory.m10111a((Activity) BluetoothSettingActivity.this, C2328a.ON_BT_DEVICE_NAME_CHANGE, (int) R.id.deviceName, (CharSequence) BluetoothSettingActivity.this._btDeviceName);
+                        DialogFactory.m10138f(BluetoothSettingActivity.this, C2328a.ON_BT_DEVICE_NAME_CHANGE, R.id.deviceName, 1);
                     }
                 });
             }

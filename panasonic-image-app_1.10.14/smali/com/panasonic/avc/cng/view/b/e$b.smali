@@ -15,11 +15,11 @@
 
 
 # instance fields
-.field public a:Lcom/panasonic/avc/cng/model/c/h;
+.field public a:Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
 
 # direct methods
-.method public constructor <init>(Lcom/panasonic/avc/cng/model/c/h;)V
+.method public constructor <init>(Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;)V
     .locals 0
 
     .prologue
@@ -27,7 +27,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 611
-    iput-object p1, p0, Lcom/panasonic/avc/cng/view/b/e$b;->a:Lcom/panasonic/avc/cng/model/c/h;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/view/b/e$b;->a:Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
     .line 612
     return-void

@@ -5,7 +5,7 @@ import android.os.Looper;
 import com.google.android.gms.common.api.Status;
 import com.google.android.gms.common.util.C0688c;
 import com.google.android.gms.common.util.C0689d;
-import com.google.android.gms.p035d.C0806dt;
+import com.google.android.gms.p035d.BasePendingResult;
 import com.google.android.gms.p035d.C0864fw;
 import com.google.android.gms.p035d.C0867fz;
 import com.google.android.gms.p035d.C1067r;
@@ -13,7 +13,7 @@ import com.google.android.gms.p035d.C1068s;
 import com.google.android.gms.p035d.C1073x;
 
 /* renamed from: com.google.android.gms.e.fr */
-public final class C1257fr extends C0806dt<C1124b> {
+public final class C1257fr extends BasePendingResult<C1124b> {
     /* access modifiers changed from: private */
 
     /* renamed from: b */

@@ -9,10 +9,10 @@ import android.widget.LinearLayout;
 import com.panasonic.avc.cng.core.p040a.C1448aj;
 import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.C1712b;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.util.C2274o;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
 import com.panasonic.avc.cng.view.p073b.C2376f.C2378b;
 import java.util.ArrayList;
 
@@ -43,7 +43,7 @@ public class LiveViewMoviePantilterRemoteWatchPresetActivity extends C3614a impl
         C1712b.m6914a((Activity) this);
         super.onCreate(bundle);
         if (isLog()) {
-            C2261g.m9770d(GET_TAG(), "onCreate()");
+            ImageAppLog.verbose(GET_TAG(), "onCreate()");
         }
         setContentView(R.layout.activity_liveview_movie_pantilter_remotewatch_preset_mode);
         mo8557a(1, false, 1, "preset");
@@ -465,7 +465,7 @@ public class LiveViewMoviePantilterRemoteWatchPresetActivity extends C3614a impl
         } else {
             bundle.putInt(C2378b.SINGLE_CHOICE_CHECKED_ITEM.name(), -1);
         }
-        C2331d.m10114a((Activity) this, C2328a.ON_SELECT_PANTILTER_ROUND_SETTING, bundle);
+        DialogFactory.m10114a((Activity) this, C2328a.ON_SELECT_PANTILTER_ROUND_SETTING, bundle);
     }
 
     public boolean onTouch(View view, MotionEvent motionEvent) {
@@ -511,7 +511,7 @@ public class LiveViewMoviePantilterRemoteWatchPresetActivity extends C3614a impl
 
     public void onBackPressed() {
         if (isLog()) {
-            C2261g.m9770d(GET_TAG(), "onBackPressed()");
+            ImageAppLog.verbose(GET_TAG(), "onBackPressed()");
         }
         if (this._isMicVolSet) {
             this._isMicVolSet = false;
@@ -519,7 +519,7 @@ public class LiveViewMoviePantilterRemoteWatchPresetActivity extends C3614a impl
         } else if (this._remoteViewModel == null) {
         } else {
             if (this._remoteViewModel.mo8583F() == 1) {
-                C2331d.m10114a((Activity) this, C2328a.ON_BACK_PRESSED, (Bundle) null);
+                DialogFactory.m10114a((Activity) this, C2328a.ON_BACK_PRESSED, (Bundle) null);
             } else if (this._remoteViewModel.mo8583F() == 2) {
                 mo8556a(1);
                 if (this._remoteViewModel != null) {
@@ -608,7 +608,7 @@ public class LiveViewMoviePantilterRemoteWatchPresetActivity extends C3614a impl
                 } else if (this.f11655h == 5) {
                     this._remoteViewModel.f11838bo.mo3216a(this._context.getText(i2).toString());
                 }
-                C2331d.m10100a((Activity) this);
+                DialogFactory.m10100a((Activity) this);
                 return;
             default:
                 super.onSingleChoice(aVar, i);

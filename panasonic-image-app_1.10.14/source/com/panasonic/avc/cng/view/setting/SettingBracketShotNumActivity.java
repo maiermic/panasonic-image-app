@@ -27,7 +27,7 @@ public class SettingBracketShotNumActivity extends C5741i {
     /* access modifiers changed from: private */
 
     /* renamed from: d */
-    public C5531ak f16620d;
+    public SettingBracketViewModel f16620d;
 
     /* renamed from: com.panasonic.avc.cng.view.setting.SettingBracketShotNumActivity$a */
     private class C5299a implements C5555h {
@@ -58,7 +58,7 @@ public class SettingBracketShotNumActivity extends C5741i {
         setContentView(R.layout.activity_setup_bracket_shot_num);
         this.f16618b = new C5299a();
         this.f16617a = new C5541am(this._context, this._handler, this.f16618b);
-        this.f16620d = new C5531ak(this._context, this._handler, this.f16617a, this.f16618b);
+        this.f16620d = new SettingBracketViewModel(this._context, this._handler, this.f16617a, this.f16618b);
         this.f16619c = new C4047ap(this._context, this);
         if (bundle == null) {
             this.f16619c.mo9645a(this.f16619c.getCurrentHundredPos(), this.f16619c.getCurrentTenPos(), this.f16619c.getCurrentOnePos());

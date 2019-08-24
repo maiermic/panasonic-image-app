@@ -2,14 +2,14 @@ package com.panasonic.avc.cng.view.parts.fullscreen;
 
 import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.C1892f;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.view.liveview.LiveViewLumixGHFullscreenActivity;
-import com.panasonic.avc.cng.view.setting.C5780o;
+import com.panasonic.avc.cng.view.setting.LiveSetupDrumPickerFandSSViewModel;
 import java.util.ArrayList;
 import java.util.List;
 
 /* renamed from: com.panasonic.avc.cng.view.parts.fullscreen.f */
-public abstract class C4175f extends C4167c<C5780o> {
+public abstract class C4175f extends C4167c<LiveSetupDrumPickerFandSSViewModel> {
 
     /* renamed from: a */
     private int f14028a;
@@ -92,7 +92,7 @@ public abstract class C4175f extends C4167c<C5780o> {
     /* access modifiers changed from: protected */
     /* renamed from: a */
     public void mo9874a(String str, long j) {
-        C2261g.m9763a(getClass().getSimpleName(), "value = " + str + ", param = " + j);
+        ImageAppLog.debug(getClass().getSimpleName(), "value = " + str + ", param = " + j);
         mo9872a(str);
         this.f14031d.add(new C4176a(str, j));
     }
@@ -141,7 +141,7 @@ public abstract class C4175f extends C4167c<C5780o> {
             while (true) {
                 int i4 = i;
                 if (i4 < Math.abs(i2 - i3)) {
-                    ((C5780o) mo9858h()).mo12667c(i2 > i3 ? "down" : "up");
+                    ((LiveSetupDrumPickerFandSSViewModel) mo9858h()).mo12667c(i2 > i3 ? "down" : "up");
                     i = i4 + 1;
                 } else {
                     return;

@@ -55,11 +55,11 @@
 
     .line 105
     :cond_0
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v4
 
@@ -339,11 +339,11 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 170
-    new-instance v1, Lcom/panasonic/avc/cng/core/a/g;
+    new-instance v1, Lcom/panasonic/avc/cng/core/a/FocusCommand;
 
     iget-object v0, v4, Lcom/panasonic/avc/cng/model/f;->d:Ljava/lang/String;
 
-    invoke-direct {v1, v0}, Lcom/panasonic/avc/cng/core/a/g;-><init>(Ljava/lang/String;)V
+    invoke-direct {v1, v0}, Lcom/panasonic/avc/cng/core/a/FocusCommand;-><init>(Ljava/lang/String;)V
 
     .line 171
     const/4 v0, 0x0
@@ -445,7 +445,7 @@
     :try_start_3
     sget-object v2, Lcom/panasonic/avc/cng/core/a/g$b;->a:Lcom/panasonic/avc/cng/core/a/g$b;
 
-    invoke-virtual {v1, v2}, Lcom/panasonic/avc/cng/core/a/g;->a(Lcom/panasonic/avc/cng/core/a/g$b;)Lcom/panasonic/avc/cng/model/c/i;
+    invoke-virtual {v1, v2}, Lcom/panasonic/avc/cng/core/a/FocusCommand;->a(Lcom/panasonic/avc/cng/core/a/g$b;)Lcom/panasonic/avc/cng/model/c/i;
 
     move-result-object v0
 
@@ -455,7 +455,7 @@
     :pswitch_1
     sget-object v2, Lcom/panasonic/avc/cng/core/a/g$b;->b:Lcom/panasonic/avc/cng/core/a/g$b;
 
-    invoke-virtual {v1, v2}, Lcom/panasonic/avc/cng/core/a/g;->a(Lcom/panasonic/avc/cng/core/a/g$b;)Lcom/panasonic/avc/cng/model/c/i;
+    invoke-virtual {v1, v2}, Lcom/panasonic/avc/cng/core/a/FocusCommand;->a(Lcom/panasonic/avc/cng/core/a/g$b;)Lcom/panasonic/avc/cng/model/c/i;
 
     move-result-object v0
 
@@ -465,7 +465,7 @@
     :pswitch_2
     sget-object v2, Lcom/panasonic/avc/cng/core/a/g$b;->c:Lcom/panasonic/avc/cng/core/a/g$b;
 
-    invoke-virtual {v1, v2}, Lcom/panasonic/avc/cng/core/a/g;->a(Lcom/panasonic/avc/cng/core/a/g$b;)Lcom/panasonic/avc/cng/model/c/i;
+    invoke-virtual {v1, v2}, Lcom/panasonic/avc/cng/core/a/FocusCommand;->a(Lcom/panasonic/avc/cng/core/a/g$b;)Lcom/panasonic/avc/cng/model/c/i;
 
     move-result-object v0
 
@@ -475,7 +475,7 @@
     :pswitch_3
     sget-object v2, Lcom/panasonic/avc/cng/core/a/g$b;->d:Lcom/panasonic/avc/cng/core/a/g$b;
 
-    invoke-virtual {v1, v2}, Lcom/panasonic/avc/cng/core/a/g;->a(Lcom/panasonic/avc/cng/core/a/g$b;)Lcom/panasonic/avc/cng/model/c/i;
+    invoke-virtual {v1, v2}, Lcom/panasonic/avc/cng/core/a/FocusCommand;->a(Lcom/panasonic/avc/cng/core/a/g$b;)Lcom/panasonic/avc/cng/model/c/i;
 
     move-result-object v0
 
@@ -485,7 +485,7 @@
     :pswitch_4
     sget-object v2, Lcom/panasonic/avc/cng/core/a/g$b;->e:Lcom/panasonic/avc/cng/core/a/g$b;
 
-    invoke-virtual {v1, v2}, Lcom/panasonic/avc/cng/core/a/g;->a(Lcom/panasonic/avc/cng/core/a/g$b;)Lcom/panasonic/avc/cng/model/c/i;
+    invoke-virtual {v1, v2}, Lcom/panasonic/avc/cng/core/a/FocusCommand;->a(Lcom/panasonic/avc/cng/core/a/g$b;)Lcom/panasonic/avc/cng/model/c/i;
     :try_end_3
     .catch Ljava/lang/Exception; {:try_start_3 .. :try_end_3} :catch_0
 

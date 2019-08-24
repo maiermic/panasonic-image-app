@@ -43,9 +43,9 @@
     .line 1014
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/n$9$1;->a:Lcom/panasonic/avc/cng/view/play/multiphotoframe/n$9;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/n$9;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/n;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/n$9;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameSelectPictureViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/n;->a(Lcom/panasonic/avc/cng/view/play/multiphotoframe/n;)Lcom/panasonic/avc/cng/model/service/c;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameSelectPictureViewModel;->a(Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameSelectPictureViewModel;)Lcom/panasonic/avc/cng/model/service/c;
 
     move-result-object v0
 
@@ -54,11 +54,11 @@
     .line 1015
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/n$9$1;->a:Lcom/panasonic/avc/cng/view/play/multiphotoframe/n$9;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/n$9;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/n;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/n$9;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameSelectPictureViewModel;
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/n;->a(Lcom/panasonic/avc/cng/view/play/multiphotoframe/n;Lcom/panasonic/avc/cng/model/service/c;)Lcom/panasonic/avc/cng/model/service/c;
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameSelectPictureViewModel;->a(Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameSelectPictureViewModel;Lcom/panasonic/avc/cng/model/service/c;)Lcom/panasonic/avc/cng/model/service/c;
 
     .line 1016
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/n$9$1;->a:Lcom/panasonic/avc/cng/view/play/multiphotoframe/n$9;

@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/view/play/snapmovie/b;->a(Lcom/panasonic/avc/cng/model/c/e;)V
+    value = Lcom/panasonic/avc/cng/view/play/snapmovie/b;->a(Lcom/panasonic/avc/cng/model/c/CameraStatus;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -43,16 +43,16 @@
     .line 913
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/snapmovie/b$3;->a:Lcom/panasonic/avc/cng/view/play/snapmovie/b;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/snapmovie/b;->g:Lcom/panasonic/avc/cng/view/parts/t;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/snapmovie/b;->g:Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
     if-eqz v0, :cond_0
 
     .line 914
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/snapmovie/b$3;->a:Lcom/panasonic/avc/cng/view/play/snapmovie/b;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/snapmovie/b;->g:Lcom/panasonic/avc/cng/view/parts/t;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/snapmovie/b;->g:Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/parts/t;->l()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->l()V
 
     .line 917
     :cond_0

@@ -13,9 +13,9 @@ import android.preference.PreferenceManager;
 import com.panasonic.avc.cng.application.p039a.C1350a;
 import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.service.C2081h;
-import com.panasonic.avc.cng.model.service.C2253z;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
 import com.panasonic.avc.cng.model.service.imageapp.ImageAppTotalService;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.util.C2266l;
 import com.panasonic.avc.cng.view.bluetooth.C2550h;
 import com.panasonic.avc.cng.view.cameraconnect.GuidanceMenuActivity;
@@ -37,15 +37,15 @@ public class ImageAppBaseActivity extends C1350a {
         super.onCreate(bundle);
         this.f3712b = this;
         C1712b.m6916a((Context) this);
-        C2253z.m9688b(this.f3712b, true);
+        ServiceFactory.m9688b(this.f3712b, true);
         if (this.f3712b.getApplicationContext().getSharedPreferences("com.panasonic.avc.cng.imageapp.privatekey", 0).getBoolean("GeotagLogRecording", false)) {
-            C2081h d = C2253z.m9698d(this.f3712b, null);
+            C2081h d = ServiceFactory.m9698d(this.f3712b, null);
             if (d != null) {
                 d.mo5436n();
             }
         }
         if (C2266l.m9824c(this.f3712b)) {
-            C2261g.m9763a("ImageAppBaseActivity", "ImageAppTotalService startService");
+            ImageAppLog.debug("ImageAppBaseActivity", "ImageAppTotalService startService");
             this.f3712b.startService(new Intent(this.f3712b, ImageAppTotalService.class));
         }
         SharedPreferences defaultSharedPreferences = PreferenceManager.getDefaultSharedPreferences(this.f3712b);
@@ -59,13 +59,13 @@ public class ImageAppBaseActivity extends C1350a {
                     if (i2 >= f.size()) {
                         break;
                     }
-                    C2261g.m9769c("ImageAppBaseActivity", "oldAddress:" + ((C2550h) f.get(i2)).mo6340c());
+                    ImageAppLog.error("ImageAppBaseActivity", "oldAddress:" + ((C2550h) f.get(i2)).mo6340c());
                     String b = C2266l.m9813b(((C2550h) f.get(i2)).mo6340c());
-                    C2261g.m9769c("ImageAppBaseActivity", "newAddress:" + b);
-                    C2261g.m9769c("ImageAppBaseActivity", "DevName:" + ((C2550h) f.get(i2)).mo6339b());
+                    ImageAppLog.error("ImageAppBaseActivity", "newAddress:" + b);
+                    ImageAppLog.error("ImageAppBaseActivity", "DevName:" + ((C2550h) f.get(i2)).mo6339b());
                     C2266l.m9822c(this.f3712b, b, ((C2550h) f.get(i2)).mo6339b());
                     if (!string.equalsIgnoreCase("") && string.contains(b)) {
-                        C2261g.m9769c("ImageAppBaseActivity", "connectAddress change");
+                        ImageAppLog.error("ImageAppBaseActivity", "connectAddress change");
                         edit.putString("CurrentConnectedAddress", b);
                     }
                     i = i2 + 1;
@@ -111,12 +111,12 @@ public class ImageAppBaseActivity extends C1350a {
 
     /* renamed from: a */
     private void m5296a() {
-        C2261g.m9760a(1052673, "Android " + VERSION.RELEASE);
-        C2261g.m9760a(1052674, Build.BRAND);
-        C2261g.m9760a(1052675, Build.MODEL);
-        C2261g.m9760a(1056769, getResources().getConfiguration().locale.getCountry());
-        C2261g.m9760a(1056770, getResources().getConfiguration().locale.getLanguage());
-        C2261g.m9760a(1060865, m5297b());
+        ImageAppLog.m9760a(1052673, "Android " + VERSION.RELEASE);
+        ImageAppLog.m9760a(1052674, Build.BRAND);
+        ImageAppLog.m9760a(1052675, Build.MODEL);
+        ImageAppLog.m9760a(1056769, getResources().getConfiguration().locale.getCountry());
+        ImageAppLog.m9760a(1056770, getResources().getConfiguration().locale.getLanguage());
+        ImageAppLog.m9760a(1060865, m5297b());
     }
 
     /* renamed from: b */

@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/panasonic/avc/cng/view/parts/ab;
+    value = Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

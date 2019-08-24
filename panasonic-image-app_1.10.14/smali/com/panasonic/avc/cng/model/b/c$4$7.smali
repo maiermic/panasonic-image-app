@@ -43,9 +43,9 @@
     .line 417
     iget-object v0, p0, Lcom/panasonic/avc/cng/model/b/c$4$7;->a:Lcom/panasonic/avc/cng/model/b/c$4;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/model/b/c$4;->b:Lcom/panasonic/avc/cng/model/b/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/model/b/c$4;->b:Lcom/panasonic/avc/cng/model/b/ContentsCopyViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/b/c;->h(Lcom/panasonic/avc/cng/model/b/c;)Lcom/panasonic/avc/cng/model/b/c$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/b/ContentsCopyViewModel;->h(Lcom/panasonic/avc/cng/model/b/ContentsCopyViewModel;)Lcom/panasonic/avc/cng/model/b/c$a;
 
     move-result-object v0
 

@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;
+    value = Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;
+.field final synthetic a:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;
 
 .field private b:J
 
@@ -25,12 +25,12 @@
 
 
 # direct methods
-.method private constructor <init>(Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;)V
+.method private constructor <init>(Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;)V
     .locals 2
 
     .prologue
     .line 2117
-    iput-object p1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$c;->a:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$c;->a:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
@@ -42,12 +42,12 @@
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$1;)V
+.method synthetic constructor <init>(Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$1;)V
     .locals 0
 
     .prologue
     .line 2117
-    invoke-direct {p0, p1}, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$c;-><init>(Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;)V
+    invoke-direct {p0, p1}, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$c;-><init>(Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;)V
 
     return-void
 .end method
@@ -233,9 +233,9 @@
     iput-boolean v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$c;->d:Z
 
     .line 2155
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$c;->a:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$c;->a:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;->u:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;->u:Lcom/panasonic/avc/cng/a/c;
 
     const-string v1, ""
 
@@ -289,9 +289,9 @@
     div-long/2addr v0, v2
 
     .line 2171
-    iget-object v2, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$c;->a:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$c;->a:Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;
 
-    iget-object v2, v2, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b;->u:Lcom/panasonic/avc/cng/a/c;
+    iget-object v2, v2, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/LiveViewVerticalViewModel;->u:Lcom/panasonic/avc/cng/a/c;
 
     iget-wide v4, p0, Lcom/panasonic/avc/cng/view/liveview/movie/vertical/b$c;->b:J
 

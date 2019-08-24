@@ -43,9 +43,9 @@
     .line 849
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/c$1$1;->a:Lcom/panasonic/avc/cng/view/play/splitdelete/c$1;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/splitdelete/c$1;->a:Lcom/panasonic/avc/cng/view/play/splitdelete/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/splitdelete/c$1;->a:Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/splitdelete/c;->a(Lcom/panasonic/avc/cng/view/play/splitdelete/c;)Lcom/panasonic/avc/cng/view/play/splitdelete/c$c;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;->a(Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;)Lcom/panasonic/avc/cng/view/play/splitdelete/c$c;
 
     move-result-object v0
 
@@ -54,9 +54,9 @@
     .line 851
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/c$1$1;->a:Lcom/panasonic/avc/cng/view/play/splitdelete/c$1;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/splitdelete/c$1;->a:Lcom/panasonic/avc/cng/view/play/splitdelete/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/splitdelete/c$1;->a:Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/splitdelete/c;->a(Lcom/panasonic/avc/cng/view/play/splitdelete/c;)Lcom/panasonic/avc/cng/view/play/splitdelete/c$c;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;->a(Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;)Lcom/panasonic/avc/cng/view/play/splitdelete/c$c;
 
     move-result-object v0
 

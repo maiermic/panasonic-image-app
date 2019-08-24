@@ -19,9 +19,9 @@ final class C0837ex implements Runnable {
 
     public final void run() {
         try {
-            C0806dt.f1803a.set(Boolean.valueOf(true));
+            BasePendingResult.f1803a.set(Boolean.valueOf(true));
             this.f1905b.f1902h.sendMessage(this.f1905b.f1902h.obtainMessage(0, this.f1905b.f1895a.mo1600a(this.f1904a)));
-            C0806dt.f1803a.set(Boolean.valueOf(false));
+            BasePendingResult.f1803a.set(Boolean.valueOf(false));
             C0836ew.m3190b(this.f1904a);
             C0586e eVar = (C0586e) this.f1905b.f1901g.get();
             if (eVar != null) {
@@ -29,7 +29,7 @@ final class C0837ex implements Runnable {
             }
         } catch (RuntimeException e) {
             this.f1905b.f1902h.sendMessage(this.f1905b.f1902h.obtainMessage(1, e));
-            C0806dt.f1803a.set(Boolean.valueOf(false));
+            BasePendingResult.f1803a.set(Boolean.valueOf(false));
             C0836ew.m3190b(this.f1904a);
             C0586e eVar2 = (C0586e) this.f1905b.f1901g.get();
             if (eVar2 != null) {
@@ -37,7 +37,7 @@ final class C0837ex implements Runnable {
             }
         } catch (Throwable th) {
             Throwable th2 = th;
-            C0806dt.f1803a.set(Boolean.valueOf(false));
+            BasePendingResult.f1803a.set(Boolean.valueOf(false));
             C0836ew.m3190b(this.f1904a);
             C0586e eVar3 = (C0586e) this.f1905b.f1901g.get();
             if (eVar3 != null) {

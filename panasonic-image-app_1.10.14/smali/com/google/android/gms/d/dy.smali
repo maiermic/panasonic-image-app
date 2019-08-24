@@ -133,9 +133,9 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/google/android/gms/d/dt;
+    check-cast v0, Lcom/google/android/gms/d/BasePendingResult;
 
-    invoke-virtual {v0, p2}, Lcom/google/android/gms/d/dt;->a(Lcom/google/android/gms/common/api/Status;)V
+    invoke-virtual {v0, p2}, Lcom/google/android/gms/d/BasePendingResult;->a(Lcom/google/android/gms/common/api/Status;)V
 
     goto :goto_0
 
@@ -253,7 +253,7 @@
 
     const/4 v0, 0x0
 
-    sget-object v1, Lcom/google/android/gms/d/ea;->a:Lcom/google/android/gms/common/api/Status;
+    sget-object v1, Lcom/google/android/gms/d/GoogleApiManager;->a:Lcom/google/android/gms/common/api/Status;
 
     invoke-direct {p0, v0, v1}, Lcom/google/android/gms/d/dy;->a(ZLcom/google/android/gms/common/api/Status;)V
 

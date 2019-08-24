@@ -77,11 +77,11 @@
 
     .line 114
     :cond_0
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v2
 
@@ -223,17 +223,17 @@
     if-eqz v3, :cond_8
 
     .line 150
-    new-instance v3, Lcom/panasonic/avc/cng/core/a/az;
+    new-instance v3, Lcom/panasonic/avc/cng/core/a/ZoomVianaCommand;
 
     iget-object v2, v2, Lcom/panasonic/avc/cng/model/f;->d:Ljava/lang/String;
 
-    invoke-direct {v3, v2}, Lcom/panasonic/avc/cng/core/a/az;-><init>(Ljava/lang/String;)V
+    invoke-direct {v3, v2}, Lcom/panasonic/avc/cng/core/a/ZoomVianaCommand;-><init>(Ljava/lang/String;)V
 
     .line 153
     if-ne v0, v10, :cond_4
 
     .line 155
-    invoke-virtual {v3}, Lcom/panasonic/avc/cng/core/a/az;->a()Lcom/panasonic/avc/cng/model/c/h;
+    invoke-virtual {v3}, Lcom/panasonic/avc/cng/core/a/ZoomVianaCommand;->a()Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
     .line 210
     :cond_3
@@ -264,12 +264,12 @@
     .line 159
     const-string v0, "normal"
 
-    invoke-static {v8, v0}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v8, v0}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 160
     const-string v0, "tele-normal"
 
-    invoke-virtual {v3, v0}, Lcom/panasonic/avc/cng/core/a/az;->a(Ljava/lang/String;)Lcom/panasonic/avc/cng/model/c/h;
+    invoke-virtual {v3, v0}, Lcom/panasonic/avc/cng/core/a/ZoomVianaCommand;->a(Ljava/lang/String;)Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
     goto :goto_2
 
@@ -282,12 +282,12 @@
     .line 164
     const-string v0, "fast"
 
-    invoke-static {v8, v0}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v8, v0}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 165
     const-string v0, "tele-fast"
 
-    invoke-virtual {v3, v0}, Lcom/panasonic/avc/cng/core/a/az;->a(Ljava/lang/String;)Lcom/panasonic/avc/cng/model/c/h;
+    invoke-virtual {v3, v0}, Lcom/panasonic/avc/cng/core/a/ZoomVianaCommand;->a(Ljava/lang/String;)Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
     goto :goto_2
 
@@ -300,12 +300,12 @@
     .line 169
     const-string v0, "normal"
 
-    invoke-static {v9, v0}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v9, v0}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 170
     const-string v0, "wide-normal"
 
-    invoke-virtual {v3, v0}, Lcom/panasonic/avc/cng/core/a/az;->a(Ljava/lang/String;)Lcom/panasonic/avc/cng/model/c/h;
+    invoke-virtual {v3, v0}, Lcom/panasonic/avc/cng/core/a/ZoomVianaCommand;->a(Ljava/lang/String;)Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
     goto :goto_2
 
@@ -318,28 +318,28 @@
     .line 174
     const-string v0, "fast"
 
-    invoke-static {v9, v0}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v9, v0}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 175
     const-string v0, "wide-fast"
 
-    invoke-virtual {v3, v0}, Lcom/panasonic/avc/cng/core/a/az;->a(Ljava/lang/String;)Lcom/panasonic/avc/cng/model/c/h;
+    invoke-virtual {v3, v0}, Lcom/panasonic/avc/cng/core/a/ZoomVianaCommand;->a(Ljava/lang/String;)Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
     goto :goto_2
 
     .line 181
     :cond_8
-    new-instance v3, Lcom/panasonic/avc/cng/core/a/ay;
+    new-instance v3, Lcom/panasonic/avc/cng/core/a/ZoomCommand;
 
     iget-object v2, v2, Lcom/panasonic/avc/cng/model/f;->d:Ljava/lang/String;
 
-    invoke-direct {v3, v2}, Lcom/panasonic/avc/cng/core/a/ay;-><init>(Ljava/lang/String;)V
+    invoke-direct {v3, v2}, Lcom/panasonic/avc/cng/core/a/ZoomCommand;-><init>(Ljava/lang/String;)V
 
     .line 183
     if-ne v0, v10, :cond_9
 
     .line 185
-    invoke-virtual {v3}, Lcom/panasonic/avc/cng/core/a/ay;->a()Lcom/panasonic/avc/cng/model/c/h;
+    invoke-virtual {v3}, Lcom/panasonic/avc/cng/core/a/ZoomCommand;->a()Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
     goto :goto_2
 
@@ -350,12 +350,12 @@
     .line 189
     const-string v0, "normal"
 
-    invoke-static {v8, v0}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v8, v0}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 190
     const-string v0, "tele-normal"
 
-    invoke-virtual {v3, v0}, Lcom/panasonic/avc/cng/core/a/ay;->a(Ljava/lang/String;)Lcom/panasonic/avc/cng/model/c/h;
+    invoke-virtual {v3, v0}, Lcom/panasonic/avc/cng/core/a/ZoomCommand;->a(Ljava/lang/String;)Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
     goto :goto_2
 
@@ -368,12 +368,12 @@
     .line 194
     const-string v0, "fast"
 
-    invoke-static {v8, v0}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v8, v0}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 195
     const-string v0, "tele-fast"
 
-    invoke-virtual {v3, v0}, Lcom/panasonic/avc/cng/core/a/ay;->a(Ljava/lang/String;)Lcom/panasonic/avc/cng/model/c/h;
+    invoke-virtual {v3, v0}, Lcom/panasonic/avc/cng/core/a/ZoomCommand;->a(Ljava/lang/String;)Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
     goto :goto_2
 
@@ -386,12 +386,12 @@
     .line 199
     const-string v0, "normal"
 
-    invoke-static {v9, v0}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v9, v0}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 200
     const-string v0, "wide-normal"
 
-    invoke-virtual {v3, v0}, Lcom/panasonic/avc/cng/core/a/ay;->a(Ljava/lang/String;)Lcom/panasonic/avc/cng/model/c/h;
+    invoke-virtual {v3, v0}, Lcom/panasonic/avc/cng/core/a/ZoomCommand;->a(Ljava/lang/String;)Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
     goto :goto_2
 
@@ -404,12 +404,12 @@
     .line 204
     const-string v0, "fast"
 
-    invoke-static {v9, v0}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v9, v0}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 205
     const-string v0, "wide-fast"
 
-    invoke-virtual {v3, v0}, Lcom/panasonic/avc/cng/core/a/ay;->a(Ljava/lang/String;)Lcom/panasonic/avc/cng/model/c/h;
+    invoke-virtual {v3, v0}, Lcom/panasonic/avc/cng/core/a/ZoomCommand;->a(Ljava/lang/String;)Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
     goto/16 :goto_2
 

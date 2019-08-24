@@ -43,9 +43,9 @@
     .line 788
     iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/a/a$a$1;->a:Lcom/panasonic/avc/cng/model/service/a/a$a;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/model/service/a/a$a;->a:Lcom/panasonic/avc/cng/model/service/a/a;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/model/service/a/a$a;->a:Lcom/panasonic/avc/cng/model/service/a/BrowseMenuService;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/a/a;->i(Lcom/panasonic/avc/cng/model/service/a/a;)Z
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/a/BrowseMenuService;->i(Lcom/panasonic/avc/cng/model/service/a/BrowseMenuService;)Z
 
     move-result v0
 
@@ -54,9 +54,9 @@
     .line 791
     iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/a/a$a$1;->a:Lcom/panasonic/avc/cng/model/service/a/a$a;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/model/service/a/a$a;->a:Lcom/panasonic/avc/cng/model/service/a/a;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/model/service/a/a$a;->a:Lcom/panasonic/avc/cng/model/service/a/BrowseMenuService;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/a/a;->j(Lcom/panasonic/avc/cng/model/service/a/a;)V
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/a/BrowseMenuService;->j(Lcom/panasonic/avc/cng/model/service/a/BrowseMenuService;)V
 
     .line 793
     :cond_0

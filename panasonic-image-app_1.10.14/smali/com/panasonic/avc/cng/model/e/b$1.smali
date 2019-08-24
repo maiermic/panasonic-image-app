@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/model/e/b;->a(Lcom/panasonic/avc/cng/model/e/a$a;)V
+    value = Lcom/panasonic/avc/cng/model/e/WifiSimpleReceiver;->a(Lcom/panasonic/avc/cng/model/e/a$a;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,18 +18,18 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/panasonic/avc/cng/model/e/b;
+.field final synthetic a:Lcom/panasonic/avc/cng/model/e/WifiSimpleReceiver;
 
 .field private b:Z
 
 
 # direct methods
-.method constructor <init>(Lcom/panasonic/avc/cng/model/e/b;)V
+.method constructor <init>(Lcom/panasonic/avc/cng/model/e/WifiSimpleReceiver;)V
     .locals 1
 
     .prologue
     .line 84
-    iput-object p1, p0, Lcom/panasonic/avc/cng/model/e/b$1;->a:Lcom/panasonic/avc/cng/model/e/b;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/model/e/b$1;->a:Lcom/panasonic/avc/cng/model/e/WifiSimpleReceiver;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -48,17 +48,17 @@
 
     .prologue
     .line 91
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/e/b$1;->a:Lcom/panasonic/avc/cng/model/e/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/e/b$1;->a:Lcom/panasonic/avc/cng/model/e/WifiSimpleReceiver;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/e/b;->a(Lcom/panasonic/avc/cng/model/e/b;)Landroid/content/Context;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/e/WifiSimpleReceiver;->a(Lcom/panasonic/avc/cng/model/e/WifiSimpleReceiver;)Landroid/content/Context;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/e/b$1;->a:Lcom/panasonic/avc/cng/model/e/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/e/b$1;->a:Lcom/panasonic/avc/cng/model/e/WifiSimpleReceiver;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/e/b;->b(Lcom/panasonic/avc/cng/model/e/b;)Landroid/net/wifi/p2p/WifiP2pManager;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/e/WifiSimpleReceiver;->b(Lcom/panasonic/avc/cng/model/e/WifiSimpleReceiver;)Landroid/net/wifi/p2p/WifiP2pManager;
 
     move-result-object v0
 
@@ -73,7 +73,7 @@
 
     const-string v1, "Channel lost. Trying again"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 93
     const/4 v0, 0x1
@@ -81,21 +81,21 @@
     iput-boolean v0, p0, Lcom/panasonic/avc/cng/model/e/b$1;->b:Z
 
     .line 95
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/e/b$1;->a:Lcom/panasonic/avc/cng/model/e/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/e/b$1;->a:Lcom/panasonic/avc/cng/model/e/WifiSimpleReceiver;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/e/b;->b(Lcom/panasonic/avc/cng/model/e/b;)Landroid/net/wifi/p2p/WifiP2pManager;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/e/WifiSimpleReceiver;->b(Lcom/panasonic/avc/cng/model/e/WifiSimpleReceiver;)Landroid/net/wifi/p2p/WifiP2pManager;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/panasonic/avc/cng/model/e/b$1;->a:Lcom/panasonic/avc/cng/model/e/b;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/model/e/b$1;->a:Lcom/panasonic/avc/cng/model/e/WifiSimpleReceiver;
 
-    invoke-static {v1}, Lcom/panasonic/avc/cng/model/e/b;->a(Lcom/panasonic/avc/cng/model/e/b;)Landroid/content/Context;
+    invoke-static {v1}, Lcom/panasonic/avc/cng/model/e/WifiSimpleReceiver;->a(Lcom/panasonic/avc/cng/model/e/WifiSimpleReceiver;)Landroid/content/Context;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/panasonic/avc/cng/model/e/b$1;->a:Lcom/panasonic/avc/cng/model/e/b;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/model/e/b$1;->a:Lcom/panasonic/avc/cng/model/e/WifiSimpleReceiver;
 
-    invoke-static {v2}, Lcom/panasonic/avc/cng/model/e/b;->a(Lcom/panasonic/avc/cng/model/e/b;)Landroid/content/Context;
+    invoke-static {v2}, Lcom/panasonic/avc/cng/model/e/WifiSimpleReceiver;->a(Lcom/panasonic/avc/cng/model/e/WifiSimpleReceiver;)Landroid/content/Context;
 
     move-result-object v2
 
@@ -115,7 +115,7 @@
 
     const-string v1, "Channel lost permanently."
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 .end method

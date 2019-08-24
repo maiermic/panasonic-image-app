@@ -44,13 +44,13 @@
     .line 783
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/c$2$3;->a:Lcom/panasonic/avc/cng/view/play/movieslideshow/c$2;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/movieslideshow/c$2;->g:Lcom/panasonic/avc/cng/view/play/movieslideshow/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/movieslideshow/c$2;->g:Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowViewModel;
 
     new-instance v1, Lcom/panasonic/avc/cng/view/play/movieslideshow/c$2$3$1;
 
     invoke-direct {v1, p0, p1, p2}, Lcom/panasonic/avc/cng/view/play/movieslideshow/c$2$3$1;-><init>(Lcom/panasonic/avc/cng/view/play/movieslideshow/c$2$3;II)V
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/play/movieslideshow/c;->e(Lcom/panasonic/avc/cng/view/play/movieslideshow/c;Ljava/lang/Runnable;)Z
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowViewModel;->e(Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowViewModel;Ljava/lang/Runnable;)Z
 
     .line 791
     return-void
@@ -64,13 +64,13 @@
     .line 798
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/c$2$3;->a:Lcom/panasonic/avc/cng/view/play/movieslideshow/c$2;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/movieslideshow/c$2;->g:Lcom/panasonic/avc/cng/view/play/movieslideshow/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/movieslideshow/c$2;->g:Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowViewModel;
 
     new-instance v1, Lcom/panasonic/avc/cng/view/play/movieslideshow/c$2$3$2;
 
     invoke-direct {v1, p0, p1}, Lcom/panasonic/avc/cng/view/play/movieslideshow/c$2$3$2;-><init>(Lcom/panasonic/avc/cng/view/play/movieslideshow/c$2$3;Lcom/panasonic/avc/cng/model/service/e/b;)V
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/play/movieslideshow/c;->f(Lcom/panasonic/avc/cng/view/play/movieslideshow/c;Ljava/lang/Runnable;)Z
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowViewModel;->f(Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowViewModel;Ljava/lang/Runnable;)Z
 
     .line 826
     return-void

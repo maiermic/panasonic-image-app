@@ -13,10 +13,10 @@ import com.panasonic.avc.cng.view.liveview.C3259j.C3269a;
 import com.panasonic.avc.cng.view.liveview.C3271k.C3337d;
 import com.panasonic.avc.cng.view.parts.C4021aj;
 import com.panasonic.avc.cng.view.parts.C4021aj.C4033a;
-import com.panasonic.avc.cng.view.setting.C5804u.C5812c;
-import com.panasonic.avc.cng.view.setting.C5804u.C5817d;
+import com.panasonic.avc.cng.view.setting.LiveSetupLumixMirrorlessBaseActivity.C5812c;
+import com.panasonic.avc.cng.view.setting.LiveSetupLumixMirrorlessBaseActivity.C5817d;
 
-public class LiveSetupDrumPickerGainActivity extends C5804u {
+public class LiveSetupDrumPickerGainActivity extends LiveSetupLumixMirrorlessBaseActivity {
 
     /* renamed from: n */
     private C4021aj f16064n;

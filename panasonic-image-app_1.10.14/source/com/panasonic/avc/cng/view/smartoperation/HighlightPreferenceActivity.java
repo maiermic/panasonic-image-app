@@ -13,9 +13,9 @@ import android.view.ViewGroup;
 import android.widget.ListView;
 import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.C1712b;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.setting.C5537al.C5540a;
+import com.panasonic.avc.cng.view.setting.SettingMenuBaseActivity.C5540a;
 import com.panasonic.avc.cng.view.setting.C5687e;
 import com.panasonic.avc.cng.view.setting.C5741i;
 
@@ -72,7 +72,7 @@ public class HighlightPreferenceActivity extends C5741i {
                 CharSequence entry = listPreference.getEntry();
                 listPreference.setSummary(entry == null ? "-----" : entry);
                 if (entry != null) {
-                    C2261g.m9770d("HighlightPreferenceActivity", "onSharedPreferenceChanged");
+                    ImageAppLog.verbose("HighlightPreferenceActivity", "onSharedPreferenceChanged");
                 }
             }
         }

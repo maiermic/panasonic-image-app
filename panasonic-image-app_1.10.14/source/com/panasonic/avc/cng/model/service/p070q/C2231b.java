@@ -8,7 +8,7 @@ import android.hardware.Camera.Parameters;
 import android.hardware.Camera.PreviewCallback;
 import android.util.Log;
 import android.view.SurfaceHolder;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import java.io.IOException;
 
 /* renamed from: com.panasonic.avc.cng.model.service.q.b */
@@ -70,7 +70,7 @@ public class C2231b {
             try {
                 this.f6928a.setParameters(parameters);
             } catch (RuntimeException e) {
-                C2261g.m9763a("CameraService", "setParameters failed!");
+                ImageAppLog.debug("CameraService", "setParameters failed!");
             }
         }
     }
@@ -123,7 +123,7 @@ public class C2231b {
                     }
                 });
             } catch (RuntimeException e) {
-                C2261g.m9763a("CameraService", "autoFocus failed!");
+                ImageAppLog.debug("CameraService", "autoFocus failed!");
             }
         }
     }

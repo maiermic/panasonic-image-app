@@ -153,7 +153,7 @@
 
     const-string v1, "SendMSearch"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/f;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppCmdLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 678
     const-string v0, "DlnaWrapper"
@@ -184,7 +184,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     move-object v0, p0
 
@@ -235,7 +235,7 @@
 
     move-result-object v2
 
-    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 684
     new-instance v2, Ljava/util/ArrayList;
@@ -314,7 +314,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/f;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppCmdLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 699
     return-object v2
@@ -654,7 +654,7 @@
 
     const-string v1, "RefreshDLNA\u4e2d\u306a\u306e\u3067\u6291\u5236"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 423
     const/4 v0, 0x0
@@ -678,7 +678,7 @@
 
     const-string v2, "RefreshDLNA() Start"
 
-    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 430
     sget v0, Lcom/panasonic/avc/cng/core/dlna/DlnaWrapper;->f:I
@@ -739,7 +739,7 @@
 
     const-string v3, "DmpSetConnectServer() in RefreshDLNA()"
 
-    invoke-static {v2, v3}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v2, v3}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 460
     invoke-virtual {p0, v0}, Lcom/panasonic/avc/cng/core/dlna/DlnaWrapper;->a(Ljava/lang/String;)Lcom/panasonic/avc/cng/core/dlna/f;
@@ -751,7 +751,7 @@
 
     const-string v2, "RefreshDLNA() End"
 
-    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 474
     monitor-exit v1
@@ -785,7 +785,7 @@
 
     const-string v3, "DmpSetConnectServer() in RefreshDLNA()"
 
-    invoke-static {v2, v3}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v2, v3}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 469
     invoke-virtual {p0, v0}, Lcom/panasonic/avc/cng/core/dlna/DlnaWrapper;->a(Ljava/lang/String;)Lcom/panasonic/avc/cng/core/dlna/f;
@@ -1041,7 +1041,7 @@
 
     const-string v3, "DmpSetConnectServer Success!"
 
-    invoke-static {v2, v3}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v2, v3}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 735
     sput-object p1, Lcom/panasonic/avc/cng/core/dlna/DlnaWrapper;->g:Ljava/lang/String;
@@ -1058,7 +1058,7 @@
 
     const-string v2, "DmpSetConnectServer Failed... Retry M-Search!!"
 
-    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 742
     invoke-virtual {p0}, Lcom/panasonic/avc/cng/core/dlna/DlnaWrapper;->f()Ljava/util/List;
@@ -1085,7 +1085,7 @@
 
     const-string v3, "DmpSetConnectServer Success!"
 
-    invoke-static {v2, v3}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v2, v3}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 751
     sput-object p1, Lcom/panasonic/avc/cng/core/dlna/DlnaWrapper;->g:Ljava/lang/String;
@@ -1109,7 +1109,7 @@
 
     const-string v3, "DmpSetConnectServer Failed..."
 
-    invoke-static {v2, v3}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v2, v3}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 756
     const/4 v2, 0x0

@@ -67,11 +67,11 @@
     :try_start_0
     iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/l/c$2;->b:Lcom/panasonic/avc/cng/model/service/l/c;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/l/c;->b(Lcom/panasonic/avc/cng/model/service/l/c;)Lcom/panasonic/avc/cng/core/a/ao;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/l/c;->b(Lcom/panasonic/avc/cng/model/service/l/c;)Lcom/panasonic/avc/cng/core/a/StatusCommand;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/ao;->e()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/StatusCommand;->e()Ljava/lang/String;
 
     move-result-object v0
 
@@ -96,11 +96,11 @@
     if-eqz v0, :cond_1
 
     .line 430
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v1
 

@@ -16,7 +16,7 @@ import com.panasonic.avc.cng.core.codec.PacketLossConcealer;
 import com.panasonic.avc.cng.core.p040a.C1473at;
 import com.panasonic.avc.cng.model.service.p059f.C2047a;
 import com.panasonic.avc.cng.model.service.p063j.C2166f.C2168a;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.util.C2265k;
 import com.panasonic.avc.cng.util.C2272n;
 import java.util.ArrayList;
@@ -606,7 +606,7 @@ public class C2171g implements C2168a, C2265k {
                 }
                 if (this.f6718g != -1) {
                     while (atVar.f3976a.f3987i > this.f6718g + this.f6719h) {
-                        C2261g.m9771e(f6706a, "ConcealLoss");
+                        ImageAppLog.info(f6706a, "ConcealLoss");
                         this.f6716e.mo4246a(this.f6720i);
                         if (this.f6717f != null) {
                             this.f6717f.write(this.f6720i, 0, this.f6720i.length);
@@ -665,7 +665,7 @@ public class C2171g implements C2168a, C2265k {
         } catch (InterruptedException e) {
             e.printStackTrace();
         } catch (IllegalArgumentException e2) {
-            C2261g.m9769c(f6706a, "IllegalArgument:" + j);
+            ImageAppLog.error(f6706a, "IllegalArgument:" + j);
             e2.printStackTrace();
         }
     }

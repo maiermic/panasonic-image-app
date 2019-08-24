@@ -14,13 +14,13 @@ import com.panasonic.avc.cng.model.C1892f;
 import com.panasonic.avc.cng.model.p052d.C1879a;
 import com.panasonic.avc.cng.p038a.C1343b;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
 import com.panasonic.avc.cng.view.p073b.C2376f.C2378b;
 import com.panasonic.avc.cng.view.parts.C4225o;
 import com.panasonic.avc.cng.view.parts.C4230p;
 import com.panasonic.avc.cng.view.parts.VerticalSeekBar;
 import com.panasonic.avc.cng.view.parts.VerticalSeekBar.C3969a;
-import com.panasonic.avc.cng.view.setting.C5537al.C5540a;
+import com.panasonic.avc.cng.view.setting.SettingMenuBaseActivity.C5540a;
 import com.panasonic.avc.cng.view.setting.C5541am.C5563o;
 import com.panasonic.avc.cng.view.setting.C5630au.C5640b;
 
@@ -234,7 +234,7 @@ public class SetupWithLiveViewPhotoStyleDetailActivity extends C5608at {
             }
             SetupWithLiveViewPhotoStyleDetailActivity.this._handler.post(new Runnable() {
                 public void run() {
-                    C2331d.m10102a((Activity) SetupWithLiveViewPhotoStyleDetailActivity.this, C2328a.ON_PROGRESS);
+                    DialogFactory.m10102a((Activity) SetupWithLiveViewPhotoStyleDetailActivity.this, C2328a.ON_PROGRESS);
                 }
             });
         }
@@ -368,7 +368,7 @@ public class SetupWithLiveViewPhotoStyleDetailActivity extends C5608at {
             this.f16817l.f17439v.mo3214a((C1343b<T>) oVar5.f14146a);
             this._handler.post(new Runnable() {
                 public void run() {
-                    C2331d.m10114a((Activity) SetupWithLiveViewPhotoStyleDetailActivity.this, C2328a.ON_PROGRESS, (Bundle) null);
+                    DialogFactory.m10114a((Activity) SetupWithLiveViewPhotoStyleDetailActivity.this, C2328a.ON_PROGRESS, (Bundle) null);
                 }
             });
             this.f16817l.mo12430g();
@@ -665,7 +665,7 @@ public class SetupWithLiveViewPhotoStyleDetailActivity extends C5608at {
         Bundle bundle = new Bundle();
         bundle.putStringArray(C2378b.SINGLE_CHOICE_LIST.name(), strArr);
         bundle.putInt(C2378b.SINGLE_CHOICE_CHECKED_ITEM.name(), this.f16812F);
-        C2331d.m10114a((Activity) this, C2328a.ON_SELECT_PHOTOSTYLE_COLOR, bundle);
+        DialogFactory.m10114a((Activity) this, C2328a.ON_SELECT_PHOTOSTYLE_COLOR, bundle);
     }
 
     /* access modifiers changed from: private */
@@ -687,7 +687,7 @@ public class SetupWithLiveViewPhotoStyleDetailActivity extends C5608at {
         Bundle bundle = new Bundle();
         bundle.putStringArray(C2378b.SINGLE_CHOICE_LIST.name(), strArr);
         bundle.putInt(C2378b.SINGLE_CHOICE_CHECKED_ITEM.name(), this.f16816J);
-        C2331d.m10114a((Activity) this, C2328a.ON_SELECT_PHOTOSTYLE_GRAIN, bundle);
+        DialogFactory.m10114a((Activity) this, C2328a.ON_SELECT_PHOTOSTYLE_GRAIN, bundle);
     }
 
     /* access modifiers changed from: protected */
@@ -733,13 +733,13 @@ public class SetupWithLiveViewPhotoStyleDetailActivity extends C5608at {
                 this.f16817l.mo12428f(i);
                 this.f16812F = i;
                 this.f16817l.mo12437m();
-                C2331d.m10100a((Activity) this);
+                DialogFactory.m10100a((Activity) this);
                 return;
             case ON_SELECT_PHOTOSTYLE_GRAIN:
                 this.f16817l.mo12431g(i);
                 this.f16816J = i;
                 this.f16817l.mo12437m();
-                C2331d.m10100a((Activity) this);
+                DialogFactory.m10100a((Activity) this);
                 return;
             default:
                 super.onSingleChoice(aVar, i);

@@ -462,7 +462,7 @@
 
     move-result-object v1
 
-    invoke-static {v1}, Lcom/google/android/gms/a/a/a;->a(Landroid/content/Context;)Lcom/google/android/gms/a/a/a$a;
+    invoke-static {v1}, Lcom/google/android/gms/a/a/AdvertisingIdClient;->a(Landroid/content/Context;)Lcom/google/android/gms/a/a/a$a;
     :try_end_0
     .catch Ljava/lang/IllegalStateException; {:try_start_0 .. :try_end_0} :catch_0
     .catch Ljava/lang/Throwable; {:try_start_0 .. :try_end_0} :catch_1

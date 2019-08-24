@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/panasonic/avc/cng/view/camerasetting/c;
+    value = Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,28 +18,28 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/panasonic/avc/cng/view/camerasetting/c;
+.field final synthetic a:Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;
 
 
 # direct methods
-.method private constructor <init>(Lcom/panasonic/avc/cng/view/camerasetting/c;)V
+.method private constructor <init>(Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;)V
     .locals 0
 
     .prologue
     .line 354
-    iput-object p1, p0, Lcom/panasonic/avc/cng/view/camerasetting/c$b;->a:Lcom/panasonic/avc/cng/view/camerasetting/c;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/view/camerasetting/c$b;->a:Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/panasonic/avc/cng/view/camerasetting/c;Lcom/panasonic/avc/cng/view/camerasetting/c$1;)V
+.method synthetic constructor <init>(Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;Lcom/panasonic/avc/cng/view/camerasetting/c$1;)V
     .locals 0
 
     .prologue
     .line 354
-    invoke-direct {p0, p1}, Lcom/panasonic/avc/cng/view/camerasetting/c$b;-><init>(Lcom/panasonic/avc/cng/view/camerasetting/c;)V
+    invoke-direct {p0, p1}, Lcom/panasonic/avc/cng/view/camerasetting/c$b;-><init>(Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;)V
 
     return-void
 .end method
@@ -51,18 +51,18 @@
 
     .prologue
     .line 358
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/c$b;->a:Lcom/panasonic/avc/cng/view/camerasetting/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/c$b;->a:Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/camerasetting/c;->b(Lcom/panasonic/avc/cng/view/camerasetting/c;)Lcom/panasonic/avc/cng/model/service/j$d;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;->b(Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;)Lcom/panasonic/avc/cng/model/service/j$d;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 360
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/c$b;->a:Lcom/panasonic/avc/cng/view/camerasetting/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/c$b;->a:Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/camerasetting/c;->b(Lcom/panasonic/avc/cng/view/camerasetting/c;)Lcom/panasonic/avc/cng/model/service/j$d;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;->b(Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;)Lcom/panasonic/avc/cng/model/service/j$d;
 
     move-result-object v0
 
@@ -82,21 +82,21 @@
 
     const-string v1, "onConnected"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 367
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/c$b;->a:Lcom/panasonic/avc/cng/view/camerasetting/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/c$b;->a:Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/camerasetting/c;->b(Lcom/panasonic/avc/cng/view/camerasetting/c;)Lcom/panasonic/avc/cng/model/service/j$d;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;->b(Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;)Lcom/panasonic/avc/cng/model/service/j$d;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 369
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/c$b;->a:Lcom/panasonic/avc/cng/view/camerasetting/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/c$b;->a:Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/camerasetting/c;->b(Lcom/panasonic/avc/cng/view/camerasetting/c;)Lcom/panasonic/avc/cng/model/service/j$d;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;->b(Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;)Lcom/panasonic/avc/cng/model/service/j$d;
 
     move-result-object v0
 
@@ -116,21 +116,21 @@
 
     const-string v1, "onWifiEnableStatus"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 378
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/c$b;->a:Lcom/panasonic/avc/cng/view/camerasetting/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/c$b;->a:Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/camerasetting/c;->b(Lcom/panasonic/avc/cng/view/camerasetting/c;)Lcom/panasonic/avc/cng/model/service/j$d;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;->b(Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;)Lcom/panasonic/avc/cng/model/service/j$d;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 380
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/c$b;->a:Lcom/panasonic/avc/cng/view/camerasetting/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/c$b;->a:Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/camerasetting/c;->b(Lcom/panasonic/avc/cng/view/camerasetting/c;)Lcom/panasonic/avc/cng/model/service/j$d;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;->b(Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;)Lcom/panasonic/avc/cng/model/service/j$d;
 
     move-result-object v0
 
@@ -150,21 +150,21 @@
 
     const-string v1, "onSetWifiEnableResult"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 390
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/c$b;->a:Lcom/panasonic/avc/cng/view/camerasetting/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/c$b;->a:Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/camerasetting/c;->b(Lcom/panasonic/avc/cng/view/camerasetting/c;)Lcom/panasonic/avc/cng/model/service/j$d;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;->b(Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;)Lcom/panasonic/avc/cng/model/service/j$d;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 392
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/c$b;->a:Lcom/panasonic/avc/cng/view/camerasetting/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/c$b;->a:Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/camerasetting/c;->b(Lcom/panasonic/avc/cng/view/camerasetting/c;)Lcom/panasonic/avc/cng/model/service/j$d;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;->b(Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;)Lcom/panasonic/avc/cng/model/service/j$d;
 
     move-result-object v0
 
@@ -184,21 +184,21 @@
 
     const-string v1, "onFinishConnectCamera"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 412
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/c$b;->a:Lcom/panasonic/avc/cng/view/camerasetting/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/c$b;->a:Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/camerasetting/c;->b(Lcom/panasonic/avc/cng/view/camerasetting/c;)Lcom/panasonic/avc/cng/model/service/j$d;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;->b(Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;)Lcom/panasonic/avc/cng/model/service/j$d;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 414
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/c$b;->a:Lcom/panasonic/avc/cng/view/camerasetting/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/c$b;->a:Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/camerasetting/c;->b(Lcom/panasonic/avc/cng/view/camerasetting/c;)Lcom/panasonic/avc/cng/model/service/j$d;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;->b(Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingViewModel;)Lcom/panasonic/avc/cng/model/service/j$d;
 
     move-result-object v0
 

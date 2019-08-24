@@ -11,7 +11,7 @@ import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.p052d.C1879a;
 import com.panasonic.avc.cng.p038a.C1343b;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.view.liveview.C3895p.C3898a;
 import com.panasonic.avc.cng.view.liveview.icon.C3248l;
 import com.panasonic.avc.cng.view.liveview.icon.C3250n.C3254d;
@@ -23,7 +23,7 @@ import com.panasonic.avc.cng.view.parts.LiveViewLumixSurface;
 import com.panasonic.avc.cng.view.parts.LiveViewLumixZoomView;
 import com.panasonic.avc.cng.view.setting.C5541am;
 
-public class LiveViewLumixCompactActivity extends C2951d {
+public class LiveViewLumixCompactActivity extends LiveViewLumixBaseActivity {
 
     /* renamed from: m */
     protected Bundle f8888m;
@@ -126,7 +126,7 @@ public class LiveViewLumixCompactActivity extends C2951d {
         imageButtonEx.setEnabledChangeListener(new C3924a() {
             /* renamed from: a */
             public void mo6982a(boolean z) {
-                C2261g.m9770d("LiveViewLumixCompactActivity", "OnEnableChange　" + z);
+                ImageAppLog.verbose("LiveViewLumixCompactActivity", "OnEnableChange　" + z);
                 if (!z && LiveViewLumixCompactActivity.this.f9049g && LiveViewLumixCompactActivity.this.f9043a.mo7335ac()) {
                     LiveViewLumixCompactActivity.this.f9049g = false;
                     LiveViewLumixCompactActivity.this.f9043a.mo7448f(false);
@@ -139,16 +139,16 @@ public class LiveViewLumixCompactActivity extends C2951d {
                     switch (motionEvent.getAction() & 255) {
                         case 0:
                             LiveViewLumixCompactActivity.this.f9049g = true;
-                            C2261g.m9770d("LiveViewLumixCompactActivity", "onTouch:ACTION_DOWN");
+                            ImageAppLog.verbose("LiveViewLumixCompactActivity", "onTouch:ACTION_DOWN");
                             LiveViewLumixCompactActivity.this.f9043a.mo7366b(false, 0, 0);
                             break;
                         case 1:
                             break;
                         case 3:
-                            C2261g.m9770d("LiveViewLumixCompactActivity", "onTouch:ACTION_CANCEL");
+                            ImageAppLog.verbose("LiveViewLumixCompactActivity", "onTouch:ACTION_CANCEL");
                             break;
                     }
-                    C2261g.m9770d("LiveViewLumixCompactActivity", "onTouch:ACTION_UP");
+                    ImageAppLog.verbose("LiveViewLumixCompactActivity", "onTouch:ACTION_UP");
                     LiveViewLumixCompactActivity.this.f9049g = false;
                     if (LiveViewLumixCompactActivity.this.f9043a.mo7335ac()) {
                         LiveViewLumixCompactActivity.this.f9043a.f9214bX.mo3216a(Boolean.valueOf(false));
@@ -174,8 +174,8 @@ public class LiveViewLumixCompactActivity extends C2951d {
 
     /* access modifiers changed from: protected */
     /* renamed from: a */
-    public C2994e mo7004a(C2951d dVar, Handler handler, C2983a aVar) {
-        return new C3145g(this, handler, aVar);
+    public C2994e mo7004a(LiveViewLumixBaseActivity dVar, Handler handler, C2983a aVar) {
+        return new LiveViewLumixCompactViewModel(this, handler, aVar);
     }
 
     /* access modifiers changed from: protected */

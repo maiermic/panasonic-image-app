@@ -108,7 +108,7 @@
     .line 553
     iget-object v2, p0, Lcom/panasonic/avc/cng/view/cameraconnect/k$5;->c:Lcom/panasonic/avc/cng/view/cameraconnect/k;
 
-    invoke-static {v2}, Lcom/panasonic/avc/cng/view/cameraconnect/k;->e(Lcom/panasonic/avc/cng/view/cameraconnect/k;)Lcom/panasonic/avc/cng/view/cameraconnect/l;
+    invoke-static {v2}, Lcom/panasonic/avc/cng/view/cameraconnect/k;->e(Lcom/panasonic/avc/cng/view/cameraconnect/k;)Lcom/panasonic/avc/cng/view/cameraconnect/WifiUtil;
 
     move-result-object v2
 
@@ -116,7 +116,7 @@
 
     iget-object v5, p0, Lcom/panasonic/avc/cng/view/cameraconnect/k$5;->b:Ljava/lang/String;
 
-    invoke-virtual {v2, v6, v4, v5}, Lcom/panasonic/avc/cng/view/cameraconnect/l;->a(Landroid/net/wifi/ScanResult;Ljava/lang/String;Ljava/lang/String;)Landroid/net/wifi/WifiConfiguration;
+    invoke-virtual {v2, v6, v4, v5}, Lcom/panasonic/avc/cng/view/cameraconnect/WifiUtil;->a(Landroid/net/wifi/ScanResult;Ljava/lang/String;Ljava/lang/String;)Landroid/net/wifi/WifiConfiguration;
 
     move-result-object v2
 

@@ -77,7 +77,7 @@ public class C3835b {
     /* access modifiers changed from: private */
 
     /* renamed from: b */
-    public C3837c f12580b;
+    public LiveViewWearableViewModel f12580b;
 
     /* renamed from: c */
     private C4230p f12581c = null;
@@ -167,14 +167,14 @@ public class C3835b {
     }
 
     /* renamed from: a */
-    public void mo9025a(Activity activity, C3837c cVar) {
+    public void mo9025a(Activity activity, LiveViewWearableViewModel cVar) {
         this.f12579a = activity;
         this.f12580b = cVar;
         m15331d();
     }
 
     /* renamed from: b */
-    public void mo9028b(Activity activity, C3837c cVar) {
+    public void mo9028b(Activity activity, LiveViewWearableViewModel cVar) {
         this.f12579a = activity;
         this.f12580b = cVar;
         m15331d();

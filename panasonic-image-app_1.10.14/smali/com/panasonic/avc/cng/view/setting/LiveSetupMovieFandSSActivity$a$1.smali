@@ -53,7 +53,7 @@
 
     iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSActivity$a;->a:Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSActivity;->a(Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSActivity;)Lcom/panasonic/avc/cng/view/setting/w;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSActivity;->a(Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSActivity;)Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSViewModel;
 
     move-result-object v0
 
@@ -265,11 +265,11 @@
 
     iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSActivity$a;->a:Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSActivity;->a(Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSActivity;)Lcom/panasonic/avc/cng/view/setting/w;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSActivity;->a(Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSActivity;)Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSViewModel;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/w;->H()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSViewModel;->H()Ljava/lang/String;
 
     move-result-object v0
 
@@ -309,11 +309,11 @@
 
     iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSActivity$a;->a:Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSActivity;->a(Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSActivity;)Lcom/panasonic/avc/cng/view/setting/w;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSActivity;->a(Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSActivity;)Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSViewModel;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/w;->H()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSViewModel;->H()Ljava/lang/String;
 
     move-result-object v0
 
@@ -353,11 +353,11 @@
 
     iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSActivity$a;->a:Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSActivity;->a(Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSActivity;)Lcom/panasonic/avc/cng/view/setting/w;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSActivity;->a(Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSActivity;)Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSViewModel;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/w;->I()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSViewModel;->I()Ljava/lang/String;
 
     move-result-object v0
 
@@ -397,11 +397,11 @@
 
     iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSActivity$a;->a:Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSActivity;->a(Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSActivity;)Lcom/panasonic/avc/cng/view/setting/w;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSActivity;->a(Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSActivity;)Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSViewModel;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/w;->I()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSViewModel;->I()Ljava/lang/String;
 
     move-result-object v0
 

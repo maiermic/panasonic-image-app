@@ -210,11 +210,11 @@
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingActivity$5;->b:Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingActivity;
 
-    invoke-static {v1}, Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingActivity;->access$2100(Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingActivity;)Lcom/panasonic/avc/cng/view/bluetooth/f;
+    invoke-static {v1}, Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingActivity;->access$2100(Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingActivity;)Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;
 
     move-result-object v1
 
-    invoke-virtual {v1, v4}, Lcom/panasonic/avc/cng/view/bluetooth/f;->c(Z)Lcom/panasonic/avc/cng/model/service/j;
+    invoke-virtual {v1, v4}, Lcom/panasonic/avc/cng/view/bluetooth/BluetoothSettingViewModel;->c(Z)Lcom/panasonic/avc/cng/model/service/j;
 
     move-result-object v1
 

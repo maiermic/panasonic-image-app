@@ -466,7 +466,7 @@
 
     iget-object v1, p0, Landroid/support/v4/a/ak$a;->a:Landroid/app/Notification$Builder;
 
-    invoke-static {v1, p1}, Landroid/support/v4/a/aj;->a(Landroid/app/Notification$Builder;Landroid/support/v4/a/ag$a;)Landroid/os/Bundle;
+    invoke-static {v1, p1}, Landroid/support/v4/a/NotificationCompat;->a(Landroid/app/Notification$Builder;Landroid/support/v4/a/ag$a;)Landroid/os/Bundle;
 
     move-result-object v1
 
@@ -483,7 +483,7 @@
     .line 115
     iget-object v0, p0, Landroid/support/v4/a/ak$a;->c:Ljava/util/List;
 
-    invoke-static {v0}, Landroid/support/v4/a/aj;->a(Ljava/util/List;)Landroid/util/SparseArray;
+    invoke-static {v0}, Landroid/support/v4/a/NotificationCompat;->a(Ljava/util/List;)Landroid/util/SparseArray;
 
     move-result-object v0
 

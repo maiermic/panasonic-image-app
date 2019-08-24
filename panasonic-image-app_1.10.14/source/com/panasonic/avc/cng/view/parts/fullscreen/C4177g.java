@@ -6,17 +6,17 @@ import com.panasonic.avc.cng.model.p051c.C1844d;
 import com.panasonic.avc.cng.model.p051c.C1848g.C1850b;
 import com.panasonic.avc.cng.model.p052d.C1879a;
 import com.panasonic.avc.cng.model.service.C1985b;
-import com.panasonic.avc.cng.model.service.C2253z;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
 import com.panasonic.avc.cng.view.liveview.LiveViewLumixGHFullscreenActivity;
 import com.panasonic.avc.cng.view.liveview.icon.C3206a;
-import com.panasonic.avc.cng.view.setting.C5780o;
+import com.panasonic.avc.cng.view.setting.LiveSetupDrumPickerFandSSViewModel;
 import java.util.Locale;
 
 /* renamed from: com.panasonic.avc.cng.view.parts.fullscreen.g */
 public class C4177g extends C4175f {
 
     /* renamed from: a */
-    private C5780o f14035a;
+    private LiveSetupDrumPickerFandSSViewModel f14035a;
 
     /* renamed from: b */
     private boolean f14036b;
@@ -33,7 +33,7 @@ public class C4177g extends C4175f {
     /* renamed from: f */
     private boolean f14040f;
 
-    public C4177g(LiveViewLumixGHFullscreenActivity liveViewLumixGHFullscreenActivity, int i, boolean z, C5780o oVar, boolean z2, boolean z3, boolean z4) {
+    public C4177g(LiveViewLumixGHFullscreenActivity liveViewLumixGHFullscreenActivity, int i, boolean z, LiveSetupDrumPickerFandSSViewModel oVar, boolean z2, boolean z3, boolean z4) {
         super(liveViewLumixGHFullscreenActivity, i, z);
         this.f14035a = oVar;
         this.f14036b = z2;
@@ -190,9 +190,9 @@ public class C4177g extends C4175f {
     /* renamed from: a */
     public void mo9844a(int... iArr) {
         if (this.f14038d) {
-            ((C5780o) mo9858h()).mo12669d(((C5780o) mo9858h()).mo12672g()[iArr[0]]);
+            ((LiveSetupDrumPickerFandSSViewModel) mo9858h()).mo12669d(((LiveSetupDrumPickerFandSSViewModel) mo9858h()).mo12672g()[iArr[0]]);
         } else if (this.f14039e) {
-            ((C5780o) mo9858h()).mo12662a("sec", String.valueOf(iArr[1] - iArr[0]));
+            ((LiveSetupDrumPickerFandSSViewModel) mo9858h()).mo12662a("sec", String.valueOf(iArr[1] - iArr[0]));
         } else {
             super.mo9844a(iArr);
         }
@@ -201,7 +201,7 @@ public class C4177g extends C4175f {
     /* access modifiers changed from: protected */
     /* renamed from: a */
     public void mo9846a(int i) {
-        ((C5780o) mo9858h()).mo12661a(String.format(Locale.getDefault(), "%1$d/256", new Object[]{Long.valueOf(mo9878e(i).f14034b)}));
+        ((LiveSetupDrumPickerFandSSViewModel) mo9858h()).mo12661a(String.format(Locale.getDefault(), "%1$d/256", new Object[]{Long.valueOf(mo9878e(i).f14034b)}));
     }
 
     /* access modifiers changed from: protected */
@@ -239,7 +239,7 @@ public class C4177g extends C4175f {
     /* renamed from: a */
     public void mo9847a(C1892f fVar, short[] sArr) {
         int i = 0;
-        C1985b a = C2253z.m9679a((Context) mo9853c(), fVar);
+        C1985b a = ServiceFactory.m9679a((Context) mo9853c(), fVar);
         if (a != null) {
             C1844d b = a.mo5189b();
             if (b != null) {

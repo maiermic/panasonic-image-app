@@ -13,11 +13,11 @@ import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.service.p054a.C1982p;
 import com.panasonic.avc.cng.view.common.C2820e;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
 import com.panasonic.avc.cng.view.parts.C4126bq;
-import com.panasonic.avc.cng.view.parts.C4245t.C4252c;
-import com.panasonic.avc.cng.view.parts.C4245t.C4255e;
-import com.panasonic.avc.cng.view.setting.C5537al.C5540a;
+import com.panasonic.avc.cng.view.parts.BrowserViewModel.C4252c;
+import com.panasonic.avc.cng.view.parts.BrowserViewModel.C4255e;
+import com.panasonic.avc.cng.view.setting.SettingMenuBaseActivity.C5540a;
 
 public class PicmateUploadContentsViewActivity extends C5741i implements C1982p {
     /* access modifiers changed from: private */
@@ -91,7 +91,7 @@ public class PicmateUploadContentsViewActivity extends C5741i implements C1982p 
             if (!PicmateUploadContentsViewActivity.this.isFinishing()) {
                 PicmateUploadContentsViewActivity.this._handler.post(new Runnable() {
                     public void run() {
-                        C2331d.m10114a((Activity) PicmateUploadContentsViewActivity.this, C2328a.ON_EXCEEDED_MAX_SELECT_NUM, (Bundle) null);
+                        DialogFactory.m10114a((Activity) PicmateUploadContentsViewActivity.this, C2328a.ON_EXCEEDED_MAX_SELECT_NUM, (Bundle) null);
                     }
                 });
             }
@@ -128,7 +128,7 @@ public class PicmateUploadContentsViewActivity extends C5741i implements C1982p 
         }
         m19969a();
         if (bundle == null) {
-            C2331d.m10114a((Activity) this, C2328a.ON_PROGRESS, (Bundle) null);
+            DialogFactory.m10114a((Activity) this, C2328a.ON_PROGRESS, (Bundle) null);
         }
     }
 
@@ -172,21 +172,21 @@ public class PicmateUploadContentsViewActivity extends C5741i implements C1982p 
     }
 
     public void onClickUploadContentsDelete(View view) {
-        C2331d.m10114a((Activity) this, C2328a.DIALOG_DELETE_CONTENTS, (Bundle) null);
+        DialogFactory.m10114a((Activity) this, C2328a.DIALOG_DELETE_CONTENTS, (Bundle) null);
     }
 
     /* renamed from: a */
     public void mo5165a(int i) {
         if (!isFinishing()) {
-            C2331d.m10100a((Activity) this);
+            DialogFactory.m10100a((Activity) this);
             if (i == 1) {
                 this.f16436a.mo12244d();
             } else if (i == 3) {
-                C2331d.m10114a((Activity) this, C2328a.DIALOG_ID_PIC_LOGIN_ERROR, (Bundle) null);
+                DialogFactory.m10114a((Activity) this, C2328a.DIALOG_ID_PIC_LOGIN_ERROR, (Bundle) null);
             } else if (i == 2) {
-                C2331d.m10114a((Activity) this, C2328a.DIALOG_ID_CONNECT_FAILED, (Bundle) null);
+                DialogFactory.m10114a((Activity) this, C2328a.DIALOG_ID_CONNECT_FAILED, (Bundle) null);
             } else if (i == 6) {
-                C2331d.m10114a((Activity) this, C2328a.DIALOG_ID_CONNECT_FAILED, (Bundle) null);
+                DialogFactory.m10114a((Activity) this, C2328a.DIALOG_ID_CONNECT_FAILED, (Bundle) null);
             } else if (i == 4) {
                 this.f16437b.mo11773g();
             }
@@ -200,13 +200,13 @@ public class PicmateUploadContentsViewActivity extends C5741i implements C1982p 
             /* renamed from: a */
             public void mo5165a(int i) {
                 if (!PicmateUploadContentsViewActivity.this.isFinishing()) {
-                    C2331d.m10100a((Activity) PicmateUploadContentsViewActivity.this);
+                    DialogFactory.m10100a((Activity) PicmateUploadContentsViewActivity.this);
                     if (i == 1) {
                         PicmateUploadContentsViewActivity.this.f16436a.mo12244d();
                     } else if (i == 3) {
-                        C2331d.m10114a((Activity) PicmateUploadContentsViewActivity.this, C2328a.DIALOG_ID_PIC_LOGIN_ERROR, (Bundle) null);
+                        DialogFactory.m10114a((Activity) PicmateUploadContentsViewActivity.this, C2328a.DIALOG_ID_PIC_LOGIN_ERROR, (Bundle) null);
                     } else if (i == 2) {
-                        C2331d.m10114a((Activity) PicmateUploadContentsViewActivity.this, C2328a.DIALOG_ID_CONNECT_FAILED, (Bundle) null);
+                        DialogFactory.m10114a((Activity) PicmateUploadContentsViewActivity.this, C2328a.DIALOG_ID_CONNECT_FAILED, (Bundle) null);
                     }
                 }
             }
@@ -227,16 +227,16 @@ public class PicmateUploadContentsViewActivity extends C5741i implements C1982p 
                             PicmateUploadContentsViewActivity.this.f16437b.mo11773g();
                         }
                         PicmateUploadContentsViewActivity.this.m19971a(false);
-                        C2331d.m10100a((Activity) PicmateUploadContentsViewActivity.this);
+                        DialogFactory.m10100a((Activity) PicmateUploadContentsViewActivity.this);
                         return;
                     }
-                    C2331d.m10100a((Activity) PicmateUploadContentsViewActivity.this);
+                    DialogFactory.m10100a((Activity) PicmateUploadContentsViewActivity.this);
                     if (i == 6) {
-                        C2331d.m10114a((Activity) PicmateUploadContentsViewActivity.this, C2328a.DIALOG_ID_CONNECT_FAILED, (Bundle) null);
+                        DialogFactory.m10114a((Activity) PicmateUploadContentsViewActivity.this, C2328a.DIALOG_ID_CONNECT_FAILED, (Bundle) null);
                     } else if (i == 3) {
-                        C2331d.m10114a((Activity) PicmateUploadContentsViewActivity.this, C2328a.DIALOG_ID_PIC_LOGIN_ERROR, (Bundle) null);
+                        DialogFactory.m10114a((Activity) PicmateUploadContentsViewActivity.this, C2328a.DIALOG_ID_PIC_LOGIN_ERROR, (Bundle) null);
                     } else if (i == 2) {
-                        C2331d.m10114a((Activity) PicmateUploadContentsViewActivity.this, C2328a.DIALOG_ID_CONNECT_FAILED, (Bundle) null);
+                        DialogFactory.m10114a((Activity) PicmateUploadContentsViewActivity.this, C2328a.DIALOG_ID_CONNECT_FAILED, (Bundle) null);
                     }
                 }
             }
@@ -282,11 +282,11 @@ public class PicmateUploadContentsViewActivity extends C5741i implements C1982p 
         switch (aVar) {
             case DIALOG_DELETE_CONTENTS:
                 this.f16439d.setVisibility(8);
-                C2331d.m10114a((Activity) this, C2328a.DIALOG_DELETE_UPLOAD_WAITING, (Bundle) null);
+                DialogFactory.m10114a((Activity) this, C2328a.DIALOG_DELETE_UPLOAD_WAITING, (Bundle) null);
                 m19973b();
                 return;
             case DIALOG_DELETE_UPLOAD_WAITING:
-                C2331d.m10114a((Activity) this, C2328a.ON_PROGRESS, (Bundle) null);
+                DialogFactory.m10114a((Activity) this, C2328a.ON_PROGRESS, (Bundle) null);
                 this.f16436a.mo12246f();
                 return;
             case ON_DISCONNECT_BY_HIGH_TEMP_FINISH:

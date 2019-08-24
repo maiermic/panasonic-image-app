@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/core/a/al;->b(Ljava/lang/String;)[B
+    value = Lcom/panasonic/avc/cng/core/a/StaticHttpCommand;->b(Ljava/lang/String;)[B
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -91,7 +91,7 @@
 
     move-result-object v2
 
-    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 397
     const-string v1, "StaticHttpCommand"
@@ -136,7 +136,7 @@
 
     move-result-object v2
 
-    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/f;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/ImageAppCmdLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 401
     :goto_0
@@ -161,7 +161,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/core/a/al;->f(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/core/a/StaticHttpCommand;->f(Ljava/lang/String;)Ljava/lang/String;
 
     .line 387
     :cond_0
@@ -174,14 +174,14 @@
     move-result-object v0
 
     .line 388
-    invoke-static {}, Lcom/panasonic/avc/cng/core/a/al;->e()V
+    invoke-static {}, Lcom/panasonic/avc/cng/core/a/StaticHttpCommand;->e()V
 
     .line 389
     const-string v1, "StaticHttpCommand"
 
     const-string v2, "SendCGICommand:Res:OK"
 
-    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/f;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/ImageAppCmdLog;->verbose(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 

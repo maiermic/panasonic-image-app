@@ -7,13 +7,13 @@ import android.graphics.Paint.Style;
 import android.graphics.RectF;
 import android.widget.ImageView;
 import com.panasonic.avc.cng.view.play.snapmovie.C4801g;
-import com.panasonic.avc.cng.view.setting.C5651aw;
+import com.panasonic.avc.cng.view.setting.SetupWithLiveViewSceneGuideSelectViewModel;
 
 /* renamed from: com.panasonic.avc.cng.view.parts.y */
 public class C4267y extends ImageView {
 
     /* renamed from: a */
-    private C5651aw f14312a;
+    private SetupWithLiveViewSceneGuideSelectViewModel f14312a;
 
     /* renamed from: b */
     private C4801g f14313b;
@@ -27,7 +27,7 @@ public class C4267y extends ImageView {
     /* renamed from: e */
     private int f14316e;
 
-    public C4267y(Context context, C5651aw awVar) {
+    public C4267y(Context context, SetupWithLiveViewSceneGuideSelectViewModel awVar) {
         super(context);
         this.f14312a = awVar;
     }

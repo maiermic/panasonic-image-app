@@ -1,6 +1,6 @@
 package com.panasonic.avc.cng.view.p072a;
 
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -31,7 +31,7 @@ public class C2316j {
     public static void m10032a(String str, C2291c cVar) {
         if (f7125a != null) {
             if (m10035c(str) != null) {
-                C2261g.m9769c("ViewModelStore", String.format("Store Error!!! \"%s\" is already exist!!!", new Object[]{str}));
+                ImageAppLog.error("ViewModelStore", String.format("Store Error!!! \"%s\" is already exist!!!", new Object[]{str}));
                 return;
             }
             f7125a.add(new C2315i(str, cVar));

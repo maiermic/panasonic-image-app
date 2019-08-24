@@ -67,7 +67,7 @@
     .line 98
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerOnlyFActivity$1;->a:Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerOnlyFActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerOnlyFActivity;->a(Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerOnlyFActivity;)Lcom/panasonic/avc/cng/view/setting/o;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerOnlyFActivity;->a(Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerOnlyFActivity;)Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;
 
     move-result-object v0
 
@@ -89,7 +89,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/setting/o;->b(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;->b(Ljava/lang/String;)V
 
     .line 99
     return-void

@@ -51,11 +51,11 @@
     .line 333
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ax$1$1;->a:Lcom/panasonic/avc/cng/view/setting/ax$1;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/ax$1;->a:Lcom/panasonic/avc/cng/view/setting/ax;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/ax$1;->a:Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;
 
     const/4 v1, 0x1
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/setting/ax;->a(Lcom/panasonic/avc/cng/view/setting/ax;Z)Z
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;->a(Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;Z)Z
 
     .line 334
     return-void
@@ -68,11 +68,11 @@
     .line 328
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ax$1$1;->a:Lcom/panasonic/avc/cng/view/setting/ax$1;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/ax$1;->a:Lcom/panasonic/avc/cng/view/setting/ax;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/ax$1;->a:Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;
 
     const/4 v1, 0x1
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/setting/ax;->a(Lcom/panasonic/avc/cng/view/setting/ax;Z)Z
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;->a(Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;Z)Z
 
     .line 329
     return-void

@@ -113,7 +113,7 @@
     .line 68
     iget-object v0, p0, Lcom/panasonic/avc/cng/model/b/d;->d:Landroid/content/Context;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/z;->j(Landroid/content/Context;)Lcom/panasonic/avc/cng/model/service/c;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->j(Landroid/content/Context;)Lcom/panasonic/avc/cng/model/service/c;
 
     move-result-object v0
 

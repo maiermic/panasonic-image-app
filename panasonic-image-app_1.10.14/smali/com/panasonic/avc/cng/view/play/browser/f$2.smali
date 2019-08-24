@@ -57,11 +57,11 @@
     .line 145
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/f$2;->a:Lcom/panasonic/avc/cng/view/play/browser/f;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/browser/f;->a(Lcom/panasonic/avc/cng/view/play/browser/f;)Lcom/panasonic/avc/cng/view/play/browser/g;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/browser/f;->a(Lcom/panasonic/avc/cng/view/play/browser/f;)Lcom/panasonic/avc/cng/view/play/browser/MainBrowserViewModel;
 
     move-result-object v0
 
-    invoke-virtual {v0, p3}, Lcom/panasonic/avc/cng/view/play/browser/g;->f(I)V
+    invoke-virtual {v0, p3}, Lcom/panasonic/avc/cng/view/play/browser/MainBrowserViewModel;->f(I)V
 
     .line 146
     const/4 v0, 0x1

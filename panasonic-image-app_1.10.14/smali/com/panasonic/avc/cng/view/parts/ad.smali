@@ -71,11 +71,11 @@
 
 .field private g:Lcom/panasonic/avc/cng/model/c/d;
 
-.field private h:Lcom/panasonic/avc/cng/view/setting/o;
+.field private h:Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;
 
-.field private i:Lcom/panasonic/avc/cng/view/parts/ab;
+.field private i:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
-.field private j:Lcom/panasonic/avc/cng/view/parts/ab;
+.field private j:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
 .field private k:Landroid/widget/LinearLayout;
 
@@ -111,7 +111,7 @@
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Landroid/app/Activity;Lcom/panasonic/avc/cng/view/setting/o;ZZ)V
+.method public constructor <init>(Landroid/content/Context;Landroid/app/Activity;Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;ZZ)V
     .locals 7
 
     .prologue
@@ -152,7 +152,7 @@
     iput-object p1, p0, Lcom/panasonic/avc/cng/view/parts/ad;->a:Landroid/content/Context;
 
     .line 171
-    iput-object p3, p0, Lcom/panasonic/avc/cng/view/parts/ad;->h:Lcom/panasonic/avc/cng/view/setting/o;
+    iput-object p3, p0, Lcom/panasonic/avc/cng/view/parts/ad;->h:Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;
 
     .line 173
     if-eqz p2, :cond_1
@@ -224,18 +224,18 @@
     iput-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->n:Landroid/widget/FrameLayout;
 
     .line 183
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 184
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
@@ -251,7 +251,7 @@
 
     iget-object v3, p0, Lcom/panasonic/avc/cng/view/parts/ad;->f:Lcom/panasonic/avc/cng/model/f;
 
-    invoke-static {v0, v3}, Lcom/panasonic/avc/cng/model/service/z;->a(Landroid/content/Context;Lcom/panasonic/avc/cng/model/f;)Lcom/panasonic/avc/cng/model/service/b;
+    invoke-static {v0, v3}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->a(Landroid/content/Context;Lcom/panasonic/avc/cng/model/f;)Lcom/panasonic/avc/cng/model/service/b;
 
     move-result-object v0
 
@@ -336,11 +336,11 @@
     if-eqz v0, :cond_2
 
     .line 205
-    invoke-virtual {p3}, Lcom/panasonic/avc/cng/view/setting/o;->h()[Ljava/lang/String;
+    invoke-virtual {p3}, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;->h()[Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-virtual {p3}, Lcom/panasonic/avc/cng/view/setting/o;->g()[Ljava/lang/String;
+    invoke-virtual {p3}, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;->g()[Ljava/lang/String;
 
     move-result-object v1
 
@@ -570,7 +570,7 @@
     move-result-object v0
 
     .line 265
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
     if-eqz v1, :cond_4
 
@@ -578,7 +578,7 @@
 
     if-eqz v1, :cond_4
 
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
     if-eqz v1, :cond_4
 
@@ -587,14 +587,14 @@
     if-eqz v1, :cond_4
 
     .line 266
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
-    invoke-virtual {v1, v2, v2}, Lcom/panasonic/avc/cng/view/parts/ab;->d(II)V
+    invoke-virtual {v1, v2, v2}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;->d(II)V
 
     .line 267
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
-    invoke-virtual {v1, v2, v2}, Lcom/panasonic/avc/cng/view/parts/ab;->d(II)V
+    invoke-virtual {v1, v2, v2}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;->d(II)V
 
     .line 268
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/parts/ad;->D:Lcom/panasonic/avc/cng/view/parts/av;
@@ -629,18 +629,18 @@
     if-le v1, v0, :cond_5
 
     .line 273
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
     const/16 v1, 0x9
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/parts/ab;->setPosition(I)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;->setPosition(I)V
 
     .line 274
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
     const/16 v1, 0x9
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/parts/ab;->setPosition(I)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;->setPosition(I)V
 
     .line 275
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->D:Lcom/panasonic/avc/cng/view/parts/av;
@@ -651,24 +651,24 @@
 
     .line 280
     :goto_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
     const/4 v1, 0x7
 
     iget-object v2, p0, Lcom/panasonic/avc/cng/view/parts/ad;->D:Lcom/panasonic/avc/cng/view/parts/av;
 
-    invoke-virtual {v0, v1, v2, v7}, Lcom/panasonic/avc/cng/view/parts/ab;->a(ILandroid/view/View;I)V
+    invoke-virtual {v0, v1, v2, v7}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;->a(ILandroid/view/View;I)V
 
     .line 281
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
     const/4 v1, 0x7
 
-    iget-object v2, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
     iget v3, p0, Lcom/panasonic/avc/cng/view/parts/ad;->r:I
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/parts/ab;->a(ILandroid/view/View;I)V
+    invoke-virtual {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;->a(ILandroid/view/View;I)V
 
     .line 283
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->J:Lcom/panasonic/avc/cng/view/parts/bo;
@@ -739,7 +739,7 @@
 
     const/4 v1, 0x2
 
-    iget-object v2, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
     invoke-virtual {v0, v1, v2, v7}, Lcom/panasonic/avc/cng/view/parts/bo;->a(ILandroid/view/View;I)V
 
@@ -812,7 +812,7 @@
 
     const/4 v1, 0x2
 
-    iget-object v2, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
     invoke-virtual {v0, v1, v2, v7}, Lcom/panasonic/avc/cng/view/parts/bo;->a(ILandroid/view/View;I)V
 
@@ -995,7 +995,7 @@
     move-result-object v1
 
     .line 325
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
     if-eqz v0, :cond_2
 
@@ -1003,7 +1003,7 @@
 
     if-eqz v0, :cond_2
 
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
     if-eqz v0, :cond_2
 
@@ -1048,9 +1048,9 @@
     invoke-direct {v2, v3}, Ljava/text/DecimalFormat;-><init>(Ljava/lang/String;)V
 
     .line 332
-    iget-object v3, p0, Lcom/panasonic/avc/cng/view/parts/ad;->h:Lcom/panasonic/avc/cng/view/setting/o;
+    iget-object v3, p0, Lcom/panasonic/avc/cng/view/parts/ad;->h:Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;
 
-    invoke-virtual {v3}, Lcom/panasonic/avc/cng/view/setting/o;->d()Ljava/lang/String;
+    invoke-virtual {v3}, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;->d()Ljava/lang/String;
 
     move-result-object v3
 
@@ -1062,9 +1062,9 @@
 
     if-nez v3, :cond_0
 
-    iget-object v3, p0, Lcom/panasonic/avc/cng/view/parts/ad;->h:Lcom/panasonic/avc/cng/view/setting/o;
+    iget-object v3, p0, Lcom/panasonic/avc/cng/view/parts/ad;->h:Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;
 
-    invoke-virtual {v3}, Lcom/panasonic/avc/cng/view/setting/o;->d()Ljava/lang/String;
+    invoke-virtual {v3}, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;->d()Ljava/lang/String;
 
     move-result-object v3
 
@@ -1075,9 +1075,9 @@
     if-lez v3, :cond_0
 
     .line 333
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->h:Lcom/panasonic/avc/cng/view/setting/o;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->h:Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/o;->d()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;->d()Ljava/lang/String;
 
     move-result-object v0
 
@@ -1151,14 +1151,14 @@
     .line 361
     :cond_1
     :goto_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
-    invoke-virtual {v0, v9, v9}, Lcom/panasonic/avc/cng/view/parts/ab;->d(II)V
+    invoke-virtual {v0, v9, v9}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;->d(II)V
 
     .line 362
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
-    invoke-virtual {v0, v9, v9}, Lcom/panasonic/avc/cng/view/parts/ab;->d(II)V
+    invoke-virtual {v0, v9, v9}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;->d(II)V
 
     .line 364
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->D:Lcom/panasonic/avc/cng/view/parts/av;
@@ -1193,18 +1193,18 @@
     if-le v0, v1, :cond_5
 
     .line 369
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
     const/16 v1, 0x9
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/parts/ab;->setPosition(I)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;->setPosition(I)V
 
     .line 370
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
     const/16 v1, 0x9
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/parts/ab;->setPosition(I)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;->setPosition(I)V
 
     .line 371
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->D:Lcom/panasonic/avc/cng/view/parts/av;
@@ -1227,42 +1227,42 @@
 
     .line 376
     :goto_1
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
     const/4 v1, 0x5
 
     iget-object v2, p0, Lcom/panasonic/avc/cng/view/parts/ad;->K:Lcom/panasonic/avc/cng/view/parts/bo;
 
-    invoke-virtual {v0, v1, v2, v8}, Lcom/panasonic/avc/cng/view/parts/ab;->a(ILandroid/view/View;I)V
+    invoke-virtual {v0, v1, v2, v8}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;->a(ILandroid/view/View;I)V
 
     .line 377
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
     const/4 v1, 0x7
 
     iget-object v2, p0, Lcom/panasonic/avc/cng/view/parts/ad;->D:Lcom/panasonic/avc/cng/view/parts/av;
 
-    invoke-virtual {v0, v1, v2, v8}, Lcom/panasonic/avc/cng/view/parts/ab;->a(ILandroid/view/View;I)V
+    invoke-virtual {v0, v1, v2, v8}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;->a(ILandroid/view/View;I)V
 
     .line 378
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
     const/4 v1, 0x5
 
     iget-object v2, p0, Lcom/panasonic/avc/cng/view/parts/ad;->K:Lcom/panasonic/avc/cng/view/parts/bo;
 
-    invoke-virtual {v0, v1, v2, v8}, Lcom/panasonic/avc/cng/view/parts/ab;->a(ILandroid/view/View;I)V
+    invoke-virtual {v0, v1, v2, v8}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;->a(ILandroid/view/View;I)V
 
     .line 379
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
     const/4 v1, 0x7
 
-    iget-object v2, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
     iget v3, p0, Lcom/panasonic/avc/cng/view/parts/ad;->r:I
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/parts/ab;->a(ILandroid/view/View;I)V
+    invoke-virtual {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;->a(ILandroid/view/View;I)V
 
     .line 381
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->J:Lcom/panasonic/avc/cng/view/parts/bo;
@@ -1305,7 +1305,7 @@
 
     const/4 v1, 0x2
 
-    iget-object v2, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
     invoke-virtual {v0, v1, v2, v8}, Lcom/panasonic/avc/cng/view/parts/bo;->a(ILandroid/view/View;I)V
 
@@ -1350,7 +1350,7 @@
 
     const/4 v1, 0x2
 
-    iget-object v2, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
     invoke-virtual {v0, v1, v2, v8}, Lcom/panasonic/avc/cng/view/parts/bo;->a(ILandroid/view/View;I)V
 
@@ -1396,9 +1396,9 @@
     invoke-direct {v2, v3}, Ljava/text/DecimalFormat;-><init>(Ljava/lang/String;)V
 
     .line 349
-    iget-object v3, p0, Lcom/panasonic/avc/cng/view/parts/ad;->h:Lcom/panasonic/avc/cng/view/setting/o;
+    iget-object v3, p0, Lcom/panasonic/avc/cng/view/parts/ad;->h:Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;
 
-    invoke-virtual {v3}, Lcom/panasonic/avc/cng/view/setting/o;->d()Ljava/lang/String;
+    invoke-virtual {v3}, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;->d()Ljava/lang/String;
 
     move-result-object v3
 
@@ -1410,9 +1410,9 @@
 
     if-nez v3, :cond_4
 
-    iget-object v3, p0, Lcom/panasonic/avc/cng/view/parts/ad;->h:Lcom/panasonic/avc/cng/view/setting/o;
+    iget-object v3, p0, Lcom/panasonic/avc/cng/view/parts/ad;->h:Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;
 
-    invoke-virtual {v3}, Lcom/panasonic/avc/cng/view/setting/o;->d()Ljava/lang/String;
+    invoke-virtual {v3}, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;->d()Ljava/lang/String;
 
     move-result-object v3
 
@@ -1423,9 +1423,9 @@
     if-lez v3, :cond_4
 
     .line 350
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->h:Lcom/panasonic/avc/cng/view/setting/o;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->h:Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/o;->d()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;->d()Ljava/lang/String;
 
     move-result-object v0
 
@@ -1541,12 +1541,12 @@
     return-object v0
 .end method
 
-.method static synthetic d(Lcom/panasonic/avc/cng/view/parts/ad;)Lcom/panasonic/avc/cng/view/parts/ab;
+.method static synthetic d(Lcom/panasonic/avc/cng/view/parts/ad;)Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
     .locals 1
 
     .prologue
     .line 41
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
     return-object v0
 .end method
@@ -1571,12 +1571,12 @@
     return-object v0
 .end method
 
-.method static synthetic g(Lcom/panasonic/avc/cng/view/parts/ad;)Lcom/panasonic/avc/cng/view/parts/ab;
+.method static synthetic g(Lcom/panasonic/avc/cng/view/parts/ad;)Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
     .locals 1
 
     .prologue
     .line 41
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
     return-object v0
 .end method
@@ -1591,12 +1591,12 @@
     return v0
 .end method
 
-.method static synthetic i(Lcom/panasonic/avc/cng/view/parts/ad;)Lcom/panasonic/avc/cng/view/setting/o;
+.method static synthetic i(Lcom/panasonic/avc/cng/view/parts/ad;)Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;
     .locals 1
 
     .prologue
     .line 41
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->h:Lcom/panasonic/avc/cng/view/setting/o;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->h:Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;
 
     return-object v0
 .end method
@@ -1621,7 +1621,7 @@
 
     .line 1335
     .line 1337
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
     if-eqz v0, :cond_0
 
@@ -1705,9 +1705,9 @@
 
     .line 1362
     :cond_3
-    iget-object v2, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
-    invoke-virtual {v2, v1, v0}, Lcom/panasonic/avc/cng/view/parts/ab;->b(II)V
+    invoke-virtual {v2, v1, v0}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;->b(II)V
 
     goto :goto_0
 
@@ -1750,7 +1750,7 @@
     const/4 v1, 0x0
 
     .line 1221
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
     if-nez v0, :cond_1
 
@@ -1787,9 +1787,9 @@
     if-nez v2, :cond_2
 
     .line 1232
-    iget-object v2, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
-    invoke-virtual {v2, v1, v0}, Lcom/panasonic/avc/cng/view/parts/ab;->b(II)V
+    invoke-virtual {v2, v1, v0}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;->b(II)V
 
     goto :goto_0
 
@@ -1827,9 +1827,9 @@
     if-nez v2, :cond_4
 
     .line 1241
-    iget-object v2, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
-    invoke-virtual {v2, v1, v0}, Lcom/panasonic/avc/cng/view/parts/ab;->b(II)V
+    invoke-virtual {v2, v1, v0}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;->b(II)V
 
     goto :goto_0
 
@@ -1992,9 +1992,9 @@
 
     .line 1325
     :cond_8
-    iget-object v2, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
-    invoke-virtual {v2, v1, v0}, Lcom/panasonic/avc/cng/view/parts/ab;->b(II)V
+    invoke-virtual {v2, v1, v0}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;->b(II)V
 
     goto/16 :goto_0
 
@@ -2528,9 +2528,9 @@
     if-nez v0, :cond_1
 
     .line 1199
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
-    invoke-virtual {v0, v2, p1}, Lcom/panasonic/avc/cng/view/parts/ab;->b(II)V
+    invoke-virtual {v0, v2, p1}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;->b(II)V
 
     .line 1200
     iput p1, p0, Lcom/panasonic/avc/cng/view/parts/ad;->w:I
@@ -2550,11 +2550,11 @@
     if-eqz p2, :cond_0
 
     .line 1205
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
     iget v1, p0, Lcom/panasonic/avc/cng/view/parts/ad;->w:I
 
-    invoke-virtual {v0, v2, v1}, Lcom/panasonic/avc/cng/view/parts/ab;->b(II)V
+    invoke-virtual {v0, v2, v1}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;->b(II)V
 
     goto :goto_0
 .end method
@@ -2710,9 +2710,9 @@
 
     .line 1505
     :cond_6
-    iget-object v2, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
-    invoke-virtual {v2, v0, v1}, Lcom/panasonic/avc/cng/view/parts/ab;->a(II)V
+    invoke-virtual {v2, v0, v1}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;->a(II)V
 
     .line 1510
     :cond_7
@@ -2916,9 +2916,9 @@
 
     .line 1405
     :cond_8
-    iget-object v2, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
-    invoke-virtual {v2, v4, v3}, Lcom/panasonic/avc/cng/view/parts/ab;->a(II)V
+    invoke-virtual {v2, v4, v3}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;->a(II)V
 
     .line 1408
     :cond_9
@@ -3028,9 +3028,9 @@
 
     .line 1427
     :cond_f
-    iget-object v2, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
-    invoke-virtual {v2, v3, v4}, Lcom/panasonic/avc/cng/view/parts/ab;->a(II)V
+    invoke-virtual {v2, v3, v4}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;->a(II)V
 
     goto/16 :goto_0
 
@@ -3159,9 +3159,9 @@
 
     .line 1453
     :cond_14
-    iget-object v3, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v3, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
-    invoke-virtual {v3, v2, v5}, Lcom/panasonic/avc/cng/view/parts/ab;->a(II)V
+    invoke-virtual {v3, v2, v5}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;->a(II)V
 
     .line 1458
     :cond_15
@@ -3446,72 +3446,72 @@
 
     .line 664
     :goto_1
-    new-instance v0, Lcom/panasonic/avc/cng/view/parts/ab;
+    new-instance v0, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/parts/ad;->a:Landroid/content/Context;
 
     iget v2, p0, Lcom/panasonic/avc/cng/view/parts/ad;->A:I
 
-    invoke-direct {v0, v1, v2}, Lcom/panasonic/avc/cng/view/parts/ab;-><init>(Landroid/content/Context;I)V
+    invoke-direct {v0, v1, v2}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;-><init>(Landroid/content/Context;I)V
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/ab;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
     .line 665
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
     new-instance v1, Lcom/panasonic/avc/cng/view/parts/ad$3;
 
     invoke-direct {v1, p0}, Lcom/panasonic/avc/cng/view/parts/ad$3;-><init>(Lcom/panasonic/avc/cng/view/parts/ad;)V
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/parts/ab;->setOnPostionChangedListener(Lcom/panasonic/avc/cng/view/parts/ab$a;)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;->setOnPostionChangedListener(Lcom/panasonic/avc/cng/view/parts/ab$a;)V
 
     .line 674
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
     const/4 v1, 0x1
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/parts/ab;->setCoverType(I)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;->setCoverType(I)V
 
     .line 675
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
     const/4 v1, 0x2
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/parts/ab;->setDivision(I)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;->setDivision(I)V
 
     .line 677
-    new-instance v0, Lcom/panasonic/avc/cng/view/parts/ab;
+    new-instance v0, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/parts/ad;->a:Landroid/content/Context;
 
     iget v2, p0, Lcom/panasonic/avc/cng/view/parts/ad;->A:I
 
-    invoke-direct {v0, v1, v2}, Lcom/panasonic/avc/cng/view/parts/ab;-><init>(Landroid/content/Context;I)V
+    invoke-direct {v0, v1, v2}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;-><init>(Landroid/content/Context;I)V
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/ab;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
     .line 678
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
     new-instance v1, Lcom/panasonic/avc/cng/view/parts/ad$4;
 
     invoke-direct {v1, p0}, Lcom/panasonic/avc/cng/view/parts/ad$4;-><init>(Lcom/panasonic/avc/cng/view/parts/ad;)V
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/parts/ab;->setOnPostionChangedListener(Lcom/panasonic/avc/cng/view/parts/ab$a;)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;->setOnPostionChangedListener(Lcom/panasonic/avc/cng/view/parts/ab$a;)V
 
     .line 689
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
     const/4 v1, 0x1
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/parts/ab;->setCoverType(I)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;->setCoverType(I)V
 
     .line 690
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
     const/4 v1, 0x1
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/parts/ab;->setDivision(I)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;->setDivision(I)V
 
     .line 693
     invoke-static {}, Lcom/panasonic/avc/cng/view/parts/u;->b()[Ljava/lang/String;
@@ -3950,9 +3950,9 @@
     iput-boolean v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->C:Z
 
     .line 763
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
-    invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/view/parts/ab;->a([Ljava/lang/String;)[Ljava/lang/String;
+    invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;->a([Ljava/lang/String;)[Ljava/lang/String;
 
     move-result-object v0
 
@@ -3982,7 +3982,7 @@
     invoke-virtual {v0}, Landroid/widget/FrameLayout;->removeAllViews()V
 
     .line 782
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
     iget-object v2, p0, Lcom/panasonic/avc/cng/view/parts/ad;->k:Landroid/widget/LinearLayout;
 
@@ -3996,10 +3996,10 @@
 
     iget-boolean v7, p0, Lcom/panasonic/avc/cng/view/parts/ad;->B:Z
 
-    invoke-virtual/range {v0 .. v7}, Lcom/panasonic/avc/cng/view/parts/ab;->a([Ljava/lang/String;Landroid/widget/LinearLayout;Landroid/widget/FrameLayout;IIIZ)Z
+    invoke-virtual/range {v0 .. v7}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;->a([Ljava/lang/String;Landroid/widget/LinearLayout;Landroid/widget/FrameLayout;IIIZ)Z
 
     .line 783
-    iget-object v2, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
     iget-object v4, p0, Lcom/panasonic/avc/cng/view/parts/ad;->l:Landroid/widget/LinearLayout;
 
@@ -4015,7 +4015,7 @@
 
     move-object v3, v10
 
-    invoke-virtual/range {v2 .. v9}, Lcom/panasonic/avc/cng/view/parts/ab;->a([Ljava/lang/String;Landroid/widget/LinearLayout;Landroid/widget/FrameLayout;IIIZ)Z
+    invoke-virtual/range {v2 .. v9}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;->a([Ljava/lang/String;Landroid/widget/LinearLayout;Landroid/widget/FrameLayout;IIIZ)Z
 
     .line 786
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->b:Landroid/widget/RelativeLayout;
@@ -4025,11 +4025,11 @@
     .line 787
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->b:Landroid/widget/RelativeLayout;
 
-    iget-object v2, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
-    iget-object v3, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v3, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
-    invoke-virtual {v3}, Lcom/panasonic/avc/cng/view/parts/ab;->getLayoutParams()Landroid/widget/RelativeLayout$LayoutParams;
+    invoke-virtual {v3}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;->getLayoutParams()Landroid/widget/RelativeLayout$LayoutParams;
 
     move-result-object v3
 
@@ -4038,11 +4038,11 @@
     .line 788
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->b:Landroid/widget/RelativeLayout;
 
-    iget-object v2, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
-    iget-object v3, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v3, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
-    invoke-virtual {v3}, Lcom/panasonic/avc/cng/view/parts/ab;->getLayoutParams()Landroid/widget/RelativeLayout$LayoutParams;
+    invoke-virtual {v3}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;->getLayoutParams()Landroid/widget/RelativeLayout$LayoutParams;
 
     move-result-object v3
 
@@ -4181,14 +4181,14 @@
     if-eqz v0, :cond_10
 
     .line 810
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/parts/ab;->a([Ljava/lang/String;)[Ljava/lang/String;
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;->a([Ljava/lang/String;)[Ljava/lang/String;
 
     .line 811
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
-    invoke-virtual {v0, v10}, Lcom/panasonic/avc/cng/view/parts/ab;->a([Ljava/lang/String;)[Ljava/lang/String;
+    invoke-virtual {v0, v10}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;->a([Ljava/lang/String;)[Ljava/lang/String;
 
     .line 816
     :cond_9
@@ -4368,16 +4368,16 @@
     iput-boolean v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->C:Z
 
     .line 768
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
-    invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/view/parts/ab;->a([Ljava/lang/String;)[Ljava/lang/String;
+    invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;->a([Ljava/lang/String;)[Ljava/lang/String;
 
     move-result-object v2
 
     .line 769
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/parts/ab;->a([Ljava/lang/String;)[Ljava/lang/String;
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;->a([Ljava/lang/String;)[Ljava/lang/String;
 
     move-result-object v0
 
@@ -4433,14 +4433,14 @@
     if-eqz v0, :cond_9
 
     .line 813
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
-    invoke-virtual {v0, v10}, Lcom/panasonic/avc/cng/view/parts/ab;->a([Ljava/lang/String;)[Ljava/lang/String;
+    invoke-virtual {v0, v10}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;->a([Ljava/lang/String;)[Ljava/lang/String;
 
     .line 814
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/parts/ab;->a([Ljava/lang/String;)[Ljava/lang/String;
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;->a([Ljava/lang/String;)[Ljava/lang/String;
 
     goto/16 :goto_8
 .end method
@@ -4507,72 +4507,72 @@
 
     .line 836
     :goto_0
-    new-instance v0, Lcom/panasonic/avc/cng/view/parts/ab;
+    new-instance v0, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
     iget-object v3, p0, Lcom/panasonic/avc/cng/view/parts/ad;->a:Landroid/content/Context;
 
     iget v4, p0, Lcom/panasonic/avc/cng/view/parts/ad;->A:I
 
-    invoke-direct {v0, v3, v4}, Lcom/panasonic/avc/cng/view/parts/ab;-><init>(Landroid/content/Context;I)V
+    invoke-direct {v0, v3, v4}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;-><init>(Landroid/content/Context;I)V
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/ab;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
     .line 837
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
     new-instance v3, Lcom/panasonic/avc/cng/view/parts/ad$5;
 
     invoke-direct {v3, p0, p2}, Lcom/panasonic/avc/cng/view/parts/ad$5;-><init>(Lcom/panasonic/avc/cng/view/parts/ad;[Ljava/lang/String;)V
 
-    invoke-virtual {v0, v3}, Lcom/panasonic/avc/cng/view/parts/ab;->setOnPostionChangedListener(Lcom/panasonic/avc/cng/view/parts/ab$a;)V
+    invoke-virtual {v0, v3}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;->setOnPostionChangedListener(Lcom/panasonic/avc/cng/view/parts/ab$a;)V
 
     .line 846
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
     const/4 v3, 0x1
 
-    invoke-virtual {v0, v3}, Lcom/panasonic/avc/cng/view/parts/ab;->setCoverType(I)V
+    invoke-virtual {v0, v3}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;->setCoverType(I)V
 
     .line 847
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
     const/4 v3, 0x2
 
-    invoke-virtual {v0, v3}, Lcom/panasonic/avc/cng/view/parts/ab;->setDivision(I)V
+    invoke-virtual {v0, v3}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;->setDivision(I)V
 
     .line 849
-    new-instance v0, Lcom/panasonic/avc/cng/view/parts/ab;
+    new-instance v0, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
     iget-object v3, p0, Lcom/panasonic/avc/cng/view/parts/ad;->a:Landroid/content/Context;
 
     iget v4, p0, Lcom/panasonic/avc/cng/view/parts/ad;->A:I
 
-    invoke-direct {v0, v3, v4}, Lcom/panasonic/avc/cng/view/parts/ab;-><init>(Landroid/content/Context;I)V
+    invoke-direct {v0, v3, v4}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;-><init>(Landroid/content/Context;I)V
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/ab;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
     .line 850
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
     new-instance v3, Lcom/panasonic/avc/cng/view/parts/ad$6;
 
     invoke-direct {v3, p0}, Lcom/panasonic/avc/cng/view/parts/ad$6;-><init>(Lcom/panasonic/avc/cng/view/parts/ad;)V
 
-    invoke-virtual {v0, v3}, Lcom/panasonic/avc/cng/view/parts/ab;->setOnPostionChangedListener(Lcom/panasonic/avc/cng/view/parts/ab$a;)V
+    invoke-virtual {v0, v3}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;->setOnPostionChangedListener(Lcom/panasonic/avc/cng/view/parts/ab$a;)V
 
     .line 859
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
     const/4 v3, 0x1
 
-    invoke-virtual {v0, v3}, Lcom/panasonic/avc/cng/view/parts/ab;->setCoverType(I)V
+    invoke-virtual {v0, v3}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;->setCoverType(I)V
 
     .line 860
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
     const/4 v3, 0x1
 
-    invoke-virtual {v0, v3}, Lcom/panasonic/avc/cng/view/parts/ab;->setDivision(I)V
+    invoke-virtual {v0, v3}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;->setDivision(I)V
 
     .line 863
     const/4 v0, 0x0
@@ -5031,7 +5031,7 @@
     invoke-virtual {v0}, Landroid/widget/FrameLayout;->removeAllViews()V
 
     .line 940
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
     iget-object v2, p0, Lcom/panasonic/avc/cng/view/parts/ad;->k:Landroid/widget/LinearLayout;
 
@@ -5047,10 +5047,10 @@
 
     move-object v1, p1
 
-    invoke-virtual/range {v0 .. v7}, Lcom/panasonic/avc/cng/view/parts/ab;->a([Ljava/lang/String;Landroid/widget/LinearLayout;Landroid/widget/FrameLayout;IIIZ)Z
+    invoke-virtual/range {v0 .. v7}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;->a([Ljava/lang/String;Landroid/widget/LinearLayout;Landroid/widget/FrameLayout;IIIZ)Z
 
     .line 941
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
     iget-object v2, p0, Lcom/panasonic/avc/cng/view/parts/ad;->l:Landroid/widget/LinearLayout;
 
@@ -5066,7 +5066,7 @@
 
     move-object v1, v8
 
-    invoke-virtual/range {v0 .. v7}, Lcom/panasonic/avc/cng/view/parts/ab;->a([Ljava/lang/String;Landroid/widget/LinearLayout;Landroid/widget/FrameLayout;IIIZ)Z
+    invoke-virtual/range {v0 .. v7}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;->a([Ljava/lang/String;Landroid/widget/LinearLayout;Landroid/widget/FrameLayout;IIIZ)Z
 
     .line 944
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->b:Landroid/widget/RelativeLayout;
@@ -5076,11 +5076,11 @@
     .line 945
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->b:Landroid/widget/RelativeLayout;
 
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
-    iget-object v2, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
-    invoke-virtual {v2}, Lcom/panasonic/avc/cng/view/parts/ab;->getLayoutParams()Landroid/widget/RelativeLayout$LayoutParams;
+    invoke-virtual {v2}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;->getLayoutParams()Landroid/widget/RelativeLayout$LayoutParams;
 
     move-result-object v2
 
@@ -5089,11 +5089,11 @@
     .line 946
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->b:Landroid/widget/RelativeLayout;
 
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
-    iget-object v2, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
-    invoke-virtual {v2}, Lcom/panasonic/avc/cng/view/parts/ab;->getLayoutParams()Landroid/widget/RelativeLayout$LayoutParams;
+    invoke-virtual {v2}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;->getLayoutParams()Landroid/widget/RelativeLayout$LayoutParams;
 
     move-result-object v2
 
@@ -5435,65 +5435,65 @@
 
     .line 987
     :goto_0
-    new-instance v0, Lcom/panasonic/avc/cng/view/parts/ab;
+    new-instance v0, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
     iget-object v2, p0, Lcom/panasonic/avc/cng/view/parts/ad;->a:Landroid/content/Context;
 
     iget v4, p0, Lcom/panasonic/avc/cng/view/parts/ad;->A:I
 
-    invoke-direct {v0, v2, v4}, Lcom/panasonic/avc/cng/view/parts/ab;-><init>(Landroid/content/Context;I)V
+    invoke-direct {v0, v2, v4}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;-><init>(Landroid/content/Context;I)V
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/ab;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
     .line 988
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
     new-instance v2, Lcom/panasonic/avc/cng/view/parts/ad$7;
 
     invoke-direct {v2, p0}, Lcom/panasonic/avc/cng/view/parts/ad$7;-><init>(Lcom/panasonic/avc/cng/view/parts/ad;)V
 
-    invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/view/parts/ab;->setOnPostionChangedListener(Lcom/panasonic/avc/cng/view/parts/ab$a;)V
+    invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;->setOnPostionChangedListener(Lcom/panasonic/avc/cng/view/parts/ab$a;)V
 
     .line 1024
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
     const/4 v2, 0x1
 
-    invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/view/parts/ab;->setCoverType(I)V
+    invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;->setCoverType(I)V
 
     .line 1026
-    new-instance v0, Lcom/panasonic/avc/cng/view/parts/ab;
+    new-instance v0, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
     iget-object v2, p0, Lcom/panasonic/avc/cng/view/parts/ad;->a:Landroid/content/Context;
 
     iget v4, p0, Lcom/panasonic/avc/cng/view/parts/ad;->A:I
 
-    invoke-direct {v0, v2, v4}, Lcom/panasonic/avc/cng/view/parts/ab;-><init>(Landroid/content/Context;I)V
+    invoke-direct {v0, v2, v4}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;-><init>(Landroid/content/Context;I)V
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/ab;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
     .line 1027
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
     new-instance v2, Lcom/panasonic/avc/cng/view/parts/ad$8;
 
     invoke-direct {v2, p0}, Lcom/panasonic/avc/cng/view/parts/ad$8;-><init>(Lcom/panasonic/avc/cng/view/parts/ad;)V
 
-    invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/view/parts/ab;->setOnPostionChangedListener(Lcom/panasonic/avc/cng/view/parts/ab$a;)V
+    invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;->setOnPostionChangedListener(Lcom/panasonic/avc/cng/view/parts/ab$a;)V
 
     .line 1036
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
     const/4 v2, 0x1
 
-    invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/view/parts/ab;->setCoverType(I)V
+    invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;->setCoverType(I)V
 
     .line 1037
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
     const/4 v2, 0x1
 
-    invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/view/parts/ab;->setDivision(I)V
+    invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;->setDivision(I)V
 
     .line 1040
     const/4 v0, 0x0
@@ -5927,7 +5927,7 @@
     invoke-virtual {v0}, Landroid/widget/FrameLayout;->removeAllViews()V
 
     .line 1105
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
     iget-object v2, p0, Lcom/panasonic/avc/cng/view/parts/ad;->k:Landroid/widget/LinearLayout;
 
@@ -5941,10 +5941,10 @@
 
     const/4 v7, 0x1
 
-    invoke-virtual/range {v0 .. v7}, Lcom/panasonic/avc/cng/view/parts/ab;->a([Ljava/lang/String;Landroid/widget/LinearLayout;Landroid/widget/FrameLayout;IIIZ)Z
+    invoke-virtual/range {v0 .. v7}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;->a([Ljava/lang/String;Landroid/widget/LinearLayout;Landroid/widget/FrameLayout;IIIZ)Z
 
     .line 1106
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
     iget-object v2, p0, Lcom/panasonic/avc/cng/view/parts/ad;->l:Landroid/widget/LinearLayout;
 
@@ -5960,7 +5960,7 @@
 
     move-object v1, v8
 
-    invoke-virtual/range {v0 .. v7}, Lcom/panasonic/avc/cng/view/parts/ab;->a([Ljava/lang/String;Landroid/widget/LinearLayout;Landroid/widget/FrameLayout;IIIZ)Z
+    invoke-virtual/range {v0 .. v7}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;->a([Ljava/lang/String;Landroid/widget/LinearLayout;Landroid/widget/FrameLayout;IIIZ)Z
 
     .line 1109
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->b:Landroid/widget/RelativeLayout;
@@ -5970,11 +5970,11 @@
     .line 1110
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->b:Landroid/widget/RelativeLayout;
 
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
-    iget-object v2, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
-    invoke-virtual {v2}, Lcom/panasonic/avc/cng/view/parts/ab;->getLayoutParams()Landroid/widget/RelativeLayout$LayoutParams;
+    invoke-virtual {v2}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;->getLayoutParams()Landroid/widget/RelativeLayout$LayoutParams;
 
     move-result-object v2
 
@@ -5983,11 +5983,11 @@
     .line 1111
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->b:Landroid/widget/RelativeLayout;
 
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
-    iget-object v2, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
-    invoke-virtual {v2}, Lcom/panasonic/avc/cng/view/parts/ab;->getLayoutParams()Landroid/widget/RelativeLayout$LayoutParams;
+    invoke-virtual {v2}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;->getLayoutParams()Landroid/widget/RelativeLayout$LayoutParams;
 
     move-result-object v2
 
@@ -6388,79 +6388,79 @@
 
     .line 435
     :goto_3
-    new-instance v1, Lcom/panasonic/avc/cng/view/parts/ab;
+    new-instance v1, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
     iget-object v2, p0, Lcom/panasonic/avc/cng/view/parts/ad;->a:Landroid/content/Context;
 
     iget v5, p0, Lcom/panasonic/avc/cng/view/parts/ad;->A:I
 
-    invoke-direct {v1, v2, v5}, Lcom/panasonic/avc/cng/view/parts/ab;-><init>(Landroid/content/Context;I)V
+    invoke-direct {v1, v2, v5}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;-><init>(Landroid/content/Context;I)V
 
-    iput-object v1, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/ab;
+    iput-object v1, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
     .line 436
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
     new-instance v2, Lcom/panasonic/avc/cng/view/parts/ad$1;
 
     invoke-direct {v2, p0}, Lcom/panasonic/avc/cng/view/parts/ad$1;-><init>(Lcom/panasonic/avc/cng/view/parts/ad;)V
 
-    invoke-virtual {v1, v2}, Lcom/panasonic/avc/cng/view/parts/ab;->setOnPostionChangedListener(Lcom/panasonic/avc/cng/view/parts/ab$a;)V
+    invoke-virtual {v1, v2}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;->setOnPostionChangedListener(Lcom/panasonic/avc/cng/view/parts/ab$a;)V
 
     .line 446
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
     const/4 v2, 0x1
 
-    invoke-virtual {v1, v2}, Lcom/panasonic/avc/cng/view/parts/ab;->setCoverType(I)V
+    invoke-virtual {v1, v2}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;->setCoverType(I)V
 
     .line 447
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
     const/4 v2, 0x2
 
-    invoke-virtual {v1, v2}, Lcom/panasonic/avc/cng/view/parts/ab;->setDivision(I)V
+    invoke-virtual {v1, v2}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;->setDivision(I)V
 
     .line 449
-    new-instance v1, Lcom/panasonic/avc/cng/view/parts/ab;
+    new-instance v1, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
     iget-object v2, p0, Lcom/panasonic/avc/cng/view/parts/ad;->a:Landroid/content/Context;
 
     iget v5, p0, Lcom/panasonic/avc/cng/view/parts/ad;->A:I
 
-    invoke-direct {v1, v2, v5}, Lcom/panasonic/avc/cng/view/parts/ab;-><init>(Landroid/content/Context;I)V
+    invoke-direct {v1, v2, v5}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;-><init>(Landroid/content/Context;I)V
 
-    iput-object v1, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/ab;
+    iput-object v1, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
     .line 450
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
     new-instance v2, Lcom/panasonic/avc/cng/view/parts/ad$2;
 
     invoke-direct {v2, p0}, Lcom/panasonic/avc/cng/view/parts/ad$2;-><init>(Lcom/panasonic/avc/cng/view/parts/ad;)V
 
-    invoke-virtual {v1, v2}, Lcom/panasonic/avc/cng/view/parts/ab;->setOnPostionChangedListener(Lcom/panasonic/avc/cng/view/parts/ab$a;)V
+    invoke-virtual {v1, v2}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;->setOnPostionChangedListener(Lcom/panasonic/avc/cng/view/parts/ab$a;)V
 
     .line 460
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
     const/4 v2, 0x1
 
-    invoke-virtual {v1, v2}, Lcom/panasonic/avc/cng/view/parts/ab;->setCoverType(I)V
+    invoke-virtual {v1, v2}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;->setCoverType(I)V
 
     .line 461
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
     const/4 v2, 0x1
 
-    invoke-virtual {v1, v2}, Lcom/panasonic/avc/cng/view/parts/ab;->setDivision(I)V
+    invoke-virtual {v1, v2}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;->setDivision(I)V
 
     .line 463
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v5
 
@@ -7250,9 +7250,9 @@
     iput-boolean v1, p0, Lcom/panasonic/avc/cng/view/parts/ad;->C:Z
 
     .line 584
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
-    invoke-virtual {v1, v3}, Lcom/panasonic/avc/cng/view/parts/ab;->a([Ljava/lang/String;)[Ljava/lang/String;
+    invoke-virtual {v1, v3}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;->a([Ljava/lang/String;)[Ljava/lang/String;
 
     move-result-object v1
 
@@ -7280,7 +7280,7 @@
     invoke-virtual {v0}, Landroid/widget/FrameLayout;->removeAllViews()V
 
     .line 603
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
     iget-object v2, p0, Lcom/panasonic/avc/cng/view/parts/ad;->k:Landroid/widget/LinearLayout;
 
@@ -7294,10 +7294,10 @@
 
     iget-boolean v7, p0, Lcom/panasonic/avc/cng/view/parts/ad;->B:Z
 
-    invoke-virtual/range {v0 .. v7}, Lcom/panasonic/avc/cng/view/parts/ab;->a([Ljava/lang/String;Landroid/widget/LinearLayout;Landroid/widget/FrameLayout;IIIZ)Z
+    invoke-virtual/range {v0 .. v7}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;->a([Ljava/lang/String;Landroid/widget/LinearLayout;Landroid/widget/FrameLayout;IIIZ)Z
 
     .line 604
-    iget-object v2, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
     iget-object v4, p0, Lcom/panasonic/avc/cng/view/parts/ad;->l:Landroid/widget/LinearLayout;
 
@@ -7313,7 +7313,7 @@
 
     move-object v3, v10
 
-    invoke-virtual/range {v2 .. v9}, Lcom/panasonic/avc/cng/view/parts/ab;->a([Ljava/lang/String;Landroid/widget/LinearLayout;Landroid/widget/FrameLayout;IIIZ)Z
+    invoke-virtual/range {v2 .. v9}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;->a([Ljava/lang/String;Landroid/widget/LinearLayout;Landroid/widget/FrameLayout;IIIZ)Z
 
     .line 607
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->b:Landroid/widget/RelativeLayout;
@@ -7323,11 +7323,11 @@
     .line 608
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->b:Landroid/widget/RelativeLayout;
 
-    iget-object v2, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
-    iget-object v3, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v3, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
-    invoke-virtual {v3}, Lcom/panasonic/avc/cng/view/parts/ab;->getLayoutParams()Landroid/widget/RelativeLayout$LayoutParams;
+    invoke-virtual {v3}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;->getLayoutParams()Landroid/widget/RelativeLayout$LayoutParams;
 
     move-result-object v3
 
@@ -7336,11 +7336,11 @@
     .line 609
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->b:Landroid/widget/RelativeLayout;
 
-    iget-object v2, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
-    iget-object v3, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v3, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
-    invoke-virtual {v3}, Lcom/panasonic/avc/cng/view/parts/ab;->getLayoutParams()Landroid/widget/RelativeLayout$LayoutParams;
+    invoke-virtual {v3}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;->getLayoutParams()Landroid/widget/RelativeLayout$LayoutParams;
 
     move-result-object v3
 
@@ -7479,9 +7479,9 @@
     if-eqz v0, :cond_1b
 
     .line 631
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/parts/ab;->a([Ljava/lang/String;)[Ljava/lang/String;
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;->a([Ljava/lang/String;)[Ljava/lang/String;
 
     goto/16 :goto_0
 
@@ -7658,16 +7658,16 @@
     iput-boolean v1, p0, Lcom/panasonic/avc/cng/view/parts/ad;->C:Z
 
     .line 589
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
-    invoke-virtual {v1, v0}, Lcom/panasonic/avc/cng/view/parts/ab;->a([Ljava/lang/String;)[Ljava/lang/String;
+    invoke-virtual {v1, v0}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;->a([Ljava/lang/String;)[Ljava/lang/String;
 
     move-result-object v0
 
     .line 590
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
-    invoke-virtual {v1, v3}, Lcom/panasonic/avc/cng/view/parts/ab;->a([Ljava/lang/String;)[Ljava/lang/String;
+    invoke-virtual {v1, v3}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;->a([Ljava/lang/String;)[Ljava/lang/String;
 
     move-result-object v1
 
@@ -7721,14 +7721,14 @@
     if-eqz v0, :cond_0
 
     .line 633
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->j:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
-    invoke-virtual {v0, v10}, Lcom/panasonic/avc/cng/view/parts/ab;->a([Ljava/lang/String;)[Ljava/lang/String;
+    invoke-virtual {v0, v10}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;->a([Ljava/lang/String;)[Ljava/lang/String;
 
     .line 634
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/parts/ab;->a([Ljava/lang/String;)[Ljava/lang/String;
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;->a([Ljava/lang/String;)[Ljava/lang/String;
 
     goto/16 :goto_0
 .end method
@@ -7822,11 +7822,11 @@
 
     .prologue
     .line 1211
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/ab;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ad;->i:Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1, p1}, Lcom/panasonic/avc/cng/view/parts/ab;->c(II)V
+    invoke-virtual {v0, v1, p1}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;->c(II)V
 
     .line 1212
     iput p1, p0, Lcom/panasonic/avc/cng/view/parts/ad;->Q:I

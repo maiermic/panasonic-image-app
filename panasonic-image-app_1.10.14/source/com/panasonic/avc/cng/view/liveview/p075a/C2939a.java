@@ -12,7 +12,7 @@ import android.view.View;
 import com.panasonic.avc.cng.application.C1347a;
 import com.panasonic.avc.cng.application.C1347a.C1349a;
 import com.panasonic.avc.cng.imageapp.C1701a.C1702a;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.view.cameraconnect.GuidanceMenuActivity;
 import com.panasonic.avc.cng.view.common.TouchShareCopyActivity;
 import com.panasonic.avc.cng.view.liveview.LiveViewNoConnectionActivity;
@@ -22,7 +22,7 @@ import com.panasonic.avc.cng.view.p072a.C2308e;
 import com.panasonic.avc.cng.view.p072a.C2308e.C2310a;
 import com.panasonic.avc.cng.view.p072a.C2311f;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
 import com.panasonic.avc.cng.view.play.browser.MainBrowserActivity;
 
 /* renamed from: com.panasonic.avc.cng.view.liveview.a.a */
@@ -58,28 +58,28 @@ public class C2939a extends C2284a implements C2310a {
     }
 
     public void OnClickLiveView(View view) {
-        C2261g.m9760a(3149826, "");
+        ImageAppLog.m9760a(3149826, "");
         if (this._tabMenuUtil != null) {
             this._tabMenuUtil.mo6087d(this, GetViewModel(), this._cameraUtil);
         }
     }
 
     public void OnClickBrowser(View view) {
-        C2261g.m9760a(3149827, "");
+        ImageAppLog.m9760a(3149827, "");
         if (this._tabMenuUtil != null) {
             this._tabMenuUtil.mo6088e(this, GetViewModel(), this._cameraUtil);
         }
     }
 
     public void OnClickSetup(View view) {
-        C2261g.m9760a(3149828, "");
+        ImageAppLog.m9760a(3149828, "");
         if (this._tabMenuUtil != null) {
             this._tabMenuUtil.mo6086a(this);
         }
     }
 
     public void OnClickHome(View view) {
-        C2261g.m9760a(3149825, "");
+        ImageAppLog.m9760a(3149825, "");
         if (this._tabMenuUtil != null) {
             this._tabMenuUtil.OnClickHome(this, GetViewModel(), this._cameraUtil);
         }
@@ -142,7 +142,7 @@ public class C2939a extends C2284a implements C2310a {
                 Intent b = C1347a.m5308b(this, new C1349a() {
                     /* renamed from: a */
                     public void mo3228a() {
-                        C2331d.m10114a((Activity) C2939a.this, C2328a.ON_NEED_LUMIX_LINK, (Bundle) null);
+                        DialogFactory.m10114a((Activity) C2939a.this, C2328a.ON_NEED_LUMIX_LINK, (Bundle) null);
                     }
                 });
                 if (b != null) {
@@ -177,7 +177,7 @@ public class C2939a extends C2284a implements C2310a {
         Intent a = C1347a.m5301a((Context) this, (C1349a) new C1349a() {
             /* renamed from: a */
             public void mo3228a() {
-                C2331d.m10114a((Activity) C2939a.this, C2328a.ON_NEED_LUMIX_LINK_NOCONNECTLIVEVIEW, (Bundle) null);
+                DialogFactory.m10114a((Activity) C2939a.this, C2328a.ON_NEED_LUMIX_LINK_NOCONNECTLIVEVIEW, (Bundle) null);
             }
         });
         if (a != null) {

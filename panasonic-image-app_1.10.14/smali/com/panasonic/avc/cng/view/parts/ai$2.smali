@@ -47,11 +47,11 @@
     .line 266
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ai$2;->a:Lcom/panasonic/avc/cng/view/parts/ai;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/parts/ai;->d(Lcom/panasonic/avc/cng/view/parts/ai;)Lcom/panasonic/avc/cng/view/setting/y;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/parts/ai;->d(Lcom/panasonic/avc/cng/view/parts/ai;)Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceViewModel;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/y;->E()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceViewModel;->E()Ljava/lang/String;
 
     move-result-object v0
 
@@ -66,24 +66,24 @@
     .line 268
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ai$2;->a:Lcom/panasonic/avc/cng/view/parts/ai;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/parts/ai;->d(Lcom/panasonic/avc/cng/view/parts/ai;)Lcom/panasonic/avc/cng/view/setting/y;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/parts/ai;->d(Lcom/panasonic/avc/cng/view/parts/ai;)Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceViewModel;
 
     move-result-object v0
 
     const-string v1, "off"
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/setting/y;->c(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceViewModel;->c(Ljava/lang/String;)V
 
     .line 269
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ai$2;->a:Lcom/panasonic/avc/cng/view/parts/ai;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/parts/ai;->d(Lcom/panasonic/avc/cng/view/parts/ai;)Lcom/panasonic/avc/cng/view/setting/y;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/parts/ai;->d(Lcom/panasonic/avc/cng/view/parts/ai;)Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceViewModel;
 
     move-result-object v0
 
     const-string v1, "off"
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/setting/y;->d(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceViewModel;->d(Ljava/lang/String;)V
 
     .line 270
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ai$2;->a:Lcom/panasonic/avc/cng/view/parts/ai;
@@ -136,24 +136,24 @@
     .line 283
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ai$2;->a:Lcom/panasonic/avc/cng/view/parts/ai;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/parts/ai;->d(Lcom/panasonic/avc/cng/view/parts/ai;)Lcom/panasonic/avc/cng/view/setting/y;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/parts/ai;->d(Lcom/panasonic/avc/cng/view/parts/ai;)Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceViewModel;
 
     move-result-object v0
 
     const-string v1, "on"
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/setting/y;->c(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceViewModel;->c(Ljava/lang/String;)V
 
     .line 284
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ai$2;->a:Lcom/panasonic/avc/cng/view/parts/ai;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/parts/ai;->d(Lcom/panasonic/avc/cng/view/parts/ai;)Lcom/panasonic/avc/cng/view/setting/y;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/parts/ai;->d(Lcom/panasonic/avc/cng/view/parts/ai;)Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceViewModel;
 
     move-result-object v0
 
     const-string v1, "on"
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/setting/y;->d(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceViewModel;->d(Ljava/lang/String;)V
 
     .line 285
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ai$2;->a:Lcom/panasonic/avc/cng/view/parts/ai;

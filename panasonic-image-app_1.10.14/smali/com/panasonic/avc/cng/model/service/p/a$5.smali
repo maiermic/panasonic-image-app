@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/model/service/p/a;->b(Lcom/panasonic/avc/cng/view/cameraconnect/a;Z)I
+    value = Lcom/panasonic/avc/cng/model/service/p/WifiService;->b(Lcom/panasonic/avc/cng/view/cameraconnect/a;Z)I
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -17,16 +17,16 @@
 # instance fields
 .field final synthetic a:Z
 
-.field final synthetic b:Lcom/panasonic/avc/cng/model/service/p/a;
+.field final synthetic b:Lcom/panasonic/avc/cng/model/service/p/WifiService;
 
 
 # direct methods
-.method constructor <init>(Lcom/panasonic/avc/cng/model/service/p/a;Z)V
+.method constructor <init>(Lcom/panasonic/avc/cng/model/service/p/WifiService;Z)V
     .locals 0
 
     .prologue
     .line 415
-    iput-object p1, p0, Lcom/panasonic/avc/cng/model/service/p/a$5;->b:Lcom/panasonic/avc/cng/model/service/p/a;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/model/service/p/a$5;->b:Lcom/panasonic/avc/cng/model/service/p/WifiService;
 
     iput-boolean p2, p0, Lcom/panasonic/avc/cng/model/service/p/a$5;->a:Z
 
@@ -45,9 +45,9 @@
     invoke-virtual {p0}, Lcom/panasonic/avc/cng/model/service/p/a$5;->cancel()Z
 
     .line 419
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/p/a$5;->b:Lcom/panasonic/avc/cng/model/service/p/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/p/a$5;->b:Lcom/panasonic/avc/cng/model/service/p/WifiService;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/p/a;->a(Lcom/panasonic/avc/cng/model/service/p/a;)Lcom/panasonic/avc/cng/view/cameraconnect/l;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/p/WifiService;->a(Lcom/panasonic/avc/cng/model/service/p/WifiService;)Lcom/panasonic/avc/cng/view/cameraconnect/WifiUtil;
 
     move-result-object v0
 
@@ -59,13 +59,13 @@
     if-nez v0, :cond_0
 
     .line 424
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/p/a$5;->b:Lcom/panasonic/avc/cng/model/service/p/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/p/a$5;->b:Lcom/panasonic/avc/cng/model/service/p/WifiService;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/p/a;->a(Lcom/panasonic/avc/cng/model/service/p/a;)Lcom/panasonic/avc/cng/view/cameraconnect/l;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/p/WifiService;->a(Lcom/panasonic/avc/cng/model/service/p/WifiService;)Lcom/panasonic/avc/cng/view/cameraconnect/WifiUtil;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/cameraconnect/l;->d()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/cameraconnect/WifiUtil;->d()V
 
     .line 427
     :cond_0

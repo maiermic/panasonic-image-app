@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/view/play/movieslideshow/c;->o()Z
+    value = Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowViewModel;->o()Z
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -30,16 +30,16 @@
 
 .field final synthetic f:Z
 
-.field final synthetic g:Lcom/panasonic/avc/cng/view/play/movieslideshow/c;
+.field final synthetic g:Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowViewModel;
 
 
 # direct methods
-.method constructor <init>(Lcom/panasonic/avc/cng/view/play/movieslideshow/c;IIIILjava/util/List;Z)V
+.method constructor <init>(Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowViewModel;IIIILjava/util/List;Z)V
     .locals 0
 
     .prologue
     .line 656
-    iput-object p1, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/c$2;->g:Lcom/panasonic/avc/cng/view/play/movieslideshow/c;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/c$2;->g:Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowViewModel;
 
     iput p2, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/c$2;->a:I
 
@@ -172,19 +172,19 @@
 
     move-result-object v5
 
-    invoke-static {v4, v5}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v4, v5}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 683
-    iget-object v4, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/c$2;->g:Lcom/panasonic/avc/cng/view/play/movieslideshow/c;
+    iget-object v4, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/c$2;->g:Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowViewModel;
 
-    iget-object v4, v4, Lcom/panasonic/avc/cng/view/play/movieslideshow/c;->e:Ljava/lang/String;
+    iget-object v4, v4, Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowViewModel;->e:Ljava/lang/String;
 
     if-eqz v4, :cond_5
 
     .line 685
-    iget-object v4, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/c$2;->g:Lcom/panasonic/avc/cng/view/play/movieslideshow/c;
+    iget-object v4, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/c$2;->g:Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowViewModel;
 
-    iget-object v4, v4, Lcom/panasonic/avc/cng/view/play/movieslideshow/c;->e:Ljava/lang/String;
+    iget-object v4, v4, Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowViewModel;->e:Ljava/lang/String;
 
     invoke-static {v4, v2, v3}, Lcom/panasonic/avc/cng/util/c;->a(Ljava/lang/String;II)Landroid/graphics/Bitmap;
 
@@ -198,23 +198,23 @@
 
     const-string v1, "bitmap = null"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 689
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/c$2;->g:Lcom/panasonic/avc/cng/view/play/movieslideshow/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/c$2;->g:Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowViewModel;
 
     new-instance v1, Lcom/panasonic/avc/cng/view/play/movieslideshow/c$2$1;
 
     invoke-direct {v1, p0}, Lcom/panasonic/avc/cng/view/play/movieslideshow/c$2$1;-><init>(Lcom/panasonic/avc/cng/view/play/movieslideshow/c$2;)V
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/play/movieslideshow/c;->c(Lcom/panasonic/avc/cng/view/play/movieslideshow/c;Ljava/lang/Runnable;)Z
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowViewModel;->c(Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowViewModel;Ljava/lang/Runnable;)Z
 
     .line 700
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/c$2;->g:Lcom/panasonic/avc/cng/view/play/movieslideshow/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/c$2;->g:Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowViewModel;
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/play/movieslideshow/c;->c(Z)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowViewModel;->c(Z)V
 
     .line 828
     :goto_0
@@ -287,7 +287,7 @@
 
     move-result-object v9
 
-    invoke-static {v8, v9}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v8, v9}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 713
     new-instance v8, Landroid/graphics/Canvas;
@@ -385,13 +385,13 @@
     if-nez v6, :cond_3
 
     .line 759
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/c$2;->g:Lcom/panasonic/avc/cng/view/play/movieslideshow/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/c$2;->g:Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowViewModel;
 
     new-instance v1, Lcom/panasonic/avc/cng/view/play/movieslideshow/c$2$2;
 
     invoke-direct {v1, p0}, Lcom/panasonic/avc/cng/view/play/movieslideshow/c$2$2;-><init>(Lcom/panasonic/avc/cng/view/play/movieslideshow/c$2;)V
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/play/movieslideshow/c;->d(Lcom/panasonic/avc/cng/view/play/movieslideshow/c;Ljava/lang/Runnable;)Z
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowViewModel;->d(Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowViewModel;Ljava/lang/Runnable;)Z
 
     goto/16 :goto_0
 
@@ -527,7 +527,7 @@
 
     move-result-object v3
 
-    invoke-static {v2, v3}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v2, v3}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
     :try_end_1
     .catch Ljava/lang/OutOfMemoryError; {:try_start_1 .. :try_end_1} :catch_0
     .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_1
@@ -561,13 +561,13 @@
     :cond_3
     const-string v0, "MovieSlideshowViewModel"
 
-    invoke-static {v0, v6}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v6}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 775
     :goto_4
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/c$2;->g:Lcom/panasonic/avc/cng/view/play/movieslideshow/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/c$2;->g:Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/movieslideshow/c;->c(Lcom/panasonic/avc/cng/view/play/movieslideshow/c;)Lcom/panasonic/avc/cng/model/service/i;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowViewModel;->c(Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowViewModel;)Lcom/panasonic/avc/cng/model/service/i;
 
     move-result-object v0
 
@@ -581,9 +581,9 @@
 
     iget-object v5, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/c$2;->e:Ljava/util/List;
 
-    iget-object v7, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/c$2;->g:Lcom/panasonic/avc/cng/view/play/movieslideshow/c;
+    iget-object v7, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/c$2;->g:Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowViewModel;
 
-    iget-object v7, v7, Lcom/panasonic/avc/cng/view/play/movieslideshow/c;->f:Ljava/lang/String;
+    iget-object v7, v7, Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowViewModel;->f:Ljava/lang/String;
 
     iget-boolean v8, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/c$2;->f:Z
 

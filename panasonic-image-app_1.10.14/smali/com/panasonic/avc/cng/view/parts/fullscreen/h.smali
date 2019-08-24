@@ -8,7 +8,7 @@
     value = {
         "Lcom/panasonic/avc/cng/view/parts/fullscreen/c",
         "<",
-        "Lcom/panasonic/avc/cng/view/setting/s;",
+        "Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerWhiteBalanceViewModel;",
         ">;"
     }
 .end annotation
@@ -200,13 +200,13 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/panasonic/avc/cng/view/setting/s;
+    check-cast v0, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerWhiteBalanceViewModel;
 
     const/4 v1, 0x0
 
     aget v1, p1, v1
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/setting/s;->a(I)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerWhiteBalanceViewModel;->a(I)V
 
     .line 54
     return-void

@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/model/service/b/a;->b(Ljava/util/List;Lcom/panasonic/avc/cng/model/service/c$a;)V
+    value = Lcom/panasonic/avc/cng/model/service/b/ContentControlService;->b(Ljava/util/List;Lcom/panasonic/avc/cng/model/service/c$a;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,16 +15,16 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/panasonic/avc/cng/model/service/b/a;
+.field final synthetic a:Lcom/panasonic/avc/cng/model/service/b/ContentControlService;
 
 
 # direct methods
-.method constructor <init>(Lcom/panasonic/avc/cng/model/service/b/a;)V
+.method constructor <init>(Lcom/panasonic/avc/cng/model/service/b/ContentControlService;)V
     .locals 0
 
     .prologue
     .line 237
-    iput-object p1, p0, Lcom/panasonic/avc/cng/model/service/b/a$6;->a:Lcom/panasonic/avc/cng/model/service/b/a;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/model/service/b/a$6;->a:Lcom/panasonic/avc/cng/model/service/b/ContentControlService;
 
     invoke-direct {p0}, Ljava/lang/Thread;-><init>()V
 
@@ -38,9 +38,9 @@
 
     .prologue
     .line 240
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/b/a$6;->a:Lcom/panasonic/avc/cng/model/service/b/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/b/a$6;->a:Lcom/panasonic/avc/cng/model/service/b/ContentControlService;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/b/a;->a(Lcom/panasonic/avc/cng/model/service/b/a;)Lcom/panasonic/avc/cng/core/a/a/f;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/b/ContentControlService;->a(Lcom/panasonic/avc/cng/model/service/b/ContentControlService;)Lcom/panasonic/avc/cng/core/a/a/f;
 
     move-result-object v0
 

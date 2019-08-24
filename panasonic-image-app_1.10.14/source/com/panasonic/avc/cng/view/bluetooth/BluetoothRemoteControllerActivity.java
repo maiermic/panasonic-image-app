@@ -16,11 +16,11 @@ import android.widget.TextView;
 import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.service.C2137j;
 import com.panasonic.avc.cng.model.service.C2137j.C2138a;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.util.C2266l;
 import com.panasonic.avc.cng.view.p072a.C2316j;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
 import com.panasonic.avc.cng.view.p073b.C2337e;
 import com.panasonic.avc.cng.view.parts.BTShutterButton;
 import com.panasonic.avc.cng.view.parts.BTShutterButton.C3913a;
@@ -32,7 +32,7 @@ import java.util.UUID;
 public class BluetoothRemoteControllerActivity extends C5741i {
 
     /* renamed from: a */
-    public static final String f7920a = C2541e.class.getSimpleName();
+    public static final String f7920a = BluetoothRemoteControllerViewModel.class.getSimpleName();
     /* access modifiers changed from: private */
 
     /* renamed from: b */
@@ -42,7 +42,7 @@ public class BluetoothRemoteControllerActivity extends C5741i {
     private C2485a f7922c;
 
     /* renamed from: d */
-    private C2541e f7923d;
+    private BluetoothRemoteControllerViewModel f7923d;
     /* access modifiers changed from: private */
 
     /* renamed from: e */
@@ -115,13 +115,13 @@ public class BluetoothRemoteControllerActivity extends C5741i {
 
         /* renamed from: b */
         public void mo5669b() {
-            C2261g.m9763a("BluetoothRemoteControllerActivity", "onBleConnectStart");
+            ImageAppLog.debug("BluetoothRemoteControllerActivity", "onBleConnectStart");
             BluetoothRemoteControllerActivity.this.f7928i = "Connecting";
         }
 
         /* renamed from: a */
         public void mo5668a(boolean z) {
-            C2261g.m9763a("BluetoothRemoteControllerActivity", "onBleConnected isSupport:" + z);
+            ImageAppLog.debug("BluetoothRemoteControllerActivity", "onBleConnected isSupport:" + z);
             if (BluetoothRemoteControllerActivity.this.f7921b != null) {
                 BluetoothRemoteControllerActivity.this.f7921b.mo5641c();
             }
@@ -140,13 +140,13 @@ public class BluetoothRemoteControllerActivity extends C5741i {
                 });
             }
             if (BluetoothRemoteControllerActivity.this.f7921b != null) {
-                C2261g.m9763a("BluetoothRemoteControllerActivity", "writeData:" + BluetoothRemoteControllerActivity.this.f7921b.mo5627a(1, C2266l.m9808a("4D454930010010008001" + PreferenceManager.getDefaultSharedPreferences(BluetoothRemoteControllerActivity.this._context).getString("Dlna_UUID_Seed", ""))));
+                ImageAppLog.debug("BluetoothRemoteControllerActivity", "writeData:" + BluetoothRemoteControllerActivity.this.f7921b.mo5627a(1, C2266l.m9808a("4D454930010010008001" + PreferenceManager.getDefaultSharedPreferences(BluetoothRemoteControllerActivity.this._context).getString("Dlna_UUID_Seed", ""))));
             }
         }
 
         /* renamed from: a */
         public void mo5662a(int i) {
-            C2261g.m9763a("BluetoothRemoteControllerActivity", "onBleDisconnected status:" + i);
+            ImageAppLog.debug("BluetoothRemoteControllerActivity", "onBleDisconnected status:" + i);
             BluetoothRemoteControllerActivity.this.f7928i = "Disconnected";
             if (i != 133 && i != 62) {
                 if (BluetoothRemoteControllerActivity.this.f7921b != null) {
@@ -169,12 +169,12 @@ public class BluetoothRemoteControllerActivity extends C5741i {
 
         /* renamed from: d */
         public void mo5672d() {
-            C2261g.m9763a("BluetoothRemoteControllerActivity", "onBleConnectError");
+            ImageAppLog.debug("BluetoothRemoteControllerActivity", "onBleConnectError");
             BluetoothRemoteControllerActivity.this.f7928i = "Disconnected";
             if (BluetoothRemoteControllerActivity.this._handler != null) {
                 BluetoothRemoteControllerActivity.this._handler.post(new Runnable() {
                     public void run() {
-                        C2331d.m10100a((Activity) BluetoothRemoteControllerActivity.this);
+                        DialogFactory.m10100a((Activity) BluetoothRemoteControllerActivity.this);
                     }
                 });
             }
@@ -183,13 +183,13 @@ public class BluetoothRemoteControllerActivity extends C5741i {
         /* renamed from: a */
         public void mo5663a(BluetoothDevice bluetoothDevice, final String str, String str2, String str3) {
             if (BluetoothRemoteControllerActivity.this._handler != null && str != null) {
-                C2261g.m9763a("BluetoothRemoteControllerActivity", "onBleScanResult");
-                C2261g.m9763a("BluetoothRemoteControllerActivity", "devName:" + str);
-                C2261g.m9763a("BluetoothRemoteControllerActivity", "publicAddress:" + str2);
-                C2261g.m9763a("BluetoothRemoteControllerActivity", "state:" + str3);
+                ImageAppLog.debug("BluetoothRemoteControllerActivity", "onBleScanResult");
+                ImageAppLog.debug("BluetoothRemoteControllerActivity", "devName:" + str);
+                ImageAppLog.debug("BluetoothRemoteControllerActivity", "publicAddress:" + str2);
+                ImageAppLog.debug("BluetoothRemoteControllerActivity", "state:" + str3);
                 String string = PreferenceManager.getDefaultSharedPreferences(BluetoothRemoteControllerActivity.this._context).getString("CurrentConnectedAddress", "");
                 if (str3.equalsIgnoreCase("normal")) {
-                    C2261g.m9763a("BluetoothRemoteControllerActivity", "targetAddress:" + string);
+                    ImageAppLog.debug("BluetoothRemoteControllerActivity", "targetAddress:" + string);
                     if (BluetoothRemoteControllerActivity.this.f7921b != null && !string.equalsIgnoreCase("") && string.equalsIgnoreCase(str2) && BluetoothRemoteControllerActivity.this.f7928i != "Connecting") {
                         BluetoothRemoteControllerActivity.this.f7927h = str;
                         BluetoothRemoteControllerActivity.this.f7929j = str3;
@@ -231,14 +231,14 @@ public class BluetoothRemoteControllerActivity extends C5741i {
 
         /* renamed from: a */
         public void mo5667a(UUID uuid, int i, Bundle bundle) {
-            C2261g.m9763a("BluetoothRemoteControllerActivity", "onBleReadEnd");
+            ImageAppLog.debug("BluetoothRemoteControllerActivity", "onBleReadEnd");
         }
 
         /* renamed from: a */
         public void mo5666a(UUID uuid, int i) {
             String a;
             String c;
-            C2261g.m9763a("BluetoothRemoteControllerActivity", "onBleWriteEnd uuid:" + uuid);
+            ImageAppLog.debug("BluetoothRemoteControllerActivity", "onBleWriteEnd uuid:" + uuid);
             if (uuid.equals(UUID.fromString("8d08a420-3213-11e6-8aca-0002a5d5c51b"))) {
                 if (BluetoothRemoteControllerActivity.this.f7921b != null) {
                     SharedPreferences sharedPreferences = BluetoothRemoteControllerActivity.this._context.getSharedPreferences("com.panasonic.avc.cng.imageapp.privatekey", 0);
@@ -255,7 +255,7 @@ public class BluetoothRemoteControllerActivity extends C5741i {
                     } else {
                         a = BluetoothRemoteControllerActivity.this.f7921b.mo5627a(2, string2.getBytes());
                     }
-                    C2261g.m9763a("BluetoothRemoteControllerActivity", "writeData:" + a);
+                    ImageAppLog.debug("BluetoothRemoteControllerActivity", "writeData:" + a);
                 }
             } else if (uuid.equals(UUID.fromString("cd7a71a0-3213-11e6-8f56-0002a5d5c51b"))) {
                 if (BluetoothRemoteControllerActivity.this._handler != null) {
@@ -268,21 +268,21 @@ public class BluetoothRemoteControllerActivity extends C5741i {
                     });
                     if (BluetoothRemoteControllerActivity.this.f7937r) {
                         if (BluetoothRemoteControllerActivity.this.f7921b != null) {
-                            C2261g.m9763a("BluetoothRemoteControllerActivity", "BTRemoteControllerStart writeData:" + BluetoothRemoteControllerActivity.this.f7921b.mo5627a(39, C4244s.f14210t));
+                            ImageAppLog.debug("BluetoothRemoteControllerActivity", "BTRemoteControllerStart writeData:" + BluetoothRemoteControllerActivity.this.f7921b.mo5627a(39, C4244s.f14210t));
                             BluetoothRemoteControllerActivity.this.f7932m = 2;
                         }
                         BluetoothRemoteControllerActivity.this.f7937r = false;
                     } else if (BluetoothRemoteControllerActivity.this.f7921b != null) {
                         BluetoothRemoteControllerActivity.this.f7932m = 1;
-                        C2261g.m9763a("BluetoothRemoteControllerActivity", "writeData:" + BluetoothRemoteControllerActivity.this.f7921b.mo5627a(39, C4244s.f14209s));
+                        ImageAppLog.debug("BluetoothRemoteControllerActivity", "writeData:" + BluetoothRemoteControllerActivity.this.f7921b.mo5627a(39, C4244s.f14209s));
                     }
                 }
             } else if (uuid.equals(UUID.fromString("7be5fd56-475b-11e7-a919-92ebcb67fe33")) && BluetoothRemoteControllerActivity.this.f7936q) {
                 if (BluetoothRemoteControllerActivity.this.f7921b != null) {
                     if (BluetoothRemoteControllerActivity.this.f7932m == 4) {
-                        C2261g.m9763a("BluetoothRemoteControllerActivity", "BTRemoteControllerShutterOff writeData:" + BluetoothRemoteControllerActivity.this.f7921b.mo5627a(39, C4244s.f14213w));
+                        ImageAppLog.debug("BluetoothRemoteControllerActivity", "BTRemoteControllerShutterOff writeData:" + BluetoothRemoteControllerActivity.this.f7921b.mo5627a(39, C4244s.f14213w));
                     } else if (BluetoothRemoteControllerActivity.this.f7932m == 3) {
-                        C2261g.m9763a("BluetoothRemoteControllerActivity", "BTRemoteControllerRecOff writeData:" + BluetoothRemoteControllerActivity.this.f7921b.mo5627a(39, C4244s.f14215y));
+                        ImageAppLog.debug("BluetoothRemoteControllerActivity", "BTRemoteControllerRecOff writeData:" + BluetoothRemoteControllerActivity.this.f7921b.mo5627a(39, C4244s.f14215y));
                     }
                 }
                 BluetoothRemoteControllerActivity.this.f7936q = false;
@@ -293,18 +293,18 @@ public class BluetoothRemoteControllerActivity extends C5741i {
 
         /* renamed from: a */
         public void mo5664a(Bundle bundle, String str) {
-            C2261g.m9763a("BluetoothRemoteControllerActivity", "onBleNotification uuid:" + str);
+            ImageAppLog.debug("BluetoothRemoteControllerActivity", "onBleNotification uuid:" + str);
             byte[] byteArray = bundle.getByteArray("VALUE");
             if (str.equals("7be5fe6e-475b-11e7-a919-92ebcb67fe33")) {
                 if (byteArray != null && byteArray.length > 0) {
                     if (byteArray[0] == 0) {
                         if (BluetoothRemoteControllerActivity.this.f7932m == 1) {
-                            C2261g.m9763a("BluetoothRemoteControllerActivity", "BTRemoteControllerStart writeData:" + BluetoothRemoteControllerActivity.this.f7921b.mo5627a(39, C4244s.f14210t));
+                            ImageAppLog.debug("BluetoothRemoteControllerActivity", "BTRemoteControllerStart writeData:" + BluetoothRemoteControllerActivity.this.f7921b.mo5627a(39, C4244s.f14210t));
                             BluetoothRemoteControllerActivity.this.f7932m = 2;
                         } else if (BluetoothRemoteControllerActivity.this._handler != null) {
                             BluetoothRemoteControllerActivity.this._handler.post(new Runnable() {
                                 public void run() {
-                                    C2331d.m10100a((Activity) BluetoothRemoteControllerActivity.this);
+                                    DialogFactory.m10100a((Activity) BluetoothRemoteControllerActivity.this);
                                 }
                             });
                             BluetoothRemoteControllerActivity.this.f7932m = 0;
@@ -313,25 +313,25 @@ public class BluetoothRemoteControllerActivity extends C5741i {
                         BluetoothRemoteControllerActivity.this.f7932m = 0;
                         BluetoothRemoteControllerActivity.this._handler.post(new Runnable() {
                             public void run() {
-                                C2331d.m10100a((Activity) BluetoothRemoteControllerActivity.this);
-                                C2331d.m10114a((Activity) BluetoothRemoteControllerActivity.this, C2328a.ON_BT_CANNOT_REMOTE_WAKEUP, (Bundle) null);
+                                DialogFactory.m10100a((Activity) BluetoothRemoteControllerActivity.this);
+                                DialogFactory.m10114a((Activity) BluetoothRemoteControllerActivity.this, C2328a.ON_BT_CANNOT_REMOTE_WAKEUP, (Bundle) null);
                             }
                         });
                     } else if (byteArray[0] == 2) {
                         BluetoothRemoteControllerActivity.this.f7932m = 0;
                         BluetoothRemoteControllerActivity.this._handler.post(new Runnable() {
                             public void run() {
-                                C2331d.m10100a((Activity) BluetoothRemoteControllerActivity.this);
-                                C2331d.m10114a((Activity) BluetoothRemoteControllerActivity.this, C2328a.ON_BT_REMOTE_CONTROL_CANNOT_USE_FOR_SW_OFF, (Bundle) null);
+                                DialogFactory.m10100a((Activity) BluetoothRemoteControllerActivity.this);
+                                DialogFactory.m10114a((Activity) BluetoothRemoteControllerActivity.this, C2328a.ON_BT_REMOTE_CONTROL_CANNOT_USE_FOR_SW_OFF, (Bundle) null);
                             }
                         });
                     } else if (byteArray[0] == 3) {
                         BluetoothRemoteControllerActivity.this.f7932m = 0;
-                        if (!C2331d.m10125b((Activity) BluetoothRemoteControllerActivity.this._context, C2328a.ON_BT_REMOTE_CONTROL_CANNOT_USE_FOR_AUTOSEND)) {
+                        if (!DialogFactory.m10125b((Activity) BluetoothRemoteControllerActivity.this._context, C2328a.ON_BT_REMOTE_CONTROL_CANNOT_USE_FOR_AUTOSEND)) {
                             BluetoothRemoteControllerActivity.this._handler.post(new Runnable() {
                                 public void run() {
-                                    C2331d.m10100a((Activity) BluetoothRemoteControllerActivity.this);
-                                    C2331d.m10114a((Activity) BluetoothRemoteControllerActivity.this, C2328a.ON_BT_REMOTE_CONTROL_CANNOT_USE_FOR_AUTOSEND, (Bundle) null);
+                                    DialogFactory.m10100a((Activity) BluetoothRemoteControllerActivity.this);
+                                    DialogFactory.m10114a((Activity) BluetoothRemoteControllerActivity.this, C2328a.ON_BT_REMOTE_CONTROL_CANNOT_USE_FOR_AUTOSEND, (Bundle) null);
                                 }
                             });
                         }
@@ -339,19 +339,19 @@ public class BluetoothRemoteControllerActivity extends C5741i {
                         BluetoothRemoteControllerActivity.this.f7932m = 0;
                         BluetoothRemoteControllerActivity.this._handler.post(new Runnable() {
                             public void run() {
-                                C2331d.m10100a((Activity) BluetoothRemoteControllerActivity.this);
-                                C2331d.m10114a((Activity) BluetoothRemoteControllerActivity.this, C2328a.ON_BT_REMOTE_CONTROL_WIFI_CONFIRM, (Bundle) null);
+                                DialogFactory.m10100a((Activity) BluetoothRemoteControllerActivity.this);
+                                DialogFactory.m10114a((Activity) BluetoothRemoteControllerActivity.this, C2328a.ON_BT_REMOTE_CONTROL_WIFI_CONFIRM, (Bundle) null);
                             }
                         });
                     }
                 }
             } else if (str.equals("e182ec43-3213-11e6-ab07-0002a5d5c51b") && byteArray != null && byteArray.length > 0 && byteArray[0] == 1) {
                 BluetoothRemoteControllerActivity.this.f7932m = 0;
-                if (!C2331d.m10125b((Activity) BluetoothRemoteControllerActivity.this._context, C2328a.ON_BT_REMOTE_CONTROL_CANNOT_USE_FOR_AUTOSEND)) {
+                if (!DialogFactory.m10125b((Activity) BluetoothRemoteControllerActivity.this._context, C2328a.ON_BT_REMOTE_CONTROL_CANNOT_USE_FOR_AUTOSEND)) {
                     BluetoothRemoteControllerActivity.this._handler.post(new Runnable() {
                         public void run() {
-                            C2331d.m10100a((Activity) BluetoothRemoteControllerActivity.this);
-                            C2331d.m10114a((Activity) BluetoothRemoteControllerActivity.this, C2328a.ON_BT_REMOTE_CONTROL_CANNOT_USE_FOR_AUTOSEND, (Bundle) null);
+                            DialogFactory.m10100a((Activity) BluetoothRemoteControllerActivity.this);
+                            DialogFactory.m10114a((Activity) BluetoothRemoteControllerActivity.this, C2328a.ON_BT_REMOTE_CONTROL_CANNOT_USE_FOR_AUTOSEND, (Bundle) null);
                         }
                     });
                 }
@@ -360,12 +360,12 @@ public class BluetoothRemoteControllerActivity extends C5741i {
 
         /* renamed from: a */
         public void mo5661a() {
-            C2261g.m9763a("BluetoothRemoteControllerActivity", "onBleScanStart");
+            ImageAppLog.debug("BluetoothRemoteControllerActivity", "onBleScanStart");
         }
 
         /* renamed from: c */
         public void mo5671c() {
-            C2261g.m9763a("BluetoothRemoteControllerActivity", "onBleConnectTimeOut");
+            ImageAppLog.debug("BluetoothRemoteControllerActivity", "onBleConnectTimeOut");
             if (BluetoothRemoteControllerActivity.this.f7921b != null) {
                 BluetoothRemoteControllerActivity.this.f7921b.mo5641c();
                 BluetoothRemoteControllerActivity.this.f7921b.mo5636a(3000);
@@ -374,27 +374,27 @@ public class BluetoothRemoteControllerActivity extends C5741i {
 
         /* renamed from: a */
         public void mo5665a(String str) {
-            C2261g.m9763a("BluetoothRemoteControllerActivity", "onBleCopyStatus");
+            ImageAppLog.debug("BluetoothRemoteControllerActivity", "onBleCopyStatus");
         }
 
         /* renamed from: b */
         public void mo5670b(boolean z) {
-            C2261g.m9763a("BluetoothRemoteControllerActivity", "onBleNotificationEnable");
+            ImageAppLog.debug("BluetoothRemoteControllerActivity", "onBleNotificationEnable");
         }
 
         /* renamed from: e */
         public void mo5673e() {
-            C2261g.m9763a("BluetoothRemoteControllerActivity", "onBleServicePrepared");
+            ImageAppLog.debug("BluetoothRemoteControllerActivity", "onBleServicePrepared");
         }
 
         /* renamed from: f */
         public void mo5674f() {
-            C2261g.m9763a("BluetoothRemoteControllerActivity", "onBleScanResultError");
+            ImageAppLog.debug("BluetoothRemoteControllerActivity", "onBleScanResultError");
         }
 
         /* renamed from: g */
         public void mo5675g() {
-            C2261g.m9763a("BluetoothRemoteControllerActivity", "onAutoSendAcctrlDone");
+            ImageAppLog.debug("BluetoothRemoteControllerActivity", "onAutoSendAcctrlDone");
         }
     }
 
@@ -406,11 +406,11 @@ public class BluetoothRemoteControllerActivity extends C5741i {
         requestWindowFeature(1);
         setContentView(R.layout.activity_bluetooth_remote_controller);
         this.f7922c = new C2485a();
-        this.f7923d = (C2541e) C2316j.m10030a(C2541e.f8027e);
+        this.f7923d = (BluetoothRemoteControllerViewModel) C2316j.m10030a(BluetoothRemoteControllerViewModel.f8027e);
         if (this.f7923d == null) {
-            this.f7923d = new C2541e(this._context, this._handler, this.f7922c);
+            this.f7923d = new BluetoothRemoteControllerViewModel(this._context, this._handler, this.f7922c);
             this.f7923d.mo6328a(this._context, this._handler, this.f7922c);
-            C2316j.m10032a(C2541e.f8027e, this.f7923d);
+            C2316j.m10032a(BluetoothRemoteControllerViewModel.f8027e, this.f7923d);
         } else {
             this.f7923d.mo6328a(this._context, this._handler, this.f7922c);
         }
@@ -431,7 +431,7 @@ public class BluetoothRemoteControllerActivity extends C5741i {
         if (this.f7924e != null) {
             this.f7924e.setText(this.f7927h);
         }
-        C2261g.m9760a(3207169, this.f7927h);
+        ImageAppLog.m9760a(3207169, this.f7927h);
         if (this.f7935p != null) {
             ImageView imageView = this.f7935p;
             if (this.f7928i.equalsIgnoreCase("Connected") || this.f7929j.equalsIgnoreCase("sleep_pow_off") || this.f7929j.equalsIgnoreCase("sleep_pow_on") || this.f7929j.equalsIgnoreCase("sleep_pow_on_fast") || this.f7929j.equalsIgnoreCase("sleep_pow_off_fast")) {
@@ -466,15 +466,15 @@ public class BluetoothRemoteControllerActivity extends C5741i {
                             if (!BluetoothRemoteControllerActivity.this.f7929j.equalsIgnoreCase("sleep_pow_on") && !BluetoothRemoteControllerActivity.this.f7929j.equalsIgnoreCase("sleep_pow_on_fast")) {
                                 if (!BluetoothRemoteControllerActivity.this.f7929j.equalsIgnoreCase("sleep_pow_off") && !BluetoothRemoteControllerActivity.this.f7929j.equalsIgnoreCase("sleep_pow_off_fast")) {
                                     if (BluetoothRemoteControllerActivity.this.f7921b != null) {
-                                        C2261g.m9760a(3207172, "");
-                                        C2261g.m9763a("BluetoothRemoteControllerActivity", "BTRemoteControllerRecOn　writeData:" + BluetoothRemoteControllerActivity.this.f7921b.mo5627a(39, C4244s.f14214x));
+                                        ImageAppLog.m9760a(3207172, "");
+                                        ImageAppLog.debug("BluetoothRemoteControllerActivity", "BTRemoteControllerRecOn　writeData:" + BluetoothRemoteControllerActivity.this.f7921b.mo5627a(39, C4244s.f14214x));
                                         break;
                                     }
                                 } else {
                                     BluetoothRemoteControllerActivity.this._handler.post(new Runnable() {
                                         public void run() {
-                                            C2331d.m10100a((Activity) BluetoothRemoteControllerActivity.this);
-                                            C2331d.m10114a((Activity) BluetoothRemoteControllerActivity.this, C2328a.ON_BT_REMOTE_CONTROL_CANNOT_USE_FOR_SW_OFF, (Bundle) null);
+                                            DialogFactory.m10100a((Activity) BluetoothRemoteControllerActivity.this);
+                                            DialogFactory.m10114a((Activity) BluetoothRemoteControllerActivity.this, C2328a.ON_BT_REMOTE_CONTROL_CANNOT_USE_FOR_SW_OFF, (Bundle) null);
                                         }
                                     });
                                     break;
@@ -505,7 +505,7 @@ public class BluetoothRemoteControllerActivity extends C5741i {
                             if (!BluetoothRemoteControllerActivity.this.f7929j.equalsIgnoreCase("sleep_pow_on") && !BluetoothRemoteControllerActivity.this.f7929j.equalsIgnoreCase("sleep_pow_off") && !BluetoothRemoteControllerActivity.this.f7929j.equalsIgnoreCase("sleep_pow_on_fast") && !BluetoothRemoteControllerActivity.this.f7929j.equalsIgnoreCase("sleep_pow_off_fast") && BluetoothRemoteControllerActivity.this.f7921b != null) {
                                 BluetoothRemoteControllerActivity.this.f7932m = 3;
                                 String a = BluetoothRemoteControllerActivity.this.f7921b.mo5627a(39, C4244s.f14215y);
-                                C2261g.m9763a("BluetoothRemoteControllerActivity", "BTRemoteControllerRecOff　writeData:" + a);
+                                ImageAppLog.debug("BluetoothRemoteControllerActivity", "BTRemoteControllerRecOff　writeData:" + a);
                                 if (a.equalsIgnoreCase("Write_Error")) {
                                     BluetoothRemoteControllerActivity.this.f7936q = true;
                                     break;
@@ -525,9 +525,9 @@ public class BluetoothRemoteControllerActivity extends C5741i {
                     if (BluetoothRemoteControllerActivity.this.f7933n.isEnabled()) {
                         BluetoothRemoteControllerActivity.this.f7933n.setActive(true);
                         if (BluetoothRemoteControllerActivity.this.f7933n.getLockState() == C3913a.Lock) {
-                            C2261g.m9769c("BluetoothRemoteControllerActivity", "onTouchDown Lock");
+                            ImageAppLog.error("BluetoothRemoteControllerActivity", "onTouchDown Lock");
                         } else if (BluetoothRemoteControllerActivity.this.f7933n.getLockState() == C3913a.Unlock) {
-                            C2261g.m9769c("BluetoothRemoteControllerActivity", "onTouchDown Unlock");
+                            ImageAppLog.error("BluetoothRemoteControllerActivity", "onTouchDown Unlock");
                             if (BluetoothRemoteControllerActivity.this.f7929j.equalsIgnoreCase("sleep_pow_on") || BluetoothRemoteControllerActivity.this.f7929j.equalsIgnoreCase("sleep_pow_on_fast")) {
                                 if (BluetoothRemoteControllerActivity.this.f7929j.equalsIgnoreCase("sleep_pow_on_fast")) {
                                     BluetoothRemoteControllerActivity.this.f7937r = true;
@@ -549,17 +549,17 @@ public class BluetoothRemoteControllerActivity extends C5741i {
                             } else if (BluetoothRemoteControllerActivity.this.f7929j.equalsIgnoreCase("sleep_pow_off") || BluetoothRemoteControllerActivity.this.f7929j.equalsIgnoreCase("sleep_pow_off_fast")) {
                                 BluetoothRemoteControllerActivity.this._handler.post(new Runnable() {
                                     public void run() {
-                                        C2331d.m10100a((Activity) BluetoothRemoteControllerActivity.this);
-                                        C2331d.m10114a((Activity) BluetoothRemoteControllerActivity.this, C2328a.ON_BT_REMOTE_CONTROL_CANNOT_USE_FOR_SW_OFF, (Bundle) null);
+                                        DialogFactory.m10100a((Activity) BluetoothRemoteControllerActivity.this);
+                                        DialogFactory.m10114a((Activity) BluetoothRemoteControllerActivity.this, C2328a.ON_BT_REMOTE_CONTROL_CANNOT_USE_FOR_SW_OFF, (Bundle) null);
                                     }
                                 });
                             } else if (BluetoothRemoteControllerActivity.this.f7921b != null) {
-                                C2261g.m9760a(3207170, "");
+                                ImageAppLog.m9760a(3207170, "");
                                 BluetoothRemoteControllerActivity.this.f7938s = true;
-                                C2261g.m9763a("BluetoothRemoteControllerActivity", "BTRemoteControllerShutterOn　writeData:" + BluetoothRemoteControllerActivity.this.f7921b.mo5627a(39, C4244s.f14212v));
+                                ImageAppLog.debug("BluetoothRemoteControllerActivity", "BTRemoteControllerShutterOn　writeData:" + BluetoothRemoteControllerActivity.this.f7921b.mo5627a(39, C4244s.f14212v));
                             }
                         } else {
-                            C2261g.m9769c("BluetoothRemoteControllerActivity", "onTouchDown Normal");
+                            ImageAppLog.error("BluetoothRemoteControllerActivity", "onTouchDown Normal");
                         }
                     }
                 }
@@ -568,15 +568,15 @@ public class BluetoothRemoteControllerActivity extends C5741i {
                 public void mo6268b(BTShutterButton bTShutterButton) {
                     if (BluetoothRemoteControllerActivity.this.f7933n.isEnabled()) {
                         if (BluetoothRemoteControllerActivity.this.f7933n.getLockState() == C3913a.Lock) {
-                            C2261g.m9769c("BluetoothRemoteControllerActivity", "onTouchUp Lock");
+                            ImageAppLog.error("BluetoothRemoteControllerActivity", "onTouchUp Lock");
                         } else if (BluetoothRemoteControllerActivity.this.f7933n.getLockState() == C3913a.Unlock) {
                             BluetoothRemoteControllerActivity.this.f7933n.setActive(false);
                             if (!BluetoothRemoteControllerActivity.this.f7929j.equalsIgnoreCase("sleep_pow_on") && !BluetoothRemoteControllerActivity.this.f7929j.equalsIgnoreCase("sleep_pow_off")) {
-                                C2261g.m9769c("BluetoothRemoteControllerActivity", "onTouchUp Unlock");
+                                ImageAppLog.error("BluetoothRemoteControllerActivity", "onTouchUp Unlock");
                                 if (BluetoothRemoteControllerActivity.this.f7921b != null) {
                                     BluetoothRemoteControllerActivity.this.f7932m = 4;
                                     String a = BluetoothRemoteControllerActivity.this.f7921b.mo5627a(39, C4244s.f14213w);
-                                    C2261g.m9763a("BluetoothRemoteControllerActivity", "BTRemoteControllerShutterOff　writeData:" + a);
+                                    ImageAppLog.debug("BluetoothRemoteControllerActivity", "BTRemoteControllerShutterOff　writeData:" + a);
                                     if (a.equalsIgnoreCase("Write_Error")) {
                                         BluetoothRemoteControllerActivity.this.f7936q = true;
                                     }
@@ -584,7 +584,7 @@ public class BluetoothRemoteControllerActivity extends C5741i {
                                 }
                             }
                         } else {
-                            C2261g.m9769c("BluetoothRemoteControllerActivity", "onTouchUp Normal");
+                            ImageAppLog.error("BluetoothRemoteControllerActivity", "onTouchUp Normal");
                         }
                     }
                 }
@@ -624,7 +624,7 @@ public class BluetoothRemoteControllerActivity extends C5741i {
 
     /* access modifiers changed from: protected */
     public void onResume() {
-        C2261g.m9763a("BluetoothRemoteControllerActivity", "onResume()");
+        ImageAppLog.debug("BluetoothRemoteControllerActivity", "onResume()");
         super.onResume();
         if (PreferenceManager.getDefaultSharedPreferences(this._context).getBoolean("Bluetooth", false) && C2266l.m9823c()) {
             this.f7921b = this.f7923d.mo6329c(true);
@@ -634,7 +634,7 @@ public class BluetoothRemoteControllerActivity extends C5741i {
 
     /* access modifiers changed from: protected */
     public void onPause() {
-        C2261g.m9763a("BluetoothRemoteControllerActivity", "onPause()");
+        ImageAppLog.debug("BluetoothRemoteControllerActivity", "onPause()");
         if (this.f7933n != null) {
             m10583a(this.f7933n.getLockState() == C3913a.Lock);
         }
@@ -644,7 +644,7 @@ public class BluetoothRemoteControllerActivity extends C5741i {
     /* access modifiers changed from: protected */
     public void onSaveInstanceState(Bundle bundle) {
         super.onSaveInstanceState(bundle);
-        C2261g.m9763a("BluetoothRemoteControllerActivity", "onSaveInstanceState()");
+        ImageAppLog.debug("BluetoothRemoteControllerActivity", "onSaveInstanceState()");
         if (bundle != null) {
             if (this.f7933n != null) {
                 bundle.putString("CurrentLockState", this.f7933n.getLockState().toString());
@@ -661,7 +661,7 @@ public class BluetoothRemoteControllerActivity extends C5741i {
 
     /* access modifiers changed from: protected */
     public void onActivityResult(int i, int i2, Intent intent) {
-        C2261g.m9763a("BluetoothRemoteControllerActivity", "onActivityResult()");
+        ImageAppLog.debug("BluetoothRemoteControllerActivity", "onActivityResult()");
         super.onActivityResult(i, i2, intent);
     }
 
@@ -678,7 +678,7 @@ public class BluetoothRemoteControllerActivity extends C5741i {
         }
         if (this.f7921b != null) {
             String a = this.f7921b.mo5627a(39, C4244s.f14211u);
-            C2261g.m9763a("BluetoothRemoteControllerActivity", "BTRemoteControllerFinish　writeData:" + a);
+            ImageAppLog.debug("BluetoothRemoteControllerActivity", "BTRemoteControllerFinish　writeData:" + a);
             if (a.equalsIgnoreCase("Write_Error")) {
                 this._resultBundle.putBoolean("BTShutterStop", true);
             }
@@ -686,7 +686,7 @@ public class BluetoothRemoteControllerActivity extends C5741i {
         Intent intent = new Intent();
         intent.putExtras(this._resultBundle);
         setResult(-1, intent);
-        C2316j.m10034b(C2541e.f8027e);
+        C2316j.m10034b(BluetoothRemoteControllerViewModel.f8027e);
         super.finish();
     }
 
@@ -694,7 +694,7 @@ public class BluetoothRemoteControllerActivity extends C5741i {
         switch (aVar) {
             case ON_BT_REMOTE_CONTROL_WIFI_CONFIRM:
                 if (this.f7921b != null) {
-                    C2261g.m9763a("BluetoothRemoteControllerActivity", "BTRemoteControllerStart writeData:" + this.f7921b.mo5627a(39, C4244s.f14210t));
+                    ImageAppLog.debug("BluetoothRemoteControllerActivity", "BTRemoteControllerStart writeData:" + this.f7921b.mo5627a(39, C4244s.f14210t));
                     return;
                 }
                 return;
@@ -726,7 +726,7 @@ public class BluetoothRemoteControllerActivity extends C5741i {
     /* renamed from: a */
     private void m10583a(boolean z) {
         if (!z && this.f7938s && this.f7921b != null) {
-            C2261g.m9763a("BluetoothRemoteControllerActivity", "BTRemoteControllerShutterOff　writeData:" + this.f7921b.mo5627a(39, C4244s.f14213w));
+            ImageAppLog.debug("BluetoothRemoteControllerActivity", "BTRemoteControllerShutterOff　writeData:" + this.f7921b.mo5627a(39, C4244s.f14213w));
             this.f7938s = false;
             if (this._handler != null) {
                 this._handler.post(new Runnable() {

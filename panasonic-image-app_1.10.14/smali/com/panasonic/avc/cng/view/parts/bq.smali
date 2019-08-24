@@ -14,13 +14,13 @@
 # instance fields
 .field private a:Landroid/content/Context;
 
-.field private b:Lcom/panasonic/avc/cng/view/parts/t;
+.field private b:Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
 .field private c:I
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;ILcom/panasonic/avc/cng/view/parts/t;)V
+.method public constructor <init>(Landroid/content/Context;ILcom/panasonic/avc/cng/view/parts/BrowserViewModel;)V
     .locals 0
 
     .prologue
@@ -34,18 +34,18 @@
     iput p2, p0, Lcom/panasonic/avc/cng/view/parts/bq;->c:I
 
     .line 34
-    iput-object p3, p0, Lcom/panasonic/avc/cng/view/parts/bq;->b:Lcom/panasonic/avc/cng/view/parts/t;
+    iput-object p3, p0, Lcom/panasonic/avc/cng/view/parts/bq;->b:Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
     .line 35
     return-void
 .end method
 
-.method static synthetic a(Lcom/panasonic/avc/cng/view/parts/bq;)Lcom/panasonic/avc/cng/view/parts/t;
+.method static synthetic a(Lcom/panasonic/avc/cng/view/parts/bq;)Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
     .locals 1
 
     .prologue
     .line 16
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/bq;->b:Lcom/panasonic/avc/cng/view/parts/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/bq;->b:Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
     return-object v0
 .end method
@@ -57,9 +57,9 @@
 
     .prologue
     .line 104
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/bq;->b:Lcom/panasonic/avc/cng/view/parts/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/bq;->b:Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/parts/t;->d()Ljava/util/List;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->d()Ljava/util/List;
 
     move-result-object v0
 
@@ -175,9 +175,9 @@
 
     .line 67
     :goto_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/bq;->b:Lcom/panasonic/avc/cng/view/parts/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/bq;->b:Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/parts/t;->d()Ljava/util/List;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->d()Ljava/util/List;
 
     move-result-object v0
 
@@ -217,9 +217,9 @@
     .line 94
     iget-object v2, v1, Lcom/panasonic/avc/cng/view/parts/bq$a;->b:Lcom/panasonic/avc/cng/view/parts/UploadContentsThumbnailView;
 
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/bq;->b:Lcom/panasonic/avc/cng/view/parts/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/bq;->b:Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/parts/t;->d()Ljava/util/List;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->d()Ljava/util/List;
 
     move-result-object v0
 
@@ -234,9 +234,9 @@
     .line 95
     iget-object v2, v1, Lcom/panasonic/avc/cng/view/parts/bq$a;->a:Lcom/panasonic/avc/cng/view/parts/CheckBoxView;
 
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/bq;->b:Lcom/panasonic/avc/cng/view/parts/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/bq;->b:Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/parts/t;->d()Ljava/util/List;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->d()Ljava/util/List;
 
     move-result-object v0
 
@@ -251,9 +251,9 @@
     .line 96
     iget-object v1, v1, Lcom/panasonic/avc/cng/view/parts/bq$a;->c:Landroid/widget/TextView;
 
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/bq;->b:Lcom/panasonic/avc/cng/view/parts/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/bq;->b:Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/parts/t;->d()Ljava/util/List;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->d()Ljava/util/List;
 
     move-result-object v0
 

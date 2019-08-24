@@ -29,7 +29,7 @@ import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.C1833c;
 import com.panasonic.avc.cng.model.C1892f;
-import com.panasonic.avc.cng.model.p051c.C1846e;
+import com.panasonic.avc.cng.model.p051c.CameraStatus;
 import com.panasonic.avc.cng.model.p051c.C1865q.C1866a;
 import com.panasonic.avc.cng.model.p051c.C1865q.C1867b;
 import com.panasonic.avc.cng.model.p052d.C1879a;
@@ -39,14 +39,14 @@ import com.panasonic.avc.cng.model.service.C2028e;
 import com.panasonic.avc.cng.model.service.C2137j;
 import com.panasonic.avc.cng.model.service.C2137j.C2138a;
 import com.panasonic.avc.cng.model.service.C2137j.C2141d;
-import com.panasonic.avc.cng.model.service.C2253z;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
 import com.panasonic.avc.cng.model.service.p056c.C2020c;
 import com.panasonic.avc.cng.model.service.upload.usages.logservice.UsagesLogService;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.util.C2266l;
 import com.panasonic.avc.cng.util.C2275p;
 import com.panasonic.avc.cng.view.cameraconnect.C2649a;
-import com.panasonic.avc.cng.view.cameraconnect.C2754l;
+import com.panasonic.avc.cng.view.cameraconnect.WifiUtil;
 import com.panasonic.avc.cng.view.cameraconnect.GuidanceMenuActivity;
 import com.panasonic.avc.cng.view.common.TouchShareCopyActivity;
 import com.panasonic.avc.cng.view.liveview.LiveViewNoConnectionActivity;
@@ -60,20 +60,20 @@ import com.panasonic.avc.cng.view.p072a.C2311f.C2312a;
 import com.panasonic.avc.cng.view.p072a.C2316j;
 import com.panasonic.avc.cng.view.p073b.C2317a.C2325c;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
 import com.panasonic.avc.cng.view.p073b.C2337e;
 import com.panasonic.avc.cng.view.p073b.C2376f.C2377a;
 import com.panasonic.avc.cng.view.p073b.C2376f.C2378b;
 import com.panasonic.avc.cng.view.parts.C4103bi;
 import com.panasonic.avc.cng.view.parts.C4244s;
-import com.panasonic.avc.cng.view.parts.C4245t.C4252c;
-import com.panasonic.avc.cng.view.parts.C4245t.C4255e;
-import com.panasonic.avc.cng.view.parts.C4245t.C4256f;
+import com.panasonic.avc.cng.view.parts.BrowserViewModel.C4252c;
+import com.panasonic.avc.cng.view.parts.BrowserViewModel.C4255e;
+import com.panasonic.avc.cng.view.parts.BrowserViewModel.C4256f;
 import com.panasonic.avc.cng.view.parts.C4262x;
 import com.panasonic.avc.cng.view.play.browser.C4373a.C4402a;
 import com.panasonic.avc.cng.view.smartoperation.C5919e;
 import com.panasonic.avc.cng.view.smartoperation.C5942h;
-import com.panasonic.avc.cng.view.smartoperation.C5956i;
+import com.panasonic.avc.cng.view.smartoperation.PictureJumpViewModel;
 import com.panasonic.avc.cng.view.smartoperation.ContentPlayerActivity;
 import com.panasonic.avc.cng.view.smartoperation.PictureJumpActivity;
 import com.panasonic.avc.cng.view.transferassist.TransferModeSelectActivity.C6023a;
@@ -116,9 +116,9 @@ public class MainBrowserActivity extends C2284a implements C0010a, C2310a {
     /* access modifiers changed from: private */
     public Intent _snsIntent;
     private C2311f _tabMenuUtil;
-    protected C4432g _viewModel;
+    protected MainBrowserViewModel _viewModel;
     /* access modifiers changed from: private */
-    public C4411b mReconnectThread = null;
+    public BrowserConnectWiFi mReconnectThread = null;
 
     /* renamed from: com.panasonic.avc.cng.view.play.browser.MainBrowserActivity$a */
     private class C4317a implements C2138a {
@@ -127,25 +127,25 @@ public class MainBrowserActivity extends C2284a implements C0010a, C2310a {
 
         /* renamed from: b */
         public void mo5669b() {
-            C2261g.m9763a(MainBrowserActivity.TAG, "onBleConnectStart");
+            ImageAppLog.debug(MainBrowserActivity.TAG, "onBleConnectStart");
             MainBrowserActivity.this._btConnectState = "Connecting";
         }
 
         /* renamed from: a */
         public void mo5668a(boolean z) {
-            C2261g.m9763a(MainBrowserActivity.TAG, "onBleConnected");
+            ImageAppLog.debug(MainBrowserActivity.TAG, "onBleConnected");
             MainBrowserActivity.this._btConnectState = "Connected";
             if (MainBrowserActivity.this._imageAppService != null) {
                 MainBrowserActivity.this._imageAppService.mo5641c();
             }
             if (MainBrowserActivity.this._imageAppService != null) {
-                C2261g.m9763a(MainBrowserActivity.TAG, "writeData:" + MainBrowserActivity.this._imageAppService.mo5627a(1, C2266l.m9808a("4D454930010010008001" + PreferenceManager.getDefaultSharedPreferences(MainBrowserActivity.this._context).getString("Dlna_UUID_Seed", ""))));
+                ImageAppLog.debug(MainBrowserActivity.TAG, "writeData:" + MainBrowserActivity.this._imageAppService.mo5627a(1, C2266l.m9808a("4D454930010010008001" + PreferenceManager.getDefaultSharedPreferences(MainBrowserActivity.this._context).getString("Dlna_UUID_Seed", ""))));
             }
         }
 
         /* renamed from: a */
         public void mo5662a(int i) {
-            C2261g.m9763a(MainBrowserActivity.TAG, "onBleDisconnected");
+            ImageAppLog.debug(MainBrowserActivity.TAG, "onBleDisconnected");
             if (MainBrowserActivity.this._handler != null) {
                 MainBrowserActivity.this._btConnectState = "Disconnected";
                 if (MainBrowserActivity.this._imageAppService != null) {
@@ -153,8 +153,8 @@ public class MainBrowserActivity extends C2284a implements C0010a, C2310a {
                 }
                 MainBrowserActivity.this._handler.post(new Runnable() {
                     public void run() {
-                        if (C2331d.m10125b((Activity) MainBrowserActivity.this, C2328a.ON_DMS_RECEIVING)) {
-                            C2331d.m10102a((Activity) MainBrowserActivity.this, C2328a.ON_DMS_RECEIVING);
+                        if (DialogFactory.m10125b((Activity) MainBrowserActivity.this, C2328a.ON_DMS_RECEIVING)) {
+                            DialogFactory.m10102a((Activity) MainBrowserActivity.this, C2328a.ON_DMS_RECEIVING);
                             if (MainBrowserActivity.this._viewModel != null && MainBrowserActivity.this._viewModel.mo10437p() != null && MainBrowserActivity.this._viewModel.mo10437p().mo9417h().mo9749a() == 2) {
                                 MainBrowserActivity.this._viewModel.mo10377A();
                             }
@@ -166,19 +166,19 @@ public class MainBrowserActivity extends C2284a implements C0010a, C2310a {
 
         /* renamed from: d */
         public void mo5672d() {
-            C2261g.m9763a(MainBrowserActivity.TAG, "onBleConnectError");
+            ImageAppLog.debug(MainBrowserActivity.TAG, "onBleConnectError");
             MainBrowserActivity.this._btConnectState = "Disconnected";
         }
 
         /* renamed from: a */
         public void mo5663a(BluetoothDevice bluetoothDevice, String str, String str2, String str3) {
             if (MainBrowserActivity.this._handler != null && str != null) {
-                C2261g.m9763a(MainBrowserActivity.TAG, "onBleScanResult / state = " + str3);
-                C2261g.m9763a(MainBrowserActivity.TAG, "onBleScanResult / devName = " + str);
-                C2261g.m9763a(MainBrowserActivity.TAG, "onBleScanResult / publicAddress = " + str2);
+                ImageAppLog.debug(MainBrowserActivity.TAG, "onBleScanResult / state = " + str3);
+                ImageAppLog.debug(MainBrowserActivity.TAG, "onBleScanResult / devName = " + str);
+                ImageAppLog.debug(MainBrowserActivity.TAG, "onBleScanResult / publicAddress = " + str2);
                 if (str3.equalsIgnoreCase("normal")) {
                     String string = PreferenceManager.getDefaultSharedPreferences(MainBrowserActivity.this._context).getString("CurrentConnectedAddress", "");
-                    C2261g.m9763a(MainBrowserActivity.TAG, "targetAddress:" + string);
+                    ImageAppLog.debug(MainBrowserActivity.TAG, "targetAddress:" + string);
                     if (MainBrowserActivity.this._imageAppService != null && !string.equalsIgnoreCase("") && string.equalsIgnoreCase(str2) && !MainBrowserActivity.this._btConnectState.equalsIgnoreCase("Connecting")) {
                         MainBrowserActivity.this._imageAppService.mo5628a(bluetoothDevice, false);
                     }
@@ -188,13 +188,13 @@ public class MainBrowserActivity extends C2284a implements C0010a, C2310a {
 
         /* renamed from: a */
         public void mo5667a(UUID uuid, int i, Bundle bundle) {
-            C2261g.m9763a(MainBrowserActivity.TAG, "onBleRead");
+            ImageAppLog.debug(MainBrowserActivity.TAG, "onBleRead");
             byte[] byteArray = bundle.getByteArray("VALUE");
             if (byteArray != null && byteArray.length > 0 && uuid.equals(UUID.fromString("e1392720-3215-11e6-a035-0002a5d5c51b")) && MainBrowserActivity.this._imageAppService != null) {
                 MainBrowserActivity.this._imageAppService.mo5650l();
                 MainBrowserActivity.this._handler.post(new Runnable() {
                     public void run() {
-                        C2331d.m10100a((Activity) MainBrowserActivity.this);
+                        DialogFactory.m10100a((Activity) MainBrowserActivity.this);
                     }
                 });
             }
@@ -204,7 +204,7 @@ public class MainBrowserActivity extends C2284a implements C0010a, C2310a {
         public void mo5666a(UUID uuid, int i) {
             String a;
             String c;
-            C2261g.m9763a(MainBrowserActivity.TAG, "onBleWrite");
+            ImageAppLog.debug(MainBrowserActivity.TAG, "onBleWrite");
             if (uuid.equals(UUID.fromString("e182ec40-3213-11e6-ab07-0002a5d5c51b"))) {
                 if (MainBrowserActivity.this._imageAppService != null && MainBrowserActivity.this._imageAppService.mo5645g()) {
                     if (MainBrowserActivity.this._imageAppService.mo5651m() && MainBrowserActivity.this._imageAppService != null) {
@@ -229,14 +229,14 @@ public class MainBrowserActivity extends C2284a implements C0010a, C2310a {
                     } else {
                         a = MainBrowserActivity.this._imageAppService.mo5627a(2, string2.getBytes());
                     }
-                    C2261g.m9763a(MainBrowserActivity.TAG, "writeData:" + a);
+                    ImageAppLog.debug(MainBrowserActivity.TAG, "writeData:" + a);
                 }
             } else if (uuid.equals(UUID.fromString("0d6f1880-3217-11e6-a4cb-0002a5d5c51b")) && MainBrowserActivity.this._isConnectConfirmDone) {
                 if (MainBrowserActivity.this._imageAppService.mo5645g()) {
                     MainBrowserActivity.this._handler.post(new Runnable() {
                         public void run() {
-                            C2331d.m10100a((Activity) MainBrowserActivity.this);
-                            C2331d.m10114a((Activity) MainBrowserActivity.this, C2328a.ON_BT_AUTOSEND_RECEIVE_WIFI_CONNECT_CONFIRM, (Bundle) null);
+                            DialogFactory.m10100a((Activity) MainBrowserActivity.this);
+                            DialogFactory.m10114a((Activity) MainBrowserActivity.this, C2328a.ON_BT_AUTOSEND_RECEIVE_WIFI_CONNECT_CONFIRM, (Bundle) null);
                         }
                     });
                 }
@@ -246,20 +246,20 @@ public class MainBrowserActivity extends C2284a implements C0010a, C2310a {
 
         /* renamed from: a */
         public void mo5664a(Bundle bundle, String str) {
-            C2261g.m9763a(MainBrowserActivity.TAG, "onBleNotification");
+            ImageAppLog.debug(MainBrowserActivity.TAG, "onBleNotification");
             byte[] byteArray = bundle.getByteArray("VALUE");
             if (MainBrowserActivity.this._imageAppService != null && MainBrowserActivity.this._imageAppService.mo5645g()) {
                 if (str.equals("18345be1-3217-11e6-b56c-0002a5d5c51b")) {
                     MainBrowserActivity.this._isConnectConfirmDone = true;
                     if (byteArray != null && byteArray.length > 0) {
-                        C2261g.m9763a(MainBrowserActivity.TAG, "result[0]:" + byteArray[0]);
+                        ImageAppLog.debug(MainBrowserActivity.TAG, "result[0]:" + byteArray[0]);
                         if (byteArray[0] == 0) {
-                            C2261g.m9763a(MainBrowserActivity.TAG, "WifiConnectSTA");
-                            C2261g.m9763a(MainBrowserActivity.TAG, "writeData:" + MainBrowserActivity.this._imageAppService.mo5627a(11, C4244s.f14198h));
+                            ImageAppLog.debug(MainBrowserActivity.TAG, "WifiConnectSTA");
+                            ImageAppLog.debug(MainBrowserActivity.TAG, "writeData:" + MainBrowserActivity.this._imageAppService.mo5627a(11, C4244s.f14198h));
                             return;
                         }
-                        C2261g.m9763a(MainBrowserActivity.TAG, "WifiConnectSoftAP");
-                        C2261g.m9763a(MainBrowserActivity.TAG, "writeData:" + MainBrowserActivity.this._imageAppService.mo5627a(11, C4244s.f14197g));
+                        ImageAppLog.debug(MainBrowserActivity.TAG, "WifiConnectSoftAP");
+                        ImageAppLog.debug(MainBrowserActivity.TAG, "writeData:" + MainBrowserActivity.this._imageAppService.mo5627a(11, C4244s.f14197g));
                     }
                 } else if (str.equals("e182ec43-3213-11e6-ab07-0002a5d5c51b") && byteArray != null && byteArray.length > 0) {
                     if (byteArray[0] == 1) {
@@ -267,20 +267,20 @@ public class MainBrowserActivity extends C2284a implements C0010a, C2310a {
                         if (MainBrowserActivity.this._imageAppService != null) {
                             MainBrowserActivity.this._imageAppService.mo5641c();
                         }
-                        WifiInfo b = new C2754l(MainBrowserActivity.this._context).mo6743b();
+                        WifiInfo b = new WifiUtil(MainBrowserActivity.this._context).mo6743b();
                         if (b.getIpAddress() == 0) {
-                            C2261g.m9763a(MainBrowserActivity.TAG, "SoftAP");
+                            ImageAppLog.debug(MainBrowserActivity.TAG, "SoftAP");
                             MainBrowserActivity.this._isConnectConfirmDone = true;
-                            C2261g.m9763a(MainBrowserActivity.TAG, "writeData:" + MainBrowserActivity.this._imageAppService.mo5627a(11, C4244s.f14197g));
+                            ImageAppLog.debug(MainBrowserActivity.TAG, "writeData:" + MainBrowserActivity.this._imageAppService.mo5627a(11, C4244s.f14197g));
                             return;
                         }
-                        C2261g.m9763a(MainBrowserActivity.TAG, "STA");
-                        C2261g.m9763a(MainBrowserActivity.TAG, "wifiInfo.getSSID():" + b.getSSID());
+                        ImageAppLog.debug(MainBrowserActivity.TAG, "STA");
+                        ImageAppLog.debug(MainBrowserActivity.TAG, "wifiInfo.getSSID():" + b.getSSID());
                         String ssid = b.getSSID();
                         if (ssid.startsWith("\"") && ssid.endsWith("\"")) {
                             ssid = ssid.substring(1, ssid.length() - 1);
                         }
-                        C2261g.m9763a(MainBrowserActivity.TAG, "writeData:" + MainBrowserActivity.this._imageAppService.mo5627a(12, C2266l.m9792a(32, ssid).getBytes()));
+                        ImageAppLog.debug(MainBrowserActivity.TAG, "writeData:" + MainBrowserActivity.this._imageAppService.mo5627a(12, C2266l.m9792a(32, ssid).getBytes()));
                         return;
                     }
                     MainBrowserActivity.this._isAutoSendMode = false;
@@ -293,53 +293,53 @@ public class MainBrowserActivity extends C2284a implements C0010a, C2310a {
 
         /* renamed from: a */
         public void mo5661a() {
-            C2261g.m9763a(MainBrowserActivity.TAG, "onBleScanStart");
+            ImageAppLog.debug(MainBrowserActivity.TAG, "onBleScanStart");
         }
 
         /* renamed from: c */
         public void mo5671c() {
-            C2261g.m9763a(MainBrowserActivity.TAG, "onBleConnectTimeOut");
+            ImageAppLog.debug(MainBrowserActivity.TAG, "onBleConnectTimeOut");
         }
 
         /* renamed from: a */
         public void mo5665a(String str) {
-            C2261g.m9763a(MainBrowserActivity.TAG, "onBleCopyStatus");
-            C2261g.m9763a(MainBrowserActivity.TAG, "state:" + str);
+            ImageAppLog.debug(MainBrowserActivity.TAG, "onBleCopyStatus");
+            ImageAppLog.debug(MainBrowserActivity.TAG, "state:" + str);
             if (str.equalsIgnoreCase("Complete")) {
-                if (!C2331d.m10125b((Activity) MainBrowserActivity.this, C2328a.ON_BT_AUTOSEND_NOT_FOUND)) {
-                    C2331d.m10100a((Activity) MainBrowserActivity.this);
+                if (!DialogFactory.m10125b((Activity) MainBrowserActivity.this, C2328a.ON_BT_AUTOSEND_NOT_FOUND)) {
+                    DialogFactory.m10100a((Activity) MainBrowserActivity.this);
                 }
                 if (MainBrowserActivity.this._viewModel != null && MainBrowserActivity.this._viewModel.mo10437p() != null && MainBrowserActivity.this._viewModel.mo10437p().mo9417h().mo9749a() == 2) {
                     MainBrowserActivity.this._viewModel.mo10377A();
                 }
             } else if (str.equalsIgnoreCase("Copying")) {
-                if (!C2331d.m10125b((Activity) MainBrowserActivity.this, C2328a.ON_BT_AUTOSEND_NOT_FOUND)) {
-                    C2331d.m10115a((Activity) MainBrowserActivity.this, C2328a.ON_DMS_RECEIVING, (Bundle) null, (C2325c) new C2325c() {
+                if (!DialogFactory.m10125b((Activity) MainBrowserActivity.this, C2328a.ON_BT_AUTOSEND_NOT_FOUND)) {
+                    DialogFactory.m10115a((Activity) MainBrowserActivity.this, C2328a.ON_DMS_RECEIVING, (Bundle) null, (C2325c) new C2325c() {
                         /* renamed from: a */
                         public void mo6131a() {
-                            C2331d.m10129c((Activity) MainBrowserActivity.this, C2328a.ON_DMS_RECEIVING, (int) R.id.text, (int) R.string.cmn_msg_now_regist_image);
+                            DialogFactory.m10129c((Activity) MainBrowserActivity.this, C2328a.ON_DMS_RECEIVING, (int) R.id.text, (int) R.string.cmn_msg_now_regist_image);
                         }
                     });
                 }
             } else if (str.equalsIgnoreCase("NotFound")) {
-                if (!C2331d.m10125b((Activity) MainBrowserActivity.this, C2328a.ON_BT_AUTOSEND_NOT_FOUND)) {
-                    C2331d.m10100a((Activity) MainBrowserActivity.this);
-                    C2331d.m10115a((Activity) MainBrowserActivity.this, C2328a.ON_BT_AUTOSEND_NOT_FOUND, (Bundle) null, (C2325c) new C2325c() {
+                if (!DialogFactory.m10125b((Activity) MainBrowserActivity.this, C2328a.ON_BT_AUTOSEND_NOT_FOUND)) {
+                    DialogFactory.m10100a((Activity) MainBrowserActivity.this);
+                    DialogFactory.m10115a((Activity) MainBrowserActivity.this, C2328a.ON_BT_AUTOSEND_NOT_FOUND, (Bundle) null, (C2325c) new C2325c() {
                         /* renamed from: a */
                         public void mo6131a() {
-                            C2331d.m10111a((Activity) MainBrowserActivity.this, C2328a.ON_BT_AUTOSEND_NOT_FOUND, (int) R.id.text, (CharSequence) MainBrowserActivity.this._context.getString(R.string.msg_file_copy_error_occurred) + "\n" + MainBrowserActivity.this._context.getString(R.string.msg_communication_error_occurred) + "\n" + MainBrowserActivity.this._context.getString(R.string.msg_confirm_communication_env));
+                            DialogFactory.m10111a((Activity) MainBrowserActivity.this, C2328a.ON_BT_AUTOSEND_NOT_FOUND, (int) R.id.text, (CharSequence) MainBrowserActivity.this._context.getString(R.string.msg_file_copy_error_occurred) + "\n" + MainBrowserActivity.this._context.getString(R.string.msg_communication_error_occurred) + "\n" + MainBrowserActivity.this._context.getString(R.string.msg_confirm_communication_env));
                         }
                     });
                 }
             } else if (str.equalsIgnoreCase("NotRemain")) {
-                C2331d.m10100a((Activity) MainBrowserActivity.this);
-                C2331d.m10114a((Activity) MainBrowserActivity.this, C2328a.ErrNoRemainMultiPhoto, (Bundle) null);
+                DialogFactory.m10100a((Activity) MainBrowserActivity.this);
+                DialogFactory.m10114a((Activity) MainBrowserActivity.this, C2328a.ErrNoRemainMultiPhoto, (Bundle) null);
             } else if (str.equalsIgnoreCase("Error")) {
-                C2331d.m10100a((Activity) MainBrowserActivity.this);
-                C2331d.m10115a((Activity) MainBrowserActivity.this, C2328a.ON_BT_AUTOSEND_NOT_FOUND, (Bundle) null, (C2325c) new C2325c() {
+                DialogFactory.m10100a((Activity) MainBrowserActivity.this);
+                DialogFactory.m10115a((Activity) MainBrowserActivity.this, C2328a.ON_BT_AUTOSEND_NOT_FOUND, (Bundle) null, (C2325c) new C2325c() {
                     /* renamed from: a */
                     public void mo6131a() {
-                        C2331d.m10111a((Activity) MainBrowserActivity.this, C2328a.ON_BT_AUTOSEND_NOT_FOUND, (int) R.id.text, (CharSequence) MainBrowserActivity.this._context.getString(R.string.msg_file_copy_error_occurred) + "\n" + MainBrowserActivity.this._context.getString(R.string.msg_communication_error_occurred) + "\n" + MainBrowserActivity.this._context.getString(R.string.msg_confirm_communication_env));
+                        DialogFactory.m10111a((Activity) MainBrowserActivity.this, C2328a.ON_BT_AUTOSEND_NOT_FOUND, (int) R.id.text, (CharSequence) MainBrowserActivity.this._context.getString(R.string.msg_file_copy_error_occurred) + "\n" + MainBrowserActivity.this._context.getString(R.string.msg_communication_error_occurred) + "\n" + MainBrowserActivity.this._context.getString(R.string.msg_confirm_communication_env));
                     }
                 });
                 if (MainBrowserActivity.this._viewModel != null && MainBrowserActivity.this._viewModel.mo10437p() != null && MainBrowserActivity.this._viewModel.mo10437p().mo9417h().mo9749a() == 2) {
@@ -350,25 +350,25 @@ public class MainBrowserActivity extends C2284a implements C0010a, C2310a {
 
         /* renamed from: b */
         public void mo5670b(boolean z) {
-            C2261g.m9763a(MainBrowserActivity.TAG, "onBleNotificationEnable");
+            ImageAppLog.debug(MainBrowserActivity.TAG, "onBleNotificationEnable");
             if (!z) {
-                C2331d.m10114a((Activity) MainBrowserActivity.this, C2328a.ON_BT_GPS_DISABLE_CONFIRM, (Bundle) null);
+                DialogFactory.m10114a((Activity) MainBrowserActivity.this, C2328a.ON_BT_GPS_DISABLE_CONFIRM, (Bundle) null);
             }
         }
 
         /* renamed from: e */
         public void mo5673e() {
-            C2261g.m9763a(MainBrowserActivity.TAG, "onBleServicePrepared");
+            ImageAppLog.debug(MainBrowserActivity.TAG, "onBleServicePrepared");
         }
 
         /* renamed from: f */
         public void mo5674f() {
-            C2261g.m9763a(MainBrowserActivity.TAG, "onBleScanResultError");
+            ImageAppLog.debug(MainBrowserActivity.TAG, "onBleScanResultError");
         }
 
         /* renamed from: g */
         public void mo5675g() {
-            C2261g.m9763a(MainBrowserActivity.TAG, "onAutoSendAcctrlDone");
+            ImageAppLog.debug(MainBrowserActivity.TAG, "onAutoSendAcctrlDone");
         }
     }
 
@@ -427,7 +427,7 @@ public class MainBrowserActivity extends C2284a implements C0010a, C2310a {
                                 if (((C4262x) MainBrowserActivity.this._viewModel.mo10436o().mo9961d().get(MainBrowserActivity.this._viewModel.mo10436o().mo9991y())).mo10029c() == null) {
                                     MainBrowserActivity.this._cameraUtil.mo6032a((Runnable) new Runnable() {
                                         public void run() {
-                                            C2331d.m10100a((Activity) MainBrowserActivity.this._context);
+                                            DialogFactory.m10100a((Activity) MainBrowserActivity.this._context);
                                         }
                                     });
                                     return;
@@ -440,7 +440,7 @@ public class MainBrowserActivity extends C2284a implements C0010a, C2310a {
                                     MainBrowserActivity.this._viewModel.mo6022d().putBoolean("HighlightModeIsFinish", true);
                                     MainBrowserActivity.this._cameraUtil.mo6032a((Runnable) new Runnable() {
                                         public void run() {
-                                            C2331d.m10100a((Activity) MainBrowserActivity.this._context);
+                                            DialogFactory.m10100a((Activity) MainBrowserActivity.this._context);
                                             if (MainBrowserActivity.this._browseMenu != null) {
                                                 MainBrowserActivity.this._viewModel.mo10423i(true);
                                                 MainBrowserActivity.this._browseMenu.mo10261l();
@@ -451,7 +451,7 @@ public class MainBrowserActivity extends C2284a implements C0010a, C2310a {
                                 }
                                 MainBrowserActivity.this._cameraUtil.mo6032a((Runnable) new Runnable() {
                                     public void run() {
-                                        C2331d.m10100a((Activity) MainBrowserActivity.this._context);
+                                        DialogFactory.m10100a((Activity) MainBrowserActivity.this._context);
                                     }
                                 });
                                 C0008a.m38a((Activity) MainBrowserActivity.this._context, new String[]{"android.permission.WRITE_EXTERNAL_STORAGE", "android.permission.READ_EXTERNAL_STORAGE"}, 55);
@@ -475,7 +475,7 @@ public class MainBrowserActivity extends C2284a implements C0010a, C2310a {
                                 if (((C4262x) MainBrowserActivity.this._viewModel.mo10436o().mo9961d().get(size)).mo10029c() == null) {
                                     MainBrowserActivity.this._cameraUtil.mo6032a((Runnable) new Runnable() {
                                         public void run() {
-                                            C2331d.m10100a((Activity) MainBrowserActivity.this._context);
+                                            DialogFactory.m10100a((Activity) MainBrowserActivity.this._context);
                                         }
                                     });
                                     return;
@@ -509,8 +509,8 @@ public class MainBrowserActivity extends C2284a implements C0010a, C2310a {
                             MainBrowserActivity.this._viewModel.mo10427j(0);
                             MainBrowserActivity.this._cameraUtil.mo6032a((Runnable) new Runnable() {
                                 public void run() {
-                                    C2331d.m10100a((Activity) MainBrowserActivity.this._context);
-                                    C2331d.m10114a((Activity) MainBrowserActivity.this, C2328a.ON_ASSIST_COPY_NO_ITEM, (Bundle) null);
+                                    DialogFactory.m10100a((Activity) MainBrowserActivity.this._context);
+                                    DialogFactory.m10114a((Activity) MainBrowserActivity.this, C2328a.ON_ASSIST_COPY_NO_ITEM, (Bundle) null);
                                 }
                             });
                             return;
@@ -528,8 +528,8 @@ public class MainBrowserActivity extends C2284a implements C0010a, C2310a {
                         if (i4 == MainBrowserActivity.this._browseMenu.mo10252e().size()) {
                             MainBrowserActivity.this._cameraUtil.mo6032a((Runnable) new Runnable() {
                                 public void run() {
-                                    C2331d.m10100a((Activity) MainBrowserActivity.this._context);
-                                    C2331d.m10114a((Activity) MainBrowserActivity.this, C2328a.ON_ASSIST_COPY_NO_ITEM, (Bundle) null);
+                                    DialogFactory.m10100a((Activity) MainBrowserActivity.this._context);
+                                    DialogFactory.m10114a((Activity) MainBrowserActivity.this, C2328a.ON_ASSIST_COPY_NO_ITEM, (Bundle) null);
                                 }
                             });
                             return;
@@ -549,7 +549,7 @@ public class MainBrowserActivity extends C2284a implements C0010a, C2310a {
                         MainBrowserActivity.this._viewModel.mo6022d().putBoolean("AssistCopyIsFinish", true);
                         MainBrowserActivity.this._cameraUtil.mo6032a((Runnable) new Runnable() {
                             public void run() {
-                                C2331d.m10100a((Activity) MainBrowserActivity.this._context);
+                                DialogFactory.m10100a((Activity) MainBrowserActivity.this._context);
                                 if (MainBrowserActivity.this._browseMenu != null) {
                                     MainBrowserActivity.this._viewModel.mo10432l(true);
                                     MainBrowserActivity.this._browseMenu.mo10262m();
@@ -559,7 +559,7 @@ public class MainBrowserActivity extends C2284a implements C0010a, C2310a {
                     } else {
                         MainBrowserActivity.this._cameraUtil.mo6032a((Runnable) new Runnable() {
                             public void run() {
-                                C2331d.m10100a((Activity) MainBrowserActivity.this._context);
+                                DialogFactory.m10100a((Activity) MainBrowserActivity.this._context);
                             }
                         });
                         C0008a.m38a((Activity) MainBrowserActivity.this._context, new String[]{"android.permission.WRITE_EXTERNAL_STORAGE", "android.permission.READ_EXTERNAL_STORAGE"}, 52);
@@ -581,7 +581,7 @@ public class MainBrowserActivity extends C2284a implements C0010a, C2310a {
         public void mo10012e() {
             MainBrowserActivity.this._cameraUtil.mo6032a((Runnable) new Runnable() {
                 public void run() {
-                    C2331d.m10114a((Activity) MainBrowserActivity.this, C2328a.ON_DISCONNECT_NO_FINISH, (Bundle) null);
+                    DialogFactory.m10114a((Activity) MainBrowserActivity.this, C2328a.ON_DISCONNECT_NO_FINISH, (Bundle) null);
                 }
             });
         }
@@ -590,7 +590,7 @@ public class MainBrowserActivity extends C2284a implements C0010a, C2310a {
         public void mo10008a(int i, int i2) {
             MainBrowserActivity.this._cameraUtil.mo6032a((Runnable) new Runnable() {
                 public void run() {
-                    C2331d.m10114a((Activity) MainBrowserActivity.this, C2328a.ON_EXCEEDED_MAX_SELECT_NUM, (Bundle) null);
+                    DialogFactory.m10114a((Activity) MainBrowserActivity.this, C2328a.ON_EXCEEDED_MAX_SELECT_NUM, (Bundle) null);
                 }
             });
         }
@@ -608,7 +608,7 @@ public class MainBrowserActivity extends C2284a implements C0010a, C2310a {
             if (i == 0) {
                 MainBrowserActivity.this._cameraUtil.mo6032a((Runnable) new Runnable() {
                     public void run() {
-                        C2331d.m10114a((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_WARNING_LIMIT_CONTENTS, (Bundle) null);
+                        DialogFactory.m10114a((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_WARNING_LIMIT_CONTENTS, (Bundle) null);
                     }
                 });
             } else if (i == 1) {
@@ -655,12 +655,12 @@ public class MainBrowserActivity extends C2284a implements C0010a, C2310a {
                             i4 = MainBrowserActivity.this._browseMenu.mo10252e().size();
                         }
                         final String valueOf = String.valueOf(i4);
-                        C2331d.m10115a((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_COPY, bundle, (C2325c) new C2325c() {
+                        DialogFactory.m10115a((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_COPY, bundle, (C2325c) new C2325c() {
                             /* renamed from: a */
                             public void mo6131a() {
-                                C2331d.m10111a((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_COPY, (int) R.id.percent_num, (CharSequence) "0");
-                                C2331d.m10111a((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_COPY, (int) R.id.numerator, (CharSequence) "1");
-                                C2331d.m10111a((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_COPY, (int) R.id.denominator, (CharSequence) valueOf);
+                                DialogFactory.m10111a((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_COPY, (int) R.id.percent_num, (CharSequence) "0");
+                                DialogFactory.m10111a((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_COPY, (int) R.id.numerator, (CharSequence) "1");
+                                DialogFactory.m10111a((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_COPY, (int) R.id.denominator, (CharSequence) valueOf);
                             }
                         });
                         return;
@@ -681,8 +681,8 @@ public class MainBrowserActivity extends C2284a implements C0010a, C2310a {
                             C1712b.m6917b().mo4993a(true);
                         }
                     }
-                    if (C2331d.m10125b((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_COPY)) {
-                        C2331d.m10102a((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_COPY);
+                    if (DialogFactory.m10125b((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_COPY)) {
+                        DialogFactory.m10102a((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_COPY);
                     }
                     if (MainBrowserActivity.this._viewModel == null || !MainBrowserActivity.this._viewModel.mo10389M()) {
                         MainBrowserActivity.this.showSimpleDlg(C2328a.ON_BROWSE_ACTION_COMPLETE_COPY, null);
@@ -701,12 +701,12 @@ public class MainBrowserActivity extends C2284a implements C0010a, C2310a {
                         MainBrowserActivity.this._viewModel.mo10410c(true);
                         MainBrowserActivity.this._viewModel.mo10422h(false);
                         MainBrowserActivity.this._viewModel.mo10423i(false);
-                        C2331d.m10100a((Activity) MainBrowserActivity.this);
-                        C2331d.m10114a((Activity) MainBrowserActivity.this, C2328a.ON_SHORT_HIGHLIGHT_COPY_CANCEL_COMPLETE, (Bundle) null);
+                        DialogFactory.m10100a((Activity) MainBrowserActivity.this);
+                        DialogFactory.m10114a((Activity) MainBrowserActivity.this, C2328a.ON_SHORT_HIGHLIGHT_COPY_CANCEL_COMPLETE, (Bundle) null);
                         return;
                     }
-                    C2331d.m10100a((Activity) MainBrowserActivity.this);
-                    C2331d.m10114a((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_CANCEL, (Bundle) null);
+                    DialogFactory.m10100a((Activity) MainBrowserActivity.this);
+                    DialogFactory.m10114a((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_CANCEL, (Bundle) null);
                     MainBrowserActivity.this._resultAction.m17099a(new boolean[0]);
                     return;
                 case 6:
@@ -715,14 +715,14 @@ public class MainBrowserActivity extends C2284a implements C0010a, C2310a {
                         MainBrowserActivity.this._viewModel.mo10432l(false);
                         MainBrowserActivity.this._viewModel.mo10427j(0);
                     }
-                    if (C2331d.m10125b((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_COPY)) {
-                        C2331d.m10102a((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_COPY);
+                    if (DialogFactory.m10125b((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_COPY)) {
+                        DialogFactory.m10102a((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_COPY);
                     }
                     if (i2 == 0) {
-                        C2331d.m10114a((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_ERROR_COPY, (Bundle) null);
+                        DialogFactory.m10114a((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_ERROR_COPY, (Bundle) null);
                         return;
                     } else if (i2 == 2) {
-                        C2331d.m10114a((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_ERROR_COPY_NO_REMAIN, (Bundle) null);
+                        DialogFactory.m10114a((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_ERROR_COPY_NO_REMAIN, (Bundle) null);
                         return;
                     } else {
                         return;
@@ -745,40 +745,40 @@ public class MainBrowserActivity extends C2284a implements C0010a, C2310a {
                     if (MainBrowserActivity.this._browseMenu != null) {
                         Bundle bundle = new Bundle();
                         bundle.putInt(C2378b.MESSAGE_ID.name(), R.string.msg_file_copying);
-                        C2331d.m10115a((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_SHARE, bundle, (C2325c) new C2325c() {
+                        DialogFactory.m10115a((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_SHARE, bundle, (C2325c) new C2325c() {
                             /* renamed from: a */
                             public void mo6131a() {
-                                C2331d.m10111a((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_SHARE, (int) R.id.percent_num, (CharSequence) "0");
-                                C2331d.m10111a((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_SHARE, (int) R.id.numerator, (CharSequence) "1");
-                                C2331d.m10111a((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_SHARE, (int) R.id.denominator, (CharSequence) String.valueOf(MainBrowserActivity.this._browseMenu.mo10252e().size()));
+                                DialogFactory.m10111a((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_SHARE, (int) R.id.percent_num, (CharSequence) "0");
+                                DialogFactory.m10111a((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_SHARE, (int) R.id.numerator, (CharSequence) "1");
+                                DialogFactory.m10111a((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_SHARE, (int) R.id.denominator, (CharSequence) String.valueOf(MainBrowserActivity.this._browseMenu.mo10252e().size()));
                             }
                         });
                         return;
                     }
                     return;
                 case 3:
-                    C2331d.m10100a((Activity) MainBrowserActivity.this);
+                    DialogFactory.m10100a((Activity) MainBrowserActivity.this);
                     return;
                 case 4:
-                    C2331d.m10100a((Activity) MainBrowserActivity.this);
+                    DialogFactory.m10100a((Activity) MainBrowserActivity.this);
                     if (MainBrowserActivity.this._browseMenu != null && MainBrowserActivity.this._browseMenu.mo10255f() != null) {
-                        MainBrowserActivity.this.mReconnectThread = new C4411b((Activity) MainBrowserActivity.this._context, MainBrowserActivity.this._browseMenu.mo10255f(), MainBrowserActivity.this._browseMenu.mo10256g(), MainBrowserActivity.this._browseMenu.mo10257h(), true);
+                        MainBrowserActivity.this.mReconnectThread = new BrowserConnectWiFi((Activity) MainBrowserActivity.this._context, MainBrowserActivity.this._browseMenu.mo10255f(), MainBrowserActivity.this._browseMenu.mo10256g(), MainBrowserActivity.this._browseMenu.mo10257h(), true);
                         MainBrowserActivity.this._browseMenu.mo10228a((String) null);
                         return;
                     }
                     return;
                 case 5:
-                    C2331d.m10100a((Activity) MainBrowserActivity.this);
-                    C2331d.m10114a((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_CANCEL, (Bundle) null);
+                    DialogFactory.m10100a((Activity) MainBrowserActivity.this);
+                    DialogFactory.m10114a((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_CANCEL, (Bundle) null);
                     MainBrowserActivity.this._resultAction.m17099a(new boolean[0]);
                     return;
                 case 6:
-                    C2331d.m10100a((Activity) MainBrowserActivity.this);
+                    DialogFactory.m10100a((Activity) MainBrowserActivity.this);
                     if (i2 == 0) {
-                        C2331d.m10114a((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_ERROR_COPY, (Bundle) null);
+                        DialogFactory.m10114a((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_ERROR_COPY, (Bundle) null);
                         return;
                     } else if (i2 == 2) {
-                        C2331d.m10114a((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_ERROR_COPY_NO_REMAIN, (Bundle) null);
+                        DialogFactory.m10114a((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_ERROR_COPY_NO_REMAIN, (Bundle) null);
                         return;
                     } else {
                         return;
@@ -797,42 +797,42 @@ public class MainBrowserActivity extends C2284a implements C0010a, C2310a {
                         bundle.putInt(C2378b.NEGATIVE_BUTTON_TEXT_ID.name(), R.string.cmn_btn_cancel);
                         bundle.putInt(C2378b.MESSAGE_ID.name(), R.string.cmn_msg_just_a_moment);
                         bundle.putBoolean(C2377a.EXCLUDE_DISMISS.name(), true);
-                        C2331d.m10115a((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT, bundle, (C2325c) new C2325c() {
+                        DialogFactory.m10115a((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT, bundle, (C2325c) new C2325c() {
                             /* renamed from: a */
                             public void mo6131a() {
-                                C2331d.m10111a((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT, (int) R.id.percent_num, (CharSequence) "0");
-                                C2331d.m10111a((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT, (int) R.id.numerator, (CharSequence) "1");
-                                C2331d.m10111a((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT, (int) R.id.denominator, (CharSequence) String.valueOf(MainBrowserActivity.this._viewModel.mo10436o().mo9983q().size()));
+                                DialogFactory.m10111a((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT, (int) R.id.percent_num, (CharSequence) "0");
+                                DialogFactory.m10111a((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT, (int) R.id.numerator, (CharSequence) "1");
+                                DialogFactory.m10111a((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT, (int) R.id.denominator, (CharSequence) String.valueOf(MainBrowserActivity.this._viewModel.mo10436o().mo9983q().size()));
                             }
                         });
                         return;
                     }
-                    C2331d.m10114a((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE, new Bundle());
+                    DialogFactory.m10114a((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE, new Bundle());
                     return;
                 case 2:
-                    if (!C2331d.m10125b((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT)) {
+                    if (!DialogFactory.m10125b((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT)) {
                         return;
                     }
                     if (i2 != Integer.MIN_VALUE || i3 != Integer.MIN_VALUE) {
-                        C2331d.m10104a((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT, (int) R.id.progressBar2, i3);
-                        C2331d.m10111a((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT, (int) R.id.percent_num, (CharSequence) String.valueOf(i3));
-                        C2331d.m10111a((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT, (int) R.id.numerator, (CharSequence) String.valueOf(i2));
+                        DialogFactory.m10104a((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT, (int) R.id.progressBar2, i3);
+                        DialogFactory.m10111a((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT, (int) R.id.percent_num, (CharSequence) String.valueOf(i3));
+                        DialogFactory.m10111a((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT, (int) R.id.numerator, (CharSequence) String.valueOf(i2));
                         return;
-                    } else if (!C2331d.m10125b((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_ERROR_COPY)) {
-                        if (C2331d.m10125b((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT)) {
-                            C2331d.m10102a((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT);
+                    } else if (!DialogFactory.m10125b((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_ERROR_COPY)) {
+                        if (DialogFactory.m10125b((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT)) {
+                            DialogFactory.m10102a((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT);
                         }
                         Bundle bundle2 = new Bundle();
                         bundle2.putBoolean(C2377a.EXCLUDE_DISMISS.name(), true);
-                        C2331d.m10114a((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_ERROR_COPY, bundle2);
+                        DialogFactory.m10114a((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_ERROR_COPY, bundle2);
                         return;
                     } else {
                         return;
                     }
                 case 4:
-                    C2331d.m10100a((Activity) MainBrowserActivity.this);
-                    if (C2331d.m10125b((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT)) {
-                        C2331d.m10102a((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT);
+                    DialogFactory.m10100a((Activity) MainBrowserActivity.this);
+                    if (DialogFactory.m10125b((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT)) {
+                        DialogFactory.m10102a((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT);
                     }
                     MainBrowserActivity.this._resultAction.m17099a(new boolean[0]);
                     if (MainBrowserActivity.this._viewModel != null) {
@@ -842,30 +842,30 @@ public class MainBrowserActivity extends C2284a implements C0010a, C2310a {
                     return;
                 case 5:
                     MainBrowserActivity.this._resultAction.m17099a(new boolean[0]);
-                    C2331d.m10100a((Activity) MainBrowserActivity.this);
-                    if (C2331d.m10125b((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT)) {
-                        C2331d.m10102a((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT);
+                    DialogFactory.m10100a((Activity) MainBrowserActivity.this);
+                    if (DialogFactory.m10125b((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT)) {
+                        DialogFactory.m10102a((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT);
                     }
-                    C2331d.m10114a((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_CANCEL, (Bundle) null);
+                    DialogFactory.m10114a((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_CANCEL, (Bundle) null);
                     return;
                 case 6:
-                    C2331d.m10100a((Activity) MainBrowserActivity.this);
-                    if (C2331d.m10125b((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT)) {
-                        C2331d.m10102a((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT);
+                    DialogFactory.m10100a((Activity) MainBrowserActivity.this);
+                    if (DialogFactory.m10125b((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT)) {
+                        DialogFactory.m10102a((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT);
                     }
                     if (i2 == 0) {
-                        C2331d.m10114a((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_ERROR_DELETE, (Bundle) null);
+                        DialogFactory.m10114a((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_ERROR_DELETE, (Bundle) null);
                         return;
                     } else if (i2 == 2) {
-                        C2331d.m10114a((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_ERROR_COPY_NO_REMAIN, (Bundle) null);
+                        DialogFactory.m10114a((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_ERROR_COPY_NO_REMAIN, (Bundle) null);
                         return;
                     } else {
                         return;
                     }
                 case 7:
-                    C2331d.m10100a((Activity) MainBrowserActivity.this);
-                    if (C2331d.m10125b((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT)) {
-                        C2331d.m10102a((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT);
+                    DialogFactory.m10100a((Activity) MainBrowserActivity.this);
+                    if (DialogFactory.m10125b((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT)) {
+                        DialogFactory.m10102a((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE_MULTI_CONTENT);
                         return;
                     }
                     return;
@@ -878,10 +878,10 @@ public class MainBrowserActivity extends C2284a implements C0010a, C2310a {
         public void mo10103d(int i, int i2, int i3) {
             switch (i) {
                 case 1:
-                    C2331d.m10114a((Activity) MainBrowserActivity.this, C2328a.WAIT_PROCESSING, (Bundle) null);
+                    DialogFactory.m10114a((Activity) MainBrowserActivity.this, C2328a.WAIT_PROCESSING, (Bundle) null);
                     return;
                 case 4:
-                    C2331d.m10100a((Activity) MainBrowserActivity.this);
+                    DialogFactory.m10100a((Activity) MainBrowserActivity.this);
                     MainBrowserActivity.this._resultAction.m17099a(true);
                     if (MainBrowserActivity.this._viewModel != null) {
                         MainBrowserActivity.this._viewModel.mo10435n();
@@ -897,13 +897,13 @@ public class MainBrowserActivity extends C2284a implements C0010a, C2310a {
                             return;
                         }
                         if (c == 0) {
-                            C2331d.m10114a((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_RATING_COMPLETE_WARNING_PROTECTOFF, (Bundle) null);
+                            DialogFactory.m10114a((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_RATING_COMPLETE_WARNING_PROTECTOFF, (Bundle) null);
                             return;
                         } else if (i4 > 0) {
                             String string = MainBrowserActivity.this.getString(R.string.msg_rating_clear_multi_protect_unsupport, new Object[]{Integer.valueOf(i4)});
                             Bundle bundle = new Bundle();
                             bundle.putString(C2378b.MESSAGE_STRING.name(), string);
-                            C2331d.m10114a((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_RATING_COMPLETE_WARNING, bundle);
+                            DialogFactory.m10114a((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_RATING_COMPLETE_WARNING, bundle);
                             return;
                         } else {
                             return;
@@ -912,16 +912,16 @@ public class MainBrowserActivity extends C2284a implements C0010a, C2310a {
                         return;
                     }
                 case 6:
-                    C2331d.m10100a((Activity) MainBrowserActivity.this);
+                    DialogFactory.m10100a((Activity) MainBrowserActivity.this);
                     Bundle bundle2 = new Bundle();
                     bundle2.putString(C2378b.MESSAGE_STRING.name(), MainBrowserActivity.this.getString(R.string.msg_rating_set_multi_protect_unsupport, new Object[]{Integer.valueOf(i2)}));
-                    C2331d.m10114a((Activity) MainBrowserActivity.this, C2328a.DIALOG_ID_RATING_SET_MULTI_PROTECT_UNSUPPORT, bundle2);
+                    DialogFactory.m10114a((Activity) MainBrowserActivity.this, C2328a.DIALOG_ID_RATING_SET_MULTI_PROTECT_UNSUPPORT, bundle2);
                     return;
                 case C1702a.HorizontalPicker_right_blank_area_width /*10*/:
-                    C2331d.m10114a((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_WARNING_RATING_AVCHD, (Bundle) null);
+                    DialogFactory.m10114a((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_WARNING_RATING_AVCHD, (Bundle) null);
                     return;
                 case C1702a.HorizontalPicker_hairline_visible /*11*/:
-                    C2331d.m10114a((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_RATING_PROTECT, (Bundle) null);
+                    DialogFactory.m10114a((Activity) MainBrowserActivity.this, C2328a.ON_BROWSE_ACTION_RATING_PROTECT, (Bundle) null);
                     return;
                 default:
                     return;
@@ -975,7 +975,7 @@ public class MainBrowserActivity extends C2284a implements C0010a, C2310a {
             MainBrowserActivity.this._cameraUtil.mo6032a((Runnable) new Runnable() {
                 public void run() {
                     if (str.equalsIgnoreCase("need_repair")) {
-                        C2331d.m10114a((Activity) MainBrowserActivity.this, C2328a.ON_SD_CARD_NEED_REPAIR, (Bundle) null);
+                        DialogFactory.m10114a((Activity) MainBrowserActivity.this, C2328a.ON_SD_CARD_NEED_REPAIR, (Bundle) null);
                     }
                 }
             });
@@ -987,16 +987,16 @@ public class MainBrowserActivity extends C2284a implements C0010a, C2310a {
                 public void run() {
                     switch (i) {
                         case 1:
-                            C2331d.m10114a((Activity) MainBrowserActivity.this, C2328a.ON_THREE_BOX_CANNOT_PLAY_MP4, (Bundle) null);
+                            DialogFactory.m10114a((Activity) MainBrowserActivity.this, C2328a.ON_THREE_BOX_CANNOT_PLAY_MP4, (Bundle) null);
                             return;
                         case 2:
-                            C2331d.m10114a((Activity) MainBrowserActivity.this, C2328a.ON_THREE_BOX_NO_CONTENTS, (Bundle) null);
+                            DialogFactory.m10114a((Activity) MainBrowserActivity.this, C2328a.ON_THREE_BOX_NO_CONTENTS, (Bundle) null);
                             return;
                         case 3:
-                            C2331d.m10114a((Activity) MainBrowserActivity.this, C2328a.ON_SCENE_PROTECT_NO_CONTENTS, (Bundle) null);
+                            DialogFactory.m10114a((Activity) MainBrowserActivity.this, C2328a.ON_SCENE_PROTECT_NO_CONTENTS, (Bundle) null);
                             return;
                         case 4:
-                            C2331d.m10114a((Activity) MainBrowserActivity.this, C2328a.ON_SPLIT_DELETE_NO_CONTENTS, (Bundle) null);
+                            DialogFactory.m10114a((Activity) MainBrowserActivity.this, C2328a.ON_SPLIT_DELETE_NO_CONTENTS, (Bundle) null);
                             return;
                         default:
                             return;
@@ -1011,10 +1011,10 @@ public class MainBrowserActivity extends C2284a implements C0010a, C2310a {
                 public void run() {
                     switch (i) {
                         case 1:
-                            C2331d.m10114a((Activity) MainBrowserActivity.this, C2328a.ON_THREE_BOX_SKIP_PLAY_MP4_WEARABLE, (Bundle) null);
+                            DialogFactory.m10114a((Activity) MainBrowserActivity.this, C2328a.ON_THREE_BOX_SKIP_PLAY_MP4_WEARABLE, (Bundle) null);
                             return;
                         case 2:
-                            C2331d.m10114a((Activity) MainBrowserActivity.this, C2328a.ON_THREE_BOX_SKIP_PLAY_MP4_VERTICAL, (Bundle) null);
+                            DialogFactory.m10114a((Activity) MainBrowserActivity.this, C2328a.ON_THREE_BOX_SKIP_PLAY_MP4_VERTICAL, (Bundle) null);
                             return;
                         default:
                             return;
@@ -1031,10 +1031,10 @@ public class MainBrowserActivity extends C2284a implements C0010a, C2310a {
         public void mo10180c() {
             MainBrowserActivity.this._cameraUtil.mo6032a((Runnable) new Runnable() {
                 public void run() {
-                    C2331d.m10100a((Activity) MainBrowserActivity.this);
+                    DialogFactory.m10100a((Activity) MainBrowserActivity.this);
                     if (MainBrowserActivity.this._isShowMsgChangeSSID) {
                         MainBrowserActivity.this._isShowMsgChangeSSID = false;
-                        C2331d.m10115a((Activity) MainBrowserActivity.this, C2328a.DIALOG_ID_SSID_SETTING, (Bundle) null, (C2325c) null);
+                        DialogFactory.m10115a((Activity) MainBrowserActivity.this, C2328a.DIALOG_ID_SSID_SETTING, (Bundle) null, (C2325c) null);
                     }
                 }
             });
@@ -1051,7 +1051,7 @@ public class MainBrowserActivity extends C2284a implements C0010a, C2310a {
 
         /* renamed from: d */
         public void mo10181d() {
-            C2331d.m10114a((Activity) MainBrowserActivity.this, C2328a.SelectedItemCancel, (Bundle) null);
+            DialogFactory.m10114a((Activity) MainBrowserActivity.this, C2328a.SelectedItemCancel, (Bundle) null);
         }
     }
 
@@ -1102,7 +1102,7 @@ public class MainBrowserActivity extends C2284a implements C0010a, C2310a {
                 }
                 boolean z = bundle.getBoolean("LensCheck", false);
                 if (m17100a(z)) {
-                    C2331d.m10114a((Activity) MainBrowserActivity.this, C2328a.DIALOG_ID_WARN_LENS_OUT, (Bundle) null);
+                    DialogFactory.m10114a((Activity) MainBrowserActivity.this, C2328a.DIALOG_ID_WARN_LENS_OUT, (Bundle) null);
                 } else if (z) {
                     MainBrowserActivity.this.StartLiveView(false, false);
                 } else {
@@ -1197,7 +1197,7 @@ public class MainBrowserActivity extends C2284a implements C0010a, C2310a {
             }
             boolean z = bundle.getBoolean("LensCheck", false);
             if (m17100a(z)) {
-                C2331d.m10114a((Activity) MainBrowserActivity.this, C2328a.DIALOG_ID_WARN_LENS_OUT, (Bundle) null);
+                DialogFactory.m10114a((Activity) MainBrowserActivity.this, C2328a.DIALOG_ID_WARN_LENS_OUT, (Bundle) null);
             } else if (z) {
                 MainBrowserActivity.this.StartLiveView(false, false);
             } else {
@@ -1417,7 +1417,7 @@ public class MainBrowserActivity extends C2284a implements C0010a, C2310a {
 
         /* renamed from: a */
         public void mo5609a(int i, C2649a aVar) {
-            C2261g.m9763a(MainBrowserActivity.TAG, "onConnected()");
+            ImageAppLog.debug(MainBrowserActivity.TAG, "onConnected()");
             if (MainBrowserActivity.this._imageAppService == null) {
                 return;
             }
@@ -1425,12 +1425,12 @@ public class MainBrowserActivity extends C2284a implements C0010a, C2310a {
                 MainBrowserActivity.this._imageAppService.mo5634a(PreferenceManager.getDefaultSharedPreferences(MainBrowserActivity.this._context).getString("CurrentConnectedSSID", ""), false, true, false);
                 return;
             }
-            C2261g.m9769c(MainBrowserActivity.TAG, "自動画像転送でacctrlが終わっていたらM-Searchしない");
+            ImageAppLog.error(MainBrowserActivity.TAG, "自動画像転送でacctrlが終わっていたらM-Searchしない");
         }
 
         /* renamed from: a */
         public void mo5610a(int i, boolean z) {
-            C2261g.m9763a(MainBrowserActivity.TAG, "onWifiEnableStatus()");
+            ImageAppLog.debug(MainBrowserActivity.TAG, "onWifiEnableStatus()");
             if (MainBrowserActivity.this._handler != null && !z) {
                 switch (i) {
                     case 1:
@@ -1451,7 +1451,7 @@ public class MainBrowserActivity extends C2284a implements C0010a, C2310a {
                         return;
                     case 3:
                         if (MainBrowserActivity.this._imageAppService != null && MainBrowserActivity.this._imageAppService.mo5645g()) {
-                            C2331d.m10114a((Activity) MainBrowserActivity.this, C2328a.ON_BT_AUTOSEND_WIFI_CONNECT_CONFIRM, (Bundle) null);
+                            DialogFactory.m10114a((Activity) MainBrowserActivity.this, C2328a.ON_BT_AUTOSEND_WIFI_CONNECT_CONFIRM, (Bundle) null);
                             return;
                         }
                         return;
@@ -1463,7 +1463,7 @@ public class MainBrowserActivity extends C2284a implements C0010a, C2310a {
 
         /* renamed from: a */
         public void mo5611a(boolean z, int i, boolean z2) {
-            C2261g.m9763a(MainBrowserActivity.TAG, "onSetWifiEnableResult()");
+            ImageAppLog.debug(MainBrowserActivity.TAG, "onSetWifiEnableResult()");
             if (MainBrowserActivity.this._imageAppService != null) {
                 MainBrowserActivity.this._imageAppService.mo5641c();
                 SharedPreferences defaultSharedPreferences = PreferenceManager.getDefaultSharedPreferences(MainBrowserActivity.this._context);
@@ -1473,11 +1473,11 @@ public class MainBrowserActivity extends C2284a implements C0010a, C2310a {
 
         /* renamed from: a */
         public void mo5612a(boolean z, C1892f fVar, boolean z2, int i) {
-            C2261g.m9763a(MainBrowserActivity.TAG, "onFinishConnectCamera()");
+            ImageAppLog.debug(MainBrowserActivity.TAG, "onFinishConnectCamera()");
             if (MainBrowserActivity.this._imageAppService != null) {
                 MainBrowserActivity.this._handler.post(new Runnable() {
                     public void run() {
-                        C2331d.m10100a((Activity) MainBrowserActivity.this);
+                        DialogFactory.m10100a((Activity) MainBrowserActivity.this);
                     }
                 });
                 if (fVar != null && !MainBrowserActivity.this._imageAppService.mo5651m()) {
@@ -1504,9 +1504,9 @@ public class MainBrowserActivity extends C2284a implements C0010a, C2310a {
             this._isAutoSendMode = intent.getBooleanExtra("IsAutoSend", false);
             this._isDmsReceiving = intent.getIntExtra("IsDmsReceiving", 0);
         }
-        this._viewModel = (C4432g) C2316j.m10030a("MainBrowserViewModel");
+        this._viewModel = (MainBrowserViewModel) C2316j.m10030a("MainBrowserViewModel");
         if (this._viewModel == null) {
-            this._viewModel = new C4432g(this._context, this._handler, aVar, hVar);
+            this._viewModel = new MainBrowserViewModel(this._context, this._handler, aVar, hVar);
             this._viewModel.mo10399a(this._context, this._handler, this._browseListener, dVar, aVar, hVar);
             C2316j.m10032a("MainBrowserViewModel", this._viewModel);
             Bundle extras = getIntent().getExtras();
@@ -1580,13 +1580,13 @@ public class MainBrowserActivity extends C2284a implements C0010a, C2310a {
             return;
         }
         if (this._viewModel.mo10440s() == 2) {
-            C2261g.m9760a(3162122, "");
+            ImageAppLog.m9760a(3162122, "");
             this._viewModel.mo10444w();
         } else if (this._viewModel.mo10440s() == 1) {
             if (this._viewModel.mo10386J() != null) {
                 this._viewModel.mo10437p().mo9405a(this._viewModel.mo10386J());
             }
-            C2261g.m9760a(3162123, "");
+            ImageAppLog.m9760a(3162123, "");
             this._viewModel.mo10443v();
         } else if (!this._viewModel.mo10388L() || this._viewModel.mo10395S() || this._viewModel.mo10394R()) {
             if (!this._viewModel.mo10388L() || (!this._viewModel.mo10395S() && !this._viewModel.mo10394R())) {
@@ -1596,21 +1596,21 @@ public class MainBrowserActivity extends C2284a implements C0010a, C2310a {
                             if (this._viewModel.mo10419g()) {
                                 this._cameraUtil.mo6033a((Runnable) new Runnable() {
                                     public void run() {
-                                        if (C2331d.m10125b((Activity) MainBrowserActivity.this, C2328a.WAIT_PROCESSING)) {
-                                            C2331d.m10100a((Activity) MainBrowserActivity.this);
+                                        if (DialogFactory.m10125b((Activity) MainBrowserActivity.this, C2328a.WAIT_PROCESSING)) {
+                                            DialogFactory.m10100a((Activity) MainBrowserActivity.this);
                                         }
                                     }
                                 }, 2000);
                             } else {
-                                C2331d.m10114a((Activity) this, C2328a.WAIT_PROCESSING, (Bundle) null);
+                                DialogFactory.m10114a((Activity) this, C2328a.WAIT_PROCESSING, (Bundle) null);
                             }
                             if (!(this._viewModel == null || this._viewModel.mo10436o() == null)) {
-                                C2261g.m9769c(TAG, "_viewModel.BrowserVM().getCurrentBrowsingState():" + this._viewModel.mo10436o().mo9974j());
+                                ImageAppLog.error(TAG, "_viewModel.BrowserVM().getCurrentBrowsingState():" + this._viewModel.mo10436o().mo9974j());
                                 if (this._viewModel.mo10436o().mo9974j() > 0) {
                                     return;
                                 }
                             }
-                            C2261g.m9769c(TAG, "onStart StartBrowing");
+                            ImageAppLog.error(TAG, "onStart StartBrowing");
                             this._viewModel.mo10445x();
                         } else if (this._viewModel.mo10437p().mo9417h().mo9749a() == 2) {
                             C0008a.m38a((Activity) this._context, new String[]{"android.permission.WRITE_EXTERNAL_STORAGE", "android.permission.READ_EXTERNAL_STORAGE"}, 46);
@@ -1618,28 +1618,28 @@ public class MainBrowserActivity extends C2284a implements C0010a, C2310a {
                             if (this._viewModel.mo10419g()) {
                                 this._cameraUtil.mo6033a((Runnable) new Runnable() {
                                     public void run() {
-                                        if (C2331d.m10125b((Activity) MainBrowserActivity.this, C2328a.WAIT_PROCESSING)) {
-                                            C2331d.m10100a((Activity) MainBrowserActivity.this);
+                                        if (DialogFactory.m10125b((Activity) MainBrowserActivity.this, C2328a.WAIT_PROCESSING)) {
+                                            DialogFactory.m10100a((Activity) MainBrowserActivity.this);
                                         }
                                     }
                                 }, 2000);
                             } else {
-                                C2331d.m10114a((Activity) this, C2328a.WAIT_PROCESSING, (Bundle) null);
+                                DialogFactory.m10114a((Activity) this, C2328a.WAIT_PROCESSING, (Bundle) null);
                             }
                             if (!(this._viewModel == null || this._viewModel.mo10436o() == null)) {
-                                C2261g.m9769c(TAG, "_viewModel.BrowserVM().getCurrentBrowsingState():" + this._viewModel.mo10436o().mo9974j());
+                                ImageAppLog.error(TAG, "_viewModel.BrowserVM().getCurrentBrowsingState():" + this._viewModel.mo10436o().mo9974j());
                                 if (this._viewModel.mo10436o().mo9974j() > 0) {
                                     return;
                                 }
                             }
-                            C2261g.m9769c(TAG, "onStart StartBrowing");
+                            ImageAppLog.error(TAG, "onStart StartBrowing");
                             this._viewModel.mo10445x();
                         }
                     } else if (this._viewModel.mo10391O()) {
                         this._viewModel.mo10422h(true);
                     }
                 } else if (C2266l.m9848i(this._context)) {
-                    C2331d.m10114a((Activity) this, C2328a.WAIT_PROCESSING, (Bundle) null);
+                    DialogFactory.m10114a((Activity) this, C2328a.WAIT_PROCESSING, (Bundle) null);
                     C1892f a = C1712b.m6919c().mo4896a();
                     List b = C1879a.m7544b(a);
                     if (b != null) {
@@ -1671,7 +1671,7 @@ public class MainBrowserActivity extends C2284a implements C0010a, C2310a {
                 } else if (this._viewModel.mo10437p().mo9417h().mo9749a() == 2) {
                     C0008a.m38a((Activity) this._context, new String[]{"android.permission.WRITE_EXTERNAL_STORAGE", "android.permission.READ_EXTERNAL_STORAGE"}, 51);
                 } else {
-                    C2331d.m10114a((Activity) this, C2328a.WAIT_PROCESSING, (Bundle) null);
+                    DialogFactory.m10114a((Activity) this, C2328a.WAIT_PROCESSING, (Bundle) null);
                     C1892f a2 = C1712b.m6919c().mo4896a();
                     List b2 = C1879a.m7544b(a2);
                     if (b2 != null) {
@@ -1705,7 +1705,7 @@ public class MainBrowserActivity extends C2284a implements C0010a, C2310a {
                 this._viewModel.mo10418g(true);
             }
         } else if (C2266l.m9848i(this._context)) {
-            C2331d.m10114a((Activity) this, C2328a.WAIT_PROCESSING, (Bundle) null);
+            DialogFactory.m10114a((Activity) this, C2328a.WAIT_PROCESSING, (Bundle) null);
             this._viewModel.mo10434m(true);
             if (this._viewModel.mo10392P() == C6024b.ALL) {
                 this._viewModel.mo10445x();
@@ -1715,7 +1715,7 @@ public class MainBrowserActivity extends C2284a implements C0010a, C2310a {
         } else if (this._viewModel.mo10437p().mo9417h().mo9749a() == 2) {
             C0008a.m38a((Activity) this._context, new String[]{"android.permission.WRITE_EXTERNAL_STORAGE", "android.permission.READ_EXTERNAL_STORAGE"}, 51);
         } else {
-            C2331d.m10114a((Activity) this, C2328a.WAIT_PROCESSING, (Bundle) null);
+            DialogFactory.m10114a((Activity) this, C2328a.WAIT_PROCESSING, (Bundle) null);
             this._viewModel.mo10434m(true);
             if (this._viewModel.mo10392P() == C6024b.ALL) {
                 this._viewModel.mo10445x();
@@ -1729,12 +1729,12 @@ public class MainBrowserActivity extends C2284a implements C0010a, C2310a {
     public void onRestart() {
         super.onRestart();
         if (!(this._browseMenu == null || this._browseMenu.mo10255f() == null)) {
-            this.mReconnectThread = new C4411b((Activity) this._context, this._browseMenu.mo10255f(), this._browseMenu.mo10256g(), this._browseMenu.mo10257h(), true);
+            this.mReconnectThread = new BrowserConnectWiFi((Activity) this._context, this._browseMenu.mo10255f(), this._browseMenu.mo10256g(), this._browseMenu.mo10257h(), true);
             this._browseMenu.mo10228a((String) null);
         }
-        C2028e a = C2253z.m9680a(this._context, true);
+        C2028e a = ServiceFactory.m9680a(this._context, true);
         if (a != null) {
-            C1846e i = a.mo5285i();
+            CameraStatus i = a.mo5285i();
             if (i == null) {
                 return;
             }
@@ -1747,7 +1747,7 @@ public class MainBrowserActivity extends C2284a implements C0010a, C2310a {
     public void onUserLeaveHint() {
         if (this._imageAppService != null) {
             boolean p = this._imageAppService.mo5654p();
-            C2261g.m9769c(TAG, "isBG:" + p);
+            ImageAppLog.error(TAG, "isBG:" + p);
             if (this._context != null && PreferenceManager.getDefaultSharedPreferences(this._context).getBoolean("Auto", false) && p) {
                 new UsagesLogService().mo5911a(this._context);
             }
@@ -1834,7 +1834,7 @@ public class MainBrowserActivity extends C2284a implements C0010a, C2310a {
                 Bundle extras = intent.getExtras();
                 if (extras != null) {
                     if (extras.containsKey("ReconnectWiFiAP")) {
-                        this.mReconnectThread = new C4411b(this, extras.getString("ReconnectWiFiAP"), this._browseMenu.mo10256g(), this._browseMenu.mo10257h(), true);
+                        this.mReconnectThread = new BrowserConnectWiFi(this, extras.getString("ReconnectWiFiAP"), this._browseMenu.mo10256g(), this._browseMenu.mo10257h(), true);
                         if (this._viewModel != null && ((Boolean) this._viewModel.mo10436o().f14237e.mo3217b()).booleanValue()) {
                             this._viewModel.mo10436o().mo9988v();
                         }
@@ -1847,58 +1847,58 @@ public class MainBrowserActivity extends C2284a implements C0010a, C2310a {
                             Intent b = C1347a.m5308b(this._context, new C1349a() {
                                 /* renamed from: a */
                                 public void mo3228a() {
-                                    C2331d.m10114a((Activity) MainBrowserActivity.this, C2328a.ON_NEED_LUMIX_LINK_STAY, (Bundle) null);
+                                    DialogFactory.m10114a((Activity) MainBrowserActivity.this, C2328a.ON_NEED_LUMIX_LINK_STAY, (Bundle) null);
                                 }
                             });
                             if (b != null) {
                                 String className = b.getComponent().getClassName();
-                                C2261g.m9771e(TAG, getClass().getName() + ":" + className);
+                                ImageAppLog.info(TAG, getClass().getName() + ":" + className);
                                 if (!className.equalsIgnoreCase(getClass().getName()) || this._viewModel == null) {
                                     finish();
                                     startActivity(b);
                                 } else {
-                                    C2261g.m9763a(TAG, "onActivityResult() => OnOneContentPreviewResult()");
+                                    ImageAppLog.debug(TAG, "onActivityResult() => OnOneContentPreviewResult()");
                                     this._resultAction.mo10188a(extras);
                                 }
                             }
                         } else {
-                            C2261g.m9763a(TAG, "onActivityResult() => OnOneContentPreviewResult()");
+                            ImageAppLog.debug(TAG, "onActivityResult() => OnOneContentPreviewResult()");
                             this._resultAction.mo10188a(extras);
                         }
                     } else if (i == 3 && i2 == -1) {
-                        C2261g.m9763a(TAG, "onActivityResult() => OnPictureJumpResult()");
+                        ImageAppLog.debug(TAG, "onActivityResult() => OnPictureJumpResult()");
                         this._resultAction.m17102b(extras);
                         if (this._viewModel != null && !((Boolean) this._viewModel.mo10436o().f14237e.mo3217b()).booleanValue()) {
                             this._viewModel.mo10436o().mo9985s();
                         }
                     } else if (i == 4 && i2 == -1) {
-                        C2261g.m9763a(TAG, "onActivityResult() => OnHighlightResult()");
+                        ImageAppLog.debug(TAG, "onActivityResult() => OnHighlightResult()");
                         this._resultAction.m17105c(extras);
                     } else if (i == 20 && i2 == -1) {
-                        C2261g.m9763a(TAG, "onActivityResult() => OnHighlightResult()");
+                        ImageAppLog.debug(TAG, "onActivityResult() => OnHighlightResult()");
                         this._resultAction.m17105c(extras);
                     } else if (i == 21 && i2 == -1) {
-                        C2261g.m9763a(TAG, "onActivityResult() => OnHighlightResult()");
+                        ImageAppLog.debug(TAG, "onActivityResult() => OnHighlightResult()");
                         this._resultAction.m17108d(extras);
                     } else if (i == 7 && i2 == -1) {
-                        C2261g.m9763a(TAG, "onActivityResult() => OnMenuSettingResult()");
+                        ImageAppLog.debug(TAG, "onActivityResult() => OnMenuSettingResult()");
                         this._resultAction.m17110e(extras);
                     } else if (i == 8 && i2 == -1) {
-                        C2261g.m9763a(TAG, "onActivityResult() => OnSceneProtectResult()");
+                        ImageAppLog.debug(TAG, "onActivityResult() => OnSceneProtectResult()");
                         this._resultAction.m17112f(extras);
                     } else if (i == 9 && i2 == -1) {
-                        C2261g.m9763a(TAG, "onActivityResult() => OnSplitDeleteResult()");
+                        ImageAppLog.debug(TAG, "onActivityResult() => OnSplitDeleteResult()");
                         this._resultAction.m17114g(extras);
                     } else if (i == 12 && i2 == -1) {
-                        C2261g.m9763a(TAG, "onActivityResult() => OnPicmateUnsentImageListResult()");
+                        ImageAppLog.debug(TAG, "onActivityResult() => OnPicmateUnsentImageListResult()");
                         if (this._viewModel != null) {
                             this._viewModel.mo10435n();
                         }
                     } else if (i == 15 && i2 == -1) {
-                        C2261g.m9763a(TAG, "onActivityResult() => OnAllDeleteResult()");
+                        ImageAppLog.debug(TAG, "onActivityResult() => OnAllDeleteResult()");
                         this._resultAction.m17116h(extras);
                     } else if (i == 17 && i2 == -1) {
-                        C2261g.m9763a(TAG, "onActivityResult() => OnGroupFolderResult()");
+                        ImageAppLog.debug(TAG, "onActivityResult() => OnGroupFolderResult()");
                         this._resultAction.m17118i(extras);
                         if (!(this._viewModel == null || this._viewModel.mo10436o() == null)) {
                             if (((Boolean) this._viewModel.mo10436o().f14237e.mo3217b()).booleanValue()) {
@@ -1919,7 +1919,7 @@ public class MainBrowserActivity extends C2284a implements C0010a, C2310a {
                 }
             }
             if (i == 100) {
-                C2261g.m9763a(TAG, "onActivityResult() => IntentUpload");
+                ImageAppLog.debug(TAG, "onActivityResult() => IntentUpload");
                 if (this._browseMenu != null) {
                     this._browseMenu.mo10226a(this._viewModel.mo10436o());
                     this._browseMenu.mo10233a(false, false);
@@ -1946,7 +1946,7 @@ public class MainBrowserActivity extends C2284a implements C0010a, C2310a {
     }
 
     public void OnClickPicmateUnsentImageList(View view) {
-        C2261g.m9760a(3162127, "");
+        ImageAppLog.m9760a(3162127, "");
         if (!isFinishing() && this._viewModel != null) {
             this._viewModel.mo10382F();
         }
@@ -1988,28 +1988,28 @@ public class MainBrowserActivity extends C2284a implements C0010a, C2310a {
     }
 
     public void OnClickLiveView(View view) {
-        C2261g.m9760a(3149826, "");
+        ImageAppLog.m9760a(3149826, "");
         if (this._tabMenuUtil != null) {
             this._tabMenuUtil.mo6087d(this, this._viewModel, this._cameraUtil);
         }
     }
 
     public void OnClickBrowser(View view) {
-        C2261g.m9760a(3149827, "");
+        ImageAppLog.m9760a(3149827, "");
         if (this._tabMenuUtil != null) {
             this._tabMenuUtil.mo6088e(this, this._viewModel, this._cameraUtil);
         }
     }
 
     public void OnClickSetup(View view) {
-        C2261g.m9760a(3149828, "");
+        ImageAppLog.m9760a(3149828, "");
         if (this._tabMenuUtil != null) {
             this._tabMenuUtil.mo6086a(this);
         }
     }
 
     public void OnClickHome(View view) {
-        C2261g.m9760a(3149825, "");
+        ImageAppLog.m9760a(3149825, "");
         if (this._tabMenuUtil != null) {
             this._tabMenuUtil.OnClickHome(this, GetViewModel(), this._cameraUtil);
         }
@@ -2017,14 +2017,14 @@ public class MainBrowserActivity extends C2284a implements C0010a, C2310a {
 
     public void OnClickSelectFolder(View view) {
         if (!isFinishing()) {
-            C2331d.m10100a((Activity) this);
+            DialogFactory.m10100a((Activity) this);
             Bundle bundle = new Bundle();
             bundle.putStringArray(C2378b.SINGLE_CHOICE_LIST.name(), this._viewModel.mo10437p().mo9414f());
             bundle.putInt(C2378b.SINGLE_CHOICE_CHECKED_ITEM.name(), this._viewModel.mo10437p().mo9415g());
-            C2331d.m10115a((Activity) this, C2328a.SELECT_FOLDER, bundle, (C2325c) new C2325c() {
+            DialogFactory.m10115a((Activity) this, C2328a.SELECT_FOLDER, bundle, (C2325c) new C2325c() {
                 /* renamed from: a */
                 public void mo6131a() {
-                    C2331d.m10129c((Activity) MainBrowserActivity.this, C2328a.SELECT_FOLDER, (int) R.id.title, (int) R.string.smartop_albumlist_title);
+                    DialogFactory.m10129c((Activity) MainBrowserActivity.this, C2328a.SELECT_FOLDER, (int) R.id.title, (int) R.string.smartop_albumlist_title);
                 }
             });
             PreferenceManager.getDefaultSharedPreferences(this._context).edit().putBoolean("play_folder_change", true).putBoolean("play_format_change", false).apply();
@@ -2033,14 +2033,14 @@ public class MainBrowserActivity extends C2284a implements C0010a, C2310a {
 
     public void OnClickSelectFormat(View view) {
         if (!isFinishing()) {
-            C2331d.m10100a((Activity) this);
+            DialogFactory.m10100a((Activity) this);
             Bundle bundle = new Bundle();
             bundle.putStringArray(C2378b.SINGLE_CHOICE_LIST.name(), this._viewModel.mo10437p().mo9419j());
             bundle.putInt(C2378b.SINGLE_CHOICE_CHECKED_ITEM.name(), this._viewModel.mo10437p().mo9421l());
-            C2331d.m10115a((Activity) this, C2328a.SELECT_MOVIE_FORMAT, bundle, (C2325c) new C2325c() {
+            DialogFactory.m10115a((Activity) this, C2328a.SELECT_MOVIE_FORMAT, bundle, (C2325c) new C2325c() {
                 /* renamed from: a */
                 public void mo6131a() {
-                    C2331d.m10129c((Activity) MainBrowserActivity.this, C2328a.SELECT_MOVIE_FORMAT, (int) R.id.title, (int) R.string.play_select_format);
+                    DialogFactory.m10129c((Activity) MainBrowserActivity.this, C2328a.SELECT_MOVIE_FORMAT, (int) R.id.title, (int) R.string.play_select_format);
                 }
             });
             SharedPreferences defaultSharedPreferences = PreferenceManager.getDefaultSharedPreferences(this._context);
@@ -2055,14 +2055,14 @@ public class MainBrowserActivity extends C2284a implements C0010a, C2310a {
 
     public void OnClickOptionList(View view) {
         if (!isFinishing()) {
-            C2331d.m10100a((Activity) this);
+            DialogFactory.m10100a((Activity) this);
             this._viewModel.mo10407b(this._binder.mo10372d());
             Bundle bundle = new Bundle();
             bundle.putStringArray(C2378b.ITEM_LIST.name(), this._viewModel.mo10438q().mo12942e());
-            C2331d.m10115a((Activity) this, C2328a.SELECT_MOVIE_FUNCTION, bundle, (C2325c) new C2325c() {
+            DialogFactory.m10115a((Activity) this, C2328a.SELECT_MOVIE_FUNCTION, bundle, (C2325c) new C2325c() {
                 /* renamed from: a */
                 public void mo6131a() {
-                    C2331d.m10129c((Activity) MainBrowserActivity.this, C2328a.SELECT_MOVIE_FUNCTION, (int) R.id.title, (int) R.string.play_camera_function);
+                    DialogFactory.m10129c((Activity) MainBrowserActivity.this, C2328a.SELECT_MOVIE_FUNCTION, (int) R.id.title, (int) R.string.play_camera_function);
                 }
             });
         }
@@ -2075,7 +2075,7 @@ public class MainBrowserActivity extends C2284a implements C0010a, C2310a {
     }
 
     public void OnClickBrowseActionCopy(View view) {
-        C2261g.m9760a(3194881, "");
+        ImageAppLog.m9760a(3194881, "");
         this._copyButton = view;
         if (C2266l.m9848i(this._context)) {
             if (this._viewModel != null) {
@@ -2109,7 +2109,7 @@ public class MainBrowserActivity extends C2284a implements C0010a, C2310a {
     }
 
     public void OnClickBrowseActionDelete(View view) {
-        C2261g.m9760a(3194882, "");
+        ImageAppLog.m9760a(3194882, "");
         if (this._viewModel != null) {
             this._viewModel.mo10407b(this._binder.mo10372d());
         }
@@ -2136,18 +2136,18 @@ public class MainBrowserActivity extends C2284a implements C0010a, C2310a {
         switch (i) {
             case 1:
                 if (!C2266l.m9848i(this._context)) {
-                    C2331d.m10114a((Activity) this, C2328a.ON_PERMISSON_DENIED_COPY_ERROR, (Bundle) null);
+                    DialogFactory.m10114a((Activity) this, C2328a.ON_PERMISSON_DENIED_COPY_ERROR, (Bundle) null);
                     return false;
                 }
-                C2331d.m10115a((Activity) this, C2328a.ON_DMS_RECEIVING, (Bundle) null, (C2325c) new C2325c() {
+                DialogFactory.m10115a((Activity) this, C2328a.ON_DMS_RECEIVING, (Bundle) null, (C2325c) new C2325c() {
                     /* renamed from: a */
                     public void mo6131a() {
-                        C2331d.m10129c((Activity) MainBrowserActivity.this, C2328a.ON_DMS_RECEIVING, (int) R.id.text, (int) R.string.cmn_msg_now_regist_image);
+                        DialogFactory.m10129c((Activity) MainBrowserActivity.this, C2328a.ON_DMS_RECEIVING, (int) R.id.text, (int) R.string.cmn_msg_now_regist_image);
                     }
                 });
                 return false;
             case 2:
-                C2331d.m10100a((Activity) this);
+                DialogFactory.m10100a((Activity) this);
                 if (this._viewModel != null && this._viewModel.mo10437p().mo9417h().mo9749a() == 2) {
                     if (this._viewModel != null && ((Boolean) this._viewModel.mo10436o().f14237e.mo3217b()).booleanValue()) {
                         this._viewModel.mo10436o().mo9985s();
@@ -2169,14 +2169,14 @@ public class MainBrowserActivity extends C2284a implements C0010a, C2310a {
             case 6:
                 return false;
             case 7:
-                if (C2331d.m10125b((Activity) this, C2328a.ON_DMS_RECEIVING)) {
-                    C2331d.m10100a((Activity) this);
+                if (DialogFactory.m10125b((Activity) this, C2328a.ON_DMS_RECEIVING)) {
+                    DialogFactory.m10100a((Activity) this);
                 }
                 return false;
             case C1702a.HorizontalPicker_right_blank_area_width /*10*/:
                 return false;
             case C1702a.HorizontalPicker_hairline_visible /*11*/:
-                C1985b a = C2253z.m9679a(this._context, C1712b.m6919c().mo4896a());
+                C1985b a = ServiceFactory.m9679a(this._context, C1712b.m6919c().mo4896a());
                 if (a == null) {
                     return false;
                 }
@@ -2186,8 +2186,8 @@ public class MainBrowserActivity extends C2284a implements C0010a, C2310a {
                         if (MainBrowserActivity.this._handler != null) {
                             MainBrowserActivity.this._handler.post(new Runnable() {
                                 public void run() {
-                                    C2331d.m10100a((Activity) MainBrowserActivity.this._context);
-                                    C2331d.m10114a((Activity) MainBrowserActivity.this._context, C2328a.WAIT_PROCESSING, (Bundle) null);
+                                    DialogFactory.m10100a((Activity) MainBrowserActivity.this._context);
+                                    DialogFactory.m10114a((Activity) MainBrowserActivity.this._context, C2328a.WAIT_PROCESSING, (Bundle) null);
                                 }
                             });
                         }
@@ -2198,7 +2198,7 @@ public class MainBrowserActivity extends C2284a implements C0010a, C2310a {
                         if (MainBrowserActivity.this._handler != null) {
                             MainBrowserActivity.this._handler.post(new Runnable() {
                                 public void run() {
-                                    C2331d.m10100a((Activity) MainBrowserActivity.this._context);
+                                    DialogFactory.m10100a((Activity) MainBrowserActivity.this._context);
                                 }
                             });
                         }
@@ -2209,7 +2209,7 @@ public class MainBrowserActivity extends C2284a implements C0010a, C2310a {
                         if (MainBrowserActivity.this._handler != null) {
                             MainBrowserActivity.this._handler.post(new Runnable() {
                                 public void run() {
-                                    C2331d.m10100a((Activity) MainBrowserActivity.this._context);
+                                    DialogFactory.m10100a((Activity) MainBrowserActivity.this._context);
                                 }
                             });
                         }
@@ -2247,7 +2247,7 @@ public class MainBrowserActivity extends C2284a implements C0010a, C2310a {
     }
 
     public void OnReconnectDevice() {
-        C2261g.m9771e(TAG, "OnReconnectDevice()");
+        ImageAppLog.info(TAG, "OnReconnectDevice()");
         if (C2266l.m9803a(this._context)) {
             processReconnectDevice();
         } else {
@@ -2257,9 +2257,9 @@ public class MainBrowserActivity extends C2284a implements C0010a, C2310a {
                 }
             });
         }
-        C2028e a = C2253z.m9680a(this._context, true);
+        C2028e a = ServiceFactory.m9680a(this._context, true);
         if (a != null) {
-            C1846e i = a.mo5285i();
+            CameraStatus i = a.mo5285i();
             if (i == null) {
                 return;
             }
@@ -2274,12 +2274,12 @@ public class MainBrowserActivity extends C2284a implements C0010a, C2310a {
         Intent b = C1347a.m5308b(this._context, new C1349a() {
             /* renamed from: a */
             public void mo3228a() {
-                C2331d.m10114a((Activity) MainBrowserActivity.this, C2328a.ON_NEED_LUMIX_LINK_STAY, (Bundle) null);
+                DialogFactory.m10114a((Activity) MainBrowserActivity.this, C2328a.ON_NEED_LUMIX_LINK_STAY, (Bundle) null);
             }
         });
         if (b != null) {
             String className = b.getComponent().getClassName();
-            C2261g.m9771e(TAG, getClass().getName() + ":" + className);
+            ImageAppLog.info(TAG, getClass().getName() + ":" + className);
             if (this._viewModel != null && this._viewModel.mo10387K()) {
                 this._viewModel.mo10416f(false);
                 finish();
@@ -2329,7 +2329,7 @@ public class MainBrowserActivity extends C2284a implements C0010a, C2310a {
         Intent a = C1347a.m5301a(this._context, (C1349a) new C1349a() {
             /* renamed from: a */
             public void mo3228a() {
-                C2331d.m10114a((Activity) MainBrowserActivity.this, C2328a.ON_NEED_LUMIX_LINK_NOCONNECTLIVEVIEW, (Bundle) null);
+                DialogFactory.m10114a((Activity) MainBrowserActivity.this, C2328a.ON_NEED_LUMIX_LINK_NOCONNECTLIVEVIEW, (Bundle) null);
             }
         });
         if (a != null) {
@@ -2481,7 +2481,7 @@ public class MainBrowserActivity extends C2284a implements C0010a, C2310a {
                 return;
             case C1702a.HorizontalPicker_right_blank_area_width /*10*/:
                 if (this._browseMenu.mo10275z()) {
-                    C2331d.m10114a((Activity) this, C2328a.ON_BROWSE_ACTION_WARNING_COPY_RAW, (Bundle) null);
+                    DialogFactory.m10114a((Activity) this, C2328a.ON_BROWSE_ACTION_WARNING_COPY_RAW, (Bundle) null);
                 } else {
                     this._browseMenu.mo10263n();
                 }
@@ -2489,7 +2489,7 @@ public class MainBrowserActivity extends C2284a implements C0010a, C2310a {
                 return;
             case C1702a.HorizontalPicker_hairline_visible /*11*/:
                 if (this._browseMenu.mo10275z()) {
-                    C2331d.m10114a((Activity) this, C2328a.ON_BROWSE_ACTION_WARNING_COPY_RAW, (Bundle) null);
+                    DialogFactory.m10114a((Activity) this, C2328a.ON_BROWSE_ACTION_WARNING_COPY_RAW, (Bundle) null);
                     return;
                 } else {
                     this._browseMenu.mo10263n();
@@ -2500,7 +2500,7 @@ public class MainBrowserActivity extends C2284a implements C0010a, C2310a {
                 PreferenceManager.getDefaultSharedPreferences(this._context).edit().putBoolean("CopyRAWPlayMessage", true).apply();
                 return;
             case 13:
-                C2331d.m10114a((Activity) this, C2328a.ON_BROWSE_ACTION_WARNING_COPY, (Bundle) null);
+                DialogFactory.m10114a((Activity) this, C2328a.ON_BROWSE_ACTION_WARNING_COPY, (Bundle) null);
                 return;
             case 14:
             case 15:
@@ -2547,10 +2547,10 @@ public class MainBrowserActivity extends C2284a implements C0010a, C2310a {
                 return;
             case 22:
                 if (this._imageAppService != null) {
-                    C2261g.m9763a(TAG, "ACTION_MODE writeData:" + this._imageAppService.mo5627a(4, C4244s.f14192b));
+                    ImageAppLog.debug(TAG, "ACTION_MODE writeData:" + this._imageAppService.mo5627a(4, C4244s.f14192b));
                     this._handler.post(new Runnable() {
                         public void run() {
-                            C2331d.m10114a((Activity) MainBrowserActivity.this, C2328a.ON_PROGRESS, (Bundle) null);
+                            DialogFactory.m10114a((Activity) MainBrowserActivity.this, C2328a.ON_PROGRESS, (Bundle) null);
                         }
                     });
                     return;
@@ -2591,7 +2591,7 @@ public class MainBrowserActivity extends C2284a implements C0010a, C2310a {
     public void onNegativeButtonClick(C2328a aVar) {
         switch (C429614.f14358a[aVar.ordinal()]) {
             case C1702a.HorizontalPicker_title_area_width /*8*/:
-                C2337e.m10173a(this._browseMenu, (C5956i) null, (C5942h) null);
+                C2337e.m10173a(this._browseMenu, (PictureJumpViewModel) null, (C5942h) null);
                 return;
             case C1702a.HorizontalPicker_title_image /*9*/:
                 this._browseMenu.mo10230a(null);
@@ -2610,21 +2610,21 @@ public class MainBrowserActivity extends C2284a implements C0010a, C2310a {
                 return;
             case 29:
                 if (this._browseMenu.mo10271v()) {
-                    C2331d.m10114a((Activity) this, C2328a.WAIT_PROCESSING, (Bundle) null);
+                    DialogFactory.m10114a((Activity) this, C2328a.WAIT_PROCESSING, (Bundle) null);
                     this._browseMenu.mo10264o();
                 }
-                C2331d.m10102a((Activity) this, C2328a.ON_BROWSE_ACTION_PROCESS_COPY);
+                DialogFactory.m10102a((Activity) this, C2328a.ON_BROWSE_ACTION_PROCESS_COPY);
                 return;
             case 30:
                 if (this._browseMenu.mo10272w()) {
-                    C2331d.m10114a((Activity) this, C2328a.WAIT_PROCESSING, (Bundle) null);
+                    DialogFactory.m10114a((Activity) this, C2328a.WAIT_PROCESSING, (Bundle) null);
                     this._browseMenu.mo10273x();
                     return;
                 }
                 return;
             case 31:
                 if (this._browseMenu.mo10271v()) {
-                    C2331d.m10114a((Activity) this, C2328a.WAIT_PROCESSING, (Bundle) null);
+                    DialogFactory.m10114a((Activity) this, C2328a.WAIT_PROCESSING, (Bundle) null);
                     this._browseMenu.mo10267r();
                     return;
                 }
@@ -2648,8 +2648,8 @@ public class MainBrowserActivity extends C2284a implements C0010a, C2310a {
     public void deviceSelectFolder(int i, boolean z) {
         if (this._viewModel != null) {
             int g = this._viewModel.mo10437p().mo9415g();
-            C2331d.m10100a((Activity) this);
-            C2261g.m9763a(getClass().getSimpleName(), "selected = " + g + ", next = " + i);
+            DialogFactory.m10100a((Activity) this);
+            ImageAppLog.debug(getClass().getSimpleName(), "selected = " + g + ", next = " + i);
             if (g == i) {
                 return;
             }
@@ -2663,7 +2663,7 @@ public class MainBrowserActivity extends C2284a implements C0010a, C2310a {
                     C0008a.m38a((Activity) this._context, new String[]{"android.permission.WRITE_EXTERNAL_STORAGE", "android.permission.READ_EXTERNAL_STORAGE"}, 48);
                 }
             } else {
-                C2331d.m10114a((Activity) this, C2328a.WARNING_DIFFERENT_FOLDER_SELECTED, (Bundle) null);
+                DialogFactory.m10114a((Activity) this, C2328a.WARNING_DIFFERENT_FOLDER_SELECTED, (Bundle) null);
                 this._selectedFolder = i;
             }
         }
@@ -2686,12 +2686,12 @@ public class MainBrowserActivity extends C2284a implements C0010a, C2310a {
                     deviceSelectFolder(i, true);
                     return;
                 }
-                C2331d.m10100a((Activity) this);
+                DialogFactory.m10100a((Activity) this);
                 if (this._viewModel.mo10437p().mo9415g() == i) {
                     return;
                 }
                 if (this._viewModel.mo10436o().mo9983q().size() > 0) {
-                    C2331d.m10114a((Activity) this, C2328a.WARNING_DIFFERENT_FOLDER_SELECTED, (Bundle) null);
+                    DialogFactory.m10114a((Activity) this, C2328a.WARNING_DIFFERENT_FOLDER_SELECTED, (Bundle) null);
                     this._selectedFolder = i;
                     return;
                 }
@@ -2699,17 +2699,17 @@ public class MainBrowserActivity extends C2284a implements C0010a, C2310a {
                 return;
             case 35:
                 if (this._viewModel != null) {
-                    C2331d.m10100a((Activity) this);
+                    DialogFactory.m10100a((Activity) this);
                     if (this._viewModel.mo10437p().mo9421l() == i) {
                         return;
                     }
                     if (this._viewModel.mo10436o().mo9983q().size() > 0) {
-                        C2331d.m10114a((Activity) this, C2328a.ResetSelectedContentsDlg, (Bundle) null);
+                        DialogFactory.m10114a((Activity) this, C2328a.ResetSelectedContentsDlg, (Bundle) null);
                         this._selectedFolder = i;
                         return;
                     }
                     this._viewModel.mo10437p().mo9412e(i);
-                    C2331d.m10100a((Activity) this);
+                    DialogFactory.m10100a((Activity) this);
                     this._viewModel.mo10436o().mo9957b(false);
                     C2266l.m9797a((Context) this, (Activity) this, this._viewModel.mo10437p().mo9406b(i));
                     return;
@@ -2732,29 +2732,29 @@ public class MainBrowserActivity extends C2284a implements C0010a, C2310a {
                 this._selectCmaeraFuncIndex = i;
                 if (h != null) {
                     if (h.equals(this._context.getText(R.string.ply_action_create_highlight).toString())) {
-                        C2261g.m9760a(3162123, "");
+                        ImageAppLog.m9760a(3162123, "");
                         if (!C2266l.m9848i(this._context)) {
-                            C2331d.m10100a((Activity) this);
+                            DialogFactory.m10100a((Activity) this);
                             C0008a.m38a(this, new String[]{"android.permission.WRITE_EXTERNAL_STORAGE", "android.permission.READ_EXTERNAL_STORAGE"}, 39);
                             return;
                         }
                     } else if (h.equals(this._context.getText(R.string.ply_action_multiframephoto).toString())) {
-                        C2261g.m9760a(3162122, "");
+                        ImageAppLog.m9760a(3162122, "");
                         if (!C2266l.m9848i(this._context)) {
-                            C2331d.m10100a((Activity) this);
+                            DialogFactory.m10100a((Activity) this);
                             C0008a.m38a(this, new String[]{"android.permission.WRITE_EXTERNAL_STORAGE", "android.permission.READ_EXTERNAL_STORAGE"}, 37);
                             return;
                         }
                     } else if (h.equals(this._context.getText(R.string.ply_action_tv_play).toString())) {
-                        C2261g.m9760a(3162124, "");
+                        ImageAppLog.m9760a(3162124, "");
                     } else if (h.equals(this._context.getText(R.string.ply_action_edit_split_delete).toString())) {
-                        C2261g.m9760a(3162125, "");
+                        ImageAppLog.m9760a(3162125, "");
                     } else if (h.equals(this._context.getText(R.string.ply_action_edit_protect).toString())) {
-                        C2261g.m9760a(3162126, "");
+                        ImageAppLog.m9760a(3162126, "");
                     }
                 }
                 this._viewModel.mo10438q().mo12935b(i);
-                C2331d.m10100a((Activity) this);
+                DialogFactory.m10100a((Activity) this);
                 return;
             default:
                 super.onItemClick(aVar, i);
@@ -2765,8 +2765,8 @@ public class MainBrowserActivity extends C2284a implements C0010a, C2310a {
     private void changeSDCommand(final int i) {
         final C1501d dVar = new C1501d(C1712b.m6919c().mo4896a().f5682d);
         final String str = i == 0 ? "sd1" : "sd2";
-        C2331d.m10100a((Activity) this);
-        C2331d.m10114a((Activity) this, C2328a.WAIT_PROCESSING, (Bundle) null);
+        DialogFactory.m10100a((Activity) this);
+        DialogFactory.m10114a((Activity) this, C2328a.WAIT_PROCESSING, (Bundle) null);
         new Thread(new Runnable() {
             public void run() {
                 if (dVar.mo3712k(str)) {
@@ -2780,8 +2780,8 @@ public class MainBrowserActivity extends C2284a implements C0010a, C2310a {
                 } else if (MainBrowserActivity.this._handler != null) {
                     MainBrowserActivity.this._handler.post(new Runnable() {
                         public void run() {
-                            C2331d.m10100a((Activity) MainBrowserActivity.this);
-                            C2331d.m10114a((Activity) MainBrowserActivity.this, C2328a.DIALOG_ID_CANNOT_SWITCH_CUR_SD, (Bundle) null);
+                            DialogFactory.m10100a((Activity) MainBrowserActivity.this);
+                            DialogFactory.m10114a((Activity) MainBrowserActivity.this, C2328a.DIALOG_ID_CANNOT_SWITCH_CUR_SD, (Bundle) null);
                         }
                     });
                 }
@@ -2804,21 +2804,21 @@ public class MainBrowserActivity extends C2284a implements C0010a, C2310a {
                         if (this._viewModel.mo10419g()) {
                             this._cameraUtil.mo6033a((Runnable) new Runnable() {
                                 public void run() {
-                                    if (C2331d.m10125b((Activity) MainBrowserActivity.this, C2328a.WAIT_PROCESSING)) {
-                                        C2331d.m10100a((Activity) MainBrowserActivity.this);
+                                    if (DialogFactory.m10125b((Activity) MainBrowserActivity.this, C2328a.WAIT_PROCESSING)) {
+                                        DialogFactory.m10100a((Activity) MainBrowserActivity.this);
                                     }
                                 }
                             }, 2000);
                         } else {
-                            C2331d.m10114a((Activity) this, C2328a.WAIT_PROCESSING, (Bundle) null);
+                            DialogFactory.m10114a((Activity) this, C2328a.WAIT_PROCESSING, (Bundle) null);
                         }
                         if (!(this._viewModel == null || this._viewModel.mo10436o() == null)) {
-                            C2261g.m9769c(TAG, "_viewModel.BrowserVM().getCurrentBrowsingState():" + this._viewModel.mo10436o().mo9974j());
+                            ImageAppLog.error(TAG, "_viewModel.BrowserVM().getCurrentBrowsingState():" + this._viewModel.mo10436o().mo9974j());
                             if (this._viewModel.mo10436o().mo9974j() > 0) {
                                 return;
                             }
                         }
-                        C2261g.m9769c(TAG, "onStart StartBrowing");
+                        ImageAppLog.error(TAG, "onStart StartBrowing");
                         this._viewModel.mo10445x();
                         return;
                     }
@@ -2853,7 +2853,7 @@ public class MainBrowserActivity extends C2284a implements C0010a, C2310a {
                     return;
                 case 51:
                     if (iArr[0] == 0) {
-                        C2331d.m10114a((Activity) this, C2328a.WAIT_PROCESSING, (Bundle) null);
+                        DialogFactory.m10114a((Activity) this, C2328a.WAIT_PROCESSING, (Bundle) null);
                         this._viewModel.mo10434m(true);
                         if (this._viewModel.mo10392P() == C6024b.ALL) {
                             this._viewModel.mo10445x();
@@ -2870,7 +2870,7 @@ public class MainBrowserActivity extends C2284a implements C0010a, C2310a {
                         this._viewModel.mo6022d().putBoolean("AssistCopyIsFinish", true);
                         this._cameraUtil.mo6032a((Runnable) new Runnable() {
                             public void run() {
-                                C2331d.m10100a((Activity) MainBrowserActivity.this._context);
+                                DialogFactory.m10100a((Activity) MainBrowserActivity.this._context);
                                 if (MainBrowserActivity.this._browseMenu != null) {
                                     MainBrowserActivity.this._viewModel.mo10432l(true);
                                     MainBrowserActivity.this._browseMenu.mo10262m();
@@ -2885,7 +2885,7 @@ public class MainBrowserActivity extends C2284a implements C0010a, C2310a {
                         this._viewModel.mo6022d().putBoolean("HighlightModeIsFinish", true);
                         this._cameraUtil.mo6032a((Runnable) new Runnable() {
                             public void run() {
-                                C2331d.m10100a((Activity) MainBrowserActivity.this._context);
+                                DialogFactory.m10100a((Activity) MainBrowserActivity.this._context);
                                 if (MainBrowserActivity.this._browseMenu != null) {
                                     MainBrowserActivity.this._viewModel.mo10423i(true);
                                     MainBrowserActivity.this._browseMenu.mo10261l();

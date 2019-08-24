@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/core/c/s;->a(Lcom/panasonic/avc/cng/core/c/g;IZ)V
+    value = Lcom/panasonic/avc/cng/core/c/Picmate;->a(Lcom/panasonic/avc/cng/core/c/g;IZ)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -19,16 +19,16 @@
 
 .field final synthetic b:Ljava/util/Timer;
 
-.field final synthetic c:Lcom/panasonic/avc/cng/core/c/s;
+.field final synthetic c:Lcom/panasonic/avc/cng/core/c/Picmate;
 
 
 # direct methods
-.method constructor <init>(Lcom/panasonic/avc/cng/core/c/s;Lcom/panasonic/avc/cng/core/c/g;Ljava/util/Timer;)V
+.method constructor <init>(Lcom/panasonic/avc/cng/core/c/Picmate;Lcom/panasonic/avc/cng/core/c/g;Ljava/util/Timer;)V
     .locals 0
 
     .prologue
     .line 2753
-    iput-object p1, p0, Lcom/panasonic/avc/cng/core/c/s$11;->c:Lcom/panasonic/avc/cng/core/c/s;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/core/c/s$11;->c:Lcom/panasonic/avc/cng/core/c/Picmate;
 
     iput-object p2, p0, Lcom/panasonic/avc/cng/core/c/s$11;->a:Lcom/panasonic/avc/cng/core/c/g;
 
@@ -46,9 +46,9 @@
 
     .prologue
     .line 2756
-    iget-object v0, p0, Lcom/panasonic/avc/cng/core/c/s$11;->c:Lcom/panasonic/avc/cng/core/c/s;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/core/c/s$11;->c:Lcom/panasonic/avc/cng/core/c/Picmate;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/core/c/s;->p(Lcom/panasonic/avc/cng/core/c/s;)I
+    invoke-static {v0}, Lcom/panasonic/avc/cng/core/c/Picmate;->p(Lcom/panasonic/avc/cng/core/c/Picmate;)I
 
     .line 2757
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
@@ -58,11 +58,11 @@
     if-lt v0, v1, :cond_0
 
     .line 2759
-    iget-object v0, p0, Lcom/panasonic/avc/cng/core/c/s$11;->c:Lcom/panasonic/avc/cng/core/c/s;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/core/c/s$11;->c:Lcom/panasonic/avc/cng/core/c/Picmate;
 
-    iget-object v1, p0, Lcom/panasonic/avc/cng/core/c/s$11;->c:Lcom/panasonic/avc/cng/core/c/s;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/core/c/s$11;->c:Lcom/panasonic/avc/cng/core/c/Picmate;
 
-    invoke-static {v1}, Lcom/panasonic/avc/cng/core/c/s;->b(Lcom/panasonic/avc/cng/core/c/s;)Lcom/panasonic/avc/cng/core/c/o;
+    invoke-static {v1}, Lcom/panasonic/avc/cng/core/c/Picmate;->b(Lcom/panasonic/avc/cng/core/c/Picmate;)Lcom/panasonic/avc/cng/core/c/o;
 
     move-result-object v1
 
@@ -70,21 +70,21 @@
 
     move-result v1
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/core/c/s;->a(Lcom/panasonic/avc/cng/core/c/s;Z)Z
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/core/c/Picmate;->a(Lcom/panasonic/avc/cng/core/c/Picmate;Z)Z
 
     .line 2762
     :cond_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/core/c/s$11;->c:Lcom/panasonic/avc/cng/core/c/s;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/core/c/s$11;->c:Lcom/panasonic/avc/cng/core/c/Picmate;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/core/c/s;->d(Lcom/panasonic/avc/cng/core/c/s;)Z
+    invoke-static {v0}, Lcom/panasonic/avc/cng/core/c/Picmate;->d(Lcom/panasonic/avc/cng/core/c/Picmate;)Z
 
     move-result v0
 
     if-nez v0, :cond_1
 
-    iget-object v0, p0, Lcom/panasonic/avc/cng/core/c/s$11;->c:Lcom/panasonic/avc/cng/core/c/s;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/core/c/s$11;->c:Lcom/panasonic/avc/cng/core/c/Picmate;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/core/c/s;->q(Lcom/panasonic/avc/cng/core/c/s;)I
+    invoke-static {v0}, Lcom/panasonic/avc/cng/core/c/Picmate;->q(Lcom/panasonic/avc/cng/core/c/Picmate;)I
 
     move-result v0
 
@@ -92,9 +92,9 @@
 
     .line 2763
     :cond_1
-    iget-object v0, p0, Lcom/panasonic/avc/cng/core/c/s$11;->c:Lcom/panasonic/avc/cng/core/c/s;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/core/c/s$11;->c:Lcom/panasonic/avc/cng/core/c/Picmate;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/core/c/s;->e(Lcom/panasonic/avc/cng/core/c/s;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/core/c/Picmate;->e(Lcom/panasonic/avc/cng/core/c/Picmate;)Landroid/os/Handler;
 
     move-result-object v0
 

@@ -43,9 +43,9 @@
     .line 312
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/y$2$1;->a:Lcom/panasonic/avc/cng/view/setting/y$2;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/y$2;->b:Lcom/panasonic/avc/cng/view/setting/y;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/y$2;->b:Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/y;->a(Lcom/panasonic/avc/cng/view/setting/y;)Lcom/panasonic/avc/cng/view/setting/y$b;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceViewModel;->a(Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceViewModel;)Lcom/panasonic/avc/cng/view/setting/y$b;
 
     move-result-object v0
 

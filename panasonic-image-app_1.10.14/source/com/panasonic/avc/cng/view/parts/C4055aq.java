@@ -17,8 +17,8 @@ import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.C1892f;
 import com.panasonic.avc.cng.model.p051c.C1860l;
 import com.panasonic.avc.cng.model.service.C1985b;
-import com.panasonic.avc.cng.model.service.C2253z;
-import com.panasonic.avc.cng.view.parts.C3973ab.C3977a;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
+import com.panasonic.avc.cng.view.parts.SetPickerPosition.C3977a;
 
 /* renamed from: com.panasonic.avc.cng.view.parts.aq */
 public class C4055aq extends RelativeLayout implements Callback {
@@ -44,7 +44,7 @@ public class C4055aq extends RelativeLayout implements Callback {
     /* access modifiers changed from: private */
 
     /* renamed from: g */
-    public C3973ab f13710g;
+    public SetPickerPosition f13710g;
 
     /* renamed from: h */
     private LinearLayout f13711h;
@@ -149,7 +149,7 @@ public class C4055aq extends RelativeLayout implements Callback {
             if (C1712b.m6919c() != null) {
                 this.f13717n = C1712b.m6919c().mo4896a();
                 if (this.f13717n != null) {
-                    this.f13718o = C2253z.m9679a(this.f13704a, this.f13717n);
+                    this.f13718o = ServiceFactory.m9679a(this.f13704a, this.f13717n);
                 }
             }
             this.f13725v = strArr;
@@ -211,7 +211,7 @@ public class C4055aq extends RelativeLayout implements Callback {
 
     /* renamed from: a */
     private void m16338a(String[] strArr) {
-        this.f13710g = new C3973ab(this.f13704a);
+        this.f13710g = new SetPickerPosition(this.f13704a);
         this.f13710g.setOnPostionChangedListener(new C3977a() {
             /* renamed from: a */
             public void mo9447a(int i, int i2, boolean z) {

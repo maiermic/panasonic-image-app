@@ -61,7 +61,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 1044
     const-string v0, "DeviceConnectService"
@@ -76,7 +76,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/f;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppCmdLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 1047
     new-instance v1, Lcom/panasonic/avc/cng/core/dlna/h;
@@ -135,14 +135,14 @@
     if-ne v3, v4, :cond_3
 
     .line 1058
-    invoke-static {}, Lcom/panasonic/avc/cng/model/service/z;->f()Lcom/panasonic/avc/cng/model/service/a;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->f()Lcom/panasonic/avc/cng/model/service/a;
 
     move-result-object v4
 
     .line 1059
     if-eqz v4, :cond_0
 
-    instance-of v5, v4, Lcom/panasonic/avc/cng/model/service/a/c;
+    instance-of v5, v4, Lcom/panasonic/avc/cng/model/service/a/BrowserServiceCamera;
 
     if-eqz v5, :cond_0
 
@@ -180,7 +180,7 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 1091
-    invoke-static {}, Lcom/panasonic/avc/cng/model/service/z;->h()Z
+    invoke-static {}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->h()Z
 
     move-result v2
 
@@ -267,14 +267,14 @@
     if-eq v3, v4, :cond_0
 
     .line 1067
-    invoke-static {}, Lcom/panasonic/avc/cng/model/service/z;->f()Lcom/panasonic/avc/cng/model/service/a;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->f()Lcom/panasonic/avc/cng/model/service/a;
 
     move-result-object v4
 
     .line 1068
     if-eqz v4, :cond_0
 
-    instance-of v5, v4, Lcom/panasonic/avc/cng/model/service/a/c;
+    instance-of v5, v4, Lcom/panasonic/avc/cng/model/service/a/BrowserServiceCamera;
 
     if-eqz v5, :cond_0
 

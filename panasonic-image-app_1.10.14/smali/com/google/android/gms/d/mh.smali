@@ -7,7 +7,7 @@
     value = {
         "Lcom/google/android/gms/common/api/a$b",
         "<",
-        "Lcom/google/android/gms/d/mt;",
+        "Lcom/google/android/gms/d/SignInClientImpl;",
         "Lcom/google/android/gms/d/mi;",
         ">;"
     }
@@ -30,7 +30,7 @@
 
     check-cast p4, Lcom/google/android/gms/d/mi;
 
-    new-instance v0, Lcom/google/android/gms/d/mt;
+    new-instance v0, Lcom/google/android/gms/d/SignInClientImpl;
 
     const/4 v3, 0x0
 
@@ -48,7 +48,7 @@
 
     move-object v7, p6
 
-    invoke-direct/range {v0 .. v7}, Lcom/google/android/gms/d/mt;-><init>(Landroid/content/Context;Landroid/os/Looper;ZLcom/google/android/gms/common/internal/au;Landroid/os/Bundle;Lcom/google/android/gms/common/api/e$b;Lcom/google/android/gms/common/api/e$c;)V
+    invoke-direct/range {v0 .. v7}, Lcom/google/android/gms/d/SignInClientImpl;-><init>(Landroid/content/Context;Landroid/os/Looper;ZLcom/google/android/gms/common/internal/au;Landroid/os/Bundle;Lcom/google/android/gms/common/api/e$b;Lcom/google/android/gms/common/api/e$c;)V
 
     return-object v0
 .end method

@@ -11,19 +11,19 @@ import com.panasonic.avc.cng.core.dlna.C1699h;
 import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.C1892f;
-import com.panasonic.avc.cng.model.p051c.C1846e;
+import com.panasonic.avc.cng.model.p051c.CameraStatus;
 import com.panasonic.avc.cng.model.service.C2028e;
 import com.panasonic.avc.cng.model.service.C2028e.C2030b;
 import com.panasonic.avc.cng.model.service.C2028e.C2031c;
-import com.panasonic.avc.cng.model.service.C2253z;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
 import com.panasonic.avc.cng.model.service.p056c.C2013a.C2017a;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.util.C2266l;
 import com.panasonic.avc.cng.view.p073b.C2317a.C2323a;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
 import com.panasonic.avc.cng.view.p073b.C2376f.C2377a;
-import com.panasonic.avc.cng.view.setting.C5739h.C5740a;
+import com.panasonic.avc.cng.view.setting.DMSEventViewModel.C5740a;
 
 /* renamed from: com.panasonic.avc.cng.view.setting.i */
 public abstract class C5741i extends C1350a implements C2030b, C2323a, C5740a {
@@ -38,7 +38,7 @@ public abstract class C5741i extends C1350a implements C2030b, C2323a, C5740a {
     private boolean _dmsDialogIDValid = false;
     private C2328a _dmsErrorDialogID = null;
     private C2328a _dmsEventDialogID = null;
-    private C5739h _dmsEventViewModel = null;
+    private DMSEventViewModel _dmsEventViewModel = null;
     private C2031c _dmsGetStateListener;
     private int _dmsGetStateListenerTypes;
     /* access modifiers changed from: protected */
@@ -90,7 +90,7 @@ public abstract class C5741i extends C1350a implements C2030b, C2323a, C5740a {
         this._dmsGetStateListener = null;
         onDmsInitaliSetting();
         if (this._dmsGetStateListener != null) {
-            C2253z.m9680a(this._context, true).mo5268a(this._dmsGetStateListener);
+            ServiceFactory.m9680a(this._context, true).mo5268a(this._dmsGetStateListener);
         }
         this._resultCode = -1;
     }
@@ -101,7 +101,7 @@ public abstract class C5741i extends C1350a implements C2030b, C2323a, C5740a {
             this._camWatchUtil.mo12510a();
             this._camWatchUtil = null;
         }
-        C2028e a = C2253z.m9680a((Context) null, false);
+        C2028e a = ServiceFactory.m9680a((Context) null, false);
         if (!(a == null || this._dmsGetStateListener == null)) {
             a.mo5276b(this._dmsGetStateListener);
             this._dmsGetStateListener = null;
@@ -114,7 +114,7 @@ public abstract class C5741i extends C1350a implements C2030b, C2323a, C5740a {
             this._camWatchUtil.mo12510a();
             this._camWatchUtil = null;
         }
-        C2028e a = C2253z.m9680a((Context) null, false);
+        C2028e a = ServiceFactory.m9680a((Context) null, false);
         if (!(a == null || this._dmsGetStateListener == null)) {
             a.mo5276b(this._dmsGetStateListener);
             this._dmsGetStateListener = null;
@@ -127,14 +127,14 @@ public abstract class C5741i extends C1350a implements C2030b, C2323a, C5740a {
     public void onResume() {
         super.onResume();
         InitializeDmsEvent();
-        C2253z.m9680a(this._context, true).mo5267a((C2030b) this);
+        ServiceFactory.m9680a(this._context, true).mo5267a((C2030b) this);
     }
 
     /* access modifiers changed from: protected */
     public void onPause() {
         super.onPause();
         FinalizeDmsEvent();
-        C2028e a = C2253z.m9680a((Context) null, false);
+        C2028e a = ServiceFactory.m9680a((Context) null, false);
         if (a != null) {
             a.mo5275b((C2030b) this);
         }
@@ -159,7 +159,7 @@ public abstract class C5741i extends C1350a implements C2030b, C2323a, C5740a {
     /* access modifiers changed from: protected */
     public void InitializeDmsEvent() {
         if (this._dmsEventViewModel == null) {
-            this._dmsEventViewModel = new C5739h(this._context, this._handler);
+            this._dmsEventViewModel = new DMSEventViewModel(this._context, this._handler);
         }
         this._dmsEventViewModel.mo12575a(0, this);
     }
@@ -190,18 +190,18 @@ public abstract class C5741i extends C1350a implements C2030b, C2323a, C5740a {
 
     public void OnDmsEvent(int i) {
         if (i == 1) {
-            C2261g.m9771e("DmsWatchActivity", "New File Comming!");
+            ImageAppLog.info("DmsWatchActivity", "New File Comming!");
             this._handler.post(new Runnable() {
                 public void run() {
                     try {
                         C5741i.this.onDmsWatchEvent(1);
                         if (!C2266l.m9848i(C5741i.this._context)) {
-                            C2331d.m10114a((Activity) C5741i.this._context, C2328a.ON_PERMISSON_DENIED_COPY_ERROR, (Bundle) null);
+                            DialogFactory.m10114a((Activity) C5741i.this._context, C2328a.ON_PERMISSON_DENIED_COPY_ERROR, (Bundle) null);
                             C5741i.this.closeOptionsMenu();
                             return;
                         }
-                        C2331d.m10114a((Activity) C5741i.this._context, C2328a.ON_DMS_RECEIVING, (Bundle) null);
-                        C2331d.m10129c((Activity) C5741i.this._context, C2328a.ON_DMS_RECEIVING, (int) R.id.text, (int) R.string.cmn_msg_now_regist_image);
+                        DialogFactory.m10114a((Activity) C5741i.this._context, C2328a.ON_DMS_RECEIVING, (Bundle) null);
+                        DialogFactory.m10129c((Activity) C5741i.this._context, C2328a.ON_DMS_RECEIVING, (int) R.id.text, (int) R.string.cmn_msg_now_regist_image);
                         C5741i.this.closeOptionsMenu();
                     } catch (Exception e) {
                         e.printStackTrace();
@@ -213,7 +213,7 @@ public abstract class C5741i extends C1350a implements C2030b, C2323a, C5740a {
                 public void run() {
                     try {
                         Object onDmsWatchEvent = C5741i.this.onDmsWatchEvent(2);
-                        if (C2331d.m10125b((Activity) C5741i.this._context, C2328a.ON_DMS_RECEIVING)) {
+                        if (DialogFactory.m10125b((Activity) C5741i.this._context, C2328a.ON_DMS_RECEIVING)) {
                             C5741i.this.dismissAllDlg();
                         }
                         C5759a aVar = null;
@@ -308,10 +308,10 @@ public abstract class C5741i extends C1350a implements C2030b, C2323a, C5740a {
                     }
 
                     /* renamed from: a */
-                    public void mo5337a(C1846e eVar) {
+                    public void mo5337a(CameraStatus eVar) {
                         boolean z;
                         int b;
-                        if (C1846e.m7190a(eVar)) {
+                        if (CameraStatus.m7190a(eVar)) {
                             final String E = eVar.mo4656E();
                             if (C5741i.this._pantilterStatus != null && !C5741i.this._pantilterStatus.equalsIgnoreCase("noconnect") && !C5741i.this._pantilterStatus.equalsIgnoreCase("error")) {
                                 C5741i.this._handler.post(new Runnable() {
@@ -327,7 +327,7 @@ public abstract class C5741i extends C1350a implements C2030b, C2323a, C5740a {
                             b = -1;
                         } else {
                             z = true;
-                            b = C1846e.m7191b(eVar);
+                            b = CameraStatus.m7191b(eVar);
                         }
                         C5741i.this.DmsBase_OnGetState(eVar, z, b);
                     }
@@ -350,13 +350,13 @@ public abstract class C5741i extends C1350a implements C2030b, C2323a, C5740a {
 
     /* access modifiers changed from: protected */
     public boolean IsShowingDmsEventDialog() {
-        return this._dmsDialogIDValid && C2331d.m10125b((Activity) this, this._dmsEventDialogID);
+        return this._dmsDialogIDValid && DialogFactory.m10125b((Activity) this, this._dmsEventDialogID);
     }
 
     /* access modifiers changed from: protected */
     public void DismissDmsEventDialog() {
         if (this._dmsDialogIDValid && IsShowingDmsEventDialog()) {
-            C2331d.m10100a((Activity) this._context);
+            DialogFactory.m10100a((Activity) this._context);
         }
     }
 
@@ -370,7 +370,7 @@ public abstract class C5741i extends C1350a implements C2030b, C2323a, C5740a {
     /* access modifiers changed from: protected */
     public void DismissDmsErrorDialog() {
         if (this._dmsDialogIDValid && IsShowingDmsEventDialog()) {
-            C2331d.m10100a((Activity) this._context);
+            DialogFactory.m10100a((Activity) this._context);
         }
     }
 
@@ -390,7 +390,7 @@ public abstract class C5741i extends C1350a implements C2030b, C2323a, C5740a {
                 z3 = false;
             }
             objArr[2] = String.valueOf(z3);
-            C2261g.m9766b(str, String.format(str2, objArr));
+            ImageAppLog.warning(str, String.format(str2, objArr));
             DismissBusyDialog();
             this._isSnapMovieMode = z;
             ShowDmsWatchDialog(this._cameraControlBusyDialogID);
@@ -400,14 +400,14 @@ public abstract class C5741i extends C1350a implements C2030b, C2323a, C5740a {
     /* access modifiers changed from: protected */
     public void DismissBusyDialog() {
         if (IsShowBusyDialog()) {
-            C2331d.m10102a((Activity) this._context, C2328a.DIALOG_ID_CAMERA_BUSY_NO_CANCEL);
-            C2331d.m10102a((Activity) this._context, C2328a.DIALOG_ID_CAMERA_BUSY_NO_CANCEL_SNAP);
+            DialogFactory.m10102a((Activity) this._context, C2328a.DIALOG_ID_CAMERA_BUSY_NO_CANCEL);
+            DialogFactory.m10102a((Activity) this._context, C2328a.DIALOG_ID_CAMERA_BUSY_NO_CANCEL_SNAP);
         }
     }
 
     /* access modifiers changed from: protected */
     public boolean IsShowBusyDialog() {
-        if (C2331d.m10125b((Activity) this, C2328a.DIALOG_ID_CAMERA_BUSY_NO_CANCEL) || C2331d.m10125b((Activity) this, C2328a.DIALOG_ID_CAMERA_BUSY_NO_CANCEL_SNAP)) {
+        if (DialogFactory.m10125b((Activity) this, C2328a.DIALOG_ID_CAMERA_BUSY_NO_CANCEL) || DialogFactory.m10125b((Activity) this, C2328a.DIALOG_ID_CAMERA_BUSY_NO_CANCEL_SNAP)) {
             return true;
         }
         return false;
@@ -437,22 +437,22 @@ public abstract class C5741i extends C1350a implements C2030b, C2323a, C5740a {
     /* access modifiers changed from: protected */
     public void ShowDmsWatchDialog(C2328a aVar) {
         if (this._dmsDialogIDValid && (aVar == this._dmsEventDialogID || aVar == this._dmsErrorDialogID)) {
-            C2331d.m10114a((Activity) this._context, aVar, (Bundle) null);
+            DialogFactory.m10114a((Activity) this._context, aVar, (Bundle) null);
         }
         if (this._cameraControlBusyDialogValid && aVar == this._cameraControlBusyDialogID) {
             C2328a aVar2 = C2328a.DIALOG_ID_CAMERA_BUSY_NO_CANCEL;
             if (this._isSnapMovieMode) {
                 aVar2 = C2328a.DIALOG_ID_CAMERA_BUSY_NO_CANCEL_SNAP;
-                C2261g.m9766b("SNAP", "DialogIDs.DIALOG_ID_CAMERA_BUSY_NO_CANCEL_SNAP");
+                ImageAppLog.warning("SNAP", "DialogIDs.DIALOG_ID_CAMERA_BUSY_NO_CANCEL_SNAP");
             }
             C2328a aVar3 = aVar2;
             Bundle bundle = new Bundle();
             bundle.putBoolean(C2377a.EXCLUDE_DISMISS.name(), true);
-            C2331d.m10114a((Activity) this._context, aVar3, bundle);
+            DialogFactory.m10114a((Activity) this._context, aVar3, bundle);
         }
     }
 
-    public void DmsBase_OnGetState(C1846e eVar, boolean z, int i) {
+    public void DmsBase_OnGetState(CameraStatus eVar, boolean z, int i) {
     }
 
     /* access modifiers changed from: protected */
@@ -460,7 +460,7 @@ public abstract class C5741i extends C1350a implements C2030b, C2323a, C5740a {
     }
 
     public void DmsBase_OnNotifySubscribe(C1699h hVar) {
-        C2028e a = C2253z.m9680a(this._context, false);
+        C2028e a = ServiceFactory.m9680a(this._context, false);
         if (a != null) {
             C2017a k = a.mo5287k();
             if (k != null && k.mo5292a()) {
@@ -513,8 +513,8 @@ public abstract class C5741i extends C1350a implements C2030b, C2323a, C5740a {
                 this._handler.post(new Runnable() {
                     public void run() {
                         C5741i.this.closeOptionsMenu();
-                        if (!C2331d.m10125b((Activity) C5741i.this._context, C2328a.ON_ERROR_HIGH_TEMP_REJECT_MOVIE)) {
-                            C2331d.m10114a((Activity) C5741i.this._context, C2328a.ON_ERROR_HIGH_TEMP_REJECT_MOVIE, (Bundle) null);
+                        if (!DialogFactory.m10125b((Activity) C5741i.this._context, C2328a.ON_ERROR_HIGH_TEMP_REJECT_MOVIE)) {
+                            DialogFactory.m10114a((Activity) C5741i.this._context, C2328a.ON_ERROR_HIGH_TEMP_REJECT_MOVIE, (Bundle) null);
                         }
                     }
                 });
@@ -560,7 +560,7 @@ public abstract class C5741i extends C1350a implements C2030b, C2323a, C5740a {
                                 C5741i.this.onDmsWatchEvent(10);
                                 return;
                             }
-                            C2261g.m9766b("SNAP", "DlnaSubscribeInfo.NOTIFY_EV_ID_SYNC_BUSY");
+                            ImageAppLog.warning("SNAP", "DlnaSubscribeInfo.NOTIFY_EV_ID_SYNC_BUSY");
                             C5741i.this.ShowDmsWatchDialog(C5741i.this._cameraControlBusyDialogID);
                             C5741i.this.onDmsWatchEvent(10);
                         }
@@ -588,7 +588,7 @@ public abstract class C5741i extends C1350a implements C2030b, C2323a, C5740a {
                 this._handler.post(new Runnable() {
                     public void run() {
                         C5741i.this.closeOptionsMenu();
-                        C2261g.m9766b("SNAP", "DlnaSubscribeInfo.NOTIFY_EV_ID_SYNC_BUSY");
+                        ImageAppLog.warning("SNAP", "DlnaSubscribeInfo.NOTIFY_EV_ID_SYNC_BUSY");
                         C5741i.this.onDmsWatchEvent(10);
                     }
                 });
@@ -600,12 +600,12 @@ public abstract class C5741i extends C1350a implements C2030b, C2323a, C5740a {
 
     /* access modifiers changed from: protected */
     public void showSimpleDlg(C2328a aVar, Bundle bundle) {
-        C2331d.m10114a((Activity) this._context, aVar, bundle);
+        DialogFactory.m10114a((Activity) this._context, aVar, bundle);
     }
 
     /* access modifiers changed from: protected */
     public void dismissAllDlg() {
-        C2331d.m10100a((Activity) this._context);
+        DialogFactory.m10100a((Activity) this._context);
     }
 
     public void onPositiveButtonClick(C2328a aVar) {

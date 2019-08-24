@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/model/b/c;->b(Lcom/panasonic/avc/cng/view/parts/x;I)V
+    value = Lcom/panasonic/avc/cng/model/b/ContentsCopyViewModel;->b(Lcom/panasonic/avc/cng/view/parts/x;I)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,16 +20,16 @@
 # instance fields
 .field final synthetic a:Ljava/lang/String;
 
-.field final synthetic b:Lcom/panasonic/avc/cng/model/b/c;
+.field final synthetic b:Lcom/panasonic/avc/cng/model/b/ContentsCopyViewModel;
 
 
 # direct methods
-.method constructor <init>(Lcom/panasonic/avc/cng/model/b/c;Ljava/lang/String;)V
+.method constructor <init>(Lcom/panasonic/avc/cng/model/b/ContentsCopyViewModel;Ljava/lang/String;)V
     .locals 0
 
     .prologue
     .line 301
-    iput-object p1, p0, Lcom/panasonic/avc/cng/model/b/c$4;->b:Lcom/panasonic/avc/cng/model/b/c;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/model/b/c$4;->b:Lcom/panasonic/avc/cng/model/b/ContentsCopyViewModel;
 
     iput-object p2, p0, Lcom/panasonic/avc/cng/model/b/c$4;->a:Ljava/lang/String;
 
@@ -45,9 +45,9 @@
 
     .prologue
     .line 303
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/b/c$4;->b:Lcom/panasonic/avc/cng/model/b/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/b/c$4;->b:Lcom/panasonic/avc/cng/model/b/ContentsCopyViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/b/c;->a(Lcom/panasonic/avc/cng/model/b/c;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/b/ContentsCopyViewModel;->a(Lcom/panasonic/avc/cng/model/b/ContentsCopyViewModel;)Landroid/os/Handler;
 
     move-result-object v0
 
@@ -59,9 +59,9 @@
 
     .line 307
     :cond_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/b/c$4;->b:Lcom/panasonic/avc/cng/model/b/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/b/c$4;->b:Lcom/panasonic/avc/cng/model/b/ContentsCopyViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/b/c;->a(Lcom/panasonic/avc/cng/model/b/c;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/b/ContentsCopyViewModel;->a(Lcom/panasonic/avc/cng/model/b/ContentsCopyViewModel;)Landroid/os/Handler;
 
     move-result-object v0
 
@@ -88,9 +88,9 @@
     if-eqz v0, :cond_4
 
     .line 318
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/b/c$4;->b:Lcom/panasonic/avc/cng/model/b/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/b/c$4;->b:Lcom/panasonic/avc/cng/model/b/ContentsCopyViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/b/c;->a(Lcom/panasonic/avc/cng/model/b/c;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/b/ContentsCopyViewModel;->a(Lcom/panasonic/avc/cng/model/b/ContentsCopyViewModel;)Landroid/os/Handler;
 
     move-result-object v0
 
@@ -108,9 +108,9 @@
     if-eqz v0, :cond_2
 
     .line 324
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/b/c$4;->b:Lcom/panasonic/avc/cng/model/b/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/b/c$4;->b:Lcom/panasonic/avc/cng/model/b/ContentsCopyViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/b/c;->f(Lcom/panasonic/avc/cng/model/b/c;)Ljava/util/ArrayList;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/b/ContentsCopyViewModel;->f(Lcom/panasonic/avc/cng/model/b/ContentsCopyViewModel;)Ljava/util/ArrayList;
 
     move-result-object v0
 
@@ -120,29 +120,29 @@
 
     .line 327
     :cond_2
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/b/c$4;->b:Lcom/panasonic/avc/cng/model/b/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/b/c$4;->b:Lcom/panasonic/avc/cng/model/b/ContentsCopyViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/b/c;->b(Lcom/panasonic/avc/cng/model/b/c;)Lcom/panasonic/avc/cng/model/b/c$b;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/b/ContentsCopyViewModel;->b(Lcom/panasonic/avc/cng/model/b/ContentsCopyViewModel;)Lcom/panasonic/avc/cng/model/b/c$b;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 329
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/b/c$4;->b:Lcom/panasonic/avc/cng/model/b/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/b/c$4;->b:Lcom/panasonic/avc/cng/model/b/ContentsCopyViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/b/c;->g(Lcom/panasonic/avc/cng/model/b/c;)I
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/b/ContentsCopyViewModel;->g(Lcom/panasonic/avc/cng/model/b/ContentsCopyViewModel;)I
 
     .line 331
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/b/c$4;->b:Lcom/panasonic/avc/cng/model/b/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/b/c$4;->b:Lcom/panasonic/avc/cng/model/b/ContentsCopyViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/b/c;->c(Lcom/panasonic/avc/cng/model/b/c;)I
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/b/ContentsCopyViewModel;->c(Lcom/panasonic/avc/cng/model/b/ContentsCopyViewModel;)I
 
     move-result v0
 
-    iget-object v1, p0, Lcom/panasonic/avc/cng/model/b/c$4;->b:Lcom/panasonic/avc/cng/model/b/c;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/model/b/c$4;->b:Lcom/panasonic/avc/cng/model/b/ContentsCopyViewModel;
 
-    invoke-static {v1}, Lcom/panasonic/avc/cng/model/b/c;->d(Lcom/panasonic/avc/cng/model/b/c;)Ljava/util/ArrayList;
+    invoke-static {v1}, Lcom/panasonic/avc/cng/model/b/ContentsCopyViewModel;->d(Lcom/panasonic/avc/cng/model/b/ContentsCopyViewModel;)Ljava/util/ArrayList;
 
     move-result-object v1
 
@@ -153,9 +153,9 @@
     if-ge v0, v1, :cond_3
 
     .line 332
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/b/c$4;->b:Lcom/panasonic/avc/cng/model/b/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/b/c$4;->b:Lcom/panasonic/avc/cng/model/b/ContentsCopyViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/b/c;->a(Lcom/panasonic/avc/cng/model/b/c;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/b/ContentsCopyViewModel;->a(Lcom/panasonic/avc/cng/model/b/ContentsCopyViewModel;)Landroid/os/Handler;
 
     move-result-object v0
 
@@ -190,18 +190,18 @@
 
     .line 357
     :cond_3
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/b/c$4;->b:Lcom/panasonic/avc/cng/model/b/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/b/c$4;->b:Lcom/panasonic/avc/cng/model/b/ContentsCopyViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/b/c;->a(Lcom/panasonic/avc/cng/model/b/c;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/b/ContentsCopyViewModel;->a(Lcom/panasonic/avc/cng/model/b/ContentsCopyViewModel;)Landroid/os/Handler;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 361
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/b/c$4;->b:Lcom/panasonic/avc/cng/model/b/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/b/c$4;->b:Lcom/panasonic/avc/cng/model/b/ContentsCopyViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/b/c;->a(Lcom/panasonic/avc/cng/model/b/c;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/b/ContentsCopyViewModel;->a(Lcom/panasonic/avc/cng/model/b/ContentsCopyViewModel;)Landroid/os/Handler;
 
     move-result-object v0
 
@@ -215,18 +215,18 @@
 
     .line 371
     :cond_4
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/b/c$4;->b:Lcom/panasonic/avc/cng/model/b/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/b/c$4;->b:Lcom/panasonic/avc/cng/model/b/ContentsCopyViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/b/c;->a(Lcom/panasonic/avc/cng/model/b/c;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/b/ContentsCopyViewModel;->a(Lcom/panasonic/avc/cng/model/b/ContentsCopyViewModel;)Landroid/os/Handler;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 375
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/b/c$4;->b:Lcom/panasonic/avc/cng/model/b/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/b/c$4;->b:Lcom/panasonic/avc/cng/model/b/ContentsCopyViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/b/c;->a(Lcom/panasonic/avc/cng/model/b/c;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/b/ContentsCopyViewModel;->a(Lcom/panasonic/avc/cng/model/b/ContentsCopyViewModel;)Landroid/os/Handler;
 
     move-result-object v0
 
@@ -252,9 +252,9 @@
     const/4 v3, 0x1
 
     .line 387
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/b/c$4;->b:Lcom/panasonic/avc/cng/model/b/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/b/c$4;->b:Lcom/panasonic/avc/cng/model/b/ContentsCopyViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/b/c;->a(Lcom/panasonic/avc/cng/model/b/c;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/b/ContentsCopyViewModel;->a(Lcom/panasonic/avc/cng/model/b/ContentsCopyViewModel;)Landroid/os/Handler;
 
     move-result-object v0
 
@@ -276,14 +276,14 @@
     if-eqz v0, :cond_2
 
     .line 393
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/b/c$4;->b:Lcom/panasonic/avc/cng/model/b/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/b/c$4;->b:Lcom/panasonic/avc/cng/model/b/ContentsCopyViewModel;
 
-    invoke-static {v0, v3}, Lcom/panasonic/avc/cng/model/b/c;->a(Lcom/panasonic/avc/cng/model/b/c;Z)Z
+    invoke-static {v0, v3}, Lcom/panasonic/avc/cng/model/b/ContentsCopyViewModel;->a(Lcom/panasonic/avc/cng/model/b/ContentsCopyViewModel;Z)Z
 
     .line 394
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/b/c$4;->b:Lcom/panasonic/avc/cng/model/b/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/b/c$4;->b:Lcom/panasonic/avc/cng/model/b/ContentsCopyViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/b/c;->a(Lcom/panasonic/avc/cng/model/b/c;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/b/ContentsCopyViewModel;->a(Lcom/panasonic/avc/cng/model/b/ContentsCopyViewModel;)Landroid/os/Handler;
 
     move-result-object v0
 
@@ -295,9 +295,9 @@
 
     .line 402
     :cond_2
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/b/c$4;->b:Lcom/panasonic/avc/cng/model/b/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/b/c$4;->b:Lcom/panasonic/avc/cng/model/b/ContentsCopyViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/b/c;->i(Lcom/panasonic/avc/cng/model/b/c;)Landroid/content/Context;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/b/ContentsCopyViewModel;->i(Lcom/panasonic/avc/cng/model/b/ContentsCopyViewModel;)Landroid/content/Context;
 
     move-result-object v0
 
@@ -342,14 +342,14 @@
     invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->apply()V
 
     .line 412
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/b/c$4;->b:Lcom/panasonic/avc/cng/model/b/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/b/c$4;->b:Lcom/panasonic/avc/cng/model/b/ContentsCopyViewModel;
 
-    invoke-static {v0, v3}, Lcom/panasonic/avc/cng/model/b/c;->a(Lcom/panasonic/avc/cng/model/b/c;Z)Z
+    invoke-static {v0, v3}, Lcom/panasonic/avc/cng/model/b/ContentsCopyViewModel;->a(Lcom/panasonic/avc/cng/model/b/ContentsCopyViewModel;Z)Z
 
     .line 414
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/b/c$4;->b:Lcom/panasonic/avc/cng/model/b/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/b/c$4;->b:Lcom/panasonic/avc/cng/model/b/ContentsCopyViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/b/c;->a(Lcom/panasonic/avc/cng/model/b/c;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/b/ContentsCopyViewModel;->a(Lcom/panasonic/avc/cng/model/b/ContentsCopyViewModel;)Landroid/os/Handler;
 
     move-result-object v0
 

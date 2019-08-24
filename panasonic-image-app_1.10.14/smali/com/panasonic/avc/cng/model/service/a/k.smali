@@ -21,7 +21,7 @@
 
 .field private c:Lcom/panasonic/avc/cng/model/n;
 
-.field private d:Lcom/panasonic/avc/cng/core/c/s;
+.field private d:Lcom/panasonic/avc/cng/core/c/Picmate;
 
 .field private e:I
 
@@ -96,12 +96,12 @@
     return p1
 .end method
 
-.method static synthetic a(Lcom/panasonic/avc/cng/model/service/a/k;)Lcom/panasonic/avc/cng/core/c/s;
+.method static synthetic a(Lcom/panasonic/avc/cng/model/service/a/k;)Lcom/panasonic/avc/cng/core/c/Picmate;
     .locals 1
 
     .prologue
     .line 23
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/a/k;->d:Lcom/panasonic/avc/cng/core/c/s;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/a/k;->d:Lcom/panasonic/avc/cng/core/c/Picmate;
 
     return-object v0
 .end method
@@ -157,7 +157,7 @@
     iput-object p1, p0, Lcom/panasonic/avc/cng/model/service/a/k;->i:Lcom/panasonic/avc/cng/model/service/a/p;
 
     .line 713
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/a/k;->d:Lcom/panasonic/avc/cng/core/c/s;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/a/k;->d:Lcom/panasonic/avc/cng/core/c/Picmate;
 
     if-eqz v0, :cond_0
 
@@ -281,7 +281,7 @@
 
     .line 895
     :try_start_0
-    iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/a/k;->d:Lcom/panasonic/avc/cng/core/c/s;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/a/k;->d:Lcom/panasonic/avc/cng/core/c/Picmate;
 
     iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/a/k;->j:Ljava/util/List;
 
@@ -291,7 +291,7 @@
 
     check-cast v0, Lcom/panasonic/avc/cng/core/c/n;
 
-    invoke-virtual {v1, v0}, Lcom/panasonic/avc/cng/core/c/s;->a(Lcom/panasonic/avc/cng/core/c/n;)V
+    invoke-virtual {v1, v0}, Lcom/panasonic/avc/cng/core/c/Picmate;->a(Lcom/panasonic/avc/cng/core/c/n;)V
 
     .line 896
     const/4 v0, 0x0
@@ -718,7 +718,7 @@
 
     .line 816
     :cond_1
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/a/k;->d:Lcom/panasonic/avc/cng/core/c/s;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/a/k;->d:Lcom/panasonic/avc/cng/core/c/Picmate;
 
     if-eqz v0, :cond_2
 
@@ -765,14 +765,14 @@
     .line 113
     iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/a/k;->a:Landroid/content/Context;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/z;->a(Landroid/content/Context;)Lcom/panasonic/avc/cng/core/c/s;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->a(Landroid/content/Context;)Lcom/panasonic/avc/cng/core/c/Picmate;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/model/service/a/k;->d:Lcom/panasonic/avc/cng/core/c/s;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/model/service/a/k;->d:Lcom/panasonic/avc/cng/core/c/Picmate;
 
     .line 114
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/a/k;->d:Lcom/panasonic/avc/cng/core/c/s;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/a/k;->d:Lcom/panasonic/avc/cng/core/c/Picmate;
 
     if-eqz v0, :cond_0
 
@@ -781,11 +781,11 @@
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/a/k;->b:Landroid/os/Handler;
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/model/service/z;->a(Landroid/content/Context;Landroid/os/Handler;)Lcom/panasonic/avc/cng/core/c/s;
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->a(Landroid/content/Context;Landroid/os/Handler;)Lcom/panasonic/avc/cng/core/c/Picmate;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/model/service/a/k;->d:Lcom/panasonic/avc/cng/core/c/s;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/model/service/a/k;->d:Lcom/panasonic/avc/cng/core/c/Picmate;
 
     .line 119
     :cond_0
@@ -1025,17 +1025,17 @@
     const/4 v1, 0x0
 
     .line 138
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/a/k;->d:Lcom/panasonic/avc/cng/core/c/s;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/a/k;->d:Lcom/panasonic/avc/cng/core/c/Picmate;
 
     if-eqz v0, :cond_0
 
     .line 140
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/a/k;->d:Lcom/panasonic/avc/cng/core/c/s;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/a/k;->d:Lcom/panasonic/avc/cng/core/c/Picmate;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/c/s;->o()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/c/Picmate;->o()V
 
     .line 142
-    iput-object v1, p0, Lcom/panasonic/avc/cng/model/service/a/k;->d:Lcom/panasonic/avc/cng/core/c/s;
+    iput-object v1, p0, Lcom/panasonic/avc/cng/model/service/a/k;->d:Lcom/panasonic/avc/cng/core/c/Picmate;
 
     .line 143
     iput-object v1, p0, Lcom/panasonic/avc/cng/model/service/a/k;->i:Lcom/panasonic/avc/cng/model/service/a/p;

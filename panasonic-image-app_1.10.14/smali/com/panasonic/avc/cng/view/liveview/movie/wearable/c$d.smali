@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c;
+    value = Lcom/panasonic/avc/cng/view/liveview/movie/wearable/LiveViewWearableViewModel;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c;
+.field final synthetic a:Lcom/panasonic/avc/cng/view/liveview/movie/wearable/LiveViewWearableViewModel;
 
 .field private b:J
 
@@ -25,12 +25,12 @@
 
 
 # direct methods
-.method private constructor <init>(Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c;)V
+.method private constructor <init>(Lcom/panasonic/avc/cng/view/liveview/movie/wearable/LiveViewWearableViewModel;)V
     .locals 2
 
     .prologue
     .line 3941
-    iput-object p1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c$d;->a:Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c$d;->a:Lcom/panasonic/avc/cng/view/liveview/movie/wearable/LiveViewWearableViewModel;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
@@ -42,12 +42,12 @@
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c;Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c$1;)V
+.method synthetic constructor <init>(Lcom/panasonic/avc/cng/view/liveview/movie/wearable/LiveViewWearableViewModel;Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c$1;)V
     .locals 0
 
     .prologue
     .line 3941
-    invoke-direct {p0, p1}, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c$d;-><init>(Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c;)V
+    invoke-direct {p0, p1}, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c$d;-><init>(Lcom/panasonic/avc/cng/view/liveview/movie/wearable/LiveViewWearableViewModel;)V
 
     return-void
 .end method
@@ -157,9 +157,9 @@
     iput-boolean v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c$d;->d:Z
 
     .line 3979
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c$d;->a:Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c$d;->a:Lcom/panasonic/avc/cng/view/liveview/movie/wearable/LiveViewWearableViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c;->x:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/LiveViewWearableViewModel;->x:Lcom/panasonic/avc/cng/a/c;
 
     const-string v1, ""
 
@@ -195,11 +195,11 @@
     add-long/2addr v4, v0
 
     .line 3999
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
@@ -213,11 +213,11 @@
     if-eqz v0, :cond_2
 
     .line 4005
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c$d;->a:Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c$d;->a:Lcom/panasonic/avc/cng/view/liveview/movie/wearable/LiveViewWearableViewModel;
 
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c$d;->a:Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c$d;->a:Lcom/panasonic/avc/cng/view/liveview/movie/wearable/LiveViewWearableViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c;->w:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/LiveViewWearableViewModel;->w:Lcom/panasonic/avc/cng/a/c;
 
     invoke-virtual {v0}, Lcom/panasonic/avc/cng/a/c;->b()Ljava/lang/Object;
 
@@ -225,7 +225,7 @@
 
     check-cast v0, Ljava/lang/String;
 
-    invoke-static {v1, v0}, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c;->f(Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c;Ljava/lang/String;)Z
+    invoke-static {v1, v0}, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/LiveViewWearableViewModel;->f(Lcom/panasonic/avc/cng/view/liveview/movie/wearable/LiveViewWearableViewModel;Ljava/lang/String;)Z
 
     move-result v0
 
@@ -426,9 +426,9 @@
     div-long/2addr v0, v2
 
     .line 4054
-    iget-object v2, p0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c$d;->a:Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c$d;->a:Lcom/panasonic/avc/cng/view/liveview/movie/wearable/LiveViewWearableViewModel;
 
-    iget-object v2, v2, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c;->x:Lcom/panasonic/avc/cng/a/c;
+    iget-object v2, v2, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/LiveViewWearableViewModel;->x:Lcom/panasonic/avc/cng/a/c;
 
     iget-wide v4, p0, Lcom/panasonic/avc/cng/view/liveview/movie/wearable/c$d;->b:J
 

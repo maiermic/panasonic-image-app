@@ -233,7 +233,7 @@
 
     iget-object v3, p1, Landroid/support/v4/a/ac$c;->a:Ljava/lang/CharSequence;
 
-    invoke-static {p0, v0, v1, v2, v3}, Landroid/support/v4/a/aj;->a(Landroid/support/v4/a/ab;Ljava/lang/CharSequence;ZLjava/lang/CharSequence;Ljava/lang/CharSequence;)V
+    invoke-static {p0, v0, v1, v2, v3}, Landroid/support/v4/a/NotificationCompat;->a(Landroid/support/v4/a/ab;Ljava/lang/CharSequence;ZLjava/lang/CharSequence;Ljava/lang/CharSequence;)V
 
     .line 911
     :cond_0
@@ -258,7 +258,7 @@
 
     iget-object v3, p1, Landroid/support/v4/a/ac$f;->a:Ljava/util/ArrayList;
 
-    invoke-static {p0, v0, v1, v2, v3}, Landroid/support/v4/a/aj;->a(Landroid/support/v4/a/ab;Ljava/lang/CharSequence;ZLjava/lang/CharSequence;Ljava/util/ArrayList;)V
+    invoke-static {p0, v0, v1, v2, v3}, Landroid/support/v4/a/NotificationCompat;->a(Landroid/support/v4/a/ab;Ljava/lang/CharSequence;ZLjava/lang/CharSequence;Ljava/util/ArrayList;)V
 
     goto :goto_0
 
@@ -286,7 +286,7 @@
 
     move-object v0, p0
 
-    invoke-static/range {v0 .. v6}, Landroid/support/v4/a/aj;->a(Landroid/support/v4/a/ab;Ljava/lang/CharSequence;ZLjava/lang/CharSequence;Landroid/graphics/Bitmap;Landroid/graphics/Bitmap;Z)V
+    invoke-static/range {v0 .. v6}, Landroid/support/v4/a/NotificationCompat;->a(Landroid/support/v4/a/ab;Ljava/lang/CharSequence;ZLjava/lang/CharSequence;Landroid/graphics/Bitmap;Landroid/graphics/Bitmap;Z)V
 
     goto :goto_0
 .end method

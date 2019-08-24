@@ -52,7 +52,7 @@
 
     const-string v1, "postDelayed"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 1172
     iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/h/a$1;->a:Lcom/panasonic/avc/cng/model/service/h/a;

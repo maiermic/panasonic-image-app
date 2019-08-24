@@ -21,7 +21,7 @@ import com.panasonic.avc.cng.model.C1892f;
 import com.panasonic.avc.cng.model.C1909k;
 import com.panasonic.avc.cng.model.service.C1921a;
 import com.panasonic.avc.cng.model.service.C1921a.C1924c;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.util.C2266l;
 import java.util.ArrayList;
 import java.util.List;
@@ -295,7 +295,7 @@ public class C1948f implements C1921a, C1924c {
                                             this.f6025c.remove(indexOf);
                                             this.f6026d.remove(indexOf);
                                         } else {
-                                            C2261g.m9769c("Test", "OutOfIndexError");
+                                            ImageAppLog.error("Test", "OutOfIndexError");
                                         }
                                     }
                                 } else {
@@ -312,7 +312,7 @@ public class C1948f implements C1921a, C1924c {
                                                 z = true;
                                                 break;
                                             } catch (Exception e2) {
-                                                C2261g.m9769c("ThumbnailDecoder", "_thumbnailList.put Error:" + e2);
+                                                ImageAppLog.error("ThumbnailDecoder", "_thumbnailList.put Error:" + e2);
                                                 i2++;
                                             }
                                         }
@@ -349,7 +349,7 @@ public class C1948f implements C1921a, C1924c {
                                                 this.f6025c.remove(indexOf2);
                                                 this.f6026d.remove(indexOf2);
                                             } else {
-                                                C2261g.m9769c("Test", "OutofIndexError");
+                                                ImageAppLog.error("Test", "OutofIndexError");
                                             }
                                             if (!(aVar.f6020b == null || aVar.f6021c == null)) {
                                                 aVar.f6020b.post(aVar.f6021c);
@@ -660,7 +660,7 @@ public class C1948f implements C1921a, C1924c {
                     java.lang.Integer r6 = java.lang.Integer.valueOf(r6)     // Catch:{ OutOfMemoryError -> 0x021b, Exception -> 0x021e }
                     r4[r5] = r6     // Catch:{ OutOfMemoryError -> 0x021b, Exception -> 0x021e }
                     java.lang.String r3 = java.lang.String.format(r3, r4)     // Catch:{ OutOfMemoryError -> 0x021b, Exception -> 0x021e }
-                    com.panasonic.avc.cng.util.C2261g.m9763a(r2, r3)     // Catch:{ OutOfMemoryError -> 0x021b, Exception -> 0x021e }
+                    com.panasonic.avc.cng.util.ImageAppLog.debug(r2, r3)     // Catch:{ OutOfMemoryError -> 0x021b, Exception -> 0x021e }
                 L_0x020a:
                     r1 = r0
                     goto L_0x0013
@@ -833,7 +833,7 @@ public class C1948f implements C1921a, C1924c {
             L_0x000e:
                 java.lang.String r0 = "DMSDebug"
                 java.lang.String r3 = "nullcheck"
-                com.panasonic.avc.cng.util.C2261g.m9763a(r0, r3)     // Catch:{ all -> 0x0051 }
+                com.panasonic.avc.cng.util.ImageAppLog.debug(r0, r3)     // Catch:{ all -> 0x0051 }
                 monitor-exit(r2)     // Catch:{ all -> 0x0051 }
                 r0 = r1
             L_0x0017:
@@ -1080,10 +1080,10 @@ public class C1948f implements C1921a, C1924c {
             this.f5992d.close();
         }
         if (C1712b.m6920d().mo4911d()) {
-            this.f5992d = new C1983q(new Cursor[]{mo5112a(this.f5991c), m7923f(this.f5991c), mo5114c(this.f5991c)}, "date_added", 1, true);
+            this.f5992d = new SortCursor(new Cursor[]{mo5112a(this.f5991c), m7923f(this.f5991c), mo5114c(this.f5991c)}, "date_added", 1, true);
             return;
         }
-        this.f5992d = new C1983q(new Cursor[]{mo5112a(this.f5991c), m7923f(this.f5991c)}, "date_added", 1, true);
+        this.f5992d = new SortCursor(new Cursor[]{mo5112a(this.f5991c), m7923f(this.f5991c)}, "date_added", 1, true);
     }
 
     /* access modifiers changed from: protected */
@@ -1167,7 +1167,7 @@ public class C1948f implements C1921a, C1924c {
     /* renamed from: n */
     public void mo5121n() {
         int size = this.f5994f.size();
-        C2261g.m9769c("Test", "UpdateBrowse Start:" + size);
+        ImageAppLog.error("Test", "UpdateBrowse Start:" + size);
         synchronized (this.f6000l) {
             int i = 0;
             while (true) {
@@ -1184,12 +1184,12 @@ public class C1948f implements C1921a, C1924c {
                         this.f5994f.add(new C1909k(cursor.getString(3), cursor.getString(6), cursor.getString(5), cursor.getString(7), cursor.getString(2), i3));
                         i = i2 + 1;
                     } catch (Exception e) {
-                        C2261g.m9769c("BrowserServiceLocal", "Error on New LocalConent");
+                        ImageAppLog.error("BrowserServiceLocal", "Error on New LocalConent");
                     }
                 }
             }
         }
-        C2261g.m9769c("Test", "UpdateBrowse End:" + (this.f5994f.size() - 1));
+        ImageAppLog.error("Test", "UpdateBrowse End:" + (this.f5994f.size() - 1));
     }
 
     @SuppressLint({"NewApi"})

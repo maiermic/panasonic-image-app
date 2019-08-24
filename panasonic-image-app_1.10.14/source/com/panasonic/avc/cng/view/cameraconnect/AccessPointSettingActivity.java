@@ -36,15 +36,15 @@ import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.C1892f;
 import com.panasonic.avc.cng.model.service.C2028e;
 import com.panasonic.avc.cng.model.service.C2028e.C2029a;
-import com.panasonic.avc.cng.model.service.C2253z;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.util.C2266l;
-import com.panasonic.avc.cng.view.cameraconnect.C2666e.C2674a;
+import com.panasonic.avc.cng.view.cameraconnect.CameraConnectViewModel.C2674a;
 import com.panasonic.avc.cng.view.common.C2820e;
 import com.panasonic.avc.cng.view.p073b.C2317a.C2323a;
 import com.panasonic.avc.cng.view.p073b.C2317a.C2325c;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
 import com.panasonic.avc.cng.view.p073b.C2376f.C2378b;
 import com.panasonic.avc.cng.view.setting.C5741i;
 import com.panasonic.avc.cng.view.setting.C5741i.C5759a;
@@ -164,8 +164,8 @@ public class AccessPointSettingActivity extends C5741i implements C2323a {
 
         /* renamed from: a */
         public void mo6352a(C2649a aVar, int i, boolean z, boolean z2) {
-            if (AccessPointSettingActivity.this.f8075d != null && AccessPointSettingActivity.this.f8075d.mo6571n() && C2331d.m10125b((Activity) AccessPointSettingActivity.this, C2328a.ON_SEARCH_DIALOG)) {
-                C2261g.m9769c("", "再接続のM-Search開始");
+            if (AccessPointSettingActivity.this.f8075d != null && AccessPointSettingActivity.this.f8075d.mo6571n() && DialogFactory.m10125b((Activity) AccessPointSettingActivity.this, C2328a.ON_SEARCH_DIALOG)) {
+                ImageAppLog.error("", "再接続のM-Search開始");
                 AccessPointSettingActivity.this.f8075d.mo6558c();
                 AccessPointSettingActivity.this.m10899e(AccessPointSettingActivity.this.f8075d.mo6574q());
             }
@@ -173,8 +173,8 @@ public class AccessPointSettingActivity extends C5741i implements C2323a {
 
         /* renamed from: f */
         public void mo6366f() {
-            C2261g.m9769c("", "OnStartSearchCamera");
-            if (!C2331d.m10125b((Activity) AccessPointSettingActivity.this, C2328a.ON_SEARCH_DIALOG)) {
+            ImageAppLog.error("", "OnStartSearchCamera");
+            if (!DialogFactory.m10125b((Activity) AccessPointSettingActivity.this, C2328a.ON_SEARCH_DIALOG)) {
                 AccessPointSettingActivity.this.mo6377a((Activity) AccessPointSettingActivity.this, (C2323a) AccessPointSettingActivity.this);
             }
         }
@@ -182,7 +182,7 @@ public class AccessPointSettingActivity extends C5741i implements C2323a {
         /* renamed from: a */
         public void mo6354a(List<C1892f> list, boolean z, boolean z2) {
             boolean z3;
-            C2261g.m9769c("", "OnFinishSearchCamera");
+            ImageAppLog.error("", "OnFinishSearchCamera");
             if (!z2 && !z && AccessPointSettingActivity.this.f8075d != null) {
                 if (list.size() > 0) {
                     AccessPointSettingActivity.this.f8086o = true;
@@ -200,9 +200,9 @@ public class AccessPointSettingActivity extends C5741i implements C2323a {
                             }
                         }
                         if (!z3) {
-                            C2261g.m9760a(2109456, ((C1892f) list.get(i)).f5685g);
-                            C2261g.m9760a(2109444, String.format("M-Search : %s", new Object[]{Integer.valueOf(((C1892f) list.get(i)).f5686h)}));
-                            C2261g.m9760a(2109443, AccessPointSettingActivity.this.f8075d.mo6575r());
+                            ImageAppLog.m9760a(2109456, ((C1892f) list.get(i)).f5685g);
+                            ImageAppLog.m9760a(2109444, String.format("M-Search : %s", new Object[]{Integer.valueOf(((C1892f) list.get(i)).f5686h)}));
+                            ImageAppLog.m9760a(2109443, AccessPointSettingActivity.this.f8075d.mo6575r());
                             HashMap hashMap = new HashMap();
                             hashMap.put(((C1892f) list.get(i)).f5685g, Integer.valueOf(((C1892f) list.get(i)).f5686h));
                             AccessPointSettingActivity.this.f8075d.mo6566i().put(AccessPointSettingActivity.this.f8075d.mo6566i().size(), hashMap);
@@ -216,7 +216,7 @@ public class AccessPointSettingActivity extends C5741i implements C2323a {
                         }
                     }
                 } else if (AccessPointSettingActivity.this.f8075d != null) {
-                    C2261g.m9760a(2109472, "");
+                    ImageAppLog.m9760a(2109472, "");
                     AccessPointSettingActivity.this.f8075d.mo6565h().clear();
                     if (!AccessPointSettingActivity.this.f8075d.mo6571n() && AccessPointSettingActivity.this.f8075d.mo6563f() && AccessPointSettingActivity.this.f8075d.mo6577t()) {
                         AccessPointSettingActivity.this.m10908k();
@@ -232,18 +232,18 @@ public class AccessPointSettingActivity extends C5741i implements C2323a {
 
         /* renamed from: g */
         public void mo6367g() {
-            C2331d.m10114a((Activity) AccessPointSettingActivity.this, C2328a.ON_SEARCHING_AP, (Bundle) null);
+            DialogFactory.m10114a((Activity) AccessPointSettingActivity.this, C2328a.ON_SEARCHING_AP, (Bundle) null);
         }
 
         /* renamed from: a */
         public void mo6358a(boolean z, C1892f fVar, boolean z2, int i) {
             boolean z3;
             boolean z4 = false;
-            C2261g.m9769c("", "OnFinishConnectCamera");
-            C2331d.m10102a((Activity) AccessPointSettingActivity.this, C2328a.ON_SEARCHING_AP);
+            ImageAppLog.error("", "OnFinishConnectCamera");
+            DialogFactory.m10102a((Activity) AccessPointSettingActivity.this, C2328a.ON_SEARCHING_AP);
             AccessPointSettingActivity.this.mo6382c();
             if (i == 8 && !AccessPointSettingActivity.this.mo6390f()) {
-                C2331d.m10114a((Activity) AccessPointSettingActivity.this, C2328a.APSETTING_FUNC_ERROR, (Bundle) null);
+                DialogFactory.m10114a((Activity) AccessPointSettingActivity.this, C2328a.APSETTING_FUNC_ERROR, (Bundle) null);
                 if (AccessPointSettingActivity.this.f8075d != null) {
                     AccessPointSettingActivity.this.f8075d.mo6569l();
                 }
@@ -261,13 +261,13 @@ public class AccessPointSettingActivity extends C5741i implements C2323a {
                 AccessPointSettingActivity.this.mo6385d();
                 AccessPointSettingActivity.this.f8075d.mo6561d(true);
                 if (AccessPointSettingActivity.this.mo6392h()) {
-                    C2253z.m9723r(AccessPointSettingActivity.this._context);
+                    ServiceFactory.m9723r(AccessPointSettingActivity.this._context);
                     AccessPointSettingActivity.this.InitializeDmsEvent();
                 }
             } else if (i == 13) {
-                C2331d.m10114a((Activity) AccessPointSettingActivity.this, C2328a.APSETTING_FUNC_ERROR, (Bundle) null);
+                DialogFactory.m10114a((Activity) AccessPointSettingActivity.this, C2328a.APSETTING_FUNC_ERROR, (Bundle) null);
             } else if (!z) {
-                C2331d.m10114a((Activity) AccessPointSettingActivity.this, C2328a.APSETTING_NETWORK_ERROR, (Bundle) null);
+                DialogFactory.m10114a((Activity) AccessPointSettingActivity.this, C2328a.APSETTING_NETWORK_ERROR, (Bundle) null);
             } else {
                 SharedPreferences defaultSharedPreferences2 = PreferenceManager.getDefaultSharedPreferences(AccessPointSettingActivity.this.getApplicationContext());
                 defaultSharedPreferences2.edit().putInt("AccessPointSettingDevice", AccessPointSettingActivity.this.f8077f.getSelectedItemPosition()).commit();
@@ -318,12 +318,12 @@ public class AccessPointSettingActivity extends C5741i implements C2323a {
 
         /* renamed from: a */
         public void mo6350a(int i, String str) {
-            if (i == 99 && !C2331d.m10125b((Activity) AccessPointSettingActivity.this, C2328a.APSETTING_DISCONNECT)) {
-                C2331d.m10100a((Activity) AccessPointSettingActivity.this);
+            if (i == 99 && !DialogFactory.m10125b((Activity) AccessPointSettingActivity.this, C2328a.APSETTING_DISCONNECT)) {
+                DialogFactory.m10100a((Activity) AccessPointSettingActivity.this);
                 String str2 = String.format(AccessPointSettingActivity.this.getResources().getString(R.string.msg_disconnectd_ssid), new Object[]{str}) + AccessPointSettingActivity.this.getResources().getString(R.string.msg_retry);
                 Bundle bundle = new Bundle();
                 bundle.putString(C2378b.MESSAGE_STRING.name(), str2);
-                C2331d.m10114a((Activity) AccessPointSettingActivity.this, C2328a.APSETTING_DISCONNECT, bundle);
+                DialogFactory.m10114a((Activity) AccessPointSettingActivity.this, C2328a.APSETTING_DISCONNECT, bundle);
             }
         }
 
@@ -363,7 +363,7 @@ public class AccessPointSettingActivity extends C5741i implements C2323a {
         mo6375a();
         mo6382c();
         if (C1712b.m6919c().mo4896a() == null) {
-            C2028e a = C2253z.m9680a((Context) this, false);
+            C2028e a = ServiceFactory.m9680a((Context) this, false);
             if (a != null) {
                 a.mo5283g();
             }
@@ -380,16 +380,16 @@ public class AccessPointSettingActivity extends C5741i implements C2323a {
     public Object onDmsWatchEvent(int i) {
         switch (i) {
             case 1:
-                C2331d.m10115a((Activity) this, C2328a.DmsReceiving, (Bundle) null, (C2325c) new C2325c() {
+                DialogFactory.m10115a((Activity) this, C2328a.DmsReceiving, (Bundle) null, (C2325c) new C2325c() {
                     /* renamed from: a */
                     public void mo6131a() {
-                        C2331d.m10129c((Activity) AccessPointSettingActivity.this, C2328a.DmsReceiving, (int) R.id.text, (int) R.string.cmn_msg_now_recieve_images_from_camera);
+                        DialogFactory.m10129c((Activity) AccessPointSettingActivity.this, C2328a.DmsReceiving, (int) R.id.text, (int) R.string.cmn_msg_now_recieve_images_from_camera);
                     }
                 });
                 return null;
             case 2:
-                if (C2331d.m10125b((Activity) this, C2328a.DmsReceiving)) {
-                    C2331d.m10102a((Activity) this, C2328a.DmsReceiving);
+                if (DialogFactory.m10125b((Activity) this, C2328a.DmsReceiving)) {
+                    DialogFactory.m10102a((Activity) this, C2328a.DmsReceiving);
                 }
                 return new C5759a();
             case 3:
@@ -424,7 +424,7 @@ public class AccessPointSettingActivity extends C5741i implements C2323a {
     /* access modifiers changed from: protected */
     public void onSaveInstanceState(Bundle bundle) {
         super.onSaveInstanceState(bundle);
-        C2820e.m11777a((C2666e) this.f8075d);
+        C2820e.m11777a((CameraConnectViewModel) this.f8075d);
         if (bundle != null) {
         }
     }
@@ -461,7 +461,7 @@ public class AccessPointSettingActivity extends C5741i implements C2323a {
             String str10 = "";
             try {
                 if (NetworkInterface.getNetworkInterfaces() == null) {
-                    C2331d.m10114a((Activity) this, C2328a.ConnectAPFailed, (Bundle) null);
+                    DialogFactory.m10114a((Activity) this, C2328a.ConnectAPFailed, (Bundle) null);
                     return;
                 }
                 Enumeration networkInterfaces = NetworkInterface.getNetworkInterfaces();
@@ -550,11 +550,11 @@ public class AccessPointSettingActivity extends C5741i implements C2323a {
                     String str11 = String.format(getResources().getString(R.string.msg_no_network_connection), new Object[]{str2}) + "\n" + getString(R.string.msg_confirm_network_connection);
                     Bundle bundle = new Bundle();
                     bundle.putString(C2378b.MESSAGE_STRING.name(), str11);
-                    C2331d.m10114a((Activity) this, C2328a.APSETTING_NO_NETWORK, bundle);
+                    DialogFactory.m10114a((Activity) this, C2328a.APSETTING_NO_NETWORK, bundle);
                     return;
                 }
                 if (!z) {
-                    C2331d.m10114a((Activity) this, C2328a.APSETTING_FUNC_ERROR, (Bundle) null);
+                    DialogFactory.m10114a((Activity) this, C2328a.APSETTING_FUNC_ERROR, (Bundle) null);
                     return;
                 }
                 m10906j();
@@ -571,7 +571,7 @@ public class AccessPointSettingActivity extends C5741i implements C2323a {
             String str12 = String.format(getResources().getString(R.string.msg_no_network_connection), new Object[]{str7}) + "\n" + getString(R.string.msg_confirm_network_connection);
             Bundle bundle2 = new Bundle();
             bundle2.putString(C2378b.MESSAGE_STRING.name(), str12);
-            C2331d.m10114a((Activity) this, C2328a.APSETTING_NO_NETWORK, bundle2);
+            DialogFactory.m10114a((Activity) this, C2328a.APSETTING_NO_NETWORK, bundle2);
         }
     }
 
@@ -580,7 +580,7 @@ public class AccessPointSettingActivity extends C5741i implements C2323a {
     public void m10899e(String str) {
         if (!this.f8086o) {
             while (!C2266l.m9801a(this.f8075d.mo6560d())) {
-                C2261g.m9769c("AccessPointSettingActivity", "failed port:" + this.f8075d.mo6560d());
+                ImageAppLog.error("AccessPointSettingActivity", "failed port:" + this.f8075d.mo6560d());
                 this.f8075d.mo6562e();
             }
         }
@@ -652,7 +652,7 @@ public class AccessPointSettingActivity extends C5741i implements C2323a {
                     break;
             }
         }
-        C2261g.m9760a(i | 2113536 | i2 | i3, "");
+        ImageAppLog.m9760a(i | 2113536 | i2 | i3, "");
     }
 
     /* renamed from: a */
@@ -841,7 +841,7 @@ public class AccessPointSettingActivity extends C5741i implements C2323a {
                         }
                         String extraInfo = networkInfo.getExtraInfo();
                         if (extraInfo == null || extraInfo.equals("")) {
-                            C2261g.m9769c("AccessPointSettingActivity", "getExtraInfoが取得できない");
+                            ImageAppLog.error("AccessPointSettingActivity", "getExtraInfoが取得できない");
                             WifiInfo connectionInfo = ((WifiManager) AccessPointSettingActivity.this._context.getSystemService("wifi")).getConnectionInfo();
                             if (connectionInfo != null) {
                                 str = connectionInfo.getSSID();
@@ -863,8 +863,8 @@ public class AccessPointSettingActivity extends C5741i implements C2323a {
                         }
                         State state = networkInfo.getState();
                         if (state == State.CONNECTED) {
-                            C2261g.m9760a(2109441, str2);
-                            C2261g.m9769c("AccessPointSettingActivity", action + ": 接続OK");
+                            ImageAppLog.m9760a(2109441, str2);
+                            ImageAppLog.error("AccessPointSettingActivity", action + ": 接続OK");
                             if (!str.equalsIgnoreCase("<unknown ssid>")) {
                                 AccessPointSettingActivity.this.f8084m = str;
                                 if (AccessPointSettingActivity.this.f8084m != null && AccessPointSettingActivity.this.f8084m.startsWith("\"") && AccessPointSettingActivity.this.f8084m.endsWith("\"")) {
@@ -874,7 +874,7 @@ public class AccessPointSettingActivity extends C5741i implements C2323a {
                                 return;
                             }
                         } else {
-                            C2261g.m9760a(2109442, str2);
+                            ImageAppLog.m9760a(2109442, str2);
                             if (AccessPointSettingActivity.this.f8075d != null) {
                                 AccessPointSettingActivity.this.f8075d.mo6559c(false);
                                 AccessPointSettingActivity.this.f8075d.mo6561d(false);
@@ -882,7 +882,7 @@ public class AccessPointSettingActivity extends C5741i implements C2323a {
                                     AccessPointSettingActivity.this.f8075d.mo6548a(0);
                                 }
                             }
-                            if (C2331d.m10125b((Activity) AccessPointSettingActivity.this, C2328a.ON_SEARCH_DIALOG) && AccessPointSettingActivity.this.f8075d != null) {
+                            if (DialogFactory.m10125b((Activity) AccessPointSettingActivity.this, C2328a.ON_SEARCH_DIALOG) && AccessPointSettingActivity.this.f8075d != null) {
                                 if (!AccessPointSettingActivity.this.f8075d.mo6571n()) {
                                     AccessPointSettingActivity.this.f8075d.mo6603v();
                                     AccessPointSettingActivity.this.f8075d.mo6552a(AccessPointSettingActivity.this.f8083l);
@@ -891,7 +891,7 @@ public class AccessPointSettingActivity extends C5741i implements C2323a {
                                 }
                             }
                             AccessPointSettingActivity.this.f8084m = "";
-                            C2261g.m9769c("AccessPointSettingActivity", action + ": 接続NG " + state);
+                            ImageAppLog.error("AccessPointSettingActivity", action + ": 接続NG " + state);
                         }
                         if (AccessPointSettingActivity.this.mo6392h()) {
                             AccessPointSettingActivity.this.mo6384c("");
@@ -914,8 +914,8 @@ public class AccessPointSettingActivity extends C5741i implements C2323a {
                     } else if (!action.equals("android.net.wifi.p2p.PEERS_CHANGED") && action.equals("android.net.wifi.p2p.CONNECTION_STATE_CHANGE")) {
                         String str3 = "[WIFI_P2P_CONNECT] ";
                         if (((NetworkInfo) intent.getParcelableExtra("networkInfo")).isConnected()) {
-                            C2261g.m9760a(2109441, str3);
-                            C2261g.m9769c("AccessPointSettingActivity", "WIFI_P2P_CONNECTION_CHANGED_ACTION Connected");
+                            ImageAppLog.m9760a(2109441, str3);
+                            ImageAppLog.error("AccessPointSettingActivity", "WIFI_P2P_CONNECTION_CHANGED_ACTION Connected");
                             AccessPointSettingActivity.this.f8088q.requestConnectionInfo(AccessPointSettingActivity.this.f8089r, new ConnectionInfoListener() {
                                 public void onConnectionInfoAvailable(WifiP2pInfo wifiP2pInfo) {
                                     AccessPointSettingActivity.this.f8085n = wifiP2pInfo.groupOwnerAddress.getHostAddress();
@@ -926,8 +926,8 @@ public class AccessPointSettingActivity extends C5741i implements C2323a {
                             });
                             return;
                         }
-                        C2261g.m9760a(2109442, str3);
-                        C2261g.m9769c("AccessPointSettingActivity", "WIFI_P2P_CONNECTION_CHANGED_ACTION disconnected");
+                        ImageAppLog.m9760a(2109442, str3);
+                        ImageAppLog.error("AccessPointSettingActivity", "WIFI_P2P_CONNECTION_CHANGED_ACTION disconnected");
                         AccessPointSettingActivity.this.f8085n = AccessPointSettingActivity.f8072c;
                         if (AccessPointSettingActivity.this.f8075d != null && AccessPointSettingActivity.this.f8075d.mo6568k() == 2) {
                             AccessPointSettingActivity.this.f8075d.mo6548a(0);
@@ -1033,37 +1033,37 @@ public class AccessPointSettingActivity extends C5741i implements C2323a {
     /* renamed from: a */
     public void mo6377a(final Activity activity, final C2323a aVar) {
         final C2328a aVar2 = C2328a.ON_SEARCH_DIALOG;
-        C2331d.m10115a(activity, aVar2, (Bundle) null, (C2325c) new C2325c() {
+        DialogFactory.m10115a(activity, aVar2, (Bundle) null, (C2325c) new C2325c() {
             /* renamed from: a */
             public void mo6131a() {
                 String str;
-                C2331d.m10133d(activity, aVar2, R.id.linearLayout, -16777216);
+                DialogFactory.m10133d(activity, aVar2, R.id.linearLayout, -16777216);
                 String str2 = "";
                 if (AccessPointSettingActivity.this.mo6391g() || AccessPointSettingActivity.this.mo6392h()) {
                     str = str2 + String.format(AccessPointSettingActivity.this.getString(R.string.msg_searching_camera_on_ssid), new Object[]{AccessPointSettingActivity.this.getString(R.string.cmn_network)});
                 } else {
                     str = str2 + String.format(AccessPointSettingActivity.this.getString(R.string.msg_searching_camera_on_ssid), new Object[]{AccessPointSettingActivity.this.f8083l});
                 }
-                C2331d.m10111a(activity, aVar2, (int) R.id.explainTextView, (CharSequence) str);
+                DialogFactory.m10111a(activity, aVar2, (int) R.id.explainTextView, (CharSequence) str);
                 String str3 = "\n" + AccessPointSettingActivity.this.getString(R.string.msg_select_camera_to_control);
                 if (AccessPointSettingActivity.this.mo6390f()) {
                     str3 = str3 + "\n" + String.format(AccessPointSettingActivity.this.getString(R.string.msg_select_control_camera), new Object[]{Build.MODEL});
                     AccessPointSettingActivity.this.f8087p.add(AccessPointSettingActivity.this.getString(R.string.cmn_contorl_camera));
                 }
-                C2331d.m10111a(activity, aVar2, (int) R.id.explainTextView2, (CharSequence) str3);
-                C2331d.m10110a(activity, aVar2, (int) R.id.ListView1, (ListAdapter) AccessPointSettingActivity.this.f8087p);
-                C2331d.m10107a(activity, aVar2, (int) R.id.ListView1, (OnItemClickListener) new OnItemClickListener() {
+                DialogFactory.m10111a(activity, aVar2, (int) R.id.explainTextView2, (CharSequence) str3);
+                DialogFactory.m10110a(activity, aVar2, (int) R.id.ListView1, (ListAdapter) AccessPointSettingActivity.this.f8087p);
+                DialogFactory.m10107a(activity, aVar2, (int) R.id.ListView1, (OnItemClickListener) new OnItemClickListener() {
                     public void onItemClick(AdapterView<?> adapterView, View view, int i, long j) {
                         int checkedItemPosition = ((ListView) adapterView).getCheckedItemPosition();
-                        C2331d.m10100a(activity);
+                        DialogFactory.m10100a(activity);
                         if (aVar != null) {
                             aVar.onItemClick(aVar2, checkedItemPosition);
                         }
                     }
                 });
-                C2331d.m10106a(activity, aVar2, (int) R.id.listCancelbutton, (OnClickListener) new OnClickListener() {
+                DialogFactory.m10106a(activity, aVar2, (int) R.id.listCancelbutton, (OnClickListener) new OnClickListener() {
                     public void onClick(View view) {
-                        C2331d.m10100a(activity);
+                        DialogFactory.m10100a(activity);
                         if (aVar != null) {
                             aVar.onNegativeButtonClick(aVar2);
                         }
@@ -1106,7 +1106,7 @@ public class AccessPointSettingActivity extends C5741i implements C2323a {
         super.onActivityResult(i, i2, intent);
         mo6382c();
         if (C1712b.m6919c().mo4896a() == null) {
-            C2028e a = C2253z.m9680a((Context) this, false);
+            C2028e a = ServiceFactory.m9680a((Context) this, false);
             if (a != null) {
                 a.mo5283g();
             }
@@ -1150,7 +1150,7 @@ public class AccessPointSettingActivity extends C5741i implements C2323a {
             if (this.f8075d != null) {
                 this.f8075d.mo6603v();
             }
-            C2331d.m10102a((Activity) this, C2328a.ON_SEARCH_DIALOG);
+            DialogFactory.m10102a((Activity) this, C2328a.ON_SEARCH_DIALOG);
             if (this.f8075d.mo6565h().size() != i) {
                 this.f8075d.mo6555b(((Integer) ((HashMap) this.f8075d.mo6566i().get(i)).get(((C1892f) this.f8075d.mo6565h().get(i)).f5685g)).intValue());
                 C2029a aVar3 = C2029a.ConnectSettingNormal;
@@ -1169,7 +1169,7 @@ public class AccessPointSettingActivity extends C5741i implements C2323a {
     /* access modifiers changed from: private */
     /* renamed from: k */
     public void m10908k() {
-        C2261g.m9769c("AccessPointSettingActivity", "～再接続～");
+        ImageAppLog.error("AccessPointSettingActivity", "～再接続～");
         new Thread(new Runnable() {
             public void run() {
                 String g = AccessPointSettingActivity.this.f8075d.mo6564g();

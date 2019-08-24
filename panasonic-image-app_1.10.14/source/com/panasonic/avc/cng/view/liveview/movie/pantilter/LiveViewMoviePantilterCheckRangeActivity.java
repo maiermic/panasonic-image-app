@@ -7,10 +7,10 @@ import android.os.Bundle;
 import android.view.Menu;
 import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.C1712b;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.util.C2274o;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -43,14 +43,14 @@ public class LiveViewMoviePantilterCheckRangeActivity extends C3720a {
         if (this.f12125b != null) {
             if (!C2274o.m9889M(this.f12125b.mo8842J())) {
                 if (mo8810b()) {
-                    C2261g.m9770d(mo8770a(), "onCreate() start");
+                    ImageAppLog.verbose(mo8770a(), "onCreate() start");
                 }
                 this.f12125b.mo8877m();
             } else if (mo8810b()) {
-                C2261g.m9770d(mo8770a(), "onCreate() continued");
+                ImageAppLog.verbose(mo8770a(), "onCreate() continued");
             }
         }
-        C2331d.m10114a((Activity) this, C2328a.ON_PROGRESS, (Bundle) null);
+        DialogFactory.m10114a((Activity) this, C2328a.ON_PROGRESS, (Bundle) null);
         this.f12125b.mo8868e(this._context.getText(R.string.cmn_msg_just_a_moment).toString());
         this.f12124a.putBoolean("PantilterCheckRange", true);
         this.f12114k = new Timer();
@@ -62,7 +62,7 @@ public class LiveViewMoviePantilterCheckRangeActivity extends C3720a {
                     LiveViewMoviePantilterCheckRangeActivity.this._cameraUtil.mo6032a((Runnable) new Runnable() {
                         public void run() {
                             if (LiveViewMoviePantilterCheckRangeActivity.this.mo8810b()) {
-                                C2261g.m9770d(LiveViewMoviePantilterCheckRangeActivity.this.mo8770a(), "Finish!!");
+                                ImageAppLog.verbose(LiveViewMoviePantilterCheckRangeActivity.this.mo8770a(), "Finish!!");
                             }
                             LiveViewMoviePantilterCheckRangeActivity.this.finish();
                         }
@@ -71,8 +71,8 @@ public class LiveViewMoviePantilterCheckRangeActivity extends C3720a {
                     if (!LiveViewMoviePantilterCheckRangeActivity.this.f12115l.booleanValue() && C2274o.m9890N(LiveViewMoviePantilterCheckRangeActivity.this.f12125b.mo8842J())) {
                         LiveViewMoviePantilterCheckRangeActivity.this.f12115l = Boolean.valueOf(true);
                     }
-                } else if (C2331d.m10125b((Activity) LiveViewMoviePantilterCheckRangeActivity.this, C2328a.ON_PROGRESS)) {
-                    C2331d.m10100a((Activity) LiveViewMoviePantilterCheckRangeActivity.this);
+                } else if (DialogFactory.m10125b((Activity) LiveViewMoviePantilterCheckRangeActivity.this, C2328a.ON_PROGRESS)) {
+                    DialogFactory.m10100a((Activity) LiveViewMoviePantilterCheckRangeActivity.this);
                 }
             }
         }, 2000, 500);
@@ -84,7 +84,7 @@ public class LiveViewMoviePantilterCheckRangeActivity extends C3720a {
             this.f12114k.cancel();
             this.f12114k = null;
         }
-        C2331d.m10100a((Activity) this);
+        DialogFactory.m10100a((Activity) this);
         super.onPause();
     }
 

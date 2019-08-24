@@ -915,11 +915,11 @@
     aput-object v1, v0, v3
 
     .line 467
-    new-instance v1, Lcom/panasonic/avc/cng/model/service/a/q;
+    new-instance v1, Lcom/panasonic/avc/cng/model/service/a/SortCursor;
 
     const-string v2, "date_added"
 
-    invoke-direct {v1, v0, v2, v3, v3}, Lcom/panasonic/avc/cng/model/service/a/q;-><init>([Landroid/database/Cursor;Ljava/lang/String;IZ)V
+    invoke-direct {v1, v0, v2, v3, v3}, Lcom/panasonic/avc/cng/model/service/a/SortCursor;-><init>([Landroid/database/Cursor;Ljava/lang/String;IZ)V
 
     iput-object v1, p0, Lcom/panasonic/avc/cng/model/service/a/d;->d:Landroid/database/Cursor;
 

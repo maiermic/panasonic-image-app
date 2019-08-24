@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/view/cameraconnect/i;->c(I)V
+    value = Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->c(I)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -17,16 +17,16 @@
 # instance fields
 .field final synthetic a:I
 
-.field final synthetic b:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+.field final synthetic b:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
 
 # direct methods
-.method constructor <init>(Lcom/panasonic/avc/cng/view/cameraconnect/i;Ljava/lang/String;I)V
+.method constructor <init>(Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;Ljava/lang/String;I)V
     .locals 0
 
     .prologue
     .line 1142
-    iput-object p1, p0, Lcom/panasonic/avc/cng/view/cameraconnect/i$2;->b:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/view/cameraconnect/i$2;->b:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
     iput p3, p0, Lcom/panasonic/avc/cng/view/cameraconnect/i$2;->a:I
 
@@ -44,18 +44,18 @@
     const/4 v1, 0x0
 
     .line 1145
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/i$2;->b:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/i$2;->b:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
     new-instance v2, Lcom/panasonic/avc/cng/view/cameraconnect/i$2$1;
 
     invoke-direct {v2, p0}, Lcom/panasonic/avc/cng/view/cameraconnect/i$2$1;-><init>(Lcom/panasonic/avc/cng/view/cameraconnect/i$2;)V
 
-    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/view/cameraconnect/i;->s(Lcom/panasonic/avc/cng/view/cameraconnect/i;Ljava/lang/Runnable;)Z
+    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->s(Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;Ljava/lang/Runnable;)Z
 
     .line 1154
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/i$2;->b:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/i$2;->b:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/cameraconnect/i;->x(Lcom/panasonic/avc/cng/view/cameraconnect/i;)Landroid/content/Context;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->x(Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;)Landroid/content/Context;
 
     move-result-object v0
 
@@ -84,7 +84,7 @@
 
     const-string v5, "waitApConnect waiting..."
 
-    invoke-static {v4, v5}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v4, v5}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 1161
     invoke-virtual {v0}, Landroid/net/ConnectivityManager;->getActiveNetworkInfo()Landroid/net/NetworkInfo;
@@ -105,10 +105,10 @@
 
     const-string v1, "Ap connected!!!"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 1164
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/i$2;->b:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/i$2;->b:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
     sget v1, Lcom/panasonic/avc/cng/core/dlna/DlnaWrapper;->a:I
 
@@ -116,34 +116,34 @@
 
     int-to-long v2, v1
 
-    invoke-static {v0, v2, v3}, Lcom/panasonic/avc/cng/view/cameraconnect/i;->a(Lcom/panasonic/avc/cng/view/cameraconnect/i;J)V
+    invoke-static {v0, v2, v3}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->a(Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;J)V
 
     .line 1178
     :cond_0
     :goto_1
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/i$2;->b:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/i$2;->b:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
     new-instance v1, Lcom/panasonic/avc/cng/view/cameraconnect/i$2$2;
 
     invoke-direct {v1, p0}, Lcom/panasonic/avc/cng/view/cameraconnect/i$2$2;-><init>(Lcom/panasonic/avc/cng/view/cameraconnect/i$2;)V
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/cameraconnect/i;->t(Lcom/panasonic/avc/cng/view/cameraconnect/i;Ljava/lang/Runnable;)Z
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->t(Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;Ljava/lang/Runnable;)Z
 
     .line 1185
     return-void
 
     .line 1168
     :cond_1
-    iget-object v4, p0, Lcom/panasonic/avc/cng/view/cameraconnect/i$2;->b:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v4, p0, Lcom/panasonic/avc/cng/view/cameraconnect/i$2;->b:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
     int-to-long v6, v2
 
-    invoke-static {v4, v6, v7}, Lcom/panasonic/avc/cng/view/cameraconnect/i;->a(Lcom/panasonic/avc/cng/view/cameraconnect/i;J)V
+    invoke-static {v4, v6, v7}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->a(Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;J)V
 
     .line 1170
-    iget-object v4, p0, Lcom/panasonic/avc/cng/view/cameraconnect/i$2;->b:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v4, p0, Lcom/panasonic/avc/cng/view/cameraconnect/i$2;->b:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
-    invoke-static {v4}, Lcom/panasonic/avc/cng/view/cameraconnect/i;->k(Lcom/panasonic/avc/cng/view/cameraconnect/i;)Ljava/lang/Object;
+    invoke-static {v4}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->k(Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;)Ljava/lang/Object;
 
     move-result-object v4
 
@@ -151,20 +151,20 @@
 
     .line 1171
     :try_start_0
-    iget-object v5, p0, Lcom/panasonic/avc/cng/view/cameraconnect/i$2;->b:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v5, p0, Lcom/panasonic/avc/cng/view/cameraconnect/i$2;->b:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
-    invoke-static {v5}, Lcom/panasonic/avc/cng/view/cameraconnect/i;->l(Lcom/panasonic/avc/cng/view/cameraconnect/i;)Z
+    invoke-static {v5}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->l(Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;)Z
 
     move-result v5
 
     if-eqz v5, :cond_2
 
     .line 1172
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/i$2;->b:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/i$2;->b:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/cameraconnect/i;->b(Lcom/panasonic/avc/cng/view/cameraconnect/i;Z)Z
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->b(Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;Z)Z
 
     .line 1173
     monitor-exit v4

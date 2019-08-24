@@ -6,13 +6,13 @@ import android.content.Context;
 import android.graphics.Point;
 import android.os.Handler;
 import android.widget.ImageButton;
-import com.panasonic.avc.cng.core.p040a.C1468ao;
-import com.panasonic.avc.cng.core.p040a.C1470aq;
+import com.panasonic.avc.cng.core.p040a.StatusCommand;
+import com.panasonic.avc.cng.core.p040a.StopMotionCommand;
 import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.C1892f;
 import com.panasonic.avc.cng.model.C1914p.C1915a;
-import com.panasonic.avc.cng.model.p051c.C1846e;
+import com.panasonic.avc.cng.model.p051c.CameraStatus;
 import com.panasonic.avc.cng.model.service.C2176k.C2177a;
 import com.panasonic.avc.cng.p038a.C1344c;
 import com.panasonic.avc.cng.view.liveview.C3259j.C3269a;
@@ -94,7 +94,7 @@ public class C3358l extends C3161h implements C2177a {
         if (this.f9498i == null) {
             return this.f10761gH;
         }
-        C1846e i = this.f9498i.mo5285i();
+        CameraStatus i = this.f9498i.mo5285i();
         if (i == null) {
             return this.f10761gH;
         }
@@ -107,7 +107,7 @@ public class C3358l extends C3161h implements C2177a {
         if (this.f9498i == null) {
             return 0;
         }
-        C1846e i = this.f9498i.mo5285i();
+        CameraStatus i = this.f9498i.mo5285i();
         if (i != null) {
             return i.mo4662K();
         }
@@ -135,7 +135,7 @@ public class C3358l extends C3161h implements C2177a {
             public void run() {
                 final boolean z = false;
                 C1892f a = C1712b.m6919c().mo4896a();
-                if (a != null && new C1470aq(a.f5682d).mo3572f(str3, str4) == 0) {
+                if (a != null && new StopMotionCommand(a.f5682d).mo3572f(str3, str4) == 0) {
                     z = true;
                 }
                 if (C3358l.this.f3707b != null) {
@@ -166,7 +166,7 @@ public class C3358l extends C3161h implements C2177a {
                 final String str = "0";
                 C1892f a = C1712b.m6919c().mo4896a();
                 if (a != null) {
-                    C1470aq aqVar = new C1470aq(a.f5682d);
+                    StopMotionCommand aqVar = new StopMotionCommand(a.f5682d);
                     if (str != null) {
                         int f = aqVar.mo3572f("start", str);
                         if (f == 0) {
@@ -182,7 +182,7 @@ public class C3358l extends C3161h implements C2177a {
                         z = true;
                     }
                     if (true == z) {
-                        C1846e b = new C1468ao(a.f5682d).mo3550b();
+                        CameraStatus b = new StatusCommand(a.f5682d).mo3550b();
                         if (b != null) {
                             if (((int) b.mo4662K()) <= 0) {
                                 str = "0";
@@ -223,7 +223,7 @@ public class C3358l extends C3161h implements C2177a {
                 boolean z3 = 0;
                 C1892f a = C1712b.m6919c().mo4896a();
                 if (a != null) {
-                    i = new C1470aq(a.f5682d).mo3572f("stop", null);
+                    i = new StopMotionCommand(a.f5682d).mo3572f("stop", null);
                     if (i == 0) {
                         z2 = 1;
                     } else {
@@ -235,13 +235,13 @@ public class C3358l extends C3161h implements C2177a {
                         e.printStackTrace();
                     }
                     if (1 == z2) {
-                        C1468ao aoVar = new C1468ao(a.f5682d);
+                        StatusCommand aoVar = new StatusCommand(a.f5682d);
                         int i2 = z3;
                         while (true) {
                             if (i2 >= 5) {
                                 break;
                             }
-                            C1846e b = aoVar.mo3550b();
+                            CameraStatus b = aoVar.mo3550b();
                             if (b != null) {
                                 String I = b.mo4660I();
                                 if (I != null && I.equalsIgnoreCase("off")) {

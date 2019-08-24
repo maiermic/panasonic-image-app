@@ -43,9 +43,9 @@
     .line 3617
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/d$15$1;->a:Lcom/panasonic/avc/cng/view/liveview/d$15;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/d$15;->a:Lcom/panasonic/avc/cng/view/liveview/d;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/d$15;->a:Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixBaseActivity;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/d;->a:Lcom/panasonic/avc/cng/view/liveview/e;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixBaseActivity;->a:Lcom/panasonic/avc/cng/view/liveview/e;
 
     const/4 v1, 0x0
 
@@ -54,9 +54,9 @@
     .line 3618
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/d$15$1;->a:Lcom/panasonic/avc/cng/view/liveview/d$15;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/d$15;->a:Lcom/panasonic/avc/cng/view/liveview/d;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/d$15;->a:Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixBaseActivity;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/d;->a:Lcom/panasonic/avc/cng/view/liveview/e;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixBaseActivity;->a:Lcom/panasonic/avc/cng/view/liveview/e;
 
     invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/liveview/e;->aC()V
 

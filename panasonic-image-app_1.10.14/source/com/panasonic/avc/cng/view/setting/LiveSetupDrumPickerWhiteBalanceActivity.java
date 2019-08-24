@@ -9,16 +9,16 @@ import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.p052d.C1879a;
 import com.panasonic.avc.cng.view.parts.C4055aq;
 import com.panasonic.avc.cng.view.parts.C4055aq.C4057a;
-import com.panasonic.avc.cng.view.setting.C5804u.C5806a;
+import com.panasonic.avc.cng.view.setting.LiveSetupLumixMirrorlessBaseActivity.C5806a;
 
-public class LiveSetupDrumPickerWhiteBalanceActivity extends C5804u {
+public class LiveSetupDrumPickerWhiteBalanceActivity extends LiveSetupLumixMirrorlessBaseActivity {
 
     /* renamed from: n */
     private C4055aq f16127n;
     /* access modifiers changed from: private */
 
     /* renamed from: q */
-    public C5792s f16128q;
+    public LiveSetupDrumPickerWhiteBalanceViewModel f16128q;
 
     /* renamed from: r */
     private C5806a f16129r;
@@ -32,7 +32,7 @@ public class LiveSetupDrumPickerWhiteBalanceActivity extends C5804u {
         C1712b.m6914a((Activity) this);
         super.onCreate(bundle);
         this.f16129r = new C5822e();
-        this.f16128q = new C5792s(this._context, this._handler, this.f17826b, this.f16129r);
+        this.f16128q = new LiveSetupDrumPickerWhiteBalanceViewModel(this._context, this._handler, this.f17826b, this.f16129r);
         this.f16127n = new C4055aq(this._context, this, this.f16128q.mo12692c());
         this.f16127n.mo9668b();
         this.f16127n.mo9666a();

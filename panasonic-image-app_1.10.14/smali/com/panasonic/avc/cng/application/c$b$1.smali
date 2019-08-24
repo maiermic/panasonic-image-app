@@ -43,9 +43,9 @@
     .line 448
     iget-object v0, p0, Lcom/panasonic/avc/cng/application/c$b$1;->a:Lcom/panasonic/avc/cng/application/c$b;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/application/c$b;->a:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/application/c$b;->a:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/application/c;->a(Lcom/panasonic/avc/cng/application/c;)Lcom/panasonic/avc/cng/application/c$e;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->a(Lcom/panasonic/avc/cng/application/NfcSupportViewModel;)Lcom/panasonic/avc/cng/application/c$e;
 
     move-result-object v0
 
@@ -54,9 +54,9 @@
     .line 450
     iget-object v0, p0, Lcom/panasonic/avc/cng/application/c$b$1;->a:Lcom/panasonic/avc/cng/application/c$b;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/application/c$b;->a:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/application/c$b;->a:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/application/c;->a(Lcom/panasonic/avc/cng/application/c;)Lcom/panasonic/avc/cng/application/c$e;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->a(Lcom/panasonic/avc/cng/application/NfcSupportViewModel;)Lcom/panasonic/avc/cng/application/c$e;
 
     move-result-object v0
 
@@ -67,9 +67,9 @@
     .line 452
     iget-object v0, p0, Lcom/panasonic/avc/cng/application/c$b$1;->a:Lcom/panasonic/avc/cng/application/c$b;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/application/c$b;->a:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/application/c$b;->a:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/application/c;->a(Lcom/panasonic/avc/cng/application/c;)Lcom/panasonic/avc/cng/application/c$e;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->a(Lcom/panasonic/avc/cng/application/NfcSupportViewModel;)Lcom/panasonic/avc/cng/application/c$e;
 
     move-result-object v0
 

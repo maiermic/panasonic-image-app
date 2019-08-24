@@ -45,9 +45,9 @@
 
     iget-object v0, v0, Lcom/panasonic/avc/cng/view/threebox/c$c$1;->a:Lcom/panasonic/avc/cng/view/threebox/c$c;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/threebox/c$c;->a:Lcom/panasonic/avc/cng/view/threebox/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/threebox/c$c;->a:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/threebox/c;->k:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;->k:Lcom/panasonic/avc/cng/a/c;
 
     const/4 v1, 0x1
 

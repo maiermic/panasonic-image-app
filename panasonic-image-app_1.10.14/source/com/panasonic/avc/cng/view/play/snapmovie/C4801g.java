@@ -4,19 +4,19 @@ import android.content.Context;
 import android.graphics.Bitmap;
 import android.os.Handler;
 import com.panasonic.avc.cng.imageapp.R;
-import com.panasonic.avc.cng.model.p051c.C1846e;
+import com.panasonic.avc.cng.model.p051c.CameraStatus;
 import com.panasonic.avc.cng.model.p051c.C1865q.C1866a;
 import com.panasonic.avc.cng.model.p051c.C1865q.C1867b;
 import com.panasonic.avc.cng.model.service.C1921a;
-import com.panasonic.avc.cng.model.service.C2253z;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
 import com.panasonic.avc.cng.model.service.p055b.C2003c;
 import com.panasonic.avc.cng.util.C2264j;
 import com.panasonic.avc.cng.view.p072a.C2291c;
 import com.panasonic.avc.cng.view.parts.C3971aa;
 import com.panasonic.avc.cng.view.parts.C3971aa.C3972a;
 import com.panasonic.avc.cng.view.parts.C4103bi;
-import com.panasonic.avc.cng.view.parts.C4245t;
-import com.panasonic.avc.cng.view.parts.C4245t.C4255e;
+import com.panasonic.avc.cng.view.parts.BrowserViewModel;
+import com.panasonic.avc.cng.view.parts.BrowserViewModel.C4255e;
 import com.panasonic.avc.cng.view.parts.C4262x;
 import com.panasonic.avc.cng.view.play.browser.C4373a;
 import java.io.File;
@@ -70,7 +70,7 @@ public class C4801g extends C2291c {
     /* access modifiers changed from: private */
 
     /* renamed from: m */
-    public C4245t f15607m;
+    public BrowserViewModel f15607m;
 
     /* renamed from: n */
     private C4255e f15608n;
@@ -133,11 +133,11 @@ public class C4801g extends C2291c {
     public C4801g(Context context, Handler handler, C4255e eVar) {
         super(context, handler);
         this.f15608n = eVar;
-        this.f15607m = new C4245t(this.f3706a, this.f3707b, this.f15608n);
+        this.f15607m = new BrowserViewModel(this.f3706a, this.f3707b, this.f15608n);
         this.f15606l = new C4802a();
         this.f15605k = new C3971aa(this.f3706a, this.f3707b, this.f15606l);
         this.f15609o = new ArrayList<>();
-        this.f15610p = C2253z.m9703f();
+        this.f15610p = ServiceFactory.m9703f();
     }
 
     /* renamed from: a */
@@ -178,7 +178,7 @@ public class C4801g extends C2291c {
             this.f15611q.mo3205a();
         }
         this.f15611q = null;
-        C2253z.m9685a(this.f15610p);
+        ServiceFactory.m9685a(this.f15610p);
         super.mo3205a();
     }
 
@@ -193,7 +193,7 @@ public class C4801g extends C2291c {
     }
 
     /* renamed from: h */
-    public C4245t mo11192h() {
+    public BrowserViewModel mo11192h() {
         return this.f15607m;
     }
 
@@ -210,7 +210,7 @@ public class C4801g extends C2291c {
         if (c != null) {
             str = ((C1866a) c.f5598d.get(this.f15605k.mo9421l())).f5593e;
             if (c.f5597c.equalsIgnoreCase("sd")) {
-                C1846e i = C2253z.m9680a(this.f3706a, true).mo5285i();
+                CameraStatus i = ServiceFactory.m9680a(this.f3706a, true).mo5285i();
                 if (i != null && !i.mo4706n()) {
                     return;
                 }

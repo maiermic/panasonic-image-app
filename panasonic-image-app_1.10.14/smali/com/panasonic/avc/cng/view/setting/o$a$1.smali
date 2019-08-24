@@ -43,16 +43,16 @@
     .line 318
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/o$a$1;->a:Lcom/panasonic/avc/cng/view/setting/o$a;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/o$a;->a:Lcom/panasonic/avc/cng/view/setting/o;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/o$a;->a:Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/o;->c()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;->c()V
 
     .line 321
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/o$a$1;->a:Lcom/panasonic/avc/cng/view/setting/o$a;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/o$a;->a:Lcom/panasonic/avc/cng/view/setting/o;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/o$a;->a:Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/o;->b(Lcom/panasonic/avc/cng/view/setting/o;)Lcom/panasonic/avc/cng/view/setting/am$h;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;->b(Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;)Lcom/panasonic/avc/cng/view/setting/am$h;
 
     move-result-object v0
 

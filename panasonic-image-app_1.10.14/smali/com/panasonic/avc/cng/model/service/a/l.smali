@@ -304,7 +304,7 @@
 
     iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/a/l;->m:Lcom/panasonic/avc/cng/model/service/a;
 
-    instance-of v0, v0, Lcom/panasonic/avc/cng/model/service/a/c;
+    instance-of v0, v0, Lcom/panasonic/avc/cng/model/service/a/BrowserServiceCamera;
 
     if-eqz v0, :cond_0
 

@@ -7,14 +7,14 @@ import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.p051c.C1860l;
 import com.panasonic.avc.cng.model.service.C1985b;
-import com.panasonic.avc.cng.model.service.C2253z;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
 import com.panasonic.avc.cng.view.liveview.movie.conventional.C3491c;
 import com.panasonic.avc.cng.view.liveview.movie.conventional.C3498d;
 import com.panasonic.avc.cng.view.p072a.C2316j;
 import com.panasonic.avc.cng.view.parts.C4003af;
 import com.panasonic.avc.cng.view.parts.C4021aj;
 import com.panasonic.avc.cng.view.parts.C4021aj.C4033a;
-import com.panasonic.avc.cng.view.setting.C5830x.C5837b;
+import com.panasonic.avc.cng.view.setting.LiveSetupMovieGainViewModel.C5837b;
 
 public class LiveSetupMovieGainActivity extends C3491c {
     /* access modifiers changed from: private */
@@ -24,7 +24,7 @@ public class LiveSetupMovieGainActivity extends C3491c {
     /* access modifiers changed from: private */
 
     /* renamed from: h */
-    public C5830x f16170h;
+    public LiveSetupMovieGainViewModel f16170h;
 
     /* renamed from: i */
     private C5055a f16171i;
@@ -56,10 +56,10 @@ public class LiveSetupMovieGainActivity extends C3491c {
         mo8277a(this.f11188e, this.f11189f);
         this.f11185b = new C3498d();
         this.f11185b.mo8305b(this, this.f11184a);
-        this.f16170h = (C5830x) C2316j.m10030a("LiveSetupMovieGainViewModel");
+        this.f16170h = (LiveSetupMovieGainViewModel) C2316j.m10030a("LiveSetupMovieGainViewModel");
         this.f16171i = new C5055a();
         if (this.f16170h == null) {
-            this.f16170h = new C5830x(this._context, this._handler, this.f16171i);
+            this.f16170h = new LiveSetupMovieGainViewModel(this._context, this._handler, this.f16171i);
             this.f16170h.mo12762a(this._context, this._handler, (C5837b) this.f16171i);
             C2316j.m10032a("LiveSetupMovieGainViewModel", this.f16170h);
         } else {
@@ -161,7 +161,7 @@ public class LiveSetupMovieGainActivity extends C3491c {
     public void onActivityResult(int i, int i2, Intent intent) {
         C1860l lVar;
         C1860l lVar2 = null;
-        C1985b a = C2253z.m9679a(this._context, C1712b.m6919c().mo4896a());
+        C1985b a = ServiceFactory.m9679a(this._context, C1712b.m6919c().mo4896a());
         if (a != null) {
             lVar = a.mo5182a("menu_item_id_supergainset");
             lVar2 = a.mo5182a("menu_item_id_nightmode");

@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/panasonic/avc/cng/view/setting/ak;
+    value = Lcom/panasonic/avc/cng/view/setting/SettingBracketViewModel;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,28 +18,28 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/panasonic/avc/cng/view/setting/ak;
+.field final synthetic a:Lcom/panasonic/avc/cng/view/setting/SettingBracketViewModel;
 
 
 # direct methods
-.method private constructor <init>(Lcom/panasonic/avc/cng/view/setting/ak;)V
+.method private constructor <init>(Lcom/panasonic/avc/cng/view/setting/SettingBracketViewModel;)V
     .locals 0
 
     .prologue
     .line 168
-    iput-object p1, p0, Lcom/panasonic/avc/cng/view/setting/ak$a;->a:Lcom/panasonic/avc/cng/view/setting/ak;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/view/setting/ak$a;->a:Lcom/panasonic/avc/cng/view/setting/SettingBracketViewModel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/panasonic/avc/cng/view/setting/ak;Lcom/panasonic/avc/cng/view/setting/ak$1;)V
+.method synthetic constructor <init>(Lcom/panasonic/avc/cng/view/setting/SettingBracketViewModel;Lcom/panasonic/avc/cng/view/setting/ak$1;)V
     .locals 0
 
     .prologue
     .line 168
-    invoke-direct {p0, p1}, Lcom/panasonic/avc/cng/view/setting/ak$a;-><init>(Lcom/panasonic/avc/cng/view/setting/ak;)V
+    invoke-direct {p0, p1}, Lcom/panasonic/avc/cng/view/setting/ak$a;-><init>(Lcom/panasonic/avc/cng/view/setting/SettingBracketViewModel;)V
 
     return-void
 .end method
@@ -51,26 +51,26 @@
 
     .prologue
     .line 175
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ak$a;->a:Lcom/panasonic/avc/cng/view/setting/ak;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ak$a;->a:Lcom/panasonic/avc/cng/view/setting/SettingBracketViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/ak;->b(Lcom/panasonic/avc/cng/view/setting/ak;)Lcom/panasonic/avc/cng/view/setting/am$h;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/SettingBracketViewModel;->b(Lcom/panasonic/avc/cng/view/setting/SettingBracketViewModel;)Lcom/panasonic/avc/cng/view/setting/am$h;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ak$a;->a:Lcom/panasonic/avc/cng/view/setting/ak;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ak$a;->a:Lcom/panasonic/avc/cng/view/setting/SettingBracketViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/ak;->c(Lcom/panasonic/avc/cng/view/setting/ak;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/SettingBracketViewModel;->c(Lcom/panasonic/avc/cng/view/setting/SettingBracketViewModel;)Landroid/os/Handler;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 178
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ak$a;->a:Lcom/panasonic/avc/cng/view/setting/ak;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ak$a;->a:Lcom/panasonic/avc/cng/view/setting/SettingBracketViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/ak;->d(Lcom/panasonic/avc/cng/view/setting/ak;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/SettingBracketViewModel;->d(Lcom/panasonic/avc/cng/view/setting/SettingBracketViewModel;)Landroid/os/Handler;
 
     move-result-object v0
 
@@ -90,26 +90,26 @@
 
     .prologue
     .line 194
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ak$a;->a:Lcom/panasonic/avc/cng/view/setting/ak;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ak$a;->a:Lcom/panasonic/avc/cng/view/setting/SettingBracketViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/ak;->b(Lcom/panasonic/avc/cng/view/setting/ak;)Lcom/panasonic/avc/cng/view/setting/am$h;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/SettingBracketViewModel;->b(Lcom/panasonic/avc/cng/view/setting/SettingBracketViewModel;)Lcom/panasonic/avc/cng/view/setting/am$h;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ak$a;->a:Lcom/panasonic/avc/cng/view/setting/ak;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ak$a;->a:Lcom/panasonic/avc/cng/view/setting/SettingBracketViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/ak;->e(Lcom/panasonic/avc/cng/view/setting/ak;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/SettingBracketViewModel;->e(Lcom/panasonic/avc/cng/view/setting/SettingBracketViewModel;)Landroid/os/Handler;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 197
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ak$a;->a:Lcom/panasonic/avc/cng/view/setting/ak;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ak$a;->a:Lcom/panasonic/avc/cng/view/setting/SettingBracketViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/ak;->f(Lcom/panasonic/avc/cng/view/setting/ak;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/SettingBracketViewModel;->f(Lcom/panasonic/avc/cng/view/setting/SettingBracketViewModel;)Landroid/os/Handler;
 
     move-result-object v0
 
@@ -129,26 +129,26 @@
 
     .prologue
     .line 214
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ak$a;->a:Lcom/panasonic/avc/cng/view/setting/ak;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ak$a;->a:Lcom/panasonic/avc/cng/view/setting/SettingBracketViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/ak;->b(Lcom/panasonic/avc/cng/view/setting/ak;)Lcom/panasonic/avc/cng/view/setting/am$h;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/SettingBracketViewModel;->b(Lcom/panasonic/avc/cng/view/setting/SettingBracketViewModel;)Lcom/panasonic/avc/cng/view/setting/am$h;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ak$a;->a:Lcom/panasonic/avc/cng/view/setting/ak;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ak$a;->a:Lcom/panasonic/avc/cng/view/setting/SettingBracketViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/ak;->g(Lcom/panasonic/avc/cng/view/setting/ak;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/SettingBracketViewModel;->g(Lcom/panasonic/avc/cng/view/setting/SettingBracketViewModel;)Landroid/os/Handler;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 217
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ak$a;->a:Lcom/panasonic/avc/cng/view/setting/ak;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ak$a;->a:Lcom/panasonic/avc/cng/view/setting/SettingBracketViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/ak;->h(Lcom/panasonic/avc/cng/view/setting/ak;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/SettingBracketViewModel;->h(Lcom/panasonic/avc/cng/view/setting/SettingBracketViewModel;)Landroid/os/Handler;
 
     move-result-object v0
 

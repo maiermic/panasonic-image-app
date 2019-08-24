@@ -16,21 +16,21 @@ import android.view.View;
 import android.view.View.OnTouchListener;
 import android.widget.ImageButton;
 import com.panasonic.avc.cng.core.dlna.C1699h;
-import com.panasonic.avc.cng.core.p040a.C1441af;
-import com.panasonic.avc.cng.core.p040a.C1468ao;
+import com.panasonic.avc.cng.core.p040a.RecordCommand;
+import com.panasonic.avc.cng.core.p040a.StatusCommand;
 import com.panasonic.avc.cng.core.p040a.C1473at.C1488o;
-import com.panasonic.avc.cng.core.p040a.C1508g;
-import com.panasonic.avc.cng.core.p040a.C1508g.C1509a;
-import com.panasonic.avc.cng.core.p040a.C1508g.C1511c;
-import com.panasonic.avc.cng.core.p040a.C1508g.C1512d;
-import com.panasonic.avc.cng.core.p040a.C1508g.C1514f;
-import com.panasonic.avc.cng.core.p040a.C1508g.C1515g;
-import com.panasonic.avc.cng.core.p040a.C1508g.C1516h;
-import com.panasonic.avc.cng.core.p040a.C1508g.C1517i;
-import com.panasonic.avc.cng.core.p040a.C1508g.C1518j;
-import com.panasonic.avc.cng.core.p040a.C1536t;
-import com.panasonic.avc.cng.core.p040a.C1536t.C1537a;
-import com.panasonic.avc.cng.core.p040a.C1536t.C1538b;
+import com.panasonic.avc.cng.core.p040a.FocusCommand;
+import com.panasonic.avc.cng.core.p040a.FocusCommand.C1509a;
+import com.panasonic.avc.cng.core.p040a.FocusCommand.C1511c;
+import com.panasonic.avc.cng.core.p040a.FocusCommand.C1512d;
+import com.panasonic.avc.cng.core.p040a.FocusCommand.C1514f;
+import com.panasonic.avc.cng.core.p040a.FocusCommand.C1515g;
+import com.panasonic.avc.cng.core.p040a.FocusCommand.C1516h;
+import com.panasonic.avc.cng.core.p040a.FocusCommand.C1517i;
+import com.panasonic.avc.cng.core.p040a.FocusCommand.C1518j;
+import com.panasonic.avc.cng.core.p040a.LiveViewOperationCommand;
+import com.panasonic.avc.cng.core.p040a.LiveViewOperationCommand.C1537a;
+import com.panasonic.avc.cng.core.p040a.LiveViewOperationCommand.C1538b;
 import com.panasonic.avc.cng.imageapp.C1701a.C1702a;
 import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.C1712b;
@@ -40,11 +40,11 @@ import com.panasonic.avc.cng.model.C1897j.C1905h;
 import com.panasonic.avc.cng.model.C1910l;
 import com.panasonic.avc.cng.model.p051c.C1835a;
 import com.panasonic.avc.cng.model.p051c.C1844d;
-import com.panasonic.avc.cng.model.p051c.C1846e;
+import com.panasonic.avc.cng.model.p051c.CameraStatus;
 import com.panasonic.avc.cng.model.p051c.C1848g.C1849a;
 import com.panasonic.avc.cng.model.p051c.C1848g.C1851c;
 import com.panasonic.avc.cng.model.p051c.C1848g.C1852d;
-import com.panasonic.avc.cng.model.p051c.C1853h;
+import com.panasonic.avc.cng.model.p051c.ParseTagHighlightSceneInfo;
 import com.panasonic.avc.cng.model.p051c.C1854i;
 import com.panasonic.avc.cng.model.p051c.C1860l;
 import com.panasonic.avc.cng.model.p051c.C1865q.C1866a;
@@ -56,12 +56,12 @@ import com.panasonic.avc.cng.model.service.C2028e;
 import com.panasonic.avc.cng.model.service.C2028e.C2031c;
 import com.panasonic.avc.cng.model.service.C2176k;
 import com.panasonic.avc.cng.model.service.C2176k.C2177a;
-import com.panasonic.avc.cng.model.service.C2253z;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
 import com.panasonic.avc.cng.model.service.p056c.C2013a.C2017a;
 import com.panasonic.avc.cng.p038a.C1342a;
 import com.panasonic.avc.cng.p038a.C1343b;
 import com.panasonic.avc.cng.p038a.C1344c;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.util.C2266l;
 import com.panasonic.avc.cng.view.liveview.C3259j.C3270b;
 import com.panasonic.avc.cng.view.liveview.C3271k.C3336c;
@@ -1255,7 +1255,7 @@ public abstract class C2994e extends C1342a implements C2177a {
     protected C3099d f9499j;
 
     /* renamed from: k */
-    protected C1441af f9500k;
+    protected RecordCommand f9500k;
 
     /* renamed from: l */
     protected C3911w f9501l;
@@ -1264,10 +1264,10 @@ public abstract class C2994e extends C1342a implements C2177a {
     protected C3891o f9502m;
 
     /* renamed from: n */
-    protected C1508g f9503n;
+    protected FocusCommand f9503n;
 
     /* renamed from: o */
-    protected C1536t f9504o;
+    protected LiveViewOperationCommand f9504o;
 
     /* renamed from: p */
     protected boolean f9505p = false;
@@ -1438,7 +1438,7 @@ public abstract class C2994e extends C1342a implements C2177a {
         public void mo7588a(BigDecimal bigDecimal) {
             final C1854i c = C2994e.this.f9503n.mo3732c(bigDecimal.multiply(new BigDecimal(100)).setScale(1, 4).intValue());
             if (c.mo4803d()) {
-                C2261g.m9769c("LiveViewLumixBaseViewModel", "changeScale error.");
+                ImageAppLog.error("LiveViewLumixBaseViewModel", "changeScale error.");
             } else if (C2994e.this.f3707b != null) {
                 C2994e.this.f3707b.post(new Runnable() {
                     public void run() {
@@ -1459,7 +1459,7 @@ public abstract class C2994e extends C1342a implements C2177a {
         /* renamed from: a */
         public void mo7582a() {
             if (!C2994e.this.f9503n.mo3409a().mo4771a()) {
-                C2261g.m9769c("LiveViewLumixBaseViewModel", "MF assist position setting error.");
+                ImageAppLog.error("LiveViewLumixBaseViewModel", "MF assist position setting error.");
             }
         }
 
@@ -1492,7 +1492,7 @@ public abstract class C2994e extends C1342a implements C2177a {
                 }
                 final C1854i a = C2994e.this.f9503n.mo3726a(aVar, i, i2, i3, i4);
                 if (a.mo4803d()) {
-                    C2261g.m9769c("LiveViewLumixBaseViewModel", "pinchCommon error.");
+                    ImageAppLog.error("LiveViewLumixBaseViewModel", "pinchCommon error.");
                 } else if (z) {
                     C2994e.this.f9186av = true;
                     if (C2994e.this.f3707b != null) {
@@ -1517,7 +1517,7 @@ public abstract class C2994e extends C1342a implements C2177a {
             synchronized (C2994e.this.f9177am) {
                 final C1854i a = C2994e.this.f9503n.mo3726a(aVar, i, i2, i3, i4);
                 if (a.mo4803d()) {
-                    C2261g.m9769c("LiveViewLumixBaseViewModel", "pinchCommon error.");
+                    ImageAppLog.error("LiveViewLumixBaseViewModel", "pinchCommon error.");
                 } else if (z && C2994e.this.f3707b != null) {
                     C2994e.this.f3707b.post(new Runnable() {
                         public void run() {
@@ -1536,7 +1536,7 @@ public abstract class C2994e extends C1342a implements C2177a {
             synchronized (C2994e.this.f9177am) {
                 final C1854i a = C2994e.this.f9503n.mo3725a(aVar, i, i2);
                 if (a.mo4803d()) {
-                    C2261g.m9769c("LiveViewLumixBaseViewModel", "dragCommon error.");
+                    ImageAppLog.error("LiveViewLumixBaseViewModel", "dragCommon error.");
                 } else if (z && C2994e.this.f3707b != null) {
                     C2994e.this.f3707b.post(new Runnable() {
                         public void run() {
@@ -1560,7 +1560,7 @@ public abstract class C2994e extends C1342a implements C2177a {
             }
             final C1854i a = C2994e.this.f9503n.mo3728a(jVar, iVar, i, i2);
             if (a.mo4803d()) {
-                C2261g.m9769c("LiveViewLumixBaseViewModel", "changeAssistModeCommon error.");
+                ImageAppLog.error("LiveViewLumixBaseViewModel", "changeAssistModeCommon error.");
             } else if (C2994e.this.f3707b != null) {
                 C2994e.this.f3707b.post(new Runnable() {
                     public void run() {
@@ -1605,7 +1605,7 @@ public abstract class C2994e extends C1342a implements C2177a {
 
         /* renamed from: a */
         public void mo7607a(long j, int i) {
-            C2261g.m9770d("LiveViewLumixBaseViewModel", String.format("elapsed[%d],remain[%d]", new Object[]{Long.valueOf(j), Integer.valueOf(i)}));
+            ImageAppLog.verbose("LiveViewLumixBaseViewModel", String.format("elapsed[%d],remain[%d]", new Object[]{Long.valueOf(j), Integer.valueOf(i)}));
             this.f9686b = true;
             this.f9688d = j;
             this.f9687c = i;
@@ -1633,10 +1633,10 @@ public abstract class C2994e extends C1342a implements C2177a {
         public void mo7609b(long j, int i) {
             this.f9689e = j;
             if (j - this.f9688d >= 3) {
-                C2261g.m9770d("LiveViewLumixBaseViewModel", String.format("ElapsedTime Remain[%d],[%d]", new Object[]{Long.valueOf(this.f9688d), Long.valueOf(j)}));
+                ImageAppLog.verbose("LiveViewLumixBaseViewModel", String.format("ElapsedTime Remain[%d],[%d]", new Object[]{Long.valueOf(this.f9688d), Long.valueOf(j)}));
                 this.f9688d = j;
             }
-            C2261g.m9770d("LiveViewLumixBaseViewModel", String.format("UpdateTime Remain[%d],[%d]", new Object[]{Integer.valueOf(this.f9687c), Integer.valueOf(i)}));
+            ImageAppLog.verbose("LiveViewLumixBaseViewModel", String.format("UpdateTime Remain[%d],[%d]", new Object[]{Integer.valueOf(this.f9687c), Integer.valueOf(i)}));
             this.f9687c = i;
         }
 
@@ -1696,12 +1696,12 @@ public abstract class C2994e extends C1342a implements C2177a {
         }
 
         /* renamed from: a */
-        public void mo5337a(C1846e eVar) {
+        public void mo5337a(CameraStatus eVar) {
             final boolean z;
             boolean z2;
-            boolean a = C1846e.m7190a(eVar);
+            boolean a = CameraStatus.m7190a(eVar);
             if (!a) {
-                final int b = C1846e.m7191b(eVar);
+                final int b = CameraStatus.m7191b(eVar);
                 if (C2994e.this.f3707b != null) {
                     C2994e.this.f3707b.post(new Runnable() {
                         public void run() {
@@ -1726,7 +1726,7 @@ public abstract class C2994e extends C1342a implements C2177a {
                             C2994e.this.f9235bs.mo3216a("");
                             C2994e.this.f9237bu.mo3216a("");
                             C2994e.this.f9239bw.mo3216a("");
-                            C2261g.m9770d("ElapsedTimeIconView(empty 0)", "empty 0 recording time");
+                            ImageAppLog.verbose("ElapsedTimeIconView(empty 0)", "empty 0 recording time");
                             C2994e.this.f9310dN.mo3216a("");
                             C2994e.this.f9234br.mo3216a("");
                             C2994e.this.mo7358az();
@@ -1737,7 +1737,7 @@ public abstract class C2994e extends C1342a implements C2177a {
                     return;
                 }
             } else if (C2994e.this.f3706a == null) {
-                C2261g.m9769c("LiveViewLumixBaseViewModel", "Content is null!!!");
+                ImageAppLog.error("LiveViewLumixBaseViewModel", "Content is null!!!");
                 return;
             } else {
                 final C1892f a2 = C1712b.m6919c().mo4896a();
@@ -3535,7 +3535,7 @@ public abstract class C2994e extends C1342a implements C2177a {
 
         /* renamed from: b */
         public void mo7611b(C1699h hVar) {
-            C2261g.m9771e("LiveViewLumixBaseViewModel", String.format("Warning(%d:%d), Processing(%d:%d)", new Object[]{Integer.valueOf(hVar.mo4316a()), Integer.valueOf(hVar.mo4317a(hVar.mo4316a() - 1)), Integer.valueOf(hVar.mo4318b()), Integer.valueOf(hVar.mo4319b(hVar.mo4318b() - 1))}));
+            ImageAppLog.info("LiveViewLumixBaseViewModel", String.format("Warning(%d:%d), Processing(%d:%d)", new Object[]{Integer.valueOf(hVar.mo4316a()), Integer.valueOf(hVar.mo4317a(hVar.mo4316a() - 1)), Integer.valueOf(hVar.mo4318b()), Integer.valueOf(hVar.mo4319b(hVar.mo4318b() - 1))}));
             if (!C2994e.this.f9149aK) {
                 if (C2994e.this.mo7403bk() == 2) {
                     C2994e.this.mo7447f(0);
@@ -3634,7 +3634,7 @@ public abstract class C2994e extends C1342a implements C2177a {
                     case 306:
                         boolean z = C2994e.this.f9118F;
                         C2994e.this.f9118F = false;
-                        C2261g.m9763a("LiveViewSD", "false: because subscribe Error");
+                        ImageAppLog.debug("LiveViewSD", "false: because subscribe Error");
                         C2994e.this.f9173ai = 0;
                         C2994e.this.f9150aL = false;
                         if (C2994e.this.mo7275U()) {
@@ -3642,7 +3642,7 @@ public abstract class C2994e extends C1342a implements C2177a {
                             if (C2994e.this.f3707b != null) {
                                 C2994e.this.f3707b.post(new Runnable() {
                                     public void run() {
-                                        C2261g.m9769c("LiveViewLumixBaseViewModel_B", "Subscribe false:");
+                                        ImageAppLog.error("LiveViewLumixBaseViewModel_B", "Subscribe false:");
                                         C2994e.this.mo7451g(false);
                                         C2994e.this.mo7457i(true);
                                         C2994e.this.mo7448f(false);
@@ -3652,7 +3652,7 @@ public abstract class C2994e extends C1342a implements C2177a {
                             }
                         }
                         if (hVar.mo4317a(a - 1) == 301 || hVar.mo4317a(a - 1) == 304) {
-                            C2261g.m9769c("LiveViewLumixBaseViewModel_B", "Subscribe false:");
+                            ImageAppLog.error("LiveViewLumixBaseViewModel_B", "Subscribe false:");
                             if (hVar.mo4317a(a - 1) == 301) {
                                 aVar = C2328a.ON_SUBS_PICTREC_ERR_REC;
                             } else {
@@ -3708,7 +3708,7 @@ public abstract class C2994e extends C1342a implements C2177a {
                             aVar = C2328a.ON_ERROR_WIFI_CONNECTING_FOCUSSELECT;
                         } else {
                             aVar = C2328a.ON_SUBS_PICTBRST_ERR_STOP;
-                            C2261g.m9769c("LiveViewLumixBaseViewModel_B", "Subscribe false:ON_SUBS_PICTBRST_ERR_STOP");
+                            ImageAppLog.error("LiveViewLumixBaseViewModel_B", "Subscribe false:ON_SUBS_PICTBRST_ERR_STOP");
                         }
                         if (z && C2994e.this.f3707b != null) {
                             C2994e.this.f3707b.post(new Runnable() {
@@ -3764,7 +3764,7 @@ public abstract class C2994e extends C1342a implements C2177a {
                             }
                             boolean z2 = C2994e.this.f9118F;
                             C2994e.this.f9118F = false;
-                            C2261g.m9763a("LiveViewSD", "false: because subscribe SDWRFin");
+                            ImageAppLog.debug("LiveViewSD", "false: because subscribe SDWRFin");
                             if (z2 && C2994e.this.f3707b != null) {
                                 C2994e.this.f3707b.post(new Runnable() {
                                     public void run() {
@@ -3887,10 +3887,10 @@ public abstract class C2994e extends C1342a implements C2177a {
         public void run() {
             C1892f a = C1712b.m6919c().mo4896a();
             if (a != null) {
-                C1468ao aoVar = new C1468ao(a.f5682d);
+                StatusCommand aoVar = new StatusCommand(a.f5682d);
                 if (!C1879a.m7547c(a, "2.0") && C2994e.this.f9498i != null) {
                     C2994e.this.f9498i.mo5270a(true, true);
-                    C2261g.m9771e("LiveViewLumixBaseViewModel_B", "KeepAlive[PauseDeviceWatch]");
+                    ImageAppLog.info("LiveViewLumixBaseViewModel_B", "KeepAlive[PauseDeviceWatch]");
                 }
                 while (true) {
                     if (this.f9724c) {
@@ -3899,10 +3899,10 @@ public abstract class C2994e extends C1342a implements C2177a {
                     try {
                         Thread.sleep(500);
                         synchronized (C1910l.m7679a()) {
-                            C1846e b = aoVar.mo3551b(5);
-                            C2261g.m9771e("LiveViewLumixBaseViewModel_B", "KeepAlive[]");
+                            CameraStatus b = aoVar.mo3551b(5);
+                            ImageAppLog.info("LiveViewLumixBaseViewModel_B", "KeepAlive[]");
                             if (b == null) {
-                                C2261g.m9771e("LiveViewLumixBaseViewModel_B", "KeepAlive[error]");
+                                ImageAppLog.info("LiveViewLumixBaseViewModel_B", "KeepAlive[error]");
                             }
                         }
                     } catch (Exception e) {
@@ -3911,7 +3911,7 @@ public abstract class C2994e extends C1342a implements C2177a {
                 }
                 if (C2994e.this.f9498i != null) {
                     C2994e.this.f9498i.mo5278b(true, true);
-                    C2261g.m9771e("LiveViewLumixBaseViewModel_B", "KeepAlive[StartDeviceWatch]");
+                    ImageAppLog.info("LiveViewLumixBaseViewModel_B", "KeepAlive[StartDeviceWatch]");
                 }
             }
         }
@@ -3935,7 +3935,7 @@ public abstract class C2994e extends C1342a implements C2177a {
 
         /* renamed from: a */
         public void mo7633a(final int i, final int i2) {
-            C2261g.m9771e("LiveViewLumixBaseViewModel", "OnSurfaceTouchDownEvent[0]");
+            ImageAppLog.info("LiveViewLumixBaseViewModel", "OnSurfaceTouchDownEvent[0]");
             if (!C2994e.this.f9511v || C2994e.this.f9138Z || C2994e.this.mo7331aY()) {
                 return;
             }
@@ -3958,11 +3958,11 @@ public abstract class C2994e extends C1342a implements C2177a {
             }
             if (C2994e.this.mo7264J()) {
                 if ((C2994e.this.f9115C && !C2994e.this.mo7277W() && !C2994e.this.mo7324aR()) || C2994e.this.mo7311aE() || C2994e.this.mo7317aK() || C2994e.this.mo7396bd() || C2994e.this.mo7395bc()) {
-                    C2261g.m9771e("LiveViewLumixBaseViewModel", "OnSurfaceTouchDownEvent[1]");
+                    ImageAppLog.info("LiveViewLumixBaseViewModel", "OnSurfaceTouchDownEvent[1]");
                     C2994e.this.mo7483v(true);
                     C2994e.this.mo7445e("");
                     if (C2994e.this.mo7335ac()) {
-                        C2261g.m9771e("LiveViewLumixBaseViewModel", "OnSurfaceTouchDownEvent[3]burst");
+                        ImageAppLog.info("LiveViewLumixBaseViewModel", "OnSurfaceTouchDownEvent[3]burst");
                         C2994e.this.mo7464m(true);
                         if (C2994e.this.mo7316aJ()) {
                             C2994e.this.mo7366b(true, i, i2);
@@ -3974,7 +3974,7 @@ public abstract class C2994e extends C1342a implements C2177a {
                         C2994e.this.mo7457i(false);
                         new Thread(new Runnable() {
                             public void run() {
-                                final C1853h a;
+                                final ParseTagHighlightSceneInfo a;
                                 synchronized (C2994e.this.f9177am) {
                                     if (C2994e.this.f9491gu) {
                                         if (C2994e.this.mo7311aE()) {
@@ -4007,12 +4007,12 @@ public abstract class C2994e extends C1342a implements C2177a {
                             }
                         }).start();
                     } else {
-                        C2261g.m9771e("LiveViewLumixBaseViewModel", "OnSurfaceTouchDownEvent[3]");
+                        ImageAppLog.info("LiveViewLumixBaseViewModel", "OnSurfaceTouchDownEvent[3]");
                         C2994e.this.mo7451g(true);
                         C2994e.this.mo7457i(false);
                         new Thread(new Runnable() {
                             public void run() {
-                                final C1853h a;
+                                final ParseTagHighlightSceneInfo a;
                                 synchronized (C2994e.this.f9177am) {
                                     if (C2994e.this.f9491gu) {
                                         a = C2994e.this.f9500k.mo3496b(i, i2);
@@ -4063,16 +4063,16 @@ public abstract class C2994e extends C1342a implements C2177a {
 
         /* renamed from: b */
         public void mo7636b(int i, int i2) {
-            C2261g.m9771e("LiveViewLumixBaseViewModel", "OnSurfaceTouchUpEvent[0]");
+            ImageAppLog.info("LiveViewLumixBaseViewModel", "OnSurfaceTouchUpEvent[0]");
             if (C2994e.this.f9511v && !C2994e.this.f9138Z) {
                 if (C2994e.this.mo7262H() || C2994e.this.mo7263I()) {
                     C2994e.this.mo7455h(true);
                 }
                 if (C2994e.this.mo7264J()) {
                     if (C2994e.this.f9115C) {
-                        C2261g.m9771e("LiveViewLumixBaseViewModel", "OnSurfaceTouchUpEvent[1]");
+                        ImageAppLog.info("LiveViewLumixBaseViewModel", "OnSurfaceTouchUpEvent[1]");
                         if (C2994e.this.mo7335ac() || C2994e.this.f9171ag == 1 || C2994e.this.f9171ag == 2) {
-                            C2261g.m9771e("LiveViewLumixBaseViewModel", "OnSurfaceTouchUpEvent[2]");
+                            ImageAppLog.info("LiveViewLumixBaseViewModel", "OnSurfaceTouchUpEvent[2]");
                             C2994e.this.mo7464m(false);
                             if (C2994e.this.f9171ag != 0) {
                                 C2994e.this.f9214bX.mo3216a(Boolean.valueOf(false));
@@ -4239,7 +4239,7 @@ public abstract class C2994e extends C1342a implements C2177a {
 
         /* renamed from: a */
         public void mo7634a(Point point, Point point2) {
-            C2261g.m9763a("PINCH-EVENT", "OnSurfacePinchStartEvent");
+            ImageAppLog.debug("PINCH-EVENT", "OnSurfacePinchStartEvent");
             if (!C2994e.this.f9469gN) {
                 if (C2994e.this.mo7320aN() || C2994e.this.mo7321aO()) {
                     C2994e.this.mo7287a(C3135l.PINCH_START, point.x, point.y, point2.x, point2.y, false);
@@ -4263,7 +4263,7 @@ public abstract class C2994e extends C1342a implements C2177a {
 
         /* renamed from: b */
         public void mo7637b(Point point, Point point2) {
-            C2261g.m9763a("PINCH-EVENT", "OnSurfacePinchEndEvent");
+            ImageAppLog.debug("PINCH-EVENT", "OnSurfacePinchEndEvent");
             if (!C2994e.this.f9469gN) {
                 if (C2994e.this.mo7320aN() || C2994e.this.mo7321aO()) {
                     C2994e.this.mo7287a(C3135l.PINCH_END, point.x, point.y, point2.x, point2.y, false);
@@ -4282,7 +4282,7 @@ public abstract class C2994e extends C1342a implements C2177a {
 
         /* renamed from: c */
         public void mo7640c(Point point, Point point2) {
-            C2261g.m9763a("PINCH-EVENT", "OnSurfacePinchMoveEvent");
+            ImageAppLog.debug("PINCH-EVENT", "OnSurfacePinchMoveEvent");
             if (!C2994e.this.f9469gN) {
                 if (C2994e.this.mo7320aN() || C2994e.this.mo7321aO()) {
                     C2994e.this.mo7287a(C3135l.PINCH, point.x, point.y, point2.x, point2.y, false);
@@ -4798,7 +4798,7 @@ public abstract class C2994e extends C1342a implements C2177a {
 
     /* access modifiers changed from: protected */
     /* renamed from: a */
-    public abstract boolean mo7299a(C1846e eVar);
+    public abstract boolean mo7299a(CameraStatus eVar);
 
     /* access modifiers changed from: protected */
     /* renamed from: a */
@@ -5177,7 +5177,7 @@ public abstract class C2994e extends C1342a implements C2177a {
         this.f9447fs = new C1344c<>(Boolean.valueOf(true));
         this.f9448ft = new C1344c<>(Boolean.valueOf(false));
         this.f9449fu = new C1344c<>(Boolean.valueOf(true));
-        this.f9498i = C2253z.m9680a(this.f3706a, true);
+        this.f9498i = ServiceFactory.m9680a(this.f3706a, true);
         this.f9499j = new C3099d();
         if (this.f9498i != null) {
             this.f9498i.mo5268a((C2031c) this.f9499j);
@@ -6024,11 +6024,11 @@ public abstract class C2994e extends C1342a implements C2177a {
         }
         if (a != null) {
             this.f9234br.mo3216a(a.f5685g);
-            this.f9500k = new C1441af(a.f5682d);
+            this.f9500k = new RecordCommand(a.f5682d);
             this.f9501l = new C3911w();
             this.f9502m = new C3891o(this.f9349e);
-            this.f9503n = new C1508g(a.f5682d);
-            this.f9504o = new C1536t(a.f5682d);
+            this.f9503n = new FocusCommand(a.f5682d);
+            this.f9504o = new LiveViewOperationCommand(a.f5682d);
             if (this.f9349e != null) {
                 this.f9349e.mo7664a();
             }
@@ -6037,7 +6037,7 @@ public abstract class C2994e extends C1342a implements C2177a {
             } else {
                 this.f9491gu = false;
             }
-            this.f9402f = C2253z.m9690b(this.f3706a, a);
+            this.f9402f = ServiceFactory.m9690b(this.f3706a, a);
             this.f9402f.mo5369f();
             this.f9402f.mo5367a(this.f9455g, z, true);
             this.f9505p = true;
@@ -6133,13 +6133,13 @@ public abstract class C2994e extends C1342a implements C2177a {
     public void mo7366b(final boolean z, final int i, final int i2) {
         if (mo7335ac()) {
             if (!this.f9115C) {
-                C2261g.m9771e("LiveViewLumixBaseViewModel_B", "OnBurstShutterStart[cancel]_isEnableShutter");
+                ImageAppLog.info("LiveViewLumixBaseViewModel_B", "OnBurstShutterStart[cancel]_isEnableShutter");
             } else if (mo7270P()) {
             } else {
                 if (this.f9171ag != 0) {
-                    C2261g.m9771e("LiveViewLumixBaseViewModel_B", "OnBurstShutterStart[cancel]_burstingMode 1");
+                    ImageAppLog.info("LiveViewLumixBaseViewModel_B", "OnBurstShutterStart[cancel]_burstingMode 1");
                 } else if (mo7453h() == 0 || mo7453h() == 2) {
-                    C2261g.m9769c("LiveViewLumixBaseViewModel", "フォーカスボタン押下中はキャンセル");
+                    ImageAppLog.error("LiveViewLumixBaseViewModel", "フォーカスボタン押下中はキャンセル");
                 } else if (mo7338af()) {
                     new Thread(new Runnable() {
                         public void run() {
@@ -6155,7 +6155,7 @@ public abstract class C2994e extends C1342a implements C2177a {
                     this.f9172ah = true;
                     new Thread(new Runnable() {
                         public void run() {
-                            final C1853h hVar;
+                            final ParseTagHighlightSceneInfo hVar;
                             final C1854i iVar = null;
                             synchronized (C2994e.this.f9177am) {
                                 if (C2994e.this.f9495gy.mo7627d() == C3097b.TouchAE) {
@@ -6164,7 +6164,7 @@ public abstract class C2994e extends C1342a implements C2177a {
                                 } else if (C2994e.this.f9186av) {
                                     C1854i a = C2994e.this.f9503n.mo3728a(C1518j.Off, C1517i.MfAssist, 0, 0);
                                     if (a.mo4803d()) {
-                                        C2261g.m9769c("LiveViewLumixBaseViewModel", "OnFocusExit assistDisp error.");
+                                        ImageAppLog.error("LiveViewLumixBaseViewModel", "OnFocusExit assistDisp error.");
                                     }
                                     iVar = a;
                                     hVar = null;
@@ -6178,7 +6178,7 @@ public abstract class C2994e extends C1342a implements C2177a {
                                                 C2994e.this.mo7286a(C3097b.Normal, (Point) null);
                                                 C2994e.this.mo7475r(false);
                                                 C2994e.this.mo7294a(C2994e.this.mo7357ay(), C2994e.this.mo7417by());
-                                                C2994e.this.mo7285a(C2253z.m9679a(C2994e.this.f3706a, C1712b.m6919c().mo4896a()));
+                                                C2994e.this.mo7285a(ServiceFactory.m9679a(C2994e.this.f3706a, C1712b.m6919c().mo4896a()));
                                             } else if (iVar != null && !iVar.mo4803d()) {
                                                 int b = iVar.mo4800b(C1511c.xPermil.ordinal());
                                                 int b2 = iVar.mo4800b(C1511c.yPermil.ordinal());
@@ -6190,14 +6190,14 @@ public abstract class C2994e extends C1342a implements C2177a {
                                                 }
                                                 C2994e.this.mo7475r(false);
                                                 C2994e.this.mo7294a(C2994e.this.mo7357ay(), C2994e.this.mo7417by());
-                                                C2994e.this.mo7285a(C2253z.m9679a(C2994e.this.f3706a, C1712b.m6919c().mo4896a()));
+                                                C2994e.this.mo7285a(ServiceFactory.m9679a(C2994e.this.f3706a, C1712b.m6919c().mo4896a()));
                                             }
                                             new Thread(new Runnable() {
                                                 public void run() {
-                                                    final C1853h a;
+                                                    final ParseTagHighlightSceneInfo a;
                                                     if (!C2994e.this.mo7275U()) {
                                                         C2994e.this.f9118F = true;
-                                                        C2261g.m9763a("LiveViewLumixBaseViewModel_B", "_isWaitingForSDWrFin(true)");
+                                                        ImageAppLog.debug("LiveViewLumixBaseViewModel_B", "_isWaitingForSDWrFin(true)");
                                                     }
                                                     C2994e.this.mo7451g(true);
                                                     if (z) {
@@ -6206,16 +6206,16 @@ public abstract class C2994e extends C1342a implements C2177a {
                                                         } else {
                                                             a = C2994e.this.f9500k.mo3492a(i, i2);
                                                         }
-                                                        C2261g.m9771e("LiveViewLumixBaseViewModel_B", "OnBurstShutterStart[TouchCapture]★");
+                                                        ImageAppLog.info("LiveViewLumixBaseViewModel_B", "OnBurstShutterStart[TouchCapture]★");
                                                     } else {
                                                         a = C2994e.this.f9500k.mo3409a();
-                                                        C2261g.m9771e("LiveViewLumixBaseViewModel_B", "OnBurstShutterStart[Capture]★");
+                                                        ImageAppLog.info("LiveViewLumixBaseViewModel_B", "OnBurstShutterStart[Capture]★");
                                                     }
                                                     if (!a.mo4771a()) {
                                                         C2994e.this.mo7451g(false);
                                                         C2994e.this.f9118F = false;
                                                         C2994e.this.mo7368bB();
-                                                        C2261g.m9763a("LiveViewLumixBaseViewModel_B", "_isWaitingForSDWrFin(false) !IsSucceed");
+                                                        ImageAppLog.debug("LiveViewLumixBaseViewModel_B", "_isWaitingForSDWrFin(false) !IsSucceed");
                                                     } else {
                                                         Editor edit = PreferenceManager.getDefaultSharedPreferences(C2994e.this.f3706a).edit();
                                                         edit.putBoolean("play_folder_change", false);
@@ -6235,7 +6235,7 @@ public abstract class C2994e extends C1342a implements C2177a {
                                                             } else {
                                                                 C2994e.this.f9500k.mo3497c();
                                                             }
-                                                            C2261g.m9771e("LiveViewLumixBaseViewModel_B", "OnBurstShutterStart[TouchCaptureCancel]★★");
+                                                            ImageAppLog.info("LiveViewLumixBaseViewModel_B", "OnBurstShutterStart[TouchCaptureCancel]★★");
                                                         }
                                                         C2994e.this.f9171ag = 0;
                                                         C2994e.this.f9175ak = false;
@@ -6254,7 +6254,7 @@ public abstract class C2994e extends C1342a implements C2177a {
                                                         C2994e.this.f3707b.post(new Runnable() {
                                                             public void run() {
                                                                 if (!a.mo4771a()) {
-                                                                    C2261g.m9766b("LiveViewLumixBaseViewModel_B", "OnBurstShutterStart[fail]");
+                                                                    ImageAppLog.warning("LiveViewLumixBaseViewModel_B", "OnBurstShutterStart[fail]");
                                                                     if (C2994e.this.f9243c != null) {
                                                                         C2994e.this.f9243c.mo7096b(C2994e.this.mo7355aw());
                                                                     }
@@ -6325,7 +6325,7 @@ public abstract class C2994e extends C1342a implements C2177a {
                         if (r0 != 0) goto L_0x0022
                         java.lang.String r0 = "LiveViewLumixBaseViewModel_B"
                         java.lang.String r2 = "OnBurstShutterEnd[cancel]!_burstingMode"
-                        com.panasonic.avc.cng.util.C2261g.m9771e(r0, r2)     // Catch:{ all -> 0x0090 }
+                        com.panasonic.avc.cng.util.ImageAppLog.info(r0, r2)     // Catch:{ all -> 0x0090 }
                         monitor-exit(r1)     // Catch:{ all -> 0x0090 }
                     L_0x0021:
                         return
@@ -6346,7 +6346,7 @@ public abstract class C2994e extends C1342a implements C2177a {
                     L_0x003c:
                         java.lang.String r2 = "LiveViewLumixBaseViewModel_B"
                         java.lang.String r3 = "OnBurstShutterEnd[TouchCaptureCancel]★★"
-                        com.panasonic.avc.cng.util.C2261g.m9771e(r2, r3)     // Catch:{ all -> 0x0090 }
+                        com.panasonic.avc.cng.util.ImageAppLog.info(r2, r3)     // Catch:{ all -> 0x0090 }
                     L_0x0043:
                         com.panasonic.avc.cng.view.liveview.e r2 = com.panasonic.avc.cng.view.liveview.C2994e.this     // Catch:{ all -> 0x0090 }
                         r3 = 0
@@ -6384,7 +6384,7 @@ public abstract class C2994e extends C1342a implements C2177a {
                         com.panasonic.avc.cng.model.c.h r0 = r0.mo3494b()     // Catch:{ all -> 0x0090 }
                         java.lang.String r2 = "LiveViewLumixBaseViewModel_B"
                         java.lang.String r3 = "OnBurstShutterEnd[CaptureCancel]★★"
-                        com.panasonic.avc.cng.util.C2261g.m9771e(r2, r3)     // Catch:{ all -> 0x0090 }
+                        com.panasonic.avc.cng.util.ImageAppLog.info(r2, r3)     // Catch:{ all -> 0x0090 }
                         goto L_0x0043
                     L_0x0090:
                         r0 = move-exception
@@ -6395,14 +6395,14 @@ public abstract class C2994e extends C1342a implements C2177a {
                 }
             }).start();
         } else {
-            C2261g.m9771e("LiveViewLumixBaseViewModel_B", "OnBurstShutterEnd[cancel]!IsBurstMode && !IsAutoBracketMode");
+            ImageAppLog.info("LiveViewLumixBaseViewModel_B", "OnBurstShutterEnd[cancel]!IsBurstMode && !IsAutoBracketMode");
         }
     }
 
     /* renamed from: a */
     public void mo7282a(final int i, final int i2) {
         if (!mo7335ac()) {
-            C2261g.m9771e("LiveViewLumixBaseViewModel_B", "OnBurstShutterEnd[cancel]!IsBurstMode && !IsAutoBracketMode");
+            ImageAppLog.info("LiveViewLumixBaseViewModel_B", "OnBurstShutterEnd[cancel]!IsBurstMode && !IsAutoBracketMode");
         } else {
             new Thread(new Runnable() {
                 /* JADX WARNING: Code restructure failed: missing block: B:19:0x004c, code lost:
@@ -6447,7 +6447,7 @@ public abstract class C2994e extends C1342a implements C2177a {
                         if (r0 != 0) goto L_0x0022
                         java.lang.String r0 = "LiveViewLumixBaseViewModel_B"
                         java.lang.String r2 = "OnBurstShutterEnd[cancel]!_burstingMode"
-                        com.panasonic.avc.cng.util.C2261g.m9771e(r0, r2)     // Catch:{ all -> 0x008a }
+                        com.panasonic.avc.cng.util.ImageAppLog.info(r0, r2)     // Catch:{ all -> 0x008a }
                         monitor-exit(r1)     // Catch:{ all -> 0x008a }
                     L_0x0021:
                         return
@@ -6467,7 +6467,7 @@ public abstract class C2994e extends C1342a implements C2177a {
                     L_0x003b:
                         java.lang.String r2 = "LiveViewLumixBaseViewModel_B"
                         java.lang.String r3 = "OnBurstShutterEnd[TouchCaptureCancel]★★"
-                        com.panasonic.avc.cng.util.C2261g.m9771e(r2, r3)     // Catch:{ all -> 0x008a }
+                        com.panasonic.avc.cng.util.ImageAppLog.info(r2, r3)     // Catch:{ all -> 0x008a }
                     L_0x0042:
                         com.panasonic.avc.cng.view.liveview.e r2 = com.panasonic.avc.cng.view.liveview.C2994e.this     // Catch:{ all -> 0x008a }
                         r3 = 0
@@ -6502,7 +6502,7 @@ public abstract class C2994e extends C1342a implements C2177a {
                         com.panasonic.avc.cng.model.c.h r0 = r0.mo3494b()     // Catch:{ all -> 0x008a }
                         java.lang.String r2 = "LiveViewLumixBaseViewModel_B"
                         java.lang.String r3 = "OnBurstShutterEnd[CaptureCancel]★★"
-                        com.panasonic.avc.cng.util.C2261g.m9771e(r2, r3)     // Catch:{ all -> 0x008a }
+                        com.panasonic.avc.cng.util.ImageAppLog.info(r2, r3)     // Catch:{ all -> 0x008a }
                         goto L_0x0042
                     L_0x008a:
                         r0 = move-exception
@@ -6554,7 +6554,7 @@ public abstract class C2994e extends C1342a implements C2177a {
             return;
         }
         if (mo7453h() == 0 || mo7453h() == 2) {
-            C2261g.m9769c("LiveViewLumixBaseViewModel", "フォーカスボタン押下中はキャンセル");
+            ImageAppLog.error("LiveViewLumixBaseViewModel", "フォーカスボタン押下中はキャンセル");
         } else if (this.f9500k == null) {
         } else {
             if (mo7338af()) {
@@ -6576,13 +6576,13 @@ public abstract class C2994e extends C1342a implements C2177a {
                         } else if (C2994e.this.f9186av && !C2994e.this.mo7401bi()) {
                             C2994e.this.mo7298a(false, true, C1517i.MfAssist);
                         }
-                        C2261g.m9771e("LiveViewLumixBaseViewModel_B", "OnShutter[Capture]★");
-                        C2261g.m9771e("LiveViewLumixBaseViewModel_B", "_isAeOffNotDone:" + C2994e.this.f9233bq);
+                        ImageAppLog.info("LiveViewLumixBaseViewModel_B", "OnShutter[Capture]★");
+                        ImageAppLog.info("LiveViewLumixBaseViewModel_B", "_isAeOffNotDone:" + C2994e.this.f9233bq);
                         if (C2994e.this.f9233bq) {
                             C2994e.this.mo7478t(false);
                         }
                         C2994e.this.f9233bq = false;
-                        final C1853h a = C2994e.this.f9500k.mo3409a();
+                        final ParseTagHighlightSceneInfo a = C2994e.this.f9500k.mo3409a();
                         C2994e.this.f9175ak = false;
                         C2994e.this.mo7455h(true);
                         C2994e.this.mo7368bB();
@@ -6595,7 +6595,7 @@ public abstract class C2994e extends C1342a implements C2177a {
                                         edit.putBoolean("play_folder_change", false);
                                         edit.commit();
                                     } else {
-                                        C2261g.m9766b("LiveViewLumixBaseViewModel_B", "OnShutter[fail]");
+                                        ImageAppLog.warning("LiveViewLumixBaseViewModel_B", "OnShutter[fail]");
                                         if (C2994e.this.f9243c != null) {
                                             C2994e.this.f9243c.mo7096b(C2994e.this.mo7355aw());
                                         }
@@ -6740,7 +6740,7 @@ public abstract class C2994e extends C1342a implements C2177a {
         new Thread(new Runnable() {
             public void run() {
                 if (!C2994e.this.f9500k.mo3494b().mo4771a()) {
-                    C2261g.m9766b("LiveViewLumixBaseViewModel", "Capture cancel fail.");
+                    ImageAppLog.warning("LiveViewLumixBaseViewModel", "Capture cancel fail.");
                 }
                 C2994e.this.f9175ak = false;
                 C2994e.this.f9173ai = 0;
@@ -6753,7 +6753,7 @@ public abstract class C2994e extends C1342a implements C2177a {
         new Thread(new Runnable() {
             public void run() {
                 if (!C2994e.this.f9504o.mo3797b().mo4771a()) {
-                    C2261g.m9766b("LiveViewLumixBaseViewModel", "Auto Reviewf unlock fail.");
+                    ImageAppLog.warning("LiveViewLumixBaseViewModel", "Auto Reviewf unlock fail.");
                 }
             }
         }).start();
@@ -6764,7 +6764,7 @@ public abstract class C2994e extends C1342a implements C2177a {
         new Thread(new Runnable() {
             public void run() {
                 if (!C2994e.this.f9504o.mo3803d().mo4771a()) {
-                    C2261g.m9769c("LiveViewLumixBaseViewModel", "Touch AF OFF is Fail.");
+                    ImageAppLog.error("LiveViewLumixBaseViewModel", "Touch AF OFF is Fail.");
                 }
             }
         }).start();
@@ -6775,7 +6775,7 @@ public abstract class C2994e extends C1342a implements C2177a {
         new Thread(new Runnable() {
             public void run() {
                 if (!C2994e.this.f9504o.mo3805f().mo4771a()) {
-                    C2261g.m9769c("LiveViewLumixBaseViewModel", "Touch AFAE OFF is Fail.");
+                    ImageAppLog.error("LiveViewLumixBaseViewModel", "Touch AFAE OFF is Fail.");
                 }
             }
         }).start();
@@ -6787,7 +6787,7 @@ public abstract class C2994e extends C1342a implements C2177a {
         new Thread(new Runnable() {
             public void run() {
                 if (!C2994e.this.f9504o.mo3804e().mo4771a()) {
-                    C2261g.m9769c("LiveViewLumixBaseViewModel", "Touch AE OFF is Fail.");
+                    ImageAppLog.error("LiveViewLumixBaseViewModel", "Touch AE OFF is Fail.");
                 }
             }
         }).start();
@@ -6806,7 +6806,7 @@ public abstract class C2994e extends C1342a implements C2177a {
         } else if (mo7262H() || mo7263I() || this.f9127O != 5) {
             new Thread(new Runnable() {
                 public void run() {
-                    C1853h hVar = null;
+                    ParseTagHighlightSceneInfo hVar = null;
                     if (C2994e.this.f9491gu) {
                         C1892f a = C1712b.m6919c().mo4896a();
                         if (a != null) {
@@ -6820,7 +6820,7 @@ public abstract class C2994e extends C1342a implements C2177a {
                         hVar = C2994e.this.f9504o.mo3795a(500, 500);
                     }
                     if (!hVar.mo4771a()) {
-                        C2261g.m9769c("LiveViewLumixBaseViewModel", "Touch AF Reset is Fail.");
+                        ImageAppLog.error("LiveViewLumixBaseViewModel", "Touch AF Reset is Fail.");
                     }
                 }
             }).start();
@@ -6842,14 +6842,14 @@ public abstract class C2994e extends C1342a implements C2177a {
         } else if (mo7262H() || mo7263I() || this.f9127O != 5) {
             new Thread(new Runnable() {
                 public void run() {
-                    C1853h hVar = null;
+                    ParseTagHighlightSceneInfo hVar = null;
                     if (!C2994e.this.f9491gu) {
                         hVar = C2994e.this.f9504o.mo3795a(500, 500);
                     } else if (C1712b.m6919c().mo4896a() != null) {
                         hVar = C2994e.this.f9504o.mo3798b(500, 500);
                     }
                     if (!hVar.mo4771a()) {
-                        C2261g.m9769c("LiveViewLumixBaseViewModel", "Touch AF Reset is Fail.");
+                        ImageAppLog.error("LiveViewLumixBaseViewModel", "Touch AF Reset is Fail.");
                     }
                 }
             }).start();
@@ -6880,7 +6880,7 @@ public abstract class C2994e extends C1342a implements C2177a {
             new Thread(new Runnable() {
                 public void run() {
                     if (!C2994e.this.f9504o.mo3815n().mo4771a()) {
-                        C2261g.m9766b("LiveViewLumixBaseViewModel", "MenuEntry fail.");
+                        ImageAppLog.warning("LiveViewLumixBaseViewModel", "MenuEntry fail.");
                     }
                 }
             }).start();
@@ -6893,7 +6893,7 @@ public abstract class C2994e extends C1342a implements C2177a {
             new Thread(new Runnable() {
                 public void run() {
                     if (!C2994e.this.f9504o.mo3816o().mo4771a()) {
-                        C2261g.m9766b("LiveViewLumixBaseViewModel", "MenuExit fail.");
+                        ImageAppLog.warning("LiveViewLumixBaseViewModel", "MenuExit fail.");
                     }
                 }
             }).start();
@@ -6907,7 +6907,7 @@ public abstract class C2994e extends C1342a implements C2177a {
             return false;
         }
         if (!this.f9228bl.equalsIgnoreCase("off")) {
-            C1846e i = this.f9498i.mo5285i();
+            CameraStatus i = this.f9498i.mo5285i();
             if (i != null) {
                 if ((!i.mo4709q() || !i.mo4710r()) && ((!i.mo4709q() || i.mo4708p()) && (!i.mo4710r() || i.mo4707o()))) {
                     if (!i.mo4700h() && !i.mo4701i()) {
@@ -6931,7 +6931,7 @@ public abstract class C2994e extends C1342a implements C2177a {
 
     /* renamed from: Q */
     public void mo7271Q() {
-        C2261g.m9771e("LiveViewLumixBaseViewModel_B", "VideoRecStart");
+        ImageAppLog.info("LiveViewLumixBaseViewModel_B", "VideoRecStart");
         if (mo7338af()) {
             new Thread(new Runnable() {
                 public void run() {
@@ -6945,7 +6945,7 @@ public abstract class C2994e extends C1342a implements C2177a {
         mo7457i(false);
         new Thread(new Runnable() {
             public void run() {
-                final C1853h e;
+                final ParseTagHighlightSceneInfo e;
                 synchronized (C1910l.m7679a()) {
                     e = C2994e.this.f9500k.mo3500e();
                 }
@@ -6979,9 +6979,9 @@ public abstract class C2994e extends C1342a implements C2177a {
     /* renamed from: R */
     public void mo7272R() {
         boolean z = true;
-        C2261g.m9771e("LiveViewLumixBaseViewModel_B", "VideoRecStop");
+        ImageAppLog.info("LiveViewLumixBaseViewModel_B", "VideoRecStop");
         this.f9126N = true;
-        C1846e i = C2253z.m9680a(this.f3706a, true).mo5285i();
+        CameraStatus i = ServiceFactory.m9680a(this.f3706a, true).mo5285i();
         if ((i == null || !i.mo4664M().equalsIgnoreCase("on")) && (i == null || !i.mo4664M().equalsIgnoreCase("start"))) {
             z = false;
         }
@@ -6993,7 +6993,7 @@ public abstract class C2994e extends C1342a implements C2177a {
         }
         new Thread(new Runnable() {
             public void run() {
-                final C1853h f;
+                final ParseTagHighlightSceneInfo f;
                 synchronized (C1910l.m7679a()) {
                     f = C2994e.this.f9500k.mo3501f();
                 }
@@ -7019,10 +7019,10 @@ public abstract class C2994e extends C1342a implements C2177a {
     public void mo7273S() {
         boolean z = false;
         if (mo7278X() || mo7280Z()) {
-            C2261g.m9770d("LiveViewLumixBaseViewModel", "OnVideoRec Cancel (IsPictureCapturing() || IsSelfTimering())");
+            ImageAppLog.verbose("LiveViewLumixBaseViewModel", "OnVideoRec Cancel (IsPictureCapturing() || IsSelfTimering())");
             return;
         }
-        C1846e i = C2253z.m9680a(this.f3706a, true).mo5285i();
+        CameraStatus i = ServiceFactory.m9680a(this.f3706a, true).mo5285i();
         if (i != null && ((i.mo4664M().equalsIgnoreCase("none") || i.mo4664M().equalsIgnoreCase("")) && !this.f9510u && !mo7275U())) {
             int ax = mo7356ax();
             if (ax == 1 && this.f9243c != null) {
@@ -7041,7 +7041,7 @@ public abstract class C2994e extends C1342a implements C2177a {
         } else if (this.f9510u) {
         } else {
             if (mo7453h() == 0 || mo7453h() == 2) {
-                C2261g.m9769c("LiveViewLumixBaseViewModel", "フォーカスボタン押下中はキャンセル");
+                ImageAppLog.error("LiveViewLumixBaseViewModel", "フォーカスボタン押下中はキャンセル");
                 this.f9405fC.mo3216a(Boolean.valueOf(true));
                 return;
             }
@@ -7073,7 +7073,7 @@ public abstract class C2994e extends C1342a implements C2177a {
             return false;
         }
         if (Math.abs(System.currentTimeMillis() - this.f9132T) > 5000 && !this.f9138Z) {
-            C2261g.m9766b("LiveViewLumixBaseViewModel_B", "★★★★★IsCapturingUser(Force Cancel) ★★★★★");
+            ImageAppLog.warning("LiveViewLumixBaseViewModel_B", "★★★★★IsCapturingUser(Force Cancel) ★★★★★");
             this.f9131S = false;
             if (this.f3707b != null) {
                 this.f3707b.post(new Runnable() {
@@ -7217,7 +7217,7 @@ public abstract class C2994e extends C1342a implements C2177a {
             this.f9501l.mo9166a(1000);
             C1892f a = C1712b.m6919c().mo4896a();
             if (a != null) {
-                final C1985b a2 = C2253z.m9679a(this.f3706a, a);
+                final C1985b a2 = ServiceFactory.m9679a(this.f3706a, a);
                 if (a2 != null) {
                     while (this.f9501l.mo9169c() > 0) {
                         C2266l.m9802a(100);
@@ -7270,7 +7270,7 @@ public abstract class C2994e extends C1342a implements C2177a {
 
     /* renamed from: ao */
     public void mo7347ao() {
-        C2261g.m9760a(3158027, "");
+        ImageAppLog.m9760a(3158027, "");
         synchronized (this.f9177am) {
             if (this.f9502m != null) {
                 this.f9502m.mo9134a(C3894a.FarFast);
@@ -7280,7 +7280,7 @@ public abstract class C2994e extends C1342a implements C2177a {
 
     /* renamed from: ap */
     public void mo7348ap() {
-        C2261g.m9760a(3158027, "");
+        ImageAppLog.m9760a(3158027, "");
         synchronized (this.f9177am) {
             if (this.f9502m != null) {
                 this.f9502m.mo9134a(C3894a.FarNormal);
@@ -7290,7 +7290,7 @@ public abstract class C2994e extends C1342a implements C2177a {
 
     /* renamed from: aq */
     public void mo7349aq() {
-        C2261g.m9760a(3158026, "");
+        ImageAppLog.m9760a(3158026, "");
         synchronized (this.f9177am) {
             if (this.f9502m != null) {
                 this.f9502m.mo9134a(C3894a.NearFast);
@@ -7300,7 +7300,7 @@ public abstract class C2994e extends C1342a implements C2177a {
 
     /* renamed from: ar */
     public void mo7350ar() {
-        C2261g.m9760a(3158026, "");
+        ImageAppLog.m9760a(3158026, "");
         synchronized (this.f9177am) {
             if (this.f9502m != null) {
                 this.f9502m.mo9134a(C3894a.NearNormal);
@@ -7437,7 +7437,7 @@ public abstract class C2994e extends C1342a implements C2177a {
             this.f9209bS.mo3216a("");
             return;
         }
-        final C1985b a2 = C2253z.m9679a(this.f3706a, a);
+        final C1985b a2 = ServiceFactory.m9679a(this.f3706a, a);
         if (a2 != null) {
             a2.mo5185a((C1986a) new C1986a() {
                 /* renamed from: c */
@@ -7528,7 +7528,7 @@ public abstract class C2994e extends C1342a implements C2177a {
         C1860l a7 = bVar.mo5182a("menu_item_id_focusmode");
         if (a7 != null) {
             if (a7.f5569c == null) {
-                C2028e a8 = C2253z.m9680a(this.f3706a, false);
+                C2028e a8 = ServiceFactory.m9680a(this.f3706a, false);
                 if (a8 != null) {
                     C2017a k = a8.mo5287k();
                     if (k.mo5292a() && k.mo5294c() == Boolean.FALSE) {
@@ -7559,10 +7559,10 @@ public abstract class C2994e extends C1342a implements C2177a {
         C1860l a9 = bVar.mo5182a("menu_item_id_self_timer");
         if (a9 == null || a9.f5569c == null || a9.f5569c.equals("off")) {
             this.f9175ak = false;
-            C2261g.m9766b("LiveViewLumixBaseViewModel_B", "★★_isSelfTimerMode[false]★★");
+            ImageAppLog.warning("LiveViewLumixBaseViewModel_B", "★★_isSelfTimerMode[false]★★");
         } else {
             this.f9175ak = true;
-            C2261g.m9766b("LiveViewLumixBaseViewModel_B", "★★_isSelfTimerMode[true]★★");
+            ImageAppLog.warning("LiveViewLumixBaseViewModel_B", "★★_isSelfTimerMode[true]★★");
         }
         C1844d e = bVar.mo5193e();
         if (e != null) {
@@ -7652,7 +7652,7 @@ public abstract class C2994e extends C1342a implements C2177a {
             this.f9243c.mo7092a(true, false);
         }
         if (this.f9498i != null) {
-            C1846e i = this.f9498i.mo5285i();
+            CameraStatus i = this.f9498i.mo5285i();
             if (i != null) {
                 if (i.mo4663L().equalsIgnoreCase("on") || i.mo4673V().equalsIgnoreCase("slow_quick") || i.mo4673V().equalsIgnoreCase("dolly_zoom") || i.mo4668Q() || i.mo4670S() || i.mo4671T() || i.mo4672U() || i.mo4699g() || i.mo4677Z() || i.mo4681aa() || i.mo4655D().equalsIgnoreCase("retraction")) {
                     z3 = true;
@@ -7674,7 +7674,7 @@ public abstract class C2994e extends C1342a implements C2177a {
         }
         C1860l a13 = bVar.mo5182a("menu_item_id_afmode");
         if (a13 == null || a13.f5569c == null) {
-            C2261g.m9763a("LiveViewDebug", "AF_NONE");
+            ImageAppLog.debug("LiveViewDebug", "AF_NONE");
             this.f9127O = 0;
         } else {
             this.f9127O = 5;
@@ -7702,7 +7702,7 @@ public abstract class C2994e extends C1342a implements C2177a {
             } else if (a13.f5569c.equals("225area")) {
                 this.f9127O = 12;
             } else {
-                C2261g.m9763a("LiveViewDebug", "AF_Unknown");
+                ImageAppLog.debug("LiveViewDebug", "AF_Unknown");
             }
         }
         this.f9409fG.mo3216a(Integer.valueOf(this.f9127O));
@@ -7778,7 +7778,7 @@ public abstract class C2994e extends C1342a implements C2177a {
 
     /* access modifiers changed from: private */
     /* renamed from: a */
-    public void m12356a(C1846e eVar, boolean z) {
+    public void m12356a(CameraStatus eVar, boolean z) {
         boolean z2;
         boolean z3;
         boolean z4;
@@ -7907,7 +7907,7 @@ public abstract class C2994e extends C1342a implements C2177a {
         if (this.f9498i == null) {
             return 0;
         }
-        C1846e i = this.f9498i.mo5285i();
+        CameraStatus i = this.f9498i.mo5285i();
         if ((i == null || i.mo4690c() != 0) && i.mo4690c() != -1) {
             return 0;
         }
@@ -7921,7 +7921,7 @@ public abstract class C2994e extends C1342a implements C2177a {
         if (this.f9498i == null) {
             return 0;
         }
-        C1846e i2 = this.f9498i.mo5285i();
+        CameraStatus i2 = this.f9498i.mo5285i();
         if (this.f9228bl.equalsIgnoreCase("off")) {
             if (i2 != null) {
                 i = i2.mo4696f();
@@ -7944,7 +7944,7 @@ public abstract class C2994e extends C1342a implements C2177a {
 
     /* access modifiers changed from: protected */
     /* renamed from: a */
-    public int mo7281a(C1853h hVar) {
+    public int mo7281a(ParseTagHighlightSceneInfo hVar) {
         String b = hVar.mo4772b();
         if (b.equalsIgnoreCase("err_critical") || b.equalsIgnoreCase("err_param") || b.equalsIgnoreCase("err_system_error")) {
             return 3;
@@ -8512,7 +8512,7 @@ public abstract class C2994e extends C1342a implements C2177a {
         for (int i = 0; i < oVarArr.length; i++) {
             byte c = oVarArr[i].mo3625c();
             if (c < 1 || c >= 11) {
-                C2261g.m9769c("Test", "isCenterFocus invalid " + c);
+                ImageAppLog.error("Test", "isCenterFocus invalid " + c);
             } else {
                 Rect a = oVarArr[i].mo3621a();
                 int i2 = a.left + ((a.right - a.left) / 2);
@@ -8617,10 +8617,10 @@ public abstract class C2994e extends C1342a implements C2177a {
         this.f9202bL.mo3216a(Boolean.valueOf(mo7275U()));
         mo7358az();
         if (!mo7275U()) {
-            C2261g.m9763a("LiveViewLumixBaseViewModel", "IsVideoRecording() == false");
+            ImageAppLog.debug("LiveViewLumixBaseViewModel", "IsVideoRecording() == false");
         }
-        this.f9498i = C2253z.m9680a(this.f3706a, true);
-        C1846e i = this.f9498i.mo5285i();
+        this.f9498i = ServiceFactory.m9680a(this.f3706a, true);
+        CameraStatus i = this.f9498i.mo5285i();
         if (i != null) {
             if (i.mo4664M().equalsIgnoreCase("none") || i.mo4664M().equalsIgnoreCase("")) {
                 C1892f a = C1712b.m6919c().mo4896a();
@@ -8805,10 +8805,10 @@ public abstract class C2994e extends C1342a implements C2177a {
             this.f9284co.mo3216a(Boolean.valueOf(mo7342aj()));
         }
         if (this.f9498i == null) {
-            C2261g.m9769c("LiveViewLumixBaseViewModel_B", "_srvDevConnect == null");
+            ImageAppLog.error("LiveViewLumixBaseViewModel_B", "_srvDevConnect == null");
             return;
         }
-        C1846e i = this.f9498i.mo5285i();
+        CameraStatus i = this.f9498i.mo5285i();
         if (i == null || i.mo4699g()) {
             z7 = false;
             z8 = false;
@@ -9109,9 +9109,9 @@ public abstract class C2994e extends C1342a implements C2177a {
     /* renamed from: a */
     public void mo5766a(int i) {
         if (((Boolean) this.f9276cg.mo3217b()).booleanValue() && ((Boolean) this.f9278ci.mo3217b()).booleanValue()) {
-            C2028e a = C2253z.m9680a(this.f3706a, true);
+            C2028e a = ServiceFactory.m9680a(this.f3706a, true);
             if (a != null) {
-                final C1846e i2 = a.mo5285i();
+                final CameraStatus i2 = a.mo5285i();
                 if (i2 != null) {
                     this.f3707b.post(new Runnable() {
                         public void run() {
@@ -9149,7 +9149,7 @@ public abstract class C2994e extends C1342a implements C2177a {
 
     /* renamed from: aB */
     public void mo7308aB() {
-        C2261g.m9760a(3158037, "");
+        ImageAppLog.m9760a(3158037, "");
         if (mo7338af()) {
             new Thread(new Runnable() {
                 public void run() {
@@ -12236,7 +12236,7 @@ public abstract class C2994e extends C1342a implements C2177a {
             new Thread(new Runnable() {
                 public void run() {
                     if (!C2994e.this.f9503n.mo3730b(i).mo4771a()) {
-                        C2261g.m9769c("LiveViewLumixBaseViewModel", "MF assist magnification setting error.");
+                        ImageAppLog.error("LiveViewLumixBaseViewModel", "MF assist magnification setting error.");
                         return;
                     }
                     final BigDecimal bigDecimal = new BigDecimal(i);
@@ -12276,7 +12276,7 @@ public abstract class C2994e extends C1342a implements C2177a {
                 public void run() {
                     final C1854i a = C2994e.this.f9503n.mo3724a(i, i2);
                     if (a.mo4803d()) {
-                        C2261g.m9769c("LiveViewLumixBaseViewModel", "MF assist position setting error.");
+                        ImageAppLog.error("LiveViewLumixBaseViewModel", "MF assist position setting error.");
                     } else if (C2994e.this.f3707b != null) {
                         C2994e.this.f3707b.post(new Runnable() {
                             public void run() {
@@ -12318,7 +12318,7 @@ public abstract class C2994e extends C1342a implements C2177a {
                     if (z) {
                         final C1854i c = C2994e.this.f9504o.mo3802c(i, i2);
                         if (c.mo4803d()) {
-                            C2261g.m9769c("LiveViewLumixBaseViewModel", "AF pinpoint position setting error.");
+                            ImageAppLog.error("LiveViewLumixBaseViewModel", "AF pinpoint position setting error.");
                             return;
                         }
                         C2994e.this.mo7286a(C3097b.PinpointScale, new Point(i, i2));
@@ -12337,7 +12337,7 @@ public abstract class C2994e extends C1342a implements C2177a {
                             });
                         }
                     } else if (!C2994e.this.f9504o.mo3806g().mo4771a()) {
-                        C2261g.m9769c("LiveViewLumixBaseViewModel", "Cannot end AF pinpoint magnify error.");
+                        ImageAppLog.error("LiveViewLumixBaseViewModel", "Cannot end AF pinpoint magnify error.");
                     } else {
                         C2994e.this.mo7369bC();
                         C2994e.this.mo7286a(C3097b.Normal, (Point) null);
@@ -12369,7 +12369,7 @@ public abstract class C2994e extends C1342a implements C2177a {
                 public void run() {
                     final C1854i c = C2994e.this.f9504o.mo3802c(i, i2);
                     if (c.mo4803d()) {
-                        C2261g.m9769c("LiveViewLumixBaseViewModel", "AF pinpoint position setting error.");
+                        ImageAppLog.error("LiveViewLumixBaseViewModel", "AF pinpoint position setting error.");
                     } else if (C2994e.this.f3707b != null) {
                         C2994e.this.f3707b.post(new Runnable() {
                             public void run() {
@@ -12396,9 +12396,9 @@ public abstract class C2994e extends C1342a implements C2177a {
         if (mo7260F()) {
             new Thread(new Runnable() {
                 public void run() {
-                    C1853h h = C2994e.this.f9504o.mo3807h();
+                    ParseTagHighlightSceneInfo h = C2994e.this.f9504o.mo3807h();
                     if (h == null || !h.mo4771a()) {
-                        C2261g.m9769c("LiveViewLumixBaseViewModel", "Touch Af Cancel error.");
+                        ImageAppLog.error("LiveViewLumixBaseViewModel", "Touch Af Cancel error.");
                         return;
                     }
                     C2994e.this.mo7298a(false, true, C1517i.MfAssist);
@@ -12590,7 +12590,7 @@ public abstract class C2994e extends C1342a implements C2177a {
     /* access modifiers changed from: protected */
     /* renamed from: t */
     public void mo7478t(boolean z) {
-        C1853h j;
+        ParseTagHighlightSceneInfo j;
         if (z) {
             this.f9233bq = true;
             j = this.f9504o.mo3808i();
@@ -12599,7 +12599,7 @@ public abstract class C2994e extends C1342a implements C2177a {
             j = this.f9504o.mo3809j();
         }
         if (j == null || !j.mo4771a()) {
-            C2261g.m9769c("LiveViewLumixBaseViewModel", "Touch Ae setting error.");
+            ImageAppLog.error("LiveViewLumixBaseViewModel", "Touch Ae setting error.");
             return;
         }
         this.f9185au = z;
@@ -12625,9 +12625,9 @@ public abstract class C2994e extends C1342a implements C2177a {
         if (mo7263I()) {
             new Thread(new Runnable() {
                 public void run() {
-                    C1853h k = C2994e.this.f9504o.mo3810k();
+                    ParseTagHighlightSceneInfo k = C2994e.this.f9504o.mo3810k();
                     if (k == null || !k.mo4771a()) {
-                        C2261g.m9769c("LiveViewLumixBaseViewModel", "Touch Ae Cancel error.");
+                        ImageAppLog.error("LiveViewLumixBaseViewModel", "Touch Ae Cancel error.");
                     }
                 }
             }).start();
@@ -12640,9 +12640,9 @@ public abstract class C2994e extends C1342a implements C2177a {
         if (mo7263I()) {
             new Thread(new Runnable() {
                 public void run() {
-                    C1853h b = C2994e.this.f9504o.mo3798b(i, i2);
+                    ParseTagHighlightSceneInfo b = C2994e.this.f9504o.mo3798b(i, i2);
                     if (b == null || !b.mo4771a()) {
-                        C2261g.m9769c("LiveViewLumixBaseViewModel", "AE position setting error.");
+                        ImageAppLog.error("LiveViewLumixBaseViewModel", "AE position setting error.");
                     }
                 }
             }).start();
@@ -12662,7 +12662,7 @@ public abstract class C2994e extends C1342a implements C2177a {
         if (a == null) {
             return 0;
         }
-        C1985b a2 = C2253z.m9679a(this.f3706a, a);
+        C1985b a2 = ServiceFactory.m9679a(this.f3706a, a);
         if (a2 == null) {
             return -1;
         }
@@ -12893,7 +12893,7 @@ public abstract class C2994e extends C1342a implements C2177a {
         }
         final C1854i a = this.f9503n.mo3728a(C1518j.Off, iVar, 0, 0);
         if (a.mo4803d()) {
-            C2261g.m9769c("LiveViewLumixBaseViewModel", "OnFocusExit assistDisp error.");
+            ImageAppLog.error("LiveViewLumixBaseViewModel", "OnFocusExit assistDisp error.");
             this.f9186av = false;
             return;
         }
@@ -12916,7 +12916,7 @@ public abstract class C2994e extends C1342a implements C2177a {
             this.f9492gv = false;
             this.f9493gw = false;
             if (!this.f9503n.mo3731c().mo4771a()) {
-                C2261g.m9769c("LiveViewLumixBaseViewModel", "changeAssistMode afAeLock off error.");
+                ImageAppLog.error("LiveViewLumixBaseViewModel", "changeAssistMode afAeLock off error.");
             }
         }
     }
@@ -12998,7 +12998,7 @@ public abstract class C2994e extends C1342a implements C2177a {
                 this.f9496gz = C1518j.Pinp;
             }
         } else {
-            C2261g.m9769c("LiveViewLumixBaseViewModel", "setScaleMode invalid param = " + str);
+            ImageAppLog.error("LiveViewLumixBaseViewModel", "setScaleMode invalid param = " + str);
             z = false;
         }
         this.f9420fR.mo3216a(this.f9496gz);
@@ -13024,7 +13024,7 @@ public abstract class C2994e extends C1342a implements C2177a {
         synchronized (this.f9177am) {
             final C1854i a = this.f9503n.mo3728a(jVar, iVar, i, i2);
             if (a.mo4803d()) {
-                C2261g.m9769c("LiveViewLumixBaseViewModel", "doubleTapCommon error.");
+                ImageAppLog.error("LiveViewLumixBaseViewModel", "doubleTapCommon error.");
                 this.f9186av = false;
             } else {
                 this.f9186av = true;
@@ -13134,7 +13134,7 @@ public abstract class C2994e extends C1342a implements C2177a {
             java.lang.StringBuilder r2 = r2.append(r3)     // Catch:{ all -> 0x0054 }
             java.lang.StringBuilder r2 = r2.append(r11)     // Catch:{ all -> 0x0054 }
             java.lang.String r2 = r2.toString()     // Catch:{ all -> 0x0054 }
-            com.panasonic.avc.cng.util.C2261g.m9769c(r0, r2)     // Catch:{ all -> 0x0054 }
+            com.panasonic.avc.cng.util.ImageAppLog.error(r0, r2)     // Catch:{ all -> 0x0054 }
         L_0x0032:
             r8 = r1
             r2 = r11
@@ -13428,7 +13428,7 @@ public abstract class C2994e extends C1342a implements C2177a {
             java.lang.StringBuilder r3 = r3.append(r4)     // Catch:{ all -> 0x0054 }
             java.lang.StringBuilder r2 = r3.append(r2)     // Catch:{ all -> 0x0054 }
             java.lang.String r2 = r2.toString()     // Catch:{ all -> 0x0054 }
-            com.panasonic.avc.cng.util.C2261g.m9769c(r1, r2)     // Catch:{ all -> 0x0054 }
+            com.panasonic.avc.cng.util.ImageAppLog.error(r1, r2)     // Catch:{ all -> 0x0054 }
             java.util.ArrayList<com.panasonic.avc.cng.view.liveview.e$k> r1 = r10.f9470gO     // Catch:{ all -> 0x0054 }
             r1.add(r0)     // Catch:{ all -> 0x0054 }
             goto L_0x0052
@@ -13719,7 +13719,7 @@ public abstract class C2994e extends C1342a implements C2177a {
         if (this.f9498i == null) {
             return "";
         }
-        C1846e i = this.f9498i.mo5285i();
+        CameraStatus i = this.f9498i.mo5285i();
         if (i == null) {
             return "";
         }
@@ -13882,7 +13882,7 @@ public abstract class C2994e extends C1342a implements C2177a {
                         r0.f9493gw = r2     // Catch:{ all -> 0x006c }
                         java.lang.String r0 = "LiveViewLumixBaseViewModel"
                         java.lang.String r2 = "enterAfMfAssist afAeLock on success."
-                        com.panasonic.avc.cng.util.C2261g.m9769c(r0, r2)     // Catch:{ all -> 0x006c }
+                        com.panasonic.avc.cng.util.ImageAppLog.error(r0, r2)     // Catch:{ all -> 0x006c }
                     L_0x003c:
                         monitor-exit(r1)     // Catch:{ all -> 0x006c }
                     L_0x003d:
@@ -13907,7 +13907,7 @@ public abstract class C2994e extends C1342a implements C2177a {
                         if (r0 != 0) goto L_0x003c
                         java.lang.String r0 = "LiveViewLumixBaseViewModel"
                         java.lang.String r2 = "enterAfMfAssist afAeLock off error."
-                        com.panasonic.avc.cng.util.C2261g.m9769c(r0, r2)     // Catch:{ all -> 0x006c }
+                        com.panasonic.avc.cng.util.ImageAppLog.error(r0, r2)     // Catch:{ all -> 0x006c }
                         goto L_0x003c
                     L_0x006c:
                         r0 = move-exception
@@ -13928,7 +13928,7 @@ public abstract class C2994e extends C1342a implements C2177a {
                         if (r2 != 0) goto L_0x00be
                         java.lang.String r2 = "LiveViewLumixBaseViewModel"
                         java.lang.String r3 = "enterAfMfAssist afAeLock on error."
-                        com.panasonic.avc.cng.util.C2261g.m9769c(r2, r3)     // Catch:{ all -> 0x006c }
+                        com.panasonic.avc.cng.util.ImageAppLog.error(r2, r3)     // Catch:{ all -> 0x006c }
                         boolean r0 = r0.mo4775e()     // Catch:{ all -> 0x006c }
                         if (r0 == 0) goto L_0x00a2
                         com.panasonic.avc.cng.view.liveview.e r0 = com.panasonic.avc.cng.view.liveview.C2994e.this     // Catch:{ all -> 0x006c }
@@ -13948,7 +13948,7 @@ public abstract class C2994e extends C1342a implements C2177a {
                         if (r0 != 0) goto L_0x00bc
                         java.lang.String r0 = "LiveViewLumixBaseViewModel"
                         java.lang.String r2 = "enterAfMfAssist afAeLock off error."
-                        com.panasonic.avc.cng.util.C2261g.m9769c(r0, r2)     // Catch:{ all -> 0x006c }
+                        com.panasonic.avc.cng.util.ImageAppLog.error(r0, r2)     // Catch:{ all -> 0x006c }
                     L_0x00bc:
                         monitor-exit(r1)     // Catch:{ all -> 0x006c }
                         goto L_0x003d
@@ -13958,8 +13958,8 @@ public abstract class C2994e extends C1342a implements C2177a {
                         r0.mo3733d()     // Catch:{ all -> 0x006c }
                         com.panasonic.avc.cng.view.liveview.e r0 = com.panasonic.avc.cng.view.liveview.C2994e.this     // Catch:{ all -> 0x006c }
                         com.panasonic.avc.cng.core.a.g r0 = r0.f9503n     // Catch:{ all -> 0x006c }
-                        com.panasonic.avc.cng.core.a.g$j r2 = com.panasonic.avc.cng.core.p040a.C1508g.C1518j.CurrentAuto     // Catch:{ all -> 0x006c }
-                        com.panasonic.avc.cng.core.a.g$i r3 = com.panasonic.avc.cng.core.p040a.C1508g.C1517i.MfAssist     // Catch:{ all -> 0x006c }
+                        com.panasonic.avc.cng.core.a.g$j r2 = com.panasonic.avc.cng.core.p040a.FocusCommand.C1518j.CurrentAuto     // Catch:{ all -> 0x006c }
+                        com.panasonic.avc.cng.core.a.g$i r3 = com.panasonic.avc.cng.core.p040a.FocusCommand.C1517i.MfAssist     // Catch:{ all -> 0x006c }
                         r4 = 0
                         r5 = 0
                         com.panasonic.avc.cng.model.c.i r0 = r0.mo3728a(r2, r3, r4, r5)     // Catch:{ all -> 0x006c }
@@ -13967,7 +13967,7 @@ public abstract class C2994e extends C1342a implements C2177a {
                         if (r2 == 0) goto L_0x0131
                         java.lang.String r2 = "LiveViewLumixBaseViewModel"
                         java.lang.String r3 = "enterAfMfAssist assistDisp error."
-                        com.panasonic.avc.cng.util.C2261g.m9769c(r2, r3)     // Catch:{ all -> 0x006c }
+                        com.panasonic.avc.cng.util.ImageAppLog.error(r2, r3)     // Catch:{ all -> 0x006c }
                         com.panasonic.avc.cng.view.liveview.e r2 = com.panasonic.avc.cng.view.liveview.C2994e.this     // Catch:{ all -> 0x006c }
                         r3 = 0
                         r2.f9186av = r3     // Catch:{ all -> 0x006c }
@@ -14001,7 +14001,7 @@ public abstract class C2994e extends C1342a implements C2177a {
                         if (r0 != 0) goto L_0x012e
                         java.lang.String r0 = "LiveViewLumixBaseViewModel"
                         java.lang.String r2 = "enterAfMfAssist afAeLock off2 error."
-                        com.panasonic.avc.cng.util.C2261g.m9769c(r0, r2)     // Catch:{ all -> 0x006c }
+                        com.panasonic.avc.cng.util.ImageAppLog.error(r0, r2)     // Catch:{ all -> 0x006c }
                     L_0x012e:
                         monitor-exit(r1)     // Catch:{ all -> 0x006c }
                         goto L_0x003d
@@ -14126,7 +14126,7 @@ public abstract class C2994e extends C1342a implements C2177a {
                         if (r5 == 0) goto L_0x0064
                         java.lang.String r0 = "LiveViewLumixBaseViewModel"
                         java.lang.String r1 = "MF assist position setting error."
-                        com.panasonic.avc.cng.util.C2261g.m9769c(r0, r1)
+                        com.panasonic.avc.cng.util.ImageAppLog.error(r0, r1)
                     L_0x0062:
                         return
                     L_0x0063:
@@ -14140,7 +14140,7 @@ public abstract class C2994e extends C1342a implements C2177a {
                         if (r5 != 0) goto L_0x007e
                         java.lang.String r0 = "LiveViewLumixBaseViewModel"
                         java.lang.String r1 = "MF assist magnification setting error."
-                        com.panasonic.avc.cng.util.C2261g.m9769c(r0, r1)
+                        com.panasonic.avc.cng.util.ImageAppLog.error(r0, r1)
                         goto L_0x0062
                     L_0x007e:
                         java.math.BigDecimal r5 = com.panasonic.avc.cng.view.liveview.C2994e.C3132i.f9745a
@@ -14196,12 +14196,12 @@ public abstract class C2994e extends C1342a implements C2177a {
         if (this.f9500k != null) {
             new Thread(new Runnable() {
                 public void run() {
-                    C1853h i;
+                    ParseTagHighlightSceneInfo i;
                     synchronized (C1910l.m7679a()) {
                         i = C2994e.this.f9500k.mo3504i();
                     }
                     if (!i.mo4771a()) {
-                        C2261g.m9769c("LiveViewLumixBaseViewModel", "Marking Error");
+                        ImageAppLog.error("LiveViewLumixBaseViewModel", "Marking Error");
                         if (i.mo4772b().equalsIgnoreCase("err_reject") && C2994e.this.f9243c != null) {
                             C2994e.this.f9243c.mo7241h();
                             return;
@@ -14301,7 +14301,7 @@ public abstract class C2994e extends C1342a implements C2177a {
                             k = C2994e.this.f9504o.mo3811k(str);
                         }
                         if (k.mo4803d()) {
-                            C2261g.m9769c("LiveViewLumixBaseViewModel", "CropFrameChange Error");
+                            ImageAppLog.error("LiveViewLumixBaseViewModel", "CropFrameChange Error");
                         } else {
                             C2994e.this.f3707b.post(new Runnable() {
                                 public void run() {
@@ -14533,14 +14533,14 @@ public abstract class C2994e extends C1342a implements C2177a {
 
     /* renamed from: ci */
     public boolean mo7433ci() {
-        C2261g.m9769c("LiveViewLumixBaseViewModel", "IsMenuRunning() = " + this.f9232bp);
+        ImageAppLog.error("LiveViewLumixBaseViewModel", "IsMenuRunning() = " + this.f9232bp);
         return this.f9232bp;
     }
 
     /* renamed from: y */
     public void mo7489y(boolean z) {
         this.f9232bp = z;
-        C2261g.m9769c("LiveViewLumixBaseViewModel", "setMenuRunning() = " + this.f9232bp);
+        ImageAppLog.error("LiveViewLumixBaseViewModel", "setMenuRunning() = " + this.f9232bp);
     }
 
     /* renamed from: c */
@@ -14580,7 +14580,7 @@ public abstract class C2994e extends C1342a implements C2177a {
                     }
                     final C1854i a = C2994e.this.f9503n.mo3728a(C1518j.CurrentAuto, C1517i.DigitalScope, 0, 0);
                     if (a.mo4803d()) {
-                        C2261g.m9769c("LiveViewLumixBaseViewModel", "executeDigitalScopeDisp assistDisp error.");
+                        ImageAppLog.error("LiveViewLumixBaseViewModel", "executeDigitalScopeDisp assistDisp error.");
                         C2994e.this.f9186av = false;
                         if (a.mo4801b().equalsIgnoreCase("err_temperature") && C2994e.this.f9243c != null) {
                             C2994e.this.f9243c.mo7089a(C2328a.ON_ERROR_HIGH_TEMP_REJECT_MOVIE);
@@ -14643,7 +14643,7 @@ public abstract class C2994e extends C1342a implements C2177a {
                     com.panasonic.avc.cng.model.f r0 = r0.mo4896a()     // Catch:{ all -> 0x0048 }
                     com.panasonic.avc.cng.view.liveview.e r2 = com.panasonic.avc.cng.view.liveview.C2994e.this     // Catch:{ all -> 0x0048 }
                     android.content.Context r2 = r2.f3706a     // Catch:{ all -> 0x0048 }
-                    com.panasonic.avc.cng.model.service.b r0 = com.panasonic.avc.cng.model.service.C2253z.m9679a(r2, r0)     // Catch:{ all -> 0x0048 }
+                    com.panasonic.avc.cng.model.service.b r0 = com.panasonic.avc.cng.model.service.ServiceFactory.m9679a(r2, r0)     // Catch:{ all -> 0x0048 }
                     if (r0 != 0) goto L_0x003e
                     monitor-exit(r1)     // Catch:{ all -> 0x0048 }
                 L_0x003d:
@@ -14669,7 +14669,7 @@ public abstract class C2994e extends C1342a implements C2177a {
     public void mo7491z(final boolean z) {
         new Thread(new Runnable() {
             public void run() {
-                final C1853h b;
+                final ParseTagHighlightSceneInfo b;
                 synchronized (C2994e.this.f9177am) {
                     if (z) {
                         if (C2994e.this.f9491gu) {
@@ -14677,10 +14677,10 @@ public abstract class C2994e extends C1342a implements C2177a {
                         } else {
                             b = C2994e.this.f9500k.mo3497c();
                         }
-                        C2261g.m9771e("LiveViewLumixBaseViewModel_B", "OnShutterEnd[TouchCaptureCancel]★★");
+                        ImageAppLog.info("LiveViewLumixBaseViewModel_B", "OnShutterEnd[TouchCaptureCancel]★★");
                     } else {
                         b = C2994e.this.f9500k.mo3494b();
-                        C2261g.m9771e("LiveViewLumixBaseViewModel_B", "OnShutterEnd[CaptureCancel]★★");
+                        ImageAppLog.info("LiveViewLumixBaseViewModel_B", "OnShutterEnd[CaptureCancel]★★");
                         C2994e.this.mo7368bB();
                     }
                 }
@@ -14688,7 +14688,7 @@ public abstract class C2994e extends C1342a implements C2177a {
                     C2994e.this.f3707b.post(new Runnable() {
                         public void run() {
                             if (!b.mo4771a()) {
-                                C2261g.m9766b("LiveViewLumixBaseViewModel_B", "OnShutterEnd[fail]");
+                                ImageAppLog.warning("LiveViewLumixBaseViewModel_B", "OnShutterEnd[fail]");
                                 if (C2994e.this.f9243c != null) {
                                     C2994e.this.f9243c.mo7096b(C2994e.this.mo7355aw());
                                 }

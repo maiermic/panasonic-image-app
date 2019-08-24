@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/view/liveview/g;->b(Lcom/panasonic/avc/cng/model/j$f;)V
+    value = Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixCompactViewModel;->b(Lcom/panasonic/avc/cng/model/j$f;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,16 +20,16 @@
 # instance fields
 .field final synthetic a:Ljava/lang/String;
 
-.field final synthetic b:Lcom/panasonic/avc/cng/view/liveview/g;
+.field final synthetic b:Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixCompactViewModel;
 
 
 # direct methods
-.method constructor <init>(Lcom/panasonic/avc/cng/view/liveview/g;Ljava/lang/String;)V
+.method constructor <init>(Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixCompactViewModel;Ljava/lang/String;)V
     .locals 0
 
     .prologue
     .line 463
-    iput-object p1, p0, Lcom/panasonic/avc/cng/view/liveview/g$8;->b:Lcom/panasonic/avc/cng/view/liveview/g;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/view/liveview/g$8;->b:Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixCompactViewModel;
 
     iput-object p2, p0, Lcom/panasonic/avc/cng/view/liveview/g$8;->a:Ljava/lang/String;
 
@@ -52,27 +52,27 @@
     if-eqz v1, :cond_0
 
     .line 468
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/g$8;->b:Lcom/panasonic/avc/cng/view/liveview/g;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/g$8;->b:Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixCompactViewModel;
 
     iget-object v2, p0, Lcom/panasonic/avc/cng/view/liveview/g$8;->a:Ljava/lang/String;
 
-    invoke-virtual {v1, v2}, Lcom/panasonic/avc/cng/view/liveview/g;->b(Ljava/lang/String;)V
+    invoke-virtual {v1, v2}, Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixCompactViewModel;->b(Ljava/lang/String;)V
 
     .line 472
     :cond_0
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/g$8;->b:Lcom/panasonic/avc/cng/view/liveview/g;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/g$8;->b:Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixCompactViewModel;
 
-    iget-object v1, v1, Lcom/panasonic/avc/cng/view/liveview/g;->fD:Lcom/panasonic/avc/cng/a/c;
+    iget-object v1, v1, Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixCompactViewModel;->fD:Lcom/panasonic/avc/cng/a/c;
 
-    iget-object v2, p0, Lcom/panasonic/avc/cng/view/liveview/g$8;->b:Lcom/panasonic/avc/cng/view/liveview/g;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/view/liveview/g$8;->b:Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixCompactViewModel;
 
-    iget v2, v2, Lcom/panasonic/avc/cng/view/liveview/g;->ag:I
+    iget v2, v2, Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixCompactViewModel;->ag:I
 
     if-eq v2, v0, :cond_1
 
-    iget-object v2, p0, Lcom/panasonic/avc/cng/view/liveview/g$8;->b:Lcom/panasonic/avc/cng/view/liveview/g;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/view/liveview/g$8;->b:Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixCompactViewModel;
 
-    iget v2, v2, Lcom/panasonic/avc/cng/view/liveview/g;->ag:I
+    iget v2, v2, Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixCompactViewModel;->ag:I
 
     const/4 v3, 0x2
 

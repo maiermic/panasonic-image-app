@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/model/service/n/a;->a(IZ)V
+    value = Lcom/panasonic/avc/cng/model/service/n/ThreeBoxService;->a(IZ)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -22,16 +22,16 @@
 
 .field final synthetic b:I
 
-.field final synthetic c:Lcom/panasonic/avc/cng/model/service/n/a;
+.field final synthetic c:Lcom/panasonic/avc/cng/model/service/n/ThreeBoxService;
 
 
 # direct methods
-.method constructor <init>(Lcom/panasonic/avc/cng/model/service/n/a;ZI)V
+.method constructor <init>(Lcom/panasonic/avc/cng/model/service/n/ThreeBoxService;ZI)V
     .locals 0
 
     .prologue
     .line 447
-    iput-object p1, p0, Lcom/panasonic/avc/cng/model/service/n/a$3;->c:Lcom/panasonic/avc/cng/model/service/n/a;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/model/service/n/a$3;->c:Lcom/panasonic/avc/cng/model/service/n/ThreeBoxService;
 
     iput-boolean p2, p0, Lcom/panasonic/avc/cng/model/service/n/a$3;->a:Z
 
@@ -51,9 +51,9 @@
     const/4 v0, 0x0
 
     .line 449
-    iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/n/a$3;->c:Lcom/panasonic/avc/cng/model/service/n/a;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/n/a$3;->c:Lcom/panasonic/avc/cng/model/service/n/ThreeBoxService;
 
-    iget-object v1, v1, Lcom/panasonic/avc/cng/model/service/n/a;->a:Ljava/lang/Object;
+    iget-object v1, v1, Lcom/panasonic/avc/cng/model/service/n/ThreeBoxService;->a:Ljava/lang/Object;
 
     monitor-enter v1
 
@@ -86,12 +86,12 @@
 
     move-result-object v3
 
-    invoke-static {v2, v3}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v2, v3}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 454
-    iget-object v2, p0, Lcom/panasonic/avc/cng/model/service/n/a$3;->c:Lcom/panasonic/avc/cng/model/service/n/a;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/model/service/n/a$3;->c:Lcom/panasonic/avc/cng/model/service/n/ThreeBoxService;
 
-    invoke-static {v2}, Lcom/panasonic/avc/cng/model/service/n/a;->b(Lcom/panasonic/avc/cng/model/service/n/a;)Lcom/panasonic/avc/cng/core/dlna/DlnaWrapper;
+    invoke-static {v2}, Lcom/panasonic/avc/cng/model/service/n/ThreeBoxService;->b(Lcom/panasonic/avc/cng/model/service/n/ThreeBoxService;)Lcom/panasonic/avc/cng/core/dlna/DlnaWrapper;
 
     move-result-object v2
 
@@ -113,7 +113,7 @@
 
     const-string v3, "DmcSeek"
 
-    invoke-static {v2, v3}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v2, v3}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -136,9 +136,9 @@
     .line 492
     :goto_1
     :try_start_2
-    iget-object v2, p0, Lcom/panasonic/avc/cng/model/service/n/a$3;->c:Lcom/panasonic/avc/cng/model/service/n/a;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/model/service/n/a$3;->c:Lcom/panasonic/avc/cng/model/service/n/ThreeBoxService;
 
-    invoke-static {v2}, Lcom/panasonic/avc/cng/model/service/n/a;->g(Lcom/panasonic/avc/cng/model/service/n/a;)Lcom/panasonic/avc/cng/core/dlna/i;
+    invoke-static {v2}, Lcom/panasonic/avc/cng/model/service/n/ThreeBoxService;->g(Lcom/panasonic/avc/cng/model/service/n/ThreeBoxService;)Lcom/panasonic/avc/cng/core/dlna/i;
 
     move-result-object v2
 
@@ -148,10 +148,10 @@
 
     add-int/lit8 v2, v2, -0x1
 
-    iget-object v3, p0, Lcom/panasonic/avc/cng/model/service/n/a$3;->c:Lcom/panasonic/avc/cng/model/service/n/a;
+    iget-object v3, p0, Lcom/panasonic/avc/cng/model/service/n/a$3;->c:Lcom/panasonic/avc/cng/model/service/n/ThreeBoxService;
 
     .line 493
-    invoke-static {v3}, Lcom/panasonic/avc/cng/model/service/n/a;->g(Lcom/panasonic/avc/cng/model/service/n/a;)Lcom/panasonic/avc/cng/core/dlna/i;
+    invoke-static {v3}, Lcom/panasonic/avc/cng/model/service/n/ThreeBoxService;->g(Lcom/panasonic/avc/cng/model/service/n/ThreeBoxService;)Lcom/panasonic/avc/cng/core/dlna/i;
 
     move-result-object v3
 
@@ -163,10 +163,10 @@
 
     add-int/lit8 v2, v2, 0x1
 
-    iget-object v3, p0, Lcom/panasonic/avc/cng/model/service/n/a$3;->c:Lcom/panasonic/avc/cng/model/service/n/a;
+    iget-object v3, p0, Lcom/panasonic/avc/cng/model/service/n/a$3;->c:Lcom/panasonic/avc/cng/model/service/n/ThreeBoxService;
 
     .line 494
-    invoke-static {v3}, Lcom/panasonic/avc/cng/model/service/n/a;->g(Lcom/panasonic/avc/cng/model/service/n/a;)Lcom/panasonic/avc/cng/core/dlna/i;
+    invoke-static {v3}, Lcom/panasonic/avc/cng/model/service/n/ThreeBoxService;->g(Lcom/panasonic/avc/cng/model/service/n/ThreeBoxService;)Lcom/panasonic/avc/cng/core/dlna/i;
 
     move-result-object v3
 
@@ -176,18 +176,18 @@
 
     .line 501
     :cond_1
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/n/a$3;->c:Lcom/panasonic/avc/cng/model/service/n/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/n/a$3;->c:Lcom/panasonic/avc/cng/model/service/n/ThreeBoxService;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/n/a;->d(Lcom/panasonic/avc/cng/model/service/n/a;)Lcom/panasonic/avc/cng/model/service/w$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/n/ThreeBoxService;->d(Lcom/panasonic/avc/cng/model/service/n/ThreeBoxService;)Lcom/panasonic/avc/cng/model/service/w$a;
 
     move-result-object v0
 
     if-eqz v0, :cond_2
 
     .line 503
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/n/a$3;->c:Lcom/panasonic/avc/cng/model/service/n/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/n/a$3;->c:Lcom/panasonic/avc/cng/model/service/n/ThreeBoxService;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/n/a;->d(Lcom/panasonic/avc/cng/model/service/n/a;)Lcom/panasonic/avc/cng/model/service/w$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/n/ThreeBoxService;->d(Lcom/panasonic/avc/cng/model/service/n/ThreeBoxService;)Lcom/panasonic/avc/cng/model/service/w$a;
 
     move-result-object v0
 
@@ -224,12 +224,12 @@
 
     move-result-object v3
 
-    invoke-static {v2, v3}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v2, v3}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 464
-    iget-object v2, p0, Lcom/panasonic/avc/cng/model/service/n/a$3;->c:Lcom/panasonic/avc/cng/model/service/n/a;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/model/service/n/a$3;->c:Lcom/panasonic/avc/cng/model/service/n/ThreeBoxService;
 
-    invoke-static {v2}, Lcom/panasonic/avc/cng/model/service/n/a;->b(Lcom/panasonic/avc/cng/model/service/n/a;)Lcom/panasonic/avc/cng/core/dlna/DlnaWrapper;
+    invoke-static {v2}, Lcom/panasonic/avc/cng/model/service/n/ThreeBoxService;->b(Lcom/panasonic/avc/cng/model/service/n/ThreeBoxService;)Lcom/panasonic/avc/cng/core/dlna/DlnaWrapper;
 
     move-result-object v2
 
@@ -249,13 +249,13 @@
 
     const-string v3, "DmcPlay"
 
-    invoke-static {v2, v3}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v2, v3}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 470
     :cond_4
-    iget-object v2, p0, Lcom/panasonic/avc/cng/model/service/n/a$3;->c:Lcom/panasonic/avc/cng/model/service/n/a;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/model/service/n/a$3;->c:Lcom/panasonic/avc/cng/model/service/n/ThreeBoxService;
 
-    invoke-static {v2}, Lcom/panasonic/avc/cng/model/service/n/a;->b(Lcom/panasonic/avc/cng/model/service/n/a;)Lcom/panasonic/avc/cng/core/dlna/DlnaWrapper;
+    invoke-static {v2}, Lcom/panasonic/avc/cng/model/service/n/ThreeBoxService;->b(Lcom/panasonic/avc/cng/model/service/n/ThreeBoxService;)Lcom/panasonic/avc/cng/core/dlna/DlnaWrapper;
 
     move-result-object v2
 
@@ -277,13 +277,13 @@
 
     const-string v3, "DmcSeek"
 
-    invoke-static {v2, v3}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v2, v3}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 475
     :cond_5
-    iget-object v2, p0, Lcom/panasonic/avc/cng/model/service/n/a$3;->c:Lcom/panasonic/avc/cng/model/service/n/a;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/model/service/n/a$3;->c:Lcom/panasonic/avc/cng/model/service/n/ThreeBoxService;
 
-    invoke-static {v2}, Lcom/panasonic/avc/cng/model/service/n/a;->b(Lcom/panasonic/avc/cng/model/service/n/a;)Lcom/panasonic/avc/cng/core/dlna/DlnaWrapper;
+    invoke-static {v2}, Lcom/panasonic/avc/cng/model/service/n/ThreeBoxService;->b(Lcom/panasonic/avc/cng/model/service/n/ThreeBoxService;)Lcom/panasonic/avc/cng/core/dlna/DlnaWrapper;
 
     move-result-object v2
 
@@ -303,7 +303,7 @@
 
     const-string v3, "DmcPause"
 
-    invoke-static {v2, v3}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v2, v3}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     goto/16 :goto_0
 

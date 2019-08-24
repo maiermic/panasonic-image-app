@@ -25,9 +25,9 @@ import com.panasonic.avc.cng.model.C1703a;
 import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.view.common.C2820e;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
 import com.panasonic.avc.cng.view.p073b.C2376f.C2378b;
-import com.panasonic.avc.cng.view.setting.C5537al.C5540a;
+import com.panasonic.avc.cng.view.setting.SettingMenuBaseActivity.C5540a;
 import com.panasonic.avc.cng.view.setting.C5565an.C5571a;
 import com.panasonic.avc.cng.view.setting.C5681d.C5686b;
 import java.util.ArrayList;
@@ -245,7 +245,7 @@ public class EasyWiFiApListActivity extends C5741i {
             if (EasyWiFiApListActivity.this.f15897i != null) {
                 EasyWiFiApListActivity.this.f15897i.post(new Runnable() {
                     public void run() {
-                        C2331d.m10114a((Activity) EasyWiFiApListActivity.this, C2328a.ON_PROGRESS, (Bundle) null);
+                        DialogFactory.m10114a((Activity) EasyWiFiApListActivity.this, C2328a.ON_PROGRESS, (Bundle) null);
                     }
                 });
                 try {
@@ -262,7 +262,7 @@ public class EasyWiFiApListActivity extends C5741i {
                     public void run() {
                         EasyWiFiApListActivity.this.m18983b();
                         ((ListView) EasyWiFiApListActivity.this.findViewById(R.id.setup_connect_setting_listView)).invalidate();
-                        C2331d.m10100a((Activity) EasyWiFiApListActivity.this);
+                        DialogFactory.m10100a((Activity) EasyWiFiApListActivity.this);
                     }
                 });
                 try {
@@ -277,7 +277,7 @@ public class EasyWiFiApListActivity extends C5741i {
             if (EasyWiFiApListActivity.this.f15897i != null) {
                 EasyWiFiApListActivity.this.f15897i.post(new Runnable() {
                     public void run() {
-                        C2331d.m10100a((Activity) EasyWiFiApListActivity.this);
+                        DialogFactory.m10100a((Activity) EasyWiFiApListActivity.this);
                     }
                 });
                 try {
@@ -332,13 +332,13 @@ public class EasyWiFiApListActivity extends C5741i {
                         public void run() {
                             switch (i) {
                                 case 2:
-                                    C2331d.m10114a((Activity) EasyWiFiApListActivity.this, C2328a.ON_DISCONNECT_BY_HIGH_TEMP_FINISH, (Bundle) null);
+                                    DialogFactory.m10114a((Activity) EasyWiFiApListActivity.this, C2328a.ON_DISCONNECT_BY_HIGH_TEMP_FINISH, (Bundle) null);
                                     return;
                                 case 3:
-                                    C2331d.m10114a((Activity) EasyWiFiApListActivity.this, C2328a.ON_DISCONNECT_BATTERY_LOW_FINISH, (Bundle) null);
+                                    DialogFactory.m10114a((Activity) EasyWiFiApListActivity.this, C2328a.ON_DISCONNECT_BATTERY_LOW_FINISH, (Bundle) null);
                                     return;
                                 default:
-                                    C2331d.m10114a((Activity) EasyWiFiApListActivity.this, C2328a.ON_DISCONNECT_FINISH, (Bundle) null);
+                                    DialogFactory.m10114a((Activity) EasyWiFiApListActivity.this, C2328a.ON_DISCONNECT_FINISH, (Bundle) null);
                                     return;
                             }
                         }
@@ -361,9 +361,9 @@ public class EasyWiFiApListActivity extends C5741i {
             /* renamed from: a */
             public void mo11327a(String str) {
                 if (str.equalsIgnoreCase("high")) {
-                    C2331d.m10114a((Activity) EasyWiFiApListActivity.this, C2328a.ON_DISCONNECT_BY_HIGH_TEMP_FINISH, (Bundle) null);
+                    DialogFactory.m10114a((Activity) EasyWiFiApListActivity.this, C2328a.ON_DISCONNECT_BY_HIGH_TEMP_FINISH, (Bundle) null);
                 } else if (str.equalsIgnoreCase("assert")) {
-                    C2331d.m10114a((Activity) EasyWiFiApListActivity.this, C2328a.ON_ASEERT_TEMP_FINISH, (Bundle) null);
+                    DialogFactory.m10114a((Activity) EasyWiFiApListActivity.this, C2328a.ON_ASEERT_TEMP_FINISH, (Bundle) null);
                 }
             }
         });
@@ -420,7 +420,7 @@ public class EasyWiFiApListActivity extends C5741i {
                     }
                     Bundle bundle = new Bundle();
                     bundle.putStringArray(C2378b.ITEM_LIST.name(), strArr);
-                    C2331d.m10114a((Activity) EasyWiFiApListActivity.this, C2328a.DIALOG_ID_SETUP_AP_PRIORITY, bundle);
+                    DialogFactory.m10114a((Activity) EasyWiFiApListActivity.this, C2328a.DIALOG_ID_SETUP_AP_PRIORITY, bundle);
                 }
                 return false;
             }
@@ -446,7 +446,7 @@ public class EasyWiFiApListActivity extends C5741i {
         switch (i) {
             case R.string.setup_btn_delete /*2131166335*/:
                 this.f15901m = i2 + 1;
-                C2331d.m10114a((Activity) this, C2328a.ON_CONFIRM_DELETE_AP, (Bundle) null);
+                DialogFactory.m10114a((Activity) this, C2328a.ON_CONFIRM_DELETE_AP, (Bundle) null);
                 return;
             case R.string.setup_btn_priority_down /*2131166341*/:
                 this.f15896h.mo12337a(i2, false);

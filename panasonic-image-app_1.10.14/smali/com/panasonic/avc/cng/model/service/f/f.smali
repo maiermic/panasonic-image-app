@@ -12,9 +12,9 @@
 
 .field private b:Lcom/panasonic/avc/cng/model/service/k$a;
 
-.field private c:Lcom/panasonic/avc/cng/core/a/s;
+.field private c:Lcom/panasonic/avc/cng/core/a/LiveViewCommand;
 
-.field private d:Lcom/panasonic/avc/cng/model/service/f/b;
+.field private d:Lcom/panasonic/avc/cng/model/service/f/G711Renderer;
 
 .field private e:Lcom/panasonic/avc/cng/model/service/f/c;
 
@@ -32,7 +32,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 27
-    iput-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/f;->d:Lcom/panasonic/avc/cng/model/service/f/b;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/f;->d:Lcom/panasonic/avc/cng/model/service/f/G711Renderer;
 
     .line 28
     iput-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/f;->e:Lcom/panasonic/avc/cng/model/service/f/c;
@@ -59,7 +59,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 27
-    iput-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/f;->d:Lcom/panasonic/avc/cng/model/service/f/b;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/f;->d:Lcom/panasonic/avc/cng/model/service/f/G711Renderer;
 
     .line 28
     iput-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/f;->e:Lcom/panasonic/avc/cng/model/service/f/c;
@@ -217,19 +217,19 @@
     if-ne v0, v1, :cond_0
 
     .line 251
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/f;->d:Lcom/panasonic/avc/cng/model/service/f/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/f;->d:Lcom/panasonic/avc/cng/model/service/f/G711Renderer;
 
     if-eqz v0, :cond_0
 
     .line 253
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/f;->d:Lcom/panasonic/avc/cng/model/service/f/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/f;->d:Lcom/panasonic/avc/cng/model/service/f/G711Renderer;
 
-    invoke-virtual {v0, p1}, Lcom/panasonic/avc/cng/model/service/f/b;->a(Lcom/panasonic/avc/cng/core/a/at;)V
+    invoke-virtual {v0, p1}, Lcom/panasonic/avc/cng/model/service/f/G711Renderer;->a(Lcom/panasonic/avc/cng/core/a/at;)V
 
     goto :goto_0
 .end method
 
-.method public a(Lcom/panasonic/avc/cng/model/c/h;)V
+.method public a(Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;)V
     .locals 2
 
     .prologue
@@ -279,7 +279,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/f;->c:Lcom/panasonic/avc/cng/core/a/s;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/f;->c:Lcom/panasonic/avc/cng/core/a/LiveViewCommand;
 
     if-nez v0, :cond_1
 
@@ -293,14 +293,14 @@
     iput-object p1, p0, Lcom/panasonic/avc/cng/model/service/f/f;->b:Lcom/panasonic/avc/cng/model/service/k$a;
 
     .line 103
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/f;->c:Lcom/panasonic/avc/cng/core/a/s;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/f;->c:Lcom/panasonic/avc/cng/core/a/LiveViewCommand;
 
-    invoke-virtual {v0, p0, p2}, Lcom/panasonic/avc/cng/core/a/s;->a(Lcom/panasonic/avc/cng/core/a/q;Z)V
+    invoke-virtual {v0, p0, p2}, Lcom/panasonic/avc/cng/core/a/LiveViewCommand;->a(Lcom/panasonic/avc/cng/core/a/q;Z)V
 
     .line 106
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/f;->d:Lcom/panasonic/avc/cng/model/service/f/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/f;->d:Lcom/panasonic/avc/cng/model/service/f/G711Renderer;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/service/f/b;->a()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/service/f/G711Renderer;->a()V
 
     .line 108
     iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/f;->e:Lcom/panasonic/avc/cng/model/service/f/c;
@@ -316,14 +316,14 @@
     .prologue
     .line 194
     :try_start_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/f;->c:Lcom/panasonic/avc/cng/core/a/s;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/f;->c:Lcom/panasonic/avc/cng/core/a/LiveViewCommand;
 
-    invoke-virtual {v0, p1}, Lcom/panasonic/avc/cng/core/a/s;->a(Z)V
+    invoke-virtual {v0, p1}, Lcom/panasonic/avc/cng/core/a/LiveViewCommand;->a(Z)V
 
     .line 197
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/f;->d:Lcom/panasonic/avc/cng/model/service/f/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/f;->d:Lcom/panasonic/avc/cng/model/service/f/G711Renderer;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/service/f/b;->b()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/service/f/G711Renderer;->b()V
 
     .line 199
     iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/f;->e:Lcom/panasonic/avc/cng/model/service/f/c;
@@ -424,11 +424,11 @@
 
     .prologue
     .line 64
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
@@ -440,7 +440,7 @@
     if-eqz v0, :cond_0
 
     .line 68
-    new-instance v0, Lcom/panasonic/avc/cng/core/a/s;
+    new-instance v0, Lcom/panasonic/avc/cng/core/a/LiveViewCommand;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/f/f;->a:Lcom/panasonic/avc/cng/model/f;
 
@@ -452,17 +452,17 @@
 
     move-result-object v2
 
-    invoke-direct {v0, v1, v2}, Lcom/panasonic/avc/cng/core/a/s;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v0, v1, v2}, Lcom/panasonic/avc/cng/core/a/LiveViewCommand;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/f;->c:Lcom/panasonic/avc/cng/core/a/s;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/f;->c:Lcom/panasonic/avc/cng/core/a/LiveViewCommand;
 
     .line 71
     :cond_0
-    new-instance v0, Lcom/panasonic/avc/cng/model/service/f/b;
+    new-instance v0, Lcom/panasonic/avc/cng/model/service/f/G711Renderer;
 
-    invoke-direct {v0}, Lcom/panasonic/avc/cng/model/service/f/b;-><init>()V
+    invoke-direct {v0}, Lcom/panasonic/avc/cng/model/service/f/G711Renderer;-><init>()V
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/f;->d:Lcom/panasonic/avc/cng/model/service/f/b;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/f;->d:Lcom/panasonic/avc/cng/model/service/f/G711Renderer;
 
     .line 72
     iget-boolean v0, p0, Lcom/panasonic/avc/cng/model/service/f/f;->f:Z
@@ -519,16 +519,16 @@
     .prologue
     .line 169
     :try_start_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/f;->c:Lcom/panasonic/avc/cng/core/a/s;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/f;->c:Lcom/panasonic/avc/cng/core/a/LiveViewCommand;
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/core/a/s;->a(Z)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/core/a/LiveViewCommand;->a(Z)V
 
     .line 172
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/f;->d:Lcom/panasonic/avc/cng/model/service/f/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/f;->d:Lcom/panasonic/avc/cng/model/service/f/G711Renderer;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/service/f/b;->b()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/service/f/G711Renderer;->b()V
 
     .line 174
     iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/f;->e:Lcom/panasonic/avc/cng/model/service/f/c;
@@ -555,12 +555,12 @@
     const/4 v1, 0x0
 
     .line 216
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/f;->d:Lcom/panasonic/avc/cng/model/service/f/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/f;->d:Lcom/panasonic/avc/cng/model/service/f/G711Renderer;
 
     if-eqz v0, :cond_0
 
     .line 218
-    iput-object v1, p0, Lcom/panasonic/avc/cng/model/service/f/f;->d:Lcom/panasonic/avc/cng/model/service/f/b;
+    iput-object v1, p0, Lcom/panasonic/avc/cng/model/service/f/f;->d:Lcom/panasonic/avc/cng/model/service/f/G711Renderer;
 
     .line 221
     :cond_0

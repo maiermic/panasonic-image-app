@@ -72,7 +72,7 @@
 
     const v3, 0x7f0f0291
 
-    invoke-static {v1, v2, v3, v0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;ILjava/lang/CharSequence;)V
+    invoke-static {v1, v2, v3, v0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;ILjava/lang/CharSequence;)V
 
     .line 486
     const/4 v0, 0x1
@@ -97,7 +97,7 @@
 
     const v3, 0x7f0f0292
 
-    invoke-static {v1, v2, v3, v0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;I[Landroid/text/InputFilter;)V
+    invoke-static {v1, v2, v3, v0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;I[Landroid/text/InputFilter;)V
 
     .line 490
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/b/e$13;->b:Landroid/app/Activity;
@@ -110,7 +110,7 @@
 
     invoke-direct {v3, p0}, Lcom/panasonic/avc/cng/view/b/e$13$1;-><init>(Lcom/panasonic/avc/cng/view/b/e$13;)V
 
-    invoke-static {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;ILandroid/view/View$OnClickListener;)V
+    invoke-static {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;ILandroid/view/View$OnClickListener;)V
 
     .line 506
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/b/e$13;->b:Landroid/app/Activity;
@@ -123,7 +123,7 @@
 
     invoke-direct {v3, p0}, Lcom/panasonic/avc/cng/view/b/e$13$2;-><init>(Lcom/panasonic/avc/cng/view/b/e$13;)V
 
-    invoke-static {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;ILandroid/view/View$OnClickListener;)V
+    invoke-static {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;ILandroid/view/View$OnClickListener;)V
 
     .line 530
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/b/e$13;->b:Landroid/app/Activity;
@@ -136,7 +136,7 @@
 
     invoke-direct {v3, p0}, Lcom/panasonic/avc/cng/view/b/e$13$3;-><init>(Lcom/panasonic/avc/cng/view/b/e$13;)V
 
-    invoke-static {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;ILandroid/widget/CompoundButton$OnCheckedChangeListener;)V
+    invoke-static {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;ILandroid/widget/CompoundButton$OnCheckedChangeListener;)V
 
     .line 549
     return-void

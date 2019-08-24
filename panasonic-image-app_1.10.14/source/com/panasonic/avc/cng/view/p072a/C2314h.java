@@ -10,7 +10,7 @@ import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.C1892f;
 import com.panasonic.avc.cng.model.p052d.C1879a;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
 
 /* renamed from: com.panasonic.avc.cng.view.a.h */
 public class C2314h {
@@ -69,14 +69,14 @@ public class C2314h {
     }
 
     /* renamed from: d */
-    public void mo6087d(C2289b bVar, C2291c cVar, C2292d dVar) {
+    public void mo6087d(C2289b bVar, C2291c cVar, CameraWatchUtility dVar) {
         if (this.f7122a != 1 && m10020f(bVar, cVar, dVar)) {
             C1892f a = C1712b.m6919c().mo4896a();
             if (a != null) {
                 boolean z = PreferenceManager.getDefaultSharedPreferences(bVar).getBoolean("menu_item_id_warn_lens_out", true);
                 boolean g = a.mo4893g();
                 if (z && g) {
-                    C2331d.m10114a((Activity) bVar, C2328a.DIALOG_ID_WARN_LENS_OUT, (Bundle) null);
+                    DialogFactory.m10114a((Activity) bVar, C2328a.DIALOG_ID_WARN_LENS_OUT, (Bundle) null);
                     return;
                 }
             }
@@ -85,7 +85,7 @@ public class C2314h {
     }
 
     /* renamed from: e */
-    public void mo6088e(C2289b bVar, C2291c cVar, C2292d dVar) {
+    public void mo6088e(C2289b bVar, C2291c cVar, CameraWatchUtility dVar) {
         if (this.f7122a != 2 && m10020f(bVar, cVar, dVar)) {
             mo6079b(bVar, cVar, dVar);
         }
@@ -96,14 +96,14 @@ public class C2314h {
         bVar.openOptionsMenu();
     }
 
-    public void OnClickHome(C2289b bVar, C2291c cVar, C2292d dVar) {
+    public void OnClickHome(C2289b bVar, C2291c cVar, CameraWatchUtility dVar) {
         if (this.f7122a != 5 && m10020f(bVar, cVar, dVar)) {
             mo6080c(bVar, cVar, dVar);
         }
     }
 
     /* renamed from: f */
-    private boolean m10020f(C2289b bVar, C2291c cVar, C2292d dVar) {
+    private boolean m10020f(C2289b bVar, C2291c cVar, CameraWatchUtility dVar) {
         if (bVar != null && bVar.isFinishing()) {
             return false;
         }
@@ -114,14 +114,14 @@ public class C2314h {
     }
 
     /* renamed from: a */
-    public void mo6077a(C2289b bVar, C2291c cVar, C2292d dVar) {
+    public void mo6077a(C2289b bVar, C2291c cVar, CameraWatchUtility dVar) {
     }
 
     /* renamed from: b */
-    public void mo6079b(C2289b bVar, C2291c cVar, C2292d dVar) {
+    public void mo6079b(C2289b bVar, C2291c cVar, CameraWatchUtility dVar) {
     }
 
     /* renamed from: c */
-    public void mo6080c(C2289b bVar, C2291c cVar, C2292d dVar) {
+    public void mo6080c(C2289b bVar, C2291c cVar, CameraWatchUtility dVar) {
     }
 }

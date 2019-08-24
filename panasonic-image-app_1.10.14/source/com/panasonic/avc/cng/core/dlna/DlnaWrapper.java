@@ -1,8 +1,8 @@
 package com.panasonic.avc.cng.core.dlna;
 
 import com.panasonic.avc.cng.model.C1712b;
-import com.panasonic.avc.cng.util.C2260f;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppCmdLog;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
@@ -155,12 +155,12 @@ public class DlnaWrapper {
     /* renamed from: a */
     public C1697f mo4250a() {
         if (this.f4985h) {
-            C2261g.m9763a("DlnaWrapper", "RefreshDLNA中なので抑制");
+            ImageAppLog.debug("DlnaWrapper", "RefreshDLNA中なので抑制");
             return null;
         }
         this.f4985h = true;
         synchronized (f4982e) {
-            C2261g.m9763a("DlnaWrapper", "RefreshDLNA() Start");
+            ImageAppLog.debug("DlnaWrapper", "RefreshDLNA() Start");
             if (f4983f != 0) {
                 int i = f4983f;
                 String str = f4984g;
@@ -175,15 +175,15 @@ public class DlnaWrapper {
                         str = ((C1692a) f.get(0)).f4990c;
                     }
                     if (str != null) {
-                        C2261g.m9763a("DlnaWrapper", "DmpSetConnectServer() in RefreshDLNA()");
+                        ImageAppLog.debug("DlnaWrapper", "DmpSetConnectServer() in RefreshDLNA()");
                         mo4256a(str);
                     }
                 } else if (f.size() > 1 && str != null) {
-                    C2261g.m9763a("DlnaWrapper", "DmpSetConnectServer() in RefreshDLNA()");
+                    ImageAppLog.debug("DlnaWrapper", "DmpSetConnectServer() in RefreshDLNA()");
                     mo4256a(str);
                 }
             }
-            C2261g.m9763a("DlnaWrapper", "RefreshDLNA() End");
+            ImageAppLog.debug("DlnaWrapper", "RefreshDLNA() End");
         }
         this.f4985h = false;
         return new C1697f(0);
@@ -290,16 +290,16 @@ public class DlnaWrapper {
     /* renamed from: a */
     private List<C1692a> m6774a(String str, int i, int i2, int i3) {
         String[] strArr = new String[160];
-        C2260f.m9752a("DlnaWrapper", "SendMSearch");
-        C2261g.m9771e("DlnaWrapper", String.format("start deviceSearch(mx=%d port:%d)", new Object[]{Integer.valueOf(i), Integer.valueOf(i2)}));
+        ImageAppCmdLog.debug("DlnaWrapper", "SendMSearch");
+        ImageAppLog.info("DlnaWrapper", String.format("start deviceSearch(mx=%d port:%d)", new Object[]{Integer.valueOf(i), Integer.valueOf(i2)}));
         int deviceSearch = deviceSearch(str, i, 32, strArr, i2, i3);
         int searchPort = getSearchPort();
-        C2261g.m9771e("DlnaWrapper", String.format("finish deviceSearch(%d found) port : %d", new Object[]{Integer.valueOf(deviceSearch), Integer.valueOf(searchPort)}));
+        ImageAppLog.info("DlnaWrapper", String.format("finish deviceSearch(%d found) port : %d", new Object[]{Integer.valueOf(deviceSearch), Integer.valueOf(searchPort)}));
         ArrayList arrayList = new ArrayList();
         for (int i4 = 0; i4 < deviceSearch; i4++) {
             arrayList.add(new C1692a(strArr[i4 * 5], strArr[(i4 * 5) + 1], strArr[(i4 * 5) + 2], strArr[(i4 * 5) + 3], strArr[(i4 * 5) + 4], searchPort));
         }
-        C2260f.m9752a("DlnaWrapper", "SendMSearch:Res:" + String.valueOf(deviceSearch));
+        ImageAppCmdLog.debug("DlnaWrapper", "SendMSearch:Res:" + String.valueOf(deviceSearch));
         return arrayList;
     }
 
@@ -315,17 +315,17 @@ public class DlnaWrapper {
         synchronized (f4982e) {
             fVar = new C1697f(dmpSetConnectServer(str));
             if (fVar.mo4308a()) {
-                C2261g.m9763a("DlnaWrapper", "DmpSetConnectServer Success!");
+                ImageAppLog.debug("DlnaWrapper", "DmpSetConnectServer Success!");
                 f4984g = str;
             } else {
-                C2261g.m9769c("DlnaWrapper", "DmpSetConnectServer Failed... Retry M-Search!!");
+                ImageAppLog.error("DlnaWrapper", "DmpSetConnectServer Failed... Retry M-Search!!");
                 mo4276f();
                 fVar = new C1697f(dmpSetConnectServer(str));
                 if (fVar.mo4308a()) {
-                    C2261g.m9763a("DlnaWrapper", "DmpSetConnectServer Success!");
+                    ImageAppLog.debug("DlnaWrapper", "DmpSetConnectServer Success!");
                     f4984g = str;
                 } else {
-                    C2261g.m9769c("DlnaWrapper", "DmpSetConnectServer Failed...");
+                    ImageAppLog.error("DlnaWrapper", "DmpSetConnectServer Failed...");
                     f4984g = null;
                 }
             }

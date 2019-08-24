@@ -33,24 +33,24 @@ public class C2275p {
     /* renamed from: a */
     public static Intent m9921a(Context context, C1892f fVar) {
         if (fVar.f5694p != null && fVar.f5694p.mo4819c()) {
-            C2261g.m9760a(2105348, "");
+            ImageAppLog.m9760a(2105348, "");
             return new Intent(context, EasyWiFiSettingActivity.class);
         } else if (fVar.f5694p != null && fVar.f5694p.mo4820d()) {
-            C2261g.m9760a(2105348, "");
+            ImageAppLog.m9760a(2105348, "");
             Intent intent = new Intent(context, EasyWiFiSettingActivity.class);
             intent.putExtra("EasyWiFiNoUstream", true);
             return intent;
         } else if (C1347a.m5307a(fVar.f5691m.mo4732d(), context)) {
-            C2261g.m9760a(2105351, "");
+            ImageAppLog.m9760a(2105351, "");
             return new Intent(context, LiveViewMoviePantilterAutoMovieActivity.class);
         } else if (fVar.f5688j == 131074) {
-            C2261g.m9760a(2105345, "");
+            ImageAppLog.m9760a(2105345, "");
             return new Intent(context, LiveViewWearablePictureActivity.class);
         } else if (fVar.f5688j == 131076) {
-            C2261g.m9760a(2105345, "");
+            ImageAppLog.m9760a(2105345, "");
             return new Intent(context, LiveViewMovieOnlyVideoActivity.class);
         } else if (m9922a(fVar).equalsIgnoreCase("") || !m9922a(fVar).equalsIgnoreCase("anmast")) {
-            C2261g.m9760a(2105345, "");
+            ImageAppLog.m9760a(2105345, "");
             if (C1879a.m7545b(fVar, "1.4")) {
                 return new Intent(context, LiveViewMovieOnlyVideoActivity.class);
             }
@@ -59,7 +59,7 @@ public class C2275p {
             }
             return new Intent(context, LiveViewMoviePictureActivity.class);
         } else {
-            C2261g.m9760a(2105345, "");
+            ImageAppLog.m9760a(2105345, "");
             return new Intent(context, LiveViewMovieMatanityMainActivity.class);
         }
     }
@@ -68,24 +68,24 @@ public class C2275p {
     public static Intent m9924b(Context context, C1892f fVar) {
         if (fVar.f5688j == 131073) {
             if (fVar.f5694p != null && fVar.f5694p.mo4818b()) {
-                C2261g.m9760a(2105349, "");
+                ImageAppLog.m9760a(2105349, "");
                 return new Intent(context, LiveViewMovieBabyMonitorActivity.class);
             } else if (fVar.f5694p != null && fVar.f5694p.mo4819c()) {
-                C2261g.m9760a(2105348, "");
+                ImageAppLog.m9760a(2105348, "");
                 return new Intent(context, EasyWiFiSettingActivity.class);
             } else if (fVar.f5694p != null && fVar.f5694p.mo4820d()) {
-                C2261g.m9760a(2105348, "");
+                ImageAppLog.m9760a(2105348, "");
                 Intent intent = new Intent(context, EasyWiFiSettingActivity.class);
                 intent.putExtra("EasyWiFiNoUstream", true);
                 return intent;
             } else if (fVar.f5688j == 131073 && fVar.f5694p.mo4821e()) {
-                C2261g.m9760a(2105350, "");
+                ImageAppLog.m9760a(2105350, "");
                 return new Intent(context, WirelessTwinCameraActivity.class);
             } else if (C1347a.m5307a(fVar.f5691m.mo4732d(), context)) {
-                C2261g.m9760a(2105351, "");
+                ImageAppLog.m9760a(2105351, "");
                 return new Intent(context, LiveViewMoviePantilterAutoMovieActivity.class);
             } else if (fVar.f5694p == null || !fVar.f5694p.mo4822f()) {
-                C2261g.m9760a(2105345, "");
+                ImageAppLog.m9760a(2105345, "");
                 if (C1879a.m7545b(fVar, "1.4")) {
                     return new Intent(context, LiveViewMovieOnlyVideoActivity.class);
                 }
@@ -95,48 +95,48 @@ public class C2275p {
                 return new Intent(context, LiveViewMovieVideoActivity.class);
             } else {
                 PreferenceManager.getDefaultSharedPreferences(context).edit().putString("HighlightModeSSID", fVar.f5685g).commit();
-                C2261g.m9760a(2105350, "");
+                ImageAppLog.m9760a(2105350, "");
                 Intent intent2 = new Intent(context, MainBrowserActivity.class);
                 intent2.putExtra("HighlightMode", true);
                 return intent2;
             }
         } else if (fVar.f5688j == 131074) {
             if (fVar.f5694p != null && fVar.f5694p.mo4819c()) {
-                C2261g.m9760a(2105348, "");
+                ImageAppLog.m9760a(2105348, "");
                 return new Intent(context, EasyWiFiSettingActivity.class);
             } else if (fVar.f5694p != null && fVar.f5694p.mo4820d()) {
-                C2261g.m9760a(2105348, "");
+                ImageAppLog.m9760a(2105348, "");
                 Intent intent3 = new Intent(context, EasyWiFiSettingActivity.class);
                 intent3.putExtra("EasyWiFiNoUstream", true);
                 return intent3;
             } else if (C1879a.m7545b(fVar, "1.3") || C1879a.m7545b(fVar, "1.6")) {
-                C2261g.m9760a(2105345, "");
+                ImageAppLog.m9760a(2105345, "");
                 return new Intent(context, LiveViewWearableVideoActivity.class);
             } else {
-                C2261g.m9760a(2105345, "");
+                ImageAppLog.m9760a(2105345, "");
                 return new Intent(context, LiveViewWearableActivity.class);
             }
         } else if (fVar.f5688j == 131075) {
-            C2261g.m9760a(2105345, "");
+            ImageAppLog.m9760a(2105345, "");
             return new Intent(context, LiveViewVerticalActivity.class);
         } else if (fVar.f5688j == 131076) {
             if (fVar.f5694p != null && fVar.f5694p.mo4819c()) {
-                C2261g.m9760a(2105348, "");
+                ImageAppLog.m9760a(2105348, "");
                 return new Intent(context, EasyWiFiSettingActivity.class);
             } else if (fVar.f5694p == null || !fVar.f5694p.mo4820d()) {
-                C2261g.m9760a(2105345, "");
+                ImageAppLog.m9760a(2105345, "");
                 return new Intent(context, LiveViewMovieOnlyVideoActivity.class);
             } else {
-                C2261g.m9760a(2105348, "");
+                ImageAppLog.m9760a(2105348, "");
                 Intent intent4 = new Intent(context, EasyWiFiSettingActivity.class);
                 intent4.putExtra("EasyWiFiNoUstream", true);
                 return intent4;
             }
         } else if (C1347a.m5307a(fVar.f5691m.mo4732d(), context)) {
-            C2261g.m9760a(2105351, "");
+            ImageAppLog.m9760a(2105351, "");
             return new Intent(context, LiveViewMoviePantilterAutoMovieActivity.class);
         } else {
-            C2261g.m9760a(2105345, "");
+            ImageAppLog.m9760a(2105345, "");
             if (C1879a.m7545b(fVar, "1.4")) {
                 return new Intent(context, LiveViewMovieOnlyVideoActivity.class);
             }

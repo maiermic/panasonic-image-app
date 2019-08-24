@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/model/service/a/c;->a()V
+    value = Lcom/panasonic/avc/cng/model/service/a/BrowserServiceCamera;->a()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/panasonic/avc/cng/model/service/a/c;
+.field final synthetic a:Lcom/panasonic/avc/cng/model/service/a/BrowserServiceCamera;
 
 
 # direct methods
-.method constructor <init>(Lcom/panasonic/avc/cng/model/service/a/c;)V
+.method constructor <init>(Lcom/panasonic/avc/cng/model/service/a/BrowserServiceCamera;)V
     .locals 0
 
     .prologue
     .line 378
-    iput-object p1, p0, Lcom/panasonic/avc/cng/model/service/a/c$1;->a:Lcom/panasonic/avc/cng/model/service/a/c;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/model/service/a/c$1;->a:Lcom/panasonic/avc/cng/model/service/a/BrowserServiceCamera;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -41,21 +41,21 @@
 
     .prologue
     .line 380
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/a/c$1;->a:Lcom/panasonic/avc/cng/model/service/a/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/a/c$1;->a:Lcom/panasonic/avc/cng/model/service/a/BrowserServiceCamera;
 
-    iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/a/c$1;->a:Lcom/panasonic/avc/cng/model/service/a/c;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/a/c$1;->a:Lcom/panasonic/avc/cng/model/service/a/BrowserServiceCamera;
 
-    iget-object v1, v1, Lcom/panasonic/avc/cng/model/service/a/c;->h:Ljava/lang/String;
+    iget-object v1, v1, Lcom/panasonic/avc/cng/model/service/a/BrowserServiceCamera;->h:Ljava/lang/String;
 
-    iget-object v2, p0, Lcom/panasonic/avc/cng/model/service/a/c$1;->a:Lcom/panasonic/avc/cng/model/service/a/c;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/model/service/a/c$1;->a:Lcom/panasonic/avc/cng/model/service/a/BrowserServiceCamera;
 
-    iget-object v2, v2, Lcom/panasonic/avc/cng/model/service/a/c;->i:Ljava/lang/String;
+    iget-object v2, v2, Lcom/panasonic/avc/cng/model/service/a/BrowserServiceCamera;->i:Ljava/lang/String;
 
-    iget-object v3, p0, Lcom/panasonic/avc/cng/model/service/a/c$1;->a:Lcom/panasonic/avc/cng/model/service/a/c;
+    iget-object v3, p0, Lcom/panasonic/avc/cng/model/service/a/c$1;->a:Lcom/panasonic/avc/cng/model/service/a/BrowserServiceCamera;
 
-    iget-object v3, v3, Lcom/panasonic/avc/cng/model/service/a/c;->j:Ljava/lang/String;
+    iget-object v3, v3, Lcom/panasonic/avc/cng/model/service/a/BrowserServiceCamera;->j:Ljava/lang/String;
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/model/service/a/c;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/model/service/a/BrowserServiceCamera;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 381
     return-void

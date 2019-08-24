@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/panasonic/avc/cng/core/a/h;
+    value = Lcom/panasonic/avc/cng/core/a/XmlNode;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -167,7 +167,7 @@
 
     move-result-object v3
 
-    invoke-static {v2, v3}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v2, v3}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 777
     :cond_0
@@ -252,7 +252,7 @@
 
     const-string v1, "XmlPullParserException!!"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 876
     new-instance v0, Lorg/xmlpull/v1/XmlPullParserException;
@@ -321,7 +321,7 @@
 
     const-string v1, "IOException!!"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 881
     new-instance v0, Lorg/xmlpull/v1/XmlPullParserException;

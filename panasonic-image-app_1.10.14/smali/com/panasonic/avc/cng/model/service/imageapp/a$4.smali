@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/panasonic/avc/cng/model/service/imageapp/a;
+    value = Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppService;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/panasonic/avc/cng/model/service/imageapp/a;
+.field final synthetic a:Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppService;
 
 
 # direct methods
-.method constructor <init>(Lcom/panasonic/avc/cng/model/service/imageapp/a;)V
+.method constructor <init>(Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppService;)V
     .locals 0
 
     .prologue
     .line 315
-    iput-object p1, p0, Lcom/panasonic/avc/cng/model/service/imageapp/a$4;->a:Lcom/panasonic/avc/cng/model/service/imageapp/a;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/model/service/imageapp/a$4;->a:Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppService;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -49,18 +49,18 @@
 
     .prologue
     .line 325
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/imageapp/a$4;->a:Lcom/panasonic/avc/cng/model/service/imageapp/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/imageapp/a$4;->a:Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppService;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/imageapp/a;->k(Lcom/panasonic/avc/cng/model/service/imageapp/a;)Lcom/panasonic/avc/cng/model/service/j$b;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppService;->k(Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppService;)Lcom/panasonic/avc/cng/model/service/j$b;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 327
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/imageapp/a$4;->a:Lcom/panasonic/avc/cng/model/service/imageapp/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/imageapp/a$4;->a:Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppService;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/imageapp/a;->k(Lcom/panasonic/avc/cng/model/service/imageapp/a;)Lcom/panasonic/avc/cng/model/service/j$b;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppService;->k(Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppService;)Lcom/panasonic/avc/cng/model/service/j$b;
 
     move-result-object v0
 

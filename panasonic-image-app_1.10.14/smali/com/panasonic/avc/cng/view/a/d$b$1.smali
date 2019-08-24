@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/view/a/d$b;->a(Lcom/panasonic/avc/cng/model/c/e;)V
+    value = Lcom/panasonic/avc/cng/view/a/d$b;->a(Lcom/panasonic/avc/cng/model/c/CameraStatus;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/panasonic/avc/cng/model/c/e;
+.field final synthetic a:Lcom/panasonic/avc/cng/model/c/CameraStatus;
 
 .field final synthetic b:Z
 
@@ -26,14 +26,14 @@
 
 
 # direct methods
-.method constructor <init>(Lcom/panasonic/avc/cng/view/a/d$b;Lcom/panasonic/avc/cng/model/c/e;Z)V
+.method constructor <init>(Lcom/panasonic/avc/cng/view/a/d$b;Lcom/panasonic/avc/cng/model/c/CameraStatus;Z)V
     .locals 0
 
     .prologue
     .line 588
     iput-object p1, p0, Lcom/panasonic/avc/cng/view/a/d$b$1;->c:Lcom/panasonic/avc/cng/view/a/d$b;
 
-    iput-object p2, p0, Lcom/panasonic/avc/cng/view/a/d$b$1;->a:Lcom/panasonic/avc/cng/model/c/e;
+    iput-object p2, p0, Lcom/panasonic/avc/cng/view/a/d$b$1;->a:Lcom/panasonic/avc/cng/model/c/CameraStatus;
 
     iput-boolean p3, p0, Lcom/panasonic/avc/cng/view/a/d$b$1;->b:Z
 
@@ -51,16 +51,16 @@
     .line 591
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/a/d$b$1;->c:Lcom/panasonic/avc/cng/view/a/d$b;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/a/d$b;->a:Lcom/panasonic/avc/cng/view/a/d;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/a/d$b;->a:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/a/d;->m()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;->m()V
 
     .line 593
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/a/d$b$1;->c:Lcom/panasonic/avc/cng/view/a/d$b;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/a/d$b;->a:Lcom/panasonic/avc/cng/view/a/d;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/a/d$b;->a:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/a/d;->a(Lcom/panasonic/avc/cng/view/a/d;)Lcom/panasonic/avc/cng/view/a/c;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;->a(Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;)Lcom/panasonic/avc/cng/view/a/c;
 
     move-result-object v0
 
@@ -72,27 +72,27 @@
 
     .line 599
     :cond_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/a/d$b$1;->a:Lcom/panasonic/avc/cng/model/c/e;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/a/d$b$1;->a:Lcom/panasonic/avc/cng/model/c/CameraStatus;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/c/e;->b(Lcom/panasonic/avc/cng/model/c/e;)I
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->b(Lcom/panasonic/avc/cng/model/c/CameraStatus;)I
 
     move-result v0
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/a/d$b$1;->c:Lcom/panasonic/avc/cng/view/a/d$b;
 
-    iget-object v1, v1, Lcom/panasonic/avc/cng/view/a/d$b;->a:Lcom/panasonic/avc/cng/view/a/d;
+    iget-object v1, v1, Lcom/panasonic/avc/cng/view/a/d$b;->a:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
     .line 600
-    invoke-static {v1}, Lcom/panasonic/avc/cng/view/a/d;->c(Lcom/panasonic/avc/cng/view/a/d;)Landroid/app/Activity;
+    invoke-static {v1}, Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;->c(Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;)Landroid/app/Activity;
 
     move-result-object v1
 
     iget-object v2, p0, Lcom/panasonic/avc/cng/view/a/d$b$1;->c:Lcom/panasonic/avc/cng/view/a/d$b;
 
-    iget-object v2, v2, Lcom/panasonic/avc/cng/view/a/d$b;->a:Lcom/panasonic/avc/cng/view/a/d;
+    iget-object v2, v2, Lcom/panasonic/avc/cng/view/a/d$b;->a:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
     .line 601
-    invoke-static {v2}, Lcom/panasonic/avc/cng/view/a/d;->a(Lcom/panasonic/avc/cng/view/a/d;)Lcom/panasonic/avc/cng/view/a/c;
+    invoke-static {v2}, Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;->a(Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;)Lcom/panasonic/avc/cng/view/a/c;
 
     move-result-object v2
 
@@ -103,7 +103,7 @@
     iget-boolean v3, p0, Lcom/panasonic/avc/cng/view/a/d$b$1;->b:Z
 
     .line 599
-    invoke-static {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/a/d;->a(ILandroid/app/Activity;Landroid/os/Bundle;Z)V
+    invoke-static {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;->a(ILandroid/app/Activity;Landroid/os/Bundle;Z)V
 
     goto :goto_0
 .end method

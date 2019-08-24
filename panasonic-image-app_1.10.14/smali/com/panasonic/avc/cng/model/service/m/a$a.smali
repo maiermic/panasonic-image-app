@@ -64,13 +64,13 @@
     const/4 v3, 0x0
 
     .line 107
-    new-instance v1, Lcom/panasonic/avc/cng/core/a/au;
+    new-instance v1, Lcom/panasonic/avc/cng/core/a/VideoEditCommand;
 
     iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/m/a$a;->b:Lcom/panasonic/avc/cng/model/f;
 
     iget-object v0, v0, Lcom/panasonic/avc/cng/model/f;->d:Ljava/lang/String;
 
-    invoke-direct {v1, v0}, Lcom/panasonic/avc/cng/core/a/au;-><init>(Ljava/lang/String;)V
+    invoke-direct {v1, v0}, Lcom/panasonic/avc/cng/core/a/VideoEditCommand;-><init>(Ljava/lang/String;)V
 
     .line 113
     iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/m/a$a;->c:Lcom/panasonic/avc/cng/model/d;
@@ -104,11 +104,11 @@
 
     long-to-int v5, v6
 
-    invoke-virtual {v1, v4, v5}, Lcom/panasonic/avc/cng/core/a/au;->b(Ljava/lang/String;I)Lcom/panasonic/avc/cng/model/c/h;
+    invoke-virtual {v1, v4, v5}, Lcom/panasonic/avc/cng/core/a/VideoEditCommand;->b(Ljava/lang/String;I)Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
     .line 151
     :goto_0
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/core/a/au;->a()Lcom/panasonic/avc/cng/model/c/ae;
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/core/a/VideoEditCommand;->a()Lcom/panasonic/avc/cng/model/c/ae;
 
     move-result-object v4
 
@@ -131,14 +131,14 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 173
-    invoke-static {}, Lcom/panasonic/avc/cng/model/service/z;->f()Lcom/panasonic/avc/cng/model/service/a;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->f()Lcom/panasonic/avc/cng/model/service/a;
 
     move-result-object v1
 
     .line 174
     if-eqz v1, :cond_4
 
-    instance-of v2, v1, Lcom/panasonic/avc/cng/model/service/a/c;
+    instance-of v2, v1, Lcom/panasonic/avc/cng/model/service/a/BrowserServiceCamera;
 
     if-eqz v2, :cond_4
 
@@ -158,10 +158,10 @@
     if-eqz v2, :cond_4
 
     .line 179
-    check-cast v1, Lcom/panasonic/avc/cng/model/service/a/c;
+    check-cast v1, Lcom/panasonic/avc/cng/model/service/a/BrowserServiceCamera;
 
     .line 182
-    invoke-virtual {v1, v0}, Lcom/panasonic/avc/cng/model/service/a/c;->a(Lcom/panasonic/avc/cng/model/d;)V
+    invoke-virtual {v1, v0}, Lcom/panasonic/avc/cng/model/service/a/BrowserServiceCamera;->a(Lcom/panasonic/avc/cng/model/d;)V
 
     move-object v2, v3
 
@@ -170,7 +170,7 @@
     if-nez v2, :cond_5
 
     .line 190
-    invoke-virtual {v1, v0, v3, v3}, Lcom/panasonic/avc/cng/model/service/a/c;->a(Lcom/panasonic/avc/cng/model/d;Landroid/os/Handler;Ljava/lang/Runnable;)Landroid/graphics/Bitmap;
+    invoke-virtual {v1, v0, v3, v3}, Lcom/panasonic/avc/cng/model/service/a/BrowserServiceCamera;->a(Lcom/panasonic/avc/cng/model/d;Landroid/os/Handler;Ljava/lang/Runnable;)Landroid/graphics/Bitmap;
 
     move-result-object v2
 
@@ -234,7 +234,7 @@
 
     long-to-int v5, v6
 
-    invoke-virtual {v1, v4, v5}, Lcom/panasonic/avc/cng/core/a/au;->c(Ljava/lang/String;I)Lcom/panasonic/avc/cng/model/c/h;
+    invoke-virtual {v1, v4, v5}, Lcom/panasonic/avc/cng/core/a/VideoEditCommand;->c(Ljava/lang/String;I)Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
     goto :goto_0
 
@@ -277,7 +277,7 @@
     if-nez v2, :cond_4
 
     .line 204
-    invoke-virtual {v1, v0, v3, v3}, Lcom/panasonic/avc/cng/model/service/a/c;->c(Lcom/panasonic/avc/cng/model/d;Landroid/os/Handler;Ljava/lang/Runnable;)Landroid/graphics/Bitmap;
+    invoke-virtual {v1, v0, v3, v3}, Lcom/panasonic/avc/cng/model/service/a/BrowserServiceCamera;->c(Lcom/panasonic/avc/cng/model/d;Landroid/os/Handler;Ljava/lang/Runnable;)Landroid/graphics/Bitmap;
 
     move-result-object v2
 

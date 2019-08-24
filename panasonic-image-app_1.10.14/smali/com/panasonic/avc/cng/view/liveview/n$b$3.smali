@@ -54,9 +54,9 @@
     .line 438
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/n$b$3;->b:Lcom/panasonic/avc/cng/view/liveview/n$b;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/n$b;->a:Lcom/panasonic/avc/cng/view/liveview/n;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/n$b;->a:Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/n;->c(Lcom/panasonic/avc/cng/view/liveview/n;)Lcom/panasonic/avc/cng/view/liveview/n$c;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;->c(Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;)Lcom/panasonic/avc/cng/view/liveview/n$c;
 
     move-result-object v0
 
@@ -65,9 +65,9 @@
     .line 440
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/n$b$3;->b:Lcom/panasonic/avc/cng/view/liveview/n$b;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/n$b;->a:Lcom/panasonic/avc/cng/view/liveview/n;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/n$b;->a:Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/n;->c(Lcom/panasonic/avc/cng/view/liveview/n;)Lcom/panasonic/avc/cng/view/liveview/n$c;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;->c(Lcom/panasonic/avc/cng/view/liveview/LiveViewNoConnectionViewModel;)Lcom/panasonic/avc/cng/view/liveview/n$c;
 
     move-result-object v0
 

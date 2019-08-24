@@ -47,18 +47,18 @@
     .line 1191
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/n$2$1;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/n$2;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/n$2;->c:Lcom/panasonic/avc/cng/view/play/multiphotoframe/n;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/n$2;->c:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameSelectPictureViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/n;->k:Lcom/panasonic/avc/cng/view/play/multiphotoframe/n$b;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameSelectPictureViewModel;->k:Lcom/panasonic/avc/cng/view/play/multiphotoframe/n$b;
 
     if-eqz v0, :cond_0
 
     .line 1193
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/n$2$1;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/n$2;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/n$2;->c:Lcom/panasonic/avc/cng/view/play/multiphotoframe/n;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/n$2;->c:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameSelectPictureViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/n;->k:Lcom/panasonic/avc/cng/view/play/multiphotoframe/n$b;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameSelectPictureViewModel;->k:Lcom/panasonic/avc/cng/view/play/multiphotoframe/n$b;
 
     iget v1, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/n$2$1;->a:I
 

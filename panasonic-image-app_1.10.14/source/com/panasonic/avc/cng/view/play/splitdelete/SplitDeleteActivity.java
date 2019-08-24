@@ -23,13 +23,13 @@ import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.p038a.C1343b;
 import com.panasonic.avc.cng.view.p073b.C2317a.C2323a;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
 import com.panasonic.avc.cng.view.p073b.C2337e;
 import com.panasonic.avc.cng.view.parts.C4213l;
 import com.panasonic.avc.cng.view.parts.C4230p;
 import com.panasonic.avc.cng.view.parts.DisplayBaseView;
 import com.panasonic.avc.cng.view.parts.DisplayBaseView.C3923a;
-import com.panasonic.avc.cng.view.play.splitdelete.C4839c.C4850c;
+import com.panasonic.avc.cng.view.play.splitdelete.ContentPlayerViewModel.C4850c;
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -48,7 +48,7 @@ public class SplitDeleteActivity extends C1350a implements C2323a {
     /* access modifiers changed from: private */
 
     /* renamed from: d */
-    public C4839c f15625d;
+    public ContentPlayerViewModel f15625d;
     /* access modifiers changed from: private */
 
     /* renamed from: e */
@@ -105,7 +105,7 @@ public class SplitDeleteActivity extends C1350a implements C2323a {
         /* access modifiers changed from: private */
 
         /* renamed from: b */
-        public C4839c f15644b = null;
+        public ContentPlayerViewModel f15644b = null;
 
         /* renamed from: c */
         private Timer f15645c = null;
@@ -139,7 +139,7 @@ public class SplitDeleteActivity extends C1350a implements C2323a {
         /* renamed from: k */
         public int f15653k = 100;
 
-        public C4807a(Activity activity, Handler handler, C4839c cVar) {
+        public C4807a(Activity activity, Handler handler, ContentPlayerViewModel cVar) {
             SplitDeleteActivity.this.f15624c = handler;
             this.f15644b = cVar;
             this.f15646d = (SeekBar) activity.findViewById(R.id.SplitDeleteSeekBar);
@@ -377,7 +377,7 @@ public class SplitDeleteActivity extends C1350a implements C2323a {
                     public void run() {
                         if (!SplitDeleteActivity.this.isFinishing()) {
                             SplitDeleteActivity.this.m18705d();
-                            C2331d.m10114a((Activity) SplitDeleteActivity.this, C2328a.ON_MEDIA_PLAYER_ERROR, (Bundle) null);
+                            DialogFactory.m10114a((Activity) SplitDeleteActivity.this, C2328a.ON_MEDIA_PLAYER_ERROR, (Bundle) null);
                         }
                     }
                 });
@@ -391,16 +391,16 @@ public class SplitDeleteActivity extends C1350a implements C2323a {
                     SplitDeleteActivity.this.f15631j.putBoolean("DeviceDisconnectedKey", true);
                     switch (i) {
                         case 2:
-                            C2331d.m10114a((Activity) SplitDeleteActivity.this, C2328a.ON_DISCONNECT_BY_HIGH_TEMP_FINISH, (Bundle) null);
+                            DialogFactory.m10114a((Activity) SplitDeleteActivity.this, C2328a.ON_DISCONNECT_BY_HIGH_TEMP_FINISH, (Bundle) null);
                             break;
                         case 3:
-                            C2331d.m10114a((Activity) SplitDeleteActivity.this, C2328a.ON_DISCONNECT_BATTERY_LOW_FINISH, (Bundle) null);
+                            DialogFactory.m10114a((Activity) SplitDeleteActivity.this, C2328a.ON_DISCONNECT_BATTERY_LOW_FINISH, (Bundle) null);
                             break;
                         default:
-                            C2331d.m10114a((Activity) SplitDeleteActivity.this, C2328a.ON_DISCONNECT_FINISH, (Bundle) null);
+                            DialogFactory.m10114a((Activity) SplitDeleteActivity.this, C2328a.ON_DISCONNECT_FINISH, (Bundle) null);
                             break;
                     }
-                    C2331d.m10114a((Activity) SplitDeleteActivity.this, C2328a.ON_DISCONNECT_FINISH, (Bundle) null);
+                    DialogFactory.m10114a((Activity) SplitDeleteActivity.this, C2328a.ON_DISCONNECT_FINISH, (Bundle) null);
                 }
             });
         }
@@ -414,7 +414,7 @@ public class SplitDeleteActivity extends C1350a implements C2323a {
         /* renamed from: a */
         public void mo11236a(boolean z) {
             SplitDeleteActivity.this.f15639r = false;
-            C2331d.m10114a((Activity) SplitDeleteActivity.this, C2328a.SplitPositionError, (Bundle) null);
+            DialogFactory.m10114a((Activity) SplitDeleteActivity.this, C2328a.SplitPositionError, (Bundle) null);
         }
 
         /* renamed from: f */
@@ -441,7 +441,7 @@ public class SplitDeleteActivity extends C1350a implements C2323a {
             SplitDeleteActivity.this.f15639r = false;
             SplitDeleteActivity.this.f15624c.post(new Runnable() {
                 public void run() {
-                    C2331d.m10114a((Activity) SplitDeleteActivity.this, C2328a.ErrorSplitDelete, (Bundle) null);
+                    DialogFactory.m10114a((Activity) SplitDeleteActivity.this, C2328a.ErrorSplitDelete, (Bundle) null);
                 }
             });
         }
@@ -515,7 +515,7 @@ public class SplitDeleteActivity extends C1350a implements C2323a {
             this.f15622a = extras.getInt("Player_CurrnetIndex_Key", 0);
         }
         this.f15626e = new C4817b();
-        this.f15625d = new C4839c(this.f15623b, this.f15624c);
+        this.f15625d = new ContentPlayerViewModel(this.f15623b, this.f15624c);
         String str = "";
         Bundle extras2 = getIntent().getExtras();
         if (extras2 != null) {
@@ -589,13 +589,13 @@ public class SplitDeleteActivity extends C1350a implements C2323a {
     /* access modifiers changed from: private */
     /* renamed from: c */
     public void m18704c() {
-        C2331d.m10114a((Activity) this, C2328a.ON_NETWORK_JUST_A_MOMENT, (Bundle) null);
+        DialogFactory.m10114a((Activity) this, C2328a.ON_NETWORK_JUST_A_MOMENT, (Bundle) null);
     }
 
     /* access modifiers changed from: private */
     /* renamed from: d */
     public void m18705d() {
-        C2331d.m10100a((Activity) this);
+        DialogFactory.m10100a((Activity) this);
     }
 
     /* access modifiers changed from: private */
@@ -663,7 +663,7 @@ public class SplitDeleteActivity extends C1350a implements C2323a {
     public void onItemClick(C2328a aVar, int i) {
         switch (aVar) {
             case SelectSplitDelete:
-                C2331d.m10100a((Activity) this);
+                DialogFactory.m10100a((Activity) this);
                 this.f15625d.mo11283b(i);
                 return;
             default:

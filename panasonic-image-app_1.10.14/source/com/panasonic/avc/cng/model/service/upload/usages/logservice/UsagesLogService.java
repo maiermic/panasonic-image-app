@@ -10,9 +10,9 @@ import android.os.Parcel;
 import com.panasonic.avc.cng.core.p046c.C1651j;
 import com.panasonic.avc.cng.core.p046c.C1665o;
 import com.panasonic.avc.cng.model.C1712b;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.util.C2266l;
-import com.panasonic.avc.cng.util.C2280s;
+import com.panasonic.avc.cng.util.UsagesLogUtil;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -61,11 +61,11 @@ public class UsagesLogService extends Service {
     }
 
     public int onStartCommand(Intent intent, int i, int i2) {
-        C2261g.m9763a("UsagesLogService", "Service onStartCommand");
-        C2261g.m9762a(getApplicationContext());
-        final String a = C2261g.m9759a();
-        if (!C2266l.m9800a() || !C2280s.m9931a() || !C2280s.m9932b()) {
-            C2261g.m9763a("UsagesLogService", "upload NG!");
+        ImageAppLog.debug("UsagesLogService", "Service onStartCommand");
+        ImageAppLog.m9762a(getApplicationContext());
+        final String a = ImageAppLog.m9759a();
+        if (!C2266l.m9800a() || !UsagesLogUtil.m9931a() || !UsagesLogUtil.m9932b()) {
+            ImageAppLog.debug("UsagesLogService", "upload NG!");
             stopSelf();
         } else {
             new Thread(new Runnable() {
@@ -81,8 +81,8 @@ public class UsagesLogService extends Service {
     /* access modifiers changed from: protected */
     /* renamed from: a */
     public void mo5913a(String str) {
-        String a = C2280s.m9930a(getApplicationContext(), "Auto");
-        C2261g.m9763a("UsagesLogService", "fileName:" + a);
+        String a = UsagesLogUtil.m9930a(getApplicationContext(), "Auto");
+        ImageAppLog.debug("UsagesLogService", "fileName:" + a);
         try {
             OutputStreamWriter outputStreamWriter = new OutputStreamWriter(new FileOutputStream(new File(a)));
             outputStreamWriter.write(str);
@@ -102,7 +102,7 @@ public class UsagesLogService extends Service {
         int i;
         int i2;
         synchronized (this.f6942g) {
-            this.f6939d = C2280s.m9929a(getApplicationContext());
+            this.f6939d = UsagesLogUtil.m9929a(getApplicationContext());
             this.f6940e = "http://lumixclub.panasonic.net";
             this.f6938c = new C1665o();
             this.f6938c.mo4091a(getApplicationContext());
@@ -172,11 +172,11 @@ public class UsagesLogService extends Service {
     /* renamed from: b */
     public synchronized void m9648b(String str) {
         int e = this.f6938c.mo4111e(str);
-        C2261g.m9763a("UsagesLogService", "sts:" + e);
+        ImageAppLog.debug("UsagesLogService", "sts:" + e);
         if (e == 200) {
-            C2261g.m9763a("UsagesLogService", "isDeleteOK:" + C2280s.m9933b(getApplicationContext()));
+            ImageAppLog.debug("UsagesLogService", "isDeleteOK:" + UsagesLogUtil.m9933b(getApplicationContext()));
             C1712b.m6918b(getApplicationContext());
-            C2280s.m9934c(getApplicationContext());
+            UsagesLogUtil.m9934c(getApplicationContext());
         }
     }
 }

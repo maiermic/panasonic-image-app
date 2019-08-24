@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private a:Lcom/panasonic/avc/cng/view/setting/o;
+.field private a:Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;
 
 .field private b:Z
 
@@ -18,7 +18,7 @@
 
 
 # direct methods
-.method public constructor <init>(Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixGHFullscreenActivity;IZLcom/panasonic/avc/cng/view/setting/o;ZZZ)V
+.method public constructor <init>(Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixGHFullscreenActivity;IZLcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;ZZZ)V
     .locals 3
 
     .prologue
@@ -28,7 +28,7 @@
     invoke-direct {p0, p1, p2, p3}, Lcom/panasonic/avc/cng/view/parts/fullscreen/f;-><init>(Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixGHFullscreenActivity;IZ)V
 
     .line 40
-    iput-object p4, p0, Lcom/panasonic/avc/cng/view/parts/fullscreen/g;->a:Lcom/panasonic/avc/cng/view/setting/o;
+    iput-object p4, p0, Lcom/panasonic/avc/cng/view/parts/fullscreen/g;->a:Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;
 
     .line 41
     iput-boolean p5, p0, Lcom/panasonic/avc/cng/view/parts/fullscreen/g;->b:Z
@@ -51,13 +51,13 @@
     if-eqz v0, :cond_0
 
     .line 49
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/fullscreen/g;->a:Lcom/panasonic/avc/cng/view/setting/o;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/fullscreen/g;->a:Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;
 
     const-string v1, "sec"
 
     const-string v2, "0"
 
-    invoke-virtual {v0, v1, v2}, Lcom/panasonic/avc/cng/view/setting/o;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 51
     :cond_0
@@ -91,9 +91,9 @@
     if-eqz v1, :cond_3
 
     .line 243
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/parts/fullscreen/g;->a:Lcom/panasonic/avc/cng/view/setting/o;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/parts/fullscreen/g;->a:Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;
 
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/setting/o;->f()Ljava/lang/String;
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;->f()Ljava/lang/String;
 
     move-result-object v1
 
@@ -819,7 +819,7 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/panasonic/avc/cng/view/setting/o;
+    check-cast v0, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;
 
     invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
 
@@ -849,7 +849,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/setting/o;->a(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;->a(Ljava/lang/String;)V
 
     .line 132
     return-void
@@ -866,7 +866,7 @@
 
     move-result-object v0
 
-    invoke-static {v0, p1}, Lcom/panasonic/avc/cng/model/service/z;->a(Landroid/content/Context;Lcom/panasonic/avc/cng/model/f;)Lcom/panasonic/avc/cng/model/service/b;
+    invoke-static {v0, p1}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->a(Landroid/content/Context;Lcom/panasonic/avc/cng/model/f;)Lcom/panasonic/avc/cng/model/service/b;
 
     move-result-object v0
 
@@ -1381,16 +1381,16 @@
     or-long/2addr v2, v4
 
     .line 78
-    iget-object v4, p0, Lcom/panasonic/avc/cng/view/parts/fullscreen/g;->a:Lcom/panasonic/avc/cng/view/setting/o;
+    iget-object v4, p0, Lcom/panasonic/avc/cng/view/parts/fullscreen/g;->a:Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;
 
-    invoke-virtual {v4}, Lcom/panasonic/avc/cng/view/setting/o;->h()[Ljava/lang/String;
+    invoke-virtual {v4}, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;->h()[Ljava/lang/String;
 
     move-result-object v4
 
     .line 79
-    iget-object v5, p0, Lcom/panasonic/avc/cng/view/parts/fullscreen/g;->a:Lcom/panasonic/avc/cng/view/setting/o;
+    iget-object v5, p0, Lcom/panasonic/avc/cng/view/parts/fullscreen/g;->a:Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;
 
-    invoke-virtual {v5}, Lcom/panasonic/avc/cng/view/setting/o;->g()[Ljava/lang/String;
+    invoke-virtual {v5}, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;->g()[Ljava/lang/String;
 
     move-result-object v5
 
@@ -1452,11 +1452,11 @@
 
     .line 93
     :cond_3
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v2
 
-    invoke-virtual {v2}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v2}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v4
 
@@ -1524,9 +1524,9 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/panasonic/avc/cng/view/setting/o;
+    check-cast v0, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/o;->g()[Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;->g()[Ljava/lang/String;
 
     move-result-object v0
 
@@ -1537,9 +1537,9 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/panasonic/avc/cng/view/setting/o;
+    check-cast v0, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/setting/o;->d(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;->d(Ljava/lang/String;)V
 
     .line 127
     :goto_0
@@ -1567,7 +1567,7 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/panasonic/avc/cng/view/setting/o;
+    check-cast v0, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;
 
     const-string v2, "sec"
 
@@ -1575,7 +1575,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v2, v1}, Lcom/panasonic/avc/cng/view/setting/o;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, v2, v1}, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerFandSSViewModel;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 

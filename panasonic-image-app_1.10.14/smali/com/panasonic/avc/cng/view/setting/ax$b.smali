@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/panasonic/avc/cng/view/setting/ax;
+    value = Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/panasonic/avc/cng/view/setting/ax;
+.field final synthetic a:Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;
 
 .field private b:I
 
@@ -26,24 +26,24 @@
 
 
 # direct methods
-.method private constructor <init>(Lcom/panasonic/avc/cng/view/setting/ax;)V
+.method private constructor <init>(Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;)V
     .locals 0
 
     .prologue
     .line 697
-    iput-object p1, p0, Lcom/panasonic/avc/cng/view/setting/ax$b;->a:Lcom/panasonic/avc/cng/view/setting/ax;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/view/setting/ax$b;->a:Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/panasonic/avc/cng/view/setting/ax;Lcom/panasonic/avc/cng/view/setting/ax$1;)V
+.method synthetic constructor <init>(Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;Lcom/panasonic/avc/cng/view/setting/ax$1;)V
     .locals 0
 
     .prologue
     .line 697
-    invoke-direct {p0, p1}, Lcom/panasonic/avc/cng/view/setting/ax$b;-><init>(Lcom/panasonic/avc/cng/view/setting/ax;)V
+    invoke-direct {p0, p1}, Lcom/panasonic/avc/cng/view/setting/ax$b;-><init>(Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;)V
 
     return-void
 .end method
@@ -75,9 +75,9 @@
 
     .prologue
     .line 798
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ax$b;->a:Lcom/panasonic/avc/cng/view/setting/ax;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ax$b;->a:Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/ax;->r(Lcom/panasonic/avc/cng/view/setting/ax;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;->r(Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;)Landroid/os/Handler;
 
     move-result-object v0
 
@@ -89,9 +89,9 @@
 
     .line 803
     :cond_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ax$b;->a:Lcom/panasonic/avc/cng/view/setting/ax;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ax$b;->a:Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/ax;->s(Lcom/panasonic/avc/cng/view/setting/ax;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;->s(Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;)Landroid/os/Handler;
 
     move-result-object v0
 
@@ -125,7 +125,7 @@
     return-void
 .end method
 
-.method public a(Lcom/panasonic/avc/cng/model/c/e;)V
+.method public a(Lcom/panasonic/avc/cng/model/c/CameraStatus;)V
     .locals 4
 
     .prologue
@@ -134,17 +134,17 @@
 
     const-string v1, "OnGetState"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 711
-    invoke-static {p1}, Lcom/panasonic/avc/cng/model/c/e;->a(Lcom/panasonic/avc/cng/model/c/e;)Z
+    invoke-static {p1}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->a(Lcom/panasonic/avc/cng/model/c/CameraStatus;)Z
 
     move-result v0
 
     if-eqz v0, :cond_3
 
     .line 714
-    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/e;->C()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->C()Ljava/lang/String;
 
     move-result-object v0
 
@@ -158,9 +158,9 @@
     if-eqz v1, :cond_0
 
     .line 717
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/ax$b;->a:Lcom/panasonic/avc/cng/view/setting/ax;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/ax$b;->a:Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;
 
-    invoke-static {v1}, Lcom/panasonic/avc/cng/view/setting/ax;->k(Lcom/panasonic/avc/cng/view/setting/ax;)Landroid/os/Handler;
+    invoke-static {v1}, Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;->k(Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;)Landroid/os/Handler;
 
     move-result-object v1
 
@@ -172,9 +172,9 @@
 
     .line 724
     :cond_0
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/ax$b;->a:Lcom/panasonic/avc/cng/view/setting/ax;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/ax$b;->a:Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;
 
-    invoke-static {v1}, Lcom/panasonic/avc/cng/view/setting/ax;->l(Lcom/panasonic/avc/cng/view/setting/ax;)Landroid/content/Context;
+    invoke-static {v1}, Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;->l(Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;)Landroid/content/Context;
 
     move-result-object v1
 
@@ -219,9 +219,9 @@
     invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->commit()Z
 
     .line 736
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ax$b;->a:Lcom/panasonic/avc/cng/view/setting/ax;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ax$b;->a:Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/ax;->m(Lcom/panasonic/avc/cng/view/setting/ax;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;->m(Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;)Landroid/os/Handler;
 
     move-result-object v0
 
@@ -233,23 +233,23 @@
 
     .line 746
     :cond_1
-    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/e;->a()I
+    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->a()I
 
     move-result v0
 
     iput v0, p0, Lcom/panasonic/avc/cng/view/setting/ax$b;->b:I
 
     .line 747
-    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/e;->b()I
+    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->b()I
 
     move-result v0
 
     iput v0, p0, Lcom/panasonic/avc/cng/view/setting/ax$b;->c:I
 
     .line 750
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ax$b;->a:Lcom/panasonic/avc/cng/view/setting/ax;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ax$b;->a:Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/ax;->n(Lcom/panasonic/avc/cng/view/setting/ax;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;->n(Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;)Landroid/os/Handler;
 
     move-result-object v0
 
@@ -261,9 +261,9 @@
 
     .line 756
     :cond_2
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ax$b;->a:Lcom/panasonic/avc/cng/view/setting/ax;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ax$b;->a:Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/ax;->o(Lcom/panasonic/avc/cng/view/setting/ax;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;->o(Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;)Landroid/os/Handler;
 
     move-result-object v0
 
@@ -277,40 +277,40 @@
 
     .line 774
     :cond_3
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/model/g;->a(Lcom/panasonic/avc/cng/model/f;)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/model/DeviceManager;->a(Lcom/panasonic/avc/cng/model/f;)V
 
     .line 776
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ax$b;->a:Lcom/panasonic/avc/cng/view/setting/ax;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ax$b;->a:Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/ax;->a(Lcom/panasonic/avc/cng/view/setting/ax;)Lcom/panasonic/avc/cng/view/setting/ax$c;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;->a(Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;)Lcom/panasonic/avc/cng/view/setting/ax$c;
 
     move-result-object v0
 
     if-eqz v0, :cond_4
 
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ax$b;->a:Lcom/panasonic/avc/cng/view/setting/ax;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ax$b;->a:Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/ax;->p(Lcom/panasonic/avc/cng/view/setting/ax;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;->p(Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;)Landroid/os/Handler;
 
     move-result-object v0
 
     if-eqz v0, :cond_4
 
     .line 778
-    invoke-static {p1}, Lcom/panasonic/avc/cng/model/c/e;->b(Lcom/panasonic/avc/cng/model/c/e;)I
+    invoke-static {p1}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->b(Lcom/panasonic/avc/cng/model/c/CameraStatus;)I
 
     move-result v0
 
     .line 780
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/ax$b;->a:Lcom/panasonic/avc/cng/view/setting/ax;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/ax$b;->a:Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;
 
-    invoke-static {v1}, Lcom/panasonic/avc/cng/view/setting/ax;->q(Lcom/panasonic/avc/cng/view/setting/ax;)Landroid/os/Handler;
+    invoke-static {v1}, Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;->q(Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;)Landroid/os/Handler;
 
     move-result-object v1
 
@@ -324,9 +324,9 @@
 
     .line 788
     :cond_4
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ax$b;->a:Lcom/panasonic/avc/cng/view/setting/ax;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ax$b;->a:Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/ax;->m()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/StopMotionViewModel;->m()V
 
     goto :goto_0
 .end method

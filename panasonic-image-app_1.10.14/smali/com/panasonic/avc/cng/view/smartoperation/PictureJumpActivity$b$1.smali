@@ -48,9 +48,9 @@
 
     iget-object v1, v1, Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpActivity$b;->a:Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpActivity;
 
-    iget-object v1, v1, Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpActivity;->d:Lcom/panasonic/avc/cng/view/smartoperation/i;
+    iget-object v1, v1, Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpActivity;->d:Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;
 
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/smartoperation/i;->g()Ljava/util/ArrayList;
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;->g()Ljava/util/ArrayList;
 
     move-result-object v1
 
@@ -61,9 +61,9 @@
 
     iget-object v0, v0, Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpActivity$b;->a:Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpActivity;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpActivity;->d:Lcom/panasonic/avc/cng/view/smartoperation/i;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpActivity;->d:Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/smartoperation/i;->g()Ljava/util/ArrayList;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;->g()Ljava/util/ArrayList;
 
     move-result-object v0
 
@@ -83,7 +83,7 @@
 
     const-string v4, "0"
 
-    invoke-static {v1, v2, v3, v4}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;ILjava/lang/CharSequence;)V
+    invoke-static {v1, v2, v3, v4}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;ILjava/lang/CharSequence;)V
 
     .line 457
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpActivity$b$1;->a:Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpActivity$b;
@@ -96,7 +96,7 @@
 
     const-string v4, "1"
 
-    invoke-static {v1, v2, v3, v4}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;ILjava/lang/CharSequence;)V
+    invoke-static {v1, v2, v3, v4}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;ILjava/lang/CharSequence;)V
 
     .line 458
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpActivity$b$1;->a:Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpActivity$b;
@@ -111,7 +111,7 @@
 
     move-result-object v0
 
-    invoke-static {v1, v2, v3, v0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;ILjava/lang/CharSequence;)V
+    invoke-static {v1, v2, v3, v0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;ILjava/lang/CharSequence;)V
 
     .line 459
     return-void

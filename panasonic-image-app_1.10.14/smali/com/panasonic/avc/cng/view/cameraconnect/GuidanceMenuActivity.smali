@@ -1,5 +1,5 @@
 .class public Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;
-.super Lcom/panasonic/avc/cng/application/b;
+.super Lcom/panasonic/avc/cng/application/NfcSupportActivity;
 .source "SourceFile"
 
 # interfaces
@@ -236,7 +236,7 @@
 
 .field private _topViewPager:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuTopViewPager;
 
-.field private _viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+.field private _viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
 .field private _viewPager:Landroid/support/v4/view/ViewPager;
 
@@ -278,7 +278,7 @@
     const/4 v2, 0x0
 
     .line 144
-    invoke-direct {p0}, Lcom/panasonic/avc/cng/application/b;-><init>()V
+    invoke-direct {p0}, Lcom/panasonic/avc/cng/application/NfcSupportActivity;-><init>()V
 
     .line 146
     new-instance v0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity$1;
@@ -546,14 +546,14 @@
     const/4 v1, 0x0
 
     .line 4142
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
-    invoke-virtual {v0, v1, v1}, Lcom/panasonic/avc/cng/application/c;->a(ZZ)V
+    invoke-virtual {v0, v1, v1}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->a(ZZ)V
 
     .line 4145
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/application/c;->m()Ljava/lang/Boolean;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->m()Ljava/lang/Boolean;
 
     move-result-object v0
 
@@ -668,18 +668,18 @@
     if-eqz v0, :cond_0
 
     .line 4271
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
     .line 4274
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
-    invoke-virtual {v1, v0}, Lcom/panasonic/avc/cng/view/cameraconnect/i;->a(Lcom/panasonic/avc/cng/model/f;)Lcom/panasonic/avc/cng/view/cameraconnect/i$c;
+    invoke-virtual {v1, v0}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->a(Lcom/panasonic/avc/cng/model/f;)Lcom/panasonic/avc/cng/view/cameraconnect/i$c;
 
     move-result-object v1
 
@@ -702,16 +702,16 @@
 
     .line 4557
     :pswitch_3
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
     if-eqz v0, :cond_1
 
     .line 4558
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_cameraMac:Ljava/lang/String;
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/application/c;->c(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->c(Ljava/lang/String;)V
 
     .line 4562
     :cond_1
@@ -943,7 +943,7 @@
 
     const-string v6, "NfcSettingList == null"
 
-    invoke-static {v0, v6}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v6}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     :cond_4
     move v0, v1
@@ -1039,12 +1039,12 @@
     return-void
 .end method
 
-.method static synthetic access$10000(Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;)Lcom/panasonic/avc/cng/application/c;
+.method static synthetic access$10000(Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;)Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
     .locals 1
 
     .prologue
     .line 144
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
     return-object v0
 .end method
@@ -1069,22 +1069,22 @@
     return-void
 .end method
 
-.method static synthetic access$10300(Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;)Lcom/panasonic/avc/cng/application/c;
+.method static synthetic access$10300(Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;)Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
     .locals 1
 
     .prologue
     .line 144
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
     return-object v0
 .end method
 
-.method static synthetic access$10400(Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;)Lcom/panasonic/avc/cng/application/c;
+.method static synthetic access$10400(Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;)Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
     .locals 1
 
     .prologue
     .line 144
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
     return-object v0
 .end method
@@ -1279,22 +1279,22 @@
     return-object v0
 .end method
 
-.method static synthetic access$12200(Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;)Lcom/panasonic/avc/cng/application/c;
+.method static synthetic access$12200(Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;)Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
     .locals 1
 
     .prologue
     .line 144
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
     return-object v0
 .end method
 
-.method static synthetic access$12300(Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;)Lcom/panasonic/avc/cng/application/c;
+.method static synthetic access$12300(Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;)Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
     .locals 1
 
     .prologue
     .line 144
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
     return-object v0
 .end method
@@ -1553,12 +1553,12 @@
     return-void
 .end method
 
-.method static synthetic access$14600(Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;)Lcom/panasonic/avc/cng/application/c;
+.method static synthetic access$14600(Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;)Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
     .locals 1
 
     .prologue
     .line 144
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
     return-object v0
 .end method
@@ -1573,12 +1573,12 @@
     return p1
 .end method
 
-.method static synthetic access$14800(Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;)Lcom/panasonic/avc/cng/application/c;
+.method static synthetic access$14800(Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;)Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
     .locals 1
 
     .prologue
     .line 144
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
     return-object v0
 .end method
@@ -1633,22 +1633,22 @@
     return-void
 .end method
 
-.method static synthetic access$15300(Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;)Lcom/panasonic/avc/cng/application/c;
+.method static synthetic access$15300(Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;)Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
     .locals 1
 
     .prologue
     .line 144
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
     return-object v0
 .end method
 
-.method static synthetic access$15400(Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;)Lcom/panasonic/avc/cng/application/c;
+.method static synthetic access$15400(Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;)Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
     .locals 1
 
     .prologue
     .line 144
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
     return-object v0
 .end method
@@ -1673,22 +1673,22 @@
     return-void
 .end method
 
-.method static synthetic access$15700(Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;)Lcom/panasonic/avc/cng/application/c;
+.method static synthetic access$15700(Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;)Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
     .locals 1
 
     .prologue
     .line 144
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
     return-object v0
 .end method
 
-.method static synthetic access$15800(Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;)Lcom/panasonic/avc/cng/application/c;
+.method static synthetic access$15800(Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;)Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
     .locals 1
 
     .prologue
     .line 144
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
     return-object v0
 .end method
@@ -1723,22 +1723,22 @@
     return-void
 .end method
 
-.method static synthetic access$16100(Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;)Lcom/panasonic/avc/cng/application/c;
+.method static synthetic access$16100(Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;)Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
     .locals 1
 
     .prologue
     .line 144
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
     return-object v0
 .end method
 
-.method static synthetic access$16200(Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;)Lcom/panasonic/avc/cng/application/c;
+.method static synthetic access$16200(Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;)Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
     .locals 1
 
     .prologue
     .line 144
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
     return-object v0
 .end method
@@ -1763,22 +1763,22 @@
     return-void
 .end method
 
-.method static synthetic access$16500(Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;)Lcom/panasonic/avc/cng/application/c;
+.method static synthetic access$16500(Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;)Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
     .locals 1
 
     .prologue
     .line 144
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
     return-object v0
 .end method
 
-.method static synthetic access$16600(Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;)Lcom/panasonic/avc/cng/application/c;
+.method static synthetic access$16600(Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;)Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
     .locals 1
 
     .prologue
     .line 144
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
     return-object v0
 .end method
@@ -1895,22 +1895,22 @@
     return-void
 .end method
 
-.method static synthetic access$17500(Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;)Lcom/panasonic/avc/cng/application/c;
+.method static synthetic access$17500(Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;)Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
     .locals 1
 
     .prologue
     .line 144
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
     return-object v0
 .end method
 
-.method static synthetic access$17600(Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;)Lcom/panasonic/avc/cng/application/c;
+.method static synthetic access$17600(Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;)Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
     .locals 1
 
     .prologue
     .line 144
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
     return-object v0
 .end method
@@ -3683,22 +3683,22 @@
     return-object v0
 .end method
 
-.method static synthetic access$4400(Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;)Lcom/panasonic/avc/cng/application/c;
+.method static synthetic access$4400(Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;)Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
     .locals 1
 
     .prologue
     .line 144
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
     return-object v0
 .end method
 
-.method static synthetic access$4500(Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;)Lcom/panasonic/avc/cng/application/c;
+.method static synthetic access$4500(Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;)Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
     .locals 1
 
     .prologue
     .line 144
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
     return-object v0
 .end method
@@ -3873,12 +3873,12 @@
     return-object v0
 .end method
 
-.method static synthetic access$600(Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;)Lcom/panasonic/avc/cng/view/cameraconnect/i;
+.method static synthetic access$600(Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;)Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
     .locals 1
 
     .prologue
     .line 144
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
     return-object v0
 .end method
@@ -4273,22 +4273,22 @@
     return-object v0
 .end method
 
-.method static synthetic access$9000(Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;)Lcom/panasonic/avc/cng/application/c;
+.method static synthetic access$9000(Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;)Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
     .locals 1
 
     .prologue
     .line 144
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
     return-object v0
 .end method
 
-.method static synthetic access$9100(Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;)Lcom/panasonic/avc/cng/application/c;
+.method static synthetic access$9100(Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;)Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
     .locals 1
 
     .prologue
     .line 144
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
     return-object v0
 .end method
@@ -4373,12 +4373,12 @@
     return-object v0
 .end method
 
-.method static synthetic access$9900(Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;)Lcom/panasonic/avc/cng/application/c;
+.method static synthetic access$9900(Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;)Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
     .locals 1
 
     .prologue
     .line 144
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
     return-object v0
 .end method
@@ -4501,14 +4501,14 @@
     :cond_3
     :goto_1
     :pswitch_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
     if-eqz v0, :cond_0
 
     .line 2260
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_context:Landroid/content/Context;
 
-    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/model/service/z;->a(Landroid/content/Context;Z)Lcom/panasonic/avc/cng/model/service/e;
+    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->a(Landroid/content/Context;Z)Lcom/panasonic/avc/cng/model/service/e;
 
     move-result-object v0
 
@@ -4516,7 +4516,7 @@
     if-eqz v0, :cond_0
 
     .line 2262
-    invoke-interface {v0}, Lcom/panasonic/avc/cng/model/service/e;->i()Lcom/panasonic/avc/cng/model/c/e;
+    invoke-interface {v0}, Lcom/panasonic/avc/cng/model/service/e;->i()Lcom/panasonic/avc/cng/model/c/CameraStatus;
 
     move-result-object v0
 
@@ -4524,35 +4524,35 @@
     if-eqz v0, :cond_0
 
     .line 2267
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/e;->J()Z
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->J()Z
 
     move-result v1
 
     if-nez v1, :cond_4
 
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/cameraconnect/i;->q()Z
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->q()Z
 
     move-result v1
 
     if-nez v1, :cond_4
 
     .line 2268
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/e;->af()Z
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->af()Z
 
     move-result v1
 
     if-nez v1, :cond_4
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/e;->ae()Z
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->ae()Z
 
     move-result v1
 
     if-nez v1, :cond_4
 
     .line 2269
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/e;->ag()Z
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->ag()Z
 
     move-result v0
 
@@ -4566,16 +4566,16 @@
 
     .line 2250
     :pswitch_1
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
     if-eqz v0, :cond_3
 
     .line 2251
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_cameraMac:Ljava/lang/String;
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/application/c;->c(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->c(Ljava/lang/String;)V
 
     goto :goto_1
 
@@ -4587,7 +4587,7 @@
 
     sget-object v1, Lcom/panasonic/avc/cng/view/b/b$a;->bh:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/b/d;->b(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;)Z
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->b(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;)Z
 
     move-result v0
 
@@ -4609,9 +4609,9 @@
 
     .line 2284
     :cond_6
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
-    invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/view/cameraconnect/i;->h(Z)V
+    invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->h(Z)V
 
     goto :goto_0
 
@@ -4693,7 +4693,7 @@
 
     const-string v1, "(NFC)now connecting..."
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 4223
     :goto_0
@@ -4738,7 +4738,7 @@
     if-nez p4, :cond_3
 
     .line 4219
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
     const/4 v2, 0x2
 
@@ -4748,15 +4748,15 @@
 
     const/4 v5, 0x0
 
-    invoke-virtual/range {v0 .. v5}, Lcom/panasonic/avc/cng/view/cameraconnect/i;->a(ZIILjava/lang/String;Z)V
+    invoke-virtual/range {v0 .. v5}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->a(ZIILjava/lang/String;Z)V
 
     goto :goto_0
 
     .line 4221
     :cond_3
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
-    invoke-virtual {v0, p2, p3}, Lcom/panasonic/avc/cng/view/cameraconnect/i;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, p2, p3}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 .end method
@@ -4895,7 +4895,7 @@
 
     const-string v1, "\uff5e\u518d\u63a5\u7d9a\uff5e"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 2305
     new-instance v0, Ljava/lang/Thread;
@@ -4935,7 +4935,7 @@
     const/4 v6, 0x1
 
     .line 5326
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
     if-nez v0, :cond_1
 
@@ -4944,7 +4944,7 @@
 
     const-string v1, "ViewModel is null!!"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->b(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->warning(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 5432
     :cond_0
@@ -4985,9 +4985,9 @@
     move-result v0
 
     .line 5337
-    iget-object v4, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v4, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
-    iget-object v4, v4, Lcom/panasonic/avc/cng/view/cameraconnect/i;->m:Lcom/panasonic/avc/cng/a/c;
+    iget-object v4, v4, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->m:Lcom/panasonic/avc/cng/a/c;
 
     invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -4996,9 +4996,9 @@
     invoke-virtual {v4, v5}, Lcom/panasonic/avc/cng/a/c;->a(Ljava/lang/Object;)V
 
     .line 5338
-    iget-object v4, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v4, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
-    iget-object v4, v4, Lcom/panasonic/avc/cng/view/cameraconnect/i;->n:Lcom/panasonic/avc/cng/a/c;
+    iget-object v4, v4, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->n:Lcom/panasonic/avc/cng/a/c;
 
     invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -5010,9 +5010,9 @@
     if-eqz p1, :cond_3
 
     .line 5342
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/cameraconnect/i;->h:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->h:Lcom/panasonic/avc/cng/a/c;
 
     invoke-static {v6}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -5021,9 +5021,9 @@
     invoke-virtual {v0, v4}, Lcom/panasonic/avc/cng/a/c;->a(Ljava/lang/Object;)V
 
     .line 5343
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/cameraconnect/i;->i:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->i:Lcom/panasonic/avc/cng/a/c;
 
     invoke-static {v6}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -5032,9 +5032,9 @@
     invoke-virtual {v0, v4}, Lcom/panasonic/avc/cng/a/c;->a(Ljava/lang/Object;)V
 
     .line 5344
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/cameraconnect/i;->k:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->k:Lcom/panasonic/avc/cng/a/c;
 
     invoke-static {v6}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -5043,9 +5043,9 @@
     invoke-virtual {v0, v4}, Lcom/panasonic/avc/cng/a/c;->a(Ljava/lang/Object;)V
 
     .line 5345
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/cameraconnect/i;->l:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->l:Lcom/panasonic/avc/cng/a/c;
 
     invoke-static {v6}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -5054,11 +5054,11 @@
     invoke-virtual {v0, v4}, Lcom/panasonic/avc/cng/a/c;->a(Ljava/lang/Object;)V
 
     .line 5347
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
@@ -5175,9 +5175,9 @@
 
     .line 5365
     :cond_4
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/cameraconnect/i;->h:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->h:Lcom/panasonic/avc/cng/a/c;
 
     invoke-static {v6}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -5186,9 +5186,9 @@
     invoke-virtual {v0, v4}, Lcom/panasonic/avc/cng/a/c;->a(Ljava/lang/Object;)V
 
     .line 5366
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/cameraconnect/i;->i:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->i:Lcom/panasonic/avc/cng/a/c;
 
     invoke-static {v6}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -5197,9 +5197,9 @@
     invoke-virtual {v0, v4}, Lcom/panasonic/avc/cng/a/c;->a(Ljava/lang/Object;)V
 
     .line 5367
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/cameraconnect/i;->k:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->k:Lcom/panasonic/avc/cng/a/c;
 
     invoke-static {v7}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -5208,9 +5208,9 @@
     invoke-virtual {v0, v4}, Lcom/panasonic/avc/cng/a/c;->a(Ljava/lang/Object;)V
 
     .line 5368
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/cameraconnect/i;->l:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->l:Lcom/panasonic/avc/cng/a/c;
 
     invoke-static {v7}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -5243,9 +5243,9 @@
 
     .line 5376
     :cond_5
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/cameraconnect/i;->k:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->k:Lcom/panasonic/avc/cng/a/c;
 
     invoke-static {v7}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -5254,9 +5254,9 @@
     invoke-virtual {v0, v4}, Lcom/panasonic/avc/cng/a/c;->a(Ljava/lang/Object;)V
 
     .line 5377
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/cameraconnect/i;->l:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->l:Lcom/panasonic/avc/cng/a/c;
 
     invoke-static {v7}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -5297,9 +5297,9 @@
     if-eqz v0, :cond_8
 
     .line 5379
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/cameraconnect/i;->g:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->g:Lcom/panasonic/avc/cng/a/c;
 
     invoke-virtual {v0}, Lcom/panasonic/avc/cng/a/c;->b()Ljava/lang/Object;
 
@@ -5324,9 +5324,9 @@
     if-eqz v0, :cond_6
 
     .line 5382
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/cameraconnect/i;->k:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->k:Lcom/panasonic/avc/cng/a/c;
 
     invoke-static {v6}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -5335,9 +5335,9 @@
     invoke-virtual {v0, v4}, Lcom/panasonic/avc/cng/a/c;->a(Ljava/lang/Object;)V
 
     .line 5383
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/cameraconnect/i;->l:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->l:Lcom/panasonic/avc/cng/a/c;
 
     invoke-static {v6}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -5435,9 +5435,9 @@
     if-eqz v0, :cond_6
 
     .line 5397
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/cameraconnect/i;->k:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->k:Lcom/panasonic/avc/cng/a/c;
 
     invoke-static {v6}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -5446,9 +5446,9 @@
     invoke-virtual {v0, v4}, Lcom/panasonic/avc/cng/a/c;->a(Ljava/lang/Object;)V
 
     .line 5398
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/cameraconnect/i;->l:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->l:Lcom/panasonic/avc/cng/a/c;
 
     invoke-static {v6}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -5471,9 +5471,9 @@
     if-eqz v0, :cond_6
 
     .line 5403
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/cameraconnect/i;->k:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->k:Lcom/panasonic/avc/cng/a/c;
 
     invoke-static {v7}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -5482,9 +5482,9 @@
     invoke-virtual {v0, v4}, Lcom/panasonic/avc/cng/a/c;->a(Ljava/lang/Object;)V
 
     .line 5404
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/cameraconnect/i;->l:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->l:Lcom/panasonic/avc/cng/a/c;
 
     invoke-static {v7}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -5506,9 +5506,9 @@
 
     if-eqz v0, :cond_c
 
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/cameraconnect/i;->k:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->k:Lcom/panasonic/avc/cng/a/c;
 
     invoke-virtual {v0}, Lcom/panasonic/avc/cng/a/c;->b()Ljava/lang/Object;
 
@@ -5536,9 +5536,9 @@
 
     .line 5421
     :cond_c
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/cameraconnect/i;->h:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->h:Lcom/panasonic/avc/cng/a/c;
 
     invoke-static {v6}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -5547,9 +5547,9 @@
     invoke-virtual {v0, v4}, Lcom/panasonic/avc/cng/a/c;->a(Ljava/lang/Object;)V
 
     .line 5422
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/cameraconnect/i;->i:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->i:Lcom/panasonic/avc/cng/a/c;
 
     invoke-static {v6}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -5558,9 +5558,9 @@
     invoke-virtual {v0, v4}, Lcom/panasonic/avc/cng/a/c;->a(Ljava/lang/Object;)V
 
     .line 5423
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/cameraconnect/i;->k:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->k:Lcom/panasonic/avc/cng/a/c;
 
     invoke-static {v7}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -5569,9 +5569,9 @@
     invoke-virtual {v0, v4}, Lcom/panasonic/avc/cng/a/c;->a(Ljava/lang/Object;)V
 
     .line 5424
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/cameraconnect/i;->l:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->l:Lcom/panasonic/avc/cng/a/c;
 
     invoke-static {v7}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -5723,9 +5723,9 @@
     if-nez v0, :cond_0
 
     .line 4117
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/cameraconnect/i;->m()Ljava/util/List;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->m()Ljava/util/List;
 
     move-result-object v0
 
@@ -5788,9 +5788,9 @@
     invoke-virtual {p0, v0}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->SetListener(Lcom/panasonic/avc/cng/application/b$a;)V
 
     .line 4164
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/application/c;->a(Z)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->a(Z)V
 
     .line 4166
     iput-boolean v1, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_firstTouch:Z
@@ -5804,16 +5804,16 @@
 
     invoke-direct {v2, p0}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity$13;-><init>(Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;)V
 
-    invoke-static {p0, v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;Lcom/panasonic/avc/cng/view/b/a$c;)V
+    invoke-static {p0, v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;Lcom/panasonic/avc/cng/view/b/a$c;)V
 
     .line 4183
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v2
 
-    invoke-virtual {v0, v2, v3}, Lcom/panasonic/avc/cng/application/c;->b(J)V
+    invoke-virtual {v0, v2, v3}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->b(J)V
 
     .line 4184
     return-void
@@ -6040,7 +6040,7 @@
     .line 8040
     sget-object v0, Lcom/panasonic/avc/cng/view/b/b$a;->gU:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {p0, v0, v1}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {p0, v0, v1}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     .line 8044
     :goto_2
@@ -6076,7 +6076,7 @@
     :cond_2
     sget-object v0, Lcom/panasonic/avc/cng/view/b/b$a;->gT:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {p0, v0, v1}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {p0, v0, v1}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     goto :goto_2
 
@@ -6173,19 +6173,19 @@
 
     .prologue
     .line 5693
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
     if-eqz v0, :cond_0
 
     .line 5695
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/cameraconnect/i;->o()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->o()V
 
     .line 5698
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/cameraconnect/i;->l()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->l()V
 
     .line 5700
     :cond_0
@@ -6201,7 +6201,7 @@
     const/4 v3, 0x0
 
     .line 4226
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
     if-nez v0, :cond_0
 
@@ -6218,25 +6218,25 @@
 
     .line 4231
     :cond_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/cameraconnect/i;->r()Z
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->r()Z
 
     move-result v0
 
     if-eqz v0, :cond_5
 
     .line 4232
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
-    invoke-virtual {v0, p1}, Lcom/panasonic/avc/cng/view/cameraconnect/i;->b(Lcom/panasonic/avc/cng/model/f;)Lcom/panasonic/avc/cng/model/n;
+    invoke-virtual {v0, p1}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->b(Lcom/panasonic/avc/cng/model/f;)Lcom/panasonic/avc/cng/model/n;
 
     move-result-object v0
 
     .line 4233
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/cameraconnect/i;->s()Lcom/panasonic/avc/cng/model/n;
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->s()Lcom/panasonic/avc/cng/model/n;
 
     move-result-object v1
 
@@ -6371,11 +6371,11 @@
     check-cast v0, Landroid/widget/ImageView;
 
     .line 5068
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v5
 
@@ -6383,13 +6383,13 @@
     if-eqz v5, :cond_5
 
     .line 5071
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
     if-eqz v1, :cond_3
 
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
-    iget-object v1, v1, Lcom/panasonic/avc/cng/view/cameraconnect/i;->g:Lcom/panasonic/avc/cng/a/c;
+    iget-object v1, v1, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->g:Lcom/panasonic/avc/cng/a/c;
 
     invoke-virtual {v1}, Lcom/panasonic/avc/cng/a/c;->b()Ljava/lang/Object;
 
@@ -6398,9 +6398,9 @@
     if-eqz v1, :cond_3
 
     .line 5073
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
-    iget-object v1, v1, Lcom/panasonic/avc/cng/view/cameraconnect/i;->g:Lcom/panasonic/avc/cng/a/c;
+    iget-object v1, v1, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->g:Lcom/panasonic/avc/cng/a/c;
 
     invoke-virtual {v1}, Lcom/panasonic/avc/cng/a/c;->b()Ljava/lang/Object;
 
@@ -6653,7 +6653,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 4880
     const-string v0, "GuidanceMenuActivity"
@@ -6678,7 +6678,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 4883
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_dispMode:Lcom/panasonic/avc/cng/view/cameraconnect/f;
@@ -6848,12 +6848,12 @@
 
 
 # virtual methods
-.method public DmsBase_OnGetState(Lcom/panasonic/avc/cng/model/c/e;ZI)V
+.method public DmsBase_OnGetState(Lcom/panasonic/avc/cng/model/c/CameraStatus;ZI)V
     .locals 2
 
     .prologue
     .line 5783
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
     if-eqz v0, :cond_0
 
@@ -6871,9 +6871,9 @@
     if-eqz p2, :cond_2
 
     .line 5788
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
-    invoke-virtual {v0, p3}, Lcom/panasonic/avc/cng/view/cameraconnect/i;->a(I)Z
+    invoke-virtual {v0, p3}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->a(I)Z
 
     move-result v0
 
@@ -6884,7 +6884,7 @@
 
     new-instance v1, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity$25;
 
-    invoke-direct {v1, p0, p1}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity$25;-><init>(Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;Lcom/panasonic/avc/cng/model/c/e;)V
+    invoke-direct {v1, p0, p1}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity$25;-><init>(Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;Lcom/panasonic/avc/cng/model/c/CameraStatus;)V
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
@@ -6892,9 +6892,9 @@
 
     .line 5825
     :cond_2
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
-    invoke-virtual {v0, p1}, Lcom/panasonic/avc/cng/view/cameraconnect/i;->a(Lcom/panasonic/avc/cng/model/c/e;)V
+    invoke-virtual {v0, p1}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->a(Lcom/panasonic/avc/cng/model/c/CameraStatus;)V
 
     goto :goto_0
 .end method
@@ -6943,7 +6943,7 @@
 
     const-string v1, ""
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 1482
     invoke-direct {p0}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->IsValidState()Z
@@ -6969,7 +6969,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {p0, v0, v1}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {p0, v0, v1}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     goto :goto_0
 
@@ -7026,7 +7026,7 @@
 
     const-string v1, ""
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 865
     invoke-virtual {p0}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->isFinishing()Z
@@ -7045,7 +7045,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {p0, v0, v1}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {p0, v0, v1}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     goto :goto_0
 .end method
@@ -7059,7 +7059,7 @@
 
     const-string v1, ""
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 1519
     return-void
@@ -7076,7 +7076,7 @@
 
     const-string v1, ""
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 1461
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_connectState:Lcom/panasonic/avc/cng/view/cameraconnect/f;
@@ -7090,7 +7090,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {p0, v0, v1}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {p0, v0, v1}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     .line 1472
     :goto_0
@@ -7123,7 +7123,7 @@
 
     const-string v1, ""
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 1529
     invoke-direct {p0}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->IsValidState()Z
@@ -7148,11 +7148,11 @@
 
     .prologue
     .line 4819
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
@@ -7327,11 +7327,11 @@
 
     .line 4713
     :cond_1
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
@@ -7564,11 +7564,11 @@
 
     .prologue
     .line 2399
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
@@ -7611,34 +7611,34 @@
 
     const-string v1, "finish()"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 2198
     invoke-virtual {p0}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->OnSetResult()V
 
     .line 2200
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
     if-eqz v0, :cond_0
 
     .line 2201
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
-    invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/application/c;->a(Z)V
+    invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->a(Z)V
 
     .line 2204
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/application/c;->d()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->d()V
 
     .line 2206
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
-    invoke-virtual {v0, v2, v2}, Lcom/panasonic/avc/cng/application/c;->a(ZZ)V
+    invoke-virtual {v0, v2, v2}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->a(ZZ)V
 
     .line 2210
     :cond_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
     if-eqz v0, :cond_2
 
@@ -7654,16 +7654,16 @@
 
     .line 2215
     :cond_1
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/cameraconnect/i;->a()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->a()V
 
     .line 2216
-    iput-object v3, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iput-object v3, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
     .line 2220
     :cond_2
-    sget-object v0, Lcom/panasonic/avc/cng/view/cameraconnect/i;->f:Ljava/lang/String;
+    sget-object v0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->f:Ljava/lang/String;
 
     invoke-static {v0}, Lcom/panasonic/avc/cng/view/a/j;->b(Ljava/lang/String;)V
 
@@ -7688,7 +7688,7 @@
 
     .line 2229
     :cond_3
-    invoke-super {p0}, Lcom/panasonic/avc/cng/application/b;->finish()V
+    invoke-super {p0}, Lcom/panasonic/avc/cng/application/NfcSupportActivity;->finish()V
 
     .line 2230
     return-void
@@ -7912,10 +7912,10 @@
 
     const-string v1, "onActivityResult()"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 1665
-    invoke-super {p0, p1, p2, p3}, Lcom/panasonic/avc/cng/application/b;->onActivityResult(IILandroid/content/Intent;)V
+    invoke-super {p0, p1, p2, p3}, Lcom/panasonic/avc/cng/application/NfcSupportActivity;->onActivityResult(IILandroid/content/Intent;)V
 
     .line 1667
     const/4 v0, 0x0
@@ -7986,11 +7986,11 @@
 
     .line 1692
     :goto_1
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v7
 
@@ -8327,7 +8327,7 @@
 
     .line 1814
     :goto_6
-    iget-object v2, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
     if-eqz v2, :cond_1
 
@@ -8340,9 +8340,9 @@
     invoke-direct {p0, v2}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->updateView(Lcom/panasonic/avc/cng/view/cameraconnect/f;)V
 
     .line 1818
-    iget-object v2, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
-    invoke-virtual {v2, v0, v1}, Lcom/panasonic/avc/cng/view/cameraconnect/i;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v2, v0, v1}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     goto/16 :goto_2
 
@@ -8576,9 +8576,9 @@
     invoke-direct {p0, v0}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->updateView(Lcom/panasonic/avc/cng/view/cameraconnect/f;)V
 
     .line 1853
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/cameraconnect/i;->k()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->k()V
 
     goto/16 :goto_2
 
@@ -8763,18 +8763,18 @@
     invoke-virtual {p0, v2, v3}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->showSimpleDlg(Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     .line 1912
-    iget-object v2, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
-    invoke-virtual {v2}, Lcom/panasonic/avc/cng/view/cameraconnect/i;->w()V
+    invoke-virtual {v2}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->w()V
 
     .line 1913
-    iget-object v2, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
     const/4 v3, 0x1
 
     const/16 v4, 0x5a
 
-    invoke-virtual {v2, v0, v1, v3, v4}, Lcom/panasonic/avc/cng/view/cameraconnect/i;->a(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-virtual {v2, v0, v1, v3, v4}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->a(Ljava/lang/String;Ljava/lang/String;ZI)V
 
     goto/16 :goto_2
 
@@ -8854,12 +8854,12 @@
     if-eqz v0, :cond_24
 
     .line 1931
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
     if-eqz v0, :cond_22
 
     .line 1932
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_context:Landroid/content/Context;
 
@@ -8869,7 +8869,7 @@
 
     iget-object v4, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_btListener:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity$b;
 
-    invoke-virtual {v0, v1, v2, v3, v4}, Lcom/panasonic/avc/cng/view/cameraconnect/i;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/cameraconnect/e$a;Lcom/panasonic/avc/cng/model/service/j$a;)V
+    invoke-virtual {v0, v1, v2, v3, v4}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/cameraconnect/e$a;Lcom/panasonic/avc/cng/model/service/j$a;)V
 
     .line 1935
     :cond_22
@@ -9029,7 +9029,7 @@
 
     move-result-object v0
 
-    invoke-static {v1, v0}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v0}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 1998
     :cond_27
@@ -9135,7 +9135,7 @@
 
     move-result-object v2
 
-    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 2036
     const-string v1, "GuidanceMenuActivity"
@@ -9160,7 +9160,7 @@
 
     move-result-object v2
 
-    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 2039
     const-string v1, "CloudBackUpAppFinish"
@@ -9190,7 +9190,7 @@
 
     move-result-object v3
 
-    invoke-static {v2, v3}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v2, v3}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 2043
     if-eqz v1, :cond_1
@@ -9199,7 +9199,7 @@
     invoke-virtual {p0}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->TerminateApp()V
 
     .line 2048
-    invoke-super {p0}, Lcom/panasonic/avc/cng/application/b;->onBackPressed()V
+    invoke-super {p0}, Lcom/panasonic/avc/cng/application/NfcSupportActivity;->onBackPressed()V
 
     .line 2050
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_context:Landroid/content/Context;
@@ -9547,29 +9547,29 @@
     if-eqz v4, :cond_35
 
     .line 2115
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
     if-eqz v0, :cond_1
 
     .line 2116
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
     const/4 v1, 0x0
 
     const/4 v2, 0x0
 
-    invoke-virtual {v0, v1, v2}, Lcom/panasonic/avc/cng/view/cameraconnect/i;->b(ZZ)V
+    invoke-virtual {v0, v1, v2}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->b(ZZ)V
 
     goto/16 :goto_2
 
     .line 2121
     :cond_35
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
     if-eqz v0, :cond_1
 
     .line 2122
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_targetApInfo:Lcom/panasonic/avc/cng/view/cameraconnect/a;
 
@@ -9579,7 +9579,7 @@
 
     const/16 v4, 0x5a
 
-    invoke-virtual {v0, v1, v2, v3, v4}, Lcom/panasonic/avc/cng/view/cameraconnect/i;->a(Lcom/panasonic/avc/cng/view/cameraconnect/a;ZZI)V
+    invoke-virtual {v0, v1, v2, v3, v4}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->a(Lcom/panasonic/avc/cng/view/cameraconnect/a;ZZI)V
 
     goto/16 :goto_2
 
@@ -9608,7 +9608,7 @@
 
     const-string v1, "onBackPressed()"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 2333
     invoke-virtual {p0}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->isAppFinishConfirmed()Z
@@ -9621,7 +9621,7 @@
     invoke-virtual {p0}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->TerminateApp()V
 
     .line 2338
-    invoke-super {p0}, Lcom/panasonic/avc/cng/application/b;->onBackPressed()V
+    invoke-super {p0}, Lcom/panasonic/avc/cng/application/NfcSupportActivity;->onBackPressed()V
 
     .line 2340
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_context:Landroid/content/Context;
@@ -9676,7 +9676,7 @@
 
     const-string v1, ""
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 1106
     invoke-direct {p0}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->IsValidState()Z
@@ -9886,7 +9886,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 1296
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_timeoutTimer:Ljava/util/Timer;
@@ -9971,7 +9971,7 @@
     .line 1340
     sget-object v0, Lcom/panasonic/avc/cng/view/b/b$a;->hG:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {p0, v0, v8}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {p0, v0, v8}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     goto/16 :goto_0
 
@@ -10034,7 +10034,7 @@
 
     const-string v1, ""
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 829
     invoke-direct {p0}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->IsValidState()Z
@@ -10058,7 +10058,7 @@
 
     const-string v1, "Running......"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 
@@ -10164,7 +10164,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 857
     const-string v0, "BT_Not_Completed"
@@ -10197,7 +10197,7 @@
 
     const-string v1, ""
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 1232
     invoke-direct {p0}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->IsValidState()Z
@@ -10226,11 +10226,11 @@
     invoke-direct {v1, v0, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
     .line 1240
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
@@ -10328,7 +10328,7 @@
 
     const-string v1, ""
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 1046
     invoke-direct {p0}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->IsValidState()Z
@@ -10407,7 +10407,7 @@
 
     const-string v1, ""
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 1168
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
@@ -10469,11 +10469,11 @@
     const/4 v3, 0x0
 
     .line 875
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v4
 
@@ -10545,7 +10545,7 @@
     .line 895
     const-string v0, ""
 
-    invoke-static {v6, v0}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v6, v0}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 896
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_imageAppService:Lcom/panasonic/avc/cng/model/service/j;
@@ -10570,7 +10570,7 @@
     :cond_4
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_context:Landroid/content/Context;
 
-    invoke-static {v0, v3}, Lcom/panasonic/avc/cng/model/service/z;->a(Landroid/content/Context;Z)Lcom/panasonic/avc/cng/model/service/e;
+    invoke-static {v0, v3}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->a(Landroid/content/Context;Z)Lcom/panasonic/avc/cng/model/service/e;
 
     move-result-object v0
 
@@ -10664,7 +10664,7 @@
 
     const-string v1, ""
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 917
     sget-object v0, Lcom/panasonic/avc/cng/view/parts/s;->d:[B
@@ -10739,19 +10739,19 @@
 
     .line 948
     :cond_a
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
     if-eqz v0, :cond_3
 
     .line 949
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/cameraconnect/i;->w()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->w()V
 
     .line 950
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/cameraconnect/i;->k()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->k()V
 
     goto/16 :goto_1
 
@@ -10759,7 +10759,7 @@
     :cond_b
     const-string v0, ""
 
-    invoke-static {v6, v0}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v6, v0}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 956
     invoke-virtual {p0, v3, v3}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->StartLiveView(ZZ)V
@@ -10783,7 +10783,7 @@
 
     const-string v1, ""
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 1137
     invoke-direct {p0}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->IsValidState()Z
@@ -10853,7 +10853,7 @@
 
     const-string v1, ""
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 1077
     invoke-direct {p0}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->IsValidState()Z
@@ -10929,7 +10929,7 @@
 
     const-string v1, ""
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 1358
     invoke-direct {p0}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->IsValidState()Z
@@ -10974,7 +10974,7 @@
 
     const-string v1, ""
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 1374
     invoke-direct {p0}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->IsValidState()Z
@@ -11023,7 +11023,7 @@
 
     const-string v1, ""
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 792
     invoke-direct {p0}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->IsValidState()Z
@@ -11070,7 +11070,7 @@
 
     const-string v1, "Running......"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 
@@ -11139,11 +11139,11 @@
 
     .line 968
     :cond_1
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
@@ -11188,7 +11188,7 @@
     :cond_3
     const-string v0, ""
 
-    invoke-static {v4, v0}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v4, v0}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 980
     invoke-virtual {p0, v2}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->StartBrowser(Z)V
@@ -11199,7 +11199,7 @@
     :cond_4
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_context:Landroid/content/Context;
 
-    invoke-static {v0, v3}, Lcom/panasonic/avc/cng/model/service/z;->a(Landroid/content/Context;Z)Lcom/panasonic/avc/cng/model/service/e;
+    invoke-static {v0, v3}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->a(Landroid/content/Context;Z)Lcom/panasonic/avc/cng/model/service/e;
 
     move-result-object v0
 
@@ -11293,7 +11293,7 @@
 
     const-string v1, ""
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 998
     sget-object v0, Lcom/panasonic/avc/cng/view/parts/s;->d:[B
@@ -11368,14 +11368,14 @@
 
     .line 1028
     :cond_a
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
     if-eqz v0, :cond_0
 
     .line 1029
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/cameraconnect/i;->k()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->k()V
 
     goto/16 :goto_0
 
@@ -11383,7 +11383,7 @@
     :cond_b
     const-string v0, ""
 
-    invoke-static {v4, v0}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v4, v0}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 1036
     invoke-virtual {p0, v2}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->StartBrowser(Z)V
@@ -11402,7 +11402,7 @@
 
     const-string v1, ""
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 1194
     invoke-direct {p0}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->IsValidState()Z
@@ -11505,7 +11505,7 @@
 
     const-string v1, ""
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 754
     invoke-direct {p0}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->IsValidState()Z
@@ -11598,14 +11598,14 @@
     const/4 v3, 0x0
 
     .line 1387
-    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/application/b;->onConfigurationChanged(Landroid/content/res/Configuration;)V
+    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/application/NfcSupportActivity;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
     .line 1389
     const-string v0, "GuidanceMenuActivity"
 
     const-string v1, "onConfigurationChanged()"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 1392
     const v0, 0x7f03001e
@@ -11628,9 +11628,9 @@
     :cond_0
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_binder:Lcom/panasonic/avc/cng/view/cameraconnect/g;
 
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
-    invoke-virtual {v0, p0, v1}, Lcom/panasonic/avc/cng/view/cameraconnect/g;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/cameraconnect/i;)V
+    invoke-virtual {v0, p0, v1}, Lcom/panasonic/avc/cng/view/cameraconnect/g;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;)V
 
     .line 1399
     new-instance v1, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity$d;
@@ -11797,9 +11797,9 @@
     if-eqz v0, :cond_3
 
     .line 1442
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/cameraconnect/i;->p:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->p:Lcom/panasonic/avc/cng/a/c;
 
     const v1, 0x7f0207b8
 
@@ -11810,9 +11810,9 @@
     invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/a/c;->a(Ljava/lang/Object;)V
 
     .line 1443
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/cameraconnect/i;->q:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->q:Lcom/panasonic/avc/cng/a/c;
 
     invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -11821,9 +11821,9 @@
     invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/a/c;->a(Ljava/lang/Object;)V
 
     .line 1444
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/cameraconnect/i;->s:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->s:Lcom/panasonic/avc/cng/a/c;
 
     invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -11848,9 +11848,9 @@
 
     .line 1446
     :cond_3
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/cameraconnect/i;->q:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->q:Lcom/panasonic/avc/cng/a/c;
 
     invoke-static {v3}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -11859,9 +11859,9 @@
     invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/a/c;->a(Ljava/lang/Object;)V
 
     .line 1447
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/cameraconnect/i;->s:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->s:Lcom/panasonic/avc/cng/a/c;
 
     invoke-static {v3}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -11899,13 +11899,13 @@
 
     const-string v1, "onCreate()"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 297
     invoke-static {p0}, Lcom/panasonic/avc/cng/model/b;->a(Landroid/app/Activity;)V
 
     .line 299
-    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/application/b;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/application/NfcSupportActivity;->onCreate(Landroid/os/Bundle;)V
 
     .line 302
     const v0, 0x7f03001e
@@ -11937,18 +11937,18 @@
     iput-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_btListener:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity$b;
 
     .line 314
-    sget-object v0, Lcom/panasonic/avc/cng/view/cameraconnect/i;->f:Ljava/lang/String;
+    sget-object v0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->f:Ljava/lang/String;
 
     invoke-static {v0}, Lcom/panasonic/avc/cng/view/a/j;->a(Ljava/lang/String;)Lcom/panasonic/avc/cng/view/a/c;
 
     move-result-object v0
 
-    check-cast v0, Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    check-cast v0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
     .line 316
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
     if-nez v0, :cond_5
 
@@ -11967,7 +11967,7 @@
     iput-boolean v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_reconnect:Z
 
     .line 322
-    new-instance v0, Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    new-instance v0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_context:Landroid/content/Context;
 
@@ -11977,12 +11977,12 @@
 
     iget-object v4, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_btListener:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity$b;
 
-    invoke-direct {v0, v1, v2, v3, v4}, Lcom/panasonic/avc/cng/view/cameraconnect/i;-><init>(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/cameraconnect/e$a;Lcom/panasonic/avc/cng/model/service/j$a;)V
+    invoke-direct {v0, v1, v2, v3, v4}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;-><init>(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/cameraconnect/e$a;Lcom/panasonic/avc/cng/model/service/j$a;)V
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
     .line 323
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_context:Landroid/content/Context;
 
@@ -11992,12 +11992,12 @@
 
     iget-object v4, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_btListener:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity$b;
 
-    invoke-virtual {v0, v1, v2, v3, v4}, Lcom/panasonic/avc/cng/view/cameraconnect/i;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/cameraconnect/e$a;Lcom/panasonic/avc/cng/model/service/j$a;)V
+    invoke-virtual {v0, v1, v2, v3, v4}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/cameraconnect/e$a;Lcom/panasonic/avc/cng/model/service/j$a;)V
 
     .line 326
-    sget-object v0, Lcom/panasonic/avc/cng/view/cameraconnect/i;->f:Ljava/lang/String;
+    sget-object v0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->f:Ljava/lang/String;
 
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
     invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/a/j;->a(Ljava/lang/String;Lcom/panasonic/avc/cng/view/a/c;)V
 
@@ -12149,9 +12149,9 @@
     .line 374
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_binder:Lcom/panasonic/avc/cng/view/cameraconnect/g;
 
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
-    invoke-virtual {v0, p0, v1}, Lcom/panasonic/avc/cng/view/cameraconnect/g;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/cameraconnect/i;)V
+    invoke-virtual {v0, p0, v1}, Lcom/panasonic/avc/cng/view/cameraconnect/g;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;)V
 
     .line 377
     const v0, 0x7f0f0482
@@ -12184,9 +12184,9 @@
     if-eqz v0, :cond_7
 
     .line 385
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/cameraconnect/i;->p:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->p:Lcom/panasonic/avc/cng/a/c;
 
     const v1, 0x7f0207b8
 
@@ -12197,9 +12197,9 @@
     invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/a/c;->a(Ljava/lang/Object;)V
 
     .line 386
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/cameraconnect/i;->q:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->q:Lcom/panasonic/avc/cng/a/c;
 
     invoke-static {v6}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -12208,9 +12208,9 @@
     invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/a/c;->a(Ljava/lang/Object;)V
 
     .line 387
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/cameraconnect/i;->s:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->s:Lcom/panasonic/avc/cng/a/c;
 
     invoke-static {v6}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -12220,11 +12220,11 @@
 
     .line 392
     :goto_1
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
@@ -12356,7 +12356,7 @@
 
     .line 336
     :cond_6
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_context:Landroid/content/Context;
 
@@ -12366,15 +12366,15 @@
 
     iget-object v4, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_btListener:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity$b;
 
-    invoke-virtual {v0, v1, v2, v3, v4}, Lcom/panasonic/avc/cng/view/cameraconnect/i;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/cameraconnect/e$a;Lcom/panasonic/avc/cng/model/service/j$a;)V
+    invoke-virtual {v0, v1, v2, v3, v4}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/cameraconnect/e$a;Lcom/panasonic/avc/cng/model/service/j$a;)V
 
     goto/16 :goto_0
 
     .line 389
     :cond_7
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/cameraconnect/i;->q:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->q:Lcom/panasonic/avc/cng/a/c;
 
     invoke-static {v5}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -12383,9 +12383,9 @@
     invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/a/c;->a(Ljava/lang/Object;)V
 
     .line 390
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/cameraconnect/i;->s:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->s:Lcom/panasonic/avc/cng/a/c;
 
     invoke-static {v5}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -12415,7 +12415,7 @@
 
     const-string v1, "onDestroy()"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 1589
     iput-object v2, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_handler:Landroid/os/Handler;
@@ -12435,7 +12435,7 @@
 
     .line 1597
     :cond_0
-    invoke-super {p0}, Lcom/panasonic/avc/cng/application/b;->onDestroy()V
+    invoke-super {p0}, Lcom/panasonic/avc/cng/application/NfcSupportActivity;->onDestroy()V
 
     .line 1598
     return-void
@@ -12461,7 +12461,7 @@
     packed-switch v0, :pswitch_data_0
 
     .line 6587
-    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/application/b;->onDialogCancel(Lcom/panasonic/avc/cng/view/b/b$a;)V
+    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/application/NfcSupportActivity;->onDialogCancel(Lcom/panasonic/avc/cng/view/b/b$a;)V
 
     .line 6590
     :cond_0
@@ -12470,14 +12470,14 @@
 
     .line 6576
     :pswitch_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
     if-eqz v0, :cond_0
 
     .line 6577
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/cameraconnect/i;->p()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->p()V
 
     .line 6578
     invoke-direct {p0, v2, v3}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->closeActivity(ZI)V
@@ -12565,7 +12565,7 @@
 
     invoke-direct {v2, p0}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity$9;-><init>(Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;)V
 
-    invoke-static {p0, v1, v0, v2}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;Lcom/panasonic/avc/cng/view/b/a$c;)V
+    invoke-static {p0, v1, v0, v2}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;Lcom/panasonic/avc/cng/view/b/a$c;)V
 
     goto :goto_0
 
@@ -12573,7 +12573,7 @@
     :pswitch_2
     sget-object v0, Lcom/panasonic/avc/cng/view/b/b$a;->fl:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {p0, v0}, Lcom/panasonic/avc/cng/view/b/d;->b(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;)Z
+    invoke-static {p0, v0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->b(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;)Z
 
     move-result v0
 
@@ -12625,11 +12625,11 @@
 
     .line 3819
     :pswitch_5
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v1
 
@@ -12726,7 +12726,7 @@
     sparse-switch v0, :sswitch_data_0
 
     .line 6689
-    invoke-super {p0, p1, p2}, Lcom/panasonic/avc/cng/application/b;->onItemClick(Lcom/panasonic/avc/cng/view/b/b$a;I)V
+    invoke-super {p0, p1, p2}, Lcom/panasonic/avc/cng/application/NfcSupportActivity;->onItemClick(Lcom/panasonic/avc/cng/view/b/b$a;I)V
 
     .line 6692
     :cond_0
@@ -12784,29 +12784,29 @@
 
     .line 6609
     :cond_2
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
     if-eqz v0, :cond_0
 
     .line 6610
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
     iget-object v2, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_targetApInfo:Lcom/panasonic/avc/cng/view/cameraconnect/a;
 
     const/16 v3, 0x5a
 
-    invoke-virtual {v0, v2, v1, v1, v3}, Lcom/panasonic/avc/cng/view/cameraconnect/i;->a(Lcom/panasonic/avc/cng/view/cameraconnect/a;ZZI)V
+    invoke-virtual {v0, v2, v1, v1, v3}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->a(Lcom/panasonic/avc/cng/view/cameraconnect/a;ZZI)V
 
     goto :goto_0
 
     .line 6616
     :sswitch_1
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
     if-eqz v0, :cond_0
 
     .line 6617
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_deviceList:Ljava/util/List;
 
@@ -12818,7 +12818,7 @@
 
     iget-boolean v3, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_nfcTouch:Z
 
-    invoke-virtual {v1, v0, v3, v2}, Lcom/panasonic/avc/cng/view/cameraconnect/i;->a(Lcom/panasonic/avc/cng/model/f;ZZ)V
+    invoke-virtual {v1, v0, v3, v2}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->a(Lcom/panasonic/avc/cng/model/f;ZZ)V
 
     goto :goto_0
 
@@ -12925,12 +12925,12 @@
     invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->apply()V
 
     .line 6639
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
     if-eqz v0, :cond_4
 
     .line 6640
-    iget-object v3, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v3, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_deviceList:Ljava/util/List;
 
@@ -12949,7 +12949,7 @@
     move v1, v2
 
     :cond_3
-    invoke-virtual {v3, v0, v4, v1}, Lcom/panasonic/avc/cng/view/cameraconnect/i;->a(Lcom/panasonic/avc/cng/model/f;ZZ)V
+    invoke-virtual {v3, v0, v4, v1}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->a(Lcom/panasonic/avc/cng/model/f;ZZ)V
 
     .line 6643
     :cond_4
@@ -13116,7 +13116,7 @@
 
     .line 6668
     :cond_8
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
     if-eqz v0, :cond_0
 
@@ -13185,7 +13185,7 @@
     invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->apply()V
 
     .line 6683
-    iget-object v4, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v4, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_deviceList:Ljava/util/List;
 
@@ -13202,7 +13202,7 @@
     if-nez v5, :cond_9
 
     :goto_2
-    invoke-virtual {v4, v0, v3, v2}, Lcom/panasonic/avc/cng/view/cameraconnect/i;->a(Lcom/panasonic/avc/cng/model/f;ZZ)V
+    invoke-virtual {v4, v0, v3, v2}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->a(Lcom/panasonic/avc/cng/model/f;ZZ)V
 
     goto/16 :goto_0
 
@@ -13239,7 +13239,7 @@
 
     const-string v1, "onMenuItemSelected()"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 1576
     invoke-interface {p2}, Landroid/view/MenuItem;->getItemId()I
@@ -13314,7 +13314,7 @@
 
     .line 6567
     :pswitch_0
-    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/application/b;->onNegativeButtonClick(Lcom/panasonic/avc/cng/view/b/b$a;)V
+    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/application/NfcSupportActivity;->onNegativeButtonClick(Lcom/panasonic/avc/cng/view/b/b$a;)V
 
     .line 6570
     :cond_0
@@ -13339,9 +13339,9 @@
 
     .line 6360
     :pswitch_3
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
-    invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/application/c;->a(Z)V
+    invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->a(Z)V
 
     goto :goto_0
 
@@ -13363,7 +13363,7 @@
 
     const-string v1, "Running......"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 
@@ -13440,7 +13440,7 @@
 
     .line 6405
     :pswitch_8
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
     if-eqz v0, :cond_3
 
@@ -13474,12 +13474,12 @@
     if-eqz v0, :cond_5
 
     .line 6413
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
     if-eqz v0, :cond_3
 
     .line 6414
-    iget-object v3, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v3, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
     iget-boolean v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_showApList:Z
 
@@ -13488,7 +13488,7 @@
     move v0, v1
 
     :goto_1
-    invoke-virtual {v3, v0}, Lcom/panasonic/avc/cng/view/cameraconnect/i;->g(Z)V
+    invoke-virtual {v3, v0}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->g(Z)V
 
     .line 6436
     :cond_3
@@ -13534,19 +13534,19 @@
 
     .line 6430
     :cond_6
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
     if-eqz v0, :cond_3
 
     .line 6431
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
     iget-boolean v3, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_showApList:Z
 
     if-nez v3, :cond_7
 
     :goto_3
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/cameraconnect/i;->g(Z)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->g(Z)V
 
     goto :goto_2
 
@@ -13618,7 +13618,7 @@
     .line 6471
     sget-object v0, Lcom/panasonic/avc/cng/view/b/b$a;->fj:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {p0, v0, v4}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {p0, v0, v4}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     goto/16 :goto_0
 
@@ -13751,7 +13751,7 @@
     :pswitch_f
     sget-object v0, Lcom/panasonic/avc/cng/view/b/b$a;->hM:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {p0, v0, v4}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {p0, v0, v4}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     goto/16 :goto_0
 
@@ -13759,7 +13759,7 @@
     :pswitch_10
     sget-object v0, Lcom/panasonic/avc/cng/view/b/b$a;->hN:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {p0, v0, v4}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {p0, v0, v4}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     goto/16 :goto_0
 
@@ -13810,7 +13810,7 @@
 
     move-result-object v0
 
-    invoke-static {v1, v0}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v0}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     goto/16 :goto_0
 
@@ -13890,7 +13890,7 @@
     sparse-switch v0, :sswitch_data_0
 
     .line 6344
-    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/application/b;->onNeutralButtonClick(Lcom/panasonic/avc/cng/view/b/b$a;)V
+    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/application/NfcSupportActivity;->onNeutralButtonClick(Lcom/panasonic/avc/cng/view/b/b$a;)V
 
     .line 6347
     :goto_0
@@ -13946,14 +13946,14 @@
     const/4 v2, 0x0
 
     .line 697
-    invoke-super {p0}, Lcom/panasonic/avc/cng/application/b;->onPause()V
+    invoke-super {p0}, Lcom/panasonic/avc/cng/application/NfcSupportActivity;->onPause()V
 
     .line 699
     const-string v0, "GuidanceMenuActivity"
 
     const-string v1, "onPause()"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 701
     iput-boolean v2, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_isOnStartWifiCheck:Z
@@ -13991,7 +13991,7 @@
     packed-switch v0, :pswitch_data_0
 
     .line 6298
-    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/application/b;->onPositiveButtonClick(Lcom/panasonic/avc/cng/view/b/b$a;)V
+    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/application/NfcSupportActivity;->onPositiveButtonClick(Lcom/panasonic/avc/cng/view/b/b$a;)V
 
     .line 6301
     :cond_0
@@ -14033,11 +14033,11 @@
     if-ne p1, v0, :cond_1
 
     .line 5902
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
@@ -14054,11 +14054,11 @@
 
     .line 5906
     :cond_1
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
@@ -14135,12 +14135,12 @@
     if-eqz v0, :cond_5
 
     .line 5936
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
     if-eqz v0, :cond_0
 
     .line 5937
-    iget-object v3, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v3, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
     iget-boolean v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_showApList:Z
 
@@ -14149,7 +14149,7 @@
     move v0, v1
 
     :goto_2
-    invoke-virtual {v3, v0}, Lcom/panasonic/avc/cng/view/cameraconnect/i;->g(Z)V
+    invoke-virtual {v3, v0}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->g(Z)V
 
     goto :goto_0
 
@@ -14182,19 +14182,19 @@
 
     .line 5953
     :cond_6
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
     if-eqz v0, :cond_0
 
     .line 5954
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
     iget-boolean v3, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_showApList:Z
 
     if-nez v3, :cond_7
 
     :goto_3
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/cameraconnect/i;->g(Z)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->g(Z)V
 
     goto/16 :goto_0
 
@@ -14207,7 +14207,7 @@
     :pswitch_6
     const v0, 0x7f0f0292
 
-    invoke-static {p0, p1, v0}, Lcom/panasonic/avc/cng/view/b/d;->c(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;I)Landroid/text/Editable;
+    invoke-static {p0, p1, v0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->c(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;I)Landroid/text/Editable;
 
     move-result-object v0
 
@@ -14234,12 +14234,12 @@
 
     .line 5970
     :cond_8
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
     if-eqz v1, :cond_0
 
     .line 5971
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
     iget-object v3, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_targetApInfo:Lcom/panasonic/avc/cng/view/cameraconnect/a;
 
@@ -14249,7 +14249,7 @@
 
     const/16 v4, 0x5a
 
-    invoke-virtual {v1, v3, v0, v2, v4}, Lcom/panasonic/avc/cng/view/cameraconnect/i;->a(Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-virtual {v1, v3, v0, v2, v4}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->a(Ljava/lang/String;Ljava/lang/String;ZI)V
 
     goto/16 :goto_0
 
@@ -14298,35 +14298,35 @@
 
     .line 5996
     :pswitch_9
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
     if-eqz v0, :cond_0
 
     .line 5997
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_deviceInfo:Lcom/panasonic/avc/cng/model/f;
 
     iget-object v2, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_account:Lcom/panasonic/avc/cng/model/n;
 
-    invoke-virtual {v0, v1, v2}, Lcom/panasonic/avc/cng/view/cameraconnect/i;->a(Lcom/panasonic/avc/cng/model/f;Lcom/panasonic/avc/cng/model/n;)V
+    invoke-virtual {v0, v1, v2}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->a(Lcom/panasonic/avc/cng/model/f;Lcom/panasonic/avc/cng/model/n;)V
 
     goto/16 :goto_0
 
     .line 6003
     :pswitch_a
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
     if-eqz v0, :cond_0
 
     .line 6004
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_deviceInfo:Lcom/panasonic/avc/cng/model/f;
 
     iget-object v2, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_account:Lcom/panasonic/avc/cng/model/n;
 
-    invoke-virtual {v0, v1, v2}, Lcom/panasonic/avc/cng/view/cameraconnect/i;->b(Lcom/panasonic/avc/cng/model/f;Lcom/panasonic/avc/cng/model/n;)V
+    invoke-virtual {v0, v1, v2}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->b(Lcom/panasonic/avc/cng/model/f;Lcom/panasonic/avc/cng/model/n;)V
 
     goto/16 :goto_0
 
@@ -14344,14 +14344,14 @@
 
     .line 6030
     :pswitch_d
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
     if-eqz v0, :cond_0
 
     .line 6031
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/cameraconnect/i;->f(Z)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->f(Z)V
 
     goto/16 :goto_0
 
@@ -14383,7 +14383,7 @@
     if-ne v0, v1, :cond_e
 
     .line 6046
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
     if-eqz v0, :cond_f
 
@@ -14415,19 +14415,19 @@
     if-eqz v0, :cond_b
 
     .line 6054
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
     if-eqz v0, :cond_0
 
     .line 6055
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
     iget-boolean v3, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_showApList:Z
 
     if-nez v3, :cond_a
 
     :goto_5
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/cameraconnect/i;->g(Z)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->g(Z)V
 
     goto/16 :goto_0
 
@@ -14460,19 +14460,19 @@
 
     .line 6071
     :cond_c
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
     if-eqz v0, :cond_0
 
     .line 6072
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
     iget-boolean v3, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_showApList:Z
 
     if-nez v3, :cond_d
 
     :goto_6
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/cameraconnect/i;->g(Z)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->g(Z)V
 
     goto/16 :goto_0
 
@@ -14516,7 +14516,7 @@
 
     const-string v1, "Running......"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     goto/16 :goto_0
 
@@ -14562,7 +14562,7 @@
 
     .line 6114
     :pswitch_11
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
     if-eqz v0, :cond_0
 
@@ -14570,9 +14570,9 @@
     iput-boolean v1, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_isWifiDisconnectedDisp:Z
 
     .line 6116
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/cameraconnect/i;->v()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->v()V
 
     goto/16 :goto_0
 
@@ -14636,27 +14636,27 @@
     invoke-static {p0, v0}, Lcom/panasonic/avc/cng/view/b/e;->b(Landroid/app/Activity;Ljava/lang/String;)V
 
     .line 6136
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
     if-eqz v0, :cond_0
 
     .line 6137
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/cameraconnect/i;->f(Z)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->f(Z)V
 
     goto/16 :goto_0
 
     .line 6144
     :pswitch_13
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
     if-eqz v0, :cond_0
 
     .line 6145
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/cameraconnect/i;->f(Z)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->f(Z)V
 
     goto/16 :goto_0
 
@@ -14713,14 +14713,14 @@
     if-eqz v0, :cond_13
 
     .line 6167
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
     if-eqz v0, :cond_0
 
     .line 6168
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/cameraconnect/i;->g(Z)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->g(Z)V
 
     goto/16 :goto_0
 
@@ -14748,14 +14748,14 @@
 
     .line 6184
     :cond_14
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
     if-eqz v0, :cond_0
 
     .line 6185
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/cameraconnect/i;->g(Z)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->g(Z)V
 
     goto/16 :goto_0
 
@@ -14796,7 +14796,7 @@
 
     move-result-object v0
 
-    invoke-static {v1, v0}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v0}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 6199
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_btDevice:Landroid/bluetooth/BluetoothDevice;
@@ -14930,7 +14930,7 @@
 
     move-result-object v0
 
-    invoke-static {v1, v0}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v0}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 6248
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_btDevice:Landroid/bluetooth/BluetoothDevice;
@@ -15133,7 +15133,7 @@
 
     const-string v2, "onPrepareOptionsMenu()"
 
-    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 1545
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_optionMenuUtil:Lcom/panasonic/avc/cng/view/a/e;
@@ -15161,9 +15161,9 @@
     if-nez v1, :cond_0
 
     .line 1560
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/cameraconnect/i;->i()Z
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->i()Z
 
     move-result v1
 
@@ -15178,7 +15178,7 @@
 
     if-eqz v1, :cond_0
 
-    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/application/b;->onPrepareOptionsMenu(Landroid/view/Menu;)Z
+    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/application/NfcSupportActivity;->onPrepareOptionsMenu(Landroid/view/Menu;)Z
 
     move-result v1
 
@@ -15402,19 +15402,19 @@
     if-nez v2, :cond_4
 
     .line 8171
-    iget-object v2, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
     if-eqz v2, :cond_0
 
     .line 8172
-    iget-object v2, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
     iget-boolean v3, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_showApList:Z
 
     if-nez v3, :cond_3
 
     :goto_1
-    invoke-virtual {v2, v0}, Lcom/panasonic/avc/cng/view/cameraconnect/i;->g(Z)V
+    invoke-virtual {v2, v0}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->g(Z)V
 
     goto/16 :goto_0
 
@@ -15438,14 +15438,14 @@
     if-nez v1, :cond_0
 
     .line 8185
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
     if-eqz v1, :cond_0
 
     .line 8186
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
-    invoke-virtual {v1, v0}, Lcom/panasonic/avc/cng/view/cameraconnect/i;->g(Z)V
+    invoke-virtual {v1, v0}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->g(Z)V
 
     goto/16 :goto_0
 
@@ -15488,14 +15488,14 @@
 
     .line 8201
     :cond_5
-    new-instance v1, Lcom/panasonic/avc/cng/view/cameraconnect/l;
+    new-instance v1, Lcom/panasonic/avc/cng/view/cameraconnect/WifiUtil;
 
     iget-object v2, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_context:Landroid/content/Context;
 
-    invoke-direct {v1, v2}, Lcom/panasonic/avc/cng/view/cameraconnect/l;-><init>(Landroid/content/Context;)V
+    invoke-direct {v1, v2}, Lcom/panasonic/avc/cng/view/cameraconnect/WifiUtil;-><init>(Landroid/content/Context;)V
 
     .line 8202
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/cameraconnect/l;->b()Landroid/net/wifi/WifiInfo;
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/cameraconnect/WifiUtil;->b()Landroid/net/wifi/WifiInfo;
 
     move-result-object v1
 
@@ -15512,7 +15512,7 @@
 
     const-string v2, "SoftAP"
 
-    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 8209
     iput-boolean v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_isConnectConfirmDone:Z
@@ -15552,7 +15552,7 @@
 
     move-result-object v0
 
-    invoke-static {v1, v0}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v0}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 8266
     :cond_6
@@ -15578,7 +15578,7 @@
 
     const-string v3, "STA"
 
-    invoke-static {v2, v3}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v2, v3}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 8219
     const-string v2, "GuidanceMenuActivity"
@@ -15605,7 +15605,7 @@
 
     move-result-object v3
 
-    invoke-static {v2, v3}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v2, v3}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 8223
     invoke-virtual {v1}, Landroid/net/wifi/WifiInfo;->getSSID()Ljava/lang/String;
@@ -15682,7 +15682,7 @@
 
     move-result-object v0
 
-    invoke-static {v1, v0}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v0}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_2
 
@@ -15723,14 +15723,14 @@
     :goto_4
     sget-object v0, Lcom/panasonic/avc/cng/view/b/b$a;->hN:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {p0, v0}, Lcom/panasonic/avc/cng/view/b/d;->b(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;)Z
+    invoke-static {p0, v0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->b(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;)Z
 
     move-result v0
 
     if-nez v0, :cond_6
 
     .line 8246
-    invoke-static {p0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;)V
+    invoke-static {p0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;)V
 
     goto/16 :goto_2
 
@@ -15790,7 +15790,7 @@
 
     move-result-object v0
 
-    invoke-static {v1, v0}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v0}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     goto/16 :goto_2
 
@@ -15872,15 +15872,15 @@
 
     const-string v1, "onRestart()"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 1604
-    invoke-super {p0}, Lcom/panasonic/avc/cng/application/b;->onRestart()V
+    invoke-super {p0}, Lcom/panasonic/avc/cng/application/NfcSupportActivity;->onRestart()V
 
     .line 1607
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_context:Landroid/content/Context;
 
-    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/model/service/z;->a(Landroid/content/Context;Z)Lcom/panasonic/avc/cng/model/service/e;
+    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->a(Landroid/content/Context;Z)Lcom/panasonic/avc/cng/model/service/e;
 
     move-result-object v0
 
@@ -15888,20 +15888,20 @@
     if-eqz v0, :cond_1
 
     .line 1610
-    invoke-interface {v0}, Lcom/panasonic/avc/cng/model/service/e;->i()Lcom/panasonic/avc/cng/model/c/e;
+    invoke-interface {v0}, Lcom/panasonic/avc/cng/model/service/e;->i()Lcom/panasonic/avc/cng/model/c/CameraStatus;
 
     move-result-object v0
 
     .line 1612
     if-eqz v0, :cond_1
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/e;->l()I
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->l()I
 
     move-result v1
 
     if-eq v1, v2, :cond_0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/e;->l()I
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->l()I
 
     move-result v0
 
@@ -15911,14 +15911,14 @@
 
     .line 1613
     :cond_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
     if-eqz v0, :cond_1
 
     .line 1614
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
-    invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/view/cameraconnect/i;->h(Z)V
+    invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->h(Z)V
 
     .line 1618
     :cond_1
@@ -15932,14 +15932,14 @@
     const/4 v1, 0x0
 
     .line 642
-    invoke-super {p0}, Lcom/panasonic/avc/cng/application/b;->onResume()V
+    invoke-super {p0}, Lcom/panasonic/avc/cng/application/NfcSupportActivity;->onResume()V
 
     .line 644
     const-string v0, "GuidanceMenuActivity"
 
     const-string v2, "onResume()"
 
-    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 647
     invoke-direct {p0}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->isEnableConnectOnStart()Z
@@ -15982,11 +15982,11 @@
     if-eqz v0, :cond_4
 
     .line 655
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v3
 
@@ -16000,7 +16000,7 @@
     iput-boolean v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_isAutoSendMode:Z
 
     .line 659
-    iget-object v4, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v4, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
     if-nez v3, :cond_5
 
@@ -16011,7 +16011,7 @@
     const/4 v0, 0x1
 
     :goto_1
-    invoke-virtual {v4, v0}, Lcom/panasonic/avc/cng/view/cameraconnect/i;->i(Z)Lcom/panasonic/avc/cng/model/service/j;
+    invoke-virtual {v4, v0}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->i(Z)Lcom/panasonic/avc/cng/model/service/j;
 
     move-result-object v0
 
@@ -16109,30 +16109,30 @@
     if-nez v0, :cond_0
 
     .line 687
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
     .line 688
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
     if-eqz v1, :cond_0
 
     if-nez v0, :cond_0
 
     .line 689
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/cameraconnect/i;->w()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->w()V
 
     .line 690
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/cameraconnect/i;->k()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->k()V
 
     goto/16 :goto_0
 
@@ -16156,14 +16156,14 @@
 
     .prologue
     .line 434
-    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/application/b;->onSaveInstanceState(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/application/NfcSupportActivity;->onSaveInstanceState(Landroid/os/Bundle;)V
 
     .line 436
     const-string v0, "GuidanceMenuActivity"
 
     const-string v1, "onSaveInstanceState()"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 439
     if-eqz p1, :cond_0
@@ -16205,14 +16205,14 @@
     const/4 v2, 0x0
 
     .line 448
-    invoke-super {p0}, Lcom/panasonic/avc/cng/application/b;->onStart()V
+    invoke-super {p0}, Lcom/panasonic/avc/cng/application/NfcSupportActivity;->onStart()V
 
     .line 450
     const-string v0, "GuidanceMenuActivity"
 
     const-string v1, "onStart()"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 453
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_imageAppService:Lcom/panasonic/avc/cng/model/service/j;
@@ -16220,9 +16220,9 @@
     if-nez v0, :cond_0
 
     .line 454
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
-    invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/view/cameraconnect/i;->i(Z)Lcom/panasonic/avc/cng/model/service/j;
+    invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->i(Z)Lcom/panasonic/avc/cng/model/service/j;
 
     move-result-object v0
 
@@ -16437,16 +16437,16 @@
     invoke-virtual {p0, v1, v0, v2}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->InitializeNfc(Ljava/lang/String;BZ)V
 
     .line 572
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/application/c;->j()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->j()V
 
     .line 576
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_nfcViewModel:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
     iget-boolean v1, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_firstTouch:Z
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/application/c;->a(Z)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->a(Z)V
 
     .line 579
     invoke-direct {p0}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->isEnableConnectOnStart()Z
@@ -16474,11 +16474,11 @@
     .line 593
     :cond_9
     :goto_2
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
@@ -16612,7 +16612,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {p0, v0, v1}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {p0, v0, v1}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     .line 614
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_context:Landroid/content/Context;
@@ -16650,9 +16650,9 @@
     if-eqz v0, :cond_f
 
     .line 622
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/cameraconnect/i;->k()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->k()V
 
     goto :goto_3
 
@@ -16671,9 +16671,9 @@
 
     .line 627
     :cond_10
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_viewModel:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/cameraconnect/i;->k()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->k()V
 
     goto :goto_3
 
@@ -16694,14 +16694,14 @@
 
     .prologue
     .line 719
-    invoke-super {p0}, Lcom/panasonic/avc/cng/application/b;->onStop()V
+    invoke-super {p0}, Lcom/panasonic/avc/cng/application/NfcSupportActivity;->onStop()V
 
     .line 721
     const-string v0, "GuidanceMenuActivity"
 
     const-string v1, "onStop()"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 723
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_connectState:Lcom/panasonic/avc/cng/view/cameraconnect/f;
@@ -16755,7 +16755,7 @@
 
     move-result-object v2
 
-    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 738
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuActivity;->_context:Landroid/content/Context;
@@ -17226,7 +17226,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/model/service/z;->a(Landroid/content/Context;Z)Lcom/panasonic/avc/cng/model/service/e;
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->a(Landroid/content/Context;Z)Lcom/panasonic/avc/cng/model/service/e;
 
     move-result-object v0
 

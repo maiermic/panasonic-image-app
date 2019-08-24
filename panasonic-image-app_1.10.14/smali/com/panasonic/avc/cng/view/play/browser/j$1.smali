@@ -150,7 +150,7 @@
     :cond_4
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/j$1;->b:Lcom/panasonic/avc/cng/view/play/browser/j;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/browser/j;->f(Lcom/panasonic/avc/cng/view/play/browser/j;)Lcom/panasonic/avc/cng/core/c/s;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/browser/j;->f(Lcom/panasonic/avc/cng/view/play/browser/j;)Lcom/panasonic/avc/cng/core/c/Picmate;
 
     move-result-object v0
 
@@ -159,7 +159,7 @@
     .line 234
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/j$1;->b:Lcom/panasonic/avc/cng/view/play/browser/j;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/browser/j;->f(Lcom/panasonic/avc/cng/view/play/browser/j;)Lcom/panasonic/avc/cng/core/c/s;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/browser/j;->f(Lcom/panasonic/avc/cng/view/play/browser/j;)Lcom/panasonic/avc/cng/core/c/Picmate;
 
     move-result-object v0
 
@@ -169,7 +169,7 @@
 
     sget v2, Lcom/panasonic/avc/cng/model/b;->a:I
 
-    invoke-virtual {v0, v1, v2}, Lcom/panasonic/avc/cng/core/c/s;->a(Lcom/panasonic/avc/cng/core/c/g;I)V
+    invoke-virtual {v0, v1, v2}, Lcom/panasonic/avc/cng/core/c/Picmate;->a(Lcom/panasonic/avc/cng/core/c/g;I)V
 
     goto :goto_1
 .end method

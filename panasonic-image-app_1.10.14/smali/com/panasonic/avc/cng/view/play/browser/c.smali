@@ -6,7 +6,7 @@
 # instance fields
 .field private a:Landroid/app/Activity;
 
-.field private b:Lcom/panasonic/avc/cng/view/play/browser/d;
+.field private b:Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;
 
 .field private c:Landroid/widget/GridView;
 
@@ -22,12 +22,12 @@
     return-void
 .end method
 
-.method static synthetic a(Lcom/panasonic/avc/cng/view/play/browser/c;)Lcom/panasonic/avc/cng/view/play/browser/d;
+.method static synthetic a(Lcom/panasonic/avc/cng/view/play/browser/c;)Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;
     .locals 1
 
     .prologue
     .line 31
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->b:Lcom/panasonic/avc/cng/view/play/browser/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->b:Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;
 
     return-object v0
 .end method
@@ -52,14 +52,14 @@
 
     .line 222
     :cond_1
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->b:Lcom/panasonic/avc/cng/view/play/browser/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->b:Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;
 
     if-eqz v0, :cond_0
 
     .line 223
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->b:Lcom/panasonic/avc/cng/view/play/browser/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->b:Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/browser/d;->j:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;->j:Lcom/panasonic/avc/cng/a/c;
 
     const/4 v1, 0x0
 
@@ -70,9 +70,9 @@
     invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/a/c;->a(Ljava/lang/Object;)V
 
     .line 224
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->b:Lcom/panasonic/avc/cng/view/play/browser/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->b:Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/browser/d;->w()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;->w()V
 
     .line 225
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->c:Landroid/widget/GridView;
@@ -128,14 +128,14 @@
 
     const v3, 0x7f03012e
 
-    iget-object v4, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->b:Lcom/panasonic/avc/cng/view/play/browser/d;
+    iget-object v4, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->b:Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;
 
     .line 76
-    invoke-virtual {v4}, Lcom/panasonic/avc/cng/view/play/browser/d;->m()Lcom/panasonic/avc/cng/view/parts/t;
+    invoke-virtual {v4}, Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;->m()Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
     move-result-object v4
 
-    invoke-direct {v1, v2, v3, v4}, Lcom/panasonic/avc/cng/view/parts/w;-><init>(Landroid/content/Context;ILcom/panasonic/avc/cng/view/parts/t;)V
+    invoke-direct {v1, v2, v3, v4}, Lcom/panasonic/avc/cng/view/parts/w;-><init>(Landroid/content/Context;ILcom/panasonic/avc/cng/view/parts/BrowserViewModel;)V
 
     .line 75
     invoke-virtual {v0, v1}, Landroid/widget/GridView;->setAdapter(Landroid/widget/ListAdapter;)V
@@ -193,9 +193,9 @@
     invoke-direct {v1, v0}, Lcom/panasonic/avc/cng/view/parts/p;-><init>(Landroid/widget/TextView;)V
 
     .line 121
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->b:Lcom/panasonic/avc/cng/view/play/browser/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->b:Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/browser/d;->n()Lcom/panasonic/avc/cng/view/parts/aa;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;->n()Lcom/panasonic/avc/cng/view/parts/aa;
 
     move-result-object v0
 
@@ -237,9 +237,9 @@
     invoke-direct {v1, v0}, Lcom/panasonic/avc/cng/view/parts/l;-><init>(Landroid/widget/ImageButton;)V
 
     .line 130
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->b:Lcom/panasonic/avc/cng/view/play/browser/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->b:Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/browser/d;->p()Lcom/panasonic/avc/cng/view/play/browser/j;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;->p()Lcom/panasonic/avc/cng/view/play/browser/j;
 
     move-result-object v0
 
@@ -265,9 +265,9 @@
     invoke-direct {v1, v0}, Lcom/panasonic/avc/cng/view/parts/p;-><init>(Landroid/widget/TextView;)V
 
     .line 134
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->b:Lcom/panasonic/avc/cng/view/play/browser/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->b:Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/browser/d;->p()Lcom/panasonic/avc/cng/view/play/browser/j;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;->p()Lcom/panasonic/avc/cng/view/play/browser/j;
 
     move-result-object v0
 
@@ -293,9 +293,9 @@
     invoke-direct {v1, v0}, Lcom/panasonic/avc/cng/view/parts/l;-><init>(Landroid/widget/ImageButton;)V
 
     .line 138
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->b:Lcom/panasonic/avc/cng/view/play/browser/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->b:Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/browser/d;->e:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;->e:Lcom/panasonic/avc/cng/a/c;
 
     iget-object v1, v1, Lcom/panasonic/avc/cng/view/parts/l;->c:Lcom/panasonic/avc/cng/a/d;
 
@@ -317,26 +317,26 @@
     invoke-direct {v1, v0}, Lcom/panasonic/avc/cng/view/parts/l;-><init>(Landroid/widget/ImageButton;)V
 
     .line 142
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->b:Lcom/panasonic/avc/cng/view/play/browser/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->b:Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/browser/d;->m()Lcom/panasonic/avc/cng/view/parts/t;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;->m()Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
     move-result-object v0
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/parts/t;->m:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->m:Lcom/panasonic/avc/cng/a/c;
 
     iget-object v2, v1, Lcom/panasonic/avc/cng/view/parts/l;->a:Lcom/panasonic/avc/cng/view/parts/l$a;
 
     invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/a/c;->a(Lcom/panasonic/avc/cng/a/b;)V
 
     .line 143
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->b:Lcom/panasonic/avc/cng/view/play/browser/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->b:Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/browser/d;->m()Lcom/panasonic/avc/cng/view/parts/t;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;->m()Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
     move-result-object v0
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/parts/t;->n:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->n:Lcom/panasonic/avc/cng/a/c;
 
     iget-object v1, v1, Lcom/panasonic/avc/cng/view/parts/l;->c:Lcom/panasonic/avc/cng/a/d;
 
@@ -364,22 +364,22 @@
     invoke-direct {v1, v0}, Lcom/panasonic/avc/cng/view/parts/j;-><init>(Landroid/widget/Button;)V
 
     .line 151
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->b:Lcom/panasonic/avc/cng/view/play/browser/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->b:Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/browser/d;->m()Lcom/panasonic/avc/cng/view/parts/t;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;->m()Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
     move-result-object v0
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/parts/t;->f:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->f:Lcom/panasonic/avc/cng/a/c;
 
     iget-object v2, v1, Lcom/panasonic/avc/cng/view/parts/j;->b:Lcom/panasonic/avc/cng/a/d;
 
     invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/a/c;->a(Lcom/panasonic/avc/cng/a/b;)V
 
     .line 152
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->b:Lcom/panasonic/avc/cng/view/play/browser/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->b:Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/browser/d;->j:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;->j:Lcom/panasonic/avc/cng/a/c;
 
     iget-object v1, v1, Lcom/panasonic/avc/cng/view/parts/j;->a:Lcom/panasonic/avc/cng/a/d;
 
@@ -401,9 +401,9 @@
     invoke-direct {v1, v0}, Lcom/panasonic/avc/cng/view/parts/p;-><init>(Landroid/widget/TextView;)V
 
     .line 157
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->b:Lcom/panasonic/avc/cng/view/play/browser/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->b:Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/browser/d;->n()Lcom/panasonic/avc/cng/view/parts/aa;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;->n()Lcom/panasonic/avc/cng/view/parts/aa;
 
     move-result-object v0
 
@@ -429,26 +429,26 @@
     invoke-direct {v1, v0}, Lcom/panasonic/avc/cng/view/parts/p;-><init>(Landroid/widget/TextView;)V
 
     .line 161
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->b:Lcom/panasonic/avc/cng/view/play/browser/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->b:Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/browser/d;->m()Lcom/panasonic/avc/cng/view/parts/t;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;->m()Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
     move-result-object v0
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/parts/t;->i:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->i:Lcom/panasonic/avc/cng/a/c;
 
     iget-object v2, v1, Lcom/panasonic/avc/cng/view/parts/p;->a:Lcom/panasonic/avc/cng/a/d;
 
     invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/a/c;->a(Lcom/panasonic/avc/cng/a/b;)V
 
     .line 162
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->b:Lcom/panasonic/avc/cng/view/play/browser/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->b:Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/browser/d;->m()Lcom/panasonic/avc/cng/view/parts/t;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;->m()Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
     move-result-object v0
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/parts/t;->j:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->j:Lcom/panasonic/avc/cng/a/c;
 
     iget-object v1, v1, Lcom/panasonic/avc/cng/view/parts/p;->c:Lcom/panasonic/avc/cng/a/d;
 
@@ -470,26 +470,26 @@
     invoke-direct {v1, v0}, Lcom/panasonic/avc/cng/view/parts/p;-><init>(Landroid/widget/TextView;)V
 
     .line 166
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->b:Lcom/panasonic/avc/cng/view/play/browser/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->b:Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/browser/d;->m()Lcom/panasonic/avc/cng/view/parts/t;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;->m()Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
     move-result-object v0
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/parts/t;->o:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->o:Lcom/panasonic/avc/cng/a/c;
 
     iget-object v2, v1, Lcom/panasonic/avc/cng/view/parts/p;->a:Lcom/panasonic/avc/cng/a/d;
 
     invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/a/c;->a(Lcom/panasonic/avc/cng/a/b;)V
 
     .line 167
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->b:Lcom/panasonic/avc/cng/view/play/browser/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->b:Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/browser/d;->m()Lcom/panasonic/avc/cng/view/parts/t;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;->m()Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
     move-result-object v0
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/parts/t;->p:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->p:Lcom/panasonic/avc/cng/a/c;
 
     iget-object v1, v1, Lcom/panasonic/avc/cng/view/parts/p;->c:Lcom/panasonic/avc/cng/a/d;
 
@@ -511,37 +511,37 @@
     invoke-direct {v1, v0}, Lcom/panasonic/avc/cng/view/parts/p;-><init>(Landroid/widget/TextView;)V
 
     .line 171
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->b:Lcom/panasonic/avc/cng/view/play/browser/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->b:Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/browser/d;->m()Lcom/panasonic/avc/cng/view/parts/t;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;->m()Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
     move-result-object v0
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/parts/t;->g:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->g:Lcom/panasonic/avc/cng/a/c;
 
     iget-object v2, v1, Lcom/panasonic/avc/cng/view/parts/p;->b:Lcom/panasonic/avc/cng/a/d;
 
     invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/a/c;->a(Lcom/panasonic/avc/cng/a/b;)V
 
     .line 172
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->b:Lcom/panasonic/avc/cng/view/play/browser/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->b:Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/browser/d;->m()Lcom/panasonic/avc/cng/view/parts/t;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;->m()Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
     move-result-object v0
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/parts/t;->k:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->k:Lcom/panasonic/avc/cng/a/c;
 
     iget-object v1, v1, Lcom/panasonic/avc/cng/view/parts/p;->c:Lcom/panasonic/avc/cng/a/d;
 
     invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/a/c;->a(Lcom/panasonic/avc/cng/a/b;)V
 
     .line 176
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
@@ -571,18 +571,18 @@
 
     .line 184
     :goto_0
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->b:Lcom/panasonic/avc/cng/view/play/browser/d;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->b:Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;
 
-    iget-object v1, v1, Lcom/panasonic/avc/cng/view/play/browser/d;->g:Lcom/panasonic/avc/cng/a/c;
+    iget-object v1, v1, Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;->g:Lcom/panasonic/avc/cng/a/c;
 
     iget-object v2, v0, Lcom/panasonic/avc/cng/view/parts/d;->e:Lcom/panasonic/avc/cng/a/d;
 
     invoke-virtual {v1, v2}, Lcom/panasonic/avc/cng/a/c;->a(Lcom/panasonic/avc/cng/a/b;)V
 
     .line 185
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->b:Lcom/panasonic/avc/cng/view/play/browser/d;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->b:Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;
 
-    iget-object v1, v1, Lcom/panasonic/avc/cng/view/play/browser/d;->f:Lcom/panasonic/avc/cng/a/c;
+    iget-object v1, v1, Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;->f:Lcom/panasonic/avc/cng/a/c;
 
     iget-object v0, v0, Lcom/panasonic/avc/cng/view/parts/d;->d:Lcom/panasonic/avc/cng/a/d;
 
@@ -604,18 +604,18 @@
     invoke-direct {v1, v0}, Lcom/panasonic/avc/cng/view/parts/p;-><init>(Landroid/widget/TextView;)V
 
     .line 189
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->b:Lcom/panasonic/avc/cng/view/play/browser/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->b:Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/browser/d;->h:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;->h:Lcom/panasonic/avc/cng/a/c;
 
     iget-object v2, v1, Lcom/panasonic/avc/cng/view/parts/p;->a:Lcom/panasonic/avc/cng/a/d;
 
     invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/a/c;->a(Lcom/panasonic/avc/cng/a/b;)V
 
     .line 190
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->b:Lcom/panasonic/avc/cng/view/play/browser/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->b:Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/browser/d;->i:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;->i:Lcom/panasonic/avc/cng/a/c;
 
     iget-object v1, v1, Lcom/panasonic/avc/cng/view/parts/p;->c:Lcom/panasonic/avc/cng/a/d;
 
@@ -681,18 +681,18 @@
     iput-object v1, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->a:Landroid/app/Activity;
 
     .line 62
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->b:Lcom/panasonic/avc/cng/view/play/browser/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->b:Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;
 
     if-eqz v0, :cond_0
 
     .line 63
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->b:Lcom/panasonic/avc/cng/view/play/browser/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->b:Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/browser/d;->c()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;->c()V
 
     .line 65
     :cond_0
-    iput-object v1, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->b:Lcom/panasonic/avc/cng/view/play/browser/d;
+    iput-object v1, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->b:Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;
 
     .line 66
     return-void
@@ -717,7 +717,7 @@
     return-void
 .end method
 
-.method public a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/play/browser/d;)V
+.method public a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;)V
     .locals 0
 
     .prologue
@@ -725,7 +725,7 @@
     iput-object p1, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->a:Landroid/app/Activity;
 
     .line 44
-    iput-object p2, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->b:Lcom/panasonic/avc/cng/view/play/browser/d;
+    iput-object p2, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->b:Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;
 
     .line 47
     invoke-direct {p0}, Lcom/panasonic/avc/cng/view/play/browser/c;->d()V
@@ -829,7 +829,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->b:Lcom/panasonic/avc/cng/view/play/browser/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->b:Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;
 
     if-eqz v0, :cond_0
 
@@ -842,35 +842,35 @@
 
     const v4, 0x7f03012e
 
-    iget-object v5, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->b:Lcom/panasonic/avc/cng/view/play/browser/d;
+    iget-object v5, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->b:Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;
 
-    invoke-virtual {v5}, Lcom/panasonic/avc/cng/view/play/browser/d;->m()Lcom/panasonic/avc/cng/view/parts/t;
+    invoke-virtual {v5}, Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;->m()Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
     move-result-object v5
 
-    invoke-direct {v2, v3, v4, v5}, Lcom/panasonic/avc/cng/view/parts/w;-><init>(Landroid/content/Context;ILcom/panasonic/avc/cng/view/parts/t;)V
+    invoke-direct {v2, v3, v4, v5}, Lcom/panasonic/avc/cng/view/parts/w;-><init>(Landroid/content/Context;ILcom/panasonic/avc/cng/view/parts/BrowserViewModel;)V
 
     invoke-virtual {v0, v2}, Landroid/widget/GridView;->setAdapter(Landroid/widget/ListAdapter;)V
 
     .line 240
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->c:Landroid/widget/GridView;
 
-    iget-object v2, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->b:Lcom/panasonic/avc/cng/view/play/browser/d;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->b:Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;
 
-    invoke-virtual {v2}, Lcom/panasonic/avc/cng/view/play/browser/d;->i()I
+    invoke-virtual {v2}, Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;->i()I
 
     move-result v2
 
     invoke-virtual {v0, v2}, Landroid/widget/GridView;->setSelection(I)V
 
     .line 243
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->b:Lcom/panasonic/avc/cng/view/play/browser/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->b:Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/browser/d;->m()Lcom/panasonic/avc/cng/view/parts/t;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;->m()Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/parts/t;->d()Ljava/util/List;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->d()Ljava/util/List;
 
     move-result-object v0
 
@@ -883,9 +883,9 @@
     if-eqz p1, :cond_2
 
     .line 245
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->b:Lcom/panasonic/avc/cng/view/play/browser/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->b:Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/browser/d;->n()Lcom/panasonic/avc/cng/view/parts/aa;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;->n()Lcom/panasonic/avc/cng/view/parts/aa;
 
     move-result-object v0
 
@@ -916,14 +916,14 @@
 
     .line 259
     :goto_0
-    iget-object v2, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->b:Lcom/panasonic/avc/cng/view/play/browser/d;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->b:Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;
 
     .line 260
-    invoke-virtual {v2}, Lcom/panasonic/avc/cng/view/play/browser/d;->m()Lcom/panasonic/avc/cng/view/parts/t;
+    invoke-virtual {v2}, Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;->m()Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
     move-result-object v2
 
-    invoke-virtual {v2}, Lcom/panasonic/avc/cng/view/parts/t;->x()I
+    invoke-virtual {v2}, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->x()I
 
     move-result v2
 
@@ -931,9 +931,9 @@
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->b:Lcom/panasonic/avc/cng/view/play/browser/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->b:Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/browser/d;->x()Z
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;->x()Z
 
     move-result v0
 
@@ -943,9 +943,9 @@
 
     .line 262
     :goto_1
-    iget-object v2, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->b:Lcom/panasonic/avc/cng/view/play/browser/d;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->b:Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;
 
-    iget-object v2, v2, Lcom/panasonic/avc/cng/view/play/browser/d;->h:Lcom/panasonic/avc/cng/a/c;
+    iget-object v2, v2, Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;->h:Lcom/panasonic/avc/cng/a/c;
 
     iget-object v3, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->a:Landroid/app/Activity;
 
@@ -956,9 +956,9 @@
     invoke-virtual {v2, v0}, Lcom/panasonic/avc/cng/a/c;->a(Ljava/lang/Object;)V
 
     .line 263
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->b:Lcom/panasonic/avc/cng/view/play/browser/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->b:Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/browser/d;->i:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;->i:Lcom/panasonic/avc/cng/a/c;
 
     invoke-static {v6}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -967,17 +967,17 @@
     invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/a/c;->a(Ljava/lang/Object;)V
 
     .line 264
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->b:Lcom/panasonic/avc/cng/view/play/browser/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->b:Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->b:Lcom/panasonic/avc/cng/view/play/browser/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->b:Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/browser/d;->m()Lcom/panasonic/avc/cng/view/parts/t;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;->m()Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
     move-result-object v0
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/parts/t;->e:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->e:Lcom/panasonic/avc/cng/a/c;
 
     invoke-virtual {v0}, Lcom/panasonic/avc/cng/a/c;->b()Ljava/lang/Object;
 
@@ -992,14 +992,14 @@
     if-eqz v0, :cond_0
 
     .line 266
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->b:Lcom/panasonic/avc/cng/view/play/browser/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->b:Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/browser/d;->w()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;->w()V
 
     .line 267
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->b:Lcom/panasonic/avc/cng/view/play/browser/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->b:Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/browser/d;->j:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;->j:Lcom/panasonic/avc/cng/a/c;
 
     invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -1020,9 +1020,9 @@
 
     .line 271
     :cond_2
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->b:Lcom/panasonic/avc/cng/view/play/browser/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->b:Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/browser/d;->i:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;->i:Lcom/panasonic/avc/cng/a/c;
 
     invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -1047,17 +1047,17 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->b:Lcom/panasonic/avc/cng/view/play/browser/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->b:Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;
 
     if-eqz v0, :cond_0
 
     .line 292
     new-instance v0, Lcom/panasonic/avc/cng/view/parts/t$c;
 
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->b:Lcom/panasonic/avc/cng/view/play/browser/d;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->b:Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;
 
     .line 293
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/play/browser/d;->m()Lcom/panasonic/avc/cng/view/parts/t;
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;->m()Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
     move-result-object v1
 
@@ -1076,7 +1076,7 @@
 
     move-result v3
 
-    invoke-direct {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/parts/t$c;-><init>(Lcom/panasonic/avc/cng/view/parts/t;II)V
+    invoke-direct {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/parts/t$c;-><init>(Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;II)V
 
     .line 297
     :goto_0
@@ -1107,14 +1107,14 @@
 
     .line 308
     :cond_1
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->b:Lcom/panasonic/avc/cng/view/play/browser/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->b:Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;
 
     if-eqz v0, :cond_2
 
     .line 309
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->b:Lcom/panasonic/avc/cng/view/play/browser/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/c;->b:Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/browser/d;->j()I
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;->j()I
 
     move-result v0
 

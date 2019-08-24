@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/panasonic/avc/cng/view/setting/u;
+    value = Lcom/panasonic/avc/cng/view/setting/LiveSetupLumixMirrorlessBaseActivity;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/panasonic/avc/cng/view/setting/u;
+.field final synthetic a:Lcom/panasonic/avc/cng/view/setting/LiveSetupLumixMirrorlessBaseActivity;
 
 
 # direct methods
-.method protected constructor <init>(Lcom/panasonic/avc/cng/view/setting/u;)V
+.method protected constructor <init>(Lcom/panasonic/avc/cng/view/setting/LiveSetupLumixMirrorlessBaseActivity;)V
     .locals 0
 
     .prologue
     .line 1107
-    iput-object p1, p0, Lcom/panasonic/avc/cng/view/setting/u$e;->a:Lcom/panasonic/avc/cng/view/setting/u;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/view/setting/u$e;->a:Lcom/panasonic/avc/cng/view/setting/LiveSetupLumixMirrorlessBaseActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -41,16 +41,16 @@
 
     .prologue
     .line 1139
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/u$e;->a:Lcom/panasonic/avc/cng/view/setting/u;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/u$e;->a:Lcom/panasonic/avc/cng/view/setting/LiveSetupLumixMirrorlessBaseActivity;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/u;->e:Lcom/panasonic/avc/cng/view/setting/am$h;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/LiveSetupLumixMirrorlessBaseActivity;->e:Lcom/panasonic/avc/cng/view/setting/am$h;
 
     if-eqz v0, :cond_0
 
     .line 1141
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/u$e;->a:Lcom/panasonic/avc/cng/view/setting/u;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/u$e;->a:Lcom/panasonic/avc/cng/view/setting/LiveSetupLumixMirrorlessBaseActivity;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/u;->e:Lcom/panasonic/avc/cng/view/setting/am$h;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/LiveSetupLumixMirrorlessBaseActivity;->e:Lcom/panasonic/avc/cng/view/setting/am$h;
 
     invoke-interface {v0}, Lcom/panasonic/avc/cng/view/setting/am$h;->b()V
 
@@ -59,21 +59,21 @@
     if-eqz p1, :cond_1
 
     .line 1147
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/u$e;->a:Lcom/panasonic/avc/cng/view/setting/u;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/u$e;->a:Lcom/panasonic/avc/cng/view/setting/LiveSetupLumixMirrorlessBaseActivity;
 
     sget-object v1, Lcom/panasonic/avc/cng/view/b/b$a;->bh:Lcom/panasonic/avc/cng/view/b/b$a;
 
     const/4 v2, 0x0
 
-    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     .line 1151
     :cond_1
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/u$e;->a:Lcom/panasonic/avc/cng/view/setting/u;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/u$e;->a:Lcom/panasonic/avc/cng/view/setting/LiveSetupLumixMirrorlessBaseActivity;
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/setting/u;->a(Z)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/setting/LiveSetupLumixMirrorlessBaseActivity;->a(Z)V
 
     .line 1152
     return-void
@@ -99,53 +99,53 @@
     const/4 v2, 0x1
 
     .line 1160
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/u$e;->a:Lcom/panasonic/avc/cng/view/setting/u;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/u$e;->a:Lcom/panasonic/avc/cng/view/setting/LiveSetupLumixMirrorlessBaseActivity;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/u;->e:Lcom/panasonic/avc/cng/view/setting/am$h;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/LiveSetupLumixMirrorlessBaseActivity;->e:Lcom/panasonic/avc/cng/view/setting/am$h;
 
     if-eqz v0, :cond_0
 
     .line 1162
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/u$e;->a:Lcom/panasonic/avc/cng/view/setting/u;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/u$e;->a:Lcom/panasonic/avc/cng/view/setting/LiveSetupLumixMirrorlessBaseActivity;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/u;->e:Lcom/panasonic/avc/cng/view/setting/am$h;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/LiveSetupLumixMirrorlessBaseActivity;->e:Lcom/panasonic/avc/cng/view/setting/am$h;
 
     invoke-interface {v0}, Lcom/panasonic/avc/cng/view/setting/am$h;->c()V
 
     .line 1166
     :cond_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/u$e;->a:Lcom/panasonic/avc/cng/view/setting/u;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/u$e;->a:Lcom/panasonic/avc/cng/view/setting/LiveSetupLumixMirrorlessBaseActivity;
 
-    invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/view/setting/u;->a(Z)V
+    invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/view/setting/LiveSetupLumixMirrorlessBaseActivity;->a(Z)V
 
     .line 1168
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/u$e;->a:Lcom/panasonic/avc/cng/view/setting/u;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/u$e;->a:Lcom/panasonic/avc/cng/view/setting/LiveSetupLumixMirrorlessBaseActivity;
 
     sget-object v1, Lcom/panasonic/avc/cng/view/b/b$a;->bh:Lcom/panasonic/avc/cng/view/b/b$a;
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/b/d;->b(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;)Z
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->b(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;)Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
     .line 1170
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/u$e;->a:Lcom/panasonic/avc/cng/view/setting/u;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/u$e;->a:Lcom/panasonic/avc/cng/view/setting/LiveSetupLumixMirrorlessBaseActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;)V
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;)V
 
     .line 1173
     :cond_1
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/u$e;->a:Lcom/panasonic/avc/cng/view/setting/u;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/u$e;->a:Lcom/panasonic/avc/cng/view/setting/LiveSetupLumixMirrorlessBaseActivity;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/u;->_resultBundle:Landroid/os/Bundle;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/LiveSetupLumixMirrorlessBaseActivity;->_resultBundle:Landroid/os/Bundle;
 
     if-eqz v0, :cond_2
 
     .line 1176
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/u$e;->a:Lcom/panasonic/avc/cng/view/setting/u;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/u$e;->a:Lcom/panasonic/avc/cng/view/setting/LiveSetupLumixMirrorlessBaseActivity;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/u;->_resultBundle:Landroid/os/Bundle;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/LiveSetupLumixMirrorlessBaseActivity;->_resultBundle:Landroid/os/Bundle;
 
     const-string v1, "ContentsUpdateKey"
 
@@ -161,24 +161,24 @@
 
     .prologue
     .line 1115
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/u$e;->a:Lcom/panasonic/avc/cng/view/setting/u;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/u$e;->a:Lcom/panasonic/avc/cng/view/setting/LiveSetupLumixMirrorlessBaseActivity;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/u;->e:Lcom/panasonic/avc/cng/view/setting/am$h;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/LiveSetupLumixMirrorlessBaseActivity;->e:Lcom/panasonic/avc/cng/view/setting/am$h;
 
     if-eqz v0, :cond_0
 
     .line 1117
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/u$e;->a:Lcom/panasonic/avc/cng/view/setting/u;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/u$e;->a:Lcom/panasonic/avc/cng/view/setting/LiveSetupLumixMirrorlessBaseActivity;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/u;->e:Lcom/panasonic/avc/cng/view/setting/am$h;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/LiveSetupLumixMirrorlessBaseActivity;->e:Lcom/panasonic/avc/cng/view/setting/am$h;
 
     invoke-interface {v0}, Lcom/panasonic/avc/cng/view/setting/am$h;->c_()V
 
     .line 1121
     :cond_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/u$e;->a:Lcom/panasonic/avc/cng/view/setting/u;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/u$e;->a:Lcom/panasonic/avc/cng/view/setting/LiveSetupLumixMirrorlessBaseActivity;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/u;->h()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupLumixMirrorlessBaseActivity;->h()V
 
     .line 1122
     return-void

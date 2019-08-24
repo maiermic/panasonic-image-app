@@ -2,10 +2,10 @@ package com.google.android.gms.p035d;
 
 import android.os.Binder;
 import android.text.TextUtils;
-import com.google.android.gms.common.C0703w;
-import com.google.android.gms.common.C0704x;
+import com.google.android.gms.common.GooglePlayServicesUtil;
+import com.google.android.gms.common.GoogleSignatureVerifier;
 import com.google.android.gms.common.internal.C0612ab;
-import com.google.android.gms.common.util.C0700o;
+import com.google.android.gms.common.util.UidVerifier;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -45,7 +45,7 @@ public final class C0943it extends C0903hh {
         if (z) {
             try {
                 if (this.f2718b == null) {
-                    if ("com.google.android.gms".equals(this.f2719c) || C0700o.m2565a(this.f2717a.mo2556t(), Binder.getCallingUid()) || C0704x.m2589a(this.f2717a.mo2556t()).mo1765a(this.f2717a.mo2556t().getPackageManager(), Binder.getCallingUid())) {
+                    if ("com.google.android.gms".equals(this.f2719c) || UidVerifier.m2565a(this.f2717a.mo2556t(), Binder.getCallingUid()) || GoogleSignatureVerifier.m2589a(this.f2717a.mo2556t()).mo1765a(this.f2717a.mo2556t().getPackageManager(), Binder.getCallingUid())) {
                         z2 = true;
                     }
                     this.f2718b = Boolean.valueOf(z2);
@@ -58,7 +58,7 @@ public final class C0943it extends C0903hh {
                 throw e;
             }
         }
-        if (this.f2719c == null && C0703w.m2580a(this.f2717a.mo2556t(), Binder.getCallingUid(), str)) {
+        if (this.f2719c == null && GooglePlayServicesUtil.m2580a(this.f2717a.mo2556t(), Binder.getCallingUid(), str)) {
             this.f2719c = str;
         }
         if (!str.equals(this.f2719c)) {

@@ -66,7 +66,7 @@
     .line 2419
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/h$b;->b:Lcom/panasonic/avc/cng/view/liveview/h;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/h;->n:Lcom/panasonic/avc/cng/core/a/g;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/h;->n:Lcom/panasonic/avc/cng/core/a/FocusCommand;
 
     new-instance v1, Ljava/math/BigDecimal;
 
@@ -90,7 +90,7 @@
 
     move-result v1
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/core/a/g;->c(I)Lcom/panasonic/avc/cng/model/c/i;
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/core/a/FocusCommand;->c(I)Lcom/panasonic/avc/cng/model/c/i;
 
     move-result-object v0
 
@@ -106,7 +106,7 @@
 
     const-string v1, "changeScale error."
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 2434
     :cond_0

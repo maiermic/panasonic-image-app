@@ -6,7 +6,7 @@ import com.google.android.gms.common.C0568a;
 public class C0812dz extends C0802dp {
 
     /* renamed from: e */
-    private C0814ea f1823e;
+    private GoogleApiManager f1823e;
 
     /* access modifiers changed from: protected */
     /* renamed from: a */

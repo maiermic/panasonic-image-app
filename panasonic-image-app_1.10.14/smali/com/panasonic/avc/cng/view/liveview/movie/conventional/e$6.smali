@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/view/liveview/movie/conventional/e;->a(Lcom/panasonic/avc/cng/model/c/e;)V
+    value = Lcom/panasonic/avc/cng/view/liveview/movie/conventional/e;->a(Lcom/panasonic/avc/cng/model/c/CameraStatus;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -169,12 +169,12 @@
 
     const/4 v6, 0x1
 
-    invoke-static {v5, v6}, Lcom/panasonic/avc/cng/model/service/z;->a(Landroid/content/Context;Z)Lcom/panasonic/avc/cng/model/service/e;
+    invoke-static {v5, v6}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->a(Landroid/content/Context;Z)Lcom/panasonic/avc/cng/model/service/e;
 
     move-result-object v5
 
     .line 2316
-    invoke-interface {v5}, Lcom/panasonic/avc/cng/model/service/e;->i()Lcom/panasonic/avc/cng/model/c/e;
+    invoke-interface {v5}, Lcom/panasonic/avc/cng/model/service/e;->i()Lcom/panasonic/avc/cng/model/c/CameraStatus;
 
     move-result-object v5
 
@@ -182,7 +182,7 @@
     if-eqz v5, :cond_2
 
     .line 2321
-    invoke-virtual {v5}, Lcom/panasonic/avc/cng/model/c/e;->N()Ljava/lang/String;
+    invoke-virtual {v5}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->N()Ljava/lang/String;
 
     move-result-object v6
 
@@ -301,7 +301,7 @@
 
     const/4 v1, 0x1
 
-    invoke-static {v0, v5, v1}, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/e;->a(Lcom/panasonic/avc/cng/view/liveview/movie/conventional/e;Lcom/panasonic/avc/cng/model/c/e;Z)V
+    invoke-static {v0, v5, v1}, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/e;->a(Lcom/panasonic/avc/cng/view/liveview/movie/conventional/e;Lcom/panasonic/avc/cng/model/c/CameraStatus;Z)V
 
     .line 2429
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/e$6;->a:Lcom/panasonic/avc/cng/view/liveview/movie/conventional/e;
@@ -330,7 +330,7 @@
 
     move-result-object v0
 
-    invoke-interface {v0, v5}, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/e$c;->a(Lcom/panasonic/avc/cng/model/c/e;)V
+    invoke-interface {v0, v5}, Lcom/panasonic/avc/cng/view/liveview/movie/conventional/e$c;->a(Lcom/panasonic/avc/cng/model/c/CameraStatus;)V
     :try_end_1
     .catch Ljava/lang/UnsupportedOperationException; {:try_start_1 .. :try_end_1} :catch_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0

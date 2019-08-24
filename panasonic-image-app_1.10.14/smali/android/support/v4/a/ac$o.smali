@@ -206,7 +206,7 @@
 
     .prologue
     .line 657
-    invoke-static {p1}, Landroid/support/v4/a/aj;->a(Landroid/app/Notification;)Landroid/os/Bundle;
+    invoke-static {p1}, Landroid/support/v4/a/NotificationCompat;->a(Landroid/app/Notification;)Landroid/os/Bundle;
 
     move-result-object v0
 

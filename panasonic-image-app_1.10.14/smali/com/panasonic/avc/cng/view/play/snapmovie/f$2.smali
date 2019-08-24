@@ -87,12 +87,12 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 162
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/snapmovie/f$2;->d:Lcom/panasonic/avc/cng/view/play/snapmovie/f;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/snapmovie/f;->a(Lcom/panasonic/avc/cng/view/play/snapmovie/f;)Lcom/panasonic/avc/cng/core/b/b/d;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/snapmovie/f;->a(Lcom/panasonic/avc/cng/view/play/snapmovie/f;)Lcom/panasonic/avc/cng/core/b/b/OGLDisplayRenderer;
 
     move-result-object v0
 
@@ -105,22 +105,22 @@
 
     const-string v1, "renderer is NULL!!!!"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 165
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/snapmovie/f$2;->d:Lcom/panasonic/avc/cng/view/play/snapmovie/f;
 
-    new-instance v1, Lcom/panasonic/avc/cng/core/b/b/d;
+    new-instance v1, Lcom/panasonic/avc/cng/core/b/b/OGLDisplayRenderer;
 
-    invoke-direct {v1}, Lcom/panasonic/avc/cng/core/b/b/d;-><init>()V
+    invoke-direct {v1}, Lcom/panasonic/avc/cng/core/b/b/OGLDisplayRenderer;-><init>()V
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/play/snapmovie/f;->a(Lcom/panasonic/avc/cng/view/play/snapmovie/f;Lcom/panasonic/avc/cng/core/b/b/d;)Lcom/panasonic/avc/cng/core/b/b/d;
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/play/snapmovie/f;->a(Lcom/panasonic/avc/cng/view/play/snapmovie/f;Lcom/panasonic/avc/cng/core/b/b/OGLDisplayRenderer;)Lcom/panasonic/avc/cng/core/b/b/OGLDisplayRenderer;
 
     .line 167
     :cond_0
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/snapmovie/f$2;->d:Lcom/panasonic/avc/cng/view/play/snapmovie/f;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/snapmovie/f;->a(Lcom/panasonic/avc/cng/view/play/snapmovie/f;)Lcom/panasonic/avc/cng/core/b/b/d;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/snapmovie/f;->a(Lcom/panasonic/avc/cng/view/play/snapmovie/f;)Lcom/panasonic/avc/cng/core/b/b/OGLDisplayRenderer;
 
     move-result-object v0
 
@@ -130,7 +130,7 @@
 
     iget v3, p0, Lcom/panasonic/avc/cng/view/play/snapmovie/f$2;->b:I
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/core/b/b/d;->a(Ljava/lang/Object;II)V
+    invoke-virtual {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/core/b/b/OGLDisplayRenderer;->a(Ljava/lang/Object;II)V
 
     .line 169
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/snapmovie/f$2;->d:Lcom/panasonic/avc/cng/view/play/snapmovie/f;
@@ -171,7 +171,7 @@
 
     const-string v1, "onSurfaceTextureSizeChanged():end"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 177
     return-void

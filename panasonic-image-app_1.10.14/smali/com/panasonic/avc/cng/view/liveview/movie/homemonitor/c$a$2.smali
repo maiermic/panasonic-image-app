@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c$a;->a(Lcom/panasonic/avc/cng/model/c/e;)V
+    value = Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c$a;->a(Lcom/panasonic/avc/cng/model/c/CameraStatus;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,20 +18,20 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/panasonic/avc/cng/model/c/e;
+.field final synthetic a:Lcom/panasonic/avc/cng/model/c/CameraStatus;
 
 .field final synthetic b:Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c$a;
 
 
 # direct methods
-.method constructor <init>(Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c$a;Lcom/panasonic/avc/cng/model/c/e;)V
+.method constructor <init>(Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c$a;Lcom/panasonic/avc/cng/model/c/CameraStatus;)V
     .locals 0
 
     .prologue
     .line 4132
     iput-object p1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c$a$2;->b:Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c$a;
 
-    iput-object p2, p0, Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c$a$2;->a:Lcom/panasonic/avc/cng/model/c/e;
+    iput-object p2, p0, Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c$a$2;->a:Lcom/panasonic/avc/cng/model/c/CameraStatus;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -140,9 +140,9 @@
 
     iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c$a;->a:Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c;
 
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c$a$2;->a:Lcom/panasonic/avc/cng/model/c/e;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c$a$2;->a:Lcom/panasonic/avc/cng/model/c/CameraStatus;
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c;->a(Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c;Lcom/panasonic/avc/cng/model/c/e;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c;->a(Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c;Lcom/panasonic/avc/cng/model/c/CameraStatus;)V
 
     .line 4173
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c$a$2;->b:Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c$a;

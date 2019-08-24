@@ -29,12 +29,12 @@ import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.C1892f;
 import com.panasonic.avc.cng.model.service.C1985b;
 import com.panasonic.avc.cng.model.service.C1985b.C1986a;
-import com.panasonic.avc.cng.model.service.C2253z;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
 import com.panasonic.avc.cng.p038a.C1343b;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.view.common.C2820e;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
 import com.panasonic.avc.cng.view.p073b.C2376f.C2378b;
 import com.panasonic.avc.cng.view.parts.C4145d;
 import com.panasonic.avc.cng.view.parts.C4151e;
@@ -44,12 +44,12 @@ import com.panasonic.avc.cng.view.parts.ImageFlipper;
 import com.panasonic.avc.cng.view.parts.ImageFlipper.C3926a;
 import com.panasonic.avc.cng.view.play.browser.C4373a;
 import com.panasonic.avc.cng.view.play.browser.C4373a.C4402a;
-import com.panasonic.avc.cng.view.setting.C5537al.C5540a;
+import com.panasonic.avc.cng.view.setting.SettingMenuBaseActivity.C5540a;
 import com.panasonic.avc.cng.view.smartoperation.C5917c;
 import com.panasonic.avc.cng.view.smartoperation.PictureJumpActivity;
 import java.util.ArrayList;
 
-public class MirrorlessStopmotionOneContentPreviewActivity extends C5537al {
+public class MirrorlessStopmotionOneContentPreviewActivity extends SettingMenuBaseActivity {
     /* access modifiers changed from: private */
 
     /* renamed from: a */
@@ -107,21 +107,21 @@ public class MirrorlessStopmotionOneContentPreviewActivity extends C5537al {
                 case 1:
                     Bundle bundle = new Bundle();
                     bundle.putInt(C2378b.NEGATIVE_BUTTON_TEXT_ID.name(), R.string.cmn_btn_cancel);
-                    C2331d.m10114a((Activity) MirrorlessStopmotionOneContentPreviewActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE, bundle);
+                    DialogFactory.m10114a((Activity) MirrorlessStopmotionOneContentPreviewActivity.this, C2328a.ON_BROWSE_ACTION_PROCESS_DELETE, bundle);
                     return;
                 case 4:
-                    C2331d.m10100a((Activity) MirrorlessStopmotionOneContentPreviewActivity.this);
+                    DialogFactory.m10100a((Activity) MirrorlessStopmotionOneContentPreviewActivity.this);
                     MirrorlessStopmotionOneContentPreviewActivity.this.mo11649a(true);
                     return;
                 case 5:
                     MirrorlessStopmotionOneContentPreviewActivity.this.mo11649a(true);
-                    C2331d.m10100a((Activity) MirrorlessStopmotionOneContentPreviewActivity.this);
-                    C2331d.m10114a((Activity) MirrorlessStopmotionOneContentPreviewActivity.this, C2328a.ON_BROWSE_ACTION_CANCEL, (Bundle) null);
+                    DialogFactory.m10100a((Activity) MirrorlessStopmotionOneContentPreviewActivity.this);
+                    DialogFactory.m10114a((Activity) MirrorlessStopmotionOneContentPreviewActivity.this, C2328a.ON_BROWSE_ACTION_CANCEL, (Bundle) null);
                     return;
                 case 6:
-                    C2331d.m10100a((Activity) MirrorlessStopmotionOneContentPreviewActivity.this);
+                    DialogFactory.m10100a((Activity) MirrorlessStopmotionOneContentPreviewActivity.this);
                     if (i2 == 0) {
-                        C2331d.m10114a((Activity) MirrorlessStopmotionOneContentPreviewActivity.this, C2328a.ON_BROWSE_ACTION_ERROR_DELETE, (Bundle) null);
+                        DialogFactory.m10114a((Activity) MirrorlessStopmotionOneContentPreviewActivity.this, C2328a.ON_BROWSE_ACTION_ERROR_DELETE, (Bundle) null);
                         return;
                     }
                     return;
@@ -210,16 +210,16 @@ public class MirrorlessStopmotionOneContentPreviewActivity extends C5537al {
                     public void run() {
                         switch (i) {
                             case 1:
-                                C2331d.m10114a((Activity) MirrorlessStopmotionOneContentPreviewActivity.this, C2328a.ON_THREE_BOX_CANNOT_PLAY_MP4, (Bundle) null);
+                                DialogFactory.m10114a((Activity) MirrorlessStopmotionOneContentPreviewActivity.this, C2328a.ON_THREE_BOX_CANNOT_PLAY_MP4, (Bundle) null);
                                 return;
                             case 2:
-                                C2331d.m10114a((Activity) MirrorlessStopmotionOneContentPreviewActivity.this, C2328a.ON_THREE_BOX_NO_CONTENTS, (Bundle) null);
+                                DialogFactory.m10114a((Activity) MirrorlessStopmotionOneContentPreviewActivity.this, C2328a.ON_THREE_BOX_NO_CONTENTS, (Bundle) null);
                                 return;
                             case 5:
-                                C2331d.m10114a((Activity) MirrorlessStopmotionOneContentPreviewActivity.this, C2328a.ON_PROTECTED, (Bundle) null);
+                                DialogFactory.m10114a((Activity) MirrorlessStopmotionOneContentPreviewActivity.this, C2328a.ON_PROTECTED, (Bundle) null);
                                 return;
                             case 6:
-                                C2331d.m10114a((Activity) MirrorlessStopmotionOneContentPreviewActivity.this, C2328a.ON_SHORT_CONTENTS, (Bundle) null);
+                                DialogFactory.m10114a((Activity) MirrorlessStopmotionOneContentPreviewActivity.this, C2328a.ON_SHORT_CONTENTS, (Bundle) null);
                                 return;
                             default:
                                 return;
@@ -236,10 +236,10 @@ public class MirrorlessStopmotionOneContentPreviewActivity extends C5537al {
                     public void run() {
                         switch (i) {
                             case 1:
-                                C2331d.m10114a((Activity) MirrorlessStopmotionOneContentPreviewActivity.this, C2328a.ON_THREE_BOX_SKIP_PLAY_MP4_WEARABLE, (Bundle) null);
+                                DialogFactory.m10114a((Activity) MirrorlessStopmotionOneContentPreviewActivity.this, C2328a.ON_THREE_BOX_SKIP_PLAY_MP4_WEARABLE, (Bundle) null);
                                 return;
                             case 2:
-                                C2331d.m10114a((Activity) MirrorlessStopmotionOneContentPreviewActivity.this, C2328a.ON_THREE_BOX_SKIP_PLAY_MP4_VERTICAL, (Bundle) null);
+                                DialogFactory.m10114a((Activity) MirrorlessStopmotionOneContentPreviewActivity.this, C2328a.ON_THREE_BOX_SKIP_PLAY_MP4_VERTICAL, (Bundle) null);
                                 return;
                             default:
                                 return;
@@ -257,9 +257,9 @@ public class MirrorlessStopmotionOneContentPreviewActivity extends C5537al {
         /* renamed from: a */
         public void mo11669a(String str) {
             if (str.equalsIgnoreCase("high")) {
-                C2331d.m10114a((Activity) MirrorlessStopmotionOneContentPreviewActivity.this, C2328a.ON_DISCONNECT_BY_HIGH_TEMP_NO_FINISH, (Bundle) null);
+                DialogFactory.m10114a((Activity) MirrorlessStopmotionOneContentPreviewActivity.this, C2328a.ON_DISCONNECT_BY_HIGH_TEMP_NO_FINISH, (Bundle) null);
             } else if (str.equalsIgnoreCase("assert")) {
-                C2331d.m10114a((Activity) MirrorlessStopmotionOneContentPreviewActivity.this, C2328a.ON_ASEERT_TEMP_NO_FINISH, (Bundle) null);
+                DialogFactory.m10114a((Activity) MirrorlessStopmotionOneContentPreviewActivity.this, C2328a.ON_ASEERT_TEMP_NO_FINISH, (Bundle) null);
             }
         }
 
@@ -354,7 +354,7 @@ public class MirrorlessStopmotionOneContentPreviewActivity extends C5537al {
     /* access modifiers changed from: protected */
     public void onResume() {
         if (this.f16317c != null) {
-            C2261g.m9763a("MirrorlessStopmotionOneContentPreviewActivity", "viewModel.Resume()");
+            ImageAppLog.debug("MirrorlessStopmotionOneContentPreviewActivity", "viewModel.Resume()");
             if (!this.f16320f || ((!this.f16317c.mo12093o() && !this.f16317c.mo12094p()) || m19838f())) {
                 if (this.f16317c.mo12088j()) {
                     this.f16317c.mo12078a(false);
@@ -372,7 +372,7 @@ public class MirrorlessStopmotionOneContentPreviewActivity extends C5537al {
     /* access modifiers changed from: protected */
     public void onPause() {
         if (this.f16317c != null) {
-            C2261g.m9763a("MirrorlessStopmotionOneContentPreviewActivity", "viewModel.Pause()");
+            ImageAppLog.debug("MirrorlessStopmotionOneContentPreviewActivity", "viewModel.Pause()");
             this.f16317c.mo12084f();
         }
         super.onPause();
@@ -412,7 +412,7 @@ public class MirrorlessStopmotionOneContentPreviewActivity extends C5537al {
     public void finish() {
         OnSetResult();
         if (this.f16317c != null) {
-            C2261g.m9763a("MirrorlessStopmotionOneContentPreviewActivity", "viewModel.Dispose()");
+            ImageAppLog.debug("MirrorlessStopmotionOneContentPreviewActivity", "viewModel.Dispose()");
             this.f16317c.mo3205a();
             this.f16317c = null;
         }
@@ -536,7 +536,7 @@ public class MirrorlessStopmotionOneContentPreviewActivity extends C5537al {
 
             /* renamed from: b */
             public void mo9216b() {
-                C2261g.m9770d("MirrorlessStopmotionOneContentPreviewActivity", "onClick");
+                ImageAppLog.verbose("MirrorlessStopmotionOneContentPreviewActivity", "onClick");
                 if (!MirrorlessStopmotionOneContentPreviewActivity.this.f16315a.mo9209c() && MirrorlessStopmotionOneContentPreviewActivity.this.f16317c != null) {
                     MirrorlessStopmotionOneContentPreviewActivity.this.f16317c.mo12090l();
                 }
@@ -632,15 +632,15 @@ public class MirrorlessStopmotionOneContentPreviewActivity extends C5537al {
     private void m19837e() {
         C1892f a = C1712b.m6919c().mo4896a();
         if (a != null) {
-            C1985b a2 = C2253z.m9679a(this._context, a);
+            C1985b a2 = ServiceFactory.m9679a(this._context, a);
             if (a2 != null) {
                 a2.mo5185a((C1986a) new C1986a() {
                     /* renamed from: a */
                     public void mo5201a() {
                         MirrorlessStopmotionOneContentPreviewActivity.this._handler.post(new Runnable() {
                             public void run() {
-                                if (!C2331d.m10125b((Activity) MirrorlessStopmotionOneContentPreviewActivity.this, C2328a.ON_SUBSCRIBE_UPDATE)) {
-                                    C2331d.m10114a((Activity) MirrorlessStopmotionOneContentPreviewActivity.this, C2328a.ON_SUBSCRIBE_UPDATE, (Bundle) null);
+                                if (!DialogFactory.m10125b((Activity) MirrorlessStopmotionOneContentPreviewActivity.this, C2328a.ON_SUBSCRIBE_UPDATE)) {
+                                    DialogFactory.m10114a((Activity) MirrorlessStopmotionOneContentPreviewActivity.this, C2328a.ON_SUBSCRIBE_UPDATE, (Bundle) null);
                                 }
                             }
                         });
@@ -650,8 +650,8 @@ public class MirrorlessStopmotionOneContentPreviewActivity extends C5537al {
                     public void mo5202b() {
                         MirrorlessStopmotionOneContentPreviewActivity.this._handler.post(new Runnable() {
                             public void run() {
-                                if (C2331d.m10125b((Activity) MirrorlessStopmotionOneContentPreviewActivity.this, C2328a.ON_SUBSCRIBE_UPDATE)) {
-                                    C2331d.m10100a((Activity) MirrorlessStopmotionOneContentPreviewActivity.this);
+                                if (DialogFactory.m10125b((Activity) MirrorlessStopmotionOneContentPreviewActivity.this, C2328a.ON_SUBSCRIBE_UPDATE)) {
+                                    DialogFactory.m10100a((Activity) MirrorlessStopmotionOneContentPreviewActivity.this);
                                 }
                             }
                         });
@@ -661,8 +661,8 @@ public class MirrorlessStopmotionOneContentPreviewActivity extends C5537al {
                     public void mo5203c() {
                         MirrorlessStopmotionOneContentPreviewActivity.this._handler.post(new Runnable() {
                             public void run() {
-                                if (C2331d.m10125b((Activity) MirrorlessStopmotionOneContentPreviewActivity.this, C2328a.ON_SUBSCRIBE_UPDATE)) {
-                                    C2331d.m10100a((Activity) MirrorlessStopmotionOneContentPreviewActivity.this);
+                                if (DialogFactory.m10125b((Activity) MirrorlessStopmotionOneContentPreviewActivity.this, C2328a.ON_SUBSCRIBE_UPDATE)) {
+                                    DialogFactory.m10100a((Activity) MirrorlessStopmotionOneContentPreviewActivity.this);
                                 }
                             }
                         });

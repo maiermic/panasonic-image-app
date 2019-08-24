@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;I)V
+    value = Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;I)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -45,13 +45,13 @@
     .line 335
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/b/d$5;->a:Landroid/app/Activity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;)V
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;)V
 
     .line 336
-    invoke-static {v1}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/os/Handler;)Landroid/os/Handler;
+    invoke-static {v1}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/os/Handler;)Landroid/os/Handler;
 
     .line 337
-    invoke-static {v1}, Lcom/panasonic/avc/cng/view/b/d;->a(Ljava/lang/Runnable;)Ljava/lang/Runnable;
+    invoke-static {v1}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Ljava/lang/Runnable;)Ljava/lang/Runnable;
 
     .line 338
     return-void

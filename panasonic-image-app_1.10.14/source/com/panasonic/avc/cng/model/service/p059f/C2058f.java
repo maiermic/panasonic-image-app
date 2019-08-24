@@ -4,12 +4,12 @@ import android.content.Context;
 import android.media.AudioManager;
 import com.panasonic.avc.cng.core.p040a.C1473at;
 import com.panasonic.avc.cng.core.p040a.C1533q;
-import com.panasonic.avc.cng.core.p040a.C1535s;
+import com.panasonic.avc.cng.core.p040a.LiveViewCommand;
 import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.C1892f;
 import com.panasonic.avc.cng.model.C1897j;
 import com.panasonic.avc.cng.model.C1897j.C1905h;
-import com.panasonic.avc.cng.model.p051c.C1853h;
+import com.panasonic.avc.cng.model.p051c.ParseTagHighlightSceneInfo;
 import com.panasonic.avc.cng.model.service.C2176k;
 import com.panasonic.avc.cng.model.service.C2176k.C2177a;
 
@@ -23,10 +23,10 @@ public class C2058f implements C1533q, C2176k {
     private C2177a f6361b;
 
     /* renamed from: c */
-    private C1535s f6362c;
+    private LiveViewCommand f6362c;
 
     /* renamed from: d */
-    private C2048b f6363d = null;
+    private G711Renderer f6363d = null;
 
     /* renamed from: e */
     private C2051c f6364e = null;
@@ -47,9 +47,9 @@ public class C2058f implements C1533q, C2176k {
     public void mo5369f() {
         this.f6360a = C1712b.m6919c().mo4896a();
         if (this.f6360a != null) {
-            this.f6362c = new C1535s(this.f6360a.f5682d, this.f6360a.mo4891e());
+            this.f6362c = new LiveViewCommand(this.f6360a.f5682d, this.f6360a.mo4891e());
         }
-        this.f6363d = new C2048b();
+        this.f6363d = new G711Renderer();
         if (this.f6365f) {
             this.f6364e = new C2051c(true, this.f6365f);
         } else {
@@ -131,7 +131,7 @@ public class C2058f implements C1533q, C2176k {
     }
 
     /* renamed from: a */
-    public void mo3781a(C1853h hVar) {
+    public void mo3781a(ParseTagHighlightSceneInfo hVar) {
         if (this.f6361b != null) {
             C1897j jVar = new C1897j();
             jVar.getClass();

@@ -53,7 +53,7 @@
 
     const v3, 0x7f070292
 
-    invoke-static {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/b/d;->c(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;II)V
+    invoke-static {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->c(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;II)V
 
     .line 684
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/smartoperation/PicmateSendActivity$3;->b:Lcom/panasonic/avc/cng/view/smartoperation/PicmateSendActivity;
@@ -66,7 +66,7 @@
 
     invoke-direct {v3, p0}, Lcom/panasonic/avc/cng/view/smartoperation/PicmateSendActivity$3$1;-><init>(Lcom/panasonic/avc/cng/view/smartoperation/PicmateSendActivity$3;)V
 
-    invoke-static {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;ILandroid/view/View$OnClickListener;)V
+    invoke-static {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;ILandroid/view/View$OnClickListener;)V
 
     .line 702
     return-void

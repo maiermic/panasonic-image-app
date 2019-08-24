@@ -57,9 +57,9 @@
     :cond_0
     iget-object v0, p0, Lcom/panasonic/avc/cng/application/c$f$1;->a:Lcom/panasonic/avc/cng/application/c$f;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/application/c$f;->a:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/application/c$f;->a:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/application/c;->c(Lcom/panasonic/avc/cng/application/c;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->c(Lcom/panasonic/avc/cng/application/NfcSupportViewModel;)Landroid/os/Handler;
 
     move-result-object v0
 
@@ -93,9 +93,9 @@
     :cond_0
     iget-object v0, p0, Lcom/panasonic/avc/cng/application/c$f$1;->a:Lcom/panasonic/avc/cng/application/c$f;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/application/c$f;->a:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/application/c$f;->a:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/application/c;->b(Lcom/panasonic/avc/cng/application/c;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->b(Lcom/panasonic/avc/cng/application/NfcSupportViewModel;)Landroid/os/Handler;
 
     move-result-object v0
 
@@ -130,9 +130,9 @@
     :cond_1
     iget-object v0, p0, Lcom/panasonic/avc/cng/application/c$f$1;->a:Lcom/panasonic/avc/cng/application/c$f;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/application/c$f;->a:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/application/c$f;->a:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/application/c;->d(Lcom/panasonic/avc/cng/application/c;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->d(Lcom/panasonic/avc/cng/application/NfcSupportViewModel;)Landroid/os/Handler;
 
     move-result-object v0
 
@@ -141,9 +141,9 @@
     .line 217
     iget-object v0, p0, Lcom/panasonic/avc/cng/application/c$f$1;->a:Lcom/panasonic/avc/cng/application/c$f;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/application/c$f;->a:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/application/c$f;->a:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/application/c;->f(Lcom/panasonic/avc/cng/application/c;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->f(Lcom/panasonic/avc/cng/application/NfcSupportViewModel;)Landroid/os/Handler;
 
     move-result-object v0
 

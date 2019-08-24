@@ -12,18 +12,18 @@ import com.panasonic.avc.cng.view.p072a.C2313g;
 import com.panasonic.avc.cng.view.p072a.C2316j;
 import com.panasonic.avc.cng.view.p073b.C2317a.C2325c;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
 import com.panasonic.avc.cng.view.p073b.C2376f.C2378b;
-import com.panasonic.avc.cng.view.parts.C4245t.C4252c;
-import com.panasonic.avc.cng.view.parts.C4245t.C4255e;
-import com.panasonic.avc.cng.view.play.highlight.C4486b.C4492b;
+import com.panasonic.avc.cng.view.parts.BrowserViewModel.C4252c;
+import com.panasonic.avc.cng.view.parts.BrowserViewModel.C4255e;
+import com.panasonic.avc.cng.view.play.highlight.HighlightViewModel.C4492b;
 import com.panasonic.avc.cng.view.play.p076a.C4270a;
 
 public class HighlightActivity extends C4270a {
     /* access modifiers changed from: private */
 
     /* renamed from: a */
-    public C4486b f14738a;
+    public HighlightViewModel f14738a;
     /* access modifiers changed from: private */
 
     /* renamed from: b */
@@ -77,7 +77,7 @@ public class HighlightActivity extends C4270a {
         public void mo10008a(int i, int i2) {
             HighlightActivity.this._cameraUtil.mo6032a((Runnable) new Runnable() {
                 public void run() {
-                    C2331d.m10114a((Activity) HighlightActivity.this, C2328a.ON_EXCEEDED_MAX_SELECT_NUM, (Bundle) null);
+                    DialogFactory.m10114a((Activity) HighlightActivity.this, C2328a.ON_EXCEEDED_MAX_SELECT_NUM, (Bundle) null);
                 }
             });
         }
@@ -108,36 +108,36 @@ public class HighlightActivity extends C4270a {
         public void mo10519a() {
             Bundle bundle = new Bundle();
             bundle.putInt(C2378b.MESSAGE_ID.name(), R.string.ply_highlight_creating);
-            C2331d.m10115a((Activity) HighlightActivity.this, C2328a.PROCESS_PROGRESS, bundle, (C2325c) new C2325c() {
+            DialogFactory.m10115a((Activity) HighlightActivity.this, C2328a.PROCESS_PROGRESS, bundle, (C2325c) new C2325c() {
                 /* renamed from: a */
                 public void mo6131a() {
-                    C2331d.m10111a((Activity) HighlightActivity.this, C2328a.PROCESS_PROGRESS, (int) R.id.percent_num, (CharSequence) "0");
-                    C2331d.m10136e(HighlightActivity.this, C2328a.PROCESS_PROGRESS, R.id.slash, 4);
+                    DialogFactory.m10111a((Activity) HighlightActivity.this, C2328a.PROCESS_PROGRESS, (int) R.id.percent_num, (CharSequence) "0");
+                    DialogFactory.m10136e(HighlightActivity.this, C2328a.PROCESS_PROGRESS, R.id.slash, 4);
                 }
             });
         }
 
         /* renamed from: a */
         public void mo10520a(int i) {
-            C2331d.m10111a((Activity) HighlightActivity.this, C2328a.PROCESS_PROGRESS, (int) R.id.percent_num, (CharSequence) String.valueOf(i));
-            C2331d.m10104a((Activity) HighlightActivity.this, C2328a.PROCESS_PROGRESS, (int) R.id.progressBar2, i);
+            DialogFactory.m10111a((Activity) HighlightActivity.this, C2328a.PROCESS_PROGRESS, (int) R.id.percent_num, (CharSequence) String.valueOf(i));
+            DialogFactory.m10104a((Activity) HighlightActivity.this, C2328a.PROCESS_PROGRESS, (int) R.id.progressBar2, i);
         }
 
         /* renamed from: a */
         public void mo10521a(String str) {
-            C2331d.m10100a((Activity) HighlightActivity.this);
+            DialogFactory.m10100a((Activity) HighlightActivity.this);
             if (str.equalsIgnoreCase("nohighlight")) {
-                C2331d.m10114a((Activity) HighlightActivity.this, C2328a.ERROR_NO_HIGHLIGHT, (Bundle) null);
+                DialogFactory.m10114a((Activity) HighlightActivity.this, C2328a.ERROR_NO_HIGHLIGHT, (Bundle) null);
             } else if (str.equalsIgnoreCase("noremain")) {
-                C2331d.m10114a((Activity) HighlightActivity.this, C2328a.ERROR_NO_REMAIN, (Bundle) null);
+                DialogFactory.m10114a((Activity) HighlightActivity.this, C2328a.ERROR_NO_REMAIN, (Bundle) null);
             } else {
-                C2331d.m10114a((Activity) HighlightActivity.this, C2328a.ERROR_HIGHLIGHT, (Bundle) null);
+                DialogFactory.m10114a((Activity) HighlightActivity.this, C2328a.ERROR_HIGHLIGHT, (Bundle) null);
             }
         }
 
         /* renamed from: b */
         public void mo10522b() {
-            C2331d.m10100a((Activity) HighlightActivity.this);
+            DialogFactory.m10100a((Activity) HighlightActivity.this);
             if (HighlightActivity.this.f14738a != null) {
                 HighlightActivity.this.f14738a.mo6022d().putBoolean("GalleryUpdateKey", true);
             }
@@ -146,7 +146,7 @@ public class HighlightActivity extends C4270a {
 
         /* renamed from: c */
         public void mo10523c() {
-            C2331d.m10100a((Activity) HighlightActivity.this);
+            DialogFactory.m10100a((Activity) HighlightActivity.this);
         }
     }
 
@@ -159,9 +159,9 @@ public class HighlightActivity extends C4270a {
         this._handler = new Handler();
         this.f14740c = new C4477a();
         this.f14741d = new C4482b();
-        this.f14738a = (C4486b) C2316j.m10030a("HighlightViewModel");
+        this.f14738a = (HighlightViewModel) C2316j.m10030a("HighlightViewModel");
         if (this.f14738a == null) {
-            this.f14738a = new C4486b(this._context, this._handler);
+            this.f14738a = new HighlightViewModel(this._context, this._handler);
             this.f14738a.mo10529a(this._context, this._handler, this.f14740c, this.f14741d);
             C2316j.m10032a("HighlightViewModel", this.f14738a);
             Bundle extras = getIntent().getExtras();
@@ -214,10 +214,10 @@ public class HighlightActivity extends C4270a {
             Bundle bundle = new Bundle();
             bundle.putStringArray(C2378b.SINGLE_CHOICE_LIST.name(), this.f14738a.mo10534i().mo12924d());
             bundle.putInt(C2378b.SINGLE_CHOICE_CHECKED_ITEM.name(), this.f14738a.mo10534i().mo12925e());
-            C2331d.m10115a((Activity) this, C2328a.HIGMLIGHT_MEDIA_SELECT, bundle, (C2325c) new C2325c() {
+            DialogFactory.m10115a((Activity) this, C2328a.HIGMLIGHT_MEDIA_SELECT, bundle, (C2325c) new C2325c() {
                 /* renamed from: a */
                 public void mo6131a() {
-                    C2331d.m10129c((Activity) HighlightActivity.this, C2328a.HIGMLIGHT_MEDIA_SELECT, (int) R.id.title, (int) R.string.smartop_albumlist_title);
+                    DialogFactory.m10129c((Activity) HighlightActivity.this, C2328a.HIGMLIGHT_MEDIA_SELECT, (int) R.id.title, (int) R.string.smartop_albumlist_title);
                 }
             });
         }
@@ -228,10 +228,10 @@ public class HighlightActivity extends C4270a {
             Bundle bundle = new Bundle();
             bundle.putStringArray(C2378b.SINGLE_CHOICE_LIST.name(), this.f14738a.mo10534i().mo12927g());
             bundle.putInt(C2378b.SINGLE_CHOICE_CHECKED_ITEM.name(), this.f14738a.mo10534i().mo12930j());
-            C2331d.m10115a((Activity) this, C2328a.HIGHLIGHT_FORMAT_SELECT, bundle, (C2325c) new C2325c() {
+            DialogFactory.m10115a((Activity) this, C2328a.HIGHLIGHT_FORMAT_SELECT, bundle, (C2325c) new C2325c() {
                 /* renamed from: a */
                 public void mo6131a() {
-                    C2331d.m10129c((Activity) HighlightActivity.this, C2328a.HIGHLIGHT_FORMAT_SELECT, (int) R.id.title, (int) R.string.smartop_albumlist_title);
+                    DialogFactory.m10129c((Activity) HighlightActivity.this, C2328a.HIGHLIGHT_FORMAT_SELECT, (int) R.id.title, (int) R.string.smartop_albumlist_title);
                 }
             });
         }
@@ -245,7 +245,7 @@ public class HighlightActivity extends C4270a {
 
     public void OnClickHighlightExecute(View view) {
         if (!isFinishing() && !this.f14738a.mo10537l() && this.f14738a.mo10533h().mo9981o() <= 0) {
-            C2331d.m10114a((Activity) this, C2328a.ERROR_NO_CONTENT_SELECT, (Bundle) null);
+            DialogFactory.m10114a((Activity) this, C2328a.ERROR_NO_CONTENT_SELECT, (Bundle) null);
         }
     }
 
@@ -262,8 +262,8 @@ public class HighlightActivity extends C4270a {
             case PROCESS_PROGRESS:
                 if (this.f14738a != null) {
                     this.f14738a.mo10538m();
-                    C2331d.m10100a((Activity) this);
-                    C2331d.m10114a((Activity) this, C2328a.WAIT_PROCESSING, (Bundle) null);
+                    DialogFactory.m10100a((Activity) this);
+                    DialogFactory.m10114a((Activity) this, C2328a.WAIT_PROCESSING, (Bundle) null);
                     return;
                 }
                 return;
@@ -285,11 +285,11 @@ public class HighlightActivity extends C4270a {
         switch (aVar) {
             case HIGMLIGHT_MEDIA_SELECT:
                 this.f14738a.mo10534i().mo12918a(i);
-                C2331d.m10100a((Activity) this);
+                DialogFactory.m10100a((Activity) this);
                 return;
             case HIGHLIGHT_FORMAT_SELECT:
                 this.f14738a.mo10534i().mo12920b(i);
-                C2331d.m10100a((Activity) this);
+                DialogFactory.m10100a((Activity) this);
                 return;
             default:
                 super.onSingleChoice(aVar, i);

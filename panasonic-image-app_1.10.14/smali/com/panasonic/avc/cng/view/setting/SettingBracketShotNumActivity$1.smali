@@ -43,7 +43,7 @@
     .line 100
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/SettingBracketShotNumActivity$1;->a:Lcom/panasonic/avc/cng/view/setting/SettingBracketShotNumActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/SettingBracketShotNumActivity;->a(Lcom/panasonic/avc/cng/view/setting/SettingBracketShotNumActivity;)Lcom/panasonic/avc/cng/view/setting/ak;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/SettingBracketShotNumActivity;->a(Lcom/panasonic/avc/cng/view/setting/SettingBracketShotNumActivity;)Lcom/panasonic/avc/cng/view/setting/SettingBracketViewModel;
 
     move-result-object v0
 
@@ -52,11 +52,11 @@
     .line 102
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/SettingBracketShotNumActivity$1;->a:Lcom/panasonic/avc/cng/view/setting/SettingBracketShotNumActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/SettingBracketShotNumActivity;->a(Lcom/panasonic/avc/cng/view/setting/SettingBracketShotNumActivity;)Lcom/panasonic/avc/cng/view/setting/ak;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/SettingBracketShotNumActivity;->a(Lcom/panasonic/avc/cng/view/setting/SettingBracketShotNumActivity;)Lcom/panasonic/avc/cng/view/setting/SettingBracketViewModel;
 
     move-result-object v0
 
-    invoke-virtual {v0, p1}, Lcom/panasonic/avc/cng/view/setting/ak;->a(Ljava/lang/String;)V
+    invoke-virtual {v0, p1}, Lcom/panasonic/avc/cng/view/setting/SettingBracketViewModel;->a(Ljava/lang/String;)V
 
     .line 104
     :cond_0

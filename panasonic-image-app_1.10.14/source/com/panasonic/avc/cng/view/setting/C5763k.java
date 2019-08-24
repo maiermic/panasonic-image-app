@@ -8,7 +8,7 @@ import android.content.res.Configuration;
 import android.os.Bundle;
 import android.view.View;
 import com.panasonic.avc.cng.application.p039a.C1350a;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.view.p073b.C2317a.C2323a;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
 
@@ -19,7 +19,7 @@ public class C5763k extends C1350a implements C2323a, C5765m {
     private static final String f17701d = C5763k.class.getSimpleName();
 
     /* renamed from: a */
-    protected C5760j f17702a = EasyWiFiSettingActivity.m19025a();
+    protected EasyWiFiManager f17702a = EasyWiFiSettingActivity.m19025a();
 
     /* renamed from: b */
     protected boolean f17703b = false;
@@ -59,7 +59,7 @@ public class C5763k extends C1350a implements C2323a, C5765m {
     public void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         if (m21343b()) {
-            C2261g.m9770d(f17701d, "onCreate");
+            ImageAppLog.verbose(f17701d, "onCreate");
         }
         requestWindowFeature(1);
     }

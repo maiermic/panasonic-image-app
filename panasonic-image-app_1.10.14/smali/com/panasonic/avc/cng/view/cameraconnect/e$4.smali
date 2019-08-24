@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/view/cameraconnect/e;->e(Z)V
+    value = Lcom/panasonic/avc/cng/view/cameraconnect/CameraConnectViewModel;->e(Z)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,16 +20,16 @@
 # instance fields
 .field final synthetic a:Z
 
-.field final synthetic b:Lcom/panasonic/avc/cng/view/cameraconnect/e;
+.field final synthetic b:Lcom/panasonic/avc/cng/view/cameraconnect/CameraConnectViewModel;
 
 
 # direct methods
-.method constructor <init>(Lcom/panasonic/avc/cng/view/cameraconnect/e;Z)V
+.method constructor <init>(Lcom/panasonic/avc/cng/view/cameraconnect/CameraConnectViewModel;Z)V
     .locals 0
 
     .prologue
     .line 1381
-    iput-object p1, p0, Lcom/panasonic/avc/cng/view/cameraconnect/e$4;->b:Lcom/panasonic/avc/cng/view/cameraconnect/e;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/view/cameraconnect/e$4;->b:Lcom/panasonic/avc/cng/view/cameraconnect/CameraConnectViewModel;
 
     iput-boolean p2, p0, Lcom/panasonic/avc/cng/view/cameraconnect/e$4;->a:Z
 
@@ -45,16 +45,16 @@
 
     .prologue
     .line 1383
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/e$4;->b:Lcom/panasonic/avc/cng/view/cameraconnect/e;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/e$4;->b:Lcom/panasonic/avc/cng/view/cameraconnect/CameraConnectViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/cameraconnect/e;->d:Lcom/panasonic/avc/cng/view/cameraconnect/e$a;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/cameraconnect/CameraConnectViewModel;->d:Lcom/panasonic/avc/cng/view/cameraconnect/e$a;
 
     if-eqz v0, :cond_0
 
     .line 1385
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/e$4;->b:Lcom/panasonic/avc/cng/view/cameraconnect/e;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/cameraconnect/e$4;->b:Lcom/panasonic/avc/cng/view/cameraconnect/CameraConnectViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/cameraconnect/e;->d:Lcom/panasonic/avc/cng/view/cameraconnect/e$a;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/cameraconnect/CameraConnectViewModel;->d:Lcom/panasonic/avc/cng/view/cameraconnect/e$a;
 
     iget-boolean v1, p0, Lcom/panasonic/avc/cng/view/cameraconnect/e$4;->a:Z
 

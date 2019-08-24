@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/model/service/g/a;->a(Ljava/util/List;Ljava/lang/String;Ljava/lang/String;ZLcom/panasonic/avc/cng/model/service/n$a;)V
+    value = Lcom/panasonic/avc/cng/model/service/g/MultiPhotoService;->a(Ljava/util/List;Ljava/lang/String;Ljava/lang/String;ZLcom/panasonic/avc/cng/model/service/n$a;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -26,16 +26,16 @@
 
 .field final synthetic d:Ljava/util/List;
 
-.field final synthetic e:Lcom/panasonic/avc/cng/model/service/g/a;
+.field final synthetic e:Lcom/panasonic/avc/cng/model/service/g/MultiPhotoService;
 
 
 # direct methods
-.method constructor <init>(Lcom/panasonic/avc/cng/model/service/g/a;Lcom/panasonic/avc/cng/model/service/n$a;ILjava/util/List;Ljava/util/List;)V
+.method constructor <init>(Lcom/panasonic/avc/cng/model/service/g/MultiPhotoService;Lcom/panasonic/avc/cng/model/service/n$a;ILjava/util/List;Ljava/util/List;)V
     .locals 0
 
     .prologue
     .line 281
-    iput-object p1, p0, Lcom/panasonic/avc/cng/model/service/g/a$2;->e:Lcom/panasonic/avc/cng/model/service/g/a;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/model/service/g/a$2;->e:Lcom/panasonic/avc/cng/model/service/g/MultiPhotoService;
 
     iput-object p2, p0, Lcom/panasonic/avc/cng/model/service/g/a$2;->a:Lcom/panasonic/avc/cng/model/service/n$a;
 
@@ -57,9 +57,9 @@
 
     .prologue
     .line 285
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/g/a$2;->e:Lcom/panasonic/avc/cng/model/service/g/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/g/a$2;->e:Lcom/panasonic/avc/cng/model/service/g/MultiPhotoService;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/g/a;->a(Lcom/panasonic/avc/cng/model/service/g/a;)Z
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/g/MultiPhotoService;->a(Lcom/panasonic/avc/cng/model/service/g/MultiPhotoService;)Z
 
     move-result v0
 
@@ -70,23 +70,23 @@
 
     const-string v1, "CopyFromDeviceExtraCancel"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 289
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/g/a$2;->e:Lcom/panasonic/avc/cng/model/service/g/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/g/a$2;->e:Lcom/panasonic/avc/cng/model/service/g/MultiPhotoService;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/g/a;->b(Lcom/panasonic/avc/cng/model/service/g/a;)Lcom/panasonic/avc/cng/model/service/c;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/g/MultiPhotoService;->b(Lcom/panasonic/avc/cng/model/service/g/MultiPhotoService;)Lcom/panasonic/avc/cng/model/service/c;
 
     move-result-object v0
 
     invoke-interface {v0}, Lcom/panasonic/avc/cng/model/service/c;->e()V
 
     .line 291
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/g/a$2;->e:Lcom/panasonic/avc/cng/model/service/g/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/g/a$2;->e:Lcom/panasonic/avc/cng/model/service/g/MultiPhotoService;
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/model/service/g/a;->a(Lcom/panasonic/avc/cng/model/service/g/a;Z)Z
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/model/service/g/MultiPhotoService;->a(Lcom/panasonic/avc/cng/model/service/g/MultiPhotoService;Z)Z
 
     .line 294
     :cond_0
@@ -95,9 +95,9 @@
     if-eqz v0, :cond_2
 
     .line 296
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/g/a$2;->e:Lcom/panasonic/avc/cng/model/service/g/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/g/a$2;->e:Lcom/panasonic/avc/cng/model/service/g/MultiPhotoService;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/g/a;->c(Lcom/panasonic/avc/cng/model/service/g/a;)I
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/g/MultiPhotoService;->c(Lcom/panasonic/avc/cng/model/service/g/MultiPhotoService;)I
 
     move-result v0
 
@@ -112,9 +112,9 @@
 
     .line 300
     :cond_1
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/g/a$2;->e:Lcom/panasonic/avc/cng/model/service/g/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/g/a$2;->e:Lcom/panasonic/avc/cng/model/service/g/MultiPhotoService;
 
-    invoke-static {v0, p2}, Lcom/panasonic/avc/cng/model/service/g/a;->a(Lcom/panasonic/avc/cng/model/service/g/a;I)I
+    invoke-static {v0, p2}, Lcom/panasonic/avc/cng/model/service/g/MultiPhotoService;->a(Lcom/panasonic/avc/cng/model/service/g/MultiPhotoService;I)I
 
     .line 302
     :cond_2
@@ -170,9 +170,9 @@
     if-eqz v0, :cond_2
 
     .line 316
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/g/a$2;->e:Lcom/panasonic/avc/cng/model/service/g/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/g/a$2;->e:Lcom/panasonic/avc/cng/model/service/g/MultiPhotoService;
 
-    invoke-static {v0, v3}, Lcom/panasonic/avc/cng/model/service/g/a;->b(Lcom/panasonic/avc/cng/model/service/g/a;Z)Z
+    invoke-static {v0, v3}, Lcom/panasonic/avc/cng/model/service/g/MultiPhotoService;->b(Lcom/panasonic/avc/cng/model/service/g/MultiPhotoService;Z)Z
 
     .line 317
     iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/g/a$2;->a:Lcom/panasonic/avc/cng/model/service/n$a;
@@ -196,9 +196,9 @@
     if-eqz v0, :cond_3
 
     .line 321
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/g/a$2;->e:Lcom/panasonic/avc/cng/model/service/g/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/g/a$2;->e:Lcom/panasonic/avc/cng/model/service/g/MultiPhotoService;
 
-    invoke-static {v0, v3}, Lcom/panasonic/avc/cng/model/service/g/a;->b(Lcom/panasonic/avc/cng/model/service/g/a;Z)Z
+    invoke-static {v0, v3}, Lcom/panasonic/avc/cng/model/service/g/MultiPhotoService;->b(Lcom/panasonic/avc/cng/model/service/g/MultiPhotoService;Z)Z
 
     .line 322
     iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/g/a$2;->a:Lcom/panasonic/avc/cng/model/service/n$a;
@@ -224,9 +224,9 @@
     if-eqz v0, :cond_0
 
     .line 326
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/g/a$2;->e:Lcom/panasonic/avc/cng/model/service/g/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/g/a$2;->e:Lcom/panasonic/avc/cng/model/service/g/MultiPhotoService;
 
-    invoke-static {v0, v3}, Lcom/panasonic/avc/cng/model/service/g/a;->b(Lcom/panasonic/avc/cng/model/service/g/a;Z)Z
+    invoke-static {v0, v3}, Lcom/panasonic/avc/cng/model/service/g/MultiPhotoService;->b(Lcom/panasonic/avc/cng/model/service/g/MultiPhotoService;Z)Z
 
     .line 327
     iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/g/a$2;->a:Lcom/panasonic/avc/cng/model/service/n$a;

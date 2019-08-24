@@ -84,12 +84,12 @@
 
     move-result-object v2
 
-    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 2034
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/browser/a$6;->a:Lcom/panasonic/avc/cng/view/play/browser/a;
 
-    invoke-static {v1}, Lcom/panasonic/avc/cng/view/play/browser/a;->i(Lcom/panasonic/avc/cng/view/play/browser/a;)Lcom/panasonic/avc/cng/view/parts/ba;
+    invoke-static {v1}, Lcom/panasonic/avc/cng/view/play/browser/a;->i(Lcom/panasonic/avc/cng/view/play/browser/a;)Lcom/panasonic/avc/cng/view/parts/QuickAction;
 
     move-result-object v1
 
@@ -98,25 +98,25 @@
     .line 2035
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/browser/a$6;->a:Lcom/panasonic/avc/cng/view/play/browser/a;
 
-    invoke-static {v1}, Lcom/panasonic/avc/cng/view/play/browser/a;->i(Lcom/panasonic/avc/cng/view/play/browser/a;)Lcom/panasonic/avc/cng/view/parts/ba;
+    invoke-static {v1}, Lcom/panasonic/avc/cng/view/play/browser/a;->i(Lcom/panasonic/avc/cng/view/play/browser/a;)Lcom/panasonic/avc/cng/view/parts/QuickAction;
 
     move-result-object v1
 
-    invoke-virtual {v1, v9}, Lcom/panasonic/avc/cng/view/parts/ba;->a(Landroid/widget/PopupWindow$OnDismissListener;)V
+    invoke-virtual {v1, v9}, Lcom/panasonic/avc/cng/view/parts/QuickAction;->a(Landroid/widget/PopupWindow$OnDismissListener;)V
 
     .line 2036
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/browser/a$6;->a:Lcom/panasonic/avc/cng/view/play/browser/a;
 
-    invoke-static {v1}, Lcom/panasonic/avc/cng/view/play/browser/a;->i(Lcom/panasonic/avc/cng/view/play/browser/a;)Lcom/panasonic/avc/cng/view/parts/ba;
+    invoke-static {v1}, Lcom/panasonic/avc/cng/view/play/browser/a;->i(Lcom/panasonic/avc/cng/view/play/browser/a;)Lcom/panasonic/avc/cng/view/parts/QuickAction;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/parts/ba;->d()V
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/parts/QuickAction;->d()V
 
     .line 2037
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/browser/a$6;->a:Lcom/panasonic/avc/cng/view/play/browser/a;
 
-    invoke-static {v1, v9}, Lcom/panasonic/avc/cng/view/play/browser/a;->a(Lcom/panasonic/avc/cng/view/play/browser/a;Lcom/panasonic/avc/cng/view/parts/ba;)Lcom/panasonic/avc/cng/view/parts/ba;
+    invoke-static {v1, v9}, Lcom/panasonic/avc/cng/view/play/browser/a;->a(Lcom/panasonic/avc/cng/view/play/browser/a;Lcom/panasonic/avc/cng/view/parts/QuickAction;)Lcom/panasonic/avc/cng/view/parts/QuickAction;
 
     .line 2040
     :cond_0

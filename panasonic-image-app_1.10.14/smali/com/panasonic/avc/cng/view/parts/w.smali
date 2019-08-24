@@ -6,13 +6,13 @@
 # instance fields
 .field private a:Landroid/content/Context;
 
-.field private b:Lcom/panasonic/avc/cng/view/parts/t;
+.field private b:Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
 .field private c:I
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;ILcom/panasonic/avc/cng/view/parts/t;)V
+.method public constructor <init>(Landroid/content/Context;ILcom/panasonic/avc/cng/view/parts/BrowserViewModel;)V
     .locals 0
 
     .prologue
@@ -26,7 +26,7 @@
     iput p2, p0, Lcom/panasonic/avc/cng/view/parts/w;->c:I
 
     .line 27
-    iput-object p3, p0, Lcom/panasonic/avc/cng/view/parts/w;->b:Lcom/panasonic/avc/cng/view/parts/t;
+    iput-object p3, p0, Lcom/panasonic/avc/cng/view/parts/w;->b:Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
     .line 28
     return-void
@@ -34,12 +34,12 @@
 
 
 # virtual methods
-.method public a(Lcom/panasonic/avc/cng/view/parts/t;)V
+.method public a(Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;)V
     .locals 0
 
     .prologue
     .line 31
-    iput-object p1, p0, Lcom/panasonic/avc/cng/view/parts/w;->b:Lcom/panasonic/avc/cng/view/parts/t;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/view/parts/w;->b:Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
     .line 32
     return-void
@@ -50,9 +50,9 @@
 
     .prologue
     .line 35
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/w;->b:Lcom/panasonic/avc/cng/view/parts/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/w;->b:Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/parts/t;->d()Ljava/util/List;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->d()Ljava/util/List;
 
     move-result-object v0
 
@@ -124,9 +124,9 @@
     .line 66
     :goto_0
     :try_start_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/w;->b:Lcom/panasonic/avc/cng/view/parts/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/w;->b:Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/parts/t;->d()Ljava/util/List;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->d()Ljava/util/List;
 
     move-result-object v0
 

@@ -7,11 +7,11 @@ import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.C1833c;
 import com.panasonic.avc.cng.model.C1892f;
 import com.panasonic.avc.cng.model.C1910l;
-import com.panasonic.avc.cng.model.p051c.C1846e;
-import com.panasonic.avc.cng.model.p051c.C1853h;
+import com.panasonic.avc.cng.model.p051c.CameraStatus;
+import com.panasonic.avc.cng.model.p051c.ParseTagHighlightSceneInfo;
 import com.panasonic.avc.cng.model.service.C2028e;
-import com.panasonic.avc.cng.model.service.C2253z;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import java.io.IOException;
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
@@ -172,18 +172,18 @@ public class C2166f {
     public int mo5728a(C1833c cVar) {
         C1892f a = C1712b.m6919c().mo4896a();
         if (a == null || a.f5679a == 0) {
-            C2261g.m9769c(f6683a, "Device State is Invalid.");
+            ImageAppLog.error(f6683a, "Device State is Invalid.");
             return 7;
         }
         this.f6684b = m9179p();
         if (this.f6684b == -1) {
-            C2261g.m9769c(f6683a, "readyUdpPort() Error.");
+            ImageAppLog.error(f6683a, "readyUdpPort() Error.");
             return 7;
         }
         this.f6688f = new C1491av(a.f5682d);
-        C1853h a2 = this.f6688f.mo3635a(this.f6684b, cVar.f5298b);
+        ParseTagHighlightSceneInfo a2 = this.f6688f.mo3635a(this.f6684b, cVar.f5298b);
         if (!a2.mo4771a()) {
-            C2261g.m9769c(f6683a, "PlayCmd.SetPlayScene() Error.");
+            ImageAppLog.error(f6683a, "PlayCmd.SetPlayScene() Error.");
             return 7;
         }
         this.f6693k = a2.mo4780j();
@@ -222,18 +222,18 @@ public class C2166f {
     /* renamed from: e */
     public int mo5733e() {
         int i;
-        C2261g.m9763a(f6683a, getClass().getSimpleName() + "#Play");
+        ImageAppLog.debug(f6683a, getClass().getSimpleName() + "#Play");
         synchronized (C1910l.m7679a()) {
             this.f6698p = true;
             m9175l();
             if (this.f6689g == 1) {
-                C1853h a = this.f6688f.mo3409a();
+                ParseTagHighlightSceneInfo a = this.f6688f.mo3409a();
                 if (!a.mo4771a()) {
                     this.f6688f.mo3640c();
                     a = this.f6688f.mo3409a();
                 }
                 if (!a.mo4771a()) {
-                    C2261g.m9769c(f6683a, "PlayCmd.Start() Error.");
+                    ImageAppLog.error(f6683a, "PlayCmd.Start() Error.");
                     this.f6689g = 6;
                     i = this.f6689g;
                 }
@@ -241,7 +241,7 @@ public class C2166f {
                 i = this.f6689g;
             } else {
                 if (this.f6689g == 3 && !this.f6688f.mo3636a(this.f6695m.mo5750a()).mo4771a()) {
-                    C2261g.m9769c(f6683a, "PlayCmd.ReStart() Error.");
+                    ImageAppLog.error(f6683a, "PlayCmd.ReStart() Error.");
                     this.f6689g = 6;
                     i = this.f6689g;
                 }
@@ -255,16 +255,16 @@ public class C2166f {
     /* renamed from: f */
     public int mo5734f() {
         int i;
-        C2261g.m9763a(f6683a, getClass().getSimpleName() + "#Pause");
+        ImageAppLog.debug(f6683a, getClass().getSimpleName() + "#Pause");
         synchronized (C1910l.m7679a()) {
             if (this.f6689g == 2) {
                 m9176m();
-                C1853h b = this.f6688f.mo3638b();
+                ParseTagHighlightSceneInfo b = this.f6688f.mo3638b();
                 m9178o();
                 this.f6698p = false;
                 m9175l();
                 if (!b.mo4771a()) {
-                    C2261g.m9769c(f6683a, "PlayCmd.Pause() Error.");
+                    ImageAppLog.error(f6683a, "PlayCmd.Pause() Error.");
                     this.f6689g = 6;
                     i = this.f6689g;
                 }
@@ -279,7 +279,7 @@ public class C2166f {
     public int mo5726a(long j) {
         int i;
         int i2 = 0;
-        C2261g.m9763a(f6683a, getClass().getSimpleName() + "#Seek: seekPosMsec = " + j);
+        ImageAppLog.debug(f6683a, getClass().getSimpleName() + "#Seek: seekPosMsec = " + j);
         synchronized (C1910l.m7679a()) {
             C2170c cVar = new C2170c(this.f6693k);
             cVar.mo5753b(j);
@@ -290,7 +290,7 @@ public class C2166f {
                 this.f6698p = true;
                 m9175l();
                 if (!this.f6688f.mo3636a(cVar.mo5750a()).mo4771a()) {
-                    C2261g.m9769c(f6683a, "PlayCmd.SeekPlay() Error.");
+                    ImageAppLog.error(f6683a, "PlayCmd.SeekPlay() Error.");
                     this.f6689g = 6;
                     i = this.f6689g;
                 }
@@ -306,9 +306,9 @@ public class C2166f {
                         if (i2 >= 5) {
                             break;
                         }
-                        C1853h b = this.f6688f.mo3639b(cVar.mo5750a());
+                        ParseTagHighlightSceneInfo b = this.f6688f.mo3639b(cVar.mo5750a());
                         if (!b.mo4771a()) {
-                            C2261g.m9769c(f6683a, "PlayCmd.SeekPause() Error.");
+                            ImageAppLog.error(f6683a, "PlayCmd.SeekPause() Error.");
                             this.f6689g = 6;
                             i = this.f6689g;
                             break;
@@ -349,7 +349,7 @@ public class C2166f {
         synchronized (C1910l.m7679a()) {
             if (this.f6689g == 2) {
                 m9176m();
-                C1853h b = this.f6688f.mo3638b();
+                ParseTagHighlightSceneInfo b = this.f6688f.mo3638b();
                 m9178o();
                 this.f6698p = false;
                 m9175l();
@@ -358,7 +358,7 @@ public class C2166f {
                 for (int i2 = 0; i2 < 5; i2++) {
                     b = this.f6688f.mo3637a(a, true);
                     if (!b.mo4771a()) {
-                        C2261g.m9769c(f6683a, "PlayCmd.ISkip() Error.");
+                        ImageAppLog.error(f6683a, "PlayCmd.ISkip() Error.");
                         this.f6689g = 6;
                         i = this.f6689g;
                         break;
@@ -412,12 +412,12 @@ public class C2166f {
             m9178o();
             this.f6698p = false;
             m9175l();
-            C1853h hVar = null;
+            ParseTagHighlightSceneInfo hVar = null;
             long currentTimeMillis = System.currentTimeMillis();
             for (int i = 0; i < 5; i++) {
                 hVar = this.f6688f.mo3637a(cVar.mo5750a(), z);
                 if (!hVar.mo4771a()) {
-                    C2261g.m9769c(f6683a, "PlayCmd.ISkip() Error.");
+                    ImageAppLog.error(f6683a, "PlayCmd.ISkip() Error.");
                     this.f6689g = 6;
                     int i2 = this.f6689g;
                     return i2;
@@ -448,12 +448,12 @@ public class C2166f {
                 i3++;
             }
             if (!z2) {
-                C2261g.m9763a(f6683a, "ISkip is not complete... ==> Safety seek");
+                ImageAppLog.debug(f6683a, "ISkip is not complete... ==> Safety seek");
                 long currentTimeMillis2 = System.currentTimeMillis();
                 for (int i4 = 0; i4 < 5; i4++) {
                     hVar = this.f6688f.mo3637a(z ? cVar2.mo5750a() - 50 : cVar2.mo5750a() + 50, z);
                     if (!hVar.mo4771a()) {
-                        C2261g.m9769c(f6683a, "PlayCmd.SeekPause() Error.");
+                        ImageAppLog.error(f6683a, "PlayCmd.SeekPause() Error.");
                         this.f6689g = 6;
                         int i5 = this.f6689g;
                         return i5;
@@ -474,14 +474,14 @@ public class C2166f {
     /* renamed from: i */
     public boolean mo5737i() {
         int i = 0;
-        C2028e a = C2253z.m9680a((Context) null, false);
+        C2028e a = ServiceFactory.m9680a((Context) null, false);
         m9174c(1000);
         while (true) {
             m9174c(500);
             if (C1712b.m6919c().mo4896a() == null) {
                 return false;
             }
-            C1846e i2 = a.mo5285i();
+            CameraStatus i2 = a.mo5285i();
             if (i2 != null) {
                 if (i2.mo4717y() == 3) {
                     synchronized (C1910l.m7679a()) {
@@ -512,7 +512,7 @@ public class C2166f {
     /* renamed from: j */
     public void mo5738j() {
         if (this.f6685c != null) {
-            C2261g.m9771e(f6683a, String.format(Locale.getDefault(), "UDP socket close[%d]", new Object[]{Integer.valueOf(this.f6684b)}));
+            ImageAppLog.info(f6683a, String.format(Locale.getDefault(), "UDP socket close[%d]", new Object[]{Integer.valueOf(this.f6684b)}));
             this.f6685c.close();
             this.f6685c = null;
         }
@@ -609,7 +609,7 @@ public class C2166f {
                 this.f6686d.setLength(this.f6687e.length);
                 this.f6685c.receive(this.f6686d);
             } catch (SocketTimeoutException e) {
-                C2261g.m9763a(f6683a, "[EXCEPTION] " + getClass().getSimpleName() + "#cleanUdpPort -> " + e.getClass().getSimpleName());
+                ImageAppLog.debug(f6683a, "[EXCEPTION] " + getClass().getSimpleName() + "#cleanUdpPort -> " + e.getClass().getSimpleName());
                 return;
             } catch (IOException e2) {
                 e2.printStackTrace();
@@ -631,11 +631,11 @@ public class C2166f {
                 break;
             }
             try {
-                C2261g.m9771e(f6683a, String.format(Locale.getDefault(), "UDP socket open[%d]", new Object[]{Integer.valueOf(i)}));
+                ImageAppLog.info(f6683a, String.format(Locale.getDefault(), "UDP socket open[%d]", new Object[]{Integer.valueOf(i)}));
                 datagramSocket = new DatagramSocket(i);
                 break;
             } catch (SocketException e) {
-                C2261g.m9769c(f6683a, String.format(Locale.getDefault(), "UDP socket close[%d](%s)", new Object[]{Integer.valueOf(i), e.toString()}));
+                ImageAppLog.error(f6683a, String.format(Locale.getDefault(), "UDP socket close[%d](%s)", new Object[]{Integer.valueOf(i), e.toString()}));
                 if (this.f6685c != null) {
                     this.f6685c.close();
                 }
@@ -648,7 +648,7 @@ public class C2166f {
                 datagramSocket.setReuseAddress(true);
                 datagramSocket.setSoTimeout(100);
             } catch (SocketException e2) {
-                C2261g.m9769c(f6683a, String.format(Locale.getDefault(), "UDP socket close[%d](%s)", new Object[]{Integer.valueOf(i), e2.toString()}));
+                ImageAppLog.error(f6683a, String.format(Locale.getDefault(), "UDP socket close[%d](%s)", new Object[]{Integer.valueOf(i), e2.toString()}));
                 if (this.f6685c != null) {
                     this.f6685c.close();
                 }

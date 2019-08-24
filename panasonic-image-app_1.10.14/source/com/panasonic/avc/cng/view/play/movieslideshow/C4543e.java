@@ -4,13 +4,13 @@ import android.content.Context;
 import android.os.Handler;
 import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.C1892f;
-import com.panasonic.avc.cng.model.p051c.C1846e;
+import com.panasonic.avc.cng.model.p051c.CameraStatus;
 import com.panasonic.avc.cng.p038a.C1344c;
 import com.panasonic.avc.cng.view.p072a.C2291c;
 import com.panasonic.avc.cng.view.parts.C3971aa;
 import com.panasonic.avc.cng.view.parts.C3971aa.C3972a;
-import com.panasonic.avc.cng.view.parts.C4245t;
-import com.panasonic.avc.cng.view.parts.C4245t.C4255e;
+import com.panasonic.avc.cng.view.parts.BrowserViewModel;
+import com.panasonic.avc.cng.view.parts.BrowserViewModel.C4255e;
 import com.panasonic.avc.cng.view.parts.C4262x;
 
 /* renamed from: com.panasonic.avc.cng.view.play.movieslideshow.e */
@@ -33,7 +33,7 @@ public class C4543e extends C2291c {
     /* access modifiers changed from: private */
 
     /* renamed from: j */
-    public C4245t f14919j;
+    public BrowserViewModel f14919j;
 
     /* renamed from: k */
     private C4255e f14920k;
@@ -109,7 +109,7 @@ public class C4543e extends C2291c {
 
     /* renamed from: l */
     private void m17844l() {
-        this.f14919j = new C4245t(this.f3706a, this.f3707b, this.f14920k);
+        this.f14919j = new BrowserViewModel(this.f3706a, this.f3707b, this.f14920k);
         this.f14919j.mo9947a(1);
         this.f14919j.mo9957b(true);
         this.f14923n = new C4545a();
@@ -159,7 +159,7 @@ public class C4543e extends C2291c {
     }
 
     /* renamed from: j */
-    public C4245t mo10639j() {
+    public BrowserViewModel mo10639j() {
         return this.f14919j;
     }
 
@@ -177,7 +177,7 @@ public class C4543e extends C2291c {
     }
 
     /* renamed from: a */
-    public void mo6018a(C1846e eVar) {
+    public void mo6018a(CameraStatus eVar) {
         final int a = eVar.mo4678a();
         final int b = eVar.mo4688b();
         mo3207a((Runnable) new Runnable() {

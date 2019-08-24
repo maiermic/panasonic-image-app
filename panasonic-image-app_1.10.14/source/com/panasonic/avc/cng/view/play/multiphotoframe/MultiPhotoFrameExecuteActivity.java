@@ -12,16 +12,16 @@ import android.widget.TextView;
 import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.service.p055b.C2003c;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.util.C2264j;
 import com.panasonic.avc.cng.view.p072a.C2291c;
 import com.panasonic.avc.cng.view.p072a.C2316j;
 import com.panasonic.avc.cng.view.p073b.C2317a.C2325c;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
 import com.panasonic.avc.cng.view.p073b.C2337e;
 import com.panasonic.avc.cng.view.p073b.C2376f.C2378b;
-import com.panasonic.avc.cng.view.play.multiphotoframe.C4609e.C4618b;
+import com.panasonic.avc.cng.view.play.multiphotoframe.MultiPhotoFrameExecuteViewModel.C4618b;
 import com.panasonic.avc.cng.view.play.p076a.C4270a;
 import java.io.File;
 import java.util.ArrayList;
@@ -33,7 +33,7 @@ public class MultiPhotoFrameExecuteActivity extends C4270a {
     /* access modifiers changed from: private */
 
     /* renamed from: a */
-    public C4609e f14947a;
+    public MultiPhotoFrameExecuteViewModel f14947a;
 
     /* renamed from: b */
     private C4608d f14948b;
@@ -50,13 +50,13 @@ public class MultiPhotoFrameExecuteActivity extends C4270a {
         public void mo10667a() {
             Bundle bundle = new Bundle();
             bundle.putInt(C2378b.MESSAGE_ID.name(), R.string.ply_multiphoto_save);
-            C2331d.m10115a((Activity) MultiPhotoFrameExecuteActivity.this, C2328a.PROCESS_PROGRESS, bundle, (C2325c) new C2325c() {
+            DialogFactory.m10115a((Activity) MultiPhotoFrameExecuteActivity.this, C2328a.PROCESS_PROGRESS, bundle, (C2325c) new C2325c() {
                 /* renamed from: a */
                 public void mo6131a() {
-                    C2331d.m10111a((Activity) MultiPhotoFrameExecuteActivity.this, C2328a.PROCESS_PROGRESS, (int) R.id.percent_num, (CharSequence) "0");
-                    C2331d.m10111a((Activity) MultiPhotoFrameExecuteActivity.this, C2328a.PROCESS_PROGRESS, (int) R.id.numerator, (CharSequence) "1");
+                    DialogFactory.m10111a((Activity) MultiPhotoFrameExecuteActivity.this, C2328a.PROCESS_PROGRESS, (int) R.id.percent_num, (CharSequence) "0");
+                    DialogFactory.m10111a((Activity) MultiPhotoFrameExecuteActivity.this, C2328a.PROCESS_PROGRESS, (int) R.id.numerator, (CharSequence) "1");
                     if (MultiPhotoFrameExecuteActivity.this.f14947a != null) {
-                        C2331d.m10111a((Activity) MultiPhotoFrameExecuteActivity.this, C2328a.PROCESS_PROGRESS, (int) R.id.denominator, (CharSequence) String.valueOf(MultiPhotoFrameExecuteActivity.this.f14947a.mo10805o().size()));
+                        DialogFactory.m10111a((Activity) MultiPhotoFrameExecuteActivity.this, C2328a.PROCESS_PROGRESS, (int) R.id.denominator, (CharSequence) String.valueOf(MultiPhotoFrameExecuteActivity.this.f14947a.mo10805o().size()));
                     }
                 }
             });
@@ -64,34 +64,34 @@ public class MultiPhotoFrameExecuteActivity extends C4270a {
 
         /* renamed from: a */
         public void mo10669a(int i, int i2) {
-            C2331d.m10111a((Activity) MultiPhotoFrameExecuteActivity.this, C2328a.PROCESS_PROGRESS, (int) R.id.numerator, (CharSequence) String.valueOf(i));
-            C2331d.m10111a((Activity) MultiPhotoFrameExecuteActivity.this, C2328a.PROCESS_PROGRESS, (int) R.id.percent_num, (CharSequence) String.valueOf(i2));
-            C2331d.m10104a((Activity) MultiPhotoFrameExecuteActivity.this, C2328a.PROCESS_PROGRESS, (int) R.id.progressBar2, i2);
+            DialogFactory.m10111a((Activity) MultiPhotoFrameExecuteActivity.this, C2328a.PROCESS_PROGRESS, (int) R.id.numerator, (CharSequence) String.valueOf(i));
+            DialogFactory.m10111a((Activity) MultiPhotoFrameExecuteActivity.this, C2328a.PROCESS_PROGRESS, (int) R.id.percent_num, (CharSequence) String.valueOf(i2));
+            DialogFactory.m10104a((Activity) MultiPhotoFrameExecuteActivity.this, C2328a.PROCESS_PROGRESS, (int) R.id.progressBar2, i2);
         }
 
         /* renamed from: a */
         public void mo10668a(int i) {
-            C2331d.m10100a((Activity) MultiPhotoFrameExecuteActivity.this);
+            DialogFactory.m10100a((Activity) MultiPhotoFrameExecuteActivity.this);
             if (i == 1 || i == 2 || i == 3) {
-                C2331d.m10114a((Activity) MultiPhotoFrameExecuteActivity.this, C2328a.ErrorMultiPhotoDlg, (Bundle) null);
+                DialogFactory.m10114a((Activity) MultiPhotoFrameExecuteActivity.this, C2328a.ErrorMultiPhotoDlg, (Bundle) null);
             } else if (i == 4) {
-                C2331d.m10114a((Activity) MultiPhotoFrameExecuteActivity.this, C2328a.ErrorMultiPhotoDlg, (Bundle) null);
+                DialogFactory.m10114a((Activity) MultiPhotoFrameExecuteActivity.this, C2328a.ErrorMultiPhotoDlg, (Bundle) null);
             } else if (i == 5) {
-                C2331d.m10114a((Activity) MultiPhotoFrameExecuteActivity.this, C2328a.ErrorMultiPhotoDlg, (Bundle) null);
+                DialogFactory.m10114a((Activity) MultiPhotoFrameExecuteActivity.this, C2328a.ErrorMultiPhotoDlg, (Bundle) null);
             } else if (i == 7) {
-                C2331d.m10114a((Activity) MultiPhotoFrameExecuteActivity.this, C2328a.ErrNoRemainMultiPhoto, (Bundle) null);
+                DialogFactory.m10114a((Activity) MultiPhotoFrameExecuteActivity.this, C2328a.ErrNoRemainMultiPhoto, (Bundle) null);
             }
         }
 
         /* renamed from: a */
         public void mo10670a(List<C2003c> list) {
-            C2331d.m10100a((Activity) MultiPhotoFrameExecuteActivity.this);
-            C2331d.m10114a((Activity) MultiPhotoFrameExecuteActivity.this, C2328a.CopyCompleteDlg, (Bundle) null);
+            DialogFactory.m10100a((Activity) MultiPhotoFrameExecuteActivity.this);
+            DialogFactory.m10114a((Activity) MultiPhotoFrameExecuteActivity.this, C2328a.CopyCompleteDlg, (Bundle) null);
         }
 
         /* renamed from: b */
         public void mo10671b() {
-            C2331d.m10100a((Activity) MultiPhotoFrameExecuteActivity.this);
+            DialogFactory.m10100a((Activity) MultiPhotoFrameExecuteActivity.this);
             MultiPhotoFrameExecuteActivity.this.finish();
         }
 
@@ -111,9 +111,9 @@ public class MultiPhotoFrameExecuteActivity extends C4270a {
         this._context = this;
         this._handler = new Handler();
         this.f14949c = new C4561a();
-        this.f14947a = (C4609e) C2316j.m10030a("MultiPhotoFrameExecuteViewModel");
+        this.f14947a = (MultiPhotoFrameExecuteViewModel) C2316j.m10030a("MultiPhotoFrameExecuteViewModel");
         if (this.f14947a == null) {
-            this.f14947a = new C4609e(this._context, this._handler);
+            this.f14947a = new MultiPhotoFrameExecuteViewModel(this._context, this._handler);
             this.f14947a.mo10788a(this._context, this._handler, this.f14949c);
             C2316j.m10032a("MultiPhotoFrameExecuteViewModel", this.f14947a);
             Bundle extras = getIntent().getExtras();
@@ -129,7 +129,7 @@ public class MultiPhotoFrameExecuteActivity extends C4270a {
         if (this.f14947a.mo10805o() != null) {
             int size = this.f14947a.mo10805o().size();
             for (int i2 = 0; i2 < size; i2++) {
-                C2261g.m9771e("MultiPhotoFrameExecuteActivity", (String) this.f14947a.mo10805o().get(i2));
+                ImageAppLog.info("MultiPhotoFrameExecuteActivity", (String) this.f14947a.mo10805o().get(i2));
             }
             i = size;
         } else {
@@ -181,7 +181,7 @@ public class MultiPhotoFrameExecuteActivity extends C4270a {
     public void onActivityResult(int i, int i2, Intent intent) {
         super.onActivityResult(i, i2, intent);
         if (intent == null || i2 != -1) {
-            C2261g.m9769c("MultiPhotoFrameExecuteActivity", "result error!!");
+            ImageAppLog.error("MultiPhotoFrameExecuteActivity", "result error!!");
         } else if (i == 22) {
             Bundle extras = intent.getExtras();
             if (extras == null) {
@@ -205,18 +205,18 @@ public class MultiPhotoFrameExecuteActivity extends C4270a {
             if (this.f14947a != null && this.f14947a.mo10801k()) {
                 String obj = ((EditText) findViewById(R.id.multiphotoEditText)).getText().toString();
                 if (obj.length() == 0) {
-                    C2331d.m10114a((Activity) this, C2328a.FolderNameError, (Bundle) null);
+                    DialogFactory.m10114a((Activity) this, C2328a.FolderNameError, (Bundle) null);
                     return;
                 } else if (obj.indexOf(" ") == -1 && obj.indexOf("<") == -1 && obj.indexOf(">") == -1 && obj.indexOf(":") == -1 && obj.indexOf("*") == -1 && obj.indexOf("?") == -1 && obj.indexOf("/") == -1 && obj.indexOf("\"") == -1 && obj.indexOf("\\") == -1 && obj.indexOf("|") == -1) {
                     this.f14947a.mo10789a(Environment.getExternalStorageDirectory().getPath() + C1712b.m6917b().mo4995b() + "/" + obj);
                 } else {
-                    C2331d.m10114a((Activity) this, C2328a.FolderNameError, (Bundle) null);
+                    DialogFactory.m10114a((Activity) this, C2328a.FolderNameError, (Bundle) null);
                     return;
                 }
             }
-            C2261g.m9771e("MultiPhotoFrameExecuteActivity", "SAVE PATH:" + this.f14947a.mo10804n());
+            ImageAppLog.info("MultiPhotoFrameExecuteActivity", "SAVE PATH:" + this.f14947a.mo10804n());
             if (C2264j.m9778a(this.f14947a.mo10804n())) {
-                C2331d.m10114a((Activity) this, C2328a.FolderOverwriteDlg, (Bundle) null);
+                DialogFactory.m10114a((Activity) this, C2328a.FolderOverwriteDlg, (Bundle) null);
             } else {
                 mo10663a();
             }
@@ -280,7 +280,7 @@ public class MultiPhotoFrameExecuteActivity extends C4270a {
             case PROCESS_PROGRESS:
                 if (this.f14947a != null) {
                     this.f14947a.mo10798h();
-                    C2331d.m10114a((Activity) this, C2328a.WAIT_PROCESSING, (Bundle) null);
+                    DialogFactory.m10114a((Activity) this, C2328a.WAIT_PROCESSING, (Bundle) null);
                     return;
                 }
                 return;

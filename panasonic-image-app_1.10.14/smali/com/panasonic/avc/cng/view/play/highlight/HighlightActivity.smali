@@ -13,7 +13,7 @@
 
 
 # instance fields
-.field private a:Lcom/panasonic/avc/cng/view/play/highlight/b;
+.field private a:Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;
 
 .field private b:Lcom/panasonic/avc/cng/view/play/highlight/a;
 
@@ -43,62 +43,62 @@
     return-object v0
 .end method
 
-.method static synthetic b(Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;)Lcom/panasonic/avc/cng/view/a/d;
+.method static synthetic b(Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;)Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
     .locals 1
 
     .prologue
     .line 25
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
     return-object v0
 .end method
 
-.method static synthetic c(Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;)Lcom/panasonic/avc/cng/view/a/d;
+.method static synthetic c(Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;)Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
     .locals 1
 
     .prologue
     .line 25
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
     return-object v0
 .end method
 
-.method static synthetic d(Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;)Lcom/panasonic/avc/cng/view/a/d;
+.method static synthetic d(Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;)Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
     .locals 1
 
     .prologue
     .line 25
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
     return-object v0
 .end method
 
-.method static synthetic e(Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;)Lcom/panasonic/avc/cng/view/a/d;
+.method static synthetic e(Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;)Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
     .locals 1
 
     .prologue
     .line 25
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
     return-object v0
 .end method
 
-.method static synthetic f(Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;)Lcom/panasonic/avc/cng/view/a/d;
+.method static synthetic f(Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;)Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
     .locals 1
 
     .prologue
     .line 25
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
     return-object v0
 .end method
 
-.method static synthetic g(Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;)Lcom/panasonic/avc/cng/view/play/highlight/b;
+.method static synthetic g(Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;)Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;
     .locals 1
 
     .prologue
     .line 25
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;->a:Lcom/panasonic/avc/cng/view/play/highlight/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;->a:Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;
 
     return-object v0
 .end method
@@ -110,7 +110,7 @@
 
     .prologue
     .line 108
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;->a:Lcom/panasonic/avc/cng/view/play/highlight/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;->a:Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;
 
     return-object v0
 .end method
@@ -143,13 +143,13 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;->a:Lcom/panasonic/avc/cng/view/play/highlight/b;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;->a:Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;
 
-    invoke-virtual {v2}, Lcom/panasonic/avc/cng/view/play/highlight/b;->i()Lcom/panasonic/avc/cng/view/smartoperation/b;
+    invoke-virtual {v2}, Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;->i()Lcom/panasonic/avc/cng/view/smartoperation/GetSelectFormatList;
 
     move-result-object v2
 
-    invoke-virtual {v2}, Lcom/panasonic/avc/cng/view/smartoperation/b;->g()[Ljava/lang/String;
+    invoke-virtual {v2}, Lcom/panasonic/avc/cng/view/smartoperation/GetSelectFormatList;->g()[Ljava/lang/String;
 
     move-result-object v2
 
@@ -162,13 +162,13 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;->a:Lcom/panasonic/avc/cng/view/play/highlight/b;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;->a:Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;
 
-    invoke-virtual {v2}, Lcom/panasonic/avc/cng/view/play/highlight/b;->i()Lcom/panasonic/avc/cng/view/smartoperation/b;
+    invoke-virtual {v2}, Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;->i()Lcom/panasonic/avc/cng/view/smartoperation/GetSelectFormatList;
 
     move-result-object v2
 
-    invoke-virtual {v2}, Lcom/panasonic/avc/cng/view/smartoperation/b;->j()I
+    invoke-virtual {v2}, Lcom/panasonic/avc/cng/view/smartoperation/GetSelectFormatList;->j()I
 
     move-result v2
 
@@ -181,7 +181,7 @@
 
     invoke-direct {v2, p0}, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity$2;-><init>(Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;)V
 
-    invoke-static {p0, v1, v0, v2}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;Lcom/panasonic/avc/cng/view/b/a$c;)V
+    invoke-static {p0, v1, v0, v2}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;Lcom/panasonic/avc/cng/view/b/a$c;)V
 
     goto :goto_0
 .end method
@@ -204,22 +204,22 @@
 
     .line 239
     :cond_1
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;->a:Lcom/panasonic/avc/cng/view/play/highlight/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;->a:Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/highlight/b;->l()Z
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;->l()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
     .line 246
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;->a:Lcom/panasonic/avc/cng/view/play/highlight/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;->a:Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/highlight/b;->h()Lcom/panasonic/avc/cng/view/parts/t;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;->h()Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/parts/t;->o()I
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->o()I
 
     move-result v0
 
@@ -230,7 +230,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {p0, v0, v1}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {p0, v0, v1}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     goto :goto_0
 .end method
@@ -252,9 +252,9 @@
 
     .line 223
     :cond_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;->a:Lcom/panasonic/avc/cng/view/play/highlight/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;->a:Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/highlight/b;->k()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;->k()V
 
     goto :goto_0
 .end method
@@ -287,13 +287,13 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;->a:Lcom/panasonic/avc/cng/view/play/highlight/b;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;->a:Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;
 
-    invoke-virtual {v2}, Lcom/panasonic/avc/cng/view/play/highlight/b;->i()Lcom/panasonic/avc/cng/view/smartoperation/b;
+    invoke-virtual {v2}, Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;->i()Lcom/panasonic/avc/cng/view/smartoperation/GetSelectFormatList;
 
     move-result-object v2
 
-    invoke-virtual {v2}, Lcom/panasonic/avc/cng/view/smartoperation/b;->d()[Ljava/lang/String;
+    invoke-virtual {v2}, Lcom/panasonic/avc/cng/view/smartoperation/GetSelectFormatList;->d()[Ljava/lang/String;
 
     move-result-object v2
 
@@ -306,13 +306,13 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;->a:Lcom/panasonic/avc/cng/view/play/highlight/b;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;->a:Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;
 
-    invoke-virtual {v2}, Lcom/panasonic/avc/cng/view/play/highlight/b;->i()Lcom/panasonic/avc/cng/view/smartoperation/b;
+    invoke-virtual {v2}, Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;->i()Lcom/panasonic/avc/cng/view/smartoperation/GetSelectFormatList;
 
     move-result-object v2
 
-    invoke-virtual {v2}, Lcom/panasonic/avc/cng/view/smartoperation/b;->e()I
+    invoke-virtual {v2}, Lcom/panasonic/avc/cng/view/smartoperation/GetSelectFormatList;->e()I
 
     move-result v2
 
@@ -325,7 +325,7 @@
 
     invoke-direct {v2, p0}, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity$1;-><init>(Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;)V
 
-    invoke-static {p0, v1, v0, v2}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;Lcom/panasonic/avc/cng/view/b/a$c;)V
+    invoke-static {p0, v1, v0, v2}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;Lcom/panasonic/avc/cng/view/b/a$c;)V
 
     goto :goto_0
 .end method
@@ -343,19 +343,19 @@
     invoke-static {v0}, Lcom/panasonic/avc/cng/view/a/j;->b(Ljava/lang/String;)V
 
     .line 153
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;->a:Lcom/panasonic/avc/cng/view/play/highlight/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;->a:Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;
 
     if-eqz v0, :cond_0
 
     .line 155
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;->a:Lcom/panasonic/avc/cng/view/play/highlight/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;->a:Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/highlight/b;->a()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;->a()V
 
     .line 156
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;->a:Lcom/panasonic/avc/cng/view/play/highlight/b;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;->a:Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;
 
     .line 158
     :cond_0
@@ -410,28 +410,28 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/panasonic/avc/cng/view/play/highlight/b;
+    check-cast v0, Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;->a:Lcom/panasonic/avc/cng/view/play/highlight/b;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;->a:Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;
 
     .line 58
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;->a:Lcom/panasonic/avc/cng/view/play/highlight/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;->a:Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;
 
     if-nez v0, :cond_1
 
     .line 61
-    new-instance v0, Lcom/panasonic/avc/cng/view/play/highlight/b;
+    new-instance v0, Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;->_context:Landroid/content/Context;
 
     iget-object v2, p0, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;->_handler:Landroid/os/Handler;
 
-    invoke-direct {v0, v1, v2}, Lcom/panasonic/avc/cng/view/play/highlight/b;-><init>(Landroid/content/Context;Landroid/os/Handler;)V
+    invoke-direct {v0, v1, v2}, Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;-><init>(Landroid/content/Context;Landroid/os/Handler;)V
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;->a:Lcom/panasonic/avc/cng/view/play/highlight/b;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;->a:Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;
 
     .line 62
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;->a:Lcom/panasonic/avc/cng/view/play/highlight/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;->a:Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;->_context:Landroid/content/Context;
 
@@ -441,12 +441,12 @@
 
     iget-object v4, p0, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;->d:Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity$b;
 
-    invoke-virtual {v0, v1, v2, v3, v4}, Lcom/panasonic/avc/cng/view/play/highlight/b;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/parts/t$e;Lcom/panasonic/avc/cng/view/play/highlight/b$b;)V
+    invoke-virtual {v0, v1, v2, v3, v4}, Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/parts/t$e;Lcom/panasonic/avc/cng/view/play/highlight/b$b;)V
 
     .line 65
     const-string v0, "HighlightViewModel"
 
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;->a:Lcom/panasonic/avc/cng/view/play/highlight/b;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;->a:Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;
 
     invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/a/j;->a(Ljava/lang/String;Lcom/panasonic/avc/cng/view/a/c;)V
 
@@ -470,13 +470,13 @@
     move-result v0
 
     .line 73
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;->a:Lcom/panasonic/avc/cng/view/play/highlight/b;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;->a:Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;
 
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/play/highlight/b;->i()Lcom/panasonic/avc/cng/view/smartoperation/b;
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;->i()Lcom/panasonic/avc/cng/view/smartoperation/GetSelectFormatList;
 
     move-result-object v1
 
-    invoke-virtual {v1, v0}, Lcom/panasonic/avc/cng/view/smartoperation/b;->d(I)V
+    invoke-virtual {v1, v0}, Lcom/panasonic/avc/cng/view/smartoperation/GetSelectFormatList;->d(I)V
 
     .line 83
     :cond_0
@@ -529,16 +529,16 @@
     .line 98
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;->b:Lcom/panasonic/avc/cng/view/play/highlight/a;
 
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;->a:Lcom/panasonic/avc/cng/view/play/highlight/b;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;->a:Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;
 
-    invoke-virtual {v0, p0, v1}, Lcom/panasonic/avc/cng/view/play/highlight/a;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/play/highlight/b;)V
+    invoke-virtual {v0, p0, v1}, Lcom/panasonic/avc/cng/view/play/highlight/a;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;)V
 
     .line 99
     return-void
 
     .line 79
     :cond_1
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;->a:Lcom/panasonic/avc/cng/view/play/highlight/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;->a:Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;->_context:Landroid/content/Context;
 
@@ -548,7 +548,7 @@
 
     iget-object v4, p0, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;->d:Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity$b;
 
-    invoke-virtual {v0, v1, v2, v3, v4}, Lcom/panasonic/avc/cng/view/play/highlight/b;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/parts/t$e;Lcom/panasonic/avc/cng/view/play/highlight/b$b;)V
+    invoke-virtual {v0, v1, v2, v3, v4}, Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/parts/t$e;Lcom/panasonic/avc/cng/view/play/highlight/b$b;)V
 
     goto :goto_0
 .end method
@@ -638,24 +638,24 @@
 
     .line 458
     :pswitch_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;->a:Lcom/panasonic/avc/cng/view/play/highlight/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;->a:Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;
 
     if-eqz v0, :cond_0
 
     .line 461
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;->a:Lcom/panasonic/avc/cng/view/play/highlight/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;->a:Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/highlight/b;->m()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;->m()V
 
     .line 462
-    invoke-static {p0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;)V
+    invoke-static {p0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;)V
 
     .line 465
     sget-object v0, Lcom/panasonic/avc/cng/view/b/b$a;->j:Lcom/panasonic/avc/cng/view/b/b$a;
 
     const/4 v1, 0x0
 
-    invoke-static {p0, v0, v1}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {p0, v0, v1}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     goto :goto_0
 
@@ -712,31 +712,31 @@
 
     .line 498
     :pswitch_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;->a:Lcom/panasonic/avc/cng/view/play/highlight/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;->a:Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/highlight/b;->i()Lcom/panasonic/avc/cng/view/smartoperation/b;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;->i()Lcom/panasonic/avc/cng/view/smartoperation/GetSelectFormatList;
 
     move-result-object v0
 
-    invoke-virtual {v0, p2}, Lcom/panasonic/avc/cng/view/smartoperation/b;->a(I)V
+    invoke-virtual {v0, p2}, Lcom/panasonic/avc/cng/view/smartoperation/GetSelectFormatList;->a(I)V
 
     .line 501
-    invoke-static {p0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;)V
+    invoke-static {p0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;)V
 
     goto :goto_0
 
     .line 506
     :pswitch_1
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;->a:Lcom/panasonic/avc/cng/view/play/highlight/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;->a:Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/highlight/b;->i()Lcom/panasonic/avc/cng/view/smartoperation/b;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;->i()Lcom/panasonic/avc/cng/view/smartoperation/GetSelectFormatList;
 
     move-result-object v0
 
-    invoke-virtual {v0, p2}, Lcom/panasonic/avc/cng/view/smartoperation/b;->b(I)V
+    invoke-virtual {v0, p2}, Lcom/panasonic/avc/cng/view/smartoperation/GetSelectFormatList;->b(I)V
 
     .line 509
-    invoke-static {p0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;)V
+    invoke-static {p0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;)V
 
     goto :goto_0
 
@@ -758,14 +758,14 @@
     invoke-super {p0}, Lcom/panasonic/avc/cng/view/play/a/a;->onStart()V
 
     .line 120
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;->a:Lcom/panasonic/avc/cng/view/play/highlight/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;->a:Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;
 
     if-eqz v0, :cond_0
 
     .line 122
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;->a:Lcom/panasonic/avc/cng/view/play/highlight/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/highlight/HighlightActivity;->a:Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/highlight/b;->j()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/highlight/HighlightViewModel;->j()V
 
     .line 124
     :cond_0

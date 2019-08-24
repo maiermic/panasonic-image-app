@@ -24,12 +24,12 @@ import com.panasonic.avc.cng.core.p040a.C1501d;
 import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.C1892f;
-import com.panasonic.avc.cng.model.p051c.C1853h;
+import com.panasonic.avc.cng.model.p051c.ParseTagHighlightSceneInfo;
 import com.panasonic.avc.cng.model.p052d.C1879a;
 import com.panasonic.avc.cng.model.service.C1921a;
 import com.panasonic.avc.cng.model.service.C2028e;
-import com.panasonic.avc.cng.model.service.C2253z;
-import com.panasonic.avc.cng.model.service.p054a.C1936c;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
+import com.panasonic.avc.cng.model.service.p054a.BrowserServiceCamera;
 import com.panasonic.avc.cng.util.C2266l;
 import com.panasonic.avc.cng.view.cameraconnect.C2649a;
 import com.panasonic.avc.cng.view.cameraconnect.C2735j;
@@ -39,17 +39,17 @@ import com.panasonic.avc.cng.view.p073b.C2317a.C2325c;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
 import com.panasonic.avc.cng.view.p073b.C2376f.C2378b;
 import com.panasonic.avc.cng.view.parts.C4104bj;
-import com.panasonic.avc.cng.view.parts.C4245t;
+import com.panasonic.avc.cng.view.parts.BrowserViewModel;
 import com.panasonic.avc.cng.view.play.browser.C4373a;
-import com.panasonic.avc.cng.view.play.movieslideshow.C4528c;
-import com.panasonic.avc.cng.view.play.multiphotoframe.C4600c;
-import com.panasonic.avc.cng.view.play.splitdelete.C4839c;
+import com.panasonic.avc.cng.view.play.movieslideshow.MovieSlideshowViewModel;
+import com.panasonic.avc.cng.view.play.multiphotoframe.MultiPhotoFrameBrowseViewModel;
+import com.panasonic.avc.cng.view.play.splitdelete.ContentPlayerViewModel;
 import com.panasonic.avc.cng.view.setting.C5565an;
 import com.panasonic.avc.cng.view.setting.C5576ao;
-import com.panasonic.avc.cng.view.setting.C5702g;
+import com.panasonic.avc.cng.view.setting.ConnectSettingViewModel;
 import com.panasonic.avc.cng.view.smartoperation.C5942h;
-import com.panasonic.avc.cng.view.smartoperation.C5956i;
-import com.panasonic.avc.cng.view.threebox.C5999c;
+import com.panasonic.avc.cng.view.smartoperation.PictureJumpViewModel;
+import com.panasonic.avc.cng.view.threebox.ThreeBoxViewModel;
 import java.text.DateFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -66,7 +66,7 @@ public class C2337e {
     public static class C2374a extends Thread {
 
         /* renamed from: a */
-        C1853h f7699a = null;
+        ParseTagHighlightSceneInfo f7699a = null;
 
         /* renamed from: b */
         Context f7700b = null;
@@ -76,9 +76,9 @@ public class C2337e {
         }
 
         /* renamed from: a */
-        public C1853h mo6155a() {
+        public ParseTagHighlightSceneInfo mo6155a() {
             if (this.f7699a == null) {
-                this.f7699a = new C1853h((byte[]) null);
+                this.f7699a = new ParseTagHighlightSceneInfo((byte[]) null);
             }
             return this.f7699a;
         }
@@ -86,7 +86,7 @@ public class C2337e {
         public void run() {
             C1892f a = C1712b.m6919c().mo4896a();
             if (a != null) {
-                C2028e a2 = C2253z.m9680a(this.f7700b, true);
+                C2028e a2 = ServiceFactory.m9680a(this.f7700b, true);
                 a2.mo5270a(false, true);
                 this.f7699a = new C1501d(a.f5682d).mo3409a();
                 a2.mo5278b(false, true);
@@ -102,17 +102,17 @@ public class C2337e {
     public static class C2375b {
 
         /* renamed from: a */
-        public C1853h f7701a;
+        public ParseTagHighlightSceneInfo f7701a;
 
-        public C2375b(C1853h hVar) {
+        public C2375b(ParseTagHighlightSceneInfo hVar) {
             this.f7701a = hVar;
         }
     }
 
     /* renamed from: a */
-    public static void m10170a(Context context, C4373a aVar, C4245t tVar) {
-        C1921a f = C2253z.m9703f();
-        if (f == null || !(f instanceof C1936c) || !aVar.mo10274y()) {
+    public static void m10170a(Context context, C4373a aVar, BrowserViewModel tVar) {
+        C1921a f = ServiceFactory.m9703f();
+        if (f == null || !(f instanceof BrowserServiceCamera) || !aVar.mo10274y()) {
             if (aVar.mo10252e() == null) {
                 if (tVar != null) {
                     aVar.mo10230a(tVar.mo9983q());
@@ -132,23 +132,23 @@ public class C2337e {
             }
             Bundle bundle = new Bundle();
             bundle.putInt(C2378b.MESSAGE_ID.name(), i);
-            C2331d.m10114a((Activity) context, C2328a.ON_BROWSE_ACTION_COMFIRM_DELETE, bundle);
+            DialogFactory.m10114a((Activity) context, C2328a.ON_BROWSE_ACTION_COMFIRM_DELETE, bundle);
             return;
         }
-        C2331d.m10114a((Activity) context, C2328a.ON_PROTECTED_SD_CARD, (Bundle) null);
+        DialogFactory.m10114a((Activity) context, C2328a.ON_PROTECTED_SD_CARD, (Bundle) null);
     }
 
     /* renamed from: a */
-    public static void m10161a(final Activity activity, C4373a aVar, C5956i iVar, C5942h hVar) {
+    public static void m10161a(final Activity activity, C4373a aVar, PictureJumpViewModel iVar, C5942h hVar) {
         m10154a(0);
         Resources resources = activity.getResources();
         Bundle bundle = new Bundle();
         bundle.putStringArray(C2378b.SINGLE_CHOICE_LIST.name(), ((aVar == null || !aVar.mo10211E()) && (iVar == null || !iVar.mo13064w()) && (hVar == null || !hVar.mo12998r())) ? new String[]{resources.getString(R.string.picmate_msg_network_wifi)} : new String[]{resources.getString(R.string.picmate_msg_network_wifi), resources.getString(R.string.picmate_msg_network_3g)});
         bundle.putInt(C2378b.SINGLE_CHOICE_CHECKED_ITEM.name(), f7627a);
-        C2331d.m10115a(activity, C2328a.ON_NETWORK_SELECT_CONNECTION, bundle, (C2325c) new C2325c() {
+        DialogFactory.m10115a(activity, C2328a.ON_NETWORK_SELECT_CONNECTION, bundle, (C2325c) new C2325c() {
             /* renamed from: a */
             public void mo6131a() {
-                C2331d.m10129c(activity, C2328a.ON_NETWORK_SELECT_CONNECTION, (int) R.id.title, (int) R.string.picmate_msg_network);
+                DialogFactory.m10129c(activity, C2328a.ON_NETWORK_SELECT_CONNECTION, (int) R.id.title, (int) R.string.picmate_msg_network);
             }
         });
     }
@@ -164,7 +164,7 @@ public class C2337e {
     }
 
     /* renamed from: a */
-    public static void m10173a(C4373a aVar, C5956i iVar, C5942h hVar) {
+    public static void m10173a(C4373a aVar, PictureJumpViewModel iVar, C5942h hVar) {
         if (aVar != null) {
             aVar.mo10215I();
         } else if (iVar != null) {
@@ -176,12 +176,12 @@ public class C2337e {
     }
 
     /* renamed from: b */
-    public static void m10180b(final Activity activity, final C4373a aVar, final C5956i iVar, final C5942h hVar) {
+    public static void m10180b(final Activity activity, final C4373a aVar, final PictureJumpViewModel iVar, final C5942h hVar) {
         boolean z;
         boolean z2 = false;
         Bundle bundle = new Bundle();
         bundle.putInt(C2378b.NEGATIVE_BUTTON_TEXT_ID.name(), R.string.cmn_btn_cancel);
-        C2331d.m10114a(activity, C2328a.ON_NETWORK_JUST_A_MOMENT, bundle);
+        DialogFactory.m10114a(activity, C2328a.ON_NETWORK_JUST_A_MOMENT, bundle);
         if (m10146a() == 1) {
             if (VERSION.SDK_INT >= 23) {
                 if (((WifiManager) activity.getApplicationContext().getSystemService("wifi")).getConnectionInfo().getIpAddress() != 0) {
@@ -196,7 +196,7 @@ public class C2337e {
             if (z2) {
                 new Thread(new Runnable() {
                     public void run() {
-                        C2331d.m10100a(activity);
+                        DialogFactory.m10100a(activity);
                         try {
                             if (aVar != null) {
                                 aVar.mo10228a(C2266l.m9810b(activity.getApplicationContext()));
@@ -230,7 +230,7 @@ public class C2337e {
                 }).start();
                 return;
             }
-            C2331d.m10100a(activity);
+            DialogFactory.m10100a(activity);
             if (aVar != null) {
                 aVar.mo10268s();
             } else if (iVar != null) {
@@ -261,19 +261,19 @@ public class C2337e {
     }
 
     /* renamed from: a */
-    public static void m10162a(Activity activity, C4373a aVar, C5956i iVar, C5942h hVar, C5702g gVar) {
+    public static void m10162a(Activity activity, C4373a aVar, PictureJumpViewModel iVar, C5942h hVar, ConnectSettingViewModel gVar) {
         final C2328a aVar2 = C2328a.ON_NETWORK_SHOW_WIFI_PASSWORD;
         final Activity activity2 = activity;
         final C4373a aVar3 = aVar;
-        final C5956i iVar2 = iVar;
+        final PictureJumpViewModel iVar2 = iVar;
         final C5942h hVar2 = hVar;
-        final C5702g gVar2 = gVar;
-        C2331d.m10115a(activity, aVar2, (Bundle) null, (C2325c) new C2325c() {
+        final ConnectSettingViewModel gVar2 = gVar;
+        DialogFactory.m10115a(activity, aVar2, (Bundle) null, (C2325c) new C2325c() {
             /* renamed from: a */
             public void mo6131a() {
-                C2331d.m10106a(activity2, aVar2, (int) R.id.passwordOkButton, (OnClickListener) new OnClickListener() {
+                DialogFactory.m10106a(activity2, aVar2, (int) R.id.passwordOkButton, (OnClickListener) new OnClickListener() {
                     public void onClick(View view) {
-                        Editable c = C2331d.m10128c(activity2, aVar2, R.id.wifiPassword);
+                        Editable c = DialogFactory.m10128c(activity2, aVar2, R.id.wifiPassword);
                         String str = c != null ? c.toString() : "";
                         if (aVar3 != null) {
                             aVar3.mo10253e(str);
@@ -286,17 +286,17 @@ public class C2337e {
                         }
                         Bundle bundle = new Bundle();
                         bundle.putInt(C2378b.NEGATIVE_BUTTON_TEXT_ID.name(), R.string.cmn_btn_cancel);
-                        C2331d.m10114a(activity2, C2328a.ON_NETWORK_JUST_A_MOMENT, bundle);
+                        DialogFactory.m10114a(activity2, C2328a.ON_NETWORK_JUST_A_MOMENT, bundle);
                     }
                 });
-                C2331d.m10106a(activity2, aVar2, (int) R.id.passwordCancelButton, (OnClickListener) new OnClickListener() {
+                DialogFactory.m10106a(activity2, aVar2, (int) R.id.passwordCancelButton, (OnClickListener) new OnClickListener() {
                     public void onClick(View view) {
-                        Editable c = C2331d.m10128c(activity2, aVar2, R.id.wifiPassword);
+                        Editable c = DialogFactory.m10128c(activity2, aVar2, R.id.wifiPassword);
                         if (c != null) {
                             c.clear();
                         }
-                        C2331d.m10112a(activity2, aVar2, (int) R.id.passwordDisplayCheckBox, false);
-                        C2331d.m10100a(activity2);
+                        DialogFactory.m10112a(activity2, aVar2, (int) R.id.passwordDisplayCheckBox, false);
+                        DialogFactory.m10100a(activity2);
                         if (iVar2 != null || hVar2 != null) {
                             activity2.finish();
                         } else if (gVar2 != null && (activity2 instanceof C2323a)) {
@@ -304,15 +304,15 @@ public class C2337e {
                         }
                     }
                 });
-                C2331d.m10108a(activity2, C2328a.ON_NETWORK_SHOW_WIFI_PASSWORD, (int) R.id.passwordDisplayCheckBox, (OnCheckedChangeListener) new OnCheckedChangeListener() {
+                DialogFactory.m10108a(activity2, C2328a.ON_NETWORK_SHOW_WIFI_PASSWORD, (int) R.id.passwordDisplayCheckBox, (OnCheckedChangeListener) new OnCheckedChangeListener() {
                     public void onCheckedChanged(CompoundButton compoundButton, boolean z) {
                         if (z) {
-                            C2331d.m10138f(activity2, C2328a.ON_NETWORK_SHOW_WIFI_PASSWORD, R.id.wifiPassword, 145);
+                            DialogFactory.m10138f(activity2, C2328a.ON_NETWORK_SHOW_WIFI_PASSWORD, R.id.wifiPassword, 145);
                         } else {
-                            C2331d.m10138f(activity2, C2328a.ON_NETWORK_SHOW_WIFI_PASSWORD, R.id.wifiPassword, 129);
+                            DialogFactory.m10138f(activity2, C2328a.ON_NETWORK_SHOW_WIFI_PASSWORD, R.id.wifiPassword, 129);
                         }
-                        Editable c = C2331d.m10128c(activity2, C2328a.ON_NETWORK_SHOW_WIFI_PASSWORD, R.id.wifiPassword);
-                        C2331d.m10140g(activity2, C2328a.ON_NETWORK_SHOW_WIFI_PASSWORD, R.id.wifiPassword, c != null ? c.length() : 0);
+                        Editable c = DialogFactory.m10128c(activity2, C2328a.ON_NETWORK_SHOW_WIFI_PASSWORD, R.id.wifiPassword);
+                        DialogFactory.m10140g(activity2, C2328a.ON_NETWORK_SHOW_WIFI_PASSWORD, R.id.wifiPassword, c != null ? c.length() : 0);
                     }
                 });
             }
@@ -321,7 +321,7 @@ public class C2337e {
 
     /* renamed from: a */
     public static void m10159a(final Activity activity, final C2328a aVar, final C2323a aVar2, final C2649a aVar3) {
-        C2331d.m10115a(activity, aVar, (Bundle) null, (C2325c) new C2325c() {
+        DialogFactory.m10115a(activity, aVar, (Bundle) null, (C2325c) new C2325c() {
             /* renamed from: a */
             public void mo6131a() {
                 String str;
@@ -330,37 +330,37 @@ public class C2337e {
                 } else {
                     str = "";
                 }
-                C2331d.m10111a(activity, aVar, (int) R.id.textViewSsid, (CharSequence) str);
-                C2331d.m10113a(activity, aVar, (int) R.id.wifiPassword, new InputFilter[]{new LengthFilter(64)});
-                C2331d.m10106a(activity, aVar, (int) R.id.passwordOkButton, (OnClickListener) new OnClickListener() {
+                DialogFactory.m10111a(activity, aVar, (int) R.id.textViewSsid, (CharSequence) str);
+                DialogFactory.m10113a(activity, aVar, (int) R.id.wifiPassword, new InputFilter[]{new LengthFilter(64)});
+                DialogFactory.m10106a(activity, aVar, (int) R.id.passwordOkButton, (OnClickListener) new OnClickListener() {
                     public void onClick(View view) {
                         if (aVar2 != null) {
                             aVar2.onPositiveButtonClick(aVar);
                         }
                     }
                 });
-                C2331d.m10106a(activity, aVar, (int) R.id.passwordCancelButton, (OnClickListener) new OnClickListener() {
+                DialogFactory.m10106a(activity, aVar, (int) R.id.passwordCancelButton, (OnClickListener) new OnClickListener() {
                     public void onClick(View view) {
-                        Editable c = C2331d.m10128c(activity, C2328a.ON_NETWORK_SHOW_WIFI_PASSWORD, R.id.wifiPassword);
+                        Editable c = DialogFactory.m10128c(activity, C2328a.ON_NETWORK_SHOW_WIFI_PASSWORD, R.id.wifiPassword);
                         if (c != null) {
                             c.clear();
                         }
-                        C2331d.m10112a(activity, C2328a.ON_NETWORK_SHOW_WIFI_PASSWORD, (int) R.id.passwordDisplayCheckBox, false);
-                        C2331d.m10100a(activity);
+                        DialogFactory.m10112a(activity, C2328a.ON_NETWORK_SHOW_WIFI_PASSWORD, (int) R.id.passwordDisplayCheckBox, false);
+                        DialogFactory.m10100a(activity);
                         if (aVar2 != null) {
                             aVar2.onNegativeButtonClick(aVar);
                         }
                     }
                 });
-                C2331d.m10108a(activity, aVar, (int) R.id.passwordDisplayCheckBox, (OnCheckedChangeListener) new OnCheckedChangeListener() {
+                DialogFactory.m10108a(activity, aVar, (int) R.id.passwordDisplayCheckBox, (OnCheckedChangeListener) new OnCheckedChangeListener() {
                     public void onCheckedChanged(CompoundButton compoundButton, boolean z) {
                         if (z) {
-                            C2331d.m10138f(activity, aVar, R.id.wifiPassword, 145);
+                            DialogFactory.m10138f(activity, aVar, R.id.wifiPassword, 145);
                         } else {
-                            C2331d.m10138f(activity, aVar, R.id.wifiPassword, 129);
+                            DialogFactory.m10138f(activity, aVar, R.id.wifiPassword, 129);
                         }
-                        Editable c = C2331d.m10128c(activity, aVar, R.id.wifiPassword);
-                        C2331d.m10140g(activity, aVar, R.id.wifiPassword, c != null ? c.length() : 0);
+                        Editable c = DialogFactory.m10128c(activity, aVar, R.id.wifiPassword);
+                        DialogFactory.m10140g(activity, aVar, R.id.wifiPassword, c != null ? c.length() : 0);
                     }
                 });
             }
@@ -368,7 +368,7 @@ public class C2337e {
     }
 
     /* renamed from: a */
-    public static String[] m10174a(Activity activity, C5999c cVar) {
+    public static String[] m10174a(Activity activity, ThreeBoxViewModel cVar) {
         List h = cVar.mo13135h();
         String[] strArr = new String[h.size()];
         int i = 0;
@@ -399,7 +399,7 @@ public class C2337e {
     }
 
     /* renamed from: a */
-    public static String[] m10175a(Context context, C4528c cVar) {
+    public static String[] m10175a(Context context, MovieSlideshowViewModel cVar) {
         int j = cVar.mo10607i().mo12930j();
         C1892f a = C1712b.m6919c().mo4896a();
         if (a == null) {
@@ -428,7 +428,7 @@ public class C2337e {
     }
 
     /* renamed from: a */
-    public static String[] m10176a(Context context, C4600c cVar) {
+    public static String[] m10176a(Context context, MultiPhotoFrameBrowseViewModel cVar) {
         String[] strArr = {"avchd_60i", "avchd_60p", "avchd_50i", "avchd_50p", "avchd_mvc", "avchd_sbs"};
         int j = cVar.mo10775j().mo12930j();
         if (C1712b.m6919c().mo4896a() == null) {
@@ -463,7 +463,7 @@ public class C2337e {
     }
 
     /* renamed from: a */
-    public static ArrayAdapter<String> m10151a(Activity activity, C5956i iVar) {
+    public static ArrayAdapter<String> m10151a(Activity activity, PictureJumpViewModel iVar) {
         return m10152a(activity, iVar.mo13063v());
     }
 
@@ -473,7 +473,7 @@ public class C2337e {
     }
 
     /* renamed from: a */
-    public static ArrayAdapter<String> m10149a(Activity activity, C5702g gVar) {
+    public static ArrayAdapter<String> m10149a(Activity activity, ConnectSettingViewModel gVar) {
         return m10152a(activity, gVar.mo12540i());
     }
 
@@ -494,22 +494,22 @@ public class C2337e {
     /* renamed from: a */
     private static void m10157a(final Activity activity, final ArrayAdapter<String> arrayAdapter, final C2325c cVar) {
         final C2328a aVar = C2328a.ON_NETWORK_SHOW_WIFI_LIST;
-        C2331d.m10115a(activity, aVar, (Bundle) null, (C2325c) new C2325c() {
+        DialogFactory.m10115a(activity, aVar, (Bundle) null, (C2325c) new C2325c() {
             /* renamed from: a */
             public void mo6131a() {
-                C2331d.m10133d(activity, aVar, R.id.linearLayout, -16777216);
-                C2331d.m10136e(activity, aVar, R.id.connectListQrStartbutton, 8);
-                C2331d.m10136e(activity, aVar, R.id.explainNfcTextView, 8);
-                C2331d.m10136e(activity, aVar, R.id.nfcImageView, 8);
+                DialogFactory.m10133d(activity, aVar, R.id.linearLayout, -16777216);
+                DialogFactory.m10136e(activity, aVar, R.id.connectListQrStartbutton, 8);
+                DialogFactory.m10136e(activity, aVar, R.id.explainNfcTextView, 8);
+                DialogFactory.m10136e(activity, aVar, R.id.nfcImageView, 8);
                 if (arrayAdapter == null || arrayAdapter.isEmpty()) {
-                    C2331d.m10136e(activity, aVar, R.id.explainTextView, 8);
-                    C2331d.m10136e(activity, aVar, R.id.ListView1, 8);
-                    C2331d.m10136e(activity, aVar, R.id.listUpdatebutton, 8);
+                    DialogFactory.m10136e(activity, aVar, R.id.explainTextView, 8);
+                    DialogFactory.m10136e(activity, aVar, R.id.ListView1, 8);
+                    DialogFactory.m10136e(activity, aVar, R.id.listUpdatebutton, 8);
                 } else {
-                    C2331d.m10129c(activity, aVar, (int) R.id.explainTextView, (int) R.string.cmn_msg_wifi_multi);
-                    C2331d.m10110a(activity, aVar, (int) R.id.ListView1, (ListAdapter) arrayAdapter);
-                    C2331d.m10136e(activity, aVar, R.id.linearLayout3, 8);
-                    C2331d.m10136e(activity, aVar, R.id.wifiSettingButton, 8);
+                    DialogFactory.m10129c(activity, aVar, (int) R.id.explainTextView, (int) R.string.cmn_msg_wifi_multi);
+                    DialogFactory.m10110a(activity, aVar, (int) R.id.ListView1, (ListAdapter) arrayAdapter);
+                    DialogFactory.m10136e(activity, aVar, R.id.linearLayout3, 8);
+                    DialogFactory.m10136e(activity, aVar, R.id.wifiSettingButton, 8);
                 }
                 if (cVar != null) {
                     cVar.mo6131a();
@@ -529,7 +529,7 @@ public class C2337e {
     }
 
     /* renamed from: a */
-    public static void m10167a(Activity activity, C5956i iVar, C2325c cVar) {
+    public static void m10167a(Activity activity, PictureJumpViewModel iVar, C2325c cVar) {
         m10157a(activity, m10151a(activity, iVar), cVar);
     }
 
@@ -537,14 +537,14 @@ public class C2337e {
     public static void m10166a(Activity activity, C5942h hVar, C2325c cVar) {
         ArrayAdapter a = m10150a(activity, hVar);
         if (a == null) {
-            C2331d.m10114a(activity, C2328a.DIALOG_ID_PIC_WiFiFailed, (Bundle) null);
+            DialogFactory.m10114a(activity, C2328a.DIALOG_ID_PIC_WiFiFailed, (Bundle) null);
         } else {
             m10157a(activity, a, cVar);
         }
     }
 
     /* renamed from: a */
-    public static void m10165a(Activity activity, C5702g gVar, C2325c cVar) {
+    public static void m10165a(Activity activity, ConnectSettingViewModel gVar, C2325c cVar) {
         m10157a(activity, m10149a(activity, gVar), cVar);
     }
 
@@ -556,50 +556,50 @@ public class C2337e {
             final Activity activity2 = activity;
             final List<C2649a> list2 = list;
             final C2323a aVar3 = aVar;
-            C2331d.m10115a(activity, aVar2, (Bundle) null, (C2325c) new C2325c() {
+            DialogFactory.m10115a(activity, aVar2, (Bundle) null, (C2325c) new C2325c() {
                 /* renamed from: a */
                 public void mo6131a() {
-                    C2331d.m10133d(activity2, aVar2, R.id.linearLayout, -16777216);
-                    C2331d.m10136e(activity2, aVar2, R.id.connectListQrStartbutton, 8);
-                    C2331d.m10136e(activity2, aVar2, R.id.linearLayout1, 8);
+                    DialogFactory.m10133d(activity2, aVar2, R.id.linearLayout, -16777216);
+                    DialogFactory.m10136e(activity2, aVar2, R.id.connectListQrStartbutton, 8);
+                    DialogFactory.m10136e(activity2, aVar2, R.id.linearLayout1, 8);
                     if (list2.size() > 0) {
-                        C2331d.m10129c(activity2, aVar2, (int) R.id.explainTextView, (int) R.string.cmn_msg_wifi_multi);
-                        C2331d.m10110a(activity2, aVar2, (int) R.id.ListView1, (ListAdapter) jVar);
-                        C2331d.m10136e(activity2, aVar2, R.id.linearLayout3, 8);
-                        C2331d.m10136e(activity2, aVar2, R.id.wifiSettingButton, 8);
+                        DialogFactory.m10129c(activity2, aVar2, (int) R.id.explainTextView, (int) R.string.cmn_msg_wifi_multi);
+                        DialogFactory.m10110a(activity2, aVar2, (int) R.id.ListView1, (ListAdapter) jVar);
+                        DialogFactory.m10136e(activity2, aVar2, R.id.linearLayout3, 8);
+                        DialogFactory.m10136e(activity2, aVar2, R.id.wifiSettingButton, 8);
                     } else {
-                        C2331d.m10136e(activity2, aVar2, R.id.explainTextView, 8);
-                        C2331d.m10136e(activity2, aVar2, R.id.ListView1, 8);
-                        C2331d.m10136e(activity2, aVar2, R.id.listUpdatebutton, 8);
+                        DialogFactory.m10136e(activity2, aVar2, R.id.explainTextView, 8);
+                        DialogFactory.m10136e(activity2, aVar2, R.id.ListView1, 8);
+                        DialogFactory.m10136e(activity2, aVar2, R.id.listUpdatebutton, 8);
                     }
-                    C2331d.m10107a(activity2, aVar2, (int) R.id.ListView1, (OnItemClickListener) new OnItemClickListener() {
+                    DialogFactory.m10107a(activity2, aVar2, (int) R.id.ListView1, (OnItemClickListener) new OnItemClickListener() {
                         public void onItemClick(AdapterView<?> adapterView, View view, int i, long j) {
                             int checkedItemPosition = ((ListView) adapterView).getCheckedItemPosition();
-                            C2331d.m10100a(activity2);
+                            DialogFactory.m10100a(activity2);
                             if (aVar3 != null) {
                                 aVar3.onItemClick(aVar2, checkedItemPosition);
                             }
                         }
                     });
-                    C2331d.m10106a(activity2, aVar2, (int) R.id.listCancelbutton, (OnClickListener) new OnClickListener() {
+                    DialogFactory.m10106a(activity2, aVar2, (int) R.id.listCancelbutton, (OnClickListener) new OnClickListener() {
                         public void onClick(View view) {
-                            C2331d.m10100a(activity2);
+                            DialogFactory.m10100a(activity2);
                             if (aVar3 != null) {
                                 aVar3.onNegativeButtonClick(aVar2);
                             }
                         }
                     });
-                    C2331d.m10106a(activity2, aVar2, (int) R.id.wifiSettingButton, (OnClickListener) new OnClickListener() {
+                    DialogFactory.m10106a(activity2, aVar2, (int) R.id.wifiSettingButton, (OnClickListener) new OnClickListener() {
                         public void onClick(View view) {
-                            C2331d.m10100a(activity2);
+                            DialogFactory.m10100a(activity2);
                             if (aVar3 != null) {
                                 aVar3.onNeutralButtonClick(aVar2);
                             }
                         }
                     });
-                    C2331d.m10106a(activity2, aVar2, (int) R.id.listUpdatebutton, (OnClickListener) new OnClickListener() {
+                    DialogFactory.m10106a(activity2, aVar2, (int) R.id.listUpdatebutton, (OnClickListener) new OnClickListener() {
                         public void onClick(View view) {
-                            C2331d.m10100a(activity2);
+                            DialogFactory.m10100a(activity2);
                             if (aVar3 != null) {
                                 aVar3.onPositiveButtonClick(aVar2);
                             }
@@ -624,37 +624,37 @@ public class C2337e {
             i = i2 + 1;
         }
         if (arrayAdapter != null) {
-            C2331d.m10115a(activity, aVar2, (Bundle) null, (C2325c) new C2325c() {
+            DialogFactory.m10115a(activity, aVar2, (Bundle) null, (C2325c) new C2325c() {
                 /* renamed from: a */
                 public void mo6131a() {
-                    C2331d.m10133d(activity, aVar2, R.id.linearLayout, -16777216);
-                    C2331d.m10136e(activity, aVar2, R.id.connectListQrStartbutton, 8);
-                    C2331d.m10136e(activity, aVar2, R.id.linearLayout1, 8);
-                    C2331d.m10129c(activity, aVar2, (int) R.id.explainTextView, (int) R.string.cmn_msg_wifi_multi);
-                    C2331d.m10110a(activity, aVar2, (int) R.id.ListView1, (ListAdapter) arrayAdapter);
-                    C2331d.m10136e(activity, aVar2, R.id.linearLayout3, 8);
-                    C2331d.m10136e(activity, aVar2, R.id.wifiSettingButton, 8);
-                    C2331d.m10136e(activity, aVar2, R.id.listUpdatebutton, 8);
-                    C2331d.m10107a(activity, aVar2, (int) R.id.ListView1, (OnItemClickListener) new OnItemClickListener() {
+                    DialogFactory.m10133d(activity, aVar2, R.id.linearLayout, -16777216);
+                    DialogFactory.m10136e(activity, aVar2, R.id.connectListQrStartbutton, 8);
+                    DialogFactory.m10136e(activity, aVar2, R.id.linearLayout1, 8);
+                    DialogFactory.m10129c(activity, aVar2, (int) R.id.explainTextView, (int) R.string.cmn_msg_wifi_multi);
+                    DialogFactory.m10110a(activity, aVar2, (int) R.id.ListView1, (ListAdapter) arrayAdapter);
+                    DialogFactory.m10136e(activity, aVar2, R.id.linearLayout3, 8);
+                    DialogFactory.m10136e(activity, aVar2, R.id.wifiSettingButton, 8);
+                    DialogFactory.m10136e(activity, aVar2, R.id.listUpdatebutton, 8);
+                    DialogFactory.m10107a(activity, aVar2, (int) R.id.ListView1, (OnItemClickListener) new OnItemClickListener() {
                         public void onItemClick(AdapterView<?> adapterView, View view, int i, long j) {
                             int checkedItemPosition = ((ListView) adapterView).getCheckedItemPosition();
-                            C2331d.m10100a(activity);
+                            DialogFactory.m10100a(activity);
                             if (aVar != null) {
                                 aVar.onItemClick(aVar2, checkedItemPosition);
                             }
                         }
                     });
-                    C2331d.m10106a(activity, aVar2, (int) R.id.listCancelbutton, (OnClickListener) new OnClickListener() {
+                    DialogFactory.m10106a(activity, aVar2, (int) R.id.listCancelbutton, (OnClickListener) new OnClickListener() {
                         public void onClick(View view) {
-                            C2331d.m10100a(activity);
+                            DialogFactory.m10100a(activity);
                             if (aVar != null) {
                                 aVar.onNegativeButtonClick(aVar2);
                             }
                         }
                     });
-                    C2331d.m10106a(activity, aVar2, (int) R.id.wifiSettingButton, (OnClickListener) new OnClickListener() {
+                    DialogFactory.m10106a(activity, aVar2, (int) R.id.wifiSettingButton, (OnClickListener) new OnClickListener() {
                         public void onClick(View view) {
-                            C2331d.m10100a(activity);
+                            DialogFactory.m10100a(activity);
                             if (aVar != null) {
                                 aVar.onNeutralButtonClick(aVar2);
                             }
@@ -673,26 +673,26 @@ public class C2337e {
             arrayAdapter.add(fVar.f5685g);
         }
         if (arrayAdapter != null) {
-            C2331d.m10115a(activity, aVar2, (Bundle) null, (C2325c) new C2325c() {
+            DialogFactory.m10115a(activity, aVar2, (Bundle) null, (C2325c) new C2325c() {
                 /* renamed from: a */
                 public void mo6131a() {
-                    C2331d.m10133d(activity, aVar2, R.id.linearLayout, -16777216);
-                    C2331d.m10129c(activity, aVar2, (int) R.id.explainTextView, (int) R.string.cmn_msg_server_multi);
-                    C2331d.m10136e(activity, aVar2, R.id.connectListQrStartbutton, 8);
-                    C2331d.m10136e(activity, aVar2, R.id.linearLayout1, 8);
-                    C2331d.m10110a(activity, aVar2, (int) R.id.ListView1, (ListAdapter) arrayAdapter);
-                    C2331d.m10107a(activity, aVar2, (int) R.id.ListView1, (OnItemClickListener) new OnItemClickListener() {
+                    DialogFactory.m10133d(activity, aVar2, R.id.linearLayout, -16777216);
+                    DialogFactory.m10129c(activity, aVar2, (int) R.id.explainTextView, (int) R.string.cmn_msg_server_multi);
+                    DialogFactory.m10136e(activity, aVar2, R.id.connectListQrStartbutton, 8);
+                    DialogFactory.m10136e(activity, aVar2, R.id.linearLayout1, 8);
+                    DialogFactory.m10110a(activity, aVar2, (int) R.id.ListView1, (ListAdapter) arrayAdapter);
+                    DialogFactory.m10107a(activity, aVar2, (int) R.id.ListView1, (OnItemClickListener) new OnItemClickListener() {
                         public void onItemClick(AdapterView<?> adapterView, View view, int i, long j) {
                             int checkedItemPosition = ((ListView) adapterView).getCheckedItemPosition();
-                            C2331d.m10100a(activity);
+                            DialogFactory.m10100a(activity);
                             if (aVar != null) {
                                 aVar.onItemClick(aVar2, checkedItemPosition);
                             }
                         }
                     });
-                    C2331d.m10106a(activity, aVar2, (int) R.id.listCancelbutton, (OnClickListener) new OnClickListener() {
+                    DialogFactory.m10106a(activity, aVar2, (int) R.id.listCancelbutton, (OnClickListener) new OnClickListener() {
                         public void onClick(View view) {
-                            C2331d.m10100a(activity);
+                            DialogFactory.m10100a(activity);
                             if (aVar != null) {
                                 aVar.onNegativeButtonClick(aVar2);
                             }
@@ -710,24 +710,24 @@ public class C2337e {
             bundle = new Bundle();
             bundle.putInt(C2378b.NEGATIVE_BUTTON_TEXT_ID.name(), R.string.cmn_btn_cancel);
         }
-        C2331d.m10115a(activity, C2328a.ON_TIMER, bundle, (C2325c) new C2325c() {
+        DialogFactory.m10115a(activity, C2328a.ON_TIMER, bundle, (C2325c) new C2325c() {
             /* renamed from: a */
             public void mo6131a() {
                 Calendar g = aoVar.mo12364g();
-                C2331d.m10111a(activity, C2328a.ON_TIMER, (int) R.id.text, (CharSequence) DateFormat.getDateTimeInstance().format(g.getTime()));
+                DialogFactory.m10111a(activity, C2328a.ON_TIMER, (int) R.id.text, (CharSequence) DateFormat.getDateTimeInstance().format(g.getTime()));
             }
         });
     }
 
     /* renamed from: a */
-    public static void m10171a(final Context context, C4839c cVar) {
+    public static void m10171a(final Context context, ContentPlayerViewModel cVar) {
         String[] q = cVar.mo11298q();
         Bundle bundle = new Bundle();
         bundle.putStringArray(C2378b.ITEM_LIST.name(), q);
-        C2331d.m10115a((Activity) context, C2328a.SelectSplitDelete, bundle, (C2325c) new C2325c() {
+        DialogFactory.m10115a((Activity) context, C2328a.SelectSplitDelete, bundle, (C2325c) new C2325c() {
             /* renamed from: a */
             public void mo6131a() {
-                C2331d.m10129c((Activity) context, C2328a.SelectSplitDelete, (int) R.id.title, (int) R.string.msg_split_delete_which);
+                DialogFactory.m10129c((Activity) context, C2328a.SelectSplitDelete, (int) R.id.title, (int) R.string.msg_split_delete_which);
             }
         });
     }
@@ -741,11 +741,11 @@ public class C2337e {
                     return;
                 }
                 if (!a.mo4888b() || !C1879a.m7547c(a, "1.5")) {
-                    C2331d.m10114a(activity, C2328a.ON_DISCONNECT_BY_HIGH_TEMP_NO_FINISH, (Bundle) null);
+                    DialogFactory.m10114a(activity, C2328a.ON_DISCONNECT_BY_HIGH_TEMP_NO_FINISH, (Bundle) null);
                     return;
                 }
-                C2331d.m10114a(activity, C2328a.ON_DISCONNECT_BY_HIGH_TEMP_NO_FINISH, (Bundle) null);
-                C2331d.m10101a(activity, 5000);
+                DialogFactory.m10114a(activity, C2328a.ON_DISCONNECT_BY_HIGH_TEMP_NO_FINISH, (Bundle) null);
+                DialogFactory.m10101a(activity, 5000);
                 return;
             case ON_ASEERT_TEMP_NO_FINISH:
                 C1892f a2 = C1712b.m6919c().mo4896a();
@@ -753,11 +753,11 @@ public class C2337e {
                     return;
                 }
                 if (!a2.mo4888b() || !C1879a.m7547c(a2, "1.5")) {
-                    C2331d.m10114a(activity, C2328a.ON_ASEERT_TEMP_NO_FINISH, (Bundle) null);
+                    DialogFactory.m10114a(activity, C2328a.ON_ASEERT_TEMP_NO_FINISH, (Bundle) null);
                     return;
                 }
-                C2331d.m10114a(activity, C2328a.ON_ASEERT_TEMP_NO_FINISH, (Bundle) null);
-                C2331d.m10101a(activity, 5000);
+                DialogFactory.m10114a(activity, C2328a.ON_ASEERT_TEMP_NO_FINISH, (Bundle) null);
+                DialogFactory.m10101a(activity, 5000);
                 return;
             default:
                 return;
@@ -768,7 +768,7 @@ public class C2337e {
     public static void m10177b() {
         C1892f a = C1712b.m6919c().mo4896a();
         if (a != null && a.mo4888b() && C1879a.m7547c(a, "1.5")) {
-            C2331d.m10099a();
+            DialogFactory.m10099a();
         }
     }
 
@@ -794,20 +794,20 @@ public class C2337e {
         }
         Bundle bundle = new Bundle();
         bundle.putInt(C2378b.MESSAGE_ID.name(), i2);
-        C2331d.m10114a(activity, C2328a.NfcTouchFailedUnavailableGeotag, bundle);
+        DialogFactory.m10114a(activity, C2328a.NfcTouchFailedUnavailableGeotag, bundle);
     }
 
     /* renamed from: a */
     public static void m10155a(final Activity activity) {
         final C2328a aVar = C2328a.CameraSearching;
-        C2331d.m10115a(activity, aVar, (Bundle) null, (C2325c) new C2325c() {
+        DialogFactory.m10115a(activity, aVar, (Bundle) null, (C2325c) new C2325c() {
             /* renamed from: a */
             public void mo6131a() {
-                C2331d.m10136e(activity, aVar, R.id.nfcTextView, 8);
-                C2331d.m10136e(activity, aVar, R.id.nfcImageView, 8);
-                C2331d.m10136e(activity, aVar, R.id.qrStartButton, 8);
-                C2331d.m10136e(activity, aVar, R.id.qrTextView, 8);
-                C2331d.m10106a(activity, aVar, (int) R.id.CancelButton, (OnClickListener) new OnClickListener() {
+                DialogFactory.m10136e(activity, aVar, R.id.nfcTextView, 8);
+                DialogFactory.m10136e(activity, aVar, R.id.nfcImageView, 8);
+                DialogFactory.m10136e(activity, aVar, R.id.qrStartButton, 8);
+                DialogFactory.m10136e(activity, aVar, R.id.qrTextView, 8);
+                DialogFactory.m10106a(activity, aVar, (int) R.id.CancelButton, (OnClickListener) new OnClickListener() {
                     public void onClick(View view) {
                         if (activity instanceof C2323a) {
                             ((C2323a) activity).onDialogCancel(aVar);
@@ -821,13 +821,13 @@ public class C2337e {
     /* renamed from: b */
     public static void m10178b(final Activity activity) {
         final C2328a aVar = C2328a.DIALOG_ID_PIC_WifiConnecting;
-        C2331d.m10115a(activity, aVar, (Bundle) null, (C2325c) new C2325c() {
+        DialogFactory.m10115a(activity, aVar, (Bundle) null, (C2325c) new C2325c() {
             /* renamed from: a */
             public void mo6131a() {
-                C2331d.m10111a(activity, aVar, (int) R.id.NowConnectingTextView, (CharSequence) activity.getString(R.string.msg_now_connecting_to_network) + "\n" + activity.getString(R.string.cmn_msg_wifi_connect_longtime));
-                C2331d.m10142h(activity, aVar, R.id.ConnectProgressImageView, R.drawable.cmn_wifi_connect);
-                C2331d.m10136e(activity, aVar, R.id.ConnectProgressImageView, 0);
-                C2331d.m10106a(activity, aVar, (int) R.id.CancelButton, (OnClickListener) new OnClickListener() {
+                DialogFactory.m10111a(activity, aVar, (int) R.id.NowConnectingTextView, (CharSequence) activity.getString(R.string.msg_now_connecting_to_network) + "\n" + activity.getString(R.string.cmn_msg_wifi_connect_longtime));
+                DialogFactory.m10142h(activity, aVar, R.id.ConnectProgressImageView, R.drawable.cmn_wifi_connect);
+                DialogFactory.m10136e(activity, aVar, R.id.ConnectProgressImageView, 0);
+                DialogFactory.m10106a(activity, aVar, (int) R.id.CancelButton, (OnClickListener) new OnClickListener() {
                     public void onClick(View view) {
                         if (activity instanceof C2323a) {
                             ((C2323a) activity).onDialogCancel(aVar);
@@ -841,17 +841,17 @@ public class C2337e {
     /* renamed from: c */
     public static void m10182c(final Activity activity) {
         final C2328a aVar = C2328a.CameraConnecting;
-        C2331d.m10115a(activity, aVar, (Bundle) null, (C2325c) new C2325c() {
+        DialogFactory.m10115a(activity, aVar, (Bundle) null, (C2325c) new C2325c() {
             /* renamed from: a */
             public void mo6131a() {
-                C2331d.m10111a(activity, aVar, (int) R.id.NowConnectingTextView, (CharSequence) activity.getString(R.string.msg_now_connecting_to_network) + "\n" + activity.getString(R.string.cmn_msg_wifi_connect_longtime));
-                C2331d.m10142h(activity, aVar, R.id.ConnectProgressImageView, R.drawable.cmn_camera_connect);
-                C2331d.m10136e(activity, aVar, R.id.ConnectProgressImageView, 0);
-                C2331d.m10136e(activity, aVar, R.id.nfcTextView, 8);
-                C2331d.m10136e(activity, aVar, R.id.nfcImageView, 8);
-                C2331d.m10136e(activity, aVar, R.id.qrStartButton, 8);
-                C2331d.m10136e(activity, aVar, R.id.qrTextView, 8);
-                C2331d.m10106a(activity, aVar, (int) R.id.CancelButton, (OnClickListener) new OnClickListener() {
+                DialogFactory.m10111a(activity, aVar, (int) R.id.NowConnectingTextView, (CharSequence) activity.getString(R.string.msg_now_connecting_to_network) + "\n" + activity.getString(R.string.cmn_msg_wifi_connect_longtime));
+                DialogFactory.m10142h(activity, aVar, R.id.ConnectProgressImageView, R.drawable.cmn_camera_connect);
+                DialogFactory.m10136e(activity, aVar, R.id.ConnectProgressImageView, 0);
+                DialogFactory.m10136e(activity, aVar, R.id.nfcTextView, 8);
+                DialogFactory.m10136e(activity, aVar, R.id.nfcImageView, 8);
+                DialogFactory.m10136e(activity, aVar, R.id.qrStartButton, 8);
+                DialogFactory.m10136e(activity, aVar, R.id.qrTextView, 8);
+                DialogFactory.m10106a(activity, aVar, (int) R.id.CancelButton, (OnClickListener) new OnClickListener() {
                     public void onClick(View view) {
                         if (activity instanceof C2323a) {
                             ((C2323a) activity).onDialogCancel(aVar);
@@ -871,18 +871,18 @@ public class C2337e {
         }
         Bundle bundle = new Bundle();
         bundle.putString(C2378b.MESSAGE_STRING.name(), string);
-        C2331d.m10114a(activity, aVar, bundle);
+        DialogFactory.m10114a(activity, aVar, bundle);
     }
 
     /* renamed from: a */
     public static void m10168a(final Activity activity, final String str) {
         if (str != null) {
             final C2328a aVar = C2328a.PWDLESS_UNDER_RESEARCH;
-            C2331d.m10115a(activity, aVar, (Bundle) null, (C2325c) new C2325c() {
+            DialogFactory.m10115a(activity, aVar, (Bundle) null, (C2325c) new C2325c() {
                 /* renamed from: a */
                 public void mo6131a() {
                     String string = activity.getString(R.string.msg_pwless_wait_authentification1);
-                    C2331d.m10111a(activity, aVar, (int) R.id.text, (CharSequence) String.format(string, new Object[]{str}) + "\n" + activity.getString(R.string.msg_pwless_wait_authentification2));
+                    DialogFactory.m10111a(activity, aVar, (int) R.id.text, (CharSequence) String.format(string, new Object[]{str}) + "\n" + activity.getString(R.string.msg_pwless_wait_authentification2));
                 }
             });
         }
@@ -891,10 +891,10 @@ public class C2337e {
     /* renamed from: e */
     public static void m10185e(final Activity activity) {
         final C2328a aVar = C2328a.SEARCH_ACCESS_POINT;
-        C2331d.m10115a(activity, aVar, (Bundle) null, (C2325c) new C2325c() {
+        DialogFactory.m10115a(activity, aVar, (Bundle) null, (C2325c) new C2325c() {
             /* renamed from: a */
             public void mo6131a() {
-                C2331d.m10129c(activity, aVar, (int) R.id.text, (int) R.string.msg_now_searching_for_network);
+                DialogFactory.m10129c(activity, aVar, (int) R.id.text, (int) R.string.msg_now_searching_for_network);
             }
         });
     }
@@ -902,10 +902,10 @@ public class C2337e {
     /* renamed from: a */
     public static void m10169a(final Activity activity, final boolean z) {
         final C2328a aVar = C2328a.SEARCH_CAMERA_OR_UPLOAD;
-        C2331d.m10115a(activity, aVar, (Bundle) null, (C2325c) new C2325c() {
+        DialogFactory.m10115a(activity, aVar, (Bundle) null, (C2325c) new C2325c() {
             /* renamed from: a */
             public void mo6131a() {
-                C2331d.m10129c(activity, aVar, (int) R.id.text, C1712b.m6920d().mo4905a(false, z));
+                DialogFactory.m10129c(activity, aVar, (int) R.id.text, C1712b.m6920d().mo4905a(false, z));
             }
         });
     }
@@ -914,11 +914,11 @@ public class C2337e {
     public static void m10181b(final Activity activity, final String str) {
         if (str != null) {
             final C2328a aVar = C2328a.ON_BT_WAKEUP_CONNECTING;
-            C2331d.m10115a(activity, aVar, (Bundle) null, (C2325c) new C2325c() {
+            DialogFactory.m10115a(activity, aVar, (Bundle) null, (C2325c) new C2325c() {
                 /* renamed from: a */
                 public void mo6131a() {
                     String string = activity.getString(R.string.cmn_msg_connect_camera);
-                    C2331d.m10111a(activity, aVar, (int) R.id.text, (CharSequence) String.format(string, new Object[]{str}) + "\n" + activity.getString(R.string.cmn_msg_just_a_moment));
+                    DialogFactory.m10111a(activity, aVar, (int) R.id.text, (CharSequence) String.format(string, new Object[]{str}) + "\n" + activity.getString(R.string.cmn_msg_just_a_moment));
                 }
             });
         }

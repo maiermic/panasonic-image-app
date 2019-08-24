@@ -63,7 +63,7 @@
 
     invoke-virtual {v1, v3, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    invoke-static {}, Lcom/google/android/gms/common/stats/a;->a()Lcom/google/android/gms/common/stats/a;
+    invoke-static {}, Lcom/google/android/gms/common/stats/ConnectionTracker;->a()Lcom/google/android/gms/common/stats/ConnectionTracker;
 
     move-result-object v3
 
@@ -86,7 +86,7 @@
 
     const/16 v5, 0x81
 
-    invoke-virtual {v3, v2, v1, v4, v5}, Lcom/google/android/gms/common/stats/a;->a(Landroid/content/Context;Landroid/content/Intent;Landroid/content/ServiceConnection;I)Z
+    invoke-virtual {v3, v2, v1, v4, v5}, Lcom/google/android/gms/common/stats/ConnectionTracker;->a(Landroid/content/Context;Landroid/content/Intent;Landroid/content/ServiceConnection;I)Z
 
     move-result v1
 
@@ -249,7 +249,7 @@
     if-nez v0, :cond_4
 
     :try_start_4
-    invoke-static {}, Lcom/google/android/gms/common/stats/a;->a()Lcom/google/android/gms/common/stats/a;
+    invoke-static {}, Lcom/google/android/gms/common/stats/ConnectionTracker;->a()Lcom/google/android/gms/common/stats/ConnectionTracker;
 
     iget-object v0, p0, Lcom/google/android/gms/d/bj;->a:Lcom/google/android/gms/d/bh;
 

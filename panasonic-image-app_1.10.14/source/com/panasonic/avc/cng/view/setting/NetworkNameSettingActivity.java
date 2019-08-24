@@ -16,10 +16,10 @@ import com.panasonic.avc.cng.imageapp.C1701a.C1702a;
 import com.panasonic.avc.cng.imageapp.Httpc.HTTPcJni;
 import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.C1712b;
-import com.panasonic.avc.cng.model.p051c.C1846e;
+import com.panasonic.avc.cng.model.p051c.CameraStatus;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
-import com.panasonic.avc.cng.view.setting.C5537al.C5540a;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
+import com.panasonic.avc.cng.view.setting.SettingMenuBaseActivity.C5540a;
 import com.panasonic.avc.cng.view.setting.C5741i.C5759a;
 
 public class NetworkNameSettingActivity extends C5741i {
@@ -155,7 +155,7 @@ public class NetworkNameSettingActivity extends C5741i {
         }
     }
 
-    public void DmsBase_OnGetState(C1846e eVar, boolean z, final int i) {
+    public void DmsBase_OnGetState(CameraStatus eVar, boolean z, final int i) {
         if (z && !this.f16408d) {
             this.f16408d = true;
             this._resultBundle.putBoolean("DeviceDisconnectedKey", true);
@@ -164,13 +164,13 @@ public class NetworkNameSettingActivity extends C5741i {
                     public void run() {
                         switch (i) {
                             case 2:
-                                C2331d.m10114a((Activity) NetworkNameSettingActivity.this, C2328a.ON_DISCONNECT_BY_HIGH_TEMP_FINISH, (Bundle) null);
+                                DialogFactory.m10114a((Activity) NetworkNameSettingActivity.this, C2328a.ON_DISCONNECT_BY_HIGH_TEMP_FINISH, (Bundle) null);
                                 return;
                             case 3:
-                                C2331d.m10114a((Activity) NetworkNameSettingActivity.this, C2328a.ON_DISCONNECT_BATTERY_LOW_FINISH, (Bundle) null);
+                                DialogFactory.m10114a((Activity) NetworkNameSettingActivity.this, C2328a.ON_DISCONNECT_BATTERY_LOW_FINISH, (Bundle) null);
                                 return;
                             default:
-                                C2331d.m10114a((Activity) NetworkNameSettingActivity.this, C2328a.ON_DISCONNECT_FINISH, (Bundle) null);
+                                DialogFactory.m10114a((Activity) NetworkNameSettingActivity.this, C2328a.ON_DISCONNECT_FINISH, (Bundle) null);
                                 return;
                         }
                     }

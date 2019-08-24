@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/view/setting/al;->y()Z
+    value = Lcom/panasonic/avc/cng/view/setting/SettingMenuBaseActivity;->y()Z
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/panasonic/avc/cng/view/setting/al;
+.field final synthetic a:Lcom/panasonic/avc/cng/view/setting/SettingMenuBaseActivity;
 
 
 # direct methods
-.method constructor <init>(Lcom/panasonic/avc/cng/view/setting/al;)V
+.method constructor <init>(Lcom/panasonic/avc/cng/view/setting/SettingMenuBaseActivity;)V
     .locals 0
 
     .prologue
     .line 378
-    iput-object p1, p0, Lcom/panasonic/avc/cng/view/setting/al$1;->a:Lcom/panasonic/avc/cng/view/setting/al;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/view/setting/al$1;->a:Lcom/panasonic/avc/cng/view/setting/SettingMenuBaseActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -41,11 +41,11 @@
 
     .prologue
     .line 380
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/al$1;->a:Lcom/panasonic/avc/cng/view/setting/al;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/al$1;->a:Lcom/panasonic/avc/cng/view/setting/SettingMenuBaseActivity;
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/setting/al;->a(Lcom/panasonic/avc/cng/view/setting/al;Landroid/widget/Toast;)Landroid/widget/Toast;
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/setting/SettingMenuBaseActivity;->a(Lcom/panasonic/avc/cng/view/setting/SettingMenuBaseActivity;Landroid/widget/Toast;)Landroid/widget/Toast;
 
     .line 381
     return-void

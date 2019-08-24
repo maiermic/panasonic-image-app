@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/view/common/a/d;->a(Landroid/app/Activity;)V
+    value = Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;->a(Landroid/app/Activity;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,16 +15,16 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/panasonic/avc/cng/view/common/a/d;
+.field final synthetic a:Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;
 
 
 # direct methods
-.method constructor <init>(Lcom/panasonic/avc/cng/view/common/a/d;)V
+.method constructor <init>(Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;)V
     .locals 0
 
     .prologue
     .line 263
-    iput-object p1, p0, Lcom/panasonic/avc/cng/view/common/a/d$1;->a:Lcom/panasonic/avc/cng/view/common/a/d;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/view/common/a/d$1;->a:Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -60,13 +60,13 @@
     move-result v0
 
     .line 270
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/common/a/d$1;->a:Lcom/panasonic/avc/cng/view/common/a/d;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/common/a/d$1;->a:Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;
 
-    invoke-static {v1}, Lcom/panasonic/avc/cng/view/common/a/d;->a(Lcom/panasonic/avc/cng/view/common/a/d;)Lcom/panasonic/avc/cng/view/common/a/c;
+    invoke-static {v1}, Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;->a(Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;)Lcom/panasonic/avc/cng/view/common/a/FelicaListener;
 
     move-result-object v1
 
-    invoke-virtual {v1, v0}, Lcom/panasonic/avc/cng/view/common/a/c;->a(I)V
+    invoke-virtual {v1, v0}, Lcom/panasonic/avc/cng/view/common/a/FelicaListener;->a(I)V
 
     .line 272
     :cond_0

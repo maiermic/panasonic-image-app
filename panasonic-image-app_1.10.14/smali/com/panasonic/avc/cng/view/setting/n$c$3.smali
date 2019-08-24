@@ -43,20 +43,20 @@
     .line 1347
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/n$c$3;->a:Lcom/panasonic/avc/cng/view/setting/n$c;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/n$c;->a:Lcom/panasonic/avc/cng/view/setting/n;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/n$c;->a:Lcom/panasonic/avc/cng/view/setting/LiveSetupSliderBarActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;)V
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;)V
 
     .line 1348
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/n$c$3;->a:Lcom/panasonic/avc/cng/view/setting/n$c;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/n$c;->a:Lcom/panasonic/avc/cng/view/setting/n;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/n$c;->a:Lcom/panasonic/avc/cng/view/setting/LiveSetupSliderBarActivity;
 
     sget-object v1, Lcom/panasonic/avc/cng/view/b/b$a;->b:Lcom/panasonic/avc/cng/view/b/b$a;
 
     const/4 v2, 0x0
 
-    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     .line 1349
     return-void

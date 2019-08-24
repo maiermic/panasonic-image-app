@@ -104,7 +104,7 @@
 .method public abstract h()Z
 .end method
 
-.method public abstract i()Lcom/panasonic/avc/cng/model/c/e;
+.method public abstract i()Lcom/panasonic/avc/cng/model/c/CameraStatus;
 .end method
 
 .method public abstract j()V

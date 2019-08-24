@@ -73,11 +73,11 @@
 
     .line 2820
     :cond_0
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
@@ -95,9 +95,9 @@
     .line 2824
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/h$22;->a:Lcom/panasonic/avc/cng/view/liveview/h;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/h;->k:Lcom/panasonic/avc/cng/core/a/af;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/h;->k:Lcom/panasonic/avc/cng/core/a/RecordCommand;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/af;->e()Lcom/panasonic/avc/cng/model/c/h;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/RecordCommand;->e()Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
     move-result-object v0
 
@@ -130,11 +130,11 @@
     :try_start_1
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/h$22;->a:Lcom/panasonic/avc/cng/view/liveview/h;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/h;->k:Lcom/panasonic/avc/cng/core/a/af;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/h;->k:Lcom/panasonic/avc/cng/core/a/RecordCommand;
 
     const/4 v2, 0x0
 
-    invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/core/a/af;->b(I)Lcom/panasonic/avc/cng/model/c/h;
+    invoke-virtual {v0, v2}, Lcom/panasonic/avc/cng/core/a/RecordCommand;->b(I)Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
     move-result-object v0
 
@@ -171,7 +171,7 @@
 
     new-instance v3, Lcom/panasonic/avc/cng/view/liveview/h$22$1;
 
-    invoke-direct {v3, p0, v0, v1}, Lcom/panasonic/avc/cng/view/liveview/h$22$1;-><init>(Lcom/panasonic/avc/cng/view/liveview/h$22;Lcom/panasonic/avc/cng/model/c/h;Landroid/content/SharedPreferences;)V
+    invoke-direct {v3, p0, v0, v1}, Lcom/panasonic/avc/cng/view/liveview/h$22$1;-><init>(Lcom/panasonic/avc/cng/view/liveview/h$22;Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;Landroid/content/SharedPreferences;)V
 
     invoke-virtual {v2, v3}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 

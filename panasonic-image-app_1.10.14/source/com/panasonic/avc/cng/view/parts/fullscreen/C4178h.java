@@ -7,10 +7,10 @@ import com.panasonic.avc.cng.model.p051c.C1860l;
 import com.panasonic.avc.cng.view.liveview.LiveViewLumixGHFullscreenActivity;
 import com.panasonic.avc.cng.view.setting.C5541am;
 import com.panasonic.avc.cng.view.setting.C5541am.C5563o;
-import com.panasonic.avc.cng.view.setting.C5792s;
+import com.panasonic.avc.cng.view.setting.LiveSetupDrumPickerWhiteBalanceViewModel;
 
 /* renamed from: com.panasonic.avc.cng.view.parts.fullscreen.h */
-public class C4178h extends C4167c<C5792s> {
+public class C4178h extends C4167c<LiveSetupDrumPickerWhiteBalanceViewModel> {
     public C4178h(LiveViewLumixGHFullscreenActivity liveViewLumixGHFullscreenActivity) {
         super(liveViewLumixGHFullscreenActivity);
     }
@@ -36,6 +36,6 @@ public class C4178h extends C4167c<C5792s> {
 
     /* renamed from: a */
     public void mo9844a(int... iArr) {
-        ((C5792s) mo9858h()).mo12690a(iArr[0]);
+        ((LiveSetupDrumPickerWhiteBalanceViewModel) mo9858h()).mo12690a(iArr[0]);
     }
 }

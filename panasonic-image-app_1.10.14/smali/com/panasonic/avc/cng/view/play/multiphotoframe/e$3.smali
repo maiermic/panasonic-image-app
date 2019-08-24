@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/view/play/multiphotoframe/e;->g()Z
+    value = Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameExecuteViewModel;->g()Z
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -22,16 +22,16 @@
 
 .field final synthetic b:Ljava/lang/String;
 
-.field final synthetic c:Lcom/panasonic/avc/cng/view/play/multiphotoframe/e;
+.field final synthetic c:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameExecuteViewModel;
 
 
 # direct methods
-.method constructor <init>(Lcom/panasonic/avc/cng/view/play/multiphotoframe/e;Ljava/util/ArrayList;Ljava/lang/String;)V
+.method constructor <init>(Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameExecuteViewModel;Ljava/util/ArrayList;Ljava/lang/String;)V
     .locals 0
 
     .prologue
     .line 329
-    iput-object p1, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/e$3;->c:Lcom/panasonic/avc/cng/view/play/multiphotoframe/e;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/e$3;->c:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameExecuteViewModel;
 
     iput-object p2, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/e$3;->a:Ljava/util/ArrayList;
 
@@ -100,9 +100,9 @@
 
     .line 346
     :cond_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/e$3;->c:Lcom/panasonic/avc/cng/view/play/multiphotoframe/e;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/e$3;->c:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameExecuteViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/e;->a(Lcom/panasonic/avc/cng/view/play/multiphotoframe/e;)Lcom/panasonic/avc/cng/model/service/n;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameExecuteViewModel;->a(Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameExecuteViewModel;)Lcom/panasonic/avc/cng/model/service/n;
 
     move-result-object v0
 
@@ -110,9 +110,9 @@
 
     const-string v3, ".jpg"
 
-    iget-object v4, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/e$3;->c:Lcom/panasonic/avc/cng/view/play/multiphotoframe/e;
+    iget-object v4, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/e$3;->c:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameExecuteViewModel;
 
-    invoke-static {v4}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/e;->e(Lcom/panasonic/avc/cng/view/play/multiphotoframe/e;)Lcom/panasonic/avc/cng/view/play/multiphotoframe/e$a;
+    invoke-static {v4}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameExecuteViewModel;->e(Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameExecuteViewModel;)Lcom/panasonic/avc/cng/view/play/multiphotoframe/e$a;
 
     move-result-object v4
 

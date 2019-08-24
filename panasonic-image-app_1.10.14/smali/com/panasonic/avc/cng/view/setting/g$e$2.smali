@@ -59,18 +59,18 @@
     .line 782
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/g$e$2;->e:Lcom/panasonic/avc/cng/view/setting/g$e;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/g$e;->a:Lcom/panasonic/avc/cng/view/setting/g;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/g$e;->a:Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/g;->c:Lcom/panasonic/avc/cng/view/setting/g$d;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;->c:Lcom/panasonic/avc/cng/view/setting/g$d;
 
     if-eqz v0, :cond_0
 
     .line 784
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/g$e$2;->e:Lcom/panasonic/avc/cng/view/setting/g$e;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/g$e;->a:Lcom/panasonic/avc/cng/view/setting/g;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/g$e;->a:Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/g;->c:Lcom/panasonic/avc/cng/view/setting/g$d;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;->c:Lcom/panasonic/avc/cng/view/setting/g$d;
 
     iget-boolean v1, p0, Lcom/panasonic/avc/cng/view/setting/g$e$2;->a:Z
 

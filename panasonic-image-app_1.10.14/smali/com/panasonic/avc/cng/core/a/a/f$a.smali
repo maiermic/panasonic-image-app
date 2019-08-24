@@ -70,7 +70,7 @@
 
     const-string v1, "[MULTI-DEL] Cancel command failed"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 155
     invoke-virtual {p1}, Lcom/panasonic/avc/cng/core/a/a/b;->printStackTrace()V
@@ -115,7 +115,7 @@
 
     const-string v1, "[MULTI-DEL] Cancel command finished"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 146
     iget-object v0, p0, Lcom/panasonic/avc/cng/core/a/a/f$a;->a:Lcom/panasonic/avc/cng/core/a/a/f;

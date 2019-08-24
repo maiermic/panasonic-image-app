@@ -645,14 +645,14 @@
     check-cast v0, Lcom/panasonic/avc/cng/core/b/b/j;
 
     .line 1131
-    invoke-static {v1}, Lcom/panasonic/avc/cng/core/b/b/e;->a([F)Ljava/nio/FloatBuffer;
+    invoke-static {v1}, Lcom/panasonic/avc/cng/core/b/b/OGLUtility;->a([F)Ljava/nio/FloatBuffer;
 
     move-result-object v4
 
     iput-object v4, v0, Lcom/panasonic/avc/cng/core/b/b/j;->b:Ljava/nio/FloatBuffer;
 
     .line 1133
-    invoke-static {v2}, Lcom/panasonic/avc/cng/core/b/b/e;->a([F)Ljava/nio/FloatBuffer;
+    invoke-static {v2}, Lcom/panasonic/avc/cng/core/b/b/OGLUtility;->a([F)Ljava/nio/FloatBuffer;
 
     move-result-object v4
 
@@ -1129,7 +1129,7 @@
 
     const-string v2, "#extension GL_OES_EGL_image_external : require\nprecision mediump float;varying vec2 texcoordVarying;uniform samplerExternalOES texture;uniform float flash;void main() {vec4 color = texture2D(texture, texcoordVarying);gl_FragColor =  vec4(color.r + flash- color.r*flash,color.g + flash- color.g*flash,color.b + flash- color.b*flash, color.a);}"
 
-    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/core/b/b/e;->a(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/core/b/b/OGLUtility;->a(Ljava/lang/String;Ljava/lang/String;)I
 
     move-result v1
 
@@ -1468,7 +1468,7 @@
 
     const-string v1, "Dispose()"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 127
     iget-object v1, p0, Lcom/panasonic/avc/cng/core/b/a/b;->g:Ljava/lang/Object;

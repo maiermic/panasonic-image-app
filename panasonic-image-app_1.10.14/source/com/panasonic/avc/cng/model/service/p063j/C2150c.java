@@ -6,8 +6,8 @@ import com.panasonic.avc.cng.model.C1878d;
 import com.panasonic.avc.cng.model.service.C1921a;
 import com.panasonic.avc.cng.model.service.C2236s;
 import com.panasonic.avc.cng.model.service.C2236s.C2237a;
-import com.panasonic.avc.cng.model.service.C2253z;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
+import com.panasonic.avc.cng.util.ImageAppLog;
 
 /* renamed from: com.panasonic.avc.cng.model.service.j.c */
 public class C2150c implements C2173a, C2236s {
@@ -64,7 +64,7 @@ public class C2150c implements C2173a, C2236s {
     /* renamed from: a */
     public void mo5679a(C2237a aVar) {
         this.f6655b = aVar;
-        C1921a f = C2253z.m9703f();
+        C1921a f = ServiceFactory.m9703f();
         if (f != null) {
             f.mo5041f();
         }
@@ -146,7 +146,7 @@ public class C2150c implements C2173a, C2236s {
 
     /* renamed from: d */
     public void mo5684d() {
-        C2261g.m9763a(f6654a, getClass().getSimpleName() + "#BeginSeek");
+        ImageAppLog.debug(f6654a, getClass().getSimpleName() + "#BeginSeek");
         if (this.f6661h == 0) {
             this.f6660g = (long) mo5689i();
             this.f6657d.mo5755a(this.f6660g);
@@ -156,7 +156,7 @@ public class C2150c implements C2173a, C2236s {
 
     /* renamed from: a */
     public void mo5676a(long j) {
-        C2261g.m9763a(f6654a, getClass().getSimpleName() + "#Seek: seekPosMsec = " + j);
+        ImageAppLog.debug(f6654a, getClass().getSimpleName() + "#Seek: seekPosMsec = " + j);
         if (this.f6661h == 1) {
             this.f6660g = Math.max(0, Math.min(j, (long) mo5688h()));
             this.f6657d.mo5755a(this.f6660g);
@@ -165,9 +165,9 @@ public class C2150c implements C2173a, C2236s {
 
     /* renamed from: e */
     public boolean mo5685e() {
-        C2261g.m9763a(f6654a, getClass().getSimpleName() + "#EndSeek");
+        ImageAppLog.debug(f6654a, getClass().getSimpleName() + "#EndSeek");
         if (this.f6661h != 1) {
-            C2261g.m9763a(f6654a, "Ignore EndSeek()");
+            ImageAppLog.debug(f6654a, "Ignore EndSeek()");
             return false;
         }
         this.f6661h = 2;
@@ -248,7 +248,7 @@ public class C2150c implements C2173a, C2236s {
             this.f6657d.mo5762d();
             this.f6657d = null;
         }
-        C1921a f = C2253z.m9703f();
+        C1921a f = ServiceFactory.m9703f();
         if (f != null) {
             f.mo5042g();
         }

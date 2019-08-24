@@ -45,7 +45,7 @@
 
     const-string v1, "OnFind"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 330
     iget-object v0, p0, Lcom/panasonic/avc/cng/application/e$a$1;->a:Lcom/panasonic/avc/cng/application/e$a;
@@ -64,9 +64,9 @@
     :cond_0
     iget-object v0, p0, Lcom/panasonic/avc/cng/application/e$a$1;->a:Lcom/panasonic/avc/cng/application/e$a;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/application/e$a;->a:Lcom/panasonic/avc/cng/application/e;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/application/e$a;->a:Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/application/e;->k(Lcom/panasonic/avc/cng/application/e;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportViewModel;->k(Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportViewModel;)Landroid/os/Handler;
 
     move-result-object v0
 
@@ -88,7 +88,7 @@
 
     const-string v1, "OnNone"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 350
     iget-object v0, p0, Lcom/panasonic/avc/cng/application/e$a$1;->a:Lcom/panasonic/avc/cng/application/e$a;
@@ -107,9 +107,9 @@
     :cond_0
     iget-object v0, p0, Lcom/panasonic/avc/cng/application/e$a$1;->a:Lcom/panasonic/avc/cng/application/e$a;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/application/e$a;->a:Lcom/panasonic/avc/cng/application/e;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/application/e$a;->a:Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/application/e;->l(Lcom/panasonic/avc/cng/application/e;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportViewModel;->l(Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportViewModel;)Landroid/os/Handler;
 
     move-result-object v0
 

@@ -4,7 +4,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/google/android/gms/a/a/a;
+    value = Lcom/google/android/gms/a/a/AdvertisingIdClient;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

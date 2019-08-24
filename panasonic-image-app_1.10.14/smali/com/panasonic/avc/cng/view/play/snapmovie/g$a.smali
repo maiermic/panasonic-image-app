@@ -43,7 +43,7 @@
     .line 425
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/snapmovie/g$a;->a:Lcom/panasonic/avc/cng/view/play/snapmovie/g;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/snapmovie/g;->a(Lcom/panasonic/avc/cng/view/play/snapmovie/g;)Lcom/panasonic/avc/cng/view/parts/t;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/snapmovie/g;->a(Lcom/panasonic/avc/cng/view/play/snapmovie/g;)Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
     move-result-object v0
 
@@ -52,22 +52,22 @@
     .line 428
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/snapmovie/g$a;->a:Lcom/panasonic/avc/cng/view/play/snapmovie/g;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/snapmovie/g;->a(Lcom/panasonic/avc/cng/view/play/snapmovie/g;)Lcom/panasonic/avc/cng/view/parts/t;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/snapmovie/g;->a(Lcom/panasonic/avc/cng/view/play/snapmovie/g;)Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/parts/t;->l()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->l()V
 
     .line 434
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/snapmovie/g$a;->a:Lcom/panasonic/avc/cng/view/play/snapmovie/g;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/snapmovie/g;->a(Lcom/panasonic/avc/cng/view/play/snapmovie/g;)Lcom/panasonic/avc/cng/view/parts/t;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/snapmovie/g;->a(Lcom/panasonic/avc/cng/view/play/snapmovie/g;)Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
     move-result-object v0
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/parts/t;->b(Z)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->b(Z)V
 
     .line 437
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/snapmovie/g$a;->a:Lcom/panasonic/avc/cng/view/play/snapmovie/g;

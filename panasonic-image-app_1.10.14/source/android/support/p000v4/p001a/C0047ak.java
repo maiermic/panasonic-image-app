@@ -64,7 +64,7 @@ class C0047ak {
 
         /* renamed from: a */
         public void mo5a(C0040a aVar) {
-            this.f91c.add(C0045aj.m116a(this.f89a, aVar));
+            this.f91c.add(NotificationCompat.m116a(this.f89a, aVar));
         }
 
         /* renamed from: a */
@@ -74,7 +74,7 @@ class C0047ak {
 
         /* renamed from: b */
         public Notification mo7b() {
-            SparseArray a = C0045aj.m118a(this.f91c);
+            SparseArray a = NotificationCompat.m118a(this.f91c);
             if (a != null) {
                 this.f90b.putSparseParcelableArray("android.support.actionExtras", a);
             }

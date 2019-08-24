@@ -33,7 +33,7 @@ public final class C0243g {
 
         /* renamed from: a */
         public void mo837a(LayoutInflater layoutInflater, C0253k kVar) {
-            C0250i.m1088a(layoutInflater, kVar);
+            LayoutInflaterCompatHC.m1088a(layoutInflater, kVar);
         }
     }
 

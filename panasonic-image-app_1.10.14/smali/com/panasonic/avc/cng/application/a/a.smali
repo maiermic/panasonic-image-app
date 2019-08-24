@@ -85,10 +85,10 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/application/a/b;->a(Ljava/lang/String;)V
+    invoke-static {v0}, Lcom/panasonic/avc/cng/application/a/GoogleTagManager;->a(Ljava/lang/String;)V
 
     .line 21
-    invoke-static {}, Lcom/panasonic/avc/cng/application/a/b;->a()Lcom/panasonic/avc/cng/application/a/b;
+    invoke-static {}, Lcom/panasonic/avc/cng/application/a/GoogleTagManager;->a()Lcom/panasonic/avc/cng/application/a/GoogleTagManager;
 
     move-result-object v0
 
@@ -97,7 +97,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/application/a/b;->a(Landroid/content/Context;)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/application/a/GoogleTagManager;->a(Landroid/content/Context;)V
 
     .line 26
     invoke-virtual {p0}, Lcom/panasonic/avc/cng/application/a/a;->getIntent()Landroid/content/Intent;
@@ -111,7 +111,7 @@
     move-result-object v1
 
     .line 29
-    invoke-virtual {v0, p0, v1}, Lcom/panasonic/avc/cng/application/a/b;->a(Lcom/panasonic/avc/cng/application/a/a;Ljava/lang/String;)V
+    invoke-virtual {v0, p0, v1}, Lcom/panasonic/avc/cng/application/a/GoogleTagManager;->a(Lcom/panasonic/avc/cng/application/a/a;Ljava/lang/String;)V
 
     .line 30
     return-void

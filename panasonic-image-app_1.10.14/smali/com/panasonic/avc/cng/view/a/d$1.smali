@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/view/a/d;->OnConnectionChanged(Z)V
+    value = Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;->OnConnectionChanged(Z)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/panasonic/avc/cng/view/a/d;
+.field final synthetic a:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
 
 # direct methods
-.method constructor <init>(Lcom/panasonic/avc/cng/view/a/d;)V
+.method constructor <init>(Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;)V
     .locals 0
 
     .prologue
     .line 904
-    iput-object p1, p0, Lcom/panasonic/avc/cng/view/a/d$1;->a:Lcom/panasonic/avc/cng/view/a/d;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/view/a/d$1;->a:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,18 +42,18 @@
     .prologue
     .line 908
     :try_start_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/a/d$1;->a:Lcom/panasonic/avc/cng/view/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/a/d$1;->a:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/a/d;->e(Lcom/panasonic/avc/cng/view/a/d;)Z
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;->e(Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;)Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
     .line 911
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/a/d$1;->a:Lcom/panasonic/avc/cng/view/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/a/d$1;->a:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/a/d;->c(Lcom/panasonic/avc/cng/view/a/d;)Landroid/app/Activity;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;->c(Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;)Landroid/app/Activity;
 
     move-result-object v0
 

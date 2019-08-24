@@ -11,7 +11,7 @@ import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.view.p073b.C2317a.C2323a;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
 import com.panasonic.avc.cng.view.p073b.C2376f.C2378b;
 
 public class SmartAppLauncherActivity extends C1350a implements C2323a {
@@ -61,11 +61,11 @@ public class SmartAppLauncherActivity extends C1350a implements C2323a {
                 str2 = String.format(getResources().getString(R.string.func_app_boot_android), new Object[]{str}) + "\n" + getResources().getString(R.string.func_app_need_reboot);
                 aVar = C2328a.IntentGooglePlay;
             }
-            C2331d.m10100a((Activity) this);
+            DialogFactory.m10100a((Activity) this);
             if (aVar != null) {
                 Bundle bundle2 = new Bundle();
                 bundle2.putString(C2378b.MESSAGE_STRING.name(), str2);
-                C2331d.m10114a((Activity) this, aVar, bundle2);
+                DialogFactory.m10114a((Activity) this, aVar, bundle2);
             }
         }
     }
@@ -85,7 +85,7 @@ public class SmartAppLauncherActivity extends C1350a implements C2323a {
     }
 
     public void onPositiveButtonClick(C2328a aVar) {
-        C2331d.m10100a((Activity) this);
+        DialogFactory.m10100a((Activity) this);
         switch (aVar) {
             case IntentGooglePlay:
                 m11828a(this.f8772a);
@@ -107,7 +107,7 @@ public class SmartAppLauncherActivity extends C1350a implements C2323a {
         switch (aVar) {
             case IntentGooglePlay:
             case IntentApplication:
-                C2331d.m10100a((Activity) this);
+                DialogFactory.m10100a((Activity) this);
                 finish();
                 return;
             default:
@@ -116,7 +116,7 @@ public class SmartAppLauncherActivity extends C1350a implements C2323a {
     }
 
     public void onDialogCancel(C2328a aVar) {
-        C2331d.m10100a((Activity) this);
+        DialogFactory.m10100a((Activity) this);
         switch (aVar) {
             case IntentGooglePlay:
                 finish();

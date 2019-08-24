@@ -265,7 +265,7 @@
 
     .line 104
     :goto_1
-    invoke-static {p0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;)V
+    invoke-static {p0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;)V
 
     .line 106
     if-eqz v0, :cond_2
@@ -285,7 +285,7 @@
     invoke-virtual {v2, v3, v1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 110
-    invoke-static {p0, v0, v2}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {p0, v0, v2}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     .line 113
     :cond_2
@@ -463,7 +463,7 @@
 
     .prologue
     .line 204
-    invoke-static {p0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;)V
+    invoke-static {p0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;)V
 
     .line 206
     sget-object v0, Lcom/panasonic/avc/cng/view/functab/SmartAppLauncherActivity$1;->a:[I
@@ -547,7 +547,7 @@
 
     .line 191
     :pswitch_0
-    invoke-static {p0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;)V
+    invoke-static {p0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;)V
 
     .line 192
     invoke-virtual {p0}, Lcom/panasonic/avc/cng/view/functab/SmartAppLauncherActivity;->finish()V
@@ -577,7 +577,7 @@
 
     .prologue
     .line 155
-    invoke-static {p0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;)V
+    invoke-static {p0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;)V
 
     .line 157
     sget-object v0, Lcom/panasonic/avc/cng/view/functab/SmartAppLauncherActivity$1;->a:[I

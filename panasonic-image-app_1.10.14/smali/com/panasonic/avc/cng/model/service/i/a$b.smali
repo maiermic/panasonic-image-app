@@ -56,14 +56,14 @@
 
     const-string v1, "statusReceived Start"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 261
     const-string v0, "\u2605NfcRemoteWatchService"
 
     const-string v1, "statusReceived Start"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 264
     sparse-switch p1, :sswitch_data_0
@@ -78,7 +78,7 @@
 
     const-string v1, "STATUS_TAG_DETECTED"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 277
     iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/i/a$b;->a:Lcom/panasonic/avc/cng/model/service/i/a;
@@ -123,7 +123,7 @@
 
     const-string v1, "STATUS_FELICA_AVAILABLE"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 348
     iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/i/a$b;->a:Lcom/panasonic/avc/cng/model/service/i/a;
@@ -160,13 +160,13 @@
     .line 356
     iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/i/a$b;->a:Lcom/panasonic/avc/cng/model/service/i/a;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/i/a;->e(Lcom/panasonic/avc/cng/model/service/i/a;)Lcom/panasonic/avc/cng/view/common/a/d;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/i/a;->e(Lcom/panasonic/avc/cng/model/service/i/a;)Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;
 
     move-result-object v0
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/common/a/d;->a(Z)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;->a(Z)V
 
     goto :goto_0
 
@@ -245,7 +245,7 @@
 
     const-string v1, "checkFelicaAvailability STATUS_FELICA_RW_NOT_SUPPORTED"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 404
     iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/i/a$b;->a:Lcom/panasonic/avc/cng/model/service/i/a;
@@ -374,13 +374,13 @@
     .line 462
     iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/i/a$b;->a:Lcom/panasonic/avc/cng/model/service/i/a;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/i/a;->e(Lcom/panasonic/avc/cng/model/service/i/a;)Lcom/panasonic/avc/cng/view/common/a/d;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/i/a;->e(Lcom/panasonic/avc/cng/model/service/i/a;)Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;
 
     move-result-object v0
 
     const/4 v1, 0x1
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/common/a/d;->a(Z)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/common/a/NfcWrapper;->a(Z)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 

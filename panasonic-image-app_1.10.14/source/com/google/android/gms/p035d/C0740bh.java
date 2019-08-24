@@ -3,7 +3,7 @@ package com.google.android.gms.p035d;
 import android.content.ComponentName;
 import android.os.RemoteException;
 import com.google.android.gms.common.internal.C0612ab;
-import com.google.android.gms.common.stats.C0679a;
+import com.google.android.gms.common.stats.ConnectionTracker;
 import com.google.android.gms.p032b.C0556r;
 import java.util.Collections;
 
@@ -117,7 +117,7 @@ public final class C0740bh extends C0734bb {
         C0556r.m2202d();
         mo1900x();
         try {
-            C0679a.m2525a();
+            ConnectionTracker.m2525a();
             mo1886i().unbindService(this.f1601a);
         } catch (IllegalArgumentException | IllegalStateException e) {
         }

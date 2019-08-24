@@ -43,32 +43,32 @@
     .line 205
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/n$a$2;->a:Lcom/panasonic/avc/cng/view/play/multiphotoframe/n$a;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/n$a;->a:Lcom/panasonic/avc/cng/view/play/multiphotoframe/n;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/n$a;->a:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameSelectPictureViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/n;->k:Lcom/panasonic/avc/cng/view/play/multiphotoframe/n$b;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameSelectPictureViewModel;->k:Lcom/panasonic/avc/cng/view/play/multiphotoframe/n$b;
 
     if-eqz v0, :cond_0
 
     .line 206
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/n$a$2;->a:Lcom/panasonic/avc/cng/view/play/multiphotoframe/n$a;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/n$a;->a:Lcom/panasonic/avc/cng/view/play/multiphotoframe/n;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/n$a;->a:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameSelectPictureViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/n;->k:Lcom/panasonic/avc/cng/view/play/multiphotoframe/n$b;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameSelectPictureViewModel;->k:Lcom/panasonic/avc/cng/view/play/multiphotoframe/n$b;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/n$a$2;->a:Lcom/panasonic/avc/cng/view/play/multiphotoframe/n$a;
 
-    iget-object v1, v1, Lcom/panasonic/avc/cng/view/play/multiphotoframe/n$a;->a:Lcom/panasonic/avc/cng/view/play/multiphotoframe/n;
+    iget-object v1, v1, Lcom/panasonic/avc/cng/view/play/multiphotoframe/n$a;->a:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameSelectPictureViewModel;
 
-    invoke-static {v1}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/n;->c(Lcom/panasonic/avc/cng/view/play/multiphotoframe/n;)I
+    invoke-static {v1}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameSelectPictureViewModel;->c(Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameSelectPictureViewModel;)I
 
     move-result v1
 
     iget-object v2, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/n$a$2;->a:Lcom/panasonic/avc/cng/view/play/multiphotoframe/n$a;
 
-    iget-object v2, v2, Lcom/panasonic/avc/cng/view/play/multiphotoframe/n$a;->a:Lcom/panasonic/avc/cng/view/play/multiphotoframe/n;
+    iget-object v2, v2, Lcom/panasonic/avc/cng/view/play/multiphotoframe/n$a;->a:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameSelectPictureViewModel;
 
-    invoke-static {v2}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/n;->d(Lcom/panasonic/avc/cng/view/play/multiphotoframe/n;)I
+    invoke-static {v2}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameSelectPictureViewModel;->d(Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameSelectPictureViewModel;)I
 
     move-result v2
 

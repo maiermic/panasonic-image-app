@@ -13,7 +13,7 @@ import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.view.p073b.C2317a.C2325c;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
 
 /* renamed from: com.panasonic.avc.cng.view.setting.b */
 public abstract class C5671b extends C5741i {
@@ -36,7 +36,7 @@ public abstract class C5671b extends C5741i {
         setResult(-1, new Intent());
         this.f17535c = bundle;
         if (bundle == null) {
-            C2331d.m10114a((Activity) this, C2328a.DIALOG_WEB_LOADING, (Bundle) null);
+            DialogFactory.m10114a((Activity) this, C2328a.DIALOG_WEB_LOADING, (Bundle) null);
         }
     }
 
@@ -52,8 +52,8 @@ public abstract class C5671b extends C5741i {
         webView.setWebViewClient(new WebViewClient() {
             public void onPageFinished(WebView webView, String str) {
                 super.onPageFinished(webView, str);
-                if (C2331d.m10125b((Activity) C5671b.this, C2328a.DIALOG_WEB_LOADING)) {
-                    C2331d.m10100a((Activity) C5671b.this);
+                if (DialogFactory.m10125b((Activity) C5671b.this, C2328a.DIALOG_WEB_LOADING)) {
+                    DialogFactory.m10100a((Activity) C5671b.this);
                 }
             }
 
@@ -75,20 +75,20 @@ public abstract class C5671b extends C5741i {
     /* access modifiers changed from: private */
     /* renamed from: a */
     public void m21156a() {
-        C2331d.m10100a((Activity) this);
+        DialogFactory.m10100a((Activity) this);
         if (this.f17535c == null) {
             if (this.f17533a == 0) {
-                C2331d.m10115a((Activity) this, C2328a.NO_CONNECT_HELP_ERROR, (Bundle) null, (C2325c) new C2325c() {
+                DialogFactory.m10115a((Activity) this, C2328a.NO_CONNECT_HELP_ERROR, (Bundle) null, (C2325c) new C2325c() {
                     /* renamed from: a */
                     public void mo6131a() {
-                        C2331d.m10129c((Activity) C5671b.this, C2328a.NO_CONNECT_HELP_ERROR, (int) R.id.text, (int) R.string.cmn_msg_help_error_not_internet);
+                        DialogFactory.m10129c((Activity) C5671b.this, C2328a.NO_CONNECT_HELP_ERROR, (int) R.id.text, (int) R.string.cmn_msg_help_error_not_internet);
                     }
                 });
             } else {
-                C2331d.m10115a((Activity) this, C2328a.NO_CONNECT_ERROR, (Bundle) null, (C2325c) new C2325c() {
+                DialogFactory.m10115a((Activity) this, C2328a.NO_CONNECT_ERROR, (Bundle) null, (C2325c) new C2325c() {
                     /* renamed from: a */
                     public void mo6131a() {
-                        C2331d.m10129c((Activity) C5671b.this, C2328a.NO_CONNECT_ERROR, (int) R.id.text, (int) R.string.cmn_msg_error_not_internet);
+                        DialogFactory.m10129c((Activity) C5671b.this, C2328a.NO_CONNECT_ERROR, (int) R.id.text, (int) R.string.cmn_msg_error_not_internet);
                     }
                 });
             }

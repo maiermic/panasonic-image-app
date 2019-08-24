@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/panasonic/avc/cng/model/service/d/a;
+    value = Lcom/panasonic/avc/cng/model/service/d/DmsService;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,28 +18,28 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/panasonic/avc/cng/model/service/d/a;
+.field final synthetic a:Lcom/panasonic/avc/cng/model/service/d/DmsService;
 
 
 # direct methods
-.method private constructor <init>(Lcom/panasonic/avc/cng/model/service/d/a;)V
+.method private constructor <init>(Lcom/panasonic/avc/cng/model/service/d/DmsService;)V
     .locals 0
 
     .prologue
     .line 1189
-    iput-object p1, p0, Lcom/panasonic/avc/cng/model/service/d/a$a;->a:Lcom/panasonic/avc/cng/model/service/d/a;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/model/service/d/a$a;->a:Lcom/panasonic/avc/cng/model/service/d/DmsService;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/panasonic/avc/cng/model/service/d/a;Lcom/panasonic/avc/cng/model/service/d/a$1;)V
+.method synthetic constructor <init>(Lcom/panasonic/avc/cng/model/service/d/DmsService;Lcom/panasonic/avc/cng/model/service/d/a$1;)V
     .locals 0
 
     .prologue
     .line 1189
-    invoke-direct {p0, p1}, Lcom/panasonic/avc/cng/model/service/d/a$a;-><init>(Lcom/panasonic/avc/cng/model/service/d/a;)V
+    invoke-direct {p0, p1}, Lcom/panasonic/avc/cng/model/service/d/a$a;-><init>(Lcom/panasonic/avc/cng/model/service/d/DmsService;)V
 
     return-void
 .end method
@@ -59,23 +59,23 @@
     const/4 v7, 0x1
 
     .line 1280
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/d/a$a;->a:Lcom/panasonic/avc/cng/model/service/d/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/d/a$a;->a:Lcom/panasonic/avc/cng/model/service/d/DmsService;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/d/a;->z(Lcom/panasonic/avc/cng/model/service/d/a;)Z
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/d/DmsService;->z(Lcom/panasonic/avc/cng/model/service/d/DmsService;)Z
 
     move-result v0
 
     if-eq v0, p1, :cond_1
 
     .line 1282
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/d/a$a;->a:Lcom/panasonic/avc/cng/model/service/d/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/d/a$a;->a:Lcom/panasonic/avc/cng/model/service/d/DmsService;
 
-    invoke-static {v0, p1}, Lcom/panasonic/avc/cng/model/service/d/a;->g(Lcom/panasonic/avc/cng/model/service/d/a;Z)Z
+    invoke-static {v0, p1}, Lcom/panasonic/avc/cng/model/service/d/DmsService;->g(Lcom/panasonic/avc/cng/model/service/d/DmsService;Z)Z
 
     .line 1283
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/d/a$a;->a:Lcom/panasonic/avc/cng/model/service/d/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/d/a$a;->a:Lcom/panasonic/avc/cng/model/service/d/DmsService;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/d/a;->z(Lcom/panasonic/avc/cng/model/service/d/a;)Z
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/d/DmsService;->z(Lcom/panasonic/avc/cng/model/service/d/DmsService;)Z
 
     move-result v0
 
@@ -87,22 +87,22 @@
     if-ge v0, v1, :cond_2
 
     .line 1287
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/d/a$a;->a:Lcom/panasonic/avc/cng/model/service/d/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/d/a$a;->a:Lcom/panasonic/avc/cng/model/service/d/DmsService;
 
-    iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/d/a$a;->a:Lcom/panasonic/avc/cng/model/service/d/a;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/d/a$a;->a:Lcom/panasonic/avc/cng/model/service/d/DmsService;
 
-    invoke-static {v1}, Lcom/panasonic/avc/cng/model/service/d/a;->j(Lcom/panasonic/avc/cng/model/service/d/a;)Z
+    invoke-static {v1}, Lcom/panasonic/avc/cng/model/service/d/DmsService;->j(Lcom/panasonic/avc/cng/model/service/d/DmsService;)Z
 
     move-result v1
 
-    invoke-static {v0, v1, v7, v7}, Lcom/panasonic/avc/cng/model/service/d/a;->a(Lcom/panasonic/avc/cng/model/service/d/a;ZZZ)V
+    invoke-static {v0, v1, v7, v7}, Lcom/panasonic/avc/cng/model/service/d/DmsService;->a(Lcom/panasonic/avc/cng/model/service/d/DmsService;ZZZ)V
 
     .line 1307
     :cond_0
     :goto_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/d/a$a;->a:Lcom/panasonic/avc/cng/model/service/d/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/d/a$a;->a:Lcom/panasonic/avc/cng/model/service/d/DmsService;
 
-    invoke-static {v0, v2, v7}, Lcom/panasonic/avc/cng/model/service/d/a;->a(Lcom/panasonic/avc/cng/model/service/d/a;II)V
+    invoke-static {v0, v2, v7}, Lcom/panasonic/avc/cng/model/service/d/DmsService;->a(Lcom/panasonic/avc/cng/model/service/d/DmsService;II)V
 
     .line 1343
     :cond_1
@@ -115,12 +115,12 @@
 
     const-string v1, "Andorid6\u4ee5\u4e0a\u306fM-Search\u6642\u306bDLNA\u30ea\u30d5\u30ec\u30c3\u30b7\u30e5\u3059\u308b\u306e\u3067\u3053\u3053\u3067\u306f\u3057\u306a\u30442"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 1290
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/d/a$a;->a:Lcom/panasonic/avc/cng/model/service/d/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/d/a$a;->a:Lcom/panasonic/avc/cng/model/service/d/DmsService;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/d/a;->a(Lcom/panasonic/avc/cng/model/service/d/a;)Landroid/content/Context;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/d/DmsService;->a(Lcom/panasonic/avc/cng/model/service/d/DmsService;)Landroid/content/Context;
 
     move-result-object v0
 
@@ -167,19 +167,19 @@
     invoke-virtual {v0, v5}, Landroid/net/ConnectivityManager;->bindProcessToNetwork(Landroid/net/Network;)Z
 
     .line 1299
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/d/a$a;->a:Lcom/panasonic/avc/cng/model/service/d/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/d/a$a;->a:Lcom/panasonic/avc/cng/model/service/d/DmsService;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/d/a;->a(Lcom/panasonic/avc/cng/model/service/d/a;)Landroid/content/Context;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/d/DmsService;->a(Lcom/panasonic/avc/cng/model/service/d/DmsService;)Landroid/content/Context;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/d/a$a;->a:Lcom/panasonic/avc/cng/model/service/d/a;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/d/a$a;->a:Lcom/panasonic/avc/cng/model/service/d/DmsService;
 
-    invoke-static {v1}, Lcom/panasonic/avc/cng/model/service/d/a;->m(Lcom/panasonic/avc/cng/model/service/d/a;)Landroid/os/Handler;
+    invoke-static {v1}, Lcom/panasonic/avc/cng/model/service/d/DmsService;->m(Lcom/panasonic/avc/cng/model/service/d/DmsService;)Landroid/os/Handler;
 
     move-result-object v1
 
-    invoke-static {v0, v7, v1}, Lcom/panasonic/avc/cng/model/service/z;->b(Landroid/content/Context;ZLandroid/os/Handler;)Lcom/panasonic/avc/cng/model/service/f;
+    invoke-static {v0, v7, v1}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->b(Landroid/content/Context;ZLandroid/os/Handler;)Lcom/panasonic/avc/cng/model/service/f;
 
     move-result-object v0
 
@@ -196,17 +196,17 @@
 
     .line 1309
     :cond_4
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/d/a$a;->a:Lcom/panasonic/avc/cng/model/service/d/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/d/a$a;->a:Lcom/panasonic/avc/cng/model/service/d/DmsService;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/d/a;->A(Lcom/panasonic/avc/cng/model/service/d/a;)Z
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/d/DmsService;->A(Lcom/panasonic/avc/cng/model/service/d/DmsService;)Z
 
     move-result v0
 
     if-eqz v0, :cond_8
 
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/d/a$a;->a:Lcom/panasonic/avc/cng/model/service/d/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/d/a$a;->a:Lcom/panasonic/avc/cng/model/service/d/DmsService;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/d/a;->z(Lcom/panasonic/avc/cng/model/service/d/a;)Z
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/d/DmsService;->z(Lcom/panasonic/avc/cng/model/service/d/DmsService;)Z
 
     move-result v0
 
@@ -218,22 +218,22 @@
     if-ge v0, v1, :cond_6
 
     .line 1313
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/d/a$a;->a:Lcom/panasonic/avc/cng/model/service/d/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/d/a$a;->a:Lcom/panasonic/avc/cng/model/service/d/DmsService;
 
-    iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/d/a$a;->a:Lcom/panasonic/avc/cng/model/service/d/a;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/d/a$a;->a:Lcom/panasonic/avc/cng/model/service/d/DmsService;
 
-    invoke-static {v1}, Lcom/panasonic/avc/cng/model/service/d/a;->j(Lcom/panasonic/avc/cng/model/service/d/a;)Z
+    invoke-static {v1}, Lcom/panasonic/avc/cng/model/service/d/DmsService;->j(Lcom/panasonic/avc/cng/model/service/d/DmsService;)Z
 
     move-result v1
 
-    invoke-static {v0, v1, v7, v7}, Lcom/panasonic/avc/cng/model/service/d/a;->a(Lcom/panasonic/avc/cng/model/service/d/a;ZZZ)V
+    invoke-static {v0, v1, v7, v7}, Lcom/panasonic/avc/cng/model/service/d/DmsService;->a(Lcom/panasonic/avc/cng/model/service/d/DmsService;ZZZ)V
 
     .line 1333
     :cond_5
     :goto_3
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/d/a$a;->a:Lcom/panasonic/avc/cng/model/service/d/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/d/a$a;->a:Lcom/panasonic/avc/cng/model/service/d/DmsService;
 
-    invoke-static {v0, v7, v2}, Lcom/panasonic/avc/cng/model/service/d/a;->a(Lcom/panasonic/avc/cng/model/service/d/a;II)V
+    invoke-static {v0, v7, v2}, Lcom/panasonic/avc/cng/model/service/d/DmsService;->a(Lcom/panasonic/avc/cng/model/service/d/DmsService;II)V
 
     goto :goto_1
 
@@ -243,12 +243,12 @@
 
     const-string v1, "Andorid6\u4ee5\u4e0a\u306fM-Search\u6642\u306bDLNA\u30ea\u30d5\u30ec\u30c3\u30b7\u30e5\u3059\u308b\u306e\u3067\u3053\u3053\u3067\u306f\u3057\u306a\u30441"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 1316
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/d/a$a;->a:Lcom/panasonic/avc/cng/model/service/d/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/d/a$a;->a:Lcom/panasonic/avc/cng/model/service/d/DmsService;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/d/a;->a(Lcom/panasonic/avc/cng/model/service/d/a;)Landroid/content/Context;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/d/DmsService;->a(Lcom/panasonic/avc/cng/model/service/d/DmsService;)Landroid/content/Context;
 
     move-result-object v0
 
@@ -295,13 +295,13 @@
     invoke-virtual {v0, v5}, Landroid/net/ConnectivityManager;->bindProcessToNetwork(Landroid/net/Network;)Z
 
     .line 1325
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/d/a$a;->a:Lcom/panasonic/avc/cng/model/service/d/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/d/a$a;->a:Lcom/panasonic/avc/cng/model/service/d/DmsService;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/d/a;->a(Lcom/panasonic/avc/cng/model/service/d/a;)Landroid/content/Context;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/d/DmsService;->a(Lcom/panasonic/avc/cng/model/service/d/DmsService;)Landroid/content/Context;
 
     move-result-object v0
 
-    invoke-static {v0, v7}, Lcom/panasonic/avc/cng/model/service/z;->b(Landroid/content/Context;Z)Lcom/panasonic/avc/cng/model/service/f;
+    invoke-static {v0, v7}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->b(Landroid/content/Context;Z)Lcom/panasonic/avc/cng/model/service/f;
 
     move-result-object v0
 
@@ -318,9 +318,9 @@
 
     .line 1338
     :cond_8
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/d/a$a;->a:Lcom/panasonic/avc/cng/model/service/d/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/d/a$a;->a:Lcom/panasonic/avc/cng/model/service/d/DmsService;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/d/a;->B(Lcom/panasonic/avc/cng/model/service/d/a;)V
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/d/DmsService;->B(Lcom/panasonic/avc/cng/model/service/d/DmsService;)V
 
     goto/16 :goto_1
 .end method
@@ -334,19 +334,19 @@
     const/4 v6, 0x0
 
     .line 1195
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/d/a$a;->a:Lcom/panasonic/avc/cng/model/service/d/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/d/a$a;->a:Lcom/panasonic/avc/cng/model/service/d/DmsService;
 
-    invoke-static {v0, v7}, Lcom/panasonic/avc/cng/model/service/d/a;->e(Lcom/panasonic/avc/cng/model/service/d/a;Z)Z
+    invoke-static {v0, v7}, Lcom/panasonic/avc/cng/model/service/d/DmsService;->e(Lcom/panasonic/avc/cng/model/service/d/DmsService;Z)Z
 
     .line 1196
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/d/a$a;->a:Lcom/panasonic/avc/cng/model/service/d/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/d/a$a;->a:Lcom/panasonic/avc/cng/model/service/d/DmsService;
 
-    invoke-static {v0, p1}, Lcom/panasonic/avc/cng/model/service/d/a;->f(Lcom/panasonic/avc/cng/model/service/d/a;Z)Z
+    invoke-static {v0, p1}, Lcom/panasonic/avc/cng/model/service/d/DmsService;->f(Lcom/panasonic/avc/cng/model/service/d/DmsService;Z)Z
 
     .line 1197
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/d/a$a;->a:Lcom/panasonic/avc/cng/model/service/d/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/d/a$a;->a:Lcom/panasonic/avc/cng/model/service/d/DmsService;
 
-    invoke-static {v0, p2}, Lcom/panasonic/avc/cng/model/service/d/a;->g(Lcom/panasonic/avc/cng/model/service/d/a;Z)Z
+    invoke-static {v0, p2}, Lcom/panasonic/avc/cng/model/service/d/DmsService;->g(Lcom/panasonic/avc/cng/model/service/d/DmsService;Z)Z
 
     .line 1200
     if-nez p1, :cond_0
@@ -355,19 +355,19 @@
 
     .line 1203
     :cond_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/d/a$a;->a:Lcom/panasonic/avc/cng/model/service/d/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/d/a$a;->a:Lcom/panasonic/avc/cng/model/service/d/DmsService;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/d/a;->x(Lcom/panasonic/avc/cng/model/service/d/a;)V
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/d/DmsService;->x(Lcom/panasonic/avc/cng/model/service/d/DmsService;)V
 
     .line 1204
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/d/a$a;->a:Lcom/panasonic/avc/cng/model/service/d/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/d/a$a;->a:Lcom/panasonic/avc/cng/model/service/d/DmsService;
 
-    invoke-static {v0, v7}, Lcom/panasonic/avc/cng/model/service/d/a;->a(Lcom/panasonic/avc/cng/model/service/d/a;Z)Z
+    invoke-static {v0, v7}, Lcom/panasonic/avc/cng/model/service/d/DmsService;->a(Lcom/panasonic/avc/cng/model/service/d/DmsService;Z)Z
 
     .line 1205
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/d/a$a;->a:Lcom/panasonic/avc/cng/model/service/d/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/d/a$a;->a:Lcom/panasonic/avc/cng/model/service/d/DmsService;
 
-    invoke-static {v0, v6}, Lcom/panasonic/avc/cng/model/service/d/a;->b(Lcom/panasonic/avc/cng/model/service/d/a;Z)Z
+    invoke-static {v0, v6}, Lcom/panasonic/avc/cng/model/service/d/DmsService;->b(Lcom/panasonic/avc/cng/model/service/d/DmsService;Z)Z
 
     .line 1207
     const-string v0, "DMSDebug"
@@ -388,10 +388,10 @@
 
     new-array v3, v3, [Ljava/lang/Object;
 
-    iget-object v4, p0, Lcom/panasonic/avc/cng/model/service/d/a$a;->a:Lcom/panasonic/avc/cng/model/service/d/a;
+    iget-object v4, p0, Lcom/panasonic/avc/cng/model/service/d/a$a;->a:Lcom/panasonic/avc/cng/model/service/d/DmsService;
 
     .line 1208
-    invoke-static {v4}, Lcom/panasonic/avc/cng/model/service/d/a;->y(Lcom/panasonic/avc/cng/model/service/d/a;)I
+    invoke-static {v4}, Lcom/panasonic/avc/cng/model/service/d/DmsService;->y(Lcom/panasonic/avc/cng/model/service/d/DmsService;)I
 
     move-result v4
 
@@ -405,9 +405,9 @@
 
     aput-object v4, v3, v6
 
-    iget-object v4, p0, Lcom/panasonic/avc/cng/model/service/d/a$a;->a:Lcom/panasonic/avc/cng/model/service/d/a;
+    iget-object v4, p0, Lcom/panasonic/avc/cng/model/service/d/a$a;->a:Lcom/panasonic/avc/cng/model/service/d/DmsService;
 
-    invoke-static {v4}, Lcom/panasonic/avc/cng/model/service/d/a;->y(Lcom/panasonic/avc/cng/model/service/d/a;)I
+    invoke-static {v4}, Lcom/panasonic/avc/cng/model/service/d/DmsService;->y(Lcom/panasonic/avc/cng/model/service/d/DmsService;)I
 
     move-result v4
 
@@ -423,9 +423,9 @@
 
     const/4 v4, 0x2
 
-    iget-object v5, p0, Lcom/panasonic/avc/cng/model/service/d/a$a;->a:Lcom/panasonic/avc/cng/model/service/d/a;
+    iget-object v5, p0, Lcom/panasonic/avc/cng/model/service/d/a$a;->a:Lcom/panasonic/avc/cng/model/service/d/DmsService;
 
-    invoke-static {v5}, Lcom/panasonic/avc/cng/model/service/d/a;->y(Lcom/panasonic/avc/cng/model/service/d/a;)I
+    invoke-static {v5}, Lcom/panasonic/avc/cng/model/service/d/DmsService;->y(Lcom/panasonic/avc/cng/model/service/d/DmsService;)I
 
     move-result v5
 
@@ -441,9 +441,9 @@
 
     const/4 v4, 0x3
 
-    iget-object v5, p0, Lcom/panasonic/avc/cng/model/service/d/a$a;->a:Lcom/panasonic/avc/cng/model/service/d/a;
+    iget-object v5, p0, Lcom/panasonic/avc/cng/model/service/d/a$a;->a:Lcom/panasonic/avc/cng/model/service/d/DmsService;
 
-    invoke-static {v5}, Lcom/panasonic/avc/cng/model/service/d/a;->y(Lcom/panasonic/avc/cng/model/service/d/a;)I
+    invoke-static {v5}, Lcom/panasonic/avc/cng/model/service/d/DmsService;->y(Lcom/panasonic/avc/cng/model/service/d/DmsService;)I
 
     move-result v5
 
@@ -470,22 +470,22 @@
     move-result-object v1
 
     .line 1207
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 1219
     :goto_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/d/a$a;->a:Lcom/panasonic/avc/cng/model/service/d/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/d/a$a;->a:Lcom/panasonic/avc/cng/model/service/d/DmsService;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/d/a;->z(Lcom/panasonic/avc/cng/model/service/d/a;)Z
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/d/DmsService;->z(Lcom/panasonic/avc/cng/model/service/d/DmsService;)Z
 
     move-result v0
 
     if-eqz v0, :cond_2
 
     .line 1221
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/d/a$a;->a:Lcom/panasonic/avc/cng/model/service/d/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/d/a$a;->a:Lcom/panasonic/avc/cng/model/service/d/DmsService;
 
-    invoke-static {v0, v7}, Lcom/panasonic/avc/cng/model/service/d/a;->g(Lcom/panasonic/avc/cng/model/service/d/a;I)V
+    invoke-static {v0, v7}, Lcom/panasonic/avc/cng/model/service/d/DmsService;->g(Lcom/panasonic/avc/cng/model/service/d/DmsService;I)V
 
     .line 1227
     :goto_1
@@ -493,29 +493,29 @@
 
     .line 1213
     :cond_1
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/d/a$a;->a:Lcom/panasonic/avc/cng/model/service/d/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/d/a$a;->a:Lcom/panasonic/avc/cng/model/service/d/DmsService;
 
-    invoke-static {v0, v6}, Lcom/panasonic/avc/cng/model/service/d/a;->a(Lcom/panasonic/avc/cng/model/service/d/a;Z)Z
+    invoke-static {v0, v6}, Lcom/panasonic/avc/cng/model/service/d/DmsService;->a(Lcom/panasonic/avc/cng/model/service/d/DmsService;Z)Z
 
     .line 1214
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/d/a$a;->a:Lcom/panasonic/avc/cng/model/service/d/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/d/a$a;->a:Lcom/panasonic/avc/cng/model/service/d/DmsService;
 
-    invoke-static {v0, v6}, Lcom/panasonic/avc/cng/model/service/d/a;->b(Lcom/panasonic/avc/cng/model/service/d/a;Z)Z
+    invoke-static {v0, v6}, Lcom/panasonic/avc/cng/model/service/d/DmsService;->b(Lcom/panasonic/avc/cng/model/service/d/DmsService;Z)Z
 
     .line 1215
     const-string v0, "DMSDebug"
 
     const-string v1, "DMS Disabled When AppStarted"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 
     .line 1225
     :cond_2
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/d/a$a;->a:Lcom/panasonic/avc/cng/model/service/d/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/d/a$a;->a:Lcom/panasonic/avc/cng/model/service/d/DmsService;
 
-    invoke-static {v0, v6}, Lcom/panasonic/avc/cng/model/service/d/a;->g(Lcom/panasonic/avc/cng/model/service/d/a;I)V
+    invoke-static {v0, v6}, Lcom/panasonic/avc/cng/model/service/d/DmsService;->g(Lcom/panasonic/avc/cng/model/service/d/DmsService;I)V
 
     goto :goto_1
 .end method
@@ -529,9 +529,9 @@
     const/4 v7, 0x1
 
     .line 1231
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/d/a$a;->a:Lcom/panasonic/avc/cng/model/service/d/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/d/a$a;->a:Lcom/panasonic/avc/cng/model/service/d/DmsService;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/d/a;->A(Lcom/panasonic/avc/cng/model/service/d/a;)Z
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/d/DmsService;->A(Lcom/panasonic/avc/cng/model/service/d/DmsService;)Z
 
     move-result v0
 
@@ -543,14 +543,14 @@
 
     .line 1233
     :cond_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/d/a$a;->a:Lcom/panasonic/avc/cng/model/service/d/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/d/a$a;->a:Lcom/panasonic/avc/cng/model/service/d/DmsService;
 
-    invoke-static {v0, p1}, Lcom/panasonic/avc/cng/model/service/d/a;->f(Lcom/panasonic/avc/cng/model/service/d/a;Z)Z
+    invoke-static {v0, p1}, Lcom/panasonic/avc/cng/model/service/d/DmsService;->f(Lcom/panasonic/avc/cng/model/service/d/DmsService;Z)Z
 
     .line 1234
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/d/a$a;->a:Lcom/panasonic/avc/cng/model/service/d/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/d/a$a;->a:Lcom/panasonic/avc/cng/model/service/d/DmsService;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/d/a;->z(Lcom/panasonic/avc/cng/model/service/d/a;)Z
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/d/DmsService;->z(Lcom/panasonic/avc/cng/model/service/d/DmsService;)Z
 
     move-result v0
 
@@ -563,9 +563,9 @@
 
     .line 1240
     :cond_2
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/d/a$a;->a:Lcom/panasonic/avc/cng/model/service/d/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/d/a$a;->a:Lcom/panasonic/avc/cng/model/service/d/DmsService;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/d/a;->A(Lcom/panasonic/avc/cng/model/service/d/a;)Z
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/d/DmsService;->A(Lcom/panasonic/avc/cng/model/service/d/DmsService;)Z
 
     move-result v0
 
@@ -579,22 +579,22 @@
     if-ge v0, v1, :cond_4
 
     .line 1244
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/d/a$a;->a:Lcom/panasonic/avc/cng/model/service/d/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/d/a$a;->a:Lcom/panasonic/avc/cng/model/service/d/DmsService;
 
-    iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/d/a$a;->a:Lcom/panasonic/avc/cng/model/service/d/a;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/d/a$a;->a:Lcom/panasonic/avc/cng/model/service/d/DmsService;
 
-    invoke-static {v1}, Lcom/panasonic/avc/cng/model/service/d/a;->j(Lcom/panasonic/avc/cng/model/service/d/a;)Z
+    invoke-static {v1}, Lcom/panasonic/avc/cng/model/service/d/DmsService;->j(Lcom/panasonic/avc/cng/model/service/d/DmsService;)Z
 
     move-result v1
 
-    invoke-static {v0, v1, v7, v7}, Lcom/panasonic/avc/cng/model/service/d/a;->a(Lcom/panasonic/avc/cng/model/service/d/a;ZZZ)V
+    invoke-static {v0, v1, v7, v7}, Lcom/panasonic/avc/cng/model/service/d/DmsService;->a(Lcom/panasonic/avc/cng/model/service/d/DmsService;ZZZ)V
 
     .line 1264
     :cond_3
     :goto_1
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/d/a$a;->a:Lcom/panasonic/avc/cng/model/service/d/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/d/a$a;->a:Lcom/panasonic/avc/cng/model/service/d/DmsService;
 
-    invoke-static {v0, v2, v2}, Lcom/panasonic/avc/cng/model/service/d/a;->a(Lcom/panasonic/avc/cng/model/service/d/a;II)V
+    invoke-static {v0, v2, v2}, Lcom/panasonic/avc/cng/model/service/d/DmsService;->a(Lcom/panasonic/avc/cng/model/service/d/DmsService;II)V
 
     goto :goto_0
 
@@ -604,12 +604,12 @@
 
     const-string v1, "Andorid6\u4ee5\u4e0a\u306fM-Search\u6642\u306bDLNA\u30ea\u30d5\u30ec\u30c3\u30b7\u30e5\u3059\u308b\u306e\u3067\u3053\u3053\u3067\u306f\u3057\u306a\u3044"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 1247
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/d/a$a;->a:Lcom/panasonic/avc/cng/model/service/d/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/d/a$a;->a:Lcom/panasonic/avc/cng/model/service/d/DmsService;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/d/a;->a(Lcom/panasonic/avc/cng/model/service/d/a;)Landroid/content/Context;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/d/DmsService;->a(Lcom/panasonic/avc/cng/model/service/d/DmsService;)Landroid/content/Context;
 
     move-result-object v0
 
@@ -658,19 +658,19 @@
     invoke-virtual {v0, v5}, Landroid/net/ConnectivityManager;->bindProcessToNetwork(Landroid/net/Network;)Z
 
     .line 1256
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/d/a$a;->a:Lcom/panasonic/avc/cng/model/service/d/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/d/a$a;->a:Lcom/panasonic/avc/cng/model/service/d/DmsService;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/d/a;->a(Lcom/panasonic/avc/cng/model/service/d/a;)Landroid/content/Context;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/d/DmsService;->a(Lcom/panasonic/avc/cng/model/service/d/DmsService;)Landroid/content/Context;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/d/a$a;->a:Lcom/panasonic/avc/cng/model/service/d/a;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/d/a$a;->a:Lcom/panasonic/avc/cng/model/service/d/DmsService;
 
-    invoke-static {v1}, Lcom/panasonic/avc/cng/model/service/d/a;->m(Lcom/panasonic/avc/cng/model/service/d/a;)Landroid/os/Handler;
+    invoke-static {v1}, Lcom/panasonic/avc/cng/model/service/d/DmsService;->m(Lcom/panasonic/avc/cng/model/service/d/DmsService;)Landroid/os/Handler;
 
     move-result-object v1
 
-    invoke-static {v0, v7, v1}, Lcom/panasonic/avc/cng/model/service/z;->b(Landroid/content/Context;ZLandroid/os/Handler;)Lcom/panasonic/avc/cng/model/service/f;
+    invoke-static {v0, v7, v1}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->b(Landroid/content/Context;ZLandroid/os/Handler;)Lcom/panasonic/avc/cng/model/service/f;
 
     move-result-object v0
 
@@ -687,9 +687,9 @@
 
     .line 1269
     :cond_6
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/d/a$a;->a:Lcom/panasonic/avc/cng/model/service/d/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/d/a$a;->a:Lcom/panasonic/avc/cng/model/service/d/DmsService;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/d/a;->B(Lcom/panasonic/avc/cng/model/service/d/a;)V
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/d/DmsService;->B(Lcom/panasonic/avc/cng/model/service/d/DmsService;)V
 
     goto :goto_0
 .end method

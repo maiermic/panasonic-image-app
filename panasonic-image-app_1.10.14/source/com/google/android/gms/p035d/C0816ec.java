@@ -60,9 +60,9 @@ public final class C0816ec<O extends C0570a> implements C0588b, C0589c, C0810dx 
     private C0568a f1852k = null;
 
     /* renamed from: l */
-    private /* synthetic */ C0814ea f1853l;
+    private /* synthetic */ GoogleApiManager f1853l;
 
-    public C0816ec(C0814ea eaVar, C0585d<O> dVar) {
+    public C0816ec(GoogleApiManager eaVar, C0585d<O> dVar) {
         this.f1853l = eaVar;
         this.f1843b = dVar.mo1582a(eaVar.f1840q.getLooper(), this);
         if (this.f1843b instanceof C0617ag) {
@@ -150,7 +150,7 @@ public final class C0816ec<O extends C0570a> implements C0588b, C0589c, C0810dx 
     /* renamed from: a */
     public final void mo2124a() {
         C0612ab.m2293a(this.f1853l.f1840q);
-        mo2125a(C0814ea.f1824a);
+        mo2125a(GoogleApiManager.f1824a);
         this.f1846e.mo2118b();
         for (C0827en dkVar : this.f1848g.keySet()) {
             mo2126a((C0795di) new C0797dk(dkVar, new C1280b()));
@@ -190,7 +190,7 @@ public final class C0816ec<O extends C0570a> implements C0588b, C0589c, C0810dx 
         if (r5.f1851j == false) goto L_0x009b;
      */
     /* JADX WARNING: Code restructure failed: missing block: B:31:0x007d, code lost:
-        com.google.android.gms.p035d.C0814ea.m3103a(r5.f1853l).sendMessageDelayed(android.os.Message.obtain(com.google.android.gms.p035d.C0814ea.m3103a(r5.f1853l), 9, r5.f1845d), com.google.android.gms.p035d.C0814ea.m3108c(r5.f1853l));
+        com.google.android.gms.p035d.GoogleApiManager.m3103a(r5.f1853l).sendMessageDelayed(android.os.Message.obtain(com.google.android.gms.p035d.GoogleApiManager.m3103a(r5.f1853l), 9, r5.f1845d), com.google.android.gms.p035d.GoogleApiManager.m3108c(r5.f1853l));
      */
     /* JADX WARNING: Code restructure failed: missing block: B:32:0x009b, code lost:
         r2 = java.lang.String.valueOf(r5.f1845d.mo2081a());
@@ -226,7 +226,7 @@ public final class C0816ec<O extends C0570a> implements C0588b, C0589c, C0810dx 
             int r0 = r6.mo1544c()
             r1 = 4
             if (r0 != r1) goto L_0x002d
-            com.google.android.gms.common.api.Status r0 = com.google.android.gms.p035d.C0814ea.f1825b
+            com.google.android.gms.common.api.Status r0 = com.google.android.gms.p035d.GoogleApiManager.f1825b
             r5.mo2125a(r0)
         L_0x002c:
             return
@@ -237,7 +237,7 @@ public final class C0816ec<O extends C0570a> implements C0588b, C0589c, C0810dx 
             r5.f1852k = r6
             goto L_0x002c
         L_0x0038:
-            java.lang.Object r1 = com.google.android.gms.p035d.C0814ea.f1826f
+            java.lang.Object r1 = com.google.android.gms.p035d.GoogleApiManager.f1826f
             monitor-enter(r1)
             com.google.android.gms.d.ea r0 = r5.f1853l     // Catch:{ all -> 0x0060 }
             com.google.android.gms.d.dz r0 = r0.f1837n     // Catch:{ all -> 0x0060 }

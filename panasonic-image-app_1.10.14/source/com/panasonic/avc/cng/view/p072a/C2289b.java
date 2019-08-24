@@ -11,12 +11,12 @@ import com.panasonic.avc.cng.application.p039a.C1350a;
 import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.view.p073b.C2317a.C2323a;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
 
 /* renamed from: com.panasonic.avc.cng.view.a.b */
 public class C2289b extends C1350a implements C2323a {
     /* access modifiers changed from: protected */
-    public C2292d _cameraUtil;
+    public CameraWatchUtility _cameraUtil;
     /* access modifiers changed from: protected */
     public Context _context;
     public Handler _handler;
@@ -42,7 +42,7 @@ public class C2289b extends C1350a implements C2323a {
     public void SetupCameraWatching(boolean z, C2328a aVar, C2328a aVar2, C2328a aVar3) {
         C2291c GetViewModel = GetViewModel();
         if (GetViewModel != null) {
-            this._cameraUtil = new C2292d();
+            this._cameraUtil = new CameraWatchUtility();
             this._cameraUtil.mo6026a((Activity) this, GetViewModel, z);
             this._cameraUtil.mo6028a(aVar, aVar2);
             this._cameraUtil.mo6027a(aVar3);
@@ -121,15 +121,15 @@ public class C2289b extends C1350a implements C2323a {
     }
 
     public void showSimpleDlg(C2328a aVar, Bundle bundle) {
-        C2331d.m10114a((Activity) this._context, aVar, bundle);
+        DialogFactory.m10114a((Activity) this._context, aVar, bundle);
     }
 
     public void dismissAllDlg() {
-        C2331d.m10100a((Activity) this._context);
+        DialogFactory.m10100a((Activity) this._context);
     }
 
     public void dismissById(C2328a aVar) {
-        C2331d.m10102a((Activity) this._context, aVar);
+        DialogFactory.m10102a((Activity) this._context, aVar);
     }
 
     public void onPositiveButtonClick(C2328a aVar) {

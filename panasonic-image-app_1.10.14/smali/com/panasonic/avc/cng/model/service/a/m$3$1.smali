@@ -47,9 +47,9 @@
     .line 544
     iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/a/m$3$1;->b:Lcom/panasonic/avc/cng/model/service/a/m$3;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/model/service/a/m$3;->a:Lcom/panasonic/avc/cng/model/service/a/m;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/model/service/a/m$3;->a:Lcom/panasonic/avc/cng/model/service/a/CameraContentCopy;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/a/m;->b(Lcom/panasonic/avc/cng/model/service/a/m;)Lcom/panasonic/avc/cng/model/service/a/m$b;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/a/CameraContentCopy;->b(Lcom/panasonic/avc/cng/model/service/a/CameraContentCopy;)Lcom/panasonic/avc/cng/model/service/a/m$b;
 
     move-result-object v0
 
@@ -58,17 +58,17 @@
     .line 546
     iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/a/m$3$1;->b:Lcom/panasonic/avc/cng/model/service/a/m$3;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/model/service/a/m$3;->a:Lcom/panasonic/avc/cng/model/service/a/m;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/model/service/a/m$3;->a:Lcom/panasonic/avc/cng/model/service/a/CameraContentCopy;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/a/m;->b(Lcom/panasonic/avc/cng/model/service/a/m;)Lcom/panasonic/avc/cng/model/service/a/m$b;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/a/CameraContentCopy;->b(Lcom/panasonic/avc/cng/model/service/a/CameraContentCopy;)Lcom/panasonic/avc/cng/model/service/a/m$b;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/model/service/a/m$3$1;->b:Lcom/panasonic/avc/cng/model/service/a/m$3;
 
-    iget-object v1, v1, Lcom/panasonic/avc/cng/model/service/a/m$3;->a:Lcom/panasonic/avc/cng/model/service/a/m;
+    iget-object v1, v1, Lcom/panasonic/avc/cng/model/service/a/m$3;->a:Lcom/panasonic/avc/cng/model/service/a/CameraContentCopy;
 
-    invoke-static {v1}, Lcom/panasonic/avc/cng/model/service/a/m;->d(Lcom/panasonic/avc/cng/model/service/a/m;)I
+    invoke-static {v1}, Lcom/panasonic/avc/cng/model/service/a/CameraContentCopy;->d(Lcom/panasonic/avc/cng/model/service/a/CameraContentCopy;)I
 
     move-result v1
 

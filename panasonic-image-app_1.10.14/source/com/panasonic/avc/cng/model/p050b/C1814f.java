@@ -15,7 +15,7 @@ import com.panasonic.avc.cng.model.service.C2021d;
 import com.panasonic.avc.cng.model.service.C2183l;
 import com.panasonic.avc.cng.model.service.C2224q;
 import com.panasonic.avc.cng.model.service.C2234r;
-import com.panasonic.avc.cng.model.service.C2253z;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
 import com.panasonic.avc.cng.p038a.C1342a;
 import com.panasonic.avc.cng.util.C2264j;
 import com.panasonic.avc.cng.view.common.C2820e;
@@ -99,23 +99,23 @@ public class C1814f extends C1342a {
 
     /* renamed from: c */
     public void mo4574c() {
-        this.f5256d = C2253z.m9711j(this.f5261i);
+        this.f5256d = ServiceFactory.m9711j(this.f5261i);
         if (this.f5256d != null) {
             this.f5256d.mo5204a();
         }
-        this.f5257e = C2253z.m9718m(this.f5261i);
+        this.f5257e = ServiceFactory.m9718m(this.f5261i);
         if (this.f5257e != null) {
             this.f5257e.mo5229a();
         }
-        this.f5258f = C2253z.m9721p(this.f5261i);
+        this.f5258f = ServiceFactory.m9721p(this.f5261i);
         if (this.f5258f != null) {
             this.f5258f.mo5252a();
         }
-        this.f5259g = C2253z.m9720o(this.f5261i);
+        this.f5259g = ServiceFactory.m9720o(this.f5261i);
         if (this.f5259g != null) {
             this.f5259g.mo5248a();
         }
-        this.f5260h = C2253z.m9719n(this.f5261i);
+        this.f5260h = ServiceFactory.m9719n(this.f5261i);
         if (this.f5260h != null) {
             this.f5260h.mo5243a();
         }

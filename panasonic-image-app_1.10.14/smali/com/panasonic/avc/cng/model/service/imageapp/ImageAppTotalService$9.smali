@@ -119,7 +119,7 @@
     .line 4368
     iget-object v3, p0, Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService$9;->a:Lcom/panasonic/avc/cng/core/a/d;
 
-    invoke-virtual {v3, v1, v0, v2}, Lcom/panasonic/avc/cng/core/a/d;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/StringBuffer;)Lcom/panasonic/avc/cng/model/c/h;
+    invoke-virtual {v3, v1, v0, v2}, Lcom/panasonic/avc/cng/core/a/d;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/StringBuffer;)Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
     .line 4369
     invoke-virtual {v2}, Ljava/lang/StringBuffer;->length()I
@@ -151,7 +151,7 @@
     :goto_1
     iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService$9;->b:Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService;->v(Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService;)Lcom/panasonic/avc/cng/model/service/p/a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService;->v(Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService;)Lcom/panasonic/avc/cng/model/service/p/WifiService;
 
     move-result-object v0
 
@@ -160,11 +160,11 @@
     .line 4438
     iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService$9;->b:Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService;->v(Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService;)Lcom/panasonic/avc/cng/model/service/p/a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService;->v(Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService;)Lcom/panasonic/avc/cng/model/service/p/WifiService;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/service/p/a;->c()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/service/p/WifiService;->c()V
 
     .line 4441
     iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService$9;->b:Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService;
@@ -173,7 +173,7 @@
 
     move-result-object v0
 
-    invoke-static {v0, v5}, Lcom/panasonic/avc/cng/model/service/z;->b(Landroid/content/Context;Z)Lcom/panasonic/avc/cng/model/service/f;
+    invoke-static {v0, v5}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->b(Landroid/content/Context;Z)Lcom/panasonic/avc/cng/model/service/f;
 
     move-result-object v0
 
@@ -295,11 +295,11 @@
     :goto_2
     iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService$9;->b:Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService;->C(Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService;)Lcom/panasonic/avc/cng/core/a/ao;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService;->C(Lcom/panasonic/avc/cng/model/service/imageapp/ImageAppTotalService;)Lcom/panasonic/avc/cng/core/a/StatusCommand;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/ao;->c()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/a/StatusCommand;->c()Ljava/lang/String;
 
     move-result-object v0
 

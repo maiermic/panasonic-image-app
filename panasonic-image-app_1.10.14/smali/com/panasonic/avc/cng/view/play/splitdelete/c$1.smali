@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/view/play/splitdelete/c;->p()V
+    value = Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;->p()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/panasonic/avc/cng/view/play/splitdelete/c;
+.field final synthetic a:Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;
 
 
 # direct methods
-.method constructor <init>(Lcom/panasonic/avc/cng/view/play/splitdelete/c;)V
+.method constructor <init>(Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;)V
     .locals 0
 
     .prologue
     .line 812
-    iput-object p1, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/c$1;->a:Lcom/panasonic/avc/cng/view/play/splitdelete/c;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/c$1;->a:Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -41,11 +41,11 @@
 
     .prologue
     .line 814
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v2
 
@@ -53,9 +53,9 @@
     const/4 v0, 0x0
 
     .line 817
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/c$1;->a:Lcom/panasonic/avc/cng/view/play/splitdelete/c;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/c$1;->a:Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;
 
-    invoke-static {v1}, Lcom/panasonic/avc/cng/view/play/splitdelete/c;->n(Lcom/panasonic/avc/cng/view/play/splitdelete/c;)Lcom/panasonic/avc/cng/model/d;
+    invoke-static {v1}, Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;->n(Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;)Lcom/panasonic/avc/cng/model/d;
 
     move-result-object v1
 
@@ -64,9 +64,9 @@
     if-eqz v1, :cond_3
 
     .line 819
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/c$1;->a:Lcom/panasonic/avc/cng/view/play/splitdelete/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/c$1;->a:Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/splitdelete/c;->n(Lcom/panasonic/avc/cng/view/play/splitdelete/c;)Lcom/panasonic/avc/cng/model/d;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;->n(Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;)Lcom/panasonic/avc/cng/model/d;
 
     move-result-object v0
 
@@ -81,19 +81,19 @@
     if-eqz v1, :cond_1
 
     .line 824
-    new-instance v3, Lcom/panasonic/avc/cng/core/a/au;
+    new-instance v3, Lcom/panasonic/avc/cng/core/a/VideoEditCommand;
 
     iget-object v0, v2, Lcom/panasonic/avc/cng/model/f;->d:Ljava/lang/String;
 
-    invoke-direct {v3, v0}, Lcom/panasonic/avc/cng/core/a/au;-><init>(Ljava/lang/String;)V
+    invoke-direct {v3, v0}, Lcom/panasonic/avc/cng/core/a/VideoEditCommand;-><init>(Ljava/lang/String;)V
 
     .line 826
     const/4 v0, 0x0
 
     .line 827
-    iget-object v2, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/c$1;->a:Lcom/panasonic/avc/cng/view/play/splitdelete/c;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/c$1;->a:Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;
 
-    invoke-static {v2}, Lcom/panasonic/avc/cng/view/play/splitdelete/c;->o(Lcom/panasonic/avc/cng/view/play/splitdelete/c;)Lcom/panasonic/avc/cng/model/service/s;
+    invoke-static {v2}, Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;->o(Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;)Lcom/panasonic/avc/cng/model/service/s;
 
     move-result-object v2
 
@@ -102,9 +102,9 @@
     if-eqz v2, :cond_0
 
     .line 829
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/c$1;->a:Lcom/panasonic/avc/cng/view/play/splitdelete/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/c$1;->a:Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/splitdelete/c;->o(Lcom/panasonic/avc/cng/view/play/splitdelete/c;)Lcom/panasonic/avc/cng/model/service/s;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;->o(Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;)Lcom/panasonic/avc/cng/model/service/s;
 
     move-result-object v0
 
@@ -118,43 +118,43 @@
     :cond_0
     iget-object v1, v1, Lcom/panasonic/avc/cng/model/c;->b:Ljava/lang/String;
 
-    invoke-virtual {v3, v1, v0}, Lcom/panasonic/avc/cng/core/a/au;->a(Ljava/lang/String;I)Lcom/panasonic/avc/cng/model/c/h;
+    invoke-virtual {v3, v1, v0}, Lcom/panasonic/avc/cng/core/a/VideoEditCommand;->a(Ljava/lang/String;I)Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
     move-result-object v0
 
     .line 836
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/c$1;->a:Lcom/panasonic/avc/cng/view/play/splitdelete/c;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/c$1;->a:Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;
 
-    invoke-static {v1}, Lcom/panasonic/avc/cng/view/play/splitdelete/c;->p(Lcom/panasonic/avc/cng/view/play/splitdelete/c;)Ljava/util/List;
+    invoke-static {v1}, Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;->p(Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;)Ljava/util/List;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/c$1;->a:Lcom/panasonic/avc/cng/view/play/splitdelete/c;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/c$1;->a:Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/h;->n()Z
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;->n()Z
 
     move-result v3
 
-    invoke-static {v2, v3}, Lcom/panasonic/avc/cng/view/play/splitdelete/c;->a(Lcom/panasonic/avc/cng/view/play/splitdelete/c;Z)Lcom/panasonic/avc/cng/view/play/splitdelete/c$a;
+    invoke-static {v2, v3}, Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;->a(Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;Z)Lcom/panasonic/avc/cng/view/play/splitdelete/c$a;
 
     move-result-object v2
 
     invoke-interface {v1, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     .line 839
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/c$1;->a:Lcom/panasonic/avc/cng/view/play/splitdelete/c;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/c$1;->a:Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;
 
-    invoke-static {v1}, Lcom/panasonic/avc/cng/view/play/splitdelete/c;->p(Lcom/panasonic/avc/cng/view/play/splitdelete/c;)Ljava/util/List;
+    invoke-static {v1}, Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;->p(Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;)Ljava/util/List;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/c$1;->a:Lcom/panasonic/avc/cng/view/play/splitdelete/c;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/c$1;->a:Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/h;->o()Z
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;->o()Z
 
     move-result v0
 
-    invoke-static {v2, v0}, Lcom/panasonic/avc/cng/view/play/splitdelete/c;->b(Lcom/panasonic/avc/cng/view/play/splitdelete/c;Z)Lcom/panasonic/avc/cng/view/play/splitdelete/c$a;
+    invoke-static {v2, v0}, Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;->b(Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;Z)Lcom/panasonic/avc/cng/view/play/splitdelete/c$a;
 
     move-result-object v0
 
@@ -162,33 +162,33 @@
 
     .line 842
     :cond_1
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/c$1;->a:Lcom/panasonic/avc/cng/view/play/splitdelete/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/c$1;->a:Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/splitdelete/c;->p(Lcom/panasonic/avc/cng/view/play/splitdelete/c;)Ljava/util/List;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;->p(Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;)Ljava/util/List;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/c$1;->a:Lcom/panasonic/avc/cng/view/play/splitdelete/c;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/c$1;->a:Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;
 
-    invoke-static {v1}, Lcom/panasonic/avc/cng/view/play/splitdelete/c;->q(Lcom/panasonic/avc/cng/view/play/splitdelete/c;)Lcom/panasonic/avc/cng/view/play/splitdelete/c$a;
+    invoke-static {v1}, Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;->q(Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;)Lcom/panasonic/avc/cng/view/play/splitdelete/c$a;
 
     move-result-object v1
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     .line 844
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/c$1;->a:Lcom/panasonic/avc/cng/view/play/splitdelete/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/c$1;->a:Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/splitdelete/c;->r(Lcom/panasonic/avc/cng/view/play/splitdelete/c;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;->r(Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;)Landroid/os/Handler;
 
     move-result-object v0
 
     if-eqz v0, :cond_2
 
     .line 846
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/c$1;->a:Lcom/panasonic/avc/cng/view/play/splitdelete/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/splitdelete/c$1;->a:Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/splitdelete/c;->s(Lcom/panasonic/avc/cng/view/play/splitdelete/c;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;->s(Lcom/panasonic/avc/cng/view/play/splitdelete/ContentPlayerViewModel;)Landroid/os/Handler;
 
     move-result-object v0
 

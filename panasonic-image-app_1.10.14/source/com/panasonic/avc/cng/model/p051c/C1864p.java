@@ -1,7 +1,7 @@
 package com.panasonic.avc.cng.model.p051c;
 
 import android.util.Xml;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import java.io.StringReader;
 import org.xmlpull.v1.XmlPullParser;
 
@@ -49,7 +49,7 @@ public class C1864p extends C1843c {
                 eventType = xmlPullParser.next();
             }
         } catch (Exception e) {
-            C2261g.m9769c("ParseDocument", e.getMessage());
+            ImageAppLog.error("ParseDocument", e.getMessage());
         }
     }
 
@@ -70,7 +70,7 @@ public class C1864p extends C1843c {
                 next = xmlPullParser.next();
             }
         } catch (Exception e) {
-            C2261g.m9769c("ParseTagCamrply", e.getMessage());
+            ImageAppLog.error("ParseTagCamrply", e.getMessage());
         }
     }
 
@@ -94,7 +94,7 @@ public class C1864p extends C1843c {
                 next = xmlPullParser.next();
             }
         } catch (Exception e) {
-            C2261g.m9769c("ParseTagCamModeInfo", e.getMessage());
+            ImageAppLog.error("ParseTagCamModeInfo", e.getMessage());
         }
     }
 
@@ -114,7 +114,7 @@ public class C1864p extends C1843c {
                 next = xmlPullParser.next();
             }
         } catch (Exception e) {
-            C2261g.m9769c("ParseTagMode", e.getMessage());
+            ImageAppLog.error("ParseTagMode", e.getMessage());
         }
     }
 
@@ -130,7 +130,7 @@ public class C1864p extends C1843c {
                 next = xmlPullParser.next();
             }
         } catch (Exception e) {
-            C2261g.m9769c("ParseTagExMode", e.getMessage());
+            ImageAppLog.error("ParseTagExMode", e.getMessage());
         }
     }
 
@@ -146,7 +146,7 @@ public class C1864p extends C1843c {
                 next = xmlPullParser.next();
             }
         } catch (Exception e) {
-            C2261g.m9769c("ParseTagPlaybackDir", e.getMessage());
+            ImageAppLog.error("ParseTagPlaybackDir", e.getMessage());
         }
     }
 }

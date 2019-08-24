@@ -25,7 +25,7 @@
 # instance fields
 .field private b:Landroid/content/Context;
 
-.field private c:Lcom/panasonic/avc/cng/core/b/b/d;
+.field private c:Lcom/panasonic/avc/cng/core/b/b/OGLDisplayRenderer;
 
 .field private d:Lcom/panasonic/avc/cng/core/b/a/b;
 
@@ -68,7 +68,7 @@
     iput-object v0, p0, Lcom/panasonic/avc/cng/view/play/snapmovie/f;->b:Landroid/content/Context;
 
     .line 58
-    iput-object v0, p0, Lcom/panasonic/avc/cng/view/play/snapmovie/f;->c:Lcom/panasonic/avc/cng/core/b/b/d;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/view/play/snapmovie/f;->c:Lcom/panasonic/avc/cng/core/b/b/OGLDisplayRenderer;
 
     .line 59
     iput-object v0, p0, Lcom/panasonic/avc/cng/view/play/snapmovie/f;->d:Lcom/panasonic/avc/cng/core/b/a/b;
@@ -91,7 +91,7 @@
 
     const-string v1, "SnapMoviePlayer"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 81
     return-void
@@ -117,22 +117,22 @@
     return-wide p1
 .end method
 
-.method static synthetic a(Lcom/panasonic/avc/cng/view/play/snapmovie/f;)Lcom/panasonic/avc/cng/core/b/b/d;
+.method static synthetic a(Lcom/panasonic/avc/cng/view/play/snapmovie/f;)Lcom/panasonic/avc/cng/core/b/b/OGLDisplayRenderer;
     .locals 1
 
     .prologue
     .line 23
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/snapmovie/f;->c:Lcom/panasonic/avc/cng/core/b/b/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/snapmovie/f;->c:Lcom/panasonic/avc/cng/core/b/b/OGLDisplayRenderer;
 
     return-object v0
 .end method
 
-.method static synthetic a(Lcom/panasonic/avc/cng/view/play/snapmovie/f;Lcom/panasonic/avc/cng/core/b/b/d;)Lcom/panasonic/avc/cng/core/b/b/d;
+.method static synthetic a(Lcom/panasonic/avc/cng/view/play/snapmovie/f;Lcom/panasonic/avc/cng/core/b/b/OGLDisplayRenderer;)Lcom/panasonic/avc/cng/core/b/b/OGLDisplayRenderer;
     .locals 0
 
     .prologue
     .line 23
-    iput-object p1, p0, Lcom/panasonic/avc/cng/view/play/snapmovie/f;->c:Lcom/panasonic/avc/cng/core/b/b/d;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/view/play/snapmovie/f;->c:Lcom/panasonic/avc/cng/core/b/b/OGLDisplayRenderer;
 
     return-object p1
 .end method
@@ -236,7 +236,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 246
     iget v0, p0, Lcom/panasonic/avc/cng/view/play/snapmovie/f;->g:I
@@ -253,7 +253,7 @@
 
     const-string v1, "setup"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 98
     iput-object p3, p0, Lcom/panasonic/avc/cng/view/play/snapmovie/f;->e:Lcom/panasonic/avc/cng/view/play/snapmovie/f$a;
@@ -292,7 +292,7 @@
 
     const-string v1, "Nothing Video!!!"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 408
     :goto_0
@@ -338,7 +338,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 279
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/snapmovie/f;->d:Lcom/panasonic/avc/cng/core/b/a/b;
@@ -400,7 +400,7 @@
 
     const-string v1, "Nothing Video!!!"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 581
     :goto_0
@@ -446,7 +446,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 438
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/snapmovie/f;->d:Lcom/panasonic/avc/cng/core/b/a/b;
@@ -529,28 +529,28 @@
 
     .prologue
     .line 190
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/snapmovie/f;->c:Lcom/panasonic/avc/cng/core/b/b/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/snapmovie/f;->c:Lcom/panasonic/avc/cng/core/b/b/OGLDisplayRenderer;
 
     if-eqz v0, :cond_0
 
     .line 192
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/snapmovie/f;->c:Lcom/panasonic/avc/cng/core/b/b/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/snapmovie/f;->c:Lcom/panasonic/avc/cng/core/b/b/OGLDisplayRenderer;
 
     new-instance v1, Lcom/panasonic/avc/cng/view/play/snapmovie/f$3;
 
     invoke-direct {v1, p0}, Lcom/panasonic/avc/cng/view/play/snapmovie/f$3;-><init>(Lcom/panasonic/avc/cng/view/play/snapmovie/f;)V
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/core/b/b/d;->a(Ljava/lang/Runnable;)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/core/b/b/OGLDisplayRenderer;->a(Ljava/lang/Runnable;)V
 
     .line 201
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/snapmovie/f;->c:Lcom/panasonic/avc/cng/core/b/b/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/snapmovie/f;->c:Lcom/panasonic/avc/cng/core/b/b/OGLDisplayRenderer;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/b/b/d;->a()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/b/b/OGLDisplayRenderer;->a()V
 
     .line 203
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/view/play/snapmovie/f;->c:Lcom/panasonic/avc/cng/core/b/b/d;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/view/play/snapmovie/f;->c:Lcom/panasonic/avc/cng/core/b/b/OGLDisplayRenderer;
 
     .line 206
     :cond_0

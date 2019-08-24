@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/panasonic/avc/cng/model/service/p/a;
+    value = Lcom/panasonic/avc/cng/model/service/p/WifiService;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -28,28 +28,28 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/panasonic/avc/cng/model/service/p/a;
+.field final synthetic a:Lcom/panasonic/avc/cng/model/service/p/WifiService;
 
 
 # direct methods
-.method private constructor <init>(Lcom/panasonic/avc/cng/model/service/p/a;)V
+.method private constructor <init>(Lcom/panasonic/avc/cng/model/service/p/WifiService;)V
     .locals 0
 
     .prologue
     .line 492
-    iput-object p1, p0, Lcom/panasonic/avc/cng/model/service/p/a$b;->a:Lcom/panasonic/avc/cng/model/service/p/a;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/model/service/p/a$b;->a:Lcom/panasonic/avc/cng/model/service/p/WifiService;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/panasonic/avc/cng/model/service/p/a;Lcom/panasonic/avc/cng/model/service/p/a$1;)V
+.method synthetic constructor <init>(Lcom/panasonic/avc/cng/model/service/p/WifiService;Lcom/panasonic/avc/cng/model/service/p/a$1;)V
     .locals 0
 
     .prologue
     .line 492
-    invoke-direct {p0, p1}, Lcom/panasonic/avc/cng/model/service/p/a$b;-><init>(Lcom/panasonic/avc/cng/model/service/p/a;)V
+    invoke-direct {p0, p1}, Lcom/panasonic/avc/cng/model/service/p/a$b;-><init>(Lcom/panasonic/avc/cng/model/service/p/WifiService;)V
 
     return-void
 .end method

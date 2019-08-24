@@ -52,28 +52,28 @@
     .line 112
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/a$1;->a:Lcom/panasonic/avc/cng/view/play/movieslideshow/a;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/movieslideshow/a;->a(Lcom/panasonic/avc/cng/view/play/movieslideshow/a;)Lcom/panasonic/avc/cng/view/play/movieslideshow/c;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/movieslideshow/a;->a(Lcom/panasonic/avc/cng/view/play/movieslideshow/a;)Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowViewModel;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/movieslideshow/c;->h()Lcom/panasonic/avc/cng/view/parts/t;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowViewModel;->h()Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
     move-result-object v0
 
-    invoke-virtual {v0, p3}, Lcom/panasonic/avc/cng/view/parts/t;->g(I)Z
+    invoke-virtual {v0, p3}, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->g(I)Z
 
     .line 115
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/a$1;->a:Lcom/panasonic/avc/cng/view/play/movieslideshow/a;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/movieslideshow/a;->a(Lcom/panasonic/avc/cng/view/play/movieslideshow/a;)Lcom/panasonic/avc/cng/view/play/movieslideshow/c;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/play/movieslideshow/a;->a(Lcom/panasonic/avc/cng/view/play/movieslideshow/a;)Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowViewModel;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/movieslideshow/c;->h()Lcom/panasonic/avc/cng/view/parts/t;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/movieslideshow/MovieSlideshowViewModel;->h()Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
     move-result-object v0
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/parts/t;->e:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->e:Lcom/panasonic/avc/cng/a/c;
 
     invoke-virtual {v0}, Lcom/panasonic/avc/cng/a/c;->b()Ljava/lang/Object;
 

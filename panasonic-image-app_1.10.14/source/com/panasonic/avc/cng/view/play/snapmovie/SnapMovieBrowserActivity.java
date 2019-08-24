@@ -15,7 +15,7 @@ import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.C1892f;
 import com.panasonic.avc.cng.model.service.p055b.C2003c;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.util.C2266l;
 import com.panasonic.avc.cng.view.p072a.C2284a;
 import com.panasonic.avc.cng.view.p072a.C2291c;
@@ -23,13 +23,13 @@ import com.panasonic.avc.cng.view.p072a.C2308e.C2310a;
 import com.panasonic.avc.cng.view.p072a.C2316j;
 import com.panasonic.avc.cng.view.p073b.C2317a.C2325c;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
 import com.panasonic.avc.cng.view.p073b.C2376f.C2378b;
-import com.panasonic.avc.cng.view.parts.C4245t;
-import com.panasonic.avc.cng.view.parts.C4245t.C4252c;
-import com.panasonic.avc.cng.view.parts.C4245t.C4255e;
+import com.panasonic.avc.cng.view.parts.BrowserViewModel;
+import com.panasonic.avc.cng.view.parts.BrowserViewModel.C4252c;
+import com.panasonic.avc.cng.view.parts.BrowserViewModel.C4255e;
 import com.panasonic.avc.cng.view.parts.C4262x;
-import com.panasonic.avc.cng.view.play.multiphotoframe.C4636n.C4660b;
+import com.panasonic.avc.cng.view.play.multiphotoframe.MultiPhotoFrameSelectPictureViewModel.C4660b;
 import com.panasonic.avc.cng.view.smartoperation.ContentPlayerActivity;
 import java.util.ArrayList;
 import java.util.List;
@@ -66,44 +66,44 @@ public class SnapMovieBrowserActivity extends C2284a implements C2310a {
 
         /* renamed from: b */
         public void mo10740b() {
-            C2331d.m10114a((Activity) SnapMovieBrowserActivity.this, C2328a.ERROR_NO_IMAGE_SELECT, (Bundle) null);
+            DialogFactory.m10114a((Activity) SnapMovieBrowserActivity.this, C2328a.ERROR_NO_IMAGE_SELECT, (Bundle) null);
         }
 
         /* renamed from: b */
         public void mo10741b(final int i) {
             Bundle bundle = new Bundle();
             bundle.putInt(C2378b.MESSAGE_ID.name(), R.string.msg_now_saving_movie);
-            C2331d.m10115a((Activity) SnapMovieBrowserActivity.this, C2328a.PROCESS_PROGRESS, bundle, (C2325c) new C2325c() {
+            DialogFactory.m10115a((Activity) SnapMovieBrowserActivity.this, C2328a.PROCESS_PROGRESS, bundle, (C2325c) new C2325c() {
                 /* renamed from: a */
                 public void mo6131a() {
-                    C2331d.m10111a((Activity) SnapMovieBrowserActivity.this, C2328a.PROCESS_PROGRESS, (int) R.id.percent_num, (CharSequence) "0");
-                    C2331d.m10111a((Activity) SnapMovieBrowserActivity.this, C2328a.PROCESS_PROGRESS, (int) R.id.numerator, (CharSequence) "0");
-                    C2331d.m10111a((Activity) SnapMovieBrowserActivity.this, C2328a.PROCESS_PROGRESS, (int) R.id.denominator, (CharSequence) String.valueOf(i));
+                    DialogFactory.m10111a((Activity) SnapMovieBrowserActivity.this, C2328a.PROCESS_PROGRESS, (int) R.id.percent_num, (CharSequence) "0");
+                    DialogFactory.m10111a((Activity) SnapMovieBrowserActivity.this, C2328a.PROCESS_PROGRESS, (int) R.id.numerator, (CharSequence) "0");
+                    DialogFactory.m10111a((Activity) SnapMovieBrowserActivity.this, C2328a.PROCESS_PROGRESS, (int) R.id.denominator, (CharSequence) String.valueOf(i));
                 }
             });
         }
 
         /* renamed from: a */
         public void mo10738a(int i, int i2) {
-            C2331d.m10111a((Activity) SnapMovieBrowserActivity.this, C2328a.PROCESS_PROGRESS, (int) R.id.numerator, (CharSequence) String.valueOf(i));
-            C2331d.m10111a((Activity) SnapMovieBrowserActivity.this, C2328a.PROCESS_PROGRESS, (int) R.id.percent_num, (CharSequence) String.valueOf(i2));
-            C2331d.m10104a((Activity) SnapMovieBrowserActivity.this, C2328a.PROCESS_PROGRESS, (int) R.id.progressBar2, i2);
+            DialogFactory.m10111a((Activity) SnapMovieBrowserActivity.this, C2328a.PROCESS_PROGRESS, (int) R.id.numerator, (CharSequence) String.valueOf(i));
+            DialogFactory.m10111a((Activity) SnapMovieBrowserActivity.this, C2328a.PROCESS_PROGRESS, (int) R.id.percent_num, (CharSequence) String.valueOf(i2));
+            DialogFactory.m10104a((Activity) SnapMovieBrowserActivity.this, C2328a.PROCESS_PROGRESS, (int) R.id.progressBar2, i2);
         }
 
         /* renamed from: c */
         public void mo10743c(int i) {
-            C2261g.m9769c("SnapMovieBrowserActivity", "OnError():" + i);
-            C2331d.m10100a((Activity) SnapMovieBrowserActivity.this);
+            ImageAppLog.error("SnapMovieBrowserActivity", "OnError():" + i);
+            DialogFactory.m10100a((Activity) SnapMovieBrowserActivity.this);
             if (i == 1 || i == 5 || i == 3) {
                 SnapMovieBrowserActivity.this._cameraUtil.mo6032a((Runnable) new Runnable() {
                     public void run() {
-                        C2331d.m10114a((Activity) SnapMovieBrowserActivity.this, C2328a.ON_BROWSE_ACTION_ERROR_COPY, (Bundle) null);
+                        DialogFactory.m10114a((Activity) SnapMovieBrowserActivity.this, C2328a.ON_BROWSE_ACTION_ERROR_COPY, (Bundle) null);
                     }
                 });
             } else if (i == 7) {
                 SnapMovieBrowserActivity.this._cameraUtil.mo6032a((Runnable) new Runnable() {
                     public void run() {
-                        C2331d.m10114a((Activity) SnapMovieBrowserActivity.this, C2328a.ON_BROWSE_ACTION_ERROR_COPY_NO_REMAIN, (Bundle) null);
+                        DialogFactory.m10114a((Activity) SnapMovieBrowserActivity.this, C2328a.ON_BROWSE_ACTION_ERROR_COPY_NO_REMAIN, (Bundle) null);
                     }
                 });
             }
@@ -111,7 +111,7 @@ public class SnapMovieBrowserActivity extends C2284a implements C2310a {
 
         /* renamed from: c */
         public void mo10742c() {
-            C2331d.m10100a((Activity) SnapMovieBrowserActivity.this);
+            DialogFactory.m10100a((Activity) SnapMovieBrowserActivity.this);
             if (!SnapMovieBrowserActivity.this.f15297a.mo11091l() || !SnapMovieBrowserActivity.this.f15297a.mo6022d().getBoolean("SnapMovieIsFinish")) {
                 if (SnapMovieBrowserActivity.this.f15297a.mo11104y()) {
                     SnapMovieBrowserActivity.this.f15297a.mo11085f(false);
@@ -127,9 +127,9 @@ public class SnapMovieBrowserActivity extends C2284a implements C2310a {
 
         /* renamed from: a */
         public void mo10739a(ArrayList<C2003c> arrayList, boolean z) {
-            C2331d.m10100a((Activity) SnapMovieBrowserActivity.this);
+            DialogFactory.m10100a((Activity) SnapMovieBrowserActivity.this);
             if (SnapMovieBrowserActivity.this.getCallingActivity() != null) {
-                C2261g.m9763a("SnapMovieBrowserActivity", "SnapMoviePreviewActivity start..." + SnapMovieBrowserActivity.this.getCallingActivity().getClassName());
+                ImageAppLog.debug("SnapMovieBrowserActivity", "SnapMoviePreviewActivity start..." + SnapMovieBrowserActivity.this.getCallingActivity().getClassName());
             }
             SnapMovieBrowserActivity.this.f15297a.mo11079c(false);
             Intent intent = new Intent(SnapMovieBrowserActivity.this._context, SnapMoviePreviewActivity.class);
@@ -180,7 +180,7 @@ public class SnapMovieBrowserActivity extends C2284a implements C2310a {
                     if (SnapMovieBrowserActivity.this.f15297a.mo11096q().mo9961d().size() > 0) {
                         SnapMovieBrowserActivity.this._cameraUtil.mo6032a((Runnable) new Runnable() {
                             public void run() {
-                                C2331d.m10100a((Activity) SnapMovieBrowserActivity.this);
+                                DialogFactory.m10100a((Activity) SnapMovieBrowserActivity.this);
                                 String str = "";
                                 if (SnapMovieBrowserActivity.this.f15297a != null) {
                                     int c = SnapMovieBrowserActivity.this.f15297a.mo11077c();
@@ -192,7 +192,7 @@ public class SnapMovieBrowserActivity extends C2284a implements C2310a {
                                 }
                                 Bundle bundle = new Bundle();
                                 bundle.putString(C2378b.MESSAGE_STRING.name(), str);
-                                C2331d.m10114a((Activity) SnapMovieBrowserActivity.this, C2328a.DIALOG_ID_CONFIRM_AUTO_RECEIPT, bundle);
+                                DialogFactory.m10114a((Activity) SnapMovieBrowserActivity.this, C2328a.DIALOG_ID_CONFIRM_AUTO_RECEIPT, bundle);
                             }
                         });
                         return;
@@ -208,7 +208,7 @@ public class SnapMovieBrowserActivity extends C2284a implements C2310a {
                         public void run() {
                             if (SnapMovieBrowserActivity.this.f15297a != null) {
                                 if (!SnapMovieBrowserActivity.this.f15297a.mo11091l()) {
-                                    C2331d.m10100a((Activity) SnapMovieBrowserActivity.this);
+                                    DialogFactory.m10100a((Activity) SnapMovieBrowserActivity.this);
                                 }
                                 SnapMovieBrowserActivity.this.f15297a.mo11099t();
                             }
@@ -233,7 +233,7 @@ public class SnapMovieBrowserActivity extends C2284a implements C2310a {
         public void mo10012e() {
             SnapMovieBrowserActivity.this._cameraUtil.mo6032a((Runnable) new Runnable() {
                 public void run() {
-                    C2331d.m10114a((Activity) SnapMovieBrowserActivity.this, C2328a.ON_DISCONNECT_NO_FINISH, (Bundle) null);
+                    DialogFactory.m10114a((Activity) SnapMovieBrowserActivity.this, C2328a.ON_DISCONNECT_NO_FINISH, (Bundle) null);
                 }
             });
         }
@@ -242,7 +242,7 @@ public class SnapMovieBrowserActivity extends C2284a implements C2310a {
         public void mo10008a(int i, int i2) {
             SnapMovieBrowserActivity.this._cameraUtil.mo6032a((Runnable) new Runnable() {
                 public void run() {
-                    C2331d.m10114a((Activity) SnapMovieBrowserActivity.this, C2328a.ON_EXCEEDED_MAX_SELECT_TIME, (Bundle) null);
+                    DialogFactory.m10114a((Activity) SnapMovieBrowserActivity.this, C2328a.ON_EXCEEDED_MAX_SELECT_TIME, (Bundle) null);
                 }
             });
         }
@@ -260,7 +260,7 @@ public class SnapMovieBrowserActivity extends C2284a implements C2310a {
             if (i == 0) {
                 SnapMovieBrowserActivity.this._cameraUtil.mo6032a((Runnable) new Runnable() {
                     public void run() {
-                        C2331d.m10114a((Activity) SnapMovieBrowserActivity.this, C2328a.ON_BROWSE_ACTION_WARNING_LIMIT_CONTENTS, (Bundle) null);
+                        DialogFactory.m10114a((Activity) SnapMovieBrowserActivity.this, C2328a.ON_BROWSE_ACTION_WARNING_LIMIT_CONTENTS, (Bundle) null);
                     }
                 });
             } else if (i == 1) {
@@ -272,7 +272,7 @@ public class SnapMovieBrowserActivity extends C2284a implements C2310a {
             } else if (i == 2) {
                 SnapMovieBrowserActivity.this._cameraUtil.mo6032a((Runnable) new Runnable() {
                     public void run() {
-                        C2331d.m10114a((Activity) SnapMovieBrowserActivity.this, C2328a.ON_BROWSE_ACTION_DB_CREATE_ERROR, (Bundle) null);
+                        DialogFactory.m10114a((Activity) SnapMovieBrowserActivity.this, C2328a.ON_BROWSE_ACTION_DB_CREATE_ERROR, (Bundle) null);
                     }
                 });
             }
@@ -281,7 +281,7 @@ public class SnapMovieBrowserActivity extends C2284a implements C2310a {
         /* renamed from: b */
         public void mo10009b() {
             if (SnapMovieBrowserActivity.this.f15297a != null) {
-                C4245t q = SnapMovieBrowserActivity.this.f15297a.mo11096q();
+                BrowserViewModel q = SnapMovieBrowserActivity.this.f15297a.mo11096q();
                 if (q != null) {
                     SnapMovieBrowserActivity.this.f15297a.f15476v.mo3216a(q.mo9983q());
                 }
@@ -315,7 +315,7 @@ public class SnapMovieBrowserActivity extends C2284a implements C2310a {
             if (SnapMovieBrowserActivity.this.f15297a != null && !SnapMovieBrowserActivity.this.f15297a.mo11091l()) {
                 SnapMovieBrowserActivity.this._cameraUtil.mo6032a((Runnable) new Runnable() {
                     public void run() {
-                        C2331d.m10100a((Activity) SnapMovieBrowserActivity.this);
+                        DialogFactory.m10100a((Activity) SnapMovieBrowserActivity.this);
                     }
                 });
             }
@@ -324,9 +324,9 @@ public class SnapMovieBrowserActivity extends C2284a implements C2310a {
         /* renamed from: a */
         public void mo10996a(String str) {
             if (str.equalsIgnoreCase("high")) {
-                C2331d.m10114a((Activity) SnapMovieBrowserActivity.this, C2328a.ON_DISCONNECT_BY_HIGH_TEMP_NO_FINISH, (Bundle) null);
+                DialogFactory.m10114a((Activity) SnapMovieBrowserActivity.this, C2328a.ON_DISCONNECT_BY_HIGH_TEMP_NO_FINISH, (Bundle) null);
             } else if (str.equalsIgnoreCase("assert")) {
-                C2331d.m10114a((Activity) SnapMovieBrowserActivity.this, C2328a.ON_ASEERT_TEMP_NO_FINISH, (Bundle) null);
+                DialogFactory.m10114a((Activity) SnapMovieBrowserActivity.this, C2328a.ON_ASEERT_TEMP_NO_FINISH, (Bundle) null);
             }
         }
     }
@@ -384,13 +384,13 @@ public class SnapMovieBrowserActivity extends C2284a implements C2310a {
                     if (intent != null) {
                         String action = intent.getAction();
                         if (action != null) {
-                            C2261g.m9771e("SnapMovieBrowserActivity", "onReceive(" + action + ")");
+                            ImageAppLog.info("SnapMovieBrowserActivity", "onReceive(" + action + ")");
                             if (action.equals("android.intent.action.CLOSE_SYSTEM_DIALOGS") && SnapMovieBrowserActivity.this.f15297a != null) {
                                 SnapMovieBrowserActivity.this.f15297a.mo6022d().putBoolean("SnapMovieIsFinish", true);
                                 if (SnapMovieBrowserActivity.this.f15297a.mo11103x()) {
                                     SnapMovieBrowserActivity.this.f15297a.mo11102w();
-                                    C2331d.m10100a((Activity) SnapMovieBrowserActivity.this);
-                                    C2331d.m10114a((Activity) SnapMovieBrowserActivity.this, C2328a.WAIT_PROCESSING, (Bundle) null);
+                                    DialogFactory.m10100a((Activity) SnapMovieBrowserActivity.this);
+                                    DialogFactory.m10114a((Activity) SnapMovieBrowserActivity.this, C2328a.WAIT_PROCESSING, (Bundle) null);
                                     return;
                                 }
                                 SnapMovieBrowserActivity.this.finish();
@@ -404,11 +404,11 @@ public class SnapMovieBrowserActivity extends C2284a implements C2310a {
                 if (this.f15297a.mo11094o()) {
                     this._cameraUtil.mo6033a((Runnable) new Runnable() {
                         public void run() {
-                            C2331d.m10100a((Activity) SnapMovieBrowserActivity.this);
+                            DialogFactory.m10100a((Activity) SnapMovieBrowserActivity.this);
                         }
                     }, 2000);
                 } else {
-                    C2331d.m10114a((Activity) this, C2328a.WAIT_PROCESSING, (Bundle) null);
+                    DialogFactory.m10114a((Activity) this, C2328a.WAIT_PROCESSING, (Bundle) null);
                 }
                 this.f15297a.mo11099t();
             }
@@ -422,7 +422,7 @@ public class SnapMovieBrowserActivity extends C2284a implements C2310a {
         }
         ContentPlayerActivity.m21720a((Activity) this, false);
         if (this.f15297a != null) {
-            C4245t q = this.f15297a.mo11096q();
+            BrowserViewModel q = this.f15297a.mo11096q();
             if (q != null) {
                 this.f15297a.f15476v.mo3216a(q.mo9983q());
             }
@@ -549,10 +549,10 @@ public class SnapMovieBrowserActivity extends C2284a implements C2310a {
             case C1702a.HorizontalPicker_hairline_visible /*11*/:
                 return false;
             case 7:
-                if (!C2331d.m10125b((Activity) this, C2328a.ON_DMS_RECEIVING)) {
+                if (!DialogFactory.m10125b((Activity) this, C2328a.ON_DMS_RECEIVING)) {
                     return false;
                 }
-                C2331d.m10100a((Activity) this);
+                DialogFactory.m10100a((Activity) this);
                 return false;
             case 12:
                 if (this.f15297a == null || !this.f15297a.mo11103x()) {
@@ -561,8 +561,8 @@ public class SnapMovieBrowserActivity extends C2284a implements C2310a {
                 }
                 this.f15297a.mo11085f(true);
                 this.f15297a.mo11102w();
-                C2331d.m10100a((Activity) this);
-                C2331d.m10114a((Activity) this, C2328a.WAIT_PROCESSING, (Bundle) null);
+                DialogFactory.m10100a((Activity) this);
+                DialogFactory.m10114a((Activity) this, C2328a.WAIT_PROCESSING, (Bundle) null);
                 return false;
             case 13:
                 if (this.f15297a == null || !this.f15297a.mo11103x()) {
@@ -571,8 +571,8 @@ public class SnapMovieBrowserActivity extends C2284a implements C2310a {
                 }
                 this.f15297a.mo11085f(true);
                 this.f15297a.mo11102w();
-                C2331d.m10100a((Activity) this);
-                C2331d.m10114a((Activity) this, C2328a.WAIT_PROCESSING, (Bundle) null);
+                DialogFactory.m10100a((Activity) this);
+                DialogFactory.m10114a((Activity) this, C2328a.WAIT_PROCESSING, (Bundle) null);
                 return false;
             default:
                 return super.onDmsWatchEvent(i);
@@ -597,17 +597,17 @@ public class SnapMovieBrowserActivity extends C2284a implements C2310a {
 
     public void OnClickSelectFolder(View view) {
         if (!isFinishing()) {
-            C2331d.m10100a((Activity) this);
+            DialogFactory.m10100a((Activity) this);
             Bundle bundle = new Bundle();
             if (this.f15297a != null) {
                 String[] f = this.f15297a.mo11097r().mo9414f();
                 bundle.putStringArray(C2378b.SINGLE_CHOICE_LIST.name(), new String[]{f[0], f[1]});
                 bundle.putInt(C2378b.SINGLE_CHOICE_CHECKED_ITEM.name(), this.f15297a.mo11097r().mo9415g());
             }
-            C2331d.m10115a((Activity) this, C2328a.SELECT_FOLDER, bundle, (C2325c) new C2325c() {
+            DialogFactory.m10115a((Activity) this, C2328a.SELECT_FOLDER, bundle, (C2325c) new C2325c() {
                 /* renamed from: a */
                 public void mo6131a() {
-                    C2331d.m10129c((Activity) SnapMovieBrowserActivity.this, C2328a.SELECT_FOLDER, (int) R.id.title, (int) R.string.smartop_albumlist_title);
+                    DialogFactory.m10129c((Activity) SnapMovieBrowserActivity.this, C2328a.SELECT_FOLDER, (int) R.id.title, (int) R.string.smartop_albumlist_title);
                 }
             });
         }
@@ -649,7 +649,7 @@ public class SnapMovieBrowserActivity extends C2284a implements C2310a {
             case PROCESS_PROGRESS:
                 if (this.f15297a != null) {
                     this.f15297a.mo11102w();
-                    C2331d.m10114a((Activity) this, C2328a.WAIT_PROCESSING, (Bundle) null);
+                    DialogFactory.m10114a((Activity) this, C2328a.WAIT_PROCESSING, (Bundle) null);
                     return;
                 }
                 return;
@@ -664,7 +664,7 @@ public class SnapMovieBrowserActivity extends C2284a implements C2310a {
         if (this.f15297a != null) {
             int g = this.f15297a.mo11097r().mo9415g();
             this.f15297a.mo11097r().mo9408c(i);
-            C2331d.m10100a((Activity) this);
+            DialogFactory.m10100a((Activity) this);
             if (g != i) {
                 C2266l.m9797a((Context) this, (Activity) this, this.f15297a.mo11097r().mo9418i());
                 this.f15297a.mo11096q().f14242j.mo3216a(Boolean.valueOf(false));
@@ -682,8 +682,8 @@ public class SnapMovieBrowserActivity extends C2284a implements C2310a {
                 }
                 final C1501d dVar = new C1501d(a.f5682d);
                 final String str = i == 0 ? "sd1" : "sd2";
-                C2331d.m10100a((Activity) this);
-                C2331d.m10114a((Activity) this, C2328a.WAIT_PROCESSING, (Bundle) null);
+                DialogFactory.m10100a((Activity) this);
+                DialogFactory.m10114a((Activity) this, C2328a.WAIT_PROCESSING, (Bundle) null);
                 new Thread(new Runnable() {
                     public void run() {
                         if (dVar.mo3712k(str)) {
@@ -697,8 +697,8 @@ public class SnapMovieBrowserActivity extends C2284a implements C2310a {
                         } else if (SnapMovieBrowserActivity.this._handler != null) {
                             SnapMovieBrowserActivity.this._handler.post(new Runnable() {
                                 public void run() {
-                                    C2331d.m10100a((Activity) SnapMovieBrowserActivity.this);
-                                    C2331d.m10114a((Activity) SnapMovieBrowserActivity.this, C2328a.DIALOG_ID_CANNOT_SWITCH_CUR_SD, (Bundle) null);
+                                    DialogFactory.m10100a((Activity) SnapMovieBrowserActivity.this);
+                                    DialogFactory.m10114a((Activity) SnapMovieBrowserActivity.this, C2328a.DIALOG_ID_CANNOT_SWITCH_CUR_SD, (Bundle) null);
                                 }
                             });
                         }

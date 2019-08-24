@@ -8,10 +8,10 @@ import com.panasonic.avc.cng.core.p040a.C1501d;
 import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.C1892f;
 import com.panasonic.avc.cng.model.C1910l;
-import com.panasonic.avc.cng.model.p051c.C1846e;
+import com.panasonic.avc.cng.model.p051c.CameraStatus;
 import com.panasonic.avc.cng.model.p052d.C1879a;
 import com.panasonic.avc.cng.model.service.C2028e;
-import com.panasonic.avc.cng.model.service.C2253z;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
 import com.panasonic.avc.cng.view.liveview.C2946c;
 import com.panasonic.avc.cng.view.liveview.LiveViewLumixActivity;
 import com.panasonic.avc.cng.view.liveview.LiveViewLumixCompactActivity;
@@ -245,9 +245,9 @@ public class C1347a {
         if (a.mo4886a()) {
             if (a.f5688j == 65540) {
                 boolean z = false;
-                C2028e a2 = C2253z.m9680a(context, true);
+                C2028e a2 = ServiceFactory.m9680a(context, true);
                 if (a2 != null) {
-                    C1846e i = a2.mo5285i();
+                    CameraStatus i = a2.mo5285i();
                     if (i != null && i.mo4705m()) {
                         z = true;
                     }
@@ -292,9 +292,9 @@ public class C1347a {
                 }
             } else {
                 Class<?> a3 = m5302a(a);
-                C2028e a4 = C2253z.m9680a(context, true);
+                C2028e a4 = ServiceFactory.m9680a(context, true);
                 if (a4 != null) {
-                    C1846e i2 = a4.mo5285i();
+                    CameraStatus i2 = a4.mo5285i();
                     if (i2 != null && i2.mo4705m()) {
                         return a3;
                     }
@@ -456,9 +456,9 @@ public class C1347a {
     /* renamed from: a */
     public static boolean m5307a(boolean z, Context context) {
         if (z) {
-            C2028e a = C2253z.m9680a(context, true);
+            C2028e a = ServiceFactory.m9680a(context, true);
             if (a != null) {
-                C1846e i = a.mo5285i();
+                CameraStatus i = a.mo5285i();
                 if (i == null) {
                     return true;
                 }

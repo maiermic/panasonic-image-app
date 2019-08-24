@@ -1,10 +1,10 @@
 package com.panasonic.avc.cng.core.p040a;
 
-import com.panasonic.avc.cng.model.p051c.C1853h;
+import com.panasonic.avc.cng.model.p051c.ParseTagHighlightSceneInfo;
 import com.panasonic.avc.cng.model.p051c.C1854i;
 import com.panasonic.avc.cng.model.p051c.C1870t;
 import com.panasonic.avc.cng.model.p051c.C1871u;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 
@@ -105,7 +105,7 @@ public class C1497c {
         String str3 = "";
         switch (bVar) {
             case XML:
-                C1853h hVar = new C1853h(str);
+                ParseTagHighlightSceneInfo hVar = new ParseTagHighlightSceneInfo(str);
                 a = hVar.mo4771a();
                 z = hVar.mo4774d();
                 str3 = hVar.mo4772b();
@@ -134,7 +134,7 @@ public class C1497c {
         String str2 = "";
         switch (bVar) {
             case XML:
-                C1853h hVar = new C1853h(bArr);
+                ParseTagHighlightSceneInfo hVar = new ParseTagHighlightSceneInfo(bArr);
                 a = hVar.mo4771a();
                 z = hVar.mo4774d();
                 str2 = hVar.mo4772b();
@@ -165,13 +165,13 @@ public class C1497c {
             if (i >= this.f4121d) {
                 break;
             }
-            str5 = C1450al.m5704a(e);
+            str5 = StaticHttpCommand.m5704a(e);
             if (str5 != null) {
                 C1499a a = m5893a(bVar, str5, (String) null);
                 if (a != null) {
                     if (!a.f4126a && !a.f4127b) {
                         if (!a.f4128c.equalsIgnoreCase("err_busy") && !a.f4128c.equalsIgnoreCase("err_reject")) {
-                            C2261g.m9766b(f4118a, String.format("Command = %s, Result = %s", new Object[]{e, a.f4128c}));
+                            ImageAppLog.warning(f4118a, String.format("Command = %s, Result = %s", new Object[]{e, a.f4128c}));
                             break;
                         }
                         mo3674a(this.f4124g);
@@ -185,7 +185,7 @@ public class C1497c {
                     continue;
                 }
             } else {
-                C2261g.m9769c(f4118a, str + "() is null....");
+                ImageAppLog.error(f4118a, str + "() is null....");
                 mo3674a(this.f4123f);
             }
             i++;
@@ -202,13 +202,13 @@ public class C1497c {
             if (i2 >= this.f4121d) {
                 break;
             }
-            str5 = C1462am.m5736a(e, i);
+            str5 = StaticHttpCustomCommand.m5736a(e, i);
             if (str5 != null) {
                 C1499a a = m5893a(bVar, str5, (String) null);
                 if (a != null) {
                     if (!a.f4126a && !a.f4127b) {
                         if (!a.f4128c.equalsIgnoreCase("err_busy") && !a.f4128c.equalsIgnoreCase("err_reject")) {
-                            C2261g.m9766b(f4118a, String.format("Command = %s, Result = %s", new Object[]{e, a.f4128c}));
+                            ImageAppLog.warning(f4118a, String.format("Command = %s, Result = %s", new Object[]{e, a.f4128c}));
                             break;
                         }
                         mo3674a(this.f4124g);
@@ -222,7 +222,7 @@ public class C1497c {
                     continue;
                 }
             } else {
-                C2261g.m9769c(f4118a, str + "() is null....");
+                ImageAppLog.error(f4118a, str + "() is null....");
                 mo3674a(this.f4123f);
             }
             i2++;
@@ -240,9 +240,9 @@ public class C1497c {
                 break;
             }
             StringBuffer stringBuffer2 = new StringBuffer();
-            str5 = C1450al.m5707a(e, stringBuffer2);
+            str5 = StaticHttpCommand.m5707a(e, stringBuffer2);
             if (str5 == null) {
-                C2261g.m9769c(f4118a, str + "() is null....");
+                ImageAppLog.error(f4118a, str + "() is null....");
                 mo3674a(this.f4123f);
             } else if (stringBuffer2 == null) {
                 continue;
@@ -251,7 +251,7 @@ public class C1497c {
                 if (a != null) {
                     if (!a.f4126a && !a.f4127b) {
                         if (!a.f4128c.equalsIgnoreCase("err_busy") && !a.f4128c.equalsIgnoreCase("err_reject")) {
-                            C2261g.m9766b(f4118a, String.format("Command = %s, Result = %s", new Object[]{e, a.f4128c}));
+                            ImageAppLog.warning(f4118a, String.format("Command = %s, Result = %s", new Object[]{e, a.f4128c}));
                             break;
                         }
                         mo3674a(this.f4124g);
@@ -281,13 +281,13 @@ public class C1497c {
             if (i >= this.f4121d || this.f4122e) {
                 break;
             }
-            bArr = C1450al.m5713b(e);
+            bArr = StaticHttpCommand.m5713b(e);
             if (bArr != null) {
                 C1499a a = m5894a(bVar, bArr, (String) null);
                 if (a != null) {
                     if (!a.f4126a && !a.f4127b) {
                         if (!a.f4128c.equalsIgnoreCase("err_busy") && !a.f4128c.equalsIgnoreCase("err_reject")) {
-                            C2261g.m9766b(f4118a, String.format("Command = %s, Result = %s", new Object[]{e, a.f4128c}));
+                            ImageAppLog.warning(f4118a, String.format("Command = %s, Result = %s", new Object[]{e, a.f4128c}));
                             break;
                         }
                         mo3674a(this.f4124g);
@@ -298,7 +298,7 @@ public class C1497c {
                     continue;
                 }
             } else {
-                C2261g.m9769c(f4118a, str + "() is null....");
+                ImageAppLog.error(f4118a, str + "() is null....");
                 mo3674a(this.f4123f);
             }
             i++;
@@ -308,14 +308,14 @@ public class C1497c {
 
     /* access modifiers changed from: protected */
     /* renamed from: a */
-    public C1853h mo3668a(String str, String str2, String str3, String str4) {
-        return new C1853h(m5896a(C1500b.XML, str, str2, str3, str4));
+    public ParseTagHighlightSceneInfo mo3668a(String str, String str2, String str3, String str4) {
+        return new ParseTagHighlightSceneInfo(m5896a(C1500b.XML, str, str2, str3, str4));
     }
 
     /* access modifiers changed from: protected */
     /* renamed from: a */
-    public C1853h mo3669a(String str, String str2, String str3, String str4, int i) {
-        return new C1853h(m5897a(C1500b.XML, str, str2, str3, str4, i));
+    public ParseTagHighlightSceneInfo mo3669a(String str, String str2, String str3, String str4, int i) {
+        return new ParseTagHighlightSceneInfo(m5897a(C1500b.XML, str, str2, str3, str4, i));
     }
 
     /* access modifiers changed from: protected */
@@ -338,14 +338,14 @@ public class C1497c {
 
     /* access modifiers changed from: protected */
     /* renamed from: a */
-    public C1853h mo3671a(StringBuffer stringBuffer, String str, String str2, String str3, String str4) {
-        return new C1853h(m5898a(C1500b.XML, stringBuffer, str, str2, str3, str4));
+    public ParseTagHighlightSceneInfo mo3671a(StringBuffer stringBuffer, String str, String str2, String str3, String str4) {
+        return new ParseTagHighlightSceneInfo(m5898a(C1500b.XML, stringBuffer, str, str2, str3, str4));
     }
 
     /* access modifiers changed from: protected */
     /* renamed from: d */
-    public C1853h mo3681d(String str, String str2, String str3, String str4) {
-        return new C1853h(m5899b(C1500b.XML, str, str2, str3, str4));
+    public ParseTagHighlightSceneInfo mo3681d(String str, String str2, String str3, String str4) {
+        return new ParseTagHighlightSceneInfo(m5899b(C1500b.XML, str, str2, str3, str4));
     }
 
     /* renamed from: e */
@@ -372,27 +372,27 @@ public class C1497c {
     }
 
     /* renamed from: e */
-    public C1853h mo3683e(String str) {
+    public ParseTagHighlightSceneInfo mo3683e(String str) {
         return mo3668a("camcmd", (String) null, str, (String) null);
     }
 
     /* renamed from: b */
-    public C1853h mo3675b(String str, String str2, String str3) {
+    public ParseTagHighlightSceneInfo mo3675b(String str, String str2, String str3) {
         return mo3668a("editcmd", str, str2, str3);
     }
 
     /* renamed from: c */
-    public C1853h mo3679c(String str, String str2, String str3) {
+    public ParseTagHighlightSceneInfo mo3679c(String str, String str2, String str3) {
         return mo3669a("editcmd", str, str2, str3, 10000);
     }
 
     /* renamed from: a */
-    public C1853h mo3667a(String str, String str2) {
+    public ParseTagHighlightSceneInfo mo3667a(String str, String str2) {
         return mo3668a("setsetting", str, str2, (String) null);
     }
 
     /* renamed from: f */
-    public C1853h mo3684f(String str) {
+    public ParseTagHighlightSceneInfo mo3684f(String str) {
         return mo3668a("getsetting", str, (String) null, (String) null);
     }
 
@@ -402,17 +402,17 @@ public class C1497c {
     }
 
     /* renamed from: g */
-    public C1853h mo3685g(String str) {
+    public ParseTagHighlightSceneInfo mo3685g(String str) {
         return mo3668a("getinfo", str, (String) null, (String) null);
     }
 
     /* renamed from: c */
-    public C1853h mo3678c(String str, String str2) {
+    public ParseTagHighlightSceneInfo mo3678c(String str, String str2) {
         return mo3668a("pantiltcmd", str, str2, (String) null);
     }
 
     /* renamed from: h */
-    public C1853h mo3686h(String str) {
+    public ParseTagHighlightSceneInfo mo3686h(String str) {
         return mo3668a("speak", str, (String) null, (String) null);
     }
 
@@ -422,12 +422,12 @@ public class C1497c {
     }
 
     /* renamed from: a */
-    public C1853h mo3670a(StringBuffer stringBuffer, String str, String str2, String str3) {
+    public ParseTagHighlightSceneInfo mo3670a(StringBuffer stringBuffer, String str, String str2, String str3) {
         return mo3671a(stringBuffer, "accctrl", str, str2, str3);
     }
 
     /* renamed from: j */
-    public C1853h mo3688j(String str) {
+    public ParseTagHighlightSceneInfo mo3688j(String str) {
         return mo3681d("camcmd", null, str, null);
     }
 }

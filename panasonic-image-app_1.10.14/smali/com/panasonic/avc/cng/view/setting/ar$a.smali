@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/panasonic/avc/cng/view/setting/ar;
+    value = Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewCreativeControlViewModel;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,28 +18,28 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/panasonic/avc/cng/view/setting/ar;
+.field final synthetic a:Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewCreativeControlViewModel;
 
 
 # direct methods
-.method private constructor <init>(Lcom/panasonic/avc/cng/view/setting/ar;)V
+.method private constructor <init>(Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewCreativeControlViewModel;)V
     .locals 0
 
     .prologue
     .line 220
-    iput-object p1, p0, Lcom/panasonic/avc/cng/view/setting/ar$a;->a:Lcom/panasonic/avc/cng/view/setting/ar;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/view/setting/ar$a;->a:Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewCreativeControlViewModel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/panasonic/avc/cng/view/setting/ar;Lcom/panasonic/avc/cng/view/setting/ar$1;)V
+.method synthetic constructor <init>(Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewCreativeControlViewModel;Lcom/panasonic/avc/cng/view/setting/ar$1;)V
     .locals 0
 
     .prologue
     .line 220
-    invoke-direct {p0, p1}, Lcom/panasonic/avc/cng/view/setting/ar$a;-><init>(Lcom/panasonic/avc/cng/view/setting/ar;)V
+    invoke-direct {p0, p1}, Lcom/panasonic/avc/cng/view/setting/ar$a;-><init>(Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewCreativeControlViewModel;)V
 
     return-void
 .end method
@@ -51,26 +51,26 @@
 
     .prologue
     .line 227
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ar$a;->a:Lcom/panasonic/avc/cng/view/setting/ar;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ar$a;->a:Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewCreativeControlViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/ar;->b(Lcom/panasonic/avc/cng/view/setting/ar;)Lcom/panasonic/avc/cng/view/setting/am$h;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewCreativeControlViewModel;->b(Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewCreativeControlViewModel;)Lcom/panasonic/avc/cng/view/setting/am$h;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ar$a;->a:Lcom/panasonic/avc/cng/view/setting/ar;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ar$a;->a:Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewCreativeControlViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/ar;->c(Lcom/panasonic/avc/cng/view/setting/ar;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewCreativeControlViewModel;->c(Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewCreativeControlViewModel;)Landroid/os/Handler;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 230
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ar$a;->a:Lcom/panasonic/avc/cng/view/setting/ar;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ar$a;->a:Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewCreativeControlViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/ar;->d(Lcom/panasonic/avc/cng/view/setting/ar;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewCreativeControlViewModel;->d(Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewCreativeControlViewModel;)Landroid/os/Handler;
 
     move-result-object v0
 
@@ -90,26 +90,26 @@
 
     .prologue
     .line 246
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ar$a;->a:Lcom/panasonic/avc/cng/view/setting/ar;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ar$a;->a:Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewCreativeControlViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/ar;->b(Lcom/panasonic/avc/cng/view/setting/ar;)Lcom/panasonic/avc/cng/view/setting/am$h;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewCreativeControlViewModel;->b(Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewCreativeControlViewModel;)Lcom/panasonic/avc/cng/view/setting/am$h;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ar$a;->a:Lcom/panasonic/avc/cng/view/setting/ar;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ar$a;->a:Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewCreativeControlViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/ar;->e(Lcom/panasonic/avc/cng/view/setting/ar;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewCreativeControlViewModel;->e(Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewCreativeControlViewModel;)Landroid/os/Handler;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 249
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ar$a;->a:Lcom/panasonic/avc/cng/view/setting/ar;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ar$a;->a:Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewCreativeControlViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/ar;->f(Lcom/panasonic/avc/cng/view/setting/ar;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewCreativeControlViewModel;->f(Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewCreativeControlViewModel;)Landroid/os/Handler;
 
     move-result-object v0
 
@@ -129,26 +129,26 @@
 
     .prologue
     .line 266
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ar$a;->a:Lcom/panasonic/avc/cng/view/setting/ar;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ar$a;->a:Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewCreativeControlViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/ar;->b(Lcom/panasonic/avc/cng/view/setting/ar;)Lcom/panasonic/avc/cng/view/setting/am$h;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewCreativeControlViewModel;->b(Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewCreativeControlViewModel;)Lcom/panasonic/avc/cng/view/setting/am$h;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ar$a;->a:Lcom/panasonic/avc/cng/view/setting/ar;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ar$a;->a:Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewCreativeControlViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/ar;->g(Lcom/panasonic/avc/cng/view/setting/ar;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewCreativeControlViewModel;->g(Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewCreativeControlViewModel;)Landroid/os/Handler;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 269
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ar$a;->a:Lcom/panasonic/avc/cng/view/setting/ar;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ar$a;->a:Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewCreativeControlViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/ar;->h(Lcom/panasonic/avc/cng/view/setting/ar;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewCreativeControlViewModel;->h(Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewCreativeControlViewModel;)Landroid/os/Handler;
 
     move-result-object v0
 

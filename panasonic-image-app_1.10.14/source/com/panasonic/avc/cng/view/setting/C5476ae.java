@@ -9,14 +9,14 @@ import com.panasonic.avc.cng.core.p040a.C1501d;
 import com.panasonic.avc.cng.core.p046c.C1604a;
 import com.panasonic.avc.cng.core.p046c.C1648g;
 import com.panasonic.avc.cng.core.p046c.C1651j;
-import com.panasonic.avc.cng.core.p046c.C1671s;
+import com.panasonic.avc.cng.core.p046c.Picmate;
 import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.C1892f;
 import com.panasonic.avc.cng.model.C1912n;
 import com.panasonic.avc.cng.model.C1913o;
 import com.panasonic.avc.cng.model.service.C2210p;
-import com.panasonic.avc.cng.model.service.C2253z;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
 import com.panasonic.avc.cng.p038a.C1342a;
 import com.panasonic.avc.cng.view.parts.C3971aa;
 import com.panasonic.avc.cng.view.parts.C3971aa.C3972a;
@@ -45,7 +45,7 @@ public class C5476ae extends C1342a {
     /* access modifiers changed from: private */
 
     /* renamed from: h */
-    public C1671s f17040h;
+    public Picmate f17040h;
     /* access modifiers changed from: private */
 
     /* renamed from: i */
@@ -105,7 +105,7 @@ public class C5476ae extends C1342a {
 
     /* renamed from: c */
     public void mo12190c() {
-        this.f17040h = C2253z.m9676a(this.f17035c);
+        this.f17040h = ServiceFactory.m9676a(this.f17035c);
     }
 
     /* renamed from: d */
@@ -437,7 +437,7 @@ public class C5476ae extends C1342a {
                     if (r2 == r4) goto L_0x00ae
                     com.panasonic.avc.cng.view.setting.ae r2 = com.panasonic.avc.cng.view.setting.C5476ae.this
                     android.content.Context r2 = r2.f17035c
-                    com.panasonic.avc.cng.model.service.f r2 = com.panasonic.avc.cng.model.service.C2253z.m9688b(r2, r1)
+                    com.panasonic.avc.cng.model.service.f r2 = com.panasonic.avc.cng.model.service.ServiceFactory.m9688b(r2, r1)
                     if (r2 == 0) goto L_0x00ae
                     r4 = 3
                     com.panasonic.avc.cng.model.service.f$c r2 = r2.mo5319a(r4)
@@ -544,7 +544,7 @@ public class C5476ae extends C1342a {
                     if (r2 == r4) goto L_0x0092
                     com.panasonic.avc.cng.view.setting.ae r2 = com.panasonic.avc.cng.view.setting.C5476ae.this
                     android.content.Context r2 = r2.f17035c
-                    com.panasonic.avc.cng.model.service.f r2 = com.panasonic.avc.cng.model.service.C2253z.m9688b(r2, r1)
+                    com.panasonic.avc.cng.model.service.f r2 = com.panasonic.avc.cng.model.service.ServiceFactory.m9688b(r2, r1)
                     if (r2 == 0) goto L_0x0092
                     r4 = 3
                     com.panasonic.avc.cng.model.service.f$c r2 = r2.mo5319a(r4)

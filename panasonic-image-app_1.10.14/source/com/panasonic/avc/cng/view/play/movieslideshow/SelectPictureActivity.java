@@ -13,9 +13,9 @@ import com.panasonic.avc.cng.view.p072a.C2308e;
 import com.panasonic.avc.cng.view.p072a.C2313g;
 import com.panasonic.avc.cng.view.p072a.C2316j;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
-import com.panasonic.avc.cng.view.parts.C4245t.C4252c;
-import com.panasonic.avc.cng.view.parts.C4245t.C4255e;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
+import com.panasonic.avc.cng.view.parts.BrowserViewModel.C4252c;
+import com.panasonic.avc.cng.view.parts.BrowserViewModel.C4255e;
 import com.panasonic.avc.cng.view.parts.C4262x;
 import com.panasonic.avc.cng.view.play.movieslideshow.C4543e.C4546b;
 import com.panasonic.avc.cng.view.play.p076a.C4270a;
@@ -79,7 +79,7 @@ public class SelectPictureActivity extends C4270a {
         public void mo10008a(int i, int i2) {
             SelectPictureActivity.this._cameraUtil.mo6032a((Runnable) new Runnable() {
                 public void run() {
-                    C2331d.m10114a((Activity) SelectPictureActivity.this, C2328a.ON_EXCEEDED_MAX_SELECT_NUM, (Bundle) null);
+                    DialogFactory.m10114a((Activity) SelectPictureActivity.this, C2328a.ON_EXCEEDED_MAX_SELECT_NUM, (Bundle) null);
                 }
             });
         }
@@ -173,7 +173,7 @@ public class SelectPictureActivity extends C4270a {
         if (!isFinishing()) {
             int n = this.f14835a.mo10639j().mo9980n();
             if (n < 0) {
-                C2331d.m10114a((Activity) this, C2328a.ERROR_NO_TITLE_IMAGE_SELECT, (Bundle) null);
+                DialogFactory.m10114a((Activity) this, C2328a.ERROR_NO_TITLE_IMAGE_SELECT, (Bundle) null);
                 return;
             }
             C1878d c = ((C4262x) this.f14835a.mo10639j().mo9961d().get(n)).mo10029c();

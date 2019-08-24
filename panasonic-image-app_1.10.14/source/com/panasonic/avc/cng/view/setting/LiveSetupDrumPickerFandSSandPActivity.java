@@ -9,23 +9,23 @@ import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.C1892f;
 import com.panasonic.avc.cng.model.C1897j.C1903f;
 import com.panasonic.avc.cng.model.p052d.C1879a;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.view.common.C2820e;
 import com.panasonic.avc.cng.view.liveview.C2994e.C3116f;
 import com.panasonic.avc.cng.view.liveview.C3259j.C3269a;
 import com.panasonic.avc.cng.view.liveview.C3271k.C3336c;
 import com.panasonic.avc.cng.view.liveview.C3271k.C3337d;
 import com.panasonic.avc.cng.view.liveview.icon.C3206a;
-import com.panasonic.avc.cng.view.parts.C3993ae;
-import com.panasonic.avc.cng.view.parts.C3993ae.C4000a;
-import com.panasonic.avc.cng.view.parts.C4036ak;
+import com.panasonic.avc.cng.view.parts.DrumPickerFandSSandPLayout;
+import com.panasonic.avc.cng.view.parts.DrumPickerFandSSandPLayout.C4000a;
+import com.panasonic.avc.cng.view.parts.PShift;
 import com.panasonic.avc.cng.view.parts.C4257u;
-import com.panasonic.avc.cng.view.setting.C5804u.C5806a;
-import com.panasonic.avc.cng.view.setting.C5804u.C5812c;
-import com.panasonic.avc.cng.view.setting.C5804u.C5817d;
+import com.panasonic.avc.cng.view.setting.LiveSetupLumixMirrorlessBaseActivity.C5806a;
+import com.panasonic.avc.cng.view.setting.LiveSetupLumixMirrorlessBaseActivity.C5812c;
+import com.panasonic.avc.cng.view.setting.LiveSetupLumixMirrorlessBaseActivity.C5817d;
 import java.util.Locale;
 
-public class LiveSetupDrumPickerFandSSandPActivity extends C5804u {
+public class LiveSetupDrumPickerFandSSandPActivity extends LiveSetupLumixMirrorlessBaseActivity {
     /* access modifiers changed from: private */
 
     /* renamed from: A */
@@ -33,11 +33,11 @@ public class LiveSetupDrumPickerFandSSandPActivity extends C5804u {
     /* access modifiers changed from: private */
 
     /* renamed from: n */
-    public C3993ae f16044n;
+    public DrumPickerFandSSandPLayout f16044n;
     /* access modifiers changed from: private */
 
     /* renamed from: q */
-    public C5780o f16045q;
+    public LiveSetupDrumPickerFandSSViewModel f16045q;
 
     /* renamed from: r */
     private C5806a f16046r;
@@ -67,7 +67,7 @@ public class LiveSetupDrumPickerFandSSandPActivity extends C5804u {
     public long f16052x;
 
     /* renamed from: y */
-    private C4036ak f16053y;
+    private PShift f16053y;
     /* access modifiers changed from: private */
 
     /* renamed from: z */
@@ -118,7 +118,7 @@ public class LiveSetupDrumPickerFandSSandPActivity extends C5804u {
                                     LiveSetupDrumPickerFandSSandPActivity.this.f16048t = n;
                                     LiveSetupDrumPickerFandSSandPActivity.this.f16049u = g;
                                     LiveSetupDrumPickerFandSSandPActivity.this.f16050v = h;
-                                    C2261g.m9766b("LiveSetupDrumPickerFandSSandPActivity", String.format(Locale.getDefault(), "Av[Max:%d, Min:%d, Cur:%d], TvDenom[Max:%d, Min:%d, Cur:%d]", new Object[]{Long.valueOf(LiveSetupDrumPickerFandSSandPActivity.this.f16049u), Long.valueOf(LiveSetupDrumPickerFandSSandPActivity.this.f16050v), Long.valueOf(d), Long.valueOf(LiveSetupDrumPickerFandSSandPActivity.this.f16047s), Long.valueOf(LiveSetupDrumPickerFandSSandPActivity.this.f16048t), Long.valueOf(f)}));
+                                    ImageAppLog.warning("LiveSetupDrumPickerFandSSandPActivity", String.format(Locale.getDefault(), "Av[Max:%d, Min:%d, Cur:%d], TvDenom[Max:%d, Min:%d, Cur:%d]", new Object[]{Long.valueOf(LiveSetupDrumPickerFandSSandPActivity.this.f16049u), Long.valueOf(LiveSetupDrumPickerFandSSandPActivity.this.f16050v), Long.valueOf(d), Long.valueOf(LiveSetupDrumPickerFandSSandPActivity.this.f16047s), Long.valueOf(LiveSetupDrumPickerFandSSandPActivity.this.f16048t), Long.valueOf(f)}));
                                     LiveSetupDrumPickerFandSSandPActivity.this.f16044n.mo9484a(m, n, g, h);
                                     LiveSetupDrumPickerFandSSandPActivity.this.f16044n.mo9485a(LiveSetupDrumPickerFandSSandPActivity.this.f16052x, LiveSetupDrumPickerFandSSandPActivity.this.f16051w, true);
                                 }
@@ -148,7 +148,7 @@ public class LiveSetupDrumPickerFandSSandPActivity extends C5804u {
                                 LiveSetupDrumPickerFandSSandPActivity.this.f16049u = (long) fVar.f5760e.mo4964g();
                                 LiveSetupDrumPickerFandSSandPActivity.this.f16050v = (long) fVar.f5760e.mo4965h();
                             }
-                            C2261g.m9770d("LiveSetupDrumPickerFandSSandPActivity", String.format(Locale.getDefault(), "AvDenom[%d], TvDenom[%d]", new Object[]{Short.valueOf(fVar.f5760e.mo4959c()), Short.valueOf(fVar.f5760e.mo4961e())}));
+                            ImageAppLog.verbose("LiveSetupDrumPickerFandSSandPActivity", String.format(Locale.getDefault(), "AvDenom[%d], TvDenom[%d]", new Object[]{Short.valueOf(fVar.f5760e.mo4959c()), Short.valueOf(fVar.f5760e.mo4961e())}));
                             if (LiveSetupDrumPickerFandSSandPActivity.this.f16051w != ((long) fVar.f5760e.mo4959c()) || LiveSetupDrumPickerFandSSandPActivity.this.f16052x != ((long) fVar.f5760e.mo4961e())) {
                                 LiveSetupDrumPickerFandSSandPActivity.this.f16044n.mo9484a((long) fVar.f5760e.mo4966i(), (long) fVar.f5760e.mo4967j(), (long) fVar.f5760e.mo4964g(), (long) fVar.f5760e.mo4965h());
                                 LiveSetupDrumPickerFandSSandPActivity.this.f16044n.mo9485a((long) fVar.f5760e.mo4961e(), (long) fVar.f5760e.mo4959c(), false);
@@ -186,9 +186,9 @@ public class LiveSetupDrumPickerFandSSandPActivity extends C5804u {
             this.f17831g.mo7868a((C3336c) aVar);
         }
         this.f16046r = new C5822e();
-        this.f16045q = new C5780o(this._context, this._handler, this.f16046r);
-        this.f16053y = new C4036ak(this.f16045q);
-        this.f16044n = new C3993ae(this._context, this, this.f16053y, this.f16054z, this.f16043A);
+        this.f16045q = new LiveSetupDrumPickerFandSSViewModel(this._context, this._handler, this.f16046r);
+        this.f16053y = new PShift(this.f16045q);
+        this.f16044n = new DrumPickerFandSSandPLayout(this._context, this, this.f16053y, this.f16054z, this.f16043A);
         this.f16044n.mo9483a();
         this.f16044n.setDrumPickerSettingListener(new C4000a() {
             /* renamed from: a */

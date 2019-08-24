@@ -297,13 +297,13 @@
     iput-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ai;->p:[Ljava/lang/String;
 
     .line 276
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ai;->f:Lcom/panasonic/avc/cng/core/c/s;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ai;->f:Lcom/panasonic/avc/cng/core/c/Picmate;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/ai;->o:[Ljava/lang/String;
 
     iget-object v2, p0, Lcom/panasonic/avc/cng/view/setting/ai;->p:[Ljava/lang/String;
 
-    invoke-virtual {v0, v1, v2}, Lcom/panasonic/avc/cng/core/c/s;->a([Ljava/lang/String;[Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Lcom/panasonic/avc/cng/core/c/Picmate;->a([Ljava/lang/String;[Ljava/lang/String;)V
 
     .line 277
     return-void

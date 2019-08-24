@@ -7,7 +7,7 @@ import com.panasonic.avc.cng.model.C1892f;
 import com.panasonic.avc.cng.model.p051c.C1835a;
 import com.panasonic.avc.cng.model.p051c.C1844d;
 import com.panasonic.avc.cng.model.service.C1985b;
-import com.panasonic.avc.cng.model.service.C2253z;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
 import com.panasonic.avc.cng.p038a.C1342a;
 import com.panasonic.avc.cng.p038a.C1344c;
 import com.panasonic.avc.cng.view.setting.C5541am.C5555h;
@@ -114,7 +114,7 @@ public class C5823v extends C1342a implements C5555h {
         if (C1712b.m6919c() != null) {
             this.f17872m = C1712b.m6919c().mo4896a();
             if (this.f17872m != null) {
-                C1985b a = C2253z.m9679a(this.f17871l, this.f17872m);
+                C1985b a = ServiceFactory.m9679a(this.f17871l, this.f17872m);
                 if (a != null) {
                     this.f17874o = a.mo5189b();
                 }

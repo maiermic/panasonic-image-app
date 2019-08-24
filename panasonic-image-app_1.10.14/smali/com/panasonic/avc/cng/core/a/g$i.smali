@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/panasonic/avc/cng/core/a/g;
+    value = Lcom/panasonic/avc/cng/core/a/FocusCommand;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

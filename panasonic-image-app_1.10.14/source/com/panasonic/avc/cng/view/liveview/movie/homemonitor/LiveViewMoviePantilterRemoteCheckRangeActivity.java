@@ -7,10 +7,10 @@ import android.os.Bundle;
 import android.view.Menu;
 import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.C1712b;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.util.C2274o;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -34,7 +34,7 @@ public class LiveViewMoviePantilterRemoteCheckRangeActivity extends C3614a {
         C1712b.m6914a((Activity) this);
         super.onCreate(bundle);
         if (isLog()) {
-            C2261g.m9770d(GET_TAG(), "onCreate()");
+            ImageAppLog.verbose(GET_TAG(), "onCreate()");
         }
         setContentView(R.layout.activity_liveview_movie_pantilter_check_range);
         mo8557a(2, false, 1, "check");
@@ -43,12 +43,12 @@ public class LiveViewMoviePantilterRemoteCheckRangeActivity extends C3614a {
             this._remoteBinder.mo8576g(this, this._remoteViewModel);
         }
         if (this._remoteViewModel != null && !C2274o.m9889M(this._remoteViewModel.mo8582E())) {
-            C2261g.m9770d(GET_TAG(), "onCreate() start");
+            ImageAppLog.verbose(GET_TAG(), "onCreate() start");
             this._remoteViewModel.mo8591N();
         } else if (isLog()) {
-            C2261g.m9770d(GET_TAG(), "onCreate() continued");
+            ImageAppLog.verbose(GET_TAG(), "onCreate() continued");
         }
-        C2331d.m10114a((Activity) this, C2328a.ON_PROGRESS, (Bundle) null);
+        DialogFactory.m10114a((Activity) this, C2328a.ON_PROGRESS, (Bundle) null);
         this._remoteViewModel.mo8618d(this._context.getText(R.string.cmn_msg_just_a_moment).toString());
         this._resultBundle.putBoolean("PantilterCheckRange", true);
         this.f11650g = new Timer();
@@ -59,7 +59,7 @@ public class LiveViewMoviePantilterRemoteCheckRangeActivity extends C3614a {
                     LiveViewMoviePantilterRemoteCheckRangeActivity.this.f11650g = null;
                     LiveViewMoviePantilterRemoteCheckRangeActivity.this._cameraUtil.mo6032a((Runnable) new Runnable() {
                         public void run() {
-                            C2261g.m9770d(LiveViewMoviePantilterRemoteCheckRangeActivity.this.GET_TAG(), "Finish!!");
+                            ImageAppLog.verbose(LiveViewMoviePantilterRemoteCheckRangeActivity.this.GET_TAG(), "Finish!!");
                             LiveViewMoviePantilterRemoteCheckRangeActivity.this.finish();
                         }
                     });
@@ -67,8 +67,8 @@ public class LiveViewMoviePantilterRemoteCheckRangeActivity extends C3614a {
                     if (!LiveViewMoviePantilterRemoteCheckRangeActivity.this.f11651h.booleanValue() && C2274o.m9890N(LiveViewMoviePantilterRemoteCheckRangeActivity.this._remoteViewModel.mo8582E())) {
                         LiveViewMoviePantilterRemoteCheckRangeActivity.this.f11651h = Boolean.valueOf(true);
                     }
-                } else if (C2331d.m10125b((Activity) LiveViewMoviePantilterRemoteCheckRangeActivity.this, C2328a.ON_PROGRESS)) {
-                    C2331d.m10100a((Activity) LiveViewMoviePantilterRemoteCheckRangeActivity.this);
+                } else if (DialogFactory.m10125b((Activity) LiveViewMoviePantilterRemoteCheckRangeActivity.this, C2328a.ON_PROGRESS)) {
+                    DialogFactory.m10100a((Activity) LiveViewMoviePantilterRemoteCheckRangeActivity.this);
                 }
             }
         }, 2000, 500);
@@ -77,13 +77,13 @@ public class LiveViewMoviePantilterRemoteCheckRangeActivity extends C3614a {
     /* access modifiers changed from: protected */
     public void onPause() {
         if (isLog()) {
-            C2261g.m9770d(GET_TAG(), "onPause()");
+            ImageAppLog.verbose(GET_TAG(), "onPause()");
         }
         if (this.f11650g != null) {
             this.f11650g.cancel();
             this.f11650g = null;
         }
-        C2331d.m10100a((Activity) this);
+        DialogFactory.m10100a((Activity) this);
         super.onPause();
     }
 

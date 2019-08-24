@@ -71,7 +71,7 @@
 
     move-result-object v1
 
-    invoke-static {v1}, Lcom/panasonic/avc/cng/model/service/z;->l(Landroid/content/Context;)Lcom/panasonic/avc/cng/model/service/t;
+    invoke-static {v1}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->l(Landroid/content/Context;)Lcom/panasonic/avc/cng/model/service/t;
 
     move-result-object v1
 
@@ -181,7 +181,7 @@
     if-eqz v0, :cond_4
 
     .line 1690
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
@@ -191,7 +191,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/model/g;->a(Lcom/panasonic/avc/cng/model/f;)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/model/DeviceManager;->a(Lcom/panasonic/avc/cng/model/f;)V
 
     .line 1697
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c$23;->b:Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c;
@@ -202,11 +202,11 @@
 
     move-result-object v1
 
-    invoke-interface {v1}, Lcom/panasonic/avc/cng/model/service/t;->f()Lcom/panasonic/avc/cng/model/c/e;
+    invoke-interface {v1}, Lcom/panasonic/avc/cng/model/service/t;->f()Lcom/panasonic/avc/cng/model/c/CameraStatus;
 
     move-result-object v1
 
-    iput-object v1, v0, Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c;->h:Lcom/panasonic/avc/cng/model/c/e;
+    iput-object v1, v0, Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c;->h:Lcom/panasonic/avc/cng/model/c/CameraStatus;
 
     .line 1700
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c$23;->b:Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c;
@@ -226,7 +226,7 @@
     .line 1703
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c$23;->b:Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c;
 
-    new-instance v1, Lcom/panasonic/avc/cng/core/a/ag;
+    new-instance v1, Lcom/panasonic/avc/cng/core/a/RecordVianaCommand;
 
     iget-object v2, p0, Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c$23;->b:Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c;
 
@@ -236,9 +236,9 @@
 
     iget-object v2, v2, Lcom/panasonic/avc/cng/model/f;->d:Ljava/lang/String;
 
-    invoke-direct {v1, v2}, Lcom/panasonic/avc/cng/core/a/ag;-><init>(Ljava/lang/String;)V
+    invoke-direct {v1, v2}, Lcom/panasonic/avc/cng/core/a/RecordVianaCommand;-><init>(Ljava/lang/String;)V
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c;->a(Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c;Lcom/panasonic/avc/cng/core/a/ag;)Lcom/panasonic/avc/cng/core/a/ag;
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c;->a(Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c;Lcom/panasonic/avc/cng/core/a/RecordVianaCommand;)Lcom/panasonic/avc/cng/core/a/RecordVianaCommand;
 
     .line 1704
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c$23;->b:Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c;
@@ -252,7 +252,7 @@
     .line 1705
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c$23;->b:Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c;
 
-    new-instance v1, Lcom/panasonic/avc/cng/core/a/ac;
+    new-instance v1, Lcom/panasonic/avc/cng/core/a/PantiluterVianaCommand;
 
     iget-object v2, p0, Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c$23;->b:Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c;
 
@@ -262,9 +262,9 @@
 
     iget-object v2, v2, Lcom/panasonic/avc/cng/model/f;->d:Ljava/lang/String;
 
-    invoke-direct {v1, v2}, Lcom/panasonic/avc/cng/core/a/ac;-><init>(Ljava/lang/String;)V
+    invoke-direct {v1, v2}, Lcom/panasonic/avc/cng/core/a/PantiluterVianaCommand;-><init>(Ljava/lang/String;)V
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c;->a(Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c;Lcom/panasonic/avc/cng/core/a/ac;)Lcom/panasonic/avc/cng/core/a/ac;
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c;->a(Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c;Lcom/panasonic/avc/cng/core/a/PantiluterVianaCommand;)Lcom/panasonic/avc/cng/core/a/PantiluterVianaCommand;
 
     .line 1708
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c$23;->b:Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c;
@@ -288,7 +288,7 @@
 
     const-string v3, "\u898b\u5b88\u308a\u3000\u30ea\u30c8\u30e9\u30a4\u30e2\u30fc\u30c9"
 
-    invoke-static {v2, v3}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v2, v3}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 1652
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
@@ -333,7 +333,7 @@
 
     const-string v5, "\uff36\uff49\uff41\uff4e\uff41\u30bb\u30c3\u30c8\u30a2\u30c3\u30d7\u5931\u6557"
 
-    invoke-static {v4, v5}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v4, v5}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 1665
     iget-object v4, p0, Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c$23;->b:Lcom/panasonic/avc/cng/view/liveview/movie/homemonitor/c;
@@ -371,7 +371,7 @@
 
     const-string v5, "\uff36\uff49\uff41\uff4e\uff41\u30bb\u30c3\u30c8\u30a2\u30c3\u30d7\u6210\u529f"
 
-    invoke-static {v4, v5}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v4, v5}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_1
 

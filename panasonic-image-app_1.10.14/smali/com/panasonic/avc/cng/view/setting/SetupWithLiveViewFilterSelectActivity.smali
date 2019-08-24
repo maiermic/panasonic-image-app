@@ -6,7 +6,7 @@
 # instance fields
 .field private l:Lcom/panasonic/avc/cng/view/parts/ac;
 
-.field private m:Lcom/panasonic/avc/cng/view/setting/as;
+.field private m:Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewFilterSelectViewModel;
 
 
 # direct methods
@@ -20,12 +20,12 @@
     return-void
 .end method
 
-.method static synthetic a(Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewFilterSelectActivity;)Lcom/panasonic/avc/cng/view/setting/as;
+.method static synthetic a(Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewFilterSelectActivity;)Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewFilterSelectViewModel;
     .locals 1
 
     .prologue
     .line 20
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewFilterSelectActivity;->m:Lcom/panasonic/avc/cng/view/setting/as;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewFilterSelectActivity;->m:Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewFilterSelectViewModel;
 
     return-object v0
 .end method
@@ -59,19 +59,19 @@
 
     .prologue
     .line 77
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewFilterSelectActivity;->m:Lcom/panasonic/avc/cng/view/setting/as;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewFilterSelectActivity;->m:Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewFilterSelectViewModel;
 
     if-eqz v0, :cond_0
 
     .line 78
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewFilterSelectActivity;->m:Lcom/panasonic/avc/cng/view/setting/as;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewFilterSelectActivity;->m:Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewFilterSelectViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/as;->a()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewFilterSelectViewModel;->a()V
 
     .line 79
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewFilterSelectActivity;->m:Lcom/panasonic/avc/cng/view/setting/as;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewFilterSelectActivity;->m:Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewFilterSelectViewModel;
 
     .line 81
     :cond_0
@@ -102,14 +102,14 @@
     invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/at;->f()V
 
     .line 103
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewFilterSelectActivity;->m:Lcom/panasonic/avc/cng/view/setting/as;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewFilterSelectActivity;->m:Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewFilterSelectViewModel;
 
     if-eqz v0, :cond_0
 
     .line 104
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewFilterSelectActivity;->m:Lcom/panasonic/avc/cng/view/setting/as;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewFilterSelectActivity;->m:Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewFilterSelectViewModel;
 
-    invoke-virtual {v0, v1, v1, v1}, Lcom/panasonic/avc/cng/view/setting/as;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/setting/u$a;)V
+    invoke-virtual {v0, v1, v1, v1}, Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewFilterSelectViewModel;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/setting/u$a;)V
 
     .line 106
     :cond_0
@@ -157,7 +157,7 @@
     invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/at;->onCreate(Landroid/os/Bundle;)V
 
     .line 40
-    new-instance v0, Lcom/panasonic/avc/cng/view/setting/as;
+    new-instance v0, Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewFilterSelectViewModel;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewFilterSelectActivity;->_context:Landroid/content/Context;
 
@@ -167,18 +167,18 @@
 
     iget-object v4, p0, Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewFilterSelectActivity;->c:Lcom/panasonic/avc/cng/view/setting/am$h;
 
-    invoke-direct {v0, v1, v2, v3, v4}, Lcom/panasonic/avc/cng/view/setting/as;-><init>(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/setting/am;Lcom/panasonic/avc/cng/view/setting/am$h;)V
+    invoke-direct {v0, v1, v2, v3, v4}, Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewFilterSelectViewModel;-><init>(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/setting/am;Lcom/panasonic/avc/cng/view/setting/am$h;)V
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewFilterSelectActivity;->m:Lcom/panasonic/avc/cng/view/setting/as;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewFilterSelectActivity;->m:Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewFilterSelectViewModel;
 
     .line 46
     new-instance v0, Lcom/panasonic/avc/cng/view/parts/ac;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewFilterSelectActivity;->_context:Landroid/content/Context;
 
-    iget-object v2, p0, Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewFilterSelectActivity;->m:Lcom/panasonic/avc/cng/view/setting/as;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewFilterSelectActivity;->m:Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewFilterSelectViewModel;
 
-    invoke-direct {v0, v1, p0, v2}, Lcom/panasonic/avc/cng/view/parts/ac;-><init>(Landroid/content/Context;Landroid/app/Activity;Lcom/panasonic/avc/cng/view/setting/as;)V
+    invoke-direct {v0, v1, p0, v2}, Lcom/panasonic/avc/cng/view/parts/ac;-><init>(Landroid/content/Context;Landroid/app/Activity;Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewFilterSelectViewModel;)V
 
     iput-object v0, p0, Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewFilterSelectActivity;->l:Lcom/panasonic/avc/cng/view/parts/ac;
 

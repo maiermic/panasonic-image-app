@@ -14,10 +14,10 @@ import com.panasonic.avc.cng.p038a.C1343b;
 import com.panasonic.avc.cng.view.parts.C4066at;
 import com.panasonic.avc.cng.view.parts.C4145d;
 import com.panasonic.avc.cng.view.parts.C4230p;
-import com.panasonic.avc.cng.view.parts.C4245t;
-import com.panasonic.avc.cng.view.parts.C4245t.C4252c;
+import com.panasonic.avc.cng.view.parts.BrowserViewModel;
+import com.panasonic.avc.cng.view.parts.BrowserViewModel.C4252c;
 import com.panasonic.avc.cng.view.parts.C4261w;
-import com.panasonic.avc.cng.view.smartoperation.C5915b;
+import com.panasonic.avc.cng.view.smartoperation.GetSelectFormatList;
 
 /* renamed from: com.panasonic.avc.cng.view.play.highlight.a */
 public class C4484a {
@@ -27,7 +27,7 @@ public class C4484a {
     /* access modifiers changed from: private */
 
     /* renamed from: b */
-    public C4486b f14753b;
+    public HighlightViewModel f14753b;
     /* access modifiers changed from: private */
 
     /* renamed from: c */
@@ -52,7 +52,7 @@ public class C4484a {
     private C4230p f14760i = null;
 
     /* renamed from: a */
-    public void mo10525a(Activity activity, C4486b bVar) {
+    public void mo10525a(Activity activity, HighlightViewModel bVar) {
         this.f14752a = activity;
         this.f14753b = bVar;
         m17679c();
@@ -111,7 +111,7 @@ public class C4484a {
                 this.f14753b.f14766i.mo3216a(Boolean.valueOf(false));
                 return;
             }
-            C5915b i = this.f14753b.mo10534i();
+            GetSelectFormatList i = this.f14753b.mo10534i();
             if (i != null) {
                 C1867b c = i.mo12926f().mo9751c();
                 if (c != null) {
@@ -134,7 +134,7 @@ public class C4484a {
         }
         int firstVisiblePosition = this.f14754c.getFirstVisiblePosition();
         int lastVisiblePosition = this.f14754c.getLastVisiblePosition();
-        C4245t h = this.f14753b.mo10533h();
+        BrowserViewModel h = this.f14753b.mo10533h();
         h.getClass();
         return new C4252c(firstVisiblePosition, lastVisiblePosition);
     }

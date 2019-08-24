@@ -10,23 +10,23 @@ import android.view.View.OnClickListener;
 import android.widget.ListView;
 import com.panasonic.avc.cng.core.p046c.C1651j;
 import com.panasonic.avc.cng.core.p046c.C1664n;
-import com.panasonic.avc.cng.core.p046c.C1671s;
+import com.panasonic.avc.cng.core.p046c.Picmate;
 import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.C1712b;
-import com.panasonic.avc.cng.model.p051c.C1846e;
-import com.panasonic.avc.cng.model.service.C2253z;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.model.p051c.CameraStatus;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.view.cameraconnect.GuidanceMenuActivity;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
-import com.panasonic.avc.cng.view.setting.C5537al;
-import com.panasonic.avc.cng.view.setting.C5537al.C5540a;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
+import com.panasonic.avc.cng.view.setting.SettingMenuBaseActivity;
+import com.panasonic.avc.cng.view.setting.SettingMenuBaseActivity.C5540a;
 import com.panasonic.avc.cng.view.smartoperation.C5933f.C5936b;
 import com.panasonic.avc.cng.view.smartoperation.PicmateUnsentImageInfoActivity.C5887a;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PicmateUnsentImageListActivity extends C5537al implements C5935a {
+public class PicmateUnsentImageListActivity extends SettingMenuBaseActivity implements C5935a {
 
     /* renamed from: com.panasonic.avc.cng.view.smartoperation.PicmateUnsentImageListActivity$a */
     private class C5889a implements OnClickListener {
@@ -158,7 +158,7 @@ public class PicmateUnsentImageListActivity extends C5537al implements C5935a {
     public void mo6889b() {
         super.mo6889b();
         findViewById(R.id.mainBrowserButton).setSelected(true);
-        C1671s a = C2253z.m9676a(this._context);
+        Picmate a = ServiceFactory.m9676a(this._context);
         try {
             C5933f fVar = new C5933f(this._context);
             fVar.mo12957a(this);
@@ -187,7 +187,7 @@ public class PicmateUnsentImageListActivity extends C5537al implements C5935a {
     }
 
     public void OnClickLiveView(View view) {
-        C2261g.m9760a(3149826, "");
+        ImageAppLog.m9760a(3149826, "");
         if (!ShowDmsErrorIfReceiving()) {
             this._resultBundle.putString("MoveToOtherKey", "LiveView");
             finish();
@@ -195,11 +195,11 @@ public class PicmateUnsentImageListActivity extends C5537al implements C5935a {
     }
 
     public void OnClickBrowser(View view) {
-        C2261g.m9760a(3149827, "");
+        ImageAppLog.m9760a(3149827, "");
     }
 
     public void OnClickHome(View view) {
-        C2261g.m9760a(3149825, "");
+        ImageAppLog.m9760a(3149825, "");
         if (!ShowDmsErrorIfReceiving()) {
             startActivity(new Intent(this._context, GuidanceMenuActivity.class));
             finish();
@@ -207,7 +207,7 @@ public class PicmateUnsentImageListActivity extends C5537al implements C5935a {
     }
 
     public void OnClickSetup(View view) {
-        C2261g.m9760a(3149828, "");
+        ImageAppLog.m9760a(3149828, "");
         openOptionsMenu();
     }
 
@@ -271,7 +271,7 @@ public class PicmateUnsentImageListActivity extends C5537al implements C5935a {
         return null;
     }
 
-    public void DmsBase_OnGetState(C1846e eVar, boolean z, final int i) {
+    public void DmsBase_OnGetState(CameraStatus eVar, boolean z, final int i) {
         if (z) {
             this._resultBundle.putBoolean("DeviceDisconnectedKey", true);
             this._handler.post(new Runnable() {
@@ -288,7 +288,7 @@ public class PicmateUnsentImageListActivity extends C5537al implements C5935a {
                             aVar = C2328a.ON_DISCONNECT_FINISH;
                             break;
                     }
-                    C2331d.m10114a((Activity) PicmateUnsentImageListActivity.this, aVar, (Bundle) null);
+                    DialogFactory.m10114a((Activity) PicmateUnsentImageListActivity.this, aVar, (Bundle) null);
                 }
             });
         }

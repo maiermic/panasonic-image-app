@@ -23,24 +23,24 @@ import com.panasonic.avc.cng.model.C1892f;
 import com.panasonic.avc.cng.model.p052d.C1879a;
 import com.panasonic.avc.cng.model.service.C1985b;
 import com.panasonic.avc.cng.model.service.C1985b.C1986a;
-import com.panasonic.avc.cng.model.service.C2253z;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.view.common.C2820e;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
 import com.panasonic.avc.cng.view.p073b.C2337e;
-import com.panasonic.avc.cng.view.parts.C4245t;
-import com.panasonic.avc.cng.view.parts.C4245t.C4252c;
-import com.panasonic.avc.cng.view.parts.C4245t.C4255e;
+import com.panasonic.avc.cng.view.parts.BrowserViewModel;
+import com.panasonic.avc.cng.view.parts.BrowserViewModel.C4252c;
+import com.panasonic.avc.cng.view.parts.BrowserViewModel.C4255e;
 import com.panasonic.avc.cng.view.parts.C4261w;
-import com.panasonic.avc.cng.view.setting.C5537al.C5540a;
-import com.panasonic.avc.cng.view.setting.C5658ax.C5670c;
+import com.panasonic.avc.cng.view.setting.SettingMenuBaseActivity.C5540a;
+import com.panasonic.avc.cng.view.setting.StopMotionViewModel.C5670c;
 
 public class MirrorlessStopmotionShotImageSelectionAnimeActivity extends C5741i {
     /* access modifiers changed from: private */
 
     /* renamed from: a */
-    public C5658ax f16376a;
+    public StopMotionViewModel f16376a;
 
     /* renamed from: b */
     private C5177b f16377b;
@@ -98,7 +98,7 @@ public class MirrorlessStopmotionShotImageSelectionAnimeActivity extends C5741i 
             if (MirrorlessStopmotionShotImageSelectionAnimeActivity.this._handler != null && !MirrorlessStopmotionShotImageSelectionAnimeActivity.this.isFinishing()) {
                 MirrorlessStopmotionShotImageSelectionAnimeActivity.this._handler.post(new Runnable() {
                     public void run() {
-                        C2331d.m10114a((Activity) MirrorlessStopmotionShotImageSelectionAnimeActivity.this, C2328a.ON_DISCONNECT_NO_FINISH, (Bundle) null);
+                        DialogFactory.m10114a((Activity) MirrorlessStopmotionShotImageSelectionAnimeActivity.this, C2328a.ON_DISCONNECT_NO_FINISH, (Bundle) null);
                     }
                 });
             }
@@ -118,7 +118,7 @@ public class MirrorlessStopmotionShotImageSelectionAnimeActivity extends C5741i 
                 MirrorlessStopmotionShotImageSelectionAnimeActivity.this.f16376a.f17505f.mo3216a(Boolean.valueOf(true));
                 MirrorlessStopmotionShotImageSelectionAnimeActivity.this._handler.post(new Runnable() {
                     public void run() {
-                        C2331d.m10114a((Activity) MirrorlessStopmotionShotImageSelectionAnimeActivity.this, C2328a.ON_CONTENT_NOT_EXIST, (Bundle) null);
+                        DialogFactory.m10114a((Activity) MirrorlessStopmotionShotImageSelectionAnimeActivity.this, C2328a.ON_CONTENT_NOT_EXIST, (Bundle) null);
                     }
                 });
             }
@@ -128,7 +128,7 @@ public class MirrorlessStopmotionShotImageSelectionAnimeActivity extends C5741i 
         public void mo10008a(int i, int i2) {
             MirrorlessStopmotionShotImageSelectionAnimeActivity.this._handler.post(new Runnable() {
                 public void run() {
-                    C2331d.m10114a((Activity) MirrorlessStopmotionShotImageSelectionAnimeActivity.this, C2328a.ON_EXCEEDED_MAX_SELECT_NUM, (Bundle) null);
+                    DialogFactory.m10114a((Activity) MirrorlessStopmotionShotImageSelectionAnimeActivity.this, C2328a.ON_EXCEEDED_MAX_SELECT_NUM, (Bundle) null);
                 }
             });
         }
@@ -140,7 +140,7 @@ public class MirrorlessStopmotionShotImageSelectionAnimeActivity extends C5741i 
             }
             int firstVisiblePosition = MirrorlessStopmotionShotImageSelectionAnimeActivity.this.f16379d.getFirstVisiblePosition();
             int lastVisiblePosition = MirrorlessStopmotionShotImageSelectionAnimeActivity.this.f16379d.getLastVisiblePosition();
-            C4245t k = MirrorlessStopmotionShotImageSelectionAnimeActivity.this.f16376a.mo12486k();
+            BrowserViewModel k = MirrorlessStopmotionShotImageSelectionAnimeActivity.this.f16376a.mo12486k();
             k.getClass();
             return new C4252c(firstVisiblePosition, lastVisiblePosition);
         }
@@ -185,7 +185,7 @@ public class MirrorlessStopmotionShotImageSelectionAnimeActivity extends C5741i 
             if (MirrorlessStopmotionShotImageSelectionAnimeActivity.this._handler != null) {
                 MirrorlessStopmotionShotImageSelectionAnimeActivity.this._handler.post(new Runnable() {
                     public void run() {
-                        C2331d.m10100a((Activity) MirrorlessStopmotionShotImageSelectionAnimeActivity.this);
+                        DialogFactory.m10100a((Activity) MirrorlessStopmotionShotImageSelectionAnimeActivity.this);
                     }
                 });
             }
@@ -198,15 +198,15 @@ public class MirrorlessStopmotionShotImageSelectionAnimeActivity extends C5741i 
 
         /* renamed from: d */
         public void mo11732d() {
-            C2331d.m10114a((Activity) MirrorlessStopmotionShotImageSelectionAnimeActivity.this, C2328a.ON_DIFF_QUALITY, (Bundle) null);
+            DialogFactory.m10114a((Activity) MirrorlessStopmotionShotImageSelectionAnimeActivity.this, C2328a.ON_DIFF_QUALITY, (Bundle) null);
         }
 
         /* renamed from: a */
         public void mo11729a(String str) {
             if (str.equalsIgnoreCase("high")) {
-                C2331d.m10114a((Activity) MirrorlessStopmotionShotImageSelectionAnimeActivity.this, C2328a.ON_DISCONNECT_BY_HIGH_TEMP_NO_FINISH, (Bundle) null);
+                DialogFactory.m10114a((Activity) MirrorlessStopmotionShotImageSelectionAnimeActivity.this, C2328a.ON_DISCONNECT_BY_HIGH_TEMP_NO_FINISH, (Bundle) null);
             } else if (str.equalsIgnoreCase("assert")) {
-                C2331d.m10114a((Activity) MirrorlessStopmotionShotImageSelectionAnimeActivity.this, C2328a.ON_ASEERT_TEMP_NO_FINISH, (Bundle) null);
+                DialogFactory.m10114a((Activity) MirrorlessStopmotionShotImageSelectionAnimeActivity.this, C2328a.ON_ASEERT_TEMP_NO_FINISH, (Bundle) null);
             }
         }
     }
@@ -224,7 +224,7 @@ public class MirrorlessStopmotionShotImageSelectionAnimeActivity extends C5741i 
         this._resultBundle = new Bundle();
         this.f16376a = C2820e.m11770a((Context) this, this._handler, (C4255e) this.f16378c, (C5670c) this.f16377b);
         if (this.f16376a == null) {
-            this.f16376a = new C5658ax(this, this._handler, this.f16378c, this.f16377b);
+            this.f16376a = new StopMotionViewModel(this, this._handler, this.f16378c, this.f16377b);
         }
         mo11710a();
     }
@@ -236,11 +236,11 @@ public class MirrorlessStopmotionShotImageSelectionAnimeActivity extends C5741i 
             if (this.f16376a.mo12479d()) {
                 this._handler.postDelayed(new Runnable() {
                     public void run() {
-                        C2331d.m10100a((Activity) MirrorlessStopmotionShotImageSelectionAnimeActivity.this);
+                        DialogFactory.m10100a((Activity) MirrorlessStopmotionShotImageSelectionAnimeActivity.this);
                     }
                 }, 2000);
             } else {
-                C2331d.m10114a((Activity) this, C2328a.WAIT_PROCESSING, (Bundle) null);
+                DialogFactory.m10114a((Activity) this, C2328a.WAIT_PROCESSING, (Bundle) null);
             }
             this.f16376a.mo12487l();
         }
@@ -249,7 +249,7 @@ public class MirrorlessStopmotionShotImageSelectionAnimeActivity extends C5741i 
     /* access modifiers changed from: protected */
     public void onResume() {
         if (this.f16376a != null) {
-            C2261g.m9763a("MirrorlessStopmotionShotImageSelectionAnimeActivity", "viewModel.Resume()");
+            ImageAppLog.debug("MirrorlessStopmotionShotImageSelectionAnimeActivity", "viewModel.Resume()");
             this.f16376a.mo12480e();
         }
         super.onResume();
@@ -260,7 +260,7 @@ public class MirrorlessStopmotionShotImageSelectionAnimeActivity extends C5741i 
     /* access modifiers changed from: protected */
     public void onPause() {
         if (this.f16376a != null) {
-            C2261g.m9763a("MirrorlessStopmotionShotImageSelectionAnimeActivity", "viewModel.Pause()");
+            ImageAppLog.debug("MirrorlessStopmotionShotImageSelectionAnimeActivity", "viewModel.Pause()");
             this.f16376a.mo12481f();
         }
         super.onPause();
@@ -293,7 +293,7 @@ public class MirrorlessStopmotionShotImageSelectionAnimeActivity extends C5741i 
     }
 
     public void finish() {
-        C2820e.m11798a((C5658ax) null);
+        C2820e.m11798a((StopMotionViewModel) null);
         if (this.f16376a != null) {
             this.f16376a.mo3205a();
             this.f16376a = null;
@@ -395,15 +395,15 @@ public class MirrorlessStopmotionShotImageSelectionAnimeActivity extends C5741i 
     private void m19916c() {
         C1892f a = C1712b.m6919c().mo4896a();
         if (a != null) {
-            C1985b a2 = C2253z.m9679a(this._context, a);
+            C1985b a2 = ServiceFactory.m9679a(this._context, a);
             if (a2 != null) {
                 a2.mo5185a((C1986a) new C1986a() {
                     /* renamed from: a */
                     public void mo5201a() {
                         MirrorlessStopmotionShotImageSelectionAnimeActivity.this._handler.post(new Runnable() {
                             public void run() {
-                                if (!C2331d.m10125b((Activity) MirrorlessStopmotionShotImageSelectionAnimeActivity.this, C2328a.ON_PROGRESS)) {
-                                    C2331d.m10114a((Activity) MirrorlessStopmotionShotImageSelectionAnimeActivity.this, C2328a.ON_PROGRESS, (Bundle) null);
+                                if (!DialogFactory.m10125b((Activity) MirrorlessStopmotionShotImageSelectionAnimeActivity.this, C2328a.ON_PROGRESS)) {
+                                    DialogFactory.m10114a((Activity) MirrorlessStopmotionShotImageSelectionAnimeActivity.this, C2328a.ON_PROGRESS, (Bundle) null);
                                 }
                             }
                         });
@@ -413,8 +413,8 @@ public class MirrorlessStopmotionShotImageSelectionAnimeActivity extends C5741i 
                     public void mo5202b() {
                         MirrorlessStopmotionShotImageSelectionAnimeActivity.this._handler.post(new Runnable() {
                             public void run() {
-                                if (C2331d.m10125b((Activity) MirrorlessStopmotionShotImageSelectionAnimeActivity.this, C2328a.ON_PROGRESS)) {
-                                    C2331d.m10100a((Activity) MirrorlessStopmotionShotImageSelectionAnimeActivity.this);
+                                if (DialogFactory.m10125b((Activity) MirrorlessStopmotionShotImageSelectionAnimeActivity.this, C2328a.ON_PROGRESS)) {
+                                    DialogFactory.m10100a((Activity) MirrorlessStopmotionShotImageSelectionAnimeActivity.this);
                                 }
                             }
                         });
@@ -424,8 +424,8 @@ public class MirrorlessStopmotionShotImageSelectionAnimeActivity extends C5741i 
                     public void mo5203c() {
                         MirrorlessStopmotionShotImageSelectionAnimeActivity.this._handler.post(new Runnable() {
                             public void run() {
-                                if (C2331d.m10125b((Activity) MirrorlessStopmotionShotImageSelectionAnimeActivity.this, C2328a.ON_PROGRESS)) {
-                                    C2331d.m10100a((Activity) MirrorlessStopmotionShotImageSelectionAnimeActivity.this);
+                                if (DialogFactory.m10125b((Activity) MirrorlessStopmotionShotImageSelectionAnimeActivity.this, C2328a.ON_PROGRESS)) {
+                                    DialogFactory.m10100a((Activity) MirrorlessStopmotionShotImageSelectionAnimeActivity.this);
                                 }
                             }
                         });

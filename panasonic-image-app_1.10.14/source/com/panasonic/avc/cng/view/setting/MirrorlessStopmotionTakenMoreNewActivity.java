@@ -23,11 +23,11 @@ import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.p052d.C1879a;
 import com.panasonic.avc.cng.view.common.C2820e;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
-import com.panasonic.avc.cng.view.setting.C5446ac.C5461b;
-import com.panasonic.avc.cng.view.setting.C5446ac.C5462c;
-import com.panasonic.avc.cng.view.setting.C5446ac.C5463d;
-import com.panasonic.avc.cng.view.setting.C5537al.C5540a;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
+import com.panasonic.avc.cng.view.setting.MirrorlessStopmotionMovieMakingViewModel.C5461b;
+import com.panasonic.avc.cng.view.setting.MirrorlessStopmotionMovieMakingViewModel.C5462c;
+import com.panasonic.avc.cng.view.setting.MirrorlessStopmotionMovieMakingViewModel.C5463d;
+import com.panasonic.avc.cng.view.setting.SettingMenuBaseActivity.C5540a;
 
 public class MirrorlessStopmotionTakenMoreNewActivity extends C5741i {
 
@@ -39,7 +39,7 @@ public class MirrorlessStopmotionTakenMoreNewActivity extends C5741i {
         /* access modifiers changed from: private */
 
         /* renamed from: b */
-        public C5446ac f16400b;
+        public MirrorlessStopmotionMovieMakingViewModel f16400b;
 
         /* renamed from: c */
         private C5461b f16401c;
@@ -66,7 +66,7 @@ public class MirrorlessStopmotionTakenMoreNewActivity extends C5741i {
                     C5181a.this.getActivity().startActivityForResult(intent, 7);
                     return;
                 }
-                C2331d.m10114a(C5181a.this.getActivity(), C2328a.ON_STOPMOTION_ERROR_SETTING_CMD_FINISH, (Bundle) null);
+                DialogFactory.m10114a(C5181a.this.getActivity(), C2328a.ON_STOPMOTION_ERROR_SETTING_CMD_FINISH, (Bundle) null);
             }
         }
 
@@ -76,7 +76,7 @@ public class MirrorlessStopmotionTakenMoreNewActivity extends C5741i {
             this.f16401c = new C5184a();
             this.f16400b = C2820e.m11765a((Context) getActivity(), this.f16399a, this.f16401c, (C5462c) null);
             if (this.f16400b == null) {
-                this.f16400b = new C5446ac(getActivity(), this.f16399a, this.f16401c);
+                this.f16400b = new MirrorlessStopmotionMovieMakingViewModel(getActivity(), this.f16399a, this.f16401c);
             }
             C2820e.m11788a(this.f16400b);
             addPreferencesFromResource(R.xml.mirrorless_stopmotion_setting_taken_more_new);
@@ -109,7 +109,7 @@ public class MirrorlessStopmotionTakenMoreNewActivity extends C5741i {
             super.onResume();
             this.f16400b = C2820e.m11765a((Context) getActivity(), this.f16399a, this.f16401c, (C5462c) null);
             if (this.f16400b == null) {
-                this.f16400b = new C5446ac(getActivity(), this.f16399a, this.f16401c);
+                this.f16400b = new MirrorlessStopmotionMovieMakingViewModel(getActivity(), this.f16399a, this.f16401c);
             }
             C2820e.m11788a(this.f16400b);
             if (C5540a.m20622a(getActivity())) {

@@ -5,7 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.ServiceConnection;
 import com.google.android.gms.common.internal.C0612ab;
-import com.google.android.gms.common.stats.C0679a;
+import com.google.android.gms.common.stats.ConnectionTracker;
 import com.google.android.gms.p032b.C0556r;
 
 /* renamed from: com.google.android.gms.d.bj */
@@ -32,7 +32,7 @@ public final class C0742bj implements ServiceConnection {
         intent.setComponent(new ComponentName("com.google.android.gms", "com.google.android.gms.analytics.service.AnalyticsService"));
         Context i = this.f1606a.mo1886i();
         intent.putExtra("app_package_name", i.getPackageName());
-        C0679a a = C0679a.m2525a();
+        ConnectionTracker a = ConnectionTracker.m2525a();
         synchronized (this) {
             this.f1607b = null;
             this.f1608c = true;
@@ -88,7 +88,7 @@ public final class C0742bj implements ServiceConnection {
             r1.mo1871b(r2)     // Catch:{ RemoteException -> 0x0091 }
         L_0x002b:
             if (r0 != 0) goto L_0x0072
-            com.google.android.gms.common.stats.C0679a.m2525a()     // Catch:{ IllegalArgumentException -> 0x008f }
+            com.google.android.gms.common.stats.ConnectionTracker.m2525a()     // Catch:{ IllegalArgumentException -> 0x008f }
             com.google.android.gms.d.bh r0 = r4.f1606a     // Catch:{ IllegalArgumentException -> 0x008f }
             android.content.Context r0 = r0.mo1886i()     // Catch:{ IllegalArgumentException -> 0x008f }
             com.google.android.gms.d.bh r1 = r4.f1606a     // Catch:{ IllegalArgumentException -> 0x008f }

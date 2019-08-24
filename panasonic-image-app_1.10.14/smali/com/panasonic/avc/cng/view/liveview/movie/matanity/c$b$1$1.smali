@@ -45,18 +45,18 @@
 
     iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/c$b$1;->b:Lcom/panasonic/avc/cng/view/liveview/movie/matanity/c$b;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/c$b;->a:Lcom/panasonic/avc/cng/view/liveview/movie/matanity/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/c$b;->a:Lcom/panasonic/avc/cng/view/liveview/movie/matanity/LiveViewMovieMatanityViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/c;->K(Lcom/panasonic/avc/cng/view/liveview/movie/matanity/c;)V
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/LiveViewMovieMatanityViewModel;->K(Lcom/panasonic/avc/cng/view/liveview/movie/matanity/LiveViewMovieMatanityViewModel;)V
 
     .line 2255
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/c$b$1$1;->a:Lcom/panasonic/avc/cng/view/liveview/movie/matanity/c$b$1;
 
     iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/c$b$1;->b:Lcom/panasonic/avc/cng/view/liveview/movie/matanity/c$b;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/c$b;->a:Lcom/panasonic/avc/cng/view/liveview/movie/matanity/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/c$b;->a:Lcom/panasonic/avc/cng/view/liveview/movie/matanity/LiveViewMovieMatanityViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/c;->y(Lcom/panasonic/avc/cng/view/liveview/movie/matanity/c;)V
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/liveview/movie/matanity/LiveViewMovieMatanityViewModel;->y(Lcom/panasonic/avc/cng/view/liveview/movie/matanity/LiveViewMovieMatanityViewModel;)V
 
     .line 2256
     return-void

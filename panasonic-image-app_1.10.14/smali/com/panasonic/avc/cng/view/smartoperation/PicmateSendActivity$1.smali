@@ -53,7 +53,7 @@
 
     const v2, 0x7f0f02a7
 
-    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/d;->b(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;I)Landroid/graphics/drawable/Drawable;
+    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->b(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;I)Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
 

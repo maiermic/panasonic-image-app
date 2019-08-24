@@ -6,7 +6,7 @@
 # instance fields
 .field private a:Landroid/app/Activity;
 
-.field private b:Lcom/panasonic/avc/cng/view/threebox/c;
+.field private b:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;
 
 .field private c:Lcom/panasonic/avc/cng/view/parts/l;
 
@@ -39,7 +39,7 @@
     iput-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/a;->a:Landroid/app/Activity;
 
     .line 17
-    iput-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/a;->b:Lcom/panasonic/avc/cng/view/threebox/c;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/a;->b:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;
 
     .line 19
     iput-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/a;->c:Lcom/panasonic/avc/cng/view/parts/l;
@@ -71,7 +71,7 @@
 
 
 # virtual methods
-.method public a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/threebox/c;)V
+.method public a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;)V
     .locals 4
 
     .prologue
@@ -79,7 +79,7 @@
     iput-object p1, p0, Lcom/panasonic/avc/cng/view/threebox/a;->a:Landroid/app/Activity;
 
     .line 47
-    iput-object p2, p0, Lcom/panasonic/avc/cng/view/threebox/a;->b:Lcom/panasonic/avc/cng/view/threebox/c;
+    iput-object p2, p0, Lcom/panasonic/avc/cng/view/threebox/a;->b:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;
 
     .line 51
     new-instance v1, Lcom/panasonic/avc/cng/view/parts/l;
@@ -99,9 +99,9 @@
     iput-object v1, p0, Lcom/panasonic/avc/cng/view/threebox/a;->c:Lcom/panasonic/avc/cng/view/parts/l;
 
     .line 54
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/a;->b:Lcom/panasonic/avc/cng/view/threebox/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/a;->b:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/threebox/c;->l:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;->l:Lcom/panasonic/avc/cng/a/c;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/threebox/a;->c:Lcom/panasonic/avc/cng/view/parts/l;
 
@@ -127,9 +127,9 @@
     iput-object v1, p0, Lcom/panasonic/avc/cng/view/threebox/a;->d:Lcom/panasonic/avc/cng/view/parts/p;
 
     .line 62
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/a;->b:Lcom/panasonic/avc/cng/view/threebox/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/a;->b:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/threebox/c;->c:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;->c:Lcom/panasonic/avc/cng/a/c;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/threebox/a;->d:Lcom/panasonic/avc/cng/view/parts/p;
 
@@ -155,9 +155,9 @@
     iput-object v1, p0, Lcom/panasonic/avc/cng/view/threebox/a;->e:Lcom/panasonic/avc/cng/view/parts/p;
 
     .line 70
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/a;->b:Lcom/panasonic/avc/cng/view/threebox/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/a;->b:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/threebox/c;->d:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;->d:Lcom/panasonic/avc/cng/a/c;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/threebox/a;->e:Lcom/panasonic/avc/cng/view/parts/p;
 
@@ -183,9 +183,9 @@
     iput-object v1, p0, Lcom/panasonic/avc/cng/view/threebox/a;->f:Lcom/panasonic/avc/cng/view/parts/p;
 
     .line 78
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/a;->b:Lcom/panasonic/avc/cng/view/threebox/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/a;->b:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/threebox/c;->e:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;->e:Lcom/panasonic/avc/cng/a/c;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/threebox/a;->f:Lcom/panasonic/avc/cng/view/parts/p;
 
@@ -211,9 +211,9 @@
     iput-object v1, p0, Lcom/panasonic/avc/cng/view/threebox/a;->g:Lcom/panasonic/avc/cng/view/parts/p;
 
     .line 86
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/a;->b:Lcom/panasonic/avc/cng/view/threebox/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/a;->b:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/threebox/c;->f:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;->f:Lcom/panasonic/avc/cng/a/c;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/threebox/a;->g:Lcom/panasonic/avc/cng/view/parts/p;
 
@@ -239,9 +239,9 @@
     iput-object v1, p0, Lcom/panasonic/avc/cng/view/threebox/a;->h:Lcom/panasonic/avc/cng/view/parts/p;
 
     .line 94
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/a;->b:Lcom/panasonic/avc/cng/view/threebox/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/a;->b:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/threebox/c;->g:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;->g:Lcom/panasonic/avc/cng/a/c;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/threebox/a;->h:Lcom/panasonic/avc/cng/view/parts/p;
 
@@ -267,9 +267,9 @@
     iput-object v1, p0, Lcom/panasonic/avc/cng/view/threebox/a;->i:Lcom/panasonic/avc/cng/view/parts/r;
 
     .line 102
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/a;->b:Lcom/panasonic/avc/cng/view/threebox/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/a;->b:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/threebox/c;->m:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;->m:Lcom/panasonic/avc/cng/a/c;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/threebox/a;->i:Lcom/panasonic/avc/cng/view/parts/r;
 
@@ -297,9 +297,9 @@
     iput-object v1, p0, Lcom/panasonic/avc/cng/view/threebox/a;->j:Lcom/panasonic/avc/cng/view/parts/bp;
 
     .line 110
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/a;->b:Lcom/panasonic/avc/cng/view/threebox/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/a;->b:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/threebox/c;->n:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;->n:Lcom/panasonic/avc/cng/a/c;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/threebox/a;->j:Lcom/panasonic/avc/cng/view/parts/bp;
 

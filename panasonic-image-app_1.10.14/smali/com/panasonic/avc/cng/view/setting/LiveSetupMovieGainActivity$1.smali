@@ -131,7 +131,7 @@
     .line 92
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieGainActivity$1;->a:Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieGainActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieGainActivity;->a(Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieGainActivity;)Lcom/panasonic/avc/cng/view/setting/x;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieGainActivity;->a(Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieGainActivity;)Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieGainViewModel;
 
     move-result-object v0
 
@@ -140,11 +140,11 @@
     .line 94
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieGainActivity$1;->a:Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieGainActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieGainActivity;->a(Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieGainActivity;)Lcom/panasonic/avc/cng/view/setting/x;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieGainActivity;->a(Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieGainActivity;)Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieGainViewModel;
 
     move-result-object v0
 
-    invoke-virtual {v0, p1}, Lcom/panasonic/avc/cng/view/setting/x;->a(Ljava/lang/String;)V
+    invoke-virtual {v0, p1}, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieGainViewModel;->a(Ljava/lang/String;)V
 
     .line 96
     :cond_0

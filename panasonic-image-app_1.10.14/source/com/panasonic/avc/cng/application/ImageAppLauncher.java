@@ -5,8 +5,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import com.panasonic.avc.cng.application.p039a.C1350a;
-import com.panasonic.avc.cng.util.C2260f;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppCmdLog;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.view.p072a.C2316j;
 import com.panasonic.avc.cng.view.smartoperation.ContentPlayerActivity;
 
@@ -75,10 +75,10 @@ public class ImageAppLauncher extends C1350a {
                 boolean z2 = extras.getBoolean("IsEnableLogSD", false);
                 boolean z3 = extras.getBoolean("IsEnableLogCmd", false);
                 boolean z4 = extras.getBoolean("IsEnableLogCmdSD", false);
-                C2261g.m9764a(z);
-                C2261g.m9767b(z2);
-                C2260f.m9753a(z3);
-                C2260f.m9755b(z4);
+                ImageAppLog.m9764a(z);
+                ImageAppLog.m9767b(z2);
+                ImageAppCmdLog.m9753a(z3);
+                ImageAppCmdLog.m9755b(z4);
             }
         }
     }

@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/model/e/b;->onReceive(Landroid/content/Context;Landroid/content/Intent;)V
+    value = Lcom/panasonic/avc/cng/model/e/WifiSimpleReceiver;->onReceive(Landroid/content/Context;Landroid/content/Intent;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -22,16 +22,16 @@
 
 .field final synthetic b:Z
 
-.field final synthetic c:Lcom/panasonic/avc/cng/model/e/b;
+.field final synthetic c:Lcom/panasonic/avc/cng/model/e/WifiSimpleReceiver;
 
 
 # direct methods
-.method constructor <init>(Lcom/panasonic/avc/cng/model/e/b;Lcom/panasonic/avc/cng/model/e/a$a;Z)V
+.method constructor <init>(Lcom/panasonic/avc/cng/model/e/WifiSimpleReceiver;Lcom/panasonic/avc/cng/model/e/a$a;Z)V
     .locals 0
 
     .prologue
     .line 356
-    iput-object p1, p0, Lcom/panasonic/avc/cng/model/e/b$3;->c:Lcom/panasonic/avc/cng/model/e/b;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/model/e/b$3;->c:Lcom/panasonic/avc/cng/model/e/WifiSimpleReceiver;
 
     iput-object p2, p0, Lcom/panasonic/avc/cng/model/e/b$3;->a:Lcom/panasonic/avc/cng/model/e/a$a;
 

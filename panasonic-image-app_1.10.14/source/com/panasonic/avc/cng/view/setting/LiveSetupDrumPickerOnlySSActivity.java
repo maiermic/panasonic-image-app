@@ -11,7 +11,7 @@ import com.panasonic.avc.cng.model.C1897j.C1903f;
 import com.panasonic.avc.cng.model.p051c.C1844d;
 import com.panasonic.avc.cng.model.p052d.C1879a;
 import com.panasonic.avc.cng.model.service.C1985b;
-import com.panasonic.avc.cng.model.service.C2253z;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
 import com.panasonic.avc.cng.view.common.C2820e;
 import com.panasonic.avc.cng.view.liveview.C2994e.C3116f;
 import com.panasonic.avc.cng.view.liveview.C3259j.C3269a;
@@ -19,14 +19,14 @@ import com.panasonic.avc.cng.view.liveview.C3271k.C3336c;
 import com.panasonic.avc.cng.view.liveview.C3271k.C3337d;
 import com.panasonic.avc.cng.view.liveview.icon.C3206a;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
 import com.panasonic.avc.cng.view.parts.C4021aj;
 import com.panasonic.avc.cng.view.parts.C4021aj.C4033a;
-import com.panasonic.avc.cng.view.setting.C5804u.C5806a;
-import com.panasonic.avc.cng.view.setting.C5804u.C5812c;
-import com.panasonic.avc.cng.view.setting.C5804u.C5817d;
+import com.panasonic.avc.cng.view.setting.LiveSetupLumixMirrorlessBaseActivity.C5806a;
+import com.panasonic.avc.cng.view.setting.LiveSetupLumixMirrorlessBaseActivity.C5812c;
+import com.panasonic.avc.cng.view.setting.LiveSetupLumixMirrorlessBaseActivity.C5817d;
 
-public class LiveSetupDrumPickerOnlySSActivity extends C5804u {
+public class LiveSetupDrumPickerOnlySSActivity extends LiveSetupLumixMirrorlessBaseActivity {
     /* access modifiers changed from: private */
 
     /* renamed from: n */
@@ -34,7 +34,7 @@ public class LiveSetupDrumPickerOnlySSActivity extends C5804u {
     /* access modifiers changed from: private */
 
     /* renamed from: q */
-    public C5780o f16085q;
+    public LiveSetupDrumPickerFandSSViewModel f16085q;
 
     /* renamed from: r */
     private C5806a f16086r;
@@ -178,7 +178,7 @@ public class LiveSetupDrumPickerOnlySSActivity extends C5804u {
                 LiveSetupDrumPickerOnlySSActivity.this.f17829e.mo7033b();
             }
             if (z) {
-                C2331d.m10114a((Activity) LiveSetupDrumPickerOnlySSActivity.this, C2328a.ON_PROGRESS, (Bundle) null);
+                DialogFactory.m10114a((Activity) LiveSetupDrumPickerOnlySSActivity.this, C2328a.ON_PROGRESS, (Bundle) null);
             }
             LiveSetupDrumPickerOnlySSActivity.this.mo11480a(false);
         }
@@ -189,7 +189,7 @@ public class LiveSetupDrumPickerOnlySSActivity extends C5804u {
                 LiveSetupDrumPickerOnlySSActivity.this.f17829e.mo7034c();
             }
             LiveSetupDrumPickerOnlySSActivity.this.mo11480a(true);
-            C2331d.m10100a((Activity) LiveSetupDrumPickerOnlySSActivity.this);
+            DialogFactory.m10100a((Activity) LiveSetupDrumPickerOnlySSActivity.this);
             if (LiveSetupDrumPickerOnlySSActivity.this._resultBundle != null) {
                 LiveSetupDrumPickerOnlySSActivity.this._resultBundle.putBoolean("ContentsUpdateKey", true);
             }
@@ -242,15 +242,15 @@ public class LiveSetupDrumPickerOnlySSActivity extends C5804u {
         }
         this.f16086r = new C5024b();
         if (!(C1712b.m6919c() == null || a == null)) {
-            C1985b a2 = C2253z.m9679a(this._context, a);
+            C1985b a2 = ServiceFactory.m9679a(this._context, a);
             if (a2 != null) {
                 this.f16094z = a2.mo5189b();
             }
         }
         if ("menu_item_id_ss_angle".equalsIgnoreCase(this.f16094z.f5368a)) {
-            this.f16085q = new C5780o(this._context, this._handler, this.f16086r, this.f17826b);
+            this.f16085q = new LiveSetupDrumPickerFandSSViewModel(this._context, this._handler, this.f16086r, this.f17826b);
         } else {
-            this.f16085q = new C5780o(this._context, this._handler, this.f16086r);
+            this.f16085q = new LiveSetupDrumPickerFandSSViewModel(this._context, this._handler, this.f16086r);
         }
         this.f16084n = new C4021aj(this._context, (Activity) this, this.f16085q, this.f16092x, this.f16093y);
         if ("menu_item_id_ss_sync".equalsIgnoreCase(this.f16094z.f5368a) || "menu_item_id_ss_angle_sync".equalsIgnoreCase(this.f16094z.f5368a)) {

@@ -45,9 +45,9 @@
 
     iget-object v0, v0, Lcom/panasonic/avc/cng/application/e$f$1;->a:Lcom/panasonic/avc/cng/application/e$f;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/application/e$f;->a:Lcom/panasonic/avc/cng/application/e;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/application/e$f;->a:Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/application/e;->a(Lcom/panasonic/avc/cng/application/e;)Lcom/panasonic/avc/cng/application/e$e;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportViewModel;->a(Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportViewModel;)Lcom/panasonic/avc/cng/application/e$e;
 
     move-result-object v0
 
@@ -58,19 +58,19 @@
 
     iget-object v0, v0, Lcom/panasonic/avc/cng/application/e$f$1;->a:Lcom/panasonic/avc/cng/application/e$f;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/application/e$f;->a:Lcom/panasonic/avc/cng/application/e;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/application/e$f;->a:Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportViewModel;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/application/e$f$1$3;->a:Lcom/panasonic/avc/cng/application/e$f$1;
 
     iget-object v1, v1, Lcom/panasonic/avc/cng/application/e$f$1;->a:Lcom/panasonic/avc/cng/application/e$f;
 
-    iget-object v1, v1, Lcom/panasonic/avc/cng/application/e$f;->a:Lcom/panasonic/avc/cng/application/e;
+    iget-object v1, v1, Lcom/panasonic/avc/cng/application/e$f;->a:Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportViewModel;
 
-    invoke-static {v1}, Lcom/panasonic/avc/cng/application/e;->e(Lcom/panasonic/avc/cng/application/e;)Ljava/lang/String;
+    invoke-static {v1}, Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportViewModel;->e(Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportViewModel;)Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/application/e;->a(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportViewModel;->a(Ljava/lang/String;)V
 
     .line 220
     :cond_0

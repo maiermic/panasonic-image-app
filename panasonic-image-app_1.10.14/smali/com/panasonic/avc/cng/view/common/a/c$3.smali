@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/panasonic/avc/cng/view/common/a/c;
+    value = Lcom/panasonic/avc/cng/view/common/a/FelicaListener;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

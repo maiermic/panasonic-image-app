@@ -8,7 +8,7 @@ import android.support.annotation.Keep;
 import android.support.p000v4.p003c.C0132a;
 import android.util.Base64;
 import android.util.Log;
-import com.google.firebase.C1307a;
+import com.google.firebase.FirebaseApp;
 import java.io.IOException;
 import java.security.KeyPair;
 import java.security.MessageDigest;
@@ -24,7 +24,7 @@ public class FirebaseInstanceId {
     private static C1326j f3615b;
 
     /* renamed from: c */
-    private final C1307a f3616c;
+    private final FirebaseApp f3616c;
 
     /* renamed from: d */
     private final C1325i f3617d;
@@ -32,7 +32,7 @@ public class FirebaseInstanceId {
     /* renamed from: e */
     private final String f3618e;
 
-    private FirebaseInstanceId(C1307a aVar, C1325i iVar) {
+    private FirebaseInstanceId(FirebaseApp aVar, C1325i iVar) {
         this.f3616c = aVar;
         this.f3617d = iVar;
         String b = this.f3616c.mo3112c().mo3128b();
@@ -76,7 +76,7 @@ public class FirebaseInstanceId {
 
     /* renamed from: a */
     public static FirebaseInstanceId m5134a() {
-        return getInstance(C1307a.m5117d());
+        return getInstance(FirebaseApp.m5117d());
     }
 
     /* renamed from: a */
@@ -133,7 +133,7 @@ public class FirebaseInstanceId {
     }
 
     @Keep
-    public static synchronized FirebaseInstanceId getInstance(C1307a aVar) {
+    public static synchronized FirebaseInstanceId getInstance(FirebaseApp aVar) {
         FirebaseInstanceId firebaseInstanceId;
         synchronized (FirebaseInstanceId.class) {
             firebaseInstanceId = (FirebaseInstanceId) f3614a.get(aVar.mo3112c().mo3127a());

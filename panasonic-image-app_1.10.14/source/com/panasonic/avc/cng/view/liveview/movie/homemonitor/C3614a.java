@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.LinearLayout;
 import com.panasonic.avc.cng.application.C1347a;
 import com.panasonic.avc.cng.imageapp.R;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.util.C2274o;
 import com.panasonic.avc.cng.view.liveview.movie.homemonitor.C3622c.C3676b;
 import com.panasonic.avc.cng.view.liveview.movie.homemonitor.C3622c.C3677c;
@@ -18,7 +18,7 @@ import com.panasonic.avc.cng.view.p072a.C2308e;
 import com.panasonic.avc.cng.view.p072a.C2311f;
 import com.panasonic.avc.cng.view.p072a.C2316j;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
 
 /* renamed from: com.panasonic.avc.cng.view.liveview.movie.homemonitor.a */
 public abstract class C3614a extends LiveViewMovieRemoteBaseActivity {
@@ -74,10 +74,10 @@ public abstract class C3614a extends LiveViewMovieRemoteBaseActivity {
                 return;
             }
             if (C2274o.m9903i(C3614a.this._remoteViewModel.mo8582E())) {
-                if (!C2331d.m10125b((Activity) C3614a.this, C2328a.ON_PANTILTER_SET_HOME_POSITION)) {
+                if (!DialogFactory.m10125b((Activity) C3614a.this, C2328a.ON_PANTILTER_SET_HOME_POSITION)) {
                     C3614a.this._cameraUtil.mo6032a((Runnable) new Runnable() {
                         public void run() {
-                            C2331d.m10114a((Activity) C3614a.this, C2328a.ON_PANTILTER_SET_HOME_POSITION, (Bundle) null);
+                            DialogFactory.m10114a((Activity) C3614a.this, C2328a.ON_PANTILTER_SET_HOME_POSITION, (Bundle) null);
                         }
                     });
                 }
@@ -91,10 +91,10 @@ public abstract class C3614a extends LiveViewMovieRemoteBaseActivity {
                 if (C2274o.m9917w(C3614a.this._remoteViewModel.mo8582E()) && !C3614a.this.f11671g) {
                     C3614a.this.f11671g = true;
                 }
-                if (C2331d.m10125b((Activity) C3614a.this, C2328a.ON_PANTILTER_SET_HOME_POSITION)) {
+                if (DialogFactory.m10125b((Activity) C3614a.this, C2328a.ON_PANTILTER_SET_HOME_POSITION)) {
                     C3614a.this._cameraUtil.mo6032a((Runnable) new Runnable() {
                         public void run() {
-                            C2331d.m10100a((Activity) C3614a.this);
+                            DialogFactory.m10100a((Activity) C3614a.this);
                         }
                     });
                 }
@@ -136,7 +136,7 @@ public abstract class C3614a extends LiveViewMovieRemoteBaseActivity {
         if (this._remoteViewModel.mo8629j() == 1) {
             if (!this.f11666b) {
                 if (isLog()) {
-                    C2261g.m9770d(GET_TAG(), String.format("isManual[%s], mode[%s]", new Object[]{this._remoteViewModel.mo8582E(), str}));
+                    ImageAppLog.verbose(GET_TAG(), String.format("isManual[%s], mode[%s]", new Object[]{this._remoteViewModel.mo8582E(), str}));
                 }
                 if (C2274o.m9896b(this._remoteViewModel.mo8582E()) && str.equalsIgnoreCase("manual")) {
                     Intent intent = new Intent(this._context, LiveViewMoviePantilterRemoteWatchManualActivity.class);
@@ -167,7 +167,7 @@ public abstract class C3614a extends LiveViewMovieRemoteBaseActivity {
     /* access modifiers changed from: protected */
     public void onActivityResult(int i, int i2, Intent intent) {
         if (isLog()) {
-            C2261g.m9770d(GET_TAG(), "onActivityResult()");
+            ImageAppLog.verbose(GET_TAG(), "onActivityResult()");
         }
         Bundle extras = intent.getExtras();
         if (extras != null && !CheckActivityResult(i, i2, intent)) {
@@ -197,7 +197,7 @@ public abstract class C3614a extends LiveViewMovieRemoteBaseActivity {
     /* access modifiers changed from: protected */
     public C2291c GetViewModel() {
         if (isLog()) {
-            C2261g.m9770d(GET_TAG(), "GetViewModel()");
+            ImageAppLog.verbose(GET_TAG(), "GetViewModel()");
         }
         return this._remoteViewModel;
     }
@@ -208,7 +208,7 @@ public abstract class C3614a extends LiveViewMovieRemoteBaseActivity {
             return false;
         }
         if (this._remoteViewModel.mo8639t()) {
-            C2331d.m10114a((Activity) this, C2328a.ON_ERROR_NOW_PIC_CAPTURE, (Bundle) null);
+            DialogFactory.m10114a((Activity) this, C2328a.ON_ERROR_NOW_PIC_CAPTURE, (Bundle) null);
             return false;
         } else if (!this._remoteViewModel.mo8631l()) {
             return false;
@@ -216,7 +216,7 @@ public abstract class C3614a extends LiveViewMovieRemoteBaseActivity {
             if (!C2274o.m9889M(this._remoteViewModel.mo8582E()) && !C2274o.m9890N(this._remoteViewModel.mo8582E())) {
                 return true;
             }
-            C2331d.m10114a((Activity) this, C2328a.ON_CANNOT_CHANGE_SETUP, (Bundle) null);
+            DialogFactory.m10114a((Activity) this, C2328a.ON_CANNOT_CHANGE_SETUP, (Bundle) null);
             return false;
         }
     }
@@ -226,8 +226,8 @@ public abstract class C3614a extends LiveViewMovieRemoteBaseActivity {
             return;
         }
         if (C2274o.m9889M(this._remoteViewModel.mo8582E()) || C2274o.m9890N(this._remoteViewModel.mo8582E())) {
-            C2261g.m9760a(3149828, "");
-            C2331d.m10114a((Activity) this, C2328a.ON_CANNOT_CHANGE_SETUP, (Bundle) null);
+            ImageAppLog.m9760a(3149828, "");
+            DialogFactory.m10114a((Activity) this, C2328a.ON_CANNOT_CHANGE_SETUP, (Bundle) null);
             return;
         }
         super.OnClickSetup(view);
@@ -242,7 +242,7 @@ public abstract class C3614a extends LiveViewMovieRemoteBaseActivity {
 
     public void OnClickRecMPan(View view) {
         if (isLog()) {
-            C2261g.m9770d(GET_TAG(), "OnClickRecMPan()");
+            ImageAppLog.verbose(GET_TAG(), "OnClickRecMPan()");
         }
         if (this._remoteViewModel != null) {
             this._remoteViewModel.mo8634o();
@@ -254,7 +254,7 @@ public abstract class C3614a extends LiveViewMovieRemoteBaseActivity {
 
     public void OnClickShutterMPan(View view) {
         if (isLog()) {
-            C2261g.m9770d(GET_TAG(), "OnClickShutterMPan()");
+            ImageAppLog.verbose(GET_TAG(), "OnClickShutterMPan()");
         }
         if (this._remoteViewModel != null) {
             this._remoteViewModel.mo8633n();
@@ -262,9 +262,9 @@ public abstract class C3614a extends LiveViewMovieRemoteBaseActivity {
     }
 
     public void OnClickStart(View view) {
-        C2261g.m9760a(3158048, "");
+        ImageAppLog.m9760a(3158048, "");
         if (isLog()) {
-            C2261g.m9770d(GET_TAG(), "OnClickStart()");
+            ImageAppLog.verbose(GET_TAG(), "OnClickStart()");
         }
         if (this._remoteViewModel != null) {
             this._remoteViewModel.f11783al.mo3216a(Boolean.valueOf(false));
@@ -274,7 +274,7 @@ public abstract class C3614a extends LiveViewMovieRemoteBaseActivity {
 
     public void OnClickPause(View view) {
         if (isLog()) {
-            C2261g.m9770d(GET_TAG(), "OnClickPause()");
+            ImageAppLog.verbose(GET_TAG(), "OnClickPause()");
         }
         if (this._remoteViewModel != null) {
             this._remoteViewModel.f11783al.mo3216a(Boolean.valueOf(false));
@@ -283,9 +283,9 @@ public abstract class C3614a extends LiveViewMovieRemoteBaseActivity {
     }
 
     public void OnClickPanChilterChange(View view) {
-        C2261g.m9760a(3158050, "");
+        ImageAppLog.m9760a(3158050, "");
         if (isLog()) {
-            C2261g.m9770d(GET_TAG(), "OnClickPanChilterChange()");
+            ImageAppLog.verbose(GET_TAG(), "OnClickPanChilterChange()");
         }
         if (this._remoteViewModel != null) {
             this._remoteViewModel.mo8616c(true);
@@ -294,7 +294,7 @@ public abstract class C3614a extends LiveViewMovieRemoteBaseActivity {
 
     public void OnClickPanChilterOff(View view) {
         if (isLog()) {
-            C2261g.m9770d(GET_TAG(), "OnClickPanChilterOff()");
+            ImageAppLog.verbose(GET_TAG(), "OnClickPanChilterOff()");
         }
         if (this._remoteViewModel != null) {
             this._remoteViewModel.mo8616c(false);

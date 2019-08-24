@@ -705,7 +705,7 @@
     iput-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ab;->q:Ljava/util/ArrayList;
 
     .line 233
-    invoke-static {}, Lcom/panasonic/avc/cng/model/service/z;->f()Lcom/panasonic/avc/cng/model/service/a;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->f()Lcom/panasonic/avc/cng/model/service/a;
 
     move-result-object v2
 
@@ -719,7 +719,7 @@
 
     .line 240
     :goto_0
-    instance-of v3, v2, Lcom/panasonic/avc/cng/model/service/a/c;
+    instance-of v3, v2, Lcom/panasonic/avc/cng/model/service/a/BrowserServiceCamera;
 
     if-eqz v3, :cond_0
 
@@ -796,7 +796,7 @@
 
     const/4 v1, 0x1
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/model/service/z;->a(Landroid/content/Context;Z)Lcom/panasonic/avc/cng/model/service/e;
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->a(Landroid/content/Context;Z)Lcom/panasonic/avc/cng/model/service/e;
 
     move-result-object v0
 
@@ -824,7 +824,7 @@
     .line 272
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ab;->w:Lcom/panasonic/avc/cng/model/service/e;
 
-    invoke-interface {v0}, Lcom/panasonic/avc/cng/model/service/e;->i()Lcom/panasonic/avc/cng/model/c/e;
+    invoke-interface {v0}, Lcom/panasonic/avc/cng/model/service/e;->i()Lcom/panasonic/avc/cng/model/c/CameraStatus;
 
     move-result-object v0
 
@@ -832,7 +832,7 @@
     if-eqz v0, :cond_2
 
     .line 275
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/e;->X()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->X()Ljava/lang/String;
 
     move-result-object v0
 
@@ -1186,7 +1186,7 @@
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v4, v1}, Lcom/panasonic/avc/cng/view/play/browser/a;->a(ZLcom/panasonic/avc/cng/view/parts/t;)V
+    invoke-virtual {v0, v4, v1}, Lcom/panasonic/avc/cng/view/play/browser/a;->a(ZLcom/panasonic/avc/cng/view/parts/BrowserViewModel;)V
 
     .line 456
     :cond_0
@@ -1351,7 +1351,7 @@
     iput-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ab;->q:Ljava/util/ArrayList;
 
     .line 396
-    invoke-static {}, Lcom/panasonic/avc/cng/model/service/z;->f()Lcom/panasonic/avc/cng/model/service/a;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->f()Lcom/panasonic/avc/cng/model/service/a;
 
     move-result-object v4
 
@@ -1359,7 +1359,7 @@
     if-eqz v4, :cond_3
 
     .line 401
-    instance-of v0, v4, Lcom/panasonic/avc/cng/model/service/a/c;
+    instance-of v0, v4, Lcom/panasonic/avc/cng/model/service/a/BrowserServiceCamera;
 
     if-eqz v0, :cond_0
 
@@ -1380,7 +1380,7 @@
     if-ge v3, v0, :cond_2
 
     .line 413
-    instance-of v2, v4, Lcom/panasonic/avc/cng/model/service/a/c;
+    instance-of v2, v4, Lcom/panasonic/avc/cng/model/service/a/BrowserServiceCamera;
 
     if-eqz v2, :cond_1
 
@@ -1662,7 +1662,7 @@
 
     .prologue
     .line 642
-    invoke-static {}, Lcom/panasonic/avc/cng/model/service/z;->f()Lcom/panasonic/avc/cng/model/service/a;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->f()Lcom/panasonic/avc/cng/model/service/a;
 
     move-result-object v0
 
@@ -1685,7 +1685,7 @@
 
     .prologue
     .line 653
-    invoke-static {}, Lcom/panasonic/avc/cng/model/service/z;->f()Lcom/panasonic/avc/cng/model/service/a;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->f()Lcom/panasonic/avc/cng/model/service/a;
 
     move-result-object v0
 
@@ -1714,7 +1714,7 @@
 
     .prologue
     .line 664
-    invoke-static {}, Lcom/panasonic/avc/cng/model/service/z;->f()Lcom/panasonic/avc/cng/model/service/a;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->f()Lcom/panasonic/avc/cng/model/service/a;
 
     move-result-object v0
 

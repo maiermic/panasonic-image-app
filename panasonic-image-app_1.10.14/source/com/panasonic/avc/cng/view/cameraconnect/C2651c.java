@@ -13,10 +13,10 @@ import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.C1892f;
 import com.panasonic.avc.cng.model.service.C2028e;
 import com.panasonic.avc.cng.model.service.C2028e.C2029a;
-import com.panasonic.avc.cng.model.service.C2253z;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
 import com.panasonic.avc.cng.util.C2266l;
 import com.panasonic.avc.cng.view.cameraconnect.C2663d.C2664a;
-import com.panasonic.avc.cng.view.cameraconnect.C2666e.C2674a;
+import com.panasonic.avc.cng.view.cameraconnect.CameraConnectViewModel.C2674a;
 import com.panasonic.avc.cng.view.cameraconnect.C2736k.C2752a;
 import java.net.NetworkInterface;
 import java.net.SocketException;
@@ -27,7 +27,7 @@ import java.util.Iterator;
 import java.util.List;
 
 /* renamed from: com.panasonic.avc.cng.view.cameraconnect.c */
-public class C2651c extends C2666e implements C2752a {
+public class C2651c extends CameraConnectViewModel implements C2752a {
 
     /* renamed from: c */
     public static final String f8219c = C2651c.class.getSimpleName();
@@ -156,7 +156,7 @@ public class C2651c extends C2666e implements C2752a {
                         if (networkInfo != null && networkInfo.getType() == 1) {
                             connectivityManager.bindProcessToNetwork(null);
                             connectivityManager.bindProcessToNetwork(network);
-                            C2253z.m9689b(C2651c.this.f3706a, true, C2651c.this.f3707b).mo5330g();
+                            ServiceFactory.m9689b(C2651c.this.f3706a, true, C2651c.this.f3707b).mo5330g();
                             break;
                         }
                         i++;
@@ -169,7 +169,7 @@ public class C2651c extends C2666e implements C2752a {
                         }
                     }
                 });
-                C2028e a = C2253z.m9680a(C2651c.this.f3706a, true);
+                C2028e a = ServiceFactory.m9680a(C2651c.this.f3706a, true);
                 a.mo5261a(str3);
                 List list2 = null;
                 int i2 = 1;
@@ -265,7 +265,7 @@ public class C2651c extends C2666e implements C2752a {
                     com.panasonic.avc.cng.model.g r3 = com.panasonic.avc.cng.model.C1712b.m6919c()
                     com.panasonic.avc.cng.view.cameraconnect.c r2 = com.panasonic.avc.cng.view.cameraconnect.C2651c.this
                     android.content.Context r2 = r2.f3706a
-                    com.panasonic.avc.cng.model.service.e r5 = com.panasonic.avc.cng.model.service.C2253z.m9680a(r2, r0)
+                    com.panasonic.avc.cng.model.service.e r5 = com.panasonic.avc.cng.model.service.ServiceFactory.m9680a(r2, r0)
                     r5.mo5283g()
                     com.panasonic.avc.cng.model.f r2 = r3
                     if (r2 == 0) goto L_0x01a6
@@ -497,7 +497,7 @@ public class C2651c extends C2666e implements C2752a {
 
     /* renamed from: a */
     public void mo6551a(C2649a aVar, boolean z, boolean z2, int i) {
-        C2028e a = C2253z.m9680a(this.f3706a, false);
+        C2028e a = ServiceFactory.m9680a(this.f3706a, false);
         if (a != null) {
             a.mo5283g();
         }
@@ -565,7 +565,7 @@ public class C2651c extends C2666e implements C2752a {
 
     /* renamed from: l */
     public void mo6569l() {
-        C2028e a = C2253z.m9680a(this.f3706a, false);
+        C2028e a = ServiceFactory.m9680a(this.f3706a, false);
         if (a == null) {
             this.f8232u = 1;
         } else if (!a.mo5273b().equalsIgnoreCase("p2p") || !C2266l.m9834e()) {
@@ -664,7 +664,7 @@ public class C2651c extends C2666e implements C2752a {
 
     /* renamed from: t */
     public boolean mo6577t() {
-        C2754l lVar = new C2754l(this.f3706a);
+        WifiUtil lVar = new WifiUtil(this.f3706a);
         if (lVar != null) {
             return lVar.mo6746b(0);
         }

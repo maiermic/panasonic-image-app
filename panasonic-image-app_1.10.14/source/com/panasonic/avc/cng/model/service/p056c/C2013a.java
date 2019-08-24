@@ -8,7 +8,7 @@ import android.content.SharedPreferences.Editor;
 import android.preference.PreferenceManager;
 import android.support.p000v4.p001a.C0013ac.C0018d;
 import com.panasonic.avc.cng.application.ImageAppLauncher;
-import com.panasonic.avc.cng.application.p039a.C1351b;
+import com.panasonic.avc.cng.application.p039a.GoogleTagManager;
 import com.panasonic.avc.cng.core.dlna.C1692a;
 import com.panasonic.avc.cng.core.dlna.C1694c;
 import com.panasonic.avc.cng.core.dlna.C1695d;
@@ -16,15 +16,15 @@ import com.panasonic.avc.cng.core.dlna.C1698g;
 import com.panasonic.avc.cng.core.dlna.C1699h;
 import com.panasonic.avc.cng.core.dlna.DlnaWrapper;
 import com.panasonic.avc.cng.core.dlna.DlnaWrapper.C1691b;
-import com.panasonic.avc.cng.core.p040a.C1468ao;
+import com.panasonic.avc.cng.core.p040a.StatusCommand;
 import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.C1892f;
 import com.panasonic.avc.cng.model.p051c.C1842b;
-import com.panasonic.avc.cng.model.p051c.C1846e;
+import com.panasonic.avc.cng.model.p051c.CameraStatus;
 import com.panasonic.avc.cng.model.p051c.C1848g;
 import com.panasonic.avc.cng.model.p051c.C1848g.C1851c;
-import com.panasonic.avc.cng.model.p051c.C1853h;
+import com.panasonic.avc.cng.model.p051c.ParseTagHighlightSceneInfo;
 import com.panasonic.avc.cng.model.p051c.C1862n;
 import com.panasonic.avc.cng.model.p051c.C1864p;
 import com.panasonic.avc.cng.model.p051c.C1872v;
@@ -34,11 +34,11 @@ import com.panasonic.avc.cng.model.service.C2028e;
 import com.panasonic.avc.cng.model.service.C2028e.C2029a;
 import com.panasonic.avc.cng.model.service.C2028e.C2030b;
 import com.panasonic.avc.cng.model.service.C2028e.C2031c;
-import com.panasonic.avc.cng.model.service.C2253z;
-import com.panasonic.avc.cng.model.service.p054a.C1936c;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
+import com.panasonic.avc.cng.model.service.p054a.BrowserServiceCamera;
 import com.panasonic.avc.cng.model.service.p068o.C2209a;
-import com.panasonic.avc.cng.util.C2260f;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppCmdLog;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.util.C2266l;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -58,7 +58,7 @@ public class C2013a implements C2028e {
     private int f6216c = -1;
 
     /* renamed from: d */
-    private C1468ao f6217d;
+    private StatusCommand f6217d;
     /* access modifiers changed from: private */
 
     /* renamed from: e */
@@ -74,7 +74,7 @@ public class C2013a implements C2028e {
     private Thread f6221h;
 
     /* renamed from: i */
-    private C1846e f6222i;
+    private CameraStatus f6222i;
     /* access modifiers changed from: private */
 
     /* renamed from: j */
@@ -155,7 +155,7 @@ public class C2013a implements C2028e {
         if (!C1712b.m6920d().mo4906a()) {
             int a = C2266l.m9791a(this.f6216c, false);
             this.f6215b.mo4251a(a);
-            C2261g.m9760a(2109444, String.format("Initialize : %s", new Object[]{Integer.valueOf(a)}));
+            ImageAppLog.m9760a(2109444, String.format("Initialize : %s", new Object[]{Integer.valueOf(a)}));
         }
         this.f6223j = false;
         this.f6224k = false;
@@ -228,15 +228,15 @@ public class C2013a implements C2028e {
             return str;
         }
         fVar.f5679a = 1;
-        this.f6217d = new C1468ao(fVar.f5682d);
+        this.f6217d = new StatusCommand(fVar.f5682d);
         if (this.f6217d == null) {
             return str;
         }
         String str2 = null;
         if (z) {
-            C1853h i = this.f6217d.mo3559i();
+            ParseTagHighlightSceneInfo i = this.f6217d.mo3559i();
             if (!i.mo4771a() && !i.mo4772b().equalsIgnoreCase("err_non_support")) {
-                C2261g.m9769c("DeviceConnectService", "Exclusion() Error.");
+                ImageAppLog.error("DeviceConnectService", "Exclusion() Error.");
                 return i.mo4772b();
             }
         }
@@ -251,12 +251,12 @@ public class C2013a implements C2028e {
             }
             fVar.f5691m = new C1848g().mo4755a(str2, this.f6214a.getString(R.string.setup_language_code));
             if (fVar.f5691m == null || fVar.f5691m.f5408a == null) {
-                C2261g.m9769c("DeviceConnectService", "GetCapability() Error.");
+                ImageAppLog.error("DeviceConnectService", "GetCapability() Error.");
                 String str3 = "timeout";
                 mo5289m();
                 return str3;
             } else if (!fVar.f5691m.f5408a.equalsIgnoreCase("ok")) {
-                C2261g.m9769c("DeviceConnectService", "GetCapability() Error.");
+                ImageAppLog.error("DeviceConnectService", "GetCapability() Error.");
                 String str4 = fVar.f5691m.f5408a;
                 mo5289m();
                 return str4;
@@ -267,12 +267,12 @@ public class C2013a implements C2028e {
         if (fVar.f5688j != 65537) {
             fVar.f5692n = new C1842b().mo4643a(this.f6217d.mo3554d(), this.f6214a.getString(R.string.setup_language_code));
             if (fVar.f5692n == null || fVar.f5692n.f5328a == null) {
-                C2261g.m9769c("DeviceConnectService", "GetAllMenu() Error.");
+                ImageAppLog.error("DeviceConnectService", "GetAllMenu() Error.");
                 String str5 = "timeout";
                 mo5289m();
                 return str5;
             } else if (!fVar.f5692n.f5328a.equalsIgnoreCase("ok")) {
-                C2261g.m9769c("DeviceConnectService", "GetAllMenu() Error.");
+                ImageAppLog.error("DeviceConnectService", "GetAllMenu() Error.");
                 String str6 = fVar.f5692n.f5328a;
                 mo5289m();
                 return str6;
@@ -282,7 +282,7 @@ public class C2013a implements C2028e {
             if (fVar.f5688j != 65537) {
                 fVar.f5693o = new C1862n().mo4816a(this.f6217d.mo3555e());
                 if (fVar.f5693o == null) {
-                    C2261g.m9769c("DeviceConnectService", "GetCurrentMenu() Error.");
+                    ImageAppLog.error("DeviceConnectService", "GetCurrentMenu() Error.");
                     return "error";
                 }
             }
@@ -305,12 +305,12 @@ public class C2013a implements C2028e {
             if (fVar.mo4888b()) {
                 fVar.f5694p = new C1864p().mo4823a(this.f6217d.mo3557g());
                 if (fVar.f5694p == null || fVar.f5694p.f5578a == null) {
-                    C2261g.m9769c("DeviceConnectService", "GetCurrentMode() Error.");
+                    ImageAppLog.error("DeviceConnectService", "GetCurrentMode() Error.");
                     String str8 = "timeout";
                     mo5289m();
                     return str8;
                 } else if (!fVar.f5694p.f5578a.equalsIgnoreCase("ok")) {
-                    C2261g.m9769c("DeviceConnectService", "GetCurrentMode() Error.");
+                    ImageAppLog.error("DeviceConnectService", "GetCurrentMode() Error.");
                     String str9 = fVar.f5694p.f5578a;
                     mo5289m();
                     return str9;
@@ -322,12 +322,12 @@ public class C2013a implements C2028e {
                 if (fVar.f5688j == 65540) {
                     fVar.f5699u = m8227p();
                     if (fVar.f5699u == null || fVar.f5699u.f5609a == null) {
-                        C2261g.m9769c("DeviceConnectService", "GetLensInfo() Error.");
+                        ImageAppLog.error("DeviceConnectService", "GetLensInfo() Error.");
                         String str10 = "timeout";
                         mo5289m();
                         return str10;
                     } else if (!fVar.f5699u.f5609a.equalsIgnoreCase("ok")) {
-                        C2261g.m9769c("DeviceConnectService", "GetLensInfo() Error.");
+                        ImageAppLog.error("DeviceConnectService", "GetLensInfo() Error.");
                         String str11 = fVar.f5699u.f5609a;
                         mo5289m();
                         return str11;
@@ -406,13 +406,13 @@ public class C2013a implements C2028e {
                 while (!C2013a.this.f6223j) {
                     C1892f a = C1712b.m6919c().mo4896a();
                     if (a != null) {
-                        C1351b.m5317a().mo3234b(a.f5685g);
+                        GoogleTagManager.m5317a().mo3234b(a.f5685g);
                         C2013a.this.mo5277b(true);
                         C2013a.this.m8225n();
                         C2013a.this.mo5277b(false);
                         C2013a.this.mo5289m();
                     } else {
-                        C1351b.m5317a().mo3234b((String) null);
+                        GoogleTagManager.m5317a().mo3234b((String) null);
                         C2013a.this.m8226o();
                     }
                 }
@@ -433,14 +433,14 @@ public class C2013a implements C2028e {
                 while (!C2013a.this.f6223j) {
                     C1892f a2 = C1712b.m6919c().mo4896a();
                     if (a2 != null) {
-                        C1351b.m5317a().mo3234b(a2.f5685g);
+                        GoogleTagManager.m5317a().mo3234b(a2.f5685g);
                         C2013a.this.mo5277b(true);
                         C2013a.this.mo5274b(a2);
                         C2013a.this.m8225n();
                         C2013a.this.mo5277b(false);
                         C2013a.this.mo5289m();
                     } else {
-                        C1351b.m5317a().mo3234b((String) null);
+                        GoogleTagManager.m5317a().mo3234b((String) null);
                         C2013a.this.m8226o();
                     }
                 }
@@ -498,7 +498,7 @@ public class C2013a implements C2028e {
         synchronized (this.f6226m) {
             this.f6223j = true;
             if (this.f6217d != null) {
-                C1468ao.m5744a();
+                StatusCommand.m5744a();
             }
         }
         if (this.f6221h != null) {
@@ -543,7 +543,7 @@ public class C2013a implements C2028e {
 
     /* renamed from: b */
     public void mo5274b(final C1892f fVar) {
-        C2261g.m9763a("DeviceConnectService", "StartNotifySubscribe()");
+        ImageAppLog.debug("DeviceConnectService", "StartNotifySubscribe()");
         this.f6233t.mo5299e();
         this.f6230q = null;
         this.f6231r = null;
@@ -556,7 +556,7 @@ public class C2013a implements C2028e {
                     if (gVar.mo4309a().indexOf("ConnectionManager") != -1) {
                         int e = this.f6215b.mo4273e();
                         if (!gVar.mo4311b().startsWith("http")) {
-                            C2261g.m9769c("DeviceConnectService", String.format("CreateSubscriber fail String", new Object[0]));
+                            ImageAppLog.error("DeviceConnectService", String.format("CreateSubscriber fail String", new Object[0]));
                         } else {
                             int a2 = this.f6215b.mo4249a(a, e, gVar.mo4311b());
                             if (a2 == 0) {
@@ -564,21 +564,21 @@ public class C2013a implements C2028e {
                                 this.f6215b.mo4263a((C1691b) new C1691b() {
                                     /* renamed from: a */
                                     public void mo4296a(String str) {
-                                        C2261g.m9771e("DeviceConnectService", String.format("OnNotifySubscribe() Notify:%s", new Object[]{str}));
-                                        C2260f.m9758e("DeviceConnectService", String.format("OnNotifySubscribe() Notify:%s", new Object[]{str}));
+                                        ImageAppLog.info("DeviceConnectService", String.format("OnNotifySubscribe() Notify:%s", new Object[]{str}));
+                                        ImageAppCmdLog.info("DeviceConnectService", String.format("OnNotifySubscribe() Notify:%s", new Object[]{str}));
                                         C1699h hVar = new C1699h(str);
                                         Boolean bool = C2013a.this.f6233t.f6238a;
                                         boolean a = C2013a.this.f6233t.mo5298a(hVar);
                                         Boolean bool2 = C2013a.this.f6233t.f6238a;
                                         if (C2013a.this.f6233t.mo5292a()) {
                                             if (bool != Boolean.TRUE && bool2 == Boolean.TRUE) {
-                                                C1921a f = C2253z.m9703f();
-                                                if (f != null && (f instanceof C1936c)) {
+                                                C1921a f = ServiceFactory.m9703f();
+                                                if (f != null && (f instanceof BrowserServiceCamera)) {
                                                     f.mo5041f();
                                                 }
                                             } else if (bool == Boolean.TRUE && bool2 != Boolean.TRUE) {
-                                                C1921a f2 = C2253z.m9703f();
-                                                if (f2 != null && (f2 instanceof C1936c)) {
+                                                C1921a f2 = ServiceFactory.m9703f();
+                                                if (f2 != null && (f2 instanceof BrowserServiceCamera)) {
                                                     f2.mo5042g();
                                                 }
                                             }
@@ -588,7 +588,7 @@ public class C2013a implements C2028e {
                                                 C2013a.this.f6230q = hVar;
                                                 C2013a.this.f6231r = hVar;
                                             }
-                                            if (C2253z.m9708h() && bool == Boolean.TRUE && bool2 == Boolean.FALSE) {
+                                            if (ServiceFactory.m9708h() && bool == Boolean.TRUE && bool2 == Boolean.FALSE) {
                                                 synchronized (C2013a.this.f6226m) {
                                                     if (C2013a.this.f6218e.size() > 0) {
                                                         ((C2031c) C2013a.this.f6218e.get(C2013a.this.f6218e.size() - 1)).mo5336a(hVar);
@@ -620,9 +620,9 @@ public class C2013a implements C2028e {
                                         }
                                     }
                                 });
-                                C2260f.m9752a("DeviceConnectService", "CreateSubscriber");
+                                ImageAppCmdLog.debug("DeviceConnectService", "CreateSubscriber");
                             } else {
-                                C2261g.m9769c("DeviceConnectService", String.format("CreateSubscriber fail(%d)!", new Object[]{Integer.valueOf(a2)}));
+                                ImageAppLog.error("DeviceConnectService", String.format("CreateSubscriber fail(%d)!", new Object[]{Integer.valueOf(a2)}));
                             }
                         }
                     }
@@ -633,18 +633,18 @@ public class C2013a implements C2028e {
 
     /* renamed from: m */
     public void mo5289m() {
-        C2261g.m9763a("DLNA", "StopNotifySubscribe");
+        ImageAppLog.debug("DLNA", "StopNotifySubscribe");
         if (this.f6227n) {
             this.f6216c = -1;
             this.f6215b.mo4263a((C1691b) null);
             int u = this.f6215b.mo4292u();
             if (u != 0) {
-                C2261g.m9769c("DeviceConnectService", "UnregistSubscriber()=" + u);
+                ImageAppLog.error("DeviceConnectService", "UnregistSubscriber()=" + u);
                 this.f6215b.mo4292u();
             }
-            C2260f.m9752a("DeviceConnectService", "UnregistSubscriber()");
+            ImageAppCmdLog.debug("DeviceConnectService", "UnregistSubscriber()");
         }
-        C2261g.m9763a("DLNA", "StopNotifySubscribe[E]");
+        ImageAppLog.debug("DLNA", "StopNotifySubscribe[E]");
         this.f6227n = false;
         this.f6233t.mo5299e();
     }
@@ -662,7 +662,7 @@ public class C2013a implements C2028e {
             com.panasonic.avc.cng.model.g r0 = com.panasonic.avc.cng.model.C1712b.m6919c()
             com.panasonic.avc.cng.model.f r0 = r0.mo4896a()
             r1 = r0
-            com.panasonic.avc.cng.core.p040a.C1450al.m5715c()
+            com.panasonic.avc.cng.core.p040a.StaticHttpCommand.m5715c()
         L_0x000c:
             java.lang.Object r2 = r15.f6226m
             monitor-enter(r2)
@@ -673,7 +673,7 @@ public class C2013a implements C2028e {
         L_0x0016:
             java.lang.String r0 = "StaticHttpCommand"
             java.lang.String r1 = "CameraWatchLoop End"
-            com.panasonic.avc.cng.util.C2261g.m9769c(r0, r1)
+            com.panasonic.avc.cng.util.ImageAppLog.error(r0, r1)
             return
         L_0x001e:
             r0 = move-exception
@@ -728,7 +728,7 @@ public class C2013a implements C2028e {
             if (r1 == 0) goto L_0x01d4
             boolean r0 = r1.mo4886a()     // Catch:{ all -> 0x01ed }
             if (r0 == 0) goto L_0x01d4
-            long r6 = com.panasonic.avc.cng.core.p040a.C1450al.m5711b()     // Catch:{ all -> 0x01ed }
+            long r6 = com.panasonic.avc.cng.core.p040a.StaticHttpCommand.m5711b()     // Catch:{ all -> 0x01ed }
             com.panasonic.avc.cng.core.a.ao r0 = r15.f6217d     // Catch:{ all -> 0x01ed }
             r5 = 3
             r8 = 10
@@ -739,7 +739,7 @@ public class C2013a implements C2028e {
             r8 = 0
             int r0 = (r6 > r8 ? 1 : (r6 == r8 ? 0 : -1))
             if (r0 == 0) goto L_0x00cf
-            long r8 = com.panasonic.avc.cng.core.p040a.C1450al.m5711b()     // Catch:{ all -> 0x01ed }
+            long r8 = com.panasonic.avc.cng.core.p040a.StaticHttpCommand.m5711b()     // Catch:{ all -> 0x01ed }
             r10 = 30000(0x7530, double:1.4822E-319)
             long r12 = r8 - r6
             long r12 = java.lang.Math.abs(r12)     // Catch:{ all -> 0x01ed }
@@ -756,11 +756,11 @@ public class C2013a implements C2028e {
             long r6 = java.lang.Math.abs(r6)     // Catch:{ all -> 0x01ed }
             java.lang.StringBuilder r5 = r5.append(r6)     // Catch:{ all -> 0x01ed }
             java.lang.String r5 = r5.toString()     // Catch:{ all -> 0x01ed }
-            com.panasonic.avc.cng.util.C2261g.m9769c(r0, r5)     // Catch:{ all -> 0x01ed }
+            com.panasonic.avc.cng.util.ImageAppLog.error(r0, r5)     // Catch:{ all -> 0x01ed }
         L_0x00cf:
             monitor-exit(r4)     // Catch:{ all -> 0x01ed }
             com.panasonic.avc.cng.model.c.e r0 = r15.f6222i     // Catch:{ Exception -> 0x01b1 }
-            boolean r0 = com.panasonic.avc.cng.model.p051c.C1846e.m7190a(r0)     // Catch:{ Exception -> 0x01b1 }
+            boolean r0 = com.panasonic.avc.cng.model.p051c.CameraStatus.m7190a(r0)     // Catch:{ Exception -> 0x01b1 }
             if (r0 != 0) goto L_0x0242
             com.panasonic.avc.cng.model.g r0 = com.panasonic.avc.cng.model.C1712b.m6919c()     // Catch:{ Exception -> 0x01b1 }
             com.panasonic.avc.cng.model.f r1 = r0.mo4896a()     // Catch:{ Exception -> 0x01b1 }
@@ -931,7 +931,7 @@ public class C2013a implements C2028e {
             java.lang.String r0 = r0.mo4835b()     // Catch:{ all -> 0x01ed }
             r5[r6] = r0     // Catch:{ all -> 0x01ed }
             java.lang.String r0 = java.lang.String.format(r3, r5)     // Catch:{ all -> 0x01ed }
-            com.panasonic.avc.cng.util.C2261g.m9766b(r2, r0)     // Catch:{ all -> 0x01ed }
+            com.panasonic.avc.cng.util.ImageAppLog.warning(r2, r0)     // Catch:{ all -> 0x01ed }
             monitor-exit(r4)     // Catch:{ all -> 0x01ed }
             goto L_0x000c
         L_0x0214:
@@ -943,7 +943,7 @@ public class C2013a implements C2028e {
             java.lang.String r0 = r0.mo4835b()     // Catch:{ all -> 0x01ed }
             r7[r8] = r0     // Catch:{ all -> 0x01ed }
             java.lang.String r0 = java.lang.String.format(r6, r7)     // Catch:{ all -> 0x01ed }
-            com.panasonic.avc.cng.util.C2261g.m9769c(r5, r0)     // Catch:{ all -> 0x01ed }
+            com.panasonic.avc.cng.util.ImageAppLog.error(r5, r0)     // Catch:{ all -> 0x01ed }
             r0 = 0
             r15.f6222i = r0     // Catch:{ all -> 0x01ed }
             goto L_0x00cf
@@ -1721,7 +1721,7 @@ public class C2013a implements C2028e {
     }
 
     /* renamed from: i */
-    public C1846e mo5285i() {
+    public CameraStatus mo5285i() {
         return this.f6222i;
     }
 

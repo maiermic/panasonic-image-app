@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.C1712b;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.util.C2266l;
 
 public class LiveViewMoviePantilterRemoteVoiceActivity extends C3614a {
@@ -18,7 +18,7 @@ public class LiveViewMoviePantilterRemoteVoiceActivity extends C3614a {
         C1712b.m6914a((Activity) this);
         super.onCreate(bundle);
         if (isLog()) {
-            C2261g.m9770d(GET_TAG(), "onCreate()");
+            ImageAppLog.verbose(GET_TAG(), "onCreate()");
         }
         requestWindowFeature(1);
         setContentView(R.layout.activity_liveview_movie_pantilter_remotevoice);
@@ -27,7 +27,7 @@ public class LiveViewMoviePantilterRemoteVoiceActivity extends C3614a {
             this._remoteBinder = new C3619b();
             this._remoteBinder.mo8572d(this, this._remoteViewModel);
         }
-        C2261g.m9760a(3158049, "");
+        ImageAppLog.m9760a(3158049, "");
     }
 
     public void onWindowFocusChanged(boolean z) {
@@ -39,7 +39,7 @@ public class LiveViewMoviePantilterRemoteVoiceActivity extends C3614a {
 
     public void onBackPressed() {
         if (isLog()) {
-            C2261g.m9770d(GET_TAG(), "onBackPressed()");
+            ImageAppLog.verbose(GET_TAG(), "onBackPressed()");
         }
         OnClickRemoteVoiceCancel(null);
     }

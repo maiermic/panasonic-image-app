@@ -62,19 +62,19 @@
     return-void
 .end method
 
-.method public a(Lcom/panasonic/avc/cng/model/c/e;)V
+.method public a(Lcom/panasonic/avc/cng/model/c/CameraStatus;)V
     .locals 3
 
     .prologue
     .line 653
-    invoke-static {p1}, Lcom/panasonic/avc/cng/model/c/e;->a(Lcom/panasonic/avc/cng/model/c/e;)Z
+    invoke-static {p1}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->a(Lcom/panasonic/avc/cng/model/c/CameraStatus;)Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
     .line 657
-    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/e;->E()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->E()Ljava/lang/String;
 
     move-result-object v0
 
@@ -143,7 +143,7 @@
     :goto_0
     iget-object v2, p0, Lcom/panasonic/avc/cng/view/setting/i$13;->a:Lcom/panasonic/avc/cng/view/setting/i;
 
-    invoke-virtual {v2, p1, v1, v0}, Lcom/panasonic/avc/cng/view/setting/i;->DmsBase_OnGetState(Lcom/panasonic/avc/cng/model/c/e;ZI)V
+    invoke-virtual {v2, p1, v1, v0}, Lcom/panasonic/avc/cng/view/setting/i;->DmsBase_OnGetState(Lcom/panasonic/avc/cng/model/c/CameraStatus;ZI)V
 
     .line 683
     return-void
@@ -153,7 +153,7 @@
     const/4 v1, 0x1
 
     .line 679
-    invoke-static {p1}, Lcom/panasonic/avc/cng/model/c/e;->b(Lcom/panasonic/avc/cng/model/c/e;)I
+    invoke-static {p1}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->b(Lcom/panasonic/avc/cng/model/c/CameraStatus;)I
 
     move-result v0
 

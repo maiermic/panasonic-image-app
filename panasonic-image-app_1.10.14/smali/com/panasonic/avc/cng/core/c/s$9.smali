@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/core/c/s;->a(ILjava/util/List;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    value = Lcom/panasonic/avc/cng/core/c/Picmate;->a(ILjava/util/List;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,16 +20,16 @@
 # instance fields
 .field final synthetic a:Landroid/content/Intent;
 
-.field final synthetic b:Lcom/panasonic/avc/cng/core/c/s;
+.field final synthetic b:Lcom/panasonic/avc/cng/core/c/Picmate;
 
 
 # direct methods
-.method constructor <init>(Lcom/panasonic/avc/cng/core/c/s;Landroid/content/Intent;)V
+.method constructor <init>(Lcom/panasonic/avc/cng/core/c/Picmate;Landroid/content/Intent;)V
     .locals 0
 
     .prologue
     .line 2400
-    iput-object p1, p0, Lcom/panasonic/avc/cng/core/c/s$9;->b:Lcom/panasonic/avc/cng/core/c/s;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/core/c/s$9;->b:Lcom/panasonic/avc/cng/core/c/Picmate;
 
     iput-object p2, p0, Lcom/panasonic/avc/cng/core/c/s$9;->a:Landroid/content/Intent;
 
@@ -45,9 +45,9 @@
 
     .prologue
     .line 2402
-    iget-object v0, p0, Lcom/panasonic/avc/cng/core/c/s$9;->b:Lcom/panasonic/avc/cng/core/c/s;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/core/c/s$9;->b:Lcom/panasonic/avc/cng/core/c/Picmate;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/core/c/s;->n(Lcom/panasonic/avc/cng/core/c/s;)Landroid/content/Context;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/core/c/Picmate;->n(Lcom/panasonic/avc/cng/core/c/Picmate;)Landroid/content/Context;
 
     move-result-object v0
 

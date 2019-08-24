@@ -22,18 +22,18 @@ import com.panasonic.avc.cng.imageapp.Httpc.HTTPcJni;
 import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.C1892f;
-import com.panasonic.avc.cng.model.p051c.C1846e;
+import com.panasonic.avc.cng.model.p051c.CameraStatus;
 import com.panasonic.avc.cng.model.p051c.C1860l;
 import com.panasonic.avc.cng.model.p052d.C1879a;
 import com.panasonic.avc.cng.model.service.C1985b;
 import com.panasonic.avc.cng.model.service.C1985b.C1986a;
 import com.panasonic.avc.cng.model.service.C2028e;
-import com.panasonic.avc.cng.model.service.C2253z;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
 import com.panasonic.avc.cng.p038a.C1343b;
 import com.panasonic.avc.cng.p038a.C1344c;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.view.common.C2820e;
-import com.panasonic.avc.cng.view.liveview.C2951d;
+import com.panasonic.avc.cng.view.liveview.LiveViewLumixBaseActivity;
 import com.panasonic.avc.cng.view.liveview.C2994e;
 import com.panasonic.avc.cng.view.liveview.C2994e.C3116f;
 import com.panasonic.avc.cng.view.liveview.C2994e.C3142p;
@@ -44,13 +44,13 @@ import com.panasonic.avc.cng.view.liveview.C3895p.C3898a;
 import com.panasonic.avc.cng.view.liveview.LiveViewLumixGseriesActivity;
 import com.panasonic.avc.cng.view.liveview.LiveViewNoConnectionActivity;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
 import com.panasonic.avc.cng.view.parts.C4116bn.C4117a;
 import com.panasonic.avc.cng.view.parts.C4213l;
 import com.panasonic.avc.cng.view.parts.C4230p;
 import com.panasonic.avc.cng.view.parts.C4237q;
 import com.panasonic.avc.cng.view.parts.C4241r;
-import com.panasonic.avc.cng.view.setting.C5537al.C5540a;
+import com.panasonic.avc.cng.view.setting.SettingMenuBaseActivity.C5540a;
 
 public class LiveViewStopmotionActivity extends LiveViewLumixGseriesActivity {
 
@@ -94,16 +94,16 @@ public class LiveViewStopmotionActivity extends LiveViewLumixGseriesActivity {
         /* renamed from: a */
         public void mo7086a(int i) {
             if (i == 1) {
-                C2331d.m10114a((Activity) LiveViewStopmotionActivity.this, C2328a.ON_ERROR_REMAIN_ZERO, (Bundle) null);
+                DialogFactory.m10114a((Activity) LiveViewStopmotionActivity.this, C2328a.ON_ERROR_REMAIN_ZERO, (Bundle) null);
             } else if (i == 4) {
-                C2331d.m10114a((Activity) LiveViewStopmotionActivity.this, C2328a.ON_ERROR_REJECT_VIDEOMODE, (Bundle) null);
+                DialogFactory.m10114a((Activity) LiveViewStopmotionActivity.this, C2328a.ON_ERROR_REJECT_VIDEOMODE, (Bundle) null);
             }
         }
 
         /* renamed from: b */
         public void mo7096b(int i) {
             if (i == 1) {
-                C2331d.m10114a((Activity) LiveViewStopmotionActivity.this, C2328a.ON_ERROR_REMAIN_ZERO, (Bundle) null);
+                DialogFactory.m10114a((Activity) LiveViewStopmotionActivity.this, C2328a.ON_ERROR_REMAIN_ZERO, (Bundle) null);
             }
         }
 
@@ -138,7 +138,7 @@ public class LiveViewStopmotionActivity extends LiveViewLumixGseriesActivity {
         public void mo7095b() {
             LiveViewStopmotionActivity.this._handler.post(new Runnable() {
                 public void run() {
-                    C2331d.m10114a((Activity) LiveViewStopmotionActivity.this, C2328a.ON_PROGRESS, (Bundle) null);
+                    DialogFactory.m10114a((Activity) LiveViewStopmotionActivity.this, C2328a.ON_PROGRESS, (Bundle) null);
                 }
             });
         }
@@ -147,7 +147,7 @@ public class LiveViewStopmotionActivity extends LiveViewLumixGseriesActivity {
         public void mo7098c() {
             LiveViewStopmotionActivity.this._handler.post(new Runnable() {
                 public void run() {
-                    C2331d.m10100a((Activity) LiveViewStopmotionActivity.this);
+                    DialogFactory.m10100a((Activity) LiveViewStopmotionActivity.this);
                 }
             });
         }
@@ -156,8 +156,8 @@ public class LiveViewStopmotionActivity extends LiveViewLumixGseriesActivity {
         public void mo7100d() {
             LiveViewStopmotionActivity.this._handler.post(new Runnable() {
                 public void run() {
-                    C2331d.m10100a((Activity) LiveViewStopmotionActivity.this);
-                    C2331d.m10114a((Activity) LiveViewStopmotionActivity.this, C2328a.ON_DISCONNECT_NO_FINISH, (Bundle) null);
+                    DialogFactory.m10100a((Activity) LiveViewStopmotionActivity.this);
+                    DialogFactory.m10114a((Activity) LiveViewStopmotionActivity.this, C2328a.ON_DISCONNECT_NO_FINISH, (Bundle) null);
                 }
             });
         }
@@ -166,7 +166,7 @@ public class LiveViewStopmotionActivity extends LiveViewLumixGseriesActivity {
         public void mo7101e() {
             LiveViewStopmotionActivity.this._handler.post(new Runnable() {
                 public void run() {
-                    C2331d.m10114a((Activity) LiveViewStopmotionActivity.this, C2328a.ON_SHOOT_MODE_CHANGED, (Bundle) null);
+                    DialogFactory.m10114a((Activity) LiveViewStopmotionActivity.this, C2328a.ON_SHOOT_MODE_CHANGED, (Bundle) null);
                 }
             });
         }
@@ -179,7 +179,7 @@ public class LiveViewStopmotionActivity extends LiveViewLumixGseriesActivity {
         public void mo7089a(final C2328a aVar) {
             LiveViewStopmotionActivity.this._handler.post(new Runnable() {
                 public void run() {
-                    C2331d.m10114a((Activity) LiveViewStopmotionActivity.this, aVar, (Bundle) null);
+                    DialogFactory.m10114a((Activity) LiveViewStopmotionActivity.this, aVar, (Bundle) null);
                 }
             });
         }
@@ -210,7 +210,7 @@ public class LiveViewStopmotionActivity extends LiveViewLumixGseriesActivity {
                                 LiveViewStopmotionActivity.this.f9043a.mo7268N();
                             }
                         }
-                        C1985b a2 = C2253z.m9679a(LiveViewStopmotionActivity.this._context, a);
+                        C1985b a2 = ServiceFactory.m9679a(LiveViewStopmotionActivity.this._context, a);
                         if (a2 != null) {
                             C1860l a3 = a2.mo5182a("menu_item_id_drivemode");
                             if (a3 != null && a3.f5567a.equalsIgnoreCase("menu_item_id_drivemode") && a3.f5568b && a3.f5573g) {
@@ -243,7 +243,7 @@ public class LiveViewStopmotionActivity extends LiveViewLumixGseriesActivity {
                         if (!(a == null || !a.f5691m.mo4752x() || LiveViewStopmotionActivity.this.f9043a == null)) {
                             LiveViewStopmotionActivity.this.f9043a.mo7268N();
                         }
-                        C1985b a2 = C2253z.m9679a(LiveViewStopmotionActivity.this._context, a);
+                        C1985b a2 = ServiceFactory.m9679a(LiveViewStopmotionActivity.this._context, a);
                         C1860l a3 = a2.mo5182a("menu_item_id_1shoot");
                         C1860l a4 = a2.mo5182a("menu_item_id_burst");
                         C1860l a5 = a2.mo5182a("menu_item_id_autobracket");
@@ -313,9 +313,9 @@ public class LiveViewStopmotionActivity extends LiveViewLumixGseriesActivity {
                     LiveViewStopmotionActivity.this.f9043a.mo7445e(LiveViewStopmotionActivity.this.getText(R.string.rec_stopmotion_warning_automode).toString());
                 }
                 if (true == LiveViewStopmotionActivity.this.f16256w && "off".equalsIgnoreCase(str) && !LiveViewStopmotionActivity.this.isFinishing()) {
-                    C2028e a = C2253z.m9680a(LiveViewStopmotionActivity.this._context, true);
+                    C2028e a = ServiceFactory.m9680a(LiveViewStopmotionActivity.this._context, true);
                     if (a != null) {
-                        final C1846e i = a.mo5285i();
+                        final CameraStatus i = a.mo5285i();
                         if (i != null) {
                             LiveViewStopmotionActivity.this._handler.post(new Runnable() {
                                 public void run() {
@@ -325,7 +325,7 @@ public class LiveViewStopmotionActivity extends LiveViewLumixGseriesActivity {
                                         return;
                                     }
                                     if (!LiveViewStopmotionActivity.this.f16257x.booleanValue()) {
-                                        C2331d.m10114a((Activity) LiveViewStopmotionActivity.this, C2328a.ON_ERROR_STOPMOTION_LIMIT_NUM, (Bundle) null);
+                                        DialogFactory.m10114a((Activity) LiveViewStopmotionActivity.this, C2328a.ON_ERROR_STOPMOTION_LIMIT_NUM, (Bundle) null);
                                     }
                                     LiveViewStopmotionActivity.this.f16257x = Boolean.valueOf(true);
                                 }
@@ -341,11 +341,11 @@ public class LiveViewStopmotionActivity extends LiveViewLumixGseriesActivity {
             if (!z) {
                 LiveViewStopmotionActivity.this.m19694b(false);
                 if (str.equalsIgnoreCase("clocknonset")) {
-                    C2331d.m10114a((Activity) LiveViewStopmotionActivity.this, C2328a.ON_ERROR_STOPMOTION_CLOCK, (Bundle) null);
+                    DialogFactory.m10114a((Activity) LiveViewStopmotionActivity.this, C2328a.ON_ERROR_STOPMOTION_CLOCK, (Bundle) null);
                     return;
                 }
                 LiveViewStopmotionActivity.this._resultBundle.putBoolean("StopMotionStartFail", true);
-                C2331d.m10114a((Activity) LiveViewStopmotionActivity.this, C2328a.ON_ERROR_STOPMOTION_CMD, (Bundle) null);
+                DialogFactory.m10114a((Activity) LiveViewStopmotionActivity.this, C2328a.ON_ERROR_STOPMOTION_CMD, (Bundle) null);
                 return;
             }
             LiveViewStopmotionActivity.this.m19693b(str);
@@ -356,13 +356,13 @@ public class LiveViewStopmotionActivity extends LiveViewLumixGseriesActivity {
             if (z || i2 != -4) {
                 LiveViewStopmotionActivity.this.m19691b(i);
             } else {
-                C2331d.m10114a((Activity) LiveViewStopmotionActivity.this, C2328a.ON_STOPMOTION_ENABLE_MOT_CONV, (Bundle) null);
+                DialogFactory.m10114a((Activity) LiveViewStopmotionActivity.this, C2328a.ON_STOPMOTION_ENABLE_MOT_CONV, (Bundle) null);
             }
         }
 
         /* renamed from: l */
         public void mo7839l() {
-            C2331d.m10114a((Activity) LiveViewStopmotionActivity.this, C2328a.ON_ERROR_STOPMOTION_LIMIT_NUM, (Bundle) null);
+            DialogFactory.m10114a((Activity) LiveViewStopmotionActivity.this, C2328a.ON_ERROR_STOPMOTION_LIMIT_NUM, (Bundle) null);
         }
 
         /* renamed from: a */
@@ -425,7 +425,7 @@ public class LiveViewStopmotionActivity extends LiveViewLumixGseriesActivity {
         /* renamed from: a */
         public void mo7093a(int[] iArr) {
             if (C1879a.m7548d(C1712b.m6919c().mo4896a())) {
-                C2261g.m9771e("LiveViewStopmotionActivity", "" + iArr[9]);
+                ImageAppLog.info("LiveViewStopmotionActivity", "" + iArr[9]);
                 boolean z = 69 <= iArr[9] && iArr[9] <= 72;
                 LiveViewStopmotionActivity.this.ShowCameraControlBusyDialog(z, z);
             }
@@ -461,7 +461,7 @@ public class LiveViewStopmotionActivity extends LiveViewLumixGseriesActivity {
         this.f9045c = new C1349a() {
             /* renamed from: a */
             public void mo3228a() {
-                C2331d.m10114a((Activity) LiveViewStopmotionActivity.this, C2328a.ON_NEED_LUMIX_LINK, (Bundle) null);
+                DialogFactory.m10114a((Activity) LiveViewStopmotionActivity.this, C2328a.ON_NEED_LUMIX_LINK, (Bundle) null);
             }
         };
         Bundle extras = getIntent().getExtras();
@@ -479,7 +479,7 @@ public class LiveViewStopmotionActivity extends LiveViewLumixGseriesActivity {
 
     /* access modifiers changed from: protected */
     /* renamed from: a */
-    public C2994e mo7004a(C2951d dVar, Handler handler, C2983a aVar) {
+    public C2994e mo7004a(LiveViewLumixBaseActivity dVar, Handler handler, C2983a aVar) {
         return new C3358l(this, handler, this.f16250q);
     }
 
@@ -526,7 +526,7 @@ public class LiveViewStopmotionActivity extends LiveViewLumixGseriesActivity {
                 this.f9043a.mo7259E();
                 return;
             }
-            C1985b a = C2253z.m9679a(this._context, C1712b.m6919c().mo4896a());
+            C1985b a = ServiceFactory.m9679a(this._context, C1712b.m6919c().mo4896a());
             if (a != null) {
                 C1860l a2 = a.mo5182a("menu_item_id_stopmotion_interval");
                 if (a2 == null || (a2 != null && a2.f5568b)) {
@@ -560,7 +560,7 @@ public class LiveViewStopmotionActivity extends LiveViewLumixGseriesActivity {
                     LiveViewStopmotionActivity.this.m19646C();
                     return;
                 }
-                C2331d.m10114a((Activity) LiveViewStopmotionActivity.this, C2328a.ON_ERROR_NOW_PIC_CAPTURE, (Bundle) null);
+                DialogFactory.m10114a((Activity) LiveViewStopmotionActivity.this, C2328a.ON_ERROR_NOW_PIC_CAPTURE, (Bundle) null);
             }
         });
         this.f9043a.f9283cn.mo3216a(Boolean.valueOf(true));
@@ -568,7 +568,7 @@ public class LiveViewStopmotionActivity extends LiveViewLumixGseriesActivity {
             public void onClick(View view) {
                 LiveViewStopmotionActivity.this.f9043a.f9284co.mo3216a(Boolean.valueOf(false));
                 if (LiveViewStopmotionActivity.this.f16251r) {
-                    C2261g.m9769c("playbutton", "Running......");
+                    ImageAppLog.error("playbutton", "Running......");
                     return;
                 }
                 LiveViewStopmotionActivity.this.f16251r = true;
@@ -794,14 +794,14 @@ public class LiveViewStopmotionActivity extends LiveViewLumixGseriesActivity {
     }
 
     public void onClickAeOffButton(View view) {
-        C2261g.m9760a(3158036, "");
+        ImageAppLog.m9760a(3158036, "");
         if (this.f9043a != null) {
             this.f9043a.mo7490z();
         }
     }
 
     public void onClickTouchAeButton(View view) {
-        C2261g.m9760a(3158035, "");
+        ImageAppLog.m9760a(3158035, "");
         if (mo11608a(C3270b.TOUCH_AE, null, null, null, 0, null, 0, null) <= 2 && this.f9043a != null) {
             this.f9043a.mo7255A();
         }
@@ -832,7 +832,7 @@ public class LiveViewStopmotionActivity extends LiveViewLumixGseriesActivity {
     }
 
     public void OnClickQMenu(View view) {
-        C2261g.m9760a(3158023, "");
+        ImageAppLog.m9760a(3158023, "");
         if (this.f9043a.f9288cs.mo7661c().booleanValue() && !ShowDmsErrorIfReceiving() && this.f9043a != null) {
             C1892f a = C1712b.m6919c().mo4896a();
             if (a != null) {
@@ -841,11 +841,11 @@ public class LiveViewStopmotionActivity extends LiveViewLumixGseriesActivity {
                     this.f9043a.mo7268N();
                 }
                 if (this.f9043a.mo7277W()) {
-                    C2331d.m10114a((Activity) this, C2328a.ON_ERROR_NOW_PIC_CAPTURE, (Bundle) null);
+                    DialogFactory.m10114a((Activity) this, C2328a.ON_ERROR_NOW_PIC_CAPTURE, (Bundle) null);
                 } else if (this.f9043a.mo7343ak()) {
-                    C1985b a2 = C2253z.m9679a(this._context, a);
+                    C1985b a2 = ServiceFactory.m9679a(this._context, a);
                     if (a2 != null) {
-                        C2331d.m10114a((Activity) this, C2328a.ON_PROGRESS, (Bundle) null);
+                        DialogFactory.m10114a((Activity) this, C2328a.ON_PROGRESS, (Bundle) null);
                         a2.mo5185a((C1986a) new C1986a() {
                             /* renamed from: a */
                             public void mo5201a() {
@@ -856,7 +856,7 @@ public class LiveViewStopmotionActivity extends LiveViewLumixGseriesActivity {
                                 LiveViewStopmotionActivity.this.f9043a.mo7455h(false);
                                 LiveViewStopmotionActivity.this._handler.post(new Runnable() {
                                     public void run() {
-                                        C2331d.m10100a((Activity) LiveViewStopmotionActivity.this);
+                                        DialogFactory.m10100a((Activity) LiveViewStopmotionActivity.this);
                                         if (!LiveViewStopmotionActivity.this.f9046d.mo12306h()) {
                                             LiveViewStopmotionActivity.this.mo7211q();
                                         } else if (LiveViewStopmotionActivity.this.mo11608a(C3270b.QMENU, null, null, null, 0, null, 0, null) > 1) {
@@ -871,7 +871,7 @@ public class LiveViewStopmotionActivity extends LiveViewLumixGseriesActivity {
                             public void mo5203c() {
                                 LiveViewStopmotionActivity.this._handler.post(new Runnable() {
                                     public void run() {
-                                        C2331d.m10100a((Activity) LiveViewStopmotionActivity.this);
+                                        DialogFactory.m10100a((Activity) LiveViewStopmotionActivity.this);
                                     }
                                 });
                             }
@@ -966,10 +966,10 @@ public class LiveViewStopmotionActivity extends LiveViewLumixGseriesActivity {
             case HTTPcJni.JNI_CFG_HTTPC_MAX_HEAD /*16*/:
                 this._resultBundle.putBoolean("IsShowSubscribeBusyDialog", false);
                 if (this.f9043a != null) {
-                    if (C2331d.m10125b((Activity) this, C2328a.ON_STOPMOTION_FINISH_CONFIRM)) {
+                    if (DialogFactory.m10125b((Activity) this, C2328a.ON_STOPMOTION_FINISH_CONFIRM)) {
                         this.f9043a.f9282cm.mo3216a(Boolean.valueOf(true));
                     }
-                    C2331d.m10100a((Activity) this);
+                    DialogFactory.m10100a((Activity) this);
                     if (!this.f9043a.mo7400bh()) {
                         this.f9043a.mo7309aC();
                         if (this.f9043a.mo7378bL() && this.f9043a.mo7379bM()) {
@@ -989,7 +989,7 @@ public class LiveViewStopmotionActivity extends LiveViewLumixGseriesActivity {
 
     /* renamed from: u */
     private boolean m19716u() {
-        return C2331d.m10125b((Activity) this, C2328a.ON_PROGRESS);
+        return DialogFactory.m10125b((Activity) this, C2328a.ON_PROGRESS);
     }
 
     /* renamed from: v */
@@ -1008,12 +1008,12 @@ public class LiveViewStopmotionActivity extends LiveViewLumixGseriesActivity {
 
     /* renamed from: a */
     private void m19677a(boolean z, boolean z2) {
-        if (C2331d.m10125b((Activity) this, C2328a.ON_PROGRESS)) {
-            C2331d.m10100a((Activity) this);
+        if (DialogFactory.m10125b((Activity) this, C2328a.ON_PROGRESS)) {
+            DialogFactory.m10100a((Activity) this);
         }
         if (z) {
             this.f16258y = z2;
-            C2331d.m10114a((Activity) this, C2328a.ON_PROGRESS, (Bundle) null);
+            DialogFactory.m10114a((Activity) this, C2328a.ON_PROGRESS, (Bundle) null);
         }
     }
 
@@ -1132,10 +1132,10 @@ public class LiveViewStopmotionActivity extends LiveViewLumixGseriesActivity {
     public void m19646C() {
         if (mo11608a(C3270b.OTHER, null, null, null, 0, null, 0, null) <= 2) {
             this.f9043a.f9282cm.mo3216a(Boolean.valueOf(false));
-            C2331d.m10114a((Activity) this, C2328a.ON_STOPMOTION_FINISH_CONFIRM, (Bundle) null);
+            DialogFactory.m10114a((Activity) this, C2328a.ON_STOPMOTION_FINISH_CONFIRM, (Bundle) null);
             return;
         }
-        C2331d.m10114a((Activity) this, C2328a.ON_ERROR_NOW_PIC_CAPTURE, (Bundle) null);
+        DialogFactory.m10114a((Activity) this, C2328a.ON_ERROR_NOW_PIC_CAPTURE, (Bundle) null);
     }
 
     /* access modifiers changed from: private */
@@ -1162,7 +1162,7 @@ public class LiveViewStopmotionActivity extends LiveViewLumixGseriesActivity {
 
     /* renamed from: D */
     private boolean m19648D() {
-        C1985b a = C2253z.m9679a(this._context, C1712b.m6919c().mo4896a());
+        C1985b a = ServiceFactory.m9679a(this._context, C1712b.m6919c().mo4896a());
         if (a != null) {
             C1860l a2 = a.mo5182a("menu_item_id_stopmotion_interval");
             if (a2 == null || (a2 != null && a2.f5568b)) {
@@ -1181,7 +1181,7 @@ public class LiveViewStopmotionActivity extends LiveViewLumixGseriesActivity {
             case ON_STOPMOTION_FINISH_CONFIRM:
                 if (C1712b.m6919c().mo4896a().f5691m.mo4742n()) {
                     if (this.f9043a.mo7383bQ() > 1) {
-                        C2331d.m10114a((Activity) this, C2328a.ON_STOPMOTION_CREATE_MOVIE_NOW_CONFIRM, (Bundle) null);
+                        DialogFactory.m10114a((Activity) this, C2328a.ON_STOPMOTION_CREATE_MOVIE_NOW_CONFIRM, (Bundle) null);
                         return;
                     }
                     this.f9043a.f9282cm.mo3216a(Boolean.valueOf(true));
@@ -1200,7 +1200,7 @@ public class LiveViewStopmotionActivity extends LiveViewLumixGseriesActivity {
                 m19674a(1, true);
                 return;
             case ON_ERROR_STOPMOTION_LIMIT_NUM:
-                C2331d.m10114a((Activity) this, C2328a.ON_STOPMOTION_CREATE_MOVIE_NOW_CONFIRM, (Bundle) null);
+                DialogFactory.m10114a((Activity) this, C2328a.ON_STOPMOTION_CREATE_MOVIE_NOW_CONFIRM, (Bundle) null);
                 return;
             case ON_NEED_LUMIX_LINK:
                 finish();

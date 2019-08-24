@@ -3,7 +3,7 @@ package com.panasonic.avc.cng.view.p072a;
 /* renamed from: com.panasonic.avc.cng.view.a.g */
 public class C2313g extends C2314h {
     /* renamed from: a */
-    public void mo6077a(C2289b bVar, C2291c cVar, C2292d dVar) {
+    public void mo6077a(C2289b bVar, C2291c cVar, CameraWatchUtility dVar) {
         if (!(cVar == null || cVar.mo6022d() == null)) {
             cVar.mo6022d().putString("MoveToOtherKey", "LiveView");
         }
@@ -13,7 +13,7 @@ public class C2313g extends C2314h {
     }
 
     /* renamed from: b */
-    public void mo6079b(C2289b bVar, C2291c cVar, C2292d dVar) {
+    public void mo6079b(C2289b bVar, C2291c cVar, CameraWatchUtility dVar) {
         if (!(cVar == null || cVar.mo6022d() == null)) {
             cVar.mo6022d().putString("MoveToOtherKey", "Browser");
         }
@@ -23,7 +23,7 @@ public class C2313g extends C2314h {
     }
 
     /* renamed from: c */
-    public void mo6080c(C2289b bVar, C2291c cVar, C2292d dVar) {
+    public void mo6080c(C2289b bVar, C2291c cVar, CameraWatchUtility dVar) {
         if (!(cVar == null || cVar.mo6022d() == null)) {
             cVar.mo6022d().putString("MoveToOtherKey", "Home");
         }

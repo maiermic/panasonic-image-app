@@ -45,14 +45,14 @@
 
     iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity$3;->a:Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;)V
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;)V
 
     .line 738
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity$3$3;->a:Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity$3;
 
     iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity$3;->a:Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b(Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;)Lcom/panasonic/avc/cng/view/setting/g;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b(Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;)Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;
 
     move-result-object v1
 
@@ -72,7 +72,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v1, v0, v2}, Lcom/panasonic/avc/cng/view/setting/g;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/setting/g$d;)V
+    invoke-virtual {v1, v0, v2}, Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/setting/g$d;)V
 
     .line 739
     return-void

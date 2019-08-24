@@ -43,9 +43,9 @@
     .line 235
     iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/a/m$1$1;->a:Lcom/panasonic/avc/cng/model/service/a/m$1;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/model/service/a/m$1;->a:Lcom/panasonic/avc/cng/model/service/a/m;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/model/service/a/m$1;->a:Lcom/panasonic/avc/cng/model/service/a/CameraContentCopy;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/a/m;->b(Lcom/panasonic/avc/cng/model/service/a/m;)Lcom/panasonic/avc/cng/model/service/a/m$b;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/a/CameraContentCopy;->b(Lcom/panasonic/avc/cng/model/service/a/CameraContentCopy;)Lcom/panasonic/avc/cng/model/service/a/m$b;
 
     move-result-object v0
 
@@ -54,9 +54,9 @@
     .line 237
     iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/a/m$1$1;->a:Lcom/panasonic/avc/cng/model/service/a/m$1;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/model/service/a/m$1;->a:Lcom/panasonic/avc/cng/model/service/a/m;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/model/service/a/m$1;->a:Lcom/panasonic/avc/cng/model/service/a/CameraContentCopy;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/a/m;->b(Lcom/panasonic/avc/cng/model/service/a/m;)Lcom/panasonic/avc/cng/model/service/a/m$b;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/a/CameraContentCopy;->b(Lcom/panasonic/avc/cng/model/service/a/CameraContentCopy;)Lcom/panasonic/avc/cng/model/service/a/m$b;
 
     move-result-object v0
 

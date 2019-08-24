@@ -153,28 +153,28 @@
     return-void
 .end method
 
-.method public a(Lcom/panasonic/avc/cng/model/c/e;)V
+.method public a(Lcom/panasonic/avc/cng/model/c/CameraStatus;)V
     .locals 8
 
     .prologue
     const/4 v0, 0x1
 
     .line 3479
-    invoke-static {p1}, Lcom/panasonic/avc/cng/model/c/e;->a(Lcom/panasonic/avc/cng/model/c/e;)Z
+    invoke-static {p1}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->a(Lcom/panasonic/avc/cng/model/c/CameraStatus;)Z
 
     move-result v1
 
     if-eqz v1, :cond_5
 
     .line 3482
-    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/e;->a()I
+    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->a()I
 
     move-result v1
 
     iput v1, p0, Lcom/panasonic/avc/cng/view/liveview/m$b;->b:I
 
     .line 3485
-    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/e;->c()I
+    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->c()I
 
     move-result v1
 
@@ -202,7 +202,7 @@
     .line 3493
     iget-boolean v1, p0, Lcom/panasonic/avc/cng/view/liveview/m$b;->d:Z
 
-    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/e;->n()Z
+    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->n()Z
 
     move-result v3
 
@@ -213,7 +213,7 @@
 
     .line 3497
     :cond_0
-    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/e;->n()Z
+    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->n()Z
 
     move-result v0
 
@@ -241,14 +241,14 @@
 
     .line 3506
     :cond_3
-    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/e;->m()Z
+    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->m()Z
 
     move-result v3
 
     .line 3511
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/m$b;->a:Lcom/panasonic/avc/cng/view/liveview/m;
 
-    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/e;->A()Z
+    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->A()Z
 
     move-result v1
 
@@ -257,7 +257,7 @@
     .line 3513
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/m$b;->a:Lcom/panasonic/avc/cng/view/liveview/m;
 
-    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/e;->B()Z
+    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->B()Z
 
     move-result v1
 
@@ -266,19 +266,19 @@
     .line 3517
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/m$b;->a:Lcom/panasonic/avc/cng/view/liveview/m;
 
-    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/e;->H()Z
+    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->H()Z
 
     move-result v1
 
     invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/liveview/m;->k(Lcom/panasonic/avc/cng/view/liveview/m;Z)Z
 
     .line 3520
-    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/e;->f()I
+    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->f()I
 
     move-result v6
 
     .line 3521
-    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/e;->z()J
+    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->z()J
 
     move-result-wide v4
 
@@ -320,7 +320,7 @@
 
     .line 3645
     :cond_5
-    invoke-static {p1}, Lcom/panasonic/avc/cng/model/c/e;->b(Lcom/panasonic/avc/cng/model/c/e;)I
+    invoke-static {p1}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->b(Lcom/panasonic/avc/cng/model/c/CameraStatus;)I
 
     move-result v0
 
@@ -429,7 +429,7 @@
 
     move-result-object v2
 
-    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 3753
     invoke-virtual {p1}, Lcom/panasonic/avc/cng/core/dlna/h;->a()I
@@ -615,7 +615,7 @@
 
     const-string v5, "false: because subscribe Error"
 
-    invoke-static {v4, v5}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v4, v5}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 3831
     iget-object v4, p0, Lcom/panasonic/avc/cng/view/liveview/m$b;->a:Lcom/panasonic/avc/cng/view/liveview/m;
@@ -670,7 +670,7 @@
 
     const-string v4, "Subscribe false:"
 
-    invoke-static {v3, v4}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v3, v4}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 3866
     iget-object v3, p0, Lcom/panasonic/avc/cng/view/liveview/m$b;->a:Lcom/panasonic/avc/cng/view/liveview/m;
@@ -757,7 +757,7 @@
 
     const-string v4, "Subscribe false:ON_SUBS_PICTBRST_ERR_STOP"
 
-    invoke-static {v3, v4}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v3, v4}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_2
 
@@ -797,7 +797,7 @@
 
     const-string v2, "false: because subscribe SDWRFin"
 
-    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 3924
     if-eqz v0, :cond_3

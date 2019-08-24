@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field private c:Lcom/panasonic/avc/cng/application/c;
+.field private c:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/application/c;)V
+.method public constructor <init>(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/application/NfcSupportViewModel;)V
     .locals 4
 
     .prologue
@@ -18,26 +18,26 @@
     .line 12
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/view/common/b;->c:Lcom/panasonic/avc/cng/application/c;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/view/common/b;->c:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
     .line 22
-    iput-object p3, p0, Lcom/panasonic/avc/cng/view/common/b;->c:Lcom/panasonic/avc/cng/application/c;
+    iput-object p3, p0, Lcom/panasonic/avc/cng/view/common/b;->c:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
     .line 25
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/b;->c:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/b;->c:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
     const/4 v1, 0x1
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/application/c;->a(Z)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->a(Z)V
 
     .line 28
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/b;->c:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/b;->c:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v2
 
-    invoke-virtual {v0, v2, v3}, Lcom/panasonic/avc/cng/application/c;->b(J)V
+    invoke-virtual {v0, v2, v3}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->b(J)V
 
     .line 29
     return-void

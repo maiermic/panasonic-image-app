@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/view/setting/y;->a(Ljava/lang/String;Lcom/panasonic/avc/cng/view/setting/y$a;)V
+    value = Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceViewModel;->a(Ljava/lang/String;Lcom/panasonic/avc/cng/view/setting/y$a;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,16 +20,16 @@
 # instance fields
 .field final synthetic a:Ljava/lang/String;
 
-.field final synthetic b:Lcom/panasonic/avc/cng/view/setting/y;
+.field final synthetic b:Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceViewModel;
 
 
 # direct methods
-.method constructor <init>(Lcom/panasonic/avc/cng/view/setting/y;Ljava/lang/String;)V
+.method constructor <init>(Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceViewModel;Ljava/lang/String;)V
     .locals 0
 
     .prologue
     .line 277
-    iput-object p1, p0, Lcom/panasonic/avc/cng/view/setting/y$2;->b:Lcom/panasonic/avc/cng/view/setting/y;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/view/setting/y$2;->b:Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceViewModel;
 
     iput-object p2, p0, Lcom/panasonic/avc/cng/view/setting/y$2;->a:Ljava/lang/String;
 
@@ -45,11 +45,11 @@
 
     .prologue
     .line 283
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
@@ -91,7 +91,7 @@
 
     .line 290
     :try_start_0
-    invoke-static {v0}, Lcom/panasonic/avc/cng/core/a/al;->a(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/core/a/StaticHttpCommand;->a(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -103,7 +103,7 @@
 
     const-string v3, "Cmd() is null...."
 
-    invoke-static {v2, v3}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v2, v3}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 295
     :cond_0
@@ -119,47 +119,47 @@
     invoke-direct {v1, v0, v2}, Lcom/panasonic/avc/cng/model/c/t;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 299
-    iget-object v2, p0, Lcom/panasonic/avc/cng/view/setting/y$2;->b:Lcom/panasonic/avc/cng/view/setting/y;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/view/setting/y$2;->b:Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceViewModel;
 
     invoke-virtual {v1}, Lcom/panasonic/avc/cng/model/c/t;->c()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-static {v2, v1}, Lcom/panasonic/avc/cng/view/setting/y;->a(Lcom/panasonic/avc/cng/view/setting/y;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2, v1}, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceViewModel;->a(Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceViewModel;Ljava/lang/String;)Ljava/lang/String;
 
     .line 301
-    new-instance v1, Lcom/panasonic/avc/cng/model/c/h;
+    new-instance v1, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
-    invoke-direct {v1, v0}, Lcom/panasonic/avc/cng/model/c/h;-><init>(Ljava/lang/String;)V
+    invoke-direct {v1, v0}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;-><init>(Ljava/lang/String;)V
 
     .line 302
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/model/c/h;->a()Z
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;->a()Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
     .line 305
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/y$2;->b:Lcom/panasonic/avc/cng/view/setting/y;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/y$2;->b:Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/y;->a(Lcom/panasonic/avc/cng/view/setting/y;)Lcom/panasonic/avc/cng/view/setting/y$b;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceViewModel;->a(Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceViewModel;)Lcom/panasonic/avc/cng/view/setting/y$b;
 
     move-result-object v0
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/y$2;->b:Lcom/panasonic/avc/cng/view/setting/y;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/y$2;->b:Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/y;->e(Lcom/panasonic/avc/cng/view/setting/y;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceViewModel;->e(Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceViewModel;)Landroid/os/Handler;
 
     move-result-object v0
 
     if-eqz v0, :cond_1
 
     .line 307
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/y$2;->b:Lcom/panasonic/avc/cng/view/setting/y;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/y$2;->b:Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/y;->f(Lcom/panasonic/avc/cng/view/setting/y;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceViewModel;->f(Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieWhiteBalanceViewModel;)Landroid/os/Handler;
 
     move-result-object v0
 

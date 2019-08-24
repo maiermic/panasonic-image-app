@@ -29,15 +29,15 @@ import com.panasonic.avc.cng.view.p072a.C2308e;
 import com.panasonic.avc.cng.view.p072a.C2308e.C2310a;
 import com.panasonic.avc.cng.view.p072a.C2316j;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
 import com.panasonic.avc.cng.view.play.browser.MainBrowserActivity;
-import com.panasonic.avc.cng.view.setting.C5537al.C5540a;
-import com.panasonic.avc.cng.view.setting.C5760j.C5762b;
+import com.panasonic.avc.cng.view.setting.SettingMenuBaseActivity.C5540a;
+import com.panasonic.avc.cng.view.setting.EasyWiFiManager.C5762b;
 
 public class EasyWiFiSettingActivity extends C2284a implements OnItemClickListener, C2265k, C2310a {
 
     /* renamed from: a */
-    protected static C5760j f15948a = null;
+    protected static EasyWiFiManager f15948a = null;
 
     /* renamed from: k */
     private static final String f15949k = EasyWiFiSettingActivity.class.getSimpleName();
@@ -74,7 +74,7 @@ public class EasyWiFiSettingActivity extends C2284a implements OnItemClickListen
     public Bundle f15959l = null;
 
     /* renamed from: a */
-    public static C5760j m19025a() {
+    public static EasyWiFiManager m19025a() {
         return f15948a;
     }
 
@@ -148,7 +148,7 @@ public class EasyWiFiSettingActivity extends C2284a implements OnItemClickListen
             java.lang.String r9 = java.lang.String.valueOf(r4)
             java.lang.StringBuilder r8 = r8.append(r9)
             java.lang.String r8 = r8.toString()
-            com.panasonic.avc.cng.util.C2261g.m9771e(r7, r8)
+            com.panasonic.avc.cng.util.ImageAppLog.info(r7, r8)
             if (r0 == 0) goto L_0x00f6
             if (r4 == 0) goto L_0x00f6
             r0 = 4
@@ -408,7 +408,7 @@ public class EasyWiFiSettingActivity extends C2284a implements OnItemClickListen
         Intent b = C1347a.m5308b(this, new C1349a() {
             /* renamed from: a */
             public void mo3228a() {
-                C2331d.m10114a((Activity) EasyWiFiSettingActivity.this, C2328a.ON_NEED_LUMIX_LINK, (Bundle) null);
+                DialogFactory.m10114a((Activity) EasyWiFiSettingActivity.this, C2328a.ON_NEED_LUMIX_LINK, (Bundle) null);
             }
         });
         if (b != null) {
@@ -446,7 +446,7 @@ public class EasyWiFiSettingActivity extends C2284a implements OnItemClickListen
 
     public void onClickCompleted(View view) {
         if (C1712b.m6919c().mo4896a() == null) {
-            C2331d.m10114a((Activity) this, C2328a.ON_DISCONNECT_FINISH, (Bundle) null);
+            DialogFactory.m10114a((Activity) this, C2328a.ON_DISCONNECT_FINISH, (Bundle) null);
         } else {
             m19030i();
         }
@@ -454,7 +454,7 @@ public class EasyWiFiSettingActivity extends C2284a implements OnItemClickListen
 
     /* renamed from: i */
     private void m19030i() {
-        C2331d.m10114a((Activity) this, C2328a.ON_PROGRESS, (Bundle) null);
+        DialogFactory.m10114a((Activity) this, C2328a.ON_PROGRESS, (Bundle) null);
         this.f15958j = true;
         if (mo11473e() == 2) {
             f15948a.mo12614a(C2328a.ON_PROGRESS, 5);
@@ -477,8 +477,8 @@ public class EasyWiFiSettingActivity extends C2284a implements OnItemClickListen
         }
         if (!f15948a.mo12628i()) {
             m19026a(i);
-        } else if (!C2331d.m10125b((Activity) this, C2328a.ON_PROGRESS)) {
-            C2331d.m10114a((Activity) this, C2328a.ON_PROGRESS, (Bundle) null);
+        } else if (!DialogFactory.m10125b((Activity) this, C2328a.ON_PROGRESS)) {
+            DialogFactory.m10114a((Activity) this, C2328a.ON_PROGRESS, (Bundle) null);
             if (mo11473e() != 2) {
                 C2272n.m9869a(this, Integer.valueOf(i), 1, 1000, false);
             } else if (!this.f15957i) {
@@ -529,8 +529,8 @@ public class EasyWiFiSettingActivity extends C2284a implements OnItemClickListen
             C2272n.m9869a(this, obj, i, 500, false);
             return;
         }
-        if (C2331d.m10125b((Activity) this, C2328a.ON_PROGRESS)) {
-            C2331d.m10100a((Activity) this);
+        if (DialogFactory.m10125b((Activity) this, C2328a.ON_PROGRESS)) {
+            DialogFactory.m10100a((Activity) this);
         }
         m19026a(((Integer) obj).intValue());
     }

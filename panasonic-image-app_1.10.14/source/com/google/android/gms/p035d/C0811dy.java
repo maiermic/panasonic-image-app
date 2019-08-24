@@ -13,7 +13,7 @@ import java.util.WeakHashMap;
 public final class C0811dy {
 
     /* renamed from: a */
-    private final Map<C0806dt<?>, Boolean> f1821a = Collections.synchronizedMap(new WeakHashMap());
+    private final Map<BasePendingResult<?>, Boolean> f1821a = Collections.synchronizedMap(new WeakHashMap());
 
     /* renamed from: b */
     private final Map<C1280b<?>, Boolean> f1822b = Collections.synchronizedMap(new WeakHashMap());
@@ -30,7 +30,7 @@ public final class C0811dy {
         }
         for (Entry entry : hashMap.entrySet()) {
             if (z || ((Boolean) entry.getValue()).booleanValue()) {
-                ((C0806dt) entry.getKey()).mo2108a(status);
+                ((BasePendingResult) entry.getKey()).mo2108a(status);
             }
         }
         for (Entry entry2 : hashMap2.entrySet()) {
@@ -48,7 +48,7 @@ public final class C0811dy {
 
     /* renamed from: b */
     public final void mo2118b() {
-        m3096a(false, C0814ea.f1824a);
+        m3096a(false, GoogleApiManager.f1824a);
     }
 
     /* renamed from: c */

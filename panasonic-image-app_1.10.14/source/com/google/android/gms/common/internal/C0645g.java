@@ -3,7 +3,7 @@ package com.google.android.gms.common.internal;
 import android.content.ComponentName;
 import android.content.ServiceConnection;
 import android.os.IBinder;
-import com.google.android.gms.common.stats.C0679a;
+import com.google.android.gms.common.stats.ConnectionTracker;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -48,7 +48,7 @@ final class C0645g implements ServiceConnection {
     public final void mo1706a(String str) {
         this.f1393b = 3;
         this.f1398g.f1389d;
-        this.f1394c = C0679a.m2526a(this.f1398g.f1387b, str, this.f1396e.mo1700c(), this, 129);
+        this.f1394c = ConnectionTracker.m2526a(this.f1398g.f1387b, str, this.f1396e.mo1700c(), this, 129);
         if (this.f1394c) {
             this.f1398g.f1388c.sendMessageDelayed(this.f1398g.f1388c.obtainMessage(1, this.f1396e), this.f1398g.f1391f);
             return;

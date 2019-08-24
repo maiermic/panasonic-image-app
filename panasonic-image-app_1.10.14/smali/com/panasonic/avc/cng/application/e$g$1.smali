@@ -57,9 +57,9 @@
     :cond_0
     iget-object v0, p0, Lcom/panasonic/avc/cng/application/e$g$1;->a:Lcom/panasonic/avc/cng/application/e$g;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/application/e$g;->a:Lcom/panasonic/avc/cng/application/e;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/application/e$g;->a:Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/application/e;->h(Lcom/panasonic/avc/cng/application/e;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportViewModel;->h(Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportViewModel;)Landroid/os/Handler;
 
     move-result-object v0
 
@@ -93,9 +93,9 @@
     :cond_0
     iget-object v0, p0, Lcom/panasonic/avc/cng/application/e$g$1;->a:Lcom/panasonic/avc/cng/application/e$g;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/application/e$g;->a:Lcom/panasonic/avc/cng/application/e;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/application/e$g;->a:Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/application/e;->i(Lcom/panasonic/avc/cng/application/e;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportViewModel;->i(Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportViewModel;)Landroid/os/Handler;
 
     move-result-object v0
 
@@ -129,9 +129,9 @@
     :cond_0
     iget-object v0, p0, Lcom/panasonic/avc/cng/application/e$g$1;->a:Lcom/panasonic/avc/cng/application/e$g;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/application/e$g;->a:Lcom/panasonic/avc/cng/application/e;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/application/e$g;->a:Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/application/e;->g(Lcom/panasonic/avc/cng/application/e;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportViewModel;->g(Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportViewModel;)Landroid/os/Handler;
 
     move-result-object v0
 

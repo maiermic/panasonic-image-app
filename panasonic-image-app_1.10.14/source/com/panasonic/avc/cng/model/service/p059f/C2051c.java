@@ -3,7 +3,7 @@ package com.panasonic.avc.cng.model.service.p059f;
 import android.graphics.Bitmap;
 import com.panasonic.avc.cng.core.p040a.C1473at;
 import com.panasonic.avc.cng.model.service.C2176k.C2177a;
-import com.panasonic.avc.cng.model.service.C2253z;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -87,7 +87,7 @@ public class C2051c {
                                 C2051c.this.f6332k.recycle();
                                 C2051c.this.f6332k = null;
                             }
-                        } else if (!C2253z.m9706g() && ((!C2051c.this.f6333l || ((atVar.f3977b.f3997c == null || !atVar.f3977b.f3997c.mo3589a()) && (atVar.f3977b.f4004j == null || !atVar.f3977b.f4004j.mo3589a()))) && (!C2051c.this.f6333l || ((atVar.f3977b.f3997c == null || !atVar.f3977b.f3997c.mo3594f()) && (atVar.f3977b.f4004j == null || !atVar.f3977b.f4004j.mo3594f()))))) {
+                        } else if (!ServiceFactory.m9706g() && ((!C2051c.this.f6333l || ((atVar.f3977b.f3997c == null || !atVar.f3977b.f3997c.mo3589a()) && (atVar.f3977b.f4004j == null || !atVar.f3977b.f4004j.mo3589a()))) && (!C2051c.this.f6333l || ((atVar.f3977b.f3997c == null || !atVar.f3977b.f3997c.mo3594f()) && (atVar.f3977b.f4004j == null || !atVar.f3977b.f4004j.mo3594f()))))) {
                             if (C2051c.this.f6334m != null) {
                                 C2051c.this.f6334m.recycle();
                                 C2051c.this.f6334m = null;

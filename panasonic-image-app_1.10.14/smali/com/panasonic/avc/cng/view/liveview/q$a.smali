@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/panasonic/avc/cng/view/liveview/q;
+    value = Lcom/panasonic/avc/cng/view/liveview/SlideButton;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

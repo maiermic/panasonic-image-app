@@ -34,11 +34,11 @@ public final class C0808dv<R extends C0593h> extends Handler {
                     iVar.mo1596a(hVar);
                     return;
                 } catch (RuntimeException e) {
-                    C0806dt.m3086b(hVar);
+                    BasePendingResult.m3086b(hVar);
                     throw e;
                 }
             case 2:
-                ((C0806dt) message.obj).mo2108a(Status.f1242d);
+                ((BasePendingResult) message.obj).mo2108a(Status.f1242d);
                 return;
             default:
                 Log.wtf("BasePendingResult", "Don't know how to handle message: " + message.what, new Exception());

@@ -12,13 +12,13 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
-import com.panasonic.avc.cng.application.C1357b;
+import com.panasonic.avc.cng.application.NfcSupportActivity;
 import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.service.C2206o.C2207a;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 
-public class TouchShareCopyActivity extends C1357b {
+public class TouchShareCopyActivity extends NfcSupportActivity {
     /* access modifiers changed from: private */
 
     /* renamed from: a */
@@ -32,7 +32,7 @@ public class TouchShareCopyActivity extends C1357b {
     private C2819b f8628c;
 
     /* renamed from: d */
-    private C2810d f8629d;
+    private TouchShareViewModel f8629d;
     /* access modifiers changed from: private */
 
     /* renamed from: e */
@@ -184,7 +184,7 @@ public class TouchShareCopyActivity extends C1357b {
         View inflate = LayoutInflater.from(this.f8627b).inflate(R.layout.activity_touch_share_copy, null);
         this.f8629d = C2820e.m11757a((Context) this, this.f8626a, this.f8628c);
         if (this.f8629d == null) {
-            this.f8629d = new C2810d(this, this.f8626a, this.f8628c);
+            this.f8629d = new TouchShareViewModel(this, this.f8626a, this.f8628c);
         }
         String e = this.f8629d.mo6863e();
         this.f8630e = (TextView) inflate.findViewById(R.id.stateText);
@@ -277,97 +277,97 @@ public class TouchShareCopyActivity extends C1357b {
         return new C2207a() {
             /* renamed from: a */
             public void mo3255a(String str, String str2, String str3, boolean z, long j, long j2, long j3) {
-                C2261g.m9769c("NFCTEST", "INfcResultListener OnSuccess");
+                ImageAppLog.error("NFCTEST", "INfcResultListener OnSuccess");
             }
 
             /* renamed from: a */
             public void mo3251a() {
-                C2261g.m9769c("NFCTEST", "INfcResultListener OnFailedNotPermitMovie");
+                ImageAppLog.error("NFCTEST", "INfcResultListener OnFailedNotPermitMovie");
             }
 
             /* renamed from: h */
             public void mo3263h() {
-                C2261g.m9769c("NFCTEST", "INfcResultListener OnFailedNotPermitNfcUse");
+                ImageAppLog.error("NFCTEST", "INfcResultListener OnFailedNotPermitNfcUse");
             }
 
             /* renamed from: i */
             public void mo3264i() {
-                C2261g.m9769c("NFCTEST", "INfcResultListener OnFailedInvalidData");
+                ImageAppLog.error("NFCTEST", "INfcResultListener OnFailedInvalidData");
             }
 
             /* renamed from: j */
             public void mo3265j() {
-                C2261g.m9769c("NFCTEST", "INfcResultListener OnFailedInvalidDevice");
+                ImageAppLog.error("NFCTEST", "INfcResultListener OnFailedInvalidDevice");
             }
 
             /* renamed from: k */
             public void mo3266k() {
-                C2261g.m9769c("NFCTEST", "INfcResultListener OnFailedShareInvalidPicture");
+                ImageAppLog.error("NFCTEST", "INfcResultListener OnFailedShareInvalidPicture");
             }
 
             /* renamed from: b */
             public void mo3257b() {
-                C2261g.m9769c("NFCTEST", "INfcResultListener OnFailed");
+                ImageAppLog.error("NFCTEST", "INfcResultListener OnFailed");
             }
 
             /* renamed from: c */
             public void mo3258c() {
-                C2261g.m9769c("NFCTEST", "INfcResultListener OnTagDetected");
+                ImageAppLog.error("NFCTEST", "INfcResultListener OnTagDetected");
             }
 
             /* renamed from: a */
             public void mo3256a(boolean z) {
-                C2261g.m9769c("NFCTEST", "INfcResultListener OnEnableNfc");
+                ImageAppLog.error("NFCTEST", "INfcResultListener OnEnableNfc");
             }
 
             /* renamed from: a */
             public void mo3253a(long j) {
-                C2261g.m9769c("NFCTEST", "INfcResultListener OnFinishFirstOneTouch");
+                ImageAppLog.error("NFCTEST", "INfcResultListener OnFinishFirstOneTouch");
             }
 
             /* renamed from: d */
             public void mo3259d() {
-                C2261g.m9769c("NFCTEST", "INfcResultListener OnFailedFirstTwoTouch");
+                ImageAppLog.error("NFCTEST", "INfcResultListener OnFailedFirstTwoTouch");
             }
 
             /* renamed from: e */
             public void mo3260e() {
-                C2261g.m9769c("NFCTEST", "INfcResultListener OnTouchedOtherMovie");
+                ImageAppLog.error("NFCTEST", "INfcResultListener OnTouchedOtherMovie");
             }
 
             /* renamed from: f */
             public void mo3261f() {
-                C2261g.m9769c("NFCTEST", "INfcResultListener OnWaitDlgStart");
+                ImageAppLog.error("NFCTEST", "INfcResultListener OnWaitDlgStart");
             }
 
             /* renamed from: g */
             public void mo3262g() {
-                C2261g.m9769c("NFCTEST", "INfcResultListener OnWaitDlgEnd");
+                ImageAppLog.error("NFCTEST", "INfcResultListener OnWaitDlgEnd");
             }
 
             /* renamed from: a */
             public void mo3254a(String str, String str2) {
-                C2261g.m9769c("NFCTEST", "INfcResultListener OnShareSuccess");
+                ImageAppLog.error("NFCTEST", "INfcResultListener OnShareSuccess");
             }
 
             /* renamed from: l */
             public void mo3267l() {
-                C2261g.m9769c("NFCTEST", "INfcResultListener OnFailedNotSupportedGeotag");
+                ImageAppLog.error("NFCTEST", "INfcResultListener OnFailedNotSupportedGeotag");
             }
 
             /* renamed from: a */
             public void mo3252a(byte b) {
-                C2261g.m9769c("NFCTEST", "INfcResultListener OnFailedUnavailableGeotag");
+                ImageAppLog.error("NFCTEST", "INfcResultListener OnFailedUnavailableGeotag");
             }
 
             /* renamed from: m */
             public void mo3268m() {
-                C2261g.m9769c("NFCTEST", "INfcResultListener OnFailedNotApplicatableGeotag");
+                ImageAppLog.error("NFCTEST", "INfcResultListener OnFailedNotApplicatableGeotag");
             }
 
             /* renamed from: n */
             public void mo3269n() {
-                C2261g.m9769c("NFCTEST", "INfcResultListener OnGeotagSuccess");
+                ImageAppLog.error("NFCTEST", "INfcResultListener OnGeotagSuccess");
             }
         };
     }

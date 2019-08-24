@@ -51,7 +51,7 @@
 
     const v2, 0x7f0f0292
 
-    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/d;->c(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;I)Landroid/text/Editable;
+    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->c(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;I)Landroid/text/Editable;
 
     move-result-object v0
 
@@ -75,19 +75,19 @@
 
     const/4 v3, 0x0
 
-    invoke-static {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;IZ)V
+    invoke-static {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;IZ)V
 
     .line 420
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/b/e$12$2;->a:Lcom/panasonic/avc/cng/view/b/e$12;
 
     iget-object v0, v0, Lcom/panasonic/avc/cng/view/b/e$12;->a:Landroid/app/Activity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;)V
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;)V
 
     .line 422
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/b/e$12$2;->a:Lcom/panasonic/avc/cng/view/b/e$12;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/b/e$12;->d:Lcom/panasonic/avc/cng/view/smartoperation/i;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/b/e$12;->d:Lcom/panasonic/avc/cng/view/smartoperation/PictureJumpViewModel;
 
     if-nez v0, :cond_1
 
@@ -114,7 +114,7 @@
     :cond_3
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/b/e$12$2;->a:Lcom/panasonic/avc/cng/view/b/e$12;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/b/e$12;->f:Lcom/panasonic/avc/cng/view/setting/g;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/b/e$12;->f:Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;
 
     if-eqz v0, :cond_2
 

@@ -4,7 +4,7 @@ import android.content.Context;
 import com.panasonic.avc.cng.model.service.C2021d;
 import com.panasonic.avc.cng.model.service.C2021d.C2022a;
 import com.panasonic.avc.cng.model.service.C2224q;
-import com.panasonic.avc.cng.model.service.C2253z;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
 import java.util.ArrayList;
 
 /* renamed from: com.panasonic.avc.cng.model.service.b.b */
@@ -42,7 +42,7 @@ public class C2001b implements C2021d {
 
     /* renamed from: a */
     public void mo5229a() {
-        this.f6181d = C2253z.m9720o(this.f6178a);
+        this.f6181d = ServiceFactory.m9720o(this.f6178a);
         if (this.f6181d != null) {
             this.f6181d.mo5248a();
         }

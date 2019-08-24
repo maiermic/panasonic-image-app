@@ -23,26 +23,26 @@ import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
 import com.panasonic.avc.cng.core.dlna.C1699h;
-import com.panasonic.avc.cng.core.p040a.C1468ao;
-import com.panasonic.avc.cng.core.p040a.C1543y;
+import com.panasonic.avc.cng.core.p040a.StatusCommand;
+import com.panasonic.avc.cng.core.p040a.ModeChangeCommand;
 import com.panasonic.avc.cng.core.p046c.C1686t;
 import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.C1892f;
-import com.panasonic.avc.cng.model.p051c.C1846e;
+import com.panasonic.avc.cng.model.p051c.CameraStatus;
 import com.panasonic.avc.cng.model.service.C2028e;
 import com.panasonic.avc.cng.model.service.C2028e.C2031c;
 import com.panasonic.avc.cng.model.service.C2137j;
 import com.panasonic.avc.cng.model.service.C2137j.C2138a;
 import com.panasonic.avc.cng.model.service.C2137j.C2141d;
-import com.panasonic.avc.cng.model.service.C2253z;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.util.C2266l;
 import com.panasonic.avc.cng.view.cameraconnect.C2649a;
-import com.panasonic.avc.cng.view.cameraconnect.C2754l;
+import com.panasonic.avc.cng.view.cameraconnect.WifiUtil;
 import com.panasonic.avc.cng.view.p072a.C2316j;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
 import com.panasonic.avc.cng.view.p073b.C2376f.C2378b;
 import com.panasonic.avc.cng.view.parts.C4244s;
 import com.panasonic.avc.cng.view.setting.C5741i;
@@ -59,7 +59,7 @@ import java.util.UUID;
 public class CameraSettingActivity extends C5741i {
 
     /* renamed from: a */
-    public static final String f8528a = C2772c.class.getSimpleName();
+    public static final String f8528a = CameraSettingViewModel.class.getSimpleName();
 
     /* renamed from: m */
     private static int f8529m = 10;
@@ -78,14 +78,14 @@ public class CameraSettingActivity extends C5741i {
     /* access modifiers changed from: private */
 
     /* renamed from: b */
-    public C2772c f8533b;
+    public CameraSettingViewModel f8533b;
     /* access modifiers changed from: private */
 
     /* renamed from: c */
-    public C1468ao f8534c;
+    public StatusCommand f8534c;
 
     /* renamed from: d */
-    private C1543y f8535d;
+    private ModeChangeCommand f8535d;
     /* access modifiers changed from: private */
 
     /* renamed from: e */
@@ -171,25 +171,25 @@ public class CameraSettingActivity extends C5741i {
 
         /* renamed from: b */
         public void mo5669b() {
-            C2261g.m9763a("CameraSettingActivity", "onBleConnectStart");
+            ImageAppLog.debug("CameraSettingActivity", "onBleConnectStart");
         }
 
         /* renamed from: a */
         public void mo5668a(boolean z) {
-            C2261g.m9763a("CameraSettingActivity", "onBleConnected");
+            ImageAppLog.debug("CameraSettingActivity", "onBleConnected");
             if (CameraSettingActivity.this._handler != null && CameraSettingActivity.this.f8555y && CameraSettingActivity.this.f8546p != null) {
-                C2261g.m9763a("CameraSettingActivity", "writeData:" + CameraSettingActivity.this.f8546p.mo5627a(1, C2266l.m9808a("4D454930010010008001" + PreferenceManager.getDefaultSharedPreferences(CameraSettingActivity.this._context).getString("Dlna_UUID_Seed", ""))));
+                ImageAppLog.debug("CameraSettingActivity", "writeData:" + CameraSettingActivity.this.f8546p.mo5627a(1, C2266l.m9808a("4D454930010010008001" + PreferenceManager.getDefaultSharedPreferences(CameraSettingActivity.this._context).getString("Dlna_UUID_Seed", ""))));
             }
         }
 
         /* renamed from: a */
         public void mo5662a(int i) {
-            C2261g.m9763a("CameraSettingActivity", "onBleDisconnected");
+            ImageAppLog.debug("CameraSettingActivity", "onBleDisconnected");
             if (CameraSettingActivity.this._handler != null) {
                 CameraSettingActivity.this._handler.post(new Runnable() {
                     public void run() {
-                        C2331d.m10100a((Activity) CameraSettingActivity.this);
-                        C2331d.m10114a((Activity) CameraSettingActivity.this, C2328a.ON_CAMERA_SETTING_NET_ERROR, (Bundle) null);
+                        DialogFactory.m10100a((Activity) CameraSettingActivity.this);
+                        DialogFactory.m10114a((Activity) CameraSettingActivity.this, C2328a.ON_CAMERA_SETTING_NET_ERROR, (Bundle) null);
                         CameraSettingActivity.this.f8536e.setText(R.string.msg_cloud_no_connecting);
                         CameraSettingActivity.this.f8538g.clear();
                         CameraSettingActivity.this.f8543l.clear();
@@ -202,20 +202,20 @@ public class CameraSettingActivity extends C5741i {
 
         /* renamed from: d */
         public void mo5672d() {
-            C2261g.m9763a("CameraSettingActivity", "onBleConnectError");
+            ImageAppLog.debug("CameraSettingActivity", "onBleConnectError");
         }
 
         /* renamed from: a */
         public void mo5663a(BluetoothDevice bluetoothDevice, String str, String str2, String str3) {
-            C2261g.m9763a("CameraSettingActivity", "onBleScanResult");
-            C2261g.m9763a("CameraSettingActivity", "devName:" + str);
-            C2261g.m9763a("CameraSettingActivity", "publicAddress:" + str2);
-            C2261g.m9763a("CameraSettingActivity", "state:" + str3);
+            ImageAppLog.debug("CameraSettingActivity", "onBleScanResult");
+            ImageAppLog.debug("CameraSettingActivity", "devName:" + str);
+            ImageAppLog.debug("CameraSettingActivity", "publicAddress:" + str2);
+            ImageAppLog.debug("CameraSettingActivity", "state:" + str3);
         }
 
         /* renamed from: a */
         public void mo5667a(UUID uuid, int i, Bundle bundle) {
-            C2261g.m9763a("CameraSettingActivity", "onBleRead");
+            ImageAppLog.debug("CameraSettingActivity", "onBleRead");
             if (uuid.equals(UUID.fromString("054ac623-3214-11e6-0001-0002a5d5c51b"))) {
                 byte[] byteArray = bundle.getByteArray("VALUE");
                 if (byteArray != null) {
@@ -225,12 +225,12 @@ public class CameraSettingActivity extends C5741i {
                     CameraSettingActivity.this.f8546p = CameraSettingActivity.this.f8533b.mo6787c(true);
                 }
                 if (CameraSettingActivity.this.f8546p != null && i == 0) {
-                    C2261g.m9763a("CameraSettingActivity", "readData:" + CameraSettingActivity.this.f8546p.mo5626a(37));
+                    ImageAppLog.debug("CameraSettingActivity", "readData:" + CameraSettingActivity.this.f8546p.mo5626a(37));
                 } else if (CameraSettingActivity.this._handler != null) {
                     CameraSettingActivity.this._handler.post(new Runnable() {
                         public void run() {
                             CameraSettingActivity.this.mo6758a((String) null);
-                            C2331d.m10100a((Activity) CameraSettingActivity.this);
+                            DialogFactory.m10100a((Activity) CameraSettingActivity.this);
                         }
                     });
                 }
@@ -242,7 +242,7 @@ public class CameraSettingActivity extends C5741i {
                         CameraSettingActivity.this._handler.post(new Runnable() {
                             public void run() {
                                 CameraSettingActivity.this.mo6758a(CameraSettingActivity.this.f8531B + CameraSettingActivity.this.f8530A);
-                                C2331d.m10100a((Activity) CameraSettingActivity.this);
+                                DialogFactory.m10100a((Activity) CameraSettingActivity.this);
                             }
                         });
                     }
@@ -250,7 +250,7 @@ public class CameraSettingActivity extends C5741i {
                     CameraSettingActivity.this._handler.post(new Runnable() {
                         public void run() {
                             CameraSettingActivity.this.mo6758a((String) null);
-                            C2331d.m10100a((Activity) CameraSettingActivity.this);
+                            DialogFactory.m10100a((Activity) CameraSettingActivity.this);
                         }
                     });
                 }
@@ -267,7 +267,7 @@ public class CameraSettingActivity extends C5741i {
                         CameraSettingActivity.this.f8532C = jArr[3] | (jArr[0] << 24) | (jArr[1] << 16) | (jArr[2] << 8);
                     }
                     if (CameraSettingActivity.this.f8546p != null) {
-                        C2261g.m9763a("CameraSettingActivity", "readData:" + CameraSettingActivity.this.f8546p.mo5626a(5));
+                        ImageAppLog.debug("CameraSettingActivity", "readData:" + CameraSettingActivity.this.f8546p.mo5626a(5));
                     }
                 }
             } else if (uuid.equals(UUID.fromString("e206a5c0-3214-11e6-afe4-0002a5d5c51b"))) {
@@ -276,7 +276,7 @@ public class CameraSettingActivity extends C5741i {
                     PreferenceManager.getDefaultSharedPreferences(CameraSettingActivity.this._context).edit().putString("CurrentConnectedSSID", C2266l.m9809a(1, byteArray4)[0]).commit();
                 }
                 if (CameraSettingActivity.this.f8546p != null) {
-                    C2261g.m9763a("CameraSettingActivity", "readData:" + CameraSettingActivity.this.f8546p.mo5626a(6));
+                    ImageAppLog.debug("CameraSettingActivity", "readData:" + CameraSettingActivity.this.f8546p.mo5626a(6));
                 }
             } else if (uuid.equals(UUID.fromString("c97cf1a5-3c03-4290-8c1b-9e74b9500f54"))) {
                 byte[] byteArray5 = bundle.getByteArray("VALUE");
@@ -285,21 +285,21 @@ public class CameraSettingActivity extends C5741i {
                     wrap.order(ByteOrder.LITTLE_ENDIAN);
                     PreferenceManager.getDefaultSharedPreferences(CameraSettingActivity.this._context).edit().putString("CurrentConnectedPass", C1686t.m6748a(wrap.array(), CameraSettingActivity.this.f8532C).trim()).commit();
                 }
-                WifiInfo b = new C2754l(CameraSettingActivity.this._context).mo6743b();
+                WifiInfo b = new WifiUtil(CameraSettingActivity.this._context).mo6743b();
                 if (b.getIpAddress() == 0) {
-                    C2261g.m9763a("CameraSettingActivity", "SoftAP");
+                    ImageAppLog.debug("CameraSettingActivity", "SoftAP");
                     CameraSettingActivity.this.f8553w = true;
                     CameraSettingActivity.this.f8556z = true;
-                    C2261g.m9763a("CameraSettingActivity", "writeData:" + CameraSettingActivity.this.f8546p.mo5627a(11, C4244s.f14197g));
+                    ImageAppLog.debug("CameraSettingActivity", "writeData:" + CameraSettingActivity.this.f8546p.mo5627a(11, C4244s.f14197g));
                     return;
                 }
-                C2261g.m9763a("CameraSettingActivity", "STA");
-                C2261g.m9763a("CameraSettingActivity", "wifiInfo.getSSID():" + b.getSSID());
+                ImageAppLog.debug("CameraSettingActivity", "STA");
+                ImageAppLog.debug("CameraSettingActivity", "wifiInfo.getSSID():" + b.getSSID());
                 String ssid = b.getSSID();
                 if (ssid.startsWith("\"") && ssid.endsWith("\"")) {
                     ssid = ssid.substring(1, ssid.length() - 1);
                 }
-                C2261g.m9763a("CameraSettingActivity", "writeData:" + CameraSettingActivity.this.f8546p.mo5627a(12, C2266l.m9792a(32, ssid).getBytes()));
+                ImageAppLog.debug("CameraSettingActivity", "writeData:" + CameraSettingActivity.this.f8546p.mo5627a(12, C2266l.m9792a(32, ssid).getBytes()));
             }
         }
 
@@ -307,7 +307,7 @@ public class CameraSettingActivity extends C5741i {
         public void mo5666a(UUID uuid, int i) {
             String a;
             String c;
-            C2261g.m9763a("CameraSettingActivity", "onBleWrite");
+            ImageAppLog.debug("CameraSettingActivity", "onBleWrite");
             if (uuid.equals(UUID.fromString("8d08a420-3213-11e6-8aca-0002a5d5c51b"))) {
                 if (CameraSettingActivity.this.f8546p != null) {
                     SharedPreferences sharedPreferences = CameraSettingActivity.this._context.getSharedPreferences("com.panasonic.avc.cng.imageapp.privatekey", 0);
@@ -324,11 +324,11 @@ public class CameraSettingActivity extends C5741i {
                     } else {
                         a = CameraSettingActivity.this.f8546p.mo5627a(2, string2.getBytes());
                     }
-                    C2261g.m9763a("CameraSettingActivity", "writeData:" + a);
+                    ImageAppLog.debug("CameraSettingActivity", "writeData:" + a);
                 }
             } else if (uuid.equals(UUID.fromString("0d6f1880-3217-11e6-a4cb-0002a5d5c51b"))) {
                 if (CameraSettingActivity.this.f8546p != null && CameraSettingActivity.this.f8553w) {
-                    C2261g.m9763a("CameraSettingActivity", "writeData:" + CameraSettingActivity.this.f8546p.mo5627a(4, C4244s.f14194d));
+                    ImageAppLog.debug("CameraSettingActivity", "writeData:" + CameraSettingActivity.this.f8546p.mo5627a(4, C4244s.f14194d));
                     CameraSettingActivity.this.f8553w = false;
                 }
             } else if (uuid.equals(UUID.fromString("e182ec40-3213-11e6-ab07-0002a5d5c51b"))) {
@@ -341,7 +341,7 @@ public class CameraSettingActivity extends C5741i {
                     CameraSettingActivity.this.f8556z = false;
                 }
             } else if (uuid.equals(UUID.fromString("18345be0-3217-11e6-b56c-0002a5d5c51b")) && CameraSettingActivity.this.f8546p != null) {
-                C2261g.m9763a("CameraSettingActivity", "writeData:" + CameraSettingActivity.this.f8546p.mo5627a(11, C4244s.f14199i));
+                ImageAppLog.debug("CameraSettingActivity", "writeData:" + CameraSettingActivity.this.f8546p.mo5627a(11, C4244s.f14199i));
             }
         }
 
@@ -349,20 +349,20 @@ public class CameraSettingActivity extends C5741i {
         public void mo5664a(Bundle bundle, String str) {
             boolean z;
             String str2;
-            C2261g.m9763a("CameraSettingActivity", "onBleNotification");
-            C2261g.m9763a("CameraSettingActivity", "uuid:" + str);
+            ImageAppLog.debug("CameraSettingActivity", "onBleNotification");
+            ImageAppLog.debug("CameraSettingActivity", "uuid:" + str);
             CameraSettingActivity.this.f8553w = true;
             byte[] byteArray = bundle.getByteArray("VALUE");
             if (byteArray != null && byteArray.length > 0) {
-                C2261g.m9763a("CameraSettingActivity", "result[0]:" + byteArray[0]);
+                ImageAppLog.debug("CameraSettingActivity", "result[0]:" + byteArray[0]);
                 if (!str.equals("e182ec41-3213-11e6-ab07-0002a5d5c51b")) {
                     if (byteArray[0] == 0) {
-                        C2261g.m9763a("CameraSettingActivity", "WifiConnectSTA");
-                        C2261g.m9763a("CameraSettingActivity", "writeData:" + CameraSettingActivity.this.f8546p.mo5627a(11, C4244s.f14198h));
+                        ImageAppLog.debug("CameraSettingActivity", "WifiConnectSTA");
+                        ImageAppLog.debug("CameraSettingActivity", "writeData:" + CameraSettingActivity.this.f8546p.mo5627a(11, C4244s.f14198h));
                         z = false;
                     } else {
-                        C2261g.m9763a("CameraSettingActivity", "WifiConnectSoftAP");
-                        C2261g.m9763a("CameraSettingActivity", "writeData:" + CameraSettingActivity.this.f8546p.mo5627a(11, C4244s.f14197g));
+                        ImageAppLog.debug("CameraSettingActivity", "WifiConnectSoftAP");
+                        ImageAppLog.debug("CameraSettingActivity", "writeData:" + CameraSettingActivity.this.f8546p.mo5627a(11, C4244s.f14197g));
                         z = true;
                     }
                     String str3 = "";
@@ -389,44 +389,44 @@ public class CameraSettingActivity extends C5741i {
                     }
                 } else if (byteArray[0] == 1) {
                     CameraSettingActivity.this.dismissAllDlg();
-                    C2331d.m10114a((Activity) CameraSettingActivity.this, C2328a.ON_CAMERA_SETTING_NET_ERROR, (Bundle) null);
+                    DialogFactory.m10114a((Activity) CameraSettingActivity.this, C2328a.ON_CAMERA_SETTING_NET_ERROR, (Bundle) null);
                 }
             }
         }
 
         /* renamed from: a */
         public void mo5661a() {
-            C2261g.m9763a("CameraSettingActivity", "onBleScanStart");
+            ImageAppLog.debug("CameraSettingActivity", "onBleScanStart");
         }
 
         /* renamed from: c */
         public void mo5671c() {
-            C2261g.m9763a("CameraSettingActivity", "onBleConnectTimeOut");
+            ImageAppLog.debug("CameraSettingActivity", "onBleConnectTimeOut");
         }
 
         /* renamed from: a */
         public void mo5665a(String str) {
-            C2261g.m9763a("CameraSettingActivity", "onBleCopyStatus");
+            ImageAppLog.debug("CameraSettingActivity", "onBleCopyStatus");
         }
 
         /* renamed from: b */
         public void mo5670b(boolean z) {
-            C2261g.m9763a("CameraSettingActivity", "onBleNotificationEnable");
+            ImageAppLog.debug("CameraSettingActivity", "onBleNotificationEnable");
         }
 
         /* renamed from: e */
         public void mo5673e() {
-            C2261g.m9763a("CameraSettingActivity", "onBleServicePrepared");
+            ImageAppLog.debug("CameraSettingActivity", "onBleServicePrepared");
         }
 
         /* renamed from: f */
         public void mo5674f() {
-            C2261g.m9763a("CameraSettingActivity", "onBleScanResultError");
+            ImageAppLog.debug("CameraSettingActivity", "onBleScanResultError");
         }
 
         /* renamed from: g */
         public void mo5675g() {
-            C2261g.m9763a("CameraSettingActivity", "onAutoSendAcctrlDone");
+            ImageAppLog.debug("CameraSettingActivity", "onAutoSendAcctrlDone");
         }
     }
 
@@ -436,11 +436,11 @@ public class CameraSettingActivity extends C5741i {
         }
 
         /* renamed from: a */
-        public void mo5337a(C1846e eVar) {
-            if ((eVar == null || !C1846e.m7190a(eVar)) && CameraSettingActivity.this._handler != null) {
+        public void mo5337a(CameraStatus eVar) {
+            if ((eVar == null || !CameraStatus.m7190a(eVar)) && CameraSettingActivity.this._handler != null) {
                 CameraSettingActivity.this._handler.post(new Runnable() {
                     public void run() {
-                        C2331d.m10114a((Activity) CameraSettingActivity.this, C2328a.ON_DISCONNECT_FINISH, (Bundle) null);
+                        DialogFactory.m10114a((Activity) CameraSettingActivity.this, C2328a.ON_DISCONNECT_FINISH, (Bundle) null);
                     }
                 });
             }
@@ -463,12 +463,12 @@ public class CameraSettingActivity extends C5741i {
 
         /* renamed from: a */
         public void mo5608a() {
-            C2261g.m9763a("CameraSettingActivity", "onConnectStart()");
+            ImageAppLog.debug("CameraSettingActivity", "onConnectStart()");
         }
 
         /* renamed from: a */
         public void mo5609a(int i, C2649a aVar) {
-            C2261g.m9763a("CameraSettingActivity", "onConnected()");
+            ImageAppLog.debug("CameraSettingActivity", "onConnected()");
             if (CameraSettingActivity.this.f8546p != null) {
                 CameraSettingActivity.this.f8546p.mo5634a(CameraSettingActivity.this.f8549s, false, false, true);
             }
@@ -476,7 +476,7 @@ public class CameraSettingActivity extends C5741i {
 
         /* renamed from: a */
         public void mo5610a(int i, boolean z) {
-            C2261g.m9763a("CameraSettingActivity", "onWifiEnableStatus()");
+            ImageAppLog.debug("CameraSettingActivity", "onWifiEnableStatus()");
             if (!z) {
                 switch (i) {
                     case 1:
@@ -490,13 +490,13 @@ public class CameraSettingActivity extends C5741i {
                         return;
                     case 2:
                         if (CameraSettingActivity.this.f8555y) {
-                            C2331d.m10114a((Activity) CameraSettingActivity.this, C2328a.WAIT_PROCESSING, (Bundle) null);
+                            DialogFactory.m10114a((Activity) CameraSettingActivity.this, C2328a.WAIT_PROCESSING, (Bundle) null);
                             CameraSettingActivity.this.m11406e();
                             return;
                         }
                         return;
                     case 3:
-                        C2331d.m10114a((Activity) CameraSettingActivity.this, C2328a.ON_BT_WIFI_CONNECT_CONFIRM, (Bundle) null);
+                        DialogFactory.m10114a((Activity) CameraSettingActivity.this, C2328a.ON_BT_WIFI_CONNECT_CONFIRM, (Bundle) null);
                         return;
                     default:
                         return;
@@ -506,7 +506,7 @@ public class CameraSettingActivity extends C5741i {
 
         /* renamed from: a */
         public void mo5611a(boolean z, int i, boolean z2) {
-            C2261g.m9763a("CameraSettingActivity", "onSetWifiEnableResult()");
+            ImageAppLog.debug("CameraSettingActivity", "onSetWifiEnableResult()");
             if (CameraSettingActivity.this.f8555y) {
                 CameraSettingActivity.this.m11406e();
                 return;
@@ -522,9 +522,9 @@ public class CameraSettingActivity extends C5741i {
 
         /* renamed from: a */
         public void mo5612a(boolean z, C1892f fVar, boolean z2, int i) {
-            C2261g.m9763a("CameraSettingActivity", "onFinishConnectCamera()");
-            C2261g.m9763a("CameraSettingActivity", "isSuccess:" + z);
-            C2261g.m9763a("CameraSettingActivity", "reason:" + i);
+            ImageAppLog.debug("CameraSettingActivity", "onFinishConnectCamera()");
+            ImageAppLog.debug("CameraSettingActivity", "isSuccess:" + z);
+            ImageAppLog.debug("CameraSettingActivity", "reason:" + i);
             if (CameraSettingActivity.this.f8546p != null) {
                 CameraSettingActivity.this.f8546p.mo5658t();
             }
@@ -542,11 +542,11 @@ public class CameraSettingActivity extends C5741i {
         setContentView(R.layout.activity_camera_setting);
         this.f8547q = new C2762a();
         this.f8548r = new C2769c();
-        this.f8533b = (C2772c) C2316j.m10030a(C2772c.f8586e);
+        this.f8533b = (CameraSettingViewModel) C2316j.m10030a(CameraSettingViewModel.f8586e);
         if (this.f8533b == null) {
-            this.f8533b = new C2772c(this._context, this._handler, this.f8547q, this.f8548r);
+            this.f8533b = new CameraSettingViewModel(this._context, this._handler, this.f8547q, this.f8548r);
             this.f8533b.mo6786a(this._context, this._handler, this.f8547q, this.f8548r);
-            C2316j.m10032a(C2772c.f8586e, this.f8533b);
+            C2316j.m10032a(CameraSettingViewModel.f8586e, this.f8533b);
         } else {
             this.f8533b.mo6786a(this._context, this._handler, this.f8547q, this.f8548r);
         }
@@ -561,8 +561,8 @@ public class CameraSettingActivity extends C5741i {
         }
         C1892f a = C1712b.m6919c().mo4896a();
         if (a != null) {
-            this.f8534c = new C1468ao(a.f5682d);
-            this.f8535d = new C1543y(a.f5682d);
+            this.f8534c = new StatusCommand(a.f5682d);
+            this.f8535d = new ModeChangeCommand(a.f5682d);
             this.f8536e.setText(this.f8540i);
         } else if (this.f8555y) {
             this.f8536e.setText(this.f8540i);
@@ -590,11 +590,11 @@ public class CameraSettingActivity extends C5741i {
                 }
                 Bundle bundle = new Bundle();
                 bundle.putStringArray(C2378b.ITEM_LIST.name(), CameraSettingActivity.this.f8541j);
-                C2331d.m10114a((Activity) CameraSettingActivity.this, C2328a.ON_CAMERA_SETTING_MENU, bundle);
+                DialogFactory.m10114a((Activity) CameraSettingActivity.this, C2328a.ON_CAMERA_SETTING_MENU, bundle);
             }
         });
         this.f8544n = new C2767b();
-        this.f8545o = C2253z.m9680a(this._context, true);
+        this.f8545o = ServiceFactory.m9680a(this._context, true);
         if (this.f8545o != null) {
             this.f8545o.mo5268a((C2031c) this.f8544n);
         }
@@ -607,7 +607,7 @@ public class CameraSettingActivity extends C5741i {
 
     /* access modifiers changed from: protected */
     public void onResume() {
-        C2261g.m9763a("CameraSettingActivity", "onResume()");
+        ImageAppLog.debug("CameraSettingActivity", "onResume()");
         super.onResume();
         if (!C2266l.m9824c(this._context)) {
             mo6758a((String) null);
@@ -639,22 +639,22 @@ public class CameraSettingActivity extends C5741i {
         if (this.f8546p.mo5645g() && this.f8546p.mo5644f()) {
             return false;
         }
-        C2331d.m10114a((Activity) this, C2328a.WAIT_PROCESSING, (Bundle) null);
+        DialogFactory.m10114a((Activity) this, C2328a.WAIT_PROCESSING, (Bundle) null);
         String a = this.f8546p.mo5626a(38);
-        C2261g.m9763a("CameraSettingActivity", "readData:" + a);
+        ImageAppLog.debug("CameraSettingActivity", "readData:" + a);
         if (a.equals("Critical_Error")) {
-            C2331d.m10100a((Activity) this);
+            DialogFactory.m10100a((Activity) this);
         }
         return true;
     }
 
     /* access modifiers changed from: protected */
     public void onPause() {
-        C2261g.m9763a("CameraSettingActivity", "onPause()");
+        ImageAppLog.debug("CameraSettingActivity", "onPause()");
         super.onPause();
         if (this.f8546p != null) {
             this.f8546p.mo5641c();
-            C2253z.m9712j();
+            ServiceFactory.m9712j();
             this.f8546p = null;
         }
     }
@@ -664,7 +664,7 @@ public class CameraSettingActivity extends C5741i {
             this.f8545o.mo5276b((C2031c) this.f8544n);
             this.f8544n = null;
         }
-        C2316j.m10034b(C2772c.f8586e);
+        C2316j.m10034b(CameraSettingViewModel.f8586e);
         super.finish();
     }
 
@@ -693,7 +693,7 @@ public class CameraSettingActivity extends C5741i {
         switch (aVar) {
             case ON_BT_WIFI_CONNECT_CONFIRM:
                 if (this.f8555y) {
-                    C2331d.m10114a((Activity) this, C2328a.WAIT_PROCESSING, (Bundle) null);
+                    DialogFactory.m10114a((Activity) this, C2328a.WAIT_PROCESSING, (Bundle) null);
                     if (this.f8546p != null) {
                         this.f8546p.mo5635a(true);
                         return;
@@ -721,7 +721,7 @@ public class CameraSettingActivity extends C5741i {
     }
 
     public void OnClickSave(View view) {
-        C2261g.m9760a(3203073, "");
+        ImageAppLog.m9760a(3203073, "");
         C1892f a = C1712b.m6919c().mo4896a();
         if (a != null) {
             mo6757a(a);
@@ -749,15 +749,15 @@ public class CameraSettingActivity extends C5741i {
     /* renamed from: a */
     public void mo6757a(C1892f fVar) {
         if (this.f8538g.getCount() >= f8529m) {
-            C2331d.m10114a((Activity) this, C2328a.ON_CAMERA_SETTING_MAX, (Bundle) null);
+            DialogFactory.m10114a((Activity) this, C2328a.ON_CAMERA_SETTING_MAX, (Bundle) null);
             return;
         }
         if (this.f8534c == null || this.f8535d == null) {
             if (fVar != null) {
-                this.f8534c = new C1468ao(fVar.f5682d);
-                this.f8535d = new C1543y(fVar.f5682d);
+                this.f8534c = new StatusCommand(fVar.f5682d);
+                this.f8535d = new ModeChangeCommand(fVar.f5682d);
             } else {
-                C2331d.m10114a((Activity) this, C2328a.ON_CAMERA_SETTING_NET_ERROR, (Bundle) null);
+                DialogFactory.m10114a((Activity) this, C2328a.ON_CAMERA_SETTING_NET_ERROR, (Bundle) null);
                 return;
             }
         }
@@ -765,11 +765,11 @@ public class CameraSettingActivity extends C5741i {
             public void run() {
                 final byte[] f = CameraSettingActivity.this.f8534c.mo3556f();
                 if (f == null) {
-                    C2331d.m10100a((Activity) CameraSettingActivity.this);
-                    C2331d.m10114a((Activity) CameraSettingActivity.this, C2328a.ON_CAMERA_SETTING_NET_ERROR, (Bundle) null);
+                    DialogFactory.m10100a((Activity) CameraSettingActivity.this);
+                    DialogFactory.m10114a((Activity) CameraSettingActivity.this, C2328a.ON_CAMERA_SETTING_NET_ERROR, (Bundle) null);
                     return;
                 }
-                C2331d.m10100a((Activity) CameraSettingActivity.this);
+                DialogFactory.m10100a((Activity) CameraSettingActivity.this);
                 final String str = CameraSettingActivity.this.f8536e.getText() + " " + new SimpleDateFormat("yyyy/MM/dd HH:mm:ss", Locale.getDefault()).format(new Date());
                 if (CameraSettingActivity.this._handler != null) {
                     CameraSettingActivity.this._handler.post(new Runnable() {
@@ -787,10 +787,10 @@ public class CameraSettingActivity extends C5741i {
         final byte[] bArr;
         if (this.f8534c == null || this.f8535d == null) {
             if (fVar != null) {
-                this.f8534c = new C1468ao(fVar.f5682d);
-                this.f8535d = new C1543y(fVar.f5682d);
+                this.f8534c = new StatusCommand(fVar.f5682d);
+                this.f8535d = new ModeChangeCommand(fVar.f5682d);
             } else {
-                C2331d.m10114a((Activity) this, C2328a.ON_CAMERA_SETTING_NET_ERROR, (Bundle) null);
+                DialogFactory.m10114a((Activity) this, C2328a.ON_CAMERA_SETTING_NET_ERROR, (Bundle) null);
                 return;
             }
         }
@@ -810,23 +810,23 @@ public class CameraSettingActivity extends C5741i {
             }
         }
         if (bArr == null) {
-            C2331d.m10114a((Activity) this, C2328a.ON_CAMERA_SETTING_NET_ERROR, (Bundle) null);
+            DialogFactory.m10114a((Activity) this, C2328a.ON_CAMERA_SETTING_NET_ERROR, (Bundle) null);
         } else {
             new Thread(new Runnable() {
                 public void run() {
                     if (!CameraSettingActivity.this.f8534c.mo3549a(bArr, bArr.length)) {
-                        C2331d.m10100a((Activity) CameraSettingActivity.this);
-                        C2331d.m10114a((Activity) CameraSettingActivity.this, C2328a.ON_CAMERA_SETTING_NET_ERROR, (Bundle) null);
+                        DialogFactory.m10100a((Activity) CameraSettingActivity.this);
+                        DialogFactory.m10114a((Activity) CameraSettingActivity.this, C2328a.ON_CAMERA_SETTING_NET_ERROR, (Bundle) null);
                         return;
                     }
-                    C2331d.m10100a((Activity) CameraSettingActivity.this);
+                    DialogFactory.m10100a((Activity) CameraSettingActivity.this);
                 }
             }).start();
         }
     }
 
     public void OnClickRenameOK(View view) {
-        String obj = C2331d.m10128c(this, C2328a.ON_CAMERA_SETTING_NET_RENAME, R.id.renameEdit).toString();
+        String obj = DialogFactory.m10128c(this, C2328a.ON_CAMERA_SETTING_NET_RENAME, R.id.renameEdit).toString();
         String str = (String) this.f8543l.get(this.f8539h);
         List c = mo6761c();
         int i = 0;
@@ -841,11 +841,11 @@ public class CameraSettingActivity extends C5741i {
                 i = i2 + 1;
             }
         }
-        C2331d.m10100a((Activity) this);
+        DialogFactory.m10100a((Activity) this);
     }
 
     public void OnClickRenameCancel(View view) {
-        C2331d.m10100a((Activity) this);
+        DialogFactory.m10100a((Activity) this);
     }
 
     /* renamed from: a */
@@ -859,14 +859,14 @@ public class CameraSettingActivity extends C5741i {
                 this.f8546p.mo5656r();
             }
         } else {
-            C2331d.m10114a((Activity) this, C2328a.ON_CAMERA_SETTING_NET_ERROR, (Bundle) null);
+            DialogFactory.m10114a((Activity) this, C2328a.ON_CAMERA_SETTING_NET_ERROR, (Bundle) null);
         }
     }
 
     /* renamed from: b */
     public void mo6759b() {
-        C2331d.m10114a((Activity) this, C2328a.ON_CAMERA_SETTING_NET_RENAME, (Bundle) null);
-        Dialog c = C2331d.m10127c(this, C2328a.ON_CAMERA_SETTING_NET_RENAME);
+        DialogFactory.m10114a((Activity) this, C2328a.ON_CAMERA_SETTING_NET_RENAME, (Bundle) null);
+        Dialog c = DialogFactory.m10127c(this, C2328a.ON_CAMERA_SETTING_NET_RENAME);
         if (c != null) {
             this.f8542k = (Button) c.findViewById(R.id.renameOkButton);
             EditText editText = (EditText) c.findViewById(R.id.renameEdit);
@@ -894,27 +894,27 @@ public class CameraSettingActivity extends C5741i {
             case ON_CAMERA_SETTING_MENU:
                 if (this.f8555y) {
                     if (i == 0) {
-                        C2261g.m9760a(3203074, "");
+                        ImageAppLog.m9760a(3203074, "");
                         mo6756a();
                         return;
                     } else if (i == 1) {
-                        C2261g.m9760a(3203075, "");
+                        ImageAppLog.m9760a(3203075, "");
                         mo6759b();
                         return;
                     } else if (i == 2) {
-                        C2261g.m9760a(3203076, "");
-                        C2331d.m10114a((Activity) this, C2328a.ON_CAMERA_SETTING_COMFIRM_DELETE, (Bundle) null);
+                        ImageAppLog.m9760a(3203076, "");
+                        DialogFactory.m10114a((Activity) this, C2328a.ON_CAMERA_SETTING_COMFIRM_DELETE, (Bundle) null);
                         return;
                     } else {
                         return;
                     }
                 } else if (i == 0) {
-                    C2261g.m9760a(3203075, "");
+                    ImageAppLog.m9760a(3203075, "");
                     mo6759b();
                     return;
                 } else if (i == 1) {
-                    C2261g.m9760a(3203076, "");
-                    C2331d.m10114a((Activity) this, C2328a.ON_CAMERA_SETTING_COMFIRM_DELETE, (Bundle) null);
+                    ImageAppLog.m9760a(3203076, "");
+                    DialogFactory.m10114a((Activity) this, C2328a.ON_CAMERA_SETTING_COMFIRM_DELETE, (Bundle) null);
                     return;
                 } else {
                     return;

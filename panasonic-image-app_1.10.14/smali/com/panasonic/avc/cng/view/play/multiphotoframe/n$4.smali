@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/view/play/multiphotoframe/n;->l()V
+    value = Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameSelectPictureViewModel;->l()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/panasonic/avc/cng/view/play/multiphotoframe/n;
+.field final synthetic a:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameSelectPictureViewModel;
 
 
 # direct methods
-.method constructor <init>(Lcom/panasonic/avc/cng/view/play/multiphotoframe/n;)V
+.method constructor <init>(Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameSelectPictureViewModel;)V
     .locals 0
 
     .prologue
     .line 730
-    iput-object p1, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/n$4;->a:Lcom/panasonic/avc/cng/view/play/multiphotoframe/n;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/n$4;->a:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameSelectPictureViewModel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -41,16 +41,16 @@
 
     .prologue
     .line 733
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/n$4;->a:Lcom/panasonic/avc/cng/view/play/multiphotoframe/n;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/n$4;->a:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameSelectPictureViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/n;->k:Lcom/panasonic/avc/cng/view/play/multiphotoframe/n$b;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameSelectPictureViewModel;->k:Lcom/panasonic/avc/cng/view/play/multiphotoframe/n$b;
 
     if-eqz v0, :cond_0
 
     .line 734
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/n$4;->a:Lcom/panasonic/avc/cng/view/play/multiphotoframe/n;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/n$4;->a:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameSelectPictureViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/n;->k:Lcom/panasonic/avc/cng/view/play/multiphotoframe/n$b;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameSelectPictureViewModel;->k:Lcom/panasonic/avc/cng/view/play/multiphotoframe/n$b;
 
     invoke-interface {v0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/n$b;->a()V
 

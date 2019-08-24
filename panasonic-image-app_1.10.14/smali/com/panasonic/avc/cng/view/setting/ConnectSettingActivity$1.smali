@@ -68,7 +68,7 @@
     .line 515
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity$1;->b:Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b(Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;)Lcom/panasonic/avc/cng/view/setting/g;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;->b(Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;)Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;
 
     move-result-object v0
 
@@ -78,7 +78,7 @@
 
     move-result v1
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/setting/g;->a(I)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/setting/ConnectSettingViewModel;->a(I)V
 
     .line 517
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity$1;->b:Lcom/panasonic/avc/cng/view/setting/ConnectSettingActivity;

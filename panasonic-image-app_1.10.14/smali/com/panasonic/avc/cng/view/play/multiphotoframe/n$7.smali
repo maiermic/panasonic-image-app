@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/view/play/multiphotoframe/n;->a(Lcom/panasonic/avc/cng/model/c/e;)V
+    value = Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameSelectPictureViewModel;->a(Lcom/panasonic/avc/cng/model/c/CameraStatus;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,16 +20,16 @@
 # instance fields
 .field final synthetic a:Ljava/lang/String;
 
-.field final synthetic b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/n;
+.field final synthetic b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameSelectPictureViewModel;
 
 
 # direct methods
-.method constructor <init>(Lcom/panasonic/avc/cng/view/play/multiphotoframe/n;Ljava/lang/String;)V
+.method constructor <init>(Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameSelectPictureViewModel;Ljava/lang/String;)V
     .locals 0
 
     .prologue
     .line 936
-    iput-object p1, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/n$7;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/n;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/n$7;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameSelectPictureViewModel;
 
     iput-object p2, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/n$7;->a:Ljava/lang/String;
 
@@ -45,9 +45,9 @@
 
     .prologue
     .line 939
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/n$7;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/n;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/multiphotoframe/n$7;->b:Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameSelectPictureViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/n;->y()Lcom/panasonic/avc/cng/view/parts/aa;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/multiphotoframe/MultiPhotoFrameSelectPictureViewModel;->y()Lcom/panasonic/avc/cng/view/parts/aa;
 
     move-result-object v1
 

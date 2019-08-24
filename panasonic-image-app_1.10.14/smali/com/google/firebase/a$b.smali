@@ -4,7 +4,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/google/firebase/a;
+    value = Lcom/google/firebase/FirebaseApp;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

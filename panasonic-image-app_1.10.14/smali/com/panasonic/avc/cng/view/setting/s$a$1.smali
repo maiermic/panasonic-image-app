@@ -43,9 +43,9 @@
     .line 219
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/s$a$1;->a:Lcom/panasonic/avc/cng/view/setting/s$a;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/s$a;->a:Lcom/panasonic/avc/cng/view/setting/s;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/s$a;->a:Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerWhiteBalanceViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/s;->b(Lcom/panasonic/avc/cng/view/setting/s;)Lcom/panasonic/avc/cng/view/setting/am$h;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerWhiteBalanceViewModel;->b(Lcom/panasonic/avc/cng/view/setting/LiveSetupDrumPickerWhiteBalanceViewModel;)Lcom/panasonic/avc/cng/view/setting/am$h;
 
     move-result-object v0
 

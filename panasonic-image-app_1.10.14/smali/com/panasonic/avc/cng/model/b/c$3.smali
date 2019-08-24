@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/model/b/c;->h()V
+    value = Lcom/panasonic/avc/cng/model/b/ContentsCopyViewModel;->h()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/panasonic/avc/cng/model/b/c;
+.field final synthetic a:Lcom/panasonic/avc/cng/model/b/ContentsCopyViewModel;
 
 
 # direct methods
-.method constructor <init>(Lcom/panasonic/avc/cng/model/b/c;)V
+.method constructor <init>(Lcom/panasonic/avc/cng/model/b/ContentsCopyViewModel;)V
     .locals 0
 
     .prologue
     .line 271
-    iput-object p1, p0, Lcom/panasonic/avc/cng/model/b/c$3;->a:Lcom/panasonic/avc/cng/model/b/c;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/model/b/c$3;->a:Lcom/panasonic/avc/cng/model/b/ContentsCopyViewModel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -41,18 +41,18 @@
 
     .prologue
     .line 273
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/b/c$3;->a:Lcom/panasonic/avc/cng/model/b/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/b/c$3;->a:Lcom/panasonic/avc/cng/model/b/ContentsCopyViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/b/c;->b(Lcom/panasonic/avc/cng/model/b/c;)Lcom/panasonic/avc/cng/model/b/c$b;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/b/ContentsCopyViewModel;->b(Lcom/panasonic/avc/cng/model/b/ContentsCopyViewModel;)Lcom/panasonic/avc/cng/model/b/c$b;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 274
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/b/c$3;->a:Lcom/panasonic/avc/cng/model/b/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/b/c$3;->a:Lcom/panasonic/avc/cng/model/b/ContentsCopyViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/b/c;->b(Lcom/panasonic/avc/cng/model/b/c;)Lcom/panasonic/avc/cng/model/b/c$b;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/b/ContentsCopyViewModel;->b(Lcom/panasonic/avc/cng/model/b/ContentsCopyViewModel;)Lcom/panasonic/avc/cng/model/b/c$b;
 
     move-result-object v0
 

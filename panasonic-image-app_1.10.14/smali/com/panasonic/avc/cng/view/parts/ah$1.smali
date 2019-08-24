@@ -43,11 +43,11 @@
     .line 351
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ah$1;->a:Lcom/panasonic/avc/cng/view/parts/ah;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/parts/ah;->a(Lcom/panasonic/avc/cng/view/parts/ah;)Lcom/panasonic/avc/cng/view/setting/w;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/parts/ah;->a(Lcom/panasonic/avc/cng/view/parts/ah;)Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSViewModel;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/w;->H()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupMovieFandSSViewModel;->H()Ljava/lang/String;
 
     move-result-object v0
 
@@ -79,13 +79,13 @@
     .line 354
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/parts/ah$1;->a:Lcom/panasonic/avc/cng/view/parts/ah;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/parts/ah;->d(Lcom/panasonic/avc/cng/view/parts/ah;)Lcom/panasonic/avc/cng/view/parts/ab;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/parts/ah;->d(Lcom/panasonic/avc/cng/view/parts/ah;)Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;
 
     move-result-object v0
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/parts/ab;->setUserTouch(Z)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/parts/SetPickerPosition;->setUserTouch(Z)V
 
     .line 356
     :cond_0

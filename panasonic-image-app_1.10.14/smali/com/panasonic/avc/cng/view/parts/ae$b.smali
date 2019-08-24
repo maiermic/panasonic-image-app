@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/panasonic/avc/cng/view/parts/ae;
+    value = Lcom/panasonic/avc/cng/view/parts/DrumPickerFandSSandPLayout;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -19,16 +19,16 @@
 
 .field public b:J
 
-.field final synthetic c:Lcom/panasonic/avc/cng/view/parts/ae;
+.field final synthetic c:Lcom/panasonic/avc/cng/view/parts/DrumPickerFandSSandPLayout;
 
 
 # direct methods
-.method public constructor <init>(Lcom/panasonic/avc/cng/view/parts/ae;Ljava/lang/String;J)V
+.method public constructor <init>(Lcom/panasonic/avc/cng/view/parts/DrumPickerFandSSandPLayout;Ljava/lang/String;J)V
     .locals 1
 
     .prologue
     .line 62
-    iput-object p1, p0, Lcom/panasonic/avc/cng/view/parts/ae$b;->c:Lcom/panasonic/avc/cng/view/parts/ae;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/view/parts/ae$b;->c:Lcom/panasonic/avc/cng/view/parts/DrumPickerFandSSandPLayout;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

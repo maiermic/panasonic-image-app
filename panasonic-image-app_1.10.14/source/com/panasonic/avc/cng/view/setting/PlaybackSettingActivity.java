@@ -24,18 +24,18 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
-import com.panasonic.avc.cng.core.p040a.C1540v;
+import com.panasonic.avc.cng.core.p040a.MenuCommand;
 import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.C1892f;
 import com.panasonic.avc.cng.model.service.C1985b;
 import com.panasonic.avc.cng.model.service.C1985b.C1986a;
-import com.panasonic.avc.cng.model.service.C2253z;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.util.C2266l;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
-import com.panasonic.avc.cng.view.setting.C5537al.C5540a;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
+import com.panasonic.avc.cng.view.setting.SettingMenuBaseActivity.C5540a;
 
 public class PlaybackSettingActivity extends C5741i {
 
@@ -119,7 +119,7 @@ public class PlaybackSettingActivity extends C5741i {
                 this.f16459b.setOnPreferenceChangeListener(new OnPreferenceChangeListener() {
                     public boolean onPreferenceChange(Preference preference, Object obj) {
                         String str = obj.equals("PlaySortName") ? "file_no" : "date";
-                        C1985b a = C2253z.m9679a((Context) C5217a.this.getActivity(), a);
+                        C1985b a = ServiceFactory.m9679a((Context) C5217a.this.getActivity(), a);
                         if (a == null) {
                             return false;
                         }
@@ -148,7 +148,7 @@ public class PlaybackSettingActivity extends C5741i {
             preferenceScreen.setTitle(m19998a((int) R.string.setup_smaope_picjmp, 0.9f));
             preferenceScreen.setOnPreferenceClickListener(new OnPreferenceClickListener() {
                 public boolean onPreferenceClick(Preference preference) {
-                    C2261g.m9760a(3174401, "");
+                    ImageAppLog.m9760a(3174401, "");
                     C5217a.this.startActivityForResult(new Intent(C5217a.this.getActivity(), PictureJumpSetupActivity.class), 7);
                     return false;
                 }
@@ -163,7 +163,7 @@ public class PlaybackSettingActivity extends C5741i {
                             listView.setItemChecked(1, true);
                         }
                     }
-                    C2261g.m9760a(3174402, "");
+                    ImageAppLog.m9760a(3174402, "");
                     return false;
                 }
             });
@@ -180,7 +180,7 @@ public class PlaybackSettingActivity extends C5741i {
             listPreference3.setTitle(m19998a((int) R.string.setup_smaope_web_picsize, string.equalsIgnoreCase("fr-CA") ? 0.8f : 0.9f));
             listPreference3.setOnPreferenceClickListener(new OnPreferenceClickListener() {
                 public boolean onPreferenceClick(Preference preference) {
-                    C2261g.m9760a(3174403, "");
+                    ImageAppLog.m9760a(3174403, "");
                     return false;
                 }
             });
@@ -188,7 +188,7 @@ public class PlaybackSettingActivity extends C5741i {
             checkBoxPreference.setTitle(m19998a((int) R.string.setup_smaope_delete_gps, 0.9f));
             checkBoxPreference.setOnPreferenceClickListener(new OnPreferenceClickListener() {
                 public boolean onPreferenceClick(Preference preference) {
-                    C2261g.m9760a(3174404, "");
+                    ImageAppLog.m9760a(3174404, "");
                     return false;
                 }
             });
@@ -199,11 +199,11 @@ public class PlaybackSettingActivity extends C5741i {
                     if (!C2266l.m9800a()) {
                         C5217a.this.f16462e.post(new Runnable() {
                             public void run() {
-                                C2331d.m10114a(C5217a.this.getActivity(), C2328a.ON_ERROR_NO_CONNECT_INTERNET, (Bundle) null);
+                                DialogFactory.m10114a(C5217a.this.getActivity(), C2328a.ON_ERROR_NO_CONNECT_INTERNET, (Bundle) null);
                             }
                         });
                     } else {
-                        C2261g.m9760a(3174405, "");
+                        ImageAppLog.m9760a(3174405, "");
                         C5217a.this.startActivityForResult(new Intent(C5217a.this.getActivity(), PicMateSettingActivity.class), 7);
                     }
                     return false;
@@ -213,7 +213,7 @@ public class PlaybackSettingActivity extends C5741i {
             checkBoxPreference2.setTitle(m19998a((int) R.string.setup_smaope_player_select, 0.9f));
             checkBoxPreference2.setOnPreferenceClickListener(new OnPreferenceClickListener() {
                 public boolean onPreferenceClick(Preference preference) {
-                    C2261g.m9760a(3174406, "");
+                    ImageAppLog.m9760a(3174406, "");
                     return false;
                 }
             });
@@ -297,7 +297,7 @@ public class PlaybackSettingActivity extends C5741i {
                 public void run() {
                     new Thread(new Runnable() {
                         public void run() {
-                            C5217a.this.f16461d = new C1540v(fVar.f5682d).mo3409a();
+                            C5217a.this.f16461d = new MenuCommand(fVar.f5682d).mo3409a();
                             boolean equalsIgnoreCase = C5217a.this.f16461d.equalsIgnoreCase("file_no");
                             C5217a.this.f16462e.obtainMessage(10001, equalsIgnoreCase ? 0 : 1, -1, C5217a.this.getString(equalsIgnoreCase ? R.string.setup_ply_picture_sort_name : R.string.setup_ply_picture_sort_rectime));
                         }

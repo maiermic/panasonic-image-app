@@ -49,7 +49,7 @@
 
     const/4 v3, 0x1
 
-    invoke-static {p0, v1, v0, v2, v3}, Lcom/google/firebase/messaging/e;->a(Landroid/content/Context;Ljava/lang/String;[BLcom/google/firebase/messaging/d;I)V
+    invoke-static {p0, v1, v0, v2, v3}, Lcom/google/firebase/messaging/FirebaseAbtUtil;->a(Landroid/content/Context;Ljava/lang/String;[BLcom/google/firebase/messaging/d;I)V
 
     :cond_0
     const-string v0, "_nr"

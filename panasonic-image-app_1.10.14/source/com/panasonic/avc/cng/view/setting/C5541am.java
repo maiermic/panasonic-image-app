@@ -15,7 +15,7 @@ import com.panasonic.avc.cng.model.p051c.C1860l;
 import com.panasonic.avc.cng.model.p052d.C1879a;
 import com.panasonic.avc.cng.model.service.C1985b;
 import com.panasonic.avc.cng.model.service.C1985b.C1986a;
-import com.panasonic.avc.cng.model.service.C2253z;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
 import com.panasonic.avc.cng.p038a.C1342a;
 import com.panasonic.avc.cng.util.C2277q;
 import com.panasonic.avc.cng.view.cameraconnect.AccessPointSettingActivity;
@@ -1756,7 +1756,7 @@ public class C5541am extends C1342a {
         if (C1712b.m6919c() != null) {
             this.f17169e = C1712b.m6919c().mo4896a();
             if (this.f17169e != null) {
-                this.f17170f = C2253z.m9679a(this.f17168d, this.f17169e);
+                this.f17170f = ServiceFactory.m9679a(this.f17168d, this.f17169e);
                 if (this.f17170f != null) {
                     this.f17167c = this.f17170f.mo5189b();
                 }
@@ -1783,7 +1783,7 @@ public class C5541am extends C1342a {
                     arrayList.add(new C5550d(dVar));
                 } else if (dVar.f5370c.equalsIgnoreCase("sp_embeded_fullscr_preview")) {
                     C1892f a2 = C1712b.m6919c().mo4896a();
-                    C1860l a3 = C2253z.m9679a(this.f17168d, a2).mo5182a("menu_item_id_recmode_pht");
+                    C1860l a3 = ServiceFactory.m9679a(this.f17168d, a2).mo5182a("menu_item_id_recmode_pht");
                     if (a3 == null || a2 == null) {
                         arrayList.add(new C5550d(dVar));
                     } else if ((a3.f5569c == null || !a3.f5569c.equalsIgnoreCase("anmast")) && !a2.mo4889c()) {

@@ -16,16 +16,16 @@ import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.C1878d;
 import com.panasonic.avc.cng.model.C1892f;
 import com.panasonic.avc.cng.model.C1909k;
-import com.panasonic.avc.cng.model.p051c.C1846e;
+import com.panasonic.avc.cng.model.p051c.CameraStatus;
 import com.panasonic.avc.cng.model.service.C1921a;
-import com.panasonic.avc.cng.model.service.C2253z;
-import com.panasonic.avc.cng.model.service.p054a.C1936c;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
+import com.panasonic.avc.cng.model.service.p054a.BrowserServiceCamera;
 import com.panasonic.avc.cng.model.service.p054a.C1941d;
 import com.panasonic.avc.cng.model.service.p054a.C1948f;
 import com.panasonic.avc.cng.p038a.C1344c;
 import com.panasonic.avc.cng.view.p072a.C2291c;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
 import com.panasonic.avc.cng.view.parts.C4262x;
 import com.panasonic.avc.cng.view.smartoperation.ContentPlayerActivity;
 import java.text.DateFormat;
@@ -219,13 +219,13 @@ public class C4784e extends C2291c {
         int i;
         int i2 = 0;
         this.f15563z = new ArrayList<>();
-        C1921a f = C2253z.m9703f();
+        C1921a f = ServiceFactory.m9703f();
         if (f != null) {
             i = f.mo5034b();
         } else {
             i = 0;
         }
-        if (f instanceof C1936c) {
+        if (f instanceof BrowserServiceCamera) {
             for (int i3 = 0; i3 < i; i3++) {
                 C4262x xVar = new C4262x(null, i3, this.f3707b, f);
                 this.f15563z.add(xVar);
@@ -283,13 +283,13 @@ public class C4784e extends C2291c {
     public void mo11144k() {
         int i;
         this.f15563z = new ArrayList<>();
-        C1921a f = C2253z.m9703f();
+        C1921a f = ServiceFactory.m9703f();
         if (f != null) {
             i = f.mo5034b();
         } else {
             i = 0;
         }
-        if (f instanceof C1936c) {
+        if (f instanceof BrowserServiceCamera) {
             for (int i2 = 0; i2 < i; i2++) {
                 C4262x xVar = new C4262x(null, i2, this.f3707b, f);
                 this.f15563z.add(xVar);
@@ -409,7 +409,7 @@ public class C4784e extends C2291c {
 
     /* renamed from: m */
     public void mo11146m() {
-        C1921a f = C2253z.m9703f();
+        C1921a f = ServiceFactory.m9703f();
         if (f != null) {
             f.mo5039d();
             mo11144k();
@@ -418,7 +418,7 @@ public class C4784e extends C2291c {
 
     /* renamed from: n */
     public boolean mo11147n() {
-        C1921a f = C2253z.m9703f();
+        C1921a f = ServiceFactory.m9703f();
         if (f == null || !(f instanceof C1948f)) {
             return false;
         }
@@ -427,7 +427,7 @@ public class C4784e extends C2291c {
 
     /* renamed from: o */
     public boolean mo11148o() {
-        C1921a f = C2253z.m9703f();
+        C1921a f = ServiceFactory.m9703f();
         if (f == null || !(f instanceof C1941d)) {
             return false;
         }
@@ -436,15 +436,15 @@ public class C4784e extends C2291c {
 
     /* renamed from: p */
     public boolean mo11149p() {
-        C1921a f = C2253z.m9703f();
-        if (f == null || !(f instanceof C1936c)) {
+        C1921a f = ServiceFactory.m9703f();
+        if (f == null || !(f instanceof BrowserServiceCamera)) {
             return false;
         }
         return true;
     }
 
     /* renamed from: a */
-    public void mo6018a(C1846e eVar) {
+    public void mo6018a(CameraStatus eVar) {
         String C = eVar.mo4654C();
         if (C.equalsIgnoreCase("high") && this.f3707b != null) {
             this.f3707b.post(new Runnable() {
@@ -546,7 +546,7 @@ public class C4784e extends C2291c {
                 this.f15556s.mo3216a(Boolean.valueOf(xVar.mo10049w()));
                 return;
             }
-            C2331d.m10114a((Activity) this.f3706a, C2328a.ON_EXCEEDED_MAX_SELECT_NUM, (Bundle) null);
+            DialogFactory.m10114a((Activity) this.f3706a, C2328a.ON_EXCEEDED_MAX_SELECT_NUM, (Bundle) null);
         }
     }
 

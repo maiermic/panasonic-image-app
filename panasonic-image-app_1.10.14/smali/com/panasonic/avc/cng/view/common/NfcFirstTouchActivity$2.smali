@@ -43,7 +43,7 @@
     .line 104
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/NfcFirstTouchActivity$2;->a:Lcom/panasonic/avc/cng/view/common/NfcFirstTouchActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/NfcFirstTouchActivity;->a(Lcom/panasonic/avc/cng/view/common/NfcFirstTouchActivity;)Lcom/panasonic/avc/cng/application/c;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/NfcFirstTouchActivity;->a(Lcom/panasonic/avc/cng/view/common/NfcFirstTouchActivity;)Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
     move-result-object v0
 
@@ -51,7 +51,7 @@
 
     move-result-wide v2
 
-    invoke-virtual {v0, v2, v3}, Lcom/panasonic/avc/cng/application/c;->b(J)V
+    invoke-virtual {v0, v2, v3}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->b(J)V
 
     .line 105
     return-void
@@ -66,7 +66,7 @@
 
     const-string v1, ""
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 214
     return-void
@@ -133,7 +133,7 @@
     .line 111
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/NfcFirstTouchActivity$2;->a:Lcom/panasonic/avc/cng/view/common/NfcFirstTouchActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/NfcFirstTouchActivity;->b(Lcom/panasonic/avc/cng/view/common/NfcFirstTouchActivity;)Lcom/panasonic/avc/cng/application/c;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/NfcFirstTouchActivity;->b(Lcom/panasonic/avc/cng/view/common/NfcFirstTouchActivity;)Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
     move-result-object v0
 
@@ -141,7 +141,7 @@
 
     move-result-wide v2
 
-    invoke-virtual {v0, v2, v3}, Lcom/panasonic/avc/cng/application/c;->b(J)V
+    invoke-virtual {v0, v2, v3}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->b(J)V
 
     .line 112
     return-void
@@ -162,7 +162,7 @@
     .line 131
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/NfcFirstTouchActivity$2;->a:Lcom/panasonic/avc/cng/view/common/NfcFirstTouchActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/NfcFirstTouchActivity;->c(Lcom/panasonic/avc/cng/view/common/NfcFirstTouchActivity;)Lcom/panasonic/avc/cng/application/c;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/NfcFirstTouchActivity;->c(Lcom/panasonic/avc/cng/view/common/NfcFirstTouchActivity;)Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
     move-result-object v0
 
@@ -170,7 +170,7 @@
 
     move-result-wide v2
 
-    invoke-virtual {v0, v2, v3}, Lcom/panasonic/avc/cng/application/c;->b(J)V
+    invoke-virtual {v0, v2, v3}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->b(J)V
 
     .line 132
     return-void
@@ -185,11 +185,11 @@
     .line 143
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/NfcFirstTouchActivity$2;->a:Lcom/panasonic/avc/cng/view/common/NfcFirstTouchActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/NfcFirstTouchActivity;->d(Lcom/panasonic/avc/cng/view/common/NfcFirstTouchActivity;)Lcom/panasonic/avc/cng/application/c;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/NfcFirstTouchActivity;->d(Lcom/panasonic/avc/cng/view/common/NfcFirstTouchActivity;)Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
     move-result-object v0
 
-    invoke-virtual {v0, v1, v1}, Lcom/panasonic/avc/cng/application/c;->a(ZZ)V
+    invoke-virtual {v0, v1, v1}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->a(ZZ)V
 
     .line 146
     return-void
@@ -252,7 +252,7 @@
 
     const-string v1, ""
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 206
     return-void
@@ -267,7 +267,7 @@
 
     const-string v1, ""
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 222
     return-void
@@ -282,7 +282,7 @@
 
     const-string v1, ""
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(ILjava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a(ILjava/lang/String;)V
 
     .line 230
     return-void

@@ -27,7 +27,7 @@ import com.panasonic.avc.cng.application.p039a.C1350a;
 import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.util.C2259e;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import java.util.Collection;
 import java.util.List;
 import java.util.Timer;
@@ -84,14 +84,14 @@ public class QrCodeReaderActivity extends C1350a {
     /* renamed from: n */
     private Callback f8618n = new Callback() {
         public void surfaceCreated(SurfaceHolder surfaceHolder) {
-            C2261g.m9771e("QrCodeReaderActivity", "surfaceCreated");
+            ImageAppLog.info("QrCodeReaderActivity", "surfaceCreated");
             if (QrCodeReaderActivity.this.f8610f != null) {
                 QrCodeReaderActivity.this.f8610f.mo5955a(surfaceHolder);
             }
         }
 
         public void surfaceDestroyed(SurfaceHolder surfaceHolder) {
-            C2261g.m9771e("QrCodeReaderActivity", "surfaceDestroyed");
+            ImageAppLog.info("QrCodeReaderActivity", "surfaceDestroyed");
             if (QrCodeReaderActivity.this.f8610f != null) {
                 QrCodeReaderActivity.this.f8610f.mo5959e();
                 QrCodeReaderActivity.this.f8610f.mo5957c();
@@ -100,7 +100,7 @@ public class QrCodeReaderActivity extends C1350a {
         }
 
         public void surfaceChanged(SurfaceHolder surfaceHolder, int i, int i2, int i3) {
-            C2261g.m9771e("QrCodeReaderActivity", "surfaceChanged");
+            ImageAppLog.info("QrCodeReaderActivity", "surfaceChanged");
             if (QrCodeReaderActivity.this.f8610f != null) {
                 Parameters f = QrCodeReaderActivity.this.f8610f.mo5960f();
                 if (f != null) {
@@ -121,7 +121,7 @@ public class QrCodeReaderActivity extends C1350a {
     /* renamed from: o */
     public AutoFocusCallback f8619o = new AutoFocusCallback() {
         public void onAutoFocus(boolean z, Camera camera) {
-            C2261g.m9771e("QrCodeReaderActivity", String.format("onAutoFocus(%b)", new Object[]{Boolean.valueOf(z)}));
+            ImageAppLog.info("QrCodeReaderActivity", String.format("onAutoFocus(%b)", new Object[]{Boolean.valueOf(z)}));
             if (QrCodeReaderActivity.this.f8610f != null) {
                 QrCodeReaderActivity.this.f8610f.mo5954a(QrCodeReaderActivity.this.f8620p);
             }
@@ -133,7 +133,7 @@ public class QrCodeReaderActivity extends C1350a {
     public PreviewCallback f8620p = new PreviewCallback() {
         public void onPreviewFrame(byte[] bArr, Camera camera) {
             int height;
-            C2261g.m9771e("QrCodeReaderActivity", "onPreviewFrame");
+            ImageAppLog.info("QrCodeReaderActivity", "onPreviewFrame");
             int left = QrCodeReaderActivity.this.f8609e ? QrCodeReaderActivity.this.f8612h.getTop() : QrCodeReaderActivity.this.f8612h.getLeft();
             int top = QrCodeReaderActivity.this.f8609e ? QrCodeReaderActivity.this.f8612h.getLeft() : QrCodeReaderActivity.this.f8612h.getTop();
             int width = QrCodeReaderActivity.this.f8609e ? QrCodeReaderActivity.this.f8612h.getHeight() : QrCodeReaderActivity.this.f8612h.getWidth();
@@ -146,9 +146,9 @@ public class QrCodeReaderActivity extends C1350a {
             int i = (int) (((float) top) * QrCodeReaderActivity.this.f8616l);
             int h2 = (int) (((float) width) * QrCodeReaderActivity.this.f8615k);
             int i2 = (int) (((float) height) * QrCodeReaderActivity.this.f8616l);
-            C2261g.m9763a("QrCodeReaderActivity", String.format("PreviewSize(%d, %d)", new Object[]{Integer.valueOf(QrCodeReaderActivity.this.f8614j.x), Integer.valueOf(QrCodeReaderActivity.this.f8614j.y)}));
-            C2261g.m9763a("QrCodeReaderActivity", String.format("FramePosition(%d, %d)", new Object[]{Integer.valueOf(h), Integer.valueOf(i)}));
-            C2261g.m9763a("QrCodeReaderActivity", String.format("FrameSize(%d, %d)", new Object[]{Integer.valueOf(h2), Integer.valueOf(i2)}));
+            ImageAppLog.debug("QrCodeReaderActivity", String.format("PreviewSize(%d, %d)", new Object[]{Integer.valueOf(QrCodeReaderActivity.this.f8614j.x), Integer.valueOf(QrCodeReaderActivity.this.f8614j.y)}));
+            ImageAppLog.debug("QrCodeReaderActivity", String.format("FramePosition(%d, %d)", new Object[]{Integer.valueOf(h), Integer.valueOf(i)}));
+            ImageAppLog.debug("QrCodeReaderActivity", String.format("FrameSize(%d, %d)", new Object[]{Integer.valueOf(h2), Integer.valueOf(i2)}));
             C2809c cVar = new C2809c(bArr, QrCodeReaderActivity.this.f8614j.x, QrCodeReaderActivity.this.f8614j.y, h, i, h2, i2, false);
             if (cVar != null) {
                 try {
@@ -189,7 +189,7 @@ public class QrCodeReaderActivity extends C1350a {
     /* access modifiers changed from: protected */
     public void onResume() {
         super.onResume();
-        C2261g.m9771e("QrCodeReaderActivity", "onResume");
+        ImageAppLog.info("QrCodeReaderActivity", "onResume");
         if (this.f8610f == null) {
             this.f8610f = new C2259e();
             this.f8610f.mo5956b();
@@ -324,7 +324,7 @@ public class QrCodeReaderActivity extends C1350a {
                 this.f8614j = point3;
                 this.f8615k = ((float) this.f8614j.x) / ((float) i);
                 this.f8616l = ((float) this.f8614j.y) / ((float) i2);
-                C2261g.m9763a("QrCodeReaderActivity", String.format("_previewSize(%d,%d)", new Object[]{Integer.valueOf(this.f8614j.x), Integer.valueOf(this.f8614j.y)}));
+                ImageAppLog.debug("QrCodeReaderActivity", String.format("_previewSize(%d,%d)", new Object[]{Integer.valueOf(this.f8614j.x), Integer.valueOf(this.f8614j.y)}));
             }
         }
     }
@@ -342,7 +342,7 @@ public class QrCodeReaderActivity extends C1350a {
     /* access modifiers changed from: private */
     /* renamed from: a */
     public void m11520a(String str, int i) {
-        C2261g.m9771e("QrCodeReaderActivity", str);
+        ImageAppLog.info("QrCodeReaderActivity", str);
     }
 
     /* renamed from: a */
@@ -363,7 +363,7 @@ public class QrCodeReaderActivity extends C1350a {
         if (this.f8608d != null) {
             this.f8608d.post(new Runnable() {
                 public void run() {
-                    C2261g.m9771e("QrCodeReaderActivity", "autoFocus:" + QrCodeReaderActivity.this.f8610f);
+                    ImageAppLog.info("QrCodeReaderActivity", "autoFocus:" + QrCodeReaderActivity.this.f8610f);
                     if (QrCodeReaderActivity.this.f8610f != null) {
                         QrCodeReaderActivity.this.f8610f.mo5952a(QrCodeReaderActivity.this.f8619o);
                     }

@@ -82,9 +82,9 @@
     :cond_1
     iget-object v0, p0, Lcom/google/android/gms/d/eg;->b:Lcom/google/android/gms/d/ef;
 
-    iget-object v0, v0, Lcom/google/android/gms/d/ef;->a:Lcom/google/android/gms/d/ea;
+    iget-object v0, v0, Lcom/google/android/gms/d/ef;->a:Lcom/google/android/gms/d/GoogleApiManager;
 
-    invoke-static {v0}, Lcom/google/android/gms/d/ea;->j(Lcom/google/android/gms/d/ea;)Ljava/util/Map;
+    invoke-static {v0}, Lcom/google/android/gms/d/GoogleApiManager;->j(Lcom/google/android/gms/d/GoogleApiManager;)Ljava/util/Map;
 
     move-result-object v0
 

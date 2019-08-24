@@ -9,7 +9,7 @@ import android.graphics.Matrix;
 import com.panasonic.avc.cng.model.service.C2224q;
 import com.panasonic.avc.cng.model.service.C2234r;
 import com.panasonic.avc.cng.model.service.C2234r.C2235a;
-import com.panasonic.avc.cng.model.service.C2253z;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.util.ArrayList;
@@ -49,7 +49,7 @@ public class C2008f implements C2234r {
 
     /* renamed from: a */
     public void mo5252a() {
-        this.f6205d = C2253z.m9720o(this.f6202a);
+        this.f6205d = ServiceFactory.m9720o(this.f6202a);
         if (this.f6205d != null) {
             this.f6205d.mo5248a();
         }

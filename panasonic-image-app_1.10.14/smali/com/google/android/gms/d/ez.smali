@@ -5,7 +5,7 @@
 # static fields
 .field public static final a:Lcom/google/android/gms/common/api/Status;
 
-.field private static final b:[Lcom/google/android/gms/d/dt;
+.field private static final b:[Lcom/google/android/gms/d/BasePendingResult;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "[",
@@ -32,9 +32,9 @@
 
     const/4 v0, 0x0
 
-    new-array v0, v0, [Lcom/google/android/gms/d/dt;
+    new-array v0, v0, [Lcom/google/android/gms/d/BasePendingResult;
 
-    sput-object v0, Lcom/google/android/gms/d/ez;->b:[Lcom/google/android/gms/d/dt;
+    sput-object v0, Lcom/google/android/gms/d/ez;->b:[Lcom/google/android/gms/d/BasePendingResult;
 
     return-void
 .end method

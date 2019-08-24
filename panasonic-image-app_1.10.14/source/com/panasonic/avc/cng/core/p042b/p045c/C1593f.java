@@ -9,7 +9,7 @@ import android.media.MediaFormat;
 import android.view.Surface;
 import com.panasonic.avc.cng.core.p042b.p045c.C1600g.C1602b;
 import com.panasonic.avc.cng.model.service.p055b.C2003c;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.util.C2266l;
 import java.nio.ByteBuffer;
 import java.util.List;
@@ -329,7 +329,7 @@ public class C1593f {
                     this.f4493m[i2] = new C1600g(integer, integer2, integer, integer2, (int) (f * 1000.0f), 1000);
                     this.f4495o[i2] = this.f4497q[i2].getLong("durationUs");
                     this.f4504x += this.f4495o[i2];
-                    C2261g.m9771e(f4475b, String.format("[%02d] duration[%d]", new Object[]{Integer.valueOf(i2), Long.valueOf(this.f4495o[i2])}));
+                    ImageAppLog.info(f4475b, String.format("[%02d] duration[%d]", new Object[]{Integer.valueOf(i2), Long.valueOf(this.f4495o[i2])}));
                 }
                 if (this.f4489i[i2] != -1) {
                     this.f4496p[i2] = this.f4487g[i2].getTrackFormat(this.f4489i[i2]);
@@ -341,7 +341,7 @@ public class C1593f {
                 this.f4498r[i2] = 0;
                 this.f4499s[i2] = 0;
             }
-            C2261g.m9771e(f4475b, String.format("total duration[%d]", new Object[]{Long.valueOf(this.f4504x)}));
+            ImageAppLog.info(f4475b, String.format("total duration[%d]", new Object[]{Long.valueOf(this.f4504x)}));
             return true;
         } catch (Exception e2) {
             e2.printStackTrace();
@@ -474,7 +474,7 @@ public class C1593f {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        C2261g.m9771e(f4475b, "Finished Decorde");
+        ImageAppLog.info(f4475b, "Finished Decorde");
         if (this.f4483c != null) {
             this.f4483c.mo3848c();
         }
@@ -491,7 +491,7 @@ public class C1593f {
         ByteBuffer[] byteBufferArr3;
         boolean z;
         int i4;
-        C2261g.m9771e(f4475b, String.format("Demux: idx[%d], eidx[%d], off[%d], vi[%d], ai[%d]", new Object[]{Integer.valueOf(i), Integer.valueOf(i2), Long.valueOf(j), Integer.valueOf(this.f4488h[i]), Integer.valueOf(this.f4489i[i])}));
+        ImageAppLog.info(f4475b, String.format("Demux: idx[%d], eidx[%d], off[%d], vi[%d], ai[%d]", new Object[]{Integer.valueOf(i), Integer.valueOf(i2), Long.valueOf(j), Integer.valueOf(this.f4488h[i]), Integer.valueOf(this.f4489i[i])}));
         if (!this.f4484d && !this.f4501u) {
             mediaExtractor.seekTo(0, 0);
             if (this.f4488h[i] == -1) {
@@ -533,7 +533,7 @@ public class C1593f {
                                 mediaCodec = this.f4491k;
                                 byteBufferArr3 = byteBufferArr2;
                             } else {
-                                C2261g.m9766b(f4475b, String.format("Demux: demuxIdx[%d]", new Object[]{Integer.valueOf(sampleTrackIndex)}));
+                                ImageAppLog.warning(f4475b, String.format("Demux: demuxIdx[%d]", new Object[]{Integer.valueOf(sampleTrackIndex)}));
                                 byteBufferArr3 = null;
                             }
                             if (mediaCodec != null) {
@@ -567,7 +567,7 @@ public class C1593f {
                                                         break;
                                                     }
                                                 } else {
-                                                    C2261g.m9769c(f4475b, String.format("Demax stop[%d] %s", new Object[]{Integer.valueOf(i5), e2.getMessage()}));
+                                                    ImageAppLog.error(f4475b, String.format("Demax stop[%d] %s", new Object[]{Integer.valueOf(i5), e2.getMessage()}));
                                                     this.f4500t = true;
                                                     break;
                                                 }
@@ -605,7 +605,7 @@ public class C1593f {
                             mediaExtractor.advance();
                         } else if (i2 == i) {
                             C2266l.m9802a(2);
-                            C2261g.m9771e(f4475b, String.format("Demux: all finish", new Object[0]));
+                            ImageAppLog.info(f4475b, String.format("Demux: all finish", new Object[0]));
                             this.f4500t = true;
                             if (!this.f4476A) {
                                 this.f4502v = true;
@@ -613,7 +613,7 @@ public class C1593f {
                             }
                             return;
                         } else {
-                            C2261g.m9771e(f4475b, String.format("Demux: finish[%d], V[%d], A[%d]", new Object[]{Integer.valueOf(i), Integer.valueOf(this.f4498r[i]), Integer.valueOf(this.f4499s[i])}));
+                            ImageAppLog.info(f4475b, String.format("Demux: finish[%d], V[%d], A[%d]", new Object[]{Integer.valueOf(i), Integer.valueOf(this.f4498r[i]), Integer.valueOf(this.f4499s[i])}));
                             return;
                         }
                         i3 = i5;
@@ -624,7 +624,7 @@ public class C1593f {
                     if (!this.f4502v || !this.f4503w) {
                         i5 = i3;
                     } else {
-                        C2261g.m9771e(f4475b, String.format("Demux: _isVideoDecodeEnd[%s], _isAudioDecodeEnd[%s]", new Object[]{String.valueOf(this.f4502v), String.valueOf(this.f4503w)}));
+                        ImageAppLog.info(f4475b, String.format("Demux: _isVideoDecodeEnd[%s], _isAudioDecodeEnd[%s]", new Object[]{String.valueOf(this.f4502v), String.valueOf(this.f4503w)}));
                         this.f4501u = true;
                         return;
                     }
@@ -656,7 +656,7 @@ public class C1593f {
                 if (!this.f4484d) {
                     if (!this.f4500t || !this.f4501u) {
                         if (this.f4502v && this.f4503w) {
-                            C2261g.m9771e(f4475b, String.format("VideoDec: _isVideoDecodeEnd[%s], _isAudioDecodeEnd[%s]", new Object[]{String.valueOf(this.f4502v), String.valueOf(this.f4503w)}));
+                            ImageAppLog.info(f4475b, String.format("VideoDec: _isVideoDecodeEnd[%s], _isAudioDecodeEnd[%s]", new Object[]{String.valueOf(this.f4502v), String.valueOf(this.f4503w)}));
                             this.f4501u = true;
                             break;
                         } else if (!this.f4502v) {
@@ -722,11 +722,11 @@ public class C1593f {
                             C2266l.m9802a(1);
                         }
                     } else {
-                        C2261g.m9771e(f4475b, String.format("VideoDec: _isDemuxEnd[%s], _isDecodeEnd[%s]", new Object[]{String.valueOf(this.f4500t), String.valueOf(this.f4501u)}));
+                        ImageAppLog.info(f4475b, String.format("VideoDec: _isDemuxEnd[%s], _isDecodeEnd[%s]", new Object[]{String.valueOf(this.f4500t), String.valueOf(this.f4501u)}));
                         break;
                     }
                 } else {
-                    C2261g.m9771e(f4475b, String.format("VideoDec: _isDecodeStop[%s]", new Object[]{String.valueOf(this.f4484d)}));
+                    ImageAppLog.info(f4475b, String.format("VideoDec: _isDecodeStop[%s]", new Object[]{String.valueOf(this.f4484d)}));
                     break;
                 }
             }
@@ -767,7 +767,7 @@ public class C1593f {
             if (!this.f4484d) {
                 if (!this.f4500t || !this.f4501u) {
                     if (this.f4502v && this.f4503w) {
-                        C2261g.m9771e(f4475b, String.format("AudioDec: _isVideoDecodeEnd[%s], _isAudioDecodeEnd[%s]", new Object[]{String.valueOf(this.f4502v), String.valueOf(this.f4503w)}));
+                        ImageAppLog.info(f4475b, String.format("AudioDec: _isVideoDecodeEnd[%s], _isAudioDecodeEnd[%s]", new Object[]{String.valueOf(this.f4502v), String.valueOf(this.f4503w)}));
                         this.f4501u = true;
                         break;
                     } else if (!this.f4503w) {
@@ -898,11 +898,11 @@ public class C1593f {
                         C2266l.m9802a(1);
                     }
                 } else {
-                    C2261g.m9771e(f4475b, String.format("AudioDec: _isDemuxEnd[%s], _isDecodeEnd[%s]", new Object[]{String.valueOf(this.f4500t), String.valueOf(this.f4501u)}));
+                    ImageAppLog.info(f4475b, String.format("AudioDec: _isDemuxEnd[%s], _isDecodeEnd[%s]", new Object[]{String.valueOf(this.f4500t), String.valueOf(this.f4501u)}));
                     break;
                 }
             } else {
-                C2261g.m9771e(f4475b, String.format("AudioDec: _isDecodeStop[%s]", new Object[]{String.valueOf(this.f4484d)}));
+                ImageAppLog.info(f4475b, String.format("AudioDec: _isDecodeStop[%s]", new Object[]{String.valueOf(this.f4484d)}));
                 break;
             }
         }

@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/application/c;->j()V
+    value = Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->j()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/panasonic/avc/cng/application/c;
+.field final synthetic a:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
 
 # direct methods
-.method constructor <init>(Lcom/panasonic/avc/cng/application/c;)V
+.method constructor <init>(Lcom/panasonic/avc/cng/application/NfcSupportViewModel;)V
     .locals 0
 
     .prologue
     .line 1029
-    iput-object p1, p0, Lcom/panasonic/avc/cng/application/c$1;->a:Lcom/panasonic/avc/cng/application/c;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/application/c$1;->a:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -45,28 +45,28 @@
 
     const-string v1, "checkNfcAvailability"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 1033
-    iget-object v0, p0, Lcom/panasonic/avc/cng/application/c$1;->a:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/application/c$1;->a:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
     const-wide/16 v2, 0x3e8
 
-    invoke-virtual {v0, v2, v3}, Lcom/panasonic/avc/cng/application/c;->c(J)V
+    invoke-virtual {v0, v2, v3}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->c(J)V
 
     .line 1038
     :try_start_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/application/c$1;->a:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/application/c$1;->a:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/application/c;->s(Lcom/panasonic/avc/cng/application/c;)Lcom/panasonic/avc/cng/model/service/o;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->s(Lcom/panasonic/avc/cng/application/NfcSupportViewModel;)Lcom/panasonic/avc/cng/model/service/o;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/panasonic/avc/cng/application/c$1;->a:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/application/c$1;->a:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/application/c;->t(Lcom/panasonic/avc/cng/application/c;)Z
+    invoke-static {v0}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->t(Lcom/panasonic/avc/cng/application/NfcSupportViewModel;)Z
 
     move-result v0
 
@@ -77,12 +77,12 @@
 
     const-string v1, "_srvNfc.checkNfcAvailability() S"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 1042
-    iget-object v0, p0, Lcom/panasonic/avc/cng/application/c$1;->a:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/application/c$1;->a:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/application/c;->s(Lcom/panasonic/avc/cng/application/c;)Lcom/panasonic/avc/cng/model/service/o;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->s(Lcom/panasonic/avc/cng/application/NfcSupportViewModel;)Lcom/panasonic/avc/cng/model/service/o;
 
     move-result-object v0
 
@@ -93,7 +93,7 @@
 
     const-string v1, "_srvNfc.checkNfcAvailability() E"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 

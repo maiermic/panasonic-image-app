@@ -281,7 +281,7 @@
 
     const-string v3, "\u2605\u2605_isSelfTimerMode[true]\u2605\u2605"
 
-    invoke-static {v0, v3}, Lcom/panasonic/avc/cng/util/g;->b(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v3}, Lcom/panasonic/avc/cng/util/ImageAppLog;->warning(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 2330
     :goto_6
@@ -370,7 +370,7 @@
 
     move-result-object v0
 
-    invoke-interface {v0}, Lcom/panasonic/avc/cng/model/service/e;->i()Lcom/panasonic/avc/cng/model/c/e;
+    invoke-interface {v0}, Lcom/panasonic/avc/cng/model/service/e;->i()Lcom/panasonic/avc/cng/model/c/CameraStatus;
 
     move-result-object v0
 
@@ -379,7 +379,7 @@
 
     iget-object v3, v3, Lcom/panasonic/avc/cng/view/liveview/m$3;->b:Lcom/panasonic/avc/cng/view/liveview/m;
 
-    invoke-static {v3, v0}, Lcom/panasonic/avc/cng/view/liveview/m;->a(Lcom/panasonic/avc/cng/view/liveview/m;Lcom/panasonic/avc/cng/model/c/e;)V
+    invoke-static {v3, v0}, Lcom/panasonic/avc/cng/view/liveview/m;->a(Lcom/panasonic/avc/cng/view/liveview/m;Lcom/panasonic/avc/cng/model/c/CameraStatus;)V
 
     .line 2353
     :cond_2
@@ -643,7 +643,7 @@
 
     const-string v3, "\u2605\u2605_isSelfTimerMode[false]\u2605\u2605"
 
-    invoke-static {v0, v3}, Lcom/panasonic/avc/cng/util/g;->b(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v3}, Lcom/panasonic/avc/cng/util/ImageAppLog;->warning(Ljava/lang/String;Ljava/lang/String;)V
 
     goto/16 :goto_6
 
@@ -722,7 +722,7 @@
 
     const-string v1, "AF_Unknown"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     goto/16 :goto_8
 
@@ -732,7 +732,7 @@
 
     const-string v1, "AF_NONE"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 2382
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/m$3$2;->a:Lcom/panasonic/avc/cng/view/liveview/m$3;

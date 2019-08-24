@@ -1136,7 +1136,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 689
     iget v0, p0, Lcom/panasonic/avc/cng/model/service/geotagservice/d;->j:I
@@ -1787,7 +1787,7 @@
 
     move-result-object v4
 
-    invoke-static {v3, v4}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v3, v4}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 781
     iget-object v3, p0, Lcom/panasonic/avc/cng/model/service/geotagservice/d;->c:Lcom/panasonic/avc/cng/model/service/h$b;
@@ -1843,7 +1843,7 @@
 
     const-string v3, "Progress = 100 - complete"
 
-    invoke-static {v2, v3}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v2, v3}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 770
     iget-object v2, p0, Lcom/panasonic/avc/cng/model/service/geotagservice/d;->c:Lcom/panasonic/avc/cng/model/service/h$b;

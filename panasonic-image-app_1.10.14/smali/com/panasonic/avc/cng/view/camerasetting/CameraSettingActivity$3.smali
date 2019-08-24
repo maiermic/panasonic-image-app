@@ -47,7 +47,7 @@
     .line 619
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingActivity$3;->b:Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingActivity;->d(Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingActivity;)Lcom/panasonic/avc/cng/core/a/ao;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingActivity;->d(Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingActivity;)Lcom/panasonic/avc/cng/core/a/StatusCommand;
 
     move-result-object v0
 
@@ -57,7 +57,7 @@
 
     array-length v2, v2
 
-    invoke-virtual {v0, v1, v2}, Lcom/panasonic/avc/cng/core/a/ao;->a([BI)Z
+    invoke-virtual {v0, v1, v2}, Lcom/panasonic/avc/cng/core/a/StatusCommand;->a([BI)Z
 
     move-result v0
 
@@ -66,7 +66,7 @@
     .line 621
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingActivity$3;->b:Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;)V
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;)V
 
     .line 622
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingActivity$3;->b:Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingActivity;
@@ -75,7 +75,7 @@
 
     const/4 v2, 0x0
 
-    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {v0, v1, v2}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     .line 628
     :goto_0
@@ -85,7 +85,7 @@
     :cond_0
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingActivity$3;->b:Lcom/panasonic/avc/cng/view/camerasetting/CameraSettingActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;)V
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;)V
 
     goto :goto_0
 .end method

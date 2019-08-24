@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/panasonic/avc/cng/view/setting/al;
+    value = Lcom/panasonic/avc/cng/view/setting/SettingMenuBaseActivity;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

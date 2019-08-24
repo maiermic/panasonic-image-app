@@ -3,18 +3,18 @@ package com.panasonic.avc.cng.view.setting;
 import android.content.Context;
 import android.os.Handler;
 import com.panasonic.avc.cng.model.service.C1921a;
-import com.panasonic.avc.cng.model.service.C2253z;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
 import com.panasonic.avc.cng.model.service.p054a.C1958k;
 import com.panasonic.avc.cng.model.service.p054a.C1982p;
 import com.panasonic.avc.cng.p038a.C1342a;
-import com.panasonic.avc.cng.view.parts.C4245t;
-import com.panasonic.avc.cng.view.parts.C4245t.C4255e;
+import com.panasonic.avc.cng.view.parts.BrowserViewModel;
+import com.panasonic.avc.cng.view.parts.BrowserViewModel.C4255e;
 
 /* renamed from: com.panasonic.avc.cng.view.setting.af */
 public class C5508af extends C1342a {
 
     /* renamed from: c */
-    private C4245t f17103c;
+    private BrowserViewModel f17103c;
 
     /* renamed from: d */
     private C4255e f17104d;
@@ -36,12 +36,12 @@ public class C5508af extends C1342a {
 
     /* renamed from: h */
     private void m20548h() {
-        this.f17106f = C2253z.m9703f();
+        this.f17106f = ServiceFactory.m9703f();
         if (this.f17106f != null) {
             this.f17106f.mo5041f();
         }
-        this.f17103c = new C4245t(this.f3706a, this.f3707b, this.f17104d, true);
-        C1921a a = C2253z.m9678a(this.f3706a, this.f3707b, this.f17104d);
+        this.f17103c = new BrowserViewModel(this.f3706a, this.f3707b, this.f17104d, true);
+        C1921a a = ServiceFactory.m9678a(this.f3706a, this.f3707b, this.f17104d);
         if (a instanceof C1958k) {
             this.f17105e = (C1958k) a;
         }
@@ -51,16 +51,16 @@ public class C5508af extends C1342a {
     public void mo3205a() {
         mo12245e();
         this.f17103c.mo3205a();
-        C2253z.m9702e();
+        ServiceFactory.m9702e();
         if (this.f17106f != null) {
             this.f17106f.mo5042g();
         }
-        C2253z.m9685a(this.f17106f);
+        ServiceFactory.m9685a(this.f17106f);
         super.mo3205a();
     }
 
     /* renamed from: c */
-    public C4245t mo12243c() {
+    public BrowserViewModel mo12243c() {
         return this.f17103c;
     }
 

@@ -45,9 +45,9 @@
 
     iget-object v0, v0, Lcom/panasonic/avc/cng/application/e$a$1;->a:Lcom/panasonic/avc/cng/application/e$a;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/application/e$a;->a:Lcom/panasonic/avc/cng/application/e;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/application/e$a;->a:Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/application/e;->j(Lcom/panasonic/avc/cng/application/e;)V
+    invoke-static {v0}, Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportViewModel;->j(Lcom/panasonic/avc/cng/application/RemoteWatchNfcSupportViewModel;)V
 
     .line 341
     return-void

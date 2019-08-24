@@ -11,7 +11,7 @@
         "Ljava/lang/Object;",
         "Landroid/os/Parcelable$Creator",
         "<",
-        "Lcom/google/android/gms/common/u;",
+        "Lcom/google/android/gms/common/GoogleCertificatesQuery;",
         ">;"
     }
 .end annotation
@@ -86,9 +86,9 @@
     :cond_0
     invoke-static {p1, v3}, Lcom/google/android/gms/common/internal/safeparcel/b;->n(Landroid/os/Parcel;I)V
 
-    new-instance v3, Lcom/google/android/gms/common/u;
+    new-instance v3, Lcom/google/android/gms/common/GoogleCertificatesQuery;
 
-    invoke-direct {v3, v2, v1, v0}, Lcom/google/android/gms/common/u;-><init>(Ljava/lang/String;Landroid/os/IBinder;Z)V
+    invoke-direct {v3, v2, v1, v0}, Lcom/google/android/gms/common/GoogleCertificatesQuery;-><init>(Ljava/lang/String;Landroid/os/IBinder;Z)V
 
     return-object v3
 
@@ -103,7 +103,7 @@
 .method public final synthetic newArray(I)[Ljava/lang/Object;
     .locals 1
 
-    new-array v0, p1, [Lcom/google/android/gms/common/u;
+    new-array v0, p1, [Lcom/google/android/gms/common/GoogleCertificatesQuery;
 
     return-object v0
 .end method

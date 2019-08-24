@@ -65,7 +65,7 @@ final class C0673n {
         }
         C0612ab.m2289a(f1415c);
         try {
-            return f1413a.mo1728a(new C0685u(str, oVar, z), C0567c.m2213a(f1415c.getPackageManager()));
+            return f1413a.mo1728a(new GoogleCertificatesQuery(str, oVar, z), C0567c.m2213a(f1415c.getPackageManager()));
         } catch (RemoteException e) {
             Log.e("GoogleCertificates", "Failed to get Google certificates from remote", e);
             return z2;

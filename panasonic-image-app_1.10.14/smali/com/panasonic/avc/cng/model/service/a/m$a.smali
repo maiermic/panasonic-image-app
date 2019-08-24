@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/panasonic/avc/cng/model/service/a/m;
+    value = Lcom/panasonic/avc/cng/model/service/a/CameraContentCopy;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

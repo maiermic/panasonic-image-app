@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/panasonic/avc/cng/model/service/f/b;
+    value = Lcom/panasonic/avc/cng/model/service/f/G711Renderer;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,28 +18,28 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/panasonic/avc/cng/model/service/f/b;
+.field final synthetic a:Lcom/panasonic/avc/cng/model/service/f/G711Renderer;
 
 
 # direct methods
-.method private constructor <init>(Lcom/panasonic/avc/cng/model/service/f/b;)V
+.method private constructor <init>(Lcom/panasonic/avc/cng/model/service/f/G711Renderer;)V
     .locals 0
 
     .prologue
     .line 167
-    iput-object p1, p0, Lcom/panasonic/avc/cng/model/service/f/b$a;->a:Lcom/panasonic/avc/cng/model/service/f/b;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/model/service/f/b$a;->a:Lcom/panasonic/avc/cng/model/service/f/G711Renderer;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/panasonic/avc/cng/model/service/f/b;Lcom/panasonic/avc/cng/model/service/f/b$1;)V
+.method synthetic constructor <init>(Lcom/panasonic/avc/cng/model/service/f/G711Renderer;Lcom/panasonic/avc/cng/model/service/f/b$1;)V
     .locals 0
 
     .prologue
     .line 167
-    invoke-direct {p0, p1}, Lcom/panasonic/avc/cng/model/service/f/b$a;-><init>(Lcom/panasonic/avc/cng/model/service/f/b;)V
+    invoke-direct {p0, p1}, Lcom/panasonic/avc/cng/model/service/f/b$a;-><init>(Lcom/panasonic/avc/cng/model/service/f/G711Renderer;)V
 
     return-void
 .end method
@@ -57,47 +57,47 @@
     const/4 v4, 0x1
 
     .line 174
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/b$a;->a:Lcom/panasonic/avc/cng/model/service/f/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/b$a;->a:Lcom/panasonic/avc/cng/model/service/f/G711Renderer;
 
     new-instance v2, Lcom/panasonic/avc/cng/core/codec/G711Codec;
 
     invoke-direct {v2}, Lcom/panasonic/avc/cng/core/codec/G711Codec;-><init>()V
 
-    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/model/service/f/b;->a(Lcom/panasonic/avc/cng/model/service/f/b;Lcom/panasonic/avc/cng/core/codec/G711Codec;)Lcom/panasonic/avc/cng/core/codec/G711Codec;
+    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/model/service/f/G711Renderer;->a(Lcom/panasonic/avc/cng/model/service/f/G711Renderer;Lcom/panasonic/avc/cng/core/codec/G711Codec;)Lcom/panasonic/avc/cng/core/codec/G711Codec;
 
     .line 175
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/b$a;->a:Lcom/panasonic/avc/cng/model/service/f/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/b$a;->a:Lcom/panasonic/avc/cng/model/service/f/G711Renderer;
 
     new-instance v2, Lcom/panasonic/avc/cng/core/codec/PacketLossConcealer;
 
     invoke-direct {v2}, Lcom/panasonic/avc/cng/core/codec/PacketLossConcealer;-><init>()V
 
-    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/model/service/f/b;->a(Lcom/panasonic/avc/cng/model/service/f/b;Lcom/panasonic/avc/cng/core/codec/PacketLossConcealer;)Lcom/panasonic/avc/cng/core/codec/PacketLossConcealer;
+    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/model/service/f/G711Renderer;->a(Lcom/panasonic/avc/cng/model/service/f/G711Renderer;Lcom/panasonic/avc/cng/core/codec/PacketLossConcealer;)Lcom/panasonic/avc/cng/core/codec/PacketLossConcealer;
 
     .line 177
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/b$a;->a:Lcom/panasonic/avc/cng/model/service/f/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/b$a;->a:Lcom/panasonic/avc/cng/model/service/f/G711Renderer;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/b;->a(Lcom/panasonic/avc/cng/model/service/f/b;)Lcom/panasonic/avc/cng/core/codec/G711Codec;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/G711Renderer;->a(Lcom/panasonic/avc/cng/model/service/f/G711Renderer;)Lcom/panasonic/avc/cng/core/codec/G711Codec;
 
     move-result-object v0
 
     invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/codec/G711Codec;->a()V
 
     .line 178
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/b$a;->a:Lcom/panasonic/avc/cng/model/service/f/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/b$a;->a:Lcom/panasonic/avc/cng/model/service/f/G711Renderer;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/b;->b(Lcom/panasonic/avc/cng/model/service/f/b;)Lcom/panasonic/avc/cng/core/codec/PacketLossConcealer;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/G711Renderer;->b(Lcom/panasonic/avc/cng/model/service/f/G711Renderer;)Lcom/panasonic/avc/cng/core/codec/PacketLossConcealer;
 
     move-result-object v0
 
     invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/codec/PacketLossConcealer;->a()V
 
     .line 182
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
@@ -138,9 +138,9 @@
     if-eqz v2, :cond_2
 
     .line 194
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/b$a;->a:Lcom/panasonic/avc/cng/model/service/f/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/b$a;->a:Lcom/panasonic/avc/cng/model/service/f/G711Renderer;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/b;->a(Lcom/panasonic/avc/cng/model/service/f/b;)Lcom/panasonic/avc/cng/core/codec/G711Codec;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/G711Renderer;->a(Lcom/panasonic/avc/cng/model/service/f/G711Renderer;)Lcom/panasonic/avc/cng/core/codec/G711Codec;
 
     move-result-object v0
 
@@ -149,9 +149,9 @@
     .line 232
     :cond_0
     :goto_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/b$a;->a:Lcom/panasonic/avc/cng/model/service/f/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/b$a;->a:Lcom/panasonic/avc/cng/model/service/f/G711Renderer;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/b;->c(Lcom/panasonic/avc/cng/model/service/f/b;)Ljava/lang/Object;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/G711Renderer;->c(Lcom/panasonic/avc/cng/model/service/f/G711Renderer;)Ljava/lang/Object;
 
     move-result-object v2
 
@@ -159,19 +159,19 @@
 
     .line 234
     :try_start_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/b$a;->a:Lcom/panasonic/avc/cng/model/service/f/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/b$a;->a:Lcom/panasonic/avc/cng/model/service/f/G711Renderer;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/b;->d(Lcom/panasonic/avc/cng/model/service/f/b;)Z
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/G711Renderer;->d(Lcom/panasonic/avc/cng/model/service/f/G711Renderer;)Z
 
     move-result v3
 
     .line 236
     if-nez v3, :cond_d
 
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/b$a;->a:Lcom/panasonic/avc/cng/model/service/f/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/b$a;->a:Lcom/panasonic/avc/cng/model/service/f/G711Renderer;
 
     .line 237
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/b;->e(Lcom/panasonic/avc/cng/model/service/f/b;)Ljava/util/List;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/G711Renderer;->e(Lcom/panasonic/avc/cng/model/service/f/G711Renderer;)Ljava/util/List;
 
     move-result-object v0
 
@@ -182,9 +182,9 @@
     if-lez v0, :cond_d
 
     .line 240
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/b$a;->a:Lcom/panasonic/avc/cng/model/service/f/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/b$a;->a:Lcom/panasonic/avc/cng/model/service/f/G711Renderer;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/b;->e(Lcom/panasonic/avc/cng/model/service/f/b;)Ljava/util/List;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/G711Renderer;->e(Lcom/panasonic/avc/cng/model/service/f/G711Renderer;)Ljava/util/List;
 
     move-result-object v0
 
@@ -201,14 +201,14 @@
 
     const-string v4, "G711 Queue Overflow..."
 
-    invoke-static {v0, v4}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v4}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 244
     :cond_1
     :goto_1
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/b$a;->a:Lcom/panasonic/avc/cng/model/service/f/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/b$a;->a:Lcom/panasonic/avc/cng/model/service/f/G711Renderer;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/b;->e(Lcom/panasonic/avc/cng/model/service/f/b;)Ljava/util/List;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/G711Renderer;->e(Lcom/panasonic/avc/cng/model/service/f/G711Renderer;)Ljava/util/List;
 
     move-result-object v0
 
@@ -221,9 +221,9 @@
     if-le v0, v4, :cond_7
 
     .line 246
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/b$a;->a:Lcom/panasonic/avc/cng/model/service/f/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/b$a;->a:Lcom/panasonic/avc/cng/model/service/f/G711Renderer;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/b;->e(Lcom/panasonic/avc/cng/model/service/f/b;)Ljava/util/List;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/G711Renderer;->e(Lcom/panasonic/avc/cng/model/service/f/G711Renderer;)Ljava/util/List;
 
     move-result-object v0
 
@@ -243,9 +243,9 @@
     if-eqz v4, :cond_1
 
     .line 252
-    iget-object v4, p0, Lcom/panasonic/avc/cng/model/service/f/b$a;->a:Lcom/panasonic/avc/cng/model/service/f/b;
+    iget-object v4, p0, Lcom/panasonic/avc/cng/model/service/f/b$a;->a:Lcom/panasonic/avc/cng/model/service/f/G711Renderer;
 
-    invoke-static {v4}, Lcom/panasonic/avc/cng/model/service/f/b;->f(Lcom/panasonic/avc/cng/model/service/f/b;)Lcom/panasonic/avc/cng/model/service/f/a;
+    invoke-static {v4}, Lcom/panasonic/avc/cng/model/service/f/G711Renderer;->f(Lcom/panasonic/avc/cng/model/service/f/G711Renderer;)Lcom/panasonic/avc/cng/model/service/f/a;
 
     move-result-object v4
 
@@ -280,9 +280,9 @@
     if-eqz v0, :cond_3
 
     .line 199
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/b$a;->a:Lcom/panasonic/avc/cng/model/service/f/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/b$a;->a:Lcom/panasonic/avc/cng/model/service/f/G711Renderer;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/b;->a(Lcom/panasonic/avc/cng/model/service/f/b;)Lcom/panasonic/avc/cng/core/codec/G711Codec;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/G711Renderer;->a(Lcom/panasonic/avc/cng/model/service/f/G711Renderer;)Lcom/panasonic/avc/cng/core/codec/G711Codec;
 
     move-result-object v0
 
@@ -292,9 +292,9 @@
 
     .line 204
     :cond_3
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/b$a;->a:Lcom/panasonic/avc/cng/model/service/f/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/b$a;->a:Lcom/panasonic/avc/cng/model/service/f/G711Renderer;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/b;->a(Lcom/panasonic/avc/cng/model/service/f/b;)Lcom/panasonic/avc/cng/core/codec/G711Codec;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/G711Renderer;->a(Lcom/panasonic/avc/cng/model/service/f/G711Renderer;)Lcom/panasonic/avc/cng/core/codec/G711Codec;
 
     move-result-object v0
 
@@ -313,9 +313,9 @@
     if-eqz v0, :cond_5
 
     .line 210
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/b$a;->a:Lcom/panasonic/avc/cng/model/service/f/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/b$a;->a:Lcom/panasonic/avc/cng/model/service/f/G711Renderer;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/b;->a(Lcom/panasonic/avc/cng/model/service/f/b;)Lcom/panasonic/avc/cng/core/codec/G711Codec;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/G711Renderer;->a(Lcom/panasonic/avc/cng/model/service/f/G711Renderer;)Lcom/panasonic/avc/cng/core/codec/G711Codec;
 
     move-result-object v0
 
@@ -325,9 +325,9 @@
 
     .line 215
     :cond_5
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/b$a;->a:Lcom/panasonic/avc/cng/model/service/f/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/b$a;->a:Lcom/panasonic/avc/cng/model/service/f/G711Renderer;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/b;->a(Lcom/panasonic/avc/cng/model/service/f/b;)Lcom/panasonic/avc/cng/core/codec/G711Codec;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/G711Renderer;->a(Lcom/panasonic/avc/cng/model/service/f/G711Renderer;)Lcom/panasonic/avc/cng/core/codec/G711Codec;
 
     move-result-object v0
 
@@ -337,9 +337,9 @@
 
     .line 222
     :cond_6
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/b$a;->a:Lcom/panasonic/avc/cng/model/service/f/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/b$a;->a:Lcom/panasonic/avc/cng/model/service/f/G711Renderer;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/b;->a(Lcom/panasonic/avc/cng/model/service/f/b;)Lcom/panasonic/avc/cng/core/codec/G711Codec;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/G711Renderer;->a(Lcom/panasonic/avc/cng/model/service/f/G711Renderer;)Lcom/panasonic/avc/cng/core/codec/G711Codec;
 
     move-result-object v0
 
@@ -350,9 +350,9 @@
     .line 258
     :cond_7
     :try_start_1
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/b$a;->a:Lcom/panasonic/avc/cng/model/service/f/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/b$a;->a:Lcom/panasonic/avc/cng/model/service/f/G711Renderer;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/b;->e(Lcom/panasonic/avc/cng/model/service/f/b;)Ljava/util/List;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/G711Renderer;->e(Lcom/panasonic/avc/cng/model/service/f/G711Renderer;)Ljava/util/List;
 
     move-result-object v0
 
@@ -374,75 +374,75 @@
     if-eqz v3, :cond_b
 
     .line 292
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/b$a;->a:Lcom/panasonic/avc/cng/model/service/f/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/b$a;->a:Lcom/panasonic/avc/cng/model/service/f/G711Renderer;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/b;->g(Lcom/panasonic/avc/cng/model/service/f/b;)Landroid/media/AudioTrack;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/G711Renderer;->g(Lcom/panasonic/avc/cng/model/service/f/G711Renderer;)Landroid/media/AudioTrack;
 
     move-result-object v0
 
     if-eqz v0, :cond_8
 
     .line 294
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/b$a;->a:Lcom/panasonic/avc/cng/model/service/f/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/b$a;->a:Lcom/panasonic/avc/cng/model/service/f/G711Renderer;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/b;->g(Lcom/panasonic/avc/cng/model/service/f/b;)Landroid/media/AudioTrack;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/G711Renderer;->g(Lcom/panasonic/avc/cng/model/service/f/G711Renderer;)Landroid/media/AudioTrack;
 
     move-result-object v0
 
     invoke-virtual {v0}, Landroid/media/AudioTrack;->stop()V
 
     .line 295
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/b$a;->a:Lcom/panasonic/avc/cng/model/service/f/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/b$a;->a:Lcom/panasonic/avc/cng/model/service/f/G711Renderer;
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/model/service/f/b;->a(Lcom/panasonic/avc/cng/model/service/f/b;Landroid/media/AudioTrack;)Landroid/media/AudioTrack;
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/model/service/f/G711Renderer;->a(Lcom/panasonic/avc/cng/model/service/f/G711Renderer;Landroid/media/AudioTrack;)Landroid/media/AudioTrack;
 
     .line 299
     :cond_8
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/b$a;->a:Lcom/panasonic/avc/cng/model/service/f/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/b$a;->a:Lcom/panasonic/avc/cng/model/service/f/G711Renderer;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/b;->b(Lcom/panasonic/avc/cng/model/service/f/b;)Lcom/panasonic/avc/cng/core/codec/PacketLossConcealer;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/G711Renderer;->b(Lcom/panasonic/avc/cng/model/service/f/G711Renderer;)Lcom/panasonic/avc/cng/core/codec/PacketLossConcealer;
 
     move-result-object v0
 
     if-eqz v0, :cond_9
 
     .line 301
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/b$a;->a:Lcom/panasonic/avc/cng/model/service/f/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/b$a;->a:Lcom/panasonic/avc/cng/model/service/f/G711Renderer;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/b;->b(Lcom/panasonic/avc/cng/model/service/f/b;)Lcom/panasonic/avc/cng/core/codec/PacketLossConcealer;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/G711Renderer;->b(Lcom/panasonic/avc/cng/model/service/f/G711Renderer;)Lcom/panasonic/avc/cng/core/codec/PacketLossConcealer;
 
     move-result-object v0
 
     invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/codec/PacketLossConcealer;->b()V
 
     .line 302
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/b$a;->a:Lcom/panasonic/avc/cng/model/service/f/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/b$a;->a:Lcom/panasonic/avc/cng/model/service/f/G711Renderer;
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/model/service/f/b;->a(Lcom/panasonic/avc/cng/model/service/f/b;Lcom/panasonic/avc/cng/core/codec/PacketLossConcealer;)Lcom/panasonic/avc/cng/core/codec/PacketLossConcealer;
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/model/service/f/G711Renderer;->a(Lcom/panasonic/avc/cng/model/service/f/G711Renderer;Lcom/panasonic/avc/cng/core/codec/PacketLossConcealer;)Lcom/panasonic/avc/cng/core/codec/PacketLossConcealer;
 
     .line 306
     :cond_9
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/b$a;->a:Lcom/panasonic/avc/cng/model/service/f/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/b$a;->a:Lcom/panasonic/avc/cng/model/service/f/G711Renderer;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/b;->a(Lcom/panasonic/avc/cng/model/service/f/b;)Lcom/panasonic/avc/cng/core/codec/G711Codec;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/G711Renderer;->a(Lcom/panasonic/avc/cng/model/service/f/G711Renderer;)Lcom/panasonic/avc/cng/core/codec/G711Codec;
 
     move-result-object v0
 
     if-eqz v0, :cond_a
 
     .line 308
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/b$a;->a:Lcom/panasonic/avc/cng/model/service/f/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/b$a;->a:Lcom/panasonic/avc/cng/model/service/f/G711Renderer;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/b;->a(Lcom/panasonic/avc/cng/model/service/f/b;)Lcom/panasonic/avc/cng/core/codec/G711Codec;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/f/G711Renderer;->a(Lcom/panasonic/avc/cng/model/service/f/G711Renderer;)Lcom/panasonic/avc/cng/core/codec/G711Codec;
 
     move-result-object v0
 
     invoke-virtual {v0}, Lcom/panasonic/avc/cng/core/codec/G711Codec;->b()V
 
     .line 309
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/b$a;->a:Lcom/panasonic/avc/cng/model/service/f/b;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/f/b$a;->a:Lcom/panasonic/avc/cng/model/service/f/G711Renderer;
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/model/service/f/b;->a(Lcom/panasonic/avc/cng/model/service/f/b;Lcom/panasonic/avc/cng/core/codec/G711Codec;)Lcom/panasonic/avc/cng/core/codec/G711Codec;
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/model/service/f/G711Renderer;->a(Lcom/panasonic/avc/cng/model/service/f/G711Renderer;Lcom/panasonic/avc/cng/core/codec/G711Codec;)Lcom/panasonic/avc/cng/core/codec/G711Codec;
 
     .line 311
     :cond_a
@@ -453,9 +453,9 @@
     if-eqz v0, :cond_c
 
     .line 270
-    iget-object v2, p0, Lcom/panasonic/avc/cng/model/service/f/b$a;->a:Lcom/panasonic/avc/cng/model/service/f/b;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/model/service/f/b$a;->a:Lcom/panasonic/avc/cng/model/service/f/G711Renderer;
 
-    invoke-static {v2, v0}, Lcom/panasonic/avc/cng/model/service/f/b;->a(Lcom/panasonic/avc/cng/model/service/f/b;Lcom/panasonic/avc/cng/core/a/at;)V
+    invoke-static {v2, v0}, Lcom/panasonic/avc/cng/model/service/f/G711Renderer;->a(Lcom/panasonic/avc/cng/model/service/f/G711Renderer;Lcom/panasonic/avc/cng/core/a/at;)V
 
     .line 273
     iget-object v2, v0, Lcom/panasonic/avc/cng/core/a/at;->c:Lcom/panasonic/avc/cng/core/a/at$b;
@@ -463,9 +463,9 @@
     if-eqz v2, :cond_0
 
     .line 275
-    iget-object v2, p0, Lcom/panasonic/avc/cng/model/service/f/b$a;->a:Lcom/panasonic/avc/cng/model/service/f/b;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/model/service/f/b$a;->a:Lcom/panasonic/avc/cng/model/service/f/G711Renderer;
 
-    invoke-static {v2}, Lcom/panasonic/avc/cng/model/service/f/b;->f(Lcom/panasonic/avc/cng/model/service/f/b;)Lcom/panasonic/avc/cng/model/service/f/a;
+    invoke-static {v2}, Lcom/panasonic/avc/cng/model/service/f/G711Renderer;->f(Lcom/panasonic/avc/cng/model/service/f/G711Renderer;)Lcom/panasonic/avc/cng/model/service/f/a;
 
     move-result-object v2
 

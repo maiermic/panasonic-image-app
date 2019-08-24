@@ -14,8 +14,8 @@ import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.view.common.C2820e;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
-import com.panasonic.avc.cng.view.setting.C5537al.C5540a;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
+import com.panasonic.avc.cng.view.setting.SettingMenuBaseActivity.C5540a;
 import com.panasonic.avc.cng.view.setting.C5741i.C5759a;
 
 public class WebServiceWebViewActivity extends C5671b {
@@ -101,7 +101,7 @@ public class WebServiceWebViewActivity extends C5671b {
         if (i == 0) {
             new Handler(Looper.getMainLooper()).post(new Runnable() {
                 public void run() {
-                    C2331d.m10100a((Activity) WebServiceWebViewActivity.this);
+                    DialogFactory.m10100a((Activity) WebServiceWebViewActivity.this);
                 }
             });
             finish();

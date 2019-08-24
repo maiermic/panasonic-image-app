@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/panasonic/avc/cng/application/c;
+    value = Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,18 +18,18 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/panasonic/avc/cng/application/c;
+.field final synthetic a:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
 .field private b:Z
 
 
 # direct methods
-.method public constructor <init>(Lcom/panasonic/avc/cng/application/c;)V
+.method public constructor <init>(Lcom/panasonic/avc/cng/application/NfcSupportViewModel;)V
     .locals 1
 
     .prologue
     .line 383
-    iput-object p1, p0, Lcom/panasonic/avc/cng/application/c$b;->a:Lcom/panasonic/avc/cng/application/c;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/application/c$b;->a:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -69,11 +69,11 @@
 
     .line 400
     :try_start_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/application/c$b;->a:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/application/c$b;->a:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
     const/4 v3, 0x0
 
-    invoke-static {v0, v3}, Lcom/panasonic/avc/cng/application/c;->a(Lcom/panasonic/avc/cng/application/c;Lcom/panasonic/avc/cng/model/f;)Lcom/panasonic/avc/cng/model/f;
+    invoke-static {v0, v3}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->a(Lcom/panasonic/avc/cng/application/NfcSupportViewModel;Lcom/panasonic/avc/cng/model/f;)Lcom/panasonic/avc/cng/model/f;
 
     .line 402
     new-instance v0, Ljava/lang/StringBuilder;
@@ -86,9 +86,9 @@
 
     move-result-object v0
 
-    iget-object v3, p0, Lcom/panasonic/avc/cng/application/c$b;->a:Lcom/panasonic/avc/cng/application/c;
+    iget-object v3, p0, Lcom/panasonic/avc/cng/application/c$b;->a:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
-    invoke-static {v3}, Lcom/panasonic/avc/cng/application/c;->m(Lcom/panasonic/avc/cng/application/c;)Ljava/lang/String;
+    invoke-static {v3}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->m(Lcom/panasonic/avc/cng/application/NfcSupportViewModel;)Ljava/lang/String;
 
     move-result-object v3
 
@@ -107,9 +107,9 @@
     move-result-object v3
 
     .line 405
-    iget-object v0, p0, Lcom/panasonic/avc/cng/application/c$b;->a:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/application/c$b;->a:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/application/c;->n(Lcom/panasonic/avc/cng/application/c;)Ljava/util/List;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->n(Lcom/panasonic/avc/cng/application/NfcSupportViewModel;)Ljava/util/List;
 
     move-result-object v0
 
@@ -140,16 +140,16 @@
     if-eqz v5, :cond_1
 
     .line 409
-    iget-object v3, p0, Lcom/panasonic/avc/cng/application/c$b;->a:Lcom/panasonic/avc/cng/application/c;
+    iget-object v3, p0, Lcom/panasonic/avc/cng/application/c$b;->a:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
-    invoke-static {v3, v0}, Lcom/panasonic/avc/cng/application/c;->a(Lcom/panasonic/avc/cng/application/c;Lcom/panasonic/avc/cng/model/f;)Lcom/panasonic/avc/cng/model/f;
+    invoke-static {v3, v0}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->a(Lcom/panasonic/avc/cng/application/NfcSupportViewModel;Lcom/panasonic/avc/cng/model/f;)Lcom/panasonic/avc/cng/model/f;
 
     .line 424
     :cond_0
     :goto_1
-    iget-object v0, p0, Lcom/panasonic/avc/cng/application/c$b;->a:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/application/c$b;->a:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/application/c;->o(Lcom/panasonic/avc/cng/application/c;)Lcom/panasonic/avc/cng/model/f;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->o(Lcom/panasonic/avc/cng/application/NfcSupportViewModel;)Lcom/panasonic/avc/cng/model/f;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -174,9 +174,9 @@
     :try_start_1
     iget-object v5, v0, Lcom/panasonic/avc/cng/model/f;->g:Ljava/lang/String;
 
-    iget-object v6, p0, Lcom/panasonic/avc/cng/application/c$b;->a:Lcom/panasonic/avc/cng/application/c;
+    iget-object v6, p0, Lcom/panasonic/avc/cng/application/c$b;->a:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
-    invoke-static {v6}, Lcom/panasonic/avc/cng/application/c;->m(Lcom/panasonic/avc/cng/application/c;)Ljava/lang/String;
+    invoke-static {v6}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->m(Lcom/panasonic/avc/cng/application/NfcSupportViewModel;)Ljava/lang/String;
 
     move-result-object v6
 
@@ -187,9 +187,9 @@
     if-eqz v5, :cond_2
 
     .line 414
-    iget-object v3, p0, Lcom/panasonic/avc/cng/application/c$b;->a:Lcom/panasonic/avc/cng/application/c;
+    iget-object v3, p0, Lcom/panasonic/avc/cng/application/c$b;->a:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
-    invoke-static {v3, v0}, Lcom/panasonic/avc/cng/application/c;->a(Lcom/panasonic/avc/cng/application/c;Lcom/panasonic/avc/cng/model/f;)Lcom/panasonic/avc/cng/model/f;
+    invoke-static {v3, v0}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->a(Lcom/panasonic/avc/cng/application/NfcSupportViewModel;Lcom/panasonic/avc/cng/model/f;)Lcom/panasonic/avc/cng/model/f;
 
     goto :goto_1
 
@@ -226,7 +226,7 @@
 
     move-result-object v0
 
-    invoke-static {v5, v0}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v5, v0}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 420
     const-string v0, "\u2605SettingMenuBaseView"
@@ -249,7 +249,7 @@
 
     move-result-object v5
 
-    invoke-static {v0, v5}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v5}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
 
@@ -260,9 +260,9 @@
     if-eqz v0, :cond_4
 
     .line 444
-    iget-object v0, p0, Lcom/panasonic/avc/cng/application/c$b;->a:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/application/c$b;->a:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/application/c;->p(Lcom/panasonic/avc/cng/application/c;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->p(Lcom/panasonic/avc/cng/application/NfcSupportViewModel;)Landroid/os/Handler;
 
     move-result-object v0
 
@@ -276,9 +276,9 @@
 
     .line 460
     :cond_4
-    iget-object v0, p0, Lcom/panasonic/avc/cng/application/c$b;->a:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/application/c$b;->a:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/application/c;->r(Lcom/panasonic/avc/cng/application/c;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->r(Lcom/panasonic/avc/cng/application/NfcSupportViewModel;)Landroid/os/Handler;
 
     move-result-object v0
 

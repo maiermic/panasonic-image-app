@@ -94,7 +94,7 @@ public class C0076k implements ComponentCallbacks, OnCreateContextMenuListener {
     boolean f176S = true;
 
     /* renamed from: T */
-    C0123y f177T;
+    LoaderManager f177T;
 
     /* renamed from: U */
     boolean f178U;

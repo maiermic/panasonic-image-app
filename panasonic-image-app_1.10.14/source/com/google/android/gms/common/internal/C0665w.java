@@ -4,7 +4,7 @@ import android.os.IBinder;
 import android.os.IInterface;
 import android.os.Parcel;
 import android.os.Parcelable;
-import com.google.android.gms.common.C0685u;
+import com.google.android.gms.common.GoogleCertificatesQuery;
 import com.google.android.gms.p034c.C0564a;
 import com.google.android.gms.p034c.C0564a.C0565a;
 import com.google.android.gms.p035d.C1057mz;
@@ -25,7 +25,7 @@ public final class C0665w extends C1057mz implements C0663u {
     }
 
     /* renamed from: a */
-    public final boolean mo1728a(C0685u uVar, C0564a aVar) {
+    public final boolean mo1728a(GoogleCertificatesQuery uVar, C0564a aVar) {
         Parcel c = mo2794c();
         C1060nb.m4466a(c, (Parcelable) uVar);
         C1060nb.m4465a(c, (IInterface) aVar);

@@ -89,7 +89,7 @@
     return-object v0
 .end method
 
-.method static a(Landroid/content/Context;ILcom/google/android/gms/common/internal/ax;Landroid/content/DialogInterface$OnCancelListener;)Landroid/app/Dialog;
+.method static a(Landroid/content/Context;ILcom/google/android/gms/common/internal/DialogRedirect;Landroid/content/DialogInterface$OnCancelListener;)Landroid/app/Dialog;
     .locals 5
 
     const/4 v0, 0x0
@@ -213,7 +213,7 @@
 
     const-string v1, "com.google.android.gms"
 
-    invoke-static {p0, v1}, Lcom/google/android/gms/common/w;->a(Landroid/content/Context;Ljava/lang/String;)Z
+    invoke-static {p0, v1}, Lcom/google/android/gms/common/GooglePlayServicesUtil;->a(Landroid/content/Context;Ljava/lang/String;)Z
 
     move-result v1
 
@@ -473,7 +473,7 @@
     :pswitch_0
     const/16 v0, 0x28c4
 
-    sget-object v1, Lcom/google/android/gms/common/w;->c:Ljava/util/concurrent/atomic/AtomicBoolean;
+    sget-object v1, Lcom/google/android/gms/common/GooglePlayServicesUtil;->c:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     const/4 v3, 0x0
 
@@ -514,11 +514,11 @@
 
     move-result-object v0
 
-    invoke-static {p1, v0, p3}, Lcom/google/android/gms/common/internal/ax;->a(Landroid/app/Activity;Landroid/content/Intent;I)Lcom/google/android/gms/common/internal/ax;
+    invoke-static {p1, v0, p3}, Lcom/google/android/gms/common/internal/DialogRedirect;->a(Landroid/app/Activity;Landroid/content/Intent;I)Lcom/google/android/gms/common/internal/DialogRedirect;
 
     move-result-object v0
 
-    invoke-static {p1, p2, v0, p4}, Lcom/google/android/gms/common/c;->a(Landroid/content/Context;ILcom/google/android/gms/common/internal/ax;Landroid/content/DialogInterface$OnCancelListener;)Landroid/app/Dialog;
+    invoke-static {p1, p2, v0, p4}, Lcom/google/android/gms/common/c;->a(Landroid/content/Context;ILcom/google/android/gms/common/internal/DialogRedirect;Landroid/content/DialogInterface$OnCancelListener;)Landroid/app/Dialog;
 
     move-result-object v0
 
@@ -604,11 +604,11 @@
 
     const/4 v1, 0x2
 
-    invoke-static {p2, v0, v1}, Lcom/google/android/gms/common/internal/ax;->a(Lcom/google/android/gms/d/el;Landroid/content/Intent;I)Lcom/google/android/gms/common/internal/ax;
+    invoke-static {p2, v0, v1}, Lcom/google/android/gms/common/internal/DialogRedirect;->a(Lcom/google/android/gms/d/el;Landroid/content/Intent;I)Lcom/google/android/gms/common/internal/DialogRedirect;
 
     move-result-object v0
 
-    invoke-static {p1, p3, v0, p5}, Lcom/google/android/gms/common/c;->a(Landroid/content/Context;ILcom/google/android/gms/common/internal/ax;Landroid/content/DialogInterface$OnCancelListener;)Landroid/app/Dialog;
+    invoke-static {p1, p3, v0, p5}, Lcom/google/android/gms/common/c;->a(Landroid/content/Context;ILcom/google/android/gms/common/internal/DialogRedirect;Landroid/content/DialogInterface$OnCancelListener;)Landroid/app/Dialog;
 
     move-result-object v0
 

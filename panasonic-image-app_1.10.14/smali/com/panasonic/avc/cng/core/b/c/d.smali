@@ -468,7 +468,7 @@
 
     move-result-object v4
 
-    invoke-static {v2, v4}, Lcom/panasonic/avc/cng/util/g;->b(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v2, v4}, Lcom/panasonic/avc/cng/util/ImageAppLog;->warning(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 378
     const-wide/16 v4, 0x2
@@ -694,7 +694,7 @@
 
     const-string v2, "[V]INFO_OUTPUT_FORMAT_CHANGED"
 
-    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 588
     iget-object v0, p0, Lcom/panasonic/avc/cng/core/b/c/d;->b:Landroid/media/MediaMuxer;
@@ -726,7 +726,7 @@
 
     const-string v2, "muxer is null."
 
-    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 595
     iput v6, p0, Lcom/panasonic/avc/cng/core/b/c/d;->f:I
@@ -746,7 +746,7 @@
 
     const-string v3, "[V]INFO_OUTPUT_BUFFERS_CHANGED"
 
-    invoke-static {v2, v3}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v2, v3}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 601
     iget-object v2, p0, Lcom/panasonic/avc/cng/core/b/c/d;->c:Landroid/media/MediaCodec;
@@ -871,7 +871,7 @@
 
     const-string v2, "[A]INFO_OUTPUT_FORMAT_CHANGED"
 
-    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 677
     iget-object v0, p0, Lcom/panasonic/avc/cng/core/b/c/d;->b:Landroid/media/MediaMuxer;
@@ -905,7 +905,7 @@
 
     const-string v2, "muxer is null."
 
-    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 686
     iput v3, p0, Lcom/panasonic/avc/cng/core/b/c/d;->g:I
@@ -925,7 +925,7 @@
 
     const-string v4, "[A]INFO_OUTPUT_BUFFERS_CHANGED"
 
-    invoke-static {v2, v4}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v2, v4}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 692
     iget-object v2, p0, Lcom/panasonic/avc/cng/core/b/c/d;->d:Landroid/media/MediaCodec;
@@ -973,7 +973,7 @@
 
     const-string v1, "muxer is null."
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 892
     :goto_0
@@ -1501,7 +1501,7 @@
 
     const-string v3, "muxer is null."
 
-    invoke-static {v2, v3}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v2, v3}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 125
     :cond_0
@@ -1671,7 +1671,7 @@
 
     move-result-object v3
 
-    invoke-static {v2, v3}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v2, v3}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 165
     const-string v2, "audio/mp4a-latm"
@@ -1751,7 +1751,7 @@
 
     const-string v3, "muxer is null."
 
-    invoke-static {v2, v3}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v2, v3}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_1
 
@@ -1843,7 +1843,7 @@
 
     move-result-object v4
 
-    invoke-static {v3, v4}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v3, v4}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 183
     const-string v3, "audio/mp4a-latm"

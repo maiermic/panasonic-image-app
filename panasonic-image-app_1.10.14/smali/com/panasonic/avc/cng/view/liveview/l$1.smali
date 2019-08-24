@@ -84,11 +84,11 @@
     const/4 v0, 0x0
 
     .line 208
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v1
 
@@ -96,18 +96,18 @@
     if-eqz v1, :cond_0
 
     .line 212
-    new-instance v2, Lcom/panasonic/avc/cng/core/a/aq;
+    new-instance v2, Lcom/panasonic/avc/cng/core/a/StopMotionCommand;
 
     iget-object v1, v1, Lcom/panasonic/avc/cng/model/f;->d:Ljava/lang/String;
 
-    invoke-direct {v2, v1}, Lcom/panasonic/avc/cng/core/a/aq;-><init>(Ljava/lang/String;)V
+    invoke-direct {v2, v1}, Lcom/panasonic/avc/cng/core/a/StopMotionCommand;-><init>(Ljava/lang/String;)V
 
     .line 213
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/l$1;->a:Ljava/lang/String;
 
     iget-object v3, p0, Lcom/panasonic/avc/cng/view/liveview/l$1;->b:Ljava/lang/String;
 
-    invoke-virtual {v2, v1, v3}, Lcom/panasonic/avc/cng/core/a/aq;->f(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-virtual {v2, v1, v3}, Lcom/panasonic/avc/cng/core/a/StopMotionCommand;->f(Ljava/lang/String;Ljava/lang/String;)I
 
     move-result v1
 

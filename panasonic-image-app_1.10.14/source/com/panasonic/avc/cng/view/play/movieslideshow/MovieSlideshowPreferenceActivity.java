@@ -17,9 +17,9 @@ import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.C1892f;
 import com.panasonic.avc.cng.model.p052d.C1879a;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.setting.C5537al.C5540a;
+import com.panasonic.avc.cng.view.setting.SettingMenuBaseActivity.C5540a;
 import com.panasonic.avc.cng.view.setting.C5687e;
 import com.panasonic.avc.cng.view.setting.C5741i;
 
@@ -290,7 +290,7 @@ public class MovieSlideshowPreferenceActivity extends C5741i {
                 CharSequence entry = listPreference.getEntry();
                 listPreference.setSummary(entry == null ? "-----" : entry);
                 if (entry != null) {
-                    C2261g.m9770d("MovieSlideshowPreferenceActivity", "onSharedPreferenceChanged");
+                    ImageAppLog.verbose("MovieSlideshowPreferenceActivity", "onSharedPreferenceChanged");
                 }
                 if (this.f14807a != null && this.f14807a.equalsIgnoreCase("m_since14spring_v9_wearable") && str.equalsIgnoreCase("MovieSlideshow_effect")) {
                     ListPreference listPreference2 = (ListPreference) getPreferenceScreen().findPreference("MovieSlideshow_soundsettings");

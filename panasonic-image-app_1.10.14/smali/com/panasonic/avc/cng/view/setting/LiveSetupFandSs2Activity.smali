@@ -1,10 +1,10 @@
 .class public Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2Activity;
-.super Lcom/panasonic/avc/cng/view/setting/n;
+.super Lcom/panasonic/avc/cng/view/setting/LiveSetupSliderBarActivity;
 .source "SourceFile"
 
 
 # instance fields
-.field private g:Lcom/panasonic/avc/cng/view/setting/t;
+.field private g:Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;
 
 .field private h:Lcom/panasonic/avc/cng/view/setting/n$a;
 
@@ -27,7 +27,7 @@
 
     .prologue
     .line 22
-    invoke-direct {p0}, Lcom/panasonic/avc/cng/view/setting/n;-><init>()V
+    invoke-direct {p0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupSliderBarActivity;-><init>()V
 
     return-void
 .end method
@@ -39,14 +39,14 @@
 
     .prologue
     .line 216
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2Activity;->g:Lcom/panasonic/avc/cng/view/setting/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2Activity;->g:Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;
 
     if-eqz v0, :cond_0
 
     .line 218
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2Activity;->g:Lcom/panasonic/avc/cng/view/setting/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2Activity;->g:Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/t;->j()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;->j()V
 
     .line 220
     :cond_0
@@ -58,14 +58,14 @@
 
     .prologue
     .line 203
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2Activity;->g:Lcom/panasonic/avc/cng/view/setting/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2Activity;->g:Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;
 
     if-eqz v0, :cond_0
 
     .line 205
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2Activity;->g:Lcom/panasonic/avc/cng/view/setting/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2Activity;->g:Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/t;->i()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;->i()V
 
     .line 207
     :cond_0
@@ -77,14 +77,14 @@
 
     .prologue
     .line 242
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2Activity;->g:Lcom/panasonic/avc/cng/view/setting/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2Activity;->g:Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;
 
     if-eqz v0, :cond_0
 
     .line 244
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2Activity;->g:Lcom/panasonic/avc/cng/view/setting/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2Activity;->g:Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/t;->l()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;->l()V
 
     .line 246
     :cond_0
@@ -96,14 +96,14 @@
 
     .prologue
     .line 229
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2Activity;->g:Lcom/panasonic/avc/cng/view/setting/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2Activity;->g:Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;
 
     if-eqz v0, :cond_0
 
     .line 231
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2Activity;->g:Lcom/panasonic/avc/cng/view/setting/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2Activity;->g:Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/t;->k()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;->k()V
 
     .line 233
     :cond_0
@@ -115,17 +115,17 @@
 
     .prologue
     .line 58
-    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/n;->a()V
+    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupSliderBarActivity;->a()V
 
     .line 61
     new-instance v0, Lcom/panasonic/avc/cng/view/setting/n$d;
 
-    invoke-direct {v0, p0}, Lcom/panasonic/avc/cng/view/setting/n$d;-><init>(Lcom/panasonic/avc/cng/view/setting/n;)V
+    invoke-direct {v0, p0}, Lcom/panasonic/avc/cng/view/setting/n$d;-><init>(Lcom/panasonic/avc/cng/view/setting/LiveSetupSliderBarActivity;)V
 
     iput-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2Activity;->h:Lcom/panasonic/avc/cng/view/setting/n$a;
 
     .line 62
-    new-instance v0, Lcom/panasonic/avc/cng/view/setting/t;
+    new-instance v0, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2Activity;->_context:Landroid/content/Context;
 
@@ -133,14 +133,14 @@
 
     iget-object v3, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2Activity;->h:Lcom/panasonic/avc/cng/view/setting/n$a;
 
-    invoke-direct {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/setting/t;-><init>(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/setting/n$a;)V
+    invoke-direct {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;-><init>(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/setting/n$a;)V
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2Activity;->g:Lcom/panasonic/avc/cng/view/setting/t;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2Activity;->g:Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;
 
     .line 63
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2Activity;->g:Lcom/panasonic/avc/cng/view/setting/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2Activity;->g:Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/t;->d()Z
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;->d()Z
 
     move-result v0
 
@@ -159,7 +159,7 @@
 
     .prologue
     .line 191
-    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/n;->a(Z)V
+    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/LiveSetupSliderBarActivity;->a(Z)V
 
     .line 194
     return-void
@@ -172,17 +172,17 @@
     const/4 v1, 0x0
 
     .line 76
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2Activity;->g:Lcom/panasonic/avc/cng/view/setting/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2Activity;->g:Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;
 
     if-eqz v0, :cond_0
 
     .line 78
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2Activity;->g:Lcom/panasonic/avc/cng/view/setting/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2Activity;->g:Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/t;->a()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;->a()V
 
     .line 79
-    iput-object v1, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2Activity;->g:Lcom/panasonic/avc/cng/view/setting/t;
+    iput-object v1, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2Activity;->g:Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;
 
     .line 81
     :cond_0
@@ -195,7 +195,7 @@
 
     .line 86
     :cond_1
-    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/n;->d()V
+    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupSliderBarActivity;->d()V
 
     .line 87
     return-void
@@ -208,17 +208,17 @@
     const/16 v1, 0x8
 
     .line 139
-    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/n;->e()V
+    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupSliderBarActivity;->e()V
 
     .line 142
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2Activity;->g:Lcom/panasonic/avc/cng/view/setting/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2Activity;->g:Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;
 
     if-eqz v0, :cond_1
 
     .line 144
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2Activity;->g:Lcom/panasonic/avc/cng/view/setting/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2Activity;->g:Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/t;->e()Z
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;->e()Z
 
     move-result v0
 
@@ -246,9 +246,9 @@
 
     .line 151
     :cond_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2Activity;->g:Lcom/panasonic/avc/cng/view/setting/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2Activity;->g:Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/t;->f()Z
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;->f()Z
 
     move-result v0
 
@@ -353,15 +353,15 @@
 
     .prologue
     .line 95
-    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/n;->f()V
+    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupSliderBarActivity;->f()V
 
     .line 98
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2Activity;->g:Lcom/panasonic/avc/cng/view/setting/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2Activity;->g:Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;
 
     if-eqz v0, :cond_0
 
     .line 101
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2Activity;->g:Lcom/panasonic/avc/cng/view/setting/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2Activity;->g:Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2Activity;->_context:Landroid/content/Context;
 
@@ -369,12 +369,12 @@
 
     iget-object v3, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2Activity;->h:Lcom/panasonic/avc/cng/view/setting/n$a;
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/setting/t;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/setting/n$a;)V
+    invoke-virtual {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/setting/n$a;)V
 
     .line 104
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2Activity;->g:Lcom/panasonic/avc/cng/view/setting/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2Activity;->g:Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/t;->c:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;->c:Lcom/panasonic/avc/cng/a/c;
 
     new-instance v1, Lcom/panasonic/avc/cng/view/parts/p;
 
@@ -387,9 +387,9 @@
     invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/a/c;->a(Lcom/panasonic/avc/cng/a/b;)V
 
     .line 105
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2Activity;->g:Lcom/panasonic/avc/cng/view/setting/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2Activity;->g:Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/t;->d:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;->d:Lcom/panasonic/avc/cng/a/c;
 
     new-instance v1, Lcom/panasonic/avc/cng/view/parts/p;
 
@@ -402,9 +402,9 @@
     invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/a/c;->a(Lcom/panasonic/avc/cng/a/b;)V
 
     .line 108
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2Activity;->g:Lcom/panasonic/avc/cng/view/setting/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2Activity;->g:Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/t;->e:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;->e:Lcom/panasonic/avc/cng/a/c;
 
     new-instance v1, Lcom/panasonic/avc/cng/view/parts/l;
 
@@ -417,9 +417,9 @@
     invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/a/c;->a(Lcom/panasonic/avc/cng/a/b;)V
 
     .line 109
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2Activity;->g:Lcom/panasonic/avc/cng/view/setting/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2Activity;->g:Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/t;->f:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;->f:Lcom/panasonic/avc/cng/a/c;
 
     new-instance v1, Lcom/panasonic/avc/cng/view/parts/l;
 
@@ -432,9 +432,9 @@
     invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/a/c;->a(Lcom/panasonic/avc/cng/a/b;)V
 
     .line 110
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2Activity;->g:Lcom/panasonic/avc/cng/view/setting/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2Activity;->g:Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/t;->g:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;->g:Lcom/panasonic/avc/cng/a/c;
 
     new-instance v1, Lcom/panasonic/avc/cng/view/parts/l;
 
@@ -447,9 +447,9 @@
     invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/a/c;->a(Lcom/panasonic/avc/cng/a/b;)V
 
     .line 111
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2Activity;->g:Lcom/panasonic/avc/cng/view/setting/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2Activity;->g:Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/t;->h:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;->h:Lcom/panasonic/avc/cng/a/c;
 
     new-instance v1, Lcom/panasonic/avc/cng/view/parts/l;
 
@@ -462,9 +462,9 @@
     invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/a/c;->a(Lcom/panasonic/avc/cng/a/b;)V
 
     .line 114
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2Activity;->g:Lcom/panasonic/avc/cng/view/setting/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2Activity;->g:Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/t;->g()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;->g()V
 
     .line 116
     :cond_0
@@ -478,22 +478,22 @@
     const/4 v1, 0x0
 
     .line 124
-    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/n;->g()V
+    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupSliderBarActivity;->g()V
 
     .line 126
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2Activity;->g:Lcom/panasonic/avc/cng/view/setting/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2Activity;->g:Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;
 
     if-eqz v0, :cond_0
 
     .line 128
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2Activity;->g:Lcom/panasonic/avc/cng/view/setting/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2Activity;->g:Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;
 
-    invoke-virtual {v0, v1, v1, v1}, Lcom/panasonic/avc/cng/view/setting/t;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/setting/n$a;)V
+    invoke-virtual {v0, v1, v1, v1}, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;->a(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/setting/n$a;)V
 
     .line 129
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2Activity;->g:Lcom/panasonic/avc/cng/view/setting/t;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2Activity;->g:Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/t;->c()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupFandSs2ViewModel;->c()V
 
     .line 131
     :cond_0
@@ -505,7 +505,7 @@
 
     .prologue
     .line 178
-    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/n;->h()V
+    invoke-super {p0}, Lcom/panasonic/avc/cng/view/setting/LiveSetupSliderBarActivity;->h()V
 
     .line 181
     return-void
@@ -524,7 +524,7 @@
     invoke-static {p0}, Lcom/panasonic/avc/cng/model/b;->a(Landroid/app/Activity;)V
 
     .line 49
-    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/n;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/panasonic/avc/cng/view/setting/LiveSetupSliderBarActivity;->onCreate(Landroid/os/Bundle;)V
 
     .line 50
     return-void

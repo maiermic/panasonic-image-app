@@ -13,8 +13,8 @@ import com.panasonic.avc.cng.model.p051c.C1844d;
 import com.panasonic.avc.cng.model.p051c.C1860l;
 import com.panasonic.avc.cng.model.p052d.C1879a;
 import com.panasonic.avc.cng.model.service.C1985b;
-import com.panasonic.avc.cng.model.service.C2253z;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.view.liveview.C3259j.C3270b;
 import com.panasonic.avc.cng.view.liveview.C3271k.C3356m;
 import com.panasonic.avc.cng.view.parts.C4003af;
@@ -260,7 +260,7 @@ public class C3895p {
                 if (b != -1) {
                     ImageButton imageButton = (ImageButton) activity.findViewById(b);
                     if (imageButton != null) {
-                        C1985b a = C2253z.m9679a((Context) activity, C1712b.m6919c().mo4896a());
+                        C1985b a = ServiceFactory.m9679a((Context) activity, C1712b.m6919c().mo4896a());
                         if (a != null) {
                             if (a.mo5182a("menu_item_id_drivemode") == null) {
                                 if (intValue == 458758) {
@@ -299,10 +299,10 @@ public class C3895p {
                                         case 327683:
                                         case 327684:
                                         case 327685:
-                                            C2261g.m9760a(3158030, "");
+                                            ImageAppLog.m9760a(3158030, "");
                                             break;
                                         case 393217:
-                                            C2261g.m9760a(3158028, "");
+                                            ImageAppLog.m9760a(3158028, "");
                                             break;
                                         case 458753:
                                         case 458754:
@@ -316,23 +316,23 @@ public class C3895p {
                                         case 458762:
                                         case 458763:
                                         case 458764:
-                                            C2261g.m9760a(3158031, "");
+                                            ImageAppLog.m9760a(3158031, "");
                                             break;
                                         case 524289:
-                                            C2261g.m9760a(3158033, "");
+                                            ImageAppLog.m9760a(3158033, "");
                                             break;
                                         case 589825:
-                                            C2261g.m9760a(3158029, "");
+                                            ImageAppLog.m9760a(3158029, "");
                                             break;
                                         case 655361:
                                         case 655362:
-                                            C2261g.m9760a(3158032, "");
+                                            ImageAppLog.m9760a(3158032, "");
                                             break;
                                         case 720897:
-                                            C2261g.m9760a(3158052, "");
+                                            ImageAppLog.m9760a(3158052, "");
                                             break;
                                         case 786433:
-                                            C2261g.m9760a(3158053, "");
+                                            ImageAppLog.m9760a(3158053, "");
                                             break;
                                     }
                                     C3895p.this.m15627b(activity2, aVar2, amVar2, intValue, cls, i3);
@@ -382,7 +382,7 @@ public class C3895p {
     /* renamed from: b */
     public void m15627b(Activity activity, C3898a aVar, C5541am amVar, int i, Class<?> cls, int i2) {
         if (this.f12819a.f10755a != null && !this.f12824f) {
-            C2261g.m9763a(getClass().getSimpleName(), "SlideMenuButtonClicked: itemType = " + i);
+            ImageAppLog.debug(getClass().getSimpleName(), "SlideMenuButtonClicked: itemType = " + i);
             if (this.f12823e != null) {
                 if (this.f12819a.f10755a.size() > i2) {
                     this.f12823e.mo7014a(i, ((C1844d) this.f12819a.f10755a.get(i2)).f5368a);
@@ -405,7 +405,7 @@ public class C3895p {
             if (aVar != null) {
                 C1892f a = C1712b.m6919c().mo4896a();
                 if (a != null) {
-                    C1985b a2 = C2253z.m9679a((Context) activity, a);
+                    C1985b a2 = ServiceFactory.m9679a((Context) activity, a);
                     if (a2 != null) {
                         if (a2.mo5182a("menu_item_id_drivemode") == null) {
                             aVar.mo7013b(amVar, i2);
@@ -418,7 +418,7 @@ public class C3895p {
         } else if (i == 458764 || i == 458765 || i == 458766 || i == 458767 || i == 458769 || i == 458768 || i == 458772 || i == 458773) {
             if (aVar != null) {
                 C1892f a3 = C1712b.m6919c().mo4896a();
-                if (a3 != null && C2253z.m9679a((Context) activity, a3) != null) {
+                if (a3 != null && ServiceFactory.m9679a((Context) activity, a3) != null) {
                     aVar.mo7013b(amVar, i2);
                 }
             }
@@ -438,7 +438,7 @@ public class C3895p {
                         ((LiveViewStopmotionActivity) activity).mo11608a(C3270b.SLIDE_BUTTON, null, null, null, 0, null, 0, null);
                     }
                 }
-                C1985b a5 = C2253z.m9679a((Context) activity, a4);
+                C1985b a5 = ServiceFactory.m9679a((Context) activity, a4);
                 if (a5 != null && this.f12819a.f10755a.size() > i2) {
                     String str2 = ((C1844d) this.f12819a.f10755a.get(i2)).f5368a;
                     if (i == 393217) {
@@ -570,7 +570,7 @@ public class C3895p {
             r0 = 0
             com.panasonic.avc.cng.model.g r5 = com.panasonic.avc.cng.model.C1712b.m6919c()
             com.panasonic.avc.cng.model.f r5 = r5.mo4896a()
-            com.panasonic.avc.cng.model.service.b r6 = com.panasonic.avc.cng.model.service.C2253z.m9679a(r13, r5)
+            com.panasonic.avc.cng.model.service.b r6 = com.panasonic.avc.cng.model.service.ServiceFactory.m9679a(r13, r5)
             if (r6 != 0) goto L_0x0021
             r0 = -1
         L_0x0020:
@@ -1317,7 +1317,7 @@ public class C3895p {
 
     /* renamed from: b */
     private int m15625b(Activity activity) {
-        C1985b a = C2253z.m9679a((Context) activity, C1712b.m6919c().mo4896a());
+        C1985b a = ServiceFactory.m9679a((Context) activity, C1712b.m6919c().mo4896a());
         if (a == null) {
             return -1;
         }
@@ -1400,7 +1400,7 @@ public class C3895p {
 
     /* renamed from: c */
     private int m15628c(Activity activity) {
-        C1985b a = C2253z.m9679a((Context) activity, C1712b.m6919c().mo4896a());
+        C1985b a = ServiceFactory.m9679a((Context) activity, C1712b.m6919c().mo4896a());
         if (a == null) {
             return -1;
         }
@@ -1444,7 +1444,7 @@ public class C3895p {
     /* access modifiers changed from: protected */
     /* renamed from: a */
     public int mo9140a(Activity activity) {
-        C1985b a = C2253z.m9679a((Context) activity, C1712b.m6919c().mo4896a());
+        C1985b a = ServiceFactory.m9679a((Context) activity, C1712b.m6919c().mo4896a());
         switch (this.f12821c) {
             case 458755:
             case 458766:

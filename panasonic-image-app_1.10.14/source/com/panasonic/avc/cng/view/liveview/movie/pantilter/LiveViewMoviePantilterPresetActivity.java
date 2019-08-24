@@ -10,13 +10,13 @@ import android.widget.LinearLayout;
 import com.panasonic.avc.cng.core.p040a.C1448aj;
 import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.C1712b;
-import com.panasonic.avc.cng.model.p051c.C1846e;
+import com.panasonic.avc.cng.model.p051c.CameraStatus;
 import com.panasonic.avc.cng.model.service.C2028e;
-import com.panasonic.avc.cng.model.service.C2253z;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.util.C2274o;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
 import com.panasonic.avc.cng.view.p073b.C2376f.C2378b;
 import java.util.ArrayList;
 
@@ -72,7 +72,7 @@ public class LiveViewMoviePantilterPresetActivity extends C3720a implements OnTo
                 this.f12122o.add(i, Byte.valueOf(0));
             }
         }
-        C2261g.m9760a(2105352, "");
+        ImageAppLog.m9760a(2105352, "");
     }
 
     /* access modifiers changed from: protected */
@@ -145,9 +145,9 @@ public class LiveViewMoviePantilterPresetActivity extends C3720a implements OnTo
 
     public void onClickOperation(View view) {
         if (this.f12125b != null) {
-            C2028e a = C2253z.m9680a((Context) null, false);
+            C2028e a = ServiceFactory.m9680a((Context) null, false);
             if (a != null) {
-                C1846e i = a.mo5285i();
+                CameraStatus i = a.mo5285i();
                 if (i != null && C2274o.m9904j(i.mo4656E())) {
                     this.f12125b.mo8879o();
                 } else if ((i != null && C2274o.m9918x(i.mo4656E())) || C2274o.m9881E(i.mo4656E()) || C2274o.m9882F(i.mo4656E())) {
@@ -162,9 +162,9 @@ public class LiveViewMoviePantilterPresetActivity extends C3720a implements OnTo
 
     public void onClickSetting(View view) {
         if (this.f12125b != null) {
-            C2028e a = C2253z.m9680a((Context) null, false);
+            C2028e a = ServiceFactory.m9680a((Context) null, false);
             if (a != null) {
-                C1846e i = a.mo5285i();
+                CameraStatus i = a.mo5285i();
                 if ((i != null && C2274o.m9918x(i.mo4656E())) || C2274o.m9882F(i.mo4656E())) {
                     this.f12125b.mo8881q();
                 } else if (i != null && C2274o.m9881E(i.mo4656E())) {
@@ -490,7 +490,7 @@ public class LiveViewMoviePantilterPresetActivity extends C3720a implements OnTo
         } else {
             bundle.putInt(C2378b.SINGLE_CHOICE_CHECKED_ITEM.name(), -1);
         }
-        C2331d.m10114a((Activity) this, C2328a.ON_SELECT_PANTILTER_ROUND_SETTING, bundle);
+        DialogFactory.m10114a((Activity) this, C2328a.ON_SELECT_PANTILTER_ROUND_SETTING, bundle);
     }
 
     public boolean onTouch(View view, MotionEvent motionEvent) {
@@ -605,7 +605,7 @@ public class LiveViewMoviePantilterPresetActivity extends C3720a implements OnTo
                 } else if (this.f12119l == 5) {
                     this.f12125b.f12257bb.mo3216a(this._context.getText(i2).toString());
                 }
-                C2331d.m10100a((Activity) this);
+                DialogFactory.m10100a((Activity) this);
                 return;
             default:
                 super.onSingleChoice(aVar, i);

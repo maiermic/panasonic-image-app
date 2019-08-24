@@ -12,21 +12,21 @@ import android.widget.RelativeLayout.LayoutParams;
 import android.widget.SeekBar;
 import android.widget.SeekBar.OnSeekBarChangeListener;
 import com.panasonic.avc.cng.core.dlna.C1699h;
-import com.panasonic.avc.cng.core.p040a.C1493ax;
+import com.panasonic.avc.cng.core.p040a.WirelessTwinCommand;
 import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.C1892f;
-import com.panasonic.avc.cng.model.p051c.C1846e;
+import com.panasonic.avc.cng.model.p051c.CameraStatus;
 import com.panasonic.avc.cng.model.service.C2028e;
 import com.panasonic.avc.cng.model.service.C2028e.C2031c;
-import com.panasonic.avc.cng.model.service.C2253z;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
 import com.panasonic.avc.cng.model.service.p070q.C2225a;
-import com.panasonic.avc.cng.model.service.p070q.C2233c;
+import com.panasonic.avc.cng.model.service.p070q.WTCService;
 import com.panasonic.avc.cng.p038a.C1344c;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.view.p072a.C2291c;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
 import com.panasonic.avc.cng.view.p073b.C2376f.C2378b;
 import com.panasonic.avc.cng.view.parts.VerticalSeekBar;
 import com.panasonic.avc.cng.view.parts.VerticalSeekBar.C3969a;
@@ -139,7 +139,7 @@ public class C6056b extends C2291c {
     public Object f18494ab = new Object();
 
     /* renamed from: ac */
-    private C2233c f18495ac;
+    private WTCService f18495ac;
     /* access modifiers changed from: private */
 
     /* renamed from: ad */
@@ -266,8 +266,8 @@ public class C6056b extends C2291c {
         }
 
         /* renamed from: a */
-        public void mo5337a(C1846e eVar) {
-            if (C1846e.m7190a(eVar)) {
+        public void mo5337a(CameraStatus eVar) {
+            if (CameraStatus.m7190a(eVar)) {
                 if (C6056b.this.f18501ai != eVar.mo4705m()) {
                     this.f18548b = true;
                 }
@@ -833,7 +833,7 @@ public class C6056b extends C2291c {
         this.f18519v = new C1344c<>("");
         this.f18517t = new C1344c<>(Boolean.valueOf(false));
         this.f18520w = new C1344c<>("");
-        this.f18503f = C2253z.m9680a(this.f3706a, true);
+        this.f18503f = ServiceFactory.m9680a(this.f3706a, true);
         this.f18504g = new C6073b();
         if (this.f18503f != null) {
             this.f18503f.mo5268a((C2031c) this.f18504g);
@@ -1009,9 +1009,9 @@ public class C6056b extends C2291c {
             public void run() {
                 final C1892f a = C1712b.m6919c().mo4896a();
                 if (a != null) {
-                    final int a2 = new C1493ax(a.f5682d).mo3409a();
+                    final int a2 = new WirelessTwinCommand(a.f5682d).mo3409a();
                     if (a2 == -1) {
-                        C2261g.m9769c("TEST", "error StartWTC");
+                        ImageAppLog.error("TEST", "error StartWTC");
                     } else if (C6056b.this.f18496ad != null) {
                         C6056b.this.mo3207a((Runnable) new Runnable() {
                             public void run() {
@@ -1030,7 +1030,7 @@ public class C6056b extends C2291c {
             public void run() {
                 C1892f a = C1712b.m6919c().mo4896a();
                 if (a != null) {
-                    new C1493ax(a.f5682d).mo3650b();
+                    new WirelessTwinCommand(a.f5682d).mo3650b();
                 }
             }
         }).start();
@@ -1038,7 +1038,7 @@ public class C6056b extends C2291c {
 
     /* renamed from: b */
     public void mo13260b(String str, int i) {
-        this.f18495ac = new C2233c(this.f3706a);
+        this.f18495ac = new WTCService(this.f3706a);
         this.f18495ac.mo5896a(i, str);
         this.f18479M = 0;
         this.f18480N = 0;
@@ -1164,7 +1164,7 @@ public class C6056b extends C2291c {
             Bundle bundle = new Bundle();
             bundle.putStringArray(C2378b.SINGLE_CHOICE_LIST.name(), (String[]) this.f18485S.toArray(new String[this.f18485S.size()]));
             bundle.putInt(C2378b.SINGLE_CHOICE_CHECKED_ITEM.name(), indexOf);
-            C2331d.m10114a((Activity) this.f3706a, C2328a.DIALOG_ID_SETUP_WHITE_BALANCE, bundle);
+            DialogFactory.m10114a((Activity) this.f3706a, C2328a.DIALOG_ID_SETUP_WHITE_BALANCE, bundle);
         }
     }
 
@@ -1216,7 +1216,7 @@ public class C6056b extends C2291c {
             Bundle bundle = new Bundle();
             bundle.putStringArray(C2378b.SINGLE_CHOICE_LIST.name(), (String[]) arrayList.toArray(new String[arrayList.size()]));
             bundle.putInt(C2378b.SINGLE_CHOICE_CHECKED_ITEM.name(), this.f18476J);
-            C2331d.m10114a((Activity) this.f3706a, C2328a.DIALOG_ID_SETUP_FPS, bundle);
+            DialogFactory.m10114a((Activity) this.f3706a, C2328a.DIALOG_ID_SETUP_FPS, bundle);
         }
     }
 

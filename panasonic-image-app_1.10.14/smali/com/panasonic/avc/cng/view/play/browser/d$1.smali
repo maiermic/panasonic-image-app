@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/view/play/browser/d;->a(Lcom/panasonic/avc/cng/model/c/e;)V
+    value = Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;->a(Lcom/panasonic/avc/cng/model/c/CameraStatus;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -22,16 +22,16 @@
 
 .field final synthetic b:I
 
-.field final synthetic c:Lcom/panasonic/avc/cng/view/play/browser/d;
+.field final synthetic c:Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;
 
 
 # direct methods
-.method constructor <init>(Lcom/panasonic/avc/cng/view/play/browser/d;II)V
+.method constructor <init>(Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;II)V
     .locals 0
 
     .prologue
     .line 857
-    iput-object p1, p0, Lcom/panasonic/avc/cng/view/play/browser/d$1;->c:Lcom/panasonic/avc/cng/view/play/browser/d;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/view/play/browser/d$1;->c:Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;
 
     iput p2, p0, Lcom/panasonic/avc/cng/view/play/browser/d$1;->a:I
 
@@ -50,9 +50,9 @@
     .prologue
     .line 862
     :try_start_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/d$1;->c:Lcom/panasonic/avc/cng/view/play/browser/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/d$1;->c:Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/browser/d;->g:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;->g:Lcom/panasonic/avc/cng/a/c;
 
     iget v1, p0, Lcom/panasonic/avc/cng/view/play/browser/d$1;->a:I
 
@@ -63,9 +63,9 @@
     invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/a/c;->a(Ljava/lang/Object;)V
 
     .line 863
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/d$1;->c:Lcom/panasonic/avc/cng/view/play/browser/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/browser/d$1;->c:Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/browser/d;->f:Lcom/panasonic/avc/cng/a/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;->f:Lcom/panasonic/avc/cng/a/c;
 
     iget v1, p0, Lcom/panasonic/avc/cng/view/play/browser/d$1;->b:I
 

@@ -184,7 +184,7 @@
     return-void
 .end method
 
-.method public a(Lcom/panasonic/avc/cng/model/c/e;)V
+.method public a(Lcom/panasonic/avc/cng/model/c/CameraStatus;)V
     .locals 14
 
     .prologue
@@ -193,7 +193,7 @@
     const/4 v10, 0x1
 
     .line 7260
-    invoke-static {p1}, Lcom/panasonic/avc/cng/model/c/e;->a(Lcom/panasonic/avc/cng/model/c/e;)Z
+    invoke-static {p1}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->a(Lcom/panasonic/avc/cng/model/c/CameraStatus;)Z
 
     move-result v11
 
@@ -214,7 +214,7 @@
 
     const-string v1, "Content is null!!!"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 8073
     :cond_0
@@ -223,11 +223,11 @@
 
     .line 7271
     :cond_1
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v8
 
@@ -256,7 +256,7 @@
     if-nez v2, :cond_2
 
     .line 7283
-    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/e;->C()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->C()Ljava/lang/String;
 
     move-result-object v2
 
@@ -307,14 +307,14 @@
     .line 7322
     :cond_2
     :goto_1
-    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/e;->a()I
+    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->a()I
 
     move-result v1
 
     iput v1, p0, Lcom/panasonic/avc/cng/view/liveview/e$d;->b:I
 
     .line 7323
-    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/e;->b()I
+    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->b()I
 
     move-result v1
 
@@ -326,7 +326,7 @@
     if-eqz v1, :cond_10
 
     .line 7329
-    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/e;->n()Z
+    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->n()Z
 
     move-result v1
 
@@ -342,7 +342,7 @@
     .line 7338
     :cond_4
     :goto_2
-    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/e;->n()Z
+    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->n()Z
 
     move-result v1
 
@@ -355,7 +355,7 @@
 
     move-result v1
 
-    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/e;->s()Z
+    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->s()Z
 
     move-result v2
 
@@ -368,7 +368,7 @@
     :cond_5
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/e$d;->a:Lcom/panasonic/avc/cng/view/liveview/e;
 
-    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/e;->s()Z
+    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->s()Z
 
     move-result v2
 
@@ -392,7 +392,7 @@
     .line 7350
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/e$d;->a:Lcom/panasonic/avc/cng/view/liveview/e;
 
-    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/e;->W()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->W()Ljava/lang/String;
 
     move-result-object v2
 
@@ -400,7 +400,7 @@
 
     .line 7358
     :goto_3
-    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/e;->c()I
+    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->c()I
 
     move-result v1
 
@@ -429,13 +429,13 @@
 
     if-eqz v2, :cond_12
 
-    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/e;->q()Z
+    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->q()Z
 
     move-result v2
 
     if-eqz v2, :cond_12
 
-    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/e;->r()Z
+    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->r()Z
 
     move-result v2
 
@@ -453,7 +453,7 @@
 
     if-nez v1, :cond_8
 
-    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/e;->D()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->D()Ljava/lang/String;
 
     move-result-object v1
 
@@ -471,7 +471,7 @@
     if-ne v1, v10, :cond_a
 
     .line 7370
-    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/e;->D()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->D()Ljava/lang/String;
 
     move-result-object v1
 
@@ -485,7 +485,7 @@
 
     .line 7372
     :cond_9
-    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/e;->D()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->D()Ljava/lang/String;
 
     move-result-object v1
 
@@ -502,7 +502,7 @@
 
     .line 7377
     :cond_a
-    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/e;->m()Z
+    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->m()Z
 
     move-result v3
 
@@ -528,7 +528,7 @@
     :goto_5
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/e$d;->a:Lcom/panasonic/avc/cng/view/liveview/e;
 
-    invoke-virtual {v1, p1}, Lcom/panasonic/avc/cng/view/liveview/e;->a(Lcom/panasonic/avc/cng/model/c/e;)Z
+    invoke-virtual {v1, p1}, Lcom/panasonic/avc/cng/view/liveview/e;->a(Lcom/panasonic/avc/cng/model/c/CameraStatus;)Z
 
     move-result v1
 
@@ -548,14 +548,14 @@
     :goto_6
     iget-object v2, p0, Lcom/panasonic/avc/cng/view/liveview/e$d;->a:Lcom/panasonic/avc/cng/view/liveview/e;
 
-    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/e;->A()Z
+    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->A()Z
 
     move-result v1
 
     if-eqz v1, :cond_17
 
     .line 7418
-    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/e;->V()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->V()Ljava/lang/String;
 
     move-result-object v1
 
@@ -568,7 +568,7 @@
     if-nez v1, :cond_17
 
     .line 7419
-    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/e;->V()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->V()Ljava/lang/String;
 
     move-result-object v1
 
@@ -594,19 +594,19 @@
     .line 7424
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/e$d;->a:Lcom/panasonic/avc/cng/view/liveview/e;
 
-    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/e;->H()Z
+    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->H()Z
 
     move-result v2
 
     iput-boolean v2, v1, Lcom/panasonic/avc/cng/view/liveview/e;->E:Z
 
     .line 7427
-    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/e;->f()I
+    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->f()I
 
     move-result v6
 
     .line 7428
-    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/e;->z()J
+    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->z()J
 
     move-result-wide v4
 
@@ -672,14 +672,14 @@
 
     .line 7447
     :cond_e
-    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/e;->I()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->I()Ljava/lang/String;
 
     move-result-object v9
 
     .line 7448
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/e$d;->a:Lcom/panasonic/avc/cng/view/liveview/e;
 
-    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/e;->I()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->I()Ljava/lang/String;
 
     move-result-object v1
 
@@ -782,7 +782,7 @@
     :cond_10
     iget-boolean v1, p0, Lcom/panasonic/avc/cng/view/liveview/e$d;->f:Z
 
-    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/e;->n()Z
+    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->n()Z
 
     move-result v2
 
@@ -824,14 +824,14 @@
     :cond_14
     iget-object v2, p0, Lcom/panasonic/avc/cng/view/liveview/e$d;->a:Lcom/panasonic/avc/cng/view/liveview/e;
 
-    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/e;->B()Z
+    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->B()Z
 
     move-result v1
 
     if-eqz v1, :cond_15
 
     .line 7405
-    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/e;->V()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->V()Ljava/lang/String;
 
     move-result-object v1
 
@@ -844,7 +844,7 @@
     if-nez v1, :cond_15
 
     .line 7406
-    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/e;->V()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->V()Ljava/lang/String;
 
     move-result-object v1
 
@@ -870,14 +870,14 @@
     .line 7410
     iget-object v2, p0, Lcom/panasonic/avc/cng/view/liveview/e$d;->a:Lcom/panasonic/avc/cng/view/liveview/e;
 
-    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/e;->A()Z
+    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->A()Z
 
     move-result v1
 
     if-eqz v1, :cond_16
 
     .line 7411
-    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/e;->V()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->V()Ljava/lang/String;
 
     move-result-object v1
 
@@ -890,7 +890,7 @@
     if-nez v1, :cond_16
 
     .line 7412
-    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/e;->V()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->V()Ljava/lang/String;
 
     move-result-object v1
 
@@ -935,7 +935,7 @@
 
     .line 8015
     :cond_18
-    invoke-static {p1}, Lcom/panasonic/avc/cng/model/c/e;->b(Lcom/panasonic/avc/cng/model/c/e;)I
+    invoke-static {p1}, Lcom/panasonic/avc/cng/model/c/CameraStatus;->b(Lcom/panasonic/avc/cng/model/c/CameraStatus;)I
 
     move-result v0
 
@@ -1046,7 +1046,7 @@
 
     move-result-object v2
 
-    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 8136
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/e$d;->a:Lcom/panasonic/avc/cng/view/liveview/e;
@@ -1134,11 +1134,11 @@
     if-eq v2, v3, :cond_5
 
     .line 8436
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v3
 
-    invoke-virtual {v3}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v3}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v3
 
@@ -1442,7 +1442,7 @@
 
     const-string v5, "false: because subscribe Error"
 
-    invoke-static {v4, v5}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v4, v5}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 8271
     iget-object v4, p0, Lcom/panasonic/avc/cng/view/liveview/e$d;->a:Lcom/panasonic/avc/cng/view/liveview/e;
@@ -1517,7 +1517,7 @@
 
     const-string v4, "Subscribe false:"
 
-    invoke-static {v2, v4}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v2, v4}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 8311
     add-int/lit8 v2, v3, -0x1
@@ -1824,7 +1824,7 @@
 
     const-string v4, "Subscribe false:ON_SUBS_PICTBRST_ERR_STOP"
 
-    invoke-static {v3, v4}, Lcom/panasonic/avc/cng/util/g;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v3, v4}, Lcom/panasonic/avc/cng/util/ImageAppLog;->error(Ljava/lang/String;Ljava/lang/String;)V
 
     goto/16 :goto_4
 
@@ -1896,7 +1896,7 @@
 
     const-string v2, "false: because subscribe SDWRFin"
 
-    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 8480
     if-eqz v0, :cond_6

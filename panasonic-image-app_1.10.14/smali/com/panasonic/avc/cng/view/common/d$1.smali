@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/view/common/d;->a(Ljava/lang/String;Ljava/lang/String;)V
+    value = Lcom/panasonic/avc/cng/view/common/TouchShareViewModel;->a(Ljava/lang/String;Ljava/lang/String;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/panasonic/avc/cng/view/common/d;
+.field final synthetic a:Lcom/panasonic/avc/cng/view/common/TouchShareViewModel;
 
 
 # direct methods
-.method constructor <init>(Lcom/panasonic/avc/cng/view/common/d;)V
+.method constructor <init>(Lcom/panasonic/avc/cng/view/common/TouchShareViewModel;)V
     .locals 0
 
     .prologue
     .line 242
-    iput-object p1, p0, Lcom/panasonic/avc/cng/view/common/d$1;->a:Lcom/panasonic/avc/cng/view/common/d;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/view/common/d$1;->a:Lcom/panasonic/avc/cng/view/common/TouchShareViewModel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -41,25 +41,25 @@
 
     .prologue
     .line 249
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/d$1;->a:Lcom/panasonic/avc/cng/view/common/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/d$1;->a:Lcom/panasonic/avc/cng/view/common/TouchShareViewModel;
 
     const-string v1, "apConnect"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/common/d;->a(Lcom/panasonic/avc/cng/view/common/d;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/common/TouchShareViewModel;->a(Lcom/panasonic/avc/cng/view/common/TouchShareViewModel;Ljava/lang/String;)Ljava/lang/String;
 
     .line 250
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/d$1;->a:Lcom/panasonic/avc/cng/view/common/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/d$1;->a:Lcom/panasonic/avc/cng/view/common/TouchShareViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/d;->a(Lcom/panasonic/avc/cng/view/common/d;)Lcom/panasonic/avc/cng/view/common/d$b;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/TouchShareViewModel;->a(Lcom/panasonic/avc/cng/view/common/TouchShareViewModel;)Lcom/panasonic/avc/cng/view/common/d$b;
 
     move-result-object v0
 
     invoke-interface {v0}, Lcom/panasonic/avc/cng/view/common/d$b;->a()V
 
     .line 251
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/d$1;->a:Lcom/panasonic/avc/cng/view/common/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/d$1;->a:Lcom/panasonic/avc/cng/view/common/TouchShareViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/d;->b(Lcom/panasonic/avc/cng/view/common/d;)I
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/TouchShareViewModel;->b(Lcom/panasonic/avc/cng/view/common/TouchShareViewModel;)I
 
     move-result v0
 
@@ -70,7 +70,7 @@
 
     const-string v1, "ConnectToWiFiAp failed"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 318
     :goto_0
@@ -87,34 +87,34 @@
 
     .line 267
     :goto_1
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/d$1;->a:Lcom/panasonic/avc/cng/view/common/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/d$1;->a:Lcom/panasonic/avc/cng/view/common/TouchShareViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/d;->c(Lcom/panasonic/avc/cng/view/common/d;)Z
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/TouchShareViewModel;->c(Lcom/panasonic/avc/cng/view/common/TouchShareViewModel;)Z
 
     move-result v0
 
     if-nez v0, :cond_1
 
     .line 270
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/d$1;->a:Lcom/panasonic/avc/cng/view/common/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/d$1;->a:Lcom/panasonic/avc/cng/view/common/TouchShareViewModel;
 
     const-string v1, "deviceSearch"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/common/d;->a(Lcom/panasonic/avc/cng/view/common/d;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/common/TouchShareViewModel;->a(Lcom/panasonic/avc/cng/view/common/TouchShareViewModel;Ljava/lang/String;)Ljava/lang/String;
 
     .line 271
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/d$1;->a:Lcom/panasonic/avc/cng/view/common/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/d$1;->a:Lcom/panasonic/avc/cng/view/common/TouchShareViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/d;->a(Lcom/panasonic/avc/cng/view/common/d;)Lcom/panasonic/avc/cng/view/common/d$b;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/TouchShareViewModel;->a(Lcom/panasonic/avc/cng/view/common/TouchShareViewModel;)Lcom/panasonic/avc/cng/view/common/d$b;
 
     move-result-object v0
 
     invoke-interface {v0}, Lcom/panasonic/avc/cng/view/common/d$b;->b()V
 
     .line 272
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/d$1;->a:Lcom/panasonic/avc/cng/view/common/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/d$1;->a:Lcom/panasonic/avc/cng/view/common/TouchShareViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/d;->d(Lcom/panasonic/avc/cng/view/common/d;)V
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/TouchShareViewModel;->d(Lcom/panasonic/avc/cng/view/common/TouchShareViewModel;)V
 
     .line 275
     :cond_1
@@ -122,62 +122,62 @@
 
     const-string v1, "\u63a5\u7d9a\u6210\u529f\uff01"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 278
     :cond_2
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/d$1;->a:Lcom/panasonic/avc/cng/view/common/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/d$1;->a:Lcom/panasonic/avc/cng/view/common/TouchShareViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/d;->c(Lcom/panasonic/avc/cng/view/common/d;)Z
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/TouchShareViewModel;->c(Lcom/panasonic/avc/cng/view/common/TouchShareViewModel;)Z
 
     move-result v0
 
     if-nez v0, :cond_3
 
     .line 281
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/d$1;->a:Lcom/panasonic/avc/cng/view/common/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/d$1;->a:Lcom/panasonic/avc/cng/view/common/TouchShareViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/d;->e(Lcom/panasonic/avc/cng/view/common/d;)Z
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/TouchShareViewModel;->e(Lcom/panasonic/avc/cng/view/common/TouchShareViewModel;)Z
 
     move-result v0
 
     if-eqz v0, :cond_4
 
     .line 284
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/d$1;->a:Lcom/panasonic/avc/cng/view/common/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/d$1;->a:Lcom/panasonic/avc/cng/view/common/TouchShareViewModel;
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/common/d;->a(Lcom/panasonic/avc/cng/view/common/d;Z)Z
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/common/TouchShareViewModel;->a(Lcom/panasonic/avc/cng/view/common/TouchShareViewModel;Z)Z
 
     .line 286
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/d$1;->a:Lcom/panasonic/avc/cng/view/common/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/d$1;->a:Lcom/panasonic/avc/cng/view/common/TouchShareViewModel;
 
     const-string v1, "start"
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/common/d;->a(Lcom/panasonic/avc/cng/view/common/d;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/view/common/TouchShareViewModel;->a(Lcom/panasonic/avc/cng/view/common/TouchShareViewModel;Ljava/lang/String;)Ljava/lang/String;
 
     .line 287
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/d$1;->a:Lcom/panasonic/avc/cng/view/common/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/d$1;->a:Lcom/panasonic/avc/cng/view/common/TouchShareViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/d;->a(Lcom/panasonic/avc/cng/view/common/d;)Lcom/panasonic/avc/cng/view/common/d$b;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/TouchShareViewModel;->a(Lcom/panasonic/avc/cng/view/common/TouchShareViewModel;)Lcom/panasonic/avc/cng/view/common/d$b;
 
     move-result-object v0
 
     invoke-interface {v0}, Lcom/panasonic/avc/cng/view/common/d$b;->d()V
 
     .line 290
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/d$1;->a:Lcom/panasonic/avc/cng/view/common/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/d$1;->a:Lcom/panasonic/avc/cng/view/common/TouchShareViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/d;->f(Lcom/panasonic/avc/cng/view/common/d;)V
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/TouchShareViewModel;->f(Lcom/panasonic/avc/cng/view/common/TouchShareViewModel;)V
 
     .line 305
     :goto_2
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
@@ -185,24 +185,24 @@
     if-nez v0, :cond_2
 
     .line 308
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/model/g;->b(Lcom/panasonic/avc/cng/model/f;)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/model/DeviceManager;->b(Lcom/panasonic/avc/cng/model/f;)V
 
     .line 314
     :cond_3
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/d$1;->a:Lcom/panasonic/avc/cng/view/common/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/d$1;->a:Lcom/panasonic/avc/cng/view/common/TouchShareViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/d;->g(Lcom/panasonic/avc/cng/view/common/d;)V
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/TouchShareViewModel;->g(Lcom/panasonic/avc/cng/view/common/TouchShareViewModel;)V
 
     .line 317
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/d$1;->a:Lcom/panasonic/avc/cng/view/common/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/common/d$1;->a:Lcom/panasonic/avc/cng/view/common/TouchShareViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/d;->h(Lcom/panasonic/avc/cng/view/common/d;)V
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/common/TouchShareViewModel;->h(Lcom/panasonic/avc/cng/view/common/TouchShareViewModel;)V
 
     goto :goto_0
 

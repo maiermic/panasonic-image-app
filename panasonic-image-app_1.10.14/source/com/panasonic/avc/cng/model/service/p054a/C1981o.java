@@ -4,12 +4,12 @@ package com.panasonic.avc.cng.model.service.p054a;
 public class C1981o {
 
     /* renamed from: a */
-    private static C1980n f6107a;
+    private static DlnaBrowseCore f6107a;
 
     /* renamed from: a */
-    public static C1980n m8067a() {
+    public static DlnaBrowseCore m8067a() {
         if (f6107a == null) {
-            f6107a = new C1980n();
+            f6107a = new DlnaBrowseCore();
         }
         return f6107a;
     }

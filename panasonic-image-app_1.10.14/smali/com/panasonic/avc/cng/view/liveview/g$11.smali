@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/view/liveview/g;->b(Lcom/panasonic/avc/cng/model/j$f;)V
+    value = Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixCompactViewModel;->b(Lcom/panasonic/avc/cng/model/j$f;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -26,16 +26,16 @@
 
 .field final synthetic d:Ljava/lang/Boolean;
 
-.field final synthetic e:Lcom/panasonic/avc/cng/view/liveview/g;
+.field final synthetic e:Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixCompactViewModel;
 
 
 # direct methods
-.method constructor <init>(Lcom/panasonic/avc/cng/view/liveview/g;ZZLcom/panasonic/avc/cng/view/liveview/e$o;Ljava/lang/Boolean;)V
+.method constructor <init>(Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixCompactViewModel;ZZLcom/panasonic/avc/cng/view/liveview/e$o;Ljava/lang/Boolean;)V
     .locals 0
 
     .prologue
     .line 644
-    iput-object p1, p0, Lcom/panasonic/avc/cng/view/liveview/g$11;->e:Lcom/panasonic/avc/cng/view/liveview/g;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/view/liveview/g$11;->e:Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixCompactViewModel;
 
     iput-boolean p2, p0, Lcom/panasonic/avc/cng/view/liveview/g$11;->a:Z
 
@@ -62,16 +62,16 @@
     if-eqz v0, :cond_0
 
     .line 649
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/g$11;->e:Lcom/panasonic/avc/cng/view/liveview/g;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/g$11;->e:Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixCompactViewModel;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/liveview/g;->aA()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixCompactViewModel;->aA()V
 
     .line 652
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/g$11;->e:Lcom/panasonic/avc/cng/view/liveview/g;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/g$11;->e:Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixCompactViewModel;
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/liveview/g;->i(Z)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixCompactViewModel;->i(Z)V
 
     .line 655
     :cond_0
@@ -80,21 +80,21 @@
     if-eqz v0, :cond_1
 
     .line 658
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/g$11;->e:Lcom/panasonic/avc/cng/view/liveview/g;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/g$11;->e:Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixCompactViewModel;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/liveview/g$11;->c:Lcom/panasonic/avc/cng/view/liveview/e$o;
 
     iget-object v2, p0, Lcom/panasonic/avc/cng/view/liveview/g$11;->d:Ljava/lang/Boolean;
 
-    iget-object v3, p0, Lcom/panasonic/avc/cng/view/liveview/g$11;->e:Lcom/panasonic/avc/cng/view/liveview/g;
+    iget-object v3, p0, Lcom/panasonic/avc/cng/view/liveview/g$11;->e:Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixCompactViewModel;
 
-    iget-byte v3, v3, Lcom/panasonic/avc/cng/view/liveview/g;->J:B
+    iget-byte v3, v3, Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixCompactViewModel;->J:B
 
     invoke-static {v3}, Ljava/lang/Byte;->valueOf(B)Ljava/lang/Byte;
 
     move-result-object v3
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/liveview/g;->b(Lcom/panasonic/avc/cng/view/liveview/e$o;Ljava/lang/Boolean;Ljava/lang/Byte;)V
+    invoke-virtual {v0, v1, v2, v3}, Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixCompactViewModel;->b(Lcom/panasonic/avc/cng/view/liveview/e$o;Ljava/lang/Boolean;Ljava/lang/Byte;)V
 
     .line 660
     :cond_1

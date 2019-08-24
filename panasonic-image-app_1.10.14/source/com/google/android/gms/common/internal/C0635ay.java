@@ -4,7 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 
 /* renamed from: com.google.android.gms.common.internal.ay */
-final class C0635ay extends C0634ax {
+final class C0635ay extends DialogRedirect {
 
     /* renamed from: a */
     private /* synthetic */ Intent f1361a;

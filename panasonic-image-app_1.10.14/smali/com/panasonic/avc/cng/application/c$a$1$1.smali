@@ -45,9 +45,9 @@
 
     iget-object v0, v0, Lcom/panasonic/avc/cng/application/c$a$1;->a:Lcom/panasonic/avc/cng/application/c$a;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/application/c$a;->a:Lcom/panasonic/avc/cng/application/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/application/c$a;->a:Lcom/panasonic/avc/cng/application/NfcSupportViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/application/c;->j(Lcom/panasonic/avc/cng/application/c;)V
+    invoke-static {v0}, Lcom/panasonic/avc/cng/application/NfcSupportViewModel;->j(Lcom/panasonic/avc/cng/application/NfcSupportViewModel;)V
 
     .line 347
     return-void

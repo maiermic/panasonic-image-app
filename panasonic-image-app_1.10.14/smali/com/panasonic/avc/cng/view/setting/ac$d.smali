@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/panasonic/avc/cng/view/setting/ac;
+    value = Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionMovieMakingViewModel;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,18 +15,18 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/panasonic/avc/cng/view/setting/ac;
+.field final synthetic a:Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionMovieMakingViewModel;
 
 .field private b:I
 
 
 # direct methods
-.method public constructor <init>(Lcom/panasonic/avc/cng/view/setting/ac;I)V
+.method public constructor <init>(Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionMovieMakingViewModel;I)V
     .locals 0
 
     .prologue
     .line 86
-    iput-object p1, p0, Lcom/panasonic/avc/cng/view/setting/ac$d;->a:Lcom/panasonic/avc/cng/view/setting/ac;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/view/setting/ac$d;->a:Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionMovieMakingViewModel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,7 +37,7 @@
     return-void
 .end method
 
-.method public constructor <init>(Lcom/panasonic/avc/cng/view/setting/ac;Ljava/lang/String;)V
+.method public constructor <init>(Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionMovieMakingViewModel;Ljava/lang/String;)V
     .locals 3
 
     .prologue
@@ -46,7 +46,7 @@
     const/4 v1, 0x1
 
     .line 62
-    iput-object p1, p0, Lcom/panasonic/avc/cng/view/setting/ac$d;->a:Lcom/panasonic/avc/cng/view/setting/ac;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/view/setting/ac$d;->a:Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionMovieMakingViewModel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -118,12 +118,12 @@
     goto :goto_0
 .end method
 
-.method public constructor <init>(Lcom/panasonic/avc/cng/view/setting/ac;Z)V
+.method public constructor <init>(Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionMovieMakingViewModel;Z)V
     .locals 1
 
     .prologue
     .line 91
-    iput-object p1, p0, Lcom/panasonic/avc/cng/view/setting/ac$d;->a:Lcom/panasonic/avc/cng/view/setting/ac;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/view/setting/ac$d;->a:Lcom/panasonic/avc/cng/view/setting/MirrorlessStopmotionMovieMakingViewModel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

@@ -13,17 +13,17 @@ import com.panasonic.avc.cng.application.C1347a;
 import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.C1892f;
-import com.panasonic.avc.cng.model.p051c.C1846e;
+import com.panasonic.avc.cng.model.p051c.CameraStatus;
 import com.panasonic.avc.cng.model.p051c.C1860l;
 import com.panasonic.avc.cng.model.p052d.C1879a;
 import com.panasonic.avc.cng.model.service.C1985b;
-import com.panasonic.avc.cng.model.service.C2253z;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.view.cameraconnect.GuidanceMenuActivity;
 import com.panasonic.avc.cng.view.liveview.LiveViewNoConnectionActivity;
 import com.panasonic.avc.cng.view.liveview.movie.conventional.LiveViewMoviePictureActivity;
 import com.panasonic.avc.cng.view.liveview.movie.conventional.LiveViewMoviePictureWithFullActivity;
-import com.panasonic.avc.cng.view.liveview.movie.matanity.C3691c.C3709a;
+import com.panasonic.avc.cng.view.liveview.movie.matanity.LiveViewMovieMatanityViewModel.C3709a;
 import com.panasonic.avc.cng.view.liveview.p075a.C2939a;
 import com.panasonic.avc.cng.view.p072a.C2291c;
 import com.panasonic.avc.cng.view.p072a.C2308e;
@@ -31,7 +31,7 @@ import com.panasonic.avc.cng.view.p072a.C2311f;
 import com.panasonic.avc.cng.view.p072a.C2311f.C2312a;
 import com.panasonic.avc.cng.view.p072a.C2316j;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
 
 /* renamed from: com.panasonic.avc.cng.view.liveview.movie.matanity.a */
 public class C3681a extends C2939a {
@@ -43,7 +43,7 @@ public class C3681a extends C2939a {
     protected Handler f11986b;
 
     /* renamed from: c */
-    protected C3691c f11987c;
+    protected LiveViewMovieMatanityViewModel f11987c;
 
     /* renamed from: d */
     protected C3688b f11988d;
@@ -74,47 +74,47 @@ public class C3681a extends C2939a {
         /* renamed from: a */
         public void mo8709a(int i) {
             if (i == 1) {
-                C2331d.m10114a((Activity) C3681a.this, C2328a.ON_ERROR_REMAIN_ZERO, (Bundle) null);
+                DialogFactory.m10114a((Activity) C3681a.this, C2328a.ON_ERROR_REMAIN_ZERO, (Bundle) null);
             } else if (i == 2) {
-                C2331d.m10114a((Activity) C3681a.this, C2328a.ON_ERROR_SD_LOCK_MOVIE, (Bundle) null);
+                DialogFactory.m10114a((Activity) C3681a.this, C2328a.ON_ERROR_SD_LOCK_MOVIE, (Bundle) null);
             } else if (i == 3) {
-                C2331d.m10114a((Activity) C3681a.this, C2328a.ON_ERROR_MOVIE_RECORD_FAIL, (Bundle) null);
+                DialogFactory.m10114a((Activity) C3681a.this, C2328a.ON_ERROR_MOVIE_RECORD_FAIL, (Bundle) null);
             }
         }
 
         /* renamed from: b */
         public void mo8713b(int i) {
             if (i == 1) {
-                C2331d.m10114a((Activity) C3681a.this, C2328a.ON_ERROR_REMAIN_ZERO, (Bundle) null);
+                DialogFactory.m10114a((Activity) C3681a.this, C2328a.ON_ERROR_REMAIN_ZERO, (Bundle) null);
             } else if (i == 2) {
-                C2331d.m10114a((Activity) C3681a.this, C2328a.ON_ERROR_SD_LOCK_PICTURE, (Bundle) null);
+                DialogFactory.m10114a((Activity) C3681a.this, C2328a.ON_ERROR_SD_LOCK_PICTURE, (Bundle) null);
             } else if (i == 3) {
-                C2331d.m10114a((Activity) C3681a.this, C2328a.ON_ERROR_PIC_CAPTURE_FAIL, (Bundle) null);
+                DialogFactory.m10114a((Activity) C3681a.this, C2328a.ON_ERROR_PIC_CAPTURE_FAIL, (Bundle) null);
             } else if (i == 4) {
-                C2331d.m10114a((Activity) C3681a.this, C2328a.ON_ERROR_MATANITY_CAPTURE_FULL, (Bundle) null);
+                DialogFactory.m10114a((Activity) C3681a.this, C2328a.ON_ERROR_MATANITY_CAPTURE_FULL, (Bundle) null);
             } else if (i == 5) {
-                C2331d.m10114a((Activity) C3681a.this, C2328a.ON_ERROR_MATANITY_CREATE_PROECT_FULL, (Bundle) null);
+                DialogFactory.m10114a((Activity) C3681a.this, C2328a.ON_ERROR_MATANITY_CREATE_PROECT_FULL, (Bundle) null);
             }
         }
 
         /* renamed from: a */
         public void mo8710a(int i, int i2) {
             if (i == 2) {
-                C2331d.m10114a((Activity) C3681a.this, C2328a.ON_ERROR_SD_UNSET_MOVIE, (Bundle) null);
+                DialogFactory.m10114a((Activity) C3681a.this, C2328a.ON_ERROR_SD_UNSET_MOVIE, (Bundle) null);
             } else if (i == 3) {
-                C2331d.m10114a((Activity) C3681a.this, C2328a.ON_ERROR_SD_LOCK_MOVIE, (Bundle) null);
+                DialogFactory.m10114a((Activity) C3681a.this, C2328a.ON_ERROR_SD_LOCK_MOVIE, (Bundle) null);
             } else if (i == 4) {
-                C2331d.m10114a((Activity) C3681a.this, C2328a.ON_ERROR_SD_REPAIRED_MOVIE, (Bundle) null);
+                DialogFactory.m10114a((Activity) C3681a.this, C2328a.ON_ERROR_SD_REPAIRED_MOVIE, (Bundle) null);
             } else if (i2 == 2) {
-                C2331d.m10114a((Activity) C3681a.this, C2328a.ON_ERROR_SD_UNSET_PICTURE, (Bundle) null);
+                DialogFactory.m10114a((Activity) C3681a.this, C2328a.ON_ERROR_SD_UNSET_PICTURE, (Bundle) null);
             } else if (i2 == 3) {
-                C2331d.m10114a((Activity) C3681a.this, C2328a.ON_ERROR_SD_LOCK_PICTURE, (Bundle) null);
+                DialogFactory.m10114a((Activity) C3681a.this, C2328a.ON_ERROR_SD_LOCK_PICTURE, (Bundle) null);
             } else if (i2 == 4) {
-                C2331d.m10114a((Activity) C3681a.this, C2328a.ON_ERROR_SD_REPAIRED_PICTURE, (Bundle) null);
+                DialogFactory.m10114a((Activity) C3681a.this, C2328a.ON_ERROR_SD_REPAIRED_PICTURE, (Bundle) null);
             } else if (i != 1 || i2 != 1) {
             } else {
-                if (C2331d.m10125b((Activity) C3681a.this, C2328a.ON_ERROR_SD_UNSET_MOVIE) || C2331d.m10125b((Activity) C3681a.this, C2328a.ON_ERROR_SD_LOCK_MOVIE) || C2331d.m10125b((Activity) C3681a.this, C2328a.ON_ERROR_SD_REPAIRED_MOVIE) || C2331d.m10125b((Activity) C3681a.this, C2328a.ON_ERROR_SD_UNSET_PICTURE) || C2331d.m10125b((Activity) C3681a.this, C2328a.ON_ERROR_SD_LOCK_PICTURE) || C2331d.m10125b((Activity) C3681a.this, C2328a.ON_ERROR_SD_REPAIRED_PICTURE)) {
-                    C2331d.m10100a((Activity) C3681a.this);
+                if (DialogFactory.m10125b((Activity) C3681a.this, C2328a.ON_ERROR_SD_UNSET_MOVIE) || DialogFactory.m10125b((Activity) C3681a.this, C2328a.ON_ERROR_SD_LOCK_MOVIE) || DialogFactory.m10125b((Activity) C3681a.this, C2328a.ON_ERROR_SD_REPAIRED_MOVIE) || DialogFactory.m10125b((Activity) C3681a.this, C2328a.ON_ERROR_SD_UNSET_PICTURE) || DialogFactory.m10125b((Activity) C3681a.this, C2328a.ON_ERROR_SD_LOCK_PICTURE) || DialogFactory.m10125b((Activity) C3681a.this, C2328a.ON_ERROR_SD_REPAIRED_PICTURE)) {
+                    DialogFactory.m10100a((Activity) C3681a.this);
                 }
             }
         }
@@ -123,7 +123,7 @@ public class C3681a extends C2939a {
         public void mo8708a() {
             C3681a.this._cameraUtil.mo6032a((Runnable) new Runnable() {
                 public void run() {
-                    C2331d.m10114a((Activity) C3681a.this, C2328a.ON_PROGRESS, (Bundle) null);
+                    DialogFactory.m10114a((Activity) C3681a.this, C2328a.ON_PROGRESS, (Bundle) null);
                 }
             });
         }
@@ -132,7 +132,7 @@ public class C3681a extends C2939a {
         public void mo8712b() {
             C3681a.this._cameraUtil.mo6032a((Runnable) new Runnable() {
                 public void run() {
-                    C2331d.m10100a((Activity) C3681a.this);
+                    DialogFactory.m10100a((Activity) C3681a.this);
                 }
             });
         }
@@ -141,14 +141,14 @@ public class C3681a extends C2939a {
         public void mo8714c() {
             C3681a.this._cameraUtil.mo6032a((Runnable) new Runnable() {
                 public void run() {
-                    C2331d.m10100a((Activity) C3681a.this);
-                    C2331d.m10114a((Activity) C3681a.this, C2328a.ON_DISCONNECT_FINISH, (Bundle) null);
+                    DialogFactory.m10100a((Activity) C3681a.this);
+                    DialogFactory.m10114a((Activity) C3681a.this, C2328a.ON_DISCONNECT_FINISH, (Bundle) null);
                 }
             });
         }
 
         /* renamed from: a */
-        public void mo8711a(C1846e eVar) {
+        public void mo8711a(CameraStatus eVar) {
             C3681a.this.mo8706a(eVar);
         }
 
@@ -159,12 +159,12 @@ public class C3681a extends C2939a {
 
         /* renamed from: e */
         public void mo8716e() {
-            C2331d.m10114a((Activity) C3681a.this, C2328a.ON_ERROR_MATANITY_CREATE_PROECT_FULL, (Bundle) null);
+            DialogFactory.m10114a((Activity) C3681a.this, C2328a.ON_ERROR_MATANITY_CREATE_PROECT_FULL, (Bundle) null);
         }
 
         /* renamed from: f */
         public void mo8717f() {
-            C2331d.m10114a((Activity) C3681a.this, C2328a.ON_MATANITY_AUTOREVIEW_DISCONNECT, (Bundle) null);
+            DialogFactory.m10114a((Activity) C3681a.this, C2328a.ON_MATANITY_AUTOREVIEW_DISCONNECT, (Bundle) null);
         }
 
         /* renamed from: g */
@@ -192,10 +192,10 @@ public class C3681a extends C2939a {
         /* renamed from: d */
         private boolean m14700d() {
             if (C3681a.this.f11987c.mo8734k()) {
-                C2331d.m10114a((Activity) C3681a.this, C2328a.ON_ERROR_NOW_MOVIE_RECORDING, (Bundle) null);
+                DialogFactory.m10114a((Activity) C3681a.this, C2328a.ON_ERROR_NOW_MOVIE_RECORDING, (Bundle) null);
                 return false;
             } else if (C3681a.this.f11987c.mo8735l() || C3681a.this.f11987c.mo8736m()) {
-                C2331d.m10114a((Activity) C3681a.this, C2328a.ON_ERROR_NOW_PIC_CAPTURE, (Bundle) null);
+                DialogFactory.m10114a((Activity) C3681a.this, C2328a.ON_ERROR_NOW_PIC_CAPTURE, (Bundle) null);
                 return false;
             } else if (!C3681a.this.f11987c.mo8737n()) {
                 return false;
@@ -203,7 +203,7 @@ public class C3681a extends C2939a {
                 if (!C3681a.this.f11987c.mo8730g()) {
                     return true;
                 }
-                C2331d.m10114a((Activity) C3681a.this, C2328a.ON_ERROR_MATANITY_CONFIRMING, (Bundle) null);
+                DialogFactory.m10114a((Activity) C3681a.this, C2328a.ON_ERROR_MATANITY_CONFIRMING, (Bundle) null);
                 return false;
             }
         }
@@ -237,9 +237,9 @@ public class C3681a extends C2939a {
         this.f11985a = this;
         this.f11986b = new Handler();
         this.f11989e = new C3683a();
-        this.f11987c = (C3691c) C2316j.m10030a("LiveViewMovieMatanityViewModel");
+        this.f11987c = (LiveViewMovieMatanityViewModel) C2316j.m10030a("LiveViewMovieMatanityViewModel");
         if (this.f11987c == null) {
-            this.f11987c = new C3691c(this.f11985a, this.f11986b);
+            this.f11987c = new LiveViewMovieMatanityViewModel(this.f11985a, this.f11986b);
             this.f11987c.mo8725a(this.f11985a, this.f11986b, this.f11989e);
             C2316j.m10032a("LiveViewMovieMatanityViewModel", this.f11987c);
         } else {
@@ -328,7 +328,7 @@ public class C3681a extends C2939a {
     /* access modifiers changed from: protected */
     public boolean IsEnableOptionMenu() {
         if (this.f11987c.mo8735l()) {
-            C2331d.m10114a((Activity) this, C2328a.ON_ERROR_NOW_PIC_CAPTURE, (Bundle) null);
+            DialogFactory.m10114a((Activity) this, C2328a.ON_ERROR_NOW_PIC_CAPTURE, (Bundle) null);
             return false;
         } else if (!this.f11987c.mo8731h()) {
             return false;
@@ -336,7 +336,7 @@ public class C3681a extends C2939a {
             if (!this.f11987c.mo8730g()) {
                 return super.IsEnableOptionMenu();
             }
-            C2331d.m10114a((Activity) this, C2328a.ON_ERROR_MATANITY_CONFIRMING, (Bundle) null);
+            DialogFactory.m10114a((Activity) this, C2328a.ON_ERROR_MATANITY_CONFIRMING, (Bundle) null);
             return false;
         }
     }
@@ -349,7 +349,7 @@ public class C3681a extends C2939a {
     }
 
     public void OnClickShutter(View view) {
-        C2261g.m9760a(3158018, "");
+        ImageAppLog.m9760a(3158018, "");
         if (this.f11987c != null) {
             this.f11987c.mo8733j();
         }
@@ -371,7 +371,7 @@ public class C3681a extends C2939a {
                 if (!CheckActivityResult(i, i2, intent)) {
                     C1892f a = C1712b.m6919c().mo4896a();
                     if (a != null) {
-                        C1985b a2 = C2253z.m9679a(this.f11985a, a);
+                        C1985b a2 = ServiceFactory.m9679a(this.f11985a, a);
                         if (a2 != null) {
                             C1860l a3 = a2.mo5182a("menu_item_id_recmode_pht");
                             if (a3 != null && (a3.f5569c.equalsIgnoreCase("ia") || a3.f5569c.equalsIgnoreCase("manual"))) {
@@ -404,13 +404,13 @@ public class C3681a extends C2939a {
 
     /* access modifiers changed from: protected */
     /* renamed from: a */
-    public void mo8706a(C1846e eVar) {
+    public void mo8706a(CameraStatus eVar) {
     }
 
     public void OnClickBrowser(View view) {
         if (this.f11987c.mo8730g()) {
-            C2261g.m9760a(3149827, "");
-            C2331d.m10114a((Activity) this, C2328a.ON_ERROR_MATANITY_CONFIRMING, (Bundle) null);
+            ImageAppLog.m9760a(3149827, "");
+            DialogFactory.m10114a((Activity) this, C2328a.ON_ERROR_MATANITY_CONFIRMING, (Bundle) null);
             return;
         }
         super.OnClickBrowser(view);
@@ -418,8 +418,8 @@ public class C3681a extends C2939a {
 
     public void OnClickHome(View view) {
         if (this.f11987c.mo8730g()) {
-            C2261g.m9760a(3149825, "");
-            C2331d.m10114a((Activity) this, C2328a.ON_ERROR_MATANITY_CONFIRMING, (Bundle) null);
+            ImageAppLog.m9760a(3149825, "");
+            DialogFactory.m10114a((Activity) this, C2328a.ON_ERROR_MATANITY_CONFIRMING, (Bundle) null);
             return;
         }
         super.OnClickHome(view);

@@ -20,10 +20,10 @@ import com.panasonic.avc.cng.view.parts.C4145d;
 import com.panasonic.avc.cng.view.parts.C4204j;
 import com.panasonic.avc.cng.view.parts.C4213l;
 import com.panasonic.avc.cng.view.parts.C4230p;
-import com.panasonic.avc.cng.view.parts.C4245t;
-import com.panasonic.avc.cng.view.parts.C4245t.C4252c;
+import com.panasonic.avc.cng.view.parts.BrowserViewModel;
+import com.panasonic.avc.cng.view.parts.BrowserViewModel.C4252c;
 import com.panasonic.avc.cng.view.parts.C4261w;
-import com.panasonic.avc.cng.view.smartoperation.C5915b;
+import com.panasonic.avc.cng.view.smartoperation.GetSelectFormatList;
 
 /* renamed from: com.panasonic.avc.cng.view.play.multiphotoframe.b */
 public class C4598b {
@@ -33,7 +33,7 @@ public class C4598b {
     /* access modifiers changed from: private */
 
     /* renamed from: b */
-    public C4600c f15035b;
+    public MultiPhotoFrameBrowseViewModel f15035b;
 
     /* renamed from: c */
     private GridView f15036c;
@@ -63,7 +63,7 @@ public class C4598b {
     private C4230p f15044k = null;
 
     /* renamed from: a */
-    public void mo10762a(Activity activity, C4600c cVar) {
+    public void mo10762a(Activity activity, MultiPhotoFrameBrowseViewModel cVar) {
         this.f15034a = activity;
         this.f15035b = cVar;
         m17992c();
@@ -130,7 +130,7 @@ public class C4598b {
                 this.f15035b.f15050i.mo3216a(Boolean.valueOf(false));
                 return;
             }
-            C5915b j = this.f15035b.mo10775j();
+            GetSelectFormatList j = this.f15035b.mo10775j();
             if (j != null) {
                 C1867b c = j.mo12926f().mo9751c();
                 if (c != null) {
@@ -153,7 +153,7 @@ public class C4598b {
         }
         int firstVisiblePosition = this.f15036c.getFirstVisiblePosition();
         int lastVisiblePosition = this.f15036c.getLastVisiblePosition();
-        C4245t i = this.f15035b.mo10774i();
+        BrowserViewModel i = this.f15035b.mo10774i();
         i.getClass();
         return new C4252c(firstVisiblePosition, lastVisiblePosition);
     }

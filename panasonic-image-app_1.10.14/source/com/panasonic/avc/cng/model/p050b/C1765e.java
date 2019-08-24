@@ -27,7 +27,7 @@ import com.panasonic.avc.cng.model.service.C2183l.C2184a;
 import com.panasonic.avc.cng.model.service.C2224q;
 import com.panasonic.avc.cng.model.service.C2234r;
 import com.panasonic.avc.cng.model.service.C2234r.C2235a;
-import com.panasonic.avc.cng.model.service.C2253z;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
 import com.panasonic.avc.cng.p038a.C1342a;
 import com.panasonic.avc.cng.util.C2264j;
 import com.panasonic.avc.cng.util.C2266l;
@@ -127,23 +127,23 @@ public class C1765e extends C1342a {
 
     /* renamed from: c */
     public void mo4517c() {
-        this.f5159d = C2253z.m9711j(this.f5164i);
+        this.f5159d = ServiceFactory.m9711j(this.f5164i);
         if (this.f5159d != null) {
             this.f5159d.mo5204a();
         }
-        this.f5160e = C2253z.m9718m(this.f5164i);
+        this.f5160e = ServiceFactory.m9718m(this.f5164i);
         if (this.f5160e != null) {
             this.f5160e.mo5229a();
         }
-        this.f5161f = C2253z.m9721p(this.f5164i);
+        this.f5161f = ServiceFactory.m9721p(this.f5164i);
         if (this.f5161f != null) {
             this.f5161f.mo5252a();
         }
-        this.f5162g = C2253z.m9720o(this.f5164i);
+        this.f5162g = ServiceFactory.m9720o(this.f5164i);
         if (this.f5162g != null) {
             this.f5162g.mo5248a();
         }
-        this.f5163h = C2253z.m9719n(this.f5164i);
+        this.f5163h = ServiceFactory.m9719n(this.f5164i);
         if (this.f5163h != null) {
             this.f5163h.mo5243a();
         }

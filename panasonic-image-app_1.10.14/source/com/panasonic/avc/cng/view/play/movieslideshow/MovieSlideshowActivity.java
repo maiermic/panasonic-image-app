@@ -17,7 +17,7 @@ import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.C1892f;
 import com.panasonic.avc.cng.model.p052d.C1879a;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.util.C2266l;
 import com.panasonic.avc.cng.view.p072a.C2291c;
 import com.panasonic.avc.cng.view.p072a.C2308e;
@@ -25,19 +25,19 @@ import com.panasonic.avc.cng.view.p072a.C2313g;
 import com.panasonic.avc.cng.view.p072a.C2316j;
 import com.panasonic.avc.cng.view.p073b.C2317a.C2325c;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
 import com.panasonic.avc.cng.view.p073b.C2337e;
 import com.panasonic.avc.cng.view.p073b.C2376f.C2378b;
-import com.panasonic.avc.cng.view.parts.C4245t.C4252c;
-import com.panasonic.avc.cng.view.parts.C4245t.C4255e;
-import com.panasonic.avc.cng.view.play.movieslideshow.C4528c.C4539b;
+import com.panasonic.avc.cng.view.parts.BrowserViewModel.C4252c;
+import com.panasonic.avc.cng.view.parts.BrowserViewModel.C4255e;
+import com.panasonic.avc.cng.view.play.movieslideshow.MovieSlideshowViewModel.C4539b;
 import com.panasonic.avc.cng.view.play.p076a.C4270a;
 
 public class MovieSlideshowActivity extends C4270a {
     /* access modifiers changed from: private */
 
     /* renamed from: a */
-    public C4528c f14788a;
+    public MovieSlideshowViewModel f14788a;
     /* access modifiers changed from: private */
 
     /* renamed from: b */
@@ -94,7 +94,7 @@ public class MovieSlideshowActivity extends C4270a {
         public void mo10008a(int i, int i2) {
             MovieSlideshowActivity.this._cameraUtil.mo6032a((Runnable) new Runnable() {
                 public void run() {
-                    C2331d.m10114a((Activity) MovieSlideshowActivity.this, C2328a.ON_EXCEEDED_MAX_SELECT_NUM, (Bundle) null);
+                    DialogFactory.m10114a((Activity) MovieSlideshowActivity.this, C2328a.ON_EXCEEDED_MAX_SELECT_NUM, (Bundle) null);
                 }
             });
         }
@@ -125,12 +125,12 @@ public class MovieSlideshowActivity extends C4270a {
         public void mo10557a() {
             new Handler(Looper.getMainLooper()).post(new Runnable() {
                 public void run() {
-                    C2331d.m10115a((Activity) MovieSlideshowActivity.this, C2328a.PROGRESS_WITH_MESSAGE, (Bundle) null, (C2325c) new C2325c() {
+                    DialogFactory.m10115a((Activity) MovieSlideshowActivity.this, C2328a.PROGRESS_WITH_MESSAGE, (Bundle) null, (C2325c) new C2325c() {
                         /* renamed from: a */
                         public void mo6131a() {
-                            C2331d.m10111a((Activity) MovieSlideshowActivity.this, C2328a.PROGRESS_WITH_MESSAGE, (int) R.id.percent_num, (CharSequence) "0");
-                            C2331d.m10129c((Activity) MovieSlideshowActivity.this, C2328a.PROGRESS_WITH_MESSAGE, (int) R.id.message_text, (int) R.string.ply_highlight_creating);
-                            C2331d.m10136e(MovieSlideshowActivity.this, C2328a.PROGRESS_WITH_MESSAGE, R.id.slash, 4);
+                            DialogFactory.m10111a((Activity) MovieSlideshowActivity.this, C2328a.PROGRESS_WITH_MESSAGE, (int) R.id.percent_num, (CharSequence) "0");
+                            DialogFactory.m10129c((Activity) MovieSlideshowActivity.this, C2328a.PROGRESS_WITH_MESSAGE, (int) R.id.message_text, (int) R.string.ply_highlight_creating);
+                            DialogFactory.m10136e(MovieSlideshowActivity.this, C2328a.PROGRESS_WITH_MESSAGE, R.id.slash, 4);
                         }
                     });
                 }
@@ -154,28 +154,28 @@ public class MovieSlideshowActivity extends C4270a {
                     i3 = R.string.ply_highlight_creating;
                     break;
             }
-            C2331d.m10111a((Activity) MovieSlideshowActivity.this, C2328a.PROGRESS_WITH_MESSAGE, (int) R.id.percent_num, (CharSequence) String.valueOf(i2));
-            C2331d.m10104a((Activity) MovieSlideshowActivity.this, C2328a.PROGRESS_WITH_MESSAGE, (int) R.id.progressBar2, i2);
-            C2331d.m10129c((Activity) MovieSlideshowActivity.this, C2328a.PROGRESS_WITH_MESSAGE, (int) R.id.message_text, i3);
+            DialogFactory.m10111a((Activity) MovieSlideshowActivity.this, C2328a.PROGRESS_WITH_MESSAGE, (int) R.id.percent_num, (CharSequence) String.valueOf(i2));
+            DialogFactory.m10104a((Activity) MovieSlideshowActivity.this, C2328a.PROGRESS_WITH_MESSAGE, (int) R.id.progressBar2, i2);
+            DialogFactory.m10129c((Activity) MovieSlideshowActivity.this, C2328a.PROGRESS_WITH_MESSAGE, (int) R.id.message_text, i3);
         }
 
         /* renamed from: a */
         public void mo10559a(String str) {
-            C2331d.m10100a((Activity) MovieSlideshowActivity.this);
+            DialogFactory.m10100a((Activity) MovieSlideshowActivity.this);
             if (str.equalsIgnoreCase("nohighlight")) {
-                C2331d.m10114a((Activity) MovieSlideshowActivity.this, C2328a.ERROR_NO_HIGHLIGHT, (Bundle) null);
+                DialogFactory.m10114a((Activity) MovieSlideshowActivity.this, C2328a.ERROR_NO_HIGHLIGHT, (Bundle) null);
             } else if (str.equalsIgnoreCase("noremain")) {
-                C2331d.m10114a((Activity) MovieSlideshowActivity.this, C2328a.ERROR_NO_REMAIN, (Bundle) null);
+                DialogFactory.m10114a((Activity) MovieSlideshowActivity.this, C2328a.ERROR_NO_REMAIN, (Bundle) null);
             } else if (str.equalsIgnoreCase("outofmemory")) {
-                C2331d.m10114a((Activity) MovieSlideshowActivity.this, C2328a.OUT_OF_MEMORY, (Bundle) null);
+                DialogFactory.m10114a((Activity) MovieSlideshowActivity.this, C2328a.OUT_OF_MEMORY, (Bundle) null);
             } else {
-                C2331d.m10114a((Activity) MovieSlideshowActivity.this, C2328a.ERROR_HIGHLIGHT, (Bundle) null);
+                DialogFactory.m10114a((Activity) MovieSlideshowActivity.this, C2328a.ERROR_HIGHLIGHT, (Bundle) null);
             }
         }
 
         /* renamed from: b */
         public void mo10560b() {
-            C2331d.m10100a((Activity) MovieSlideshowActivity.this);
+            DialogFactory.m10100a((Activity) MovieSlideshowActivity.this);
             if (MovieSlideshowActivity.this.f14788a != null) {
                 MovieSlideshowActivity.this.f14788a.mo6022d().putBoolean("GalleryUpdateKey", true);
             }
@@ -184,7 +184,7 @@ public class MovieSlideshowActivity extends C4270a {
 
         /* renamed from: c */
         public void mo10561c() {
-            C2331d.m10100a((Activity) MovieSlideshowActivity.this);
+            DialogFactory.m10100a((Activity) MovieSlideshowActivity.this);
         }
     }
 
@@ -202,9 +202,9 @@ public class MovieSlideshowActivity extends C4270a {
         this._handler = new Handler();
         this.f14790c = new C4500a();
         this.f14791d = new C4505b();
-        this.f14788a = (C4528c) C2316j.m10030a("MovieSlideshowViewModel");
+        this.f14788a = (MovieSlideshowViewModel) C2316j.m10030a("MovieSlideshowViewModel");
         if (this.f14788a == null) {
-            this.f14788a = new C4528c(this._context, this._handler);
+            this.f14788a = new MovieSlideshowViewModel(this._context, this._handler);
             this.f14788a.mo10601a(this._context, this._handler, this.f14790c, this.f14791d);
             C2316j.m10032a("MovieSlideshowViewModel", this.f14788a);
             Bundle extras = getIntent().getExtras();
@@ -269,7 +269,7 @@ public class MovieSlideshowActivity extends C4270a {
             }
         }
         if (z) {
-            C2331d.m10114a((Activity) this, C2328a.WarningFormatDlgHighlight, (Bundle) null);
+            DialogFactory.m10114a((Activity) this, C2328a.WarningFormatDlgHighlight, (Bundle) null);
         }
         if (VERSION.SDK_INT >= 24) {
             setTheme(R.style.AppThemeForOreo);
@@ -311,16 +311,16 @@ public class MovieSlideshowActivity extends C4270a {
         if (!isFinishing()) {
             this.f14792e = false;
             if (this.f14788a.mo10606h().mo9981o() != 0) {
-                C2331d.m10114a((Activity) this, C2328a.ResetSelectedContentsDlg, (Bundle) null);
+                DialogFactory.m10114a((Activity) this, C2328a.ResetSelectedContentsDlg, (Bundle) null);
                 return;
             }
             Bundle bundle = new Bundle();
             bundle.putStringArray(C2378b.SINGLE_CHOICE_LIST.name(), this.f14788a.mo10607i().mo12924d());
             bundle.putInt(C2378b.SINGLE_CHOICE_CHECKED_ITEM.name(), this.f14788a.mo10607i().mo12925e());
-            C2331d.m10115a((Activity) this, C2328a.HIGMLIGHT_MEDIA_SELECT, bundle, (C2325c) new C2325c() {
+            DialogFactory.m10115a((Activity) this, C2328a.HIGMLIGHT_MEDIA_SELECT, bundle, (C2325c) new C2325c() {
                 /* renamed from: a */
                 public void mo6131a() {
-                    C2331d.m10129c((Activity) MovieSlideshowActivity.this, C2328a.HIGMLIGHT_MEDIA_SELECT, (int) R.id.title, (int) R.string.smartop_albumlist_title);
+                    DialogFactory.m10129c((Activity) MovieSlideshowActivity.this, C2328a.HIGMLIGHT_MEDIA_SELECT, (int) R.id.title, (int) R.string.smartop_albumlist_title);
                 }
             });
         }
@@ -330,7 +330,7 @@ public class MovieSlideshowActivity extends C4270a {
         if (!isFinishing()) {
             this.f14792e = true;
             if (this.f14788a.mo10606h().mo9981o() != 0) {
-                C2331d.m10114a((Activity) this, C2328a.ResetSelectedContentsDlg, (Bundle) null);
+                DialogFactory.m10114a((Activity) this, C2328a.ResetSelectedContentsDlg, (Bundle) null);
                 return;
             }
             String[] a = C2337e.m10175a((Context) this, this.f14788a);
@@ -338,10 +338,10 @@ public class MovieSlideshowActivity extends C4270a {
                 Bundle bundle = new Bundle();
                 bundle.putStringArray(C2378b.SINGLE_CHOICE_LIST.name(), a);
                 bundle.putInt(C2378b.SINGLE_CHOICE_CHECKED_ITEM.name(), this.f14788a.mo10607i().mo12930j());
-                C2331d.m10115a((Activity) this, C2328a.HIGHLIGHT_FORMAT_SELECT, bundle, (C2325c) new C2325c() {
+                DialogFactory.m10115a((Activity) this, C2328a.HIGHLIGHT_FORMAT_SELECT, bundle, (C2325c) new C2325c() {
                     /* renamed from: a */
                     public void mo6131a() {
-                        C2331d.m10129c((Activity) MovieSlideshowActivity.this, C2328a.HIGHLIGHT_FORMAT_SELECT, (int) R.id.title, (int) R.string.play_select_format);
+                        DialogFactory.m10129c((Activity) MovieSlideshowActivity.this, C2328a.HIGHLIGHT_FORMAT_SELECT, (int) R.id.title, (int) R.string.play_select_format);
                     }
                 });
             }
@@ -357,7 +357,7 @@ public class MovieSlideshowActivity extends C4270a {
     public void OnClickMovieSlideshowExecute(View view) {
         if (!isFinishing() && this.f14788a != null && !this.f14788a.mo10615q()) {
             if (this.f14788a.mo10606h().mo9981o() <= 0) {
-                C2331d.m10114a((Activity) this, C2328a.ERROR_NO_CONTENT_SELECT, (Bundle) null);
+                DialogFactory.m10114a((Activity) this, C2328a.ERROR_NO_CONTENT_SELECT, (Bundle) null);
                 return;
             }
             long j = 360;
@@ -410,7 +410,7 @@ public class MovieSlideshowActivity extends C4270a {
             } catch (IllegalArgumentException e) {
             }
             if (j2 <= j) {
-                C2331d.m10114a((Activity) this, C2328a.ERROR_NO_REMAIN, (Bundle) null);
+                DialogFactory.m10114a((Activity) this, C2328a.ERROR_NO_REMAIN, (Bundle) null);
                 return;
             }
             this.f14788a.f14863e = null;
@@ -488,12 +488,12 @@ public class MovieSlideshowActivity extends C4270a {
         if (this.f14788a == null || !this.f14788a.mo10615q()) {
             super.OnClickLiveView(view);
         } else {
-            C2261g.m9760a(3149826, "");
+            ImageAppLog.m9760a(3149826, "");
         }
     }
 
     public void OnClickBrowser(View view) {
-        C2261g.m9760a(3149827, "");
+        ImageAppLog.m9760a(3149827, "");
         if (this.f14788a == null || !this.f14788a.mo10615q()) {
             super.OnClickBrowser(view);
         }
@@ -503,7 +503,7 @@ public class MovieSlideshowActivity extends C4270a {
         if (this.f14788a == null || !this.f14788a.mo10615q()) {
             super.OnClickHome(view);
         } else {
-            C2261g.m9760a(3149825, "");
+            ImageAppLog.m9760a(3149825, "");
         }
     }
 
@@ -516,10 +516,10 @@ public class MovieSlideshowActivity extends C4270a {
                         Bundle bundle = new Bundle();
                         bundle.putStringArray(C2378b.SINGLE_CHOICE_LIST.name(), a);
                         bundle.putInt(C2378b.SINGLE_CHOICE_CHECKED_ITEM.name(), this.f14788a.mo10607i().mo12930j());
-                        C2331d.m10115a((Activity) this, C2328a.HIGHLIGHT_FORMAT_SELECT, bundle, (C2325c) new C2325c() {
+                        DialogFactory.m10115a((Activity) this, C2328a.HIGHLIGHT_FORMAT_SELECT, bundle, (C2325c) new C2325c() {
                             /* renamed from: a */
                             public void mo6131a() {
-                                C2331d.m10129c((Activity) MovieSlideshowActivity.this, C2328a.HIGHLIGHT_FORMAT_SELECT, (int) R.id.title, (int) R.string.play_select_format);
+                                DialogFactory.m10129c((Activity) MovieSlideshowActivity.this, C2328a.HIGHLIGHT_FORMAT_SELECT, (int) R.id.title, (int) R.string.play_select_format);
                             }
                         });
                         return;
@@ -529,10 +529,10 @@ public class MovieSlideshowActivity extends C4270a {
                 Bundle bundle2 = new Bundle();
                 bundle2.putStringArray(C2378b.SINGLE_CHOICE_LIST.name(), this.f14788a.mo10607i().mo12924d());
                 bundle2.putInt(C2378b.SINGLE_CHOICE_CHECKED_ITEM.name(), this.f14788a.mo10607i().mo12925e());
-                C2331d.m10115a((Activity) this, C2328a.HIGMLIGHT_MEDIA_SELECT, bundle2, (C2325c) new C2325c() {
+                DialogFactory.m10115a((Activity) this, C2328a.HIGMLIGHT_MEDIA_SELECT, bundle2, (C2325c) new C2325c() {
                     /* renamed from: a */
                     public void mo6131a() {
-                        C2331d.m10129c((Activity) MovieSlideshowActivity.this, C2328a.HIGMLIGHT_MEDIA_SELECT, (int) R.id.title, (int) R.string.smartop_albumlist_title);
+                        DialogFactory.m10129c((Activity) MovieSlideshowActivity.this, C2328a.HIGMLIGHT_MEDIA_SELECT, (int) R.id.title, (int) R.string.smartop_albumlist_title);
                     }
                 });
                 return;
@@ -573,7 +573,7 @@ public class MovieSlideshowActivity extends C4270a {
             case HIGMLIGHT_MEDIA_SELECT:
                 int e = this.f14788a.mo10607i().mo12925e();
                 this.f14788a.mo10607i().mo12918a(i);
-                C2331d.m10100a((Activity) this);
+                DialogFactory.m10100a((Activity) this);
                 if (e != i) {
                     C2266l.m9797a((Context) this, (Activity) this, this.f14788a.mo10607i().mo12924d()[i].toString());
                     return;
@@ -582,7 +582,7 @@ public class MovieSlideshowActivity extends C4270a {
             case HIGHLIGHT_FORMAT_SELECT:
                 int j = this.f14788a.mo10607i().mo12930j();
                 this.f14788a.mo10607i().mo12920b(i);
-                C2331d.m10100a((Activity) this);
+                DialogFactory.m10100a((Activity) this);
                 String[] a = C2337e.m10175a((Context) this, this.f14788a);
                 if (j != i && a != null) {
                     C2266l.m9797a((Context) this, (Activity) this, a[i]);

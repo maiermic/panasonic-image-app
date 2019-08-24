@@ -41,11 +41,11 @@
 
     .prologue
     .line 7089
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
@@ -63,11 +63,11 @@
     .line 7093
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/e$21;->a:Lcom/panasonic/avc/cng/view/liveview/e;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/e;->k:Lcom/panasonic/avc/cng/core/a/af;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/e;->k:Lcom/panasonic/avc/cng/core/a/RecordCommand;
 
     const-string v1, "off"
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/core/a/af;->a(Ljava/lang/String;)Lcom/panasonic/avc/cng/model/c/h;
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/core/a/RecordCommand;->a(Ljava/lang/String;)Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
     .line 7094
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/e$21;->a:Lcom/panasonic/avc/cng/view/liveview/e;
@@ -84,11 +84,11 @@
     :cond_0
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/e$21;->a:Lcom/panasonic/avc/cng/view/liveview/e;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/e;->k:Lcom/panasonic/avc/cng/core/a/af;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/liveview/e;->k:Lcom/panasonic/avc/cng/core/a/RecordCommand;
 
     const-string v1, "disable"
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/core/a/af;->a(Ljava/lang/String;)Lcom/panasonic/avc/cng/model/c/h;
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/core/a/RecordCommand;->a(Ljava/lang/String;)Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
     .line 7100
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/liveview/e$21;->a:Lcom/panasonic/avc/cng/view/liveview/e;

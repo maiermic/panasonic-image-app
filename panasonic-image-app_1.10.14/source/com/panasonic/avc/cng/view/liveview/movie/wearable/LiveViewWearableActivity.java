@@ -9,7 +9,7 @@ import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.p052d.C1879a;
 
-public class LiveViewWearableActivity extends C3827a {
+public class LiveViewWearableActivity extends LiveViewWearableBaseActivity {
     public void onCreate(Bundle bundle) {
         C1712b.m6914a((Activity) this);
         super.onCreate(bundle);

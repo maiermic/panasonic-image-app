@@ -6,7 +6,7 @@ import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.C1892f;
 import com.panasonic.avc.cng.model.service.C1985b.C1986a;
-import com.panasonic.avc.cng.model.service.C2253z;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
 import com.panasonic.avc.cng.view.parts.C4003af;
 import com.panasonic.avc.cng.view.parts.C4021aj;
@@ -14,7 +14,7 @@ import com.panasonic.avc.cng.view.parts.C4021aj.C4033a;
 import com.panasonic.avc.cng.view.parts.C4021aj.C4035c;
 import com.panasonic.avc.cng.view.setting.C5541am.C5561n.C5562a;
 
-public class LiveSetupDrumPickerRecModeDetailActivity extends C5804u {
+public class LiveSetupDrumPickerRecModeDetailActivity extends LiveSetupLumixMirrorlessBaseActivity {
 
     /* renamed from: n */
     private C4021aj f16119n;
@@ -102,7 +102,7 @@ public class LiveSetupDrumPickerRecModeDetailActivity extends C5804u {
                                 public void run() {
                                     C1892f a = C1712b.m6919c().mo4896a();
                                     if (a != null) {
-                                        C2253z.m9679a(LiveSetupDrumPickerRecModeDetailActivity.this._context, a).mo5185a((C1986a) new C1986a() {
+                                        ServiceFactory.m9679a(LiveSetupDrumPickerRecModeDetailActivity.this._context, a).mo5185a((C1986a) new C1986a() {
                                             /* renamed from: a */
                                             public void mo5201a() {
                                             }

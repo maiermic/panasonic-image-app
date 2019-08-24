@@ -103,7 +103,7 @@ public class MultiPhotoFrameMainView extends SurfaceView implements Callback {
     private Integer f14982r = Integer.valueOf(0);
 
     /* renamed from: s */
-    private C4620g f14983s;
+    private MultiPhotoFrameMainData f14983s;
     /* access modifiers changed from: private */
 
     /* renamed from: t */
@@ -227,7 +227,7 @@ public class MultiPhotoFrameMainView extends SurfaceView implements Callback {
         }
     }
 
-    public void setFrameDataViewModel(C4620g gVar) {
+    public void setFrameDataViewModel(MultiPhotoFrameMainData gVar) {
         this.f14983s = gVar;
     }
 

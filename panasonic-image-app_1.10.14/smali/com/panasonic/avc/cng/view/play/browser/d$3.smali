@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/view/play/browser/d;->y()V
+    value = Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;->y()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/panasonic/avc/cng/view/play/browser/d;
+.field final synthetic a:Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;
 
 
 # direct methods
-.method constructor <init>(Lcom/panasonic/avc/cng/view/play/browser/d;)V
+.method constructor <init>(Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;)V
     .locals 0
 
     .prologue
     .line 977
-    iput-object p1, p0, Lcom/panasonic/avc/cng/view/play/browser/d$3;->a:Lcom/panasonic/avc/cng/view/play/browser/d;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/view/play/browser/d$3;->a:Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -41,11 +41,11 @@
 
     .prologue
     .line 979
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
@@ -61,19 +61,19 @@
 
     .line 986
     :try_start_0
-    new-instance v2, Lcom/panasonic/avc/cng/core/a/y;
+    new-instance v2, Lcom/panasonic/avc/cng/core/a/ModeChangeCommand;
 
     iget-object v3, v0, Lcom/panasonic/avc/cng/model/f;->d:Ljava/lang/String;
 
-    invoke-direct {v2, v3}, Lcom/panasonic/avc/cng/core/a/y;-><init>(Ljava/lang/String;)V
+    invoke-direct {v2, v3}, Lcom/panasonic/avc/cng/core/a/ModeChangeCommand;-><init>(Ljava/lang/String;)V
 
     .line 987
-    invoke-virtual {v2}, Lcom/panasonic/avc/cng/core/a/y;->a()Lcom/panasonic/avc/cng/model/c/h;
+    invoke-virtual {v2}, Lcom/panasonic/avc/cng/core/a/ModeChangeCommand;->a()Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;
 
     move-result-object v2
 
     .line 988
-    invoke-virtual {v2}, Lcom/panasonic/avc/cng/model/c/h;->a()Z
+    invoke-virtual {v2}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;->a()Z
 
     move-result v3
 
@@ -92,7 +92,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v2}, Lcom/panasonic/avc/cng/model/c/h;->b()Ljava/lang/String;
+    invoke-virtual {v2}, Lcom/panasonic/avc/cng/model/c/ParseTagHighlightSceneInfo;->b()Ljava/lang/String;
 
     move-result-object v2
 
@@ -104,7 +104,7 @@
 
     move-result-object v2
 
-    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/util/g;->b(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v2}, Lcom/panasonic/avc/cng/util/ImageAppLog;->warning(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 1011
     :goto_0
@@ -116,13 +116,13 @@
 
     .line 994
     :cond_1
-    iget-object v2, p0, Lcom/panasonic/avc/cng/view/play/browser/d$3;->a:Lcom/panasonic/avc/cng/view/play/browser/d;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/view/play/browser/d$3;->a:Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;
 
-    invoke-static {v2}, Lcom/panasonic/avc/cng/view/play/browser/d;->d(Lcom/panasonic/avc/cng/view/play/browser/d;)Landroid/content/Context;
+    invoke-static {v2}, Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;->d(Lcom/panasonic/avc/cng/view/play/browser/GroupBrowserViewModel;)Landroid/content/Context;
 
     move-result-object v2
 
-    invoke-static {v2, v0}, Lcom/panasonic/avc/cng/model/service/z;->a(Landroid/content/Context;Lcom/panasonic/avc/cng/model/f;)Lcom/panasonic/avc/cng/model/service/b;
+    invoke-static {v2, v0}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->a(Landroid/content/Context;Lcom/panasonic/avc/cng/model/f;)Lcom/panasonic/avc/cng/model/service/b;
 
     move-result-object v0
 

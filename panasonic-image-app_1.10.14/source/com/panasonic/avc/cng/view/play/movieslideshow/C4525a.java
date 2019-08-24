@@ -18,10 +18,10 @@ import com.panasonic.avc.cng.view.parts.C4066at;
 import com.panasonic.avc.cng.view.parts.C4145d;
 import com.panasonic.avc.cng.view.parts.C4213l;
 import com.panasonic.avc.cng.view.parts.C4230p;
-import com.panasonic.avc.cng.view.parts.C4245t;
-import com.panasonic.avc.cng.view.parts.C4245t.C4252c;
+import com.panasonic.avc.cng.view.parts.BrowserViewModel;
+import com.panasonic.avc.cng.view.parts.BrowserViewModel.C4252c;
 import com.panasonic.avc.cng.view.parts.C4261w;
-import com.panasonic.avc.cng.view.smartoperation.C5915b;
+import com.panasonic.avc.cng.view.smartoperation.GetSelectFormatList;
 
 /* renamed from: com.panasonic.avc.cng.view.play.movieslideshow.a */
 public class C4525a {
@@ -31,7 +31,7 @@ public class C4525a {
     /* access modifiers changed from: private */
 
     /* renamed from: b */
-    public C4528c f14848b;
+    public MovieSlideshowViewModel f14848b;
     /* access modifiers changed from: private */
 
     /* renamed from: c */
@@ -62,7 +62,7 @@ public class C4525a {
     private C4230p f14857k = null;
 
     /* renamed from: a */
-    public void mo10588a(Activity activity, C4528c cVar) {
+    public void mo10588a(Activity activity, MovieSlideshowViewModel cVar) {
         this.f14847a = activity;
         this.f14848b = cVar;
         m17780c();
@@ -131,7 +131,7 @@ public class C4525a {
                 this.f14848b.f14869k.mo3216a(Boolean.valueOf(false));
                 return;
             }
-            C5915b i = this.f14848b.mo10607i();
+            GetSelectFormatList i = this.f14848b.mo10607i();
             if (i != null) {
                 C1867b c = i.mo12926f().mo9751c();
                 if (c != null) {
@@ -154,7 +154,7 @@ public class C4525a {
         }
         int firstVisiblePosition = this.f14849c.getFirstVisiblePosition();
         int lastVisiblePosition = this.f14849c.getLastVisiblePosition();
-        C4245t h = this.f14848b.mo10606h();
+        BrowserViewModel h = this.f14848b.mo10606h();
         h.getClass();
         return new C4252c(firstVisiblePosition, lastVisiblePosition);
     }

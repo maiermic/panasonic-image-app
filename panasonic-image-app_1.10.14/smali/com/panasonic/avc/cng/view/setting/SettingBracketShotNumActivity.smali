@@ -18,7 +18,7 @@
 
 .field private c:Lcom/panasonic/avc/cng/view/parts/ap;
 
-.field private d:Lcom/panasonic/avc/cng/view/setting/ak;
+.field private d:Lcom/panasonic/avc/cng/view/setting/SettingBracketViewModel;
 
 
 # direct methods
@@ -32,12 +32,12 @@
     return-void
 .end method
 
-.method static synthetic a(Lcom/panasonic/avc/cng/view/setting/SettingBracketShotNumActivity;)Lcom/panasonic/avc/cng/view/setting/ak;
+.method static synthetic a(Lcom/panasonic/avc/cng/view/setting/SettingBracketShotNumActivity;)Lcom/panasonic/avc/cng/view/setting/SettingBracketViewModel;
     .locals 1
 
     .prologue
     .line 29
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/SettingBracketShotNumActivity;->d:Lcom/panasonic/avc/cng/view/setting/ak;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/SettingBracketShotNumActivity;->d:Lcom/panasonic/avc/cng/view/setting/SettingBracketViewModel;
 
     return-object v0
 .end method
@@ -196,7 +196,7 @@
     iput-object v0, p0, Lcom/panasonic/avc/cng/view/setting/SettingBracketShotNumActivity;->a:Lcom/panasonic/avc/cng/view/setting/am;
 
     .line 62
-    new-instance v0, Lcom/panasonic/avc/cng/view/setting/ak;
+    new-instance v0, Lcom/panasonic/avc/cng/view/setting/SettingBracketViewModel;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/SettingBracketShotNumActivity;->_context:Landroid/content/Context;
 
@@ -206,9 +206,9 @@
 
     iget-object v4, p0, Lcom/panasonic/avc/cng/view/setting/SettingBracketShotNumActivity;->b:Lcom/panasonic/avc/cng/view/setting/am$h;
 
-    invoke-direct {v0, v1, v2, v3, v4}, Lcom/panasonic/avc/cng/view/setting/ak;-><init>(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/setting/am;Lcom/panasonic/avc/cng/view/setting/am$h;)V
+    invoke-direct {v0, v1, v2, v3, v4}, Lcom/panasonic/avc/cng/view/setting/SettingBracketViewModel;-><init>(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/setting/am;Lcom/panasonic/avc/cng/view/setting/am$h;)V
 
-    iput-object v0, p0, Lcom/panasonic/avc/cng/view/setting/SettingBracketShotNumActivity;->d:Lcom/panasonic/avc/cng/view/setting/ak;
+    iput-object v0, p0, Lcom/panasonic/avc/cng/view/setting/SettingBracketShotNumActivity;->d:Lcom/panasonic/avc/cng/view/setting/SettingBracketViewModel;
 
     .line 65
     new-instance v0, Lcom/panasonic/avc/cng/view/parts/ap;
@@ -252,11 +252,11 @@
     invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/parts/ap;->a()V
 
     .line 80
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v1
 

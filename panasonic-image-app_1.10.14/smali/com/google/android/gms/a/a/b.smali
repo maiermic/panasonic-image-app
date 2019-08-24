@@ -7,7 +7,7 @@
 
 
 # direct methods
-.method constructor <init>(Lcom/google/android/gms/a/a/a;Ljava/lang/String;)V
+.method constructor <init>(Lcom/google/android/gms/a/a/AdvertisingIdClient;Ljava/lang/String;)V
     .locals 0
 
     iput-object p2, p0, Lcom/google/android/gms/a/a/b;->a:Ljava/lang/String;

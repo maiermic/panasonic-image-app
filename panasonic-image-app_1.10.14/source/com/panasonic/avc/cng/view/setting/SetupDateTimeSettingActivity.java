@@ -13,9 +13,9 @@ import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.view.common.C2820e;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
 import com.panasonic.avc.cng.view.p073b.C2337e;
-import com.panasonic.avc.cng.view.setting.C5537al.C5540a;
+import com.panasonic.avc.cng.view.setting.SettingMenuBaseActivity.C5540a;
 import com.panasonic.avc.cng.view.setting.C5576ao.C5579b;
 import com.panasonic.avc.cng.view.setting.C5681d.C5686b;
 
@@ -57,7 +57,7 @@ public class SetupDateTimeSettingActivity extends C5741i {
                                 C2337e.m10164a((Activity) SetupDateTimeSettingActivity.this, SetupDateTimeSettingActivity.this.f16749d, SetupDateTimeSettingActivity.this.f16746a);
                                 return;
                             default:
-                                C2331d.m10114a((Activity) SetupDateTimeSettingActivity.this, aVar, (Bundle) null);
+                                DialogFactory.m10114a((Activity) SetupDateTimeSettingActivity.this, aVar, (Bundle) null);
                                 return;
                         }
                     }
@@ -74,7 +74,7 @@ public class SetupDateTimeSettingActivity extends C5741i {
             if (SetupDateTimeSettingActivity.this._handler != null) {
                 SetupDateTimeSettingActivity.this._handler.post(new Runnable() {
                     public void run() {
-                        C2331d.m10100a((Activity) SetupDateTimeSettingActivity.this);
+                        DialogFactory.m10100a((Activity) SetupDateTimeSettingActivity.this);
                         SetupDateTimeSettingActivity.this.setResult(-1);
                         if (SetupDateTimeSettingActivity.this.f16749d.mo12363f()) {
                             SetupDateTimeSettingActivity.this.finish();
@@ -93,8 +93,8 @@ public class SetupDateTimeSettingActivity extends C5741i {
             if (SetupDateTimeSettingActivity.this._handler != null) {
                 SetupDateTimeSettingActivity.this._handler.post(new Runnable() {
                     public void run() {
-                        C2331d.m10100a((Activity) SetupDateTimeSettingActivity.this);
-                        C2331d.m10114a((Activity) SetupDateTimeSettingActivity.this, C2328a.ON_ERRORBUSY, (Bundle) null);
+                        DialogFactory.m10100a((Activity) SetupDateTimeSettingActivity.this);
+                        DialogFactory.m10114a((Activity) SetupDateTimeSettingActivity.this, C2328a.ON_ERRORBUSY, (Bundle) null);
                     }
                 });
             }
@@ -151,13 +151,13 @@ public class SetupDateTimeSettingActivity extends C5741i {
                             }
                             switch (i) {
                                 case 2:
-                                    C2331d.m10114a((Activity) SetupDateTimeSettingActivity.this, C2328a.ON_DISCONNECT_BY_HIGH_TEMP_FINISH, (Bundle) null);
+                                    DialogFactory.m10114a((Activity) SetupDateTimeSettingActivity.this, C2328a.ON_DISCONNECT_BY_HIGH_TEMP_FINISH, (Bundle) null);
                                     return;
                                 case 3:
-                                    C2331d.m10114a((Activity) SetupDateTimeSettingActivity.this, C2328a.ON_DISCONNECT_BATTERY_LOW_FINISH, (Bundle) null);
+                                    DialogFactory.m10114a((Activity) SetupDateTimeSettingActivity.this, C2328a.ON_DISCONNECT_BATTERY_LOW_FINISH, (Bundle) null);
                                     return;
                                 default:
-                                    C2331d.m10114a((Activity) SetupDateTimeSettingActivity.this, C2328a.ON_DISCONNECT_FINISH, (Bundle) null);
+                                    DialogFactory.m10114a((Activity) SetupDateTimeSettingActivity.this, C2328a.ON_DISCONNECT_FINISH, (Bundle) null);
                                     return;
                             }
                         }

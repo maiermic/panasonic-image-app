@@ -43,9 +43,9 @@
     .line 254
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ar$a$2;->a:Lcom/panasonic/avc/cng/view/setting/ar$a;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/ar$a;->a:Lcom/panasonic/avc/cng/view/setting/ar;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/ar$a;->a:Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewCreativeControlViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/ar;->b(Lcom/panasonic/avc/cng/view/setting/ar;)Lcom/panasonic/avc/cng/view/setting/am$h;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewCreativeControlViewModel;->b(Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewCreativeControlViewModel;)Lcom/panasonic/avc/cng/view/setting/am$h;
 
     move-result-object v0
 
@@ -54,9 +54,9 @@
     .line 255
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/setting/ar$a$2;->a:Lcom/panasonic/avc/cng/view/setting/ar$a;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/ar$a;->a:Lcom/panasonic/avc/cng/view/setting/ar;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/setting/ar$a;->a:Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewCreativeControlViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/ar;->b(Lcom/panasonic/avc/cng/view/setting/ar;)Lcom/panasonic/avc/cng/view/setting/am$h;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewCreativeControlViewModel;->b(Lcom/panasonic/avc/cng/view/setting/SetupWithLiveViewCreativeControlViewModel;)Lcom/panasonic/avc/cng/view/setting/am$h;
 
     move-result-object v0
 

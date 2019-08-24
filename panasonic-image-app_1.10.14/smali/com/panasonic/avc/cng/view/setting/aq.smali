@@ -66,11 +66,11 @@
 
     .line 476
     :try_start_0
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
@@ -270,13 +270,13 @@
     if-nez v0, :cond_1
 
     .line 375
-    new-instance v0, Lcom/panasonic/avc/cng/view/liveview/g;
+    new-instance v0, Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixCompactViewModel;
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/aq;->_handler:Landroid/os/Handler;
 
     iget-object v2, p0, Lcom/panasonic/avc/cng/view/setting/aq;->k:Lcom/panasonic/avc/cng/view/setting/aq$a;
 
-    invoke-direct {v0, p0, v1, v2}, Lcom/panasonic/avc/cng/view/liveview/g;-><init>(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/liveview/e$f;)V
+    invoke-direct {v0, p0, v1, v2}, Lcom/panasonic/avc/cng/view/liveview/LiveViewLumixCompactViewModel;-><init>(Landroid/content/Context;Landroid/os/Handler;Lcom/panasonic/avc/cng/view/liveview/e$f;)V
 
     iput-object v0, p0, Lcom/panasonic/avc/cng/view/setting/aq;->i:Lcom/panasonic/avc/cng/view/liveview/e;
 
@@ -903,18 +903,18 @@
     invoke-virtual {p0}, Lcom/panasonic/avc/cng/view/setting/aq;->OnSetResult()V
 
     .line 267
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
     if-eqz v0, :cond_1
 
     .line 269
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
@@ -924,7 +924,7 @@
     .line 273
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/setting/aq;->_context:Landroid/content/Context;
 
-    invoke-static {v1, v0}, Lcom/panasonic/avc/cng/model/service/z;->a(Landroid/content/Context;Lcom/panasonic/avc/cng/model/f;)Lcom/panasonic/avc/cng/model/service/b;
+    invoke-static {v1, v0}, Lcom/panasonic/avc/cng/model/service/ServiceFactory;->a(Landroid/content/Context;Lcom/panasonic/avc/cng/model/f;)Lcom/panasonic/avc/cng/model/service/b;
 
     move-result-object v0
 

@@ -19,8 +19,8 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-import com.panasonic.avc.cng.application.C1384d;
-import com.panasonic.avc.cng.application.C1389e;
+import com.panasonic.avc.cng.application.RemoteWatchNfcSupportActivity;
+import com.panasonic.avc.cng.application.RemoteWatchNfcSupportViewModel;
 import com.panasonic.avc.cng.imageapp.C1701a.C1702a;
 import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.C1712b;
@@ -28,16 +28,16 @@ import com.panasonic.avc.cng.model.service.C2241u.C2242a;
 import com.panasonic.avc.cng.model.service.p056c.C2020c;
 import com.panasonic.avc.cng.p038a.C1343b;
 import com.panasonic.avc.cng.util.C2258d;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.util.C2266l;
 import com.panasonic.avc.cng.view.common.C2820e;
 import com.panasonic.avc.cng.view.common.QrCodeReaderActivity;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
 import com.panasonic.avc.cng.view.parts.C4230p;
 
 @SuppressLint({"StringFormatMatches"})
-public class RemoteWatchConnectActivity extends C1384d implements C0010a {
+public class RemoteWatchConnectActivity extends RemoteWatchNfcSupportActivity implements C0010a {
     private final String TAG = "RemoteWatchConnectActivity";
     /* access modifiers changed from: private */
     public Context _context;
@@ -63,7 +63,7 @@ public class RemoteWatchConnectActivity extends C1384d implements C0010a {
     public SharedPreferences f16525sp;
 
     public void onCreate(Bundle bundle) {
-        C2261g.m9763a("RemoteWatchConnectActivity", "");
+        ImageAppLog.debug("RemoteWatchConnectActivity", "");
         C1712b.m6914a((Activity) this);
         super.onCreate(bundle);
         requestWindowFeature(1);
@@ -75,10 +75,10 @@ public class RemoteWatchConnectActivity extends C1384d implements C0010a {
     /* access modifiers changed from: protected */
     public void onStart() {
         super.onStart();
-        C2261g.m9763a("RemoteWatchConnectActivity", "");
+        ImageAppLog.debug("RemoteWatchConnectActivity", "");
         this._viewModel = C2820e.m11818g(this._context, this._handler);
         if (this._viewModel == null) {
-            C2820e.m11806a(getClass().getName(), (C1389e) null);
+            C2820e.m11806a(getClass().getName(), (RemoteWatchNfcSupportViewModel) null);
             this._viewModel = new C5530aj(this._context, this._handler);
             InitializeNfc(getClass().getName());
             if (this._nfcViewModel.mo3381m().booleanValue()) {
@@ -140,7 +140,7 @@ public class RemoteWatchConnectActivity extends C1384d implements C0010a {
                 if (!C2266l.m9845h(RemoteWatchConnectActivity.this._context)) {
                     C0008a.m38a(RemoteWatchConnectActivity.this, new String[]{"android.permission.CAMERA"}, 35);
                 } else if (RemoteWatchConnectActivity.this._isQRRunning) {
-                    C2261g.m9771e("QRButton", "Running......");
+                    ImageAppLog.info("QRButton", "Running......");
                 } else {
                     RemoteWatchConnectActivity.this._isQRRunning = true;
                     if (!C2258d.m9740a()) {
@@ -156,55 +156,55 @@ public class RemoteWatchConnectActivity extends C1384d implements C0010a {
     }
 
     public void finish() {
-        C2261g.m9763a("RemoteWatchConnectActivity", "finish S");
+        ImageAppLog.debug("RemoteWatchConnectActivity", "finish S");
         OnSetResult();
-        C2261g.m9763a("RemoteWatchConnectActivity", "finish S1");
+        ImageAppLog.debug("RemoteWatchConnectActivity", "finish S1");
         if (this._nfcViewModel != null && !this._nfcViewModel.mo3381m().booleanValue()) {
-            C2261g.m9763a("RemoteWatchConnectActivity", "finish S2");
+            ImageAppLog.debug("RemoteWatchConnectActivity", "finish S2");
             C2820e.m11794a((C5530aj) null);
-            C2261g.m9763a("RemoteWatchConnectActivity", "finish S3");
+            ImageAppLog.debug("RemoteWatchConnectActivity", "finish S3");
             if (this._viewModel != null) {
-                C2261g.m9763a("RemoteWatchConnectActivity", "finish S4");
+                ImageAppLog.debug("RemoteWatchConnectActivity", "finish S4");
                 this._viewModel.mo3205a();
             }
-            C2261g.m9763a("RemoteWatchConnectActivity", "finish S5");
-            C2820e.m11806a(getClass().getName(), (C1389e) null);
+            ImageAppLog.debug("RemoteWatchConnectActivity", "finish S5");
+            C2820e.m11806a(getClass().getName(), (RemoteWatchNfcSupportViewModel) null);
         }
-        C2261g.m9763a("RemoteWatchConnectActivity", "finish S6");
+        ImageAppLog.debug("RemoteWatchConnectActivity", "finish S6");
         super.finish();
-        C2261g.m9763a("RemoteWatchConnectActivity", "finish E");
+        ImageAppLog.debug("RemoteWatchConnectActivity", "finish E");
     }
 
     private void OnSetResult() {
-        C2261g.m9763a("RemoteWatchConnectActivity", "OnSetResult S");
+        ImageAppLog.debug("RemoteWatchConnectActivity", "OnSetResult S");
         Intent intent = new Intent();
         intent.putExtras(this._resultBundle);
         setResult(-1, intent);
-        C2261g.m9763a("RemoteWatchConnectActivity", "OnSetResult E");
+        ImageAppLog.debug("RemoteWatchConnectActivity", "OnSetResult E");
     }
 
     /* access modifiers changed from: protected */
     public void onRestart() {
         super.onRestart();
-        C2261g.m9763a("RemoteWatchConnectActivity", "");
+        ImageAppLog.debug("RemoteWatchConnectActivity", "");
     }
 
     /* access modifiers changed from: protected */
     public void onPause() {
         super.onPause();
-        C2261g.m9763a("RemoteWatchConnectActivity", "");
+        ImageAppLog.debug("RemoteWatchConnectActivity", "");
     }
 
     /* access modifiers changed from: protected */
     public void onResume() {
         super.onResume();
-        C2261g.m9763a("RemoteWatchConnectActivity", "");
+        ImageAppLog.debug("RemoteWatchConnectActivity", "");
     }
 
     /* access modifiers changed from: protected */
     public void onStop() {
         super.onStop();
-        C2261g.m9763a("RemoteWatchConnectActivity", "");
+        ImageAppLog.debug("RemoteWatchConnectActivity", "");
         if (this._viewModel != null && this._viewModel.f17140c != null) {
             this._viewModel.f17140c.mo3213a();
         }
@@ -213,7 +213,7 @@ public class RemoteWatchConnectActivity extends C1384d implements C0010a {
     /* access modifiers changed from: protected */
     public void onDestroy() {
         super.onDestroy();
-        C2261g.m9763a("RemoteWatchConnectActivity", "");
+        ImageAppLog.debug("RemoteWatchConnectActivity", "");
     }
 
     /* access modifiers changed from: protected */
@@ -221,7 +221,7 @@ public class RemoteWatchConnectActivity extends C1384d implements C0010a {
         return new C2242a() {
             /* renamed from: a */
             public void mo3347a(final String str, final String str2, final String str3) {
-                C2261g.m9763a("★RemoteWatchConnectActivity", "NFC OnSuccess --- id:" + str2 + " Pass:" + str3);
+                ImageAppLog.debug("★RemoteWatchConnectActivity", "NFC OnSuccess --- id:" + str2 + " Pass:" + str3);
                 if (RemoteWatchConnectActivity.this._nfcViewModel != null) {
                     RemoteWatchConnectActivity.this._nfcViewModel.mo3365a(false);
                 }
@@ -279,21 +279,21 @@ public class RemoteWatchConnectActivity extends C1384d implements C0010a {
                     }
                     RemoteWatchConnectActivity.this._nfcViewModel.mo3371c(z);
                     if (z) {
-                        C2261g.m9763a("RemoteWatchConnectActivity", "NFC/FeliCa 利用可");
-                        C2331d.m10100a((Activity) RemoteWatchConnectActivity.this);
+                        ImageAppLog.debug("RemoteWatchConnectActivity", "NFC/FeliCa 利用可");
+                        DialogFactory.m10100a((Activity) RemoteWatchConnectActivity.this);
                     } else {
-                        C2261g.m9763a("RemoteWatchConnectActivity", "NFC/FeliCa 利用不可");
+                        ImageAppLog.debug("RemoteWatchConnectActivity", "NFC/FeliCa 利用不可");
                         RemoteWatchConnectActivity.this._nfcViewModel.mo3377i();
                     }
                     if (RemoteWatchConnectActivity.this._viewModel != null && RemoteWatchConnectActivity.this._nfcViewModel != null && RemoteWatchConnectActivity.this._nfcViewModel.mo3381m().booleanValue()) {
-                        C2261g.m9763a("RemoteWatchConnectActivity", "OnEnableNfc　2回目タッチ画面");
+                        ImageAppLog.debug("RemoteWatchConnectActivity", "OnEnableNfc　2回目タッチ画面");
                         if (z) {
-                            C2261g.m9763a("RemoteWatchConnectActivity", "NFC/FeliCa 利用可");
-                            C2331d.m10100a((Activity) RemoteWatchConnectActivity.this);
+                            ImageAppLog.debug("RemoteWatchConnectActivity", "NFC/FeliCa 利用可");
+                            DialogFactory.m10100a((Activity) RemoteWatchConnectActivity.this);
                             RemoteWatchConnectActivity.this._nfcViewModel.mo3378j();
                             return;
                         }
-                        C2261g.m9763a("RemoteWatchConnectActivity", "NFC/FeliCa 利用不可");
+                        ImageAppLog.debug("RemoteWatchConnectActivity", "NFC/FeliCa 利用不可");
                         RemoteWatchConnectActivity.this._nfcViewModel.mo3377i();
                     }
                 }
@@ -335,8 +335,8 @@ public class RemoteWatchConnectActivity extends C1384d implements C0010a {
 
             /* renamed from: g */
             public void mo3354g() {
-                if (C2331d.m10125b((Activity) RemoteWatchConnectActivity.this, C2328a.ON_PROGRESS)) {
-                    C2331d.m10100a((Activity) RemoteWatchConnectActivity.this);
+                if (DialogFactory.m10125b((Activity) RemoteWatchConnectActivity.this, C2328a.ON_PROGRESS)) {
+                    DialogFactory.m10100a((Activity) RemoteWatchConnectActivity.this);
                 }
             }
         };
@@ -344,8 +344,8 @@ public class RemoteWatchConnectActivity extends C1384d implements C0010a {
 
     /* access modifiers changed from: private */
     public void NfcTouchFailed() {
-        C2261g.m9763a("RemoteWatchConnectActivity", "NFCタッチ失敗");
-        C2261g.m9763a("RemoteWatchConnectActivity", "NFC OnFailed");
+        ImageAppLog.debug("RemoteWatchConnectActivity", "NFCタッチ失敗");
+        ImageAppLog.debug("RemoteWatchConnectActivity", "NFC OnFailed");
         this._nfcViewModel.mo3366a(false, false);
         this._nfcViewModel.mo3365a(false);
         if (!this._nfcViewModel.mo3381m().booleanValue()) {
@@ -367,7 +367,7 @@ public class RemoteWatchConnectActivity extends C1384d implements C0010a {
 
     /* access modifiers changed from: private */
     public void SetDisplayNfcFirstTouch() {
-        C2261g.m9763a("RemoteWatchConnectActivity", "初回専用タッチ画面作成");
+        ImageAppLog.debug("RemoteWatchConnectActivity", "初回専用タッチ画面作成");
         View inflate = LayoutInflater.from(this._context).inflate(R.layout.activity_nfc_touch, null);
         TextView textView = (TextView) inflate.findViewById(R.id.firstTouchExplain);
         textView.setText(getString(R.string.msg_nfc_movie_work) + getString(R.string.msg_nfc_after_movie_work));
@@ -376,7 +376,7 @@ public class RemoteWatchConnectActivity extends C1384d implements C0010a {
         button.setText(R.string.cmn_btn_cancel);
         button.setOnClickListener(new OnClickListener() {
             public void onClick(View view) {
-                C2261g.m9763a("RemoteWatchConnectActivity", "SetNfcProcessFlg:false");
+                ImageAppLog.debug("RemoteWatchConnectActivity", "SetNfcProcessFlg:false");
                 RemoteWatchConnectActivity.this._nfcViewModel.mo3366a(false, true);
                 if (RemoteWatchConnectActivity.this.f16525sp == null) {
                     RemoteWatchConnectActivity.this.f16525sp = RemoteWatchConnectActivity.this.getSharedPreferences("com.panasonic.avc.cng.imageapp.privatekey", 0);
@@ -397,7 +397,7 @@ public class RemoteWatchConnectActivity extends C1384d implements C0010a {
     public void onActivityResult(int i, int i2, Intent intent) {
         super.onActivityResult(i, i2, intent);
         this._isQRRunning = false;
-        C2261g.m9763a("★RemoteWatchConnectActivity", "onActivityResult");
+        ImageAppLog.debug("★RemoteWatchConnectActivity", "onActivityResult");
         if (intent != null) {
             Bundle extras = intent.getExtras();
             if (i != 1) {
@@ -446,7 +446,7 @@ public class RemoteWatchConnectActivity extends C1384d implements C0010a {
             case 2:
             case 3:
             case 4:
-                C2331d.m10114a((Activity) this, aVar, (Bundle) null);
+                DialogFactory.m10114a((Activity) this, aVar, (Bundle) null);
                 return;
             case 5:
             case 6:
@@ -455,11 +455,11 @@ public class RemoteWatchConnectActivity extends C1384d implements C0010a {
                 if (this._nfcViewModel != null) {
                     this._nfcViewModel.mo3368b(true);
                 }
-                C2331d.m10114a((Activity) this, aVar, (Bundle) null);
+                DialogFactory.m10114a((Activity) this, aVar, (Bundle) null);
                 return;
             case C1702a.HorizontalPicker_title_image /*9*/:
-                if (!C2331d.m10125b((Activity) this, C2328a.DIALOG_ID_REMOTE_NFC_FAILED) && !C2331d.m10125b((Activity) this, C2328a.DIALOG_ID_REMOTE_START_CONFIRM) && !C2331d.m10125b((Activity) this, C2328a.DIALOG_ID_WIFI_FAILED_NFC_TIMEOUT) && !C2331d.m10125b((Activity) this, C2328a.WiFiFailedAlreadyConnected) && !C2331d.m10125b((Activity) this, C2328a.DIALOG_ID_TOUCH_SAME_CAMERA) && !C2331d.m10125b((Activity) this, C2328a.DIALOG_ID_REMOTE_NFC_FAILED_TOUCH) && !C2331d.m10125b((Activity) this, C2328a.DIALOG_ID_WIFI_OFF_CONFIRM) && !C2331d.m10125b((Activity) this, C2328a.DIALOG_ID_CAMERA_OPEN_FAILED)) {
-                    C2331d.m10114a((Activity) this, aVar, (Bundle) null);
+                if (!DialogFactory.m10125b((Activity) this, C2328a.DIALOG_ID_REMOTE_NFC_FAILED) && !DialogFactory.m10125b((Activity) this, C2328a.DIALOG_ID_REMOTE_START_CONFIRM) && !DialogFactory.m10125b((Activity) this, C2328a.DIALOG_ID_WIFI_FAILED_NFC_TIMEOUT) && !DialogFactory.m10125b((Activity) this, C2328a.WiFiFailedAlreadyConnected) && !DialogFactory.m10125b((Activity) this, C2328a.DIALOG_ID_TOUCH_SAME_CAMERA) && !DialogFactory.m10125b((Activity) this, C2328a.DIALOG_ID_REMOTE_NFC_FAILED_TOUCH) && !DialogFactory.m10125b((Activity) this, C2328a.DIALOG_ID_WIFI_OFF_CONFIRM) && !DialogFactory.m10125b((Activity) this, C2328a.DIALOG_ID_CAMERA_OPEN_FAILED)) {
+                    DialogFactory.m10114a((Activity) this, aVar, (Bundle) null);
                     return;
                 }
                 return;
@@ -497,7 +497,7 @@ public class RemoteWatchConnectActivity extends C1384d implements C0010a {
                         }
                         RemoteWatchConnectActivity.this._handler.post(new Runnable() {
                             public void run() {
-                                C2331d.m10100a((Activity) RemoteWatchConnectActivity.this);
+                                DialogFactory.m10100a((Activity) RemoteWatchConnectActivity.this);
                             }
                         });
                         RemoteWatchConnectActivity.this._resultBundle.putString("MoveToOtherKey", "RemoteView");

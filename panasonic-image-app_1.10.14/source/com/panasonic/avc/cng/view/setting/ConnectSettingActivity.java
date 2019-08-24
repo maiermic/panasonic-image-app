@@ -27,17 +27,17 @@ import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.C1892f;
 import com.panasonic.avc.cng.model.service.p056c.C2020c;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.util.C2266l;
 import com.panasonic.avc.cng.view.common.C2820e;
 import com.panasonic.avc.cng.view.common.QrCodeReaderActivity;
 import com.panasonic.avc.cng.view.p073b.C2317a.C2325c;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
 import com.panasonic.avc.cng.view.p073b.C2337e;
 import com.panasonic.avc.cng.view.p073b.C2376f.C2378b;
-import com.panasonic.avc.cng.view.setting.C5537al.C5540a;
-import com.panasonic.avc.cng.view.setting.C5702g.C5718d;
+import com.panasonic.avc.cng.view.setting.SettingMenuBaseActivity.C5540a;
+import com.panasonic.avc.cng.view.setting.ConnectSettingViewModel.C5718d;
 import com.panasonic.avc.cng.view.setting.C5741i.C5759a;
 import java.util.ArrayList;
 import java.util.List;
@@ -49,7 +49,7 @@ public class ConnectSettingActivity extends C5741i {
     /* access modifiers changed from: private */
 
     /* renamed from: b */
-    public C5702g f15843b;
+    public ConnectSettingViewModel f15843b;
     /* access modifiers changed from: private */
 
     /* renamed from: c */
@@ -192,7 +192,7 @@ public class ConnectSettingActivity extends C5741i {
 
         /* renamed from: b */
         public void mo11411b(C2328a aVar) {
-            C2331d.m10100a((Activity) ConnectSettingActivity.this);
+            DialogFactory.m10100a((Activity) ConnectSettingActivity.this);
         }
 
         /* renamed from: b */
@@ -202,9 +202,9 @@ public class ConnectSettingActivity extends C5741i {
 
         /* renamed from: a */
         public void mo11406a(int i, int i2) {
-            if (C2331d.m10125b((Activity) ConnectSettingActivity.this, C2328a.ON_NETWORK_SHOW_WIFI_LIST) && ConnectSettingActivity.this.f15843b != null) {
-                C2261g.m9763a("WifiDirect", "ImageAppViewModelListener: Restart");
-                C2331d.m10100a((Activity) ConnectSettingActivity.this);
+            if (DialogFactory.m10125b((Activity) ConnectSettingActivity.this, C2328a.ON_NETWORK_SHOW_WIFI_LIST) && ConnectSettingActivity.this.f15843b != null) {
+                ImageAppLog.debug("WifiDirect", "ImageAppViewModelListener: Restart");
+                DialogFactory.m10100a((Activity) ConnectSettingActivity.this);
                 ConnectSettingActivity.this.f15843b.mo12535d();
             }
         }
@@ -219,15 +219,15 @@ public class ConnectSettingActivity extends C5741i {
             ConnectSettingActivity.this.f15842a = str;
             switch (i) {
                 case 0:
-                    C2331d.m10100a((Activity) ConnectSettingActivity.this);
+                    DialogFactory.m10100a((Activity) ConnectSettingActivity.this);
                     C2337e.m10168a((Activity) ConnectSettingActivity.this, ConnectSettingActivity.this.f15842a);
                     return;
                 case 4:
-                    C2331d.m10100a((Activity) ConnectSettingActivity.this);
+                    DialogFactory.m10100a((Activity) ConnectSettingActivity.this);
                     C2337e.m10168a((Activity) ConnectSettingActivity.this, ConnectSettingActivity.this.f15842a);
                     return;
                 case C1702a.HorizontalPicker_hairline_visible /*11*/:
-                    C2331d.m10100a((Activity) ConnectSettingActivity.this);
+                    DialogFactory.m10100a((Activity) ConnectSettingActivity.this);
                     ConnectSettingActivity.this._handler.post(new Runnable() {
                         public void run() {
                             ConnectSettingActivity.this.showSimpleDlg(C2328a.ON_PROGRESS, null);
@@ -241,7 +241,7 @@ public class ConnectSettingActivity extends C5741i {
 
         /* renamed from: a */
         public void mo11409a(boolean z, C1892f fVar, boolean z2, int i) {
-            C2331d.m10100a((Activity) ConnectSettingActivity.this);
+            DialogFactory.m10100a((Activity) ConnectSettingActivity.this);
             C2337e.m10168a((Activity) ConnectSettingActivity.this, ConnectSettingActivity.this.f15842a);
             if (z) {
                 return;
@@ -249,20 +249,20 @@ public class ConnectSettingActivity extends C5741i {
             if (i == 7) {
                 if (ConnectSettingActivity.this.f15842a != null) {
                     new Bundle().putString(C2378b.MESSAGE_STRING.name(), String.format(ConnectSettingActivity.this.getString(R.string.msg_pwless_authentification_fail), new Object[]{ConnectSettingActivity.this.f15842a}));
-                    C2331d.m10114a((Activity) ConnectSettingActivity.this, C2328a.PWDLESS_ERROR, (Bundle) null);
+                    DialogFactory.m10114a((Activity) ConnectSettingActivity.this, C2328a.PWDLESS_ERROR, (Bundle) null);
                     return;
                 }
                 ConnectSettingActivity.this.m18934a(C2328a.WiFiFailed);
             } else if (i == 5) {
                 if (ConnectSettingActivity.this.f15842a != null) {
                     new Bundle().putString(C2378b.MESSAGE_STRING.name(), String.format(ConnectSettingActivity.this.getString(R.string.msg_pwless_authentification_deny), new Object[]{ConnectSettingActivity.this.f15842a}));
-                    C2331d.m10114a((Activity) ConnectSettingActivity.this, C2328a.PWDLESS_REFUSED, (Bundle) null);
+                    DialogFactory.m10114a((Activity) ConnectSettingActivity.this, C2328a.PWDLESS_REFUSED, (Bundle) null);
                 }
             } else if (i != 6) {
                 ConnectSettingActivity.this.m18934a(C2328a.WiFiFailed);
             } else if (ConnectSettingActivity.this.f15842a != null) {
                 new Bundle().putString(C2378b.MESSAGE_STRING.name(), String.format(ConnectSettingActivity.this.getString(R.string.msg_pwless_other_sp_authentification), new Object[]{ConnectSettingActivity.this.f15842a}));
-                C2331d.m10114a((Activity) ConnectSettingActivity.this, C2328a.PWDLESS_OTHER_REQUEST, (Bundle) null);
+                DialogFactory.m10114a((Activity) ConnectSettingActivity.this, C2328a.PWDLESS_OTHER_REQUEST, (Bundle) null);
             }
         }
     }
@@ -327,7 +327,7 @@ public class ConnectSettingActivity extends C5741i {
         this._resultBundle = new Bundle();
         this.f15843b = C2820e.m11771a(this._context, this._handler, this.f15844c);
         if (this.f15843b == null) {
-            this.f15843b = new C5702g(this._context, this._handler, this.f15844c);
+            this.f15843b = new ConnectSettingViewModel(this._context, this._handler, this.f15844c);
         } else {
             m18932a();
         }
@@ -367,7 +367,7 @@ public class ConnectSettingActivity extends C5741i {
             }
         } else {
             this.f15851j = false;
-            C2261g.m9763a("★ImageAppActivity", "onActivityResult");
+            ImageAppLog.debug("★ImageAppActivity", "onActivityResult");
             if (intent == null) {
                 if (this.f15844c == null) {
                     this.f15844c = new C4930b();
@@ -415,12 +415,12 @@ public class ConnectSettingActivity extends C5741i {
     public void finish() {
         OnSetResult();
         if (this.f15843b != null) {
-            C2261g.m9763a("ConnectSettingActivity", "viewModel.Dispose()");
+            ImageAppLog.debug("ConnectSettingActivity", "viewModel.Dispose()");
             this.f15843b.mo12534c();
             this.f15843b.mo3205a();
             this.f15843b = null;
         }
-        C2820e.m11800a((C5702g) null);
+        C2820e.m11800a((ConnectSettingViewModel) null);
         super.finish();
     }
 
@@ -477,7 +477,7 @@ public class ConnectSettingActivity extends C5741i {
                 }
                 Bundle bundle = new Bundle();
                 bundle.putString(C2378b.MESSAGE_STRING.name(), string);
-                C2331d.m10114a((Activity) this, C2328a.WifiConnectConfirm, bundle);
+                DialogFactory.m10114a((Activity) this, C2328a.WifiConnectConfirm, bundle);
                 return;
             case 2:
                 if (C2337e.m10149a((Activity) this, this.f15843b) == null) {
@@ -486,28 +486,28 @@ public class ConnectSettingActivity extends C5741i {
                 C2337e.m10165a((Activity) this, this.f15843b, (C2325c) new C2325c() {
                     /* renamed from: a */
                     public void mo6131a() {
-                        C2331d.m10107a((Activity) ConnectSettingActivity.this, C2328a.ON_NETWORK_SHOW_WIFI_LIST, (int) R.id.ListView1, (OnItemClickListener) new OnItemClickListener() {
+                        DialogFactory.m10107a((Activity) ConnectSettingActivity.this, C2328a.ON_NETWORK_SHOW_WIFI_LIST, (int) R.id.ListView1, (OnItemClickListener) new OnItemClickListener() {
                             public void onItemClick(AdapterView<?> adapterView, View view, int i, long j) {
                                 ConnectSettingActivity.this.f15846e = ((ListView) adapterView).getCheckedItemPosition();
                                 String str = (String) C2337e.m10149a((Activity) ConnectSettingActivity.this, ConnectSettingActivity.this.f15843b).getItem(ConnectSettingActivity.this.f15846e);
-                                C2331d.m10100a((Activity) ConnectSettingActivity.this);
+                                DialogFactory.m10100a((Activity) ConnectSettingActivity.this);
                                 ConnectSettingActivity.this.f15843b.mo12531a(str, "");
                             }
                         });
-                        C2331d.m10106a((Activity) ConnectSettingActivity.this, C2328a.ON_NETWORK_SHOW_WIFI_LIST, (int) R.id.listCancelbutton, (OnClickListener) new OnClickListener() {
+                        DialogFactory.m10106a((Activity) ConnectSettingActivity.this, C2328a.ON_NETWORK_SHOW_WIFI_LIST, (int) R.id.listCancelbutton, (OnClickListener) new OnClickListener() {
                             public void onClick(View view) {
                                 ConnectSettingActivity.this.m18933a(1);
                             }
                         });
-                        C2331d.m10106a((Activity) ConnectSettingActivity.this, C2328a.ON_NETWORK_SHOW_WIFI_LIST, (int) R.id.listUpdatebutton, (OnClickListener) new OnClickListener() {
+                        DialogFactory.m10106a((Activity) ConnectSettingActivity.this, C2328a.ON_NETWORK_SHOW_WIFI_LIST, (int) R.id.listUpdatebutton, (OnClickListener) new OnClickListener() {
                             public void onClick(View view) {
-                                C2331d.m10100a((Activity) ConnectSettingActivity.this);
+                                DialogFactory.m10100a((Activity) ConnectSettingActivity.this);
                                 ConnectSettingActivity.this.f15843b.mo12528a((Activity) ConnectSettingActivity.this._context, ConnectSettingActivity.this.f15844c);
                             }
                         });
-                        C2331d.m10106a((Activity) ConnectSettingActivity.this, C2328a.ON_NETWORK_SHOW_WIFI_LIST, (int) R.id.wifiSettingButton, (OnClickListener) new OnClickListener() {
+                        DialogFactory.m10106a((Activity) ConnectSettingActivity.this, C2328a.ON_NETWORK_SHOW_WIFI_LIST, (int) R.id.wifiSettingButton, (OnClickListener) new OnClickListener() {
                             public void onClick(View view) {
-                                C2331d.m10100a((Activity) ConnectSettingActivity.this);
+                                DialogFactory.m10100a((Activity) ConnectSettingActivity.this);
                                 ConnectSettingActivity.this.startActivityForResult(new Intent("android.settings.WIFI_SETTINGS"), 98);
                             }
                         });
@@ -522,13 +522,13 @@ public class ConnectSettingActivity extends C5741i {
                 return;
             case 5:
             case 6:
-                C2331d.m10114a((Activity) this, aVar, (Bundle) null);
+                DialogFactory.m10114a((Activity) this, aVar, (Bundle) null);
                 return;
             case 7:
-                C2331d.m10115a((Activity) this, aVar, (Bundle) null, (C2325c) new C2325c() {
+                DialogFactory.m10115a((Activity) this, aVar, (Bundle) null, (C2325c) new C2325c() {
                     /* renamed from: a */
                     public void mo6131a() {
-                        C2331d.m10129c((Activity) ConnectSettingActivity.this, C2328a.DmsReceiving, (int) R.id.text, (int) R.string.cmn_msg_now_recieve_images_from_camera);
+                        DialogFactory.m10129c((Activity) ConnectSettingActivity.this, C2328a.DmsReceiving, (int) R.id.text, (int) R.string.cmn_msg_now_recieve_images_from_camera);
                     }
                 });
                 return;
@@ -547,11 +547,11 @@ public class ConnectSettingActivity extends C5741i {
                 C2337e.m10155a((Activity) this);
                 return;
             case C1702a.HorizontalPicker_hairline_visible /*11*/:
-                if (C2331d.m10125b((Activity) this, C2328a.DmsReceiving) || IsShowingDmsEventDialog()) {
-                    C2261g.m9769c("DMSDebug", "WifiFailed while DmsDialog");
+                if (DialogFactory.m10125b((Activity) this, C2328a.DmsReceiving) || IsShowingDmsEventDialog()) {
+                    ImageAppLog.error("DMSDebug", "WifiFailed while DmsDialog");
                     return;
                 } else {
-                    C2331d.m10114a((Activity) this, aVar, (Bundle) null);
+                    DialogFactory.m10114a((Activity) this, aVar, (Bundle) null);
                     return;
                 }
             default:
@@ -587,7 +587,7 @@ public class ConnectSettingActivity extends C5741i {
                 return;
             case 3:
                 if (this.f15851j) {
-                    C2261g.m9771e("QRButton", "Running......");
+                    ImageAppLog.info("QRButton", "Running......");
                     return;
                 }
                 this.f15851j = true;
@@ -599,7 +599,7 @@ public class ConnectSettingActivity extends C5741i {
                 return;
             case 6:
                 this._resultBundle.putBoolean("DmsNewFileBrowser_Update", true);
-                C2331d.m10100a((Activity) this);
+                DialogFactory.m10100a((Activity) this);
                 this.f15844c = new C4930b();
                 this.f15843b.mo12528a((Activity) this._context, this.f15844c);
                 return;
@@ -610,15 +610,15 @@ public class ConnectSettingActivity extends C5741i {
 
     /* renamed from: b */
     private void m18937b() {
-        C2261g.m9763a("ConnectSettingActivity", "ConnectSettingViewModelThreadFinish");
+        ImageAppLog.debug("ConnectSettingActivity", "ConnectSettingViewModelThreadFinish");
         if (this.f15843b != null) {
             this.f15843b.mo12534c();
             if (!(this.f15843b == null || this.f15843b.f17589e == null || this.f15843b.f17594j == null)) {
-                C2261g.m9763a("★ImageAppActivity:", "_viewModel._wifiThread →　Stop");
+                ImageAppLog.debug("★ImageAppActivity:", "_viewModel._wifiThread →　Stop");
                 this.f15843b.f17594j.mo12570a();
             }
             if (!(this.f15843b.f17590f == null || this.f15843b.f17595k == null)) {
-                C2261g.m9763a("ConnectSettingActivity", "_viewModel._wifiConnectThread →　Stop");
+                ImageAppLog.debug("ConnectSettingActivity", "_viewModel._wifiConnectThread →　Stop");
                 this.f15843b.f17595k.mo12559a();
                 try {
                     this.f15843b.f17590f.join();
@@ -627,7 +627,7 @@ public class ConnectSettingActivity extends C5741i {
                 }
             }
             if (!(this.f15843b.f17591g == null || this.f15843b.f17596l == null)) {
-                C2261g.m9763a("ConnectSettingActivity", "_viewModel._wifiNewConnectThread →　Stop");
+                ImageAppLog.debug("ConnectSettingActivity", "_viewModel._wifiNewConnectThread →　Stop");
                 this.f15843b.f17596l.mo12565a();
                 try {
                     this.f15843b.f17591g.join();
@@ -636,11 +636,11 @@ public class ConnectSettingActivity extends C5741i {
                 }
             }
             if (!(this.f15843b == null || this.f15843b.f17592h == null || this.f15843b.f17597m == null)) {
-                C2261g.m9763a("★ImageAppActivity:", "_viewModel._cameraThread →　Stop");
+                ImageAppLog.debug("★ImageAppActivity:", "_viewModel._cameraThread →　Stop");
                 this.f15843b.f17597m.mo12544a();
             }
             if (this.f15843b != null && this.f15843b.f17593i != null && this.f15843b.f17598n != null) {
-                C2261g.m9763a("★ImageAppActivity:", "_viewModel._deviceThread →　Stop");
+                ImageAppLog.debug("★ImageAppActivity:", "_viewModel._deviceThread →　Stop");
                 this.f15843b.f17598n.mo12548e();
             }
         }
@@ -650,14 +650,14 @@ public class ConnectSettingActivity extends C5741i {
     public Object onDmsWatchEvent(int i) {
         switch (i) {
             case 1:
-                if (C2331d.m10125b((Activity) this, C2328a.CameraSearching)) {
-                    C2331d.m10100a((Activity) this);
+                if (DialogFactory.m10125b((Activity) this, C2328a.CameraSearching)) {
+                    DialogFactory.m10100a((Activity) this);
                     m18934a(C2328a.DmsReceiving);
                     return null;
-                } else if (!C2331d.m10125b((Activity) this, C2328a.CameraSearchingNFC)) {
+                } else if (!DialogFactory.m10125b((Activity) this, C2328a.CameraSearchingNFC)) {
                     return null;
                 } else {
-                    C2331d.m10100a((Activity) this);
+                    DialogFactory.m10100a((Activity) this);
                     m18934a(C2328a.DmsReceiving);
                     return null;
                 }
@@ -676,7 +676,7 @@ public class ConnectSettingActivity extends C5741i {
 
     /* renamed from: c */
     private C5759a m18941c() {
-        C2331d.m10100a((Activity) this);
+        DialogFactory.m10100a((Activity) this);
         return new C5759a();
     }
 

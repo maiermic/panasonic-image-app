@@ -16,7 +16,7 @@ public class C2679g {
     private Activity f8315a = null;
 
     /* renamed from: b */
-    private C2685i f8316b = null;
+    private GuidanceMenuViewModel f8316b = null;
 
     /* renamed from: c */
     private C4230p f8317c = null;
@@ -48,7 +48,7 @@ public class C2679g {
     }
 
     /* renamed from: a */
-    public void mo6617a(Activity activity, C2685i iVar) {
+    public void mo6617a(Activity activity, GuidanceMenuViewModel iVar) {
         this.f8315a = activity;
         this.f8316b = iVar;
         if (this.f8316b != null) {

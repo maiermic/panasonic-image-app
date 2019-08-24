@@ -16,8 +16,8 @@ import com.panasonic.avc.cng.model.C1892f;
 import com.panasonic.avc.cng.model.p051c.C1868r;
 import com.panasonic.avc.cng.model.p052d.C1879a;
 import com.panasonic.avc.cng.model.service.C1921a;
-import com.panasonic.avc.cng.model.service.C2253z;
-import com.panasonic.avc.cng.model.service.p054a.C1936c;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
+import com.panasonic.avc.cng.model.service.p054a.BrowserServiceCamera;
 import com.panasonic.avc.cng.p038a.C1342a;
 import com.panasonic.avc.cng.view.common.C2820e;
 import com.panasonic.avc.cng.view.play.highlight.HighlightActivity;
@@ -28,7 +28,7 @@ import com.panasonic.avc.cng.view.play.sceneprotect.SceneProtectActivity;
 import com.panasonic.avc.cng.view.play.splitdelete.SplitDeleteActivity;
 import com.panasonic.avc.cng.view.play.splitdelete.SplitDeleteFileSelectActivity;
 import com.panasonic.avc.cng.view.setting.CameraAllDeleteActivity;
-import com.panasonic.avc.cng.view.threebox.C5999c;
+import com.panasonic.avc.cng.view.threebox.ThreeBoxViewModel;
 import com.panasonic.avc.cng.view.threebox.ThreeBoxActivity;
 import java.util.ArrayList;
 import java.util.List;
@@ -355,7 +355,7 @@ public class C5919e extends C1342a {
                     int a = C5919e.this.f18113d.mo10350a();
                     C1892f a2 = C1712b.m6919c().mo4896a();
                     if (a2 != null && a2.mo4888b()) {
-                        C1921a f = C2253z.m9703f();
+                        C1921a f = ServiceFactory.m9703f();
                         if (f == null || f.mo5034b() < 1) {
                             C5919e.this.f18113d.mo10353b(2);
                             return;
@@ -386,7 +386,7 @@ public class C5919e extends C1342a {
     private C5931a m21997j() {
         return new C5931a(this.f3706a.getText(R.string.ply_action_edit_protect).toString(), new Runnable() {
             public void run() {
-                C1921a f = C2253z.m9703f();
+                C1921a f = ServiceFactory.m9703f();
                 if (f == null || f.mo5034b() < 1) {
                     C5919e.this.f18113d.mo10353b(3);
                     return;
@@ -404,7 +404,7 @@ public class C5919e extends C1342a {
     private C5931a m21998k() {
         return new C5931a(this.f3706a.getText(R.string.ply_action_edit_split_delete).toString(), new Runnable() {
             public void run() {
-                C1921a f = C2253z.m9703f();
+                C1921a f = ServiceFactory.m9703f();
                 if (f == null || f.mo5034b() < 1) {
                     C5919e.this.f18113d.mo10353b(4);
                     return;
@@ -441,7 +441,7 @@ public class C5919e extends C1342a {
                 } else {
                     i = 0;
                 }
-                C1878d b = C2253z.m9703f().mo5036b(i);
+                C1878d b = ServiceFactory.m9703f().mo5036b(i);
                 if (!b.mo4625o()) {
                     if (b instanceof C1833c) {
                         C1833c cVar = (C1833c) b;
@@ -536,7 +536,7 @@ public class C5919e extends C1342a {
 
     /* renamed from: d */
     public void mo12940d(int i) {
-        C2820e.m11804a((C5999c) null);
+        C2820e.m11804a((ThreeBoxViewModel) null);
         Intent intent = new Intent(this.f3706a, ThreeBoxActivity.class);
         intent.putExtra("ThreeBoxStartIndex_Key", i);
         ((Activity) this.f3706a).startActivityForResult(intent, 5);
@@ -585,8 +585,8 @@ public class C5919e extends C1342a {
                 boolean z;
                 C1892f a = C1712b.m6919c().mo4896a();
                 if (a != null) {
-                    C1921a f = C2253z.m9703f();
-                    if ((f instanceof C1936c) && a.f5688j == 131074) {
+                    C1921a f = ServiceFactory.m9703f();
+                    if ((f instanceof BrowserServiceCamera) && a.f5688j == 131074) {
                         C1501d dVar = new C1501d(a.f5682d);
                         C1833c cVar = (C1833c) f.mo5036b(i);
                         if (cVar.mo4625o()) {
@@ -619,8 +619,8 @@ public class C5919e extends C1342a {
 
     /* renamed from: o */
     private C1833c m22002o() {
-        C1921a f = C2253z.m9703f();
-        if (f == null || !(f instanceof C1936c) || this.f18113d == null) {
+        C1921a f = ServiceFactory.m9703f();
+        if (f == null || !(f instanceof BrowserServiceCamera) || this.f18113d == null) {
             return null;
         }
         return (C1833c) f.mo5036b(this.f18113d.mo10350a());

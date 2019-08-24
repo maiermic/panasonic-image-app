@@ -36,11 +36,11 @@
     if-eqz v0, :cond_0
 
     .line 96
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v1
 
@@ -97,11 +97,11 @@
     if-eqz v0, :cond_0
 
     .line 124
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v1
 
@@ -142,7 +142,7 @@
     goto :goto_0
 .end method
 
-.method private f(Lcom/panasonic/avc/cng/view/a/b;Lcom/panasonic/avc/cng/view/a/c;Lcom/panasonic/avc/cng/view/a/d;)Z
+.method private f(Lcom/panasonic/avc/cng/view/a/b;Lcom/panasonic/avc/cng/view/a/c;Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;)Z
     .locals 2
 
     .prologue
@@ -168,7 +168,7 @@
     if-eqz p3, :cond_2
 
     .line 266
-    invoke-virtual {p3}, Lcom/panasonic/avc/cng/view/a/d;->f()Z
+    invoke-virtual {p3}, Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;->f()Z
 
     move-result v1
 
@@ -183,7 +183,7 @@
 
 
 # virtual methods
-.method public OnClickHome(Lcom/panasonic/avc/cng/view/a/b;Lcom/panasonic/avc/cng/view/a/c;Lcom/panasonic/avc/cng/view/a/d;)V
+.method public OnClickHome(Lcom/panasonic/avc/cng/view/a/b;Lcom/panasonic/avc/cng/view/a/c;Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;)V
     .locals 2
 
     .prologue
@@ -201,14 +201,14 @@
 
     .line 234
     :cond_1
-    invoke-direct {p0, p1, p2, p3}, Lcom/panasonic/avc/cng/view/a/h;->f(Lcom/panasonic/avc/cng/view/a/b;Lcom/panasonic/avc/cng/view/a/c;Lcom/panasonic/avc/cng/view/a/d;)Z
+    invoke-direct {p0, p1, p2, p3}, Lcom/panasonic/avc/cng/view/a/h;->f(Lcom/panasonic/avc/cng/view/a/b;Lcom/panasonic/avc/cng/view/a/c;Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 240
-    invoke-virtual {p0, p1, p2, p3}, Lcom/panasonic/avc/cng/view/a/h;->c(Lcom/panasonic/avc/cng/view/a/b;Lcom/panasonic/avc/cng/view/a/c;Lcom/panasonic/avc/cng/view/a/d;)V
+    invoke-virtual {p0, p1, p2, p3}, Lcom/panasonic/avc/cng/view/a/h;->c(Lcom/panasonic/avc/cng/view/a/b;Lcom/panasonic/avc/cng/view/a/c;Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;)V
 
     goto :goto_0
 .end method
@@ -315,7 +315,7 @@
     return-void
 .end method
 
-.method public a(Lcom/panasonic/avc/cng/view/a/b;Lcom/panasonic/avc/cng/view/a/c;Lcom/panasonic/avc/cng/view/a/d;)V
+.method public a(Lcom/panasonic/avc/cng/view/a/b;Lcom/panasonic/avc/cng/view/a/c;Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;)V
     .locals 0
 
     .prologue
@@ -323,7 +323,7 @@
     return-void
 .end method
 
-.method public b(Lcom/panasonic/avc/cng/view/a/b;Lcom/panasonic/avc/cng/view/a/c;Lcom/panasonic/avc/cng/view/a/d;)V
+.method public b(Lcom/panasonic/avc/cng/view/a/b;Lcom/panasonic/avc/cng/view/a/c;Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;)V
     .locals 0
 
     .prologue
@@ -331,7 +331,7 @@
     return-void
 .end method
 
-.method public c(Lcom/panasonic/avc/cng/view/a/b;Lcom/panasonic/avc/cng/view/a/c;Lcom/panasonic/avc/cng/view/a/d;)V
+.method public c(Lcom/panasonic/avc/cng/view/a/b;Lcom/panasonic/avc/cng/view/a/c;Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;)V
     .locals 0
 
     .prologue
@@ -339,7 +339,7 @@
     return-void
 .end method
 
-.method public d(Lcom/panasonic/avc/cng/view/a/b;Lcom/panasonic/avc/cng/view/a/c;Lcom/panasonic/avc/cng/view/a/d;)V
+.method public d(Lcom/panasonic/avc/cng/view/a/b;Lcom/panasonic/avc/cng/view/a/c;Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;)V
     .locals 4
 
     .prologue
@@ -357,18 +357,18 @@
 
     .line 155
     :cond_1
-    invoke-direct {p0, p1, p2, p3}, Lcom/panasonic/avc/cng/view/a/h;->f(Lcom/panasonic/avc/cng/view/a/b;Lcom/panasonic/avc/cng/view/a/c;Lcom/panasonic/avc/cng/view/a/d;)Z
+    invoke-direct {p0, p1, p2, p3}, Lcom/panasonic/avc/cng/view/a/h;->f(Lcom/panasonic/avc/cng/view/a/b;Lcom/panasonic/avc/cng/view/a/c;Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 162
-    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/g;
+    invoke-static {}, Lcom/panasonic/avc/cng/model/b;->c()Lcom/panasonic/avc/cng/model/DeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/g;->a()Lcom/panasonic/avc/cng/model/f;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/DeviceManager;->a()Lcom/panasonic/avc/cng/model/f;
 
     move-result-object v0
 
@@ -402,18 +402,18 @@
 
     const/4 v1, 0x0
 
-    invoke-static {p1, v0, v1}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {p1, v0, v1}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     goto :goto_0
 
     .line 176
     :cond_2
-    invoke-virtual {p0, p1, p2, p3}, Lcom/panasonic/avc/cng/view/a/h;->a(Lcom/panasonic/avc/cng/view/a/b;Lcom/panasonic/avc/cng/view/a/c;Lcom/panasonic/avc/cng/view/a/d;)V
+    invoke-virtual {p0, p1, p2, p3}, Lcom/panasonic/avc/cng/view/a/h;->a(Lcom/panasonic/avc/cng/view/a/b;Lcom/panasonic/avc/cng/view/a/c;Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;)V
 
     goto :goto_0
 .end method
 
-.method public e(Lcom/panasonic/avc/cng/view/a/b;Lcom/panasonic/avc/cng/view/a/c;Lcom/panasonic/avc/cng/view/a/d;)V
+.method public e(Lcom/panasonic/avc/cng/view/a/b;Lcom/panasonic/avc/cng/view/a/c;Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;)V
     .locals 2
 
     .prologue
@@ -431,14 +431,14 @@
 
     .line 197
     :cond_1
-    invoke-direct {p0, p1, p2, p3}, Lcom/panasonic/avc/cng/view/a/h;->f(Lcom/panasonic/avc/cng/view/a/b;Lcom/panasonic/avc/cng/view/a/c;Lcom/panasonic/avc/cng/view/a/d;)Z
+    invoke-direct {p0, p1, p2, p3}, Lcom/panasonic/avc/cng/view/a/h;->f(Lcom/panasonic/avc/cng/view/a/b;Lcom/panasonic/avc/cng/view/a/c;Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 203
-    invoke-virtual {p0, p1, p2, p3}, Lcom/panasonic/avc/cng/view/a/h;->b(Lcom/panasonic/avc/cng/view/a/b;Lcom/panasonic/avc/cng/view/a/c;Lcom/panasonic/avc/cng/view/a/d;)V
+    invoke-virtual {p0, p1, p2, p3}, Lcom/panasonic/avc/cng/view/a/h;->b(Lcom/panasonic/avc/cng/view/a/b;Lcom/panasonic/avc/cng/view/a/c;Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;)V
 
     goto :goto_0
 .end method

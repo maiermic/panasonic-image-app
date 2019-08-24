@@ -7,19 +7,19 @@ import android.view.View;
 import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.service.p055b.C2003c;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.view.p072a.C2291c;
 import com.panasonic.avc.cng.view.p072a.C2308e;
 import com.panasonic.avc.cng.view.p072a.C2313g;
 import com.panasonic.avc.cng.view.p072a.C2316j;
 import com.panasonic.avc.cng.view.p073b.C2317a.C2325c;
 import com.panasonic.avc.cng.view.p073b.C2327b.C2328a;
-import com.panasonic.avc.cng.view.p073b.C2331d;
+import com.panasonic.avc.cng.view.p073b.DialogFactory;
 import com.panasonic.avc.cng.view.p073b.C2376f.C2378b;
-import com.panasonic.avc.cng.view.parts.C4245t;
-import com.panasonic.avc.cng.view.parts.C4245t.C4252c;
-import com.panasonic.avc.cng.view.parts.C4245t.C4255e;
-import com.panasonic.avc.cng.view.play.multiphotoframe.C4636n.C4660b;
+import com.panasonic.avc.cng.view.parts.BrowserViewModel;
+import com.panasonic.avc.cng.view.parts.BrowserViewModel.C4252c;
+import com.panasonic.avc.cng.view.parts.BrowserViewModel.C4255e;
+import com.panasonic.avc.cng.view.play.multiphotoframe.MultiPhotoFrameSelectPictureViewModel.C4660b;
 import com.panasonic.avc.cng.view.play.p076a.C4270a;
 import java.util.ArrayList;
 
@@ -46,7 +46,7 @@ public class MultiPhotoFrameSelectPictureGroupActivity extends C4270a {
 
         /* renamed from: a */
         public void mo10006a() {
-            C2261g.m9763a("MultiPhotoFrameSelectPictureGroupActivity", "OnUpdateContent()");
+            ImageAppLog.debug("MultiPhotoFrameSelectPictureGroupActivity", "OnUpdateContent()");
             MultiPhotoFrameSelectPictureGroupActivity.this._cameraUtil.mo6032a((Runnable) new Runnable() {
                 public void run() {
                     MultiPhotoFrameSelectPictureGroupActivity.this.f15017b.mo10872a(true);
@@ -82,10 +82,10 @@ public class MultiPhotoFrameSelectPictureGroupActivity extends C4270a {
 
         /* renamed from: a */
         public void mo10008a(int i, int i2) {
-            C2261g.m9763a("MultiPhotoFrameSelectPictureGroupActivity", "_selectItemsSize => " + i + " _maxSelectNum => " + i2);
+            ImageAppLog.debug("MultiPhotoFrameSelectPictureGroupActivity", "_selectItemsSize => " + i + " _maxSelectNum => " + i2);
             MultiPhotoFrameSelectPictureGroupActivity.this._cameraUtil.mo6032a((Runnable) new Runnable() {
                 public void run() {
-                    C2331d.m10114a((Activity) MultiPhotoFrameSelectPictureGroupActivity.this, C2328a.ON_EXCEEDED_MAX_SELECT_NUM, (Bundle) null);
+                    DialogFactory.m10114a((Activity) MultiPhotoFrameSelectPictureGroupActivity.this, C2328a.ON_EXCEEDED_MAX_SELECT_NUM, (Bundle) null);
                 }
             });
         }
@@ -105,7 +105,7 @@ public class MultiPhotoFrameSelectPictureGroupActivity extends C4270a {
         /* renamed from: b */
         public void mo10009b() {
             if (MultiPhotoFrameSelectPictureGroupActivity.this.f15016a != null) {
-                C4245t k = MultiPhotoFrameSelectPictureGroupActivity.this.f15016a.mo10884k();
+                BrowserViewModel k = MultiPhotoFrameSelectPictureGroupActivity.this.f15016a.mo10884k();
                 if (k != null) {
                     MultiPhotoFrameSelectPictureGroupActivity.this.f15016a.f15221z.mo3216a(k.mo9983q());
                 }
@@ -120,7 +120,7 @@ public class MultiPhotoFrameSelectPictureGroupActivity extends C4270a {
 
         /* renamed from: a */
         public void mo10737a(int i) {
-            C2261g.m9763a("MultiPhotoFrameSelectPictureGroupActivity", String.format("OnSelectContent(%d)", new Object[]{Integer.valueOf(i)}));
+            ImageAppLog.debug("MultiPhotoFrameSelectPictureGroupActivity", String.format("OnSelectContent(%d)", new Object[]{Integer.valueOf(i)}));
             if (MultiPhotoFrameSelectPictureGroupActivity.this.f15016a != null && !((Boolean) MultiPhotoFrameSelectPictureGroupActivity.this.f15016a.f15215t.mo3217b()).booleanValue()) {
                 MultiPhotoFrameSelectPictureGroupActivity.this.f15016a.mo10891a(MultiPhotoFrameSelectPictureGroupActivity.this.f15016a.mo10908i(i));
             }
@@ -136,52 +136,52 @@ public class MultiPhotoFrameSelectPictureGroupActivity extends C4270a {
 
         /* renamed from: b */
         public void mo10740b() {
-            C2331d.m10114a((Activity) MultiPhotoFrameSelectPictureGroupActivity.this, C2328a.ERROR_NO_IMAGE_SELECT, (Bundle) null);
+            DialogFactory.m10114a((Activity) MultiPhotoFrameSelectPictureGroupActivity.this, C2328a.ERROR_NO_IMAGE_SELECT, (Bundle) null);
         }
 
         /* renamed from: b */
         public void mo10741b(final int i) {
             Bundle bundle = new Bundle();
             bundle.putInt(C2378b.MESSAGE_ID.name(), R.string.ply_multiphoto_save);
-            C2331d.m10115a((Activity) MultiPhotoFrameSelectPictureGroupActivity.this, C2328a.PROCESS_PROGRESS, bundle, (C2325c) new C2325c() {
+            DialogFactory.m10115a((Activity) MultiPhotoFrameSelectPictureGroupActivity.this, C2328a.PROCESS_PROGRESS, bundle, (C2325c) new C2325c() {
                 /* renamed from: a */
                 public void mo6131a() {
-                    C2331d.m10111a((Activity) MultiPhotoFrameSelectPictureGroupActivity.this, C2328a.PROCESS_PROGRESS, (int) R.id.percent_num, (CharSequence) "0");
-                    C2331d.m10111a((Activity) MultiPhotoFrameSelectPictureGroupActivity.this, C2328a.PROCESS_PROGRESS, (int) R.id.numerator, (CharSequence) "1");
-                    C2331d.m10111a((Activity) MultiPhotoFrameSelectPictureGroupActivity.this, C2328a.PROCESS_PROGRESS, (int) R.id.denominator, (CharSequence) String.valueOf(i));
+                    DialogFactory.m10111a((Activity) MultiPhotoFrameSelectPictureGroupActivity.this, C2328a.PROCESS_PROGRESS, (int) R.id.percent_num, (CharSequence) "0");
+                    DialogFactory.m10111a((Activity) MultiPhotoFrameSelectPictureGroupActivity.this, C2328a.PROCESS_PROGRESS, (int) R.id.numerator, (CharSequence) "1");
+                    DialogFactory.m10111a((Activity) MultiPhotoFrameSelectPictureGroupActivity.this, C2328a.PROCESS_PROGRESS, (int) R.id.denominator, (CharSequence) String.valueOf(i));
                 }
             });
         }
 
         /* renamed from: a */
         public void mo10738a(int i, int i2) {
-            C2331d.m10111a((Activity) MultiPhotoFrameSelectPictureGroupActivity.this, C2328a.PROCESS_PROGRESS, (int) R.id.numerator, (CharSequence) String.valueOf(i));
-            C2331d.m10111a((Activity) MultiPhotoFrameSelectPictureGroupActivity.this, C2328a.PROCESS_PROGRESS, (int) R.id.percent_num, (CharSequence) String.valueOf(i2));
-            C2331d.m10104a((Activity) MultiPhotoFrameSelectPictureGroupActivity.this, C2328a.PROCESS_PROGRESS, (int) R.id.progressBar2, i2);
+            DialogFactory.m10111a((Activity) MultiPhotoFrameSelectPictureGroupActivity.this, C2328a.PROCESS_PROGRESS, (int) R.id.numerator, (CharSequence) String.valueOf(i));
+            DialogFactory.m10111a((Activity) MultiPhotoFrameSelectPictureGroupActivity.this, C2328a.PROCESS_PROGRESS, (int) R.id.percent_num, (CharSequence) String.valueOf(i2));
+            DialogFactory.m10104a((Activity) MultiPhotoFrameSelectPictureGroupActivity.this, C2328a.PROCESS_PROGRESS, (int) R.id.progressBar2, i2);
         }
 
         /* renamed from: c */
         public void mo10743c(int i) {
-            C2331d.m10100a((Activity) MultiPhotoFrameSelectPictureGroupActivity.this);
+            DialogFactory.m10100a((Activity) MultiPhotoFrameSelectPictureGroupActivity.this);
             if (i == 1 || i == 2 || i == 3) {
-                C2331d.m10114a((Activity) MultiPhotoFrameSelectPictureGroupActivity.this, C2328a.ErrorMultiPhotoDlg, (Bundle) null);
+                DialogFactory.m10114a((Activity) MultiPhotoFrameSelectPictureGroupActivity.this, C2328a.ErrorMultiPhotoDlg, (Bundle) null);
             } else if (i == 4) {
-                C2331d.m10114a((Activity) MultiPhotoFrameSelectPictureGroupActivity.this, C2328a.ErrorMultiPhotoDlg, (Bundle) null);
+                DialogFactory.m10114a((Activity) MultiPhotoFrameSelectPictureGroupActivity.this, C2328a.ErrorMultiPhotoDlg, (Bundle) null);
             } else if (i == 5) {
-                C2331d.m10114a((Activity) MultiPhotoFrameSelectPictureGroupActivity.this, C2328a.ErrorMultiPhotoDlg, (Bundle) null);
+                DialogFactory.m10114a((Activity) MultiPhotoFrameSelectPictureGroupActivity.this, C2328a.ErrorMultiPhotoDlg, (Bundle) null);
             } else if (i == 7) {
-                C2331d.m10114a((Activity) MultiPhotoFrameSelectPictureGroupActivity.this, C2328a.ERROR_NO_REMAIN, (Bundle) null);
+                DialogFactory.m10114a((Activity) MultiPhotoFrameSelectPictureGroupActivity.this, C2328a.ERROR_NO_REMAIN, (Bundle) null);
             }
         }
 
         /* renamed from: c */
         public void mo10742c() {
-            C2331d.m10100a((Activity) MultiPhotoFrameSelectPictureGroupActivity.this);
+            DialogFactory.m10100a((Activity) MultiPhotoFrameSelectPictureGroupActivity.this);
         }
 
         /* renamed from: a */
         public void mo10739a(ArrayList<C2003c> arrayList, boolean z) {
-            C2331d.m10100a((Activity) MultiPhotoFrameSelectPictureGroupActivity.this);
+            DialogFactory.m10100a((Activity) MultiPhotoFrameSelectPictureGroupActivity.this);
             MultiPhotoFrameSelectPictureGroupActivity.this.f15016a.mo6022d().putParcelableArrayList("MultiPhotoSelectList", arrayList);
             MultiPhotoFrameSelectPictureGroupActivity.this.finish();
         }
@@ -284,7 +284,7 @@ public class MultiPhotoFrameSelectPictureGroupActivity extends C4270a {
     public void onBackPressed() {
         if (!isFinishing()) {
             if (this.f15016a.mo10884k().mo9981o() > 0) {
-                C2331d.m10114a((Activity) this, C2328a.SelectedItemCancel, (Bundle) null);
+                DialogFactory.m10114a((Activity) this, C2328a.SelectedItemCancel, (Bundle) null);
             } else {
                 super.onBackPressed();
             }
@@ -315,7 +315,7 @@ public class MultiPhotoFrameSelectPictureGroupActivity extends C4270a {
             case PROCESS_PROGRESS:
                 if (this.f15016a != null) {
                     this.f15016a.mo10887B();
-                    C2331d.m10114a((Activity) this, C2328a.WAIT_PROCESSING, (Bundle) null);
+                    DialogFactory.m10114a((Activity) this, C2328a.WAIT_PROCESSING, (Bundle) null);
                     return;
                 }
                 return;

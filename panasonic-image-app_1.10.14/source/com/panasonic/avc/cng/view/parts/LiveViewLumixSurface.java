@@ -27,7 +27,7 @@ import android.view.SurfaceView;
 import android.view.View;
 import com.panasonic.avc.cng.core.p040a.C1473at.C1488o;
 import com.panasonic.avc.cng.core.p040a.C1473at.C1489p;
-import com.panasonic.avc.cng.core.p040a.C1508g.C1518j;
+import com.panasonic.avc.cng.core.p040a.FocusCommand.C1518j;
 import com.panasonic.avc.cng.imageapp.C1701a.C1702a;
 import com.panasonic.avc.cng.imageapp.R;
 import com.panasonic.avc.cng.model.C1712b;
@@ -39,7 +39,7 @@ import com.panasonic.avc.cng.model.p051c.C1848g.C1852d;
 import com.panasonic.avc.cng.model.p051c.C1860l;
 import com.panasonic.avc.cng.model.p052d.C1879a;
 import com.panasonic.avc.cng.model.service.C1985b;
-import com.panasonic.avc.cng.model.service.C2253z;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
 import com.panasonic.avc.cng.p038a.C1345d;
 import com.panasonic.avc.cng.view.liveview.C2994e.C3140n;
 import com.panasonic.avc.cng.view.liveview.C3271k.C3355l;
@@ -2206,7 +2206,7 @@ public class LiveViewLumixSurface extends SurfaceView implements Callback {
         if (C1879a.m7545b(this.f13054aw, "1.0") && this.f13054aw.f5688j == 65539) {
             C1892f a2 = C1712b.m6919c().mo4896a();
             if (a2 != null) {
-                C1985b a3 = C2253z.m9679a(getContext(), a2);
+                C1985b a3 = ServiceFactory.m9679a(getContext(), a2);
                 if (a3 != null) {
                     C1860l a4 = a3.mo5182a("menu_item_id_asprat");
                     if (a4 == null || a4.f5569c == null) {

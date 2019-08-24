@@ -43,22 +43,22 @@
     return-object v0
 .end method
 
-.method static synthetic b(Lcom/panasonic/avc/cng/view/play/movieslideshow/SelectPictureActivity;)Lcom/panasonic/avc/cng/view/a/d;
+.method static synthetic b(Lcom/panasonic/avc/cng/view/play/movieslideshow/SelectPictureActivity;)Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
     .locals 1
 
     .prologue
     .line 29
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/SelectPictureActivity;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/SelectPictureActivity;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
     return-object v0
 .end method
 
-.method static synthetic c(Lcom/panasonic/avc/cng/view/play/movieslideshow/SelectPictureActivity;)Lcom/panasonic/avc/cng/view/a/d;
+.method static synthetic c(Lcom/panasonic/avc/cng/view/play/movieslideshow/SelectPictureActivity;)Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
     .locals 1
 
     .prologue
     .line 29
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/SelectPictureActivity;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/SelectPictureActivity;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
     return-object v0
 .end method
@@ -73,32 +73,32 @@
     return-object v0
 .end method
 
-.method static synthetic e(Lcom/panasonic/avc/cng/view/play/movieslideshow/SelectPictureActivity;)Lcom/panasonic/avc/cng/view/a/d;
+.method static synthetic e(Lcom/panasonic/avc/cng/view/play/movieslideshow/SelectPictureActivity;)Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
     .locals 1
 
     .prologue
     .line 29
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/SelectPictureActivity;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/SelectPictureActivity;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
     return-object v0
 .end method
 
-.method static synthetic f(Lcom/panasonic/avc/cng/view/play/movieslideshow/SelectPictureActivity;)Lcom/panasonic/avc/cng/view/a/d;
+.method static synthetic f(Lcom/panasonic/avc/cng/view/play/movieslideshow/SelectPictureActivity;)Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
     .locals 1
 
     .prologue
     .line 29
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/SelectPictureActivity;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/SelectPictureActivity;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
     return-object v0
 .end method
 
-.method static synthetic g(Lcom/panasonic/avc/cng/view/play/movieslideshow/SelectPictureActivity;)Lcom/panasonic/avc/cng/view/a/d;
+.method static synthetic g(Lcom/panasonic/avc/cng/view/play/movieslideshow/SelectPictureActivity;)Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
     .locals 1
 
     .prologue
     .line 29
-    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/SelectPictureActivity;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/d;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/SelectPictureActivity;->_cameraUtil:Lcom/panasonic/avc/cng/view/a/CameraWatchUtility;
 
     return-object v0
 .end method
@@ -135,11 +135,11 @@
     :cond_1
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/SelectPictureActivity;->a:Lcom/panasonic/avc/cng/view/play/movieslideshow/e;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/movieslideshow/e;->j()Lcom/panasonic/avc/cng/view/parts/t;
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/play/movieslideshow/e;->j()Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/parts/t;->n()I
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->n()I
 
     move-result v0
 
@@ -151,7 +151,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {p0, v0, v1}, Lcom/panasonic/avc/cng/view/b/d;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
+    invoke-static {p0, v0, v1}, Lcom/panasonic/avc/cng/view/b/DialogFactory;->a(Landroid/app/Activity;Lcom/panasonic/avc/cng/view/b/b$a;Landroid/os/Bundle;)V
 
     goto :goto_0
 
@@ -159,11 +159,11 @@
     :cond_2
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/play/movieslideshow/SelectPictureActivity;->a:Lcom/panasonic/avc/cng/view/play/movieslideshow/e;
 
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/play/movieslideshow/e;->j()Lcom/panasonic/avc/cng/view/parts/t;
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/play/movieslideshow/e;->j()Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/parts/t;->d()Ljava/util/List;
+    invoke-virtual {v1}, Lcom/panasonic/avc/cng/view/parts/BrowserViewModel;->d()Ljava/util/List;
 
     move-result-object v1
 

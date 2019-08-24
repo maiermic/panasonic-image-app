@@ -116,10 +116,10 @@
     move-result-object v0
 
     .line 296
-    invoke-static {}, Lcom/panasonic/avc/cng/util/g;->a()Ljava/lang/String;
+    invoke-static {}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a()Ljava/lang/String;
 
     .line 297
-    invoke-static {}, Lcom/panasonic/avc/cng/util/g;->b()I
+    invoke-static {}, Lcom/panasonic/avc/cng/util/ImageAppLog;->b()I
 
     move-result v1
 
@@ -221,10 +221,10 @@
     move-result-object v0
 
     .line 206
-    invoke-static {}, Lcom/panasonic/avc/cng/util/g;->a()Ljava/lang/String;
+    invoke-static {}, Lcom/panasonic/avc/cng/util/ImageAppLog;->a()Ljava/lang/String;
 
     .line 207
-    invoke-static {}, Lcom/panasonic/avc/cng/util/g;->b()I
+    invoke-static {}, Lcom/panasonic/avc/cng/util/ImageAppLog;->b()I
 
     move-result v1
 

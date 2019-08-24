@@ -43,9 +43,9 @@
     .line 358
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/c$1$2;->a:Lcom/panasonic/avc/cng/view/threebox/c$1;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/threebox/c$1;->a:Lcom/panasonic/avc/cng/view/threebox/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/threebox/c$1;->a:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/threebox/c;->a(Lcom/panasonic/avc/cng/view/threebox/c;)Lcom/panasonic/avc/cng/view/threebox/c$b;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;->a(Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;)Lcom/panasonic/avc/cng/view/threebox/c$b;
 
     move-result-object v0
 
@@ -54,17 +54,17 @@
     .line 360
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/threebox/c$1$2;->a:Lcom/panasonic/avc/cng/view/threebox/c$1;
 
-    iget-object v0, v0, Lcom/panasonic/avc/cng/view/threebox/c$1;->a:Lcom/panasonic/avc/cng/view/threebox/c;
+    iget-object v0, v0, Lcom/panasonic/avc/cng/view/threebox/c$1;->a:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/threebox/c;->a(Lcom/panasonic/avc/cng/view/threebox/c;)Lcom/panasonic/avc/cng/view/threebox/c$b;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;->a(Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;)Lcom/panasonic/avc/cng/view/threebox/c$b;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/panasonic/avc/cng/view/threebox/c$1$2;->a:Lcom/panasonic/avc/cng/view/threebox/c$1;
 
-    iget-object v1, v1, Lcom/panasonic/avc/cng/view/threebox/c$1;->a:Lcom/panasonic/avc/cng/view/threebox/c;
+    iget-object v1, v1, Lcom/panasonic/avc/cng/view/threebox/c$1;->a:Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;
 
-    invoke-static {v1}, Lcom/panasonic/avc/cng/view/threebox/c;->c(Lcom/panasonic/avc/cng/view/threebox/c;)Ljava/util/List;
+    invoke-static {v1}, Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;->c(Lcom/panasonic/avc/cng/view/threebox/ThreeBoxViewModel;)Ljava/util/List;
 
     move-result-object v1
 

@@ -43,16 +43,16 @@
     .line 53
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/usages/UsagesTransparentActivity$1;->a:Lcom/panasonic/avc/cng/view/usages/UsagesTransparentActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/usages/UsagesTransparentActivity;->a(Lcom/panasonic/avc/cng/view/usages/UsagesTransparentActivity;)Lcom/panasonic/avc/cng/view/usages/a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/usages/UsagesTransparentActivity;->a(Lcom/panasonic/avc/cng/view/usages/UsagesTransparentActivity;)Lcom/panasonic/avc/cng/view/usages/UsagesViewModel;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/usages/a;->g()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/usages/UsagesViewModel;->g()V
 
     .line 54
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/usages/UsagesTransparentActivity$1;->a:Lcom/panasonic/avc/cng/view/usages/UsagesTransparentActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/usages/UsagesTransparentActivity;->a(Lcom/panasonic/avc/cng/view/usages/UsagesTransparentActivity;)Lcom/panasonic/avc/cng/view/usages/a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/usages/UsagesTransparentActivity;->a(Lcom/panasonic/avc/cng/view/usages/UsagesTransparentActivity;)Lcom/panasonic/avc/cng/view/usages/UsagesViewModel;
 
     move-result-object v0
 
@@ -62,7 +62,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/usages/a;->a(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lcom/panasonic/avc/cng/view/usages/UsagesViewModel;->a(Ljava/lang/String;)V
 
     .line 55
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/usages/UsagesTransparentActivity$1;->a:Lcom/panasonic/avc/cng/view/usages/UsagesTransparentActivity;
@@ -72,11 +72,11 @@
     .line 57
     iget-object v0, p0, Lcom/panasonic/avc/cng/view/usages/UsagesTransparentActivity$1;->a:Lcom/panasonic/avc/cng/view/usages/UsagesTransparentActivity;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/view/usages/UsagesTransparentActivity;->a(Lcom/panasonic/avc/cng/view/usages/UsagesTransparentActivity;)Lcom/panasonic/avc/cng/view/usages/a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/view/usages/UsagesTransparentActivity;->a(Lcom/panasonic/avc/cng/view/usages/UsagesTransparentActivity;)Lcom/panasonic/avc/cng/view/usages/UsagesViewModel;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/usages/a;->h()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/view/usages/UsagesViewModel;->h()V
 
     .line 58
     return-void

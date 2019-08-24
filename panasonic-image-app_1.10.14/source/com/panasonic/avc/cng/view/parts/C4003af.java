@@ -7,7 +7,7 @@ import com.panasonic.avc.cng.model.p051c.C1835a;
 import com.panasonic.avc.cng.model.p051c.C1844d;
 import com.panasonic.avc.cng.model.p051c.C1860l;
 import com.panasonic.avc.cng.model.service.C1985b;
-import com.panasonic.avc.cng.model.service.C2253z;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
 import com.panasonic.avc.cng.view.setting.C5541am;
 import com.panasonic.avc.cng.view.setting.C5541am.C5543a;
 import com.panasonic.avc.cng.view.setting.C5541am.C5543a.C5544a;
@@ -102,7 +102,7 @@ public class C4003af {
         C1892f a = C1712b.m6919c().mo4896a();
         if (a != null) {
             m16157p();
-            C1985b a2 = C2253z.m9679a(context, a);
+            C1985b a2 = ServiceFactory.m9679a(context, a);
             if (!(a2 == null || f13460a == null)) {
                 String[] strArr = new String[f13460a.size()];
                 String[] strArr2 = new String[f13460a.size()];
@@ -163,7 +163,7 @@ public class C4003af {
         C1892f a = C1712b.m6919c().mo4896a();
         if (a != null) {
             m16158q();
-            C1985b a2 = C2253z.m9679a(context, a);
+            C1985b a2 = ServiceFactory.m9679a(context, a);
             if (!(a2 == null || f13462c == null)) {
                 String[] strArr = new String[f13462c.size()];
                 String[] strArr2 = new String[f13462c.size()];
@@ -224,7 +224,7 @@ public class C4003af {
         C1892f a = C1712b.m6919c().mo4896a();
         if (a != null) {
             m16159r();
-            C1985b a2 = C2253z.m9679a(context, a);
+            C1985b a2 = ServiceFactory.m9679a(context, a);
             if (!(a2 == null || f13464e == null)) {
                 String[] strArr = new String[f13464e.size()];
                 String[] strArr2 = new String[f13464e.size()];
@@ -285,7 +285,7 @@ public class C4003af {
         C1892f a = C1712b.m6919c().mo4896a();
         if (a != null) {
             m16160s();
-            C1985b a2 = C2253z.m9679a(context, a);
+            C1985b a2 = ServiceFactory.m9679a(context, a);
             if (!(a2 == null || f13466g == null)) {
                 String[] strArr = new String[f13466g.size()];
                 String[] strArr2 = new String[f13466g.size()];
@@ -451,7 +451,7 @@ public class C4003af {
 
     /* renamed from: e */
     public static boolean m16144e(Context context) {
-        C1985b a = C2253z.m9679a(context, C1712b.m6919c().mo4896a());
+        C1985b a = ServiceFactory.m9679a(context, C1712b.m6919c().mo4896a());
         if (a == null) {
             return false;
         }
@@ -469,7 +469,7 @@ public class C4003af {
 
     /* renamed from: f */
     public static boolean m16147f(Context context) {
-        C1985b a = C2253z.m9679a(context, C1712b.m6919c().mo4896a());
+        C1985b a = ServiceFactory.m9679a(context, C1712b.m6919c().mo4896a());
         if (a == null) {
             return false;
         }

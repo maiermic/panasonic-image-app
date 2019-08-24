@@ -14,7 +14,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/panasonic/avc/cng/model/service/j/a;
+    value = Lcom/panasonic/avc/cng/model/service/j/PlayerServiceDLNA;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -24,28 +24,28 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/panasonic/avc/cng/model/service/j/a;
+.field final synthetic a:Lcom/panasonic/avc/cng/model/service/j/PlayerServiceDLNA;
 
 
 # direct methods
-.method private constructor <init>(Lcom/panasonic/avc/cng/model/service/j/a;)V
+.method private constructor <init>(Lcom/panasonic/avc/cng/model/service/j/PlayerServiceDLNA;)V
     .locals 0
 
     .prologue
     .line 775
-    iput-object p1, p0, Lcom/panasonic/avc/cng/model/service/j/a$a;->a:Lcom/panasonic/avc/cng/model/service/j/a;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/model/service/j/a$a;->a:Lcom/panasonic/avc/cng/model/service/j/PlayerServiceDLNA;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/panasonic/avc/cng/model/service/j/a;Lcom/panasonic/avc/cng/model/service/j/a$1;)V
+.method synthetic constructor <init>(Lcom/panasonic/avc/cng/model/service/j/PlayerServiceDLNA;Lcom/panasonic/avc/cng/model/service/j/a$1;)V
     .locals 0
 
     .prologue
     .line 775
-    invoke-direct {p0, p1}, Lcom/panasonic/avc/cng/model/service/j/a$a;-><init>(Lcom/panasonic/avc/cng/model/service/j/a;)V
+    invoke-direct {p0, p1}, Lcom/panasonic/avc/cng/model/service/j/a$a;-><init>(Lcom/panasonic/avc/cng/model/service/j/PlayerServiceDLNA;)V
 
     return-void
 .end method
@@ -77,7 +77,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 895
     return-void
@@ -100,21 +100,21 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 857
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/j/a$a;->a:Lcom/panasonic/avc/cng/model/service/j/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/j/a$a;->a:Lcom/panasonic/avc/cng/model/service/j/PlayerServiceDLNA;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/j/a;->e(Lcom/panasonic/avc/cng/model/service/j/a;)Lcom/panasonic/avc/cng/model/service/s$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/j/PlayerServiceDLNA;->e(Lcom/panasonic/avc/cng/model/service/j/PlayerServiceDLNA;)Lcom/panasonic/avc/cng/model/service/s$a;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 859
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/j/a$a;->a:Lcom/panasonic/avc/cng/model/service/j/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/j/a$a;->a:Lcom/panasonic/avc/cng/model/service/j/PlayerServiceDLNA;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/j/a;->e(Lcom/panasonic/avc/cng/model/service/j/a;)Lcom/panasonic/avc/cng/model/service/s$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/j/PlayerServiceDLNA;->e(Lcom/panasonic/avc/cng/model/service/j/PlayerServiceDLNA;)Lcom/panasonic/avc/cng/model/service/s$a;
 
     move-result-object v0
 
@@ -158,36 +158,36 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 922
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/j/a$a;->a:Lcom/panasonic/avc/cng/model/service/j/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/j/a$a;->a:Lcom/panasonic/avc/cng/model/service/j/PlayerServiceDLNA;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/j/a;->d(Lcom/panasonic/avc/cng/model/service/j/a;)Z
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/j/PlayerServiceDLNA;->d(Lcom/panasonic/avc/cng/model/service/j/PlayerServiceDLNA;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 924
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/j/a$a;->a:Lcom/panasonic/avc/cng/model/service/j/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/j/a$a;->a:Lcom/panasonic/avc/cng/model/service/j/PlayerServiceDLNA;
 
-    invoke-static {v0, v5}, Lcom/panasonic/avc/cng/model/service/j/a;->a(Lcom/panasonic/avc/cng/model/service/j/a;Z)Z
+    invoke-static {v0, v5}, Lcom/panasonic/avc/cng/model/service/j/PlayerServiceDLNA;->a(Lcom/panasonic/avc/cng/model/service/j/PlayerServiceDLNA;Z)Z
 
     .line 927
     :cond_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/j/a$a;->a:Lcom/panasonic/avc/cng/model/service/j/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/j/a$a;->a:Lcom/panasonic/avc/cng/model/service/j/PlayerServiceDLNA;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/j/a;->e(Lcom/panasonic/avc/cng/model/service/j/a;)Lcom/panasonic/avc/cng/model/service/s$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/j/PlayerServiceDLNA;->e(Lcom/panasonic/avc/cng/model/service/j/PlayerServiceDLNA;)Lcom/panasonic/avc/cng/model/service/s$a;
 
     move-result-object v0
 
     if-eqz v0, :cond_1
 
     .line 929
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/j/a$a;->a:Lcom/panasonic/avc/cng/model/service/j/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/j/a$a;->a:Lcom/panasonic/avc/cng/model/service/j/PlayerServiceDLNA;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/j/a;->e(Lcom/panasonic/avc/cng/model/service/j/a;)Lcom/panasonic/avc/cng/model/service/s$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/j/PlayerServiceDLNA;->e(Lcom/panasonic/avc/cng/model/service/j/PlayerServiceDLNA;)Lcom/panasonic/avc/cng/model/service/s$a;
 
     move-result-object v0
 
@@ -231,7 +231,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 908
     return v5
@@ -256,45 +256,45 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 794
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/j/a$a;->a:Lcom/panasonic/avc/cng/model/service/j/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/j/a$a;->a:Lcom/panasonic/avc/cng/model/service/j/PlayerServiceDLNA;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/j/a;->d(Lcom/panasonic/avc/cng/model/service/j/a;)Z
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/j/PlayerServiceDLNA;->d(Lcom/panasonic/avc/cng/model/service/j/PlayerServiceDLNA;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 796
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/j/a$a;->a:Lcom/panasonic/avc/cng/model/service/j/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/j/a$a;->a:Lcom/panasonic/avc/cng/model/service/j/PlayerServiceDLNA;
 
-    invoke-static {v0, v6}, Lcom/panasonic/avc/cng/model/service/j/a;->a(Lcom/panasonic/avc/cng/model/service/j/a;Z)Z
+    invoke-static {v0, v6}, Lcom/panasonic/avc/cng/model/service/j/PlayerServiceDLNA;->a(Lcom/panasonic/avc/cng/model/service/j/PlayerServiceDLNA;Z)Z
 
     .line 800
     :cond_0
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/j/a$a;->a:Lcom/panasonic/avc/cng/model/service/j/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/j/a$a;->a:Lcom/panasonic/avc/cng/model/service/j/PlayerServiceDLNA;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/j/a;->f(Lcom/panasonic/avc/cng/model/service/j/a;)I
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/j/PlayerServiceDLNA;->f(Lcom/panasonic/avc/cng/model/service/j/PlayerServiceDLNA;)I
 
     move-result v0
 
     if-ne v0, v4, :cond_4
 
     .line 802
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/j/a$a;->a:Lcom/panasonic/avc/cng/model/service/j/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/j/a$a;->a:Lcom/panasonic/avc/cng/model/service/j/PlayerServiceDLNA;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/j/a;->e(Lcom/panasonic/avc/cng/model/service/j/a;)Lcom/panasonic/avc/cng/model/service/s$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/j/PlayerServiceDLNA;->e(Lcom/panasonic/avc/cng/model/service/j/PlayerServiceDLNA;)Lcom/panasonic/avc/cng/model/service/s$a;
 
     move-result-object v0
 
     if-eqz v0, :cond_1
 
     .line 804
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/j/a$a;->a:Lcom/panasonic/avc/cng/model/service/j/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/j/a$a;->a:Lcom/panasonic/avc/cng/model/service/j/PlayerServiceDLNA;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/j/a;->e(Lcom/panasonic/avc/cng/model/service/j/a;)Lcom/panasonic/avc/cng/model/service/s$a;
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/j/PlayerServiceDLNA;->e(Lcom/panasonic/avc/cng/model/service/j/PlayerServiceDLNA;)Lcom/panasonic/avc/cng/model/service/s$a;
 
     move-result-object v0
 
@@ -302,23 +302,23 @@
 
     .line 806
     :cond_1
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/j/a$a;->a:Lcom/panasonic/avc/cng/model/service/j/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/j/a$a;->a:Lcom/panasonic/avc/cng/model/service/j/PlayerServiceDLNA;
 
-    invoke-static {v0, v6}, Lcom/panasonic/avc/cng/model/service/j/a;->a(Lcom/panasonic/avc/cng/model/service/j/a;I)I
+    invoke-static {v0, v6}, Lcom/panasonic/avc/cng/model/service/j/PlayerServiceDLNA;->a(Lcom/panasonic/avc/cng/model/service/j/PlayerServiceDLNA;I)I
 
     .line 809
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/j/a$a;->a:Lcom/panasonic/avc/cng/model/service/j/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/j/a$a;->a:Lcom/panasonic/avc/cng/model/service/j/PlayerServiceDLNA;
 
-    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/j/a;->g(Lcom/panasonic/avc/cng/model/service/j/a;)Z
+    invoke-static {v0}, Lcom/panasonic/avc/cng/model/service/j/PlayerServiceDLNA;->g(Lcom/panasonic/avc/cng/model/service/j/PlayerServiceDLNA;)Z
 
     move-result v0
 
     if-eqz v0, :cond_3
 
     .line 812
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/j/a$a;->a:Lcom/panasonic/avc/cng/model/service/j/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/j/a$a;->a:Lcom/panasonic/avc/cng/model/service/j/PlayerServiceDLNA;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/service/j/a;->b()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/service/j/PlayerServiceDLNA;->b()V
 
     .line 846
     :cond_2
@@ -327,21 +327,21 @@
 
     .line 817
     :cond_3
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/j/a$a;->a:Lcom/panasonic/avc/cng/model/service/j/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/j/a$a;->a:Lcom/panasonic/avc/cng/model/service/j/PlayerServiceDLNA;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/service/j/a;->b()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/service/j/PlayerServiceDLNA;->b()V
 
     .line 820
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/j/a$a;->a:Lcom/panasonic/avc/cng/model/service/j/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/j/a$a;->a:Lcom/panasonic/avc/cng/model/service/j/PlayerServiceDLNA;
 
     const-wide/16 v2, 0x1e
 
-    invoke-static {v0, v2, v3}, Lcom/panasonic/avc/cng/model/service/j/a;->b(Lcom/panasonic/avc/cng/model/service/j/a;J)V
+    invoke-static {v0, v2, v3}, Lcom/panasonic/avc/cng/model/service/j/PlayerServiceDLNA;->b(Lcom/panasonic/avc/cng/model/service/j/PlayerServiceDLNA;J)V
 
     .line 823
-    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/j/a$a;->a:Lcom/panasonic/avc/cng/model/service/j/a;
+    iget-object v0, p0, Lcom/panasonic/avc/cng/model/service/j/a$a;->a:Lcom/panasonic/avc/cng/model/service/j/PlayerServiceDLNA;
 
-    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/service/j/a;->c()V
+    invoke-virtual {v0}, Lcom/panasonic/avc/cng/model/service/j/PlayerServiceDLNA;->c()V
 
     goto :goto_0
 
@@ -381,7 +381,7 @@
 
     move-result-object v3
 
-    invoke-static {v2, v3}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v2, v3}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 835
     if-eqz v1, :cond_5
@@ -397,18 +397,18 @@
 
     .line 841
     :cond_6
-    iget-object v2, p0, Lcom/panasonic/avc/cng/model/service/j/a$a;->a:Lcom/panasonic/avc/cng/model/service/j/a;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/model/service/j/a$a;->a:Lcom/panasonic/avc/cng/model/service/j/PlayerServiceDLNA;
 
-    invoke-static {v2}, Lcom/panasonic/avc/cng/model/service/j/a;->e(Lcom/panasonic/avc/cng/model/service/j/a;)Lcom/panasonic/avc/cng/model/service/s$a;
+    invoke-static {v2}, Lcom/panasonic/avc/cng/model/service/j/PlayerServiceDLNA;->e(Lcom/panasonic/avc/cng/model/service/j/PlayerServiceDLNA;)Lcom/panasonic/avc/cng/model/service/s$a;
 
     move-result-object v2
 
     if-eqz v2, :cond_2
 
     .line 843
-    iget-object v2, p0, Lcom/panasonic/avc/cng/model/service/j/a$a;->a:Lcom/panasonic/avc/cng/model/service/j/a;
+    iget-object v2, p0, Lcom/panasonic/avc/cng/model/service/j/a$a;->a:Lcom/panasonic/avc/cng/model/service/j/PlayerServiceDLNA;
 
-    invoke-static {v2}, Lcom/panasonic/avc/cng/model/service/j/a;->e(Lcom/panasonic/avc/cng/model/service/j/a;)Lcom/panasonic/avc/cng/model/service/s$a;
+    invoke-static {v2}, Lcom/panasonic/avc/cng/model/service/j/PlayerServiceDLNA;->e(Lcom/panasonic/avc/cng/model/service/j/PlayerServiceDLNA;)Lcom/panasonic/avc/cng/model/service/s$a;
 
     move-result-object v2
 
@@ -434,7 +434,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 871
     return-void
@@ -473,7 +473,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/g;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/panasonic/avc/cng/util/ImageAppLog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 884
     return-void

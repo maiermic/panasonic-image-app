@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/panasonic/avc/cng/view/cameraconnect/i;->a(Lcom/panasonic/avc/cng/model/f;Lcom/panasonic/avc/cng/model/n;)V
+    value = Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->a(Lcom/panasonic/avc/cng/model/f;Lcom/panasonic/avc/cng/model/n;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -22,16 +22,16 @@
 
 .field final synthetic b:Lcom/panasonic/avc/cng/model/n;
 
-.field final synthetic c:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+.field final synthetic c:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
 
 # direct methods
-.method constructor <init>(Lcom/panasonic/avc/cng/view/cameraconnect/i;Lcom/panasonic/avc/cng/model/f;Lcom/panasonic/avc/cng/model/n;)V
+.method constructor <init>(Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;Lcom/panasonic/avc/cng/model/f;Lcom/panasonic/avc/cng/model/n;)V
     .locals 0
 
     .prologue
     .line 1334
-    iput-object p1, p0, Lcom/panasonic/avc/cng/view/cameraconnect/i$5;->c:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iput-object p1, p0, Lcom/panasonic/avc/cng/view/cameraconnect/i$5;->c:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
     iput-object p2, p0, Lcom/panasonic/avc/cng/view/cameraconnect/i$5;->a:Lcom/panasonic/avc/cng/model/f;
 
@@ -65,13 +65,13 @@
     move-result v0
 
     .line 1339
-    iget-object v1, p0, Lcom/panasonic/avc/cng/view/cameraconnect/i$5;->c:Lcom/panasonic/avc/cng/view/cameraconnect/i;
+    iget-object v1, p0, Lcom/panasonic/avc/cng/view/cameraconnect/i$5;->c:Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;
 
     new-instance v2, Lcom/panasonic/avc/cng/view/cameraconnect/i$5$1;
 
     invoke-direct {v2, p0, v0}, Lcom/panasonic/avc/cng/view/cameraconnect/i$5$1;-><init>(Lcom/panasonic/avc/cng/view/cameraconnect/i$5;Z)V
 
-    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/view/cameraconnect/i;->u(Lcom/panasonic/avc/cng/view/cameraconnect/i;Ljava/lang/Runnable;)Z
+    invoke-static {v1, v2}, Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;->u(Lcom/panasonic/avc/cng/view/cameraconnect/GuidanceMenuViewModel;Ljava/lang/Runnable;)Z
 
     .line 1346
     return-void

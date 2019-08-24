@@ -6,11 +6,11 @@ import android.os.Handler;
 import android.preference.PreferenceManager;
 import com.panasonic.avc.cng.core.p046c.C1648g;
 import com.panasonic.avc.cng.core.p046c.C1651j;
-import com.panasonic.avc.cng.core.p046c.C1671s;
+import com.panasonic.avc.cng.core.p046c.Picmate;
 import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.C1912n;
 import com.panasonic.avc.cng.model.C1913o;
-import com.panasonic.avc.cng.model.service.C2253z;
+import com.panasonic.avc.cng.model.service.ServiceFactory;
 import com.panasonic.avc.cng.model.service.p056c.C2020c;
 import com.panasonic.avc.cng.p038a.C1342a;
 import com.panasonic.avc.cng.p038a.C1344c;
@@ -28,7 +28,7 @@ public class C4470j extends C1342a {
     /* access modifiers changed from: private */
 
     /* renamed from: e */
-    public C1671s f14730e = null;
+    public Picmate f14730e = null;
     /* access modifiers changed from: private */
 
     /* renamed from: f */
@@ -46,7 +46,7 @@ public class C4470j extends C1342a {
         this.f14733h.add(this.f14728c);
         this.f14729d = new C1344c<>("");
         this.f14733h.add(this.f14729d);
-        this.f14730e = C2253z.m9676a(this.f3706a);
+        this.f14730e = ServiceFactory.m9676a(this.f3706a);
         this.f14731f = true;
         this.f14732g = false;
     }
@@ -79,7 +79,7 @@ public class C4470j extends C1342a {
     /* renamed from: d */
     public void mo10506d() {
         if (this.f14730e == null) {
-            this.f14730e = C2253z.m9676a(this.f3706a);
+            this.f14730e = ServiceFactory.m9676a(this.f3706a);
             if (this.f14730e == null) {
                 return;
             }
@@ -115,12 +115,12 @@ public class C4470j extends C1342a {
                 }
             } else if (defaultSharedPreferences.getBoolean("CloudAutoSyncPermission", false)) {
                 if (this.f14730e == null) {
-                    this.f14730e = C2253z.m9676a(this.f3706a);
+                    this.f14730e = ServiceFactory.m9676a(this.f3706a);
                     if (this.f14730e == null) {
                         return;
                     }
                 }
-                this.f14730e = C2253z.m9677a(this.f3706a, this.f3707b);
+                this.f14730e = ServiceFactory.m9677a(this.f3706a, this.f3707b);
                 if (this.f14730e == null) {
                     return;
                 }

@@ -15,7 +15,7 @@ import com.panasonic.avc.cng.model.C1712b;
 import com.panasonic.avc.cng.model.C1892f;
 import com.panasonic.avc.cng.model.p052d.C1879a;
 import com.panasonic.avc.cng.p038a.C1343b;
-import com.panasonic.avc.cng.util.C2261g;
+import com.panasonic.avc.cng.util.ImageAppLog;
 import com.panasonic.avc.cng.view.liveview.C3895p.C3898a;
 import com.panasonic.avc.cng.view.liveview.icon.C3249m;
 import com.panasonic.avc.cng.view.liveview.icon.C3250n.C3254d;
@@ -28,7 +28,7 @@ import com.panasonic.avc.cng.view.parts.LiveViewLumixSurface;
 import com.panasonic.avc.cng.view.parts.LiveViewLumixZoomView;
 import com.panasonic.avc.cng.view.setting.C5541am;
 
-public class LiveViewLumixGseriesActivity extends C2951d {
+public class LiveViewLumixGseriesActivity extends LiveViewLumixBaseActivity {
 
     /* renamed from: m */
     protected C3903s f8926m;
@@ -59,7 +59,7 @@ public class LiveViewLumixGseriesActivity extends C2951d {
     }
 
     public void onCreate(Bundle bundle) {
-        C2261g.m9763a(getClass().getSimpleName(), "onCreate() called");
+        ImageAppLog.debug(getClass().getSimpleName(), "onCreate() called");
         C1712b.m6914a((Activity) this);
         super.onCreate(bundle);
         if (bundle != null) {
@@ -75,7 +75,7 @@ public class LiveViewLumixGseriesActivity extends C2951d {
 
     /* access modifiers changed from: protected */
     public void onResume() {
-        C2261g.m9763a(getClass().getSimpleName(), "onResume() called");
+        ImageAppLog.debug(getClass().getSimpleName(), "onResume() called");
         super.onResume();
         mo7021u();
         m12090b(true);
@@ -172,7 +172,7 @@ public class LiveViewLumixGseriesActivity extends C2951d {
             imageButtonEx.setEnabledChangeListener(new C3924a() {
                 /* renamed from: a */
                 public void mo6982a(boolean z) {
-                    C2261g.m9770d("LiveViewLumixGseriesActivity", "OnEnableChange　" + z);
+                    ImageAppLog.verbose("LiveViewLumixGseriesActivity", "OnEnableChange　" + z);
                     if (!z && LiveViewLumixGseriesActivity.this.f9049g && LiveViewLumixGseriesActivity.this.f9043a.mo7335ac()) {
                         LiveViewLumixGseriesActivity.this.f9049g = false;
                         LiveViewLumixGseriesActivity.this.f9043a.mo7463l(false);
@@ -190,8 +190,8 @@ public class LiveViewLumixGseriesActivity extends C2951d {
                                 LiveViewLumixGseriesActivity.this.f9049g = true;
                                 LiveViewLumixGseriesActivity.this.f9043a.mo7463l(true);
                                 LiveViewLumixGseriesActivity.this.mo7018r();
-                                C2261g.m9770d("LiveViewLumixGseriesActivity", "onTouch:ACTION_DOWN");
-                                C2261g.m9760a(3158018, "");
+                                ImageAppLog.verbose("LiveViewLumixGseriesActivity", "onTouch:ACTION_DOWN");
+                                ImageAppLog.m9760a(3158018, "");
                                 if ((!LiveViewLumixGseriesActivity.this.f9043a.mo7311aE() || !LiveViewLumixGseriesActivity.this.f9043a.mo7335ac()) && (!LiveViewLumixGseriesActivity.this.f9043a.mo7317aK() || !LiveViewLumixGseriesActivity.this.f9043a.mo7319aM())) {
                                     if (LiveViewLumixGseriesActivity.this.f9043a.mo7316aJ() && LiveViewLumixGseriesActivity.this.f9043a.mo7319aM()) {
                                         LiveViewLumixGseriesActivity.this.f9043a.mo7448f(false);
@@ -205,10 +205,10 @@ public class LiveViewLumixGseriesActivity extends C2951d {
                             case 1:
                                 break;
                             case 3:
-                                C2261g.m9770d("LiveViewLumixGseriesActivity", "onTouch:ACTION_CANCEL");
+                                ImageAppLog.verbose("LiveViewLumixGseriesActivity", "onTouch:ACTION_CANCEL");
                                 break;
                         }
-                        C2261g.m9770d("LiveViewLumixGseriesActivity", "onTouch:ACTION_UP");
+                        ImageAppLog.verbose("LiveViewLumixGseriesActivity", "onTouch:ACTION_UP");
                         LiveViewLumixGseriesActivity.this.f9049g = false;
                         LiveViewLumixGseriesActivity.this.f9043a.mo7463l(false);
                         if (LiveViewLumixGseriesActivity.this.f9043a.mo7335ac()) {
@@ -238,7 +238,7 @@ public class LiveViewLumixGseriesActivity extends C2951d {
                         } else if (LiveViewLumixGseriesActivity.this.f9043a.mo7403bk() == 2) {
                             LiveViewLumixGseriesActivity.this.f9043a.mo7365b(false);
                         } else if (LiveViewLumixGseriesActivity.this.f9043a.mo7403bk() == 1) {
-                            C2261g.m9769c("LiveViewLumixGseriesActivity", "連打対策 無視");
+                            ImageAppLog.error("LiveViewLumixGseriesActivity", "連打対策 無視");
                         } else {
                             LiveViewLumixGseriesActivity.this.f9043a.mo7447f(1);
                             if (!LiveViewLumixGseriesActivity.this.f9043a.mo7305a(false, 0, 0)) {
@@ -272,7 +272,7 @@ public class LiveViewLumixGseriesActivity extends C2951d {
 
     /* access modifiers changed from: protected */
     /* renamed from: a */
-    public C2994e mo7004a(C2951d dVar, Handler handler, C2983a aVar) {
+    public C2994e mo7004a(LiveViewLumixBaseActivity dVar, Handler handler, C2983a aVar) {
         return new C3161h(this, handler, aVar);
     }
 
@@ -381,11 +381,11 @@ public class LiveViewLumixGseriesActivity extends C2951d {
 
     /* renamed from: w */
     public void mo7038w() {
-        C2261g.m9763a("FORCE-RESTART", getClass().getSimpleName() + "#forceRestartLiveView (1)");
+        ImageAppLog.debug("FORCE-RESTART", getClass().getSimpleName() + "#forceRestartLiveView (1)");
         if (this.f9043a != null && !this.f9043a.mo7479t() && this.f8931t != null) {
-            C2261g.m9763a("FORCE-RESTART", getClass().getSimpleName() + "#forceRestartLiveView (2)");
+            ImageAppLog.debug("FORCE-RESTART", getClass().getSimpleName() + "#forceRestartLiveView (2)");
             if (this.f8931t.getBooleanExtra("LiveViewLumixGseriesActivity.KEY_FROM_OR_TO_FULLSCREEN", false)) {
-                C2261g.m9763a("FORCE-RESTART", getClass().getSimpleName() + "#forceRestartLiveView (3)");
+                ImageAppLog.debug("FORCE-RESTART", getClass().getSimpleName() + "#forceRestartLiveView (3)");
                 this.f8931t.removeExtra("LiveViewLumixGseriesActivity.KEY_FROM_OR_TO_FULLSCREEN");
                 mo7037a(this.f8931t);
             }
